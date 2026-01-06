@@ -1,3 +1,7 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+}
+
 allprojects {
     repositories {
         google()
