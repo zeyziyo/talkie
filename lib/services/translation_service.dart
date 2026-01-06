@@ -24,18 +24,27 @@ class TranslationService {
       return '';
     }
     
-    // 1. Check cache first
     final cacheKey = '$sourceLang-$targetLang-$normalized';
-    final cached = await DatabaseService.getCachedTranslation(cacheKey);
     
-    if (cached != null) {
-      print('[Translation] Cache hit');
-      return cached;
+    // 1. Check cache first (skip on web)
+    try {
+      final cached = await DatabaseService.getCachedTranslation(cacheKey);
+      
+      if (cached != null) {
+        print('[Translation] Cache hit');
+        return cached;
+      }
+    } catch (e) {
+      // Database not available (web platform) - skip caching
+      print('[Translation] Cache unavailable (web platform)');
     }
     
     // 2. Call server API
     try {
       final uri = Uri.parse('$_baseUrl/api/translate');
+      
+      print('[Translation] Calling API: $sourceLang -> $targetLang');
+      print('[Translation] Text: ${normalized.substring(0, normalized.length > 20 ? 20 : normalized.length)}...');
       
       final response = await http.post(
         uri,
@@ -45,7 +54,14 @@ class TranslationService {
           'source_lang': sourceLang,
           'target_lang': targetLang,
         }),
+      ).timeout(
+        const Duration(seconds: 10),
+        onTimeout: () {
+          throw Exception('Translation timeout after 10 seconds');
+        },
       );
+      
+      print('[Translation] Response status: ${response.statusCode}');
       
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
@@ -56,12 +72,18 @@ class TranslationService {
         
         final translation = data['translated_text'] as String;
         
-        // 3. Cache the result
-        await DatabaseService.cacheTranslation(cacheKey, translation);
+        // 3. Cache the result (skip on web)
+        try {
+          await DatabaseService.cacheTranslation(cacheKey, translation);
+        } catch (e) {
+          // Database not available - skip
+          print('[Translation] Could not cache (web platform)');
+        }
         
-        print('[Translation] API call successful');
+        print('[Translation] API call successful: $translation');
         return translation;
       } else {
+        print('[Translation] Error response: ${response.body}');
         throw Exception('Translation failed: HTTP ${response.statusCode}');
       }
     } catch (e) {

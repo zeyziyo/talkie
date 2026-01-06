@@ -113,13 +113,18 @@ class AppState extends ChangeNotifier {
         targetLang: _targetLang,
       );
       
-      // Auto-save to database
-      await DatabaseService.saveStudyRecord(
-        sourceText: _sourceText,
-        translatedText: _translatedText,
-        sourceLang: _sourceLang,
-        targetLang: _targetLang,
-      );
+      // Auto-save to database (skip on web)
+      try {
+        await DatabaseService.saveStudyRecord(
+          sourceText: _sourceText,
+          translatedText: _translatedText,
+          sourceLang: _sourceLang,
+          targetLang: _targetLang,
+        );
+      } catch (e) {
+        // Database not available on web
+        print('[AppState] Could not save to database (web platform)');
+      }
       
       _isTranslating = false;
       _statusMessage = '번역 완료';
@@ -178,7 +183,9 @@ class AppState extends ChangeNotifier {
       _studyRecords = await DatabaseService.getAllStudyRecords();
       notifyListeners();
     } catch (e) {
-      print('[AppState] Error loading study records: $e');
+      print('[AppState] Error loading study records (web platform): $e');
+      _studyRecords = []; // Empty list on web
+      notifyListeners();
     }
   }
   
