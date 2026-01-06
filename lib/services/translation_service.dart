@@ -1,52 +1,87 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'database_service.dart';
 
-/// Translation service using Google Translate API
+/// Translation service using TalkLand server API
 class TranslationService {
-  static const String _baseUrl = 'https://translate.googleapis.com/translate_a/single';
+  static const String _baseUrl = 'https://talkland.onrender.com';
   
   /// Translate text from source language to target language
   /// 
   /// Parameters:
   /// - text: Text to translate
-  /// - sourceLang: Source language code (e.g., 'ko')
-  /// - targetLang: Target language code (e.g., 'es')
+  /// - sourceLang: Source language code (e.g., 'ko', 'zh-CN')
+  /// - targetLang: Target language code (e.g., 'ja', 'zh-CN')
   /// 
-  /// Returns translated text or error message
-  Future<String> translate(String text, String sourceLang, String targetLang) async {
+  /// Returns translated text or throws exception
+  static Future<String> translate({
+    required String text,
+    required String sourceLang,
+    required String targetLang,
+  }) async {
     final normalized = text.trim();
     if (normalized.isEmpty) {
       return '';
     }
     
+    // 1. Check cache first
+    final cacheKey = '$sourceLang-$targetLang-$normalized';
+    final cached = await DatabaseService.getCachedTranslation(cacheKey);
+    
+    if (cached != null) {
+      print('[Translation] Cache hit');
+      return cached;
+    }
+    
+    // 2. Call server API
     try {
-      final uri = Uri.parse(_baseUrl).replace(queryParameters: {
-        'client': 'gtx',
-        'sl': sourceLang,
-        'tl': targetLang,
-        'dt': 't',
-        'q': normalized,
-      });
+      final uri = Uri.parse('$_baseUrl/api/translate');
       
-      final response = await http.get(uri);
+      final response = await http.post(
+        uri,
+        headers: {'Content-Type': 'application/json'},
+        body: jsonEncode({
+          'text': normalized,
+          'source_lang': sourceLang,
+          'target_lang': targetLang,
+        }),
+      );
       
       if (response.statusCode == 200) {
-        final decoded = json.decode(response.body);
-        // Google Translate API returns: [[[translated_text, original_text, ...]]]
-        if (decoded != null && decoded is List && decoded.isNotEmpty) {
-          final translations = decoded[0] as List;
-          if (translations.isNotEmpty) {
-            final translatedText = translations[0][0] as String;
-            return translatedText;
-          }
+        final data = jsonDecode(response.body);
+        
+        if (data['error'] != null) {
+          throw Exception('Translation API error: ${data['error']}');
         }
-        return 'Translation failed: Invalid response format';
+        
+        final translation = data['translated_text'] as String;
+        
+        // 3. Cache the result
+        await DatabaseService.cacheTranslation(cacheKey, translation);
+        
+        print('[Translation] API call successful');
+        return translation;
       } else {
-        return 'Translation error: ${response.statusCode}';
+        throw Exception('Translation failed: HTTP ${response.statusCode}');
       }
     } catch (e) {
-      print('Translation Error: $e');
-      return 'Translation error: $e';
+      print('[Translation] Error: $e');
+      rethrow;
+    }
+  }
+  
+  /// Health check for server availability
+  static Future<bool> checkServerHealth() async {
+    try {
+      final uri = Uri.parse('$_baseUrl/api/health');
+      final response = await http.get(uri).timeout(
+        const Duration(seconds: 5),
+      );
+      
+      return response.statusCode == 200;
+    } catch (e) {
+      print('[Translation] Health check failed: $e');
+      return false;
     }
   }
 }

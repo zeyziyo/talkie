@@ -12,83 +12,91 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'TalkLand',
+          '🌍 TalkLand',
           style: TextStyle(
-            fontSize: 28,
+            fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
         ),
         centerTitle: true,
+        backgroundColor: const Color(0xFF667eea),
+        foregroundColor: Colors.white,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(40.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            // Debug log display
-            Consumer<AppState>(
-              builder: (context, appState, child) {
-                if (appState.debugLogs.isEmpty) {
-                  return const SizedBox.shrink();
-                }
-                return Container(
-                  padding: const EdgeInsets.all(8),
-                  margin: const EdgeInsets.only(bottom: 16),
-                  decoration: BoxDecoration(
-                    color: Colors.grey[100],
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Text(
-                    appState.debugLogs.join('\n'),
-                    style: const TextStyle(
-                      fontSize: 10,
-                      color: Colors.black54,
+      body: Column(
+        children: [
+          // Status Message
+          Consumer<AppState>(
+            builder: (context, appState, child) {
+              if (appState.statusMessage.isEmpty) {
+                return const SizedBox(height: 4);
+              }
+              return Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                color: Colors.blue[50],
+                child: Text(
+                  appState.statusMessage,
+                  style: const TextStyle(fontSize: 14),
+                  textAlign: TextAlign.center,
+                ),
+              );
+            },
+          ),
+          
+          // Tab Selector
+          Consumer<AppState>(
+            builder: (context, appState, child) {
+              return Container(
+                margin: const EdgeInsets.all(16),
+                child: SegmentedButton<int>(
+                  segments: [
+                    ButtonSegment<int>(
+                      value: 0,
+                      label: Text('검색 (${appState.currentMode == 0 ? '●' : '○'})'),
+                      icon: const Icon(Icons.search),
                     ),
-                  ),
-                );
-              },
-            ),
-            
-            const Divider(),
-            
-            // Mode Selector
-            Consumer<AppState>(
-              builder: (context, appState, child) {
-                return SegmentedButton<String>(
-                  segments: const [
-                    ButtonSegment(
-                      value: 'translate',
-                      label: Text('MODE 1 · 의미 학습'),
-                    ),
-                    ButtonSegment(
-                      value: 'practice',
-                      label: Text('MODE 2 · 발음 훈련'),
+                    ButtonSegment<int>(
+                      value: 1,
+                      label: Text('복습 (${appState.studyRecords.length})'),
+                      icon: const Icon(Icons.library_books),
                     ),
                   ],
                   selected: {appState.currentMode},
-                  onSelectionChanged: (Set<String> newSelection) {
-                    appState.setMode(newSelection.first);
+                  onSelectionChanged: (Set<int> newSelection) {
+                    appState.switchMode(newSelection.first);
                   },
-                );
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.resolveWith((states) {
+                      if (states.contains(MaterialState.selected)) {
+                        return const Color(0xFF667eea);
+                      }
+                      return Colors.white;
+                    }),
+                    foregroundColor: MaterialStateProperty.resolveWith((states) {
+                      if (states.contains(MaterialState.selected)) {
+                        return Colors.white;
+                      }
+                      return const Color(0xFF667eea);
+                    }),
+                  ),
+                ),
+              );
+            },
+          ),
+          
+          // Mode Content
+          Expanded(
+            child: Consumer<AppState>(
+              builder: (context, appState, child) {
+                if (appState.currentMode == 0) {
+                  return const Mode1Widget();
+                } else {
+                  return const Mode2Widget();
+                }
               },
             ),
-            
-            const Divider(),
-            
-            // Mode content
-            Expanded(
-              child: Consumer<AppState>(
-                builder: (context, appState, child) {
-                  if (appState.currentMode == 'translate') {
-                    return const Mode1Widget();
-                  } else {
-                    return const Mode2Widget();
-                  }
-                },
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
