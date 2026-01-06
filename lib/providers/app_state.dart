@@ -36,13 +36,28 @@ class AppState extends ChangeNotifier {
   String get statusMessage => _statusMessage;
   List<Map<String, dynamic>> get studyRecords => _studyRecords;
   
-  // Language display names
+  // Language display names (Top 20 by speakers)
   static const Map<String, String> languageNames = {
-    'ko': '한국어',
-    'en': 'English',
-    'ja': '日本語',
-    'es': 'Español',
-    'zh-CN': '中文',
+    'en': 'English',           // 영어
+    'zh-CN': '中文(简体)',      // 중국어 간체
+    'hi': 'हिन्दी',            // 힌디어
+    'es': 'Español',           // 스페인어
+    'fr': 'Français',          // 프랑스어
+    'ar': 'العربية',           // 아랍어
+    'bn': 'বাংলা',             // 벵골어
+    'ru': 'Русский',           // 러시아어
+    'pt': 'Português',         // 포르투갈어
+    'id': 'Bahasa Indonesia',  // 인도네시아어
+    'de': 'Deutsch',           // 독일어
+    'ja': '日本語',            // 일본어
+    'ko': '한국어',            // 한국어
+    'vi': 'Tiếng Việt',        // 베트남어
+    'tr': 'Türkçe',            // 터키어
+    'it': 'Italiano',          // 이탈리아어
+    'th': 'ไทย',               // 태국어
+    'pl': 'Polski',            // 폴란드어
+    'nl': 'Nederlands',        // 네덜란드어
+    'uk': 'Українська',        // 우크라이나어
   };
   
   // ==========================================
@@ -239,12 +254,28 @@ class AppState extends ChangeNotifier {
   // ==========================================
   
   String _getLangCode(String lang) {
+    // Map app language codes to STT/TTS language codes
     final map = {
-      'ko': 'ko-KR',
       'en': 'en-US',
-      'ja': 'ja-JP',
-      'es': 'es-ES',
       'zh-CN': 'zh-CN',
+      'hi': 'hi-IN',
+      'es': 'es-ES',
+      'fr': 'fr-FR',
+      'ar': 'ar-SA',
+      'bn': 'bn-IN',
+      'ru': 'ru-RU',
+      'pt': 'pt-BR',
+      'id': 'id-ID',
+      'de': 'de-DE',
+      'ja': 'ja-JP',
+      'ko': 'ko-KR',
+      'vi': 'vi-VN',
+      'tr': 'tr-TR',
+      'it': 'it-IT',
+      'th': 'th-TH',
+      'pl': 'pl-PL',
+      'nl': 'nl-NL',
+      'uk': 'uk-UA',
     };
     return map[lang] ?? lang;
   }

@@ -7,16 +7,29 @@ class TranslationService {
   
   /// Convert language code to translator package format
   /// 
-  /// translator package uses simple codes: 'ko', 'ja', 'zh', 'es', 'en'
-  /// But we use 'zh-CN' in app, need to convert to 'zh'
+  /// translator package uses lowercase codes
   static String _normalizeLanguageCode(String langCode) {
     final map = {
-      'zh-CN': 'zh-cn',  // Simplified Chinese
-      'zh-TW': 'zh-tw',  // Traditional Chinese
-      'ko': 'ko',
-      'ja': 'ja',
       'en': 'en',
+      'zh-CN': 'zh-cn',
+      'hi': 'hi',
       'es': 'es',
+      'fr': 'fr',
+      'ar': 'ar',
+      'bn': 'bn',
+      'ru': 'ru',
+      'pt': 'pt',
+      'id': 'id',
+      'de': 'de',
+      'ja': 'ja',
+      'ko': 'ko',
+      'vi': 'vi',
+      'tr': 'tr',
+      'it': 'it',
+      'th': 'th',
+      'pl': 'pl',
+      'nl': 'nl',
+      'uk': 'uk',
     };
     return map[langCode] ?? langCode.toLowerCase();
   }
