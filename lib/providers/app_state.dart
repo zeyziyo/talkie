@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'dart:convert';
 import '../services/database_service.dart';
 import '../services/translation_service.dart';
 import '../services/speech_service.dart';
@@ -324,7 +325,7 @@ class AppState extends ChangeNotifier {
       );
       
       _isSpeaking = false;
-      _statusMessage = '재생 완료';
+      _statusMessage = ''; // Clear status message instead of showing 'playback complete'
       notifyListeners();
     } catch (e) {
       _isSpeaking = false;
@@ -422,7 +423,18 @@ class AppState extends ChangeNotifier {
       final result = await DatabaseService.importFromJson(jsonContent);
       
       // Reload study records after import
+      // Reset filter to show all records by getting the target language from JSON
       if (result['success'] == true) {
+        // Parse JSON to get target language and update filter
+        try {
+          final data = json.decode(jsonContent) as Map<String, dynamic>;
+          final targetLang = data['target_language'] as String?;
+          if (targetLang != null) {
+            _selectedReviewLanguage = targetLang;
+          }
+        } catch (e) {
+          print('[AppState] Could not parse target language from JSON: $e');
+        }
         await loadStudyRecords();
       }
       
