@@ -303,7 +303,7 @@ class AppState extends ChangeNotifier {
       notifyListeners();
       
       print('[AppState] Translation saved successfully');
-    } catch (e) { {
+    } catch (e) {
       _statusMessage = '저장 실패: $e';
       notifyListeners();
       print('[AppState] Error saving translation: $e');
