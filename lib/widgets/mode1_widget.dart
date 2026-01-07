@@ -10,224 +10,253 @@ class Mode1Widget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<AppState>(
       builder: (context, appState, child) {
-        return Stack(
+        return Column(
           children: [
-            SingleChildScrollView(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
+            // Scrollable content
+            Expanded(
+              child: Stack(
                 children: [
-                  // Language Selection
-                  Row(
-                    children: [
-                      Expanded(
-                        child: _buildLanguageDropdown(
-                          label: '모국어',
-                          value: appState.sourceLang,
-                          onChanged: (value) => appState.setSourceLang(value!),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8),
-                        child: Icon(Icons.arrow_forward, size: 24),
-                      ),
-                      Expanded(
-                        child: _buildLanguageDropdown(
-                          label: '대상 언어',
-                          value: appState.targetLang,
-                          onChanged: (value) => appState.setTargetLang(value!),
-                        ),
-                      ),
-                    ],
-                  ),
-                  
-                  const SizedBox(height: 24),
-                  
-                  // Source Text Input
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                AppState.languageNames[appState.sourceLang] ?? '',
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                  SingleChildScrollView(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        // Language Selection
+                        Row(
+                          children: [
+                            Expanded(
+                              child: _buildLanguageDropdown(
+                                label: '모국어',
+                                value: appState.sourceLang,
+                                onChanged: (value) => appState.setSourceLang(value!),
                               ),
-                              Row(
-                                children: [
-                                  IconButton(
-                                    icon: Icon(
-                                      appState.isListening ? Icons.mic : Icons.mic_none,
-                                      color: appState.isListening ? Colors.red : null,
+                            ),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 8),
+                              child: Icon(Icons.arrow_forward, size: 24),
+                            ),
+                            Expanded(
+                              child: _buildLanguageDropdown(
+                                label: '대상 언어',
+                                value: appState.targetLang,
+                                onChanged: (value) => appState.setTargetLang(value!),
+                              ),
+                            ),
+                          ],
+                        ),
+                        
+                        const SizedBox(height: 24),
+                        
+                        // Source Text Input
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(16),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      AppState.languageNames[appState.sourceLang] ?? '',
+                                      style: const TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
-                                    onPressed: appState.isListening
-                                        ? () => appState.stopListening()
-                                        : () => appState.startListening(),
-                                    tooltip: '음성 인식',
+                                    Row(
+                                      children: [
+                                        IconButton(
+                                          icon: Icon(
+                                            appState.isListening ? Icons.mic : Icons.mic_none,
+                                            color: appState.isListening ? Colors.red : null,
+                                          ),
+                                          onPressed: appState.isListening
+                                              ? () => appState.stopListening()
+                                              : () => appState.startListening(),
+                                          tooltip: '음성 인식',
+                                        ),
+                                        IconButton(
+                                          icon: const Icon(Icons.clear),
+                                          onPressed: () => appState.clearTexts(),
+                                          tooltip: '지우기',
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 8),
+                                TextField(
+                                  controller: TextEditingController(text: appState.sourceText)
+                                    ..selection = TextSelection.collapsed(
+                                      offset: appState.sourceText.length,
+                                    ),
+                                  onChanged: (value) {
+                                    appState.setSourceText(value);
+                                    // Auto-search for similar sources when text changes
+                                    if (value.trim().isNotEmpty) {
+                                      appState.searchSimilarSources(value);
+                                    }
+                                  },
+                                  decoration: const InputDecoration(
+                                    hintText: '번역할 텍스트를 입력하거나 마이크를 눌러주세요',
+                                    border: OutlineInputBorder(),
                                   ),
-                                  IconButton(
-                                    icon: const Icon(Icons.clear),
-                                    onPressed: () => appState.clearTexts(),
-                                    tooltip: '지우기',
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 8),
-                          TextField(
-                            controller: TextEditingController(text: appState.sourceText)
-                              ..selection = TextSelection.collapsed(
-                                offset: appState.sourceText.length,
-                              ),
-                            onChanged: (value) {
-                              appState.setSourceText(value);
-                              // Auto-search for similar sources when text changes
-                              if (value.trim().isNotEmpty) {
-                                appState.searchSimilarSources(value);
-                              }
-                            },
-                            decoration: const InputDecoration(
-                              hintText: '번역할 텍스트를 입력하거나 마이크를 눌러주세요',
-                              border: OutlineInputBorder(),
+                                  maxLines: 3,
+                                ),
+                              ],
                             ),
-                            maxLines: 3,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  
-                  const SizedBox(height: 16),
-                  
-                  // Translate Button
-                  ElevatedButton.icon(
-                    onPressed: appState.isTranslating
-                        ? null
-                        : () => appState.translate(),
-                    icon: appState.isTranslating
-                        ? const SizedBox(
-                            width: 16,
-                            height: 16,
-                            child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
-                          )
-                        : const Icon(Icons.translate),
-                    label: Text(
-                      appState.isTranslating ? '번역 중...' : '번역하기',
-                      style: const TextStyle(fontSize: 16),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF667eea),
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                    ),
-                  ),
-                  
-                  // Save Button (conditional)
-                  if (appState.translatedText.isNotEmpty && appState.selectedSourceId != null)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8),
-                      child: OutlinedButton.icon(
-                        onPressed: () => appState.saveTranslation(),
-                        icon: const Icon(Icons.save),
-                        label: const Text('번역 저장', style: TextStyle(fontSize: 16)),
-                        style: OutlinedButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                        ),
-                      ),
-                    ),
-                  
-                  const SizedBox(height: 16),
-                  
-                  // Translated Text Output
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                AppState.languageNames[appState.targetLang] ?? '',
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              IconButton(
-                                icon: Icon(
-                                  appState.isSpeaking
-                                      ? Icons.stop_circle
-                                      : Icons.volume_up,
-                                  color: appState.isSpeaking ? Colors.red : null,
-                                ),
-                                onPressed: appState.translatedText.isEmpty
-                                    ? null
-                                    : (appState.isSpeaking
-                                        ? () => appState.stopSpeaking()
-                                        : () => appState.speak()),
-                                tooltip: '듣기',
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 8),
-                          TextField(
-                            controller: TextEditingController(text: appState.translatedText)
-                              ..selection = TextSelection.collapsed(
-                                offset: appState.translatedText.length,
-                              ),
-                            onChanged: (value) => appState.setSourceText(value), // For editing
-                            decoration: const InputDecoration(
-                              hintText: '번역 결과가 여기에 표시됩니다',
-                              border: OutlineInputBorder(),
-                            ),
-                            maxLines: 3,
-                            readOnly: true, // Make read-only for now, can be editable later
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  
-                  // Status Message
-                  if (appState.statusMessage.isNotEmpty)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16),
-                      child: Card(
-                        color: Colors.blue[50],
-                        child: Padding(
-                          padding: const EdgeInsets.all(12),
-                          child: Row(
-                            children: [
-                              const Icon(Icons.info_outline, size: 20, color: Colors.blue),
-                              const SizedBox(width: 8),
-                              Expanded(
-                                child: Text(
-                                  appState.statusMessage,
-                                  style: const TextStyle(color: Colors.blue),
-                                ),
-                              ),
-                            ],
                           ),
                         ),
-                      ),
+                        
+                        const SizedBox(height: 16),
+                        
+                        // Translate Button
+                        ElevatedButton.icon(
+                          onPressed: appState.isTranslating
+                              ? null
+                              : () => appState.translate(),
+                          icon: appState.isTranslating
+                              ? const SizedBox(
+                                  width: 16,
+                                  height: 16,
+                                  child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+                                )
+                              : const Icon(Icons.translate),
+                          label: Text(
+                            appState.isTranslating ? '번역 중...' : '번역하기',
+                            style: const TextStyle(fontSize: 16),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFF667eea),
+                            foregroundColor: Colors.white,
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                          ),
+                        ),
+                        
+                        const SizedBox(height: 16),
+                        
+                        // Translated Text Output
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(16),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      AppState.languageNames[appState.targetLang] ?? '',
+                                      style: const TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    IconButton(
+                                      icon: Icon(
+                                        appState.isSpeaking
+                                            ? Icons.stop_circle
+                                            : Icons.volume_up,
+                                        color: appState.isSpeaking ? Colors.red : null,
+                                      ),
+                                      onPressed: appState.translatedText.isEmpty
+                                          ? null
+                                          : (appState.isSpeaking
+                                              ? () => appState.stopSpeaking()
+                                              : () => appState.speak()),
+                                      tooltip: '듣기',
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 8),
+                                TextField(
+                                  controller: TextEditingController(text: appState.translatedText)
+                                    ..selection = TextSelection.collapsed(
+                                      offset: appState.translatedText.length,
+                                    ),
+                                  decoration: const InputDecoration(
+                                    hintText: '번역 결과가 여기에 표시됩니다',
+                                    border: OutlineInputBorder(),
+                                  ),
+                                  maxLines: 3,
+                                  readOnly: true,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        
+                        // Status Message
+                        if (appState.statusMessage.isNotEmpty)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 16),
+                            child: Card(
+                              color: Colors.blue[50],
+                              child: Padding(
+                                padding: const EdgeInsets.all(12),
+                                child: Row(
+                                  children: [
+                                    const Icon(Icons.info_outline, size: 20, color: Colors.blue),
+                                    const SizedBox(width: 8),
+                                    Expanded(
+                                      child: Text(
+                                        appState.statusMessage,
+                                        style: const TextStyle(color: Colors.blue),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        
+                        // Extra padding at bottom for save button
+                        const SizedBox(height: 80),
+                      ],
                     ),
+                  ),
+                  
+                  // Duplicate Detection Dialog
+                  if (appState.showDuplicateDialog)
+                    _buildDuplicateDialog(context, appState),
                 ],
               ),
             ),
             
-            // Duplicate Detection Dialog
-            if (appState.showDuplicateDialog)
-              _buildDuplicateDialog(context, appState),
+            // Bottom Save Button (Always visible)
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.1),
+                    blurRadius: 4,
+                    offset: const Offset(0, -2),
+                  ),
+                ],
+              ),
+              child: SizedBox(
+                width: double.infinity,
+                child: ElevatedButton.icon(
+                  onPressed: (appState.sourceText.isEmpty || appState.translatedText.isEmpty)
+                      ? null
+                      : () => appState.saveTranslation(),
+                  icon: const Icon(Icons.save),
+                  label: const Text(
+                    '데이터 저장',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF667eea),
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    disabledBackgroundColor: Colors.grey[300],
+                  ),
+                ),
+              ),
+            ),
           ],
         );
       },
