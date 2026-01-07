@@ -526,6 +526,81 @@ class DatabaseService {
     print('[DB] Incremented review count for $targetTableName($targetId)');
   }
   
+  /// 번역 레코드 삭제 (참조 무결성 유지)
+  static Future<void> deleteTranslationRecord(int translationId) async {
+    final db = await database;
+    
+    try {
+      // 1. translation 레코드 찾기
+      final translations = await db.query(
+        'translations',
+        where: 'id = ?',
+        whereArgs: [translationId],
+        limit: 1,
+      );
+      
+      if (translations.isEmpty) {
+        print('[DB] Translation record not found: id=$translationId');
+        return;
+      }
+      
+      final translation = translations.first;
+      final sourceLang = translation['source_lang'] as String;
+      final sourceId = translation['source_id'] as int;
+      final targetLang = translation['target_lang'] as String;
+      final targetId = translation['target_id'] as int;
+      
+      // 2. translations 테이블에서 번역 관계 삭제
+      await db.delete(
+        'translations',
+        where: 'id = ?',
+        whereArgs: [translationId],
+      );
+      print('[DB] Deleted translation link: id=$translationId');
+      
+      // 3. 소스 텍스트 참조 카운트 확인
+      final sourceReferences = await db.query(
+        'translations',
+        where: 'source_lang = ? AND source_id = ?',
+        whereArgs: [sourceLang, sourceId],
+      );
+      
+      // 소스 텍스트가 다른 번역에서 사용되지 않으면 삭제
+      if (sourceReferences.isEmpty) {
+        final sourceTableName = 'lang_$sourceLang'.replaceAll('-', '_');
+        await db.delete(
+          sourceTableName,
+          where: 'id = ?',
+          whereArgs: [sourceId],
+        );
+        print('[DB] Deleted unused source text: $sourceTableName($sourceId)');
+      }
+      
+      // 4. 대상 텍스트 참조 카운트 확인
+      final targetReferences = await db.query(
+        'translations',
+        where: 'target_lang = ? AND target_id = ?',
+        whereArgs: [targetLang, targetId],
+      );
+      
+      // 대상 텍스트가 다른 번역에서 사용되지 않으면 삭제
+      if (targetReferences.isEmpty) {
+        final targetTableName = 'lang_$targetLang'.replaceAll('-', '_');
+        await db.delete(
+          targetTableName,
+          where: 'id = ?',
+          whereArgs: [targetId],
+        );
+        print('[DB] Deleted unused target text: $targetTableName($targetId)');
+      }
+      
+      print('[DB] Successfully deleted translation record: id=$translationId');
+    } catch (e) {
+      print('[DB] Error deleting translation record: $e');
+      rethrow;
+    }
+  }
+  
   // ==========================================
   // 번역 캐시 (기존 유지)
   // ==========================================

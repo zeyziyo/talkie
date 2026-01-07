@@ -395,6 +395,18 @@ class AppState extends ChangeNotifier {
     }
   }
   
+  /// Delete a translation record
+  Future<void> deleteRecord(int id) async {
+    try {
+      await DatabaseService.deleteTranslationRecord(id);
+      await loadStudyRecords(); // Reload to update UI
+      print('[AppState] Record deleted successfully: id=$id');
+    } catch (e) {
+      print('[AppState] Error deleting record: $e');
+      rethrow;
+    }
+  }
+  
   // ==========================================
   // Settings
   // ==========================================

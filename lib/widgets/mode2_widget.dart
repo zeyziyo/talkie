@@ -249,100 +249,189 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                   final id = record['id'] as int;
                   final isExpanded = _expandedCards.contains(id);
 
-                  return Card(
-                    margin: const EdgeInsets.only(bottom: 12),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          // Source Text
-                          Text(
-                            record['source_text'] as String,
-                            style: const TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-
-                          const SizedBox(height: 8),
-
-                          // Translated Text (toggleable)
-                          if (isExpanded) ...[
-                            Container(
-                              width: double.infinity,
-                              padding: const EdgeInsets.all(12),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFFf0f4ff),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Text(
-                                record['translated_text'] as String,
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  color: Color(0xFF667eea),
-                                ),
-                              ),
-                            ),
-                            const SizedBox(height: 12),
-                          ],
-
-                          // Buttons
-                          Row(
+                  return InkWell(
+                    onLongPress: () {
+                      // 햅틱 피드백 (선택사항, 일부 플랫폼에서만 작동)
+                      // HapticFeedback.mediumImpact();
+                      
+                      // 삭제 확인 대화상자 표시
+                      showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          title: const Text('🗑️ 레코드 삭제'),
+                          content: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              ElevatedButton.icon(
-                                onPressed: () {
-                                  setState(() {
-                                    if (isExpanded) {
-                                      _expandedCards.remove(id);
-                                    } else {
-                                      _expandedCards.add(id);
-                                      appState.reviewRecord(id);
-                                    }
-                                  });
-                                },
-                                icon: Icon(
-                                  isExpanded
-                                      ? Icons.visibility_off
-                                      : Icons.visibility,
+                              const Text('이 학습 기록을 삭제하시겠습니까?'),
+                              const SizedBox(height: 12),
+                              Container(
+                                padding: const EdgeInsets.all(12),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
-                                label: Text(isExpanded ? '숨기기' : '뒤집기'),
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xFF667eea),
-                                  foregroundColor: Colors.white,
-                                ),
-                              ),
-                              const SizedBox(width: 8),
-                              OutlinedButton.icon(
-                                onPressed: () {
-                                  appState.playRecordTts(
-                                    record['translated_text'] as String,
-                                    record['target_lang'] as String,
-                                  );
-                                },
-                                icon: const Icon(Icons.volume_up),
-                                label: const Text('듣기'),
-                                style: OutlinedButton.styleFrom(
-                                  foregroundColor: const Color(0xFF667eea),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      record['source_text'] as String,
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    const Icon(
+                                      Icons.arrow_downward,
+                                      size: 16,
+                                      color: Colors.grey,
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      record['translated_text'] as String,
+                                      style: const TextStyle(
+                                        color: Color(0xFF667eea),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
                           ),
-
-                          const SizedBox(height: 8),
-
-                          // Metadata
-                          Text(
-                            '${AppState.languageNames[record['source_lang']]} → '
-                            '${AppState.languageNames[record['target_lang']]} | '
-                            '${_formatDate(record['date'] as String)}'
-                            '${record['review_count'] as int > 0 ? ' | 복습 ${record['review_count']}회' : ''}',
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: Colors.grey[600],
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.of(context).pop(),
+                              child: const Text('취소'),
                             ),
-                          ),
-                        ],
+                            TextButton(
+                              onPressed: () async {
+                                Navigator.of(context).pop();
+                                try {
+                                  await appState.deleteRecord(id);
+                                  if (context.mounted) {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      const SnackBar(
+                                        content: Text('✅ 레코드가 삭제되었습니다'),
+                                        duration: Duration(seconds: 2),
+                                      ),
+                                    );
+                                  }
+                                } catch (e) {
+                                  if (context.mounted) {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text('❌ 삭제 실패: $e'),
+                                        backgroundColor: Colors.red,
+                                        duration: const Duration(seconds: 3),
+                                      ),
+                                    );
+                                  }
+                                }
+                              },
+                              style: TextButton.styleFrom(
+                                foregroundColor: Colors.red,
+                              ),
+                              child: const Text('삭제'),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                    child: Card(
+                      margin: const EdgeInsets.only(bottom: 12),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            // Source Text
+                            Text(
+                              record['source_text'] as String,
+                              style: const TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+
+                            const SizedBox(height: 8),
+
+                            // Translated Text (toggleable)
+                            if (isExpanded) ...[
+                              Container(
+                                width: double.infinity,
+                                padding: const EdgeInsets.all(12),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFf0f4ff),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Text(
+                                  record['translated_text'] as String,
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    color: Color(0xFF667eea),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 12),
+                            ],
+
+                            // Buttons
+                            Row(
+                              children: [
+                                ElevatedButton.icon(
+                                  onPressed: () {
+                                    setState(() {
+                                      if (isExpanded) {
+                                        _expandedCards.remove(id);
+                                      } else {
+                                        _expandedCards.add(id);
+                                        appState.reviewRecord(id);
+                                      }
+                                    });
+                                  },
+                                  icon: Icon(
+                                    isExpanded
+                                        ? Icons.visibility_off
+                                        : Icons.visibility,
+                                  ),
+                                  label: Text(isExpanded ? '숨기기' : '뒤집기'),
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: const Color(0xFF667eea),
+                                    foregroundColor: Colors.white,
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                OutlinedButton.icon(
+                                  onPressed: () {
+                                    appState.playRecordTts(
+                                      record['translated_text'] as String,
+                                      record['target_lang'] as String,
+                                    );
+                                  },
+                                  icon: const Icon(Icons.volume_up),
+                                  label: const Text('듣기'),
+                                  style: OutlinedButton.styleFrom(
+                                    foregroundColor: const Color(0xFF667eea),
+                                  ),
+                                ),
+                              ],
+                            ),
+
+                            const SizedBox(height: 8),
+
+                            // Metadata
+                            Text(
+                              '${AppState.languageNames[record['source_lang']]} → '
+                              '${AppState.languageNames[record['target_lang']]} | '
+                              '${_formatDate(record['date'] as String)}'
+                              '${record['review_count'] as int > 0 ? ' | 복습 ${record['review_count']}회' : ''}',
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.grey[600],
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   );
