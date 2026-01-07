@@ -10,26 +10,60 @@ class TranslationService {
   /// translator package uses lowercase codes
   static String _normalizeLanguageCode(String langCode) {
     final map = {
-      'en': 'en',
+      // East Asian
+      'ko': 'ko',
+      'ja': 'ja',
       'zh-CN': 'zh-cn',
+      'zh-TW': 'zh-tw',
+      
+      // South Asian
       'hi': 'hi',
+      'bn': 'bn',
+      'ta': 'ta',
+      'te': 'te',
+      'mr': 'mr',
+      'ur': 'ur',
+      'gu': 'gu',
+      'kn': 'kn',
+      'ml': 'ml',
+      'pa': 'pa',
+      
+      // European
+      'en': 'en',
       'es': 'es',
       'fr': 'fr',
-      'ar': 'ar',
-      'bn': 'bn',
-      'ru': 'ru',
-      'pt': 'pt',
-      'id': 'id',
       'de': 'de',
-      'ja': 'ja',
-      'ko': 'ko',
-      'vi': 'vi',
-      'tr': 'tr',
       'it': 'it',
-      'th': 'th',
+      'pt': 'pt',
+      'ru': 'ru',
       'pl': 'pl',
-      'nl': 'nl',
       'uk': 'uk',
+      'nl': 'nl',
+      'el': 'el',
+      'cs': 'cs',
+      'ro': 'ro',
+      'sv': 'sv',
+      'da': 'da',
+      'fi': 'fi',
+      'no': 'no',
+      'hu': 'hu',
+      
+      // Southeast Asian
+      'id': 'id',
+      'vi': 'vi',
+      'th': 'th',
+      'fil': 'tl', // Filipino uses Tagalog code
+      'ms': 'ms',
+      
+      // Middle Eastern
+      'ar': 'ar',
+      'tr': 'tr',
+      'fa': 'fa',
+      'he': 'iw', // Hebrew uses 'iw' in Google Translate
+      
+      // African
+      'sw': 'sw',
+      'af': 'af',
     };
     return map[langCode] ?? langCode.toLowerCase();
   }

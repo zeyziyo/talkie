@@ -21,8 +21,14 @@ class AppState extends ChangeNotifier {
   bool _isSpeaking = false;
   String _statusMessage = '';
   
+  // Duplicate detection & translation reuse state
+  List<Map<String, dynamic>> _similarSources = [];
+  int? _selectedSourceId; // null = new entry
+  bool _showDuplicateDialog = false;
+  
   // Mode 2 (복습) State
   List<Map<String, dynamic>> _studyRecords = [];
+  String _selectedReviewLanguage = 'ja'; // Filter by target language
   
   // Getters
   int get currentMode => _currentMode;
@@ -35,29 +41,67 @@ class AppState extends ChangeNotifier {
   bool get isSpeaking => _isSpeaking;
   String get statusMessage => _statusMessage;
   List<Map<String, dynamic>> get studyRecords => _studyRecords;
+  List<Map<String, dynamic>> get similarSources => _similarSources;
+  int? get selectedSourceId => _selectedSourceId;
+  bool get showDuplicateDialog => _showDuplicateDialog;
+  String get selectedReviewLanguage => _selectedReviewLanguage;
   
   // Language display names (Native + Korean name)
   static const Map<String, String> languageNames = {
-    'en': 'English (영어)',
-    'zh-CN': '中文 (중국어)',
+    // East Asian
+    'ko': '한국어',
+    'ja': '日本語 (일본어)',
+    'zh-CN': '中文简体 (중국어 간체)',
+    'zh-TW': '中文繁體 (중국어 번체)',
+    
+    // South Asian
     'hi': 'हिन्दी (힌디어)',
+    'bn': 'বাংলা (벵골어)',
+    'ta': 'தமிழ் (타밀어)',
+    'te': 'తెలుగు (텔루구어)',
+    'mr': 'मराठी (마라티어)',
+    'ur': 'اردو (우르두어)',
+    'gu': 'ગુજરાતી (구자라트어)',
+    'kn': 'ಕನ್ನಡ (칸나다어)',
+    'ml': 'മലയാളം (말라얄람어)',
+    'pa': 'ਪੰਜਾਬੀ (펀자브어)',
+    
+    // European
+    'en': 'English (영어)',
     'es': 'Español (스페인어)',
     'fr': 'Français (프랑스어)',
-    'ar': 'العربية (아랍어)',
-    'bn': 'বাংলা (벵골어)',
-    'ru': 'Русский (러시아어)',
-    'pt': 'Português (포르투갈어)',
-    'id': 'Bahasa Indonesia (인도네시아어)',
     'de': 'Deutsch (독일어)',
-    'ja': '日本語 (일본어)',
-    'ko': '한국어',
-    'vi': 'Tiếng Việt (베트남어)',
-    'tr': 'Türkçe (터키어)',
     'it': 'Italiano (이탈리아어)',
-    'th': 'ไทย (태국어)',
+    'pt': 'Português (포르투갈어)',
+    'ru': 'Русский (러시아어)',
     'pl': 'Polski (폴란드어)',
-    'nl': 'Nederlands (네덜란드어)',
     'uk': 'Українська (우크라이나어)',
+    'nl': 'Nederlands (네덜란드어)',
+    'el': 'Ελληνικά (그리스어)',
+    'cs': 'Čeština (체코어)',
+    'ro': 'Română (루마니아어)',
+    'sv': 'Svenska (스웨덴어)',
+    'da': 'Dansk (덴마크어)',
+    'fi': 'Suomi (핀란드어)',
+    'no': 'Norsk (노르웨이어)',
+    'hu': 'Magyar (헝가리어)',
+    
+    // Southeast Asian
+    'id': 'Bahasa Indonesia (인도네시아어)',
+    'vi': 'Tiếng Việt (베트남어)',
+    'th': 'ไทย (태국어)',
+    'fil': 'Filipino (필리핀어)',
+    'ms': 'Bahasa Melayu (말레이어)',
+    
+    // Middle Eastern
+    'ar': 'العربية (아랍어)',
+    'tr': 'Türkçe (터키어)',
+    'fa': 'فارسی (페르시아어)',
+    'he': 'עברית (히브리어)',
+    
+    // African
+    'sw': 'Kiswahili (스와힐리어)',
+    'af': 'Afrikaans (아프리칸스어)',
   };
   
   // ==========================================
@@ -109,7 +153,49 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
   
-  /// Translate text
+  /// Search for similar source texts (for duplicate detection)
+  Future<void> searchSimilarSources(String text) async {
+    if (text.trim().isEmpty) {
+      _similarSources = [];
+      _showDuplicateDialog = false;
+      notifyListeners();
+      return;
+    }
+    
+    try {
+      _similarSources = await DatabaseService.searchSimilarText(_sourceLang, text);
+      _showDuplicateDialog = _similarSources.isNotEmpty;
+      notifyListeners();
+    } catch (e) {
+      print('[AppState] Error searching similar sources: $e');
+      _similarSources = [];
+      _showDuplicateDialog = false;
+      notifyListeners();
+    }
+  }
+  
+  /// User selects an existing source record
+  void selectExistingSource(int sourceId, String sourceText) {
+    _selectedSourceId = sourceId;
+    _sourceText = sourceText;
+    _showDuplicateDialog = false;
+    notifyListeners();
+  }
+  
+  /// User chooses to create a new source entry
+  void createNewSource() {
+    _selectedSourceId = null;
+    _showDuplicateDialog = false;
+    notifyListeners();
+  }
+  
+  /// Close duplicate dialog
+  void closeDuplicateDialog() {
+    _showDuplicateDialog = false;
+    notifyListeners();
+  }
+  
+  /// Translate text with duplicate detection and reuse
   Future<void> translate() async {
     if (_sourceText.isEmpty) {
       _statusMessage = '번역할 텍스트를 입력하세요';
@@ -119,6 +205,43 @@ class AppState extends ChangeNotifier {
     
     try {
       _isTranslating = true;
+      _statusMessage = '확인 중...';
+      notifyListeners();
+      
+      // 1. Save or reuse source text
+      int sourceId;
+      if (_selectedSourceId != null) {
+        // Reuse existing source
+        sourceId = _selectedSourceId!;
+        print('[AppState] Reusing existing source: id=$sourceId');
+      } else {
+        // Create new source entry
+        sourceId = await DatabaseService.insertLanguageRecord(_sourceLang, _sourceText);
+        _selectedSourceId = sourceId;
+        print('[AppState] Created new source: id=$sourceId');
+      }
+      
+      // 2. Check if translation already exists
+      _statusMessage = '번역 확인 중...';
+      notifyListeners();
+      
+      final existingTranslation = await DatabaseService.getTranslationIfExists(
+        _sourceLang,
+        sourceId,
+        _targetLang,
+      );
+      
+      if (existingTranslation != null) {
+        // Translation exists - load from database
+        _translatedText = existingTranslation['target_text'] as String;
+        _isTranslating = false;
+        _statusMessage = '저장된 번역 불러옴';
+        notifyListeners();
+        print('[AppState] Loaded existing translation from database');
+        return;
+      }
+      
+      // 3. Translation doesn't exist - call API
       _statusMessage = '번역 중...';
       notifyListeners();
       
@@ -128,21 +251,9 @@ class AppState extends ChangeNotifier {
         targetLang: _targetLang,
       );
       
-      // Auto-save to database (skip on web)
-      try {
-        await DatabaseService.saveStudyRecord(
-          sourceText: _sourceText,
-          translatedText: _translatedText,
-          sourceLang: _sourceLang,
-          targetLang: _targetLang,
-        );
-      } catch (e) {
-        // Database not available on web
-        print('[AppState] Could not save to database (web platform)');
-      }
-      
+      // Auto-save translation (will be called in saveTranslation method)
       _isTranslating = false;
-      _statusMessage = '번역 완료';
+      _statusMessage = '번역 완료 (저장 필요)';
       notifyListeners();
     } catch (e) {
       _isTranslating = false;
@@ -152,7 +263,44 @@ class AppState extends ChangeNotifier {
     }
   }
   
-  /// Speak translated text
+  /// Save translation to database
+  Future<void> saveTranslation() async {
+    if (_translatedText.isEmpty || _selectedSourceId == null) {
+      _statusMessage = '저장할 번역이 없습니다';
+      notifyListeners();
+      return;
+    }
+    
+    try {
+      _statusMessage = '저장 중...';
+      notifyListeners();
+      
+      // 1. Insert target text
+      final targetId = await DatabaseService.insertLanguageRecord(
+        _targetLang,
+        _translatedText,
+      );
+      
+      // 2. Create translation link
+      await DatabaseService.saveTranslationLink(
+        sourceLang: _sourceLang,
+        sourceId: _selectedSourceId!,
+        targetLang: _targetLang,
+        targetId: targetId,
+      );
+      
+      _statusMessage = '저장 완료';
+      notifyListeners();
+      
+      print('[AppState] Translation saved successfully');
+    } catch (e) {
+      _statusMessage = '저장 실패: $e';
+      notifyListeners();
+      print('[AppState] Error saving translation: $e');
+    }
+  }
+  
+  /// Speak translated text with audio storage
   Future<void> speak() async {
     if (_translatedText.isEmpty) {
       _statusMessage = '재생할 텍스트가 없습니다';
@@ -164,6 +312,11 @@ class AppState extends ChangeNotifier {
       _isSpeaking = true;
       _statusMessage = '재생 중...';
       notifyListeners();
+      
+      // Check if audio file exists in database
+      // Note: TTS audio storage is complex and platform-dependent
+      // For now, we'll just play TTS directly
+      // Future enhancement: Record TTS output and save to database
       
       await _speechService.speak(
         _translatedText,
@@ -195,13 +348,22 @@ class AppState extends ChangeNotifier {
   /// Load all study records from database
   Future<void> loadStudyRecords() async {
     try {
-      _studyRecords = await DatabaseService.getAllStudyRecords();
+      // Load records filtered by selected review language
+      _studyRecords = await DatabaseService.getRecordsByTargetLanguage(
+        _selectedReviewLanguage,
+      );
       notifyListeners();
     } catch (e) {
       print('[AppState] Error loading study records (web platform): $e');
       _studyRecords = []; // Empty list on web
       notifyListeners();
     }
+  }
+  
+  /// Set review language filter
+  void setReviewLanguage(String lang) {
+    _selectedReviewLanguage = lang;
+    loadStudyRecords(); // Reload with new filter
   }
   
   /// Play TTS for a study record
@@ -234,6 +396,8 @@ class AppState extends ChangeNotifier {
   
   void setSourceLang(String lang) {
     _sourceLang = lang;
+    // Reset selected source when language changes
+    _selectedSourceId = null;
     notifyListeners();
   }
   
@@ -246,7 +410,33 @@ class AppState extends ChangeNotifier {
     _sourceText = '';
     _translatedText = '';
     _statusMessage = '';
+    _selectedSourceId = null;
+    _similarSources = [];
+    _showDuplicateDialog = false;
     notifyListeners();
+  }
+  
+  /// Import study materials from JSON file content
+  Future<Map<String, dynamic>> importFromJsonFile(String jsonContent) async {
+    try {
+      final result = await DatabaseService.importFromJson(jsonContent);
+      
+      // Reload study records after import
+      if (result['success'] == true) {
+        await loadStudyRecords();
+      }
+      
+      return result;
+    } catch (e) {
+      print('[AppState] Error importing JSON file: $e');
+      return {
+        'success': false,
+        'imported': 0,
+        'skipped': 0,
+        'total': 0,
+        'errors': ['Import failed: $e'],
+      };
+    }
   }
   
   // ==========================================
@@ -256,26 +446,60 @@ class AppState extends ChangeNotifier {
   String _getLangCode(String lang) {
     // Map app language codes to STT/TTS language codes
     final map = {
-      'en': 'en-US',
+      // East Asian
+      'ko': 'ko-KR',
+      'ja': 'ja-JP',
       'zh-CN': 'zh-CN',
+      'zh-TW': 'zh-TW',
+      
+      // South Asian
       'hi': 'hi-IN',
+      'bn': 'bn-IN',
+      'ta': 'ta-IN',
+      'te': 'te-IN',
+      'mr': 'mr-IN',
+      'ur': 'ur-PK',
+      'gu': 'gu-IN',
+      'kn': 'kn-IN',
+      'ml': 'ml-IN',
+      'pa': 'pa-IN',
+      
+      // European
+      'en': 'en-US',
       'es': 'es-ES',
       'fr': 'fr-FR',
-      'ar': 'ar-SA',
-      'bn': 'bn-IN',
-      'ru': 'ru-RU',
-      'pt': 'pt-BR',
-      'id': 'id-ID',
       'de': 'de-DE',
-      'ja': 'ja-JP',
-      'ko': 'ko-KR',
-      'vi': 'vi-VN',
-      'tr': 'tr-TR',
       'it': 'it-IT',
-      'th': 'th-TH',
+      'pt': 'pt-BR',
+      'ru': 'ru-RU',
       'pl': 'pl-PL',
-      'nl': 'nl-NL',
       'uk': 'uk-UA',
+      'nl': 'nl-NL',
+      'el': 'el-GR',
+      'cs': 'cs-CZ',
+      'ro': 'ro-RO',
+      'sv': 'sv-SE',
+      'da': 'da-DK',
+      'fi': 'fi-FI',
+      'no': 'no-NO',
+      'hu': 'hu-HU',
+      
+      // Southeast Asian
+      'id': 'id-ID',
+      'vi': 'vi-VN',
+      'th': 'th-TH',
+      'fil': 'fil-PH',
+      'ms': 'ms-MY',
+      
+      // Middle Eastern
+      'ar': 'ar-SA',
+      'tr': 'tr-TR',
+      'fa': 'fa-IR',
+      'he': 'he-IL',
+      
+      // African
+      'sw': 'sw-KE',
+      'af': 'af-ZA',
     };
     return map[lang] ?? lang;
   }

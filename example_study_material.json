@@ -1,0 +1,26 @@
+{
+    "source_language": "ko",
+    "target_language": "ja",
+    "entries": [
+        {
+            "source_text": "안녕하세요",
+            "target_text": "こんにちは"
+        },
+        {
+            "source_text": "오늘 날씨 어때?",
+            "target_text": "今日の天気はどう？"
+        },
+        {
+            "source_text": "감사합니다",
+            "target_text": "ありがとうございます"
+        },
+        {
+            "source_text": "잘 지내세요",
+            "target_text": "お元気で"
+        },
+        {
+            "source_text": "만나서 반가워요",
+            "target_text": "お会いできて嬉しいです"
+        }
+    ]
+}

@@ -32,6 +32,9 @@ dependencies:
   path: ^1.9.0
   path_provider: ^2.1.0
   
+  # File Picker
+  file_picker: ^8.1.4
+  
   # Permissions
   permission_handler: ^11.3.0
 
