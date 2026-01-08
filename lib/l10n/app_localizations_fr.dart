@@ -9,7 +9,7 @@ class AppLocalizationsFr extends AppLocalizations {
   AppLocalizationsFr([String locale = 'fr']) : super(locale);
 
   @override
-  String get appTitle => 'TalkLand';
+  String get appTitle => 'Talkie';
 
   @override
   String tabReview(int count) {

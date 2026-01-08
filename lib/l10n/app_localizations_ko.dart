@@ -9,7 +9,7 @@ class AppLocalizationsKo extends AppLocalizations {
   AppLocalizationsKo([String locale = 'ko']) : super(locale);
 
   @override
-  String get appTitle => 'TalkLand';
+  String get appTitle => 'Talkie';
 
   @override
   String tabReview(int count) {

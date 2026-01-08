@@ -1,5 +1,5 @@
-name: talkland
-description: "TalkLand - Language learning app with speech recognition and translation"
+name: talkie
+description: "Talkie - Language learning app with speech recognition and translation"
 publish_to: 'none'
 
 version: 1.0.0+1

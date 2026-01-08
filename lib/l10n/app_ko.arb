@@ -1,7 +1,7 @@
 {
   "@@locale": "ko",
   
-  "appTitle": "TalkLand",
+  "appTitle": "Talkie",
   "tabReview": "복습 ({count})",
   "tabStudyMaterial": "학습 자료 ({count})",
   "search": "검색",

@@ -9,7 +9,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'TalkLand';
+  String get appTitle => 'Talkie';
 
   @override
   String tabReview(int count) {

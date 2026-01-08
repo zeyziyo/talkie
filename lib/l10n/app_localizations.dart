@@ -107,7 +107,7 @@ abstract class AppLocalizations {
   /// Application title
   ///
   /// In en, this message translates to:
-  /// **'TalkLand'**
+  /// **'Talkie'**
   String get appTitle;
 
   /// Review tab label with count

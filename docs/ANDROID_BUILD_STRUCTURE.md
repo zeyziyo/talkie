@@ -17,7 +17,7 @@
 ## 1. 프로젝트 구조 개요
 
 ```
-talkland_flutter/
+talkie/
 ├── android/                          # Android 네이티브 코드 및 빌드 설정
 │   ├── app/                          # 앱 모듈 (실제 Android 앱이 생성되는 곳)
 │   │   ├── src/                      # 소스 코드 및 리소스
@@ -131,7 +131,7 @@ plugins {
 }
 
 android {
-    namespace = "com.talkland.talkland"  // 앱 네임스페이스
+    namespace = "com.talkie.talkie"  // 앱 네임스페이스
     compileSdk = flutter.compileSdkVersion  // Flutter가 제공하는 컴파일 SDK
     
     compileOptions {
@@ -144,7 +144,7 @@ android {
     }
     
     defaultConfig {
-        applicationId = "com.talkland.talkland"  // 고유 앱 ID (Play Store 식별자)
+        applicationId = "com.talkie.talkie"  // 고유 앱 ID (Play Store 식별자)
         minSdk = flutter.minSdkVersion           // 최소 지원 Android 버전
         targetSdk = flutter.targetSdkVersion     // 타겟 Android 버전
         versionCode = flutter.versionCode        // 정수 버전 (내부)
@@ -204,7 +204,7 @@ distributionUrl=https://services.gradle.org/distributions/gradle-8.14-all.zip
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     
     <application
-        android:label="talkland"                    <!-- 앱 이름 (런처에 표시) -->
+        android:label="Talkie"                    <!-- 앱 이름 (런처에 표시) -->
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">         <!-- 앱 아이콘 -->
         
@@ -240,12 +240,12 @@ distributionUrl=https://services.gradle.org/distributions/gradle-8.14-all.zip
 
 ---
 
-### 3.2 `android/app/src/main/kotlin/com/talkland/talkland/MainActivity.kt`
+### 3.2 `android/app/src/main/kotlin/com/talkie/talkie/MainActivity.kt`
 
 **역할**: Android 네이티브 진입점 (Flutter 엔진 초기화)
 
 ```kotlin
-package com.talkland.talkland
+package com.talkie.talkie
 
 import io.flutter.embedding.android.FlutterActivity
 

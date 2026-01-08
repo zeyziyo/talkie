@@ -1,4 +1,4 @@
-package com.talkland.talkland
+package com.talkie.talkie
 
 import io.flutter.embedding.android.FlutterActivity
 

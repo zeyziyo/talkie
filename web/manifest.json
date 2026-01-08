@@ -1,6 +1,6 @@
 {
-    "name": "talkland",
-    "short_name": "talkland",
+    "name": "Talkie",
+    "short_name": "Talkie",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

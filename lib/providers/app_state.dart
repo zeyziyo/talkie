@@ -6,7 +6,7 @@ import '../services/database_service.dart';
 import '../services/translation_service.dart';
 import '../services/speech_service.dart';
 
-/// App-wide state management for TalkLand
+/// App-wide state management for Talkie
 class AppState extends ChangeNotifier {
   // Services
   final SpeechService _speechService = SpeechService();

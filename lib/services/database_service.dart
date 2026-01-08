@@ -19,7 +19,7 @@ class DatabaseService {
   /// 데이터베이스 초기화 및 기본 테이블 생성
   static Future<Database> _initDatabase() async {
     final databasesPath = await getDatabasesPath();
-    final path = join(databasesPath, 'talkland.db');
+    final path = join(databasesPath, 'talkie.db');
     
     return await openDatabase(
       path,
@@ -708,7 +708,7 @@ class DatabaseService {
   /// 데이터베이스 초기화 (개발용)
   static Future<void> reset() async {
     final databasesPath = await getDatabasesPath();
-    final path = join(databasesPath, 'talkland.db');
+    final path = join(databasesPath, 'talkie.db');
     
     await deleteDatabase(path);
     _database = null;

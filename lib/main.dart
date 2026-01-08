@@ -6,18 +6,18 @@ import 'providers/app_state.dart';
 import 'screens/home_screen.dart';
 
 void main() {
-  runApp(const TalkLandApp());
+  runApp(const TalkieApp());
 }
 
-class TalkLandApp extends StatelessWidget {
-  const TalkLandApp({super.key});
+class TalkieApp extends StatelessWidget {
+  const TalkieApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => AppState(),
       child: MaterialApp(
-        title: 'TalkLand',
+        title: 'Talkie',
         
         // Localization
         localizationsDelegates: const [
