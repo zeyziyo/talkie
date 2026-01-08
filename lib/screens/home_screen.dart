@@ -34,7 +34,6 @@ class HomeScreen extends StatelessWidget {
                   segments: [
                     ButtonSegment<int>(
                       value: 0,
-                      label: Text('검색 (${appState.currentMode == 0 ? '●' : '○'})'),
                       icon: const Icon(Icons.search),
                     ),
                     ButtonSegment<int>(
@@ -45,7 +44,6 @@ class HomeScreen extends StatelessWidget {
                     ButtonSegment<int>(
                       value: 2,
                       label: Text('학습 자료 (${appState.studyMaterials.length})'),
-                      icon: const Icon(Icons.topic),
                     ),
                   ],
                   selected: {appState.currentMode},

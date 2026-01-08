@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:file_picker/file_picker.dart';
-import 'dart:io';
 import '../providers/app_state.dart';
 
 /// Mode 2: 복습 모드 - 저장된 학습 기록 표시
@@ -24,94 +22,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
     });
   }
 
-  Future<void> _importJsonFile(BuildContext context) async {
-    try {
-      // Pick JSON file
-      FilePickerResult? result = await FilePicker.platform.pickFiles(
-        type: FileType.custom,
-        allowedExtensions: ['json'],
-      );
 
-      if (result != null && result.files.single.path != null) {
-        // Read file content
-        final file = File(result.files.single.path!);
-        final jsonContent = await file.readAsString();
-
-        if (!context.mounted) return;
-
-        // Show loading dialog
-        showDialog(
-          context: context,
-          barrierDismissible: false,
-          builder: (context) => const Center(
-            child: CircularProgressIndicator(),
-          ),
-        );
-
-        // Import
-        final appState = context.read<AppState>();
-        final importResult = await appState.importFromJsonFile(jsonContent);
-
-        if (!context.mounted) return;
-
-        // Close loading dialog
-        Navigator.of(context).pop();
-
-        // Show result dialog
-        showDialog(
-          context: context,
-          builder: (context) => AlertDialog(
-            title: Text(
-              importResult['success'] == true ? '✅ Import 완료' : '❌ Import 실패',
-            ),
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text('총 항목: ${importResult['total']}개'),
-                Text('성공: ${importResult['imported']}개'),
-                Text('건너뜀: ${importResult['skipped']}개'),
-                if (importResult['errors'] != null &&
-                    (importResult['errors'] as List).isNotEmpty) ...[
-                  const SizedBox(height: 8),
-                  const Text('오류:', style: TextStyle(fontWeight: FontWeight.bold)),
-                  ...(importResult['errors'] as List).take(3).map(
-                        (error) => Text(
-                          '• $error',
-                          style: const TextStyle(fontSize: 12, color: Colors.red),
-                        ),
-                      ),
-                ],
-              ],
-            ),
-            actions: [
-              TextButton(
-                onPressed: () => Navigator.of(context).pop(),
-                child: const Text('확인'),
-              ),
-            ],
-          ),
-        );
-      }
-    } catch (e) {
-      if (!context.mounted) return;
-
-      // Show error dialog
-      showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-          title: const Text('❌ 오류'),
-          content: Text('파일을 불러오는 중 오류가 발생했습니다:\n$e'),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: const Text('확인'),
-            ),
-          ],
-        ),
-      );
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -135,22 +46,11 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Row(
-                        children: [
-                          // Import button
-                          IconButton(
-                            onPressed: () => _importJsonFile(context),
-                            icon: const Icon(Icons.upload_file),
-                            tooltip: 'JSON 불러오기',
-                            color: const Color(0xFF667eea),
-                          ),
-                          // Refresh button
-                          TextButton.icon(
-                            onPressed: () => appState.loadStudyRecords(),
-                            icon: const Icon(Icons.refresh),
-                            label: const Text('새로고침'),
-                          ),
-                        ],
+                      // Refresh button
+                      TextButton.icon(
+                        onPressed: () => appState.loadStudyRecords(),
+                        icon: const Icon(Icons.refresh),
+                        label: const Text('새로고침'),
                       ),
                     ],
                   ),
@@ -217,25 +117,11 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            '검색 모드에서 번역을 하거나\\nJSON 파일을 불러오세요',
+                            '검색 모드에서 번역을 저장해보세요',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 14,
                               color: Colors.grey[500],
-                            ),
-                          ),
-                          const SizedBox(height: 24),
-                          ElevatedButton.icon(
-                            onPressed: () => _importJsonFile(context),
-                            icon: const Icon(Icons.upload_file),
-                            label: const Text('JSON 파일 불러오기'),
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFF667eea),
-                              foregroundColor: Colors.white,
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 24,
-                                vertical: 12,
-                              ),
                             ),
                           ),
                         ],
