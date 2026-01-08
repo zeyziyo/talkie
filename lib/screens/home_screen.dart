@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                 );
               } else if (appState.currentMode == 2) { // Study Material Mode
                 return IconButton(
-                  icon: const Icon(Icons.file_upload),
+                  icon: const Icon(Icons.arrow_downward),
                   onPressed: () => _handleImport(context),
                   tooltip: l10n.importJsonFile,
                 );
