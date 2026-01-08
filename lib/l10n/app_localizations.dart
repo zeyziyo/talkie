@@ -553,6 +553,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Stop Practice'**
   String get stopPractice;
+
+  /// No description provided for @helpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Help & Guide'**
+  String get helpTitle;
+
+  /// No description provided for @helpTabModes.
+  ///
+  /// In en, this message translates to:
+  /// **'Modes'**
+  String get helpTabModes;
+
+  /// No description provided for @helpTabJson.
+  ///
+  /// In en, this message translates to:
+  /// **'JSON Format'**
+  String get helpTabJson;
+
+  /// No description provided for @helpTabTour.
+  ///
+  /// In en, this message translates to:
+  /// **'Tour'**
+  String get helpTabTour;
+
+  /// No description provided for @helpMode1Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Recognize voice, translate to target language, and listen to the result.'**
+  String get helpMode1Desc;
+
+  /// No description provided for @helpMode2Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Review saved sentences with auto-hide translations and track your review count.'**
+  String get helpMode2Desc;
+
+  /// No description provided for @helpMode3Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Import external study materials (JSON) and practice systematically.'**
+  String get helpMode3Desc;
+
+  /// No description provided for @helpMode4Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice speaking selected materials with random interval drills and pronunciation scoring.'**
+  String get helpMode4Desc;
+
+  /// No description provided for @helpJsonDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'To import study materials in Mode 3, create a JSON file with the following structure:'**
+  String get helpJsonDesc;
+
+  /// No description provided for @helpTourDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Start the interactive tutorial to learn the main features.'**
+  String get helpTourDesc;
+
+  /// No description provided for @startTutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Tutorial'**
+  String get startTutorial;
 }
 
 class _AppLocalizationsDelegate

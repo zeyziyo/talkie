@@ -266,4 +266,37 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get stopPractice => '연습 중지';
+
+  @override
+  String get helpTitle => '도움말 및 가이드';
+
+  @override
+  String get helpTabModes => '기능 소개';
+
+  @override
+  String get helpTabJson => 'JSON 형식';
+
+  @override
+  String get helpTabTour => '튜토리얼';
+
+  @override
+  String get helpMode1Desc => '음성을 인식하여 번역하고, 결과를 듣습니다. 새로운 표현을 익히기에 좋습니다.';
+
+  @override
+  String get helpMode2Desc => '저장된 문장을 복습합니다. 번역을 가리고 확인하며 복습 횟수를 기록하세요.';
+
+  @override
+  String get helpMode3Desc => '외부 학습 자료(JSON)를 불러와 체계적으로 학습합니다.';
+
+  @override
+  String get helpMode4Desc => '학습 자료의 문장을 랜덤하게 듣고 직접 말해보세요. 발음 정확도를 평가해줍니다.';
+
+  @override
+  String get helpJsonDesc => '모드 3에서 학습 자료를 불러오려면 아래와 같은 형식의 JSON 파일을 사용하세요:';
+
+  @override
+  String get helpTourDesc => '앱의 주요 기능을 대화형 튜토리얼로 다시 확인해보세요.';
+
+  @override
+  String get startTutorial => '튜토리얼 시작';
 }

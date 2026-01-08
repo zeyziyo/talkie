@@ -270,4 +270,43 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get stopPractice => 'Stop Practice';
+
+  @override
+  String get helpTitle => 'Help & Guide';
+
+  @override
+  String get helpTabModes => 'Modes';
+
+  @override
+  String get helpTabJson => 'JSON Format';
+
+  @override
+  String get helpTabTour => 'Tour';
+
+  @override
+  String get helpMode1Desc =>
+      'Recognize voice, translate to target language, and listen to the result.';
+
+  @override
+  String get helpMode2Desc =>
+      'Review saved sentences with auto-hide translations and track your review count.';
+
+  @override
+  String get helpMode3Desc =>
+      'Import external study materials (JSON) and practice systematically.';
+
+  @override
+  String get helpMode4Desc =>
+      'Practice speaking selected materials with random interval drills and pronunciation scoring.';
+
+  @override
+  String get helpJsonDesc =>
+      'To import study materials in Mode 3, create a JSON file with the following structure:';
+
+  @override
+  String get helpTourDesc =>
+      'Start the interactive tutorial to learn the main features.';
+
+  @override
+  String get startTutorial => 'Start Tutorial';
 }

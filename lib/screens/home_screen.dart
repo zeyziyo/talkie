@@ -7,6 +7,7 @@ import '../widgets/mode2_widget.dart';
 import '../widgets/mode3_widget.dart';
 import '../widgets/mode4_widget.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
+import '../widgets/help_dialog.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -149,8 +150,16 @@ class _HomeScreenState extends State<HomeScreen> {
             key: _helpKey,
             icon: const Icon(Icons.help_outline),
             tooltip: '사용법 가이드',
-            onPressed: () => _showTutorial(context),
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (context) => HelpDialog(
+                  onStartTutorial: () => _showTutorial(context),
+                ),
+              );
+            },
           ),
+
           Consumer<AppState>(
             builder: (context, appState, child) {
               final buttonKey = _actionButtonKey; // Use key here
