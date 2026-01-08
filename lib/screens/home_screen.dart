@@ -5,9 +5,127 @@ import '../providers/app_state.dart';
 import '../widgets/mode1_widget.dart';
 import '../widgets/mode2_widget.dart';
 import '../widgets/mode3_widget.dart';
+import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  // GlobalKeys for tutorial targets
+  final GlobalKey _actionButtonKey = GlobalKey();
+  final GlobalKey _tabKey = GlobalKey();
+  final GlobalKey _helpKey = GlobalKey();
+
+  late TutorialCoachMark tutorialCoachMark;
+
+  void _showTutorial(BuildContext context) {
+    tutorialCoachMark = TutorialCoachMark(
+      targets: _createTargets(),
+      colorShadow: const Color(0xFF667eea),
+      textSkip: "SKIP",
+      paddingFocus: 10,
+      opacityShadow: 0.8,
+      onFinish: () {
+        debugPrint("Tutorial finished");
+      },
+      onClickTarget: (target) {
+        debugPrint("onClickTarget: $target");
+      },
+      onClickOverlay: (target) {
+        debugPrint("onClickOverlay: $target");
+      },
+      onSkip: () {
+        debugPrint("skip");
+        return true;
+      },
+    );
+
+    tutorialCoachMark.show(context: context);
+  }
+
+  List<TargetFocus> _createTargets() {
+    List<TargetFocus> targets = [];
+
+    // Target 1: Tab Selector
+    targets.add(
+      TargetFocus(
+        identify: "Mode Tabs",
+        keyTarget: _tabKey,
+        alignSkip: Alignment.topRight,
+        contents: [
+          TargetContent(
+            align: ContentAlign.bottom,
+            builder: (context, controller) {
+              return const Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "모드 선택",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 10.0),
+                    child: Text(
+                      "여기서 원하는 학습 모드를 선택하세요.\n\n🔍 검색: 음성 번역 및 듣기\n📖 복습: 저장된 문장 복습\n📄 자료: 외부 학습 자료 가져오기",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              );
+            },
+          ),
+        ],
+      ),
+    );
+
+    // Target 2: Action Button (varies by mode)
+    targets.add(
+      TargetFocus(
+        identify: "Action Button",
+        keyTarget: _actionButtonKey,
+        alignSkip: Alignment.bottomLeft,
+        contents: [
+          TargetContent(
+            align: ContentAlign.bottom,
+            builder: (context, controller) {
+              return const Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "주요 기능",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 10.0),
+                    child: Text(
+                      "현재 모드에 맞는 주요 기능이 여기에 표시됩니다.\n\n(예: 언어 설정, 목록 새로고침, 파일 불러오기)",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              );
+            },
+          ),
+        ],
+      ),
+    );
+
+    return targets;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,22 +144,33 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: const Color(0xFF667eea),
         foregroundColor: Colors.white,
         actions: [
+          IconButton(
+            key: _helpKey,
+            icon: const Icon(Icons.help_outline),
+            tooltip: '사용법 가이드',
+            onPressed: () => _showTutorial(context),
+          ),
           Consumer<AppState>(
             builder: (context, appState, child) {
+              final buttonKey = _actionButtonKey; // Use key here
+              
               if (appState.currentMode == 0) { // Search Mode
                 return IconButton(
+                  key: buttonKey,
                   icon: const Icon(Icons.translate),
                   onPressed: () => _showLanguageSettingsDialog(context),
                   tooltip: '언어 설정',
                 );
               } else if (appState.currentMode == 1) { // Review Mode
                 return IconButton(
+                  key: buttonKey,
                   icon: const Icon(Icons.refresh),
                   onPressed: () => appState.loadStudyRecords(),
                   tooltip: l10n.refresh,
                 );
               } else if (appState.currentMode == 2) { // Study Material Mode
                 return IconButton(
+                  key: buttonKey,
                   icon: const Icon(Icons.arrow_downward),
                   onPressed: () => _handleImport(context),
                   tooltip: l10n.importJsonFile,
@@ -58,6 +187,7 @@ class HomeScreen extends StatelessWidget {
           Consumer<AppState>(
             builder: (context, appState, child) {
               return Container(
+                key: _tabKey,
                 margin: const EdgeInsets.all(16),
                   child: SegmentedButton<int>(
                     showSelectedIcon: false,
