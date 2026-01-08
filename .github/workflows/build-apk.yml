@@ -29,6 +29,14 @@ jobs:
         
     - name: Get dependencies
       run: flutter pub get
+
+    - name: Create key.properties
+      run: |
+        echo "${{ secrets.ANDROID_KEY_PROPERTIES }}" > android/key.properties
+        
+    - name: Decode Keystore
+      run: |
+        echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 --decode > android/app/upload-keystore.jks
       
     - name: Build APK
       env:
