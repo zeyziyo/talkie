@@ -93,19 +93,19 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
         _buildSectionTitle('🔍 ${l10n.search} (Mode 1)'),
         Text(l10n.helpMode1Desc), 
         const SizedBox(height: 8),
-        const Text('• Speak or type to translate.\n• Results are auto-checked for duplicates.\n• Use "Clear" to reset inputs.\n• Save to add to your "No Subject" list.'),
+        Text(l10n.helpMode1Details), // Localized details
         const SizedBox(height: 16),
         
         _buildSectionTitle('📖 ${l10n.tabStudyMaterial} (Mode 2)'), 
         Text(l10n.helpMode2Desc), 
         const SizedBox(height: 8),
-        const Text('• View all your saved translations and imported materials.\n• Long-press a card to DELETE it.\n• Filter by language using the dropdown.'),
+        Text(l10n.helpMode2Details), // Localized details
         const SizedBox(height: 16),
         
         _buildSectionTitle('🎙️ ${l10n.tabSpeaking} (Mode 3)'),
-        Text(l10n.helpMode4Desc), 
+        Text(l10n.helpMode3Desc), 
         const SizedBox(height: 8),
-        const Text('• Practice shadowing sentences.\n• Set Interval: Use [-] and [+] buttons to adjust wait time (3s-60s).\n• Feedback: Get a similarity score (0-100) on your pronunciation.'),
+        Text(l10n.helpMode3Details), // Localized details
       ],
     );
   }
