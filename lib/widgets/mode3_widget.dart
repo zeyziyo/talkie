@@ -65,9 +65,16 @@ class _Mode3WidgetState extends State<Mode3Widget> {
           final sourceLang = material['source_language'] as String;
           final targetLang = material['target_language'] as String;
           
+          
+          String label = '$subject ($sourceLang → $targetLang)';
+          if (id == 0) {
+             // Use current app languages for the default material label
+             label = 'No (${AppState.languageNames[appState.sourceLang]} → ${AppState.languageNames[appState.targetLang]})';
+          }
+
           return DropdownMenuItem<int>(
             value: id,
-            child: Text('$subject ($sourceLang → $targetLang)'),
+            child: Text(label),
           );
         }));
 

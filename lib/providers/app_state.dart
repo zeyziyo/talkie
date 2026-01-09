@@ -154,6 +154,7 @@ class AppState extends ChangeNotifier {
         onResult: (text) {
           _sourceText = text;
           _statusMessage = '인식 완료';
+          stopListening(); // Auto-stop mic after recognition
           notifyListeners();
         },
       );
@@ -419,7 +420,19 @@ class AppState extends ChangeNotifier {
   Future<void> deleteRecord(int id) async {
     try {
       await DatabaseService.deleteTranslationRecord(id);
-      await loadStudyRecords(); // Reload to update UI
+      
+      // Refresh global study records
+      await loadStudyRecords(); 
+      
+      // Refresh Mode 3 list if active
+      if (_currentMode == 1) { // Mode 3 (Index 1)
+        if (_selectedMaterialId == -1) {
+          await loadAllRecordsIntoMaterialView();
+        } else if (_selectedMaterialId != null) {
+          await loadMaterialRecords(_selectedMaterialId!);
+        }
+      }
+      
       print('[AppState] Record deleted successfully: id=$id');
     } catch (e) {
       print('[AppState] Error deleting record: $e');

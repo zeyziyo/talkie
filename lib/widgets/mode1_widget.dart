@@ -147,6 +147,13 @@ class Mode1Widget extends StatelessWidget {
                                               : () => appState.speak()),
                                       tooltip: l10n.listen,
                                     ),
+                                    IconButton(
+                                      icon: const Icon(Icons.refresh),
+                                      onPressed: appState.translatedText.isEmpty
+                                          ? null
+                                          : () => appState.clearTexts(),
+                                      tooltip: l10n.cancel, // or 'Reset'
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(height: 8),
