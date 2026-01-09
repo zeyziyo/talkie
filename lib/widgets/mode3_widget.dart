@@ -311,6 +311,7 @@ class _Mode3WidgetState extends State<Mode3Widget> {
               ],
             ),
         ],
+        ],
       ),
     );
   }
