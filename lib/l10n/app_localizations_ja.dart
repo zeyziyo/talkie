@@ -305,4 +305,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get startTutorial => 'Start Tutorial';
+
+  @override
+  String get noVoiceDetected => 'No voice detected';
 }

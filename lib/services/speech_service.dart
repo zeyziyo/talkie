@@ -36,6 +36,18 @@ class SpeechService {
       await _flutterTts.setSpeechRate(0.5);
       await _flutterTts.setPitch(1.0);
       
+      // Fix for Volume Control: Force Media Stream
+      // iOS: AVAudioSessionCategoryPlayback (ignores silent switch, uses media volume)
+      // Android: AudioAttributes USAGE_MEDIA
+      await _flutterTts.setIosAudioCategory(
+        IosTextToSpeechAudioCategory.playback,
+        [
+          IosTextToSpeechAudioCategoryOptions.defaultToSpeaker,
+          IosTextToSpeechAudioCategoryOptions.allowBluetooth,
+          IosTextToSpeechAudioCategoryOptions.allowBluetoothA2DP,
+        ],
+      );
+      
       _isInitialized = true;
       return true;
     } catch (e) {
@@ -77,10 +89,13 @@ class SpeechService {
       },
       localeId: lang,
       listenOptions: stt.SpeechListenOptions(
-        listenMode: stt.ListenMode.confirmation,
+        // Use dictation for better sentence recognition and handling of pauses
+        listenMode: stt.ListenMode.dictation, 
         cancelOnError: true,
         partialResults: true,
       ),
+      // Increase pause duration to prevent cutting off too early
+      pauseFor: const Duration(seconds: 3),
     );
   }
   
@@ -107,6 +122,17 @@ class SpeechService {
       await _flutterTts.setLanguage(lang);
       await _flutterTts.setSpeechRate(slow ? 0.3 : 0.5);
       await _flutterTts.setVolume(1.0);
+      
+      // Ensure we are using the correct mode before speaking
+      await _flutterTts.setIosAudioCategory(
+        IosTextToSpeechAudioCategory.playback,
+        [
+          IosTextToSpeechAudioCategoryOptions.defaultToSpeaker,
+           IosTextToSpeechAudioCategoryOptions.allowBluetooth,
+           IosTextToSpeechAudioCategoryOptions.allowBluetoothA2DP,
+        ]
+      );
+
       await _flutterTts.speak(text);
     } catch (e) {
       print('TTS Error: $e');

@@ -619,6 +619,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Start Tutorial'**
   String get startTutorial;
+
+  /// No description provided for @noVoiceDetected.
+  ///
+  /// In en, this message translates to:
+  /// **'No voice detected'**
+  String get noVoiceDetected;
 }
 
 class _AppLocalizationsDelegate

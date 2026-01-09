@@ -299,4 +299,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get startTutorial => '튜토리얼 시작';
+
+  @override
+  String get noVoiceDetected => '목소리가 감지되지 않았어요';
 }

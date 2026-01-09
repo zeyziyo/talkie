@@ -221,10 +221,59 @@ class Mode3Widget extends StatelessWidget {
                               ),
                             ),
                           ] else if (appState.mode3SessionActive) ...[
-                            // Listening Indicator
-                            const CircularProgressIndicator(),
+                            // Active Practice State
                             const SizedBox(height: 16),
-                            Text(l10n.listening),
+                            if (appState.showRetryButton) ...[
+                              // Retry Button (Timeout case)
+                              Column(
+                                children: [
+                                  Text(
+                                    l10n.noVoiceDetected, // "No voice detected" or similar
+                                    style: TextStyle(color: Colors.red[300], fontSize: 16),
+                                  ),
+                                  const SizedBox(height: 16),
+                                  ElevatedButton.icon(
+                                    onPressed: () => appState.retryMode3Question(),
+                                    icon: const Icon(Icons.refresh),
+                                    label: const Text("Retry? (2s)"),
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: Colors.orange,
+                                      foregroundColor: Colors.white,
+                                      padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                                    ),
+                                  ),
+                                ],
+                              )
+                            ] else ...[
+                              // Mic Icon (Listening)
+                              Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red.withOpacity(0.1),
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                  const Icon(
+                                    Icons.mic,
+                                    size: 60,
+                                    color: Colors.red,
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 16),
+                              Text(
+                                l10n.listening,
+                                style: TextStyle(
+                                  color: Colors.red[400], 
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ],
                           ],
                         ],
                       ),

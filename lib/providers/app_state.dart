@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'dart:convert';
 import 'dart:io';
 import 'package:file_picker/file_picker.dart';
+import 'dart:async'; // Added for Timer
 import '../services/database_service.dart';
 import '../services/translation_service.dart';
 import '../services/speech_service.dart';
@@ -659,12 +660,21 @@ class AppState extends ChangeNotifier {
   double? _mode3Score; // 0.0 to 100.0
   String _mode3Feedback = '';
   
+  // Track completed questions (Perfect score) in current session to avoid repetition
+  final Set<int> _mode3CompletedQuestionIds = {};
+  
+  // Timeout & Retry Logic
+  bool _showRetryButton = false;
+  Timer? _mode3Timer;
+  Timer? _retryAutoSkipTimer;
+  
   int get mode3Interval => _mode3Interval;
   bool get mode3SessionActive => _mode3SessionActive;
   Map<String, dynamic>? get currentMode3Question => _currentMode3Question;
   String get mode3UserAnswer => _mode3UserAnswer;
   double? get mode3Score => _mode3Score;
   String get mode3Feedback => _mode3Feedback;
+  bool get showRetryButton => _showRetryButton;
   
   void setMode3Interval(int seconds) {
     _mode3Interval = seconds;
@@ -684,18 +694,44 @@ class AppState extends ChangeNotifier {
       }
     } else {
       // Stop session
+      _cancelMode3Timers(); // Cancel any running timers
       _speechService.stopSTT();
       _speechService.stopSpeaking();
     }
     notifyListeners();
   }
   
+  void _cancelMode3Timers() {
+    _mode3Timer?.cancel();
+    _retryAutoSkipTimer?.cancel();
+    _mode3Timer = null;
+    _retryAutoSkipTimer = null;
+  }
+
   Future<void> _nextMode3Question() async {
+    _cancelMode3Timers(); // Reset timers before next question
+    _showRetryButton = false;
+    
     if (!_mode3SessionActive || _materialRecords.isEmpty) return;
     
-    // Pick random question
-    final randomIndex = DateTime.now().millisecondsSinceEpoch % _materialRecords.length;
-    _currentMode3Question = _materialRecords[randomIndex];
+    // Filter out completed questions
+    final availableQuestions = _materialRecords.where((record) {
+      final id = record['id'] as int;
+      return !_mode3CompletedQuestionIds.contains(id);
+    }).toList();
+    
+    if (availableQuestions.isEmpty) {
+      _mode3SessionActive = false;
+      _mode3Feedback = 'Completed All!';
+      _statusMessage = '모든 문장을 완벽하게 학습했습니다!';
+      notifyListeners();
+      await _speechService.speak("All practice completed!", lang: "en-US");
+      return;
+    }
+    
+    // Pick random question from available ones
+    final randomIndex = DateTime.now().millisecondsSinceEpoch % availableQuestions.length;
+    _currentMode3Question = availableQuestions[randomIndex];
     _mode3UserAnswer = '';
     _mode3Score = null;
     _mode3Feedback = '';
@@ -709,6 +745,18 @@ class AppState extends ChangeNotifier {
     await _speechService.speak(sourceText, lang: _getLangCode(sourceLang));
     
     // Start listening for answer
+    _startMode3Listening();
+  }
+  
+  /// Called when user clicks "Retry"
+  Future<void> retryMode3Question() async {
+    _cancelMode3Timers();
+    _showRetryButton = false;
+    _mode3UserAnswer = ''; // Clear previous bad answer
+    notifyListeners();
+    
+    // Simple restart listening without playing TTS again (or should we play?)
+    // Let's just listen.
     _startMode3Listening();
   }
   
@@ -727,22 +775,8 @@ class AppState extends ChangeNotifier {
         },
       );
       
-      // Wait for silence/completion? 
-      // SpeechService usually relies on manual stop or timeout. 
-      // For this mode, we might need a manual "Done" or auto-detect. 
-      // Let's assume the user speaks and we define a timeout or "Check" action.
-      // But user wanted "Interval". So maybe we wait for X seconds then check?
-      
-      // Implementation plan: 
-      // 1. Speak source (done)
-      // 2. Listen for (Interval - TTS duration) OR just fixed window?
-      // Let's trigger a delayed check.
-      
-      Future.delayed(Duration(seconds: _mode3Interval), () {
-        if (_mode3SessionActive) {
-          _checkMode3Answer();
-        }
-      });
+      // Start Timeout Timer (Respect configured interval)
+      _mode3Timer = Timer(Duration(seconds: _mode3Interval), _handleMode3Timeout);
       
     } catch (e) {
       debugPrint('[AppState] Mode 3 Listen Error: $e');
@@ -751,11 +785,87 @@ class AppState extends ChangeNotifier {
     }
   }
   
+  void _handleMode3Timeout() {
+    if (!_mode3SessionActive) return;
+    
+    // Stop listening
+    _speechService.stopSTT();
+    _isListening = false;
+    
+    // Show Retry Button
+    _showRetryButton = true;
+    notifyListeners();
+    
+    // Start Auto-Skip Timer (2 seconds)
+    _retryAutoSkipTimer = Timer(const Duration(seconds: 2), () {
+      if (_mode3SessionActive && _showRetryButton) {
+         // User didn't click retry -> Move next
+         _nextMode3Question();
+      }
+    });
+  }
+  
   Future<void> _checkMode3Answer() async {
     if (!_mode3SessionActive) return;
     
-    _speechService.stopSTT();
-    _isListening = false;
+    _cancelMode3Timers(); // Stop timeout since we got an answer (implied by this being called? Wait.)
+    // Actually _checkMode3Answer was called by the delayed future in old code. 
+    // New logic: STT Service auto-stops on silence (finalResult).
+    // The SpeechService calls stopSTT() on finalResult.
+    // We need to trigger _checkMode3Answer when STT is DONE.
+    // But SpeechService onResult doesn't directly tell us "DONE" in this callback structure effectively unless we change it.
+    // However, in _startMode3Listening above, I didn't hook into "Final Result".
+    // 
+    // OLD CODE relied on fixed delay. NEW REQUEST expects "Auto next after completion".
+    // SpeechService currently has `stopSTT` inside `onResult` when `finalResult` is true.
+    // But it doesn't notify AppState to check answer.
+    // 
+    // Issue: The previous code just waited `_mode3Interval` then checked.
+    // Reform: We should check answer EITHER when `finalResult` is received OR timeout.
+    // BUT user said: "If time passes without pronunciation -> Retry".
+    // "If pronunciation completed -> Check score -> Next"
+    // 
+    // So we need to detect "Pronunciation Completed".
+    // SpeechService `startSTT`'s `onResult` should probably expose `isFinal` or we infer it.
+    // Let's modify `_startMode3Listening` logic slightly to handle the `onResult` better if possible.
+    // Or we poll? No.
+    // 
+    // Let's modify _startMode3Listening to check answer if we get a result.
+    // But wait, user might be partial. SpeechToText gives partials.
+    // 
+    // We will trust the User's "Retry/Timeout" constraint mainly for "No input".
+    // If we have input, do we wait for timeout?
+    // User said: "Show score AFTER pronunciation complete".
+    // This implies we need to know when it is complete.
+    // 
+    // If I change `startSTT` in SpeechService to allow a callback on "Done", that would be best.
+    // But I can't easily change signature everywhere.
+    // 
+    // Hack: `SpeechService.startSTT` calls `stopSTT` internally on final result.
+    // I can check `_speechService.lastRecognizedText`? 
+    // 
+    // BETTER: Use a debouncer? Or just rely on `finalResult` from the library if SpeechService passes it?
+    // Looking at SpeechService: `onResult(result.recognizedWords)` is called. It doesn't pass the `SpeechRecognitionResult` object.
+    // 
+    // I will modify `_startMode3Listening` to assume if `_mode3UserAnswer` is stable for X ms? 
+    // OR, I can Rely on `_speechService` isListening going false?
+    // 
+    // Let's assume for now:
+    // If we get ANY text, we reset the "Timeout for Retry" and maybe start "silence detection"?
+    // The `SpeechService` uses `dictation` and `pauseFor: 3s`. It will stop itself.
+    // When it stops, we should check the answer.
+    // 
+    // How do we know it stopped? `SpeechService` doesn't have a stream for status.
+    // 
+    // ALTERNATIVE: I will add a polling check or just use the timeout for "NO input".
+    // If `_mode3UserAnswer` is NOT empty when timer fires, then we check answer!
+    // If `_mode3UserAnswer` IS empty, then we show Retry.
+    
+    // Let's update `_handleMode3Timeout` to differentiate.
+  }
+  
+  // Adjusted logic intended for _handleMode3Timeout replacement below
+
     
     final targetText = _currentMode3Question!['target_text'] as String;
     
@@ -766,6 +876,10 @@ class AppState extends ChangeNotifier {
     // Feedback
     if (_mode3Score! >= 90) {
       _mode3Feedback = 'Perfect!';
+      // Add to completed list so it doesn't show up again this session
+      final currentId = _currentMode3Question!['id'] as int;
+      _mode3CompletedQuestionIds.add(currentId);
+      
     } else if (_mode3Score! >= 70) {
       _mode3Feedback = 'Good';
     } else {

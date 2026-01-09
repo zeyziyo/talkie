@@ -434,5 +434,6 @@
   "helpMode4Desc": "Practice speaking selected materials with random interval drills and pronunciation scoring.",
   "helpJsonDesc": "To import study materials in Mode 3, create a JSON file with the following structure:",
   "helpTourDesc": "Start the interactive tutorial to learn the main features.",
-  "startTutorial": "Start Tutorial"
+  "startTutorial": "Start Tutorial",
+  "noVoiceDetected": "No voice detected"
 }
