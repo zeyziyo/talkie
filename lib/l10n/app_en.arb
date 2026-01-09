@@ -429,11 +429,14 @@
   "helpTabJson": "JSON Format",
   "helpTabTour": "Tour",
   "helpMode1Desc": "Recognize voice, translate to target language, and listen to the result.",
+  "helpMode1Details": "• Input via voice or text for instant translation.\n• Duplicate checks happen automatically.\n• Use 'Clear' to reset inputs.\n• Tap 'Save Data' to add to your history.",
   "helpMode2Desc": "Review saved sentences with auto-hide translations and track your review count.",
+  "helpMode2Details": "• View all saved translations and imported materials.\n• Long-press a card to DELETE it.\n• Use the top language menu to filter by target language.",
   "helpMode3Desc": "Import external study materials (JSON) and practice systematically.",
-  "helpMode4Desc": "Practice speaking selected materials with random interval drills and pronunciation scoring.",
+  "helpMode3Details": "• Listen and shadow the sentences.\n• Interval Settings: Use [-] [+] to adjust wait time (3s-60s).\n• Feedback: Get a similarity score (0-100) for your pronunciation.",
   "helpJsonDesc": "To import study materials in Mode 3, create a JSON file with the following structure:",
   "helpTourDesc": "Start the interactive tutorial to learn the main features.",
   "startTutorial": "Start Tutorial",
+  "startWarning": "Warning",
   "noVoiceDetected": "No voice detected"
 }
