@@ -43,12 +43,12 @@ class SpeechService {
       
       // Configure for Speech (Source: PlayAndRecord, Usage: VoiceCommunication/Speech)
       // This is critical for avoiding "Voice not detected" on some Android devices
-      await session.configure(const AudioSessionConfiguration(
+      await session.configure(AudioSessionConfiguration(
         avAudioSessionCategory: AVAudioSessionCategory.playAndRecord,
         avAudioSessionCategoryOptions: AVAudioSessionCategoryOptions.allowBluetooth | 
                                       AVAudioSessionCategoryOptions.defaultToSpeaker,
         avAudioSessionMode: AVAudioSessionMode.voiceChat,
-        androidAudioAttributes: AndroidAudioAttributes(
+        androidAudioAttributes: const AndroidAudioAttributes(
           contentType: AndroidAudioContentType.speech,
           flags: AndroidAudioFlags.none,
           usage: AndroidAudioUsage.voiceCommunication,
@@ -110,17 +110,15 @@ class SpeechService {
       },
       localeId: lang,
       // Android: Force on-device recognition (offline) if available for better performance
-      onDevice: true,
-      
       // Explicitly set a long listen duration to avoid default 30s timeout if needed
-      // (Though usually this is for how long it listens *total*)
       listenFor: const Duration(seconds: 60),
-
+      
       listenOptions: stt.SpeechListenOptions(
         // Use dictation for better sentence recognition and handling of pauses
         listenMode: stt.ListenMode.dictation, 
         cancelOnError: false, // Fix: Don't stop on minor errors
         partialResults: true,
+        onDevice: true, // Android: Force on-device recognition (offline)
       ),
       // Increase pause duration to prevent cutting off too early
       pauseFor: const Duration(seconds: 5), // Fix: Increased from 3s to 5s
