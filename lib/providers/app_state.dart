@@ -792,6 +792,12 @@ class AppState extends ChangeNotifier {
     _speechService.stopSTT();
     _isListening = false;
     
+    // Fix: Check if we have any captured text before failing
+    if (_mode3UserAnswer.trim().isNotEmpty) {
+      _checkMode3Answer();
+      return;
+    }
+    
     // Show Retry Button
     _showRetryButton = true;
     notifyListeners();

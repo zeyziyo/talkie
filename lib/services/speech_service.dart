@@ -118,7 +118,6 @@ class SpeechService {
         listenMode: stt.ListenMode.dictation, 
         cancelOnError: false, // Fix: Don't stop on minor errors
         partialResults: true,
-        onDevice: true, // Android: Force on-device recognition (offline)
       ),
       // Increase pause duration to prevent cutting off too early
       pauseFor: const Duration(seconds: 5), // Fix: Increased from 3s to 5s
