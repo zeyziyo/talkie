@@ -43,7 +43,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get delete => 'Poista';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Materiaalin tiedot';
 
   @override
   String get cancel => 'Peruuta';
@@ -322,6 +322,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialMicDesc => 'Napauta mikrofonia äänisyötettä varten.';
 
   @override
+  String get tutorialTabDesc => 'Täältä voit valita haluamasi oppimistilan.';
+
+  @override
+  String get tutorialTapToContinue => 'Napauta jatkaaksesi';
+
+  @override
   String get tutorialTransTitle => 'Käännä';
 
   @override
@@ -369,4 +375,22 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Ääntä ei havaittu';
+
+  @override
+  String get tooltipSearch => 'Haku';
+
+  @override
+  String get tooltipStudyReview => 'Opiskelu+Kertaus';
+
+  @override
+  String get tooltipSpeaking => 'Puhuminen';
+
+  @override
+  String get tooltipDecrease => 'Vähennä';
+
+  @override
+  String get tooltipIncrease => 'Lisää';
+
+  @override
+  String get languageSettings => 'Kieliasetukset';
 }

@@ -85,7 +85,7 @@ class Mode3Widget extends StatelessWidget {
                             || appState.mode3Interval <= 3 
                             ? null 
                             : () => appState.setMode3Interval(appState.mode3Interval - 1),
-                        tooltip: '감소',
+                        tooltip: l10n.tooltipDecrease,
                       ),
                       
                       Padding(
@@ -107,7 +107,7 @@ class Mode3Widget extends StatelessWidget {
                             || appState.mode3Interval >= 60 
                             ? null 
                             : () => appState.setMode3Interval(appState.mode3Interval + 1),
-                        tooltip: '증가',
+                        tooltip: l10n.tooltipIncrease,
                       ),
                     ],
                   ),

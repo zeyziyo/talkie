@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "เริ่มฝึก",
   "tutorialM3StartDesc": "แตะเล่นเพื่อเริ่มฟังและพูดตาม",
   "startWarning": "คำเตือน",
-  "noVoiceDetected": "ไม่พบเสียง"
+  "noVoiceDetected": "ไม่พบเสียง",
+  "tutorialTabDesc": "คุณสามารถเลือกโหมดการเรียนรู้ที่ต้องการได้ที่นี่",
+  "tutorialTapToContinue": "แตะเพื่อดำเนินการต่อ",
+  "materialInfo": "ข้อมูลเนื้อหา",
+  "tooltipSearch": "ค้นหา",
+  "tooltipStudyReview": "เรียน+ทบทวน",
+  "tooltipSpeaking": "พูด",
+  "tooltipDecrease": "ลด",
+  "tooltipIncrease": "เพิ่ม",
+  "languageSettings": "การตั้งค่าภาษา"
 }

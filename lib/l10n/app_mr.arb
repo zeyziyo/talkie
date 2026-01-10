@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "सुरू करा",
   "tutorialM3StartDesc": "सुरू करण्यासाठी प्ले टॅप करा.",
   "startWarning": "चेतावणी",
-  "noVoiceDetected": "आवाज आढळला नाही"
+  "noVoiceDetected": "आवाज आढळला नाही",
+  "tutorialTabDesc": "तुम्ही येथे तुमची इच्छित शिकण्याची पद्धत निवडू शकता.",
+  "tutorialTapToContinue": "सुरू ठेवण्यासाठी टॅप करा",
+  "materialInfo": "साहित्य माहिती",
+  "tooltipSearch": "शोधा",
+  "tooltipStudyReview": "अभ्यास+पुनरावलोकन",
+  "tooltipSpeaking": "बोलणे",
+  "tooltipDecrease": "कमी करा",
+  "tooltipIncrease": "वाढवा",
+  "languageSettings": "भाषा सेटिंग्ज"
 }

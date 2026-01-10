@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Έναρξη",
   "tutorialM3StartDesc": "Πατήστε play για έναρξη.",
   "startWarning": "Προειδοποίηση",
-  "noVoiceDetected": "Δεν ανιχνεύθηκε φωνή"
+  "noVoiceDetected": "Δεν ανιχνεύθηκε φωνή",
+  "tutorialTabDesc": "Μπορείτε να επιλέξετε την επιθυμητή λειτουργία μάθησης εδώ.",
+  "tutorialTapToContinue": "Πατήστε για συνέχεια",
+  "materialInfo": "Πληροφορίες υλικού",
+  "tooltipSearch": "Αναζήτηση",
+  "tooltipStudyReview": "Μελέτη+Επανάληψη",
+  "tooltipSpeaking": "Ομιλία",
+  "tooltipDecrease": "Μείωση",
+  "tooltipIncrease": "Αύξηση",
+  "languageSettings": "Ρυθμίσεις γλώσσας"
 }

@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "શરૂ કરો",
   "tutorialM3StartDesc": "શરૂ કરવા માટે પ્લે ટેપ કરો.",
   "startWarning": "ચેતવણી",
-  "noVoiceDetected": "કોઈ અવાજ મળ્યો નથી"
+  "noVoiceDetected": "કોઈ અવાજ મળ્યો નથી",
+  "tutorialTabDesc": "તમે અહીં તમારી ઇચ્છિત શીખવાની પદ્ધતિ પસંદ કરી શકો છો.",
+  "tutorialTapToContinue": "ચાલુ રાખવા માટે ટેપ કરો",
+  "materialInfo": "સામગ્રી માહિતી",
+  "tooltipSearch": "શોધો",
+  "tooltipStudyReview": "અભ્યાસ+સમીક્ષા",
+  "tooltipSpeaking": "બોલવું",
+  "tooltipDecrease": "ઘટાડો",
+  "tooltipIncrease": "વધારો",
+  "languageSettings": "ભાષા સેટિંગ્સ"
 }

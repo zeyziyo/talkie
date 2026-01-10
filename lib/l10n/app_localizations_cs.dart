@@ -43,7 +43,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get delete => 'Smazat';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Informace o materiálu';
 
   @override
   String get cancel => 'Zrušit';
@@ -321,6 +321,12 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tutorialMicDesc => 'Klepněte na mikrofon pro hlasový vstup.';
 
   @override
+  String get tutorialTabDesc => 'Zde můžete vybrat požadovaný režim učení.';
+
+  @override
+  String get tutorialTapToContinue => 'Klepněte pro pokračování';
+
+  @override
   String get tutorialTransTitle => 'Překlad';
 
   @override
@@ -367,4 +373,22 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Hlas nerozpoznán';
+
+  @override
+  String get tooltipSearch => 'Hledat';
+
+  @override
+  String get tooltipStudyReview => 'Studium+Opakování';
+
+  @override
+  String get tooltipSpeaking => 'Mluvení';
+
+  @override
+  String get tooltipDecrease => 'Snížit';
+
+  @override
+  String get tooltipIncrease => 'Zvýšit';
+
+  @override
+  String get languageSettings => 'Nastavení jazyka';
 }

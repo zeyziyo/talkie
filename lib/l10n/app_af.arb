@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Begin",
   "tutorialM3StartDesc": "Druk speel om te begin.",
   "startWarning": "Waarskuwing",
-  "noVoiceDetected": "Geen stem bespeur"
+  "noVoiceDetected": "Geen stem bespeur",
+  "tutorialTabDesc": "Jy kan die gewenste leerwyse hier kies.",
+  "tutorialTapToContinue": "Tik om voort te gaan",
+  "materialInfo": "Materiaalinligting",
+  "tooltipSearch": "Soek",
+  "tooltipStudyReview": "Studie+Hersiening",
+  "tooltipSpeaking": "Praat",
+  "tooltipDecrease": "Verminder",
+  "tooltipIncrease": "Verhoog",
+  "languageSettings": "Taalinstellings"
 }

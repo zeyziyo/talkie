@@ -43,7 +43,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get delete => 'നീക്കം ചെയ്യുക';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'മെറ്റീരിയൽ വിവരം';
 
   @override
   String get cancel => 'റദ്ദാക്കുക';
@@ -325,6 +325,13 @@ class AppLocalizationsMl extends AppLocalizations {
       'വോയ്സ് ഇൻപുട്ടിനായി മൈക്ക് ബട്ടൺ ടാപ്പ് ചെയ്യുക.';
 
   @override
+  String get tutorialTabDesc =>
+      'നിങ്ങൾക്ക് ഇവിടെ നിങ്ങളുടെ ആവശ്യമുള്ള പഠന രീതി തിരഞ്ഞെടുക്കാം.';
+
+  @override
+  String get tutorialTapToContinue => 'തുടരാൻ ടാപ്പ് ചെയ്യുക';
+
+  @override
   String get tutorialTransTitle => 'വിവർത്തനം';
 
   @override
@@ -375,4 +382,22 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'ശബ്ദം കണ്ടെത്തിയില്ല';
+
+  @override
+  String get tooltipSearch => 'തിരയുക';
+
+  @override
+  String get tooltipStudyReview => 'പഠനം+അവലോകനം';
+
+  @override
+  String get tooltipSpeaking => 'സംസാരിക്കുക';
+
+  @override
+  String get tooltipDecrease => 'കുറയ്ക്കുക';
+
+  @override
+  String get tooltipIncrease => 'വർദ്ധിപ്പിക്കുക';
+
+  @override
+  String get languageSettings => 'ഭാഷാ ക്രമീകരണങ്ങൾ';
 }

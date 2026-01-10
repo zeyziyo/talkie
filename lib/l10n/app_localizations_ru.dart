@@ -43,7 +43,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get delete => 'Удалить';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Информация о материале';
 
   @override
   String get cancel => 'Отмена';
@@ -325,6 +325,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tutorialMicDesc => 'Нажмите на микрофон для голосового ввода.';
 
   @override
+  String get tutorialTabDesc =>
+      'Здесь вы можете выбрать желаемый режим обучения.';
+
+  @override
+  String get tutorialTapToContinue => 'Нажмите, чтобы продолжить';
+
+  @override
   String get tutorialTransTitle => 'Перевод';
 
   @override
@@ -373,4 +380,22 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Голос не обнаружен';
+
+  @override
+  String get tooltipSearch => 'Поиск';
+
+  @override
+  String get tooltipStudyReview => 'Обучение+Повторение';
+
+  @override
+  String get tooltipSpeaking => 'Говорение';
+
+  @override
+  String get tooltipDecrease => 'Уменьшить';
+
+  @override
+  String get tooltipIncrease => 'Увеличить';
+
+  @override
+  String get languageSettings => 'Настройки языка';
 }

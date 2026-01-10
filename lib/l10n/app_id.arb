@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Mulai Latihan",
   "tutorialM3StartDesc": "Ketuk putar untuk mulai mendengar dan menirukan.",
   "startWarning": "Peringatan",
-  "noVoiceDetected": "Suara tidak terdeteksi"
+  "noVoiceDetected": "Suara tidak terdeteksi",
+  "tutorialTabDesc": "Anda dapat memilih mode pembelajaran yang diinginkan di sini.",
+  "tutorialTapToContinue": "Ketuk untuk melanjutkan",
+  "materialInfo": "Info materi",
+  "tooltipSearch": "Cari",
+  "tooltipStudyReview": "Belajar+Ulasan",
+  "tooltipSpeaking": "Berbicara",
+  "tooltipDecrease": "Kurangi",
+  "tooltipIncrease": "Tambah",
+  "languageSettings": "Pengaturan bahasa"
 }

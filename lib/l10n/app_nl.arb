@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Start Oefening",
   "tutorialM3StartDesc": "Tik play om te luisteren en na te zeggen.",
   "startWarning": "Waarschuwing",
-  "noVoiceDetected": "Geen stem gedetecteerd"
+  "noVoiceDetected": "Geen stem gedetecteerd",
+  "tutorialTabDesc": "Hier kunt u de gewenste leermodus selecteren.",
+  "tutorialTapToContinue": "Tik om door te gaan",
+  "materialInfo": "Materiaalinfo",
+  "tooltipSearch": "Zoeken",
+  "tooltipStudyReview": "Studie+Herhaling",
+  "tooltipSpeaking": "Spreken",
+  "tooltipDecrease": "Verminderen",
+  "tooltipIncrease": "Verhogen",
+  "languageSettings": "Taalinstellingen"
 }

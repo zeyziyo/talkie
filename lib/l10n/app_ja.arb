@@ -1,11 +1,9 @@
 {
   "@@locale": "ja",
-  
   "appTitle": "Talkie",
   "@appTitle": {
     "description": "Application title"
   },
-  
   "tabReview": "Review ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -15,7 +13,6 @@
       }
     }
   },
-  
   "tabStudyMaterial": "Study Material ({count})",
   "@tabStudyMaterial": {
     "description": "Study material tab label with count",
@@ -25,37 +22,30 @@
       }
     }
   },
-
   "mode2Title": "Review",
   "@mode2Title": {
     "description": "Mode 2 title for help dialog"
   },
-  
   "search": "Search",
   "@search": {
     "description": "Search mode label"
   },
-  
   "translate": "Translate",
   "@translate": {
     "description": "Translate button"
   },
-  
   "listen": "Listen",
   "@listen": {
     "description": "Listen/TTS button"
   },
-  
   "saveData": "Save Data",
   "@saveData": {
     "description": "Save translation button"
   },
-  
   "saved": "Saved",
   "@saved": {
     "description": "Data saved status"
   },
-  
   "delete": "Delete",
   "materialInfo": "Material Info",
   "@materialInfo": {
@@ -64,22 +54,18 @@
   "@delete": {
     "description": "Delete button"
   },
-  
   "cancel": "Cancel",
   "@cancel": {
     "description": "Cancel button"
   },
-  
   "confirm": "OK",
   "@confirm": {
     "description": "Confirm/OK button"
   },
-  
   "refresh": "Refresh",
   "@refresh": {
     "description": "Refresh button"
   },
-  
   "studyRecords": "Study Records ({count})",
   "@studyRecords": {
     "description": "Study records title with count",
@@ -89,47 +75,38 @@
       }
     }
   },
-  
   "targetLanguageFilter": "Target Language Filter:",
   "@targetLanguageFilter": {
     "description": "Language filter label"
   },
-  
   "noRecords": "No study records for selected language",
   "@noRecords": {
     "description": "Empty state message"
   },
-  
   "saveTranslationsFromSearch": "Save translations from search mode",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
   },
-  
   "flip": "Show",
   "@flip": {
     "description": "Show translation button"
   },
-  
   "hide": "Hide",
   "@hide": {
     "description": "Hide translation button"
   },
-  
   "deleteRecord": "Delete Record",
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  
   "confirmDelete": "Are you sure you want to delete this study record?",
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  
   "recordDeleted": "Record deleted successfully",
   "@recordDeleted": {
     "description": "Delete success message"
   },
-  
   "deleteFailed": "Delete failed: {error}",
   "@deleteFailed": {
     "description": "Delete error message",
@@ -139,27 +116,22 @@
       }
     }
   },
-  
   "importJsonFile": "Import JSON File",
   "@importJsonFile": {
     "description": "Import JSON button"
   },
-  
   "importing": "Importing...",
   "@importing": {
     "description": "Import in progress"
   },
-  
   "importComplete": "Import Complete",
   "@importComplete": {
     "description": "Import success title"
   },
-  
   "importFailed": "Import Failed",
   "@importFailed": {
     "description": "Import error title"
   },
-  
   "importFile": "File: {fileName}",
   "@importFile": {
     "description": "Imported file name",
@@ -169,7 +141,6 @@
       }
     }
   },
-  
   "importTotal": "Total: {count} items",
   "@importTotal": {
     "description": "Total import count",
@@ -179,7 +150,6 @@
       }
     }
   },
-  
   "importAdded": "Added: {count} items",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -189,7 +159,6 @@
       }
     }
   },
-  
   "importSkipped": "Skipped: {count} items",
   "@importSkipped": {
     "description": "Skipped import count",
@@ -199,17 +168,14 @@
       }
     }
   },
-  
   "errors": "Errors:",
   "@errors": {
     "description": "Error section label"
   },
-  
   "error": "Error",
   "@error": {
     "description": "Error dialog title"
   },
-  
   "importErrorMessage": "Failed to import file:\\n{error}",
   "@importErrorMessage": {
     "description": "Import error message",
@@ -219,27 +185,22 @@
       }
     }
   },
-  
   "selectStudyMaterial": "Select Study Material",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  
   "subject": "Subject:",
   "@subject": {
     "description": "Subject label"
   },
-  
   "source": "Source:",
   "@source": {
     "description": "Source label"
   },
-  
   "file": "File:",
   "@file": {
     "description": "File label"
   },
-  
   "progress": "Progress: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -252,37 +213,30 @@
       }
     }
   },
-  
   "importJsonFilePrompt": "Please import a JSON file",
   "@importJsonFilePrompt": {
     "description": "Empty state prompt"
   },
-  
   "selectMaterialPrompt": "Please select a study material",
   "@selectMaterialPrompt": {
     "description": "Selection prompt"
   },
-  
   "studyComplete": "Studied",
   "@studyComplete": {
     "description": "Study complete button text"
   },
-  
   "markAsStudied": "Mark as Studied",
   "@markAsStudied": {
     "description": "Mark study button text"
   },
-  
   "listening": "Listening...",
   "@listening": {
     "description": "STT listening status"
   },
-  
   "recognized": "Recognition complete",
   "@recognized": {
     "description": "STT complete status"
   },
-  
   "recognitionFailed": "Speech recognition failed: {error}",
   "@recognitionFailed": {
     "description": "STT error message",
@@ -292,27 +246,22 @@
       }
     }
   },
-  
   "checking": "Checking...",
   "@checking": {
     "description": "Checking for duplicates"
   },
-  
   "translating": "Translating...",
   "@translating": {
     "description": "Translation in progress"
   },
-  
   "translationComplete": "Translation complete (save required)",
   "@translationComplete": {
     "description": "Translation done status"
   },
-  
   "translationLoaded": "Loaded saved translation",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  
   "translationFailed": "Translation failed: {error}",
   "@translationFailed": {
     "description": "Translation error",
@@ -322,22 +271,18 @@
       }
     }
   },
-  
   "enterTextToTranslate": "Please enter text to translate",
   "@enterTextToTranslate": {
     "description": "Empty input warning"
   },
-  
   "saving": "Saving...",
   "@saving": {
     "description": "Save in progress"
   },
-  
   "noTranslationToSave": "No translation to save",
   "@noTranslationToSave": {
     "description": "Save error - no data"
   },
-  
   "saveFailed": "Save failed: {error}",
   "@saveFailed": {
     "description": "Save error message",
@@ -347,17 +292,14 @@
       }
     }
   },
-  
   "playing": "Playing...",
   "@playing": {
     "description": "TTS playing status"
   },
-  
   "noTextToPlay": "No text to play",
   "@noTextToPlay": {
     "description": "TTS error - no text"
   },
-  
   "playbackFailed": "Playback failed: {error}",
   "@playbackFailed": {
     "description": "TTS error message",
@@ -367,32 +309,26 @@
       }
     }
   },
-  
   "sourceLanguage": "Source Language",
   "@sourceLanguage": {
     "description": "Source language label"
   },
-  
   "targetLanguage": "Target Language",
   "@targetLanguage": {
     "description": "Target language label"
   },
-  
   "similarTextFound": "Similar text found",
   "@similarTextFound": {
     "description": "Duplicate detection title"
   },
-  
   "useExistingText": "Use Existing",
   "@useExistingText": {
     "description": "Use existing text button"
   },
-  
   "createNew": "Create New Entry",
   "@createNew": {
     "description": "Create new entry button"
   },
-  
   "reviewCount": "Review {count} time(s)",
   "@reviewCount": {
     "description": "Review count display",
@@ -402,7 +338,6 @@
       }
     }
   },
-  
   "tabSpeaking": "Speaking",
   "speakingPractice": "Speaking Practice",
   "intervalSeconds": "Interval: {seconds}s",
@@ -428,7 +363,6 @@
   "tryAgain": "Try Again",
   "startPractice": "Start Practice",
   "stopPractice": "Stop Practice",
-  
   "helpTitle": "Help & Guide",
   "helpTabModes": "Modes",
   "helpTabJson": "JSON Format",
@@ -448,19 +382,24 @@
   "tutorialTransDesc": "Tap here to translate your text.",
   "tutorialSaveTitle": "Save",
   "tutorialSaveDesc": "Save your translation to study records.",
-  
   "tutorialM2SelectTitle": "Select & Filter",
   "tutorialM2SelectDesc": "Choose study materials or switch to 'Review All'.",
   "tutorialM2ListTitle": "Study List",
   "tutorialM2ListDesc": "Check your saved cards and flip them to see answers.",
-  
   "tutorialM3SelectTitle": "Select Material",
   "tutorialM3SelectDesc": "Choose a material set for speaking practice.",
   "tutorialM3IntervalTitle": "Interval",
   "tutorialM3IntervalDesc": "Adjust the waiting time between sentences.",
   "tutorialM3StartTitle": "Start Practice",
   "tutorialM3StartDesc": "Tap play to start listening and shadowing.",
-
   "startWarning": "Warning",
-  "noVoiceDetected": "No voice detected"
+  "noVoiceDetected": "No voice detected",
+  "tutorialTabDesc": "ここで希望する学習モードを選択できます。",
+  "tutorialTapToContinue": "タップして続ける",
+  "tooltipSearch": "検索",
+  "tooltipStudyReview": "学習+復習",
+  "tooltipSpeaking": "スピーキング",
+  "tooltipDecrease": "減少",
+  "tooltipIncrease": "増加",
+  "languageSettings": "言語設定"
 }

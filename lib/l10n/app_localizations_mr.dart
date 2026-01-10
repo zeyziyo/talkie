@@ -43,7 +43,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get delete => 'काढून टाका';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'साहित्य माहिती';
 
   @override
   String get cancel => 'रद्द करा';
@@ -322,6 +322,13 @@ class AppLocalizationsMr extends AppLocalizations {
   String get tutorialMicDesc => 'व्हॉइस इनपुटसाठी माईक बटण टॅप करा.';
 
   @override
+  String get tutorialTabDesc =>
+      'तुम्ही येथे तुमची इच्छित शिकण्याची पद्धत निवडू शकता.';
+
+  @override
+  String get tutorialTapToContinue => 'सुरू ठेवण्यासाठी टॅप करा';
+
+  @override
   String get tutorialTransTitle => 'भाषांतर';
 
   @override
@@ -371,4 +378,22 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'आवाज आढळला नाही';
+
+  @override
+  String get tooltipSearch => 'शोधा';
+
+  @override
+  String get tooltipStudyReview => 'अभ्यास+पुनरावलोकन';
+
+  @override
+  String get tooltipSpeaking => 'बोलणे';
+
+  @override
+  String get tooltipDecrease => 'कमी करा';
+
+  @override
+  String get tooltipIncrease => 'वाढवा';
+
+  @override
+  String get languageSettings => 'भाषा सेटिंग्ज';
 }

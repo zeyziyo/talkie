@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Start",
   "tutorialM3StartDesc": "Klepněte na Play pro start.",
   "startWarning": "Varování",
-  "noVoiceDetected": "Hlas nerozpoznán"
+  "noVoiceDetected": "Hlas nerozpoznán",
+  "tutorialTabDesc": "Zde můžete vybrat požadovaný režim učení.",
+  "tutorialTapToContinue": "Klepněte pro pokračování",
+  "materialInfo": "Informace o materiálu",
+  "tooltipSearch": "Hledat",
+  "tooltipStudyReview": "Studium+Opakování",
+  "tooltipSpeaking": "Mluvení",
+  "tooltipDecrease": "Snížit",
+  "tooltipIncrease": "Zvýšit",
+  "languageSettings": "Nastavení jazyka"
 }

@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Start",
   "tutorialM3StartDesc": "Apasă play pentru a începe.",
   "startWarning": "Avertisment",
-  "noVoiceDetected": "Voce nedetectată"
+  "noVoiceDetected": "Voce nedetectată",
+  "tutorialTabDesc": "Aici puteți selecta modul de învățare dorit.",
+  "tutorialTapToContinue": "Atingeți pentru a continua",
+  "materialInfo": "Informații material",
+  "tooltipSearch": "Căutare",
+  "tooltipStudyReview": "Studiu+Revizuire",
+  "tooltipSpeaking": "Vorbire",
+  "tooltipDecrease": "Scădere",
+  "tooltipIncrease": "Creștere",
+  "languageSettings": "Setări limbă"
 }

@@ -43,7 +43,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get delete => 'Xóa';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Thông tin tài liệu';
 
   @override
   String get cancel => 'Hủy';
@@ -324,6 +324,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialMicDesc => 'Nhấn nút mic để bắt đầu nhập giọng nói.';
 
   @override
+  String get tutorialTabDesc => 'Bạn có thể chọn chế độ học mong muốn tại đây.';
+
+  @override
+  String get tutorialTapToContinue => 'Chạm để tiếp tục';
+
+  @override
   String get tutorialTransTitle => 'Dịch';
 
   @override
@@ -372,4 +378,22 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Không phát hiện giọng nói';
+
+  @override
+  String get tooltipSearch => 'Tìm kiếm';
+
+  @override
+  String get tooltipStudyReview => 'Học+Ôn tập';
+
+  @override
+  String get tooltipSpeaking => 'Nói';
+
+  @override
+  String get tooltipDecrease => 'Giảm';
+
+  @override
+  String get tooltipIncrease => 'Tăng';
+
+  @override
+  String get languageSettings => 'Cài đặt ngôn ngữ';
 }

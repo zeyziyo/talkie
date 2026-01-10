@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "شروع",
   "tutorialM3StartDesc": "شروع کرنے کے لیے پلے دبائیں۔",
   "startWarning": "انتباہ",
-  "noVoiceDetected": "کوئی آواز نہیں ملی"
+  "noVoiceDetected": "کوئی آواز نہیں ملی",
+  "tutorialTabDesc": "آپ یہاں اپنی مطلوبہ سیکھنے کا طریقہ منتخب کر سکتے ہیں۔",
+  "tutorialTapToContinue": "جاری رکھنے کے لیے تھپتھپائیں",
+  "materialInfo": "مواد کی معلومات",
+  "tooltipSearch": "تلاش",
+  "tooltipStudyReview": "مطالعہ+جائزہ",
+  "tooltipSpeaking": "بولنا",
+  "tooltipDecrease": "کم کریں",
+  "tooltipIncrease": "بڑھائیں",
+  "languageSettings": "زبان کی ترتیبات"
 }

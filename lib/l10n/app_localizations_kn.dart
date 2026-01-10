@@ -43,7 +43,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get delete => 'ಅಳಿಸಿ';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'ವಿಷಯ ಮಾಹಿತಿ';
 
   @override
   String get cancel => 'ರದ್ದುಮಾಡಿ';
@@ -325,6 +325,13 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tutorialMicDesc => 'ಧ್ವನಿ ಇನ್ಪುಟ್ಗಾಗಿ ಮೈಕ್ ಬಟನ್ ಟ್ಯಾಪ್ ಮಾಡಿ.';
 
   @override
+  String get tutorialTabDesc =>
+      'ನೀವು ಇಲ್ಲಿ ನಿಮ್ಮ ಬಯಸಿದ ಕಲಿಕೆಯ ವಿಧಾನವನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು.';
+
+  @override
+  String get tutorialTapToContinue => 'ಮುಂದುವರಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ';
+
+  @override
   String get tutorialTransTitle => 'ಅನುವಾದಿಸಿ';
 
   @override
@@ -374,4 +381,22 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'ಯಾವುದೇ ಧ್ವನಿ ಪತ್ತೆಯಾಗಿಲ್ಲ';
+
+  @override
+  String get tooltipSearch => 'ಹುಡುಕಿ';
+
+  @override
+  String get tooltipStudyReview => 'ಅಧ್ಯಯನ+ಪರಿಶೀಲನೆ';
+
+  @override
+  String get tooltipSpeaking => 'ಮಾತನಾಡುವುದು';
+
+  @override
+  String get tooltipDecrease => 'ಕಡಿಮೆ';
+
+  @override
+  String get tooltipIncrease => 'ಹೆಚ್ಚಿಸು';
+
+  @override
+  String get languageSettings => 'ಭಾಷಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು';
 }

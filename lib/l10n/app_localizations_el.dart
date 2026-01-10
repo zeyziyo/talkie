@@ -43,7 +43,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get delete => 'Διαγραφή';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Πληροφορίες υλικού';
 
   @override
   String get cancel => 'Ακύρωση';
@@ -326,6 +326,13 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialMicDesc => 'Πατήστε το μικρόφωνο για φωνητική εισαγωγή.';
 
   @override
+  String get tutorialTabDesc =>
+      'Μπορείτε να επιλέξετε την επιθυμητή λειτουργία μάθησης εδώ.';
+
+  @override
+  String get tutorialTapToContinue => 'Πατήστε για συνέχεια';
+
+  @override
   String get tutorialTransTitle => 'Μετάφραση';
 
   @override
@@ -372,4 +379,22 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Δεν ανιχνεύθηκε φωνή';
+
+  @override
+  String get tooltipSearch => 'Αναζήτηση';
+
+  @override
+  String get tooltipStudyReview => 'Μελέτη+Επανάληψη';
+
+  @override
+  String get tooltipSpeaking => 'Ομιλία';
+
+  @override
+  String get tooltipDecrease => 'Μείωση';
+
+  @override
+  String get tooltipIncrease => 'Αύξηση';
+
+  @override
+  String get languageSettings => 'Ρυθμίσεις γλώσσας';
 }

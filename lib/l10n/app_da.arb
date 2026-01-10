@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Start",
   "tutorialM3StartDesc": "Tryk play for at starte.",
   "startWarning": "Advarsel",
-  "noVoiceDetected": "Ingen stemme registreret"
+  "noVoiceDetected": "Ingen stemme registreret",
+  "tutorialTabDesc": "Her kan du vælge den ønskede læringstilstand.",
+  "tutorialTapToContinue": "Tryk for at fortsætte",
+  "materialInfo": "Materialeinfo",
+  "tooltipSearch": "Søg",
+  "tooltipStudyReview": "Studie+Gentagelse",
+  "tooltipSpeaking": "Tale",
+  "tooltipDecrease": "Formindsk",
+  "tooltipIncrease": "Forøg",
+  "languageSettings": "Sprogindstillinger"
 }

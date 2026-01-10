@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "தொடங்கு",
   "tutorialM3StartDesc": "தொடங்க ப்ளே தட்டவும்.",
   "startWarning": "எச்சரிக்கை",
-  "noVoiceDetected": "குரல் கண்டறியப்படவில்லை"
+  "noVoiceDetected": "குரல் கண்டறியப்படவில்லை",
+  "tutorialTabDesc": "நீங்கள் இங்கே உங்கள் விரும்பிய கற்றல் முறையைத் தேர்ந்தெடுக்கலாம்.",
+  "tutorialTapToContinue": "தொடர தட்டவும்",
+  "materialInfo": "பொருள் தகவல்",
+  "tooltipSearch": "தேடு",
+  "tooltipStudyReview": "படிப்பு+மதிப்பாய்வு",
+  "tooltipSpeaking": "பேசுதல்",
+  "tooltipDecrease": "குறைக்க",
+  "tooltipIncrease": "அதிகரிக்க",
+  "languageSettings": "மொழி அமைப்புகள்"
 }

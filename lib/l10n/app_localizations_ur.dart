@@ -43,7 +43,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get delete => 'حذف';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'مواد کی معلومات';
 
   @override
   String get cancel => 'منسوخ';
@@ -321,6 +321,13 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tutorialMicDesc => 'وائس ان پٹ کے لیے مائک بٹن دبائیں۔';
 
   @override
+  String get tutorialTabDesc =>
+      'آپ یہاں اپنی مطلوبہ سیکھنے کا طریقہ منتخب کر سکتے ہیں۔';
+
+  @override
+  String get tutorialTapToContinue => 'جاری رکھنے کے لیے تھپتھپائیں';
+
+  @override
   String get tutorialTransTitle => 'ترجمہ';
 
   @override
@@ -368,4 +375,22 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'کوئی آواز نہیں ملی';
+
+  @override
+  String get tooltipSearch => 'تلاش';
+
+  @override
+  String get tooltipStudyReview => 'مطالعہ+جائزہ';
+
+  @override
+  String get tooltipSpeaking => 'بولنا';
+
+  @override
+  String get tooltipDecrease => 'کم کریں';
+
+  @override
+  String get tooltipIncrease => 'بڑھائیں';
+
+  @override
+  String get languageSettings => 'زبان کی ترتیبات';
 }

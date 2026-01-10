@@ -43,7 +43,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get delete => 'Tanggalin';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Impormasyon ng materyal';
 
   @override
   String get cancel => 'Kanselahin';
@@ -325,6 +325,13 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialMicDesc => 'I-tap ang mic button para sa voice input.';
 
   @override
+  String get tutorialTabDesc =>
+      'Maaari mong piliin ang nais na mode ng pag-aaral dito.';
+
+  @override
+  String get tutorialTapToContinue => 'I-tap upang magpatuloy';
+
+  @override
   String get tutorialTransTitle => 'Isalin';
 
   @override
@@ -376,4 +383,22 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Walang boses na nakita';
+
+  @override
+  String get tooltipSearch => 'Maghanap';
+
+  @override
+  String get tooltipStudyReview => 'Pag-aaral+Pagsusuri';
+
+  @override
+  String get tooltipSpeaking => 'Pagsasalita';
+
+  @override
+  String get tooltipDecrease => 'Bawasan';
+
+  @override
+  String get tooltipIncrease => 'Dagdagan';
+
+  @override
+  String get languageSettings => 'Mga setting ng wika';
 }

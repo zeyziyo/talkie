@@ -43,7 +43,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get delete => 'حذف';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'معلومات المادة';
 
   @override
   String get cancel => 'إلغاء';
@@ -322,6 +322,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialMicDesc => 'اضغط زر الميكروفون لبدء الإدخال الصوتي.';
 
   @override
+  String get tutorialTabDesc => 'يمكنك اختيار وضع التعلم المطلوب هنا.';
+
+  @override
+  String get tutorialTapToContinue => 'اضغط للمتابعة';
+
+  @override
   String get tutorialTransTitle => 'ترجمة';
 
   @override
@@ -370,4 +376,22 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'لم يتم اكتشاف صوت';
+
+  @override
+  String get tooltipSearch => 'بحث';
+
+  @override
+  String get tooltipStudyReview => 'دراسة+مراجعة';
+
+  @override
+  String get tooltipSpeaking => 'تحدث';
+
+  @override
+  String get tooltipDecrease => 'تقليل';
+
+  @override
+  String get tooltipIncrease => 'زيادة';
+
+  @override
+  String get languageSettings => 'إعدادات اللغة';
 }

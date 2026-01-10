@@ -13,228 +13,225 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String tabReview(int count) {
-    return 'Revisar ($count)';
+    return 'Review ($count)';
   }
 
   @override
   String tabStudyMaterial(int count) {
-    return 'Material de Estudio ($count)';
+    return 'Study Material ($count)';
   }
 
   @override
   String get mode2Title => 'Review';
 
   @override
-  String get search => 'Buscar';
+  String get search => 'Search';
 
   @override
-  String get translate => 'Traducir';
+  String get translate => 'Translate';
 
   @override
-  String get listen => 'Escuchar';
+  String get listen => 'Listen';
 
   @override
-  String get saveData => 'Guardar Datos';
+  String get saveData => 'Save Data';
 
   @override
-  String get saved => 'Guardado';
+  String get saved => 'Saved';
 
   @override
-  String get delete => 'Eliminar';
+  String get delete => 'Delete';
 
   @override
   String get materialInfo => 'Material Info';
 
   @override
-  String get cancel => 'Cancelar';
+  String get cancel => 'Cancel';
 
   @override
   String get confirm => 'OK';
 
   @override
-  String get refresh => 'Actualizar';
+  String get refresh => 'Refresh';
 
   @override
   String studyRecords(int count) {
-    return 'Registros de Estudio ($count)';
+    return 'Study Records ($count)';
   }
 
   @override
-  String get targetLanguageFilter => 'Filtro de Idioma Destino:';
+  String get targetLanguageFilter => 'Target Language Filter:';
 
   @override
-  String get noRecords =>
-      'No hay registros de estudio para el idioma seleccionado';
+  String get noRecords => 'No study records for selected language';
 
   @override
-  String get saveTranslationsFromSearch =>
-      'Guardar traducciones desde el modo de búsqueda';
+  String get saveTranslationsFromSearch => 'Save translations from search mode';
 
   @override
-  String get flip => 'Voltear';
+  String get flip => 'Show';
 
   @override
-  String get hide => 'Ocultar';
+  String get hide => 'Hide';
 
   @override
-  String get deleteRecord => 'Eliminar Registro';
+  String get deleteRecord => 'Delete Record';
 
   @override
   String get confirmDelete =>
-      '¿Seguro que quieres eliminar este registro de estudio?';
+      'Are you sure you want to delete this study record?';
 
   @override
-  String get recordDeleted => 'Registro eliminado correctamente';
+  String get recordDeleted => 'Record deleted successfully';
 
   @override
   String deleteFailed(String error) {
-    return 'Eliminación fallida: $error';
+    return 'Delete failed: $error';
   }
 
   @override
-  String get importJsonFile => 'Importar Archivo JSON';
+  String get importJsonFile => 'Import JSON File';
 
   @override
-  String get importing => 'Importando...';
+  String get importing => 'Importing...';
 
   @override
-  String get importComplete => 'Importación Completa';
+  String get importComplete => 'Import Complete';
 
   @override
-  String get importFailed => 'Importación Fallida';
+  String get importFailed => 'Import Failed';
 
   @override
   String importFile(String fileName) {
-    return 'Archivo: $fileName';
+    return 'File: $fileName';
   }
 
   @override
   String importTotal(int count) {
-    return 'Total: $count elementos';
+    return 'Total: $count items';
   }
 
   @override
   String importAdded(int count) {
-    return 'Agregado: $count elementos';
+    return 'Added: $count items';
   }
 
   @override
   String importSkipped(int count) {
-    return 'Omitido: $count elementos';
+    return 'Skipped: $count items';
   }
 
   @override
-  String get errors => 'Errores:';
+  String get errors => 'Errors:';
 
   @override
   String get error => 'Error';
 
   @override
   String importErrorMessage(String error) {
-    return 'Error al importar archivo:\\n$error';
+    return 'Failed to import file:\\n$error';
   }
 
   @override
-  String get selectStudyMaterial => 'Seleccionar Material de Estudio';
+  String get selectStudyMaterial => 'Select Study Material';
 
   @override
-  String get subject => 'Asunto:';
+  String get subject => 'Subject:';
 
   @override
-  String get source => 'Fuente:';
+  String get source => 'Source:';
 
   @override
-  String get file => 'Archivo:';
+  String get file => 'File:';
 
   @override
   String progress(int current, int total) {
-    return 'Progreso: $current / $total';
+    return 'Progress: $current / $total';
   }
 
   @override
-  String get importJsonFilePrompt => 'Por favor importa un archivo JSON';
+  String get importJsonFilePrompt => 'Please import a JSON file';
 
   @override
-  String get selectMaterialPrompt =>
-      'Por favor selecciona un material de estudio';
+  String get selectMaterialPrompt => 'Please select a study material';
 
   @override
-  String get studyComplete => 'Estudiado';
+  String get studyComplete => 'Studied';
 
   @override
-  String get markAsStudied => 'Marcar como Estudiado';
+  String get markAsStudied => 'Mark as Studied';
 
   @override
-  String get listening => 'Escuchando...';
+  String get listening => 'Listening...';
 
   @override
-  String get recognized => 'Reconocimiento completo';
+  String get recognized => 'Recognition complete';
 
   @override
   String recognitionFailed(String error) {
-    return 'Fallo en reconocimiento de voz: $error';
+    return 'Speech recognition failed: $error';
   }
 
   @override
-  String get checking => 'Comprobando...';
+  String get checking => 'Checking...';
 
   @override
-  String get translating => 'Traduciendo...';
+  String get translating => 'Translating...';
 
   @override
-  String get translationComplete => 'Traducción completa (guardar requerido)';
+  String get translationComplete => 'Translation complete (save required)';
 
   @override
-  String get translationLoaded => 'Traducción guardada cargada';
+  String get translationLoaded => 'Loaded saved translation';
 
   @override
   String translationFailed(String error) {
-    return 'Traducción fallida: $error';
+    return 'Translation failed: $error';
   }
 
   @override
-  String get enterTextToTranslate => 'Por favor ingresa texto para traducir';
+  String get enterTextToTranslate => 'Please enter text to translate';
 
   @override
-  String get saving => 'Guardando...';
+  String get saving => 'Saving...';
 
   @override
-  String get noTranslationToSave => 'No hay traducción para guardar';
+  String get noTranslationToSave => 'No translation to save';
 
   @override
   String saveFailed(String error) {
-    return 'Guardado fallido: $error';
+    return 'Save failed: $error';
   }
 
   @override
-  String get playing => 'Reproduciendo...';
+  String get playing => 'Playing...';
 
   @override
-  String get noTextToPlay => 'No hay texto para reproducir';
+  String get noTextToPlay => 'No text to play';
 
   @override
   String playbackFailed(String error) {
-    return 'Reproducción fallida: $error';
+    return 'Playback failed: $error';
   }
 
   @override
-  String get sourceLanguage => 'Idioma Origen';
+  String get sourceLanguage => 'Source Language';
 
   @override
-  String get targetLanguage => 'Idioma Destino';
+  String get targetLanguage => 'Target Language';
 
   @override
-  String get similarTextFound => 'Texto similar encontrado';
+  String get similarTextFound => 'Similar text found';
 
   @override
-  String get useExistingText => 'Usar Existente';
+  String get useExistingText => 'Use Existing';
 
   @override
-  String get createNew => 'Crear Nueva Entrada';
+  String get createNew => 'Create New Entry';
 
   @override
   String reviewCount(int count) {
-    return 'Revisado $count vez/veces';
+    return 'Review $count time(s)';
   }
 
   @override
@@ -328,6 +325,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tutorialMicDesc => 'Tap the mic button to start voice input.';
 
   @override
+  String get tutorialTabDesc =>
+      'Aquí puedes seleccionar el modo de aprendizaje deseado.';
+
+  @override
+  String get tutorialTapToContinue => 'Toca para continuar';
+
+  @override
   String get tutorialTransTitle => 'Translate';
 
   @override
@@ -379,4 +383,22 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'No voice detected';
+
+  @override
+  String get tooltipSearch => 'Buscar';
+
+  @override
+  String get tooltipStudyReview => 'Estudio+Repaso';
+
+  @override
+  String get tooltipSpeaking => 'Hablar';
+
+  @override
+  String get tooltipDecrease => 'Disminuir';
+
+  @override
+  String get tooltipIncrease => 'Aumentar';
+
+  @override
+  String get languageSettings => 'Configuración de idioma';
 }

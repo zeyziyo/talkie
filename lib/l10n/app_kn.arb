@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "ಪ್ರಾರಂಭಿಸಿ",
   "tutorialM3StartDesc": "ಪ್ರಾರಂಭಿಸಲು ಪ್ಲೇ ಟ್ಯಾಪ್ ಮಾಡಿ.",
   "startWarning": "ಎಚ್ಚರಿಕೆ",
-  "noVoiceDetected": "ಯಾವುದೇ ಧ್ವನಿ ಪತ್ತೆಯಾಗಿಲ್ಲ"
+  "noVoiceDetected": "ಯಾವುದೇ ಧ್ವನಿ ಪತ್ತೆಯಾಗಿಲ್ಲ",
+  "tutorialTabDesc": "ನೀವು ಇಲ್ಲಿ ನಿಮ್ಮ ಬಯಸಿದ ಕಲಿಕೆಯ ವಿಧಾನವನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು.",
+  "tutorialTapToContinue": "ಮುಂದುವರಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ",
+  "materialInfo": "ವಿಷಯ ಮಾಹಿತಿ",
+  "tooltipSearch": "ಹುಡುಕಿ",
+  "tooltipStudyReview": "ಅಧ್ಯಯನ+ಪರಿಶೀಲನೆ",
+  "tooltipSpeaking": "ಮಾತನಾಡುವುದು",
+  "tooltipDecrease": "ಕಡಿಮೆ",
+  "tooltipIncrease": "ಹೆಚ್ಚಿಸು",
+  "languageSettings": "ಭಾಷಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
 }

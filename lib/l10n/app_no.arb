@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Start",
   "tutorialM3StartDesc": "Trykk play for å starte.",
   "startWarning": "Advarsel",
-  "noVoiceDetected": "Ingen stemme oppdaget"
+  "noVoiceDetected": "Ingen stemme oppdaget",
+  "tutorialTabDesc": "Her kan du velge ønsket læringsmodus.",
+  "tutorialTapToContinue": "Trykk for å fortsette",
+  "materialInfo": "Materialinfo",
+  "tooltipSearch": "Søk",
+  "tooltipStudyReview": "Studie+Repetisjon",
+  "tooltipSpeaking": "Tale",
+  "tooltipDecrease": "Reduser",
+  "tooltipIncrease": "Øk",
+  "languageSettings": "Språkinnstillinger"
 }

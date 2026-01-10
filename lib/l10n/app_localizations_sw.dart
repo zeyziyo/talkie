@@ -43,7 +43,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get delete => 'Futa';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Maelezo ya nyenzo';
 
   @override
   String get cancel => 'Ghairi';
@@ -322,6 +322,13 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialMicDesc => 'Gonga maikrofoni kwa ingizo la sauti.';
 
   @override
+  String get tutorialTabDesc =>
+      'Unaweza kuchagua hali ya kujifunza unayotaka hapa.';
+
+  @override
+  String get tutorialTapToContinue => 'Gusa ili kuendelea';
+
+  @override
   String get tutorialTransTitle => 'Tafsiri';
 
   @override
@@ -368,4 +375,22 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Sauti haijagunduliwa';
+
+  @override
+  String get tooltipSearch => 'Tafuta';
+
+  @override
+  String get tooltipStudyReview => 'Kusoma+Kurudia';
+
+  @override
+  String get tooltipSpeaking => 'Kuzungumza';
+
+  @override
+  String get tooltipDecrease => 'Punguza';
+
+  @override
+  String get tooltipIncrease => 'Ongeza';
+
+  @override
+  String get languageSettings => 'Mipangilio ya lugha';
 }

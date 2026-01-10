@@ -69,7 +69,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get saveTranslationsFromSearch => 'Save translations from search mode';
 
   @override
-  String get flip => 'Flip';
+  String get flip => 'Show';
 
   @override
   String get hide => 'Hide';
@@ -325,6 +325,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get tutorialMicDesc => 'Tap the mic button to start voice input.';
 
   @override
+  String get tutorialTabDesc =>
+      'Vous pouvez sélectionner le mode d\'apprentissage souhaité ici.';
+
+  @override
+  String get tutorialTapToContinue => 'Appuyez pour continuer';
+
+  @override
   String get tutorialTransTitle => 'Translate';
 
   @override
@@ -376,4 +383,22 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'No voice detected';
+
+  @override
+  String get tooltipSearch => 'Rechercher';
+
+  @override
+  String get tooltipStudyReview => 'Étude+Révision';
+
+  @override
+  String get tooltipSpeaking => 'Parler';
+
+  @override
+  String get tooltipDecrease => 'Diminuer';
+
+  @override
+  String get tooltipIncrease => 'Augmenter';
+
+  @override
+  String get languageSettings => 'Paramètres de langue';
 }

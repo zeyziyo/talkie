@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Начать",
   "tutorialM3StartDesc": "Нажмите Play для начала практики.",
   "startWarning": "Внимание",
-  "noVoiceDetected": "Голос не обнаружен"
+  "noVoiceDetected": "Голос не обнаружен",
+  "tutorialTabDesc": "Здесь вы можете выбрать желаемый режим обучения.",
+  "tutorialTapToContinue": "Нажмите, чтобы продолжить",
+  "materialInfo": "Информация о материале",
+  "tooltipSearch": "Поиск",
+  "tooltipStudyReview": "Обучение+Повторение",
+  "tooltipSpeaking": "Говорение",
+  "tooltipDecrease": "Уменьшить",
+  "tooltipIncrease": "Увеличить",
+  "languageSettings": "Настройки языка"
 }

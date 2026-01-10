@@ -43,7 +43,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get delete => 'Hapus';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Info materi';
 
   @override
   String get cancel => 'Batal';
@@ -326,6 +326,13 @@ class AppLocalizationsId extends AppLocalizations {
       'Ketuk tombol mikrofon untuk mulai input suara.';
 
   @override
+  String get tutorialTabDesc =>
+      'Anda dapat memilih mode pembelajaran yang diinginkan di sini.';
+
+  @override
+  String get tutorialTapToContinue => 'Ketuk untuk melanjutkan';
+
+  @override
   String get tutorialTransTitle => 'Terjemahkan';
 
   @override
@@ -376,4 +383,22 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Suara tidak terdeteksi';
+
+  @override
+  String get tooltipSearch => 'Cari';
+
+  @override
+  String get tooltipStudyReview => 'Belajar+Ulasan';
+
+  @override
+  String get tooltipSpeaking => 'Berbicara';
+
+  @override
+  String get tooltipDecrease => 'Kurangi';
+
+  @override
+  String get tooltipIncrease => 'Tambah';
+
+  @override
+  String get languageSettings => 'Pengaturan bahasa';
 }

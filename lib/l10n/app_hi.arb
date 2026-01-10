@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "अभ्यास शुरू करें",
   "tutorialM3StartDesc": "सुनने और छायांकन शुरू करने के लिए प्ले टैप करें.",
   "startWarning": "चेतावनी",
-  "noVoiceDetected": "कोई आवाज़ नहीं मिली"
+  "noVoiceDetected": "कोई आवाज़ नहीं मिली",
+  "tutorialTabDesc": "आप यहां अपनी इच्छित सीखने की विधि चुन सकते हैं।",
+  "tutorialTapToContinue": "जारी रखने के लिए टैप करें",
+  "materialInfo": "सामग्री जानकारी",
+  "tooltipSearch": "खोजें",
+  "tooltipStudyReview": "अध्ययन+समीक्षा",
+  "tooltipSpeaking": "बोलना",
+  "tooltipDecrease": "कम करें",
+  "tooltipIncrease": "बढ़ाएं",
+  "languageSettings": "भाषा सेटिंग्स"
 }

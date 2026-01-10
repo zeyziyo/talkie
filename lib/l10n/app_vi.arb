@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Bắt đầu luyện tập",
   "tutorialM3StartDesc": "Nhấn phát để bắt đầu nghe và nhại lại.",
   "startWarning": "Cảnh báo",
-  "noVoiceDetected": "Không phát hiện giọng nói"
+  "noVoiceDetected": "Không phát hiện giọng nói",
+  "tutorialTabDesc": "Bạn có thể chọn chế độ học mong muốn tại đây.",
+  "tutorialTapToContinue": "Chạm để tiếp tục",
+  "materialInfo": "Thông tin tài liệu",
+  "tooltipSearch": "Tìm kiếm",
+  "tooltipStudyReview": "Học+Ôn tập",
+  "tooltipSpeaking": "Nói",
+  "tooltipDecrease": "Giảm",
+  "tooltipIncrease": "Tăng",
+  "languageSettings": "Cài đặt ngôn ngữ"
 }

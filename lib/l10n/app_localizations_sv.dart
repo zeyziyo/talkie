@@ -43,7 +43,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get delete => 'Ta bort';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Materialinfo';
 
   @override
   String get cancel => 'Avbryt';
@@ -324,6 +324,12 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tutorialMicDesc => 'Tryck på mikrofonen för röstinmatning.';
 
   @override
+  String get tutorialTabDesc => 'Här kan du välja önskat inlärningsläge.';
+
+  @override
+  String get tutorialTapToContinue => 'Tryck för att fortsätta';
+
+  @override
   String get tutorialTransTitle => 'Översätt';
 
   @override
@@ -370,4 +376,22 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Ingen röst upptäckt';
+
+  @override
+  String get tooltipSearch => 'Sök';
+
+  @override
+  String get tooltipStudyReview => 'Studie+Repetition';
+
+  @override
+  String get tooltipSpeaking => 'Tal';
+
+  @override
+  String get tooltipDecrease => 'Minska';
+
+  @override
+  String get tooltipIncrease => 'Öka';
+
+  @override
+  String get languageSettings => 'Språkinställningar';
 }

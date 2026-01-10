@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Pratiği Başlat",
   "tutorialM3StartDesc": "Dinleyip tekrarlamak için oynat'a bas.",
   "startWarning": "Uyarı",
-  "noVoiceDetected": "Ses algılanmadı"
+  "noVoiceDetected": "Ses algılanmadı",
+  "tutorialTabDesc": "Buradan istediğiniz öğrenme modunu seçebilirsiniz.",
+  "tutorialTapToContinue": "Devam etmek için dokunun",
+  "materialInfo": "Materyal bilgisi",
+  "tooltipSearch": "Ara",
+  "tooltipStudyReview": "Çalışma+Tekrar",
+  "tooltipSpeaking": "Konuşma",
+  "tooltipDecrease": "Azalt",
+  "tooltipIncrease": "Artır",
+  "languageSettings": "Dil ayarları"
 }

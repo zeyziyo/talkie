@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "شروع",
   "tutorialM3StartDesc": "برای شروع دکمه پخش را لمس کنید.",
   "startWarning": "هشدار",
-  "noVoiceDetected": "صدایی تشخیص داده نشد"
+  "noVoiceDetected": "صدایی تشخیص داده نشد",
+  "tutorialTabDesc": "می‌توانید حالت یادگیری مورد نظر خود را در اینجا انتخاب کنید.",
+  "tutorialTapToContinue": "برای ادامه ضربه بزنید",
+  "materialInfo": "اطلاعات مطالب",
+  "tooltipSearch": "جستجو",
+  "tooltipStudyReview": "مطالعه+مرور",
+  "tooltipSpeaking": "صحبت کردن",
+  "tooltipDecrease": "کاهش",
+  "tooltipIncrease": "افزایش",
+  "languageSettings": "تنظیمات زبان"
 }

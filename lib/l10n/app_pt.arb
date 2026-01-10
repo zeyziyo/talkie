@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Iniciar Prática",
   "tutorialM3StartDesc": "Toque play para começar a ouvir e repetir.",
   "startWarning": "Aviso",
-  "noVoiceDetected": "Nenhuma voz detectada"
+  "noVoiceDetected": "Nenhuma voz detectada",
+  "tutorialTabDesc": "Você pode selecionar o modo de aprendizado desejado aqui.",
+  "tutorialTapToContinue": "Toque para continuar",
+  "materialInfo": "Info do material",
+  "tooltipSearch": "Pesquisar",
+  "tooltipStudyReview": "Estudo+Revisão",
+  "tooltipSpeaking": "Falar",
+  "tooltipDecrease": "Diminuir",
+  "tooltipIncrease": "Aumentar",
+  "languageSettings": "Configurações de idioma"
 }

@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "התחל",
   "tutorialM3StartDesc": "לחץ על נגן להתחלה.",
   "startWarning": "אזהרה",
-  "noVoiceDetected": "לא זוהה קול"
+  "noVoiceDetected": "לא זוהה קול",
+  "tutorialTabDesc": "כאן תוכל לבחור את מצב הלמידה הרצוי.",
+  "tutorialTapToContinue": "הקש כדי להמשיך",
+  "materialInfo": "מידע על חומר",
+  "tooltipSearch": "חיפוש",
+  "tooltipStudyReview": "לימוד+חזרה",
+  "tooltipSpeaking": "דיבור",
+  "tooltipDecrease": "הפחתה",
+  "tooltipIncrease": "הגדלה",
+  "languageSettings": "הגדרות שפה"
 }

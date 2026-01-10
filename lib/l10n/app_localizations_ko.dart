@@ -319,6 +319,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialMicDesc => '마이크 버튼을 눌러 음성으로 입력할 수 있습니다.';
 
   @override
+  String get tutorialTabDesc => '여기서 원하는 학습 모드를 선택할 수 있습니다.';
+
+  @override
+  String get tutorialTapToContinue => '화면을 탭하여 계속';
+
+  @override
   String get tutorialTransTitle => '번역하기';
 
   @override
@@ -365,4 +371,22 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get noVoiceDetected => '목소리가 감지되지 않았어요';
+
+  @override
+  String get tooltipSearch => '검색';
+
+  @override
+  String get tooltipStudyReview => '학습+복습';
+
+  @override
+  String get tooltipSpeaking => '말하기';
+
+  @override
+  String get tooltipDecrease => '감소';
+
+  @override
+  String get tooltipIncrease => '증가';
+
+  @override
+  String get languageSettings => 'Language Settings';
 }

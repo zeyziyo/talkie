@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Übung starten",
   "tutorialM3StartDesc": "Tippen Sie auf Play, um mit dem Zuhören und Nachsprechen zu beginnen.",
   "startWarning": "Warnung",
-  "noVoiceDetected": "Keine Stimme erkannt"
+  "noVoiceDetected": "Keine Stimme erkannt",
+  "tutorialTabDesc": "Hier können Sie den gewünschten Lernmodus auswählen.",
+  "tutorialTapToContinue": "Tippen Sie, um fortzufahren",
+  "materialInfo": "Materialinfo",
+  "tooltipSearch": "Suchen",
+  "tooltipStudyReview": "Lernen+Wiederholen",
+  "tooltipSpeaking": "Sprechen",
+  "tooltipDecrease": "Verringern",
+  "tooltipIncrease": "Erhöhen",
+  "languageSettings": "Spracheinstellungen"
 }

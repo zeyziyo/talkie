@@ -43,7 +43,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get delete => 'કાઢી નાખો';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'સામગ્રી માહિતી';
 
   @override
   String get cancel => 'રદ કરો';
@@ -322,6 +322,13 @@ class AppLocalizationsGu extends AppLocalizations {
   String get tutorialMicDesc => 'વોઇસ ઇનપુટ માટે માઇક બટન ટેપ કરો.';
 
   @override
+  String get tutorialTabDesc =>
+      'તમે અહીં તમારી ઇચ્છિત શીખવાની પદ્ધતિ પસંદ કરી શકો છો.';
+
+  @override
+  String get tutorialTapToContinue => 'ચાલુ રાખવા માટે ટેપ કરો';
+
+  @override
   String get tutorialTransTitle => 'અનુવાદ';
 
   @override
@@ -370,4 +377,22 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'કોઈ અવાજ મળ્યો નથી';
+
+  @override
+  String get tooltipSearch => 'શોધો';
+
+  @override
+  String get tooltipStudyReview => 'અભ્યાસ+સમીક્ષા';
+
+  @override
+  String get tooltipSpeaking => 'બોલવું';
+
+  @override
+  String get tooltipDecrease => 'ઘટાડો';
+
+  @override
+  String get tooltipIncrease => 'વધારો';
+
+  @override
+  String get languageSettings => 'ભાષા સેટિંગ્સ';
 }

@@ -43,7 +43,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get delete => 'நீக்கு';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'பொருள் தகவல்';
 
   @override
   String get cancel => 'ரத்துசெய்';
@@ -328,6 +328,13 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tutorialMicDesc => 'குரல் உள்ளீட்டிற்கு மைக் பொத்தானைத் தட்டவும்.';
 
   @override
+  String get tutorialTabDesc =>
+      'நீங்கள் இங்கே உங்கள் விரும்பிய கற்றல் முறையைத் தேர்ந்தெடுக்கலாம்.';
+
+  @override
+  String get tutorialTapToContinue => 'தொடர தட்டவும்';
+
+  @override
   String get tutorialTransTitle => 'மொழிபெயர்';
 
   @override
@@ -378,4 +385,22 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'குரல் கண்டறியப்படவில்லை';
+
+  @override
+  String get tooltipSearch => 'தேடு';
+
+  @override
+  String get tooltipStudyReview => 'படிப்பு+மதிப்பாய்வு';
+
+  @override
+  String get tooltipSpeaking => 'பேசுதல்';
+
+  @override
+  String get tooltipDecrease => 'குறைக்க';
+
+  @override
+  String get tooltipIncrease => 'அதிகரிக்க';
+
+  @override
+  String get languageSettings => 'மொழி அமைப்புகள்';
 }

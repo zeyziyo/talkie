@@ -43,7 +43,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get delete => 'ਹਟਾਓ';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'ਸਮੱਗਰੀ ਜਾਣਕਾਰੀ';
 
   @override
   String get cancel => 'ਰੱਦ ਕਰੋ';
@@ -323,6 +323,13 @@ class AppLocalizationsPa extends AppLocalizations {
   String get tutorialMicDesc => 'ਵੌਇਸ ਇਨਪੁਟ ਲਈ ਮਾਈਕ ਬਟਨ ਦਬਾਓ।';
 
   @override
+  String get tutorialTabDesc =>
+      'ਤੁਸੀਂ ਇੱਥੇ ਆਪਣੀ ਲੋੜੀਂਦੀ ਸਿੱਖਣ ਦੀ ਵਿਧੀ ਚੁਣ ਸਕਦੇ ਹੋ।';
+
+  @override
+  String get tutorialTapToContinue => 'ਜਾਰੀ ਰੱਖਣ ਲਈ ਟੈਪ ਕਰੋ';
+
+  @override
   String get tutorialTransTitle => 'ਅਨੁਵਾਦ';
 
   @override
@@ -371,4 +378,22 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'ਕੋਈ ਆਵਾਜ਼ ਨਹੀਂ ਮਿਲੀ';
+
+  @override
+  String get tooltipSearch => 'ਖੋਜੋ';
+
+  @override
+  String get tooltipStudyReview => 'ਅਧਿਐਨ+ਸਮੀਖਿਆ';
+
+  @override
+  String get tooltipSpeaking => 'ਬੋਲਣਾ';
+
+  @override
+  String get tooltipDecrease => 'ਘਟਾਓ';
+
+  @override
+  String get tooltipIncrease => 'ਵਧਾਓ';
+
+  @override
+  String get languageSettings => 'ਭਾਸ਼ਾ ਸੈਟਿੰਗਾਂ';
 }

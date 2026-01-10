@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Anza",
   "tutorialM3StartDesc": "Bofya cheza ili kuanza.",
   "startWarning": "Onyo",
-  "noVoiceDetected": "Sauti haijagunduliwa"
+  "noVoiceDetected": "Sauti haijagunduliwa",
+  "tutorialTabDesc": "Unaweza kuchagua hali ya kujifunza unayotaka hapa.",
+  "tutorialTapToContinue": "Gusa ili kuendelea",
+  "materialInfo": "Maelezo ya nyenzo",
+  "tooltipSearch": "Tafuta",
+  "tooltipStudyReview": "Kusoma+Kurudia",
+  "tooltipSpeaking": "Kuzungumza",
+  "tooltipDecrease": "Punguza",
+  "tooltipIncrease": "Ongeza",
+  "languageSettings": "Mipangilio ya lugha"
 }

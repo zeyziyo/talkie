@@ -43,7 +43,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get delete => 'Verwyder';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Materiaalinligting';
 
   @override
   String get cancel => 'Kanselleer';
@@ -321,6 +321,12 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialMicDesc => 'Tik die mikrofoon vir stem invoer.';
 
   @override
+  String get tutorialTabDesc => 'Jy kan die gewenste leerwyse hier kies.';
+
+  @override
+  String get tutorialTapToContinue => 'Tik om voort te gaan';
+
+  @override
   String get tutorialTransTitle => 'Vertaal';
 
   @override
@@ -367,4 +373,22 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Geen stem bespeur';
+
+  @override
+  String get tooltipSearch => 'Soek';
+
+  @override
+  String get tooltipStudyReview => 'Studie+Hersiening';
+
+  @override
+  String get tooltipSpeaking => 'Praat';
+
+  @override
+  String get tooltipDecrease => 'Verminder';
+
+  @override
+  String get tooltipIncrease => 'Verhoog';
+
+  @override
+  String get languageSettings => 'Taalinstellings';
 }

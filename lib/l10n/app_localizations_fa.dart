@@ -43,7 +43,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get delete => 'حذف';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'اطلاعات مطالب';
 
   @override
   String get cancel => 'لغو';
@@ -322,6 +322,13 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialMicDesc => 'برای ورودی صوتی دکمه میکروفون را لمس کنید.';
 
   @override
+  String get tutorialTabDesc =>
+      'می‌توانید حالت یادگیری مورد نظر خود را در اینجا انتخاب کنید.';
+
+  @override
+  String get tutorialTapToContinue => 'برای ادامه ضربه بزنید';
+
+  @override
   String get tutorialTransTitle => 'ترجمه';
 
   @override
@@ -370,4 +377,22 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'صدایی تشخیص داده نشد';
+
+  @override
+  String get tooltipSearch => 'جستجو';
+
+  @override
+  String get tooltipStudyReview => 'مطالعه+مرور';
+
+  @override
+  String get tooltipSpeaking => 'صحبت کردن';
+
+  @override
+  String get tooltipDecrease => 'کاهش';
+
+  @override
+  String get tooltipIncrease => 'افزایش';
+
+  @override
+  String get languageSettings => 'تنظیمات زبان';
 }

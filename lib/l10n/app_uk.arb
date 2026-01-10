@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Почати",
   "tutorialM3StartDesc": "Натисніть Play для початку.",
   "startWarning": "Увага",
-  "noVoiceDetected": "Голос не виявлено"
+  "noVoiceDetected": "Голос не виявлено",
+  "tutorialTabDesc": "Тут ви можете вибрати бажаний режим навчання.",
+  "tutorialTapToContinue": "Торкніться, щоб продовжити",
+  "materialInfo": "Інформація про матеріал",
+  "tooltipSearch": "Пошук",
+  "tooltipStudyReview": "Навчання+Повторення",
+  "tooltipSpeaking": "Говоріння",
+  "tooltipDecrease": "Зменшити",
+  "tooltipIncrease": "Збільшити",
+  "languageSettings": "Налаштування мови"
 }

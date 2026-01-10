@@ -325,6 +325,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tutorialMicDesc => 'Tap the mic button to start voice input.';
 
   @override
+  String get tutorialTabDesc =>
+      'You can select your desired learning mode here.';
+
+  @override
+  String get tutorialTapToContinue => 'Tap to continue';
+
+  @override
   String get tutorialTransTitle => 'Translate';
 
   @override
@@ -376,4 +383,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'No voice detected';
+
+  @override
+  String get tooltipSearch => 'Search';
+
+  @override
+  String get tooltipStudyReview => 'Study+Review';
+
+  @override
+  String get tooltipSpeaking => 'Speaking';
+
+  @override
+  String get tooltipDecrease => 'Decrease';
+
+  @override
+  String get tooltipIncrease => 'Increase';
+
+  @override
+  String get languageSettings => 'Language Settings';
 }

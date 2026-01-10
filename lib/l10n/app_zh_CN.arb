@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "开始练习",
   "tutorialM3StartDesc": "点击播放开始聆听和跟读。",
   "startWarning": "警告",
-  "noVoiceDetected": "未检测到声音"
+  "noVoiceDetected": "未检测到声音",
+  "tutorialTabDesc": "您可以在这里选择所需的学习模式。",
+  "tutorialTapToContinue": "点击继续",
+  "materialInfo": "资料信息",
+  "tooltipSearch": "搜索",
+  "tooltipStudyReview": "学习+复习",
+  "tooltipSpeaking": "口语",
+  "tooltipDecrease": "减少",
+  "tooltipIncrease": "增加",
+  "languageSettings": "语言设置"
 }

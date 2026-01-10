@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Mula",
   "tutorialM3StartDesc": "Tekan main untuk mula.",
   "startWarning": "Amaran",
-  "noVoiceDetected": "Tiada suara dikesan"
+  "noVoiceDetected": "Tiada suara dikesan",
+  "tutorialTabDesc": "Anda boleh memilih mod pembelajaran yang dikehendaki di sini.",
+  "tutorialTapToContinue": "Ketik untuk meneruskan",
+  "materialInfo": "Maklumat bahan",
+  "tooltipSearch": "Cari",
+  "tooltipStudyReview": "Belajar+Ulang kaji",
+  "tooltipSpeaking": "Bercakap",
+  "tooltipDecrease": "Kurangkan",
+  "tooltipIncrease": "Tambahkan",
+  "languageSettings": "Tetapan bahasa"
 }

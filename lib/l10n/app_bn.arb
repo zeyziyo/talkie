@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "শুরু",
   "tutorialM3StartDesc": "শুরু করতে প্লে ট্যাপ করুন।",
   "startWarning": "সতর্কতা",
-  "noVoiceDetected": "কোনো ভয়েস শনাক্ত হয়নি"
+  "noVoiceDetected": "কোনো ভয়েস শনাক্ত হয়নি",
+  "tutorialTabDesc": "আপনি এখানে আপনার পছন্দের শেখার মোড নির্বাচন করতে পারেন।",
+  "tutorialTapToContinue": "চালিয়ে যেতে ট্যাপ করুন",
+  "materialInfo": "উপাদান তথ্য",
+  "tooltipSearch": "অনুসন্ধান",
+  "tooltipStudyReview": "অধ্যয়ন+পর্যালোচনা",
+  "tooltipSpeaking": "কথা বলা",
+  "tooltipDecrease": "হ্রাস",
+  "tooltipIncrease": "বৃদ্ধি",
+  "languageSettings": "ভাষা সেটিংস"
 }

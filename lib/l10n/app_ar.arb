@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "بدء الممارسة",
   "tutorialM3StartDesc": "اضغط تشغيل للبدء بالاستماع والترديد.",
   "startWarning": "تحذير",
-  "noVoiceDetected": "لم يتم اكتشاف صوت"
+  "noVoiceDetected": "لم يتم اكتشاف صوت",
+  "tutorialTabDesc": "يمكنك اختيار وضع التعلم المطلوب هنا.",
+  "tutorialTapToContinue": "اضغط للمتابعة",
+  "materialInfo": "معلومات المادة",
+  "tooltipSearch": "بحث",
+  "tooltipStudyReview": "دراسة+مراجعة",
+  "tooltipSpeaking": "تحدث",
+  "tooltipDecrease": "تقليل",
+  "tooltipIncrease": "زيادة",
+  "languageSettings": "إعدادات اللغة"
 }

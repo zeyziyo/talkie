@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Starta",
   "tutorialM3StartDesc": "Tryck play för att börja.",
   "startWarning": "Varning",
-  "noVoiceDetected": "Ingen röst upptäckt"
+  "noVoiceDetected": "Ingen röst upptäckt",
+  "tutorialTabDesc": "Här kan du välja önskat inlärningsläge.",
+  "tutorialTapToContinue": "Tryck för att fortsätta",
+  "materialInfo": "Materialinfo",
+  "tooltipSearch": "Sök",
+  "tooltipStudyReview": "Studie+Repetition",
+  "tooltipSpeaking": "Tal",
+  "tooltipDecrease": "Minska",
+  "tooltipIncrease": "Öka",
+  "languageSettings": "Språkinställningar"
 }

@@ -726,6 +726,18 @@ abstract class AppLocalizations {
   /// **'Tap the mic button to start voice input.'**
   String get tutorialMicDesc;
 
+  /// No description provided for @tutorialTabDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'You can select your desired learning mode here.'**
+  String get tutorialTabDesc;
+
+  /// No description provided for @tutorialTapToContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to continue'**
+  String get tutorialTapToContinue;
+
   /// No description provided for @tutorialTransTitle.
   ///
   /// In en, this message translates to:
@@ -821,6 +833,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No voice detected'**
   String get noVoiceDetected;
+
+  /// No description provided for @tooltipSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get tooltipSearch;
+
+  /// No description provided for @tooltipStudyReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Study+Review'**
+  String get tooltipStudyReview;
+
+  /// No description provided for @tooltipSpeaking.
+  ///
+  /// In en, this message translates to:
+  /// **'Speaking'**
+  String get tooltipSpeaking;
+
+  /// No description provided for @tooltipDecrease.
+  ///
+  /// In en, this message translates to:
+  /// **'Decrease'**
+  String get tooltipDecrease;
+
+  /// No description provided for @tooltipIncrease.
+  ///
+  /// In en, this message translates to:
+  /// **'Increase'**
+  String get tooltipIncrease;
+
+  /// No description provided for @languageSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Language Settings'**
+  String get languageSettings;
 }
 
 class _AppLocalizationsDelegate

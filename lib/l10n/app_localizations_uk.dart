@@ -43,7 +43,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get delete => 'Видалити';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Інформація про матеріал';
 
   @override
   String get cancel => 'Скасувати';
@@ -324,6 +324,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tutorialMicDesc => 'Натисніть мікрофон для вводу голосом.';
 
   @override
+  String get tutorialTabDesc => 'Тут ви можете вибрати бажаний режим навчання.';
+
+  @override
+  String get tutorialTapToContinue => 'Торкніться, щоб продовжити';
+
+  @override
   String get tutorialTransTitle => 'Переклад';
 
   @override
@@ -370,4 +376,22 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Голос не виявлено';
+
+  @override
+  String get tooltipSearch => 'Пошук';
+
+  @override
+  String get tooltipStudyReview => 'Навчання+Повторення';
+
+  @override
+  String get tooltipSpeaking => 'Говоріння';
+
+  @override
+  String get tooltipDecrease => 'Зменшити';
+
+  @override
+  String get tooltipIncrease => 'Збільшити';
+
+  @override
+  String get languageSettings => 'Налаштування мови';
 }

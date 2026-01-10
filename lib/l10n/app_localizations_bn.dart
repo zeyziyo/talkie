@@ -43,7 +43,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get delete => 'মুছুন';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'উপাদান তথ্য';
 
   @override
   String get cancel => 'বাতিল';
@@ -324,6 +324,13 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tutorialMicDesc => 'ভয়েস ইনপুটের জন্য মাইক বোতাম ট্যাপ করুন।';
 
   @override
+  String get tutorialTabDesc =>
+      'আপনি এখানে আপনার পছন্দের শেখার মোড নির্বাচন করতে পারেন।';
+
+  @override
+  String get tutorialTapToContinue => 'চালিয়ে যেতে ট্যাপ করুন';
+
+  @override
   String get tutorialTransTitle => 'অনুবাদ';
 
   @override
@@ -372,4 +379,22 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'কোনো ভয়েস শনাক্ত হয়নি';
+
+  @override
+  String get tooltipSearch => 'অনুসন্ধান';
+
+  @override
+  String get tooltipStudyReview => 'অধ্যয়ন+পর্যালোচনা';
+
+  @override
+  String get tooltipSpeaking => 'কথা বলা';
+
+  @override
+  String get tooltipDecrease => 'হ্রাস';
+
+  @override
+  String get tooltipIncrease => 'বৃদ্ধি';
+
+  @override
+  String get languageSettings => 'ভাষা সেটিংস';
 }

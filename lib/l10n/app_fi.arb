@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Aloita",
   "tutorialM3StartDesc": "Paina toista aloittaaksesi.",
   "startWarning": "Varoitus",
-  "noVoiceDetected": "Ääntä ei havaittu"
+  "noVoiceDetected": "Ääntä ei havaittu",
+  "tutorialTabDesc": "Täältä voit valita haluamasi oppimistilan.",
+  "tutorialTapToContinue": "Napauta jatkaaksesi",
+  "materialInfo": "Materiaalin tiedot",
+  "tooltipSearch": "Haku",
+  "tooltipStudyReview": "Opiskelu+Kertaus",
+  "tooltipSpeaking": "Puhuminen",
+  "tooltipDecrease": "Vähennä",
+  "tooltipIncrease": "Lisää",
+  "languageSettings": "Kieliasetukset"
 }

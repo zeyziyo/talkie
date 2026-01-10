@@ -43,7 +43,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get delete => 'Șterge';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Informații material';
 
   @override
   String get cancel => 'Anulare';
@@ -324,6 +324,12 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialMicDesc => 'Apasă microfonul pentru intrare vocală.';
 
   @override
+  String get tutorialTabDesc => 'Aici puteți selecta modul de învățare dorit.';
+
+  @override
+  String get tutorialTapToContinue => 'Atingeți pentru a continua';
+
+  @override
   String get tutorialTransTitle => 'Traducere';
 
   @override
@@ -371,4 +377,22 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Voce nedetectată';
+
+  @override
+  String get tooltipSearch => 'Căutare';
+
+  @override
+  String get tooltipStudyReview => 'Studiu+Revizuire';
+
+  @override
+  String get tooltipSpeaking => 'Vorbire';
+
+  @override
+  String get tooltipDecrease => 'Scădere';
+
+  @override
+  String get tooltipIncrease => 'Creștere';
+
+  @override
+  String get languageSettings => 'Setări limbă';
 }

@@ -43,7 +43,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get delete => 'Slet';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Materialeinfo';
 
   @override
   String get cancel => 'Annuller';
@@ -321,6 +321,12 @@ class AppLocalizationsDa extends AppLocalizations {
   String get tutorialMicDesc => 'Tryk på mikrofonen for stemmeindput.';
 
   @override
+  String get tutorialTabDesc => 'Her kan du vælge den ønskede læringstilstand.';
+
+  @override
+  String get tutorialTapToContinue => 'Tryk for at fortsætte';
+
+  @override
   String get tutorialTransTitle => 'Oversæt';
 
   @override
@@ -367,4 +373,22 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Ingen stemme registreret';
+
+  @override
+  String get tooltipSearch => 'Søg';
+
+  @override
+  String get tooltipStudyReview => 'Studie+Gentagelse';
+
+  @override
+  String get tooltipSpeaking => 'Tale';
+
+  @override
+  String get tooltipDecrease => 'Formindsk';
+
+  @override
+  String get tooltipIncrease => 'Forøg';
+
+  @override
+  String get languageSettings => 'Sprogindstillinger';
 }

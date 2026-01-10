@@ -43,7 +43,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get delete => 'Verwijderen';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Materiaalinfo';
 
   @override
   String get cancel => 'Annuleren';
@@ -324,6 +324,12 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tutorialMicDesc => 'Tik op de microfoonknop om te starten.';
 
   @override
+  String get tutorialTabDesc => 'Hier kunt u de gewenste leermodus selecteren.';
+
+  @override
+  String get tutorialTapToContinue => 'Tik om door te gaan';
+
+  @override
   String get tutorialTransTitle => 'Vertalen';
 
   @override
@@ -371,4 +377,22 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Geen stem gedetecteerd';
+
+  @override
+  String get tooltipSearch => 'Zoeken';
+
+  @override
+  String get tooltipStudyReview => 'Studie+Herhaling';
+
+  @override
+  String get tooltipSpeaking => 'Spreken';
+
+  @override
+  String get tooltipDecrease => 'Verminderen';
+
+  @override
+  String get tooltipIncrease => 'Verhogen';
+
+  @override
+  String get languageSettings => 'Taalinstellingen';
 }

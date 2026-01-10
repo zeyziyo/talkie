@@ -43,7 +43,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get delete => 'Törlés';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Anyaginformáció';
 
   @override
   String get cancel => 'Mégse';
@@ -324,6 +324,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialMicDesc => 'Érintse meg a mikrofont a hangbemenethez.';
 
   @override
+  String get tutorialTabDesc => 'Itt kiválaszthatja a kívánt tanulási módot.';
+
+  @override
+  String get tutorialTapToContinue => 'Érintse meg a folytatáshoz';
+
+  @override
   String get tutorialTransTitle => 'Fordítás';
 
   @override
@@ -372,4 +378,22 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Hang nem észlelhető';
+
+  @override
+  String get tooltipSearch => 'Keresés';
+
+  @override
+  String get tooltipStudyReview => 'Tanulás+Ismétlés';
+
+  @override
+  String get tooltipSpeaking => 'Beszéd';
+
+  @override
+  String get tooltipDecrease => 'Csökkentés';
+
+  @override
+  String get tooltipIncrease => 'Növelés';
+
+  @override
+  String get languageSettings => 'Nyelvi beállítások';
 }

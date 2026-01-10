@@ -13,224 +13,225 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String tabReview(int count) {
-    return '復習 ($count)';
+    return 'Review ($count)';
   }
 
   @override
   String tabStudyMaterial(int count) {
-    return '学習資料 ($count)';
+    return 'Study Material ($count)';
   }
 
   @override
   String get mode2Title => 'Review';
 
   @override
-  String get search => '検索';
+  String get search => 'Search';
 
   @override
-  String get translate => '翻訳';
+  String get translate => 'Translate';
 
   @override
-  String get listen => '聞く';
+  String get listen => 'Listen';
 
   @override
-  String get saveData => 'データ保存';
+  String get saveData => 'Save Data';
 
   @override
-  String get saved => '保存完了';
+  String get saved => 'Saved';
 
   @override
-  String get delete => '削除';
+  String get delete => 'Delete';
 
   @override
   String get materialInfo => 'Material Info';
 
   @override
-  String get cancel => 'キャンセル';
+  String get cancel => 'Cancel';
 
   @override
-  String get confirm => '確認';
+  String get confirm => 'OK';
 
   @override
-  String get refresh => '更新';
+  String get refresh => 'Refresh';
 
   @override
   String studyRecords(int count) {
-    return '学習記録 ($count)';
+    return 'Study Records ($count)';
   }
 
   @override
-  String get targetLanguageFilter => '対象言語フィルタ:';
+  String get targetLanguageFilter => 'Target Language Filter:';
 
   @override
-  String get noRecords => '選択した言語の学習記録がありません';
+  String get noRecords => 'No study records for selected language';
 
   @override
-  String get saveTranslationsFromSearch => '検索モードで翻訳を保存してください';
+  String get saveTranslationsFromSearch => 'Save translations from search mode';
 
   @override
-  String get flip => 'めくる';
+  String get flip => 'Show';
 
   @override
-  String get hide => '隠す';
+  String get hide => 'Hide';
 
   @override
-  String get deleteRecord => 'レコード削除';
+  String get deleteRecord => 'Delete Record';
 
   @override
-  String get confirmDelete => 'この学習記録を削除しますか?';
+  String get confirmDelete =>
+      'Are you sure you want to delete this study record?';
 
   @override
-  String get recordDeleted => 'レコードが削除されました';
+  String get recordDeleted => 'Record deleted successfully';
 
   @override
   String deleteFailed(String error) {
-    return '削除失敗: $error';
+    return 'Delete failed: $error';
   }
 
   @override
-  String get importJsonFile => 'JSONファイル読み込み';
+  String get importJsonFile => 'Import JSON File';
 
   @override
-  String get importing => '読み込み中...';
+  String get importing => 'Importing...';
 
   @override
-  String get importComplete => '読み込み完了';
+  String get importComplete => 'Import Complete';
 
   @override
-  String get importFailed => '読み込み失敗';
+  String get importFailed => 'Import Failed';
 
   @override
   String importFile(String fileName) {
-    return 'ファイル: $fileName';
+    return 'File: $fileName';
   }
 
   @override
   String importTotal(int count) {
-    return '全体: $count個';
+    return 'Total: $count items';
   }
 
   @override
   String importAdded(int count) {
-    return '追加: $count個';
+    return 'Added: $count items';
   }
 
   @override
   String importSkipped(int count) {
-    return 'スキップ: $count個';
+    return 'Skipped: $count items';
   }
 
   @override
-  String get errors => 'エラー:';
+  String get errors => 'Errors:';
 
   @override
-  String get error => 'エラー';
+  String get error => 'Error';
 
   @override
   String importErrorMessage(String error) {
-    return 'ファイル読み込み失敗:\\n$error';
+    return 'Failed to import file:\\n$error';
   }
 
   @override
-  String get selectStudyMaterial => '学習資料選択';
+  String get selectStudyMaterial => 'Select Study Material';
 
   @override
-  String get subject => '件名:';
+  String get subject => 'Subject:';
 
   @override
-  String get source => 'ソース:';
+  String get source => 'Source:';
 
   @override
-  String get file => 'ファイル:';
+  String get file => 'File:';
 
   @override
   String progress(int current, int total) {
-    return '進行率: $current / $total';
+    return 'Progress: $current / $total';
   }
 
   @override
-  String get importJsonFilePrompt => 'JSONファイルを読み込んでください';
+  String get importJsonFilePrompt => 'Please import a JSON file';
 
   @override
-  String get selectMaterialPrompt => '学習資料を選択してください';
+  String get selectMaterialPrompt => 'Please select a study material';
 
   @override
-  String get studyComplete => '学習完了';
+  String get studyComplete => 'Studied';
 
   @override
-  String get markAsStudied => '学習済みにする';
+  String get markAsStudied => 'Mark as Studied';
 
   @override
-  String get listening => '聞いています...';
+  String get listening => 'Listening...';
 
   @override
-  String get recognized => '認識完了';
+  String get recognized => 'Recognition complete';
 
   @override
   String recognitionFailed(String error) {
-    return '音声認識失敗: $error';
+    return 'Speech recognition failed: $error';
   }
 
   @override
-  String get checking => '確認中...';
+  String get checking => 'Checking...';
 
   @override
-  String get translating => '翻訳中...';
+  String get translating => 'Translating...';
 
   @override
-  String get translationComplete => '翻訳完了 (保存が必要)';
+  String get translationComplete => 'Translation complete (save required)';
 
   @override
-  String get translationLoaded => '保存された翻訳を読み込みました';
+  String get translationLoaded => 'Loaded saved translation';
 
   @override
   String translationFailed(String error) {
-    return '翻訳失敗: $error';
+    return 'Translation failed: $error';
   }
 
   @override
-  String get enterTextToTranslate => '翻訳するテキストを入力してください';
+  String get enterTextToTranslate => 'Please enter text to translate';
 
   @override
-  String get saving => '保存中...';
+  String get saving => 'Saving...';
 
   @override
-  String get noTranslationToSave => '保存する翻訳がありません';
+  String get noTranslationToSave => 'No translation to save';
 
   @override
   String saveFailed(String error) {
-    return '保存失敗: $error';
+    return 'Save failed: $error';
   }
 
   @override
-  String get playing => '再生中...';
+  String get playing => 'Playing...';
 
   @override
-  String get noTextToPlay => '再生するテキストがありません';
+  String get noTextToPlay => 'No text to play';
 
   @override
   String playbackFailed(String error) {
-    return '再生失敗: $error';
+    return 'Playback failed: $error';
   }
 
   @override
-  String get sourceLanguage => '元の言語';
+  String get sourceLanguage => 'Source Language';
 
   @override
-  String get targetLanguage => '対象言語';
+  String get targetLanguage => 'Target Language';
 
   @override
-  String get similarTextFound => '類似テキスト発見';
+  String get similarTextFound => 'Similar text found';
 
   @override
-  String get useExistingText => '既存テキスト使用';
+  String get useExistingText => 'Use Existing';
 
   @override
-  String get createNew => '新しい文で進める';
+  String get createNew => 'Create New Entry';
 
   @override
   String reviewCount(int count) {
-    return '復習 $count回';
+    return 'Review $count time(s)';
   }
 
   @override
@@ -324,6 +325,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialMicDesc => 'Tap the mic button to start voice input.';
 
   @override
+  String get tutorialTabDesc => 'ここで希望する学習モードを選択できます。';
+
+  @override
+  String get tutorialTapToContinue => 'タップして続ける';
+
+  @override
   String get tutorialTransTitle => 'Translate';
 
   @override
@@ -375,4 +382,22 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'No voice detected';
+
+  @override
+  String get tooltipSearch => '検索';
+
+  @override
+  String get tooltipStudyReview => '学習+復習';
+
+  @override
+  String get tooltipSpeaking => 'スピーキング';
+
+  @override
+  String get tooltipDecrease => '減少';
+
+  @override
+  String get tooltipIncrease => '増加';
+
+  @override
+  String get languageSettings => '言語設定';
 }

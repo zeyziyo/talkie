@@ -43,7 +43,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get delete => 'ลบ';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'ข้อมูลเนื้อหา';
 
   @override
   String get cancel => 'ยกเลิก';
@@ -320,6 +320,13 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialMicDesc => 'แตะปุ่มไมค์เพื่อเริ่มเสียงเข้า';
 
   @override
+  String get tutorialTabDesc =>
+      'คุณสามารถเลือกโหมดการเรียนรู้ที่ต้องการได้ที่นี่';
+
+  @override
+  String get tutorialTapToContinue => 'แตะเพื่อดำเนินการต่อ';
+
+  @override
   String get tutorialTransTitle => 'แปลภาษา';
 
   @override
@@ -367,4 +374,22 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'ไม่พบเสียง';
+
+  @override
+  String get tooltipSearch => 'ค้นหา';
+
+  @override
+  String get tooltipStudyReview => 'เรียน+ทบทวน';
+
+  @override
+  String get tooltipSpeaking => 'พูด';
+
+  @override
+  String get tooltipDecrease => 'ลด';
+
+  @override
+  String get tooltipIncrease => 'เพิ่ม';
+
+  @override
+  String get languageSettings => 'การตั้งค่าภาษา';
 }

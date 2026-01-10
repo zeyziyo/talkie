@@ -319,6 +319,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialMicDesc => '点击麦克风按钮开始语音输入。';
 
   @override
+  String get tutorialTabDesc =>
+      'You can select your desired learning mode here.';
+
+  @override
+  String get tutorialTapToContinue => 'Tap to continue';
+
+  @override
   String get tutorialTransTitle => '翻译';
 
   @override
@@ -365,6 +372,24 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get noVoiceDetected => '未检测到声音';
+
+  @override
+  String get tooltipSearch => 'Search';
+
+  @override
+  String get tooltipStudyReview => 'Study+Review';
+
+  @override
+  String get tooltipSpeaking => 'Speaking';
+
+  @override
+  String get tooltipDecrease => 'Decrease';
+
+  @override
+  String get tooltipIncrease => 'Increase';
+
+  @override
+  String get languageSettings => 'Language Settings';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -404,6 +429,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get delete => '删除';
+
+  @override
+  String get materialInfo => '资料信息';
 
   @override
   String get cancel => '取消';
@@ -679,6 +707,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialMicDesc => '点击麦克风按钮开始语音输入。';
 
   @override
+  String get tutorialTabDesc => '您可以在这里选择所需的学习模式。';
+
+  @override
+  String get tutorialTapToContinue => '点击继续';
+
+  @override
   String get tutorialTransTitle => '翻译';
 
   @override
@@ -725,6 +759,24 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get noVoiceDetected => '未检测到声音';
+
+  @override
+  String get tooltipSearch => '搜索';
+
+  @override
+  String get tooltipStudyReview => '学习+复习';
+
+  @override
+  String get tooltipSpeaking => '口语';
+
+  @override
+  String get tooltipDecrease => '减少';
+
+  @override
+  String get tooltipIncrease => '增加';
+
+  @override
+  String get languageSettings => '语言设置';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -764,6 +816,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get delete => '刪除';
+
+  @override
+  String get materialInfo => '資料資訊';
 
   @override
   String get cancel => '取消';
@@ -1039,6 +1094,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialMicDesc => '點擊麥克風按鈕開始語音輸入。';
 
   @override
+  String get tutorialTabDesc => '您可以在這裡選擇所需的學習模式。';
+
+  @override
+  String get tutorialTapToContinue => '點擊繼續';
+
+  @override
   String get tutorialTransTitle => '翻譯';
 
   @override
@@ -1085,4 +1146,22 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get noVoiceDetected => '未偵測到聲音';
+
+  @override
+  String get tooltipSearch => '搜尋';
+
+  @override
+  String get tooltipStudyReview => '學習+複習';
+
+  @override
+  String get tooltipSpeaking => '口語';
+
+  @override
+  String get tooltipDecrease => '減少';
+
+  @override
+  String get tooltipIncrease => '增加';
+
+  @override
+  String get languageSettings => '語言設定';
 }

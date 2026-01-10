@@ -43,7 +43,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get delete => 'Sil';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Materyal bilgisi';
 
   @override
   String get cancel => 'İptal';
@@ -323,6 +323,13 @@ class AppLocalizationsTr extends AppLocalizations {
       'Ses girişini başlatmak için mikrofon butonuna dokunun.';
 
   @override
+  String get tutorialTabDesc =>
+      'Buradan istediğiniz öğrenme modunu seçebilirsiniz.';
+
+  @override
+  String get tutorialTapToContinue => 'Devam etmek için dokunun';
+
+  @override
   String get tutorialTransTitle => 'Çevir';
 
   @override
@@ -372,4 +379,22 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Ses algılanmadı';
+
+  @override
+  String get tooltipSearch => 'Ara';
+
+  @override
+  String get tooltipStudyReview => 'Çalışma+Tekrar';
+
+  @override
+  String get tooltipSpeaking => 'Konuşma';
+
+  @override
+  String get tooltipDecrease => 'Azalt';
+
+  @override
+  String get tooltipIncrease => 'Artır';
+
+  @override
+  String get languageSettings => 'Dil ayarları';
 }

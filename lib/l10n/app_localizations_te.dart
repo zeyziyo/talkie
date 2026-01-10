@@ -43,7 +43,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get delete => 'తొలగించు';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'విషయ సమాచారం';
 
   @override
   String get cancel => 'రద్దు చేయి';
@@ -325,6 +325,13 @@ class AppLocalizationsTe extends AppLocalizations {
   String get tutorialMicDesc => 'వాయిస్ ఇన్‌పుట్ కోసం మైక్ బటన్‌ను నొక్కండి.';
 
   @override
+  String get tutorialTabDesc =>
+      'మీరు ఇక్కడ మీ కావలసిన అభ్యాస మోడ్‌ను ఎంచుకోవచ్చు.';
+
+  @override
+  String get tutorialTapToContinue => 'కొనసాగించడానికి నొక్కండి';
+
+  @override
   String get tutorialTransTitle => 'అనువాదం';
 
   @override
@@ -374,4 +381,22 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'వాయిస్ గుర్తించబడలేదు';
+
+  @override
+  String get tooltipSearch => 'వెతకండి';
+
+  @override
+  String get tooltipStudyReview => 'అధ్యయనం+సమీక్ష';
+
+  @override
+  String get tooltipSpeaking => 'మాట్లాడటం';
+
+  @override
+  String get tooltipDecrease => 'తగ్గించు';
+
+  @override
+  String get tooltipIncrease => 'పెంచు';
+
+  @override
+  String get languageSettings => 'భాష సెట్టింగ్‌లు';
 }

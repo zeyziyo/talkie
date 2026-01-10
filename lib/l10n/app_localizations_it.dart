@@ -43,7 +43,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get delete => 'Elimina';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'Info materiale';
 
   @override
   String get cancel => 'Annulla';
@@ -328,6 +328,13 @@ class AppLocalizationsIt extends AppLocalizations {
       'Tocca il pulsante microfono per iniziare input vocale.';
 
   @override
+  String get tutorialTabDesc =>
+      'Qui puoi selezionare la modalità di apprendimento desiderata.';
+
+  @override
+  String get tutorialTapToContinue => 'Tocca per continuare';
+
+  @override
   String get tutorialTransTitle => 'Traduci';
 
   @override
@@ -380,4 +387,22 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'Nessuna voce rilevata';
+
+  @override
+  String get tooltipSearch => 'Cerca';
+
+  @override
+  String get tooltipStudyReview => 'Studio+Ripasso';
+
+  @override
+  String get tooltipSpeaking => 'Parlare';
+
+  @override
+  String get tooltipDecrease => 'Diminuisci';
+
+  @override
+  String get tooltipIncrease => 'Aumenta';
+
+  @override
+  String get languageSettings => 'Impostazioni lingua';
 }

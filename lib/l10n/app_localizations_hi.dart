@@ -43,7 +43,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get delete => 'हटाएं';
 
   @override
-  String get materialInfo => 'Material Info';
+  String get materialInfo => 'सामग्री जानकारी';
 
   @override
   String get cancel => 'रद्द करें';
@@ -325,6 +325,13 @@ class AppLocalizationsHi extends AppLocalizations {
       'वॉइस इनपुट शुरू करने के लिए माइक बटन टैप करें.';
 
   @override
+  String get tutorialTabDesc =>
+      'आप यहां अपनी इच्छित सीखने की विधि चुन सकते हैं।';
+
+  @override
+  String get tutorialTapToContinue => 'जारी रखने के लिए टैप करें';
+
+  @override
   String get tutorialTransTitle => 'अनुवाद';
 
   @override
@@ -377,4 +384,22 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get noVoiceDetected => 'कोई आवाज़ नहीं मिली';
+
+  @override
+  String get tooltipSearch => 'खोजें';
+
+  @override
+  String get tooltipStudyReview => 'अध्ययन+समीक्षा';
+
+  @override
+  String get tooltipSpeaking => 'बोलना';
+
+  @override
+  String get tooltipDecrease => 'कम करें';
+
+  @override
+  String get tooltipIncrease => 'बढ़ाएं';
+
+  @override
+  String get languageSettings => 'भाषा सेटिंग्स';
 }

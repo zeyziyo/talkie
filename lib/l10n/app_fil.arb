@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Simulan",
   "tutorialM3StartDesc": "I-tap ang play para magsimula.",
   "startWarning": "Babala",
-  "noVoiceDetected": "Walang boses na nakita"
+  "noVoiceDetected": "Walang boses na nakita",
+  "tutorialTabDesc": "Maaari mong piliin ang nais na mode ng pag-aaral dito.",
+  "tutorialTapToContinue": "I-tap upang magpatuloy",
+  "materialInfo": "Impormasyon ng materyal",
+  "tooltipSearch": "Maghanap",
+  "tooltipStudyReview": "Pag-aaral+Pagsusuri",
+  "tooltipSpeaking": "Pagsasalita",
+  "tooltipDecrease": "Bawasan",
+  "tooltipIncrease": "Dagdagan",
+  "languageSettings": "Mga setting ng wika"
 }

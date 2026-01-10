@@ -21,6 +21,15 @@ Don't just learn once. Save your translations and study materials. Review them s
 📄 **Custom Study Materials:**
 Import your own study lists via JSON. Tailor your learning experience to your specific textbooks or interest areas.
 
+**🌍 Multilingual Support (43 Languages):**
+Talkie supports comprehensive translation and learning across 43 languages:
+- **East Asian:** Korean, Japanese, Chinese (Simplified & Traditional)
+- **European:** English, Spanish, French, German, Italian, Portuguese, Russian, Polish, Ukrainian, Dutch, Greek, Czech, Romanian, Swedish, Danish, Finnish, Norwegian, Hungarian
+- **South Asian:** Hindi, Bengali, Tamil, Telugu, Marathi, Urdu, Gujarati, Kannada, Malayalam, Punjabi
+- **Southeast Asian:** Indonesian, Vietnamese, Thai, Filipino, Malay
+- **Middle Eastern:** Arabic, Turkish, Persian, Hebrew
+- **African:** Swahili, Afrikaans
+
 **Why Talkie?**
 - **Privacy First:** Your voice data is processed securely and not stored permanently.
 - **Offline First:** Your study records live on your device.

@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "Indítás",
   "tutorialM3StartDesc": "Nyomja meg a lejátszást az indításhoz.",
   "startWarning": "Figyelem",
-  "noVoiceDetected": "Hang nem észlelhető"
+  "noVoiceDetected": "Hang nem észlelhető",
+  "tutorialTabDesc": "Itt kiválaszthatja a kívánt tanulási módot.",
+  "tutorialTapToContinue": "Érintse meg a folytatáshoz",
+  "materialInfo": "Anyaginformáció",
+  "tooltipSearch": "Keresés",
+  "tooltipStudyReview": "Tanulás+Ismétlés",
+  "tooltipSpeaking": "Beszéd",
+  "tooltipDecrease": "Csökkentés",
+  "tooltipIncrease": "Növelés",
+  "languageSettings": "Nyelvi beállítások"
 }

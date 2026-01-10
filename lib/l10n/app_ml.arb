@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "ആരംഭിക്കുക",
   "tutorialM3StartDesc": "ആരംഭിക്കാൻ പ്ലേ ടാപ്പ് ചെയ്യുക.",
   "startWarning": "മുന്നറിയിപ്പ്",
-  "noVoiceDetected": "ശബ്ദം കണ്ടെത്തിയില്ല"
+  "noVoiceDetected": "ശബ്ദം കണ്ടെത്തിയില്ല",
+  "tutorialTabDesc": "നിങ്ങൾക്ക് ഇവിടെ നിങ്ങളുടെ ആവശ്യമുള്ള പഠന രീതി തിരഞ്ഞെടുക്കാം.",
+  "tutorialTapToContinue": "തുടരാൻ ടാപ്പ് ചെയ്യുക",
+  "materialInfo": "മെറ്റീരിയൽ വിവരം",
+  "tooltipSearch": "തിരയുക",
+  "tooltipStudyReview": "പഠനം+അവലോകനം",
+  "tooltipSpeaking": "സംസാരിക്കുക",
+  "tooltipDecrease": "കുറയ്ക്കുക",
+  "tooltipIncrease": "വർദ്ധിപ്പിക്കുക",
+  "languageSettings": "ഭാഷാ ക്രമീകരണങ്ങൾ"
 }

@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "ਸ਼ੁਰੂ",
   "tutorialM3StartDesc": "ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਪਲੇ ਦਬਾਓ।",
   "startWarning": "ਚੇਤਾਵਨੀ",
-  "noVoiceDetected": "ਕੋਈ ਆਵਾਜ਼ ਨਹੀਂ ਮਿਲੀ"
+  "noVoiceDetected": "ਕੋਈ ਆਵਾਜ਼ ਨਹੀਂ ਮਿਲੀ",
+  "tutorialTabDesc": "ਤੁਸੀਂ ਇੱਥੇ ਆਪਣੀ ਲੋੜੀਂਦੀ ਸਿੱਖਣ ਦੀ ਵਿਧੀ ਚੁਣ ਸਕਦੇ ਹੋ।",
+  "tutorialTapToContinue": "ਜਾਰੀ ਰੱਖਣ ਲਈ ਟੈਪ ਕਰੋ",
+  "materialInfo": "ਸਮੱਗਰੀ ਜਾਣਕਾਰੀ",
+  "tooltipSearch": "ਖੋਜੋ",
+  "tooltipStudyReview": "ਅਧਿਐਨ+ਸਮੀਖਿਆ",
+  "tooltipSpeaking": "ਬੋਲਣਾ",
+  "tooltipDecrease": "ਘਟਾਓ",
+  "tooltipIncrease": "ਵਧਾਓ",
+  "languageSettings": "ਭਾਸ਼ਾ ਸੈਟਿੰਗਾਂ"
 }

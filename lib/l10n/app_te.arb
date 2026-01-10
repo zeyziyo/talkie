@@ -105,5 +105,14 @@
   "tutorialM3StartTitle": "ప్రారంభించు",
   "tutorialM3StartDesc": "ప్రారంభించడానికి ప్లే నొక్కండి.",
   "startWarning": "హెచ్చరిక",
-  "noVoiceDetected": "వాయిస్ గుర్తించబడలేదు"
+  "noVoiceDetected": "వాయిస్ గుర్తించబడలేదు",
+  "tutorialTabDesc": "మీరు ఇక్కడ మీ కావలసిన అభ్యాస మోడ్‌ను ఎంచుకోవచ్చు.",
+  "tutorialTapToContinue": "కొనసాగించడానికి నొక్కండి",
+  "materialInfo": "విషయ సమాచారం",
+  "tooltipSearch": "వెతకండి",
+  "tooltipStudyReview": "అధ్యయనం+సమీక్ష",
+  "tooltipSpeaking": "మాట్లాడటం",
+  "tooltipDecrease": "తగ్గించు",
+  "tooltipIncrease": "పెంచు",
+  "languageSettings": "భాష సెట్టింగ్‌లు"
 }

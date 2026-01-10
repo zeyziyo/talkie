@@ -286,26 +286,27 @@ class _HomeScreenState extends State<HomeScreen> {
           // Tab Selector
           Consumer<AppState>(
             builder: (context, appState, child) {
+              final l10n = AppLocalizations.of(context)!;
               return Container(
                 key: _tabKey,
                 margin: const EdgeInsets.all(16),
                   child: SegmentedButton<int>(
                     showSelectedIcon: false,
-                    segments: const [
+                    segments: [
                       ButtonSegment<int>(
                         value: 0,
-                        icon: Icon(Icons.search),
-                        tooltip: '검색',
+                        icon: const Icon(Icons.search),
+                        tooltip: l10n.tooltipSearch,
                       ),
                       ButtonSegment<int>(
                         value: 1,
-                        icon: Icon(Icons.auto_stories),
-                        tooltip: '학습+복습',
+                        icon: const Icon(Icons.auto_stories),
+                        tooltip: l10n.tooltipStudyReview,
                       ),
                       ButtonSegment<int>(
                         value: 2,
-                        icon: Icon(Icons.record_voice_over),
-                        tooltip: '말하기',
+                        icon: const Icon(Icons.record_voice_over),
+                        tooltip: l10n.tooltipSpeaking,
                       ),
                     ],
                   selected: {appState.currentMode},
@@ -369,7 +370,7 @@ class _HomeScreenState extends State<HomeScreen> {
         final appState = Provider.of<AppState>(context);
         
         return AlertDialog(
-          title: const Text('언어 설정'),
+          title: Text(l10n.languageSettings),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
