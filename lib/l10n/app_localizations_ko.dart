@@ -22,6 +22,9 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get mode2Title => '복습';
+
+  @override
   String get search => '검색';
 
   @override
@@ -283,22 +286,82 @@ class AppLocalizationsKo extends AppLocalizations {
   String get helpMode1Desc => '음성을 인식하여 번역하고, 결과를 듣습니다. 새로운 표현을 익히기에 좋습니다.';
 
   @override
+  String get helpMode1Details =>
+      '• 음성 입력: 마이크 아이콘을 눌러 말하기/멈추기\n• 텍스트 입력: 직접 타이핑하여 입력 가능\n• 자동 검색: 입력 시 유사한 문장이 있으면 알림\n• 번역하기: \'번역\' 버튼으로 즉시 번역 실행\n• 듣기: 스피커 아이콘으로 원어/번역문 듣기 (TTS)\n• 저장: \'데이터 저장\' 버튼으로 학습 기록 저장\n• 초기화: \'지우기\' 버튼으로 입력 내용 삭제';
+
+  @override
   String get helpMode2Desc => '저장된 문장을 복습합니다. 번역을 가리고 확인하며 복습 횟수를 기록하세요.';
 
   @override
-  String get helpMode3Desc => '외부 학습 자료(JSON)를 불러와 체계적으로 학습합니다.';
+  String get helpMode2Details =>
+      '• 자료 선택: 상단 메뉴에서 학습 자료 선택 또는 \'전체 복습\'\n• 카드 뒤집기: \'보이기/숨기기\' 버튼으로 번역 확인\n• 듣기: \'듣기\' 버튼으로 해당 문장 다시 듣기\n• 학습 체크: 완료된 문장은 체크 표시 (V)\n• 삭제: 카드를 길게 누르면 삭제 다이얼로그 표시\n• 필터: 전체 기록 보기 또는 학습 자료별 정렬';
 
   @override
-  String get helpMode4Desc => '학습 자료의 문장을 랜덤하게 듣고 직접 말해보세요. 발음 정확도를 평가해줍니다.';
+  String get helpMode3Desc => '학습 자료의 문장을 듣고 직접 말하는 연습을 합니다.';
 
   @override
-  String get helpJsonDesc => '모드 3에서 학습 자료를 불러오려면 아래와 같은 형식의 JSON 파일을 사용하세요:';
+  String get helpMode3Details =>
+      '• 자료 선택: 학습할 자료 팩 선택\n• 간격 조절: [-] [+] 버튼으로 문장 사이 대기 시간 설정 (3초~60초)\n• 시작/정지: 재생 버튼으로 쉐도잉 세션 제어\n• 말하기: 원어민 음성을 듣고 따라서 말하기\n• 피드백: 발음 정확도 점수(0~100) 및 색상 표시 (초록/주황/빨강)\n• 재시도: 인식 실패 시 재시도 버튼 사용';
 
   @override
-  String get helpTourDesc => '앱의 주요 기능을 대화형 튜토리얼로 다시 확인해보세요.';
+  String get helpJsonDesc => '학습 자료를 가져오려면 다음과 같은 구조의 JSON 파일을 사용하세요:';
+
+  @override
+  String get helpTourDesc => '앱의 주요 기능을 배우려면 튜토리얼을 시작하세요.';
 
   @override
   String get startTutorial => '튜토리얼 시작';
+
+  @override
+  String get tutorialMicTitle => '음성 입력';
+
+  @override
+  String get tutorialMicDesc => '마이크 버튼을 눌러 음성으로 입력할 수 있습니다.';
+
+  @override
+  String get tutorialTransTitle => '번역하기';
+
+  @override
+  String get tutorialTransDesc => '입력한 텍스트를 번역합니다.';
+
+  @override
+  String get tutorialSaveTitle => '저장하기';
+
+  @override
+  String get tutorialSaveDesc => '번역된 결과를 학습 기록에 저장하세요.';
+
+  @override
+  String get tutorialM2SelectTitle => '자료 선택 & 필터';
+
+  @override
+  String get tutorialM2SelectDesc => '학습할 자료를 선택하거나 전체 복습 모드로 전환합니다.';
+
+  @override
+  String get tutorialM2ListTitle => '학습 목록';
+
+  @override
+  String get tutorialM2ListDesc => '저장된 카드를 확인하고, 뒤집어서 정답을 확인하세요.';
+
+  @override
+  String get tutorialM3SelectTitle => '자료 선택';
+
+  @override
+  String get tutorialM3SelectDesc => '말하기 연습을 진행할 자료 세트를 선택하세요.';
+
+  @override
+  String get tutorialM3IntervalTitle => '간격 설정';
+
+  @override
+  String get tutorialM3IntervalDesc => '문장 사이의 대기 시간을 조절합니다.';
+
+  @override
+  String get tutorialM3StartTitle => '연습 시작';
+
+  @override
+  String get tutorialM3StartDesc => '재생 버튼을 눌러 원어민 음성을 듣고 따라하세요.';
+
+  @override
+  String get startWarning => '주의';
 
   @override
   String get noVoiceDetected => '목소리가 감지되지 않았어요';

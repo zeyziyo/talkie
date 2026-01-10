@@ -1,0 +1,374 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Panjabi Punjabi (`pa`).
+class AppLocalizationsPa extends AppLocalizations {
+  AppLocalizationsPa([String locale = 'pa']) : super(locale);
+
+  @override
+  String get appTitle => 'Talkie';
+
+  @override
+  String tabReview(int count) {
+    return 'ਸਮੀਖਿਆ ($count)';
+  }
+
+  @override
+  String tabStudyMaterial(int count) {
+    return 'ਸਮੱਗਰੀ ($count)';
+  }
+
+  @override
+  String get mode2Title => 'ਸਮੀਖਿਆ';
+
+  @override
+  String get search => 'ਖੋਜ';
+
+  @override
+  String get translate => 'ਅਨੁਵਾਦ';
+
+  @override
+  String get listen => 'ਸੁਣੋ';
+
+  @override
+  String get saveData => 'ਸੇਵ ਕਰੋ';
+
+  @override
+  String get saved => 'ਸੇਵ ਕੀਤਾ';
+
+  @override
+  String get delete => 'ਹਟਾਓ';
+
+  @override
+  String get materialInfo => 'Material Info';
+
+  @override
+  String get cancel => 'ਰੱਦ ਕਰੋ';
+
+  @override
+  String get confirm => 'ਠੀਕ ਹੈ';
+
+  @override
+  String get refresh => 'ਰੀਫ੍ਰੈਸ਼';
+
+  @override
+  String studyRecords(int count) {
+    return 'ਰਿਕਾਰਡ ($count)';
+  }
+
+  @override
+  String get targetLanguageFilter => 'ਟੀਚਾ ਭਾਸ਼ਾ ਫਿਲਟਰ:';
+
+  @override
+  String get noRecords => 'ਚੁਣੀ ਗਈ ਭਾਸ਼ਾ ਲਈ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ';
+
+  @override
+  String get saveTranslationsFromSearch => 'ਖੋਜ ਮੋਡ ਤੋਂ ਅਨੁਵਾਦ ਸੇਵ ਕਰੋ';
+
+  @override
+  String get flip => 'ਪਲਟੋ';
+
+  @override
+  String get hide => 'ਲੁਕਾਓ';
+
+  @override
+  String get deleteRecord => 'ਰਿਕਾਰਡ ਹਟਾਓ';
+
+  @override
+  String get confirmDelete =>
+      'ਕੀ ਤੁਸੀਂ ਸੱਚਮੁੱਚ ਇਸ ਰਿਕਾਰਡ ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?';
+
+  @override
+  String get recordDeleted => 'ਰਿਕਾਰਡ ਸਫਲਤਾਪੂਰਵਕ ਹਟਾਇਆ ਗਿਆ';
+
+  @override
+  String deleteFailed(String error) {
+    return 'ਹਟਾਉਣਾ ਅਸਫਲ: $error';
+  }
+
+  @override
+  String get importJsonFile => 'JSON ਇੰਪੋਰਟ';
+
+  @override
+  String get importing => 'ਇੰਪੋਰਟ ਹੋ ਰਿਹਾ ਹੈ...';
+
+  @override
+  String get importComplete => 'ਇੰਪੋਰਟ ਪੂਰਾ';
+
+  @override
+  String get importFailed => 'ਇੰਪੋਰਟ ਅਸਫਲ';
+
+  @override
+  String importFile(String fileName) {
+    return 'ਫਾਈਲ: $fileName';
+  }
+
+  @override
+  String importTotal(int count) {
+    return 'ਕੁੱਲ: $count';
+  }
+
+  @override
+  String importAdded(int count) {
+    return 'ਸ਼ਾਮਲ ਕੀਤਾ: $count';
+  }
+
+  @override
+  String importSkipped(int count) {
+    return 'ਛੱਡਿਆ: $count';
+  }
+
+  @override
+  String get errors => 'ਗਲਤੀਆਂ:';
+
+  @override
+  String get error => 'ਗਲਤੀ';
+
+  @override
+  String importErrorMessage(String error) {
+    return 'ਫਾਈਲ ਇੰਪੋਰਟ ਕਰਨ ਵਿੱਚ ਅਸਫਲ:\\n$error';
+  }
+
+  @override
+  String get selectStudyMaterial => 'ਸਮੱਗਰੀ ਚੁਣੋ';
+
+  @override
+  String get subject => 'ਵਿਸ਼ਾ:';
+
+  @override
+  String get source => 'ਸਰੋਤ:';
+
+  @override
+  String get file => 'ਫਾਈਲ:';
+
+  @override
+  String progress(int current, int total) {
+    return 'ਤਰੱਕੀ: $current / $total';
+  }
+
+  @override
+  String get importJsonFilePrompt => 'ਕਿਰਪਾ ਕਰਕੇ JSON ਫਾਈਲ ਇੰਪੋਰਟ ਕਰੋ';
+
+  @override
+  String get selectMaterialPrompt => 'ਕਿਰਪਾ ਕਰਕੇ ਅਧਿਐਨ ਸਮੱਗਰੀ ਚੁਣੋ';
+
+  @override
+  String get studyComplete => 'ਅਧਿਐਨ ਕੀਤਾ';
+
+  @override
+  String get markAsStudied => 'ਅਧਿਐਨ ਕੀਤਾ ਵਜੋਂ ਨਿਸ਼ਾਨ ਲਗਾਓ';
+
+  @override
+  String get listening => 'ਸੁਣ ਰਿਹਾ ਹੈ...';
+
+  @override
+  String get recognized => 'ਪਛਾਣ ਪੂਰੀ';
+
+  @override
+  String recognitionFailed(String error) {
+    return 'ਆਵਾਜ਼ ਪਛਾਣ ਅਸਫਲ: $error';
+  }
+
+  @override
+  String get checking => 'ਜਾਂਚ ਕਰ ਰਿਹਾ ਹੈ...';
+
+  @override
+  String get translating => 'ਅਨੁਵਾਦ ਕਰ ਰਿਹਾ ਹੈ...';
+
+  @override
+  String get translationComplete => 'ਅਨੁਵਾਦ ਪੂਰਾ (ਸੇਵ ਕਰਨਾ ਜ਼ਰੂਰੀ)';
+
+  @override
+  String get translationLoaded => 'ਸੇਵ ਕੀਤਾ ਅਨੁਵਾਦ ਲੋਡ ਕੀਤਾ ਗਿਆ';
+
+  @override
+  String translationFailed(String error) {
+    return 'ਅਨੁਵਾਦ ਅਸਫਲ: $error';
+  }
+
+  @override
+  String get enterTextToTranslate => 'ਅਨੁਵਾਦ ਲਈ ਟੈਕਸਟ ਦਰਜ ਕਰੋ';
+
+  @override
+  String get saving => 'ਸੇਵ ਕਰ ਰਿਹਾ ਹੈ...';
+
+  @override
+  String get noTranslationToSave => 'ਸੇਵ ਕਰਨ ਲਈ ਕੋਈ ਅਨੁਵਾਦ ਨਹੀਂ';
+
+  @override
+  String saveFailed(String error) {
+    return 'ਸੇਵ ਕਰਨਾ ਅਸਫਲ: $error';
+  }
+
+  @override
+  String get playing => 'ਚਲਾ ਰਿਹਾ ਹੈ...';
+
+  @override
+  String get noTextToPlay => 'ਚਲਾਉਣ ਲਈ ਕੋਈ ਟੈਕਸਟ ਨਹੀਂ';
+
+  @override
+  String playbackFailed(String error) {
+    return 'ਪਲੇਬੈਕ ਅਸਫਲ: $error';
+  }
+
+  @override
+  String get sourceLanguage => 'ਸਰੋਤ ਭਾਸ਼ਾ';
+
+  @override
+  String get targetLanguage => 'ਟੀਚਾ ਭਾਸ਼ਾ';
+
+  @override
+  String get similarTextFound => 'ਇਕੋ ਜਿਹਾ ਟੈਕਸਟ ਮਿਲਿਆ';
+
+  @override
+  String get useExistingText => 'ਮੌਜੂਦਾ ਵਰਤੋ';
+
+  @override
+  String get createNew => 'ਨਵਾਂ ਬਣਾਓ';
+
+  @override
+  String reviewCount(int count) {
+    return '$count ਵਾਰ ਸਮੀਖਿਆ ਕੀਤੀ';
+  }
+
+  @override
+  String get tabSpeaking => 'ਬੋਲਣਾ';
+
+  @override
+  String get speakingPractice => 'ਬੋਲਣ ਦਾ ਅਭਿਆਸ';
+
+  @override
+  String intervalSeconds(int seconds) {
+    return 'ਅੰਤਰਾਲ: $secondsਸਕਿੰਟ';
+  }
+
+  @override
+  String get yourPronunciation => 'ਤੁਹਾਡਾ ਉਚਾਰਨ';
+
+  @override
+  String get correctAnswer => 'ਸਹੀ ਜਵਾਬ';
+
+  @override
+  String score(String score) {
+    return 'ਸ਼ੁੱਧਤਾ: $score%';
+  }
+
+  @override
+  String get perfect => 'ਬਹੁਤ ਵਧੀਆ!';
+
+  @override
+  String get good => 'ਚੰਗਾ';
+
+  @override
+  String get tryAgain => 'ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ';
+
+  @override
+  String get startPractice => 'ਅਭਿਆਸ ਸ਼ੁਰੂ ਕਰੋ';
+
+  @override
+  String get stopPractice => 'ਰੋਕੋ';
+
+  @override
+  String get helpTitle => 'ਮਦਦ ਅਤੇ ਗਾਈਡ';
+
+  @override
+  String get helpTabModes => 'ਮੋਡ';
+
+  @override
+  String get helpTabJson => 'JSON ਫਾਰਮੈਟ';
+
+  @override
+  String get helpTabTour => 'ਟੂਰ';
+
+  @override
+  String get helpMode1Desc => 'ਆਵਾਜ਼ ਪਛਾਣੋ, ਅਨੁਵਾਦ ਕਰੋ ਅਤੇ ਨਤੀਜਾ ਸੁਣੋ।';
+
+  @override
+  String get helpMode1Details =>
+      '• ਆਵਾਜ਼: ਸ਼ੁਰੂ/ਬੰਦ ਕਰਨ ਲਈ ਮਾਈਕ ਦਬਾਓ\n• ਟੈਕਸਟ: ਅਨੁਵਾਦ ਲਈ ਸਿੱਧਾ ਟਾਈਪ ਕਰੋ\n• ਆਟੋ-ਸਰਚ: ਸਮਾਨ ਵਾਕਾਂ ਨੂੰ ਲੱਭਦਾ ਹੈ\n• ਅਨੁਵਾਦ: ਤੁਰੰਤ ਅਨੁਵਾਦ ਦਾ ਬਟਨ\n• ਸੁਣੋ: TTS ਲਈ ਸਪੀਕਰ ਆਈਕਨ\n• ਸੇਵ: ਇਤਿਹਾਸ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰਦਾ ਹੈ\n• ਸਾਫ਼ ਕਰੋ: ਸਭ ਰੀਸੈਟ ਕਰੋ';
+
+  @override
+  String get helpMode2Desc =>
+      'ਲੁਕੇ ਹੋਏ ਅਨੁਵਾਦ ਨਾਲ ਸੇਵ ਕੀਤੇ ਵਾਕਾਂ ਦੀ ਸਮੀਖਿਆ ਕਰੋ।';
+
+  @override
+  String get helpMode2Details =>
+      '• ਚੁਣੋ: ਸੈੱਟ ਜਾਂ \'ਸਭ ਸਮੀਖਿਆ ਕਰੋ\' ਚੁਣੋ\n• ਪਲਟੋ: ਅਨੁਵਾਦ \'ਦਿਖਾਓ/ਲੁਕਾਓ\'\n• ਸੁਣੋ: ਵਾਕ ਲਈ TTS ਚਲਾਓ\n• ਨਿਸ਼ਾਨ ਲਗਾਓ: ਪੂਰਾ ਹੋਣ ਲਈ ਟਿੱਕ (V)\n• ਹਟਾਓ: ਹਟਾਉਣ ਲਈ ਕਾਰਡ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ\n• ਫਿਲਟਰ: ਸਭ ਦੇਖੋ ਜਾਂ ਸਮੱਗਰੀ ਦੁਆਰਾ';
+
+  @override
+  String get helpMode3Desc =>
+      'ਸੁਣ ਕੇ ਅਤੇ ਦੁਹਰਾ ਕੇ ਬੋਲਣ ਦਾ ਅਭਿਆਸ ਕਰੋ (Shadowing)।';
+
+  @override
+  String get helpMode3Details =>
+      '• ਚੁਣੋ: ਪੈਕੇਜ ਚੁਣੋ\n• ਅੰਤਰਾਲ: [-] [+] ਉਡੀਕ ਦਾ ਸਮਾਂ (3ਸਕਿੰਟ-60ਸਕਿੰਟ)\n• ਸ਼ੁਰੂ/ਬੰਦ: ਸੈਸ਼ਨ ਕੰਟਰੋਲ ਕਰੋ\n• ਬੋਲੋ: ਆਡੀਓ ਸੁਣੋ ਅਤੇ ਦੁਹਰਾਓ\n• ਸਕੋਰ: ਸ਼ੁੱਧਤਾ (0-100)\n• ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼: ਜੇ ਆਵਾਜ਼ ਨਹੀਂ ਮਿਲਦੀ ਤਾਂ ਬਟਨ';
+
+  @override
+  String get helpJsonDesc => 'ਮੋਡ 3 ਵਿੱਚ ਇੰਪੋਰਟ ਕਰਨ ਲਈ, JSON ਬਣਾਓ:';
+
+  @override
+  String get helpTourDesc =>
+      'ਮੁੱਖ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਸਿੱਖਣ ਲਈ ਇੰਟਰਐਕਟਿਵ ਟੂਰ ਸ਼ੁਰੂ ਕਰੋ।';
+
+  @override
+  String get startTutorial => 'ਟੂਰ ਸ਼ੁਰੂ ਕਰੋ';
+
+  @override
+  String get tutorialMicTitle => 'ਵੌਇਸ ਇਨਪੁਟ';
+
+  @override
+  String get tutorialMicDesc => 'ਵੌਇਸ ਇਨਪੁਟ ਲਈ ਮਾਈਕ ਬਟਨ ਦਬਾਓ।';
+
+  @override
+  String get tutorialTransTitle => 'ਅਨੁਵਾਦ';
+
+  @override
+  String get tutorialTransDesc => 'ਆਪਣਾ ਟੈਕਸਟ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਇੱਥੇ ਦਬਾਓ।';
+
+  @override
+  String get tutorialSaveTitle => 'ਸੇਵ';
+
+  @override
+  String get tutorialSaveDesc => 'ਆਪਣਾ ਅਨੁਵਾਦ ਸੇਵ ਕਰੋ।';
+
+  @override
+  String get tutorialM2SelectTitle => 'ਚੁਣੋ ਅਤੇ ਫਿਲਟਰ';
+
+  @override
+  String get tutorialM2SelectDesc =>
+      'ਸਮੱਗਰੀ ਚੁਣੋ ਜਾਂ \'ਸਭ ਸਮੀਖਿਆ ਕਰੋ\' \'ਤੇ ਜਾਓ।';
+
+  @override
+  String get tutorialM2ListTitle => 'ਅਧਿਐਨ ਸੂਚੀ';
+
+  @override
+  String get tutorialM2ListDesc => 'ਆਪਣੇ ਕਾਰਡ ਚੈੱਕ ਕਰੋ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਪਲਟੋ।';
+
+  @override
+  String get tutorialM3SelectTitle => 'ਸਮੱਗਰੀ ਚੁਣੋ';
+
+  @override
+  String get tutorialM3SelectDesc => 'ਬੋਲਣ ਦੇ ਅਭਿਆਸ ਲਈ ਸੈੱਟ ਚੁਣੋ।';
+
+  @override
+  String get tutorialM3IntervalTitle => 'ਅੰਤਰਾਲ';
+
+  @override
+  String get tutorialM3IntervalDesc =>
+      'ਵਾਕਾਂ ਦੇ ਵਿਚਕਾਰ ਉਡੀਕ ਦਾ ਸਮਾਂ ਅਨੁਕੂਲ ਕਰੋ।';
+
+  @override
+  String get tutorialM3StartTitle => 'ਸ਼ੁਰੂ';
+
+  @override
+  String get tutorialM3StartDesc => 'ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਪਲੇ ਦਬਾਓ।';
+
+  @override
+  String get startWarning => 'ਚੇਤਾਵਨੀ';
+
+  @override
+  String get noVoiceDetected => 'ਕੋਈ ਆਵਾਜ਼ ਨਹੀਂ ਮਿਲੀ';
+}

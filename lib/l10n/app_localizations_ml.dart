@@ -1,0 +1,378 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Malayalam (`ml`).
+class AppLocalizationsMl extends AppLocalizations {
+  AppLocalizationsMl([String locale = 'ml']) : super(locale);
+
+  @override
+  String get appTitle => 'Talkie';
+
+  @override
+  String tabReview(int count) {
+    return 'അവലോകനം ($count)';
+  }
+
+  @override
+  String tabStudyMaterial(int count) {
+    return 'മെറ്റീരിയൽ ($count)';
+  }
+
+  @override
+  String get mode2Title => 'അവലോകനം';
+
+  @override
+  String get search => 'തിരയുക';
+
+  @override
+  String get translate => 'വിവർത്തനം';
+
+  @override
+  String get listen => 'കേൾക്കുക';
+
+  @override
+  String get saveData => 'സേവ് ചെയ്യുക';
+
+  @override
+  String get saved => 'സേവ് ചെയ്തു';
+
+  @override
+  String get delete => 'നീക്കം ചെയ്യുക';
+
+  @override
+  String get materialInfo => 'Material Info';
+
+  @override
+  String get cancel => 'റദ്ദാക്കുക';
+
+  @override
+  String get confirm => 'ശരി';
+
+  @override
+  String get refresh => 'പുതുക്കുക';
+
+  @override
+  String studyRecords(int count) {
+    return 'രേഖകൾ ($count)';
+  }
+
+  @override
+  String get targetLanguageFilter => 'ലക്ഷ്യ ഭാഷ ഫിൽട്ടർ:';
+
+  @override
+  String get noRecords => 'തിരഞ്ഞെടുത്ത ഭാഷയ്ക്ക് രേഖകളില്ല';
+
+  @override
+  String get saveTranslationsFromSearch =>
+      'തിരയൽ മോഡിൽ നിന്ന് വിവർത്തനങ്ങൾ സേവ് ചെയ്യുക';
+
+  @override
+  String get flip => 'മറിക്കുക';
+
+  @override
+  String get hide => 'മറയ്ക്കുക';
+
+  @override
+  String get deleteRecord => 'രേഖ നീക്കം ചെയ്യുക';
+
+  @override
+  String get confirmDelete => 'ഈ രേഖ നീക്കം ചെയ്യാൻ ആഗ്രഹിക്കുന്നുണ്ടോ?';
+
+  @override
+  String get recordDeleted => 'രേഖ വിജയകരമായി നീക്കം ചെയ്തു';
+
+  @override
+  String deleteFailed(String error) {
+    return 'നീക്കം ചെയ്യൽ പരാജയപ്പെട്ടു: $error';
+  }
+
+  @override
+  String get importJsonFile => 'JSON ഇറക്കുമതി';
+
+  @override
+  String get importing => 'ഇറക്കുമതി ചെയ്യുന്നു...';
+
+  @override
+  String get importComplete => 'ഇറക്കുമതി പൂർത്തിയായി';
+
+  @override
+  String get importFailed => 'ഇറക്കുമതി പരാജയപ്പെട്ടു';
+
+  @override
+  String importFile(String fileName) {
+    return 'ഫയൽ: $fileName';
+  }
+
+  @override
+  String importTotal(int count) {
+    return 'ആകെ: $count';
+  }
+
+  @override
+  String importAdded(int count) {
+    return 'ചേർത്തത്: $count';
+  }
+
+  @override
+  String importSkipped(int count) {
+    return 'ഒഴിവാക്കിയത്: $count';
+  }
+
+  @override
+  String get errors => 'പിശകുകൾ:';
+
+  @override
+  String get error => 'പിശക്';
+
+  @override
+  String importErrorMessage(String error) {
+    return 'ഫയൽ ഇറക്കുമതി ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു:\\n$error';
+  }
+
+  @override
+  String get selectStudyMaterial => 'മെറ്റീരിയൽ തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get subject => 'വിഷയം:';
+
+  @override
+  String get source => 'ഉറവിടം:';
+
+  @override
+  String get file => 'ഫയൽ:';
+
+  @override
+  String progress(int current, int total) {
+    return 'പുരോഗതി: $current / $total';
+  }
+
+  @override
+  String get importJsonFilePrompt => 'ദയവായി JSON ഫയൽ ഇറക്കുമതി ചെയ്യുക';
+
+  @override
+  String get selectMaterialPrompt => 'ദയവായി പഠന സാമഗ്രികൾ തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get studyComplete => 'പഠിച്ചു';
+
+  @override
+  String get markAsStudied => 'പഠിച്ചതായി അടയാളപ്പെടുത്തുക';
+
+  @override
+  String get listening => 'കേൾക്കുന്നു...';
+
+  @override
+  String get recognized => 'തിരിച്ചറിയൽ പൂർത്തിയായി';
+
+  @override
+  String recognitionFailed(String error) {
+    return 'ശബ്ദ തിരിച്ചറിയൽ പരാജയപ്പെട്ടു: $error';
+  }
+
+  @override
+  String get checking => 'പരിശോധിക്കുന്നു...';
+
+  @override
+  String get translating => 'വിവർത്തനം ചെയ്യുന്നു...';
+
+  @override
+  String get translationComplete => 'വിവർത്തനം പൂർത്തിയായി (സേവ് ചെയ്യണം)';
+
+  @override
+  String get translationLoaded => 'സേവ് ചെയ്ത വിവർത്തനം ലോഡ് ചെയ്തു';
+
+  @override
+  String translationFailed(String error) {
+    return 'വിവർത്തനം പരാജയപ്പെട്ടു: $error';
+  }
+
+  @override
+  String get enterTextToTranslate => 'വിവർത്തനം ചെയ്യാൻ ടെക്സ്റ്റ് നൽകുക';
+
+  @override
+  String get saving => 'സേവ് ചെയ്യുന്നു...';
+
+  @override
+  String get noTranslationToSave => 'സേവ് ചെയ്യാൻ വിവർത്തനമില്ല';
+
+  @override
+  String saveFailed(String error) {
+    return 'സേവ് ചെയ്യുന്നത് പരാജയപ്പെട്ടു: $error';
+  }
+
+  @override
+  String get playing => 'പ്ലേ ചെയ്യുന്നു...';
+
+  @override
+  String get noTextToPlay => 'പ്ലേ ചെയ്യാൻ ടെക്സ്റ്റ് ഇല്ല';
+
+  @override
+  String playbackFailed(String error) {
+    return 'പ്ലേബാക്ക് പരാജയപ്പെട്ടു: $error';
+  }
+
+  @override
+  String get sourceLanguage => 'ഉറവിട ഭാഷ';
+
+  @override
+  String get targetLanguage => 'ലക്ഷ്യ ഭാഷ';
+
+  @override
+  String get similarTextFound => 'സമാനമായ ടെക്സ്റ്റ് കണ്ടെത്തി';
+
+  @override
+  String get useExistingText => 'നിലവിലുള്ളത് ഉപയോഗിക്കുക';
+
+  @override
+  String get createNew => 'പുതിയത് സൃഷ്ടിക്കുക';
+
+  @override
+  String reviewCount(int count) {
+    return '$count തവണ അവലോകനം ചെയ്തു';
+  }
+
+  @override
+  String get tabSpeaking => 'സംസാരം';
+
+  @override
+  String get speakingPractice => 'സംസാര പരിശീലനം';
+
+  @override
+  String intervalSeconds(int seconds) {
+    return 'ഇടവേള: $secondsസെക്കൻഡ്';
+  }
+
+  @override
+  String get yourPronunciation => 'നിങ്ങളുടെ ഉച്ചാരണം';
+
+  @override
+  String get correctAnswer => 'ശരിയായ ഉത്തരം';
+
+  @override
+  String score(String score) {
+    return 'കൃത്യത: $score%';
+  }
+
+  @override
+  String get perfect => 'അതികഠിനം!';
+
+  @override
+  String get good => 'നല്ലത്';
+
+  @override
+  String get tryAgain => 'വീണ്ടും ശ്രമിക്കുക';
+
+  @override
+  String get startPractice => 'പരിശീലനം ആരംഭിക്കുക';
+
+  @override
+  String get stopPractice => 'നിർത്തുക';
+
+  @override
+  String get helpTitle => 'സഹായവും വഴികാട്ടിയും';
+
+  @override
+  String get helpTabModes => 'മോഡുകൾ';
+
+  @override
+  String get helpTabJson => 'JSON ഫോർമാറ്റ്';
+
+  @override
+  String get helpTabTour => 'ടൂർ';
+
+  @override
+  String get helpMode1Desc =>
+      'ശബ്ദം തിരിച്ചറിയുക, വിവർത്തനം ചെയ്യുക, ഫലം കേൾക്കുക.';
+
+  @override
+  String get helpMode1Details =>
+      '• ശബ്ദം: ആരംഭിക്കാൻ/നിർത്താൻ മൈക്ക് ടാപ്പ് ചെയ്യുക\n• ടെക്സ്റ്റ്: വിവർത്തനം ചെയ്യാൻ നേരിട്ട് ടൈപ്പ് ചെയ്യുക\n• ഓട്ടോ-സെർച്ച്: സമാനമായ വാക്യങ്ങൾ കണ്ടെത്തുന്നു\n• വിവർത്തനം: പെട്ടെന്നുള്ള വിവർത്തന ബട്ടൺ\n• കേൾക്കുക: TTS-നുള്ള സ്പീക്കർ ഐക്കൺ\n• സേവ്: ചരിത്രത്തിലേക്ക് ചേർക്കുന്നു\n• മായ്ക്കുക: എല്ലാം പുനഃസജ്ജമാക്കുക';
+
+  @override
+  String get helpMode2Desc =>
+      'മറഞ്ഞിരിക്കുന്ന വിവർത്തനം ഉപയോഗിച്ച് സേവ് ചെയ്ത വാക്യങ്ങൾ അവലോകനം ചെയ്യുക.';
+
+  @override
+  String get helpMode2Details =>
+      '• തിരഞ്ഞെടുക്കുക: സെറ്റ് അല്ലെങ്കിൽ \'എല്ലാം അവലോകനം ചെയ്യുക\' തിരഞ്ഞെടുക്കുക\n• മറിക്കുക: വിവർത്തനം \'കാണിക്കുക/മറയ്ക്കുക\'\n• കേൾക്കുക: വാക്യത്തിനായി TTS പ്ലേ ചെയ്യുക\n• അടയാളപ്പെടുത്തുക: പൂർത്തിയായതിന് ടിക്ക് (V)\n• നീക്കം ചെയ്യുക: നീക്കം ചെയ്യാൻ കാർഡ് അമർത്തിപ്പിടിക്കുക\n• ഫിൽട്ടർ: എല്ലാം അല്ലെങ്കിൽ മെറ്റീരിയൽ പ്രകാരം കാണുക';
+
+  @override
+  String get helpMode3Desc =>
+      'കേട്ട് ആവർത്തിച്ച് സംസാരിക്കാൻ പരിശീലിക്കുക (Shadowing).';
+
+  @override
+  String get helpMode3Details =>
+      '• തിരഞ്ഞെടുക്കുക: പാക്കേജ് തിരഞ്ഞെടുക്കുക\n• ഇടവേള: [-] [+] കാത്തിരിപ്പ് സമയം (3സെ-60സെ)\n• ആരംഭിക്കുക/നിർത്തുക: സെഷൻ നിയന്ത്രിക്കുക\n• സംസാരിക്കുക: ഓഡിയോ കേട്ട് ആവർത്തിക്കുക\n• സ്കോർ: കൃത്യത (0-100)\n• വീണ്ടും ശ്രമിക്കുക: ശബ്ദം കണ്ടെത്തിയില്ലെങ്കിൽ ബട്ടൺ';
+
+  @override
+  String get helpJsonDesc => 'മോഡ് 3-ൽ ഇറക്കുമതി ചെയ്യാൻ, JSON സൃഷ്ടിക്കുക:';
+
+  @override
+  String get helpTourDesc =>
+      'പ്രധാന സവിശേഷതകൾ പഠിക്കാൻ ഇൻ്ററാക്റ്റീവ് ടൂർ ആരംഭിക്കുക.';
+
+  @override
+  String get startTutorial => 'ടൂർ ആരംഭിക്കുക';
+
+  @override
+  String get tutorialMicTitle => 'വോയ്സ് ഇൻപുട്ട്';
+
+  @override
+  String get tutorialMicDesc =>
+      'വോയ്സ് ഇൻപുട്ടിനായി മൈക്ക് ബട്ടൺ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get tutorialTransTitle => 'വിവർത്തനം';
+
+  @override
+  String get tutorialTransDesc =>
+      'നിങ്ങളുടെ ടെക്സ്റ്റ് വിവർത്തനം ചെയ്യാൻ ഇവിടെ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get tutorialSaveTitle => 'സേവ്';
+
+  @override
+  String get tutorialSaveDesc => 'നിങ്ങളുടെ വിവർത്തനം സേവ് ചെയ്യുക.';
+
+  @override
+  String get tutorialM2SelectTitle => 'തിരഞ്ഞെടുക്കുക & ഫിൽട്ടർ';
+
+  @override
+  String get tutorialM2SelectDesc =>
+      'മെറ്റീരിയലുകൾ തിരഞ്ഞെടുക്കുക അല്ലെങ്കിൽ \'എല്ലാം അവലോകനം ചെയ്യുക\' എന്നതിലേക്ക് മാറുക.';
+
+  @override
+  String get tutorialM2ListTitle => 'പഠന ലിസ്റ്റ്';
+
+  @override
+  String get tutorialM2ListDesc => 'നിങ്ങളുടെ കാർഡുകൾ പരിശോധിച്ച് അവ മറിക്കുക.';
+
+  @override
+  String get tutorialM3SelectTitle => 'മെറ്റീരിയൽ തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get tutorialM3SelectDesc =>
+      'സംസാര പരിശീലനത്തിനായി സെറ്റ് തിരഞ്ഞെടുക്കുക.';
+
+  @override
+  String get tutorialM3IntervalTitle => 'ഇടവേള';
+
+  @override
+  String get tutorialM3IntervalDesc =>
+      'വാക്യങ്ങൾക്കിടയിലുള്ള കാത്തിരിപ്പ് സമയം ക്രമീകരിക്കുക.';
+
+  @override
+  String get tutorialM3StartTitle => 'ആരംഭിക്കുക';
+
+  @override
+  String get tutorialM3StartDesc => 'ആരംഭിക്കാൻ പ്ലേ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get startWarning => 'മുന്നറിയിപ്പ്';
+
+  @override
+  String get noVoiceDetected => 'ശബ്ദം കണ്ടെത്തിയില്ല';
+}

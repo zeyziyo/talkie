@@ -22,6 +22,9 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get mode2Title => 'Review';
+
+  @override
   String get search => 'Search';
 
   @override
@@ -285,16 +288,24 @@ class AppLocalizationsFr extends AppLocalizations {
       'Recognize voice, translate to target language, and listen to the result.';
 
   @override
+  String get helpMode1Details =>
+      '• Voice Input: Tap mic icon to start/stop listening\n• Text Input: Type directly to translate\n• Auto-Search: Detects similar existing sentences\n• Translate: Tap button for instant translation\n• Listen: Speaker icon for TTS (Original/Translated)\n• Save: \'Save Data\' adds to history\n• Clear: Reset all inputs';
+
+  @override
   String get helpMode2Desc =>
       'Review saved sentences with auto-hide translations and track your review count.';
 
   @override
-  String get helpMode3Desc =>
-      'Import external study materials (JSON) and practice systematically.';
+  String get helpMode2Details =>
+      '• Select Material: Choose specific set or \'Review All\'\n• Flip Card: Use \'Show/Hide\' to check translation\n• Listen: Play TTS for specific sentence\n• Mark Studied: Checkmark (V) for completed items\n• Delete: Long-press card to remove record\n• Filter: View all or filter by material';
 
   @override
-  String get helpMode4Desc =>
-      'Practice speaking selected materials with random interval drills and pronunciation scoring.';
+  String get helpMode3Desc =>
+      'Practice speaking by listening to and shadowing sentences.';
+
+  @override
+  String get helpMode3Details =>
+      '• Select Material: Choose learning pack\n• Interval: [-] [+] to adjust wait time (3s-60s)\n• Start/Stop: Control shadowing session\n• Speak: Listen to audio and repeat after it\n• Feedback: Accuracy score (0-100) with color code\n• Retry: Use retry button if voice not detected';
 
   @override
   String get helpJsonDesc =>
@@ -306,6 +317,62 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get startTutorial => 'Start Tutorial';
+
+  @override
+  String get tutorialMicTitle => 'Voice Input';
+
+  @override
+  String get tutorialMicDesc => 'Tap the mic button to start voice input.';
+
+  @override
+  String get tutorialTransTitle => 'Translate';
+
+  @override
+  String get tutorialTransDesc => 'Tap here to translate your text.';
+
+  @override
+  String get tutorialSaveTitle => 'Save';
+
+  @override
+  String get tutorialSaveDesc => 'Save your translation to study records.';
+
+  @override
+  String get tutorialM2SelectTitle => 'Select & Filter';
+
+  @override
+  String get tutorialM2SelectDesc =>
+      'Choose study materials or switch to \'Review All\'.';
+
+  @override
+  String get tutorialM2ListTitle => 'Study List';
+
+  @override
+  String get tutorialM2ListDesc =>
+      'Check your saved cards and flip them to see answers.';
+
+  @override
+  String get tutorialM3SelectTitle => 'Select Material';
+
+  @override
+  String get tutorialM3SelectDesc =>
+      'Choose a material set for speaking practice.';
+
+  @override
+  String get tutorialM3IntervalTitle => 'Interval';
+
+  @override
+  String get tutorialM3IntervalDesc =>
+      'Adjust the waiting time between sentences.';
+
+  @override
+  String get tutorialM3StartTitle => 'Start Practice';
+
+  @override
+  String get tutorialM3StartDesc =>
+      'Tap play to start listening and shadowing.';
+
+  @override
+  String get startWarning => 'Warning';
 
   @override
   String get noVoiceDetected => 'No voice detected';

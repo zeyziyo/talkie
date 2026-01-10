@@ -5,11 +5,48 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'app_localizations_af.dart';
+import 'app_localizations_ar.dart';
+import 'app_localizations_bn.dart';
+import 'app_localizations_cs.dart';
+import 'app_localizations_da.dart';
+import 'app_localizations_de.dart';
+import 'app_localizations_el.dart';
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
+import 'app_localizations_fa.dart';
+import 'app_localizations_fi.dart';
+import 'app_localizations_fil.dart';
 import 'app_localizations_fr.dart';
+import 'app_localizations_gu.dart';
+import 'app_localizations_he.dart';
+import 'app_localizations_hi.dart';
+import 'app_localizations_hu.dart';
+import 'app_localizations_id.dart';
+import 'app_localizations_it.dart';
 import 'app_localizations_ja.dart';
+import 'app_localizations_kn.dart';
 import 'app_localizations_ko.dart';
+import 'app_localizations_ml.dart';
+import 'app_localizations_mr.dart';
+import 'app_localizations_ms.dart';
+import 'app_localizations_nl.dart';
+import 'app_localizations_no.dart';
+import 'app_localizations_pa.dart';
+import 'app_localizations_pl.dart';
+import 'app_localizations_pt.dart';
+import 'app_localizations_ro.dart';
+import 'app_localizations_ru.dart';
+import 'app_localizations_sv.dart';
+import 'app_localizations_sw.dart';
+import 'app_localizations_ta.dart';
+import 'app_localizations_te.dart';
+import 'app_localizations_th.dart';
+import 'app_localizations_tr.dart';
+import 'app_localizations_uk.dart';
+import 'app_localizations_ur.dart';
+import 'app_localizations_vi.dart';
+import 'app_localizations_zh.dart';
 
 // ignore_for_file: type=lint
 
@@ -97,11 +134,50 @@ abstract class AppLocalizations {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
+    Locale('af'),
+    Locale('ar'),
+    Locale('bn'),
+    Locale('cs'),
+    Locale('da'),
+    Locale('de'),
+    Locale('el'),
     Locale('en'),
     Locale('es'),
+    Locale('fa'),
+    Locale('fi'),
+    Locale('fil'),
     Locale('fr'),
+    Locale('gu'),
+    Locale('he'),
+    Locale('hi'),
+    Locale('hu'),
+    Locale('id'),
+    Locale('it'),
     Locale('ja'),
-    Locale('ko')
+    Locale('kn'),
+    Locale('ko'),
+    Locale('ml'),
+    Locale('mr'),
+    Locale('ms'),
+    Locale('nl'),
+    Locale('no'),
+    Locale('pa'),
+    Locale('pl'),
+    Locale('pt'),
+    Locale('ro'),
+    Locale('ru'),
+    Locale('sv'),
+    Locale('sw'),
+    Locale('ta'),
+    Locale('te'),
+    Locale('th'),
+    Locale('tr'),
+    Locale('uk'),
+    Locale('ur'),
+    Locale('vi'),
+    Locale('zh'),
+    Locale('zh', 'CN'),
+    Locale('zh', 'TW')
   ];
 
   /// Application title
@@ -121,6 +197,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Study Material ({count})'**
   String tabStudyMaterial(int count);
+
+  /// Mode 2 title for help dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Review'**
+  String get mode2Title;
 
   /// Search mode label
   ///
@@ -584,23 +666,35 @@ abstract class AppLocalizations {
   /// **'Recognize voice, translate to target language, and listen to the result.'**
   String get helpMode1Desc;
 
+  /// No description provided for @helpMode1Details.
+  ///
+  /// In en, this message translates to:
+  /// **'• Voice Input: Tap mic icon to start/stop listening\n• Text Input: Type directly to translate\n• Auto-Search: Detects similar existing sentences\n• Translate: Tap button for instant translation\n• Listen: Speaker icon for TTS (Original/Translated)\n• Save: \'Save Data\' adds to history\n• Clear: Reset all inputs'**
+  String get helpMode1Details;
+
   /// No description provided for @helpMode2Desc.
   ///
   /// In en, this message translates to:
   /// **'Review saved sentences with auto-hide translations and track your review count.'**
   String get helpMode2Desc;
 
+  /// No description provided for @helpMode2Details.
+  ///
+  /// In en, this message translates to:
+  /// **'• Select Material: Choose specific set or \'Review All\'\n• Flip Card: Use \'Show/Hide\' to check translation\n• Listen: Play TTS for specific sentence\n• Mark Studied: Checkmark (V) for completed items\n• Delete: Long-press card to remove record\n• Filter: View all or filter by material'**
+  String get helpMode2Details;
+
   /// No description provided for @helpMode3Desc.
   ///
   /// In en, this message translates to:
-  /// **'Import external study materials (JSON) and practice systematically.'**
+  /// **'Practice speaking by listening to and shadowing sentences.'**
   String get helpMode3Desc;
 
-  /// No description provided for @helpMode4Desc.
+  /// No description provided for @helpMode3Details.
   ///
   /// In en, this message translates to:
-  /// **'Practice speaking selected materials with random interval drills and pronunciation scoring.'**
-  String get helpMode4Desc;
+  /// **'• Select Material: Choose learning pack\n• Interval: [-] [+] to adjust wait time (3s-60s)\n• Start/Stop: Control shadowing session\n• Speak: Listen to audio and repeat after it\n• Feedback: Accuracy score (0-100) with color code\n• Retry: Use retry button if voice not detected'**
+  String get helpMode3Details;
 
   /// No description provided for @helpJsonDesc.
   ///
@@ -620,6 +714,108 @@ abstract class AppLocalizations {
   /// **'Start Tutorial'**
   String get startTutorial;
 
+  /// No description provided for @tutorialMicTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice Input'**
+  String get tutorialMicTitle;
+
+  /// No description provided for @tutorialMicDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the mic button to start voice input.'**
+  String get tutorialMicDesc;
+
+  /// No description provided for @tutorialTransTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Translate'**
+  String get tutorialTransTitle;
+
+  /// No description provided for @tutorialTransDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap here to translate your text.'**
+  String get tutorialTransDesc;
+
+  /// No description provided for @tutorialSaveTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get tutorialSaveTitle;
+
+  /// No description provided for @tutorialSaveDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Save your translation to study records.'**
+  String get tutorialSaveDesc;
+
+  /// No description provided for @tutorialM2SelectTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Select & Filter'**
+  String get tutorialM2SelectTitle;
+
+  /// No description provided for @tutorialM2SelectDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose study materials or switch to \'Review All\'.'**
+  String get tutorialM2SelectDesc;
+
+  /// No description provided for @tutorialM2ListTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Study List'**
+  String get tutorialM2ListTitle;
+
+  /// No description provided for @tutorialM2ListDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your saved cards and flip them to see answers.'**
+  String get tutorialM2ListDesc;
+
+  /// No description provided for @tutorialM3SelectTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Material'**
+  String get tutorialM3SelectTitle;
+
+  /// No description provided for @tutorialM3SelectDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a material set for speaking practice.'**
+  String get tutorialM3SelectDesc;
+
+  /// No description provided for @tutorialM3IntervalTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Interval'**
+  String get tutorialM3IntervalTitle;
+
+  /// No description provided for @tutorialM3IntervalDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Adjust the waiting time between sentences.'**
+  String get tutorialM3IntervalDesc;
+
+  /// No description provided for @tutorialM3StartTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Practice'**
+  String get tutorialM3StartTitle;
+
+  /// No description provided for @tutorialM3StartDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap play to start listening and shadowing.'**
+  String get tutorialM3StartDesc;
+
+  /// No description provided for @startWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Warning'**
+  String get startWarning;
+
   /// No description provided for @noVoiceDetected.
   ///
   /// In en, this message translates to:
@@ -637,26 +833,156 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['en', 'es', 'fr', 'ja', 'ko'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+        'af',
+        'ar',
+        'bn',
+        'cs',
+        'da',
+        'de',
+        'el',
+        'en',
+        'es',
+        'fa',
+        'fi',
+        'fil',
+        'fr',
+        'gu',
+        'he',
+        'hi',
+        'hu',
+        'id',
+        'it',
+        'ja',
+        'kn',
+        'ko',
+        'ml',
+        'mr',
+        'ms',
+        'nl',
+        'no',
+        'pa',
+        'pl',
+        'pt',
+        'ro',
+        'ru',
+        'sv',
+        'sw',
+        'ta',
+        'te',
+        'th',
+        'tr',
+        'uk',
+        'ur',
+        'vi',
+        'zh'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
+  // Lookup logic when language+country codes are specified.
+  switch (locale.languageCode) {
+    case 'zh':
+      {
+        switch (locale.countryCode) {
+          case 'CN':
+            return AppLocalizationsZhCn();
+          case 'TW':
+            return AppLocalizationsZhTw();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'af':
+      return AppLocalizationsAf();
+    case 'ar':
+      return AppLocalizationsAr();
+    case 'bn':
+      return AppLocalizationsBn();
+    case 'cs':
+      return AppLocalizationsCs();
+    case 'da':
+      return AppLocalizationsDa();
+    case 'de':
+      return AppLocalizationsDe();
+    case 'el':
+      return AppLocalizationsEl();
     case 'en':
       return AppLocalizationsEn();
     case 'es':
       return AppLocalizationsEs();
+    case 'fa':
+      return AppLocalizationsFa();
+    case 'fi':
+      return AppLocalizationsFi();
+    case 'fil':
+      return AppLocalizationsFil();
     case 'fr':
       return AppLocalizationsFr();
+    case 'gu':
+      return AppLocalizationsGu();
+    case 'he':
+      return AppLocalizationsHe();
+    case 'hi':
+      return AppLocalizationsHi();
+    case 'hu':
+      return AppLocalizationsHu();
+    case 'id':
+      return AppLocalizationsId();
+    case 'it':
+      return AppLocalizationsIt();
     case 'ja':
       return AppLocalizationsJa();
+    case 'kn':
+      return AppLocalizationsKn();
     case 'ko':
       return AppLocalizationsKo();
+    case 'ml':
+      return AppLocalizationsMl();
+    case 'mr':
+      return AppLocalizationsMr();
+    case 'ms':
+      return AppLocalizationsMs();
+    case 'nl':
+      return AppLocalizationsNl();
+    case 'no':
+      return AppLocalizationsNo();
+    case 'pa':
+      return AppLocalizationsPa();
+    case 'pl':
+      return AppLocalizationsPl();
+    case 'pt':
+      return AppLocalizationsPt();
+    case 'ro':
+      return AppLocalizationsRo();
+    case 'ru':
+      return AppLocalizationsRu();
+    case 'sv':
+      return AppLocalizationsSv();
+    case 'sw':
+      return AppLocalizationsSw();
+    case 'ta':
+      return AppLocalizationsTa();
+    case 'te':
+      return AppLocalizationsTe();
+    case 'th':
+      return AppLocalizationsTh();
+    case 'tr':
+      return AppLocalizationsTr();
+    case 'uk':
+      return AppLocalizationsUk();
+    case 'ur':
+      return AppLocalizationsUr();
+    case 'vi':
+      return AppLocalizationsVi();
+    case 'zh':
+      return AppLocalizationsZh();
   }
 
   throw FlutterError(

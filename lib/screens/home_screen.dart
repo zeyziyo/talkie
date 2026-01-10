@@ -28,6 +28,11 @@ class _HomeScreenState extends State<HomeScreen> {
   final GlobalKey _mode3DropdownKey = GlobalKey();
   final GlobalKey _mode3IntervalKey = GlobalKey();
   final GlobalKey _mode3StartButtonKey = GlobalKey();
+  
+  // Tutorial Keys
+  final GlobalKey _tabKey = GlobalKey();
+  final GlobalKey _helpKey = GlobalKey();
+  final GlobalKey _actionButtonKey = GlobalKey();
 
   late TutorialCoachMark tutorialCoachMark;
 
