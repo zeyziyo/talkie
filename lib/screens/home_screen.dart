@@ -78,13 +78,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Text(
                     l10n.helpTabModes, // "기능 소개" or "Modes"
-                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0, color: Colors.white),
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0, color: Colors.yellowAccent),
                   ),
                   const Padding(
                     padding: EdgeInsets.only(top: 10.0),
                     child: Text(
                       "여기서 원하는 학습 모드를 선택할 수 있습니다.", // "You can select modes here."
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.yellowAccent, fontSize: 16.0),
                     ),
                   ),
                 ],
@@ -182,7 +182,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Text(
                     desc,
                     style: const TextStyle(
-                      color: Colors.white,
+                      color: Colors.yellowAccent,
                       fontSize: 16.0,
                     ),
                   ),

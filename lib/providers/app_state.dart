@@ -152,11 +152,15 @@ class AppState extends ChangeNotifier {
       
       await _speechService.startSTT(
         lang: _getLangCode(_sourceLang),
-        onResult: (text, isFinal) {  // Added isFinal parameter
+        onResult: (text, isFinal) {
           _sourceText = text;
-          _statusMessage = '인식 완료';
-          stopListening(); // Auto-stop mic after recognition
           notifyListeners();
+          
+          // Only stop listening when final result is received
+          if (isFinal && text.trim().isNotEmpty) {
+            _statusMessage = '인식 완료';
+            stopListening();
+          }
         },
       );
     } catch (e) {
