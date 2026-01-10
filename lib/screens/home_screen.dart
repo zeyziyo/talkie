@@ -69,6 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
         keyTarget: _tabKey,
         alignSkip: Alignment.topRight,
         shape: ShapeLightFocus.Circle,
+        paddingFocus: 0,
         radius: 3,
         contents: [
           TargetContent(
@@ -172,6 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
       keyTarget: key,
       alignSkip: Alignment.topRight,
       shape: ShapeLightFocus.Circle,
+      paddingFocus: 0, // Force small highlight size
       radius: radius,
       contents: [
         TargetContent(
