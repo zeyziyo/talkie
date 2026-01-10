@@ -68,6 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
         identify: "Mode Tabs",
         keyTarget: _tabKey,
         alignSkip: Alignment.topRight,
+        shape: ShapeLightFocus.Circle,
         radius: 3,
         contents: [
           TargetContent(
@@ -170,6 +171,7 @@ class _HomeScreenState extends State<HomeScreen> {
       identify: title,
       keyTarget: key,
       alignSkip: Alignment.topRight,
+      shape: ShapeLightFocus.Circle,
       radius: radius,
       contents: [
         TargetContent(
