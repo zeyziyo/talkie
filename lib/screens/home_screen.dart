@@ -171,13 +171,38 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Text(
                   title,
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0, color: Colors.white),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold, 
+                    fontSize: 20.0, 
+                    color: Colors.yellowAccent,  // Changed from white for better visibility
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 10.0),
                   child: Text(
                     desc,
-                    style: const TextStyle(color: Colors.white),
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 16.0,
+                    ),
+                  ),
+                ),
+                // Navigation instruction
+                const Padding(
+                  padding: EdgeInsets.only(top: 16.0),
+                  child: Row(
+                    children: [
+                      Icon(Icons.touch_app, color: Colors.cyanAccent, size: 16),
+                      SizedBox(width: 8),
+                      Text(
+                        '화면을 탭하여 계속',
+                        style: TextStyle(
+                          color: Colors.cyanAccent,
+                          fontSize: 14.0,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],

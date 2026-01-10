@@ -142,6 +142,22 @@ class SpeechService {
     }
     
     try {
+      // Reconfigure audio session to playback/media mode for TTS
+      // This ensures volume buttons control media volume, not call volume
+      final session = await AudioSession.instance;
+      await session.configure(AudioSessionConfiguration(
+        avAudioSessionCategory: AVAudioSessionCategory.playback,
+        avAudioSessionCategoryOptions: AVAudioSessionCategoryOptions.duckOthers,
+        avAudioSessionMode: AVAudioSessionMode.spokenAudio,
+        androidAudioAttributes: const AndroidAudioAttributes(
+          contentType: AndroidAudioContentType.speech,
+          flags: AndroidAudioFlags.none,
+          usage: AndroidAudioUsage.media,  // Changed from voiceCommunication to media
+        ),
+        androidAudioFocusGainType: AndroidAudioFocusGainType.gain,
+        androidWillPauseWhenDucked: false,
+      ));
+      
       await _flutterTts.setLanguage(lang);
       await _flutterTts.setSpeechRate(slow ? 0.3 : 0.5);
       await _flutterTts.setVolume(1.0);

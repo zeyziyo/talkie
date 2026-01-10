@@ -775,8 +775,12 @@ class AppState extends ChangeNotifier {
         },
       );
       
-      // Start Timeout Timer (Respect configured interval)
-      _mode3Timer = Timer(Duration(seconds: _mode3Interval), _handleMode3Timeout);
+      // Start Timeout Timer (Respect configured interval + buffer for speech)
+      // Add 10 seconds buffer to allow user time to speak after listening
+      _mode3Timer = Timer(
+        Duration(seconds: _mode3Interval + 10), 
+        _handleMode3Timeout,
+      );
       
     } catch (e) {
       debugPrint('[AppState] Mode 3 Listen Error: $e');
