@@ -80,11 +80,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     l10n.helpTabModes, // "기능 소개" or "Modes"
                     style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0, color: Colors.yellowAccent),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(top: 10.0),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10.0),
                     child: Text(
                       l10n.tutorialTabDesc,
-                      style: TextStyle(color: Colors.yellowAccent, fontSize: 16.0),
+                      style: const TextStyle(color: Colors.yellowAccent, fontSize: 16.0),
                     ),
                   ),
                 ],
@@ -165,6 +165,7 @@ class _HomeScreenState extends State<HomeScreen> {
         TargetContent(
           align: align,
           builder: (context, controller) {
+            final l10n = AppLocalizations.of(context)!;
             return Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
