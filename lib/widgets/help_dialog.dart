@@ -4,6 +4,7 @@ import '../l10n/app_localizations.dart';
 
 class HelpDialog extends StatefulWidget {
   final int initialModeIndex;
+  final VoidCallback onStartTutorial;
 
   const HelpDialog({
     super.key,
