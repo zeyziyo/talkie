@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
       l10n.helpTabModes,
       l10n.tutorialTabDesc,
       ContentAlign.bottom,
-      radius: 6,
+      radius: 12,
     ));
 
     // Mode-specific targets
@@ -80,21 +80,21 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialMicTitle, 
         l10n.tutorialMicDesc,
         ContentAlign.top, // Changed from bottom to top
-        radius: 3,
+        radius: 12,
       ));
       targets.add(_buildTarget(
         _translateButtonKey, 
         l10n.tutorialTransTitle, 
         l10n.tutorialTransDesc,
         ContentAlign.top,
-        radius: 3,
+        radius: 12,
       ));
       targets.add(_buildTarget(
         _saveButtonKey, 
         l10n.tutorialSaveTitle, 
         l10n.tutorialSaveDesc,
         ContentAlign.top,
-        radius: 3,
+        radius: 12,
       ));
     } else if (modeIndex == 1) {
       // Mode 2: Dropdown
@@ -103,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialM2SelectTitle, 
         l10n.tutorialM2DropdownDesc,
         ContentAlign.bottom,
-        radius: 3,
+        radius: 12,
       ));
       // Action Button (Import) is also relevant in Mode 2
       targets.add(_buildTarget(
@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.importJsonFile, 
         l10n.tutorialM2ImportDesc,
         ContentAlign.bottom,
-        radius: 3,
+        radius: 12,
       ));
     } else if (modeIndex == 2) {
       // Mode 3: Dropdown -> Interval -> Start
@@ -120,28 +120,28 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialM3SelectTitle, 
         l10n.tutorialM3SelectDesc,
         ContentAlign.bottom,
-        radius: 3,
+        radius: 12,
       ));
       targets.add(_buildTarget(
         _mode3IntervalKey, 
         l10n.tutorialM3IntervalTitle, 
         l10n.tutorialM3IntervalDesc,
         ContentAlign.bottom,
-        radius: 3,
+        radius: 12,
       ));
       targets.add(_buildTarget(
         _mode3StartButtonKey, 
         l10n.tutorialM3StartTitle, 
         l10n.tutorialM3StartDesc,
         ContentAlign.top,
-        radius: 3,
+        radius: 12,
       ));
     }
 
     return targets;
   }
 
-  TargetFocus _buildTarget(GlobalKey key, String title, String desc, ContentAlign align, {double radius = 6}) {
+  TargetFocus _buildTarget(GlobalKey key, String title, String desc, ContentAlign align, {double radius = 12}) {
     // Calculate target position manually to force a fixed small size highlight
     // regardless of the actual widget size.
     final RenderBox? renderBox = key.currentContext?.findRenderObject() as RenderBox?;
