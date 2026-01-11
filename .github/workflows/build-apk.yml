@@ -49,3 +49,27 @@ jobs:
         name: talkie-release-apk
         path: build/app/outputs/flutter-apk/app-release.apk
         retention-days: 30
+
+    - name: Build App Bundle (AAB)
+      env:
+        FLUTTER_ROOT: ${{ env.FLUTTER_ROOT }}
+      run: flutter build appbundle --release
+
+    - name: Upload AAB
+      uses: actions/upload-artifact@v4
+      with:
+        name: talkie-release-aab
+        path: build/app/outputs/bundle/release/app-release.aab
+        retention-days: 30
+
+    - name: Build App Bundle (AAB)
+      env:
+        FLUTTER_ROOT: ${{ env.FLUTTER_ROOT }}
+      run: flutter build appbundle --release
+
+    - name: Upload AAB
+      uses: actions/upload-artifact@v4
+      with:
+        name: talkie-release-aab
+        path: build/app/outputs/bundle/release/app-release.aab
+        retention-days: 30

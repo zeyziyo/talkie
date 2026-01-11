@@ -160,20 +160,39 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialM3StartTitle, 
         l10n.tutorialM3StartDesc,
         ContentAlign.top,
-        radius: 8,
+        radius: 3,
       ));
     }
 
     return targets;
   }
 
-  TargetFocus _buildTarget(GlobalKey key, String title, String desc, ContentAlign align, {double radius = 10}) {
+  TargetFocus _buildTarget(GlobalKey key, String title, String desc, ContentAlign align, {double radius = 3}) {
+    // Calculate target position manually to force a fixed small size highlight
+    // regardless of the actual widget size.
+    final RenderBox? renderBox = key.currentContext?.findRenderObject() as RenderBox?;
+    TargetPosition? position;
+    
+    if (renderBox != null) {
+      final Offset offset = renderBox.localToGlobal(Offset.zero);
+      final Size size = renderBox.size;
+      // Center of the target widget
+      final Offset center = Offset(offset.dx + size.width / 2, offset.dy + size.height / 2);
+      
+      // Define a tiny Fixed Size for the highlight target (so circle radius works from this small box)
+      position = TargetPosition(
+        Size(10, 10), // Small fixed size
+        Offset(center.dx - 5, center.dy - 5), // Centered
+      );
+    }
+
     return TargetFocus(
       identify: title,
-      keyTarget: key,
+      keyTarget: position == null ? key : null, // Fallback to key if position calc fails
+      targetPosition: position,
       alignSkip: Alignment.topRight,
       shape: ShapeLightFocus.Circle,
-      paddingFocus: 0, // Force small highlight size
+      paddingFocus: 0,
       radius: radius,
       contents: [
         TargetContent(
@@ -189,7 +208,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: const TextStyle(
                     fontWeight: FontWeight.bold, 
                     fontSize: 20.0, 
-                    color: Colors.yellowAccent,  // Changed from white for better visibility
+                    color: Colors.yellowAccent,
                   ),
                 ),
                 Padding(
@@ -202,7 +221,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-                // Navigation instruction (always visible)
                 Padding(
                   padding: const EdgeInsets.only(top: 16.0),
                   child: Row(
