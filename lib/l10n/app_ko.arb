@@ -116,5 +116,7 @@
   "tooltipIncrease": "증가",
   "languageSettings": "Language Settings",
   "tutorialM2DropdownDesc": "학습할 자료를 선택합니다.",
-  "tutorialM2ImportDesc": "기기의 폴더에서 JSON 파일을 불러옵니다."
+  "tutorialM2ImportDesc": "기기의 폴더에서 JSON 파일을 불러옵니다.",
+  "copy": "복사",
+  "copiedToClipboard": "클립보드에 복사되었습니다!"
 }

@@ -116,5 +116,7 @@
   "tooltipIncrease": "Tăng",
   "languageSettings": "Cài đặt ngôn ngữ",
   "tutorialM2DropdownDesc": "Chọn tài liệu học tập.",
-  "tutorialM2ImportDesc": "Nhập tệp JSON từ thư mục thiết bị."
+  "tutorialM2ImportDesc": "Nhập tệp JSON từ thư mục thiết bị.",
+  "copy": "Sao chép",
+  "copiedToClipboard": "Đã sao chép vào bộ nhớ tạm!"
 }

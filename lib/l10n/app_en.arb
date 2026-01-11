@@ -403,5 +403,7 @@
   "tooltipIncrease": "Increase",
   "languageSettings": "Language Settings",
   "tutorialM2DropdownDesc": "Select study materials.",
-  "tutorialM2ImportDesc": "Import JSON file from device folder."
+  "tutorialM2ImportDesc": "Import JSON file from device folder.",
+  "copy": "Copy",
+  "copiedToClipboard": "Copied to clipboard!"
 }

@@ -116,5 +116,7 @@
   "tooltipIncrease": "Erhöhen",
   "languageSettings": "Spracheinstellungen",
   "tutorialM2DropdownDesc": "Wählen Sie Lernmaterialien aus.",
-  "tutorialM2ImportDesc": "JSON-Datei aus Geräteordner importieren."
+  "tutorialM2ImportDesc": "JSON-Datei aus Geräteordner importieren.",
+  "copy": "Kopieren",
+  "copiedToClipboard": "In die Zwischenablage kopiert!"
 }

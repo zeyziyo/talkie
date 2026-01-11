@@ -265,11 +265,11 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
                 right: 0,
                 child: IconButton(
                   icon: const Icon(Icons.copy, size: 18),
-                  tooltip: 'Copy',
+                  tooltip: l10n.copy,
                   onPressed: () {
-                    Clipboard.setData(const ClipboardData(text: jsonExample));
+                    Clipboard.setData(ClipboardData(text: jsonExample));
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Copied to clipboard!')),
+                      SnackBar(content: Text(l10n.copiedToClipboard)),
                     );
                   },
                 ),

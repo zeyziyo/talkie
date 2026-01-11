@@ -36,7 +36,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
     final l10n = AppLocalizations.of(context)!;
     return Consumer<AppState>(
       builder: (context, appState, child) {
-        final studyMaterials = appState.studyMaterials;
+        final studyMaterials = appState.filteredStudyMaterials;
         final selectedMaterialId = appState.selectedMaterialId;
         final materialRecords = appState.materialRecords;
         final studiedIds = appState.studiedTranslationIds;

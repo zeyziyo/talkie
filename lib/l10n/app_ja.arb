@@ -4,7 +4,7 @@
   "@appTitle": {
     "description": "Application title"
   },
-  "tabReview": "Review ({count})",
+  "tabReview": "復習 ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
     "placeholders": {
@@ -13,7 +13,7 @@
       }
     }
   },
-  "tabStudyMaterial": "Study Material ({count})",
+  "tabStudyMaterial": "学習教材 ({count})",
   "@tabStudyMaterial": {
     "description": "Study material tab label with count",
     "placeholders": {
@@ -22,51 +22,51 @@
       }
     }
   },
-  "mode2Title": "Review",
+  "mode2Title": "復習",
   "@mode2Title": {
     "description": "Mode 2 title for help dialog"
   },
-  "search": "Search",
+  "search": "検索",
   "@search": {
     "description": "Search mode label"
   },
-  "translate": "Translate",
+  "translate": "翻訳",
   "@translate": {
     "description": "Translate button"
   },
-  "listen": "Listen",
+  "listen": "聞く",
   "@listen": {
     "description": "Listen/TTS button"
   },
-  "saveData": "Save Data",
+  "saveData": "保存",
   "@saveData": {
     "description": "Save translation button"
   },
-  "saved": "Saved",
+  "saved": "保存完了",
   "@saved": {
     "description": "Data saved status"
   },
-  "delete": "Delete",
-  "materialInfo": "Material Info",
+  "delete": "削除",
+  "materialInfo": "教材情報",
   "@materialInfo": {
     "description": "Title for material metadata section"
   },
   "@delete": {
     "description": "Delete button"
   },
-  "cancel": "Cancel",
+  "cancel": "キャンセル",
   "@cancel": {
     "description": "Cancel button"
   },
-  "confirm": "OK",
+  "confirm": "確認",
   "@confirm": {
     "description": "Confirm/OK button"
   },
-  "refresh": "Refresh",
+  "refresh": "更新",
   "@refresh": {
     "description": "Refresh button"
   },
-  "studyRecords": "Study Records ({count})",
+  "studyRecords": "学習記録 ({count})",
   "@studyRecords": {
     "description": "Study records title with count",
     "placeholders": {
@@ -75,39 +75,39 @@
       }
     }
   },
-  "targetLanguageFilter": "Target Language Filter:",
+  "targetLanguageFilter": "対象言語フィルタ:",
   "@targetLanguageFilter": {
     "description": "Language filter label"
   },
-  "noRecords": "No study records for selected language",
+  "noRecords": "選択した言語の学習記録がありません",
   "@noRecords": {
     "description": "Empty state message"
   },
-  "saveTranslationsFromSearch": "Save translations from search mode",
+  "saveTranslationsFromSearch": "検索モードから翻訳を保存してください",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
   },
-  "flip": "Show",
+  "flip": "表示",
   "@flip": {
     "description": "Show translation button"
   },
-  "hide": "Hide",
+  "hide": "隠す",
   "@hide": {
     "description": "Hide translation button"
   },
-  "deleteRecord": "Delete Record",
+  "deleteRecord": "記録の削除",
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "confirmDelete": "Are you sure you want to delete this study record?",
+  "confirmDelete": "この学習記録を削除しますか？",
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "recordDeleted": "Record deleted successfully",
+  "recordDeleted": "記録が削除されました",
   "@recordDeleted": {
     "description": "Delete success message"
   },
-  "deleteFailed": "Delete failed: {error}",
+  "deleteFailed": "削除失敗: {error}",
   "@deleteFailed": {
     "description": "Delete error message",
     "placeholders": {
@@ -116,23 +116,23 @@
       }
     }
   },
-  "importJsonFile": "Import JSON File",
+  "importJsonFile": "JSONファイル読込",
   "@importJsonFile": {
     "description": "Import JSON button"
   },
-  "importing": "Importing...",
+  "importing": "読込中...",
   "@importing": {
     "description": "Import in progress"
   },
-  "importComplete": "Import Complete",
+  "importComplete": "読込完了",
   "@importComplete": {
     "description": "Import success title"
   },
-  "importFailed": "Import Failed",
+  "importFailed": "読込失敗",
   "@importFailed": {
     "description": "Import error title"
   },
-  "importFile": "File: {fileName}",
+  "importFile": "ファイル: {fileName}",
   "@importFile": {
     "description": "Imported file name",
     "placeholders": {
@@ -141,7 +141,7 @@
       }
     }
   },
-  "importTotal": "Total: {count} items",
+  "importTotal": "合計: {count}件",
   "@importTotal": {
     "description": "Total import count",
     "placeholders": {
@@ -150,7 +150,7 @@
       }
     }
   },
-  "importAdded": "Added: {count} items",
+  "importAdded": "追加: {count}件",
   "@importAdded": {
     "description": "Successfully imported count",
     "placeholders": {
@@ -159,7 +159,7 @@
       }
     }
   },
-  "importSkipped": "Skipped: {count} items",
+  "importSkipped": "スキップ: {count}件",
   "@importSkipped": {
     "description": "Skipped import count",
     "placeholders": {
@@ -168,15 +168,15 @@
       }
     }
   },
-  "errors": "Errors:",
+  "errors": "エラー:",
   "@errors": {
     "description": "Error section label"
   },
-  "error": "Error",
+  "error": "エラー",
   "@error": {
     "description": "Error dialog title"
   },
-  "importErrorMessage": "Failed to import file:\\n{error}",
+  "importErrorMessage": "ファイルの読み込みに失敗しました:\\n{error}",
   "@importErrorMessage": {
     "description": "Import error message",
     "placeholders": {
@@ -185,23 +185,23 @@
       }
     }
   },
-  "selectStudyMaterial": "Select Study Material",
+  "selectStudyMaterial": "学習教材を選択",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "subject": "Subject:",
+  "subject": "主題:",
   "@subject": {
     "description": "Subject label"
   },
-  "source": "Source:",
+  "source": "出典:",
   "@source": {
     "description": "Source label"
   },
-  "file": "File:",
+  "file": "ファイル:",
   "@file": {
     "description": "File label"
   },
-  "progress": "Progress: {current} / {total}",
+  "progress": "進捗: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
     "placeholders": {
@@ -213,31 +213,31 @@
       }
     }
   },
-  "importJsonFilePrompt": "Please import a JSON file",
+  "importJsonFilePrompt": "JSONファイルを読み込んでください",
   "@importJsonFilePrompt": {
     "description": "Empty state prompt"
   },
-  "selectMaterialPrompt": "Please select a study material",
+  "selectMaterialPrompt": "学習教材を選択してください",
   "@selectMaterialPrompt": {
     "description": "Selection prompt"
   },
-  "studyComplete": "Studied",
+  "studyComplete": "学習完了",
   "@studyComplete": {
     "description": "Study complete button text"
   },
-  "markAsStudied": "Mark as Studied",
+  "markAsStudied": "完了としてマーク",
   "@markAsStudied": {
     "description": "Mark study button text"
   },
-  "listening": "Listening...",
+  "listening": "聞き取り中...",
   "@listening": {
     "description": "STT listening status"
   },
-  "recognized": "Recognition complete",
+  "recognized": "認識完了",
   "@recognized": {
     "description": "STT complete status"
   },
-  "recognitionFailed": "Speech recognition failed: {error}",
+  "recognitionFailed": "音声認識失敗: {error}",
   "@recognitionFailed": {
     "description": "STT error message",
     "placeholders": {
@@ -246,23 +246,23 @@
       }
     }
   },
-  "checking": "Checking...",
+  "checking": "確認中...",
   "@checking": {
     "description": "Checking for duplicates"
   },
-  "translating": "Translating...",
+  "translating": "翻訳中...",
   "@translating": {
     "description": "Translation in progress"
   },
-  "translationComplete": "Translation complete (save required)",
+  "translationComplete": "翻訳完了 (保存してください)",
   "@translationComplete": {
     "description": "Translation done status"
   },
-  "translationLoaded": "Loaded saved translation",
+  "translationLoaded": "保存済みの翻訳を読み込みました",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationFailed": "Translation failed: {error}",
+  "translationFailed": "翻訳失敗: {error}",
   "@translationFailed": {
     "description": "Translation error",
     "placeholders": {
@@ -271,19 +271,19 @@
       }
     }
   },
-  "enterTextToTranslate": "Please enter text to translate",
+  "enterTextToTranslate": "翻訳するテキストを入力してください",
   "@enterTextToTranslate": {
     "description": "Empty input warning"
   },
-  "saving": "Saving...",
+  "saving": "保存中...",
   "@saving": {
     "description": "Save in progress"
   },
-  "noTranslationToSave": "No translation to save",
+  "noTranslationToSave": "保存する翻訳がありません",
   "@noTranslationToSave": {
     "description": "Save error - no data"
   },
-  "saveFailed": "Save failed: {error}",
+  "saveFailed": "保存失敗: {error}",
   "@saveFailed": {
     "description": "Save error message",
     "placeholders": {
@@ -292,15 +292,15 @@
       }
     }
   },
-  "playing": "Playing...",
+  "playing": "再生中...",
   "@playing": {
     "description": "TTS playing status"
   },
-  "noTextToPlay": "No text to play",
+  "noTextToPlay": "再生するテキストがありません",
   "@noTextToPlay": {
     "description": "TTS error - no text"
   },
-  "playbackFailed": "Playback failed: {error}",
+  "playbackFailed": "再生失敗: {error}",
   "@playbackFailed": {
     "description": "TTS error message",
     "placeholders": {
@@ -309,27 +309,27 @@
       }
     }
   },
-  "sourceLanguage": "Source Language",
+  "sourceLanguage": "原文言語",
   "@sourceLanguage": {
     "description": "Source language label"
   },
-  "targetLanguage": "Target Language",
+  "targetLanguage": "翻訳言語",
   "@targetLanguage": {
     "description": "Target language label"
   },
-  "similarTextFound": "Similar text found",
+  "similarTextFound": "類似したテキストが見つかりました",
   "@similarTextFound": {
     "description": "Duplicate detection title"
   },
-  "useExistingText": "Use Existing",
+  "useExistingText": "既存のテキストを使用",
   "@useExistingText": {
     "description": "Use existing text button"
   },
-  "createNew": "Create New Entry",
+  "createNew": "新規作成",
   "@createNew": {
     "description": "Create new entry button"
   },
-  "reviewCount": "Review {count} time(s)",
+  "reviewCount": "復習 {count}回",
   "@reviewCount": {
     "description": "Review count display",
     "placeholders": {
@@ -338,9 +338,9 @@
       }
     }
   },
-  "tabSpeaking": "Speaking",
-  "speakingPractice": "Speaking Practice",
-  "intervalSeconds": "Interval: {seconds}s",
+  "tabSpeaking": "スピーキング",
+  "speakingPractice": "スピーキング練習",
+  "intervalSeconds": "間隔: {seconds}秒",
   "@intervalSeconds": {
     "placeholders": {
       "seconds": {
@@ -348,9 +348,9 @@
       }
     }
   },
-  "yourPronunciation": "Your Pronunciation",
-  "correctAnswer": "Correct Answer",
-  "score": "Accuracy: {score}%",
+  "yourPronunciation": "あなたの発音",
+  "correctAnswer": "正解",
+  "score": "正確さ: {score}%",
   "@score": {
     "placeholders": {
       "score": {
@@ -358,42 +358,42 @@
       }
     }
   },
-  "perfect": "Perfect!",
-  "good": "Good",
-  "tryAgain": "Try Again",
-  "startPractice": "Start Practice",
-  "stopPractice": "Stop Practice",
-  "helpTitle": "Help & Guide",
-  "helpTabModes": "Modes",
-  "helpTabJson": "JSON Format",
-  "helpTabTour": "Tour",
-  "helpMode1Desc": "Recognize voice, translate to target language, and listen to the result.",
-  "helpMode1Details": "• Voice Input: Tap mic icon to start/stop listening\n• Text Input: Type directly to translate\n• Auto-Search: Detects similar existing sentences\n• Translate: Tap button for instant translation\n• Listen: Speaker icon for TTS (Original/Translated)\n• Save: 'Save Data' adds to history\n• Clear: Reset all inputs",
-  "helpMode2Desc": "Review saved sentences with auto-hide translations and track your review count.",
-  "helpMode2Details": "• Select Material: Choose specific set or 'Review All'\n• Flip Card: Use 'Show/Hide' to check translation\n• Listen: Play TTS for specific sentence\n• Mark Studied: Checkmark (V) for completed items\n• Delete: Long-press card to remove record\n• Filter: View all or filter by material",
-  "helpMode3Desc": "Practice speaking by listening to and shadowing sentences.",
-  "helpMode3Details": "• Select Material: Choose learning pack\n• Interval: [-] [+] to adjust wait time (3s-60s)\n• Start/Stop: Control shadowing session\n• Speak: Listen to audio and repeat after it\n• Feedback: Accuracy score (0-100) with color code\n• Retry: Use retry button if voice not detected",
-  "helpJsonDesc": "To import study materials in Mode 3, create a JSON file with the following structure:",
-  "helpTourDesc": "Start the interactive tutorial to learn the main features.",
-  "startTutorial": "Start Tutorial",
-  "tutorialMicTitle": "Voice Input",
-  "tutorialMicDesc": "Tap the mic button to start voice input.",
-  "tutorialTransTitle": "Translate",
-  "tutorialTransDesc": "Tap here to translate your text.",
-  "tutorialSaveTitle": "Save",
-  "tutorialSaveDesc": "Save your translation to study records.",
-  "tutorialM2SelectTitle": "Select & Filter",
-  "tutorialM2SelectDesc": "Choose study materials or switch to 'Review All'.",
-  "tutorialM2ListTitle": "Study List",
-  "tutorialM2ListDesc": "Check your saved cards and flip them to see answers.",
-  "tutorialM3SelectTitle": "Select Material",
-  "tutorialM3SelectDesc": "Choose a material set for speaking practice.",
-  "tutorialM3IntervalTitle": "Interval",
-  "tutorialM3IntervalDesc": "Adjust the waiting time between sentences.",
-  "tutorialM3StartTitle": "Start Practice",
-  "tutorialM3StartDesc": "Tap play to start listening and shadowing.",
-  "startWarning": "Warning",
-  "noVoiceDetected": "No voice detected",
+  "perfect": "完璧です！",
+  "good": "良いですね",
+  "tryAgain": "もう一度",
+  "startPractice": "練習開始",
+  "stopPractice": "練習停止",
+  "helpTitle": "ヘルプ＆ガイド",
+  "helpTabModes": "機能紹介",
+  "helpTabJson": "JSON形式",
+  "helpTabTour": "ツアー",
+  "helpMode1Desc": "音声を認識して翻訳し、結果を聞くことができます。新しい表現を学ぶのに最適です。",
+  "helpMode1Details": "• 音声入力: マイクアイコンをタップして会話を開始/停止\n• テキスト入力: 直接入力して翻訳可能\n• 自動検索: 入力時に類似の既存の文章があれば通知\n• 翻訳: 「翻訳」ボタンですぐに翻訳を実行\n• 聞く: スピーカーアイコンで原文/翻訳文を再生 (TTS)\n• 保存: 「保存」ボタンで学習記録に保存\n• クリア: 「削除」ボタンで入力内容を消去",
+  "helpMode2Desc": "保存された文章を復習します。翻訳を隠して確認し、復習回数を記録しましょう。",
+  "helpMode2Details": "• 教材選択: 上部メニューから学習教材を選択または「全復習」\n• カード裏返し: 「表示/隠す」ボタンで翻訳を確認\n• 聞く: 「聞く」ボタンで該当する文章を再再生\n• 学習チェック: 完了した文章はチェックマーク (V)\n• 削除: カードを長押しすると削除ダイアログを表示\n• フィルタ: 全記録表示または学習教材別に並べ替え",
+  "helpMode3Desc": "学習教材の文章を聞いて、自分で話す練習をします。",
+  "helpMode3Details": "• 教材選択: 学習する教材パックを選択\n• 間隔調整: [-] [+] ボタンで文章間の待機時間を設定 (3秒〜60秒)\n• 開始/停止: 再生ボタンでシャドーイングセッションを制御\n• 話す: ネイティブの音声を聞いて真似て話す\n• フィードバック: 発音の正確さをスコア (0-100) と色で表示 (緑/橙/赤)\n• 再試行: 認識失敗時に再試行ボタンを使用",
+  "helpJsonDesc": "モード3等で学習教材をインポートするには、以下の構造のJSONファイルを使用してください:",
+  "helpTourDesc": "アプリの主な機能を学ぶにはチュートリアルを開始してください。",
+  "startTutorial": "チュートリアル開始",
+  "tutorialMicTitle": "音声入力",
+  "tutorialMicDesc": "マイクボタンをタップして音声で入力できます。",
+  "tutorialTransTitle": "翻訳",
+  "tutorialTransDesc": "入力したテキストを翻訳します。",
+  "tutorialSaveTitle": "保存",
+  "tutorialSaveDesc": "翻訳結果を学習記録に保存します。",
+  "tutorialM2SelectTitle": "選択とフィルタ",
+  "tutorialM2SelectDesc": "学習する教材を選択するか、全復習モードに切り替えます。",
+  "tutorialM2ListTitle": "学習リスト",
+  "tutorialM2ListDesc": "保存されたカードを確認し、裏返して正解を確認します。",
+  "tutorialM3SelectTitle": "教材選択",
+  "tutorialM3SelectDesc": "スピーキング練習を行う教材セットを選択してください。",
+  "tutorialM3IntervalTitle": "間隔設定",
+  "tutorialM3IntervalDesc": "文章間の待機時間を調整します。",
+  "tutorialM3StartTitle": "練習開始",
+  "tutorialM3StartDesc": "再生ボタンを押してネイティブ音声を聞き、続いて発音してください。",
+  "startWarning": "注意",
+  "noVoiceDetected": "音声が検出されませんでした",
   "tutorialTabDesc": "ここで希望する学習モードを選択できます。",
   "tutorialTapToContinue": "タップして続ける",
   "tooltipSearch": "検索",
@@ -402,6 +402,8 @@
   "tooltipDecrease": "減少",
   "tooltipIncrease": "増加",
   "languageSettings": "言語設定",
-  "tutorialM2DropdownDesc": "学習資料を選択します。",
-  "tutorialM2ImportDesc": "デバイスのフォルダからJSONファイルを読み込みます。"
+  "tutorialM2DropdownDesc": "学習教材を選択します。",
+  "tutorialM2ImportDesc": "デバイスのフォルダからJSONファイルを読み込みます。",
+  "copy": "コピー",
+  "copiedToClipboard": "クリップボードにコピーしました！"
 }

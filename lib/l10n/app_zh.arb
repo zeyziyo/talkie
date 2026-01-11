@@ -116,5 +116,7 @@
   "tooltipIncrease": "增加",
   "languageSettings": "语言设置",
   "tutorialM2DropdownDesc": "选择学习资料。",
-  "tutorialM2ImportDesc": "从设备文件夹导入JSON文件。"
+  "tutorialM2ImportDesc": "从设备文件夹导入JSON文件。",
+  "copy": "复制",
+  "copiedToClipboard": "已复制到剪贴板！"
 }

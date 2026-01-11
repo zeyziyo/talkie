@@ -56,7 +56,7 @@ class Mode3Widget extends StatelessWidget {
                       ),
                       contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                     ),
-                    items: appState.studyMaterials.map((material) {
+                    items: appState.filteredStudyMaterials.map((material) {
                       return DropdownMenuItem<int>(
                         value: material['id'] as int,
                         child: Text(

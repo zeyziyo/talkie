@@ -63,63 +63,79 @@ class AppState extends ChangeNotifier {
   int? get selectedMaterialId => _selectedMaterialId;
   List<Map<String, dynamic>> get materialRecords => _materialRecords;
   Set<int> get studiedTranslationIds => _studiedTranslationIds;
+
+  /// Get study materials filtered by current source/target languages
+  List<Map<String, dynamic>> get filteredStudyMaterials {
+    return _studyMaterials.where((material) {
+      final id = material['id'] as int;
+      if (id == 0) return true; // Always show default material (container)
+
+      final mSource = material['source_language'] as String;
+      final mTarget = material['target_language'] as String;
+
+      // Show if languages match current app settings
+      // Also handle 'auto' fallback just in case
+      return (mSource == _sourceLang && mTarget == _targetLang) ||
+             (mSource == 'auto' && mTarget == 'auto');
+    }).toList();
+  }
   
   // Language display names (Native + Korean name)
   static const Map<String, String> languageNames = {
     // East Asian
-    'ko': '한국어',
-    'ja': '日本語 (일본어)',
-    'zh-CN': '中文简体 (중국어 간체)',
-    'zh-TW': '中文繁體 (중국어 번체)',
+    'ko': '한국어 (Korean)',
+    'ja': '日本語 (Japanese)',
+    'zh-CN': '中文简体 (Chinese Simplified)',
+    'zh-TW': '中文繁體 (Chinese Traditional)',
     
     // South Asian
-    'hi': 'हिन्दी (힌디어)',
-    'bn': 'বাংলা (벵골어)',
-    'ta': 'தமிழ் (타밀어)',
-    'te': 'తెలుగు (텔루구어)',
-    'mr': 'मराठी (마라티어)',
-    'ur': 'اردو (우르두어)',
-    'gu': 'ગુજરાતી (구자라트어)',
-    'kn': 'ಕನ್ನಡ (칸나다어)',
-    'ml': 'മലയാളം (말라얄람어)',
-    'pa': 'ਪੰਜਾਬੀ (펀자브어)',
+    'hi': 'हिन्दी (Hindi)',
+    'bn': 'বাংলা (Bengali)',
+    'ta': 'தமிழ் (Tamil)',
+    'te': 'తెలుగు (Telugu)',
+    'mr': 'मराठी (Marathi)',
+    'ur': 'اردو (Urdu)',
+    'gu': 'ગુજરાતી (Gujarati)',
+    'kn': 'ಕನ್ನಡ (Kannada)',
+    'ml': 'മലയാളം (Malayalam)',
+    'pa': 'ਪੰਜਾਬੀ (Punjabi)',
     
     // European
-    'en': 'English (영어)',
-    'es': 'Español (스페인어)',
-    'fr': 'Français (프랑스어)',
-    'de': 'Deutsch (독일어)',
-    'it': 'Italiano (이탈리아어)',
-    'pt': 'Português (포르투갈어)',
-    'ru': 'Русский (러시아어)',
-    'pl': 'Polski (폴란드어)',
-    'uk': 'Українська (우크라이나어)',
-    'nl': 'Nederlands (네덜란드어)',
-    'el': 'Ελληνικά (그리스어)',
-    'cs': 'Čeština (체코어)',
-    'ro': 'Română (루마니아어)',
-    'sv': 'Svenska (스웨덴어)',
-    'da': 'Dansk (덴마크어)',
-    'fi': 'Suomi (핀란드어)',
-    'no': 'Norsk (노르웨이어)',
-    'hu': 'Magyar (헝가리어)',
+    'en': 'English (English)',
+    'es': 'Español (Spanish)',
+    'fr': 'Français (French)',
+    'de': 'Deutsch (German)',
+    'it': 'Italiano (Italian)',
+    'pt': 'Português (Portuguese)',
+    'ru': 'Русский (Russian)',
+    'pl': 'Polski (Polish)',
+    'uk': 'Українська (Ukrainian)',
+    'nl': 'Nederlands (Dutch)',
+    'el': 'Ελληνικά (Greek)',
+    'cs': 'Čeština (Czech)',
+    'ro': 'Română (Romanian)',
+    'sv': 'Svenska (Swedish)',
+    'da': 'Dansk (Danish)',
+    'fi': 'Suomi (Finnish)',
+    'no': 'Norsk (Norwegian)',
+    'hu': 'Magyar (Hungarian)',
     
     // Southeast Asian
-    'id': 'Bahasa Indonesia (인도네시아어)',
-    'vi': 'Tiếng Việt (베트남어)',
-    'th': 'ไทย (태국어)',
-    'fil': 'Filipino (필리핀어)',
-    'ms': 'Bahasa Melayu (말레이어)',
+    'id': 'Bahasa Indonesia (Indonesian)',
+    'vi': 'Tiếng Việt (Vietnamese)',
+    'th': 'ไทย (Thai)',
+    'fil': 'Filipino (Filipino)',
+    'ms': 'Bahasa Melayu (Malay)',
     
     // Middle Eastern
-    'ar': 'العربية (아랍어)',
-    'tr': 'Türkçe (터키어)',
-    'fa': 'فارسی (페르시아어)',
-    'he': 'עברית (히브리어)',
+    'ar': 'العربية (Arabic)',
+    'tr': 'Türkçe (Turkish)',
+    'fa': 'فارسی (Persian)',
+    'he': 'עברית (Hebrew)',
     
     // African
-    'sw': 'Kiswahili (스와힐리어)',
-    'af': 'Afrikaans (아프리칸스어)',
+    'sw': 'Kiswahili (Swahili)',
+    'af': 'Afrikaans (Afrikaans)',
   };
   
   // ==========================================
@@ -458,11 +474,15 @@ class AppState extends ChangeNotifier {
     _sourceLang = lang;
     // Reset selected source when language changes
     _selectedSourceId = null;
+    // Reset material to default to avoid filtering mismatch
+    _selectedMaterialId = 0;
     notifyListeners();
   }
   
   void setTargetLang(String lang) {
     _targetLang = lang;
+    // Reset material to default to avoid filtering mismatch
+    _selectedMaterialId = 0;
     notifyListeners();
   }
   
@@ -609,10 +629,23 @@ class AppState extends ChangeNotifier {
       if (result['success'] == true) {
         await loadStudyMaterials();
         
-        // Auto-select the newly imported material
+        // Auto-select the newly imported material ONLY if it matches current languages
         final materialId = result['material_id'] as int?;
         if (materialId != null) {
-          await selectMaterial(materialId);
+          final newMat = _studyMaterials.firstWhere(
+            (m) => m['id'] == materialId,
+            orElse: () => {},
+          );
+          
+          if (newMat.isNotEmpty) {
+            final mSource = newMat['source_language'] as String;
+            final mTarget = newMat['target_language'] as String;
+            
+            if ((mSource == _sourceLang && mTarget == _targetLang) || 
+                (mSource == 'auto' && mTarget == 'auto')) {
+              await selectMaterial(materialId);
+            }
+          }
         }
       }
       
