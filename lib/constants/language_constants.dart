@@ -583,3 +583,5 @@ class LanguageConstants {
       'id': 'Indonéz', 'vi': 'Vietnámi', 'th': 'Thai', 'fil': 'Filippínó', 'ms': 'Maláj',
       'ar': 'Arab', 'tr': 'Török', 'fa': 'Perzsa', 'he': 'Héber', 'sw': 'Szuahéli', 'af': 'Afrikaans',
     },
+  };
+}
