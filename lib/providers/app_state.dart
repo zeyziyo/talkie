@@ -82,8 +82,9 @@ class AppState extends ChangeNotifier {
   }
   
   // Language display names (Dynamic)
+  // ALWAYS return English names as per user request to ensure readability
   Map<String, String> get languageNames => 
-      LanguageConstants.getLanguageMap(_sourceLang);
+      LanguageConstants.getLanguageMap('en');
 
   
   // ==========================================
@@ -98,6 +99,12 @@ class AppState extends ChangeNotifier {
       loadStudyMaterials();
     } else if (mode == 2) {
       // Speaking Mode (Mode 3)
+      loadStudyMaterials(); // Ensure materials are loaded
+      
+      // Auto-select first material if none selected
+      if (_studyMaterials.isNotEmpty && _selectedMaterialId == null) {
+        selectMaterial(_studyMaterials.first['id'] as int);
+      }
     }
     
     notifyListeners();
@@ -422,15 +429,41 @@ class AppState extends ChangeNotifier {
     _sourceLang = lang;
     // Reset selected source when language changes
     _selectedSourceId = null;
-    // Reset material to default to avoid filtering mismatch
-    _selectedMaterialId = 0;
+    
+    // Cleanup: Consistency check (Mode 1, 2, 3)
+    // 1. Clear Mode 1 text
+    clearTexts();
+    
+    // 2. Clear Mode 2 records (incompatible source)
+    _studyRecords = []; 
+    
+    // 3. Reset Mode 3 (incompatible source)
+    selectMaterial(null);
+    loadStudyMaterials(); // Refresh availability
+    
     notifyListeners();
   }
   
   void setTargetLang(String lang) {
     _targetLang = lang;
-    // Reset material to default to avoid filtering mismatch
-    _selectedMaterialId = 0;
+    
+    // Sync Review Tab Filter
+    _selectedReviewLanguage = lang;
+    
+    // Cleanup: Consistency check
+    // 1. Clear Mode 1 translation (output invalid)
+    // We can keep source text, but maybe clearer to reset? 
+    // Usually changing target while having source text is fine, just re-translate.
+    // But keeping it simple as per plan: clear texts.
+    clearTexts();
+    
+    // 2. Reload Mode 2 records (new target)
+    loadStudyRecords();
+    
+    // 3. Reset Mode 3 (incompatible target)
+    selectMaterial(null); 
+    loadStudyMaterials(); // Refresh availability
+    
     notifyListeners();
   }
   
@@ -505,6 +538,22 @@ class AppState extends ChangeNotifier {
   /// Select a study material and load its records
   Future<void> selectMaterial(int? materialId) async {
     _selectedMaterialId = materialId;
+    
+    // Reset Mode 3 State when material changes
+    _currentMode3Question = null;
+    _mode3UserAnswer = '';
+    _mode3Score = null;
+    _mode3Feedback = '';
+    _mode3SessionActive = false;
+    _mode3CompletedQuestionIds.clear(); // Optional: Clear history for clean start? Or keep?
+    // Let's keep history if we switch back? No, user usually expects fresh context.
+    // However, if they accidentally switch, they lose progress. 
+    // But the request says "initialize state", implying clean slate.
+    // Let's clear visual state but maybe keep completed IDs? 
+    // The user requirement "Result area should clear" is visual.
+    // Let's clear visual state.
+    _cancelMode3Timers();
+    
     if (materialId != null) {
       if (materialId == -1) {
         // Load ALL records (Review Mode functionality integrated here)
@@ -515,6 +564,19 @@ class AppState extends ChangeNotifier {
     } else {
       _materialRecords = [];
     }
+    notifyListeners();
+  }
+
+  /// Reset practice progress for current session
+  void resetMode3Progress() {
+    _mode3CompletedQuestionIds.clear();
+    _currentMode3Question = null;
+    _mode3UserAnswer = '';
+    _mode3Score = null;
+    _mode3Feedback = '';
+    _mode3SessionActive = false;
+    _cancelMode3Timers();
+    _statusMessage = '연습 기록이 초기화되었습니다.';
     notifyListeners();
   }
 
