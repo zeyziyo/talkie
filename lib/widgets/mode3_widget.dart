@@ -145,24 +145,28 @@ class Mode3Widget extends StatelessWidget {
                 padding: const EdgeInsets.all(24.0),
                 child: currentQuestion == null
                     ? Center(
-                        child: Text(
-                          appState.studyMaterials.isEmpty
-                              ? l10n.importJsonFilePrompt
-                              : l10n.startPractice, 
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.grey[400], fontSize: 18),
-                        ),
-                        if (appState.studyMaterials.isNotEmpty)
-                          Padding(
-                            padding: const EdgeInsets.only(top: 16.0),
-                            child: TextButton.icon(
-                              onPressed: () => appState.resetMode3Progress(),
-                              icon: const Icon(Icons.refresh, color: Colors.grey),
-                              label: const Text('연습 기록 초기화', style: TextStyle(color: Colors.grey)),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              appState.studyMaterials.isEmpty
+                                  ? l10n.importJsonFilePrompt
+                                  : l10n.startPractice, 
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.grey[400], fontSize: 18),
                             ),
-                          ),
-                      ],
-                    )
+                            if (appState.studyMaterials.isNotEmpty)
+                              Padding(
+                                padding: const EdgeInsets.only(top: 16.0),
+                                child: TextButton.icon(
+                                  onPressed: () => appState.resetMode3Progress(),
+                                  icon: const Icon(Icons.refresh, color: Colors.grey),
+                                  label: const Text('연습 기록 초기화', style: TextStyle(color: Colors.grey)),
+                                ),
+                              ),
+                          ],
+                        ),
+                      )
                   : Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
