@@ -24,7 +24,14 @@ class SpeechService {
     try {
       final available = await _speechToText.initialize(
         onError: (error) => print('STT Error: $error'),
-        onStatus: (status) => print('STT Status: $status'),
+        onStatus: (status) async {
+          print('STT Status: $status');
+          // Fix: Automatically reset audio session when listening stops naturally
+          if (status == 'done' || status == 'notListening') {
+            await _configureForPlayback();
+            _isListening = false;
+          }
+        },
       );
       
       if (!available) {
