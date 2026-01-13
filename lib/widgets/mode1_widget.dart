@@ -81,6 +81,23 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
+                        // Status Message
+                        if (appState.statusMessage.isNotEmpty)
+                          Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                            margin: const EdgeInsets.only(bottom: 16),
+                            decoration: BoxDecoration(
+                              color: Colors.amber.shade100,
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(color: Colors.amber.shade300),
+                            ),
+                            child: Text(
+                              appState.statusMessage,
+                              style: TextStyle(color: Colors.brown.shade800),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
 
                         const SizedBox(height: 24),
                         

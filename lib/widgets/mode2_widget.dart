@@ -83,6 +83,24 @@ class _Mode2WidgetState extends State<Mode2Widget> {
 
         return Column(
           children: [
+            // Status Message
+            if (appState.statusMessage.isNotEmpty)
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                margin: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                decoration: BoxDecoration(
+                  color: Colors.amber.shade100,
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: Colors.amber.shade300),
+                ),
+                child: Text(
+                  appState.statusMessage,
+                  style: TextStyle(color: Colors.brown.shade800),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+
             // Material selector
             Container(
               key: widget.materialDropdownKey,
