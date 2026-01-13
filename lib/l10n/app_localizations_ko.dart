@@ -395,4 +395,10 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => '기기의 폴더에서 JSON 파일을 불러옵니다.';
+
+  @override
+  String get copy => '복사';
+
+  @override
+  String get copiedToClipboard => '클립보드에 복사되었습니다!';
 }

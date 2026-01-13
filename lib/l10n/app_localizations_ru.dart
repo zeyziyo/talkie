@@ -405,4 +405,10 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'Импортировать JSON-файл из папки устройства.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

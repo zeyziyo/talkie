@@ -405,4 +405,10 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'ಸಾಧನ ಫೋಲ್ಡರ್‌ನಿಂದ JSON ಫೈಲ್ ಆಮದು ಮಾಡಿ.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

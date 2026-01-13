@@ -395,6 +395,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => '从设备文件夹导入JSON文件。';
+
+  @override
+  String get copy => '复制';
+
+  @override
+  String get copiedToClipboard => '已复制到剪贴板！';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).

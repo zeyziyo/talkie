@@ -402,4 +402,10 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'Nhập tệp JSON từ thư mục thiết bị.';
+
+  @override
+  String get copy => 'Sao chép';
+
+  @override
+  String get copiedToClipboard => 'Đã sao chép vào bộ nhớ tạm!';
 }

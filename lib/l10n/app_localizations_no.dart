@@ -399,4 +399,10 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'Importer JSON-fil fra enhetsmappe.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

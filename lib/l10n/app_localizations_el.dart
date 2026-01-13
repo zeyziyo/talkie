@@ -404,4 +404,10 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'Εισαγωγή αρχείου JSON από φάκελο συσκευής.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

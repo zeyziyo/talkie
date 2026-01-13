@@ -410,4 +410,10 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'சாதன கோப்புறையிலிருந்து JSON கோப்பை இறக்குமதி செய்யவும்.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

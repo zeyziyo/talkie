@@ -401,4 +401,10 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'ઉપકરણ ફોલ્ડરમાંથી JSON ફાઇલ આયાત કરો.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

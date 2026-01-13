@@ -400,4 +400,10 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'Leta faili ya JSON kutoka kwenye folda ya kifaa.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

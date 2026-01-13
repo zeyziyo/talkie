@@ -402,4 +402,10 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'डिव्हाइस फोल्डरमधून JSON फाइल आयात करा.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

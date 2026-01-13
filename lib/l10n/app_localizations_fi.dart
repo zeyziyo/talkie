@@ -399,4 +399,10 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'Tuo JSON-tiedosto laitteen kansiosta.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

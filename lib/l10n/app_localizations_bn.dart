@@ -404,4 +404,10 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'ডিভাইস ফোল্ডার থেকে JSON ফাইল আমদানি করুন।';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

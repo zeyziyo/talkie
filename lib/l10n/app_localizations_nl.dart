@@ -401,4 +401,10 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'Importeer JSON-bestand uit apparaatmap.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

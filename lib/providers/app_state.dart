@@ -31,6 +31,7 @@ class AppState extends ChangeNotifier {
   List<Map<String, dynamic>> _similarSources = [];
   int? _selectedSourceId; // null = new entry
   bool _showDuplicateDialog = false;
+  bool _duplicateCheckTriggered = false; // Flag to prevent repeated checks
   
   // Mode 2 (복습) State
   List<Map<String, dynamic>> _studyRecords = [];
@@ -182,7 +183,10 @@ class AppState extends ChangeNotifier {
   void createNewSource() {
     _selectedSourceId = null;
     _showDuplicateDialog = false;
+    _duplicateCheckTriggered = true; // Skip check since user explicitly chose new
     notifyListeners();
+    // Auto-resume translation
+    translate();
   }
   
   /// Close duplicate dialog
@@ -204,6 +208,23 @@ class AppState extends ChangeNotifier {
       _statusMessage = '확인 중...';
       notifyListeners();
       
+      // 0. Duplicate Check (Triggered ONLY once per text change)
+      // Check only if:
+      // - Creating new entry (selectedSourceId == null)
+      // - Not yet checked (_duplicateCheckTriggered == false)
+      if (_selectedSourceId == null && !_duplicateCheckTriggered) {
+        await searchSimilarSources(_sourceText);
+        
+        if (_similarSources.isNotEmpty) {
+          _isTranslating = false;
+          _duplicateCheckTriggered = true; // Mark as checked so next attempt skips
+          _statusMessage = '유사한 문장이 발견되었습니다';
+          // _showDuplicateDialog is set to true by searchSimilarSources
+          notifyListeners();
+          return; // Halt translation to show dialog
+        }
+      }
+
       // 1. Save or reuse source text
       int sourceId;
       if (_selectedSourceId != null) {
@@ -422,11 +443,13 @@ class AppState extends ChangeNotifier {
   
   void setSourceText(String text) {
     _sourceText = text;
+    _duplicateCheckTriggered = false; // Reset check when text changes
     notifyListeners();
   }
   
   void setSourceLang(String lang) {
     _sourceLang = lang;
+    _duplicateCheckTriggered = false; // Reset check
     // Reset selected source when language changes
     _selectedSourceId = null;
     
@@ -474,6 +497,7 @@ class AppState extends ChangeNotifier {
     _selectedSourceId = null;
     _similarSources = [];
     _showDuplicateDialog = false;
+    _duplicateCheckTriggered = false;
     _isSaved = false; // Reset save state
     notifyListeners();
   }

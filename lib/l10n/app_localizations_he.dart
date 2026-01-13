@@ -395,4 +395,10 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'ייבא קובץ JSON מתיקיית המכשיר.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

@@ -128,10 +128,6 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                   controller: _sourceTextController,
                                   onChanged: (value) {
                                     appState.setSourceText(value);
-                                    // Auto-search for similar sources when text changes
-                                    if (value.trim().isNotEmpty) {
-                                      appState.searchSimilarSources(value);
-                                    }
                                   },
                                   decoration: InputDecoration(
                                     hintText: l10n.enterTextToTranslate,

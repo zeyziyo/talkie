@@ -401,4 +401,10 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'فایل JSON را از پوشه دستگاه وارد کنید.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

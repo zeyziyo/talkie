@@ -400,4 +400,10 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'Importera JSON-fil från enhetsmapp.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

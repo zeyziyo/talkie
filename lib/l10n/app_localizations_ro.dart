@@ -402,4 +402,10 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'Importați fișier JSON din folderul dispozitivului.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

@@ -404,4 +404,10 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'Cihaz klasöründen JSON dosyası içe aktarın.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

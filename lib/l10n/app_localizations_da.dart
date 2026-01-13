@@ -397,4 +397,10 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'Importer JSON-fil fra enhedsmappe.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

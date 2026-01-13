@@ -407,4 +407,10 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'ഉപകരണ ഫോൾഡറിൽ നിന്ന് JSON ഫയൽ ഇറക്കുമതി ചെയ്യുക.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

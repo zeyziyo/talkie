@@ -411,4 +411,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'JSON-Datei aus Geräteordner importieren.';
+
+  @override
+  String get copy => 'Kopieren';
+
+  @override
+  String get copiedToClipboard => 'In die Zwischenablage kopiert!';
 }

@@ -408,4 +408,10 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'Mag-import ng JSON file mula sa folder ng device.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

@@ -406,4 +406,10 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'పరికర ఫోల్డర్ నుండి JSON ఫైల్‌ను దిగుమతి చేయండి.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

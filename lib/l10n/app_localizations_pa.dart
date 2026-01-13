@@ -402,4 +402,10 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'ਡਿਵਾਈਸ ਫੋਲਡਰ ਤੋਂ JSON ਫਾਈਲ ਆਯਾਤ ਕਰੋ।';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

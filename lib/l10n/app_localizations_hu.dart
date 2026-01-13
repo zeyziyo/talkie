@@ -403,4 +403,10 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'JSON fájl importálása az eszköz mappájából.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

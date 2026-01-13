@@ -408,4 +408,10 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'डिवाइस फ़ोल्डर से JSON फ़ाइल आयात करें।';
+
+  @override
+  String get copy => 'कॉपी करें';
+
+  @override
+  String get copiedToClipboard => 'क्लिपबोर्ड पर कॉपी किया गया!';
 }

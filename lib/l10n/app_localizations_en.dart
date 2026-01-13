@@ -407,4 +407,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'Import JSON file from device folder.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

@@ -398,4 +398,10 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get tutorialM2ImportDesc =>
       'Importovat soubor JSON ze složky zařízení.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

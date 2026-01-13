@@ -152,11 +152,14 @@ class SpeechService {
   }
   
   /// Stop speech-to-text recognition
-  void stopSTT() {
+  Future<void> stopSTT() async {
     if (!_isListening) return;
     
-    _speechToText.stop();
+    await _speechToText.stop();
     _isListening = false;
+    
+    // Critical: Reset audio session to media mode so volume buttons work correctly
+    await _configureForPlayback();
   }
   
   /// Speak text using TTS

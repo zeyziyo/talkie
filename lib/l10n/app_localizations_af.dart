@@ -397,4 +397,10 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'Voer JSON-lêer in vanaf toestelgids.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

@@ -272,6 +272,7 @@ class DatabaseService {
   }
   
   /// 유사 텍스트 검색 (Fuzzy matching using LIKE)
+  /// 유사 텍스트 검색 (Stricter: ~1 word difference)
   static Future<List<Map<String, dynamic>>> searchSimilarText(
     String langCode,
     String text,
@@ -289,56 +290,63 @@ class DatabaseService {
       return [];
     }
     
-    // 공백으로 단어 분리
-    final words = text.trim().split(RegExp(r'\s+'));
+    // 공백으로 단어 분리 및 소문자 정규화
+    final inputWords = text.trim().toLowerCase().split(RegExp(r'\s+'));
+    if (inputWords.isEmpty) return [];
     
-    // LIKE 패턴 생성: 각 단어가 포함된 레코드 찾기
+    // 1. Broad Search: 입력된 단어 중 하나라도 포함된 레코드 가져오기 (후보군 선정)
+    // LIKE 패턴 생성
     String whereClause = '';
     List<String> whereArgs = [];
     
-    for (int i = 0; i < words.length; i++) {
-      if (i > 0) whereClause += ' OR ';
+    for (int i = 0; i < inputWords.length; i++) {
+      if (inputWords[i].length < 2) continue; // 너무 짧은 단어 제외
+      if (i > 0 && whereClause.isNotEmpty) whereClause += ' OR ';
       whereClause += 'text LIKE ?';
-      whereArgs.add('%${words[i]}%');
+      whereArgs.add('%${inputWords[i]}%');
     }
     
-    // 유사도 계산을 위해 모든 매칭 레코드 가져오기
-    final results = await db.query(
+    // 검색할 단어가 없으면 빈 리스트 반환
+    if (whereClause.isEmpty) return [];
+    
+    final candidates = await db.query(
       tableName,
       where: whereClause,
       whereArgs: whereArgs,
-      limit: 10, // 최대 10개까지만
+      limit: 50, // 후보군 최대 50개
     );
     
-    // 유사도 점수 계산 및 정렬
-    final scored = results.map((record) {
+    // 2. Strict Filter: 단어 집합 차이가 2 이하인 경우만 선택 (Insertion, Deletion, Substitution of 1 word)
+    final inputSet = inputWords.toSet();
+    
+    final results = candidates.map((record) {
       final recordText = record['text'] as String;
-      int score = 0;
+      final recordWords = recordText.trim().toLowerCase().split(RegExp(r'\s+'));
+      final recordSet = recordWords.toSet();
       
-      // 정확히 일치하면 최고 점수
-      if (recordText.toLowerCase() == text.toLowerCase()) {
-        score = 1000;
-      } else {
-        // 일치하는 단어 개수로 점수 계산
-        for (var word in words) {
-          if (recordText.toLowerCase().contains(word.toLowerCase())) {
-            score += 10;
-          }
-        }
-        // 길이 차이 패널티
-        score -= (recordText.length - text.length).abs();
-      }
+      // 교집합 계산
+      final intersection = inputSet.intersection(recordSet).length;
       
-      return {'record': record, 'score': score};
+      // 차집합 크기 합 (Symmetric Difference Size)
+      // (A - B) + (B - A)
+      // = (A.size - inter) + (B.size - inter)
+      final diff = (inputSet.length - intersection) + (recordSet.length - intersection);
+      
+      return {'record': record, 'diff': diff};
+    }).where((item) {
+      // 차이가 2 이하인 경우만 허용 (단어 1개 변경/추가/삭제 허용)
+      // 단, 완전히 똑같은 경우(diff=0)는 제외 (이미 중복 체크 insertLanguage에서 걸러짐, 하지만 여기서도 포함해서 보여주는게 나을수도?)
+      // 사용자가 "완전 끝난 후"라고 했으므로 0도 포함하여 알림
+      return (item['diff'] as int) <= 2; 
     }).toList();
     
-    // 점수로 정렬
-    scored.sort((a, b) => (b['score'] as int).compareTo(a['score'] as int));
+    // 차이가 적은 순으로 정렬
+    results.sort((a, b) => (a['diff'] as int).compareTo(b['diff'] as int));
     
     // 상위 3개만 반환
-    final topResults = scored.take(3).map((item) => item['record'] as Map<String, dynamic>).toList();
+    final topResults = results.take(3).map((item) => item['record'] as Map<String, dynamic>).toList();
     
-    print('[DB] Found ${topResults.length} similar texts in $tableName');
+    print('[DB] Found ${topResults.length} similar texts (strict) in $tableName');
     return topResults;
   }
   

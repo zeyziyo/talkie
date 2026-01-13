@@ -400,4 +400,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'استيراد ملف JSON من مجلد الجهاز.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

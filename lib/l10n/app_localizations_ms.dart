@@ -400,4 +400,10 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'Import fail JSON dari folder peranti.';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }

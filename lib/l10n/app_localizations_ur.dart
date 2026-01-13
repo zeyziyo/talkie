@@ -399,4 +399,10 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get tutorialM2ImportDesc => 'ڈیوائس فولڈر سے JSON فائل درآمد کریں۔';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard!';
 }
