@@ -1,6 +1,10 @@
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:audio_session/audio_session.dart';
+import 'dart:io';
+import 'dart:typed_data';
+import 'package:path_provider/path_provider.dart';
+import 'package:path/path.dart' as path;
 
 /// Speech service for STT and TTS across platforms
 class SpeechService {
@@ -92,7 +96,7 @@ class SpeechService {
           flags: AndroidAudioFlags.none,
           usage: AndroidAudioUsage.media,
         ),
-        androidAudioFocusGainType: AndroidAudioFocusGainType.gain,
+        androidAudioFocusGainType: AndroidAudioFocusGainType.gainTransientMayDuck, // Better for TTS
         androidWillPauseWhenDucked: false,
       ));
 
@@ -184,9 +188,36 @@ class SpeechService {
       // Configuration for playback
       await _configureForPlayback();
       
+      // Check if language is available
+      bool isAvailable = await _flutterTts.isLanguageAvailable(lang);
+      if (!isAvailable) {
+        print('TTS Language not available: $lang');
+        
+        // Try fallback to base language (e.g. 'ko-KR' -> 'ko')
+        if (lang.contains('-')) {
+          final baseLang = lang.split('-')[0];
+          if (await _flutterTts.isLanguageAvailable(baseLang)) {
+            print('Falling back to: $baseLang');
+            lang = baseLang; // Use base language
+          } else {
+             // If base language also failed, try English as last resort or just return?
+             // Returning might be better than speaking English for Korean text.
+             // But let's try to proceed, maybe 'en-US' can pronounce some things?
+             // No, that's bad UX. Just return.
+             print('TTS Language and fallback unavailable.');
+             return;
+          }
+        } else {
+           return;
+        }
+      }
+
       await _flutterTts.setLanguage(lang);
       await _flutterTts.setSpeechRate(slow ? 0.3 : 0.5);
       await _flutterTts.setVolume(1.0);
+      
+      // Small delay to ensure audio session is ready
+      await Future.delayed(const Duration(milliseconds: 100));
 
       await _flutterTts.speak(text);
     } catch (e) {
@@ -194,6 +225,84 @@ class SpeechService {
     }
   }
   
+  /// Synthesize text to audio file and return bytes
+  Future<Uint8List?> synthesizeToByteArray(String text, String lang) async {
+    try {
+      if (!_isInitialized) await initialize();
+
+      // Ensure language is set (added fallback check from speak method)
+       bool isAvailable = await _flutterTts.isLanguageAvailable(lang);
+      if (!isAvailable && lang.contains('-')) {
+          final baseLang = lang.split('-')[0];
+          if (await _flutterTts.isLanguageAvailable(baseLang)) {
+            lang = baseLang;
+          } else {
+             return null;
+          }
+      }
+
+      await _flutterTts.setLanguage(lang);
+      
+      // Use a unique filename
+      String fileName = 'tts_${DateTime.now().millisecondsSinceEpoch}.wav';
+      String filePath = '';
+
+      if (Platform.isAndroid) {
+        // Android: flutter_tts saves to getExternalFilesDir(null)
+        final dir = await getExternalStorageDirectory();
+        if (dir != null) {
+           filePath = path.join(dir.path, fileName);
+           // flutter_tts expects just the filename for Android
+           await _flutterTts.synthesizeToFile(text, fileName);
+        } else {
+           // Fallback if external storage is null (unlikely but possible)
+           return null;
+        }
+      } else if (Platform.isIOS) {
+        // iOS: flutter_tts saves to NSDocumentDirectory
+        final dir = await getApplicationDocumentsDirectory();
+        filePath = path.join(dir.path, fileName);
+        // iOS expects just the filename too usually, but let's check
+        // flutter_tts ios implementation: uses `NSSearchPathForDirectoriesInDomains(NSDocumentDirectory...`
+        await _flutterTts.synthesizeToFile(text, fileName);
+      } else {
+        return null; // Not supported on other platforms yet
+      }
+      
+      final file = File(filePath);
+      
+      // Wait for file to exist (polling)
+      int attempts = 0;
+      while (!await file.exists() && attempts < 20) {
+        await Future.delayed(const Duration(milliseconds: 100));
+        attempts++;
+      }
+      
+      if (await file.exists()) {
+        // Wait a small extra buffer to ensure write completion
+        await Future.delayed(const Duration(milliseconds: 100));
+        
+        final bytes = await file.readAsBytes();
+        
+        // Clean up
+        try {
+          await file.delete();
+        } catch (e) {
+          print('Error deleting temp TTS file: $e');
+        }
+        
+        return bytes;
+      }
+      
+      print('TTS File generated but not found at: $filePath');
+      return null;
+
+    } catch (e) {
+      print('Synthesize Error: $e');
+      return null;
+    }
+  }
+
   /// Stop TTS playback
   Future<void> stopSpeaking() async {
     await _flutterTts.stop();

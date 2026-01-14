@@ -298,6 +298,26 @@ class AppState extends ChangeNotifier {
         _targetLang,
         _translatedText,
       );
+
+      // 1.5 Generate and Save Audio for Target (Voice Storage)
+      // This runs in parallel or background to not block UI too much?
+      // But user expects "saved" status. Let's await it or do it quickly.
+      try {
+         final audioBytes = await _speechService.synthesizeToByteArray(
+           _translatedText, 
+           _getLangCode(_targetLang)
+         );
+         
+         if (audioBytes != null) {
+           await DatabaseService.saveAudioFile(_targetLang, targetId, audioBytes);
+           debugPrint('[AppState] Saved audio for target text');
+         } else {
+           debugPrint('[AppState] Failed to generate audio bytes');
+         }
+      } catch (e) {
+        debugPrint('[AppState] Error saving audio: $e');
+        // Don't fail the whole save if audio fails
+      }
       
       // 1.5 Get default material ID (0)
       final materialId = await DatabaseService.getOrCreateDefaultMaterial();
