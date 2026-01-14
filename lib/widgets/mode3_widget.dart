@@ -175,7 +175,7 @@ class Mode3Widget extends StatelessWidget {
                             "🇰🇷", // Fixed to Source flag or dynamic
                             style: TextStyle(fontSize: 32),
                           ),
-                          const SizedBox(height: 16),
+                          const SizedBox(height: 8),
                           Text(
                             currentQuestion['source_text'] as String,
                             textAlign: TextAlign.center,
@@ -186,7 +186,7 @@ class Mode3Widget extends StatelessWidget {
                             ),
                           ),
                           
-                          const SizedBox(height: 48),
+                          const SizedBox(height: 24),
                           
                           // Feedback Area
                           if (appState.mode3UserAnswer.isNotEmpty) ...[
@@ -206,7 +206,7 @@ class Mode3Widget extends StatelessWidget {
                             ),
                           ],
                           
-                          const SizedBox(height: 24),
+                          const SizedBox(height: 16),
                           
                           // Result / Score
                           if (appState.mode3Score != null) ...[
@@ -225,7 +225,7 @@ class Mode3Widget extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            const SizedBox(height: 16),
+                            const SizedBox(height: 8),
                             Text(
                               l10n.score(appState.mode3Score!.toStringAsFixed(1)),
                               style: TextStyle(
@@ -233,7 +233,7 @@ class Mode3Widget extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            const SizedBox(height: 16),
+                            const SizedBox(height: 4),
                              Text(
                               l10n.correctAnswer,
                               style: TextStyle(color: Colors.grey[600], fontSize: 12),
@@ -301,8 +301,11 @@ class Mode3Widget extends StatelessWidget {
                               ),
                             ],
                           ],
-                        ],
-                      ),
+                        ),
+                        // Add bottom padding to lift the centered content
+                        const SizedBox(height: 80), 
+                      ],
+                  ),
               ),
             ),
           ],
