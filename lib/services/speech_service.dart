@@ -43,8 +43,8 @@ class SpeechService {
       await _flutterTts.setVolume(1.0);
       await _flutterTts.setSpeechRate(0.5);
       await _flutterTts.setPitch(1.0);
-      // Critical Fix: Do not wait for completion to avoid blocking execution
-      await _flutterTts.awaitSpeakCompletion(false);
+      // Critical Fix: Wait for completion to ensure UI sync
+      await _flutterTts.awaitSpeakCompletion(true);
       
       // Initial configuration
       await _configureForPlayback();
@@ -91,7 +91,7 @@ class SpeechService {
         androidAudioAttributes: const AndroidAudioAttributes(
           contentType: AndroidAudioContentType.speech,
           flags: AndroidAudioFlags.none,
-          usage: AndroidAudioUsage.assistant, // Treat as assistant (higher priority)
+          usage: AndroidAudioUsage.media, // Revert to media: safest for standard playback
         ),
         androidAudioFocusGainType: AndroidAudioFocusGainType.gainTransientMayDuck,
         androidWillPauseWhenDucked: false,
@@ -110,78 +110,19 @@ class SpeechService {
       print('Error configuring audio for playback: $e');
     }
   }
-  
-  /// Start speech-to-text recognition
-  /// 
-  /// Parameters:
-  /// - lang: Language code (e.g., 'ko_KR', 'en_US')
-  /// - onResult: Callback when text is recognized (text, isFinal)
-  Future<void> startSTT({
-    required String lang,
-    required Function(String, bool) onResult,  // Added bool for finalResult
-  }) async {
-    if (!_isInitialized) {
-      final initialized = await initialize();
-      if (!initialized) {
-        throw Exception('Speech service not available');
-      }
-    }
-    
-    // Always configure for recording before starting listener
-    await _configureForRecording();
-    
-    if (_isListening) return;
-    
-    _lastRecognizedText = '';
-    _isListening = true;
-    
-    await _speechToText.listen(
-      onResult: (result) {
-        _lastRecognizedText = result.recognizedWords;
-        onResult(result.recognizedWords, result.finalResult);  // Pass finalResult to callback
-        
-        // Note: Removed auto-stop on finalResult to allow users to speak complete sentences
-        // Users must manually tap the mic button to stop, or wait for timeout
-      },
-      localeId: lang,
-      // Android: Force on-device recognition (offline) if available for better performance
-      // Explicitly set a long listen duration to avoid default 30s timeout if needed
-      listenFor: const Duration(seconds: 60),
-      
-      listenOptions: stt.SpeechListenOptions(
-        // Use dictation for better sentence recognition and handling of pauses
-        listenMode: stt.ListenMode.dictation, 
-        cancelOnError: false, // Fix: Don't stop on minor errors
-        partialResults: true,
-      ),
-      // Increase pause duration to prevent cutting off too early
-      pauseFor: const Duration(seconds: 5), // Fix: Increased from 3s to 5s
-    );
-  }
-  
-  /// Stop speech-to-text recognition
-  Future<void> stopSTT() async {
-    if (!_isListening) return;
-    
-    await _speechToText.stop();
-    _isListening = false;
-    
-    // Critical: Reset audio session to media mode so volume buttons work correctly
-    await _configureForPlayback();
-  }
-  
+
+// ... (skip connection) ...
+
   /// Speak text using TTS
-  /// 
-  /// Parameters:
-  /// - text: Text to speak
-  /// - lang: Language code (e.g., 'ko-KR', 'es-ES')
-  /// - slow: Whether to speak slowly
   Future<void> speak(String text, {String lang = 'ko-KR', bool slow = false}) async {
     if (!_isInitialized) {
       await initialize();
     }
     
     try {
+      // Stop any previous playback to clear buffers
+      await _flutterTts.stop();
+      
       // Configuration for playback
       await _configureForPlayback();
       
@@ -190,17 +131,12 @@ class SpeechService {
       if (!isAvailable) {
         print('TTS Language not available: $lang');
         
-        // Try fallback to base language (e.g. 'ko-KR' -> 'ko')
         if (lang.contains('-')) {
           final baseLang = lang.split('-')[0];
           if (await _flutterTts.isLanguageAvailable(baseLang)) {
             print('Falling back to: $baseLang');
-            lang = baseLang; // Use base language
+            lang = baseLang; 
           } else {
-             // If base language also failed, try English as last resort or just return?
-             // Returning might be better than speaking English for Korean text.
-             // But let's try to proceed, maybe 'en-US' can pronounce some things?
-             // No, that's bad UX. Just return.
              print('TTS Language and fallback unavailable.');
              return;
           }
@@ -213,8 +149,8 @@ class SpeechService {
       await _flutterTts.setSpeechRate(slow ? 0.3 : 0.5);
       await _flutterTts.setVolume(1.0);
       
-      // Small delay to ensure audio session is ready
-      await Future.delayed(const Duration(milliseconds: 100));
+      // Small delay after configuration
+      await Future.delayed(const Duration(milliseconds: 50));
 
       await _flutterTts.speak(text);
     } catch (e) {
