@@ -1023,14 +1023,33 @@ class DatabaseService {
   }
   
   /// Get all translations for a specific study material
-  static Future<List<Map<String, dynamic>>> getRecordsByMaterialId(int materialId) async {
+  /// Optionally filter by source and target language
+  static Future<List<Map<String, dynamic>>> getRecordsByMaterialId(
+    int materialId, {
+    String? sourceLang,
+    String? targetLang,
+  }) async {
     final db = await database;
     
-    // translations 테이블에서 material_id로 필터링
+    // Build query with optional language filters
+    String whereClause = 'material_id = ?';
+    List<dynamic> whereArgs = [materialId];
+    
+    if (sourceLang != null) {
+      whereClause += ' AND source_lang = ?';
+      whereArgs.add(sourceLang);
+    }
+    
+    if (targetLang != null) {
+      whereClause += ' AND target_lang = ?';
+      whereArgs.add(targetLang);
+    }
+    
+    // translations 테이블에서 필터링
     final translations = await db.query(
       'translations',
-      where: 'material_id = ?',
-      whereArgs: [materialId],
+      where: whereClause,
+      whereArgs: whereArgs,
       orderBy: 'created_at ASC',
     );
     

@@ -647,7 +647,11 @@ class AppState extends ChangeNotifier {
   /// Load records for selected material
   Future<void> loadMaterialRecords(int materialId) async {
     try {
-      _materialRecords = await DatabaseService.getRecordsByMaterialId(materialId);
+      _materialRecords = await DatabaseService.getRecordsByMaterialId(
+        materialId,
+        sourceLang: _sourceLang,
+        targetLang: _targetLang,
+      );
       notifyListeners();
     } catch (e) {
       debugPrint('[AppState] Error loading material records: $e');
