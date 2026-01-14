@@ -301,7 +301,6 @@ class Mode3Widget extends StatelessWidget {
                               ),
                             ],
                           ],
-                        ),
                         // Add bottom padding to lift the centered content
                         const SizedBox(height: 80), 
                       ],
