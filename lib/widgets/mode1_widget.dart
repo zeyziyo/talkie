@@ -111,11 +111,19 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text(
-                                      appState.languageNames[appState.sourceLang] ?? '',
-                                      style: const TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold,
+                                    Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                      child: Text(
+                                        appState.languageNames[appState.sourceLang] ?? '',
+                                        style: TextStyle(
+                                          fontSize: 16, // Slightly smaller to fit badge
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.blue.shade800,
+                                        ),
                                       ),
                                     ),
                                     Row(
@@ -195,11 +203,19 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text(
-                                      appState.languageNames[appState.targetLang] ?? '',
-                                      style: const TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold,
+                                    Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                                      decoration: BoxDecoration(
+                                        color: Colors.green[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                      child: Text(
+                                        appState.languageNames[appState.targetLang] ?? '',
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.green.shade800,
+                                        ),
                                       ),
                                     ),
                                     IconButton(

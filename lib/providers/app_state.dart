@@ -779,11 +779,12 @@ class AppState extends ChangeNotifier {
       // Stop session
       _cancelMode3Timers(); // Cancel any running timers
       _speechService.stopSTT();
+      _isListening = false; // Ensure global listening state is reset
       _speechService.stopSpeaking();
     }
     notifyListeners();
   }
-  
+
   void _cancelMode3Timers() {
     _mode3Timer?.cancel();
     _retryAutoSkipTimer?.cancel();
@@ -806,7 +807,7 @@ class AppState extends ChangeNotifier {
     if (availableQuestions.isEmpty) {
       _mode3SessionActive = false;
       _mode3Feedback = 'Completed All!';
-      _statusMessage = '모든 문장을 완벽하게 학습했습니다!';
+      // _statusMessage = '모든 문장을 완벽하게 학습했습니다!'; // Removed as per user request
       notifyListeners();
       await _speechService.speak("All practice completed!", lang: "en-US");
       return;
