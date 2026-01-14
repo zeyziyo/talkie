@@ -111,7 +111,64 @@ class SpeechService {
     }
   }
 
-// ... (skip connection) ...
+  /// Start speech-to-text recognition
+  /// 
+  /// Parameters:
+  /// - lang: Language code (e.g., 'ko_KR', 'en_US')
+  /// - onResult: Callback when text is recognized (text, isFinal)
+  Future<void> startSTT({
+    required String lang,
+    required Function(String, bool) onResult,  // Added bool for finalResult
+  }) async {
+    if (!_isInitialized) {
+      final initialized = await initialize();
+      if (!initialized) {
+        throw Exception('Speech service not available');
+      }
+    }
+    
+    // Always configure for recording before starting listener
+    await _configureForRecording();
+    
+    if (_isListening) return;
+    
+    _lastRecognizedText = '';
+    _isListening = true;
+    
+    await _speechToText.listen(
+      onResult: (result) {
+        _lastRecognizedText = result.recognizedWords;
+        onResult(result.recognizedWords, result.finalResult);  // Pass finalResult to callback
+        
+        // Note: Removed auto-stop on finalResult to allow users to speak complete sentences
+        // Users must manually tap the mic button to stop, or wait for timeout
+      },
+      localeId: lang,
+      // Android: Force on-device recognition (offline) if available for better performance
+      // Explicitly set a long listen duration to avoid default 30s timeout if needed
+      listenFor: const Duration(seconds: 60),
+      
+      listenOptions: stt.SpeechListenOptions(
+        // Use dictation for better sentence recognition and handling of pauses
+        listenMode: stt.ListenMode.dictation, 
+        cancelOnError: false, // Fix: Don't stop on minor errors
+        partialResults: true,
+      ),
+      // Increase pause duration to prevent cutting off too early
+      pauseFor: const Duration(seconds: 5), // Fix: Increased from 3s to 5s
+    );
+  }
+  
+  /// Stop speech-to-text recognition
+  Future<void> stopSTT() async {
+    if (!_isListening) return;
+    
+    await _speechToText.stop();
+    _isListening = false;
+    
+    // Critical: Reset audio session to media mode so volume buttons work correctly
+    await _configureForPlayback();
+  }
 
   /// Speak text using TTS
   Future<void> speak(String text, {String lang = 'ko-KR', bool slow = false}) async {
