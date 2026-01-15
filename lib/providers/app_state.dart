@@ -33,8 +33,6 @@ class AppState extends ChangeNotifier {
       _targetLang = savedTarget;
       _selectedReviewLanguage = savedTarget; // Sync review filter
     }
-      _selectedReviewLanguage = savedTarget; // Sync review filter
-    }
   }
 
   Future<void> _saveSettings() async {
