@@ -41,7 +41,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
 
   void _loadRewardedAd() {
     RewardedAd.load(
-      adUnitId: 'ca-app-pub-3940256099942544/5224354917', // Test Rewarded ID
+      adUnitId: 'ca-app-pub-2281211992064241/9125789706', // Production Rewarded ID
       request: const AdRequest(),
       rewardedAdLoadCallback: RewardedAdLoadCallback(
         onAdLoaded: (ad) {
