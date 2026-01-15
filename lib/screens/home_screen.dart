@@ -159,9 +159,9 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialM2ListTitle, 
         l10n.tutorialM2ListDesc,
         ContentAlign.bottom, // Changed to bottom to avoid clipping
-        radius: 8,
-        shape: ShapeLightFocus.Circle, // Reverted to Circle as per user feedback
-        keepWidgetSize: true, // Key Fix: Use real size so it's visible
+        radius: 12,
+        shape: ShapeLightFocus.Circle,
+        keepWidgetSize: false, // Use fixed small size centered on widget
       ));
       // Action Button (Import) is also relevant in Mode 2
       targets.add(_buildTarget(
