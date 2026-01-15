@@ -1,6 +1,8 @@
 ---
 description: Build and Deployment Instructions
 ---
+---
+// turbo-all
 
 > [!CAUTION]
 > **STRICT RULE: DO NOT BUILD LOCALLY**
