@@ -23,7 +23,7 @@ class DatabaseService {
     
     return await openDatabase(
       path,
-      version: 3, // Version 3: Added study_materials table for Mode 3
+      version: 4, // Version 4: Rename default material "No" to "Basic"
       onCreate: (db, version) async {
         await _createBaseTables(db);
         await _ensureDefaultMaterial(db);
@@ -36,6 +36,10 @@ class DatabaseService {
         if (oldVersion < 3) {
           // Migrate to v3: Add study_materials table
           await _migrateToV3(db);
+        }
+        if (oldVersion < 4) {
+          // Migrate to v4: Rename default material "No" to "Basic"
+          await _migrateToV4(db);
         }
       },
     );
@@ -180,6 +184,20 @@ class DatabaseService {
     }
   }
 
+  /// V3에서 V4로 마이그레이션
+  static Future<void> _migrateToV4(Database db) async {
+    try {
+      print('[DB] Starting migration to v4...');
+      
+      // Update default material name from "No" to "Basic"
+      await db.rawUpdate("UPDATE study_materials SET subject = 'Basic' WHERE id = 0");
+      
+      print('[DB] Migration to v4 completed successfully');
+    } catch (e) {
+      print('[DB] Migration to v4 error: $e');
+    }
+  }
+
   /// 기본 학습 자료 보장 (ID=0)
   static Future<void> _ensureDefaultMaterial(Database db) async {
     try {
@@ -194,7 +212,7 @@ class DatabaseService {
         // ID=0으로 강제 삽입
         await db.rawInsert('''
           INSERT INTO study_materials (id, subject, source, source_language, target_language, created_at, imported_at)
-          VALUES (0, 'No', 'Google', 'auto', 'auto', ?, ?)
+          VALUES (0, 'Basic', 'Google', 'auto', 'auto', ?, ?)
         ''', [
           DateTime.now().toIso8601String(),
           DateTime.now().toIso8601String(),

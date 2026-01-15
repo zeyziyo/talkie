@@ -74,7 +74,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
           String label = '$subject ($sourceLang → $targetLang)';
           if (id == 0) {
              // Use current app languages for the default material label
-             label = 'No (${appState.languageNames[appState.sourceLang]} → ${appState.languageNames[appState.targetLang]})';
+             label = 'Basic (${appState.languageNames[appState.sourceLang]} → ${appState.languageNames[appState.targetLang]})';
           }
 
           return DropdownMenuItem<int>(
