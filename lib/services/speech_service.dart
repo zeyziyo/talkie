@@ -67,7 +67,7 @@ class SpeechService {
                                       AVAudioSessionCategoryOptions.defaultToSpeaker,
         avAudioSessionMode: AVAudioSessionMode.defaultMode,
         androidAudioAttributes: const AndroidAudioAttributes(
-          contentType: AndroidAudioContentType.speech,
+          contentType: AndroidAudioContentType.music, // Changed from speech to music to force media volume
           flags: AndroidAudioFlags.none,
           usage: AndroidAudioUsage.media,
         ),
