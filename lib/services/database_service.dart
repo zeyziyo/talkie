@@ -876,6 +876,29 @@ class DatabaseService {
   }) async {
     final db = await database;
     
+    // Check for duplicates
+    final existing = await db.query(
+      'study_materials',
+      where: 'subject = ? AND source_language = ? AND target_language = ?',
+      whereArgs: [subject, sourceLanguage, targetLanguage],
+      limit: 1,
+    );
+    
+    if (existing.isNotEmpty) {
+      final id = existing.first['id'] as int;
+      print('[DB] Found existing material: id=$id, subject=$subject');
+      
+      // Update imported_at timestamp
+      await db.update(
+        'study_materials',
+        {'imported_at': DateTime.now().toIso8601String()},
+        where: 'id = ?',
+        whereArgs: [id],
+      );
+      
+      return id;
+    }
+    
     final id = await db.insert('study_materials', {
       'subject': subject,
       'source': source,
