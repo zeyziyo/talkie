@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Talkie - AI-Powered Language Learning App. Practice speaking anytime, anywhere.">
+    <title>Talkie - Master Languages with AI</title>
+    <style>
+        :root {
+            --primary-color: #6200EE;
+            --accent-color: #03DAC6;
+            --text-dark: #121212;
+            --text-light: #FFFFFF;
+            --bg-light: #F5F5F5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #3700B3);
+            color: var(--text-light);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .app-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 24px; /* Play Store style */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p.tagline {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #000;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .screenshot-gallery {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            p.tagline { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="website_assets/logo.jpg" alt="Talkie App Icon" class="app-logo">
+            <h1>Talkie</h1>
+            <p class="tagline">Speak Confidently with AI</p>
+            <a href="https://play.google.com/store/apps/details?id=com.zeyziyo.talkie" class="cta-button" target="_blank">
+                Download on Google Play
+            </a>
+            <br>
+            <!-- Hero Image -->
+            <img src="website_assets/hero.jpg" alt="Talkie App Preview" class="hero-image">
+        </div>
+    </header>
+
+    <section id="features">
+        <h2>Why Talkie?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎙️</div>
+                <h3>AI Speech Recognition</h3>
+                <p>Practice speaking with advanced AI that listens and corrects your pronunciation in real-time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Instant Translation</h3>
+                <p>Support for 40+ languages. Speak in your native tongue and learn how to say it in your target language instantly.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Smart Study Materials</h3>
+                <p>Import your own study lists or use our curated content to practice vocabulary and sentences effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy">
+        <h2>Privacy & Support</h2>
+        <p style="text-align: center;">
+            We value your privacy. Your voice data is processed securely and is never stored permanently on our servers.
+            <br><br>
+            <a href="play_store/privacy_policy_ko.md" target="_blank">View Privacy Policy</a>
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="mailto:talkie.help@gmail.com">Contact Support</a>
+            <a href="play_store/privacy_policy_ko.md">Privacy Policy</a>
+        </div>
+        <p>&copy; 2026 Zeyziyo. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
