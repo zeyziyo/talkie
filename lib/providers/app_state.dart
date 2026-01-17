@@ -57,7 +57,6 @@ class AppState extends ChangeNotifier {
   bool _isTranslating = false;
   bool _isSpeaking = false;
   bool _isSaved = false; // Track if current translation is saved
-  bool _isSaved = false; // Track if current translation is saved
   String _statusMessage = '';
   String _contextTag = ''; // Context for ambiguous translations
   bool _isWordMode = false; // Toggle between Word and Sentence mode
@@ -88,7 +87,6 @@ class AppState extends ChangeNotifier {
   bool get isListening => _isListening;
   bool get isTranslating => _isTranslating;
   bool get isSpeaking => _isSpeaking;
-  bool get isSaved => _isSaved;
   bool get isSaved => _isSaved;
   String get statusMessage => _statusMessage;
   String get contextTag => _contextTag;
@@ -378,7 +376,6 @@ class AppState extends ChangeNotifier {
         sourceLang: _sourceLang,
         sourceId: _selectedSourceId!,
         targetLang: _targetLang,
-        targetId: targetId,
         targetId: targetId,
         materialId: materialId,
         context: _contextTag.isNotEmpty ? _contextTag : null,

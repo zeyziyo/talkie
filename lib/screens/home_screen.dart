@@ -204,7 +204,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ContentAlign.bottom,
       ));
       targets.add(_buildTarget(
-      targets.add(_buildTarget(
         _mode3IntervalKey, 
         l10n.tutorialM3IntervalTitle, 
         l10n.tutorialM3IntervalDesc,
@@ -218,9 +217,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ContentAlign.top,
         radius: 12,
       ));
-        ContentAlign.top,
-        radius: 12,
-      ));
+
     } else if (modeIndex == 3) {
       // Mode 4: Game (Just show one target on the tab to explain it?)
       // Or maybe explain the start button?

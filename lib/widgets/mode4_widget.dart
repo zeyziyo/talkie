@@ -385,7 +385,7 @@ class _Mode4WidgetState extends State<Mode4Widget> with TickerProviderStateMixin
         children: [
           const Icon(Icons.mood_bad, size: 80, color: Colors.grey),
           const SizedBox(height: 24),
-          const Text(
+          Text(
             l10n.gameOver,
             style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.red),
           ),

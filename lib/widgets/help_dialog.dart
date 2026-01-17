@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../l10n/app_localizations.dart';
+import 'package:url_launcher/url_launcher.dart'; // Import url_launcher
 
 class HelpDialog extends StatefulWidget {
   final int initialModeIndex;
@@ -284,6 +285,13 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
     );
   }
 
+  Future<void> _launchUrl() async {
+    final Uri url = Uri.parse('https://zeyziyo.github.io/talkie/guide.html');
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
+  }
+
   Widget _buildTourGuide(AppLocalizations l10n) {
     return Center(
       child: Column(
@@ -308,6 +316,16 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
               padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
               backgroundColor: const Color(0xFF667eea),
               foregroundColor: Colors.white,
+            ),
+          ),
+          ),
+          const SizedBox(height: 16),
+          TextButton.icon(
+            onPressed: _launchUrl,
+            icon: const Icon(Icons.open_in_browser),
+            label: const Text("View Online User Guide"), // Fallback if l10n missing
+            style: TextButton.styleFrom(
+              foregroundColor: const Color(0xFF667eea),
             ),
           ),
         ],
