@@ -68,7 +68,6 @@ class DatabaseService {
         context TEXT,
         type TEXT DEFAULT 'sentence'
       )
-      )
     ''');
     
     // 번역 캐시 테이블

@@ -45,3 +45,38 @@
 1.  **Phase 1 (User Base):** **콘텐츠 마켓플레이스** 구축. 사용자들이 서로 JSON을 공유하게 하여 앱 생태계를 활성화 (현재 기능의 자연스러운 연장).
 2.  **Phase 2 (Revenue):** **AI 롤플레잉** 도입. 확실한 유료 결제 유인책 마련.
 3.  **Phase 3 (Scale):** **B2B(학원용)** 진출. 안정적인 고정 수익 창출.
+
+---
+
+## 5. 추천 기술 스택 (Tech Stack Strategy)
+1인 개발 또는 소규모 팀이 효율적으로 확장하기 위한 **"가성비 & 생산성"** 중심의 스택입니다.
+
+### A. 백엔드 (Backend as a Service)
+*   **Supabase** (추천): Firebase의 오픈소스 대안.
+    *   **DB:** PostgreSQL (강력한 관계형 DB로 사용자, 학습 기록 관리).
+    *   **Auth:** 소셜 로그인 및 사용자 인증 통합.
+    *   **Edge Functions:** AI API 호출 등 서버 로직 처리에 사용.
+    *   **Realtime:** 워드 배틀(멀티플레이) 구현 시 필수.
+
+### B. AI & LLM
+*   **OpenAI API (GPT-4o-mini):** 속도가 빠르고 비용이 저렴하여 회화 롤플레잉에 최적.
+*   **LangChain (Dart):** 복잡한 프롬프트 체인을 관리하기 위한 라이브러리.
+
+### C. 결제 (Payments)
+*   **RevenueCat:** 인앱 결제(구글/애플) 구현의 복잡성을 제거. 구독 모델 관리에 필수.
+
+### D. 웹 대시보드 (Talkie Class)
+*   **Flutter Web:** 기존 앱 코드를 90% 재사용하여 선생님용 웹사이트를 빠르게 구축. (따로 React를 배울 필요 없음)
+
+### E. 아키텍처 다이어그램 (Flow)
+```mermaid
+graph TD
+    User[사용자 앱 (Flutter)] -->|Auth/DB| Supabase
+    User -->|In-App Purchase| RevenueCat
+    User -->|Voice/Text| EdgeFunc[Supabase Edge Functions]
+    
+    Teacher[선생님 웹 (Flutter Web)] -->|Manage| Supabase
+    
+    EdgeFunc -->|Request| OpenAI[GPT-4o]
+    EdgeFunc -->|TTS| GoogleCloudTTS
+```
