@@ -178,7 +178,22 @@ class _Mode4WidgetState extends State<Mode4Widget> with TickerProviderStateMixin
     // It will take a callback `onResult`.
     
     appState.startMode4Listening(
-      lang: langCode,
+      (result) {
+        // Handle result
+        _checkAnswer(result, appState);
+        
+        // Restart listening for continuous effect if game is still on
+        // Note: Do this after a short delay or immediately depending on engine
+        // Assuming result is final. If partial, we check but don't restart.
+        // AppState wrapper simplifies this, let's assume it returns final.
+        // To be safe, re-trigger loop.
+        if (_isPlaying) {
+             _listenLoop(appState, langCode);
+        }
+      },
+      langCode: langCode,
+    );
+  }      lang: langCode,
       onResult: (text, isFinal) {
         _checkAnswer(text);
         
@@ -271,7 +286,19 @@ class _Mode4WidgetState extends State<Mode4Widget> with TickerProviderStateMixin
     final records = appState.filteredMaterialRecords;
     if (records.isEmpty) return;
 
-    final randomRecord = records[Random().nextInt(records.length)];
+    // Filter out words that are already falling to prevent duplicates on screen
+    final activeTexts = _fallingWords.map((w) => w.text).toSet();
+    final availableRecords = records.where((r) {
+      final sText = r['source_text'] as String;
+      final tText = r['target_text'] as String;
+      final checkText = _nativeToForeign ? sText : tText;
+      return !activeTexts.contains(checkText);
+    }).toList();
+
+    // If all words are on screen, don't spawn new ones yet (or spawn duplicates if strictly needed, but user asked not to)
+    if (availableRecords.isEmpty) return;
+
+    final randomRecord = availableRecords[Random().nextInt(availableRecords.length)];
     
     final sourceText = randomRecord['source_text'] as String;
     final targetText = randomRecord['target_text'] as String;
@@ -283,7 +310,7 @@ class _Mode4WidgetState extends State<Mode4Widget> with TickerProviderStateMixin
     final x = Random().nextDouble() * (screenW - 100) + 20; // Padding
     
     _fallingWords.add(FallingWord(
-      id: DateTime.now().millisecondsSinceEpoch.toString(), // Unique ID
+      id: DateTime.now().millisecondsSinceEpoch.toString() + Random().nextInt(1000).toString(), // Unique ID
       text: fallingText,
       answer: answerText,
       correctMeaning: answerText,

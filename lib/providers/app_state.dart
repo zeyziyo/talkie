@@ -447,6 +447,29 @@ class AppState extends ChangeNotifier {
     _statusMessage = '';
     notifyListeners();
   }
+
+  /// Mode 4: Game STT (Continuous)
+  Future<void> startMode4Listening(void Function(String) onResult, {required String langCode}) async {
+    _isListening = true;
+    notifyListeners();
+
+    try {
+      await _speechService.listen(
+        onResult: (result) {
+          onResult(result);
+          // Continuous listening usually requires restarting on result or using partial results.
+          // For now, let's keep it simple: One-shot check. 
+          // If we want continuous, we need to handle it in Mode4Widget or here.
+          // Given the game loop, Mode4Widget can restart listening if needed.
+        },
+        langId: langCode,
+      );
+    } catch (e) {
+      debugPrint('[AppState] Mode 4 STT Error: $e');
+      _isListening = false;
+      notifyListeners();
+    }
+  }
   
   // ==========================================
   // Mode 2: Review
