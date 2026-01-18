@@ -1,0 +1,59 @@
+{
+    "subject": "Basic Sentences",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "es",
+    "default_type": "sentence",
+    "entries": [
+        {
+            "source_text": "안녕하세요",
+            "target_text": "Hola",
+            "type": "sentence"
+        },
+        {
+            "source_text": "반갑습니다",
+            "target_text": "Mucho gusto",
+            "type": "sentence"
+        },
+        {
+            "source_text": "감사합니다",
+            "target_text": "Gracias",
+            "type": "sentence"
+        },
+        {
+            "source_text": "죄송합니다",
+            "target_text": "Lo siento",
+            "type": "sentence"
+        },
+        {
+            "source_text": "안녕히 가세요",
+            "target_text": "Adiós",
+            "type": "sentence"
+        },
+        {
+            "source_text": "좋은 아침입니다",
+            "target_text": "Buenos días",
+            "type": "sentence"
+        },
+        {
+            "source_text": "잠시만요",
+            "target_text": "Disculpe",
+            "type": "sentence"
+        },
+        {
+            "source_text": "얼마인가요?",
+            "target_text": "¿Cuánto cuesta?",
+            "type": "sentence"
+        },
+        {
+            "source_text": "도와주세요",
+            "target_text": "Ayúdeme, por favor",
+            "type": "sentence"
+        },
+        {
+            "source_text": "이름이 뭐예요?",
+            "target_text": "¿Cómo te llamas?",
+            "type": "sentence"
+        }
+    ]
+}

@@ -419,4 +419,121 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get copiedToClipboard => 'Copied to clipboard!';
+
+  @override
+  String get tutorialContextTitle => 'Znacznik kontekstu';
+
+  @override
+  String get tutorialContextDesc =>
+      'Dodaj kontekst (np. Rano), aby rozróżnić podobne zdania.';
+
+  @override
+  String get tutorialM1ToggleTitle => 'Word/Sentence Mode';
+
+  @override
+  String get tutorialM1ToggleDesc =>
+      'Switch between Word and Sentence mode here. Words are saved with larger text.';
+
+  @override
+  String get tutorialM3WordsTitle => 'Practice Words';
+
+  @override
+  String get tutorialM3WordsDesc =>
+      'Check this to practice only your saved words.';
+
+  @override
+  String get tutorialGameTitle => 'Rain Drop Game';
+
+  @override
+  String get tutorialGameDesc =>
+      'Play a game to practice your vocabulary! Catch falling words by speaking their translation.';
+
+  @override
+  String get labelType => 'Type:';
+
+  @override
+  String get labelWord => 'Word';
+
+  @override
+  String get labelSentence => 'Sentence';
+
+  @override
+  String get contextTagLabel =>
+      'Context/Situation (Optional) - Ex: Morning greeting, polite form';
+
+  @override
+  String get contextTagHint =>
+      'Describe situation for easier classification later';
+
+  @override
+  String get translationLimitExceeded => 'Translation Limit Exceeded';
+
+  @override
+  String get translationLimitMessage =>
+      'You have used all your free daily translations (5). Watch an ad to refill 5 immediately?';
+
+  @override
+  String get watchAdAndRefill => 'Watch Ad & Refill (+5)';
+
+  @override
+  String get translationRefilled => 'Translations refilled by 5!';
+
+  @override
+  String get adLoading => 'Loading ad, please try again in a moment.';
+
+  @override
+  String get reviewAll => 'Review All';
+
+  @override
+  String totalRecords(int count) {
+    return 'Total $count records (View All)';
+  }
+
+  @override
+  String get filterAll => 'All';
+
+  @override
+  String get practiceWordsOnly => 'Practice Words Only';
+
+  @override
+  String get resetPracticeHistory => 'Reset Practice History';
+
+  @override
+  String get retry => 'Retry?';
+
+  @override
+  String get noStudyMaterial => 'No study material found.';
+
+  @override
+  String get rainDropGame => 'Rain Drop Game';
+
+  @override
+  String get rainDropGameDesc => 'Speak the translation of the falling word!';
+
+  @override
+  String get gameDirection => 'Game Direction';
+
+  @override
+  String get speed => 'Speed';
+
+  @override
+  String get startGame => 'Start Game';
+
+  @override
+  String get gameOver => 'Game Over';
+
+  @override
+  String get finalScore => 'Final Score';
+
+  @override
+  String get playAgain => 'Play Again';
+
+  @override
+  String get speakNow => 'Speak now!';
+
+  @override
+  String get scoreLabel => 'Score';
+
+  @override
+  String get viewOnlineGuide => 'View Online User Guide';
 }

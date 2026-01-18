@@ -783,7 +783,7 @@ abstract class AppLocalizations {
   /// No description provided for @tutorialM2ListDesc.
   ///
   /// In en, this message translates to:
-  /// **'Check your saved cards and flip them to see answers. (Long-press to delete)'**
+  /// **'Long-press this card to delete it. Check your saved sentences and flip them.'**
   String get tutorialM2ListDesc;
 
   /// No description provided for @tutorialM3SelectTitle.
@@ -905,6 +905,222 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Copied to clipboard!'**
   String get copiedToClipboard;
+
+  /// No description provided for @tutorialContextTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Context Tag'**
+  String get tutorialContextTitle;
+
+  /// No description provided for @tutorialContextDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Add context (e.g., Morning) to distinguish similar sentences.'**
+  String get tutorialContextDesc;
+
+  /// No description provided for @tutorialM1ToggleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Word/Sentence Mode'**
+  String get tutorialM1ToggleTitle;
+
+  /// No description provided for @tutorialM1ToggleDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch between Word and Sentence mode here. Words are saved with larger text.'**
+  String get tutorialM1ToggleDesc;
+
+  /// No description provided for @tutorialM3WordsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice Words'**
+  String get tutorialM3WordsTitle;
+
+  /// No description provided for @tutorialM3WordsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Check this to practice only your saved words.'**
+  String get tutorialM3WordsDesc;
+
+  /// No description provided for @tutorialGameTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Rain Drop Game'**
+  String get tutorialGameTitle;
+
+  /// No description provided for @tutorialGameDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Play a game to practice your vocabulary! Catch falling words by speaking their translation.'**
+  String get tutorialGameDesc;
+
+  /// No description provided for @labelType.
+  ///
+  /// In en, this message translates to:
+  /// **'Type:'**
+  String get labelType;
+
+  /// No description provided for @labelWord.
+  ///
+  /// In en, this message translates to:
+  /// **'Word'**
+  String get labelWord;
+
+  /// No description provided for @labelSentence.
+  ///
+  /// In en, this message translates to:
+  /// **'Sentence'**
+  String get labelSentence;
+
+  /// No description provided for @contextTagLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Context/Situation (Optional) - Ex: Morning greeting, polite form'**
+  String get contextTagLabel;
+
+  /// No description provided for @contextTagHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe situation for easier classification later'**
+  String get contextTagHint;
+
+  /// No description provided for @translationLimitExceeded.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation Limit Exceeded'**
+  String get translationLimitExceeded;
+
+  /// No description provided for @translationLimitMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'You have used all your free daily translations (5). Watch an ad to refill 5 immediately?'**
+  String get translationLimitMessage;
+
+  /// No description provided for @watchAdAndRefill.
+  ///
+  /// In en, this message translates to:
+  /// **'Watch Ad & Refill (+5)'**
+  String get watchAdAndRefill;
+
+  /// No description provided for @translationRefilled.
+  ///
+  /// In en, this message translates to:
+  /// **'Translations refilled by 5!'**
+  String get translationRefilled;
+
+  /// No description provided for @adLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading ad, please try again in a moment.'**
+  String get adLoading;
+
+  /// No description provided for @reviewAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Review All'**
+  String get reviewAll;
+
+  /// No description provided for @totalRecords.
+  ///
+  /// In en, this message translates to:
+  /// **'Total {count} records (View All)'**
+  String totalRecords(int count);
+
+  /// No description provided for @filterAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get filterAll;
+
+  /// No description provided for @practiceWordsOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice Words Only'**
+  String get practiceWordsOnly;
+
+  /// No description provided for @resetPracticeHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset Practice History'**
+  String get resetPracticeHistory;
+
+  /// No description provided for @retry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry?'**
+  String get retry;
+
+  /// No description provided for @noStudyMaterial.
+  ///
+  /// In en, this message translates to:
+  /// **'No study material found.'**
+  String get noStudyMaterial;
+
+  /// No description provided for @rainDropGame.
+  ///
+  /// In en, this message translates to:
+  /// **'Rain Drop Game'**
+  String get rainDropGame;
+
+  /// No description provided for @rainDropGameDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Speak the translation of the falling word!'**
+  String get rainDropGameDesc;
+
+  /// No description provided for @gameDirection.
+  ///
+  /// In en, this message translates to:
+  /// **'Game Direction'**
+  String get gameDirection;
+
+  /// No description provided for @speed.
+  ///
+  /// In en, this message translates to:
+  /// **'Speed'**
+  String get speed;
+
+  /// No description provided for @startGame.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Game'**
+  String get startGame;
+
+  /// No description provided for @gameOver.
+  ///
+  /// In en, this message translates to:
+  /// **'Game Over'**
+  String get gameOver;
+
+  /// No description provided for @finalScore.
+  ///
+  /// In en, this message translates to:
+  /// **'Final Score'**
+  String get finalScore;
+
+  /// No description provided for @playAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Play Again'**
+  String get playAgain;
+
+  /// No description provided for @speakNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Speak now!'**
+  String get speakNow;
+
+  /// No description provided for @scoreLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Score'**
+  String get scoreLabel;
+
+  /// No description provided for @viewOnlineGuide.
+  ///
+  /// In en, this message translates to:
+  /// **'View Online User Guide'**
+  String get viewOnlineGuide;
 }
 
 class _AppLocalizationsDelegate

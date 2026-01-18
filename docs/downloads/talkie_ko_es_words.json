@@ -1,0 +1,504 @@
+{
+    "subject": "Basic Words",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "es",
+    "default_type": "word",
+    "entries": [
+        {
+            "source_text": "사과",
+            "target_text": "Manzana",
+            "type": "word"
+        },
+        {
+            "source_text": "바나나",
+            "target_text": "Plátano",
+            "type": "word"
+        },
+        {
+            "source_text": "물",
+            "target_text": "Agua",
+            "type": "word"
+        },
+        {
+            "source_text": "밥",
+            "target_text": "Arroz",
+            "type": "word"
+        },
+        {
+            "source_text": "빵",
+            "target_text": "Pan",
+            "type": "word"
+        },
+        {
+            "source_text": "우유",
+            "target_text": "Leche",
+            "type": "word"
+        },
+        {
+            "source_text": "커피",
+            "target_text": "Café",
+            "type": "word"
+        },
+        {
+            "source_text": "차",
+            "target_text": "Té",
+            "type": "word"
+        },
+        {
+            "source_text": "고기",
+            "target_text": "Carne",
+            "type": "word"
+        },
+        {
+            "source_text": "생선",
+            "target_text": "Pescado",
+            "type": "word"
+        },
+        {
+            "source_text": "야채",
+            "target_text": "Verdura",
+            "type": "word"
+        },
+        {
+            "source_text": "과일",
+            "target_text": "Fruta",
+            "type": "word"
+        },
+        {
+            "source_text": "계란",
+            "target_text": "Huevo",
+            "type": "word"
+        },
+        {
+            "source_text": "소금",
+            "target_text": "Sal",
+            "type": "word"
+        },
+        {
+            "source_text": "설탕",
+            "target_text": "Azúcar",
+            "type": "word"
+        },
+        {
+            "source_text": "집",
+            "target_text": "Casa",
+            "type": "word"
+        },
+        {
+            "source_text": "학교",
+            "target_text": "Escuela",
+            "type": "word"
+        },
+        {
+            "source_text": "회사",
+            "target_text": "Empresa",
+            "type": "word"
+        },
+        {
+            "source_text": "병원",
+            "target_text": "Hospital",
+            "type": "word"
+        },
+        {
+            "source_text": "공원",
+            "target_text": "Parque",
+            "type": "word"
+        },
+        {
+            "source_text": "가게",
+            "target_text": "Tienda",
+            "type": "word"
+        },
+        {
+            "source_text": "시장",
+            "target_text": "Mercado",
+            "type": "word"
+        },
+        {
+            "source_text": "식당",
+            "target_text": "Restaurante",
+            "type": "word"
+        },
+        {
+            "source_text": "화장실",
+            "target_text": "Baño",
+            "type": "word"
+        },
+        {
+            "source_text": "방",
+            "target_text": "Habitación",
+            "type": "word"
+        },
+        {
+            "source_text": "문",
+            "target_text": "Puerta",
+            "type": "word"
+        },
+        {
+            "source_text": "창문",
+            "target_text": "Ventana",
+            "type": "word"
+        },
+        {
+            "source_text": "책상",
+            "target_text": "Escritorio",
+            "type": "word"
+        },
+        {
+            "source_text": "의자",
+            "target_text": "Silla",
+            "type": "word"
+        },
+        {
+            "source_text": "침대",
+            "target_text": "Cama",
+            "type": "word"
+        },
+        {
+            "source_text": "사람",
+            "target_text": "Persona",
+            "type": "word"
+        },
+        {
+            "source_text": "남자",
+            "target_text": "Hombre",
+            "type": "word"
+        },
+        {
+            "source_text": "여자",
+            "target_text": "Mujer",
+            "type": "word"
+        },
+        {
+            "source_text": "아이",
+            "target_text": "Niño",
+            "type": "word"
+        },
+        {
+            "source_text": "가족",
+            "target_text": "Familia",
+            "type": "word"
+        },
+        {
+            "source_text": "아버지",
+            "target_text": "Padre",
+            "type": "word"
+        },
+        {
+            "source_text": "어머니",
+            "target_text": "Madre",
+            "type": "word"
+        },
+        {
+            "source_text": "친구",
+            "target_text": "Amigo",
+            "type": "word"
+        },
+        {
+            "source_text": "선생님",
+            "target_text": "Maestro",
+            "type": "word"
+        },
+        {
+            "source_text": "의사",
+            "target_text": "Médico",
+            "type": "word"
+        },
+        {
+            "source_text": "머리",
+            "target_text": "Cabeza",
+            "type": "word"
+        },
+        {
+            "source_text": "눈",
+            "target_text": "Ojo",
+            "type": "word"
+        },
+        {
+            "source_text": "코",
+            "target_text": "Nariz",
+            "type": "word"
+        },
+        {
+            "source_text": "입",
+            "target_text": "Boca",
+            "type": "word"
+        },
+        {
+            "source_text": "손",
+            "target_text": "Mano",
+            "type": "word"
+        },
+        {
+            "source_text": "발",
+            "target_text": "Pie",
+            "type": "word"
+        },
+        {
+            "source_text": "팔",
+            "target_text": "Brazo",
+            "type": "word"
+        },
+        {
+            "source_text": "다리",
+            "target_text": "Pierna",
+            "type": "word"
+        },
+        {
+            "source_text": "옷",
+            "target_text": "Ropa",
+            "type": "word"
+        },
+        {
+            "source_text": "신발",
+            "target_text": "Zapato",
+            "type": "word"
+        },
+        {
+            "source_text": "강아지",
+            "target_text": "Perro",
+            "type": "word"
+        },
+        {
+            "source_text": "고양이",
+            "target_text": "Gato",
+            "type": "word"
+        },
+        {
+            "source_text": "새",
+            "target_text": "Pájaro",
+            "type": "word"
+        },
+        {
+            "source_text": "나무",
+            "target_text": "Árbol",
+            "type": "word"
+        },
+        {
+            "source_text": "꽃",
+            "target_text": "Flor",
+            "type": "word"
+        },
+        {
+            "source_text": "하늘",
+            "target_text": "Cielo",
+            "type": "word"
+        },
+        {
+            "source_text": "해",
+            "target_text": "Sol",
+            "type": "word"
+        },
+        {
+            "source_text": "달",
+            "target_text": "Luna",
+            "type": "word"
+        },
+        {
+            "source_text": "별",
+            "target_text": "Estrella",
+            "type": "word"
+        },
+        {
+            "source_text": "바다",
+            "target_text": "Mar",
+            "type": "word"
+        },
+        {
+            "source_text": "시간",
+            "target_text": "Tiempo",
+            "type": "word"
+        },
+        {
+            "source_text": "날",
+            "target_text": "Día",
+            "type": "word"
+        },
+        {
+            "source_text": "밤",
+            "target_text": "Night",
+            "type": "word"
+        },
+        {
+            "source_text": "주",
+            "target_text": "Semana",
+            "type": "word"
+        },
+        {
+            "source_text": "월",
+            "target_text": "Mes",
+            "type": "word"
+        },
+        {
+            "source_text": "년",
+            "target_text": "Año",
+            "type": "word"
+        },
+        {
+            "source_text": "오늘",
+            "target_text": "Hoy",
+            "type": "word"
+        },
+        {
+            "source_text": "내일",
+            "target_text": "Mañana",
+            "type": "word"
+        },
+        {
+            "source_text": "어제",
+            "target_text": "Ayer",
+            "type": "word"
+        },
+        {
+            "source_text": "지금",
+            "target_text": "Ahora",
+            "type": "word"
+        },
+        {
+            "source_text": "숫자",
+            "target_text": "Número",
+            "type": "word"
+        },
+        {
+            "source_text": "하나",
+            "target_text": "Uno",
+            "type": "word"
+        },
+        {
+            "source_text": "둘",
+            "target_text": "Dos",
+            "type": "word"
+        },
+        {
+            "source_text": "셋",
+            "target_text": "Tres",
+            "type": "word"
+        },
+        {
+            "source_text": "많다",
+            "target_text": "Muchos",
+            "type": "word"
+        },
+        {
+            "source_text": "적다",
+            "target_text": "Pocos",
+            "type": "word"
+        },
+        {
+            "source_text": "크다",
+            "target_text": "Grande",
+            "type": "word"
+        },
+        {
+            "source_text": "작다",
+            "target_text": "Pequeño",
+            "type": "word"
+        },
+        {
+            "source_text": "멀다",
+            "target_text": "Lejos",
+            "type": "word"
+        },
+        {
+            "source_text": "가깝다",
+            "target_text": "Cerca",
+            "type": "word"
+        },
+        {
+            "source_text": "좋다",
+            "target_text": "Bueno",
+            "type": "word"
+        },
+        {
+            "source_text": "나쁘다",
+            "target_text": "Malo",
+            "type": "word"
+        },
+        {
+            "source_text": "덥다",
+            "target_text": "Caliente",
+            "type": "word"
+        },
+        {
+            "source_text": "춥다",
+            "target_text": "Frío",
+            "type": "word"
+        },
+        {
+            "source_text": "쉽다",
+            "target_text": "Fácil",
+            "type": "word"
+        },
+        {
+            "source_text": "어렵다",
+            "target_text": "Difícil",
+            "type": "word"
+        },
+        {
+            "source_text": "예쁘다",
+            "target_text": "Bonito",
+            "type": "word"
+        },
+        {
+            "source_text": "빠르다",
+            "target_text": "Rápido",
+            "type": "word"
+        },
+        {
+            "source_text": "느리다",
+            "target_text": "Lento",
+            "type": "word"
+        },
+        {
+            "source_text": "가다",
+            "target_text": "Ir",
+            "type": "word"
+        },
+        {
+            "source_text": "오다",
+            "target_text": "Venir",
+            "type": "word"
+        },
+        {
+            "source_text": "먹다",
+            "target_text": "Comer",
+            "type": "word"
+        },
+        {
+            "source_text": "마시다",
+            "target_text": "Beber",
+            "type": "word"
+        },
+        {
+            "source_text": "보다",
+            "target_text": "Ver",
+            "type": "word"
+        },
+        {
+            "source_text": "듣다",
+            "target_text": "Escuchar",
+            "type": "word"
+        },
+        {
+            "source_text": "자다",
+            "target_text": "Dormir",
+            "type": "word"
+        },
+        {
+            "source_text": "일하다",
+            "target_text": "Trabajar",
+            "type": "word"
+        },
+        {
+            "source_text": "공부하다",
+            "target_text": "Estudiar",
+            "type": "word"
+        },
+        {
+            "source_text": "사랑하다",
+            "target_text": "Amar",
+            "type": "word"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "subject": "Basic Sentences",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "ja",
+    "default_type": "sentence",
+    "entries": [
+        {
+            "source_text": "안녕하세요",
+            "target_text": "こんにちは",
+            "type": "sentence"
+        },
+        {
+            "source_text": "반갑습니다",
+            "target_text": "はじめまして",
+            "type": "sentence"
+        },
+        {
+            "source_text": "감사합니다",
+            "target_text": "ありがとうございます",
+            "type": "sentence"
+        },
+        {
+            "source_text": "죄송합니다",
+            "target_text": "ごめんなさい",
+            "type": "sentence"
+        },
+        {
+            "source_text": "안녕히 가세요",
+            "target_text": "さようなら",
+            "type": "sentence"
+        },
+        {
+            "source_text": "좋은 아침입니다",
+            "target_text": "おはようございます",
+            "type": "sentence"
+        },
+        {
+            "source_text": "잠시만요",
+            "target_text": "すみません",
+            "type": "sentence"
+        },
+        {
+            "source_text": "얼마인가요?",
+            "target_text": "いくらですか",
+            "type": "sentence"
+        },
+        {
+            "source_text": "도와주세요",
+            "target_text": "助けてください",
+            "type": "sentence"
+        },
+        {
+            "source_text": "이름이 뭐예요?",
+            "target_text": "お名前は何ですか",
+            "type": "sentence"
+        }
+    ]
+}

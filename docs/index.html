@@ -147,6 +147,58 @@
                 font-size: 1.2rem;
             }
         }
+
+        /* Download Section Styles */
+        .downloads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .download-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            text-align: left;
+            border-left: 5px solid var(--accent-color);
+            transition: transform 0.2s;
+        }
+
+        .download-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .download-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .download-icon {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .download-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+        }
+
+        .download-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
     </style>
 </head>
 
@@ -190,6 +242,58 @@
                 <h3>Smart Study Materials</h3>
                 <p>Import your own study lists or use our curated content to practice vocabulary and sentences
                     effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Download Section -->
+    <section id="downloads" style="background-color: #fff; padding: 4rem 2rem; max-width: 100%;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h2>Sample Study Materials</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">
+                Download these JSON files to get started with Talkie immediately.
+                Import them in <strong>Mode 2 (Study Material)</strong>.
+            </p>
+
+            <div class="downloads-grid">
+                <!-- English -->
+                <div class="download-card">
+                    <div class="download-title">
+                        <span class="download-icon">🇺🇸</span> Korean - English
+                    </div>
+                    <p>Basic vocabulary and sentences for beginners.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="downloads/talkie_ko_en_words.json" class="download-link" download>Download Words</a>
+                        <a href="downloads/talkie_ko_en_sentences.json" class="download-link" style="margin-left: 10px;"
+                            download>Download Sentences</a>
+                    </div>
+                </div>
+
+                <!-- Spanish -->
+                <div class="download-card">
+                    <div class="download-title">
+                        <span class="download-icon">🇪🇸</span> Korean - Spanish
+                    </div>
+                    <p>Basic vocabulary and sentences for beginners.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="downloads/talkie_ko_es_words.json" class="download-link" download>Download Words</a>
+                        <a href="downloads/talkie_ko_es_sentences.json" class="download-link" style="margin-left: 10px;"
+                            download>Download Sentences</a>
+                    </div>
+                </div>
+
+                <!-- Japanese -->
+                <div class="download-card">
+                    <div class="download-title">
+                        <span class="download-icon">🇯🇵</span> Korean - Japanese
+                    </div>
+                    <p>Basic vocabulary and sentences for beginners.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="downloads/talkie_ko_ja_words.json" class="download-link" download>Download Words</a>
+                        <a href="downloads/talkie_ko_ja_sentences.json" class="download-link" style="margin-left: 10px;"
+                            download>Download Sentences</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

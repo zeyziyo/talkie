@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../l10n/app_localizations.dart';
+import '../services/material_download_service.dart'; // Added import
 
 /// Mode 2: 학습 자료 및 복습 모드
 /// - 기본적으로 학습 자료를 선택하여 학습
@@ -103,6 +104,36 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                 ),
               ),
 
+            // Word/Sentence Toggle (Added above Dropdown)
+             Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: SegmentedButton<String>(
+                segments: [
+                  ButtonSegment<String>(
+                    value: 'word', 
+                    label: Text(l10n.labelWord), 
+                    icon: const Icon(Icons.abc)
+                  ),
+                  ButtonSegment<String>(
+                    value: 'sentence', 
+                    label: Text(l10n.labelSentence), 
+                    icon: const Icon(Icons.short_text)
+                  ),
+                ],
+                selected: {appState.recordTypeFilter == 'all' ? 'word' : appState.recordTypeFilter}, // Default 'all' to 'word'
+                onSelectionChanged: (Set<String> newSelection) {
+                  appState.setRecordTypeFilter(newSelection.first); // This filters the records list
+                },
+                style: ButtonStyle(
+                  visualDensity: VisualDensity.standard,
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                ),
+                showSelectedIcon: true,
+              ),
+            ),
+            
+            const SizedBox(height: 12),
+
             // Material selector
             Container(
               key: widget.materialDropdownKey,
@@ -115,12 +146,28 @@ class _Mode2WidgetState extends State<Mode2Widget> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    l10n.selectStudyMaterial,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        l10n.selectStudyMaterial,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      // Download Button
+                      TextButton.icon(
+                        onPressed: () => _showDownloadDialog(context, appState),
+                        icon: const Icon(Icons.download, size: 18),
+                        label: const Text('Samples', style: TextStyle(fontSize: 12)),
+                        style: TextButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          minimumSize: Size.zero,
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        ),
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 8),
                   DropdownButtonFormField<int>(
@@ -148,7 +195,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                   if (selectedMaterialId != null && selectedMaterialId != -1) ...[
                     const SizedBox(height: 16),
                     Padding(
-                      padding: const EdgeInsets.only(bottom: 0), // Removed extra padding
+                      padding: const EdgeInsets.only(bottom: 0),
                       child: Card(
                         elevation: 0,
                         color: Colors.grey[50],
@@ -182,27 +229,9 @@ class _Mode2WidgetState extends State<Mode2Widget> {
               ),
             ),
             
-            const SizedBox(height: 12),
-            
-            // Filter Selector
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: SegmentedButton<String>(
-                segments: [
-                  ButtonSegment<String>(value: 'all', label: Text(l10n.filterAll), icon: const Icon(Icons.list)),
-                  ButtonSegment<String>(value: 'word', label: Text(l10n.labelWord), icon: const Icon(Icons.abc)),
-                  ButtonSegment<String>(value: 'sentence', label: Text(l10n.labelSentence), icon: const Icon(Icons.short_text)),
-                ],
-                selected: {appState.recordTypeFilter},
-                onSelectionChanged: (Set<String> newSelection) {
-                  appState.setRecordTypeFilter(newSelection.first);
-                },
-                 style: ButtonStyle(
-                  visualDensity: VisualDensity.compact,
-                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                ),
-              ),
-            ),
+            const SizedBox(height: 16),
+
+            // Old Filter Selector REMOVED
 
             const SizedBox(height: 16),
             
@@ -302,6 +331,82 @@ class _Mode2WidgetState extends State<Mode2Widget> {
           ],
         );
       },
+    );
+  }
+
+  void _showDownloadDialog(BuildContext context, AppState appState) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Download Sample Materials'),
+        content: SizedBox(
+          width: double.maxFinite,
+          child: ListView.builder(
+            shrinkWrap: true,
+            itemCount: MaterialDownloadService.availableMaterials.length,
+            itemBuilder: (context, index) {
+              final item = MaterialDownloadService.availableMaterials[index];
+              return ListTile(
+                leading: const Icon(Icons.cloud_download),
+                title: Text(item['label']!),
+                subtitle: Text(item['subject']!),
+                onTap: () async {
+                  Navigator.pop(context); // Close dialog
+                  
+                  // Show loading snackbar
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Downloading material...')),
+                  );
+                  
+                  // Download
+                  final result = await MaterialDownloadService.downloadMaterial(item['fileName']!);
+                  
+                  if (result['success']) {
+                    // Import
+                    final importResult = await appState.importJsonWithMetadata(
+                      result['content'], 
+                      fileName: item['fileName']
+                    );
+                    
+                    if (context.mounted) {
+                      if (importResult['success']) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text('Imported ${importResult['imported']} records successfully!'),
+                            backgroundColor: Colors.green,
+                          ),
+                        );
+                      } else {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text('Import failed: ${importResult['errors'].join(", ")}'),
+                            backgroundColor: Colors.red,
+                          ),
+                        );
+                      }
+                    }
+                  } else {
+                    if (context.mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Download failed: ${result['error']}'),
+                          backgroundColor: Colors.red,
+                        ),
+                      );
+                    }
+                  }
+                },
+              );
+            },
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Close'),
+          ),
+        ],
+      ),
     );
   }
   

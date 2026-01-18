@@ -1,0 +1,504 @@
+{
+    "subject": "Basic Words",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "ja",
+    "default_type": "word",
+    "entries": [
+        {
+            "source_text": "사과",
+            "target_text": "リンゴ",
+            "type": "word"
+        },
+        {
+            "source_text": "바나나",
+            "target_text": "バナナ",
+            "type": "word"
+        },
+        {
+            "source_text": "물",
+            "target_text": "水",
+            "type": "word"
+        },
+        {
+            "source_text": "밥",
+            "target_text": "ご飯",
+            "type": "word"
+        },
+        {
+            "source_text": "빵",
+            "target_text": "パン",
+            "type": "word"
+        },
+        {
+            "source_text": "우유",
+            "target_text": "牛乳",
+            "type": "word"
+        },
+        {
+            "source_text": "커피",
+            "target_text": "コーヒー",
+            "type": "word"
+        },
+        {
+            "source_text": "차",
+            "target_text": "お茶",
+            "type": "word"
+        },
+        {
+            "source_text": "고기",
+            "target_text": "肉",
+            "type": "word"
+        },
+        {
+            "source_text": "생선",
+            "target_text": "魚",
+            "type": "word"
+        },
+        {
+            "source_text": "야채",
+            "target_text": "野菜",
+            "type": "word"
+        },
+        {
+            "source_text": "과일",
+            "target_text": "果物",
+            "type": "word"
+        },
+        {
+            "source_text": "계란",
+            "target_text": "卵",
+            "type": "word"
+        },
+        {
+            "source_text": "소금",
+            "target_text": "塩",
+            "type": "word"
+        },
+        {
+            "source_text": "설탕",
+            "target_text": "砂糖",
+            "type": "word"
+        },
+        {
+            "source_text": "집",
+            "target_text": "家",
+            "type": "word"
+        },
+        {
+            "source_text": "학교",
+            "target_text": "学校",
+            "type": "word"
+        },
+        {
+            "source_text": "회사",
+            "target_text": "会社",
+            "type": "word"
+        },
+        {
+            "source_text": "병원",
+            "target_text": "病院",
+            "type": "word"
+        },
+        {
+            "source_text": "공원",
+            "target_text": "公園",
+            "type": "word"
+        },
+        {
+            "source_text": "가게",
+            "target_text": "店",
+            "type": "word"
+        },
+        {
+            "source_text": "시장",
+            "target_text": "市場",
+            "type": "word"
+        },
+        {
+            "source_text": "식당",
+            "target_text": "レストラン",
+            "type": "word"
+        },
+        {
+            "source_text": "화장실",
+            "target_text": "トイレ",
+            "type": "word"
+        },
+        {
+            "source_text": "방",
+            "target_text": "部屋",
+            "type": "word"
+        },
+        {
+            "source_text": "문",
+            "target_text": "ドア",
+            "type": "word"
+        },
+        {
+            "source_text": "창문",
+            "target_text": "窓",
+            "type": "word"
+        },
+        {
+            "source_text": "책상",
+            "target_text": "机",
+            "type": "word"
+        },
+        {
+            "source_text": "의자",
+            "target_text": "椅子",
+            "type": "word"
+        },
+        {
+            "source_text": "침대",
+            "target_text": "ベッド",
+            "type": "word"
+        },
+        {
+            "source_text": "사람",
+            "target_text": "人",
+            "type": "word"
+        },
+        {
+            "source_text": "남자",
+            "target_text": "男性",
+            "type": "word"
+        },
+        {
+            "source_text": "여자",
+            "target_text": "女性",
+            "type": "word"
+        },
+        {
+            "source_text": "아이",
+            "target_text": "子供",
+            "type": "word"
+        },
+        {
+            "source_text": "가족",
+            "target_text": "家族",
+            "type": "word"
+        },
+        {
+            "source_text": "아버지",
+            "target_text": "父",
+            "type": "word"
+        },
+        {
+            "source_text": "어머니",
+            "target_text": "母",
+            "type": "word"
+        },
+        {
+            "source_text": "친구",
+            "target_text": "友達",
+            "type": "word"
+        },
+        {
+            "source_text": "선생님",
+            "target_text": "先生",
+            "type": "word"
+        },
+        {
+            "source_text": "의사",
+            "target_text": "医者",
+            "type": "word"
+        },
+        {
+            "source_text": "머리",
+            "target_text": "頭",
+            "type": "word"
+        },
+        {
+            "source_text": "눈",
+            "target_text": "目",
+            "type": "word"
+        },
+        {
+            "source_text": "코",
+            "target_text": "鼻",
+            "type": "word"
+        },
+        {
+            "source_text": "입",
+            "target_text": "口",
+            "type": "word"
+        },
+        {
+            "source_text": "손",
+            "target_text": "手",
+            "type": "word"
+        },
+        {
+            "source_text": "발",
+            "target_text": "足",
+            "type": "word"
+        },
+        {
+            "source_text": "팔",
+            "target_text": "腕",
+            "type": "word"
+        },
+        {
+            "source_text": "다리",
+            "target_text": "脚",
+            "type": "word"
+        },
+        {
+            "source_text": "옷",
+            "target_text": "服",
+            "type": "word"
+        },
+        {
+            "source_text": "신발",
+            "target_text": "靴",
+            "type": "word"
+        },
+        {
+            "source_text": "강아지",
+            "target_text": "犬",
+            "type": "word"
+        },
+        {
+            "source_text": "고양이",
+            "target_text": "猫",
+            "type": "word"
+        },
+        {
+            "source_text": "새",
+            "target_text": "鳥",
+            "type": "word"
+        },
+        {
+            "source_text": "나무",
+            "target_text": "木",
+            "type": "word"
+        },
+        {
+            "source_text": "꽃",
+            "target_text": "花",
+            "type": "word"
+        },
+        {
+            "source_text": "하늘",
+            "target_text": "空",
+            "type": "word"
+        },
+        {
+            "source_text": "해",
+            "target_text": "太陽",
+            "type": "word"
+        },
+        {
+            "source_text": "달",
+            "target_text": "月",
+            "type": "word"
+        },
+        {
+            "source_text": "별",
+            "target_text": "星",
+            "type": "word"
+        },
+        {
+            "source_text": "바다",
+            "target_text": "海",
+            "type": "word"
+        },
+        {
+            "source_text": "시간",
+            "target_text": "時間",
+            "type": "word"
+        },
+        {
+            "source_text": "날",
+            "target_text": "日",
+            "type": "word"
+        },
+        {
+            "source_text": "밤",
+            "target_text": "夜",
+            "type": "word"
+        },
+        {
+            "source_text": "주",
+            "target_text": "週",
+            "type": "word"
+        },
+        {
+            "source_text": "월",
+            "target_text": "月",
+            "type": "word"
+        },
+        {
+            "source_text": "년",
+            "target_text": "年",
+            "type": "word"
+        },
+        {
+            "source_text": "오늘",
+            "target_text": "今日",
+            "type": "word"
+        },
+        {
+            "source_text": "내일",
+            "target_text": "明日",
+            "type": "word"
+        },
+        {
+            "source_text": "어제",
+            "target_text": "昨日",
+            "type": "word"
+        },
+        {
+            "source_text": "지금",
+            "target_text": "今",
+            "type": "word"
+        },
+        {
+            "source_text": "숫자",
+            "target_text": "数字",
+            "type": "word"
+        },
+        {
+            "source_text": "하나",
+            "target_text": "一",
+            "type": "word"
+        },
+        {
+            "source_text": "둘",
+            "target_text": "二",
+            "type": "word"
+        },
+        {
+            "source_text": "셋",
+            "target_text": "三",
+            "type": "word"
+        },
+        {
+            "source_text": "많다",
+            "target_text": "多い",
+            "type": "word"
+        },
+        {
+            "source_text": "적다",
+            "target_text": "少ない",
+            "type": "word"
+        },
+        {
+            "source_text": "크다",
+            "target_text": "大きい",
+            "type": "word"
+        },
+        {
+            "source_text": "작다",
+            "target_text": "小さい",
+            "type": "word"
+        },
+        {
+            "source_text": "멀다",
+            "target_text": "遠い",
+            "type": "word"
+        },
+        {
+            "source_text": "가깝다",
+            "target_text": "近い",
+            "type": "word"
+        },
+        {
+            "source_text": "좋다",
+            "target_text": "良い",
+            "type": "word"
+        },
+        {
+            "source_text": "나쁘다",
+            "target_text": "悪い",
+            "type": "word"
+        },
+        {
+            "source_text": "덥다",
+            "target_text": "暑い",
+            "type": "word"
+        },
+        {
+            "source_text": "춥다",
+            "target_text": "寒い",
+            "type": "word"
+        },
+        {
+            "source_text": "쉽다",
+            "target_text": "簡単",
+            "type": "word"
+        },
+        {
+            "source_text": "어렵다",
+            "target_text": "難しい",
+            "type": "word"
+        },
+        {
+            "source_text": "예쁘다",
+            "target_text": "きれい",
+            "type": "word"
+        },
+        {
+            "source_text": "빠르다",
+            "target_text": "速い",
+            "type": "word"
+        },
+        {
+            "source_text": "느리다",
+            "target_text": "遅い",
+            "type": "word"
+        },
+        {
+            "source_text": "가다",
+            "target_text": "行く",
+            "type": "word"
+        },
+        {
+            "source_text": "오다",
+            "target_text": "来る",
+            "type": "word"
+        },
+        {
+            "source_text": "먹다",
+            "target_text": "食べる",
+            "type": "word"
+        },
+        {
+            "source_text": "마시다",
+            "target_text": "飲む",
+            "type": "word"
+        },
+        {
+            "source_text": "보다",
+            "target_text": "見る",
+            "type": "word"
+        },
+        {
+            "source_text": "듣다",
+            "target_text": "聞く",
+            "type": "word"
+        },
+        {
+            "source_text": "자다",
+            "target_text": "寝る",
+            "type": "word"
+        },
+        {
+            "source_text": "일하다",
+            "target_text": "働く",
+            "type": "word"
+        },
+        {
+            "source_text": "공부하다",
+            "target_text": "勉強する",
+            "type": "word"
+        },
+        {
+            "source_text": "사랑하다",
+            "target_text": "愛する",
+            "type": "word"
+        }
+    ]
+}

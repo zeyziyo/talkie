@@ -347,7 +347,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialM2ListTitle => '학습 목록';
 
   @override
-  String get tutorialM2ListDesc => '저장된 카드를 확인하고, 뒤집어서 정답을 확인하세요. (길게 누르면 삭제)';
+  String get tutorialM2ListDesc =>
+      '이 카드를 길게 누르면(Long Click) 삭제할 수 있습니다. 저장된 문장을 확인하고 뒤집어보세요.';
 
   @override
   String get tutorialM3SelectTitle => '자료 선택';
@@ -408,4 +409,118 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get copiedToClipboard => '클립보드에 복사되었습니다!';
+
+  @override
+  String get tutorialContextTitle => '상황/문맥 태그';
+
+  @override
+  String get tutorialContextDesc =>
+      '같은 문장이라도 상황(예: 아침, 저녁)을 적어두면 별도로 저장할 수 있어요.';
+
+  @override
+  String get tutorialM1ToggleTitle => '단어/문장 모드';
+
+  @override
+  String get tutorialM1ToggleDesc =>
+      '단어와 문장 모드를 여기서 전환할 수 있습니다. 단어는 목록에서 더 크게 표시됩니다.';
+
+  @override
+  String get tutorialM3WordsTitle => '단어만 연습';
+
+  @override
+  String get tutorialM3WordsDesc => '이 옵션을 체크하면 저장된 \'단어\'만 연습합니다.';
+
+  @override
+  String get tutorialGameTitle => 'Rain Drop 게임';
+
+  @override
+  String get tutorialGameDesc =>
+      '단어 게임을 통해 학습한 내용을 확인해보세요! 떨어지는 단어의 의미를 말해서 점수를 얻으세요.';
+
+  @override
+  String get labelType => '종류:';
+
+  @override
+  String get labelWord => '단어';
+
+  @override
+  String get labelSentence => '문장';
+
+  @override
+  String get contextTagLabel => '문맥/상황 (선택사항) - 예: 아침인사, 존댓말';
+
+  @override
+  String get contextTagHint => '나중에 구분하기 쉽도록 상황을 적어주세요';
+
+  @override
+  String get translationLimitExceeded => '번역 한도 초과';
+
+  @override
+  String get translationLimitMessage =>
+      '일일 무료 번역(5회)을 모두 사용했습니다.\\n\\n광고를 보고 5회를 즉시 충전하시겠습니까?';
+
+  @override
+  String get watchAdAndRefill => '광고 보고 충전 (+5회)';
+
+  @override
+  String get translationRefilled => '번역 횟수가 5회 충전되었습니다!';
+
+  @override
+  String get adLoading => '광고를 불러오는 중입니다. 잠시 후 다시 시도해주세요.';
+
+  @override
+  String get reviewAll => '전체 복습';
+
+  @override
+  String totalRecords(int count) {
+    return '총 $count개의 기록 (전체 보기)';
+  }
+
+  @override
+  String get filterAll => '전체';
+
+  @override
+  String get practiceWordsOnly => '단어만 연습 (Words Only)';
+
+  @override
+  String get resetPracticeHistory => '연습 기록 초기화';
+
+  @override
+  String get retry => '다시 시도?';
+
+  @override
+  String get noStudyMaterial => '학습 자료가 없습니다.';
+
+  @override
+  String get rainDropGame => 'Rain Drop Game';
+
+  @override
+  String get rainDropGameDesc => '떨어지는 단어의 번역을 말하세요!';
+
+  @override
+  String get gameDirection => '게임 방향 (Game Direction)';
+
+  @override
+  String get speed => '속도';
+
+  @override
+  String get startGame => '게임 시작';
+
+  @override
+  String get gameOver => 'Game Over';
+
+  @override
+  String get finalScore => '최종 점수';
+
+  @override
+  String get playAgain => '다시 하기';
+
+  @override
+  String get speakNow => '말하세요! (Speak!)';
+
+  @override
+  String get scoreLabel => '점수';
+
+  @override
+  String get viewOnlineGuide => '온라인 가이드 보기';
 }
