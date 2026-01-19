@@ -1128,6 +1128,12 @@ abstract class AppLocalizations {
   /// **'Get Materials'**
   String get getMaterials;
 
+  /// No description provided for @swapLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'Swap Languages'**
+  String get swapLanguages;
+
   /// No description provided for @next.
   ///
   /// In en, this message translates to:

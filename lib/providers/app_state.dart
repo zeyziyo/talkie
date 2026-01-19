@@ -583,6 +583,27 @@ class AppState extends ChangeNotifier {
     
     notifyListeners();
   }
+
+  void swapLanguages() {
+    final temp = _sourceLang;
+    _sourceLang = _targetLang;
+    _targetLang = temp;
+    
+    _saveSettings(); // Save persistence
+    
+     // Sync Review Tab Filter
+    _selectedReviewLanguage = _targetLang;
+    
+    // Clear texts as direction flipped
+    clearTexts();
+    
+    // Reload Mode 2/3 for consistency
+    loadStudyRecords();
+    selectMaterial(null);
+    loadStudyMaterials();
+    
+    notifyListeners();
+  }
   
   void clearTexts() {
     _sourceText = '';

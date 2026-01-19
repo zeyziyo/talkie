@@ -208,7 +208,6 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                     const SizedBox(width: 12),
                                     Expanded(
                                       child: SegmentedButton<bool>(
-                                        key: widget.toggleButtonKey, // Assign Toggle Key
                                         segments: [
                                           ButtonSegment<bool>(
                                             value: true, 

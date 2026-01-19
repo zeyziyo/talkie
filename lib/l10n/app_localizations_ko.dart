@@ -528,5 +528,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get getMaterials => '자료 받기';
 
   @override
+  String get swapLanguages => '언어 전환';
+
+  @override
   String get next => '다음';
 }

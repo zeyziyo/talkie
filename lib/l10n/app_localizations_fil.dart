@@ -543,5 +543,8 @@ class AppLocalizationsFil extends AppLocalizations {
   String get getMaterials => 'Get Materials';
 
   @override
+  String get swapLanguages => 'Swap Languages';
+
+  @override
   String get next => 'Next';
 }

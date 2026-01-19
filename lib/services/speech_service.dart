@@ -97,14 +97,14 @@ class SpeechService {
       await session.configure(AudioSessionConfiguration(
         avAudioSessionCategory: AVAudioSessionCategory.playback,
         avAudioSessionCategoryOptions: AVAudioSessionCategoryOptions.duckOthers | 
-                                      AVAudioSessionCategoryOptions.defaultToSpeaker, // Fix: Force speaker
-        avAudioSessionMode: AVAudioSessionMode.defaultMode, // Fix: Use default mode instead of spokenAudio to avoid voice processing effects
+                                      AVAudioSessionCategoryOptions.defaultToSpeaker,
+        avAudioSessionMode: AVAudioSessionMode.defaultMode,
         androidAudioAttributes: const AndroidAudioAttributes(
-          contentType: AndroidAudioContentType.music, // Force Music type
+          contentType: AndroidAudioContentType.music,
           flags: AndroidAudioFlags.none,
           usage: AndroidAudioUsage.media, 
         ),
-        androidAudioFocusGainType: AndroidAudioFocusGainType.gain,
+        androidAudioFocusGainType: AndroidAudioFocusGainType.gainTransientMayDuck, // Critical Fix: Allow ducking instead of pausing/stopping
         androidWillPauseWhenDucked: false,
       ));
 
