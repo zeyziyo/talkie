@@ -450,5 +450,6 @@
   "tutorialGameTitle": "Rain Drop Game",
   "tutorialM3WordsTitle": "Practice Words",
   "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
-  "viewOnlineGuide": "View Online User Guide"
+  "viewOnlineGuide": "View Online User Guide",
+  "getMaterials": "Get Materials"
 }

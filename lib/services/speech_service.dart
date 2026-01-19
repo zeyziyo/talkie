@@ -148,9 +148,8 @@ class SpeechService {
         // Users must manually tap the mic button to stop, or wait for timeout
       },
       localeId: lang,
-      onDevice: true, // Force on-device recognition to avoid network audio mode switches
-      // Android: Force on-device recognition (offline) if available for better performance
-      // Explicitly set a long listen duration to avoid default 30s timeout if needed
+      onDevice: false, // Changed to false to allow network-based recognition for better accuracy
+      // Android: Force on-device recognition (offline) was causing issues where offline packs are missing
       listenFor: const Duration(seconds: 60),
       
       listenOptions: stt.SpeechListenOptions(

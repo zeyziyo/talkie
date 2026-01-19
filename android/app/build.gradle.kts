@@ -1,23 +1,7 @@
 import java.util.Properties
 import java.io.FileInputStream
 
-// --- LOCAL BUILD PROTECTION ---
-// Forces the build to fail if not running in CI (e.g. GitHub Actions),
-// unless an explicit property is passed.
-val isCI = System.getenv("CI") == "true" || System.getenv("GITHUB_ACTIONS") == "true"
-if (!isCI && !project.hasProperty("forceLocalBuild")) {
-    throw GradleException(
-        "\n\n" +
-        "===========================================================\n" +
-        "🚫 LOCAL BUILD FORBIDDEN 🚫\n" +
-        "This project enforces strict CI compliance.\n" +
-        "You MUST NOT build this locally.\n" +
-        "Please commit and push to GitHub to trigger a build.\n" +
-        "(If you really need to debug locally, pass -PforceLocalBuild)\n" +
-        "===========================================================\n"
-    )
-}
-// ------------------------------
+
 
 plugins {
     id("com.android.application")

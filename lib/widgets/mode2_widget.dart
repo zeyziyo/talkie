@@ -165,7 +165,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                            }
                         },
                         icon: const Icon(Icons.public, size: 18),
-                        label: const Text('Get Materials', style: TextStyle(fontSize: 12)),
+                        label: Text(l10n.getMaterials, style: const TextStyle(fontSize: 12)),
                         style: TextButton.styleFrom(
                           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                           minimumSize: Size.zero,

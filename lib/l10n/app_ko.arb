@@ -450,5 +450,6 @@
   "tutorialM1ToggleTitle": "단어/문장 모드",
   "tutorialGameTitle": "Rain Drop 게임",
   "tutorialM3WordsTitle": "단어만 연습",
-  "tutorialM1ToggleDesc": "단어와 문장 모드를 여기서 전환할 수 있습니다. 단어는 목록에서 더 크게 표시됩니다."
+  "tutorialM1ToggleDesc": "단어와 문장 모드를 여기서 전환할 수 있습니다. 단어는 목록에서 더 크게 표시됩니다.",
+  "getMaterials": "자료 받기"
 }
