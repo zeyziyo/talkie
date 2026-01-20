@@ -1,0 +1,609 @@
+{
+    "subject": "기초 동사 (Basic Verbs)",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "en",
+    "default_type": "word",
+    "entries": [
+        {
+            "source_text": "가다",
+            "target_text": "go",
+            "note": "이동 (멀어짐)",
+            "type": "word"
+        },
+        {
+            "source_text": "오다",
+            "target_text": "come",
+            "note": "이동 (가까워짐)",
+            "type": "word"
+        },
+        {
+            "source_text": "먹다",
+            "target_text": "eat",
+            "note": "음식 섭취",
+            "type": "word"
+        },
+        {
+            "source_text": "마시다",
+            "target_text": "drink",
+            "note": "액체 섭취",
+            "type": "word"
+        },
+        {
+            "source_text": "보다",
+            "target_text": "see",
+            "note": "지각 (시각)",
+            "type": "word"
+        },
+        {
+            "source_text": "보다",
+            "target_text": "watch",
+            "note": "관찰/시청",
+            "type": "word"
+        },
+        {
+            "source_text": "보다",
+            "target_text": "look",
+            "note": "쳐다보다",
+            "type": "word"
+        },
+        {
+            "source_text": "듣다",
+            "target_text": "hear",
+            "note": "지각 (청각)",
+            "type": "word"
+        },
+        {
+            "source_text": "듣다",
+            "target_text": "listen",
+            "note": "경청하다",
+            "type": "word"
+        },
+        {
+            "source_text": "자다",
+            "target_text": "sleep",
+            "note": "수면",
+            "type": "word"
+        },
+        {
+            "source_text": "일어나는",
+            "target_text": "wake up",
+            "note": "기상",
+            "type": "word"
+        },
+        {
+            "source_text": "일하다",
+            "target_text": "work",
+            "note": "노동",
+            "type": "word"
+        },
+        {
+            "source_text": "공부하다",
+            "target_text": "study",
+            "note": "학습",
+            "type": "word"
+        },
+        {
+            "source_text": "배우다",
+            "target_text": "learn",
+            "note": "습득",
+            "type": "word"
+        },
+        {
+            "source_text": "가르치다",
+            "target_text": "teach",
+            "note": "교육",
+            "type": "word"
+        },
+        {
+            "source_text": "사랑하다",
+            "target_text": "love",
+            "note": "감정",
+            "type": "word"
+        },
+        {
+            "source_text": "좋아하다",
+            "target_text": "like",
+            "note": "선호",
+            "type": "word"
+        },
+        {
+            "source_text": "싫어하다",
+            "target_text": "hate",
+            "note": "혐오",
+            "type": "word"
+        },
+        {
+            "source_text": "원하다",
+            "target_text": "want",
+            "note": "소망",
+            "type": "word"
+        },
+        {
+            "source_text": "필요하다",
+            "target_text": "need",
+            "note": "필요",
+            "type": "word"
+        },
+        {
+            "source_text": "주다",
+            "target_text": "give",
+            "note": "수여",
+            "type": "word"
+        },
+        {
+            "source_text": "받다",
+            "target_text": "receive",
+            "note": "수령",
+            "type": "word"
+        },
+        {
+            "source_text": "사다",
+            "target_text": "buy",
+            "note": "구매",
+            "type": "word"
+        },
+        {
+            "source_text": "팔다",
+            "target_text": "sell",
+            "note": "판매",
+            "type": "word"
+        },
+        {
+            "source_text": "지불하다",
+            "target_text": "pay",
+            "note": "결제",
+            "type": "word"
+        },
+        {
+            "source_text": "살다",
+            "target_text": "live",
+            "note": "거주/생존",
+            "type": "word"
+        },
+        {
+            "source_text": "죽다",
+            "target_text": "die",
+            "note": "사망",
+            "type": "word"
+        },
+        {
+            "source_text": "만나다",
+            "target_text": "meet",
+            "note": "조우",
+            "type": "word"
+        },
+        {
+            "source_text": "헤어지다",
+            "target_text": "part",
+            "note": "이별",
+            "type": "word"
+        },
+        {
+            "source_text": "놀다",
+            "target_text": "play",
+            "note": "유희",
+            "type": "word"
+        },
+        {
+            "source_text": "쉬다",
+            "target_text": "rest",
+            "note": "휴식",
+            "type": "word"
+        },
+        {
+            "source_text": "걷다",
+            "target_text": "walk",
+            "note": "보행",
+            "type": "word"
+        },
+        {
+            "source_text": "달리다",
+            "target_text": "run",
+            "note": "질주",
+            "type": "word"
+        },
+        {
+            "source_text": "앉다",
+            "target_text": "sit",
+            "note": "착석",
+            "type": "word"
+        },
+        {
+            "source_text": "서다",
+            "target_text": "stand",
+            "note": "기립",
+            "type": "word"
+        },
+        {
+            "source_text": "눕다",
+            "target_text": "lie",
+            "note": "누움",
+            "type": "word"
+        },
+        {
+            "source_text": "열다",
+            "target_text": "open",
+            "note": "개방",
+            "type": "word"
+        },
+        {
+            "source_text": "닫다",
+            "target_text": "close",
+            "note": "폐쇄",
+            "type": "word"
+        },
+        {
+            "source_text": "시작하다",
+            "target_text": "start",
+            "note": "개시",
+            "type": "word"
+        },
+        {
+            "source_text": "끝나다",
+            "target_text": "finish",
+            "note": "종료",
+            "type": "word"
+        },
+        {
+            "source_text": "멈추다",
+            "target_text": "stop",
+            "note": "중지",
+            "type": "word"
+        },
+        {
+            "source_text": "기다리다",
+            "target_text": "wait",
+            "note": "대기",
+            "type": "word"
+        },
+        {
+            "source_text": "생각하다",
+            "target_text": "think",
+            "note": "사고",
+            "type": "word"
+        },
+        {
+            "source_text": "알다",
+            "target_text": "know",
+            "note": "인지",
+            "type": "word"
+        },
+        {
+            "source_text": "이해하다",
+            "target_text": "understand",
+            "note": "이해",
+            "type": "word"
+        },
+        {
+            "source_text": "기억하다",
+            "target_text": "remember",
+            "note": "기억",
+            "type": "word"
+        },
+        {
+            "source_text": "잊다",
+            "target_text": "forget",
+            "note": "망각",
+            "type": "word"
+        },
+        {
+            "source_text": "믿다",
+            "target_text": "believe",
+            "note": "신뢰",
+            "type": "word"
+        },
+        {
+            "source_text": "희망하다",
+            "target_text": "hope",
+            "note": "희망",
+            "type": "word"
+        },
+        {
+            "source_text": "느끼다",
+            "target_text": "feel",
+            "note": "감각",
+            "type": "word"
+        },
+        {
+            "source_text": "말하다",
+            "target_text": "say",
+            "note": "발화 (내용)",
+            "type": "word"
+        },
+        {
+            "source_text": "말하다",
+            "target_text": "tell",
+            "note": "발화 (대상에게)",
+            "type": "word"
+        },
+        {
+            "source_text": "말하다",
+            "target_text": "speak",
+            "note": "발화 (언어/능력)",
+            "type": "word"
+        },
+        {
+            "source_text": "이야기하다",
+            "target_text": "talk",
+            "note": "대화",
+            "type": "word"
+        },
+        {
+            "source_text": "묻다",
+            "target_text": "ask",
+            "note": "질문/요청",
+            "type": "word"
+        },
+        {
+            "source_text": "대답하다",
+            "target_text": "answer",
+            "note": "응답",
+            "type": "word"
+        },
+        {
+            "source_text": "쓰다",
+            "target_text": "write",
+            "note": "작성",
+            "type": "word"
+        },
+        {
+            "source_text": "읽다",
+            "target_text": "read",
+            "note": "독서",
+            "type": "word"
+        },
+        {
+            "source_text": "그리다",
+            "target_text": "draw",
+            "note": "그림",
+            "type": "word"
+        },
+        {
+            "source_text": "보여주다",
+            "target_text": "show",
+            "note": "제시",
+            "type": "word"
+        },
+        {
+            "source_text": "입다",
+            "target_text": "wear",
+            "note": "착용 (옷)",
+            "type": "word"
+        },
+        {
+            "source_text": "벗다",
+            "target_text": "take off",
+            "note": "탈의",
+            "type": "word"
+        },
+        {
+            "source_text": "씻다",
+            "target_text": "wash",
+            "note": "세척",
+            "type": "word"
+        },
+        {
+            "source_text": "청소하다",
+            "target_text": "clean",
+            "note": "청소",
+            "type": "word"
+        },
+        {
+            "source_text": "요리하다",
+            "target_text": "cook",
+            "note": "요리",
+            "type": "word"
+        },
+        {
+            "source_text": "자르다",
+            "target_text": "cut",
+            "note": "절단",
+            "type": "word"
+        },
+        {
+            "source_text": "사용하다",
+            "target_text": "use",
+            "note": "사용",
+            "type": "word"
+        },
+        {
+            "source_text": "만들다",
+            "target_text": "make",
+            "note": "제작",
+            "type": "word"
+        },
+        {
+            "source_text": "고치다",
+            "target_text": "fix",
+            "note": "수리",
+            "type": "word"
+        },
+        {
+            "source_text": "부수다",
+            "target_text": "break",
+            "note": "파괴/고장",
+            "type": "word"
+        },
+        {
+            "source_text": "찾다",
+            "target_text": "find",
+            "note": "발견",
+            "type": "word"
+        },
+        {
+            "source_text": "잃어버리다",
+            "target_text": "lose",
+            "note": "분실/패배",
+            "type": "word"
+        },
+        {
+            "source_text": "이기다",
+            "target_text": "win",
+            "note": "승리",
+            "type": "word"
+        },
+        {
+            "source_text": "돕다",
+            "target_text": "help",
+            "note": "조력",
+            "type": "word"
+        },
+        {
+            "source_text": "부르다",
+            "target_text": "call",
+            "note": "호칭/전화",
+            "type": "word"
+        },
+        {
+            "source_text": "보내다",
+            "target_text": "send",
+            "note": "전송",
+            "type": "word"
+        },
+        {
+            "source_text": "가져오다",
+            "target_text": "bring",
+            "note": "지참 (오다)",
+            "type": "word"
+        },
+        {
+            "source_text": "가져가다",
+            "target_text": "take",
+            "note": "지참 (가다)",
+            "type": "word"
+        },
+        {
+            "source_text": "두다",
+            "target_text": "put",
+            "note": "배치",
+            "type": "word"
+        },
+        {
+            "source_text": "유지하다",
+            "target_text": "keep",
+            "note": "보관/유지",
+            "type": "word"
+        },
+        {
+            "source_text": "잡다",
+            "target_text": "catch",
+            "note": "포획",
+            "type": "word"
+        },
+        {
+            "source_text": "던지다",
+            "target_text": "throw",
+            "note": "투척",
+            "type": "word"
+        },
+        {
+            "source_text": "밀다",
+            "target_text": "push",
+            "note": "밈",
+            "type": "word"
+        },
+        {
+            "source_text": "당기다",
+            "target_text": "pull",
+            "note": "당김",
+            "type": "word"
+        },
+        {
+            "source_text": "올라가다",
+            "target_text": "go up",
+            "note": "상승",
+            "type": "word"
+        },
+        {
+            "source_text": "내려가다",
+            "target_text": "go down",
+            "note": "하강",
+            "type": "word"
+        },
+        {
+            "source_text": "타다",
+            "target_text": "ride",
+            "note": "탑승",
+            "type": "word"
+        },
+        {
+            "source_text": "운전하다",
+            "target_text": "drive",
+            "note": "운전",
+            "type": "word"
+        },
+        {
+            "source_text": "날다",
+            "target_text": "fly",
+            "note": "비행",
+            "type": "word"
+        },
+        {
+            "source_text": "수영하다",
+            "target_text": "swim",
+            "note": "수영",
+            "type": "word"
+        },
+        {
+            "source_text": "노래하다",
+            "target_text": "sing",
+            "note": "가창",
+            "type": "word"
+        },
+        {
+            "source_text": "춤추다",
+            "target_text": "dance",
+            "note": "무용",
+            "type": "word"
+        },
+        {
+            "source_text": "여행하다",
+            "target_text": "travel",
+            "note": "여행",
+            "type": "word"
+        },
+        {
+            "source_text": "방문하다",
+            "target_text": "visit",
+            "note": "방문",
+            "type": "word"
+        },
+        {
+            "source_text": "즐기다",
+            "target_text": "enjoy",
+            "note": "향유",
+            "type": "word"
+        },
+        {
+            "source_text": "걱정하다",
+            "target_text": "worry",
+            "note": "근심",
+            "type": "word"
+        },
+        {
+            "source_text": "울다",
+            "target_text": "cry",
+            "note": "비탄",
+            "type": "word"
+        },
+        {
+            "source_text": "웃다",
+            "target_text": "laugh",
+            "note": "소리내어 웃음",
+            "type": "word"
+        },
+        {
+            "source_text": "미소짓다",
+            "target_text": "smile",
+            "note": "미소",
+            "type": "word"
+        },
+        {
+            "source_text": "결혼하다",
+            "target_text": "marry",
+            "note": "결혼",
+            "type": "word"
+        }
+    ]
+}

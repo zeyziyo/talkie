@@ -224,46 +224,6 @@ class _HomeScreenState extends State<HomeScreen> {
         radius: 12,
       ));
 
-    } else if (modeIndex == 3) {
-      // Mode 4: Game (Just show one target on the tab to explain it?)
-      // Or maybe explain the start button?
-      // Since Mode 4 is simple, let's just point to the Game Tab initially or Explain the concept.
-      // But we are ALREADY in the mode. 
-      // Let's assume we are inside the mode view.
-      // There is no specific key passed to Mode4Widget yet. 
-      // For now, let's just show a general welcome to the game mode using the Tab key as anchor?
-      // Or better, let's skip adding specific internal targets for Mode 4 for now and just rely on the Help Dialog,
-      // UNLESS we want to add keys to Mode4Widget.
-      // User asked for "comprehensive", so let's add a target for the "Start Game" button or Title if possible.
-      // However, Mode4Widget is stateless/simple.
-      // Let's stick to the Tab explanation or add a known key if possible.
-      // Actually, let's reuse the Tab Key to say "This is the game mode".
-      targets.add(_buildTarget(
-        _tabKey,
-        l10n.tutorialGameTitle,
-        l10n.tutorialGameDesc,
-        ContentAlign.bottom,
-      ));
-      targets.add(_buildTarget(
-        _mode4DirectionKey,
-        l10n.gameDirection,
-        l10n.tutorialGameDesc, // Or specific desc "Change learning direction"
-        ContentAlign.bottom,
-      ));
-      targets.add(_buildTarget(
-        _mode4SpeedKey,
-        l10n.speed,
-        l10n.tutorialM3IntervalDesc, // Reusing interval desc as it's similar (adjust wait time/speed) or we can use generic.
-        ContentAlign.top,
-        radius: 12,
-      ));
-      targets.add(_buildTarget(
-        _mode4StartKey,
-        l10n.startGame,
-        l10n.tutorialM3StartDesc, // Reusing 'Tap play to start...'
-        ContentAlign.top,
-        radius: 12,
-      ));
     }
 
     return targets;
@@ -460,9 +420,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         tooltip: l10n.tooltipSpeaking,
                       ),
                       ButtonSegment<int>(
-                        value: 3,
-                        icon: const Icon(Icons.videogame_asset),
-                        tooltip: l10n.rainDropGame,
+                        value: 2,
+                        icon: const Icon(Icons.record_voice_over),
+                        tooltip: l10n.tooltipSpeaking,
                       ),
                     ],
                   selected: {appState.currentMode},
@@ -512,13 +472,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     startStopButtonKey: _mode3StartButtonKey,
                     wordCheckKey: _mode3WordCheckKey, // Pass Checkbox Key
                   ); 
-                } else if (appState.currentMode == 3) {
-                  return Mode4Widget(
-                    gameStartButtonKey: _mode4StartKey,
-                    gameSpeedKey: _mode4SpeedKey,
-                    gameDirectionKey: _mode4DirectionKey,
-                  );
-                }
+                } 
                 return const SizedBox.shrink();
               },
             ),

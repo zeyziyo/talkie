@@ -1,0 +1,189 @@
+{
+    "subject": "기초 부사 (Basic Adverbs)",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "en",
+    "default_type": "word",
+    "entries": [
+        {
+            "source_text": "매우",
+            "target_text": "very",
+            "note": "강조",
+            "type": "word"
+        },
+        {
+            "source_text": "정말",
+            "target_text": "really",
+            "note": "강조/진실",
+            "type": "word"
+        },
+        {
+            "source_text": "너무",
+            "target_text": "too",
+            "note": "과도함/또한",
+            "type": "word"
+        },
+        {
+            "source_text": "항상",
+            "target_text": "always",
+            "note": "빈도 (100%)",
+            "type": "word"
+        },
+        {
+            "source_text": "보통",
+            "target_text": "usually",
+            "note": "빈도 (80-90%)",
+            "type": "word"
+        },
+        {
+            "source_text": "자주",
+            "target_text": "often",
+            "note": "빈도 (60-70%)",
+            "type": "word"
+        },
+        {
+            "source_text": "가끔",
+            "target_text": "sometimes",
+            "note": "빈도 (50%)",
+            "type": "word"
+        },
+        {
+            "source_text": "결코 ~않다",
+            "target_text": "never",
+            "note": "빈도 (0%)",
+            "type": "word"
+        },
+        {
+            "source_text": "빨리",
+            "target_text": "quickly",
+            "note": "속도",
+            "type": "word"
+        },
+        {
+            "source_text": "천천히",
+            "target_text": "slowly",
+            "note": "속도",
+            "type": "word"
+        },
+        {
+            "source_text": "잘",
+            "target_text": "well",
+            "note": "능력/상태",
+            "type": "word"
+        },
+        {
+            "source_text": "열심히",
+            "target_text": "hard",
+            "note": "노력",
+            "type": "word"
+        },
+        {
+            "source_text": "지금",
+            "target_text": "now",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "나중에",
+            "target_text": "later",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "곧",
+            "target_text": "soon",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "여기",
+            "target_text": "here",
+            "note": "장소",
+            "type": "word"
+        },
+        {
+            "source_text": "저기",
+            "target_text": "there",
+            "note": "장소",
+            "type": "word"
+        },
+        {
+            "source_text": "아마도",
+            "target_text": "maybe",
+            "note": "추측",
+            "type": "word"
+        },
+        {
+            "source_text": "다시",
+            "target_text": "again",
+            "note": "반복",
+            "type": "word"
+        },
+        {
+            "source_text": "함께",
+            "target_text": "together",
+            "note": "동반",
+            "type": "word"
+        },
+        {
+            "source_text": "거의",
+            "target_text": "almost",
+            "note": "정도",
+            "type": "word"
+        },
+        {
+            "source_text": "이미",
+            "target_text": "already",
+            "note": "완료",
+            "type": "word"
+        },
+        {
+            "source_text": "아직",
+            "target_text": "yet",
+            "note": "미완료 (부정문)",
+            "type": "word"
+        },
+        {
+            "source_text": "아직도",
+            "target_text": "still",
+            "note": "지속",
+            "type": "word"
+        },
+        {
+            "source_text": "일찍",
+            "target_text": "early",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "늦게",
+            "target_text": "late",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "멀리",
+            "target_text": "far",
+            "note": "거리",
+            "type": "word"
+        },
+        {
+            "source_text": "오늘",
+            "target_text": "today",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "내일",
+            "target_text": "tomorrow",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "어제",
+            "target_text": "yesterday",
+            "note": "시간",
+            "type": "word"
+        }
+    ]
+}

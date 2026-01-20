@@ -1,0 +1,579 @@
+{
+    "subject": "기초 명사 (Basic Nouns)",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "en",
+    "default_type": "word",
+    "entries": [
+        {
+            "source_text": "사람",
+            "target_text": "person",
+            "note": "인간",
+            "type": "word"
+        },
+        {
+            "source_text": "남자",
+            "target_text": "man",
+            "note": "성별",
+            "type": "word"
+        },
+        {
+            "source_text": "여자",
+            "target_text": "woman",
+            "note": "성별",
+            "type": "word"
+        },
+        {
+            "source_text": "아이",
+            "target_text": "child",
+            "note": "어린이",
+            "type": "word"
+        },
+        {
+            "source_text": "가족",
+            "target_text": "family",
+            "note": "집단",
+            "type": "word"
+        },
+        {
+            "source_text": "아버지",
+            "target_text": "father",
+            "note": "가족",
+            "type": "word"
+        },
+        {
+            "source_text": "어머니",
+            "target_text": "mother",
+            "note": "가족",
+            "type": "word"
+        },
+        {
+            "source_text": "부모님",
+            "target_text": "parents",
+            "note": "가족",
+            "type": "word"
+        },
+        {
+            "source_text": "아들",
+            "target_text": "son",
+            "note": "가족",
+            "type": "word"
+        },
+        {
+            "source_text": "딸",
+            "target_text": "daughter",
+            "note": "가족",
+            "type": "word"
+        },
+        {
+            "source_text": "형제",
+            "target_text": "brother",
+            "note": "가족",
+            "type": "word"
+        },
+        {
+            "source_text": "자매",
+            "target_text": "sister",
+            "note": "가족",
+            "type": "word"
+        },
+        {
+            "source_text": "친구",
+            "target_text": "friend",
+            "note": "관계",
+            "type": "word"
+        },
+        {
+            "source_text": "선생님",
+            "target_text": "teacher",
+            "note": "직업",
+            "type": "word"
+        },
+        {
+            "source_text": "학생",
+            "target_text": "student",
+            "note": "직업",
+            "type": "word"
+        },
+        {
+            "source_text": "의사",
+            "target_text": "doctor",
+            "note": "직업",
+            "type": "word"
+        },
+        {
+            "source_text": "경찰",
+            "target_text": "police",
+            "note": "직업",
+            "type": "word"
+        },
+        {
+            "source_text": "몸",
+            "target_text": "body",
+            "note": "신체",
+            "type": "word"
+        },
+        {
+            "source_text": "머리",
+            "target_text": "head",
+            "note": "신체 부위",
+            "type": "word"
+        },
+        {
+            "source_text": "눈",
+            "target_text": "eye",
+            "note": "신체 기관 (시각)",
+            "type": "word"
+        },
+        {
+            "source_text": "코",
+            "target_text": "nose",
+            "note": "신체 기관 (후각)",
+            "type": "word"
+        },
+        {
+            "source_text": "입",
+            "target_text": "mouth",
+            "note": "신체 기관 (미각)",
+            "type": "word"
+        },
+        {
+            "source_text": "귀",
+            "target_text": "ear",
+            "note": "신체 기관 (청각)",
+            "type": "word"
+        },
+        {
+            "source_text": "손",
+            "target_text": "hand",
+            "note": "신체 부위",
+            "type": "word"
+        },
+        {
+            "source_text": "발",
+            "target_text": "foot",
+            "note": "신체 부위",
+            "type": "word"
+        },
+        {
+            "source_text": "팔",
+            "target_text": "arm",
+            "note": "신체 부위",
+            "type": "word"
+        },
+        {
+            "source_text": "다리",
+            "target_text": "leg",
+            "note": "신체 부위",
+            "type": "word"
+        },
+        {
+            "source_text": "배",
+            "target_text": "stomach",
+            "note": "신체 부위 (복부)",
+            "type": "word"
+        },
+        {
+            "source_text": "등",
+            "target_text": "back",
+            "note": "신체 부위",
+            "type": "word"
+        },
+        {
+            "source_text": "집",
+            "target_text": "house",
+            "note": "주거",
+            "type": "word"
+        },
+        {
+            "source_text": "학교",
+            "target_text": "school",
+            "note": "교육 장소",
+            "type": "word"
+        },
+        {
+            "source_text": "회사",
+            "target_text": "company",
+            "note": "근무 장소",
+            "type": "word"
+        },
+        {
+            "source_text": "가게",
+            "target_text": "store",
+            "note": "상점",
+            "type": "word"
+        },
+        {
+            "source_text": "공원",
+            "target_text": "park",
+            "note": "공공 장소",
+            "type": "word"
+        },
+        {
+            "source_text": "병원",
+            "target_text": "hospital",
+            "note": "의료 기관",
+            "type": "word"
+        },
+        {
+            "source_text": "식당",
+            "target_text": "restaurant",
+            "note": "음식점",
+            "type": "word"
+        },
+        {
+            "source_text": "화장실",
+            "target_text": "bathroom",
+            "note": "시설",
+            "type": "word"
+        },
+        {
+            "source_text": "방",
+            "target_text": "room",
+            "note": "공간",
+            "type": "word"
+        },
+        {
+            "source_text": "부엌",
+            "target_text": "kitchen",
+            "note": "공간",
+            "type": "word"
+        },
+        {
+            "source_text": "문",
+            "target_text": "door",
+            "note": "출입구",
+            "type": "word"
+        },
+        {
+            "source_text": "창문",
+            "target_text": "window",
+            "note": "시설",
+            "type": "word"
+        },
+        {
+            "source_text": "책상",
+            "target_text": "desk",
+            "note": "가구",
+            "type": "word"
+        },
+        {
+            "source_text": "의자",
+            "target_text": "chair",
+            "note": "가구",
+            "type": "word"
+        },
+        {
+            "source_text": "침대",
+            "target_text": "bed",
+            "note": "가구",
+            "type": "word"
+        },
+        {
+            "source_text": "탁자",
+            "target_text": "table",
+            "note": "가구",
+            "type": "word"
+        },
+        {
+            "source_text": "물",
+            "target_text": "water",
+            "note": "음료",
+            "type": "word"
+        },
+        {
+            "source_text": "밥",
+            "target_text": "rice",
+            "note": "음식",
+            "type": "word"
+        },
+        {
+            "source_text": "빵",
+            "target_text": "bread",
+            "note": "음식",
+            "type": "word"
+        },
+        {
+            "source_text": "고기",
+            "target_text": "meat",
+            "note": "음식",
+            "type": "word"
+        },
+        {
+            "source_text": "과일",
+            "target_text": "fruit",
+            "note": "음식",
+            "type": "word"
+        },
+        {
+            "source_text": "사과",
+            "target_text": "apple",
+            "note": "과일",
+            "type": "word"
+        },
+        {
+            "source_text": "바나나",
+            "target_text": "banana",
+            "note": "과일",
+            "type": "word"
+        },
+        {
+            "source_text": "커피",
+            "target_text": "coffee",
+            "note": "음료",
+            "type": "word"
+        },
+        {
+            "source_text": "차",
+            "target_text": "tea",
+            "note": "마시는 차",
+            "type": "word"
+        },
+        {
+            "source_text": "우유",
+            "target_text": "milk",
+            "note": "음료",
+            "type": "word"
+        },
+        {
+            "source_text": "옷",
+            "target_text": "clothes",
+            "note": "의류",
+            "type": "word"
+        },
+        {
+            "source_text": "신발",
+            "target_text": "shoes",
+            "note": "신발",
+            "type": "word"
+        },
+        {
+            "source_text": "모자",
+            "target_text": "hat",
+            "note": "잡화",
+            "type": "word"
+        },
+        {
+            "source_text": "가방",
+            "target_text": "bag",
+            "note": "잡화",
+            "type": "word"
+        },
+        {
+            "source_text": "시계",
+            "target_text": "watch",
+            "note": "손목시계",
+            "type": "word"
+        },
+        {
+            "source_text": "안경",
+            "target_text": "glasses",
+            "note": "잡화",
+            "type": "word"
+        },
+        {
+            "source_text": "동물",
+            "target_text": "animal",
+            "note": "생물",
+            "type": "word"
+        },
+        {
+            "source_text": "강아지",
+            "target_text": "dog",
+            "note": "동물",
+            "type": "word"
+        },
+        {
+            "source_text": "고양이",
+            "target_text": "cat",
+            "note": "동물",
+            "type": "word"
+        },
+        {
+            "source_text": "새",
+            "target_text": "bird",
+            "note": "동물",
+            "type": "word"
+        },
+        {
+            "source_text": "나무",
+            "target_text": "tree",
+            "note": "식물",
+            "type": "word"
+        },
+        {
+            "source_text": "꽃",
+            "target_text": "flower",
+            "note": "식물",
+            "type": "word"
+        },
+        {
+            "source_text": "하늘",
+            "target_text": "sky",
+            "note": "자연",
+            "type": "word"
+        },
+        {
+            "source_text": "해",
+            "target_text": "sun",
+            "note": "자연 (태양)",
+            "type": "word"
+        },
+        {
+            "source_text": "달",
+            "target_text": "moon",
+            "note": "자연 (위성)",
+            "type": "word"
+        },
+        {
+            "source_text": "별",
+            "target_text": "star",
+            "note": "자연",
+            "type": "word"
+        },
+        {
+            "source_text": "비",
+            "target_text": "rain",
+            "note": "날씨",
+            "type": "word"
+        },
+        {
+            "source_text": "눈",
+            "target_text": "snow",
+            "note": "날씨 (내리는 눈)",
+            "type": "word"
+        },
+        {
+            "source_text": "바람",
+            "target_text": "wind",
+            "note": "날씨",
+            "type": "word"
+        },
+        {
+            "source_text": "차",
+            "target_text": "car",
+            "note": "교통수단 (자동차)",
+            "type": "word"
+        },
+        {
+            "source_text": "버스",
+            "target_text": "bus",
+            "note": "교통수단",
+            "type": "word"
+        },
+        {
+            "source_text": "택시",
+            "target_text": "taxi",
+            "note": "교통수단",
+            "type": "word"
+        },
+        {
+            "source_text": "자전거",
+            "target_text": "bicycle",
+            "note": "교통수단",
+            "type": "word"
+        },
+        {
+            "source_text": "비행기",
+            "target_text": "airplane",
+            "note": "교통수단",
+            "type": "word"
+        },
+        {
+            "source_text": "지하철",
+            "target_text": "subway",
+            "note": "교통수단",
+            "type": "word"
+        },
+        {
+            "source_text": "책",
+            "target_text": "book",
+            "note": "물건",
+            "type": "word"
+        },
+        {
+            "source_text": "종이",
+            "target_text": "paper",
+            "note": "물건",
+            "type": "word"
+        },
+        {
+            "source_text": "연필",
+            "target_text": "pencil",
+            "note": "필기구",
+            "type": "word"
+        },
+        {
+            "source_text": "펜",
+            "target_text": "pen",
+            "note": "필기구",
+            "type": "word"
+        },
+        {
+            "source_text": "전화기",
+            "target_text": "phone",
+            "note": "전자기기",
+            "type": "word"
+        },
+        {
+            "source_text": "컴퓨터",
+            "target_text": "computer",
+            "note": "전자기기",
+            "type": "word"
+        },
+        {
+            "source_text": "돈",
+            "target_text": "money",
+            "note": "화폐",
+            "type": "word"
+        },
+        {
+            "source_text": "시간",
+            "target_text": "time",
+            "note": "개념",
+            "type": "word"
+        },
+        {
+            "source_text": "이름",
+            "target_text": "name",
+            "note": "정보",
+            "type": "word"
+        },
+        {
+            "source_text": "오늘",
+            "target_text": "today",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "일",
+            "target_text": "day",
+            "note": "시간 (하루)",
+            "type": "word"
+        },
+        {
+            "source_text": "밤",
+            "target_text": "night",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "사랑",
+            "target_text": "love",
+            "note": "감정",
+            "type": "word"
+        },
+        {
+            "source_text": "일",
+            "target_text": "work",
+            "note": "활동",
+            "type": "word"
+        },
+        {
+            "source_text": "공부",
+            "target_text": "study",
+            "note": "활동",
+            "type": "word"
+        }
+    ]
+}

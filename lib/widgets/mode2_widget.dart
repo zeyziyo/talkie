@@ -479,15 +479,20 @@ class _Mode2WidgetState extends State<Mode2Widget> {
       }
 
       final record = records[i];
-      final sourceText = record['source_text'];
-      final targetText = record['target_text'];
-      final sourceLang = record['source_lang'];
-      final targetLang = record['target_lang'];
+      final recordSourceLang = record['source_lang'];
+      final recordTargetLang = record['target_lang'];
+      // Check swap
+      final isSwapped = appState.sourceLang == recordTargetLang;
 
-      // 1. Speak Source
+      final firstText = isSwapped ? record['target_text'] : record['source_text'];
+      final firstLang = isSwapped ? recordTargetLang : recordSourceLang;
+      final secondText = isSwapped ? record['source_text'] : record['target_text'];
+      final secondLang = isSwapped ? recordSourceLang : recordTargetLang;
+
+      // 1. Speak First (Visible/Top)
       await appState.playMaterialTts(
-        text: sourceText, 
-        lang: sourceLang,
+        text: firstText, 
+        lang: firstLang,
         // No recordId for general play to avoid 'studied' marking if not desired
       );
 
@@ -505,10 +510,10 @@ class _Mode2WidgetState extends State<Mode2Widget> {
          });
       }
 
-      // 4. Speak Target
+      // 4. Speak Second (Hidden/Bottom)
       await appState.playMaterialTts(
-        text: targetText, 
-        lang: targetLang,
+        text: secondText, 
+        lang: secondLang,
       );
 
       if (!_isAutoPlaying) break;
@@ -609,10 +614,23 @@ class _Mode2WidgetState extends State<Mode2Widget> {
     
     final l10n = AppLocalizations.of(context)!;
     final translationId = record['id'] as int;
-    final sourceText = record['source_text'] as String;
-    final targetText = record['target_text'] as String;
-    final sourceLang = record['source_lang'] as String;
-    final targetLang = record['target_lang'] as String;
+    final recordSourceLang = record['source_lang'] as String;
+    final recordTargetLang = record['target_lang'] as String;
+    // Check if we need to swap display based on current AppState settings
+    final isSwapped = appState.sourceLang == recordTargetLang;
+    
+    // Determine what to show as "Source" (Top) and "Target" (Hidden/Bottom)
+    final topLang = isSwapped ? recordTargetLang : recordSourceLang;
+    final bottomLang = isSwapped ? recordSourceLang : recordTargetLang;
+    
+    final topText = isSwapped 
+        ? (record['target_text'] as String) 
+        : (record['source_text'] as String);
+        
+    final bottomText = isSwapped 
+        ? (record['source_text'] as String) 
+        : (record['target_text'] as String);
+        
     final contextTag = record['context'] as String?;
     final isStudied = studiedIds.contains(translationId);
     final isExpanded = _expandedCards.contains(translationId);
@@ -658,7 +676,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: Text(
-                        sourceLang.toUpperCase(),
+                        topLang.toUpperCase(),
                         style: const TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.bold,
@@ -669,7 +687,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                     const SizedBox(width: 8),
                     Expanded(
                       child: Text(
-                        sourceText,
+                        topText,
                         style: TextStyle(
                           fontSize: (record['type'] == 'word') ? 24 : 16,
                           fontWeight: FontWeight.w500,
@@ -724,7 +742,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                             borderRadius: BorderRadius.circular(4),
                           ),
                           child: Text(
-                            targetLang.toUpperCase(),
+                            bottomLang.toUpperCase(),
                             style: const TextStyle(
                               fontSize: 10,
                               fontWeight: FontWeight.bold,
@@ -735,7 +753,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
-                            targetText,
+                            bottomText,
                             style: TextStyle(
                               fontSize: (record['type'] == 'word') ? 24 : 16,
                               fontWeight: FontWeight.w500,
@@ -781,8 +799,8 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                       OutlinedButton.icon(
                         onPressed: () {
                           appState.playMaterialTts(
-                            text: targetText,
-                            lang: targetLang,
+                            text: bottomText,
+                            lang: bottomLang,
                             recordId: record['target_id'] as int?,
                           );
                         },

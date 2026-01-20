@@ -1,0 +1,645 @@
+{
+    "subject": "기초 형용사 (Basic Adjectives)",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "en",
+    "default_type": "word",
+    "entries": [
+        {
+            "source_text": "많은",
+            "target_text": "many",
+            "note": "셀 수 있는 명사 수식",
+            "type": "word"
+        },
+        {
+            "source_text": "적은",
+            "target_text": "few",
+            "note": "셀 수 있는 명사 수식",
+            "type": "word"
+        },
+        {
+            "source_text": "많은",
+            "target_text": "much",
+            "note": "셀 수 없는 명사 수식",
+            "type": "word"
+        },
+        {
+            "source_text": "적은",
+            "target_text": "little",
+            "note": "셀 수 없는 명사 수식",
+            "type": "word"
+        },
+        {
+            "source_text": "큰",
+            "target_text": "big",
+            "note": "크기/부피",
+            "type": "word"
+        },
+        {
+            "source_text": "작은",
+            "target_text": "small",
+            "note": "크기/부피",
+            "type": "word"
+        },
+        {
+            "source_text": "넓은",
+            "target_text": "wide",
+            "note": "공간/폭",
+            "type": "word"
+        },
+        {
+            "source_text": "좁은",
+            "target_text": "narrow",
+            "note": "공간/폭",
+            "type": "word"
+        },
+        {
+            "source_text": "높은",
+            "target_text": "high",
+            "note": "높이/수준",
+            "type": "word"
+        },
+        {
+            "source_text": "낮은",
+            "target_text": "low",
+            "note": "높이/수준",
+            "type": "word"
+        },
+        {
+            "source_text": "먼",
+            "target_text": "far",
+            "note": "거리",
+            "type": "word"
+        },
+        {
+            "source_text": "가까운",
+            "target_text": "close",
+            "note": "거리",
+            "type": "word"
+        },
+        {
+            "source_text": "긴",
+            "target_text": "long",
+            "note": "길이/시간",
+            "type": "word"
+        },
+        {
+            "source_text": "짧은",
+            "target_text": "short",
+            "note": "길이/시간",
+            "type": "word"
+        },
+        {
+            "source_text": "빠른",
+            "target_text": "fast",
+            "note": "속도",
+            "type": "word"
+        },
+        {
+            "source_text": "느린",
+            "target_text": "slow",
+            "note": "속도",
+            "type": "word"
+        },
+        {
+            "source_text": "무거운",
+            "target_text": "heavy",
+            "note": "무게",
+            "type": "word"
+        },
+        {
+            "source_text": "가벼운",
+            "target_text": "light",
+            "note": "무게",
+            "type": "word"
+        },
+        {
+            "source_text": "두꺼운",
+            "target_text": "thick",
+            "note": "두께",
+            "type": "word"
+        },
+        {
+            "source_text": "얇은",
+            "target_text": "thin",
+            "note": "두께",
+            "type": "word"
+        },
+        {
+            "source_text": "단단한",
+            "target_text": "hard",
+            "note": "경도",
+            "type": "word"
+        },
+        {
+            "source_text": "부드러운",
+            "target_text": "soft",
+            "note": "촉감",
+            "type": "word"
+        },
+        {
+            "source_text": "거친",
+            "target_text": "rough",
+            "note": "표면",
+            "type": "word"
+        },
+        {
+            "source_text": "매끄러운",
+            "target_text": "smooth",
+            "note": "표면",
+            "type": "word"
+        },
+        {
+            "source_text": "강한",
+            "target_text": "strong",
+            "note": "힘/세기",
+            "type": "word"
+        },
+        {
+            "source_text": "약한",
+            "target_text": "weak",
+            "note": "힘/세기",
+            "type": "word"
+        },
+        {
+            "source_text": "새로운",
+            "target_text": "new",
+            "note": "신규",
+            "type": "word"
+        },
+        {
+            "source_text": "오래된",
+            "target_text": "old",
+            "note": "시간이 지난",
+            "type": "word"
+        },
+        {
+            "source_text": "젊은",
+            "target_text": "young",
+            "note": "나이",
+            "type": "word"
+        },
+        {
+            "source_text": "늙은",
+            "target_text": "old",
+            "note": "나이가 든",
+            "type": "word"
+        },
+        {
+            "source_text": "좋은",
+            "target_text": "good",
+            "note": "상태/질",
+            "type": "word"
+        },
+        {
+            "source_text": "나쁜",
+            "target_text": "bad",
+            "note": "상태/질",
+            "type": "word"
+        },
+        {
+            "source_text": "더운",
+            "target_text": "hot",
+            "note": "날씨/온도",
+            "type": "word"
+        },
+        {
+            "source_text": "추운",
+            "target_text": "cold",
+            "note": "날씨/온도",
+            "type": "word"
+        },
+        {
+            "source_text": "따뜻한",
+            "target_text": "warm",
+            "note": "날씨/온도",
+            "type": "word"
+        },
+        {
+            "source_text": "시원한",
+            "target_text": "cool",
+            "note": "날씨/온도",
+            "type": "word"
+        },
+        {
+            "source_text": "밝은",
+            "target_text": "bright",
+            "note": "빛/성격",
+            "type": "word"
+        },
+        {
+            "source_text": "어두운",
+            "target_text": "dark",
+            "note": "빛",
+            "type": "word"
+        },
+        {
+            "source_text": "깨끗한",
+            "target_text": "clean",
+            "note": "청결",
+            "type": "word"
+        },
+        {
+            "source_text": "더러운",
+            "target_text": "dirty",
+            "note": "청결",
+            "type": "word"
+        },
+        {
+            "source_text": "쉬운",
+            "target_text": "easy",
+            "note": "난이도",
+            "type": "word"
+        },
+        {
+            "source_text": "어려운",
+            "target_text": "difficult",
+            "note": "난이도",
+            "type": "word"
+        },
+        {
+            "source_text": "비싼",
+            "target_text": "expensive",
+            "note": "가격",
+            "type": "word"
+        },
+        {
+            "source_text": "싼",
+            "target_text": "cheap",
+            "note": "가격",
+            "type": "word"
+        },
+        {
+            "source_text": "부유한",
+            "target_text": "rich",
+            "note": "경제력",
+            "type": "word"
+        },
+        {
+            "source_text": "가난한",
+            "target_text": "poor",
+            "note": "경제력",
+            "type": "word"
+        },
+        {
+            "source_text": "예쁜",
+            "target_text": "pretty",
+            "note": "외모",
+            "type": "word"
+        },
+        {
+            "source_text": "아름다운",
+            "target_text": "beautiful",
+            "note": "외모/경치",
+            "type": "word"
+        },
+        {
+            "source_text": "귀여운",
+            "target_text": "cute",
+            "note": "외모/행동",
+            "type": "word"
+        },
+        {
+            "source_text": "못생긴",
+            "target_text": "ugly",
+            "note": "외모",
+            "type": "word"
+        },
+        {
+            "source_text": "잘생긴",
+            "target_text": "handsome",
+            "note": "외모(남자)",
+            "type": "word"
+        },
+        {
+            "source_text": "행복한",
+            "target_text": "happy",
+            "note": "감정",
+            "type": "word"
+        },
+        {
+            "source_text": "슬픈",
+            "target_text": "sad",
+            "note": "감정",
+            "type": "word"
+        },
+        {
+            "source_text": "기쁜",
+            "target_text": "glad",
+            "note": "감정",
+            "type": "word"
+        },
+        {
+            "source_text": "화난",
+            "target_text": "angry",
+            "note": "감정",
+            "type": "word"
+        },
+        {
+            "source_text": "무서운",
+            "target_text": "scary",
+            "note": "공포 (대상)",
+            "type": "word"
+        },
+        {
+            "source_text": "놀란",
+            "target_text": "surprised",
+            "note": "감정",
+            "type": "word"
+        },
+        {
+            "source_text": "피곤한",
+            "target_text": "tired",
+            "note": "신체 상태",
+            "type": "word"
+        },
+        {
+            "source_text": "아픈",
+            "target_text": "sick",
+            "note": "신체 상태",
+            "type": "word"
+        },
+        {
+            "source_text": "배고픈",
+            "target_text": "hungry",
+            "note": "생리 현상",
+            "type": "word"
+        },
+        {
+            "source_text": "목마른",
+            "target_text": "thirsty",
+            "note": "생리 현상",
+            "type": "word"
+        },
+        {
+            "source_text": "졸린",
+            "target_text": "sleepy",
+            "note": "생리 현상",
+            "type": "word"
+        },
+        {
+            "source_text": "바쁜",
+            "target_text": "busy",
+            "note": "상태",
+            "type": "word"
+        },
+        {
+            "source_text": "한가한",
+            "target_text": "free",
+            "note": "상태",
+            "type": "word"
+        },
+        {
+            "source_text": "지루한",
+            "target_text": "boring",
+            "note": "감정/상태",
+            "type": "word"
+        },
+        {
+            "source_text": "재미있는",
+            "target_text": "fun",
+            "note": "상태/경험",
+            "type": "word"
+        },
+        {
+            "source_text": "웃긴",
+            "target_text": "funny",
+            "note": "유머러스한",
+            "type": "word"
+        },
+        {
+            "source_text": "중요한",
+            "target_text": "important",
+            "note": "가치",
+            "type": "word"
+        },
+        {
+            "source_text": "필요한",
+            "target_text": "necessary",
+            "note": "요구",
+            "type": "word"
+        },
+        {
+            "source_text": "유명한",
+            "target_text": "famous",
+            "note": "인지도",
+            "type": "word"
+        },
+        {
+            "source_text": "인기있는",
+            "target_text": "popular",
+            "note": "인지도",
+            "type": "word"
+        },
+        {
+            "source_text": "조용한",
+            "target_text": "quiet",
+            "note": "소리",
+            "type": "word"
+        },
+        {
+            "source_text": "시끄러운",
+            "target_text": "loud",
+            "note": "소리",
+            "type": "word"
+        },
+        {
+            "source_text": "친절한",
+            "target_text": "kind",
+            "note": "성격",
+            "type": "word"
+        },
+        {
+            "source_text": "불친절한",
+            "target_text": "unkind",
+            "note": "성격",
+            "type": "word"
+        },
+        {
+            "source_text": "똑똑한",
+            "target_text": "smart",
+            "note": "지능",
+            "type": "word"
+        },
+        {
+            "source_text": "어리석은",
+            "target_text": "stupid",
+            "note": "지능(비하)",
+            "type": "word"
+        },
+        {
+            "source_text": "현명한",
+            "target_text": "wise",
+            "note": "지혜",
+            "type": "word"
+        },
+        {
+            "source_text": "용감한",
+            "target_text": "brave",
+            "note": "성격",
+            "type": "word"
+        },
+        {
+            "source_text": "수줍은",
+            "target_text": "shy",
+            "note": "성격",
+            "type": "word"
+        },
+        {
+            "source_text": "게으른",
+            "target_text": "lazy",
+            "note": "성격",
+            "type": "word"
+        },
+        {
+            "source_text": "부지런한",
+            "target_text": "diligent",
+            "note": "성격",
+            "type": "word"
+        },
+        {
+            "source_text": "정직한",
+            "target_text": "honest",
+            "note": "성격",
+            "type": "word"
+        },
+        {
+            "source_text": "같은",
+            "target_text": "same",
+            "note": "비교",
+            "type": "word"
+        },
+        {
+            "source_text": "조심스러운",
+            "target_text": "careful",
+            "note": "태도",
+            "type": "word"
+        },
+        {
+            "source_text": "위험한",
+            "target_text": "dangerous",
+            "note": "상태",
+            "type": "word"
+        },
+        {
+            "source_text": "안전한",
+            "target_text": "safe",
+            "note": "상태",
+            "type": "word"
+        },
+        {
+            "source_text": "가득 찬",
+            "target_text": "full",
+            "note": "상태",
+            "type": "word"
+        },
+        {
+            "source_text": "빈",
+            "target_text": "empty",
+            "note": "상태",
+            "type": "word"
+        },
+        {
+            "source_text": "오른",
+            "target_text": "right",
+            "note": "방향/옳음",
+            "type": "word"
+        },
+        {
+            "source_text": "틀린",
+            "target_text": "wrong",
+            "note": "오류",
+            "type": "word"
+        },
+        {
+            "source_text": "왼쪽의",
+            "target_text": "left",
+            "note": "방향",
+            "type": "word"
+        },
+        {
+            "source_text": "준비된",
+            "target_text": "ready",
+            "note": "상태",
+            "type": "word"
+        },
+        {
+            "source_text": "확실한",
+            "target_text": "sure",
+            "note": "확신",
+            "type": "word"
+        },
+        {
+            "source_text": "단",
+            "target_text": "sweet",
+            "note": "맛",
+            "type": "word"
+        },
+        {
+            "source_text": "쓴",
+            "target_text": "bitter",
+            "note": "맛",
+            "type": "word"
+        },
+        {
+            "source_text": "매운",
+            "target_text": "spicy",
+            "note": "맛",
+            "type": "word"
+        },
+        {
+            "source_text": "신",
+            "target_text": "sour",
+            "note": "맛",
+            "type": "word"
+        },
+        {
+            "source_text": "짠",
+            "target_text": "salty",
+            "note": "맛",
+            "type": "word"
+        },
+        {
+            "source_text": "싱거운",
+            "target_text": "bland",
+            "note": "맛",
+            "type": "word"
+        },
+        {
+            "source_text": "빨간",
+            "target_text": "red",
+            "note": "색깔",
+            "type": "word"
+        },
+        {
+            "source_text": "파란",
+            "target_text": "blue",
+            "note": "색깔",
+            "type": "word"
+        },
+        {
+            "source_text": "노란",
+            "target_text": "yellow",
+            "note": "색깔",
+            "type": "word"
+        },
+        {
+            "source_text": "초록색의",
+            "target_text": "green",
+            "note": "색깔",
+            "type": "word"
+        },
+        {
+            "source_text": "검은",
+            "target_text": "black",
+            "note": "색깔",
+            "type": "word"
+        },
+        {
+            "source_text": "흰",
+            "target_text": "white",
+            "note": "색깔",
+            "type": "word"
+        }
+    ]
+}

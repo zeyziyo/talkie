@@ -914,7 +914,7 @@ class DatabaseService {
             targetLang: targetLang,
             targetId: targetId,
             materialId: 0, // Default to 0 for generic imports if no specific material
-            context: entry['context'] as String?, // Import context
+            context: (entry['note'] ?? entry['context']) as String?, // Import context/note
             type: entry['type'] as String? ?? defaultType, // Use entry type or default type
           );
           
@@ -1051,7 +1051,7 @@ class DatabaseService {
             targetLang: targetLang,
             targetId: targetId,
             materialId: materialId,
-            context: entry['context'] as String?, // Import context
+            context: (entry['note'] ?? entry['context']) as String?, // Import context/note
             type: entry['type'] as String? ?? defaultType, // Use entry type or default type
           );
           

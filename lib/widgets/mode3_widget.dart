@@ -296,64 +296,17 @@ class Mode3Widget extends StatelessWidget {
                               ),
                               
                               if (appState.showRetryButton) ...[
+                                // Should theoretically not be reached if auto-flow is implemented,
+                                // but if we keep showRetryButton logic for some edge case, we can show a status instead of buttons.
+                                // User requested removing buttons.
                                 const SizedBox(height: 24),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    // Retry Button
-                                    ElevatedButton.icon(
-                                      onPressed: () => appState.retryMode3Question(),
-                                      icon: const Icon(Icons.refresh),
-                                      label: Text(l10n.retry),
-                                      style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.orange,
-                                        foregroundColor: Colors.white,
-                                        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                                      ),
-                                    ),
-                                    
-                                    const SizedBox(width: 16),
-                                    
-                                    // Skip / Next Button
-                                    OutlinedButton.icon(
-                                      onPressed: () => appState.skipMode3Question(),
-                                      icon: const Icon(Icons.skip_next),
-                                      label: Text(l10n.next),
-                                      style: OutlinedButton.styleFrom(
-                                        foregroundColor: Colors.grey[700],
-                                        side: BorderSide(color: Colors.grey[400]!),
-                                        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                                      ),
-                                    ),
-                                  ],
+                                Text(
+                                  l10n.noVoiceDetected,
+                                  style: TextStyle(color: Colors.red[300], fontSize: 16),
                                 ),
-                              ],
-                            ] else if (appState.mode3SessionActive) ...[
-                              // Active Practice State
-                              const SizedBox(height: 16),
-                              if (appState.showRetryButton) ...[
-                                // Retry Button (Timeout case)
-                                Column(
-                                  children: [
-                                    Text(
-                                      l10n.noVoiceDetected, // "No voice detected" or similar
-                                      style: TextStyle(color: Colors.red[300], fontSize: 16),
-                                    ),
-                                    const SizedBox(height: 16),
-                                    ElevatedButton.icon(
-                                      onPressed: () => appState.retryMode3Question(),
-                                      icon: const Icon(Icons.refresh),
-                                      label: Text(l10n.retry),
-                                      style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.orange,
-                                        foregroundColor: Colors.white,
-                                        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
-                                      ),
-                                    ),
-                                  ],
-                                )
                               ] else ...[
                                 // Mic Icon (Listening)
+                                const SizedBox(height: 16),
                                 Stack(
                                   alignment: Alignment.center,
                                   children: [
@@ -382,7 +335,7 @@ class Mode3Widget extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ],
+                            ], // End of if (mode3Score != null) else if (active)
                           // Add bottom padding to lift the centered content
                           const SizedBox(height: 120), // Increased to 120 for Ad space
                         ],

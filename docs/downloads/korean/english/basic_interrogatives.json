@@ -1,0 +1,63 @@
+{
+    "subject": "기초 의문사 (Basic Interrogatives)",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "en",
+    "default_type": "word",
+    "entries": [
+        {
+            "source_text": "누가",
+            "target_text": "who",
+            "note": "사람",
+            "type": "word"
+        },
+        {
+            "source_text": "무엇",
+            "target_text": "what",
+            "note": "사물",
+            "type": "word"
+        },
+        {
+            "source_text": "어디",
+            "target_text": "where",
+            "note": "장소",
+            "type": "word"
+        },
+        {
+            "source_text": "언제",
+            "target_text": "when",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "왜",
+            "target_text": "why",
+            "note": "이유",
+            "type": "word"
+        },
+        {
+            "source_text": "어떻게",
+            "target_text": "how",
+            "note": "방법",
+            "type": "word"
+        },
+        {
+            "source_text": "어느",
+            "target_text": "which",
+            "note": "선택",
+            "type": "word"
+        },
+        {
+            "source_text": "누구의",
+            "target_text": "whose",
+            "note": "소유",
+            "type": "word"
+        },
+        {
+            "source_text": "누구를",
+            "target_text": "whom",
+            "note": "사람 (목적격)",
+            "type": "word"
+        }
+    ]
+}

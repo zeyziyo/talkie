@@ -1,0 +1,69 @@
+{
+    "subject": "기초 접속사 (Basic Conjunctions)",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "en",
+    "default_type": "word",
+    "entries": [
+        {
+            "source_text": "그리고",
+            "target_text": "and",
+            "note": "나열/추가",
+            "type": "word"
+        },
+        {
+            "source_text": "그러나",
+            "target_text": "but",
+            "note": "대조",
+            "type": "word"
+        },
+        {
+            "source_text": "또는",
+            "target_text": "or",
+            "note": "선택",
+            "type": "word"
+        },
+        {
+            "source_text": "그래서",
+            "target_text": "so",
+            "note": "결과",
+            "type": "word"
+        },
+        {
+            "source_text": "왜냐하면",
+            "target_text": "because",
+            "note": "이유",
+            "type": "word"
+        },
+        {
+            "source_text": "만약 ~라면",
+            "target_text": "if",
+            "note": "조건",
+            "type": "word"
+        },
+        {
+            "source_text": "~때",
+            "target_text": "when",
+            "note": "시간 (접속사)",
+            "type": "word"
+        },
+        {
+            "source_text": "~동안",
+            "target_text": "while",
+            "note": "시간 (진행)",
+            "type": "word"
+        },
+        {
+            "source_text": "~전에",
+            "target_text": "before",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "~후에",
+            "target_text": "after",
+            "note": "시간",
+            "type": "word"
+        }
+    ]
+}

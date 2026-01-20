@@ -8,51 +8,61 @@
         {
             "source_text": "안녕하세요",
             "target_text": "Hello",
+            "note": "시간에 관계 없는 일반적인 인사말",
             "type": "sentence"
         },
         {
             "source_text": "반갑습니다",
             "target_text": "Nice to meet you",
+            "note": "처음 만난 사이에 하는 인사말",
             "type": "sentence"
         },
         {
             "source_text": "감사합니다",
             "target_text": "Thank you",
+            "note": "고마움을 표현할 때",
             "type": "sentence"
         },
         {
             "source_text": "죄송합니다",
             "target_text": "I am sorry",
+            "note": "사과할 때 정중한 표현",
             "type": "sentence"
         },
         {
             "source_text": "안녕히 가세요",
             "target_text": "Goodbye",
+            "note": "떠나는 사람에게 하는 인사",
             "type": "sentence"
         },
         {
             "source_text": "좋은 아침입니다",
             "target_text": "Good morning",
+            "note": "아침 인사",
             "type": "sentence"
         },
         {
             "source_text": "잠시만요",
             "target_text": "Excuse me",
+            "note": "길을 비켜달라고 하거나 주의를 끌 때",
             "type": "sentence"
         },
         {
             "source_text": "얼마인가요?",
             "target_text": "How much is it?",
+            "note": "가격을 물을 때",
             "type": "sentence"
         },
         {
             "source_text": "도와주세요",
             "target_text": "Help me, please",
+            "note": "도움이 필요할 때",
             "type": "sentence"
         },
         {
             "source_text": "이름이 뭐예요?",
             "target_text": "What is your name?",
+            "note": "상대방의 이름을 물을 때",
             "type": "sentence"
         }
     ]

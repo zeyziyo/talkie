@@ -1,0 +1,129 @@
+{
+    "subject": "기초 전치사 (Basic Prepositions)",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "en",
+    "default_type": "word",
+    "entries": [
+        {
+            "source_text": "~안에",
+            "target_text": "in",
+            "note": "장소/시간",
+            "type": "word"
+        },
+        {
+            "source_text": "~위에",
+            "target_text": "on",
+            "note": "표면/접촉",
+            "type": "word"
+        },
+        {
+            "source_text": "~에",
+            "target_text": "at",
+            "note": "특정 지점/시각",
+            "type": "word"
+        },
+        {
+            "source_text": "~의",
+            "target_text": "of",
+            "note": "소유/관계",
+            "type": "word"
+        },
+        {
+            "source_text": "~에게/로",
+            "target_text": "to",
+            "note": "방향/목적지",
+            "type": "word"
+        },
+        {
+            "source_text": "~을 위해",
+            "target_text": "for",
+            "note": "목적/대상",
+            "type": "word"
+        },
+        {
+            "source_text": "~와 함께",
+            "target_text": "with",
+            "note": "동반/도구",
+            "type": "word"
+        },
+        {
+            "source_text": "~없이",
+            "target_text": "without",
+            "note": "부재",
+            "type": "word"
+        },
+        {
+            "source_text": "~에 대해",
+            "target_text": "about",
+            "note": "주제",
+            "type": "word"
+        },
+        {
+            "source_text": "~로부터",
+            "target_text": "from",
+            "note": "출처/기점",
+            "type": "word"
+        },
+        {
+            "source_text": "~에 의해",
+            "target_text": "by",
+            "note": "수단/행위자",
+            "type": "word"
+        },
+        {
+            "source_text": "~아래에",
+            "target_text": "under",
+            "note": "위치 (아래)",
+            "type": "word"
+        },
+        {
+            "source_text": "~위에",
+            "target_text": "over",
+            "note": "위치 (위쪽 전체)",
+            "type": "word"
+        },
+        {
+            "source_text": "~사이에",
+            "target_text": "between",
+            "note": "위치 (양쪽 사이)",
+            "type": "word"
+        },
+        {
+            "source_text": "~뒤에",
+            "target_text": "behind",
+            "note": "위치 (뒤)",
+            "type": "word"
+        },
+        {
+            "source_text": "~앞에",
+            "target_text": "in front of",
+            "note": "위치 (앞)",
+            "type": "word"
+        },
+        {
+            "source_text": "~옆에",
+            "target_text": "next to",
+            "note": "위치 (옆)",
+            "type": "word"
+        },
+        {
+            "source_text": "~동안",
+            "target_text": "during",
+            "note": "시간",
+            "type": "word"
+        },
+        {
+            "source_text": "~전에",
+            "target_text": "before",
+            "note": "시간/순서",
+            "type": "word"
+        },
+        {
+            "source_text": "~후에",
+            "target_text": "after",
+            "note": "시간/순서",
+            "type": "word"
+        }
+    ]
+}

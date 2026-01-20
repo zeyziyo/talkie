@@ -1044,14 +1044,14 @@ class AppState extends ChangeNotifier {
       return;
     }
     
-    // Show Retry Button
-    _showRetryButton = true;
+    // Timeout with no input -> Treat as wrong answer
+    _mode3Score = 0.0;
+    _mode3Feedback = 'Time Up!';
     notifyListeners();
     
-    // Start Auto-Skip Timer (2 seconds)
-    _retryAutoSkipTimer = Timer(const Duration(seconds: 2), () {
-      if (_mode3SessionActive && _showRetryButton) {
-         // User didn't click retry -> Move next
+    // Auto-advance
+    Future.delayed(Duration(seconds: _mode3Interval), () {
+      if (_mode3SessionActive) {
          _nextMode3Question();
       }
     });
@@ -1079,27 +1079,26 @@ class AppState extends ChangeNotifier {
       // Add to completed list so it doesn't show up again this session
       final currentId = _currentMode3Question!['id'] as int;
       _mode3CompletedQuestionIds.add(currentId);
-      
-      notifyListeners();
-      
-      // Auto-advance only on success
-      Future.delayed(const Duration(seconds: 2), () {
-        if (_mode3SessionActive) {
-          _nextMode3Question();
-        }
-      });
-      
     } else {
       // Incorrect Answer
-      _mode3Feedback = 'Try Again';
-      _showRetryButton = true;
-      notifyListeners();
-      
-      // Guide user to retry (TTS)
-      Future.delayed(const Duration(milliseconds: 500), () {
-         _speechService.speak("Try again", lang: "en-US");
-      });
+      _mode3Feedback = 'Keep Trying!';
+      // Do NOT add to completed list, so it can appear again later
     }
+    
+    notifyListeners();
+
+    // Auto-advance for both correct and incorrect
+    // Wait configured interval (or default 2s if too fast preferred), let's use 3s or strictly interval?
+    // User said "show for designated time then move next".
+    // Let's use 3 seconds (enough to read) or _mode3Interval?
+    // _mode3Interval is "Thinking Time" in Mode 2, or "Interval" in Mode 3?
+    // In Mode 3 UI it says "Interval (Seconds)".
+    
+    Future.delayed(Duration(seconds: _mode3Interval), () {
+      if (_mode3SessionActive) {
+        _nextMode3Question();
+      }
+    });
   }
   
   /// Levenshtein distance based similarity (0.0 to 1.0)
