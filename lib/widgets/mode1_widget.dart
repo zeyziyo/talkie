@@ -139,6 +139,11 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                     ),
                                   ),
                                 ),
+                                IconButton(
+                                  icon: const Icon(Icons.swap_horiz, color: Colors.blueGrey),
+                                  onPressed: () => appState.swapLanguages(),
+                                  tooltip: l10n.swapLanguages,
+                                ),
                                 Row(
                                   children: [
                                     IconButton(
