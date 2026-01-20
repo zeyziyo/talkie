@@ -430,13 +430,6 @@ class AppLocalizationsZh extends AppLocalizations {
       'Check this to practice only your saved words.';
 
   @override
-  String get tutorialGameTitle => 'Rain Drop Game';
-
-  @override
-  String get tutorialGameDesc =>
-      'Play a game to practice your vocabulary! Catch falling words by speaking their translation.';
-
-  @override
   String get labelType => 'Type:';
 
   @override
@@ -493,25 +486,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get noStudyMaterial => 'No study material found.';
 
   @override
-  String get rainDropGame => 'Rain Drop Game';
-
-  @override
-  String get rainDropGameDesc => 'Speak the translation of the falling word!';
-
-  @override
-  String get gameDirection => 'Game Direction';
-
-  @override
-  String get speed => 'Speed';
-
-  @override
-  String get startGame => 'Start Game';
-
-  @override
   String get gameOver => 'Game Over';
-
-  @override
-  String get finalScore => 'Final Score';
 
   @override
   String get playAgain => 'Play Again';
@@ -542,6 +517,38 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get autoPlay => 'Auto-Play';
+
+  @override
+  String get timeUp => 'Time Up!';
+
+  @override
+  String get gameModeTitle => 'Game Mode';
+
+  @override
+  String get gameModeDesc => 'Choose your practice mode';
+
+  @override
+  String get wordDefenseTitle => 'Word Defense';
+
+  @override
+  String get wordDefenseDesc =>
+      'Defend your base by speaking words correctly before enemies reach you.';
+
+  @override
+  String get dialogueQuestTitle => 'Dialogue Quest';
+
+  @override
+  String get dialogueQuestDesc =>
+      'Roleplay in scenarios. Choose the right response and speak it aloud.';
+
+  @override
+  String get micButtonTooltip => 'Start Listening';
+
+  @override
+  String get enterTextHint => 'Enter text to translate';
+
+  @override
+  String get wordModeLabel => 'Word Mode';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -970,13 +977,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       'Check this to practice only your saved words.';
 
   @override
-  String get tutorialGameTitle => 'Rain Drop Game';
-
-  @override
-  String get tutorialGameDesc =>
-      'Play a game to practice your vocabulary! Catch falling words by speaking their translation.';
-
-  @override
   String get labelType => 'Type:';
 
   @override
@@ -1033,25 +1033,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get noStudyMaterial => 'No study material found.';
 
   @override
-  String get rainDropGame => 'Rain Drop Game';
-
-  @override
-  String get rainDropGameDesc => 'Speak the translation of the falling word!';
-
-  @override
-  String get gameDirection => 'Game Direction';
-
-  @override
-  String get speed => 'Speed';
-
-  @override
-  String get startGame => 'Start Game';
-
-  @override
   String get gameOver => 'Game Over';
-
-  @override
-  String get finalScore => 'Final Score';
 
   @override
   String get playAgain => 'Play Again';
@@ -1069,7 +1051,42 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get getMaterials => 'Get Materials';
 
   @override
+  String get swapLanguages => 'Swap Languages';
+
+  @override
   String get next => 'Next';
+
+  @override
+  String get thinkingTimeInterval => 'Thinking Time Interval';
+
+  @override
+  String get thinkingTimeDesc => 'Time to think before the answer is revealed.';
+
+  @override
+  String get autoPlay => 'Auto-Play';
+
+  @override
+  String get timeUp => 'Time Up!';
+
+  @override
+  String get gameModeTitle => 'Game Mode';
+
+  @override
+  String get gameModeDesc => 'Choose your practice mode';
+
+  @override
+  String get wordDefenseTitle => 'Word Defense';
+
+  @override
+  String get wordDefenseDesc =>
+      'Defend your base by speaking words correctly before enemies reach you.';
+
+  @override
+  String get dialogueQuestTitle => 'Dialogue Quest';
+
+  @override
+  String get dialogueQuestDesc =>
+      'Roleplay in scenarios. Choose the right response and speak it aloud.';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1498,13 +1515,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       'Check this to practice only your saved words.';
 
   @override
-  String get tutorialGameTitle => 'Rain Drop Game';
-
-  @override
-  String get tutorialGameDesc =>
-      'Play a game to practice your vocabulary! Catch falling words by speaking their translation.';
-
-  @override
   String get labelType => 'Type:';
 
   @override
@@ -1561,25 +1571,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get noStudyMaterial => 'No study material found.';
 
   @override
-  String get rainDropGame => 'Rain Drop Game';
-
-  @override
-  String get rainDropGameDesc => 'Speak the translation of the falling word!';
-
-  @override
-  String get gameDirection => 'Game Direction';
-
-  @override
-  String get speed => 'Speed';
-
-  @override
-  String get startGame => 'Start Game';
-
-  @override
   String get gameOver => 'Game Over';
-
-  @override
-  String get finalScore => 'Final Score';
 
   @override
   String get playAgain => 'Play Again';
@@ -1597,5 +1589,40 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get getMaterials => 'Get Materials';
 
   @override
+  String get swapLanguages => 'Swap Languages';
+
+  @override
   String get next => 'Next';
+
+  @override
+  String get thinkingTimeInterval => 'Thinking Time Interval';
+
+  @override
+  String get thinkingTimeDesc => 'Time to think before the answer is revealed.';
+
+  @override
+  String get autoPlay => 'Auto-Play';
+
+  @override
+  String get timeUp => 'Time Up!';
+
+  @override
+  String get gameModeTitle => 'Game Mode';
+
+  @override
+  String get gameModeDesc => 'Choose your practice mode';
+
+  @override
+  String get wordDefenseTitle => 'Word Defense';
+
+  @override
+  String get wordDefenseDesc =>
+      'Defend your base by speaking words correctly before enemies reach you.';
+
+  @override
+  String get dialogueQuestTitle => 'Dialogue Quest';
+
+  @override
+  String get dialogueQuestDesc =>
+      'Roleplay in scenarios. Choose the right response and speak it aloud.';
 }

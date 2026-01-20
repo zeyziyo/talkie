@@ -1,0 +1,19 @@
+Analyzing talkie...                                             
+
+warning - The include file 'package:flutter_lints/flutter.yaml' in 'C:\FlutterProjects\talkie\analysis_options.yaml' can't be found when analyzing 'C:\FlutterProjects\talkie' - analysis_options.yaml:10:10 - include_file_not_found
+  error - The method 'searchSimilarSources' isn't defined for the type 'AppState' - lib\providers\app_state.dart:323:15 - undefined_method
+warning - Unused import: '../widgets/mode4_widget.dart' - lib\screens\home_screen.dart:9:8 - unused_import
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\screens\home_screen.dart:541:11 - deprecated_member_use
+   info - 'onDevice' is deprecated and shouldn't be used. Use SpeechListenOptions.onDevice instead - lib\services\speech_service.dart:172:7 - deprecated_member_use
+   info - 'onDevice' is deprecated and shouldn't be used. Use SpeechListenOptions.onDevice instead - lib\services\speech_service.dart:210:7 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\help_dialog.dart:175:33 - deprecated_member_use
+warning - The declaration '_buildSectionTitle' isn't referenced - lib\widgets\help_dialog.dart:343:10 - unused_element
+  error - The getter 'adUnitId' isn't defined for the type 'UsageService' - lib\widgets\mode1_widget.dart:52:30 - undefined_getter
+  error - The getter 'micButtonTooltip' isn't defined for the type 'AppLocalizations' - lib\widgets\mode1_widget.dart:153:53 - undefined_getter
+  error - The getter 'enterTextHint' isn't defined for the type 'AppLocalizations' - lib\widgets\mode1_widget.dart:169:48 - undefined_getter
+  error - The getter 'wordModeLabel' isn't defined for the type 'AppLocalizations' - lib\widgets\mode1_widget.dart:188:43 - undefined_getter
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\widgets\mode2_widget.dart:192:21 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\mode2_widget.dart:651:45 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\widgets\mode3_widget.dart:52:23 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\mode3_widget.dart:303:59 - deprecated_member_use
+

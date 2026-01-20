@@ -455,5 +455,8 @@
   "wordDefenseTitle": "Word Defense",
   "wordDefenseDesc": "Defend your base by speaking words correctly before enemies reach you.",
   "dialogueQuestTitle": "Dialogue Quest",
-  "dialogueQuestDesc": "Roleplay in scenarios. Choose the right response and speak it aloud."
+  "dialogueQuestDesc": "Roleplay in scenarios. Choose the right response and speak it aloud.",
+  "micButtonTooltip": "Start Listening",
+  "enterTextHint": "Enter text to translate",
+  "wordModeLabel": "Word Mode"
 }

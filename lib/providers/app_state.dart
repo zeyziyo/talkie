@@ -111,12 +111,25 @@ class AppState extends ChangeNotifier {
   Future<void> searchSimilarSources(String text) async {
     _duplicateCheckTriggered = true;
     
-    // Perform loose search
-    final results = await DatabaseService.searchSimilarText(_sourceLang, text);
-    _similarSources = results;
-    
-    notifyListeners();
+    if (text.trim().isEmpty) {
+      _similarSources = [];
+      _showDuplicateDialog = false;
+      notifyListeners();
+      return;
+    }
+
+    try {
+      final results = await DatabaseService.searchSimilarText(_sourceLang, text);
+      _similarSources = results;
+      _showDuplicateDialog = _similarSources.isNotEmpty;
+      notifyListeners();
+    } catch (e) {
+      debugPrint('[AppState] Error searching similar sources: $e');
+      _similarSources = [];
+      notifyListeners();
+    }
   }
+  
   
   /// Check if translation exists, including note check
   Future<void> _checkDuplicate() async {
@@ -147,46 +160,6 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
   
-  Future<void> saveTranslation() async {
-    if (_sourceText.isEmpty || _translatedText.isEmpty) return;
-    
-    try {
-      int sId = _selectedSourceId ?? -1;
-      
-      // 1. If strict new entry (sourceId null), insert source
-      if (sId == -1) {
-         sId = await DatabaseService.insertLanguageRecord(_sourceLang, _sourceText);
-         _selectedSourceId = sId;
-      }
-      
-      // 2. Insert target
-      final tId = await DatabaseService.insertLanguageRecord(_targetLang, _translatedText);
-      
-      // 3. Link with Note
-      await DatabaseService.saveTranslationLink(
-        sourceLang: _sourceLang,
-        sourceId: sId,
-        targetLang: _targetLang,
-        targetId: tId,
-        materialId: _selectedMaterialId ?? 0, // Default to Basic (0) or selected
-        note: _note.isEmpty ? null : _note,
-        type: _isWordMode ? 'word' : 'sentence',
-      );
-      
-      _isSaved = true;
-      _statusMessage = 'Saved!';
-      
-      // Refresh Mode 2 list if active
-      if (_currentMode == 1) {
-        loadStudyMaterials();
-      }
-      
-      notifyListeners();
-    } catch (e) {
-      _statusMessage = 'Save failed: $e';
-      notifyListeners();
-    }
-  }
   
   void selectSource(Map<String, dynamic> source) {
     _selectedSourceId = source['id'] as int;
@@ -323,26 +296,6 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
   
-  /// Search for similar source texts (for duplicate detection)
-  Future<void> searchSimilarSources(String text) async {
-    if (text.trim().isEmpty) {
-      _similarSources = [];
-      _showDuplicateDialog = false;
-      notifyListeners();
-      return;
-    }
-    
-    try {
-      _similarSources = await DatabaseService.searchSimilarText(_sourceLang, text);
-      _showDuplicateDialog = _similarSources.isNotEmpty;
-      notifyListeners();
-    } catch (e) {
-      debugPrint('[AppState] Error searching similar sources: $e');
-      _similarSources = [];
-      _showDuplicateDialog = false;
-      notifyListeners();
-    }
-  }
   
   /// User selects an existing source record
   void selectExistingSource(int sourceId, String sourceText) {
@@ -423,7 +376,7 @@ class AppState extends ChangeNotifier {
         _sourceLang,
         sourceId,
         _targetLang,
-        context: _contextTag,
+        note: _note
       );
       
       if (existingTranslation != null) {
@@ -497,7 +450,7 @@ class AppState extends ChangeNotifier {
         targetLang: _targetLang,
         targetId: targetId,
         materialId: materialId,
-        context: _contextTag.isNotEmpty ? _contextTag : null,
+        note: _note.isNotEmpty ? _note : null,
         type: _isWordMode ? 'word' : 'sentence',
       );
       
@@ -647,15 +600,7 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
   
-  void setContextTag(String tag) {
-    _contextTag = tag;
-    notifyListeners();
-  }
   
-  void setWordMode(bool isWord) {
-    _isWordMode = isWord;
-    notifyListeners();
-  }
   
   void setSourceLang(String lang) {
     _sourceLang = lang;
@@ -735,7 +680,7 @@ class AppState extends ChangeNotifier {
     _showDuplicateDialog = false;
     _duplicateCheckTriggered = false;
     _isSaved = false; // Reset save state
-    _contextTag = '';
+    _note = '';
     notifyListeners();
   }
   
@@ -1183,11 +1128,9 @@ class AppState extends ChangeNotifier {
   Future<void> _checkMode3Answer() async {
     if (!_mode3SessionActive) return;
     
-    _cancelMode3Timers(); // Stop timeout since we got an answer (implied by this being called? Wait.)
-    // Stop listening if technically still active
+    _cancelMode3Timers(); 
     _speechService.stopSTT();
     _isListening = false;
-
     
     final targetText = _currentMode3Question!['target_text'] as String;
     
@@ -1197,15 +1140,19 @@ class AppState extends ChangeNotifier {
     
     // Feedback Logic
     if (_mode3Score! >= 90) {
-    // Ensure user has enough time to read feedback (Wrong or Correct)
-    // Use a fixed comfortable duration for reviewing result (e.g. 2 seconds) + Interval?
-    // User requested: "Show text... then move on".
-    // If the interval is meant to be "Wait time between questions", we should respect it.
-    // Ensure minimum wait time of 3 seconds so they can see the red text.
+      _mode3Feedback = 'PERFECT';
+      // Mark as mastered
+      _mode3CompletedQuestionIds.add(_currentMode3Question!['id'] as int);
+      await _speechService.speak("Perfect!", lang: "en-US");
+    } else {
+      _mode3Feedback = 'TRY_AGAIN'; 
+      // Do NOT mark as mastered
+    }
     
-    int waitSeconds = _mode3Interval < 3 ? 3 : _mode3Interval;
+    notifyListeners();
 
-    Future.delayed(Duration(seconds: waitSeconds), () {
+    // Auto-advance after 1 second regardless of score
+    Future.delayed(const Duration(seconds: 1), () {
       if (_mode3SessionActive) {
         _nextMode3Question();
       }

@@ -942,18 +942,6 @@ abstract class AppLocalizations {
   /// **'Check this to practice only your saved words.'**
   String get tutorialM3WordsDesc;
 
-  /// No description provided for @tutorialGameTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Rain Drop Game'**
-  String get tutorialGameTitle;
-
-  /// No description provided for @tutorialGameDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'Play a game to practice your vocabulary! Catch falling words by speaking their translation.'**
-  String get tutorialGameDesc;
-
   /// No description provided for @labelType.
   ///
   /// In en, this message translates to:
@@ -1056,47 +1044,11 @@ abstract class AppLocalizations {
   /// **'No study material found.'**
   String get noStudyMaterial;
 
-  /// No description provided for @rainDropGame.
-  ///
-  /// In en, this message translates to:
-  /// **'Rain Drop Game'**
-  String get rainDropGame;
-
-  /// No description provided for @rainDropGameDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'Speak the translation of the falling word!'**
-  String get rainDropGameDesc;
-
-  /// No description provided for @gameDirection.
-  ///
-  /// In en, this message translates to:
-  /// **'Game Direction'**
-  String get gameDirection;
-
-  /// No description provided for @speed.
-  ///
-  /// In en, this message translates to:
-  /// **'Speed'**
-  String get speed;
-
-  /// No description provided for @startGame.
-  ///
-  /// In en, this message translates to:
-  /// **'Start Game'**
-  String get startGame;
-
   /// No description provided for @gameOver.
   ///
   /// In en, this message translates to:
   /// **'Game Over'**
   String get gameOver;
-
-  /// No description provided for @finalScore.
-  ///
-  /// In en, this message translates to:
-  /// **'Final Score'**
-  String get finalScore;
 
   /// No description provided for @playAgain.
   ///
@@ -1157,6 +1109,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Auto-Play'**
   String get autoPlay;
+
+  /// No description provided for @timeUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Time Up!'**
+  String get timeUp;
+
+  /// No description provided for @gameModeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Game Mode'**
+  String get gameModeTitle;
+
+  /// No description provided for @gameModeDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your practice mode'**
+  String get gameModeDesc;
+
+  /// No description provided for @wordDefenseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Word Defense'**
+  String get wordDefenseTitle;
+
+  /// No description provided for @wordDefenseDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Defend your base by speaking words correctly before enemies reach you.'**
+  String get wordDefenseDesc;
+
+  /// No description provided for @dialogueQuestTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Dialogue Quest'**
+  String get dialogueQuestTitle;
+
+  /// No description provided for @dialogueQuestDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Roleplay in scenarios. Choose the right response and speak it aloud.'**
+  String get dialogueQuestDesc;
+
+  /// No description provided for @micButtonTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Listening'**
+  String get micButtonTooltip;
+
+  /// No description provided for @enterTextHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter text to translate'**
+  String get enterTextHint;
+
+  /// No description provided for @wordModeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Word Mode'**
+  String get wordModeLabel;
 }
 
 class _AppLocalizationsDelegate

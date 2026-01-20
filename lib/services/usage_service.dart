@@ -21,6 +21,10 @@ class UsageService {
   static const String _keyRefillCount = 'prefs_refill_count';
   static const String _keyIsPro = 'prefs_is_pro_user';
   
+  // AdMob Test ID (Rewarded)
+  // Replace with real ID in production
+  static const String adUnitId = 'ca-app-pub-3940256099942544/5224354917';
+  
   // Constants
   static const int _dailyFreeLimit = 5;
   static const int _monthlyProLimit = 1500;

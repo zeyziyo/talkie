@@ -435,13 +435,6 @@ class AppLocalizationsDa extends AppLocalizations {
       'Check this to practice only your saved words.';
 
   @override
-  String get tutorialGameTitle => 'Rain Drop Game';
-
-  @override
-  String get tutorialGameDesc =>
-      'Play a game to practice your vocabulary! Catch falling words by speaking their translation.';
-
-  @override
   String get labelType => 'Type:';
 
   @override
@@ -498,25 +491,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get noStudyMaterial => 'No study material found.';
 
   @override
-  String get rainDropGame => 'Rain Drop Game';
-
-  @override
-  String get rainDropGameDesc => 'Speak the translation of the falling word!';
-
-  @override
-  String get gameDirection => 'Game Direction';
-
-  @override
-  String get speed => 'Speed';
-
-  @override
-  String get startGame => 'Start Game';
-
-  @override
   String get gameOver => 'Game Over';
-
-  @override
-  String get finalScore => 'Final Score';
 
   @override
   String get playAgain => 'Play Again';
@@ -547,4 +522,36 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get autoPlay => 'Auto-Play';
+
+  @override
+  String get timeUp => 'Time Up!';
+
+  @override
+  String get gameModeTitle => 'Game Mode';
+
+  @override
+  String get gameModeDesc => 'Choose your practice mode';
+
+  @override
+  String get wordDefenseTitle => 'Word Defense';
+
+  @override
+  String get wordDefenseDesc =>
+      'Defend your base by speaking words correctly before enemies reach you.';
+
+  @override
+  String get dialogueQuestTitle => 'Dialogue Quest';
+
+  @override
+  String get dialogueQuestDesc =>
+      'Roleplay in scenarios. Choose the right response and speak it aloud.';
+
+  @override
+  String get micButtonTooltip => 'Start Listening';
+
+  @override
+  String get enterTextHint => 'Enter text to translate';
+
+  @override
+  String get wordModeLabel => 'Word Mode';
 }

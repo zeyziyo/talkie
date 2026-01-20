@@ -418,24 +418,18 @@ class AppLocalizationsKo extends AppLocalizations {
       '같은 문장이라도 상황(예: 아침, 저녁)을 적어두면 별도로 저장할 수 있어요.';
 
   @override
-  String get tutorialM1ToggleTitle => '단어/문장 모드';
+  String get tutorialM1ToggleTitle => 'Word/Sentence Mode';
 
   @override
   String get tutorialM1ToggleDesc =>
       '단어와 문장 모드를 여기서 전환할 수 있습니다. 단어는 목록에서 더 크게 표시됩니다.';
 
   @override
-  String get tutorialM3WordsTitle => '단어만 연습';
+  String get tutorialM3WordsTitle => 'Practice Words';
 
   @override
-  String get tutorialM3WordsDesc => '이 옵션을 체크하면 저장된 \'단어\'만 연습합니다.';
-
-  @override
-  String get tutorialGameTitle => 'Rain Drop 게임';
-
-  @override
-  String get tutorialGameDesc =>
-      '단어 게임을 통해 학습한 내용을 확인해보세요! 떨어지는 단어의 의미를 말해서 점수를 얻으세요.';
+  String get tutorialM3WordsDesc =>
+      'Check this to practice only your saved words.';
 
   @override
   String get labelType => '종류:';
@@ -492,25 +486,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noStudyMaterial => '학습 자료가 없습니다.';
 
   @override
-  String get rainDropGame => 'Rain Drop Game';
-
-  @override
-  String get rainDropGameDesc => '떨어지는 단어의 번역을 말하세요!';
-
-  @override
-  String get gameDirection => '게임 방향 (Game Direction)';
-
-  @override
-  String get speed => '속도';
-
-  @override
-  String get startGame => '게임 시작';
-
-  @override
   String get gameOver => 'Game Over';
-
-  @override
-  String get finalScore => '최종 점수';
 
   @override
   String get playAgain => '다시 하기';
@@ -541,4 +517,34 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get autoPlay => '자동 재생';
+
+  @override
+  String get timeUp => '시간 초과!';
+
+  @override
+  String get gameModeTitle => '게임 모드';
+
+  @override
+  String get gameModeDesc => '연습할 게임 모드를 선택하세요';
+
+  @override
+  String get wordDefenseTitle => '단어 디펜스';
+
+  @override
+  String get wordDefenseDesc => '적이 도착하기 전에 단어를 말해서 기지를 방어하세요.';
+
+  @override
+  String get dialogueQuestTitle => '대화 퀘스트';
+
+  @override
+  String get dialogueQuestDesc => '상황극을 통해 대화 연습을 하세요. 적절한 답변을 선택하고 말해보세요.';
+
+  @override
+  String get micButtonTooltip => '듣기 시작';
+
+  @override
+  String get enterTextHint => '번역할 텍스트 입력';
+
+  @override
+  String get wordModeLabel => '단어 모드';
 }
