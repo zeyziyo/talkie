@@ -532,4 +532,13 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get next => '다음';
+
+  @override
+  String get thinkingTimeInterval => '생각 시간 간격';
+
+  @override
+  String get thinkingTimeDesc => '정답이 공개되기 전 생각할 시간입니다.';
+
+  @override
+  String get autoPlay => '자동 재생';
 }

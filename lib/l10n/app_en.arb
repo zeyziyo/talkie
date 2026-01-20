@@ -454,5 +454,8 @@
   "viewOnlineGuide": "View Online User Guide",
   "getMaterials": "Get Materials",
   "swapLanguages": "Swap Languages",
-  "next": "Next"
+  "next": "Next",
+  "thinkingTimeInterval": "Thinking Time Interval",
+  "thinkingTimeDesc": "Time to think before the answer is revealed.",
+  "autoPlay": "Auto-Play"
 }

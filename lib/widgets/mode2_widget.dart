@@ -68,9 +68,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
         dropdownItems.addAll(studyMaterials.map((material) {
           final id = material['id'] as int;
           final subject = material['subject'] as String;
-          final sourceLang = material['source_language'] as String;
-          final targetLang = material['target_language'] as String;
-          
+          // sourceLang and targetLang unused
           
           String label = subject;
           if (id == 0) {
@@ -148,12 +146,28 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        l10n.selectStudyMaterial,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
+                       Row(
+                        children: [
+                          IconButton(
+                            icon: Icon(_isAutoPlaying ? Icons.pause_circle_filled : Icons.play_circle_filled),
+                            color: _isAutoPlaying ? Colors.orange : Colors.green,
+                            iconSize: 32,
+                            onPressed: () {
+                              if (_isAutoPlaying) {
+                                _stopAutoPlay();
+                              } else {
+                                _startAutoPlay(appState);
+                              }
+                            },
+                            tooltip: _isAutoPlaying ? l10n.stopPractice : l10n.autoPlay, // Reusing stopPractice as 'Pause' roughly fits, or create new if needed. Let's use autoPlay for start.
+                          ),
+                          IconButton(
+                            icon: const Icon(Icons.settings),
+                            color: Colors.grey[700],
+                            onPressed: () => _showThinkingTimeSettings(context),
+                            tooltip: l10n.thinkingTimeInterval,
+                          ),
+                        ],
                       ),
                       // Website Link Button
                       TextButton.icon(
@@ -328,6 +342,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                           record, 
                           studiedIds,
                           key: index == 0 ? widget.tutorialListKey : null,
+                          index: index, // Fix: Pass index
                         );
                       },
                     ),
@@ -338,7 +353,8 @@ class _Mode2WidgetState extends State<Mode2Widget> {
     );
   }
   
-  /// Build material metadata info card
+
+
   Widget _buildMaterialInfo(AppState appState, int materialId) {
     final l10n = AppLocalizations.of(context)!;
     
@@ -414,203 +430,389 @@ class _Mode2WidgetState extends State<Mode2Widget> {
     );
   }
   
-  /// Build individual record card
+  // Auto-play state
+  bool _isAutoPlaying = false;
+  int _currentPlayingIndex = -1;
+  int _thinkingInterval = 2; // Default 2 seconds
+  final ScrollController _scrollController = ScrollController();
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  // Improved Scroll Logic: Use keys map
+  final Map<int, GlobalKey> _itemKeys = {};
+
+  Future<void> _startAutoPlay(AppState appState) async {
+    if (_isAutoPlaying) return;
+
+    setState(() {
+      _isAutoPlaying = true;
+    });
+
+    final records = appState.filteredMaterialRecords;
+    if (records.isEmpty) {
+      setState(() => _isAutoPlaying = false);
+      return;
+    }
+
+    // Start from current or first
+    int startIndex = _currentPlayingIndex < 0 ? 0 : _currentPlayingIndex;
+    if (startIndex >= records.length) startIndex = 0;
+
+    for (int i = startIndex; i < records.length; i++) {
+      if (!_isAutoPlaying) break; // Check cancel
+
+      setState(() => _currentPlayingIndex = i);
+
+      // Scroll to item
+      final key = _itemKeys[i];
+      if (key?.currentContext != null) {
+        Scrollable.ensureVisible(
+          key!.currentContext!, 
+          duration: const Duration(milliseconds: 500), 
+          curve: Curves.easeInOut,
+          alignment: 0.3, // Top 30% of screen
+        );
+      }
+
+      final record = records[i];
+      final sourceText = record['source_text'];
+      final targetText = record['target_text'];
+      final sourceLang = record['source_lang'];
+      final targetLang = record['target_lang'];
+
+      // 1. Speak Source
+      await appState.playMaterialTts(
+        text: sourceText, 
+        lang: sourceLang,
+        // No recordId for general play to avoid 'studied' marking if not desired
+      );
+
+      if (!_isAutoPlaying) break;
+
+      // 2. Wait Thinking Interval
+      await Future.delayed(Duration(seconds: _thinkingInterval));
+
+      if (!_isAutoPlaying) break;
+
+      // 3. Auto Flip (Visual feedback)
+      if (!_expandedCards.contains(record['id'])) {
+         setState(() {
+           _expandedCards.add(record['id']);
+         });
+      }
+
+      // 4. Speak Target
+      await appState.playMaterialTts(
+        text: targetText, 
+        lang: targetLang,
+      );
+
+      if (!_isAutoPlaying) break;
+
+      // 5. Fixed Wait 1s
+      await Future.delayed(const Duration(seconds: 1));
+    }
+
+    if (mounted) {
+      setState(() {
+        _isAutoPlaying = false;
+        _currentPlayingIndex = -1;
+      });
+    }
+  }
+
+  void _stopAutoPlay() {
+    setState(() {
+      _isAutoPlaying = false;
+    });
+  }
+
+  void _showThinkingTimeSettings(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setSheetState) {
+            return Container(
+              padding: const EdgeInsets.all(24),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                   Text(
+                    AppLocalizations.of(context)!.thinkingTimeInterval, 
+                    style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 24),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                       IconButton(
+                        icon: const Icon(Icons.remove_circle_outline, size: 40),
+                        color: Colors.red[300],
+                        onPressed: _thinkingInterval <= 1 
+                            ? null 
+                            : () {
+                                setState(() => _thinkingInterval--);
+                                setSheetState(() {});
+                              },
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 32),
+                        child: Text(
+                          '${_thinkingInterval}s',
+                          style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.blueAccent),
+                        ),
+                      ),
+                      IconButton(
+                        icon: const Icon(Icons.add_circle_outline, size: 40),
+                        color: Colors.green[300],
+                        onPressed: _thinkingInterval >= 10 
+                            ? null 
+                            : () {
+                                setState(() => _thinkingInterval++);
+                                setSheetState(() {});
+                              },
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 24),
+                  Text(AppLocalizations.of(context)!.thinkingTimeDesc, style: const TextStyle(color: Colors.grey)),
+                  const SizedBox(height: 32),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
+
   Widget _buildRecordCard(
     AppState appState,
     Map<String, dynamic> record,
     Set<int> studiedIds, {
     Key? key,
+    required int index, // Added index
   }) {
+    // Register key for auto-scroll
+    if (!_itemKeys.containsKey(index)) {
+      _itemKeys[index] = GlobalKey();
+    }
+    
     final l10n = AppLocalizations.of(context)!;
     final translationId = record['id'] as int;
     final sourceText = record['source_text'] as String;
     final targetText = record['target_text'] as String;
     final sourceLang = record['source_lang'] as String;
     final targetLang = record['target_lang'] as String;
-    final contextTag = record['context'] as String?; // Retrieve context
+    final contextTag = record['context'] as String?;
     final isStudied = studiedIds.contains(translationId);
     final isExpanded = _expandedCards.contains(translationId);
-    
+    final isPlaying = _isAutoPlaying && _currentPlayingIndex == index;
+
     return InkWell(
-      key: key,
+      key: _itemKeys[index], // Use local key
       onLongPress: () {
         _showDeleteDialog(context, appState, record, l10n);
       },
-      child: Card(
+      child: Container( // Changed Card to Container for Border animation support if needed, but Card is fine.
         margin: const EdgeInsets.only(bottom: 12),
-        elevation: 2,
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Source text
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 8,
-                      vertical: 4,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.blue[100],
-                      borderRadius: BorderRadius.circular(4),
-                    ),
-                    child: Text(
-                      sourceLang.toUpperCase(),
-                      style: const TextStyle(
-                        fontSize: 10,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blue,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      sourceText,
-                      style: TextStyle(
-                        fontSize: (record['type'] == 'word') ? 24 : 16,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              
-              // Context Tag Display (New)
-              if (contextTag != null && contextTag.isNotEmpty) ...[
-                const SizedBox(height: 4),
+        decoration: BoxDecoration(
+           borderRadius: BorderRadius.circular(12),
+           border: isPlaying ? Border.all(color: Colors.blueAccent, width: 3) : null, // Highlight playing
+           boxShadow: [
+             if (isPlaying)
+               BoxShadow(color: Colors.blue.withOpacity(0.3), blurRadius: 10, spreadRadius: 2)
+             else 
+               const BoxShadow(color: Colors.black12, blurRadius: 4, offset: Offset(0, 2))
+           ]
+        ),
+        child: Card(
+          margin: EdgeInsets.zero, // Handle margin in Container
+          elevation: 0, // Handle shadow in Container
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          color: isPlaying ? Colors.blue[50] : Colors.white, // Subtle bg change
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Source text
                 Row(
                   children: [
-                    const SizedBox(width: 44), // Indent to align with text (Badge width + gap)
-                    Icon(Icons.info_outline, size: 12, color: Colors.grey[600]),
-                    const SizedBox(width: 4),
-                    Text(
-                      contextTag,
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.grey[700],
-                        fontStyle: FontStyle.italic,
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.blue[100],
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Text(
+                        sourceLang.toUpperCase(),
+                        style: const TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        sourceText,
+                        style: TextStyle(
+                          fontSize: (record['type'] == 'word') ? 24 : 16,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   ],
                 ),
-              ],
-              
-              const SizedBox(height: 12),
-              
-              // Target text (Hidden by default, expandable)
-              if (isExpanded) ...[
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: Colors.green[50],
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                
+                // Context Tag
+                if (contextTag != null && contextTag.isNotEmpty) ...[
+                  const SizedBox(height: 4),
+                  Row(
                     children: [
-                      Container(
-                        margin: const EdgeInsets.only(top: 2),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 8,
-                          vertical: 4,
-                        ),
-                        decoration: BoxDecoration(
-                          color: Colors.green[200],
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Text(
-                          targetLang.toUpperCase(),
-                          style: const TextStyle(
-                            fontSize: 10,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: Text(
-                          targetText,
-                          style: TextStyle(
-                            fontSize: (record['type'] == 'word') ? 24 : 16,
-                            fontWeight: FontWeight.w500,
-                            color: const Color(0xFF2c5282),
-                          ),
+                      const SizedBox(width: 44),
+                      Icon(Icons.info_outline, size: 12, color: Colors.grey[600]),
+                      const SizedBox(width: 4),
+                      Text(
+                        contextTag,
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.grey[700],
+                          fontStyle: FontStyle.italic,
                         ),
                       ),
                     ],
                   ),
-                ),
+                ],
+                
                 const SizedBox(height: 12),
-              ],
-              
-              // Actions
-              Row(
-                children: [
-                  // Show/Hide Button
-                  ElevatedButton.icon(
-                    onPressed: () {
-                      setState(() {
-                        if (isExpanded) {
-                          _expandedCards.remove(translationId);
-                        } else {
-                          _expandedCards.add(translationId);
-                        }
-                      });
-                    },
-                    icon: Icon(
-                      isExpanded ? Icons.visibility_off : Icons.visibility,
-                      size: 18,
+                
+                // Target text (Hidden by default, expandable)
+                if (isExpanded) ...[
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.green[50], // Keep original or simple
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    label: Text(isExpanded ? l10n.hide : l10n.flip),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF667eea),
-                      foregroundColor: Colors.white,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.only(top: 2),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 4,
+                          ),
+                          decoration: BoxDecoration(
+                            color: Colors.green[200],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Text(
+                            targetLang.toUpperCase(),
+                            style: const TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            targetText,
+                            style: TextStyle(
+                              fontSize: (record['type'] == 'word') ? 24 : 16,
+                              fontWeight: FontWeight.w500,
+                              color: const Color(0xFF2c5282),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  
-                  const SizedBox(width: 8),
-                  
-                  // Listen Button (Only for Target)
-                  if (isExpanded)
-                    OutlinedButton.icon(
+                  const SizedBox(height: 12),
+                ],
+                
+                // Actions
+                Row(
+                  children: [
+                    // Show/Hide Button
+                    ElevatedButton.icon(
                       onPressed: () {
-                        appState.playMaterialTts(
-                          text: targetText,
-                          lang: targetLang,
-                          recordId: record['target_id'] as int?,
-                        );
+                        setState(() {
+                          if (isExpanded) {
+                            _expandedCards.remove(translationId);
+                          } else {
+                            _expandedCards.add(translationId);
+                          }
+                        });
                       },
-                      icon: const Icon(Icons.volume_up, size: 18),
-                      label: Text(l10n.listen),
-                      style: OutlinedButton.styleFrom(
-                        foregroundColor: const Color(0xFF667eea),
+                      icon: Icon(
+                        isExpanded ? Icons.visibility_off : Icons.visibility,
+                        size: 18,
+                      ),
+                      label: Text(isExpanded ? l10n.hide : l10n.flip),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF667eea),
+                        foregroundColor: Colors.white,
                       ),
                     ),
                     
-                  const Spacer(),
-                  
-                  // Study Check Button
-                  IconButton(
-                    onPressed: isStudied
-                        ? null
-                        : () {
-                            appState.markTranslationAsStudied(translationId);
-                          },
-                    icon: Icon(
-                      isStudied ? Icons.check_circle : Icons.check_circle_outline,
-                      color: isStudied ? Colors.green : Colors.grey,
-                      size: 28,
+                    const SizedBox(width: 8),
+                    
+                    // Listen Button
+                    if (isExpanded)
+                      OutlinedButton.icon(
+                        onPressed: () {
+                          appState.playMaterialTts(
+                            text: targetText,
+                            lang: targetLang,
+                            recordId: record['target_id'] as int?,
+                          );
+                        },
+                        icon: const Icon(Icons.volume_up, size: 18),
+                        label: Text(l10n.listen),
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: const Color(0xFF667eea),
+                        ),
+                      ),
+                      
+                    const Spacer(),
+                    
+                    // Study Check Button
+                    IconButton(
+                      onPressed: isStudied
+                          ? null
+                          : () {
+                              appState.markTranslationAsStudied(translationId);
+                            },
+                      icon: Icon(
+                        isStudied ? Icons.check_circle : Icons.check_circle_outline,
+                        color: isStudied ? Colors.green : Colors.grey,
+                        size: 28,
+                      ),
+                      tooltip: isStudied ? l10n.studyComplete : l10n.markAsStudied,
                     ),
-                    tooltip: isStudied ? l10n.studyComplete : l10n.markAsStudied,
-                  ),
-                ],
-              ),
-            ],
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

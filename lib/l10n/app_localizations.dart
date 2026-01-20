@@ -1139,6 +1139,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Next'**
   String get next;
+
+  /// No description provided for @thinkingTimeInterval.
+  ///
+  /// In en, this message translates to:
+  /// **'Thinking Time Interval'**
+  String get thinkingTimeInterval;
+
+  /// No description provided for @thinkingTimeDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Time to think before the answer is revealed.'**
+  String get thinkingTimeDesc;
+
+  /// No description provided for @autoPlay.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto-Play'**
+  String get autoPlay;
 }
 
 class _AppLocalizationsDelegate

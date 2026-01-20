@@ -549,4 +549,13 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get next => 'Next';
+
+  @override
+  String get thinkingTimeInterval => 'Thinking Time Interval';
+
+  @override
+  String get thinkingTimeDesc => 'Time to think before the answer is revealed.';
+
+  @override
+  String get autoPlay => 'Auto-Play';
 }
