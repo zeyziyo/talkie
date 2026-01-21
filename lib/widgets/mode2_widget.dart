@@ -10,11 +10,13 @@ import 'package:url_launcher/url_launcher.dart'; // Changed to url_launcher
 class Mode2Widget extends StatefulWidget {
   final Key? materialDropdownKey;
   final Key? tutorialListKey;
+  final Key? toggleButtonKey;
 
   const Mode2Widget({
     super.key,
     this.materialDropdownKey,
     this.tutorialListKey,
+    this.toggleButtonKey,
   });
 
   @override
@@ -104,28 +106,31 @@ class _Mode2WidgetState extends State<Mode2Widget> {
             // Word/Sentence Toggle (Added above Dropdown)
              Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: SegmentedButton<String>(
-                segments: [
-                  ButtonSegment<String>(
-                    value: 'word', 
-                    label: Text(l10n.labelWord), 
-                    icon: const Icon(Icons.abc)
+              child: Container(
+                key: widget.toggleButtonKey,
+                child: SegmentedButton<String>(
+                  segments: [
+                    ButtonSegment<String>(
+                      value: 'word', 
+                      label: Text(l10n.labelWord), 
+                      icon: const Icon(Icons.abc)
+                    ),
+                    ButtonSegment<String>(
+                      value: 'sentence', 
+                      label: Text(l10n.labelSentence), 
+                      icon: const Icon(Icons.short_text)
+                    ),
+                  ],
+                  selected: {appState.recordTypeFilter == 'all' ? 'word' : appState.recordTypeFilter}, // Default 'all' to 'word'
+                  onSelectionChanged: (Set<String> newSelection) {
+                    appState.setRecordTypeFilter(newSelection.first); // This filters the records list
+                  },
+                  style: ButtonStyle(
+                    visualDensity: VisualDensity.standard,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
-                  ButtonSegment<String>(
-                    value: 'sentence', 
-                    label: Text(l10n.labelSentence), 
-                    icon: const Icon(Icons.short_text)
-                  ),
-                ],
-                selected: {appState.recordTypeFilter == 'all' ? 'word' : appState.recordTypeFilter}, // Default 'all' to 'word'
-                onSelectionChanged: (Set<String> newSelection) {
-                  appState.setRecordTypeFilter(newSelection.first); // This filters the records list
-                },
-                style: ButtonStyle(
-                  visualDensity: VisualDensity.standard,
-                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  showSelectedIcon: true,
                 ),
-                showSelectedIcon: true,
               ),
             ),
             

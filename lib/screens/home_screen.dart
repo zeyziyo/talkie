@@ -24,10 +24,13 @@ class _HomeScreenState extends State<HomeScreen> {
   final GlobalKey _saveButtonKey = GlobalKey();
   final GlobalKey _contextFieldKey = GlobalKey();
   final GlobalKey _mode1ToggleKey = GlobalKey(); // Mode 1 Toggle Key
+  final GlobalKey _mode1DropdownKey = GlobalKey(); // Mode 1 Material Dropdown Key
 
   // Mode 2 Keys
   final GlobalKey _mode2DropdownKey = GlobalKey();
+  final GlobalKey _mode2DropdownKey = GlobalKey();
   final GlobalKey _mode2ListKey = GlobalKey();
+  final GlobalKey _mode2ToggleKey = GlobalKey(); // Mode 2 Toggle Key
 
   // Mode 3 Keys
   final GlobalKey _mode3DropdownKey = GlobalKey();
@@ -147,6 +150,25 @@ class _HomeScreenState extends State<HomeScreen> {
       ));
 
       targets.add(_buildTarget(
+        _mode1ToggleKey,
+        l10n.tutorialM1ToggleTitle,
+        l10n.tutorialM1ToggleDesc,
+        ContentAlign.bottom,
+        radius: 12,
+        keepWidgetSize: true, // Highlight full toggle
+        shape: ShapeLightFocus.RRect,
+      ));
+
+      // New: Mode 1 Dropdown
+      targets.add(_buildTarget(
+        _mode1DropdownKey,
+        l10n.tutorialM2DropdownDesc, // Use same desc as Mode 2
+        l10n.tutorialM2SelectTitle,  // Use same title as Mode 2
+        ContentAlign.bottom,
+        radius: 12,
+      ));
+
+      targets.add(_buildTarget(
         _saveButtonKey, 
         l10n.tutorialSaveTitle, 
         l10n.tutorialSaveDesc,
@@ -162,6 +184,17 @@ class _HomeScreenState extends State<HomeScreen> {
         radius: 12,
       ));
     } else if (modeIndex == 1) {
+      // Mode 2: Toggle
+      targets.add(_buildTarget(
+        _mode2ToggleKey,
+        l10n.tutorialM1ToggleTitle, // Reuse Mode 1 title
+        l10n.tutorialM1ToggleDesc,  // Reuse Mode 1 desc
+        ContentAlign.bottom,
+        radius: 12,
+        keepWidgetSize: true, // Highlight full toggle
+        shape: ShapeLightFocus.RRect,
+      ));
+
       // Mode 2: Dropdown
       targets.add(_buildTarget(
         _mode2DropdownKey, 
@@ -449,11 +482,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     saveButtonKey: _saveButtonKey,
                     contextFieldKey: _contextFieldKey,
                     toggleButtonKey: _mode1ToggleKey, // Pass Toggle Key
+                    materialDropdownKey: _mode1DropdownKey, // New Key
                   );
                 } else if (appState.currentMode == 1) {
                   return Mode2Widget(
                     materialDropdownKey: _mode2DropdownKey,
                     tutorialListKey: _mode2ListKey,
+                    toggleButtonKey: _mode2ToggleKey, // New Key
                   ); 
                 } else if (appState.currentMode == 2) {
                   return Mode3Widget(

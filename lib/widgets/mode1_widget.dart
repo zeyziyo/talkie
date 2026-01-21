@@ -13,6 +13,7 @@ class Mode1Widget extends StatefulWidget {
 
   final Key? contextFieldKey;
   final Key? toggleButtonKey;
+  final Key? materialDropdownKey;
 
   const Mode1Widget({
     super.key,
@@ -21,6 +22,7 @@ class Mode1Widget extends StatefulWidget {
     this.saveButtonKey,
     this.contextFieldKey,
     this.toggleButtonKey,
+    this.materialDropdownKey,
   });
 
   @override
@@ -129,25 +131,28 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           // 1. Type Toggle
-                          SegmentedButton<bool>(
-                            segments: const [
-                              ButtonSegment<bool>(
-                                value: true,
-                                label: Text('Word'),
-                                icon: Icon(Icons.abc),
+                          Container(
+                            key: widget.toggleButtonKey,
+                            child: SegmentedButton<bool>(
+                              segments: const [
+                                ButtonSegment<bool>(
+                                  value: true,
+                                  label: Text('Word'),
+                                  icon: Icon(Icons.abc),
+                                ),
+                                ButtonSegment<bool>(
+                                  value: false,
+                                  label: Text('Sentence'),
+                                  icon: Icon(Icons.short_text),
+                                ),
+                              ],
+                              selected: {appState.isWordMode},
+                              onSelectionChanged: (Set<bool> newSelection) {
+                                appState.setWordMode(newSelection.first);
+                              },
+                              style: ButtonStyle(
+                                visualDensity: VisualDensity.compact,
                               ),
-                              ButtonSegment<bool>(
-                                value: false,
-                                label: Text('Sentence'),
-                                icon: Icon(Icons.short_text),
-                              ),
-                            ],
-                            selected: {appState.isWordMode},
-                            onSelectionChanged: (Set<bool> newSelection) {
-                              appState.setWordMode(newSelection.first);
-                            },
-                            style: ButtonStyle(
-                              visualDensity: VisualDensity.compact,
                             ),
                           ),
                           
@@ -155,6 +160,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                           
                           // 2. Material Selector
                           DropdownButtonFormField<int>(
+                            key: widget.materialDropdownKey,
                             value: appState.selectedMaterialId,
                             decoration: InputDecoration(
                               labelText: l10n.selectStudyMaterial ?? "Target Material", // Use localized or fallback
