@@ -35,7 +35,7 @@ class Mode3Widget extends StatelessWidget {
               // 1. Top Settings Panel
               // ==========================================
               Container(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                 decoration: BoxDecoration(
                   color: Colors.purple[50], // Distinct color for Speaking Mode
                   borderRadius: const BorderRadius.only(

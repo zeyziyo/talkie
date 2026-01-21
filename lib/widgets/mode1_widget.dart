@@ -111,7 +111,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
             SingleChildScrollView(
               padding: const EdgeInsets.only(bottom: 100),
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                 child: Column(
                   children: [
                     // ===================================
