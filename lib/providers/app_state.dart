@@ -987,6 +987,8 @@ class AppState extends ChangeNotifier {
   
   int _mode3Interval = 5; // Seconds
   bool _mode3SessionActive = false;
+
+  double? _mode3Score; // 0.0 to 100.0
   Map<String, dynamic>? _currentMode3Question;
   String _mode3UserAnswer = ''; // User's spoken text for feedback
   Timer? _mode3Timer; // Timer for auto-advance
@@ -1110,11 +1112,7 @@ class AppState extends ChangeNotifier {
     _startMode3Listening();
   }
 
-  void setPracticeWordsOnly(bool value) {
-    if (_mode3SessionActive) return;
-    _practiceWordsOnly = value;
-    notifyListeners();
-  }
+
   
   /// Called when user clicks "Retry"
   Future<void> retryMode3Question() async {
