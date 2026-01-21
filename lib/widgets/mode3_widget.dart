@@ -46,6 +46,34 @@ class Mode3Widget extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    // Word/Sentence Toggle
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 12),
+                      child: SegmentedButton<String>(
+                        segments: [
+                          ButtonSegment<String>(
+                            value: 'word', 
+                            label: Text(l10n.labelWord), 
+                            icon: const Icon(Icons.abc)
+                          ),
+                          ButtonSegment<String>(
+                            value: 'sentence', 
+                            label: Text(l10n.labelSentence), 
+                            icon: const Icon(Icons.short_text)
+                          ),
+                        ],
+                        selected: {appState.recordTypeFilter == 'all' ? 'word' : appState.recordTypeFilter},
+                        onSelectionChanged: (Set<String> newSelection) {
+                          appState.setRecordTypeFilter(newSelection.first); 
+                        },
+                        style: ButtonStyle(
+                          visualDensity: VisualDensity.compact,
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        ),
+                        showSelectedIcon: true,
+                      ),
+                    ),
+
                     // Material Selector
                     DropdownButtonFormField<int>(
                       key: materialDropdownKey,
@@ -191,48 +219,62 @@ class Mode3Widget extends StatelessWidget {
                     : Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            // Source Text (Native)
-                            const Text(
-                              "🇰🇷", // Fixed to Source flag or dynamic
-                              style: TextStyle(fontSize: 32),
-                            ),
-                            const SizedBox(height: 8),
-                            Text(
-                              currentQuestion['source_text'] as String,
-                              style: const TextStyle(
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black87,
-                              ),
-                            ),
-                            
-                            // Context Tag Hint (New)
-                            if (currentQuestion['note'] != null && (currentQuestion['note'] as String).isNotEmpty) ...[
-                              const SizedBox(height: 8),
-                              Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[200],
-                                  borderRadius: BorderRadius.circular(12),
-                                  border: Border.all(color: Colors.grey[300]!),
+                            // Source Text Display (Horizontal)
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                // Flag
+                                const Text(
+                                  "🇰🇷", 
+                                  style: TextStyle(fontSize: 24), // Slightly smaller to fit row
                                 ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Icon(Icons.info_outline, size: 14, color: Colors.grey[600]),
-                                    const SizedBox(width: 4),
-                                    Text(
-                                      currentQuestion['note'] as String,
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        color: Colors.grey[700],
-                                        fontStyle: FontStyle.italic,
+                                const SizedBox(width: 12),
+                                // Text
+                                Flexible(
+                                  child: Text(
+                                    currentQuestion['source_text'] as String,
+                                    textAlign: TextAlign.center,
+                                    style: const TextStyle(
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black87,
+                                    ),
+                                  ),
+                                ),
+                                // Hint
+                                if (currentQuestion['note'] != null && (currentQuestion['note'] as String).isNotEmpty) ...[
+                                  const SizedBox(width: 8),
+                                  Tooltip( // Use Tooltip or minimal icon for hint in row to save space? 
+                                    // User asked for "Hint" to be aligned. I'll show the box.
+                                    message: currentQuestion['note'] as String,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius: BorderRadius.circular(8),
+                                        border: Border.all(color: Colors.grey[300]!),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          Icon(Icons.info_outline, size: 14, color: Colors.grey[600]),
+                                          const SizedBox(width: 4),
+                                          Text(
+                                            currentQuestion['note'] as String,
+                                            style: TextStyle(
+                                              fontSize: 12, // Smaller font for hint in row
+                                              color: Colors.grey[700],
+                                              fontStyle: FontStyle.italic,
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                  ],
-                                ),
-                              ),
-                            ],
+                                  ),
+                                ],
+                              ],
+                            ),
                             
                             const SizedBox(height: 24),
                             
