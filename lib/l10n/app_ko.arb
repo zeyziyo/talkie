@@ -446,18 +446,10 @@
   "getMaterials": "자료 받기",
   "swapLanguages": "언어 전환",
   "next": "다음",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode",
-  "tutorialM3WordsTitle": "Practice Words",
-  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
-  "@totalRecords": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "micButtonTooltip": "듣기 시작",
-  "enterTextHint": "번역할 텍스트 입력",
   "wordModeLabel": "단어 모드",
-  "accuracy": "정확도"
+  "accuracy": "정확도",
+  "basicDefault": "기본 (Default)",
+  "basic": "기본",
+  "tutorialM1ToggleTitle": "단어/문장 모드",
+  "tutorialM3WordsDesc": "체크하면 저장된 단어만 연습합니다."
 }
