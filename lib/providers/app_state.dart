@@ -1098,7 +1098,8 @@ class AppState extends ChangeNotifier {
     await _speechService.speak(sourceText, lang: _getLangCode(sourceLang));
     
     // Add delay to ensure TTS audio is fully cleared before listening
-    await Future.delayed(const Duration(milliseconds: 500));
+    // Increased to 1500ms to prevent STT from picking up TTS residue or noise
+    await Future.delayed(const Duration(milliseconds: 1500));
     
     // Start listening for answer
     _startMode3Listening();
@@ -1111,14 +1112,16 @@ class AppState extends ChangeNotifier {
     _mode3UserAnswer = ''; // Clear previous bad answer
     notifyListeners();
     
-    // Simple restart listening without playing TTS again (or should we play?)
-    // Let's just listen.
+    // Simple restart listening
     _startMode3Listening();
   }
   
+  DateTime? _sttStartTime;
+
   Future<void> _startMode3Listening() async {
     try {
       _isListening = true;
+      _sttStartTime = DateTime.now(); // Record start time
       notifyListeners();
       
       final targetLang = _currentMode3Question!['target_lang'] as String;
@@ -1128,7 +1131,9 @@ class AppState extends ChangeNotifier {
       _speechStatusSubscription = _speechService.statusStream.listen((status) {
         if (status == 'done' || status == 'notListening') {
           // If session ended and we haven't checked answer yet (checking if active)
-          if (_mode3SessionActive && _mode3UserAnswer.trim().isNotEmpty) {
+          if (_mode3SessionActive && 
+              _mode3UserAnswer.trim().isNotEmpty &&
+              DateTime.now().difference(_sttStartTime!).inMilliseconds > 1000) { // Safety check
              debugPrint('[AppState] Mode 3 STT done, checking answer immediately');
              // Small delay to ensure final result processed if any
              Future.delayed(const Duration(milliseconds: 300), () {
@@ -1141,6 +1146,12 @@ class AppState extends ChangeNotifier {
       await _speechService.startSTT(
         lang: _getLangCode(targetLang),
         onResult: (text, isFinal) {  // Added isFinal parameter
+          // Ignore results if too fast (noise/residual)
+          if (DateTime.now().difference(_sttStartTime!).inMilliseconds < 500) {
+            debugPrint('[AppState] Ignoring premature STT result: $text');
+            return;
+          }
+
           _mode3UserAnswer = text;
           notifyListeners();
           

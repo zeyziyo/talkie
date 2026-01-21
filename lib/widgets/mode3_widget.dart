@@ -242,42 +242,51 @@ class Mode3Widget extends StatelessWidget {
                             
                             const SizedBox(height: 16),
                             
-                            // Result / Score
+                            // Result / Score (Horizontal Layout)
                             if (appState.mode3Score != null) ...[
                               Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                                margin: const EdgeInsets.symmetric(vertical: 12),
+                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                 decoration: BoxDecoration(
-                                  color: _getScoreColor(appState.mode3Score!),
-                                  borderRadius: BorderRadius.circular(30),
+                                  color: Colors.grey[100],
+                                  borderRadius: BorderRadius.circular(12),
+                                  border: Border.all(color: Colors.grey[300]!),
                                 ),
-                                child: Text(
-                                  _getFeedbackText(context, appState.mode3Feedback),
-                                  style: const TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 8),
-                              Text(
-                                l10n.score(appState.mode3Score!.toStringAsFixed(1)),
-                                style: TextStyle(
-                                  color: Colors.grey[700],
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                               Text(
-                                l10n.correctAnswer,
-                                style: TextStyle(color: Colors.grey[600], fontSize: 12),
-                              ),
-                              Text(
-                                currentQuestion['target_text'] as String,
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.grey[800],
+                                child: Wrap(
+                                  crossAxisAlignment: WrapCrossAlignment.center,
+                                  alignment: WrapAlignment.center,
+                                  runSpacing: 4,
+                                  spacing: 8,
+                                  children: [
+                                    // 1. Accuracy
+                                    Text(
+                                      '${l10n.accuracy}: ${appState.mode3Score!.toStringAsFixed(1)}%',
+                                      style: TextStyle(
+                                        color: _getScoreColor(appState.mode3Score!),
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    
+                                    // Separator
+                                    Container(width: 1, height: 12, color: Colors.grey[400]),
+                                    
+                                    // 2. Correct Answer Label
+                                    Text(
+                                      l10n.correctAnswer, 
+                                      style: TextStyle(color: Colors.grey[600], fontSize: 13, fontWeight: FontWeight.w500),
+                                    ),
+                                    
+                                    // 3. Target Text
+                                    Text(
+                                      currentQuestion['target_text'] as String,
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        color: Colors.grey[900],
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                               
