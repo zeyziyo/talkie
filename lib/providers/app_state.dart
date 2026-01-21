@@ -1187,6 +1187,9 @@ class AppState extends ChangeNotifier {
             _checkMode3Answer();   // Check answer immediately
           }
         },
+        },
+      );
+      
       // Start Initial Silence Timer (3 seconds)
       // If user says nothing for 3 seconds, mark as timeout.
       // If user starts speaking, onResult will cancel this timer.

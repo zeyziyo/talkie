@@ -134,16 +134,16 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                           Container(
                             key: widget.toggleButtonKey,
                             child: SegmentedButton<bool>(
-                              segments: const [
+                              segments: [
                                 ButtonSegment<bool>(
                                   value: true,
-                                  label: Text('Word'),
-                                  icon: Icon(Icons.abc),
+                                  label: Text(l10n.labelWord),
+                                  icon: const Icon(Icons.abc),
                                 ),
                                 ButtonSegment<bool>(
                                   value: false,
-                                  label: Text('Sentence'),
-                                  icon: Icon(Icons.short_text),
+                                  label: Text(l10n.labelSentence),
+                                  icon: const Icon(Icons.short_text),
                                 ),
                               ],
                               selected: {appState.isWordMode},

@@ -126,7 +126,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                     appState.setRecordTypeFilter(newSelection.first); // This filters the records list
                   },
                   style: ButtonStyle(
-                    visualDensity: VisualDensity.standard,
+                    visualDensity: VisualDensity.compact,
                     tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
                   showSelectedIcon: true,
