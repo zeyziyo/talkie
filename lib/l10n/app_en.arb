@@ -458,5 +458,6 @@
   "dialogueQuestDesc": "Roleplay in scenarios. Choose the right response and speak it aloud.",
   "micButtonTooltip": "Start Listening",
   "enterTextHint": "Enter text to translate",
-  "wordModeLabel": "Word Mode"
+  "wordModeLabel": "Word Mode",
+  "accuracy": "Accuracy"
 }

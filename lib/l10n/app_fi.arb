@@ -455,5 +455,9 @@
   "viewOnlineGuide": "View Online User Guide",
   "getMaterials": "Get Materials",
   "swapLanguages": "Swap Languages",
-  "next": "Next"
+  "next": "Next",
+  "micButtonTooltip": "Start Listening",
+  "enterTextHint": "Enter text to translate",
+  "wordModeLabel": "Word Mode",
+  "accuracy": "Accuracy"
 }

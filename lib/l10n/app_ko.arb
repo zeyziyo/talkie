@@ -458,5 +458,6 @@
   },
   "micButtonTooltip": "듣기 시작",
   "enterTextHint": "번역할 텍스트 입력",
-  "wordModeLabel": "단어 모드"
+  "wordModeLabel": "단어 모드",
+  "accuracy": "정확도"
 }
