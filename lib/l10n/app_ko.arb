@@ -451,5 +451,7 @@
   "basicDefault": "기본 (Default)",
   "basic": "기본",
   "tutorialM1ToggleTitle": "단어/문장 모드",
-  "tutorialM3WordsDesc": "체크하면 저장된 단어만 연습합니다."
+  "tutorialM3WordsDesc": "체크하면 저장된 단어만 연습합니다.",
+  "enterTextHint": "Enter text to translate",
+  "micButtonTooltip": "Start Listening"
 }

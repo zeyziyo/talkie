@@ -1147,9 +1147,20 @@ class AppState extends ChangeNotifier {
       _speechStatusSubscription?.cancel();
       _speechStatusSubscription = _speechService.statusStream.listen((status) {
         if (status == 'done' || status == 'notListening') {
-          // If session ended (from native silence detection or manual stop)
+          // CHECK FOR PREMATURE STOP (Bug Fix)
+          // If STT stops too quickly (< 1000ms) without result, it's likely a system glitch or noise cancellation.
+          // We should RESTART instead of timing out to prevent skipping.
+          final elapsed = DateTime.now().difference(_sttStartTime!).inMilliseconds;
+          if (elapsed < 1000 && _mode3UserAnswer.isEmpty && _mode3SessionActive) {
+             debugPrint('[AppState] Premature STT stop detected (${elapsed}ms). Restarting...');
+             // Recursive restart - ensure we don't stack listeners (handled by cancel at start of func)
+             _startMode3Listening(); 
+             return; 
+          }
+
+          // If session ended normally (from native silence detection or manual stop)
           if (_mode3SessionActive) {
-             debugPrint('[AppState] Mode 3 STT status: $status');
+             debugPrint('[AppState] Mode 3 STT status: $status (Elapsed: ${elapsed}ms)');
              
              // If we have an answer, check it
              if (_mode3UserAnswer.trim().isNotEmpty) {

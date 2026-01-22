@@ -9,7 +9,9 @@ MISSING_KEYS = {
     "basicDefault": "Basic (Default)",
     "basic": "Basic",
     "tutorialM1ToggleTitle": "Word/Sentence Mode",
-    "tutorialM3WordsDesc": "Check this to practice only your saved words."
+    "tutorialM3WordsDesc": "Check this to practice only your saved words.",
+    "enterTextHint": "Enter text to translate",
+    "micButtonTooltip": "Start Listening"
 }
 
 def update_arb_files():
