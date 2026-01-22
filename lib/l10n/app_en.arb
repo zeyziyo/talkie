@@ -474,5 +474,6 @@
   "mode3Next": "Next",
   "mode3TryAgain": "Try Again",
   "swapLanguages": "Swap Languages",
-  "tutorialSwapDesc": "Switch between source and target languages."
+  "tutorialSwapDesc": "Switch between source and target languages.",
+  "recognizedText": "Recognized Text:"
 }

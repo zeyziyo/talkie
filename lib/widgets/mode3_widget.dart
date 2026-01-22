@@ -112,10 +112,11 @@ class Mode3Widget extends StatelessWidget {
                                     const SizedBox(width: 12),
                                     Flexible(
                                       child: Text(
+                                      child: Text(
                                         currentQuestion['source_text'] as String,
                                         textAlign: TextAlign.center,
                                         style: const TextStyle(
-                                          fontSize: 24,
+                                          fontSize: 32, // Larger Text
                                           fontWeight: FontWeight.bold,
                                           color: Colors.black87,
                                         ),
@@ -144,6 +145,7 @@ class Mode3Widget extends StatelessWidget {
                                                   fontSize: 12,
                                                   color: Colors.grey[700],
                                                   fontStyle: FontStyle.italic,
+                                                  fontSize: 18, // Larger Hint
                                                 ),
                                               ),
                                               // First Letter Hint
@@ -182,22 +184,49 @@ class Mode3Widget extends StatelessWidget {
                                    
                                    if (appState.mode3Score != null)
                                       Container(
-                                        padding: const EdgeInsets.all(12),
+                                        padding: const EdgeInsets.all(16),
+                                        width: double.infinity,
                                         decoration: BoxDecoration(
                                           color: Colors.grey[100],
-                                          borderRadius: BorderRadius.circular(12),
+                                          borderRadius: BorderRadius.circular(16),
+                                          border: Border.all(color: Colors.grey.shade300),
                                         ),
                                         child: Column(
                                           children: [
+                                            // Accuracy Score
                                             Text(
                                               '${l10n.accuracy}: ${appState.mode3Score!.toStringAsFixed(1)}%',
                                                 style: TextStyle(
                                                   color: _getScoreColor(appState.mode3Score!),
-                                                  fontWeight: FontWeight.bold, fontSize: 16),
+                                                  fontWeight: FontWeight.bold, fontSize: 22), // Larger Score
                                             ),
-                                            const SizedBox(height: 8),
-                                            Text(currentQuestion['target_text'] as String,
-                                                style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.black87)),
+                                            const SizedBox(height: 12),
+                                            
+                                            // Target Text (Correct Answer)
+                                            Text(
+                                              currentQuestion['target_text'] as String,
+                                              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.blueGrey),
+                                              textAlign: TextAlign.center,
+                                            ),
+                                            
+                                            const Divider(height: 24),
+                                            
+                                            // User's Spoken Text (Feedback)
+                                            Text(
+                                              l10n.recognizedText, 
+                                              style: const TextStyle(fontSize: 14, color: Colors.grey),
+                                            ),
+                                            const SizedBox(height: 4),
+                                            Text(
+                                              appState.mode3UserAnswer.isEmpty ? "( ... )" : appState.mode3UserAnswer,
+                                              style: TextStyle(
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.w600,
+                                                fontStyle: FontStyle.italic,
+                                                color: appState.mode3UserAnswer.isEmpty ? Colors.grey : Colors.black87
+                                              ),
+                                              textAlign: TextAlign.center,
+                                            ),
                                           ],
                                         ),
                                       ),
@@ -205,27 +234,55 @@ class Mode3Widget extends StatelessWidget {
                                    const SizedBox(height: 30),
                                    
                                    // Next or Retry Button
+                                   // Next or Retry + Next Logic
                                    if ((appState.mode3Score ?? 0) >= 90)
-                                      ElevatedButton.icon(
-                                        onPressed: () => appState.skipMode3Question(),
-                                        icon: const Icon(Icons.arrow_forward), // Next
-                                        label: Text(l10n.mode3Next),
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: Colors.blue,
-                                          foregroundColor: Colors.white,
-                                          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+                                      // Perfect Score -> Show Big Next
+                                      SizedBox(
+                                        width: double.infinity,
+                                        child: ElevatedButton.icon(
+                                          onPressed: () => appState.skipMode3Question(),
+                                          icon: const Icon(Icons.arrow_forward, size: 28),
+                                          label: Text(l10n.mode3Next, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                                          style: ElevatedButton.styleFrom(
+                                            backgroundColor: Colors.blue,
+                                            foregroundColor: Colors.white,
+                                            padding: const EdgeInsets.symmetric(vertical: 20),
+                                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                                            elevation: 4,
+                                          ),
                                         ),
                                       )
                                    else
-                                      ElevatedButton.icon(
-                                        onPressed: () => appState.retryMode3Question(),
-                                        icon: const Icon(Icons.refresh),
-                                        label: Text(l10n.mode3TryAgain),
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: Colors.orange,
-                                          foregroundColor: Colors.white,
-                                          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
-                                        ),
+                                      // Retry (Primary) + Skip (Secondary)
+                                      Column(
+                                        children: [
+                                          SizedBox(
+                                            width: double.infinity,
+                                            child: ElevatedButton.icon(
+                                              onPressed: () => appState.retryMode3Question(),
+                                              icon: const Icon(Icons.refresh, size: 28),
+                                              label: Text(l10n.mode3TryAgain, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                                              style: ElevatedButton.styleFrom(
+                                                backgroundColor: Colors.orange,
+                                                foregroundColor: Colors.white,
+                                                padding: const EdgeInsets.symmetric(vertical: 20),
+                                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                                                elevation: 4,
+                                              ),
+                                            ),
+                                          ),
+                                          
+                                          const SizedBox(height: 16),
+                                          
+                                          TextButton.icon(
+                                            onPressed: () => appState.skipMode3Question(),
+                                            icon: const Icon(Icons.skip_next, color: Colors.grey),
+                                            label: Text(l10n.mode3Next, style: const TextStyle(fontSize: 18, color: Colors.grey)),
+                                            style: TextButton.styleFrom(
+                                              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                                            ),
+                                          ),
+                                        ],
                                       ),
 
                                 ] else ...[
