@@ -241,6 +241,10 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                               maxLines: 3,
                               decoration: InputDecoration(
                                 hintText: l10n.enterTextHint,
+                                hintStyle: TextStyle(
+                                  color: Colors.grey.shade400,
+                                  fontStyle: FontStyle.italic,
+                                ),
                                 border: InputBorder.none,
                               ),
                               onChanged: (text) {
@@ -275,6 +279,10 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                               decoration: InputDecoration(
                                 labelText: l10n.contextTagLabel,
                                 hintText: l10n.contextTagHint,
+                                hintStyle: TextStyle(
+                                  color: Colors.grey.shade400,
+                                  fontStyle: FontStyle.italic,
+                                ),
                                 border: const OutlineInputBorder(),
                                 isDense: true,
                                 prefixIcon: const Icon(Icons.note, size: 20), // Changed icon to note
