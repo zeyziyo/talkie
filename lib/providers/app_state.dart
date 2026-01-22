@@ -1065,7 +1065,7 @@ class AppState extends ChangeNotifier {
          final currentMatches = _getAvailableQuestions(); 
          if (currentMatches.isEmpty) {
              // Check if ANY records exist for this material
-             final allRecords = (materialRecords[selectedMaterialId!] as List?) ?? [];
+             final allRecords = _materialRecords;
              if (allRecords.isNotEmpty) {
                  debugPrint('[AppState] Auto-switching filter to ALL for Mode 3 content');
                  _recordTypeFilter = 'all'; // Direct update to avoid extra notify loop
@@ -1254,7 +1254,7 @@ class AppState extends ChangeNotifier {
       if (selectedMaterialId == null) return [];
       
       final material = studyMaterials.firstWhere((m) => m['id'] == selectedMaterialId);
-      final records = (materialRecords[selectedMaterialId!] as List?)?.cast<Map<String, Object?>>() ?? [];
+      final records = _materialRecords;
       
       
       // Filter by recordTypeFilter (Global Word/Sentence Toggle)
