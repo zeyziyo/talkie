@@ -370,20 +370,79 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: const Color(0xFF667eea),
         foregroundColor: Colors.white,
         actions: [
+          // Help Button (Manual) - Optional, can keep or remove if in menu
           IconButton(
             key: _helpKey,
             icon: const Icon(Icons.help_outline),
             tooltip: '사용법 가이드',
             onPressed: () {
-              // Get current mode from AppState to show relevant help page
-              final currentMode = Provider.of<AppState>(context, listen: false).currentMode;
-              showDialog(
+               final currentMode = Provider.of<AppState>(context, listen: false).currentMode;
+               showDialog(
                 context: context,
                 builder: (context) => HelpDialog(
                   initialModeIndex: currentMode,
                   onStartTutorial: () => _showTutorial(context),
                 ),
               );
+            },
+          ),
+          
+          // Menu Button
+          PopupMenuButton<String>(
+            onSelected: (value) {
+              switch (value) {
+                case 'help':
+                   final currentMode = Provider.of<AppState>(context, listen: false).currentMode;
+                   showDialog(
+                    context: context,
+                    builder: (context) => HelpDialog(
+                      initialModeIndex: currentMode,
+                      onStartTutorial: () => _showTutorial(context),
+                    ),
+                  );
+                  break;
+                case 'downloads':
+                  _launchURL('https://zeyziyo.github.io/talkie/index.html#downloads');
+                  break;
+                case 'settings':
+                  _showLanguageSettingsDialog(context);
+                  break;
+              }
+            },
+            itemBuilder: (BuildContext context) {
+              final l10n = AppLocalizations.of(context)!;
+              return [
+                PopupMenuItem<String>(
+                  value: 'help',
+                  child: Row(
+                    children: [
+                      const Icon(Icons.help_outline, color: Colors.blue),
+                      const SizedBox(width: 8),
+                      Text(l10n.menuHelp),
+                    ],
+                  ),
+                ),
+                PopupMenuItem<String>(
+                  value: 'downloads',
+                  child: Row(
+                    children: [
+                      const Icon(Icons.download_rounded, color: Colors.green),
+                      const SizedBox(width: 8),
+                      Text(l10n.menuDownloads),
+                    ],
+                  ),
+                ),
+                PopupMenuItem<String>(
+                  value: 'settings',
+                  child: Row(
+                    children: [
+                      const Icon(Icons.translate, color: Colors.orange),
+                      const SizedBox(width: 8),
+                      Text(l10n.menuSettings),
+                    ],
+                  ),
+                ),
+              ];
             },
           ),
 
@@ -621,6 +680,102 @@ class _HomeScreenState extends State<HomeScreen> {
         );
       }
     }
+  }
+
+  void _showLanguageSettingsDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        final appState = Provider.of<AppState>(context, listen: false); // Listen false to avoid rebuild loop inside dialog
+        final l10n = AppLocalizations.of(context)!;
+        
+        // Local state for the dialog
+        String tempSource = appState.sourceLang;
+        String tempTarget = appState.targetLang;
+
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            return AlertDialog(
+              title: Text(l10n.languageSettingsTitle),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Source Language (My Language)
+                  Text(l10n.sourceLanguageLabel, style: const TextStyle(fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 8),
+                  DropdownButtonFormField<String>(
+                    value: tempSource,
+                    decoration: const InputDecoration(border: OutlineInputBorder()),
+                    items: const [
+                       DropdownMenuItem(value: 'ko', child: Text('한국어 (Korean)')),
+                       DropdownMenuItem(value: 'en', child: Text('English')),
+                       DropdownMenuItem(value: 'ja', child: Text('日本語 (Japanese)')),
+                       DropdownMenuItem(value: 'es', child: Text('Español (Spanish)')),
+                       DropdownMenuItem(value: 'fr', child: Text('Français (French)')),
+                    ],
+                    onChanged: (value) {
+                      if (value != null) {
+                        setDialogState(() {
+                          tempSource = value;
+                          // If source and target are same, try to swap or reset target
+                          if (tempSource == tempTarget) {
+                             if (tempSource == 'ko') tempTarget = 'en';
+                             else tempTarget = 'ko';
+                          }
+                        });
+                      }
+                    },
+                  ),
+                  const SizedBox(height: 16),
+                  
+                  // Target Language (Study Language)
+                   Text(l10n.targetLanguageLabel, style: const TextStyle(fontWeight: FontWeight.bold)),
+                   const SizedBox(height: 8),
+                   DropdownButtonFormField<String>(
+                    value: tempTarget,
+                    decoration: const InputDecoration(border: OutlineInputBorder()),
+                     items: const [
+                       DropdownMenuItem(value: 'en', child: Text('English')),
+                       DropdownMenuItem(value: 'ja', child: Text('日本語 (Japanese)')),
+                       DropdownMenuItem(value: 'es', child: Text('Español (Spanish)')),
+                       DropdownMenuItem(value: 'fr', child: Text('Français (French)')),
+                       DropdownMenuItem(value: 'ko', child: Text('한국어 (Korean)')),
+                    ],
+                    onChanged: (value) {
+                      if (value != null) {
+                        setDialogState(() {
+                          tempTarget = value;
+                           if (tempSource == tempTarget) {
+                             if (tempTarget == 'ko') tempSource = 'en';
+                             else tempSource = 'ko';
+                          }
+                        });
+                      }
+                    },
+                  ),
+                ],
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: Text(l10n.cancel ?? 'Cancel'),
+                ),
+                FilledButton(
+                  onPressed: () {
+                    // Update AppState
+                    appState.setSourceLang(tempSource);
+                    appState.setTargetLang(tempTarget);
+                    Navigator.pop(context);
+                  },
+                  child: Text(l10n.saveData ?? 'Save'),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
   }
 
   void _showLanguageSettingsDialog(BuildContext context) {
