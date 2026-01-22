@@ -1051,9 +1051,20 @@ class AppState extends ChangeNotifier {
       _cancelMode3Timers(); // Cancel any running timers
       _speechService.stopSTT();
       _isListening = false; // Ensure global listening state is reset
-      _speechService.stopSpeaking();
+      // _speechService.stopSpeaking(); // Optional: Stop TTS if needed
     }
     notifyListeners();
+  }
+  
+  // NEW: Direct Start Method for Dropdown
+  Future<void> startMode3SessionDirectly() async {
+      _mode3SessionActive = true;
+      if (_materialRecords.isEmpty) {
+        // Retry loading logic? Or assume selectMaterial loaded it?
+        // Usually selectMaterial loads records.
+      }
+      await _nextMode3Question();
+      notifyListeners();
   }
 
   void _cancelMode3Timers() {
@@ -1234,11 +1245,17 @@ class AppState extends ChangeNotifier {
       final material = studyMaterials.firstWhere((m) => m['id'] == selectedMaterialId);
       final records = (materialRecords[selectedMaterialId!] as List?)?.cast<Map<String, Object?>>() ?? [];
       
-      // Filter by practiceWordsOnly
+      
+      // Filter by recordTypeFilter (Global Word/Sentence Toggle)
+      // This ensures Mode 3 respects the top-bar selection like Mode 2.
       List<Map<String, Object?>> candidates = records;
-      if (practiceWordsOnly) {
-          candidates = candidates.where((r) => (r['is_word'] as int? ?? 0) == 1).toList();
+      
+      if (_recordTypeFilter != 'all') {
+          candidates = candidates.where((r) => 
+            (r['type'] as String? ?? 'sentence') == _recordTypeFilter
+          ).toList();
       }
+      // Legacy "practiceWordsOnly" is now obsolete and replaced by _recordTypeFilter logic above.
       
       if (candidates.isEmpty) return [];
       return candidates.cast<Map<String, Object?>>();

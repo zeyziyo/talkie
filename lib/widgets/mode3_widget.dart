@@ -43,12 +43,8 @@ class Mode3Widget extends StatelessWidget {
                     bottomRight: Radius.circular(20),
                   ),
                 ),
-                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    // Word/Sentence Toggle
-
-
                     // Material Selector
                     DropdownButtonFormField<int>(
                       key: materialDropdownKey,
@@ -71,73 +67,16 @@ class Mode3Widget extends StatelessWidget {
                           ),
                         );
                       }).toList(),
-                      onChanged: appState.mode3SessionActive 
-                        ? null // Disable while active
-                        : (val) {
-                            if (val != null) appState.selectMaterial(val);
-                          },
+                      onChanged: (val) {
+                          if (val != null) {
+                            appState.selectMaterial(val);
+                            // Auto-start (load first question) when material is selected
+                            // appState.toggleMode3Session(); // This was the old toggle
+                            // valid manual start:
+                            appState.startMode3SessionDirectly(); 
+                          }
+                        },
                     ),
-                    
-                    // Practice Words Only Checkbox
-                    CheckboxListTile(
-                      key: wordCheckKey,
-                      title: Text(l10n.tutorialM3WordsTitle),
-                      subtitle: Text(l10n.tutorialM3WordsDesc),
-                      value: appState.practiceWordsOnly,
-                      onChanged: appState.mode3SessionActive
-                          ? null
-                          : (val) {
-                              appState.setPracticeWordsOnly(val ?? false);
-                            },
-                      dense: true,
-                      contentPadding: EdgeInsets.zero,
-                      controlAffinity: ListTileControlAffinity.leading,
-                    ),
-
-                    
-                    const SizedBox(height: 8),
-                    
-                    // Interval Selector (Button Style Redesign)
-                    Row(
-                      key: intervalSettingsKey,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        IconButton(
-                          icon: const Icon(Icons.remove_circle_outline, size: 28),
-                          color: Colors.red[300],
-                          onPressed: appState.mode3SessionActive 
-                              || appState.mode3Interval <= 3 
-                              ? null 
-                              : () => appState.setMode3Interval(appState.mode3Interval - 1),
-                          tooltip: l10n.tooltipDecrease,
-                        ),
-                        
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 24),
-                          child: Text(
-                            l10n.intervalSeconds(appState.mode3Interval),
-                            style: const TextStyle(
-                              fontWeight: FontWeight.bold, 
-                              fontSize: 18,
-                              color: Colors.deepPurple
-                            ),
-                          ),
-                        ),
-                        
-                        IconButton(
-                          icon: const Icon(Icons.add_circle_outline, size: 28),
-                          color: Colors.green[300],
-                          onPressed: appState.mode3SessionActive 
-                              || appState.mode3Interval >= 60 
-                              ? null 
-                              : () => appState.setMode3Interval(appState.mode3Interval + 1),
-                          tooltip: l10n.tooltipIncrease,
-                        ),
-                      ],
-                    ),
-                    
-                    const SizedBox(height: 8),
-                    // REMOVED Global Start/Stop Button Here
                   ],
                 ),
               ),
