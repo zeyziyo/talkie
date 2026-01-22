@@ -1180,7 +1180,7 @@ class AppState extends ChangeNotifier {
       _nextMode3Question();
   }
 
-  void _nextMode3Question() async {
+  Future<void> _nextMode3Question() async {
     _cancelMode3Timers();
     _speechService.stopSTT(); // Ensure stop
     _isListening = false;
@@ -1232,10 +1232,10 @@ class AppState extends ChangeNotifier {
       if (selectedMaterialId == null) return [];
       
       final material = studyMaterials.firstWhere((m) => m['id'] == selectedMaterialId);
-      final records = materialRecords[selectedMaterialId!] ?? [];
+      final records = (materialRecords[selectedMaterialId!] as List?)?.cast<Map<String, Object?>>() ?? [];
       
       // Filter by practiceWordsOnly
-      List<Map<String, dynamic>> candidates = records;
+      List<Map<String, Object?>> candidates = records;
       if (practiceWordsOnly) {
           candidates = candidates.where((r) => (r['is_word'] as int? ?? 0) == 1).toList();
       }
