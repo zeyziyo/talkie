@@ -455,9 +455,15 @@
   "enterTextHint": "번역할 텍스트를 입력하세요",
   "micButtonTooltip": "음성 인식 시작",
   "menuHelp": "도움말",
-  "menuDownloads": "자료 받기",
+  "menuHelp": "도움말",
+  "menuWebDownload": "홈페이지에서 자료 받기",
+  "menuDeviceImport": "기기에서 자료 가져오기",
   "menuSettings": "언어 설정",
   "languageSettingsTitle": "언어 설정",
   "sourceLanguageLabel": "내 언어 (Source)",
-  "targetLanguageLabel": "학습 언어 (Target)"
+  "targetLanguageLabel": "학습 언어 (Target)",
+  "mode3Start": "시작",
+  "mode3Stop": "종료",
+  "mode3Next": "다음",
+  "mode3TryAgain": "재시도"
 }

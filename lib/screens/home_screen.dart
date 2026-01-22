@@ -400,34 +400,44 @@ class _HomeScreenState extends State<HomeScreen> {
             itemBuilder: (BuildContext context) {
               final l10n = AppLocalizations.of(context)!;
               final appState = Provider.of<AppState>(context, listen: false);
-              final isMode2 = appState.currentMode == 1;
 
               return [
-                // Context-aware actions for Mode 2 (Review)
-                if (isMode2) ...[
-                  PopupMenuItem<String>(
-                    value: 'refresh',
-                    child: Row(
-                      children: [
-                        const Icon(Icons.refresh, color: Colors.grey),
-                        const SizedBox(width: 8),
-                        Text(l10n.refresh),
-                      ],
-                    ),
+                // 1. Get Materials Options (Unified)
+                PopupMenuItem<String>(
+                  value: 'downloads', // Maps to Web Link
+                  child: Row(
+                    children: [
+                      const Icon(Icons.download_rounded, color: Colors.green),
+                      const SizedBox(width: 8),
+                      Text(l10n.menuWebDownload), // "Homepage..."
+                    ],
                   ),
-                  PopupMenuItem<String>(
-                    value: 'import',
-                    child: Row(
-                      children: [
-                        const Icon(Icons.file_upload, color: Colors.blueGrey),
-                        const SizedBox(width: 8),
-                        Text(l10n.importJsonFile),
-                      ],
-                    ),
+                ),
+                PopupMenuItem<String>(
+                  value: 'import', // Maps to Device Import
+                  child: Row(
+                    children: [
+                      const Icon(Icons.file_upload, color: Colors.blueGrey),
+                      const SizedBox(width: 8),
+                      Text(l10n.menuDeviceImport), // "Device..."
+                    ],
                   ),
-                  const PopupMenuDivider(),
-                ],
+                ),
+                const PopupMenuDivider(),
+
+                // 2. Refresh (Always handy)
+                PopupMenuItem<String>(
+                  value: 'refresh',
+                  child: Row(
+                    children: [
+                      const Icon(Icons.refresh, color: Colors.grey),
+                      const SizedBox(width: 8),
+                      Text(l10n.refresh),
+                    ],
+                  ),
+                ),
                 
+                // 3. Settings & Help
                 PopupMenuItem<String>(
                   value: 'settings',
                   child: Row(
@@ -435,16 +445,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       const Icon(Icons.translate, color: Colors.orange),
                       const SizedBox(width: 8),
                       Text(l10n.menuSettings),
-                    ],
-                  ),
-                ),
-                 PopupMenuItem<String>(
-                  value: 'downloads',
-                  child: Row(
-                    children: [
-                      const Icon(Icons.download_rounded, color: Colors.green),
-                      const SizedBox(width: 8),
-                      Text(l10n.menuDownloads),
                     ],
                   ),
                 ),

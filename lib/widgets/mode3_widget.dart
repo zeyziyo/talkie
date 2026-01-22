@@ -137,26 +137,7 @@ class Mode3Widget extends StatelessWidget {
                     ),
                     
                     const SizedBox(height: 8),
-                    
-                    // Start/Stop Button
-                    ElevatedButton.icon(
-                      key: startStopButtonKey,
-                      onPressed: appState.studyMaterials.isEmpty
-                          ? null
-                          : () => appState.toggleMode3Session(),
-                      icon: Icon(
-                        appState.mode3SessionActive ? Icons.stop : Icons.play_arrow,
-                      ),
-                      label: Text(
-                        appState.mode3SessionActive ? l10n.stopPractice : l10n.startPractice,
-                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: appState.mode3SessionActive ? Colors.red : Colors.purple,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 12),
-                      ),
-                    ),
+                    // REMOVED Global Start/Stop Button Here
                   ],
                 ),
               ),
@@ -165,235 +146,236 @@ class Mode3Widget extends StatelessWidget {
               // 2. Practice Area
               // ==========================================
               Expanded(
-                child: Stack( // Wrap properly
+                child: Stack(
                   children: [
                     Padding(
-                  padding: const EdgeInsets.all(24.0),
-                  child: currentQuestion == null
-                      ? Center(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                appState.studyMaterials.isEmpty
-                                    ? l10n.importJsonFilePrompt
-                                    : l10n.startPractice, 
-                                textAlign: TextAlign.center,
-                                style: TextStyle(color: Colors.grey[400], fontSize: 18),
-                              ),
-                              if (appState.studyMaterials.isNotEmpty)
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 16.0),
-                                  child: TextButton.icon(
-                                    onPressed: () => appState.resetMode3Progress(),
-                                    icon: const Icon(Icons.refresh, color: Colors.grey),
-                                    label: Text(l10n.resetPracticeHistory, style: const TextStyle(color: Colors.grey)),
-                                  ),
-                                ),
-                            ],
-                          ),
-                        )
-                    : Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            // Source Text Display (Horizontal)
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                // Flag
-                                const Text(
-                                  "🇰🇷", 
-                                  style: TextStyle(fontSize: 24), // Slightly smaller to fit row
-                                ),
-                                const SizedBox(width: 12),
-                                // Text
-                                Flexible(
-                                  child: Text(
-                                    currentQuestion['source_text'] as String,
+                      padding: const EdgeInsets.all(24.0),
+                      child: !appState.mode3SessionActive || currentQuestion == null
+                          ? Center(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    appState.studyMaterials.isEmpty
+                                        ? l10n.importJsonFilePrompt
+                                        : "${l10n.startPractice} (Press Start Below)", // Or just prompt to start
                                     textAlign: TextAlign.center,
-                                    style: const TextStyle(
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.black87,
-                                    ),
+                                    style: TextStyle(color: Colors.grey[400], fontSize: 18),
                                   ),
-                                ),
-                                // Hint
-                                if (currentQuestion['note'] != null && (currentQuestion['note'] as String).isNotEmpty) ...[
-                                  const SizedBox(width: 8),
-                                  Tooltip( // Use Tooltip or minimal icon for hint in row to save space? 
-                                    // User asked for "Hint" to be aligned. I'll show the box.
-                                    message: currentQuestion['note'] as String,
-                                    child: Container(
-                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey[200],
-                                        borderRadius: BorderRadius.circular(8),
-                                        border: Border.all(color: Colors.grey[300]!),
-                                      ),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: [
-                                          Icon(Icons.info_outline, size: 14, color: Colors.grey[600]),
-                                          const SizedBox(width: 4),
-                                          Text(
-                                            currentQuestion['note'] as String,
-                                            style: TextStyle(
-                                              fontSize: 12, // Smaller font for hint in row
-                                              color: Colors.grey[700],
-                                              fontStyle: FontStyle.italic,
-                                            ),
-                                          ),
-                                        ],
+                                  const SizedBox(height: 20),
+                                  if (appState.studyMaterials.isNotEmpty)
+                                    ElevatedButton.icon(
+                                      onPressed: () => appState.toggleMode3Session(), // Initial Start
+                                      icon: const Icon(Icons.play_arrow),
+                                      label: Text(l10n.startPractice),
+                                      style: ElevatedButton.styleFrom(
+                                        backgroundColor: Colors.purple,
+                                        foregroundColor: Colors.white,
+                                        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                                       ),
                                     ),
-                                  ),
                                 ],
-                              ],
-                            ),
-                            
-                            const SizedBox(height: 24),
-                            
-                            // Feedback Area
-                            if (appState.mode3UserAnswer.isNotEmpty) ...[
-                              Text(
-                                l10n.yourPronunciation,
-                                style: TextStyle(color: Colors.grey[600], fontSize: 12),
                               ),
-                              const SizedBox(height: 8),
-                              Text(
-                                appState.mode3UserAnswer,
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                  fontSize: 18,
-                                  color: Colors.purple,
-                                  fontStyle: FontStyle.italic,
-                                ),
-                              ),
-                            ],
-                            
-                            const SizedBox(height: 16),
-                            
-                            // Result / Score (Horizontal Layout)
-                            if (appState.mode3Score != null) ...[
-                              Container(
-                                margin: const EdgeInsets.symmetric(vertical: 12),
-                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[100],
-                                  borderRadius: BorderRadius.circular(12),
-                                  border: Border.all(color: Colors.grey[300]!),
-                                ),
-                                child: Wrap(
-                                  crossAxisAlignment: WrapCrossAlignment.center,
-                                  alignment: WrapAlignment.center,
-                                  runSpacing: 4,
-                                  spacing: 8,
+                            )
+                        : Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                // Source Text Display (Horizontal)
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    // 1. Accuracy
-                                    Text(
-                                      '${l10n.accuracy}: ${appState.mode3Score!.toStringAsFixed(1)}%',
-                                      style: TextStyle(
-                                        color: _getScoreColor(appState.mode3Score!),
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 14,
+                                    const Text("🇰🇷", style: TextStyle(fontSize: 24)),
+                                    const SizedBox(width: 12),
+                                    Flexible(
+                                      child: Text(
+                                        currentQuestion['source_text'] as String,
+                                        textAlign: TextAlign.center,
+                                        style: const TextStyle(
+                                          fontSize: 24,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black87,
+                                        ),
                                       ),
                                     ),
-                                    
-                                    // Separator
-                                    Container(width: 1, height: 12, color: Colors.grey[400]),
-                                    
-                                    // 2. Correct Answer Label
-                                    Text(
-                                      l10n.correctAnswer, 
-                                      style: TextStyle(color: Colors.grey[600], fontSize: 13, fontWeight: FontWeight.w500),
-                                    ),
-                                    
-                                    // 3. Target Text
-                                    Text(
-                                      currentQuestion['target_text'] as String,
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        color: Colors.grey[900],
-                                        fontWeight: FontWeight.bold,
+                                    // Hint & First Letter
+                                    if (currentQuestion['note'] != null && (currentQuestion['note'] as String).isNotEmpty) ...[
+                                      const SizedBox(width: 8),
+                                      Tooltip(
+                                        message: currentQuestion['note'] as String,
+                                        child: Container(
+                                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey[200],
+                                            borderRadius: BorderRadius.circular(8),
+                                            border: Border.all(color: Colors.grey[300]!),
+                                          ),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: [
+                                              Icon(Icons.info_outline, size: 14, color: Colors.grey[600]),
+                                              const SizedBox(width: 4),
+                                              Text(
+                                                currentQuestion['note'] as String,
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.grey[700],
+                                                  fontStyle: FontStyle.italic,
+                                                ),
+                                              ),
+                                              // First Letter Hint
+                                              const SizedBox(width: 6),
+                                              Text(
+                                                _getFirstLetterHint(currentQuestion['target_text'] as String),
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.red[300],
+                                                  fontWeight: FontWeight.bold,
+                                                  fontFamily: 'monospace',
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
                                       ),
-                                    ),
+                                    ],
                                   ],
                                 ),
-                              ),
-                              
-                              if (appState.showRetryButton) ...[
-                                const SizedBox(height: 24),
-                                ElevatedButton.icon(
-                                  onPressed: () => appState.retryMode3Question(),
-                                  icon: const Icon(Icons.refresh),
-                                  label: Text(l10n.tryAgain), // "Retry"
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: Colors.orange,
-                                    foregroundColor: Colors.white,
-                                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                                  ),
-                                ),
-                              ] else if (appState.isListening) ...[
-                                // Stop Recording Button (Manual Control)
-                                const SizedBox(height: 32),
-                                ElevatedButton.icon(
-                                  onPressed: () => appState.stopMode3ListeningManual(),
-                                  icon: const Icon(Icons.stop_circle_outlined, size: 32),
-                                  label: const Text('Stop Recording', style: TextStyle(fontSize: 18)), // Localize later?
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: Colors.red,
-                                    foregroundColor: Colors.white,
-                                    padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                                  ),
-                                ),
-                                const SizedBox(height: 16),
-                                // Pulse or indicator
-                                const Text("Listening...", style: TextStyle(color: Colors.red)),
-                              ] else ...[
-                                // Start Recording Button (Manual Control)
-                                const SizedBox(height: 32),
-                                ElevatedButton.icon(
-                                  onPressed: () => appState.retryMode3Question(), // Same as start listening
-                                  icon: const Icon(Icons.mic, size: 32),
-                                  label: const Text('Start Recording', style: TextStyle(fontSize: 18)),
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: Colors.blueAccent,
-                                    foregroundColor: Colors.white,
-                                    padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                                  ),
-                                ),
+                                
+                                const SizedBox(height: 30),
+                                
+                                // Dynamic Content Area (Buttons vs Result)
+                                if (appState.showRetryButton) ...[
+                                   // Result & Score Shown
+                                   if (appState.mode3UserAnswer.isNotEmpty)
+                                     Text(
+                                        appState.mode3UserAnswer,
+                                        textAlign: TextAlign.center,
+                                        style: const TextStyle(
+                                          fontSize: 18, color: Colors.purple, fontStyle: FontStyle.italic),
+                                     ),
+                                     
+                                   const SizedBox(height: 20),
+                                   
+                                   if (appState.mode3Score != null)
+                                      Container(
+                                        padding: const EdgeInsets.all(12),
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey[100],
+                                          borderRadius: BorderRadius.circular(12),
+                                        ),
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              '${l10n.accuracy}: ${appState.mode3Score!.toStringAsFixed(1)}%',
+                                                style: TextStyle(
+                                                  color: _getScoreColor(appState.mode3Score!),
+                                                  fontWeight: FontWeight.bold, fontSize: 16),
+                                            ),
+                                            const SizedBox(height: 8),
+                                            Text(currentQuestion['target_text'] as String,
+                                                style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.black87)),
+                                          ],
+                                        ),
+                                      ),
+                                    
+                                   const SizedBox(height: 30),
+                                   
+                                   // Next or Retry Button
+                                   if ((appState.mode3Score ?? 0) >= 90)
+                                      ElevatedButton.icon(
+                                        onPressed: () => appState.skipMode3Question(),
+                                        icon: const Icon(Icons.arrow_forward), // Next
+                                        label: Text(l10n.mode3Next),
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.blue,
+                                          foregroundColor: Colors.white,
+                                          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+                                        ),
+                                      )
+                                   else
+                                      ElevatedButton.icon(
+                                        onPressed: () => appState.retryMode3Question(),
+                                        icon: const Icon(Icons.refresh),
+                                        label: Text(l10n.mode3TryAgain),
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.orange,
+                                          foregroundColor: Colors.white,
+                                          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+                                        ),
+                                      ),
+
+                                ] else ...[
+                                   // Recording Controls
+                                   if (appState.isListening)
+                                     Column(
+                                       children: [
+                                          const Text("Listening...", style: TextStyle(color: Colors.red, fontSize: 16)),
+                                          const SizedBox(height: 20),
+                                          ElevatedButton.icon(
+                                            onPressed: () => appState.stopMode3ListeningManual(),
+                                            icon: const Icon(Icons.stop, size: 32),
+                                            label: Text(l10n.mode3Stop, style: const TextStyle(fontSize: 18)),
+                                            style: ElevatedButton.styleFrom(
+                                              backgroundColor: Colors.red,
+                                              foregroundColor: Colors.white,
+                                              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                                            ),
+                                          ),
+                                       ],
+                                     )
+                                   else
+                                     ElevatedButton.icon(
+                                        onPressed: () => appState.retryMode3Question(), // Triggers start logic
+                                        icon: const Icon(Icons.mic, size: 32),
+                                        label: Text(l10n.mode3Start, style: const TextStyle(fontSize: 18)),
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.green,
+                                          foregroundColor: Colors.white,
+                                          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                                        ),
+                                      ),
+                                ],
+                                
+                                const SizedBox(height: 60),
                               ],
-                            ],
-                            
-                            // Add bottom padding to lift the centered content
-                            const SizedBox(height: 120), // Increased to 120 for Ad space
-                          ],
-                      ),
-                  ),
-                  
-                  // Floating Next Button
-                  if (appState.mode3SessionActive && currentQuestion != null)
-                    Positioned(
-                      bottom: 24,
-                      right: 24,
-                      child: FloatingActionButton(
-                        onPressed: () => appState.skipMode3Question(),
-                        backgroundColor: Colors.purple,
-                        child: const Icon(Icons.arrow_forward_ios),
-                      ),
+                          ),
                     ),
-                ],
+                    
+                    // Floating Next Button (Global Skip)
+                    if (appState.mode3SessionActive && currentQuestion != null)
+                      Positioned(
+                        bottom: 24,
+                        right: 24,
+                        child: FloatingActionButton(
+                          onPressed: () => appState.skipMode3Question(),
+                          backgroundColor: Colors.grey,
+                          mini: true,
+                          child: const Icon(Icons.skip_next),
+                        ),
+                      ),
+                  ],
+                ),
               ),
-            ),
             ],
           ),
         );
       },
     );
+  }
+  
+  // Helper for First Letter Hint
+  String _getFirstLetterHint(String targetText) {
+    if (targetText.isEmpty) return "";
+    final words = targetText.split(' ');
+    if (words.isEmpty) return "";
+    final firstWord = words[0];
+    if (firstWord.isEmpty) return "";
+    
+    // Example: "Apple" -> "A----"
+    return "${firstWord[0]}${'-' * (firstWord.length - 1)}";
   }
 
 

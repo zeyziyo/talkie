@@ -144,21 +144,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                         ],
                       ),
                       // Website Link Button
-                      TextButton.icon(
-                        onPressed: () async {
-                           final Uri url = Uri.parse('https://zeyziyo.github.io/talkie/');
-                           if (await canLaunchUrl(url)) {
-                             await launchUrl(url, mode: LaunchMode.externalApplication);
-                           }
-                        },
-                        icon: const Icon(Icons.public, size: 18),
-                        label: Text(l10n.getMaterials, style: const TextStyle(fontSize: 12)),
-                        style: TextButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          minimumSize: Size.zero,
-                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        ),
-                      ),
+
                     ],
                   ),
                   const SizedBox(height: 8),

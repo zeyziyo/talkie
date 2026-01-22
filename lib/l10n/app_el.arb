@@ -463,9 +463,14 @@
   "basicDefault": "Basic (Default)",
   "basic": "Basic",
   "menuHelp": "Help",
-  "menuDownloads": "Downloads",
   "menuSettings": "Settings",
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
-  "targetLanguageLabel": "Target Language"
+  "targetLanguageLabel": "Target Language",
+  "menuWebDownload": "Get Material from Web",
+  "menuDeviceImport": "Import from Device",
+  "mode3Start": "Start",
+  "mode3Stop": "Stop",
+  "mode3Next": "Next",
+  "mode3TryAgain": "Try Again"
 }

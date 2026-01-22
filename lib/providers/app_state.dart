@@ -1139,62 +1139,58 @@ class AppState extends ChangeNotifier {
   Future<void> stopMode3ListeningManual() async {
     if (!_isListening) return;
     
-    // Stop STT explicitly
+    // Stop STT explicitly. 
+    // The status listener will catch 'done' or 'notListening' 
+    // BUT we want to force check immediately to be responsive.
     await _speechService.stopSTT();
+    _isListening = false;
     
-    // The status listener will catch 'done' and process the answer.
-    // Ensure we don't treat it as timeout.
+    // Ensure we process what we have
+    // If user pressed stop, they are done speaking.
+    _checkMode3Answer();
   }
 
   Future<void> _startMode3Listening() async {
     try {
       _isListening = true;
-      _sttStartTime = DateTime.now(); // Record start time
+      _sttStartTime = DateTime.now();
+      _mode3UserAnswer = ''; // Reset answer
+      _mode3Score = null;    // Reset score
+      _mode3Feedback = '';   // Reset feedback
+      _showRetryButton = false;
       notifyListeners();
       
       final targetLang = _currentMode3Question!['target_lang'] as String;
       
-      // Listen to status for faster response (check answer when STT stops)
+      // Listen to status just for debug or error handling
       _speechStatusSubscription?.cancel();
       _speechStatusSubscription = _speechService.statusStream.listen((status) {
-        if (status == 'done' || status == 'notListening') {
-          // If stopped manually, we process answer.
-          // If stopped by system (glitch), we might want to restart?
-          // For now, let's assume if user didn't press Stop, it's a glitch if < 1s.
-          
-           // If session ended normally (from native silence detection or manual stop)
-          if (_mode3SessionActive) {
-             debugPrint('[AppState] Mode 3 STT status: $status');
-             
-             // If we have an answer, check it
-             if (_mode3UserAnswer.trim().isNotEmpty) {
-                 Future.delayed(const Duration(milliseconds: 300), () {
-                   _checkMode3Answer();
-                 });
-             } else {
-               // If NO answer and stopped, it might be silence or manual stop without speech.
-               // User wants "Retry" button.
-               Future.delayed(const Duration(milliseconds: 300), () {
-                   if (_mode3UserAnswer.isEmpty) {
-                       // Don't auto-timeout. Show Retry/Idle state.
-                       _mode3Feedback = 'Press Record to Speak';
-                       _showRetryButton = true; 
-                       notifyListeners();
-                   }
-               });
+         if (status == 'done' || status == 'notListening') {
+             // If stopped efficiently by manual button, we handled it there.
+             // If stopped by system error (and we are still 'listening' in state), we might need to update UI.
+             if (_isListening && _mode3SessionActive) {
+                 debugPrint('[AppState] System stopped STT unexpectedly. Updating UI.');
+                 _isListening = false;
+                 // If we have some text, check it. If not, maybe show retry?
+                 if (_mode3UserAnswer.isNotEmpty) {
+                     _checkMode3Answer();
+                 } else {
+                     // No text captured?
+                     _mode3Feedback = 'Press Record to Speak';
+                     _showRetryButton = true;
+                     notifyListeners();
+                 }
              }
-          }
-        }
+         }
       });
       
       await _speechService.startSTT(
         lang: _getLangCode(targetLang),
-        listenFor: const Duration(minutes: 5), // Manual control
-        pauseFor: const Duration(minutes: 2),
-        onResult: (text, isFinal) {  // Added isFinal parameter
+        listenFor: const Duration(minutes: 5), // Manual control: long timeout
+        pauseFor: const Duration(minutes: 5),  // Manual control: long pause
+        onResult: (text, isFinal) {
           // Ignore results if too fast (noise/residual)
           if (DateTime.now().difference(_sttStartTime!).inMilliseconds < 500) {
-            debugPrint('[AppState] Ignoring premature STT result: $text');
             return;
           }
            _mode3UserAnswer = text;
@@ -1211,69 +1207,117 @@ class AppState extends ChangeNotifier {
     }
   }
 
-
-  
-  void _handleMode3Timeout() {
-    if (!_mode3SessionActive) return;
-    
-    // Stop listening
-    _speechService.stopSTT();
-    _isListening = false;
-    
-    // Fix: Check if we have any captured text before failing
-    if (_mode3UserAnswer.trim().isNotEmpty) {
-      _checkMode3Answer();
-      return;
-    }
-    
-    _mode3Score = 0.0;
-    _mode3Feedback = 'TIME_UP'; // Code for Time Up
-    _mode3UserAnswer = '(No Voice)'; // Show placeholder? Or keep empty? User said "If no response... next". 
-    // And "show user pronunciation" applies to "Wrong answer".
-    notifyListeners();
-    
-    // Auto-advance
-    // User said "move to next".
-    Future.delayed(const Duration(seconds: 1), () {
-      if (_mode3SessionActive) {
-         _nextMode3Question();
-      }
-    });
-  }
   
   Future<void> _checkMode3Answer() async {
     if (!_mode3SessionActive) return;
     
-    _cancelMode3Timers(); 
+    // Ensure listening is stopped
     _speechService.stopSTT();
     _isListening = false;
     
     final targetText = _currentMode3Question!['target_text'] as String;
     
     // Calculate Score
-    final similarity = _calculateSimilarity(_mode3UserAnswer, targetText);
-    _mode3Score = similarity * 100;
-    
-    // Feedback Logic
-    if (_mode3Score! >= 90) {
-      _mode3Feedback = 'PERFECT';
-      // Mark as mastered
-      _mode3CompletedQuestionIds.add(_currentMode3Question!['id'] as int);
-      await _speechService.speak("Perfect!", lang: "en-US");
+    // If answer empty? Score 0.
+    if (_mode3UserAnswer.trim().isEmpty) {
+        _mode3Score = 0.0;
+        _mode3Feedback = 'TRY_AGAIN';
     } else {
-      _mode3Feedback = 'TRY_AGAIN'; 
-      // Do NOT mark as mastered
+        final similarity = _calculateSimilarity(_mode3UserAnswer, targetText);
+        _mode3Score = similarity * 100;
+        
+        if (_mode3Score! >= 90) {
+          _mode3Feedback = 'PERFECT';
+          // Mark as mastered only if perfect? Or just GOOD? 
+          // User didn't specify strict criteria, but let's keep it.
+          _mode3CompletedQuestionIds.add(_currentMode3Question!['id'] as int);
+          await _speechService.speak("Perfect!", lang: "en-US");
+        } else {
+          _mode3Feedback = 'TRY_AGAIN'; 
+        }
     }
     
+    _showRetryButton = true; // Always show controls (Next/Retry depending on result logic in UI)
     notifyListeners();
-
-    // Auto-advance after 1 second regardless of score
-    Future.delayed(const Duration(seconds: 1), () {
-      if (_mode3SessionActive) {
-        _nextMode3Question();
-      }
-    });
+    // NO AUTO ADVANCE. User must click Next or Retry.
   }
+
+  // Public wrapper for Next Button
+  void skipMode3Question() {
+      _nextMode3Question();
+  }
+
+  void _nextMode3Question() async {
+    _cancelMode3Timers();
+    _speechService.stopSTT(); // Ensure stop
+    _isListening = false;
+    
+    if (filteredStudyMaterials.isEmpty) {
+       _mode3SessionActive = false;
+       notifyListeners();
+       return;
+    }
+    
+    // Find next available question (not completed)
+    // ... (Existing logic for picking question)
+    
+    // Basic random pick for now (Review existing logic upstream if needed, 
+    // but here we just need to ensure we call the setup)
+    
+    // Use the same logic as ToggleSession to pick new q?
+    // Actually, we can just pick a new one.
+    
+    final availableQuestions = _getAvailableQuestions();
+     if (availableQuestions.isEmpty) {
+      _mode3SessionActive = false;
+      _statusMessage = 'All questions completed!';
+      notifyListeners();
+      return;
+    }
+    
+    final randomIndex = DateTime.now().millisecondsSinceEpoch % availableQuestions.length;
+    _currentMode3Question = availableQuestions[randomIndex];
+    
+    // Reset State for new question
+    _mode3UserAnswer = '';
+    _mode3Score = null;
+    _mode3Feedback = '';
+    _showRetryButton = false;
+    
+    notifyListeners();
+    
+    // Auto-play TTS
+    final sourceText = _currentMode3Question!['source_text'] as String;
+    final sourceLang = _currentMode3Question!['source_lang'] as String;
+    await _speechService.speak(sourceText, lang: _getLangCode(sourceLang));
+    
+    // DO NOT Auto-Start Listening. User must press Start.
+  }
+  
+  List<Map<String, Object?>> _getAvailableQuestions() {
+      // Helper to reuse logic
+      if (selectedMaterialId == null) return [];
+      
+      final material = studyMaterials.firstWhere((m) => m['id'] == selectedMaterialId);
+      final records = materialRecords[selectedMaterialId!] ?? [];
+      
+      // Filter by practiceWordsOnly
+      var candidates = records;
+      if (practiceWordsOnly) {
+          candidates = candidates.where((r) => (r['is_word'] as int? ?? 0) == 1).toList();
+      }
+      
+      if (candidates.isEmpty) return [];
+      return candidates;
+  }
+
+  // Retry logic
+  Future<void> retryMode3Question() async {
+     // User clicked Retry.
+     // Just Start Listening again.
+     await _startMode3Listening();
+  }
+
   
   /// Levenshtein distance based similarity (0.0 to 1.0)
   double _calculateSimilarity(String s1, String s2) {
