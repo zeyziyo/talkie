@@ -8,16 +8,10 @@ import '../l10n/app_localizations.dart';
 /// - 대기 시간 설정 기능 (버튼 방식)
 class Mode3Widget extends StatelessWidget {
   final Key? materialDropdownKey;
-  final Key? intervalSettingsKey;
-  final Key? startStopButtonKey;
-  final Key? wordCheckKey; // Add Key
 
   const Mode3Widget({
     super.key,
     this.materialDropdownKey,
-    this.intervalSettingsKey,
-    this.startStopButtonKey,
-    this.wordCheckKey, // Add Key
   });
 
   @override

@@ -24,23 +24,23 @@ class _HomeScreenState extends State<HomeScreen> {
   final GlobalKey _translateButtonKey = GlobalKey();
   final GlobalKey _saveButtonKey = GlobalKey();
   final GlobalKey _contextFieldKey = GlobalKey();
-  final GlobalKey _mode1ToggleKey = GlobalKey(); // Mode 1 Toggle Key
+  final GlobalKey _saveButtonKey = GlobalKey();
+  final GlobalKey _contextFieldKey = GlobalKey();
   final GlobalKey _mode1DropdownKey = GlobalKey(); // Mode 1 Material Dropdown Key
 
   // Mode 2 Keys
   final GlobalKey _mode2DropdownKey = GlobalKey();
 
   final GlobalKey _mode2ListKey = GlobalKey();
-  final GlobalKey _mode2ToggleKey = GlobalKey(); // Mode 2 Toggle Key
+  final GlobalKey _mode2DropdownKey = GlobalKey();
+  final GlobalKey _mode2ListKey = GlobalKey();
 
   // Mode 3 Keys
   final GlobalKey _mode3DropdownKey = GlobalKey();
-  final GlobalKey _mode3IntervalKey = GlobalKey();
-  final GlobalKey _mode3StartButtonKey = GlobalKey();
-  
-  final GlobalKey _mode3WordCheckKey = GlobalKey(); // Mode 3 Checkbox Key
+  final GlobalKey _mode3DropdownKey = GlobalKey();
   
   // Tutorial Keys - Fixed
+  final GlobalKey _globalToggleKey = GlobalKey(); // New Global Toggle Key
   final GlobalKey _tabKey = GlobalKey();
   final GlobalKey _helpKey = GlobalKey();
   final GlobalKey _actionButtonKey = GlobalKey();
@@ -151,7 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ));
 
       targets.add(_buildTarget(
-        _mode1ToggleKey,
+        _globalToggleKey,
         l10n.tutorialM1ToggleTitle,
         l10n.tutorialM1ToggleDesc,
         ContentAlign.bottom,
@@ -187,7 +187,7 @@ class _HomeScreenState extends State<HomeScreen> {
     } else if (modeIndex == 1) {
       // Mode 2: Toggle
       targets.add(_buildTarget(
-        _mode2ToggleKey,
+        _globalToggleKey,
         l10n.tutorialM1ToggleTitle, // Reuse Mode 1 title
         l10n.tutorialM1ToggleDesc,  // Reuse Mode 1 desc
         ContentAlign.bottom,
@@ -223,7 +223,7 @@ class _HomeScreenState extends State<HomeScreen> {
         radius: 12,
       ));
     } else if (modeIndex == 2) {
-      // Mode 3: Dropdown -> Interval -> Start
+      // Mode 3: Dropdown only (Simple)
       targets.add(_buildTarget(
         _mode3DropdownKey, 
         l10n.tutorialM3SelectTitle, 
@@ -231,28 +231,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ContentAlign.bottom,
         radius: 12,
       ));
-      // Practice Words Only Checkbox
-      targets.add(_buildTarget(
-        _mode3WordCheckKey,
-        l10n.tutorialM3WordsTitle,
-        l10n.tutorialM3WordsDesc,
-        ContentAlign.bottom,
-      ));
-      targets.add(_buildTarget(
-        _mode3IntervalKey, 
-        l10n.tutorialM3IntervalTitle, 
-        l10n.tutorialM3IntervalDesc,
-        ContentAlign.bottom,
-        radius: 12,
-      ));
-      targets.add(_buildTarget(
-        _mode3StartButtonKey, 
-        l10n.tutorialM3StartTitle, 
-        l10n.tutorialM3StartDesc,
-        ContentAlign.top,
-        radius: 12,
-      ));
-
     }
 
     return targets;
@@ -370,7 +348,9 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: const Color(0xFF667eea),
         foregroundColor: Colors.white,
         actions: [
+        actions: [
           PopupMenuButton<String>(
+            key: _actionButtonKey,
             onSelected: (value) {
               final appState = Provider.of<AppState>(context, listen: false);
               switch (value) {
@@ -526,6 +506,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Expanded(
                         flex: 2,
                         child: SegmentedButton<String>(
+                          key: _globalToggleKey,
                           showSelectedIcon: false,
                           segments: [
                             ButtonSegment<String>(
@@ -566,21 +547,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     translateButtonKey: _translateButtonKey,
                     saveButtonKey: _saveButtonKey,
                     contextFieldKey: _contextFieldKey,
-                    toggleButtonKey: _mode1ToggleKey, // Pass Toggle Key
+                    saveButtonKey: _saveButtonKey,
+                    contextFieldKey: _contextFieldKey,
                     materialDropdownKey: _mode1DropdownKey, // New Key
                   );
                 } else if (appState.currentMode == 1) {
                   return Mode2Widget(
                     materialDropdownKey: _mode2DropdownKey,
                     tutorialListKey: _mode2ListKey,
-                    toggleButtonKey: _mode2ToggleKey, // New Key
                   ); 
                 } else if (appState.currentMode == 2) {
                   return Mode3Widget(
                     materialDropdownKey: _mode3DropdownKey,
-                    intervalSettingsKey: _mode3IntervalKey,
-                    startStopButtonKey: _mode3StartButtonKey,
-                    wordCheckKey: _mode3WordCheckKey, // Pass Checkbox Key
                   ); 
                 } 
                 return const SizedBox.shrink();

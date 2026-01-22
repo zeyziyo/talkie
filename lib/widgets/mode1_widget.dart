@@ -12,7 +12,6 @@ class Mode1Widget extends StatefulWidget {
   final Key? saveButtonKey;
 
   final Key? contextFieldKey;
-  final Key? toggleButtonKey;
   final Key? materialDropdownKey;
 
   const Mode1Widget({
@@ -21,7 +20,6 @@ class Mode1Widget extends StatefulWidget {
     this.translateButtonKey,
     this.saveButtonKey,
     this.contextFieldKey,
-    this.toggleButtonKey,
     this.materialDropdownKey,
   });
 

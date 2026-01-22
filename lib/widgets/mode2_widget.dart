@@ -10,13 +10,11 @@ import 'package:url_launcher/url_launcher.dart'; // Changed to url_launcher
 class Mode2Widget extends StatefulWidget {
   final Key? materialDropdownKey;
   final Key? tutorialListKey;
-  final Key? toggleButtonKey;
 
   const Mode2Widget({
     super.key,
     this.materialDropdownKey,
     this.tutorialListKey,
-    this.toggleButtonKey,
   });
 
   @override
