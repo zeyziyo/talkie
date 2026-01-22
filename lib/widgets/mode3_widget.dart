@@ -112,7 +112,6 @@ class Mode3Widget extends StatelessWidget {
                                     const SizedBox(width: 12),
                                     Flexible(
                                       child: Text(
-                                      child: Text(
                                         currentQuestion['source_text'] as String,
                                         textAlign: TextAlign.center,
                                         style: const TextStyle(
@@ -142,8 +141,6 @@ class Mode3Widget extends StatelessWidget {
                                               Text(
                                                 currentQuestion['note'] as String,
                                                 style: TextStyle(
-                                                  fontSize: 12,
-                                                  color: Colors.grey[700],
                                                   fontStyle: FontStyle.italic,
                                                   fontSize: 18, // Larger Hint
                                                 ),
