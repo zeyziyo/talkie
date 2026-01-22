@@ -68,13 +68,16 @@ class Mode3Widget extends StatelessWidget {
                           ),
                         );
                       }).toList(),
-                      onChanged: (val) {
+                      onChanged: (val) async {
                           if (val != null) {
-                            appState.selectMaterial(val);
+                            // Fix: await the material loading so data is ready before starting session
+                            await appState.selectMaterial(val);
+                            
                             // Auto-start (load first question) when material is selected
-                            // appState.toggleMode3Session(); // This was the old toggle
                             // valid manual start:
-                            appState.startMode3SessionDirectly(); 
+                            if (context.mounted) {
+                               appState.startMode3SessionDirectly(); 
+                            }
                           }
                         },
                     ),
@@ -95,24 +98,10 @@ class Mode3Widget extends StatelessWidget {
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text(
-                                    appState.studyMaterials.isEmpty
-                                        ? l10n.importJsonFilePrompt
-                                        : "${l10n.startPractice} (Press Start Below)", // Or just prompt to start
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(color: Colors.grey[400], fontSize: 18),
-                                  ),
-                                  const SizedBox(height: 20),
-                                  if (appState.studyMaterials.isNotEmpty)
-                                    ElevatedButton.icon(
-                                      onPressed: () => appState.toggleMode3Session(), // Initial Start
-                                      icon: const Icon(Icons.play_arrow),
-                                      label: Text(l10n.startPractice),
-                                      style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.purple,
-                                        foregroundColor: Colors.white,
-                                        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-                                      ),
+                                    Text(
+                                      l10n.importJsonFilePrompt, // Just show prompt, no button
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(color: Colors.grey[400], fontSize: 18),
                                     ),
                                 ],
                               ),

@@ -255,18 +255,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                             
                             const Divider(),
                             
-                            // Word Mode Toggle
-                            Row(
-                              children: [
-                                Checkbox(
-                                  value: appState.isWordMode, 
-                                  key: widget.toggleButtonKey,
-                                  onChanged: (val) => appState.setWordMode(val ?? false),
-                                ),
-                                Text(l10n.wordModeLabel),
-                                const Spacer(),
-                              ],
-                            ),
+                            const SizedBox(height: 12),
                             
                              const SizedBox(height: 12),
                             // Note Field (Renamed from Context)
