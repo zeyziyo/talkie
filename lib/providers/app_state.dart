@@ -256,7 +256,15 @@ class AppState extends ChangeNotifier {
   // ==========================================
   
   void switchMode(int mode) {
+    if (_currentMode == mode) return;
+    
     _currentMode = mode;
+    
+    // Reset transient state
+    _statusMessage = '';
+    _isListening = false;
+    _speechService.stopSTT();
+    _speechService.stopSpeaking();
     
     if (mode == 1) {
       // Study Material mode (Mode 2) - Load materials
@@ -1172,19 +1180,42 @@ class AppState extends ChangeNotifier {
     
     final targetText = _currentMode3Question!['target_text'] as String;
     
+    // Normalize both for comparison
+    final String normalize = (String input) {
+      return input
+          .toLowerCase()
+          .replaceAll(RegExp(r'[^\w\s]'), '') // Remove punctuation
+          .replaceAll(RegExp(r'\s+'), ' ')    // Collapse spaces
+          .trim();
+    };
+
+    final normalizedUser = normalize(_mode3UserAnswer);
+    final normalizedTarget = normalize(targetText);
+    
+    debugPrint('[AppState] Mode 3 Check:');
+    debugPrint('  - Original User: "$_mode3UserAnswer"');
+    debugPrint('  - Original Target: "$targetText"');
+    debugPrint('  - Norm User: "$normalizedUser"');
+    debugPrint('  - Norm Target: "$normalizedTarget"');
+
     // Calculate Score
-    // If answer empty? Score 0.
-    if (_mode3UserAnswer.trim().isEmpty) {
+    if (normalizedUser.isEmpty) {
         _mode3Score = 0.0;
         _mode3Feedback = 'TRY_AGAIN';
     } else {
-        final similarity = _calculateSimilarity(_mode3UserAnswer, targetText);
+        // use normalized strings for calculation
+        final similarity = _calculateSimilarity(normalizedUser, normalizedTarget);
         _mode3Score = similarity * 100;
         
-        if (_mode3Score! >= 90) {
+        debugPrint('  - Similarity: $_mode3Score');
+        
+        // Exact match fallback (sometimes similarity < 1.0 even if identical due to length?)
+        if (normalizedUser == normalizedTarget) {
+             _mode3Score = 100.0;
+        }
+
+        if (_mode3Score! >= 85) { // Relaxed threshold slightly to 85
           _mode3Feedback = 'PERFECT';
-          // Mark as mastered only if perfect? Or just GOOD? 
-          // User didn't specify strict criteria, but let's keep it.
           _mode3CompletedQuestionIds.add(_currentMode3Question!['id'] as int);
           await _speechService.speak("Perfect!", lang: "en-US");
         } else {

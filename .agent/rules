@@ -2,12 +2,19 @@
 1. **NO LOCAL BUILDS**: Never run `flutter build` or `flutter run` locally. The user uses a remote build pipeline. Only commit and push changes.
 2. **NO CD COMMANDS**: Do not propose `cd` commands.
 
+# COMMUNICATION RULES
+1. **KOREAN ONLY**: All responses, reasoning, and messages to the user MUST be in KOREAN. English is only allowed for code or technical constraints that require it.
+
 # WORKFLOW RULES (STRICT)
 1. **ATOMIC INTERACTION**: Follow this strict sequence:
    - Step 1: Propose/Apply Code Edits.
    - Step 2: STOP and wait for User Confirmation ("Proceed", "OK").
    - Step 3: ONLY THEN propose git commands (`git add`, `git commit`).
+   - Step 3: ONLY THEN propose git commands (`git add`, `git commit`).
    - NEVER combine Edit and Commit in the same turn.
+   - Step 3: ONLY THEN propose git commands (`git add`, `git commit`).
+   - **MANDATORY PROTOCOL**: You MUST follow `.agent/workflows/safe_edit_protocol.md` for ANY code change.
+   - **HARD BLOCK**: The `notify_user` tool IS the barrier. You must call it to end Phase 1.
 
 2. **WIDE-CONTEXT WRAP**:
    - When introducing wrapper widgets (Stack, Row, Expanded, etc.), **NEVER** split the edit into header/footer replacements.
