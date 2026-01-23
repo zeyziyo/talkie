@@ -302,7 +302,7 @@ class AppState extends ChangeNotifier {
       notifyListeners();
       
       await _speechService.startSTT(
-        lang: _getLangCode(_sourceLang),
+        lang: _getServiceLocale(_sourceLang),
         onResult: (text, isFinal) {
           _sourceText = text;
           notifyListeners();
@@ -532,7 +532,7 @@ class AppState extends ChangeNotifier {
       
       await _speechService.speak(
         _translatedText,
-        lang: _getLangCode(_targetLang),
+        lang: _getServiceLocale(_targetLang),
       );
       
       _isSpeaking = false;
@@ -583,7 +583,7 @@ class AppState extends ChangeNotifier {
   /// Play TTS for a study record
   Future<void> playRecordTts(String text, String lang) async {
     try {
-      await _speechService.speak(text, lang: _getLangCode(lang));
+      await _speechService.speak(text, lang: _getServiceLocale(lang));
     } catch (e) {
       debugPrint('[AppState] Error playing TTS: $e');
     }
@@ -986,7 +986,7 @@ class AppState extends ChangeNotifier {
       // TODO: Check for cached audio file in database
       // If recordId is provided, try to load audio from database first
       
-      await _speechService.speak(text, lang: _getLangCode(lang));
+      await _speechService.speak(text, lang: _getServiceLocale(lang));
       
       // TODO: Save generated TTS to database if recordId is provided
     } catch (e) {
@@ -1150,14 +1150,14 @@ class AppState extends ChangeNotifier {
       });
       
       await _speechService.startSTT(
-        lang: _getLangCode(targetLang),
+        lang: _getServiceLocale(targetLang),
         // OPTIMIZED FOR SENTENCES:
         // 30s: Long enough for any sentence.
         // 3s: Allows 3s pause for breathing/thinking, but stops before engine hangs.
         // 3s: Allows 3s pause for breathing/thinking, but stops before engine hangs.
         listenFor: const Duration(seconds: 30), 
         pauseFor: const Duration(seconds: 3),
-        localeId: _getServiceLocale(_targetLang), // Explicitly set locale
+        lang: _getServiceLocale(_targetLang), // Explicit locale
         onResult: (text, isFinal) {
            _mode3UserAnswer = text;
            notifyListeners();
@@ -1281,7 +1281,7 @@ class AppState extends ChangeNotifier {
     // Auto-play TTS
     final sourceText = _currentMode3Question!['source_text'] as String;
     final sourceLang = _currentMode3Question!['source_lang'] as String;
-    await _speechService.speak(sourceText, lang: _getLangCode(sourceLang));
+    await _speechService.speak(sourceText, lang: _getServiceLocale(sourceLang));
     
     // DO NOT Auto-Start Listening. User must press Start.
   }
@@ -1610,14 +1610,14 @@ class AppState extends ChangeNotifier {
              debugPrint('[AppState] Auto-restarting Mode 4 STT...');
              // Restart immediately
              _speechService.startContinuousSTT(
-               lang: _getLangCode(lang),
+               lang: _getServiceLocale(lang),
                onResult: onResult,
              );
         }
       });
       
       await _speechService.startContinuousSTT(
-        lang: _getLangCode(lang),
+        lang: _getServiceLocale(lang),
         onResult: (text, isFinal) {
           onResult(text, isFinal);
         },
@@ -1638,3 +1638,4 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 }
+

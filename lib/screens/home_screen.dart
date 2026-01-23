@@ -617,7 +617,7 @@ class _HomeScreenState extends State<HomeScreen> {
       await appState.selectMaterial(materialId);
       
       // 2. Switch to Mode 3 (Speaking Practice) to show "First Item" immediately
-      appState.setMode(2); 
+      appState.switchMode(2); 
 
       // 3. Show non-blocking feedback
       ScaffoldMessenger.of(context).showSnackBar(
