@@ -319,17 +319,34 @@ class Mode3Widget extends StatelessWidget {
                                        ],
                                      )
                                    else
-                                     ElevatedButton.icon(
-                                        onPressed: () => appState.retryMode3Question(), // Triggers start logic
-                                        icon: const Icon(Icons.mic, size: 32),
-                                        label: Text(l10n.mode3Start, style: const TextStyle(fontSize: 18)),
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: Colors.green,
-                                          foregroundColor: Colors.white,
-                                          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-                                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                                        ),
-                                      ),
+                                     Row(
+                                       mainAxisAlignment: MainAxisAlignment.center,
+                                       children: [
+                                         ElevatedButton.icon(
+                                           onPressed: () => appState.retryMode3Question(),
+                                           icon: const Icon(Icons.mic, size: 32),
+                                           label: Text(l10n.mode3Start, style: const TextStyle(fontSize: 18)),
+                                           style: ElevatedButton.styleFrom(
+                                             backgroundColor: Colors.green,
+                                             foregroundColor: Colors.white,
+                                             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                                           ),
+                                         ),
+                                         const SizedBox(width: 16),
+                                         OutlinedButton.icon(
+                                           onPressed: () => appState.skipMode3Question(),
+                                           icon: const Icon(Icons.skip_next, size: 24),
+                                           label: Text(l10n.mode3Next, style: const TextStyle(fontSize: 16)),
+                                           style: OutlinedButton.styleFrom(
+                                             foregroundColor: Colors.grey[700],
+                                             side: BorderSide(color: Colors.grey[400]!),
+                                             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                                           ),
+                                         ),
+                                       ],
+                                     ),
                                 ],
                                 
                                 const SizedBox(height: 60),

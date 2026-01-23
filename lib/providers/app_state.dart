@@ -808,7 +808,7 @@ class AppState extends ChangeNotifier {
   }
 
   /// Reset practice progress for current session
-  void resetMode3Progress() {
+  void resetMode3Progress() async {
     _mode3CompletedQuestionIds.clear();
     _currentMode3Question = null;
     _mode3UserAnswer = '';
@@ -816,6 +816,13 @@ class AppState extends ChangeNotifier {
     _mode3Feedback = '';
     _mode3SessionActive = false;
     _cancelMode3Timers();
+    
+    // Select first material from filtered list if available
+    final filtered = filteredStudyMaterials;
+    if (filtered.isNotEmpty) {
+      await selectMaterial(filtered.first['id'] as int);
+    }
+    
     _statusMessage = '연습 기록이 초기화되었습니다.';
     notifyListeners();
   }
@@ -1019,6 +1026,8 @@ class AppState extends ChangeNotifier {
   // Timer? _mode3Timer; // This was moved above
   Timer? _retryAutoSkipTimer;
   
+  bool _isEvaluating = false; // Guard to prevent multiple evaluations 
+  
   int get mode3Interval => _mode3Interval;
   bool get mode3SessionActive => _mode3SessionActive;
   Map<String, dynamic>? get currentMode3Question => _currentMode3Question;
@@ -1131,15 +1140,9 @@ class AppState extends ChangeNotifier {
              // If stopped by system error (and we are still 'listening' in state), we might need to update UI.
              if (_isListening && _mode3SessionActive) {
                  debugPrint('[AppState] System stopped STT unexpectedly. Updating UI.');
-                 _isListening = false;
-                 // If we have some text, check it. If not, maybe show retry?
-                 if (_mode3UserAnswer.isNotEmpty) {
+                 // If we haven't started evaluating, do it now.
+                 if (!_isEvaluating) {
                      _checkMode3Answer();
-                 } else {
-                     // No text captured?
-                     _mode3Feedback = 'Press Record to Speak';
-                     _showRetryButton = true;
-                     notifyListeners();
                  }
              }
          }
@@ -1156,6 +1159,12 @@ class AppState extends ChangeNotifier {
         onResult: (text, isFinal, alternates) {
            _mode3UserAnswer = text;
            _mode3Alternates = alternates; // Store for checking
+           
+           // EVALUATION TRIGGER: Check immediately if final result received
+           if (isFinal && _mode3SessionActive && !_isEvaluating) {
+              _checkMode3Answer();
+           }
+           
            notifyListeners();
         }
       );
@@ -1171,7 +1180,9 @@ class AppState extends ChangeNotifier {
 
   
   Future<void> _checkMode3Answer() async {
-    if (!_mode3SessionActive) return;
+    if (!_mode3SessionActive || _isEvaluating) return;
+    
+    _isEvaluating = true;
     
     // Ensure listening is stopped
     _speechService.stopSTT();
@@ -1237,6 +1248,7 @@ class AppState extends ChangeNotifier {
     }
     
     _showRetryButton = true; // Always show controls (Next/Retry depending on result logic in UI)
+    _isEvaluating = false; 
     notifyListeners();
     // NO AUTO ADVANCE. User must click Next or Retry.
   }
@@ -1466,6 +1478,13 @@ class AppState extends ChangeNotifier {
       'write': ['right', 'rite'],
       // Y
       'your': ["you're"],
+      // Common Conversational / Pronunciation errors
+      'i': ['eye', 'aye'],
+      'a': ['ei', 'eight'],
+      'it': ['eat'],
+      'is': ['ease'],
+      'of': ['off'],
+      'you': ['u'],
     };
     return map[word] ?? [];
   }
