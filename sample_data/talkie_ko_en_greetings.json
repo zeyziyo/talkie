@@ -1,0 +1,159 @@
+{
+    "subject": "인사말",
+    "source": "Talkie Sample",
+    "source_language": "ko",
+    "target_language": "en",
+    "default_type": "sentence",
+    "entries": [
+        {
+            "source_text": "안녕하세요",
+            "target_text": "Hello",
+            "type": "sentence"
+        },
+        {
+            "source_text": "안녕하십니까?",
+            "target_text": "How do you do?",
+            "type": "sentence"
+        },
+        {
+            "source_text": "안녕",
+            "target_text": "Hi / Bye",
+            "type": "sentence"
+        },
+        {
+            "source_text": "반갑습니다",
+            "target_text": "Nice to meet you",
+            "type": "sentence"
+        },
+        {
+            "source_text": "만나서 반가워요",
+            "target_text": "Nice to meet you",
+            "type": "sentence"
+        },
+        {
+            "source_text": "처음 뵙겠습니다",
+            "target_text": "Pleased to meet you",
+            "type": "sentence"
+        },
+        {
+            "source_text": "감사합니다",
+            "target_text": "Thank you",
+            "type": "sentence"
+        },
+        {
+            "source_text": "고맙습니다",
+            "target_text": "Thank you",
+            "type": "sentence"
+        },
+        {
+            "source_text": "고마워요",
+            "target_text": "Thank you",
+            "type": "sentence"
+        },
+        {
+            "source_text": "죄송합니다",
+            "target_text": "I am sorry",
+            "type": "sentence"
+        },
+        {
+            "source_text": "미안해요",
+            "target_text": "I am sorry",
+            "type": "sentence"
+        },
+        {
+            "source_text": "실례합니다",
+            "target_text": "Excuse me",
+            "type": "sentence"
+        },
+        {
+            "source_text": "잠시만요",
+            "target_text": "Just a moment",
+            "type": "sentence"
+        },
+        {
+            "source_text": "안녕히 가세요",
+            "target_text": "Goodbye (Go well)",
+            "type": "sentence"
+        },
+        {
+            "source_text": "안녕히 계세요",
+            "target_text": "Goodbye (Stay well)",
+            "type": "sentence"
+        },
+        {
+            "source_text": "잘 가",
+            "target_text": "Bye",
+            "type": "sentence"
+        },
+        {
+            "source_text": "잘 있어",
+            "target_text": "Bye",
+            "type": "sentence"
+        },
+        {
+            "source_text": "좋은 아침입니다",
+            "target_text": "Good morning",
+            "type": "sentence"
+        },
+        {
+            "source_text": "잘 자요",
+            "target_text": "Good night",
+            "type": "sentence"
+        },
+        {
+            "source_text": "안녕히 주무세요",
+            "target_text": "Good night (Formal)",
+            "type": "sentence"
+        },
+        {
+            "source_text": "식사하셨어요?",
+            "target_text": "Have you eaten?",
+            "type": "sentence"
+        },
+        {
+            "source_text": "맛있게 드세요",
+            "target_text": "Enjoy your meal",
+            "type": "sentence"
+        },
+        {
+            "source_text": "잘 먹겠습니다",
+            "target_text": "I will eat well",
+            "type": "sentence"
+        },
+        {
+            "source_text": "잘 먹었습니다",
+            "target_text": "I ate well",
+            "type": "sentence"
+        },
+        {
+            "source_text": "새해 복 많이 받으세요",
+            "target_text": "Happy New Year",
+            "type": "sentence"
+        },
+        {
+            "source_text": "생일 축하합니다",
+            "target_text": "Happy Birthday",
+            "type": "sentence"
+        },
+        {
+            "source_text": "수고하셨습니다",
+            "target_text": "Good job / Thank you for your work",
+            "type": "sentence"
+        },
+        {
+            "source_text": "어서 오세요",
+            "target_text": "Welcome",
+            "type": "sentence"
+        },
+        {
+            "source_text": "나중에 봐요",
+            "target_text": "See you later",
+            "type": "sentence"
+        },
+        {
+            "source_text": "조심히 가세요",
+            "target_text": "Safe travels",
+            "type": "sentence"
+        }
+    ]
+}

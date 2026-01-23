@@ -476,7 +476,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get practiceWordsOnly => '단어만 연습 (Words Only)';
 
   @override
-  String get resetPracticeHistory => '연습 기록 초기화';
+  String get resetPracticeHistory => '재시작';
 
   @override
   String get retry => '다시 시도?';

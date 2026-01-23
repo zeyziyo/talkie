@@ -821,9 +821,10 @@ class AppState extends ChangeNotifier {
     final filtered = filteredStudyMaterials;
     if (filtered.isNotEmpty) {
       await selectMaterial(filtered.first['id'] as int);
+      await startMode3SessionDirectly();
     }
     
-    _statusMessage = '연습 기록이 초기화되었습니다.';
+    _statusMessage = '연습을 다시 시작합니다.';
     notifyListeners();
   }
 
@@ -956,6 +957,7 @@ class AppState extends ChangeNotifier {
           
           if (isVisible) {
              await selectMaterial(materialId);
+             await startMode3SessionDirectly();
           } else {
             // Optional: If not visible, we could force-switch languages, 
             // but for now, just respecting the filter is safer to avoid confusing the user.
