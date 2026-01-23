@@ -132,7 +132,7 @@ class SpeechService {
   /// - onResult: Callback when text is recognized (text, isFinal)
   Future<void> startSTT({
     required String lang,
-    required Function(String, bool) onResult,  // Added bool for finalResult
+    required Function(String, bool, List<String>) onResult,  // Added List<String> for alternates
     Duration? listenFor,
     Duration? pauseFor,
   }) async {
@@ -168,7 +168,11 @@ class SpeechService {
     await _speechToText.listen(
       onResult: (result) {
         _lastRecognizedText = result.recognizedWords;
-        onResult(result.recognizedWords, result.finalResult);  
+        // Extract all alternative transcriptions
+        final alternates = result.alternates
+            .map((alt) => alt.recognizedWords)
+            .toList();
+        onResult(result.recognizedWords, result.finalResult, alternates);  
       },
       localeId: lang,
       listenFor: listenFor ?? const Duration(seconds: 30), // Default 30s
@@ -187,7 +191,7 @@ class SpeechService {
   /// Start continuous speech recognition (for Game Mode)
   Future<void> startContinuousSTT({
     required String lang,
-    required Function(String, bool) onResult,
+    required Function(String, bool, List<String>) onResult,
   }) async {
     if (!_isInitialized) await initialize();
     
@@ -206,7 +210,8 @@ class SpeechService {
     await _speechToText.listen(
       onResult: (result) {
         _lastRecognizedText = result.recognizedWords;
-        onResult(result.recognizedWords, result.finalResult);  
+        final alternates = result.alternates.map((a) => a.recognizedWords).toList();
+        onResult(result.recognizedWords, result.finalResult, alternates);  
       },
       localeId: lang,
       listenFor: const Duration(seconds: 60), // Longer duration

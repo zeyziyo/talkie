@@ -303,7 +303,7 @@ class AppState extends ChangeNotifier {
       
       await _speechService.startSTT(
         lang: _getServiceLocale(_sourceLang),
-        onResult: (text, isFinal) {
+        onResult: (text, isFinal, alternates) {
           _sourceText = text;
           notifyListeners();
           
@@ -1004,6 +1004,7 @@ class AppState extends ChangeNotifier {
   double? _mode3Score; // 0.0 to 100.0
   Map<String, dynamic>? _currentMode3Question;
   String _mode3UserAnswer = ''; // User's spoken text for feedback
+  List<String> _mode3Alternates = []; // N-best alternatives from STT engine
   Timer? _mode3Timer; // Timer for auto-advance
   bool _practiceWordsOnly = false; // Filter for "Words Only" in Mode 3
 
@@ -1152,8 +1153,9 @@ class AppState extends ChangeNotifier {
         // 3s: Allows 3s pause for breathing/thinking, but stops before engine hangs.
         listenFor: const Duration(seconds: 30), 
         pauseFor: const Duration(seconds: 3),
-        onResult: (text, isFinal) {
+        onResult: (text, isFinal, alternates) {
            _mode3UserAnswer = text;
+           _mode3Alternates = alternates; // Store for checking
            notifyListeners();
         }
       );
@@ -1181,14 +1183,25 @@ class AppState extends ChangeNotifier {
     final normalizedUser = _normalizeText(_mode3UserAnswer);
     final normalizedTarget = _normalizeText(targetText);
     
-    // Homophone Check
-    // If exact match fails, check if the user's answer is an accepted homophone for the target
-    bool isHomophoneMatch = false;
-    if (normalizedUser != normalizedTarget) {
+    // Homophone Check (Layer 1: N-best alternatives from STT)
+    bool isMatchFound = (normalizedUser == normalizedTarget);
+    
+    if (!isMatchFound) {
+      for (final alt in _mode3Alternates) {
+        if (_normalizeText(alt) == normalizedTarget) {
+          isMatchFound = true;
+          debugPrint('[AppState] N-best Match: "$alt" accepted for "$normalizedTarget"');
+          break;
+        }
+      }
+    }
+
+    // Homophone Check (Layer 2: Hardcoded English mappings as fallback)
+    if (!isMatchFound) {
       final homophones = _getHomophones(normalizedTarget);
       if (homophones.contains(normalizedUser)) {
-        isHomophoneMatch = true;
-        debugPrint('[AppState] Homophone Match: "$normalizedUser" accepted for "$normalizedTarget"');
+        isMatchFound = true;
+        debugPrint('[AppState] Hardcoded Homophone Match: "$normalizedUser" accepted for "$normalizedTarget"');
       }
     }
     
@@ -1209,8 +1222,8 @@ class AppState extends ChangeNotifier {
         
         debugPrint('  - Similarity: $_mode3Score');
         
-        // Exact match fallback (sometimes similarity < 1.0 even if identical due to length?)
-        if (normalizedUser == normalizedTarget || isHomophoneMatch) {
+        // Match fallback
+        if (isMatchFound) {
              _mode3Score = 100.0;
         }
 
@@ -1605,14 +1618,14 @@ class AppState extends ChangeNotifier {
              // Restart immediately
              _speechService.startContinuousSTT(
                lang: _getServiceLocale(lang),
-               onResult: onResult,
+               onResult: (text, isFinal, alternates) => onResult(text, isFinal),
              );
         }
       });
       
       await _speechService.startContinuousSTT(
         lang: _getServiceLocale(lang),
-        onResult: (text, isFinal) {
+        onResult: (text, isFinal, alternates) {
           onResult(text, isFinal);
         },
       );
