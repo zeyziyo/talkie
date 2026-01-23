@@ -418,18 +418,17 @@ class AppLocalizationsKo extends AppLocalizations {
       '같은 문장이라도 상황(예: 아침, 저녁)을 적어두면 별도로 저장할 수 있어요.';
 
   @override
-  String get tutorialM1ToggleTitle => 'Word/Sentence Mode';
+  String get tutorialM1ToggleTitle => '단어/문장 모드';
 
   @override
   String get tutorialM1ToggleDesc =>
       '단어와 문장 모드를 여기서 전환할 수 있습니다. 단어는 목록에서 더 크게 표시됩니다.';
 
   @override
-  String get tutorialM3WordsTitle => 'Practice Words';
+  String get tutorialM3WordsTitle => '단어 연습';
 
   @override
-  String get tutorialM3WordsDesc =>
-      'Check this to practice only your saved words.';
+  String get tutorialM3WordsDesc => '체크하면 저장된 단어만 연습합니다.';
 
   @override
   String get labelType => '종류:';
@@ -540,11 +539,59 @@ class AppLocalizationsKo extends AppLocalizations {
   String get dialogueQuestDesc => '상황극을 통해 대화 연습을 하세요. 적절한 답변을 선택하고 말해보세요.';
 
   @override
-  String get micButtonTooltip => '듣기 시작';
+  String get micButtonTooltip => '음성 인식 시작';
 
   @override
-  String get enterTextHint => '번역할 텍스트 입력';
+  String get enterTextHint => '번역할 텍스트를 입력하세요';
 
   @override
   String get wordModeLabel => '단어 모드';
+
+  @override
+  String get accuracy => '정확도';
+
+  @override
+  String get basicDefault => '기본 (Default)';
+
+  @override
+  String get basic => '기본';
+
+  @override
+  String get menuHelp => '도움말';
+
+  @override
+  String get menuWebDownload => '홈페이지에서 자료 받기';
+
+  @override
+  String get menuDeviceImport => '기기에서 자료 가져오기';
+
+  @override
+  String get menuSettings => '언어 설정';
+
+  @override
+  String get languageSettingsTitle => '언어 설정';
+
+  @override
+  String get sourceLanguageLabel => '내 언어 (Source)';
+
+  @override
+  String get targetLanguageLabel => '학습 언어 (Target)';
+
+  @override
+  String get mode3Start => '시작';
+
+  @override
+  String get mode3Stop => '종료';
+
+  @override
+  String get mode3Next => '다음';
+
+  @override
+  String get mode3TryAgain => '재시도';
+
+  @override
+  String get tutorialSwapDesc => '내 언어와 학습 언어를 서로 바꿉니다.';
+
+  @override
+  String get recognizedText => '인식된 발음:';
 }

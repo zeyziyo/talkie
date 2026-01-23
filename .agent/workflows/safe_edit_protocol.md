@@ -9,7 +9,7 @@ This workflow enforces the "Atomic Interaction" rule by utilizing the agent's im
 ## Phase 1: Edit & Verify
 1.  **Analyze**: Understand the changes needed.
 2.  **Edit**: Use `replace_file_content` or `multi_replace_file_content` to modify code.
-3.  **Verify**: Use `view_file` to check the changes or run `flutter analyze` if possible.
+3.  **Verify**: Use `view_file` or `flutter analyze` to check changes. **DO NOT RUN `flutter build` (Local Artifact Generation)**.
 4.  **HARD STOP**: You **MUST** call the `notify_user` tool here.
     *   **Message**: "Modifications completed. Verification passed. Ready to commit?"
     *   **Purpose**: This tool physically returns control to the user. You CANNOT proceed until the user responds.

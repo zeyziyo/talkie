@@ -549,6 +549,54 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get wordModeLabel => 'Word Mode';
+
+  @override
+  String get accuracy => 'Accuracy';
+
+  @override
+  String get basicDefault => 'Basic (Default)';
+
+  @override
+  String get basic => 'Basic';
+
+  @override
+  String get menuHelp => 'Help';
+
+  @override
+  String get menuWebDownload => 'Get Material from Web';
+
+  @override
+  String get menuDeviceImport => 'Import from Device';
+
+  @override
+  String get menuSettings => 'Settings';
+
+  @override
+  String get languageSettingsTitle => 'Language Settings';
+
+  @override
+  String get sourceLanguageLabel => 'Source Language';
+
+  @override
+  String get targetLanguageLabel => 'Target Language';
+
+  @override
+  String get mode3Start => 'Start';
+
+  @override
+  String get mode3Stop => 'Stop';
+
+  @override
+  String get mode3Next => 'Next';
+
+  @override
+  String get mode3TryAgain => 'Try Again';
+
+  @override
+  String get tutorialSwapDesc => 'Switch between source and target languages.';
+
+  @override
+  String get recognizedText => 'Recognized Text:';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -1087,6 +1135,57 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   @override
   String get dialogueQuestDesc =>
       'Roleplay in scenarios. Choose the right response and speak it aloud.';
+
+  @override
+  String get micButtonTooltip => 'Start Listening';
+
+  @override
+  String get enterTextHint => 'Enter text to translate';
+
+  @override
+  String get wordModeLabel => 'Word Mode';
+
+  @override
+  String get accuracy => 'Accuracy';
+
+  @override
+  String get basicDefault => 'Basic (Default)';
+
+  @override
+  String get basic => 'Basic';
+
+  @override
+  String get menuHelp => 'Help';
+
+  @override
+  String get menuWebDownload => 'Get Material from Web';
+
+  @override
+  String get menuDeviceImport => 'Import from Device';
+
+  @override
+  String get menuSettings => 'Settings';
+
+  @override
+  String get languageSettingsTitle => 'Language Settings';
+
+  @override
+  String get sourceLanguageLabel => 'Source Language';
+
+  @override
+  String get targetLanguageLabel => 'Target Language';
+
+  @override
+  String get mode3Start => 'Start';
+
+  @override
+  String get mode3Stop => 'Stop';
+
+  @override
+  String get mode3Next => 'Next';
+
+  @override
+  String get mode3TryAgain => 'Try Again';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1625,4 +1724,55 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   @override
   String get dialogueQuestDesc =>
       'Roleplay in scenarios. Choose the right response and speak it aloud.';
+
+  @override
+  String get micButtonTooltip => 'Start Listening';
+
+  @override
+  String get enterTextHint => 'Enter text to translate';
+
+  @override
+  String get wordModeLabel => 'Word Mode';
+
+  @override
+  String get accuracy => 'Accuracy';
+
+  @override
+  String get basicDefault => 'Basic (Default)';
+
+  @override
+  String get basic => 'Basic';
+
+  @override
+  String get menuHelp => 'Help';
+
+  @override
+  String get menuWebDownload => 'Get Material from Web';
+
+  @override
+  String get menuDeviceImport => 'Import from Device';
+
+  @override
+  String get menuSettings => 'Settings';
+
+  @override
+  String get languageSettingsTitle => 'Language Settings';
+
+  @override
+  String get sourceLanguageLabel => 'Source Language';
+
+  @override
+  String get targetLanguageLabel => 'Target Language';
+
+  @override
+  String get mode3Start => 'Start';
+
+  @override
+  String get mode3Stop => 'Stop';
+
+  @override
+  String get mode3Next => 'Next';
+
+  @override
+  String get mode3TryAgain => 'Try Again';
 }

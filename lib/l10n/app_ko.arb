@@ -468,5 +468,6 @@
   "mode3TryAgain": "재시도",
   "swapLanguages": "언어 전환",
   "tutorialSwapDesc": "내 언어와 학습 언어를 서로 바꿉니다.",
-  "recognizedText": "인식된 발음:"
+  "recognizedText": "인식된 발음:",
+  "resetPracticeHistory": "연습 기록 초기화"
 }

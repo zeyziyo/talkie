@@ -10,9 +10,7 @@
    - Step 1: Propose/Apply Code Edits.
    - Step 2: STOP and wait for User Confirmation ("Proceed", "OK").
    - Step 3: ONLY THEN propose git commands (`git add`, `git commit`).
-   - Step 3: ONLY THEN propose git commands (`git add`, `git commit`).
    - NEVER combine Edit and Commit in the same turn.
-   - Step 3: ONLY THEN propose git commands (`git add`, `git commit`).
    - **MANDATORY PROTOCOL**: You MUST follow `.agent/workflows/safe_edit_protocol.md` for ANY code change.
    - **HARD BLOCK**: The `notify_user` tool IS the barrier. You must call it to end Phase 1.
 

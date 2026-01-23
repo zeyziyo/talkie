@@ -1169,6 +1169,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Word Mode'**
   String get wordModeLabel;
+
+  /// No description provided for @accuracy.
+  ///
+  /// In en, this message translates to:
+  /// **'Accuracy'**
+  String get accuracy;
+
+  /// No description provided for @basicDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic (Default)'**
+  String get basicDefault;
+
+  /// No description provided for @basic.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic'**
+  String get basic;
+
+  /// No description provided for @menuHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Help'**
+  String get menuHelp;
+
+  /// No description provided for @menuWebDownload.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Material from Web'**
+  String get menuWebDownload;
+
+  /// No description provided for @menuDeviceImport.
+  ///
+  /// In en, this message translates to:
+  /// **'Import from Device'**
+  String get menuDeviceImport;
+
+  /// No description provided for @menuSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Language Settings'**
+  String get menuSettings;
+
+  /// No description provided for @languageSettingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Language Settings'**
+  String get languageSettingsTitle;
+
+  /// No description provided for @sourceLanguageLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'My Language (Source)'**
+  String get sourceLanguageLabel;
+
+  /// No description provided for @targetLanguageLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Study Language (Target)'**
+  String get targetLanguageLabel;
+
+  /// No description provided for @mode3Start.
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get mode3Start;
+
+  /// No description provided for @mode3Stop.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop'**
+  String get mode3Stop;
+
+  /// No description provided for @mode3Next.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get mode3Next;
+
+  /// No description provided for @mode3TryAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Try Again'**
+  String get mode3TryAgain;
+
+  /// No description provided for @tutorialSwapDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch between source and target languages.'**
+  String get tutorialSwapDesc;
+
+  /// No description provided for @recognizedText.
+  ///
+  /// In en, this message translates to:
+  /// **'Recognized Text:'**
+  String get recognizedText;
 }
 
 class _AppLocalizationsDelegate

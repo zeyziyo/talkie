@@ -1149,8 +1149,11 @@ class AppState extends ChangeNotifier {
       
       await _speechService.startSTT(
         lang: _getLangCode(targetLang),
-        listenFor: const Duration(minutes: 5), // Manual control: long timeout
-        pauseFor: const Duration(minutes: 5),  // Manual control: long pause
+        // OPTIMIZED FOR SENTENCES:
+        // 30s: Long enough for any sentence.
+        // 3s: Allows 3s pause for breathing/thinking, but stops before engine hangs.
+        listenFor: const Duration(seconds: 30), 
+        pauseFor: const Duration(seconds: 3),
         onResult: (text, isFinal) {
           // Ignore results if too fast (noise/residual)
           if (DateTime.now().difference(_sttStartTime!).inMilliseconds < 500) {

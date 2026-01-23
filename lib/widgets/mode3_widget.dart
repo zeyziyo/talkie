@@ -29,7 +29,7 @@ class Mode3Widget extends StatelessWidget {
               // 1. Top Settings Panel
               // ==========================================
               Container(
-                padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
                 decoration: BoxDecoration(
                   color: Colors.purple[50], // Distinct color for Speaking Mode
                   borderRadius: const BorderRadius.only(
@@ -335,21 +335,21 @@ class Mode3Widget extends StatelessWidget {
                           ),
                     ),
                     
-                    // Floating Next Button (Global Skip)
-                    if (appState.mode3SessionActive && currentQuestion != null)
-                      Positioned(
-                        bottom: 24,
-                        right: 24,
-                        child: FloatingActionButton(
-                          onPressed: () => appState.skipMode3Question(),
-                          backgroundColor: Colors.grey,
-                          mini: true,
-                          child: const Icon(Icons.skip_next),
-                        ),
-                      ),
+                    // Floating Next Button Removed (Duplicate)
                   ],
                 ),
               ),
+
+              
+              // Reset Button
+              TextButton(
+                onPressed: () => appState.resetMode3Progress(),
+                child: Text(
+                  l10n.resetPracticeHistory,
+                  style: TextStyle(color: Colors.grey[600]),
+                ),
+              ),
+              const SizedBox(height: 16),
             ],
           ),
         );
@@ -369,22 +369,6 @@ class Mode3Widget extends StatelessWidget {
     return "${firstWord[0]}${'-' * (firstWord.length - 1)}";
   }
 
-
-  String _getFeedbackText(BuildContext context, String code) {
-    final l10n = AppLocalizations.of(context)!;
-    switch (code) {
-      case 'PERFECT':
-        return l10n.perfect;
-      case 'TRY_AGAIN':
-        return l10n.tryAgain;
-      case 'TIME_UP':
-        return l10n.timeUp;
-      case 'Completed All!': // Legacy or fallback
-        return 'All Done!';
-      default:
-        return code;
-    }
-  }
 
   Color _getScoreColor(double score) {
     if (score >= 90) return Colors.green;

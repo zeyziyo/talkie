@@ -556,4 +556,52 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get wordModeLabel => 'Word Mode';
+
+  @override
+  String get accuracy => 'Accuracy';
+
+  @override
+  String get basicDefault => 'Basic (Default)';
+
+  @override
+  String get basic => 'Basic';
+
+  @override
+  String get menuHelp => 'Help';
+
+  @override
+  String get menuWebDownload => 'Get Material from Web';
+
+  @override
+  String get menuDeviceImport => 'Import from Device';
+
+  @override
+  String get menuSettings => 'Settings';
+
+  @override
+  String get languageSettingsTitle => 'Language Settings';
+
+  @override
+  String get sourceLanguageLabel => 'Source Language';
+
+  @override
+  String get targetLanguageLabel => 'Target Language';
+
+  @override
+  String get mode3Start => 'Start';
+
+  @override
+  String get mode3Stop => 'Stop';
+
+  @override
+  String get mode3Next => 'Next';
+
+  @override
+  String get mode3TryAgain => 'Try Again';
+
+  @override
+  String get tutorialSwapDesc => 'Switch between source and target languages.';
+
+  @override
+  String get recognizedText => 'Recognized Text:';
 }
