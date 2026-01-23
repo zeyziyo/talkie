@@ -1,74 +1,363 @@
 {
   "@@locale": "fil",
   "appTitle": "Talkie",
+  "@appTitle": {
+    "description": "Application title"
+  },
   "tabReview": "Balik-aral ({count})",
+  "@tabReview": {
+    "description": "Review tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabStudyMaterial": "Materyales ({count})",
+  "@tabStudyMaterial": {
+    "description": "Study material tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mode2Title": "Balik-aral",
+  "@mode2Title": {
+    "description": "Mode 2 title for help dialog"
+  },
   "search": "Hanapin",
+  "@search": {
+    "description": "Search mode label"
+  },
   "translate": "Isalin",
+  "@translate": {
+    "description": "Translate button"
+  },
   "listen": "Makinig",
+  "@listen": {
+    "description": "Listen/TTS button"
+  },
   "saveData": "I-save",
+  "@saveData": {
+    "description": "Save translation button"
+  },
   "saved": "Na-save",
+  "@saved": {
+    "description": "Data saved status"
+  },
   "delete": "Tanggalin",
+  "@delete": {
+    "description": "Delete button"
+  },
+  "materialInfo": "Impormasyon ng materyal",
+  "@materialInfo": {
+    "description": "Title for material metadata section"
+  },
   "cancel": "Kanselahin",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "confirm": "OK",
+  "@confirm": {
+    "description": "Confirm/OK button"
+  },
   "refresh": "I-refresh",
+  "@refresh": {
+    "description": "Refresh button"
+  },
   "studyRecords": "Mga Tala ({count})",
+  "@studyRecords": {
+    "description": "Study records title with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "targetLanguageFilter": "Target na Wika:",
+  "@targetLanguageFilter": {
+    "description": "Language filter label"
+  },
   "noRecords": "Walang tala para sa napiling wika",
+  "@noRecords": {
+    "description": "Empty state message"
+  },
   "saveTranslationsFromSearch": "I-save ang mga pagsasalin mula sa search mode",
+  "@saveTranslationsFromSearch": {
+    "description": "Instruction to save data"
+  },
   "flip": "I-flip",
+  "@flip": {
+    "description": "Show translation button"
+  },
   "hide": "Itago",
+  "@hide": {
+    "description": "Hide translation button"
+  },
   "deleteRecord": "Tanggalin ang Tala",
+  "@deleteRecord": {
+    "description": "Delete record dialog title"
+  },
   "confirmDelete": "Sigurado ka bang gusto mong tanggalin ito?",
+  "@confirmDelete": {
+    "description": "Delete confirmation message"
+  },
   "recordDeleted": "Matagumpay na natanggal ang tala",
+  "@recordDeleted": {
+    "description": "Delete success message"
+  },
   "deleteFailed": "Nabigong tanggalin: {error}",
+  "@deleteFailed": {
+    "description": "Delete error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "importJsonFile": "Mag-import ng JSON",
+  "@importJsonFile": {
+    "description": "Import JSON button"
+  },
   "importing": "Nag-iimport...",
+  "@importing": {
+    "description": "Import in progress"
+  },
   "importComplete": "Tapos na ang Pag-import",
+  "@importComplete": {
+    "description": "Import success title"
+  },
   "importFailed": "Nabigong Mag-import",
+  "@importFailed": {
+    "description": "Import error title"
+  },
   "importFile": "File: {fileName}",
+  "@importFile": {
+    "description": "Imported file name",
+    "placeholders": {
+      "fileName": {
+        "type": "String"
+      }
+    }
+  },
   "importTotal": "Kabuuan: {count}",
+  "@importTotal": {
+    "description": "Total import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importAdded": "Idinagdag: {count}",
+  "@importAdded": {
+    "description": "Successfully imported count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importSkipped": "Nilaktawan: {count}",
+  "@importSkipped": {
+    "description": "Skipped import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "errors": "Mga Error:",
+  "@errors": {
+    "description": "Error section label"
+  },
   "error": "Error",
+  "@error": {
+    "description": "Error dialog title"
+  },
   "importErrorMessage": "Nabigong i-import ang file:\\n{error}",
+  "@importErrorMessage": {
+    "description": "Import error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "selectStudyMaterial": "Pumili ng Materyales",
+  "@selectStudyMaterial": {
+    "description": "Study material selector label"
+  },
   "subject": "Paksa:",
+  "@subject": {
+    "description": "Subject label"
+  },
   "source": "Pinagmulan:",
+  "@source": {
+    "description": "Source label"
+  },
   "file": "File:",
+  "@file": {
+    "description": "File label"
+  },
   "progress": "Progreso: {current} / {total}",
+  "@progress": {
+    "description": "Progress indicator",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "importJsonFilePrompt": "Mangyaring mag-import ng JSON file",
+  "@importJsonFilePrompt": {
+    "description": "Empty state prompt"
+  },
   "selectMaterialPrompt": "Mangyaring pumili ng materyales sa pag-aaral",
+  "@selectMaterialPrompt": {
+    "description": "Selection prompt"
+  },
   "studyComplete": "Napag-aralan na",
+  "@studyComplete": {
+    "description": "Study complete button text"
+  },
   "markAsStudied": "Markahan bilang Napag-aralan",
+  "@markAsStudied": {
+    "description": "Mark study button text"
+  },
   "listening": "Nakikinig...",
+  "@listening": {
+    "description": "STT listening status"
+  },
   "recognized": "Natapos ang pagkilala",
+  "@recognized": {
+    "description": "STT complete status"
+  },
   "recognitionFailed": "Nabigo ang pagkilala sa boses: {error}",
+  "@recognitionFailed": {
+    "description": "STT error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "checking": "Sinusuri...",
+  "@checking": {
+    "description": "Checking for duplicates"
+  },
   "translating": "Nagsasalin...",
+  "@translating": {
+    "description": "Translation in progress"
+  },
   "translationComplete": "Tapos na ang pagsasalin (kailangang i-save)",
+  "@translationComplete": {
+    "description": "Translation done status"
+  },
   "translationLoaded": "Na-load ang naka-save na pagsasalin",
+  "@translationLoaded": {
+    "description": "Existing translation loaded"
+  },
   "translationFailed": "Nabigo ang pagsasalin: {error}",
+  "@translationFailed": {
+    "description": "Translation error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "enterTextToTranslate": "Ipasok ang teksto upang isalin",
+  "@enterTextToTranslate": {
+    "description": "Empty input warning"
+  },
   "saving": "Nagsa-save...",
+  "@saving": {
+    "description": "Save in progress"
+  },
   "noTranslationToSave": "Walang pagsasalin na i-save",
+  "@noTranslationToSave": {
+    "description": "Save error - no data"
+  },
   "saveFailed": "Nabigong i-save: {error}",
+  "@saveFailed": {
+    "description": "Save error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "playing": "Nagpe-play...",
+  "@playing": {
+    "description": "TTS playing status"
+  },
   "noTextToPlay": "Walang teksto na i-play",
+  "@noTextToPlay": {
+    "description": "TTS error - no text"
+  },
   "playbackFailed": "Nabigo ang pag-play: {error}",
+  "@playbackFailed": {
+    "description": "TTS error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "sourceLanguage": "Pinagmulang Wika",
+  "@sourceLanguage": {
+    "description": "Source language label"
+  },
   "targetLanguage": "Target na Wika",
+  "@targetLanguage": {
+    "description": "Target language label"
+  },
   "similarTextFound": "May natagpuang katulad na teksto",
+  "@similarTextFound": {
+    "description": "Duplicate detection title"
+  },
   "useExistingText": "Gamitin ang Umiiral",
+  "@useExistingText": {
+    "description": "Use existing text button"
+  },
   "createNew": "Lumikha ng Bago",
+  "@createNew": {
+    "description": "Create new entry button"
+  },
   "reviewCount": "Binago nang {count} beses",
+  "@reviewCount": {
+    "description": "Review count display",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabSpeaking": "Pagsasalita",
   "speakingPractice": "Pagsasanay sa Pagsasalita",
   "intervalSeconds": "Agwat: {seconds}s",
+  "@intervalSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "yourPronunciation": "Ang iyong Pagbigkas",
   "correctAnswer": "Tamang Sagot",
   "score": "Kawastuhan: {score}%",
+  "@score": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
   "perfect": "Perpekto!",
   "good": "Mahusay",
   "tryAgain": "Subukan muli",
@@ -78,7 +367,6 @@
   "helpTabModes": "Mga Mode",
   "helpTabJson": "JSON Format",
   "helpTabTour": "Pasyal",
-  "mode2Title": "Balik-aral",
   "helpMode1Desc": "Kilalanin ang boses, isalin at pakinggan ang resulta.",
   "helpMode1Details": "• Boses: I-tap ang mikropono para magsimula/huminto\n• Teksto: Mag-type nang direkta para isalin\n• Auto-Search: Nakikita ang mga katulad na pangungusap\n• Isalin: Pindutan para sa agarang pagsasalin\n• Makinig: Speaker icon para sa TTS\n• I-save: Nagdaragdag sa kasaysayan\n• I-clear: I-reset ang lahat",
   "helpMode2Desc": "Balik-aralan ang mga na-save na pangungusap.",
@@ -90,6 +378,8 @@
   "startTutorial": "Simulan ang Pasyal",
   "tutorialMicTitle": "Voice Input",
   "tutorialMicDesc": "I-tap ang mic button para sa voice input.",
+  "tutorialTabDesc": "Maaari mong piliin ang nais na mode ng pag-aaral dito.",
+  "tutorialTapToContinue": "I-tap upang magpatuloy",
   "tutorialTransTitle": "Isalin",
   "tutorialTransDesc": "I-tap dito para isalin ang iyong teksto.",
   "tutorialSaveTitle": "I-save",
@@ -106,9 +396,6 @@
   "tutorialM3StartDesc": "I-tap ang play para magsimula.",
   "startWarning": "Babala",
   "noVoiceDetected": "Walang boses na nakita",
-  "tutorialTabDesc": "Maaari mong piliin ang nais na mode ng pag-aaral dito.",
-  "tutorialTapToContinue": "I-tap upang magpatuloy",
-  "materialInfo": "Impormasyon ng materyal",
   "tooltipSearch": "Maghanap",
   "tooltipStudyReview": "Pag-aaral+Pagsusuri",
   "tooltipSpeaking": "Pagsasalita",
@@ -119,301 +406,10 @@
   "tutorialM2ImportDesc": "Mag-import ng JSON file mula sa folder ng device.",
   "tutorialLangSettingsTitle": "Language Settings",
   "tutorialLangSettingsDesc": "Configure source and target languages for translation.",
+  "copy": "Copy",
+  "copiedToClipboard": "Copied to clipboard!",
   "tutorialContextTitle": "Tag ng Konteksto",
   "tutorialContextDesc": "Magdagdag ng konteksto (hal. Umaga) upang makilala ang magkatulad na mga pangungusap.",
-  "@flip": {
-    "description": "Show translation button"
-  },
-  "@recognized": {
-    "description": "STT complete status"
-  },
-  "@noTextToPlay": {
-    "description": "TTS error - no text"
-  },
-  "@mode2Title": {
-    "description": "Mode 2 title for help dialog"
-  },
-  "@score": {
-    "placeholders": {
-      "score": {
-        "type": "String"
-      }
-    }
-  },
-  "@hide": {
-    "description": "Hide translation button"
-  },
-  "@importFailed": {
-    "description": "Import error title"
-  },
-  "@recognitionFailed": {
-    "description": "STT error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@translating": {
-    "description": "Translation in progress"
-  },
-  "@subject": {
-    "description": "Subject label"
-  },
-  "@listening": {
-    "description": "STT listening status"
-  },
-  "@delete": {
-    "description": "Delete button"
-  },
-  "@materialInfo": {
-    "description": "Title for material metadata section"
-  },
-  "@cancel": {
-    "description": "Cancel button"
-  },
-  "@importSkipped": {
-    "description": "Skipped import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "@useExistingText": {
-    "description": "Use existing text button"
-  },
-  "@importJsonFile": {
-    "description": "Import JSON button"
-  },
-  "@saveData": {
-    "description": "Save translation button"
-  },
-  "@importTotal": {
-    "description": "Total import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@importComplete": {
-    "description": "Import success title"
-  },
-  "@source": {
-    "description": "Source label"
-  },
-  "@deleteFailed": {
-    "description": "Delete error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@createNew": {
-    "description": "Create new entry button"
-  },
-  "@recordDeleted": {
-    "description": "Delete success message"
-  },
-  "@markAsStudied": {
-    "description": "Mark study button text"
-  },
-  "@translationComplete": {
-    "description": "Translation done status"
-  },
-  "@importFile": {
-    "description": "Imported file name",
-    "placeholders": {
-      "fileName": {
-        "type": "String"
-      }
-    }
-  },
-  "@importing": {
-    "description": "Import in progress"
-  },
-  "copiedToClipboard": "Copied to clipboard!",
-  "copy": "Copy",
-  "@appTitle": {
-    "description": "Application title"
-  },
-  "@errors": {
-    "description": "Error section label"
-  },
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "@noTranslationToSave": {
-    "description": "Save error - no data"
-  },
-  "@studyRecords": {
-    "description": "Study records title with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@selectStudyMaterial": {
-    "description": "Study material selector label"
-  },
-  "@deleteRecord": {
-    "description": "Delete record dialog title"
-  },
-  "@enterTextToTranslate": {
-    "description": "Empty input warning"
-  },
-  "@saveFailed": {
-    "description": "Save error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@confirm": {
-    "description": "Confirm/OK button"
-  },
-  "@confirmDelete": {
-    "description": "Delete confirmation message"
-  },
-  "@checking": {
-    "description": "Checking for duplicates"
-  },
-  "@playbackFailed": {
-    "description": "TTS error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@importJsonFilePrompt": {
-    "description": "Empty state prompt"
-  },
-  "@saveTranslationsFromSearch": {
-    "description": "Instruction to save data"
-  },
-  "@saved": {
-    "description": "Data saved status"
-  },
-  "@importAdded": {
-    "description": "Successfully imported count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@playing": {
-    "description": "TTS playing status"
-  },
-  "@targetLanguageFilter": {
-    "description": "Language filter label"
-  },
-  "@translate": {
-    "description": "Translate button"
-  },
-  "@noRecords": {
-    "description": "Empty state message"
-  },
-  "@targetLanguage": {
-    "description": "Target language label"
-  },
-  "@importErrorMessage": {
-    "description": "Import error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@tabStudyMaterial": {
-    "description": "Study material tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@intervalSeconds": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
-  "@listen": {
-    "description": "Listen/TTS button"
-  },
-  "@refresh": {
-    "description": "Refresh button"
-  },
-  "@selectMaterialPrompt": {
-    "description": "Selection prompt"
-  },
-  "@translationLoaded": {
-    "description": "Existing translation loaded"
-  },
-  "@error": {
-    "description": "Error dialog title"
-  },
-  "@reviewCount": {
-    "description": "Review count display",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@translationFailed": {
-    "description": "Translation error",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@search": {
-    "description": "Search mode label"
-  },
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "@progress": {
-    "description": "Progress indicator",
-    "placeholders": {
-      "current": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
-  "@saving": {
-    "description": "Save in progress"
-  },
-  "@file": {
-    "description": "File label"
-  },
-  "@tabReview": {
-    "description": "Review tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode",
-  "tutorialM3WordsTitle": "Practice Words",
-  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "thinkingTimeInterval": "Thinking Time Interval",
   "thinkingTimeDesc": "Time to think before the answer is revealed.",
   "autoPlay": "Auto-Play",
@@ -424,6 +420,7 @@
   "wordDefenseDesc": "Defend your base by speaking words correctly before enemies reach you.",
   "dialogueQuestTitle": "Dialogue Quest",
   "dialogueQuestDesc": "Roleplay in scenarios. Choose the right response and speak it aloud.",
+  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "labelType": "Type:",
   "labelWord": "Word",
   "labelSentence": "Sentence",
@@ -456,21 +453,28 @@
   "getMaterials": "Get Materials",
   "swapLanguages": "Swap Languages",
   "next": "Next",
-  "micButtonTooltip": "Start Listening",
-  "enterTextHint": "Enter text to translate",
   "wordModeLabel": "Word Mode",
   "accuracy": "Accuracy",
   "basicDefault": "Basic (Default)",
   "basic": "Basic",
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "tutorialM3WordsTitle": "Practice Words",
+  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
+  "enterTextHint": "Enter text to translate",
+  "micButtonTooltip": "Start Listening",
   "menuHelp": "Help",
+  "menuWebDownload": "Get Material from Web",
+  "menuDeviceImport": "Import from Device",
   "menuSettings": "Settings",
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
   "targetLanguageLabel": "Target Language",
-  "menuWebDownload": "Get Material from Web",
-  "menuDeviceImport": "Import from Device",
   "mode3Start": "Start",
   "mode3Stop": "Stop",
   "mode3Next": "Next",
-  "mode3TryAgain": "Try Again"
+  "mode3TryAgain": "Try Again",
+  "tutorialSwapDesc": "Pinapalitan ko ang aking wika ng wikang aking pinag-aaralan.",
+  "recognizedText": "Recognized Text:",
+  "tutorialM3ResetTitle": "Reset History",
+  "tutorialM3ResetDesc": "Clear your progress and accuracy scores to start fresh."
 }

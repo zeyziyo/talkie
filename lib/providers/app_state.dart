@@ -943,19 +943,15 @@ class AppState extends ChangeNotifier {
         // Auto-select the newly imported material ONLY if it matches current languages
         final materialId = result['material_id'] as int?;
         if (materialId != null) {
-          final newMat = _studyMaterials.firstWhere(
-            (m) => m['id'] == materialId,
-            orElse: () => {},
-          );
+          // Auto-select if it's visible in the current dropdown (i.e., passes filter)
+          bool isVisible = filteredStudyMaterials.any((m) => m['id'] == materialId);
           
-          if (newMat.isNotEmpty) {
-            final mSource = newMat['source_language'] as String;
-            final mTarget = newMat['target_language'] as String;
-            
-            if ((mSource == _sourceLang && mTarget == _targetLang) || 
-                (mSource == 'auto' && mTarget == 'auto')) {
-              await selectMaterial(materialId);
-            }
+          if (isVisible) {
+             await selectMaterial(materialId);
+          } else {
+            // Optional: If not visible, we could force-switch languages, 
+            // but for now, just respecting the filter is safer to avoid confusing the user.
+            debugPrint('[AppState] Imported material $materialId hidden by filter (Lang mismatch)');
           }
         }
       }
@@ -1185,10 +1181,11 @@ class AppState extends ChangeNotifier {
     
     // Normalize both for comparison
     String normalize(String input) {
+      // FIX: [^\w\s] destroys Korean. Use simple punctuation removal.
       return input
           .toLowerCase()
-          .replaceAll(RegExp(r'[^\w\s]'), '') // Remove punctuation
-          .replaceAll(RegExp(r'\s+'), ' ')    // Collapse spaces
+          .replaceAll(RegExp(r'[.,?!:;"\-]'), '') // Remove common punctuation only
+          .replaceAll(RegExp(r'\s+'), ' ')        // Collapse spaces
           .trim();
     }
 
@@ -1287,7 +1284,8 @@ class AppState extends ChangeNotifier {
       // Helper to reuse logic
       if (selectedMaterialId == null) return [];
       
-      final material = studyMaterials.firstWhere((m) => m['id'] == selectedMaterialId);
+      // final material = studyMaterials.firstWhere((m) => m['id'] == selectedMaterialId);
+
       final records = _materialRecords;
       
       

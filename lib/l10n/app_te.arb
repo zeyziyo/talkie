@@ -1,74 +1,363 @@
 {
   "@@locale": "te",
   "appTitle": "Talkie",
+  "@appTitle": {
+    "description": "Application title"
+  },
   "tabReview": "సమీక్ష ({count})",
+  "@tabReview": {
+    "description": "Review tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabStudyMaterial": "మెటీరియల్ ({count})",
+  "@tabStudyMaterial": {
+    "description": "Study material tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mode2Title": "సమీక్ష",
+  "@mode2Title": {
+    "description": "Mode 2 title for help dialog"
+  },
   "search": "శోధించు",
+  "@search": {
+    "description": "Search mode label"
+  },
   "translate": "అనువాదం",
+  "@translate": {
+    "description": "Translate button"
+  },
   "listen": "వినండి",
+  "@listen": {
+    "description": "Listen/TTS button"
+  },
   "saveData": "సేవ్ చేయి",
+  "@saveData": {
+    "description": "Save translation button"
+  },
   "saved": "సేవ్ చేయబడింది",
+  "@saved": {
+    "description": "Data saved status"
+  },
   "delete": "తొలగించు",
+  "@delete": {
+    "description": "Delete button"
+  },
+  "materialInfo": "విషయ సమాచారం",
+  "@materialInfo": {
+    "description": "Title for material metadata section"
+  },
   "cancel": "రద్దు చేయి",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "confirm": "సరే",
+  "@confirm": {
+    "description": "Confirm/OK button"
+  },
   "refresh": "రీఫ్రెష్",
+  "@refresh": {
+    "description": "Refresh button"
+  },
   "studyRecords": "రికార్డులు ({count})",
+  "@studyRecords": {
+    "description": "Study records title with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "targetLanguageFilter": "లక్ష్య భాష ఫిల్టర్:",
+  "@targetLanguageFilter": {
+    "description": "Language filter label"
+  },
   "noRecords": "ఎంచుకున్న భాషకు రికార్డులు లేవు",
+  "@noRecords": {
+    "description": "Empty state message"
+  },
   "saveTranslationsFromSearch": "శోధన మోడ్ నుండి అనువాదాలను సేవ్ చేయండి",
+  "@saveTranslationsFromSearch": {
+    "description": "Instruction to save data"
+  },
   "flip": "తిప్పు",
+  "@flip": {
+    "description": "Show translation button"
+  },
   "hide": "దాచు",
+  "@hide": {
+    "description": "Hide translation button"
+  },
   "deleteRecord": "రికార్డును తొలగించు",
+  "@deleteRecord": {
+    "description": "Delete record dialog title"
+  },
   "confirmDelete": "మీరు ఖచ్చితంగా ఈ రికార్డును తొలగించాలనుకుంటున్నారా?",
+  "@confirmDelete": {
+    "description": "Delete confirmation message"
+  },
   "recordDeleted": "రికార్డు విజయవంతంగా తొలగించబడింది",
+  "@recordDeleted": {
+    "description": "Delete success message"
+  },
   "deleteFailed": "తొలగింపు విఫలమైంది: {error}",
+  "@deleteFailed": {
+    "description": "Delete error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "importJsonFile": "JSON దిగుమతి",
+  "@importJsonFile": {
+    "description": "Import JSON button"
+  },
   "importing": "దిగుమతి అవుతోంది...",
+  "@importing": {
+    "description": "Import in progress"
+  },
   "importComplete": "దిగుమతి పూర్తయింది",
+  "@importComplete": {
+    "description": "Import success title"
+  },
   "importFailed": "దిగుమతి విఫలమైంది",
+  "@importFailed": {
+    "description": "Import error title"
+  },
   "importFile": "ఫైల్: {fileName}",
+  "@importFile": {
+    "description": "Imported file name",
+    "placeholders": {
+      "fileName": {
+        "type": "String"
+      }
+    }
+  },
   "importTotal": "మొత్తం: {count}",
+  "@importTotal": {
+    "description": "Total import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importAdded": "జోడించబడింది: {count}",
+  "@importAdded": {
+    "description": "Successfully imported count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importSkipped": "దాటవేయబడింది: {count}",
+  "@importSkipped": {
+    "description": "Skipped import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "errors": "లోపాలు:",
+  "@errors": {
+    "description": "Error section label"
+  },
   "error": "లోపం",
+  "@error": {
+    "description": "Error dialog title"
+  },
   "importErrorMessage": "ఫైల్‌ని దిగుమతి చేయడంలో విఫలమైంది:\\n{error}",
+  "@importErrorMessage": {
+    "description": "Import error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "selectStudyMaterial": "మెటీరియల్ ఎంచుకోండి",
+  "@selectStudyMaterial": {
+    "description": "Study material selector label"
+  },
   "subject": "విషయం:",
+  "@subject": {
+    "description": "Subject label"
+  },
   "source": "మూలం:",
+  "@source": {
+    "description": "Source label"
+  },
   "file": "ఫైల్:",
+  "@file": {
+    "description": "File label"
+  },
   "progress": "పురోగతి: {current} / {total}",
+  "@progress": {
+    "description": "Progress indicator",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "importJsonFilePrompt": "దయచేసి JSON ఫైల్‌ని దిగుమతి చేయండి",
+  "@importJsonFilePrompt": {
+    "description": "Empty state prompt"
+  },
   "selectMaterialPrompt": "దయచేసి స్టడీ మెటీరియల్‌ని ఎంచుకోండి",
+  "@selectMaterialPrompt": {
+    "description": "Selection prompt"
+  },
   "studyComplete": "చదివాను",
+  "@studyComplete": {
+    "description": "Study complete button text"
+  },
   "markAsStudied": "చదివినట్లుగా గుర్తించు",
+  "@markAsStudied": {
+    "description": "Mark study button text"
+  },
   "listening": "వింటున్నాను...",
+  "@listening": {
+    "description": "STT listening status"
+  },
   "recognized": "గుర్తింపు పూర్తయింది",
+  "@recognized": {
+    "description": "STT complete status"
+  },
   "recognitionFailed": "వాయిస్ గుర్తింపు విఫలమైంది: {error}",
+  "@recognitionFailed": {
+    "description": "STT error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "checking": "తనిఖీ చేస్తోంది...",
+  "@checking": {
+    "description": "Checking for duplicates"
+  },
   "translating": "అనువదిస్తోంది...",
+  "@translating": {
+    "description": "Translation in progress"
+  },
   "translationComplete": "అనువాదం పూర్తయింది (సేవ్ చేయాలి)",
+  "@translationComplete": {
+    "description": "Translation done status"
+  },
   "translationLoaded": "సేవ్ చేసిన అనువాదం లోడ్ చేయబడింది",
+  "@translationLoaded": {
+    "description": "Existing translation loaded"
+  },
   "translationFailed": "అనువాదం విఫలమైంది: {error}",
+  "@translationFailed": {
+    "description": "Translation error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "enterTextToTranslate": "అనువదించడానికి వచనాన్ని నమోదు చేయండి",
+  "@enterTextToTranslate": {
+    "description": "Empty input warning"
+  },
   "saving": "సేవ్ అవుతోంది...",
+  "@saving": {
+    "description": "Save in progress"
+  },
   "noTranslationToSave": "సేవ్ చేయడానికి అనువాదం లేదు",
+  "@noTranslationToSave": {
+    "description": "Save error - no data"
+  },
   "saveFailed": "సేవ్ చేయడం విఫలమైంది: {error}",
+  "@saveFailed": {
+    "description": "Save error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "playing": "ప్లే అవుతోంది...",
+  "@playing": {
+    "description": "TTS playing status"
+  },
   "noTextToPlay": "ప్లే చేయడానికి వచనం లేదు",
+  "@noTextToPlay": {
+    "description": "TTS error - no text"
+  },
   "playbackFailed": "ప్లేబ్యాక్ విఫలమైంది: {error}",
+  "@playbackFailed": {
+    "description": "TTS error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "sourceLanguage": "మూల భాష",
+  "@sourceLanguage": {
+    "description": "Source language label"
+  },
   "targetLanguage": "లక్ష్య భాష",
+  "@targetLanguage": {
+    "description": "Target language label"
+  },
   "similarTextFound": "అలాంటి వచనం కనుగొనబడింది",
+  "@similarTextFound": {
+    "description": "Duplicate detection title"
+  },
   "useExistingText": "ఉన్నది వాడుకో",
+  "@useExistingText": {
+    "description": "Use existing text button"
+  },
   "createNew": "కొత్తది సృష్టించు",
+  "@createNew": {
+    "description": "Create new entry button"
+  },
   "reviewCount": "{count} సార్లు సమీక్షించబడింది",
+  "@reviewCount": {
+    "description": "Review count display",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabSpeaking": "మాట్లాడటం",
   "speakingPractice": "మాట్లాడే సాధన",
   "intervalSeconds": "విరామం: {seconds}సెకన్లు",
+  "@intervalSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "yourPronunciation": "మీ ఉచ్చారణ",
   "correctAnswer": "సరైన సమాధానం",
   "score": "ఖచ్చితత్వం: {score}%",
+  "@score": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
   "perfect": "పర్ఫెక్ట్!",
   "good": "బాగుంది",
   "tryAgain": "మళ్ళీ ప్రయత్నించు",
@@ -78,7 +367,6 @@
   "helpTabModes": "మోడ్‌లు",
   "helpTabJson": "JSON ఫార్మాట్",
   "helpTabTour": "టూర్",
-  "mode2Title": "సమీక్ష",
   "helpMode1Desc": "వాయిస్‌ని గుర్తించండి, అనువదించండి మరియు ఫలితాన్ని వినండి.",
   "helpMode1Details": "• వాయిస్: ప్రారంభించడానికి/ఆపడానికి మైక్‌ని నొక్కండి\n• వచనం: అనువదించడానికి నేరుగా టైప్ చేయండి\n• ఆటో-సెర్చ్: ఇలాంటి వాక్యాలను గుర్తిస్తుంది\n• అనువాదం: తక్షణ అనువాద బటన్\n• వినండి: TTS కోసం స్పీకర్ ఐకాన్\n• సేవ్: చరిత్రకు జోడిస్తుంది\n• క్లియర్: అన్నీ రీసెట్ చేయండి",
   "helpMode2Desc": "దాచిన అనువాదంతో సేవ్ చేసిన వాక్యాలను సమీక్షించండి.",
@@ -90,6 +378,8 @@
   "startTutorial": "టూర్ ప్రారంభించు",
   "tutorialMicTitle": "వాయిస్ ఇన్‌పుట్",
   "tutorialMicDesc": "వాయిస్ ఇన్‌పుట్ కోసం మైక్ బటన్‌ను నొక్కండి.",
+  "tutorialTabDesc": "మీరు ఇక్కడ మీ కావలసిన అభ్యాస మోడ్‌ను ఎంచుకోవచ్చు.",
+  "tutorialTapToContinue": "కొనసాగించడానికి నొక్కండి",
   "tutorialTransTitle": "అనువాదం",
   "tutorialTransDesc": "మీ వచనాన్ని అనువదించడానికి ఇక్కడ నొక్కండి.",
   "tutorialSaveTitle": "సేవ్",
@@ -106,9 +396,6 @@
   "tutorialM3StartDesc": "ప్రారంభించడానికి ప్లే నొక్కండి.",
   "startWarning": "హెచ్చరిక",
   "noVoiceDetected": "వాయిస్ గుర్తించబడలేదు",
-  "tutorialTabDesc": "మీరు ఇక్కడ మీ కావలసిన అభ్యాస మోడ్‌ను ఎంచుకోవచ్చు.",
-  "tutorialTapToContinue": "కొనసాగించడానికి నొక్కండి",
-  "materialInfo": "విషయ సమాచారం",
   "tooltipSearch": "వెతకండి",
   "tooltipStudyReview": "అధ్యయనం+సమీక్ష",
   "tooltipSpeaking": "మాట్లాడటం",
@@ -119,301 +406,10 @@
   "tutorialM2ImportDesc": "పరికర ఫోల్డర్ నుండి JSON ఫైల్‌ను దిగుమతి చేయండి.",
   "tutorialLangSettingsTitle": "Language Settings",
   "tutorialLangSettingsDesc": "Configure source and target languages for translation.",
+  "copy": "Copy",
+  "copiedToClipboard": "Copied to clipboard!",
   "tutorialContextTitle": "సందర్భ ట్యాగ్",
   "tutorialContextDesc": "సారూప్య వాక్యాలను వేరు చేయడానికి సందర్భాన్ని (ఉదా. ఉదయం) జోడించండి.",
-  "@flip": {
-    "description": "Show translation button"
-  },
-  "@recognized": {
-    "description": "STT complete status"
-  },
-  "@noTextToPlay": {
-    "description": "TTS error - no text"
-  },
-  "@mode2Title": {
-    "description": "Mode 2 title for help dialog"
-  },
-  "@score": {
-    "placeholders": {
-      "score": {
-        "type": "String"
-      }
-    }
-  },
-  "@hide": {
-    "description": "Hide translation button"
-  },
-  "@importFailed": {
-    "description": "Import error title"
-  },
-  "@recognitionFailed": {
-    "description": "STT error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@translating": {
-    "description": "Translation in progress"
-  },
-  "@subject": {
-    "description": "Subject label"
-  },
-  "@listening": {
-    "description": "STT listening status"
-  },
-  "@delete": {
-    "description": "Delete button"
-  },
-  "@materialInfo": {
-    "description": "Title for material metadata section"
-  },
-  "@cancel": {
-    "description": "Cancel button"
-  },
-  "@importSkipped": {
-    "description": "Skipped import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "@useExistingText": {
-    "description": "Use existing text button"
-  },
-  "@importJsonFile": {
-    "description": "Import JSON button"
-  },
-  "@saveData": {
-    "description": "Save translation button"
-  },
-  "@importTotal": {
-    "description": "Total import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@importComplete": {
-    "description": "Import success title"
-  },
-  "@source": {
-    "description": "Source label"
-  },
-  "@deleteFailed": {
-    "description": "Delete error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@createNew": {
-    "description": "Create new entry button"
-  },
-  "@recordDeleted": {
-    "description": "Delete success message"
-  },
-  "@markAsStudied": {
-    "description": "Mark study button text"
-  },
-  "@translationComplete": {
-    "description": "Translation done status"
-  },
-  "@importFile": {
-    "description": "Imported file name",
-    "placeholders": {
-      "fileName": {
-        "type": "String"
-      }
-    }
-  },
-  "@importing": {
-    "description": "Import in progress"
-  },
-  "copiedToClipboard": "Copied to clipboard!",
-  "copy": "Copy",
-  "@appTitle": {
-    "description": "Application title"
-  },
-  "@errors": {
-    "description": "Error section label"
-  },
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "@noTranslationToSave": {
-    "description": "Save error - no data"
-  },
-  "@studyRecords": {
-    "description": "Study records title with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@selectStudyMaterial": {
-    "description": "Study material selector label"
-  },
-  "@deleteRecord": {
-    "description": "Delete record dialog title"
-  },
-  "@enterTextToTranslate": {
-    "description": "Empty input warning"
-  },
-  "@saveFailed": {
-    "description": "Save error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@confirm": {
-    "description": "Confirm/OK button"
-  },
-  "@confirmDelete": {
-    "description": "Delete confirmation message"
-  },
-  "@checking": {
-    "description": "Checking for duplicates"
-  },
-  "@playbackFailed": {
-    "description": "TTS error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@importJsonFilePrompt": {
-    "description": "Empty state prompt"
-  },
-  "@saveTranslationsFromSearch": {
-    "description": "Instruction to save data"
-  },
-  "@saved": {
-    "description": "Data saved status"
-  },
-  "@importAdded": {
-    "description": "Successfully imported count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@playing": {
-    "description": "TTS playing status"
-  },
-  "@targetLanguageFilter": {
-    "description": "Language filter label"
-  },
-  "@translate": {
-    "description": "Translate button"
-  },
-  "@noRecords": {
-    "description": "Empty state message"
-  },
-  "@targetLanguage": {
-    "description": "Target language label"
-  },
-  "@importErrorMessage": {
-    "description": "Import error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@tabStudyMaterial": {
-    "description": "Study material tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@intervalSeconds": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
-  "@listen": {
-    "description": "Listen/TTS button"
-  },
-  "@refresh": {
-    "description": "Refresh button"
-  },
-  "@selectMaterialPrompt": {
-    "description": "Selection prompt"
-  },
-  "@translationLoaded": {
-    "description": "Existing translation loaded"
-  },
-  "@error": {
-    "description": "Error dialog title"
-  },
-  "@reviewCount": {
-    "description": "Review count display",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@translationFailed": {
-    "description": "Translation error",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@search": {
-    "description": "Search mode label"
-  },
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "@progress": {
-    "description": "Progress indicator",
-    "placeholders": {
-      "current": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
-  "@saving": {
-    "description": "Save in progress"
-  },
-  "@file": {
-    "description": "File label"
-  },
-  "@tabReview": {
-    "description": "Review tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode",
-  "tutorialM3WordsTitle": "Practice Words",
-  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "thinkingTimeInterval": "Thinking Time Interval",
   "thinkingTimeDesc": "Time to think before the answer is revealed.",
   "autoPlay": "Auto-Play",
@@ -424,6 +420,7 @@
   "wordDefenseDesc": "Defend your base by speaking words correctly before enemies reach you.",
   "dialogueQuestTitle": "Dialogue Quest",
   "dialogueQuestDesc": "Roleplay in scenarios. Choose the right response and speak it aloud.",
+  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "labelType": "Type:",
   "labelWord": "Word",
   "labelSentence": "Sentence",
@@ -456,21 +453,28 @@
   "getMaterials": "Get Materials",
   "swapLanguages": "Swap Languages",
   "next": "Next",
-  "micButtonTooltip": "Start Listening",
-  "enterTextHint": "Enter text to translate",
   "wordModeLabel": "Word Mode",
   "accuracy": "Accuracy",
   "basicDefault": "Basic (Default)",
   "basic": "Basic",
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "tutorialM3WordsTitle": "Practice Words",
+  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
+  "enterTextHint": "Enter text to translate",
+  "micButtonTooltip": "Start Listening",
   "menuHelp": "Help",
+  "menuWebDownload": "Get Material from Web",
+  "menuDeviceImport": "Import from Device",
   "menuSettings": "Settings",
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
   "targetLanguageLabel": "Target Language",
-  "menuWebDownload": "Get Material from Web",
-  "menuDeviceImport": "Import from Device",
   "mode3Start": "Start",
   "mode3Stop": "Stop",
   "mode3Next": "Next",
-  "mode3TryAgain": "Try Again"
+  "mode3TryAgain": "Try Again",
+  "tutorialSwapDesc": "నేను నేర్చుకుంటున్న భాషతో నా భాషను మార్చుకుంటాను.",
+  "recognizedText": "Recognized Text:",
+  "tutorialM3ResetTitle": "Reset History",
+  "tutorialM3ResetDesc": "Clear your progress and accuracy scores to start fresh."
 }

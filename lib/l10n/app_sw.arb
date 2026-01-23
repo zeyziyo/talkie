@@ -1,74 +1,363 @@
 {
   "@@locale": "sw",
   "appTitle": "Talkie",
+  "@appTitle": {
+    "description": "Application title"
+  },
   "tabReview": "Mapitio ({count})",
+  "@tabReview": {
+    "description": "Review tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabStudyMaterial": "Nyenzo ({count})",
+  "@tabStudyMaterial": {
+    "description": "Study material tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mode2Title": "Mapitio",
+  "@mode2Title": {
+    "description": "Mode 2 title for help dialog"
+  },
   "search": "Tafuta",
+  "@search": {
+    "description": "Search mode label"
+  },
   "translate": "Tafsiri",
+  "@translate": {
+    "description": "Translate button"
+  },
   "listen": "Sikiliza",
+  "@listen": {
+    "description": "Listen/TTS button"
+  },
   "saveData": "Hifadhi",
+  "@saveData": {
+    "description": "Save translation button"
+  },
   "saved": "Imehifadhiwa",
+  "@saved": {
+    "description": "Data saved status"
+  },
   "delete": "Futa",
+  "@delete": {
+    "description": "Delete button"
+  },
+  "materialInfo": "Maelezo ya nyenzo",
+  "@materialInfo": {
+    "description": "Title for material metadata section"
+  },
   "cancel": "Ghairi",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "confirm": "Sawa",
+  "@confirm": {
+    "description": "Confirm/OK button"
+  },
   "refresh": "Onyesha upya",
+  "@refresh": {
+    "description": "Refresh button"
+  },
   "studyRecords": "Rekodi ({count})",
+  "@studyRecords": {
+    "description": "Study records title with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "targetLanguageFilter": "Kichujio cha Lugha:",
+  "@targetLanguageFilter": {
+    "description": "Language filter label"
+  },
   "noRecords": "Hakuna rekodi kwa lugha iliyochaguliwa",
+  "@noRecords": {
+    "description": "Empty state message"
+  },
   "saveTranslationsFromSearch": "Hifadhi tafsiri kutoka kwa hali ya utafutaji",
+  "@saveTranslationsFromSearch": {
+    "description": "Instruction to save data"
+  },
   "flip": "Geuza",
+  "@flip": {
+    "description": "Show translation button"
+  },
   "hide": "Ficha",
+  "@hide": {
+    "description": "Hide translation button"
+  },
   "deleteRecord": "Futa Rekodi",
+  "@deleteRecord": {
+    "description": "Delete record dialog title"
+  },
   "confirmDelete": "Una uhakika unataka kufuta rekodi hii?",
+  "@confirmDelete": {
+    "description": "Delete confirmation message"
+  },
   "recordDeleted": "Rekodi imefutwa",
+  "@recordDeleted": {
+    "description": "Delete success message"
+  },
   "deleteFailed": "Kufuta kumeshindikana: {error}",
+  "@deleteFailed": {
+    "description": "Delete error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "importJsonFile": "Leta JSON",
+  "@importJsonFile": {
+    "description": "Import JSON button"
+  },
   "importing": "inaleta...",
+  "@importing": {
+    "description": "Import in progress"
+  },
   "importComplete": "Kuleta Kukamilika",
+  "@importComplete": {
+    "description": "Import success title"
+  },
   "importFailed": "Kuleta Kumeshindikana",
+  "@importFailed": {
+    "description": "Import error title"
+  },
   "importFile": "Faili: {fileName}",
+  "@importFile": {
+    "description": "Imported file name",
+    "placeholders": {
+      "fileName": {
+        "type": "String"
+      }
+    }
+  },
   "importTotal": "Jumla: {count}",
+  "@importTotal": {
+    "description": "Total import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importAdded": "Imeongezwa: {count}",
+  "@importAdded": {
+    "description": "Successfully imported count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importSkipped": "Imerukwa: {count}",
+  "@importSkipped": {
+    "description": "Skipped import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "errors": "Makosa:",
+  "@errors": {
+    "description": "Error section label"
+  },
   "error": "Kosa",
+  "@error": {
+    "description": "Error dialog title"
+  },
   "importErrorMessage": "Imeshindwa kuleta faili:\\n{error}",
+  "@importErrorMessage": {
+    "description": "Import error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "selectStudyMaterial": "Chagua Nyenzo",
+  "@selectStudyMaterial": {
+    "description": "Study material selector label"
+  },
   "subject": "Somo:",
+  "@subject": {
+    "description": "Subject label"
+  },
   "source": "Chanzo:",
+  "@source": {
+    "description": "Source label"
+  },
   "file": "Faili:",
+  "@file": {
+    "description": "File label"
+  },
   "progress": "Maendeleo: {current} / {total}",
+  "@progress": {
+    "description": "Progress indicator",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "importJsonFilePrompt": "Tafadhali leta faili ya JSON",
+  "@importJsonFilePrompt": {
+    "description": "Empty state prompt"
+  },
   "selectMaterialPrompt": "Tafadhali chagua nyenzo za kusoma",
+  "@selectMaterialPrompt": {
+    "description": "Selection prompt"
+  },
   "studyComplete": "Imesomwa",
+  "@studyComplete": {
+    "description": "Study complete button text"
+  },
   "markAsStudied": "Weka alama imesomwa",
+  "@markAsStudied": {
+    "description": "Mark study button text"
+  },
   "listening": "Inasikiliza...",
+  "@listening": {
+    "description": "STT listening status"
+  },
   "recognized": "Utambuzi umekamilika",
+  "@recognized": {
+    "description": "STT complete status"
+  },
   "recognitionFailed": "Utambuzi wa sauti umeshindikana: {error}",
+  "@recognitionFailed": {
+    "description": "STT error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "checking": "Inaangalia...",
+  "@checking": {
+    "description": "Checking for duplicates"
+  },
   "translating": "Inatafsiri...",
+  "@translating": {
+    "description": "Translation in progress"
+  },
   "translationComplete": "Tafsiri imekamilika (inahitaji kuhifadhi)",
+  "@translationComplete": {
+    "description": "Translation done status"
+  },
   "translationLoaded": "Tafsiri iliyohifadhiwa imepakiwa",
+  "@translationLoaded": {
+    "description": "Existing translation loaded"
+  },
   "translationFailed": "Tafsiri imeshindikana: {error}",
+  "@translationFailed": {
+    "description": "Translation error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "enterTextToTranslate": "Weka maandishi ya kutafsiri",
+  "@enterTextToTranslate": {
+    "description": "Empty input warning"
+  },
   "saving": "Inahifadhi...",
+  "@saving": {
+    "description": "Save in progress"
+  },
   "noTranslationToSave": "Hakuna tafsiri ya kuhifadhi",
+  "@noTranslationToSave": {
+    "description": "Save error - no data"
+  },
   "saveFailed": "Kuhifadhi kumeshindikana: {error}",
+  "@saveFailed": {
+    "description": "Save error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "playing": "Inacheza...",
+  "@playing": {
+    "description": "TTS playing status"
+  },
   "noTextToPlay": "Hakuna maandishi ya kucheza",
+  "@noTextToPlay": {
+    "description": "TTS error - no text"
+  },
   "playbackFailed": "Kucheza kumeshindikana: {error}",
+  "@playbackFailed": {
+    "description": "TTS error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "sourceLanguage": "Lugha Chanzo",
+  "@sourceLanguage": {
+    "description": "Source language label"
+  },
   "targetLanguage": "Lugha Lengwa",
+  "@targetLanguage": {
+    "description": "Target language label"
+  },
   "similarTextFound": "Maandishi yanayofanana yamepatikana",
+  "@similarTextFound": {
+    "description": "Duplicate detection title"
+  },
   "useExistingText": "Tumia Iliyopo",
+  "@useExistingText": {
+    "description": "Use existing text button"
+  },
   "createNew": "Unda Mpya",
+  "@createNew": {
+    "description": "Create new entry button"
+  },
   "reviewCount": "Imepitiwa mara {count}",
+  "@reviewCount": {
+    "description": "Review count display",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabSpeaking": "Kuzungumza",
   "speakingPractice": "Mazoezi ya Kuzungumza",
   "intervalSeconds": "Muda: {seconds}s",
+  "@intervalSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "yourPronunciation": "Matamshi Yako",
   "correctAnswer": "Jibu Sahihi",
   "score": "Usahihi: {score}%",
+  "@score": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
   "perfect": "Nzuri sana!",
   "good": "Nzuri",
   "tryAgain": "Jaribu tena",
@@ -78,7 +367,6 @@
   "helpTabModes": "Njia",
   "helpTabJson": "Muundo wa JSON",
   "helpTabTour": "Ziara",
-  "mode2Title": "Mapitio",
   "helpMode1Desc": "Tambua sauti, tafsiri na sikiliza matokeo.",
   "helpMode1Details": "• Sauti: Gonga maikrofoni kuanza/kusimamisha\n• Maandishi: Andika moja kwa moja kwa kutafsiri\n• Utafutaji Kiotomatiki: Inagundua sentensi zinazofanana\n• Tafsiri: Kitufe cha tafsiri ya papo hapo\n• Sikiliza: Aikoni ya spika kwa TTS\n• Hifadhi: Inaongeza kwenye historia\n• Futa: Weka upya yote",
   "helpMode2Desc": "Pitia sentensi zilizohifadhiwa na tafsiri iliyofichwa.",
@@ -90,6 +378,8 @@
   "startTutorial": "Anza Ziara",
   "tutorialMicTitle": "Ingizo la Sauti",
   "tutorialMicDesc": "Gonga maikrofoni kwa ingizo la sauti.",
+  "tutorialTabDesc": "Unaweza kuchagua hali ya kujifunza unayotaka hapa.",
+  "tutorialTapToContinue": "Gusa ili kuendelea",
   "tutorialTransTitle": "Tafsiri",
   "tutorialTransDesc": "Gonga hapa kutafsiri maandishi yako.",
   "tutorialSaveTitle": "Hifadhi",
@@ -106,9 +396,6 @@
   "tutorialM3StartDesc": "Bofya cheza ili kuanza.",
   "startWarning": "Onyo",
   "noVoiceDetected": "Sauti haijagunduliwa",
-  "tutorialTabDesc": "Unaweza kuchagua hali ya kujifunza unayotaka hapa.",
-  "tutorialTapToContinue": "Gusa ili kuendelea",
-  "materialInfo": "Maelezo ya nyenzo",
   "tooltipSearch": "Tafuta",
   "tooltipStudyReview": "Kusoma+Kurudia",
   "tooltipSpeaking": "Kuzungumza",
@@ -119,301 +406,10 @@
   "tutorialM2ImportDesc": "Leta faili ya JSON kutoka kwenye folda ya kifaa.",
   "tutorialLangSettingsTitle": "Language Settings",
   "tutorialLangSettingsDesc": "Configure source and target languages for translation.",
+  "copy": "Copy",
+  "copiedToClipboard": "Copied to clipboard!",
   "tutorialContextTitle": "Lebo ya Muktadha",
   "tutorialContextDesc": "Ongeza muktadha (k.m. Asubuhi) ili kutofautisha sentensi zinazofanana.",
-  "@flip": {
-    "description": "Show translation button"
-  },
-  "@recognized": {
-    "description": "STT complete status"
-  },
-  "@noTextToPlay": {
-    "description": "TTS error - no text"
-  },
-  "@mode2Title": {
-    "description": "Mode 2 title for help dialog"
-  },
-  "@score": {
-    "placeholders": {
-      "score": {
-        "type": "String"
-      }
-    }
-  },
-  "@hide": {
-    "description": "Hide translation button"
-  },
-  "@importFailed": {
-    "description": "Import error title"
-  },
-  "@recognitionFailed": {
-    "description": "STT error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@translating": {
-    "description": "Translation in progress"
-  },
-  "@subject": {
-    "description": "Subject label"
-  },
-  "@listening": {
-    "description": "STT listening status"
-  },
-  "@delete": {
-    "description": "Delete button"
-  },
-  "@materialInfo": {
-    "description": "Title for material metadata section"
-  },
-  "@cancel": {
-    "description": "Cancel button"
-  },
-  "@importSkipped": {
-    "description": "Skipped import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "@useExistingText": {
-    "description": "Use existing text button"
-  },
-  "@importJsonFile": {
-    "description": "Import JSON button"
-  },
-  "@saveData": {
-    "description": "Save translation button"
-  },
-  "@importTotal": {
-    "description": "Total import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@importComplete": {
-    "description": "Import success title"
-  },
-  "@source": {
-    "description": "Source label"
-  },
-  "@deleteFailed": {
-    "description": "Delete error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@createNew": {
-    "description": "Create new entry button"
-  },
-  "@recordDeleted": {
-    "description": "Delete success message"
-  },
-  "@markAsStudied": {
-    "description": "Mark study button text"
-  },
-  "@translationComplete": {
-    "description": "Translation done status"
-  },
-  "@importFile": {
-    "description": "Imported file name",
-    "placeholders": {
-      "fileName": {
-        "type": "String"
-      }
-    }
-  },
-  "@importing": {
-    "description": "Import in progress"
-  },
-  "copiedToClipboard": "Copied to clipboard!",
-  "copy": "Copy",
-  "@appTitle": {
-    "description": "Application title"
-  },
-  "@errors": {
-    "description": "Error section label"
-  },
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "@noTranslationToSave": {
-    "description": "Save error - no data"
-  },
-  "@studyRecords": {
-    "description": "Study records title with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@selectStudyMaterial": {
-    "description": "Study material selector label"
-  },
-  "@deleteRecord": {
-    "description": "Delete record dialog title"
-  },
-  "@enterTextToTranslate": {
-    "description": "Empty input warning"
-  },
-  "@saveFailed": {
-    "description": "Save error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@confirm": {
-    "description": "Confirm/OK button"
-  },
-  "@confirmDelete": {
-    "description": "Delete confirmation message"
-  },
-  "@checking": {
-    "description": "Checking for duplicates"
-  },
-  "@playbackFailed": {
-    "description": "TTS error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@importJsonFilePrompt": {
-    "description": "Empty state prompt"
-  },
-  "@saveTranslationsFromSearch": {
-    "description": "Instruction to save data"
-  },
-  "@saved": {
-    "description": "Data saved status"
-  },
-  "@importAdded": {
-    "description": "Successfully imported count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@playing": {
-    "description": "TTS playing status"
-  },
-  "@targetLanguageFilter": {
-    "description": "Language filter label"
-  },
-  "@translate": {
-    "description": "Translate button"
-  },
-  "@noRecords": {
-    "description": "Empty state message"
-  },
-  "@targetLanguage": {
-    "description": "Target language label"
-  },
-  "@importErrorMessage": {
-    "description": "Import error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@tabStudyMaterial": {
-    "description": "Study material tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@intervalSeconds": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
-  "@listen": {
-    "description": "Listen/TTS button"
-  },
-  "@refresh": {
-    "description": "Refresh button"
-  },
-  "@selectMaterialPrompt": {
-    "description": "Selection prompt"
-  },
-  "@translationLoaded": {
-    "description": "Existing translation loaded"
-  },
-  "@error": {
-    "description": "Error dialog title"
-  },
-  "@reviewCount": {
-    "description": "Review count display",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@translationFailed": {
-    "description": "Translation error",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@search": {
-    "description": "Search mode label"
-  },
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "@progress": {
-    "description": "Progress indicator",
-    "placeholders": {
-      "current": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
-  "@saving": {
-    "description": "Save in progress"
-  },
-  "@file": {
-    "description": "File label"
-  },
-  "@tabReview": {
-    "description": "Review tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode",
-  "tutorialM3WordsTitle": "Practice Words",
-  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "thinkingTimeInterval": "Thinking Time Interval",
   "thinkingTimeDesc": "Time to think before the answer is revealed.",
   "autoPlay": "Auto-Play",
@@ -424,6 +420,7 @@
   "wordDefenseDesc": "Defend your base by speaking words correctly before enemies reach you.",
   "dialogueQuestTitle": "Dialogue Quest",
   "dialogueQuestDesc": "Roleplay in scenarios. Choose the right response and speak it aloud.",
+  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "labelType": "Type:",
   "labelWord": "Word",
   "labelSentence": "Sentence",
@@ -456,21 +453,28 @@
   "getMaterials": "Get Materials",
   "swapLanguages": "Swap Languages",
   "next": "Next",
-  "micButtonTooltip": "Start Listening",
-  "enterTextHint": "Enter text to translate",
   "wordModeLabel": "Word Mode",
   "accuracy": "Accuracy",
   "basicDefault": "Basic (Default)",
   "basic": "Basic",
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "tutorialM3WordsTitle": "Practice Words",
+  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
+  "enterTextHint": "Enter text to translate",
+  "micButtonTooltip": "Start Listening",
   "menuHelp": "Help",
+  "menuWebDownload": "Get Material from Web",
+  "menuDeviceImport": "Import from Device",
   "menuSettings": "Settings",
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
   "targetLanguageLabel": "Target Language",
-  "menuWebDownload": "Get Material from Web",
-  "menuDeviceImport": "Import from Device",
   "mode3Start": "Start",
   "mode3Stop": "Stop",
   "mode3Next": "Next",
-  "mode3TryAgain": "Try Again"
+  "mode3TryAgain": "Try Again",
+  "tutorialSwapDesc": "Ninabadilisha lugha yangu na lugha ninayojifunza.",
+  "recognizedText": "Recognized Text:",
+  "tutorialM3ResetTitle": "Reset History",
+  "tutorialM3ResetDesc": "Clear your progress and accuracy scores to start fresh."
 }

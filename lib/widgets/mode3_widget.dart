@@ -8,10 +8,12 @@ import '../l10n/app_localizations.dart';
 /// - 대기 시간 설정 기능 (버튼 방식)
 class Mode3Widget extends StatelessWidget {
   final Key? materialDropdownKey;
+  final Key? resetButtonKey;
 
   const Mode3Widget({
     super.key,
     this.materialDropdownKey,
+    this.resetButtonKey,
   });
 
   @override
@@ -342,11 +344,20 @@ class Mode3Widget extends StatelessWidget {
 
               
               // Reset Button
-              TextButton(
-                onPressed: () => appState.resetMode3Progress(),
-                child: Text(
-                  l10n.resetPracticeHistory,
-                  style: TextStyle(color: Colors.grey[600]),
+              // Reset Button (Styled)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 40),
+                child: OutlinedButton.icon(
+                  key: resetButtonKey, // Assigned Key for Tutorial
+                  onPressed: () => appState.resetMode3Progress(),
+                  icon: const Icon(Icons.refresh, size: 18),
+                  label: Text(l10n.resetPracticeHistory),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: Colors.deepOrangeAccent,
+                    side: const BorderSide(color: Colors.deepOrangeAccent),
+                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  ),
                 ),
               ),
               const SizedBox(height: 16),

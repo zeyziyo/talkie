@@ -614,4 +614,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get recognizedText => 'Recognized Text:';
+
+  @override
+  String get tutorialM3ResetTitle => 'Reset History';
+
+  @override
+  String get tutorialM3ResetDesc =>
+      'Clear your progress and accuracy scores to start fresh.';
 }

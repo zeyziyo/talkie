@@ -1,74 +1,363 @@
 {
   "@@locale": "cs",
   "appTitle": "Talkie",
+  "@appTitle": {
+    "description": "Application title"
+  },
   "tabReview": "Opakování ({count})",
+  "@tabReview": {
+    "description": "Review tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabStudyMaterial": "Materiály ({count})",
+  "@tabStudyMaterial": {
+    "description": "Study material tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mode2Title": "Opakování",
+  "@mode2Title": {
+    "description": "Mode 2 title for help dialog"
+  },
   "search": "Hledat",
+  "@search": {
+    "description": "Search mode label"
+  },
   "translate": "Přeložit",
+  "@translate": {
+    "description": "Translate button"
+  },
   "listen": "Poslouchat",
+  "@listen": {
+    "description": "Listen/TTS button"
+  },
   "saveData": "Uložit",
+  "@saveData": {
+    "description": "Save translation button"
+  },
   "saved": "Uloženo",
+  "@saved": {
+    "description": "Data saved status"
+  },
   "delete": "Smazat",
+  "@delete": {
+    "description": "Delete button"
+  },
+  "materialInfo": "Informace o materiálu",
+  "@materialInfo": {
+    "description": "Title for material metadata section"
+  },
   "cancel": "Zrušit",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "confirm": "OK",
+  "@confirm": {
+    "description": "Confirm/OK button"
+  },
   "refresh": "Obnovit",
+  "@refresh": {
+    "description": "Refresh button"
+  },
   "studyRecords": "Záznamy ({count})",
+  "@studyRecords": {
+    "description": "Study records title with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "targetLanguageFilter": "Filtr jazyka:",
+  "@targetLanguageFilter": {
+    "description": "Language filter label"
+  },
   "noRecords": "Žádné záznamy pro vybraný jazyk",
+  "@noRecords": {
+    "description": "Empty state message"
+  },
   "saveTranslationsFromSearch": "Uložte překlady z režimu vyhledávání",
+  "@saveTranslationsFromSearch": {
+    "description": "Instruction to save data"
+  },
   "flip": "Otočit",
+  "@flip": {
+    "description": "Show translation button"
+  },
   "hide": "Skrýt",
+  "@hide": {
+    "description": "Hide translation button"
+  },
   "deleteRecord": "Smazat záznam",
+  "@deleteRecord": {
+    "description": "Delete record dialog title"
+  },
   "confirmDelete": "Opravdu chcete smazat tento záznam?",
+  "@confirmDelete": {
+    "description": "Delete confirmation message"
+  },
   "recordDeleted": "Záznam úspěšně smazán",
+  "@recordDeleted": {
+    "description": "Delete success message"
+  },
   "deleteFailed": "Chyba mazání: {error}",
+  "@deleteFailed": {
+    "description": "Delete error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "importJsonFile": "Import JSON",
+  "@importJsonFile": {
+    "description": "Import JSON button"
+  },
   "importing": "Importování...",
+  "@importing": {
+    "description": "Import in progress"
+  },
   "importComplete": "Import dokončen",
+  "@importComplete": {
+    "description": "Import success title"
+  },
   "importFailed": "Import selhal",
+  "@importFailed": {
+    "description": "Import error title"
+  },
   "importFile": "Soubor: {fileName}",
+  "@importFile": {
+    "description": "Imported file name",
+    "placeholders": {
+      "fileName": {
+        "type": "String"
+      }
+    }
+  },
   "importTotal": "Celkem: {count}",
+  "@importTotal": {
+    "description": "Total import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importAdded": "Přidáno: {count}",
+  "@importAdded": {
+    "description": "Successfully imported count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importSkipped": "Přeskočeno: {count}",
+  "@importSkipped": {
+    "description": "Skipped import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "errors": "Chyby:",
+  "@errors": {
+    "description": "Error section label"
+  },
   "error": "Chyba",
+  "@error": {
+    "description": "Error dialog title"
+  },
   "importErrorMessage": "Nelze importovat soubor:\\n{error}",
+  "@importErrorMessage": {
+    "description": "Import error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "selectStudyMaterial": "Vybrat materiál",
+  "@selectStudyMaterial": {
+    "description": "Study material selector label"
+  },
   "subject": "Předmět:",
+  "@subject": {
+    "description": "Subject label"
+  },
   "source": "Zdroj:",
+  "@source": {
+    "description": "Source label"
+  },
   "file": "Soubor:",
+  "@file": {
+    "description": "File label"
+  },
   "progress": "Postup: {current} / {total}",
+  "@progress": {
+    "description": "Progress indicator",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "importJsonFilePrompt": "Prosím importujte soubor JSON",
+  "@importJsonFilePrompt": {
+    "description": "Empty state prompt"
+  },
   "selectMaterialPrompt": "Prosím vyberte studijní materiál",
+  "@selectMaterialPrompt": {
+    "description": "Selection prompt"
+  },
   "studyComplete": "Nastudováno",
+  "@studyComplete": {
+    "description": "Study complete button text"
+  },
   "markAsStudied": "Označit jako nastudované",
+  "@markAsStudied": {
+    "description": "Mark study button text"
+  },
   "listening": "Poslouchám...",
+  "@listening": {
+    "description": "STT listening status"
+  },
   "recognized": "Rozpoznávání dokončeno",
+  "@recognized": {
+    "description": "STT complete status"
+  },
   "recognitionFailed": "Rozpoznávání řeči selhalo: {error}",
+  "@recognitionFailed": {
+    "description": "STT error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "checking": "Kontrola...",
+  "@checking": {
+    "description": "Checking for duplicates"
+  },
   "translating": "Překládám...",
+  "@translating": {
+    "description": "Translation in progress"
+  },
   "translationComplete": "Překlad dokončen (nutné uložit)",
+  "@translationComplete": {
+    "description": "Translation done status"
+  },
   "translationLoaded": "Načten uložený překlad",
+  "@translationLoaded": {
+    "description": "Existing translation loaded"
+  },
   "translationFailed": "Překlad selhal: {error}",
+  "@translationFailed": {
+    "description": "Translation error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "enterTextToTranslate": "Zadejte text k překladu",
+  "@enterTextToTranslate": {
+    "description": "Empty input warning"
+  },
   "saving": "Ukládání...",
+  "@saving": {
+    "description": "Save in progress"
+  },
   "noTranslationToSave": "Žádný překlad k uložení",
+  "@noTranslationToSave": {
+    "description": "Save error - no data"
+  },
   "saveFailed": "Ukládání selhalo: {error}",
+  "@saveFailed": {
+    "description": "Save error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "playing": "Přehrávání...",
+  "@playing": {
+    "description": "TTS playing status"
+  },
   "noTextToPlay": "Žádný text k přehrání",
+  "@noTextToPlay": {
+    "description": "TTS error - no text"
+  },
   "playbackFailed": "Přehrávání selhalo: {error}",
+  "@playbackFailed": {
+    "description": "TTS error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "sourceLanguage": "Zdrojový jazyk",
+  "@sourceLanguage": {
+    "description": "Source language label"
+  },
   "targetLanguage": "Cílový jazyk",
+  "@targetLanguage": {
+    "description": "Target language label"
+  },
   "similarTextFound": "Nalezen podobný text",
+  "@similarTextFound": {
+    "description": "Duplicate detection title"
+  },
   "useExistingText": "Použít existující",
+  "@useExistingText": {
+    "description": "Use existing text button"
+  },
   "createNew": "Vytvořit nový",
+  "@createNew": {
+    "description": "Create new entry button"
+  },
   "reviewCount": "Opakováno {count} krát",
+  "@reviewCount": {
+    "description": "Review count display",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabSpeaking": "Mluvení",
   "speakingPractice": "Procvičování mluvení",
   "intervalSeconds": "Interval: {seconds}s",
+  "@intervalSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "yourPronunciation": "Vaše výslovnost",
   "correctAnswer": "Správná odpověď",
   "score": "Přesnost: {score}%",
+  "@score": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
   "perfect": "Perfektní!",
   "good": "Dobré",
   "tryAgain": "Zkusit znovu",
@@ -78,7 +367,6 @@
   "helpTabModes": "Režimy",
   "helpTabJson": "Formát JSON",
   "helpTabTour": "Prohlídka",
-  "mode2Title": "Opakování",
   "helpMode1Desc": "Rozpoznání hlasu, překlad a poslech výsledku.",
   "helpMode1Details": "• Hlas: Klepněte na mikrofon pro start/stop\n• Text: Pište přímo pro překlad\n• Auto-Hledání: Detekuje podobné věty\n• Překlad: Tlačítko pro okamžitý překlad\n• Poslech: Ikona reproduktoru pro TTS\n• Uložit: Přidá do historie\n• Vymazat: Resetovat vše",
   "helpMode2Desc": "Opakování uložených vět se skrytým překladem.",
@@ -90,6 +378,8 @@
   "startTutorial": "Spustit prohlídku",
   "tutorialMicTitle": "Hlasový vstup",
   "tutorialMicDesc": "Klepněte na mikrofon pro hlasový vstup.",
+  "tutorialTabDesc": "Zde můžete vybrat požadovaný režim učení.",
+  "tutorialTapToContinue": "Klepněte pro pokračování",
   "tutorialTransTitle": "Překlad",
   "tutorialTransDesc": "Klepněte zde pro překlad.",
   "tutorialSaveTitle": "Uložit",
@@ -106,9 +396,6 @@
   "tutorialM3StartDesc": "Klepněte na Play pro start.",
   "startWarning": "Varování",
   "noVoiceDetected": "Hlas nerozpoznán",
-  "tutorialTabDesc": "Zde můžete vybrat požadovaný režim učení.",
-  "tutorialTapToContinue": "Klepněte pro pokračování",
-  "materialInfo": "Informace o materiálu",
   "tooltipSearch": "Hledat",
   "tooltipStudyReview": "Studium+Opakování",
   "tooltipSpeaking": "Mluvení",
@@ -119,301 +406,10 @@
   "tutorialM2ImportDesc": "Importovat soubor JSON ze složky zařízení.",
   "tutorialLangSettingsTitle": "Language Settings",
   "tutorialLangSettingsDesc": "Configure source and target languages for translation.",
+  "copy": "Copy",
+  "copiedToClipboard": "Copied to clipboard!",
   "tutorialContextTitle": "Kontextový štítek",
   "tutorialContextDesc": "Přidejte kontext (např. Ráno) pro rozlišení podobných vět.",
-  "@flip": {
-    "description": "Show translation button"
-  },
-  "@recognized": {
-    "description": "STT complete status"
-  },
-  "@noTextToPlay": {
-    "description": "TTS error - no text"
-  },
-  "@mode2Title": {
-    "description": "Mode 2 title for help dialog"
-  },
-  "@score": {
-    "placeholders": {
-      "score": {
-        "type": "String"
-      }
-    }
-  },
-  "@hide": {
-    "description": "Hide translation button"
-  },
-  "@importFailed": {
-    "description": "Import error title"
-  },
-  "@recognitionFailed": {
-    "description": "STT error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@translating": {
-    "description": "Translation in progress"
-  },
-  "@subject": {
-    "description": "Subject label"
-  },
-  "@listening": {
-    "description": "STT listening status"
-  },
-  "@delete": {
-    "description": "Delete button"
-  },
-  "@materialInfo": {
-    "description": "Title for material metadata section"
-  },
-  "@cancel": {
-    "description": "Cancel button"
-  },
-  "@importSkipped": {
-    "description": "Skipped import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "@useExistingText": {
-    "description": "Use existing text button"
-  },
-  "@importJsonFile": {
-    "description": "Import JSON button"
-  },
-  "@saveData": {
-    "description": "Save translation button"
-  },
-  "@importTotal": {
-    "description": "Total import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@importComplete": {
-    "description": "Import success title"
-  },
-  "@source": {
-    "description": "Source label"
-  },
-  "@deleteFailed": {
-    "description": "Delete error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@createNew": {
-    "description": "Create new entry button"
-  },
-  "@recordDeleted": {
-    "description": "Delete success message"
-  },
-  "@markAsStudied": {
-    "description": "Mark study button text"
-  },
-  "@translationComplete": {
-    "description": "Translation done status"
-  },
-  "@importFile": {
-    "description": "Imported file name",
-    "placeholders": {
-      "fileName": {
-        "type": "String"
-      }
-    }
-  },
-  "@importing": {
-    "description": "Import in progress"
-  },
-  "copiedToClipboard": "Copied to clipboard!",
-  "copy": "Copy",
-  "@appTitle": {
-    "description": "Application title"
-  },
-  "@errors": {
-    "description": "Error section label"
-  },
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "@noTranslationToSave": {
-    "description": "Save error - no data"
-  },
-  "@studyRecords": {
-    "description": "Study records title with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@selectStudyMaterial": {
-    "description": "Study material selector label"
-  },
-  "@deleteRecord": {
-    "description": "Delete record dialog title"
-  },
-  "@enterTextToTranslate": {
-    "description": "Empty input warning"
-  },
-  "@saveFailed": {
-    "description": "Save error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@confirm": {
-    "description": "Confirm/OK button"
-  },
-  "@confirmDelete": {
-    "description": "Delete confirmation message"
-  },
-  "@checking": {
-    "description": "Checking for duplicates"
-  },
-  "@playbackFailed": {
-    "description": "TTS error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@importJsonFilePrompt": {
-    "description": "Empty state prompt"
-  },
-  "@saveTranslationsFromSearch": {
-    "description": "Instruction to save data"
-  },
-  "@saved": {
-    "description": "Data saved status"
-  },
-  "@importAdded": {
-    "description": "Successfully imported count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@playing": {
-    "description": "TTS playing status"
-  },
-  "@targetLanguageFilter": {
-    "description": "Language filter label"
-  },
-  "@translate": {
-    "description": "Translate button"
-  },
-  "@noRecords": {
-    "description": "Empty state message"
-  },
-  "@targetLanguage": {
-    "description": "Target language label"
-  },
-  "@importErrorMessage": {
-    "description": "Import error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@tabStudyMaterial": {
-    "description": "Study material tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@intervalSeconds": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
-  "@listen": {
-    "description": "Listen/TTS button"
-  },
-  "@refresh": {
-    "description": "Refresh button"
-  },
-  "@selectMaterialPrompt": {
-    "description": "Selection prompt"
-  },
-  "@translationLoaded": {
-    "description": "Existing translation loaded"
-  },
-  "@error": {
-    "description": "Error dialog title"
-  },
-  "@reviewCount": {
-    "description": "Review count display",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@translationFailed": {
-    "description": "Translation error",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@search": {
-    "description": "Search mode label"
-  },
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "@progress": {
-    "description": "Progress indicator",
-    "placeholders": {
-      "current": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
-  "@saving": {
-    "description": "Save in progress"
-  },
-  "@file": {
-    "description": "File label"
-  },
-  "@tabReview": {
-    "description": "Review tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode",
-  "tutorialM3WordsTitle": "Practice Words",
-  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "thinkingTimeInterval": "Thinking Time Interval",
   "thinkingTimeDesc": "Time to think before the answer is revealed.",
   "autoPlay": "Auto-Play",
@@ -424,6 +420,7 @@
   "wordDefenseDesc": "Defend your base by speaking words correctly before enemies reach you.",
   "dialogueQuestTitle": "Dialogue Quest",
   "dialogueQuestDesc": "Roleplay in scenarios. Choose the right response and speak it aloud.",
+  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "labelType": "Type:",
   "labelWord": "Word",
   "labelSentence": "Sentence",
@@ -456,21 +453,28 @@
   "getMaterials": "Get Materials",
   "swapLanguages": "Swap Languages",
   "next": "Next",
-  "micButtonTooltip": "Start Listening",
-  "enterTextHint": "Enter text to translate",
   "wordModeLabel": "Word Mode",
   "accuracy": "Accuracy",
   "basicDefault": "Basic (Default)",
   "basic": "Basic",
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "tutorialM3WordsTitle": "Practice Words",
+  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
+  "enterTextHint": "Enter text to translate",
+  "micButtonTooltip": "Start Listening",
   "menuHelp": "Help",
+  "menuWebDownload": "Get Material from Web",
+  "menuDeviceImport": "Import from Device",
   "menuSettings": "Settings",
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
   "targetLanguageLabel": "Target Language",
-  "menuWebDownload": "Get Material from Web",
-  "menuDeviceImport": "Import from Device",
   "mode3Start": "Start",
   "mode3Stop": "Stop",
   "mode3Next": "Next",
-  "mode3TryAgain": "Try Again"
+  "mode3TryAgain": "Try Again",
+  "tutorialSwapDesc": "Vyměňuji si jazyk s jazykem, který se učím.",
+  "recognizedText": "Recognized Text:",
+  "tutorialM3ResetTitle": "Reset History",
+  "tutorialM3ResetDesc": "Clear your progress and accuracy scores to start fresh."
 }

@@ -1,74 +1,363 @@
 {
   "@@locale": "he",
   "appTitle": "Talkie",
+  "@appTitle": {
+    "description": "Application title"
+  },
   "tabReview": "חזרה ({count})",
+  "@tabReview": {
+    "description": "Review tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabStudyMaterial": "חומר ({count})",
+  "@tabStudyMaterial": {
+    "description": "Study material tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mode2Title": "חזרה",
+  "@mode2Title": {
+    "description": "Mode 2 title for help dialog"
+  },
   "search": "חיפוש",
+  "@search": {
+    "description": "Search mode label"
+  },
   "translate": "תרגם",
+  "@translate": {
+    "description": "Translate button"
+  },
   "listen": "האזן",
+  "@listen": {
+    "description": "Listen/TTS button"
+  },
   "saveData": "שמור",
+  "@saveData": {
+    "description": "Save translation button"
+  },
   "saved": "נשמר",
+  "@saved": {
+    "description": "Data saved status"
+  },
   "delete": "מחק",
+  "@delete": {
+    "description": "Delete button"
+  },
+  "materialInfo": "מידע על חומר",
+  "@materialInfo": {
+    "description": "Title for material metadata section"
+  },
   "cancel": "ביטול",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "confirm": "אישור",
+  "@confirm": {
+    "description": "Confirm/OK button"
+  },
   "refresh": "רענן",
+  "@refresh": {
+    "description": "Refresh button"
+  },
   "studyRecords": "רשומות ({count})",
+  "@studyRecords": {
+    "description": "Study records title with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "targetLanguageFilter": "מסנן שפת יעד:",
+  "@targetLanguageFilter": {
+    "description": "Language filter label"
+  },
   "noRecords": "אין רשומות לשפה שנבחרה",
+  "@noRecords": {
+    "description": "Empty state message"
+  },
   "saveTranslationsFromSearch": "שמור תרגומים ממצב חיפוש",
+  "@saveTranslationsFromSearch": {
+    "description": "Instruction to save data"
+  },
   "flip": "הפוך",
+  "@flip": {
+    "description": "Show translation button"
+  },
   "hide": "הסתר",
+  "@hide": {
+    "description": "Hide translation button"
+  },
   "deleteRecord": "מחק רשומה",
+  "@deleteRecord": {
+    "description": "Delete record dialog title"
+  },
   "confirmDelete": "האם אתה בטוח שברצונך למחוק רשומה זו?",
+  "@confirmDelete": {
+    "description": "Delete confirmation message"
+  },
   "recordDeleted": "הרשומה נמחקה בהצלחה",
+  "@recordDeleted": {
+    "description": "Delete success message"
+  },
   "deleteFailed": "המחיקה נכשלה: {error}",
+  "@deleteFailed": {
+    "description": "Delete error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "importJsonFile": "ייבא JSON",
+  "@importJsonFile": {
+    "description": "Import JSON button"
+  },
   "importing": "מייבא...",
+  "@importing": {
+    "description": "Import in progress"
+  },
   "importComplete": "הייבוא הושלם",
+  "@importComplete": {
+    "description": "Import success title"
+  },
   "importFailed": "הייבוא נכשל",
+  "@importFailed": {
+    "description": "Import error title"
+  },
   "importFile": "קובץ: {fileName}",
+  "@importFile": {
+    "description": "Imported file name",
+    "placeholders": {
+      "fileName": {
+        "type": "String"
+      }
+    }
+  },
   "importTotal": "סה\"כ: {count}",
+  "@importTotal": {
+    "description": "Total import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importAdded": "נוסף: {count}",
+  "@importAdded": {
+    "description": "Successfully imported count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importSkipped": "דלג: {count}",
+  "@importSkipped": {
+    "description": "Skipped import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "errors": "שגיאות:",
+  "@errors": {
+    "description": "Error section label"
+  },
   "error": "שגיאה",
+  "@error": {
+    "description": "Error dialog title"
+  },
   "importErrorMessage": "ייבוא הקובץ נכשל:\\n{error}",
+  "@importErrorMessage": {
+    "description": "Import error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "selectStudyMaterial": "בחר חומר",
+  "@selectStudyMaterial": {
+    "description": "Study material selector label"
+  },
   "subject": "נושא:",
+  "@subject": {
+    "description": "Subject label"
+  },
   "source": "מקור:",
+  "@source": {
+    "description": "Source label"
+  },
   "file": "קובץ:",
+  "@file": {
+    "description": "File label"
+  },
   "progress": "התקדמות: {current} / {total}",
+  "@progress": {
+    "description": "Progress indicator",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "importJsonFilePrompt": "אנא ייבא קובץ JSON",
+  "@importJsonFilePrompt": {
+    "description": "Empty state prompt"
+  },
   "selectMaterialPrompt": "אנא בחר חומר לימוד",
+  "@selectMaterialPrompt": {
+    "description": "Selection prompt"
+  },
   "studyComplete": "נלמד",
+  "@studyComplete": {
+    "description": "Study complete button text"
+  },
   "markAsStudied": "סמן כנלמד",
+  "@markAsStudied": {
+    "description": "Mark study button text"
+  },
   "listening": "מקשיב...",
+  "@listening": {
+    "description": "STT listening status"
+  },
   "recognized": "הזיהוי הושלם",
+  "@recognized": {
+    "description": "STT complete status"
+  },
   "recognitionFailed": "זיהוי דיבור נכשל: {error}",
+  "@recognitionFailed": {
+    "description": "STT error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "checking": "בודק...",
+  "@checking": {
+    "description": "Checking for duplicates"
+  },
   "translating": "מתרגם...",
+  "@translating": {
+    "description": "Translation in progress"
+  },
   "translationComplete": "התרגום הושלם (נדרש שמירה)",
+  "@translationComplete": {
+    "description": "Translation done status"
+  },
   "translationLoaded": "תרגום שמור נטען",
+  "@translationLoaded": {
+    "description": "Existing translation loaded"
+  },
   "translationFailed": "התרגום נכשל: {error}",
+  "@translationFailed": {
+    "description": "Translation error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "enterTextToTranslate": "הכנס טקסט לתרגום",
+  "@enterTextToTranslate": {
+    "description": "Empty input warning"
+  },
   "saving": "שומר...",
+  "@saving": {
+    "description": "Save in progress"
+  },
   "noTranslationToSave": "אין תרגום לשמירה",
+  "@noTranslationToSave": {
+    "description": "Save error - no data"
+  },
   "saveFailed": "השמירה נכשלה: {error}",
+  "@saveFailed": {
+    "description": "Save error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "playing": "מנגן...",
+  "@playing": {
+    "description": "TTS playing status"
+  },
   "noTextToPlay": "אין טקסט לנגן",
+  "@noTextToPlay": {
+    "description": "TTS error - no text"
+  },
   "playbackFailed": "הניגון נכשל: {error}",
+  "@playbackFailed": {
+    "description": "TTS error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "sourceLanguage": "שפת מקור",
+  "@sourceLanguage": {
+    "description": "Source language label"
+  },
   "targetLanguage": "שפת יעד",
+  "@targetLanguage": {
+    "description": "Target language label"
+  },
   "similarTextFound": "נמצא טקסט דומה",
+  "@similarTextFound": {
+    "description": "Duplicate detection title"
+  },
   "useExistingText": "השתמש בקיים",
+  "@useExistingText": {
+    "description": "Use existing text button"
+  },
   "createNew": "צור חדש",
+  "@createNew": {
+    "description": "Create new entry button"
+  },
   "reviewCount": "נחזר {count} פעמים",
+  "@reviewCount": {
+    "description": "Review count display",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabSpeaking": "דיבור",
   "speakingPractice": "תרגול דיבור",
   "intervalSeconds": "מרווח: {seconds}ש'",
+  "@intervalSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "yourPronunciation": "ההגייה שלך",
   "correctAnswer": "תשובה נכונה",
   "score": "דיוק: {score}%",
+  "@score": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
   "perfect": "מושלם!",
   "good": "טוב",
   "tryAgain": "נסה שוב",
@@ -78,7 +367,6 @@
   "helpTabModes": "מצבים",
   "helpTabJson": "פורמט JSON",
   "helpTabTour": "סיור",
-  "mode2Title": "חזרה",
   "helpMode1Desc": "זיהוי קול, תרגום והאזנה לתוצאה.",
   "helpMode1Details": "• קול: הקש על המיקרופון להתחלה/עצירה\n• טקסט: הקלד ישירות לתרגום\n• חיפוש אוטומטי: מזהה משפטים דומים\n• תרגם: כפתור לתרגום מיידי\n• האזן: סמל רמקול ל-TTS\n• שמור: מוסיף להיסטוריה\n• נקה: אפס הכל",
   "helpMode2Desc": "חזור על משפטים שמורים עם הסתרת תרגום.",
@@ -90,6 +378,8 @@
   "startTutorial": "התחל סיור",
   "tutorialMicTitle": "קלט קולי",
   "tutorialMicDesc": "הקש על המיקרופון לקלט קולי.",
+  "tutorialTabDesc": "כאן תוכל לבחור את מצב הלמידה הרצוי.",
+  "tutorialTapToContinue": "הקש כדי להמשיך",
   "tutorialTransTitle": "תרגם",
   "tutorialTransDesc": "הקש כאן לתרגום.",
   "tutorialSaveTitle": "שמור",
@@ -106,9 +396,6 @@
   "tutorialM3StartDesc": "לחץ על נגן להתחלה.",
   "startWarning": "אזהרה",
   "noVoiceDetected": "לא זוהה קול",
-  "tutorialTabDesc": "כאן תוכל לבחור את מצב הלמידה הרצוי.",
-  "tutorialTapToContinue": "הקש כדי להמשיך",
-  "materialInfo": "מידע על חומר",
   "tooltipSearch": "חיפוש",
   "tooltipStudyReview": "לימוד+חזרה",
   "tooltipSpeaking": "דיבור",
@@ -119,301 +406,10 @@
   "tutorialM2ImportDesc": "ייבא קובץ JSON מתיקיית המכשיר.",
   "tutorialLangSettingsTitle": "Language Settings",
   "tutorialLangSettingsDesc": "Configure source and target languages for translation.",
+  "copy": "Copy",
+  "copiedToClipboard": "Copied to clipboard!",
   "tutorialContextTitle": "תגית הקשר",
   "tutorialContextDesc": "הוסף הקשר (למשל: בוקר) להבחנה בין משפטים דומים.",
-  "@flip": {
-    "description": "Show translation button"
-  },
-  "@recognized": {
-    "description": "STT complete status"
-  },
-  "@noTextToPlay": {
-    "description": "TTS error - no text"
-  },
-  "@mode2Title": {
-    "description": "Mode 2 title for help dialog"
-  },
-  "@score": {
-    "placeholders": {
-      "score": {
-        "type": "String"
-      }
-    }
-  },
-  "@hide": {
-    "description": "Hide translation button"
-  },
-  "@importFailed": {
-    "description": "Import error title"
-  },
-  "@recognitionFailed": {
-    "description": "STT error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@translating": {
-    "description": "Translation in progress"
-  },
-  "@subject": {
-    "description": "Subject label"
-  },
-  "@listening": {
-    "description": "STT listening status"
-  },
-  "@delete": {
-    "description": "Delete button"
-  },
-  "@materialInfo": {
-    "description": "Title for material metadata section"
-  },
-  "@cancel": {
-    "description": "Cancel button"
-  },
-  "@importSkipped": {
-    "description": "Skipped import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "@useExistingText": {
-    "description": "Use existing text button"
-  },
-  "@importJsonFile": {
-    "description": "Import JSON button"
-  },
-  "@saveData": {
-    "description": "Save translation button"
-  },
-  "@importTotal": {
-    "description": "Total import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@importComplete": {
-    "description": "Import success title"
-  },
-  "@source": {
-    "description": "Source label"
-  },
-  "@deleteFailed": {
-    "description": "Delete error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@createNew": {
-    "description": "Create new entry button"
-  },
-  "@recordDeleted": {
-    "description": "Delete success message"
-  },
-  "@markAsStudied": {
-    "description": "Mark study button text"
-  },
-  "@translationComplete": {
-    "description": "Translation done status"
-  },
-  "@importFile": {
-    "description": "Imported file name",
-    "placeholders": {
-      "fileName": {
-        "type": "String"
-      }
-    }
-  },
-  "@importing": {
-    "description": "Import in progress"
-  },
-  "copiedToClipboard": "Copied to clipboard!",
-  "copy": "Copy",
-  "@appTitle": {
-    "description": "Application title"
-  },
-  "@errors": {
-    "description": "Error section label"
-  },
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "@noTranslationToSave": {
-    "description": "Save error - no data"
-  },
-  "@studyRecords": {
-    "description": "Study records title with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@selectStudyMaterial": {
-    "description": "Study material selector label"
-  },
-  "@deleteRecord": {
-    "description": "Delete record dialog title"
-  },
-  "@enterTextToTranslate": {
-    "description": "Empty input warning"
-  },
-  "@saveFailed": {
-    "description": "Save error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@confirm": {
-    "description": "Confirm/OK button"
-  },
-  "@confirmDelete": {
-    "description": "Delete confirmation message"
-  },
-  "@checking": {
-    "description": "Checking for duplicates"
-  },
-  "@playbackFailed": {
-    "description": "TTS error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@importJsonFilePrompt": {
-    "description": "Empty state prompt"
-  },
-  "@saveTranslationsFromSearch": {
-    "description": "Instruction to save data"
-  },
-  "@saved": {
-    "description": "Data saved status"
-  },
-  "@importAdded": {
-    "description": "Successfully imported count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@playing": {
-    "description": "TTS playing status"
-  },
-  "@targetLanguageFilter": {
-    "description": "Language filter label"
-  },
-  "@translate": {
-    "description": "Translate button"
-  },
-  "@noRecords": {
-    "description": "Empty state message"
-  },
-  "@targetLanguage": {
-    "description": "Target language label"
-  },
-  "@importErrorMessage": {
-    "description": "Import error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@tabStudyMaterial": {
-    "description": "Study material tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@intervalSeconds": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
-  "@listen": {
-    "description": "Listen/TTS button"
-  },
-  "@refresh": {
-    "description": "Refresh button"
-  },
-  "@selectMaterialPrompt": {
-    "description": "Selection prompt"
-  },
-  "@translationLoaded": {
-    "description": "Existing translation loaded"
-  },
-  "@error": {
-    "description": "Error dialog title"
-  },
-  "@reviewCount": {
-    "description": "Review count display",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@translationFailed": {
-    "description": "Translation error",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@search": {
-    "description": "Search mode label"
-  },
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "@progress": {
-    "description": "Progress indicator",
-    "placeholders": {
-      "current": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
-  "@saving": {
-    "description": "Save in progress"
-  },
-  "@file": {
-    "description": "File label"
-  },
-  "@tabReview": {
-    "description": "Review tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode",
-  "tutorialM3WordsTitle": "Practice Words",
-  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "thinkingTimeInterval": "Thinking Time Interval",
   "thinkingTimeDesc": "Time to think before the answer is revealed.",
   "autoPlay": "Auto-Play",
@@ -424,6 +420,7 @@
   "wordDefenseDesc": "Defend your base by speaking words correctly before enemies reach you.",
   "dialogueQuestTitle": "Dialogue Quest",
   "dialogueQuestDesc": "Roleplay in scenarios. Choose the right response and speak it aloud.",
+  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "labelType": "Type:",
   "labelWord": "Word",
   "labelSentence": "Sentence",
@@ -456,21 +453,28 @@
   "getMaterials": "Get Materials",
   "swapLanguages": "Swap Languages",
   "next": "Next",
-  "micButtonTooltip": "Start Listening",
-  "enterTextHint": "Enter text to translate",
   "wordModeLabel": "Word Mode",
   "accuracy": "Accuracy",
   "basicDefault": "Basic (Default)",
   "basic": "Basic",
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "tutorialM3WordsTitle": "Practice Words",
+  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
+  "enterTextHint": "Enter text to translate",
+  "micButtonTooltip": "Start Listening",
   "menuHelp": "Help",
+  "menuWebDownload": "Get Material from Web",
+  "menuDeviceImport": "Import from Device",
   "menuSettings": "Settings",
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
   "targetLanguageLabel": "Target Language",
-  "menuWebDownload": "Get Material from Web",
-  "menuDeviceImport": "Import from Device",
   "mode3Start": "Start",
   "mode3Stop": "Stop",
   "mode3Next": "Next",
-  "mode3TryAgain": "Try Again"
+  "mode3TryAgain": "Try Again",
+  "tutorialSwapDesc": "אני מחליף את השפה שלי עם השפה שאני לומד.",
+  "recognizedText": "Recognized Text:",
+  "tutorialM3ResetTitle": "Reset History",
+  "tutorialM3ResetDesc": "Clear your progress and accuracy scores to start fresh."
 }

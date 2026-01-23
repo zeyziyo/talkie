@@ -33,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // Mode 3 Keys
   final GlobalKey _mode3DropdownKey = GlobalKey();
+  final GlobalKey _mode3ResetKey = GlobalKey(); // New: Reset Button Key
   
   // Tutorial Keys - Fixed
   final GlobalKey _globalToggleKey = GlobalKey(); // New Global Toggle Key
@@ -234,6 +235,17 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialM3SelectDesc,
         ContentAlign.bottom,
         radius: 12,
+      ));
+      
+      // Mode 3: Reset Button
+      targets.add(_buildTarget(
+        _mode3ResetKey, 
+        l10n.tutorialM3ResetTitle, 
+        l10n.tutorialM3ResetDesc,
+        ContentAlign.top,
+        radius: 12,
+        shape: ShapeLightFocus.RRect,
+        keepWidgetSize: true, 
       ));
     }
 
@@ -561,7 +573,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 } else if (appState.currentMode == 2) {
                   return Mode3Widget(
                     materialDropdownKey: _mode3DropdownKey,
-                  ); 
+                    resetButtonKey: _mode3ResetKey,
+                  );  
                 } 
                 return const SizedBox.shrink();
               },

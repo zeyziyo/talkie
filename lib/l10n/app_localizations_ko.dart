@@ -594,4 +594,10 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get recognizedText => '인식된 발음:';
+
+  @override
+  String get tutorialM3ResetTitle => '기록 초기화';
+
+  @override
+  String get tutorialM3ResetDesc => '진행 상황과 정확도 점수를 초기화하여 처음부터 다시 시작합니다.';
 }

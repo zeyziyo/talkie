@@ -1,74 +1,363 @@
 {
   "@@locale": "zh_CN",
   "appTitle": "Talkie",
+  "@appTitle": {
+    "description": "Application title"
+  },
   "tabReview": "复习 ({count})",
+  "@tabReview": {
+    "description": "Review tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabStudyMaterial": "学习资料 ({count})",
+  "@tabStudyMaterial": {
+    "description": "Study material tab label with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mode2Title": "复习",
+  "@mode2Title": {
+    "description": "Mode 2 title for help dialog"
+  },
   "search": "搜索",
+  "@search": {
+    "description": "Search mode label"
+  },
   "translate": "翻译",
+  "@translate": {
+    "description": "Translate button"
+  },
   "listen": "收听",
+  "@listen": {
+    "description": "Listen/TTS button"
+  },
   "saveData": "保存数据",
+  "@saveData": {
+    "description": "Save translation button"
+  },
   "saved": "已保存",
+  "@saved": {
+    "description": "Data saved status"
+  },
   "delete": "删除",
+  "@delete": {
+    "description": "Delete button"
+  },
+  "materialInfo": "资料信息",
+  "@materialInfo": {
+    "description": "Title for material metadata section"
+  },
   "cancel": "取消",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "confirm": "确认",
+  "@confirm": {
+    "description": "Confirm/OK button"
+  },
   "refresh": "刷新",
+  "@refresh": {
+    "description": "Refresh button"
+  },
   "studyRecords": "学习记录 ({count})",
+  "@studyRecords": {
+    "description": "Study records title with count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "targetLanguageFilter": "目标语言筛选:",
+  "@targetLanguageFilter": {
+    "description": "Language filter label"
+  },
   "noRecords": "所选语言没有学习记录",
+  "@noRecords": {
+    "description": "Empty state message"
+  },
   "saveTranslationsFromSearch": "在搜索模式下保存翻译",
+  "@saveTranslationsFromSearch": {
+    "description": "Instruction to save data"
+  },
   "flip": "翻转",
+  "@flip": {
+    "description": "Show translation button"
+  },
   "hide": "隐藏",
+  "@hide": {
+    "description": "Hide translation button"
+  },
   "deleteRecord": "删除记录",
+  "@deleteRecord": {
+    "description": "Delete record dialog title"
+  },
   "confirmDelete": "确定要删除这条学习记录吗？",
+  "@confirmDelete": {
+    "description": "Delete confirmation message"
+  },
   "recordDeleted": "记录已删除",
+  "@recordDeleted": {
+    "description": "Delete success message"
+  },
   "deleteFailed": "删除失败: {error}",
+  "@deleteFailed": {
+    "description": "Delete error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "importJsonFile": "导入 JSON 文件",
+  "@importJsonFile": {
+    "description": "Import JSON button"
+  },
   "importing": "正在导入...",
+  "@importing": {
+    "description": "Import in progress"
+  },
   "importComplete": "导入完成",
+  "@importComplete": {
+    "description": "Import success title"
+  },
   "importFailed": "导入失败",
+  "@importFailed": {
+    "description": "Import error title"
+  },
   "importFile": "文件: {fileName}",
+  "@importFile": {
+    "description": "Imported file name",
+    "placeholders": {
+      "fileName": {
+        "type": "String"
+      }
+    }
+  },
   "importTotal": "总计: {count} 项",
+  "@importTotal": {
+    "description": "Total import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importAdded": "添加: {count} 项",
+  "@importAdded": {
+    "description": "Successfully imported count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "importSkipped": "跳过: {count} 项",
+  "@importSkipped": {
+    "description": "Skipped import count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "errors": "错误:",
+  "@errors": {
+    "description": "Error section label"
+  },
   "error": "错误",
+  "@error": {
+    "description": "Error dialog title"
+  },
   "importErrorMessage": "文件导入失败:\\n{error}",
+  "@importErrorMessage": {
+    "description": "Import error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "selectStudyMaterial": "选择学习资料",
+  "@selectStudyMaterial": {
+    "description": "Study material selector label"
+  },
   "subject": "主题:",
+  "@subject": {
+    "description": "Subject label"
+  },
   "source": "来源:",
+  "@source": {
+    "description": "Source label"
+  },
   "file": "文件:",
+  "@file": {
+    "description": "File label"
+  },
   "progress": "进度: {current} / {total}",
+  "@progress": {
+    "description": "Progress indicator",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "importJsonFilePrompt": "请导入 JSON 文件",
+  "@importJsonFilePrompt": {
+    "description": "Empty state prompt"
+  },
   "selectMaterialPrompt": "请选择学习资料",
+  "@selectMaterialPrompt": {
+    "description": "Selection prompt"
+  },
   "studyComplete": "已学习",
+  "@studyComplete": {
+    "description": "Study complete button text"
+  },
   "markAsStudied": "标记为已学习",
+  "@markAsStudied": {
+    "description": "Mark study button text"
+  },
   "listening": "正在聆听...",
+  "@listening": {
+    "description": "STT listening status"
+  },
   "recognized": "识别完成",
+  "@recognized": {
+    "description": "STT complete status"
+  },
   "recognitionFailed": "语音识别失败: {error}",
+  "@recognitionFailed": {
+    "description": "STT error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "checking": "正在检查...",
+  "@checking": {
+    "description": "Checking for duplicates"
+  },
   "translating": "正在翻译...",
+  "@translating": {
+    "description": "Translation in progress"
+  },
   "translationComplete": "翻译完成 (需保存)",
+  "@translationComplete": {
+    "description": "Translation done status"
+  },
   "translationLoaded": "已加载保存的翻译",
+  "@translationLoaded": {
+    "description": "Existing translation loaded"
+  },
   "translationFailed": "翻译失败: {error}",
+  "@translationFailed": {
+    "description": "Translation error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "enterTextToTranslate": "请输入要翻译的文本",
+  "@enterTextToTranslate": {
+    "description": "Empty input warning"
+  },
   "saving": "正在保存...",
+  "@saving": {
+    "description": "Save in progress"
+  },
   "noTranslationToSave": "没有可保存的翻译",
+  "@noTranslationToSave": {
+    "description": "Save error - no data"
+  },
   "saveFailed": "保存失败: {error}",
+  "@saveFailed": {
+    "description": "Save error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "playing": "正在播放...",
+  "@playing": {
+    "description": "TTS playing status"
+  },
   "noTextToPlay": "没有可播放的文本",
+  "@noTextToPlay": {
+    "description": "TTS error - no text"
+  },
   "playbackFailed": "播放失败: {error}",
+  "@playbackFailed": {
+    "description": "TTS error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "sourceLanguage": "源语言",
+  "@sourceLanguage": {
+    "description": "Source language label"
+  },
   "targetLanguage": "目标语言",
+  "@targetLanguage": {
+    "description": "Target language label"
+  },
   "similarTextFound": "发现相似文本",
+  "@similarTextFound": {
+    "description": "Duplicate detection title"
+  },
   "useExistingText": "使用现有",
+  "@useExistingText": {
+    "description": "Use existing text button"
+  },
   "createNew": "新建条目",
+  "@createNew": {
+    "description": "Create new entry button"
+  },
   "reviewCount": "复习 {count} 次",
+  "@reviewCount": {
+    "description": "Review count display",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "tabSpeaking": "口语",
   "speakingPractice": "口语练习",
   "intervalSeconds": "间隔: {seconds}秒",
+  "@intervalSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "yourPronunciation": "你的发音",
   "correctAnswer": "正确答案",
   "score": "准确率: {score}%",
+  "@score": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
   "perfect": "完美！",
   "good": "不错",
   "tryAgain": "再试一次",
@@ -78,7 +367,6 @@
   "helpTabModes": "模式",
   "helpTabJson": "JSON 格式",
   "helpTabTour": "新手引导",
-  "mode2Title": "复习",
   "helpMode1Desc": "语音识别、翻译并收听结果。",
   "helpMode1Details": "• 语言设置：通过顶部翻译图标更改语言\n• 帮助：通过顶部帮助图标查看指南\n• 语音输入：点击麦克风图标开始/停止聆听\n• 文本输入：直接输入文本进行翻译\n• 自动搜索：检测相似的现有句子\n• 翻译：点击按钮立即翻译\n• 收听：点击扬声器图标收听 TTS（原文/译文）\n• 保存：“保存数据”添加到历史记录\n• 清除：重置所有输入",
   "helpMode2Desc": "复习已保存的句子，自动隐藏译文并跟踪复习次数。",
@@ -90,6 +378,8 @@
   "startTutorial": "开始教程",
   "tutorialMicTitle": "语音输入",
   "tutorialMicDesc": "点击麦克风按钮开始语音输入。",
+  "tutorialTabDesc": "您可以在这里选择所需的学习模式。",
+  "tutorialTapToContinue": "点击继续",
   "tutorialTransTitle": "翻译",
   "tutorialTransDesc": "点击此处翻译您的文本。",
   "tutorialSaveTitle": "保存",
@@ -106,9 +396,6 @@
   "tutorialM3StartDesc": "点击播放开始聆听和跟读。",
   "startWarning": "警告",
   "noVoiceDetected": "未检测到声音",
-  "tutorialTabDesc": "您可以在这里选择所需的学习模式。",
-  "tutorialTapToContinue": "点击继续",
-  "materialInfo": "资料信息",
   "tooltipSearch": "搜索",
   "tooltipStudyReview": "学习+复习",
   "tooltipSpeaking": "口语",
@@ -117,303 +404,12 @@
   "languageSettings": "语言设置",
   "tutorialM2DropdownDesc": "选择学习资料。",
   "tutorialM2ImportDesc": "从设备文件夹导入JSON文件。",
-  "copy": "复制",
-  "copiedToClipboard": "已复制到剪贴板！",
   "tutorialLangSettingsTitle": "语言设置",
   "tutorialLangSettingsDesc": "设置翻译的源语言和目标语言。",
+  "copy": "复制",
+  "copiedToClipboard": "已复制到剪贴板！",
   "tutorialContextTitle": "上下文标签",
   "tutorialContextDesc": "添加上下文（例如：早上）以区分相似的句子。",
-  "@flip": {
-    "description": "Show translation button"
-  },
-  "@recognized": {
-    "description": "STT complete status"
-  },
-  "@noTextToPlay": {
-    "description": "TTS error - no text"
-  },
-  "@mode2Title": {
-    "description": "Mode 2 title for help dialog"
-  },
-  "@score": {
-    "placeholders": {
-      "score": {
-        "type": "String"
-      }
-    }
-  },
-  "@hide": {
-    "description": "Hide translation button"
-  },
-  "@importFailed": {
-    "description": "Import error title"
-  },
-  "@recognitionFailed": {
-    "description": "STT error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@translating": {
-    "description": "Translation in progress"
-  },
-  "@subject": {
-    "description": "Subject label"
-  },
-  "@listening": {
-    "description": "STT listening status"
-  },
-  "@delete": {
-    "description": "Delete button"
-  },
-  "@materialInfo": {
-    "description": "Title for material metadata section"
-  },
-  "@cancel": {
-    "description": "Cancel button"
-  },
-  "@importSkipped": {
-    "description": "Skipped import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "@useExistingText": {
-    "description": "Use existing text button"
-  },
-  "@importJsonFile": {
-    "description": "Import JSON button"
-  },
-  "@saveData": {
-    "description": "Save translation button"
-  },
-  "@importTotal": {
-    "description": "Total import count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@importComplete": {
-    "description": "Import success title"
-  },
-  "@source": {
-    "description": "Source label"
-  },
-  "@deleteFailed": {
-    "description": "Delete error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@createNew": {
-    "description": "Create new entry button"
-  },
-  "@recordDeleted": {
-    "description": "Delete success message"
-  },
-  "@markAsStudied": {
-    "description": "Mark study button text"
-  },
-  "@translationComplete": {
-    "description": "Translation done status"
-  },
-  "@importFile": {
-    "description": "Imported file name",
-    "placeholders": {
-      "fileName": {
-        "type": "String"
-      }
-    }
-  },
-  "@importing": {
-    "description": "Import in progress"
-  },
-  "@appTitle": {
-    "description": "Application title"
-  },
-  "@errors": {
-    "description": "Error section label"
-  },
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "@noTranslationToSave": {
-    "description": "Save error - no data"
-  },
-  "@studyRecords": {
-    "description": "Study records title with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@selectStudyMaterial": {
-    "description": "Study material selector label"
-  },
-  "@deleteRecord": {
-    "description": "Delete record dialog title"
-  },
-  "@enterTextToTranslate": {
-    "description": "Empty input warning"
-  },
-  "@saveFailed": {
-    "description": "Save error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@confirm": {
-    "description": "Confirm/OK button"
-  },
-  "@confirmDelete": {
-    "description": "Delete confirmation message"
-  },
-  "@checking": {
-    "description": "Checking for duplicates"
-  },
-  "@playbackFailed": {
-    "description": "TTS error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@importJsonFilePrompt": {
-    "description": "Empty state prompt"
-  },
-  "@saveTranslationsFromSearch": {
-    "description": "Instruction to save data"
-  },
-  "@saved": {
-    "description": "Data saved status"
-  },
-  "@importAdded": {
-    "description": "Successfully imported count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@playing": {
-    "description": "TTS playing status"
-  },
-  "@targetLanguageFilter": {
-    "description": "Language filter label"
-  },
-  "@translate": {
-    "description": "Translate button"
-  },
-  "@noRecords": {
-    "description": "Empty state message"
-  },
-  "@targetLanguage": {
-    "description": "Target language label"
-  },
-  "@importErrorMessage": {
-    "description": "Import error message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@tabStudyMaterial": {
-    "description": "Study material tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@intervalSeconds": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
-  "@listen": {
-    "description": "Listen/TTS button"
-  },
-  "@refresh": {
-    "description": "Refresh button"
-  },
-  "@selectMaterialPrompt": {
-    "description": "Selection prompt"
-  },
-  "@translationLoaded": {
-    "description": "Existing translation loaded"
-  },
-  "@error": {
-    "description": "Error dialog title"
-  },
-  "@reviewCount": {
-    "description": "Review count display",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@translationFailed": {
-    "description": "Translation error",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@search": {
-    "description": "Search mode label"
-  },
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "@progress": {
-    "description": "Progress indicator",
-    "placeholders": {
-      "current": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
-  "@saving": {
-    "description": "Save in progress"
-  },
-  "@file": {
-    "description": "File label"
-  },
-  "@tabReview": {
-    "description": "Review tab label with count",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode",
-  "tutorialM3WordsTitle": "Practice Words",
-  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "thinkingTimeInterval": "Thinking Time Interval",
   "thinkingTimeDesc": "Time to think before the answer is revealed.",
   "autoPlay": "Auto-Play",
@@ -424,6 +420,7 @@
   "wordDefenseDesc": "Defend your base by speaking words correctly before enemies reach you.",
   "dialogueQuestTitle": "Dialogue Quest",
   "dialogueQuestDesc": "Roleplay in scenarios. Choose the right response and speak it aloud.",
+  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "labelType": "Type:",
   "labelWord": "Word",
   "labelSentence": "Sentence",
@@ -456,21 +453,28 @@
   "getMaterials": "Get Materials",
   "swapLanguages": "Swap Languages",
   "next": "Next",
-  "micButtonTooltip": "Start Listening",
-  "enterTextHint": "Enter text to translate",
   "wordModeLabel": "Word Mode",
   "accuracy": "Accuracy",
   "basicDefault": "Basic (Default)",
   "basic": "Basic",
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "tutorialM3WordsTitle": "Practice Words",
+  "tutorialM3WordsDesc": "Check this to practice only your saved words.",
+  "enterTextHint": "Enter text to translate",
+  "micButtonTooltip": "Start Listening",
   "menuHelp": "Help",
+  "menuWebDownload": "Get Material from Web",
+  "menuDeviceImport": "Import from Device",
   "menuSettings": "Settings",
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
   "targetLanguageLabel": "Target Language",
-  "menuWebDownload": "Get Material from Web",
-  "menuDeviceImport": "Import from Device",
   "mode3Start": "Start",
   "mode3Stop": "Stop",
   "mode3Next": "Next",
-  "mode3TryAgain": "Try Again"
+  "mode3TryAgain": "Try Again",
+  "tutorialSwapDesc": "我用我正在学习的语言替换我的母语。",
+  "recognizedText": "Recognized Text:",
+  "tutorialM3ResetTitle": "Reset History",
+  "tutorialM3ResetDesc": "Clear your progress and accuracy scores to start fresh."
 }

@@ -1265,6 +1265,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Recognized Text:'**
   String get recognizedText;
+
+  /// No description provided for @tutorialM3ResetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset History'**
+  String get tutorialM3ResetTitle;
+
+  /// No description provided for @tutorialM3ResetDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear your progress and accuracy scores to start fresh.'**
+  String get tutorialM3ResetDesc;
 }
 
 class _AppLocalizationsDelegate

@@ -476,5 +476,7 @@
   "swapLanguages": "Swap Languages",
   "tutorialSwapDesc": "Switch between source and target languages.",
   "recognizedText": "Recognized Text:",
-  "resetPracticeHistory": "Reset Practice History"
+  "resetPracticeHistory": "Reset Practice History",
+  "tutorialM3ResetTitle": "Reset History",
+  "tutorialM3ResetDesc": "Clear your progress and accuracy scores to start fresh."
 }
