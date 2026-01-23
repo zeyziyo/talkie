@@ -681,7 +681,7 @@ class DatabaseService {
   // ==========================================
   
   /// Import study materials from JSON file
-  static Future<Map<String, dynamic>> importFromJson(String jsonContent) async {
+  static Future<Map<String, dynamic>> importFromJson(String jsonContent, {String? fileName}) async {
     try {
       final data = json.decode(jsonContent) as Map<String, dynamic>;
       final sourceLang = data['source_language'] as String;
@@ -704,6 +704,18 @@ class DatabaseService {
             continue;
           }
           
+          
+          // 0. Create Material (Group)
+          String subject = data['subject'] as String? ?? 'Imported ${DateTime.now().toString().split(' ')[0]}';
+          final materialId = await createStudyMaterial(
+            subject: subject,
+            source: 'Device Import',
+            sourceLanguage: sourceLang,
+            targetLanguage: targetLang,
+            fileName: fileName,
+            createdAt: DateTime.now().toIso8601String(),
+          );
+          
           // 1. Insert to source language table
           final sourceId = await insertLanguageRecord(sourceLang, sourceText);
           
@@ -716,12 +728,15 @@ class DatabaseService {
             sourceId: sourceId,
             targetLang: targetLang,
             targetId: targetId,
-            materialId: 0, // Default to 0 for generic imports if no specific material
+            materialId: materialId, // Use the new material ID
             note: (entry['note'] ?? entry['context']) as String?, // Import context/note
             type: entry['type'] as String? ?? defaultType, // Use entry type or default type
           );
           
           importedCount++;
+          
+          // Store ID for return (only need one since they share material)
+          if (i == 0) data['processed_material_id'] = materialId;
         } catch (e) {
           errors.add('Entry ${i + 1}: $e');
           skippedCount++;
@@ -736,6 +751,7 @@ class DatabaseService {
         'skipped': skippedCount,
         'total': entries.length,
         'errors': errors,
+        'material_id': data['processed_material_id'] ?? 0, // Return the ID
       };
     } catch (e) {
       print('[DB] Error importing JSON: $e');

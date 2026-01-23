@@ -342,19 +342,22 @@ class Mode3Widget extends StatelessWidget {
                 ),
               ),
 
+              // Spacer to ensure separation
+              const SizedBox(height: 16),
+              const Divider(height: 1, thickness: 0.5, color: Colors.grey),
+              const SizedBox(height: 16),
               
-              // Reset Button
-              // Reset Button (Styled)
+              // Reset Button (Fixed at Bottom via Column)
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 40),
                 child: OutlinedButton.icon(
-                  key: resetButtonKey, // Assigned Key for Tutorial
+                  key: resetButtonKey, 
                   onPressed: () => appState.resetMode3Progress(),
                   icon: const Icon(Icons.refresh, size: 18),
                   label: Text(l10n.resetPracticeHistory),
                   style: OutlinedButton.styleFrom(
-                    foregroundColor: Colors.deepOrangeAccent,
-                    side: const BorderSide(color: Colors.deepOrangeAccent),
+                    foregroundColor: Colors.grey, // De-emphasize to avoid clashing with Next
+                    side: const BorderSide(color: Colors.grey),
                     padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                   ),
@@ -364,6 +367,7 @@ class Mode3Widget extends StatelessWidget {
             ],
           ),
         );
+
       },
     );
   }

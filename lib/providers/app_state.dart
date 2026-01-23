@@ -718,9 +718,9 @@ class AppState extends ChangeNotifier {
   }
   
   /// Import study materials from JSON file content
-  Future<Map<String, dynamic>> importFromJsonFile(String jsonContent) async {
+  Future<Map<String, dynamic>> importFromJsonFile(String jsonContent, {String? fileName}) async {
     try {
-      final result = await DatabaseService.importFromJson(jsonContent);
+      final result = await DatabaseService.importFromJson(jsonContent, fileName: fileName);
       
       // Reload study records after import
       // Reset filter to show all records by getting the target language from JSON
@@ -736,6 +736,7 @@ class AppState extends ChangeNotifier {
           debugPrint('[AppState] Could not parse target language from JSON: $e');
         }
         await loadStudyRecords();
+        await loadStudyMaterials(); // Refresh materials list too
       }
       
       return result;
@@ -1048,7 +1049,12 @@ class AppState extends ChangeNotifier {
         _statusMessage = '먼저 학습 자료를 선택하세요';
         _mode3SessionActive = false;
       } else {
-        await _nextMode3Question();
+        // Clear Score History
+        _mode3Score = 0.0;
+        _mode3Feedback = '';
+        
+        // Load First Question Immediately
+        _nextMode3Question();
       }
     } else {
       // Stop session
@@ -1148,13 +1154,11 @@ class AppState extends ChangeNotifier {
         // OPTIMIZED FOR SENTENCES:
         // 30s: Long enough for any sentence.
         // 3s: Allows 3s pause for breathing/thinking, but stops before engine hangs.
+        // 3s: Allows 3s pause for breathing/thinking, but stops before engine hangs.
         listenFor: const Duration(seconds: 30), 
         pauseFor: const Duration(seconds: 3),
+        localeId: _getServiceLocale(_targetLang), // Explicitly set locale
         onResult: (text, isFinal) {
-          // Ignore results if too fast (noise/residual)
-          if (DateTime.now().difference(_sttStartTime!).inMilliseconds < 500) {
-            return;
-          }
            _mode3UserAnswer = text;
            notifyListeners();
         }
@@ -1179,18 +1183,20 @@ class AppState extends ChangeNotifier {
     
     final targetText = _currentMode3Question!['target_text'] as String;
     
-    // Normalize both for comparison
-    String normalize(String input) {
-      // FIX: [^\w\s] destroys Korean. Use simple punctuation removal.
-      return input
-          .toLowerCase()
-          .replaceAll(RegExp(r'[.,?!:;"\-]'), '') // Remove common punctuation only
-          .replaceAll(RegExp(r'\s+'), ' ')        // Collapse spaces
-          .trim();
+    // Unified Normalization
+    final normalizedUser = _normalizeText(_mode3UserAnswer);
+    final normalizedTarget = _normalizeText(targetText);
+    
+    // Homophone Check
+    // If exact match fails, check if the user's answer is an accepted homophone for the target
+    bool isHomophoneMatch = false;
+    if (normalizedUser != normalizedTarget) {
+      final homophones = _getHomophones(normalizedTarget);
+      if (homophones.contains(normalizedUser)) {
+        isHomophoneMatch = true;
+        debugPrint('[AppState] Homophone Match: "$normalizedUser" accepted for "$normalizedTarget"');
+      }
     }
-
-    final normalizedUser = normalize(_mode3UserAnswer);
-    final normalizedTarget = normalize(targetText);
     
     debugPrint('[AppState] Mode 3 Check:');
     debugPrint('  - Original User: "$_mode3UserAnswer"');
@@ -1210,7 +1216,7 @@ class AppState extends ChangeNotifier {
         debugPrint('  - Similarity: $_mode3Score');
         
         // Exact match fallback (sometimes similarity < 1.0 even if identical due to length?)
-        if (normalizedUser == normalizedTarget) {
+        if (normalizedUser == normalizedTarget || isHomophoneMatch) {
              _mode3Score = 100.0;
         }
 
@@ -1316,8 +1322,9 @@ class AppState extends ChangeNotifier {
   double _calculateSimilarity(String s1, String s2) {
     if (s1.isEmpty || s2.isEmpty) return 0.0;
     
-    String normal1 = s1.toLowerCase().replaceAll(RegExp(r'[^\w\s]'), '');
-    String normal2 = s2.toLowerCase().replaceAll(RegExp(r'[^\w\s]'), '');
+    // Use consistent normalization
+    String normal1 = _normalizeText(s1);
+    String normal2 = _normalizeText(s2);
     
     if (normal1 == normal2) return 1.0;
     
@@ -1349,7 +1356,27 @@ class AppState extends ChangeNotifier {
 
 
   
-  String _getLangCode(String lang) {
+  // Helper: Unified String Normalization
+  String _normalizeText(String input) {
+     return input
+        .toLowerCase()
+        .replaceAll(RegExp(r'[.,?!:;"\-]'), '') // Remove common punctuation
+        .replaceAll(RegExp(r'\s+'), ' ')        // Collapse spaces
+        .trim();
+  }
+
+  // Helper: Homophone Map (Expandable)
+  List<String> _getHomophones(String word) {
+    const map = {
+      'eye': ['i', 'aye'],
+      'see': ['sea', 'c'],
+      'be': ['bee', 'b'],
+      // Add more as needed
+    };
+    return map[word] ?? [];
+  }
+
+  String _getServiceLocale(String lang) {
     // Map app language codes to STT/TTS language codes
     final map = {
       // East Asian

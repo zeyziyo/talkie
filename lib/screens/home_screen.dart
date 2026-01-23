@@ -603,7 +603,6 @@ class _HomeScreenState extends State<HomeScreen> {
     final appState = Provider.of<AppState>(context, listen: false);
     final l10n = AppLocalizations.of(context)!;
     
-    // Show loading indicator or simple simple logic
     final importResult = await appState.pickAndImportJson();
     
     if (importResult == null) return; // Canceled
@@ -611,30 +610,24 @@ class _HomeScreenState extends State<HomeScreen> {
     if (!context.mounted) return;
     
     if (importResult['success'] == true) {
-      showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-          title: Text('✅ ${l10n.importComplete}'),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Safe cast handling
-              if (importResult['total'] != null) Text(l10n.importTotal(importResult['total'] as int)),
-              if (importResult['imported'] != null) Text(l10n.importAdded(importResult['imported'] as int)),
-              if (importResult['skipped'] != null) Text(l10n.importSkipped(importResult['skipped'] as int)),
-              if (importResult['errors'] != null && (importResult['errors'] as List).isNotEmpty) ...[
-                const SizedBox(height: 8),
-                Text(l10n.errors, style: const TextStyle(fontWeight: FontWeight.bold)),
-                ...(importResult['errors'] as List).map((e) => Text('• $e', style: const TextStyle(fontSize: 12))),
-              ],
-            ],
-          ),
-          actions: [
-            TextButton(onPressed: () => Navigator.pop(context), child: Text(l10n.confirm)),
-          ],
+      // Immediate Transition Logic
+      final materialId = importResult['material_id'] as int? ?? 0;
+      
+      // 1. Select the new material
+      await appState.selectMaterial(materialId);
+      
+      // 2. Switch to Mode 3 (Speaking Practice) to show "First Item" immediately
+      appState.setMode(2); 
+
+      // 3. Show non-blocking feedback
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.importAdded(importResult['imported'] as int)),
+          backgroundColor: Colors.green,
+          duration: const Duration(seconds: 2),
         ),
       );
+      
     } else {
       showDialog(
         context: context,
