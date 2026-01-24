@@ -260,7 +260,6 @@ class Mode3Widget extends StatelessWidget {
                                         const SizedBox(width: 8),
                                         // Next Button
                                         Expanded(
-                                        Expanded(
                                           child: ElevatedButton(
                                             onPressed: () => appState.skipMode3Question(),
                                             style: ElevatedButton.styleFrom(
@@ -274,7 +273,6 @@ class Mode3Widget extends StatelessWidget {
                                         ),
                                         const SizedBox(width: 8),
                                         // Reset Button
-                                        Expanded(
                                         Expanded(
                                           child: OutlinedButton(
                                             onPressed: () => appState.resetMode3Progress(),
