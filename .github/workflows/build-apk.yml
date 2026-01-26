@@ -35,6 +35,9 @@ jobs:
     - name: Get dependencies
       run: flutter pub get
 
+    - name: Generate Localizations
+      run: flutter gen-l10n
+
     - name: Create key.properties
       run: |
         echo "${{ secrets.ANDROID_KEY_PROPERTIES }}" > android/key.properties
