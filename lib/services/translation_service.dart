@@ -29,8 +29,12 @@ class TranslationService {
     try {
       final cached = await DatabaseService.getCachedTranslation(cacheKey);
       if (cached != null) {
-        print('[Translation] Cache hit');
-        return {'text': cached, 'isValid': true};
+        // Validation check: Ignore cached errors or filters
+        if (!cached.startsWith('Filtered:') && !cached.startsWith('Error:')) {
+           print('[Translation] Cache hit');
+           return {'text': cached, 'isValid': true};
+        }
+        print('[Translation] Invalid cache ignored: $cached');
       }
     } catch (e) {
       print('[Translation] Cache unavailable (web/error)');
@@ -52,9 +56,9 @@ class TranslationService {
       final disambiguationOptions = result['disambiguationOptions'] as List<dynamic>?; // New field
 
       if (!isValid) {
-        final reason = result['reason'] ?? 'Unknown reason';
+        final reason = result['reason'] ?? 'OTHER';
         print('[Translation] Blocked by AI: $reason');
-        return {'text': 'Filtered: $reason', 'isValid': false};
+        return {'text': '', 'isValid': false, 'reason': reason};
       }
 
       print('[Translation] Success: $translatedText (Note: $note)');

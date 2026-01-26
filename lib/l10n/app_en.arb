@@ -505,5 +505,9 @@
   "sectionSentence": "Sentence Section",
   "tabWord": "word",
   "tabSentence": "sentence",
+  "errorProfanity": "Translation cannot be processed due to profanity.",
+  "errorHateSpeech": "Translation cannot be processed due to hate speech.",
+  "errorSexualContent": "Translation cannot be processed due to sexual content.",
+  "errorOtherSafety": "Translation was blocked by AI safety policy.",
   "titleFormat": "{type}: {materialName}"
 }

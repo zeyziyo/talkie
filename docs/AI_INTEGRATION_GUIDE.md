@@ -282,6 +282,30 @@ void _loadBannerAd() {
 }
 ```
 
+### 4.4 `Gemini Model Not Found (404)` 또는 `Quota Exceeded (429)`
+**원인**: 
+- 2024~2025년 사이 Google AI 모델 업데이트가 잦아, 특정 모델명(`gemini-pro` 등)이 갑자기 변경되거나 Deprecated 될 수 있습니다.
+- `gemini-1.5-pro` 같은 고성능 모델은 무료 계정(Free Tier)에서 요청이 차단될 수 있습니다.
+
+**해결 (Dynamic Model Selection)**:
+- 코드에 모델명을 하드코딩하지 않고, `models.list` API로 현재 사용 가능한 모델 목록을 조회합니다.
+- 무료 사용자는 **Flash** 계열 모델(`gemini-2.5-flash`, `gemini-1.5-flash`)을 우선 사용하도록 로직을 구현합니다.
+
+**추천 코드 패턴 (Edge Function)**:
+```typescript
+// 1. 모델 목록 조회
+const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
+const data = await response.json();
+
+// 2. Flash 모델 우선 검색 (비용/속도 최적화)
+const preferredOrder = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-flash'];
+const bestModel = data.models.find(m => preferredOrder.some(p => m.name.includes(p)));
+const modelName = bestModel ? bestModel.name : 'models/gemini-1.5-flash';
+
+// 3. 선택된 모델로 번역 요청
+await fetch(`https://generativelanguage.googleapis.com/v1beta/${modelName}:generateContent...`);
+```
+
 ---
 
 ## 5. 보안 체크리스트

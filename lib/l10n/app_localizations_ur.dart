@@ -624,6 +624,18 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tabSentence => 'جملہ';
 
   @override
+  String get errorProfanity => 'Translation cannot be processed due to profanity.';
+
+  @override
+  String get errorHateSpeech => 'Translation cannot be processed due to hate speech.';
+
+  @override
+  String get errorSexualContent => 'Translation cannot be processed due to sexual content.';
+
+  @override
+  String get errorOtherSafety => 'Translation was blocked by AI safety policy.';
+
+  @override
   String titleFormat(Object materialName, Object type) {
     return '$type: $materialName';
   }

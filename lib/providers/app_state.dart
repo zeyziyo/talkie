@@ -13,6 +13,8 @@ import '../models/sentence.dart';
 import '../models/user_library.dart';
 import '../repositories/sentence_repository.dart';
 import '../services/supabase_service.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 /// App-wide state management for Talkie
 class AppState extends ChangeNotifier {
@@ -380,11 +382,12 @@ class AppState extends ChangeNotifier {
   
   
   /// Translate text with duplicate detection and reuse
-  Future<void> translate() async {
+  /// Returns an error string if validation fails, or null if successful/loaded.
+  Future<String?> translate({BuildContext? context}) async {
     if (_sourceText.isEmpty) {
       _statusMessage = '번역할 텍스트를 입력하세요';
       notifyListeners();
-      return;
+      return null;
     }
     
     try {
@@ -396,30 +399,24 @@ class AppState extends ChangeNotifier {
       await _usageService.checkLimitOrThrow();
       
       // 0. Duplicate Check (Triggered ONLY once per text change)
-      // Check only if:
-      // - Creating new entry (selectedSourceId == null)
-      // - Not yet checked (_duplicateCheckTriggered == false)
       if (_selectedSourceId == null && !_duplicateCheckTriggered) {
         await searchSimilarSources(_sourceText);
         
         if (_similarSources.isNotEmpty) {
           _isTranslating = false;
-          _duplicateCheckTriggered = true; // Mark as checked so next attempt skips
+          _duplicateCheckTriggered = true; 
           _statusMessage = '유사한 문장이 발견되었습니다';
-          // _showDuplicateDialog is set to true by searchSimilarSources
           notifyListeners();
-          return; // Halt translation to show dialog
+          return null; 
         }
       }
 
       // 1. Save or reuse source text
       int sourceId;
       if (_selectedSourceId != null) {
-        // Reuse existing source
         sourceId = _selectedSourceId!;
         debugPrint('[AppState] Reusing existing source: id=$sourceId');
       } else {
-        // Create new source entry
         sourceId = await DatabaseService.insertLanguageRecord(_sourceLang, _sourceText);
         _selectedSourceId = sourceId;
         debugPrint('[AppState] Created new source: id=$sourceId');
@@ -437,13 +434,16 @@ class AppState extends ChangeNotifier {
       );
       
       if (existingTranslation != null) {
-        // Translation exists - load from database
-        _translatedText = existingTranslation['target_text'] as String;
-        _isTranslating = false;
-        _statusMessage = '저장된 번역 불러옴';
-        notifyListeners();
-        debugPrint('[AppState] Loaded existing translation from database');
-        return;
+        final loadedText = existingTranslation['target_text'] as String;
+        // Check for 'poisoned' cache (old error messages saved as text)
+        if (!loadedText.startsWith('Filtered:') && !loadedText.startsWith('Error:')) {
+          _translatedText = loadedText;
+          _isTranslating = false;
+          _statusMessage = '저장된 번역 불러옴';
+          notifyListeners();
+          return null;
+        }
+        debugPrint('[AppState] Invalid DB record ignored: $loadedText');
       }
       
       // 3. Translation doesn't exist - call API
@@ -456,6 +456,45 @@ class AppState extends ChangeNotifier {
         targetLang: _targetLang,
       );
       
+      // Handle Success or Failure
+      final isValid = result['isValid'] as bool? ?? false;
+      
+      if (!isValid) {
+        // Handle Error Logic with Localization
+        final reason = result['reason'] as String? ?? 'OTHER';
+        String errorMsg = reason;
+        
+        if (context != null) {
+          final l10n = AppLocalizations.of(context);
+          if (l10n != null) {
+            switch (reason) {
+              case 'PROFANITY':
+                errorMsg = l10n.errorProfanity ?? reason;
+                break;
+              case 'HATE_SPEECH':
+                errorMsg = l10n.errorHateSpeech ?? reason;
+                break;
+              case 'SEXUAL':
+                errorMsg = l10n.errorSexualContent ?? reason;
+                break;
+              case 'OTHER':
+              default:
+                errorMsg = l10n.errorOtherSafety ?? reason;
+                break;
+            }
+          }
+        }
+        
+        // Return error message for UI to display in dialog
+        // DO NOT set _translatedText to error message
+        _translatedText = ''; // Clear result to disable Save button
+        _statusMessage = '번역 거부';
+        _isTranslating = false;
+        _isSaved = false;
+        notifyListeners();
+        return errorMsg;
+      }
+
       _translatedText = result['text'] as String;
       
       // Handle Note / Disambiguation
@@ -463,13 +502,11 @@ class AppState extends ChangeNotifier {
       final options = result['disambiguationOptions'] as List<String>?;
       
       if (options != null && options.isNotEmpty) {
-        // Ambiguous! Store options and show dialog (trigger via flag)
         _disambiguationOptions = options;
         _showDisambiguationDialog = true;
-        _note = ''; // Reset note for user selection
+        _note = ''; 
         debugPrint('[AppState] Ambiguity detected: $options');
       } else {
-        // Unambiguous or simple
         _disambiguationOptions = [];
         _showDisambiguationDialog = false;
         if (autoNote != null) {

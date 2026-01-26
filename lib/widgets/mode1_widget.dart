@@ -368,6 +368,45 @@ class _Mode1WidgetState extends State<Mode1Widget> {
             if (appState.showDisambiguationDialog)
               _buildDisambiguationDialog(context, appState),
             
+            // Top AppBar Actions
+            Positioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              child: SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      // Language Settings Button (Left)
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.1),
+                              blurRadius: 4,
+                              offset: const Offset(0, 2),
+                            ),
+                          ],
+                        ),
+                        child: IconButton(
+                          icon: const Icon(Icons.translate_rounded, color: Color(0xFF667eea)), // Visual Marker
+                          tooltip: l10n.languageSettings,
+                          onPressed: () => _showLanguageSettings(context),
+                        ),
+                      ),
+                      // Placeholder for potential right-aligned actions
+                      // For now, it's just a spacer to push the left button to the left.
+                      const SizedBox(width: 48), // Same width as the IconButton to balance
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            
             // Bottom Save Button
             Positioned(
               left: 0, 
@@ -380,7 +419,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.1),
+                        color: Colors.black.withOpacity(0.1),
                         blurRadius: 4,
                         offset: const Offset(0, -2),
                       ),
@@ -527,10 +566,35 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                 _rewardedAd!.show(
                   onUserEarnedReward: (AdWithoutView ad, RewardItem rewardItem) async {
                     // Reward the user
-                    await appState.refill(5);
+                    await appState.refill(5); // Refill the translation count
                     if (context.mounted) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(content: Text(AppLocalizations.of(context)!.translationRefilled)),
+                      );
+                    }
+                    if (appState.sourceText.trim().isNotEmpty) {
+                      // Pass context and handle error
+                      final error = await appState.translate(context: context);
+                      if (error != null && context.mounted) {
+                         // Show Error Dialog for Safety Violations
+                         showDialog(
+                           context: context,
+                           builder: (context) => AlertDialog(
+                             title: Text(AppLocalizations.of(context)!.error ?? 'Error'),
+                             content: Text(error),
+                             actions: [
+                               TextButton(
+                                 onPressed: () => Navigator.pop(context),
+                                 child: Text(AppLocalizations.of(context)!.confirm ?? 'OK'),
+                               ),
+                             ],
+                           ),
+                         );
+                      }
+                    } else {
+                      // Empty check logic passed to state or handled here
+                      ScaffoldMessenger.of(context).showSnackBar(
+                         SnackBar(content: Text(AppLocalizations.of(context)!.enterTextToTranslate)),
                       );
                     }
                     // Load next ad

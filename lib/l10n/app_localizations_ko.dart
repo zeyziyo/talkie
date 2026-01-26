@@ -624,6 +624,18 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tabSentence => '문장';
 
   @override
+  String get errorProfanity => '비속어가 포함되어 있어 번역할 수 없습니다.';
+
+  @override
+  String get errorHateSpeech => '혐오 표현이 포함되어 있어 번역할 수 없습니다.';
+
+  @override
+  String get errorSexualContent => '선정적인 내용이 포함되어 있어 번역할 수 없습니다.';
+
+  @override
+  String get errorOtherSafety => 'AI 안전 정책에 의해 번역이 거부되었습니다.';
+
+  @override
   String titleFormat(Object materialName, Object type) {
     return '$type: $materialName';
   }

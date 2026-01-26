@@ -490,6 +490,10 @@
   "sectionWord": "단어 섹션",
   "sectionSentence": "문장 섹션",
   "tabWord": "단어",
-  "tabSentence": "문장"
+  "tabSentence": "문장",
+  "errorProfanity": "비속어가 포함되어 있어 번역할 수 없습니다.",
+  "errorHateSpeech": "혐오 표현이 포함되어 있어 번역할 수 없습니다.",
+  "errorSexualContent": "선정적인 내용이 포함되어 있어 번역할 수 없습니다.",
+  "errorOtherSafety": "AI 안전 정책에 의해 번역이 거부되었습니다."
 
 }

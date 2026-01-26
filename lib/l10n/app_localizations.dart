@@ -1335,6 +1335,30 @@ abstract class AppLocalizations {
   /// **'sentence'**
   String get tabSentence;
 
+  /// No description provided for @errorProfanity.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation cannot be processed due to profanity.'**
+  String get errorProfanity;
+
+  /// No description provided for @errorHateSpeech.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation cannot be processed due to hate speech.'**
+  String get errorHateSpeech;
+
+  /// No description provided for @errorSexualContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation cannot be processed due to sexual content.'**
+  String get errorSexualContent;
+
+  /// No description provided for @errorOtherSafety.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation was blocked by AI safety policy.'**
+  String get errorOtherSafety;
+
   /// No description provided for @titleFormat.
   ///
   /// In en, this message translates to:
