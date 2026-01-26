@@ -5,6 +5,52 @@ class LanguageConstants {
     return _localizedMaps[langCode] ?? _localizedMaps['en']!;
   }
 
+  static const List<Map<String, String>> supportedLanguages = [
+    {'code': 'ko', 'name': '한국어'},
+    {'code': 'en', 'name': 'English'},
+    {'code': 'ja', 'name': '日本語'},
+    {'code': 'zh-CN', 'name': '中文 (简体)'},
+    {'code': 'zh-TW', 'name': '中文 (繁体)'},
+    {'code': 'es', 'name': 'Español'},
+    {'code': 'fr', 'name': 'Français'},
+    {'code': 'de', 'name': 'Deutsch'},
+    {'code': 'ru', 'name': 'Русский'},
+    {'code': 'vi', 'name': 'Tiếng Việt'},
+    {'code': 'id', 'name': 'Bahasa Indonesia'},
+    {'code': 'th', 'name': 'ไทย'},
+    {'code': 'pt', 'name': 'Português'},
+    {'code': 'it', 'name': 'Italiano'},
+    {'code': 'tr', 'name': 'Türkçe'},
+    {'code': 'ar', 'name': 'العربية'},
+    {'code': 'hi', 'name': 'हिन्दी'},
+    {'code': 'bn', 'name': 'বাংলা'},
+    {'code': 'ur', 'name': 'اردو'},
+    {'code': 'ms', 'name': 'Bahasa Melayu'},
+    {'code': 'fil', 'name': 'Filipino'},
+    {'code': 'pl', 'name': 'Polski'},
+    {'code': 'uk', 'name': 'Українська'},
+    {'code': 'nl', 'name': 'Nederlands'},
+    {'code': 'sv', 'name': 'Svenska'},
+    {'code': 'da', 'name': 'Dansk'},
+    {'code': 'fi', 'name': 'Suomi'},
+    {'code': 'no', 'name': 'Norsk'},
+    {'code': 'hu', 'name': 'Magyar'},
+    {'code': 'cs', 'name': 'Čeština'},
+    {'code': 'ro', 'name': 'Română'},
+    {'code': 'el', 'name': 'Ελληνικά'},
+    {'code': 'he', 'name': 'עברית'},
+    {'code': 'fa', 'name': 'فارسی'},
+    {'code': 'ta', 'name': 'தமிழ்'},
+    {'code': 'te', 'name': 'తెలుగు'},
+    {'code': 'mr', 'name': 'मराठी'},
+    {'code': 'gu', 'name': 'ગુજરાતી'},
+    {'code': 'kn', 'name': 'ಕನ್ನಡ'},
+    {'code': 'ml', 'name': 'മലയാളം'},
+    {'code': 'pa', 'name': 'ਪੰਜਾਬੀ'},
+    {'code': 'sw', 'name': 'Kiswahili'},
+    {'code': 'af', 'name': 'Afrikaans'},
+  ];
+
   static const Map<String, Map<String, String>> _localizedMaps = {
     // English
     'en': {
