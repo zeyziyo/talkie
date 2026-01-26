@@ -134,48 +134,81 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue[100],
+                                // Source Language
+                                Expanded(
+                                  child: InkWell(
+                                    onTap: () => _showLanguagePicker(context, true),
                                     borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  child: Text(
-                                    appState.languageNames[appState.sourceLang] ?? '',
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue.shade800,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue[50], // Lighter blue
+                                        borderRadius: BorderRadius.circular(8),
+                                        border: Border.all(color: Colors.blue.shade200),
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Flexible(
+                                            child: Text(
+                                              appState.languageNames[appState.sourceLang] ?? '',
+                                              style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.blue.shade800,
+                                              ),
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
+                                          ),
+                                          const SizedBox(width: 4),
+                                          const Icon(Icons.arrow_drop_down, color: Colors.blue, size: 20),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
+                                
+                                // Swap Button
                                 IconButton(
-                                    key: widget.swapButtonKey,
-                                    icon: const Icon(Icons.swap_horiz, color: Colors.deepOrange, size: 32),
-                                    onPressed: () => appState.swapLanguages(),
-                                    tooltip: l10n.swapLanguages,
-                                    padding: EdgeInsets.zero,
-                                    constraints: const BoxConstraints(minWidth: 40, minHeight: 40),
-                                  ),
-                                Row(
-                                  children: [
-                                    IconButton(
-                                      key: widget.micButtonKey,
-                                      icon: Icon(
-                                        appState.isListening ? Icons.mic : Icons.mic_none,
-                                        color: appState.isListening ? Colors.red : null,
+                                  key: widget.swapButtonKey,
+                                  icon: const Icon(Icons.swap_horiz, color: Colors.deepOrange, size: 28),
+                                  onPressed: () => appState.swapLanguages(),
+                                  tooltip: l10n.swapLanguages,
+                                  constraints: const BoxConstraints(minWidth: 40, minHeight: 40),
+                                ),
+                                
+                                // Target Language
+                                Expanded(
+                                  child: InkWell(
+                                    onTap: () => _showLanguagePicker(context, false),
+                                    borderRadius: BorderRadius.circular(8),
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                      decoration: BoxDecoration(
+                                        color: Colors.green[50], // Lighter green
+                                        borderRadius: BorderRadius.circular(8),
+                                        border: Border.all(color: Colors.green.shade200),
                                       ),
-                                      onPressed: appState.isListening
-                                          ? () => appState.stopListening()
-                                          : () => appState.startListening(),
-                                      tooltip: l10n.micButtonTooltip,
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Flexible(
+                                            child: Text(
+                                              appState.languageNames[appState.targetLang] ?? '',
+                                              style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.green.shade800,
+                                              ),
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
+                                          ),
+                                          const SizedBox(width: 4),
+                                          const Icon(Icons.arrow_drop_down, color: Colors.green, size: 20),
+                                        ],
+                                      ),
                                     ),
-                                    if (appState.sourceText.isNotEmpty)
-                                      IconButton(
-                                        icon: const Icon(Icons.clear),
-                                        onPressed: () => appState.clearTexts(),
-                                      ),
-                                  ],
+                                  ),
                                 ),
                               ],
                             ),
@@ -191,10 +224,31 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                   fontStyle: FontStyle.italic,
                                 ),
                                 border: const OutlineInputBorder(),
+                                suffixIcon: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    if (appState.sourceText.isNotEmpty)
+                                      IconButton(
+                                        icon: const Icon(Icons.clear, color: Colors.grey),
+                                        onPressed: () => appState.clearTexts(),
+                                        tooltip: l10n.clearAll,
+                                      ),
+                                    IconButton(
+                                      key: widget.micButtonKey,
+                                      icon: Icon(
+                                        appState.isListening ? Icons.mic : Icons.mic_none,
+                                        color: appState.isListening ? Colors.red : Colors.blue,
+                                      ),
+                                      onPressed: appState.isListening
+                                          ? () => appState.stopListening()
+                                          : () => appState.startListening(),
+                                      tooltip: l10n.micButtonTooltip,
+                                    ),
+                                  ],
+                                ),
                               ),
                               onChanged: (text) {
                                 appState.setSourceText(text);
-                                // Trigger duplicate check? handled in setSourceText/translate
                               },
                             ),
                             
@@ -718,4 +772,68 @@ class _Mode1WidgetState extends State<Mode1Widget> {
     );
   }
 
+  void _showLanguagePicker(BuildContext context, bool isSource) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) => DraggableScrollableSheet(
+        initialChildSize: 0.7,
+        minChildSize: 0.5,
+        maxChildSize: 0.9,
+        expand: false,
+        builder: (context, scrollController) {
+          return Consumer<AppState>(
+            builder: (context, appState, _) {
+              return Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Text(
+                      isSource 
+                          ? AppLocalizations.of(context)!.sourceLanguageLabel 
+                          : AppLocalizations.of(context)!.targetLanguageLabel,
+                      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  const Divider(),
+                  Expanded(
+                    child: ListView.builder(
+                      controller: scrollController,
+                      itemCount: LanguageConstants.supportedLanguages.length,
+                      itemBuilder: (context, index) {
+                        final lang = LanguageConstants.supportedLanguages[index];
+                        final code = lang['code']!;
+                        final name = lang['name']!;
+                        final isSelected = isSource 
+                            ? appState.sourceLang == code 
+                            : appState.targetLang == code;
+
+                        return ListTile(
+                          title: Text(name),
+                          trailing: isSelected 
+                              ? const Icon(Icons.check_circle, color: Colors.blue) 
+                              : null,
+                          onTap: () {
+                            if (isSource) {
+                              appState.setSourceLang(code);
+                            } else {
+                              appState.setTargetLang(code);
+                            }
+                            Navigator.pop(context);
+                          },
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
 }
