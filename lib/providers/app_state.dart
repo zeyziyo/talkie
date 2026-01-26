@@ -1097,43 +1097,83 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Import JSON file with metadata (Mode 3)
+  /// Import JSON file with metadata (Supabase)
   Future<Map<String, dynamic>> importJsonWithMetadata(
     String jsonContent,
     {String? fileName}
   ) async {
     try {
-      final result = await DatabaseService.importFromJsonWithMetadata(
-        jsonContent,
-        fileName: fileName,
-      );
+      final data = json.decode(jsonContent) as Map<String, dynamic>;
+      final sourceLang = data['source_language'] as String;
+      final targetLang = data['target_language'] as String;
+      final entries = data['entries'] as List;
       
-      // Reload study materials after import
-      if (result['success'] == true) {
-        await loadStudyMaterials();
-        
-        // Auto-select the newly imported material ONLY if it matches current languages
-        final materialId = result['material_id'] as int?;
-        if (materialId != null) {
-          // Auto-select if it's visible in the current dropdown (i.e., passes filter)
-          bool isVisible = filteredStudyMaterials.any((m) => m['id'] == materialId);
+      int importedCount = 0;
+      int skippedCount = 0;
+      int duplicateCount = 0;
+      List<String> errors = [];
+      
+      _statusMessage = 'Importing...';
+      notifyListeners();
+      
+      for (var i = 0; i < entries.length; i++) {
+        try {
+          final entry = entries[i] as Map<String, dynamic>;
+          final sourceText = entry['source_text'] as String;
+          final targetText = entry['target_text'] as String;
           
-          if (isVisible) {
-             await selectMaterial(materialId);
-             
-             // Auto-start ONLY if currently in Mode 3 (Speaking Practice)
-             if (_currentMode == 2) {
-                await startMode3SessionDirectly();
-             }
-          } else {
-             debugPrint('[AppState] Imported material $materialId hidden by filter (Lang mismatch)');
+          if (sourceText.trim().isEmpty || targetText.trim().isEmpty) {
+            skippedCount++;
+            continue;
           }
+          
+          final result = await SupabaseService.importJsonEntry(
+            sourceText: sourceText,
+            sourceLang: sourceLang,
+            targetText: targetText,
+            targetLang: targetLang,
+            note: (entry['note'] ?? entry['context']) as String?,
+          );
+          
+          if (result['success'] == true) {
+            importedCount++;
+          } else {
+            if (result['reason'] == 'Duplicate') {
+              duplicateCount++;
+            } else {
+              errors.add('Entry ${i + 1}: ${result['reason']}');
+              skippedCount++;
+            }
+          }
+          
+          // Optional: Update progress specific status message every 5 entries
+          if (i % 5 == 0) {
+             _statusMessage = 'Importing... ($importedCount/${entries.length})';
+             notifyListeners();
+          }
+          
+        } catch (e) {
+          errors.add('Entry ${i + 1}: $e');
+          skippedCount++;
         }
       }
       
-      return result;
+      _statusMessage = 'Import complete';
+      await loadStudyRecords(); // Reload user library
+      notifyListeners();
+      
+      return {
+        'success': true,
+        'imported': importedCount,
+        'skipped': skippedCount,
+        'duplicates': duplicateCount,
+        'total': entries.length,
+        'errors': errors,
+        // 'material_id': ... // We don't distinctly separate materials in Supabase yet (all in library), 
+        // but could add to a 'Collection' later. For now, flattened.
+      };
     } catch (e) {
-      debugPrint('[AppState] Error importing JSON with metadata: $e');
+      debugPrint('[AppState] Error importing JSON (Supabase): $e');
       return {
         'success': false,
         'imported': 0,

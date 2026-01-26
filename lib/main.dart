@@ -5,19 +5,25 @@ import 'package:provider/provider.dart';
 import 'providers/app_state.dart';
 import 'screens/home_screen.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'dart:io';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'services/supabase_service.dart';
 
 import 'package:google_mobile_ads/google_mobile_ads.dart' hide AppState;
 import 'package:shared_preferences/shared_preferences.dart';
 
+// Conditional import for dart:io (not available on web)
+import 'platform_stub.dart' if (dart.library.io) 'dart:io' as platform;
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  if (Platform.isWindows || Platform.isLinux) {
+  
+  // Desktop SQLite FFI setup (not for web)
+  if (!kIsWeb && (platform.Platform.isWindows || platform.Platform.isLinux)) {
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
   }
+  
   try {
     await dotenv.load(fileName: ".env");
   } catch (e) {
@@ -25,9 +31,15 @@ void main() async {
     // Ensure app continues even if .env fails to load
   }
   
-  // Initialize AdMob
-  if (Platform.isAndroid || Platform.isIOS) {
-    await MobileAds.instance.initialize();
+  // Initialize AdMob (mobile only)
+  if (!kIsWeb) {
+    try {
+      if (platform.Platform.isAndroid || platform.Platform.isIOS) {
+        await MobileAds.instance.initialize();
+      }
+    } catch (e) {
+      print("Warning: AdMob init failed: $e");
+    }
   }
 
   // Initialize SharedPrefs

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../l10n/app_localizations.dart';
@@ -55,6 +56,9 @@ class _Mode1WidgetState extends State<Mode1Widget> {
   }
 
   void _loadRewardedAd() {
+    // RewardedAd is not supported on web
+    if (kIsWeb) return;
+    
     RewardedAd.load(
       adUnitId: UsageService.adUnitId,
       request: const AdRequest(),

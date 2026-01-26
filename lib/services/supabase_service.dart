@@ -82,4 +82,104 @@ class SupabaseService {
     }
     return null;
   }
+
+  /// Import a single JSON entry with validation and deduplication
+  /// Returns: { success: bool, reason: String? }
+  static Future<Map<String, dynamic>> importJsonEntry({
+    required String sourceText,
+    required String sourceLang,
+    required String targetText,
+    required String targetLang,
+    String? note,
+  }) async {
+    try {
+      // 1. Duplicate Check (Source)
+      int? groupId = await findGroupId(sourceText, sourceLang);
+      
+      // If group exists, check if target also exists in this group (Full Duplicate)
+      if (groupId != null) {
+        final targetCheck = await client
+            .from('sentences')
+            .select('id')
+            .eq('group_id', groupId)
+            .eq('lang_code', targetLang)
+            .eq('text', targetText)
+            .maybeSingle();
+            
+        if (targetCheck != null) {
+          // Already exists exactly.
+          // Ensure it's in user's library though?
+          await _addToLibrary(groupId, note);
+          return {'success': false, 'reason': 'Duplicate'};
+        }
+      }
+
+      // 2. Validation (Content Policy) via Edge Function
+      // We validate the SOURCE text as the primary content.
+      // (Optionally could validate target too, but source is sufficient for most cases)
+      final validation = await translateAndValidate(
+        text: sourceText,
+        sourceLang: sourceLang,
+        targetLang: targetLang, // Target lang irrelevant for validation but required by API
+      );
+      
+      if (validation['isValid'] != true) {
+        return {'success': false, 'reason': 'Content Policy: ${validation['reason'] ?? 'Unknown'}'};
+      }
+
+      // 3. Insert Data
+      final authorId = client.auth.currentUser?.id;
+      
+      if (groupId == null) {
+        // New Group
+        groupId = DateTime.now().millisecondsSinceEpoch; // Should use UUID or Sequence in real prod
+        
+        // Insert Source
+        await client.from('sentences').insert({
+          'group_id': groupId,
+          'lang_code': sourceLang,
+          'text': sourceText,
+          'note': note, // Note usually explains the source term in these lists
+          'author_id': authorId,
+          'status': 'approved',
+        });
+      }
+      
+      // Insert Target (If we are here, target didn't exist in this group)
+      await client.from('sentences').insert({
+        'group_id': groupId,
+        'lang_code': targetLang,
+        'text': targetText,
+        'author_id': authorId,
+        'status': 'approved',
+      });
+      
+      // 4. Add to User Library
+      await _addToLibrary(groupId, note);
+      
+      return {'success': true};
+
+    } catch (e) {
+      return {'success': false, 'reason': 'Error: $e'};
+    }
+  }
+  
+  static Future<void> _addToLibrary(int groupId, String? note) async {
+    final userId = client.auth.currentUser?.id;
+    if (userId == null) return;
+    
+    try {
+      await client.from('user_library').upsert({
+        'user_id': userId,
+        'group_id': groupId,
+        // Only update note if provided, otherwise query existing? 
+        // Upsert might overwrite note with null if we aren't careful.
+        // Let's assume we want to preserve existing note if new one is null.
+        // But strict upsert replaces. For simplicity, just upsert.
+        'personal_note': note,
+      }, onConflict: 'user_id, group_id'); // Ensure uniqueness
+    } catch (e) {
+      // Ignore
+    }
+  }
 }

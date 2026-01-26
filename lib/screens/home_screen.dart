@@ -1,6 +1,7 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart' hide AppState;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import '../l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
@@ -50,6 +51,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _loadBannerAd() {
+    // AdMob is not supported on web
+    if (kIsWeb) return;
+    
     _bannerAd = BannerAd(
       // Production Banner ID
       adUnitId: 'ca-app-pub-2281211992064241/7980228996', 

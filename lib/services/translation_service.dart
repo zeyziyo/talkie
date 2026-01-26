@@ -71,7 +71,7 @@ class TranslationService {
 
     } catch (e) {
       print('[Translation] Error: $e');
-      return 'Translation Error';
+      return 'Error: $e';
     }
   }
 }
