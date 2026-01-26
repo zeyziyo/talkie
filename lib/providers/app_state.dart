@@ -541,39 +541,38 @@ class AppState extends ChangeNotifier {
   Future<void> _saveToSupabase() async {
       final authorId = SupabaseService.client.auth.currentUser?.id;
 
-      // 1. Handle Source Sentence
-      int groupId;
-      
-      final existingGroupId = await _tryFindExistingGroupId(_sourceText, _sourceLang);
-      
-      if (existingGroupId != null) {
-        groupId = existingGroupId;
-      } else {
-        groupId = DateTime.now().millisecondsSinceEpoch;
+      if (authorId == null) return;
+
+      try {
+        final timestamp = DateTime.now().millisecondsSinceEpoch;
         
-        await _sentenceRepository.addSentence(Sentence(
-          id: 0,
-          groupId: groupId,
-          langCode: _sourceLang,
-          text: _sourceText,
-          authorId: authorId,
-          createdAt: DateTime.now(),
-        ));
+        // 1. Save Source
+        await SupabaseService.client.from('sentences').insert({
+          'lang_code': _sourceLang,
+          'text': _sourceText,
+          'group_id': timestamp,
+          'author_id': authorId,
+        });
+
+        // 2. Save Target
+        await SupabaseService.client.from('sentences').insert({
+          'lang_code': _targetLang,
+          'text': _translatedText,
+          'group_id': timestamp,
+          'author_id': authorId,
+        });
+
+      } catch (e) {
+        debugPrint('[AppState] Supabase background save failed: $e');
       }
+      return; // Stop here, ignore legacy code below (will delete next)
       
-      // 2. Handle Target Sentence
-      await _sentenceRepository.addSentence(Sentence(
-        id: 0, 
-        groupId: groupId,
-        langCode: _targetLang,
-        text: _translatedText,
-        note: _note.isNotEmpty ? _note : null,
-        authorId: authorId,
-        status: 'approved',
-        createdAt: DateTime.now(),
-      ));
+      /* Legacy Code Ignored */
+      int groupId = 0; // Stub for below
       
-      // 3. Link to User Library
+
+      
+      /* Removed User Library Link */
       final userId = authorId;
       if (userId != null) {
          try {
