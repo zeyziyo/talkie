@@ -2,14 +2,26 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class SupabaseService {
-  static final SupabaseClient client = Supabase.instance.client;
+  static bool _initialized = false;
+  
+  /// Get the Supabase client (lazy access after initialization)
+  static SupabaseClient get client {
+    if (!_initialized) {
+      throw Exception('SupabaseService not initialized. Call initialize() first.');
+    }
+    return Supabase.instance.client;
+  }
 
   /// Initialize Supabase
   static Future<void> initialize() async {
+    if (_initialized) return; // Prevent double initialization
+    
     await Supabase.initialize(
       url: dotenv.env['SUPABASE_URL']!,
       anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
     );
+    
+    _initialized = true;
 
     // Auto-login anonymously to enable RLS (saving data)
     try {
