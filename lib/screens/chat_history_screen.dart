@@ -5,7 +5,9 @@ import 'chat_screen.dart';
 import '../l10n/app_localizations.dart';
 
 class ChatHistoryScreen extends StatefulWidget {
-  const ChatHistoryScreen({super.key});
+  final bool isWidget;
+  final Key? fabKey;
+  const ChatHistoryScreen({super.key, this.isWidget = false, this.fabKey});
 
   @override
   State<ChatHistoryScreen> createState() => _ChatHistoryScreenState();
@@ -26,13 +28,7 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
     final l10n = AppLocalizations.of(context)!;
     final dialogues = appState.dialogueGroups;
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(l10n.chatHistoryTitle),
-        backgroundColor: const Color(0xFF667eea),
-        foregroundColor: Colors.white,
-      ),
-      body: dialogues.isEmpty
+    final content = dialogues.isEmpty
           ? _buildEmptyState(l10n)
           : ListView.builder(
               itemCount: dialogues.length,
@@ -61,8 +57,30 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                   },
                 );
               },
-            ),
+            );
+
+    if (widget.isWidget) {
+      return Scaffold(
+        body: content,
+        floatingActionButton: FloatingActionButton.extended(
+          key: widget.fabKey,
+          onPressed: () => _showNewChatDialog(appState, l10n),
+          label: Text(l10n.chatNewChat),
+          icon: const Icon(Icons.add),
+          backgroundColor: const Color(0xFF667eea),
+        ),
+      );
+    }
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(l10n.chatHistoryTitle),
+        backgroundColor: const Color(0xFF667eea),
+        foregroundColor: Colors.white,
+      ),
+      body: content,
       floatingActionButton: FloatingActionButton.extended(
+        key: widget.fabKey,
         onPressed: () => _showNewChatDialog(appState, l10n),
         label: Text(l10n.chatNewChat),
         icon: const Icon(Icons.add),

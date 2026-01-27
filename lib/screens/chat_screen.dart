@@ -67,10 +67,19 @@ class _ChatScreenState extends State<ChatScreen> {
     _scrollToBottom();
 
     try {
+      // Build history for context
+      final history = _messages.map((msg) {
+        return {
+          'role': msg['speaker'] == 'User' ? 'user' : 'model',
+          'parts': [{'text': msg['source_text'] ?? ''}]
+        };
+      }).toList();
+
       final result = await SupabaseService.processChat(
         text: text,
         context: appState.activeDialogueTitle ?? 'None',
         targetLang: appState.targetLang,
+        history: history,
       );
 
       final aiResponse = result['response'] as String;

@@ -236,6 +236,7 @@ class SupabaseService {
     required String text,
     required String context, // Dialogue history or Persona
     required String targetLang,
+    List<Map<String, dynamic>>? history, // Added history support
   }) async {
     try {
       final response = await client.functions.invoke(
@@ -244,6 +245,7 @@ class SupabaseService {
           'text': text,
           'context': context,
           'targetLang': targetLang,
+          'history': history, // Pass history to Edge Function
         },
       );
       return Map<String, dynamic>.from(response.data);

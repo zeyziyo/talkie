@@ -654,15 +654,18 @@ class AppState extends ChangeNotifier {
       debugPrint('[AppState] Local save successful');
       
       // 2. Supabase Save (Secondary - for Cloud Sync)
-      _saveToSupabase(
-        dialogueId: _activeDialogueId,
-        speaker: _activeDialogueId != null ? 'User' : null,
-        sequenceOrder: _activeDialogueId != null ? _currentDialogueSequence : null,
-      ).then((_) {
-        debugPrint('[AppState] Background Cloud Sync finished');
-      }).catchError((e) {
-        debugPrint('[AppState] Background Cloud Sync failed (Offline?): $e');
-      });
+      // AWAIT sync before loading records to ensure Mode 2 sees the new data
+      try {
+        await _saveToSupabase(
+          dialogueId: _activeDialogueId,
+          speaker: _activeDialogueId != null ? 'User' : null,
+          sequenceOrder: _activeDialogueId != null ? _currentDialogueSequence : null,
+        );
+        debugPrint('[AppState] Supabase Cloud Sync finished');
+      } catch (e) {
+        debugPrint('[AppState] Supabase Cloud Sync failed (Offline?): $e');
+        // We continue even if cloud sync fails as local save succeeded
+      }
 
       // 3. Update UI Success immediately
       _statusMessage = '저장 완료!';

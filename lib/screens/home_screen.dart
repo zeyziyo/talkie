@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final GlobalKey _contextFieldKey = GlobalKey();
   final GlobalKey _mode1DropdownKey = GlobalKey(); // Mode 1 Material Dropdown Key
   final GlobalKey _materialIconKey = GlobalKey(); // New: Material Icon Key
-  final GlobalKey _chatIconKey = GlobalKey(); // AI Chat Icon Key
+  final GlobalKey _chatFabKey = GlobalKey(); // AI Chat FloatingActionButton Key
 
   // Mode 2 Keys
   final GlobalKey _mode2DropdownKey = GlobalKey();
@@ -180,14 +180,7 @@ class _HomeScreenState extends State<HomeScreen> {
         radius: 12,
       ));
 
-      // New: AI Chat Icon Tutorial
-      targets.add(_buildTarget(
-        _chatIconKey, 
-        l10n.tutorialAiChatTitle, 
-        l10n.tutorialAiChatDesc,
-        ContentAlign.bottom,
-        radius: 12,
-      ));
+
 
       targets.add(_buildTarget(
         _saveButtonKey, 
@@ -253,6 +246,14 @@ class _HomeScreenState extends State<HomeScreen> {
         radius: 12,
         shape: ShapeLightFocus.RRect,
         keepWidgetSize: true, 
+      ));
+    } else if (modeIndex == 3) {
+      targets.add(_buildTarget(
+        _chatFabKey, 
+        l10n.tutorialAiChatTitle, 
+        l10n.tutorialAiChatDesc,
+        ContentAlign.top,
+        radius: 28, 
       ));
     }
 
@@ -374,6 +375,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   case 2:
                     modeName = l10n.practiceModeTitle; // "발음 연습"
                     break;
+                  case 3:
+                    modeName = l10n.chatAiChat; // "AI 채팅"
+                    break;
                   default:
                     modeName = l10n.appTitle;
                 }
@@ -394,18 +398,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             actions: [
-              // AI Chat Button (Phase 11) - Points to History
-              IconButton(
-                key: _chatIconKey,
-                icon: const Icon(Icons.chat_bubble_outline),
-                tooltip: l10n.chatAiChat,
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const ChatHistoryScreen()),
-                  );
-                },
-              ),
               
               // Universal Material Selection Icon
               IconButton(
@@ -559,12 +551,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 ListTile(
                   leading: const Icon(Icons.chat_bubble),
                   title: Text(l10n.chatAiChat),
+                  selected: appState.currentMode == 3,
+                  selectedColor: const Color(0xFF667eea),
                   onTap: () {
+                    appState.switchMode(3);
                     Navigator.pop(context);
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const ChatHistoryScreen()),
-                    );
                   },
                 ),
               ],
@@ -597,6 +588,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 Mode3Widget(
                   materialDropdownKey: _mode3DropdownKey,
                   resetButtonKey: _mode3ResetKey,
+                ),
+                ChatHistoryScreen(
+                  isWidget: true,
+                  fabKey: _chatFabKey,
                 ),
               ],
             ),

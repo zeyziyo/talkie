@@ -60,7 +60,8 @@ Deno.serve(async (req) => {
 
         if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
             console.error('Gemini Error:', JSON.stringify(data));
-            throw new Error('Failed to get response from AI');
+            const errorMessage = data.error ? data.error.message : 'Unknown AI Error from Gemini';
+            throw new Error(`AI Request Failed: ${errorMessage}`);
         }
 
         const rawText = data.candidates[0].content.parts[0].text
