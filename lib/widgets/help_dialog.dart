@@ -326,6 +326,7 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
             ),
           ),
 
+          /*
           const SizedBox(height: 16),
           ElevatedButton.icon(
             onPressed: _launchUrl,
@@ -342,6 +343,7 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
               elevation: 0,
             ),
           ),
+          */
         ],
       ),
     );
