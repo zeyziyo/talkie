@@ -64,20 +64,21 @@ It provides an intuitive UX for switching modes by swiping the screen. In partic
 Talkie는 **43개 언어**를 지원합니다:
 Talkie supports **43 languages**:
 
-- **동아시아 (East Asia, 4)**: 한국어(Korean), 일본어(Japanese), 중국어 간체(Chinese Simplified), 중국어 번체(Chinese Traditional)
-- **유럽 (Europe, 17)**: 영어(English), 스페인어(Spanish), 프랑스어(French), 독일어(German), 이탈리아어(Italian), 포르투갈어(Portuguese), 러시아어(Russian), 폴란드어(Polish), 우크라이나어(Ukrainian), 네덜란드어(Dutch), 그리스어(Greek), 체코어(Czech), 루마니아어(Romanian), 스웨덴어(Swedish), 덴마크어(Danish), 핀란드어(Finnish), 노르웨이어(Norwegian), 헝가리어(Hungarian)
-- **남아시아 (South Asia, 10)**: 힌디어(Hindi), 벵골어(Bengali), 타밀어(Tamil), 텔루구어(Telugu), 마라티어(Marathi), 우르두어(Urdu), 구자라트어(Gujarati), 칸나다어(Kannada), 말라얄람어(Malayalam), 펀자브어(Punjabi)
-- **동남아시아 (Southeast Asia, 5)**: 인도네시아어(Indonesian), 베트남어(Vietnamese), 태국어(Thai), 필리핀어(Filipino), 말레이어(Malay)
-- **중동 (Middle East, 4)**: 아랍어(Arabic), 터키어(Turkish), 페르시아어(Persian), 히브리어(Hebrew)
-- **아프리카 (Africa, 2)**: 스와힐리어(Swahili), 아프리칸스어(Afrikaans)
+- **동아시아 (East Asia, 4)**: Korean, Japanese, Chinese (Simplified), Chinese (Traditional)
+- **유럽 (Europe, 17)**: English, Spanish, French, German, Italian, Portuguese, Russian, Polish, Ukrainian, Dutch, Greek, Czech, Romanian, Swedish, Danish, Finnish, Norwegian, Hungarian
+- **남아시아 (South Asia, 10)**: Hindi, Bengali, Tamil, Telugu, Marathi, Urdu, Gujarati, Kannada, Malayalam, Punjabi
+- **동남아시아 (Southeast Asia, 5)**: Indonesian, Vietnamese, Thai, Filipino, Malay
+- **중동 (Middle East, 4)**: Arabic, Turkish, Persian, Hebrew
+- **아프리카 (Africa, 2)**: Swahili, Afrikaans
 
 ## 기술 스택 (Tech Stack)
 
 - **Framework**: Flutter 3.10.4+
 - **State Management**: Provider
+- **Backend/Database**: Supabase (PostgreSQL, Edge Functions)
+- **AI/Translation**: Google Gemini API (via Supabase Edge Functions)
 - **STT**: speech_to_text (Google Speech Recognition)
 - **TTS**: flutter_tts
-- **Translation**: Google Translate API (Free)
 - **Audio**: record package
 
 ## 시작하기 (Getting Started)
@@ -123,7 +124,7 @@ flutter build apk --release
 - Windows Defender에서 차단할 수 있으므로 허용해주세요 (Allow in Windows Defender if blocked)
 
 ### Web
-- HTTPS 환경에서 마이크 접근이 가능합니다 (Microphone access requires HTTPS)
+- HTTPS 또는 localhost 환경에서 마이크 접근이 가능합니다 (Microphone access requires HTTPS or localhost)
 - `flutter run -d chrome` 사용 시 자동으로 localhost에서 실행됩니다 (Runs on localhost automatically)
 
 ## 프로젝트 구조 (Project Structure)
@@ -134,13 +135,14 @@ lib/
 ├── providers/
 │   └── app_state.dart           # Global State Management
 ├── services/
-│   ├── database_service.dart    # SQLite Database
+│   ├── database_service.dart    # SQLite Database (Local Cache)
 │   ├── speech_service.dart      # STT/TTS Services
-│   └── translation_service.dart # Translation Service
+│   ├── translation_service.dart # Translation Service
+│   └── supabase_service.dart    # Backend Integration (Supabase)
 ├── screens/
 │   ├── home_screen.dart         # Main Screen & Tutorial
-│   ├── chat_screen.dart         # AI Chat Interface
-│   └── chat_history_screen.dart # Conversation History
+│   ├── chat_screen.dart         # AI Chat Room
+│   └── chat_history_screen.dart # AI Chat History (Mode 4 Entry)
 ├── widgets/
 │   ├── mode1_widget.dart        # MODE 1: Search UI
 │   ├── mode2_widget.dart        # MODE 2: Study Material & Review UI
@@ -149,7 +151,7 @@ lib/
 └── l10n/                        # Internationalization (43 languages)
     ├── app_ko.arb               # Korean
     ├── app_en.arb               # English
-    ├── app_en.arb               # English
+
     └── ...
 
 ## 다국어 번역 (Localization)

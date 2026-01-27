@@ -428,7 +428,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       );
                       break;
                     case 'downloads':
-                      _launchURL('https://zeyziyo.github.io/talkie/index.html#downloads');
+                      _launchURL('https://zeyziyo.github.io/talkie/index.html');
                       break;
                     case 'settings':
                       _showLanguageSettingsDialog(context);

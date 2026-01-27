@@ -250,8 +250,16 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                               try {
                                 await appState.translate();
                               } catch (e) {
+                              } catch (e) {
                                 if (e is LimitReachedException && context.mounted) {
                                   _showLimitDialog(context, appState);
+                                } else if (context.mounted) {
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text('Translation Failed: $e'),
+                                      backgroundColor: Colors.red,
+                                    ),
+                                  );
                                 }
                               }
                             },
