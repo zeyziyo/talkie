@@ -717,6 +717,8 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                           backgroundColor: Colors.blue[50], 
                           onPressed: () {
                              appState.selectDisambiguationOption(option);
+                             // Trigger re-translation with the selected context
+                             appState.translate(context: context);
                           },
                         );
                       }).toList(),
@@ -729,7 +731,10 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                 SizedBox(
                   width: double.infinity,
                   child: TextButton(
-                    onPressed: () => appState.selectDisambiguationOption(''), // Skip
+                    onPressed: () {
+                      appState.selectDisambiguationOption(''); // Skip
+                      appState.translate(context: context); // Re-translate as generic
+                    },
                     child: Text(l10n.skip ?? '건너뛰기'),
                   ),
                 ),
