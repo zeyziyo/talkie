@@ -644,7 +644,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   DropdownButtonFormField<String>(
                     initialValue: tempSource,
                     decoration: const InputDecoration(border: OutlineInputBorder()),
-                    decoration: const InputDecoration(border: OutlineInputBorder()),
                     items: LanguageConstants.supportedLanguages.map((lang) {
                       return DropdownMenuItem<String>(
                         value: lang['code'],
@@ -671,7 +670,6 @@ class _HomeScreenState extends State<HomeScreen> {
                    const SizedBox(height: 8),
                    DropdownButtonFormField<String>(
                     initialValue: tempTarget,
-                    decoration: const InputDecoration(border: OutlineInputBorder()),
                     decoration: const InputDecoration(border: OutlineInputBorder()),
                     items: LanguageConstants.supportedLanguages.map((lang) {
                       return DropdownMenuItem<String>(

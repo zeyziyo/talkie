@@ -54,7 +54,7 @@ class TranslationService {
 
       final translatedText = result['translatedText'] as String;
       final isValid = result['isValid'] as bool? ?? false;
-      final note = result['note'] as String?;
+      final responseNote = result['note'] as String?;
       final disambiguationOptions = result['disambiguationOptions'] as List<dynamic>?; // New field
 
       if (!isValid) {
