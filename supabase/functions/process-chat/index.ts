@@ -53,33 +53,51 @@ Deno.serve(async (req) => {
         const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ contents })
+            body: JSON.stringify({
+                contents,
+                safetySettings: [
+                    { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_ONLY_HIGH' },
+                    { category: 'HARM_CATEGORY_HATE_SPEECH', threshold: 'BLOCK_ONLY_HIGH' },
+                    { category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT', threshold: 'BLOCK_ONLY_HIGH' },
+                    { category: 'HARM_CATEGORY_DANGEROUS_CONTENT', threshold: 'BLOCK_ONLY_HIGH' }
+                ]
+            })
         })
 
         const data = await response.json()
 
         if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
-            console.error('Gemini Error:', JSON.stringify(data));
-            const errorMessage = data.error ? data.error.message : 'Unknown AI Error from Gemini';
-            throw new Error(`AI Request Failed: ${errorMessage}`);
+            console.error('Gemini Chat Error:', JSON.stringify(data));
+            const geminiError = data.error?.message || 'Unknown AI Error';
+            throw new Error(`AI Request Failed: ${geminiError}`);
         }
 
         const rawText = data.candidates[0].content.parts[0].text
-        const jsonString = rawText.replace(/```json\n?|\n?```/g, '').trim()
+        console.log('Gemini Chat Raw Response:', rawText);
+
+        // Robust JSON extraction using regex (matches the first { and last })
+        const jsonMatch = rawText.match(/\{[\s\S]*\}/);
+        if (!jsonMatch) {
+            console.error('Failed to find JSON in response:', rawText);
+            throw new Error('AI returned non-JSON response');
+        }
+        const jsonString = jsonMatch[0];
+        console.log('Extracted JSON String:', jsonString);
 
         let result;
         try {
             result = JSON.parse(jsonString)
         } catch (e) {
-            throw new Error('AI returned invalid JSON format')
+            console.error('JSON Parse Error:', e, 'Content:', jsonString);
+            throw new Error('AI returned invalid JSON format');
         }
 
         return new Response(JSON.stringify(result), {
             headers: { ...corsHeaders, 'Content-Type': 'application/json; charset=utf-8' },
         })
 
-    } catch (error) {
-        return new Response(JSON.stringify({ error: error.message }), {
+    } catch (error: any) {
+        return new Response(JSON.stringify({ error: error.message || 'Unknown error' }), {
             status: 400,
             headers: { ...corsHeaders, 'Content-Type': 'application/json' },
         })

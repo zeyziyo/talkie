@@ -52,13 +52,12 @@ class TranslationService {
         note: note,
       );
 
-      final translatedText = result['translatedText'] as String;
+      final translatedText = (result['translatedText'] ?? result['text'] ?? '') as String;
       final isValid = result['isValid'] as bool? ?? false;
-      final responseNote = result['note'] as String?;
-      final disambiguationOptions = result['disambiguationOptions'] as List<dynamic>?; // New field
+      final reason = result['reason'] as String? ?? (isValid ? null : 'OTHER');
+      final disambiguationOptions = result['disambiguationOptions'] as List<dynamic>?;
 
       if (!isValid) {
-        final reason = result['reason'] ?? 'OTHER';
         print('[Translation] Blocked by AI: $reason');
         return {'text': '', 'isValid': false, 'reason': reason};
       }
@@ -81,7 +80,7 @@ class TranslationService {
 
     } catch (e) {
       print('[Translation] Error: $e');
-      return {'text': 'Error: $e', 'isValid': false};
+      return {'text': '', 'isValid': false, 'reason': 'Error: $e'};
     }
   }
 }

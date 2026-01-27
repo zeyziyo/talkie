@@ -512,7 +512,11 @@ class AppState extends ChangeNotifier {
                 break;
               case 'OTHER':
               default:
-                errorMsg = l10n.errorOtherSafety ?? reason;
+                if (reason.startsWith('Error:')) {
+                  errorMsg = reason;
+                } else {
+                  errorMsg = l10n.errorOtherSafety ?? reason;
+                }
                 break;
             }
           }
