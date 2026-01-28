@@ -750,7 +750,7 @@ class DatabaseService {
           createdAt: DateTime.now().toIso8601String(),
         );
 
-        if (i == 0) data['processed_material_id'] = materialId;
+        data['processed_material_id'] = materialId;
 
         for (var i = 0; i < entries.length; i++) {
           try {

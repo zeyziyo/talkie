@@ -97,13 +97,7 @@ class AppState extends ChangeNotifier {
   int _currentDialogueSequence = 0;
   List<DialogueGroup> _dialogueGroups = [];
   
-  bool _isWordMode = false; // Mode 1 Toggle (Word vs Sentence)
-  bool get isWordMode => _isWordMode;
 
-  void toggleWordMode() {
-    _isWordMode = !_isWordMode;
-    notifyListeners();
-  }
 
   // Getters
   int get currentMode => _currentMode;
@@ -2134,5 +2128,18 @@ class AppState extends ChangeNotifier {
       speaker: finalSpeaker,
       sequenceOrder: _currentDialogueSequence,
     );
+  }
+
+  String getServiceLocale(String langCode) {
+    switch (langCode) {
+      case 'ko': return 'ko-KR';
+      case 'en': return 'en-US';
+      case 'ja': return 'ja-JP';
+      case 'zh': return 'zh-CN';
+      case 'es': return 'es-ES';
+      case 'fr': return 'fr-FR';
+      case 'de': return 'de-DE';
+      default: return langCode;
+    }
   }
 }
