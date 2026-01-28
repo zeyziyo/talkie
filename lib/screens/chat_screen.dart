@@ -5,8 +5,11 @@ import '../models/dialogue_group.dart';
 import '../services/supabase_service.dart';
 import '../services/database_service.dart';
 import '../services/speech_service.dart';
-import '../services/translation_service.dart'; // [New Import]
+import '../services/translation_service.dart';
 import '../l10n/app_localizations.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:geocoding/geocoding.dart';
+import 'package:intl/intl.dart';
 
 class ChatScreen extends StatefulWidget {
   final DialogueGroup? initialDialogue;
@@ -21,7 +24,10 @@ class _ChatScreenState extends State<ChatScreen> {
   final ScrollController _scrollController = ScrollController();
   List<Map<String, dynamic>> _messages = [];
   bool _isLoading = false;
-  final SpeechService _speechService = SpeechService(); // Instance for TTS
+  final SpeechService _speechService = SpeechService();
+  
+  bool _isPartnerMode = false; // Toggle for Real Person Chat
+  bool _isPartnerTurn = false; // For Mic Logic (True = Listen in Target Lang)
 
   @override
   void initState() {
@@ -51,22 +57,58 @@ class _ChatScreenState extends State<ChatScreen> {
     });
   }
 
+  // Helper to get GPS Context
+  Future<String> _getLocationString(AppLocalizations l10n) async {
+    try {
+      LocationPermission permission = await Geolocator.checkPermission();
+      if (permission == LocationPermission.denied) {
+        permission = await Geolocator.requestPermission();
+        if (permission == LocationPermission.denied) return '';
+      }
+      
+      if (permission == LocationPermission.deniedForever) return '';
+
+      final position = await Geolocator.getCurrentPosition();
+      final placemarks = await placemarkFromCoordinates(position.latitude, position.longitude);
+      
+      if (placemarks.isNotEmpty) {
+        final place = placemarks.first;
+        // e.g. Seoul, Korea
+        return '${place.locality ?? place.subAdministrativeArea}, ${place.country}';
+      }
+    } catch (e) {
+      debugPrint('GPS Error: $e');
+    }
+    return '';
+  }
+
   Future<void> _sendMessage(AppLocalizations l10n) async {
     final text = _textController.text.trim();
     if (text.isEmpty) return;
 
     final appState = Provider.of<AppState>(context, listen: false);
     
-    // 1. Translate User Input (Source -> Target) immediately
-    String userTranslation = '';
+    // Determine Speaker & Input Language
+    // If PartneMode AND PartnerTurn -> Speaker is Partner (Opponent), Input is Target Lang
+    // If PartneMode AND !PartnerTurn -> Speaker is User, Input is Source Lang
+    // If !PartnerMode -> Speaker is User (always), Input is Source Lang
+    
+    // However, text field input is manually typed. Usually assumes Source Lang for User.
+    // If Partner Mode manual type, maybe we assume Partner typed it?
+    // Let's rely on _isPartnerTurn toggle for manual input too if "Partner Mode" is active.
+    
+    final isPartnerMessage = _isPartnerMode && _isPartnerTurn;
+    final inputLang = isPartnerMessage ? appState.targetLang : appState.sourceLang;
+    final outputLang = isPartnerMessage ? appState.sourceLang : appState.targetLang;
+    
+    String translatedText = '';
     
     setState(() {
        _isLoading = true;
-       // Add placeholder message first
        _messages.add({
-        'speaker': 'User',
-        'source_text': text,
-        'target_text': '', // Will update after translation
+        'speaker': isPartnerMessage ? (l10n.partner ?? 'Partner') : 'User',
+        'source_text': text, // Primary text (Original)
+        'target_text': '',   // Translated
       });
     });
     
@@ -74,23 +116,80 @@ class _ChatScreenState extends State<ChatScreen> {
     _scrollToBottom();
 
     try {
-      // 1.1 Perform Translation
+      // 1. Translate (Bidirectional based on sender)
       final translationResult = await TranslationService.translate(
         text: text,
-        sourceLang: appState.sourceLang, // e.g. 'ko'
-        targetLang: appState.targetLang, // e.g. 'en'
+        sourceLang: inputLang, 
+        targetLang: outputLang,
       );
       
-      userTranslation = translationResult['text'] as String? ?? '';
+      translatedText = translationResult['text'] as String? ?? '';
 
-      // Update the last message (User's) with translation
+      // Update local message
       setState(() {
-        _messages.last['target_text'] = userTranslation;
+        _messages.last['target_text'] = translatedText;
       });
 
-      // 2. Process Chat with AI
-      // Build history for context
-      final history = _messages.map((msg) {
+      // 2. Process Next Step (AI or Save Partner Msg)
+      if (_isPartnerMode) {
+         // Partner Mode: Just save the validated message pair (No AI processing)
+         await _savePartnerMessage(
+           appState, 
+           text, // original
+           inputLang,
+           translatedText, // translation
+           outputLang,
+           isPartnerMessage ? (l10n.partner ?? 'Partner') : 'User'
+        );
+        
+        setState(() => _isLoading = false);
+        
+        // Auto-switch turn? Maybe useful.
+        setState(() => _isPartnerTurn = !isPartnerMessage);
+
+      } else {
+        // AI Mode: Process Chat with GPS Context
+         await _processAiChat(appState, text, translatedText, l10n);
+      }
+      
+      _scrollToBottom();
+
+    } catch (e) {
+      setState(() => _isLoading = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(l10n.chatFailed(e.toString()))),
+      );
+    }
+  }
+
+  Future<void> _savePartnerMessage(AppState appState, String source, String sLang, String target, String tLang, String speaker) async {
+      // Create a dialogue group if none
+      if (appState.activeDialogueId == null) {
+         await appState.startNewDialogue(persona: 'Partner');
+      }
+      
+      // Save Message (We reuse saveAiResponse logic or call save directly)
+      // saveAiResponse assumes Source->Target.
+      // Here we might have Target->Source (Partner).
+      // But database expects Source/Target fields.
+      // Let's align: DB 'source_text' is what was spoken/typed. 'target_text' is translation.
+      // 'speaker' field distinguishes who said it.
+      
+      await appState.saveAiResponse(
+        source, // Original
+        target, // Translation
+        speaker: speaker
+      );
+  }
+
+  Future<void> _processAiChat(AppState appState, String userText, String userTranslation, AppLocalizations l10n) async {
+      // Get GPS Context
+      final location = await _getLocationString(l10n);
+      final currentLocationLabel = l10n.currentLocation ?? 'Current Location';
+      final contextString = '${appState.activeDialogueTitle ?? "None"}. ${location.isNotEmpty ? "$currentLocationLabel: $location" : ""}';
+
+      // Build History
+      final history = _messages.where((m) => m['speaker'] != 'Partner').map((msg) {
         return {
           'role': msg['speaker'] == 'User' ? 'user' : 'model',
           'parts': [{'text': msg['source_text'] ?? ''}]
@@ -98,8 +197,8 @@ class _ChatScreenState extends State<ChatScreen> {
       }).toList();
 
       final result = await SupabaseService.processChat(
-        text: text,
-        context: appState.activeDialogueTitle ?? 'None',
+        text: userText,
+        context: contextString,
         targetLang: appState.targetLang,
         history: history,
       );
@@ -113,33 +212,46 @@ class _ChatScreenState extends State<ChatScreen> {
       if (suggestedTitle != null && 
           (appState.activeDialogueTitle == 'New Conversation' || appState.activeDialogueTitle == l10n.chatUntitled) &&
           appState.activeDialogueId != null) {
-        await SupabaseService.updateDialogueTitle(appState.activeDialogueId!, suggestedTitle);
+        
+        // Append Location to Title if available
+        String finalTitle = suggestedTitle;
+        if (location.isNotEmpty) {
+           finalTitle = '$finalTitle @ ${location.split(',')[0]}';
+        }
+        
+        await SupabaseService.updateDialogueTitle(appState.activeDialogueId!, finalTitle);
         await appState.loadDialogueGroups();
       }
 
-      setState(() {
-        _messages.add({
-          'speaker': 'AI',
-          'source_text': aiResponse, // AI replies in Target Language usually
-          'target_text': translation, // Translation in Source Language
+      if (mounted) {
+        setState(() {
+          _messages.add({
+            'speaker': 'AI',
+            'source_text': aiResponse, 
+            'target_text': translation,
+          });
+          _isLoading = false;
         });
-        _isLoading = false;
-      });
-      _scrollToBottom();
-
-    } catch (e) {
-      setState(() {
-        _isLoading = false;
-      });
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.chatFailed(e.toString()))),
-      );
-    }
+      }
   }
 
   Future<void> _endChat(AppLocalizations l10n) async {
     final appState = Provider.of<AppState>(context, listen: false);
-    final controller = TextEditingController(text: appState.activeDialogueTitle);
+    
+    // Auto-generate title with Date/Time/Location if empty or default
+    String currentTitle = appState.activeDialogueTitle ?? '';
+    
+    // If it's still default, let's pre-fill with something useful
+    if (currentTitle == 'New Conversation' || currentTitle == l10n.chatUntitled) {
+       final now = DateTime.now();
+       final dateStr = DateFormat('MM/dd HH:mm').format(now);
+       final location = await _getLocationString(l10n);
+       currentTitle = location.isNotEmpty ? '$location ($dateStr)' : 'Chat $dateStr';
+    }
+
+    final controller = TextEditingController(text: currentTitle);
+
+    if (!mounted) return;
 
     return showDialog(
       context: context,
@@ -170,23 +282,19 @@ class _ChatScreenState extends State<ChatScreen> {
             onPressed: () async {
               try {
                 final newTitle = controller.text.trim();
-                // 1. Update Title if provided (or keep existing/default)
+                
                 if (newTitle.isNotEmpty && appState.activeDialogueId != null) {
                   await SupabaseService.updateDialogueTitle(appState.activeDialogueId!, newTitle);
-                } else if (appState.activeDialogueId == null) {
-                   debugPrint('Error: activeDialogueId is null, cannot save title.');
                 }
                 
-                // 2. Refresh List
+                // IMPORTANT: Refresh List explicitly to ensure visibility
                 await appState.loadDialogueGroups();
 
-                // 3. Close Dialog & Exit Screen
                 if (context.mounted) {
-                   Navigator.of(dialogContext).pop(); // Close Dialog
-                   Navigator.of(context).pop(); // Exit Chat Screen
+                   Navigator.of(dialogContext).pop(); 
+                   Navigator.of(context).pop(); 
                 }
               } catch (e) {
-                // Handle Error
                 if (context.mounted) {
                    ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(content: Text('Error: $e')),
@@ -201,8 +309,6 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-
-
   bool _isListening = false;
   Future<void> _startListening(AppLocalizations l10n) async {
     final appState = Provider.of<AppState>(context, listen: false);
@@ -210,8 +316,33 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() => _isListening = true);
 
     try {
+      // Determine Language based on Partner Mode Key
+      // If Partner Turn: Listen in Target Lang
+      // Else: Listen in Source Lang
+      
+      final isPartnerListen = _isPartnerMode && _isPartnerTurn;
+      final listenLang = isPartnerListen ? appState.targetLang : appState.sourceLang;
+
+      await appState.startListening(
+        languageCode: listenLang,
+      );
+      
+      // We need to continuously update local controller from AppState sourceText?
+      // Wait, AppState.startListening updates AppState.sourceText.
+      // But Chat Screen has its own controller `_textController`.
+      // The callback below is what connects them.
+      // Wait, AppState `startListening` calls `setSourceText`.
+      // I should listen to AppState changes or pass a callback?
+      // Actually, my `_startListening` here calls `_speechService.startSTT` directly in the OLD code.
+      // Do I use `appState.startListening` or `_speechService` directly?
+      // `appState.startListening` is better for global state management but `ChatScreen` has local text controller.
+      // Let's stick to using `_speechService` DIRECTLY here to avoid conflicting with Mode 1 text state.
+      
       await _speechService.startSTT(
-        lang: appState.sourceLang == 'ko' ? 'ko-KR' : 'en-US', 
+        lang: appState.getServiceLocale(listenLang), // I need to expose this helper or duplicate logic
+        // Helper `_getServiceLocale` is private in AppState.
+        // Let's imply generic locale string construction:
+        listenFor: const Duration(seconds: 30),
         onResult: (text, isFinal, alternates) {
           setState(() {
             _textController.text = text;
@@ -223,23 +354,24 @@ class _ChatScreenState extends State<ChatScreen> {
         },
       );
     } catch (e) {
-      setState(() => _isListening = false);
+      setState(() => _isLoading = false);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(l10n.recognitionFailed(e.toString()))),
       );
     }
   }
   
-  // Helper to Speak Text
   void _speak(String text, String languageCode) {
     if (text.isEmpty) return;
-    // Map language code to locale if needed (e.g., 'en' -> 'en-US', 'ko' -> 'ko-KR')
     String localeId = 'en-US';
     if (languageCode == 'ko') localeId = 'ko-KR';
     else if (languageCode == 'en') localeId = 'en-US';
     else if (languageCode == 'ja') localeId = 'ja-JP';
     else if (languageCode == 'zh') localeId = 'zh-CN';
-    else localeId = languageCode; // Fallback
+    else if (languageCode == 'es') localeId = 'es-ES';
+    else if (languageCode == 'fr') localeId = 'fr-FR';
+    else if (languageCode == 'de') localeId = 'de-DE';
+    else localeId = languageCode;
 
     _speechService.speak(text, lang: localeId);
   }
@@ -251,11 +383,31 @@ class _ChatScreenState extends State<ChatScreen> {
     
     return Scaffold(
       appBar: AppBar(
-        title: Text(appState.activeDialogueTitle ?? l10n.chatAiChat),
-        backgroundColor: const Color(0xFF667eea),
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(appState.activeDialogueTitle ?? l10n.chatAiChat, style: const TextStyle(fontSize: 16)),
+            if (_isPartnerMode)
+               Text(
+                 '${l10n.partnerMode ?? "Partner Mode"}: ${l10n.manual ?? "Manual"}', 
+                 style: const TextStyle(fontSize: 12, color: Colors.white70)
+               ),
+          ],
+        ),
+        backgroundColor: _isPartnerMode ? Colors.teal : const Color(0xFF667eea),
         foregroundColor: Colors.white,
         actions: [
-
+          // Partner Mode Toggle
+          IconButton(
+            icon: Icon(_isPartnerMode ? Icons.person : Icons.smart_toy),
+            tooltip: _isPartnerMode ? (l10n.switchToAi ?? 'Switch to AI') : (l10n.switchToPartner ?? 'Switch to Partner'),
+            onPressed: () {
+              setState(() {
+                _isPartnerMode = !_isPartnerMode;
+                _isPartnerTurn = false; // Reset to User turn
+              });
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.exit_to_app),
             onPressed: () => _endChat(l10n),
@@ -288,18 +440,26 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Widget _buildMessageBubble(Map<String, dynamic> msg, AppState appState, AppLocalizations l10n) {
-    final isUser = msg['speaker'] == 'User';
-    final primaryText = msg['source_text'] ?? '';
-    final secondaryText = msg['target_text'] ?? '';
+    final speaker = msg['speaker'];
+    final isUser = speaker == 'User';
+    final isPartner = speaker == (l10n.partner ?? 'Partner');
+    
+    // Layout alignment: User Right, AI/Partner Left
+    final alignment = isUser ? Alignment.centerRight : Alignment.centerLeft;
+    final color = isUser ? Colors.blue[50] : (isPartner ? Colors.teal[50] : Colors.white);
+    final textColor = isUser ? Colors.blue[900] : (isPartner ? Colors.teal[900] : Colors.black87);
     
     // Determine Languages for TTS
-    // If User: Primary is SourceLang, Secondary is TargetLang
-    // If AI: Primary is TargetLang (usually), Secondary is SourceLang
+    // User: Source (Primary), Target (Secondary)
+    // Partner: Target (Primary), Source (Secondary)
     final primaryLang = isUser ? appState.sourceLang : appState.targetLang;
     final secondaryLang = isUser ? appState.targetLang : appState.sourceLang;
+    
+    final primaryText = msg['source_text'] ?? '';
+    final secondaryText = msg['target_text'] ?? '';
 
     return Align(
-      alignment: isUser ? Alignment.centerRight : Alignment.centerLeft,
+      alignment: alignment,
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 4),
         padding: const EdgeInsets.all(12),
@@ -311,33 +471,30 @@ class _ChatScreenState extends State<ChatScreen> {
             Padding(
               padding: const EdgeInsets.only(bottom: 4, left: 4, right: 4),
               child: Text(
-                isUser ? l10n.me : (msg['speaker'] ?? 'AI'),
+                speaker ?? 'AI',
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: isUser ? Colors.blue[700] : Colors.grey[600],
+                  color: Colors.grey[600],
                 ),
               ),
             ),
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: isUser ? Colors.blue[50] : Colors.white,
+                color: color,
                 borderRadius: BorderRadius.circular(16).copyWith(
                   topRight: isUser ? const Radius.circular(0) : const Radius.circular(16),
                   topLeft: isUser ? const Radius.circular(16) : const Radius.circular(0),
                 ),
                 boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.05),
-                    blurRadius: 2,
-                  ),
+                  BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 2),
                 ],
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Primary Text (and TTS)
+                  // Primary Text (Spoken/Original)
                   Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -346,8 +503,8 @@ class _ChatScreenState extends State<ChatScreen> {
                           primaryText,
                           style: TextStyle(
                             fontSize: 16,
-                            color: isUser ? Colors.blue[900] : Colors.black87,
-                            fontWeight: isUser ? FontWeight.w500 : FontWeight.normal,
+                            color: textColor,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
                       ),
@@ -355,14 +512,13 @@ class _ChatScreenState extends State<ChatScreen> {
                         IconButton(
                           icon: const Icon(Icons.volume_up, size: 20, color: Colors.grey),
                           onPressed: () => _speak(primaryText, primaryLang),
-                          padding: EdgeInsets.zero,
                           constraints: const BoxConstraints(),
-                          visualDensity: VisualDensity.compact,
+                          padding: const EdgeInsets.only(left: 4),
                         ),
                     ],
                   ),
                   
-                  // Secondary Text (and TTS)
+                  // Secondary Text (Translation)
                   if (secondaryText.isNotEmpty)
                     Padding(
                       padding: const EdgeInsets.only(top: 6),
@@ -386,9 +542,8 @@ class _ChatScreenState extends State<ChatScreen> {
                               IconButton(
                                 icon: const Icon(Icons.volume_up, size: 18, color: Colors.grey),
                                 onPressed: () => _speak(secondaryText, secondaryLang),
-                                padding: EdgeInsets.zero,
                                 constraints: const BoxConstraints(),
-                                visualDensity: VisualDensity.compact,
+                                padding: const EdgeInsets.only(left: 4),
                               ),
                             ],
                           ),
@@ -413,48 +568,81 @@ class _ChatScreenState extends State<ChatScreen> {
         bottom: MediaQuery.of(context).padding.bottom + 8
       ),
       decoration: BoxDecoration(
-        color: Colors.grey[50],
+        color: _isPartnerMode ? Colors.teal.shade50 : Colors.grey[50],
         border: Border(top: BorderSide(color: Colors.grey[300]!)),
       ),
-      child: Row(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          IconButton(
-            icon: Icon(
-              _isListening ? Icons.stop_circle : Icons.mic,
-              color: _isListening ? Colors.red : Colors.blue,
+          // Partner Turn Indicator / Toggle
+          if (_isPartnerMode)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                   Text(l10n.speaker ?? 'Speaker: '),
+                   Switch(
+                     value: _isPartnerTurn,
+                     activeColor: Colors.teal,
+                     onChanged: (val) {
+                       setState(() => _isPartnerTurn = val);
+                     },
+                   ),
+                   Text(
+                     _isPartnerTurn ? (l10n.partner ?? 'Partner') : (l10n.me ?? 'Me'),
+                     style: TextStyle(
+                       fontWeight: FontWeight.bold,
+                       color: _isPartnerTurn ? Colors.teal : Colors.blue,
+                     ),
+                   ),
+                ],
+              ),
             ),
-            onPressed: () {
-              if (_isListening) {
-                _speechService.stopSTT();
-                setState(() => _isListening = false);
-              } else {
-                _startListening(l10n);
-              }
-            },
-          ),
-          Expanded(
-            child: TextField(
-              controller: _textController,
-              decoration: InputDecoration(
-                hintText: l10n.chatTypeHint,
-                filled: true,
-                fillColor: Colors.white,
-                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(24),
-                  borderSide: BorderSide.none,
+
+          Row(
+            children: [
+              IconButton(
+                icon: Icon(
+                  _isListening ? Icons.stop_circle : Icons.mic,
+                  color: _isListening ? Colors.red : (_isPartnerTurn ? Colors.teal : Colors.blue),
+                ),
+                onPressed: () {
+                  if (_isListening) {
+                    _speechService.stopSTT();
+                    setState(() => _isListening = false);
+                  } else {
+                    _startListening(l10n);
+                  }
+                },
+              ),
+              Expanded(
+                child: TextField(
+                  controller: _textController,
+                  decoration: InputDecoration(
+                    hintText: _isPartnerMode 
+                        ? (_isPartnerTurn ? '${l10n.partner ?? "Partner"} (${appState.targetLang})...' : '${l10n.me ?? "Me"} (${appState.sourceLang})...')
+                        : l10n.chatTypeHint,
+                    filled: true,
+                    fillColor: Colors.white,
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(24),
+                      borderSide: BorderSide.none,
+                    ),
+                  ),
+                  onSubmitted: (_) => _sendMessage(l10n),
                 ),
               ),
-              onSubmitted: (_) => _sendMessage(l10n),
-            ),
-          ),
-          const SizedBox(width: 4),
-          CircleAvatar(
-            backgroundColor: const Color(0xFF667eea),
-            child: IconButton(
-              icon: const Icon(Icons.send, color: Colors.white),
-              onPressed: () => _sendMessage(l10n),
-            ),
+              const SizedBox(width: 4),
+              CircleAvatar(
+                backgroundColor: _isPartnerMode ? Colors.teal : const Color(0xFF667eea),
+                child: IconButton(
+                  icon: const Icon(Icons.send, color: Colors.white),
+                  onPressed: () => _sendMessage(l10n),
+                ),
+              ),
+            ],
           ),
         ],
       ),

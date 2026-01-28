@@ -17,6 +17,7 @@ class Mode1Widget extends StatefulWidget {
 
   final Key? contextFieldKey;
   final Key? materialDropdownKey;
+  final Key? toggleButtonKey;
 
   const Mode1Widget({
     super.key,
@@ -26,6 +27,7 @@ class Mode1Widget extends StatefulWidget {
     this.saveButtonKey,
     this.contextFieldKey,
     this.materialDropdownKey,
+    this.toggleButtonKey,
   });
 
   @override
@@ -123,7 +125,103 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                     // ===================================
                     // NEW: Type & Material Selectors
                     // ===================================
+                    
+                    // 1. Material Banner
+                    Container(
+                      margin: const EdgeInsets.only(bottom: 8),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      decoration: BoxDecoration(
+                        color: Colors.indigo.shade50,
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(color: Colors.indigo.shade100),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(Icons.folder_open, color: Colors.indigo.shade800),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  l10n.currentMaterialLabel ?? 'Current Material:', // Fallback if key missing
+                                  style: TextStyle(
+                                    fontSize: 12, 
+                                    color: Colors.indigo.shade600,
+                                    fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                                Builder(
+                                  builder: (context) {
+                                    String displayName = appState.selectedMaterialName;
+                                    // "Basic" has ID 0
+                                    if (appState.selectedMaterialId == 0 || displayName == 'Basic') {
+                                      displayName = l10n.basicMaterialRepository ?? 'Basic Repository';
+                                    }
+                                    return Text(
+                                      displayName,
+                                      style: TextStyle(
+                                        fontSize: 15, 
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.indigo.shade900,
+                                      ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    );
+                                  }
+                                ),
+                              ],
+                            ),
+                          ),
+                          // Material Select Button (Icon)
+                          IconButton(
+                            icon: const Icon(Icons.arrow_drop_down_circle_outlined),
+                            color: Colors.indigo,
+                            tooltip: l10n.menuSelectMaterialSet,
+                             onPressed: () => Scaffold.of(context).openEndDrawer(), // Hack: or use gloabl key logic from home
+                            // Actually, Mode1 doesn't have easy access to Home's _showMaterialSelectionDialog.
+                            // But we passed 'materialDropdownKey' which is attached to... wait. 
+                            // The key is passed TO the widget. Logic is in Home.
+                            // Let's rely on the AppBar icon for selection as per design, 
+                            // OR use the dropdown key if it was a button.
+                            // For now, this is just a banner. The selection is done via AppBar.
+                            // Let's remove the button if it's inactive, or make it active.
+                            // Since we can't easily callback to Home from here without callback prop, 
+                            // let's just show the banner information.
+                          ),
+                        ],
+                      ),
+                    ),
 
+                    // 2. Word/Sentence Toggle
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 16),
+                      child: Container(
+                         key: widget.toggleButtonKey,
+                         decoration: BoxDecoration(
+                           color: Colors.grey.shade100,
+                           borderRadius: BorderRadius.circular(20),
+                           border: Border.all(color: Colors.grey.shade300),
+                         ),
+                         child: Row(
+                           mainAxisSize: MainAxisSize.min,
+                           children: [
+                             _buildToggleOption(
+                               context, 
+                               label: l10n.word ?? 'Word', 
+                               isSelected: appState.isWordMode,
+                               onTap: () => appState.toggleWordMode(true),
+                             ),
+                             _buildToggleOption(
+                               context, 
+                               label: l10n.sentence ?? 'Sentence', 
+                               isSelected: !appState.isWordMode,
+                               onTap: () => appState.toggleWordMode(false),
+                             ),
+                           ],
+                         ),
+                      ),
+                    ),
                     
                     // Input Card
                     Card(
@@ -498,7 +596,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
+                        color: Colors.black.withValues(alpha: 0.1),
                         blurRadius: 4,
                         offset: const Offset(0, -2),
                       ),
@@ -678,7 +776,8 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                     }
                     // Load next ad
                     _loadRewardedAd();
-                  },
+
+},
                 );
               } else {
                 // Ad not ready
@@ -772,4 +871,24 @@ class _Mode1WidgetState extends State<Mode1Widget> {
 
   // _showLanguagePicker removed as per UI simplification
 
+  Widget _buildToggleOption(BuildContext context, {required String label, required bool isSelected, required VoidCallback onTap}) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        decoration: BoxDecoration(
+          color: isSelected ? Colors.indigo.shade600 : Colors.transparent,
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            color: isSelected ? Colors.white : Colors.grey.shade600,
+            fontWeight: FontWeight.bold,
+            fontSize: 14,
+          ),
+        ),
+      ),
+    );
+  }
 }

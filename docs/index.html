@@ -88,7 +88,7 @@
             background: white;
             padding: 2rem;
             border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             text-align: center;
             max-width: 800px;
             margin: 0 auto 3rem auto;
@@ -134,16 +134,17 @@
         }
 
         .result-container {
-            display: none; /* Hidden by default */
+            display: none;
+            /* Hidden by default */
             margin-top: 2rem;
             text-align: left;
         }
 
         .materials-grid {
-             display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-             gap: 1.5rem;
-             margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
         }
 
         .material-card {
@@ -156,7 +157,7 @@
 
         .material-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .card-header {
@@ -238,9 +239,17 @@
         }
 
         @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
-            .input-group { flex-direction: column; }
-            .language-input { max-width: 100%; }
+            h1 {
+                font-size: 2rem;
+            }
+
+            .input-group {
+                flex-direction: column;
+            }
+
+            .language-input {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -252,22 +261,27 @@
             <img src="website_assets/app_icon.png" alt="Talkie App Icon" class="app-logo">
             <h1 translate="no">Talkie</h1>
             <p class="tagline">Speak Confidently with AI</p>
-            <a href="https://play.google.com/store/apps/details?id=com.zeyziyo.talkie" class="cta-button" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=com.zeyziyo.talkie" class="cta-button"
+                target="_blank">
                 Download on Google Play
             </a>
             <a href="guide.html" class="cta-button" style="background-color: white; color: var(--primary-color);">
                 User Guide
             </a>
             <br>
-            <img src="website_assets/hero.jpg" alt="Talkie App Preview" class="hero-image" style="width: 100%; max-width: 800px; border-radius: 12px; margin-top: 2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.15);">
+            <img src="website_assets/hero.jpg" alt="Talkie App Preview" class="hero-image"
+                style="width: 100%; max-width: 800px; border-radius: 12px; margin-top: 2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.15);">
         </div>
     </header>
 
     <section id="downloads">
         <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">Custom Study Materials</h2>
         <p style="text-align: center; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-            Enter your <strong>Mother Tongue</strong> and <strong>Target Language</strong> to generate a customized study file.
+            Enter your <strong>Mother Tongue</strong> and <strong>Target Language</strong> to generate a customized
+            study file.
             <br>Download the merged JSON file and import it directly into Talkie (Mode 2/3).
+            <br><span style="color: #667eea; font-weight: bold; font-size: 0.9em;">Please search in English (e.g.
+                "Korean", NOT "한국어").</span>
         </p>
 
         <div class="search-container">
@@ -282,7 +296,7 @@
         <div id="resultsArea" class="result-container">
             <h3 style="text-align: center;">Available Materials</h3>
             <p style="text-align: center; color: #666;" id="pairDisplay"></p>
-            
+
             <div class="materials-grid" id="materialsGrid">
                 <!-- Javascript will populate this -->
             </div>
@@ -300,7 +314,8 @@
             <div class="feature-card">
                 <div class="feature-icon">🌐</div>
                 <h3>Instant Translation</h3>
-                <p>Support for 40+ languages. Speak in your native tongue and learn how to say it in your target language instantly.</p>
+                <p>Support for 40+ languages. Speak in your native tongue and learn how to say it in your target
+                    language instantly.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📚</div>
@@ -321,11 +336,11 @@
 
     <script>
         const languages = [
-            "Afrikaans", "Amharic", "Arabic", "Bengali", "Burmese", "Chinese (Simplified)", "Chinese (Traditional)", 
-            "Czech", "Danish", "Dutch", "English", "Filipino", "Finnish", "French", "German", "Greek", "Gujarati", 
-            "Hebrew", "Hindi", "Hungarian", "Indonesian", "Italian", "Japanese", "Kannada", "Khmer", "Korean", 
-            "Lao", "Malay", "Malayalam", "Marathi", "Nepali", "Norwegian", "Persian", "Polish", "Portuguese", 
-            "Punjabi", "Romanian", "Russian", "Sinhala", "Slovak", "Spanish", "Swahili", "Swedish", "Tamil", 
+            "Afrikaans", "Amharic", "Arabic", "Bengali", "Burmese", "Chinese (Simplified)", "Chinese (Traditional)",
+            "Czech", "Danish", "Dutch", "English", "Filipino", "Finnish", "French", "German", "Greek", "Gujarati",
+            "Hebrew", "Hindi", "Hungarian", "Indonesian", "Italian", "Japanese", "Kannada", "Khmer", "Korean",
+            "Lao", "Malay", "Malayalam", "Marathi", "Nepali", "Norwegian", "Persian", "Polish", "Portuguese",
+            "Punjabi", "Romanian", "Russian", "Sinhala", "Slovak", "Spanish", "Swahili", "Swedish", "Tamil",
             "Telugu", "Thai", "Turkish", "Ukrainian", "Urdu", "Vietnamese", "Xhosa", "Zulu"
         ];
 
@@ -384,8 +399,8 @@
                 return;
             }
             if (sourceLang === targetLang) {
-                 showError("Mother Tongue and Target Language cannot be the same.");
-                 return;
+                showError("Mother Tongue and Target Language cannot be the same.");
+                return;
             }
 
             // Success: Render Cards
@@ -441,7 +456,7 @@
                 for (let i = 0; i < maxLen; i++) {
                     const s = sourceData.entries[i];
                     const t = targetData.entries[i];
-                    
+
                     mergedEntries.push({
                         source_text: s.text,
                         target_text: t.text,
@@ -476,4 +491,5 @@
     </script>
 
 </body>
+
 </html>

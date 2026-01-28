@@ -1,5 +1,33 @@
 {
   "@@locale": "ko",
+  "helpTitle": "도움말 및 가이드",
+  "helpTabModes": "기능 소개",
+  "helpTabJson": "JSON 형식",
+  "helpTabTour": "튜토리얼",
+  "helpMode1Desc": "음성을 인식하여 번역하고, 결과를 듣습니다. 화면을 옆으로 밀어(Swipe) 모드를 전환할 수 있습니다.",
+  "helpMode1Details": "• 모드 전환: 화면을 옆으로 밀거(Swipe)나 왼쪽 메뉴(Drawer) 이용\n• 상황 설정: 입력창 아래 '상황/문맥' 칸에 상황(예: 아침, 식당) 입력\n• 음성 입력: 마이크 아이콘을 눌러 말하기/멈추기\n• 번역 및 저장: '번역' 후 하단 '데이터 저장' 버튼으로 기록 보관\n• 도움말: 상단 물음표 아이콘으로 가이드 확인",
+  "helpMode2Desc": "저장된 문장을 복습합니다. 상단 자료집 아이콘(📚)으로 원하는 자료를 선택하세요.",
+  "helpMode2Details": "• 자료 선택: 상단 앱바의 자료집 아이콘(📚) 클릭\n• 카드 뒤집기: '보이기/숨기기' 버튼으로 번역 확인\n• 학습 체크: 완료된 문장은 체크 표시 (V)\n• 삭제: 카드를 길게 누르면 삭제 가능\n• 자동 재생: 우측 상단 '자동 재생'으로 연속 학습 가능",
+  "helpMode3Desc": "학습 자료를 원어민 음성으로 고 듣고 shadowing(따라 말하기) 연습을 합니다.",
+  "helpMode3Details": "• 자료 선택: 상단 앱바의 자료집 아이콘(📚) 클릭\n• 시작/정지: 재생 버튼으로 세션 제어\n• 발음 평가: 내 발음을 인식하여 정확도 점수 표시\n• 간격 조절: [-] [+] 버튼으로 대기 시간 설정",
+  "helpModeChatDesc": "AI 페르소나와 대화하며 실전 회화를 연습하고 유용한 문장을 저장하세요.",
+  "helpModeChatDetails": "• 채팅 시작: 상단 메뉴의 말풍선 아이콘 클릭\n• 페르소나 선택: 선생님, 가이드, 친구 중 선택\n• 대화 및 저장: AI 응답은 자동 번역됩니다. 메시지를 클릭하여 복습 모드로 저장하세요\n• 2개 국어 표시: 모든 메시지에 대해 모국어와 학습 언어를 함께 표시합니다\n• 듣기 기능 (TTS): 스피커 아이콘을 눌러 각 언어의 발음을 들어보세요\n• 자동 제목: 대화 주제에 따라 AI가 제목을 추천합니다\n• 이력 관리: 과거 대화 내용을 언제든 다시 확인할 수 있습니다",
+  "helpJsonDesc": "학습 자료를 가져오려면 다음과 같은 구조의 JSON 파일을 사용하세요:",
+  "helpDialogueImportDesc": "완성된 대화문 세트를 JSON 파일로 한 번에 가져올 수 있습니다.",
+  "helpDialogueImportDetails": "• JSON 구조: `entries` 대신 `dialogues` 배열을 사용합니다.\n• 자동 생성: 대화 제목, 페르소나, 메시지 순서가 자동으로 구성됩니다.\n• 확인 위치: 가져온 대화는 AI 채팅 모드의 '대화 기록' 탭에서 확인할 수 있습니다.",
+  "helpTourDesc": "튜토리얼을 시작하면 **하이라이트 원(Circle)**이 주요 기능을 안내해 드립니다.\n(예: 학습 카드를 **하이라이트 원**이 가리킬 때 길게 누르면 삭제할 수 있습니다.)",
+  "partnerMode": "파트너 모드",
+  "manual": "수동 입력",
+  "speaker": "화자",
+  "switchToAi": "AI 모드로 전환",
+  "switchToPartner": "파트너 모드로 전환",
+  "currentLocation": "현재 위치",
+  "partner": "파트너",
+  "me": "나",
+  "currentMaterialLabel": "현재 선택 자료집:",
+  "basicMaterialRepository": "기본 문장/단어 저장소",
+  "word": "단어",
+  "sentence": "문장",
   "appTitle": "Talkie",
   "tabReview": "복습 ({count})",
   "tabStudyMaterial": "학습 자료 ({count})",
@@ -76,18 +104,6 @@
   "tryAgain": "다시 시도",
   "startPractice": "연습 시작",
   "stopPractice": "연습 중지",
-  "helpTitle": "도움말 및 가이드",
-  "helpTabModes": "기능 소개",
-  "helpTabJson": "JSON 형식",
-  "helpTabTour": "튜토리얼",
-  "helpMode1Desc": "음성을 인식하여 번역하고, 결과를 듣습니다. 화면을 옆으로 밀어(Swipe) 모드를 전환할 수 있습니다.",
-  "helpMode1Details": "• 모드 전환: 화면을 옆으로 밀거(Swipe)나 왼쪽 메뉴(Drawer) 이용\n• 상황 설정: 입력창 아래 '상황/문맥' 칸에 상황(예: 아침, 식당) 입력\n• 음성 입력: 마이크 아이콘을 눌러 말하기/멈추기\n• 번역 및 저장: '번역' 후 하단 '데이터 저장' 버튼으로 기록 보관\n• 도움말: 상단 물음표 아이콘으로 가이드 확인",
-  "helpMode2Desc": "저장된 문장을 복습합니다. 상단 자료집 아이콘(📚)으로 원하는 자료를 선택하세요.",
-  "helpMode2Details": "• 자료 선택: 상단 앱바의 자료집 아이콘(📚) 클릭\n• 카드 뒤집기: '보이기/숨기기' 버튼으로 번역 확인\n• 학습 체크: 완료된 문장은 체크 표시 (V)\n• 삭제: 카드를 길게 누르면 삭제 가능\n• 자동 재생: 우측 상단 '자동 재생'으로 연속 학습 가능",
-  "helpMode3Desc": "학습 자료를 원어민 음성으로 고 듣고 shadowing(따라 말하기) 연습을 합니다.",
-  "helpMode3Details": "• 자료 선택: 상단 앱바의 자료집 아이콘(📚) 클릭\n• 시작/정지: 재생 버튼으로 세션 제어\n• 발음 평가: 내 발음을 인식하여 정확도 점수 표시\n• 간격 조절: [-] [+] 버튼으로 대기 시간 설정",
-  "helpJsonDesc": "학습 자료를 가져오려면 다음과 같은 구조의 JSON 파일을 사용하세요:",
-  "helpTourDesc": "튜토리얼을 시작하면 **하이라이트 원(Circle)**이 주요 기능을 안내해 드립니다.\n(예: 학습 카드를 **하이라이트 원**이 가리킬 때 길게 누르면 삭제할 수 있습니다.)",
   "startTutorial": "튜토리얼 시작",
   "tutorialMicTitle": "음성 입력",
   "tutorialMicDesc": "마이크 버튼을 눌러 음성으로 입력할 수 있습니다.",
@@ -511,13 +527,8 @@
   "personaFriend": "현지인 친구",
   "chatUntitled": "제목 없는 대화",
   "chatAiChat": "AI 채팅",
-  "helpModeChatDesc": "AI 페르소나와 대화하며 실전 회화를 연습하고 유용한 문장을 저장하세요.",
-  "helpModeChatDetails": "• 채팅 시작: 상단 메뉴의 말풍선 아이콘 클릭\n• 페르소나 선택: 선생님, 가이드, 친구 중 선택\n• 대화 및 저장: AI 응답은 자동 번역됩니다. 메시지를 클릭하여 복습 모드로 저장하세요\n• 2개 국어 표시: 모든 메시지에 대해 모국어와 학습 언어를 함께 표시합니다\n• 듣기 기능 (TTS): 스피커 아이콘을 눌러 각 언어의 발음을 들어보세요\n• 자동 제목: 대화 주제에 따라 AI가 제목을 추천합니다\n• 이력 관리: 과거 대화 내용을 언제든 다시 확인할 수 있습니다",
   "tutorialAiChatTitle": "AI 채팅",
   "tutorialAiChatDesc": "AI 페르소나와 실전 대화를 연습해 보세요.",
-  "me": "나",
-  "helpDialogueImportDesc": "완성된 대화문 세트를 JSON 파일로 한 번에 가져올 수 있습니다.",
-  "helpDialogueImportDetails": "• JSON 구조: `entries` 대신 `dialogues` 배열을 사용합니다.\n• 자동 생성: 대화 제목, 페르소나, 메시지 순서가 자동으로 구성됩니다.\n• 확인 위치: 가져온 대화는 AI 채팅 모드의 '대화 기록' 탭에서 확인할 수 있습니다.",
   "mode1SelectedMaterial": "현재 선택된 자료집: {name}",
   "basicWordRepository": "기본 단어 저장소",
   "basicSentenceRepository": "기본 문장 저장소",
@@ -526,5 +537,82 @@
   "chatSaveAndExit": "저장 후 종료",
   "errorSelectCategory": "먼저 단어나 문장을 선택하세요!",
   "tutorialM1ToggleTitle": "단어/문장 모드",
-  "tutorialM1ToggleDesc": "단어와 문장 모드를 여기서 전환하세요."
+  "tutorialM1ToggleDesc": "단어와 문장 모드를 여기서 전환하세요.",
+  "@partnerMode": {
+    "description": "Label for Partner Mode logic"
+  },
+  "@manual": {
+    "description": "Label for manual input in Partner Mode"
+  },
+  "@speaker": {
+    "description": "Label for speaker selection"
+  },
+  "@switchToAi": {
+    "description": "Tooltip for switching to AI mode"
+  },
+  "@switchToPartner": {
+    "description": "Tooltip for switching to Partner mode"
+  },
+  "@currentLocation": {
+    "description": "Label for GPS location"
+  },
+  "@partner": {
+    "description": "Label for partner speaker"
+  },
+  "@me": {
+    "description": "Label for self speaker"
+  },
+  "@currentMaterialLabel": {
+    "description": "Banner label for current material"
+  },
+  "@basicMaterialRepository": {
+    "description": "Name for default basic repository"
+  },
+  "@word": {
+    "description": "Toggle option for Word"
+  },
+  "@sentence": {
+    "description": "Toggle option for Sentence"
+  },
+  "@menuSettings": {
+    "description": "Menu item for language settings"
+  },
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "@basicSentences": {
+    "description": "Default name for basic sentences material"
+  },
+  "@selectMaterialSet": {
+    "description": "Title for the material selection dialog"
+  },
+  "@sectionWords": {
+    "description": "Header for words section in material selection"
+  },
+  "@sectionSentences": {
+    "description": "Header for sentences section in material selection"
+  },
+  "@disambiguationTitle": {
+    "description": "Title for disambiguation dialog"
+  },
+  "@disambiguationPrompt": {
+    "description": "Prompt for disambiguation dialog"
+  },
+  "@skip": {
+    "description": "Skip button"
+  },
+  "@chatFailed": {
+    "placeholders": {
+      "error": {
+        "type": "Object"
+      }
+    }
+  },
+  "@chatFromConversation": {
+    "placeholders": {
+      "speaker": {
+        "type": "Object"
+      }
+    }
+  }
 }

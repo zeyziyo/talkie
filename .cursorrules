@@ -1,0 +1,17 @@
+# Talkie Agent Rules
+
+## 1. High-Level Protocol
+- **Proactivity**: When a feature is implemented, you must AUTOMATICALLY update all related artifacts without being asked.
+- **Scope of "Done"**: A task is ONLY done when:
+  1. Code is written and analyzed.
+  2. Tests/Verification passed.
+  3. `README.md` and Roadmap docs are updated to reflect the change.
+  4. Localization (I18n) is updated for ALL supported languages (use English fallback for missing keys, never leave them undefined).
+  5. Help/Guide UI is updated if the feature affects user interaction.
+
+## 2. Deployment
+- **No Local Builds**: Only `git push` is allowed for release.
+- **Approval**: Must ask for confirmation before `git push`.
+
+## 3. Localization
+- **All Languages**: "Internationalization" means ALL 40+ ARB files. Do not just update EN/KO. Use scripts to propagate keys.

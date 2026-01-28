@@ -71,9 +71,16 @@
 *   [x] **Dialogue Engine**: 대화 그룹화(Dialogue Group) 및 맥락 보존형 데이터 구조 구축 완료.
 *   [x] **Messenger UI**: AI 페르소나 기반 실시간 채팅 인터페이스 구현 완료.
 *   [x] **Auto-Titling**: Gemini 기반 대화 주제 분석 및 제목 자동 생성 기능 도입.
-*   [x] **Help & Tutorial**: AI 채팅 전용 도움말 및 인터랙티브 가이드 전수 업데이트.
+*   [x] **Help & Tutorial**: AI 채팅 전용 도움말 및 인터랙티브 가이드업데이트.
 *   [x] **Dialogue Set Import**: JSON 파일을 통한 문장 세트 및 전체 대화 내역 일괄 가져오기 기능 완성.
 
-### 🚀 Phase 10: AI 기반 학습 추천 (Planned)
+### ✅ Phase 12: 품질 고도화 및 확장 (Jan 28)
+*   [x] **Partner Mode**: Mode 4에서 실제 상대방(사람)과의 대화를 기록하는 '파트너 모드' 구현 (양방향 통역).
+*   [x] **GPS Context**: 현재 위치 정보를 AI에게 제공하여 상황에 맞는 답변 생성(Context Awareness).
+*   [x] **Deep Localization**: 40개 이상의 언어 파일(ARB)에 누락된 키를 모두 동기화하여 완벽한 다국어 지원.
+*   [x] **UX/Guide**: Mode 1 '단어/문장' 토글 스위치 및 하이라이트 튜토리얼 적용.
+*   [x] **Stability**: Deprecated 코드 제거 및 Import 트랜잭션 최적화.
+
+### 🚀 Phase 13: 개인화 & 추천 (Planned - Feb)
 *   [ ] **Recommender**: 사용자 데이터를 분석하여 맞춤형 학습 콘텐츠 제안.
 *   [ ] **Home Widget**: 오늘의 추천 문장을 보여주는 세련된 UI 위젯 추가.

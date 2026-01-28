@@ -517,5 +517,101 @@
   "chatEndTitle": "Finalizar y guardar",
   "chatEndMessage": "¿Quieres finalizar la conversación?",
   "tutorialAiChatTitle": "Chat de IA",
-  "tutorialAiChatDesc": "Practica conversaciones reales con personajes de IA."
+  "tutorialAiChatDesc": "Practica conversaciones reales con personajes de IA.",
+  "partnerMode": "Partner Mode",
+  "@partnerMode": {
+    "description": "Label for Partner Mode logic"
+  },
+  "manual": "Manual",
+  "@manual": {
+    "description": "Label for manual input in Partner Mode"
+  },
+  "speaker": "Speaker",
+  "@speaker": {
+    "description": "Label for speaker selection"
+  },
+  "switchToAi": "Switch to AI",
+  "@switchToAi": {
+    "description": "Tooltip for switching to AI mode"
+  },
+  "switchToPartner": "Switch to Partner",
+  "@switchToPartner": {
+    "description": "Tooltip for switching to Partner mode"
+  },
+  "currentLocation": "Current Location",
+  "@currentLocation": {
+    "description": "Label for GPS location"
+  },
+  "partner": "Partner",
+  "@partner": {
+    "description": "Label for partner speaker"
+  },
+  "@me": {
+    "description": "Label for self speaker"
+  },
+  "currentMaterialLabel": "Current Selected Material:",
+  "@currentMaterialLabel": {
+    "description": "Banner label for current material"
+  },
+  "basicMaterialRepository": "Basic Repository",
+  "@basicMaterialRepository": {
+    "description": "Name for default basic repository"
+  },
+  "word": "Word",
+  "@word": {
+    "description": "Toggle option for Word"
+  },
+  "sentence": "Sentence",
+  "@sentence": {
+    "description": "Toggle option for Sentence"
+  },
+  "helpModeChatDesc": "Talk to AI persona to practice real conversation and save useful sentences.",
+  "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
+  "@menuSettings": {
+    "description": "Menu item for language settings"
+  },
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "@basicSentences": {
+    "description": "Default name for basic sentences material"
+  },
+  "@selectMaterialSet": {
+    "description": "Title for the material selection dialog"
+  },
+  "@sectionWords": {
+    "description": "Header for words section in material selection"
+  },
+  "@sectionSentences": {
+    "description": "Header for sentences section in material selection"
+  },
+  "@disambiguationTitle": {
+    "description": "Title for disambiguation dialog"
+  },
+  "@disambiguationPrompt": {
+    "description": "Prompt for disambiguation dialog"
+  },
+  "@skip": {
+    "description": "Skip button"
+  },
+  "chatFailed": "Chat failed: {error}",
+  "@chatFailed": {
+    "placeholders": {
+      "error": {
+        "type": "Object"
+      }
+    }
+  },
+  "chatFromConversation": "From Conversation ({speaker})",
+  "@chatFromConversation": {
+    "placeholders": {
+      "speaker": {
+        "type": "Object"
+      }
+    }
+  },
+  "chatUntitled": "Untitled Conversation",
+  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
+  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
+  "mode1SelectedMaterial": "Current Material Set: {name}"
 }

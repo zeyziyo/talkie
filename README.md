@@ -17,11 +17,13 @@ It provides an intuitive UX for switching modes by swiping the screen. In partic
 ### MODE 1: 검색 (Search)
 - 🎤 **음성 인식**: 모국어로 말하기 (43개 언어 지원)
 - 🔄 **번역**: 실시간 번역 및 중복 감지
+- 🔀 **모드 전환**: **단어 / 문장** 토글을 통한 입력 모드 변경
 - 🔊 **TTS**: 번역된 텍스트 듣기
 - 💾 **저장**: 학습 기록으로 저장
 
 * **Voice Recognition**: Speak in your native language (supports 43 languages)
 * **Translation**: Real-time translation & duplicate detection
+* **Toggle Mode**: Switch between **Word / Sentence** input modes
 * **TTS**: Listen to translated text
 * **Save**: Save as study records
 
@@ -32,7 +34,7 @@ It provides an intuitive UX for switching modes by swiping the screen. In partic
 - 🔊 **TTS 재생**: 원문 및 번역문 듣기
 - ✅ **학습 체크**: 복습 횟수 기록 및 학습 완료 표시
 
-* **Study Material Management**: Import study materials via JSON files
+* **Study Material Management**: Import study materials via JSON files (Transactions applied for speed)
 * **Review Mode**: Review saved sentences & flip cards
 * **TTS Playback**: Listen to original and translated text
 * **Study Check**: Track review counts & mark as completed
@@ -50,18 +52,20 @@ It provides an intuitive UX for switching modes by swiping the screen. In partic
 
 ### MODE 4: AI 채팅 (AI Chat)
 - 💬 **실시간 대화**: AI 페르소나(교사, 친구 등)와 실전 회화 연습
-- 🌐 **2개 국어 표시**: 나의 말과 AI의 대답 모두 2개 국어로 표시되어 이해도 향상
-- 🔊 **TTS 발음 듣기**: 모든 대화의 스피커 아이콘을 눌러 정확한 발음 연습
-- 🤖 **자동 번역 및 저장**: AI 응답을 즉시 번역하고, 클릭 한 번으로 복습 기록에 저장
+- 🤝 **파트너 모드 (Partner Mode)**: **실제 친구/파트너**와 대화하며 기록 (사람 아이콘 토글)
+- 📍 **GPS 위치 기반**: 현재 위치 정보를 AI에게 제공하여 생생한 현장 회화 가능 ("여기 근처 맛집 추천해줘")
+- 🌐 **2개 국어 표시**: 나의 말과 답변이 2개 국어로 표시되어 이해도 향상
+- 🔊 **TTS 발음 듣기**: 스피커 아이콘으로 정확한 발음 청취
+- 🤖 **자동 번역 및 저장**: 즉시 번역 및 "지역명 (시간)" 기반 자동 제목 저장
 - 📑 **대화 이력 관리**: 과거 대화 내용을 불러오고 제목을 수정하여 관리
-- 🧠 **맥락 보존**: 채팅에서 저장한 문장은 복습 모드에서 대화 맥락과 함께 표시
 
-* **Real-time Conversation**: Practice speaking with AI personas (teacher, friend, etc.)
-* **Dual Language Display**: View both mother tongue and target language for better understanding
-* **TTS Pronunciation**: Listen to correct pronunciation for all messages via speaker icons
-* **Auto-Translation & Save**: Instantly translate AI responses and save to study records with one tap
-* **History Management**: Revisit past chats & edit titles for better organization
-* **Context Preservation**: Chat-sourced sentences retain their dialogue context in Review Mode
+* **Real-time Conversation**: Practice speaking with AI personas or Real Partners
+* **Partner Mode**: Record conversation with a real person (Target Language Input)
+* **GPS Context**: AI uses your current location for context-aware responses
+* **Dual Language Display**: View both mother tongue and target language
+* **TTS Pronunciation**: Listen to correct pronunciation for all messages
+* **Smart Save**: Auto-save chats with "Location (Date)" titles
+* **History Management**: Revisit past chats & edit titles
 
 ### JSON 파일 구조 (JSON Structure)
 
@@ -140,7 +144,7 @@ flutter build apk --release
 ## 플랫폼별 참고사항 (Platform Notes)
 
 ### Android
-- 마이크 권한이 자동으로 요청됩니다 (Microphone permission specific requested)
+- 마이크 및 위치 권한이 사용 시 요청됩니다 (Microphone & Location permissions requested)
 - 인터넷 연결이 필요합니다 (번역 API) (Internet connection required)
 
 ### iOS

@@ -727,55 +727,73 @@ class DatabaseService {
       int skippedCount = 0;
       List<String> errors = [];
       
-      for (var i = 0; i < entries.length; i++) {
-        try {
-          final entry = entries[i] as Map<String, dynamic>;
-          final sourceText = entry['source_text'] as String;
-          final targetText = entry['target_text'] as String;
-          
-          if (sourceText.trim().isEmpty || targetText.trim().isEmpty) {
+      final db = await database;
+      
+      await db.transaction((txn) async {
+        // 0. Create Material (Group)
+        String subject = data['subject'] as String? ?? 'Imported ${DateTime.now().toString().split(' ')[0]}';
+        
+        // Check for duplicates inside txn (or call static method if safe?)
+        // To be safe and reuse logic, we duplicate createStudyMaterial logic slightly or ensure it uses txn.
+        // For simplicity and compatibility, we keep logic outside or adjust.
+        // But createStudyMaterial uses 'await database' which gets the main instance, not txn.
+        // So we must reproduce the insert logic here using 'txn' or accept that 'createStudyMaterial' is separate.
+        // 'createStudyMaterial' is just ONE call, so it's fine to be outside or separate.
+        // The LOOP is what matters.
+        
+        final materialId = await createStudyMaterial(
+          subject: subject,
+          source: 'Device Import',
+          sourceLanguage: sourceLang,
+          targetLanguage: targetLang,
+          fileName: fileName ?? subject,
+          createdAt: DateTime.now().toIso8601String(),
+        );
+
+        if (i == 0) data['processed_material_id'] = materialId;
+
+        for (var i = 0; i < entries.length; i++) {
+          try {
+            final entry = entries[i] as Map<String, dynamic>;
+            final sourceText = entry['source_text'] as String;
+            final targetText = entry['target_text'] as String;
+            
+            if (sourceText.trim().isEmpty || targetText.trim().isEmpty) {
+              skippedCount++;
+              continue;
+            }
+            
+            // 1. Insert to source language table (using txn)
+            final sourceId = await txn.insert('source_languages', {
+              'language': sourceLang,
+              'text': sourceText,
+            });
+            
+            // 2. Insert to target language table (using txn)
+            final targetId = await txn.insert('target_languages', {
+              'language': targetLang,
+              'text': targetText,
+            });
+            
+            // 3. Create translation link (using txn)
+             await txn.insert('translations', {
+              'source_lang': sourceLang,
+              'source_id': sourceId,
+              'target_lang': targetLang,
+              'target_id': targetId,
+              'material_id': materialId,
+              'is_bookmarked': 0, // false
+              'note': (entry['note'] ?? entry['context']) as String?,
+              'type': entry['type'] as String? ?? defaultType,
+            });
+            
+            importedCount++;
+          } catch (e) {
+            errors.add('Entry ${i + 1}: $e');
             skippedCount++;
-            continue;
           }
-          
-          
-          // 0. Create Material (Group)
-          String subject = data['subject'] as String? ?? 'Imported ${DateTime.now().toString().split(' ')[0]}';
-          final materialId = await createStudyMaterial(
-            subject: subject,
-            source: 'Device Import',
-            sourceLanguage: sourceLang,
-            targetLanguage: targetLang,
-            fileName: fileName ?? subject,
-            createdAt: DateTime.now().toIso8601String(),
-          );
-          
-          // 1. Insert to source language table
-          final sourceId = await insertLanguageRecord(sourceLang, sourceText);
-          
-          // 2. Insert to target language table
-          final targetId = await insertLanguageRecord(targetLang, targetText);
-          
-            // 3. Create translation link
-          await saveTranslationLink(
-            sourceLang: sourceLang,
-            sourceId: sourceId,
-            targetLang: targetLang,
-            targetId: targetId,
-            materialId: materialId, // Use the new material ID
-            note: (entry['note'] ?? entry['context']) as String?, // Import context/note
-            type: entry['type'] as String? ?? defaultType, // Use entry type or default type
-          );
-          
-          importedCount++;
-          
-          // Store ID for return (only need one since they share material)
-          if (i == 0) data['processed_material_id'] = materialId;
-        } catch (e) {
-          errors.add('Entry ${i + 1}: $e');
-          skippedCount++;
         }
-      }
+      });
       
       print('[DB] Import complete: $importedCount imported, $skippedCount skipped');
       
@@ -785,7 +803,7 @@ class DatabaseService {
         'skipped': skippedCount,
         'total': entries.length,
         'errors': errors,
-        'material_id': data['processed_material_id'] ?? 0, // Return the ID
+        'material_id': data['processed_material_id'] ?? 0,
       };
     } catch (e) {
       print('[DB] Error importing JSON: $e');
@@ -794,7 +812,7 @@ class DatabaseService {
         'imported': 0,
         'skipped': 0,
         'total': 0,
-        'errors': ['Failed to parse JSON: $e'],
+        'errors': ['Failed to parse JSON or DB Error: $e'],
       };
     }
   }

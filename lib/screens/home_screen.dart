@@ -30,6 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final GlobalKey _mode1DropdownKey = GlobalKey(); // Mode 1 Material Dropdown Key
   final GlobalKey _materialIconKey = GlobalKey(); // New: Material Icon Key
   final GlobalKey _chatFabKey = GlobalKey(); // AI Chat FloatingActionButton Key
+  final GlobalKey _mode1ToggleKey = GlobalKey(); // Mode 1 Word/Sentence Toggle Key
 
   // Mode 2 Keys
   final GlobalKey _mode2DropdownKey = GlobalKey();
@@ -142,6 +143,13 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialTransDesc,
         ContentAlign.top,
         radius: 12,
+      ));
+      targets.add(_buildTarget(
+        _mode1ToggleKey, 
+        l10n.word ?? 'Word/Sentence', 
+        l10n.helpMode1Details.split('\n').firstWhere((l) => l.contains('Toggle'), orElse: () => 'Toggle Word/Sentence'),
+        ContentAlign.bottom,
+        radius: 8,
       ));
       targets.add(_buildTarget(
         _swapButtonKey, 
@@ -525,6 +533,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   saveButtonKey: _saveButtonKey,
                   contextFieldKey: _contextFieldKey,
                   materialDropdownKey: _mode1DropdownKey,
+                  toggleButtonKey: _mode1ToggleKey,
                 ),
                 Mode2Widget(
                   materialDropdownKey: _mode2DropdownKey,

@@ -97,6 +97,14 @@ class AppState extends ChangeNotifier {
   int _currentDialogueSequence = 0;
   List<DialogueGroup> _dialogueGroups = [];
   
+  bool _isWordMode = false; // Mode 1 Toggle (Word vs Sentence)
+  bool get isWordMode => _isWordMode;
+
+  void toggleWordMode() {
+    _isWordMode = !_isWordMode;
+    notifyListeners();
+  }
+
   // Getters
   int get currentMode => _currentMode;
   String get sourceText => _sourceText;
@@ -370,24 +378,24 @@ class AppState extends ChangeNotifier {
   // ==========================================
   
   /// Start speech-to-text
-  Future<void> startListening() async {
+  Future<void> startListening({String? languageCode}) async {
+    _isListening = true;
+    notifyListeners(); // Update UI immediately
+
     try {
-      _isListening = true;
-      _statusMessage = '듣는 중...';
-      notifyListeners();
-      
       await _speechService.startSTT(
-        lang: _getServiceLocale(_sourceLang),
+        lang: _getServiceLocale(languageCode ?? _sourceLang),
         onResult: (text, isFinal, alternates) {
-          _sourceText = text;
-          notifyListeners();
+          setSourceText(text); // Update source text
           
-          // Only stop listening when final result is received
-          if (isFinal && text.trim().isNotEmpty) {
-            _statusMessage = '인식 완료';
-            stopListening();
+          if (isFinal) {
+             _isListening = false;
+             notifyListeners();
+             // Auto-translate logic can be here if desired
           }
         },
+        listenFor: const Duration(seconds: 30),
+        pauseFor: const Duration(seconds: 3),
       );
     } catch (e) {
       _statusMessage = '음성 인식 실패: $e';
@@ -966,7 +974,10 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
   
-  
+  void toggleWordMode(bool isWordMode) {
+    _isWordMode = isWordMode;
+    notifyListeners();
+  }
   
   void setSourceLang(String lang) {
     _sourceLang = lang;
@@ -1054,23 +1065,29 @@ class AppState extends ChangeNotifier {
   Future<Map<String, dynamic>> importFromJsonFile(String jsonContent, {String? fileName}) async {
     try {
       // Pass null for fileName so DatabaseService uses 'subject' from JSON or default
-      final result = await DatabaseService.importFromJson(jsonContent, fileName: null);
+      final result = await DatabaseService.importFromJson(jsonContent, fileName: fileName);
       
-      // Reload study records after import
-      // Reset filter to show all records by getting the target language from JSON
       if (result['success'] == true) {
-        // Parse JSON to get target language and update filter
-        try {
-          final data = json.decode(jsonContent) as Map<String, dynamic>;
-          final targetLang = data['target_language'] as String?;
-          if (targetLang != null) {
-            _selectedReviewLanguage = targetLang;
-          }
-        } catch (e) {
-          debugPrint('[AppState] Could not parse target language from JSON: $e');
-        }
-        await loadStudyRecords();
-        await loadStudyMaterials(); // Refresh materials list too
+         try {
+           final data = json.decode(jsonContent) as Map<String, dynamic>;
+           final targetLang = data['target_language'] as String?;
+           if (targetLang != null) {
+             _selectedReviewLanguage = targetLang;
+           }
+         } catch (e) {
+           debugPrint('[AppState] Could not parse target language from JSON: $e');
+         }
+         
+         // Force reload materials and select the new one
+         await loadStudyMaterials();
+         
+         // Select the newly imported material directly if ID is available
+         final newMaterialId = result['material_id'] as int? ?? 0;
+         if (newMaterialId != 0) {
+             await selectMaterial(newMaterialId);
+         } else {
+             await loadStudyRecords(); // Fallback
+         }
       }
       
       return result;
