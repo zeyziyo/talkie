@@ -246,6 +246,8 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                             fontWeight: FontWeight.bold,
                                             color: Colors.deepOrange,
                                           ),
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
                                         );
                                       }
                                     ),
