@@ -110,7 +110,9 @@ class _ChatScreenState extends State<ChatScreen> {
 
       await appState.saveAiResponse(aiResponse, translation);
       
-      if (suggestedTitle != null && (appState.activeDialogueTitle == 'New Conversation' || appState.activeDialogueTitle == l10n.chatUntitled)) {
+      if (suggestedTitle != null && 
+          (appState.activeDialogueTitle == 'New Conversation' || appState.activeDialogueTitle == l10n.chatUntitled) &&
+          appState.activeDialogueId != null) {
         await SupabaseService.updateDialogueTitle(appState.activeDialogueId!, suggestedTitle);
         await appState.loadDialogueGroups();
       }
@@ -169,8 +171,10 @@ class _ChatScreenState extends State<ChatScreen> {
               try {
                 final newTitle = controller.text.trim();
                 // 1. Update Title if provided (or keep existing/default)
-                if (newTitle.isNotEmpty) {
+                if (newTitle.isNotEmpty && appState.activeDialogueId != null) {
                   await SupabaseService.updateDialogueTitle(appState.activeDialogueId!, newTitle);
+                } else if (appState.activeDialogueId == null) {
+                   debugPrint('Error: activeDialogueId is null, cannot save title.');
                 }
                 
                 // 2. Refresh List
