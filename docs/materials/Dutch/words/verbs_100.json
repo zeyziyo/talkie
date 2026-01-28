@@ -1,0 +1,405 @@
+{
+    "subject": "Basiswerkwoorden 100",
+    "entries": [
+        {
+            "text": "Gaan",
+            "note": ""
+        },
+        {
+            "text": "Komen",
+            "note": ""
+        },
+        {
+            "text": "Eten",
+            "note": ""
+        },
+        {
+            "text": "Drinken",
+            "note": ""
+        },
+        {
+            "text": "Slapen",
+            "note": ""
+        },
+        {
+            "text": "Zien",
+            "note": ""
+        },
+        {
+            "text": "Kopen",
+            "note": ""
+        },
+        {
+            "text": "Verkopen",
+            "note": ""
+        },
+        {
+            "text": "Lezen",
+            "note": ""
+        },
+        {
+            "text": "Schrijven",
+            "note": "Schrift"
+        },
+        {
+            "text": "Luisteren",
+            "note": ""
+        },
+        {
+            "text": "Spreken",
+            "note": ""
+        },
+        {
+            "text": "Doen",
+            "note": ""
+        },
+        {
+            "text": "Werken",
+            "note": ""
+        },
+        {
+            "text": "Studeren",
+            "note": ""
+        },
+        {
+            "text": "Onderwijzen",
+            "note": ""
+        },
+        {
+            "text": "Leren",
+            "note": ""
+        },
+        {
+            "text": "Wachten",
+            "note": ""
+        },
+        {
+            "text": "Ontmoeten",
+            "note": ""
+        },
+        {
+            "text": "Liefhebben",
+            "note": ""
+        },
+        {
+            "text": "Houden van",
+            "note": ""
+        },
+        {
+            "text": "Haten",
+            "note": ""
+        },
+        {
+            "text": "Lachen",
+            "note": ""
+        },
+        {
+            "text": "Huilen",
+            "note": ""
+        },
+        {
+            "text": "Lopen / Wandelen",
+            "note": ""
+        },
+        {
+            "text": "Rennen",
+            "note": "Rennen"
+        },
+        {
+            "text": "Zitten",
+            "note": ""
+        },
+        {
+            "text": "Staan",
+            "note": ""
+        },
+        {
+            "text": "Geven",
+            "note": ""
+        },
+        {
+            "text": "Ontvangen",
+            "note": ""
+        },
+        {
+            "text": "Openen",
+            "note": ""
+        },
+        {
+            "text": "Sluiten",
+            "note": ""
+        },
+        {
+            "text": "Denken",
+            "note": ""
+        },
+        {
+            "text": "Weten",
+            "note": ""
+        },
+        {
+            "text": "Niet weten",
+            "note": ""
+        },
+        {
+            "text": "Zoeken / Vinden",
+            "note": ""
+        },
+        {
+            "text": "Verliezen",
+            "note": ""
+        },
+        {
+            "text": "Helpen",
+            "note": ""
+        },
+        {
+            "text": "Wassen",
+            "note": ""
+        },
+        {
+            "text": "Koken",
+            "note": ""
+        },
+        {
+            "text": "Zingen",
+            "note": ""
+        },
+        {
+            "text": "Dansen",
+            "note": ""
+        },
+        {
+            "text": "Gebruiken",
+            "note": ""
+        },
+        {
+            "text": "Maken",
+            "note": ""
+        },
+        {
+            "text": "Roepen / Zingen",
+            "note": "Lied / Naam"
+        },
+        {
+            "text": "Vangen / Vasthouden",
+            "note": ""
+        },
+        {
+            "text": "Leggen / Laten",
+            "note": ""
+        },
+        {
+            "text": "Binnengaan",
+            "note": ""
+        },
+        {
+            "text": "Naar buiten gaan",
+            "note": ""
+        },
+        {
+            "text": "Instappen",
+            "note": "In een voertuig"
+        },
+        {
+            "text": "Uitstappen",
+            "note": "Uit een voertuig"
+        },
+        {
+            "text": "Sturen",
+            "note": ""
+        },
+        {
+            "text": "Indienen",
+            "note": "Indiening"
+        },
+        {
+            "text": "Gaan",
+            "note": "Groet"
+        },
+        {
+            "text": "Beginnen",
+            "note": ""
+        },
+        {
+            "text": "Beëindigen",
+            "note": ""
+        },
+        {
+            "text": "Rusten",
+            "note": "Rust"
+        },
+        {
+            "text": "Vragen",
+            "note": "Vraag"
+        },
+        {
+            "text": "Antwoorden",
+            "note": ""
+        },
+        {
+            "text": "Beloven",
+            "note": ""
+        },
+        {
+            "text": "Zich zorgen maken",
+            "note": ""
+        },
+        {
+            "text": "Geloven",
+            "note": ""
+        },
+        {
+            "text": "Twijfelen",
+            "note": ""
+        },
+        {
+            "text": "Wensen / Hopen",
+            "note": "Hoop"
+        },
+        {
+            "text": "Dromen",
+            "note": ""
+        },
+        {
+            "text": "Vechten",
+            "note": ""
+        },
+        {
+            "text": "Winnen",
+            "note": ""
+        },
+        {
+            "text": "Verliezen",
+            "note": "Nederlaag"
+        },
+        {
+            "text": "Groeien",
+            "note": "Groei"
+        },
+        {
+            "text": "Leven / Wonen",
+            "note": ""
+        },
+        {
+            "text": "Sterven",
+            "note": ""
+        },
+        {
+            "text": "Oprapen",
+            "note": ""
+        },
+        {
+            "text": "Weggooien",
+            "note": ""
+        },
+        {
+            "text": "Verbergen",
+            "note": ""
+        },
+        {
+            "text": "Zoeken",
+            "note": ""
+        },
+        {
+            "text": "Selecteren",
+            "note": ""
+        },
+        {
+            "text": "Veranderen",
+            "note": ""
+        },
+        {
+            "text": "Bestellen",
+            "note": "Aankoop van artikelen"
+        },
+        {
+            "text": "Voorbereiden",
+            "note": ""
+        },
+        {
+            "text": "Vangen",
+            "note": ""
+        },
+        {
+            "text": "Gooien",
+            "note": ""
+        },
+        {
+            "text": "Trekken",
+            "note": ""
+        },
+        {
+            "text": "Duwen",
+            "note": ""
+        },
+        {
+            "text": "Herstellen",
+            "note": "Reparatie"
+        },
+        {
+            "text": "Breken",
+            "note": ""
+        },
+        {
+            "text": "Ziek zijn / Pijn doen",
+            "note": ""
+        },
+        {
+            "text": "Behandelen",
+            "note": ""
+        },
+        {
+            "text": "Sporten",
+            "note": ""
+        },
+        {
+            "text": "Zwemmen",
+            "note": ""
+        },
+        {
+            "text": "Reizen",
+            "note": ""
+        },
+        {
+            "text": "Rijden",
+            "note": ""
+        },
+        {
+            "text": "Schoonmaken",
+            "note": ""
+        },
+        {
+            "text": "De afwas doen",
+            "note": ""
+        },
+        {
+            "text": "De was doen",
+            "note": ""
+        },
+        {
+            "text": "Douchen",
+            "note": ""
+        },
+        {
+            "text": "Tanden poetsen",
+            "note": ""
+        },
+        {
+            "text": "Opstaan",
+            "note": "Ontwaken"
+        },
+        {
+            "text": "Naar bed gaan",
+            "note": "Slaap"
+        },
+        {
+            "text": "Begrijpen",
+            "note": ""
+        },
+        {
+            "text": "Onthouden",
+            "note": ""
+        }
+    ]
+}

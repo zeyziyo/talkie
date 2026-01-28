@@ -1,0 +1,37 @@
+{
+    "title": "Pertemuan Pertama",
+    "entries": [
+        {
+            "text": "Helo!",
+            "speaker": "A"
+        },
+        {
+            "text": "Helo. Gembira berjumpa dengan anda.",
+            "speaker": "B"
+        },
+        {
+            "text": "Siapa nama anda?",
+            "speaker": "A"
+        },
+        {
+            "text": "Nama saya [Nama]. Dan anda?",
+            "speaker": "B"
+        },
+        {
+            "text": "Nama saya [Nama]. Anda berasal dari mana?",
+            "speaker": "A"
+        },
+        {
+            "text": "Saya berasal dari Amerika. Dan anda?",
+            "speaker": "B"
+        },
+        {
+            "text": "Saya berasal dari Korea. Gembira berkenalan dengan anda.",
+            "speaker": "A"
+        },
+        {
+            "text": "Saya juga. Selamat jalan.",
+            "speaker": "B"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "title": "Unang Pagkikita",
+    "entries": [
+        {
+            "text": "Kumusta!",
+            "speaker": "A"
+        },
+        {
+            "text": "Kumusta. Ikinagagalak kitang makilala.",
+            "speaker": "B"
+        },
+        {
+            "text": "Ano ang iyong pangalan?",
+            "speaker": "A"
+        },
+        {
+            "text": "Ang pangalan ko ay [Pangalan]. At ikaw?",
+            "speaker": "B"
+        },
+        {
+            "text": "Ang pangalan ko ay [Pangalan]. Taga-saan ka?",
+            "speaker": "A"
+        },
+        {
+            "text": "Taga-Amerika ako. At ikaw?",
+            "speaker": "B"
+        },
+        {
+            "text": "Taga-Korea ako. Ikinagagalak kitang makilala.",
+            "speaker": "A"
+        },
+        {
+            "text": "Ako rin. Paalam.",
+            "speaker": "B"
+        }
+    ]
+}

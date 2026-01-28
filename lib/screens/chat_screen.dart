@@ -197,40 +197,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  Future<void> _showTitleEditDialog(AppLocalizations l10n) async {
-    final appState = Provider.of<AppState>(context, listen: false);
-    final controller = TextEditingController(text: appState.activeDialogueTitle);
 
-    return showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: Text(l10n.chatEditTitle),
-        content: TextField(
-          controller: controller,
-          decoration: InputDecoration(hintText: l10n.contextTagHint),
-          autofocus: true,
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: Text(l10n.cancel),
-          ),
-          ElevatedButton(
-            onPressed: () async {
-              final newTitle = controller.text.trim();
-              if (newTitle.isNotEmpty) {
-                await SupabaseService.updateDialogueTitle(appState.activeDialogueId!, newTitle);
-                appState.loadDialogueGroups();
-                Navigator.pop(context);
-                setState(() {});
-              }
-            },
-            child: Text(l10n.saveData),
-          ),
-        ],
-      ),
-    );
-  }
 
   bool _isListening = false;
   Future<void> _startListening(AppLocalizations l10n) async {
@@ -270,7 +237,7 @@ class _ChatScreenState extends State<ChatScreen> {
     else if (languageCode == 'zh') localeId = 'zh-CN';
     else localeId = languageCode; // Fallback
 
-    _speechService.speak(text, localeId: localeId);
+    _speechService.speak(text, lang: localeId);
   }
 
   @override
@@ -284,11 +251,7 @@ class _ChatScreenState extends State<ChatScreen> {
         backgroundColor: const Color(0xFF667eea),
         foregroundColor: Colors.white,
         actions: [
-          IconButton(
-            icon: const Icon(Icons.edit),
-            onPressed: () => _showTitleEditDialog(l10n),
-            tooltip: l10n.chatEditTitle,
-          ),
+
           IconButton(
             icon: const Icon(Icons.exit_to_app),
             onPressed: () => _endChat(l10n),

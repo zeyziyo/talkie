@@ -1,0 +1,405 @@
+{
+    "subject": "Basisverb 100",
+    "entries": [
+        {
+            "text": "Gå",
+            "note": ""
+        },
+        {
+            "text": "Komme",
+            "note": ""
+        },
+        {
+            "text": "Spise",
+            "note": ""
+        },
+        {
+            "text": "Drikke",
+            "note": ""
+        },
+        {
+            "text": "Sove",
+            "note": ""
+        },
+        {
+            "text": "Se",
+            "note": ""
+        },
+        {
+            "text": "Kjøpe",
+            "note": ""
+        },
+        {
+            "text": "Selge",
+            "note": ""
+        },
+        {
+            "text": "Lese",
+            "note": ""
+        },
+        {
+            "text": "Skrive",
+            "note": "Skrift"
+        },
+        {
+            "text": "Lytte",
+            "note": ""
+        },
+        {
+            "text": "Snakke",
+            "note": ""
+        },
+        {
+            "text": "Gjøre",
+            "note": ""
+        },
+        {
+            "text": "Jobbe",
+            "note": ""
+        },
+        {
+            "text": "Studere",
+            "note": ""
+        },
+        {
+            "text": "Undervise",
+            "note": ""
+        },
+        {
+            "text": "Lære",
+            "note": ""
+        },
+        {
+            "text": "Vente",
+            "note": ""
+        },
+        {
+            "text": "Møte",
+            "note": ""
+        },
+        {
+            "text": "Elske",
+            "note": ""
+        },
+        {
+            "text": "Like",
+            "note": ""
+        },
+        {
+            "text": "Hate",
+            "note": ""
+        },
+        {
+            "text": "Le",
+            "note": ""
+        },
+        {
+            "text": "Gråte",
+            "note": ""
+        },
+        {
+            "text": "Gå / Spasere",
+            "note": ""
+        },
+        {
+            "text": "Løpe",
+            "note": "Løp"
+        },
+        {
+            "text": "Sitte",
+            "note": ""
+        },
+        {
+            "text": "Stå",
+            "note": ""
+        },
+        {
+            "text": "Gi",
+            "note": ""
+        },
+        {
+            "text": "Motta",
+            "note": ""
+        },
+        {
+            "text": "Åpne",
+            "note": ""
+        },
+        {
+            "text": "Lukke",
+            "note": ""
+        },
+        {
+            "text": "Tenke",
+            "note": ""
+        },
+        {
+            "text": "Vite",
+            "note": ""
+        },
+        {
+            "text": "Ikke vite",
+            "note": ""
+        },
+        {
+            "text": "Søke / Finne",
+            "note": ""
+        },
+        {
+            "text": "Miste",
+            "note": ""
+        },
+        {
+            "text": "Hjelpe",
+            "note": ""
+        },
+        {
+            "text": "Vaske",
+            "note": ""
+        },
+        {
+            "text": "Lage mat",
+            "note": ""
+        },
+        {
+            "text": "Synge",
+            "note": ""
+        },
+        {
+            "text": "Danse",
+            "note": ""
+        },
+        {
+            "text": "Bruke",
+            "note": ""
+        },
+        {
+            "text": "Lage / Skape",
+            "note": ""
+        },
+        {
+            "text": "Call / Synge",
+            "note": "Sang / Navn"
+        },
+        {
+            "text": "Fange / Holde",
+            "note": ""
+        },
+        {
+            "text": "Legge / Forlate",
+            "note": ""
+        },
+        {
+            "text": "Gå inn",
+            "note": ""
+        },
+        {
+            "text": "Gå ut",
+            "note": ""
+        },
+        {
+            "text": "Stige på",
+            "note": "På et kjøretøy"
+        },
+        {
+            "text": "Stige av",
+            "note": "Av et kjøretøy"
+        },
+        {
+            "text": "Sende",
+            "note": ""
+        },
+        {
+            "text": "Levere",
+            "note": "Innlevering"
+        },
+        {
+            "text": "Ha det",
+            "note": "Hilsen"
+        },
+        {
+            "text": "Begynne",
+            "note": ""
+        },
+        {
+            "text": "Slutte",
+            "note": ""
+        },
+        {
+            "text": "Hvile",
+            "note": "Hvile"
+        },
+        {
+            "text": "Spørre",
+            "note": "Spørsmål"
+        },
+        {
+            "text": "Svare",
+            "note": ""
+        },
+        {
+            "text": "Love",
+            "note": ""
+        },
+        {
+            "text": "Bekymre seg",
+            "note": ""
+        },
+        {
+            "text": "Tro",
+            "note": ""
+        },
+        {
+            "text": "Tvile",
+            "note": ""
+        },
+        {
+            "text": "Ønske / Håpe",
+            "note": "Håp"
+        },
+        {
+            "text": "Drømme",
+            "note": ""
+        },
+        {
+            "text": "Slåss",
+            "note": ""
+        },
+        {
+            "text": "Vinne",
+            "note": ""
+        },
+        {
+            "text": "Tape",
+            "note": "Nederlag"
+        },
+        {
+            "text": "Vokse",
+            "note": "Vekst"
+        },
+        {
+            "text": "Leve / Bo",
+            "note": ""
+        },
+        {
+            "text": "Dø",
+            "note": ""
+        },
+        {
+            "text": "Plukke opp",
+            "note": ""
+        },
+        {
+            "text": "Kaste bort",
+            "note": ""
+        },
+        {
+            "text": "Gjemme",
+            "note": ""
+        },
+        {
+            "text": "Søke",
+            "note": ""
+        },
+        {
+            "text": "Velge",
+            "note": ""
+        },
+        {
+            "text": "Endre",
+            "note": ""
+        },
+        {
+            "text": "Bestille",
+            "note": "Kjøp av varer"
+        },
+        {
+            "text": "Forberede",
+            "note": ""
+        },
+        {
+            "text": "Fange",
+            "note": ""
+        },
+        {
+            "text": "Kaste",
+            "note": ""
+        },
+        {
+            "text": "Dra",
+            "note": ""
+        },
+        {
+            "text": "Skyve",
+            "note": ""
+        },
+        {
+            "text": "Reparere",
+            "note": "Reparasjon"
+        },
+        {
+            "text": "Gå i stykker",
+            "note": ""
+        },
+        {
+            "text": "Være syk / Ha vondt",
+            "note": ""
+        },
+        {
+            "text": "Behandle",
+            "note": ""
+        },
+        {
+            "text": "Trene",
+            "note": ""
+        },
+        {
+            "text": "Svømme",
+            "note": ""
+        },
+        {
+            "text": "Reise",
+            "note": ""
+        },
+        {
+            "text": "Kjøre",
+            "note": ""
+        },
+        {
+            "text": "Gjøre rent",
+            "note": ""
+        },
+        {
+            "text": "Vaske opp",
+            "note": ""
+        },
+        {
+            "text": "Vaske klær",
+            "note": ""
+        },
+        {
+            "text": "Dusje",
+            "note": ""
+        },
+        {
+            "text": "Pusse tennene",
+            "note": ""
+        },
+        {
+            "text": "Våkne / Stå opp",
+            "note": "Oppvåkning"
+        },
+        {
+            "text": "Legge seg",
+            "note": "Søvn"
+        },
+        {
+            "text": "Forstå",
+            "note": ""
+        },
+        {
+            "text": "Huske",
+            "note": ""
+        }
+    ]
+}

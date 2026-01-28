@@ -1,0 +1,45 @@
+{
+    "title": "Première Rencontre",
+    "entries": [
+        {
+            "text": "Bonjour ! Je m'appelle Jordan. Enchanté de vous rencontrer.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Bonjour Jordan ! Je suis Minji. Enchantée également.",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Êtes-vous étudiant ?",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Non, je suis employé de bureau. Et vous, Jordan ?",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Je suis étudiant à l'université. J'étudie le coréen.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Wow, c'est génial ! Le coréen est un peu difficile, non ?",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Oui, c'est difficile mais amusant. S'il vous plaît, aidez-moi beaucoup.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Bien sûr ! Étudions dur ensemble.",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Merci. À la prochaine fois !",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Au revoir !",
+            "speaker": "Minji"
+        }
+    ]
+}

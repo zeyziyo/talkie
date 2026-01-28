@@ -40,8 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final GlobalKey _mode3ResetKey = GlobalKey(); // New: Reset Button Key
   
   // Tutorial Keys - Fixed
-  // final GlobalKey _globalToggleKey = GlobalKey(); // Removed
-  final GlobalKey _tabKey = GlobalKey();
+  final GlobalKey _menuKey = GlobalKey(); // Renamed from _tabKey
   final GlobalKey _actionButtonKey = GlobalKey();
 
   // AdMob Banner
@@ -63,19 +62,14 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _loadBannerAd() {
-    // AdMob is not supported on web
     if (kIsWeb) return;
-    
     _bannerAd = BannerAd(
-      // Production Banner ID
       adUnitId: 'ca-app-pub-2281211992064241/7980228996', 
       size: AdSize.banner,
       request: const AdRequest(),
       listener: BannerAdListener(
         onAdLoaded: (_) {
-          setState(() {
-            _isBannerAdReady = true;
-          });
+          setState(() => _isBannerAdReady = true);
         },
         onAdFailedToLoad: (ad, error) {
           debugPrint('BannerAd failed to load: $error');
@@ -100,7 +94,6 @@ class _HomeScreenState extends State<HomeScreen> {
     if (!mounted) return;
     final appState = Provider.of<AppState>(context, listen: false);
     
-    // Create tutorial targets based on current mode
     tutorialCoachMark = TutorialCoachMark(
       targets: _createTargets(appState.currentMode),
       colorShadow: Colors.black,
@@ -110,36 +103,37 @@ class _HomeScreenState extends State<HomeScreen> {
       onFinish: () {},
       onClickTarget: (target) {},
       onClickOverlay: (target) {},
-      onSkip: () {
-        return true;
-      },
+      onSkip: () => true,
     );
 
-    tutorialCoachMark.show(context: context);
+    // Use a small delay or post-frame callback to ensure help dialog is fully popped
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        tutorialCoachMark.show(context: context);
+      }
+    });
   }
 
   List<TargetFocus> _createTargets(int modeIndex) {
     List<TargetFocus> targets = [];
     final l10n = AppLocalizations.of(context)!;
 
-    // Common Target: Tab Selector
-    // Common Target: Tab Selector
+    // Common Target: Hamburger Menu (Mode Selector)
     targets.add(_buildTarget(
-      _tabKey,
-      l10n.helpTabModes,
-      l10n.tutorialTabDesc,
+      _menuKey,
+      l10n.tutorialTabDesc, // Description
+      l10n.helpTabModes, // Title
       ContentAlign.bottom,
       radius: 12,
     ));
 
     // Mode-specific targets
     if (modeIndex == 0) {
-      // Mode 1: Mic -> Translate -> Save
       targets.add(_buildTarget(
         _micButtonKey, 
         l10n.tutorialMicTitle, 
         l10n.tutorialMicDesc,
-        ContentAlign.top, // Changed from bottom to top
+        ContentAlign.top,
         radius: 12,
       ));
       targets.add(_buildTarget(
@@ -149,8 +143,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ContentAlign.top,
         radius: 12,
       ));
-      
-      // Swap Button Tutorial
       targets.add(_buildTarget(
         _swapButtonKey, 
         l10n.swapLanguages, 
@@ -158,8 +150,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ContentAlign.top,
         radius: 12,
       ));
-
-      // Context Field Tutorial
       targets.add(_buildTarget(
         _contextFieldKey,
         l10n.tutorialContextTitle, 
@@ -168,9 +158,6 @@ class _HomeScreenState extends State<HomeScreen> {
         radius: 12,
         shape: ShapeLightFocus.RRect,
       ));
-
-
-
        targets.add(_buildTarget(
         _materialIconKey, 
         l10n.tutorialM2SelectTitle, 
@@ -178,9 +165,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ContentAlign.bottom,
         radius: 12,
       ));
-
-
-
       targets.add(_buildTarget(
         _saveButtonKey, 
         l10n.tutorialSaveTitle, 
@@ -188,7 +172,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ContentAlign.top,
         radius: 12,
       ));
-      // Language Settings (Action Button)
       targets.add(_buildTarget(
         _actionButtonKey, 
         l10n.tutorialLangSettingsTitle, 
@@ -197,18 +180,12 @@ class _HomeScreenState extends State<HomeScreen> {
         radius: 12,
       ));
     } else if (modeIndex == 1) {
-      // Mode 2: Toggle
-
-
-      // Mode 2: Material Icon
       targets.add(_buildTarget(
         _materialIconKey, 
         l10n.tutorialM2SelectTitle, 
         l10n.tutorialM2SelectDesc,
         ContentAlign.bottom,
       ));
-      
-      // Mode 2 List Target (Card)
       targets.add(_buildTarget(
         _mode2ListKey, 
         l10n.tutorialM2ListTitle, 
@@ -218,8 +195,6 @@ class _HomeScreenState extends State<HomeScreen> {
         radius: 12,
         paddingFocus: 8,
       ));
-      
-      // Action Button (Import)
       targets.add(_buildTarget(
         _actionButtonKey, 
         l10n.importJsonFile, 
@@ -228,15 +203,12 @@ class _HomeScreenState extends State<HomeScreen> {
         paddingFocus: 4,
       ));
     } else if (modeIndex == 2) {
-      // Mode 3: Material Icon
       targets.add(_buildTarget(
         _materialIconKey, 
         l10n.tutorialM3SelectTitle, 
         l10n.tutorialM3SelectDesc,
         ContentAlign.bottom,
       ));
-      
-      // Mode 3: Reset Button
       targets.add(_buildTarget(
         _mode3ResetKey, 
         l10n.tutorialM3ResetTitle, 
@@ -365,6 +337,7 @@ class _HomeScreenState extends State<HomeScreen> {
             foregroundColor: Colors.white,
             leading: Builder(
               builder: (context) => IconButton(
+                key: _menuKey,
                 icon: const Icon(Icons.menu),
                 onPressed: () => Scaffold.of(context).openDrawer(),
               ),

@@ -1,0 +1,37 @@
+{
+    "title": "Första mötet",
+    "entries": [
+        {
+            "text": "Hej!",
+            "speaker": "A"
+        },
+        {
+            "text": "Hej. Trevligt att träffas.",
+            "speaker": "B"
+        },
+        {
+            "text": "Vad heter du?",
+            "speaker": "A"
+        },
+        {
+            "text": "Jag heter [Namn]. Och du?",
+            "speaker": "B"
+        },
+        {
+            "text": "Jag heter [Namn]. Varifrån kommer du?",
+            "speaker": "A"
+        },
+        {
+            "text": "Jag kommer från Amerika. Och du?",
+            "speaker": "B"
+        },
+        {
+            "text": "Jag kommer från Korea. Det var trevligt att träffas.",
+            "speaker": "A"
+        },
+        {
+            "text": "Detsamma. Hej då.",
+            "speaker": "B"
+        }
+    ]
+}

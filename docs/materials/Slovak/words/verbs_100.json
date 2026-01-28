@@ -1,0 +1,405 @@
+{
+    "subject": "Základné slovesá 100",
+    "entries": [
+        {
+            "text": "Ísť",
+            "note": ""
+        },
+        {
+            "text": "Prísť",
+            "note": ""
+        },
+        {
+            "text": "Jesť",
+            "note": ""
+        },
+        {
+            "text": "Piť",
+            "note": ""
+        },
+        {
+            "text": "Spať",
+            "note": ""
+        },
+        {
+            "text": "Vidieť",
+            "note": ""
+        },
+        {
+            "text": "Kúpiť",
+            "note": ""
+        },
+        {
+            "text": "Predať",
+            "note": ""
+        },
+        {
+            "text": "Čítať",
+            "note": ""
+        },
+        {
+            "text": "Písať",
+            "note": "Písmo"
+        },
+        {
+            "text": "Počuť",
+            "note": ""
+        },
+        {
+            "text": "Hovoriť",
+            "note": ""
+        },
+        {
+            "text": "Robiť",
+            "note": ""
+        },
+        {
+            "text": "Pracovať",
+            "note": ""
+        },
+        {
+            "text": "Učiť sa",
+            "note": ""
+        },
+        {
+            "text": "Učiť",
+            "note": ""
+        },
+        {
+            "text": "Učiť sa",
+            "note": ""
+        },
+        {
+            "text": "Čakať",
+            "note": ""
+        },
+        {
+            "text": "Stretnúť",
+            "note": ""
+        },
+        {
+            "text": "Milovať",
+            "note": ""
+        },
+        {
+            "text": "Mať rád",
+            "note": ""
+        },
+        {
+            "text": "Nenávidieť",
+            "note": ""
+        },
+        {
+            "text": "Smiať sa",
+            "note": ""
+        },
+        {
+            "text": "Plakať",
+            "note": ""
+        },
+        {
+            "text": "Chodiť",
+            "note": ""
+        },
+        {
+            "text": "Behať",
+            "note": "Beh"
+        },
+        {
+            "text": "Sedieť",
+            "note": ""
+        },
+        {
+            "text": "Stáť",
+            "note": ""
+        },
+        {
+            "text": "Dať",
+            "note": ""
+        },
+        {
+            "text": "Dostať / Prijať",
+            "note": ""
+        },
+        {
+            "text": "Otvoriť",
+            "note": ""
+        },
+        {
+            "text": "Zatvoriť",
+            "note": ""
+        },
+        {
+            "text": "Myslieť",
+            "note": ""
+        },
+        {
+            "text": "Vedieť",
+            "note": ""
+        },
+        {
+            "text": "Nevedieť",
+            "note": ""
+        },
+        {
+            "text": "Hľadať / Nájsť",
+            "note": ""
+        },
+        {
+            "text": "Stratiť",
+            "note": ""
+        },
+        {
+            "text": "Pomôcť",
+            "note": ""
+        },
+        {
+            "text": "Umývať sa",
+            "note": ""
+        },
+        {
+            "text": "Variť",
+            "note": ""
+        },
+        {
+            "text": "Spievať",
+            "note": ""
+        },
+        {
+            "text": "Tancovať",
+            "note": ""
+        },
+        {
+            "text": "Používať",
+            "note": ""
+        },
+        {
+            "text": "Robiť / Vytvoriť",
+            "note": ""
+        },
+        {
+            "text": "Volať / Spievať",
+            "note": "Pieseň / Meno"
+        },
+        {
+            "text": "Chytiť / Držať",
+            "note": ""
+        },
+        {
+            "text": "Položiť / Nechať",
+            "note": ""
+        },
+        {
+            "text": "Vstúpiť",
+            "note": ""
+        },
+        {
+            "text": "Odísť",
+            "note": ""
+        },
+        {
+            "text": "Nastúpiť",
+            "note": "Do vozidla"
+        },
+        {
+            "text": "Vystúpiť",
+            "note": "Z vozidla"
+        },
+        {
+            "text": "Poslať",
+            "note": ""
+        },
+        {
+            "text": "Odovzdať",
+            "note": "Odovzdanie"
+        },
+        {
+            "text": "Mať sa",
+            "note": "Pozdrav"
+        },
+        {
+            "text": "Začať",
+            "note": ""
+        },
+        {
+            "text": "Skončiť",
+            "note": ""
+        },
+        {
+            "text": "Odpočívať",
+            "note": "Odpočinok"
+        },
+        {
+            "text": "Pýtať sa",
+            "note": "Otázka"
+        },
+        {
+            "text": "Odpovedať",
+            "note": ""
+        },
+        {
+            "text": "Sľúbiť",
+            "note": ""
+        },
+        {
+            "text": "Robiť si starosti",
+            "note": ""
+        },
+        {
+            "text": "Veriť",
+            "note": ""
+        },
+        {
+            "text": "Pochybovať",
+            "note": ""
+        },
+        {
+            "text": "Priať si / Dúfať",
+            "note": "Nádej"
+        },
+        {
+            "text": "Snívať",
+            "note": ""
+        },
+        {
+            "text": "Bojovať / Hádať sa",
+            "note": ""
+        },
+        {
+            "text": "Vyhrať",
+            "note": ""
+        },
+        {
+            "text": "Prehrať",
+            "note": "Porážka"
+        },
+        {
+            "text": "Rásť",
+            "note": "Rast"
+        },
+        {
+            "text": "Žiť / Bývať",
+            "note": ""
+        },
+        {
+            "text": "Zomrieť",
+            "note": ""
+        },
+        {
+            "text": "Zobrať / Zodvihnúť",
+            "note": ""
+        },
+        {
+            "text": " vyhodiť",
+            "note": ""
+        },
+        {
+            "text": "Schovať",
+            "note": ""
+        },
+        {
+            "text": "Hľadať",
+            "note": ""
+        },
+        {
+            "text": "Vybrať si",
+            "note": ""
+        },
+        {
+            "text": "Zmeniť",
+            "note": ""
+        },
+        {
+            "text": "Objednať si",
+            "note": "Nákup tovaru"
+        },
+        {
+            "text": "Pripraviť",
+            "note": ""
+        },
+        {
+            "text": "Chytiť",
+            "note": ""
+        },
+        {
+            "text": "Hodiť",
+            "note": ""
+        },
+        {
+            "text": "Ťahať",
+            "note": ""
+        },
+        {
+            "text": "Tlačiť",
+            "note": ""
+        },
+        {
+            "text": "Opraviť",
+            "note": "Oprava"
+        },
+        {
+            "text": "Rozbiť",
+            "note": ""
+        },
+        {
+            "text": "Byť chorý / Bolieť",
+            "note": ""
+        },
+        {
+            "text": "Liečiť",
+            "note": ""
+        },
+        {
+            "text": "Cvičiť",
+            "note": ""
+        },
+        {
+            "text": "Plávať",
+            "note": ""
+        },
+        {
+            "text": "Cestovať",
+            "note": ""
+        },
+        {
+            "text": "Riadiť",
+            "note": ""
+        },
+        {
+            "text": "Upratovať",
+            "note": ""
+        },
+        {
+            "text": "Umývať riad",
+            "note": ""
+        },
+        {
+            "text": "Prať",
+            "note": ""
+        },
+        {
+            "text": "Sprchovať sa",
+            "note": ""
+        },
+        {
+            "text": "Čistiť si zuby",
+            "note": ""
+        },
+        {
+            "text": "Zobudiť sa / Vstať",
+            "note": "Prebudenie"
+        },
+        {
+            "text": "Ísť spať",
+            "note": "Spánok"
+        },
+        {
+            "text": "Rozumieť",
+            "note": ""
+        },
+        {
+            "text": "Pamätať si",
+            "note": ""
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "title": "Lần đầu gặp mặt",
+    "entries": [
+        {
+            "text": "Xin chào!",
+            "speaker": "A"
+        },
+        {
+            "text": "Xin chào. Rất vui được gặp bạn.",
+            "speaker": "B"
+        },
+        {
+            "text": "Tên bạn là gì?",
+            "speaker": "A"
+        },
+        {
+            "text": "Tên tôi là [Tên]. Còn bạn?",
+            "speaker": "B"
+        },
+        {
+            "text": "Tên tôi là [Tên]. Bạn đến từ đâu?",
+            "speaker": "A"
+        },
+        {
+            "text": "Tôi đến từ Mỹ. Còn bạn?",
+            "speaker": "B"
+        },
+        {
+            "text": "Tôi đến từ Hàn Quốc. Rất vui được quen biết bạn.",
+            "speaker": "A"
+        },
+        {
+            "text": "Tôi cũng vậy. Tạm biệt.",
+            "speaker": "B"
+        }
+    ]
+}

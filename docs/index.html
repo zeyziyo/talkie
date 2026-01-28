@@ -229,65 +229,95 @@
         </div>
     </header>
 
-    <!-- Download Section (Moved to Top) -->
+    <!-- Download Section (Dynamic & Expanded) -->
     <section id="downloads" style="background-color: #fff; padding: 4rem 2rem; max-width: 100%;">
         <div style="max-width: 1000px; margin: 0 auto;">
-            <h2>Sample Study Materials</h2>
+            <h2>Study Materials Library</h2>
             <p style="text-align: center; margin-bottom: 2rem;">
-                Download these JSON files to get started with Talkie immediately.
-                Import them in <strong>Mode 2 (Study Material)</strong>.
+                Select your language to download curated JSON study materials.
+                Import them into <strong>Talkie</strong> (Mode 2) to start practicing immediately.
             </p>
 
-            <div class="downloads-grid">
-                <!-- English -->
-                <div class="download-card">
-                    <div class="download-title">
-                        <span class="download-icon">🇺🇸</span> Korean - English
-                    </div>
-                    <p>초급자를 위한 기초 단어와 문장입니다.</p>
-                    <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 8px;">
-                        <a href="downloads/korean/english/basic_nouns.json" class="download-link" download>다운로드: 명사
-                            (Nouns)</a>
-                        <a href="downloads/korean/english/basic_verbs.json" class="download-link" download>다운로드: 동사
-                            (Verbs)</a>
-                        <a href="downloads/korean/english/basic_adjectives.json" class="download-link" download>다운로드:
-                            형용사 (Adjectives)</a>
-                        <!-- Additional Parts: Adverbs, Prepositions etc. available in folder -->
-                        <a href="downloads/korean/english/basic_sentences.json" class="download-link" download>다운로드: 기초
-                            문장 (Sentences)</a>
-                    </div>
-                </div>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <input type="text" id="languageSearch" placeholder="Search for your language (e.g. Spanish, Hindi...)" 
+                    style="padding: 1rem 1.5rem; width: 100%; max-width: 500px; border-radius: 50px; border: 2px solid var(--primary-color); font-size: 1.1rem; outline: none; box-shadow: 0 4px 15px rgba(98, 0, 238, 0.1);">
+            </div>
 
-                <!-- Spanish -->
-                <div class="download-card">
-                    <div class="download-title">
-                        <span class="download-icon">🇪🇸</span> Korean - Spanish
-                    </div>
-                    <p>초급자를 위한 기초 단어와 문장입니다.</p>
-                    <div style="margin-top: 1rem;">
-                        <a href="downloads/korean/spanish/basic_words.json" class="download-link" download>다운로드: 기초 단어
-                            (Words)</a>
-                        <a href="downloads/korean/spanish/basic_sentences.json" class="download-link"
-                            style="margin-left: 10px;" download>다운로드: 기초 문장 (Sentences)</a>
-                    </div>
-                </div>
-
-                <!-- Japanese -->
-                <div class="download-card">
-                    <div class="download-title">
-                        <span class="download-icon">🇯🇵</span> Korean - Japanese
-                    </div>
-                    <p>초급자를 위한 기초 단어와 문장입니다.</p>
-                    <div style="margin-top: 1rem;">
-                        <a href="downloads/korean/japanese/basic_words.json" class="download-link" download>다운로드: 기초 단어
-                            (Words)</a>
-                        <a href="downloads/korean/japanese/basic_sentences.json" class="download-link"
-                            style="margin-left: 10px;" download>다운로드: 기초 문장 (Sentences)</a>
-                    </div>
-                </div>
+            <div id="materialsGrid" class="downloads-grid">
+                <!-- Javascript will populate this -->
+            </div>
+            
+            <div id="noResults" style="display: none; text-align: center; padding: 2rem; color: #666;">
+                <p>No language found. Try another search term!</p>
             </div>
         </div>
     </section>
+
+    <script>
+        const languages = [
+            "Afrikaans", "Amharic", "Arabic", "Bengali", "Burmese", "Chinese (Simplified)", "Chinese (Traditional)", 
+            "Czech", "Danish", "Dutch", "English", "Filipino", "Finnish", "French", "German", "Greek", "Gujarati", 
+            "Hebrew", "Hindi", "Hungarian", "Indonesian", "Italian", "Japanese", "Kannada", "Khmer", "Korean", 
+            "Lao", "Malay", "Malayalam", "Marathi", "Nepali", "Norwegian", "Persian", "Polish", "Portuguese", 
+            "Punjabi", "Romanian", "Russian", "Sinhala", "Slovak", "Spanish", "Swahili", "Swedish", "Tamil", 
+            "Telugu", "Thai", "Turkish", "Ukrainian", "Urdu", "Vietnamese", "Xhosa", "Zulu"
+        ];
+
+        const grid = document.getElementById('materialsGrid');
+        const searchInput = document.getElementById('languageSearch');
+        const noResults = document.getElementById('noResults');
+
+        function getFlag(lang) {
+            const flags = {
+                "Afrikaans": "🇿🇦", "Amharic": "🇪🇹", "Arabic": "🇸🇦", "Bengali": "🇧🇩", "Burmese": "🇲🇲",
+                "Chinese (Simplified)": "🇨🇳", "Chinese (Traditional)": "🇹🇼", "Czech": "🇨🇿", "Danish": "🇩🇰",
+                "Dutch": "🇳🇱", "English": "🇺🇸", "Filipino": "🇵🇭", "Finnish": "🇫🇮", "French": "🇫🇷",
+                "German": "🇩🇪", "Greek": "🇬🇷", "Gujarati": "🇮🇳", "Hebrew": "🇮🇱", "Hindi": "🇮🇳",
+                "Hungarian": "🇭🇺", "Indonesian": "🇮🇩", "Italian": "🇮🇹", "Japanese": "🇯🇵", "Kannada": "🇮🇳",
+                "Khmer": "🇰🇭", "Korean": "🇰🇷", "Lao": "🇱🇦", "Malay": "🇲🇾", "Malayalam": "🇮🇳",
+                "Marathi": "🇮🇳", "Nepali": "🇳🇵", "Norwegian": "🇳🇴", "Persian": "🇮🇷", "Polish": "🇵🇱",
+                "Portuguese": "🇵🇹", "Punjabi": "🇮🇳", "Romanian": "🇷🇴", "Russian": "🇷🇺", "Sinhala": "🇱🇰",
+                "Slovak": "🇸🇰", "Spanish": "🇪🇸", "Swahili": "🇰🇪", "Swedish": "🇸🇪", "Tamil": "🇮🇳",
+                "Telugu": "🇮🇳", "Thai": "🇹🇭", "Turkish": "🇹🇷", "Ukrainian": "🇺🇦", "Urdu": "🇵🇰",
+                "Vietnamese": "🇻🇳", "Xhosa": "🇿🇦", "Zulu": "🇿🇦"
+            };
+            return flags[lang] || "🌐";
+        }
+
+        function renderLanguages(filter = '') {
+            grid.innerHTML = '';
+            const filtered = languages.filter(l => l.toLowerCase().includes(filter.toLowerCase()));
+            
+            if (filtered.length === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+
+            filtered.forEach(lang => {
+                const card = document.createElement('div');
+                card.className = 'download-card';
+                card.innerHTML = `
+                    <div class="download-title">
+                        <span class="download-icon">${getFlag(lang)}</span> ${lang}
+                    </div>
+                    <p style="font-size: 0.9rem; color: #666;">Get verbs, nouns, greetings, and first meeting dialogue.</p>
+                    <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 8px;">
+                        <a href="materials/${lang}/words/verbs_100.json" class="download-link" download>Verbs (동사)</a>
+                        <a href="materials/${lang}/words/nouns_50.json" class="download-link" download>Nouns (명사)</a>
+                        <a href="materials/${lang}/sentences/greetings_50.json" class="download-link" download>Greetings (생활 문장)</a>
+                        <a href="materials/${lang}/dialogues/first_meeting.json" class="download-link" download>Dialogue (첫 만남 대화)</a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        searchInput.addEventListener('input', (e) => renderLanguages(e.target.value));
+
+        // Initial render with common languages
+        renderLanguages('');
+    </script>
 
     <section id="features">
         <h2>Why <span translate="no">Talkie</span>?</h2>

@@ -507,7 +507,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
     final isPlaying = _isAutoPlaying && _currentPlayingIndex == index;
 
     return InkWell(
-      key: _itemKeys[index], // Use local key
+      key: key ?? _itemKeys[index], // Use tutorial key if provided (index == 0)
       onLongPress: () {
         _showDeleteDialog(context, appState, record, l10n);
       },

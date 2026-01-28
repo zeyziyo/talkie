@@ -1,0 +1,37 @@
+{
+    "title": "První setkání",
+    "entries": [
+        {
+            "text": "Dobrý den!",
+            "speaker": "A"
+        },
+        {
+            "text": "Dobrý den. Rád vás poznávám.",
+            "speaker": "B"
+        },
+        {
+            "text": "Jak se jmenujete?",
+            "speaker": "A"
+        },
+        {
+            "text": "Jmenuji se [Jméno]. A vy?",
+            "speaker": "B"
+        },
+        {
+            "text": "Jmenuji se [Jméno]. Odkud jste?",
+            "speaker": "A"
+        },
+        {
+            "text": "Jsem z Ameriky. A vy?",
+            "speaker": "B"
+        },
+        {
+            "text": "Jsem z Koreje. Bylo mi potěšením vás poznat.",
+            "speaker": "A"
+        },
+        {
+            "text": "Mně také. Na shledanou.",
+            "speaker": "B"
+        }
+    ]
+}

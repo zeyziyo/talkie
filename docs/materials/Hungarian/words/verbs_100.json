@@ -1,0 +1,405 @@
+{
+    "subject": "Alapigék 100",
+    "entries": [
+        {
+            "text": "Menni",
+            "note": ""
+        },
+        {
+            "text": "Jönni",
+            "note": ""
+        },
+        {
+            "text": "Enni",
+            "note": ""
+        },
+        {
+            "text": "Inni",
+            "note": ""
+        },
+        {
+            "text": "Aludni",
+            "note": ""
+        },
+        {
+            "text": "Látni",
+            "note": ""
+        },
+        {
+            "text": "Venni",
+            "note": ""
+        },
+        {
+            "text": "Eladni",
+            "note": ""
+        },
+        {
+            "text": "Olvasni",
+            "note": ""
+        },
+        {
+            "text": "Írni",
+            "note": "Írás"
+        },
+        {
+            "text": "Hallgatni",
+            "note": ""
+        },
+        {
+            "text": "Beszélni",
+            "note": ""
+        },
+        {
+            "text": "Csinálni",
+            "note": ""
+        },
+        {
+            "text": "Dolgozni",
+            "note": ""
+        },
+        {
+            "text": "Tanulni",
+            "note": ""
+        },
+        {
+            "text": "Tanítani",
+            "note": ""
+        },
+        {
+            "text": "Tanulni / Elsajátítani",
+            "note": ""
+        },
+        {
+            "text": "Várni",
+            "note": ""
+        },
+        {
+            "text": "Találkozni",
+            "note": ""
+        },
+        {
+            "text": "Szeretni",
+            "note": ""
+        },
+        {
+            "text": "Kedvelni",
+            "note": ""
+        },
+        {
+            "text": "Utálni",
+            "note": ""
+        },
+        {
+            "text": "Nevetni",
+            "note": ""
+        },
+        {
+            "text": "Sírni",
+            "note": ""
+        },
+        {
+            "text": "Gyalogolni",
+            "note": ""
+        },
+        {
+            "text": "Futni",
+            "note": "Futás"
+        },
+        {
+            "text": "Ülni",
+            "note": ""
+        },
+        {
+            "text": "Állni",
+            "note": ""
+        },
+        {
+            "text": "Adni",
+            "note": ""
+        },
+        {
+            "text": "Kapni",
+            "note": ""
+        },
+        {
+            "text": "Kinyitni",
+            "note": ""
+        },
+        {
+            "text": "Bezárni",
+            "note": ""
+        },
+        {
+            "text": "Gondolni",
+            "note": ""
+        },
+        {
+            "text": "Tudni",
+            "note": ""
+        },
+        {
+            "text": "Nem tudni",
+            "note": ""
+        },
+        {
+            "text": "Keresni / Találni",
+            "note": ""
+        },
+        {
+            "text": "Elveszíteni",
+            "note": ""
+        },
+        {
+            "text": "Segíteni",
+            "note": ""
+        },
+        {
+            "text": "Mosni",
+            "note": ""
+        },
+        {
+            "text": "Főzni",
+            "note": ""
+        },
+        {
+            "text": "Énekelni",
+            "note": ""
+        },
+        {
+            "text": "Táncolni",
+            "note": ""
+        },
+        {
+            "text": "Használni",
+            "note": ""
+        },
+        {
+            "text": "Készíteni / Alkotni",
+            "note": ""
+        },
+        {
+            "text": "Hívni / Énekelni",
+            "note": "Dal / Név"
+        },
+        {
+            "text": "Elkapni / Tartani",
+            "note": ""
+        },
+        {
+            "text": "Tenni / Hagyni",
+            "note": ""
+        },
+        {
+            "text": "Bemenni",
+            "note": ""
+        },
+        {
+            "text": "Kimenni",
+            "note": ""
+        },
+        {
+            "text": "Beszállni",
+            "note": "Járműbe"
+        },
+        {
+            "text": "Kiszállni",
+            "note": "Járműből"
+        },
+        {
+            "text": "Küldeni",
+            "note": ""
+        },
+        {
+            "text": "Benyújtani",
+            "note": "Benyújtás"
+        },
+        {
+            "text": "Lenni",
+            "note": "Üdvözlet"
+        },
+        {
+            "text": "Elkezdeni",
+            "note": ""
+        },
+        {
+            "text": "Befejezni",
+            "note": ""
+        },
+        {
+            "text": "Pihenni",
+            "note": "Pihenés"
+        },
+        {
+            "text": "Kérdezni",
+            "note": "Kérdés"
+        },
+        {
+            "text": "Válaszolni",
+            "note": ""
+        },
+        {
+            "text": "Megígérni",
+            "note": ""
+        },
+        {
+            "text": "Aggódni",
+            "note": ""
+        },
+        {
+            "text": "Hinni",
+            "note": ""
+        },
+        {
+            "text": "Kételkedni",
+            "note": ""
+        },
+        {
+            "text": "Kívánni / Remélni",
+            "note": "Remény"
+        },
+        {
+            "text": "Álmodni",
+            "note": ""
+        },
+        {
+            "text": "Veszekedni / Harcolni",
+            "note": ""
+        },
+        {
+            "text": "Győzni",
+            "note": ""
+        },
+        {
+            "text": "Veszíteni",
+            "note": "Vereség"
+        },
+        {
+            "text": "Nőni",
+            "note": "Növekedés"
+        },
+        {
+            "text": "Élni / Lakni",
+            "note": ""
+        },
+        {
+            "text": "Meghalni",
+            "note": ""
+        },
+        {
+            "text": "Felvenni",
+            "note": ""
+        },
+        {
+            "text": "Eldobni",
+            "note": ""
+        },
+        {
+            "text": "Elrejteni",
+            "note": ""
+        },
+        {
+            "text": "Keresni",
+            "note": ""
+        },
+        {
+            "text": "Választani",
+            "note": ""
+        },
+        {
+            "text": "Változtatni",
+            "note": ""
+        },
+        {
+            "text": "Rendelni",
+            "note": "Áruvásárlás"
+        },
+        {
+            "text": "Előkészíteni",
+            "note": ""
+        },
+        {
+            "text": "Megfogni",
+            "note": ""
+        },
+        {
+            "text": "Dobni",
+            "note": ""
+        },
+        {
+            "text": "Húzni",
+            "note": ""
+        },
+        {
+            "text": "Tolni",
+            "note": ""
+        },
+        {
+            "text": "Megjavítani",
+            "note": "Javítás"
+        },
+        {
+            "text": "Eltörni",
+            "note": ""
+        },
+        {
+            "text": "Betegnek lenni / Fájni",
+            "note": ""
+        },
+        {
+            "text": "Gyógyítani",
+            "note": ""
+        },
+        {
+            "text": "Edzeni",
+            "note": ""
+        },
+        {
+            "text": "Úszni",
+            "note": ""
+        },
+        {
+            "text": "Utazni",
+            "note": ""
+        },
+        {
+            "text": "Vezetni",
+            "note": ""
+        },
+        {
+            "text": "Takarítani",
+            "note": ""
+        },
+        {
+            "text": "Mosogatni",
+            "note": ""
+        },
+        {
+            "text": "Mosni (ruhát)",
+            "note": ""
+        },
+        {
+            "text": "Zuhanyozni",
+            "note": ""
+        },
+        {
+            "text": "Fogat mosni",
+            "note": ""
+        },
+        {
+            "text": "Felkelni",
+            "note": "Ébredés"
+        },
+        {
+            "text": "Lefeküdni",
+            "note": "Alvás"
+        },
+        {
+            "text": "Megérteni",
+            "note": ""
+        },
+        {
+            "text": "Emlékezni",
+            "note": ""
+        }
+    ]
+}

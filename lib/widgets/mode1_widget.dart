@@ -132,13 +132,13 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                         child: Column(
                           children: [
                             Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                // Source Language Label (Static - No Dropdown)
+                                // Source Language Label
                                 Container(
                                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                                   decoration: BoxDecoration(
-                                    color: Colors.blue[50], // Lighter blue
+                                    color: Colors.blue[50],
                                     borderRadius: BorderRadius.circular(8),
                                     border: Border.all(color: Colors.blue.shade200),
                                   ),
@@ -151,6 +151,33 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue.shade800,
+                                    ),
+                                  ),
+                                ),
+                                // Swap Button
+                                IconButton(
+                                  key: widget.swapButtonKey,
+                                  icon: const Icon(Icons.swap_horiz, color: Colors.blueAccent),
+                                  onPressed: () => appState.swapLanguages(),
+                                  tooltip: l10n.swapLanguages,
+                                ),
+                                // Target Language Label (Quick view)
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                  decoration: BoxDecoration(
+                                    color: Colors.green[50],
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: Border.all(color: Colors.green.shade200),
+                                  ),
+                                  child: Text(
+                                    LanguageConstants.supportedLanguages.firstWhere(
+                                      (l) => l['code'] == appState.targetLang,
+                                      orElse: () => {'name': appState.targetLang},
+                                    )['name']!,
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.green.shade800,
                                     ),
                                   ),
                                 ),
@@ -218,6 +245,22 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                               onChanged: (text) {
                                 appState.setSourceText(text);
                               },
+                            ),
+
+                            const SizedBox(height: 12),
+                            
+                            // Context/Note Input
+                            TextField(
+                              key: widget.contextFieldKey,
+                              controller: _noteController,
+                              decoration: InputDecoration(
+                                labelText: l10n.tutorialContextTitle,
+                                hintText: l10n.tutorialContextDesc,
+                                prefixIcon: const Icon(Icons.note_alt_outlined),
+                                border: const OutlineInputBorder(),
+                                contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                              ),
+                              onChanged: (text) => appState.setNote(text),
                             ),
                             
                             const Divider(),
@@ -616,12 +659,12 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                          showDialog(
                            context: context,
                            builder: (context) => AlertDialog(
-                             title: Text(AppLocalizations.of(context)!.error ?? 'Error'),
+                             title: Text(AppLocalizations.of(context)!.error),
                              content: Text(error),
                              actions: [
                                TextButton(
                                  onPressed: () => Navigator.pop(context),
-                                 child: Text(AppLocalizations.of(context)!.confirm ?? 'OK'),
+                                 child: Text(AppLocalizations.of(context)!.confirm),
                                ),
                              ],
                            ),
@@ -650,76 +693,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
       ),
     );
   }
-  void _showMaterialSelectionDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (context) {
-        final appState = Provider.of<AppState>(context, listen: false);
-        final l10n = AppLocalizations.of(context)!;
-        
-        final materials = appState.studyMaterials;
-        final isWordMode = appState.recordTypeFilter == 'word';
-        
-        // Filter materials based on current Toggle
-        final filteredMaterials = materials.where((m) {
-           if (m['id'] == 0) return true; // Always show Basic
-           final count = m[isWordMode ? 'word_count' : 'sentence_count'] as int? ?? 0;
-           return count > 0;
-        }).toList();
 
-        return AlertDialog(
-          title: Text(isWordMode ? l10n.tabWord : l10n.tabSentence), // "Word" or "Sentence"
-          content: SizedBox(
-            width: double.maxFinite,
-            height: 400,
-            child: ListView(
-              children: [
-                ListTile(
-                  leading: const Icon(Icons.all_inclusive, color: Colors.indigo),
-                  title: Text(l10n.reviewAll),
-                  onTap: () {
-                    // Filter is already set by toggle, so just select -1 (All)
-                    appState.selectMaterial(-1);
-                    Navigator.pop(context);
-                  },
-                ),
-                const Divider(),
-                ...filteredMaterials.map((m) {
-                      String subject = m['subject'] as String;
-                      // Localize Basic
-                      if (m['id'] == 0) {
-                        subject = isWordMode ? l10n.basicWords : l10n.basicSentences;
-                      }
-                      return ListTile(
-                        leading: Icon(
-                          isWordMode ? Icons.book : Icons.article, 
-                          color: isWordMode ? Colors.blueAccent : Colors.deepOrangeAccent
-                        ),
-                        title: Text(subject),
-                        subtitle: Text(
-                          // Show count for current mode only
-                          '${isWordMode ? l10n.wordModeLabel : l10n.labelSentence}: ${m[isWordMode ? 'word_count' : 'sentence_count']}'
-                        ),
-                        onTap: () {
-                           // Filter is already set, just select ID
-                           appState.selectMaterial(m['id'] as int);
-                           Navigator.pop(context);
-                        },
-                      );
-                }),
-              ],
-            ),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: Text(l10n.cancel),
-            ),
-          ],
-        );
-      },
-    );
-  }
 
   Widget _buildDisambiguationDialog(BuildContext context, AppState appState) {
     final l10n = AppLocalizations.of(context)!;
@@ -739,7 +713,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      l10n.disambiguationTitle ?? '의미 선택', 
+                      l10n.disambiguationTitle, 
                       style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                     IconButton(
@@ -750,7 +724,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.disambiguationPrompt ?? '어떤 의미로 번역하시겠습니까?',
+                  l10n.disambiguationPrompt,
                   style: const TextStyle(fontSize: 14, color: Colors.grey),
                 ),
                 const SizedBox(height: 16),
@@ -785,7 +759,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                       appState.selectDisambiguationOption(''); // Skip
                       appState.translate(context: context); // Re-translate as generic
                     },
-                    child: Text(l10n.skip ?? '건너뛰기'),
+                    child: Text(l10n.skip),
                   ),
                 ),
               ],

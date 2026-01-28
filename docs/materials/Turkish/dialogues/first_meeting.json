@@ -1,0 +1,37 @@
+{
+    "title": "İlk Karşılaşma",
+    "entries": [
+        {
+            "text": "Merhaba!",
+            "speaker": "A"
+        },
+        {
+            "text": "Merhaba. Tanıştığımıza memnun oldum.",
+            "speaker": "B"
+        },
+        {
+            "text": "Adınız nedir?",
+            "speaker": "A"
+        },
+        {
+            "text": "Adım [Ad]. Ya sizinki?",
+            "speaker": "B"
+        },
+        {
+            "text": "Benim adım [Ad]. Nerelisiniz?",
+            "speaker": "A"
+        },
+        {
+            "text": "Amerikalıyım. Ya siz?",
+            "speaker": "B"
+        },
+        {
+            "text": "Koreliyim. Tanıştığımıza sevindim.",
+            "speaker": "A"
+        },
+        {
+            "text": "Ben de. Görüşmek üzere.",
+            "speaker": "B"
+        }
+    ]
+}

@@ -1,0 +1,405 @@
+{
+    "subject": "Základní slovesa 100",
+    "entries": [
+        {
+            "text": "Jít",
+            "note": ""
+        },
+        {
+            "text": "Přijít",
+            "note": ""
+        },
+        {
+            "text": "Jíst",
+            "note": ""
+        },
+        {
+            "text": "Pít",
+            "note": ""
+        },
+        {
+            "text": "Spát",
+            "note": ""
+        },
+        {
+            "text": "Vidět",
+            "note": ""
+        },
+        {
+            "text": "Koupit",
+            "note": ""
+        },
+        {
+            "text": "Prodat",
+            "note": ""
+        },
+        {
+            "text": "Číst",
+            "note": ""
+        },
+        {
+            "text": "Psát",
+            "note": "Písmo"
+        },
+        {
+            "text": "Slyšet",
+            "note": ""
+        },
+        {
+            "text": "Mluvit",
+            "note": ""
+        },
+        {
+            "text": "Dělat",
+            "note": ""
+        },
+        {
+            "text": "Pracovat",
+            "note": ""
+        },
+        {
+            "text": "Učit se",
+            "note": ""
+        },
+        {
+            "text": "Učit / Vyučovat",
+            "note": ""
+        },
+        {
+            "text": "Učit se",
+            "note": ""
+        },
+        {
+            "text": "Čekat",
+            "note": ""
+        },
+        {
+            "text": "Potkat",
+            "note": ""
+        },
+        {
+            "text": "Milovat",
+            "note": ""
+        },
+        {
+            "text": "Mít rád",
+            "note": ""
+        },
+        {
+            "text": "Nenávidět",
+            "note": ""
+        },
+        {
+            "text": "Smát se",
+            "note": ""
+        },
+        {
+            "text": "Plakat",
+            "note": ""
+        },
+        {
+            "text": "Chodit",
+            "note": ""
+        },
+        {
+            "text": "Běhat",
+            "note": "Běh"
+        },
+        {
+            "text": "Sedět",
+            "note": ""
+        },
+        {
+            "text": "Stát",
+            "note": ""
+        },
+        {
+            "text": "Dát",
+            "note": ""
+        },
+        {
+            "text": "Dostat / Přijmout",
+            "note": ""
+        },
+        {
+            "text": "Otevřít",
+            "note": ""
+        },
+        {
+            "text": "Zavřít",
+            "note": ""
+        },
+        {
+            "text": "Myslet",
+            "note": ""
+        },
+        {
+            "text": "Vědět",
+            "note": ""
+        },
+        {
+            "text": "Nevědět",
+            "note": ""
+        },
+        {
+            "text": "Hledat / Najít",
+            "note": ""
+        },
+        {
+            "text": "Ztratit",
+            "note": ""
+        },
+        {
+            "text": "Pomoci",
+            "note": ""
+        },
+        {
+            "text": "Mýt się",
+            "note": ""
+        },
+        {
+            "text": "Vařit",
+            "note": ""
+        },
+        {
+            "text": "Zpívat",
+            "note": ""
+        },
+        {
+            "text": "Tančit",
+            "note": ""
+        },
+        {
+            "text": "Použít",
+            "note": ""
+        },
+        {
+            "text": "Dělat / Vytvořit",
+            "note": ""
+        },
+        {
+            "text": "Volat / Zpívat",
+            "note": "Píseň / Jméno"
+        },
+        {
+            "text": "Chytit / Držet",
+            "note": ""
+        },
+        {
+            "text": "Položit / Nechat",
+            "note": ""
+        },
+        {
+            "text": "Vstoupit",
+            "note": ""
+        },
+        {
+            "text": "Odejít",
+            "note": ""
+        },
+        {
+            "text": "Nastoupit",
+            "note": "Do vozidla"
+        },
+        {
+            "text": "Vystoupit",
+            "note": "Z vozidla"
+        },
+        {
+            "text": "Poslat",
+            "note": ""
+        },
+        {
+            "text": "Odevzdat",
+            "note": "Odevzdání"
+        },
+        {
+            "text": "Mít se",
+            "note": "Pozdrav"
+        },
+        {
+            "text": "Začít",
+            "note": ""
+        },
+        {
+            "text": "Skončit",
+            "note": ""
+        },
+        {
+            "text": "Odpočívat",
+            "note": "Odpočinek"
+        },
+        {
+            "text": "Ptát se",
+            "note": "Otázka"
+        },
+        {
+            "text": "Odpovědět",
+            "note": ""
+        },
+        {
+            "text": "Slíbit",
+            "note": ""
+        },
+        {
+            "text": "Dělat si starosti",
+            "note": ""
+        },
+        {
+            "text": "Věřit",
+            "note": ""
+        },
+        {
+            "text": "Pochybovat",
+            "note": ""
+        },
+        {
+            "text": "Přát si / Doufat",
+            "note": "Naděje"
+        },
+        {
+            "text": "Snít",
+            "note": ""
+        },
+        {
+            "text": "Bojovat",
+            "note": ""
+        },
+        {
+            "text": "Vyhrát",
+            "note": ""
+        },
+        {
+            "text": "Prohrát",
+            "note": "Porážka"
+        },
+        {
+            "text": "Růst",
+            "note": "Růst"
+        },
+        {
+            "text": "Žít / Bydlet",
+            "note": ""
+        },
+        {
+            "text": "Zemřít",
+            "note": ""
+        },
+        {
+            "text": "Sebrat",
+            "note": ""
+        },
+        {
+            "text": "Vyhodit",
+            "note": ""
+        },
+        {
+            "text": "Schovat",
+            "note": ""
+        },
+        {
+            "text": "Hledat",
+            "note": ""
+        },
+        {
+            "text": "Vybrat",
+            "note": ""
+        },
+        {
+            "text": "Změnit",
+            "note": ""
+        },
+        {
+            "text": "Objednat",
+            "note": "Nákup zboží"
+        },
+        {
+            "text": "Připravit",
+            "note": ""
+        },
+        {
+            "text": "Chytit",
+            "note": ""
+        },
+        {
+            "text": "Hodit",
+            "note": ""
+        },
+        {
+            "text": "Tahat",
+            "note": ""
+        },
+        {
+            "text": "Tlačit",
+            "note": ""
+        },
+        {
+            "text": "Opravit",
+            "note": "Oprava"
+        },
+        {
+            "text": "Rozbít",
+            "note": ""
+        },
+        {
+            "text": "Být nemocný / Bolet",
+            "note": ""
+        },
+        {
+            "text": "Léčit",
+            "note": ""
+        },
+        {
+            "text": "Cvičit",
+            "note": ""
+        },
+        {
+            "text": "Plavat",
+            "note": ""
+        },
+        {
+            "text": "Cestovat",
+            "note": ""
+        },
+        {
+            "text": "Řídit",
+            "note": ""
+        },
+        {
+            "text": "Uklízet",
+            "note": ""
+        },
+        {
+            "text": "Mýt nádobí",
+            "note": ""
+        },
+        {
+            "text": "Prát",
+            "note": ""
+        },
+        {
+            "text": "Sprchovat se",
+            "note": ""
+        },
+        {
+            "text": "Čistit si zuby",
+            "note": ""
+        },
+        {
+            "text": "Probudit se / Vstát",
+            "note": "Procitnutí"
+        },
+        {
+            "text": "Jít spát",
+            "note": "Spánek"
+        },
+        {
+            "text": "Rozumět",
+            "note": ""
+        },
+        {
+            "text": "Pamatovat si",
+            "note": ""
+        }
+    ]
+}

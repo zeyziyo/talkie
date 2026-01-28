@@ -1,0 +1,37 @@
+{
+    "title": "Prima întâlnire",
+    "entries": [
+        {
+            "text": "Bună ziua!",
+            "speaker": "A"
+        },
+        {
+            "text": "Bună ziua. Încântat de cunoștință.",
+            "speaker": "B"
+        },
+        {
+            "text": "Cum vă numiți ?",
+            "speaker": "A"
+        },
+        {
+            "text": "Numele meu este [Nume]. Dar al dumneavoastră ?",
+            "speaker": "B"
+        },
+        {
+            "text": "Numele meu este [Nume]. De unde sunteți ?",
+            "speaker": "A"
+        },
+        {
+            "text": "Sunt din America. Dar dumneavoastră ?",
+            "speaker": "B"
+        },
+        {
+            "text": "Sunt din Coreea. Mi-a părut bine de cunoștință.",
+            "speaker": "A"
+        },
+        {
+            "text": "Și mie. La revedere.",
+            "speaker": "B"
+        }
+    ]
+}

@@ -148,6 +148,7 @@ class AppState extends ChangeNotifier {
     _recordTypeFilter = value ? 'word' : 'sentence';
     notifyListeners();
   }
+
   
   int? get selectedMaterialId => _selectedMaterialId;
 
@@ -521,13 +522,13 @@ class AppState extends ChangeNotifier {
           if (l10n != null) {
             switch (reason) {
               case 'PROFANITY':
-                errorMsg = l10n.errorProfanity ?? reason;
+                errorMsg = l10n.errorProfanity;
                 break;
               case 'HATE_SPEECH':
-                errorMsg = l10n.errorHateSpeech ?? reason;
+                errorMsg = l10n.errorHateSpeech;
                 break;
               case 'SEXUAL':
-                errorMsg = l10n.errorSexualContent ?? reason;
+                errorMsg = l10n.errorSexualContent;
                 break;
               case 'OTHER':
               default:
@@ -539,7 +540,7 @@ class AppState extends ChangeNotifier {
                    // This is likely the AI's descriptive NATIVE language reason
                    errorMsg = reason;
                 } else {
-                  errorMsg = l10n.errorOtherSafety ?? reason;
+                  errorMsg = l10n.errorOtherSafety;
                 }
                 break;
             }
@@ -596,6 +597,7 @@ class AppState extends ChangeNotifier {
       notifyListeners();
       rethrow;
     }
+    return null;
   }
   
   /// Helper to save to Supabase (Extracted for Dual Write)

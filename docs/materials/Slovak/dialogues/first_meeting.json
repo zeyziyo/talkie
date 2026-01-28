@@ -1,0 +1,37 @@
+{
+    "title": "Prvé stretnutie",
+    "entries": [
+        {
+            "text": "Dobrý den!",
+            "speaker": "A"
+        },
+        {
+            "text": "Dobrý den. Rád vás spoznávam.",
+            "speaker": "B"
+        },
+        {
+            "text": "Ako sa voláte?",
+            "speaker": "A"
+        },
+        {
+            "text": "Volám sa [Meno]. A vy?",
+            "speaker": "B"
+        },
+        {
+            "text": "Volám sa [Meno]. Odkiaľ ste?",
+            "speaker": "A"
+        },
+        {
+            "text": "Som z Ameriky. A vy?",
+            "speaker": "B"
+        },
+        {
+            "text": "Som z Kórey. Bolo mi potešením vás spoznať.",
+            "speaker": "A"
+        },
+        {
+            "text": "Mne tiež. Dovidenia.",
+            "speaker": "B"
+        }
+    ]
+}

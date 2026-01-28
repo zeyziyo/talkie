@@ -50,11 +50,15 @@ It provides an intuitive UX for switching modes by swiping the screen. In partic
 
 ### MODE 4: AI 채팅 (AI Chat)
 - 💬 **실시간 대화**: AI 페르소나(교사, 친구 등)와 실전 회화 연습
+- 🌐 **2개 국어 표시**: 나의 말과 AI의 대답 모두 2개 국어로 표시되어 이해도 향상
+- 🔊 **TTS 발음 듣기**: 모든 대화의 스피커 아이콘을 눌러 정확한 발음 연습
 - 🤖 **자동 번역 및 저장**: AI 응답을 즉시 번역하고, 클릭 한 번으로 복습 기록에 저장
 - 📑 **대화 이력 관리**: 과거 대화 내용을 불러오고 제목을 수정하여 관리
 - 🧠 **맥락 보존**: 채팅에서 저장한 문장은 복습 모드에서 대화 맥락과 함께 표시
 
 * **Real-time Conversation**: Practice speaking with AI personas (teacher, friend, etc.)
+* **Dual Language Display**: View both mother tongue and target language for better understanding
+* **TTS Pronunciation**: Listen to correct pronunciation for all messages via speaker icons
 * **Auto-Translation & Save**: Instantly translate AI responses and save to study records with one tap
 * **History Management**: Revisit past chats & edit titles for better organization
 * **Context Preservation**: Chat-sourced sentences retain their dialogue context in Review Mode

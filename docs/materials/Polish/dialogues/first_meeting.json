@@ -1,0 +1,37 @@
+{
+    "title": "Pierwsze spotkanie",
+    "entries": [
+        {
+            "text": "Dzień dobry!",
+            "speaker": "A"
+        },
+        {
+            "text": "Dzień dobry. Miło cię poznać.",
+            "speaker": "B"
+        },
+        {
+            "text": "Jak masz na imię?",
+            "speaker": "A"
+        },
+        {
+            "text": "Nazywam się [Imię]. A ty?",
+            "speaker": "B"
+        },
+        {
+            "text": "Nazywam się [Imię]. Skąd pochodzisz?",
+            "speaker": "A"
+        },
+        {
+            "text": "Pochodzę z Ameryki. A ty?",
+            "speaker": "B"
+        },
+        {
+            "text": "Pochodzę z Korei. Miło było cię poznać.",
+            "speaker": "A"
+        },
+        {
+            "text": "Mnie również. Do widzenia.",
+            "speaker": "B"
+        }
+    ]
+}

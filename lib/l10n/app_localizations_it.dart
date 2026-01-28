@@ -687,19 +687,16 @@ class AppLocalizationsIt extends AppLocalizations {
   String get practiceModeTitle => 'Practice';
 
   @override
-  String get chatHistoryTitle => '대화 기록';
+  String get chatHistoryTitle => 'Cronologia';
 
   @override
-  String get chatNewChat => '새 대화';
+  String get chatNewChat => 'Nuova chat';
 
   @override
-  String get chatChoosePersona => '페르소나 선택';
+  String get chatChoosePersona => 'Scegli personaggio';
 
   @override
-  String get chatEditTitle => '대화 제목 수정';
-
-  @override
-  String get chatTypeHint => '메시지를 입력하세요...';
+  String get chatTypeHint => 'Scrivi un messaggio...';
 
   @override
   String chatFailed(Object error) {
@@ -707,10 +704,10 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get chatNoConversations => '아직 대화가 없습니다';
+  String get chatNoConversations => 'Nessuna conversazione';
 
   @override
-  String get chatStartNewPrompt => '연습을 위해 새 대화를 시작해보세요!';
+  String get chatStartNewPrompt => 'Inizia una chat per fare pratica!';
 
   @override
   String chatFromConversation(Object speaker) {
@@ -718,35 +715,36 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get personaTeacher => '영어 선생님';
+  String get personaTeacher => 'Insegnante di inglese';
 
   @override
-  String get personaGuide => '여행 가이드';
+  String get personaGuide => 'Guida turistica';
 
   @override
-  String get personaFriend => '현지인 친구';
+  String get personaFriend => 'Amico locale';
 
   @override
   String get chatUntitled => '제목 없는 대화';
 
   @override
-  String get chatAiChat => 'AI 채팅';
+  String get chatAiChat => 'Chat IA';
 
   @override
   String get helpModeChatDesc => 'AI 페르소나와 대화하며 실전 회화를 연습하고 유용한 문장을 저장하세요.';
 
   @override
   String get helpModeChatDetails =>
-      '• 채팅 시작: 상단 메뉴의 말풍선 아이콘 클릭\n• 페르소나 선택: 선생님, 가이드, 친구 중 선택\n• 대화 및 저장: AI 응답은 자동 번역됩니다. 메시지를 클릭하여 복습 모드로 저장하세요\n• 자동 제목: 대화 주제에 따라 AI가 제목을 추천합니다\n• 이력 관리: 과거 대화 내용을 언제든 다시 확인할 수 있습니다';
+      '• 채팅 시작: 상단 메뉴의 말풍선 아이콘 클릭\n• 페르소나 선택: 선생님, 가이드, 친구 중 선택\n• 대화 및 저장: AI 응답은 자동 번역됩니다. 메시지를 클릭하여 복습 모드로 저장하세요\n• 2개 국어 표시: 모든 메시지에 대해 모국어와 학습 언어를 함께 표시합니다\n• 듣기 기능 (TTS): 스피커 아이콘을 눌러 각 언어의 발음을 들어보세요\n• 자동 제목: 대화 주제에 따라 AI가 제목을 추천합니다\n• 이력 관리: 과거 대화 내용을 언제든 다시 확인할 수 있습니다';
 
   @override
-  String get tutorialAiChatTitle => 'AI 채팅';
+  String get tutorialAiChatTitle => 'AI Chat';
 
   @override
-  String get tutorialAiChatDesc => 'AI 페르소나와 실전 대화를 연습해 보세요.';
+  String get tutorialAiChatDesc =>
+      'Practice real conversation with AI personas here.';
 
   @override
-  String get me => '나';
+  String get me => 'Io';
 
   @override
   String get helpDialogueImportDesc => '완성된 대화문 세트를 JSON 파일로 한 번에 가져올 수 있습니다.';
@@ -761,5 +759,27 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get errorSelectCategory => '먼저 단어나 문장을 선택하세요!';
+  String get basicWordRepository => 'Archivio parole base';
+
+  @override
+  String get basicSentenceRepository => 'Archivio frasi base';
+
+  @override
+  String get chatEndTitle => 'Fine e salva';
+
+  @override
+  String get chatEndMessage => 'Vuoi terminare la conversazione?';
+
+  @override
+  String get chatSaveAndExit => 'Salva ed esci';
+
+  @override
+  String get errorSelectCategory => 'Seleziona prima parola o frase!';
+
+  @override
+  String get tutorialM1ToggleTitle => 'Word/Sentence Mode';
+
+  @override
+  String get tutorialM1ToggleDesc =>
+      'Switch between Word and Sentence mode here. Words are saved with larger text.';
 }

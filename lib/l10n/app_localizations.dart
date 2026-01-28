@@ -1416,12 +1416,6 @@ abstract class AppLocalizations {
   /// **'페르소나 선택'**
   String get chatChoosePersona;
 
-  /// No description provided for @chatEditTitle.
-  ///
-  /// In ko, this message translates to:
-  /// **'대화 제목 수정'**
-  String get chatEditTitle;
-
   /// No description provided for @chatTypeHint.
   ///
   /// In ko, this message translates to:
@@ -1491,7 +1485,7 @@ abstract class AppLocalizations {
   /// No description provided for @helpModeChatDetails.
   ///
   /// In ko, this message translates to:
-  /// **'• 채팅 시작: 상단 메뉴의 말풍선 아이콘 클릭\n• 페르소나 선택: 선생님, 가이드, 친구 중 선택\n• 대화 및 저장: AI 응답은 자동 번역됩니다. 메시지를 클릭하여 복습 모드로 저장하세요\n• 자동 제목: 대화 주제에 따라 AI가 제목을 추천합니다\n• 이력 관리: 과거 대화 내용을 언제든 다시 확인할 수 있습니다'**
+  /// **'• 채팅 시작: 상단 메뉴의 말풍선 아이콘 클릭\n• 페르소나 선택: 선생님, 가이드, 친구 중 선택\n• 대화 및 저장: AI 응답은 자동 번역됩니다. 메시지를 클릭하여 복습 모드로 저장하세요\n• 2개 국어 표시: 모든 메시지에 대해 모국어와 학습 언어를 함께 표시합니다\n• 듣기 기능 (TTS): 스피커 아이콘을 눌러 각 언어의 발음을 들어보세요\n• 자동 제목: 대화 주제에 따라 AI가 제목을 추천합니다\n• 이력 관리: 과거 대화 내용을 언제든 다시 확인할 수 있습니다'**
   String get helpModeChatDetails;
 
   /// No description provided for @tutorialAiChatTitle.
@@ -1530,11 +1524,53 @@ abstract class AppLocalizations {
   /// **'현재 선택된 자료집: {name}'**
   String mode1SelectedMaterial(Object name);
 
+  /// No description provided for @basicWordRepository.
+  ///
+  /// In ko, this message translates to:
+  /// **'기본 단어 저장소'**
+  String get basicWordRepository;
+
+  /// No description provided for @basicSentenceRepository.
+  ///
+  /// In ko, this message translates to:
+  /// **'기본 문장 저장소'**
+  String get basicSentenceRepository;
+
+  /// No description provided for @chatEndTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'대화 종료 및 저장'**
+  String get chatEndTitle;
+
+  /// No description provided for @chatEndMessage.
+  ///
+  /// In ko, this message translates to:
+  /// **'대화를 종료하시겠습니까?'**
+  String get chatEndMessage;
+
+  /// No description provided for @chatSaveAndExit.
+  ///
+  /// In ko, this message translates to:
+  /// **'저장 후 종료'**
+  String get chatSaveAndExit;
+
   /// No description provided for @errorSelectCategory.
   ///
   /// In ko, this message translates to:
   /// **'먼저 단어나 문장을 선택하세요!'**
   String get errorSelectCategory;
+
+  /// No description provided for @tutorialM1ToggleTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'단어/문장 모드'**
+  String get tutorialM1ToggleTitle;
+
+  /// No description provided for @tutorialM1ToggleDesc.
+  ///
+  /// In ko, this message translates to:
+  /// **'단어와 문장 모드를 여기서 전환하세요.'**
+  String get tutorialM1ToggleDesc;
 }
 
 class _AppLocalizationsDelegate

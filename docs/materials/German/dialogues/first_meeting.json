@@ -1,0 +1,45 @@
+{
+    "title": "Erstes Treffen",
+    "entries": [
+        {
+            "text": "Hallo! Mein Name ist Jordan. Schön, Sie kennenzulernen.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Hallo Jordan! Ich bin Minji. Schön, Sie auch kennenzulernen.",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Sind Sie Student?",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Nein, ich bin Büroangestellte. Und Sie, Jordan?",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Ich bin Universitätsstudent. Ich lerne Koreanisch.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Wow, das ist toll! Koreanisch ist ein bisschen schwierig, oder?",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Ja, es ist schwierig, aber es macht Spaß. Bitte helfen Sie mir viel.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Natürlich! Lassen Sie uns zusammen fleißig lernen.",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Danke. Bis zum nächsten Mal!",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Auf Wiedersehen!",
+            "speaker": "Minji"
+        }
+    ]
+}

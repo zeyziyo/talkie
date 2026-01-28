@@ -1,0 +1,37 @@
+{
+    "title": "Ensitapaaminen",
+    "entries": [
+        {
+            "text": "Hei!",
+            "speaker": "A"
+        },
+        {
+            "text": "Hei. Hauska tavata.",
+            "speaker": "B"
+        },
+        {
+            "text": "Mikä nimesi on?",
+            "speaker": "A"
+        },
+        {
+            "text": "Nimeni on [Nimi]. Entä sinun?",
+            "speaker": "B"
+        },
+        {
+            "text": "Nimeni on [Nimi]. Mistä olet kotoisin?",
+            "speaker": "A"
+        },
+        {
+            "text": "Olen kotoisin Amerikasta. Entä sinä?",
+            "speaker": "B"
+        },
+        {
+            "text": "Olen kotoisin Koreasta. Oli hauska tavata.",
+            "speaker": "A"
+        },
+        {
+            "text": "Samoin. Hei hei.",
+            "speaker": "B"
+        }
+    ]
+}

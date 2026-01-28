@@ -1,0 +1,405 @@
+{
+    "subject": "100 Kata Kerja Asas",
+    "entries": [
+        {
+            "text": "pergi",
+            "note": ""
+        },
+        {
+            "text": "datang",
+            "note": ""
+        },
+        {
+            "text": "makan",
+            "note": ""
+        },
+        {
+            "text": "minum",
+            "note": ""
+        },
+        {
+            "text": "tidur",
+            "note": ""
+        },
+        {
+            "text": "melihat",
+            "note": ""
+        },
+        {
+            "text": "membeli",
+            "note": ""
+        },
+        {
+            "text": "menjual",
+            "note": ""
+        },
+        {
+            "text": "membaca",
+            "note": ""
+        },
+        {
+            "text": "menulis",
+            "note": "menulis"
+        },
+        {
+            "text": "mendengar",
+            "note": ""
+        },
+        {
+            "text": "bercakap",
+            "note": ""
+        },
+        {
+            "text": "melakukan",
+            "note": ""
+        },
+        {
+            "text": "bekerja",
+            "note": ""
+        },
+        {
+            "text": "belajar",
+            "note": ""
+        },
+        {
+            "text": "mengajar",
+            "note": ""
+        },
+        {
+            "text": "mempelajari",
+            "note": ""
+        },
+        {
+            "text": "menunggu",
+            "note": ""
+        },
+        {
+            "text": "berjumpa",
+            "note": ""
+        },
+        {
+            "text": "mencintai",
+            "note": ""
+        },
+        {
+            "text": "menyukai",
+            "note": ""
+        },
+        {
+            "text": "membenci",
+            "note": ""
+        },
+        {
+            "text": "ketawa",
+            "note": ""
+        },
+        {
+            "text": "menangis",
+            "note": ""
+        },
+        {
+            "text": "berjalan",
+            "note": ""
+        },
+        {
+            "text": "berlari",
+            "note": "berlari"
+        },
+        {
+            "text": "duduk",
+            "note": ""
+        },
+        {
+            "text": "berdiri",
+            "note": ""
+        },
+        {
+            "text": "memberi",
+            "note": ""
+        },
+        {
+            "text": "menerima",
+            "note": ""
+        },
+        {
+            "text": "membuka",
+            "note": ""
+        },
+        {
+            "text": "menutup",
+            "note": ""
+        },
+        {
+            "text": "berfikir",
+            "note": ""
+        },
+        {
+            "text": "tahu",
+            "note": ""
+        },
+        {
+            "text": "tidak tahu",
+            "note": ""
+        },
+        {
+            "text": "mencari / jumpa",
+            "note": ""
+        },
+        {
+            "text": "kehilangan",
+            "note": ""
+        },
+        {
+            "text": "membantu",
+            "note": ""
+        },
+        {
+            "text": "mencuci",
+            "note": ""
+        },
+        {
+            "text": "memasak",
+            "note": ""
+        },
+        {
+            "text": "bernyanyi",
+            "note": ""
+        },
+        {
+            "text": "menari",
+            "note": ""
+        },
+        {
+            "text": "menggunakan",
+            "note": ""
+        },
+        {
+            "text": "membuat",
+            "note": ""
+        },
+        {
+            "text": "memanggil / bernyanyi",
+            "note": "lagu / nama"
+        },
+        {
+            "text": "memegang",
+            "note": ""
+        },
+        {
+            "text": "meletakkan / melepaskan",
+            "note": ""
+        },
+        {
+            "text": "masuk",
+            "note": ""
+        },
+        {
+            "text": "keluar",
+            "note": ""
+        },
+        {
+            "text": "naik",
+            "note": "kenderaan"
+        },
+        {
+            "text": "turun",
+            "note": "kenderaan"
+        },
+        {
+            "text": "menghantar",
+            "note": ""
+        },
+        {
+            "text": "menyerahkan",
+            "note": "serahan"
+        },
+        {
+            "text": "khabar",
+            "note": "salam"
+        },
+        {
+            "text": "bermula",
+            "note": ""
+        },
+        {
+            "text": "berakhir",
+            "note": ""
+        },
+        {
+            "text": "berehat",
+            "note": "rehat"
+        },
+        {
+            "text": "bertanya",
+            "note": "soalan"
+        },
+        {
+            "text": "menjawab",
+            "note": ""
+        },
+        {
+            "text": "berjanji",
+            "note": ""
+        },
+        {
+            "text": "risau",
+            "note": ""
+        },
+        {
+            "text": "percaya",
+            "note": ""
+        },
+        {
+            "text": "ragu-ragu",
+            "note": ""
+        },
+        {
+            "text": "berharap",
+            "note": "harapan"
+        },
+        {
+            "text": "bermimpi",
+            "note": ""
+        },
+        {
+            "text": "berkelahi",
+            "note": ""
+        },
+        {
+            "text": "menang",
+            "note": ""
+        },
+        {
+            "text": "kalah",
+            "note": "kekalahan"
+        },
+        {
+            "text": "tumbuh",
+            "note": "pertumbuhan"
+        },
+        {
+            "text": "hidup / tinggal",
+            "note": ""
+        },
+        {
+            "text": "mati",
+            "note": ""
+        },
+        {
+            "text": "mengambil",
+            "note": ""
+        },
+        {
+            "text": "membuang",
+            "note": ""
+        },
+        {
+            "text": "bersembunyi",
+            "note": ""
+        },
+        {
+            "text": "mencari",
+            "note": ""
+        },
+        {
+            "text": "memilih",
+            "note": ""
+        },
+        {
+            "text": "mengubah",
+            "note": ""
+        },
+        {
+            "text": "memesan",
+            "note": "pembelian barang"
+        },
+        {
+            "text": "bersiap",
+            "note": ""
+        },
+        {
+            "text": "menangkap",
+            "note": ""
+        },
+        {
+            "text": "membaling",
+            "note": ""
+        },
+        {
+            "text": "menarik",
+            "note": ""
+        },
+        {
+            "text": "menolak",
+            "note": ""
+        },
+        {
+            "text": "membaiki",
+            "note": "pembaikan"
+        },
+        {
+            "text": "rosak",
+            "note": ""
+        },
+        {
+            "text": "sakit",
+            "note": ""
+        },
+        {
+            "text": "merawat",
+            "note": ""
+        },
+        {
+            "text": "bersukan",
+            "note": ""
+        },
+        {
+            "text": "berenang",
+            "note": ""
+        },
+        {
+            "text": "mengembara",
+            "note": ""
+        },
+        {
+            "text": "memandu",
+            "note": ""
+        },
+        {
+            "text": "membersihkan",
+            "note": ""
+        },
+        {
+            "text": "mencuci pinggan",
+            "note": ""
+        },
+        {
+            "text": "mencuci baju",
+            "note": ""
+        },
+        {
+            "text": "mandi",
+            "note": ""
+        },
+        {
+            "text": "berus gigi",
+            "note": ""
+        },
+        {
+            "text": "bangun",
+            "note": "terjaga"
+        },
+        {
+            "text": "tidur",
+            "note": "tidur"
+        },
+        {
+            "text": "faham",
+            "note": ""
+        },
+        {
+            "text": "ingat",
+            "note": ""
+        }
+    ]
+}

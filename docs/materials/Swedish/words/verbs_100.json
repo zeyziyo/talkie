@@ -1,0 +1,405 @@
+{
+    "subject": "Basverb 100",
+    "entries": [
+        {
+            "text": "Gå",
+            "note": ""
+        },
+        {
+            "text": "Komma",
+            "note": ""
+        },
+        {
+            "text": "Äta",
+            "note": ""
+        },
+        {
+            "text": "Dricka",
+            "note": ""
+        },
+        {
+            "text": "Sova",
+            "note": ""
+        },
+        {
+            "text": "Se",
+            "note": ""
+        },
+        {
+            "text": "Köpa",
+            "note": ""
+        },
+        {
+            "text": "Sälja",
+            "note": ""
+        },
+        {
+            "text": "Läsa",
+            "note": ""
+        },
+        {
+            "text": "Skriva",
+            "note": "Skrift"
+        },
+        {
+            "text": "Lyssna",
+            "note": ""
+        },
+        {
+            "text": "Prata",
+            "note": ""
+        },
+        {
+            "text": "Göra",
+            "note": ""
+        },
+        {
+            "text": "Arbeta",
+            "note": ""
+        },
+        {
+            "text": "Studera",
+            "note": ""
+        },
+        {
+            "text": "Undervisa",
+            "note": ""
+        },
+        {
+            "text": "Lära sig",
+            "note": ""
+        },
+        {
+            "text": "Vänta",
+            "note": ""
+        },
+        {
+            "text": "Träffa",
+            "note": ""
+        },
+        {
+            "text": "Älska",
+            "note": ""
+        },
+        {
+            "text": "Gilla",
+            "note": ""
+        },
+        {
+            "text": "Hata",
+            "note": ""
+        },
+        {
+            "text": "Skratta",
+            "note": ""
+        },
+        {
+            "text": "Gråta",
+            "note": ""
+        },
+        {
+            "text": "Promenera",
+            "note": ""
+        },
+        {
+            "text": "Springa",
+            "note": "Löpning"
+        },
+        {
+            "text": "Sitta",
+            "note": ""
+        },
+        {
+            "text": "Stå",
+            "note": ""
+        },
+        {
+            "text": "Ge",
+            "note": ""
+        },
+        {
+            "text": "Få / Ta emot",
+            "note": ""
+        },
+        {
+            "text": "Öppna",
+            "note": ""
+        },
+        {
+            "text": "Stänga",
+            "note": ""
+        },
+        {
+            "text": "Tänka",
+            "note": ""
+        },
+        {
+            "text": "Veta",
+            "note": ""
+        },
+        {
+            "text": "Inte veta",
+            "note": ""
+        },
+        {
+            "text": "Söka / Hitta",
+            "note": ""
+        },
+        {
+            "text": "Förlora / Tappa",
+            "note": ""
+        },
+        {
+            "text": "Hjälpa",
+            "note": ""
+        },
+        {
+            "text": "Tvätta",
+            "note": ""
+        },
+        {
+            "text": "Laga mat",
+            "note": ""
+        },
+        {
+            "text": "Sjunga",
+            "note": ""
+        },
+        {
+            "text": "Dansa",
+            "note": ""
+        },
+        {
+            "text": "Använda",
+            "note": ""
+        },
+        {
+            "text": "Göra / Skapa",
+            "note": ""
+        },
+        {
+            "text": "Ringa / Sjunga",
+            "note": "Sång / Namn"
+        },
+        {
+            "text": "Fånga / Hålla",
+            "note": ""
+        },
+        {
+            "text": "Lägga / Lämna",
+            "note": ""
+        },
+        {
+            "text": "Gå in",
+            "note": ""
+        },
+        {
+            "text": "Gå ut",
+            "note": ""
+        },
+        {
+            "text": "Gå på",
+            "note": "På ett fordon"
+        },
+        {
+            "text": "Gå av",
+            "note": "Av ett fordon"
+        },
+        {
+            "text": "Skicka",
+            "note": ""
+        },
+        {
+            "text": "Lämna in",
+            "note": "Inlämning"
+        },
+        {
+            "text": "Ha det",
+            "note": "Hälsning"
+        },
+        {
+            "text": "Börja",
+            "note": ""
+        },
+        {
+            "text": "Sluta",
+            "note": ""
+        },
+        {
+            "text": "Vila",
+            "note": "Vila"
+        },
+        {
+            "text": "Fråga",
+            "note": "Fråga"
+        },
+        {
+            "text": "Svara",
+            "note": ""
+        },
+        {
+            "text": "Lova",
+            "note": ""
+        },
+        {
+            "text": "Oroa sig",
+            "note": ""
+        },
+        {
+            "text": "Tro",
+            "note": ""
+        },
+        {
+            "text": "Tvivla",
+            "note": ""
+        },
+        {
+            "text": "Önska / Hoppas",
+            "note": "Hopp"
+        },
+        {
+            "text": "Drömma",
+            "note": ""
+        },
+        {
+            "text": "Slåss",
+            "note": ""
+        },
+        {
+            "text": "Vinna",
+            "note": ""
+        },
+        {
+            "text": "Förlora",
+            "note": "Nederlag"
+        },
+        {
+            "text": "Växa",
+            "note": "Tillväxt"
+        },
+        {
+            "text": "Leva / Bo",
+            "note": ""
+        },
+        {
+            "text": "Dö",
+            "note": ""
+        },
+        {
+            "text": "Plocka upp",
+            "note": ""
+        },
+        {
+            "text": "Kasta bort",
+            "note": ""
+        },
+        {
+            "text": "Gömma",
+            "note": ""
+        },
+        {
+            "text": "Söka",
+            "note": ""
+        },
+        {
+            "text": "Välja",
+            "note": ""
+        },
+        {
+            "text": "Ändra",
+            "note": ""
+        },
+        {
+            "text": "Beställa",
+            "note": "Köp av varor"
+        },
+        {
+            "text": "Förbereda",
+            "note": ""
+        },
+        {
+            "text": "Fånga",
+            "note": ""
+        },
+        {
+            "text": "Kasta",
+            "note": ""
+        },
+        {
+            "text": "Dra",
+            "note": ""
+        },
+        {
+            "text": "Trycka",
+            "note": ""
+        },
+        {
+            "text": "Laga / Reparera",
+            "note": "Reparation"
+        },
+        {
+            "text": "Bryta / Pank",
+            "note": ""
+        },
+        {
+            "text": "Vara sjuk / Ha ont",
+            "note": ""
+        },
+        {
+            "text": "Behandla",
+            "note": ""
+        },
+        {
+            "text": "Träna",
+            "note": ""
+        },
+        {
+            "text": "Simma",
+            "note": ""
+        },
+        {
+            "text": "Resa",
+            "note": ""
+        },
+        {
+            "text": "Köra",
+            "note": ""
+        },
+        {
+            "text": "Städa",
+            "note": ""
+        },
+        {
+            "text": "Diska",
+            "note": ""
+        },
+        {
+            "text": "Tvätta kläder",
+            "note": ""
+        },
+        {
+            "text": "Duscha",
+            "note": ""
+        },
+        {
+            "text": "Borsta tänderna",
+            "note": ""
+        },
+        {
+            "text": "Vakna / Gå upp",
+            "note": "Uppvaknande"
+        },
+        {
+            "text": "Gå och lägga sig",
+            "note": "Sömn"
+        },
+        {
+            "text": "Förstå",
+            "note": ""
+        },
+        {
+            "text": "Komma ihåg",
+            "note": ""
+        }
+    ]
+}

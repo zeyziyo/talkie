@@ -500,5 +500,22 @@
   "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
   "tutorialM1ToggleTitle": "Word/Sentence Mode",
   "basicWordRepository": "Базовий репозиторій слів",
-  "basicSentenceRepository": "Базовий репозиторій речень"
+  "basicSentenceRepository": "Базовий репозиторій речень",
+  "chatHistoryTitle": "Conversation History",
+  "chatNewChat": "New Chat",
+  "chatChoosePersona": "Choose a Persona",
+  "chatTypeHint": "Type a message...",
+  "chatNoConversations": "No conversations yet",
+  "chatStartNewPrompt": "Start a new chat to practice!",
+  "personaTeacher": "English Teacher",
+  "personaGuide": "Travel Guide",
+  "personaFriend": "Local Friend",
+  "chatAiChat": "AI Chat",
+  "me": "Me",
+  "chatSaveAndExit": "Save & Exit",
+  "errorSelectCategory": "Please select word or sentence first!",
+  "chatEndTitle": "End & Save Chat",
+  "chatEndMessage": "Do you want to end this conversation? You can set a title for it.",
+  "tutorialAiChatTitle": "AI Chat",
+  "tutorialAiChatDesc": "Practice real conversation with AI personas here."
 }

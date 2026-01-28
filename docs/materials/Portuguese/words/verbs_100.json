@@ -1,0 +1,405 @@
+{
+    "subject": "Verbos Básicos 100",
+    "entries": [
+        {
+            "text": "Ir",
+            "note": ""
+        },
+        {
+            "text": "Vir",
+            "note": ""
+        },
+        {
+            "text": "Comer",
+            "note": ""
+        },
+        {
+            "text": "Beber",
+            "note": ""
+        },
+        {
+            "text": "Dormir",
+            "note": ""
+        },
+        {
+            "text": "Ver",
+            "note": ""
+        },
+        {
+            "text": "Comprar",
+            "note": ""
+        },
+        {
+            "text": "Vender",
+            "note": ""
+        },
+        {
+            "text": "Ler",
+            "note": ""
+        },
+        {
+            "text": "Escrever",
+            "note": "Escrita"
+        },
+        {
+            "text": "Ouvir",
+            "note": ""
+        },
+        {
+            "text": "Falar",
+            "note": ""
+        },
+        {
+            "text": "Fazer",
+            "note": ""
+        },
+        {
+            "text": "Trabalhar",
+            "note": ""
+        },
+        {
+            "text": "Estudar",
+            "note": ""
+        },
+        {
+            "text": "Ensinar",
+            "note": ""
+        },
+        {
+            "text": "Aprender",
+            "note": ""
+        },
+        {
+            "text": "Esperar",
+            "note": ""
+        },
+        {
+            "text": "Encontrar-se",
+            "note": ""
+        },
+        {
+            "text": "Amar",
+            "note": ""
+        },
+        {
+            "text": "Gostar",
+            "note": ""
+        },
+        {
+            "text": "Odiar",
+            "note": ""
+        },
+        {
+            "text": "Rir",
+            "note": ""
+        },
+        {
+            "text": "Chorar",
+            "note": ""
+        },
+        {
+            "text": "Caminhar",
+            "note": ""
+        },
+        {
+            "text": "Correr",
+            "note": "Corrida"
+        },
+        {
+            "text": "Sentar-se",
+            "note": ""
+        },
+        {
+            "text": "Ficar de pé",
+            "note": ""
+        },
+        {
+            "text": "Dar",
+            "note": ""
+        },
+        {
+            "text": "Receber",
+            "note": ""
+        },
+        {
+            "text": "Abrir",
+            "note": ""
+        },
+        {
+            "text": "Fechar",
+            "note": ""
+        },
+        {
+            "text": "Pensar",
+            "note": ""
+        },
+        {
+            "text": "Saber",
+            "note": ""
+        },
+        {
+            "text": "Não saber",
+            "note": ""
+        },
+        {
+            "text": "Procurar / Encontrar",
+            "note": ""
+        },
+        {
+            "text": "Perder",
+            "note": ""
+        },
+        {
+            "text": "Ajudar",
+            "note": ""
+        },
+        {
+            "text": "Lavar",
+            "note": ""
+        },
+        {
+            "text": "Cozinhar",
+            "note": ""
+        },
+        {
+            "text": "Cantar",
+            "note": ""
+        },
+        {
+            "text": "Dançar",
+            "note": ""
+        },
+        {
+            "text": "Usar",
+            "note": ""
+        },
+        {
+            "text": "Fazer / Criar",
+            "note": ""
+        },
+        {
+            "text": "Chamar / Cantar",
+            "note": "Canção / Nome"
+        },
+        {
+            "text": "Pegar / Segurar",
+            "note": ""
+        },
+        {
+            "text": "Pôr / Deixar",
+            "note": ""
+        },
+        {
+            "text": "Entrar",
+            "note": ""
+        },
+        {
+            "text": "Sair",
+            "note": ""
+        },
+        {
+            "text": "Subir",
+            "note": "Embarque"
+        },
+        {
+            "text": "Descer",
+            "note": "Desembarque"
+        },
+        {
+            "text": "Enviar",
+            "note": ""
+        },
+        {
+            "text": "Entregar",
+            "note": "Entrega"
+        },
+        {
+            "text": "Passar",
+            "note": "Saudações"
+        },
+        {
+            "text": "Começar",
+            "note": ""
+        },
+        {
+            "text": "Terminar",
+            "note": ""
+        },
+        {
+            "text": "Descansar",
+            "note": "Repouso"
+        },
+        {
+            "text": "Perguntar",
+            "note": "Pergunta"
+        },
+        {
+            "text": "Responder",
+            "note": ""
+        },
+        {
+            "text": "Prometer",
+            "note": ""
+        },
+        {
+            "text": "Preocupar-se",
+            "note": ""
+        },
+        {
+            "text": "Acreditar",
+            "note": ""
+        },
+        {
+            "text": "Duvidar",
+            "note": ""
+        },
+        {
+            "text": "Desejar / Esperar",
+            "note": "Esperança"
+        },
+        {
+            "text": "Sonhar",
+            "note": ""
+        },
+        {
+            "text": "Lutar",
+            "note": ""
+        },
+        {
+            "text": "Vencer",
+            "note": ""
+        },
+        {
+            "text": "Perder",
+            "note": "Derrota"
+        },
+        {
+            "text": "Crescer",
+            "note": "Crescimento"
+        },
+        {
+            "text": "Viver / Morar",
+            "note": ""
+        },
+        {
+            "text": "Morrer",
+            "note": ""
+        },
+        {
+            "text": "Recolher",
+            "note": ""
+        },
+        {
+            "text": "Jogar fora",
+            "note": ""
+        },
+        {
+            "text": "Esconder",
+            "note": ""
+        },
+        {
+            "text": "Pesquisar",
+            "note": ""
+        },
+        {
+            "text": "Selecionar",
+            "note": ""
+        },
+        {
+            "text": "Mudar",
+            "note": ""
+        },
+        {
+            "text": "Pedir",
+            "note": "Compra de itens"
+        },
+        {
+            "text": "Preparar",
+            "note": ""
+        },
+        {
+            "text": "Pegar",
+            "note": ""
+        },
+        {
+            "text": "Lançar",
+            "note": ""
+        },
+        {
+            "text": "Puxar",
+            "note": ""
+        },
+        {
+            "text": "Empurrar",
+            "note": ""
+        },
+        {
+            "text": "Consertar",
+            "note": "Reparo"
+        },
+        {
+            "text": "Quebrar",
+            "note": ""
+        },
+        {
+            "text": "Estar doente / Doer",
+            "note": ""
+        },
+        {
+            "text": "Curar",
+            "note": ""
+        },
+        {
+            "text": "Fazer exercício",
+            "note": ""
+        },
+        {
+            "text": "Nadar",
+            "note": ""
+        },
+        {
+            "text": "Viajar",
+            "note": ""
+        },
+        {
+            "text": "Dirigir",
+            "note": ""
+        },
+        {
+            "text": "Limpar",
+            "note": ""
+        },
+        {
+            "text": "Lavar a louça",
+            "note": ""
+        },
+        {
+            "text": "Lavar a roupa",
+            "note": ""
+        },
+        {
+            "text": "Tomar banho",
+            "note": ""
+        },
+        {
+            "text": "Escovar os dentes",
+            "note": ""
+        },
+        {
+            "text": "Acordar / Levantar-se",
+            "note": "Despertar"
+        },
+        {
+            "text": "Ir dormir",
+            "note": "Sono"
+        },
+        {
+            "text": "Entender",
+            "note": ""
+        },
+        {
+            "text": "Lembrar",
+            "note": ""
+        }
+    ]
+}

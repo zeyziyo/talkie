@@ -1,4 +1,3 @@
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'database_service.dart';
 
 import 'supabase_service.dart';

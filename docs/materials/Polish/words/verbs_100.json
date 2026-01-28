@@ -1,0 +1,405 @@
+{
+    "subject": "Podstawowe czasowniki 100",
+    "entries": [
+        {
+            "text": "Iść",
+            "note": ""
+        },
+        {
+            "text": "Przychodzić",
+            "note": ""
+        },
+        {
+            "text": "Jeść",
+            "note": ""
+        },
+        {
+            "text": "Pić",
+            "note": ""
+        },
+        {
+            "text": "Spać",
+            "note": ""
+        },
+        {
+            "text": "Widzieć",
+            "note": ""
+        },
+        {
+            "text": "Kupować",
+            "note": ""
+        },
+        {
+            "text": "Sprzedawać",
+            "note": ""
+        },
+        {
+            "text": "Czytać",
+            "note": ""
+        },
+        {
+            "text": "Pisać",
+            "note": "Pismo"
+        },
+        {
+            "text": "Słuchać",
+            "note": ""
+        },
+        {
+            "text": "Mówić",
+            "note": ""
+        },
+        {
+            "text": "Robić",
+            "note": ""
+        },
+        {
+            "text": "Pracować",
+            "note": ""
+        },
+        {
+            "text": "Uczyć się",
+            "note": ""
+        },
+        {
+            "text": "Uczyć / Nauczać",
+            "note": ""
+        },
+        {
+            "text": "Uczyć się",
+            "note": ""
+        },
+        {
+            "text": "Czekać",
+            "note": ""
+        },
+        {
+            "text": "Spotykać",
+            "note": ""
+        },
+        {
+            "text": "Kochać",
+            "note": ""
+        },
+        {
+            "text": "Lubić",
+            "note": ""
+        },
+        {
+            "text": "Nienawidzić",
+            "note": ""
+        },
+        {
+            "text": "Śmiać się",
+            "note": ""
+        },
+        {
+            "text": "Płakać",
+            "note": ""
+        },
+        {
+            "text": "Spacerować",
+            "note": ""
+        },
+        {
+            "text": "Biegać",
+            "note": "Bieg"
+        },
+        {
+            "text": "Siedzieć",
+            "note": ""
+        },
+        {
+            "text": "Stać",
+            "note": ""
+        },
+        {
+            "text": "Dawać",
+            "note": ""
+        },
+        {
+            "text": "Otrzymywać",
+            "note": ""
+        },
+        {
+            "text": "Otwierać",
+            "note": ""
+        },
+        {
+            "text": "Zamykać",
+            "note": ""
+        },
+        {
+            "text": "Myśleć",
+            "note": ""
+        },
+        {
+            "text": "Wiedzieć",
+            "note": ""
+        },
+        {
+            "text": "Nie wiedzieć",
+            "note": ""
+        },
+        {
+            "text": "Szukać / Znaleźć",
+            "note": ""
+        },
+        {
+            "text": "Tracić",
+            "note": ""
+        },
+        {
+            "text": "Pomagać",
+            "note": ""
+        },
+        {
+            "text": "Myć",
+            "note": ""
+        },
+        {
+            "text": "Gotować",
+            "note": ""
+        },
+        {
+            "text": "Śpiewać",
+            "note": ""
+        },
+        {
+            "text": "Tańczyć",
+            "note": ""
+        },
+        {
+            "text": "Używać",
+            "note": ""
+        },
+        {
+            "text": "Robić",
+            "note": ""
+        },
+        {
+            "text": "Wołać / Śpiewać",
+            "note": "Pieśń / Imię"
+        },
+        {
+            "text": "Łapać / Trzymać",
+            "note": ""
+        },
+        {
+            "text": "Kłaść / Zostawiać",
+            "note": ""
+        },
+        {
+            "text": "Wchodzić",
+            "note": ""
+        },
+        {
+            "text": "Wychodzić",
+            "note": ""
+        },
+        {
+            "text": "Wsiadać",
+            "note": "Do pojazdu"
+        },
+        {
+            "text": "Wysiadać",
+            "note": "Z pojazdu"
+        },
+        {
+            "text": "Wysyłać",
+            "note": ""
+        },
+        {
+            "text": "Składać",
+            "note": "Złożenie"
+        },
+        {
+            "text": "Miewać się",
+            "note": "Pozdrowienia"
+        },
+        {
+            "text": "Zaczynać",
+            "note": ""
+        },
+        {
+            "text": "Kończyć",
+            "note": ""
+        },
+        {
+            "text": "Odpoczywać",
+            "note": "Odpoczynek"
+        },
+        {
+            "text": "Pytać",
+            "note": "Pytanie"
+        },
+        {
+            "text": "Odpowiadać",
+            "note": ""
+        },
+        {
+            "text": "Obiecywać",
+            "note": ""
+        },
+        {
+            "text": "Martwić się",
+            "note": ""
+        },
+        {
+            "text": "Wierzyć",
+            "note": ""
+        },
+        {
+            "text": "Wątpić",
+            "note": ""
+        },
+        {
+            "text": "Pragnąć / Mieć nadzieję",
+            "note": "Nadzieja"
+        },
+        {
+            "text": "Śnić / Marzyć",
+            "note": ""
+        },
+        {
+            "text": "Walczyć",
+            "note": ""
+        },
+        {
+            "text": "Wygrywać",
+            "note": ""
+        },
+        {
+            "text": "Przegrywać",
+            "note": "Porażka"
+        },
+        {
+            "text": "Rosnąć",
+            "note": "Wzrost"
+        },
+        {
+            "text": "Żyć",
+            "note": ""
+        },
+        {
+            "text": "Umierać",
+            "note": ""
+        },
+        {
+            "text": "Zbierać",
+            "note": ""
+        },
+        {
+            "text": "Wyrzucać",
+            "note": ""
+        },
+        {
+            "text": "Chować",
+            "note": ""
+        },
+        {
+            "text": "Szukać",
+            "note": ""
+        },
+        {
+            "text": "Wybierać",
+            "note": ""
+        },
+        {
+            "text": "Zmieniać",
+            "note": ""
+        },
+        {
+            "text": "Zamawiać",
+            "note": "Zakup towarów"
+        },
+        {
+            "text": "Przygotowywać",
+            "note": ""
+        },
+        {
+            "text": "Łapać",
+            "note": ""
+        },
+        {
+            "text": "Rzucać",
+            "note": ""
+        },
+        {
+            "text": "Ciągnąć",
+            "note": ""
+        },
+        {
+            "text": "Pchać",
+            "note": ""
+        },
+        {
+            "text": "Naprawiać",
+            "note": "Naprawa"
+        },
+        {
+            "text": "Niszczyć",
+            "note": ""
+        },
+        {
+            "text": "Chorować / Boleć",
+            "note": ""
+        },
+        {
+            "text": "Leczyć",
+            "note": ""
+        },
+        {
+            "text": "Ćwiczyć",
+            "note": ""
+        },
+        {
+            "text": "Pływać",
+            "note": ""
+        },
+        {
+            "text": "Podróżować",
+            "note": ""
+        },
+        {
+            "text": "Prowadzić",
+            "note": ""
+        },
+        {
+            "text": "Sprzątać",
+            "note": ""
+        },
+        {
+            "text": "Zmywać naczynia",
+            "note": ""
+        },
+        {
+            "text": "Prać",
+            "note": ""
+        },
+        {
+            "text": "Brać prysznic",
+            "note": ""
+        },
+        {
+            "text": "Myć zęby",
+            "note": ""
+        },
+        {
+            "text": "Budzić się",
+            "note": "Pobudka"
+        },
+        {
+            "text": "Kłaść się spać",
+            "note": "Sen"
+        },
+        {
+            "text": "Rozumieć",
+            "note": ""
+        },
+        {
+            "text": "Pamiętać",
+            "note": ""
+        }
+    ]
+}

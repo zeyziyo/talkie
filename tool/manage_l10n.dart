@@ -7,7 +7,7 @@ const String kMasterFile = 'lib/l10n/app_ko.arb';
 const String kL10nDir = 'lib/l10n';
 const String kEnvFile = '.env';
 const String kGeminiKeyEnv = 'GEMINI_API_KEY';
-const String kGeminiUrl = 'https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent';
+const String kGeminiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
 void main(List<String> args) async {
   print('🚀 Starting High-Speed L10n Manager (Batch Mode)...');
@@ -89,12 +89,14 @@ Future<void> _processFileBatch(File file, Map<String, dynamic> masterMap, String
     const encoder = JsonEncoder.withIndent('  ');
     await file.writeAsString(encoder.convert(newMap));
     print('   📝 Updated ${file.path}');
+    // Delay to respect rate limits (free tier)
+    await Future.delayed(const Duration(seconds: 5)); 
   } catch (e) {
     print('   ❌ Error batch translating $langCode: $e');
   }
 }
 
-Future<Map<String, String>> _translateBatch(Map<String, String> batch, String sourceLang, String targetLang, String apiKey) async {
+Future<Map<String, String>> _translateBatch(Map<String, String> batch, String sourceLang, String targetLang, String apiKey, {int retryCount = 0}) async {
   // Normalize target lang for prompt
   String displayTarget = targetLang;
   if (targetLang == 'ko') displayTarget = 'Korean';
@@ -120,7 +122,7 @@ ${jsonEncode(batch)}
         }
       ],
       'generationConfig': {
-        // 'response_mime_type': 'application/json', // Not supported in v1/gemini-pro yet
+        'response_mime_type': 'application/json',
       }
     }),
   );
@@ -130,6 +132,10 @@ ${jsonEncode(batch)}
     var text = data['candidates'][0]['content']['parts'][0]['text'];
     text = text.replaceAll('```json', '').replaceAll('```', '').trim();
     return Map<String, String>.from(jsonDecode(text));
+  } else if (response.statusCode == 429 && retryCount < 5) {
+      print('   ⚠️ Rate limited. Retrying in ${5 + retryCount * 2}s...');
+      await Future.delayed(Duration(seconds: 5 + retryCount * 2));
+      return _translateBatch(batch, sourceLang, targetLang, apiKey, retryCount: retryCount + 1);
   } else {
     // print('Gemini API Error: ${response.statusCode} - ${response.body}');
     throw Exception('Gemini Error (${response.statusCode}): ${response.body}');

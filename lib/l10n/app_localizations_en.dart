@@ -692,9 +692,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chatChoosePersona => 'Choose a Persona';
 
   @override
-  String get chatEditTitle => 'Edit Conversation Title';
-
-  @override
   String get chatTypeHint => 'Type a message...';
 
   @override
@@ -734,7 +731,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history';
+      '• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history';
 
   @override
   String get tutorialAiChatTitle => 'AI Chat';
@@ -760,5 +757,28 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get basicWordRepository => 'Basic Word Repository';
+
+  @override
+  String get basicSentenceRepository => 'Basic Sentence Repository';
+
+  @override
+  String get chatEndTitle => 'End & Save Chat';
+
+  @override
+  String get chatEndMessage =>
+      'Do you want to end this conversation? You can set a title for it.';
+
+  @override
+  String get chatSaveAndExit => 'Save & Exit';
+
+  @override
   String get errorSelectCategory => 'Please select word or sentence first!';
+
+  @override
+  String get tutorialM1ToggleTitle => 'Word/Sentence Mode';
+
+  @override
+  String get tutorialM1ToggleDesc =>
+      'Switch between Word and Sentence mode here. Words are saved with larger text.';
 }

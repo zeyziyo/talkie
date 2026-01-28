@@ -1,0 +1,37 @@
+{
+    "title": "Første møde",
+    "entries": [
+        {
+            "text": "Hej!",
+            "speaker": "A"
+        },
+        {
+            "text": "Hej. Hyggeligt at møde dig.",
+            "speaker": "B"
+        },
+        {
+            "text": "Hvad hedder du?",
+            "speaker": "A"
+        },
+        {
+            "text": "Mit navn er [Navn]. Og dit?",
+            "speaker": "B"
+        },
+        {
+            "text": "Mit navn er [Navn]. Hvor kommer du fra?",
+            "speaker": "A"
+        },
+        {
+            "text": "Jeg kommer fra Amerika. Og du?",
+            "speaker": "B"
+        },
+        {
+            "text": "Jeg kommer fra Korea. Det var hyggeligt at møde dig.",
+            "speaker": "A"
+        },
+        {
+            "text": "I lige måde. Farvel.",
+            "speaker": "B"
+        }
+    ]
+}

@@ -1,0 +1,405 @@
+{
+    "subject": "100 Động Từ Cơ Bản",
+    "entries": [
+        {
+            "text": "đi",
+            "note": ""
+        },
+        {
+            "text": "đến",
+            "note": ""
+        },
+        {
+            "text": "ăn",
+            "note": ""
+        },
+        {
+            "text": "uống",
+            "note": ""
+        },
+        {
+            "text": "ngủ",
+            "note": ""
+        },
+        {
+            "text": "xem / nhìn",
+            "note": ""
+        },
+        {
+            "text": "mua",
+            "note": ""
+        },
+        {
+            "text": "bán",
+            "note": ""
+        },
+        {
+            "text": "đọc",
+            "note": ""
+        },
+        {
+            "text": "viết",
+            "note": "viết lách"
+        },
+        {
+            "text": "nghe",
+            "note": ""
+        },
+        {
+            "text": "nói",
+            "note": ""
+        },
+        {
+            "text": "làm",
+            "note": ""
+        },
+        {
+            "text": "làm việc",
+            "note": ""
+        },
+        {
+            "text": "học tập",
+            "note": ""
+        },
+        {
+            "text": "dạy",
+            "note": ""
+        },
+        {
+            "text": "học",
+            "note": ""
+        },
+        {
+            "text": "chờ đợi",
+            "note": ""
+        },
+        {
+            "text": "gặp gỡ",
+            "note": ""
+        },
+        {
+            "text": "yêu",
+            "note": ""
+        },
+        {
+            "text": "thích",
+            "note": ""
+        },
+        {
+            "text": "ghét",
+            "note": ""
+        },
+        {
+            "text": "cười",
+            "note": ""
+        },
+        {
+            "text": "khóc",
+            "note": ""
+        },
+        {
+            "text": "đi bộ",
+            "note": ""
+        },
+        {
+            "text": "chạy",
+            "note": "chạy bộ"
+        },
+        {
+            "text": "ngồi",
+            "note": ""
+        },
+        {
+            "text": "đứng",
+            "note": ""
+        },
+        {
+            "text": "cho / tặng",
+            "note": ""
+        },
+        {
+            "text": "nhận",
+            "note": ""
+        },
+        {
+            "text": "mở",
+            "note": ""
+        },
+        {
+            "text": "đóng",
+            "note": ""
+        },
+        {
+            "text": "suy nghĩ",
+            "note": ""
+        },
+        {
+            "text": "biết",
+            "note": ""
+        },
+        {
+            "text": "không biết",
+            "note": ""
+        },
+        {
+            "text": "tìm / thấy",
+            "note": ""
+        },
+        {
+            "text": "mất",
+            "note": ""
+        },
+        {
+            "text": "giúp đỡ",
+            "note": ""
+        },
+        {
+            "text": "rửa",
+            "note": ""
+        },
+        {
+            "text": "nấu ăn",
+            "note": ""
+        },
+        {
+            "text": "hát",
+            "note": ""
+        },
+        {
+            "text": "nhảy múa",
+            "note": ""
+        },
+        {
+            "text": "sử dụng",
+            "note": ""
+        },
+        {
+            "text": "làm ra / chế biến",
+            "note": ""
+        },
+        {
+            "text": "gọi / hát",
+            "note": "bài hát / tên"
+        },
+        {
+            "text": "cầm / giữ",
+            "note": ""
+        },
+        {
+            "text": "để / bỏ qua",
+            "note": ""
+        },
+        {
+            "text": "vào",
+            "note": ""
+        },
+        {
+            "text": "ra",
+            "note": ""
+        },
+        {
+            "text": "lên",
+            "note": "phương tiện"
+        },
+        {
+            "text": "xuống",
+            "note": "phương tiện"
+        },
+        {
+            "text": "gửi",
+            "note": ""
+        },
+        {
+            "text": "nộp / trả",
+            "note": "tiền / hồ sơ"
+        },
+        {
+            "text": "sống / trải qua",
+            "note": "lời chào"
+        },
+        {
+            "text": "bắt đầu",
+            "note": ""
+        },
+        {
+            "text": "kết thúc",
+            "note": ""
+        },
+        {
+            "text": "nghỉ ngơi",
+            "note": "nghỉ ngơi"
+        },
+        {
+            "text": "hỏi",
+            "note": "câu hỏi"
+        },
+        {
+            "text": "trả lời",
+            "note": ""
+        },
+        {
+            "text": "hứa",
+            "note": ""
+        },
+        {
+            "text": "lo lắng",
+            "note": ""
+        },
+        {
+            "text": "tin tưởng",
+            "note": ""
+        },
+        {
+            "text": "nghi ngờ",
+            "note": ""
+        },
+        {
+            "text": "hy vọng",
+            "note": "hy vọng"
+        },
+        {
+            "text": "mơ",
+            "note": ""
+        },
+        {
+            "text": "đánh nhau / cãi nhau",
+            "note": ""
+        },
+        {
+            "text": "thắng",
+            "note": ""
+        },
+        {
+            "text": "thua",
+            "note": "thất bại"
+        },
+        {
+            "text": "phát triển",
+            "note": "tăng trưởng"
+        },
+        {
+            "text": "sống",
+            "note": ""
+        },
+        {
+            "text": "chết",
+            "note": ""
+        },
+        {
+            "text": "cầm lên",
+            "note": ""
+        },
+        {
+            "text": "vứt bỏ",
+            "note": ""
+        },
+        {
+            "text": "giấu",
+            "note": ""
+        },
+        {
+            "text": "tìm kiếm",
+            "note": ""
+        },
+        {
+            "text": "chọn / tuyển",
+            "note": ""
+        },
+        {
+            "text": "thay đổi",
+            "note": ""
+        },
+        {
+            "text": "đặt hàng",
+            "note": "mua hàng"
+        },
+        {
+            "text": "chuẩn bị",
+            "note": ""
+        },
+        {
+            "text": "bắt lấy",
+            "note": ""
+        },
+        {
+            "text": "ném",
+            "note": ""
+        },
+        {
+            "text": "kéo",
+            "note": ""
+        },
+        {
+            "text": "đẩy",
+            "note": ""
+        },
+        {
+            "text": "sửa chữa",
+            "note": "sửa chữa"
+        },
+        {
+            "text": "hỏng / vỡ",
+            "note": ""
+        },
+        {
+            "text": "đau / ốm",
+            "note": ""
+        },
+        {
+            "text": "điều trị",
+            "note": ""
+        },
+        {
+            "text": "tập thể dục",
+            "note": ""
+        },
+        {
+            "text": "bơi",
+            "note": ""
+        },
+        {
+            "text": "du lịch",
+            "note": ""
+        },
+        {
+            "text": "lái xe",
+            "note": ""
+        },
+        {
+            "text": "dọn dẹp",
+            "note": ""
+        },
+        {
+            "text": "rửa bát",
+            "note": ""
+        },
+        {
+            "text": "giặt đồ",
+            "note": ""
+        },
+        {
+            "text": "tắm",
+            "note": ""
+        },
+        {
+            "text": "đánh răng",
+            "note": ""
+        },
+        {
+            "text": "thức dậy",
+            "note": "tỉnh giấc"
+        },
+        {
+            "text": "đi ngủ",
+            "note": "ngủ"
+        },
+        {
+            "text": "hiểu",
+            "note": ""
+        },
+        {
+            "text": "nhớ",
+            "note": ""
+        }
+    ]
+}

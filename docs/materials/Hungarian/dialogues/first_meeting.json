@@ -1,0 +1,37 @@
+{
+    "title": "Első találkozás",
+    "entries": [
+        {
+            "text": "Jó napot!",
+            "speaker": "A"
+        },
+        {
+            "text": "Jó napot. Örülök, hogy megismertem.",
+            "speaker": "B"
+        },
+        {
+            "text": "Mi a neve?",
+            "speaker": "A"
+        },
+        {
+            "text": "A nevem [Név]. És öné?",
+            "speaker": "B"
+        },
+        {
+            "text": "A nevem [Név]. Hová valósi?",
+            "speaker": "A"
+        },
+        {
+            "text": "Amerikából jöttem. És ön?",
+            "speaker": "B"
+        },
+        {
+            "text": "Koreából jöttem. Örültem a találkozásnak.",
+            "speaker": "A"
+        },
+        {
+            "text": "Én is. Viszontlátásra.",
+            "speaker": "B"
+        }
+    ]
+}

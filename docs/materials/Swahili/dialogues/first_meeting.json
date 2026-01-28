@@ -1,0 +1,37 @@
+{
+    "title": "Mkutano wa Kwanza",
+    "entries": [
+        {
+            "text": "Jambo!",
+            "speaker": "A"
+        },
+        {
+            "text": "Jambo. Nimefurahi kukutana nawe.",
+            "speaker": "B"
+        },
+        {
+            "text": "Jina lako nani?",
+            "speaker": "A"
+        },
+        {
+            "text": "Jina langu ni [Jina]. Na wewe?",
+            "speaker": "B"
+        },
+        {
+            "text": "Jina langu ni [Jina]. Unatoka wapi?",
+            "speaker": "A"
+        },
+        {
+            "text": "Natoka Amerika. Na wewe?",
+            "speaker": "B"
+        },
+        {
+            "text": "Natoka Korea. Nimefurahi kukufahamu.",
+            "speaker": "A"
+        },
+        {
+            "text": "Mimi pia. Kwa heri.",
+            "speaker": "B"
+        }
+    ]
+}

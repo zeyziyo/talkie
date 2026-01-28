@@ -1,0 +1,37 @@
+{
+    "title": "Eerste ontmoeting",
+    "entries": [
+        {
+            "text": "Hallo!",
+            "speaker": "A"
+        },
+        {
+            "text": "Hallo. Leuk u te ontmoeten.",
+            "speaker": "B"
+        },
+        {
+            "text": "Wat is uw naam?",
+            "speaker": "A"
+        },
+        {
+            "text": "Mijn naam is [Naam]. En die van u?",
+            "speaker": "B"
+        },
+        {
+            "text": "Mijn naam is [Naam]. Waar komt u vandaan?",
+            "speaker": "A"
+        },
+        {
+            "text": "Ik kom uit Amerika. En u?",
+            "speaker": "B"
+        },
+        {
+            "text": "Ik kom uit Korea. Het was leuk u te ontmoeten.",
+            "speaker": "A"
+        },
+        {
+            "text": "Insgelijks. Tot ziens.",
+            "speaker": "B"
+        }
+    ]
+}

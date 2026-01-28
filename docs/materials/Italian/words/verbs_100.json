@@ -1,0 +1,405 @@
+{
+    "subject": "Verbi di Base 100",
+    "entries": [
+        {
+            "text": "Andare",
+            "note": ""
+        },
+        {
+            "text": "Venire",
+            "note": ""
+        },
+        {
+            "text": "Mangiare",
+            "note": ""
+        },
+        {
+            "text": "Bere",
+            "note": ""
+        },
+        {
+            "text": "Dormire",
+            "note": ""
+        },
+        {
+            "text": "Vedere",
+            "note": ""
+        },
+        {
+            "text": "Comprare",
+            "note": ""
+        },
+        {
+            "text": "Vendere",
+            "note": ""
+        },
+        {
+            "text": "Leggere",
+            "note": ""
+        },
+        {
+            "text": "Scrivere",
+            "note": "Scrittura"
+        },
+        {
+            "text": "Ascoltare",
+            "note": ""
+        },
+        {
+            "text": "Parlare",
+            "note": ""
+        },
+        {
+            "text": "Fare",
+            "note": ""
+        },
+        {
+            "text": "Lavorare",
+            "note": ""
+        },
+        {
+            "text": "Studiare",
+            "note": ""
+        },
+        {
+            "text": "Insegnare",
+            "note": ""
+        },
+        {
+            "text": "Imparare",
+            "note": ""
+        },
+        {
+            "text": "Aspettare",
+            "note": ""
+        },
+        {
+            "text": "Incontrare",
+            "note": ""
+        },
+        {
+            "text": "Amare",
+            "note": ""
+        },
+        {
+            "text": "Piacere",
+            "note": ""
+        },
+        {
+            "text": "Odiare",
+            "note": ""
+        },
+        {
+            "text": "Ridere",
+            "note": ""
+        },
+        {
+            "text": "Piangere",
+            "note": ""
+        },
+        {
+            "text": "Camminare",
+            "note": ""
+        },
+        {
+            "text": "Correre",
+            "note": "Corsa"
+        },
+        {
+            "text": "Sedersi",
+            "note": ""
+        },
+        {
+            "text": "Stare in piedi",
+            "note": ""
+        },
+        {
+            "text": "Dare",
+            "note": ""
+        },
+        {
+            "text": "Ricevere",
+            "note": ""
+        },
+        {
+            "text": "Aprire",
+            "note": ""
+        },
+        {
+            "text": "Chiudere",
+            "note": ""
+        },
+        {
+            "text": "Pensare",
+            "note": ""
+        },
+        {
+            "text": "Sapere",
+            "note": ""
+        },
+        {
+            "text": "Non sapere",
+            "note": ""
+        },
+        {
+            "text": "Cercare / Trovare",
+            "note": ""
+        },
+        {
+            "text": "Perdere",
+            "note": ""
+        },
+        {
+            "text": "Aiutare",
+            "note": ""
+        },
+        {
+            "text": "Lavare",
+            "note": ""
+        },
+        {
+            "text": "Cucinare",
+            "note": ""
+        },
+        {
+            "text": "Cantare",
+            "note": ""
+        },
+        {
+            "text": "Ballare",
+            "note": ""
+        },
+        {
+            "text": "Usare",
+            "note": ""
+        },
+        {
+            "text": "Fare / Creare",
+            "note": ""
+        },
+        {
+            "text": "Chiamare / Cantare",
+            "note": "Canzone / Nome"
+        },
+        {
+            "text": "Prendere / Afferrare",
+            "note": ""
+        },
+        {
+            "text": "Mettere / Lasciare",
+            "note": ""
+        },
+        {
+            "text": "Entrare",
+            "note": ""
+        },
+        {
+            "text": "Uscire",
+            "note": ""
+        },
+        {
+            "text": "Salire",
+            "note": "Su un veicolo"
+        },
+        {
+            "text": "Scendere",
+            "note": "Da un veicolo"
+        },
+        {
+            "text": "Inviare",
+            "note": ""
+        },
+        {
+            "text": "Consegnare",
+            "note": "Consegna"
+        },
+        {
+            "text": "Stare",
+            "note": "Saluto"
+        },
+        {
+            "text": "Iniziare",
+            "note": ""
+        },
+        {
+            "text": "Finire",
+            "note": ""
+        },
+        {
+            "text": "Riposare",
+            "note": "Riposo"
+        },
+        {
+            "text": "Chiedere",
+            "note": "Domanda"
+        },
+        {
+            "text": "Rispondere",
+            "note": ""
+        },
+        {
+            "text": "Promettere",
+            "note": ""
+        },
+        {
+            "text": "Preoccuparsi",
+            "note": ""
+        },
+        {
+            "text": "Credere",
+            "note": ""
+        },
+        {
+            "text": "Dubitare",
+            "note": ""
+        },
+        {
+            "text": "Desiderare / Sperare",
+            "note": "Speranza"
+        },
+        {
+            "text": "Sognare",
+            "note": ""
+        },
+        {
+            "text": "Litigare",
+            "note": ""
+        },
+        {
+            "text": "Vincere",
+            "note": ""
+        },
+        {
+            "text": "Perdere",
+            "note": "Sconfitta"
+        },
+        {
+            "text": "Crescere",
+            "note": "Crescita"
+        },
+        {
+            "text": "Vivere / Abitare",
+            "note": ""
+        },
+        {
+            "text": "Morire",
+            "note": ""
+        },
+        {
+            "text": "Raccogliere",
+            "note": ""
+        },
+        {
+            "text": "Buttare via",
+            "note": ""
+        },
+        {
+            "text": "Nascondere",
+            "note": ""
+        },
+        {
+            "text": "Cercare",
+            "note": ""
+        },
+        {
+            "text": "Scegliere",
+            "note": ""
+        },
+        {
+            "text": "Cambiare",
+            "note": ""
+        },
+        {
+            "text": "Ordinare",
+            "note": "Acquisto di articoli"
+        },
+        {
+            "text": "Preparare",
+            "note": ""
+        },
+        {
+            "text": "Prendere",
+            "note": ""
+        },
+        {
+            "text": "Lanciare",
+            "note": ""
+        },
+        {
+            "text": "Tirare",
+            "note": ""
+        },
+        {
+            "text": "Spingere",
+            "note": ""
+        },
+        {
+            "text": "Riparare",
+            "note": "Riparazione"
+        },
+        {
+            "text": "Rompere",
+            "note": ""
+        },
+        {
+            "text": "Essere malato / Far male",
+            "note": ""
+        },
+        {
+            "text": "Curare",
+            "note": ""
+        },
+        {
+            "text": "Fare esercizio",
+            "note": ""
+        },
+        {
+            "text": "Nuotare",
+            "note": ""
+        },
+        {
+            "text": "Viaggiare",
+            "note": ""
+        },
+        {
+            "text": "Guidare",
+            "note": ""
+        },
+        {
+            "text": "Pulire",
+            "note": ""
+        },
+        {
+            "text": "Lavare i piatti",
+            "note": ""
+        },
+        {
+            "text": "Fare il bucato",
+            "note": ""
+        },
+        {
+            "text": "Fare la doccia",
+            "note": ""
+        },
+        {
+            "text": "Lavarsi i denti",
+            "note": ""
+        },
+        {
+            "text": "Svegliarsi / Alzarsi",
+            "note": "Risveglio"
+        },
+        {
+            "text": "Andare a letto",
+            "note": "Sonno"
+        },
+        {
+            "text": "Capire",
+            "note": ""
+        },
+        {
+            "text": "Ricordare",
+            "note": ""
+        }
+    ]
+}

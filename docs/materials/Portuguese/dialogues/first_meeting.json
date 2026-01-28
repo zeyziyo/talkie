@@ -1,0 +1,45 @@
+{
+    "title": "Primeiro Encontro",
+    "entries": [
+        {
+            "text": "Olá! Meu nome é Jordan. Prazer em conhecê-lo.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Olá Jordan! Eu sou Minji. Prazer em conhecê-la também.",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Você é estudante?",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Não, sou funcionária de escritório. E você, Jordan?",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Sou estudante universitário. Estou estudando coreano.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Uau, que legal! Coreano é um pouco difícil, não é?",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Sim, é difícil mas divertido. Por favor, ajude-me muito.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Com certeza! Vamos estudar muito juntos.",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Obrigado. Até a próxima!",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Tchau!",
+            "speaker": "Minji"
+        }
+    ]
+}

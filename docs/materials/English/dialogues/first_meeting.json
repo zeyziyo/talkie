@@ -1,0 +1,45 @@
+{
+    "title": "First Meeting",
+    "entries": [
+        {
+            "text": "Hello! My name is Jordan. Nice to meet you.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Hello Jordan! I'm Minji. Nice to meet you too.",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Are you a student?",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "No, I'm an office worker. What about you?",
+            "speaker": "Minji"
+        },
+        {
+            "text": "I am a college student. I'm studying Korean.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Wow, that's great! Korean is a bit difficult, isn't it?",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Yes, it's difficult but fun. Please help me a lot.",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Sure! Let's study hard together.",
+            "speaker": "Minji"
+        },
+        {
+            "text": "Thank you. See you next time!",
+            "speaker": "Jordan"
+        },
+        {
+            "text": "Goodbye!",
+            "speaker": "Minji"
+        }
+    ]
+}
