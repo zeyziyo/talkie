@@ -82,8 +82,8 @@ class _ChatScreenState extends State<ChatScreen> {
         history: history,
       );
 
-      final aiResponse = result['response'] as String;
-      final translation = result['translation'] as String;
+      final aiResponse = result['response'] as String? ?? '';
+      final translation = result['translation'] as String? ?? '';
       final suggestedTitle = result['title'] as String?;
 
       await appState.saveAiResponse(aiResponse, translation);
