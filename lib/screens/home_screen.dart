@@ -207,25 +207,26 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialM2SelectTitle, 
         l10n.tutorialM2SelectDesc,
         ContentAlign.bottom,
-        radius: 12,
       ));
-      // Mode 2 List Target (Moved Up)
+      
+      // Mode 2 List Target (Card)
       targets.add(_buildTarget(
         _mode2ListKey, 
         l10n.tutorialM2ListTitle, 
         l10n.tutorialM2ListDesc,
-        ContentAlign.bottom, // Changed to bottom to avoid clipping
+        ContentAlign.bottom, 
+        shape: ShapeLightFocus.RRect,
         radius: 12,
-        shape: ShapeLightFocus.Circle,
-        keepWidgetSize: false, // Use fixed small size centered on widget
+        paddingFocus: 8,
       ));
-      // Action Button (Import) is also relevant in Mode 2
+      
+      // Action Button (Import)
       targets.add(_buildTarget(
         _actionButtonKey, 
         l10n.importJsonFile, 
         l10n.tutorialM2ImportDesc,
         ContentAlign.bottom,
-        radius: 12,
+        paddingFocus: 4,
       ));
     } else if (modeIndex == 2) {
       // Mode 3: Material Icon
@@ -234,7 +235,6 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialM3SelectTitle, 
         l10n.tutorialM3SelectDesc,
         ContentAlign.bottom,
-        radius: 12,
       ));
       
       // Mode 3: Reset Button
@@ -243,9 +243,9 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialM3ResetTitle, 
         l10n.tutorialM3ResetDesc,
         ContentAlign.top,
-        radius: 12,
         shape: ShapeLightFocus.RRect,
-        keepWidgetSize: true, 
+        radius: 8,
+        paddingFocus: 4,
       ));
     } else if (modeIndex == 3) {
       targets.add(_buildTarget(
@@ -253,7 +253,7 @@ class _HomeScreenState extends State<HomeScreen> {
         l10n.tutorialAiChatTitle, 
         l10n.tutorialAiChatDesc,
         ContentAlign.top,
-        radius: 28, 
+        paddingFocus: 4,
       ));
     }
 
@@ -265,43 +265,16 @@ class _HomeScreenState extends State<HomeScreen> {
     String title, 
     String desc, 
     ContentAlign align, {
-    double radius = 12,
+    double radius = 10,
     ShapeLightFocus shape = ShapeLightFocus.Circle,
-    bool keepWidgetSize = false,
+    double paddingFocus = 0,
   }) {
-    // Calculate target position manually to force a fixed small size highlight
-    // regardless of the actual widget size.
-    final RenderBox? renderBox = key.currentContext?.findRenderObject() as RenderBox?;
-    TargetPosition? position;
-    
-    if (renderBox != null) {
-      if (keepWidgetSize) {
-        // Use the actual widget size and position
-        final Offset offset = renderBox.localToGlobal(Offset.zero);
-        final Size size = renderBox.size;
-        position = TargetPosition(size, offset);
-      } else {
-        // Force tiny fixed size (default behavior for icons)
-        final Offset offset = renderBox.localToGlobal(Offset.zero);
-        final Size size = renderBox.size;
-        // Center of the target widget
-        final Offset center = Offset(offset.dx + size.width / 2, offset.dy + size.height / 2);
-        
-        // Define a tiny Fixed Size for the highlight target (so circle radius works from this small box)
-        position = TargetPosition(
-          const Size(24, 24), // Fixed size for radius 12
-          Offset(center.dx - 12, center.dy - 12), // Centered
-        );
-      }
-    }
-
     return TargetFocus(
       identify: title,
-      keyTarget: position == null ? key : null, // Fallback to key if position calc fails
-      targetPosition: position,
+      keyTarget: key,
       alignSkip: Alignment.topRight,
       shape: shape,
-      paddingFocus: 0,
+      paddingFocus: paddingFocus,
       radius: radius,
       contents: [
         TargetContent(
@@ -787,10 +760,22 @@ class _HomeScreenState extends State<HomeScreen> {
            return count > 0;
         }).toList();
 
+        final dialogueGroups = appState.dialogueGroups;
+        
+        // Determine initial tab based on mode
+        int initialTab = 0; // Word by default
+        if (appState.currentMode == 3) { // AI Chat Mode
+          initialTab = 2; // Dialogues Tab
+        } else if (appState.currentMode == 1 || appState.currentMode == 2) {
+          // If in review/practice, keep Word or Sentence based on filter
+          initialTab = appState.isWordMode ? 0 : 1;
+        }
+
         return DefaultTabController(
-          length: 2,
+          length: 3,
+          initialIndex: initialTab,
           child: AlertDialog(
-            title: Text(l10n.menuSelectMaterialSet),
+            title: Text(appState.currentMode == 3 ? l10n.chatAiChat : l10n.menuSelectMaterialSet),
             content: SizedBox( // Constrain height
               width: double.maxFinite,
               height: 400, // Fixed height for TabView
@@ -802,6 +787,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     tabs: [
                       Tab(text: l10n.tabWord),
                       Tab(text: l10n.tabSentence),
+                      Tab(text: l10n.chatHistoryTitle),
                     ],
                   ),
                   Expanded(
@@ -857,9 +843,37 @@ class _HomeScreenState extends State<HomeScreen> {
                                     title: Text(subject),
                                     subtitle: Text('${l10n.wordModeLabel}: ${m['word_count']} / ${l10n.labelSentence}: ${m['sentence_count']}'),
                                     onTap: () {
-                                       appState.setRecordTypeFilter('sentence'); // Auto switch to sentence
+                                       appState.setRecordTypeFilter('sentence');
                                        appState.selectMaterial(m['id'] as int);
                                        Navigator.pop(context);
+                                    },
+                                  );
+                            }),
+                          ],
+                        ),
+                        // Dialogues Tab (Phase 11 Update)
+                        ListView(
+                          children: [
+                            if (dialogueGroups.isEmpty)
+                              Padding(
+                                padding: const EdgeInsets.all(32),
+                                child: Center(child: Text(l10n.chatNoConversations)),
+                              ),
+                            ...dialogueGroups.map((group) {
+                                  return ListTile(
+                                    leading: CircleAvatar(
+                                      backgroundColor: Colors.blue[50],
+                                      child: const Icon(Icons.chat, size: 16, color: Colors.blue),
+                                    ),
+                                    title: Text(group.title ?? l10n.chatUntitled),
+                                    subtitle: Text(group.persona ?? ''),
+                                    onTap: () async {
+                                       await appState.loadExistingDialogue(group);
+                                       if (context.mounted) {
+                                         // Switch to Chat Mode if not already there
+                                         appState.switchMode(3); 
+                                         Navigator.pop(context);
+                                       }
                                     },
                                   );
                             }),

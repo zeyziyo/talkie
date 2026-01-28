@@ -10,18 +10,19 @@ if (-not (Test-Path $npx)) {
     exit
 }
 
-# 1. Explicit Login
-Write-Host "`n[1/3] Authenticating..." -ForegroundColor Green
-Write-Host "A browser window should open. Please log in to Supabase." -ForegroundColor Cyan
-& $npx -y supabase login
+# 1. Explicit Login (SKIPPED - Already authenticated)
+# Write-Host "`n[1/3] Authenticating..." -ForegroundColor Green
+# Write-Host "A browser window should open. Please log in to Supabase." -ForegroundColor Cyan
+# & $npx -y supabase login
 
-# 2. Set Secrets
-Write-Host "`n[2/3] Setting API Key..." -ForegroundColor Green
-& $npx -y supabase secrets set GEMINI_API_KEY=AIzaSyCHZPInTBC4wdERw3SN94H0dKUQMpy5Nqg --project-ref soxdzielqtabyradajle
+# 2. Set Secrets (MANUAL STEP - DO NOT HARDCODE IN SCRIPT)
+Write-Host "`n[2/3] Skipping hardcoded secret set... (Set manually via npx supabase secrets set)" -ForegroundColor Yellow
+# & $npx -y supabase secrets set GEMINI_API_KEY=AIzaSyCHZPInTBC4wdERw3SN94H0dKUQMpy5Nqg --project-ref soxdzielqtabyradajle
 
 # 3. Deploy
 Write-Host "`n[3/3] Deploying Function..." -ForegroundColor Green
 & $npx -y supabase functions deploy translate-and-validate --project-ref soxdzielqtabyradajle --no-verify-jwt
+& $npx -y supabase functions deploy process-chat --project-ref soxdzielqtabyradajle --no-verify-jwt
 
 Write-Host "`n---------------------------------------------------"
 Write-Host "SUCCESS! Deployment Finished." -ForegroundColor Green

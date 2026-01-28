@@ -68,6 +68,7 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
           label: Text(l10n.chatNewChat),
           icon: const Icon(Icons.add),
           backgroundColor: const Color(0xFF667eea),
+          foregroundColor: Colors.white,
         ),
       );
     }

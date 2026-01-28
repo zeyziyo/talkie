@@ -93,6 +93,7 @@ class AppState extends ChangeNotifier {
   // Phase 11: Dialogue / Chat State
   String? _activeDialogueId;
   String? _activeDialogueTitle;
+  String? _activePersona; // Tracks current chat partner
   int _currentDialogueSequence = 0;
   List<DialogueGroup> _dialogueGroups = [];
   
@@ -151,6 +152,7 @@ class AppState extends ChangeNotifier {
   // Phase 11 Getters
   String? get activeDialogueId => _activeDialogueId;
   String? get activeDialogueTitle => _activeDialogueTitle;
+  String? get activePersona => _activePersona;
   List<DialogueGroup> get dialogueGroups => _dialogueGroups;
   
   /// Search for similar source texts
@@ -228,6 +230,18 @@ class AppState extends ChangeNotifier {
   List<Map<String, dynamic>> get materialRecords => _materialRecords;
   Set<int> get studiedTranslationIds => _studiedTranslationIds;
   String get recordTypeFilter => _recordTypeFilter;
+
+  /// Get the name of the currently selected material set
+  String get selectedMaterialName {
+    if (_selectedMaterialId == null || _selectedMaterialId == 0) {
+      return 'Basic'; // Or localized '기본'
+    }
+    final material = _studyMaterials.firstWhere(
+      (m) => m['id'] == _selectedMaterialId,
+      orElse: () => {'title': 'Unknown'},
+    );
+    return material['title'] as String? ?? 'Basic';
+  }
 
   /// Get material records filtered by type (Word/Sentence)
   List<Map<String, dynamic>> get filteredMaterialRecords {
@@ -425,6 +439,9 @@ class AppState extends ChangeNotifier {
     try {
       _isTranslating = true;
       _statusMessage = '확인 중...';
+      _showDisambiguationDialog = false;
+      _disambiguationOptions = [];
+      _showDuplicateDialog = false;
       notifyListeners();
 
       // 0. Check Limits (NEW)
@@ -512,8 +529,13 @@ class AppState extends ChangeNotifier {
                 break;
               case 'OTHER':
               default:
+                // If it's a descriptive sentence (e.g., in Korean), use it directly
+                // Standard internal codes start with uppercase or "Error:"
                 if (reason.startsWith('Error:')) {
                   errorMsg = reason;
+                } else if (reason.length > 20 || reason.contains(' ')) {
+                   // This is likely the AI's descriptive NATIVE language reason
+                   errorMsg = reason;
                 } else {
                   errorMsg = l10n.errorOtherSafety ?? reason;
                 }
@@ -675,8 +697,11 @@ class AppState extends ChangeNotifier {
       _statusMessage = '저장 완료!';
       _isSaved = true; 
       
-      // Reload Study Records so Mode 2 is updated immediately
+      // Reload Study Records and Materials so Mode 2 is updated immediately
       await loadStudyRecords(); 
+      await loadStudyMaterials(); 
+      
+      notifyListeners();
       
       notifyListeners();
       return; // Stop here! Old logic below is ignored.
@@ -1259,46 +1284,101 @@ class AppState extends ChangeNotifier {
       
       _statusMessage = 'Importing...';
       notifyListeners();
-      
-      for (var i = 0; i < entries.length; i++) {
-        try {
-          final entry = entries[i] as Map<String, dynamic>;
-          final sourceText = entry['source_text'] as String;
-          final targetText = entry['target_text'] as String;
-          
-          if (sourceText.trim().isEmpty || targetText.trim().isEmpty) {
-            skippedCount++;
-            continue;
-          }
-          
-          final result = await SupabaseService.importJsonEntry(
-            sourceText: sourceText,
-            sourceLang: sourceLang,
-            targetText: targetText,
-            targetLang: targetLang,
-            note: (entry['note'] ?? entry['context']) as String?,
-          );
-          
-          if (result['success'] == true) {
-            importedCount++;
-          } else {
-            if (result['reason'] == 'Duplicate') {
-              duplicateCount++;
-            } else {
-              errors.add('Entry ${i + 1}: ${result['reason']}');
-              skippedCount++;
+
+      // 1. Handle Dialogue Sets (Phase 11 Support)
+      if (data.containsKey('dialogues') && data['dialogues'] is List) {
+        final dialogues = data['dialogues'] as List;
+        for (var d = 0; d < dialogues.length; d++) {
+          try {
+            final dialog = dialogues[d] as Map<String, dynamic>;
+            final title = dialog['title'] as String?;
+            final persona = dialog['persona'] as String?;
+            final messages = dialog['messages'] as List;
+
+            _statusMessage = 'Importing Dialogue: ${title ?? "..."}';
+            notifyListeners();
+
+            // Create Dialogue Group on Supabase
+            final dialogueId = await SupabaseService.createDialogueGroup(
+              title: title ?? 'Imported Conversation',
+              persona: persona,
+            );
+
+            // Save locally
+            await DatabaseService.insertDialogueGroup(
+              id: dialogueId,
+              title: title ?? 'Imported Conversation',
+              persona: persona,
+              createdAt: DateTime.now().toIso8601String(),
+              userId: SupabaseService.client.auth.currentUser?.id,
+            );
+
+            for (var m = 0; m < messages.length; m++) {
+              final msg = messages[m] as Map<String, dynamic>;
+              final result = await SupabaseService.importDialogueMessage(
+                dialogueId: dialogueId,
+                sourceText: msg['source_text'] as String,
+                sourceLang: sourceLang,
+                targetText: msg['target_text'] as String,
+                targetLang: targetLang,
+                speaker: (msg['speaker'] ?? persona ?? 'AI') as String,
+                sequenceOrder: m + 1,
+              );
+              
+              if (result['success'] == true) {
+                importedCount++;
+              } else {
+                errors.add('Dialogue "${title}": Post ${m+1} failed: ${result['reason']}');
+              }
             }
+          } catch (e) {
+            errors.add('Dialogue ${d+1} failed: $e');
           }
-          
-          // Optional: Update progress specific status message every 5 entries
-          if (i % 5 == 0) {
-             _statusMessage = 'Importing... ($importedCount/${entries.length})';
-             notifyListeners();
+        }
+        await loadDialogueGroups();
+      }
+
+      // 2. Handle Regular Entries (Original logic)
+      if (data.containsKey('entries') && data['entries'] is List) {
+        final entries = data['entries'] as List;
+        for (var i = 0; i < entries.length; i++) {
+          try {
+            final entry = entries[i] as Map<String, dynamic>;
+            final sourceText = entry['source_text'] as String;
+            final targetText = entry['target_text'] as String;
+            
+            if (sourceText.trim().isEmpty || targetText.trim().isEmpty) {
+              skippedCount++;
+              continue;
+            }
+            
+            final result = await SupabaseService.importJsonEntry(
+              sourceText: sourceText,
+              sourceLang: sourceLang,
+              targetText: targetText,
+              targetLang: targetLang,
+              note: (entry['note'] ?? entry['context']) as String?,
+            );
+            
+            if (result['success'] == true) {
+              importedCount++;
+            } else {
+              if (result['reason'] == 'Duplicate') {
+                duplicateCount++;
+              } else {
+                errors.add('Entry ${i + 1}: ${result['reason']}');
+                skippedCount++;
+              }
+            }
+            
+            if (i % 5 == 0) {
+              _statusMessage = 'Importing Entries... ($importedCount/${entries.length})';
+              notifyListeners();
+            }
+          } catch (e) {
+            errors.add('Entry ${i + 1}: $e');
+            skippedCount++;
           }
-          
-        } catch (e) {
-          errors.add('Entry ${i + 1}: $e');
-          skippedCount++;
         }
       }
       
@@ -1905,6 +1985,7 @@ class AppState extends ChangeNotifier {
 
       _activeDialogueId = dialogueId;
       _activeDialogueTitle = 'New Conversation';
+      _activePersona = persona;
       _currentDialogueSequence = 1;
 
       // 2. Save to local SQLite
@@ -1972,6 +2053,7 @@ class AppState extends ChangeNotifier {
   void clearActiveDialogue() {
     _activeDialogueId = null;
     _activeDialogueTitle = null;
+    _activePersona = null;
     _currentDialogueSequence = 0;
     notifyListeners();
   }
@@ -1980,6 +2062,7 @@ class AppState extends ChangeNotifier {
   Future<void> loadExistingDialogue(DialogueGroup group) async {
     _activeDialogueId = group.id;
     _activeDialogueTitle = group.title;
+    _activePersona = group.persona;
     
     // Get max sequence order from local DB
     final records = await DatabaseService.getRecordsByDialogueId(group.id);
@@ -1993,8 +2076,10 @@ class AppState extends ChangeNotifier {
   }
 
   /// Save AI response to dialogue
-  Future<void> saveAiResponse(String sourceText, String targetText, {String? speaker = 'AI'}) async {
+  Future<void> saveAiResponse(String sourceText, String targetText, {String? speaker}) async {
     if (_activeDialogueId == null) return;
+    
+    final finalSpeaker = speaker ?? _activePersona ?? 'AI';
 
     _currentDialogueSequence++;
     
@@ -2021,7 +2106,7 @@ class AppState extends ChangeNotifier {
     // Usually AI response doesn't need 'translation' from user, but we store it as a 'hub' for consistency.
     _saveToSupabase(
       dialogueId: _activeDialogueId,
-      speaker: speaker,
+      speaker: finalSpeaker,
       sequenceOrder: _currentDialogueSequence,
     );
   }

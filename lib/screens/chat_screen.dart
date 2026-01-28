@@ -209,48 +209,68 @@ class _ChatScreenState extends State<ChatScreen> {
                   child: Container(
                     margin: const EdgeInsets.symmetric(vertical: 4),
                     padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                      color: isUser ? Colors.blue[50] : Colors.white,
-                      borderRadius: BorderRadius.circular(16),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.05),
-                          blurRadius: 2,
-                        ),
-                      ],
-                    ),
-                    constraints: BoxConstraints(
-                      maxWidth: MediaQuery.of(context).size.width * 0.75,
-                    ),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: isUser ? CrossAxisAlignment.end : CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          msg['source_text'] ?? '',
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: isUser ? Colors.blue[900] : Colors.black87,
-                            fontWeight: isUser ? FontWeight.w500 : FontWeight.normal,
-                          ),
-                        ),
-                        if (!isUser && msg['target_text'] != null && msg['target_text'].isNotEmpty)
-                          Padding(
-                            padding: const EdgeInsets.only(top: 6),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Divider(height: 12),
-                                Text(
-                                  msg['target_text'],
-                                  style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.grey[700],
-                                    fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ],
+                        // Speaker Name
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 4, left: 4, right: 4),
+                          child: Text(
+                            isUser ? l10n.me : (msg['speaker'] ?? 'AI'),
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: isUser ? Colors.blue[700] : Colors.grey[600],
                             ),
                           ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: isUser ? Colors.blue[50] : Colors.white,
+                            borderRadius: BorderRadius.circular(16).copyWith(
+                              topRight: isUser ? const Radius.circular(0) : const Radius.circular(16),
+                              topLeft: isUser ? const Radius.circular(16) : const Radius.circular(0),
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withValues(alpha: 0.05),
+                                blurRadius: 2,
+                              ),
+                            ],
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                msg['source_text'] ?? '',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: isUser ? Colors.blue[900] : Colors.black87,
+                                  fontWeight: isUser ? FontWeight.w500 : FontWeight.normal,
+                                ),
+                              ),
+                              if (!isUser && msg['target_text'] != null && msg['target_text'].isNotEmpty)
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 6),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      const Divider(height: 12),
+                                      Text(
+                                        msg['target_text'],
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          color: Colors.grey[700],
+                                          fontStyle: FontStyle.italic,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),

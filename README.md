@@ -59,6 +59,30 @@ It provides an intuitive UX for switching modes by swiping the screen. In partic
 * **History Management**: Revisit past chats & edit titles for better organization
 * **Context Preservation**: Chat-sourced sentences retain their dialogue context in Review Mode
 
+### JSON 파일 구조 (JSON Structure)
+
+기존의 개별 문장(`entries`)뿐만 아니라, 완성된 대화 세트(`dialogues`)를 한 번에 불러올 수 있습니다.
+You can import both individual sentences (`entries`) and complete conversation sets (`dialogues`).
+
+```json
+{
+  "source_language": "ko",
+  "target_language": "en",
+  "entries": [
+    { "source_text": "사과", "target_text": "Apple", "note": "Fruit" }
+  ],
+  "dialogues": [
+    {
+      "title": "공항 체크인 연습",
+      "persona": "공항 직원",
+      "messages": [
+        { "speaker": "Me", "source_text": "체크인하고 싶어요.", "target_text": "I'd like to check in." }
+      ]
+    }
+  ]
+}
+```
+
 ## 지원 언어 (Supported Languages)
 
 Talkie는 **43개 언어**를 지원합니다:

@@ -67,11 +67,12 @@
 *   [x] **국제화 동기화**: 43개 언어에 대한 ARB 파일(v1.0.4) 최신화 및 AI 번역 동기화.
 *   [x] **배포 준비**: 앱 버전 상향(`1.0.4+8`) 및 구글 플레이 업그레이드 가이드 작성.
 
-### ✅ Phase 11: 대화형 학습 및 AI 채팅 (Jan 27)
+### ✅ Phase 11: 대화형 학습 및 AI 채팅 (Jan 27-28)
 *   [x] **Dialogue Engine**: 대화 그룹화(Dialogue Group) 및 맥락 보존형 데이터 구조 구축 완료.
 *   [x] **Messenger UI**: AI 페르소나 기반 실시간 채팅 인터페이스 구현 완료.
 *   [x] **Auto-Titling**: Gemini 기반 대화 주제 분석 및 제목 자동 생성 기능 도입.
 *   [x] **Help & Tutorial**: AI 채팅 전용 도움말 및 인터랙티브 가이드 전수 업데이트.
+*   [x] **Dialogue Set Import**: JSON 파일을 통한 문장 세트 및 전체 대화 내역 일괄 가져오기 기능 완성.
 
 ### 🚀 Phase 10: AI 기반 학습 추천 (Planned)
 *   [ ] **Recommender**: 사용자 데이터를 분석하여 맞춤형 학습 콘텐츠 제안.

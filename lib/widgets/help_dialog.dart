@@ -231,21 +231,26 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
   Widget _buildJsonGuide(AppLocalizations l10n) {
     const jsonExample = '''
 {
-  "subject": "Basic Vocabulary",
-  "source": "Textbook Vol.1",
   "source_language": "ko",
   "target_language": "en",
-  "default_type": "word",
   "entries": [
     {
       "source_text": "사과",
       "target_text": "Apple",
-      "context": "Fruit"
-    },
+      "note": "Fruit"
+    }
+  ],
+  "dialogues": [
     {
-      "source_text": "안녕하세요",
-      "target_text": "Hello",
-      "type": "sentence"
+      "title": "공항 체크인 연습",
+      "persona": "공항 직원",
+      "messages": [
+        { 
+          "speaker": "Me", 
+          "source_text": "체크인 부탁드립니다.", 
+          "target_text": "I'd like to check in." 
+        }
+      ]
     }
   ]
 }''';
@@ -254,8 +259,13 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
       padding: const EdgeInsets.all(16),
       children: [
         Text(
-          l10n.helpJsonDesc, // "To import study materials, use a JSON file with the following structure:"
-          style: const TextStyle(fontSize: 16),
+          l10n.helpJsonDesc, 
+          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          l10n.helpDialogueImportDesc,
+          style: TextStyle(fontSize: 14, color: Colors.blue[700]),
         ),
         const SizedBox(height: 16),
         Container(
@@ -287,6 +297,16 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
               ),
             ],
           ),
+        ),
+        const SizedBox(height: 24),
+        Text(
+          l10n.importTotal(1), // Reuse as header if needed, but details better
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const Divider(),
+        Text(
+          l10n.helpDialogueImportDetails,
+          style: const TextStyle(fontSize: 14, height: 1.6),
         ),
       ],
     );

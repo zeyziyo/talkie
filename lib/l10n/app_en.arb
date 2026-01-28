@@ -557,5 +557,11 @@
   "helpModeChatDesc": "Talk to AI persona to practice real conversation and save useful sentences.",
   "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
   "tutorialAiChatTitle": "AI Chat",
-  "tutorialAiChatDesc": "Practice real conversation with AI personas here."
+  "tutorialAiChatDesc": "Practice real conversation with AI personas here.",
+  "me": "Me",
+  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
+  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
+  "mode1SelectedMaterial": "Current Material Set: {name}",
+  "errorSelectCategory": "Please select word or sentence first!"
 }
+```

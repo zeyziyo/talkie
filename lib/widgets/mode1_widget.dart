@@ -157,6 +157,30 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                               ],
                             ),
                             
+                            // Context/Note Feedback
+                            if (appState.note.isNotEmpty)
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 8),
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  decoration: BoxDecoration(
+                                    color: Colors.amber[100],
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      const Icon(Icons.lightbulb, size: 14, color: Colors.deepOrange),
+                                      const SizedBox(width: 4),
+                                      Text(
+                                        'Note: ${appState.note}', 
+                                        style: TextStyle(fontSize: 12, color: Colors.brown[800], fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+
                             TextField(
                               controller: _sourceTextController,
                               minLines: 2,
@@ -197,6 +221,27 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                             ),
                             
                             const Divider(),
+                            
+                            // New: Material Set Selection Notice
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 8.0, left: 4.0),
+                              child: Row(
+                                children: [
+                                  Icon(Icons.folder_shared, size: 16, color: Colors.blue[600]),
+                                  const SizedBox(width: 8),
+                                  Expanded(
+                                    child: Text(
+                                      l10n.mode1SelectedMaterial(appState.selectedMaterialName),
+                                      style: TextStyle(
+                                        fontSize: 13, 
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.blue[600],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                             
                             // New: Word/Sentence Toggle
                             Padding(
@@ -247,6 +292,23 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                       onPressed: appState.isTranslating
                           ? null
                           : () async {
+                              // Validation: Ensure Word or Sentence is selected
+                              if (appState.recordTypeFilter == 'all') {
+                                showDialog(
+                                  context: context,
+                                  builder: (context) => AlertDialog(
+                                    title: Text(l10n.error),
+                                    content: Text(l10n.errorSelectCategory),
+                                    actions: [
+                                      TextButton(
+                                        onPressed: () => Navigator.pop(context),
+                                        child: Text(l10n.confirm),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                                return;
+                              }
                               try {
                                 final error = await appState.translate(context: context);
                                 if (error != null && context.mounted) {
@@ -339,28 +401,6 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                             const SizedBox(height: 8),
                             
                             // Context/Note Feedback
-                            if (appState.note.isNotEmpty)
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 8),
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber[100],
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      const Icon(Icons.lightbulb, size: 14, color: Colors.deepOrange),
-                                      const SizedBox(width: 4),
-                                      Text(
-                                        'Context: ${appState.note}', 
-                                        style: TextStyle(fontSize: 12, color: Colors.brown[800], fontWeight: FontWeight.bold),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
 
                             TextField(
                               controller: _translatedTextController,

@@ -182,13 +182,75 @@ class SupabaseService {
         'status': 'approved',
       });
       
-      // 4. Add to User Library
+      // 4. Add to library
       await _addToLibrary(groupId, note);
       
-      return {'success': true};
-
+      return {'success': true, 'id': groupId};
     } catch (e) {
-      return {'success': false, 'reason': 'Error: $e'};
+      return {'success': false, 'reason': e.toString()};
+    }
+  }
+
+  /// Import a message into a specific dialogue group
+  static Future<Map<String, dynamic>> importDialogueMessage({
+    required String dialogueId,
+    required String sourceText,
+    required String sourceLang,
+    required String targetText,
+    required String targetLang,
+    required String speaker,
+    required int sequenceOrder,
+  }) async {
+    try {
+      final userId = client.auth.currentUser?.id;
+      if (userId == null) throw Exception('Not authenticated');
+
+      // 1. Find or create group for the sentence pair
+      int? groupId = await findGroupId(sourceText, sourceLang);
+      
+      if (groupId == null) {
+        groupId = DateTime.now().millisecondsSinceEpoch;
+        // Insert Source
+        await client.from('sentences').insert({
+          'group_id': groupId,
+          'lang_code': sourceLang,
+          'text': sourceText,
+          'status': 'approved',
+          'author_id': userId,
+        });
+      }
+
+      // Check for target
+      final targetCheck = await client
+          .from('sentences')
+          .select('id')
+          .eq('group_id', groupId)
+          .eq('lang_code', targetLang)
+          .eq('text', targetText)
+          .maybeSingle();
+
+      if (targetCheck == null) {
+        await client.from('sentences').insert({
+          'group_id': groupId,
+          'lang_code': targetLang,
+          'text': targetText,
+          'status': 'approved',
+          'author_id': userId,
+        });
+      }
+
+      // 2. Add to user library with dialogue linkage
+      await client.from('user_library').upsert({
+        'user_id': userId,
+        'group_id': groupId,
+        'dialogue_id': dialogueId,
+        'speaker': speaker,
+        'sequence_order': sequenceOrder,
+      }, onConflict: 'user_id, group_id, dialogue_id');
+
+      return {'success': true};
+    } catch (e) {
+      return {'success': false, 'reason': e.toString()};
     }
   }
   
