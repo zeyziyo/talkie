@@ -498,5 +498,7 @@
   "reviewModeTitle": "復習",
   "practiceModeTitle": "発음練習",
   "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode"
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "basicWordRepository": "基本単語リポジトリ",
+  "basicSentenceRepository": "基本文リポジトリ"
 }

@@ -498,5 +498,7 @@
   "reviewModeTitle": "复习",
   "practiceModeTitle": "发音练习",
   "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode"
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "basicWordRepository": "基础词汇库",
+  "basicSentenceRepository": "基础句库"
 }

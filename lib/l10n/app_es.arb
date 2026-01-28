@@ -498,5 +498,7 @@
   "reviewModeTitle": "Repaso",
   "practiceModeTitle": "Práctica",
   "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode"
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "basicWordRepository": "Repositorio de palabras básicas",
+  "basicSentenceRepository": "Repositorio de oraciones básicas"
 }

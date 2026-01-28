@@ -496,5 +496,7 @@
   "skip": "건너뛰기",
   "inputModeTitle": "입력",
   "reviewModeTitle": "복습",
-  "practiceModeTitle": "발음 연습"
+  "practiceModeTitle": "발음 연습",
+  "basicWordRepository": "Grundwortschatz",
+  "basicSentenceRepository": "Grundsatz-Repository"
 }
