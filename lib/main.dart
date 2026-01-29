@@ -8,6 +8,8 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'services/supabase_service.dart';
+import 'services/background_sync_service.dart';
+
 
 import 'package:google_mobile_ads/google_mobile_ads.dart' hide AppState;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -49,7 +51,18 @@ void main() async {
   try {
     await SupabaseService.initialize();
   } catch (e) {
-    print("Warning: Failed to initialize Supabase: $e");
+    print("Error initializing Supabase: $e"); // Modified error message
+  }
+  
+  // Initialize Background Sync (Workmanager)
+  if (!kIsWeb && (platform.Platform.isAndroid || platform.Platform.isIOS)) {
+    try {
+      // Lazy import handled by file level, but logic conditional
+      await BackgroundSyncService.initialize();
+      await BackgroundSyncService.registerPeriodicTask();
+    } catch (e) {
+      print("Error initializing Background Sync: $e");
+    }
   }
 
   runApp(TalkieApp(prefs: prefs));

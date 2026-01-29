@@ -23,7 +23,7 @@ class DatabaseService {
     
     return await openDatabase(
       path,
-      version: 2, // Upgraded for Phase 11
+      version: 3, // Upgraded for Phase 12 (Sync)
       onCreate: (db, version) async {
         await _createBaseTables(db);
         await _ensureDefaultMaterial(db);
@@ -48,6 +48,12 @@ class DatabaseService {
           
           print('[DB] Upgraded to version 2: Dialogue support added');
         }
+        
+        if (oldVersion < 3) {
+          // Add is_synced column for background synchronization
+          await db.execute('ALTER TABLE translations ADD COLUMN is_synced INTEGER DEFAULT 0');
+          print('[DB] Upgraded to version 3: Sync support added');
+        }
       },
     );
   }
@@ -68,7 +74,8 @@ class DatabaseService {
         type TEXT DEFAULT 'sentence',
         dialogue_id TEXT,
         speaker TEXT,
-        sequence_order INTEGER
+        sequence_order INTEGER,
+        is_synced INTEGER DEFAULT 0
       )
     ''');
 
@@ -723,31 +730,27 @@ class DatabaseService {
       final defaultType = data['default_type'] as String? ?? 'sentence';
       final entries = data['entries'] as List;
       
+      final db = await database;
+      
+      // Define variables to be captured by closure
       int importedCount = 0;
       int skippedCount = 0;
       List<String> errors = [];
-      
-      final db = await database;
+      int materialId = 0;
       
       await db.transaction((txn) async {
         // 0. Create Material (Group)
         String subject = data['subject'] as String? ?? 'Imported ${DateTime.now().toString().split(' ')[0]}';
         
-        // Check for duplicates inside txn (or call static method if safe?)
-        // To be safe and reuse logic, we duplicate createStudyMaterial logic slightly or ensure it uses txn.
-        // For simplicity and compatibility, we keep logic outside or adjust.
-        // But createStudyMaterial uses 'await database' which gets the main instance, not txn.
-        // So we must reproduce the insert logic here using 'txn' or accept that 'createStudyMaterial' is separate.
-        // 'createStudyMaterial' is just ONE call, so it's fine to be outside or separate.
-        // The LOOP is what matters.
-        
-        final materialId = await createStudyMaterial(
+        // Use createStudyMaterial with txn
+        materialId = await createStudyMaterial(
           subject: subject,
           source: 'Device Import',
           sourceLanguage: sourceLang,
           targetLanguage: targetLang,
           fileName: fileName ?? subject,
           createdAt: DateTime.now().toIso8601String(),
+          txn: txn,
         );
 
         data['processed_material_id'] = materialId;
@@ -763,29 +766,24 @@ class DatabaseService {
               continue;
             }
             
-            // 1. Insert to source language table (using txn)
-            final sourceId = await txn.insert('source_languages', {
-              'language': sourceLang,
-              'text': sourceText,
-            });
+            // 1. Insert to source language table (using helper with txn)
+            final sourceId = await insertLanguageRecord(sourceLang, sourceText, txn: txn);
             
-            // 2. Insert to target language table (using txn)
-            final targetId = await txn.insert('target_languages', {
-              'language': targetLang,
-              'text': targetText,
-            });
+            // 2. Insert to target language table (using helper with txn)
+            final targetId = await insertLanguageRecord(targetLang, targetText, txn: txn);
             
-            // 3. Create translation link (using txn)
-             await txn.insert('translations', {
-              'source_lang': sourceLang,
-              'source_id': sourceId,
-              'target_lang': targetLang,
-              'target_id': targetId,
-              'material_id': materialId,
-              'is_bookmarked': 0, // false
-              'note': (entry['note'] ?? entry['context']) as String?,
-              'type': entry['type'] as String? ?? defaultType,
-            });
+            // 3. Create translation link (using helper with txn)
+            await saveTranslationLinkWithMaterial(
+              sourceLang: sourceLang,
+              sourceId: sourceId,
+              targetLang: targetLang,
+              targetId: targetId,
+              materialId: materialId,
+              // isBookmarked removed (not supported by helper)
+              note: (entry['note'] ?? entry['context']) as String?,
+              type: entry['type'] as String? ?? defaultType,
+              txn: txn,
+            );
             
             importedCount++;
           } catch (e) {
@@ -803,27 +801,7 @@ class DatabaseService {
         'skipped': skippedCount,
         'total': entries.length,
         'errors': errors,
-        'material_id': data['processed_material_id'] ?? 0,
-      };
-    }); // End Transaction (Wait, original code had transaction block ending at 796, but return was outside? No, return was at 800.)
-    // My snippet in view_file showed:
-    // 796:       });
-    // 797:       
-    // 798:       print...
-    // 800:       return ...
-    // So createStudyMaterial WAS inside transaction. 
-    // BUT createStudyMaterial (Line 744) didn't take txn.
-    // So it deadlocked.
-    // I need to change createStudyMaterial signature first.
-
-      
-      return {
-        'success': true,
-        'imported': importedCount,
-        'skipped': skippedCount,
-        'total': entries.length,
-        'errors': errors,
-        'material_id': data['processed_material_id'] ?? 0,
+        'material_id': materialId,
       };
     } catch (e) {
       print('[DB] Error importing JSON: $e');
@@ -907,13 +885,13 @@ class DatabaseService {
       
       final db = await database;
       
-      // Use transaction for speed and atomicity
-      int importedCount = 0;
-      int skippedCount = 0;
-      List<String> errors = [];
-      int materialId = 0;
-
-      await db.transaction((txn) async {
+      // Return the result directly from the transaction block
+      return await db.transaction((txn) async {
+         int importedCount = 0;
+         int skippedCount = 0;
+         List<String> errors = [];
+         int materialId = 0;
+         
          // 1. Create study material metadata
          materialId = await createStudyMaterial(
            subject: subject,
@@ -949,8 +927,8 @@ class DatabaseService {
               targetLang: targetLang,
               targetId: targetId,
               materialId: materialId,
-              note: (entry['note'] ?? entry['context']) as String?, // Import context/note
-              type: entry['type'] as String? ?? defaultType, // Use entry type or default type
+              note: (entry['note'] ?? entry['context']) as String?,
+              type: entry['type'] as String? ?? defaultType,
               txn: txn, // Pass txn
             );
             
@@ -960,18 +938,19 @@ class DatabaseService {
             skippedCount++;
           }
         }
-      }); // End Transaction
+        
+        print('[DB] Import with metadata complete: $importedCount imported, $skippedCount skipped, material_id=$materialId');
       
-      print('[DB] Import with metadata complete: $importedCount imported, $skippedCount skipped, material_id=$materialId');
+        return {
+          'success': true,
+          'material_id': materialId,
+          'imported': importedCount,
+          'skipped': skippedCount,
+          'total': entries.length,
+          'errors': errors,
+        };
+      });
       
-      return {
-        'success': true,
-        'material_id': materialId,
-        'imported': importedCount,
-        'skipped': skippedCount,
-        'total': entries.length,
-        'errors': errors,
-      };
     } catch (e) {
       print('[DB] Error importing JSON with metadata: $e');
       return {
@@ -1252,5 +1231,92 @@ class DatabaseService {
       }
     }
     return results;
+  }
+  // ==========================================
+  // Background Sync Helpers
+  // ==========================================
+  
+  /// Get list of translations that have not been synced (is_synced = 0)
+  /// Returns a joined list with source and target text.
+  static Future<List<Map<String, dynamic>>> getUnsyncedTranslations({int limit = 20}) async {
+    final db = await database;
+    
+    // Join translations with source and target language tables to get the actual text
+    // Note: We need to dynamically join based on lang code, but SQL doesn't support dynamic join table names easily in one go.
+    // However, since we store 'source_lang' and 'target_lang', we can't join in a single static SQL if languages vary.
+    // BUT, we can just fetch the 'translations' rows first, and then fetch texts.
+    // Given the volume (limit 20), this N+1 query is acceptable and safer than complex dynamic SQL.
+    
+    final rows = await db.query(
+      'translations',
+      where: 'is_synced = 0',
+      limit: limit,
+    );
+    
+    if (rows.isEmpty) return [];
+    
+    List<Map<String, dynamic>> results = [];
+    
+    for (var row in rows) {
+      try {
+        final sourceLang = row['source_lang'] as String;
+        final sourceId = row['source_id'] as int;
+        final targetLang = row['target_lang'] as String;
+        final targetId = row['target_id'] as int;
+        
+        // Fetch Source Text
+        final sourceRow = await db.query(
+          'lang_${sourceLang.replaceAll('-', '_')}',
+          columns: ['text'],
+          where: 'id = ?',
+          whereArgs: [sourceId],
+          limit: 1,
+        );
+        
+        // Fetch Target Text
+        final targetRow = await db.query(
+          'lang_${targetLang.replaceAll('-', '_')}',
+          columns: ['text'],
+          where: 'id = ?',
+          whereArgs: [targetId],
+          limit: 1,
+        );
+        
+        if (sourceRow.isNotEmpty && targetRow.isNotEmpty) {
+           results.add({
+             'id': row['id'], // Translation ID (link)
+             'source_lang': sourceLang,
+             'source_text': sourceRow.first['text'],
+             'target_lang': targetLang,
+             'target_text': targetRow.first['text'],
+             'note': row['note'],
+             'dialogue_id': row['dialogue_id'],
+             'speaker': row['speaker'],
+             'sequence_order': row['sequence_order'],
+           });
+        }
+      } catch (e) {
+        print('[DB] Error fetching details for sync row ${row['id']}: $e');
+      }
+    }
+    
+    return results;
+  }
+
+  /// Mark a list of translation IDs as synced
+  static Future<void> markTranslationsAsSynced(List<int> ids) async {
+    final db = await database;
+    
+    await db.transaction((txn) async {
+       for (var id in ids) {
+         await txn.update(
+           'translations',
+           {'is_synced': 1},
+           where: 'id = ?',
+           whereArgs: [id],
+         );
+       }
+    });
+    print('[DB] Marked ${ids.length} records as synced.');
   }
 }
