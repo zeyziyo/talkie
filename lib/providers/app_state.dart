@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:file_picker/file_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async'; // Added for Timer
+import 'package:sqflite/sqflite.dart'; // Added for Database/Transaction types
 import '../services/database_service.dart';
 import '../services/translation_service.dart';
 import '../services/speech_service.dart';
@@ -14,6 +15,7 @@ import '../models/user_library.dart';
 import '../models/dialogue_group.dart';
 
 import '../services/supabase_service.dart';
+import 'package:supabase_flutter/supabase_flutter.dart'; // Added for SupabaseClient types
 import 'package:flutter/widgets.dart';
 import '../l10n/app_localizations.dart';
 
@@ -633,11 +635,10 @@ class AppState extends ChangeNotifier {
   }
   
   /// Helper to save to Supabase (Extracted for Dual Write)
-  /// Helper to save to Supabase (Extracted for Dual Write)
   Future<void> _saveToSupabase({
-    String? dialogueId, 
-    String? speaker, 
-    int? sequenceOrder,
+    required String? dialogueId, 
+    required String speaker, 
+    required int sequenceOrder,
     String? pos,
     String? formType,
     String? root,
@@ -651,26 +652,17 @@ class AppState extends ChangeNotifier {
         
         // 1. Save Source
         await SupabaseService.client.from('sentences').insert({
-          'lang_code': _sourceLang,
-          'text': _sourceText,
-          'group_id': timestamp,
-          'pos': pos, // Added for Phase 13
-          'form_type': formType, // Added for Phase 13
-          'root': root, // Added for Phase 13
-          'author_id': authorId,
-          'status': 'approved',
-        });
-
-        // 2. Save Target
-        await SupabaseService.client.from('sentences').insert({
           'lang_code': _targetLang,
           'text': _translatedText,
           'group_id': timestamp,
+          'pos': pos,
+          'form_type': formType,
+          'root': root,
           'author_id': authorId,
           'status': 'approved',
         });
 
-        // 3. Add to User Library (With Dialogue Metadata)
+        // 2. Add to User Library (With Dialogue Metadata)
         await SupabaseService.client.from('user_library').insert({
           'user_id': authorId,
           'group_id': timestamp,
@@ -792,7 +784,7 @@ class AppState extends ChangeNotifier {
   }
 
   /// 동일 텍스트 아이디 조회 헬퍼
-  Future<int> _getUnifiedId(dynamic txn, String table, String text, String lang, String? note) async {
+  Future<int> _getUnifiedId(Transaction txn, String table, String text, String lang, String? note) async {
     final results = await txn.query(table, columns: ['id'], 
         where: 'text = ? AND lang_code = ? AND IFNULL(note, "") = ?', 
         whereArgs: [text, lang, note ?? ""]);
