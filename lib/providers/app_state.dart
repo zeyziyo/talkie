@@ -93,10 +93,14 @@ class AppState extends ChangeNotifier {
   // Phase 11: Dialogue / Chat State
   String? _activeDialogueId;
   String? _activeDialogueTitle;
+  String? _activeDialogueLocation;
   String? _activePersona; // Tracks current chat partner
   int _currentDialogueSequence = 0;
   List<DialogueGroup> _dialogueGroups = [];
   
+  List<String> _suggestedTitles = [];
+  bool _isFetchingTitles = false;
+  String _currentChatLocation = '';
 
 
   // Getters
@@ -157,7 +161,11 @@ class AppState extends ChangeNotifier {
   // Phase 11 Getters
   String? get activeDialogueId => _activeDialogueId;
   String? get activeDialogueTitle => _activeDialogueTitle;
+  String? get activeDialogueLocation => _activeDialogueLocation;
   String? get activePersona => _activePersona;
+  List<String> get suggestedTitles => _suggestedTitles;
+  bool get isFetchingTitles => _isFetchingTitles;
+  String get currentChatLocation => _currentChatLocation;
   
   // Usage / Quota Methods
   Future<void> checkUsageLimit() async => await _usageService.checkLimitOrThrow();
@@ -2100,6 +2108,7 @@ class AppState extends ChangeNotifier {
     _activeDialogueId = group.id;
     _activeDialogueTitle = group.title;
     _activePersona = group.persona;
+    _activeDialogueLocation = group.location;
     
     // Get max sequence order from local DB
     final records = await DatabaseService.getRecordsByDialogueId(group.id);
@@ -2107,6 +2116,84 @@ class AppState extends ChangeNotifier {
       _currentDialogueSequence = records.map((r) => (r['sequence_order'] as int? ?? 0)).reduce((a, b) => a > b ? a : b);
     } else {
       _currentDialogueSequence = 0;
+    }
+    
+    notifyListeners();
+  }
+
+  void setCurrentChatLocation(String loc) {
+    _currentChatLocation = loc;
+    notifyListeners();
+  }
+
+  /// Request AI to suggest titles based on current chat history
+  Future<void> fetchChatTitleSuggestions() async {
+    if (_activeDialogueId == null) return;
+    
+    _isFetchingTitles = true;
+    _suggestedTitles = [];
+    notifyListeners();
+    
+    try {
+      final records = await DatabaseService.getRecordsByDialogueId(_activeDialogueId!);
+      
+      // Convert to format required by service
+      final history = records.map((r) => {
+        'source_text': r['source_text'],
+        'target_text': r['target_text'],
+        'speaker': r['speaker'],
+      }).toList();
+      
+      _suggestedTitles = await TranslationService.generateTitleSuggestions(history);
+      
+      // Fallback: Default titles if AI fails
+      if (_suggestedTitles.isEmpty) {
+        final dateStr = DateTime.now().toString().split('.')[0];
+        _suggestedTitles = ["Conversation $dateStr", "Quick Chat", "Language Practice"];
+      }
+    } catch (e) {
+      debugPrint('[AppState] Error fetching title suggestions: $e');
+    } finally {
+      _isFetchingTitles = false;
+      notifyListeners();
+    }
+  }
+
+  /// Finalize dialogue with user-defined title and location
+  Future<void> saveDialogueProgress(String title, String location) async {
+    if (_activeDialogueId == null) return;
+    
+    _activeDialogueTitle = title;
+    _activeDialogueLocation = location;
+    
+    try {
+      // 1. Update Local SQLite
+      await DatabaseService.insertDialogueGroup(
+        id: _activeDialogueId!,
+        title: title,
+        location: location,
+        persona: _activePersona,
+        createdAt: DateTime.now().toIso8601String(), // Or keep original
+        userId: SupabaseService.client.auth.currentUser?.id,
+      );
+      
+      // 2. Update Supabase
+      await SupabaseService.updateDialogueTitle(_activeDialogueId!, title);
+      // Note: location support in Supabase dialogue_groups table should be ensured.
+      try {
+        await SupabaseService.client.from('dialogue_groups').update({
+          'location': location,
+        }).eq('id', _activeDialogueId!);
+      } catch (e) {
+        debugPrint('[AppState] Supabase location sync failed: $e');
+      }
+      
+      // 3. Refresh lists
+      await loadStudyMaterials();
+      await loadDialogueGroups();
+      
+    } catch (e) {
+      debugPrint('[AppState] Error saving dialogue progress: $e');
     }
     
     notifyListeners();

@@ -85,6 +85,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Sijainti';
+
+  @override
   String get partner => 'Partner';
 
   @override

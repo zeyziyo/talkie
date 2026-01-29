@@ -82,4 +82,15 @@ class TranslationService {
       return {'text': '', 'isValid': false, 'reason': 'Error: $e'};
     }
   }
+  /// Request title suggestions for a conversation from AI
+  static Future<List<String>> generateTitleSuggestions(List<Map<String, dynamic>> history) async {
+    if (history.isEmpty) return [];
+    
+    try {
+      return await SupabaseService.suggestTitles(history: history);
+    } catch (e) {
+      print('[Translation] Error generating title suggestions: $e');
+      return [];
+    }
+  }
 }

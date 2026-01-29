@@ -23,7 +23,7 @@ class DatabaseService {
     
     return await openDatabase(
       path,
-      version: 3, // Upgraded for Phase 12 (Sync)
+      version: 4, // Upgraded for Phase 11 Enhancements (Location)
       onCreate: (db, version) async {
         await _createBaseTables(db);
         await _ensureDefaultMaterial(db);
@@ -53,6 +53,12 @@ class DatabaseService {
           // Add is_synced column for background synchronization
           await db.execute('ALTER TABLE translations ADD COLUMN is_synced INTEGER DEFAULT 0');
           print('[DB] Upgraded to version 3: Sync support added');
+        }
+
+        if (oldVersion < 4) {
+          // Add location column to dialogue_groups
+          await db.execute('ALTER TABLE dialogue_groups ADD COLUMN location TEXT');
+          print('[DB] Upgraded to version 4: Location support added');
         }
       },
     );
@@ -86,6 +92,7 @@ class DatabaseService {
         user_id TEXT,
         title TEXT,
         persona TEXT,
+        location TEXT,
         created_at TEXT NOT NULL
       )
     ''');
@@ -176,12 +183,14 @@ class DatabaseService {
   }
   
   /// 언어 테이블에 텍스트 삽입 (중복 시 기존 ID 반환)
-  static Future<int> insertLanguageRecord(String langCode, String text, {Transaction? txn}) async {
+  static Future<int> insertLanguageRecord(String langCode, String text, {Transaction? txn, bool skipTableCheck = false}) async {
     final db = txn ?? await database;
     final tableName = 'lang_$langCode'.replaceAll('-', '_');
     
-    // 테이블이 없으면 생성
-    await createLanguageTable(langCode);
+    // 테이블이 없으면 생성 (배치 작업 시 건너뛰어 성능 향상)
+    if (!skipTableCheck) {
+      await createLanguageTable(langCode);
+    }
     
     // 중복 검사: 동일한 텍스트가 이미 존재하는지 확인 (Index 활용을 위해 COLLATE NOCASE 사용)
     final existing = await db.query(
@@ -879,8 +888,13 @@ class DatabaseService {
   ) async {
     try {
       final data = json.decode(jsonContent) as Map<String, dynamic>;
-      final sourceLang = data['source_language'] as String;
-      final targetLang = data['target_language'] as String;
+      
+      // 언어 이름(Korean)을 코드(ko)로 매핑
+      final rawSourceLang = data['source_language'] as String;
+      final rawTargetLang = data['target_language'] as String;
+      final sourceLang = _mapLanguageToCode(rawSourceLang);
+      final targetLang = _mapLanguageToCode(rawTargetLang);
+      
       final subject = data['subject'] as String? ?? 'Unknown';
       final source = data['source'] as String? ?? 'Unknown';
       final fileCreatedAt = data['created_at'] as String? ?? DateTime.now().toIso8601String();
@@ -896,7 +910,15 @@ class DatabaseService {
          List<String> errors = [];
          int materialId = 0;
          
-         // 1. Create study material metadata
+         // 1. 테이블 미리 생성 (루프 밖에서 1번만 수행하여 성능 최적화)
+         await createLanguageTable(sourceLang);
+         await createLanguageTable(targetLang);
+
+         // 2. 인메모리 캐시 (파일 내 중복 단어 처리 최적화)
+         final Map<String, int> sourceCache = {};
+         final Map<String, int> targetCache = {};
+
+         // 3. Create study material metadata
          materialId = await createStudyMaterial(
            subject: subject,
            source: source,
@@ -918,13 +940,25 @@ class DatabaseService {
               continue;
             }
             
-            // 2. Insert to source language table
-            final sourceId = await insertLanguageRecord(sourceLang, sourceText, txn: txn);
+            // 4. Insert to source language table (Cache check first)
+            int sourceId;
+            if (sourceCache.containsKey(sourceText)) {
+              sourceId = sourceCache[sourceText]!;
+            } else {
+              sourceId = await insertLanguageRecord(sourceLang, sourceText, txn: txn, skipTableCheck: true);
+              sourceCache[sourceText] = sourceId;
+            }
             
-            // 3. Insert to target language table
-            final targetId = await insertLanguageRecord(targetLang, targetText, txn: txn);
+            // 5. Insert to target language table (Cache check first)
+            int targetId;
+            if (targetCache.containsKey(targetText)) {
+              targetId = targetCache[targetText]!;
+            } else {
+              targetId = await insertLanguageRecord(targetLang, targetText, txn: txn, skipTableCheck: true);
+              targetCache[targetText] = targetId;
+            }
             
-            // 4. Create translation link with material_id
+            // 6. Create translation link with material_id
             await saveTranslationLinkWithMaterial(
               sourceLang: sourceLang,
               sourceId: sourceId,
@@ -1030,11 +1064,11 @@ class DatabaseService {
     print('[DB] Translation link with material saved: $sourceLang($sourceId) -> $targetLang($targetId), material_id=$materialId [Type: $type]');
   }
   
-  /// Get all study materials with type counts
+  /// Get all study materials with type counts (Includes Dialogue Groups as materials)
   static Future<List<Map<String, dynamic>>> getAllStudyMaterials() async {
     final db = await database;
     
-    // Query with subqueries to count words and sentences for each material
+    // 1. Get Regular Study Materials
     final materials = await db.rawQuery('''
       SELECT m.*, 
         (SELECT COUNT(*) FROM translations t WHERE t.material_id = m.id AND (t.type = 'word' OR t.type IS NULL)) as word_count,
@@ -1043,8 +1077,36 @@ class DatabaseService {
       ORDER BY m.imported_at DESC
     ''');
     
-    print('[DB] Retrieved ${materials.length} study materials with counts');
-    return materials;
+    // 2. Get Dialogue Groups
+    final dialogues = await db.rawQuery('''
+      SELECT d.*,
+        (SELECT COUNT(*) FROM translations t WHERE t.dialogue_id = d.id AND (t.type = 'word' OR t.type IS NULL)) as word_count,
+        (SELECT COUNT(*) FROM translations t WHERE t.dialogue_id = d.id AND t.type = 'sentence') as sentence_count
+      FROM dialogue_groups d
+      ORDER BY d.created_at DESC
+    ''');
+    
+    final List<Map<String, dynamic>> result = materials.map((m) => Map<String, dynamic>.from(m)).toList();
+    
+    // Transform Dialogues into Material format and add to list
+    for (var d in dialogues) {
+      result.add({
+        'id': d['id'], // String UUID
+        'subject': d['title'] ?? 'Conversation',
+        'source': d['persona'] ?? 'AI Chat',
+        'source_language': 'auto', 
+        'target_language': 'auto',
+        'created_at': d['created_at'],
+        'imported_at': d['created_at'],
+        'location': d['location'],
+        'word_count': d['word_count'],
+        'sentence_count': d['sentence_count'],
+        'is_dialogue': 1,
+      });
+    }
+    
+    print('[DB] Retrieved ${result.length} study items (Materials + Dialogues)');
+    return result;
   }
   
   /// Get study material by ID
@@ -1065,13 +1127,17 @@ class DatabaseService {
     return materials.first;
   }
   
-  /// Get all translations for a specific study material
-  /// Optionally filter by source and target language
+  /// Get all translations for a specific study material (Supports both int Material ID and String Dialogue ID)
   static Future<List<Map<String, dynamic>>> getRecordsByMaterialId(
-    int materialId, {
+    dynamic materialId, {
     String? sourceLang,
     String? targetLang,
   }) async {
+    if (materialId is String) {
+      // It's a dialogue ID
+      return getRecordsByDialogueId(materialId);
+    }
+    // Else it's a regular material ID
     final db = await database;
     
     // Build query with optional language filters
@@ -1163,6 +1229,7 @@ class DatabaseService {
     String? userId,
     String? title,
     String? persona,
+    String? location,
     required String createdAt,
   }) async {
     final db = await database;
@@ -1173,11 +1240,12 @@ class DatabaseService {
         'user_id': userId,
         'title': title,
         'persona': persona,
+        'location': location,
         'created_at': createdAt,
       },
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
-    print('[DB] Dialogue group saved: $id ($title)');
+    print('[DB] Dialogue group saved: $id ($title, Location: $location)');
   }
 
   /// Get all dialogue groups for a user
@@ -1323,4 +1391,56 @@ class DatabaseService {
     });
     print('[DB] Marked ${ids.length} records as synced.');
   }
+
+  /// 언어 이름을 ISO 코드(ko, en 등)로 변환
+  static String _mapLanguageToCode(String name) {
+    final lowerName = name.toLowerCase().trim();
+    switch (lowerName) {
+      case 'korean': return 'ko';
+      case 'english': return 'en';
+      case 'japanese': return 'ja';
+      case 'chinese (simplified)': return 'zh-CN';
+      case 'chinese (traditional)': return 'zh-TW';
+      case 'spanish': return 'es';
+      case 'french': return 'fr';
+      case 'german': return 'de';
+      case 'russian': return 'ru';
+      case 'vietnamese': return 'vi';
+      case 'indonesian': return 'id';
+      case 'thai': return 'th';
+      case 'portuguese': return 'pt';
+      case 'italian': return 'it';
+      case 'turkish': return 'tr';
+      case 'arabic': return 'ar';
+      case 'hindi': return 'hi';
+      case 'bengali': return 'bn';
+      case 'urdu': return 'ur';
+      case 'malay': return 'ms';
+      case 'filipino': return 'fil';
+      case 'polish': return 'pl';
+      case 'ukrainian': return 'uk';
+      case 'dutch': return 'nl';
+      case 'swedish': return 'sv';
+      case 'danish': return 'da';
+      case 'finnish': return 'fi';
+      case 'norwegian': return 'no';
+      case 'hungarian': return 'hu';
+      case 'czech': return 'cs';
+      case 'romanian': return 'ro';
+      case 'greek': return 'el';
+      case 'hebrew': return 'he';
+      case 'persian': return 'fa';
+      case 'tamil': return 'ta';
+      case 'telugu': return 'te';
+      case 'marathi': return 'mr';
+      case 'gujarati': return 'gu';
+      case 'kannada': return 'kn';
+      case 'malayalam': return 'ml';
+      case 'punjabi': return 'pa';
+      case 'swahili': return 'sw';
+      case 'afrikaans': return 'af';
+      default: return name; // 이미 코드 형식이거나 알 수 없는 경우 그대로 반환
+    }
+  }
 }
+

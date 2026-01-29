@@ -87,6 +87,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'இடம்';
+
+  @override
   String get partner => 'Partner';
 
   @override

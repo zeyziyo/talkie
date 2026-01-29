@@ -312,6 +312,12 @@ abstract class AppLocalizations {
   /// **'현재 위치'**
   String get currentLocation;
 
+  /// No description provided for @location.
+  ///
+  /// In ko, this message translates to:
+  /// **'위치'**
+  String get location;
+
   /// Label for partner speaker
   ///
   /// In ko, this message translates to:

@@ -87,6 +87,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Vị trí';
+
+  @override
   String get partner => 'Partner';
 
   @override

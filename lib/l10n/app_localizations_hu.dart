@@ -86,6 +86,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Helyszín';
+
+  @override
   String get partner => 'Partner';
 
   @override

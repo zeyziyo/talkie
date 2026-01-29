@@ -12,6 +12,8 @@
   "@switchToPartner": {"description": "Tooltip for switching to Partner mode"},
   "currentLocation": "Current Location",
   "@currentLocation": {"description": "Label for GPS location"},
+  "location": "Location",
+  "@location": {"description": "Label for location field in chat save dialog"},
   "partner": "Partner",
   "@partner": {"description": "Label for partner speaker"},
   "me": "Me",

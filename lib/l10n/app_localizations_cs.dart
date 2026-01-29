@@ -84,6 +84,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Poloha';
+
+  @override
   String get partner => 'Partner';
 
   @override

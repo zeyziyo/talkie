@@ -85,6 +85,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Konum';
+
+  @override
   String get partner => 'Partner';
 
   @override

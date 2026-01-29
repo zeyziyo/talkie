@@ -22,6 +22,7 @@
   "switchToAi": "AI 모드로 전환",
   "switchToPartner": "파트너 모드로 전환",
   "currentLocation": "현재 위치",
+  "location": "위치",
   "partner": "파트너",
   "me": "나",
   "currentMaterialLabel": "현재 선택 자료집:",

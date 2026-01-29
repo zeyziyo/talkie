@@ -467,7 +467,7 @@
 
                 // Create Final Object
                 const finalJson = {
-                    subject: `${subjectName} (${sourceLang}-${targetLang})`,
+                    subject: sourceData.subject || subjectName,
                     source_language: sourceLang,
                     target_language: targetLang,
                     default_type: "sentence",

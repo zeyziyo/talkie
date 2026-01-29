@@ -71,25 +71,32 @@ class _ChatScreenState extends State<ChatScreen> {
       // 1. Try Last Known Position (Instant)
       Position? position = await Geolocator.getLastKnownPosition();
       
-      // 2. If null, try Current Position with Timeout (5s) and Medium Accuracy
+      // 2. If null or old, try Current Position with Timeout (3s)
       if (position == null) {
         try {
           position = await Geolocator.getCurrentPosition(
             desiredAccuracy: LocationAccuracy.medium,
-            timeLimit: const Duration(seconds: 5),
+            timeLimit: const Duration(seconds: 3),
           );
         } catch (e) {
           debugPrint('GPS Timeout or Error: $e');
-          return ''; // Fallback to empty if timeout
         }
       }
+
+      if (position == null) return '';
 
       final placemarks = await placemarkFromCoordinates(position.latitude, position.longitude);
       
       if (placemarks.isNotEmpty) {
         final place = placemarks.first;
-        // e.g. Seoul, Korea
-        return '${place.locality ?? place.subAdministrativeArea}, ${place.country}';
+        // e.g. Gangnam, Seoul
+        final city = place.locality ?? place.administrativeArea ?? '';
+        final sub = place.subLocality ?? place.thoroughfare ?? '';
+        
+        if (sub.isNotEmpty && city.isNotEmpty) {
+          return '$sub, $city';
+        }
+        return city.isNotEmpty ? city : place.country ?? '';
       }
     } catch (e) {
       debugPrint('GPS Error: $e');
@@ -125,12 +132,12 @@ class _ChatScreenState extends State<ChatScreen> {
         showDialog(
           context: context,
           builder: (context) => AlertDialog(
-            title: Text(l10n.usageLimitTitle ?? 'Limit Reached'),
+            title: Text(l10n.usageLimitTitle),
             content: Text(e.toString()),
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(context),
-                child: Text(l10n.confirm ?? 'OK'),
+                child: Text(l10n.confirm),
               ),
             ],
           ),
@@ -144,7 +151,7 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() {
        _isLoading = true;
        _messages.add({
-        'speaker': isPartnerMessage ? (l10n.partner ?? 'Partner') : 'User',
+        'speaker': isPartnerMessage ? l10n.partner : 'User',
         'source_text': text, // Primary text (Original)
         'target_text': '',   // Translated
       });
@@ -227,7 +234,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> _processAiChat(AppState appState, String userText, String userTranslation, AppLocalizations l10n) async {
       // Get GPS Context
       final location = await _getLocationString(l10n);
-      final currentLocationLabel = l10n.currentLocation ?? 'Current Location';
+      final currentLocationLabel = l10n.currentLocation;
       final contextString = '${appState.activeDialogueTitle ?? "None"}. ${location.isNotEmpty ? "$currentLocationLabel: $location" : ""}';
 
       // Build History
@@ -280,73 +287,126 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> _endChat(AppLocalizations l10n) async {
     final appState = Provider.of<AppState>(context, listen: false);
     
-    // Auto-generate title with Date/Time/Location if empty or default
-    String currentTitle = appState.activeDialogueTitle ?? '';
+    // 1. Prepare Initial Values
+    final now = DateTime.now();
+    final dateStr = DateFormat('MM/dd HH:mm').format(now);
     
-    // If it's still default, let's pre-fill with something useful
-    if (currentTitle == 'New Conversation' || currentTitle == l10n.chatUntitled) {
-       final now = DateTime.now();
-       final dateStr = DateFormat('MM/dd HH:mm').format(now);
-       final location = await _getLocationString(l10n);
-       currentTitle = location.isNotEmpty ? '$location ($dateStr)' : 'Chat $dateStr';
-    }
-
-    final controller = TextEditingController(text: currentTitle);
+    // Fetch location once for pre-filling
+    final detectedLocation = await _getLocationString(l10n);
+    final defaultTitle = detectedLocation.isNotEmpty ? '$detectedLocation ($dateStr)' : 'Chat $dateStr';
+    
+    final titleController = TextEditingController(text: appState.activeDialogueTitle ?? defaultTitle);
+    final locationController = TextEditingController(text: detectedLocation);
 
     if (!mounted) return;
 
+    // 2. Trigger Background Fetch for AI Suggestions
+    appState.fetchChatTitleSuggestions();
+
     return showDialog(
       context: context,
-      builder: (dialogContext) => AlertDialog(
-        title: Text(l10n.chatEndTitle),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(l10n.chatEndMessage),
-            const SizedBox(height: 16),
-            TextField(
-              controller: controller,
-              decoration: InputDecoration(
-                labelText: l10n.contextTagHint, 
-                border: const OutlineInputBorder(),
-              ),
-              autofocus: true,
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(dialogContext),
-            child: Text(l10n.cancel),
-          ),
-          ElevatedButton(
-            onPressed: () async {
-              try {
-                final newTitle = controller.text.trim();
-                
-                if (newTitle.isNotEmpty && appState.activeDialogueId != null) {
-                  await SupabaseService.updateDialogueTitle(appState.activeDialogueId!, newTitle);
-                }
-                
-                // IMPORTANT: Refresh List explicitly to ensure visibility
-                await appState.loadDialogueGroups();
-
-                if (context.mounted) {
-                   Navigator.of(dialogContext).pop(); 
-                   Navigator.of(context).pop(); 
-                }
-              } catch (e) {
-                if (context.mounted) {
-                   ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Error: $e')),
-                   );
-                }
-              }
-            },
-            child: Text(l10n.chatSaveAndExit),
-          ),
-        ],
+      barrierDismissible: false,
+      builder: (dialogContext) => StatefulBuilder(
+        builder: (context, setDialogState) {
+          return Consumer<AppState>(
+            builder: (context, state, child) {
+              return AlertDialog(
+                title: Text(l10n.chatEndTitle),
+                content: SingleChildScrollView(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(l10n.chatEndMessage),
+                      const SizedBox(height: 20),
+                      
+                      // Title Input
+                      TextField(
+                        controller: titleController,
+                        decoration: InputDecoration(
+                          labelText: l10n.subject ?? 'Title',
+                          hintText: l10n.chatUntitled,
+                          prefixIcon: const Icon(Icons.title),
+                          border: const OutlineInputBorder(),
+                        ),
+                      ),
+                      
+                      // AI Suggestions Area
+                      if (state.isFetchingTitles)
+                        const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 8),
+                          child: Center(child: SizedBox(height: 20, width: 20, child: CircularProgressIndicator(strokeWidth: 2))),
+                        )
+                      else if (state.suggestedTitles.isNotEmpty)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8),
+                          child: Wrap(
+                            spacing: 8,
+                            children: state.suggestedTitles.map((suggestion) => ActionChip(
+                              label: Text(suggestion, style: const TextStyle(fontSize: 12)),
+                              onPressed: () {
+                                setDialogState(() {
+                                  titleController.text = suggestion;
+                                });
+                              },
+                              backgroundColor: Colors.blue.shade50,
+                            )).toList(),
+                          ),
+                        ),
+                        
+                      const SizedBox(height: 16),
+                      
+                      // Location Input
+                      TextField(
+                        controller: locationController,
+                        decoration: InputDecoration(
+                          labelText: l10n.location,
+                          prefixIcon: const Icon(Icons.location_on),
+                          suffixIcon: IconButton(
+                            icon: const Icon(Icons.my_location),
+                            onPressed: () async {
+                              final loc = await _getLocationString(l10n);
+                              setDialogState(() {
+                                locationController.text = loc;
+                              });
+                            },
+                          ),
+                          border: const OutlineInputBorder(),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                actions: [
+                  TextButton(
+                    onPressed: () => Navigator.pop(dialogContext),
+                    child: Text(l10n.cancel),
+                  ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFF667eea),
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () async {
+                      final finalTitle = titleController.text.trim();
+                      final finalLocation = locationController.text.trim();
+                      
+                      if (finalTitle.isEmpty) return;
+                      
+                      await state.saveDialogueProgress(finalTitle, finalLocation);
+                      
+                      if (context.mounted) {
+                        Navigator.of(dialogContext).pop(); 
+                        Navigator.of(context).pop(); 
+                      }
+                    },
+                    child: Text(l10n.chatSaveAndExit),
+                  ),
+                ],
+              );
+            }
+          );
+        },
       ),
     );
   }
@@ -431,7 +491,7 @@ class _ChatScreenState extends State<ChatScreen> {
             Text(appState.activeDialogueTitle ?? l10n.chatAiChat, style: const TextStyle(fontSize: 16)),
             if (_isPartnerMode)
                Text(
-                 '${l10n.partnerMode ?? "Partner Mode"}: ${l10n.manual ?? "Manual"}', 
+                 '${l10n.partnerMode}: ${l10n.manual}', 
                  style: const TextStyle(fontSize: 12, color: Colors.white70)
                ),
           ],
@@ -442,7 +502,7 @@ class _ChatScreenState extends State<ChatScreen> {
           // Partner Mode Toggle
           IconButton(
             icon: Icon(_isPartnerMode ? Icons.person : Icons.smart_toy),
-            tooltip: _isPartnerMode ? (l10n.switchToAi ?? 'Switch to AI') : (l10n.switchToPartner ?? 'Switch to Partner'),
+            tooltip: _isPartnerMode ? l10n.switchToAi : l10n.switchToPartner,
             onPressed: () {
               setState(() {
                 _isPartnerMode = !_isPartnerMode;
@@ -484,7 +544,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget _buildMessageBubble(Map<String, dynamic> msg, AppState appState, AppLocalizations l10n) {
     final speaker = msg['speaker'];
     final isUser = speaker == 'User';
-    final isPartner = speaker == (l10n.partner ?? 'Partner');
+    final isPartner = speaker == l10n.partner;
     
     // Layout alignment: User Right, AI/Partner Left
     final alignment = isUser ? Alignment.centerRight : Alignment.centerLeft;
@@ -551,11 +611,27 @@ class _ChatScreenState extends State<ChatScreen> {
                         ),
                       ),
                       if (primaryText.isNotEmpty)
-                        IconButton(
-                          icon: const Icon(Icons.volume_up, size: 20, color: Colors.grey),
-                          onPressed: () => _speak(primaryText, primaryLang),
-                          constraints: const BoxConstraints(),
-                          padding: const EdgeInsets.only(left: 4),
+                        ValueListenableBuilder<String?>(
+                          valueListenable: _speechService.currentlySpeakingText,
+                          builder: (context, speakingText, _) {
+                            final isSpeaking = speakingText == primaryText;
+                            return IconButton(
+                              icon: Icon(
+                                isSpeaking ? Icons.stop_circle : Icons.volume_up,
+                                size: 20,
+                                color: isSpeaking ? Colors.red : Colors.grey,
+                              ),
+                              onPressed: () {
+                                if (isSpeaking) {
+                                  _speechService.stopSpeaking();
+                                } else {
+                                  _speak(primaryText, primaryLang);
+                                }
+                              },
+                              constraints: const BoxConstraints(),
+                              padding: const EdgeInsets.only(left: 4),
+                            );
+                          },
                         ),
                     ],
                   ),
@@ -581,11 +657,27 @@ class _ChatScreenState extends State<ChatScreen> {
                                   ),
                                 ),
                               ),
-                              IconButton(
-                                icon: const Icon(Icons.volume_up, size: 18, color: Colors.grey),
-                                onPressed: () => _speak(secondaryText, secondaryLang),
-                                constraints: const BoxConstraints(),
-                                padding: const EdgeInsets.only(left: 4),
+                              ValueListenableBuilder<String?>(
+                                valueListenable: _speechService.currentlySpeakingText,
+                                builder: (context, speakingText, _) {
+                                  final isSpeaking = speakingText == secondaryText;
+                                  return IconButton(
+                                    icon: Icon(
+                                      isSpeaking ? Icons.stop_circle : Icons.volume_up,
+                                      size: 18,
+                                      color: isSpeaking ? Colors.red : Colors.grey,
+                                    ),
+                                    onPressed: () {
+                                      if (isSpeaking) {
+                                        _speechService.stopSpeaking();
+                                      } else {
+                                        _speak(secondaryText, secondaryLang);
+                                      }
+                                    },
+                                    constraints: const BoxConstraints(),
+                                    padding: const EdgeInsets.only(left: 4),
+                                  );
+                                },
                               ),
                             ],
                           ),
@@ -623,7 +715,7 @@ class _ChatScreenState extends State<ChatScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                   Text(l10n.speaker ?? 'Speaker: '),
+                   Text(l10n.speaker),
                    Switch(
                      value: _isPartnerTurn,
                      activeColor: Colors.teal,
@@ -632,7 +724,7 @@ class _ChatScreenState extends State<ChatScreen> {
                      },
                    ),
                    Text(
-                     _isPartnerTurn ? (l10n.partner ?? 'Partner') : (l10n.me ?? 'Me'),
+                     _isPartnerTurn ? l10n.partner : l10n.me,
                      style: TextStyle(
                        fontWeight: FontWeight.bold,
                        color: _isPartnerTurn ? Colors.teal : Colors.blue,
@@ -663,7 +755,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   controller: _textController,
                   decoration: InputDecoration(
                     hintText: _isPartnerMode 
-                        ? (_isPartnerTurn ? '${l10n.partner ?? "Partner"} (${appState.targetLang})...' : '${l10n.me ?? "Me"} (${appState.sourceLang})...')
+                        ? (_isPartnerTurn ? '${l10n.partner} (${appState.targetLang})...' : '${l10n.me} (${appState.sourceLang})...')
                         : l10n.chatTypeHint,
                     filled: true,
                     fillColor: Colors.white,

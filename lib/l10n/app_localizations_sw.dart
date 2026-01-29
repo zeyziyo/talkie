@@ -85,6 +85,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Mahali';
+
+  @override
   String get partner => 'Partner';
 
   @override

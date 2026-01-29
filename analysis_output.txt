@@ -1,43 +1,28 @@
-Resolving dependencies...
-Downloading packages...
-  app_links 6.4.1 (7.0.0 available)
-  audio_session 0.1.25 (0.2.2 available)
-  characters 1.4.0 (1.4.1 available)
-  ffi 2.1.4 (2.1.5 available)
-  file_picker 8.3.7 (10.3.8 available)
-  flutter_launcher_icons 0.13.1 (0.14.4 available)
-  flutter_tts 4.2.3 (4.2.5 available)
-  matcher 0.12.17 (0.12.18 available)
-  material_color_utilities 0.11.1 (0.13.0 available)
-  meta 1.17.0 (1.18.0 available)
-  path_provider_foundation 2.5.1 (2.6.0 available)
-  permission_handler 11.4.0 (12.0.1 available)
-  permission_handler_android 12.1.0 (13.0.1 available)
-  shared_preferences_android 2.4.18 (2.4.20 available)
-  sqlite3 3.1.2 (3.1.4 available)
-  test_api 0.7.7 (0.7.9 available)
-Got dependencies!
-16 packages have newer versions incompatible with dependency constraints.
-Try `flutter pub outdated` for more information.
 Analyzing talkie...                                             
 
 warning - The include file 'package:flutter_lints/flutter.yaml' in 'C:\FlutterProjects\talkie\analysis_options.yaml' can't be found when analyzing 'C:\FlutterProjects\talkie' - analysis_options.yaml:10:10 - include_file_not_found
-warning - This function has a nullable return type of 'FutureOr<String?>', but ends without returning a value - lib\providers\app_state.dart:434:19 - body_might_complete_normally_nullable
-warning - The left operand can't be null, so the right operand is never executed - lib\providers\app_state.dart:524:51 - dead_null_aware_expression
-warning - The left operand can't be null, so the right operand is never executed - lib\providers\app_state.dart:527:52 - dead_null_aware_expression
-warning - The left operand can't be null, so the right operand is never executed - lib\providers\app_state.dart:530:55 - dead_null_aware_expression
-warning - The left operand can't be null, so the right operand is never executed - lib\providers\app_state.dart:542:55 - dead_null_aware_expression
-  error - The getter 'chatEndTitle' isn't defined for the type 'AppLocalizations' - lib\screens\chat_screen.dart:145:26 - undefined_getter
-  error - The getter 'chatEndMessage' isn't defined for the type 'AppLocalizations' - lib\screens\chat_screen.dart:150:23 - undefined_getter
-  error - The getter 'chatSaveAndExit' isn't defined for the type 'AppLocalizations' - lib\screens\chat_screen.dart:193:30 - undefined_getter
-  error - The named parameter 'localeId' isn't defined - lib\screens\chat_screen.dart:240:32 - undefined_named_parameter
-  error - The getter 'chatSaveAndExit' isn't defined for the type 'AppLocalizations' - lib\screens\chat_screen.dart:258:27 - undefined_getter
-warning - Unused import: 'package:flutter_dotenv/flutter_dotenv.dart' - lib\services\translation_service.dart:1:8 - unused_import
-warning - The declaration '_launchUrl' isn't referenced - lib\widgets\help_dialog.dart:315:16 - unused_element
-   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\widgets\mode1_widget.dart:285:50 - deprecated_member_use
-   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\mode1_widget.dart:458:45 - deprecated_member_use
-warning - The left operand can't be null, so the right operand is never executed - lib\widgets\mode1_widget.dart:619:81 - dead_null_aware_expression
-warning - The left operand can't be null, so the right operand is never executed - lib\widgets\mode1_widget.dart:624:87 - dead_null_aware_expression
-warning - The declaration '_showMaterialSelectionDialog' isn't referenced - lib\widgets\mode1_widget.dart:653:8 - unused_element
+warning - The value of the local variable 'slash' isn't used - find_bangs.dart:5:9 - unused_local_variable
+   info - 'desiredAccuracy' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\screens\chat_screen.dart:78:13 - deprecated_member_use
+   info - 'timeLimit' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\screens\chat_screen.dart:79:13 - deprecated_member_use
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:135:49 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:140:45 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:154:56 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:187:48 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:237:60 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:327:54 - dead_null_aware_expression
+  error - The getter 'location' isn't defined for the type 'AppLocalizations' - lib\screens\chat_screen.dart:363:43 - undefined_getter
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:494:41 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:494:75 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:505:59 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:505:102 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:547:51 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:718:41 - dead_null_aware_expression
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\screens\chat_screen.dart:721:22 - deprecated_member_use
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:727:56 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:727:81 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:758:64 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\chat_screen.dart:758:120 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\screens\home_screen.dart:149:22 - dead_null_aware_expression
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\widgets\mode1_widget.dart:331:50 - deprecated_member_use
+warning - The declaration '_buildToggleOption' isn't referenced - lib\widgets\mode1_widget.dart:779:10 - unused_element
 
-18 issues found. (ran in 1.9s)

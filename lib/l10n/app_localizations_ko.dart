@@ -82,6 +82,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get currentLocation => '현재 위치';
 
   @override
+  String get location => '위치';
+
+  @override
   String get partner => '파트너';
 
   @override

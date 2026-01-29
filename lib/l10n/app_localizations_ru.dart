@@ -87,6 +87,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Местоположение';
+
+  @override
   String get partner => 'Partner';
 
   @override

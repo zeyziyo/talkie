@@ -86,6 +86,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'ಸ್ಥಳ';
+
+  @override
   String get partner => 'Partner';
 
   @override

@@ -86,6 +86,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Plats';
+
+  @override
   String get partner => 'Partner';
 
   @override

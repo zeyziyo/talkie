@@ -85,6 +85,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Lokasyon';
+
+  @override
   String get partner => 'Partner';
 
   @override

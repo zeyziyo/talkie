@@ -40,6 +40,7 @@
   "@currentLocation": {
     "description": "Label for GPS location"
   },
+  "location": "Ubicación",
   "partner": "Partner",
   "@partner": {
     "description": "Label for partner speaker"

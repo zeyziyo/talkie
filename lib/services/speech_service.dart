@@ -1,10 +1,15 @@
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:audio_session/audio_session.dart';
+import 'package:flutter/material.dart';
 import 'dart:async';
 
 /// Speech service for STT and TTS across platforms
 class SpeechService {
+  static final SpeechService _instance = SpeechService._internal();
+  factory SpeechService() => _instance;
+  SpeechService._internal();
+
   final stt.SpeechToText _speechToText = stt.SpeechToText();
   final FlutterTts _flutterTts = FlutterTts();
   
@@ -12,6 +17,8 @@ class SpeechService {
   bool _isListening = false;
   bool _isRestarting = false; // Flag to prevent audio session reset during restart
   String _lastRecognizedText = '';
+  
+  final ValueNotifier<String?> currentlySpeakingText = ValueNotifier(null);
   
   // Stream for status events
   final _statusController = StreamController<String>.broadcast();
@@ -54,6 +61,25 @@ class SpeechService {
       await _flutterTts.setPitch(1.0);
       // Critical Fix: Wait for completion to ensure UI sync
       await _flutterTts.awaitSpeakCompletion(true);
+
+      // TTS Handlers for UI Sync
+      _flutterTts.setStartHandler(() {
+        // Note: FlutterTts doesn't always pass the text to the start handler
+        // but we can rely on our 'speak' method setting it.
+        // However, some platforms might not trigger this reliably.
+      });
+
+      _flutterTts.setCompletionHandler(() {
+        currentlySpeakingText.value = null;
+      });
+
+      _flutterTts.setCancelHandler(() {
+        currentlySpeakingText.value = null;
+      });
+
+      _flutterTts.setErrorHandler((msg) {
+        currentlySpeakingText.value = null;
+      });
       
       // Initial configuration
       await _configureForPlayback();
@@ -282,6 +308,7 @@ class SpeechService {
         // Small delay after configuration
         await Future.delayed(const Duration(milliseconds: 100)); // Increased delay slightly
 
+        currentlySpeakingText.value = text;
         await _flutterTts.speak(text);
         success = true;
       } catch (e) {

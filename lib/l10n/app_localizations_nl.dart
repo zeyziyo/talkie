@@ -87,6 +87,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Locatie';
+
+  @override
   String get partner => 'Partner';
 
   @override

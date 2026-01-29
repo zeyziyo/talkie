@@ -84,6 +84,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'مقام';
+
+  @override
   String get partner => 'Partner';
 
   @override

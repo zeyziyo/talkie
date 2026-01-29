@@ -85,6 +85,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'સ્થાન';
+
+  @override
   String get partner => 'Partner';
 
   @override

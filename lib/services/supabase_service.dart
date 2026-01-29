@@ -316,4 +316,22 @@ class SupabaseService {
       throw Exception('Chat Failed: $e');
     }
   }
+  /// Call 'suggest-titles' Edge Function
+  static Future<List<String>> suggestTitles({
+    required List<Map<String, dynamic>> history,
+  }) async {
+    try {
+      final response = await client.functions.invoke(
+        'suggest-titles',
+        body: {'history': history},
+      );
+      
+      final data = response.data as Map<String, dynamic>;
+      final titles = data['titles'] as List<dynamic>?;
+      return titles?.cast<String>() ?? [];
+    } catch (e) {
+      print('Supabase Suggest Titles Error: $e');
+      return []; // Fallback to empty list
+    }
+  }
 }

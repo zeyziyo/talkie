@@ -87,6 +87,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => 'Emplacement';
+
+  @override
   String get partner => 'Partner';
 
   @override

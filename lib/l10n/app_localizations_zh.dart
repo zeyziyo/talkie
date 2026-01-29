@@ -82,6 +82,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get currentLocation => 'Current Location';
 
   @override
+  String get location => '位置';
+
+  @override
   String get partner => 'Partner';
 
   @override
@@ -877,6 +880,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get currentLocation => 'Current Location';
+
+  @override
+  String get location => '位置';
 
   @override
   String get partner => 'Partner';
@@ -1676,6 +1682,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get currentLocation => 'Current Location';
+
+  @override
+  String get location => '位置';
 
   @override
   String get partner => 'Partner';
