@@ -1927,13 +1927,13 @@ class AppState extends ChangeNotifier {
       _statusMessage = 'Importing Entries...';
       notifyListeners();
       
-      final result = await DatabaseService.importFromJsonWithMetadata(jsonContent, fileName: fileName);
+      final importResult = await DatabaseService.importFromJsonWithMetadata(jsonContent, fileName: fileName);
       
       _statusMessage = 'Import complete';
       await loadStudyRecords(); // Reload user library to show new material
       notifyListeners();
       
-      return result;
+      return importResult;
       
     } catch (e) {
       return {'success': false, 'error': e.toString()};
