@@ -1,5 +1,69 @@
 {
   "@@locale": "da",
+  "helpTitle": "Hjælp & Guide",
+  "helpTabModes": "Tilstande",
+  "helpTabJson": "JSON Format",
+  "helpTabTour": "Tur",
+  "helpMode1Desc": "Talegenkendelse, oversættelse og lyt til resultat.",
+  "helpMode1Details": "• Stemme: Tryk mikrofon for start/stop\n• Tekst: Skriv direkte for at oversætte\n• Auto-Søg: Finder lignende sætninger\n• Oversæt: Knap for øjeblikkelig oversættelse\n• Lyt: Højttalerikon for TTS\n• Gem: Tilføjer til historik\n• Ryd: Nulstil alt",
+  "helpMode2Desc": "Gennemgå gemte sætninger med skjult oversættelse.",
+  "helpMode2Details": "• Vælg: Vælg sæt eller 'Alle'\n• Vend: 'Vis/Skjul' oversættelse\n• Lyt: Afspil TTS for sætning\n• Marker: Flueben (V) for færdige\n• Slet: Langt tryk for at slette\n• Filter: Vis alle eller efter materiale",
+  "helpMode3Desc": "Øv tale ved at lytte og gentage (Shadowing).",
+  "helpMode3Details": "• Vælg: Vælg pakke\n• Interval: [-] [+] ventetid (3s-60s)\n• Start/Stop: Kontroller session\n• Tal: Lyt og gentag\n• Score: Nøjagtighed (0-100)\n• Prøv igen: Knap hvis stemme ej fundet",
+  "helpModeChatDesc": "Talk to AI persona to practice real conversation and save useful sentences.",
+  "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
+  "helpJsonDesc": "For import i Tilstand 3, opret JSON:",
+  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
+  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
+  "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
+  "partnerMode": "Partner Mode",
+  "@partnerMode": {
+    "description": "Label for Partner Mode logic"
+  },
+  "manual": "Manual",
+  "@manual": {
+    "description": "Label for manual input in Partner Mode"
+  },
+  "speaker": "Speaker",
+  "@speaker": {
+    "description": "Label for speaker selection"
+  },
+  "switchToAi": "Switch to AI",
+  "@switchToAi": {
+    "description": "Tooltip for switching to AI mode"
+  },
+  "switchToPartner": "Switch to Partner",
+  "@switchToPartner": {
+    "description": "Tooltip for switching to Partner mode"
+  },
+  "currentLocation": "Current Location",
+  "@currentLocation": {
+    "description": "Label for GPS location"
+  },
+  "partner": "Partner",
+  "@partner": {
+    "description": "Label for partner speaker"
+  },
+  "me": "Me",
+  "@me": {
+    "description": "Label for self speaker"
+  },
+  "currentMaterialLabel": "Current Selected Material:",
+  "@currentMaterialLabel": {
+    "description": "Banner label for current material"
+  },
+  "basicMaterialRepository": "Basic Repository",
+  "@basicMaterialRepository": {
+    "description": "Name for default basic repository"
+  },
+  "word": "Word",
+  "@word": {
+    "description": "Toggle option for Word"
+  },
+  "sentence": "Sentence",
+  "@sentence": {
+    "description": "Toggle option for Sentence"
+  },
   "appTitle": "Talkie",
   "@appTitle": {
     "description": "Application title"
@@ -363,18 +427,6 @@
   "tryAgain": "Prøv igen",
   "startPractice": "Start Øvelse",
   "stopPractice": "Stop",
-  "helpTitle": "Hjælp & Guide",
-  "helpTabModes": "Tilstande",
-  "helpTabJson": "JSON Format",
-  "helpTabTour": "Tur",
-  "helpMode1Desc": "Talegenkendelse, oversættelse og lyt til resultat.",
-  "helpMode1Details": "• Stemme: Tryk mikrofon for start/stop\n• Tekst: Skriv direkte for at oversætte\n• Auto-Søg: Finder lignende sætninger\n• Oversæt: Knap for øjeblikkelig oversættelse\n• Lyt: Højttalerikon for TTS\n• Gem: Tilføjer til historik\n• Ryd: Nulstil alt",
-  "helpMode2Desc": "Gennemgå gemte sætninger med skjult oversættelse.",
-  "helpMode2Details": "• Vælg: Vælg sæt eller 'Alle'\n• Vend: 'Vis/Skjul' oversættelse\n• Lyt: Afspil TTS for sætning\n• Marker: Flueben (V) for færdige\n• Slet: Langt tryk for at slette\n• Filter: Vis alle eller efter materiale",
-  "helpMode3Desc": "Øv tale ved at lytte og gentage (Shadowing).",
-  "helpMode3Details": "• Vælg: Vælg pakke\n• Interval: [-] [+] ventetid (3s-60s)\n• Start/Stop: Kontroller session\n• Tal: Lyt og gentag\n• Score: Nøjagtighed (0-100)\n• Prøv igen: Knap hvis stemme ej fundet",
-  "helpJsonDesc": "For import i Tilstand 3, opret JSON:",
-  "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "startTutorial": "Start Tur",
   "tutorialMicTitle": "Stemmeindput",
   "tutorialMicDesc": "Tryk på mikrofonen for stemmeindput.",
@@ -425,6 +477,7 @@
   "labelSentence": "Sentence",
   "contextTagLabel": "Context/Situation (Optional) - Ex: Morning greeting, polite form",
   "contextTagHint": "Describe situation for easier classification later",
+  "usageLimitTitle": "Grænse nået",
   "translationLimitExceeded": "Translation Limit Exceeded",
   "translationLimitMessage": "You have used all your free daily translations (5). Watch an ad to refill 5 immediately?",
   "watchAdAndRefill": "Watch Ad & Refill (+5)",
@@ -433,6 +486,7 @@
   "reviewAll": "Review All",
   "totalRecords": "Total {count} records (View All)",
   "@totalRecords": {
+    "description": "Total records count",
     "placeholders": {
       "count": {
         "type": "int"
@@ -464,11 +518,29 @@
   "menuWebDownload": "Get Material from Web",
   "menuDeviceImport": "Import from Device",
   "menuSettings": "Settings",
+  "@menuSettings": {
+    "description": "Menu item for language settings"
+  },
   "basicWords": "Basic Word Repository",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
   "basicSentences": "Basic Sentence Repository",
+  "@basicSentences": {
+    "description": "Default name for basic sentences material"
+  },
   "selectMaterialSet": "학습 자료집 선택",
+  "@selectMaterialSet": {
+    "description": "Title for the material selection dialog"
+  },
   "sectionWords": "단어",
+  "@sectionWords": {
+    "description": "Header for words section in material selection"
+  },
   "sectionSentences": "문장",
+  "@sectionSentences": {
+    "description": "Header for sentences section in material selection"
+  },
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
   "targetLanguageLabel": "Target Language",
@@ -492,108 +564,24 @@
   "errorOtherSafety": "AI 안전 정책에 의해 번역이 거부되었습니다.",
   "clearAll": "모두 지우기",
   "disambiguationTitle": "의미 선택",
+  "@disambiguationTitle": {
+    "description": "Title for disambiguation dialog"
+  },
   "disambiguationPrompt": "어떤 의미로 번역하시겠습니까?",
+  "@disambiguationPrompt": {
+    "description": "Prompt for disambiguation dialog"
+  },
   "skip": "건너뛰기",
+  "@skip": {
+    "description": "Skip button"
+  },
   "inputModeTitle": "입력",
   "reviewModeTitle": "복습",
   "practiceModeTitle": "발음 연습",
-  "basicWordRepository": "Grundlæggende ordarkiv",
-  "basicSentenceRepository": "Grundlæggende sætningsarkiv",
   "chatHistoryTitle": "Conversation History",
   "chatNewChat": "New Chat",
   "chatChoosePersona": "Choose a Persona",
   "chatTypeHint": "Type a message...",
-  "chatNoConversations": "No conversations yet",
-  "chatStartNewPrompt": "Start a new chat to practice!",
-  "personaTeacher": "English Teacher",
-  "personaGuide": "Travel Guide",
-  "personaFriend": "Local Friend",
-  "chatAiChat": "AI Chat",
-  "me": "Me",
-  "chatSaveAndExit": "Save & Exit",
-  "errorSelectCategory": "Please select word or sentence first!",
-  "chatEndTitle": "End & Save Chat",
-  "chatEndMessage": "Do you want to end this conversation? You can set a title for it.",
-  "tutorialAiChatTitle": "AI Chat",
-  "tutorialAiChatDesc": "Practice real conversation with AI personas here.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode",
-  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
-  "partnerMode": "Partner Mode",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
-  "manual": "Manual",
-  "@manual": {
-    "description": "Label for manual input in Partner Mode"
-  },
-  "speaker": "Speaker",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "switchToAi": "Switch to AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Switch to Partner",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
-  "currentLocation": "Current Location",
-  "@currentLocation": {
-    "description": "Label for GPS location"
-  },
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "@me": {
-    "description": "Label for self speaker"
-  },
-  "currentMaterialLabel": "Current Selected Material:",
-  "@currentMaterialLabel": {
-    "description": "Banner label for current material"
-  },
-  "basicMaterialRepository": "Basic Repository",
-  "@basicMaterialRepository": {
-    "description": "Name for default basic repository"
-  },
-  "word": "Word",
-  "@word": {
-    "description": "Toggle option for Word"
-  },
-  "sentence": "Sentence",
-  "@sentence": {
-    "description": "Toggle option for Sentence"
-  },
-  "helpModeChatDesc": "Talk to AI persona to practice real conversation and save useful sentences.",
-  "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
-  "@menuSettings": {
-    "description": "Menu item for language settings"
-  },
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "@basicSentences": {
-    "description": "Default name for basic sentences material"
-  },
-  "@selectMaterialSet": {
-    "description": "Title for the material selection dialog"
-  },
-  "@sectionWords": {
-    "description": "Header for words section in material selection"
-  },
-  "@sectionSentences": {
-    "description": "Header for sentences section in material selection"
-  },
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "@skip": {
-    "description": "Skip button"
-  },
   "chatFailed": "Chat failed: {error}",
   "@chatFailed": {
     "placeholders": {
@@ -602,6 +590,8 @@
       }
     }
   },
+  "chatNoConversations": "No conversations yet",
+  "chatStartNewPrompt": "Start a new chat to practice!",
   "chatFromConversation": "From Conversation ({speaker})",
   "@chatFromConversation": {
     "placeholders": {
@@ -610,8 +600,20 @@
       }
     }
   },
+  "personaTeacher": "English Teacher",
+  "personaGuide": "Travel Guide",
+  "personaFriend": "Local Friend",
   "chatUntitled": "Untitled Conversation",
-  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
-  "mode1SelectedMaterial": "Current Material Set: {name}"
+  "chatAiChat": "AI Chat",
+  "tutorialAiChatTitle": "AI Chat",
+  "tutorialAiChatDesc": "Practice real conversation with AI personas here.",
+  "mode1SelectedMaterial": "Current Material Set: {name}",
+  "basicWordRepository": "Grundlæggende ordarkiv",
+  "basicSentenceRepository": "Grundlæggende sætningsarkiv",
+  "chatEndTitle": "End & Save Chat",
+  "chatEndMessage": "Do you want to end this conversation? You can set a title for it.",
+  "chatSaveAndExit": "Save & Exit",
+  "errorSelectCategory": "Please select word or sentence first!",
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text."
 }

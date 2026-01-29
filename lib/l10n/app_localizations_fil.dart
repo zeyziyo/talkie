@@ -531,6 +531,9 @@ class AppLocalizationsFil extends AppLocalizations {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => 'Limitado na Paggamit';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override
@@ -637,13 +640,13 @@ class AppLocalizationsFil extends AppLocalizations {
   String get basicSentences => 'Basic Sentence Repository';
 
   @override
-  String get selectMaterialSet => '학습 자료집 선택 (TODO: Translate)';
+  String get selectMaterialSet => 'Pumili ng Materyales sa Pag-aaral';
 
   @override
-  String get sectionWords => '단어 (TODO: Translate)';
+  String get sectionWords => 'Mga Salita';
 
   @override
-  String get sectionSentences => '문장 (TODO: Translate)';
+  String get sectionSentences => 'Mga Pangungusap';
 
   @override
   String get languageSettingsTitle => 'Language Settings';
@@ -701,29 +704,32 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tabSentence => 'pangungusap';
 
   @override
-  String get errorProfanity => '비속어가 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorProfanity =>
+      'Hindi maaaring isalin dahil naglalaman ng mga malaswang salita.';
 
   @override
-  String get errorHateSpeech => '혐오 표현이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorHateSpeech =>
+      'Hindi maaaring isalin dahil naglalaman ng mga pahayag ng pagkapoot.';
 
   @override
   String get errorSexualContent =>
-      '선정적인 내용이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+      'Hindi maaaring isalin dahil naglalaman ng sekswal na nilalaman.';
 
   @override
-  String get errorOtherSafety => 'AI 안전 정책에 의해 번역이 거부되었습니다. (TODO: Translate)';
+  String get errorOtherSafety =>
+      'Ang pagsasalin ay tinanggihan dahil sa patakaran sa kaligtasan ng AI.';
 
   @override
-  String get clearAll => '모두 지우기 (TODO: Translate)';
+  String get clearAll => 'I-clear Lahat';
 
   @override
-  String get disambiguationTitle => '의미 선택 (TODO: Translate)';
+  String get disambiguationTitle => 'Pumili ng Kahulugan';
 
   @override
-  String get disambiguationPrompt => '어떤 의미로 번역하시겠습니까? (TODO: Translate)';
+  String get disambiguationPrompt => 'Anong kahulugan ang gusto mong isalin?';
 
   @override
-  String get skip => '건너뛰기 (TODO: Translate)';
+  String get skip => 'Laktawan';
 
   @override
   String get inputModeTitle => 'Input';

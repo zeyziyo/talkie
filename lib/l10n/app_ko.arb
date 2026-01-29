@@ -441,6 +441,7 @@
   "labelSentence": "문장",
   "contextTagLabel": "문맥/상황 (선택사항) - 예: 아침인사, 존댓말",
   "contextTagHint": "나중에 구분하기 쉽도록 상황을 적어주세요",
+  "usageLimitTitle": "한도 도달",
   "translationLimitExceeded": "번역 한도 초과",
   "translationLimitMessage": "일일 무료 번역(5회)을 모두 사용했습니다.\\n\\n광고를 보고 5회를 즉시 충전하시겠습니까?",
   "watchAdAndRefill": "광고 보고 충전 (+5회)",

@@ -531,6 +531,9 @@ class AppLocalizationsPt extends AppLocalizations {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => 'Limite atingido';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override
@@ -637,13 +640,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get basicSentences => 'Basic Sentence Repository';
 
   @override
-  String get selectMaterialSet => '학습 자료집 선택 (TODO: Translate)';
+  String get selectMaterialSet => 'Selecionar material de estudo';
 
   @override
-  String get sectionWords => '단어 (TODO: Translate)';
+  String get sectionWords => 'Palavras';
 
   @override
-  String get sectionSentences => '문장 (TODO: Translate)';
+  String get sectionSentences => 'Frases';
 
   @override
   String get languageSettingsTitle => 'Language Settings';
@@ -701,29 +704,33 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tabSentence => 'frase';
 
   @override
-  String get errorProfanity => '비속어가 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorProfanity =>
+      'Não foi possível traduzir porque contém linguagem imprópria.';
 
   @override
-  String get errorHateSpeech => '혐오 표현이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorHateSpeech =>
+      'Não foi possível traduzir porque contém discurso de ódio.';
 
   @override
   String get errorSexualContent =>
-      '선정적인 내용이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+      'Não foi possível traduzir porque contém conteúdo sexual.';
 
   @override
-  String get errorOtherSafety => 'AI 안전 정책에 의해 번역이 거부되었습니다. (TODO: Translate)';
+  String get errorOtherSafety =>
+      'A tradução foi rejeitada pelas políticas de segurança de IA.';
 
   @override
-  String get clearAll => '모두 지우기 (TODO: Translate)';
+  String get clearAll => 'Limpar tudo';
 
   @override
-  String get disambiguationTitle => '의미 선택 (TODO: Translate)';
+  String get disambiguationTitle => 'Selecione o significado';
 
   @override
-  String get disambiguationPrompt => '어떤 의미로 번역하시겠습니까? (TODO: Translate)';
+  String get disambiguationPrompt =>
+      'Qual significado você gostaria de traduzir?';
 
   @override
-  String get skip => '건너뛰기 (TODO: Translate)';
+  String get skip => 'Pular';
 
   @override
   String get inputModeTitle => 'Input';

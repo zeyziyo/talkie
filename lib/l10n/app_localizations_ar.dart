@@ -524,6 +524,9 @@ class AppLocalizationsAr extends AppLocalizations {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => 'تم الوصول إلى الحد';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override

@@ -530,6 +530,9 @@ class AppLocalizationsEn extends AppLocalizations {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => 'Limit Reached';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override

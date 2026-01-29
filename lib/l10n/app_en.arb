@@ -451,6 +451,7 @@
   "labelSentence": "Sentence",
   "contextTagLabel": "Context/Situation (Optional) - Ex: Morning greeting, polite form",
   "contextTagHint": "Describe situation for easier classification later",
+  "usageLimitTitle": "Limit Reached",
   "translationLimitExceeded": "Translation Limit Exceeded",
   "translationLimitMessage": "You have used all your free daily translations (5). Watch an ad to refill 5 immediately?",
   "watchAdAndRefill": "Watch Ad & Refill (+5)",

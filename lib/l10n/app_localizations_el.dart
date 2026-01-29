@@ -528,6 +528,9 @@ class AppLocalizationsEl extends AppLocalizations {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => 'Έφτασε το όριο';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override

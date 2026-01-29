@@ -534,6 +534,9 @@ class AppLocalizationsDe extends AppLocalizations {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => 'Limit erreicht';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override

@@ -1,5 +1,69 @@
 {
   "@@locale": "fa",
+  "helpTitle": "راهنما و راهبری",
+  "helpTabModes": "حالت‌ها",
+  "helpTabJson": "فرمت JSON",
+  "helpTabTour": "تور",
+  "helpMode1Desc": "شناسایی صدا، ترجمه و گوش دادن به نتیجه.",
+  "helpMode1Details": "• صدا: برای شروع/توقف میکروفون را لمس کنید\n• متن: مستقیماً تایپ کنید تا ترجمه شود\n• جستجوی خودکار: جملات مشابه را پیدا می‌کند\n• ترجمه: دکمه ترجمه فوری\n• گوش دادن: آیکون بلندگو برای TTS\n• ذخیره: به تاریخچه اضافه می‌کند\n• پاک کردن: بازنشانی همه",
+  "helpMode2Desc": "مرور جملات ذخیره شده با ترجمه مخفی.",
+  "helpMode2Details": "• انتخاب: مجموعه یا 'همه' را انتخاب کنید\n• چرخاندن: 'نمایش/مخفی کردن' ترجمه\n• گوش دادن: پخش TTS برای جمله\n• علامت‌گذاری: تیک (V) برای تکمیل شده‌ها\n• حذف: لمس طولانی کارت برای حذف\n• فیلتر: نمایش همه یا بر اساس مطلب",
+  "helpMode3Desc": "تمرین صحبت کردن با گوش دادن و تکرار (Shadowing).",
+  "helpMode3Details": "• انتخاب: بسته را انتخاب کنید\n• فاصله: [-] [+] زمان انتظار (3ثانیه-60ثانیه)\n• شروع/توقف: کنترل جلسه\n• صحبت کردن: گوش دهید و تکرار کنید\n• امتیاز: دقت (0-100)\n• تلاش مجدد: دکمه تلاش مجدد در صورت عدم تشخیص صدا",
+  "helpModeChatDesc": "Talk to AI persona to practice real conversation and save useful sentences.",
+  "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
+  "helpJsonDesc": "برای وارد کردن مطالب در حالت 3، JSON بسازید:",
+  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
+  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
+  "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
+  "partnerMode": "Partner Mode",
+  "@partnerMode": {
+    "description": "Label for Partner Mode logic"
+  },
+  "manual": "Manual",
+  "@manual": {
+    "description": "Label for manual input in Partner Mode"
+  },
+  "speaker": "Speaker",
+  "@speaker": {
+    "description": "Label for speaker selection"
+  },
+  "switchToAi": "Switch to AI",
+  "@switchToAi": {
+    "description": "Tooltip for switching to AI mode"
+  },
+  "switchToPartner": "Switch to Partner",
+  "@switchToPartner": {
+    "description": "Tooltip for switching to Partner mode"
+  },
+  "currentLocation": "Current Location",
+  "@currentLocation": {
+    "description": "Label for GPS location"
+  },
+  "partner": "Partner",
+  "@partner": {
+    "description": "Label for partner speaker"
+  },
+  "me": "Me",
+  "@me": {
+    "description": "Label for self speaker"
+  },
+  "currentMaterialLabel": "Current Selected Material:",
+  "@currentMaterialLabel": {
+    "description": "Banner label for current material"
+  },
+  "basicMaterialRepository": "Basic Repository",
+  "@basicMaterialRepository": {
+    "description": "Name for default basic repository"
+  },
+  "word": "Word",
+  "@word": {
+    "description": "Toggle option for Word"
+  },
+  "sentence": "Sentence",
+  "@sentence": {
+    "description": "Toggle option for Sentence"
+  },
   "appTitle": "Talkie",
   "@appTitle": {
     "description": "Application title"
@@ -363,18 +427,6 @@
   "tryAgain": "تلاش مجدد",
   "startPractice": "شروع تمرین",
   "stopPractice": "توقف",
-  "helpTitle": "راهنما و راهبری",
-  "helpTabModes": "حالت‌ها",
-  "helpTabJson": "فرمت JSON",
-  "helpTabTour": "تور",
-  "helpMode1Desc": "شناسایی صدا، ترجمه و گوش دادن به نتیجه.",
-  "helpMode1Details": "• صدا: برای شروع/توقف میکروفون را لمس کنید\n• متن: مستقیماً تایپ کنید تا ترجمه شود\n• جستجوی خودکار: جملات مشابه را پیدا می‌کند\n• ترجمه: دکمه ترجمه فوری\n• گوش دادن: آیکون بلندگو برای TTS\n• ذخیره: به تاریخچه اضافه می‌کند\n• پاک کردن: بازنشانی همه",
-  "helpMode2Desc": "مرور جملات ذخیره شده با ترجمه مخفی.",
-  "helpMode2Details": "• انتخاب: مجموعه یا 'همه' را انتخاب کنید\n• چرخاندن: 'نمایش/مخفی کردن' ترجمه\n• گوش دادن: پخش TTS برای جمله\n• علامت‌گذاری: تیک (V) برای تکمیل شده‌ها\n• حذف: لمس طولانی کارت برای حذف\n• فیلتر: نمایش همه یا بر اساس مطلب",
-  "helpMode3Desc": "تمرین صحبت کردن با گوش دادن و تکرار (Shadowing).",
-  "helpMode3Details": "• انتخاب: بسته را انتخاب کنید\n• فاصله: [-] [+] زمان انتظار (3ثانیه-60ثانیه)\n• شروع/توقف: کنترل جلسه\n• صحبت کردن: گوش دهید و تکرار کنید\n• امتیاز: دقت (0-100)\n• تلاش مجدد: دکمه تلاش مجدد در صورت عدم تشخیص صدا",
-  "helpJsonDesc": "برای وارد کردن مطالب در حالت 3، JSON بسازید:",
-  "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "startTutorial": "شروع تور",
   "tutorialMicTitle": "ورودی صوتی",
   "tutorialMicDesc": "برای ورودی صوتی دکمه میکروفون را لمس کنید.",
@@ -425,6 +477,7 @@
   "labelSentence": "Sentence",
   "contextTagLabel": "Context/Situation (Optional) - Ex: Morning greeting, polite form",
   "contextTagHint": "Describe situation for easier classification later",
+  "usageLimitTitle": "به حد مجاز رسیدید",
   "translationLimitExceeded": "Translation Limit Exceeded",
   "translationLimitMessage": "You have used all your free daily translations (5). Watch an ad to refill 5 immediately?",
   "watchAdAndRefill": "Watch Ad & Refill (+5)",
@@ -433,6 +486,7 @@
   "reviewAll": "Review All",
   "totalRecords": "Total {count} records (View All)",
   "@totalRecords": {
+    "description": "Total records count",
     "placeholders": {
       "count": {
         "type": "int"
@@ -464,11 +518,29 @@
   "menuWebDownload": "Get Material from Web",
   "menuDeviceImport": "Import from Device",
   "menuSettings": "Settings",
+  "@menuSettings": {
+    "description": "Menu item for language settings"
+  },
   "basicWords": "Basic Word Repository",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
   "basicSentences": "Basic Sentence Repository",
-  "selectMaterialSet": "학습 자료집 선택 (TODO: Translate)",
-  "sectionWords": "단어 (TODO: Translate)",
-  "sectionSentences": "문장 (TODO: Translate)",
+  "@basicSentences": {
+    "description": "Default name for basic sentences material"
+  },
+  "selectMaterialSet": "انتخاب مجموعه مطالب آموزشی",
+  "@selectMaterialSet": {
+    "description": "Title for the material selection dialog"
+  },
+  "sectionWords": "واژگان",
+  "@sectionWords": {
+    "description": "Header for words section in material selection"
+  },
+  "sectionSentences": "جملات",
+  "@sectionSentences": {
+    "description": "Header for sentences section in material selection"
+  },
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
   "targetLanguageLabel": "Target Language",
@@ -486,114 +558,30 @@
   "sectionSentence": "بخش جمله",
   "tabWord": "کلمه",
   "tabSentence": "جمله",
-  "errorProfanity": "비속어가 포함되어 있어 번역할 수 없습니다. (TODO: Translate)",
-  "errorHateSpeech": "혐오 표현이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)",
-  "errorSexualContent": "선정적인 내용이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)",
-  "errorOtherSafety": "AI 안전 정책에 의해 번역이 거부되었습니다. (TODO: Translate)",
-  "clearAll": "모두 지우기 (TODO: Translate)",
-  "disambiguationTitle": "의미 선택 (TODO: Translate)",
-  "disambiguationPrompt": "어떤 의미로 번역하시겠습니까? (TODO: Translate)",
-  "skip": "건너뛰기 (TODO: Translate)",
+  "errorProfanity": "به دلیل وجود کلمات رکیک، ترجمه امکان پذیر نیست.",
+  "errorHateSpeech": "به دلیل وجود عبارات تنفرآمیز، ترجمه امکان پذیر نیست.",
+  "errorSexualContent": "به دلیل وجود محتوای جنسی، ترجمه رد شد.",
+  "errorOtherSafety": "ترجمه به دلیل سیاست ایمنی هوش مصنوعی رد شد.",
+  "clearAll": "پاک کردن همه",
+  "disambiguationTitle": "انتخاب معنی",
+  "@disambiguationTitle": {
+    "description": "Title for disambiguation dialog"
+  },
+  "disambiguationPrompt": "کدام معنی را برای ترجمه می خواهید انتخاب کنید؟",
+  "@disambiguationPrompt": {
+    "description": "Prompt for disambiguation dialog"
+  },
+  "skip": "رد کردن",
+  "@skip": {
+    "description": "Skip button"
+  },
   "inputModeTitle": "Input",
   "reviewModeTitle": "Review",
   "practiceModeTitle": "Practice",
-  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode",
-  "basicWordRepository": "مخزن کلمات پایه",
-  "basicSentenceRepository": "مخزن جملات پایه",
   "chatHistoryTitle": "Conversation History",
   "chatNewChat": "New Chat",
   "chatChoosePersona": "Choose a Persona",
   "chatTypeHint": "Type a message...",
-  "chatNoConversations": "No conversations yet",
-  "chatStartNewPrompt": "Start a new chat to practice!",
-  "personaTeacher": "English Teacher",
-  "personaGuide": "Travel Guide",
-  "personaFriend": "Local Friend",
-  "chatAiChat": "AI Chat",
-  "me": "Me",
-  "chatSaveAndExit": "Save & Exit",
-  "errorSelectCategory": "Please select word or sentence first!",
-  "chatEndTitle": "End & Save Chat",
-  "chatEndMessage": "Do you want to end this conversation? You can set a title for it.",
-  "tutorialAiChatTitle": "AI Chat",
-  "tutorialAiChatDesc": "Practice real conversation with AI personas here.",
-  "partnerMode": "Partner Mode",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
-  "manual": "Manual",
-  "@manual": {
-    "description": "Label for manual input in Partner Mode"
-  },
-  "speaker": "Speaker",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "switchToAi": "Switch to AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Switch to Partner",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
-  "currentLocation": "Current Location",
-  "@currentLocation": {
-    "description": "Label for GPS location"
-  },
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "@me": {
-    "description": "Label for self speaker"
-  },
-  "currentMaterialLabel": "Current Selected Material:",
-  "@currentMaterialLabel": {
-    "description": "Banner label for current material"
-  },
-  "basicMaterialRepository": "Basic Repository",
-  "@basicMaterialRepository": {
-    "description": "Name for default basic repository"
-  },
-  "word": "Word",
-  "@word": {
-    "description": "Toggle option for Word"
-  },
-  "sentence": "Sentence",
-  "@sentence": {
-    "description": "Toggle option for Sentence"
-  },
-  "helpModeChatDesc": "Talk to AI persona to practice real conversation and save useful sentences.",
-  "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
-  "@menuSettings": {
-    "description": "Menu item for language settings"
-  },
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "@basicSentences": {
-    "description": "Default name for basic sentences material"
-  },
-  "@selectMaterialSet": {
-    "description": "Title for the material selection dialog"
-  },
-  "@sectionWords": {
-    "description": "Header for words section in material selection"
-  },
-  "@sectionSentences": {
-    "description": "Header for sentences section in material selection"
-  },
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "@skip": {
-    "description": "Skip button"
-  },
   "chatFailed": "Chat failed: {error}",
   "@chatFailed": {
     "placeholders": {
@@ -602,6 +590,8 @@
       }
     }
   },
+  "chatNoConversations": "No conversations yet",
+  "chatStartNewPrompt": "Start a new chat to practice!",
   "chatFromConversation": "From Conversation ({speaker})",
   "@chatFromConversation": {
     "placeholders": {
@@ -610,8 +600,20 @@
       }
     }
   },
+  "personaTeacher": "English Teacher",
+  "personaGuide": "Travel Guide",
+  "personaFriend": "Local Friend",
   "chatUntitled": "Untitled Conversation",
-  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
-  "mode1SelectedMaterial": "Current Material Set: {name}"
+  "chatAiChat": "AI Chat",
+  "tutorialAiChatTitle": "AI Chat",
+  "tutorialAiChatDesc": "Practice real conversation with AI personas here.",
+  "mode1SelectedMaterial": "Current Material Set: {name}",
+  "basicWordRepository": "مخزن کلمات پایه",
+  "basicSentenceRepository": "مخزن جملات پایه",
+  "chatEndTitle": "End & Save Chat",
+  "chatEndMessage": "Do you want to end this conversation? You can set a title for it.",
+  "chatSaveAndExit": "Save & Exit",
+  "errorSelectCategory": "Please select word or sentence first!",
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text."
 }

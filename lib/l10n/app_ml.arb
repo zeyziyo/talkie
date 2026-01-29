@@ -1,5 +1,69 @@
 {
   "@@locale": "ml",
+  "helpTitle": "സഹായവും വഴികാട്ടിയും",
+  "helpTabModes": "മോഡുകൾ",
+  "helpTabJson": "JSON ഫോർമാറ്റ്",
+  "helpTabTour": "ടൂർ",
+  "helpMode1Desc": "ശബ്ദം തിരിച്ചറിയുക, വിവർത്തനം ചെയ്യുക, ഫലം കേൾക്കുക.",
+  "helpMode1Details": "• ശബ്ദം: ആരംഭിക്കാൻ/നിർത്താൻ മൈക്ക് ടാപ്പ് ചെയ്യുക\n• ടെക്സ്റ്റ്: വിവർത്തനം ചെയ്യാൻ നേരിട്ട് ടൈപ്പ് ചെയ്യുക\n• ഓട്ടോ-സെർച്ച്: സമാനമായ വാക്യങ്ങൾ കണ്ടെത്തുന്നു\n• വിവർത്തനം: പെട്ടെന്നുള്ള വിവർത്തന ബട്ടൺ\n• കേൾക്കുക: TTS-നുള്ള സ്പീക്കർ ഐക്കൺ\n• സേവ്: ചരിത്രത്തിലേക്ക് ചേർക്കുന്നു\n• മായ്ക്കുക: എല്ലാം പുനഃസജ്ജമാക്കുക",
+  "helpMode2Desc": "മറഞ്ഞിരിക്കുന്ന വിവർത്തനം ഉപയോഗിച്ച് സേവ് ചെയ്ത വാക്യങ്ങൾ അവലോകനം ചെയ്യുക.",
+  "helpMode2Details": "• തിരഞ്ഞെടുക്കുക: സെറ്റ് അല്ലെങ്കിൽ 'എല്ലാം അവലോകനം ചെയ്യുക' തിരഞ്ഞെടുക്കുക\n• മറിക്കുക: വിവർത്തനം 'കാണിക്കുക/മറയ്ക്കുക'\n• കേൾക്കുക: വാക്യത്തിനായി TTS പ്ലേ ചെയ്യുക\n• അടയാളപ്പെടുത്തുക: പൂർത്തിയായതിന് ടിക്ക് (V)\n• നീക്കം ചെയ്യുക: നീക്കം ചെയ്യാൻ കാർഡ് അമർത്തിപ്പിടിക്കുക\n• ഫിൽട്ടർ: എല്ലാം അല്ലെങ്കിൽ മെറ്റീരിയൽ പ്രകാരം കാണുക",
+  "helpMode3Desc": "കേട്ട് ആവർത്തിച്ച് സംസാരിക്കാൻ പരിശീലിക്കുക (Shadowing).",
+  "helpMode3Details": "• തിരഞ്ഞെടുക്കുക: പാക്കേജ് തിരഞ്ഞെടുക്കുക\n• ഇടവേള: [-] [+] കാത്തിരിപ്പ് സമയം (3സെ-60സെ)\n• ആരംഭിക്കുക/നിർത്തുക: സെഷൻ നിയന്ത്രിക്കുക\n• സംസാരിക്കുക: ഓഡിയോ കേട്ട് ആവർത്തിക്കുക\n• സ്കോർ: കൃത്യത (0-100)\n• വീണ്ടും ശ്രമിക്കുക: ശബ്ദം കണ്ടെത്തിയില്ലെങ്കിൽ ബട്ടൺ",
+  "helpModeChatDesc": "Talk to AI persona to practice real conversation and save useful sentences.",
+  "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
+  "helpJsonDesc": "മോഡ് 3-ൽ ഇറക്കുമതി ചെയ്യാൻ, JSON സൃഷ്ടിക്കുക:",
+  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
+  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
+  "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
+  "partnerMode": "Partner Mode",
+  "@partnerMode": {
+    "description": "Label for Partner Mode logic"
+  },
+  "manual": "Manual",
+  "@manual": {
+    "description": "Label for manual input in Partner Mode"
+  },
+  "speaker": "Speaker",
+  "@speaker": {
+    "description": "Label for speaker selection"
+  },
+  "switchToAi": "Switch to AI",
+  "@switchToAi": {
+    "description": "Tooltip for switching to AI mode"
+  },
+  "switchToPartner": "Switch to Partner",
+  "@switchToPartner": {
+    "description": "Tooltip for switching to Partner mode"
+  },
+  "currentLocation": "Current Location",
+  "@currentLocation": {
+    "description": "Label for GPS location"
+  },
+  "partner": "Partner",
+  "@partner": {
+    "description": "Label for partner speaker"
+  },
+  "me": "Me",
+  "@me": {
+    "description": "Label for self speaker"
+  },
+  "currentMaterialLabel": "Current Selected Material:",
+  "@currentMaterialLabel": {
+    "description": "Banner label for current material"
+  },
+  "basicMaterialRepository": "Basic Repository",
+  "@basicMaterialRepository": {
+    "description": "Name for default basic repository"
+  },
+  "word": "Word",
+  "@word": {
+    "description": "Toggle option for Word"
+  },
+  "sentence": "Sentence",
+  "@sentence": {
+    "description": "Toggle option for Sentence"
+  },
   "appTitle": "Talkie",
   "@appTitle": {
     "description": "Application title"
@@ -363,18 +427,6 @@
   "tryAgain": "വീണ്ടും ശ്രമിക്കുക",
   "startPractice": "പരിശീലനം ആരംഭിക്കുക",
   "stopPractice": "നിർത്തുക",
-  "helpTitle": "സഹായവും വഴികാട്ടിയും",
-  "helpTabModes": "മോഡുകൾ",
-  "helpTabJson": "JSON ഫോർമാറ്റ്",
-  "helpTabTour": "ടൂർ",
-  "helpMode1Desc": "ശബ്ദം തിരിച്ചറിയുക, വിവർത്തനം ചെയ്യുക, ഫലം കേൾക്കുക.",
-  "helpMode1Details": "• ശബ്ദം: ആരംഭിക്കാൻ/നിർത്താൻ മൈക്ക് ടാപ്പ് ചെയ്യുക\n• ടെക്സ്റ്റ്: വിവർത്തനം ചെയ്യാൻ നേരിട്ട് ടൈപ്പ് ചെയ്യുക\n• ഓട്ടോ-സെർച്ച്: സമാനമായ വാക്യങ്ങൾ കണ്ടെത്തുന്നു\n• വിവർത്തനം: പെട്ടെന്നുള്ള വിവർത്തന ബട്ടൺ\n• കേൾക്കുക: TTS-നുള്ള സ്പീക്കർ ഐക്കൺ\n• സേവ്: ചരിത്രത്തിലേക്ക് ചേർക്കുന്നു\n• മായ്ക്കുക: എല്ലാം പുനഃസജ്ജമാക്കുക",
-  "helpMode2Desc": "മറഞ്ഞിരിക്കുന്ന വിവർത്തനം ഉപയോഗിച്ച് സേവ് ചെയ്ത വാക്യങ്ങൾ അവലോകനം ചെയ്യുക.",
-  "helpMode2Details": "• തിരഞ്ഞെടുക്കുക: സെറ്റ് അല്ലെങ്കിൽ 'എല്ലാം അവലോകനം ചെയ്യുക' തിരഞ്ഞെടുക്കുക\n• മറിക്കുക: വിവർത്തനം 'കാണിക്കുക/മറയ്ക്കുക'\n• കേൾക്കുക: വാക്യത്തിനായി TTS പ്ലേ ചെയ്യുക\n• അടയാളപ്പെടുത്തുക: പൂർത്തിയായതിന് ടിക്ക് (V)\n• നീക്കം ചെയ്യുക: നീക്കം ചെയ്യാൻ കാർഡ് അമർത്തിപ്പിടിക്കുക\n• ഫിൽട്ടർ: എല്ലാം അല്ലെങ്കിൽ മെറ്റീരിയൽ പ്രകാരം കാണുക",
-  "helpMode3Desc": "കേട്ട് ആവർത്തിച്ച് സംസാരിക്കാൻ പരിശീലിക്കുക (Shadowing).",
-  "helpMode3Details": "• തിരഞ്ഞെടുക്കുക: പാക്കേജ് തിരഞ്ഞെടുക്കുക\n• ഇടവേള: [-] [+] കാത്തിരിപ്പ് സമയം (3സെ-60സെ)\n• ആരംഭിക്കുക/നിർത്തുക: സെഷൻ നിയന്ത്രിക്കുക\n• സംസാരിക്കുക: ഓഡിയോ കേട്ട് ആവർത്തിക്കുക\n• സ്കോർ: കൃത്യത (0-100)\n• വീണ്ടും ശ്രമിക്കുക: ശബ്ദം കണ്ടെത്തിയില്ലെങ്കിൽ ബട്ടൺ",
-  "helpJsonDesc": "മോഡ് 3-ൽ ഇറക്കുമതി ചെയ്യാൻ, JSON സൃഷ്ടിക്കുക:",
-  "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "startTutorial": "ടൂർ ആരംഭിക്കുക",
   "tutorialMicTitle": "വോയ്സ് ഇൻപുട്ട്",
   "tutorialMicDesc": "വോയ്സ് ഇൻപുട്ടിനായി മൈക്ക് ബട്ടൺ ടാപ്പ് ചെയ്യുക.",
@@ -425,6 +477,7 @@
   "labelSentence": "Sentence",
   "contextTagLabel": "Context/Situation (Optional) - Ex: Morning greeting, polite form",
   "contextTagHint": "Describe situation for easier classification later",
+  "usageLimitTitle": "പരിധി എത്തിയിരിക്കുന്നു",
   "translationLimitExceeded": "Translation Limit Exceeded",
   "translationLimitMessage": "You have used all your free daily translations (5). Watch an ad to refill 5 immediately?",
   "watchAdAndRefill": "Watch Ad & Refill (+5)",
@@ -433,6 +486,7 @@
   "reviewAll": "Review All",
   "totalRecords": "Total {count} records (View All)",
   "@totalRecords": {
+    "description": "Total records count",
     "placeholders": {
       "count": {
         "type": "int"
@@ -464,11 +518,29 @@
   "menuWebDownload": "Get Material from Web",
   "menuDeviceImport": "Import from Device",
   "menuSettings": "Settings",
+  "@menuSettings": {
+    "description": "Menu item for language settings"
+  },
   "basicWords": "Basic Word Repository",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
   "basicSentences": "Basic Sentence Repository",
-  "selectMaterialSet": "학습 자료집 선택 (TODO: Translate)",
-  "sectionWords": "단어 (TODO: Translate)",
-  "sectionSentences": "문장 (TODO: Translate)",
+  "@basicSentences": {
+    "description": "Default name for basic sentences material"
+  },
+  "selectMaterialSet": "പഠന സാമഗ്രി തിരഞ്ഞെടുക്കുക",
+  "@selectMaterialSet": {
+    "description": "Title for the material selection dialog"
+  },
+  "sectionWords": "വാക്കുകൾ",
+  "@sectionWords": {
+    "description": "Header for words section in material selection"
+  },
+  "sectionSentences": "വാക്യങ്ങൾ",
+  "@sectionSentences": {
+    "description": "Header for sentences section in material selection"
+  },
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
   "targetLanguageLabel": "Target Language",
@@ -486,114 +558,30 @@
   "sectionSentence": "വാക്യ വിഭാഗം",
   "tabWord": "വാക്ക്",
   "tabSentence": "വാചകം",
-  "errorProfanity": "비속어가 포함되어 있어 번역할 수 없습니다. (TODO: Translate)",
-  "errorHateSpeech": "혐오 표현이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)",
-  "errorSexualContent": "선정적인 내용이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)",
-  "errorOtherSafety": "AI 안전 정책에 의해 번역이 거부되었습니다. (TODO: Translate)",
-  "clearAll": "모두 지우기 (TODO: Translate)",
-  "disambiguationTitle": "의미 선택 (TODO: Translate)",
-  "disambiguationPrompt": "어떤 의미로 번역하시겠습니까? (TODO: Translate)",
-  "skip": "건너뛰기 (TODO: Translate)",
+  "errorProfanity": "അസഭ്യമായ വാക്കുകൾ അടങ്ങിയതിനാൽ വിവർത്തനം ചെയ്യാൻ കഴിയില്ല.",
+  "errorHateSpeech": "വിദ്വേഷ പ്രസംഗം അടങ്ങിയതിനാൽ വിവർത്തനം ചെയ്യാൻ കഴിയില്ല.",
+  "errorSexualContent": "ലൈംഗിക ഉള്ളടക്കം അടങ്ങിയതിനാൽ വിവർത്തനം ചെയ്യാൻ കഴിയില്ല.",
+  "errorOtherSafety": "AI സുരക്ഷാ നയം കാരണം വിവർത്തനം നിരസിച്ചു.",
+  "clearAll": "എല്ലാം മായ്ക്കുക",
+  "disambiguationTitle": "അർത്ഥം തിരഞ്ഞെടുക്കുക",
+  "@disambiguationTitle": {
+    "description": "Title for disambiguation dialog"
+  },
+  "disambiguationPrompt": "ഏത് അർത്ഥത്തിലേക്കാണ് വിവർത്തനം ചെയ്യേണ്ടത്?",
+  "@disambiguationPrompt": {
+    "description": "Prompt for disambiguation dialog"
+  },
+  "skip": "ഒഴിവാക്കുക",
+  "@skip": {
+    "description": "Skip button"
+  },
   "inputModeTitle": "Input",
   "reviewModeTitle": "Review",
   "practiceModeTitle": "Practice",
-  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text.",
-  "tutorialM1ToggleTitle": "Word/Sentence Mode",
-  "basicWordRepository": "അടിസ്ഥാന വാക്കുകളുടെ ശേഖരം",
-  "basicSentenceRepository": "അടിസ്ഥാന വാചകങ്ങളുടെ ശേഖരം",
   "chatHistoryTitle": "Conversation History",
   "chatNewChat": "New Chat",
   "chatChoosePersona": "Choose a Persona",
   "chatTypeHint": "Type a message...",
-  "chatNoConversations": "No conversations yet",
-  "chatStartNewPrompt": "Start a new chat to practice!",
-  "personaTeacher": "English Teacher",
-  "personaGuide": "Travel Guide",
-  "personaFriend": "Local Friend",
-  "chatAiChat": "AI Chat",
-  "me": "Me",
-  "chatSaveAndExit": "Save & Exit",
-  "errorSelectCategory": "Please select word or sentence first!",
-  "chatEndTitle": "End & Save Chat",
-  "chatEndMessage": "Do you want to end this conversation? You can set a title for it.",
-  "tutorialAiChatTitle": "AI Chat",
-  "tutorialAiChatDesc": "Practice real conversation with AI personas here.",
-  "partnerMode": "Partner Mode",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
-  "manual": "Manual",
-  "@manual": {
-    "description": "Label for manual input in Partner Mode"
-  },
-  "speaker": "Speaker",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "switchToAi": "Switch to AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Switch to Partner",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
-  "currentLocation": "Current Location",
-  "@currentLocation": {
-    "description": "Label for GPS location"
-  },
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "@me": {
-    "description": "Label for self speaker"
-  },
-  "currentMaterialLabel": "Current Selected Material:",
-  "@currentMaterialLabel": {
-    "description": "Banner label for current material"
-  },
-  "basicMaterialRepository": "Basic Repository",
-  "@basicMaterialRepository": {
-    "description": "Name for default basic repository"
-  },
-  "word": "Word",
-  "@word": {
-    "description": "Toggle option for Word"
-  },
-  "sentence": "Sentence",
-  "@sentence": {
-    "description": "Toggle option for Sentence"
-  },
-  "helpModeChatDesc": "Talk to AI persona to practice real conversation and save useful sentences.",
-  "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
-  "@menuSettings": {
-    "description": "Menu item for language settings"
-  },
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "@basicSentences": {
-    "description": "Default name for basic sentences material"
-  },
-  "@selectMaterialSet": {
-    "description": "Title for the material selection dialog"
-  },
-  "@sectionWords": {
-    "description": "Header for words section in material selection"
-  },
-  "@sectionSentences": {
-    "description": "Header for sentences section in material selection"
-  },
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "@skip": {
-    "description": "Skip button"
-  },
   "chatFailed": "Chat failed: {error}",
   "@chatFailed": {
     "placeholders": {
@@ -602,6 +590,8 @@
       }
     }
   },
+  "chatNoConversations": "No conversations yet",
+  "chatStartNewPrompt": "Start a new chat to practice!",
   "chatFromConversation": "From Conversation ({speaker})",
   "@chatFromConversation": {
     "placeholders": {
@@ -610,8 +600,20 @@
       }
     }
   },
+  "personaTeacher": "English Teacher",
+  "personaGuide": "Travel Guide",
+  "personaFriend": "Local Friend",
   "chatUntitled": "Untitled Conversation",
-  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
-  "mode1SelectedMaterial": "Current Material Set: {name}"
+  "chatAiChat": "AI Chat",
+  "tutorialAiChatTitle": "AI Chat",
+  "tutorialAiChatDesc": "Practice real conversation with AI personas here.",
+  "mode1SelectedMaterial": "Current Material Set: {name}",
+  "basicWordRepository": "അടിസ്ഥാന വാക്കുകളുടെ ശേഖരം",
+  "basicSentenceRepository": "അടിസ്ഥാന വാചകങ്ങളുടെ ശേഖരം",
+  "chatEndTitle": "End & Save Chat",
+  "chatEndMessage": "Do you want to end this conversation? You can set a title for it.",
+  "chatSaveAndExit": "Save & Exit",
+  "errorSelectCategory": "Please select word or sentence first!",
+  "tutorialM1ToggleTitle": "Word/Sentence Mode",
+  "tutorialM1ToggleDesc": "Switch between Word and Sentence mode here. Words are saved with larger text."
 }

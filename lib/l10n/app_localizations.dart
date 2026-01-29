@@ -1104,6 +1104,12 @@ abstract class AppLocalizations {
   /// **'나중에 구분하기 쉽도록 상황을 적어주세요'**
   String get contextTagHint;
 
+  /// No description provided for @usageLimitTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'한도 도달'**
+  String get usageLimitTitle;
+
   /// No description provided for @translationLimitExceeded.
   ///
   /// In ko, this message translates to:

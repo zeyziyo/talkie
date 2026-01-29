@@ -531,6 +531,9 @@ class AppLocalizationsHi extends AppLocalizations {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => 'सीमा तक पहुँच गए';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override
@@ -637,13 +640,13 @@ class AppLocalizationsHi extends AppLocalizations {
   String get basicSentences => 'Basic Sentence Repository';
 
   @override
-  String get selectMaterialSet => '학습 자료집 선택 (TODO: Translate)';
+  String get selectMaterialSet => 'सीखने की सामग्री सेट चुनें';
 
   @override
-  String get sectionWords => '단어 (TODO: Translate)';
+  String get sectionWords => 'शब्द';
 
   @override
-  String get sectionSentences => '문장 (TODO: Translate)';
+  String get sectionSentences => 'वाक्य';
 
   @override
   String get languageSettingsTitle => 'Language Settings';
@@ -701,29 +704,32 @@ class AppLocalizationsHi extends AppLocalizations {
   String get tabSentence => 'वाक्य';
 
   @override
-  String get errorProfanity => '비속어가 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorProfanity =>
+      'इसमें अश्लील भाषा है इसलिए अनुवाद नहीं किया जा सकता।';
 
   @override
-  String get errorHateSpeech => '혐오 표현이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorHateSpeech =>
+      'इसमें घृणास्पद भाषण है इसलिए अनुवाद नहीं किया जा सकता।';
 
   @override
   String get errorSexualContent =>
-      '선정적인 내용이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+      'इसमें यौन सामग्री है इसलिए अनुवाद नहीं किया जा सकता।';
 
   @override
-  String get errorOtherSafety => 'AI 안전 정책에 의해 번역이 거부되었습니다. (TODO: Translate)';
+  String get errorOtherSafety =>
+      'AI सुरक्षा नीतियों के कारण अनुवाद अस्वीकृत कर दिया गया।';
 
   @override
-  String get clearAll => '모두 지우기 (TODO: Translate)';
+  String get clearAll => 'सब साफ़ करें';
 
   @override
-  String get disambiguationTitle => '의미 선택 (TODO: Translate)';
+  String get disambiguationTitle => 'अर्थ चुनें';
 
   @override
-  String get disambiguationPrompt => '어떤 의미로 번역하시겠습니까? (TODO: Translate)';
+  String get disambiguationPrompt => 'आप किस अर्थ में अनुवाद करना चाहेंगे?';
 
   @override
-  String get skip => '건너뛰기 (TODO: Translate)';
+  String get skip => 'छोड़ें';
 
   @override
   String get inputModeTitle => 'Input';

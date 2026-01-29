@@ -517,6 +517,9 @@ class AppLocalizationsJa extends AppLocalizations {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => '上限に達しました';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override
@@ -623,13 +626,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get basicSentences => '基本文章リポジトリ';
 
   @override
-  String get selectMaterialSet => '학습 자료집 선택 (TODO: Translate)';
+  String get selectMaterialSet => '学習資料集を選択';
 
   @override
-  String get sectionWords => '단어 (TODO: Translate)';
+  String get sectionWords => '単語';
 
   @override
-  String get sectionSentences => '문장 (TODO: Translate)';
+  String get sectionSentences => '文章';
 
   @override
   String get languageSettingsTitle => 'Language Settings';
@@ -686,29 +689,28 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tabSentence => '文章';
 
   @override
-  String get errorProfanity => '비속어가 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorProfanity => '不適切な表現が含まれているため、翻訳できません。';
 
   @override
-  String get errorHateSpeech => '혐오 표현이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorHateSpeech => 'ヘイトスピーチが含まれているため、翻訳できません。';
 
   @override
-  String get errorSexualContent =>
-      '선정적인 내용이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorSexualContent => '性的なコンテンツが含まれているため、翻訳できません。';
 
   @override
-  String get errorOtherSafety => 'AI 안전 정책에 의해 번역이 거부되었습니다. (TODO: Translate)';
+  String get errorOtherSafety => 'AI安全ポリシーにより翻訳が拒否されました。';
 
   @override
-  String get clearAll => '모두 지우기 (TODO: Translate)';
+  String get clearAll => 'すべてクリア';
 
   @override
-  String get disambiguationTitle => '의미 선택 (TODO: Translate)';
+  String get disambiguationTitle => '意味を選択';
 
   @override
-  String get disambiguationPrompt => '어떤 의미로 번역하시겠습니까? (TODO: Translate)';
+  String get disambiguationPrompt => 'どの意味で翻訳しますか？';
 
   @override
-  String get skip => '건너뛰기 (TODO: Translate)';
+  String get skip => 'スキップ';
 
   @override
   String get inputModeTitle => '入力';

@@ -517,6 +517,9 @@ class AppLocalizationsZh extends AppLocalizations {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => '已达上限';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override
@@ -623,13 +626,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get basicSentences => '基础句库';
 
   @override
-  String get selectMaterialSet => '학습 자료집 선택 (TODO: Translate)';
+  String get selectMaterialSet => '选择学习资料集';
 
   @override
-  String get sectionWords => '단어 (TODO: Translate)';
+  String get sectionWords => '单词';
 
   @override
-  String get sectionSentences => '문장 (TODO: Translate)';
+  String get sectionSentences => '句子';
 
   @override
   String get languageSettingsTitle => 'Language Settings';
@@ -686,29 +689,28 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tabSentence => '句子';
 
   @override
-  String get errorProfanity => '비속어가 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorProfanity => '包含不雅内容，无法翻译。';
 
   @override
-  String get errorHateSpeech => '혐오 표현이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorHateSpeech => '包含仇恨言论，无法翻译。';
 
   @override
-  String get errorSexualContent =>
-      '선정적인 내용이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorSexualContent => '包含色情内容，无法翻译。';
 
   @override
-  String get errorOtherSafety => 'AI 안전 정책에 의해 번역이 거부되었습니다. (TODO: Translate)';
+  String get errorOtherSafety => '由于 AI 安全策略，翻译被拒绝。';
 
   @override
-  String get clearAll => '모두 지우기 (TODO: Translate)';
+  String get clearAll => '全部清除';
 
   @override
-  String get disambiguationTitle => '의미 선택 (TODO: Translate)';
+  String get disambiguationTitle => '选择含义';
 
   @override
-  String get disambiguationPrompt => '어떤 의미로 번역하시겠습니까? (TODO: Translate)';
+  String get disambiguationPrompt => '您想翻译成哪个含义？';
 
   @override
-  String get skip => '건너뛰기 (TODO: Translate)';
+  String get skip => '跳过';
 
   @override
   String get inputModeTitle => '输入';
@@ -1311,6 +1313,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => '已达用量上限';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override
@@ -1417,13 +1422,13 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get basicSentences => '基础句库';
 
   @override
-  String get selectMaterialSet => '학습 자료집 선택 (TODO: Translate)';
+  String get selectMaterialSet => '选择学习资料集';
 
   @override
-  String get sectionWords => '단어 (TODO: Translate)';
+  String get sectionWords => '单词';
 
   @override
-  String get sectionSentences => '문장 (TODO: Translate)';
+  String get sectionSentences => '句子';
 
   @override
   String get languageSettingsTitle => 'Language Settings';
@@ -1480,29 +1485,28 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tabSentence => '句子';
 
   @override
-  String get errorProfanity => '비속어가 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorProfanity => '包含不雅内容，无法翻译。';
 
   @override
-  String get errorHateSpeech => '혐오 표현이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorHateSpeech => '包含仇恨言论，无法翻译。';
 
   @override
-  String get errorSexualContent =>
-      '선정적인 내용이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorSexualContent => '包含性暗示内容，无法翻译。';
 
   @override
-  String get errorOtherSafety => 'AI 안전 정책에 의해 번역이 거부되었습니다. (TODO: Translate)';
+  String get errorOtherSafety => '由于 AI 安全策略，翻译被拒绝。';
 
   @override
-  String get clearAll => '모두 지우기 (TODO: Translate)';
+  String get clearAll => '全部清除';
 
   @override
-  String get disambiguationTitle => '의미 선택 (TODO: Translate)';
+  String get disambiguationTitle => '选择释义';
 
   @override
-  String get disambiguationPrompt => '어떤 의미로 번역하시겠습니까? (TODO: Translate)';
+  String get disambiguationPrompt => '您想翻译成哪个意思？';
 
   @override
-  String get skip => '건너뛰기 (TODO: Translate)';
+  String get skip => '跳过';
 
   @override
   String get inputModeTitle => 'Input';
@@ -2108,6 +2112,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => '已達使用上限';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override
@@ -2214,13 +2221,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get basicSentences => '基礎句庫';
 
   @override
-  String get selectMaterialSet => '학습 자료집 선택 (TODO: Translate)';
+  String get selectMaterialSet => '選擇學習資料集';
 
   @override
-  String get sectionWords => '단어 (TODO: Translate)';
+  String get sectionWords => '單字';
 
   @override
-  String get sectionSentences => '문장 (TODO: Translate)';
+  String get sectionSentences => '句子';
 
   @override
   String get languageSettingsTitle => 'Language Settings';
@@ -2277,29 +2284,28 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tabSentence => '句子';
 
   @override
-  String get errorProfanity => '비속어가 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorProfanity => '包含不雅字詞，無法翻譯。';
 
   @override
-  String get errorHateSpeech => '혐오 표현이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorHateSpeech => '包含仇恨言論，無法翻譯。';
 
   @override
-  String get errorSexualContent =>
-      '선정적인 내용이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)';
+  String get errorSexualContent => '包含煽情內容，無法翻譯。';
 
   @override
-  String get errorOtherSafety => 'AI 안전 정책에 의해 번역이 거부되었습니다. (TODO: Translate)';
+  String get errorOtherSafety => '因人工智慧安全政策而拒絕翻譯。';
 
   @override
-  String get clearAll => '모두 지우기 (TODO: Translate)';
+  String get clearAll => '全部清除';
 
   @override
-  String get disambiguationTitle => '의미 선택 (TODO: Translate)';
+  String get disambiguationTitle => '選擇含義';
 
   @override
-  String get disambiguationPrompt => '어떤 의미로 번역하시겠습니까? (TODO: Translate)';
+  String get disambiguationPrompt => '您想翻譯成哪個含義？';
 
   @override
-  String get skip => '건너뛰기 (TODO: Translate)';
+  String get skip => '跳過';
 
   @override
   String get inputModeTitle => 'Input';

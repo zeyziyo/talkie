@@ -1,5 +1,69 @@
 {
   "@@locale": "zh",
+  "helpTitle": "帮助与指南",
+  "helpTabModes": "模式",
+  "helpTabJson": "JSON 格式",
+  "helpTabTour": "新手引导",
+  "helpMode1Desc": "语音识别、翻译并收听结果。",
+  "helpMode1Details": "• 语音输入：点击麦克风图标开始/停止聆听\n• 文本输入：直接输入文本进行翻译\n• 自动搜索：检测相似的现有句子\n• 翻译：点击按钮立即翻译\n• 收听：点击扬声器图标收听 TTS（原文/译文）\n• 保存：“保存数据”添加到历史记录\n• 清除：重置所有输入",
+  "helpMode2Desc": "复习已保存的句子，自动隐藏译文并跟踪复习次数。",
+  "helpMode2Details": "• 选择资料：选择特定资料集或“复习全部”\n• 翻转卡片：使用“显示/隐藏”查看译文\n• 收听：播放特定句子的 TTS\n• 标记已学：勾选 (V) 已完成的项目\n• 删除：长按卡片删除记录\n• 筛选：查看全部或按资料筛选",
+  "helpMode3Desc": "通过聆听和跟读句子练习口语。",
+  "helpMode3Details": "• 选择资料：选择学习包\n• 间隔：使用 [-] [+] 调整等待时间（3秒-60秒）\n• 开始/停止：控制跟读会话\n• 说话：聆听音频并跟读\n• 反馈：准确率评分（0-100）及颜色代码\n• 重试：如果未检测到声音，请使用重试按钮",
+  "helpModeChatDesc": "Talk to AI persona to practice real conversation and save useful sentences.",
+  "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
+  "helpJsonDesc": "要在模式 3 中导入学习资料，请创建具有以下结构的 JSON 文件：",
+  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
+  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
+  "helpTourDesc": "启动交互式教程以了解主要功能。",
+  "partnerMode": "Partner Mode",
+  "@partnerMode": {
+    "description": "Label for Partner Mode logic"
+  },
+  "manual": "Manual",
+  "@manual": {
+    "description": "Label for manual input in Partner Mode"
+  },
+  "speaker": "Speaker",
+  "@speaker": {
+    "description": "Label for speaker selection"
+  },
+  "switchToAi": "Switch to AI",
+  "@switchToAi": {
+    "description": "Tooltip for switching to AI mode"
+  },
+  "switchToPartner": "Switch to Partner",
+  "@switchToPartner": {
+    "description": "Tooltip for switching to Partner mode"
+  },
+  "currentLocation": "Current Location",
+  "@currentLocation": {
+    "description": "Label for GPS location"
+  },
+  "partner": "Partner",
+  "@partner": {
+    "description": "Label for partner speaker"
+  },
+  "me": "我",
+  "@me": {
+    "description": "Label for self speaker"
+  },
+  "currentMaterialLabel": "Current Selected Material:",
+  "@currentMaterialLabel": {
+    "description": "Banner label for current material"
+  },
+  "basicMaterialRepository": "Basic Repository",
+  "@basicMaterialRepository": {
+    "description": "Name for default basic repository"
+  },
+  "word": "Word",
+  "@word": {
+    "description": "Toggle option for Word"
+  },
+  "sentence": "Sentence",
+  "@sentence": {
+    "description": "Toggle option for Sentence"
+  },
   "appTitle": "Talkie",
   "@appTitle": {
     "description": "Application title"
@@ -363,18 +427,6 @@
   "tryAgain": "再试一次",
   "startPractice": "开始练习",
   "stopPractice": "停止练习",
-  "helpTitle": "帮助与指南",
-  "helpTabModes": "模式",
-  "helpTabJson": "JSON 格式",
-  "helpTabTour": "新手引导",
-  "helpMode1Desc": "语音识别、翻译并收听结果。",
-  "helpMode1Details": "• 语音输入：点击麦克风图标开始/停止聆听\n• 文本输入：直接输入文本进行翻译\n• 自动搜索：检测相似的现有句子\n• 翻译：点击按钮立即翻译\n• 收听：点击扬声器图标收听 TTS（原文/译文）\n• 保存：“保存数据”添加到历史记录\n• 清除：重置所有输入",
-  "helpMode2Desc": "复习已保存的句子，自动隐藏译文并跟踪复习次数。",
-  "helpMode2Details": "• 选择资料：选择特定资料集或“复习全部”\n• 翻转卡片：使用“显示/隐藏”查看译文\n• 收听：播放特定句子的 TTS\n• 标记已学：勾选 (V) 已完成的项目\n• 删除：长按卡片删除记录\n• 筛选：查看全部或按资料筛选",
-  "helpMode3Desc": "通过聆听和跟读句子练习口语。",
-  "helpMode3Details": "• 选择资料：选择学习包\n• 间隔：使用 [-] [+] 调整等待时间（3秒-60秒）\n• 开始/停止：控制跟读会话\n• 说话：聆听音频并跟读\n• 反馈：准确率评分（0-100）及颜色代码\n• 重试：如果未检测到声音，请使用重试按钮",
-  "helpJsonDesc": "要在模式 3 中导入学习资料，请创建具有以下结构的 JSON 文件：",
-  "helpTourDesc": "启动交互式教程以了解主要功能。",
   "startTutorial": "开始教程",
   "tutorialMicTitle": "语音输入",
   "tutorialMicDesc": "点击麦克风按钮开始语音输入。",
@@ -425,6 +477,7 @@
   "labelSentence": "Sentence",
   "contextTagLabel": "Context/Situation (Optional) - Ex: Morning greeting, polite form",
   "contextTagHint": "Describe situation for easier classification later",
+  "usageLimitTitle": "已达上限",
   "translationLimitExceeded": "Translation Limit Exceeded",
   "translationLimitMessage": "You have used all your free daily translations (5). Watch an ad to refill 5 immediately?",
   "watchAdAndRefill": "Watch Ad & Refill (+5)",
@@ -433,6 +486,7 @@
   "reviewAll": "Review All",
   "totalRecords": "Total {count} records (View All)",
   "@totalRecords": {
+    "description": "Total records count",
     "placeholders": {
       "count": {
         "type": "int"
@@ -464,11 +518,29 @@
   "menuWebDownload": "Get Material from Web",
   "menuDeviceImport": "Import from Device",
   "menuSettings": "Settings",
+  "@menuSettings": {
+    "description": "Menu item for language settings"
+  },
   "basicWords": "基础词库",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
   "basicSentences": "基础句库",
-  "selectMaterialSet": "학습 자료집 선택 (TODO: Translate)",
-  "sectionWords": "단어 (TODO: Translate)",
-  "sectionSentences": "문장 (TODO: Translate)",
+  "@basicSentences": {
+    "description": "Default name for basic sentences material"
+  },
+  "selectMaterialSet": "选择学习资料集",
+  "@selectMaterialSet": {
+    "description": "Title for the material selection dialog"
+  },
+  "sectionWords": "单词",
+  "@sectionWords": {
+    "description": "Header for words section in material selection"
+  },
+  "sectionSentences": "句子",
+  "@sectionSentences": {
+    "description": "Header for sentences section in material selection"
+  },
   "languageSettingsTitle": "Language Settings",
   "sourceLanguageLabel": "Source Language",
   "targetLanguageLabel": "Target Language",
@@ -486,114 +558,30 @@
   "sectionSentence": "句子部分",
   "tabWord": "单词",
   "tabSentence": "句子",
-  "errorProfanity": "비속어가 포함되어 있어 번역할 수 없습니다. (TODO: Translate)",
-  "errorHateSpeech": "혐오 표현이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)",
-  "errorSexualContent": "선정적인 내용이 포함되어 있어 번역할 수 없습니다. (TODO: Translate)",
-  "errorOtherSafety": "AI 안전 정책에 의해 번역이 거부되었습니다. (TODO: Translate)",
-  "clearAll": "모두 지우기 (TODO: Translate)",
-  "disambiguationTitle": "의미 선택 (TODO: Translate)",
-  "disambiguationPrompt": "어떤 의미로 번역하시겠습니까? (TODO: Translate)",
-  "skip": "건너뛰기 (TODO: Translate)",
+  "errorProfanity": "包含不雅内容，无法翻译。",
+  "errorHateSpeech": "包含仇恨言论，无法翻译。",
+  "errorSexualContent": "包含色情内容，无法翻译。",
+  "errorOtherSafety": "由于 AI 安全策略，翻译被拒绝。",
+  "clearAll": "全部清除",
+  "disambiguationTitle": "选择含义",
+  "@disambiguationTitle": {
+    "description": "Title for disambiguation dialog"
+  },
+  "disambiguationPrompt": "您想翻译成哪个含义？",
+  "@disambiguationPrompt": {
+    "description": "Prompt for disambiguation dialog"
+  },
+  "skip": "跳过",
+  "@skip": {
+    "description": "Skip button"
+  },
   "inputModeTitle": "输入",
   "reviewModeTitle": "复习",
   "practiceModeTitle": "发音练习",
-  "tutorialM1ToggleDesc": "在这里切换单词和句子模式。",
-  "tutorialM1ToggleTitle": "单词/句子模式",
-  "basicWordRepository": "基础词库",
-  "basicSentenceRepository": "基础句库",
   "chatHistoryTitle": "对话历史",
   "chatNewChat": "新对话",
   "chatChoosePersona": "选择角色",
   "chatTypeHint": "输入消息...",
-  "chatNoConversations": "暂无对话",
-  "chatStartNewPrompt": "开始新对话进行练习！",
-  "personaTeacher": "英语老师",
-  "personaGuide": "旅行导游",
-  "personaFriend": "当地朋友",
-  "chatAiChat": "AI聊天",
-  "me": "我",
-  "chatSaveAndExit": "保存并退出",
-  "errorSelectCategory": "请先选择单词或句子！",
-  "chatEndTitle": "结束并保存对话",
-  "chatEndMessage": "是否结束此对话？",
-  "tutorialAiChatTitle": "AI聊天",
-  "tutorialAiChatDesc": "在这里与 AI 角色练习实际对话。",
-  "partnerMode": "Partner Mode",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
-  "manual": "Manual",
-  "@manual": {
-    "description": "Label for manual input in Partner Mode"
-  },
-  "speaker": "Speaker",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "switchToAi": "Switch to AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Switch to Partner",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
-  "currentLocation": "Current Location",
-  "@currentLocation": {
-    "description": "Label for GPS location"
-  },
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "@me": {
-    "description": "Label for self speaker"
-  },
-  "currentMaterialLabel": "Current Selected Material:",
-  "@currentMaterialLabel": {
-    "description": "Banner label for current material"
-  },
-  "basicMaterialRepository": "Basic Repository",
-  "@basicMaterialRepository": {
-    "description": "Name for default basic repository"
-  },
-  "word": "Word",
-  "@word": {
-    "description": "Toggle option for Word"
-  },
-  "sentence": "Sentence",
-  "@sentence": {
-    "description": "Toggle option for Sentence"
-  },
-  "helpModeChatDesc": "Talk to AI persona to practice real conversation and save useful sentences.",
-  "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
-  "@menuSettings": {
-    "description": "Menu item for language settings"
-  },
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "@basicSentences": {
-    "description": "Default name for basic sentences material"
-  },
-  "@selectMaterialSet": {
-    "description": "Title for the material selection dialog"
-  },
-  "@sectionWords": {
-    "description": "Header for words section in material selection"
-  },
-  "@sectionSentences": {
-    "description": "Header for sentences section in material selection"
-  },
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "@skip": {
-    "description": "Skip button"
-  },
   "chatFailed": "Chat failed: {error}",
   "@chatFailed": {
     "placeholders": {
@@ -602,6 +590,8 @@
       }
     }
   },
+  "chatNoConversations": "暂无对话",
+  "chatStartNewPrompt": "开始新对话进行练习！",
   "chatFromConversation": "From Conversation ({speaker})",
   "@chatFromConversation": {
     "placeholders": {
@@ -610,8 +600,20 @@
       }
     }
   },
+  "personaTeacher": "英语老师",
+  "personaGuide": "旅行导游",
+  "personaFriend": "当地朋友",
   "chatUntitled": "Untitled Conversation",
-  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
-  "mode1SelectedMaterial": "Current Material Set: {name}"
+  "chatAiChat": "AI聊天",
+  "tutorialAiChatTitle": "AI聊天",
+  "tutorialAiChatDesc": "在这里与 AI 角色练习实际对话。",
+  "mode1SelectedMaterial": "Current Material Set: {name}",
+  "basicWordRepository": "基础词库",
+  "basicSentenceRepository": "基础句库",
+  "chatEndTitle": "结束并保存对话",
+  "chatEndMessage": "是否结束此对话？",
+  "chatSaveAndExit": "保存并退出",
+  "errorSelectCategory": "请先选择单词或句子！",
+  "tutorialM1ToggleTitle": "单词/句子模式",
+  "tutorialM1ToggleDesc": "在这里切换单词和句子模式。"
 }

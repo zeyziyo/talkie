@@ -522,6 +522,9 @@ class AppLocalizationsAf extends AppLocalizations {
       'Describe situation for easier classification later';
 
   @override
+  String get usageLimitTitle => 'Limiet bereik';
+
+  @override
   String get translationLimitExceeded => 'Translation Limit Exceeded';
 
   @override

@@ -514,6 +514,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get contextTagHint => '나중에 구분하기 쉽도록 상황을 적어주세요';
 
   @override
+  String get usageLimitTitle => '한도 도달';
+
+  @override
   String get translationLimitExceeded => '번역 한도 초과';
 
   @override
