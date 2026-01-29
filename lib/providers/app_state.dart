@@ -1324,6 +1324,17 @@ class AppState extends ChangeNotifier {
     // _studyMaterials 로직은 필요시 하위 호환을 위해 유지 가능하나, 여기서는 태그 기반으로 동작 유도
   }
 
+  /// 학습 자료 선택 (Legacy & Tag Sync)
+  Future<void> selectMaterial(int? id) async {
+    _selectedMaterialId = id;
+    if (id != null && id != 0) {
+      await loadMaterialRecords(id);
+    } else {
+      _materialRecords = [];
+    }
+    notifyListeners();
+  }
+
   Future<void> loadMaterialRecords(int materialId) async {
     if (materialId == 0) {
       await loadRecordsByTags(); // 기본 로드

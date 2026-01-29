@@ -1863,6 +1863,8 @@ class DatabaseService {
       'item_type': itemType,
       'tag': tag
     }, conflictAlgorithm: ConflictAlgorithm.ignore);
+  }
+
   /// 통합 테이블에 단어/문장 및 번역 연결 저장
   static Future<void> saveUnifiedRecord({
     required String text,
@@ -1873,6 +1875,7 @@ class DatabaseService {
     String? pos,
     String? formType,
     String? root,
+    String? note,
     List<String>? tags,
     Transaction? txn,
   }) async {
