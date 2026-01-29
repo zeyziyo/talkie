@@ -1930,7 +1930,10 @@ class AppState extends ChangeNotifier {
       final importResult = await DatabaseService.importFromJsonWithMetadata(jsonContent, fileName: fileName);
       
       _statusMessage = 'Import complete';
-      await loadStudyRecords(); // Reload user library to show new material
+      // Refresh Local Study Materials (Dropdown)
+      await loadStudyMaterials();
+      // Also refresh Supabase list (Review List) - though it might be empty until sync
+      await loadStudyRecords(); 
       notifyListeners();
       
       return importResult;
