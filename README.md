@@ -1,5 +1,7 @@
 # Talkie
 
+[![Build Android APK](https://github.com/zeyziyo/talkie/actions/workflows/build-apk.yml/badge.svg)](https://github.com/zeyziyo/talkie/actions/workflows/build-apk.yml)
+
 언어 학습 앱 - 음성 인식 및 번역 기능 제공
 
 ## 앱 소개 (About)
@@ -206,3 +208,22 @@ The Flet version is preserved at `c:\PythonProjects\talkland_flet`.
 ## 라이선스 (License)
 
 Private project
+
+## 수익 모델 및 과금 정책 (Revenue & Pricing)
+
+본 앱은 사용자에게 최대한의 가치를 무료로 제공하면서도, 지속 가능한 서비스를 유지하기 위해 다음과 같은 합리적인 과금 정책을 운영합니다.
+The app operates a sustainable pricing policy to provide maximum value for free while maintaining service quality.
+
+### 1. 무료 플랜 (Basic Plan)
+*   **일일 번역 제한**: 하루 20회 무료 제공 (Daily Limit: 20 translations free)
+*   **말하기 연습 (Mode 3)**: **무제한 무료** (Unlimited free - uses On-Device Engine)
+*   **학습 자료 가져오기**: **무제한 무료** (Unlimited free - Local DB storage)
+*   **리필 (Refill)**: 보상형 광고 시청 시 번역 횟수 리필 제공 (Watch ad to refill quota)
+
+### 2. 비용 구조 및 지속 가능성 (Sustainability)
+*   **AI 비용**: 최신 Gemini 모델 사용으로 매우 저렴 (Very low AI cost)
+*   **수익성**: 사용자가 많아질수록 광고 수익(보상형 광고)이 서버 유지비를 충분히 상회하는 구조 (Ad revenue covers server costs exponentially as users grow)
+*   **서버 리스크 없음**: 1만 명 이상의 동시 사용자도 안정적으로 지원 (Stable even with 10k+ concurrent users)
+
+자세한 분석 내용은 `revenue_model.md`를 참고하세요.
+See `revenue_model.md` for detailed analysis.
