@@ -79,11 +79,83 @@ class _Mode2WidgetState extends State<Mode2Widget> {
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 children: [
-                  SearchBar(
-                    hintText: '단어 또는 문장 검색...',
-                    onChanged: (value) => appState.setSearchQuery(value),
-                    padding: WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 16)),
-                    elevation: WidgetStateProperty.all(1),
+                  // Smart Autocomplete Search
+                  LayoutBuilder(
+                    builder: (context, constraints) {
+                      return Autocomplete<Map<String, String>>(
+                        optionsBuilder: (TextEditingValue textEditingValue) {
+                          if (textEditingValue.text.isEmpty) {
+                             return const Iterable<Map<String, String>>.empty();
+                          }
+                          // Tab-Specific Search
+                          return appState.searchByType(textEditingValue.text);
+                        },
+                        displayStringForOption: (Map<String, String> option) => option['text']!,
+                        onSelected: (Map<String, String> selection) {
+                           // Just jump to result within current tab
+                           appState.jumpToSearchResult(selection['text']!, selection['type']!);
+                        },
+                        fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
+                          // Sync with AppState's query
+                          if (appState.searchQuery != textEditingController.text && appState.searchQuery.isNotEmpty) {
+                             if (textEditingController.text.isEmpty) { 
+                                textEditingController.text = appState.searchQuery;
+                             }
+                          }
+                          return SearchBar(
+                            controller: textEditingController,
+                            focusNode: focusNode,
+                            hintText: appState.recordTypeFilter == 'word' 
+                                ? '단어 검색 (현재 탭)...' 
+                                : '문장 검색 (현재 탭)...',
+                            onChanged: (value) {
+                               if (value.isEmpty) {
+                                  appState.setSearchQuery(''); 
+                               }
+                            },
+                            onSubmitted: (value) => appState.setSearchQuery(value),
+                            leading: const Icon(Icons.search),
+                            padding: WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 16)),
+                            elevation: WidgetStateProperty.all(1),
+                            trailing: [
+                              if (textEditingController.text.isNotEmpty)
+                                IconButton(
+                                  icon: const Icon(Icons.clear),
+                                  onPressed: () {
+                                    textEditingController.clear();
+                                    appState.setSearchQuery('');
+                                  },
+                                ),
+                            ],
+                          );
+                        },
+                        optionsViewBuilder: (context, onSelected, options) {
+                          return Align(
+                            alignment: Alignment.topLeft,
+                            child: Material(
+                              elevation: 4.0,
+                              child: SizedBox(
+                                width: constraints.maxWidth,
+                                child: ListView.builder(
+                                  padding: EdgeInsets.zero,
+                                  shrinkWrap: true,
+                                  itemCount: options.length,
+                                  itemBuilder: (BuildContext context, int index) {
+                                    final option = options.elementAt(index);
+                                    return ListTile(
+                                      leading: const Icon(Icons.search, size: 20, color: Colors.grey),
+                                      title: Text(option['text']!),
+                                      onTap: () => onSelected(option),
+                                    );
+                                  },
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      );
+
+                    }
                   ),
                   const SizedBox(height: 12),
                   // 태그 필터 칩 목록
@@ -592,6 +664,31 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                     ),
                   ],
                 ),
+                // Toggle Memorized Button
+                IconButton(
+                  icon: Icon(
+                    (record['is_memorized'] == true) 
+                        ? Icons.check_circle 
+                        : Icons.check_circle_outline,
+                    color: (record['is_memorized'] == true) 
+                        ? Colors.green 
+                        : Colors.grey[400],
+                  ),
+                  tooltip: (record['is_memorized'] == true) 
+                      ? '학습 완료 (다시 보이려면 클릭)' 
+                      : '학습 완료 체크',
+                  onPressed: () {
+                     final appState = Provider.of<AppState>(context, listen: false);
+                     // Toggle status logic
+                     appState.toggleMemorizedStatus(
+                         record['id'], 
+                         record['is_memorized'] == true
+                     );
+                  },
+                )
+              ],
+            ),
+
                 
                 // Context Tag & Hint
                 Builder(
@@ -764,7 +861,8 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                     ),
                   ],
                 ),
-              ],
+              ], // Closes spread list
+            ],   // Closes Column children
             ),
           ),
         ),

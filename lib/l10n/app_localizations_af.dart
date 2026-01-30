@@ -859,4 +859,37 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get typeImperative => '명령문';
+
+  @override
+  String get labelNote => '주석';
+
+  @override
+  String get metadataFormType => '문법 형태';
+
+  @override
+  String get formInfinitive => '원형/현재형';
+
+  @override
+  String get formPast => '과거형';
+
+  @override
+  String get formPastParticiple => '과거분사';
+
+  @override
+  String get formPresentParticiple => '현재분사 (ing)';
+
+  @override
+  String get formThirdPersonSingular => '3인칭 단수';
+
+  @override
+  String get formPlural => '복수형';
+
+  @override
+  String get formPositive => '원급';
+
+  @override
+  String get formComparative => '비교급';
+
+  @override
+  String get formSuperlative => '최상급';
 }

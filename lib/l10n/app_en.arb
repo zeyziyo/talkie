@@ -612,5 +612,17 @@
   "typeStatement": "Statement",
   "typeQuestion": "Question",
   "typeExclamation": "Exclamation",
-  "typeImperative": "Imperative"
+
+  "typeImperative": "Imperative",
+  "labelNote": "Note",
+  "metadataFormType": "Form Type",
+  "formInfinitive": "Infinitive/Present",
+  "formPast": "Past",
+  "formPastParticiple": "Past Participle",
+  "formPresentParticiple": "Present Participle",
+  "formThirdPersonSingular": "3rd Person Singular",
+  "formPlural": "Plural",
+  "formPositive": "Positive",
+  "formComparative": "Comparative",
+  "formSuperlative": "Superlative"
 }

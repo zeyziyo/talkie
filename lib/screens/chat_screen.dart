@@ -35,6 +35,10 @@ class _ChatScreenState extends State<ChatScreen> {
     if (widget.initialDialogue != null) {
       _loadHistory();
     }
+    // Load list for Dropdown
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Provider.of<AppState>(context, listen: false).loadDialogueGroups();
+    });
   }
 
   Future<void> _loadHistory() async {
@@ -474,19 +478,23 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
   
-  void _speak(String text, String languageCode) {
+  void _speak(String text, String languageCode, {bool isUser = true}) {
     if (text.isEmpty) return;
-    String localeId = 'en-US';
-    if (languageCode == 'ko') localeId = 'ko-KR';
-    else if (languageCode == 'en') localeId = 'en-US';
-    else if (languageCode == 'ja') localeId = 'ja-JP';
-    else if (languageCode == 'zh') localeId = 'zh-CN';
-    else if (languageCode == 'es') localeId = 'es-ES';
-    else if (languageCode == 'fr') localeId = 'fr-FR';
-    else if (languageCode == 'de') localeId = 'de-DE';
-    else localeId = languageCode;
+    
+    // Use AppState's locale helper for consistency
+    final appState = Provider.of<AppState>(context, listen: false);
+    final localeId = appState.getServiceLocale(languageCode);
 
-    _speechService.speak(text, lang: localeId);
+    // Clean text
+    String cleanText = text.replaceAll(RegExp(r'[\*\_#\`]'), '');
+    cleanText = cleanText.replaceAllMapped(RegExp(r'\[([^\]]+)\]\([^\)]+\)'), (match) {
+      return match.group(1) ?? '';
+    });
+    
+    // Determine Gender
+    final gender = isUser ? appState.chatUserGender : appState.chatAiGender;
+
+    _speechService.speak(cleanText, lang: localeId, gender: gender);
   }
 
   @override
@@ -499,7 +507,71 @@ class _ChatScreenState extends State<ChatScreen> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(appState.activeDialogueTitle ?? l10n.chatAiChat, style: const TextStyle(fontSize: 16)),
+            // Dialogue Dropdown
+            Consumer<AppState>(
+              builder: (context, state, _) {
+                final groups = state.dialogueGroups;
+                final activeId = state.activeDialogueId;
+                
+                // Truncate title helper
+                String truncate(String s) => s.length > 20 ? '${s.substring(0, 20)}...' : s;
+
+                // If no groups, just show text
+                if (groups.isEmpty) {
+                   return Text(state.activeDialogueTitle ?? l10n.chatAiChat, style: const TextStyle(fontSize: 16));
+                }
+
+                return Theme(
+                  data: Theme.of(context).copyWith(
+                    canvasColor: _isPartnerMode ? Colors.teal : const Color(0xFF667eea),
+                  ),
+                  child: DropdownButtonHideUnderline(
+                    child: DropdownButton<String>(
+                      value: groups.any((g) => g.id == activeId) ? activeId : null,
+                      hint: Text(
+                        truncate(state.activeDialogueTitle ?? l10n.chatAiChat), 
+                        style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)
+                      ),
+                      icon: const Icon(Icons.arrow_drop_down, color: Colors.white70),
+                      isExpanded: false,
+                      isDense: true,
+                      style: const TextStyle(color: Colors.white, fontSize: 16),
+                      onChanged: (String? newValue) async {
+                        if (newValue == 'new_chat') {
+                           await state.startNewDialogue(persona: _isPartnerMode ? 'Partner' : 'AI');
+                           setState(() { _messages = []; });
+                        } else if (newValue != null) {
+                           final group = groups.firstWhere((g) => g.id == newValue);
+                           await state.loadExistingDialogue(group);
+                           _loadHistory();
+                        }
+                      },
+                      items: [
+                        // New Chat Option
+                        DropdownMenuItem<String>(
+                          value: 'new_chat',
+                          child: Row(
+                            children: [
+                              const Icon(Icons.add, color: Colors.white, size: 20),
+                              const SizedBox(width: 8),
+                              Text(l10n.chatNew ?? "New Chat"),
+                            ],
+                          ),
+                        ),
+                        
+                        ...groups.map((group) {
+                          return DropdownMenuItem<String>(
+                            value: group.id,
+                            child: Text(truncate(group.title ?? 'no title')),
+                          );
+                        }).toList(), // Removed toList() inside map? No.
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+            
             if (_isPartnerMode)
                Text(
                  '${l10n.partnerMode}: ${l10n.manual}', 
@@ -521,10 +593,33 @@ class _ChatScreenState extends State<ChatScreen> {
               });
             },
           ),
-          IconButton(
-            icon: const Icon(Icons.exit_to_app),
             onPressed: () => _endChat(l10n),
             tooltip: l10n.chatSaveAndExit,
+          ),
+          
+          // Voice Settings Menu
+          PopupMenuButton<String>(
+            icon: const Icon(Icons.tune),
+            tooltip: 'Voice Settings',
+            onSelected: (value) {
+              if (value == 'settings') {
+                _showVoiceSettingsDialog(context);
+              }
+            },
+            itemBuilder: (BuildContext context) {
+              return [
+                 const PopupMenuItem<String>(
+                   value: 'settings',
+                   child: Row(
+                     children: [
+                       Icon(Icons.record_voice_over, color: Colors.black54),
+                       SizedBox(width: 8),
+                       Text('Voice Settings'),
+                     ],
+                   ),
+                 ),
+              ];
+            },
           ),
         ],
       ),
@@ -636,7 +731,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 if (isSpeaking) {
                                   _speechService.stopSpeaking();
                                 } else {
-                                  _speak(primaryText, primaryLang);
+                                  _speak(primaryText, primaryLang, isUser: isUser);
                                 }
                               },
                               constraints: const BoxConstraints(),
@@ -682,7 +777,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                       if (isSpeaking) {
                                         _speechService.stopSpeaking();
                                       } else {
-                                        _speak(secondaryText, secondaryLang);
+                                        _speak(secondaryText, secondaryLang, isUser: isUser);
                                       }
                                     },
                                     constraints: const BoxConstraints(),
@@ -791,6 +886,74 @@ class _ChatScreenState extends State<ChatScreen> {
           ),
         ],
       ),
+    );
+  }
+  // Voice Settings Dialog
+  void _showVoiceSettingsDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        final appState = Provider.of<AppState>(context);
+        return AlertDialog(
+          title: const Text('Voice Settings'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text('Select preferred voice gender (Target: 30s tone).'),
+              const SizedBox(height: 16),
+              
+              const Text('My Voice (User)', style: TextStyle(fontWeight: FontWeight.bold)),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                   ChoiceChip(
+                     label: const Text('Male'),
+                     selected: appState.chatUserGender == 'male',
+                     onSelected: (selected) {
+                       if (selected) appState.setChatUserGender('male');
+                     },
+                   ),
+                   ChoiceChip(
+                     label: const Text('Female'),
+                     selected: appState.chatUserGender == 'female',
+                     onSelected: (selected) {
+                       if (selected) appState.setChatUserGender('female');
+                     },
+                   ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              
+              const Text('Partner Voice (AI)', style: TextStyle(fontWeight: FontWeight.bold)),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                   ChoiceChip(
+                     label: const Text('Male'),
+                     selected: appState.chatAiGender == 'male',
+                     onSelected: (selected) {
+                       if (selected) appState.setChatAiGender('male');
+                     },
+                   ),
+                   ChoiceChip(
+                     label: const Text('Female'),
+                     selected: appState.chatAiGender == 'female',
+                     onSelected: (selected) {
+                       if (selected) appState.setChatAiGender('female');
+                     },
+                   ),
+                ],
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Close'),
+            ),
+          ],
+        );
+      },
     );
   }
 }

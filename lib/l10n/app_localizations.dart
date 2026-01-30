@@ -1745,6 +1745,72 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'명령문'**
   String get typeImperative;
+
+  /// No description provided for @labelNote.
+  ///
+  /// In ko, this message translates to:
+  /// **'주석'**
+  String get labelNote;
+
+  /// No description provided for @metadataFormType.
+  ///
+  /// In ko, this message translates to:
+  /// **'문법 형태'**
+  String get metadataFormType;
+
+  /// No description provided for @formInfinitive.
+  ///
+  /// In ko, this message translates to:
+  /// **'원형/현재형'**
+  String get formInfinitive;
+
+  /// No description provided for @formPast.
+  ///
+  /// In ko, this message translates to:
+  /// **'과거형'**
+  String get formPast;
+
+  /// No description provided for @formPastParticiple.
+  ///
+  /// In ko, this message translates to:
+  /// **'과거분사'**
+  String get formPastParticiple;
+
+  /// No description provided for @formPresentParticiple.
+  ///
+  /// In ko, this message translates to:
+  /// **'현재분사 (ing)'**
+  String get formPresentParticiple;
+
+  /// No description provided for @formThirdPersonSingular.
+  ///
+  /// In ko, this message translates to:
+  /// **'3인칭 단수'**
+  String get formThirdPersonSingular;
+
+  /// No description provided for @formPlural.
+  ///
+  /// In ko, this message translates to:
+  /// **'복수형'**
+  String get formPlural;
+
+  /// No description provided for @formPositive.
+  ///
+  /// In ko, this message translates to:
+  /// **'원급'**
+  String get formPositive;
+
+  /// No description provided for @formComparative.
+  ///
+  /// In ko, this message translates to:
+  /// **'비교급'**
+  String get formComparative;
+
+  /// No description provided for @formSuperlative.
+  ///
+  /// In ko, this message translates to:
+  /// **'최상급'**
+  String get formSuperlative;
 }
 
 class _AppLocalizationsDelegate

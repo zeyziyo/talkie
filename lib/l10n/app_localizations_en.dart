@@ -868,4 +868,37 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get typeImperative => 'Imperative';
+
+  @override
+  String get labelNote => 'Note';
+
+  @override
+  String get metadataFormType => 'Form Type';
+
+  @override
+  String get formInfinitive => 'Infinitive/Present';
+
+  @override
+  String get formPast => 'Past';
+
+  @override
+  String get formPastParticiple => 'Past Participle';
+
+  @override
+  String get formPresentParticiple => 'Present Participle';
+
+  @override
+  String get formThirdPersonSingular => '3rd Person Singular';
+
+  @override
+  String get formPlural => 'Plural';
+
+  @override
+  String get formPositive => 'Positive';
+
+  @override
+  String get formComparative => 'Comparative';
+
+  @override
+  String get formSuperlative => 'Superlative';
 }

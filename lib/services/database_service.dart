@@ -23,14 +23,14 @@ class DatabaseService {
     
     return await openDatabase(
       path,
-      version: 7, // Upgraded for Phase 17 (Dedicated chat_messages table)
+      version: 8, // Upgraded for Phase 21 (Add is_memorized)
       onCreate: (db, version) async {
         await _createBaseTables(db);
         await _ensureDefaultMaterial(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
-          // Add dialogue_groups table
+          // ... (Existing upgrades)
           await db.execute('''
             CREATE TABLE dialogue_groups (
               id TEXT PRIMARY KEY,
@@ -41,7 +41,6 @@ class DatabaseService {
             )
           ''');
           
-          // Add dialogue columns to translations table
           await db.execute('ALTER TABLE translations ADD COLUMN dialogue_id TEXT');
           await db.execute('ALTER TABLE translations ADD COLUMN speaker TEXT');
           await db.execute('ALTER TABLE translations ADD COLUMN sequence_order INTEGER');
@@ -50,34 +49,29 @@ class DatabaseService {
         }
         
         if (oldVersion < 3) {
-          // Add is_synced column for background synchronization
           await db.execute('ALTER TABLE translations ADD COLUMN is_synced INTEGER DEFAULT 0');
           print('[DB] Upgraded to version 3: Sync support added');
         }
 
         if (oldVersion < 4) {
-          // Add location column to dialogue_groups
           await db.execute('ALTER TABLE dialogue_groups ADD COLUMN location TEXT');
           print('[DB] Upgraded to version 4: Location support added');
         }
 
         if (oldVersion < 5) {
-          // Version 5: New Unified Schema (Words, Sentences, Tags)
           await _createBaseTables(db);
-          await migrateToUnifiedSchema(db); // 기존 데이터 마이그레이션 실행
+          await migrateToUnifiedSchema(db); 
           print('[DB] Upgraded to version 5: New Unified Schema added and data migrated');
         }
 
         if (oldVersion < 6) {
-          // Version 6: Add Linguistic Analysis metadata to sentences
           await db.execute('ALTER TABLE sentences ADD COLUMN pos TEXT');
           await db.execute('ALTER TABLE sentences ADD COLUMN form_type TEXT');
-          await db.execute('ALTER TABLE sentences ADD COLUMN root TEXT'); // Changed root_id -> root in Phase 13
+          await db.execute('ALTER TABLE sentences ADD COLUMN root TEXT');
           print('[DB] Upgraded to version 6: Sentences metadata added');
         }
 
         if (oldVersion < 7) {
-          // Version 7: Dedicated chat_messages table for structural dialogue info
           await db.execute('''
             CREATE TABLE IF NOT EXISTS chat_messages (
               id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -91,12 +85,20 @@ class DatabaseService {
           ''');
           print('[DB] Upgraded to version 7: chat_messages table added');
         }
+        
+        if (oldVersion < 8) {
+          // Phase 21: Memorized Status
+          await db.execute('ALTER TABLE words ADD COLUMN is_memorized INTEGER DEFAULT 0');
+          await db.execute('ALTER TABLE sentences ADD COLUMN is_memorized INTEGER DEFAULT 0');
+          print('[DB] Upgraded to version 8: Memorized status added');
+        }
       },
     );
   }
   
   /// 기본 테이블 및 신규 통합 테이블 생성
   static Future<void> _createBaseTables(Database db) async {
+    // ... (Legacy tables skipped for brevity in diff, assume unchanged)
     // 1. 구버전 테이블 (마이그레이션 및 하위 호환성 위해 유지 - 추후 제거 가능)
     // 번역 관계 테이블
     await db.execute('''
@@ -135,7 +137,8 @@ class DatabaseService {
         pos TEXT,
         form_type TEXT,
         note TEXT,
-        created_at TEXT NOT NULL
+        created_at TEXT NOT NULL,
+        is_memorized INTEGER DEFAULT 0
       )
     ''');
     await db.execute('CREATE INDEX IF NOT EXISTS idx_words_group_id ON words (group_id)');
@@ -154,7 +157,8 @@ class DatabaseService {
         form_type TEXT,
         root TEXT,
         note TEXT,
-        created_at TEXT NOT NULL
+        created_at TEXT NOT NULL,
+        is_memorized INTEGER DEFAULT 0
       )
     ''');
     await db.execute('CREATE INDEX IF NOT EXISTS idx_sentences_group_id ON sentences (group_id)');
@@ -1994,6 +1998,66 @@ class DatabaseService {
         whereArgs: [text, lang, note ?? ""]);
     if (results.isNotEmpty) return results.first['id'] as int;
     return 0;
+  }
+
+  /// Autocomplete Support: 단어 검색
+  static Future<List<String>> searchWords(String query, {int limit = 10}) async {
+    if (query.trim().isEmpty) return [];
+    
+    final db = await database;
+    final results = await db.query(
+      'words',
+      columns: ['text'],
+      where: 'text LIKE ?',
+      whereArgs: ['$query%'], // Prefix search
+      limit: limit,
+      orderBy: 'text ASC',
+      distinct: true,
+    );
+    
+    return results.map((row) => row['text'] as String).toList();
+  }
+
+    });
+  }
+
+  // --- Search & Memorized Status ---
+
+  /// Search by Type (Refined for Phase 21)
+  /// type: 'word' or 'sentence'
+  static Future<List<Map<String, String>>> searchByType(String query, String type, {int limit = 10}) async {
+    if (query.trim().isEmpty) return [];
+
+    final db = await database;
+    final String table = type == 'word' ? 'words' : 'sentences';
+    
+    final results = await db.query(
+      table,
+      columns: ['text'],
+      where: 'text LIKE ?',
+      whereArgs: ['$query%'],
+      limit: limit,
+      orderBy: 'text ASC',
+      distinct: true,
+    );
+    
+    return results.map((row) => {
+      'text': row['text'] as String,
+      'type': type,
+    }).toList();
+  }
+
+  /// Toggle Memorized Status (is_memorized)
+  static Future<void> toggleMemorizedStatus(int id, String type, bool status) async {
+    final db = await database;
+    final String table = type == 'word' ? 'words' : 'sentences';
+    
+    await db.update(
+      table, 
+      {'is_memorized': status ? 1 : 0},
+      where: 'id = ?',
+      whereArgs: [id]
+    );
   }
 }
 

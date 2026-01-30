@@ -40,6 +40,14 @@ class AppState extends ChangeNotifier {
     'Statement', 'Question', 'Exclamation', 'Imperative'
   ];
 
+  static const List<String> verbFormCategories = [
+    'Infinitive', 'Past', 'Past Participle', 'Present Participle', '3rd Person Singular', 'Plural'
+  ];
+
+  static const List<String> adjectiveFormCategories = [
+    'Positive', 'Comparative', 'Superlative'
+  ];
+
   void _initSettings() {
     // Synchronous initialization from already-loaded prefs
     final savedSource = _prefs?.getString('sourceLang');
@@ -56,11 +64,17 @@ class AppState extends ChangeNotifier {
       _targetLang = 'en';
       _selectedReviewLanguage = 'en';
     }
+    
+    // Chat Gender Settings
+    _chatUserGender = _prefs?.getString('chatUserGender') ?? 'male';
+    _chatAiGender = _prefs?.getString('chatAiGender') ?? 'female';
   }
 
   Future<void> _saveSettings() async {
     await _prefs?.setString('sourceLang', _sourceLang);
     await _prefs?.setString('targetLang', _targetLang);
+    await _prefs?.setString('chatUserGender', _chatUserGender);
+    await _prefs?.setString('chatAiGender', _chatAiGender);
   }
 
   
@@ -78,10 +92,29 @@ class AppState extends ChangeNotifier {
   bool _isSaved = false; // Track if current translation is saved
   String _statusMessage = '';
   String _note = ''; // Note for ambiguous translations
-  bool _isWordMode = false; // Toggle between Word and Sentence mode
+  bool _isWordMode = true; // Toggle between Word and Sentence mode (Default: Word)
   String _sourcePos = ''; // 품사 (Verb, Noun 등)
   String _sourceFormType = ''; // 문법 형태 (Past, Comparative 등)
   String _sourceRoot = ''; // 단어 원형 (Go, Apple 등)
+  
+  // Chat Voice Settings
+  String _chatUserGender = 'male'; 
+  String _chatAiGender = 'female';
+  
+  String get chatUserGender => _chatUserGender;
+  String get chatAiGender => _chatAiGender;
+
+  void setChatUserGender(String gender) {
+    _chatUserGender = gender;
+    _saveSettings();
+    notifyListeners();
+  }
+
+  void setChatAiGender(String gender) {
+    _chatAiGender = gender;
+    _saveSettings();
+    notifyListeners();
+  }
   
   // Duplicate detection & translation reuse state
   List<Map<String, dynamic>> _similarSources = [];
@@ -104,7 +137,7 @@ class AppState extends ChangeNotifier {
   int? _selectedMaterialId; // Currently selected material (Legacy/Backward compatibility)
   List<Map<String, dynamic>> _materialRecords = []; // Sentences in selected tags/material
   Set<int> _studiedTranslationIds = {}; // Reviewed items in current session
-  String _recordTypeFilter = 'all'; // 'all', 'word', 'sentence'
+  String _recordTypeFilter = 'word'; // 'all', 'word', 'sentence' (Default: Word)
   String _searchQuery = ''; // 검색어 필터
 
   // Phase 11: Dialogue / Chat State
@@ -144,6 +177,20 @@ class AppState extends ChangeNotifier {
   int? get selectedSourceId => _selectedSourceId;
   bool get showDuplicateDialog => _showDuplicateDialog;
   String get selectedReviewLanguage => _selectedReviewLanguage;
+
+  // Dialogue Management
+  List<DialogueGroup> _dialogueGroups = [];
+  List<DialogueGroup> get dialogueGroups => _dialogueGroups;
+  
+  String? _activeDialogueId;
+  String? get activeDialogueId => _activeDialogueId;
+  
+  String? _activeDialogueTitle;
+  String? get activeDialogueTitle => _activeDialogueTitle;
+  
+  String? _activePersona;
+  String? get activePersona => _activePersona;
+
   
   // Disambiguation Getters
   List<String> get disambiguationOptions => _disambiguationOptions;
@@ -1237,6 +1284,10 @@ class AppState extends ChangeNotifier {
       if (_searchQuery.isNotEmpty) {
         query += 'AND t.text LIKE ? ';
         whereArgs.add('%$_searchQuery%');
+      } else if (_selectedTags.isEmpty) {
+        // Phase 21: Default View (No Search, No Tags) -> Show only "Need Re-learning" items
+        // (is_memorized = 0)
+        query += 'AND (t.is_memorized IS NULL OR t.is_memorized = 0) ';
       }
 
       // 2. 언어 필터 (Source 또는 Target이 현재 설정과 일치하는 것만)
@@ -1261,8 +1312,11 @@ class AppState extends ChangeNotifier {
         
         if (sourceRow == null || targetRow == null) continue;
 
+        // Determine if memorized (use the currently filtered row's status)
+        final isMemorized = (row['is_memorized'] as int? ?? 0) == 1;
+
         pairedResults.add({
-          'id': sourceRow['id'], // ID는 대표로 하나 사용 (또는 groupId 사용)
+          'id': sourceRow['id'], 
           'group_id': groupId,
           'source_lang': _sourceLang,
           'target_lang': _targetLang,
@@ -1271,6 +1325,7 @@ class AppState extends ChangeNotifier {
           'note': sourceRow['note'] ?? targetRow['note'],
           'created_at': sourceRow['created_at'],
           'review_count': sourceRow['review_count'] ?? 0,
+          'is_memorized': isMemorized, // Pass status to UI
         });
       }
 
@@ -2353,7 +2408,9 @@ class AppState extends ChangeNotifier {
     String? root,
     String? explanation,
   }) async {
-    if (_activeDialogueId == null) return;
+    if (_activeDialogueId == null) {
+      await startNewDialogue();
+    }
     
     final finalSpeaker = speaker ?? _activePersona ?? 'AI';
     final createdAt = DateTime.now().toIso8601String();
@@ -2444,5 +2501,43 @@ class AppState extends ChangeNotifier {
       case 'de': return 'de-DE';
       default: return langCode;
     }
+  }
+
+  // Autocomplete Support
+  Future<List<String>> searchMatchingRoots(String query) async {
+    return await DatabaseService.searchWords(query);
+  }
+
+  // Phase 21: Tab-Specific Search & Memorized Status
+  Future<List<Map<String, String>>> searchByType(String query) async {
+    // Current Type (Word or Sentence)
+    final type = _recordTypeFilter == 'word' ? 'word' : 'sentence';
+    return await DatabaseService.searchByType(query, type);
+  }
+
+  /// Jump to result: Just set query and clear tags. 
+  /// Type switching is NOT needed because we only search within the current tab.
+  void jumpToSearchResult(String text, String type) {
+    _selectedTags.clear(); // Clear tag filters to show result
+    _selectedMaterialId = null; 
+    setSearchQuery(text); // This calls loadRecordsByTags
+    notifyListeners();
+  }
+  
+  /// Toggle is_memorized status
+  Future<void> toggleMemorizedStatus(int id, bool currentStatus) async {
+    final type = _recordTypeFilter == 'word' ? 'word' : 'sentence';
+    await DatabaseService.toggleMemorizedStatus(id, type, !currentStatus);
+    
+    // Sync with Mode 3 current question for immediate UI update
+    if (_currentMode3Question != null && (_currentMode3Question!['id'] as int) == id) {
+       // Since Map is immutable-ish if coming from DB, we might need to recreate it
+       final  newMap = Map<String, dynamic>.from(_currentMode3Question!);
+       newMap['is_memorized'] = !currentStatus;
+       _currentMode3Question = newMap;
+    }
+
+    // Refresh list to update UI (it might disappear if in default view)
+    loadRecordsByTags();
   }
 }

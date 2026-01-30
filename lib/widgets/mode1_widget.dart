@@ -833,24 +833,128 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                 TextField(
                   controller: _noteController,
                   decoration: InputDecoration(
-                    labelText: l10n.tutorialContextTitle,
-                    hintText: l10n.tutorialContextDesc,
+                    labelText: l10n.labelNote, // CHANGED from tutorialContextTitle
+                    hintText: l10n.tutorialContextDesc, // Keep hint? User said "Situation/Context tag" text is confusing with "Tag Input". labelNote is "주석". Hint text can remain "나중에 구분하기..." or similar.
                     border: const OutlineInputBorder(),
                   ),
                   onChanged: (val) => appState.setNote(val),
                 ),
                 const SizedBox(height: 16),
 
-                // Root Word Section (Only for Words)
-                if (appState.recordTypeFilter == 'word')
-                  TextField(
-                    controller: _rootController,
-                    decoration: InputDecoration(
-                      labelText: l10n.metadataRootWord,
-                      border: const OutlineInputBorder(),
-                    ),
-                    onChanged: (val) => appState.setSourceRoot(val),
-                  ),
+                // Root Word Section (Smart Autocomplete)
+                // Logic: Show ONLY if (Verb AND Not Infinitive) OR (Adj/Adv AND Not Positive)
+                Builder(
+                  builder: (context) {
+                    bool showRootField = false;
+                    if (appState.recordTypeFilter == 'word') {
+                       if (appState.sourcePos == 'Verb' && appState.sourceFormType != 'Infinitive' && appState.sourceFormType.isNotEmpty) {
+                         showRootField = true;
+                       } else if ((appState.sourcePos == 'Adjective' || appState.sourcePos == 'Adverb') && 
+                                  appState.sourceFormType != 'Positive' && appState.sourceFormType.isNotEmpty) {
+                         showRootField = true;
+                       }
+                    }
+
+                    if (!showRootField) return const SizedBox.shrink();
+
+                    return Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Autocomplete<String>(
+                          optionsBuilder: (TextEditingValue textEditingValue) {
+                            if (textEditingValue.text.isEmpty) {
+                              return const Iterable<String>.empty();
+                            }
+                            return appState.searchMatchingRoots(textEditingValue.text);
+                          },
+                          onSelected: (String selection) {
+                           appState.setSourceRoot(selection);
+                          },
+                          fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
+                            // Sync initial value if any
+                            if (textEditingController.text.isEmpty && appState.sourceRoot.isNotEmpty) {
+                              textEditingController.text = appState.sourceRoot;
+                            }
+                            // Listen to changes for Manual Input support
+                            textEditingController.addListener(() {
+                               appState.setSourceRoot(textEditingController.text);
+                            });
+
+                            return TextField(
+                              controller: textEditingController,
+                              focusNode: focusNode,
+                              decoration: InputDecoration(
+                                labelText: l10n.metadataRootWord,
+                                border: const OutlineInputBorder(),
+                                suffixIcon: const Icon(Icons.search),
+                              ),
+                            );
+                          },
+                          optionsViewBuilder: (context, onSelected, options) {
+                            return Align(
+                              alignment: Alignment.topLeft,
+                              child: Material(
+                                elevation: 4.0,
+                                child: SizedBox(
+                                  width: 250, // Constrain width
+                                  child: ListView.builder(
+                                    padding: EdgeInsets.zero,
+                                    shrinkWrap: true,
+                                    itemCount: options.length,
+                                    itemBuilder: (BuildContext context, int index) {
+                                      final String option = options.elementAt(index);
+                                      return ListTile(
+                                        title: Text(option),
+                                        onTap: () {
+                                          onSelected(option);
+                                        },
+                                      );
+                                    },
+                                  ),
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                        const SizedBox(height: 16),
+                      ],
+                    );
+                  },
+                ),
+
+                // Form Type Section (Dynamic based on POS)
+                Builder(
+                  builder: (context) {
+                    List<String> categories = [];
+                    if (appState.sourcePos == 'Verb') {
+                      categories = AppState.verbFormCategories;
+                    } else if (appState.sourcePos == 'Adjective' || appState.sourcePos == 'Adverb') {
+                      categories = AppState.adjectiveFormCategories;
+                    }
+
+                    if (categories.isEmpty) return const SizedBox.shrink();
+
+                    return DropdownButtonFormField<String>(
+                      value: categories.contains(appState.sourceFormType) ? appState.sourceFormType : null,
+                      decoration: InputDecoration(
+                        labelText: l10n.metadataFormType,
+                        border: const OutlineInputBorder(),
+                      ),
+                      items: categories.map((cat) {
+                        return DropdownMenuItem(
+                          value: cat,
+                          child: Text(_getLocalizedCategory(cat, l10n)),
+                        );
+                      }).toList(),
+                      onChanged: (val) {
+                        if (val != null) {
+                          appState.setSourceFormType(val);
+                          setDialogState(() {});
+                        }
+                      },
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -879,6 +983,16 @@ class _Mode1WidgetState extends State<Mode1Widget> {
       case 'Question': return l10n.typeQuestion;
       case 'Exclamation': return l10n.typeExclamation;
       case 'Imperative': return l10n.typeImperative;
+      case 'Imperative': return l10n.typeImperative;
+      case 'Infinitive': return l10n.formInfinitive;
+      case 'Past': return l10n.formPast;
+      case 'Past Participle': return l10n.formPastParticiple;
+      case 'Present Participle': return l10n.formPresentParticiple;
+      case '3rd Person Singular': return l10n.formThirdPersonSingular;
+      case 'Plural': return l10n.formPlural;
+      case 'Positive': return l10n.formPositive;
+      case 'Comparative': return l10n.formComparative;
+      case 'Superlative': return l10n.formSuperlative;
       default: return cat;
     }
   }

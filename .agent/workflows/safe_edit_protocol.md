@@ -6,6 +6,9 @@ description: Strict protocol for safe code editing and committing
 
 This workflow enforces the "Atomic Interaction" rule by utilizing the agent's implementation constraints.
 
+## ZERO TOLERANCE RULE
+**You must ALWAYS ask for explicit user permission before running `git commit` or `git push`. No exceptions.**
+
 ## Phase 1: Edit & Verify
 1.  **Analyze**: Understand the changes needed.
 2.  **Edit**: Use `replace_file_content` or `multi_replace_file_content` to modify code.
