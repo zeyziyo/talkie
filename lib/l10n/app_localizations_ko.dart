@@ -26,7 +26,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• 모드 전환: 화면을 옆으로 밀거(Swipe)나 왼쪽 메뉴(Drawer) 이용\n• 상황 설정: 입력창 아래 \'상황/문맥\' 칸에 상황(예: 아침, 식당) 입력\n• 음성 입력: 마이크 아이콘을 눌러 말하기/멈추기\n• 번역 및 저장: \'번역\' 후 하단 \'데이터 저장\' 버튼으로 기록 보관\n• 도움말: 상단 물음표 아이콘으로 가이드 확인';
+      '• 모드 전환: 화면을 옆으로 밀거(Swipe)나 왼쪽 메뉴(Drawer) 이용\n• 노트 설정: 입력창 아래 \'노트\' 칸에 상황(예: 아침, 식당) 입력\n• 음성 입력: 마이크 아이콘을 눌러 말하기/멈추기\n• 번역 및 저장: \'번역\' 후 하단 \'데이터 저장\' 버튼으로 기록 보관\n• 도움말: 상단 물음표 아이콘으로 가이드 확인';
 
   @override
   String get helpMode2Desc => '저장된 문장을 복습합니다. 상단 자료집 아이콘(📚)으로 원하는 자료를 선택하세요.';
@@ -444,7 +444,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tooltipIncrease => '증가';
 
   @override
-  String get languageSettings => 'Language Settings';
+  String get languageSettings => '언어 설정';
 
   @override
   String get tutorialM2DropdownDesc => '상단 메뉴를 통해 학습할 자료를 선택할 수 있습니다.';
@@ -547,7 +547,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get filterAll => '전체';
 
   @override
-  String get practiceWordsOnly => '단어만 연습 (Words Only)';
+  String get practiceWordsOnly => '단어만 연습';
 
   @override
   String get resetPracticeHistory => '연습 기록 초기화';
@@ -565,7 +565,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get playAgain => '다시 하기';
 
   @override
-  String get speakNow => '말하세요! (Speak!)';
+  String get speakNow => '지금 말하세요!';
 
   @override
   String get scoreLabel => '점수';
@@ -589,7 +589,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get accuracy => '정확도';
 
   @override
-  String get basicDefault => '기본 (Default)';
+  String get basicDefault => '기본';
 
   @override
   String get basic => '기본';
@@ -796,4 +796,52 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get tutorialM1ToggleDesc => '단어와 문장 모드를 여기서 전환하세요.';
+
+  @override
+  String get metadataDialogTitle => '상세 정보';
+
+  @override
+  String get selectPOS => '품사 선택';
+
+  @override
+  String get selectSentenceType => '문장 종류 선택';
+
+  @override
+  String get metadataRootWord => '원형 (Root Word)';
+
+  @override
+  String get posNoun => '명사';
+
+  @override
+  String get posVerb => '동사';
+
+  @override
+  String get posAdjective => '형용사';
+
+  @override
+  String get posAdverb => '부사';
+
+  @override
+  String get posPronoun => '대명사';
+
+  @override
+  String get posPreposition => '전치사/조사';
+
+  @override
+  String get posConjunction => '접속사';
+
+  @override
+  String get posInterjection => '감탄사';
+
+  @override
+  String get typeStatement => '평서문';
+
+  @override
+  String get typeQuestion => '의문문';
+
+  @override
+  String get typeExclamation => '감탄문';
+
+  @override
+  String get typeImperative => '명령문';
 }

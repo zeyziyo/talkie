@@ -801,4 +801,52 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get tutorialM1ToggleDesc => 'ここで単語と文章のモードを切り替えます。';
+
+  @override
+  String get metadataDialogTitle => '상세 정보';
+
+  @override
+  String get selectPOS => '품사 선택';
+
+  @override
+  String get selectSentenceType => '문장 종류 선택';
+
+  @override
+  String get metadataRootWord => '원형 (Root Word)';
+
+  @override
+  String get posNoun => '명사';
+
+  @override
+  String get posVerb => '동사';
+
+  @override
+  String get posAdjective => '형용사';
+
+  @override
+  String get posAdverb => '부사';
+
+  @override
+  String get posPronoun => '대명사';
+
+  @override
+  String get posPreposition => '전치사/조사';
+
+  @override
+  String get posConjunction => '접속사';
+
+  @override
+  String get posInterjection => '감탄사';
+
+  @override
+  String get typeStatement => '평서문';
+
+  @override
+  String get typeQuestion => '의문문';
+
+  @override
+  String get typeExclamation => '감탄문';
+
+  @override
+  String get typeImperative => '명령문';
 }

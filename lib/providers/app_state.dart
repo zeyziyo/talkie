@@ -15,7 +15,6 @@ import '../models/user_library.dart';
 import '../models/dialogue_group.dart';
 
 import '../services/supabase_service.dart';
-import 'package:supabase_flutter/supabase_flutter.dart'; // Added for SupabaseClient types
 import 'package:flutter/widgets.dart';
 import '../l10n/app_localizations.dart';
 
@@ -30,6 +29,16 @@ class AppState extends ChangeNotifier {
   AppState(this._prefs) {
     _initSettings();
   }
+
+  // Predefined categories for UI Dropdowns
+  static const List<String> posCategories = [
+    'Noun', 'Verb', 'Adjective', 'Adverb', 
+    'Pronoun', 'Preposition', 'Conjunction', 'Interjection'
+  ];
+  
+  static const List<String> sentenceCategories = [
+    'Statement', 'Question', 'Exclamation', 'Imperative'
+  ];
 
   void _initSettings() {
     // Synchronous initialization from already-loaded prefs
@@ -1207,18 +1216,11 @@ class AppState extends ChangeNotifier {
       final db = await DatabaseService.database;
       
       // 검색 및 필터 쿼리 구성
-      String whereClause = '';
       List<dynamic> whereArgs = [];
       
-      // 1. 타입 필터
-      if (_recordTypeFilter != 'all') {
-        whereClause += 'lang_code = ? '; // lang_code? No, we need to join tags.
-        // Actually, join logic is needed.
-      }
 
       // Simplified JOIN query for Tags + Search
       final String table = _recordTypeFilter == 'word' ? 'words' : 'sentences';
-      final String idCol = _recordTypeFilter == 'word' ? 'id' : 'id'; // both id
       
       String query = 'SELECT DISTINCT t.* FROM $table t ';
       
@@ -2154,42 +2156,50 @@ class AppState extends ChangeNotifier {
   Future<void> loadDialogueGroups() async {
     try {
       final userId = SupabaseService.client.auth.currentUser?.id;
-      if (userId == null) return;
+      
+      if (userId != null) {
+        final response = await SupabaseService.client
+            .from('dialogue_groups')
+            .select()
+            .eq('user_id', userId)
+            .order('created_at', ascending: false);
 
-      // 1. Fetch from Supabase
-      final response = await SupabaseService.client
-          .from('dialogue_groups')
-          .select()
-          .eq('user_id', userId)
-          .order('created_at', ascending: false);
+        final cloudGroups = (response as List).map((json) {
+          final group = DialogueGroup.fromJson(json);
+          // Sync to local while we are here
+          DatabaseService.insertDialogueGroup(
+            id: group.id,
+            userId: group.userId,
+            title: group.title,
+            persona: group.persona,
+            location: group.location, // Pass location
+            createdAt: group.createdAt.toIso8601String(),
+          );
+          return group;
+        }).toList();
 
-      final cloudGroups = (response as List).map((json) {
-        final group = DialogueGroup.fromJson(json);
-        // Sync to local while we are here
-        DatabaseService.insertDialogueGroup(
-          id: group.id,
-          userId: group.userId,
-          title: group.title,
-          persona: group.persona,
-          createdAt: group.createdAt.toIso8601String(),
-        );
-        return group;
-      }).toList();
-
-      _dialogueGroups = cloudGroups;
-      notifyListeners();
+        _dialogueGroups = cloudGroups;
+        notifyListeners();
+        return;
+      }
     } catch (e) {
-      debugPrint('[AppState] Error loading dialogues: $e');
-      // Fallback: load from local
+      debugPrint('[AppState] Supabase dialogue load failed: $e');
+    }
+
+    // Fallback: load from local
+    try {
       final localData = await DatabaseService.getDialogueGroups();
       _dialogueGroups = localData.map((m) => DialogueGroup(
         id: m['id'] as String,
-        userId: m['user_id'] as String,
+        userId: m['user_id'] as String? ?? 'anonymous',
         title: m['title'] as String?,
         persona: m['persona'] as String?,
+        location: m['location'] as String?,
         createdAt: DateTime.parse(m['created_at'] as String),
       )).toList();
       notifyListeners();
+    } catch (e) {
+       debugPrint('[AppState] Local dialogue load failed: $e');
     }
   }
 
@@ -2202,15 +2212,50 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Load an existing dialogue into the active session
   Future<void> loadExistingDialogue(DialogueGroup group) async {
     _activeDialogueId = group.id;
     _activeDialogueTitle = group.title;
     _activePersona = group.persona;
     _activeDialogueLocation = group.location;
+    _currentChatLocation = group.location ?? '';
     
-    // Get max sequence order from local DB
-    final records = await DatabaseService.getRecordsByDialogueId(group.id);
+    // Get records from local DB
+    var records = await DatabaseService.getRecordsByDialogueId(group.id);
+    
+    // Cross-device Sync: If local is empty, try fetching from Personal Cloud
+    if (records.isEmpty) {
+      final cloudMessages = await SupabaseService.getPrivateChatMessages(group.id);
+      if (cloudMessages.isNotEmpty) {
+        // Save to local DB for future use
+        for (var msg in cloudMessages) {
+          // Reconstruct the unified record locally
+          await DatabaseService.saveUnifiedRecord(
+            text: msg['source_text'],
+            lang: 'auto', // Or determine from metadata if available
+            translation: msg['target_text'],
+            targetLang: 'auto',
+            type: 'sentence', // Chat is sentences
+            tags: ['Dialogue'],
+          );
+          
+          // Link in chat_messages table
+          // We need the group_id from cloud or local.
+          final localGroupId = DateTime.now().millisecondsSinceEpoch; // New local group id
+          
+          final db = await DatabaseService.database;
+          await db.insert('chat_messages', {
+            'dialogue_id': group.id,
+            'group_id': msg['group_id'], // Use cloud group_id
+            'speaker': msg['speaker'],
+            'sequence_order': msg['sequence_order'],
+            'created_at': msg['created_at'],
+          });
+        }
+        // Reload from local after sync
+        records = await DatabaseService.getRecordsByDialogueId(group.id);
+      }
+    }
+
     if (records.isNotEmpty) {
       _currentDialogueSequence = records.map((r) => (r['sequence_order'] as int? ?? 0)).reduce((a, b) => a > b ? a : b);
     } else {
@@ -2293,9 +2338,9 @@ class AppState extends ChangeNotifier {
       
     } catch (e) {
       debugPrint('[AppState] Error saving dialogue progress: $e');
+    } finally {
+      notifyListeners();
     }
-    
-    notifyListeners();
   }
 
   /// Save AI response to dialogue using Unified Schema (Phase 13 Refactored)
@@ -2358,19 +2403,31 @@ class AppState extends ChangeNotifier {
           'item_type': 'sentence',
           'tag': 'Dialogue',
         }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+        // Structural Link (NEW chat_messages table)
+        await txn.insert('chat_messages', {
+          'dialogue_id': _activeDialogueId,
+          'group_id': timestamp,
+          'speaker': finalSpeaker,
+          'sequence_order': _currentDialogueSequence,
+          'created_at': createdAt,
+        });
       });
 
-      // 2. Sync to Supabase
-      await _saveToSupabase(
-        dialogueId: _activeDialogueId,
+      // 2. Personal Cloud Sync (Background Backup for performance)
+      // We don't await this to avoid blocking the UI during chat usage.
+      SupabaseService.savePrivateChatMessage(
+        dialogueId: _activeDialogueId!,
+        sourceText: sourceText,
+        targetText: targetText,
+        sourceLang: _targetLang,
+        targetLang: _sourceLang,
         speaker: finalSpeaker,
         sequenceOrder: _currentDialogueSequence,
-        pos: pos,
-        formType: formType,
-        root: root,
-      );
+        note: explanation,
+      ).catchError((e) => debugPrint('[AppState] Background Cloud Sync Error: $e'));
       
-      debugPrint('[AppState] AI Response saved to Unified Schema');
+      debugPrint('[AppState] AI Response backed up to Personal Cloud');
     } catch (e) {
       debugPrint('[AppState] Error saving AI response to Unified Schema: $e');
     }

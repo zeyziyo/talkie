@@ -234,7 +234,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                 ),
                               ),
 
-                             TextField(
+                            TextField(
                               controller: _sourceTextController,
                               minLines: 2,
                               maxLines: null,
@@ -278,136 +278,58 @@ class _Mode1WidgetState extends State<Mode1Widget> {
 
                             const SizedBox(height: 12),
                             
-                            // AI 분석 정보 (단어 모드일 때만)
-                            if (appState.recordTypeFilter == 'word' && appState.sourceText.isNotEmpty)
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 12),
-                                child: Wrap(
-                                  spacing: 8,
-                                  children: [
-                                    _buildInfoChip(
-                                      icon: Icons.category_outlined,
-                                      label: appState.sourcePos.isEmpty ? '품사 추가' : appState.sourcePos,
-                                      color: Colors.purple,
-                                      onTap: () => _editInfo('pos', appState.sourcePos, appState),
-                                    ),
-                                    _buildInfoChip(
-                                      icon: Icons.extension_outlined,
-                                      label: appState.sourceFormType.isEmpty ? '형태 추가' : appState.sourceFormType,
-                                      color: Colors.orange,
-                                      onTap: () => _editInfo('formType', appState.sourceFormType, appState),
-                                    ),
-                                    _buildInfoChip(
-                                      icon: Icons.vpn_key_outlined,
-                                      label: appState.sourceRoot.isEmpty ? '원형' : appState.sourceRoot,
-                                      color: Colors.teal,
-                                      onTap: () => _editInfo('root', appState.sourceRoot, appState),
-                                    ),
-                                  ],
-                                ),
-                              ),
-
-                            // 태그 입력 및 표시
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 8),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Wrap(
-                                    spacing: 8,
-                                    runSpacing: 4,
-                                    children: [
-                                      ..._currentTags.map((tag) => Chip(
-                                        label: Text(tag, style: const TextStyle(fontSize: 12)),
-                                        onDeleted: () => setState(() => _currentTags.remove(tag)),
-                                        visualDensity: VisualDensity.compact,
-                                        backgroundColor: Colors.blue[50],
-                                      )),
-                                      // 기본 태그 추천 (단어/문장 타입 등)
-                                      ActionChip(
-                                        label: Text(appState.recordTypeFilter == 'word' ? '#단어' : '#문장', style: const TextStyle(fontSize: 12)),
-                                        onPressed: () {
-                                          final t = appState.recordTypeFilter == 'word' ? '단어' : '문장';
-                                          if (!_currentTags.contains(t)) setState(() => _currentTags.add(t));
-                                        },
-                                        backgroundColor: Colors.grey[100],
-                                      ),
-                                    ],
-                                  ),
-                                  TextField(
-                                    controller: _tagController,
+                            // Category Dropdown & Details Button
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  flex: 2,
+                                  child: DropdownButtonFormField<String>(
+                                    value: appState.recordTypeFilter == 'word' 
+                                        ? (AppState.posCategories.contains(appState.sourcePos) ? appState.sourcePos : null)
+                                        : (AppState.sentenceCategories.contains(appState.sourceFormType) ? appState.sourceFormType : null),
                                     decoration: InputDecoration(
-                                      hintText: '태그 입력 (엔터로 추가)',
+                                      labelText: appState.recordTypeFilter == 'word' ? l10n.selectPOS : l10n.selectSentenceType,
                                       isDense: true,
-                                      prefixIcon: const Icon(Icons.tag, size: 20),
-                                      suffixIcon: IconButton(
-                                        icon: const Icon(Icons.add_circle_outline),
-                                        onPressed: _addTag,
-                                      ),
+                                      border: const OutlineInputBorder(),
+                                      contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                                     ),
-                                    onSubmitted: (_) => _addTag(),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            
-                            // Context/Note Input
-                            TextField(
-                              key: widget.contextFieldKey,
-                              controller: _noteController,
-                              decoration: InputDecoration(
-                                labelText: l10n.tutorialContextTitle,
-                                hintText: l10n.tutorialContextDesc,
-                                prefixIcon: const Icon(Icons.note_alt_outlined),
-                                border: const OutlineInputBorder(),
-                                contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                              ),
-                              onChanged: (text) => appState.setNote(text),
-                            ),
-                            
-                            const Divider(),
-                            
-                            // New: Material Set Selection Notice
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 8.0, left: 4.0),
-                              child: InkWell(
-                                onTap: widget.onSelectMaterial,
-                                borderRadius: BorderRadius.circular(8),
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
-                                  child: Row(
-                                    children: [
-                                      Icon(Icons.folder_shared, size: 16, color: Colors.green[800]),
-                                      const SizedBox(width: 8),
-                                      Expanded(
-                                        child: Builder(
-                                          builder: (context) {
-                                            String displayName = appState.selectedMaterialName;
-                                            // "Basic" has ID 0
-                                            if (appState.selectedMaterialId == 0 || displayName == 'Basic') {
-                                              displayName = appState.isWordMode
-                                                  ? l10n.basicWordRepository
-                                                  : l10n.basicSentenceRepository;
-                                            }
-                                            return Text(
-                                              l10n.mode1SelectedMaterial(displayName),
-                                              style: TextStyle(
-                                                fontSize: 13, 
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.green[800],
-                                              ),
-                                              maxLines: 2,
-                                              overflow: TextOverflow.ellipsis,
-                                            );
-                                          }
-                                        ),
-                                      ),
-                                      Icon(Icons.edit, size: 14, color: Colors.green[600]),
-                                    ],
+                                    items: (appState.recordTypeFilter == 'word' 
+                                            ? AppState.posCategories 
+                                            : AppState.sentenceCategories)
+                                        .map((cat) => DropdownMenuItem(
+                                              value: cat,
+                                              child: Text(_getLocalizedCategory(cat, l10n), style: const TextStyle(fontSize: 13)),
+                                            ))
+                                        .toList(),
+                                    onChanged: (val) {
+                                      if (val == null) return;
+                                      if (appState.recordTypeFilter == 'word') {
+                                        appState.setSourcePos(val);
+                                      } else {
+                                        appState.setSourceFormType(val);
+                                      }
+                                    },
                                   ),
                                 ),
-                              ),
+                                const SizedBox(width: 8),
+                                ElevatedButton.icon(
+                                  key: widget.contextFieldKey,
+                                  onPressed: () => _showMetadataDialog(context, appState),
+                                  icon: const Icon(Icons.add_circle_outline, size: 18),
+                                  label: Text(l10n.metadataDialogTitle, style: const TextStyle(fontSize: 13)),
+                                  style: ElevatedButton.styleFrom(
+                                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                                    backgroundColor: Colors.grey[100],
+                                    foregroundColor: Colors.blueGrey[800],
+                                    elevation: 0,
+                                    side: BorderSide(color: Colors.grey.shade300),
+                                  ),
+                                ),
+                              ],
                             ),
+                            
+                             const SizedBox(height: 12),
                             
                             // New: Word/Sentence Toggle
                             Padding(
@@ -886,81 +808,115 @@ class _Mode1WidgetState extends State<Mode1Widget> {
     );
   }
 
-  // _showLanguagePicker removed as per UI simplification
 
-  Widget _buildToggleOption(BuildContext context, {required String label, required bool isSelected, required VoidCallback onTap}) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        decoration: BoxDecoration(
-          color: isSelected ? Colors.indigo.shade600 : Colors.transparent,
-          borderRadius: BorderRadius.circular(20),
-        ),
-        child: Text(
-          label,
-          style: TextStyle(
-            color: isSelected ? Colors.white : Colors.grey.shade600,
-            fontWeight: FontWeight.bold,
-            fontSize: 14,
-          ),
-        ),
-      ),
-    );
-  }
+  // 상세 정보 팝업
+  void _showMetadataDialog(BuildContext context, AppState appState) {
+    final l10n = AppLocalizations.of(context)!;
+    _rootController.text = appState.sourceRoot;
+    _noteController.text = appState.note;
 
-  // 헬퍼: 정보 칩
-  Widget _buildInfoChip({required IconData icon, required String label, required Color color, required VoidCallback onTap}) {
-    return ActionChip(
-      avatar: Icon(icon, size: 16, color: color),
-      label: Text(label),
-      onPressed: onTap,
-      backgroundColor: color.withOpacity(0.05),
-      side: BorderSide(color: color.withOpacity(0.3)),
-    );
-  }
-
-  // 태그 추가 로직
-  void _addTag() {
-    final text = _tagController.text.trim().replaceAll('#', '');
-    if (text.isNotEmpty && !_currentTags.contains(text)) {
-      setState(() {
-        _currentTags.add(text);
-        _tagController.clear();
-      });
-    }
-  }
-
-  // 정보 수정 다이얼로그
-  void _editInfo(String type, String current, AppState appState) {
-    String label = '';
-    if (type == 'pos') label = '품사';
-    if (type == 'formType') label = '문법 형태';
-    if (type == 'root') label = '원형';
-
-    final controller = TextEditingController(text: current);
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
-        title: Text('$label 수정'),
-        content: TextField(
-          controller: controller,
-          decoration: InputDecoration(hintText: '$label 입력'),
-          autofocus: true,
-        ),
-        actions: [
-          TextButton(onPressed: () => Navigator.pop(context), child: const Text('취소')),
-          TextButton(
-            onPressed: () {
-              if (type == 'pos') appState.setSourcePos(controller.text);
-              if (type == 'formType') appState.setSourceFormType(controller.text);
-              if (type == 'root') appState.setSourceRoot(controller.text);
-              Navigator.pop(context);
-            },
-            child: const Text('확인'),
+      builder: (context) => StatefulBuilder(
+        builder: (context, setDialogState) => AlertDialog(
+          title: Text(l10n.metadataDialogTitle),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Tags Section
+                Text('Tags', style: Theme.of(context).textTheme.labelLarge),
+                const SizedBox(height: 4),
+                Wrap(
+                  spacing: 4,
+                  children: _currentTags.map((tag) => Chip(
+                    label: Text(tag, style: const TextStyle(fontSize: 11)),
+                    onDeleted: () => setState(() {
+                      _currentTags.remove(tag);
+                      setDialogState(() {});
+                    }),
+                    visualDensity: VisualDensity.compact,
+                  )).toList(),
+                ),
+                TextField(
+                  controller: _tagController,
+                  decoration: InputDecoration(
+                    hintText: '태그 입력',
+                    suffixIcon: IconButton(
+                      icon: const Icon(Icons.add),
+                      onPressed: () {
+                        final t = _tagController.text.trim();
+                        if (t.isNotEmpty && !_currentTags.contains(t)) {
+                          setState(() => _currentTags.add(t));
+                          setDialogState(() {});
+                          _tagController.clear();
+                        }
+                      },
+                    ),
+                  ),
+                  onSubmitted: (val) {
+                    final t = val.trim();
+                    if (t.isNotEmpty && !_currentTags.contains(t)) {
+                      setState(() => _currentTags.add(t));
+                      setDialogState(() {});
+                      _tagController.clear();
+                    }
+                  },
+                ),
+                const SizedBox(height: 16),
+                
+                // Note Section
+                TextField(
+                  controller: _noteController,
+                  decoration: InputDecoration(
+                    labelText: l10n.tutorialContextTitle,
+                    hintText: l10n.tutorialContextDesc,
+                    border: const OutlineInputBorder(),
+                  ),
+                  onChanged: (val) => appState.setNote(val),
+                ),
+                const SizedBox(height: 16),
+
+                // Root Word Section (Only for Words)
+                if (appState.recordTypeFilter == 'word')
+                  TextField(
+                    controller: _rootController,
+                    decoration: InputDecoration(
+                      labelText: l10n.metadataRootWord,
+                      border: const OutlineInputBorder(),
+                    ),
+                    onChanged: (val) => appState.setSourceRoot(val),
+                  ),
+              ],
+            ),
           ),
-        ],
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text(l10n.confirm),
+            ),
+          ],
+        ),
       ),
     );
+  }
+
+  String _getLocalizedCategory(String cat, AppLocalizations l10n) {
+    switch (cat) {
+      case 'Noun': return l10n.posNoun;
+      case 'Verb': return l10n.posVerb;
+      case 'Adjective': return l10n.posAdjective;
+      case 'Adverb': return l10n.posAdverb;
+      case 'Pronoun': return l10n.posPronoun;
+      case 'Preposition': return l10n.posPreposition;
+      case 'Conjunction': return l10n.posConjunction;
+      case 'Interjection': return l10n.posInterjection;
+      case 'Statement': return l10n.typeStatement;
+      case 'Question': return l10n.typeQuestion;
+      case 'Exclamation': return l10n.typeExclamation;
+      case 'Imperative': return l10n.typeImperative;
+      default: return cat;
+    }
   }
 }

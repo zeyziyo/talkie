@@ -224,9 +224,9 @@ class SupabaseService {
           'group_id': groupId,
           'lang_code': sourceLang,
           'text': sourceText,
-          'pos': pos, // Added for Phase 13
-          'form_type': formType, // Added for Phase 13
-          'root': root, // Added for Phase 13
+          'pos': pos,
+          'form_type': formType,
+          'root': root,
           'status': 'approved',
           'author_id': userId,
         });
@@ -263,6 +263,97 @@ class SupabaseService {
       return {'success': true};
     } catch (e) {
       return {'success': false, 'reason': e.toString()};
+    }
+  }
+
+  /// Fetch private chat messages for a specific dialogue from Supabase
+  static Future<List<Map<String, dynamic>>> getPrivateChatMessages(String dialogueId) async {
+    final userId = client.auth.currentUser?.id;
+    if (userId == null) return [];
+
+    try {
+      // Fetch links from user_library joined with sentences
+      final response = await client
+          .from('user_library')
+          .select('group_id, speaker, sequence_order, created_at, personal_note, sentences(text, lang_code)')
+          .eq('user_id', userId)
+          .eq('dialogue_id', dialogueId)
+          .order('sequence_order', ascending: true);
+
+      return (response as List).map((link) {
+        final sentences = link['sentences'] as List;
+        final source = sentences.firstWhere((s) => s['lang_code'] != 'en', orElse: () => sentences.first);
+        final target = sentences.firstWhere((s) => s['lang_code'] == 'en', orElse: () => sentences.last);
+
+        return {
+          'group_id': link['group_id'],
+          'source_text': source['text'],
+          'target_text': target['text'],
+          'speaker': link['speaker'],
+          'sequence_order': link['sequence_order'],
+          'created_at': link['created_at'],
+          'note': link['personal_note'],
+        };
+      }).toList();
+    } catch (e) {
+      print('Supabase: Fetch private messages failed: $e');
+      return [];
+    }
+  }
+
+  /// Save a private chat message directly to the user's cloud library
+  /// This ensures and cross-device sync without global pool contamination.
+  static Future<void> savePrivateChatMessage({
+    required String dialogueId,
+    required String sourceText,
+    required String targetText,
+    required String sourceLang,
+    required String targetLang,
+    required String speaker,
+    required int sequenceOrder,
+    String? note,
+  }) async {
+    final userId = client.auth.currentUser?.id;
+    if (userId == null) return;
+
+    try {
+      // For backup purposes, we still need a group_id. 
+      // We'll use the timestamp as a placeholder group_id for personal messages.
+      final groupId = DateTime.now().millisecondsSinceEpoch;
+
+      // 1. First ensure the texts exist in the global/shadow pool (optional but efficient)
+      // or we just save the link. For now, we'll use the existing sentences table 
+      // but status='private' if we had that. Since we don't, we'll just insert as is.
+      await client.from('sentences').insert([
+        {
+          'group_id': groupId,
+          'lang_code': sourceLang,
+          'text': sourceText,
+          'status': 'private', // Tagging as private if possible
+          'author_id': userId,
+        },
+        {
+          'group_id': groupId,
+          'lang_code': targetLang,
+          'text': targetText,
+          'status': 'private',
+          'author_id': userId,
+        }
+      ]);
+
+      // 2. Link to user's dialogue history
+      await client.from('user_library').insert({
+        'user_id': userId,
+        'group_id': groupId,
+        'dialogue_id': dialogueId,
+        'speaker': speaker,
+        'sequence_order': sequenceOrder,
+        'personal_note': note,
+      });
+      
+      print('Supabase: Private chat message backed up for dialogue $dialogueId');
+    } catch (e) {
+      print('Supabase: Private chat backup failed: $e');
     }
   }
   

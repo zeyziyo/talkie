@@ -213,7 +213,7 @@ abstract class AppLocalizations {
   /// No description provided for @helpMode1Details.
   ///
   /// In ko, this message translates to:
-  /// **'• 모드 전환: 화면을 옆으로 밀거(Swipe)나 왼쪽 메뉴(Drawer) 이용\n• 상황 설정: 입력창 아래 \'상황/문맥\' 칸에 상황(예: 아침, 식당) 입력\n• 음성 입력: 마이크 아이콘을 눌러 말하기/멈추기\n• 번역 및 저장: \'번역\' 후 하단 \'데이터 저장\' 버튼으로 기록 보관\n• 도움말: 상단 물음표 아이콘으로 가이드 확인'**
+  /// **'• 모드 전환: 화면을 옆으로 밀거(Swipe)나 왼쪽 메뉴(Drawer) 이용\n• 노트 설정: 입력창 아래 \'노트\' 칸에 상황(예: 아침, 식당) 입력\n• 음성 입력: 마이크 아이콘을 눌러 말하기/멈추기\n• 번역 및 저장: \'번역\' 후 하단 \'데이터 저장\' 버튼으로 기록 보관\n• 도움말: 상단 물음표 아이콘으로 가이드 확인'**
   String get helpMode1Details;
 
   /// No description provided for @helpMode2Desc.
@@ -969,7 +969,7 @@ abstract class AppLocalizations {
   /// No description provided for @languageSettings.
   ///
   /// In ko, this message translates to:
-  /// **'Language Settings'**
+  /// **'언어 설정'**
   String get languageSettings;
 
   /// No description provided for @tutorialM2DropdownDesc.
@@ -1167,7 +1167,7 @@ abstract class AppLocalizations {
   /// No description provided for @practiceWordsOnly.
   ///
   /// In ko, this message translates to:
-  /// **'단어만 연습 (Words Only)'**
+  /// **'단어만 연습'**
   String get practiceWordsOnly;
 
   /// No description provided for @resetPracticeHistory.
@@ -1203,7 +1203,7 @@ abstract class AppLocalizations {
   /// No description provided for @speakNow.
   ///
   /// In ko, this message translates to:
-  /// **'말하세요! (Speak!)'**
+  /// **'지금 말하세요!'**
   String get speakNow;
 
   /// No description provided for @scoreLabel.
@@ -1251,7 +1251,7 @@ abstract class AppLocalizations {
   /// No description provided for @basicDefault.
   ///
   /// In ko, this message translates to:
-  /// **'기본 (Default)'**
+  /// **'기본'**
   String get basicDefault;
 
   /// No description provided for @basic.
@@ -1649,6 +1649,102 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'단어와 문장 모드를 여기서 전환하세요.'**
   String get tutorialM1ToggleDesc;
+
+  /// No description provided for @metadataDialogTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'상세 정보'**
+  String get metadataDialogTitle;
+
+  /// No description provided for @selectPOS.
+  ///
+  /// In ko, this message translates to:
+  /// **'품사 선택'**
+  String get selectPOS;
+
+  /// No description provided for @selectSentenceType.
+  ///
+  /// In ko, this message translates to:
+  /// **'문장 종류 선택'**
+  String get selectSentenceType;
+
+  /// No description provided for @metadataRootWord.
+  ///
+  /// In ko, this message translates to:
+  /// **'원형 (Root Word)'**
+  String get metadataRootWord;
+
+  /// No description provided for @posNoun.
+  ///
+  /// In ko, this message translates to:
+  /// **'명사'**
+  String get posNoun;
+
+  /// No description provided for @posVerb.
+  ///
+  /// In ko, this message translates to:
+  /// **'동사'**
+  String get posVerb;
+
+  /// No description provided for @posAdjective.
+  ///
+  /// In ko, this message translates to:
+  /// **'형용사'**
+  String get posAdjective;
+
+  /// No description provided for @posAdverb.
+  ///
+  /// In ko, this message translates to:
+  /// **'부사'**
+  String get posAdverb;
+
+  /// No description provided for @posPronoun.
+  ///
+  /// In ko, this message translates to:
+  /// **'대명사'**
+  String get posPronoun;
+
+  /// No description provided for @posPreposition.
+  ///
+  /// In ko, this message translates to:
+  /// **'전치사/조사'**
+  String get posPreposition;
+
+  /// No description provided for @posConjunction.
+  ///
+  /// In ko, this message translates to:
+  /// **'접속사'**
+  String get posConjunction;
+
+  /// No description provided for @posInterjection.
+  ///
+  /// In ko, this message translates to:
+  /// **'감탄사'**
+  String get posInterjection;
+
+  /// No description provided for @typeStatement.
+  ///
+  /// In ko, this message translates to:
+  /// **'평서문'**
+  String get typeStatement;
+
+  /// No description provided for @typeQuestion.
+  ///
+  /// In ko, this message translates to:
+  /// **'의문문'**
+  String get typeQuestion;
+
+  /// No description provided for @typeExclamation.
+  ///
+  /// In ko, this message translates to:
+  /// **'감탄문'**
+  String get typeExclamation;
+
+  /// No description provided for @typeImperative.
+  ///
+  /// In ko, this message translates to:
+  /// **'명령문'**
+  String get typeImperative;
 }
 
 class _AppLocalizationsDelegate

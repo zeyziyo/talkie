@@ -820,4 +820,52 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get tutorialM1ToggleDesc =>
       'Switch between Word and Sentence mode here. Words are saved with larger text.';
+
+  @override
+  String get metadataDialogTitle => 'Details';
+
+  @override
+  String get selectPOS => 'Select POS';
+
+  @override
+  String get selectSentenceType => 'Select Sentence Type';
+
+  @override
+  String get metadataRootWord => 'Root Word';
+
+  @override
+  String get posNoun => 'Noun';
+
+  @override
+  String get posVerb => 'Verb';
+
+  @override
+  String get posAdjective => 'Adjective';
+
+  @override
+  String get posAdverb => 'Adverb';
+
+  @override
+  String get posPronoun => 'Pronoun';
+
+  @override
+  String get posPreposition => 'Preposition';
+
+  @override
+  String get posConjunction => 'Conjunction';
+
+  @override
+  String get posInterjection => 'Interjection';
+
+  @override
+  String get typeStatement => 'Statement';
+
+  @override
+  String get typeQuestion => 'Question';
+
+  @override
+  String get typeExclamation => 'Exclamation';
+
+  @override
+  String get typeImperative => 'Imperative';
 }

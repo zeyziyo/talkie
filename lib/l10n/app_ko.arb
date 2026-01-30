@@ -616,5 +616,21 @@
         "type": "Object"
       }
     }
-  }
+  },
+  "metadataDialogTitle": "상세 정보",
+  "selectPOS": "품사 선택",
+  "selectSentenceType": "문장 종류 선택",
+  "metadataRootWord": "원형 (Root Word)",
+  "posNoun": "명사",
+  "posVerb": "동사",
+  "posAdjective": "형용사",
+  "posAdverb": "부사",
+  "posPronoun": "대명사",
+  "posPreposition": "전치사/조사",
+  "posConjunction": "접속사",
+  "posInterjection": "감탄사",
+  "typeStatement": "평서문",
+  "typeQuestion": "의문문",
+  "typeExclamation": "감탄문",
+  "typeImperative": "명령문"
 }

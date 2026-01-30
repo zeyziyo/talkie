@@ -596,5 +596,21 @@
   "chatEndTitle": "End & Save Chat",
   "chatEndMessage": "Do you want to end this conversation? You can set a title for it.",
   "chatSaveAndExit": "Save & Exit",
-  "errorSelectCategory": "Please select word or sentence first!"
+  "errorSelectCategory": "Please select word or sentence first!",
+  "metadataDialogTitle": "Details",
+  "selectPOS": "Select POS",
+  "selectSentenceType": "Select Sentence Type",
+  "metadataRootWord": "Root Word",
+  "posNoun": "Noun",
+  "posVerb": "Verb",
+  "posAdjective": "Adjective",
+  "posAdverb": "Adverb",
+  "posPronoun": "Pronoun",
+  "posPreposition": "Preposition",
+  "posConjunction": "Conjunction",
+  "posInterjection": "Interjection",
+  "typeStatement": "Statement",
+  "typeQuestion": "Question",
+  "typeExclamation": "Exclamation",
+  "typeImperative": "Imperative"
 }
