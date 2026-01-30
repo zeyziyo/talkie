@@ -157,58 +157,8 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                         padding: const EdgeInsets.all(16),
                         child: Column(
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                // Source Language Label
-                                Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue[50],
-                                    borderRadius: BorderRadius.circular(8),
-                                    border: Border.all(color: Colors.blue.shade200),
-                                  ),
-                                  child: Text(
-                                    LanguageConstants.supportedLanguages.firstWhere(
-                                      (l) => l['code'] == appState.sourceLang,
-                                      orElse: () => {'name': appState.sourceLang},
-                                    )['name']!,
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue.shade800,
-                                    ),
-                                  ),
-                                ),
-                                // Swap Button
-                                IconButton(
-                                  key: widget.swapButtonKey,
-                                  icon: const Icon(Icons.swap_horiz, color: Colors.blueAccent),
-                                  onPressed: () => appState.swapLanguages(),
-                                  tooltip: l10n.swapLanguages,
-                                ),
-                                // Target Language Label (Quick view)
-                                Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                                  decoration: BoxDecoration(
-                                    color: Colors.green[50],
-                                    borderRadius: BorderRadius.circular(8),
-                                    border: Border.all(color: Colors.green.shade200),
-                                  ),
-                                  child: Text(
-                                    LanguageConstants.supportedLanguages.firstWhere(
-                                      (l) => l['code'] == appState.targetLang,
-                                      orElse: () => {'name': appState.targetLang},
-                                    )['name']!,
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.green.shade800,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
+                            // Language selection UI removed (moved to AppBar)
+                            const SizedBox(height: 8),
                             
                             // Context/Note Feedback
                             if (appState.note.isNotEmpty)

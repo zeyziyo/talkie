@@ -337,28 +337,71 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Container(
                     color: Colors.white,
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    child: SegmentedButton<String>(
-                      style: SegmentedButton.styleFrom(
-                        visualDensity: VisualDensity.compact,
-                        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      ),
-                      segments: [
-                        ButtonSegment<String>(
-                          value: 'word',
-                          label: Text(l10n.tabWord),
-                          icon: const Icon(Icons.text_fields, size: 18),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: SegmentedButton<String>(
+                            style: SegmentedButton.styleFrom(
+                              visualDensity: VisualDensity.compact,
+                              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            ),
+                            segments: [
+                              ButtonSegment<String>(
+                                value: 'word',
+                                label: Text(l10n.tabWord),
+                                icon: const Icon(Icons.text_fields, size: 18),
+                              ),
+                              ButtonSegment<String>(
+                                value: 'sentence',
+                                label: Text(l10n.tabSentence),
+                                icon: const Icon(Icons.short_text, size: 18),
+                              ),
+                            ],
+                            selected: {appState.recordTypeFilter},
+                            onSelectionChanged: (Set<String> newSelection) {
+                              appState.setRecordTypeFilter(newSelection.first);
+                              appState.selectMaterial(0); // Reset to basic
+                            },
+                          ),
                         ),
-                        ButtonSegment<String>(
-                          value: 'sentence',
-                          label: Text(l10n.tabSentence),
-                          icon: const Icon(Icons.short_text, size: 18),
+                        const SizedBox(width: 8),
+                        // Mini Language Swap Button
+                        InkWell(
+                          onTap: () => appState.swapLanguages(),
+                          borderRadius: BorderRadius.circular(8),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                            decoration: BoxDecoration(
+                              color: Colors.blue[50],
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(color: Colors.blue.shade200),
+                            ),
+                            child: Row(
+                              children: [
+                                Text(
+                                  appState.sourceLang.toUpperCase(),
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.blue.shade800,
+                                  ),
+                                ),
+                                const SizedBox(width: 4),
+                                Icon(Icons.swap_horiz, size: 16, color: Colors.blue.shade400),
+                                const SizedBox(width: 4),
+                                Text(
+                                  appState.targetLang.toUpperCase(),
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.blue.shade800,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ),
                       ],
-                      selected: {appState.recordTypeFilter},
-                      onSelectionChanged: (Set<String> newSelection) {
-                        appState.setRecordTypeFilter(newSelection.first);
-                        appState.selectMaterial(0); // Reset to basic
-                      },
                     ),
                   ),
                 )
