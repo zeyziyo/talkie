@@ -44,17 +44,15 @@
 
 ## 📸 핵심 UI 갤러리
 
-````carousel
-![새로운 카드 디자인 컨셉](C:/Users/pegas/.gemini/antigravity/brain/37348da4-62c4-4505-8be3-7dc91208c235/premium_card_ui_mockup_1769758161732.png)
-<!-- slide -->
+![새로운 카드 디자인 컨셉](premium_card_ui_mockup_1769758161732.png)
+
 ### Mode 2 (복습) 변경 사항
 - 카드 확장 시 타겟 언어 배지(Green)와 TTS 아이콘 배치 최적화
 - 품사/형태 배지 추가로 학습 효율 증대
-<!-- slide -->
+
 ### Mode 3 (연습) 변경 사항
 - 하단 리스트에서 연습할 단어/문장 직접 선택 가능
 - 현재 연습 중인 항목은 파란색 하이라이트 및 마이크 아이콘 표시
-````
 
 ## 🛠️ 수정된 파일
 - [app_state.dart](file:///c:/FlutterProjects/talkie/lib/providers/app_state.dart): 데이터 쿼리 및 세션 제어 로직 수정
