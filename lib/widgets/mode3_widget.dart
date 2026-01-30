@@ -234,13 +234,7 @@ class Mode3Widget extends StatelessWidget {
                         ],
                       ),
                     ),
-          
-                                const SizedBox(height: 60),
-                              ],
-                          ),
-                    ),
-                    
-                    // Floating Next Button Removed (Duplicate)
+                    const SizedBox(height: 60),
                   ],
                 ),
               ),
