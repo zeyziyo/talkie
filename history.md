@@ -24,16 +24,52 @@
 ## 📅 [2026-01-30 16:35:10] Phase 24: 복습/연습 카드 UI 고도화 (Card UI Enhancement)
 
 ### ✅ 태스크 (Task)
-- [x] 카드 내 품사(POS) 및 형태(Grammar Form) 시각화
-- [x] 카드 내 주석(Note) 및 원형(Root) 표시 구현
-- [x] 태그(Tags) 칩셋 표시 및 언어별 색상 구분 적용
-- [x] 전체 UI 정교화 및 프리미엄 디자인 검증
+- [x] 카드 내 품사(POS) 및 형태(Grammar Form) 시각화 <!-- id: 168 -->
+- [x] 카드 내 주석(Note) 및 원형(Root) 표시 구현 <!-- id: 169 -->
+- [x] 태그(Tags) 칩셋 표시 및 언어별 색상 구분 적용 <!-- id: 170 -->
+- [x] 전체 UI 정교화 및 프리미엄 디자인 검증 <!-- id: 171 -->
 
-### 📝 워크스루 (Walkthrough Summary)
-- **핵심 조치**: 
-    1. `AppState.loadRecordsByTags`를 수정하여 모든 메타데이터(POS, Form, Root, Tags)를 UI에 공급.
-    2. `Mode2Widget` 및 `Mode3Widget`에 프리미엄 카드 디자인 적용 (품사/형태 배지 및 태그 칩셋).
-    3. `Mode3Widget` 하단에 카드 목록 리스트를 추가하고 클릭 시 즉시 연습 세션이 시작되도록 기능 개선.
-- **결과**: 복습 및 연습 모드에서 학습 효율이 극대화되었으며, 직관적이고 고급스러운 UI 경험을 제공함.
+### 📝 워크스루 (Walkthrough)
+
+복습(Mode 2) 및 발음 연습(Mode 3) 모드의 카드 UI를 전면 개편하여 학습에 필요한 상세 정보를 한눈에 파악할 수 있도록 고도화했습니다.
+
+#### 🌟 주요 변경 사항
+
+##### 1. 데이터 로드 로직 고도화
+- `AppState.dart`의 `loadRecordsByTags`를 수정하여 **품사(POS), 문법 형태(Form Type), 원형(Root), 태그(Tags)** 데이터를 UI로 완벽히 전달하도록 쿼리 및 페어링 로직을 강화했습니다.
+
+##### 2. 프리미엄 카드 UI 디자인 (Mode 2 & 3)
+- **품사 및 형태 시각화**: 파란색(품사) 및 주황색(형태) 배지를 사용하여 문법 정보를 직관적으로 표시합니다.
+- **주석(Note) 및 원형(Root)**: 이탤릭체와 아이콘을 사용하여 부가 정보와 단어의 기원을 깔끔하게 배치했습니다.
+- **태그 칩셋**: 해시태그 형태의 칩을 사용하여 카테고리 분류를 명확히 했습니다.
+- **언어별 색상 구분**: 소스 언어(파란색 계열)와 타겟 언어(초록색 계열) 배지를 통해 언어 관계를 명확히 시각화했습니다.
+
+##### 3. 발음 연습 모드(Mode 3) 구조 개선
+- **카드 목록 도입**: 기존에 하나씩만 보이던 방식에서 벗어나, 하단에 전체 카드 목록을 배치했습니다.
+- **인터랙티브 연습**: 목록에서 특정 카드를 클릭하면 즉시 해당 항목의 발음 연습 세션이 시작되도록 `selectMode3QuestionById` 로직을 구현했습니다.
+
+#### 📸 핵심 UI 갤러리
+
+````carousel
+![새로운 카드 디자인 컨셉](C:/Users/pegas/.gemini/antigravity/brain/37348da4-62c4-4505-8be3-7dc91208c235/premium_card_ui_mockup_1769758161732.png)
+<!-- slide -->
+### Mode 2 (복습) 변경 사항
+- 카드 확장 시 타겟 언어 배지(Green)와 TTS 아이콘 배치 최적화
+- 품사/형태 배지 추가로 학습 효율 증대
+<!-- slide -->
+### Mode 3 (연습) 변경 사항
+- 하단 리스트에서 연습할 단어/문장 직접 선택 가능
+- 현재 연습 중인 항목은 파란색 하이라이트 및 마이크 아이콘 표시
+````
+
+#### 🛠️ 수정된 파일
+- [app_state.dart](file:///c:/FlutterProjects/talkie/lib/providers/app_state.dart)
+- [mode2_widget.dart](file:///c:/FlutterProjects/talkie/lib/widgets/mode2_widget.dart)
+- [mode3_widget.dart](file:///c:/FlutterProjects/talkie/lib/widgets/mode3_widget.dart)
+
+#### ✅ 검증 결과
+- 모든 카드가 품사 및 형태 정보를 정확히 표시함 확인
+- 복습 모드에서 카드 확장/축소 및 학습 완료 체크 정상 작동
+- 연습 모드 리스트에서 항목 클릭 시 즉시 발음 연습 시작 및 정답 비교 로직 연동 확인
 
 ---
