@@ -178,20 +178,6 @@ class AppState extends ChangeNotifier {
   bool get showDuplicateDialog => _showDuplicateDialog;
   String get selectedReviewLanguage => _selectedReviewLanguage;
 
-  // Dialogue Management
-  List<DialogueGroup> _dialogueGroups = [];
-  List<DialogueGroup> get dialogueGroups => _dialogueGroups;
-  
-  String? _activeDialogueId;
-  String? get activeDialogueId => _activeDialogueId;
-  
-  String? _activeDialogueTitle;
-  String? get activeDialogueTitle => _activeDialogueTitle;
-  
-  String? _activePersona;
-  String? get activePersona => _activePersona;
-
-  
   // Disambiguation Getters
   List<String> get disambiguationOptions => _disambiguationOptions;
   bool get showDisambiguationDialog => _showDisambiguationDialog;

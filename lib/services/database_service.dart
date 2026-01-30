@@ -2018,8 +2018,6 @@ class DatabaseService {
     return results.map((row) => row['text'] as String).toList();
   }
 
-    });
-  }
 
   // --- Search & Memorized Status ---
 

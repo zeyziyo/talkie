@@ -205,6 +205,12 @@ This project was originally developed with Flet (Python), but migrated to Flutte
 Flet 버전은 `c:\PythonProjects\talkland_flet` 에 보존되어 있습니다.
 The Flet version is preserved at `c:\PythonProjects\talkland_flet`.
 
+## 최근 업데이트 (Recent Updates - 2026-01-30)
+
+- **빌드 안정화**: `AppState` 및 `DatabaseService` 내의 모든 중복 정의 및 문법 오류 해결 (Clean Build 보장)
+- **글로벌 동기화**: `app_en.arb`의 신규 키(`chatNewChat` 등)를 43개 언어 전체 파일에 자동 동기화
+- **SDK 대응**: `Geolocator` 패키지(v13.0.0+)의 브레이킹 체인지 대응 및 위치 설정 최적화
+
 ## 라이선스 (License)
 
 Private project

@@ -685,11 +685,8 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                          record['is_memorized'] == true
                      );
                   },
-                )
-              ],
-            ),
+                ),
 
-                
                 // Context Tag & Hint
                 Builder(
                   builder: (context) {
@@ -861,13 +858,12 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                     ),
                   ],
                 ),
-              ], // Closes spread list
-            ],   // Closes Column children
-            ),
-          ),
-        ),
-      ),
-    );
+            ],   // Column children
+        ),     // Column
+      ),       // Padding
+    ),         // Card
+    ),         // Container
+    );         // InkWell
   }
 
   void _showDeleteDialog(BuildContext context, AppState appState, Map<String, dynamic> record, AppLocalizations l10n) {

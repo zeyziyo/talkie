@@ -517,6 +517,7 @@
   "reviewModeTitle": "복습",
   "practiceModeTitle": "발음 연습",
   "chatHistoryTitle": "대화 기록",
+  "chatNew": "새 대화",
   "chatNewChat": "새 대화",
   "chatChoosePersona": "페르소나 선택",
   "chatTypeHint": "메시지를 입력하세요...",
@@ -643,5 +644,8 @@
   "formPlural": "복수형",
   "formPositive": "원급",
   "formComparative": "비교급",
-  "formSuperlative": "최상급"
+  "formSuperlative": "최상급",
+  "@location": {
+    "description": "Label for location field in chat save dialog"
+  }
 }

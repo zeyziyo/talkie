@@ -79,8 +79,10 @@ class _ChatScreenState extends State<ChatScreen> {
       if (position == null) {
         try {
           position = await Geolocator.getCurrentPosition(
-            desiredAccuracy: LocationAccuracy.medium,
-            timeLimit: const Duration(seconds: 3),
+            locationSettings: const LocationSettings(
+              accuracy: LocationAccuracy.medium,
+              timeLimit: Duration(seconds: 5),
+            ),
           );
         } catch (e) {
           debugPrint('GPS Timeout or Error: $e');
@@ -188,7 +190,7 @@ class _ChatScreenState extends State<ChatScreen> {
            inputLang,
            translatedText, // translation
            outputLang,
-           isPartnerMessage ? (l10n.partner ?? 'Partner') : 'User'
+           isPartnerMessage ? l10n.partner : 'User'
         );
         
         setState(() => _isLoading = false);
@@ -339,7 +341,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       TextField(
                         controller: titleController,
                         decoration: InputDecoration(
-                          labelText: l10n.subject ?? 'Title',
+                          labelText: l10n.subject,
                           hintText: l10n.chatUntitled,
                           prefixIcon: const Icon(Icons.title),
                           border: const OutlineInputBorder(),
@@ -554,7 +556,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             children: [
                               const Icon(Icons.add, color: Colors.white, size: 20),
                               const SizedBox(width: 8),
-                              Text(l10n.chatNew ?? "New Chat"),
+                              Text(l10n.chatNewChat),
                             ],
                           ),
                         ),
@@ -593,6 +595,8 @@ class _ChatScreenState extends State<ChatScreen> {
               });
             },
           ),
+          IconButton(
+            icon: const Icon(Icons.save),
             onPressed: () => _endChat(l10n),
             tooltip: l10n.chatSaveAndExit,
           ),
