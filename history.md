@@ -1,23 +1,17 @@
 # 📜 Antigravity 작업 이력 (Chronological History)
 
-이 파일은 Antigravity 에이전트가 수행한 모든 작업의 태스크와 워크스루 내용을 시간 순서대로 기록하는 통합 이력장입니다.
+이 파일은 Antigravity 에이전트가 수행한 모든 작업의 태스크와 워크스루 내용을 최신순으로 기록하는 통합 이력장입니다.
 
 ---
 
-## 📅 [2026-01-30 16:22:28] Phase 23: 저장 및 표시 동기화 오류 수정 (Save & Display Sync Fix)
+## 📅 [2026-01-30 17:11:05] Phase 24.1: Mode 3 구문 오류 긴급 수정 (Hotfix)
 
 ### ✅ 태스크 (Task)
-- [x] `saveTranslation` 내 로컬 목록(`loadRecordsByTags`) 새로고침 누락 수정
-- [x] 신규 저장 시 `is_memorized=0` 명시적 설정
-- [x] 모드 전환 시 데이터 최신화 보장 로직 검증
-- [x] 전체 기능 검증 및 릴리스 배포
+- [x] `lib/widgets/mode3_widget.dart` 내 중복 `SizedBox` 및 콤마 구문 오류 제거
 
-### 📝 워크스루 (Walkthrough Summary)
-- **핵심 조치**: 
-    1. `AppState.saveTranslation` 로직에 로컬 리스트 즉시 갱신(`loadRecordsByTags`) 추가.
-    2. 모든 신규 데이터를 '학습 미완료(`is_memorized=0`)' 상태로 저장하여 복습 리스트에 즉시 반영.
-    3. 모드 전환(`switchMode`) 시 항상 최신 데이터를 로드하도록 구조 개선.
-- **결과**: 사용자가 단어/문장을 저장하는 즉시 "복습" 및 "발음 연습" 모드의 카드 리스트에서 확인 가능함.
+### 📝 워크스루 (Walkthrough)
+- **핵심 조치**: UI 리스트 끝부분에 잘못 포함된 빈 `SizedBox`와 콤마를 삭제하여 빌드 실패 문제를 해결했습니다.
+- **결과**: 다트 문법 오류가 해소되어 정상적으로 빌드가 가능한 상태로 복구되었습니다.
 
 ---
 
@@ -44,7 +38,7 @@
 
 ## 📸 핵심 UI 갤러리
 
-![새로운 카드 디자인 컨셉](premium_card_ui_mockup_1769758161732.png)
+![새로운 카드 디자인 컨셉](./premium_card_ui_mockup_1769758161732.png)
 
 ### Mode 2 (복습) 변경 사항
 - 카드 확장 시 타겟 언어 배지(Green)와 TTS 아이콘 배치 최적화
@@ -66,13 +60,19 @@
 
 ---
 
-## 📅 [2026-01-30 17:11:05] Phase 24.1: Mode 3 구문 오류 긴급 수정 (Hotfix)
+## 📅 [2026-01-30 16:22:28] Phase 23: 저장 및 표시 동기화 오류 수정 (Save & Display Sync Fix)
 
 ### ✅ 태스크 (Task)
-- [x] `lib/widgets/mode3_widget.dart` 내 중복 `SizedBox` 및 콤마 구문 오류 제거
+- [x] `saveTranslation` 내 로컬 목록(`loadRecordsByTags`) 새로고침 누락 수정
+- [x] 신규 저장 시 `is_memorized=0` 명시적 설정
+- [x] 모드 전환 시 데이터 최신화 보장 로직 검증
+- [x] 전체 기능 검증 및 릴리스 배포
 
-### 📝 워크스루 (Walkthrough)
-- **핵심 조치**: UI 리스트 끝부분에 잘못 포함된 빈 `SizedBox`와 콤마를 삭제하여 빌드 실패 문제를 해결했습니다.
-- **결과**: 다트 문법 오류가 해소되어 정상적으로 빌드가 가능한 상태로 복구되었습니다.
+### 📝 워크스루 (Walkthrough Summary)
+- **핵심 조치**: 
+    1. `AppState.saveTranslation` 로직에 로컬 리스트 즉시 갱신(`loadRecordsByTags`) 추가.
+    2. 모든 신규 데이터를 '학습 미완료(`is_memorized=0`)' 상태로 저장하여 복습 리스트에 즉시 반영.
+    3. 모드 전환(`switchMode`) 시 항상 최신 데이터를 로드하도록 구조 개선.
+- **결과**: 사용자가 단어/문장을 저장하는 즉시 "복습" 및 "발음 연습" 모드의 카드 리스트에서 확인 가능함.
 
 ---
