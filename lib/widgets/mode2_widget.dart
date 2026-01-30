@@ -687,7 +687,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                              style: TextStyle(
                                fontSize: (record['type'] == 'word') ? 22 : 16,
                                fontWeight: FontWeight.bold,
-                               color: Colors.blackDE,
+                               color: Colors.black87,
                              ),
                            ),
                          ],

@@ -1318,7 +1318,7 @@ class AppState extends ChangeNotifier {
           'tags': tags,
           'created_at': sourceRow['created_at'],
           'review_count': sourceRow['review_count'] ?? 0,
-          'is_memorized': isMemorized,
+          'is_memorized': sourceRow['is_memorized'] == 1,
         });
       }
 
