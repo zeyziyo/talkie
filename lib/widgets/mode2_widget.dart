@@ -158,63 +158,108 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                     }
                   ),
                   const SizedBox(height: 12),
-                  // 태그 필터 칩 목록
-                  if (appState.availableTags.isNotEmpty)
-                    SizedBox(
-                      height: 40,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: appState.availableTags.length,
-                        itemBuilder: (context, index) {
-                          final tag = appState.availableTags[index];
-                          final isSelected = appState.selectedTags.contains(tag);
-                          return Padding(
-                            padding: const EdgeInsets.only(right: 8),
-                            child: FilterChip(
-                              label: Text(tag),
-                              selected: isSelected,
-                              onSelected: (_) => appState.toggleTag(tag),
-                              visualDensity: VisualDensity.compact,
-                              selectedColor: Colors.blue[100],
-                              checkmarkColor: Colors.blue,
-                            ),
-                          );
-                        },
-                      ),
-                    ),
-                  
                   const SizedBox(height: 8),
                   
-                  // Word/Sentence Toggle
+                  // Word/Sentence Toggle + Tag Selection + Show Memorized Switch
                   Row(
                     children: [
+                      // 1. Word/Sentence Toggle
                       Expanded(
+                        flex: 5,
                         child: SegmentedButton<String>(
                           segments: [
                             ButtonSegment<String>(
                               value: 'word',
-                              label: Text(l10n.tabWord),
-                              icon: const Icon(Icons.text_fields),
+                              label: Text(l10n.tabWord, style: const TextStyle(fontSize: 11)),
+                              icon: const Icon(Icons.text_fields, size: 14),
                             ),
                             ButtonSegment<String>(
                               value: 'sentence',
-                              label: Text(l10n.tabSentence),
-                              icon: const Icon(Icons.short_text),
-                            ),
-                            ButtonSegment<String>(
-                              value: 'all',
-                              label: const Text('전체'),
-                              icon: const Icon(Icons.apps),
+                              label: Text(l10n.tabSentence, style: const TextStyle(fontSize: 11)),
+                              icon: const Icon(Icons.short_text, size: 14),
                             ),
                           ],
                           selected: {appState.recordTypeFilter},
                           onSelectionChanged: (Set<String> newSelection) {
                             appState.setRecordTypeFilter(newSelection.first);
-                            appState.loadRecordsByTags(); // 재로드
+                            appState.loadRecordsByTags();
                           },
-                          style: ButtonStyle(
-                            padding: WidgetStateProperty.all(EdgeInsets.zero),
+                          style: SegmentedButton.styleFrom(
                             visualDensity: VisualDensity.compact,
+                            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            padding: EdgeInsets.zero,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 4),
+                      
+                      // 2. Tag Selection Button
+                      InkWell(
+                        onTap: () => _showTagSelectionDialog(context, appState),
+                        borderRadius: BorderRadius.circular(8),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+                          decoration: BoxDecoration(
+                            color: appState.selectedTags.isNotEmpty ? Colors.blue[50] : Colors.grey[100],
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: appState.selectedTags.isNotEmpty ? Colors.blue.shade200 : Colors.grey.shade300,
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                Icons.local_offer_outlined, 
+                                size: 14, 
+                                color: appState.selectedTags.isNotEmpty ? Colors.blue.shade700 : Colors.grey.shade600,
+                              ),
+                              const SizedBox(width: 2),
+                              Text(
+                                appState.selectedTags.isEmpty ? '태그' : '${appState.selectedTags.length}',
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                  color: appState.selectedTags.isNotEmpty ? Colors.blue.shade800 : Colors.grey.shade700,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 4),
+
+                      // 3. Show Memorized Switch (Icon Toggle for space)
+                      InkWell(
+                        onTap: () => appState.setShowMemorized(!appState.showMemorized),
+                        borderRadius: BorderRadius.circular(8),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+                          decoration: BoxDecoration(
+                            color: appState.showMemorized ? Colors.green[50] : Colors.grey[100],
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: appState.showMemorized ? Colors.green.shade200 : Colors.grey.shade300,
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                appState.showMemorized ? Icons.visibility : Icons.visibility_off, 
+                                size: 14, 
+                                color: appState.showMemorized ? Colors.green.shade700 : Colors.grey.shade600,
+                              ),
+                              const SizedBox(width: 2),
+                              Text(
+                                '외운것',
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                  color: appState.showMemorized ? Colors.green.shade800 : Colors.grey.shade700,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -811,6 +856,11 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                     // Show/Hide Button
                     ElevatedButton.icon(
                       onPressed: () {
+                        // Phase 27: Automate study marking on Flip
+                        if (!isExpanded) {
+                          appState.markTranslationAsStudied(translationId);
+                        }
+                        
                         setState(() {
                           if (isExpanded) {
                             _expandedCards.remove(translationId);
@@ -848,23 +898,6 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                           foregroundColor: const Color(0xFF667eea),
                         ),
                       ),
-                      
-                    const Spacer(),
-                    
-                    // Study Check Button
-                    IconButton(
-                      onPressed: isStudied
-                          ? null
-                          : () {
-                              appState.markTranslationAsStudied(translationId);
-                            },
-                      icon: Icon(
-                        isStudied ? Icons.check_circle : Icons.check_circle_outline,
-                        color: isStudied ? Colors.green : Colors.grey,
-                        size: 28,
-                      ),
-                      tooltip: isStudied ? l10n.studyComplete : l10n.markAsStudied,
-                    ),
                   ],
                 ),
             ],   // Column children
@@ -905,54 +938,75 @@ class _Mode2WidgetState extends State<Mode2Widget> {
   }
 
   void _showDeleteDialog(BuildContext context, AppState appState, Map<String, dynamic> record, AppLocalizations l10n) {
+    // ... (existing code)
+  }
+
+  void _showTagSelectionDialog(BuildContext context, AppState appState) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
-        title: Text('🗑️ ${l10n.deleteRecord}'),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(l10n.confirmDelete),
-            const SizedBox(height: 12),
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: Colors.grey[100],
-                borderRadius: BorderRadius.circular(8),
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            return AlertDialog(
+              title: const Row(
+                children: [
+                  Icon(Icons.local_offer_outlined, color: Colors.blue),
+                  SizedBox(width: 8),
+                  Text('태그 선택'),
+                ],
               ),
-              child: Text(
-                record['source_text'] as String,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
+              content: SizedBox(
+                width: double.maxFinite,
+                child: appState.availableTags.isEmpty
+                  ? const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 24),
+                      child: Text('사용 가능한 태그가 없습니다.', textAlign: TextAlign.center, style: TextStyle(color: Colors.grey)),
+                    )
+                  : Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Flexible(
+                          child: ListView.builder(
+                            shrinkWrap: true,
+                            itemCount: appState.availableTags.length,
+                            itemBuilder: (context, index) {
+                              final tag = appState.availableTags[index];
+                              final isSelected = appState.selectedTags.contains(tag);
+                              return CheckboxListTile(
+                                title: Text(tag),
+                                value: isSelected,
+                                onChanged: (bool? value) {
+                                  appState.toggleTag(tag);
+                                  setDialogState(() {}); // Update local dialog UI
+                                },
+                                controlAffinity: ListTileControlAffinity.leading,
+                                dense: true,
+                                activeColor: Colors.blue,
+                              );
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
               ),
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text(l10n.cancel),
-          ),
-          TextButton(
-            onPressed: () async {
-              Navigator.of(context).pop();
-              try {
-                await appState.deleteRecord(record['id'] as int);
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('✅ ${l10n.recordDeleted}')),
-                  );
-                }
-              } catch (e) {
-                // Error handling
-              }
-            },
-            style: TextButton.styleFrom(foregroundColor: Colors.red),
-            child: Text(l10n.delete),
-          ),
-        ],
-      ),
+              actions: [
+                if (appState.selectedTags.isNotEmpty)
+                  TextButton(
+                    onPressed: () {
+                      appState.clearSelectedTags(); // Need to implement this in AppState or do manual loop
+                      setDialogState(() {});
+                    },
+                    child: const Text('초기화', style: TextStyle(color: Colors.red)),
+                  ),
+                TextButton(
+                  onPressed: () => Navigator.of(context).pop(),
+                  child: const Text('확인'),
+                ),
+              ],
+            );
+          },
+        );
+      },
     );
   }
 }

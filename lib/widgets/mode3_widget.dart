@@ -122,57 +122,24 @@ class Mode3Widget extends StatelessWidget {
                       );
                     },
                   ),
-                    const SizedBox(height: 12),
-                    // 태그 필터 칩 목록
-                    if (appState.availableTags.isNotEmpty)
-                      SizedBox(
-                        height: 40,
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemCount: appState.availableTags.length,
-                          itemBuilder: (context, index) {
-                            final tag = appState.availableTags[index];
-                            final isSelected = appState.selectedTags.contains(tag);
-                            return Padding(
-                              padding: const EdgeInsets.only(right: 8),
-                              child: FilterChip(
-                                label: Text(tag),
-                                selected: isSelected,
-                                onSelected: (_) {
-                                  appState.toggleTag(tag);
-                                  if (appState.mode3SessionActive) appState.startMode3SessionDirectly();
-                                },
-                                visualDensity: VisualDensity.compact,
-                                selectedColor: Colors.blue[100],
-                                checkmarkColor: Colors.blue,
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                    
                     const SizedBox(height: 8),
                     
-                    // Word/Sentence Toggle
+                    // Word/Sentence Toggle + Tag Selection Button
                     Row(
                       children: [
                         Expanded(
+                          flex: 3,
                           child: SegmentedButton<String>(
                             segments: [
                               ButtonSegment<String>(
                                 value: 'word',
                                 label: Text(l10n.tabWord),
-                                icon: const Icon(Icons.text_fields),
+                                icon: const Icon(Icons.text_fields, size: 18),
                               ),
                               ButtonSegment<String>(
                                 value: 'sentence',
                                 label: Text(l10n.tabSentence),
-                                icon: const Icon(Icons.short_text),
-                              ),
-                              ButtonSegment<String>(
-                                value: 'all',
-                                label: const Text('전체'),
-                                icon: const Icon(Icons.apps),
+                                icon: const Icon(Icons.short_text, size: 18),
                               ),
                             ],
                             selected: {appState.recordTypeFilter},
@@ -180,9 +147,46 @@ class Mode3Widget extends StatelessWidget {
                               appState.setRecordTypeFilter(newSelection.first);
                               if (appState.mode3SessionActive) appState.startMode3SessionDirectly();
                             },
-                            style: ButtonStyle(
-                              padding: WidgetStateProperty.all(EdgeInsets.zero),
+                            style: SegmentedButton.styleFrom(
                               visualDensity: VisualDensity.compact,
+                              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        // Tag Selection Button
+                        InkWell(
+                          onTap: () => _showTagSelectionDialog(context, appState),
+                          borderRadius: BorderRadius.circular(8),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                            decoration: BoxDecoration(
+                              color: appState.selectedTags.isNotEmpty ? Colors.blue[50] : Colors.grey[100],
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
+                                color: appState.selectedTags.isNotEmpty ? Colors.blue.shade200 : Colors.grey.shade300,
+                              ),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(
+                                  Icons.local_offer_outlined, 
+                                  size: 16, 
+                                  color: appState.selectedTags.isNotEmpty ? Colors.blue.shade700 : Colors.grey.shade600,
+                                ),
+                                const SizedBox(width: 4),
+                                Text(
+                                  appState.selectedTags.isEmpty 
+                                    ? '태그 선택' 
+                                    : '태그 ${appState.selectedTags.length}',
+                                  style: TextStyle(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold,
+                                    color: appState.selectedTags.isNotEmpty ? Colors.blue.shade800 : Colors.grey.shade700,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -441,5 +445,81 @@ class Mode3Widget extends StatelessWidget {
     if (score >= 100) return Colors.green;
     if (score >= 80) return Colors.orange;
     return Colors.red;
+  }
+
+  void _showTagSelectionDialog(BuildContext context, AppState appState) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            return AlertDialog(
+              title: const Row(
+                children: [
+                  Icon(Icons.local_offer_outlined, color: Colors.blue),
+                  SizedBox(width: 8),
+                  Text('태그 선택'),
+                ],
+              ),
+              content: SizedBox(
+                width: double.maxFinite,
+                child: appState.availableTags.isEmpty
+                  ? const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 24),
+                      child: Text('사용 가능한 태그가 없습니다.', textAlign: TextAlign.center, style: TextStyle(color: Colors.grey)),
+                    )
+                  : Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Flexible(
+                          child: ListView.builder(
+                            shrinkWrap: true,
+                            itemCount: appState.availableTags.length,
+                            itemBuilder: (context, index) {
+                              final tag = appState.availableTags[index];
+                              final isSelected = appState.selectedTags.contains(tag);
+                              return CheckboxListTile(
+                                title: Text(tag),
+                                value: isSelected,
+                                onChanged: (bool? value) {
+                                  appState.toggleTag(tag);
+                                  // In Mode 3, if session is active, we might want to refresh it
+                                  if (appState.mode3SessionActive) {
+                                    appState.startMode3SessionDirectly();
+                                  }
+                                  setDialogState(() {});
+                                },
+                                controlAffinity: ListTileControlAffinity.leading,
+                                dense: true,
+                                activeColor: Colors.blue,
+                              );
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+              ),
+              actions: [
+                if (appState.selectedTags.isNotEmpty)
+                  TextButton(
+                    onPressed: () {
+                      appState.clearSelectedTags();
+                      if (appState.mode3SessionActive) {
+                        appState.startMode3SessionDirectly();
+                      }
+                      setDialogState(() {});
+                    },
+                    child: const Text('초기화', style: TextStyle(color: Colors.red)),
+                  ),
+                TextButton(
+                  onPressed: () => Navigator.of(context).pop(),
+                  child: const Text('확인'),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
   }
 }

@@ -137,8 +137,9 @@ class AppState extends ChangeNotifier {
   int? _selectedMaterialId; // Currently selected material (Legacy/Backward compatibility)
   List<Map<String, dynamic>> _materialRecords = []; // Sentences in selected tags/material
   Set<int> _studiedTranslationIds = {}; // Reviewed items in current session
-  String _recordTypeFilter = 'word'; // 'all', 'word', 'sentence' (Default: Word)
+  String _recordTypeFilter = 'word'; // Default: Word, 'all' removed for standard modes
   String _searchQuery = ''; // 검색어 필터
+  bool _showMemorized = false; // 외운 카드 포함 여부 (기본: 숨김)
 
   // Phase 11: Dialogue / Chat State
   String? _activeDialogueId;
@@ -210,6 +211,7 @@ class AppState extends ChangeNotifier {
   List<String> get availableTags => _availableTags;
   List<String> get selectedTags => _selectedTags;
   String get searchQuery => _searchQuery;
+  bool get showMemorized => _showMemorized;
 
   // Phase 11 Getters
   String? get activeDialogueId => _activeDialogueId;
@@ -416,15 +418,17 @@ class AppState extends ChangeNotifier {
     _speechService.stopSpeaking();
     
     if (mode == 1) {
-      // 복습 모드 (Mode 2) - 통합 리스트 로드
+      // 복습 모드 (Mode 2)
+      if (_recordTypeFilter == 'all') _recordTypeFilter = 'word';
       loadRecordsByTags(); 
     } else if (mode == 2) {
-      // 발음 연습 모드 (Mode 3) - 통합 리스트 로드
+      // 발음 연습 모드 (Mode 3)
+      if (_recordTypeFilter == 'all') _recordTypeFilter = 'word';
       loadRecordsByTags();
     } else if (mode == 3) {
       // AI 채팅 모드
-      _recordTypeFilter = 'all';
-      loadStudyMaterials(); // 채팅 목록은 기존 로직 유지
+      _recordTypeFilter = 'all'; 
+      loadStudyMaterials();
     }
     
     notifyListeners();
@@ -1210,7 +1214,11 @@ class AppState extends ChangeNotifier {
     try {
       final db = await DatabaseService.database;
       final results = await db.rawQuery('SELECT DISTINCT tag FROM item_tags ORDER BY tag ASC');
-      _availableTags = results.map((e) => e['tag'] as String).toList();
+      // Filter out system tags 'word' and 'sentence'
+      _availableTags = results
+        .map((e) => e['tag'] as String)
+        .where((tag) => tag != 'word' && tag != 'sentence')
+        .toList();
       notifyListeners();
     } catch (e) {
       debugPrint('[AppState] Error loading tags: $e');
@@ -1225,6 +1233,20 @@ class AppState extends ChangeNotifier {
       _selectedTags.add(tag);
     }
     loadRecordsByTags(); // 필터링된 레코드 로드
+    notifyListeners();
+  }
+
+  /// 외운 카드 표시 여부 토글
+  void setShowMemorized(bool value) {
+    _showMemorized = value;
+    loadRecordsByTags();
+    notifyListeners();
+  }
+
+  /// 모든 태그 선택 해제
+  void clearSelectedTags() {
+    _selectedTags.clear();
+    loadRecordsByTags();
     notifyListeners();
   }
 
@@ -1262,16 +1284,17 @@ class AppState extends ChangeNotifier {
       if (_searchQuery.isNotEmpty) {
         query += 'AND t.text LIKE ? ';
         whereArgs.add('%$_searchQuery%');
-      } else if (_selectedTags.isEmpty) {
-        // Phase 21: Default View (No Search, No Tags) -> Show only "Need Re-learning" items
-        // (is_memorized = 0)
+      }
+
+      // Phase 27: Filter by memorized status
+      if (!_showMemorized) {
         query += 'AND (t.is_memorized IS NULL OR t.is_memorized = 0) ';
       }
 
       // 2. 언어 필터 (Source 또는 Target이 현재 설정과 일치하는 것만)
-      // Hub-and-Spoke 상에서 group_id로 묶인 데이터들을 가져와야 함.
-      // 여기서는 일단 단순 텍스트 검색으로 진행하고, 나중에 번역 페어링은 getTranslation 페어를 통해 UI에서 처리.
       
+      // CRITICAL: DEDUPLICATION using GROUP BY group_id
+      query += 'GROUP BY t.group_id ';
       query += 'ORDER BY t.created_at DESC';
 
       final List<Map<String, dynamic>> results = await db.rawQuery(query, whereArgs);
