@@ -4,6 +4,14 @@
 
 ---
 
+## 📅 [2026-01-31 17:55:00] Phase 44: 빌드 오류 수정 (HomeScreen import 누락)
+
+### ✅ 태스크 (Task)
+- [x] HomeScreen: `ChatScreen` Undefined 오류 해결을 위해 `chat_screen.dart` import 구문 추가
+- [x] Code Cleanup: 기타 Deprecated 코드 수정 (RecommendationWidget)
+
+---
+
 ## 📅 [2026-01-31 17:45:00] Phase 43: 콩글리시 해결 & 모드 4 드롭다운 추가
 
 ### ✅ 태스크 (Task)
