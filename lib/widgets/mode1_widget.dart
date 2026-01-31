@@ -176,7 +176,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                       const Icon(Icons.lightbulb, size: 14, color: Colors.deepOrange),
                                       const SizedBox(width: 4),
                                       Text(
-                                        'Note: ${appState.note}', 
+                                        '${l10n.labelNote}: ${appState.note}', 
                                         style: TextStyle(fontSize: 12, color: Colors.brown[800], fontWeight: FontWeight.bold),
                                       ),
                                     ],
@@ -257,7 +257,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                       dense: true,
                                       title: Text(text, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
                                       subtitle: note.isNotEmpty 
-                                          ? Text(note, style: TextStyle(fontSize: 12, color: Colors.blueGrey[600]))
+                                          ? Text(_getLocalizedCategory(note, l10n), style: TextStyle(fontSize: 12, color: Colors.blueGrey[600]))
                                           : null,
                                       trailing: const Icon(Icons.history, size: 16, color: Colors.grey),
                                       onTap: () {
@@ -926,38 +926,40 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                 ),
 
                 // Form Type Section (Dynamic based on POS)
-                Builder(
-                  builder: (context) {
-                    List<String> categories = [];
-                    if (appState.sourcePos == 'Verb') {
-                      categories = AppState.verbFormCategories;
-                    } else if (appState.sourcePos == 'Adjective' || appState.sourcePos == 'Adverb') {
-                      categories = AppState.adjectiveFormCategories;
-                    }
+                  Builder(
+                    builder: (context) {
+                      List<String> categories = [];
+                      if (appState.sourcePos == 'Verb') {
+                        categories = AppState.verbFormCategories;
+                      } else if (appState.sourcePos == 'Adjective' || appState.sourcePos == 'Adverb') {
+                        categories = AppState.adjectiveFormCategories;
+                      } else if (appState.sourcePos == 'Pronoun') { 
+                        categories = AppState.pronounCaseCategories;
+                      }
 
-                    if (categories.isEmpty) return const SizedBox.shrink();
+                      if (categories.isEmpty) return const SizedBox.shrink();
 
-                    return DropdownButtonFormField<String>(
-                      value: categories.contains(appState.sourceFormType) ? appState.sourceFormType : null,
-                      decoration: InputDecoration(
-                        labelText: l10n.metadataFormType,
-                        border: const OutlineInputBorder(),
-                      ),
-                      items: categories.map((cat) {
-                        return DropdownMenuItem(
-                          value: cat,
-                          child: Text(_getLocalizedCategory(cat, l10n)),
-                        );
-                      }).toList(),
-                      onChanged: (val) {
-                        if (val != null) {
-                          appState.setSourceFormType(val);
-                          setDialogState(() {});
-                        }
-                      },
-                    );
-                  },
-                ),
+                      return DropdownButtonFormField<String>(
+                        value: categories.contains(appState.sourceFormType) ? appState.sourceFormType : null,
+                        decoration: InputDecoration(
+                          labelText: l10n.metadataFormType,
+                          border: const OutlineInputBorder(),
+                        ),
+                        items: categories.map((cat) {
+                          return DropdownMenuItem(
+                            value: cat,
+                            child: Text(_getLocalizedCategory(cat, l10n)),
+                          );
+                        }).toList(),
+                        onChanged: (val) {
+                          if (val != null) {
+                            appState.setSourceFormType(val);
+                            setDialogState(() {});
+                          }
+                        },
+                      );
+                    },
+                  ),
               ],
             ),
           ),
@@ -996,7 +998,15 @@ class _Mode1WidgetState extends State<Mode1Widget> {
       case 'Positive': return l10n.formPositive;
       case 'Comparative': return l10n.formComparative;
       case 'Superlative': return l10n.formSuperlative;
-      default: return cat;
+
+      // 대명사 격 (Pronoun Cases)
+      case 'Subject': return l10n.caseSubject;
+      case 'Object': return l10n.caseObject;
+      case 'Possessive': return l10n.casePossessive;
+      case 'PossessivePronoun': return l10n.casePossessivePronoun;
+      case 'Reflexive': return l10n.caseReflexive;
+      
+      default: return cat; // 일반 카테고리는 그대로 반환
     }
   }
 }

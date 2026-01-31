@@ -616,6 +616,8 @@
 
   "typeImperative": "Imperative",
   "labelNote": "Note",
+  "labelShowMemorized": "Memorized",
+  "tagSelection": "Select Tags",
   "metadataFormType": "Form Type",
   "formInfinitive": "Infinitive/Present",
   "formPast": "Past",
@@ -623,6 +625,11 @@
   "formPresentParticiple": "Present Participle",
   "formThirdPersonSingular": "3rd Person Singular",
   "formPlural": "Plural",
+  "caseSubject": "Subject",
+  "caseObject": "Object",
+  "casePossessive": "Possessive",
+  "casePossessivePronoun": "Possessive Pronoun",
+  "caseReflexive": "Reflexive",
   "formPositive": "Positive",
   "formComparative": "Comparative",
   "formSuperlative": "Superlative"

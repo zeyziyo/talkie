@@ -723,6 +723,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get chatHistoryTitle => '대화 기록';
 
   @override
+  String get chatNew => '새 대화';
+
+  @override
   String get chatNewChat => '새 대화';
 
   @override
@@ -849,6 +852,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get labelNote => '주석';
 
   @override
+  String get labelShowMemorized => '외운것';
+
+  @override
+  String get tagSelection => '태그 선택';
+
+  @override
   String get metadataFormType => '문법 형태';
 
   @override
@@ -868,6 +877,21 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get formPlural => '복수형';
+
+  @override
+  String get caseSubject => '주격';
+
+  @override
+  String get caseObject => '목적격';
+
+  @override
+  String get casePossessive => '소유격';
+
+  @override
+  String get casePossessivePronoun => '소유대명사';
+
+  @override
+  String get caseReflexive => '재귀대명사';
 
   @override
   String get formPositive => '원급';

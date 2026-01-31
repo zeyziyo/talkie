@@ -744,6 +744,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chatHistoryTitle => 'Conversation History';
 
   @override
+  String get chatNew => 'New Chat';
+
+  @override
   String get chatNewChat => 'New Chat';
 
   @override
@@ -873,6 +876,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get labelNote => 'Note';
 
   @override
+  String get labelShowMemorized => 'Memorized';
+
+  @override
+  String get tagSelection => 'Select Tags';
+
+  @override
   String get metadataFormType => 'Form Type';
 
   @override
@@ -892,6 +901,21 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get formPlural => 'Plural';
+
+  @override
+  String get caseSubject => 'Subject';
+
+  @override
+  String get caseObject => 'Object';
+
+  @override
+  String get casePossessive => 'Possessive';
+
+  @override
+  String get casePossessivePronoun => 'Possessive Pronoun';
+
+  @override
+  String get caseReflexive => 'Reflexive';
 
   @override
   String get formPositive => 'Positive';

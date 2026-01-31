@@ -312,7 +312,7 @@ abstract class AppLocalizations {
   /// **'현재 위치'**
   String get currentLocation;
 
-  /// No description provided for @location.
+  /// Label for location field in chat save dialog
   ///
   /// In ko, this message translates to:
   /// **'위치'**
@@ -1512,6 +1512,12 @@ abstract class AppLocalizations {
   /// **'대화 기록'**
   String get chatHistoryTitle;
 
+  /// No description provided for @chatNew.
+  ///
+  /// In ko, this message translates to:
+  /// **'새 대화'**
+  String get chatNew;
+
   /// No description provided for @chatNewChat.
   ///
   /// In ko, this message translates to:
@@ -1752,6 +1758,18 @@ abstract class AppLocalizations {
   /// **'주석'**
   String get labelNote;
 
+  /// No description provided for @labelShowMemorized.
+  ///
+  /// In ko, this message translates to:
+  /// **'외운것'**
+  String get labelShowMemorized;
+
+  /// No description provided for @tagSelection.
+  ///
+  /// In ko, this message translates to:
+  /// **'태그 선택'**
+  String get tagSelection;
+
   /// No description provided for @metadataFormType.
   ///
   /// In ko, this message translates to:
@@ -1793,6 +1811,36 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'복수형'**
   String get formPlural;
+
+  /// No description provided for @caseSubject.
+  ///
+  /// In ko, this message translates to:
+  /// **'주격'**
+  String get caseSubject;
+
+  /// No description provided for @caseObject.
+  ///
+  /// In ko, this message translates to:
+  /// **'목적격'**
+  String get caseObject;
+
+  /// No description provided for @casePossessive.
+  ///
+  /// In ko, this message translates to:
+  /// **'소유격'**
+  String get casePossessive;
+
+  /// No description provided for @casePossessivePronoun.
+  ///
+  /// In ko, this message translates to:
+  /// **'소유대명사'**
+  String get casePossessivePronoun;
+
+  /// No description provided for @caseReflexive.
+  ///
+  /// In ko, this message translates to:
+  /// **'재귀대명사'**
+  String get caseReflexive;
 
   /// No description provided for @formPositive.
   ///

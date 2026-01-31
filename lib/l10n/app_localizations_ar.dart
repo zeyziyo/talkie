@@ -735,6 +735,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get chatHistoryTitle => 'سجل الدردشة';
 
   @override
+  String get chatNew => 'New Chat';
+
+  @override
   String get chatNewChat => 'دردشة جديدة';
 
   @override
@@ -813,83 +816,104 @@ class AppLocalizationsAr extends AppLocalizations {
       'Switch between Word and Sentence mode here. Words are saved with larger text.';
 
   @override
-  String get metadataDialogTitle => '상세 정보';
+  String get metadataDialogTitle => 'Details';
 
   @override
-  String get selectPOS => '품사 선택';
+  String get selectPOS => 'Select POS';
 
   @override
-  String get selectSentenceType => '문장 종류 선택';
+  String get selectSentenceType => 'Select Sentence Type';
 
   @override
-  String get metadataRootWord => '원형 (Root Word)';
+  String get metadataRootWord => 'Root Word';
 
   @override
-  String get posNoun => '명사';
+  String get posNoun => 'Noun';
 
   @override
-  String get posVerb => '동사';
+  String get posVerb => 'Verb';
 
   @override
-  String get posAdjective => '형용사';
+  String get posAdjective => 'Adjective';
 
   @override
-  String get posAdverb => '부사';
+  String get posAdverb => 'Adverb';
 
   @override
-  String get posPronoun => '대명사';
+  String get posPronoun => 'Pronoun';
 
   @override
-  String get posPreposition => '전치사/조사';
+  String get posPreposition => 'Preposition';
 
   @override
-  String get posConjunction => '접속사';
+  String get posConjunction => 'Conjunction';
 
   @override
-  String get posInterjection => '감탄사';
+  String get posInterjection => 'Interjection';
 
   @override
-  String get typeStatement => '평서문';
+  String get typeStatement => 'Statement';
 
   @override
-  String get typeQuestion => '의문문';
+  String get typeQuestion => 'Question';
 
   @override
-  String get typeExclamation => '감탄문';
+  String get typeExclamation => 'Exclamation';
 
   @override
-  String get typeImperative => '명령문';
+  String get typeImperative => 'Imperative';
 
   @override
-  String get labelNote => '주석';
+  String get labelNote => 'Note';
 
   @override
-  String get metadataFormType => '문법 형태';
+  String get labelShowMemorized => '외운것';
 
   @override
-  String get formInfinitive => '원형/현재형';
+  String get tagSelection => '태그 선택';
 
   @override
-  String get formPast => '과거형';
+  String get metadataFormType => 'Form Type';
 
   @override
-  String get formPastParticiple => '과거분사';
+  String get formInfinitive => 'Infinitive/Present';
 
   @override
-  String get formPresentParticiple => '현재분사 (ing)';
+  String get formPast => 'Past';
 
   @override
-  String get formThirdPersonSingular => '3인칭 단수';
+  String get formPastParticiple => 'Past Participle';
 
   @override
-  String get formPlural => '복수형';
+  String get formPresentParticiple => 'Present Participle';
 
   @override
-  String get formPositive => '원급';
+  String get formThirdPersonSingular => '3rd Person Singular';
 
   @override
-  String get formComparative => '비교급';
+  String get formPlural => 'Plural';
 
   @override
-  String get formSuperlative => '최상급';
+  String get caseSubject => '주격';
+
+  @override
+  String get caseObject => '목적격';
+
+  @override
+  String get casePossessive => '소유격';
+
+  @override
+  String get casePossessivePronoun => '소유대명사';
+
+  @override
+  String get caseReflexive => '재귀대명사';
+
+  @override
+  String get formPositive => 'Positive';
+
+  @override
+  String get formComparative => 'Comparative';
+
+  @override
+  String get formSuperlative => 'Superlative';
 }

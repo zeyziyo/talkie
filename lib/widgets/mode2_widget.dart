@@ -106,8 +106,8 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                             controller: textEditingController,
                             focusNode: focusNode,
                             hintText: appState.recordTypeFilter == 'word' 
-                                ? '단어 검색 (현재 탭)...' 
-                                : '문장 검색 (현재 탭)...',
+                                ? '${l10n.tabWord} ${l10n.search}' 
+                                : '${l10n.tabSentence} ${l10n.search}',
                             onChanged: (value) {
                                if (value.isEmpty) {
                                   appState.setSearchQuery(''); 
@@ -146,7 +146,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                                     return ListTile(
                                       leading: const Icon(Icons.search, size: 20, color: Colors.grey),
                                       title: Text(option['text']!),
-                                      subtitle: note.isNotEmpty ? Text(note, style: const TextStyle(fontSize: 12, color: Colors.blue)) : null,
+                                      subtitle: note.isNotEmpty ? Text(_getLocalizedTag(note, l10n), style: const TextStyle(fontSize: 12, color: Colors.blue)) : null,
                                       onTap: () => onSelected(option),
                                     );
                                   },
@@ -215,14 +215,14 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                                 color: appState.selectedTags.isNotEmpty ? Colors.blue.shade700 : Colors.grey.shade600,
                               ),
                               const SizedBox(width: 2),
-                              Text(
-                                appState.selectedTags.isEmpty ? '태그 선택' : '${appState.selectedTags.length}',
-                                style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.bold,
-                                  color: appState.selectedTags.isNotEmpty ? Colors.blue.shade800 : Colors.grey.shade700,
+                                Text(
+                                  appState.selectedTags.isEmpty ? l10n.tagSelection : '${appState.selectedTags.length}',
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.bold,
+                                    color: appState.selectedTags.isNotEmpty ? Colors.blue.shade800 : Colors.grey.shade700,
+                                  ),
                                 ),
-                              ),
                             ],
                           ),
                         ),
@@ -251,14 +251,14 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                                 color: appState.showMemorized ? Colors.green.shade700 : Colors.grey.shade600,
                               ),
                               const SizedBox(width: 2),
-                              Text(
-                                '외운것',
-                                style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.bold,
-                                  color: appState.showMemorized ? Colors.green.shade800 : Colors.grey.shade700,
+                                Text(
+                                  l10n.labelShowMemorized,
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.bold,
+                                    color: appState.showMemorized ? Colors.green.shade800 : Colors.grey.shade700,
+                                  ),
                                 ),
-                              ),
                             ],
                           ),
                         ),
@@ -642,7 +642,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
            border: isPlaying ? Border.all(color: Colors.blueAccent, width: 3) : null, // Highlight playing
            boxShadow: [
              if (isPlaying)
-               BoxShadow(color: Colors.blue.withValues(alpha: 0.3), blurRadius: 10, spreadRadius: 2)
+               BoxShadow(color: Colors.blue.withOpacity(0.3), blurRadius: 10, spreadRadius: 2)
              else 
                const BoxShadow(color: Colors.black12, blurRadius: 4, offset: Offset(0, 2))
            ]
@@ -763,7 +763,9 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                 // 주석 (Note) 및 태그 (Tags)
                 Builder(
                   builder: (context) {
-                    final hasNote = record['note'] != null && record['note'].toString().isNotEmpty;
+                    final hasNote = record['note'] != null && 
+                                    record['note'].toString().isNotEmpty && 
+                                    record['note'].toString() != record['pos'].toString();
                     final hasTags = record['tags'] != null && (record['tags'] as List).isNotEmpty;
                     
                     if (!hasNote && !hasTags) return const SizedBox.shrink();
@@ -780,10 +782,10 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                                 Icon(Icons.notes, size: 12, color: Colors.grey[500]),
                                 const SizedBox(width: 6),
                                 Expanded(
-                                  child: Text(
-                                    record['note'],
-                                    style: TextStyle(fontSize: 12, color: Colors.grey[700], fontStyle: FontStyle.italic),
-                                  ),
+                                    child: Text(
+                                      _getLocalizedTag(record['note'], l10n),
+                                      style: TextStyle(fontSize: 12, color: Colors.grey[700], fontStyle: FontStyle.italic),
+                                    ),
                                 ),
                               ],
                             ),
@@ -990,6 +992,14 @@ class _Mode2WidgetState extends State<Mode2Widget> {
       case 'Comparative': return l10n.formComparative;
       case 'Superlative': return l10n.formSuperlative;
       
+
+      // 대명사 격 (Pronoun Cases)
+      case 'Subject': return l10n.caseSubject;
+      case 'Object': return l10n.caseObject;
+      case 'Possessive': return l10n.casePossessive;
+      case 'PossessivePronoun': return l10n.casePossessivePronoun;
+      case 'Reflexive': return l10n.caseReflexive;
+      
       default: return tag; // 일반 태그는 그대로 반환
     }
   }
@@ -1005,19 +1015,19 @@ class _Mode2WidgetState extends State<Mode2Widget> {
         return StatefulBuilder(
           builder: (context, setDialogState) {
             return AlertDialog(
-              title: const Row(
+              title: Row(
                 children: [
-                  Icon(Icons.local_offer_outlined, color: Colors.blue),
-                  SizedBox(width: 8),
-                  Text('태그 선택'),
+                  const Icon(Icons.local_offer_outlined, color: Colors.blue),
+                  const SizedBox(width: 8),
+                  Text(l10n.tagSelection),
                 ],
               ),
               content: SizedBox(
                 width: double.maxFinite,
                 child: appState.availableTags.isEmpty
-                  ? const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 24),
-                      child: Text('사용 가능한 태그가 없습니다.', textAlign: TextAlign.center, style: TextStyle(color: Colors.grey)),
+                  ? Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 24),
+                      child: Text(l10n.noRecords, textAlign: TextAlign.center, style: const TextStyle(color: Colors.grey)),
                     )
                   : Column(
                       mainAxisSize: MainAxisSize.min,
@@ -1053,11 +1063,11 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                       appState.clearSelectedTags(); // Need to implement this in AppState or do manual loop
                       setDialogState(() {});
                     },
-                    child: const Text('초기화', style: TextStyle(color: Colors.red)),
+                    child: Text(l10n.refresh, style: const TextStyle(color: Colors.red)),
                   ),
                 TextButton(
                   onPressed: () => Navigator.of(context).pop(),
-                  child: const Text('확인'),
+                  child: Text(l10n.confirm),
                 ),
               ],
             );

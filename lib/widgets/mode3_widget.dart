@@ -112,7 +112,7 @@ class Mode3Widget extends StatelessWidget {
                                     return ListTile(
                                       leading: const Icon(Icons.search, size: 20, color: Colors.grey),
                                       title: Text(option['text']!),
-                                      subtitle: note.isNotEmpty ? Text(note, style: const TextStyle(fontSize: 12, color: Colors.blue)) : null, // 동음이의어 구분용 주석 표시
+                                      subtitle: note.isNotEmpty ? Text(_getLocalizedTag(note, l10n), style: const TextStyle(fontSize: 12, color: Colors.blue)) : null,
                                       onTap: () => onSelected(option),
                                     );
                                   },
@@ -154,6 +154,43 @@ class Mode3Widget extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 8),
+                        // 2. Tag Selection Button
+                        InkWell(
+                          onTap: () => _showTagSelectionDialog(context, appState),
+                          borderRadius: BorderRadius.circular(8),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                            decoration: BoxDecoration(
+                              color: appState.selectedTags.isEmpty ? Colors.grey[100] : Colors.blue[50], // Active Color
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
+                                color: appState.selectedTags.isEmpty ? Colors.grey.shade300 : Colors.blue.shade200,
+                              ),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(
+                                  Icons.local_offer_outlined, 
+                                  size: 16, 
+                                  color: appState.selectedTags.isEmpty ? Colors.grey.shade600 : Colors.blue.shade700
+                                ),
+                                const SizedBox(width: 4),
+                                Text(
+                                  appState.selectedTags.isEmpty 
+                                    ? l10n.tagSelection 
+                                    : '${l10n.tagSelection} (${appState.selectedTags.length})',
+                                  style: TextStyle(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold,
+                                    color: appState.selectedTags.isEmpty ? Colors.grey.shade700 : Colors.blue.shade800,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
                         // 3. Show Memorized Switch (Icon Toggle) - Added in Phase 34
                         InkWell(
                           onTap: () => appState.setShowMemorized(!appState.showMemorized),
@@ -177,7 +214,7 @@ class Mode3Widget extends StatelessWidget {
                                 ),
                                 const SizedBox(width: 4),
                                 Text(
-                                  '외운것',
+                                  l10n.labelShowMemorized,
                                   style: TextStyle(
                                     fontSize: 13,
                                     fontWeight: FontWeight.bold,
@@ -398,6 +435,15 @@ class Mode3Widget extends StatelessWidget {
                             ),
                           ),
                         Text(record['source_text'], style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: isSelected ? Colors.blue[800] : Colors.black87)),
+                        // Display note if it exists and is not the same as 'pos'
+                        if (record['note'] != null && record['note'].toString().isNotEmpty && record['note'].toString() != record['pos'].toString())
+                          Padding(
+                            padding: const EdgeInsets.only(top: 4),
+                            child: Text(
+                              _getLocalizedTag(record['note'], l10n),
+                              style: TextStyle(fontSize: 12, color: Colors.grey[700], fontStyle: FontStyle.italic),
+                            ),
+                          ),
                       ],
                     ),
                   ),
@@ -486,6 +532,14 @@ class Mode3Widget extends StatelessWidget {
       case 'Comparative': return l10n.formComparative;
       case 'Superlative': return l10n.formSuperlative;
       
+
+      // 대명사 격 (Pronoun Cases)
+      case 'Subject': return l10n.caseSubject;
+      case 'Object': return l10n.caseObject;
+      case 'Possessive': return l10n.casePossessive;
+      case 'PossessivePronoun': return l10n.casePossessivePronoun;
+      case 'Reflexive': return l10n.caseReflexive;
+      
       default: return tag; // 일반 태그는 그대로 반환
     }
   }
@@ -516,7 +570,7 @@ class Mode3Widget extends StatelessWidget {
                 children: [
                   Icon(Icons.local_offer_outlined, color: Colors.blue),
                   SizedBox(width: 8),
-                  Text('태그 선택'),
+                  Text(l10n.tagSelection),
                 ],
               ),
               content: SizedBox(
@@ -524,7 +578,7 @@ class Mode3Widget extends StatelessWidget {
                 child: appState.availableTags.isEmpty
                   ? const Padding(
                       padding: EdgeInsets.symmetric(vertical: 24),
-                      child: Text('사용 가능한 태그가 없습니다.', textAlign: TextAlign.center, style: TextStyle(color: Colors.grey)),
+                      child: Text(l10n.noRecords, textAlign: TextAlign.center, style: TextStyle(color: Colors.grey)),
                     )
                   : Column(
                       mainAxisSize: MainAxisSize.min,
@@ -567,11 +621,11 @@ class Mode3Widget extends StatelessWidget {
                       }
                       setDialogState(() {});
                     },
-                    child: const Text('초기화', style: TextStyle(color: Colors.red)),
+                    child: Text(l10n.clearAll, style: const TextStyle(color: Colors.red)),
                   ),
                 TextButton(
                   onPressed: () => Navigator.of(context).pop(),
-                  child: const Text('확인'),
+                  child: Text(l10n.confirm),
                 ),
               ],
             );

@@ -307,10 +307,15 @@ class SpeechService {
         await _flutterTts.setLanguage(lang);
         
         // Gender Tuning (Voice Selection Only)
+        // Critical: Set Voice AFTER Language to ensure the engine knows context, 
+        // though setVoice usually overrides.
         
         if (gender != null) {
-          // Attempt to set specialized voice (Best effort for Gender)
           await _setBestVoice(lang, gender);
+        } else {
+           // Even if gender is null, ensure we pick a voice for this language
+           // to avoid using previous language's voice (Konglish issue)
+           await _setBestVoice(lang, 'any');
         }
         
         await _flutterTts.setSpeechRate(slow ? 0.3 : 0.5);
@@ -342,47 +347,72 @@ class SpeechService {
       _cachedVoices ??= await _flutterTts.getVoices;
       if (_cachedVoices == null) return;
       
+      // Normalize targets
       final targetGender = gender.toLowerCase();
       final targetLangShort = lang.split('-')[0].toLowerCase();
+      final targetLocale = lang.toLowerCase();
 
-      // Find candidates matching language and gender keyword in name
+      // Filter candidates for this language
       final candidates = _cachedVoices!.where((v) {
         try {
           final vMap = Map<String, dynamic>.from(v as Map);
-          final name = (vMap['name'] as String).toLowerCase();
           final locale = (vMap['locale'] as String).toLowerCase();
           
-          // Check language match
-          if (!locale.startsWith(targetLangShort)) return false;
+          // Strict locale check first (e.g. en-US vs en-GB)
+          if (locale == targetLocale) return true;
+          // Fallback to language code check (e.g. en-US matches en)
+          if (locale.startsWith(targetLangShort)) return true;
           
-          // Check gender in name (e.g., "ko-kr-x-ism" often "ism" = male? No standard. 
-          // iOS: "Mikyung", "Yuna" (Female), "Minho" (Male) - no explicit 'male' tag in name usually, 
-          // but sometimes API returns it. Android often has "Male"/"Female".
-          // We rely on keyword match.
-          if (targetGender == 'male') {
-             return name.contains('male') || name.contains('minho') || name.contains('junho');
-          } else {
-             return name.contains('female') || name.contains('yuna') || name.contains('mikyung') || name.contains('siri');
-          }
+          return false;
         } catch (e) {
           return false;
         }
       }).toList();
       
-      if (candidates.isNotEmpty) {
-        // Prefer exact locale match
-        dynamic best;
-        try {
-          best = candidates.firstWhere(
-              (v) => (v['locale'] as String).toLowerCase() == lang.toLowerCase(),
-              orElse: () => candidates.first
-          );
-        } catch (_) {
-          best = candidates.first;
-        }
-        
-        await _flutterTts.setVoice({"name": best['name'], "locale": best['locale']});
+      if (candidates.isEmpty) {
+          print('[SpeechService] No voices found for $lang');
+          return;
       }
+
+      // Now filter by Gender if specific
+      dynamic bestVoice;
+      
+      if (targetGender != 'any') {
+          try {
+             bestVoice = candidates.firstWhere((v) {
+                final vMap = Map<String, dynamic>.from(v as Map);
+                final name = (vMap['name'] as String).toLowerCase();
+                // Keyword matching for gender
+                if (targetGender == 'male') {
+                   return name.contains('male') || name.contains('david') || name.contains('arthur');
+                } else {
+                   return name.contains('female') || name.contains('sara') || name.contains('samantha') || name.contains('ava'); 
+                }
+             });
+          } catch (_) {
+             // Gender not found
+          }
+      }
+      
+      // FALLBACK 1: Prefer exact locale match (e.g. en-US over en-GB)
+      if (bestVoice == null) {
+         try {
+           bestVoice = candidates.firstWhere((v) {
+               final vMap = Map<String, dynamic>.from(v as Map);
+               return (vMap['locale'] as String).toLowerCase() == targetLocale;
+           });
+         } catch (_) {}
+      }
+      
+      // FALLBACK 2: Just take the first valid voice for this language
+      bestVoice ??= candidates.first;
+      
+      if (bestVoice != null) {
+        final vMap = Map<String, dynamic>.from(bestVoice as Map);
+        // print('[SpeechService] Setting voice: ${vMap['name']} (${vMap['locale']}) for target: $lang/$gender');
+        await _flutterTts.setVoice({"name": vMap['name'], "locale": vMap['locale']});
+      }
+      
     } catch (e) {
       print('Voice setting error: $e');
     }

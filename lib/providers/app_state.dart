@@ -48,6 +48,10 @@ class AppState extends ChangeNotifier {
     'Positive', 'Comparative', 'Superlative'
   ];
 
+  static const List<String> pronounCaseCategories = [
+    'Subject', 'Object', 'Possessive', 'PossessivePronoun', 'Reflexive'
+  ];
+
   void _initSettings() {
     // Synchronous initialization from already-loaded prefs
     final savedSource = _prefs?.getString('sourceLang');
@@ -1658,10 +1662,21 @@ class AppState extends ChangeNotifier {
       _recommendedItems = List<Map<String, dynamic>>.from(result['recommendations'] ?? []);
       _isRecommendationLoading = false;
       notifyListeners();
-    } catch (e) {
       debugPrint('[AppState] Recommendation Error: $e');
       _isRecommendationLoading = false;
       notifyListeners();
+    }
+  }
+
+  // Phase 34: Filter by memorized status
+  void setShowMemorized(bool value) {
+    if (_showMemorized == value) return;
+    _showMemorized = value;
+    notifyListeners();
+    
+    // Mode 3 활성 상태라면 현재 문제 유효성 검사
+    if (_mode3SessionActive) {
+       _validateCurrentMode3Question();
     }
   }
 
@@ -2093,6 +2108,22 @@ class AppState extends ChangeNotifier {
     int distance = d[normal1.length][normal2.length];
     
     return 1.0 - (distance / maxLength);
+  }
+
+  // Phase 37: Mode 3 현재 문제 유효성 검사 및 자동 전환
+  void _validateCurrentMode3Question() {
+    if (_currentMode3Question == null || !_mode3SessionActive) return;
+
+    final available = _getAvailableQuestions();
+    
+    // 현재 문제가 가용 리스트에 없으면 다음 문제로
+    final currentId = _currentMode3Question!['id'];
+    final stillValid = available.any((r) => r['id'] == currentId);
+
+    if (!stillValid) {
+      print('Current Mode 3 question is no longer valid due to filter. Skipping...');
+      _nextMode3Question();
+    }
   }
 
 

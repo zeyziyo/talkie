@@ -506,81 +506,82 @@ class _ChatScreenState extends State<ChatScreen> {
     
     return Scaffold(
       appBar: AppBar(
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Dialogue Dropdown
-            Consumer<AppState>(
-              builder: (context, state, _) {
-                final groups = state.dialogueGroups;
-                final activeId = state.activeDialogueId;
-                
-                // Truncate title helper
-                String truncate(String s) => s.length > 20 ? '${s.substring(0, 20)}...' : s;
+            title: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Dialogue Dropdown
+                Consumer<AppState>(
+                  builder: (context, state, _) {
+                    final groups = state.dialogueGroups;
+                    final activeId = state.activeDialogueId;
+                    
+                    // Truncate title helper
+                    String truncate(String s) => s.length > 20 ? '${s.substring(0, 20)}...' : s;
 
-                // If no groups, just show text
-                if (groups.isEmpty) {
-                   return Text(state.activeDialogueTitle ?? l10n.chatAiChat, style: const TextStyle(fontSize: 16));
-                }
+                    // Always show Dropdown (User Request: "Place the dropdown")
+                    // Even if no history, show "New Chat" option.
+                    
+                    // Check if activeId is valid in the current list
+                    final isValidSelection = activeId != null && groups.any((g) => g.id == activeId);
 
-                return Theme(
-                  data: Theme.of(context).copyWith(
-                    canvasColor: _isPartnerMode ? Colors.teal : const Color(0xFF667eea),
-                  ),
-                  child: DropdownButtonHideUnderline(
-                    child: DropdownButton<String>(
-                      value: groups.any((g) => g.id == activeId) ? activeId : null,
-                      hint: Text(
-                        truncate(state.activeDialogueTitle ?? l10n.chatAiChat), 
-                        style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)
+                    return Theme(
+                      data: Theme.of(context).copyWith(
+                        canvasColor: _isPartnerMode ? Colors.teal : const Color(0xFF667eea),
                       ),
-                      icon: const Icon(Icons.arrow_drop_down, color: Colors.white70),
-                      isExpanded: false,
-                      isDense: true,
-                      style: const TextStyle(color: Colors.white, fontSize: 16),
-                      onChanged: (String? newValue) async {
-                        if (newValue == 'new_chat') {
-                           await state.startNewDialogue(persona: _isPartnerMode ? 'Partner' : 'AI');
-                           setState(() { _messages = []; });
-                        } else if (newValue != null) {
-                           final group = groups.firstWhere((g) => g.id == newValue);
-                           await state.loadExistingDialogue(group);
-                           _loadHistory();
-                        }
-                      },
-                      items: [
-                        // New Chat Option
-                        DropdownMenuItem<String>(
-                          value: 'new_chat',
-                          child: Row(
-                            children: [
-                              const Icon(Icons.add, color: Colors.white, size: 20),
-                              const SizedBox(width: 8),
-                              Text(l10n.chatNewChat),
-                            ],
+                      child: DropdownButtonHideUnderline(
+                        child: DropdownButton<String>(
+                          value: isValidSelection ? activeId : null,
+                          hint: Text(
+                            truncate(state.activeDialogueTitle ?? l10n.chatAiChat), 
+                            style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)
                           ),
+                          icon: const Icon(Icons.arrow_drop_down, color: Colors.white70),
+                          isExpanded: false,
+                          isDense: true,
+                          style: const TextStyle(color: Colors.white, fontSize: 16),
+                          onChanged: (String? newValue) async {
+                            if (newValue == 'new_chat') {
+                               await state.startNewDialogue(persona: _isPartnerMode ? 'Partner' : 'AI');
+                               setState(() { _messages = []; });
+                            } else if (newValue != null) {
+                               final group = groups.firstWhere((g) => g.id == newValue);
+                               await state.loadExistingDialogue(group);
+                               _loadHistory();
+                            }
+                          },
+                          items: [
+                            // New Chat Option
+                            DropdownMenuItem<String>(
+                              value: 'new_chat',
+                              child: Row(
+                                children: [
+                                  const Icon(Icons.add, color: Colors.white, size: 20),
+                                  const SizedBox(width: 8),
+                                  Text(l10n.chatNewChat),
+                                ],
+                              ),
+                            ),
+                            
+                            ...groups.map((group) {
+                              return DropdownMenuItem<String>(
+                                value: group.id,
+                                child: Text(truncate(group.title ?? 'no title')),
+                              );
+                            }).toList(),
+                          ],
                         ),
-                        
-                        ...groups.map((group) {
-                          return DropdownMenuItem<String>(
-                            value: group.id,
-                            child: Text(truncate(group.title ?? 'no title')),
-                          );
-                        }).toList(), // Removed toList() inside map? No.
-                      ],
-                    ),
-                  ),
-                );
-              },
+                      ),
+                    );
+                  },
+                ),
+                
+                if (_isPartnerMode)
+                   Text(
+                     '${l10n.partnerMode}: ${l10n.manual}', 
+                     style: const TextStyle(fontSize: 12, color: Colors.white70)
+                   ),
+              ],
             ),
-            
-            if (_isPartnerMode)
-               Text(
-                 '${l10n.partnerMode}: ${l10n.manual}', 
-                 style: const TextStyle(fontSize: 12, color: Colors.white70)
-               ),
-          ],
-        ),
         backgroundColor: _isPartnerMode ? Colors.teal : const Color(0xFF667eea),
         foregroundColor: Colors.white,
         actions: [
@@ -903,7 +904,7 @@ class _ChatScreenState extends State<ChatScreen> {
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text('Select preferred voice gender (Target: 30s tone).'),
+              const Text('Select preferred voice gender.'),
               const SizedBox(height: 16),
               
               const Text('My Voice (User)', style: TextStyle(fontWeight: FontWeight.bold)),
