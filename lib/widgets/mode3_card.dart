@@ -23,151 +23,155 @@ class Mode3Card extends StatelessWidget {
     // Premium Gradient Colors
     final gradientColors = [const Color(0xFF667eea), const Color(0xFF764ba2)];
 
-    return InkWell(
-      onTap: () => onSelect(record['id'] as int),
-      borderRadius: BorderRadius.circular(16),
-      child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
-        decoration: BoxDecoration(
-          // If selected, use Premium Gradient. Else, use White.
-          gradient: isSelected 
-              ? LinearGradient(colors: gradientColors, begin: Alignment.topLeft, end: Alignment.bottomRight)
-              : null,
-          color: isSelected ? null : Colors.white,
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
+      decoration: BoxDecoration(
+        // If selected, use Premium Gradient. Else, use White.
+        gradient: isSelected 
+            ? LinearGradient(colors: gradientColors, begin: Alignment.topLeft, end: Alignment.bottomRight)
+            : null,
+        color: isSelected ? null : Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: isSelected 
+            ? null // No border needed with gradient
+            : Border.all(color: Colors.grey.shade200),
+        boxShadow: isSelected 
+          ? [
+              BoxShadow(
+                color: const Color(0xFF764ba2).withOpacity(0.4),
+                blurRadius: 12,
+                offset: const Offset(0, 4),
+              )
+            ]
+          : [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.05),
+                blurRadius: 4,
+                offset: const Offset(0, 2),
+              )
+            ],
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () => onSelect(record['id'] as int),
+          onLongPress: () => _showDeleteDialog(context, appState, record, l10n),
           borderRadius: BorderRadius.circular(16),
-          border: isSelected 
-              ? null // No border needed with gradient
-              : Border.all(color: Colors.grey.shade200),
-          boxShadow: isSelected 
-            ? [
-                BoxShadow(
-                  color: const Color(0xFF764ba2).withOpacity(0.4),
-                  blurRadius: 12,
-                  offset: const Offset(0, 4),
-                )
-              ]
-            : [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.05),
-                  blurRadius: 4,
-                  offset: const Offset(0, 2),
-                )
-              ],
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(16), // More padding for premium feel
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        // Badges Row
-                        if (record['type'] == 'word' && (record['pos'] != null || record['form_type'] != null || record['root'] != null))
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 6),
-                            child: Wrap(
-                              spacing: 6,
-                              children: [
-                                if (record['pos'] != null)
-                                  _buildBadge(
-                                    _getLocalizedTag(record['pos'], l10n),
-                                    isSelected ? Colors.white : Colors.blue[600]!,
-                                    isSelected ? Colors.white24 : Colors.blue[50]!,
-                                  ),
-                                if (record['form_type'] != null)
-                                  _buildBadge(
-                                    _getLocalizedTag(record['form_type'], l10n),
-                                    isSelected ? Colors.white : Colors.orange[700]!,
-                                    isSelected ? Colors.white12 : Colors.orange[50]!,
-                                  ),
-                                if (record['root'] != null)
-                                   Text(
-                                     record['root'], 
-                                     style: TextStyle(
-                                       fontSize: 10, 
-                                       color: isSelected ? Colors.white54 : Colors.grey[500]
-                                     )
-                                   ),
-                              ],
+          child: Padding(
+            padding: const EdgeInsets.all(16), // More padding for premium feel
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // Badges Row
+                          if (record['type'] == 'word' && (record['pos'] != null || record['form_type'] != null || record['root'] != null))
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 6),
+                              child: Wrap(
+                                spacing: 6,
+                                children: [
+                                  if (record['pos'] != null)
+                                    _buildBadge(
+                                      _getLocalizedTag(record['pos'], l10n),
+                                      isSelected ? Colors.white : Colors.blue[600]!,
+                                      isSelected ? Colors.white24 : Colors.blue[50]!,
+                                    ),
+                                  if (record['form_type'] != null)
+                                    _buildBadge(
+                                      _getLocalizedTag(record['form_type'], l10n),
+                                      isSelected ? Colors.white : Colors.orange[700]!,
+                                      isSelected ? Colors.white12 : Colors.orange[50]!,
+                                    ),
+                                  if (record['root'] != null)
+                                     Text(
+                                       record['root'], 
+                                       style: TextStyle(
+                                         fontSize: 10, 
+                                         color: isSelected ? Colors.white54 : Colors.grey[500]
+                                       )
+                                     ),
+                                ],
+                              ),
+                            ),
+                            
+                          Text(
+                            record['source_text'],
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: isSelected ? Colors.white : Colors.black87,
                             ),
                           ),
                           
-                        Text(
-                          record['source_text'],
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: isSelected ? Colors.white : Colors.black87,
-                          ),
-                        ),
-                        
-                        // Note
-                        if (record['note'] != null && record['note'].toString().isNotEmpty && record['note'].toString() != record['pos'].toString())
-                          Padding(
-                            padding: const EdgeInsets.only(top: 4),
-                            child: Text(
-                              _getLocalizedTag(record['note'], l10n),
-                              style: TextStyle(
-                                fontSize: 12, 
-                                color: isSelected ? Colors.white70 : Colors.grey[700], 
-                                fontStyle: FontStyle.italic
+                          // Note
+                          if (record['note'] != null && record['note'].toString().isNotEmpty && record['note'].toString() != record['pos'].toString())
+                            Padding(
+                              padding: const EdgeInsets.only(top: 4),
+                              child: Text(
+                                _getLocalizedTag(record['note'], l10n),
+                                style: TextStyle(
+                                  fontSize: 12, 
+                                  color: isSelected ? Colors.white70 : Colors.grey[700], 
+                                  fontStyle: FontStyle.italic
+                                ),
                               ),
                             ),
-                          ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
-                  
-                  // Icon
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                      color: isSelected ? Colors.white24 : Colors.grey[100],
-                      shape: BoxShape.circle,
+                    
+                    // Icon
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: isSelected ? Colors.white24 : Colors.grey[100],
+                        shape: BoxShape.circle,
+                      ),
+                      child: Icon(
+                        isSelected ? Icons.mic : Icons.play_circle_outline,
+                        color: isSelected ? Colors.white : Colors.grey[400],
+                        size: 24,
+                      ),
                     ),
-                    child: Icon(
-                      isSelected ? Icons.mic : Icons.play_circle_outline,
-                      color: isSelected ? Colors.white : Colors.grey[400],
-                      size: 24,
-                    ),
-                  ),
-                ],
-              ),
-              
-              // Tags
-              if (record['tags'] != null && (record['tags'] as List).isNotEmpty)
-                Padding(
-                  padding: const EdgeInsets.only(top: 8),
-                  child: Builder(
-                    builder: (context) {
-                      final systemTags = {
-                        ...AppState.posCategories,
-                        ...AppState.sentenceCategories,
-                        ...AppState.verbFormCategories,
-                        ...AppState.adjectiveFormCategories,
-                        'word', 'sentence'
-                      }.map((e) => e.toLowerCase()).toSet();
-
-                      final filteredTags = (record['tags'] as List)
-                          .map((t) => t.toString())
-                          .where((t) => !systemTags.contains(t.toLowerCase()))
-                          .toList();
-
-                      if (filteredTags.isEmpty) return const SizedBox.shrink();
-
-                      return Wrap(
-                        spacing: 4,
-                        runSpacing: 4,
-                        children: filteredTags.map((t) => _buildTagChip(t, isSelected)).toList(),
-                      );
-                    }
-                  ),
+                  ],
                 ),
-            ],
+                
+                // Tags
+                if (record['tags'] != null && (record['tags'] as List).isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8),
+                    child: Builder(
+                      builder: (context) {
+                        final systemTags = {
+                          ...AppState.posCategories,
+                          ...AppState.sentenceCategories,
+                          ...AppState.verbFormCategories,
+                          ...AppState.adjectiveFormCategories,
+                          'word', 'sentence'
+                        }.map((e) => e.toLowerCase()).toSet();
+
+                        final filteredTags = (record['tags'] as List)
+                            .map((t) => t.toString())
+                            .where((t) => !systemTags.contains(t.toLowerCase()))
+                            .toList();
+
+                        if (filteredTags.isEmpty) return const SizedBox.shrink();
+
+                        return Wrap(
+                          spacing: 4,
+                          runSpacing: 4,
+                          children: filteredTags.map((t) => _buildTagChip(t, isSelected)).toList(),
+                        );
+                      }
+                    ),
+                  ),
+              ],
+            ),
           ),
         ),
       ),
@@ -227,6 +231,44 @@ class Mode3Card extends StatelessWidget {
       case 'possessivepronoun': return l10n.casePossessivePronoun;
       case 'reflexive': return l10n.caseReflexive;
       default: return tag;
+    }
+  }
+
+  Future<void> _showDeleteDialog(BuildContext context, AppState appState, Map<String, dynamic> record, AppLocalizations l10n) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(l10n.deleteRecord),
+        content: Text(l10n.confirmDelete),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: Text(l10n.cancel),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            child: Text(l10n.delete),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed == true) {
+      try {
+        await appState.deleteRecord(record['id'] as int);
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(l10n.recordDeleted)),
+          );
+        }
+      } catch (e) {
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(l10n.deleteFailed(e.toString()))),
+          );
+        }
+      }
     }
   }
 }

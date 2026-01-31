@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:talkie/providers/app_state.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:talkie/l10n/app_localizations.dart';
 
 class Mode2Card extends StatelessWidget {
   final AppState appState;
@@ -51,39 +51,33 @@ class Mode2Card extends StatelessWidget {
     // Premium Gradient Colors
     final gradientColors = [const Color(0xFF667eea), const Color(0xFF764ba2)];
 
-    return InkWell(
-      key: itemKey,
-      onLongPress: () {
-        // We'll implementation dialog logic here or pass callback?
-        // To keep it simple, we can reproduce the dialog logic or pass a callback.
-        // Let's pass appState and access the dialog logic if it was public, 
-        // but _showDeleteDialog is private in Mode2Widget.
-        // We will have to implement the dialog here or make a public method in AppState?
-        // For now, let's duplicate the dialog logic or just skip it?
-        // User requested "Design change only", functionality should persist.
-        // I'll re-implement _showDeleteDialog here cleanly.
-        _showDeleteDialog(context, appState, record, l10n);
-      },
-      borderRadius: BorderRadius.circular(20),
-      child: Container(
-        margin: const EdgeInsets.only(bottom: 16),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-             colors: gradientColors,
-             begin: Alignment.topLeft,
-             end: Alignment.bottomRight,
-          ),
-          borderRadius: BorderRadius.circular(20),
-          border: isPlaying ? Border.all(color: Colors.white, width: 3) : null,
-          boxShadow: [
-            BoxShadow(
-              color: const Color(0xFF764ba2).withOpacity(0.4),
-              blurRadius: 12,
-              offset: const Offset(0, 6),
-            ),
-          ],
+    return Container(
+      margin: const EdgeInsets.only(bottom: 16),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+           colors: gradientColors,
+           begin: Alignment.topLeft,
+           end: Alignment.bottomRight,
         ),
-        child: Column(
+        borderRadius: BorderRadius.circular(20),
+        border: isPlaying ? Border.all(color: Colors.white, width: 3) : null,
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFF764ba2).withOpacity(0.4),
+            blurRadius: 12,
+            offset: const Offset(0, 6),
+          ),
+        ],
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          key: itemKey,
+          onLongPress: () {
+            _showDeleteDialog(context, appState, record, l10n);
+          },
+          borderRadius: BorderRadius.circular(20),
+          child: Column(
           children: [
             // --- TOP SECTION (Source) ---
             Padding(
@@ -165,7 +159,7 @@ class Mode2Card extends StatelessWidget {
 
                        // Checkbox
                        GestureDetector(
-                          onTap: () => appState.toggleStudied(translationId),
+                          onTap: () => appState.toggleMemorizedStatus(translationId, isStudied),
                           child: Container(
                             padding: const EdgeInsets.all(4),
                             decoration: BoxDecoration(
@@ -355,6 +349,7 @@ class Mode2Card extends StatelessWidget {
           ],
         ),
       ),
+    ),
     );
   }
 
@@ -411,7 +406,7 @@ class Mode2Card extends StatelessWidget {
 
     if (confirmed == true) {
       try {
-        await appState.deleteMaterialRecord(record['id'] as int);
+        await appState.deleteRecord(record['id'] as int);
         if (context.mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text(l10n.recordDeleted)),

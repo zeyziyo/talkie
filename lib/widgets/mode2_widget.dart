@@ -616,6 +616,8 @@ class _Mode2WidgetState extends State<Mode2Widget> {
     );
   }
 
+
+
   String _getLocalizedTag(String tag, AppLocalizations l10n) {
     switch (tag.toLowerCase()) {
       case 'noun': return l10n.posNoun;
@@ -649,6 +651,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
     }
   }
 
+/*
   Widget _buildRecordCardOld(
     AppState appState,
     Map<String, dynamic> record,
@@ -981,6 +984,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
     ),         // Container
     );         // InkWell
   }
+*/
 
 
   void _showTagSelectionDialog(BuildContext context, AppState appState) {
