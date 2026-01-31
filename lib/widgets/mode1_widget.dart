@@ -223,8 +223,51 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                               ),
                               onChanged: (text) {
                                 appState.setSourceText(text);
+                                appState.searchSimilarSources(text); // Phase 31: 실시간 검색 연동
                               },
                             ),
+
+                            // Phase 31: 자동 완성 목록 UI
+                            if (appState.similarSources.isNotEmpty && appState.sourceText.isNotEmpty)
+                              Container(
+                                constraints: const BoxConstraints(maxHeight: 200),
+                                margin: const EdgeInsets.only(top: 4),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  border: Border.all(color: Colors.grey.shade300),
+                                  borderRadius: BorderRadius.circular(4),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.05),
+                                      blurRadius: 4,
+                                      offset: const Offset(0, 2),
+                                    ),
+                                  ],
+                                ),
+                                child: ListView.separated(
+                                  shrinkWrap: true,
+                                  itemCount: appState.similarSources.length,
+                                  separatorBuilder: (context, index) => const Divider(height: 1),
+                                  itemBuilder: (context, index) {
+                                    final source = appState.similarSources[index];
+                                    final text = source['text'] as String;
+                                    final note = source['note'] as String? ?? '';
+                                    
+                                    return ListTile(
+                                      dense: true,
+                                      title: Text(text, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
+                                      subtitle: note.isNotEmpty 
+                                          ? Text(note, style: TextStyle(fontSize: 12, color: Colors.blueGrey[600]))
+                                          : null,
+                                      trailing: const Icon(Icons.history, size: 16, color: Colors.grey),
+                                      onTap: () {
+                                        appState.selectSource(source);
+                                        // 선택 후 목록 닫기 및 포커스 해제 등은 필요 시 추가
+                                      },
+                                    );
+                                  },
+                                ),
+                              ),
 
                             const SizedBox(height: 12),
                             

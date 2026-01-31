@@ -421,6 +421,42 @@ class DatabaseService {
     return topResults;
   }
 
+  /// 자동 완성을 위한 시작 문구 검색 (Phase 31)
+  /// words와 sentences 테이블에서 해당 언어로 시작하는 텍스트 검색
+  static Future<List<Map<String, dynamic>>> searchAutocompleteText(
+    String langCode,
+    String text,
+  ) async {
+    final db = await database;
+    final normalized = text.trim();
+    if (normalized.isEmpty) return [];
+
+    // words와 sentences 테이블에서 검색 (개별 메타데이터 및 note 포함)
+    // 텍스트가 같더라도 note가 다르면 다른 항목으로 간주
+    final List<Map<String, dynamic>> results = [];
+
+    // 1. 단어 검색
+    final wordResults = await db.query(
+      'words',
+      where: 'lang_code = ? AND text LIKE ?',
+      whereArgs: [langCode, '$normalized%'],
+      limit: 10,
+    );
+    results.addAll(wordResults);
+
+    // 2. 문장 검색
+    final sentenceResults = await db.query(
+      'sentences',
+      where: 'lang_code = ? AND text LIKE ?',
+      whereArgs: [langCode, '$normalized%'],
+      limit: 10,
+    );
+    results.addAll(sentenceResults);
+
+    // 중복 제거 (text + note 조합 기준) 및 최신순 정렬 등은 필요 시 추가
+    return results;
+  }
+
   /// 번역이 이미 존재하는지 확인
   /// note가 주어진 경우 해당 note와 정확히 일치하는지 확인
   static Future<Map<String, dynamic>?> getTranslationIfExists(

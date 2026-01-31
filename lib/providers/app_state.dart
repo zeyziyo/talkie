@@ -303,7 +303,8 @@ class AppState extends ChangeNotifier {
   Future<void> searchSimilarSources(String text) async {
     _duplicateCheckTriggered = true;
     
-    if (text.trim().isEmpty) {
+    // 자동 완성을 위해 최소 1글자 이상일 때만 검색 실행 (너무 빈번한 호출 방지)
+    if (text.trim().length < 1) {
       _similarSources = [];
       _showDuplicateDialog = false;
       notifyListeners();
@@ -311,9 +312,12 @@ class AppState extends ChangeNotifier {
     }
 
     try {
-      final results = await DatabaseService.searchSimilarText(_sourceLang, text);
+      // Phase 31: 시작 문구 기반의 자동 완성 검색으로 로직 변경
+      final results = await DatabaseService.searchAutocompleteText(_sourceLang, text);
       _similarSources = results;
-      _showDuplicateDialog = _similarSources.isNotEmpty;
+      
+      // 입력창 근처에 목록을 띄우기 위해 상태 업데이트
+      _showDuplicateDialog = false; // 자동 완성에서는 다이얼로그 대신 목록 UI 사용 예정
       notifyListeners();
     } catch (e) {
       debugPrint('[AppState] Error searching similar sources: $e');
