@@ -2364,41 +2364,39 @@ class AppState extends ChangeNotifier {
     }
   }
 
-  /// Load dialogue groups from both cloud and local
+  /// Load dialogue groups (Offline-First Strategy)
   Future<void> loadDialogueGroups() async {
-    try {
-      final userId = SupabaseService.client.auth.currentUser?.id;
-      
-      if (userId != null) {
+    final userId = SupabaseService.client.auth.currentUser?.id;
+    
+    // 1. Background Sync (If online)
+    if (userId != null) {
+      try {
         final response = await SupabaseService.client
             .from('dialogue_groups')
             .select()
             .eq('user_id', userId)
             .order('created_at', ascending: false);
 
-        final cloudGroups = (response as List).map((json) {
-          final group = DialogueGroup.fromJson(json);
-          // Sync to local while we are here
-          DatabaseService.insertDialogueGroup(
+        final cloudGroups = (response as List).map((json) => DialogueGroup.fromJson(json)).toList();
+        
+        // Upsert to Local DB
+        for (var group in cloudGroups) {
+          await DatabaseService.insertDialogueGroup(
             id: group.id,
             userId: group.userId,
             title: group.title,
             persona: group.persona,
-            location: group.location, // Pass location
+            location: group.location,
             createdAt: group.createdAt.toIso8601String(),
           );
-          return group;
-        }).toList();
-
-        _dialogueGroups = cloudGroups;
-        notifyListeners();
-        return;
+        }
+      } catch (e) {
+        debugPrint('[AppState] Supabase dialogue sync failed: $e');
+        // Continue to load local data even if sync fails
       }
-    } catch (e) {
-      debugPrint('[AppState] Supabase dialogue load failed: $e');
     }
 
-    // Fallback: load from local
+    // 2. Load from Local DB (Single Source of Truth)
     try {
       final localData = await DatabaseService.getDialogueGroups();
       _dialogueGroups = localData.map((m) => DialogueGroup(
@@ -2409,6 +2407,7 @@ class AppState extends ChangeNotifier {
         location: m['location'] as String?,
         createdAt: DateTime.parse(m['created_at'] as String),
       )).toList();
+      
       notifyListeners();
     } catch (e) {
        debugPrint('[AppState] Local dialogue load failed: $e');
@@ -2544,9 +2543,26 @@ class AppState extends ChangeNotifier {
         debugPrint('[AppState] Supabase location sync failed: $e');
       }
       
-      // 3. Refresh lists
+      // 3. Optimistic Update of Local List (Fix for Dropdown UI delay)
+      final index = _dialogueGroups.indexWhere((g) => g.id == _activeDialogueId);
+      if (index != -1) {
+        final old = _dialogueGroups[index];
+        _dialogueGroups[index] = DialogueGroup(
+          id: old.id,
+          userId: old.userId,
+          title: title, // Updated Title
+          persona: old.persona,
+          location: location, // Updated Location
+          createdAt: old.createdAt,
+        );
+      } else {
+        // If not in list (rare), try reload
+        await loadDialogueGroups();
+      }
+
+      // 4. Refresh lists
       await loadStudyMaterials();
-      await loadDialogueGroups();
+      // await loadDialogueGroups(); // Skip full reload to avoid reverting optimistic update if cloud is slow
       
     } catch (e) {
       debugPrint('[AppState] Error saving dialogue progress: $e');

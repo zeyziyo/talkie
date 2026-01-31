@@ -642,6 +642,7 @@
   "formPast": "과거형",
   "formPastParticiple": "과거분사",
   "formPresentParticiple": "현재분사 (ing)",
+  "formPresent": "현재형",
   "formThirdPersonSingular": "3인칭 단수",
   "formPlural": "복수형",
   "caseSubject": "주격",

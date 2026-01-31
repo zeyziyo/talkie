@@ -903,6 +903,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get formPresentParticiple => 'Present Participle';
 
   @override
+  String get formPresent => '현재형';
+
+  @override
   String get formThirdPersonSingular => '3rd Person Singular';
 
   @override

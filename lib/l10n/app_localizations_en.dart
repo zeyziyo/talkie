@@ -897,6 +897,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get formPresentParticiple => 'Present Participle';
 
   @override
+  String get formPresent => 'Present';
+
+  @override
   String get formThirdPersonSingular => '3rd Person Singular';
 
   @override

@@ -873,6 +873,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get formPresentParticiple => '현재분사 (ing)';
 
   @override
+  String get formPresent => '현재형';
+
+  @override
   String get formThirdPersonSingular => '3인칭 단수';
 
   @override

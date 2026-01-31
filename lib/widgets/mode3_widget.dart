@@ -21,7 +21,7 @@ class Mode3Widget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final appState = Provider.of<AppState>(context);
+    // final appState = Provider.of<AppState>(context); // Unused
     final l10n = AppLocalizations.of(context)!;
     
     return Consumer<AppState>(
@@ -456,17 +456,18 @@ class Mode3Widget extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 6),
                   child: Builder(
                     builder: (context) {
-                      // 시스템 태그 필터링 (Phase 32 & 34: 모든 품사 및 문법 형태 추가)
+                      // 시스템 태그 필터링 (Phase 40: Case-insensitive)
                       final systemTags = {
                         ...AppState.posCategories,
                         ...AppState.sentenceCategories,
                         ...AppState.verbFormCategories,
                         ...AppState.adjectiveFormCategories,
                         'word', 'sentence'
-                      };
+                      }.map((e) => e.toLowerCase()).toSet();
+
                       final filteredTags = (record['tags'] as List)
                           .map((t) => t.toString())
-                          .where((t) => !systemTags.contains(t))
+                          .where((t) => !systemTags.contains(t.toLowerCase()))
                           .toList();
 
                       if (filteredTags.isEmpty) return const SizedBox.shrink();
@@ -503,43 +504,44 @@ class Mode3Widget extends StatelessWidget {
   }
 
   String _getLocalizedTag(String tag, AppLocalizations l10n) {
-    switch (tag) {
+    switch (tag.toLowerCase()) {
       // 품사 (Part of Speech)
-      case 'Noun': return l10n.posNoun;
-      case 'Verb': return l10n.posVerb;
-      case 'Adjective': return l10n.posAdjective;
-      case 'Adverb': return l10n.posAdverb;
-      case 'Pronoun': return l10n.posPronoun;
-      case 'Preposition': return l10n.posPreposition;
-      case 'Conjunction': return l10n.posConjunction;
-      case 'Interjection': return l10n.posInterjection;
+      case 'noun': return l10n.posNoun;
+      case 'verb': return l10n.posVerb;
+      case 'adjective': return l10n.posAdjective;
+      case 'adverb': return l10n.posAdverb;
+      case 'pronoun': return l10n.posPronoun;
+      case 'preposition': return l10n.posPreposition;
+      case 'conjunction': return l10n.posConjunction;
+      case 'interjection': return l10n.posInterjection;
       
       // 문장 종류 (Sentence Types)
-      case 'Statement': return l10n.typeStatement;
-      case 'Question': return l10n.typeQuestion;
-      case 'Exclamation': return l10n.typeExclamation;
-      case 'Imperative': return l10n.typeImperative;
+      case 'statement': return l10n.typeStatement;
+      case 'question': return l10n.typeQuestion;
+      case 'exclamation': return l10n.typeExclamation;
+      case 'imperative': return l10n.typeImperative;
       
       // 문법 형태 (Grammar Forms - Conjugations)
-      case 'Infinitive': return l10n.formInfinitive;
-      case 'Past': return l10n.formPast;
-      case 'Past Participle': return l10n.formPastParticiple;
-      case 'Present Participle': return l10n.formPresentParticiple;
-      case '3rd Person Singular': return l10n.formThirdPersonSingular;
-      case 'Plural': return l10n.formPlural;
+      case 'infinitive': return l10n.formInfinitive;
+      case 'past': return l10n.formPast;
+      case 'past participle': return l10n.formPastParticiple;
+      case 'present participle': return l10n.formPresentParticiple;
+      case 'present': return l10n.formPresent;
+      case '3rd person singular': return l10n.formThirdPersonSingular;
+      case 'plural': return l10n.formPlural;
       
       // 형용사/부사 형태 (Adjective/Adverb Forms)
-      case 'Positive': return l10n.formPositive;
-      case 'Comparative': return l10n.formComparative;
-      case 'Superlative': return l10n.formSuperlative;
+      case 'positive': return l10n.formPositive;
+      case 'comparative': return l10n.formComparative;
+      case 'superlative': return l10n.formSuperlative;
       
 
       // 대명사 격 (Pronoun Cases)
-      case 'Subject': return l10n.caseSubject;
-      case 'Object': return l10n.caseObject;
-      case 'Possessive': return l10n.casePossessive;
-      case 'PossessivePronoun': return l10n.casePossessivePronoun;
-      case 'Reflexive': return l10n.caseReflexive;
+      case 'subject': return l10n.caseSubject;
+      case 'object': return l10n.caseObject;
+      case 'possessive': return l10n.casePossessive;
+      case 'possessivepronoun': return l10n.casePossessivePronoun;
+      case 'reflexive': return l10n.caseReflexive;
       
       default: return tag; // 일반 태그는 그대로 반환
     }

@@ -1800,6 +1800,12 @@ abstract class AppLocalizations {
   /// **'현재분사 (ing)'**
   String get formPresentParticiple;
 
+  /// No description provided for @formPresent.
+  ///
+  /// In ko, this message translates to:
+  /// **'현재형'**
+  String get formPresent;
+
   /// No description provided for @formThirdPersonSingular.
   ///
   /// In ko, this message translates to:
