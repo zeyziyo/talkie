@@ -906,6 +906,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'Liczba pojedyncza';
+
+  @override
   String get caseSubject => '주격';
 
   @override

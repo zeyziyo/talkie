@@ -645,6 +645,7 @@
   "formPresent": "현재형",
   "formThirdPersonSingular": "3인칭 단수",
   "formPlural": "복수형",
+  "formSingular": "단수형",
   "caseSubject": "주격",
   "caseObject": "목적격",
   "casePossessive": "소유격",

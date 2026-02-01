@@ -1671,6 +1671,9 @@ class AppState extends ChangeNotifier {
     _showMemorized = value;
     notifyListeners();
     
+    // Refresh list to reflect the new filter state
+    loadRecordsByTags();
+
     // Mode 3 활성 상태라면 현재 문제 유효성 검사
     if (_mode3SessionActive) {
        _validateCurrentMode3Question();

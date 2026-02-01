@@ -902,6 +902,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'একবচন';
+
+  @override
   String get caseSubject => '주격';
 
   @override

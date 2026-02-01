@@ -902,6 +902,9 @@ class AppLocalizationsNo extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'Entall';
+
+  @override
   String get caseSubject => '주격';
 
   @override

@@ -910,6 +910,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'Isahan';
+
+  @override
   String get caseSubject => '주격';
 
   @override

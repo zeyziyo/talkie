@@ -221,6 +221,7 @@ class Mode3Card extends StatelessWidget {
       case 'present participle': return l10n.formPresentParticiple;
       case 'present': return l10n.formPresent;
       case '3rd person singular': return l10n.formThirdPersonSingular;
+      case 'singular': return l10n.formSingular;
       case 'plural': return l10n.formPlural;
       case 'positive': return l10n.formPositive;
       case 'comparative': return l10n.formComparative;

@@ -626,6 +626,7 @@
   "formPresent": "Present",
   "formThirdPersonSingular": "3rd Person Singular",
   "formPlural": "Plural",
+  "formSingular": "Singular",
   "caseSubject": "Subject",
   "caseObject": "Object",
   "casePossessive": "Possessive",

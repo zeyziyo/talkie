@@ -907,6 +907,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'ಏಕವಚನ';
+
+  @override
   String get caseSubject => '주격';
 
   @override

@@ -896,6 +896,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'Jednotné číslo';
+
+  @override
   String get caseSubject => '주격';
 
   @override

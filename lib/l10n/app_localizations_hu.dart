@@ -902,6 +902,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'Egyes szám';
+
+  @override
   String get caseSubject => '주격';
 
   @override

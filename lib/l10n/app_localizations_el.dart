@@ -902,6 +902,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'Ενικός';
+
+  @override
   String get caseSubject => '주격';
 
   @override

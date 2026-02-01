@@ -902,6 +902,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'Umoja';
+
+  @override
   String get caseSubject => '주격';
 
   @override

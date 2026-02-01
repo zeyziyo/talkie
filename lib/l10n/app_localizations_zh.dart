@@ -887,6 +887,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => '单数';
+
+  @override
   String get caseSubject => '주격';
 
   @override
@@ -1788,6 +1791,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => '单数';
+
+  @override
   String get formPositive => 'Positive';
 
   @override
@@ -2672,6 +2678,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get formPlural => 'Plural';
+
+  @override
+  String get formSingular => '單數';
 
   @override
   String get formPositive => 'Positive';

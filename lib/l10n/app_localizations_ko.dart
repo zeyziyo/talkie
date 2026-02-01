@@ -882,6 +882,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get formPlural => '복수형';
 
   @override
+  String get formSingular => '단수형';
+
+  @override
   String get caseSubject => '주격';
 
   @override

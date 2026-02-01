@@ -1818,6 +1818,12 @@ abstract class AppLocalizations {
   /// **'복수형'**
   String get formPlural;
 
+  /// No description provided for @formSingular.
+  ///
+  /// In ko, this message translates to:
+  /// **'단수형'**
+  String get formSingular;
+
   /// No description provided for @caseSubject.
   ///
   /// In ko, this message translates to:

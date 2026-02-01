@@ -902,6 +902,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'એકવચન';
+
+  @override
   String get caseSubject => '주격';
 
   @override

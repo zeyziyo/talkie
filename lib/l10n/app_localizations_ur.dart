@@ -901,6 +901,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'واحد';
+
+  @override
   String get caseSubject => '주격';
 
   @override

@@ -887,6 +887,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => '単数形';
+
+  @override
   String get caseSubject => '주격';
 
   @override

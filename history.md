@@ -4,6 +4,46 @@
 
 ---
 
+## 📅 [2026-02-01 10:15:30] Phase 51: Mode 2 UI 및 기능 수정 (Fix Interaction & Styling)
+
+### ✅ 태스크 (Task)
+- [x] **UI 수정**: Mode 2 카드 텍스트에 잘못 적용되던 취소선(Strikethrough) 스타일 제거
+- [x] **기능 수정**: '외운것 보기' 스위치 토글 시 목록이 갱신되지 않던 문제 해결 (`loadRecordsByTags` 호출 추가)
+- [x] **검증**: 체크 아이콘 및 스위치 정상 작동 확인
+
+### 📝 워크스루 (Walkthrough)
+- **문제**: Mode 2 카드에서 학습 완료(Check)된 항목에 취소선이 그어져 가독성을 해쳤으며, '외운것 보기' 스위치를 켜도 목록이 갱신되지 않아 사용자가 변화를 인지할 수 없었음.
+- **해결**:
+  - `Mode2Card.dart`에서 `TextDecoration.lineThrough` 로직을 제거하여 텍스트가 깨끗하게 표시되도록 수정.
+  - `AppState.dart`의 `setShowMemorized` 메서드에 `loadRecordsByTags()` 호출을 추가하여, 스위치 조작 시 즉시 DB에서 목록을 다시 불러오도록 개선.
+
+## 📅 [2026-02-01 09:12:30] Phase 50: 'Singular' 태그 국제화 (L10n: Singular)
+
+### ✅ 태스크 (Task)
+- [x] **국제화 (L10n)**: 영문으로 표시되던 'singular' 태그를 모든 지원 언어(42개)에 대해 로컬라이즈
+- [x] **Automation**: `update_arbs.py` 스크립트를 작성하여 전체 ARB 파일에 `formSingular` 키 및 번역(es: Singular, ja: 単数形, zh: 单数 등) 일괄 적용
+- [x] **UI 적용**: `Mode2Card` 및 `Mode3Card`의 `_getLocalizedTag` 메서드에 `singular` 케이스 추가
+
+### 📝 워크스루 (Walkthrough)
+- **문제**: 복습 모드에서 다른 품사 태그는 한글로 나오는데 'singular'만 영어로 표시됨.
+- **해결**:
+  - `update_arbs.py` 자동화 스크립트를 통해 한국어, 일본어, 중국어, 스페인어 등 주요 언어에 대한 번역을 포함하여 전체 42개 언어 ARB 파일에 `formSingular` 키를 추가함.
+  - UI 위젯에서 해당 키를 참조하도록 코드를 업데이트.
+
+
+
+## 📅 [2026-02-01 08:58:10] Phase 49: Mode 2 언어 배지 크기 조정 (UI Tweak)
+
+### ✅ 태스크 (Task)
+- [x] **Mode 2 (복습)**: 모국어(소스 언어) 배지의 크기가 다른 메타데이터 배지보다 크게 표시되던 문제 수정
+- [x] **스타일 통일**: 패딩(`8,4` -> `6,2`) 및 모서리 반경(`8` -> `4`)을 조정하여 우측의 태그들과 시각적 균형을 맞춤
+
+### 📝 워크스루 (Walkthrough)
+- **문제**: Mode 2 카드의 상단 언어 배지(`Container`)가 다른 배지들보다 과도한 패딩을 가지고 있어 시각적으로 불균형했음.
+- **해결**: `Mode2Card.dart` 내 해당 `Container`의 속성을 `_buildBadge` 헬퍼 메서드와 동일한 수치로 조정함.
+
+
+
 ## 📅 [2026-02-01 08:12:30] Phase 48: 카드 삭제 기능 복구 (Fix Deletion Logic)
 
 ### ✅ 태스크 (Task)

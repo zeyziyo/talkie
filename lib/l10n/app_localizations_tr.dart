@@ -903,6 +903,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'Tekil';
+
+  @override
   String get caseSubject => '주격';
 
   @override

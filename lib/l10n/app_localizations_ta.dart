@@ -912,6 +912,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'ஒருமை';
+
+  @override
   String get caseSubject => '주격';
 
   @override

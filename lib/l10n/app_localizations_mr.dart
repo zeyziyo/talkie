@@ -899,6 +899,9 @@ class AppLocalizationsMr extends AppLocalizations {
   String get formPlural => 'Plural';
 
   @override
+  String get formSingular => 'एकवचन';
+
+  @override
   String get caseSubject => '주격';
 
   @override

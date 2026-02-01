@@ -645,6 +645,7 @@
   "formPresentParticiple": "Present Participle",
   "formThirdPersonSingular": "3rd Person Singular",
   "formPlural": "Plural",
+  "formSingular": "単数形",
   "formPositive": "Positive",
   "formComparative": "Comparative",
   "formSuperlative": "Superlative"

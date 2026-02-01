@@ -91,10 +91,10 @@ class Mode2Card extends StatelessWidget {
                     children: [
                        // Lang Badge
                        Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                         decoration: BoxDecoration(
                           color: Colors.white24,
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(4),
                           border: Border.all(color: Colors.white30),
                         ),
                         child: Text(
@@ -187,7 +187,7 @@ class Mode2Card extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                       height: 1.4,
-                      decoration: isStudied ? TextDecoration.lineThrough : null,
+                      decoration: null,
                       decorationColor: Colors.white70,
                     ),
                   ),
@@ -442,6 +442,7 @@ class Mode2Card extends StatelessWidget {
       case 'present participle': return l10n.formPresentParticiple;
       case 'present': return l10n.formPresent;
       case '3rd person singular': return l10n.formThirdPersonSingular;
+      case 'singular': return l10n.formSingular;
       case 'plural': return l10n.formPlural;
       case 'positive': return l10n.formPositive;
       case 'comparative': return l10n.formComparative;
