@@ -2022,7 +2022,7 @@ class AppState extends ChangeNotifier {
   void setMode3CurrentQuestion(Map<String, dynamic> record) {
      // If switching cards, stop any ongoing listening
      if (_isListening) {
-       _speechService.stopListening();
+       _speechService.stopSTT();
        _isListening = false;
      }
 
@@ -2037,7 +2037,7 @@ class AppState extends ChangeNotifier {
   /// Mode 3: Clear current question (Collapses card)
   void clearMode3CurrentQuestion() {
      if (_isListening) {
-       _speechService.stopListening();
+       _speechService.stopSTT();
        _isListening = false;
      }
     _currentMode3Question = null;

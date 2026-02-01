@@ -23,7 +23,7 @@ class Mode3PracticeCard extends StatelessWidget {
     // Basic data extraction
     final targetId = record['target_id'] as int? ?? record['id'] as int;
     final recordSourceLang = record['source_lang'] as String? ?? appState.sourceLang;
-    final recordTargetLang = record['target_lang'] as String? ?? appState.targetLang;
+
     
     // In Mode 3, Top is ALWAYS Source (Mother Tongue), Bottom is Target (Learning Language)
     final topLang = recordSourceLang;
