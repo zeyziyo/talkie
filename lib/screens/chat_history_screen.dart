@@ -148,6 +148,40 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                           ),
                       ],
                     ),
+                      ],
+                    ),
+                    trailing: IconButton(
+                      icon: const Icon(Icons.delete_outline, color: Colors.grey),
+                      splashRadius: 20,
+                      onPressed: () {
+                         showDialog(
+                           context: context,
+                           builder: (context) => AlertDialog(
+                             title: Text(l10n.chatEndTitle.replaceAll('End', 'Delete') + '?'), // Fallback localization or use hardcoded
+                             content: const Text('Are you sure you want to delete this conversation?\nThis action cannot be undone.'),
+                             actions: [
+                               TextButton(
+                                 onPressed: () => Navigator.pop(context),
+                                 child: Text(l10n.cancel),
+                               ),
+                               TextButton(
+                                 onPressed: () async {
+                                   Navigator.pop(context); // Close Dialog
+                                   await appState.deleteDialogue(group.id);
+                                   if (context.mounted) {
+                                      ScaffoldMessenger.of(context).showSnackBar(
+                                        const SnackBar(content: Text('Conversation deleted')),
+                                      );
+                                   }
+                                 },
+                                 style: TextButton.styleFrom(foregroundColor: Colors.red),
+                                 child: Text(l10n.trash), // Using "Trash" label if available or Generic Delete
+                               ),
+                             ],
+                           ),
+                         );
+                      },
+                    ),
                     onTap: () async {
                       await appState.loadExistingDialogue(group);
                       if (mounted) {

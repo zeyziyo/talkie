@@ -832,6 +832,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get metadataDialogTitle => 'Details';
 
   @override
+  String get tagFormal => '존댓말';
+
+  @override
   String get selectPOS => 'Select POS';
 
   @override
@@ -880,7 +883,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get labelNote => 'Note';
 
   @override
-  String get labelShowMemorized => '외운것';
+  String get labelShowMemorized => '끝낸것';
 
   @override
   String get tagSelection => '태그 선택';
@@ -935,4 +938,18 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get formSuperlative => 'Superlative';
+
+  @override
+  String get searchConditions => 'Search Conditions';
+
+  @override
+  String recentNItems(int count) {
+    return 'Recent $count items';
+  }
+
+  @override
+  String get startsWith => 'Starts with';
+
+  @override
+  String get reset => 'Reset';
 }

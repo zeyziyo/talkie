@@ -229,9 +229,25 @@ class DatabaseService {
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         dialogue_id TEXT NOT NULL,
         group_id INTEGER NOT NULL,
-        speaker TEXT,
-        sequence_order INTEGER,
-        created_at TEXT NOT NULL,
+        speaker TEXT,  -- Legacy: Can be arbitrary name
+        participant_id TEXT, -- NEW: Link to dialogue_participants
+        sequence_order INTEGER NOT NULL,
+        created_at TEXT DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now')),
+        FOREIGN KEY (dialogue_id) REFERENCES dialogue_groups (id) ON DELETE CASCADE
+      )
+    ''');
+
+    // Phase 70: Multi-Persona Participants
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS dialogue_participants (
+        id TEXT PRIMARY KEY, -- UUID
+        dialogue_id TEXT NOT NULL,
+        name TEXT NOT NULL,
+        role TEXT NOT NULL, -- 'user', 'ai'
+        gender TEXT,        -- 'male', 'female'
+        lang_code TEXT,     -- 'en-US', 'es-ES'
+        avatar_color INTEGER,
+        created_at TEXT DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now')),
         FOREIGN KEY (dialogue_id) REFERENCES dialogue_groups (id) ON DELETE CASCADE
       )
     ''');
@@ -1562,11 +1578,64 @@ class DatabaseService {
     print('[DB] Dialogue group saved: $id ($title, Location: $location)');
   }
 
+  /// Delete a dialogue group and its messages
+  static Future<void> deleteDialogueGroup(String id) async {
+    final db = await database;
+    await db.transaction((txn) async {
+      // 1. Delete Messages
+      await txn.delete(
+        'chat_messages',
+        where: 'dialogue_id = ?',
+        whereArgs: [id],
+      );
+      
+      // 2. Delete Group
+      await txn.delete(
+        'dialogue_groups',
+        where: 'id = ?',
+        whereArgs: [id],
+      );
+    });
+  }
+
   /// Get total count of dialogues (for Auto-Naming "Chat N")
   static Future<int> getDialogueCount() async {
     final db = await database;
     final result = await db.rawQuery('SELECT COUNT(*) as count FROM dialogue_groups');
     return Sqflite.firstIntValue(result) ?? 0;
+  }
+
+  // ==========================================
+  // Phase 70: Participant Management
+  // ==========================================
+  
+  static Future<void> insertParticipant(Map<String, dynamic> data) async {
+    final db = await database;
+    await db.insert(
+      'dialogue_participants',
+      data,
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  static Future<void> updateParticipant(String id, Map<String, dynamic> data) async {
+    final db = await database;
+    await db.update(
+      'dialogue_participants',
+      data,
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+  }
+
+  static Future<List<Map<String, dynamic>>> getParticipants(String dialogueId) async {
+    final db = await database;
+    return await db.query(
+      'dialogue_participants',
+      where: 'dialogue_id = ?',
+      orderBy: 'created_at ASC',
+      whereArgs: [dialogueId],
+    );
   }
 
   /// Get all dialogue groups for a user

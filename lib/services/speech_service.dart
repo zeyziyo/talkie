@@ -389,7 +389,9 @@ class SpeechService {
       final targetGender = gender.toLowerCase();
       
       // 1. Try to match Gender if specified
+      // 1. Try to match Gender if specified
       if (targetGender != 'any') {
+          // Attempt 1: Name Match (Explicit)
           try {
              bestVoice = candidates.firstWhere((v) {
                 final vMap = Map<String, dynamic>.from(v as Map);
@@ -401,6 +403,18 @@ class SpeechService {
                 }
              });
           } catch (_) {}
+          
+          // Attempt 2: Index Heuristic (For engines like Google TTS with opaque names)
+          // Heuristic: Often Voice 1 is Female, Voice 2 (or higher) is Male
+          if (bestVoice == null && candidates.length >= 2) {
+             if (targetGender == 'male') {
+                // Try to pick the second one (often Male in minimal sets like en-US-x-iol vs iom)
+                // Or check for odd/even? No, just picking a different one from default (0) is good enough for a toggle.
+                bestVoice = candidates[1]; 
+             } else {
+                bestVoice = candidates[0];
+             }
+          }
       }
       
       // 2. Fallback: Prefer exact locale match (e.g. en-US over en-GB)

@@ -34,7 +34,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Select Material: Choose specific set or \'Review All\'\n• Flip Card: Use \'Show/Hide\' to check translation\n• Listen: Play TTS for specific sentence\n• Mark Studied: Checkmark (V) for completed items\n• Delete: Long-press card to remove record\n• Filter: View all or filter by material';
+      '• Select Material: Choose specific set or \'Review All\'\n• Flip Card: Use \'Show/Hide\' to check translation\n• Listen: Play TTS for specific sentence\n• Mark Studied: Checkmark (V) for completed items\n• Delete: Long-press card to remove record\n• Search Conditions: Filter by Tags, Recent N items, or Start character';
 
   @override
   String get helpMode3Desc =>
@@ -42,7 +42,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpMode3Details =>
-      '• Select Material: Choose learning pack\n• Interval: [-] [+] to adjust wait time (3s-60s)\n• Start/Stop: Control shadowing session\n• Speak: Listen to audio and repeat after it\n• Feedback: Accuracy score (0-100) with color code\n• Retry: Use retry button if voice not detected';
+      '• Select Material: Choose learning pack\n• Interval: [-] [+] to adjust wait time (3s-60s)\n• Start/Stop: Control shadowing session\n• Speak: Listen to audio and repeat after it\n• Feedback: Accuracy score (0-100) with color code\n• Search Conditions: Filter practice targets by Tags, Recent N, or Start char';
 
   @override
   String get helpModeChatDesc =>
@@ -235,7 +235,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get selectStudyMaterial => 'Select Study Material';
 
   @override
-  String get subject => 'Subject:';
+  String get subject => 'Title:';
 
   @override
   String get source => 'Source:';
@@ -828,6 +828,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get metadataDialogTitle => 'Details';
 
   @override
+  String get tagFormal => '존댓말';
+
+  @override
   String get selectPOS => 'Select POS';
 
   @override
@@ -876,7 +879,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get labelNote => 'Note';
 
   @override
-  String get labelShowMemorized => 'Memorized';
+  String get labelShowMemorized => 'Finished';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -931,4 +934,18 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get formSuperlative => 'Superlative';
+
+  @override
+  String get searchConditions => 'Search Conditions';
+
+  @override
+  String recentNItems(int count) {
+    return 'Recent $count items';
+  }
+
+  @override
+  String get startsWith => 'Starts with';
+
+  @override
+  String get reset => 'Reset';
 }

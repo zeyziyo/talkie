@@ -12,7 +12,13 @@ import '../constants/language_constants.dart';
 import '../services/usage_service.dart';
 import '../models/sentence.dart';
 import '../models/user_library.dart';
+import '../models/sentence.dart';
+import '../models/user_library.dart';
 import '../models/dialogue_group.dart';
+import '../models/chat_participant.dart'; // Phase 70
+import 'package:uuid/uuid.dart'; // Phase 70
+import 'dart:math'; // Phase 70
+import 'package:flutter/material.dart'; // For Colors
 
 import '../services/supabase_service.dart';
 import 'package:flutter/widgets.dart';
@@ -2452,6 +2458,80 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
   // ==========================================
+  // Phase 70: Multi-Persona Logic
+  // ==========================================
+  
+  List<ChatParticipant> _activeParticipants = [];
+  List<ChatParticipant> get activeParticipants => _activeParticipants;
+
+  Future<void> loadParticipants() async {
+    if (_activeDialogueId == null) return;
+    
+    final data = await DatabaseService.getParticipants(_activeDialogueId!);
+    _activeParticipants = data.map((json) => ChatParticipant.fromJson(json)).toList();
+    notifyListeners();
+  }
+
+  /// Find a participant or create a new one (e.g. Stranger)
+  Future<ChatParticipant> getOrAddParticipant({
+    required String name,
+    required String role, 
+    String? gender,
+    String? langCode,
+  }) async {
+    // 1. Check Cache
+    final existing = _activeParticipants.firstWhere(
+      (p) => p.name == name && p.role == role,
+      orElse: () => ChatParticipant(
+        id: 'temp', 
+        dialogueId: '', 
+        name: '', 
+        role: ''
+      ),
+    );
+
+    if (existing.id != 'temp') return existing;
+
+    // 2. Create New
+    final newId = const Uuid().v4();
+    final newParticipant = ChatParticipant(
+      id: newId,
+      dialogueId: _activeDialogueId!,
+      name: name,
+      role: role,
+      gender: gender ?? (role == 'user' ? _chatUserGender : _chatAiGender),
+      langCode: langCode ?? (role == 'user' ? _sourceLang : _targetLang),
+      avatarColor: Colors.primaries[Random().nextInt(Colors.primaries.length)].value,
+    );
+
+    await DatabaseService.insertParticipant(newParticipant.toJson());
+    _activeParticipants.add(newParticipant);
+    notifyListeners();
+    
+    return newParticipant;
+  }
+
+  Future<void> updateParticipant(String id, {String? gender, String? langCode, String? name}) async {
+    final index = _activeParticipants.indexWhere((p) => p.id == id);
+    if (index == -1) return;
+
+    final old = _activeParticipants[index];
+    final updated = ChatParticipant(
+      id: old.id,
+      dialogueId: old.dialogueId,
+      name: name ?? old.name, // Added Name
+      role: old.role,
+      gender: gender ?? old.gender,
+      langCode: langCode ?? old.langCode,
+      avatarColor: old.avatarColor,
+    );
+
+    _activeParticipants[index] = updated;
+    await DatabaseService.updateParticipant(id, updated.toJson());
+    notifyListeners();
+  }
+  
+  // ==========================================
   // Mode 4: Game Support
   // ==========================================
   
@@ -2619,6 +2699,26 @@ class AppState extends ChangeNotifier {
     _activePersona = null;
     _currentDialogueSequence = 0;
     notifyListeners();
+  }
+
+  /// Delete a dialogue group (Phase 62)
+  Future<void> deleteDialogue(String id) async {
+    try {
+      await DatabaseService.deleteDialogueGroup(id);
+      
+      // Update Local List
+      _dialogueGroups.removeWhere((g) => g.id == id);
+      
+      // If active dialogue is deleted, clear it
+      if (_activeDialogueId == id) {
+        clearActiveDialogue();
+      }
+      
+      notifyListeners();
+    } catch (e) {
+      debugPrint('[AppState] Error deleting dialogue: $e');
+      rethrow;
+    }
   }
 
   Future<void> loadExistingDialogue(DialogueGroup group) async {
@@ -2843,23 +2943,22 @@ class AppState extends ChangeNotifier {
       });
 
       // 2. Personal Cloud Sync (Background Backup for performance)
-      // We don't await this to avoid blocking the UI during chat usage.
-      SupabaseService.savePrivateChatMessage(
-        dialogueId: _activeDialogueId!,
-        sourceText: sourceText,
-        targetText: targetText,
-        sourceLang: _targetLang,
-        targetLang: _sourceLang,
-        speaker: finalSpeaker,
-        sequenceOrder: _currentDialogueSequence,
-        note: explanation,
-      ).catchError((e) => debugPrint('[AppState] Background Cloud Sync Error: $e'));
-      
-      debugPrint('[AppState] AI Response backed up to Personal Cloud');
-    } catch (e) {
-      debugPrint('[AppState] Error saving AI response to Unified Schema: $e');
-    }
-  }
+
+          // 2. Personal Cloud Sync
+          SupabaseService.savePrivateChatMessage(
+            dialogueId: _activeDialogueId!,
+            sourceText: sourceText,
+            targetText: targetText,
+            sourceLang: _sourceLang,
+            targetLang: _targetLang,
+            speaker: speaker,
+            sequenceOrder: _currentDialogueSequence,
+          ).catchError((e) => debugPrint('[AppState] Background Cloud Sync Error: $e'));
+          
+        } catch (e) {
+          debugPrint('[AppState] Error saving User message: $e');
+        }
+      }
 
   String getServiceLocale(String langCode) {
     switch (langCode) {

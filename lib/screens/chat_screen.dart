@@ -2,6 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../models/dialogue_group.dart';
+import '../models/chat_participant.dart'; // Phase 70
+import '../constants/language_constants.dart'; // Phase 70
+import '../services/supabase_service.dart';
+import '../services/database_service.dart';
+import '../services/speech_service.dart';
+import '../services/translation_service.dart';
+import '../l10n/app_localizations.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:geocoding/geocoding.dart';
+import 'package:intl/intl.dart';
 import '../services/supabase_service.dart';
 import '../services/database_service.dart';
 import '../services/speech_service.dart';
@@ -37,12 +47,25 @@ class _ChatScreenState extends State<ChatScreen> {
     }
     // Load list for Dropdown
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Provider.of<AppState>(context, listen: false).loadDialogueGroups();
+      final appState = Provider.of<AppState>(context, listen: false);
+      appState.loadDialogueGroups();
+      appState.loadParticipants(); // Phase 70
     });
   }
 
   Future<void> _loadHistory() async {
     final history = await DatabaseService.getRecordsByDialogueId(widget.initialDialogue!.id);
+    final appState = Provider.of<AppState>(context, listen: false);
+    
+    // Phase 70: Ensure Participants Exist for Legacy Messages
+    final Set<String> speakers = history.map((m) => m['speaker'] as String? ?? 'Unknown').toSet();
+    for (final speakerName in speakers) {
+       // Check if this speaker exists in activeParticipants
+       // We force a getOrAdd to ensure they are registered
+       final role = speakerName == 'User' ? 'user' : 'ai';
+       await appState.getOrAddParticipant(name: speakerName, role: role);
+    }
+
     setState(() {
       _messages = history;
     });
@@ -182,6 +205,12 @@ class _ChatScreenState extends State<ChatScreen> {
       });
 
       // 2. Process Next Step (AI or Save Partner Msg)
+      
+      // Phase 62 Fix: Persist User Message Immediately
+      if (!_isPartnerMode) {
+        await appState.saveUserMessage(text, translatedText);
+      }
+
       if (_isPartnerMode) {
          // Partner Mode: Just save the validated message pair (No AI processing)
          await _savePartnerMessage(
@@ -634,45 +663,49 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Widget _buildMessageBubble(Map<String, dynamic> msg, AppState appState, AppLocalizations l10n) {
-    final speaker = msg['speaker'];
-    final isUser = speaker == 'User';
-    final isPartner = speaker == l10n.partner;
+    final speakerName = msg['speaker'] ?? 'Unknown';
+    final isUser = speakerName == 'User';
+    final isPartner = speakerName == l10n.partner;
     
-    // Layout alignment: User Right, AI/Partner Left
+    // Find Participant Config
+    // We assume _loadHistory ensured they exist.
+    final participant = appState.activeParticipants.firstWhere(
+      (p) => p.name == speakerName,
+      orElse: () => ChatParticipant(
+        id: 'temp', dialogueId: '', name: speakerName, role: isUser ? 'user' : 'ai'
+      )
+    );
+
+    // Layout alignment: User Right, AI Left
     final alignment = isUser ? Alignment.centerRight : Alignment.centerLeft;
-    final color = isUser ? Colors.blue[50] : (isPartner ? Colors.teal[50] : Colors.white);
-    final textColor = isUser ? Colors.blue[900] : (isPartner ? Colors.teal[900] : Colors.black87);
+    final color = isUser ? Colors.blue[50] : (isPartner ? Colors.teal[50] : const Color(0xFFF5F5F5));
+    final textColor = isUser ? Colors.blue[900] : Colors.black87;
     
-    // Determine Languages for TTS
-    // User: Source (Primary), Target (Secondary)
-    // Partner: Target (Primary), Source (Secondary)
-    final primaryLang = isUser ? appState.sourceLang : appState.targetLang;
-    final secondaryLang = isUser ? appState.targetLang : appState.sourceLang;
+    // Text Logic
+    // User: Top=Source (Native), Bottom=Target (Translated)
+    // AI: Top=Source (Foreign), Bottom=Target (Native Translation)
+    final topText = msg['source_text'] ?? '';
+    final bottomText = msg['target_text'] ?? '';
     
-    final primaryText = msg['source_text'] ?? '';
-    final secondaryText = msg['target_text'] ?? '';
+    // Lang Logic for TTS
+    // User: Top=Native, Bottom=Target
+    // AI: Top=ParticipantLang (Foreign), Bottom=Native
+    final topLang = isUser ? appState.sourceLang : participant.langCode;
+    final bottomLang = isUser ? appState.targetLang : appState.sourceLang;
 
     return Align(
       alignment: alignment,
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 4),
-        padding: const EdgeInsets.all(12),
-        constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.85),
+        constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.9),
         child: Column(
           crossAxisAlignment: isUser ? CrossAxisAlignment.end : CrossAxisAlignment.start,
           children: [
-            // Speaker Name
-            Padding(
-              padding: const EdgeInsets.only(bottom: 4, left: 4, right: 4),
-              child: Text(
-                speaker ?? 'AI',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[600],
-                ),
-              ),
-            ),
+            // Speaker Header (AI Only or Partner)
+            if (!isUser)
+               _buildParticipantHeader(context, participant, appState, l10n, msg),
+
+            // Bubble
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
@@ -688,94 +721,14 @@ class _ChatScreenState extends State<ChatScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Primary Text (Spoken/Original)
-                  Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Flexible(
-                        child: Text(
-                          primaryText,
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: textColor,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      if (primaryText.isNotEmpty)
-                        ValueListenableBuilder<String?>(
-                          valueListenable: _speechService.currentlySpeakingText,
-                          builder: (context, speakingText, _) {
-                            final isSpeaking = speakingText == primaryText;
-                            return IconButton(
-                              icon: Icon(
-                                isSpeaking ? Icons.stop_circle : Icons.volume_up,
-                                size: 20,
-                                color: isSpeaking ? Colors.red : Colors.grey,
-                              ),
-                              onPressed: () {
-                                if (isSpeaking) {
-                                  _speechService.stopSpeaking();
-                                } else {
-                                  _speak(primaryText, primaryLang, isUser: isUser);
-                                }
-                              },
-                              constraints: const BoxConstraints(),
-                              padding: const EdgeInsets.only(left: 4),
-                            );
-                          },
-                        ),
-                    ],
-                  ),
+                  // Top Text (Primary Speak)
+                  _buildTextRow(topText, topLang, participant.gender, isUser),
                   
-                  // Secondary Text (Translation)
-                  if (secondaryText.isNotEmpty)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 6),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Divider(height: 12),
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Flexible(
-                                child: Text(
-                                  secondaryText,
-                                  style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.grey[700],
-                                    fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ),
-                              ValueListenableBuilder<String?>(
-                                valueListenable: _speechService.currentlySpeakingText,
-                                builder: (context, speakingText, _) {
-                                  final isSpeaking = speakingText == secondaryText;
-                                  return IconButton(
-                                    icon: Icon(
-                                      isSpeaking ? Icons.stop_circle : Icons.volume_up,
-                                      size: 18,
-                                      color: isSpeaking ? Colors.red : Colors.grey,
-                                    ),
-                                    onPressed: () {
-                                      if (isSpeaking) {
-                                        _speechService.stopSpeaking();
-                                      } else {
-                                        _speak(secondaryText, secondaryLang, isUser: isUser);
-                                      }
-                                    },
-                                    constraints: const BoxConstraints(),
-                                    padding: const EdgeInsets.only(left: 4),
-                                  );
-                                },
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
+                  // Divider & Bottom Text (Translation)
+                  if (bottomText.isNotEmpty) ...[
+                    const Divider(height: 16),
+                    _buildTextRow(bottomText, bottomLang, isUser ? 'female' : participant.gender, true), // Translation usually default voice
+                  ],
                 ],
               ),
             ),
@@ -783,6 +736,187 @@ class _ChatScreenState extends State<ChatScreen> {
         ),
       ),
     );
+  }
+
+  Widget _buildParticipantHeader(BuildContext context, ChatParticipant participant, AppState appState, AppLocalizations l10n, Map<String, dynamic> msg) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 4, left: 4),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // 1. Rename (Name Click)
+          InkWell(
+            onTap: () => _showRenameDialog(participant, appState),
+            child: Row(
+               children: [
+                 CircleAvatar(
+                   radius: 10,
+                   backgroundColor: Color(participant.avatarColor ?? Colors.grey.value),
+                   child: Text(participant.name[0], style: const TextStyle(fontSize: 10, color: Colors.white)),
+                 ),
+                 const SizedBox(width: 4),
+                 Text(
+                    participant.name,
+                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey[700]),
+                 ),
+                 const SizedBox(width: 4),
+                 Icon(Icons.edit, size: 10, color: Colors.grey[400]),
+               ],
+            ),
+          ),
+          
+          const SizedBox(width: 12),
+          
+          // 2. Gender Toggle
+          InkWell(
+            onTap: () async {
+              final newGender = participant.gender == 'male' ? 'female' : 'male';
+               await appState.updateParticipant(participant.id, gender: newGender);
+               // Re-speak immediately
+               _speak(msg['source_text'], participant.langCode, isUser: false);
+            },
+            child: Icon(
+              participant.gender == 'male' ? Icons.face : Icons.face_3, // Male/Female icons
+              size: 16,
+              color: participant.gender == 'male' ? Colors.blue : Colors.pink,
+            ),
+          ),
+          
+          const SizedBox(width: 8),
+
+          // 3. Language Dropdown (Compact)
+          SizedBox(
+            height: 24,
+            child: DropdownButton<String>(
+              value: LanguageConstants.supportedLanguages.any((l) => l['code'] == participant.langCode) 
+                  ? participant.langCode 
+                  : 'en', // Fallback
+              underline: const SizedBox(),
+              icon: const Icon(Icons.arrow_drop_down, size: 16),
+              style: const TextStyle(fontSize: 11, color: Colors.black87),
+              onChanged: (newLang) => _handleLanguageChange(participant, newLang, appState, msg),
+              items: LanguageConstants.supportedLanguages.map((l) {
+                return DropdownMenuItem(
+                  value: l['code'],
+                  child: Text(l['name']!),
+                );
+              }).toList(),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildTextRow(String text, String lang, String gender, bool isUser) {
+     return Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Flexible(
+            child: Text(
+              text,
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.black87,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+          ValueListenableBuilder<String?>(
+            valueListenable: _speechService.currentlySpeakingText,
+            builder: (context, speakingText, _) {
+              final isSpeaking = speakingText == text;
+              return IconButton(
+                icon: Icon(
+                  isSpeaking ? Icons.stop_circle : Icons.volume_up,
+                  size: 20,
+                  color: isSpeaking ? Colors.red : Colors.grey,
+                ),
+                onPressed: () {
+                  if (isSpeaking) {
+                    _speechService.stopSpeaking();
+                  } else {
+                    _speak(text, lang, isUser: isUser);
+                  }
+                },
+                constraints: const BoxConstraints(),
+                padding: const EdgeInsets.only(left: 4),
+              );
+            },
+          ),
+        ],
+      );
+  }
+
+  // Handle Logic Helpers
+  Future<void> _showRenameDialog(ChatParticipant p, AppState appState) async {
+     final controller = TextEditingController(text: p.name);
+     await showDialog(
+       context: context,
+       builder: (context) => AlertDialog(
+         title: Text(AppLocalizations.of(context)?.participantRename ?? 'Rename'),
+         content: TextField(
+           controller: controller, 
+           decoration: const InputDecoration(labelText: 'Name', border: OutlineInputBorder())
+         ),
+         actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text(AppLocalizations.of(context)?.cancel ?? 'Cancel')
+            ),
+            ElevatedButton(
+              onPressed: () async {
+                final newName = controller.text.trim();
+                if (newName.isNotEmpty && newName != p.name) {
+                   await appState.updateParticipant(p.id, name: newName);
+                }
+                if (context.mounted) Navigator.pop(context);
+              },
+              child: Text(AppLocalizations.of(context)?.confirm ?? 'Save')
+            ),
+         ],
+       ),
+     );
+  }
+
+  Future<void> _handleLanguageChange(ChatParticipant p, String? newLang, AppState appState, Map<String, dynamic> msg) async {
+     if (newLang == null || newLang == p.langCode) return;
+     
+     setState(() => _isLoading = true);
+
+     // 1. Update Participant
+     await appState.updateParticipant(p.id, langCode: newLang);
+     
+     // 2. Retranslate (Source Text -> New Lang)
+     // User asked to retranslate content.
+     // AI Message: source_text is the Foreign Content.
+     // We need to translate IT to new Lang? 
+     // Or translate the Original Prompt?
+     // Simpler: Access TranslationService to translate `msg['target_text']` (Which is Native Meaning) -> New Lang.
+     // Because `target_text` is "Hello" (Native), we want New Foreign for "Hello".
+     
+     try {
+       final result = await TranslationService.translate(
+         text: msg['target_text'], // The Native Text (Anchor)
+         sourceLang: appState.sourceLang, // Native
+         targetLang: newLang,
+       );
+       final newForeignText = result['text'];
+       
+       if (newForeignText != null) {
+          setState(() {
+            msg['source_text'] = newForeignText; // Update Foreign Text
+            // target_text remains Native
+          });
+          
+          // Speak immediately
+          _speak(newForeignText, newLang, isUser: false);
+       }
+     } catch (e) {
+       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Translation failed')));
+     } finally {
+       setState(() => _isLoading = false);
+     }
   }
 
   Widget _buildInputArea(AppState appState, AppLocalizations l10n) {
