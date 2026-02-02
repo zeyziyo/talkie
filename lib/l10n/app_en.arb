@@ -400,7 +400,7 @@
   "helpMode3Desc": "Practice speaking by listening to and shadowing sentences.",
   "helpMode3Details": "• Select Material: Choose learning pack\n• Interval: [-] [+] to adjust wait time (3s-60s)\n• Start/Stop: Control shadowing session\n• Speak: Listen to audio and repeat after it\n• Feedback: Accuracy score (0-100) with color code\n• Search Conditions: Filter practice targets by Tags, Recent N, or Start char",
   "helpModeChatDesc": "Chat with AI to practice conversation. Includes Partner Mode and Location Awareness.",
-  "helpModeChatDetails": "• AI Chat: Speak in your Source Language to practice\n• Partner Mode: Toggle 'Person' icon to record real-life partner (Input in Target Language)\n• GPS: AI knows your current location for context\n• Auto-Save: Chats are saved with Title @ Location\n• History: Review past conversations",
+  "helpModeChatDetails": "• AI Chat: Practice conversation in your source language\n• Multi-Persona: Change gender/lang/name via bubble menu\n• Add Partner: Use + to add new participants (Strangers)\n• GPS: Context-aware roleplay\n• Auto-Save: Chats are translated & saved automatically",
   "helpJsonDesc": "To import study materials in Mode 3, create a JSON file with the following structure:",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "startTutorial": "Start Tutorial",
@@ -645,5 +645,11 @@
     }
   },
   "startsWith": "Starts with",
-  "reset": "Reset"
+  "reset": "Reset",
+  "participantRename": "Rename Participant",
+  "labelName": "Name",
+  "gender": "Gender",
+  "language": "Language",
+  "male": "Male",
+  "female": "Female"
 }

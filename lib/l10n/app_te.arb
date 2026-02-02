@@ -652,5 +652,26 @@
   "searchConditions": "Search Conditions",
   "recentNItems": "Recent {count} items",
   "startsWith": "Starts with",
-  "reset": "Reset"
+  "reset": "Reset",
+  "labelShowMemorized": "Finished",
+  "tagSelection": "Select Tags",
+  "formPresent": "Present",
+  "caseSubject": "Subject",
+  "caseObject": "Object",
+  "casePossessive": "Possessive",
+  "casePossessivePronoun": "Possessive Pronoun",
+  "caseReflexive": "Reflexive",
+  "@recentNItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "participantRename": "Rename Participant",
+  "labelName": "Name",
+  "gender": "Gender",
+  "language": "Language",
+  "male": "Male",
+  "female": "Female"
 }

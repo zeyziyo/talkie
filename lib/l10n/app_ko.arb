@@ -11,7 +11,7 @@
   "helpMode3Desc": "문장을 듣고 따라 말하며(Shadowing) 발음을 연습하세요.",
   "helpMode3Details": "• 자료 선택: 학습할 자료집 선택\n• 간격 설정: [-] [+] 버튼으로 문장 간 대기 시간 조정 (3초~60초)\n• 시작/정지: 쉐도잉 세션 제어\n• 말하기: 음성을 듣고 따라 말하기\n• 피드백: 정확도 점수(0-100) 및 색상 표시\n• 검색 조건: 태그, 최근 항목, 시작 글자로 연습 대상 필터링",
   "helpModeChatDesc": "AI 페르소나와 대화하며 실전 회화를 연습하세요.",
-  "helpModeChatDetails": "• AI 채팅: 내 언어(Source)로 말하여 연습\n• 파트너 모드: 사람 아이콘을 눌러 상대방 녹음 (학습 언어 입력)\n• GPS: 현재 위치를 기반으로 대화 맥락 파악\n• 자동 저장: '제목 @ 장소' 형식으로 대화 저장\n• 기록: 지난 대화 다시보기",
+  "helpModeChatDetails": "• AI 채팅: 내 언어로 말하여 회화 연습\n• 멀티 페르소나: 말풍선 위 메뉴로 상대방의 성별/언어/이름 변경 가능\n• 파트너 추가: + 버튼으로 새로운 대화 상대(Stranger) 추가\n• GPS: 현재 위치 기반 상황극\n• 자동 저장: 대화 내용 자동 번역 및 저장",
   "helpJsonDesc": "Mode 3에서 사용할 학습 자료를 JSON 파일로 가져오려면 다음 형식을 따르세요:",
   "helpDialogueImportDesc": "JSON 파일로 전체 대화 세트를 가져옵니다.",
   "helpDialogueImportDetails": "• JSON 구조: `entries` 대신 `dialogues` 배열 사용\n• 자동 복구: 대화 제목, 페르소나, 메시지 순서가 복구됩니다.\n• 위치: 가져온 대화는 AI 채팅 모드의 '기록' 탭에 나타납니다.",
@@ -668,5 +668,11 @@
   "reset": "초기화",
   "@location": {
     "description": "Label for location field in chat save dialog"
-  }
+  },
+  "participantRename": "참가자 이름 변경",
+  "labelName": "이름",
+  "gender": "성별",
+  "language": "언어",
+  "male": "남성",
+  "female": "여성"
 }

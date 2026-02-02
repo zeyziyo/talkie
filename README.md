@@ -56,22 +56,35 @@ It provides an intuitive UX for switching modes by swiping the screen. In partic
 * **Auto-Repeat**: Repeat sentences excluding those fully mastered
 * **Search Conditions**: Filter practice targets by Tags/Conditions
 
-### MODE 4: AI 채팅 (AI Chat)
+### MODE 4: AI 채팅 (AI Chat) - Multi-Persona
+- 🎭 **멀티 페르소나 (Multi-Persona)**: 말풍선 탭으로 상대방의 **성별, 이름, 언어**를 즉시 변경 (New!)
+- 🔄 **자동 재번역**: 대화 상대의 언어를 바꾸면 기존 메시지도 자동으로 재번역되어 문맥 유지
 - 💬 **실시간 대화**: AI 페르소나(교사, 친구 등)와 실전 회화 연습
-- 🤝 **파트너 모드 (Partner Mode)**: **실제 친구/파트너**와 대화하며 기록 (사람 아이콘 토글)
+- 🤝 **파트너 모드**: **실제 친구/파트너**와 대화하며 기록 ("Stranger" 추가 기능)
 - 📍 **GPS 위치 기반**: 현재 위치 정보를 AI에게 제공하여 생생한 현장 회화 가능 ("여기 근처 맛집 추천해줘")
 - 🌐 **2개 국어 표시**: 나의 말과 답변이 2개 국어로 표시되어 이해도 향상
-- 🔊 **TTS 발음 듣기**: 스피커 아이콘으로 정확한 발음 청취
+- 🔊 **TTS 발음 듣기**: 성별에 맞는 정확한 TTS 발음 (Heuristic 적용)
 - 🤖 **자동 번역 및 저장**: 즉시 번역 및 "지역명 (시간)" 기반 자동 제목 저장
 - 📑 **대화 이력 관리**: 과거 대화 내용을 불러오고 제목을 수정하여 관리
 
+* **Multi-Persona**: Change Gender/Lang/Name on the fly via bubble menu (New!)
+* **Auto-Retranslation**: Context stays intact when changing partner's language
 * **Real-time Conversation**: Practice speaking with AI personas or Real Partners
-* **Partner Mode**: Record conversation with a real person (Target Language Input)
+* **Partner Mode**: Record conversation with a real person
 * **GPS Context**: AI uses your current location for context-aware responses
 * **Dual Language Display**: View both mother tongue and target language
-* **TTS Pronunciation**: Listen to correct pronunciation for all messages
+* **TTS Pronunciation**: Gender-aware TTS playback
 * **Smart Save**: Auto-save chats with "Location (Date)" titles
 * **History Management**: Revisit past chats & edit titles
+
+## 최근 업데이트 (Recent Updates - 2026-02-03)
+
+- **멀티 페르소나 시스템 (Multi-Persona)**: 대화방 내 참가자의 신원(언어, 성별, 이름)을 즉시 변경하고 재번역하는 기능 추가. (Phase 64)
+- **UI 개선**: 채팅 말풍선 위에 직관적인 제어 패널(언어/성별/이름) 도입 및 Stranger 추가 기능 구현
+- **TTS 엔진 최적화**: Google TTS 엔진에서 성별 인식이 안 될 경우를 대비한 스마트 추측 로직 적용
+- **데이터베이스 확장**: `dialogue_participants` 테이블 추가로 인물별 설정 영구 저장 지원
+- **대화 기능 강화 (Feb 2)**: AI 채팅 자동 제목(Chat N), 메모(Note) 기능, 대화 목록 검색 및 날짜 필터, 즉시 반응 UI(Optimistic Update) 적용
+
 
 ### JSON 파일 구조 (JSON Structure)
 

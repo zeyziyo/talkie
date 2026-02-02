@@ -4,6 +4,27 @@
 
 ---
 
+## 📅 [2026-02-03 08:30:00] Phase 64: 멀티 페르소나 채팅 시스템 (Multi-Persona Chat System)
+
+### ✅ 태스크 (Task)
+- [x] **Database Schema**: `dialogue_participants` 테이블 신설 및 `ChatParticipant` 모델 구현.
+- [x] **UI Overhaul**:
+    - **Smart Header**: AI 및 파트너 말풍선 위에 **[언어 | 성별 | 이름]** 제어판 추가.
+    - **Rename**: "Stranger" 등 참가자 이름을 즉시 수정하는 팝업 구현.
+    - **Language Switch**: 드롭다운을 통해 참가자의 언어를 변경하면 즉시 **재번역(Retranslation)** 및 DB 업데이트.
+    - **Gender Toggle**: 남/녀 아이콘 토글 시 즉시 DB 업데이트 및 목소리 변경.
+- [x] **Engine Logic**:
+    - **Retranslation**: 언어 변경 시 기존의 'Native Meaning'을 유지한 채 새로운 언어로 재번역하여 표시.
+    - **TTS Heuristics**: Google TTS 엔진이 성별(Male/Female)을 명시적으로 지원하지 않을 경우, 인덱스 기반(1번=여성, 2번=남성)으로 추측하는 2차 로직 구현.
+- [x] **Ad-hoc Participant**: 이름이 없는 "Stranger" 참가자가 등장해도 즉시 로컬 DB에 등록하여 대화의 맥락 유지.
+
+### 📝 워크스루 (Walkthrough)
+- **문제**: 기존 채팅은 단순히 "AI vs User" 구도로 고정되어 있어, 다양한 역할극(Roleplay)이나 3자 대화, 혹은 언어/성별 설정을 자유롭게 바꾸는 시나리오에 대응하기 어려웠음.
+- **해결**:
+    - **참가자 명부(Registry)** 개념을 도입하여 대화방마다 등장인물을 별도로 관리.
+    - 채팅 화면에서 바로 등장인물의 **페르소나(언어, 성별, 이름)**를 수정할 수 있는 직관적인 UI 제공.
+    - 특히 TTS 엔진이 성별을 못 찾는 고질적인 문제(Android Google TTS)를 해결하기 위해, 이름 매칭 실패 시 2번째 목소리를 남성으로 간주하는 휴리스틱을 추가하여 "성별 토글" 기능의 신뢰성을 확보함.
+
 ## 📅 [2026-02-02 15:45:00] Phase 62: 대화 관리 기능 강화 (Dialogue Management Enhancements)
 
 ### ✅ 태스크 (Task)

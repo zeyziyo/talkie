@@ -2,7 +2,7 @@ name: talkie
 description: "Talkie - Language learning app with speech recognition and translation"
 publish_to: 'none'
 
-version: 1.0.9+14
+version: 1.1.0+15
 
 environment:
   sdk: ^3.5.0
