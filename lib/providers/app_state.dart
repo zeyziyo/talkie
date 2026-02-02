@@ -146,6 +146,8 @@ class AppState extends ChangeNotifier {
   String? _filterStartsWith; // Phase 59
 
   // Getters
+  int? get selectedMaterialId => _selectedMaterialId;
+  List<String> get availableTags => _availableTags;
   List<String> get selectedTags => _selectedTags;
   int? get filterLimit => _filterLimit;
   String? get filterStartsWith => _filterStartsWith;
@@ -222,9 +224,7 @@ class AppState extends ChangeNotifier {
   }
 
   
-  int? get selectedMaterialId => _selectedMaterialId;
-  List<String> get availableTags => _availableTags;
-  List<String> get selectedTags => _selectedTags;
+
   String get searchQuery => _searchQuery;
   bool get showMemorized => _showMemorized;
 
@@ -942,8 +942,8 @@ class AppState extends ChangeNotifier {
         final cachedTargetId = await DatabaseService.insertLanguageRecord(_targetLang, _translatedText);
         
         await DatabaseService.saveTranslationLink(
-          cachedSourceId, 
-          cachedTargetId, 
+          sourceId: cachedSourceId, 
+          targetId: cachedTargetId, 
           note: _note
         );
         debugPrint('[AppState] Legacy cache backfilled for reuse');
