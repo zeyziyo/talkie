@@ -1812,11 +1812,6 @@ class DatabaseService {
     if (name.isEmpty) return name;
     
     final lowerName = name.toLowerCase().trim();
-    
-    // 이미 2~5자의 코드 형태라면 그대로 반환 (예: ko, en-US)
-    if (lowerName.length >= 2 && lowerName.length <= 5 && !lowerName.contains(' ')) {
-      return lowerName;
-    }
 
     switch (lowerName) {
       case 'korean':
@@ -1952,7 +1947,7 @@ class DatabaseService {
       case '아프리칸스어':
         return 'af';
       default:
-        return lowerName; // 알 수 없는 경우 소문자 변환 값 반환
+        return name.trim(); // Return original input (trimmed) to preserve case for codes like zh-CN
     }
   }
 

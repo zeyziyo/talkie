@@ -174,7 +174,7 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                                    }
                                  },
                                  style: TextButton.styleFrom(foregroundColor: Colors.red),
-                                 child: Text(l10n.trash), // Using "Trash" label if available or Generic Delete
+                                 child: Text(l10n.delete), // Using "Delete" label
                                ),
                              ],
                            ),

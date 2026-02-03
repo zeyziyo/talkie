@@ -4,6 +4,14 @@
 
 ---
 
+## 📅 [2026-02-03 08:30:00] Phase 65: Help Section & Tutorial Consistency (Feb 3, 2026)
+- **Problem**: Tutorial highlights were missing targets or pointing to wrong areas due to disconnected GlobalKeys. Help Dialog JSON example was outdated.
+- **Action**:
+    - Wired `_swapButtonKey`, `_mode1ToggleKey` in `HomeScreen`.
+    - Passed keys to `Mode1Widget` constructor.
+    - Updated `HelpDialog` JSON example with `default_type` and correct schema.
+- **Result**: Tutorial now accurately highlights all Mode 1 elements. Help section provides valid JSON examples.
+
 ## 📅 [2026-02-03 08:30:00] Phase 64: 멀티 페르소나 채팅 시스템 (Multi-Persona Chat System)
 
 ### ✅ 태스크 (Task)

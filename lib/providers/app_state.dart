@@ -3014,7 +3014,7 @@ class AppState extends ChangeNotifier {
             targetText: targetText,
             sourceLang: _sourceLang,
             targetLang: _targetLang,
-            speaker: speaker,
+            speaker: speaker ?? 'unknown',
             sequenceOrder: _currentDialogueSequence,
           ).catchError((e) => debugPrint('[AppState] Background Cloud Sync Error: $e'));
           

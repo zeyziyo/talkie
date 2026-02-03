@@ -368,11 +368,13 @@ class _HomeScreenState extends State<HomeScreen> {
                               appState.setRecordTypeFilter(newSelection.first);
                               appState.selectMaterial(0); // Reset to basic
                             },
+                            key: _mode1ToggleKey, // Attached Key
                           ),
                         ),
                         const SizedBox(width: 16),
                         // Mini Language Swap Button
                         InkWell(
+                          key: _swapButtonKey, // Attached Key
                           onTap: () => appState.swapLanguages(),
                           borderRadius: BorderRadius.circular(8),
                           child: Container(
@@ -587,7 +589,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Mode1Widget(
                   micButtonKey: _micButtonKey,
                   translateButtonKey: _translateButtonKey,
-                  swapButtonKey: _swapButtonKey, 
+                  swapButtonKey: _swapButtonKey,
                   saveButtonKey: _saveButtonKey,
                   contextFieldKey: _contextFieldKey,
                   materialDropdownKey: _mode1DropdownKey,
