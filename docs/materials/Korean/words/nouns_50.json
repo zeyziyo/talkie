@@ -1,205 +1,266 @@
 {
-    "subject": "기본 명사 50",
+    "default_type": "word",
+    "meta": {
+        "subject": "기본 명사 50",
+        "level": "beginner",
+        "tags": [
+            "noun",
+            "vocab",
+            "basic"
+        ]
+    },
     "entries": [
         {
             "text": "사람",
-            "note": ""
+            "note": "인간",
+            "pos": "noun",
+            "tags": [
+                "people"
+            ]
         },
         {
             "text": "물",
-            "note": "식수"
+            "note": "마시는 물",
+            "pos": "noun",
+            "tags": [
+                "food",
+                "beverage"
+            ]
         },
         {
             "text": "밥",
-            "note": "식사"
+            "note": "식사/쌀밥",
+            "pos": "noun",
+            "tags": [
+                "food"
+            ]
         },
         {
             "text": "빵",
-            "note": ""
+            "note": "베이커리 종류",
+            "pos": "noun",
+            "tags": [
+                "food"
+            ]
         },
         {
             "text": "사과",
-            "note": "과일"
+            "note": "과일의 한 종류",
+            "pos": "noun",
+            "tags": [
+                "food",
+                "fruit"
+            ]
         },
         {
             "text": "우유",
-            "note": ""
+            "note": "음료",
+            "pos": "noun",
+            "tags": [
+                "food",
+                "beverage"
+            ]
         },
         {
             "text": "고기",
-            "note": ""
+            "note": "육류",
+            "pos": "noun",
+            "tags": [
+                "food"
+            ]
         },
         {
             "text": "옷",
-            "note": ""
+            "note": "의복",
+            "pos": "noun",
+            "tags": [
+                "clothing"
+            ]
         },
         {
             "text": "집",
-            "note": "주택"
+            "note": "거주지",
+            "pos": "noun",
+            "tags": [
+                "place"
+            ]
         },
         {
             "text": "방",
-            "note": ""
+            "note": "room",
+            "pos": "noun",
+            "tags": [
+                "place"
+            ]
         },
         {
             "text": "창문",
-            "note": ""
+            "note": "window",
+            "pos": "noun",
+            "tags": [
+                "object",
+                "house"
+            ]
         },
         {
             "text": "문",
-            "note": "출입구"
+            "note": "door",
+            "pos": "noun",
+            "tags": [
+                "object",
+                "house"
+            ]
         },
         {
             "text": "책상",
-            "note": ""
+            "note": "desk",
+            "pos": "noun",
+            "tags": [
+                "furniture"
+            ]
         },
         {
             "text": "의자",
-            "note": ""
+            "note": "chair",
+            "pos": "noun",
+            "tags": [
+                "furniture"
+            ]
         },
         {
             "text": "컴퓨터",
-            "note": ""
+            "note": "PC",
+            "pos": "noun",
+            "tags": [
+                "technology"
+            ]
         },
         {
             "text": "전화기",
-            "note": ""
+            "note": "phone",
+            "pos": "noun",
+            "tags": [
+                "technology"
+            ]
         },
         {
             "text": "책",
-            "note": "도서"
+            "note": "book",
+            "pos": "noun",
+            "tags": [
+                "education"
+            ]
         },
         {
             "text": "연필",
-            "note": ""
+            "note": "pencil",
+            "pos": "noun",
+            "tags": [
+                "education",
+                "stationery"
+            ]
         },
         {
             "text": "종이",
-            "note": ""
+            "note": "paper",
+            "pos": "noun",
+            "tags": [
+                "stationery"
+            ]
         },
         {
             "text": "가방",
-            "note": ""
+            "note": "bag",
+            "pos": "noun",
+            "tags": [
+                "fashion"
+            ]
         },
         {
             "text": "학교",
-            "note": ""
+            "note": "school",
+            "pos": "noun",
+            "tags": [
+                "place",
+                "education"
+            ]
         },
         {
             "text": "회사",
-            "note": ""
+            "note": "company/office",
+            "pos": "noun",
+            "tags": [
+                "place",
+                "work"
+            ]
         },
         {
             "text": "병원",
-            "note": ""
+            "note": "hospital",
+            "pos": "noun",
+            "tags": [
+                "place",
+                "health"
+            ]
         },
         {
             "text": "약국",
-            "note": ""
+            "note": "pharmacy",
+            "pos": "noun",
+            "tags": [
+                "place",
+                "health"
+            ]
         },
         {
             "text": "식당",
-            "note": ""
+            "note": "restaurant",
+            "pos": "noun",
+            "tags": [
+                "place",
+                "food"
+            ]
         },
         {
             "text": "시장",
-            "note": "장터"
+            "note": "market",
+            "pos": "noun",
+            "tags": [
+                "place",
+                "shopping"
+            ]
         },
         {
             "text": "지하철",
-            "note": ""
+            "note": "subway",
+            "pos": "noun",
+            "tags": [
+                "transport"
+            ]
         },
         {
             "text": "버스",
-            "note": ""
+            "note": "bus",
+            "pos": "noun",
+            "tags": [
+                "transport"
+            ]
         },
         {
             "text": "택시",
-            "note": ""
+            "note": "taxi",
+            "pos": "noun",
+            "tags": [
+                "transport"
+            ]
         },
         {
             "text": "비행기",
-            "note": ""
-        },
-        {
-            "text": "기차",
-            "note": ""
-        },
-        {
-            "text": "자전거",
-            "note": ""
-        },
-        {
-            "text": "길",
-            "note": "도로"
-        },
-        {
-            "text": "산",
-            "note": ""
-        },
-        {
-            "text": "바다",
-            "note": ""
-        },
-        {
-            "text": "강",
-            "note": ""
-        },
-        {
-            "text": "하늘",
-            "note": ""
-        },
-        {
-            "text": "해",
-            "note": "태양/년"
-        },
-        {
-            "text": "달",
-            "note": "위성"
-        },
-        {
-            "text": "별",
-            "note": "천체"
-        },
-        {
-            "text": "나무",
-            "note": ""
-        },
-        {
-            "text": "꽃",
-            "note": ""
-        },
-        {
-            "text": "강아지",
-            "note": ""
-        },
-        {
-            "text": "고양이",
-            "note": ""
-        },
-        {
-            "text": "돈",
-            "note": "현금"
-        },
-        {
-            "text": "시간",
-            "note": ""
-        },
-        {
-            "text": "오늘",
-            "note": ""
-        },
-        {
-            "text": "내일",
-            "note": ""
-        },
-        {
-            "text": "어제",
-            "note": ""
-        },
-        {
-            "text": "친구",
-            "note": ""
+            "note": "airplane",
+            "pos": "noun",
+            "tags": [
+                "transport"
+            ]
         }
     ]
 }

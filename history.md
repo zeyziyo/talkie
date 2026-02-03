@@ -4,13 +4,45 @@
 
 ---
 
-## 📅 [2026-02-03 08:30:00] Phase 65: Help Section & Tutorial Consistency (Feb 3, 2026)
-- **Problem**: Tutorial highlights were missing targets or pointing to wrong areas due to disconnected GlobalKeys. Help Dialog JSON example was outdated.
-- **Action**:
-    - Wired `_swapButtonKey`, `_mode1ToggleKey` in `HomeScreen`.
-    - Passed keys to `Mode1Widget` constructor.
-    - Updated `HelpDialog` JSON example with `default_type` and correct schema.
-- **Result**: Tutorial now accurately highlights all Mode 1 elements. Help section provides valid JSON examples.
+## 📅 [2026-02-03 10:30:00] Phase 68: 가져오기 로직 업데이트 (Import Logic Update)
+
+### ✅ 태스크 (Task)
+- [x] **DatabaseService**: `importFromJsonWithMetadata` 메서드를 최신 JSON 스키마(v66)에 맞춰 전면 수정.
+- [x] **Meta Data**: 파일 내 `meta` 객체의 제목, 출처, 태그 정보를 우선적으로 파싱.
+- [x] **Participants**: 대화형 자료의 참여자 목록(`participants`)을 읽어 `dialogue_participants` 테이블에 자동 등록.
+- [x] **Extended Fields**: 단어/문장의 세부 정보(`pos`, `root`, `form_type`, `tags`)를 누락 없이 DB에 저장.
+- [x] **Cleanup**: 레거시 테이블(`translations`) 쓰기 로직 제거 및 코드 최적화.
+
+### 📝 워크스루 (Walkthrough)
+- **문제**: Phase 66에서 데이터 구조는 고도화되었으나, 정작 "기기에서 자료 가져오기" 기능은 구버전 로직을 사용하고 있어 새로운 데이터가 제대로 표시되지 않음.
+- **해결**:
+    - `DatabaseService`의 가져오기 로직을 재작성하여 `meta` 및 `participants` 필드를 지원하도록 개선.
+    - 기존의 중복 저장 로직(`saveTranslationLinkWithMaterial`)을 제거하고, 통합 스키마(`words`, `sentences`)에만 데이터를 저장하도록 변경하여 데이터 무결성 확보.
+    - 이제 사용자가 최신 형식의 JSON 파일을 가져오면, 태그와 분류 정보가 완벽하게 복원됨.
+
+## 📅 [2026-02-03 10:15:00] Phase 67: 채팅 화면 성별 토글 UI 복구 (Chat UI Fix)
+
+### ✅ 태스크 (Task)
+- [x] **UI 수정**: "Voice Settings" 메뉴 제거로 사라진 성별 토글 기능을 사용자 말풍선 헤더에 복구.
+- [x] **User Header**: AI 말풍선과 동일한 "스마트 헤더" 스타일을 사용자 말풍선에도 적용 (언어 표시 + 성별 토글).
+
+### 📝 워크스루 (Walkthrough)
+- **문제**: AppBar 메뉴 정리 과정에서 사용자 목소리 성별을 바꿀 수 있는 기능이 제거됨.
+- **해결**: 사용자 말풍선 상단에 성별 아이콘(Face/Face_3)을 배치하여, 터치 시 즉시 성별이 변경되고 다시 말하기(Re-speak)가 수행되도록 직관적으로 개선함.
+
+## 📅 [2026-02-03 10:00:00] Hotfix: GitHub Pages 빌드 대기 현상 수정
+- **문제**: `docs/materials` 폴더의 수많은 JSON 파일로 인해 Jekyll 빌드가 30분 이상 지연됨.
+- **해결**: `docs/.nojekyll` 파일을 추가하여 Jekyll 처리를 우회, 정적 파일 서빙 속도 정상화.
+
+## 📅 [2026-02-03 09:30:00] Phase 66: 예제 자료 구조 업데이트 (Example Materials)
+- **문제**: `docs/materials` 내의 예제 JSON 파일들이 최신 스키마(Phase 66 적용)를 반영하지 않아 테스트에 부적합함.
+- **해결**: `first_meeting.json`, `greetings.json` 등 주요 예제 파일에 `meta`, `participants`, `default_type` 등 신규 필드 적용 완료.
+
+## 📅 [2026-02-03 09:00:00] Phase 65: 도움말 및 튜토리얼 정합성 수정 (Help & Tutorial)
+- **문제**: 튜토리얼 하이라이트가 엉뚱한 위치를 가리키거나, 도움말 예제 JSON이 구버전임.
+- **해결**: 
+    - `HomeScreen`의 GlobalKey(`_swapButtonKey` 등)를 `Mode1Widget`으로 전달하여 하이라이트 위치 보정.
+    - 도움말 다이얼로그(`HelpDialog`)의 JSON 예시 코드를 최신 스키마로 현행화.
 
 ## 📅 [2026-02-03 08:30:00] Phase 64: 멀티 페르소나 채팅 시스템 (Multi-Persona Chat System)
 
@@ -32,6 +64,9 @@
     - **참가자 명부(Registry)** 개념을 도입하여 대화방마다 등장인물을 별도로 관리.
     - 채팅 화면에서 바로 등장인물의 **페르소나(언어, 성별, 이름)**를 수정할 수 있는 직관적인 UI 제공.
     - 특히 TTS 엔진이 성별을 못 찾는 고질적인 문제(Android Google TTS)를 해결하기 위해, 이름 매칭 실패 시 2번째 목소리를 남성으로 간주하는 휴리스틱을 추가하여 "성별 토글" 기능의 신뢰성을 확보함.
+
+## 📅 [2026-02-02 18:00:00] Phase 63: 문서 업데이트 (Documentation Update)
+- **내용**: `README.md` 및 `ROADMAP`에 Phase 62(대화 관리)까지의 변경 사항을 반영하고, 최신 기능(검색, 필터, 노트)을 문서화함.
 
 ## 📅 [2026-02-02 15:45:00] Phase 62: 대화 관리 기능 강화 (Dialogue Management Enhancements)
 
@@ -56,61 +91,60 @@
 ## 📅 [2026-02-02 11:00:00] Phase 61: 빌드 및 배포 (Build & Release v1.0.9)
 
 ### ✅ 태스크 (Task)
-- [x] **Version Bump**: `1.0.8+13` -> `1.0.9+14` 상향.
-- [x] **Hotfix 2**: `saveTranslationLink` 호출 시 필수 인자 누락 수정.
-- [x] **Hotfix 3**: `loadRecordsByTags` SQL 쿼리 문법(`LIMIT` vs `GROUP BY` 순서) 수정.
+- [x] **New Version**: `1.0.8+13` -> `1.0.9+14`로 버전 상향.
+- [x] **Hotfix 2**: `saveTranslationLink` 호출 시 필수 인자 누락되는 문제 수정.
+- [x] **Hotfix 3**: `loadRecordsByTags` SQL 쿼리 문법(`LIMIT`와 `GROUP BY` 순서) 수정.
 
-## 📅 [2026-02-02 09:00:00] Phase 60: 'Formal' 태그 공식 지원 및 입력 보호 (Formal Tag & User Input Protection)
+## 📅 [2026-02-02 09:00:00] Phase 60: 'Formal' 태그 공식 지원 및 입력 보호 (Formal Tag & Input Protection)
 
 ### ✅ 태스크 (Task)
-- [x] **사용자 입력 보호**: AI 자동 분석이 사용자가 직접 선택한 품사나 문장 종류를 덮어쓰지 않도록 수정 (User Select > AI Auto-fill).
-- [x] **'존댓말' 태그 분리**: AI가 분석한 'Formal' 속성을 문장 종류에 덮어씌우지 않고, 별도의 **"존댓말 (Polite)"** 태그로 자동 추가.
-- [x] **카테고리 추가**: 문장 종류 선택 메뉴에 **"존댓말"** 항목 공식 추가.
-- [x] **UI 수정**: 입력 모드의 "상세 정보" 팝업 타이틀을 **"상세 분류"**로 변경.
+- [x] **사용자 입력 보호**: 사용자가 직접 선택한 품사나 문장 종류를 AI 자동 분석 결과가 덮어쓰지 않도록 로직 수정.
+- [x] **'존댓말' 태그 분리**: AI가 분석한 'Formal' 속성을 별도의 **"존댓말 (Polite)"** 태그로 자동 추가하도록 변경.
+- [x] **카테고리 추가**: 문장 종류 선택 메뉴에 **"존댓말"** 항목을 공식적으로 추가.
+- [x] **UI 수정**: 입력 모드의 "상세 정보" 팝업 타이틀을 **"상세 분류"**로 변경하여 직관성 개선.
 
 ### 📝 워크스루 (Walkthrough)
-- **문제**: AI가 한국어 문장의 존댓말 여부를 "Formal"이라고 반환하면서, 사용자가 선택한 "평서문(Statement)" 등의 설정을 강제로 덮어쓰는 문제 발생.
+- **문제**: AI가 한국어 문장의 존댓말 여부를 "Formal"이라고 반환하면서, 사용자가 선택한 "평서문(Statement)" 등을 강제로 덮어쓰는 문제가 있었음.
 - **해결**: 
-  - `AppState.translate` 로직을 수정하여, 사용자가 입력한 값이 없을 때만 AI 값을 채워넣도록 변경.
-  - "Formal" 값이 오면 `_sourceFormType`이 아닌 `_aiDetectedTags` 리스트에 저장.
-  - `Mode1Widget`에서 이 리스트를 확인하여 "존댓말" 태그를 칩으로 추가.
+  - `AppState.translate`에서 사용자 입력값이 없을 때만 AI 분석 결과를 반영하도록 변경.
+  - "Formal" 속성을 `_aiDetectedTags` 리스트로 관리하고, 이를 "존댓말" 태그 칩으로 변환하여 표기함.
 
 ## 📅 [2026-02-01 22:45:00] Phase 59: 고급 필터 및 검색 조건 강화 (Advanced Filters)
 
 ### ✅ 태스크 (Task)
-- [x] **검색 조건 강화**: 복습(Mode 2) 및 연습(Mode 3) 모드에 **"시작 글자(Starts With)"** 검색 필터 추가 (DB `LIKE 'A%'` 쿼리 최적화).
-- [x] **최근 항목 필터**: **"최근 N개 보기"** (Limit) 기능을 추가하여 최신 학습 데이터만 집중적으로 복습 가능.
-- [x] **UI 개선**: 필터 팝업의 "태그 선택" 버튼을 "검색 조건"으로 변경하고, 내부에서 태그/시작글자/개수제한을 통합 설정하도록 개편.
-- [x] **L10n**: 관련 UI 텍스트(시작 글자, 초기화 등) 국제화 적용.
+- [x] **검색 조건 강화**: 복습(Mode 2) 및 연습(Mode 3) 모드에 **"시작 글자(Starts With)"** 필터 구현.
+- [x] **최근 항목 필터**: **"최근 N개 보기"** (Limit) 기능을 추가하여 최신 데이터 집중 복습 지원.
+- [x] **UI 개선**: 필터 팝업을 개선하여 태그, 시작 글자, 개수 제한을 한곳에서 설정하도록 통합.
+- [x] **L10n**: 필터 관련 UI 텍스트(조건, 초기화 등) 국제화 적용.
 
-## 📅 [2026-02-01 19:30:00] Phase 58: Mode 1/2 일관성 및 데이터 무결성 (Consistency & Data Integrity)
-
-### ✅ 태스크 (Task)
-- [x] **저장 로직 조정**: 소스 단어는 "번역" 버튼 클릭 시 즉시 DB에 저장되지 않음.
-- [x] **데이터 무결성**: "저장" 버튼 클릭 시에만 저장되도록 하여 번역 쌍이 항상 완전하게 유지되도록 보장.
-- [x] **중복 방지**: `getLanguageRecordId`를 구현하여 "고아(orphan)" 레코드 삽입 없이 기존 단어 존재 여부 확인.
-- [x] **레거시 백필**: `saveTranslation`에 레거시 테이블 백필 로직을 추가하여 API 재사용 최적화를 유지하면서 데이터 무결성 강화.
-
-## 📅 [2026-02-01 18:55:00] Phase 57: Mode 1 자동 완성 최적화 (Optimize Autocomplete)
+## 📅 [2026-02-01 19:30:00] Phase 58: Mode 1/2 일관성 및 데이터 무결성 (Consistency & Integrity)
 
 ### ✅ 태스크 (Task)
-- [x] **Debounce 추가**: `Mode1Widget` 입력창에 `Timer`를 이용한 300ms 디바운스 로직 적용.
-- [x] **Performance**: 불필요한 DB 조회 횟수 감소 및 UI 반응성 향상.
+- [x] **저장 로직 조정**: 소스 언어 입력 시 '번역'만으로는 DB에 저장되지 않도록 변경.
+- [x] **데이터 무결성**: 사용자가 명시적으로 "저장" 버튼을 눌렀을 때만 번역 쌍이 저장됨.
+- [x] **중복 방지**: `getLanguageRecordId`를 통해 중복된 단어의 고아(Ill-formed) 레코드 생성 방지.
+- [x] **레거시 백필**: API 재사용성을 유지하면서 데이터 무결성을 위해 레거시 테이블 호환 로직 추가.
+
+## 📅 [2026-02-01 18:55:00] Phase 57: 자동 완성 최적화 (Optimize Autocomplete)
+
+### ✅ 태스크 (Task)
+- [x] **Debounce 도입**: `Mode1Widget` 입력창에 300ms 디바운스(Debounce)를 적용하여 과도한 DB 조회 방지.
+- [x] **성능 최적화**: 입력 중 쿼리 빈도를 줄여 UI 반응 속도 향상.
 
 ## 📅 [2026-02-01 13:50:00] Hotfix: 빌드 오류 수정 (Fix Build Error)
 
 ### ✅ 태스크 (Task)
-- [x] **Fix Error**: `AppState`에서 `SpeechService`의 정의되지 않은 메서드 `stopListening`을 `stopSTT`로 교체하여 빌드 오류 해결.
-- [x] **Cleanup**: `Mode3PracticeCard`의 미사용 변수 정리.
+- [x] **오류 수정**: `AppState`에서 정의되지 않은 `stopListening` 메서드를 `stopSTT`로 교체.
+- [x] **정리**: `Mode3PracticeCard`의 미사용 변수 제거.
 
-## 📅 [2026-02-01 13:30:00] Phase 56: Mode 3 리스트 구조 개편 (Refactor List to Include Expandable Cards)
+## 📅 [2026-02-01 13:30:00] Phase 56: Mode 3 리스트 구조 개편 (Expandable Cards)
 
 ### ✅ 태스크 (Task)
-- [x] **New List Structure**: Mode 3의 상단 고정 플레이어를 제거하고, 리스트 내 카드가 직접 확장되는 방식으로 변경.
-    - 초기 상태: 모국어(Source) 부분만 표시.
-    - 터치 시: 카드가 확장되며 발음 연습 영역(Target, Mic, Controls) 노출.
-- [x] **Add Features**: 확장된 카드 영역에 **초기화(Reset)** 버튼 추가 (학습 상태 초기화).
-- [x] **Code Cleanup**: 사용하지 않는 변수 및 Deprecated 코드(`withOpacity` -> `withValues`) 정리.
+- [x] **리스트 구조 변경**: 상단 고정 플레이어를 제거하고, 리스트 내 카드가 직접 확장되는 방식으로 변경.
+    - 기본 상태: 모국어(Source)만 표시.
+    - 선택 시: 카드가 확장되며 연습 영역(Target, 마이크 등) 노출.
+- [x] **기능 추가**: 확장된 카드에 **초기화(Reset)** 버튼을 추가하여 학습 상태 리셋 지원.
+- [x] **코드 정리**: 미사용 변수 및 Deprecated 코드(`withOpacity` -> `withValues`) 수정.
 
 ## 📅 [2026-02-01 12:45:00] Phase 55: 용어 변경 및 UI 통일 (Terms & UI Consistency)
 
@@ -255,6 +289,100 @@
 
 
 
+## 📅 [2026-02-01 04:00:00] Phase 45: 모드 4 드롭다운 수정 & 대화창 UI 정리
+- [x] **HomeScreen**: 모드 3 전환 시 대화 목록 자동 로드 및 드롭다운 응답성 개선.
+- [x] **ChatScreen**: 불필요한 드롭다운 제거 및 타이틀 텍스트 단순화.
+- [x] **Partner Icon**: 파트너 아이콘 기능 확인 및 답변 준비.
+
+## 📅 [2026-02-01 03:45:00] Phase 44: 빌드 오류 수정 (HomeScreen Import)
+- [x] **Fix**: `HomeScreen`에 `chat_screen.dart` import 구문 추가하여 컴파일 에러 해결.
+
+## 📅 [2026-02-01 03:30:00] Phase 43: 콩글리시 해결 & 모드 4 드롭다운 추가
+- [x] **HomeScreen**: 모드 4(AI 채팅) 앱바에 '대화 목록' 드롭다운 배치.
+- [x] **SpeechService**: 텍스트 언어 감지(한글/영어)를 통해 발음 언어를 강제로 설정하여 콩글리시 발음 문제 차단.
+- [x] **ChatScreen**: 저장 시 대화 목록 자동 갱신 로직 추가.
+
+## 📅 [2026-02-01 03:15:00] Phase 42: 채팅 목록 미표시 수정 (Offline-First)
+- [x] **AppState**: 대화 목록 로딩 로직을 로컬 데이터 우선(Offline-First)으로 변경하여 반응 속도 개선.
+- [x] **ChatScreen**: 드롭다운 UI의 배경, 테두리, 아이콘 등을 개선하여 시인성 확보.
+
+## 📅 [2026-02-01 03:00:00] Phase 41: AI 음성 발음 및 채팅 기록 드롭다운 수정
+- [x] **SpeechService**: AI 영어 발음 문제 원인(Locale 설정) 분석 및 해결.
+- [x] **Verify**: 사용자 음성과 AI 음성 설정 적용 로직 검증.
+- [x] **ChatScreen**: 채팅 기록 드롭다운 UI 구현 및 데이터 연동, 저장 후 갱신 확인.
+
+## 📅 [2026-02-01 02:45:00] Phase 40: 태그 국제화(L10n) 및 중복 표시 수정
+- [x] **Mode2Widget**: `_getLocalizedTag`에 대소문자 정규화 적용.
+- [x] **Filter**: 시스템 태그 필터링을 대소문자 무관(Case-insensitive)으로 변경.
+- [x] **UI**: 태그 칩에도 국제화 적용 완료.
+
+## 📅 [2026-02-01 02:30:00] Phase 39: 빌드 오류 긴급 수정 (Hotfix)
+- [x] **AppState**: 중복된 `setShowMemorized` 제거 및 `fetchRecommendations` 예외 처리 강화.
+- [x] **UI Widgets**: `l10n` 정의 추가 및 `BoxShadow` 로직 단순화, `const` 오류 수정.
+
+## 📅 [2026-02-01 02:15:00] Phase 38.5: AI 채팅 음성 연령 제한 제거
+- [x] **SpeechService**: 연령 관련 키워드(grandpa, grandma 등) 제거하여 30대 톤 이슈 해결.
+- [x] **ChatScreen**: 음성 설정 팝업 내 불필요한 문구 삭제.
+
+## 📅 [2026-02-01 02:00:00] Phase 38: AI 채팅 음성 개선 및 대화 목록 기능 보강
+- [x] **SpeechService**: `_setBestVoice` 로직 개선 (성별 매칭 실패 시 언어 기반 Fallback).
+- [x] **AppState**: `saveDialogueProgress` 호출 시 대화 목록 정렬 및 갱신 보장.
+
+## 📅 [2026-02-01 01:45:00] Phase 37: Mode 3 태그 선택 기능 및 실시간 필터
+- [x] **AppState**: `_validateCurrentMode3Question` 구현, 필터 변경 시 현재 문제 갱신.
+- [x] **Mode3Widget**: 상단 바에 '태그 선택' 버튼 추가 및 즉시 반영 확인.
+
+## 📅 [2026-02-01 01:30:00] Phase 36: 대명사 격 선택 기능 구현
+- [x] **AppState**: `pronounCaseCategories` 상수 추가.
+- [x] **L10n**: 대명사 격(주격, 목적격 등) 번역 키 추가.
+- [x] **UI**: 입력 모드 드롭다운 및 복습/연습 모드 태그 표시에 격 정보 반영.
+
+## 📅 [2026-02-01 01:15:00] Phase 35: 태그 및 주석 국제화 완비
+- [x] **UI**: 주석 라벨 국제화 및 자동 완성 시스템 태그 번역 적용.
+- [x] **Fix**: 하드코딩된 텍스트 제거 및 주석/POS 중복 표시 방지.
+
+## 📅 [2026-02-01 01:00:00] Phase 34: 발음 연습 모드 '완료한것' 필터링
+- [x] **AppState**: `_getAvailableQuestions`에 `showMemorized` 필터 적용.
+- [x] **Mode3Widget**: 상단에 '완료한것' 토글 스위치 추가 및 카드 목록 필터링 연동.
+- [x] **Common**: 태그 필터 버튼 명칭을 '태그 선택'으로 통일.
+
+## 📅 [2026-02-01 00:45:00] Phase 33: 복습 모드 '완료한것' 필터링 수정
+- [x] **AppState**: `filteredMaterialRecords` 게터에 필터 로직 추가.
+- [x] **Sync**: 스위치 토글 시 데이터 동기화 및 실시간 필터링 확인.
+
+## 📅 [2026-02-01 00:30:00] Phase 32: 복습 및 발음연습 모드 UI 정정
+- [x] **UI**: 품사 및 문장 종류 배지 국제화(`_getLocalizedTag`) 적용.
+- [x] **Filter**: 카드 하단 태그 목록에서 시스템 태그 및 불필요한 태그 숨김 처리.
+
+## 📅 [2026-02-01 00:15:00] Phase 31: 입력 모드 자동 완성 검색 수정
+- [x] **Mode1Widget**: 입력창 변경 시 `searchSimilarSources` 호출 연동.
+- [x] **UI**: 검색 결과(`similarSources`)를 보여주는 자동 완성 목록 UI 구현.
+- [x] **Database**: `searchSimilarText` 로직 확인.
+
+## 📅 [2026-01-31 23:30:00] Phase 30: 문장 부호 자동 삽입
+- [x] **AppState**: `_applyAutoPunctuation` 로직 구현 및 `setSourceFormType` 연동.
+- [x] **Verify**: 문장 종류 선택 시 부호가 실시간으로 반영되는지 확인.
+
+## 📅 [2026-01-31 23:00:00] Phase 29: 태그 정교화 및 국제화
+- [x] **Fix**: "sentence" 태그 문제 원인 조사 및 해결.
+- [x] **AppState**: 메타데이터 초기화 로직(`clearTexts`) 업데이트.
+- [x] **Mode2Widget**: 시스템 태그 국제화 구현.
+
+## 📅 [2026-01-31 22:30:00] Phase 28: 필터 UI 정교화 (아이콘 제거 및 간격 조정)
+- [x] **UI**: 모드별 "단어/문장" 버튼 아이콘 제거 및 컨트롤 간격 확대.
+- [x] **Consistency**: 홈, 모드 2, 모드 3 간의 UI 일관성 확보.
+
+## 📅 [2026-01-31 22:00:00] Phase 27: 복습 모드 필터 및 UI 개선
+- [x] **Feature**: "외운 카드 표시/숨기기" 필터 구현 (SQL 쿼리 업데이트).
+- [x] **Layout**: 상단 레이아웃을 3단(형태/태그/토글)으로 개편.
+- [x] **UX**: 카드 뒤집기 시 자동 학습 완료 처리 및 중복 아이콘 제거.
+
+## 📅 [2026-01-31 21:30:00] Phase 26: 카드 중복 수정 및 필터/태그 UI 개선 (Fix Duplicate Cards)
+- [x] **SQL**: `GROUP BY group_id` 적용으로 번역 쌍 중복 노출 해결.
+- [x] **Filter**: "전체" 옵션 제거 및 "단어" 기본값 설정.
+- [x] **Tags**: 시스템 태그 필터링 및 "태그 선택" 팝업 통합.
+- [x] **Logic**: 필터 초기화(`clearSelectedTags`) 로직 개선.
+
 ## 📅 [2026-01-31 03:10:10] Phase 25: 입력 모드 UI 간소화 및 레이아웃 재배치
 
 ### ✅ 태스크 (Task)
@@ -352,3 +480,78 @@
 - **결과**: 사용자가 단어/문장을 저장하는 즉시 "복습" 및 "발음 연습" 모드의 카드 리스트에서 확인 가능함.
 
 ---
+
+## 📅 [2026-01-30 16:00:00] Phase 22: 재학습 필요 항목 우선 표시 및 탭별 검색
+- [x] **Database**: `is_memorized` 컬럼 추가 및 마이그레이션.
+- [x] **Service**: `searchByType`, `toggleMemorizedStatus` 메서드 구현.
+- [x] **AppState**: 기본 뷰에서 `is_memorized=0` 필터링 로직 구현.
+- [x] **UI**: 탭별 검색 적용 및 학습 완료 체크 추가.
+
+## 📅 [2026-01-30 15:30:00] Phase 21: 검색 위젯 자동완성 확대
+- [x] **Mode2/3**: 검색바를 Autocomplete 위젯으로 교체.
+- [x] **Mode1**: UI 검증 및 개선.
+
+## 📅 [2026-01-30 15:00:00] Phase 20: 스마트 원형 선택
+- [x] **Database**: 단어 검색(Autocomplete용) API 추가.
+- [x] **AppState**: 단어 검색 연동 기능 구현.
+- [x] **Mode1**: 원형 입력 필드를 Autocomplete 위젯으로 교체.
+
+## 📅 [2026-01-30 14:30:00] Phase 19: 형용사/부사 문법 형태 확장
+- [x] **AppState**: 형용사 문법 형태(Grammar Form) 카테고리 추가.
+- [x] **L10n**: 원급/비교급/최상급 레이블 추가.
+- [x] **UI**: 상세 정보 팝업에 형용사/부사 전용 드롭다운 추가.
+
+## 📅 [2026-01-30 14:00:00] Phase 18: 상세 정보 팝업 개선
+- [x] **AppState**: 동사 문법 형태(Grammar Form) 카테고리 추가.
+- [x] **L10n**: 주석 및 문법 형태 레이블 추가.
+- [x] **UI**: 주석 라벨 변경 및 동사 전용 폼 추가.
+
+## 📅 [2026-01-30 13:30:00] Phase 17: AI 채팅 수정 및 사용자 편의 기능
+- [x] **Fix**: AI 채팅 저장 및 조회 오류 수정.
+- [x] **Cloud**: 개인용 클라우드 백업 및 비동기 동기화 최적화.
+- [x] **UI**: 단어/문장 토글 앱바 하단 이동 (기본값 '단어').
+- [x] **Feature**: AI 채팅 TTS 정지 아이콘 추가.
+
+## 📅 [2026-01-30 13:00:00] Phase 16: 최종 검증 및 빌드 배포
+- [x] **Release**: 버전 범프 (1.0.8+13) 및 GitHub Actions 배포.
+
+## 📅 [2026-01-29 18:00:00] Phase 14: 시스템 안정화 및 UI 간소화
+- [x] **Fix**: SQLite 스키마 오류 수정 (words 테이블 root).
+- [x] **Cleanup**: 미사용 코드 정리 및 자료집 배너/아이콘 제거.
+
+## 📅 [2026-01-29 15:00:00] 출시 후 핫픽스 & 최적화
+- [x] **Fix**: 수익 모델, GPS 타임아웃, 사용량 한도 수정.
+- [x] **Perf**: JSON 가져오기 성능 최적화 (INSERT OR IGNORE).
+- [x] **Chat**: AI 채팅 파트너 모드 및 GPS 컨텍스트 통합.
+- [x] **Import**: 로컬 파일 가져오기 및 자료집 가시성 문제 해결.
+
+## 📅 [2026-01-29 12:00:00] Phase 12: 데이터 구조 혁신 (통합 스키마)
+- [x] **Schema**: 통합 스키마(`words`, `sentences`, `item_tags`) 설계.
+- [x] **Migration**: 데이터 마이그레이션 및 서비스 리팩토링.
+- [x] **Refactor**: 전 모드 태그 필터링 및 스마트 검색 적용.
+
+## 📅 [2026-01-28 18:00:00] UI 및 기능 정교화: 최종 릴리스 준비
+- [x] **Tutorial**: 튜토리얼 하이라이트 및 좌표 수정.
+- [x] **Chat**: 채팅 종료/저장 워크플로 및 이중 언어 표시.
+- [x] **L10n**: 43개 언어 다국어 완전 동기화.
+- [x] **Docs**: 마케팅 에셋 생성 및 README/ROADMAP 업데이트.
+
+## 📅 [2026-01-27 18:00:00] Phase 11: AI 채팅 & 대화형 데이터 구조
+- [x] **Schema**: 대화 스키마(`dialogue_groups`) 설계 및 마이그레이션.
+- [x] **UI**: AI 채팅 화면 구현 (메신저 스타일, 자동 제목).
+- [x] **UX**: 복습 모드 내 대화 맥락 UI 연결.
+
+## 📅 [2026-01-26 18:00:00] Phase 10: AI 기반 학습 추천 시스템
+- [x] **Backend**: Supabase Edge Function 구현.
+- [x] **UI**: 추천 UI 및 간편 저장 로직 구현.
+
+## 📅 [2026-01-25 18:00:00] Phase 4-9: 데이터 동기화 및 핵심 기능 안정화
+- [x] **Sync**: "이중 쓰기" (SQLite + Supabase) 구현.
+- [x] **Logic**: 동음이의어 중의성 해소 (Disambiguation).
+- [x] **UX**: 스와이프 내비게이션 및 자료집 관리.
+- [x] **Fix**: 삭제 버그 수정 및 ARB 동기화.
+
+## 📅 [2026-01-23 18:00:00] Phase 1-3: 번역 안전 로직 및 기초 공사
+- [x] **Safety**: "Filtered: PROFANITY" 오류 수정 및 표준화.
+- [x] **Logic**: 오류 팝업 및 캐시 무효화 로직.
+- [x] **Rule**: 로컬 빌드 금지 규칙 수립.

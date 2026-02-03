@@ -1,45 +1,101 @@
 {
-    "title": "첫 만남 인사",
+    "default_type": "dialogue",
+    "meta": {
+        "title": "첫 만남 인사",
+        "level": "beginner",
+        "tags": [
+            "greeting",
+            "introduction",
+            "polite"
+        ],
+        "location": "Cafe/Street",
+        "description": "처음 만난 사람끼리 나누는 기본적인 인사와 통성명 대화"
+    },
+    "participants": [
+        {
+            "id": "p1",
+            "name": "조단",
+            "role": "user",
+            "gender": "male",
+            "lang_code": "en-US"
+        },
+        {
+            "id": "p2",
+            "name": "민지",
+            "role": "ai",
+            "gender": "female",
+            "lang_code": "ko-KR"
+        }
+    ],
     "entries": [
         {
+            "speaker": "조단",
             "text": "안녕하세요! 제 이름은 조단입니다. 만나서 반가워요.",
-            "speaker": "조단"
+            "sequence_order": 1,
+            "note": "Initial greeting",
+            "tags": [
+                "greeting"
+            ]
         },
         {
+            "speaker": "민지",
             "text": "안녕하세요 조단 씨! 저는 민지예요. 저도 만나서 반가워요.",
-            "speaker": "민지"
+            "sequence_order": 2,
+            "note": "Response to greeting"
         },
         {
+            "speaker": "조단",
             "text": "학생이세요?",
-            "speaker": "조단"
+            "sequence_order": 3,
+            "note": "Polite question asking for occupation"
         },
         {
+            "speaker": "민지",
             "text": "아니요, 저는 회사원이에요. 조단 씨는요?",
-            "speaker": "민지"
+            "sequence_order": 4,
+            "note": "Answering and asking back"
         },
         {
+            "speaker": "조단",
             "text": "저는 대학생이에요. 한국어를 공부하고 있어요.",
-            "speaker": "조단"
+            "sequence_order": 5,
+            "note": "Self introduction"
         },
         {
+            "speaker": "민지",
             "text": "와, 대단하네요! 한국어는 좀 어렵지 않나요?",
-            "speaker": "민지"
+            "sequence_order": 6,
+            "note": "Compliment and small talk"
         },
         {
+            "speaker": "조단",
             "text": "네, 어렵지만 재미있어요. 많이 도와주세요.",
-            "speaker": "조단"
+            "sequence_order": 7,
+            "note": "Expressing difficulty and asking for help"
         },
         {
+            "speaker": "민지",
             "text": "물론이죠! 우리 같이 열심히 공부해요.",
-            "speaker": "민지"
+            "sequence_order": 8,
+            "note": "Agreement and encouragement",
+            "tags": [
+                "exclamation"
+            ]
         },
         {
+            "speaker": "조단",
             "text": "감사합니다. 다음에 또 봐요!",
-            "speaker": "조단"
+            "sequence_order": 9,
+            "note": "Closing"
         },
         {
+            "speaker": "민지",
             "text": "안녕히 가세요!",
-            "speaker": "민지"
+            "sequence_order": 10,
+            "note": "Farewell",
+            "tags": [
+                "farewell"
+            ]
         }
     ]
 }

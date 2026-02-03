@@ -611,31 +611,6 @@ class _ChatScreenState extends State<ChatScreen> {
             onPressed: () => _endChat(l10n),
             tooltip: l10n.chatSaveAndExit,
           ),
-          
-          // Voice Settings Menu
-          PopupMenuButton<String>(
-            icon: const Icon(Icons.tune),
-            tooltip: 'Voice Settings',
-            onSelected: (value) {
-              if (value == 'settings') {
-                _showVoiceSettingsDialog(context);
-              }
-            },
-            itemBuilder: (BuildContext context) {
-              return [
-                 const PopupMenuItem<String>(
-                   value: 'settings',
-                   child: Row(
-                     children: [
-                       Icon(Icons.record_voice_over, color: Colors.black54),
-                       SizedBox(width: 8),
-                       Text('Voice Settings'),
-                     ],
-                   ),
-                 ),
-              ];
-            },
-          ),
         ],
       ),
       body: Column(
@@ -668,7 +643,6 @@ class _ChatScreenState extends State<ChatScreen> {
     final isPartner = speakerName == l10n.partner;
     
     // Find Participant Config
-    // We assume _loadHistory ensured they exist.
     final participant = appState.activeParticipants.firstWhere(
       (p) => p.name == speakerName,
       orElse: () => ChatParticipant(
@@ -679,17 +653,12 @@ class _ChatScreenState extends State<ChatScreen> {
     // Layout alignment: User Right, AI Left
     final alignment = isUser ? Alignment.centerRight : Alignment.centerLeft;
     final color = isUser ? Colors.blue[50] : (isPartner ? Colors.teal[50] : const Color(0xFFF5F5F5));
-    final textColor = isUser ? Colors.blue[900] : Colors.black87;
     
     // Text Logic
-    // User: Top=Source (Native), Bottom=Target (Translated)
-    // AI: Top=Source (Foreign), Bottom=Target (Native Translation)
     final topText = msg['source_text'] ?? '';
     final bottomText = msg['target_text'] ?? '';
     
     // Lang Logic for TTS
-    // User: Top=Native, Bottom=Target
-    // AI: Top=ParticipantLang (Foreign), Bottom=Native
     final topLang = isUser ? appState.sourceLang : participant.langCode;
     final bottomLang = isUser ? appState.targetLang : appState.sourceLang;
 
@@ -701,9 +670,11 @@ class _ChatScreenState extends State<ChatScreen> {
         child: Column(
           crossAxisAlignment: isUser ? CrossAxisAlignment.end : CrossAxisAlignment.start,
           children: [
-            // Speaker Header (AI Only or Partner)
-            if (!isUser)
-               _buildParticipantHeader(context, participant, appState, l10n, msg),
+            // Speaker Header
+            if (isUser)
+              _buildUserHeader(context, appState, l10n, msg)
+            else
+              _buildParticipantHeader(context, participant, appState, l10n, msg),
 
             // Bubble
             Container(
@@ -722,18 +693,58 @@ class _ChatScreenState extends State<ChatScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Top Text (Primary Speak)
-                  _buildTextRow(topText, topLang, participant.gender, isUser),
+                  _buildTextRow(topText, topLang, isUser ? appState.chatUserGender : participant.gender, isUser),
                   
                   // Divider & Bottom Text (Translation)
                   if (bottomText.isNotEmpty) ...[
                     const Divider(height: 16),
-                    _buildTextRow(bottomText, bottomLang, isUser ? 'female' : participant.gender, true), // Translation usually default voice
+                    _buildTextRow(bottomText, bottomLang, isUser ? 'female' : participant.gender, true), 
                   ],
                 ],
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildUserHeader(BuildContext context, AppState appState, AppLocalizations l10n, Map<String, dynamic> msg) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 4, right: 4),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          // 1. Language Label (Read Only)
+          Text(
+            appState.sourceLang.toUpperCase(),
+            style: TextStyle(fontSize: 10, color: Colors.grey[600], fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(width: 8),
+
+          // 2. Gender Toggle (User)
+          InkWell(
+            onTap: () {
+              final newGender = appState.chatUserGender == 'male' ? 'female' : 'male';
+               appState.setChatUserGender(newGender);
+               // Re-speak
+               _speak(msg['source_text'], appState.sourceLang, isUser: true);
+            },
+            child: Icon(
+              appState.chatUserGender == 'male' ? Icons.face : Icons.face_3,
+              size: 16,
+              color: appState.chatUserGender == 'male' ? Colors.blue : Colors.pink,
+            ),
+          ),
+          const SizedBox(width: 8),
+          
+          // 3. Name (Me)
+          Text(
+             l10n.me,
+             style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey[700]),
+          ),
+        ],
       ),
     );
   }

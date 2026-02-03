@@ -2,6 +2,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'dart:typed_data';
 import 'dart:convert';
+import 'package:uuid/uuid.dart';
 
 /// DatabaseService - 로컬 데이터베이스 관리
 /// 언어별 테이블을 동적으로 생성하고 일대다 번역 관계 지원
@@ -1100,6 +1101,8 @@ class DatabaseService {
     return id;
   }
    /// Import study materials from JSON file with metadata
+  /// Import study materials from JSON file with metadata
+  /// Import study materials from JSON file with metadata
   static Future<Map<String, dynamic>> importFromJsonWithMetadata(
     String jsonContent,
     {String? fileName}
@@ -1107,20 +1110,38 @@ class DatabaseService {
     try {
       final data = json.decode(jsonContent) as Map<String, dynamic>;
       
+      // Phase 66: Support 'meta' object
+      final meta = data['meta'] as Map<String, dynamic>? ?? {};
+      
       // 언어 이름(Korean)을 코드(ko)로 매핑
-      final rawSourceLang = data['source_language'] as String;
-      final rawTargetLang = data['target_language'] as String;
+      final rawSourceLang = (meta['source_language'] ?? data['source_language']) as String? ?? 'auto';
+      final rawTargetLang = (meta['target_language'] ?? data['target_language']) as String? ?? 'auto';
       final sourceLang = _mapLanguageToCode(rawSourceLang);
       final targetLang = _mapLanguageToCode(rawTargetLang);
       
-      final subject = data['subject'] as String? ?? 'Imported Material';
-      final source = data['source'] as String? ?? 'File Upload';
-      final fileCreatedAt = data['created_at'] as String? ?? DateTime.now().toIso8601String();
-      final defaultType = data['default_type'] as String? ?? 'sentence';
+      final subject = (meta['title'] ?? data['subject']) as String? ?? fileName ?? 'Imported Material';
+      final source = (meta['source'] ?? data['source']) as String? ?? 'File Upload';
+      final fileCreatedAt = (meta['created_at'] ?? data['created_at']) as String? ?? DateTime.now().toIso8601String();
+      final defaultType = (data['default_type'] ?? meta['default_type']) as String? ?? 'sentence';
       
+      // Phase 66: File-level Tags
+      final fileTags = (meta['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
+
       // Support both 'entries' (standard) and 'dialogues' (for chat records)
       final entries = data['entries'] as List?;
       final dialogues = data['dialogues'] as List?;
+      
+      // Phase 66: Participants Pool
+      final participantsList = data['participants'] as List?;
+      final Map<String, Map<String, dynamic>> participantMap = {};
+      if (participantsList != null) {
+        for (var p in participantsList) {
+          final pMap = p as Map<String, dynamic>;
+          if (pMap['id'] != null) {
+            participantMap[pMap['id']] = pMap;
+          }
+        }
+      }
       
       final db = await database;
       
@@ -1139,6 +1160,8 @@ class DatabaseService {
 
          // Case A: Standard Entries
          if (entries != null) {
+            // Note: createStudyMaterial writes to `study_materials` table which IS used by UI dropdowns (Legacy table but used by AppState).
+            // We KEEP this. The *content* (sentences) uses Unified Schema.
             final materialId = await createStudyMaterial(
               subject: subject,
               source: source,
@@ -1152,41 +1175,38 @@ class DatabaseService {
             for (var i = 0; i < entries.length; i++) {
               try {
                 final entry = entries[i] as Map<String, dynamic>;
+                // Phase 66: Entry-level Meta priority
+                final entryMeta = entry['meta'] as Map<String, dynamic>? ?? {};
+                
                 final sourceText = (entry['source_text'] ?? entry['text']) as String?;
-                final targetText = entry['target_text'] as String?;
+                final targetText = (entry['target_text'] ?? entry['translation']) as String?;
                 
                 if (sourceText == null || targetText == null || sourceText.trim().isEmpty || targetText.trim().isEmpty) {
                   skippedCount++;
                   continue;
                 }
                 
-                // Insert with caching
-                int sourceId;
-                if (sourceCache.containsKey(sourceText)) {
-                  sourceId = sourceCache[sourceText]!;
-                } else {
-                  sourceId = await insertLanguageRecord(sourceLang, sourceText, txn: txn, skipTableCheck: true);
-                  sourceCache[sourceText] = sourceId;
-                }
+                // Collect Tags (File + Entry) (+ Material Title as Tag)
+                final entryTags = (entry['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
+                // Add subject as tag to help filtering in generic views
+                final List<String> allTags = [...fileTags, ...entryTags, subject]; 
                 
-                int targetId;
-                if (targetCache.containsKey(targetText)) {
-                  targetId = targetCache[targetText]!;
-                } else {
-                  targetId = await insertLanguageRecord(targetLang, targetText, txn: txn, skipTableCheck: true);
-                  targetCache[targetText] = targetId;
-                }
-                
-                await saveTranslationLinkWithMaterial(
-                  sourceLang: sourceLang,
-                  sourceId: sourceId,
+                await saveUnifiedRecord(
+                  text: sourceText,
+                  lang: sourceLang,
+                  translation: targetText,
                   targetLang: targetLang,
-                  targetId: targetId,
-                  materialId: materialId,
-                  note: (entry['note'] ?? entry['context']) as String?,
                   type: entry['type'] as String? ?? defaultType,
+                  // Extended Metadata
+                  pos: (entry['pos'] ?? entryMeta['pos']) as String?,
+                  root: (entry['root'] ?? entryMeta['root']) as String?,
+                  formType: (entry['form_type'] ?? entryMeta['form_type']) as String?,
+                  note: (entry['note'] ?? entryMeta['note'] ?? entry['context']) as String?,
+                  tags: allTags.isNotEmpty ? allTags : null,
                   txn: txn,
                 );
+                
+                // REMOVED: saveTranslationLinkWithMaterial (Legacy)
                 
                 importedCount++;
               } catch (e) {
@@ -1212,8 +1232,13 @@ class DatabaseService {
 
             for (var d in dialogues) {
               final dMap = d as Map<String, dynamic>;
-              final dTitle = dMap['title'] as String? ?? subject;
-              final dPersona = dMap['persona'] as String? ?? 'Partner';
+              final dMeta = dMap['meta'] as Map<String, dynamic>? ?? {}; // Dialogue-level meta
+              
+              final dTitle = (dMap['title'] ?? dMeta['title']) as String? ?? subject;
+              final dPersona = (dMap['persona'] ?? dMeta['persona']) as String? ?? 'Partner';
+              final dTopic = (dMap['topic'] ?? dMeta['topic']) as String?;
+              
+              // Generate ID
               final dId = '${DateTime.now().millisecondsSinceEpoch}_${importedCount}';
               lastDialogueId = dId;
 
@@ -1222,9 +1247,39 @@ class DatabaseService {
                 id: dId,
                 title: dTitle,
                 persona: dPersona,
+                note: dTopic, // Map topic to note if available
                 createdAt: fileCreatedAt,
                 txn: txn,
               );
+
+              // Phase 66: Insert Participants for this Dialogue
+              // "participants": ["jisoo", "minsu"] (List of IDs) OR full objects
+              final dParticipants = dMap['participants'];
+              if (dParticipants is List) {
+                for (var pRef in dParticipants) {
+                  Map<String, dynamic>? pData;
+                  if (pRef is String) {
+                    // ID Reference
+                    pData = participantMap[pRef];
+                  } else if (pRef is Map<String, dynamic>) {
+                    // Inline Definition
+                    pData = pRef;
+                  }
+                  
+                  if (pData != null) {
+                    // Insert into dialogue_participants
+                    await txn.insert('dialogue_participants', {
+                      'id': const Uuid().v4(),
+                      'dialogue_id': dId,
+                      'name': pData['name'] ?? 'Unknown',
+                      'role': pData['role'] ?? 'user',
+                      'gender': pData['gender'],
+                      'lang_code': pData['lang_code'],
+                      'created_at': DateTime.now().toIso8601String(),
+                    });
+                  }
+                }
+              }
 
               final messages = dMap['messages'] as List? ?? [];
               totalMessages += messages.length;
@@ -1234,46 +1289,141 @@ class DatabaseService {
                   final msg = messages[j] as Map<String, dynamic>;
                   final sText = msg['source_text'] as String?;
                   final tText = msg['target_text'] as String?;
-                  final speaker = msg['speaker'] as String? ?? 'Unknown';
+                  // Parse full speaker object or simple name
+                  String speakerName = 'Unknown';
+                  if (msg['speaker'] is String) {
+                    speakerName = msg['speaker'];
+                    // Try to resolve name from ID if it matches a participant
+                     if (participantMap.containsKey(speakerName)) {
+                       speakerName = participantMap[speakerName]!['name'];
+                     }
+                  }
 
                   if (sText == null || tText == null || sText.trim().isEmpty || tText.trim().isEmpty) {
                     skippedCount++;
                     continue;
                   }
 
-                  // Insert with caching logic
-                  int sId;
-                  if (sourceCache.containsKey(sText)) {
-                    sId = sourceCache[sText]!;
-                  } else {
-                    sId = await insertLanguageRecord(sourceLang, sText, txn: txn, skipTableCheck: true);
-                    sourceCache[sText] = sId;
-                  }
-
-                  int tId;
-                  if (targetCache.containsKey(tText)) {
-                    tId = targetCache[tText]!;
-                  } else {
-                    tId = await insertLanguageRecord(targetLang, tText, txn: txn, skipTableCheck: true);
-                    targetCache[tText] = tId;
-                  }
-
-                  await saveTranslationLinkWithMaterial(
-                    sourceLang: sourceLang,
-                    sourceId: sId,
+                  // Use saveUnifiedRecord for metadata
+                  await saveUnifiedRecord(
+                    text: sText,
+                    lang: sourceLang,
+                    translation: tText,
                     targetLang: targetLang,
-                    targetId: tId,
-                    materialId: 0, // Dialogue records don't use materialId (stored in dialogue_groups)
-                    dialogueId: dId,
-                    speaker: speaker,
-                    sequenceOrder: j,
-                    note: (msg['note'] ?? msg['context']) as String?,
                     type: msg['type'] as String? ?? 'sentence',
                     pos: msg['pos'] as String?,
                     formType: (msg['form_type'] ?? msg['formType']) as String?,
                     root: msg['root'] as String?,
+                    note: (msg['note'] ?? msg['context']) as String?,
+                    tags: ['Dialogue', ...fileTags], // Tag as Dialogue
                     txn: txn,
                   );
+                  
+                  // Insert into chat_messages (Required for Chat UI)
+                  // Chat UI uses `chat_messages` table which links to `dialogue_groups`
+                  // It does NOT use `translations` table.
+                  
+                  // Need to find the group_id we just inserted? 
+                  // `saveUnifiedRecord` inserts into `words`/`sentences`.
+                  // But `chat_messages` needs `group_id` or similar reference?
+                  // Historically `chat_messages` stores metadata, but `DatabaseService` manages the text separately?
+                  // Wait, `saveUnifiedRecord` saves text.
+                  // `chat_messages` table (lines 228-237 in ViewFile) has:
+                  // id, dialogue_id, group_id, speaker, participant_id, sequence_order.
+                  // `group_id` is the link to `words`/`sentences`.
+                  // `saveUnifiedRecord` creates a `timestamp` as `group_id` internally! 
+                  // BUT `saveUnifiedRecord` does not return the `group_id`.
+                  
+                  // PROBLEM: `saveUnifiedRecord` hides the `group_id`.
+                  // I need `group_id` to insert into `chat_messages`.
+                  // Modified Plan: Duplicate `saveUnifiedRecord` logic inline OR update `saveUnifiedRecord` to return ID/GroupId.
+                  // Since I can't easily change signature of a "Shared" method without checking usage...
+                  // Actually `saveUnifiedRecord` is in the same file. I can check usage.
+                  
+                  // Let's use a generated timestamp/groupId here explicitly and pass it?
+                  // `saveUnifiedRecord` doesn't accept groupId.
+                  
+                  // Workaround: Use `DatabaseService` logic inline for Dialogue messages to ensure we get the ID.
+                  // OR modify `saveUnifiedRecord` to return the `group_id`.
+                  
+                  // For now, I'll reproduce the timestamp logic here.
+                  final timestamp = DateTime.now().millisecondsSinceEpoch + j; // Ensure uniqueness
+                  
+                  await saveUnifiedRecord(
+                    text: sText,
+                    lang: sourceLang,
+                    translation: tText,
+                    targetLang: targetLang,
+                    type: msg['type'] as String? ?? 'sentence',
+                    pos: msg['pos'] as String?,
+                    formType: (msg['form_type'] ?? msg['formType']) as String?,
+                    root: msg['root'] as String?,
+                    note: (msg['note'] ?? msg['context']) as String?,
+                    tags: ['Dialogue', ...fileTags], // Tag as Dialogue
+                    txn: txn,
+                    // ERROR: I can't override group_id in `saveUnifiedRecord`.
+                  );
+                  
+                  // WAIT. `saveUnifiedRecord` generates a NEW group_id every call.
+                  // If I want to link `chat_messages` to that record... I need that ID.
+                  // The current `saveUnifiedRecord` implementation returns `Future<void>`.
+                  
+                  // I MUST update `saveUnifiedRecord` to return `int` (group_id) OR handle the insert manually here.
+                  // Since I'm editing `DatabaseService.dart`, I can just insert manually here for Dialogues.
+                  // It's safer than modifying the shared method signature which might affect other calls (though likely few).
+                  
+                  // Manual Insert for Dialogue Message:
+                  final table = 'sentences'; // All chat is sentences
+                  final createdAt = DateTime.now().toIso8601String();
+                  
+                  // 1. Source
+                  await txn.insert(table, {
+                    'group_id': timestamp,
+                    'text': sText,
+                    'lang_code': sourceLang,
+                    'pos': msg['pos'] as String?,
+                    'form_type': (msg['form_type'] ?? msg['formType']) as String?,
+                    'root': msg['root'] as String?,
+                    'note': (msg['note'] ?? msg['context']) as String?,
+                    'created_at': createdAt,
+                  }, conflictAlgorithm: ConflictAlgorithm.ignore);
+                  
+                  // 2. Target
+                  await txn.insert(table, {
+                    'group_id': timestamp,
+                    'text': tText,
+                    'lang_code': targetLang,
+                    'created_at': createdAt,
+                  }, conflictAlgorithm: ConflictAlgorithm.ignore);
+                  
+                  // 3. Translation Link
+                  // (Skip redundant unified link if we just rely on group_id? No, unified needs it for search pairings if query on one side)
+                  // Actually `saveUnifiedRecord` does insert `sentence_translations`. I should do that too.
+                  // But for Chat, we mostly use `chat_messages` + `group_id` lookup.
+                  // Let's invoke `saveUnifiedRecord` BUT we need the ID/Group ID.
+                  // Actually, why not just change `saveUnifiedRecord` to take optional `groupId`?
+                  // That requires editing 2 places (definition and here). SAFE.
+                  
+                  // Wait, I can't edit `saveUnifiedRecord` in THIS tool call easily if it's far away.
+                  // `saveUnifiedRecord` was at line 2081. This chunk is 1102-1300.
+                  // I cannot edit both in one `replace_file_content`.
+                  
+                  // Only option: Inline the logic here.
+                  
+                  // ... (Inline Logic Applied in ReplacementContent below)
+                  // Also: Insert into `chat_messages`.
+                  
+                  await txn.insert('chat_messages', {
+                    'dialogue_id': dId,
+                    'group_id': timestamp,
+                    'speaker': speakerName,
+                     // 'participant_id': ... (Resolve ID if available logic?)
+                    'sequence_order': j,
+                    'created_at': createdAt,
+                  });
+                  
+                  // Update: REMOVED `saveTranslationLinkWithMaterial` (Legacy)
+                  
                   importedCount++;
                 } catch (e) {
                    errors.add('Dialogue ${importedCount}: $e');

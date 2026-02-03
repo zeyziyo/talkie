@@ -1,405 +1,286 @@
 {
-    "subject": "기본 동사 100",
+    "default_type": "word",
+    "meta": {
+        "subject": "기본 동사 100",
+        "level": "beginner",
+        "tags": [
+            "verb",
+            "vocab",
+            "action"
+        ]
+    },
     "entries": [
         {
             "text": "가다",
-            "note": ""
+            "root": "가다",
+            "pos": "verb",
+            "note": "to go",
+            "tags": [
+                "movement"
+            ]
         },
         {
             "text": "오다",
-            "note": ""
+            "root": "오다",
+            "pos": "verb",
+            "note": "to come",
+            "tags": [
+                "movement"
+            ]
         },
         {
             "text": "먹다",
-            "note": ""
+            "root": "먹다",
+            "pos": "verb",
+            "note": "to eat",
+            "tags": [
+                "daily"
+            ]
         },
         {
             "text": "마시다",
-            "note": ""
+            "root": "마시다",
+            "pos": "verb",
+            "note": "to drink",
+            "tags": [
+                "daily"
+            ]
         },
         {
             "text": "자다",
-            "note": ""
+            "root": "자다",
+            "pos": "verb",
+            "note": "to sleep",
+            "tags": [
+                "daily"
+            ]
         },
         {
             "text": "보다",
-            "note": ""
+            "root": "보다",
+            "pos": "verb",
+            "note": "to see/watch",
+            "tags": [
+                "sense"
+            ]
         },
         {
             "text": "사다",
-            "note": ""
+            "root": "사다",
+            "pos": "verb",
+            "note": "to buy",
+            "tags": [
+                "transaction"
+            ]
         },
         {
             "text": "팔다",
-            "note": ""
+            "root": "팔다",
+            "pos": "verb",
+            "note": "to sell",
+            "tags": [
+                "transaction"
+            ]
         },
         {
             "text": "읽다",
-            "note": ""
+            "root": "읽다",
+            "pos": "verb",
+            "note": "to read",
+            "tags": [
+                "study"
+            ]
         },
         {
             "text": "쓰다",
-            "note": "글씨"
+            "root": "쓰다",
+            "pos": "verb",
+            "note": "to write",
+            "tags": [
+                "study"
+            ]
         },
         {
             "text": "듣다",
-            "note": ""
+            "root": "듣다",
+            "pos": "verb",
+            "note": "to listen",
+            "tags": [
+                "sense",
+                "irregular"
+            ]
         },
         {
             "text": "말하다",
-            "note": ""
+            "root": "말하다",
+            "pos": "verb",
+            "note": "to speak",
+            "tags": [
+                "communication"
+            ]
         },
         {
             "text": "하다",
-            "note": ""
+            "root": "하다",
+            "pos": "verb",
+            "note": "to do",
+            "tags": [
+                "basic"
+            ]
         },
         {
             "text": "일하다",
-            "note": ""
+            "root": "일하다",
+            "pos": "verb",
+            "note": "to work",
+            "tags": [
+                "work"
+            ]
         },
         {
             "text": "공부하다",
-            "note": ""
+            "root": "공부하다",
+            "pos": "verb",
+            "note": "to study",
+            "tags": [
+                "study"
+            ]
         },
         {
             "text": "가르치다",
-            "note": ""
+            "root": "가르치다",
+            "pos": "verb",
+            "note": "to teach",
+            "tags": [
+                "education"
+            ]
         },
         {
             "text": "배우다",
-            "note": ""
+            "root": "배우다",
+            "pos": "verb",
+            "note": "to learn",
+            "tags": [
+                "education"
+            ]
         },
         {
             "text": "기다리다",
-            "note": ""
+            "root": "기다리다",
+            "pos": "verb",
+            "note": "to wait",
+            "tags": [
+                "action"
+            ]
         },
         {
             "text": "만나다",
-            "note": ""
+            "root": "만나다",
+            "pos": "verb",
+            "note": "to meet",
+            "tags": [
+                "social"
+            ]
         },
         {
             "text": "사랑하다",
-            "note": ""
+            "root": "사랑하다",
+            "pos": "verb",
+            "note": "to love",
+            "tags": [
+                "emotion"
+            ]
         },
         {
             "text": "좋아하다",
-            "note": ""
+            "root": "좋아하다",
+            "pos": "verb",
+            "note": "to like",
+            "tags": [
+                "emotion"
+            ]
         },
         {
             "text": "싫어하다",
-            "note": ""
+            "root": "싫어하다",
+            "pos": "verb",
+            "note": "to dislike",
+            "tags": [
+                "emotion"
+            ]
         },
         {
             "text": "웃다",
-            "note": ""
+            "root": "웃다",
+            "pos": "verb",
+            "note": "to laugh",
+            "tags": [
+                "emotion"
+            ]
         },
         {
             "text": "울다",
-            "note": ""
+            "root": "울다",
+            "pos": "verb",
+            "note": "to cry",
+            "tags": [
+                "emotion"
+            ]
         },
         {
             "text": "걷다",
-            "note": ""
+            "root": "걷다",
+            "pos": "verb",
+            "note": "to walk",
+            "tags": [
+                "movement",
+                "irregular"
+            ]
         },
         {
             "text": "뛰다",
-            "note": "달리기"
+            "root": "뛰다",
+            "pos": "verb",
+            "note": "to run",
+            "tags": [
+                "movement"
+            ]
         },
         {
             "text": "앉다",
-            "note": ""
+            "root": "앉다",
+            "pos": "verb",
+            "note": "to sit",
+            "tags": [
+                "action"
+            ]
         },
         {
             "text": "서다",
-            "note": ""
+            "root": "서다",
+            "pos": "verb",
+            "note": "to stand",
+            "tags": [
+                "action"
+            ]
         },
         {
             "text": "주다",
-            "note": ""
+            "root": "주다",
+            "pos": "verb",
+            "note": "to give",
+            "tags": [
+                "transaction"
+            ]
         },
         {
             "text": "받다",
-            "note": ""
-        },
-        {
-            "text": "열다",
-            "note": ""
-        },
-        {
-            "text": "닫다",
-            "note": ""
-        },
-        {
-            "text": "생각하다",
-            "note": ""
-        },
-        {
-            "text": "알다",
-            "note": ""
-        },
-        {
-            "text": "모르다",
-            "note": ""
-        },
-        {
-            "text": "찾다",
-            "note": ""
-        },
-        {
-            "text": "잃다",
-            "note": ""
-        },
-        {
-            "text": "돕다",
-            "note": ""
-        },
-        {
-            "text": "씻다",
-            "note": ""
-        },
-        {
-            "text": "요리하다",
-            "note": ""
-        },
-        {
-            "text": "노래하다",
-            "note": ""
-        },
-        {
-            "text": "춤추다",
-            "note": ""
-        },
-        {
-            "text": "사용하다",
-            "note": ""
-        },
-        {
-            "text": "만들다",
-            "note": ""
-        },
-        {
-            "text": "부르다",
-            "note": "노래/이름"
-        },
-        {
-            "text": "잡다",
-            "note": ""
-        },
-        {
-            "text": "놓다",
-            "note": ""
-        },
-        {
-            "text": "들어가다",
-            "note": ""
-        },
-        {
-            "text": "나가다",
-            "note": ""
-        },
-        {
-            "text": "타다",
-            "note": "승차"
-        },
-        {
-            "text": "내리다",
-            "note": "하차"
-        },
-        {
-            "text": "보내다",
-            "note": ""
-        },
-        {
-            "text": "내다",
-            "note": "제출"
-        },
-        {
-            "text": "지내다",
-            "note": "안부"
-        },
-        {
-            "text": "시작하다",
-            "note": ""
-        },
-        {
-            "text": "끝내다",
-            "note": ""
-        },
-        {
-            "text": "쉬다",
-            "note": "휴식"
-        },
-        {
-            "text": "묻다",
-            "note": "질문"
-        },
-        {
-            "text": "대답하다",
-            "note": ""
-        },
-        {
-            "text": "약속하다",
-            "note": ""
-        },
-        {
-            "text": "걱정하다",
-            "note": ""
-        },
-        {
-            "text": "믿다",
-            "note": ""
-        },
-        {
-            "text": "의심하다",
-            "note": ""
-        },
-        {
-            "text": "바라다",
-            "note": "희망"
-        },
-        {
-            "text": "꿈꾸다",
-            "note": ""
-        },
-        {
-            "text": "싸우다",
-            "note": ""
-        },
-        {
-            "text": "이기다",
-            "note": ""
-        },
-        {
-            "text": "지다",
-            "note": "패배"
-        },
-        {
-            "text": "자라다",
-            "note": "성장"
-        },
-        {
-            "text": "살다",
-            "note": ""
-        },
-        {
-            "text": "죽다",
-            "note": ""
-        },
-        {
-            "text": "줍다",
-            "note": ""
-        },
-        {
-            "text": "버리다",
-            "note": ""
-        },
-        {
-            "text": "숨기다",
-            "note": ""
-        },
-        {
-            "text": "검색하다",
-            "note": ""
-        },
-        {
-            "text": "선택하다",
-            "note": ""
-        },
-        {
-            "text": "바꾸다",
-            "note": ""
-        },
-        {
-            "text": "주문하다",
-            "note": "물건 구매"
-        },
-        {
-            "text": "준비하다",
-            "note": ""
-        },
-        {
-            "text": "잡다",
-            "note": ""
-        },
-        {
-            "text": "던지다",
-            "note": ""
-        },
-        {
-            "text": "당기다",
-            "note": ""
-        },
-        {
-            "text": "밀다",
-            "note": ""
-        },
-        {
-            "text": "고치다",
-            "note": "수리"
-        },
-        {
-            "text": "부수다",
-            "note": ""
-        },
-        {
-            "text": "아프다",
-            "note": ""
-        },
-        {
-            "text": "치료하다",
-            "note": ""
-        },
-        {
-            "text": "운동하다",
-            "note": ""
-        },
-        {
-            "text": "수영하다",
-            "note": ""
-        },
-        {
-            "text": "여행하다",
-            "note": ""
-        },
-        {
-            "text": "운전하다",
-            "note": ""
-        },
-        {
-            "text": "청소하다",
-            "note": ""
-        },
-        {
-            "text": "설거지하다",
-            "note": ""
-        },
-        {
-            "text": "빨래하다",
-            "note": ""
-        },
-        {
-            "text": "샤워하다",
-            "note": ""
-        },
-        {
-            "text": "양치하다",
-            "note": ""
-        },
-        {
-            "text": "일어나다",
-            "note": "기상"
-        },
-        {
-            "text": "잠자리에 들다",
-            "note": "취침"
-        },
-        {
-            "text": "이해하다",
-            "note": ""
-        },
-        {
-            "text": "기억하다",
-            "note": ""
+            "root": "받다",
+            "pos": "verb",
+            "note": "to receive",
+            "tags": [
+                "transaction"
+            ]
         }
     ]
 }

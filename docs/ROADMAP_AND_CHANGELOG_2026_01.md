@@ -85,9 +85,11 @@
     *   **Auto-Title**: 대화 개수 기반(Chat 1, Chat 2) 제목 자동 생성.
     *   **Note & Search**: 대화 종료 시 메모(Note) 저장 및 히스토리 검색/필터(날짜) 기능 추가.
     *   **Optimistic Sync**: 저장 및 대화 시작 시 UI 즉시 갱신(렉 제거).
-88: *   [x] **Phase 65: Help & Tutorial Consistency (Feb 3)**:
-89:     *   **Accurate Targeting**: 튜토리얼 하이라이트가 실제 UI 요소(마이크, 번역 버튼 등)를 정확히 가리키도록 `GlobalKey` 바인딩 수정.
-90:     *   **JSON Guide**: 도움말 내 JSON 예제를 최신 스키마(Phase 64 반영)로 현행화.
+*   [x] **Phase 65: Help Section & Tutorial Consistency (Focus: UI/Help Sync)**:
+    *   **Accurate Targeting**: 튜토리얼 하이라이트가 실제 UI 요소(마이크, 번역 버튼 등)를 정확히 가리키도록 `GlobalKey` 바인딩 수정.
+    *   **JSON Guide**: 도움말 내 JSON 예제를 최신 스키마(Phase 64 반영)로 현행화.
+*   [x] **Phase 66: Example Materials Update (Focus: JSON Schema Alignment)**
+*   [ ] **Phase 67: Import Logic Update (Focus: Parsing new JSON schema)**
 
 ### 🚀 Phase 13: 개인화 & 추천 (Planned - Feb)
 *   [ ] **Recommender**: 사용자 데이터를 분석하여 맞춤형 학습 콘텐츠 제안.
