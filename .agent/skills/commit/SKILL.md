@@ -35,6 +35,13 @@ Co-Authored-By: First Fluke <our.first.fluke@gmail.com>
 
 ## Workflow
 
+### Step 0: Rule Guard Enforcement (MANDATORY)
+**CRITICAL**: You MUST run this script before proceeding. If it fails, you CANNOT commit.
+```bash
+pwsh scripts/rule_guard.ps1
+```
+*If this script returns an error, STOP immediately and update the documentation.*
+
 ### Step 1: Analyze Changes
 ```bash
 git status
