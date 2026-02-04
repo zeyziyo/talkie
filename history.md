@@ -4,6 +4,39 @@
 
 ---
 
+## 📅 [2026-02-04 22:57:00] Phase 70: Import 무한 대기 버그 수정 (Fix Import Hang)
+
+### ✅ 태스크 (Task)
+- [x] **Bug Report**: "Importing Entries..." 메시지가 무한 표시되는 문제 진단.
+- [x] **Root Cause**: `importFromJsonWithMetadata` 메서드 내에서 트랜잭션 블록 안에서 `createLanguageTable`을 호출하여 데드락 발생.
+- [x] **Fix**: `createLanguageTable` 호출을 트랜잭션 시작 **전**으로 이동하여 데드락 방지.
+
+### 📝 워크스루 (Walkthrough)
+- **문제**: 사용자가 기기에서 JSON 파일을 가져올 때 "Importing Entries..." 메시지가 계속 표시되고 완료되지 않음.
+- **원인**: `DatabaseService.importFromJsonWithMetadata` 메서드(1154~1155줄)에서 트랜잭션 내부에서 `createLanguageTable`을 호출했는데, 이 메서드가 자체적으로 `await database`를 사용하여 별도 DB 연결을 시도하면서 **데드락(Deadlock)** 발생.
+- **해결**: 테이블 생성 로직을 트랜잭션 블록 **외부**(1148~1150줄)로 이동하여 DB 잠금 충돌 제거.
+- **결과**: Import 기능이 정상적으로 완료되며, 사용자 피드백도 즉시 표시됨.
+
+---
+
+## 📅 [2026-02-03 10:37:00] Phase 69: 규칙 준수 시스템화 (Process Hardening)
+
+### ✅ 태스크 (Task)
+- [x] **코드 일관성**: `AppState` 내 모든 `loadRecordsByTags` 호출에 `limit` 파라미터 명시적으로 추가.
+- [x] **데이터 무결성**: `DatabaseService`의 `deleteRecord` 메서드에 `group_id`를 사용하여 연관된 모든 레코드 삭제 보장.
+- [x] **에러 핸들링**: `DatabaseService`의 모든 DB 작업에 `try-catch` 블록 추가 및 로깅 강화.
+- [x] **성능 최적화**: `Mode2Card`의 `toggleMemorizedStatus` 호출 시 불필요한 전체 목록 새로고침 방지.
+
+### 📝 워크스루 (Walkthrough)
+- **문제**: `loadRecordsByTags` 호출 시 `limit` 파라미터가 누락되어 예기치 않은 대량의 데이터 로딩이 발생할 수 있었고, `deleteRecord`는 `group_id`를 제대로 활용하지 못해 고아(orphan) 레코드를 남길 수 있었음. 또한 DB 작업 중 발생하는 예외가 적절히 처리되지 않아 앱 크래시로 이어질 수 있었음.
+- **해결**:
+    - `AppState` 전반에 걸쳐 `loadRecordsByTags` 호출 시 `limit: 100` (또는 적절한 값)을 기본값으로 명시하여 데이터 로딩량을 제어.
+    - `DatabaseService.deleteRecord`가 `group_id`를 받아 해당 그룹에 속한 모든 `words` 및 `sentences` 레코드를 삭제하도록 수정하여 데이터 무결성 강화.
+    - 모든 `DatabaseService` 메서드에 `try-catch` 블록을 추가하고, 에러 발생 시 `logger.e`를 통해 상세 로그를 남기도록 하여 디버깅 용이성 향상.
+    - `Mode2Card`에서 `toggleMemorizedStatus` 호출 후 `loadRecordsByTags`를 다시 호출하는 대신, `AppState` 내에서 상태 변경 후 UI만 업데이트하도록 로직을 개선하여 불필요한 DB 조회 및 UI 리빌드를 방지.
+
+---
+
 ## 📅 [2026-02-03 10:30:00] Phase 68: 가져오기 로직 업데이트 (Import Logic Update)
 
 ### ✅ 태스크 (Task)

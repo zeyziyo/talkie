@@ -1145,14 +1145,14 @@ class DatabaseService {
       
       final db = await database;
       
+      // 1. 테이블 미리 생성 (트랜잭션 외부에서 실행하여 데드락 방지)
+      await createLanguageTable(sourceLang);
+      await createLanguageTable(targetLang);
+      
       return await db.transaction((txn) async {
          int importedCount = 0;
          int skippedCount = 0;
          List<String> errors = [];
-         
-         // 1. 테이블 미리 생성
-         await createLanguageTable(sourceLang);
-         await createLanguageTable(targetLang);
 
          // 2. 인메모리 캐시
          final Map<String, int> sourceCache = {};
