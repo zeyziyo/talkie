@@ -4,6 +4,19 @@
 
 ---
 
+## 📅 [2026-02-06 04:10:00] 학습 자료 Import 후 즉시 표시 버그 수정
+
+### ✅ 태스크 (Task)
+- [x] **버그 분석**: JSON Import 후 `selectMaterial(0)` 호출 시 `_materialRecords = []`로 설정되어 카드 미표시.
+- [x] **수정**: `selectMaterial` 함수에서 id가 0/null일 때 `loadRecordsByTags()` 호출하도록 변경.
+
+### 📝 워크스루 (Walkthrough)
+- **원인**: `selectMaterial(0)`에서 `id != 0` 조건으로 인해 `_materialRecords`가 빈 배열로 설정됨.
+- **조치**: `loadRecordsByTags()` 호출로 Import된 레코드 즉시 로드.
+- **결과**: Import 완료 후 학습 카드 즉시 표시됨.
+
+---
+
 ## 📅 [2026-02-06 03:40:00] 빌드 오류 긴급 수정 (Critical Build Fix)
 
 ### ✅ 태스크 (Task)

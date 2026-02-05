@@ -1595,7 +1595,8 @@ class AppState extends ChangeNotifier {
     if (id != null && id != 0) {
       await loadMaterialRecords(id);
     } else {
-      _materialRecords = [];
+      // id가 0 또는 null이면 전체 레코드 로드 (Import 후 즉시 표시)
+      await loadRecordsByTags();
     }
     notifyListeners();
   }
