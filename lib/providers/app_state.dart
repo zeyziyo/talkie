@@ -1737,7 +1737,13 @@ class AppState extends ChangeNotifier {
                 skippedCount++;
               }
             }
-            
+          } catch (e) {
+            errors.add('Entry ${i + 1} failed: $e');
+            skippedCount++;
+          }
+        }
+      }
+      
       await loadStudyRecords(); // Reload user library
       notifyListeners();
       
@@ -1746,10 +1752,8 @@ class AppState extends ChangeNotifier {
         'imported': importedCount,
         'skipped': skippedCount,
         'duplicates': duplicateCount,
-        'total': entries.length,
+        'total': (data['entries'] as List?)?.length ?? 0,
         'errors': errors,
-        // 'material_id': ... // We don't distinctly separate materials in Supabase yet (all in library), 
-        // but could add to a 'Collection' later. For now, flattened.
       };
     } catch (e) {
       debugPrint('[AppState] Error importing JSON (Supabase): $e');
@@ -1919,16 +1923,16 @@ class AppState extends ChangeNotifier {
         // Load First Question Immediately
         _nextMode3Question();
       }
+    } else {
+      // Stop session
+      await _speechService.stopSTT();
+      _currentMode3Question = null;
+      _isListening = false;
     }
-  }
-
-  void resetMode3Progress() {
-    _mode3CompletedQuestionIds.clear();
-    _mode3Score = 0.0;
-    _mode3Feedback = '';
     notifyListeners();
   }
-  
+
+
   // NEW: Direct Start Method for Dropdown
   Future<void> startMode3SessionDirectly() async {
       await _speechService.stopSTT(); // Ensure clean state
@@ -3003,22 +3007,19 @@ class AppState extends ChangeNotifier {
       });
 
       // 2. Personal Cloud Sync (Background Backup for performance)
-
-          // 2. Personal Cloud Sync
-          SupabaseService.savePrivateChatMessage(
-            dialogueId: _activeDialogueId!,
-            sourceText: sourceText,
-            targetText: targetText,
-            sourceLang: _sourceLang,
-            targetLang: _targetLang,
-            speaker: speaker ?? 'unknown',
-            sequenceOrder: _currentDialogueSequence,
-          ).catchError((e) => debugPrint('[AppState] Background Cloud Sync Error: $e'));
-          
-        } catch (e) {
-          debugPrint('[AppState] Error saving User message: $e');
-        }
-      }
+      SupabaseService.savePrivateChatMessage(
+        dialogueId: _activeDialogueId!,
+        sourceText: sourceText,
+        targetText: targetText,
+        sourceLang: _sourceLang,
+        targetLang: _targetLang,
+        speaker: speaker ?? 'unknown',
+        sequenceOrder: _currentDialogueSequence,
+      ).catchError((e) => debugPrint('[AppState] Background Cloud Sync Error: $e'));
+    } catch (e) {
+      debugPrint('[AppState] Error saving AI response: $e');
+    }
+  }
 
   String getServiceLocale(String langCode) {
     switch (langCode) {
