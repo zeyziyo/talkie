@@ -105,6 +105,10 @@ class AppState extends ChangeNotifier {
   String _sourcePos = ''; // 품사 (Verb, Noun 등)
   String _sourceFormType = ''; // 문법 형태 (Past, Comparative 등)
   String _sourceRoot = ''; // 단어 원형 (Go, Apple 등)
+  String _statusMessage = ''; // Status message for UI feedback
+  
+  // Getter for status message
+  String get statusMessage => _statusMessage;
   
   // Phase X: AI Detected Tags
   List<String> _aiDetectedTags = [];
