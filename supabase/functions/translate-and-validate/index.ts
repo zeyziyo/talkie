@@ -1,5 +1,5 @@
 // @ts-nocheck
-// VERSION: 2.3.0-NATIVE-GUIDANCE
+// VERSION: 2.4.0-PIVOT-LANG
 // 1. Set Function Name: translate-and-validate
 
 const GEMINI_API_KEY = Deno.env.get('GEMINI_API_KEY')
@@ -27,8 +27,12 @@ Deno.serve(async (req) => {
         }
 
         // Call Gemini API
+        // Determine if we need English pivot translation
+        const needsEnglishPivot = sourceLang !== 'en' && targetLang !== 'en';
+
         const prompt = `
       Translate the following text from ${sourceLang || 'auto'} to ${targetLang}.
+      ${needsEnglishPivot ? 'ALSO translate to English for cross-language linking.' : ''}
       Also validate the content for profanity, hate speech, or sexual content.
       
       CRITICAL INSTRUCTIONS:
@@ -51,10 +55,13 @@ Deno.serve(async (req) => {
          In the "reason" field, provide a polite, descriptive sentence in the source language (${sourceLang || 'Korean'}) explaining WHY it was blocked.
       
       5. DO NOT block harmless phrases, common greetings, or standard polite conversation.
+      
+      6. ENGLISH PIVOT: ${needsEnglishPivot ? 'ALWAYS include "englishText" field with the English translation for cross-language dictionary linking.' : 'If source or target is English, set "englishText" to whichever is in English.'}
 
       Provide the output in strict JSON format:
       {
         "translatedText": "string",
+        "englishText": "string (English translation for dictionary linking - REQUIRED)",
         "isValid": boolean, 
         "reason": "string",
         "disambiguationOptions": ["string"],

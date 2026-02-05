@@ -118,7 +118,49 @@ class SupabaseService {
     return null;
   }
 
+  /// Find group_id using English as pivot language (Phase 76: Shared Dictionary)
+  /// Search order: source text → target text → English text
+  static Future<int?> findGroupIdWithPivot({
+    required String sourceText,
+    required String sourceLang,
+    required String targetText,
+    required String targetLang,
+    String? englishText,
+  }) async {
+    // 1. Search by source text
+    int? groupId = await findGroupId(sourceText, sourceLang);
+    if (groupId != null) return groupId;
+    
+    // 2. Search by target text
+    groupId = await findGroupId(targetText, targetLang);
+    if (groupId != null) return groupId;
+    
+    // 3. Search by English pivot (if provided and not already English)
+    if (englishText != null && sourceLang != 'en' && targetLang != 'en') {
+      groupId = await findGroupId(englishText, 'en');
+      if (groupId != null) return groupId;
+    }
+    
+    return null; // No existing group found
+  }
+
+  /// Generate next group_id from PostgreSQL Sequence
+  static Future<int> _getNextGroupId() async {
+    try {
+      // Call PostgreSQL function to get next sequence value
+      final response = await client.rpc('next_group_id');
+      if (response != null) {
+        return response as int;
+      }
+    } catch (e) {
+      debugPrint('Supabase: Failed to get next_group_id from sequence: $e');
+    }
+    // Fallback to timestamp if sequence fails
+    return DateTime.now().millisecondsSinceEpoch;
+  }
+
   /// Import a single JSON entry with validation and deduplication
+  /// Now uses English pivot for cross-language linking
   /// Returns: { success: bool, reason: String? }
   static Future<Map<String, dynamic>> importJsonEntry({
     required String sourceText,
@@ -131,10 +173,31 @@ class SupabaseService {
     String? root,
   }) async {
     try {
-      // 1. Duplicate Check (Source)
-      int? groupId = await findGroupId(sourceText, sourceLang);
+      // 1. Validation + English Translation via Edge Function
+      final validation = await translateAndValidate(
+        text: sourceText,
+        sourceLang: sourceLang,
+        targetLang: targetLang,
+        note: note,
+      );
       
-      // If group exists, check if target also exists in this group (Full Duplicate)
+      if (validation['isValid'] != true) {
+        return {'success': false, 'reason': 'Content Policy: ${validation['reason'] ?? 'Unknown'}'};
+      }
+      
+      // Extract English pivot from Edge Function response
+      final englishText = validation['englishText'] as String?;
+      
+      // 2. Find existing group using pivot language
+      int? groupId = await findGroupIdWithPivot(
+        sourceText: sourceText,
+        sourceLang: sourceLang,
+        targetText: targetText,
+        targetLang: targetLang,
+        englishText: englishText,
+      );
+      
+      // Check for exact duplicate (same source + target in group)
       if (groupId != null) {
         final targetCheck = await client
             .from('sentences')
@@ -145,55 +208,61 @@ class SupabaseService {
             .maybeSingle();
             
         if (targetCheck != null) {
-          // Already exists exactly.
-          // Ensure it's in user's library though?
           await _addToLibrary(groupId, note);
-          return {'success': false, 'reason': 'Duplicate'};
+          return {'success': false, 'reason': 'Duplicate', 'id': groupId};
         }
-      }
-
-      // 2. Validation (Content Policy) via Edge Function
-      // We validate the SOURCE text as the primary content.
-      // (Optionally could validate target too, but source is sufficient for most cases)
-      final validation = await translateAndValidate(
-        text: sourceText,
-        sourceLang: sourceLang,
-        targetLang: targetLang, // Target lang irrelevant for validation but required by API
-      );
-      
-      if (validation['isValid'] != true) {
-        return {'success': false, 'reason': 'Content Policy: ${validation['reason'] ?? 'Unknown'}'};
       }
 
       // 3. Insert Data
       final authorId = client.auth.currentUser?.id;
       
       if (groupId == null) {
-        // New Group
-        groupId = DateTime.now().millisecondsSinceEpoch; // Should use UUID or Sequence in real prod
+        // New Group - use PostgreSQL Sequence
+        groupId = await _getNextGroupId();
         
         // Insert Source
         await client.from('sentences').insert({
           'group_id': groupId,
           'lang_code': sourceLang,
           'text': sourceText,
-          'note': note, // Note usually explains the source term in these lists
-          'pos': pos, // Added for Phase 13
-          'form_type': formType, // Added for Phase 13
-          'root': root, // Added for Phase 13
+          'note': note,
+          'pos': pos,
+          'form_type': formType,
+          'root': root,
+          'author_id': authorId,
+          'status': 'approved',
+        });
+        
+        // Insert English pivot (if different from source/target)
+        if (englishText != null && sourceLang != 'en' && targetLang != 'en') {
+          await client.from('sentences').insert({
+            'group_id': groupId,
+            'lang_code': 'en',
+            'text': englishText,
+            'author_id': authorId,
+            'status': 'approved',
+          });
+        }
+      }
+      
+      // Insert Target (if not already exists in this group)
+      final existingTarget = await client
+          .from('sentences')
+          .select('id')
+          .eq('group_id', groupId)
+          .eq('lang_code', targetLang)
+          .eq('text', targetText)
+          .maybeSingle();
+          
+      if (existingTarget == null) {
+        await client.from('sentences').insert({
+          'group_id': groupId,
+          'lang_code': targetLang,
+          'text': targetText,
           'author_id': authorId,
           'status': 'approved',
         });
       }
-      
-      // Insert Target (If we are here, target didn't exist in this group)
-      await client.from('sentences').insert({
-        'group_id': groupId,
-        'lang_code': targetLang,
-        'text': targetText,
-        'author_id': authorId,
-        'status': 'approved',
-      });
       
       // 4. Add to library
       await _addToLibrary(groupId, note);

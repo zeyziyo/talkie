@@ -4,6 +4,31 @@
 
 ---
 
+## 📅 [2026-02-06 09:00:00] Phase 76: 피벗 언어 기반 공유 사전 구현
+
+### ✅ 태스크 (Task)
+- [x] **Edge Function 수정**: `translate-and-validate` v2.4.0 - 영어 피벗 번역 추가
+- [x] **클라이언트 수정**:
+  - `findGroupIdWithPivot`: 영어 피벗 검색 로직 (source → target → English)
+  - `_getNextGroupId`: PostgreSQL Sequence 호출 (fallback: timestamp)
+  - `importJsonEntry`: 영어 피벗 로직 적용, 영어 번역 자동 저장
+
+### 📝 워크스루 (Walkthrough)
+- **목표**: 다국어 사용자 간 동일 개념 연결 (예: "사과" = "apple" = "manzana")
+- **방식**: 영어를 피벗 언어로 사용하여 모든 번역에 영어 번역 포함
+- **적용**: 새로운 번역부터 적용, 기존 데이터는 마이그레이션 불가
+
+> [!WARNING]
+> PostgreSQL Sequence 생성 필요:
+> ```sql
+> CREATE SEQUENCE IF NOT EXISTS group_id_seq START 1;
+> CREATE OR REPLACE FUNCTION next_group_id() RETURNS BIGINT AS $$
+> BEGIN RETURN nextval('group_id_seq'); END;
+> $$ LANGUAGE plpgsql;
+> ```
+
+---
+
 ## 📅 [2026-02-06 04:10:00] 학습 자료 Import 후 즉시 표시 버그 수정
 
 ### ✅ 태스크 (Task)
