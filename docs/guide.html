@@ -247,14 +247,18 @@
             </ul>
 
             <h3>4. AI Persona Chat (Mode 4)</h3>
-            <p>Practice real-world conversations with AI characters like English teachers, local friends, or travel guides.</p>
+            <p>Practice real-world conversations with AI characters like English teachers, local friends, or travel
+                guides.</p>
             <div class="demo-box">
                 <div style="font-size: 3rem;">💬</div>
             </div>
             <ul>
-                <li><strong>Context Persistence:</strong> AI remembers your conversation flow and maintains context.</li>
-                <li><strong>Auto-Save:</strong> Tap any AI response to save the translation directly to your Mode 2 review list.</li>
-                <li><strong>Dynamic Titles:</strong> AI automatically suggests titles for your chats based on the topic.</li>
+                <li><strong>Context Persistence:</strong> AI remembers your conversation flow and maintains context.
+                </li>
+                <li><strong>Auto-Save:</strong> Tap any AI response to save the translation directly to your Mode 2
+                    review list.</li>
+                <li><strong>Dynamic Titles:</strong> AI automatically suggests titles for your chats based on the topic.
+                </li>
             </ul>
 
 
@@ -270,19 +274,21 @@
             <p>Create a text file with the extension <code>.json</code> (e.g., <code>travel_words.json</code>). Copy the
                 format below:</p>
             <pre><code>{
-  "title": "Essential Travel Phrases",
+  "subject": "Essential Travel Phrases",
   "default_type": "sentence",
-  "translations": [
+  "entries": [
     {
-      "source": "Where is the bathroom?",
-      "target": "화장실이 어디에요?",
-      "context": "Restaurant"
+      "source_text": "Where is the bathroom?",
+      "target_text": "화장실이 어디에요?",
+      "note": "Restaurant",
+      "tags": ["travel", "basic"]
     },
     {
-      "source": "Delicious",
-      "target": "맛있어요",
+      "source_text": "Delicious",
+      "target_text": "맛있어요",
       "type": "word",
-      "context": "Food"
+      "pos": "adjective",
+      "note": "Food"
     }
   ]
 }</code></pre>
@@ -299,8 +305,9 @@
                 <p style="margin: 0; font-family: sans-serif; font-style: italic;">
                     "Please create a JSON file for a language learning app.
                     The topic is <strong>[Your Topic, e.g., Business English]</strong>.
-                    It should have a 'title', a 'default_type' of 'sentence', and a list of 'translations'.
-                    Each item needs 'source' (English), 'target' (Korean), and a 'context' tag.
+                    It should have a 'subject', a 'default_type' of 'sentence', and a list of 'entries'.
+                    Each item needs 'source_text' (English), 'target_text' (Korean), 'pos' (part of speech), 'note'
+                    (context), and 'tags' (array of strings).
                     Please include 10 useful phrases."
                 </p>
             </div>

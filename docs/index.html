@@ -437,9 +437,9 @@
         };
 
         const materialsMap = [
-            { id: 'verbs_100', name: 'Basic Verbs (100)', path: 'words/verbs_100.json' },
-            { id: 'nouns_50', name: 'Basic Nouns (50)', path: 'words/nouns_50.json' },
-            { id: 'greetings_50', name: 'Essential Greetings', path: 'sentences/greetings_50.json' },
+            { id: 'verbs_1', name: 'Basic Verbs (100)', path: 'words/verbs_1.json' },
+            { id: 'nouns_1', name: 'Basic Nouns (50)', path: 'words/nouns_1.json' },
+            { id: 'greetings_1', name: 'Essential Greetings', path: 'sentences/greetings_1.json' },
             { id: 'first_meeting', name: 'Dialogue: First Meeting', path: 'dialogues/first_meeting.json' }
         ];
 
@@ -535,22 +535,22 @@
                     const s = sourceData.entries[i];
                     const t = targetData.entries[i];
 
+                    const entry = {
+                        source_text: s.text || s.source_text,
+                        target_text: t.text || t.target_text,
+                        type: s.type || t.type || typeCode,
+                        pos: t.pos || s.pos || targetData.pos || sourceData.pos || "",
+                        note: t.note || s.note || "",
+                        tags: [...new Set([...(s.tags || []), ...(t.tags || [])])],
+                        form_type: t.form_type || s.form_type || "",
+                        style: t.style || s.style || ""
+                    };
+
                     if (isDialogue) {
-                        mergedEntries.push({
-                            speaker: s.speaker || t.speaker || (i % 2 === 0 ? "A" : "B"),
-                            source_text: s.text,
-                            target_text: t.text,
-                            note: t.note || s.note || "",
-                            type: 'sentence'
-                        });
-                    } else {
-                        mergedEntries.push({
-                            source_text: s.text,
-                            target_text: t.text,
-                            type: typeCode,  // FIX: Add type field to match default_type
-                            note: t.note || s.note || ""
-                        });
+                        entry.speaker = s.speaker || t.speaker || (i % 2 === 0 ? "A" : "B");
+                        entry.type = 'sentence';
                     }
+                    mergedEntries.push(entry);
                 }
 
                 const sCode = sourceLang;
@@ -558,10 +558,11 @@
 
                 // Create Final Object
                 let finalJson = {
-                    subject: sourceData.subject || subjectName,
+                    subject: sourceData.subject || targetData.subject || subjectName,
                     source_language: sCode,
                     target_language: tCode,
-                    default_type: typeCode
+                    default_type: typeCode,
+                    pos: targetData.pos || sourceData.pos || ""
                 };
 
                 // Use "dialogues" structure for dialogue files as planned
@@ -570,7 +571,7 @@
                         (mergedEntries.length > 0 ? mergedEntries[0].speaker : "Partner");
                     finalJson.dialogues = [
                         {
-                            title: sourceData.subject || subjectName,
+                            title: finalJson.subject,
                             persona: firstAIspeaker || "Partner",
                             messages: mergedEntries
                         }
