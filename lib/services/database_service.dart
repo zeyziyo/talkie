@@ -1320,8 +1320,8 @@ class DatabaseService {
                     continue;
                   }
 
-                  // Use saveUnifiedRecord for metadata
-                  await saveUnifiedRecord(
+                  // Use saveUnifiedRecord to save the sentence pair and get the group_id
+                  final groupId = await saveUnifiedRecord(
                     text: sText,
                     lang: sourceLang,
                     translation: tText,
@@ -1337,114 +1337,18 @@ class DatabaseService {
                   );
                   
                   // Insert into chat_messages (Required for Chat UI)
-                  // Chat UI uses `chat_messages` table which links to `dialogue_groups`
-                  // It does NOT use `translations` table.
-                  
-                  // Need to find the group_id we just inserted? 
-                  // `saveUnifiedRecord` inserts into `words`/`sentences`.
-                  // But `chat_messages` needs `group_id` or similar reference?
-                  // Historically `chat_messages` stores metadata, but `DatabaseService` manages the text separately?
-                  // Wait, `saveUnifiedRecord` saves text.
-                  // `chat_messages` table (lines 228-237 in ViewFile) has:
-                  // id, dialogue_id, group_id, speaker, participant_id, sequence_order.
-                  // `group_id` is the link to `words`/`sentences`.
-                  // `saveUnifiedRecord` creates a `timestamp` as `group_id` internally! 
-                  // BUT `saveUnifiedRecord` does not return the `group_id`.
-                  
-                  // PROBLEM: `saveUnifiedRecord` hides the `group_id`.
-                  // I need `group_id` to insert into `chat_messages`.
-                  // Modified Plan: Duplicate `saveUnifiedRecord` logic inline OR update `saveUnifiedRecord` to return ID/GroupId.
-                  // Since I can't easily change signature of a "Shared" method without checking usage...
-                  // Actually `saveUnifiedRecord` is in the same file. I can check usage.
-                  
-                  // Let's use a generated timestamp/groupId here explicitly and pass it?
-                  // `saveUnifiedRecord` doesn't accept groupId.
-                  
-                  // Workaround: Use `DatabaseService` logic inline for Dialogue messages to ensure we get the ID.
-                  // OR modify `saveUnifiedRecord` to return the `group_id`.
-                  
-                  // For now, I'll reproduce the timestamp logic here.
-                  final timestamp = DateTime.now().millisecondsSinceEpoch + j; // Ensure uniqueness
-                  
-                  await saveUnifiedRecord(
-                    text: sText,
-                    lang: sourceLang,
-                    translation: tText,
-                    targetLang: targetLang,
-                    type: msg['type'] as String? ?? 'sentence',
-                    pos: msg['pos'] as String?,
-                    formType: (msg['form_type'] ?? msg['formType']) as String?,
-                    style: msg['style'] as String?,
-                    root: msg['root'] as String?,
-                    note: (msg['note'] ?? msg['context']) as String?,
-                    tags: ['Dialogue', ...fileTags], // Tag as Dialogue
-                    txn: txn,
-                  );
-                  
-                  // WAIT. `saveUnifiedRecord` generates a NEW group_id every call.
-                  // If I want to link `chat_messages` to that record... I need that ID.
-                  // The current `saveUnifiedRecord` implementation returns `Future<void>`.
-                  
-                  // I MUST update `saveUnifiedRecord` to return `int` (group_id) OR handle the insert manually here.
-                  // Since I'm editing `DatabaseService.dart`, I can just insert manually here for Dialogues.
-                  // It's safer than modifying the shared method signature which might affect other calls (though likely few).
-                  
-                  // Manual Insert for Dialogue Message:
-                  final table = 'sentences'; // All chat is sentences
-                  final createdAt = DateTime.now().toIso8601String();
-                  
-                  // 1. Source
-                  await txn.insert(table, {
-                    'group_id': timestamp,
-                    'text': sText,
-                    'lang_code': sourceLang,
-                    'pos': msg['pos'] as String?,
-                    'form_type': (msg['form_type'] ?? msg['formType']) as String?,
-                    'style': msg['style'] as String?,
-                    'root': msg['root'] as String?,
-                    'note': (msg['note'] ?? msg['context']) as String?,
-                    'created_at': createdAt,
-                  }, conflictAlgorithm: ConflictAlgorithm.ignore);
-                  
-                  // 2. Target
-                  await txn.insert(table, {
-                    'group_id': timestamp,
-                    'text': tText,
-                    'lang_code': targetLang,
-                    'created_at': createdAt,
-                  }, conflictAlgorithm: ConflictAlgorithm.ignore);
-                  
-                  // 3. Translation Link
-                  // (Skip redundant unified link if we just rely on group_id? No, unified needs it for search pairings if query on one side)
-                  // Actually `saveUnifiedRecord` does insert `sentence_translations`. I should do that too.
-                  // But for Chat, we mostly use `chat_messages` + `group_id` lookup.
-                  // Let's invoke `saveUnifiedRecord` BUT we need the ID/Group ID.
-                  // Actually, why not just change `saveUnifiedRecord` to take optional `groupId`?
-                  // That requires editing 2 places (definition and here). SAFE.
-                  
-                  // Wait, I can't edit `saveUnifiedRecord` in THIS tool call easily if it's far away.
-                  // `saveUnifiedRecord` was at line 2081. This chunk is 1102-1300.
-                  // I cannot edit both in one `replace_file_content`.
-                  
-                  // Only option: Inline the logic here.
-                  
-                  // ... (Inline Logic Applied in ReplacementContent below)
-                  // Also: Insert into `chat_messages`.
-                  
+                  // Use the SAME groupId we just got from saveUnifiedRecord
                   await txn.insert('chat_messages', {
                     'dialogue_id': dId,
-                    'group_id': timestamp,
+                    'group_id': groupId,
                     'speaker': speakerName,
-                     // 'participant_id': ... (Resolve ID if available logic?)
                     'sequence_order': j,
-                    'created_at': createdAt,
+                    'created_at': DateTime.now().toIso8601String(),
                   });
-                  
-                  // Update: REMOVED `saveTranslationLinkWithMaterial` (Legacy)
                   
                   importedCount++;
                 } catch (e) {
-                   errors.add('Dialogue ${importedCount}: $e');
+                   errors.add('Dialogue $importedCount: $e');
                    skippedCount++;
                 }
               }
@@ -2254,7 +2158,7 @@ class DatabaseService {
   }
 
   /// 통합 테이블에 단어/문장 및 번역 연결 저장
-  static Future<void> saveUnifiedRecord({
+  static Future<int> saveUnifiedRecord({
     required String text,
     required String lang,
     required String translation,
@@ -2323,6 +2227,7 @@ class DatabaseService {
         }, conflictAlgorithm: ConflictAlgorithm.ignore);
       }
     }
+    return timestamp;
   }
 
   static Future<int> _getUnifiedIdStatic(dynamic db, String table, String text, String lang, String? note) async {

@@ -59,10 +59,10 @@ foreach ($sFile in $sourceFiles) {
         };
 
         # Inherit Metadata from Source Entry (linguistic context side)
-        if ($sE.pos) { $entry.Add("pos", $sE.pos) }
-        if ($sE.form_type) { $entry.Add("form_type", $sE.form_type) }
-        if ($sE.style) { $entry.Add("style", $sE.style) }
-        if ($sE.note) { $entry.Add("note", $sE.note) }
+        if ($sE.pos -and $sE.pos -ne "") { $entry.Add("pos", $sE.pos) }
+        if ($sE.form_type -and $sE.form_type -ne "") { $entry.Add("form_type", $sE.form_type) }
+        if ($sE.style -and $sE.style -ne "") { $entry.Add("style", $sE.style) }
+        if ($sE.note -and $sE.note -ne "") { $entry.Add("note", $sE.note) }
         if ($sE.tags) { $entry.Add("tags", $sE.tags) }
         
         # Dialogue specifics

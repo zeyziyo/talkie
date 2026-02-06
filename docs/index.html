@@ -539,12 +539,20 @@
                         source_text: s.text || s.source_text,
                         target_text: t.text || t.target_text,
                         type: s.type || t.type || typeCode,
-                        pos: t.pos || s.pos || targetData.pos || sourceData.pos || "",
-                        note: t.note || s.note || "",
-                        tags: [...new Set([...(s.tags || []), ...(t.tags || [])])],
-                        form_type: t.form_type || s.form_type || "",
-                        style: t.style || s.style || ""
+                        tags: [...new Set([...(s.tags || []), ...(t.tags || [])])]
                     };
+
+                    const note = t.note || s.note || "";
+                    if (note) entry.note = note;
+
+                    const pos = t.pos || s.pos || targetData.pos || sourceData.pos || "";
+                    if (pos) entry.pos = pos;
+
+                    const form_type = t.form_type || s.form_type || "";
+                    if (form_type) entry.form_type = form_type;
+
+                    const style = t.style || s.style || "";
+                    if (style) entry.style = style;
 
                     if (isDialogue) {
                         entry.speaker = s.speaker || t.speaker || (i % 2 === 0 ? "A" : "B");
@@ -561,9 +569,11 @@
                     subject: sourceData.subject || targetData.subject || subjectName,
                     source_language: sCode,
                     target_language: tCode,
-                    default_type: typeCode,
-                    pos: targetData.pos || sourceData.pos || ""
+                    default_type: typeCode
                 };
+
+                const commonPos = targetData.pos || sourceData.pos || "";
+                if (commonPos) finalJson.pos = commonPos;
 
                 // Use "dialogues" structure for dialogue files as planned
                 if (isDialogue) {
