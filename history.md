@@ -4,6 +4,22 @@
 
 ---
 
+## 📅 [2026-02-06 09:25:00] Import 후 즉시 표시 + 로컬 DB 영어 피벗 저장
+
+### ✅ 태스크 (Task)
+- [x] **Import 후 즉시 표시**: `loadStudyRecords()` 제거, `loadRecordsByTags()` 추가
+- [x] **로컬 DB 영어 피벗 저장**:
+  - `_englishText` 상태 변수 추가
+  - `translate` 함수에서 `result['englishText']` 저장
+  - `saveTranslation` 함수에서 Source/Target과 같은 `group_id`로 영어 피벗 저장
+
+### 📝 워크스루 (Walkthrough)
+- **원칙**: 서버 동기화는 백그라운드, 로컬 데이터는 즉시 처리
+- **예외**: 피벗 언어 검색(`findGroupIdWithPivot`)은 즉시 서버 통신 필요
+- **로컬 DB**: 영어 피벗도 함께 저장하여 나중에 다른 언어쌍 선택 시 연결 가능
+
+---
+
 ## 📅 [2026-02-06 09:00:00] Phase 76: 피벗 언어 기반 공유 사전 구현
 
 ### ✅ 태스크 (Task)

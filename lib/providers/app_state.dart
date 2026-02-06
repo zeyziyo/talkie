@@ -94,6 +94,7 @@ class AppState extends ChangeNotifier {
   // Mode 1 (검색) State
   String _sourceText = '';
   String _translatedText = '';
+  String _englishText = ''; // Phase 76: English pivot for shared dictionary
   String _sourceLang = 'ko';
   String _targetLang = 'en'; // Changed default from 'ja' to 'en'
   bool _isListening = false;
@@ -737,6 +738,8 @@ class AppState extends ChangeNotifier {
       }
 
       _translatedText = result['text'] as String;
+      // Phase 76: Store English pivot for shared dictionary linking
+      _englishText = result['englishText'] as String? ?? '';
       
       // Handle Note / Disambiguation
       final autoNote = result['note'] as String?;
@@ -893,6 +896,18 @@ class AppState extends ChangeNotifier {
           'is_memorized': 0, // 신규 저장 시 학습 미완료로 명시적 설정
           'created_at': createdAt,
         }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+        // Phase 76: English Pivot (for shared dictionary linking)
+        // Store English translation if not already source/target language
+        if (_englishText.isNotEmpty && _sourceLang != 'en' && _targetLang != 'en') {
+          await txn.insert(table, {
+            'group_id': timestamp,
+            'text': _englishText,
+            'lang_code': 'en',
+            'is_memorized': 0,
+            'created_at': createdAt,
+          }, conflictAlgorithm: ConflictAlgorithm.ignore);
+        }
 
         // 번역 연결 테이블
         if (_isWordMode) {
@@ -2442,8 +2457,9 @@ class AppState extends ChangeNotifier {
       
       // Refresh Local Study Materials (Dropdown)
       await loadStudyMaterials();
-      // Also refresh Supabase list (Review List) - though it might be empty until sync
-      await loadStudyRecords(); 
+      // Supabase sync (loadStudyRecords) is handled by BackgroundSyncService
+      // FIX: Load local SQLite records immediately for Mode 2/3 display
+      await loadRecordsByTags();
       notifyListeners();
       
       return importResult;
