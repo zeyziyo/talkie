@@ -14,6 +14,14 @@
 6. **엄격한 프로토콜**: 한 가지 코드 수정이나 추가 작업을 완료했을 때에 반드시 **문제의 원인과 조치 내용**을 개발자에게 설명을 한 다음 **허락을 받고** 다음 과정을 진행한다.
 7. **문서 관리**: `task.md`의 내용은 항상 **최신순(역순)**으로 정리한다. 새로운 태스크나 Phase는 항상 규칙 섹션 바로 아래에 가장 먼저 추가한다.
 
+- [x] Phase 76: Data Integration & AI Chat Optimization (데이터 통합 및 AI 채팅 고도화)
+    - [x] 학습 자료 병합 도구(`scripts/merge_materials.ps1`) 개발
+    - [x] DB 스키마 확장(`style` 컬럼 추가, Version 11)
+    - [x] AI 채팅 주제별 필터 드롭다운 UI 구현
+    - [x] 대화 임포트 후 목록 자동 새로고침 및 `user_id` 개인화 연동
+    - [x] 홈페이지 자료 생성 logic 및 가이드 문서 최신화
+    - [x] 5대 필수 문서(task, history, README, roadmap, future) 현행화
+
 - [/] Phase 75: Pre-deployment Quality Assurance (출시 전 품질 검증)
     - [x] `docs/PRE_DEPLOYMENT_CHECKLIST.md` 생성 및 보안 점검 결과/계획 통합
     - [x] 1. 보안 및 API 감사 (보안 강화 로직 반영 및 체크리스트 업데이트 완료)
