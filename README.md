@@ -78,11 +78,11 @@ It provides an intuitive UX for switching modes by swiping the screen. In partic
 * **Smart Save**: Auto-save chats with "Location (Date)" titles
 * **History Management**: Revisit past chats & edit titles
 
-- **AI 채팅 고도화 (Phase 5)**: 대화 목록 상단에 '주제별 드롭다운 필터'를 추가하여 대량의 대화를 효율적으로 관리 가능. 또한 로컬 DB 조회 시 `user_id` 연동을 강화하여 개인화 보안 고도화.
-- **임포트 동기화 개선**: 대화 자료 JSON 임포트 완료 즉시 목록이 자동으로 갱신되도록 상태 동기화 로직 보강.
+- **대화 임포트 정합성 해결 (Phase 76)**: 대화 자료 임포트 시 `group_id` 매핑 불일치로 인해 내용이 보이지 않던 버그를 정밀 매핑 로직으로 해결.
+- **병합 JSON 최적화**: 홈페이지(`index.html`) 및 파워쉘 스크립트에서 불필요한 빈 메타데이터 필드를 조건부로 제거하여 데이터 효율성 극대화.
 - **학습 자료 병합 도구**: `scripts/merge_materials.ps1`을 통해 여러 언어쌍의 자료를 하나의 JSON으로 병합하고 `style`(어조) 필드를 지원하도록 DB 확장.
 
-## 최근 업데이트 (Recent Updates - 2026-02-05)
+## 최근 업데이트 (Recent Updates - 2026-02-07)
 
 - **공지 시스템 교체 (Phase 73)**: 상단 오버레이 알림(`_statusMessage`)을 제거하고 다이얼로그(`showDialog`) 및 스낵바(`SnackBar`) 기반의 표준 알림 시스템으로 전면 교체하여 안정성 및 UI 일관성 확보.
 - **연습 모드 초기화 기능**: Mode 3(발음 연습) 카드의 대기 및 결과 화면에 '초기화(Reset)' 버튼을 추가하여 연습 상태를 즉시 리셋할 수 있도록 개선.

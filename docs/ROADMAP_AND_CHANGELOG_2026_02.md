@@ -5,19 +5,20 @@
 ### 📈 진행 상태 (Status)
 | 단계 | 항목 | 상태 | 완료일 | 비고 |
 | :--- | :--- | :---: | :---: | :--- |
-| **Phase 76** | **데이터 통합 및 AI 채팅 고도화** | **완료** | 02.06 | Merge 툴 및 UI 필터링 구현 |
+| **Phase 76** | **데이터 통합 및 AI 채팅 고도화** | **완료** | 02.07 | Merge 툴 및 UI 필터링 구현 |
 | 76.1 | 학습 자료 병합(`merge_materials.ps1`) | 완료 | 02.06 | 다국어 JSON 스택 통합 |
 | 76.2 | AI 채팅 드롭다운 필터 및 DB 개인화 | 완료 | 02.06 | 주제별 필터링 및 user_id 연동 |
+| 76.3 | 대화 임포트 정합성 및 JSON 최적화 | 완료 | 02.07 | group_id 매핑 해결 및 빈 필드 제거 |
 
 ---
 
 ## 📝 변경 이력 (Changelog)
 
-### [2026-02-06] Phase 76: 데이터 통합 및 AI 채팅 고도화
-- **[Feature] 학습 자료 병합 도구**: `scripts/merge_materials.ps1` 개발로 다국어 학습 자료 통합 관리 기반 마련.
-- **[Feature] AI 채팅 드롭다운 필터**: `ChatHistoryScreen`에 주제별 필터링 UI 도입하여 대화 관리 효율성 증대.
-- **[Fix] 임포트 동기화 버그**: 자료 임포트 후 목록이 갱신되지 않던 문제 해결 및 `user_id` 개인화 연동 강화.
-- **[DB] 스키마 확장**: `words`/`sentences` 테이블에 `style` 컬럼 추가 (DB Version 11).
+### [2026-02-07] Phase 76: 데이터 통합 및 AI 채팅 고도화 (추가 조치)
+- **[Fix] 대화 임포트 정합성**: `saveUnifiedRecord` 반환값을 활용하여 `chat_messages`와 `sentences` 간의 `group_id` 연결을 완벽하게 복구.
+- **[Optimization] JSON 병합 구조**: 홈페이지(`index.html`) 및 파워쉘 병합 스크립트에서 값이 없는 `pos`, `style` 등 불필요한 필드 자동 제거.
+- **[Feature] 학습 자료 병합 도구**: `scripts/merge_materials.ps1` 개발 및 다국어 JSON 스택 통합 기반 마련.
+- **[Feature] AI 채팅 드롭다운 필터**: `ChatHistoryScreen`에 주제별 필터링 UI 도입.
 
 ### [2026-02-05] Phase 75: 출시 전 품질 검증 진입
 - **[Feature] L10n 자동화 검증 스크립트**: `scripts/verify_l10n.py` 구현하여 80개 언어 리소스 무결성 확보.
