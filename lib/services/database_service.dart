@@ -1219,7 +1219,10 @@ class DatabaseService {
                   note: (entry['note'] ?? entryMeta['note'] ?? entry['context']) as String?,
                   tags: allTags.isNotEmpty ? allTags : null,
                   txn: txn,
-                );
+                  // Phase 77: Pivot Strategy Params
+                  subject: subject,
+                  sequenceOrder: i, 
+                  );
                 
                 // REMOVED: saveTranslationLinkWithMaterial (Legacy)
                 
@@ -2310,11 +2313,45 @@ class DatabaseService {
     String? note,
     List<String>? tags,
     Transaction? txn,
+    // Phase 77: Pivot Strategy (Smart Sync)
+    String? subject,
+    int? sequenceOrder,
   }) async {
     final executor = txn ?? await database;
-    final timestamp = DateTime.now().millisecondsSinceEpoch;
-    final createdAt = DateTime.now().toIso8601String();
     final table = type == 'word' ? 'words' : 'sentences';
+    
+    // 0. Determine Group ID (Pivot Strategy)
+    int groupId = DateTime.now().millisecondsSinceEpoch;
+    
+    if (subject != null && sequenceOrder != null) {
+      // Check for existing group ID for this Subject + Sequence (from any language)
+      // Implicitly, the first imported language sets the ID.
+      try {
+        final existing = await executor.rawQuery('''
+          SELECT w.group_id 
+          FROM item_tags t 
+          JOIN $table w ON t.item_id = w.id 
+          WHERE t.tag = ? 
+          ORDER BY w.created_at ASC 
+          LIMIT 1 OFFSET ?
+        ''', [subject, sequenceOrder]);
+        
+        if (existing.isNotEmpty) {
+           final foundId = existing.first['group_id'] as int;
+           // Verify if this group_id is valid? Assumed yes.
+           if (foundId > 0) {
+             groupId = foundId;
+             print('[DB] Pivot Sync: Reusing Group ID $groupId for "$subject" sequence $sequenceOrder');
+           }
+        }
+      } catch (e) {
+        print('[DB] Pivot Sync Error: $e');
+      }
+    }
+
+    final timestamp = groupId; // Use determined group_id
+    final createdAt = DateTime.now().toIso8601String();
+    // final table = type == 'word' ? 'words' : 'sentences'; // Already defined above
 
     // 1. Source 저장
     final sourceId = await executor.insert(table, {

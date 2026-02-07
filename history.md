@@ -30,6 +30,7 @@
 - **Fix**: `_showOnlineLibraryDialog` replacing calling deprecated method.
 - **Fix**: `DialogueGroup` import added & missing `userId` parameter supplied.
 - **Fix**: Restored `loadStudyMaterials` logic to fix empty content bug in Mode 2.
+- **Fix**: Implemented **Pivot Strategy (Smart Sync)** in `saveUnifiedRecord` to link independent language imports by Subject/Sequence.
 
 ## 📅 2026-02-08: Hotfix - Build Error Resolution (빌드 오류 수정)
  (Fix Build Logic)
