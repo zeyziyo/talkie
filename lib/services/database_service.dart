@@ -1253,24 +1253,49 @@ class DatabaseService {
               final dPersona = (dMap['persona'] ?? dMeta['persona']) as String? ?? 'Partner';
               final dTopic = (dMap['topic'] ?? dMeta['topic']) as String?;
               
-              // Generate ID
-              final dId = '${DateTime.now().millisecondsSinceEpoch}_${importedCount}';
-              lastDialogueId = dId;
-
-              // Insert Dialogue Group
-              await insertDialogueGroup(
-                id: dId,
-                userId: userId, // Pass incoming userId
-                title: dTitle,
-                persona: dPersona,
-                note: dTopic, // Map topic to note if available
-                createdAt: fileCreatedAt,
-                txn: txn,
+              // Phase 75.9: Smart Merge - Find existing dialogue group by title
+              final existingGroups = await txn.query(
+                'dialogue_groups',
+                where: 'title = ?',
+                whereArgs: [dTitle],
+                limit: 1,
               );
 
-              // Phase 66: Insert Participants for this Dialogue
+              String dId;
+              if (existingGroups.isNotEmpty) {
+                dId = existingGroups.first['id'] as String;
+                lastDialogueId = dId;
+                print('[DB] Smart Merge: Found existing dialogue group "$dTitle" (ID: $dId)');
+              } else {
+                // Generate new ID if not found
+                dId = '${DateTime.now().millisecondsSinceEpoch}_${importedCount}';
+                lastDialogueId = dId;
+
+                await insertDialogueGroup(
+                  id: dId,
+                  userId: userId, 
+                  title: dTitle,
+                  persona: dPersona,
+                  note: dTopic,
+                  createdAt: fileCreatedAt,
+                  txn: txn,
+                );
+              }
+
+              // Phase 66/75.9: Insert or Link Participants
               final dParticipants = dMap['participants'];
-              final Map<String, String> nameToIdMap = {}; // Local map to link messages to generated IDs
+              final Map<String, String> nameToIdMap = {}; 
+              
+              // Load existing participants for matching
+              final existingParticipants = await txn.query(
+                'dialogue_participants',
+                where: 'dialogue_id = ?',
+                whereArgs: [dId],
+              );
+              final Map<String, String> existingNameToId = {
+                for (var p in existingParticipants) (p['name'] as String): (p['id'] as String)
+              };
+
               if (dParticipants is List) {
                 for (var pRef in dParticipants) {
                   Map<String, dynamic>? pData;
@@ -1281,19 +1306,29 @@ class DatabaseService {
                   }
                   
                   if (pData != null) {
-                    final pId = const Uuid().v4();
                     final pName = pData['name'] ?? 'Unknown';
-                    nameToIdMap[pName] = pId; // Store mapping
-
-                    await txn.insert('dialogue_participants', {
-                      'id': pId,
-                      'dialogue_id': dId,
-                      'name': pName,
-                      'role': pData['role'] ?? 'user',
-                      'gender': pData['gender'],
-                      'lang_code': pData['lang_code'],
-                      'created_at': DateTime.now().toIso8601String(),
-                    });
+                    
+                    if (existingNameToId.containsKey(pName)) {
+                      nameToIdMap[pName] = existingNameToId[pName]!;
+                      // Optionally update metadata if new file has more info
+                      await txn.update('dialogue_participants', {
+                        if (pData['gender'] != null) 'gender': pData['gender'],
+                        if (pData['lang_code'] != null) 'lang_code': pData['lang_code'],
+                        if (pData['role'] != null) 'role': pData['role'],
+                      }, where: 'id = ?', whereArgs: [existingNameToId[pName]]);
+                    } else {
+                      final pId = const Uuid().v4();
+                      nameToIdMap[pName] = pId;
+                      await txn.insert('dialogue_participants', {
+                        'id': pId,
+                        'dialogue_id': dId,
+                        'name': pName,
+                        'role': pData['role'] ?? 'user',
+                        'gender': pData['gender'],
+                        'lang_code': pData['lang_code'],
+                        'created_at': DateTime.now().toIso8601String(),
+                      });
+                    }
                   }
                 }
               }
@@ -1312,42 +1347,80 @@ class DatabaseService {
                   
                   if (msg['speaker'] is String) {
                     speakerName = msg['speaker'];
-                    // Try to resolve name from ID if it matches a participant
                     if (participantMap.containsKey(speakerName)) {
                       speakerName = participantMap[speakerName]!['name'];
                     }
-                    // Link to generated participant ID
                     participantId = nameToIdMap[speakerName];
                   }
 
-                  if (sText == null || tText == null || sText.trim().isEmpty || tText.trim().isEmpty) {
+                  // If only one text provided, treat it as source
+                  final primaryText = sText ?? tText;
+                  if (primaryText == null || primaryText.trim().isEmpty) {
                     skippedCount++;
                     continue;
                   }
 
-                  final groupId = await saveUnifiedRecord(
-                    text: sText,
-                    lang: sourceLang,
-                    translation: tText,
-                    targetLang: targetLang,
-                    type: msg['type'] as String? ?? 'sentence',
-                    pos: msg['pos'] as String?,
-                    formType: (msg['form_type'] ?? msg['formType']) as String?,
-                    style: msg['style'] as String?,
-                    root: msg['root'] as String?,
-                    note: (msg['note'] ?? msg['context']) as String?,
-                    tags: ['Dialogue', ...fileTags],
-                    txn: txn,
+                  // Phase 75.9: Smart Merge - Find existing message by sequence_order
+                  final existingMsgs = await txn.query(
+                    'chat_messages',
+                    where: 'dialogue_id = ? AND sequence_order = ?',
+                    whereArgs: [dId, j],
+                    limit: 1,
                   );
-                  
-                  await txn.insert('chat_messages', {
-                    'dialogue_id': dId,
-                    'group_id': groupId,
-                    'speaker': speakerName,
-                    'participant_id': participantId, // Correctly link the ID
-                    'sequence_order': j,
-                    'created_at': DateTime.now().toIso8601String(),
-                  });
+
+                  int groupId;
+                  if (existingMsgs.isNotEmpty) {
+                    groupId = existingMsgs.first['group_id'] as int;
+                    // Add new language text to existing unified record group
+                    await _addLanguageToUnifiedRecord(
+                      groupId: groupId,
+                      text: primaryText,
+                      lang: (sText != null) ? sourceLang : targetLang,
+                      type: msg['type'] as String? ?? 'sentence',
+                      pos: msg['pos'] as String?,
+                      formType: (msg['form_type'] ?? msg['formType']) as String?,
+                      style: msg['style'] as String?,
+                      root: msg['root'] as String?,
+                      note: (msg['note'] ?? msg['context']) as String?,
+                      txn: txn,
+                    );
+                    
+                    // Also handle target_text if provided (Smart Merge of translations)
+                    if (sText != null && tText != null && sText != tText) {
+                      await _addLanguageToUnifiedRecord(
+                        groupId: groupId,
+                        text: tText,
+                        lang: targetLang,
+                        type: msg['type'] as String? ?? 'sentence',
+                        txn: txn,
+                      );
+                    }
+                  } else {
+                    // Create new record
+                    groupId = await saveUnifiedRecord(
+                      text: sText ?? tText!,
+                      lang: (sText != null) ? sourceLang : targetLang,
+                      translation: tText ?? sText!,
+                      targetLang: (tText != null) ? targetLang : sourceLang,
+                      type: msg['type'] as String? ?? 'sentence',
+                      pos: msg['pos'] as String?,
+                      formType: (msg['form_type'] ?? msg['formType']) as String?,
+                      style: msg['style'] as String?,
+                      root: msg['root'] as String?,
+                      note: (msg['note'] ?? msg['context']) as String?,
+                      tags: ['Dialogue', ...fileTags],
+                      txn: txn,
+                    );
+                    
+                    await txn.insert('chat_messages', {
+                      'dialogue_id': dId,
+                      'group_id': groupId,
+                      'speaker': speakerName,
+                      'participant_id': participantId,
+                      'sequence_order': j,
+                      'created_at': DateTime.now().toIso8601String(),
+                    });
+                  }
                   
                   importedCount++;
                 } catch (e) {
@@ -1746,12 +1819,16 @@ class DatabaseService {
   }
 
   /// Get all translations for a specific dialogue
-  static Future<List<Map<String, dynamic>>> getRecordsByDialogueId(String dialogueId) async {
+  static Future<List<Map<String, dynamic>>> getRecordsByDialogueId(
+    String dialogueId, {
+    String? sourceLang,
+    String? targetLang,
+  }) async {
     final db = await database;
     
     // Join chat_messages with dialogue_participants to get metadata (gender, lang_code)
     final List<Map<String, dynamic>> messages = await db.rawQuery('''
-      SELECT m.*, p.gender, p.lang_code as participant_lang
+      SELECT m.*, p.gender, p.lang_code as participant_lang, p.name as p_name
       FROM chat_messages m
       LEFT JOIN dialogue_participants p ON m.participant_id = p.id
       WHERE m.dialogue_id = ?
@@ -1763,7 +1840,8 @@ class DatabaseService {
     for (var msg in messages) {
       final groupId = msg['group_id'] as int;
       
-      // Get all sentences in this group (typically 2: one per language)
+      // Phase 75.9: Dynamic Language Extraction
+      // Get all sentences in this group
       final groupSentences = await db.query(
         'sentences',
         where: 'group_id = ?',
@@ -1771,26 +1849,35 @@ class DatabaseService {
       );
       
       if (groupSentences.isNotEmpty) {
-        // Find best source/target based on context or just use them as is.
-        // For AI Chat display, we assume the first is 'primary' or they are a pair.
-        // We'll mimic the legacy structure expected by ChatScreen.
-        
-        final source = groupSentences.first;
-        // Find a matching translation if exists, otherwise use the second entry if available
-        final target = groupSentences.length > 1 ? groupSentences[1] : source;
+        Map<String, dynamic>? source;
+        Map<String, dynamic>? target;
+
+        // If languages are specified, find exact matches
+        if (sourceLang != null) {
+          source = groupSentences.where((s) => s['lang_code'] == sourceLang).firstOrNull;
+        }
+        if (targetLang != null) {
+          target = groupSentences.where((s) => s['lang_code'] == targetLang).firstOrNull;
+        }
+
+        // Fallback logic
+        source ??= groupSentences.first;
+        target ??= groupSentences.length > 1 ? (groupSentences[1]['lang_code'] != source['lang_code'] ? groupSentences[1] : groupSentences.firstWhere((s) => s['id'] != source!['id'], orElse: () => groupSentences.first)) : source;
 
         results.add({
           'id': msg['id'],
           'group_id': groupId,
           'source_text': source['text'],
           'target_text': target['text'],
-           'speaker': msg['speaker'],
+          'source_lang': source['lang_code'],
+          'target_lang': target['lang_code'],
+          'speaker': msg['speaker'] ?? msg['p_name'],
           'participant_id': msg['participant_id'],
-          'gender': msg['gender'], // Added from JOIN
-          'participant_lang': msg['participant_lang'], // Added from JOIN
+          'gender': msg['gender'], 
+          'participant_lang': msg['participant_lang'], 
           'sequence_order': msg['sequence_order'],
           'created_at': msg['created_at'],
-          'note': source['note'],
+          'note': source['note'] ?? target['note'],
         });
       }
     }
@@ -1804,9 +1891,7 @@ class DatabaseService {
           orderBy: 'sequence_order ASC',
         );
         for (var t in legacyTranslations) {
-           // ... (legacy logic if needed, but we already have it in the original code above)
-           // For now, if we migrated correctly, chat_messages should have been filled? 
-           // Wait, I didn't add migration for chat_messages data.
+           // ... legacy logic skipped for brevity as we use Unified primarily
         }
     }
 
@@ -2322,6 +2407,47 @@ class DatabaseService {
       whereArgs: [groupId]
     );
     print('[DB] Toggled is_memorized to $status for group $groupId in table $table');
+  }
+
+  /// Phase 75.9: 통합 테이블에 특정 언어 버전 추가
+  static Future<void> _addLanguageToUnifiedRecord({
+    required int groupId,
+    required String text,
+    required String lang,
+    required String type,
+    String? pos,
+    String? formType,
+    String? style,
+    String? root,
+    String? note,
+    Transaction? txn,
+  }) async {
+    final executor = txn ?? await database;
+    final table = type == 'word' ? 'words' : 'sentences';
+    final createdAt = DateTime.now().toIso8601String();
+
+    // Check if lang already exists for this group
+    final existing = await executor.query(
+      table,
+      where: 'group_id = ? AND lang_code = ?',
+      whereArgs: [groupId, lang],
+      limit: 1,
+    );
+
+    if (existing.isEmpty) {
+      await executor.insert(table, {
+        'group_id': groupId,
+        'text': text,
+        'lang_code': lang,
+        'pos': pos,
+        'form_type': formType,
+        'style': style,
+        'root': root,
+        'note': note,
+        'created_at': createdAt,
+      });
+      print('[DB] Smart Merge: Added "$lang" version to group $groupId');
+    }
   }
 }
 

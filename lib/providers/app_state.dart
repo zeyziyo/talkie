@@ -2776,8 +2776,12 @@ class AppState extends ChangeNotifier {
     _activeDialogueLocation = group.location;
     _currentChatLocation = group.location ?? '';
     
-    // Get records from local DB
-    var records = await DatabaseService.getRecordsByDialogueId(group.id);
+    // Get records from local DB with current language settings (Phase 75.9)
+    var records = await DatabaseService.getRecordsByDialogueId(
+      group.id,
+      sourceLang: _sourceLang,
+      targetLang: _targetLang,
+    );
     
     // Cross-device Sync: If local is empty, try fetching from Personal Cloud
     if (records.isEmpty) {
@@ -2809,7 +2813,11 @@ class AppState extends ChangeNotifier {
           });
         }
         // Reload from local after sync
-        records = await DatabaseService.getRecordsByDialogueId(group.id);
+        records = await DatabaseService.getRecordsByDialogueId(
+          group.id,
+          sourceLang: _sourceLang,
+          targetLang: _targetLang,
+        );
       }
     }
 
@@ -2836,7 +2844,11 @@ class AppState extends ChangeNotifier {
     notifyListeners();
     
     try {
-      final records = await DatabaseService.getRecordsByDialogueId(_activeDialogueId!);
+      final records = await DatabaseService.getRecordsByDialogueId(
+        _activeDialogueId!,
+        sourceLang: _sourceLang,
+        targetLang: _targetLang,
+      );
       
       // Convert to format required by service
       final history = records.map((r) => {

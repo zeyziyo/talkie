@@ -6,7 +6,7 @@
 | 단계 | 항목 | 상태 | 완료일 | 비고 |
 | :--- | :--- | :---: | :---: | :--- |
 | **Phase 76** | **데이터 통합 및 AI 채팅 고도화** | **완료** | 02.07 | Merge 툴 및 UI 필터링 구현 |
-| 76.1 | 학습 자료 병합(`merge_materials.ps1`) | 완료 | 02.06 | 다국어 JSON 스택 통합 |
+| 76.1 | 온디바이스 스마트 매핑(On-Device Mapping) | 완료 | 02.07 | 병합 스크립트 탈피 및 동적 데이터 통합 |
 | 76.2 | AI 채팅 드롭다운 필터 및 DB 개인화 | 완료 | 02.06 | 주제별 필터링 및 user_id 연동 |
 | 76.3 | 대화 임포트 정합성 및 JSON 최적화 | 완료 | 02.07 | group_id 매핑 해결 및 빈 필드 제거 |
 | [x] **Phase 75.4** | **AI 채팅 TTS 엔진 고도화** | **완료** | 02.07 | ✅ |
@@ -24,9 +24,10 @@
 - **[Terminology] 용어 정합성**: Drawer 메뉴명과 AppBar 타이틀 간의 번역 일관성 전수 조사 및 수정.
 
 ### [2026-02-07] Phase 76: 데이터 통합 및 AI 채팅 고도화 (추가 조치)
+- **[Feature] 온디바이스 스마트 병합(Smart Merge)**: 개별 언어 JSON 임포트 시 동일 주제(`subject`)를 감지하여 다국어 텍스트를 기기 내에서 자동 매핑하는 엔진 구현.
+- **[Feature] 채팅 UI 다국어 연동**: `ChatScreen`에서 글로벌 언어 스위치 조작 시 대화 내용이 실시간으로 해당 언어로 갱신되도록 개선.
 - **[Fix] 대화 임포트 정합성**: `saveUnifiedRecord` 반환값을 활용하여 `chat_messages`와 `sentences` 간의 `group_id` 연결을 완벽하게 복구.
-- **[Optimization] JSON 병합 구조**: 홈페이지(`index.html`) 및 파워쉘 병합 스크립트에서 값이 없는 `pos`, `style` 등 불필요한 필드 자동 제거.
-- **[Feature] 학습 자료 병합 도구**: `scripts/merge_materials.ps1` 개발 및 다국어 JSON 스택 통합 기반 마련.
+- **[Optimization] JSON 병합 구조**: 홈페이지(`index.html`) 및 임포트 로직에서 값이 없는 불필요한 필드 자동 제거.
 - **[Feature] AI 채팅 드롭다운 필터**: `ChatHistoryScreen`에 주제별 필터링 UI 도입.
 
 ### [2026-02-05] Phase 75: 출시 전 품질 검증 진입

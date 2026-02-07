@@ -38,6 +38,8 @@ class _ChatScreenState extends State<ChatScreen> {
   
   bool _isPartnerMode = false; // Toggle for Real Person Chat
   bool _isPartnerTurn = false; // For Mic Logic (True = Listen in Target Lang)
+  String? _lastSourceLang; // Phase 75.9
+  String? _lastTargetLang; // Phase 75.9
 
   @override
   void initState() {
@@ -54,8 +56,12 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Future<void> _loadHistory() async {
-    final history = await DatabaseService.getRecordsByDialogueId(widget.initialDialogue!.id);
     final appState = Provider.of<AppState>(context, listen: false);
+    final history = await DatabaseService.getRecordsByDialogueId(
+      widget.initialDialogue!.id,
+      sourceLang: appState.sourceLang,
+      targetLang: appState.targetLang,
+    );
     
     // Phase 70: Ensure Participants Exist for Legacy Messages
     final Set<String> speakers = history.map((m) => m['speaker'] as String? ?? 'Unknown').toSet();
@@ -560,6 +566,13 @@ class _ChatScreenState extends State<ChatScreen> {
     final appState = Provider.of<AppState>(context);
     final l10n = AppLocalizations.of(context)!;
     
+    // Phase 75.9: Global language shift check for Dynamic Mapping
+    if (_lastSourceLang != appState.sourceLang || _lastTargetLang != appState.targetLang) {
+      _lastSourceLang = appState.sourceLang;
+      _lastTargetLang = appState.targetLang;
+      Future.microtask(() => _loadHistory());
+    }
+
     return Scaffold(
       appBar: AppBar(
             title: Column(
