@@ -1253,26 +1253,22 @@ class DatabaseService {
               final dPersona = (dMap['persona'] ?? dMeta['persona']) as String? ?? 'Partner';
               final dTopic = (dMap['topic'] ?? dMeta['topic']) as String?;
               
-              // Phase 75.9: Smart Merge - Find existing dialogue group by title
-              final existingGroups = await txn.query(
+              // Phase 75.9: Smart Sync - Find existing dialogue group by title
+              final existingGroup = await txn.query(
                 'dialogue_groups',
-                where: 'title = ?',
-                whereArgs: [dTitle],
+                where: 'title = ? AND user_id = ?',
+                whereArgs: [dTitle, userId], // Assuming userId is currentUserId
                 limit: 1,
               );
 
-              String dId;
-              if (existingGroups.isNotEmpty) {
-                dId = existingGroups.first['id'] as String;
-                lastDialogueId = dId;
-                print('[DB] Smart Merge: Found existing dialogue group "$dTitle" (ID: $dId)');
+              int? dId;
+              if (existingGroup.isNotEmpty) {
+                dId = existingGroup.first['id'] as int;
+                lastDialogueId = dId.toString(); // Keep lastDialogueId as String for return type
+                print('[DB] Smart Sync: Found existing dialogue group "$dTitle" (ID: $dId)');
               } else {
                 // Generate new ID if not found
-                dId = '${DateTime.now().millisecondsSinceEpoch}_${importedCount}';
-                lastDialogueId = dId;
-
-                await insertDialogueGroup(
-                  id: dId,
+                dId = await insertDialogueGroup(
                   userId: userId, 
                   title: dTitle,
                   persona: dPersona,
@@ -1280,6 +1276,7 @@ class DatabaseService {
                   createdAt: fileCreatedAt,
                   txn: txn,
                 );
+                lastDialogueId = dId.toString();
               }
 
               // Phase 66/75.9: Insert or Link Participants
@@ -1395,8 +1392,8 @@ class DatabaseService {
                     continue;
                   }
 
-                  // Phase 75.9: Smart Merge - Find existing message by sequence_order
-                  final existingMsgs = await txn.query(
+                  // Phase 75.9: Smart Sync - Find existing message by sequence_order
+                  final existingMessage = await txn.query(
                     'chat_messages',
                     where: 'dialogue_id = ? AND sequence_order = ?',
                     whereArgs: [dId, j],
@@ -1404,8 +1401,8 @@ class DatabaseService {
                   );
 
                   int groupId;
-                  if (existingMsgs.isNotEmpty) {
-                    groupId = existingMsgs.first['group_id'] as int;
+                  if (existingMessage.isNotEmpty) {
+                    groupId = existingMessage.first['group_id'] as int;
                     // Add new language text to existing unified record group
                     await _addLanguageToUnifiedRecord(
                       groupId: groupId,
@@ -2481,7 +2478,7 @@ class DatabaseService {
         'note': note,
         'created_at': createdAt,
       });
-      print('[DB] Smart Merge: Added "$lang" version to group $groupId');
+      print('[DB] Smart Sync: Added "$lang" version to group $groupId');
     }
   }
 }

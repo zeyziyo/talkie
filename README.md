@@ -80,9 +80,6 @@ It provides an intuitive UX for switching modes by swiping the screen. In partic
 
 - **온라인 자료 관리 자동화 (Phase 75.9 Automation)**: 사용자가 `docs/materials`에 파일만 업로드하면 GitHub Actions가 인덱스(`materials_v3.json`)를 자동으로 갱신하는 체계를 구축했습니다. (2026-02-07)
 - **온라인 직접 임포트 고도화 (Phase 75.9)**: 서버 인덱스를 통해 최신 학습 자료를 앱 내에서 직접 실시간 임포트하는 체계를 구축했습니다. 과거의 복잡한 오프라인 병합 과정 없이도 다국어 파일이 지능적으로 통합되며, 화자 메타데이터 보완 로직으로 '콩글리쉬' 발음 문제를 근본적으로 해결했습니다. (2026-02-07)
-- **공지 시스템 교체 (Phase 73)**: 상단 오버레이 알림(`_statusMessage`)을 제거하고 다이얼로그(`showDialog`) 및 스낵바(`SnackBar`) 기반의 표준 알림 시스템으로 전면 교체하여 안정성 및 UI 일관성 확보.
-- **공지 시스템 교체 (Phase 73)**: 상단 오버레이 알림(`_statusMessage`)을 제거하고 다이얼로그(`showDialog`) 및 스낵바(`SnackBar`) 기반의 표준 알림 시스템으로 전면 교체하여 안정성 및 UI 일관성 확보.
-- **연습 모드 초기화 기능**: Mode 3(발음 연습) 카드의 대기 및 결과 화면에 '초기화(Reset)' 버튼을 추가하여 연습 상태를 즉시 리셋할 수 있도록 개선.
 - **가져오기(Import) 알림 개선**: JSON 파일 가져오기 실패 시 상세 에러 내용을 다이얼로그로 표시하여 문제 진단을 용이하게 함.
 
 ## 최근 업데이트 (Recent Updates - 2026-02-03)
@@ -133,7 +130,7 @@ Talkie now fully supports **80 languages** worldwide:
 - **기타 (Others)**: **Amharic, Nepali, Pashto... (and more)**
 
 > [!TIP]
-> 홈페이지(` Zeyziyo/talkie`)에서 위 모든 언어에 대한 고품질 학습 자료(JSON)를 무료로 다운로드하여 앱에 가져올 수 있습니다.
+> 홈페이지(`Zeyziyo/talkie`)에서 지원 언어별 학습 자료 카탈로그를 확인하고, 앱 내 **온라인 자료실(Mode 2/3 Import > Online)**에서 직접 임포트하여 즉시 학습을 시작할 수 있습니다.
 
 ## 기술 스택 (Tech Stack)
 

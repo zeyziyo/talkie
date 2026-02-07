@@ -15,6 +15,17 @@
 
 ---
 
+### [Phase 75.9] Cleanup: Removed Legacy Merging Logic (2026-02-07 19:10)
+- **Problem**: Persistent "merged files" and legacy merge scripts caused user confusion and project bloat.
+- **Action Taken**:
+    - **Deleted** `scripts/merge_materials.ps1` and `docs/merges` folder.
+    - **Refactored** `docs/index.html`: Removed browser-side JSON merging/downloading. Redesigned the UI to guide users to "Direct Online Import" within the app.
+    - **Refactored** `lib/services/database_service.dart`: Renamed `Smart Merge` logs to `Smart Sync` to avoid terminological confusion.
+    - **Updated** `README.md`: Clarified that materials are imported directly from the app, not downloaded as merged files.
+- **Result**: Simplified project architecture and eliminated unintended file creation, ensuring the "Direct Online Import" is the primary and only data flow.
+
+---
+
 ## 📅 [2026-02-07 18:30:00] 온라인 자료 인덱스 자동화 (Management Automation)
 
 ### ✅ 태스크 (Task)

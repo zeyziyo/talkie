@@ -275,11 +275,10 @@
     </header>
 
     <section id="downloads">
-        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">Custom Study Materials</h2>
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">Explore Study Materials</h2>
         <p style="text-align: center; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-            Enter your <strong>Mother Tongue</strong> and <strong>Target Language</strong> to generate a customized
-            study file.
-            <br>Download the merged JSON file and import it directly into Talkie (Mode 2/3).
+            Talkie offers a variety of built-in materials. 
+            <br>You can browse available materials here and import them <strong>directly</strong> within the app (Mode 2/3 Online Tab).
         </p>
 
         <div class="search-container">
@@ -291,16 +290,21 @@
                     <option value="">목표 언어 선택 (Target Language)</option>
                 </select>
             </div>
-            <button onclick="findMaterials()" class="find-button">Find & Generate Materials</button>
+            <button onclick="findMaterials()" class="find-button">Explore Available Materials</button>
             <div id="errorBox" class="error-message"></div>
         </div>
 
         <div id="resultsArea" class="result-container">
-            <h3 style="text-align: center;">Available Materials</h3>
+            <h3 style="text-align: center;">Library Catalogs</h3>
             <p style="text-align: center; color: #666;" id="pairDisplay"></p>
 
             <div class="materials-grid" id="materialsGrid">
                 <!-- Javascript will populate this -->
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: #e8f0fe; border-radius: 16px;">
+                <h4 style="color: var(--primary-color); margin-top: 0;">How to Import?</h4>
+                <p>Open <strong>Talkie App</strong> &rarr; Go to <strong>Mode 2 or 3</strong> &rarr; Tap <strong>Import Icon (⬇️)</strong> &rarr; Select <strong>'Online'</strong> Tab &rarr; Pick your material!</p>
             </div>
         </div>
     </section>
@@ -315,14 +319,13 @@
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🌐</div>
-                <h3>Instant Translation</h3>
-                <p>Support for 40+ languages. Speak in your native tongue and learn how to say it in your target
-                    language instantly.</p>
+                <h3>Direct Online Import</h3>
+                <p>No more manual file merging. Browse and import materials directly from our server within the app.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📚</div>
                 <h3>Smart Study Materials</h3>
-                <p>Import customized JSON files to practice vocabulary and sentences effectively.</p>
+                <p>Import customized JSON files or use our library to practice vocabulary and sentences effectively.</p>
             </div>
         </div>
     </section>
@@ -437,10 +440,10 @@
         };
 
         const materialsMap = [
-            { id: 'verbs_1', name: 'Basic Verbs (100)', path: 'words/verbs_1.json' },
-            { id: 'nouns_1', name: 'Basic Nouns (50)', path: 'words/nouns_1.json' },
-            { id: 'greetings_1', name: 'Essential Greetings', path: 'sentences/greetings_1.json' },
-            { id: 'first_meeting', name: 'Dialogue: First Meeting', path: 'dialogues/first_meeting.json' }
+            { id: 'verbs_1', name: 'Basic Verbs (100)', category: 'Words' },
+            { id: 'nouns_1', name: 'Basic Nouns (50)', category: 'Words' },
+            { id: 'greetings_1', name: 'Essential Greetings', category: 'Sentences' },
+            { id: 'first_meeting', name: 'First Meeting', category: 'Dialogue' }
         ];
 
         const getFlag = (langCode) => {
@@ -479,7 +482,7 @@
 
             // Success: Render Cards
             resultsArea.style.display = 'block';
-            pairDisplay.innerHTML = `Generating files for: <strong>${getFlag(sourceLang)} ${getLangName(sourceLang)}</strong> ↔ <strong>${getFlag(targetLang)} ${getLangName(targetLang)}</strong>`;
+            pairDisplay.innerHTML = `Available for: <strong>${getFlag(sourceLang)} ${getLangName(sourceLang)}</strong> ↔ <strong>${getFlag(targetLang)} ${getLangName(targetLang)}</strong>`;
 
             materialsMap.forEach(material => {
                 const card = document.createElement('div');
@@ -487,12 +490,9 @@
                 card.innerHTML = `
                     <div class="card-header">
                         <span class="card-title">${material.name}</span>
-                        <span>📄</span>
+                        <span style="font-size: 0.8rem; background: #eee; padding: 2px 8px; border-radius: 4px;">${material.category}</span>
                     </div>
-                    <p style="font-size: 0.9rem; color: #666;">Contains source and target text tailored for your language pair.</p>
-                    <button class="download-btn" onclick="generateAndDownload('${sourceLang}', '${targetLang}', '${material.id}', '${material.path}', '${material.name}')">
-                        Download JSON
-                    </button>
+                    <p style="font-size: 0.9rem; color: #666;">Ready for direct import in Talkie. No downloads required!</p>
                 `;
                 materialsGrid.appendChild(card);
             });
@@ -502,107 +502,6 @@
             const errorBox = document.getElementById('errorBox');
             errorBox.textContent = msg;
             errorBox.style.display = 'block';
-        }
-
-
-        async function generateAndDownload(sourceLang, targetLang, materialId, relativePath, subjectName) {
-            try {
-                // Fetch both files in parallel
-                const sName = getLangName(sourceLang);
-                const tName = getLangName(targetLang);
-
-                const [sourceRes, targetRes] = await Promise.all([
-                    fetch(`materials/${sName}/${relativePath}`),
-                    fetch(`materials/${tName}/${relativePath}`)
-                ]);
-
-                if (!sourceRes.ok) throw new Error(`Could not load materials for ${sourceLang}`);
-                if (!targetRes.ok) throw new Error(`Could not load materials for ${targetLang}`);
-
-                const sourceData = await sourceRes.json();
-                const targetData = await targetRes.json();
-
-                // Merge Logic
-                const path = relativePath.toLowerCase();
-                const isDialogue = path.includes('dialogues/');
-                const isWord = path.includes('words/');
-                const typeCode = isDialogue ? "dialogue" : (isWord ? "word" : "sentence");
-
-                const mergedEntries = [];
-                const maxLen = Math.min(sourceData.entries.length, targetData.entries.length);
-
-                for (let i = 0; i < maxLen; i++) {
-                    const s = sourceData.entries[i];
-                    const t = targetData.entries[i];
-
-                    const entry = {
-                        source_text: s.text || s.source_text,
-                        target_text: t.text || t.target_text,
-                        type: s.type || t.type || typeCode,
-                        tags: [...new Set([...(s.tags || []), ...(t.tags || [])])]
-                    };
-
-                    const note = t.note || s.note || "";
-                    if (note) entry.note = note;
-
-                    const pos = t.pos || s.pos || targetData.pos || sourceData.pos || "";
-                    if (pos) entry.pos = pos;
-
-                    const form_type = t.form_type || s.form_type || "";
-                    if (form_type) entry.form_type = form_type;
-
-                    const style = t.style || s.style || "";
-                    if (style) entry.style = style;
-
-                    if (isDialogue) {
-                        entry.speaker = s.speaker || t.speaker || (i % 2 === 0 ? "A" : "B");
-                        entry.type = 'sentence';
-                    }
-                    mergedEntries.push(entry);
-                }
-
-                const sCode = sourceLang;
-                const tCode = targetLang;
-
-                // Create Final Object
-                let finalJson = {
-                    subject: sourceData.subject || targetData.subject || subjectName,
-                    source_language: sCode,
-                    target_language: tCode,
-                    default_type: typeCode
-                };
-
-                const commonPos = targetData.pos || sourceData.pos || "";
-                if (commonPos) finalJson.pos = commonPos;
-
-                // Use "dialogues" structure for dialogue files as planned
-                if (isDialogue) {
-                    const firstAIspeaker = mergedEntries.length > 1 ? mergedEntries[1].speaker :
-                        (mergedEntries.length > 0 ? mergedEntries[0].speaker : "Partner");
-                    finalJson.dialogues = [
-                        {
-                            title: finalJson.subject,
-                            persona: firstAIspeaker || "Partner",
-                            messages: mergedEntries
-                        }
-                    ];
-                } else {
-                    finalJson.entries = mergedEntries;
-                }
-
-                // Trigger Download
-                const dataStr = "data:application/json;charset=utf-8," + encodeURIComponent(JSON.stringify(finalJson, null, 2));
-                const downloadAnchorNode = document.createElement('a');
-                downloadAnchorNode.setAttribute("href", dataStr);
-                downloadAnchorNode.setAttribute("download", `Talkie_${materialId}_${sCode}_${tCode}.json`);
-                document.body.appendChild(downloadAnchorNode);
-                downloadAnchorNode.click();
-                downloadAnchorNode.remove();
-
-            } catch (e) {
-                alert(`Error generating file: ${e.message}`);
-                console.error(e);
-            }
         }
     </script>
 
