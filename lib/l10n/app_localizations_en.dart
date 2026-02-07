@@ -406,11 +406,11 @@ class AppLocalizationsEn extends AppLocalizations {
       'Choose study materials or switch to \'Review All\'.';
 
   @override
-  String get tutorialM2ListTitle => 'Study List';
+  String get tutorialM2ListTitle => 'Practice List';
 
   @override
   String get tutorialM2ListDesc =>
-      'Long-press this card to delete it. Check your saved sentences and flip them.';
+      'You can see your saved words and sentences here. Tap to practice or edit.';
 
   @override
   String get tutorialM3SelectTitle => 'Select Material';
@@ -672,7 +672,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get mode3TryAgain => 'Try Again';
 
   @override
-  String get tutorialM3ResetTitle => 'Reset History';
+  String get tutorialM3ResetTitle => 'Filter & Settings';
 
   @override
   String get tutorialSwapDesc => 'Switch between source and target languages.';
@@ -687,7 +687,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tutorialM3ResetDesc =>
-      'Clear your progress and accuracy scores to start fresh.';
+      'You can set practice targets by selecting tags or excluding memorized items.';
 
   @override
   String get menuSelectMaterialSet => 'Select Study Material Set';
@@ -828,7 +828,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get metadataDialogTitle => 'Details';
 
   @override
-  String get tagFormal => '존댓말';
+  String get tagFormal => 'Formal';
 
   @override
   String get selectPOS => 'Select POS';
@@ -948,4 +948,32 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get reset => 'Reset';
+
+  @override
+  String get participantRename => 'Rename Participant';
+
+  @override
+  String get labelName => 'Name';
+
+  @override
+  String get gender => 'Gender';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get male => 'Male';
+
+  @override
+  String get female => 'Female';
+
+  @override
+  String get neutral => 'Neutral';
+
+  @override
+  String get chatAllConversations => 'All Conversations';
+
+  @override
+  String get confirmDeleteConversation =>
+      'Are you sure you want to delete this conversation?\nThis action cannot be undone.';
 }

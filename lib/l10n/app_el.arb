@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Ουδέτερο",
+  "chatAllConversations": "Όλες οι συνομιλίες",
+  "confirmDeleteConversation": "Θέλετε να διαγράψετε αυτήν τη συνομιλία;\nΔεν θα μπορείτε να την επαναφέρετε."
 }

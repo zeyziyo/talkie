@@ -674,5 +674,8 @@
   "gender": "სქესი",
   "language": "ენა",
   "male": "მამრობითი",
-  "female": "მდედრობითი"
+  "female": "მდედრობითი",
+  "neutral": "ნეიტრალური",
+  "chatAllConversations": "ყველა საუბარი",
+  "confirmDeleteConversation": "გსურთ ამ საუბრის წაშლა?\nწაშლილი საუბრის აღდგენა შეუძლებელია."
 }

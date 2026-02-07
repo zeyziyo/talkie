@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "તટસ્થ",
+  "chatAllConversations": "બધી વાતચીત",
+  "confirmDeleteConversation": "શું તમે આ વાતચીત કાઢી નાખવા માંગો છો?\nકાઢી નાખેલી વાતચીત પુનઃપ્રાપ્ત કરી શકાતી નથી."
 }

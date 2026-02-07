@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "తటస్థ",
+  "chatAllConversations": "అన్ని సంభాషణలు",
+  "confirmDeleteConversation": "మీరు ఈ సంభాషణను తొలగించాలనుకుంటున్నారా?\nతొలగించిన సంభాషణను తిరిగి పొందలేరు."
 }

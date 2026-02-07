@@ -141,7 +141,7 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                     value: _selectedSubject ?? 'All',
                     isExpanded: true,
                     items: [
-                      const DropdownMenuItem(value: 'All', child: Text('All Conversations')),
+                      DropdownMenuItem(value: 'All', child: Text(l10n.chatAllConversations)),
                       ...allSubjects.map((s) => DropdownMenuItem(value: s, child: Text(s))),
                     ],
                     onChanged: (val) {
@@ -200,8 +200,8 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                          showDialog(
                            context: context,
                            builder: (context) => AlertDialog(
-                             title: Text(l10n.chatEndTitle.replaceAll('End', 'Delete') + '?'), // Fallback localization or use hardcoded
-                             content: const Text('Are you sure you want to delete this conversation?\nThis action cannot be undone.'),
+                             title: Text(l10n.delete + '?'), 
+                             content: Text(l10n.confirmDeleteConversation),
                              actions: [
                                TextButton(
                                  onPressed: () => Navigator.pop(context),
@@ -213,12 +213,12 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                                    await appState.deleteDialogue(group.id);
                                    if (context.mounted) {
                                       ScaffoldMessenger.of(context).showSnackBar(
-                                        const SnackBar(content: Text('Conversation deleted')),
+                                        SnackBar(content: Text(l10n.recordDeleted)),
                                       );
                                    }
                                  },
                                  style: TextButton.styleFrom(foregroundColor: Colors.red),
-                                 child: Text(l10n.delete), // Using "Delete" label
+                                 child: Text(l10n.delete), 
                                ),
                              ],
                            ),
@@ -295,20 +295,51 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
     );
   }
 
+  String _selectedPersonaGender = 'female'; // Default
+
   void _showNewChatDialog(AppState appState, AppLocalizations l10n) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
-        title: Text(l10n.chatChoosePersona),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            _personaTile(l10n.personaTeacher, Icons.school, appState),
-            _personaTile(l10n.personaGuide, Icons.map, appState),
-            _personaTile(l10n.personaFriend, Icons.face, appState),
-          ],
+      builder: (context) => StatefulBuilder(
+        builder: (context, setDialogState) => AlertDialog(
+          title: Text(l10n.chatChoosePersona),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Gender Selection Toggle
+              Padding(
+                padding: const EdgeInsets.only(bottom: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    _genderChip(l10n.male, 'male', setDialogState),
+                    _genderChip(l10n.female, 'female', setDialogState),
+                    _genderChip(l10n.neutral, 'neutral', setDialogState),
+                  ],
+                ),
+              ),
+              const Divider(),
+              _personaTile(l10n.personaTeacher, Icons.school, appState),
+              _personaTile(l10n.personaGuide, Icons.map, appState),
+              _personaTile(l10n.personaFriend, Icons.face, appState),
+            ],
+          ),
         ),
       ),
+    );
+  }
+
+  Widget _genderChip(String label, String value, StateSetter setDialogState) {
+    final isSelected = _selectedPersonaGender == value;
+    return ChoiceChip(
+      label: Text(label),
+      selected: isSelected,
+      onSelected: (selected) {
+        if (selected) {
+          setDialogState(() => _selectedPersonaGender = value);
+          setState(() {}); // Update main widget level if needed
+        }
+      },
     );
   }
 
@@ -318,7 +349,10 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
       title: Text(name),
       onTap: () async {
         Navigator.pop(context);
-        await appState.startNewDialogue(persona: name);
+        await appState.startNewDialogue(
+          persona: name, 
+          gender: _selectedPersonaGender
+        );
         if (mounted) {
           Navigator.push(
             context,

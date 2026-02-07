@@ -674,5 +674,8 @@
   "gender": "Kjønn",
   "language": "Språk",
   "male": "Mann",
-  "female": "Kvinne"
+  "female": "Kvinne",
+  "neutral": "Nøytral",
+  "chatAllConversations": "Alle samtaler",
+  "confirmDeleteConversation": "Vil du slette denne samtalen?\nDu kan ikke gjenopprette slettede samtaler."
 }

@@ -674,5 +674,8 @@
   "gender": "Dzimums",
   "language": "Valoda",
   "male": "Vīrietis",
-  "female": "Sieviete"
+  "female": "Sieviete",
+  "neutral": "Neitrāls",
+  "chatAllConversations": "Visas sarunas",
+  "confirmDeleteConversation": "Vai vēlaties izdzēst šo sarunu?\nIzdzēstās sarunas nevar atgūt."
 }

@@ -674,5 +674,8 @@
   "gender": "Gènere",
   "language": "Idioma",
   "male": "Home",
-  "female": "Dona"
+  "female": "Dona",
+  "neutral": "Neutre",
+  "chatAllConversations": "Totes les converses",
+  "confirmDeleteConversation": "Vols suprimir aquesta conversa?\nNo podràs recuperar-la."
 }

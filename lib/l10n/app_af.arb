@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Neutraal",
+  "chatAllConversations": "Alle gesprekke",
+  "confirmDeleteConversation": "Wil jy hierdie gesprek uitvee?\nJy sal nie die uitgeveede gesprek kan herstel nie."
 }

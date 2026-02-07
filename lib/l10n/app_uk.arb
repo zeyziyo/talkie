@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Нейтральний",
+  "chatAllConversations": "Всі розмови",
+  "confirmDeleteConversation": "Ви впевнені, що хочете видалити цю розмову?\nВи не зможете відновити її."
 }

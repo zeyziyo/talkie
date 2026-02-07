@@ -674,5 +674,8 @@
   "gender": "Хүйс",
   "language": "Хэл",
   "male": "Эрэгтэй",
-  "female": "Эмэгтэй"
+  "female": "Эмэгтэй",
+  "neutral": "Төвийг сахисан",
+  "chatAllConversations": "Бүх яриа",
+  "confirmDeleteConversation": "Та энэ яриаг устгах уу?\nУстгасан яриаг сэргээх боломжгүй."
 }

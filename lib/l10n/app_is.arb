@@ -674,5 +674,8 @@
   "gender": "Kyn",
   "language": "Tungumál",
   "male": "Karl",
-  "female": "Kona"
+  "female": "Kona",
+  "neutral": "Hlutlaust",
+  "chatAllConversations": "Öll samtöl",
+  "confirmDeleteConversation": "Viltu eyða þessu samtali?\nEydd samtöl er ekki hægt að endurheimta."
 }

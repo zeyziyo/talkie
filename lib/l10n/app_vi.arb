@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Trung tính",
+  "chatAllConversations": "Toàn bộ hội thoại",
+  "confirmDeleteConversation": "Bạn có chắc chắn muốn xóa hội thoại này?\nHội thoại đã xóa không thể khôi phục."
 }

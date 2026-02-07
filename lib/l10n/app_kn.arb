@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "ತಟಸ್ಥ",
+  "chatAllConversations": "ಎಲ್ಲಾ ಸಂಭಾಷಣೆಗಳು",
+  "confirmDeleteConversation": "ನೀವು ಈ ಸಂಭಾಷಣೆಯನ್ನು ಅಳಿಸಲು ಬಯಸುತ್ತೀರಾ?\nಅಳಿಸಲಾದ ಸಂಭಾಷಣೆಯನ್ನು ಮರುಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ."
 }

@@ -678,5 +678,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Neutral",
+  "chatAllConversations": "All Conversations",
+  "confirmDeleteConversation": "Are you sure you want to delete this conversation?\nThis action cannot be undone."
 }

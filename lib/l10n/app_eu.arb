@@ -674,5 +674,8 @@
   "gender": "Generoa",
   "language": "Hizkuntza",
   "male": "Gizonezkoa",
-  "female": "Emakumezkoa"
+  "female": "Emakumezkoa",
+  "neutral": "neutroa",
+  "chatAllConversations": "Elkarrizketa guztiak",
+  "confirmDeleteConversation": "Elkarrizketa hau ezabatu nahi duzu?\nEzabatu ondoren ezin da berreskuratu."
 }

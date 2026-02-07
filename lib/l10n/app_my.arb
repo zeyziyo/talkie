@@ -674,5 +674,8 @@
   "gender": "ကျား/မ",
   "language": "ဘာသာစကား",
   "male": "ကျား",
-  "female": "မ"
+  "female": "မ",
+  "neutral": "ကြားနေ",
+  "chatAllConversations": "စကားပြောအားလုံး",
+  "confirmDeleteConversation": "ဤစကားပြောကို ဖျက်ရန်သေချာပါသလား။\nဖျက်လိုက်သော စကားပြောများကို ပြန်ယူ၍မရပါ။"
 }

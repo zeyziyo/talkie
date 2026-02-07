@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Neutro",
+  "chatAllConversations": "Tutte le conversazioni",
+  "confirmDeleteConversation": "Vuoi eliminare questa conversazione?\nNon sarà possibile recuperarla."
 }

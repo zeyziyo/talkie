@@ -824,7 +824,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get metadataDialogTitle => 'Details';
 
   @override
-  String get tagFormal => '존댓말';
+  String get tagFormal => 'Rasmi';
 
   @override
   String get selectPOS => 'Select POS';
@@ -875,10 +875,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get labelNote => 'Note';
 
   @override
-  String get labelShowMemorized => '끝낸것';
+  String get labelShowMemorized => 'Finished';
 
   @override
-  String get tagSelection => '태그 선택';
+  String get tagSelection => 'Select Tags';
 
   @override
   String get metadataFormType => 'Form Type';
@@ -896,7 +896,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get formPresentParticiple => 'Present Participle';
 
   @override
-  String get formPresent => '현재형';
+  String get formPresent => 'Present';
 
   @override
   String get formThirdPersonSingular => '3rd Person Singular';
@@ -908,19 +908,19 @@ class AppLocalizationsSw extends AppLocalizations {
   String get formSingular => 'Umoja';
 
   @override
-  String get caseSubject => '주격';
+  String get caseSubject => 'Subject';
 
   @override
-  String get caseObject => '목적격';
+  String get caseObject => 'Object';
 
   @override
-  String get casePossessive => '소유격';
+  String get casePossessive => 'Possessive';
 
   @override
-  String get casePossessivePronoun => '소유대명사';
+  String get casePossessivePronoun => 'Possessive Pronoun';
 
   @override
-  String get caseReflexive => '재귀대명사';
+  String get caseReflexive => 'Reflexive';
 
   @override
   String get formPositive => 'Positive';
@@ -944,4 +944,32 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get reset => 'Reset';
+
+  @override
+  String get participantRename => 'Rename Participant';
+
+  @override
+  String get labelName => 'Name';
+
+  @override
+  String get gender => 'Gender';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get male => 'Male';
+
+  @override
+  String get female => 'Female';
+
+  @override
+  String get neutral => 'Si upande wowote';
+
+  @override
+  String get chatAllConversations => 'Mazungumzo Yote';
+
+  @override
+  String get confirmDeleteConversation =>
+      'Unataka kufuta mazungumzo haya?\nHazitaweza kurejeshwa.';
 }

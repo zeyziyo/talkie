@@ -674,5 +674,8 @@
   "gender": "ፆታ",
   "language": "ቋንቋ",
   "male": "ወንድ",
-  "female": "ሴት"
+  "female": "ሴት",
+  "neutral": "ገለልተኛ",
+  "chatAllConversations": "ሁሉም ንግግሮች",
+  "confirmDeleteConversation": "ይህን ውይይት መሰረዝ ይፈልጋሉ?\nየተሰረዙ ንግግሮችን መልሶ ማግኘት አይቻልም።"
 }

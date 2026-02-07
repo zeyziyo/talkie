@@ -674,5 +674,8 @@
   "gender": "Սեռ",
   "language": "Լեզու",
   "male": "Արական",
-  "female": "Իգական"
+  "female": "Իգական",
+  "neutral": "Չեզոք",
+  "chatAllConversations": "Բոլոր զրույցները",
+  "confirmDeleteConversation": "Ցանկանու՞մ եք ջնջել այս զրույցը:\nՋնջված զրույցները հնարավոր չէ վերականգնել:"
 }

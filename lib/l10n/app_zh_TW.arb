@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "中性",
+  "chatAllConversations": "所有對話",
+  "confirmDeleteConversation": "您確定要刪除此對話嗎？\n刪除的對話將無法復原。"
 }

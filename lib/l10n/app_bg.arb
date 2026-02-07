@@ -674,5 +674,8 @@
   "gender": "Пол",
   "language": "Език",
   "male": "Мъж",
-  "female": "Жена"
+  "female": "Жена",
+  "neutral": "Неутрален",
+  "chatAllConversations": "Всички разговори",
+  "confirmDeleteConversation": "Искате ли да изтриете този разговор?\nИзтритите разговори не могат да бъдат възстановени."
 }

@@ -674,5 +674,8 @@
   "gender": "ເພດ",
   "language": "ພາສາ",
   "male": "ຊາຍ",
-  "female": "ຍິງ"
+  "female": "ຍິງ",
+  "neutral": "ເປັນກາງ",
+  "chatAllConversations": "ສົນທະນາທັງໝົດ",
+  "confirmDeleteConversation": "ທ່ານແນ່ໃຈບໍ່ວ່າຈະລຶບການສົນທະນານີ້?\nການສົນທະນາທີ່ຖືກລຶບຈະບໍ່ສາມາດກູ້ຄືນໄດ້."
 }

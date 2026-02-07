@@ -674,5 +674,8 @@
   "gender": "Cins",
   "language": "Dil",
   "male": "Kişi",
-  "female": "Qadın"
+  "female": "Qadın",
+  "neutral": "neytral",
+  "chatAllConversations": "Bütün söhbətlər",
+  "confirmDeleteConversation": "Bu söhbəti silmək istədiyinizə əminsinizmi?\nSilinmiş söhbətləri geri qaytarmaq mümkün deyil."
 }

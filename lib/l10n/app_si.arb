@@ -674,5 +674,8 @@
   "gender": "ස්ත්‍රී පුරුෂ භාවය",
   "language": "භාෂාව",
   "male": "පිරිමි",
-  "female": "ගැහැණු"
+  "female": "ගැහැණු",
+  "neutral": "මධ්‍යස්ථ",
+  "chatAllConversations": "සියලු සංවාද",
+  "confirmDeleteConversation": "ඔබට මෙම සංවාදය මකා දැමීමට අවශ්‍යද?\nමකා දැමූ සංවාද නැවත ලබා ගත නොහැක."
 }

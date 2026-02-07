@@ -64,7 +64,7 @@
 *   [x] **AppBar Refinement**: 모드명 자동 표시 및 학습 자료 선택 UI 개선.
 
 ### ✅ Phase 9: 글로벌 진출 및 안정화 (Jan 27)
-*   [x] **국제화 동기화**: 43개 언어에 대한 ARB 파일(v1.0.4) 최신화 및 AI 번역 동기화.
+*   [x] **국제화 동기화**: 80개 언어에 대한 ARB 파일(v1.0.4) 최신화 및 AI 번역 동기화.
 *   [x] **배포 준비**: 앱 버전 상향(`1.0.4+8`) 및 구글 플레이 업그레이드 가이드 작성.
 
 ### ✅ Phase 11: 대화형 학습 및 AI 채팅 (Jan 27-28)
@@ -77,10 +77,10 @@
 ### ✅ Phase 12: 품질 고도화 및 확장 (Jan 28)
 *   [x] **Partner Mode**: Mode 4에서 실제 상대방(사람)과의 대화를 기록하는 '파트너 모드' 구현 (양방향 통역).
 *   [x] **GPS Context**: 현재 위치 정보를 AI에게 제공하여 상황에 맞는 답변 생성(Context Awareness).
-*   [x] **Deep Localization**: 40개 이상의 언어 파일(ARB)에 누락된 키를 모두 동기화하여 완벽한 다국어 지원.
+*   [x] **Deep Localization**: 80개 이상의 언어 파일(ARB)에 누락된 키를 모두 동기화하여 완벽한 다국어 지원.
 *   [x] **UX/Guide**: Mode 1 '단어/문장' 토글 스위치 및 하이라이트 튜토리얼 적용.
 *   [x] **Stability**: Deprecated 코드 제거 및 Import 트랜잭션 최적화.
-*   [x] **Final Stability (Jan 30)**: `AppState` 중복 필드 제거, `DatabaseService` 문법 오류 수정, `Geolocator` 최신 SDK 대응 및 43개 언어 Localization 전수 동기화 완료 (Build 100% 성공 보장).
+*   [x] **Final Stability (Jan 30)**: `AppState` 중복 필드 제거, `DatabaseService` 문법 오류 수정, `Geolocator` 최신 SDK 대응 및 80개 언어 Localization 전수 동기화 완료 (Build 100% 성공 보장).
 *   [x] **Phase 62: Dialogue Enhancements (Feb 2)**:
     *   **Auto-Title**: 대화 개수 기반(Chat 1, Chat 2) 제목 자동 생성.
     *   **Note & Search**: 대화 종료 시 메모(Note) 저장 및 히스토리 검색/필터(날짜) 기능 추가.

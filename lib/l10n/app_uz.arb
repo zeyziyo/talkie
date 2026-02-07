@@ -674,5 +674,8 @@
   "gender": "Jins",
   "language": "Til",
   "male": "Erkak",
-  "female": "Ayol"
+  "female": "Ayol",
+  "neutral": "neytral",
+  "chatAllConversations": "Barcha suhbatlar",
+  "confirmDeleteConversation": "Bu suhbatni oʻchirishni xohlaysizmi?\nOʻchirilgan suhbatni qayta tiklab boʻlmaydi."
 }

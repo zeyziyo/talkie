@@ -674,5 +674,8 @@
   "gender": "Lytis",
   "language": "Kalba",
   "male": "Vyras",
-  "female": "Moteris"
+  "female": "Moteris",
+  "neutral": "Neutralus",
+  "chatAllConversations": "Visi pokalbiai",
+  "confirmDeleteConversation": "Ar tikrai norite ištrinti šį pokalbį?\nIštrintų pokalbių atkurti negalima."
 }

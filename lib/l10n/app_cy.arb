@@ -674,5 +674,8 @@
   "gender": "Rhyw",
   "language": "Iaith",
   "male": "Gwryw",
-  "female": "Benyw"
+  "female": "Benyw",
+  "neutral": "Niwtral",
+  "chatAllConversations": "Pob sgwrs",
+  "confirmDeleteConversation": "Ydych chi'n siŵr eich bod am ddileu'r sgwrs hon?\nNi ellir adfer sgyrsiau sydd wedi'u dileu."
 }

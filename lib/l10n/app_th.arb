@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "เป็นกลาง",
+  "chatAllConversations": "การสนทนาทั้งหมด",
+  "confirmDeleteConversation": "คุณต้องการลบการสนทนานี้หรือไม่\nการสนทนาที่ถูกลบจะไม่สามารถกู้คืนได้"
 }

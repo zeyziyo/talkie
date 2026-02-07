@@ -674,5 +674,8 @@
   "gender": "Жынысы",
   "language": "Тілі",
   "male": "Еркек",
-  "female": "Әйел"
+  "female": "Әйел",
+  "neutral": "Бейтарап",
+  "chatAllConversations": "Барлық сұхбаттар",
+  "confirmDeleteConversation": "Бұл сұхбатты жойғыңыз келе ме?\nЖойылған сұхбатты қалпына келтіру мүмкін емес."
 }

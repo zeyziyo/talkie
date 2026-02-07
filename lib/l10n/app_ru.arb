@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Нейтральный",
+  "chatAllConversations": "Все беседы",
+  "confirmDeleteConversation": "Удалить эту беседу?\nВосстановление удаленных бесед невозможно."
 }

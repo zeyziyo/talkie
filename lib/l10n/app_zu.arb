@@ -674,5 +674,8 @@
   "gender": "Ubulili",
   "language": "Ulimi",
   "male": "Owesilisa",
-  "female": "Owesifazane"
+  "female": "Owesifazane",
+  "neutral": "Ukungathathi hlangothi",
+  "chatAllConversations": "Zonke izingxoxo",
+  "confirmDeleteConversation": "Uqinisekile ukuthi ufuna ukususa le ngxoxo?\nAyikwazi ukubuyiselwa emuva uma isisusiwe."
 }

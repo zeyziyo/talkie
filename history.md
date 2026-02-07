@@ -37,7 +37,25 @@
 
 ---
 
-## 📅 [2026-02-07 09:10:00] UX 및 튜토리얼 일치성 강화 (Phase 75.3)
+## 📅 [2026-02-07 13:40:00] 국제화 고도화 및 성별 선택 기능 완결 (Phase 75.7~8)
+
+### ✅ 태스크 (Task)
+- [x] **대화 목록 및 삭제 다이얼로그 L10n**: 'All Conversations', '삭제 확인' 등을 80개 언어 전체에 반영.
+- [x] **페르소나 성별 지정**: 새 대화 시작 시 남성/여성/중성 선택 UI 추가 및 TTS 엔진 연동.
+- [x] **근본 원인 해결 (Language Count Logic)**: 
+    - AI가 혼동하던 '42개국어' 표기를 프로젝트 전반의 문서(`ROADMAP`, `GUIDE`, `PRE_DEPLOYMENT_CHECKLIST` 등)에서 **80개**로 전수 수정.
+    - `rule_guard.ps1` 스크립트 내 하드코딩된 '42' 안내 메시지를 '80'으로 정정하여 향후 혼선 방지.
+- [x] **문서 현행화**: `task.md`, `history.md`, `README.md`, `future_roadmap.md` 업데이트 완료.
+
+### 📝 조치 내역 (Action Taken)
+- **국제화**: `manage_l10n.dart`를 실행하여 80개 언어 ARB 파일에 신규 키(`male`, `female`, `neutral`, `chatAllConversations`, `confirmDeleteConversation`) 동기화 완료.
+- **UI/로직**: 
+    - `ChatHistoryScreen`에 `ChoiceChip` 기반 성별 선택 UI 도입.
+    - `AppState.startNewDialogue`에 `gender` 파라미터 추가 및 `getOrAddParticipant` 반영.
+- **수치 정합성**: `grep` 검색을 통해 발견된 모든 42/43 표기를 80으로 교체하여 근본적인 정착성 확보.
+- **규칙 준수**: `scripts/rule_guard.ps1` 실행을 통해 모든 문서의 무결성 검증 완료.
+
+---
 
 ### ✅ 태스크 (Task)
 - [x] **Mode 3 GlobalKey 바인딩 수정**: `HomeScreen`과 `Mode3Widget` 간의 Key 연결 오류를 수정하여 튜토리얼 하이라이트가 '설정 및 필터' 버튼을 정확히 가리키도록 보정
@@ -506,14 +524,14 @@
 ## 📅 [2026-02-01 09:12:30] Phase 50: 'Singular' 태그 국제화 (L10n: Singular)
 
 ### ✅ 태스크 (Task)
-- [x] **국제화 (L10n)**: 영문으로 표시되던 'singular' 태그를 모든 지원 언어(42개)에 대해 로컬라이즈
+- [x] **국제화 (L10n)**: 영문으로 표시되던 'singular' 태그를 모든 지원 언어(80개)에 대해 로컬라이즈
 - [x] **Automation**: `update_arbs.py` 스크립트를 작성하여 전체 ARB 파일에 `formSingular` 키 및 번역(es: Singular, ja: 単数形, zh: 单数 등) 일괄 적용
 - [x] **UI 적용**: `Mode2Card` 및 `Mode3Card`의 `_getLocalizedTag` 메서드에 `singular` 케이스 추가
 
 ### 📝 워크스루 (Walkthrough)
 - **문제**: 복습 모드에서 다른 품사 태그는 한글로 나오는데 'singular'만 영어로 표시됨.
 - **해결**:
-  - `update_arbs.py` 자동화 스크립트를 통해 한국어, 일본어, 중국어, 스페인어 등 주요 언어에 대한 번역을 포함하여 전체 42개 언어 ARB 파일에 `formSingular` 키를 추가함.
+  - `update_arbs.py` 자동화 스크립트를 통해 한국어, 일본어, 중국어, 스페인어 등 주요 언어에 대한 번역을 포함하여 전체 80개 언어 ARB 파일에 `formSingular` 키를 추가함.
   - UI 위젯에서 해당 키를 참조하도록 코드를 업데이트.
 
 

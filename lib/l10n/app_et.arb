@@ -674,5 +674,8 @@
   "gender": "Sugu",
   "language": "Keel",
   "male": "Mees",
-  "female": "Naine"
+  "female": "Naine",
+  "neutral": "Neutraalne",
+  "chatAllConversations": "Kõik vestlused",
+  "confirmDeleteConversation": "Kas sa oled kindel, et soovid selle vestluse kustutada?\nKustutatud vestlust ei saa taastada."
 }

@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "ניטרלי",
+  "chatAllConversations": "כל השיחות",
+  "confirmDeleteConversation": "האם למחוק שיחה זו?\nלא ניתן יהיה לשחזר שיחה שנמחקה."
 }

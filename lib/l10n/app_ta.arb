@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "நடுநிலை",
+  "chatAllConversations": "எல்லா உரையாடல்களும்",
+  "confirmDeleteConversation": "இந்த உரையாடலை நீக்கவா?\nநீக்கப்பட்ட உரையாடலை மீட்டெடுக்க முடியாது."
 }

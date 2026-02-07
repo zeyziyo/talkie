@@ -674,5 +674,8 @@
   "gender": "성별",
   "language": "언어",
   "male": "남성",
-  "female": "여성"
+  "female": "여성",
+  "neutral": "중성",
+  "chatAllConversations": "전체 대화",
+  "confirmDeleteConversation": "이 대화를 삭제하시겠습니까?\n삭제된 대화는 복구할 수 없습니다."
 }

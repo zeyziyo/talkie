@@ -674,5 +674,8 @@
   "gender": "Spol",
   "language": "Jezik",
   "male": "Moški",
-  "female": "Ženska"
+  "female": "Ženska",
+  "neutral": "Nevtralno",
+  "chatAllConversations": "Vsi pogovori",
+  "confirmDeleteConversation": "Želite izbrisati ta pogovor?\nIzbrisanih pogovorov ni mogoče obnoviti."
 }

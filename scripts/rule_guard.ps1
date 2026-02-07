@@ -74,7 +74,7 @@ if (-not $isHistoryUpdated) {
 # 5. Check L10n Consistency (Simple Heuristic: If one ARB changes, check others)
 $arbFiles = git status --porcelain | Where-Object { $_ -match "\.arb$" }
 if ($arbFiles) {
-    Write-Host "🌐  ARB files detected. Reminder: Ensure ALL 42 languages are synced." -ForegroundColor Magenta
+    Write-Host "🌐  ARB files detected. Reminder: Ensure ALL 80 languages are synced." -ForegroundColor Magenta
     # Logic to check strict sync is complex for this script, providing warning instead.
 }
 

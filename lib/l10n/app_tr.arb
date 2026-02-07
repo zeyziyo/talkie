@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Nötr",
+  "chatAllConversations": "Tüm Sohbetler",
+  "confirmDeleteConversation": "Bu konuşmayı silmek istediğinizden emin misiniz?\nSilinen konuşmalar geri alınamaz."
 }

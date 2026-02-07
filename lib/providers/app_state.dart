@@ -173,6 +173,8 @@ class AppState extends ChangeNotifier {
   String? _activeDialogueTitle;
   String? _activeDialogueLocation;
   String? _activePersona; // Tracks current chat partner
+  String? _activePersonaGender; // Phase 75.8
+  String? get activePersonaGender => _activePersonaGender;
   int _currentDialogueSequence = 0;
   List<DialogueGroup> _dialogueGroups = [];
   
@@ -2611,8 +2613,8 @@ class AppState extends ChangeNotifier {
   // Phase 11: AI Dialogue Management
   // ==========================================
 
-  /// Create a new dialogue and set as active session
-  Future<void> startNewDialogue({String? persona}) async {
+  /// Create a new dialogue and set as active session (Phase 75.8: Added gender)
+  Future<void> startNewDialogue({String? persona, String? gender}) async {
     try {
       _statusMessage = 'Starting new chat...';
       notifyListeners();
@@ -2626,6 +2628,7 @@ class AppState extends ChangeNotifier {
       _activeDialogueId = dialogueId;
       _activeDialogueTitle = 'New Conversation';
       _activePersona = persona;
+      _activePersonaGender = gender; // Assuming this field exists or adding it
       _currentDialogueSequence = 1;
 
       // 2. Save to local SQLite
@@ -2637,6 +2640,16 @@ class AppState extends ChangeNotifier {
         userId: SupabaseService.client.auth.currentUser?.id,
       );
 
+      // Pre-create the Assistant participant with chosen gender
+      if (persona != null) {
+        await getOrAddParticipant(
+          name: persona,
+          role: 'assistant',
+          gender: gender,
+          langCode: _targetLang, // Use current target language
+        );
+      }
+
       // 3. Optimistic Update (Immediate List Insertion)
       _dialogueGroups.insert(0, DialogueGroup(
         id: dialogueId,
@@ -2647,7 +2660,6 @@ class AppState extends ChangeNotifier {
       ));
 
       _statusMessage = 'Chat started';
-      // await loadDialogueGroups(); // Skip full reload
       notifyListeners();
     } catch (e) {
       _statusMessage = 'Failed to start chat: $e';
@@ -2723,6 +2735,7 @@ class AppState extends ChangeNotifier {
     _activeDialogueId = null;
     _activeDialogueTitle = null;
     _activePersona = null;
+    _activePersonaGender = null; // Phase 75.8
     _currentDialogueSequence = 0;
     notifyListeners();
   }

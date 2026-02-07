@@ -26,7 +26,7 @@ Large teams often use **Fastlane Supply** to automate uploads.
     - `fastlane/metadata/android/en-US/full_description.txt`
     - `fastlane/metadata/android/ja-JP/full_description.txt`
 - **Command:** Run `fastlane supply` to push all text changes to Google Play automatically.
-- **Pros:** Saves time if you support 40+ languages.
+- **Pros:** Saves time if you support 80+ languages.
 - **Cons:** Requires complex setup and strict file structure.
 
 ## 3. Our Strategy
@@ -35,8 +35,8 @@ For Talkie, we follow a hybrid approach:
 2.  **Deployment:** Manually copy-paste these into Google Play Console for the highest accuracy and control.
 
 ## 4. FAQ
-**Q: Do we need to translate this for all 43 supported languages?**
+**Q: Do we need to translate this for all 80 supported languages?**
 **A: No.** It is **not mandatory**.
 - If you don't provide a translation for a specific language (e.g., Italian), users in that region will see the **Default Language** (English).
-- **Strategy:** Focus on your **Top 3-5 target markets** (e.g., Korea, Japan, US, China). It is inefficient to manage 43 descriptions manually.
+- **Strategy:** Focus on your **Top 3-5 target markets** (e.g., Korea, Japan, US, China). It is inefficient to manage 80 descriptions manually.
 - **Recommendation:** Start with matching `store_listing_ko.md`, `store_listing_ja.md`, `store_listing_en.md` (Default), and add others only if you see significant traffic from those regions.

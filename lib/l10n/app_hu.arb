@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Semleges",
+  "chatAllConversations": "Összes beszélgetés",
+  "confirmDeleteConversation": "Törli ezt a beszélgetést?\nA törölt beszélgetések nem állíthatók vissza."
 }

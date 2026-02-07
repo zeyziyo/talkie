@@ -674,5 +674,8 @@
   "gender": "Kasarian",
   "language": "Wika",
   "male": "Lalaki",
-  "female": "Babae"
+  "female": "Babae",
+  "neutral": "Neutral",
+  "chatAllConversations": "Lahat ng Usapan",
+  "confirmDeleteConversation": "Sigurado ka bang gusto mong burahin ang usapang ito?\n Hindi na ito maibabalik pa."
 }

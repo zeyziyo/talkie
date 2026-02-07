@@ -674,5 +674,8 @@
   "gender": "Pohlavie",
   "language": "Jazyk",
   "male": "Muž",
-  "female": "Žena"
+  "female": "Žena",
+  "neutral": "Neutrálny",
+  "chatAllConversations": "Všetky konverzácie",
+  "confirmDeleteConversation": "Naozaj chcete zmazať túto konverzáciu?\nZmazané konverzácie sa nedajú obnoviť."
 }

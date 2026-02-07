@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "غیر جانبدار",
+  "chatAllConversations": "تمام گفتگوئیں",
+  "confirmDeleteConversation": "کیا آپ اس گفتگو کو حذف کرنا چاہتے ہیں؟ حذف شدہ گفتگو کو بازیافت نہیں کیا جا سکتا۔"
 }

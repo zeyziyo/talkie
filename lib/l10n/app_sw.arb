@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Si upande wowote",
+  "chatAllConversations": "Mazungumzo Yote",
+  "confirmDeleteConversation": "Unataka kufuta mazungumzo haya?\nHazitaweza kurejeshwa."
 }

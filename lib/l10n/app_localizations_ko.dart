@@ -46,7 +46,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI 채팅: 내 언어(Source)로 말하여 연습\n• 파트너 모드: 사람 아이콘을 눌러 상대방 녹음 (학습 언어 입력)\n• GPS: 현재 위치를 기반으로 대화 맥락 파악\n• 자동 저장: \'제목 @ 장소\' 형식으로 대화 저장\n• 기록: 지난 대화 다시보기';
+      '• AI 채팅: 내 언어로 말하여 회화 연습\n• 멀티 페르소나: 말풍선 위 메뉴로 상대방의 성별/언어/이름 변경 가능\n• 파트너 추가: + 버튼으로 새로운 대화 상대(Stranger) 추가\n• GPS: 현재 위치 기반 상황극\n• 자동 저장: 대화 내용 자동 번역 및 저장';
 
   @override
   String get helpJsonDesc => 'Mode 3에서 사용할 학습 자료를 JSON 파일로 가져오려면 다음 형식을 따르세요:';
@@ -654,7 +654,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get mode3TryAgain => '재시도';
 
   @override
-  String get tutorialM3ResetTitle => '기록 초기화';
+  String get tutorialM3ResetTitle => '필터 및 설정';
 
   @override
   String get tutorialSwapDesc => '내 언어와 학습 언어를 서로 바꿉니다.';
@@ -668,7 +668,8 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get tutorialM3ResetDesc => '진행 상황과 정확도 점수를 초기화하여 처음부터 다시 시작합니다.';
+  String get tutorialM3ResetDesc =>
+      '태그를 선택하거나 암기한 항목 제외 등 연습 대상을 자유롭게 설정할 수 있습니다.';
 
   @override
   String get menuSelectMaterialSet => '학습 자료집 선택';
@@ -923,4 +924,32 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get reset => '초기화';
+
+  @override
+  String get participantRename => '참가자 이름 변경';
+
+  @override
+  String get labelName => '이름';
+
+  @override
+  String get gender => '성별';
+
+  @override
+  String get language => '언어';
+
+  @override
+  String get male => '남성';
+
+  @override
+  String get female => '여성';
+
+  @override
+  String get neutral => '중성';
+
+  @override
+  String get chatAllConversations => '전체 대화';
+
+  @override
+  String get confirmDeleteConversation =>
+      '이 대화를 삭제하시겠습니까?\n삭제된 대화는 복구할 수 없습니다.';
 }

@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "ཕྱོགས་གཏོགས་མེད།",
+  "chatAllConversations": "གླེང་མོལ་ཡོངས་རྫོགས།",
+  "confirmDeleteConversation": "ཁྱེད་ཀྱིས་གླེང་མོལ་འདི་དོར་འདོད་དམ།\nགླེང་མོལ་བསུབས་པ་ཕྱིར་སློག་བྱེད་མི་ཐུབ།"
 }

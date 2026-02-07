@@ -674,5 +674,8 @@
   "gender": "Gender",
   "language": "Language",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "neutral": "Neutral",
+  "chatAllConversations": "Alla konversationer",
+  "confirmDeleteConversation": "Vill du radera den här konversationen?\nRaderade konversationer kan inte återställas."
 }
