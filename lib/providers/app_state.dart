@@ -1607,7 +1607,8 @@ class AppState extends ChangeNotifier {
   /// 기존 호환성 유지용 (Legacy)
   Future<void> loadStudyMaterials() async {
     await loadTags(); // 태그 로드로 대체
-    // _studyMaterials 로직은 필요시 하위 호환을 위해 유지 가능하나, 여기서는 태그 기반으로 동작 유도
+    _studyMaterials = await DatabaseService.getStudyMaterials(); // Restore legacy list population
+    notifyListeners();
   }
 
   /// 학습 자료 선택 (Legacy & Tag Sync)

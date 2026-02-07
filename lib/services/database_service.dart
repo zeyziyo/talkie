@@ -1496,6 +1496,12 @@ class DatabaseService {
       };
     }
   }
+
+  /// 학습 자료 목록 조회 (Legacy Support)
+  static Future<List<Map<String, dynamic>>> getStudyMaterials() async {
+    final db = await database;
+    return await db.query('study_materials', orderBy: 'id DESC');
+  }
   
 
   static Future<void> saveTranslationLinkWithMaterial({

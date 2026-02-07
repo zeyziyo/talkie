@@ -18,6 +18,7 @@
     - [x] Fix `_showMaterialSelectionDialog` undefined error (Replace with `_showOnlineLibraryDialog`)
     - [x] Fix `DialogueGroup` undefined error (Add import)
     - [x] Fix `DialogueGroup` constructor error (Add `userId: 'user'`)
+    - [x] Fix `selectMaterial` empty content bug (Restore `loadStudyMaterials` & `getStudyMaterials`)
 
 - [x] Hotfix: Build Error Resolution (빌드 오류 수정)
     - [x] `HomeScreen` 중복 함수 정의 제거 및 파라미터 오류 수정
