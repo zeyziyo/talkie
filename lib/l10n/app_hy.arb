@@ -679,5 +679,6 @@
   "chatAllConversations": "Բոլոր զրույցները",
   "confirmDeleteConversation": "Ցանկանու՞մ եք ջնջել այս զրույցը:\nՋնջված զրույցները հնարավոր չէ վերականգնել:",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

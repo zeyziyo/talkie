@@ -679,5 +679,6 @@
   "chatAllConversations": "Все беседы",
   "confirmDeleteConversation": "Удалить эту беседу?\nВосстановление удаленных бесед невозможно.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

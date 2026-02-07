@@ -679,5 +679,6 @@
   "chatAllConversations": "Todas las conversaciones",
   "confirmDeleteConversation": "¿Estás seguro de que quieres eliminar esta conversación?\nUna vez eliminada, no se podrá recuperar.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

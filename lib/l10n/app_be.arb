@@ -679,5 +679,6 @@
   "chatAllConversations": "Усе размовы",
   "confirmDeleteConversation": "Вы сапраўды жадаеце выдаліць гэтую размову?\nЯе нельга будзе аднавіць.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

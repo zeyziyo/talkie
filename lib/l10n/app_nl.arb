@@ -679,5 +679,6 @@
   "chatAllConversations": "Alle gesprekken",
   "confirmDeleteConversation": "Weet je zeker dat je dit gesprek wilt verwijderen?\nVerwijderde gesprekken kunnen niet worden hersteld.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

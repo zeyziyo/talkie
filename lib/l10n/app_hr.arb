@@ -679,5 +679,6 @@
   "chatAllConversations": "Svi razgovori",
   "confirmDeleteConversation": "Želite li izbrisati ovaj razgovor?\nIzbrisane razgovore nije moguće vratiti.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

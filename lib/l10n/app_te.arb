@@ -679,5 +679,6 @@
   "chatAllConversations": "అన్ని సంభాషణలు",
   "confirmDeleteConversation": "మీరు ఈ సంభాషణను తొలగించాలనుకుంటున్నారా?\nతొలగించిన సంభాషణను తిరిగి పొందలేరు.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

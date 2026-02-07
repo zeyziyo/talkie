@@ -679,5 +679,6 @@
   "chatAllConversations": "සියලු සංවාද",
   "confirmDeleteConversation": "ඔබට මෙම සංවාදය මකා දැමීමට අවශ්‍යද?\nමකා දැමූ සංවාද නැවත ලබා ගත නොහැක.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

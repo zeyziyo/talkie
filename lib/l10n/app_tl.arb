@@ -679,5 +679,6 @@
   "chatAllConversations": "Lahat ng Usapan",
   "confirmDeleteConversation": "Sigurado ka bang gusto mong burahin ang usapang ito?\n Hindi na ito maibabalik pa.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

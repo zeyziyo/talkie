@@ -679,5 +679,6 @@
   "chatAllConversations": "Alla konversationer",
   "confirmDeleteConversation": "Vill du radera den här konversationen?\nRaderade konversationer kan inte återställas.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

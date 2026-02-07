@@ -679,5 +679,6 @@
   "chatAllConversations": "Tüm Sohbetler",
   "confirmDeleteConversation": "Bu konuşmayı silmek istediğinizden emin misiniz?\nSilinen konuşmalar geri alınamaz.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

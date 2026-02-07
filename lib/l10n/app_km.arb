@@ -679,5 +679,6 @@
   "chatAllConversations": "ការសន្ទនាទាំងអស់",
   "confirmDeleteConversation": "តើ​អ្នក​ប្រាកដ​ថា​អ្នក​ចង់​លុប​ការ​សន្ទនា​នេះ​?\nអ្នក​នឹង​មិន​អាច​យក​វា​មក​វិញ​បាន​ទេ។",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

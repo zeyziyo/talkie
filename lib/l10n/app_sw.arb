@@ -679,5 +679,6 @@
   "chatAllConversations": "Mazungumzo Yote",
   "confirmDeleteConversation": "Unataka kufuta mazungumzo haya?\nHazitaweza kurejeshwa.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

@@ -679,5 +679,6 @@
   "chatAllConversations": "Барлық сұхбаттар",
   "confirmDeleteConversation": "Бұл сұхбатты жойғыңыз келе ме?\nЖойылған сұхбатты қалпына келтіру мүмкін емес.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

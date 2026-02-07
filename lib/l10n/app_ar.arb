@@ -679,5 +679,6 @@
   "chatAllConversations": "جميع المحادثات",
   "confirmDeleteConversation": "هل أنت متأكد أنك تريد حذف هذه المحادثة؟\nلا يمكنك استعادة المحادثات المحذوفة.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

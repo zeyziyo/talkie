@@ -781,213 +781,133 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
 
-  void _showMaterialSelectionDialog(BuildContext context, {int initialTabIndex = 0}) {
+  void _showOnlineLibraryDialog(BuildContext context) {
     showDialog(
       context: context,
       builder: (context) {
         final appState = Provider.of<AppState>(context, listen: false);
         final l10n = AppLocalizations.of(context)!;
 
-        // ... existing material filtering logic ...
-        final materials = appState.studyMaterials;
-        final wordMaterials = materials.where((m) {
-           if (m['id'] == 0) return true; // Always show Basic
-           final wCount = m['word_count'] as int? ?? 0;
-           final sCount = m['sentence_count'] as int? ?? 0;
-           return (wCount + sCount) > 0;
-        }).toList();
-        
-        final sentenceMaterials = materials.where((m) {
-           if (m['id'] == 0) return true; // Always show Basic
-           final wCount = m['word_count'] as int? ?? 0;
-           final sCount = m['sentence_count'] as int? ?? 0;
-           return (wCount + sCount) > 0;
-        }).toList();
-
-        final dialogueGroups = appState.dialogueGroups;
-        
-        // Determine initial tab based on mode if not provided explicitly (0)
-        int initialTab = initialTabIndex; 
-        
-        // If initialTabIndex is 0 (default), check mode
-        if (initialTabIndex == 0) {
-           if (appState.currentMode == 3) { // AI Chat Mode
-             initialTab = 3; // Dialogues Tab (index changed to 3)
-           } else if (appState.currentMode == 1 || appState.currentMode == 2) {
-             // If in review/practice, keep Word or Sentence based on filter
-             initialTab = appState.isWordMode ? 0 : 1;
-           }
+        // Ensure materials are loaded
+        if (appState.onlineMaterials.isEmpty && !appState.isLoadingOnlineMaterials) {
+             appState.fetchOnlineMaterialsList();
         }
 
         return DefaultTabController(
-          length: 4,
-          initialIndex: initialTab,
+          length: 3,
           child: AlertDialog(
-            title: Text(appState.currentMode == 3 ? l10n.chatAiChat : l10n.menuSelectMaterialSet),
-            content: SizedBox( // Constrain height
+            title: Text(l10n.menuOnlineLibrary), // "온라인 자료실"
+            content: SizedBox(
               width: double.maxFinite,
-              height: 400, // Fixed height for TabView
+              height: 500, // Sufficient height
               child: Column(
                 children: [
                   TabBar(
                     labelColor: Colors.blueAccent,
                     unselectedLabelColor: Colors.grey,
-                    isScrollable: true,
+                    isScrollable: false,
                     tabs: [
-                      Tab(text: l10n.tabWord),
-                      Tab(text: l10n.tabSentence),
-                      Tab(text: l10n.menuOnlineLibrary),
-                      Tab(text: l10n.chatHistoryTitle),
+                      Tab(text: l10n.tabWord), // "단어"
+                      Tab(text: l10n.tabSentence), // "문장"
+                      Tab(text: l10n.tabConversation), // "대화"
                     ],
                   ),
                   Expanded(
-                    child: TabBarView(
-                      children: [
-                        // 1. Word Tab
-                        ListView(
+                    child: Consumer<AppState>(
+                      builder: (context, state, _) {
+                        if (state.isLoadingOnlineMaterials) {
+                          return const Center(child: CircularProgressIndicator());
+                        }
+
+                        // Filter lists based on 'category' content in materials_v3.json
+                        final wordMaterials = state.onlineMaterials.where((m) => m['category'] == 'Words').toList();
+                        final sentenceMaterials = state.onlineMaterials.where((m) => m['category'] == 'Sentences').toList();
+                        final dialogueMaterials = state.onlineMaterials.where((m) => m['category'] == 'Dialogue').toList();
+
+                        return TabBarView(
                           children: [
-                            ListTile(
-                              leading: const Icon(Icons.all_inclusive, color: Colors.indigo),
-                              title: Text(l10n.reviewAll),
-                              onTap: () {
-                                appState.setRecordTypeFilter('word');
-                                appState.selectMaterial(-1);
-                                Navigator.pop(context);
-                              },
-                            ),
-                            const Divider(),
-                            ...wordMaterials.map((m) {
-                                  String subject = m['subject'] as String;
-                                  if (m['id'] == 0) subject = "기본 단어 저장소";
-                                  return ListTile(
-                                    leading: const Icon(Icons.book, color: Colors.blueAccent),
-                                    title: Text(subject),
-                                    subtitle: Text('${l10n.wordModeLabel}: ${m['word_count']} / ${l10n.labelSentence}: ${m['sentence_count']}'),
-                                    onTap: () {
-                                       appState.setRecordTypeFilter('word');
-                                       appState.selectMaterial(m['id'] as int);
-                                       Navigator.pop(context);
-                                    },
-                                  );
-                            }),
+                            // 1. Word Tab
+                            _buildMaterialList(context, state, wordMaterials, 'word'),
+                            // 2. Sentence Tab
+                            _buildMaterialList(context, state, sentenceMaterials, 'sentence'),
+                            // 3. Dialogue Tab
+                            _buildMaterialList(context, state, dialogueMaterials, 'dialogue'),
                           ],
-                        ),
-                        // 2. Sentence Tab
-                        ListView(
-                          children: [
-                            ListTile(
-                              leading: const Icon(Icons.all_inclusive, color: Colors.indigo),
-                              title: Text(l10n.reviewAll),
-                              onTap: () {
-                                appState.setRecordTypeFilter('sentence');
-                                appState.selectMaterial(-1);
-                                Navigator.pop(context);
-                              },
-                            ),
-                            const Divider(),
-                            ...sentenceMaterials.map((m) {
-                                  String subject = m['subject'] as String;
-                                  if (m['id'] == 0) subject = "기본 문장 저장소";
-                                  return ListTile(
-                                    leading: const Icon(Icons.article, color: Colors.deepOrangeAccent),
-                                    title: Text(subject),
-                                    subtitle: Text('${l10n.wordModeLabel}: ${m['word_count']} / ${l10n.labelSentence}: ${m['sentence_count']}'),
-                                    onTap: () {
-                                       appState.setRecordTypeFilter('sentence');
-                                       appState.selectMaterial(m['id'] as int);
-                                       Navigator.pop(context);
-                                    },
-                                  );
-                            }),
-                          ],
-                        ),
-                        // 3. Online Materials Tab (New!)
-                        Consumer<AppState>(
-                          builder: (context, state, _) {
-                            if (state.isLoadingOnlineMaterials) {
-                              return const Center(child: CircularProgressIndicator());
-                            }
-                            if (state.onlineMaterials.isEmpty) {
-                              return Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const Text('온라인 자료를 불러올 수 없습니다.'),
-                                    TextButton(
-                                      onPressed: () => state.fetchOnlineMaterialsList(),
-                                      child: const Text('다시 시도'),
-                                    ),
-                                  ],
-                                ),
-                              );
-                            }
-                            return ListView.builder(
-                              itemCount: state.onlineMaterials.length,
-                              itemBuilder: (context, idx) {
-                                final material = state.onlineMaterials[idx];
-                                return ListTile(
-                                  leading: const Icon(Icons.cloud_download, color: Colors.green),
-                                  title: Text(material['name'] ?? ''),
-                                  subtitle: Text(material['description'] ?? ''),
-                                  onTap: () async {
-                                    // Start import
-                                    final result = await state.importRemoteMaterial(material);
-                                    if (context.mounted) {
-                                      ScaffoldMessenger.of(context).showSnackBar(
-                                        SnackBar(content: Text(state.statusMessage)),
-                                      );
-                                      if (result['success'] == true) {
-                                        Navigator.pop(context);
-                                      }
-                                    }
-                                  },
-                                );
-                              },
-                            );
-                          },
-                        ),
-                        // 4. Dialogues Tab
-                        ListView(
-                          children: [
-                            if (dialogueGroups.isEmpty)
-                              Padding(
-                                padding: const EdgeInsets.all(32),
-                                child: Center(child: Text(l10n.chatNoConversations)),
-                              ),
-                            ...dialogueGroups.map((group) {
-                                  return ListTile(
-                                    leading: CircleAvatar(
-                                      backgroundColor: Colors.blue[50],
-                                      child: const Icon(Icons.chat, size: 16, color: Colors.blue),
-                                    ),
-                                    title: Text(group.title ?? l10n.chatUntitled),
-                                    subtitle: Text(group.persona ?? ''),
-                                    onTap: () async {
-                                       await appState.loadExistingDialogue(group);
-                                       if (context.mounted) {
-                                         // Switch to Chat Mode if not already there
-                                         appState.switchMode(3); 
-                                         Navigator.pop(context);
-                                       }
-                                    },
-                                  );
-                            }),
-                          ],
-                        ),
-                      ],
+                        );
+                      },
                     ),
                   ),
                 ],
               ),
             ),
             actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: Text(l10n.cancel),
-            ),
-          ],
-        ),
-      );
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: Text(l10n.cancel),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildMaterialList(BuildContext context, AppState state, List<Map<String, dynamic>> materials, String type) {
+    if (materials.isEmpty) {
+      return const Center(child: Text("자료가 없습니다."));
+    }
+    return ListView.builder(
+      itemCount: materials.length,
+      itemBuilder: (context, index) {
+        final material = materials[index];
+        return ListTile(
+          leading: Icon(
+            type == 'word' ? Icons.book : (type == 'dialogue' ? Icons.chat : Icons.article),
+            color: type == 'word' ? Colors.blue : (type == 'dialogue' ? Colors.green : Colors.orange),
+          ),
+          title: Text(material['name'] ?? ''),
+          subtitle: Text(material['description'] ?? ''),
+          onTap: () async {
+            // Import Logic with Auto-Select
+            final result = await state.importRemoteMaterial(material);
+            
+            if (context.mounted) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text(state.statusMessage)), // "XXX Imported Successfully"
+              );
+
+              if (result['success'] == true) {
+                 Navigator.pop(context); // Close dialog first
+
+                 // Auto-Select Logic
+                 if (type == 'dialogue') {
+                    // Switch to Mode 3
+                    final dId = result['dialogue_id'] as String?;
+                    if (dId != null) {
+                       final group = state.dialogueGroups.firstWhere(
+                         (g) => g.id == dId, 
+                         orElse: () => DialogueGroup(id: dId!, title: material['name'], createdAt: DateTime.now())
+                       );
+                       await state.loadExistingDialogue(group);
+                       state.switchMode(3);
+                    }
+                 } else {
+                    // Switch to Mode 2 (Review) if not already
+                    if (state.currentMode != 2) {
+                       state.switchMode(2);
+                    }
+                    
+                    // Select Material
+                    final mId = result['material_id'] as int? ?? 0;
+                    if (mId > 0) {
+                      state.setRecordTypeFilter(type == 'word' ? 'word' : 'sentence');
+                      state.selectMaterial(mId);
+                    }
+                 }
+              }
+            }
+          },
+        );
       },
     );
   }

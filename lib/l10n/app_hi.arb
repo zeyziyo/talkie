@@ -679,5 +679,6 @@
   "chatAllConversations": "सभी वार्तालाप",
   "confirmDeleteConversation": "क्या आप इस वार्तालाप को हटाना चाहते हैं?\nहटाए गए वार्तालाप को पुनर्प्राप्त नहीं किया जा सकता.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

@@ -679,5 +679,6 @@
   "chatAllConversations": "Kaikki keskustelut",
   "confirmDeleteConversation": "Haluatko varmasti poistaa tämän keskustelun?\nPoistettuja keskusteluja ei voi palauttaa.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

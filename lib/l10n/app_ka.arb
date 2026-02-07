@@ -679,5 +679,6 @@
   "chatAllConversations": "ყველა საუბარი",
   "confirmDeleteConversation": "გსურთ ამ საუბრის წაშლა?\nწაშლილი საუბრის აღდგენა შეუძლებელია.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

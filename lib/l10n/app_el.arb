@@ -679,5 +679,6 @@
   "chatAllConversations": "Όλες οι συνομιλίες",
   "confirmDeleteConversation": "Θέλετε να διαγράψετε αυτήν τη συνομιλία;\nΔεν θα μπορείτε να την επαναφέρετε.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

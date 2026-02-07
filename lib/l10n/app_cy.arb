@@ -679,5 +679,6 @@
   "chatAllConversations": "Pob sgwrs",
   "confirmDeleteConversation": "Ydych chi'n siŵr eich bod am ddileu'r sgwrs hon?\nNi ellir adfer sgyrsiau sydd wedi'u dileu.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

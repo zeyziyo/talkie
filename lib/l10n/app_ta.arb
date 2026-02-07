@@ -679,5 +679,6 @@
   "chatAllConversations": "எல்லா உரையாடல்களும்",
   "confirmDeleteConversation": "இந்த உரையாடலை நீக்கவா?\nநீக்கப்பட்ட உரையாடலை மீட்டெடுக்க முடியாது.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

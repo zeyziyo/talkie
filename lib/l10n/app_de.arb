@@ -679,5 +679,6 @@
   "chatAllConversations": "Alle Konversationen",
   "confirmDeleteConversation": "Möchten Sie diese Konversation wirklich löschen?\nGelöschte Konversationen können nicht wiederhergestellt werden.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

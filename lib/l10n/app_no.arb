@@ -679,5 +679,6 @@
   "chatAllConversations": "Alle samtaler",
   "confirmDeleteConversation": "Vil du slette denne samtalen?\nSlettede samtaler kan ikke gjenopprettes.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

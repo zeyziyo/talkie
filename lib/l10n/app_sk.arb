@@ -679,5 +679,6 @@
   "chatAllConversations": "Všetky konverzácie",
   "confirmDeleteConversation": "Naozaj chcete zmazať túto konverzáciu?\nZmazané konverzácie sa nedajú obnoviť.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

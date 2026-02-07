@@ -679,5 +679,6 @@
   "chatAllConversations": "Visi pokalbiai",
   "confirmDeleteConversation": "Ar tikrai norite ištrinti šį pokalbį?\nIštrintų pokalbių atkurti negalima.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

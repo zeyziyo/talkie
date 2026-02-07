@@ -679,5 +679,6 @@
   "chatAllConversations": "စကားပြောအားလုံး",
   "confirmDeleteConversation": "ဤစကားပြောကို ဖျက်ရန်သေချာပါသလား။\nဖျက်လိုက်သော စကားပြောများကို ပြန်ယူ၍မရပါ။",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

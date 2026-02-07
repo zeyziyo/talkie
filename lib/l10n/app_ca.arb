@@ -679,5 +679,6 @@
   "chatAllConversations": "Totes les converses",
   "confirmDeleteConversation": "Vols suprimir aquesta conversa?\nNo podràs recuperar-la.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

@@ -679,5 +679,6 @@
   "chatAllConversations": "כל השיחות",
   "confirmDeleteConversation": "האם למחוק שיחה זו?\nלא ניתן יהיה לשחזר שיחה שנמחקה.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

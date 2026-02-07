@@ -679,5 +679,6 @@
   "chatAllConversations": "所有對話",
   "confirmDeleteConversation": "您確定要刪除此對話嗎？\n刪除的對話將無法復原。",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

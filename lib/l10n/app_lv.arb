@@ -679,5 +679,6 @@
   "chatAllConversations": "Visas sarunas",
   "confirmDeleteConversation": "Vai vēlaties izdzēst šo sarunu?\nIzdzēstās sarunas nevar atgūt.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

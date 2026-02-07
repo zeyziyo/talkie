@@ -28,6 +28,14 @@
     - [x] 홈페이지 자료 생성 logic 및 가이드 문서 최신화
     - [x] 5대 필수 문서(task, history, README, roadmap, future) 현행화
 
+- [x] Phase 76.5: UI/UX Polish - Online Library Refactor
+    - [x] `Online Library` 팝업 구조 개편 (단어/문장/대화 3탭 분리)
+    - [x] 온라인 자료 필터링 로직 구현 (Category: Words/Sentences/Dialogue)
+    - [x] 자료 임포트 후 자동 선택 및 화면 갱신(Auto-Select) 구현
+        - [x] Word/Sentence: `material_id` 기반 `selectMaterial`
+        - [x] Dialogue: `dialogue_id` 기반 `switchMode(3)`
+        - [x] 완료 메시지 형식: `"{Material Name} Imported Successfully"` 확인
+
 - [/] Phase 75: Pre-deployment Quality Assurance (출시 전 품질 검증)
     - [x] `docs/PRE_DEPLOYMENT_CHECKLIST.md` 생성 및 보안 점검 결과/계획 통합
     - [x] 1. 보안 및 API 감사 (보안 강화 로직 반영 및 체크리스트 업데이트 완료)

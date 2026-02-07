@@ -679,5 +679,6 @@
   "chatAllConversations": "Öll samtöl",
   "confirmDeleteConversation": "Viltu eyða þessu samtali?\nEydd samtöl er ekki hægt að endurheimta.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

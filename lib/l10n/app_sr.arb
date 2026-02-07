@@ -679,5 +679,6 @@
   "chatAllConversations": "Сви разговори",
   "confirmDeleteConversation": "Да ли сте сигурни да желите да избришете овај разговор?\nИзбрисани разговори се не могу вратити.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

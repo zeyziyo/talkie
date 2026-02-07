@@ -679,5 +679,6 @@
   "chatAllConversations": "Barcha suhbatlar",
   "confirmDeleteConversation": "Bu suhbatni oʻchirishni xohlaysizmi?\nOʻchirilgan suhbatni qayta tiklab boʻlmaydi.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

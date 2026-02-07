@@ -679,5 +679,6 @@
   "chatAllConversations": "Elkarrizketa guztiak",
   "confirmDeleteConversation": "Elkarrizketa hau ezabatu nahi duzu?\nEzabatu ondoren ezin da berreskuratu.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }

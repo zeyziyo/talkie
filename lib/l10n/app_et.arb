@@ -679,5 +679,6 @@
   "chatAllConversations": "Kõik vestlused",
   "confirmDeleteConversation": "Kas sa oled kindel, et soovid selle vestluse kustutada?\nKustutatud vestlust ei saa taastada.",
   "menuOnlineLibrary": "Online Library",
-  "menuTutorial": "Tutorial"
+  "menuTutorial": "Tutorial",
+  "tabConversation": "Conversation"
 }
