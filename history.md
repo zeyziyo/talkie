@@ -21,6 +21,7 @@
     - **Deleted** `scripts/merge_materials.ps1` and `docs/merges` folder.
     - **Refactored** `docs/index.html`: Removed browser-side JSON merging/downloading. Redesigned the UI to guide users to "Direct Online Import" within the app.
     - **Refactored** `lib/services/database_service.dart`: Renamed `Smart Merge` logs to `Smart Sync` to avoid terminological confusion. **Fixed critical build error** by restoring `dId` as `String` and providing the required `id` parameter to `insertDialogueGroup`.
+- **UI Improvements**: Replaced "Import from Device" in AppBar menu with **"Online Library"**, allowing direct access to the online materials tab.
     - **Updated** `README.md`: Clarified that materials are imported directly from the app, not downloaded as merged files.
 - **Result**: Simplified project architecture and eliminated unintended file creation, ensuring the "Direct Online Import" is the primary and only data flow.
 

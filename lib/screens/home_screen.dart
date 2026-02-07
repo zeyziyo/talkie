@@ -424,8 +424,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     case 'refresh':
                       appState.loadStudyMaterials();
                       break;
-                    case 'import':
-                      _handleImport(context);
+                    case 'online_library':
+                      _showMaterialSelectionDialog(context, initialTabIndex: 2); // Open Online Tab
                       break;
                     case 'help':
                       showDialog(
@@ -461,12 +461,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 PopupMenuItem<String>(
-                  value: 'import', // Maps to Device Import
+                  value: 'online_library', // Maps to Online Tab
                   child: Row(
                     children: [
-                      const Icon(Icons.file_upload, color: Colors.blueGrey),
+                      const Icon(Icons.cloud_download, color: Colors.blueAccent),
                       const SizedBox(width: 8),
-                      Text(l10n.menuDeviceImport), // "Device..."
+                      Text(l10n.menuOnlineLibrary), // "Online Library"
                     ],
                   ),
                 ),
@@ -797,6 +797,17 @@ class _HomeScreenState extends State<HomeScreen> {
         
         final wordMaterials = materials.where((m) {
            if (m['id'] == 0) return true; // Always show Basic
+  void _showMaterialSelectionDialog(BuildContext context, {int initialTabIndex = 0}) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        final appState = Provider.of<AppState>(context, listen: false);
+        final l10n = AppLocalizations.of(context)!;
+
+        // ... existing material filtering logic ...
+        final materials = appState.studyMaterials;
+        final wordMaterials = materials.where((m) {
+           if (m['id'] == 0) return true; // Always show Basic
            final wCount = m['word_count'] as int? ?? 0;
            final sCount = m['sentence_count'] as int? ?? 0;
            return (wCount + sCount) > 0;
@@ -811,13 +822,17 @@ class _HomeScreenState extends State<HomeScreen> {
 
         final dialogueGroups = appState.dialogueGroups;
         
-        // Determine initial tab based on mode
-        int initialTab = 0; // Word by default
-        if (appState.currentMode == 3) { // AI Chat Mode
-          initialTab = 2; // Dialogues Tab
-        } else if (appState.currentMode == 1 || appState.currentMode == 2) {
-          // If in review/practice, keep Word or Sentence based on filter
-          initialTab = appState.isWordMode ? 0 : 1;
+        // Determine initial tab based on mode if not provided explicitly (0)
+        int initialTab = initialTabIndex; 
+        
+        // If initialTabIndex is 0 (default), check mode
+        if (initialTabIndex == 0) {
+           if (appState.currentMode == 3) { // AI Chat Mode
+             initialTab = 3; // Dialogues Tab (index changed to 3)
+           } else if (appState.currentMode == 1 || appState.currentMode == 2) {
+             // If in review/practice, keep Word or Sentence based on filter
+             initialTab = appState.isWordMode ? 0 : 1;
+           }
         }
 
         return DefaultTabController(

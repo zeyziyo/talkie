@@ -11,6 +11,7 @@
 | 76.3 | 대화 임포트 정합성 및 JSON 최적화 | 완료 | 02.07 | group_id 매핑 해결 및 빈 필드 제거 |
 | [x] **Phase 75.3** | **UX 및 튜토리얼 일치성 강화** | **완료** | 02.07 | 80개 언어 동기화 및 Mode 3 보정 |
 | [x] **Phase 76.4** | **온라인 직접 임포트 및 TTS 정밀화** | **완료** | 02.07 | 서버 직접 자료실 구축 및 '콩글리쉬' 완결 |
+| [x] **Phase 76.5** | **UI/UX Polish** | **완료** | 02.08 | 온라인 자료실 접근성 강화 (AppBar 메뉴) |
 
 ---
 
@@ -28,6 +29,7 @@
 - **[Fix] 대화 임포트 정합성**: `saveUnifiedRecord` 반환값을 활용하여 `chat_messages`와 `sentences` 간의 `group_id` 연결을 완벽하게 복구.
 - **[Optimization] JSON 병합 구조**: 홈페이지(`index.html`) 및 임포트 로직에서 값이 없는 불필요한 필드 자동 제거.
 - **[Feature] AI 채팅 드롭다운 필터**: `ChatHistoryScreen`에 주제별 필터링 UI 도입.
+- **[UI] Online Library 접근성 강화**: AppBar 메뉴에 '온라인 자료실'을 추가하여 접근 경로 단축 (Phase 76.5).
 
 ### [2026-02-05] Phase 75: 출시 전 품질 검증 진입
 - **[Feature] L10n 자동화 검증 스크립트**: `scripts/verify_l10n.py` 구현하여 80개 언어 리소스 무결성 확보.

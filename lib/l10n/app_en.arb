@@ -679,6 +679,8 @@
   "language": "Language",
   "male": "Male",
   "female": "Female",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial",
   "neutral": "Neutral",
   "chatAllConversations": "All Conversations",
   "confirmDeleteConversation": "Are you sure you want to delete this conversation?\nThis action cannot be undone."

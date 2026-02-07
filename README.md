@@ -130,7 +130,7 @@ Talkie now fully supports **80 languages** worldwide:
 - **기타 (Others)**: **Amharic, Nepali, Pashto... (and more)**
 
 > [!TIP]
-> 홈페이지(`Zeyziyo/talkie`)에서 지원 언어별 학습 자료 카탈로그를 확인하고, 앱 내 **온라인 자료실(Mode 2/3 Import > Online)**에서 직접 임포트하여 즉시 학습을 시작할 수 있습니다.
+> 홈페이지(`Zeyziyo/talkie`)에서 지원 언어별 학습 자료 카탈로그를 확인하고, 앱 내 **앱바 메뉴 > 온라인 자료실(Online Library)**에서 직접 임포트하여 즉시 학습을 시작할 수 있습니다.
 
 ## 기술 스택 (Tech Stack)
 
