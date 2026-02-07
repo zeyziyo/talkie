@@ -677,5 +677,7 @@
   "female": "Femër",
   "neutral": "Asnjëanës",
   "chatAllConversations": "Të gjitha bisedat",
-  "confirmDeleteConversation": "A jeni i sigurt që dëshironi ta fshini këtë bisedë?\nBisedat e fshira nuk mund të rikthehen."
+  "confirmDeleteConversation": "A jeni i sigurt që dëshironi ta fshini këtë bisedë?\nBisedat e fshira nuk mund të rikthehen.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

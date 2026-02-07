@@ -677,5 +677,7 @@
   "female": "Женски",
   "neutral": "Неутрален",
   "chatAllConversations": "Сите разговори",
-  "confirmDeleteConversation": "Дали сте сигурни дека сакате да го избришете овој разговор?\nИзбришаните разговори не можат да се вратат."
+  "confirmDeleteConversation": "Дали сте сигурни дека сакате да го избришете овој разговор?\nИзбришаните разговори не можат да се вратат.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

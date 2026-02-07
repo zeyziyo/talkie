@@ -677,5 +677,7 @@
   "female": "ගැහැණු",
   "neutral": "මධ්‍යස්ථ",
   "chatAllConversations": "සියලු සංවාද",
-  "confirmDeleteConversation": "ඔබට මෙම සංවාදය මකා දැමීමට අවශ්‍යද?\nමකා දැමූ සංවාද නැවත ලබා ගත නොහැක."
+  "confirmDeleteConversation": "ඔබට මෙම සංවාදය මකා දැමීමට අවශ්‍යද?\nමකා දැමූ සංවාද නැවත ලබා ගත නොහැක.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

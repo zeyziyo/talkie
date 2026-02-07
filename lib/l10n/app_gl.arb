@@ -677,5 +677,7 @@
   "female": "Muller",
   "neutral": "Neutro",
   "chatAllConversations": "Todas as conversas",
-  "confirmDeleteConversation": "Queres eliminar esta conversa?\nNon poderás recuperala."
+  "confirmDeleteConversation": "Queres eliminar esta conversa?\nNon poderás recuperala.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

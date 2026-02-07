@@ -374,7 +374,13 @@ class AppLocalizationsTl extends AppLocalizations {
   String get stopPractice => 'Hentuan ang Pagsasanay';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Simulan ang Tutorial';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Input ng Boses';

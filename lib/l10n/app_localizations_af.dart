@@ -368,7 +368,13 @@ class AppLocalizationsAf extends AppLocalizations {
   String get stopPractice => 'Stop';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Begin Toer';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Stem Invoer';

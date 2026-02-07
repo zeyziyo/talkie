@@ -371,7 +371,13 @@ class AppLocalizationsSi extends AppLocalizations {
   String get stopPractice => 'පුහුණුව නවත්වන්න';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'මාර්ගෝපදේශය ආරම්භ කරන්න';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'හඬ ආදානය';

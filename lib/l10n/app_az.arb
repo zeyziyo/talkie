@@ -677,5 +677,7 @@
   "female": "Qadın",
   "neutral": "neytral",
   "chatAllConversations": "Bütün söhbətlər",
-  "confirmDeleteConversation": "Bu söhbəti silmək istədiyinizə əminsinizmi?\nSilinmiş söhbətləri geri qaytarmaq mümkün deyil."
+  "confirmDeleteConversation": "Bu söhbəti silmək istədiyinizə əminsinizmi?\nSilinmiş söhbətləri geri qaytarmaq mümkün deyil.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

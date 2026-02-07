@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Neutre",
   "chatAllConversations": "Toutes les conversations",
-  "confirmDeleteConversation": "Êtes-vous sûr de vouloir supprimer cette conversation ?\nElle ne pourra pas être récupérée."
+  "confirmDeleteConversation": "Êtes-vous sûr de vouloir supprimer cette conversation ?\nElle ne pourra pas être récupérée.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

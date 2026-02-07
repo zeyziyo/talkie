@@ -677,5 +677,7 @@
   "female": "Эмэгтэй",
   "neutral": "Төвийг сахисан",
   "chatAllConversations": "Бүх яриа",
-  "confirmDeleteConversation": "Та энэ яриаг устгах уу?\nУстгасан яриаг сэргээх боломжгүй."
+  "confirmDeleteConversation": "Та энэ яриаг устгах уу?\nУстгасан яриаг сэргээх боломжгүй.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

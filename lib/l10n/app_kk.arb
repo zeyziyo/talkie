@@ -677,5 +677,7 @@
   "female": "Әйел",
   "neutral": "Бейтарап",
   "chatAllConversations": "Барлық сұхбаттар",
-  "confirmDeleteConversation": "Бұл сұхбатты жойғыңыз келе ме?\nЖойылған сұхбатты қалпына келтіру мүмкін емес."
+  "confirmDeleteConversation": "Бұл сұхбатты жойғыңыз келе ме?\nЖойылған сұхбатты қалпына келтіру мүмкін емес.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

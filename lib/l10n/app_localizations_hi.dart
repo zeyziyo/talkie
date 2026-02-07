@@ -370,7 +370,13 @@ class AppLocalizationsHi extends AppLocalizations {
   String get stopPractice => 'अभ्यास रोकें';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'टूर शुरू करें';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'वॉइस इनपुट';

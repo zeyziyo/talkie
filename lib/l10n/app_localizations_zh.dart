@@ -365,7 +365,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get stopPractice => '停止练习';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => '开始教程';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => '语音输入';
@@ -1320,7 +1326,13 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get stopPractice => '停止练习';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => '开始教程';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => '语音输入';
@@ -2277,7 +2289,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get stopPractice => '停止練習';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => '開始教學';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => '語音輸入';

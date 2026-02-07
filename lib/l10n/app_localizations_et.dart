@@ -373,7 +373,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get stopPractice => 'Lõpeta harjutamine';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Alusta õpetust';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Häälsisend';

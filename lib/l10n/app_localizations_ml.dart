@@ -370,7 +370,13 @@ class AppLocalizationsMl extends AppLocalizations {
   String get stopPractice => 'നിർത്തുക';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ടൂർ ആരംഭിക്കുക';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'വോയ്സ് ഇൻപുട്ട്';

@@ -370,7 +370,13 @@ class AppLocalizationsNo extends AppLocalizations {
   String get stopPractice => 'Stopp';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Start Tur';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Stemmeinndata';

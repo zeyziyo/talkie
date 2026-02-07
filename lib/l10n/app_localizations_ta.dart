@@ -374,7 +374,13 @@ class AppLocalizationsTa extends AppLocalizations {
   String get stopPractice => 'நிறுத்து';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'சுற்றுலாவைத் தொடங்கு';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'குரல் உள்ளீடு';

@@ -370,7 +370,13 @@ class AppLocalizationsKm extends AppLocalizations {
   String get stopPractice => 'បញ្ឈប់ការអនុវត្ត';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ចាប់ផ្ដើមមេរៀនណែនាំ';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'ការបញ្ចូលសំឡេង';

@@ -371,7 +371,13 @@ class AppLocalizationsPl extends AppLocalizations {
   String get stopPractice => 'Zatrzymaj';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Start Przewodnik';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Głos';

@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Netral",
   "chatAllConversations": "Semua percakapan",
-  "confirmDeleteConversation": "Anda yakin ingin menghapus percakapan ini?\nPercakapan yang dihapus tidak dapat dipulihkan."
+  "confirmDeleteConversation": "Anda yakin ingin menghapus percakapan ini?\nPercakapan yang dihapus tidak dapat dipulihkan.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

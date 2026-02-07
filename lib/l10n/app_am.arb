@@ -677,5 +677,7 @@
   "female": "ሴት",
   "neutral": "ገለልተኛ",
   "chatAllConversations": "ሁሉም ንግግሮች",
-  "confirmDeleteConversation": "ይህን ውይይት መሰረዝ ይፈልጋሉ?\nየተሰረዙ ንግግሮችን መልሶ ማግኘት አይቻልም።"
+  "confirmDeleteConversation": "ይህን ውይይት መሰረዝ ይፈልጋሉ?\nየተሰረዙ ንግግሮችን መልሶ ማግኘት አይቻልም።",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

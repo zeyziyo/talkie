@@ -369,7 +369,13 @@ class AppLocalizationsSw extends AppLocalizations {
   String get stopPractice => 'Simamisha';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Anza Ziara';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Ingizo la Sauti';

@@ -368,7 +368,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get stopPractice => 'Zastavit';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Spustit prohlídku';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Hlasový vstup';

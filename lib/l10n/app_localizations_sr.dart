@@ -372,7 +372,13 @@ class AppLocalizationsSr extends AppLocalizations {
   String get stopPractice => 'Зауставите вежбање';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Започните упутство';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Гласовни унос';

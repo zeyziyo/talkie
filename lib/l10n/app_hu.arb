@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Semleges",
   "chatAllConversations": "Összes beszélgetés",
-  "confirmDeleteConversation": "Törli ezt a beszélgetést?\nA törölt beszélgetések nem állíthatók vissza."
+  "confirmDeleteConversation": "Törli ezt a beszélgetést?\nA törölt beszélgetések nem állíthatók vissza.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

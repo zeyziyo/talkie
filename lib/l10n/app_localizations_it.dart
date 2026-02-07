@@ -373,7 +373,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get stopPractice => 'Ferma Pratica';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Inizia Tutorial';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Input Vocale';

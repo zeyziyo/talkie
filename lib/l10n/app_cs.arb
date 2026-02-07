@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Neutrální",
   "chatAllConversations": "Všechny konverzace",
-  "confirmDeleteConversation": "Opravdu chcete smazat tuto konverzaci?\nSmazané konverzace nelze obnovit."
+  "confirmDeleteConversation": "Opravdu chcete smazat tuto konverzaci?\nSmazané konverzace nelze obnovit.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

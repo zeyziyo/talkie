@@ -372,7 +372,13 @@ class AppLocalizationsEl extends AppLocalizations {
   String get stopPractice => 'Διακοπή';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Έναρξη Περιήγησης';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Φωνητική Είσοδος';

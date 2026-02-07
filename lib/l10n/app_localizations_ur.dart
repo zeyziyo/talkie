@@ -367,7 +367,13 @@ class AppLocalizationsUr extends AppLocalizations {
   String get stopPractice => 'روکیں';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ٹور شروع کریں';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'وائس ان پٹ';

@@ -368,7 +368,13 @@ class AppLocalizationsGu extends AppLocalizations {
   String get stopPractice => 'થોભો';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ટૂર શરૂ કરો';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'વોઇસ ઇનપુટ';

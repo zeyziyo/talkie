@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Neutral",
   "chatAllConversations": "Alle Konversationen",
-  "confirmDeleteConversation": "Möchten Sie diese Konversation wirklich löschen?\nGelöschte Konversationen können nicht wiederhergestellt werden."
+  "confirmDeleteConversation": "Möchten Sie diese Konversation wirklich löschen?\nGelöschte Konversationen können nicht wiederhergestellt werden.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

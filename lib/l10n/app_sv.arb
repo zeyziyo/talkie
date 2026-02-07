@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Neutral",
   "chatAllConversations": "Alla konversationer",
-  "confirmDeleteConversation": "Vill du radera den här konversationen?\nRaderade konversationer kan inte återställas."
+  "confirmDeleteConversation": "Vill du radera den här konversationen?\nRaderade konversationer kan inte återställas.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

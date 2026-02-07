@@ -372,7 +372,13 @@ class AppLocalizationsSq extends AppLocalizations {
   String get stopPractice => 'Ndalo praktikën';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Fillo udhëzuesin';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Hyrja zanore';

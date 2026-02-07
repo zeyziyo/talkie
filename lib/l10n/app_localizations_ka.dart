@@ -371,7 +371,13 @@ class AppLocalizationsKa extends AppLocalizations {
   String get stopPractice => 'ვარჯიშის შეწყვეტა';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'სახელმძღვანელოს დაწყება';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'ხმოვანი შეყვანა';

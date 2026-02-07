@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Si upande wowote",
   "chatAllConversations": "Mazungumzo Yote",
-  "confirmDeleteConversation": "Unataka kufuta mazungumzo haya?\nHazitaweza kurejeshwa."
+  "confirmDeleteConversation": "Unataka kufuta mazungumzo haya?\nHazitaweza kurejeshwa.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

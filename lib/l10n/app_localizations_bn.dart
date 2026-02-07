@@ -370,7 +370,13 @@ class AppLocalizationsBn extends AppLocalizations {
   String get stopPractice => 'থানান';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ট্যুর শুরু করুন';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'ভয়েস ইনপুট';

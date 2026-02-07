@@ -371,7 +371,13 @@ class AppLocalizationsKy extends AppLocalizations {
   String get stopPractice => 'Көнүгүүнү токтотуу';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Окутууну баштоо';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Үн киргизүү';

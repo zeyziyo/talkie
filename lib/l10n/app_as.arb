@@ -677,5 +677,7 @@
   "female": "মহিলা",
   "neutral": "উদাসীন",
   "chatAllConversations": "সকলো কথোপকথন",
-  "confirmDeleteConversation": "আপুনি এই কথোপকথনটো মচিব বিচাৰে নেকি?\nমচাৰ পিছত কথোপকথনটো পুনৰুদ্ধাৰ কৰিব নোৱাৰিব।"
+  "confirmDeleteConversation": "আপুনি এই কথোপকথনটো মচিব বিচাৰে নেকি?\nমচাৰ পিছত কথোপকথনটো পুনৰুদ্ধাৰ কৰিব নোৱাৰিব।",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

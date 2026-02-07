@@ -371,7 +371,13 @@ class AppLocalizationsFil extends AppLocalizations {
   String get stopPractice => 'Itigil';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Simulan ang Pasyal';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Voice Input';

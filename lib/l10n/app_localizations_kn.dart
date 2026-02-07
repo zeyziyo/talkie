@@ -371,7 +371,13 @@ class AppLocalizationsKn extends AppLocalizations {
   String get stopPractice => 'ನಿಲ್ಲಿಸಿ';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ಪ್ರವಾಸ ಪ್ರಾರಂಭಿಸಿ';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'ಧ್ವನಿ ಇನ್ಪುಟ್';

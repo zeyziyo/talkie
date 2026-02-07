@@ -369,7 +369,13 @@ class AppLocalizationsPa extends AppLocalizations {
   String get stopPractice => 'ਰੋਕੋ';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ਟੂਰ ਸ਼ੁਰੂ ਕਰੋ';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'ਵੌਇਸ ਇਨਪੁਟ';

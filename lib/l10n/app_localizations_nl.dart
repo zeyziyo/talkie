@@ -370,7 +370,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get stopPractice => 'Stop Oefening';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Start Rondleiding';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Spraakinvoer';

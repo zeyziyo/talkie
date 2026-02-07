@@ -368,7 +368,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get stopPractice => 'ຢຸດຝຶກ';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ເລີ່ມການສອນ';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'ປ້ອນຂໍ້ມູນດ້ວຍສຽງ';

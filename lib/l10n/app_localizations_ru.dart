@@ -371,7 +371,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get stopPractice => 'Остановить';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Начать тур';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Голосовой ввод';

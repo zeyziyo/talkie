@@ -367,7 +367,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get stopPractice => 'ልምምድ ያቁሙ';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ትምህርቱን ይጀምሩ';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'የድምፅ ግቤት';

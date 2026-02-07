@@ -372,7 +372,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get stopPractice => 'Praktika gelditu';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Tutoriala hasi';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Ahots sarrera';

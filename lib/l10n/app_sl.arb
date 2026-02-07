@@ -677,5 +677,7 @@
   "female": "Ženska",
   "neutral": "Nevtralno",
   "chatAllConversations": "Vsi pogovori",
-  "confirmDeleteConversation": "Želite izbrisati ta pogovor?\nIzbrisanih pogovorov ni mogoče obnoviti."
+  "confirmDeleteConversation": "Želite izbrisati ta pogovor?\nIzbrisanih pogovorov ni mogoče obnoviti.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

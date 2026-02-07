@@ -370,7 +370,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get stopPractice => 'Dừng luyện tập';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Bắt đầu hướng dẫn';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Nhập giọng nói';

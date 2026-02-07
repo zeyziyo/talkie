@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Neutru",
   "chatAllConversations": "Toate conversațiile",
-  "confirmDeleteConversation": "Sigur dorești să ștergi această conversație?\nConversațiile șterse nu pot fi recuperate."
+  "confirmDeleteConversation": "Sigur dorești să ștergi această conversație?\nConversațiile șterse nu pot fi recuperate.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

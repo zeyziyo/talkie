@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "محايد",
   "chatAllConversations": "جميع المحادثات",
-  "confirmDeleteConversation": "هل أنت متأكد أنك تريد حذف هذه المحادثة؟\nلا يمكنك استعادة المحادثات المحذوفة."
+  "confirmDeleteConversation": "هل أنت متأكد أنك تريد حذف هذه المحادثة؟\nلا يمكنك استعادة المحادثات المحذوفة.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

@@ -677,5 +677,7 @@
   "female": "ମହିଳା",
   "neutral": "ଉଦାସୀନ",
   "chatAllConversations": "ସମସ୍ତ ବାର୍ତ୍ତାଳାପ",
-  "confirmDeleteConversation": "ଆପଣ ଏହି ବାର୍ତ୍ତାଳାପକୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?\nଡିଲିଟ୍ ହୋଇଥିବା ବାର୍ତ୍ତାଳାପକୁ ପୁନରୁଦ୍ଧାର କରାଯାଇପାରିବ ନାହିଁ।"
+  "confirmDeleteConversation": "ଆପଣ ଏହି ବାର୍ତ୍ତାଳାପକୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?\nଡିଲିଟ୍ ହୋଇଥିବା ବାର୍ତ୍ତାଳାପକୁ ପୁନରୁଦ୍ଧାର କରାଯାଇପାରିବ ନାହିଁ।",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

@@ -371,7 +371,13 @@ class AppLocalizationsMn extends AppLocalizations {
   String get stopPractice => 'Дадлага зогсоох';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Хичээл эхлүүлэх';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Дуут оруулах';

@@ -374,7 +374,13 @@ class AppLocalizationsZu extends AppLocalizations {
   String get stopPractice => 'Misa Ukuzijwayeza';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Qala Isifundo';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Okokufaka Kwezwi';

@@ -372,7 +372,13 @@ class AppLocalizationsBe extends AppLocalizations {
   String get stopPractice => 'Спыніце практыкаванне';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Пачніце навучанне';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Галасавы ўвод';

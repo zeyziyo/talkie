@@ -368,7 +368,13 @@ class AppLocalizationsFi extends AppLocalizations {
   String get stopPractice => 'Lopeta';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Aloita Kierros';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Äänisyöte';

@@ -370,7 +370,13 @@ class AppLocalizationsHu extends AppLocalizations {
   String get stopPractice => 'Leállítás';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Túra Indítása';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Hangbemenet';

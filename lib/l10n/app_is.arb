@@ -677,5 +677,7 @@
   "female": "Kona",
   "neutral": "Hlutlaust",
   "chatAllConversations": "Öll samtöl",
-  "confirmDeleteConversation": "Viltu eyða þessu samtali?\nEydd samtöl er ekki hægt að endurheimta."
+  "confirmDeleteConversation": "Viltu eyða þessu samtali?\nEydd samtöl er ekki hægt að endurheimta.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

@@ -371,7 +371,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get stopPractice => 'Pārtraukt praktizēties';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Sākt apmācību';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Balss ievade';

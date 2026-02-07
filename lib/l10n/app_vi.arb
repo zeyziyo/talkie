@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Trung tính",
   "chatAllConversations": "Toàn bộ hội thoại",
-  "confirmDeleteConversation": "Bạn có chắc chắn muốn xóa hội thoại này?\nHội thoại đã xóa không thể khôi phục."
+  "confirmDeleteConversation": "Bạn có chắc chắn muốn xóa hội thoại này?\nHội thoại đã xóa không thể khôi phục.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

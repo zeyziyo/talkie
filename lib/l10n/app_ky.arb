@@ -677,5 +677,7 @@
   "female": "Аял",
   "neutral": "Бейтарап",
   "chatAllConversations": "Бардык баарлашуулар",
-  "confirmDeleteConversation": "Бул баарлашууну жок кылууну каалайсызбы?\nЖок кылынган баарлашууну кайра калыбына келтирүү мүмкүн эмес."
+  "confirmDeleteConversation": "Бул баарлашууну жок кылууну каалайсызбы?\nЖок кылынган баарлашууну кайра калыбына келтирүү мүмкүн эмес.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

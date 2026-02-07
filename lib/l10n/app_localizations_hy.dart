@@ -374,7 +374,13 @@ class AppLocalizationsHy extends AppLocalizations {
   String get stopPractice => 'Դադարեցնել մարզումը';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Սկսել ձեռնարկը';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Ձայնային մուտքագրում';

@@ -367,7 +367,13 @@ class AppLocalizationsTh extends AppLocalizations {
   String get stopPractice => 'หยุดฝึก';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'เริ่มทัวร์';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'เสียงเข้า';

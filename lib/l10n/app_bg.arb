@@ -677,5 +677,7 @@
   "female": "Жена",
   "neutral": "Неутрален",
   "chatAllConversations": "Всички разговори",
-  "confirmDeleteConversation": "Искате ли да изтриете този разговор?\nИзтритите разговори не могат да бъдат възстановени."
+  "confirmDeleteConversation": "Искате ли да изтриете този разговор?\nИзтритите разговори не могат да бъдат възстановени.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

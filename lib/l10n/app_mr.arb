@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "तटस्थ",
   "chatAllConversations": "सर्व संभाषणे",
-  "confirmDeleteConversation": "तुम्ही हे संभाषण हटवू इच्छिता?\nहटवलेले संभाषण पुनर्प्राप्त केले जाऊ शकत नाही."
+  "confirmDeleteConversation": "तुम्ही हे संभाषण हटवू इच्छिता?\nहटवलेले संभाषण पुनर्प्राप्त केले जाऊ शकत नाही.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

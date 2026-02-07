@@ -371,7 +371,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get stopPractice => 'Mashqni to\'xtatish';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'O\'quv qo\'llanmani boshlash';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Ovozli kiritish';

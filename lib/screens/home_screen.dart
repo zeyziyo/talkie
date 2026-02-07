@@ -779,24 +779,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
 
-  void _showMaterialSelectionDialog(BuildContext context) {
-    final appState = Provider.of<AppState>(context, listen: false);
-    appState.fetchOnlineMaterialsList(); // Proactively fetch online materials
-    
-    showDialog(
-      context: context,
-      builder: (context) {
-        final appState = Provider.of<AppState>(context, listen: false); // Listen false
-        final l10n = AppLocalizations.of(context)!;
-        
-        final materials = appState.studyMaterials;
-        
-        // Filter materials for each section
-        // Note: material['id'] == 0 is Basic.
-        // We can include Basic in both if it has content or is default.
-        
-        final wordMaterials = materials.where((m) {
-           if (m['id'] == 0) return true; // Always show Basic
+
+
   void _showMaterialSelectionDialog(BuildContext context, {int initialTabIndex = 0}) {
     showDialog(
       context: context,
@@ -852,7 +836,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     tabs: [
                       Tab(text: l10n.tabWord),
                       Tab(text: l10n.tabSentence),
-                      Tab(text: '온라인 (Online)'),
+                      Tab(text: l10n.menuOnlineLibrary),
                       Tab(text: l10n.chatHistoryTitle),
                     ],
                   ),

@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "తటస్థ",
   "chatAllConversations": "అన్ని సంభాషణలు",
-  "confirmDeleteConversation": "మీరు ఈ సంభాషణను తొలగించాలనుకుంటున్నారా?\nతొలగించిన సంభాషణను తిరిగి పొందలేరు."
+  "confirmDeleteConversation": "మీరు ఈ సంభాషణను తొలగించాలనుకుంటున్నారా?\nతొలగించిన సంభాషణను తిరిగి పొందలేరు.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

@@ -375,7 +375,13 @@ class AppLocalizationsMy extends AppLocalizations {
   String get stopPractice => 'လေ့ကျင့်ခန်း ရပ်ပါ';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'သင်ခန်းစာ စတင်';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'အသံ ထည့်သွင်းခြင်း';

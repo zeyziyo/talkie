@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Neutral",
   "chatAllConversations": "Semua Perbualan",
-  "confirmDeleteConversation": "Adakah anda pasti mahu memadam perbualan ini?\nPerbualan yang dipadam tidak dapat dipulihkan."
+  "confirmDeleteConversation": "Adakah anda pasti mahu memadam perbualan ini?\nPerbualan yang dipadam tidak dapat dipulihkan.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

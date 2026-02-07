@@ -882,11 +882,23 @@ abstract class AppLocalizations {
   /// **'연습 중지'**
   String get stopPractice;
 
+  /// No description provided for @menuOnlineLibrary.
+  ///
+  /// In ko, this message translates to:
+  /// **'온라인 자료실'**
+  String get menuOnlineLibrary;
+
   /// No description provided for @startTutorial.
   ///
   /// In ko, this message translates to:
   /// **'튜토리얼 시작'**
   String get startTutorial;
+
+  /// No description provided for @menuTutorial.
+  ///
+  /// In ko, this message translates to:
+  /// **'사용법 투어'**
+  String get menuTutorial;
 
   /// No description provided for @tutorialMicTitle.
   ///

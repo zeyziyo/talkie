@@ -372,7 +372,13 @@ class AppLocalizationsOr extends AppLocalizations {
   String get stopPractice => 'ଅଭ୍ୟାସ ବନ୍ଦ କରନ୍ତୁ';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ଟ୍ୟୁଟୋରିଆଲ୍ ଆରମ୍ଭ କରନ୍ତୁ';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'ଭଏସ୍ ଇନପୁଟ୍';

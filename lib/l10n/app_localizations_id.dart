@@ -371,7 +371,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get stopPractice => 'Hentikan Latihan';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Mulai Tur';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Input Suara';

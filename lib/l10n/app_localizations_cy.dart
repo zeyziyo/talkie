@@ -374,7 +374,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get stopPractice => 'Stopio Ymarfer';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Dechrau Tiwtorial';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Mewnbwn Llais';

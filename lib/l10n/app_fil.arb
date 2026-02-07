@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Neutral",
   "chatAllConversations": "Lahat ng Usapan",
-  "confirmDeleteConversation": "Sigurado ka bang gusto mong burahin ang usapang ito?\nHindi na ito mababawi pa."
+  "confirmDeleteConversation": "Sigurado ka bang gusto mong burahin ang usapang ito?\nHindi na ito mababawi pa.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

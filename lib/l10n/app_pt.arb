@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Neutro",
   "chatAllConversations": "Todas as conversas",
-  "confirmDeleteConversation": "Tem certeza que deseja excluir esta conversa?\nAs conversas excluídas não podem ser recuperadas."
+  "confirmDeleteConversation": "Tem certeza que deseja excluir esta conversa?\nAs conversas excluídas não podem ser recuperadas.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

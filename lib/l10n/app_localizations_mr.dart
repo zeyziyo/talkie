@@ -368,7 +368,13 @@ class AppLocalizationsMr extends AppLocalizations {
   String get stopPractice => 'थांबा';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'टूर सुरू करा';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'व्हॉइस इनपुट';

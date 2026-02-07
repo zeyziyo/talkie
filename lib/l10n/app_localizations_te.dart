@@ -371,7 +371,13 @@ class AppLocalizationsTe extends AppLocalizations {
   String get stopPractice => 'ఆపు';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'టూర్ ప్రారంభించు';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'వాయిస్ ఇన్‌పుట్';

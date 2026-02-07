@@ -371,7 +371,13 @@ class AppLocalizationsBs extends AppLocalizations {
   String get stopPractice => 'Zaustavi vježbu';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Pokreni vodič';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Glasovni unos';

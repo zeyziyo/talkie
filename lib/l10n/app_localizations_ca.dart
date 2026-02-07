@@ -373,7 +373,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get stopPractice => 'Atura la pràctica';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Inicia el tutorial';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Entrada de veu';

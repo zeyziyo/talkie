@@ -17,6 +17,7 @@
 - [x] Hotfix: Build Error Resolution (빌드 오류 수정)
     - [x] `HomeScreen` 중복 함수 정의 제거 및 파라미터 오류 수정
     - [x] `HelpDialog` 누락된 `startTutorial` 로컬라이제이션 키 추가
+    - [x] **L10n Sync**: 전체 언어 ARB 파일 동기화 완료
     - [x] `history.md` 및 `task.md` 현행화
 
 - [x] Phase 76: Data Integration & AI Chat Optimization (데이터 통합 및 AI 채팅 고도화)

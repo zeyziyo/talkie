@@ -366,7 +366,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get stopPractice => 'עצור';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'התחל סיור';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'קלט קולי';

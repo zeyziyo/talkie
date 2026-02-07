@@ -370,7 +370,13 @@ class AppLocalizationsSv extends AppLocalizations {
   String get stopPractice => 'Stoppa';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Starta Tur';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Röstinmatning';

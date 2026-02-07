@@ -371,7 +371,13 @@ class AppLocalizationsBo extends AppLocalizations {
   String get stopPractice => 'Stop Practice';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Start Tutorial';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Voice Input';

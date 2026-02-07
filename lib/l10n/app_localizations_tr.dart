@@ -368,7 +368,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get stopPractice => 'Durdur';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Turu Başlat';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Ses Girişi';

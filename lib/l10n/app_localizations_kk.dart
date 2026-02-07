@@ -371,7 +371,13 @@ class AppLocalizationsKk extends AppLocalizations {
   String get stopPractice => 'Жаттығуды тоқтату';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Оқулықты бастау';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Дауысты енгізу';

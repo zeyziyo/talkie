@@ -368,7 +368,13 @@ class AppLocalizationsFa extends AppLocalizations {
   String get stopPractice => 'توقف';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'شروع تور';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'ورودی صوتی';

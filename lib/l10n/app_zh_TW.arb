@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "中性",
   "chatAllConversations": "所有對話",
-  "confirmDeleteConversation": "您確定要刪除此對話嗎？\n刪除的對話將無法復原。"
+  "confirmDeleteConversation": "您確定要刪除此對話嗎？\n刪除的對話將無法復原。",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

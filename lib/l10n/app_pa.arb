@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "ਨਿਰਪੱਖ",
   "chatAllConversations": "ਸਾਰੀਆਂ ਗੱਲਬਾਤਾਂ",
-  "confirmDeleteConversation": "ਕੀ ਤੁਸੀਂ ਇਸ ਗੱਲਬਾਤ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?\nਮਿਟਾਈ ਗਈ ਗੱਲਬਾਤ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।"
+  "confirmDeleteConversation": "ਕੀ ਤੁਸੀਂ ਇਸ ਗੱਲਬਾਤ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?\nਮਿਟਾਈ ਗਈ ਗੱਲਬਾਤ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

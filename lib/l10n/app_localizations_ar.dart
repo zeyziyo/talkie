@@ -369,7 +369,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get stopPractice => 'إيقاف الممارسة';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'بدء الجولة';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'إدخال صوتي';

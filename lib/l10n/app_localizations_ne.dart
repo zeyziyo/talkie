@@ -371,7 +371,13 @@ class AppLocalizationsNe extends AppLocalizations {
   String get stopPractice => 'अभ्यास रोक्नुहोस्';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'ट्यूटोरियल सुरु गर्नुहोस्';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'आवाज इनपुट';

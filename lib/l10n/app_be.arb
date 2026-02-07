@@ -677,5 +677,7 @@
   "female": "Жанчына",
   "neutral": "Нейтральны",
   "chatAllConversations": "Усе размовы",
-  "confirmDeleteConversation": "Вы сапраўды жадаеце выдаліць гэтую размову?\nЯе нельга будзе аднавіць."
+  "confirmDeleteConversation": "Вы сапраўды жадаеце выдаліць гэтую размову?\nЯе нельга будзе аднавіць.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

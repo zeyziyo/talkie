@@ -366,7 +366,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get stopPractice => '練習停止';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'チュートリアル開始';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => '音声入力';

@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "নিরপেক্ষ",
   "chatAllConversations": "সকল কথোপকথন",
-  "confirmDeleteConversation": "আপনি কি এই কথোপকথনটি মুছে ফেলতে চান?\nমোছা কথোপকথন পুনরুদ্ধার করা যাবে না।"
+  "confirmDeleteConversation": "আপনি কি এই কথোপকথনটি মুছে ফেলতে চান?\nমোছা কথোপকথন পুনরুদ্ধার করা যাবে না।",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

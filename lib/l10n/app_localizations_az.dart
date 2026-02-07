@@ -371,7 +371,13 @@ class AppLocalizationsAz extends AppLocalizations {
   String get stopPractice => 'Məşqi Dayandırın';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Təlimata Başlayın';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Səs Girişi';

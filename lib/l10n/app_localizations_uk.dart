@@ -371,7 +371,13 @@ class AppLocalizationsUk extends AppLocalizations {
   String get stopPractice => 'Зупинити';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Почати тур';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Голосовий ввід';

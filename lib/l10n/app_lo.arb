@@ -677,5 +677,7 @@
   "female": "ຍິງ",
   "neutral": "ເປັນກາງ",
   "chatAllConversations": "ສົນທະນາທັງໝົດ",
-  "confirmDeleteConversation": "ທ່ານແນ່ໃຈບໍ່ວ່າຈະລຶບການສົນທະນານີ້?\nການສົນທະນາທີ່ຖືກລຶບຈະບໍ່ສາມາດກູ້ຄືນໄດ້."
+  "confirmDeleteConversation": "ທ່ານແນ່ໃຈບໍ່ວ່າຈະລຶບການສົນທະນານີ້?\nການສົນທະນາທີ່ຖືກລຶບຈະບໍ່ສາມາດກູ້ຄືນໄດ້.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

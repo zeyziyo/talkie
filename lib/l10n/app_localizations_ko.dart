@@ -364,7 +364,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get stopPractice => '연습 중지';
 
   @override
+  String get menuOnlineLibrary => '온라인 자료실';
+
+  @override
   String get startTutorial => '튜토리얼 시작';
+
+  @override
+  String get menuTutorial => '사용법 투어';
 
   @override
   String get tutorialMicTitle => '음성 입력';

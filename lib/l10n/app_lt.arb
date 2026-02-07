@@ -677,5 +677,7 @@
   "female": "Moteris",
   "neutral": "Neutralus",
   "chatAllConversations": "Visi pokalbiai",
-  "confirmDeleteConversation": "Ar tikrai norite ištrinti šį pokalbį?\nIštrintų pokalbių atkurti negalima."
+  "confirmDeleteConversation": "Ar tikrai norite ištrinti šį pokalbį?\nIštrintų pokalbių atkurti negalima.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

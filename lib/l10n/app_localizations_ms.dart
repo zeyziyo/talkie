@@ -368,7 +368,13 @@ class AppLocalizationsMs extends AppLocalizations {
   String get stopPractice => 'Berhenti';
 
   @override
+  String get menuOnlineLibrary => 'Online Library';
+
+  @override
   String get startTutorial => 'Mula Lawatan';
+
+  @override
+  String get menuTutorial => 'Tutorial';
 
   @override
   String get tutorialMicTitle => 'Input Suara';

@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Neutraal",
   "chatAllConversations": "Alle gesprekke",
-  "confirmDeleteConversation": "Wil jy hierdie gesprek uitvee?\nJy sal nie die uitgeveede gesprek kan herstel nie."
+  "confirmDeleteConversation": "Wil jy hierdie gesprek uitvee?\nJy sal nie die uitgeveede gesprek kan herstel nie.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

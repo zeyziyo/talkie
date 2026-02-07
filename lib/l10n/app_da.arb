@@ -677,5 +677,7 @@
   "female": "Female",
   "neutral": "Neutral",
   "chatAllConversations": "Alle samtaler",
-  "confirmDeleteConversation": "Er du sikker på, at du vil slette denne samtale?\nSlettede samtaler kan ikke gendannes."
+  "confirmDeleteConversation": "Er du sikker på, at du vil slette denne samtale?\nSlettede samtaler kan ikke gendannes.",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }

@@ -677,5 +677,7 @@
   "female": "महिला",
   "neutral": "तटस्थ",
   "chatAllConversations": "सबै कुराकानीहरू",
-  "confirmDeleteConversation": "के तपाइँ यो कुराकानी मेटाउन निश्चित हुनुहुन्छ?\nमेटाइएको कुराकानी पुन: प्राप्त गर्न सकिँदैन।"
+  "confirmDeleteConversation": "के तपाइँ यो कुराकानी मेटाउन निश्चित हुनुहुन्छ?\nमेटाइएको कुराकानी पुन: प्राप्त गर्न सकिँदैन।",
+  "menuOnlineLibrary": "Online Library",
+  "menuTutorial": "Tutorial"
 }
