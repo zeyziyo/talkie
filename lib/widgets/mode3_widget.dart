@@ -10,12 +10,12 @@ import '../l10n/app_localizations.dart';
 /// - 대기 시간 설정 기능 (버튼 방식)
 class Mode3Widget extends StatelessWidget {
   final Key? materialDropdownKey;
-  final Key? resetButtonKey;
+  final Key? settingsKey;
 
   const Mode3Widget({
     super.key,
     this.materialDropdownKey,
-    this.resetButtonKey,
+    this.settingsKey,
     this.onSelectMaterial,
   });
 
@@ -162,6 +162,7 @@ class Mode3Widget extends StatelessWidget {
                       
                       // 2. Tag Selection Button
                       InkWell(
+                        key: settingsKey,
                         onTap: () => _showTagSelectionDialog(context, appState),
                         borderRadius: BorderRadius.circular(8),
                         child: Container(

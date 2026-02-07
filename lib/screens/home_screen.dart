@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // Mode 3 Keys
   final GlobalKey _mode3DropdownKey = GlobalKey();
-  final GlobalKey _mode3ResetKey = GlobalKey(); // New: Reset Button Key
+  final GlobalKey _mode3SettingsKey = GlobalKey(); // Renamed from _mode3ResetKey
   
   // Tutorial Keys - Fixed
   final GlobalKey _menuKey = GlobalKey(); // Renamed from _tabKey
@@ -199,7 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ));
     } else if (modeIndex == 2) {
       targets.add(_buildTarget(
-        _mode3ResetKey, 
+        _mode3SettingsKey, 
         l10n.tutorialM3ResetTitle, 
         l10n.tutorialM3ResetDesc,
         ContentAlign.top,
@@ -603,7 +603,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Mode3Widget(
                   materialDropdownKey: _mode3DropdownKey,
-                  resetButtonKey: _mode3ResetKey,
+                  settingsKey: _mode3SettingsKey,
                   onSelectMaterial: () => _showMaterialSelectionDialog(context),
                 ),
                 ChatHistoryScreen(

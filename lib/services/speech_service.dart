@@ -273,14 +273,23 @@ class SpeechService {
     }
     
     // 1. Language Detection (Fix for Konglish)
-    // If text contains Hangul, FORCE Korean locale (ko-KR)
+    // Heuristic: Check if the text actually matches the requested language
     if (RegExp(r'[가-힣]').hasMatch(text)) {
       lang = 'ko-KR';
-    } 
-    // If text is purely ASCII (English/Numbers/Punctuation) and lang was set to Korean, FORCE English (en-US)
-    else if (RegExp(r'^[a-zA-Z0-9\s.,?!;:()"\-]+$').hasMatch(text)) {
-      if (lang.startsWith('ko')) {
-        lang = 'en-US';
+    } else if (RegExp(r'[\u3040-\u309F\u30A0-\u30FF]').hasMatch(text)) {
+      lang = 'ja-JP';
+    } else if (RegExp(r'[\u4E00-\u9FFF]').hasMatch(text)) {
+      // Basic check for Chinese, prioritize zh-CN if not specified
+      if (!lang.startsWith('zh')) lang = 'zh-CN';
+    } else {
+      // If it's mostly Latin/ASCII and specified lang is Korean/Japanese/etc, 
+      // it's likely a translation or English phrase that should be read in English accent.
+      final latinPattern = RegExp(r'^[a-zA-Z0-9\s.,?!;:()"\-]+$');
+      if (latinPattern.hasMatch(text.trim())) {
+        // Force English if specified lang is an Asian language or not set
+        if (lang.startsWith('ko') || lang.startsWith('ja') || lang.startsWith('zh')) {
+          lang = 'en-US';
+        }
       }
     }
     

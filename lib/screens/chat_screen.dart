@@ -535,7 +535,7 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
   
-  void _speak(String text, String languageCode, {bool isUser = true}) {
+  void _speak(String text, String languageCode, {bool isUser = true, String? gender}) {
     if (text.isEmpty) return;
     
     // Use AppState's locale helper for consistency
@@ -548,10 +548,10 @@ class _ChatScreenState extends State<ChatScreen> {
       return match.group(1) ?? '';
     });
     
-    // Determine Gender
-    final gender = isUser ? appState.chatUserGender : appState.chatAiGender;
+    // Determine Gender (Use provided gender or fallback to AppState)
+    final resolvedGender = gender ?? (isUser ? appState.chatUserGender : appState.chatAiGender);
 
-    _speechService.speak(cleanText, lang: localeId, gender: gender);
+    _speechService.speak(cleanText, lang: localeId, gender: resolvedGender);
   }
 
   @override
@@ -847,7 +847,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   if (isSpeaking) {
                     _speechService.stopSpeaking();
                   } else {
-                    _speak(text, lang, isUser: isUser);
+                    _speak(text, lang, isUser: isUser, gender: gender);
                   }
                 },
                 constraints: const BoxConstraints(),
@@ -921,7 +921,7 @@ class _ChatScreenState extends State<ChatScreen> {
           });
           
           // Speak immediately
-          _speak(newForeignText, newLang, isUser: false);
+          _speak(newForeignText, newLang, isUser: false, gender: p.gender);
        }
      } catch (e) {
        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Translation failed')));

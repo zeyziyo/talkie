@@ -104,18 +104,19 @@ You can import both individual sentences (`entries`) and complete conversation s
 
 ```json
 {
-  "source_language": "ko",
-  "target_language": "en",
-  "entries": [
-    { "source_text": "사과", "target_text": "Apple", "note": "Fruit" }
+  "subject": "첫 만남 (First Meeting)",
+  "default_type": "dialogue",
+  "participants": [
+    { "id": "p1", "name": "조단", "role": "사용자", "gender": "남성", "lang_code": "en-US" },
+    { "id": "p2", "name": "민지", "role": "AI", "gender": "여성", "lang_code": "ko-KR" }
   ],
-  "dialogues": [
+  "entries": [
     {
-      "title": "공항 체크인 연습",
-      "persona": "공항 직원",
-      "messages": [
-        { "speaker": "Me", "source_text": "체크인하고 싶어요.", "target_text": "I'd like to check in." }
-      ]
+      "speaker": "조단",
+      "text": "안녕하세요! 제 이름은 조단입니다.",
+      "sequence_order": 1,
+      "style": "높임말",
+      "tags": ["인사", "소개"]
     }
   ]
 }
