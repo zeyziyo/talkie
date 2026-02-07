@@ -14,6 +14,11 @@
 6. **엄격한 프로토콜**: 한 가지 코드 수정이나 추가 작업을 완료했을 때에 반드시 **문제의 원인과 조치 내용**을 개발자에게 설명을 한 다음 **허락을 받고** 다음 과정을 진행한다.
 7. **문서 관리**: `task.md`의 내용은 항상 **최신순(역순)**으로 정리한다. 새로운 태스크나 Phase는 항상 규칙 섹션 바로 아래에 가장 먼저 추가한다.
 
+- [x] Hotfix: Build Error Resolution (빌드 오류 수정)
+    - [x] `HomeScreen` 중복 함수 정의 제거 및 파라미터 오류 수정
+    - [x] `HelpDialog` 누락된 `startTutorial` 로컬라이제이션 키 추가
+    - [x] `history.md` 및 `task.md` 현행화
+
 - [x] Phase 76: Data Integration & AI Chat Optimization (데이터 통합 및 AI 채팅 고도화)
     - [x] 학습 자료 병합 도구(`scripts/merge_materials.ps1`) 개발
     - [x] DB 스키마 확장(`style` 컬럼 추가, Version 11)
