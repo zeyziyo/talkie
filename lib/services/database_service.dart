@@ -2457,7 +2457,39 @@ class DatabaseService {
       'text': row['text'] as String,
       'note': (row['note'] as String?) ?? '', // 주석 정보 추가
       'type': type,
+    return results.map((row) => {
+      'text': row['text'] as String,
+      'note': (row['note'] as String?) ?? '', // 주석 정보 추가
+      'type': type,
     }).toList();
+  }
+
+  /// Phase 77: Pivot Search (Find Group ID by Text)
+  /// word: text to search (e.g. "Apple")
+  /// lang: language (e.g. "en")
+  static Future<int?> findGroupIdByText(String text, String lang) async {
+    final db = await database;
+    // Check 'words' table first (most likely)
+    final words = await db.query(
+      'words',
+      columns: ['group_id'],
+      where: 'text = ? AND lang_code = ?',
+      whereArgs: [text, lang],
+      limit: 1,
+    );
+    if (words.isNotEmpty) return words.first['group_id'] as int;
+    
+    // Check 'sentences'
+    final sentences = await db.query(
+      'sentences',
+      columns: ['group_id'],
+      where: 'text = ? AND lang_code = ?',
+      whereArgs: [text, lang],
+      limit: 1,
+    );
+    if (sentences.isNotEmpty) return sentences.first['group_id'] as int;
+    
+    return null;
   }
 
   /// Toggle Memorized Status (is_memorized)

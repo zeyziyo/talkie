@@ -873,7 +873,23 @@ class AppState extends ChangeNotifier {
 
     try {
       final db = await DatabaseService.database;
-      final timestamp = DateTime.now().millisecondsSinceEpoch;
+      
+      // Phase 77: Pivot Strategy (Manual Input)
+      // If we have an English translation (Pivot), try to find an existing Group ID
+      int? pivotGroupId;
+      if (_englishText.isNotEmpty) {
+          pivotGroupId = await DatabaseService.findGroupIdByText(_englishText, 'en');
+      } 
+      // Fallback: Check source text if it is English
+      if (pivotGroupId == null && _sourceLang == 'en') {
+          pivotGroupId = await DatabaseService.findGroupIdByText(_sourceText, 'en');
+      }
+       // Fallback: Check target text if it is English
+      if (pivotGroupId == null && _targetLang == 'en') {
+          pivotGroupId = await DatabaseService.findGroupIdByText(_translatedText, 'en');
+      }
+      
+      final timestamp = pivotGroupId ?? DateTime.now().millisecondsSinceEpoch;
       final createdAt = DateTime.now().toIso8601String();
 
       // 1. Local Save (Unified Schema)
