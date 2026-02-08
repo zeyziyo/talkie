@@ -2457,10 +2457,6 @@ class DatabaseService {
       'text': row['text'] as String,
       'note': (row['note'] as String?) ?? '', // 주석 정보 추가
       'type': type,
-    return results.map((row) => {
-      'text': row['text'] as String,
-      'note': (row['note'] as String?) ?? '', // 주석 정보 추가
-      'type': type,
     }).toList();
   }
 
@@ -2491,7 +2487,6 @@ class DatabaseService {
     
     return null;
   }
-
   /// Toggle Memorized Status (is_memorized)
   static Future<void> toggleMemorizedStatus(int id, String type, bool status) async {
     final db = await database;
