@@ -52,10 +52,10 @@ if (-not $isCodeModified) {
 
 Write-Host "⚠️  Code changes detected. Checking documentation..." -ForegroundColor Yellow
 
-# 3. Check History File
+# 3. Check History File (Index OR Sub-files)
 $isHistoryUpdated = $false
 foreach ($line in $gitStatus) {
-    if ($line.ToString().Contains($HistoryFile)) {
+    if ($line.ToString().Contains($HistoryFile) -or $line.ToString().Contains("docs/history/")) {
         $isHistoryUpdated = $true
         break
     }

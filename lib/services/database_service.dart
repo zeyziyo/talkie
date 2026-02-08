@@ -1120,6 +1120,7 @@ class DatabaseService {
     String jsonContent, {
     String? fileName,
     String? userId,
+    String? overrideSubject, // Phase 77: Force subject alignment for Pivot Strategy
   }) async {
     try {
       final data = json.decode(jsonContent) as Map<String, dynamic>;
@@ -1133,7 +1134,7 @@ class DatabaseService {
       final sourceLang = _mapLanguageToCode(rawSourceLang);
       final targetLang = _mapLanguageToCode(rawTargetLang);
       
-      final subject = (meta['title'] ?? data['subject']) as String? ?? fileName ?? 'Imported Material';
+      final subject = overrideSubject ?? (meta['title'] ?? data['subject']) as String? ?? fileName ?? 'Imported Material';
       final source = (meta['source'] ?? data['source']) as String? ?? 'File Upload';
       final fileCreatedAt = (meta['created_at'] ?? data['created_at']) as String? ?? DateTime.now().toIso8601String();
       final defaultType = (data['default_type'] ?? meta['default_type']) as String? ?? 'sentence';

@@ -1,32 +1,39 @@
 # 🛑 시작 전 확인: `.agent/rules`를 반드시 먼저 읽을 것!
 # 🛑 에이전트 실책 사례 및 경고: **사용자의 승인 없는 커밋/푸시는 즉시 세션 종료 사유임.** (2026-01-31 사례 반영)
 # 🛑 중요 규칙 (필독)
-0. **한국어 우선**: 이용자(개발자)에게 보여주는 모든 문서(Artifacts), 설명(Task Summary), 진행 상황(Task Status), 워크스루(Walkthrough)는 반드시 **한국어**로 작성해야 한다.
-1. **로컬 패키징 금지**: 로컬에서 APK/AAB 파일을 생성하지 말 것. 배포는 반드시 `git push`를 통해 수행한다. (디버깅을 위한 `flutter run`은 허용됨).
-2. **CI/CD 전용**: 모든 배포는 반드시 `git push`를 통해 수행한다.
-3. **예외 없음**: 어떤 경우에도 이 규칙을 어기지 말 것.
-4. **승인 필요**: `git commit` 및 `git push` 전에는 항상 사용자의 승인을 받을 것.
-5. **완료의 정의**: 기능을 구현할 때 다음 사항을 선제적으로 업데이트해야 한다:
-    - **코드**: 구현 및 테스트 (분석)
-    - **문서**: README.md, 도움말/가이드 (문구), 로드맵 상태
-    - **다국어**: 모든 언어 파일(ARB)에 새로운 키 추가 (필요시 영어 기본값 사용)
-    - **검증**: 사용자에게 알리기 전에 위 사항을 모두 확인할 것. 프롬프트를 기다리지 말 것.
-6. **엄격한 프로토콜**: 한 가지 코드 수정이나 추가 작업을 완료했을 때에 반드시 **문제의 원인과 조치 내용**을 개발자에게 설명을 한 다음 **허락을 받고** 다음 과정을 진행한다.
-7. **문서 관리**: `task.md`의 내용은 항상 **최신순(역순)**으로 정리한다. 새로운 태스크나 Phase는 항상 규칙 섹션 바로 아래에 가장 먼저 추가한다.
+**[강제 규칙 원본 보기: docs/PROJECT_RULES.md](docs/PROJECT_RULES.md)**
+(모든 규칙은 위 문서를 따르며, 이곳에는 진행 상황만 기록합니다.)
 
-- [x] Hotfix: HomeScreen Build Failure (Refactor Regression)
-    - [x] Fix `_showMaterialSelectionDialog` undefined error (Replace with `_showOnlineLibraryDialog`)
-    - [x] Fix `DialogueGroup` undefined error (Add import)
-    - [x] Fix `DialogueGroup` constructor error (Add `userId: 'user'`)
-    - [x] Fix `selectMaterial` empty content bug (Restore `loadStudyMaterials` & `getStudyMaterials`)
-    - [x] Implement **Pivot Strategy** for Smart Sync (Shared Group IDs)
-    - [x] Implement **Manual Input Pivot Strategy** (Text Match Linking)
-    - [x] Implement **Auto-Download English Pivot** (1+1 Download)
+**[필수 문서 현행화 대상]**
+1. `docs/PROJECT_RULES.md`
+2. `task.md`
+3. `history.md`: 작업 이력 인덱스 (상세: `docs/history/*.md`)
+4. `README.md`: 사용자 매뉴얼 및 기능 소개.
+5. `future_roadmap.md`
 
-- [x] Hotfix: Build Error Resolution (빌드 오류 수정)
+- [x] 프로젝트 파일 정리 (Project File Cleanup)
+    - [x] 삭제: `models.json`, `ROADMAP_AND_CHANGELOG_*.md`, 로그/임시 파일.
+    - [x] 이동: `*_BUILD_STRUCTURE.md` → `docs/guides/`.
+
+- [x] 긴급 수정: 홈 화면 빌드 오류 (Hotfix: HomeScreen Build Failure)
+    - [x] `_showMaterialSelectionDialog` 미정의 오류 수정 (`_showOnlineLibraryDialog`로 교체)
+    - [x] `DialogueGroup` 미정의 오류 수정 (import 추가)
+    - [x] `DialogueGroup` 생성자 오류 수정 (`userId: 'user'` 추가)
+    - [x] `selectMaterial` 빈 콘텐츠 버그 수정 (`loadStudyMaterials` & `getStudyMaterials` 복구)
+    - [x] 스마트 동기화를 위한 **피벗 전략(Pivot Strategy)** 구현 (공유 그룹 ID)
+    - [x] **수동 입력 피벗 전략** 구현 (텍스트 일치 연결)
+    - [x] **영어 피벗 자동 다운로드** 구현 (1+1 다운로드)
+
+- [x] 긴급 수정: 온라인 가져오기 노출 문제 (Hotfix: Online Import Visibility)
+    - [x] `subject` 정렬을 통한 **그룹 ID 연결** 수정 (Source/Target/Pivot)
+    - [x] **개선**: 피벗 언어(영어) 주제를 기준(Ground Truth)으로 사용
+    - [x] `userId: 'user'` 명시적 전달로 **대화 노출** 수정
+    - [x] `importFromJsonWithMetadata` 시그니처 및 사용법 업데이트
+
+- [x] 긴급 수정: 빌드 오류 해결 (Hotfix: Build Error Resolution)
     - [x] `HomeScreen` 중복 함수 정의 제거 및 파라미터 오류 수정
     - [x] `HelpDialog` 누락된 `startTutorial` 로컬라이제이션 키 추가
-    - [x] **L10n Sync**: 전체 언어 ARB 파일 동기화 완료
+    - [x] **L10n 동기화**: 전체 언어 ARB 파일 동기화 완료
     - [x] `history.md` 및 `task.md` 현행화
 
 - [x] Phase 76: Data Integration & AI Chat Optimization (데이터 통합 및 AI 채팅 고도화)
