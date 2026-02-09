@@ -197,6 +197,10 @@ class AppState extends ChangeNotifier {
   bool get isTranslating => _isTranslating;
   bool get isSpeaking => _isSpeaking;
   bool get isSaved => _isSaved;
+  
+  // Phase 77: Native Tag Strategy Support
+  String get sourceLanguage => _sourceLang;
+
 
   // PageController for Swipe Navigation (Phase 8)
   PageController? _pageController;

@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../l10n/app_localizations.dart';
 import 'package:talkie/widgets/metadata_dialog.dart';
-import 'package:talkie/widgets/online_library_dialog.dart';
+
 
 /// Mode 2: 학습 자료 및 복습 모드
 /// - 기본적으로 학습 자료를 선택하여 학습
@@ -41,7 +41,8 @@ class _Mode2WidgetState extends State<Mode2Widget> {
   
   @override
   Widget build(BuildContext context) {
-    final appState = Provider.of<AppState>(context);
+    // final appState = Provider.of<AppState>(context); // Removed unused
+
     final l10n = AppLocalizations.of(context)!;
     return Consumer<AppState>(
       builder: (context, appState, child) {
@@ -630,12 +631,6 @@ class _Mode2WidgetState extends State<Mode2Widget> {
         currentTags: appState.selectedTags.toList(),
         onTagsChanged: (newTags) {
           appState.updateSelectedTags(newTags);
-        },
-        onOpenLibrary: () {
-          showDialog(
-            context: context,
-            builder: (context) => const OnlineLibraryDialog(),
-          );
         },
       ),
     );

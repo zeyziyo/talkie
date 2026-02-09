@@ -6,7 +6,6 @@ import '../providers/app_state.dart';
 import '../l10n/app_localizations.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart' hide AppState;
 import '../services/usage_service.dart';
-import '../constants/language_constants.dart';
 import 'recommendation_widget.dart';
 import 'package:talkie/widgets/metadata_dialog.dart';
 
@@ -815,9 +814,6 @@ class _Mode1WidgetState extends State<Mode1Widget> {
             _currentTags = newTags;
           });
         },
-          });
-        },
-      ),
       ),
     );
   }

@@ -6,11 +6,9 @@ import '../l10n/app_localizations.dart';
 class MetadataDialog extends StatefulWidget {
   final List<String> currentTags;
   final Function(List<String>) onTagsChanged;
-  final Function(List<String>) onTagsChanged;
 
   const MetadataDialog({
     super.key,
-    required this.currentTags,
     required this.currentTags,
     required this.onTagsChanged,
   });
