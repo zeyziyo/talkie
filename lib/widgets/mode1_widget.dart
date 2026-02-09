@@ -9,7 +9,7 @@ import '../services/usage_service.dart';
 import '../constants/language_constants.dart';
 import 'recommendation_widget.dart';
 import 'package:talkie/widgets/metadata_dialog.dart';
-import 'package:talkie/widgets/online_library_dialog.dart';
+
 
 /// Mode 1: 검색 모드 - STT → 번역 → TTS
 class Mode1Widget extends StatefulWidget {
@@ -290,6 +290,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                 Expanded(
                                   flex: 2,
                                   child: DropdownButtonFormField<String>(
+                                    key: widget.materialDropdownKey,
                                     value: appState.recordTypeFilter == 'word' 
                                         ? (AppState.posCategories.contains(appState.sourcePos) ? appState.sourcePos : null)
                                         : (AppState.sentenceCategories.contains(appState.sourceFormType) ? appState.sourceFormType : null),
@@ -814,12 +815,9 @@ class _Mode1WidgetState extends State<Mode1Widget> {
             _currentTags = newTags;
           });
         },
-        onOpenLibrary: () {
-          showDialog(
-            context: context,
-            builder: (context) => const OnlineLibraryDialog(),
-          );
+          });
         },
+      ),
       ),
     );
   }

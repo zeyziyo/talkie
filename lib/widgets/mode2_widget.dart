@@ -1048,7 +1048,28 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                         Wrap(
                           spacing: 8.0,
                           runSpacing: 4.0,
-                          children: appState.availableTags.map((tag) {
+                          children: appState.availableTags.where((tag) {
+                             if (appState.selectedTags.contains(tag)) return true;
+                             // Phase 77: Native Tag Strategy - Filter by Source Language
+                             // Only show tags that match current source language (or are not material tags)
+                             bool isMaterialTag = false;
+                             bool matchesLanguage = false;
+                             
+                             for (var m in appState.studyMaterials) {
+                               if (m['subject'] == tag) {
+                                 isMaterialTag = true;
+                                 if (m['source_language'] == appState.sourceLanguage || m['source_language'] == 'auto') {
+                                   matchesLanguage = true;
+                                   break;
+                                 }
+                               }
+                             }
+                             
+                             if (isMaterialTag) {
+                               return matchesLanguage;
+                             }
+                             return true;
+                          }).map((tag) {
                             final isSelected = appState.selectedTags.contains(tag);
                             return FilterChip(
                               label: Text(tag),

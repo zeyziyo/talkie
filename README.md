@@ -89,7 +89,9 @@ It provides an intuitive UX for switching modes by swiping the screen. In partic
 - **TTS 엔진 최적화**: Google TTS 엔진에서 성별 인식이 안 될 경우를 대비한 스마트 추측 로직 적용
 - **데이터베이스 확장**: `dialogue_participants` 테이블 추가로 인물별 설정 영구 저장 지원
 - **대화 기능 강화 (Feb 2)**: AI 채팅 자동 제목(Chat N), 메모(Note) 기능, 대화 목록 검색 및 날짜 필터, 즉시 반응 UI(Optimistic Update) 적용
-- **온라인 자료실 통합 (Feb 8)**: `Online Library` 팝업을 `Metadata Dialog`로 통합하여 접근성 개선 및 가져온 자료 자동 태깅/필터링 지원 (Phase 76.5)
+- **온라인 자료실 통합 (Feb 8)**: `Online Library` 팝업을 `Metadata Dialog`로 통합하여 접근성 개선 및 가져온 자료 자동 태깅 (`Native Tag Strategy`) 지원 (Phase 76.5)
+- **UI 필터링 고도화 (Feb 9)**: 리뷰 모드에서 현재 학습 언어에 맞는 태그(예: "명사 1" vs "Nouns 1")만 지능적으로 필터링하여 사용자 혼란 방지 (Phase 77)
+
 
 
 ### JSON 파일 구조 (JSON Structure)

@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../l10n/app_localizations.dart';
 import 'package:talkie/widgets/metadata_dialog.dart';
-import 'package:talkie/widgets/online_library_dialog.dart';
+
 
 /// Mode 3: 말하기 모드
 /// - 선택한 학습 자료 또는 전체 문장을 바탕으로 발음 연습
@@ -320,12 +320,7 @@ class Mode3Widget extends StatelessWidget {
             appState.startMode3SessionDirectly();
           }
         },
-        onOpenLibrary: () {
-          showDialog(
-            context: context,
-            builder: (context) => const OnlineLibraryDialog(),
-          );
-        },
+
       ),
     );
   }
@@ -403,7 +398,27 @@ class Mode3Widget extends StatelessWidget {
                         Wrap(
                           spacing: 8.0,
                           runSpacing: 4.0,
-                          children: appState.availableTags.map<Widget>((tag) {
+                          children: appState.availableTags.where((tag) {
+                             if (appState.selectedTags.contains(tag)) return true;
+                             // Phase 77: Native Tag Strategy - Filter by Source Language
+                             bool isMaterialTag = false;
+                             bool matchesLanguage = false;
+                             
+                             for (var m in appState.studyMaterials) {
+                               if (m['subject'] == tag) {
+                                 isMaterialTag = true;
+                                 if (m['source_language'] == appState.sourceLanguage || m['source_language'] == 'auto') {
+                                   matchesLanguage = true;
+                                   break;
+                                 }
+                               }
+                             }
+                             
+                             if (isMaterialTag) {
+                               return matchesLanguage;
+                             }
+                             return true;
+                          }).map<Widget>((tag) {
                             final isSelected = appState.selectedTags.contains(tag);
                             return FilterChip(
                               label: Text(tag),

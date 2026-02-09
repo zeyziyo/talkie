@@ -2551,47 +2551,25 @@ class AppState extends ChangeNotifier {
       final sJson = utf8.decode(results[0].bodyBytes);
       final tJson = utf8.decode(results[1].bodyBytes);
 
-      // Pivot Strategy: Extract 'Subject' from English Data (Ground Truth)
-      String? pivotSubject;
-      String? englishJsonString;
+      // Native Strategy: Do NOT extract English subject. Use local subject.
+      // removed pivotSubject logic
 
-      if (_sourceLang == 'en') {
-        englishJsonString = sJson;
-      } else if (_targetLang == 'en') {
-        englishJsonString = tJson;
-      } else if (fetchPivot && results.length > 2 && results[2].statusCode == 200) {
-        englishJsonString = utf8.decode(results[2].bodyBytes);
-      }
 
-      if (englishJsonString != null) {
-        try {
-          final eData = json.decode(englishJsonString);
-          final eMeta = eData['meta'] as Map<String, dynamic>? ?? {};
-          pivotSubject = eMeta['title'] ?? eData['subject'];
-          print('[Pivot Sync] Extracted Standard Subject: $pivotSubject');
-        } catch (e) {
-          print('[Pivot Sync] Failed to parse English JSON for subject: $e');
-        }
-      }
-      
-      // key: Use Pivot Subject if available, else fallback to Material Name
-      final finalSubject = pivotSubject ?? mName;
-
-      _statusMessage = 'Importing $finalSubject ($sName)...';
+      _statusMessage = 'Importing $mName ($sName)...';
       notifyListeners();
       await DatabaseService.importFromJsonWithMetadata(
         sJson, 
         fileName: 'remote_${mId}_$_sourceLang.json',
-        overrideSubject: finalSubject, // Standardized Subject
+        // overrideSubject: finalSubject, // Removed: Use Native Subject
         userId: 'user', 
       );
 
-      _statusMessage = 'Importing $finalSubject ($tName)...';
+      _statusMessage = 'Importing $mName ($tName)...';
       notifyListeners();
       final importResult = await DatabaseService.importFromJsonWithMetadata(
         tJson, 
         fileName: 'remote_${mId}_$_targetLang.json',
-        overrideSubject: finalSubject, // Standardized Subject
+        // overrideSubject: finalSubject, // Removed: Use Native Subject
         userId: 'user', 
       );
 
@@ -2603,7 +2581,7 @@ class AppState extends ChangeNotifier {
         await DatabaseService.importFromJsonWithMetadata(
           eJson, 
           fileName: 'remote_${mId}_en.json',
-          overrideSubject: mName, // Force Subject Alignment
+          // overrideSubject: mName, // Removed
           userId: 'user', // Ensure visible to default user
         );
       }

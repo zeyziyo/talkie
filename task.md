@@ -62,6 +62,18 @@
         - [x] `l10n/app_ko.arb` 및 다국어 튜토리얼 문구 동기화
         - [x] 한국어 소통 원칙 재확인
         - [x] 긴급 빌드 오류 수정 (Syntax & References)
+        - [x] **AppState**: Pivot Subject 강제 로직 제거 (Native Tag Strategy 적용).
+        - [x] **AppState**: Pivot Subject 강제 로직 제거 (Native Tag Strategy 적용).
+        - [x] **Mode 2/3**: 리뷰 모드 UI에서 현재 언어에 맞는 태그(자료집)만 필터링 노출.
+
+
+
+
+- [x] Phase 77: Metadata Dialog Redesign & Mode 1 Fixes (메타데이터 다이얼로그 재설계 및 모드 1 수정)
+    - [x] **Metadata Dialog**: 'Online Library' 아이콘 제거 (AppBar 메뉴로만 접근).
+    - [x] **Metadata Dialog**: 'Total Tags' 드롭다운 상시 노출 (빈 상태라도 표시).
+    - [x] **Mode 1**: `_showMetadataDialog` 호출 시 `onOpenLibrary` 제거.
+    - [x] **Mode 1**: 튜토리얼용 `materialDropdownKey` 바인딩 누락 수정.
 
 - [/] Phase 75: Pre-deployment Quality Assurance (출시 전 품질 검증)
     - [x] `docs/PRE_DEPLOYMENT_CHECKLIST.md` 생성 및 보안 점검 결과/계획 통합

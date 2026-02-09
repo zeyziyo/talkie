@@ -6,13 +6,13 @@ import '../l10n/app_localizations.dart';
 class MetadataDialog extends StatefulWidget {
   final List<String> currentTags;
   final Function(List<String>) onTagsChanged;
-  final VoidCallback? onOpenLibrary;
+  final Function(List<String>) onTagsChanged;
 
   const MetadataDialog({
     super.key,
     required this.currentTags,
+    required this.currentTags,
     required this.onTagsChanged,
-    this.onOpenLibrary,
   });
 
   @override
@@ -64,16 +64,6 @@ class _MetadataDialogState extends State<MetadataDialog> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(l10n.metadataDialogTitle),
-          if (widget.onOpenLibrary != null)
-            IconButton(
-              icon: const Icon(Icons.cloud_download, color: Colors.blueAccent),
-              onPressed: () {
-                Navigator.pop(context); // Close dialog first? Or keep open? 
-                // Usually library dialog is large, so close this one.
-                widget.onOpenLibrary!();
-              },
-              tooltip: l10n.menuOnlineLibrary,
-            ),
         ],
       ),
       content: SingleChildScrollView(
@@ -119,31 +109,30 @@ class _MetadataDialogState extends State<MetadataDialog> {
             ),
             const SizedBox(height: 8),
 
-            // "Total Tags" Dropdown (New Feature)
-            if (availableTotalTags.isNotEmpty)
-              DropdownButtonFormField<String>(
-                decoration: InputDecoration(
-                  labelText: '전체 태그 선택',
-                  isDense: true,
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-                  border: const OutlineInputBorder(),
-                ),
-                hint: const Text('기존 태그 추가'),
-                items: availableTotalTags.map((tag) {
-                  return DropdownMenuItem(
-                    value: tag,
-                    child: Text(tag, overflow: TextOverflow.ellipsis),
-                  );
-                }).toList(),
-                onChanged: (val) {
-                  if (val != null) {
-                    setState(() {
-                      _tags.add(val);
-                    });
-                    widget.onTagsChanged(_tags);
-                  }
-                },
+            // "Total Tags" Dropdown (Always Visible)
+            DropdownButtonFormField<String>(
+              decoration: InputDecoration(
+                labelText: '전체 태그 (자료집 제목) 선택',
+                isDense: true,
+                contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                border: const OutlineInputBorder(),
               ),
+              hint: const Text('기존 태그 추가'),
+              items: availableTotalTags.map((tag) {
+                return DropdownMenuItem(
+                  value: tag,
+                  child: Text(tag, overflow: TextOverflow.ellipsis),
+                );
+              }).toList(),
+              onChanged: (val) {
+                if (val != null) {
+                  setState(() {
+                    _tags.add(val);
+                  });
+                  widget.onTagsChanged(_tags);
+                }
+              },
+            ),
             
             const SizedBox(height: 16),
             
