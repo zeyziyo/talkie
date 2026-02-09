@@ -48,6 +48,13 @@
 
 ### [2026-02-09] Metadata Dialog Redesign & Mode 1 Fixes (Phase 77)
 - **Refactor**: 'Metadata Dialog'에서 'Online Library' 아이콘 제거 (역할 분리 명확화).
+
+### [2026-02-09] UX 복구 및 기능 재배치 (Phase 77.5)
+- **Revert**: 사용자의 강력한 요청으로 Mode 3 명칭을 "Practice"에서 "**발음 연습 (Speaking Practice)**"으로 원복.
+- **New Feature**: `SearchFilterDialog` 위젯 신규 생성 (태그 필터, 최근 N개 제한, 시작 문자 검색).
+- **UX Improvement**: Mode 2/3의 설정(Tune) 버튼 클릭 시 편집 창(`MetadataDialog`) 대신 **필터 창(`SearchFilterDialog`)**이 뜨도록 변경.
+- **Accessibility**: 숨겨졌던 'Online Library' 기능을 **AppBar 상단 메뉴**로 꺼내어 접근성 대폭 강화.
+
 - **UX**: 'Metadata Dialog' 내 '전체 태그(자료집 제목)' 드롭다운 상시 노출로 변경.
 - **Fix**: Mode 1 튜토리얼 하이라이트가 작동하지 않던 문제 해결 (`materialDropdownKey` 바인딩 추가).
 - **Cleanup**: 위젯 내 불필요한 `onOpenLibrary` 콜백 및 import 제거.

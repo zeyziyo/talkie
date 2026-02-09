@@ -71,11 +71,20 @@ if (-not $isHistoryUpdated) {
     Write-Host "✅  'history.md' is updated." -ForegroundColor Green
 }
 
-# 5. Check L10n Consistency (Simple Heuristic: If one ARB changes, check others)
+# 5. Check L10n Consistency (Strict 80 Languages)
 $arbFiles = git status --porcelain | Where-Object { $_ -match "\.arb$" }
 if ($arbFiles) {
-    Write-Host "🌐  ARB files detected. Reminder: Ensure ALL 80 languages are synced." -ForegroundColor Magenta
-    # Logic to check strict sync is complex for this script, providing warning instead.
+    Write-Host "🌐  ARB files detected. Checking for 80 language files..." -ForegroundColor Magenta
+    
+    # Get total ARB count in l10n folder
+    $totalArbCount = (Get-ChildItem -Path "lib/l10n/*.arb").Count
+    
+    if ($totalArbCount -lt 80) {
+        Write-Host "❌  VIOLATION: L10n incomplete. Found only $totalArbCount ARB files (Expected 80)." -ForegroundColor Red
+        $failed = $true
+    } else {
+        Write-Host "✅  L10n Check Passed: $totalArbCount languages supported." -ForegroundColor Green
+    }
 }
 
 if ($failed) {

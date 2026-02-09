@@ -29,7 +29,28 @@
 
 ### 2026-02-05: 알림 시스템 (Notification System)
 - **변경 (Change)**: 상단 오버레이 메시지(`_statusMessage`) 제거.
-- **해결 (Solution)**: 표준 `SnackBar` 및 `AlertDialog`로 대체하여 UI 간섭 최소화.
+- **Improvement**: `MetadataDialog` 내에서도 `OnlineLibrary` 접근 불가하도록 아이콘 제거 (역할 충돌 방지).
+
+### [2026-02-09] UX 복구 및 기능 재배치 (Phase 77.5)
+#### 1. Mode 3 명칭 원복 (Title Revert)
+- **변경 전**: "Practice" (Phase 75에서 변경됨).
+- **변경 후**: "**발음 연습 (Speaking Practice)**" (기존 명칭으로 복귀).
+- **사유**: 사용자의 명칭 변경에 대한 불편사항 수용 및 학습 목적 명확화.
+
+#### 2. 검색 조건 다이얼로그 (Search Filter Dialog)
+- **신규 위젯**: `lib/widgets/search_filter_dialog.dart` 생성.
+- **기능**:
+    - **Tag Selection**: 현재 학습 언어(Source Language)와 일치하는 자료집 태그만 필터링 노출 (`Native Tag Strategy`).
+    - **Recent N Items**: 최근 학습 항목 N개 제한 필터.
+    - **Starts With**: 특정 문자로 시작하는 항목 검색.
+- **적용**: Mode 2(복습)와 Mode 3(발음 연습)의 '설정(Tune)' 버튼 연결 대상을 `MetadataDialog`에서 `SearchFilterDialog`로 교체.
+- **효과**: 불필요한 메타데이터 편집 UI 노출을 방지하고, 순수한 '검색 및 필터링' 경험 제공.
+
+#### 3. 온라인 자료실 접근성 (Online Library Accessibility)
+- **변경**: `MetadataDialog` 내부 깊숙이 있던 'Online Library' 버튼을 제거.
+- **개선**: Mode 2/3 상단 `AppBar` 메뉴(Action)에 '구름(Cloud)' 아이콘으로 직접 배치.
+- **결과**: 사용자가 언제든(One-click) 온라인 자료실에 접근하여 자료를 추가할 수 있음.
+
 
 ### 2026-02-01: 디자인 고도화 (Premium Card Design)
 - **변경 (Change)**: Mode 2(복습)/Mode 3(연습) 카드 디자인 전면 교체.

@@ -11,6 +11,20 @@
 4. `README.md`: 사용자 매뉴얼 및 기능 소개.
 5. `future_roadmap.md`
 
+- [ ] **Project Rules Update**: "승인 우선 원칙" 강화 (연속 작업 승인 불필요 관행 타파).
+
+
+- [ ] **Project Rules Update**: "승인 우선 원칙" 강화 (연속 작업 승인 불필요 관행 타파).
+
+- [x] **Project Rules Overhaul**: 규칙 전면 개정 (3대 원칙: 한글, 승인, 80개국어 동기화).
+
+- [x] Phase 77.5: UX/Naming Revert & Feature Restoration (UX/명칭 원복 및 기능 복구)
+    - [x] **Mode 3 Title**: "Practice" -> "**발음 연습 (Speaking Practice)**" 원복.
+    - [x] **Search Filter Dialog**: 신규 다이얼로그 구현 (태그 필터, 최근 N개 제한, 시작 문자).
+    - [x] **UI/UX**: Mode 2/3에서 `MetadataDialog`(편집)를 `SearchFilterDialog`(필터)로 교체.
+    - [x] **Online Library**: 접근성 개선 (필터 팝업 내 제거 -> AppBar 상단 메뉴로 이동).
+    - [x] **Code Cleanup**: 사용하지 않는 `MetadataDialog` import 제거.
+
 - [x] Phase 77: Native Tag Strategy & UI Refinements (Native Tag 전략 및 UI 개선)
     - [x] **AppState**: Pivot Subject 강제 로직 제거 (Native Tag Strategy 적용).
     - [x] **Mode 2/3**: 리뷰 모드 UI에서 현재 언어에 맞는 태그(자료집)만 필터링 노출.

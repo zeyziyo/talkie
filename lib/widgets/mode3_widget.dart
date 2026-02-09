@@ -4,7 +4,8 @@ import 'package:talkie/widgets/mode3_practice_card.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../l10n/app_localizations.dart';
-import 'package:talkie/widgets/metadata_dialog.dart';
+import 'package:talkie/widgets/search_filter_dialog.dart';
+import 'package:talkie/widgets/online_library_dialog.dart';
 
 
 /// Mode 3: 말하기 모드
@@ -38,7 +39,36 @@ class Mode3Widget extends StatelessWidget {
               // ==========================================
               // 1. Top Settings Panel
               // ==========================================
-              const SizedBox(height: 16),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      l10n.practiceModeTitle,
+                      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    Row(
+                      children: [
+                        IconButton(
+                          icon: const Icon(Icons.cloud_download),
+                          onPressed: () => _showOnlineLibraryDialog(context),
+                          tooltip: l10n.menuOnlineLibrary,
+                        ),
+                        IconButton(
+                          icon: const Icon(Icons.help_outline),
+                          onPressed: () {
+                            showDialog(
+                              context: context,
+                              builder: (context) => HelpDialog(initialTab: HelpTab.mode3),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
 
               // 스마트 검색바 & 태그 필터 (Pool 필터링용)
               Padding(
@@ -309,19 +339,14 @@ class Mode3Widget extends StatelessWidget {
 
 
   void _showMetadataDialog(BuildContext context, AppState appState) {
+    // Redirect to SearchFilterDialog
+    _showTagSelectionDialog(context, appState);
+  }
+
+  void _showOnlineLibraryDialog(BuildContext context) {
     showDialog(
       context: context,
-      builder: (context) => MetadataDialog(
-        currentTags: appState.selectedTags.toList(),
-        onTagsChanged: (newTags) {
-          appState.updateSelectedTags(newTags);
-          // Mode 3: Refresh session if active
-          if (appState.mode3SessionActive) {
-            appState.startMode3SessionDirectly();
-          }
-        },
-
-      ),
+      builder: (context) => const OnlineLibraryDialog(),
     );
   }
 
@@ -363,160 +388,14 @@ class Mode3Widget extends StatelessWidget {
   void _showTagSelectionDialog(BuildContext context, AppState appState) {
     showDialog(
       context: context,
-      builder: (context) {
-        final l10n = AppLocalizations.of(context)!;
-        final TextEditingController limitController = TextEditingController(
-          text: appState.filterLimit?.toString() ?? ''
-        );
-        final TextEditingController startsWithController = TextEditingController(
-          text: appState.filterStartsWith ?? ''
-        );
-
-        return StatefulBuilder(
-          builder: (context, setDialogState) {
-            return AlertDialog(
-              title: Row(
-                children: [
-                  const Icon(Icons.tune, color: Colors.blue),
-                  const SizedBox(width: 8),
-                  Text(l10n.searchConditions),
-                ],
-              ),
-              content: SizedBox(
-                width: double.maxFinite,
-                child: SingleChildScrollView(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // 1. Tag Section
-                      Text(l10n.tagSelection, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
-                      const SizedBox(height: 8),
-                      if (appState.availableTags.isEmpty)
-                        Text(l10n.noRecords, style: const TextStyle(color: Colors.grey, fontSize: 12))
-                      else
-                        Wrap(
-                          spacing: 8.0,
-                          runSpacing: 4.0,
-                          children: appState.availableTags.where((tag) {
-                             if (appState.selectedTags.contains(tag)) return true;
-                             // Phase 77: Native Tag Strategy - Filter by Source Language
-                             bool isMaterialTag = false;
-                             bool matchesLanguage = false;
-                             
-                             for (var m in appState.studyMaterials) {
-                               if (m['subject'] == tag) {
-                                 isMaterialTag = true;
-                                 if (m['source_language'] == appState.sourceLanguage || m['source_language'] == 'auto') {
-                                   matchesLanguage = true;
-                                   break;
-                                 }
-                               }
-                             }
-                             
-                             if (isMaterialTag) {
-                               return matchesLanguage;
-                             }
-                             return true;
-                          }).map<Widget>((tag) {
-                            final isSelected = appState.selectedTags.contains(tag);
-                            return FilterChip(
-                              label: Text(tag),
-                              selected: isSelected,
-                              onSelected: (bool selected) {
-                                appState.toggleTag(tag);
-                                if (appState.mode3SessionActive) {
-                                  appState.startMode3SessionDirectly();
-                                }
-                                setDialogState(() {});
-                              },
-                              selectedColor: Colors.blue[100],
-                              checkmarkColor: Colors.blue,
-                            );
-                          }).toList(),
-                        ),
-                      
-                      const Divider(height: 32),
-                      
-                      // 2. Recent N Items (Limit)
-                      TextField(
-                        controller: limitController,
-                        keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
-                          labelText: l10n.recentNItems(10).replaceAll('10', 'N'),
-                          hintText: 'e.g. 20',
-                          prefixIcon: const Icon(Icons.history),
-                          border: const OutlineInputBorder(),
-                          isDense: true,
-                        ),
-                      ),
-                      
-                      const SizedBox(height: 16),
-                      
-                      // 3. Starts With (Prefix)
-                      TextField(
-                        controller: startsWithController,
-                        decoration: InputDecoration(
-                          labelText: l10n.startsWith,
-                          hintText: 'e.g. A',
-                          prefixIcon: const Icon(Icons.text_fields),
-                          border: const OutlineInputBorder(),
-                          isDense: true,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              actions: [
-                if (appState.selectedTags.isNotEmpty || appState.filterLimit != null || appState.filterStartsWith != null)
-                  TextButton(
-                    onPressed: () {
-                      appState.clearSearchConditions();
-                      if (appState.mode3SessionActive) {
-                        appState.startMode3SessionDirectly();
-                      }
-                      limitController.clear();
-                      startsWithController.clear();
-                      setDialogState(() {});
-                    },
-                    child: Text(l10n.reset, style: const TextStyle(color: Colors.red)),
-                  ),
-                TextButton(
-                  onPressed: () => Navigator.of(context).pop(),
-                  child: Text(l10n.cancel),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    // Apply Limit
-                    if (limitController.text.isNotEmpty) {
-                      final limit = int.tryParse(limitController.text);
-                      appState.setFilterLimit(limit);
-                    } else {
-                      appState.setFilterLimit(null);
-                    }
-                    
-                    // Apply StartsWith
-                    if (startsWithController.text.isNotEmpty) {
-                      appState.setFilterStartsWith(startsWithController.text);
-                    } else {
-                      appState.setFilterStartsWith(null);
-                    }
-
-                    // Mode 3 Specific Refresh
-                    if (appState.mode3SessionActive) {
-                      appState.startMode3SessionDirectly();
-                    }
-                    
-                    Navigator.of(context).pop();
-                  },
-                  child: Text(l10n.confirm),
-                ),
-              ],
-            );
-          },
-        );
-      },
-    );
+      builder: (context) => SearchFilterDialog(
+        appState: appState,
+      ),
+    ).then((_) {
+      // Refresh session if active
+      if (appState.mode3SessionActive) {
+        appState.startMode3SessionDirectly();
+      }
+    });
   }
 }

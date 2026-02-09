@@ -3,7 +3,9 @@ import 'package:talkie/widgets/mode2_card.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../l10n/app_localizations.dart';
-import 'package:talkie/widgets/metadata_dialog.dart';
+
+import 'package:talkie/widgets/search_filter_dialog.dart';
+import 'package:talkie/widgets/online_library_dialog.dart';
 
 
 /// Mode 2: 학습 자료 및 복습 모드
@@ -59,8 +61,24 @@ class _Mode2WidgetState extends State<Mode2Widget> {
 
 
 
-            
-            const SizedBox(height: 16),
+            title: Text(l10n.mode2Title),
+            actions: [
+               // Online Library Button
+               IconButton(
+                icon: const Icon(Icons.cloud_download),
+                onPressed: () => _showOnlineLibraryDialog(context),
+                tooltip: l10n.menuOnlineLibrary,
+              ),
+              IconButton(
+                icon: const Icon(Icons.help_outline),
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) => HelpDialog(initialTab: HelpTab.mode2),
+                  );
+                },
+              ),
+            ],
 
             // 스마트 검색바 & 태그 필터
             Padding(
@@ -627,12 +645,16 @@ class _Mode2WidgetState extends State<Mode2Widget> {
   void _showMetadataDialog(BuildContext context, AppState appState) {
     showDialog(
       context: context,
-      builder: (context) => MetadataDialog(
-        currentTags: appState.selectedTags.toList(),
-        onTagsChanged: (newTags) {
-          appState.updateSelectedTags(newTags);
-        },
+      builder: (context) => SearchFilterDialog(
+        appState: appState,
       ),
+    );
+  }
+
+  void _showOnlineLibraryDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => const OnlineLibraryDialog(),
     );
   }
 
