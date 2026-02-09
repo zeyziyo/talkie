@@ -48,6 +48,13 @@
 
 - [x] 긴급 수정: 온라인 가져오기 노출 문제 (Hotfix: Online Import Visibility)
     - [x] `subject` 정렬을 통한 **그룹 ID 연결** 수정 (Source/Target/Pivot)
+
+- [x] **UI Revert & Cleanup (사용자 지시 이행)**
+    - [x] **HomeScreen**: App Bar 메뉴에 '온라인 자료실' 항목 추가.
+    - [x] **Mode 2**: 임의 추가된 헤더(타이틀, 구름, 도움말, 튠) 삭제.
+    - [x] **Mode 2**: '상세 분류' (Metadata Dialog) 버튼 삭제.
+    - [x] **Mode 3**: 임의 추가된 헤더(타이틀, 구름, 도움말) 삭제.
+    - [x] **Mode 3**: '상세 분류' (Metadata Dialog) 버튼 삭제.
     - [x] **개선**: 피벗 언어(영어) 주제를 기준(Ground Truth)으로 사용
     - [x] `userId: 'user'` 명시적 전달로 **대화 노출** 수정
     - [x] `importFromJsonWithMetadata` 시그니처 및 사용법 업데이트

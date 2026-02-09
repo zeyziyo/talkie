@@ -484,6 +484,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 
+                PopupMenuItem<String>(
+                  value: 'online_library',
+                  child: Row(
+                    children: [
+                      const Icon(Icons.cloud_download, color: Colors.blueAccent),
+                      const SizedBox(width: 8),
+                      Text(l10n.menuOnlineLibrary),
+                    ],
+                  ),
+                ),
+
                 const PopupMenuDivider(),
 
                 PopupMenuItem<String>(

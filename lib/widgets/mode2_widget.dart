@@ -61,47 +61,8 @@ class _Mode2WidgetState extends State<Mode2Widget> {
 
 
             // Custom Header Row (mimicking AppBar)
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                   Text(
-                    l10n.mode2Title,
-                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                  ),
-                  Row(
-                    children: [
-                      IconButton(
-                        icon: const Icon(Icons.cloud_download),
-                        onPressed: () => _showOnlineLibraryDialog(context),
-                        tooltip: l10n.menuOnlineLibrary,
-                      ),
-                      IconButton(
-                        icon: const Icon(Icons.help_outline),
-                        onPressed: () {
-                          showDialog(
-                            context: context,
-                            builder: (context) => HelpDialog(
-                              initialModeIndex: 1,
-                              onStartTutorial: () {
-                                // TODO: Implement tutorial start for Mode 2
-                              },
-                            ),
-                          );
-                        },
-                      ),
-                       // Tune Button (Search Filter)
-                       IconButton(
-                        icon: const Icon(Icons.tune),
-                        onPressed: () => _showMetadataDialog(context, appState),
-                        tooltip: l10n.searchConditions,
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
+            // Header removed per user request
+            const SizedBox(height: 8),
 
 
             // 스마트 검색바 & 태그 필터
@@ -222,6 +183,8 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                         ),
                       ),
                       const SizedBox(width: 8),
+                      // Detailed Classification (Material Dropdown) removed per user request
+                      /*
                       TextButton.icon(
                         key: widget.materialDropdownKey,
                         onPressed: () => _showMetadataDialog(context, appState),
@@ -237,6 +200,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                         ),
                       ),
+                      */
                       const SizedBox(width: 4),
                       
                       // 2. Tag Selection Button

@@ -62,6 +62,7 @@
 - **HOTFIX 2**: Resolved `HelpDialog` undefined errors and invalid arguments in Mode 2/3.
 - **Logic**: `AppState.importRemoteMaterial`에서 Pivot Subject(영어 제목) 강제 로직을 제거, 각 언어별 원본 제목(Native Subject)을 태그로 사용하도록 변경.
 - **UI**: Mode 2 및 Mode 3 태그 선택 다이얼로그(`_showTagSelectionDialog`)에서 현재 소스 언어와 일치하는 자료집 태그만 필터링하여 노출.
+- **UI REVERT**: Mode 2/3의 임의 추가된 헤더 및 상세 분류 버튼 삭제, '온라인 자료실'을 AppBar 메뉴로 이동 (사용자 지시).
 
 
 

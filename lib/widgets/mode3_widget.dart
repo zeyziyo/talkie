@@ -40,41 +40,9 @@ class Mode3Widget extends StatelessWidget {
               // ==========================================
               // 1. Top Settings Panel
               // ==========================================
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      l10n.practiceModeTitle,
-                      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    ),
-                    Row(
-                      children: [
-                        IconButton(
-                          icon: const Icon(Icons.cloud_download),
-                          onPressed: () => _showOnlineLibraryDialog(context),
-                          tooltip: l10n.menuOnlineLibrary,
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.help_outline),
-                          onPressed: () {
-                            showDialog(
-                              context: context,
-                              builder: (context) => HelpDialog(
-                                initialModeIndex: 2,
-                                onStartTutorial: () {
-                                  // TODO: Implement tutorial start for Mode 3
-                                },
-                              ),
-                            );
-                          },
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+              // Header Removed per user request
+              // width spacer
+              const SizedBox(height: 8),
 
               // 스마트 검색바 & 태그 필터 (Pool 필터링용)
               Padding(
@@ -197,6 +165,8 @@ class Mode3Widget extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(width: 8),
+                      // Detailed Classification (Tune) removed per user request
+                      /*
                       IconButton(
                         key: materialDropdownKey,
                         icon: const Icon(Icons.tune),
@@ -204,6 +174,7 @@ class Mode3Widget extends StatelessWidget {
                         tooltip: l10n.metadataDialogTitle,
                         visualDensity: VisualDensity.compact,
                       ),
+                      */
                       const SizedBox(width: 4),
                       
                       // 2. Tag Selection Button
