@@ -1194,13 +1194,12 @@ class DatabaseService {
                 // Phase 66: Entry-level Meta priority
                 final entryMeta = entry['meta'] as Map<String, dynamic>? ?? {};
                 
-                final sourceText = (entry['source_text'] ?? entry['text']) as String?;
-                final targetText = (entry['target_text'] ?? entry['translation']) as String?;
-                
-                if (sourceText == null || targetText == null || sourceText.trim().isEmpty || targetText.trim().isEmpty) {
+                if (sourceText == null || sourceText.trim().isEmpty) {
                   skippedCount++;
                   continue;
                 }
+
+                final bool hasTarget = targetText != null && targetText.trim().isNotEmpty && targetLang != 'auto';
                 
                 // Collect Tags (File + Entry + Local Native Subject + Pivot Sync Subject)
                 final entryTags = (entry['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
@@ -1214,8 +1213,8 @@ class DatabaseService {
                 await saveUnifiedRecord(
                   text: sourceText,
                   lang: sourceLang,
-                  translation: targetText,
-                  targetLang: targetLang,
+                  translation: hasTarget ? targetText : '', 
+                  targetLang: hasTarget ? targetLang : '', 
                   type: entry['type'] as String? ?? defaultType,
                   // Extended Metadata
                   pos: (entry['pos'] ?? entryMeta['pos']) as String?,
@@ -2374,24 +2373,29 @@ class DatabaseService {
     }, conflictAlgorithm: ConflictAlgorithm.ignore);
 
     // 2. Target 저장
-    final targetId = await executor.insert(table, {
-      'group_id': timestamp,
-      'text': translation,
-      'lang_code': targetLang,
-      'created_at': createdAt,
-    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+    int targetId = 0;
+    if (translation.isNotEmpty && targetLang.isNotEmpty && targetLang != 'auto') {
+      targetId = await executor.insert(table, {
+        'group_id': timestamp,
+        'text': translation,
+        'lang_code': targetLang,
+        'created_at': createdAt,
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+    }
 
     // 3. 번역 연결
-    if (type == 'word') {
-      await executor.insert('word_translations', {
-        'source_word_id': sourceId > 0 ? sourceId : (await _getUnifiedIdStatic(executor, 'words', text, lang, note)),
-        'target_word_id': targetId > 0 ? targetId : (await _getUnifiedIdStatic(executor, 'words', translation, targetLang, null)),
-      }, conflictAlgorithm: ConflictAlgorithm.ignore);
-    } else {
-      await executor.insert('sentence_translations', {
-        'source_sentence_id': sourceId > 0 ? sourceId : (await _getUnifiedIdStatic(executor, 'sentences', text, lang, note)),
-        'target_sentence_id': targetId > 0 ? targetId : (await _getUnifiedIdStatic(executor, 'sentences', translation, targetLang, null)),
-      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+    if (sourceId > 0 && targetId > 0) {
+      if (type == 'word') {
+        await executor.insert('word_translations', {
+          'source_word_id': sourceId,
+          'target_word_id': targetId,
+        }, conflictAlgorithm: ConflictAlgorithm.ignore);
+      } else {
+        await executor.insert('sentence_translations', {
+          'source_sentence_id': sourceId,
+          'target_sentence_id': targetId,
+        }, conflictAlgorithm: ConflictAlgorithm.ignore);
+      }
     }
 
     // 4. 태그 저장
@@ -2403,11 +2407,13 @@ class DatabaseService {
           'tag': tag,
         }, conflictAlgorithm: ConflictAlgorithm.ignore);
         
-        await executor.insert('item_tags', {
-          'item_id': targetId > 0 ? targetId : (await _getUnifiedIdStatic(executor, table, translation, targetLang, null)),
-          'item_type': type,
-          'tag': tag,
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
+        if (targetId > 0) {
+          await executor.insert('item_tags', {
+            'item_id': targetId,
+            'item_type': type,
+            'tag': tag,
+          }, conflictAlgorithm: ConflictAlgorithm.ignore);
+        }
       }
     }
     return timestamp;

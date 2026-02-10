@@ -2209,9 +2209,7 @@ class AppState extends ChangeNotifier {
     // _mode3SessionActive = false; // Keep session active? Or false? 
     // If we collapse, maybe we aren't in "Session" anymore in terms of having an active card.
     // But list is still there.
-    // Let's keep session active true if it just means "Mode 3 is open". 
-    // But typically session active means "Practicing".
-    // I'll leave _mode3SessionActive as is, or maybe set to false if it implies "Has Active Card".
+    // I'll leave _mode3SessionActive as is, or maybe set to false if it implies "Has Active Card". 
     // In Mode3Widget, we check `appState.mode3SessionActive && currentQuestion != null` for some logic.
     // If I clear question, `currentQuestion` becomes null.
     notifyListeners();
@@ -2591,12 +2589,12 @@ class AppState extends ChangeNotifier {
         overrideSubject: syncKey, 
         userId: 'user', // Ensure visible to default user
       );
-    }
+      }
 
       await loadDialogueGroups();
       await loadStudyMaterials();
       await loadTags(); // Added: Refresh tags immediately after import
-      await loadRecordsByTags();
+      await loadRecordsByTags(); // 자료를 가져온 후 즉시 화면 갱신
       
       _statusMessage = '$mName Imported Successfully';
       notifyListeners();

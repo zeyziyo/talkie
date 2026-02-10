@@ -5,6 +5,11 @@
 
 ## ✅ 구현 완료 기능 (Finalized Features)
 
+### 2026-02-10: 온라인 자료실 가져오기 오류 수정 (Online Library Import Hotfix)
+- **문제 (Problem)**: "온라인 자료실"에서 번역이 없는 단일 언어 자료집 가져오기 시 항목이 저장되지 않는 문제.
+- **해결 (Solution)**: `importFromJsonWithMetadata`에서 번역 필드 필수 체크를 완화하고, `saveUnifiedRecord`에서 단일 언어 저장을 지원하도록 수정.
+- **UI 연동**: 자료 임포트 성공 직후 `loadRecordsByTags()`를 호출하여 화면에 즉시 반영되도록 개선.
+
 ### 2026-02-10: 파일명 기반 스마트 동기화 (File-Name-Based Smart Sync)
 - **변경 (Change)**: 동기화 피벗(Sync Pivot)을 영문 제목(`mName`)에서 **파일 이름**(`nouns_1`)으로 전환.
 - **사유 (Reason)**: 영문 제목은 수정될 가능성이 있으나, 파일 이름은 URL 경로로써 불변성이 높아 훨씬 안정적인 동기화가 가능함.
