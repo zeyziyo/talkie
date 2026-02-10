@@ -683,5 +683,7 @@
   "chatAllConversations": "Semua Perbualan",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Adakah anda pasti mahu memadam perbualan ini?\nPerbualan yang dipadam tidak dapat dipulihkan.",
-  "notSelected": "- Tiada Pilihan -"
+  "notSelected": "- Tiada Pilihan -",
+  "myWordbook": "Buku Perkataan Saya",
+  "mySentenceCollection": "Koleksi Ayat Saya"
 }

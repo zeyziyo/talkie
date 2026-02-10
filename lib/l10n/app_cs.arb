@@ -683,5 +683,7 @@
   "chatAllConversations": "Všechny konverzace",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Opravdu chcete smazat tuto konverzaci?\nSmazané konverzace nelze obnovit.",
-  "notSelected": "- Nevybráno -"
+  "notSelected": "- Nevybráno -",
+  "myWordbook": "Moje slovní zásoba",
+  "mySentenceCollection": "Moje sbírka vět"
 }

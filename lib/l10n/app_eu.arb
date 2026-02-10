@@ -683,5 +683,7 @@
   "chatAllConversations": "Elkarrizketa guztiak",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Elkarrizketa hau ezabatu nahi duzu?\nEzabatu ondoren ezin da berreskuratu.",
-  "notSelected": "- Ez dago hautatuta -"
+  "notSelected": "- Ez dago hautatuta -",
+  "myWordbook": "Nire hiztegia",
+  "mySentenceCollection": "Nire esaldi bilduma"
 }

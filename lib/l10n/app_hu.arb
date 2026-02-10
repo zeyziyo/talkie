@@ -683,5 +683,7 @@
   "chatAllConversations": "Összes beszélgetés",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Törli ezt a beszélgetést?\nA törölt beszélgetések nem állíthatók vissza.",
-  "notSelected": "- Nincs kiválasztva -"
+  "notSelected": "- Nincs kiválasztva -",
+  "myWordbook": "Szógyűjteményem",
+  "mySentenceCollection": "Mondatgyűjteményem"
 }

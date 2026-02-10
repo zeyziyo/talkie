@@ -683,5 +683,7 @@
   "chatAllConversations": "Të gjitha bisedat",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "A jeni i sigurt që dëshironi ta fshini këtë bisedë?\nBisedat e fshira nuk mund të rikthehen.",
-  "notSelected": "- Nuk është zgjedhur -"
+  "notSelected": "- Nuk është zgjedhur -",
+  "myWordbook": "Libri im i fjalëve",
+  "mySentenceCollection": "Koleksioni im i fjalive"
 }

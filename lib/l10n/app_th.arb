@@ -683,5 +683,7 @@
   "chatAllConversations": "การสนทนาทั้งหมด",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "คุณต้องการลบการสนทนานี้หรือไม่\nการสนทนาที่ถูกลบจะไม่สามารถกู้คืนได้",
-  "notSelected": "- ไม่ได้เลือก -"
+  "notSelected": "- ไม่ได้เลือก -",
+  "myWordbook": "คลังคำศัพท์ของฉัน",
+  "mySentenceCollection": "คลังประโยคของฉัน"
 }

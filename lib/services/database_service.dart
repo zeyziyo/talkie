@@ -745,10 +745,11 @@ class DatabaseService {
   /// Import study materials from JSON file with metadata
   static Future<Map<String, dynamic>> importFromJsonWithMetadata(
     String jsonContent, {
-    String? fileName,
-    String? userId,
     String? overrideSubject, // Phase 77: Visible Title
     String? syncKey, // Phase 79: stable key for grouping
+    String? defaultType, // Phase 81.3: Explicit type fallback
+    String? defaultSourceLang, // Phase 81.5: Fallback if missing in JSON
+    String? defaultTargetLang, // Phase 81.5: Fallback if missing in JSON
   }) async {
     try {
       final data = json.decode(jsonContent) as Map<String, dynamic>;
@@ -757,8 +758,8 @@ class DatabaseService {
       final meta = data['meta'] as Map<String, dynamic>? ?? {};
       
       // 언어 이름(Korean)을 코드(ko)로 매핑
-      final rawSourceLang = (meta['source_language'] ?? data['source_language']) as String? ?? 'auto';
-      final rawTargetLang = (meta['target_language'] ?? data['target_language']) as String? ?? 'auto';
+      final rawSourceLang = (meta['source_language'] ?? data['source_language']) as String? ?? defaultSourceLang ?? 'auto';
+      final rawTargetLang = (meta['target_language'] ?? data['target_language']) as String? ?? defaultTargetLang ?? 'auto';
       final sourceLang = _mapLanguageToCode(rawSourceLang);
       final targetLang = _mapLanguageToCode(rawTargetLang);
       
@@ -767,7 +768,7 @@ class DatabaseService {
       final syncSubject = syncKey ?? materialSubject; // Fallback to title if no syncKey provided
       final source = (meta['source'] ?? data['source']) as String? ?? 'File Upload';
       final fileCreatedAt = (meta['created_at'] ?? data['created_at']) as String? ?? DateTime.now().toIso8601String();
-      final defaultType = (data['default_type'] ?? meta['default_type']) as String? ?? 'sentence';
+      final effectiveDefaultType = defaultType ?? (data['default_type'] ?? meta['default_type']) as String? ?? 'sentence';
       
       // Phase 66: File-level Tags
       final fileTags = (meta['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
@@ -832,6 +833,7 @@ class DatabaseService {
                 }
 
                 final bool hasTarget = targetText != null && targetText.trim().isNotEmpty && targetLang != 'auto';
+                final type = entry['type'] as String? ?? effectiveDefaultType;
                 
                 // Collect Tags (File + Entry + Local Native Subject + Pivot Sync Subject)
                 final entryTags = (entry['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
@@ -847,7 +849,7 @@ class DatabaseService {
                   lang: sourceLang,
                   translation: hasTarget ? targetText : '', 
                   targetLang: hasTarget ? targetLang : '', 
-                  type: entry['type'] as String? ?? defaultType,
+                  type: type,
                   // Extended Metadata
                   pos: (entry['pos'] ?? entryMeta['pos']) as String?,
                   root: (entry['root'] ?? entryMeta['root']) as String?,
@@ -1140,12 +1142,11 @@ class DatabaseService {
   }
 
   
-  /// Get all study materials with type counts (Includes Dialogue Groups as materials)
+  /// Get all study materials with type counts (Includes Dialogue Groups and Unique Tags as materials)
   static Future<List<Map<String, dynamic>>> getStudyMaterials() async {
     final db = await database;
     
-    // 1. Get Regular Study Materials (Updated: Count via direct table link or group_id if needed)
-    // 자료 노출 보장을 위해 LEFT JOIN 및 COALESCE 사용 고려
+    // 1. Get Regular Study Materials (Explicitly imported/created)
     final materials = await db.rawQuery('''
       SELECT m.*, 
         COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it 
@@ -1158,7 +1159,7 @@ class DatabaseService {
       ORDER BY m.imported_at DESC
     ''');
     
-    // 2. Get Dialogue Groups (Updated: Ensure title matching is robust)
+    // 2. Get Dialogue Groups
     final dialogues = await db.rawQuery('''
       SELECT d.*,
         COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it 
@@ -1171,9 +1172,37 @@ class DatabaseService {
       ORDER BY d.created_at DESC
     ''');
     
-    final List<Map<String, dynamic>> result = materials.map((m) => Map<String, dynamic>.from(m)).toList();
+    // 3. Discover Unique Tags that are NOT in materials or dialogues
+    // This ensures user-created subjects from Mode 1 show up
+    final discoveredTags = await db.rawQuery('''
+      SELECT DISTINCT tag FROM item_tags 
+      WHERE tag NOT IN (SELECT subject FROM study_materials)
+        AND tag NOT IN (SELECT title FROM dialogue_groups)
+        AND tag != 'Dialogue'
+    ''');
     
-    // Transform Dialogues into Material format and add to list
+    final List<Map<String, dynamic>> result = [];
+
+    // Add Basic folder by default (ID 0)
+    result.add({
+      'id': 0,
+      'subject': 'Basic',
+      'source': 'System',
+      'source_language': 'auto',
+      'target_language': 'auto',
+      'created_at': '',
+      'imported_at': '',
+      'word_count': 0, 
+      'sentence_count': 0,
+    });
+    
+    // Add Materials
+    for (var m in materials) {
+      if (m['subject'] == 'Basic') continue; // Avoid duplicate Basic
+      result.add(Map<String, dynamic>.from(m));
+    }
+    
+    // Add Dialogues
     for (var d in dialogues) {
       result.add({
         'id': d['id'], // String UUID
@@ -1189,8 +1218,30 @@ class DatabaseService {
         'is_dialogue': 1,
       });
     }
+
+    // Add Discovered Tags
+    for (var t in discoveredTags) {
+      final tagName = t['tag'] as String;
+      if (tagName == 'Basic') continue; // Handled above
+      
+      // Count items for this tag
+      final wcRows = await db.rawQuery("SELECT COUNT(DISTINCT item_id) as count FROM item_tags WHERE tag = ? AND item_type = 'word'", [tagName]);
+      final scRows = await db.rawQuery("SELECT COUNT(DISTINCT item_id) as count FROM item_tags WHERE tag = ? AND item_type = 'sentence'", [tagName]);
+      
+      result.add({
+        'id': -(result.length + 1000), // Unique negative ID for discovered tags
+        'subject': tagName,
+        'source': 'User Tag',
+        'source_language': 'auto',
+        'target_language': 'auto',
+        'created_at': '',
+        'imported_at': '',
+        'word_count': wcRows.first['count'],
+        'sentence_count': scRows.first['count'],
+      });
+    }
     
-    print('[DB] Retrieved ${result.length} study items (Materials + Dialogues)');
+    print('[DB] Retrieved ${result.length} study items (Materials + Dialogues + Discovered Tags)');
     return result;
   }
   
@@ -1630,16 +1681,27 @@ class DatabaseService {
 
     // 3. 태그 저장
     if (tags != null && tags.isNotEmpty) {
+      final resolvedSourceId = sourceId > 0 
+          ? sourceId 
+          : await _getUnifiedIdStatic(executor, table, text, lang, note);
+      
+      int resolvedTargetId = targetId > 0 ? targetId : 0;
+      if (resolvedTargetId <= 0 && translation.isNotEmpty && targetLang.isNotEmpty && targetLang != 'auto') {
+        resolvedTargetId = await _getUnifiedIdStatic(executor, table, translation, targetLang, '');
+      }
+
       for (var tag in tags) {
-        await executor.insert('item_tags', {
-          'item_id': sourceId > 0 ? sourceId : (await _getUnifiedIdStatic(executor, table, text, lang, note)),
-          'item_type': type,
-          'tag': tag,
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
-        
-        if (targetId > 0) {
+        if (resolvedSourceId > 0) {
           await executor.insert('item_tags', {
-            'item_id': targetId,
+            'item_id': resolvedSourceId,
+            'item_type': type,
+            'tag': tag,
+          }, conflictAlgorithm: ConflictAlgorithm.ignore);
+        }
+        
+        if (resolvedTargetId > 0) {
+          await executor.insert('item_tags', {
+            'item_id': resolvedTargetId,
             'item_type': type,
             'tag': tag,
           }, conflictAlgorithm: ConflictAlgorithm.ignore);
@@ -1678,19 +1740,28 @@ class DatabaseService {
 
   // --- Search & Memorized Status ---
 
-  /// Search by Type (Refined for Phase 21)
+  /// Search by Type (Refined for Phase 21 & Phase 79)
   /// type: 'word' or 'sentence'
-  static Future<List<Map<String, String>>> searchByType(String query, String type, {int limit = 10}) async {
+  static Future<List<Map<String, String>>> searchByType(String query, String type, {String? langCode, int limit = 10}) async {
     if (query.trim().isEmpty) return [];
 
     final db = await database;
     final String table = type == 'word' ? 'words' : 'sentences';
     
+    // WHERE logic: basic text search + optional language filter
+    String whereClause = 'text LIKE ?';
+    List<dynamic> whereArgs = ['$query%'];
+    
+    if (langCode != null && langCode.isNotEmpty) {
+      whereClause += ' AND lang_code = ?';
+      whereArgs.add(langCode);
+    }
+
     final results = await db.query(
       table,
       columns: ['text', 'note'], // 주석 정보도 함께 가져옴
-      where: 'text LIKE ?',
-      whereArgs: ['$query%'],
+      where: whereClause,
+      whereArgs: whereArgs,
       limit: limit,
       orderBy: 'text ASC',
       distinct: true,

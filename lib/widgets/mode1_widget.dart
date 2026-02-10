@@ -190,98 +190,149 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                 ),
                               ),
 
-                            TextField(
-                              controller: _sourceTextController,
-                              minLines: 2,
-                              maxLines: null,
-                              decoration: InputDecoration(
-                                hintText: appState.recordTypeFilter == 'word' ? l10n.tabWord : l10n.enterTextHint,
-                                hintStyle: TextStyle(
-                                  color: Colors.grey.shade400,
-                                  fontStyle: FontStyle.italic,
-                                ),
-                                border: const OutlineInputBorder(),
-                                suffixIcon: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    if (appState.sourceText.isNotEmpty)
-                                      IconButton(
-                                        icon: const Icon(Icons.clear, color: Colors.grey),
-                                        onPressed: () {
-                                          appState.clearTexts();
-                                          setState(() => _currentTags = []);
-                                        },
-                                        tooltip: l10n.clearAll,
-                                      ),
-                                    IconButton(
-                                      key: widget.micButtonKey,
-                                      icon: Icon(
-                                        appState.isListening ? Icons.mic : Icons.mic_none,
-                                        color: appState.isListening ? Colors.red : Colors.blue,
-                                      ),
-                                      onPressed: appState.isListening
-                                          ? () => appState.stopListening()
-                                          : () => appState.startListening(),
-                                      tooltip: l10n.micButtonTooltip,
+                            Autocomplete<Map<String, dynamic>>(
+                              optionsBuilder: (TextEditingValue textEditingValue) async {
+                                if (textEditingValue.text.isEmpty) {
+                                  return const Iterable<Map<String, dynamic>>.empty();
+                                }
+                                // Use existing search logic
+                                await appState.searchSimilarSources(textEditingValue.text);
+                                return appState.similarSources;
+                              },
+                              displayStringForOption: (option) => option['text'] as String,
+                              onSelected: (option) {
+                                appState.selectSource(option);
+                                _sourceTextController.text = option['text'] as String;
+                              },
+                              fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                                // Sync controller with AppState
+                                if (controller.text != appState.sourceText) {
+                                   controller.text = appState.sourceText;
+                                }
+                                return TextField(
+                                  controller: controller,
+                                  focusNode: focusNode,
+                                  minLines: 2,
+                                  maxLines: null,
+                                  decoration: InputDecoration(
+                                    hintText: appState.recordTypeFilter == 'word' ? l10n.tabWord : l10n.enterTextHint,
+                                    hintStyle: TextStyle(
+                                      color: Colors.grey.shade400,
+                                      fontStyle: FontStyle.italic,
                                     ),
-                                  ],
-                                ),
-                              ),
-                              onChanged: (text) {
-                                appState.setSourceText(text);
-                                
-                                // Phase 57: Debounce Autocomplete (300ms)
-                                if (_debounceTimer?.isActive ?? false) _debounceTimer!.cancel();
-                                _debounceTimer = Timer(const Duration(milliseconds: 300), () {
-                                  appState.searchSimilarSources(text); 
-                                });
+                                    border: const OutlineInputBorder(),
+                                    suffixIcon: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        if (appState.sourceText.isNotEmpty)
+                                          IconButton(
+                                            icon: const Icon(Icons.clear, color: Colors.grey),
+                                            onPressed: () {
+                                              appState.clearTexts();
+                                              controller.clear();
+                                              setState(() => _currentTags = []);
+                                            },
+                                            tooltip: l10n.clearAll,
+                                          ),
+                                        IconButton(
+                                          key: widget.micButtonKey,
+                                          icon: Icon(
+                                            appState.isListening ? Icons.mic : Icons.mic_none,
+                                            color: appState.isListening ? Colors.red : Colors.blue,
+                                          ),
+                                          onPressed: appState.isListening
+                                              ? () => appState.stopListening()
+                                              : () => appState.startListening(),
+                                          tooltip: l10n.micButtonTooltip,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  onChanged: (text) {
+                                    appState.setSourceText(text);
+                                  },
+                                );
+                              },
+                              optionsViewBuilder: (context, onSelected, options) {
+                                return Align(
+                                  alignment: Alignment.topLeft,
+                                  child: Material(
+                                    elevation: 4.0,
+                                    child: Container(
+                                      width: MediaQuery.of(context).size.width - 64, // Margin adjusted
+                                      constraints: const BoxConstraints(maxHeight: 250),
+                                      child: ListView.separated(
+                                        padding: EdgeInsets.zero,
+                                        shrinkWrap: true,
+                                        itemCount: options.length,
+                                        separatorBuilder: (context, index) => const Divider(height: 1),
+                                        itemBuilder: (BuildContext context, int index) {
+                                          final option = options.elementAt(index);
+                                          final text = option['text'] as String;
+                                          final note = option['note'] as String? ?? '';
+                                          
+                                          return ListTile(
+                                            dense: true,
+                                            leading: const Icon(Icons.history, size: 18, color: Colors.grey),
+                                            title: Text(text, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
+                                            subtitle: note.isNotEmpty 
+                                                ? Text(_getLocalizedCategory(note, l10n), style: TextStyle(fontSize: 12, color: Colors.blueGrey[600]))
+                                                : null,
+                                            onTap: () => onSelected(option),
+                                          );
+                                        },
+                                      ),
+                                    ),
+                                  ),
+                                );
                               },
                             ),
-
-                            // Phase 31: 자동 완성 목록 UI
-                            if (appState.similarSources.isNotEmpty && appState.sourceText.isNotEmpty)
-                              Container(
-                                constraints: const BoxConstraints(maxHeight: 200),
-                                margin: const EdgeInsets.only(top: 4),
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  border: Border.all(color: Colors.grey.shade300),
-                                  borderRadius: BorderRadius.circular(4),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black.withOpacity(0.05),
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 2),
-                                    ),
-                                  ],
-                                ),
-                                child: ListView.separated(
-                                  shrinkWrap: true,
-                                  itemCount: appState.similarSources.length,
-                                  separatorBuilder: (context, index) => const Divider(height: 1),
-                                  itemBuilder: (context, index) {
-                                    final source = appState.similarSources[index];
-                                    final text = source['text'] as String;
-                                    final note = source['note'] as String? ?? '';
-                                    
-                                    return ListTile(
-                                      dense: true,
-                                      title: Text(text, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
-                                      subtitle: note.isNotEmpty 
-                                          ? Text(_getLocalizedCategory(note, l10n), style: TextStyle(fontSize: 12, color: Colors.blueGrey[600]))
-                                          : null,
-                                      trailing: const Icon(Icons.history, size: 16, color: Colors.grey),
-                                      onTap: () {
-                                        appState.selectSource(source);
-                                        // 선택 후 목록 닫기 및 포커스 해제 등은 필요 시 추가
-                                      },
-                                    );
-                                  },
-                                ),
-                              ),
-
+                            
                             const SizedBox(height: 12),
                             
+                            // Phase 81.4: Save Target Material (Subject) selection/creation
+                            Autocomplete<String>(
+                              optionsBuilder: (TextEditingValue textEditingValue) {
+                                final existingSubjects = appState.studyMaterials
+                                    .map((m) => m['subject'] as String)
+                                    .where((s) => s != 'Basic')
+                                    .toSet()
+                                    .toList();
+                                if (textEditingValue.text.isEmpty) {
+                                  return existingSubjects;
+                                }
+                                return existingSubjects.where((s) =>
+                                    s.toLowerCase().contains(textEditingValue.text.toLowerCase()));
+                              },
+                              onSelected: (String selection) {
+                                appState.setSelectedSaveSubject(selection);
+                              },
+                              fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                                if (controller.text != appState.selectedSaveSubject) {
+                                  controller.text = appState.selectedSaveSubject;
+                                }
+                                return TextField(
+                                  controller: controller,
+                                  focusNode: focusNode,
+                                  decoration: InputDecoration(
+                                    labelText: l10n.titleTagSelection,
+                                    hintText: appState.recordTypeFilter == 'word' 
+                                        ? "Ex: ${l10n.myWordbook}" 
+                                        : "Ex: ${l10n.mySentenceCollection}",
+                                    isDense: true,
+                                    prefixIcon: const Icon(Icons.folder_open, size: 20),
+                                    border: const OutlineInputBorder(),
+                                    contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                                  ),
+                                  onChanged: (value) {
+                                    appState.setSelectedSaveSubject(value.isEmpty ? 'Basic' : value);
+                                  },
+                                );
+                              },
+                            ),
+                            
+                            const SizedBox(height: 12),
+
                             // Category Dropdown & Details Button
                             Row(
                               crossAxisAlignment: CrossAxisAlignment.start,

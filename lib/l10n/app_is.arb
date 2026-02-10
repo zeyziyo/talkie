@@ -683,5 +683,7 @@
   "chatAllConversations": "Öll samtöl",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Viltu eyða þessu samtali?\nEydd samtöl er ekki hægt að endurheimta.",
-  "notSelected": "- Enginn valinn -"
+  "notSelected": "- Enginn valinn -",
+  "myWordbook": "Orðaforði minn",
+  "mySentenceCollection": "Setningasafnið mitt"
 }

@@ -683,5 +683,7 @@
   "chatAllConversations": "Barcha suhbatlar",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Bu suhbatni oʻchirishni xohlaysizmi?\nOʻchirilgan suhbatni qayta tiklab boʻlmaydi.",
-  "notSelected": "- Tanlanmagan -"
+  "notSelected": "- Tanlanmagan -",
+  "myWordbook": "Mening so'zlashgichim",
+  "mySentenceCollection": "Mening gaplar to'plamim"
 }

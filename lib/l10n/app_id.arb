@@ -683,5 +683,7 @@
   "chatAllConversations": "Semua percakapan",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Anda yakin ingin menghapus percakapan ini?\nPercakapan yang dihapus tidak dapat dipulihkan.",
-  "notSelected": "- Tidak Dipilih -"
+  "notSelected": "- Tidak Dipilih -",
+  "myWordbook": "Buku Kata Saya",
+  "mySentenceCollection": "Koleksi Kalimat Saya"
 }

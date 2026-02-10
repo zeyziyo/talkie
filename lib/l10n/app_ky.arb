@@ -683,5 +683,7 @@
   "chatAllConversations": "Бардык баарлашуулар",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Бул баарлашууну жок кылууну каалайсызбы?\nЖок кылынган баарлашууну кайра калыбына келтирүү мүмкүн эмес.",
-  "notSelected": "- Тандалган жок -"
+  "notSelected": "- Тандалган жок -",
+  "myWordbook": "Менин сөздүгүм",
+  "mySentenceCollection": "Менин сүйлөм жыйнагым"
 }

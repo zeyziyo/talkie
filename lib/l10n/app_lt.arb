@@ -683,5 +683,7 @@
   "chatAllConversations": "Visi pokalbiai",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Ar tikrai norite ištrinti šį pokalbį?\nIštrintų pokalbių atkurti negalima.",
-  "notSelected": "- Nepasirinkta -"
+  "notSelected": "- Nepasirinkta -",
+  "myWordbook": "Mano žodynas",
+  "mySentenceCollection": "Mano sakinių rinkinys"
 }

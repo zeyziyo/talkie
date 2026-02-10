@@ -683,5 +683,7 @@
   "chatAllConversations": "ការសន្ទនាទាំងអស់",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "តើ​អ្នក​ប្រាកដ​ថា​អ្នក​ចង់​លុប​ការ​សន្ទនា​នេះ​?\nអ្នក​នឹង​មិន​អាច​យក​វា​មក​វិញ​បាន​ទេ។",
-  "notSelected": "- មិនបានជ្រើសរើស -"
+  "notSelected": "- មិនបានជ្រើសរើស -",
+  "myWordbook": "សៀវភៅ​ពាក្យ​របស់​ខ្ញុំ",
+  "mySentenceCollection": "បណ្តុំ​ប្រយោគ​របស់​ខ្ញុំ"
 }

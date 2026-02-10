@@ -683,5 +683,7 @@
   "chatAllConversations": "すべての会話",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "この会話を削除しますか？\n削除した会話は復元できません。",
-  "notSelected": "ー選択されていませんー"
+  "notSelected": "ー選択されていませんー",
+  "myWordbook": "マイ単語帳",
+  "mySentenceCollection": "マイ例文集"
 }

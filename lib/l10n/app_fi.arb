@@ -683,5 +683,7 @@
   "chatAllConversations": "Kaikki keskustelut",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Haluatko varmasti poistaa tämän keskustelun?\nPoistettuja keskusteluja ei voi palauttaa.",
-  "notSelected": "- Ei valittu -"
+  "notSelected": "- Ei valittu -",
+  "myWordbook": "Oma sanakirjani",
+  "mySentenceCollection": "Oma lausekokoelmani"
 }

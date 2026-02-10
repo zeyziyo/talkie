@@ -683,5 +683,7 @@
   "chatAllConversations": "Όλες οι συνομιλίες",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Θέλετε να διαγράψετε αυτήν τη συνομιλία;\nΔεν θα μπορείτε να την επαναφέρετε.",
-  "notSelected": "- Δεν έχει επιλεγεί -"
+  "notSelected": "- Δεν έχει επιλεγεί -",
+  "myWordbook": "Το βιβλίο μου με λέξεις",
+  "mySentenceCollection": "Η συλλογή μου από προτάσεις"
 }

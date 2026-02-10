@@ -683,5 +683,7 @@
   "chatAllConversations": "Alla konversationer",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Vill du radera den här konversationen?\nRaderade konversationer kan inte återställas.",
-  "notSelected": "- Inget valt -"
+  "notSelected": "- Inget valt -",
+  "myWordbook": "Min ordlista",
+  "mySentenceCollection": "Min frasbok"
 }

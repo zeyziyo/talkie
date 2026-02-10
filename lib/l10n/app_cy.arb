@@ -683,5 +683,7 @@
   "chatAllConversations": "Pob sgwrs",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Ydych chi'n siŵr eich bod am ddileu'r sgwrs hon?\nNi ellir adfer sgyrsiau sydd wedi'u dileu.",
-  "notSelected": "- Heb ei Ddewis -"
+  "notSelected": "- Heb ei Ddewis -",
+  "myWordbook": "Fy ngeirlyfr",
+  "mySentenceCollection": "Fy nghasgliad o frawddegau"
 }

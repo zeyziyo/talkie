@@ -683,5 +683,7 @@
   "chatAllConversations": "གླེང་མོལ་ཡོངས་རྫོགས།",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "ཁྱེད་ཀྱིས་གླེང་མོལ་འདི་དོར་འདོད་དམ།\nགླེང་མོལ་བསུབས་པ་ཕྱིར་སློག་བྱེད་མི་ཐུབ།",
-  "notSelected": "- གདམ་ག་བྱས་མེད། -"
+  "notSelected": "- གདམ་ག་བྱས་མེད། -",
+  "myWordbook": "ངའི་ཐ་སྙད་ཕྱོགས་བསྡུས།",
+  "mySentenceCollection": "ངའི་ཚིག་གྲུབ་ཕྱོགས་བསྡུས།"
 }

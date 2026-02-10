@@ -683,5 +683,7 @@
   "chatAllConversations": "Kõik vestlused",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Kas sa oled kindel, et soovid selle vestluse kustutada?\nKustutatud vestlust ei saa taastada.",
-  "notSelected": "- Pole valitud -"
+  "notSelected": "- Pole valitud -",
+  "myWordbook": "Minu sõnastik",
+  "mySentenceCollection": "Minu lausete kogu"
 }

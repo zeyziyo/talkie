@@ -683,5 +683,7 @@
   "chatAllConversations": "Tüm Sohbetler",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Bu konuşmayı silmek istediğinizden emin misiniz?\nSilinen konuşmalar geri alınamaz.",
-  "notSelected": "- Seçilmedi -"
+  "notSelected": "- Seçilmedi -",
+  "myWordbook": "Kelime Defterim",
+  "mySentenceCollection": "Cümle Koleksiyonum"
 }

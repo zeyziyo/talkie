@@ -171,6 +171,9 @@ class SupabaseService {
     String? pos,
     String? formType,
     String? root,
+    String? type,
+    List<String>? tags,
+    String? syncSubject,
   }) async {
     try {
       // 1. Validation + English Translation via Edge Function
@@ -229,6 +232,8 @@ class SupabaseService {
           'pos': pos,
           'form_type': formType,
           'root': root,
+          'type': type ?? 'sentence', // Preserve type
+          'tags': tags, // Preserve tags if column exists (Check needed) or handle via metadata
           'author_id': authorId,
           'status': 'approved',
         });

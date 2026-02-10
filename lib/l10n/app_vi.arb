@@ -683,5 +683,7 @@
   "chatAllConversations": "Toàn bộ hội thoại",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Bạn có chắc chắn muốn xóa hội thoại này?\nHội thoại đã xóa không thể khôi phục.",
-  "notSelected": "- Không chọn -"
+  "notSelected": "- Không chọn -",
+  "myWordbook": "Từ vựng của tôi",
+  "mySentenceCollection": "Tuyển tập câu của tôi"
 }

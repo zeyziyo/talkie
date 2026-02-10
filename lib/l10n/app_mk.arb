@@ -683,5 +683,7 @@
   "chatAllConversations": "Сите разговори",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Дали сте сигурни дека сакате да го избришете овој разговор?\nИзбришаните разговори не можат да се вратат.",
-  "notSelected": "- Не е избрано -"
+  "notSelected": "- Не е избрано -",
+  "myWordbook": "Мој речник",
+  "mySentenceCollection": "Моја колекција на реченици"
 }

@@ -683,5 +683,7 @@
   "chatAllConversations": "सबै कुराकानीहरू",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "के तपाइँ यो कुराकानी मेटाउन निश्चित हुनुहुन्छ?\nमेटाइएको कुराकानी पुन: प्राप्त गर्न सकिँदैन।",
-  "notSelected": "- चयन गरिएको छैन -"
+  "notSelected": "- चयन गरिएको छैन -",
+  "myWordbook": "मेरो शब्दकोश",
+  "mySentenceCollection": "मेरो वाक्य संग्रह"
 }

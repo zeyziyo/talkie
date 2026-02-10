@@ -683,5 +683,7 @@
   "chatAllConversations": "Բոլոր զրույցները",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Ցանկանու՞մ եք ջնջել այս զրույցը:\nՋնջված զրույցները հնարավոր չէ վերականգնել:",
-  "notSelected": "- Ընտրված չէ -"
+  "notSelected": "- Ընտրված չէ -",
+  "myWordbook": "Իմ բառարանը",
+  "mySentenceCollection": "Իմ նախադասությունների հավաքածուն"
 }

@@ -683,5 +683,7 @@
   "chatAllConversations": "Все беседы",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Удалить эту беседу?\nВосстановление удаленных бесед невозможно.",
-  "notSelected": "- Не выбрано -"
+  "notSelected": "- Не выбрано -",
+  "myWordbook": "Мой словарь",
+  "mySentenceCollection": "Моя коллекция предложений"
 }

@@ -683,5 +683,7 @@
   "chatAllConversations": "Всі розмови",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Ви впевнені, що хочете видалити цю розмову?\nВи не зможете відновити її.",
-  "notSelected": "- Не вибрано -"
+  "notSelected": "- Не вибрано -",
+  "myWordbook": "Мій словник",
+  "mySentenceCollection": "Мій збірник речень"
 }

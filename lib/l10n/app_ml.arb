@@ -683,5 +683,7 @@
   "chatAllConversations": "എല്ലാ സംഭാഷണങ്ങളും",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "നിങ്ങൾക്ക് ഈ സംഭാഷണം ഇല്ലാതാക്കണോ?\nഇല്ലാതാക്കിയ സംഭാഷണം വീണ്ടെടുക്കാൻ കഴിയില്ല.",
-  "notSelected": "-ഒന്നും തിരഞ്ഞെടുത്തിട്ടില്ല-"
+  "notSelected": "-ഒന്നും തിരഞ്ഞെടുത്തിട്ടില്ല-",
+  "myWordbook": "എൻ്റെ പദാവലി",
+  "mySentenceCollection": "എൻ്റെ വാക്യ ശേഖരം"
 }

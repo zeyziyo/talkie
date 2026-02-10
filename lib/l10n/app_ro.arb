@@ -683,5 +683,7 @@
   "chatAllConversations": "Toate conversațiile",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Sigur dorești să ștergi această conversație?\nConversațiile șterse nu pot fi recuperate.",
-  "notSelected": "- Neselectat -"
+  "notSelected": "- Neselectat -",
+  "myWordbook": "Vocabularul meu",
+  "mySentenceCollection": "Colecția mea de fraze"
 }

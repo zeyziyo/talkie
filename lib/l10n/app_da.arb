@@ -683,5 +683,7 @@
   "chatAllConversations": "Alle samtaler",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Er du sikker på, at du vil slette denne samtale?\nSlettede samtaler kan ikke gendannes.",
-  "notSelected": "- Ikke valgt -"
+  "notSelected": "- Ikke valgt -",
+  "myWordbook": "Min ordbog",
+  "mySentenceCollection": "Min sætningssamling"
 }

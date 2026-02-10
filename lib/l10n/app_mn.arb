@@ -683,5 +683,7 @@
   "chatAllConversations": "Бүх яриа",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Та энэ яриаг устгах уу?\nУстгасан яриаг сэргээх боломжгүй.",
-  "notSelected": "- Сонгоогүй -"
+  "notSelected": "- Сонгоогүй -",
+  "myWordbook": "Миний үгийн сан",
+  "mySentenceCollection": "Миний өгүүлбэрийн цуглуулга"
 }

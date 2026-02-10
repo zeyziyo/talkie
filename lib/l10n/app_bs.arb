@@ -683,5 +683,7 @@
   "chatAllConversations": "Svi razgovori",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Želite li izbrisati ovaj razgovor?\nIzbrisani razgovori se ne mogu vratiti.",
-  "notSelected": "- Nije odabrano -"
+  "notSelected": "- Nije odabrano -",
+  "myWordbook": "Moja riznica riječi",
+  "mySentenceCollection": "Moja zbirka rečenica"
 }

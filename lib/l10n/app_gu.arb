@@ -683,5 +683,7 @@
   "chatAllConversations": "બધી વાતચીત",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "શું તમે આ વાતચીત કાઢી નાખવા માંગો છો?\nકાઢી નાખેલી વાતચીત પુનઃપ્રાપ્ત કરી શકાતી નથી.",
-  "notSelected": "- કોઈ પસંદગી નથી -"
+  "notSelected": "- કોઈ પસંદગી નથી -",
+  "myWordbook": "મારું શબ્દકોશ",
+  "mySentenceCollection": "મારું વાક્ય સંગ્રહ"
 }

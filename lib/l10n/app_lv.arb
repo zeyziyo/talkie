@@ -683,5 +683,7 @@
   "chatAllConversations": "Visas sarunas",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Vai vēlaties izdzēst šo sarunu?\nIzdzēstās sarunas nevar atgūt.",
-  "notSelected": "- Nav atlasīts -"
+  "notSelected": "- Nav atlasīts -",
+  "myWordbook": "Mana vārdnīca",
+  "mySentenceCollection": "Mana teikumu kolekcija"
 }

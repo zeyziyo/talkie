@@ -683,5 +683,7 @@
   "chatAllConversations": "అన్ని సంభాషణలు",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "మీరు ఈ సంభాషణను తొలగించాలనుకుంటున్నారా?\nతొలగించిన సంభాషణను తిరిగి పొందలేరు.",
-  "notSelected": "- ఎంచుకోలేదు -"
+  "notSelected": "- ఎంచుకోలేదు -",
+  "myWordbook": "నా పదజాలం",
+  "mySentenceCollection": "నా వాక్యాల సేకరణ"
 }

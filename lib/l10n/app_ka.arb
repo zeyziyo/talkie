@@ -683,5 +683,7 @@
   "chatAllConversations": "ყველა საუბარი",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "გსურთ ამ საუბრის წაშლა?\nწაშლილი საუბრის აღდგენა შეუძლებელია.",
-  "notSelected": "- არ არის არჩეული -"
+  "notSelected": "- არ არის არჩეული -",
+  "myWordbook": "ჩემი სიტყვების წიგნი",
+  "mySentenceCollection": "ჩემი წინადადებების კრებული"
 }

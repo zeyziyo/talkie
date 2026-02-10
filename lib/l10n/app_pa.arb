@@ -683,5 +683,7 @@
   "chatAllConversations": "ਸਾਰੀਆਂ ਗੱਲਬਾਤਾਂ",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "ਕੀ ਤੁਸੀਂ ਇਸ ਗੱਲਬਾਤ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?\nਮਿਟਾਈ ਗਈ ਗੱਲਬਾਤ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।",
-  "notSelected": "- ਕੋਈ ਨਹੀਂ ਚੁਣਿਆ ਗਿਆ -"
+  "notSelected": "- ਕੋਈ ਨਹੀਂ ਚੁਣਿਆ ਗਿਆ -",
+  "myWordbook": "ਮੇਰੀ ਸ਼ਬਦਾਵਲੀ",
+  "mySentenceCollection": "ਮੇਰਾ ਵਾਕ ਸੰਗ੍ਰਹਿ"
 }

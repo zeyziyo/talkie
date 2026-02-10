@@ -683,5 +683,7 @@
   "chatAllConversations": "Zonke izingxoxo",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Uqinisekile ukuthi ufuna ukususa le ngxoxo?\nAyikwazi ukubuyiselwa emuva uma isisusiwe.",
-  "notSelected": "- Akukhethiwe - "
+  "notSelected": "- Akukhethiwe - ",
+  "myWordbook": "Isilulumagama sami",
+  "mySentenceCollection": "Iqoqo lemisho yami"
 }

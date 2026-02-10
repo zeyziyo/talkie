@@ -683,5 +683,7 @@
   "chatAllConversations": "همه گفتگوها",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "آیا می خواهید این مکالمه را حذف کنید؟\nمکالمات حذف شده قابل بازیابی نیستند.",
-  "notSelected": "- انتخاب نشده -"
+  "notSelected": "- انتخاب نشده -",
+  "myWordbook": "دفتر لغات من",
+  "mySentenceCollection": "مجموعه جملات من"
 }

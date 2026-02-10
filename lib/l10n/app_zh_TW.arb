@@ -683,5 +683,7 @@
   "chatAllConversations": "所有對話",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "您確定要刪除此對話嗎？\n刪除的對話將無法復原。",
-  "notSelected": "- 未選擇 -"
+  "notSelected": "- 未選擇 -",
+  "myWordbook": "我的單字本",
+  "mySentenceCollection": "我的句子收藏"
 }

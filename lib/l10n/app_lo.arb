@@ -683,5 +683,7 @@
   "chatAllConversations": "ສົນທະນາທັງໝົດ",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "ທ່ານແນ່ໃຈບໍ່ວ່າຈະລຶບການສົນທະນານີ້?\nການສົນທະນາທີ່ຖືກລຶບຈະບໍ່ສາມາດກູ້ຄືນໄດ້.",
-  "notSelected": "- ບໍ່ໄດ້ເລືອກ -"
+  "notSelected": "- ບໍ່ໄດ້ເລືອກ -",
+  "myWordbook": "ປື້ມຄຳສັບຂອງຂ້ອຍ",
+  "mySentenceCollection": "ບ່ອນເກັບປະໂຫຍກຂອງຂ້ອຍ"
 }

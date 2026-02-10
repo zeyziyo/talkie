@@ -683,5 +683,7 @@
   "chatAllConversations": "সকলো কথোপকথন",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "আপুনি এই কথোপকথনটো মচিব বিচাৰে নেকি?\nমচাৰ পিছত কথোপকথনটো পুনৰুদ্ধাৰ কৰিব নোৱাৰিব।",
-  "notSelected": "- নিৰ্বাচিত কৰা হোৱা নাই -"
+  "notSelected": "- নিৰ্বাচিত কৰা হোৱা নাই -",
+  "myWordbook": "মোৰ শব্দ তালিকা",
+  "mySentenceCollection": "মোৰ বাক্য সংগ্ৰহ"
 }

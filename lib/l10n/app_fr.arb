@@ -683,5 +683,7 @@
   "chatAllConversations": "Toutes les conversations",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Êtes-vous sûr de vouloir supprimer cette conversation ?\nElle ne pourra pas être récupérée.",
-  "notSelected": "- Non sélectionné -"
+  "notSelected": "- Non sélectionné -",
+  "myWordbook": "Mon vocabulaire",
+  "mySentenceCollection": "Mes phrases"
 }

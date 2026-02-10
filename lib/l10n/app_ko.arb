@@ -684,5 +684,7 @@
   "chatAllConversations": "전체 대화",
   "tabConversation": "대화",
   "confirmDeleteConversation": "이 대화를 삭제하시겠습니까?\n삭제된 대화는 복구할 수 없습니다.",
-  "notSelected": "- 선택 안함 -"
+  "notSelected": "- 선택 안함 -",
+  "myWordbook": "나의 단어장",
+  "mySentenceCollection": "나의 문장집"
 }

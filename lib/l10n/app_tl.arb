@@ -683,5 +683,7 @@
   "chatAllConversations": "Lahat ng Usapan",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Sigurado ka bang gusto mong burahin ang usapang ito?\n Hindi na ito maibabalik pa.",
-  "notSelected": "- Walang Napili -"
+  "notSelected": "- Walang Napili -",
+  "myWordbook": "Aking Aklat ng Salita",
+  "mySentenceCollection": "Aking Koleksyon ng Pangungusap"
 }

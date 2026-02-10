@@ -683,5 +683,7 @@
   "chatAllConversations": "Vsi pogovori",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Želite izbrisati ta pogovor?\nIzbrisanih pogovorov ni mogoče obnoviti.",
-  "notSelected": "- Ni izbrano -"
+  "notSelected": "- Ni izbrano -",
+  "myWordbook": "Moja besedna zbirka",
+  "mySentenceCollection": "Moja zbirka stavkov"
 }

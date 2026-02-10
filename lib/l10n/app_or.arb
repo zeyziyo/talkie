@@ -683,5 +683,7 @@
   "chatAllConversations": "ସମସ୍ତ ବାର୍ତ୍ତାଳାପ",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "ଆପଣ ଏହି ବାର୍ତ୍ତାଳାପକୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?\nଡିଲିଟ୍ ହୋଇଥିବା ବାର୍ତ୍ତାଳାପକୁ ପୁନରୁଦ୍ଧାର କରାଯାଇପାରିବ ନାହିଁ।",
-  "notSelected": "- ଚୟନ କରାଯାଇ ନାହିଁ -"
+  "notSelected": "- ଚୟନ କରାଯାଇ ନାହିଁ -",
+  "myWordbook": "ମୋ ଶବ୍ଦବହି",
+  "mySentenceCollection": "ମୋ ବାକ୍ୟ ସଂଗ୍ରହ"
 }

@@ -683,5 +683,7 @@
   "chatAllConversations": "All Conversations",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Are you sure you want to delete this conversation?\nThis action cannot be undone.",
-  "notSelected": "- Not Selected -"
+  "notSelected": "- Not Selected -",
+  "myWordbook": "My Wordbook",
+  "mySentenceCollection": "My Sentence Collection"
 }

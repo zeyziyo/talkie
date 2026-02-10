@@ -683,5 +683,7 @@
   "chatAllConversations": "ሁሉም ንግግሮች",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "ይህን ውይይት መሰረዝ ይፈልጋሉ?\nየተሰረዙ ንግግሮችን መልሶ ማግኘት አይቻልም።",
-  "notSelected": "- አልተመረጠም - "
+  "notSelected": "- አልተመረጠም - ",
+  "myWordbook": "የቃላት መምረጫ",
+  "mySentenceCollection": "የዓረፍተ ነገር ስብስብ"
 }

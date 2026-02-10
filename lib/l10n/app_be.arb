@@ -683,5 +683,7 @@
   "chatAllConversations": "Усе размовы",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Вы сапраўды жадаеце выдаліць гэтую размову?\nЯе нельга будзе аднавіць.",
-  "notSelected": "- Не выбрана -"
+  "notSelected": "- Не выбрана -",
+  "myWordbook": "Мой слоўнік",
+  "mySentenceCollection": "Мой зборнік прапаноў"
 }

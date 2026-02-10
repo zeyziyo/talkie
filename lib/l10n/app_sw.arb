@@ -683,5 +683,7 @@
   "chatAllConversations": "Mazungumzo Yote",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Unataka kufuta mazungumzo haya?\nHazitaweza kurejeshwa.",
-  "notSelected": "- Haijachaguliwa -"
+  "notSelected": "- Haijachaguliwa -",
+  "myWordbook": "Kitabu Changu cha Maneno",
+  "mySentenceCollection": "Mkusanyiko Wangu wa Sentensi"
 }

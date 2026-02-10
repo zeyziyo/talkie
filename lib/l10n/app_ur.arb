@@ -683,5 +683,7 @@
   "chatAllConversations": "تمام گفتگوئیں",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "کیا آپ اس گفتگو کو حذف کرنا چاہتے ہیں؟ حذف شدہ گفتگو کو بازیافت نہیں کیا جا سکتا۔",
-  "notSelected": "- منتخب نہیں - "
+  "notSelected": "- منتخب نہیں - ",
+  "myWordbook": "میری الفاظ کی کتاب",
+  "mySentenceCollection": "میرے جملوں کا مجموعہ"
 }

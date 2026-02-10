@@ -683,5 +683,7 @@
   "chatAllConversations": "Alle gesprekke",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Wil jy hierdie gesprek uitvee?\nJy sal nie die uitgeveede gesprek kan herstel nie.",
-  "notSelected": "- Nie gekies nie -"
+  "notSelected": "- Nie gekies nie -",
+  "myWordbook": "My Woordeboek",
+  "mySentenceCollection": "My Sinversameling"
 }

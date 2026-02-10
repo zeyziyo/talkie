@@ -683,5 +683,7 @@
   "chatAllConversations": "सर्व संभाषणे",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "तुम्ही हे संभाषण हटवू इच्छिता?\nहटवलेले संभाषण पुनर्प्राप्त केले जाऊ शकत नाही.",
-  "notSelected": "- निवडलेले नाही -"
+  "notSelected": "- निवडलेले नाही -",
+  "myWordbook": "माझी शब्दसूची",
+  "mySentenceCollection": "माझे वाक्य संग्रह"
 }

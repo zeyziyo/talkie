@@ -683,5 +683,7 @@
   "chatAllConversations": "Alle Konversationen",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Möchten Sie diese Konversation wirklich löschen?\nGelöschte Konversationen können nicht wiederhergestellt werden.",
-  "notSelected": "- Keine Auswahl -"
+  "notSelected": "- Keine Auswahl -",
+  "myWordbook": "Mein Vokabelheft",
+  "mySentenceCollection": "Meine Satzsammlung"
 }

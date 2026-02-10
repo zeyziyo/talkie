@@ -683,5 +683,7 @@
   "chatAllConversations": "Totes les converses",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Vols suprimir aquesta conversa?\nNo podràs recuperar-la.",
-  "notSelected": "- Sense seleccionar -"
+  "notSelected": "- Sense seleccionar -",
+  "myWordbook": "El meu vocabulari",
+  "mySentenceCollection": "La meva col·lecció de frases"
 }

@@ -683,5 +683,7 @@
   "chatAllConversations": "Alle gesprekken",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "Weet je zeker dat je dit gesprek wilt verwijderen?\nVerwijderde gesprekken kunnen niet worden hersteld.",
-  "notSelected": "- Niet geselecteerd -"
+  "notSelected": "- Niet geselecteerd -",
+  "myWordbook": "Mijn woordenboek",
+  "mySentenceCollection": "Mijn zinnenverzameling"
 }

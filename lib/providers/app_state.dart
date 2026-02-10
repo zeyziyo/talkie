@@ -142,6 +142,11 @@ class AppState extends ChangeNotifier {
   List<String> _disambiguationOptions = [];
   bool _showDisambiguationDialog = false; // Trigger UI dialog
   
+  // Phase 81.4: Save Target Material (Subject) for Mode 1
+  String _selectedSaveSubject = 'Basic'; 
+  String get selectedSaveSubject => _selectedSaveSubject; 
+  void setSelectedSaveSubject(String value) { _selectedSaveSubject = value; notifyListeners(); }
+  
   // Mode 2 (복습) State
   List<Map<String, dynamic>> _studyRecords = [];
   String _selectedReviewLanguage = 'en'; // Filter by target language, default 'en'
@@ -863,99 +868,54 @@ class AppState extends ChangeNotifier {
     notifyListeners();
 
     try {
-      final db = await DatabaseService.database;
+      // Phase 81.4: Use Centralized Service for Better Reliability
+      final itemType = _isWordMode ? 'word' : 'sentence';
+      final finalTags = tags ?? [];
       
-      // Phase 77: Pivot Strategy (Manual Input)
-      // If we have an English translation (Pivot), try to find an existing Group ID
-      int? pivotGroupId;
-      if (_englishText.isNotEmpty) {
-          pivotGroupId = await DatabaseService.findGroupIdByText(_englishText, 'en');
-      } 
-      // Fallback: Check source text if it is English
-      if (pivotGroupId == null && _sourceLang == 'en') {
-          pivotGroupId = await DatabaseService.findGroupIdByText(_sourceText, 'en');
-      }
-       // Fallback: Check target text if it is English
-      if (pivotGroupId == null && _targetLang == 'en') {
-          pivotGroupId = await DatabaseService.findGroupIdByText(_translatedText, 'en');
+      // Add 'Dialogue' tag if in AI chat
+      if (_activeDialogueId != null && !finalTags.contains('Dialogue')) {
+        finalTags.add('Dialogue');
       }
       
-      final timestamp = pivotGroupId ?? DateTime.now().millisecondsSinceEpoch;
-      final createdAt = DateTime.now().toIso8601String();
-
-      // 1. Local Save (Unified Schema)
-      await db.transaction((txn) async {
-        // 단어/문장 테이블 삽입
-        final table = _isWordMode ? 'words' : 'sentences';
-        
-        // Source
-        final sourceId = await txn.insert(table, {
-          'group_id': timestamp,
-          'text': _sourceText,
-          'lang_code': _sourceLang,
-          'pos': _sourcePos.isNotEmpty ? _sourcePos : null, // Added Phase 13
-          'form_type': _sourceFormType.isNotEmpty ? _sourceFormType : null, // Added Phase 13
-          'root': _sourceRoot.isNotEmpty ? _sourceRoot : null,
-          'note': _note.isNotEmpty ? _note : null,
-          'is_memorized': 0, // 신규 저장 시 학습 미완료로 명시적 설정
-          'created_at': createdAt,
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
-
-        // Target
-        final targetId = await txn.insert(table, {
-          'group_id': timestamp,
-          'text': _translatedText,
-          'lang_code': _targetLang,
-          'is_memorized': 0, // 신규 저장 시 학습 미완료로 명시적 설정
-          'created_at': createdAt,
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
-
-        // Phase 76: English Pivot (for shared dictionary linking)
-        // Store English translation if not already source/target language
-        if (_englishText.isNotEmpty && _sourceLang != 'en' && _targetLang != 'en') {
-          await txn.insert(table, {
-            'group_id': timestamp,
-            'text': _englishText,
-            'lang_code': 'en',
-            'is_memorized': 0,
-            'created_at': createdAt,
-          }, conflictAlgorithm: ConflictAlgorithm.ignore);
-        }
-
-        // 번역 연결 테이블
-        if (_isWordMode) {
-          await txn.insert('word_translations', {
-            'source_word_id': sourceId > 0 ? sourceId : (await _getUnifiedId(txn, 'words', _sourceText, _sourceLang, _note)),
-            'target_word_id': targetId > 0 ? targetId : (await _getUnifiedId(txn, 'words', _translatedText, _targetLang, null)),
-          }, conflictAlgorithm: ConflictAlgorithm.ignore);
+      // Add the User-Selected Material Subject as a Tag for Filtering
+      String subjectToSave = _selectedSaveSubject;
+      // Phase 81.5: Enforce localized default titles if no subject or "Basic"
+      if (subjectToSave.isEmpty || subjectToSave == 'Basic') {
+        // Since we are in AppState (ChangeNotifier), we don't have direct context.
+        // We use hardcoded defaults based on current _sourceLang as a fallback.
+        if (_sourceLang == 'ko') {
+          subjectToSave = _isWordMode ? '나의 단어장' : '나의 문장집';
         } else {
-          await txn.insert('sentence_translations', {
-            'source_sentence_id': sourceId > 0 ? sourceId : (await _getUnifiedId(txn, 'sentences', _sourceText, _sourceLang, _note)),
-            'target_sentence_id': targetId > 0 ? targetId : (await _getUnifiedId(txn, 'sentences', _translatedText, _targetLang, null)),
-          }, conflictAlgorithm: ConflictAlgorithm.ignore);
+          subjectToSave = _isWordMode ? 'My Wordbook' : 'My Sentence Collection';
         }
+      }
 
-        // 태그 등록
-        final itemType = _isWordMode ? 'word' : 'sentence';
-        final finalTags = tags ?? [];
-        if (_activeDialogueId != null) finalTags.add('Dialogue');
-        
-        for (var tag in finalTags) {
-          await txn.insert('item_tags', {
-            'item_id': sourceId > 0 ? sourceId : (await _getUnifiedId(txn, table, _sourceText, _sourceLang, _note)),
-            'item_type': itemType,
-            'tag': tag,
-          }, conflictAlgorithm: ConflictAlgorithm.ignore);
-          
-          await txn.insert('item_tags', {
-            'item_id': targetId > 0 ? targetId : (await _getUnifiedId(txn, table, _translatedText, _targetLang, null)),
-            'item_type': itemType,
-            'tag': tag,
-          }, conflictAlgorithm: ConflictAlgorithm.ignore);
-        }
-      });
+      if (!finalTags.contains(subjectToSave)) {
+        finalTags.add(subjectToSave);
+      }
 
-      debugPrint('[AppState] Local unified save successful');
+      // Phase 77: Pivot Strategy (Internal key check for linking)
+      // Check if we already have an English pivot to link groups together
+      String? syncKey;
+      if (_englishText.isNotEmpty) syncKey = _englishText;
+      else if (_sourceLang == 'en') syncKey = _sourceText;
+      else if (_targetLang == 'en') syncKey = _translatedText;
+
+      final timestamp = await DatabaseService.saveUnifiedRecord(
+        text: _sourceText, 
+        lang: _sourceLang, 
+        translation: _translatedText, 
+        targetLang: _targetLang, 
+        type: itemType,
+        pos: _sourcePos.isNotEmpty ? _sourcePos : null,
+        formType: _sourceFormType.isNotEmpty ? _sourceFormType : null,
+        root: _sourceRoot.isNotEmpty ? _sourceRoot : null,
+        note: _note.isNotEmpty ? _note : null,
+        tags: finalTags,
+        syncSubject: syncKey,
+      );
+
+      debugPrint('[AppState] Local unified save (via Service) successful: $timestamp');
       
       // 2. Supabase Save (Cloud Sync)
       try {
@@ -971,13 +931,13 @@ class AppState extends ChangeNotifier {
         debugPrint('[AppState] Supabase Cloud Sync failed: $e');
       }
 
-
       _statusMessage = '저장 완료!';
       _isSaved = true; 
       
       // Refresh Lists Immediately
-      await loadTags(); // 가용 태그 목록 갱신
-      await loadRecordsByTags(); // 통합 목록(복습/연습 모드 데이터) 즉시 갱신
+      await loadTags(); 
+      await loadStudyMaterials(); 
+      await loadRecordsByTags(); 
       
       notifyListeners();
     } catch (e) {
@@ -1445,39 +1405,42 @@ class AppState extends ChangeNotifier {
       
       // 검색 및 필터 쿼리 구성
       List<dynamic> whereArgs = [];
-      
-
-      // Simplified JOIN query for Tags + Search
       final String table = _recordTypeFilter == 'word' ? 'words' : 'sentences';
-      
-      String query = 'SELECT DISTINCT t.* FROM $table t ';
-      
-      if (_selectedTags.isNotEmpty) {
-        query += 'INNER JOIN item_tags it ON t.id = it.item_id AND it.item_type = ? ';
-        whereArgs.add(_recordTypeFilter == 'word' ? 'word' : 'sentence');
-      }
+      final String itemType = _recordTypeFilter == 'word' ? 'word' : 'sentence';
 
-      // WHERE Clause Construction
+      String query = 'SELECT t.* FROM $table t ';
       List<String> conditions = [];
       
       // 1. Source Language Filter (Primary)
       conditions.add('t.lang_code = ?');
       whereArgs.add(_sourceLang);
       
-      // 2. Tags
+      // 2. Tags (Phase 81.3 Refinement: Robust Group-based AND filtering)
       if (_selectedTags.isNotEmpty) {
-        conditions.add('it.tag IN (${_selectedTags.map((_) => '?').join(',')})');
-        whereArgs.addAll(_selectedTags);
+        for (var tag in _selectedTags) {
+          // 태그가 같은 그룹 내 어떤 아이템(word/sentence 무관)에라도 붙어있다면 해당 그룹의 현재 언어 레코드를 포함
+          conditions.add('''
+            t.group_id IN (
+              SELECT DISTINCT w2.group_id FROM words w2 
+              JOIN item_tags it2 ON w2.id = it2.item_id AND it2.item_type = 'word'
+              WHERE it2.tag = ?
+              UNION
+              SELECT DISTINCT s2.group_id FROM sentences s2 
+              JOIN item_tags it2 ON s2.id = it2.item_id AND it2.item_type = 'sentence'
+              WHERE it2.tag = ?
+            )
+          ''');
+          whereArgs.add(tag);
+          whereArgs.add(tag);
+        }
       }
       
-      // 3. Search Query (Modified: Source Only Search)
-    if (_searchQuery.isNotEmpty) {
-      // 사용자가 어떤 언어로 입력하더라도 '모국어 자료'에서 검색 (사용자 요청 반영)
-      // t.text는 이미 lang_code = sourceLang으로 필터링된 t 테이블의 컬럼이므로 자연스럽게 모국어 검색이 됨
-      conditions.add('t.text LIKE ?');
-      whereArgs.add('%$_searchQuery%');
-    }
-
+      // 3. Search Query (Source Language matching)
+      if (_searchQuery.isNotEmpty) {
+        conditions.add('t.text LIKE ?');
+        whereArgs.add('%$_searchQuery%');
+      }
+      
       // 4. Phase 59: StartsWith
       if (_filterStartsWith != null && _filterStartsWith!.isNotEmpty) {
         conditions.add('t.text LIKE ?');
@@ -1508,48 +1471,54 @@ class AppState extends ChangeNotifier {
 
       final List<Map<String, dynamic>> results = await db.rawQuery(query, whereArgs);
       
-      // UI 호환성을 위한 데이터 가공 (source_text, target_text 페어링)
-      // Unified Schema에서는 source/target 구분이 없으므로, 현재 언어 설정을 기반으로 매핑
+      if (results.isEmpty) {
+        _materialRecords = [];
+        notifyListeners();
+        return;
+      }
+
+      // Bulk Data Collection (Optimization Phase 81.3)
+      final groupIds = results.map((r) => r['group_id'] as int).toList();
+      final sourceIds = results.map((r) => r['id'] as int).toList();
+      
+      // 1. Fetch Target Rows
+      final targetRows = await db.query(table, 
+          where: 'group_id IN (${groupIds.map((_) => '?').join(',')}) AND lang_code = ?', 
+          whereArgs: [...groupIds, _targetLang]);
+      final Map<int, Map<String, dynamic>> targetMap = { for (var r in targetRows) r['group_id'] as int : r };
+
+      // 2. Fetch Tags
+      final tagRows = await db.query('item_tags', 
+          where: 'item_id IN (${sourceIds.map((_) => '?').join(',')}) AND item_type = ?', 
+          whereArgs: [...sourceIds, itemType]);
+      final Map<int, List<String>> tagMap = {};
+      for (var tr in tagRows) {
+        final id = tr['item_id'] as int;
+        tagMap.putIfAbsent(id, () => []).add(tr['tag'] as String);
+      }
+
+      // UI 호환성을 위한 데이터 가공
       List<Map<String, dynamic>> pairedResults = [];
-      final rowType = _recordTypeFilter == 'word' ? 'word' : 'sentence';
       
       for (var row in results) {
-        final groupId = row['group_id'] as int?;
-        if (groupId == null) continue;
+        final groupId = row['group_id'] as int;
+        final sourceRow = row;
+        final targetRow = targetMap[groupId];
         
-        // 현재 설정된 sourceLang과 targetLang에 해당하는 텍스트들을 그룹에서 찾아냄
-        // Source는 위 쿼리 조건에 의해 보장됨. Target은 존재하지 않을 수도 있음.
-        final sourceRow = (row['lang_code'] == _sourceLang) ? row : await _getRowByGroup(db, table, groupId, _sourceLang);
-        final targetRow = (row['lang_code'] == _targetLang) ? row : await _getRowByGroup(db, table, groupId, _targetLang);
-        
-        if (sourceRow == null) continue; // Source가 없으면 표시 불가
-
-        // 품사, 원형 등 상세 정보 추출 (Source 기준으로 표시)
-        final pos = sourceRow['pos'] as String?;
-        final formType = sourceRow['form_type'] as String?;
-        final root = sourceRow['root'] as String?;
-        
-        // 해당 아이템의 태그들 가져오기
-        final tagResults = await db.query('item_tags', 
-            columns: ['tag'], 
-            where: 'item_id = ? AND item_type = ?', 
-            whereArgs: [sourceRow['id'], rowType]);
-        final tags = tagResults.map((e) => e['tag'] as String).toList();
-
         pairedResults.add({
           'id': sourceRow['id'], 
-          'target_id': targetRow?['id'], // Added Phase 53
+          'target_id': targetRow?['id'], 
           'group_id': groupId,
-          'type': rowType, // 단어/문장 구분
+          'type': itemType, 
           'source_lang': _sourceLang,
           'target_lang': _targetLang,
           'source_text': sourceRow['text'],
-          'target_text': targetRow != null ? targetRow['text'] : '', // Target 없어도 Source는 보여줌
+          'target_text': targetRow != null ? targetRow['text'] : '', 
           'note': sourceRow['note'] ?? targetRow?['note'],
-          'pos': pos,
-          'form_type': formType,
-          'root': root,
-          'tags': tags,
+          'pos': sourceRow['pos'],
+          'form_type': sourceRow['form_type'],
+          'root': sourceRow['root'],
+          'tags': tagMap[sourceRow['id']] ?? [],
           'created_at': sourceRow['created_at'],
           'review_count': sourceRow['review_count'] ?? 0,
           'is_memorized': (targetRow != null ? targetRow['is_memorized'] : sourceRow['is_memorized']) == 1, 
@@ -1644,10 +1613,16 @@ class AppState extends ChangeNotifier {
   ) async {
     try {
       final data = json.decode(jsonContent) as Map<String, dynamic>;
-      final sourceLang = data['source_language'] as String;
-      final targetLang = data['target_language'] as String;
-      final entries = data['entries'] as List;
+      final entries = data['entries'] as List?;
+      final defaultType = data['default_type'] as String? ?? 'sentence';
+      final subject = data['subject'] as String? ?? 'Imported Material';
       
+      if (sourceLang.trim().isEmpty || targetLang.trim().isEmpty) {
+        // Fallback to current app settings
+        data['source_language'] = _sourceLang;
+        data['target_language'] = _targetLang;
+      }
+
       int importedCount = 0;
       int skippedCount = 0;
       int duplicateCount = 0;
@@ -1656,69 +1631,23 @@ class AppState extends ChangeNotifier {
       _statusMessage = 'Importing...';
       notifyListeners();
 
-      // 1. Handle Dialogue Sets (Phase 11 Support)
-      if (data.containsKey('dialogues') && data['dialogues'] is List) {
-        final dialogues = data['dialogues'] as List;
-        for (var d = 0; d < dialogues.length; d++) {
-          try {
-            final dialog = dialogues[d] as Map<String, dynamic>;
-            final title = dialog['title'] as String?;
-            final persona = dialog['persona'] as String?;
-            final messages = dialog['messages'] as List;
-
-            _statusMessage = 'Importing Dialogue: ${title ?? "..."}';
-            notifyListeners();
-
-            // Create Dialogue Group on Supabase
-            final dialogueId = await SupabaseService.createDialogueGroup(
-              title: title ?? 'Imported Conversation',
-              persona: persona,
-            );
-
-            // Save locally
-            await DatabaseService.insertDialogueGroup(
-              id: dialogueId,
-              title: title ?? 'Imported Conversation',
-              persona: persona,
-              createdAt: DateTime.now().toIso8601String(),
-              userId: SupabaseService.client.auth.currentUser?.id,
-            );
-
-            for (var m = 0; m < messages.length; m++) {
-              final msg = messages[m] as Map<String, dynamic>;
-              final result = await SupabaseService.importDialogueMessage(
-                dialogueId: dialogueId,
-                sourceText: msg['source_text'] as String,
-                sourceLang: sourceLang,
-                targetText: msg['target_text'] as String,
-                targetLang: targetLang,
-                speaker: (msg['speaker'] ?? persona ?? 'AI') as String,
-                sequenceOrder: m + 1,
-              );
-              
-              if (result['success'] == true) {
-                importedCount++;
-              } else {
-                errors.add('Dialogue "${title}": Post ${m+1} failed: ${result['reason']}');
-              }
-            }
-          } catch (e) {
-            errors.add('Dialogue ${d+1} failed: $e');
-          }
-        }
-        await loadDialogueGroups();
-      }
-
-      // 2. Handle Regular Entries (Original logic)
-      if (data.containsKey('entries') && data['entries'] is List) {
-        final entries = data['entries'] as List;
+      // 1. Local Import via DatabaseService (Phase 81.5: Unified logic)
+      final localResult = await DatabaseService.importFromJsonWithMetadata(
+        jsonContent,
+        defaultSourceLang: _sourceLang,
+        defaultTargetLang: _targetLang,
+        defaultType: defaultType,
+      );
+      
+      // 2. Supabase Sync (Phase 81.5: Pass enhanced metadata)
+      if (entries != null) {
         for (var i = 0; i < entries.length; i++) {
           try {
             final entry = entries[i] as Map<String, dynamic>;
-            final sourceText = entry['source_text'] as String;
-            final targetText = entry['target_text'] as String;
+            final sourceText = (entry['source_text'] ?? entry['text']) as String?;
+            final targetText = (entry['target_text'] ?? entry['translation']) as String?;
             
-            if (sourceText.trim().isEmpty || targetText.trim().isEmpty) {
+            if (sourceText == null || sourceText.trim().isEmpty) {
               skippedCount++;
               continue;
             }
@@ -1727,17 +1656,22 @@ class AppState extends ChangeNotifier {
             final pos = entry['pos'] as String?;
             final formType = entry['form_type'] as String?;
             final root = entry['root'] as String?;
+            final entryType = entry['type'] as String? ?? defaultType;
+            final entryTags = (entry['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
+            if (!entryTags.contains(subject)) entryTags.add(subject);
 
-            // 1. Supabase Sync (Phase 13 updated)
+            // 1. Supabase Sync (Phase 81.5: Pass type and tags)
             final result = await SupabaseService.importJsonEntry(
               sourceText: sourceText,
-              sourceLang: sourceLang,
-              targetText: targetText,
-              targetLang: targetLang,
+              sourceLang: sourceLang.isNotEmpty ? sourceLang : _sourceLang,
+              targetText: targetText ?? '',
+              targetLang: targetLang.isNotEmpty ? targetLang : _targetLang,
               note: note,
               pos: pos,
               formType: formType,
               root: root,
+              type: entryType,
+              tags: entryTags,
             );
             
             if (result['success'] == true) {
@@ -2518,54 +2452,89 @@ class AppState extends ChangeNotifier {
       // Native Strategy: Do NOT extract English subject. Use local subject.
       // removed pivotSubject logic
 
+  Future<Map<String, dynamic>> importRemoteMaterial(Map<String, dynamic> material, {String? type}) async {
+    final mId = material['id'];
+    final mName = material['name'] as String? ?? 'Unnamed Material';
+    final sPath = material['source_url'] as String?;
+    final tPath = material['target_url'] as String?;
+    final pPath = material['pivot_url'] as String?;
+    final fetchPivot = material['fetch_pivot'] == true;
 
-    // Use filename (without extension) as the stable synchronization key
-    final syncKey = mPath.split('/').last.replaceAll('.json', '');
+    if (sPath == null || tPath == null) {
+      return {'success': false, 'error': 'Missing source or target URL'};
+    }
 
-    _statusMessage = 'Importing $mName ($sName)...';
+    _isTranslating = true;
+    _statusMessage = 'Downloading $mName...';
     notifyListeners();
-    await DatabaseService.importFromJsonWithMetadata(
-      sJson, 
-      fileName: 'remote_${mId}_$_sourceLang.json',
-      overrideSubject: mName, // Localized title
-      syncKey: syncKey, // Stable internal key
-      userId: 'user', 
-    );
 
-    _statusMessage = 'Importing $mName ($tName)...';
-    notifyListeners();
-    final importResult = await DatabaseService.importFromJsonWithMetadata(
-      tJson, 
-      fileName: 'remote_${mId}_$_targetLang.json',
-      overrideSubject: mName, 
-      syncKey: syncKey,
-      userId: 'user', 
-    );
+    try {
+      // Fetch Source, Target (and optionally Pivot) in parallel
+      final futures = [
+        http.get(Uri.parse(sPath)),
+        http.get(Uri.parse(tPath)),
+        if (fetchPivot && pPath != null) http.get(Uri.parse(pPath)),
+      ];
 
-    // Import Pivot (English) if fetched
-    if (fetchPivot && results.length > 2 && results[2].statusCode == 200) {
-      _statusMessage = 'Linking with English Pivot...';
+      final results = await Future.wait(futures);
+      
+      if (results[0].statusCode != 200 || results[1].statusCode != 200) {
+        throw Exception('Download failed (Source: ${results[0].statusCode}, Target: ${results[1].statusCode})');
+      }
+
+      final sJson = utf8.decode(results[0].bodyBytes);
+      final tJson = utf8.decode(results[1].bodyBytes);
+
+      // Stable synchronization key
+      final syncKey = sPath.split('/').last.replaceAll('.json', '');
+
+      _statusMessage = 'Importing Source ($mName)...';
       notifyListeners();
-      final eJson = utf8.decode(results[2].bodyBytes);
       await DatabaseService.importFromJsonWithMetadata(
-        eJson, 
-        fileName: 'remote_${mId}_en.json',
+        sJson, 
+        fileName: 'remote_${mId}_$_sourceLang.json',
         overrideSubject: mName, 
-        syncKey: syncKey,
-        userId: 'user', // Ensure visible to default user
+        syncKey: syncKey, 
+        userId: 'user', 
+        defaultType: type,
       );
+
+      _statusMessage = 'Importing Target ($mName)...';
+      notifyListeners();
+      await DatabaseService.importFromJsonWithMetadata(
+        tJson, 
+        fileName: 'remote_${mId}_$_targetLang.json',
+        overrideSubject: mName, 
+        syncKey: syncKey, 
+        userId: 'user', 
+        defaultType: type,
+      );
+
+      if (fetchPivot && results.length > 2 && results[2].statusCode == 200) {
+        _statusMessage = 'Linking with Pivot...';
+        notifyListeners();
+        final pJson = utf8.decode(results[2].bodyBytes);
+        await DatabaseService.importFromJsonWithMetadata(
+          pJson, 
+          fileName: 'remote_${mId}_en.json',
+          overrideSubject: mName, 
+          syncKey: syncKey, 
+          userId: 'user', 
+          defaultType: type,
+        );
       }
 
       await loadDialogueGroups();
       await loadStudyMaterials();
-      await loadTags(); // Added: Refresh tags immediately after import
-      await loadRecordsByTags(); // 자료를 가져온 후 즉시 화면 갱신
+      await loadTags(); 
+      await loadRecordsByTags(); 
       
       _statusMessage = '$mName Imported Successfully';
       notifyListeners();
-      return importResult;
+      return {'success': true};
     } catch (e) {
       _statusMessage = 'Import Failed: $e';
+      debugPrint('[AppState] Import Remote Error: $e');
       notifyListeners();
       return {'success': false, 'error': e.toString()};
     } finally {
@@ -3204,7 +3173,8 @@ class AppState extends ChangeNotifier {
   Future<List<Map<String, String>>> searchByType(String query) async {
     // Current Type (Word or Sentence)
     final type = _recordTypeFilter == 'word' ? 'word' : 'sentence';
-    return await DatabaseService.searchByType(query, type);
+    // Phase 79: Respect Current Source Language for Autocomplete
+    return await DatabaseService.searchByType(query, type, langCode: _sourceLang);
   }
 
   /// Jump to result: Just set query and clear tags. 

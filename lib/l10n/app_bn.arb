@@ -683,5 +683,7 @@
   "chatAllConversations": "সকল কথোপকথন",
   "tabConversation": "Conversation",
   "confirmDeleteConversation": "আপনি কি এই কথোপকথনটি মুছে ফেলতে চান?\nমোছা কথোপকথন পুনরুদ্ধার করা যাবে না।",
-  "notSelected": "- নির্বাচন করা হয়নি -"
+  "notSelected": "- নির্বাচন করা হয়নি -",
+  "myWordbook": "আমার শব্দভাণ্ডার",
+  "mySentenceCollection": "আমার বাক্য সংগ্রহ"
 }
