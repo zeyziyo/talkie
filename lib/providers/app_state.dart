@@ -1470,11 +1470,13 @@ class AppState extends ChangeNotifier {
         whereArgs.addAll(_selectedTags);
       }
       
-      // 3. Search Query (Updated Phase 79.3: Search in any language within the group)
-      if (_searchQuery.isNotEmpty) {
-        conditions.add('t.group_id IN (SELECT DISTINCT group_id FROM $table WHERE text LIKE ?)');
-        whereArgs.add('%$_searchQuery%');
-      }
+      // 3. Search Query (Modified: Source Only Search)
+    if (_searchQuery.isNotEmpty) {
+      // 사용자가 어떤 언어로 입력하더라도 '모국어 자료'에서 검색 (사용자 요청 반영)
+      // t.text는 이미 lang_code = sourceLang으로 필터링된 t 테이블의 컬럼이므로 자연스럽게 모국어 검색이 됨
+      conditions.add('t.text LIKE ?');
+      whereArgs.add('%$_searchQuery%');
+    }
 
       // 4. Phase 59: StartsWith
       if (_filterStartsWith != null && _filterStartsWith!.isNotEmpty) {

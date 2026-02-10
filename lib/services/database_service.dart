@@ -1144,29 +1144,29 @@ class DatabaseService {
   static Future<List<Map<String, dynamic>>> getStudyMaterials() async {
     final db = await database;
     
-    // 1. Get Regular Study Materials (Updated Phase 79.3: Count via Unified Schema)
+    // 1. Get Regular Study Materials (Updated: Count via direct table link or group_id if needed)
+    // 자료 노출 보장을 위해 LEFT JOIN 및 COALESCE 사용 고려
     final materials = await db.rawQuery('''
       SELECT m.*, 
-        (SELECT COUNT(DISTINCT it.item_id) FROM item_tags it 
+        COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it 
          JOIN words w ON it.item_id = w.id AND it.item_type = 'word'
-         WHERE it.tag = m.subject) as word_count,
-        (SELECT COUNT(DISTINCT it.item_id) FROM item_tags it
+         WHERE it.tag = m.subject), 0) as word_count,
+        COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it
          JOIN sentences s ON it.item_id = s.id AND it.item_type = 'sentence'
-         WHERE it.tag = m.subject) as sentence_count
+         WHERE it.tag = m.subject), 0) as sentence_count
       FROM study_materials m 
       ORDER BY m.imported_at DESC
     ''');
     
-    // 2. Get Dialogue Groups (Updated Phase 79.3: Count via Unified Schema)
-    // Note: Dialogue messages also use group_id and tags (dialogue title is the tag)
+    // 2. Get Dialogue Groups (Updated: Ensure title matching is robust)
     final dialogues = await db.rawQuery('''
       SELECT d.*,
-        (SELECT COUNT(DISTINCT it.item_id) FROM item_tags it 
+        COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it 
          JOIN words w ON it.item_id = w.id AND it.item_type = 'word'
-         WHERE it.tag = d.title) as word_count,
-        (SELECT COUNT(DISTINCT it.item_id) FROM item_tags it
+         WHERE it.tag = d.title), 0) as word_count,
+        COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it
          JOIN sentences s ON it.item_id = s.id AND it.item_type = 'sentence'
-         WHERE it.tag = d.title) as sentence_count
+         WHERE it.tag = d.title), 0) as sentence_count
       FROM dialogue_groups d
       ORDER BY d.created_at DESC
     ''');

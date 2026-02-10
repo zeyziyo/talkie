@@ -68,16 +68,19 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // 1. Title Tag Dropdown
+              // 1. Title Tag Dropdown (Material Subject)
               _buildDropdown(
                 label: l10n.titleTagSelection,
                 value: selectedTitle,
                 items: titleTags,
                 l10n: l10n,
+                isTitle: true,
                 onChanged: (val) {
                   setState(() {
                     _localSelectedTags.removeWhere((t) => titleTags.contains(t));
-                    if (val != null && val.isNotEmpty) _localSelectedTags.add(val);
+                    if (val != null && val.isNotEmpty) {
+                      _localSelectedTags.add(val);
+                    }
                   });
                 },
               ),
@@ -93,7 +96,7 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
                 items: generalTags,
                 l10n: l10n,
                 onChanged: (val) {
-                  _updateGeneralTag(0, val, selectedGeneral, generalTags);
+                  _updateGeneralTag(0, val, selectedGeneral, titleTags);
                 },
               ),
 
@@ -106,7 +109,7 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
                 items: generalTags,
                 l10n: l10n,
                 onChanged: (val) {
-                  _updateGeneralTag(1, val, selectedGeneral, generalTags);
+                  _updateGeneralTag(1, val, selectedGeneral, titleTags);
                 },
               ),
 
@@ -119,7 +122,7 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
                 items: generalTags,
                 l10n: l10n,
                 onChanged: (val) {
-                  _updateGeneralTag(2, val, selectedGeneral, generalTags);
+                  _updateGeneralTag(2, val, selectedGeneral, titleTags);
                 },
               ),
 
@@ -131,11 +134,12 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
               TextField(
                 controller: _limitController,
                 keyboardType: TextInputType.number,
+                style: const TextStyle(fontSize: 14),
                 decoration: InputDecoration(
-                  labelText: l10n.recentNItems(10).replaceAll('10', 'N'),
+                  labelText: l10n.recentNItems(10).contains('10') ? l10n.recentNItems(10).replaceAll('10', 'N') : l10n.recentNItems(10),
                   hintText: 'e.g. 20',
-                  prefixIcon: const Icon(Icons.history),
-                  border: const OutlineInputBorder(),
+                  prefixIcon: const Icon(Icons.history, size: 20),
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
                   isDense: true,
                 ),
               ),
@@ -145,11 +149,12 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
               // Starts With (Prefix)
               TextField(
                 controller: _startsWithController,
+                style: const TextStyle(fontSize: 14),
                 decoration: InputDecoration(
                   labelText: l10n.startsWith,
                   hintText: 'e.g. A',
-                  prefixIcon: const Icon(Icons.text_fields),
-                  border: const OutlineInputBorder(),
+                  prefixIcon: const Icon(Icons.text_fields, size: 20),
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
                   isDense: true,
                 ),
               ),
@@ -197,57 +202,63 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
     required List<String> items,
     required AppLocalizations l10n,
     required ValueChanged<String?> onChanged,
+    bool isTitle = false,
   }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: Colors.blueGrey)),
-        const SizedBox(height: 4),
+        Text(
+          label, 
+          style: TextStyle(
+            fontWeight: FontWeight.bold, 
+            fontSize: 12, 
+            color: isTitle ? Colors.blue[700] : Colors.blueGrey[600]
+          )
+        ),
+        const SizedBox(height: 6),
         DropdownButtonFormField<String>(
-          decoration: const InputDecoration(
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
             isDense: true,
-            contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+            fillColor: isTitle ? Colors.blue[50]?.withOpacity(0.3) : Colors.grey[50]?.withOpacity(0.3),
+            filled: true,
           ),
           isExpanded: true,
           value: items.contains(value) ? value : '',
           onChanged: onChanged,
+          icon: Icon(Icons.arrow_drop_down_circle_outlined, size: 18, color: isTitle ? Colors.blue[400] : Colors.grey[400]),
+          borderRadius: BorderRadius.circular(12),
           items: [
-            DropdownMenuItem(value: '', child: Text(l10n.notSelected, style: const TextStyle(color: Colors.grey))),
-            ...items.map((t) => DropdownMenuItem(value: t, child: Text(t, overflow: TextOverflow.ellipsis))).toList(),
+            DropdownMenuItem(value: '', child: Text(l10n.notSelected, style: const TextStyle(color: Colors.grey, fontSize: 13))),
+            ...items.map((t) => DropdownMenuItem(value: t, child: Text(t, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 13)))).toList(),
           ],
         ),
       ],
     );
   }
 
-  void _updateGeneralTag(int index, String? val, List<String> currentGeneral, List<String> allGeneral) {
+  void _updateGeneralTag(int index, String? val, List<String> currentGeneral, List<String> titleTags) {
     setState(() {
-      // Create a copy of current general tags
       List<String> newGeneral = List.from(currentGeneral);
       
       if (val == null || val.isEmpty) {
-        // Remove at index if exists
         if (index < newGeneral.length) {
           newGeneral.removeAt(index);
         }
       } else {
-        // Update at index or add if it matches index
         if (index < newGeneral.length) {
           newGeneral[index] = val;
         } else {
-          // Fill gaps if necessary (unlikely given index logic, but safe)
-          while (newGeneral.length < index) {
-            newGeneral.add(''); // Placeholder if needed
-          }
           newGeneral.add(val);
         }
       }
 
-      // Re-construct _localSelectedTags: [TitleTag (if any)] + [General Tags]
-      String titleTag = _localSelectedTags.firstWhere((t) => !allGeneral.contains(t) && t.isNotEmpty, orElse: () => '');
+      // Re-construct _localSelectedTags: [TitleTag] + [General Tags]
+      String? activeTitle = _localSelectedTags.firstWhere((t) => titleTags.contains(t), orElse: () => '');
+      
       _localSelectedTags = [
-        if (titleTag.isNotEmpty) titleTag,
+        if (activeTitle != null && activeTitle.isNotEmpty) activeTitle,
         ...newGeneral.where((t) => t.isNotEmpty),
       ];
     });
