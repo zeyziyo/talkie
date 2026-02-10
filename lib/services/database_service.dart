@@ -1827,6 +1827,7 @@ class DatabaseService {
     } catch (e) {
       print('[DB] Error fetching language filtered tags: $e');
       return [];
+    }
   }
 
   // ==========================================
