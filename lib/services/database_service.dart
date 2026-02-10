@@ -2348,7 +2348,7 @@ class DatabaseService {
            // Verify if this group_id is valid? Assumed yes.
            if (foundId > 0) {
              groupId = foundId;
-             print('[DB] Pivot Sync: Reusing Group ID $groupId for "$subject" sequence $sequenceOrder');
+             print('[DB] Pivot Sync: Reusing Group ID $groupId for "$syncSubject" sequence $sequenceOrder');
            }
         }
       } catch (e) {
