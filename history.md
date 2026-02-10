@@ -49,7 +49,22 @@
 ### [2026-02-09] Metadata Dialog Redesign & Mode 1 Fixes (Phase 77)
 - **Refactor**: 'Metadata Dialog'에서 'Online Library' 아이콘 제거 (역할 분리 명확화).
 
-- **Phase 79.3: Unified Schema Integration & Visibility Fix** (2026-02-10)
+### [2026-02-10] Data Integrity & Global Default Titles (Phase 81.5)
+- **L10n**: "나의 단어장", "나의 문장집" 기본 제목 80개 언어 전체 자동 번역 및 적용.
+- **Logic**: 저장 시 제목이 없거나 'Basic'인 경우 지역화된 기본 제목 강제 부여로 자료 유실 및 미노출 원천 차단.
+- **Cloud**: Supabase 동기화 시 `type`(word/sentence)과 `tags` 정보를 포함하여 서버-로컬 간 데이터 분류 체계 완벽 일치.
+- **Import**: JSON 임포트 시 `default_type` 엄격 준수 및 언어 정보 누락 시 앱 설정 스마트 상속 로직 구현.
+
+### [2026-02-10] Mode 1 Input Enhancement & Save Reliability (Phase 81.4)
+- **UI**: Mode 1(입력)에 자료집 선택/생성용 Autocomplete 필드 추가 및 기본 힌트 지역화.
+- **Autocomplete**: 메인 입력란에 기존 데이터 기반 자동 완성 도입으로 입력 편의성 및 데이터 중복 방지 강화.
+- **Persistence**: `AppState` 내 저장 로직을 `DatabaseService.saveUnifiedRecord`로 통합하여 데이터 가시성 및 정합성 결함 해결.
+
+### [2026-02-10] Visibility Recovery & Search Integration (Phase 81.2 - 81.3)
+- **UI**: 모국어 중심 검색 및 다이얼로그 통합으로 목표어 번역 유무와 관계없는 원활한 데이터 접근 보장.
+- **Fix**: 학습 카드 가시성 정밀 복구 및 성능 최적화로 복습 모드(Mode 2)의 실시간 데이터 반영 속도 개선.
+
+### [2026-02-10] Unified Schema Integration & Visibility Fix (Phase 79.3)
     - Updated `getStudyMaterials` to count words/sentences via Unified Schema.
     - Modified `loadRecordsByTags` to use group-id subquery for cross-language search.
     - Fixed empty filters in `SearchFilterDialog`. [f85bd2e9-884e-484d-92c4-6ce3d1216e75]
