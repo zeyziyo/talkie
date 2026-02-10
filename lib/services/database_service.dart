@@ -1120,7 +1120,8 @@ class DatabaseService {
     String jsonContent, {
     String? fileName,
     String? userId,
-    String? overrideSubject, // Phase 77: Force subject alignment for Pivot Strategy
+    String? overrideSubject, // Phase 77: Visible Title
+    String? syncKey, // Phase 79: stable key for grouping
   }) async {
     try {
       final data = json.decode(jsonContent) as Map<String, dynamic>;
@@ -1135,7 +1136,8 @@ class DatabaseService {
       final targetLang = _mapLanguageToCode(rawTargetLang);
       
       final nativeSubject = (meta['title'] ?? data['subject']) as String?;
-      final syncSubject = overrideSubject ?? nativeSubject ?? fileName ?? 'Imported Material';
+      final materialSubject = overrideSubject ?? nativeSubject ?? fileName ?? 'Imported Material';
+      final syncSubject = syncKey ?? materialSubject; // Fallback to title if no syncKey provided
       final source = (meta['source'] ?? data['source']) as String? ?? 'File Upload';
       final fileCreatedAt = (meta['created_at'] ?? data['created_at']) as String? ?? DateTime.now().toIso8601String();
       final defaultType = (data['default_type'] ?? meta['default_type']) as String? ?? 'sentence';
@@ -1179,7 +1181,7 @@ class DatabaseService {
             // Note: createStudyMaterial writes to `study_materials` table which IS used by UI dropdowns (Legacy table but used by AppState).
             // We KEEP this. The *content* (sentences) uses Unified Schema.
             final materialId = await createStudyMaterial(
-              subject: nativeSubject ?? syncSubject,
+              subject: materialSubject,
               source: source,
               sourceLanguage: sourceLang,
               targetLanguage: targetLang,
@@ -1209,8 +1211,8 @@ class DatabaseService {
                 final List<String> allTags = [
                   ...fileTags, 
                   ...entryTags,
-                  if (nativeSubject != null) nativeSubject, // For localized UI filtering
-                  syncSubject // For group ID matching across languages
+                  materialSubject, // Localized title (e.g. 명사 1) - used for UI filters
+                  syncSubject // Stable internal key (e.g. nouns_1) - used for internal grouping
                 ]; 
                 
                 await saveUnifiedRecord(
@@ -1455,7 +1457,8 @@ class DatabaseService {
                       style: msg['style'] as String?,
                       root: msg['root'] as String?,
                       note: (msg['note'] ?? msg['context']) as String?,
-                      tags: ['Dialogue', ...fileTags],
+                      syncSubject: syncSubject,
+                      tags: ['Dialogue', materialSubject, ...fileTags],
                       txn: txn,
                     );
                     

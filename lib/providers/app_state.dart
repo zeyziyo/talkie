@@ -2565,7 +2565,8 @@ class AppState extends ChangeNotifier {
     await DatabaseService.importFromJsonWithMetadata(
       sJson, 
       fileName: 'remote_${mId}_$_sourceLang.json',
-      overrideSubject: syncKey, 
+      overrideSubject: mName, // Localized title
+      syncKey: syncKey, // Stable internal key
       userId: 'user', 
     );
 
@@ -2574,7 +2575,8 @@ class AppState extends ChangeNotifier {
     final importResult = await DatabaseService.importFromJsonWithMetadata(
       tJson, 
       fileName: 'remote_${mId}_$_targetLang.json',
-      overrideSubject: syncKey, 
+      overrideSubject: mName, 
+      syncKey: syncKey,
       userId: 'user', 
     );
 
@@ -2586,7 +2588,8 @@ class AppState extends ChangeNotifier {
       await DatabaseService.importFromJsonWithMetadata(
         eJson, 
         fileName: 'remote_${mId}_en.json',
-        overrideSubject: syncKey, 
+        overrideSubject: mName, 
+        syncKey: syncKey,
         userId: 'user', // Ensure visible to default user
       );
       }
