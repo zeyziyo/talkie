@@ -1718,7 +1718,7 @@ class AppState extends ChangeNotifier {
   // AI recommendations
   // ==========================================
 
-  Future<void> fetchRecommendations() async {
+  Future<void> fetchAiRecommendations() async {
     try {
       _isRecommendationLoading = true;
       notifyListeners();
@@ -1839,14 +1839,15 @@ class AppState extends ChangeNotifier {
   
 
   
-  void setMode3Interval(int seconds) {
-    _mode3Interval = seconds;
-    notifyListeners();
-  }
-
   void setPracticeWordsOnly(bool value) {
     if (_mode3SessionActive) return;
     _practiceWordsOnly = value;
+    notifyListeners();
+  }
+
+  /// Refresh recommendations or lists (Phase 81.4)
+  Future<void> refill() async {
+    await fetchAiRecommendations();
     notifyListeners();
   }
   
@@ -2118,30 +2119,20 @@ class AppState extends ChangeNotifier {
     await _speechService.stopSTT(); // Ensure stop
     _isListening = false;
     
-    if (filteredStudyMaterials.isEmpty) {
+    final availableQuestions = _getAvailableQuestions();
+    
+    if (availableQuestions.isEmpty) {
        _mode3SessionActive = false;
        notifyListeners();
        return;
     }
     
-    // Find next available question (not completed)
-    // ... (Existing logic for picking question)
+    // Intelligent pick: Favor uncompleted questions
+    final uncompleted = availableQuestions.where((q) => !_mode3CompletedQuestionIds.contains(q['id'])).toList();
+    final candidates = uncompleted.isNotEmpty ? uncompleted : availableQuestions;
     
-    // Basic random pick for now (Review existing logic upstream if needed, 
-    // but here we just need to ensure we call the setup)
-    
-    // Use the same logic as ToggleSession to pick new q?
-    // Actually, we can just pick a new one.
-    
-    final availableQuestions = _getAvailableQuestions();
-     if (availableQuestions.isEmpty) {
-      _mode3SessionActive = false;
-      notifyListeners();
-      return;
-    }
-    
-    final randomIndex = DateTime.now().millisecondsSinceEpoch % availableQuestions.length;
-    _currentMode3Question = availableQuestions[randomIndex];
+    final randomIndex = Random().nextInt(candidates.length);
+    _currentMode3Question = candidates[randomIndex];
     
     // Reset State for new question
     _mode3UserAnswer = '';
@@ -2155,8 +2146,6 @@ class AppState extends ChangeNotifier {
     final sourceText = _currentMode3Question!['source_text'] as String;
     final sourceLang = _currentMode3Question!['source_lang'] as String;
     await _speechService.speak(sourceText, lang: _getServiceLocale(sourceLang));
-    
-    // DO NOT Auto-Start Listening. User must press Start.
   }
   
   List<Map<String, Object?>> _getAvailableQuestions() {
@@ -2413,45 +2402,6 @@ class AppState extends ChangeNotifier {
     }
   }
 
-  Future<Map<String, dynamic>> importRemoteMaterial(Map<String, dynamic> material) async {
-    final mId = material['id'];
-    final mPath = material['path'];
-    final mName = material['name'];
-    
-    _isTranslating = true; 
-    _statusMessage = 'Fetching online data: $mName...';
-    notifyListeners();
-
-    try {
-      final sName = _getLanguageFullName(_sourceLang);
-      final tName = _getLanguageFullName(_targetLang);
-      final baseUrl = 'https://zeyziyo.github.io/talkie/materials';
-      
-      // Prepare requests
-      List<Future<http.Response>> requests = [
-        http.get(Uri.parse('$baseUrl/$sName/$mPath')).timeout(const Duration(seconds: 15)),
-        http.get(Uri.parse('$baseUrl/$tName/$mPath')).timeout(const Duration(seconds: 15)),
-      ];
-
-      // Phase 77: Auto-download Pivot Language (English)
-      // If neither source nor target is English, fetch English version for linking
-      bool fetchPivot = (_sourceLang != 'en' && _targetLang != 'en');
-      if (fetchPivot) {
-        requests.add(http.get(Uri.parse('$baseUrl/English/$mPath')).timeout(const Duration(seconds: 15)));
-      }
-      
-      final results = await Future.wait<http.Response>(requests);
-
-      if (results[0].statusCode != 200 || results[1].statusCode != 200) {
-        throw Exception('Server data not found for $sName/$tName pair.');
-      }
-
-      final sJson = utf8.decode(results[0].bodyBytes);
-      final tJson = utf8.decode(results[1].bodyBytes);
-
-      // Native Strategy: Do NOT extract English subject. Use local subject.
-      // removed pivotSubject logic
-
   Future<Map<String, dynamic>> importRemoteMaterial(Map<String, dynamic> material, {String? type}) async {
     final mId = material['id'];
     final mName = material['name'] as String? ?? 'Unnamed Material';
@@ -2552,7 +2502,7 @@ class AppState extends ChangeNotifier {
 
 
   /// Add refill amount (e.g. from Ad)
-  Future<void> refill(int amount) async {
+  Future<void> refillUsage(int amount) async {
     await _usageService.addRefill(amount);
     notifyListeners();
   }

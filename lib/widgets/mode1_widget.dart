@@ -70,7 +70,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
       
       // AI 추천 데이터 로드 (첫 진입 시)
       if (appState.recommendedItems.isEmpty) {
-        appState.fetchRecommendations();
+        appState.fetchAiRecommendations();
       }
     });
 
@@ -727,7 +727,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                 _rewardedAd!.show(
                   onUserEarnedReward: (AdWithoutView ad, RewardItem rewardItem) async {
                     // Reward the user
-                    await appState.refill(5); // Refill the translation count
+                    await appState.refillUsage(5); // Refill the translation count
                     if (context.mounted) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(content: Text(AppLocalizations.of(context)!.translationRefilled)),

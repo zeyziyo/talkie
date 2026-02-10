@@ -750,6 +750,8 @@ class DatabaseService {
     String? defaultType, // Phase 81.3: Explicit type fallback
     String? defaultSourceLang, // Phase 81.5: Fallback if missing in JSON
     String? defaultTargetLang, // Phase 81.5: Fallback if missing in JSON
+    String? fileName, // Add missing param
+    String? userId, // Add missing param
   }) async {
     try {
       final data = json.decode(jsonContent) as Map<String, dynamic>;
@@ -1457,7 +1459,18 @@ class DatabaseService {
   // Background Sync Helpers
   // ==========================================
   
-  /// 언어 이름을 ISO 코드(ko, en 등)로 변환
+  static String getLanguageFullName(String code) {
+    final Map<String, String> map = {
+      'ko': 'Korean',
+      'en': 'English',
+      'ja': 'Japanese',
+      'zh': 'Chinese',
+      'es': 'Spanish',
+      'fr': 'French',
+      'de': 'German',
+    };
+    return map[code] ?? code;
+  }
   static String _mapLanguageToCode(String name) {
     if (name.isEmpty) return name;
     

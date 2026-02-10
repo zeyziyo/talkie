@@ -98,49 +98,60 @@ class OnlineLibraryDialog extends StatelessWidget {
           title: Text(material['name'] ?? material['title'] ?? 'Untitled'),
           subtitle: Text(material['description'] ?? ''),
           onTap: () async {
-            // Import Logic with Auto-Select
-            // Note: importRemoteMaterial needs to be public in AppState
-            final result = await state.importRemoteMaterial(material);
-            
-            if (context.mounted) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text(state.statusMessage)), 
-              );
+            try {
+              final result = await state.importRemoteMaterial(material, type: type);
+              
+              if (context.mounted) {
+                if (result['success'] == true) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('${material['name']} Downloaded')),
+                  );
+                  // Phase 79.2 + 81.3: Refresh materials and select the new one (if needed)
+                  await state.loadStudyMaterials(); 
 
-              if (result['success'] == true) {
-                 Navigator.pop(context); // Close dialog first
-
-                 // Auto-Select Logic
-                 if (type == 'dialogue') {
-                    // Switch to Mode 3
-                    final dId = result['dialogue_id'] as String?;
-                    if (dId != null) {
-                       // Ensure DialogueGroup model availability
-                       final group = state.dialogueGroups.firstWhere(
-                         (g) => g.id == dId, 
-                         orElse: () => DialogueGroup(
-                           id: dId!, 
-                           userId: 'user', 
-                           title: material['name'] ?? 'Imported Dialogue', 
-                           createdAt: DateTime.now()
-                         )
-                       );
-                       await state.loadExistingDialogue(group);
-                       state.switchMode(3);
-                    }
-                 } else {
-                    // Switch to Mode 2 (Review) if not already
-                    if (state.currentMode != 2) {
-                       state.switchMode(2);
-                    }
-                    
-                    // Select Material
-                    final mId = result['material_id'] as int? ?? 0;
-                    if (mId > 0) {
-                      state.setRecordTypeFilter(type == 'word' ? 'word' : 'sentence');
-                      state.selectMaterial(mId);
-                    }
-                 }
+                  // Auto-Select Logic
+                  if (type == 'dialogue') {
+                      // Switch to Mode 3
+                      final dId = result['dialogue_id'] as String?;
+                      if (dId != null) {
+                        // Ensure DialogueGroup model availability
+                        final group = state.dialogueGroups.firstWhere(
+                          (g) => g.id == dId, 
+                          orElse: () => DialogueGroup(
+                            id: dId, 
+                            userId: 'user', 
+                            title: material['name'] ?? 'Imported Dialogue', 
+                            createdAt: DateTime.now()
+                          )
+                        );
+                        await state.loadExistingDialogue(group);
+                        state.switchMode(3);
+                      }
+                  } else {
+                      // Switch to Mode 2 (Review) if not already
+                      if (state.currentMode != 2) {
+                        state.switchMode(2);
+                      }
+                      
+                      // Select Material
+                      final mId = result['material_id'] as int? ?? 0;
+                      if (mId > 0) {
+                        state.setRecordTypeFilter(type == 'word' ? 'word' : 'sentence');
+                        state.selectMaterial(mId);
+                      }
+                  }
+                  Navigator.pop(context); // Close dialog on success
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Error: ${result['error']}')),
+                  );
+                }
+              }
+            } catch (e) {
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('An unexpected error occurred: $e')),
+                );
               }
             }
           },

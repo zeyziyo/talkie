@@ -2,21 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../models/dialogue_group.dart';
+import '../l10n/app_localizations.dart';
+import '../services/speech_service.dart';
 import '../models/chat_participant.dart'; // Phase 70
 import '../constants/language_constants.dart'; // Phase 70
 import '../services/supabase_service.dart';
 import '../services/database_service.dart';
-import '../services/speech_service.dart';
 import '../services/translation_service.dart';
-import '../l10n/app_localizations.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:geocoding/geocoding.dart';
-import 'package:intl/intl.dart';
-import '../services/supabase_service.dart';
-import '../services/database_service.dart';
-import '../services/speech_service.dart';
-import '../services/translation_service.dart';
-import '../l10n/app_localizations.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:intl/intl.dart';

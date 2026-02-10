@@ -23,6 +23,14 @@
 
 ## 📅 최근 주요 변경 로그 (Recent Changelog)
 
+### [2026-02-10] Critical Build Repair & L10n Expansion (Phase 82)
+- **Fix**: `AppState.dart` 파일의 중괄호 구조 손상으로 인한 대규모 컴파일 에러를 전수 조사하여 복구 완료.
+- **Sync**: `Mode1Widget` 등에서의 메서드 호출 명칭을 `fetchAiRecommendations`, `refillUsage`로 신규 규격에 맞춰 전면 동기화.
+- **DB**: `DatabaseService.importFromJsonWithMetadata` 파라미터 누락(`fileName`, `userId`) 수정으로 런타임 및 빌드 안정성 확보.
+- **L10n**: 필터 및 위젯 UI용 신규 키(`titleTagSelection`, `generalTags` 등) 80개 언어 전체 자동 번역 및 배포 완료.
+- **Clean**: `online_library_dialog.dart` 내 중복 코드 및 구문 오류 정리.
+
+
 ### [2026-02-08] UX 및 튜토리얼 일관성 강화 (Phase 75)
 - **UI**: Mode 1, 2, 3 위젯에 '자료 선택' 버튼 추가 및 GlobalKey 바인딩 완료.
 - **Tutorial**: 각 모드별 튜토리얼 시나리오에 '자료 선택' 안내 단계 추가.
