@@ -409,7 +409,6 @@ class AppState extends ChangeNotifier {
   List<Map<String, dynamic>> get studyMaterials => _studyMaterials;
 
   List<Map<String, dynamic>> get materialRecords => _materialRecords;
-  Set<int> get studiedTranslationIds => _studiedTranslationIds;
   String get recordTypeFilter => _recordTypeFilter;
 
   /// Get the name of the currently selected material set
@@ -983,24 +982,6 @@ class AppState extends ChangeNotifier {
         debugPrint('[AppState] Supabase Cloud Sync failed: $e');
       }
 
-      // 3. Phase 58: Backfill Legacy Cache (Since we skipped it in translate)
-      // This ensures 'reuse' works for future 'translate' calls on this word.
-      try {
-        final cachedSourceId = await DatabaseService.insertLanguageRecord(_sourceLang, _sourceText);
-        final cachedTargetId = await DatabaseService.insertLanguageRecord(_targetLang, _translatedText);
-        
-        await DatabaseService.saveTranslationLink(
-          sourceLang: _sourceLang,
-          sourceId: cachedSourceId,
-          targetLang: _targetLang,
-          targetId: cachedTargetId,
-          materialId: _selectedMaterialId ?? 0,
-          note: _note
-        );
-        debugPrint('[AppState] Legacy cache backfilled for reuse');
-      } catch (e) {
-         debugPrint('[AppState] Legacy cache backfill failed: $e');
-      }
 
       _statusMessage = '저장 완료!';
       _isSaved = true; 

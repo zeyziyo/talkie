@@ -316,74 +316,6 @@ class DatabaseService {
     print('[DB] Language table created/verified: $tableName');
   }
   
-  /// 언어 테이블에 텍스트 삽입 (중복 시 기존 ID 반환)
-  static Future<int> insertLanguageRecord(String langCode, String text, {Transaction? txn, bool skipTableCheck = false}) async {
-    final db = txn ?? await database;
-    final tableName = 'lang_$langCode'.replaceAll('-', '_');
-    
-    // 테이블이 없으면 생성 (배치 작업 시 건너뛰어 성능 향상)
-    if (!skipTableCheck) {
-      await createLanguageTable(langCode);
-    }
-    
-    // INSERT OR IGNORE를 사용하여 중복 쿼리(SELECT) 제거
-    // 중복 발생 시 id는 0 또는 null이 반환될 수 있으므로, 확실하게 가져오기 위해 처리
-    final id = await db.insert(
-      tableName, 
-      {
-        'text': text,
-        'audio_file': null,
-        'created_at': DateTime.now().toIso8601String(),
-        'last_reviewed': null,
-        'review_count': 0,
-      },
-      conflictAlgorithm: ConflictAlgorithm.ignore,
-    );
-    
-    if (id <= 0) {
-      // 이미 존재하는 경우 ID 조회
-      final existing = await db.query(
-        tableName,
-        columns: ['id'],
-        where: 'text = ? COLLATE NOCASE',
-        whereArgs: [text],
-        limit: 1,
-      );
-      if (existing.isNotEmpty) {
-        return existing.first['id'] as int;
-      }
-    }
-    
-    return id;
-  }
-
-  /// 언어 테이블에서 텍스트 ID 조회 (저장하지 않음)
-  /// Phase 58: Orphaned Source 방지용
-  static Future<int?> getLanguageRecordId(String langCode, String text) async {
-    final db = await database;
-    final tableName = 'lang_$langCode'.replaceAll('-', '_');
-    
-    // 테이블 존재 확인
-    final tables = await db.rawQuery(
-      "SELECT name FROM sqlite_master WHERE type='table' AND name=?",
-      [tableName]
-    );
-    if (tables.isEmpty) return null;
-
-    final result = await db.query(
-      tableName,
-      columns: ['id'],
-      where: 'text = ? COLLATE NOCASE',
-      whereArgs: [text],
-      limit: 1,
-    );
-    
-    if (result.isNotEmpty) {
-      return result.first['id'] as int;
-    }
-    return null;
-  }
-  
   /// 유사 텍스트 검색 (Fuzzy matching using LIKE)
   /// 유사 텍스트 검색 (Stricter: ~1 word difference)
   static Future<List<Map<String, dynamic>>> searchSimilarText(
@@ -712,22 +644,16 @@ class DatabaseService {
               continue;
             }
             
-            // 1. Insert to source language table (using helper with txn)
-            final sourceId = await insertLanguageRecord(sourceLang, sourceText, txn: txn);
             
-            // 2. Insert to target language table (using helper with txn)
-            final targetId = await insertLanguageRecord(targetLang, targetText, txn: txn);
-            
-            // 3. Create translation link (using helper with txn)
-            await saveTranslationLinkWithMaterial(
-              sourceLang: sourceLang,
-              sourceId: sourceId,
+            // 3. Create unified record (Phase 79.4)
+            await saveUnifiedRecord(
+              text: sourceText,
+              lang: sourceLang,
+              translation: targetText,
               targetLang: targetLang,
-              targetId: targetId,
-              materialId: materialId,
-              // isBookmarked removed (not supported by helper)
-              note: (entry['note'] ?? entry['context']) as String?,
               type: entry['type'] as String? ?? defaultType,
+              note: (entry['note'] ?? entry['context']) as String?,
+              tags: [material['subject'] as String],
               txn: txn,
             );
             

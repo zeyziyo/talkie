@@ -52,7 +52,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
 
         final selectedMaterialId = appState.selectedMaterialId;
         final materialRecords = appState.filteredMaterialRecords; // Use filtered records
-        final studiedIds = appState.studiedTranslationIds;
+        final studiedIds = materialRecords.where((r) => r['is_memorized'] == 1).map((r) => r['id'] as int).toSet();
         
 
 

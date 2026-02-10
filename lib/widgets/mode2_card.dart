@@ -302,8 +302,8 @@ class Mode2Card extends StatelessWidget {
                          // Hide Button
                         TextButton.icon(
                            onPressed: () {
-                             if (!isExpanded) { // Should not happen here but kept for symmetry
-                               appState.markTranslationAsStudied(translationId);
+                             if (!isExpanded) { 
+                               // appState.markTranslationAsStudied(translationId); // Removed
                              }
                              onToggleExpand(translationId);
                            },
@@ -319,8 +319,7 @@ class Mode2Card extends StatelessWidget {
                // Collapsed Footer
                InkWell(
                  onTap: () {
-                    // Mark as studied
-                    appState.markTranslationAsStudied(translationId);
+                    // appState.markTranslationAsStudied(translationId); // Removed
                     onToggleExpand(translationId);
                  },
                  borderRadius: const BorderRadius.vertical(bottom: Radius.circular(20)),
