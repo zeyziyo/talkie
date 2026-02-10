@@ -37,7 +37,8 @@ class AppLocalizationsId extends AppLocalizations {
       '• Pilih Materi: Pilih set atau \'Ulas Semua\'\n• Balik Kartu: Gunakan \'Tampil/Sembunyi\' untuk melihat terjemahan\n• Dengar: Mainkan TTS untuk kalimat\n• Tandai: Centang (V) untuk item selesai\n• Hapus: Tekan lama kartu untuk menghapus\n• Filter: Lihat semua atau filter berdasarkan materi';
 
   @override
-  String get helpMode3Desc => 'Berlatih dengan mendengarkan dan mengulang.';
+  String get helpMode3Desc =>
+      'Berlatih pengucapan dengan mendengarkan dan menirukan kalimat (Shadowing).';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Bicara dengan persona untuk melatih percakapan nyata.';
+      'Berlatih percakapan nyata dengan berinteraksi dengan persona AI.';
 
   @override
   String get helpModeChatDetails =>
@@ -413,6 +414,9 @@ class AppLocalizationsId extends AppLocalizations {
       'Pilih materi belajar atau beralih ke \'Ulas Semua\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Pilih set materi untuk latihan bicara.';
+
+  @override
   String get tutorialM2ListTitle => 'Daftar Belajar';
 
   @override
@@ -421,9 +425,6 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Pilih Materi';
-
-  @override
-  String get tutorialM3SelectDesc => 'Pilih set materi untuk latihan bicara.';
 
   @override
   String get tutorialM3IntervalTitle => 'Interval';
@@ -794,7 +795,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get chatAiChat => 'Obrolan';
 
   @override
-  String get tutorialAiChatTitle => 'Obrolan';
+  String get tutorialAiChatTitle => 'Obrolan AI';
 
   @override
   String get tutorialAiChatDesc =>
@@ -887,6 +888,12 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Tag Judul (Kliping)';
+
+  @override
+  String get generalTags => 'Tag Umum';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -986,4 +993,28 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Anda yakin ingin menghapus percakapan ini?\nPercakapan yang dihapus tidak dapat dipulihkan.';
+
+  @override
+  String get notSelected => '- Tidak Dipilih -';
+
+  @override
+  String get myWordbook => 'Buku Kata Saya';
+
+  @override
+  String get mySentenceCollection => 'Koleksi Kalimat Saya';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

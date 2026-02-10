@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "确定要删除此对话吗？\n删除后将无法恢复。",
   "notSelected": "- 未选择 -",
   "myWordbook": "我的单词本",
-  "mySentenceCollection": "我的句子集"
+  "mySentenceCollection": "我的句子集",
+  "newSubjectName": "新词汇/句子集标题",
+  "enterNewSubjectName": "输入新标题",
+  "addNewSubject": "添加新标题",
+  "selectExistingSubject": "选择现有标题",
+  "addTagHint": "添加标签..."
 }

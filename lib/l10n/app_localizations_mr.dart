@@ -36,14 +36,16 @@ class AppLocalizationsMr extends AppLocalizations {
       '• निवडा: संच किंवा \'सर्व पुनरावलोकन\' निवडा\n• पलटवा: भाषांतर \'दाखवा/लपवा\'\n• ऐका: वाक्यासाठी TTS प्ले करा\n• चिन्हांकित करा: पूर्ण झाल्यासाठी टिक (V)\n• काढून टाका: काढण्यासाठी कार्ड दाबून ठेवा\n• फिल्टर: सर्व किंवा साहित्यानुसार पहा';
 
   @override
-  String get helpMode3Desc => 'एकून आणि पुन्हा बोलून सराव करा.';
+  String get helpMode3Desc =>
+      'वाक्य ऐका आणि त्याचे अनुकरण करून (शॅडोइंग) उच्चारणाचा सराव करा.';
 
   @override
   String get helpMode3Details =>
       '• निवडा: पॅकेज निवडा\n• मध्यांतर: [-] [+] प्रतीक्षा वेळ (3से-60से)\n• सुरू/थांबा: सत्र नियंत्रित करा\n• बोला: ऑडिओ ऐका आणि पुनरावृत्ती करा\n• स्कोअर: अचूकता (0-100)\n• पुन्हा प्रयत्न: आवाज न सापडल्यास बटण';
 
   @override
-  String get helpModeChatDesc => 'खऱ्या संभाषणासाठी पात्रांशी बोला.';
+  String get helpModeChatDesc =>
+      'AI व्यक्तिमत्त्वाशी बोलून प्रत्यक्ष संभाषणाचा सराव करा.';
 
   @override
   String get helpModeChatDetails =>
@@ -408,6 +410,9 @@ class AppLocalizationsMr extends AppLocalizations {
       'साहित्य निवडा किंवा \'सर्व पुनरावलोकन\' वर जा.';
 
   @override
+  String get tutorialM3SelectDesc => 'बोलण्याच्या सरावासाठी संच निवडा.';
+
+  @override
   String get tutorialM2ListTitle => 'अभ्यास सूची';
 
   @override
@@ -416,9 +421,6 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'साहित्य निवडा';
-
-  @override
-  String get tutorialM3SelectDesc => 'बोलण्याच्या सरावासाठी संच निवडा.';
 
   @override
   String get tutorialM3IntervalTitle => 'मध्यांतर';
@@ -781,10 +783,10 @@ class AppLocalizationsMr extends AppLocalizations {
   String get chatUntitled => 'Untitled Conversation';
 
   @override
-  String get chatAiChat => 'चॅट';
+  String get chatAiChat => 'चॅटिंग';
 
   @override
-  String get tutorialAiChatTitle => 'चॅट';
+  String get tutorialAiChatTitle => 'AI चॅटिंग';
 
   @override
   String get tutorialAiChatDesc =>
@@ -877,6 +879,12 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'शीर्षक टॅग (संग्रह)';
+
+  @override
+  String get generalTags => 'सामान्य टॅग';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -976,4 +984,28 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'तुम्ही हे संभाषण हटवू इच्छिता?\nहटवलेले संभाषण पुनर्प्राप्त केले जाऊ शकत नाही.';
+
+  @override
+  String get notSelected => '- निवडलेले नाही -';
+
+  @override
+  String get myWordbook => 'माझी शब्दसूची';
+
+  @override
+  String get mySentenceCollection => 'माझे वाक्य संग्रह';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

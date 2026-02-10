@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Sigurado ka bang gusto mong burahin ang usapang ito?\nHindi na ito mababawi pa.",
   "notSelected": "- Walang Napili -",
   "myWordbook": "Aking Talasalitaan",
-  "mySentenceCollection": "Aking Pangungusap"
+  "mySentenceCollection": "Aking Pangungusap",
+  "newSubjectName": "Bagong Pamagat ng Aralin/Pangungusap",
+  "enterNewSubjectName": "Ilagay ang bagong pamagat",
+  "addNewSubject": "Idagdag ang bagong pamagat",
+  "selectExistingSubject": "Pumili ng kasalukuyang pamagat",
+  "addTagHint": "Magdagdag ng tag..."
 }

@@ -37,7 +37,8 @@ class AppLocalizationsGl extends AppLocalizations {
       '• Selección de material: selecciona un libro de traballo específico ou «Repaso completo»\n• Dar a volta á tarxeta: comproba a tradución con «Mostrar/Ocultar» (marca de comprobación de aprendizaxe automática)\n• Escoitar: reprodución de TTS da frase\n• Aprendizaxe completa: marca de verificación (V) para marcar como aprendizaxe completa\n• Eliminar: mantén pulsada a tarxeta para eliminar o rexistro\n• Criterios de busca: filtrar por etiquetas, elementos recentes, letra inicial';
 
   @override
-  String get helpMode3Desc => 'Practica escoitando e repetindo.';
+  String get helpMode3Desc =>
+      'Escoita a frase e practica a pronunciación repetíndoa (Shadowing).';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Fala con personaxes para practicar conversas reais.';
+      'Practica a conversación real falando cunha personaxe de IA.';
 
   @override
   String get helpModeChatDetails =>
@@ -415,6 +416,10 @@ class AppLocalizationsGl extends AppLocalizations {
       'Toca a icona do libro de traballo (📚) na barra de aplicacións superior para seleccionar o material que queres estudar.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Toca a icona do libro de traballo (📚) na barra de aplicacións superior para seleccionar o material que queres practicar.';
+
+  @override
   String get tutorialM2ListTitle => 'Lista de aprendizaxe';
 
   @override
@@ -423,10 +428,6 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Selección de material';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Toca a icona do libro de traballo (📚) na barra de aplicacións superior para seleccionar o material que queres practicar.';
 
   @override
   String get tutorialM3IntervalTitle => 'Axuste de intervalo';
@@ -800,7 +801,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get chatAiChat => 'Chat';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'Chat con IA';
 
   @override
   String get tutorialAiChatDesc =>
@@ -893,6 +894,12 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Rematado';
+
+  @override
+  String get titleTagSelection => 'Etiquetas do título (colección)';
+
+  @override
+  String get generalTags => 'Etiquetas xerais';
 
   @override
   String get tagSelection => 'Selección de etiquetas';
@@ -992,4 +999,28 @@ class AppLocalizationsGl extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Queres eliminar esta conversa?\nNon poderás recuperala.';
+
+  @override
+  String get notSelected => '- Sen seleccionar -';
+
+  @override
+  String get myWordbook => 'O meu vocabulario';
+
+  @override
+  String get mySentenceCollection => 'A miña colección de frases';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

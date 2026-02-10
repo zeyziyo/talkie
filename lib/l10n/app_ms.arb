@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Adakah anda pasti mahu memadam perbualan ini?\nPerbualan yang dipadam tidak dapat dipulihkan.",
   "notSelected": "- Tiada Pilihan -",
   "myWordbook": "Buku Perkataan Saya",
-  "mySentenceCollection": "Koleksi Ayat Saya"
+  "mySentenceCollection": "Koleksi Ayat Saya",
+  "newSubjectName": "Tajuk Buku/Frasa baharu",
+  "enterNewSubjectName": "Masukkan Tajuk baharu",
+  "addNewSubject": "Tambah Tajuk baharu",
+  "selectExistingSubject": "Pilih Tajuk Sedia Ada",
+  "addTagHint": "Tambah tag..."
 }

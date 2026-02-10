@@ -37,7 +37,8 @@ class AppLocalizationsTa extends AppLocalizations {
       '• தேர்ந்தெடு: தொகுப்பு அல்லது \'அனைத்தையும் மதிப்பாய்வு செய்\'\n• திருப்பு: மொழிபெயர்ப்பை \'காட்டு/மறை\'\n• கேள்: வாக்கியத்திற்கு TTS இயக்கவும்\n• குறி: முடிந்ததற்கு டிக் (V)\n• நீக்கு: நீக்க கார்டை நீண்ட நேரம் அழுத்தவும்\n• வடிகட்டி: அனைத்தையும் அல்லது பொருள் வாரியாகப் பார்க்கவும்';
 
   @override
-  String get helpMode3Desc => 'கேட்டுத் திரும்பக் கூறிப் பயிற்சி செய்யுங்கள்.';
+  String get helpMode3Desc =>
+      'ஒரு வாக்கியத்தைக் கேட்டு, அதைப் பின்பற்றிச் சொல்லி (Shadowing) உச்சரிப்பைப் பயிற்சி செய்யுங்கள்.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'உண்மை உரையாடலுக்குப் பாத்திரங்களுடன் பேசுங்கள்.';
+      'AI உதவியாளருடன் உரையாடி நிஜ வாழ்க்கை உரையாடலைப் பயிற்சி செய்யுங்கள்.';
 
   @override
   String get helpModeChatDetails =>
@@ -414,6 +415,10 @@ class AppLocalizationsTa extends AppLocalizations {
       'பொருட்களைத் தேர்ந்தெடுக்கவும் அல்லது \'அனைத்தையும் மதிப்பாய்வு செய்\' என்பதற்கு மாறவும்.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'பேச்சுப் பயிற்சிக்கான தொகுப்பைத் தேர்ந்தெடுக்கவும்.';
+
+  @override
   String get tutorialM2ListTitle => 'படிப்பு பட்டியல்';
 
   @override
@@ -422,10 +427,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'பொருளைத் தேர்ந்தெடு';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'பேச்சுப் பயிற்சிக்கான தொகுப்பைத் தேர்ந்தெடுக்கவும்.';
 
   @override
   String get tutorialM3IntervalTitle => 'இடைவேளை';
@@ -795,10 +796,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get chatUntitled => 'Untitled Conversation';
 
   @override
-  String get chatAiChat => 'அரட்டை';
+  String get chatAiChat => 'உரையாடல்';
 
   @override
-  String get tutorialAiChatTitle => 'அரட்டை';
+  String get tutorialAiChatTitle => 'AI உரையாடல்';
 
   @override
   String get tutorialAiChatDesc =>
@@ -891,6 +892,12 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'தலைப்பு குறிச்சொற்கள் (ஆவணங்கள்)';
+
+  @override
+  String get generalTags => 'பொதுவான குறிச்சொற்கள்';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -990,4 +997,28 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'இந்த உரையாடலை நீக்கவா?\nநீக்கப்பட்ட உரையாடலை மீட்டெடுக்க முடியாது.';
+
+  @override
+  String get notSelected => '- எதுவும் தேர்ந்தெடுக்கப்படவில்லை -';
+
+  @override
+  String get myWordbook => 'என் சொல் புத்தகம்';
+
+  @override
+  String get mySentenceCollection => 'என் வாக்கியத் தொகுப்பு';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

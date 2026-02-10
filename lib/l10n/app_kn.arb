@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "ನೀವು ಈ ಸಂಭಾಷಣೆಯನ್ನು ಅಳಿಸಲು ಬಯಸುತ್ತೀರಾ?\nಅಳಿಸಲಾದ ಸಂಭಾಷಣೆಯನ್ನು ಮರುಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.",
   "notSelected": "- ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ -",
   "myWordbook": "ನನ್ನ ಪದಗಳ ಸಂಗ್ರಹ",
-  "mySentenceCollection": "ನನ್ನ ವಾಕ್ಯ ಸಂಗ್ರಹ"
+  "mySentenceCollection": "ನನ್ನ ವಾಕ್ಯ ಸಂಗ್ರಹ",
+  "newSubjectName": "ಹೊಸ ವಿಷಯದ ಹೆಸರು",
+  "enterNewSubjectName": "ಹೊಸ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+  "addNewSubject": "ಹೊಸ ಹೆಸರನ್ನು ಸೇರಿಸಿ",
+  "selectExistingSubject": "ಈಗಿರುವ ಹೆಸರನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+  "addTagHint": "ಟ್ಯಾಗ್ ಸೇರಿಸಿ..."
 }

@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Uqinisekile ukuthi ufuna ukususa le ngxoxo?\nAyikwazi ukubuyiselwa emuva uma isisusiwe.",
   "notSelected": "- Akukhethiwe - ",
   "myWordbook": "Isilulumagama sami",
-  "mySentenceCollection": "Iqoqo lemisho yami"
+  "mySentenceCollection": "Iqoqo lemisho yami",
+  "newSubjectName": "Isihloko Esisha Seqoqo Lamagama/Imisho",
+  "enterNewSubjectName": "Faka isihloko esisha",
+  "addNewSubject": "Engeza Isihloko Esisha",
+  "selectExistingSubject": "Khetha Isihloko Esikhona",
+  "addTagHint": "Engeza ithegi..."
 }

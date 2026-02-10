@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Искате ли да изтриете този разговор?\nИзтритите разговори не могат да бъдат възстановени.",
   "notSelected": "- Не е избрано -",
   "myWordbook": "Моят речник",
-  "mySentenceCollection": "Моята колекция от изречения"
+  "mySentenceCollection": "Моята колекция от изречения",
+  "newSubjectName": "Заглавие на нов речник/фрази",
+  "enterNewSubjectName": "Въведете ново заглавие",
+  "addNewSubject": "Добавяне на ново заглавие",
+  "selectExistingSubject": "Избор на съществуващо заглавие",
+  "addTagHint": "Добавяне на етикет..."
 }

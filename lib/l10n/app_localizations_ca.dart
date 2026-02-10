@@ -37,7 +37,8 @@ class AppLocalizationsCa extends AppLocalizations {
       '• Selecció de materials: Selecciona una col·lecció de materials específica o \'Repàs complet\'\n• Gira la targeta: Comprova la traducció amb \'Mostra/Amaga\' (comprovació d\'aprenentatge automàtic)\n• Escolta: Reprodueix TTS de la frase\n• Aprenentatge complet: Marca com a complet amb una marca de verificació (V)\n• Suprimeix: Mantén premuda la targeta per suprimir l\'enregistrament\n• Criteris de cerca: Filtra per etiqueta, element recent o lletra inicial';
 
   @override
-  String get helpMode3Desc => 'Practica escoltant i repetint.';
+  String get helpMode3Desc =>
+      'Escolteu i repetiu les frases (imitant) per practicar la pronunciació.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Parla amb personatges per practicar la conversa real.';
+      'Practiqueu la conversa real xerrant amb una IA personalitzada.';
 
   @override
   String get helpModeChatDetails =>
@@ -415,6 +416,10 @@ class AppLocalizationsCa extends AppLocalizations {
       'Prem la icona de la col·lecció de material (📚) a la barra d\'aplicacions superior per seleccionar el material que vols estudiar.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Prem la icona de la col·lecció de material (📚) a la barra d\'aplicacions superior per seleccionar el material que vols practicar.';
+
+  @override
   String get tutorialM2ListTitle => 'Llista d\'aprenentatge';
 
   @override
@@ -423,10 +428,6 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Selecciona el material';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Prem la icona de la col·lecció de material (📚) a la barra d\'aplicacions superior per seleccionar el material que vols practicar.';
 
   @override
   String get tutorialM3IntervalTitle => 'Configura l\'interval';
@@ -803,7 +804,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get chatAiChat => 'Xat';
 
   @override
-  String get tutorialAiChatTitle => 'Xat';
+  String get tutorialAiChatTitle => 'Xat amb IA';
 
   @override
   String get tutorialAiChatDesc =>
@@ -896,6 +897,12 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Fet';
+
+  @override
+  String get titleTagSelection => 'Etiquetes de títol (col·lecció)';
+
+  @override
+  String get generalTags => 'Etiquetes generals';
 
   @override
   String get tagSelection => 'Selecció d\'etiquetes';
@@ -995,4 +1002,28 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Vols suprimir aquesta conversa?\nNo podràs recuperar-la.';
+
+  @override
+  String get notSelected => '- Sense seleccionar -';
+
+  @override
+  String get myWordbook => 'El meu vocabulari';
+
+  @override
+  String get mySentenceCollection => 'La meva col·lecció de frases';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

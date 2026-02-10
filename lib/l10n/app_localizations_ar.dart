@@ -37,14 +37,16 @@ class AppLocalizationsAr extends AppLocalizations {
       '• اختيار المادة: اختر مجموعة أو \'مراجعة الكل\'\n• قلب البطاقة: \'ظهار/إخفاء\' للترجمة\n• استماع: تشغيل النطق للجملة\n• تحديد كمدروس: علامة (V) للمكتمل\n• حذف: ضغطة مطولة للحذف\n• تصفية: عرض الكل أو حسب المادة';
 
   @override
-  String get helpMode3Desc => 'تدرب من خلال الاستماع والترديد.';
+  String get helpMode3Desc =>
+      'استمع إلى الجملة وتمرن على النطق عن طريق التظليل.';
 
   @override
   String get helpMode3Details =>
       '• اختيار المادة: اختر حزمة تعلم\n• الفاصل: [-] [+] وقت الانتظار (3-60 ثانية)\n• بدء/إيقاف: التحكم بالجلسة\n• تحدث: استمع للصوت وردد\n• الملاحظات: درجة الدقة (0-100)\n• إعادة المحاولة: زر إعادة المحاولة إذا لم يتم اكتشاف الصوت';
 
   @override
-  String get helpModeChatDesc => 'تحدث مع الشخصيات لممارسة المحادثة الحقيقية.';
+  String get helpModeChatDesc =>
+      'تدرب على المحادثات الواقعية عن طريق التحدث مع شخصية الذكاء الاصطناعي.';
 
   @override
   String get helpModeChatDetails =>
@@ -408,6 +410,9 @@ class AppLocalizationsAr extends AppLocalizations {
       'اختر مواد للدراسة أو بدل إلى \'مراجعة الكل\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'اختر مجموعة لممارسة التحدث.';
+
+  @override
   String get tutorialM2ListTitle => 'قائمة الدراسة';
 
   @override
@@ -416,9 +421,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'اختر مادة';
-
-  @override
-  String get tutorialM3SelectDesc => 'اختر مجموعة لممارسة التحدث.';
 
   @override
   String get tutorialM3IntervalTitle => 'الفاصل';
@@ -734,7 +736,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get reviewModeTitle => '복습';
 
   @override
-  String get practiceModeTitle => 'ممارسة';
+  String get practiceModeTitle => 'تدريب';
 
   @override
   String get chatHistoryTitle => 'سجل الدردشة';
@@ -780,10 +782,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get chatUntitled => 'Untitled Conversation';
 
   @override
-  String get chatAiChat => 'دردشة';
+  String get chatAiChat => 'محادثة';
 
   @override
-  String get tutorialAiChatTitle => 'دردشة';
+  String get tutorialAiChatTitle => 'دردشة الذكاء الاصطناعي';
 
   @override
   String get tutorialAiChatDesc =>
@@ -876,6 +878,12 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'علامة تبويب العنوان (مجموعة المواد)';
+
+  @override
+  String get generalTags => 'علامات عامة';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -975,4 +983,28 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'هل أنت متأكد أنك تريد حذف هذه المحادثة؟\nلا يمكنك استعادة المحادثات المحذوفة.';
+
+  @override
+  String get notSelected => '- لم يتم الاختيار -';
+
+  @override
+  String get myWordbook => 'مفرداتي';
+
+  @override
+  String get mySentenceCollection => 'مجموعتي من الجمل';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Бұл сұхбатты жойғыңыз келе ме?\nЖойылған сұхбатты қалпына келтіру мүмкін емес.",
   "notSelected": "- Тандалмаған -",
   "myWordbook": "меӊіӊ сөздігім",
-  "mySentenceCollection": "меӊіӊ сөйлемдер жинағым"
+  "mySentenceCollection": "меӊіӊ сөйлемдер жинағым",
+  "newSubjectName": "Жаңа тақырыптың атауы",
+  "enterNewSubjectName": "Жаңа атауды енгізіңіз",
+  "addNewSubject": "Жаңа атауды қосу",
+  "selectExistingSubject": "Бар атауды таңдау",
+  "addTagHint": "Тег қосу..."
 }

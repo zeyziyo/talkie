@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Vil du slette denne samtalen?\nDu kan ikke gjenopprette slettede samtaler.",
   "notSelected": "- Ikke valgt -",
   "myWordbook": "Mine ord",
-  "mySentenceCollection": "Mine setninger"
+  "mySentenceCollection": "Mine setninger",
+  "newSubjectName": "Nytt ordforråd/setningssamling navn",
+  "enterNewSubjectName": "Skriv inn nytt navn",
+  "addNewSubject": "Legg til nytt navn",
+  "selectExistingSubject": "Velg eksisterende navn",
+  "addTagHint": "Legg til tagg..."
 }

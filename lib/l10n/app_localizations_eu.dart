@@ -37,7 +37,8 @@ class AppLocalizationsEu extends AppLocalizations {
       '• Materiala hautatu: hautatu datu-multzo zehatz bat edo \'Berrikuspen osoa\'\n• Txartela irauli: egiaztatu itzulpena \'Erakutsi/Ezkutatu\' erabiliz (ikaskuntza automatikoa egiaztatu)\n• Entzun: esaldiaren TTS erreprodukzioa\n• Ikaskuntza osatua: markatu ikaskuntza osatutzat (V)\n• Ezabatu: luze sakatu txartela erregistroa ezabatzeko\n• Bilaketa-baldintzak: etiketak, azken elementuak, hasierako letrarekin iragazi';
 
   @override
-  String get helpMode3Desc => 'Praktikatu entzunez eta errepikatuz.';
+  String get helpMode3Desc =>
+      'Entzun esaldiak eta errepikatu (itzal eginez) ahoskera lantzeko.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Pertsonaiekin hitz egin benetako elkarrizketa praktikatzeko.';
+      'Praktikatu elkarrizketak AI pertsonaiarekin hizketan.';
 
   @override
   String get helpModeChatDetails =>
@@ -414,6 +415,10 @@ class AppLocalizationsEu extends AppLocalizations {
       'Sakatu datu-multzoaren ikonoa (📚) goiko aplikazio-barran ikasi nahi duzun materiala hautatzeko.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Sakatu datu-multzoaren ikonoa (📚) goiko aplikazio-barran praktikatu nahi duzun materiala hautatzeko.';
+
+  @override
   String get tutorialM2ListTitle => 'Ikasketa-zerrenda';
 
   @override
@@ -422,10 +427,6 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Materiala hautatu';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Sakatu datu-multzoaren ikonoa (📚) goiko aplikazio-barran praktikatu nahi duzun materiala hautatzeko.';
 
   @override
   String get tutorialM3IntervalTitle => 'Tartea ezarri';
@@ -795,7 +796,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get chatAiChat => 'Txat';
 
   @override
-  String get tutorialAiChatTitle => 'Txat';
+  String get tutorialAiChatTitle => 'AI txata';
 
   @override
   String get tutorialAiChatDesc =>
@@ -886,6 +887,12 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Amaituta';
+
+  @override
+  String get titleTagSelection => 'Izenburu-etiketa (Bilduma)';
+
+  @override
+  String get generalTags => 'Etiketa orokorrak';
 
   @override
   String get tagSelection => 'Etiketa hautatu';
@@ -985,4 +992,28 @@ class AppLocalizationsEu extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Elkarrizketa hau ezabatu nahi duzu?\nEzabatu ondoren ezin da berreskuratu.';
+
+  @override
+  String get notSelected => '- Ez dago hautatuta -';
+
+  @override
+  String get myWordbook => 'Nire hiztegia';
+
+  @override
+  String get mySentenceCollection => 'Nire esaldi bilduma';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Haluatko varmasti poistaa tämän keskustelun?\nPoistettuja keskusteluja ei voi palauttaa.",
   "notSelected": "- Ei valittu -",
   "myWordbook": "Oma sanakirjani",
-  "mySentenceCollection": "Oma lausekokoelmani"
+  "mySentenceCollection": "Oma lausekokoelmani",
+  "newSubjectName": "Uuden sanasto-/lausekokoelman nimi",
+  "enterNewSubjectName": "Kirjoita uusi nimi",
+  "addNewSubject": "Lisää uusi nimi",
+  "selectExistingSubject": "Valitse olemassa oleva nimi",
+  "addTagHint": "Lisää tagi..."
 }

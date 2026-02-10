@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "మీరు ఈ సంభాషణను తొలగించాలనుకుంటున్నారా?\nతొలగించిన సంభాషణను తిరిగి పొందలేరు.",
   "notSelected": "- ఎంచుకోలేదు -",
   "myWordbook": "నా పదజాలం",
-  "mySentenceCollection": "నా వాక్యాల సేకరణ"
+  "mySentenceCollection": "నా వాక్యాల సేకరణ",
+  "newSubjectName": "కొత్త పదజాలం/వాక్యాల సేకరణ పేరు",
+  "enterNewSubjectName": "కొత్త పేరును నమోదు చేయండి",
+  "addNewSubject": "కొత్త పేరును జోడించు",
+  "selectExistingSubject": "ఉన్న పేరును ఎంచుకోండి",
+  "addTagHint": "ట్యాగ్‌ను జోడించు..."
 }

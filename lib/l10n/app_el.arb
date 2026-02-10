@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Θέλετε να διαγράψετε αυτήν τη συνομιλία;\nΔεν θα μπορείτε να την επαναφέρετε.",
   "notSelected": "- Δεν έχει επιλεγεί -",
   "myWordbook": "Το βιβλίο μου με λέξεις",
-  "mySentenceCollection": "Η συλλογή μου από προτάσεις"
+  "mySentenceCollection": "Η συλλογή μου από προτάσεις",
+  "newSubjectName": "Νέος τίτλος Λεξιλογίου/Φράσεων",
+  "enterNewSubjectName": "Εισαγωγή νέου τίτλου",
+  "addNewSubject": "Προσθήκη νέου τίτλου",
+  "selectExistingSubject": "Επιλογή υπάρχοντος τίτλου",
+  "addTagHint": "Προσθήκη ετικέτας..."
 }

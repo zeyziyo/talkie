@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "के तपाइँ यो कुराकानी मेटाउन निश्चित हुनुहुन्छ?\nमेटाइएको कुराकानी पुन: प्राप्त गर्न सकिँदैन।",
   "notSelected": "- चयन गरिएको छैन -",
   "myWordbook": "मेरो शब्दकोश",
-  "mySentenceCollection": "मेरो वाक्य संग्रह"
+  "mySentenceCollection": "मेरो वाक्य संग्रह",
+  "newSubjectName": "नयाँ विषयको नाम",
+  "enterNewSubjectName": "नयाँ नाम प्रविष्ट गर्नुहोस्",
+  "addNewSubject": "नयाँ नाम थप्नुहोस्",
+  "selectExistingSubject": "अवस्थित नाम छान्नुहोस्",
+  "addTagHint": "ट्याग थप्नुहोस्..."
 }

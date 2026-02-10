@@ -37,7 +37,8 @@ class AppLocalizationsSk extends AppLocalizations {
       '• Výber materiálu: výber konkrétnej zbierky materiálov alebo \'Celé opakovanie\'\n• Otočenie karty: overenie prekladu pomocou \'Zobraziť/Skryť\' (automatická kontrola učenia)\n• Počúvanie: prehrávanie TTS vety\n• Učenie dokončené: spracovanie učenia ako dokončeného pomocou zaškrtnutia (V)\n• Odstránenie: odstránenie záznamu dlhým stlačením karty\n• Podmienky vyhľadávania: filtrovanie pomocou značiek, posledných položiek, počiatočných písmen';
 
   @override
-  String get helpMode3Desc => 'Precvičujte počúvaním a opakovaním.';
+  String get helpMode3Desc =>
+      'Počúvajte a opakujte vety (shadowing) a precvičujte si výslovnosť.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Hovorte s postavami pre nácvik skutočnej konverzácie.';
+      'Precvičujte si konverzáciu v reálnom svete rozhovorom s AI osobnosťou.';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +412,10 @@ class AppLocalizationsSk extends AppLocalizations {
       'Stlačením ikony zbierky materiálov (📚) na hornom paneli aplikácie vyberte materiál na učenie.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Stlačením ikony zbierky materiálov (📚) na hornom paneli aplikácie vyberte materiál na precvičovanie.';
+
+  @override
   String get tutorialM2ListTitle => 'Zoznam učenia';
 
   @override
@@ -419,10 +424,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Výber materiálu';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Stlačením ikony zbierky materiálov (📚) na hornom paneli aplikácie vyberte materiál na precvičovanie.';
 
   @override
   String get tutorialM3IntervalTitle => 'Nastavenie intervalu';
@@ -746,7 +747,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get reviewModeTitle => 'Opakovanie';
 
   @override
-  String get practiceModeTitle => 'Prax';
+  String get practiceModeTitle => 'Cvičenie';
 
   @override
   String get chatHistoryTitle => 'História konverzácií';
@@ -795,7 +796,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get chatAiChat => 'Chat';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'AI Chat';
 
   @override
   String get tutorialAiChatDesc =>
@@ -886,6 +887,12 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Hotovo';
+
+  @override
+  String get titleTagSelection => 'Výber značky nadpisu (zošit)';
+
+  @override
+  String get generalTags => 'Všeobecné značky';
 
   @override
   String get tagSelection => 'Výber značky';
@@ -985,4 +992,28 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Naozaj chcete zmazať túto konverzáciu?\nZmazané konverzácie sa nedajú obnoviť.';
+
+  @override
+  String get notSelected => '- Nevybrané -';
+
+  @override
+  String get myWordbook => 'Moja slovná zásoba';
+
+  @override
+  String get mySentenceCollection => 'Moja zbierka viet';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

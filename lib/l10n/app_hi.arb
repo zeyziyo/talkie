@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "क्या आप इस वार्तालाप को हटाना चाहते हैं?\nहटाए गए वार्तालाप को पुनर्प्राप्त नहीं किया जा सकता.",
   "notSelected": "- कोई चयन नहीं -",
   "myWordbook": "मेरी शब्दकोश",
-  "mySentenceCollection": "मेरा वाक्य संग्रह"
+  "mySentenceCollection": "मेरा वाक्य संग्रह",
+  "newSubjectName": "नया विषय शीर्षक",
+  "enterNewSubjectName": "नया शीर्षक दर्ज करें",
+  "addNewSubject": "नया शीर्षक जोड़ें",
+  "selectExistingSubject": "मौजूदा शीर्षक चुनें",
+  "addTagHint": "टैग जोड़ें..."
 }

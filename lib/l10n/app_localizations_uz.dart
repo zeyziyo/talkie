@@ -37,7 +37,8 @@ class AppLocalizationsUz extends AppLocalizations {
       '• Ma\'lumotlarni tanlash: ma\'lum ma\'lumotlar to\'plamini yoki \'To\'liq ko\'rib chiqish\'ni tanlang\n• Kartani aylantirish: \'Ko\'rsatish/yashirish\' orqali tarjimani tekshiring (avtomatik o\'rganish tekshiruvi)\n• Tinglash: jumlani TTS orqali ijro eting\n• O\'rganish yakunlandi: belgi (V) bilan o\'rganish yakunlanganligini ko\'rsating\n• O\'chirish: yozuvni o\'chirish uchun kartani uzoq bosing\n• Qidiruv shartlari: teglarga, so\'nggi elementlarga, bosh harflarga qarab filtrlash';
 
   @override
-  String get helpMode3Desc => 'Eshitib va takrorlab mashq qiling.';
+  String get helpMode3Desc =>
+      'Gaplarni tinglang va takrorlang (Shadowing) talaffuzingizni mashq qiling.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Haqiqiy suhbat uchun personajlar bilan gaplashing.';
+      'AI persona bilan suhbatlashib, amaliy suhbatni mashq qiling.';
 
   @override
   String get helpModeChatDetails =>
@@ -413,6 +414,10 @@ class AppLocalizationsUz extends AppLocalizations {
       'Yuqori ilova panelidagi ma\'lumotlar to\'plami belgisini (📚) bosib, o\'rganmoqchi bo\'lgan ma\'lumotlarni tanlang.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Yuqori ilova panelidagi ma\'lumotlar to\'plami belgisini (📚) bosib, mashq qilmoqchi bo\'lgan ma\'lumotlarni tanlang.';
+
+  @override
   String get tutorialM2ListTitle => 'O\'rganish ro\'yxati';
 
   @override
@@ -421,10 +426,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Ma\'lumotlarni tanlash';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Yuqori ilova panelidagi ma\'lumotlar to\'plami belgisini (📚) bosib, mashq qilmoqchi bo\'lgan ma\'lumotlarni tanlang.';
 
   @override
   String get tutorialM3IntervalTitle => 'Intervalni sozlash';
@@ -801,7 +802,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get chatAiChat => 'Chat';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'AI Chat';
 
   @override
   String get tutorialAiChatDesc =>
@@ -893,6 +894,12 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Tugatilgan';
+
+  @override
+  String get titleTagSelection => 'Sarlavha teglari (kitob)';
+
+  @override
+  String get generalTags => 'Umumiy teglar';
 
   @override
   String get tagSelection => 'Teg tanlash';
@@ -992,4 +999,28 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Bu suhbatni oʻchirishni xohlaysizmi?\nOʻchirilgan suhbatni qayta tiklab boʻlmaydi.';
+
+  @override
+  String get notSelected => '- Tanlanmagan -';
+
+  @override
+  String get myWordbook => 'Mening so\'zlashgichim';
+
+  @override
+  String get mySentenceCollection => 'Mening gaplar to\'plamim';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

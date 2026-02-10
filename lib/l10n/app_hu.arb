@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Törli ezt a beszélgetést?\nA törölt beszélgetések nem állíthatók vissza.",
   "notSelected": "- Nincs kiválasztva -",
   "myWordbook": "Szógyűjteményem",
-  "mySentenceCollection": "Mondatgyűjteményem"
+  "mySentenceCollection": "Mondatgyűjteményem",
+  "newSubjectName": "Új téma/mondatgyűjtemény neve",
+  "enterNewSubjectName": "Új név megadása",
+  "addNewSubject": "Új név hozzáadása",
+  "selectExistingSubject": "Meglévő téma kiválasztása",
+  "addTagHint": "Címke hozzáadása..."
 }

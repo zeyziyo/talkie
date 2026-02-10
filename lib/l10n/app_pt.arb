@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Tem certeza que deseja excluir esta conversa?\nAs conversas excluídas não podem ser recuperadas.",
   "notSelected": "- Não selecionado -",
   "myWordbook": "Meu Caderno de Vocabulário",
-  "mySentenceCollection": "Minha Coleção de Frases"
+  "mySentenceCollection": "Minha Coleção de Frases",
+  "newSubjectName": "Novo nome do caderno/fraseário",
+  "enterNewSubjectName": "Digite o novo nome",
+  "addNewSubject": "Adicionar novo nome",
+  "selectExistingSubject": "Selecionar nome existente",
+  "addTagHint": "Adicionar etiqueta..."
 }

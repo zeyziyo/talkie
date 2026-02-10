@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Czy na pewno chcesz usunąć tę konwersację?\nUsuniętej konwersacji nie będzie można odzyskać.",
   "notSelected": "- Nie wybrano -",
   "myWordbook": "Mój słownik",
-  "mySentenceCollection": "Mój zbiór zdań"
+  "mySentenceCollection": "Mój zbiór zdań",
+  "newSubjectName": "Nowy tytuł zestawu słówek/zdań",
+  "enterNewSubjectName": "Wprowadź nowy tytuł",
+  "addNewSubject": "Dodaj nowy tytuł",
+  "selectExistingSubject": "Wybierz istniejący tytuł",
+  "addTagHint": "Dodaj tag..."
 }

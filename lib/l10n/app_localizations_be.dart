@@ -37,7 +37,8 @@ class AppLocalizationsBe extends AppLocalizations {
       '• Выбар матэрыялаў: выберыце пэўны набор матэрыялаў або «Поўны агляд»\n• Перагортванне карткі: пацверджанне перакладу з дапамогай «Паказаць/Схаваць» (аўтаматычная адзнака навучання)\n• Праслухоўванне: прайграванне TTS для фразы\n• Навучанне завершана: апрацоўка завершанага навучання з дапамогай галачкі (V)\n• Выдаленне: доўга націсніце на картку, каб выдаліць запіс\n• Крытэрыі пошуку: фільтрацыя па тэгах, нядаўніх элементах або пачатковых літарах';
 
   @override
-  String get helpMode3Desc => 'Практыкуйцеся, слухаючы і паўтараючы.';
+  String get helpMode3Desc =>
+      'Паўтарайце прапановы ўслед за дыктарам (Shadowing) і практыкуйце вымаўленне.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Размаўляйце з персанажамі для практыкі рэальнай размовы.';
+      'Практыкуйце рэальную размову, размаўляючы з AI-персанажам.';
 
   @override
   String get helpModeChatDetails =>
@@ -414,6 +415,10 @@ class AppLocalizationsBe extends AppLocalizations {
       'Націсніце значок набору матэрыялаў (📚) на верхняй панэлі прыкладання, каб выбраць матэрыял для вывучэння.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Націсніце значок набору матэрыялаў (📚) на верхняй панэлі прыкладання, каб выбраць матэрыял для практыкі.';
+
+  @override
   String get tutorialM2ListTitle => 'Спіс навучання';
 
   @override
@@ -422,10 +427,6 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Выбар матэрыялу';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Націсніце значок набору матэрыялаў (📚) на верхняй панэлі прыкладання, каб выбраць матэрыял для практыкі.';
 
   @override
   String get tutorialM3IntervalTitle => 'Настройка інтэрвалу';
@@ -798,7 +799,7 @@ class AppLocalizationsBe extends AppLocalizations {
   String get chatAiChat => 'Чат';
 
   @override
-  String get tutorialAiChatTitle => 'Чат';
+  String get tutorialAiChatTitle => 'AI Чат';
 
   @override
   String get tutorialAiChatDesc =>
@@ -889,6 +890,12 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Скончана';
+
+  @override
+  String get titleTagSelection => 'Тэг загалоўка (Кніга)';
+
+  @override
+  String get generalTags => 'Агульныя тэгі';
 
   @override
   String get tagSelection => 'Выбар тэга';
@@ -988,4 +995,28 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Вы сапраўды жадаеце выдаліць гэтую размову?\nЯе нельга будзе аднавіць.';
+
+  @override
+  String get notSelected => '- Не выбрана -';
+
+  @override
+  String get myWordbook => 'Мой слоўнік';
+
+  @override
+  String get mySentenceCollection => 'Мой зборнік прапаноў';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

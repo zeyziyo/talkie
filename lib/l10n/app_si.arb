@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "ඔබට මෙම සංවාදය මකා දැමීමට අවශ්‍යද?\nමකා දැමූ සංවාද නැවත ලබා ගත නොහැක.",
   "notSelected": "- තේරීමක් නැත -",
   "myWordbook": "මගේ වචන මාලාව",
-  "mySentenceCollection": "මගේ වාක්‍ය එකතුව"
+  "mySentenceCollection": "මගේ වාක්‍ය එකතුව",
+  "newSubjectName": "නව වචන මාලාව/වාක්‍ය මාලාවේ මාතෘකාව",
+  "enterNewSubjectName": "නව මාතෘකාවක් ඇතුළත් කරන්න",
+  "addNewSubject": "නව මාතෘකාවක් එක් කරන්න",
+  "selectExistingSubject": "පවතින මාතෘකාවක් තෝරන්න",
+  "addTagHint": "ටැගය එක් කරන්න..."
 }

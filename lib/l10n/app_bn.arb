@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "আপনি কি এই কথোপকথনটি মুছে ফেলতে চান?\nমোছা কথোপকথন পুনরুদ্ধার করা যাবে না।",
   "notSelected": "- নির্বাচন করা হয়নি -",
   "myWordbook": "আমার শব্দভাণ্ডার",
-  "mySentenceCollection": "আমার বাক্য সংগ্রহ"
+  "mySentenceCollection": "আমার বাক্য সংগ্রহ",
+  "newSubjectName": "নতুন শব্দভাণ্ডার/বাক্য সংগ্রহ শিরোনাম",
+  "enterNewSubjectName": "নতুন শিরোনাম লিখুন",
+  "addNewSubject": "নতুন শিরোনাম যোগ করুন",
+  "selectExistingSubject": "বিদ্যমান শিরোনাম নির্বাচন করুন",
+  "addTagHint": "ট্যাগ যোগ করুন..."
 }

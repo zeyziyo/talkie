@@ -37,7 +37,8 @@ class AppLocalizationsKy extends AppLocalizations {
       '• Материалды тандоо: белгилүү бир жыйнакты же \'Толугу менен кайталоону\' тандоо\n• Картты оодаруу: \'Көрсөтүү/Жашыруу\' менен котормону текшерүү (автоматтык үйрөнүү белгиси)\n• Угуу: сүйлөмдү TTS ойнотуу\n• Үйрөнүү аяктады: белгилөө (V) менен үйрөнүү аяктады\n• Өчүрүү: жазууну өчүрүү үчүн картты узакка басыңыз\n• Издөө шарттары: тэг, акыркы элемент, баштапкы тамга боюнча чыпкалоо';
 
   @override
-  String get helpMode3Desc => 'Угуу жана кайталоо аркылы машыгыңыз.';
+  String get helpMode3Desc =>
+      'Сүйлөмдү угуп, кайталап (көмүскөдө) айтуу менен айтылышыңызды машыктырыңыз.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Чыныгы сүйлөшүүнү үйрөнүү үчүн каармандар менен сүйлөшүңүз.';
+      'AI персона менен сүйлөшүп, чыныгы сүйлөшүүнү машыктырыңыз.';
 
   @override
   String get helpModeChatDetails =>
@@ -413,6 +414,10 @@ class AppLocalizationsKy extends AppLocalizations {
       'Жогорку колдонмо тилкесиндеги жыйнак белгисин (📚) басып үйрөнө турган материалды тандаңыз.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Жогорку колдонмо тилкесиндеги жыйнак белгисин (📚) басып машыга турган материалды тандаңыз.';
+
+  @override
   String get tutorialM2ListTitle => 'Окуу тизмеси';
 
   @override
@@ -421,10 +426,6 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Материал тандоо';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Жогорку колдонмо тилкесиндеги жыйнак белгисин (📚) басып машыга турган материалды тандаңыз.';
 
   @override
   String get tutorialM3IntervalTitle => 'Аралыкты жөндөө';
@@ -751,7 +752,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get reviewModeTitle => 'Кайталоо';
 
   @override
-  String get practiceModeTitle => 'Көнүгүү';
+  String get practiceModeTitle => 'Машыгуу';
 
   @override
   String get chatHistoryTitle => 'Сүйлөшүү таржымалы';
@@ -801,7 +802,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get chatAiChat => 'Чат';
 
   @override
-  String get tutorialAiChatTitle => 'Чат';
+  String get tutorialAiChatTitle => 'AI чат';
 
   @override
   String get tutorialAiChatDesc =>
@@ -893,6 +894,12 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Аяктаган';
+
+  @override
+  String get titleTagSelection => 'Аталыш теги (Маалымат жыйнагы)';
+
+  @override
+  String get generalTags => 'Жалпы тегдер';
 
   @override
   String get tagSelection => 'Тег тандоо';
@@ -992,4 +999,28 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Бул баарлашууну жок кылууну каалайсызбы?\nЖок кылынган баарлашууну кайра калыбына келтирүү мүмкүн эмес.';
+
+  @override
+  String get notSelected => '- Тандалган жок -';
+
+  @override
+  String get myWordbook => 'Менин сөздүгүм';
+
+  @override
+  String get mySentenceCollection => 'Менин сүйлөм жыйнагым';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

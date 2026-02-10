@@ -35,7 +35,8 @@ class AppLocalizationsTr extends AppLocalizations {
       '• Materyal Seç: Set veya \'Tümünü Tekrarla\' seç\n• Kart Çevir: Çeviri için \'Göster/Gizle\'\n• Dinle: Cümle için TTS oynat\n• İşaretle: Tamamlananlar için tik (V)\n• Sil: Karta uzun basarak sil\n• Filtre: Tümünü gör veya materyale göre filtrele';
 
   @override
-  String get helpMode3Desc => 'Dinleyerek ve tekrarlayarak pratik yapın.';
+  String get helpMode3Desc =>
+      'Cümleyi dinleyerek tekrar edin (Shadowing) ve telaffuzunuzu geliştirin.';
 
   @override
   String get helpMode3Details =>
@@ -43,7 +44,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Gerçek konuşma pratiği için karakterlerle konuşun.';
+      'AI karakterlerle sohbet ederek gerçek hayattaki konuşmaları alıştırma yapın.';
 
   @override
   String get helpModeChatDetails =>
@@ -409,6 +410,9 @@ class AppLocalizationsTr extends AppLocalizations {
       'Materyal seç veya \'Tümünü Tekrarla\'ya geç.';
 
   @override
+  String get tutorialM3SelectDesc => 'Konuşma pratiği için bir set seç.';
+
+  @override
   String get tutorialM2ListTitle => 'Çalışma Listesi';
 
   @override
@@ -417,9 +421,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Materyal Seç';
-
-  @override
-  String get tutorialM3SelectDesc => 'Konuşma pratiği için bir set seç.';
 
   @override
   String get tutorialM3IntervalTitle => 'Aralık';
@@ -740,7 +741,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get reviewModeTitle => 'Review';
 
   @override
-  String get practiceModeTitle => 'Pratik';
+  String get practiceModeTitle => 'Alıştırma';
 
   @override
   String get chatHistoryTitle => 'Sohbet Geçmişi';
@@ -789,7 +790,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get chatAiChat => 'Sohbet';
 
   @override
-  String get tutorialAiChatTitle => 'Sohbet';
+  String get tutorialAiChatTitle => 'AI Sohbet';
 
   @override
   String get tutorialAiChatDesc =>
@@ -882,6 +883,12 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Başlık Etiketi (Koleksiyon)';
+
+  @override
+  String get generalTags => 'Genel Etiketler';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -981,4 +988,28 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Bu konuşmayı silmek istediğinizden emin misiniz?\nSilinen konuşmalar geri alınamaz.';
+
+  @override
+  String get notSelected => '- Seçilmedi -';
+
+  @override
+  String get myWordbook => 'Kelime Defterim';
+
+  @override
+  String get mySentenceCollection => 'Cümle Koleksiyonum';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

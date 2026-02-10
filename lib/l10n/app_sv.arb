@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Vill du radera den här konversationen?\nRaderade konversationer kan inte återställas.",
   "notSelected": "- Inget valt -",
   "myWordbook": "Min ordlista",
-  "mySentenceCollection": "Min frasbok"
+  "mySentenceCollection": "Min frasbok",
+  "newSubjectName": "Nytt ämnesnamn/meningssamling",
+  "enterNewSubjectName": "Ange nytt namn",
+  "addNewSubject": "Lägg till nytt namn",
+  "selectExistingSubject": "Välj befintligt namn",
+  "addTagHint": "Lägg till tagg..."
 }

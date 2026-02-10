@@ -37,14 +37,16 @@ class AppLocalizationsSq extends AppLocalizations {
       '• Zgjidhni materialin: Zgjidhni një libër burim specifik ose \'Rishikim të plotë\'\n• Kthejeni kartën: Kontrolloni përkthimin me \'Shfaq/Fshih\' (kontrolli automatik i mësimit)\n• Dëgjimi: Luaj TTS të fjalive\n• Mësimi i përfunduar: Përfundoni mësimin me një shenjë tik (V)\n• Fshirja: Fshini regjistrimet duke shtypur gjatë kartën\n• Kushtet e kërkimit: Filtro sipas etiketave, artikujve të fundit ose shkronjave fillestare';
 
   @override
-  String get helpMode3Desc => 'Praktikoni duke dëgjuar dhe përsëritur.';
+  String get helpMode3Desc =>
+      'Dëgjoni fjalinë dhe përsëriteni (Shadowing) për të praktikuar shqiptimin.';
 
   @override
   String get helpMode3Details =>
       '• Zgjidhni materialin: Zgjidhni librin e burimeve për të studiuar\n• Vendosni intervalin: Rregulloni kohën e pritjes midis fjalive me butonat [-] [+](3 sekonda deri në 60 sekonda)\n• Fillimi/Ndalo: Kontrolloni seancën e hijezimit\n• Të folurit: Dëgjoni zërin dhe përsëriteni\n• Reagimet: Shfaqni rezultatin e saktësisë (0-100) dhe ngjyrat\n• Kushtet e kërkimit: Filtro objektivat e praktikës sipas etiketës, artikujve të fundit ose shkronjave fillestare';
 
   @override
-  String get helpModeChatDesc => 'Falisni me personazhe për praktikë reale.';
+  String get helpModeChatDesc =>
+      'Praktikoni biseda reale duke biseduar me një personazh AI.';
 
   @override
   String get helpModeChatDetails =>
@@ -413,6 +415,10 @@ class AppLocalizationsSq extends AppLocalizations {
       'Shtypni ikonën e librit burim (📚) në shiritin e aplikacionit të sipërm për të zgjedhur materialin për të studiuar.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Shtypni ikonën e librit burim (📚) në shiritin e aplikacionit të sipërm për të zgjedhur materialin për të ushtruar.';
+
+  @override
   String get tutorialM2ListTitle => 'Lista e Studimit';
 
   @override
@@ -421,10 +427,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Zgjidhni Materialin';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Shtypni ikonën e librit burim (📚) në shiritin e aplikacionit të sipërm për të zgjedhur materialin për të ushtruar.';
 
   @override
   String get tutorialM3IntervalTitle => 'Vendosni Intervalin';
@@ -752,7 +754,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get reviewModeTitle => 'Rishikim';
 
   @override
-  String get practiceModeTitle => 'Praktikë';
+  String get practiceModeTitle => 'Praktiko';
 
   @override
   String get chatHistoryTitle => 'Historia e bisedës';
@@ -801,7 +803,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get chatAiChat => 'Bisedë';
 
   @override
-  String get tutorialAiChatTitle => 'Bisedë';
+  String get tutorialAiChatTitle => 'Bisedë me AI';
 
   @override
   String get tutorialAiChatDesc =>
@@ -895,6 +897,12 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Mbaruar';
+
+  @override
+  String get titleTagSelection => 'Etiketa e titullit (Set burimesh)';
+
+  @override
+  String get generalTags => 'Etiketa të përgjithshme';
 
   @override
   String get tagSelection => 'Zgjedhja e etiketës';
@@ -994,4 +1002,28 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'A jeni i sigurt që dëshironi ta fshini këtë bisedë?\nBisedat e fshira nuk mund të rikthehen.';
+
+  @override
+  String get notSelected => '- Nuk është zgjedhur -';
+
+  @override
+  String get myWordbook => 'Libri im i fjalëve';
+
+  @override
+  String get mySentenceCollection => 'Koleksioni im i fjalive';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

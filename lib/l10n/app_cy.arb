@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Ydych chi'n siŵr eich bod am ddileu'r sgwrs hon?\nNi ellir adfer sgyrsiau sydd wedi'u dileu.",
   "notSelected": "- Heb ei Ddewis -",
   "myWordbook": "Fy ngeirlyfr",
-  "mySentenceCollection": "Fy nghasgliad o frawddegau"
+  "mySentenceCollection": "Fy nghasgliad o frawddegau",
+  "newSubjectName": "Teitl Geirfa/Brawddeg Newydd",
+  "enterNewSubjectName": "Rhowch deitl newydd",
+  "addNewSubject": "Ychwanegu teitl newydd",
+  "selectExistingSubject": "Dewis teitl presennol",
+  "addTagHint": "Ychwanegu tag..."
 }

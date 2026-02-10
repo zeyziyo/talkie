@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "您確定要刪除此對話嗎？\n刪除的對話將無法復原。",
   "notSelected": "- 未選擇 -",
   "myWordbook": "我的單字本",
-  "mySentenceCollection": "我的句子收藏"
+  "mySentenceCollection": "我的句子收藏",
+  "newSubjectName": "新增字彙本/句子集標題",
+  "enterNewSubjectName": "輸入新標題",
+  "addNewSubject": "新增標題",
+  "selectExistingSubject": "選擇現有標題",
+  "addTagHint": "新增標籤..."
 }

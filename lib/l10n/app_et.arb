@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Kas sa oled kindel, et soovid selle vestluse kustutada?\nKustutatud vestlust ei saa taastada.",
   "notSelected": "- Pole valitud -",
   "myWordbook": "Minu sõnastik",
-  "mySentenceCollection": "Minu lausete kogu"
+  "mySentenceCollection": "Minu lausete kogu",
+  "newSubjectName": "Uue teemakogumi nimi",
+  "enterNewSubjectName": "Sisesta uus nimi",
+  "addNewSubject": "Lisa uus nimi",
+  "selectExistingSubject": "Vali olemasolev nimi",
+  "addTagHint": "Lisa silt..."
 }

@@ -35,14 +35,14 @@ class AppLocalizationsTh extends AppLocalizations {
       '• เลือกสื่อ: เลือกชุดหรือ \'ทบทวนทั้งหมด\'\n• พลิกการ์ด: ใช้ \'แสดง/ซ่อน\' เพื่อดูคำแปล\n• ฟัง: เล่น TTS สำหรับประโยคนั้น\n• ทำเครื่องหมาย: ติ๊ก (V) สำหรับรายการที่เสร็จแล้ว\n• ลบ: กดค้างที่การ์ดเพื่อลบ\n• ตัวกรอง: ดูทั้งหมดหรือกรองตามสื่อ';
 
   @override
-  String get helpMode3Desc => 'ฝึกฝนโดยการฟังและพูดตาม';
+  String get helpMode3Desc => 'ฝึกการออกเสียงโดยฟังและพูดตามประโยค (Shadowing)';
 
   @override
   String get helpMode3Details =>
       '• เลือกสื่อ: เลือกแพ็คเกจการเรียนรู้\n• ระยะห่าง: [-] [+] ปรับเวลารอ (3วิ-60วิ)\n• เริ่ม/หยุด: ควบคุมเซสชัน\n• พูด: ฟังเสียงและพูดตาม\n• ผลตอบรับ: คะแนนความแม่นยำ (0-100)\n• ลองใหม่: ใช้ปุ่มลองใหม่หากไม่พบเสียง';
 
   @override
-  String get helpModeChatDesc => 'คุยกับตัวละครเพื่อฝึกสนทนาจริง';
+  String get helpModeChatDesc => 'ฝึกสนทนาจริงกับ AI Persona';
 
   @override
   String get helpModeChatDetails =>
@@ -407,6 +407,9 @@ class AppLocalizationsTh extends AppLocalizations {
       'เลือกสื่อการเรียนรู้หรือสลับไปที่ \'ทบทวนทั้งหมด\'';
 
   @override
+  String get tutorialM3SelectDesc => 'เลือกชุดสื่อสำหรับการฝึกพูด';
+
+  @override
   String get tutorialM2ListTitle => 'รายการเรียนรู้';
 
   @override
@@ -415,9 +418,6 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'เลือกสื่อ';
-
-  @override
-  String get tutorialM3SelectDesc => 'เลือกชุดสื่อสำหรับการฝึกพูด';
 
   @override
   String get tutorialM3IntervalTitle => 'ระยะห่าง';
@@ -784,7 +784,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get chatAiChat => 'แชท';
 
   @override
-  String get tutorialAiChatTitle => 'แชท';
+  String get tutorialAiChatTitle => 'AI แชท';
 
   @override
   String get tutorialAiChatDesc =>
@@ -877,6 +877,12 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'แท็กชื่อเรื่อง (คอลเลกชัน)';
+
+  @override
+  String get generalTags => 'แท็กทั่วไป';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -976,4 +982,28 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'คุณต้องการลบการสนทนานี้หรือไม่\nการสนทนาที่ถูกลบจะไม่สามารถกู้คืนได้';
+
+  @override
+  String get notSelected => '- ไม่ได้เลือก -';
+
+  @override
+  String get myWordbook => 'คลังคำศัพท์ของฉัน';
+
+  @override
+  String get mySentenceCollection => 'คลังประโยคของฉัน';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

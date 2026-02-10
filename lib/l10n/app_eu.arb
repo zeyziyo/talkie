@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Elkarrizketa hau ezabatu nahi duzu?\nEzabatu ondoren ezin da berreskuratu.",
   "notSelected": "- Ez dago hautatuta -",
   "myWordbook": "Nire hiztegia",
-  "mySentenceCollection": "Nire esaldi bilduma"
+  "mySentenceCollection": "Nire esaldi bilduma",
+  "newSubjectName": "Izenburu berria",
+  "enterNewSubjectName": "Idatzi izenburu berria",
+  "addNewSubject": "Gehitu izenburu berria",
+  "selectExistingSubject": "Aukeratu lehendik dagoen izenburua",
+  "addTagHint": "Gehitu etiketa..."
 }

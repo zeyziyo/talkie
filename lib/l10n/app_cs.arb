@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Opravdu chcete smazat tuto konverzaci?\nSmazané konverzace nelze obnovit.",
   "notSelected": "- Nevybráno -",
   "myWordbook": "Moje slovní zásoba",
-  "mySentenceCollection": "Moje sbírka vět"
+  "mySentenceCollection": "Moje sbírka vět",
+  "newSubjectName": "Nový název sbírky",
+  "enterNewSubjectName": "Zadejte nový název",
+  "addNewSubject": "Přidat nový název",
+  "selectExistingSubject": "Vybrat existující název",
+  "addTagHint": "Přidat štítek..."
 }

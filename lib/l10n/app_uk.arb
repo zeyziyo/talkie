@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Ви впевнені, що хочете видалити цю розмову?\nВи не зможете відновити її.",
   "notSelected": "- Не вибрано -",
   "myWordbook": "Мій словник",
-  "mySentenceCollection": "Мій збірник речень"
+  "mySentenceCollection": "Мій збірник речень",
+  "newSubjectName": "Нова назва словника/збірки фраз",
+  "enterNewSubjectName": "Введіть нову назву",
+  "addNewSubject": "Додати нову назву",
+  "selectExistingSubject": "Виберіть існуючу назву",
+  "addTagHint": "Додати тег..."
 }

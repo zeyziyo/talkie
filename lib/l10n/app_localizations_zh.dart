@@ -35,14 +35,14 @@ class AppLocalizationsZh extends AppLocalizations {
       '• 选择资料：选择特定资料集或“复习全部”\n• 翻转卡片：使用“显示/隐藏”查看译文\n• 收听：播放特定句子的 TTS\n• 标记已学：勾选 (V) 已完成的项目\n• 删除：长按卡片删除记录\n• 筛选：查看全部或按资料筛选';
 
   @override
-  String get helpMode3Desc => '通过听和跟读进行练习。';
+  String get helpMode3Desc => '聆听句子并跟读（影子跟读），练习发音。';
 
   @override
   String get helpMode3Details =>
       '• 选择资料：选择学习包\n• 间隔：使用 [-] [+] 调整等待时间（3秒-60秒）\n• 开始/停止：控制跟读会话\n• 说话：聆听音频并跟读\n• 反馈：准确率评分（0-100）及颜色代码\n• 重试：如果未检测到声音，请使用重试按钮';
 
   @override
-  String get helpModeChatDesc => '与角色对话练习实战会话。';
+  String get helpModeChatDesc => '与 AI 角色对话，练习实际会话。';
 
   @override
   String get helpModeChatDetails =>
@@ -403,6 +403,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialM2SelectDesc => '选择学习资料或切换到“复习全部”。';
 
   @override
+  String get tutorialM3SelectDesc => '选择用于口语练习的资料集。';
+
+  @override
   String get tutorialM2ListTitle => '学习列表';
 
   @override
@@ -410,9 +413,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => '选择资料';
-
-  @override
-  String get tutorialM3SelectDesc => '选择用于口语练习的资料集。';
 
   @override
   String get tutorialM3IntervalTitle => '间隔';
@@ -776,7 +776,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get chatAiChat => '聊天';
 
   @override
-  String get tutorialAiChatTitle => '聊天';
+  String get tutorialAiChatTitle => 'AI 聊天';
 
   @override
   String get tutorialAiChatDesc => '在这里与 AI 角色练习实际对话。';
@@ -866,6 +866,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => '标题标签 (资料集)';
+
+  @override
+  String get generalTags => '通用标签';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -964,6 +970,30 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get confirmDeleteConversation => '确定要删除此对话吗？\n删除后将无法恢复。';
+
+  @override
+  String get notSelected => '- 未选择 -';
+
+  @override
+  String get myWordbook => '我的单词本';
+
+  @override
+  String get mySentenceCollection => '我的句子集';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -997,14 +1027,14 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       '• 选择资料：选择特定资料集或“复习全部”\n• 翻转卡片：使用“显示/隐藏”查看译文\n• 收听：播放特定句子的 TTS\n• 标记已学：勾选 (V) 已完成的项目\n• 删除：长按卡片删除记录\n• 筛选：查看全部或按资料筛选';
 
   @override
-  String get helpMode3Desc => '通过听和跟读进行练习。';
+  String get helpMode3Desc => '听句子并跟读（影子跟读），练习发音。';
 
   @override
   String get helpMode3Details =>
       '• 选择资料：选择学习包\n• 间隔：使用 [-] [+] 调整等待时间（3秒-60秒）\n• 开始/停止：控制跟读会话\n• 说话：聆听音频并跟读\n• 反馈：准确率评分（0-100）及颜色代码\n• 重试：如果未检测到声音，请使用重试按钮';
 
   @override
-  String get helpModeChatDesc => '与角色对话练习实战会话。';
+  String get helpModeChatDesc => '与AI角色对话，练习实际会话。';
 
   @override
   String get helpModeChatDetails =>
@@ -1366,6 +1396,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialM2SelectDesc => '选择学习资料或切换到“复习全部”。';
 
   @override
+  String get tutorialM3SelectDesc => '选择用于口语练习的资料集。';
+
+  @override
   String get tutorialM2ListTitle => '学习列表';
 
   @override
@@ -1373,9 +1406,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get tutorialM3SelectTitle => '选择资料';
-
-  @override
-  String get tutorialM3SelectDesc => '选择用于口语练习的资料集。';
 
   @override
   String get tutorialM3IntervalTitle => '间隔';
@@ -1738,7 +1768,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get chatAiChat => '聊天';
 
   @override
-  String get tutorialAiChatTitle => '聊天';
+  String get tutorialAiChatTitle => 'AI 聊天';
 
   @override
   String get tutorialAiChatDesc =>
@@ -1831,6 +1861,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => '标题标签（资料集）';
+
+  @override
+  String get generalTags => '通用标签';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -1929,6 +1965,15 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get confirmDeleteConversation => '确定要删除此对话吗？\n删除后将无法恢复。';
+
+  @override
+  String get notSelected => '- 未选择 -';
+
+  @override
+  String get myWordbook => '我的词汇本';
+
+  @override
+  String get mySentenceCollection => '我的句子集';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1962,14 +2007,14 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       '• 選擇資料：選擇特定資料集或「複習全部」\n• 翻轉卡片：使用「顯示/隱藏」查看譯文\n• 收聽：播放特定句子的 TTS\n• 標記已學：勾選 (V) 已完成的項目\n• 刪除：長按卡片刪除記錄\n• 篩選：查看全部或按資料篩選';
 
   @override
-  String get helpMode3Desc => '透過聽和跟讀進行練習。';
+  String get helpMode3Desc => '聆聽句子並跟讀（模仿），練習發音。';
 
   @override
   String get helpMode3Details =>
       '• 選擇資料：選擇學習包\n• 間隔：使用 [-] [+] 調整等待時間（3秒-60秒）\n• 開始/停止：控制跟讀會話\n• 說話：聆聽音訊並跟讀\n• 反饋：準確率評分（0-100）及顏色代碼\n• 重試：如果未偵測到聲音，請使用重試按鈕';
 
   @override
-  String get helpModeChatDesc => '與角色對話練習實戰會話。';
+  String get helpModeChatDesc => '與 AI 角色對話，練習實際會話。';
 
   @override
   String get helpModeChatDetails =>
@@ -2331,6 +2376,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialM2SelectDesc => '選擇學習資料或切換到「複習全部」。';
 
   @override
+  String get tutorialM3SelectDesc => '選擇用於口說練習的資料集。';
+
+  @override
   String get tutorialM2ListTitle => '學習列表';
 
   @override
@@ -2338,9 +2386,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tutorialM3SelectTitle => '選擇資料';
-
-  @override
-  String get tutorialM3SelectDesc => '選擇用於口說練習的資料集。';
 
   @override
   String get tutorialM3IntervalTitle => '間隔';
@@ -2703,7 +2748,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get chatAiChat => '聊天';
 
   @override
-  String get tutorialAiChatTitle => '聊天';
+  String get tutorialAiChatTitle => 'AI 聊天';
 
   @override
   String get tutorialAiChatDesc =>
@@ -2796,6 +2841,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => '標題標籤 (資料夾)';
+
+  @override
+  String get generalTags => '一般標籤';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -2894,4 +2945,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get confirmDeleteConversation => '您確定要刪除此對話嗎？\n刪除的對話將無法復原。';
+
+  @override
+  String get notSelected => '- 未選擇 -';
+
+  @override
+  String get myWordbook => '我的單字本';
+
+  @override
+  String get mySentenceCollection => '我的句子收藏';
 }

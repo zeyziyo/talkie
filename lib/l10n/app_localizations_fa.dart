@@ -35,7 +35,8 @@ class AppLocalizationsFa extends AppLocalizations {
       '• انتخاب: مجموعه یا \'همه\' را انتخاب کنید\n• چرخاندن: \'نمایش/مخفی کردن\' ترجمه\n• گوش دادن: پخش TTS برای جمله\n• علامت‌گذاری: تیک (V) برای تکمیل شده‌ها\n• حذف: لمس طولانی کارت برای حذف\n• فیلتر: نمایش همه یا بر اساس مطلب';
 
   @override
-  String get helpMode3Desc => 'با گوش دادن و تکرار تمرین کنید.';
+  String get helpMode3Desc =>
+      'با گوش دادن به جملات و تکرار آن‌ها (سایه زنی)، تلفظ خود را تمرین کنید.';
 
   @override
   String get helpMode3Details =>
@@ -43,7 +44,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'برای تمرین مکالمه واقعی با شخصیت‌ها صحبت کنید.';
+      'با یک شخصیت هوش مصنوعی مکالمه کنید و مکالمه واقعی را تمرین کنید.';
 
   @override
   String get helpModeChatDetails =>
@@ -408,6 +409,10 @@ class AppLocalizationsFa extends AppLocalizations {
       'مطالب را انتخاب کنید یا به \'مرور همه\' بروید.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'یک مجموعه برای تمرین صحبت کردن انتخاب کنید.';
+
+  @override
   String get tutorialM2ListTitle => 'لیست مطالعه';
 
   @override
@@ -416,10 +421,6 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'انتخاب مطلب';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'یک مجموعه برای تمرین صحبت کردن انتخاب کنید.';
 
   @override
   String get tutorialM3IntervalTitle => 'فاصله';
@@ -788,7 +789,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get chatAiChat => 'چت';
 
   @override
-  String get tutorialAiChatTitle => 'چت';
+  String get tutorialAiChatTitle => 'چت با هوش مصنوعی';
 
   @override
   String get tutorialAiChatDesc =>
@@ -881,6 +882,12 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'برچسب عنوان (پوشه)';
+
+  @override
+  String get generalTags => 'برچسب های عمومی';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -980,4 +987,28 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'آیا می خواهید این مکالمه را حذف کنید؟\nمکالمات حذف شده قابل بازیابی نیستند.';
+
+  @override
+  String get notSelected => '- انتخاب نشده -';
+
+  @override
+  String get myWordbook => 'دفتر لغات من';
+
+  @override
+  String get mySentenceCollection => 'مجموعه جملات من';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

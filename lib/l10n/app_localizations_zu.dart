@@ -37,7 +37,8 @@ class AppLocalizationsZu extends AppLocalizations {
       '• Khetha Izinto Zokwakha: Khetha iqoqo lezinto ezithile noma \'Konke Ukubuyekeza\'\n• Phendula Ikhadi: Hlola ukuhumusha \'ngokubonisa/ukufihla\' (ukuhlola ukufunda okuzenzakalelayo)\n• Lalela: Dlala umusho we-TTS\n• Ukufunda Kuqediwe: Phatha ukufunda njengokuqediwe ngophawu lokuhlola (V)\n• Susa: Cindezela isikhathi eside ikhadi ukuze ususe amarekhodi\n• Izimo Zokusesha: Hlunga ngamathegi, izinto zamuva, izinhlamvu zokuqala';
 
   @override
-  String get helpMode3Desc => 'Zijwayeze ngokulalela nokuphinda.';
+  String get helpMode3Desc =>
+      'Lalela umusho bese uwuphinda (Ukushadelwa) ukuze uthuthukise indlela obiza ngayo amagama.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Khuluma nabalingiswa ukuze uzijwayeze ingxoxo.';
+      'Zijwayeze ingxoxo yangempela ngokuxoxa no-AI.';
 
   @override
   String get helpModeChatDetails =>
@@ -415,6 +416,10 @@ class AppLocalizationsZu extends AppLocalizations {
       'Cindezela isithonjana seqoqo lezinto zokwakha (📚) kubha yohlelo lokusebenza engenhla ukuze ukhethe izinto zokwakha ozofunda.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Cindezela isithonjana seqoqo lezinto zokwakha (📚) kubha yohlelo lokusebenza engenhla ukuze ukhethe izinto zokwakha ozozijwayeza.';
+
+  @override
   String get tutorialM2ListTitle => 'Uhlu Lokufunda';
 
   @override
@@ -423,10 +428,6 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Khetha Izinto Zokwakha';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Cindezela isithonjana seqoqo lezinto zokwakha (📚) kubha yohlelo lokusebenza engenhla ukuze ukhethe izinto zokwakha ozozijwayeza.';
 
   @override
   String get tutorialM3IntervalTitle => 'Setha Isikhawu';
@@ -754,7 +755,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get reviewModeTitle => 'Buyekeza';
 
   @override
-  String get practiceModeTitle => 'Ukuzijwayeza';
+  String get practiceModeTitle => 'Ukuzilolonga';
 
   @override
   String get chatHistoryTitle => 'Umlando Wengxoxo';
@@ -803,7 +804,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get chatAiChat => 'Ingxoxo';
 
   @override
-  String get tutorialAiChatTitle => 'Ingxoxo';
+  String get tutorialAiChatTitle => 'Ingxoxo ye-AI';
 
   @override
   String get tutorialAiChatDesc =>
@@ -895,6 +896,12 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Kuqediwe';
+
+  @override
+  String get titleTagSelection => 'Ithegi yesihloko (Iqoqo Ledatha)';
+
+  @override
+  String get generalTags => 'Amathegi ajwayelekile';
 
   @override
   String get tagSelection => 'Ukukhethwa Kwethegi';
@@ -994,4 +1001,28 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Uqinisekile ukuthi ufuna ukususa le ngxoxo?\nAyikwazi ukubuyiselwa emuva uma isisusiwe.';
+
+  @override
+  String get notSelected => '- Akukhethiwe - ';
+
+  @override
+  String get myWordbook => 'Isilulumagama sami';
+
+  @override
+  String get mySentenceCollection => 'Iqoqo lemisho yami';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

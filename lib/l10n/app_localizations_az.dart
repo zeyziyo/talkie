@@ -37,7 +37,8 @@ class AppLocalizationsAz extends AppLocalizations {
       '• Material seçimi: Müəyyən material toplusunu və ya \'Bütün təkrar\'ı seçin\n• Kartı çevirin: Tərcüməni yoxlamaq üçün \'Göstər/Gizlət\' (avtomatik öyrənmə yoxlaması)\n• Dinləmə: Cümlə TTS səsləndirməsi\n• Öyrənmə tamamlandı: İşarə ilə (V) öyrənməni tamamlayın\n• Silmə: Qeydləri silmək üçün karta uzun müddət basın\n• Axtarış şərtləri: Etiket, son elementlər, başlanğıc hərflərlə filtrləyin';
 
   @override
-  String get helpMode3Desc => 'Dinləyərək və təkrarlayaraq məşq edin.';
+  String get helpMode3Desc =>
+      'Cümlələri dinləyərək və təkrarlayaraq (kölgələmə) tələffüzünüzü məşq edin.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Real söhbət məşqi etmək üçün personajlarla danışın.';
+      'Süni intellekt personajı ilə danışaraq real söhbət bacarıqlarınızı məşq edin.';
 
   @override
   String get helpModeChatDetails =>
@@ -413,6 +414,10 @@ class AppLocalizationsAz extends AppLocalizations {
       'Öyrənmək üçün material seçmək üçün yuxarıdakı proqram çubuğundakı material toplusu işarəsinə (📚) toxunun.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Məşq etmək üçün material seçmək üçün yuxarıdakı proqram çubuğundakı material toplusu işarəsinə (📚) toxunun.';
+
+  @override
   String get tutorialM2ListTitle => 'Öyrənmə Siyahısı';
 
   @override
@@ -421,10 +426,6 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Material Seçimi';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Məşq etmək üçün material seçmək üçün yuxarıdakı proqram çubuğundakı material toplusu işarəsinə (📚) toxunun.';
 
   @override
   String get tutorialM3IntervalTitle => 'İnterval Təyin Edin';
@@ -796,10 +797,10 @@ class AppLocalizationsAz extends AppLocalizations {
   String get chatUntitled => 'Başlıqsız Söhbət';
 
   @override
-  String get chatAiChat => 'Çat';
+  String get chatAiChat => 'Söhbət';
 
   @override
-  String get tutorialAiChatTitle => 'Çat';
+  String get tutorialAiChatTitle => 'Süni İntellekt Söhbəti';
 
   @override
   String get tutorialAiChatDesc =>
@@ -891,6 +892,12 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Bitirildi';
+
+  @override
+  String get titleTagSelection => 'Başlıq etiketi (Kitabxana)';
+
+  @override
+  String get generalTags => 'Ümumi etiketlər';
 
   @override
   String get tagSelection => 'Etiket Seçimi';
@@ -990,4 +997,28 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Bu söhbəti silmək istədiyinizə əminsinizmi?\nSilinmiş söhbətləri geri qaytarmaq mümkün deyil.';
+
+  @override
+  String get notSelected => '- Seçilməyib -';
+
+  @override
+  String get myWordbook => 'Mənim Söz Kitabım';
+
+  @override
+  String get mySentenceCollection => 'Mənim Cümlə Kolleksiyam';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

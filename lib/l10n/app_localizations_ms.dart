@@ -36,7 +36,8 @@ class AppLocalizationsMs extends AppLocalizations {
       '• Pilih: Pilih set atau \'Ulas Semua\'\n• Terbalikkan: \'Tunjuk/Sembunyi\' terjemahan\n• Dengar: Mainkan TTS untuk ayat\n• Tanda: Tanda (V) untuk selesai\n• Padam: Tekan lama kad untuk padam\n• Penapis: Lihat semua atau ikut bahan';
 
   @override
-  String get helpMode3Desc => 'Berlatih dengan mendengar dan mengulang.';
+  String get helpMode3Desc =>
+      'Berlatih sebutan dengan mendengar dan mengulangi ayat (Membayangi).';
 
   @override
   String get helpMode3Details =>
@@ -44,7 +45,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Bercakap dengan persona untuk melatih perbualan.';
+      'Berlatih perbualan dunia sebenar dengan berbual dengan persona AI.';
 
   @override
   String get helpModeChatDetails =>
@@ -408,6 +409,9 @@ class AppLocalizationsMs extends AppLocalizations {
       'Pilih bahan atau tukar ke \'Ulas Semua\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Pilih set untuk latihan bercakap.';
+
+  @override
   String get tutorialM2ListTitle => 'Senarai Kajian';
 
   @override
@@ -416,9 +420,6 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Pilih Bahan';
-
-  @override
-  String get tutorialM3SelectDesc => 'Pilih set untuk latihan bercakap.';
 
   @override
   String get tutorialM3IntervalTitle => 'Selang';
@@ -788,7 +789,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get chatAiChat => 'Sembang';
 
   @override
-  String get tutorialAiChatTitle => 'Sembang';
+  String get tutorialAiChatTitle => 'Sembang AI';
 
   @override
   String get tutorialAiChatDesc =>
@@ -881,6 +882,12 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Tag Tajuk (Koleksi)';
+
+  @override
+  String get generalTags => 'Tag Umum';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -980,4 +987,28 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Adakah anda pasti mahu memadam perbualan ini?\nPerbualan yang dipadam tidak dapat dipulihkan.';
+
+  @override
+  String get notSelected => '- Tiada Pilihan -';
+
+  @override
+  String get myWordbook => 'Buku Perkataan Saya';
+
+  @override
+  String get mySentenceCollection => 'Koleksi Ayat Saya';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

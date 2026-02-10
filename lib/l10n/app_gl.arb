@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Queres eliminar esta conversa?\nNon poderás recuperala.",
   "notSelected": "- Sen seleccionar -",
   "myWordbook": "O meu vocabulario",
-  "mySentenceCollection": "A miña colección de frases"
+  "mySentenceCollection": "A miña colección de frases",
+  "newSubjectName": "Novo título de tema/colección de frases",
+  "enterNewSubjectName": "Introduce un título novo",
+  "addNewSubject": "Engadir título novo",
+  "selectExistingSubject": "Seleccionar título existente",
+  "addTagHint": "Engadir etiqueta..."
 }

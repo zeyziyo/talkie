@@ -37,14 +37,15 @@ class AppLocalizationsNb extends AppLocalizations {
       '• Velg materiale: Velg et bestemt materiale eller \'Gjennomgå alt\'\n• Vend kort: Sjekk oversettelsen med \'Vis/Skjul\' (automatisk læringsmerke)\n• Lytt: Setnings-TTS-avspilling\n• Læring fullført: Behandle læringen som fullført med en hake (V)\n• Slett: Slett poster ved å trykke lenge på kortet\n• Søkekriterier: Filtrer etter tagger, nylige elementer, startbokstaver';
 
   @override
-  String get helpMode3Desc => 'Øv ved å lytte og gjenta.';
+  String get helpMode3Desc =>
+      'Øv uttale ved å lytte til og gjenta setninger (skygging).';
 
   @override
   String get helpMode3Details =>
       '• Velg materiale: Velg materialet du vil studere\n• Angi intervall: Juster ventetiden mellom setningene med [-] [+] (3 sekunder til 60 sekunder)\n• Start/Stopp: Kontroller skyggeøkten\n• Snakk: Lytt til stemmen og gjenta\n• Tilbakemelding: Nøyaktighetsskår (0-100) og fargedisplay\n• Søkekriterier: Filtrer øvelsesmål etter tagger, nylige elementer, startbokstaver';
 
   @override
-  String get helpModeChatDesc => 'Snakk med personaer for å øve på samtale.';
+  String get helpModeChatDesc => 'Øv på samtaler med en AI-persona.';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +412,10 @@ class AppLocalizationsNb extends AppLocalizations {
       'Trykk på materiellikonet (📚) på den øverste applinjen for å velge materialet du vil studere.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Trykk på materiellikonet (📚) på den øverste applinjen for å velge materialet du vil øve på.';
+
+  @override
   String get tutorialM2ListTitle => 'Læringsliste';
 
   @override
@@ -419,10 +424,6 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Velg materiale';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Trykk på materiellikonet (📚) på den øverste applinjen for å velge materialet du vil øve på.';
 
   @override
   String get tutorialM3IntervalTitle => 'Angi intervall';
@@ -745,7 +746,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get reviewModeTitle => 'Repetisjon';
 
   @override
-  String get practiceModeTitle => 'Øvelse';
+  String get practiceModeTitle => 'Øving';
 
   @override
   String get chatHistoryTitle => 'Chattehistorikk';
@@ -794,7 +795,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get chatAiChat => 'Chat';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'AI-chat';
 
   @override
   String get tutorialAiChatDesc => 'Øv på samtaler med en AI-personlighet.';
@@ -884,6 +885,12 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Ferdig';
+
+  @override
+  String get titleTagSelection => 'Titteltagger (ressurs)';
+
+  @override
+  String get generalTags => 'Generelle tagger';
 
   @override
   String get tagSelection => 'Velg tagg';
@@ -983,4 +990,28 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Vil du slette denne samtalen?\nDu kan ikke gjenopprette slettede samtaler.';
+
+  @override
+  String get notSelected => '- Ikke valgt -';
+
+  @override
+  String get myWordbook => 'Mine ord';
+
+  @override
+  String get mySentenceCollection => 'Mine setninger';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

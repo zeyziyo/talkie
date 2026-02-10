@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Viltu eyða þessu samtali?\nEydd samtöl er ekki hægt að endurheimta.",
   "notSelected": "- Enginn valinn -",
   "myWordbook": "Orðaforði minn",
-  "mySentenceCollection": "Setningasafnið mitt"
+  "mySentenceCollection": "Setningasafnið mitt",
+  "newSubjectName": "Nýtt nafn á orðaforða/setningasafn",
+  "enterNewSubjectName": "Sláðu inn nýtt nafn",
+  "addNewSubject": "Bæta við nýju nafni",
+  "selectExistingSubject": "Veldu núverandi nafn",
+  "addTagHint": "Bættu við merki..."
 }

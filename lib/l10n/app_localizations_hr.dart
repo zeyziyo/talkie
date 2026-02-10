@@ -37,7 +37,8 @@ class AppLocalizationsHr extends AppLocalizations {
       '• Odabir materijala: Odaberite određenu zbirku materijala ili \'Cjelokupni pregled\'\n• Okretanje kartice: Provjerite prijevod pomoću \'Prikaži/Sakrij\' (automatska provjera učenja)\n• Slušanje: Reprodukcija TTS-a rečenice\n• Završeno učenje: Označite kvačicom (V) kao završeno učenje\n• Brisanje: Dugo pritisnite karticu za brisanje zapisa\n• Uvjeti pretraživanja: Filtriranje prema oznaci, nedavnim stavkama, početnom slovu';
 
   @override
-  String get helpMode3Desc => 'Vježbajte slušajući i ponavljajući.';
+  String get helpMode3Desc =>
+      'Vježbajte izgovor slušajući i ponavljajući rečenice (Shadowing).';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Razgovarajte s personama za vježbu stvarnog razgovora.';
+      'Vježbajte razgovor u stvarnim situacijama razgovarajući s AI osobom.';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +412,10 @@ class AppLocalizationsHr extends AppLocalizations {
       'Pritisnite ikonu zbirke materijala (📚) na gornjoj traci aplikacije da biste odabrali materijal za učenje.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Pritisnite ikonu zbirke materijala (📚) na gornjoj traci aplikacije da biste odabrali materijal za vježbu.';
+
+  @override
   String get tutorialM2ListTitle => 'Popis učenja';
 
   @override
@@ -419,10 +424,6 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Odabir materijala';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Pritisnite ikonu zbirke materijala (📚) na gornjoj traci aplikacije da biste odabrali materijal za vježbu.';
 
   @override
   String get tutorialM3IntervalTitle => 'Postavljanje intervala';
@@ -791,10 +792,10 @@ class AppLocalizationsHr extends AppLocalizations {
   String get chatUntitled => 'Razgovor bez naslova';
 
   @override
-  String get chatAiChat => 'Chat';
+  String get chatAiChat => 'Razgovor';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'AI Razgovor';
 
   @override
   String get tutorialAiChatDesc => 'Vježbajte stvarni razgovor s AI personom.';
@@ -885,6 +886,12 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Gotovo';
+
+  @override
+  String get titleTagSelection => 'Naslov oznake (Zbirka)';
+
+  @override
+  String get generalTags => 'Općenite oznake';
 
   @override
   String get tagSelection => 'Odabir oznake';
@@ -984,4 +991,28 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Želite li izbrisati ovaj razgovor?\nIzbrisane razgovore nije moguće vratiti.';
+
+  @override
+  String get notSelected => '- Nije odabrano -';
+
+  @override
+  String get myWordbook => 'Moj rječnik';
+
+  @override
+  String get mySentenceCollection => 'Moja zbirka rečenica';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

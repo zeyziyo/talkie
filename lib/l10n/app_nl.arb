@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Weet je zeker dat je dit gesprek wilt verwijderen?\nVerwijderde gesprekken kunnen niet worden hersteld.",
   "notSelected": "- Niet geselecteerd -",
   "myWordbook": "Mijn woordenboek",
-  "mySentenceCollection": "Mijn zinnenverzameling"
+  "mySentenceCollection": "Mijn zinnenverzameling",
+  "newSubjectName": "Nieuwe woordenlijst/zinscollectie titel",
+  "enterNewSubjectName": "Nieuwe titel invoeren",
+  "addNewSubject": "Nieuwe titel toevoegen",
+  "selectExistingSubject": "Bestaande titel selecteren",
+  "addTagHint": "Tag toevoegen..."
 }

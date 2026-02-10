@@ -37,7 +37,8 @@ class AppLocalizationsHu extends AppLocalizations {
       '• Kiválasztás: Válasszon készletet vagy \'Összes\'\n• Fordítás: \'Mutat/Rejt\' fordítás megtekintése\n• Hallgatás: Mondat TTS lejátszása\n• Jelölés: Pipa (V) a kész elemekhez\n• Törlés: Hosszan nyomja meg a kártyát\n• Szűrő: Összes vagy anyag szerint';
 
   @override
-  String get helpMode3Desc => 'Gyakoroljon hallás és ismétlés után.';
+  String get helpMode3Desc =>
+      'Hallgass meg egy mondatot, majd gyakorold a kiejtést utánmondással (Shadowing).';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Beszéljen karakterekkel a valódi társalgás gyakorlásához.';
+      'Gyakorold a valós beszélgetéseket egy AI személyiséggel.';
 
   @override
   String get helpModeChatDetails =>
@@ -409,6 +410,9 @@ class AppLocalizationsHu extends AppLocalizations {
       'Válasszon anyagot vagy \'Összes áttekintése\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Válasszon készletet beszédgyakorláshoz.';
+
+  @override
   String get tutorialM2ListTitle => 'Tanulólista';
 
   @override
@@ -417,9 +421,6 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Anyag Kiválasztása';
-
-  @override
-  String get tutorialM3SelectDesc => 'Válasszon készletet beszédgyakorláshoz.';
 
   @override
   String get tutorialM3IntervalTitle => 'Időköz';
@@ -785,10 +786,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get chatUntitled => 'Untitled Conversation';
 
   @override
-  String get chatAiChat => 'Chat';
+  String get chatAiChat => 'Csevegés';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'AI csevegés';
 
   @override
   String get tutorialAiChatDesc =>
@@ -881,6 +882,12 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Címke kiválasztása (adatlap)';
+
+  @override
+  String get generalTags => 'Általános címkék';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -980,4 +987,28 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Törli ezt a beszélgetést?\nA törölt beszélgetések nem állíthatók vissza.';
+
+  @override
+  String get notSelected => '- Nincs kiválasztva -';
+
+  @override
+  String get myWordbook => 'Szógyűjteményem';
+
+  @override
+  String get mySentenceCollection => 'Mondatgyűjteményem';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

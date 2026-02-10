@@ -37,7 +37,8 @@ class AppLocalizationsCy extends AppLocalizations {
       '• Dewis Deunydd: dewiswch gasgliad deunydd penodol neu \'Adolygu Popeth\'\n• Fflipio Cerdyn: gwiriwch y cyfieithiad gyda \'Dangos/Cuddio\' (gwiriad dysgu awtomatig)\n• Gwrando: chwarae TTS brawddegau\n• Dysgu wedi\'i Gwblhau: prosesu wedi\'i gwblhau gyda marc gwirio (V)\n• Dileu: daliwch y cerdyn i lawr i ddileu cofnodion\n• Amodau Chwilio: hidlo yn ôl tagiau, eitemau diweddar, a llythrennau cyntaf';
 
   @override
-  String get helpMode3Desc => 'Ymarferwch drwy wrando ac ailadrodd.';
+  String get helpMode3Desc =>
+      'Ymarferwch eich ynganiad trwy wrando ar frawddeg ac yna\'i hailadrodd (Cysgodi).';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Siaradwch â phersonas i ymarfer sgwrs go iawn.';
+      'Ymarferwch sgiliau sgwrsio go iawn trwy sgwrsio â persona AI.';
 
   @override
   String get helpModeChatDetails =>
@@ -415,6 +416,10 @@ class AppLocalizationsCy extends AppLocalizations {
       'Pwyswch yr eicon casgliad deunydd (📚) ar far app uchaf i ddewis y deunydd i\'w astudio.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Pwyswch yr eicon casgliad deunydd (📚) ar far app uchaf i ddewis y deunydd i\'w ymarfer.';
+
+  @override
   String get tutorialM2ListTitle => 'Rhestr Astudio';
 
   @override
@@ -423,10 +428,6 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Dewis Deunydd';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Pwyswch yr eicon casgliad deunydd (📚) ar far app uchaf i ddewis y deunydd i\'w ymarfer.';
 
   @override
   String get tutorialM3IntervalTitle => 'Gosod Cyfwng';
@@ -799,10 +800,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get chatUntitled => 'Sgwrs ddi-deitl';
 
   @override
-  String get chatAiChat => 'Sgwrs';
+  String get chatAiChat => 'Sgwrsio';
 
   @override
-  String get tutorialAiChatTitle => 'Sgwrs';
+  String get tutorialAiChatTitle => 'Sgwrsio AI';
 
   @override
   String get tutorialAiChatDesc => 'Ymarfer sgyrsiau go iawn gyda AI Persona.';
@@ -893,6 +894,12 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Gorffennwyd';
+
+  @override
+  String get titleTagSelection => 'Tag Teitl (Casgliad)';
+
+  @override
+  String get generalTags => 'Tagiau Cyffredinol';
 
   @override
   String get tagSelection => 'Dewis Tag';
@@ -992,4 +999,28 @@ class AppLocalizationsCy extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Ydych chi\'n siŵr eich bod am ddileu\'r sgwrs hon?\nNi ellir adfer sgyrsiau sydd wedi\'u dileu.';
+
+  @override
+  String get notSelected => '- Heb ei Ddewis -';
+
+  @override
+  String get myWordbook => 'Fy ngeirlyfr';
+
+  @override
+  String get mySentenceCollection => 'Fy nghasgliad o frawddegau';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

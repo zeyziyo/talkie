@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Удалить эту беседу?\nВосстановление удаленных бесед невозможно.",
   "notSelected": "- Не выбрано -",
   "myWordbook": "Мой словарь",
-  "mySentenceCollection": "Моя коллекция предложений"
+  "mySentenceCollection": "Моя коллекция предложений",
+  "newSubjectName": "Новое название темы/набора",
+  "enterNewSubjectName": "Введите новое название",
+  "addNewSubject": "Добавить новое название",
+  "selectExistingSubject": "Выберите существующее название",
+  "addTagHint": "Добавить тег..."
 }

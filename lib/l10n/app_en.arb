@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Are you sure you want to delete this conversation?\nThis action cannot be undone.",
   "notSelected": "- Not Selected -",
   "myWordbook": "My Wordbook",
-  "mySentenceCollection": "My Sentence Collection"
+  "mySentenceCollection": "My Sentence Collection",
+  "newSubjectName": "New Subject Name",
+  "enterNewSubjectName": "Enter new subject name",
+  "addNewSubject": "Add New Subject",
+  "selectExistingSubject": "Select Existing Subject",
+  "addTagHint": "Add Tag..."
 }

@@ -37,7 +37,8 @@ class AppLocalizationsEl extends AppLocalizations {
       '• Επιλογή: Διαλέξτε σετ ή \'Όλα\'\n• Γύρισμα: \'Εμφάνιση/Απόκρυψη\' μετάφρασης\n• Ακρόαση: Αναπαραγωγή TTS\n• Σήμανση: Τικ (V) για ολοκληρωμένα\n• Διαγραφή: Παρατεταμένο πάτημα κάρτας\n• Φίλτρο: Προβολή όλων ή ανά υλικό';
 
   @override
-  String get helpMode3Desc => 'Εξασκηθείτε ακούγοντας και επαναλαμβάνοντας.';
+  String get helpMode3Desc =>
+      'Εξασκήστε την προφορά σας ακούγοντας και επαναλαμβάνοντας φράσεις (Shadowing).';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Μιλήστε με χαρακτήρες για πραγματική εξάσκηση.';
+      'Εξασκήστε την πρακτική συνομιλία μιλώντας με μια περσόνα AI.';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +412,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialM2SelectDesc => 'Επιλέξτε υλικό ή \'Επανάληψη Όλων\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Επιλέξτε σετ για πρακτική ομιλίας.';
+
+  @override
   String get tutorialM2ListTitle => 'Λίστα Μελέτης';
 
   @override
@@ -419,9 +423,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Επιλογή Υλικού';
-
-  @override
-  String get tutorialM3SelectDesc => 'Επιλέξτε σετ για πρακτική ομιλίας.';
 
   @override
   String get tutorialM3IntervalTitle => 'Διάστημα';
@@ -788,7 +789,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get chatAiChat => 'Συνομιλία';
 
   @override
-  String get tutorialAiChatTitle => 'Συνομιλία';
+  String get tutorialAiChatTitle => 'AI Chat';
 
   @override
   String get tutorialAiChatDesc =>
@@ -881,6 +882,12 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Ετικέτα τίτλου (Συλλογή)';
+
+  @override
+  String get generalTags => 'Γενικές ετικέτες';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -980,4 +987,28 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Θέλετε να διαγράψετε αυτήν τη συνομιλία;\nΔεν θα μπορείτε να την επαναφέρετε.';
+
+  @override
+  String get notSelected => '- Δεν έχει επιλεγεί -';
+
+  @override
+  String get myWordbook => 'Το βιβλίο μου με λέξεις';
+
+  @override
+  String get mySentenceCollection => 'Η συλλογή μου από προτάσεις';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

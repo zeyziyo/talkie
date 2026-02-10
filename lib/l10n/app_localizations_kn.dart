@@ -37,14 +37,16 @@ class AppLocalizationsKn extends AppLocalizations {
       '• ಆಯ್ಕೆಮಾಡಿ: ಸೆಟ್ ಅಥವಾ \'ಎಲ್ಲಾ ಪರಿಶೀಲಿಸಿ\' ಆಯ್ಕೆಮಾಡಿ\n• ತಿರುಗಿಸಿ: \'ತೋರಿಸು/ಮರೆಮಾಡು\' ಅನುವಾದ\n• ಆಲಿಸಿ: ವಾಕ್ಯಕ್ಕಾಗಿ TTS ಪ್ಲೇ ಮಾಡಿ\n• ಗುರುತಿಸಿ: ಪೂರ್ಣಗೊಂಡಿದ್ದಕ್ಕೆ ಟಿಕ್ (V)\n• ಅಳಿಸಿ: ಅಳಿಸಲು ಕಾರ್ಡ್ ಅನ್ನು ದೀರ್ಘವಾಗಿ ಒತ್ತಿರಿ\n• ಫಿಲ್ಟರ್: ಎಲ್ಲವನ್ನೂ ಅಥವಾ ವಸ್ತುವಿನ ಮೂಲಕ ವೀಕ್ಷಿಸಿ';
 
   @override
-  String get helpMode3Desc => 'ಕೇಳುವ ಮತ್ತು ಪುನರಾವರ್ತಿಸುವ ಮೂಲಕ ಅಭ್ಯಾಸ ಮಾಡಿ.';
+  String get helpMode3Desc =>
+      'ವಾಕ್ಯವನ್ನು ಆಲಿಸಿ ಮತ್ತು ಅನುಸರಿಸಿ (Shadowing) ಉಚ್ಚಾರಣೆಯನ್ನು ಅಭ್ಯಾಸ ಮಾಡಿ.';
 
   @override
   String get helpMode3Details =>
       '• ಆಯ್ಕೆಮಾಡಿ: ಪ್ಯಾಕೇಜ್ ಆಯ್ಕೆಮಾಡಿ\n• ಅಂತರ: [-] [+] ಕಾಯುವ ಸಮಯ (3ಸೆ-60ಸೆ)\n• ಪ್ರಾರಂಭಿಸಿ/ನಿಲ್ಲಿಸಿ: ಸೆಷನ್ ನಿಯಂತ್ರಿಸಿ\n• ಮಾತನಾಡಿ: ಆಡಿಯೋ ಆಲಿಸಿ ಮತ್ತು ಪುನರಾವರ್ತಿಸಿ\n• ಸ್ಕೋರ್: ನಿಖರತೆ (0-100)\n• ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ: ಧ್ವನಿ ಪತ್ತೆಯಾಗದಿದ್ದರೆ ಬಟನ್';
 
   @override
-  String get helpModeChatDesc => 'ನಿಜವಾದ ಸಂಭಾಷಣೆಗಾಗಿ ಪಾತ್ರಗಳೊಂದಿಗೆ ಮಾತನಾಡಿ.';
+  String get helpModeChatDesc =>
+      'AI ವ್ಯಕ್ತಿಯೊಂದಿಗೆ ಸಂಭಾಷಣೆ ಮಾಡುವ ಮೂಲಕ ನೈಜ ಸಂಭಾಷಣೆಯನ್ನು ಅಭ್ಯಾಸ ಮಾಡಿ.';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +413,9 @@ class AppLocalizationsKn extends AppLocalizations {
       'ವಸ್ತುಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ ಅಥವಾ \'ಎಲ್ಲಾ ಪರಿಶೀಲಿಸಿ\' ಗೆ ಬದಲಿಸಿ.';
 
   @override
+  String get tutorialM3SelectDesc => 'ಮಾತನಾಡುವ ಅಭ್ಯಾಸಕ್ಕಾಗಿ ಸೆಟ್ ಆಯ್ಕೆಮಾಡಿ.';
+
+  @override
   String get tutorialM2ListTitle => 'ಅಧ್ಯಯನ ಪಟ್ಟಿ';
 
   @override
@@ -419,9 +424,6 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'ವಸ್ತು ಆಯ್ಕೆಮಾಡಿ';
-
-  @override
-  String get tutorialM3SelectDesc => 'ಮಾತನಾಡುವ ಅಭ್ಯಾಸಕ್ಕಾಗಿ ಸೆಟ್ ಆಯ್ಕೆಮಾಡಿ.';
 
   @override
   String get tutorialM3IntervalTitle => 'ಅಂತರ';
@@ -792,7 +794,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get chatAiChat => 'ಚಾಟ್';
 
   @override
-  String get tutorialAiChatTitle => 'ಚಾಟ್';
+  String get tutorialAiChatTitle => 'AI ಚಾಟ್';
 
   @override
   String get tutorialAiChatDesc =>
@@ -885,6 +887,12 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'ಶೀರ್ಷಿಕೆ ಟ್ಯಾಗ್ (ದಾಖಲೆಗಳು)';
+
+  @override
+  String get generalTags => 'ಸಾಮಾನ್ಯ ಟ್ಯಾಗ್‌ಗಳು';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -984,4 +992,28 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'ನೀವು ಈ ಸಂಭಾಷಣೆಯನ್ನು ಅಳಿಸಲು ಬಯಸುತ್ತೀರಾ?\nಅಳಿಸಲಾದ ಸಂಭಾಷಣೆಯನ್ನು ಮರುಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.';
+
+  @override
+  String get notSelected => '- ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ -';
+
+  @override
+  String get myWordbook => 'ನನ್ನ ಪದಗಳ ಸಂಗ್ರಹ';
+
+  @override
+  String get mySentenceCollection => 'ನನ್ನ ವಾಕ್ಯ ಸಂಗ್ರಹ';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

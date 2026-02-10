@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "ဤစကားပြောကို ဖျက်ရန်သေချာပါသလား။\nဖျက်လိုက်သော စကားပြောများကို ပြန်ယူ၍မရပါ။",
   "notSelected": "- မရွေးချယ်ထားပါ - ",
   "myWordbook": "ကျွန်ုပ်၏ ဝေါဟာရစာအုပ်",
-  "mySentenceCollection": "ကျွန်ုပ်၏ စာကြောင်းစုစည်းမှု"
+  "mySentenceCollection": "ကျွန်ုပ်၏ စာကြောင်းစုစည်းမှု",
+  "newSubjectName": "ခေါင်းစဥ်အသစ်",
+  "enterNewSubjectName": "ခေါင်းစဥ်အသစ်ထည့်ပါ",
+  "addNewSubject": "ထည့်ရန်",
+  "selectExistingSubject": "ရွေးရန်",
+  "addTagHint": "အမှတ်အသားထည့်ရန်..."
 }

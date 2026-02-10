@@ -32,14 +32,14 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• 자료 선택: 특정 자료집 또는 \'전체 복습\' 선택\n• 카드 뒤집기: \'보이기/숨기기\'로 번역 확인 (자동 학습 체크)\n• 듣기: 문장 TTS 재생\n• 학습 완료: 체크 표시(V)로 학습 완료 처리\n• 삭제: 카드를 길게 눌러 기록 삭제\n• 검색 조건: 태그, 최근 항목, 시작 글자로 필터링';
+      '• 자료 선택: 상단 앱바의 상세 설정(Tune) 아이콘으로 자료 선택 및 온라인 자료실 접근\n• 카드 뒤집기: \'보이기/숨기기\'로 번역 확인 (자동 학습 체크)\n• 듣기: 문장 TTS 재생\n• 학습 완료: 체크 표시(V)로 학습 완료 처리\n• 삭제: 카드를 길게 눌러 기록 삭제\n• 검색 조건: 태그, 최근 항목, 시작 글자로 필터링';
 
   @override
   String get helpMode3Desc => '문장을 듣고 따라 말하며(Shadowing) 발음을 연습하세요.';
 
   @override
   String get helpMode3Details =>
-      '• 자료 선택: 학습할 자료집 선택\n• 간격 설정: [-] [+] 버튼으로 문장 간 대기 시간 조정 (3초~60초)\n• 시작/정지: 쉐도잉 세션 제어\n• 말하기: 음성을 듣고 따라 말하기\n• 피드백: 정확도 점수(0-100) 및 색상 표시\n• 검색 조건: 태그, 최근 항목, 시작 글자로 연습 대상 필터링';
+      '• 자료 선택: 상단 앱바의 상세 설정(Tune) 아이콘으로 자료 선택\n• 간격 설정: [-] [+] 버튼으로 문장 간 대기 시간 조정 (3초~60초)\n• 시작/정지: 쉐도잉 세션 제어\n• 말하기: 음성을 듣고 따라 말하기\n• 피드백: 정확도 점수(0-100) 및 색상 표시\n• 검색 조건: 태그, 최근 항목, 시작 글자로 연습 대상 필터링';
 
   @override
   String get helpModeChatDesc => 'AI 페르소나와 대화하며 실전 회화를 연습하세요.';
@@ -400,7 +400,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialM2SelectTitle => '자료 선택';
 
   @override
-  String get tutorialM2SelectDesc => '상단 앱바의 자료집 아이콘(📚)을 눌러 학습할 자료를 선택하세요.';
+  String get tutorialM2SelectDesc =>
+      '상단 앱바의 상세 설정(Tune) 아이콘을 눌러 학습할 자료를 선택하거나 온라인 자료실을 이용하세요.';
+
+  @override
+  String get tutorialM3SelectDesc => '상단 앱바의 자료집 아이콘(📚)을 눌러 연습할 자료를 선택하세요.';
 
   @override
   String get tutorialM2ListTitle => '학습 목록';
@@ -411,9 +415,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => '자료 선택';
-
-  @override
-  String get tutorialM3SelectDesc => '상단 앱바의 자료집 아이콘(📚)을 눌러 연습할 자료를 선택하세요.';
 
   @override
   String get tutorialM3IntervalTitle => '간격 설정';
@@ -723,7 +724,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get reviewModeTitle => '복습';
 
   @override
-  String get practiceModeTitle => '연습';
+  String get practiceModeTitle => '발음 연습';
 
   @override
   String get chatHistoryTitle => '대화 기록';
@@ -864,6 +865,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get labelShowMemorized => '끝낸것';
 
   @override
+  String get titleTagSelection => '제목 태그 (자료집)';
+
+  @override
+  String get generalTags => '일반 태그';
+
+  @override
   String get tagSelection => '태그 선택';
 
   @override
@@ -961,4 +968,28 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       '이 대화를 삭제하시겠습니까?\n삭제된 대화는 복구할 수 없습니다.';
+
+  @override
+  String get notSelected => '- 선택 안함 -';
+
+  @override
+  String get myWordbook => '나의 단어장';
+
+  @override
+  String get mySentenceCollection => '나의 문장집';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

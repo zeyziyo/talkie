@@ -37,14 +37,16 @@ class AppLocalizationsTe extends AppLocalizations {
       '• ఎంచుకోండి: సెట్ లేదా \'అన్నీ సమీక్షించు\' ఎంచుకోండి\n• తిప్పు: అనువాదం \'చూపు/దాచు\'\n• వినండి: వాక్యానికి TTS ప్లే చేయండి\n• గుర్తించు: పూర్తయిన వాటికి టిక్ (V)\n• తొలగించు: తొలగించడానికి కార్డును గట్టిగా నొక్కండి\n• ఫిల్టర్: అన్నీ లేదా మెటీరియల్ వారీగా చూడండి';
 
   @override
-  String get helpMode3Desc => 'వింటూ మరియు తిరిగి చెబుతూ అభ్యాసం చేయండి.';
+  String get helpMode3Desc =>
+      'వాక్యాన్ని విని, అనుకరిస్తూ (Shadowing) ఉచ్ఛారణను ప్రాక్టీస్ చేయండి.';
 
   @override
   String get helpMode3Details =>
       '• ఎంచుకోండి: ప్యాకేజీని ఎంచుకోండి\n• విరామం: [-] [+] వేచి ఉండే సమయం (3సె-60సె)\n• ప్రారంభించు/ఆపు: సెషన్‌ను నియంత్రించండి\n• మాట్లాడు: ఆడియో వినండి మరియు పునరావృతం చేయండి\n• స్కోర్: ఖచ్చితత్వం (0-100)\n• మళ్ళీ ప్రయత్నించు: వాయిస్ గుర్తించబడకపోతే బటన్';
 
   @override
-  String get helpModeChatDesc => 'నిజమైన సంభాషణ కోసం పాత్రలతో మాట్లాడండి.';
+  String get helpModeChatDesc =>
+      'AI వ్యక్తిత్వంతో సంభాషిస్తూ నిజ జీవిత సంభాషణను ప్రాక్టీస్ చేయండి.';
 
   @override
   String get helpModeChatDetails =>
@@ -410,6 +412,9 @@ class AppLocalizationsTe extends AppLocalizations {
       'మెటీరియల్ ఎంచుకోండి లేదా \'అన్నీ సమీక్షించు\'కి మారండి.';
 
   @override
+  String get tutorialM3SelectDesc => 'మాట్లాడే సాధన కోసం సెట్‌ను ఎంచుకోండి.';
+
+  @override
   String get tutorialM2ListTitle => 'స్టడీ జాబితా';
 
   @override
@@ -418,9 +423,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'మెటీరియల్ ఎంచుకోండి';
-
-  @override
-  String get tutorialM3SelectDesc => 'మాట్లాడే సాధన కోసం సెట్‌ను ఎంచుకోండి.';
 
   @override
   String get tutorialM3IntervalTitle => 'విరామం';
@@ -786,10 +788,10 @@ class AppLocalizationsTe extends AppLocalizations {
   String get chatUntitled => 'Untitled Conversation';
 
   @override
-  String get chatAiChat => 'చాట్';
+  String get chatAiChat => 'చాటింగ్';
 
   @override
-  String get tutorialAiChatTitle => 'చాట్';
+  String get tutorialAiChatTitle => 'AI చాటింగ్';
 
   @override
   String get tutorialAiChatDesc =>
@@ -882,6 +884,12 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'శీర్షిక ట్యాగ్ (సేకరణ)';
+
+  @override
+  String get generalTags => 'సాధారణ ట్యాగ్‌లు';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -981,4 +989,28 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'మీరు ఈ సంభాషణను తొలగించాలనుకుంటున్నారా?\nతొలగించిన సంభాషణను తిరిగి పొందలేరు.';
+
+  @override
+  String get notSelected => '- ఎంచుకోలేదు -';
+
+  @override
+  String get myWordbook => 'నా పదజాలం';
+
+  @override
+  String get mySentenceCollection => 'నా వాక్యాల సేకరణ';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

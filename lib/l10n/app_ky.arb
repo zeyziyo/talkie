@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Бул баарлашууну жок кылууну каалайсызбы?\nЖок кылынган баарлашууну кайра калыбына келтирүү мүмкүн эмес.",
   "notSelected": "- Тандалган жок -",
   "myWordbook": "Менин сөздүгүм",
-  "mySentenceCollection": "Менин сүйлөм жыйнагым"
+  "mySentenceCollection": "Менин сүйлөм жыйнагым",
+  "newSubjectName": "Жаңы теманын/сүйлөмдөрдүн жыйнагынын аталышы",
+  "enterNewSubjectName": "Жаңы аталышты киргизиңиз",
+  "addNewSubject": "Жаңы аталышты кошуу",
+  "selectExistingSubject": "Мурунку аталышты тандаңыз",
+  "addTagHint": "Тэг кошуу..."
 }

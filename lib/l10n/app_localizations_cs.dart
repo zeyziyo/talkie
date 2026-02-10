@@ -35,15 +35,15 @@ class AppLocalizationsCs extends AppLocalizations {
       '• Výběr: Zvolte sadu nebo \'Vše\'\n• Karta: \'Zobrazit/Skrýt\' překlad\n• Poslech: Přehrát TTS věty\n• Nastudováno: Zaškrtnout (V) pro hotové\n• Smazat: Dlouhý stisk pro smazání\n• Filtr: Zobrazit vše nebo dle materiálu';
 
   @override
-  String get helpMode3Desc => 'Procvičujte poslechem a opakováním.';
+  String get helpMode3Desc =>
+      'Poslouchejte větu a opakujte ji (stínování) a procvičujte výslovnost.';
 
   @override
   String get helpMode3Details =>
       '• Výběr: Zvolte balíček\n• Interval: [-] [+] prodleva (3s-60s)\n• Start/Stop: Ovládání relace\n• Mluvit: Poslouchejte a opakujte\n• Skóre: Přesnost (0-100)\n• Znovu: Tlačítko opakování při nerozpoznání';
 
   @override
-  String get helpModeChatDesc =>
-      'Mluvte s personami pro nácvik skutečné konverzace.';
+  String get helpModeChatDesc => 'Procvičujte si konverzaci s AI postavou.';
 
   @override
   String get helpModeChatDetails =>
@@ -406,6 +406,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tutorialM2SelectDesc => 'Vyberte materiály nebo \'Opakovat vše\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Vyberte sadu pro mluvení.';
+
+  @override
   String get tutorialM2ListTitle => 'Seznam';
 
   @override
@@ -414,9 +417,6 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Výběr materiálu';
-
-  @override
-  String get tutorialM3SelectDesc => 'Vyberte sadu pro mluvení.';
 
   @override
   String get tutorialM3IntervalTitle => 'Interval';
@@ -733,7 +733,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get reviewModeTitle => '복습';
 
   @override
-  String get practiceModeTitle => 'Praxe';
+  String get practiceModeTitle => 'Cvičení';
 
   @override
   String get chatHistoryTitle => 'Conversation History';
@@ -782,7 +782,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get chatAiChat => 'Chat';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'AI Chat';
 
   @override
   String get tutorialAiChatDesc =>
@@ -875,6 +875,12 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Štítky názvu (sbírka)';
+
+  @override
+  String get generalTags => 'Obecné štítky';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -974,4 +980,28 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Opravdu chcete smazat tuto konverzaci?\nSmazané konverzace nelze obnovit.';
+
+  @override
+  String get notSelected => '- Nevybráno -';
+
+  @override
+  String get myWordbook => 'Moje slovní zásoba';
+
+  @override
+  String get mySentenceCollection => 'Moje sbírka vět';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

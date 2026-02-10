@@ -35,14 +35,15 @@ class AppLocalizationsHe extends AppLocalizations {
       '• בחר: בחר סט או \'חזור על הכל\'\n• הפוך: \'הצג/הסתר\' תרגום\n• האזן: נגן TTS למשפט\n• סמן: וי (V) להושלם\n• מחק: לחיצה ארוכה למחיקה\n• מסנן: הצג הכל או לפי חומר';
 
   @override
-  String get helpMode3Desc => 'תרגלו באמצעות האזנה וחזרה.';
+  String get helpMode3Desc =>
+      'תרגלו הגייה על ידי האזנה וחזרה על משפטים (Shadowing).';
 
   @override
   String get helpMode3Details =>
       '• בחר: בחר חבילה\n• מרווח: [-] [+] זמן המתנה (3ש\'-60ש\')\n• התחל/עצור: שליטה בסשן\n• דבר: האזן וחזור\n• ניקוד: דיוק (0-100)\n• נסה שוב: כפתור אם קול לא מזוהה';
 
   @override
-  String get helpModeChatDesc => 'דברו עם דמויות לתרגול שיחה אמיתית.';
+  String get helpModeChatDesc => 'תרגלו שיחה אמיתית על ידי שיחה עם דמות AI.';
 
   @override
   String get helpModeChatDetails =>
@@ -404,6 +405,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialM2SelectDesc => 'בחר חומרים או \'חזור על הכל\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'בחר סט לתרגול דיבור.';
+
+  @override
   String get tutorialM2ListTitle => 'רשימת לימוד';
 
   @override
@@ -412,9 +416,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'בחר חומר';
-
-  @override
-  String get tutorialM3SelectDesc => 'בחר סט לתרגול דיבור.';
 
   @override
   String get tutorialM3IntervalTitle => 'מרווח';
@@ -779,7 +780,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get chatAiChat => 'צ\'אט';
 
   @override
-  String get tutorialAiChatTitle => 'צ\'אט';
+  String get tutorialAiChatTitle => 'צ\'אט AI';
 
   @override
   String get tutorialAiChatDesc =>
@@ -872,6 +873,12 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'תג כותרת (קובץ עזר)';
+
+  @override
+  String get generalTags => 'תגים כלליים';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -971,4 +978,28 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'האם למחוק שיחה זו?\nלא ניתן יהיה לשחזר שיחה שנמחקה.';
+
+  @override
+  String get notSelected => '- לא נבחר -';
+
+  @override
+  String get myWordbook => 'אוצר המילים שלי';
+
+  @override
+  String get mySentenceCollection => 'אוסף המשפטים שלי';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

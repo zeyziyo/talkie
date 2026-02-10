@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Želite izbrisati ta pogovor?\nIzbrisanih pogovorov ni mogoče obnoviti.",
   "notSelected": "- Ni izbrano -",
   "myWordbook": "Moja besedna zbirka",
-  "mySentenceCollection": "Moja zbirka stavkov"
+  "mySentenceCollection": "Moja zbirka stavkov",
+  "newSubjectName": "Novo ime sklopa besed/stavkov",
+  "enterNewSubjectName": "Vnesite novo ime",
+  "addNewSubject": "Dodaj novo ime",
+  "selectExistingSubject": "Izberite obstoječe ime",
+  "addTagHint": "Dodaj oznako..."
 }

@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Дали сте сигурни дека сакате да го избришете овој разговор?\nИзбришаните разговори не можат да се вратат.",
   "notSelected": "- Не е избрано -",
   "myWordbook": "Мој речник",
-  "mySentenceCollection": "Моја колекција на реченици"
+  "mySentenceCollection": "Моја колекција на реченици",
+  "newSubjectName": "Нов наслов на речник/фрази",
+  "enterNewSubjectName": "Внесете нов наслов",
+  "addNewSubject": "Додај нов наслов",
+  "selectExistingSubject": "Изберете постоечки наслов",
+  "addTagHint": "Додај ознака..."
 }

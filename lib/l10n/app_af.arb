@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Wil jy hierdie gesprek uitvee?\nJy sal nie die uitgeveede gesprek kan herstel nie.",
   "notSelected": "- Nie gekies nie -",
   "myWordbook": "My Woordeboek",
-  "mySentenceCollection": "My Sinversameling"
+  "mySentenceCollection": "My Sinversameling",
+  "newSubjectName": "Nuwe Onderwerp Naam",
+  "enterNewSubjectName": "Voer nuwe naam in",
+  "addNewSubject": "Voeg nuwe naam by",
+  "selectExistingSubject": "Kies bestaande naam",
+  "addTagHint": "Voeg merker by..."
 }

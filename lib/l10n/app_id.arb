@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Anda yakin ingin menghapus percakapan ini?\nPercakapan yang dihapus tidak dapat dipulihkan.",
   "notSelected": "- Tidak Dipilih -",
   "myWordbook": "Buku Kata Saya",
-  "mySentenceCollection": "Koleksi Kalimat Saya"
+  "mySentenceCollection": "Koleksi Kalimat Saya",
+  "newSubjectName": "Judul Subjek/Kalimat Baru",
+  "enterNewSubjectName": "Masukkan Judul Baru",
+  "addNewSubject": "Tambahkan Judul Baru",
+  "selectExistingSubject": "Pilih Judul yang Ada",
+  "addTagHint": "Tambahkan tag..."
 }

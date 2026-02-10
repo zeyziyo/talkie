@@ -290,49 +290,6 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                             
                             const SizedBox(height: 12),
                             
-                            // Phase 81.4: Save Target Material (Subject) selection/creation
-                            Autocomplete<String>(
-                              optionsBuilder: (TextEditingValue textEditingValue) {
-                                final existingSubjects = appState.studyMaterials
-                                    .map((m) => m['subject'] as String)
-                                    .where((s) => s != 'Basic')
-                                    .toSet()
-                                    .toList();
-                                if (textEditingValue.text.isEmpty) {
-                                  return existingSubjects;
-                                }
-                                return existingSubjects.where((s) =>
-                                    s.toLowerCase().contains(textEditingValue.text.toLowerCase()));
-                              },
-                              onSelected: (String selection) {
-                                appState.setSelectedSaveSubject(selection);
-                              },
-                              fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
-                                if (controller.text != appState.selectedSaveSubject) {
-                                  controller.text = appState.selectedSaveSubject;
-                                }
-                                return TextField(
-                                  controller: controller,
-                                  focusNode: focusNode,
-                                  decoration: InputDecoration(
-                                    labelText: l10n.titleTagSelection,
-                                    hintText: appState.recordTypeFilter == 'word' 
-                                        ? "Ex: ${l10n.myWordbook}" 
-                                        : "Ex: ${l10n.mySentenceCollection}",
-                                    isDense: true,
-                                    prefixIcon: const Icon(Icons.folder_open, size: 20),
-                                    border: const OutlineInputBorder(),
-                                    contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-                                  ),
-                                  onChanged: (value) {
-                                    appState.setSelectedSaveSubject(value.isEmpty ? 'Basic' : value);
-                                  },
-                                );
-                              },
-                            ),
-                            
-                            const SizedBox(height: 12),
-
                             // Category Dropdown & Details Button
                             Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -372,12 +329,12 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                 ElevatedButton.icon(
                                   key: widget.contextFieldKey,
                                   onPressed: () => _showMetadataDialog(context, appState),
-                                  icon: const Icon(Icons.add_circle_outline, size: 18),
-                                  label: Text(l10n.metadataDialogTitle, style: const TextStyle(fontSize: 13)),
+                                  icon: const Icon(Icons.save, size: 18), // Changed icon to Save
+                                  label: Text(l10n.save, style: const TextStyle(fontSize: 13)), // Changed label to Save (needs L10n key check)
                                   style: ElevatedButton.styleFrom(
                                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                                    backgroundColor: Colors.grey[100],
-                                    foregroundColor: Colors.blueGrey[800],
+                                    backgroundColor: Colors.blueAccent, // Highlighted color
+                                    foregroundColor: Colors.white,
                                     elevation: 0,
                                     side: BorderSide(color: Colors.grey.shade300),
                                   ),
@@ -524,15 +481,19 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                             const SizedBox(height: 8),
                             
                             // Context/Note Feedback
-
                             TextField(
                               controller: _translatedTextController,
                               decoration: const InputDecoration(
                                 border: OutlineInputBorder(),
+                                hintText: "Translation result will appear here...",
                               ),
                               minLines: 2,
                               maxLines: null,
-                              readOnly: true,
+                              readOnly: false, // Phase 83: Enable editing
+                              onChanged: (val) {
+                                // Phase 83: Allow user to refine translation
+                                appState.updateTranslatedText(val);
+                              },
                             ),
                           ],
                         ),

@@ -37,7 +37,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get helpMode3Desc =>
-      'Magsanay sa pamamagitan ng pakikinig at pag-uulit.';
+      'Makinig at gayahin ang mga pangungusap (Shadowing) upang magsanay ng iyong pagbigkas.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +45,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Makipag-usap sa mga persona para sa tunay na usapan.';
+      'Magsanay ng totoong pag-uusap sa pamamagitan ng pakikipag-usap sa isang AI persona.';
 
   @override
   String get helpModeChatDetails =>
@@ -413,6 +413,10 @@ class AppLocalizationsFil extends AppLocalizations {
       'Pumili ng materyales o lumipat sa \'Balik-aralan Lahat\'.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Pumili ng set para sa pagsasanay sa pagsasalita.';
+
+  @override
   String get tutorialM2ListTitle => 'Listahan ng Pag-aaral';
 
   @override
@@ -421,10 +425,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Pumili ng Materyales';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Pumili ng set para sa pagsasanay sa pagsasalita.';
 
   @override
   String get tutorialM3IntervalTitle => 'Agwat';
@@ -796,7 +796,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get chatAiChat => 'Chat';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'AI Chat';
 
   @override
   String get tutorialAiChatDesc =>
@@ -890,6 +890,12 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Tag ng Pamagat (Collection)';
+
+  @override
+  String get generalTags => 'Pangkalahatang mga Tag';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -989,4 +995,28 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Sigurado ka bang gusto mong burahin ang usapang ito?\nHindi na ito mababawi pa.';
+
+  @override
+  String get notSelected => '- Walang Napili -';
+
+  @override
+  String get myWordbook => 'Aking Talasalitaan';
+
+  @override
+  String get mySentenceCollection => 'Aking Pangungusap';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

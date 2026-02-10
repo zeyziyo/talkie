@@ -37,7 +37,8 @@ class AppLocalizationsVi extends AppLocalizations {
       '• Chọn tài liệu: Chọn bộ cụ thể hoặc \'Ôn tập tất cả\'\n• Lật thẻ: Sử dụng \'Hiện/Ẩn\' để xem bản dịch\n• Nghe: Phát TTS cho câu cụ thể\n• Đánh dấu đã học: Chọn (V) cho các mục đã hoàn thành\n• Xóa: Nhấn giữ thẻ để xóa bản ghi\n• Lọc: Xem tất cả hoặc lọc theo tài liệu';
 
   @override
-  String get helpMode3Desc => 'Luyện tập bằng cách nghe và lặp lại.';
+  String get helpMode3Desc =>
+      'Luyện tập phát âm bằng cách nghe và lặp lại câu (Shadowing).';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Nói chuyện với nhân vật để luyện hội thoại thực tế.';
+      'Luyện tập hội thoại thực tế bằng cách trò chuyện với AI Persona.';
 
   @override
   String get helpModeChatDetails =>
@@ -409,6 +410,9 @@ class AppLocalizationsVi extends AppLocalizations {
       'Chọn tài liệu học hoặc chuyển sang \'Ôn tập tất cả\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Chọn bộ tài liệu để luyện nói.';
+
+  @override
   String get tutorialM2ListTitle => 'Danh sách học';
 
   @override
@@ -417,9 +421,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Chọn tài liệu';
-
-  @override
-  String get tutorialM3SelectDesc => 'Chọn bộ tài liệu để luyện nói.';
 
   @override
   String get tutorialM3IntervalTitle => 'Khoảng cách';
@@ -787,7 +788,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get chatAiChat => 'Trò chuyện';
 
   @override
-  String get tutorialAiChatTitle => 'Trò chuyện';
+  String get tutorialAiChatTitle => 'Trò chuyện AI';
 
   @override
   String get tutorialAiChatDesc =>
@@ -880,6 +881,12 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Thẻ tiêu đề (tuyển tập)';
+
+  @override
+  String get generalTags => 'Thẻ chung';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -979,4 +986,28 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Bạn có chắc chắn muốn xóa hội thoại này?\nHội thoại đã xóa không thể khôi phục.';
+
+  @override
+  String get notSelected => '- Không chọn -';
+
+  @override
+  String get myWordbook => 'Từ vựng của tôi';
+
+  @override
+  String get mySentenceCollection => 'Tuyển tập câu của tôi';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

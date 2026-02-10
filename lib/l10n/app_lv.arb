@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Vai vēlaties izdzēst šo sarunu?\nIzdzēstās sarunas nevar atgūt.",
   "notSelected": "- Nav atlasīts -",
   "myWordbook": "Mana vārdnīca",
-  "mySentenceCollection": "Mana teikumu kolekcija"
+  "mySentenceCollection": "Mana teikumu kolekcija",
+  "newSubjectName": "Jauns vārdu krājuma/teikumu krājuma nosaukums",
+  "enterNewSubjectName": "Ievadiet jaunu nosaukumu",
+  "addNewSubject": "Pievienot jaunu nosaukumu",
+  "selectExistingSubject": "Izvēlieties esošu nosaukumu",
+  "addTagHint": "Pievienot tagu..."
 }

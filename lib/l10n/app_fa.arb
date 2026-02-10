@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "آیا می خواهید این مکالمه را حذف کنید؟\nمکالمات حذف شده قابل بازیابی نیستند.",
   "notSelected": "- انتخاب نشده -",
   "myWordbook": "دفتر لغات من",
-  "mySentenceCollection": "مجموعه جملات من"
+  "mySentenceCollection": "مجموعه جملات من",
+  "newSubjectName": "عنوان جدید دفترچه لغات/عبارات",
+  "enterNewSubjectName": "عنوان جدید را وارد کنید",
+  "addNewSubject": "اضافه کردن عنوان جدید",
+  "selectExistingSubject": "انتخاب عنوان موجود",
+  "addTagHint": "اضافه کردن برچسب..."
 }

@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "আপুনি এই কথোপকথনটো মচিব বিচাৰে নেকি?\nমচাৰ পিছত কথোপকথনটো পুনৰুদ্ধাৰ কৰিব নোৱাৰিব।",
   "notSelected": "- নিৰ্বাচিত কৰা হোৱা নাই -",
   "myWordbook": "মোৰ শব্দ তালিকা",
-  "mySentenceCollection": "মোৰ বাক্য সংগ্ৰহ"
+  "mySentenceCollection": "মোৰ বাক্য সংগ্ৰহ",
+  "newSubjectName": "নতুন শব্দভাণ্ডাৰ/বাক্যাংশৰ সংগ্ৰহৰ নাম",
+  "enterNewSubjectName": "নতুন নাম লিখক",
+  "addNewSubject": "নতুন নাম যোগ কৰক",
+  "selectExistingSubject": "পূৰ্বৰ নাম বাছক",
+  "addTagHint": "টেগ যোগ কৰক..."
 }

@@ -2493,6 +2493,16 @@ class AppState extends ChangeNotifier {
     }
   }
 
+  // Phase 83: Allow manual edit regarding translation result
+  void updateTranslatedText(String newText) {
+    _translatedText = newText;
+    // Do not notifyListeners() here to avoid rebuilding the TextField while typing
+    // or use a separate stream if needed. But for now, simple variable update is enough 
+    // as long as the controller is controlled by the widget.
+    // However, if other widgets depend on this, we might need to notify.
+    // Let's not notify to prevent cursor jumps, Mode1Widget handles the controller.
+  }
+
   String _getLanguageFullName(String code) {
     final lang = LanguageConstants.supportedLanguages.firstWhere(
       (l) => l['code'] == code, orElse: () => {'name': code}

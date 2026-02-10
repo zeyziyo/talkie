@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Bu konuşmayı silmek istediğinizden emin misiniz?\nSilinen konuşmalar geri alınamaz.",
   "notSelected": "- Seçilmedi -",
   "myWordbook": "Kelime Defterim",
-  "mySentenceCollection": "Cümle Koleksiyonum"
+  "mySentenceCollection": "Cümle Koleksiyonum",
+  "newSubjectName": "Yeni Kelime Defteri/Cümle Koleksiyonu Başlığı",
+  "enterNewSubjectName": "Yeni Başlık Girin",
+  "addNewSubject": "Yeni Başlık Ekle",
+  "selectExistingSubject": "Mevcut Başlığı Seç",
+  "addTagHint": "Etiket ekle..."
 }

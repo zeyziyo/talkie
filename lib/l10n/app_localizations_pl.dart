@@ -37,14 +37,16 @@ class AppLocalizationsPl extends AppLocalizations {
       '• Wybierz Materiał: Wybierz zestaw lub \'Wszystko\'\n• Odwróć Kartę: \'Pokaż/Ukryj\' tłumaczenie\n• Słuchaj: Odtwórz TTS dla zdania\n• Oznacz: Zaznacz (V) ukończone\n• Usuń: Przytrzymaj kartę aby usunąć\n• Filtr: Zobacz wszystko lub filtruj';
 
   @override
-  String get helpMode3Desc => 'Ćwicz słuchając i powtarzając.';
+  String get helpMode3Desc =>
+      'Słuchaj zdań i ćwicz wymowę, powtarzając je (Shadowing).';
 
   @override
   String get helpMode3Details =>
       '• Wybierz Materiał: Wybierz pakiet\n• Interwał: [-] [+] czas oczekiwania (3s-60s)\n• Start/Stop: Kontrola sesji\n• Mów: Słuchaj audio i powtarzaj\n• Feedback: Wynik dokładności (0-100)\n• Ponów: Przycisk ponawiania jeśli głos niewykryty';
 
   @override
-  String get helpModeChatDesc => 'Rozmawiaj z postaciami, aby ćwiczyć rozmowę.';
+  String get helpModeChatDesc =>
+      'Ćwicz konwersacje w prawdziwych sytuacjach, rozmawiając z AI Personą.';
 
   @override
   String get helpModeChatDetails =>
@@ -410,6 +412,9 @@ class AppLocalizationsPl extends AppLocalizations {
       'Wybierz materiały lub przełącz na \'Wszystko\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Wybierz zestaw do ćwiczeń mówienia.';
+
+  @override
   String get tutorialM2ListTitle => 'Lista Nauki';
 
   @override
@@ -418,9 +423,6 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Wybierz Materiał';
-
-  @override
-  String get tutorialM3SelectDesc => 'Wybierz zestaw do ćwiczeń mówienia.';
 
   @override
   String get tutorialM3IntervalTitle => 'Interwał';
@@ -742,7 +744,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get reviewModeTitle => 'Review';
 
   @override
-  String get practiceModeTitle => 'Praktyka';
+  String get practiceModeTitle => 'Ćwiczenia';
 
   @override
   String get chatHistoryTitle => 'Conversation History';
@@ -791,7 +793,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get chatAiChat => 'Czat';
 
   @override
-  String get tutorialAiChatTitle => 'Czat';
+  String get tutorialAiChatTitle => 'Czat AI';
 
   @override
   String get tutorialAiChatDesc =>
@@ -884,6 +886,12 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Tag tytułu (Materiały)';
+
+  @override
+  String get generalTags => 'Tagi ogólne';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -983,4 +991,28 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Czy na pewno chcesz usunąć tę konwersację?\nUsuniętej konwersacji nie będzie można odzyskać.';
+
+  @override
+  String get notSelected => '- Nie wybrano -';
+
+  @override
+  String get myWordbook => 'Mój słownik';
+
+  @override
+  String get mySentenceCollection => 'Mój zbiór zdań';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

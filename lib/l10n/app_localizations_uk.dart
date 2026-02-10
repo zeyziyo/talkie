@@ -37,7 +37,8 @@ class AppLocalizationsUk extends AppLocalizations {
       '• Вибір: Виберіть набір або \'Все\'\n• Картка: \'Показати/Сховати\' переклад\n• Слухати: Озвучити речення\n• Вивчено: Галочка (V) для завершених\n• Видалити: Довгий натиск для видалення\n• Фільтр: Всі або за матеріалом';
 
   @override
-  String get helpMode3Desc => 'Практикуйтеся, слухаючи та повторюючи.';
+  String get helpMode3Desc =>
+      'Слухайте речення та повторюйте за ним (Shadowing), щоб практикувати вимову.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Спілкуйтеся з персонажами для практики реальної розмови.';
+      'Практикуйте розмовну мову в реальних умовах, спілкуючись із AI-персоною.';
 
   @override
   String get helpModeChatDetails =>
@@ -409,6 +410,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tutorialM2SelectDesc => 'Виберіть матеріали або \'Огляд всього\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Виберіть набір для практики.';
+
+  @override
   String get tutorialM2ListTitle => 'Список';
 
   @override
@@ -417,9 +421,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Вибір матеріалу';
-
-  @override
-  String get tutorialM3SelectDesc => 'Виберіть набір для практики.';
 
   @override
   String get tutorialM3IntervalTitle => 'Інтервал';
@@ -787,7 +788,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get chatAiChat => 'Чат';
 
   @override
-  String get tutorialAiChatTitle => 'Чат';
+  String get tutorialAiChatTitle => 'AI Чат';
 
   @override
   String get tutorialAiChatDesc =>
@@ -880,6 +881,12 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Тег заголовка (матеріали)';
+
+  @override
+  String get generalTags => 'Загальні теги';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -979,4 +986,28 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Ви впевнені, що хочете видалити цю розмову?\nВи не зможете відновити її.';
+
+  @override
+  String get notSelected => '- Не вибрано -';
+
+  @override
+  String get myWordbook => 'Мій словник';
+
+  @override
+  String get mySentenceCollection => 'Мій збірник речень';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

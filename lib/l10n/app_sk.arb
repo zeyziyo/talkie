@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Naozaj chcete zmazať túto konverzáciu?\nZmazané konverzácie sa nedajú obnoviť.",
   "notSelected": "- Nevybrané -",
   "myWordbook": "Moja slovná zásoba",
-  "mySentenceCollection": "Moja zbierka viet"
+  "mySentenceCollection": "Moja zbierka viet",
+  "newSubjectName": "Nový názov slovníka/zbierky viet",
+  "enterNewSubjectName": "Zadajte nový názov",
+  "addNewSubject": "Pridať nový názov",
+  "selectExistingSubject": "Vybrať existujúci názov",
+  "addTagHint": "Pridať tag..."
 }

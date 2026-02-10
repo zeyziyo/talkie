@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Bạn có chắc chắn muốn xóa hội thoại này?\nHội thoại đã xóa không thể khôi phục.",
   "notSelected": "- Không chọn -",
   "myWordbook": "Từ vựng của tôi",
-  "mySentenceCollection": "Tuyển tập câu của tôi"
+  "mySentenceCollection": "Tuyển tập câu của tôi",
+  "newSubjectName": "Tên Sổ từ/Câu mới",
+  "enterNewSubjectName": "Nhập tên mới",
+  "addNewSubject": "Thêm tên mới",
+  "selectExistingSubject": "Chọn tên hiện có",
+  "addTagHint": "Thêm thẻ..."
 }

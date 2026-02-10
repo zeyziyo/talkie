@@ -37,7 +37,8 @@ class AppLocalizationsRo extends AppLocalizations {
       '• Selectare: Alege set sau \'Tot\'\n• Întoarce: \'Arată/Ascunde\' traducerea\n• Ascultă: Redă TTS propoziție\n• Studiat: Bifează (V) pentru completat\n• Șterge: Apăsare lungă pentru ștergere\n• Filtru: Toate sau după material';
 
   @override
-  String get helpMode3Desc => 'Exersează ascultând și repetând.';
+  String get helpMode3Desc =>
+      'Ascultă și repetă propoziții (Shadowing) pentru a-ți exersa pronunția.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Vorbește cu personaje pentru a exersa conversația.';
+      'Exersează conversații reale vorbind cu un personaj AI.';
 
   @override
   String get helpModeChatDetails =>
@@ -409,6 +410,9 @@ class AppLocalizationsRo extends AppLocalizations {
       'Alege materiale sau \'Recapitulare Tot\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Alege un set pentru practică.';
+
+  @override
   String get tutorialM2ListTitle => 'Listă Studiu';
 
   @override
@@ -417,9 +421,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Selectare Material';
-
-  @override
-  String get tutorialM3SelectDesc => 'Alege un set pentru practică.';
 
   @override
   String get tutorialM3IntervalTitle => 'Interval';
@@ -740,7 +741,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get reviewModeTitle => 'Review';
 
   @override
-  String get practiceModeTitle => 'Practică';
+  String get practiceModeTitle => 'Exersează';
 
   @override
   String get chatHistoryTitle => 'Conversation History';
@@ -789,7 +790,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get chatAiChat => 'Chat';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'Chat AI';
 
   @override
   String get tutorialAiChatDesc =>
@@ -882,6 +883,12 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Etichetă titlu (culegere)';
+
+  @override
+  String get generalTags => 'Etichete generale';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -981,4 +988,28 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Sigur dorești să ștergi această conversație?\nConversațiile șterse nu pot fi recuperate.';
+
+  @override
+  String get notSelected => '- Neselectat -';
+
+  @override
+  String get myWordbook => 'Vocabularul meu';
+
+  @override
+  String get mySentenceCollection => 'Colecția mea de fraze';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

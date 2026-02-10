@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Er du sikker på, at du vil slette denne samtale?\nSlettede samtaler kan ikke gendannes.",
   "notSelected": "- Ikke valgt -",
   "myWordbook": "Min ordbog",
-  "mySentenceCollection": "Min sætningssamling"
+  "mySentenceCollection": "Min sætningssamling",
+  "newSubjectName": "Nyt emneoverskrift",
+  "enterNewSubjectName": "Indtast ny overskrift",
+  "addNewSubject": "Tilføj ny overskrift",
+  "selectExistingSubject": "Vælg eksisterende overskrift",
+  "addTagHint": "Tilføj tag..."
 }

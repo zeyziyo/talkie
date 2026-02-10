@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "ਕੀ ਤੁਸੀਂ ਇਸ ਗੱਲਬਾਤ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?\nਮਿਟਾਈ ਗਈ ਗੱਲਬਾਤ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।",
   "notSelected": "- ਕੋਈ ਨਹੀਂ ਚੁਣਿਆ ਗਿਆ -",
   "myWordbook": "ਮੇਰੀ ਸ਼ਬਦਾਵਲੀ",
-  "mySentenceCollection": "ਮੇਰਾ ਵਾਕ ਸੰਗ੍ਰਹਿ"
+  "mySentenceCollection": "ਮੇਰਾ ਵਾਕ ਸੰਗ੍ਰਹਿ",
+  "newSubjectName": "ਨਵਾਂ ਵਿਸ਼ਾ ਨਾਮ",
+  "enterNewSubjectName": "ਨਵਾਂ ਨਾਮ ਦਰਜ ਕਰੋ",
+  "addNewSubject": "ਨਵਾਂ ਨਾਮ ਸ਼ਾਮਲ ਕਰੋ",
+  "selectExistingSubject": "ਮੌਜੂਦਾ ਨਾਮ ਚੁਣੋ",
+  "addTagHint": "ਟੈਗ ਸ਼ਾਮਲ ਕਰੋ..."
 }

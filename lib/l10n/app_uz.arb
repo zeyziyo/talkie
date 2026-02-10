@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Bu suhbatni oʻchirishni xohlaysizmi?\nOʻchirilgan suhbatni qayta tiklab boʻlmaydi.",
   "notSelected": "- Tanlanmagan -",
   "myWordbook": "Mening so'zlashgichim",
-  "mySentenceCollection": "Mening gaplar to'plamim"
+  "mySentenceCollection": "Mening gaplar to'plamim",
+  "newSubjectName": "Yangi lug'at/ibora nomi",
+  "enterNewSubjectName": "Yangi nom kiriting",
+  "addNewSubject": "Yangi nom qo'shish",
+  "selectExistingSubject": "Mavjud nomni tanlang",
+  "addTagHint": "Teg qo'shish..."
 }

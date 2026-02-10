@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Ar tikrai norite ištrinti šį pokalbį?\nIštrintų pokalbių atkurti negalima.",
   "notSelected": "- Nepasirinkta -",
   "myWordbook": "Mano žodynas",
-  "mySentenceCollection": "Mano sakinių rinkinys"
+  "mySentenceCollection": "Mano sakinių rinkinys",
+  "newSubjectName": "Naujas žodyno/frazyno pavadinimas",
+  "enterNewSubjectName": "Įveskite naują pavadinimą",
+  "addNewSubject": "Pridėti naują pavadinimą",
+  "selectExistingSubject": "Pasirinkti esamą pavadinimą",
+  "addTagHint": "Pridėti žymę..."
 }

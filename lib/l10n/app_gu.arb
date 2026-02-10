@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "શું તમે આ વાતચીત કાઢી નાખવા માંગો છો?\nકાઢી નાખેલી વાતચીત પુનઃપ્રાપ્ત કરી શકાતી નથી.",
   "notSelected": "- કોઈ પસંદગી નથી -",
   "myWordbook": "મારું શબ્દકોશ",
-  "mySentenceCollection": "મારું વાક્ય સંગ્રહ"
+  "mySentenceCollection": "મારું વાક્ય સંગ્રહ",
+  "newSubjectName": "નવું વિષય નામ",
+  "enterNewSubjectName": "નવું નામ દાખલ કરો",
+  "addNewSubject": "નવું નામ ઉમેરો",
+  "selectExistingSubject": "હાલનું નામ પસંદ કરો",
+  "addTagHint": "ટૅગ ઉમેરો..."
 }

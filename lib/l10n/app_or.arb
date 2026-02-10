@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "ଆପଣ ଏହି ବାର୍ତ୍ତାଳାପକୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?\nଡିଲିଟ୍ ହୋଇଥିବା ବାର୍ତ୍ତାଳାପକୁ ପୁନରୁଦ୍ଧାର କରାଯାଇପାରିବ ନାହିଁ।",
   "notSelected": "- ଚୟନ କରାଯାଇ ନାହିଁ -",
   "myWordbook": "ମୋ ଶବ୍ଦବହି",
-  "mySentenceCollection": "ମୋ ବାକ୍ୟ ସଂଗ୍ରହ"
+  "mySentenceCollection": "ମୋ ବାକ୍ୟ ସଂଗ୍ରହ",
+  "newSubjectName": "ନୂଆ ବିଷୟ ନାମ",
+  "enterNewSubjectName": "ନୂଆ ନାମ ଦିଅନ୍ତୁ",
+  "addNewSubject": "ନୂଆ ନାମ ଯୋଡନ୍ତୁ",
+  "selectExistingSubject": "ପୂର୍ବରୁ ଥିବା ନାମ ବାଛନ୍ତୁ",
+  "addTagHint": "ଟ୍ୟାଗ୍ ଯୋଡନ୍ତୁ..."
 }

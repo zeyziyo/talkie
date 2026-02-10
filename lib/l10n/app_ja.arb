@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "この会話を削除しますか？\n削除した会話は復元できません。",
   "notSelected": "ー選択されていませんー",
   "myWordbook": "マイ単語帳",
-  "mySentenceCollection": "マイ例文集"
+  "mySentenceCollection": "マイ例文集",
+  "newSubjectName": "新しい単語帳/文章集のタイトル",
+  "enterNewSubjectName": "新しいタイトルを入力",
+  "addNewSubject": "新しいタイトルを追加",
+  "selectExistingSubject": "既存のタイトルを選択",
+  "addTagHint": "タグを追加..."
 }

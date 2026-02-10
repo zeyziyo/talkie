@@ -37,7 +37,8 @@ class AppLocalizationsSv extends AppLocalizations {
       '• Välj: Välj set eller \'Alla\'\n• Vänd: \'Visa/Dölj\' översättning\n• Lyssna: Spela TTS för mening\n• Markera: Kryssa (V) för klara\n• Ta bort: Långtryck för att ta bort\n• Filter: Visa alla eller per material';
 
   @override
-  String get helpMode3Desc => 'Öva genom att lyssna och repetera.';
+  String get helpMode3Desc =>
+      'Öva ditt uttal genom att lyssna på och upprepa meningar (skuggning).';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Prata med karaktärer för att öva på riktiga samtal.';
+      'Öva konversationsfärdigheter genom att chatta med en AI-persona.';
 
   @override
   String get helpModeChatDetails =>
@@ -408,6 +409,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tutorialM2SelectDesc => 'Välj material eller \'Repetera Alla\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Välj set för talövning.';
+
+  @override
   String get tutorialM2ListTitle => 'Studielista';
 
   @override
@@ -416,9 +420,6 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Välj Material';
-
-  @override
-  String get tutorialM3SelectDesc => 'Välj set för talövning.';
 
   @override
   String get tutorialM3IntervalTitle => 'Intervall';
@@ -787,7 +788,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get chatAiChat => 'Chatt';
 
   @override
-  String get tutorialAiChatTitle => 'Chatt';
+  String get tutorialAiChatTitle => 'AI-chatt';
 
   @override
   String get tutorialAiChatDesc =>
@@ -880,6 +881,12 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Rubriktagg (Samling)';
+
+  @override
+  String get generalTags => 'Allmänna taggar';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -979,4 +986,28 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Vill du radera den här konversationen?\nRaderade konversationer kan inte återställas.';
+
+  @override
+  String get notSelected => '- Inget valt -';
+
+  @override
+  String get myWordbook => 'Min ordlista';
+
+  @override
+  String get mySentenceCollection => 'Min frasbok';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

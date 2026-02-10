@@ -37,7 +37,8 @@ class AppLocalizationsRu extends AppLocalizations {
       '• Выбор: Выберите набор или \'Все\'\n• Карточка: \'Показать/Скрыть\' перевод\n• Слушать: TTS для предложения\n• Изучено: Галочка (V) для завершенных\n• Удалить: Долгое нажатие для удаления\n• Фильтр: Показать все или по материалам';
 
   @override
-  String get helpMode3Desc => 'Практикуйтесь, слушая и повторяя.';
+  String get helpMode3Desc =>
+      'Практикуйте произношение, слушая и повторяя предложения (Shadowing).';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Общайтесь с персонажами для практики реальной беседы.';
+      'Практикуйте разговорную речь с AI-персонажем.';
 
   @override
   String get helpModeChatDetails =>
@@ -410,6 +411,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tutorialM2SelectDesc => 'Выберите материалы или \'Обзор всего\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Выберите набор для разговорной практики.';
+
+  @override
   String get tutorialM2ListTitle => 'Список';
 
   @override
@@ -418,9 +422,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Выбор материала';
-
-  @override
-  String get tutorialM3SelectDesc => 'Выберите набор для разговорной практики.';
 
   @override
   String get tutorialM3IntervalTitle => 'Интервал';
@@ -790,7 +791,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get chatAiChat => 'Чат';
 
   @override
-  String get tutorialAiChatTitle => 'Чат';
+  String get tutorialAiChatTitle => 'Чат с ИИ';
 
   @override
   String get tutorialAiChatDesc =>
@@ -883,6 +884,12 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Теги заголовков (Альбомы)';
+
+  @override
+  String get generalTags => 'Общие теги';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -982,4 +989,28 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Удалить эту беседу?\nВосстановление удаленных бесед невозможно.';
+
+  @override
+  String get notSelected => '- Не выбрано -';
+
+  @override
+  String get myWordbook => 'Мой словарь';
+
+  @override
+  String get mySentenceCollection => 'Моя коллекция предложений';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "A jeni i sigurt që dëshironi ta fshini këtë bisedë?\nBisedat e fshira nuk mund të rikthehen.",
   "notSelected": "- Nuk është zgjedhur -",
   "myWordbook": "Libri im i fjalëve",
-  "mySentenceCollection": "Koleksioni im i fjalive"
+  "mySentenceCollection": "Koleksioni im i fjalive",
+  "newSubjectName": "Emri i ri i grupit/fjalorit",
+  "enterNewSubjectName": "Vendos emrin e ri",
+  "addNewSubject": "Shto emër të ri",
+  "selectExistingSubject": "Zgjidh emër ekzistues",
+  "addTagHint": "Shto etiketë..."
 }

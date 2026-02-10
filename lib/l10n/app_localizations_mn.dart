@@ -37,14 +37,16 @@ class AppLocalizationsMn extends AppLocalizations {
       '• Материал сонгох: Тодорхой цуглуулга эсвэл \'Бүгдийг давтах\' сонгох\n• Карт эргүүлэх: \'Харуулах/Нуух\' замаар орчуулгыг шалгах (Автомат сурах шалгах)\n• Сонсох: Өгүүлбэр TTS тоглуулах\n• Суралцаж дуусгах: Чек тэмдэг (V) -ээр суралцаж дуусгах\n• Устгах: Картыг удаан дарснаар бичлэгийг устгах\n• Хайлтын нөхцөл: Таг, саяхны зүйл, эхний үсгээр шүүх';
 
   @override
-  String get helpMode3Desc => 'Сонсож давтах замаар дасгал хийх.';
+  String get helpMode3Desc =>
+      'Өгүүлбэрийг сонсож, даган хэлж (Shadowing) дуудлагаа сайжруулаарай.';
 
   @override
   String get helpMode3Details =>
       '• Материал сонгох: Сурах материалаа сонгох\n• Завсрын хугацаа тохируулах: [-] [+] товчлуураар өгүүлбэр хоорондын хүлээх хугацааг тохируулах (3 секундээс 60 секунд хүртэл)\n• Эхлүүлэх/Зогсоох: Shadowing сессийг хянах\n• Ярих: Дууг сонсоод дагаж ярих\n• Санал хүсэлт: Нарийвчлалын оноо (0-100) болон өнгөний дэлгэц\n• Хайлтын нөхцөл: Таг, саяхны зүйл, эхний үсгээр дадлага хийх зүйлийг шүүх';
 
   @override
-  String get helpModeChatDesc => 'Бодит ярианы дасгал хийхээр дүрүүдтэй ярилц.';
+  String get helpModeChatDesc =>
+      'AI дүртэй ярилцаж, бодит харилцан яриаг дадлагажуулаарай.';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +413,10 @@ class AppLocalizationsMn extends AppLocalizations {
       'Дээд талын апп баар дээрх цуглуулгын дүрс (📚)-г дарж сурах материалаа сонгоно уу.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Дээд талын апп баар дээрх цуглуулгын дүрс (📚)-г дарж дадлага хийх материалаа сонгоно уу.';
+
+  @override
   String get tutorialM2ListTitle => 'Сурах жагсаалт';
 
   @override
@@ -419,10 +425,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Материал сонгох';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Дээд талын апп баар дээрх цуглуулгын дүрс (📚)-г дарж дадлага хийх материалаа сонгоно уу.';
 
   @override
   String get tutorialM3IntervalTitle => 'Завсар тохируулах';
@@ -746,7 +748,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get reviewModeTitle => 'Давтах';
 
   @override
-  String get practiceModeTitle => 'Дасгал';
+  String get practiceModeTitle => 'Дадлага';
 
   @override
   String get chatHistoryTitle => 'Ярианы түүх';
@@ -796,7 +798,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get chatAiChat => 'Чат';
 
   @override
-  String get tutorialAiChatTitle => 'Чат';
+  String get tutorialAiChatTitle => 'AI чат';
 
   @override
   String get tutorialAiChatDesc =>
@@ -888,6 +890,12 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Дууссан';
+
+  @override
+  String get titleTagSelection => 'Гарчгийн шошго (Материалын сан)';
+
+  @override
+  String get generalTags => 'Ерөнхий шошго';
 
   @override
   String get tagSelection => 'Таг сонгох';
@@ -987,4 +995,28 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Та энэ яриаг устгах уу?\nУстгасан яриаг сэргээх боломжгүй.';
+
+  @override
+  String get notSelected => '- Сонгоогүй -';
+
+  @override
+  String get myWordbook => 'Миний үгийн сан';
+
+  @override
+  String get mySentenceCollection => 'Миний өгүүлбэрийн цуглуулга';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

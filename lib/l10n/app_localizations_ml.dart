@@ -37,7 +37,8 @@ class AppLocalizationsMl extends AppLocalizations {
       '• തിരഞ്ഞെടുക്കുക: സെറ്റ് അല്ലെങ്കിൽ \'എല്ലാം അവലോകനം ചെയ്യുക\' തിരഞ്ഞെടുക്കുക\n• മറിക്കുക: വിവർത്തനം \'കാണിക്കുക/മറയ്ക്കുക\'\n• കേൾക്കുക: വാക്യത്തിനായി TTS പ്ലേ ചെയ്യുക\n• അടയാളപ്പെടുത്തുക: പൂർത്തിയായതിന് ടിക്ക് (V)\n• നീക്കം ചെയ്യുക: നീക്കം ചെയ്യാൻ കാർഡ് അമർത്തിപ്പിടിക്കുക\n• ഫിൽട്ടർ: എല്ലാം അല്ലെങ്കിൽ മെറ്റീരിയൽ പ്രകാരം കാണുക';
 
   @override
-  String get helpMode3Desc => 'ശ്രദ്ധിച്ചും ആവർത്തിച്ചും പരിശീലിക്കുക.';
+  String get helpMode3Desc =>
+      'ഒരു വാചകം കേട്ട് അത് അനുകരിച്ച് (ഷാഡോയിംഗ്) ഉച്ചാരണം പരിശീലിക്കുക.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'യഥാർത്ഥ സംഭാഷണത്തിനായി കഥാപാത്രങ്ങളോട് സംസാരിക്കുക.';
+      'AI വ്യക്തിത്വവുമായി സംഭാഷണം നടത്തി തത്സമയ സംഭാഷണം പരിശീലിക്കുക.';
 
   @override
   String get helpModeChatDetails =>
@@ -412,6 +413,10 @@ class AppLocalizationsMl extends AppLocalizations {
       'മെറ്റീരിയലുകൾ തിരഞ്ഞെടുക്കുക അല്ലെങ്കിൽ \'എല്ലാം അവലോകനം ചെയ്യുക\' എന്നതിലേക്ക് മാറുക.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'സംസാര പരിശീലനത്തിനായി സെറ്റ് തിരഞ്ഞെടുക്കുക.';
+
+  @override
   String get tutorialM2ListTitle => 'പഠന ലിസ്റ്റ്';
 
   @override
@@ -420,10 +425,6 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'മെറ്റീരിയൽ തിരഞ്ഞെടുക്കുക';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'സംസാര പരിശീലനത്തിനായി സെറ്റ് തിരഞ്ഞെടുക്കുക.';
 
   @override
   String get tutorialM3IntervalTitle => 'ഇടവേള';
@@ -795,7 +796,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get chatAiChat => 'ചാറ്റ്';
 
   @override
-  String get tutorialAiChatTitle => 'ചാറ്റ്';
+  String get tutorialAiChatTitle => 'AI ചാറ്റ്';
 
   @override
   String get tutorialAiChatDesc =>
@@ -888,6 +889,12 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'ശീർഷക ടാഗ് (മെറ്റീരിയൽ)';
+
+  @override
+  String get generalTags => 'പൊതുവായ ടാഗുകൾ';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -987,4 +994,28 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'നിങ്ങൾക്ക് ഈ സംഭാഷണം ഇല്ലാതാക്കണോ?\nഇല്ലാതാക്കിയ സംഭാഷണം വീണ്ടെടുക്കാൻ കഴിയില്ല.';
+
+  @override
+  String get notSelected => '-ഒന്നും തിരഞ്ഞെടുത്തിട്ടില്ല-';
+
+  @override
+  String get myWordbook => 'എൻ്റെ പദാവലി';
+
+  @override
+  String get mySentenceCollection => 'എൻ്റെ വാക്യ ശേഖരം';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

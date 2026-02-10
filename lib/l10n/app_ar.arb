@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "هل أنت متأكد أنك تريد حذف هذه المحادثة؟\nلا يمكنك استعادة المحادثات المحذوفة.",
   "notSelected": "- لم يتم الاختيار -",
   "myWordbook": "مفرداتي",
-  "mySentenceCollection": "مجموعتي من الجمل"
+  "mySentenceCollection": "مجموعتي من الجمل",
+  "newSubjectName": "اسم جديد للمجموعة/الجمل",
+  "enterNewSubjectName": "أدخل اسمًا جديدًا",
+  "addNewSubject": "إضافة اسم جديد",
+  "selectExistingSubject": "اختيار اسم موجود",
+  "addTagHint": "إضافة علامة..."
 }

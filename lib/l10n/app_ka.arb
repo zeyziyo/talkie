@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "გსურთ ამ საუბრის წაშლა?\nწაშლილი საუბრის აღდგენა შეუძლებელია.",
   "notSelected": "- არ არის არჩეული -",
   "myWordbook": "ჩემი სიტყვების წიგნი",
-  "mySentenceCollection": "ჩემი წინადადებების კრებული"
+  "mySentenceCollection": "ჩემი წინადადებების კრებული",
+  "newSubjectName": "ახალი თემატური ლექსიკონის/ფრაზების კრებულის სათაური",
+  "enterNewSubjectName": "ახალი სათაურის შეყვანა",
+  "addNewSubject": "ახალი სათაურის დამატება",
+  "selectExistingSubject": "არსებული სათაურის არჩევა",
+  "addTagHint": "ტეგის დამატება..."
 }

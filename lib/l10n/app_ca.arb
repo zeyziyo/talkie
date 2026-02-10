@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Vols suprimir aquesta conversa?\nNo podràs recuperar-la.",
   "notSelected": "- Sense seleccionar -",
   "myWordbook": "El meu vocabulari",
-  "mySentenceCollection": "La meva col·lecció de frases"
+  "mySentenceCollection": "La meva col·lecció de frases",
+  "newSubjectName": "Nou títol de la llista de vocabulari/frases",
+  "enterNewSubjectName": "Introdueix un títol nou",
+  "addNewSubject": "Afegeix un títol nou",
+  "selectExistingSubject": "Selecciona un títol existent",
+  "addTagHint": "Afegeix una etiqueta..."
 }

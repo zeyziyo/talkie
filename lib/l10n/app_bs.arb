@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Želite li izbrisati ovaj razgovor?\nIzbrisani razgovori se ne mogu vratiti.",
   "notSelected": "- Nije odabrano -",
   "myWordbook": "Moja riznica riječi",
-  "mySentenceCollection": "Moja zbirka rečenica"
+  "mySentenceCollection": "Moja zbirka rečenica",
+  "newSubjectName": "Novi naslov rječnika/zbirke rečenica",
+  "enterNewSubjectName": "Unesite novi naslov",
+  "addNewSubject": "Dodaj novi naslov",
+  "selectExistingSubject": "Odaberite postojeći naslov",
+  "addTagHint": "Dodaj oznaku..."
 }

@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "คุณต้องการลบการสนทนานี้หรือไม่\nการสนทนาที่ถูกลบจะไม่สามารถกู้คืนได้",
   "notSelected": "- ไม่ได้เลือก -",
   "myWordbook": "คลังคำศัพท์ของฉัน",
-  "mySentenceCollection": "คลังประโยคของฉัน"
+  "mySentenceCollection": "คลังประโยคของฉัน",
+  "newSubjectName": "ชื่อชุดคำศัพท์/วลีใหม่",
+  "enterNewSubjectName": "ใส่ชื่อใหม่",
+  "addNewSubject": "เพิ่มชื่อใหม่",
+  "selectExistingSubject": "เลือกชื่อที่มีอยู่",
+  "addTagHint": "เพิ่มแท็ก..."
 }

@@ -36,7 +36,8 @@ class AppLocalizationsIs extends AppLocalizations {
       '• Efnisval: Veldu ákveðið efnissett eða \'Yfirfara allt\'\n• Snúa korti við: Athugaðu þýðingu með \'Sýna/fela\' (sjálfvirk námsathugun)\n• Hlustun: Spilaðu setningu TTS\n• Nám lokið: Merktu sem lokið með hakmerki(V)\n• Eyða: Haltu korti inni til að eyða færslu\n• Leitarskilyrði: Síaðu eftir merki, nýlegum hlutum eða upphafsstöfum';
 
   @override
-  String get helpMode3Desc => 'Æfðu þig með því að hlusta og endurtaka.';
+  String get helpMode3Desc =>
+      'Hlustaðu á setninguna og æfðu framburð með því að endurtaka (Shadowing).';
 
   @override
   String get helpMode3Details =>
@@ -44,7 +45,7 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Talaðu við persónur til að æfa raunveruleg samtöl.';
+      'Æfðu raunverulegar samræður með því að spjalla við AI persónu.';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +412,10 @@ class AppLocalizationsIs extends AppLocalizations {
       'Ýttu á efnissettstáknið (📚) á efsta appbarnum til að velja efni til að læra.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Ýttu á efnissettstáknið (📚) á efsta appbarnum til að velja efni til að æfa.';
+
+  @override
   String get tutorialM2ListTitle => 'Námslisti';
 
   @override
@@ -419,10 +424,6 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Efnisval';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Ýttu á efnissettstáknið (📚) á efsta appbarnum til að velja efni til að æfa.';
 
   @override
   String get tutorialM3IntervalTitle => 'Millibilsstilling';
@@ -795,7 +796,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get chatAiChat => 'Spjall';
 
   @override
-  String get tutorialAiChatTitle => 'Spjall';
+  String get tutorialAiChatTitle => 'AI spjall';
 
   @override
   String get tutorialAiChatDesc =>
@@ -888,6 +889,12 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Búið';
+
+  @override
+  String get titleTagSelection => 'Titilmerki (safn)';
+
+  @override
+  String get generalTags => 'Almenn merki';
 
   @override
   String get tagSelection => 'Merkjaval';
@@ -987,4 +994,28 @@ class AppLocalizationsIs extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Viltu eyða þessu samtali?\nEydd samtöl er ekki hægt að endurheimta.';
+
+  @override
+  String get notSelected => '- Enginn valinn -';
+
+  @override
+  String get myWordbook => 'Orðaforði minn';
+
+  @override
+  String get mySentenceCollection => 'Setningasafnið mitt';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

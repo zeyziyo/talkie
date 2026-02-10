@@ -36,14 +36,16 @@ class AppLocalizationsBn extends AppLocalizations {
       '• নির্বাচন: সেট বা \'সব রিভিউ\' বেছে নিন\n• উল্টান: অনুবাদ \'দেখান/লুকান\'\n• শুনুন: বাক্যের জন্য TTS চালান\n• চিহ্নিত করুন: সম্পন্ন হলে টিক (V) দিন\n• মুছুন: মুছতে কার্ড টিপে ধরে রাখুন\n• ফিল্টার: সব দেখুন বা উপকরণ অনুযায়ী';
 
   @override
-  String get helpMode3Desc => 'শুনে এবং অনুকরণ করে অনুশীলন করুন।';
+  String get helpMode3Desc =>
+      'একটি বাক্য শুনে বলার (শ্যাডোয়িং) মাধ্যমে উচ্চারণ অনুশীলন করুন।';
 
   @override
   String get helpMode3Details =>
       '• নির্বাচন: প্যাকেজ বেছে নিন\n• বিরতি: [-] [+] অপেক্ষার সময় (৩সে-৬০সে)\n• শুরু/বন্ধ: সেশন নিয়ন্ত্রণ করুন\n• বলুন: অডিও শুনুন এবং পুনরাবৃত্তি করুন\n• স্কোর: নির্ভুলতা (০-১০০)\n• পুনরাবৃত্তি: ভয়েস শনাক্ত না হলে বোতাম';
 
   @override
-  String get helpModeChatDesc => 'আসল কথোপকথন অনুশীলনের জন্য চ্যাট করুন।';
+  String get helpModeChatDesc =>
+      'AI ব্যক্তিত্বের সাথে কথোপকথনের মাধ্যমে বাস্তব কথোপকথন অনুশীলন করুন।';
 
   @override
   String get helpModeChatDetails =>
@@ -409,6 +411,9 @@ class AppLocalizationsBn extends AppLocalizations {
       'উপকরণ নির্বাচন করুন বা \'সব রিভিউ\' টগল করুন।';
 
   @override
+  String get tutorialM3SelectDesc => 'কথা বলার অনুশীলনের জন্য সেট বেছে নিন।';
+
+  @override
   String get tutorialM2ListTitle => 'অধ্যয়ন তালিকা';
 
   @override
@@ -417,9 +422,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'উপকরণ নির্বাচন';
-
-  @override
-  String get tutorialM3SelectDesc => 'কথা বলার অনুশীলনের জন্য সেট বেছে নিন।';
 
   @override
   String get tutorialM3IntervalTitle => 'বিরতি';
@@ -787,7 +789,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get chatAiChat => 'চ্যাট';
 
   @override
-  String get tutorialAiChatTitle => 'চ্যাট';
+  String get tutorialAiChatTitle => 'AI চ্যাট';
 
   @override
   String get tutorialAiChatDesc =>
@@ -880,6 +882,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'শিরোনাম ট্যাগ (সংগ্রহ)';
+
+  @override
+  String get generalTags => 'সাধারণ ট্যাগ';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -979,4 +987,28 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'আপনি কি এই কথোপকথনটি মুছে ফেলতে চান?\nমোছা কথোপকথন পুনরুদ্ধার করা যাবে না।';
+
+  @override
+  String get notSelected => '- নির্বাচন করা হয়নি -';
+
+  @override
+  String get myWordbook => 'আমার শব্দভাণ্ডার';
+
+  @override
+  String get mySentenceCollection => 'আমার বাক্য সংগ্রহ';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

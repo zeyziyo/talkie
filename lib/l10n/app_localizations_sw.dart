@@ -36,7 +36,8 @@ class AppLocalizationsSw extends AppLocalizations {
       '• Chagua: Chagua seti au \'Pitia Zote\'\n• Geuza: \'Onyesha/Ficha\' tafsiri\n• Sikiliza: Cheza TTS kwa sentensi\n• Weka alama: Tiki (V) kwa zilizokamilika\n• Futa: Bonyeza kwa muda mrefu kufuta\n• Kichujio: Tazama zote au kwa nyenzo';
 
   @override
-  String get helpMode3Desc => 'Fanya mazoezi kwa kusikiliza na kurudia.';
+  String get helpMode3Desc =>
+      'Sikiliza sentensi na urudie (Shadowing) ili kufanya mazoezi ya matamshi.';
 
   @override
   String get helpMode3Details =>
@@ -44,7 +45,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Zungumza na wahusika kufanya mazoezi ya mazungumzo.';
+      'Fanya mazoezi ya mazungumzo halisi kwa kuzungumza na AI.';
 
   @override
   String get helpModeChatDetails =>
@@ -408,6 +409,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialM2SelectDesc => 'Chagua nyenzo au \'Pitia Zote\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Chagua seti kwa mazoezi ya kuzungumza.';
+
+  @override
   String get tutorialM2ListTitle => 'Orodha ya Kusoma';
 
   @override
@@ -416,9 +420,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Chagua Nyenzo';
-
-  @override
-  String get tutorialM3SelectDesc => 'Chagua seti kwa mazoezi ya kuzungumza.';
 
   @override
   String get tutorialM3IntervalTitle => 'Muda';
@@ -785,10 +786,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get chatUntitled => 'Untitled Conversation';
 
   @override
-  String get chatAiChat => 'Gumzo';
+  String get chatAiChat => 'Ongea';
 
   @override
-  String get tutorialAiChatTitle => 'Gumzo';
+  String get tutorialAiChatTitle => 'Ongea na AI';
 
   @override
   String get tutorialAiChatDesc =>
@@ -881,6 +882,12 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Tagi ya kichwa (Maktaba)';
+
+  @override
+  String get generalTags => 'Tagi za jumla';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -980,4 +987,28 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Unataka kufuta mazungumzo haya?\nHazitaweza kurejeshwa.';
+
+  @override
+  String get notSelected => '- Haijachaguliwa -';
+
+  @override
+  String get myWordbook => 'Kitabu Changu cha Maneno';
+
+  @override
+  String get mySentenceCollection => 'Mkusanyiko Wangu wa Sentensi';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

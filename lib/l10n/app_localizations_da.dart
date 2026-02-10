@@ -37,14 +37,16 @@ class AppLocalizationsDa extends AppLocalizations {
       '• Vælg: Vælg sæt eller \'Alle\'\n• Vend: \'Vis/Skjul\' oversættelse\n• Lyt: Afspil TTS for sætning\n• Marker: Flueben (V) for færdige\n• Slet: Langt tryk for at slette\n• Filter: Vis alle eller efter materiale';
 
   @override
-  String get helpMode3Desc => 'Øv dig ved at lytte og gentage.';
+  String get helpMode3Desc =>
+      'Øv din udtale ved at lytte til sætninger og gentage dem (Shadowing).';
 
   @override
   String get helpMode3Details =>
       '• Vælg: Vælg pakke\n• Interval: [-] [+] ventetid (3s-60s)\n• Start/Stop: Kontroller session\n• Tal: Lyt og gentag\n• Score: Nøjagtighed (0-100)\n• Prøv igen: Knap hvis stemme ej fundet';
 
   @override
-  String get helpModeChatDesc => 'Tal med personaer for at øve rigtig samtale.';
+  String get helpModeChatDesc =>
+      'Øv dig i praktisk samtale ved at tale med en AI-persona.';
 
   @override
   String get helpModeChatDetails =>
@@ -406,6 +408,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get tutorialM2SelectDesc => 'Vælg materiale eller \'Gennemgå Alle\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Vælg sæt til taleøvelse.';
+
+  @override
   String get tutorialM2ListTitle => 'Studieliste';
 
   @override
@@ -414,9 +419,6 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Vælg Materiale';
-
-  @override
-  String get tutorialM3SelectDesc => 'Vælg sæt til taleøvelse.';
 
   @override
   String get tutorialM3IntervalTitle => 'Interval';
@@ -782,7 +784,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get chatAiChat => 'Chat';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'AI Chat';
 
   @override
   String get tutorialAiChatDesc =>
@@ -875,6 +877,12 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Titel-tag (samling)';
+
+  @override
+  String get generalTags => 'Generelle tags';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -974,4 +982,28 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Er du sikker på, at du vil slette denne samtale?\nSlettede samtaler kan ikke gendannes.';
+
+  @override
+  String get notSelected => '- Ikke valgt -';
+
+  @override
+  String get myWordbook => 'Min ordbog';
+
+  @override
+  String get mySentenceCollection => 'Min sætningssamling';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

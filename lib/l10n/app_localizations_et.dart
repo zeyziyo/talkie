@@ -37,7 +37,8 @@ class AppLocalizationsEt extends AppLocalizations {
       '• Materjali valik: vali konkreetne materjalikogum või \"Kogu kordamine\"\n• Kaardi pööramine: tõlke kontrollimiseks \"Näita/peida\" (automaatne õppimise kontroll)\n• Kuula: lause TTS taasesitus\n• Õppimine lõpetatud: märgi õppimine lõpetatuks linnukesega (V)\n• Kustuta: kirje kustutamiseks hoia kaarti all\n• Otsingutingimused: filtreeri siltide, hiljutiste üksuste või algustähe järgi';
 
   @override
-  String get helpMode3Desc => 'Harjutage kuulates ja korrates.';
+  String get helpMode3Desc =>
+      'Harjuta hääldust, kuulates lauseid ja neid korrates (varjutades).';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Rääkige personadega tõelise vestluse harjutamiseks.';
+      'Harjuta vestlust tehisintellekti persooniga suheldes.';
 
   @override
   String get helpModeChatDetails =>
@@ -413,6 +414,10 @@ class AppLocalizationsEt extends AppLocalizations {
       'Õpitava materjali valimiseks vajuta ülemise rakenduseriba materjalikogumi ikooni (📚).';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Harjutatava materjali valimiseks vajuta ülemise rakenduseriba materjalikogumi ikooni (📚).';
+
+  @override
   String get tutorialM2ListTitle => 'Õppimisnimekiri';
 
   @override
@@ -421,10 +426,6 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Materjali valik';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Harjutatava materjali valimiseks vajuta ülemise rakenduseriba materjalikogumi ikooni (📚).';
 
   @override
   String get tutorialM3IntervalTitle => 'Intervalli seadistus';
@@ -744,7 +745,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get reviewModeTitle => 'Kordamine';
 
   @override
-  String get practiceModeTitle => 'Harjutamine';
+  String get practiceModeTitle => 'Harjuta';
 
   @override
   String get chatHistoryTitle => 'Vestluste ajalugu';
@@ -794,7 +795,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get chatAiChat => 'Vestlus';
 
   @override
-  String get tutorialAiChatTitle => 'Vestlus';
+  String get tutorialAiChatTitle => 'AI vestlus';
 
   @override
   String get tutorialAiChatDesc => 'Harjuta AI personažiga reaalset vestlust.';
@@ -885,6 +886,12 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Lõpetatud';
+
+  @override
+  String get titleTagSelection => 'Pealkirjasilt (arhiiv)';
+
+  @override
+  String get generalTags => 'Üldised sildid';
 
   @override
   String get tagSelection => 'Sildi valik';
@@ -984,4 +991,28 @@ class AppLocalizationsEt extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Kas sa oled kindel, et soovid selle vestluse kustutada?\nKustutatud vestlust ei saa taastada.';
+
+  @override
+  String get notSelected => '- Pole valitud -';
+
+  @override
+  String get myWordbook => 'Minu sõnastik';
+
+  @override
+  String get mySentenceCollection => 'Minu lausete kogu';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

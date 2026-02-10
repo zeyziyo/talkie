@@ -35,14 +35,14 @@ class AppLocalizationsJa extends AppLocalizations {
       '• 教材選択: 上部メニューから学習教材を選択または「全復習」\n• カード裏返し: 「表示/隠す」ボタンで翻訳を確認\n• 聞く: 「聞く」ボタンで該当する文章を再再生\n• 学習チェック: 完了した文章はチェックマーク (V)\n• 削除: カードを長押しすると削除ダイアログを表示\n• フィルタ: 全記録表示または学習教材別に並べ替え';
 
   @override
-  String get helpMode3Desc => '聞いてシャドーイングすることで練習します。';
+  String get helpMode3Desc => '文章を聞いて、シャドーイングで発音を練習してください。';
 
   @override
   String get helpMode3Details =>
       '• 教材選択: 学習する教材パックを選択\n• 間隔調整: [-] [+] ボタンで文章間の待機時間を設定 (3秒〜60秒)\n• 開始/停止: 再生ボタンでシャドーイングセッションを制御\n• 話す: ネイティブの音声を聞いて真似て話す\n• フィードバック: 発音の正確さをスコア (0-100) と色で表示 (緑/橙/赤)\n• 再試行: 認識失敗時に再試行ボタンを使用';
 
   @override
-  String get helpModeChatDesc => 'ペルソナと対話して実戦会話を練習します。';
+  String get helpModeChatDesc => 'AIペルソナと会話して、実践的な会話を練習してください。';
 
   @override
   String get helpModeChatDetails =>
@@ -404,6 +404,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialM2SelectDesc => '学習する教材を選択するか、全復習モードに切り替えます。';
 
   @override
+  String get tutorialM3SelectDesc => 'スピーキング練習を行う教材セットを選択してください。';
+
+  @override
   String get tutorialM2ListTitle => '学習リスト';
 
   @override
@@ -411,9 +414,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => '教材選択';
-
-  @override
-  String get tutorialM3SelectDesc => 'スピーキング練習を行う教材セットを選択してください。';
 
   @override
   String get tutorialM3IntervalTitle => '間隔設定';
@@ -776,7 +776,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get chatAiChat => 'チャット';
 
   @override
-  String get tutorialAiChatTitle => 'チャット';
+  String get tutorialAiChatTitle => 'AIチャット';
 
   @override
   String get tutorialAiChatDesc => 'AIペルソナと実践的な会話を練習しましょう。';
@@ -866,6 +866,12 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'タイトルのタグ（資料集）';
+
+  @override
+  String get generalTags => '一般タグ';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -964,4 +970,28 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get confirmDeleteConversation => 'この会話を削除しますか？\n削除した会話は復元できません。';
+
+  @override
+  String get notSelected => 'ー選択されていませんー';
+
+  @override
+  String get myWordbook => 'マイ単語帳';
+
+  @override
+  String get mySentenceCollection => 'マイ例文集';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Êtes-vous sûr de vouloir supprimer cette conversation ?\nElle ne pourra pas être récupérée.",
   "notSelected": "- Non sélectionné -",
   "myWordbook": "Mon vocabulaire",
-  "mySentenceCollection": "Mes phrases"
+  "mySentenceCollection": "Mes phrases",
+  "newSubjectName": "Nouveau titre de sujet/recueil",
+  "enterNewSubjectName": "Entrer un nouveau titre",
+  "addNewSubject": "Ajouter un nouveau titre",
+  "selectExistingSubject": "Sélectionner un titre existant",
+  "addTagHint": "Ajouter un tag..."
 }

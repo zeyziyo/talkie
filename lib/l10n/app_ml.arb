@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "നിങ്ങൾക്ക് ഈ സംഭാഷണം ഇല്ലാതാക്കണോ?\nഇല്ലാതാക്കിയ സംഭാഷണം വീണ്ടെടുക്കാൻ കഴിയില്ല.",
   "notSelected": "-ഒന്നും തിരഞ്ഞെടുത്തിട്ടില്ല-",
   "myWordbook": "എൻ്റെ പദാവലി",
-  "mySentenceCollection": "എൻ്റെ വാക്യ ശേഖരം"
+  "mySentenceCollection": "എൻ്റെ വാക്യ ശേഖരം",
+  "newSubjectName": "പുതിയ പദാവലി/വാക്യ ശേഖരത്തിന്റെ പേര്",
+  "enterNewSubjectName": "പുതിയ പേര് നൽകുക",
+  "addNewSubject": "പുതിയ പേര് ചേർക്കുക",
+  "selectExistingSubject": "നിലവിലുള്ള പേര് തിരഞ്ഞെടുക്കുക",
+  "addTagHint": "ടാഗ് ചേർക്കുക..."
 }

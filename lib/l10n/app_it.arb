@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Vuoi eliminare questa conversazione?\nNon sarà possibile recuperarla.",
   "notSelected": "- Non selezionato -",
   "myWordbook": "Il mio quaderno di parole",
-  "mySentenceCollection": "La mia raccolta di frasi"
+  "mySentenceCollection": "La mia raccolta di frasi",
+  "newSubjectName": "Nuovo titolo quaderno/frasario",
+  "enterNewSubjectName": "Inserisci nuovo titolo",
+  "addNewSubject": "Aggiungi nuovo titolo",
+  "selectExistingSubject": "Seleziona titolo esistente",
+  "addTagHint": "Aggiungi tag..."
 }

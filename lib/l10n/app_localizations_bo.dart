@@ -37,7 +37,8 @@ class AppLocalizationsBo extends AppLocalizations {
       '• Select Material: Choose specific set or \'Review All\'\n• Flip Card: Use \'Show/Hide\' to check translation\n• Listen: Play TTS for specific sentence\n• Mark Studied: Checkmark (V) for completed items\n• Delete: Long-press card to remove record\n• Search Conditions: Filter by Tags, Recent N items, or Start character';
 
   @override
-  String get helpMode3Desc => 'ཉན་པ་དང་ལད་མོ་བྱས་ནས་སྦྱོང་བརྡར་བྱེད།';
+  String get helpMode3Desc =>
+      'སྐད་ཆ་ཉན་ནས་ཕྱིར་ཟློས་(Shadowing)བྱས་ཏེ་སྒྲ་གདངས་སྦྱོང་།';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'དངོས་ཡོད་ཁ་བརྡ་སྦྱོང་བརྡར་བྱེད་པར་ཁ་བརྡ་བྱེད།';
+      'AI གདོང་རིས་དང་མཉམ་དུ་སྐད་ཆ་བཤད་ནས་དངོས་སྦྱོང་གི་ཁ་བརྡ་སྦྱོང་།';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +412,10 @@ class AppLocalizationsBo extends AppLocalizations {
       'Choose study materials or switch to \'Review All\'.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Choose a material set for speaking practice.';
+
+  @override
   String get tutorialM2ListTitle => 'Study List';
 
   @override
@@ -419,10 +424,6 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Select Material';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Choose a material set for speaking practice.';
 
   @override
   String get tutorialM3IntervalTitle => 'Interval';
@@ -792,7 +793,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String get chatAiChat => 'ཁ་བརྡ།';
 
   @override
-  String get tutorialAiChatTitle => 'ཁ་བརྡ།';
+  String get tutorialAiChatTitle => 'AI ཁ་བརྡ།';
 
   @override
   String get tutorialAiChatDesc =>
@@ -885,6 +886,12 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'མགོ་བརྗོད་ཀྱི་རྟགས།(ཡིག་ཚགས།)';
+
+  @override
+  String get generalTags => 'སྤྱིར་བཏང་གི་རྟགས།';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -984,4 +991,28 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'ཁྱེད་ཀྱིས་གླེང་མོལ་འདི་དོར་འདོད་དམ།\nགླེང་མོལ་བསུབས་པ་ཕྱིར་སློག་བྱེད་མི་ཐུབ།';
+
+  @override
+  String get notSelected => '- གདམ་ག་བྱས་མེད། -';
+
+  @override
+  String get myWordbook => 'ངའི་ཐ་སྙད་ཕྱོགས་བསྡུས།';
+
+  @override
+  String get mySentenceCollection => 'ངའི་ཚིག་གྲུབ་ཕྱོགས་བསྡུས།';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

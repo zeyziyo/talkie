@@ -18,33 +18,89 @@ class MetadataDialog extends StatefulWidget {
 }
 
 class _MetadataDialogState extends State<MetadataDialog> {
+  late TextEditingController _newSubjectController;
   late TextEditingController _tagController;
   late TextEditingController _noteController;
-  late TextEditingController _rootController;
+  late TextEditingController _rootController; // Restored
   late List<String> _tags;
+  String? _selectedTitleTag;
+  List<String> _availableTitleTags = [];
 
   @override
   void initState() {
     super.initState();
     _tags = List.from(widget.currentTags);
+    _newSubjectController = TextEditingController();
     _tagController = TextEditingController();
     _noteController = TextEditingController();
-    _rootController = TextEditingController();
-    
+    _rootController = TextEditingController(); // Restored
+
     // Initialize controllers with current AppState values
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final appState = Provider.of<AppState>(context, listen: false);
       _noteController.text = appState.note;
-      _rootController.text = appState.sourceRoot;
+      _rootController.text = appState.sourceRoot; // Restored
+
+      // Load available title tags (Subjects except 'Basic')
+      final subjects = appState.studyMaterials
+          .map((m) => m['subject'] as String)
+          .where((s) => s != 'Basic')
+          .toSet()
+          .toList();
+      subjects.sort();
+      _availableTitleTags = subjects;
+
+      // Set initial selected title tag from AppState
+      if (appState.selectedSaveSubject != 'Basic' && _availableTitleTags.contains(appState.selectedSaveSubject)) {
+        _selectedTitleTag = appState.selectedSaveSubject;
+      }
+      
+      // Phase 83: Set default new subject name based on type if no valid selection
+      if (_selectedTitleTag == null) {
+          _newSubjectController.text = appState.recordTypeFilter == 'word' 
+              ? AppLocalizations.of(context)!.myWordbook 
+              : AppLocalizations.of(context)!.mySentenceCollection;
+      }
+
+      setState(() {});
     });
   }
 
   @override
   void dispose() {
+    _newSubjectController.dispose();
     _tagController.dispose();
     _noteController.dispose();
-    _rootController.dispose();
+    _rootController.dispose(); // Restored
     super.dispose();
+  }
+
+  void _addNewSubject() {
+    final newSubject = _newSubjectController.text.trim();
+    if (newSubject.isNotEmpty) {
+      final appState = Provider.of<AppState>(context, listen: false);
+      setState(() {
+        if (!_availableTitleTags.contains(newSubject)) {
+          _availableTitleTags.add(newSubject);
+          _availableTitleTags.sort();
+        }
+        _selectedTitleTag = newSubject;
+        _newSubjectController.clear();
+      });
+      // Update AppState immediately
+      appState.setSelectedSaveSubject(newSubject);
+    }
+  }
+
+  void _addTag() {
+    final t = _tagController.text.trim();
+    if (t.isNotEmpty && !_tags.contains(t)) {
+      setState(() {
+        _tags.add(t);
+      });
+      widget.onTagsChanged(_tags);
+      _tagController.clear();
+    }
   }
 
   @override
@@ -52,28 +108,75 @@ class _MetadataDialogState extends State<MetadataDialog> {
     final l10n = AppLocalizations.of(context)!;
     final appState = Provider.of<AppState>(context);
 
-    // Filter "Total Tags" (exclude already selected ones)
-    final availableTotalTags = appState.availableTags
-        .where((t) => !_tags.contains(t))
-        .toList();
-
     return AlertDialog(
-      title: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(l10n.metadataDialogTitle),
-        ],
-      ),
+      title: Text(l10n.metadataDialogTitle),
       content: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 1. Tags Section
-            Text('Tags', style: Theme.of(context).textTheme.labelLarge),
+            // 1. New Subject Name (Row 1)
+            Text(l10n.newSubjectName, style: Theme.of(context).textTheme.labelMedium),
+            const SizedBox(height: 4),
+            Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _newSubjectController,
+                    decoration: InputDecoration(
+                      hintText: l10n.enterNewSubjectName,
+                      isDense: true,
+                      border: const OutlineInputBorder(),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                    ),
+                    onSubmitted: (_) => _addNewSubject(),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                IconButton(
+                  icon: const Icon(Icons.add_circle, color: Colors.blue),
+                  onPressed: _addNewSubject,
+                  tooltip: l10n.addNewSubject,
+                ),
+              ],
+            ),
+            const SizedBox(height: 16),
+
+            // 2. Existing Title Tag (Row 2)
+            Text(l10n.titleTagSelection, style: Theme.of(context).textTheme.labelMedium),
+            const SizedBox(height: 4),
+            DropdownButtonFormField<String>(
+              value: _selectedTitleTag,
+              decoration: const InputDecoration(
+                isDense: true,
+                border: OutlineInputBorder(),
+                contentPadding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                prefixIcon: Icon(Icons.folder_open, size: 20),
+              ),
+              hint: Text(l10n.selectExistingSubject),
+              items: _availableTitleTags.map((subject) {
+                return DropdownMenuItem(
+                  value: subject,
+                  child: Text(subject, overflow: TextOverflow.ellipsis),
+                );
+              }).toList(),
+              onChanged: (val) {
+                if (val != null) {
+                  setState(() {
+                    _selectedTitleTag = val;
+                  });
+                  appState.setSelectedSaveSubject(val);
+                }
+              },
+            ),
+            const SizedBox(height: 16),
+
+            // 3. General Tags (Row 3)
+            Text(l10n.generalTags, style: Theme.of(context).textTheme.labelMedium),
             const SizedBox(height: 4),
             Wrap(
               spacing: 4,
+              runSpacing: 4,
               children: _tags.map((tag) => Chip(
                 label: Text(tag, style: const TextStyle(fontSize: 11)),
                 onDeleted: () {
@@ -83,70 +186,47 @@ class _MetadataDialogState extends State<MetadataDialog> {
                   widget.onTagsChanged(_tags);
                 },
                 visualDensity: VisualDensity.compact,
+                padding: EdgeInsets.zero,
+                labelPadding: const EdgeInsets.symmetric(horizontal: 8),
               )).toList(),
             ),
-            
-            Row(
-              children: [
-                // Tag Input
-                Expanded(
-                  child: TextField(
-                    controller: _tagController,
-                    decoration: InputDecoration(
-                      hintText: '태그 입력',
-                      isDense: true,
-                      suffixIcon: IconButton(
-                        icon: const Icon(Icons.add, size: 20),
-                        onPressed: _addTag,
-                      ),
-                    ),
-                    onSubmitted: (_) => _addTag(),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-
-            // "Total Tags" Dropdown (Always Visible)
-            DropdownButtonFormField<String>(
+            const SizedBox(height: 4),
+            TextField(
+              controller: _tagController,
               decoration: InputDecoration(
-                labelText: '전체 태그 (자료집 제목) 선택',
+                hintText: l10n.addTagHint,
                 isDense: true,
-                contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                 border: const OutlineInputBorder(),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                suffixIcon: IconButton(
+                  icon: const Icon(Icons.add, size: 20),
+                  onPressed: _addTag,
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                ),
               ),
-              hint: const Text('기존 태그 추가'),
-              items: availableTotalTags.map((tag) {
-                return DropdownMenuItem(
-                  value: tag,
-                  child: Text(tag, overflow: TextOverflow.ellipsis),
-                );
-              }).toList(),
-              onChanged: (val) {
-                if (val != null) {
-                  setState(() {
-                    _tags.add(val);
-                  });
-                  widget.onTagsChanged(_tags);
-                }
-              },
+              onSubmitted: (_) => _addTag(),
             ),
-            
             const SizedBox(height: 16),
-            
-            // 2. Note Section
+
+            // 4. Note (Row 4)
+            Text(l10n.labelNote, style: Theme.of(context).textTheme.labelMedium),
+            const SizedBox(height: 4),
             TextField(
               controller: _noteController,
               decoration: InputDecoration(
-                labelText: l10n.labelNote,
                 hintText: l10n.tutorialContextDesc,
                 border: const OutlineInputBorder(),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                prefixIcon: const Icon(Icons.description, size: 20),
               ),
               onChanged: (val) => appState.setNote(val),
+              minLines: 1,
+              maxLines: 3,
             ),
             const SizedBox(height: 16),
 
-            // 3. Dynamic Fields based on Type & Mode
+            // 5. Dynamic Fields based on Type & Mode (Restored)
             // Root Word (Smart Autocomplete)
             if (appState.recordTypeFilter == 'word') ...[
                Builder(
@@ -164,6 +244,8 @@ class _MetadataDialogState extends State<MetadataDialog> {
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      Text(l10n.metadataRootWord, style: Theme.of(context).textTheme.labelMedium),
+                      const SizedBox(height: 4),
                       Autocomplete<String>(
                         optionsBuilder: (TextEditingValue textEditingValue) {
                           if (textEditingValue.text.isEmpty) {
@@ -186,10 +268,11 @@ class _MetadataDialogState extends State<MetadataDialog> {
                           return TextField(
                             controller: textEditingController,
                             focusNode: focusNode,
-                            decoration: InputDecoration(
-                              labelText: l10n.metadataRootWord,
-                              border: const OutlineInputBorder(),
-                              suffixIcon: const Icon(Icons.search),
+                            decoration: const InputDecoration(
+                              isDense: true,
+                              border: OutlineInputBorder(),
+                              contentPadding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                              suffixIcon: Icon(Icons.search, size: 20),
                             ),
                           );
                         },
@@ -241,24 +324,32 @@ class _MetadataDialogState extends State<MetadataDialog> {
 
                   if (categories.isEmpty) return const SizedBox.shrink();
 
-                  return DropdownButtonFormField<String>(
-                    value: categories.contains(appState.sourceFormType) ? appState.sourceFormType : null,
-                    decoration: InputDecoration(
-                      labelText: l10n.metadataFormType,
-                      border: const OutlineInputBorder(),
-                    ),
-                    items: categories.map((cat) {
-                      return DropdownMenuItem(
-                        value: cat,
-                        child: Text(_getLocalizedCategory(cat, l10n)),
-                      );
-                    }).toList(),
-                    onChanged: (val) {
-                      if (val != null) {
-                        appState.setSourceFormType(val);
-                        setState(() {}); // Rebuild for Root field visibility
-                      }
-                    },
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                       Text(l10n.metadataFormType, style: Theme.of(context).textTheme.labelMedium),
+                       const SizedBox(height: 4),
+                       DropdownButtonFormField<String>(
+                        value: categories.contains(appState.sourceFormType) ? appState.sourceFormType : null,
+                        decoration: const InputDecoration(
+                          isDense: true,
+                          border: OutlineInputBorder(),
+                          contentPadding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                        ),
+                        items: categories.map((cat) {
+                          return DropdownMenuItem(
+                            value: cat,
+                            child: Text(_getLocalizedCategory(cat, l10n)),
+                          );
+                        }).toList(),
+                        onChanged: (val) {
+                          if (val != null) {
+                            appState.setSourceFormType(val);
+                            setState(() {}); // Rebuild for Root field visibility
+                          }
+                        },
+                      ),
+                    ],
                   );
                 },
               ),
@@ -273,17 +364,6 @@ class _MetadataDialogState extends State<MetadataDialog> {
         ),
       ],
     );
-  }
-
-  void _addTag() {
-    final t = _tagController.text.trim();
-    if (t.isNotEmpty && !_tags.contains(t)) {
-      setState(() {
-        _tags.add(t);
-      });
-      widget.onTagsChanged(_tags);
-      _tagController.clear();
-    }
   }
 
   String _getLocalizedCategory(String cat, AppLocalizations l10n) {

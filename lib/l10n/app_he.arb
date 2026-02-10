@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "האם למחוק שיחה זו?\nלא ניתן יהיה לשחזר שיחה שנמחקה.",
   "notSelected": "- לא נבחר -",
   "myWordbook": "אוצר המילים שלי",
-  "mySentenceCollection": "אוסף המשפטים שלי"
+  "mySentenceCollection": "אוסף המשפטים שלי",
+  "newSubjectName": "כותרת מחברת/אוסף חדש",
+  "enterNewSubjectName": "הזן כותרת חדשה",
+  "addNewSubject": "הוסף כותרת חדשה",
+  "selectExistingSubject": "בחר כותרת קיימת",
+  "addTagHint": "הוסף תג..."
 }

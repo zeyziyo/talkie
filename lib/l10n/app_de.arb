@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Möchten Sie diese Konversation wirklich löschen?\nGelöschte Konversationen können nicht wiederhergestellt werden.",
   "notSelected": "- Keine Auswahl -",
   "myWordbook": "Mein Vokabelheft",
-  "mySentenceCollection": "Meine Satzsammlung"
+  "mySentenceCollection": "Meine Satzsammlung",
+  "newSubjectName": "Neuer Titel für Vokabelheft/Phrasensammlung",
+  "enterNewSubjectName": "Neuen Titel eingeben",
+  "addNewSubject": "Neuen Titel hinzufügen",
+  "selectExistingSubject": "Vorhandenen Titel auswählen",
+  "addTagHint": "Tag hinzufügen..."
 }

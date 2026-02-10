@@ -37,14 +37,16 @@ class AppLocalizationsLv extends AppLocalizations {
       '• Materiālu izvēle: atlasiet noteiktu materiālu kopumu vai \'Visu pārskatīšana\'\n• Kartītes apgriešana: pārbaudiet tulkojumu ar \'Rādīt/Slēpt\' (automātiska mācību pārbaude)\n• Klausīšanās: teikuma TTS atskaņošana\n• Mācīšanās pabeigta: atzīmējiet ar atzīmi (V), lai atzīmētu, ka mācīšanās ir pabeigta\n• Dzēšana: ilgi nospiediet kartīti, lai dzēstu ierakstu\n• Meklēšanas nosacījumi: filtrēšana pēc atzīmēm, jaunākajiem vienumiem, sākuma burtiem';
 
   @override
-  String get helpMode3Desc => 'Praktizējieties klausoties un atkārtojot.';
+  String get helpMode3Desc =>
+      'Klausieties teikumu un praktizējiet izrunu, to atdarot (Shadowing).';
 
   @override
   String get helpMode3Details =>
       '• Materiālu izvēle: atlasiet materiālu kopumu, ko mācīties\n• Intervāla iestatīšana: pielāgojiet gaidīšanas laiku starp teikumiem ar pogām [-] [+](3 s ~ 60 s)\n• Sākums/Pārtraukums: ēnošanas sesijas kontrole\n• Runāšana: klausieties un atkārtojiet balsi\n• Atsauksmes: precizitātes rādītājs (0–100) un krāsu displejs\n• Meklēšanas nosacījumi: filtrēšanas mērķi pēc atzīmēm, jaunākajiem vienumiem, sākuma burtiem';
 
   @override
-  String get helpModeChatDesc => 'Runājiet ar personāžiem īstai sarunai.';
+  String get helpModeChatDesc =>
+      'Praktizējiet sarunas reālajā dzīvē, sarunājoties ar AI personu.';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +413,10 @@ class AppLocalizationsLv extends AppLocalizations {
       'Nospiediet materiālu kopuma ikonu (📚) augšējā lietotnes joslā, lai izvēlētos materiālu, ko mācīties.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Nospiediet materiālu kopuma ikonu (📚) augšējā lietotnes joslā, lai izvēlētos materiālu, ko praktizēt.';
+
+  @override
   String get tutorialM2ListTitle => 'Mācību saraksts';
 
   @override
@@ -419,10 +425,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Materiāla izvēle';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Nospiediet materiālu kopuma ikonu (📚) augšējā lietotnes joslā, lai izvēlētos materiālu, ko praktizēt.';
 
   @override
   String get tutorialM3IntervalTitle => 'Intervāla iestatīšana';
@@ -795,7 +797,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get chatAiChat => 'Tērzēšana';
 
   @override
-  String get tutorialAiChatTitle => 'Tērzēšana';
+  String get tutorialAiChatTitle => 'AI tērzēšana';
 
   @override
   String get tutorialAiChatDesc =>
@@ -887,6 +889,12 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Pabeigts';
+
+  @override
+  String get titleTagSelection => 'Virsraksta atzīme (materiāli)';
+
+  @override
+  String get generalTags => 'Vispārīgās atzīmes';
 
   @override
   String get tagSelection => 'Atzīmju atlase';
@@ -986,4 +994,28 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Vai vēlaties izdzēst šo sarunu?\nIzdzēstās sarunas nevar atgūt.';
+
+  @override
+  String get notSelected => '- Nav atlasīts -';
+
+  @override
+  String get myWordbook => 'Mana vārdnīca';
+
+  @override
+  String get mySentenceCollection => 'Mana teikumu kolekcija';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

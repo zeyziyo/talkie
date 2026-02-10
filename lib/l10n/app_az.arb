@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Bu söhbəti silmək istədiyinizə əminsinizmi?\nSilinmiş söhbətləri geri qaytarmaq mümkün deyil.",
   "notSelected": "- Seçilməyib -",
   "myWordbook": "Mənim Söz Kitabım",
-  "mySentenceCollection": "Mənim Cümlə Kolleksiyam"
+  "mySentenceCollection": "Mənim Cümlə Kolleksiyam",
+  "newSubjectName": "Yeni Mövzu Adı",
+  "enterNewSubjectName": "Yeni ad daxil edin",
+  "addNewSubject": "Yeni ad əlavə edin",
+  "selectExistingSubject": "Mövcud adı seçin",
+  "addTagHint": "Etiket əlavə edin..."
 }

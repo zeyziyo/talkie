@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "ይህን ውይይት መሰረዝ ይፈልጋሉ?\nየተሰረዙ ንግግሮችን መልሶ ማግኘት አይቻልም።",
   "notSelected": "- አልተመረጠም - ",
   "myWordbook": "የቃላት መምረጫ",
-  "mySentenceCollection": "የዓረፍተ ነገር ስብስብ"
+  "mySentenceCollection": "የዓረፍተ ነገር ስብስብ",
+  "newSubjectName": "አዲስ የቃላት ዝርዝር/ሐረግ ርዕስ",
+  "enterNewSubjectName": "አዲስ ርዕስ ያስገቡ",
+  "addNewSubject": "አዲስ ርዕስ ያክሉ",
+  "selectExistingSubject": "ያለውን ርዕስ ይምረጡ",
+  "addTagHint": "መለያ ያክሉ..."
 }

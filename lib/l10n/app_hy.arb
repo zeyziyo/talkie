@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Ցանկանու՞մ եք ջնջել այս զրույցը:\nՋնջված զրույցները հնարավոր չէ վերականգնել:",
   "notSelected": "- Ընտրված չէ -",
   "myWordbook": "Իմ բառարանը",
-  "mySentenceCollection": "Իմ նախադասությունների հավաքածուն"
+  "mySentenceCollection": "Իմ նախադասությունների հավաքածուն",
+  "newSubjectName": "Նոր բառարան/նախադասությունների գիրք",
+  "enterNewSubjectName": "Մուտքագրեք նոր վերնագիր",
+  "addNewSubject": "Ավելացնել նոր վերնագիր",
+  "selectExistingSubject": "Ընտրել առկա վերնագիրը",
+  "addTagHint": "Ավելացնել թեգ..."
 }

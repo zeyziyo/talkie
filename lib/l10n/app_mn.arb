@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Та энэ яриаг устгах уу?\nУстгасан яриаг сэргээх боломжгүй.",
   "notSelected": "- Сонгоогүй -",
   "myWordbook": "Миний үгийн сан",
-  "mySentenceCollection": "Миний өгүүлбэрийн цуглуулга"
+  "mySentenceCollection": "Миний өгүүлбэрийн цуглуулга",
+  "newSubjectName": "Шинэ нэр томьёоны сангийн нэр",
+  "enterNewSubjectName": "Шинэ нэр оруулна уу",
+  "addNewSubject": "Шинэ нэр нэмэх",
+  "selectExistingSubject": "Одоо байгаа нэрийг сонгох",
+  "addTagHint": "Тэмдэг нэмэх..."
 }

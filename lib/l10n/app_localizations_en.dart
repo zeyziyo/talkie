@@ -38,7 +38,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpMode3Desc =>
-      'Practice by listening to and shadowing sentences.';
+      'Practice your pronunciation by listening to and shadowing sentences.';
 
   @override
   String get helpMode3Details =>
@@ -46,7 +46,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Talk to personas to practice real conversation and save useful sentences.';
+      'Practice real-world conversations by chatting with an AI persona.';
 
   @override
   String get helpModeChatDetails =>
@@ -412,6 +412,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Choose study materials or switch to \'Review All\'.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Choose a material set for speaking practice.';
+
+  @override
   String get tutorialM2ListTitle => 'Practice List';
 
   @override
@@ -420,10 +424,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Select Material';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Choose a material set for speaking practice.';
 
   @override
   String get tutorialM3IntervalTitle => 'Interval';
@@ -744,7 +744,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get reviewModeTitle => 'Review';
 
   @override
-  String get practiceModeTitle => 'Practice';
+  String get practiceModeTitle => 'Speaking Practice';
 
   @override
   String get chatHistoryTitle => 'Conversation History';
@@ -793,7 +793,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chatAiChat => 'Chat';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'AI Chat';
 
   @override
   String get tutorialAiChatDesc =>
@@ -886,6 +886,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Title Tags (Materials)';
+
+  @override
+  String get generalTags => 'General Tags';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -985,4 +991,28 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Are you sure you want to delete this conversation?\nThis action cannot be undone.';
+
+  @override
+  String get notSelected => '- Not Selected -';
+
+  @override
+  String get myWordbook => 'My Wordbook';
+
+  @override
+  String get mySentenceCollection => 'My Sentence Collection';
+
+  @override
+  String get newSubjectName => 'New Subject Name';
+
+  @override
+  String get enterNewSubjectName => 'Enter new subject name';
+
+  @override
+  String get addNewSubject => 'Add New Subject';
+
+  @override
+  String get selectExistingSubject => 'Select Existing Subject';
+
+  @override
+  String get addTagHint => 'Add Tag...';
 }

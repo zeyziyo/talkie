@@ -36,7 +36,8 @@ class AppLocalizationsFi extends AppLocalizations {
       '• Valitse: Valitse setti tai \'Kaikki\'\n• Käännä: \'Näytä/Piilota\' käännös\n• Kuuntele: Toista TTS lauseelle\n• Merkitse: Rasti (V) valmiille\n• Poista: Pitkä painallus poistaaksesi\n• Suodatin: Kaikki tai materiaalin mukaan';
 
   @override
-  String get helpMode3Desc => 'Harjoittele kuuntelemalla ja toistamalla.';
+  String get helpMode3Desc =>
+      'Harjoittele ääntämistä kuuntelemalla ja toistamalla lauseita (varjostus).';
 
   @override
   String get helpMode3Details =>
@@ -44,7 +45,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Puhu personoille harjoitellaksesi oikeaa keskustelua.';
+      'Harjoittele käytännön keskustelua keskustelemalla tekoälypersoonan kanssa.';
 
   @override
   String get helpModeChatDetails =>
@@ -407,6 +408,9 @@ class AppLocalizationsFi extends AppLocalizations {
       'Valitse materiaali tai \'Kertaa Kaikki\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Valitse setti puheharjoitukseen.';
+
+  @override
   String get tutorialM2ListTitle => 'Opiskelulista';
 
   @override
@@ -415,9 +419,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Valitse Materiaali';
-
-  @override
-  String get tutorialM3SelectDesc => 'Valitse setti puheharjoitukseen.';
 
   @override
   String get tutorialM3IntervalTitle => 'Aikaväli';
@@ -737,7 +738,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get reviewModeTitle => 'Review';
 
   @override
-  String get practiceModeTitle => 'Harjoitus';
+  String get practiceModeTitle => 'Harjoittelu';
 
   @override
   String get chatHistoryTitle => 'Conversation History';
@@ -783,10 +784,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get chatUntitled => 'Untitled Conversation';
 
   @override
-  String get chatAiChat => 'Chat';
+  String get chatAiChat => 'Chatti';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'AI-chatti';
 
   @override
   String get tutorialAiChatDesc =>
@@ -879,6 +880,12 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Otsikkotunniste (aineistokirjasto)';
+
+  @override
+  String get generalTags => 'Yleiset tunnisteet';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -978,4 +985,28 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Haluatko varmasti poistaa tämän keskustelun?\nPoistettuja keskusteluja ei voi palauttaa.';
+
+  @override
+  String get notSelected => '- Ei valittu -';
+
+  @override
+  String get myWordbook => 'Oma sanakirjani';
+
+  @override
+  String get mySentenceCollection => 'Oma lausekokoelmani';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

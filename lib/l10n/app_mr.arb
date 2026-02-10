@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "तुम्ही हे संभाषण हटवू इच्छिता?\nहटवलेले संभाषण पुनर्प्राप्त केले जाऊ शकत नाही.",
   "notSelected": "- निवडलेले नाही -",
   "myWordbook": "माझी शब्दसूची",
-  "mySentenceCollection": "माझे वाक्य संग्रह"
+  "mySentenceCollection": "माझे वाक्य संग्रह",
+  "newSubjectName": "नवीन शब्दसंग्रह/वाक्यसंग्रह शीर्षक",
+  "enterNewSubjectName": "नवीन शीर्षक प्रविष्ट करा",
+  "addNewSubject": "नवीन शीर्षक जोडा",
+  "selectExistingSubject": "विद्यमान शीर्षक निवडा",
+  "addTagHint": "टॅग जोडा..."
 }

@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Вы сапраўды жадаеце выдаліць гэтую размову?\nЯе нельга будзе аднавіць.",
   "notSelected": "- Не выбрана -",
   "myWordbook": "Мой слоўнік",
-  "mySentenceCollection": "Мой зборнік прапаноў"
+  "mySentenceCollection": "Мой зборнік прапаноў",
+  "newSubjectName": "Новая назва сшытка/падборкі фраз",
+  "enterNewSubjectName": "Увядзіце новую назву",
+  "addNewSubject": "Дадаць новую назву",
+  "selectExistingSubject": "Выберыце існуючую назву",
+  "addTagHint": "Дадаць тэг..."
 }

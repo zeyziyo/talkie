@@ -685,5 +685,10 @@
   "confirmDeleteConversation": "Unataka kufuta mazungumzo haya?\nHazitaweza kurejeshwa.",
   "notSelected": "- Haijachaguliwa -",
   "myWordbook": "Kitabu Changu cha Maneno",
-  "mySentenceCollection": "Mkusanyiko Wangu wa Sentensi"
+  "mySentenceCollection": "Mkusanyiko Wangu wa Sentensi",
+  "newSubjectName": "Jina jipya la mada/sentensi",
+  "enterNewSubjectName": "Ingiza jina jipya",
+  "addNewSubject": "Ongeza jina jipya",
+  "selectExistingSubject": "Chagua jina lililopo",
+  "addTagHint": "Ongeza lebo..."
 }

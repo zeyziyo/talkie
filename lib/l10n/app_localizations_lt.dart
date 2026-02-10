@@ -37,14 +37,15 @@ class AppLocalizationsLt extends AppLocalizations {
       '• Medžiagos pasirinkimas: pasirinkite konkretų rinkinį arba „Visos apžvalgos“\n• Kortelės apvertimas: patikrinkite vertimą naudodami „Rodyti / slėpti“ (automatinis mokymosi patikrinimas)\n• Klausymas: sakinio TTS atkūrimas\n• Mokymasis baigtas: pažymėkite varnelę (V), kad mokymasis būtų baigtas\n• Ištrinti: ilgai paspauskite kortelę, kad ištrintumėte įrašą\n• Paieškos sąlygos: filtruokite pagal žymą, naujausius elementus, pradžios raidę';
 
   @override
-  String get helpMode3Desc => 'Praktikuokitės klausydami ir kartodami.';
+  String get helpMode3Desc =>
+      'Klausykite sakinio ir kartokite (šešėliavimas), kad praktikuotumėte tarimą.';
 
   @override
   String get helpMode3Details =>
       '• Medžiagos pasirinkimas: pasirinkite medžiagų rinkinį, kurį norite studijuoti\n• Intervalo nustatymas: reguliuokite laukimo laiką tarp sakinių naudodami mygtukus [-] [+]. (3–60 sekundžių)\n• Pradėti / sustabdyti: šešėliavimo sesijos valdymas\n• Kalbėjimas: klausykitės ir kartokite balsą\n• Atsiliepimas: tikslumo balas (0–100) ir spalvų ekranas\n• Paieškos sąlygos: filtruokite praktikos taikinius pagal žymą, naujausius elementus, pradžios raidę';
 
   @override
-  String get helpModeChatDesc => 'Kalbėkite su personažais tikram pokalbiui.';
+  String get helpModeChatDesc => 'Praktikuokite pokalbius su AI personažu.';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +412,10 @@ class AppLocalizationsLt extends AppLocalizations {
       'Spustelėkite medžiagų rinkinio piktogramą (📚) viršutinėje programos juostoje, kad pasirinktumėte medžiagą, kurią norite studijuoti.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Spustelėkite medžiagų rinkinio piktogramą (📚) viršutinėje programos juostoje, kad pasirinktumėte medžiagą, kurią norite praktikuoti.';
+
+  @override
   String get tutorialM2ListTitle => 'Mokymosi sąrašas';
 
   @override
@@ -419,10 +424,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Medžiagos pasirinkimas';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Spustelėkite medžiagų rinkinio piktogramą (📚) viršutinėje programos juostoje, kad pasirinktumėte medžiagą, kurią norite praktikuoti.';
 
   @override
   String get tutorialM3IntervalTitle => 'Intervalo nustatymas';
@@ -795,10 +796,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get chatUntitled => 'Pokalbis be pavadinimo';
 
   @override
-  String get chatAiChat => 'Pokalbiai';
+  String get chatAiChat => 'Pokalbis';
 
   @override
-  String get tutorialAiChatTitle => 'Pokalbiai';
+  String get tutorialAiChatTitle => 'AI pokalbis';
 
   @override
   String get tutorialAiChatDesc =>
@@ -890,6 +891,12 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Baigta';
+
+  @override
+  String get titleTagSelection => 'Pavadinimo žyma (archyvas)';
+
+  @override
+  String get generalTags => 'Bendrosios žymos';
 
   @override
   String get tagSelection => 'Žymos pasirinkimas';
@@ -989,4 +996,28 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Ar tikrai norite ištrinti šį pokalbį?\nIštrintų pokalbių atkurti negalima.';
+
+  @override
+  String get notSelected => '- Nepasirinkta -';
+
+  @override
+  String get myWordbook => 'Mano žodynas';
+
+  @override
+  String get mySentenceCollection => 'Mano sakinių rinkinys';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

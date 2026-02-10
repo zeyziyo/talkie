@@ -37,14 +37,16 @@ class AppLocalizationsSl extends AppLocalizations {
       '• Izbira gradiva: izbira določene zbirke gradiv ali »Celotno ponavljanje«\n• Obračanje kartic: preverjanje prevoda z »Pokaži/Skrij« (samodejna kontrola učenja)\n• Poslušanje: predvajanje TTS stavka\n• Učenje končano: obdelava zaključka učenja z oznako (V)\n• Brisanje: dolg pritisk na kartico za brisanje zapisa\n• Pogoji iskanja: filtriranje po oznakah, nedavnih elementih, začetnih črkah';
 
   @override
-  String get helpMode3Desc => 'Vadite s poslušanjem in ponavljanjem.';
+  String get helpMode3Desc =>
+      'Poslušajte stavek in ga ponovite (senčenje), da vadite izgovorjavo.';
 
   @override
   String get helpMode3Details =>
       '• Izbira gradiva: izbira zbirke gradiv za učenje\n• Nastavitev intervala: prilagajanje časa čakanja med stavki z gumboma [-] [+](3 sekunde ~ 60 sekund)\n• Začetek/ustavitev: nadzor nad sejo senčenja\n• Govorjenje: poslušanje zvoka in ponavljanje\n• Povratne informacije: prikaz ocene točnosti (0–100) in barve\n• Pogoji iskanja: filtriranje cilja vadbe po oznakah, nedavnih elementih, začetnih črkah';
 
   @override
-  String get helpModeChatDesc => 'Govorite z osebami za vajo pravega pogovora.';
+  String get helpModeChatDesc =>
+      'Vadite pogovor v resničnem življenju s pogovorom z osebnostjo AI.';
 
   @override
   String get helpModeChatDetails =>
@@ -411,6 +413,10 @@ class AppLocalizationsSl extends AppLocalizations {
       'Izberite gradivo za učenje s pritiskom na ikono zbirke gradiv (📚) na zgornji vrstici aplikacije.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Izberite gradivo za vadbo s pritiskom na ikono zbirke gradiv (📚) na zgornji vrstici aplikacije.';
+
+  @override
   String get tutorialM2ListTitle => 'Seznam za učenje';
 
   @override
@@ -419,10 +425,6 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Izbira gradiva';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Izberite gradivo za vadbo s pritiskom na ikono zbirke gradiv (📚) na zgornji vrstici aplikacije.';
 
   @override
   String get tutorialM3IntervalTitle => 'Nastavitev intervala';
@@ -744,7 +746,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get reviewModeTitle => 'Ponovitev';
 
   @override
-  String get practiceModeTitle => 'Vaja';
+  String get practiceModeTitle => 'Vadba';
 
   @override
   String get chatHistoryTitle => 'Zgodovina pogovorov';
@@ -793,7 +795,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get chatAiChat => 'Klepet';
 
   @override
-  String get tutorialAiChatTitle => 'Klepet';
+  String get tutorialAiChatTitle => 'AI klepet';
 
   @override
   String get tutorialAiChatDesc =>
@@ -885,6 +887,12 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Končano';
+
+  @override
+  String get titleTagSelection => 'Oznaka naslova (Zbirka podatkov)';
+
+  @override
+  String get generalTags => 'Splošne oznake';
 
   @override
   String get tagSelection => 'Izbira oznake';
@@ -984,4 +992,28 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Želite izbrisati ta pogovor?\nIzbrisanih pogovorov ni mogoče obnoviti.';
+
+  @override
+  String get notSelected => '- Ni izbrano -';
+
+  @override
+  String get myWordbook => 'Moja besedna zbirka';
+
+  @override
+  String get mySentenceCollection => 'Moja zbirka stavkov';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }

@@ -36,7 +36,8 @@ class AppLocalizationsAf extends AppLocalizations {
       '• Kies: Kies stel of \'Hersien Alles\'\n• Draai: \'Wys/Versteek\' vertaling\n• Luister: Speel TTS vir sin\n• Merk: Merk (V) vir voltooi\n• Verwyder: Lang druk om te verwyder\n• Filter: Sien alles of per materiaal';
 
   @override
-  String get helpMode3Desc => 'Oefen deur te luister en sinne na te boots.';
+  String get helpMode3Desc =>
+      'Oefen jou uitspraak deur na sinne te luister en dit te herhaal (Skadu).';
 
   @override
   String get helpMode3Details =>
@@ -44,7 +45,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Praat met persona om regte gesprekke te oefen.';
+      'Oefen werklike gesprekke deur met \'n KI-persona te gesels.';
 
   @override
   String get helpModeChatDetails =>
@@ -406,6 +407,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialM2SelectDesc => 'Kies materiaal of \'Hersien Alles\'.';
 
   @override
+  String get tutorialM3SelectDesc => 'Kies stel vir praatoefening.';
+
+  @override
   String get tutorialM2ListTitle => 'Studielys';
 
   @override
@@ -414,9 +418,6 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Kies Materiaal';
-
-  @override
-  String get tutorialM3SelectDesc => 'Kies stel vir praatoefening.';
 
   @override
   String get tutorialM3IntervalTitle => 'Interval';
@@ -783,7 +784,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get chatAiChat => 'Klets';
 
   @override
-  String get tutorialAiChatTitle => 'Klets';
+  String get tutorialAiChatTitle => 'KI-klets';
 
   @override
   String get tutorialAiChatDesc =>
@@ -876,6 +877,12 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Titelmerker (Versameling)';
+
+  @override
+  String get generalTags => 'Algemene merkers';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -975,4 +982,28 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       'Wil jy hierdie gesprek uitvee?\nJy sal nie die uitgeveede gesprek kan herstel nie.';
+
+  @override
+  String get notSelected => '- Nie gekies nie -';
+
+  @override
+  String get myWordbook => 'My Woordeboek';
+
+  @override
+  String get mySentenceCollection => 'My Sinversameling';
+
+  @override
+  String get newSubjectName => 'Nuwe Onderwerp Naam';
+
+  @override
+  String get enterNewSubjectName => 'Voer nuwe naam in';
+
+  @override
+  String get addNewSubject => 'Voeg nuwe naam by';
+
+  @override
+  String get selectExistingSubject => 'Kies bestaande naam';
+
+  @override
+  String get addTagHint => 'Voeg merker by...';
 }

@@ -37,7 +37,8 @@ class AppLocalizationsEs extends AppLocalizations {
       '• Seleccionar Material: Elige set o \'Repasar Todo\'\n• Girar Tarjeta: Usa \'Mostrar/Ocultar\' para ver traducción\n• Escuchar: Reproduce TTS para la oración \n• Marcar Estudiado: Check (V) para ítems completados\n• Eliminar: Mantén presionada la tarjeta\n• Filtro: Ver todo o filtrar por material';
 
   @override
-  String get helpMode3Desc => 'Practica escuchando y repitiendo.';
+  String get helpMode3Desc =>
+      'Escucha y repite la frase (Shadowing) para practicar la pronunciación.';
 
   @override
   String get helpMode3Details =>
@@ -45,7 +46,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get helpModeChatDesc =>
-      'Habla con personajes para practicar conversaciones reales.';
+      'Practica conversaciones reales hablando con una IA.';
 
   @override
   String get helpModeChatDetails =>
@@ -413,6 +414,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'Elige materiales de estudio o cambia a \'Repasar Todo\'.';
 
   @override
+  String get tutorialM3SelectDesc =>
+      'Elige un set de material para practicar habla.';
+
+  @override
   String get tutorialM2ListTitle => 'Lista de Estudio';
 
   @override
@@ -421,10 +426,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tutorialM3SelectTitle => 'Seleccionar Material';
-
-  @override
-  String get tutorialM3SelectDesc =>
-      'Elige un set de material para practicar habla.';
 
   @override
   String get tutorialM3IntervalTitle => 'Intervalo';
@@ -798,7 +799,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get chatAiChat => 'Chat';
 
   @override
-  String get tutorialAiChatTitle => 'Chat';
+  String get tutorialAiChatTitle => 'Chat de IA';
 
   @override
   String get tutorialAiChatDesc =>
@@ -889,6 +890,12 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get labelShowMemorized => 'Finished';
+
+  @override
+  String get titleTagSelection => 'Etiqueta de título (Colección)';
+
+  @override
+  String get generalTags => 'Etiquetas generales';
 
   @override
   String get tagSelection => 'Select Tags';
@@ -988,4 +995,28 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get confirmDeleteConversation =>
       '¿Estás seguro de que quieres eliminar esta conversación?\nUna vez eliminada, no se podrá recuperar.';
+
+  @override
+  String get notSelected => '- No seleccionado -';
+
+  @override
+  String get myWordbook => 'Mi vocabulario';
+
+  @override
+  String get mySentenceCollection => 'Mi colección de frases';
+
+  @override
+  String get newSubjectName => '새 단어장/문장집 제목';
+
+  @override
+  String get enterNewSubjectName => '새 제목 입력';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
+
+  @override
+  String get selectExistingSubject => '기존 제목 선택';
+
+  @override
+  String get addTagHint => '태그 추가...';
 }
