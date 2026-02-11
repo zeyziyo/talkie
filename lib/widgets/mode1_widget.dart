@@ -163,27 +163,92 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                         padding: const EdgeInsets.all(16),
                         child: Column(
                           children: [
-                            // Language selection UI removed (moved to AppBar)
-                            const SizedBox(height: 8),
+                            // 1. Top Bar (Horizontal Row)
+                            Row(
+                              children: [
+                                // Word/Sentence Toggle
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    height: 45,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey.shade100,
+                                      borderRadius: BorderRadius.circular(12),
+                                      border: Border.all(color: Colors.grey.shade300),
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        _buildToggleButton(
+                                          context, 
+                                          label: l10n.tabWord, 
+                                          isSelected: appState.recordTypeFilter == 'word',
+                                          onTap: () => appState.setRecordTypeFilter('word'),
+                                        ),
+                                        _buildToggleButton(
+                                          context, 
+                                          label: l10n.tabSentence, 
+                                          isSelected: appState.recordTypeFilter == 'sentence',
+                                          onTap: () => appState.setRecordTypeFilter('sentence'),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                // Language Switch Area (Simplified for Row)
+                                Expanded(
+                                  flex: 2,
+                                  child: InkWell(
+                                    onTap: () => appState.swapLanguages(),
+                                    child: Container(
+                                      height: 45,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue.shade50,
+                                        borderRadius: BorderRadius.circular(12),
+                                        border: Border.all(color: Colors.blue.shade200),
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          const Icon(Icons.swap_horiz, color: Colors.blue, size: 20),
+                                          const SizedBox(width: 4),
+                                          Text(
+                                            "${appState.sourceLang.toUpperCase()} ↔ ${appState.targetLang.toUpperCase()}",
+                                            style: const TextStyle(
+                                              fontSize: 12, 
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.blue,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 16),
                             
-                            // Context/Note Feedback
+                            // 2. Note Display (Conditional)
                             if (appState.note.isNotEmpty)
                               Padding(
-                                padding: const EdgeInsets.only(bottom: 8),
+                                padding: const EdgeInsets.only(bottom: 12),
                                 child: Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                   decoration: BoxDecoration(
-                                    color: Colors.amber[100],
-                                    borderRadius: BorderRadius.circular(4),
+                                    color: Colors.yellow[100],
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: Border.all(color: Colors.amber.shade200),
                                   ),
                                   child: Row(
-                                    mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      const Icon(Icons.lightbulb, size: 14, color: Colors.deepOrange),
-                                      const SizedBox(width: 4),
-                                      Text(
-                                        '${l10n.labelNote}: ${appState.note}', 
-                                        style: TextStyle(fontSize: 12, color: Colors.brown[800], fontWeight: FontWeight.bold),
+                                      const Icon(Icons.lightbulb, size: 16, color: Colors.amber),
+                                      const SizedBox(width: 8),
+                                      Expanded(
+                                        child: Text(
+                                          '💡 주석 표시: ${appState.note}', 
+                                          style: TextStyle(fontSize: 13, color: Colors.brown[800]),
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -290,12 +355,11 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                             
                             const SizedBox(height: 12),
                             
-                            // Category Dropdown & Details Button
+                            // 3. Action Line (Horizontal Row)
                             Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 3,
                                   child: DropdownButtonFormField<String>(
                                     key: widget.materialDropdownKey,
                                     value: appState.recordTypeFilter == 'word' 
@@ -305,7 +369,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                       labelText: appState.recordTypeFilter == 'word' ? l10n.selectPOS : l10n.selectSentenceType,
                                       isDense: true,
                                       border: const OutlineInputBorder(),
-                                      contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                                      contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
                                     ),
                                     items: (appState.recordTypeFilter == 'word' 
                                             ? AppState.posCategories 
@@ -326,110 +390,55 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                   ),
                                 ),
                                 const SizedBox(width: 8),
-                                ElevatedButton.icon(
-                                  key: widget.contextFieldKey,
-                                  onPressed: () => _showMetadataDialog(context, appState),
-                                  icon: const Icon(Icons.save, size: 18), // Changed icon to Save
-                                  label: Text(l10n.save, style: const TextStyle(fontSize: 13)), // Changed label to Save (needs L10n key check)
-                                  style: ElevatedButton.styleFrom(
-                                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                                    backgroundColor: Colors.blueAccent, // Highlighted color
-                                    foregroundColor: Colors.white,
-                                    elevation: 0,
-                                    side: BorderSide(color: Colors.grey.shade300),
+                                Expanded(
+                                  flex: 4,
+                                  child: ElevatedButton.icon(
+                                    key: widget.contextFieldKey,
+                                    onPressed: () => _showMetadataDialog(context, appState),
+                                    icon: const Icon(Icons.settings_outlined, size: 18),
+                                    label: const Text("👉 상세분류 설정", style: TextStyle(fontSize: 13)),
+                                    style: ElevatedButton.styleFrom(
+                                      padding: const EdgeInsets.symmetric(vertical: 14),
+                                      backgroundColor: Colors.blueAccent, 
+                                      foregroundColor: Colors.white,
+                                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                      elevation: 0,
+                                    ),
                                   ),
                                 ),
                               ],
                             ),
                             
-                            const SizedBox(height: 12),
-                          ],
-                        ),
-                      ),
-                    ),
-                    
-                    const SizedBox(height: 16),
-                    
-                    // Translate Button
-                    ElevatedButton.icon(
-                      key: widget.translateButtonKey,
-                      onPressed: appState.isTranslating
-                          ? null
-                          : () async {
-                              // Validation: Ensure Word or Sentence is selected
-                              if (appState.recordTypeFilter == 'all') {
-                                showDialog(
-                                  context: context,
-                                  builder: (context) => AlertDialog(
-                                    title: Text(l10n.error),
-                                    content: Text(l10n.errorSelectCategory),
-                                    actions: [
-                                      TextButton(
-                                        onPressed: () => Navigator.pop(context),
-                                        child: Text(l10n.confirm),
-                                      ),
-                                    ],
-                                  ),
-                                );
-                                return;
-                              }
-                              try {
-                                final error = await appState.translate(context: context);
-                                if (error != null && context.mounted) {
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                    SnackBar(
-                                      content: Text(error),
-                                      backgroundColor: Colors.orange,
-                                    ),
-                                  );
-                                }
-
-                                // Phase X: Add AI Detected Tags (e.g. formal -> 존댓말)
-                                if (context.mounted && appState.aiDetectedTags.isNotEmpty) {
-                                  setState(() {
-                                    for (final tag in appState.aiDetectedTags) {
-                                      String tagToAdd = tag;
-                                      // Map 'formal' to localized string
-                                      if (tag == 'formal') {
-                                        tagToAdd = l10n.tagFormal;
-                                      }
-                                      if (!_currentTags.contains(tagToAdd)) {
-                                        _currentTags.add(tagToAdd);
-                                      }
-                                    }
-                                  });
-                                }
-                              } catch (e) {
-                                if (e is LimitReachedException && context.mounted) {
-                                  _showLimitDialog(context, appState);
-                                } else if (context.mounted) {
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                    SnackBar(
-                                      content: Text('System Error: $e'),
-                                      backgroundColor: Colors.red,
-                                    ),
-                                  );
-                                }
-                              }
-                            },
-                      icon: appState.isTranslating
-                          ? const SizedBox(
-                              width: 16,
-                              height: 16,
-                              child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
-                            )
-                          : const Icon(Icons.translate),
-                      label: Text(
-                        appState.isTranslating ? l10n.translating : l10n.translate,
-                        style: const TextStyle(fontSize: 16),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF667eea),
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 16), 
-                        minimumSize: const Size(double.infinity, 50),
-                      ),
-                    ),
+                            const SizedBox(height: 16),
+                            
+                            // 4. Translate Button
+                            ElevatedButton.icon(
+                              key: widget.translateButtonKey,
+                              onPressed: appState.isTranslating
+                                  ? null
+                                  : () async {
+                                      // ... same logic
+                                      _performTranslation(context, appState, l10n);
+                                    },
+                              icon: appState.isTranslating
+                                  ? const SizedBox(
+                                      width: 16,
+                                      height: 16,
+                                      child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+                                    )
+                                  : const Icon(Icons.rocket_launch),
+                              label: Text(
+                                appState.isTranslating ? l10n.translating : "🚀 번역 실행 버튼",
+                                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: const Color(0xFF667eea),
+                                foregroundColor: Colors.white,
+                                padding: const EdgeInsets.symmetric(vertical: 16), 
+                                minimumSize: const Size(double.infinity, 50),
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                              ),
+                            ),
                     
                     const SizedBox(height: 16),
                     
@@ -440,60 +449,86 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            // 5. Result Header (Horizontal Row)
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                                   decoration: BoxDecoration(
-                                    color: Colors.green[100],
-                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.green[50],
+                                    borderRadius: BorderRadius.circular(20),
+                                    border: Border.all(color: Colors.green.shade200),
                                   ),
-                                  child: Text(
-                                    appState.languageNames[appState.targetLang] ?? '',
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold, 
-                                      color: Colors.green.shade800,
-                                    ),
+                                  child: Row(
+                                    children: [
+                                      const Icon(Icons.flag, size: 16, color: Colors.green),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        appState.languageNames[appState.targetLang] ?? '',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold, 
+                                          color: Colors.green.shade900,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
-                                Row(
-                                  children: [
-                                    IconButton(
-                                      icon: Icon(
-                                        appState.isSpeaking
-                                            ? Icons.stop_circle
-                                            : Icons.volume_up,
-                                        color: appState.isSpeaking ? Colors.red : null,
-                                      ),
-                                      onPressed: appState.translatedText.isEmpty
-                                          ? null
-                                          : (appState.isSpeaking
-                                              ? () => appState.stopSpeaking()
-                                              : () => appState.speak()),
-                                      tooltip: l10n.listen,
-                                    ),
-                                  ],
+                                IconButton(
+                                  icon: Icon(
+                                    appState.isSpeaking
+                                        ? Icons.stop_circle
+                                        : Icons.volume_up,
+                                    color: appState.isSpeaking ? Colors.red : Colors.blueGrey,
+                                    size: 28,
+                                  ),
+                                  onPressed: appState.translatedText.isEmpty
+                                      ? null
+                                      : (appState.isSpeaking
+                                          ? () => appState.stopSpeaking()
+                                          : () => appState.speak()),
+                                  tooltip: l10n.listen,
                                 ),
                               ],
                             ),
                             const SizedBox(height: 8),
                             
-                            // Context/Note Feedback
-                            TextField(
-                              controller: _translatedTextController,
-                              decoration: const InputDecoration(
-                                border: OutlineInputBorder(),
-                                hintText: "Translation result will appear here...",
-                              ),
-                              minLines: 2,
-                              maxLines: null,
-                              readOnly: false, // Phase 83: Enable editing
-                              onChanged: (val) {
-                                // Phase 83: Allow user to refine translation
-                                appState.updateTranslatedText(val);
-                              },
+                            // Context/Note Feedback + Root Badge (Phase 83)
+                            Row(
+                              children: [
+                                if (appState.sourceRoot.isNotEmpty)
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 8),
+                                    child: Chip(
+                                      label: Text(
+                                        "🌱 ${appState.sourceRoot}", 
+                                        style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.indigo),
+                                      ),
+                                      backgroundColor: Colors.indigo.shade50,
+                                      side: BorderSide(color: Colors.indigo.shade100),
+                                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                                      visualDensity: VisualDensity.compact,
+                                    ),
+                                  ),
+                                Expanded(
+                                  child: TextField(
+                                    controller: _translatedTextController,
+                                    decoration: const InputDecoration(
+                                      border: OutlineInputBorder(),
+                                      hintText: "Translation result will appear here...",
+                                      contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                                    ),
+                                    minLines: 1,
+                                    maxLines: null,
+                                    readOnly: false, // Phase 83: Enable editing
+                                    onChanged: (val) {
+                                      // Phase 83: Allow user to refine translation
+                                      appState.updateTranslatedText(val);
+                                    },
+                                  ),
+                                ),
+                              ],
                             ),
                           ],
                         ),
@@ -558,14 +593,15 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                             },
                       icon: const Icon(Icons.save),
                       label: Text(
-                        appState.isSaved ? l10n.saved : l10n.saveData,
-                        style: const TextStyle(fontSize: 16),
+                        appState.isSaved ? l10n.saved : "💾 최종 저장 버튼",
+                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF667eea),
+                        backgroundColor: Colors.green[700],
                         foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        padding: const EdgeInsets.symmetric(vertical: 20),
                         disabledBackgroundColor: Colors.grey[300],
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                       ),
                     ),
                   ),
@@ -830,13 +866,40 @@ class _Mode1WidgetState extends State<Mode1Widget> {
     );
   }
 
+  Widget _buildToggleButton(BuildContext context, {required String label, required bool isSelected, required VoidCallback onTap}) {
+    return Expanded(
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          decoration: BoxDecoration(
+            color: isSelected ? Colors.white : Colors.transparent,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: isSelected ? [
+              BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 4, offset: const Offset(0, 2))
+            ] : null,
+          ),
+          margin: const EdgeInsets.all(4),
+          alignment: Alignment.center,
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+              color: isSelected ? Colors.blue : Colors.grey.shade600,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
   String _getLocalizedCategory(String cat, AppLocalizations l10n) {
     switch (cat) {
       case 'Noun': return l10n.posNoun;
       case 'Verb': return l10n.posVerb;
       case 'Adjective': return l10n.posAdjective;
       case 'Adverb': return l10n.posAdverb;
-      case 'Pronoun': return l10n.posPronoun;
+      case 'Pronoun': return l110n.posPronoun;
       case 'Preposition': return l10n.posPreposition;
       case 'Conjunction': return l10n.posConjunction;
       case 'Interjection': return l10n.posInterjection;
@@ -863,6 +926,50 @@ class _Mode1WidgetState extends State<Mode1Widget> {
       case 'Reflexive': return l10n.caseReflexive;
       
       default: return cat; // 일반 카테고리는 그대로 반환
+    }
+  }
+
+  void _performTranslation(BuildContext context, AppState appState, AppLocalizations l10n) async {
+    if (appState.recordTypeFilter == 'all') {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text(l10n.error),
+          content: Text(l10n.errorSelectCategory),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text(l10n.confirm),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
+    try {
+      final error = await appState.translate(context: context);
+      if (error != null && context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(error), backgroundColor: Colors.orange),
+        );
+      }
+      if (context.mounted && appState.aiDetectedTags.isNotEmpty) {
+        setState(() {
+          for (final tag in appState.aiDetectedTags) {
+            String tagToAdd = tag;
+            if (tag == 'formal') tagToAdd = l10n.tagFormal;
+            if (!_currentTags.contains(tagToAdd)) _currentTags.add(tagToAdd);
+          }
+        });
+      }
+    } catch (e) {
+      if (e is LimitReachedException && context.mounted) {
+        _showLimitDialog(context, appState);
+      } else if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('System error: $e'), backgroundColor: Colors.red),
+        );
+      }
     }
   }
 }

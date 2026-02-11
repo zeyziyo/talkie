@@ -24,8 +24,14 @@ void main(List<String> args) async {
   final masterMap = _parseArb(masterFile);
   print('📦 Master loaded: ${masterMap.length} keys.');
 
+const List<String> kTargetLanguages = ['ko', 'en', 'es', 'ja']; // Restricted by user rule
+
   final dir = Directory(kL10nDir);
-  final files = dir.listSync().whereType<File>().where((f) => f.path.endsWith('.arb')).toList();
+  final files = dir.listSync().whereType<File>().where((f) {
+    if (!f.path.endsWith('.arb')) return false;
+    final langCode = _extractLangCode(f.path);
+    return kTargetLanguages.contains(langCode);
+  }).toList();
   files.sort((a, b) => a.path.compareTo(b.path));
 
   for (final file in files) {

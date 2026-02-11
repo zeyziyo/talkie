@@ -87,7 +87,7 @@
 - **UI**: `SearchFilterDialog`에서 태그 로딩 여부와 상관없이 내 자료집 제목을 드롭다운에 상시 노출 (4개 드롭다운 고정).
 - **Logic**: `DatabaseService.importFromJsonWithMetadata`에 `syncKey` 인자를 추가하여 보이지 않는 곳에서의 동기화와 보이는 곳에서의 제목을 분리 관리.
 - **Build**: `DatabaseService.saveUnifiedRecord` 파라미터 불일치(`subject` vs `syncSubject`)로 인한 빌드 오류 수정.
-- **L10n**: 필터 UI 관련 신규 키(`generalTags`, `notSelected` 등) 80개 언어 전체 자동 번역 및 동기화 완료. Michigan.
+- **L10n**: 필터 UI 관련 신규 키(`generalTags`, `notSelected` 등) 80개 언어 전체 자동 번역 및 동기화 완료.
 
 ### [2026-02-10] EMERGENCY: Build Failure Resolution (Phase 79.1)
 - **Fix**: `DatabaseService` 내 `getStudyMaterials` 중복 선언 제거.

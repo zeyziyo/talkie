@@ -209,20 +209,36 @@ class _MetadataDialogState extends State<MetadataDialog> {
             ),
             const SizedBox(height: 16),
 
-            // 4. Note (Row 4)
-            Text(l10n.labelNote, style: Theme.of(context).textTheme.labelMedium),
-            const SizedBox(height: 4),
+            // 4. Note (Row 4 - Dedicated Section)
+            const Divider(height: 32),
+            Row(
+              children: [
+                const Icon(Icons.description, size: 20, color: Colors.blueGrey),
+                const SizedBox(width: 8),
+                Text(l10n.labelNote, style: Theme.of(context).textTheme.titleSmall?.copyWith(color: Colors.blueGrey[800])),
+              ],
+            ),
+            const SizedBox(height: 8),
             TextField(
               controller: _noteController,
               decoration: InputDecoration(
-                hintText: l10n.tutorialContextDesc,
+                hintText: "${l10n.labelNote} (동음이의어 구분, 상세 문맥 등)", // Explicitly adding user's requirement
+                hintStyle: TextStyle(fontSize: 12, color: Colors.grey[400]),
                 border: const OutlineInputBorder(),
-                contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-                prefixIcon: const Icon(Icons.description, size: 20),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                fillColor: Colors.blueGrey[50],
+                filled: true,
               ),
               onChanged: (val) => appState.setNote(val),
-              minLines: 1,
-              maxLines: 3,
+              minLines: 2,
+              maxLines: 4,
+            ),
+            const Padding(
+              padding: EdgeInsets.only(top: 4, left: 4),
+              child: Text(
+                "💡 AI가 이 주석을 참고하여 정확한 의미로 번역합니다.",
+                style: TextStyle(fontSize: 10, color: Colors.blueGrey),
+              ),
             ),
             const SizedBox(height: 16),
 
@@ -231,15 +247,8 @@ class _MetadataDialogState extends State<MetadataDialog> {
             if (appState.recordTypeFilter == 'word') ...[
                Builder(
                 builder: (context) {
-                  bool showRootField = false;
-                  if (appState.sourcePos == 'Verb' && appState.sourceFormType != 'Infinitive' && appState.sourceFormType.isNotEmpty) {
-                    showRootField = true;
-                  } else if ((appState.sourcePos == 'Adjective' || appState.sourcePos == 'Adverb') && 
-                            appState.sourceFormType != 'Positive' && appState.sourceFormType.isNotEmpty) {
-                    showRootField = true;
-                  }
-
-                  if (!showRootField) return const SizedBox.shrink();
+                  // Root Field Visibility: Show whenever in word mode to allow grouping
+                  if (appState.recordTypeFilter != 'word') return const SizedBox.shrink();
 
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
