@@ -449,10 +449,10 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                 Expanded(
                                   child: TextField(
                                     controller: _translatedTextController,
-                                    decoration: const InputDecoration(
-                                      border: OutlineInputBorder(),
+                                    decoration: InputDecoration(
+                                      border: const OutlineInputBorder(),
                                       hintText: l10n.enterTextToTranslate,
-                                      contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                                     ),
                                     minLines: 1,
                                     maxLines: null,
