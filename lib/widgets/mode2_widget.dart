@@ -154,54 +154,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                   // Word/Sentence Toggle + Tag Selection + Show Memorized Switch
                   Row(
                     children: [
-                      // 1. Word/Sentence Toggle
-                      Expanded(
-                        flex: 5,
-                        child: SegmentedButton<String>(
-                          segments: [
-                            ButtonSegment<String>(
-                              value: 'word',
-                              label: Text(l10n.tabWord, style: const TextStyle(fontSize: 11)),
-                            ),
-                            ButtonSegment<String>(
-                              value: 'sentence',
-                              label: Text(l10n.tabSentence, style: const TextStyle(fontSize: 11)),
-                            ),
-                          ],
-                          selected: {appState.recordTypeFilter},
-                          onSelectionChanged: (Set<String> newSelection) {
-                            appState.setRecordTypeFilter(newSelection.first);
-                            appState.loadRecordsByTags();
-                          },
-                          style: SegmentedButton.styleFrom(
-                            visualDensity: VisualDensity.compact,
-                            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                            padding: EdgeInsets.zero,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      // Detailed Classification (Material Dropdown) removed per user request
-                      /*
-                      TextButton.icon(
-                        key: widget.materialDropdownKey,
-                        onPressed: () => _showMetadataDialog(context, appState),
-                        icon: const Icon(Icons.tune, size: 16),
-                        label: Text(
-                          l10n.metadataDialogTitle,
-                          style: const TextStyle(fontSize: 12),
-                        ),
-                        style: TextButton.styleFrom(
-                          foregroundColor: Colors.blueAccent,
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          minimumSize: Size.zero,
-                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        ),
-                      ),
-                      */
-                      const SizedBox(width: 4),
-                      
-                      // 2. Tag Selection Button
+                      // 1. Tag Selection Button
                       InkWell(
                         onTap: () => showDialog(
                           context: context,

@@ -360,7 +360,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () => Scaffold.of(context).openDrawer(),
               ),
             ),
-            bottom: appState.currentMode == 0 
+            bottom: appState.currentMode <= 2 
               ? PreferredSize(
                   preferredSize: const Size.fromHeight(50.0),
                   child: Container(

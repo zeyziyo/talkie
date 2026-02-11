@@ -136,46 +136,7 @@ class Mode3Widget extends StatelessWidget {
                   // Word/Sentence Toggle + Tag Selection + Show Memorized Switch
                   Row(
                     children: [
-                      // 1. Word/Sentence Toggle
-                      Expanded(
-                        flex: 5,
-                        child: SegmentedButton<String>(
-                          segments: [
-                            ButtonSegment<String>(
-                              value: 'word',
-                              label: Text(l10n.tabWord, style: const TextStyle(fontSize: 11)),
-                            ),
-                            ButtonSegment<String>(
-                              value: 'sentence',
-                              label: Text(l10n.tabSentence, style: const TextStyle(fontSize: 11)),
-                            ),
-                          ],
-                          selected: {appState.recordTypeFilter},
-                          onSelectionChanged: (Set<String> newSelection) {
-                            appState.setRecordTypeFilter(newSelection.first);
-                            if (appState.mode3SessionActive) appState.startMode3SessionDirectly();
-                          },
-                          style: SegmentedButton.styleFrom(
-                            visualDensity: VisualDensity.compact,
-                            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                            padding: EdgeInsets.zero,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      // Detailed Classification (Tune) removed per user request
-                      /*
-                      IconButton(
-                        key: materialDropdownKey,
-                        icon: const Icon(Icons.tune),
-                        onPressed: () => _showMetadataDialog(context, appState),
-                        tooltip: l10n.metadataDialogTitle,
-                        visualDensity: VisualDensity.compact,
-                      ),
-                      */
-                      const SizedBox(width: 4),
-                      
-                      // 2. Tag Selection Button
+                      // 1. Tag Selection Button
                       InkWell(
                         key: settingsKey,
                         onTap: () => _showTagSelectionDialog(context, appState),

@@ -161,6 +161,7 @@ class AppState extends ChangeNotifier {
   String get sourceLang => _sourceLang;
   String get targetLang => _targetLang;
   bool get isListening => _isListening;
+  bool get fetchPivot => _targetLang != 'en' && _sourceLang != 'en';
   bool get isTranslating => _isTranslating;
   bool get isSpeaking => _isSpeaking;
   bool get isSaved => _isSaved;

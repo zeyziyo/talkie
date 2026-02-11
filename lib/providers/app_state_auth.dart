@@ -242,10 +242,20 @@ extension AppStateAuth on AppState {
   Future<Map<String, dynamic>> importRemoteMaterial(Map<String, dynamic> material, {String? type}) async {
     final mId = material['id'];
     final mName = material['name'] as String? ?? 'Unnamed Material';
-    final sPath = material['source_url'] as String?;
-    final tPath = material['target_url'] as String?;
-    final pPath = material['pivot_url'] as String?;
-    final fetchPivot = material['fetch_pivot'] == true;
+    String? sPath = material['source_url'] as String?;
+    String? tPath = material['target_url'] as String?;
+    String? pPath = material['pivot_url'] as String?;
+    
+    // Phase 92: Fallback to path-based construction if URLs are missing
+    if (sPath == null || tPath == null) {
+      final String? relativePath = material['path'] as String?;
+      if (relativePath != null) {
+        final String baseRepoUrl = 'https://zeyziyo.github.io/talkie/docs/materials';
+        sPath = '$baseRepoUrl/$_sourceLang/$relativePath';
+        tPath = '$baseRepoUrl/$_targetLang/$relativePath';
+        pPath = '$baseRepoUrl/en/$relativePath';
+      }
+    }
 
     if (sPath == null || tPath == null) {
       return {'success': false, 'error': 'Missing source or target URL'};
