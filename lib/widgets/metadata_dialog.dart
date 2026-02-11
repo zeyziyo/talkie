@@ -222,7 +222,7 @@ class _MetadataDialogState extends State<MetadataDialog> {
             TextField(
               controller: _noteController,
               decoration: InputDecoration(
-                hintText: "${l10n.labelNote} (동음이의어 구분, 상세 문맥 등)", // Explicitly adding user's requirement
+                hintText: l10n.labelNote, 
                 hintStyle: TextStyle(fontSize: 12, color: Colors.grey[400]),
                 border: const OutlineInputBorder(),
                 contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
@@ -236,7 +236,7 @@ class _MetadataDialogState extends State<MetadataDialog> {
             const Padding(
               padding: EdgeInsets.only(top: 4, left: 4),
               child: Text(
-                "💡 AI가 이 주석을 참고하여 정확한 의미로 번역합니다.",
+                "AI가 이 주석을 참고하여 정확한 의미로 번역합니다.",
                 style: TextStyle(fontSize: 10, color: Colors.blueGrey),
               ),
             ),

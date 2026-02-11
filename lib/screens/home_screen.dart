@@ -371,27 +371,36 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Row(
                       children: [
                         Expanded(
-                          child: SegmentedButton<String>(
-                            style: SegmentedButton.styleFrom(
-                              visualDensity: VisualDensity.compact,
-                              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          child: Container(
+                            height: 40,
+                            decoration: BoxDecoration(
+                              color: Colors.grey.shade100,
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(color: Colors.grey.shade300),
                             ),
-                            segments: [
-                              ButtonSegment<String>(
-                                value: 'word',
-                                label: Text(l10n.tabWord),
-                              ),
-                              ButtonSegment<String>(
-                                value: 'sentence',
-                                label: Text(l10n.tabSentence),
-                              ),
-                            ],
-                            selected: {appState.recordTypeFilter},
-                            onSelectionChanged: (Set<String> newSelection) {
-                              appState.setRecordTypeFilter(newSelection.first);
-                              appState.selectMaterial(0); // Reset to basic
-                            },
-                            key: _mode1ToggleKey, // Attached Key
+                            child: Row(
+                              key: _mode1ToggleKey,
+                              children: [
+                                _buildToggleButton(
+                                  context, 
+                                  label: l10n.tabWord, 
+                                  isSelected: appState.recordTypeFilter == 'word',
+                                  onTap: () {
+                                    appState.setRecordTypeFilter('word');
+                                    appState.selectMaterial(0);
+                                  },
+                                ),
+                                _buildToggleButton(
+                                  context, 
+                                  label: l10n.tabSentence, 
+                                  isSelected: appState.recordTypeFilter == 'sentence',
+                                  onTap: () {
+                                    appState.setRecordTypeFilter('sentence');
+                                    appState.selectMaterial(0);
+                                  },
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                         const SizedBox(width: 16),
@@ -806,4 +815,30 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
 // Methods removed. See lib/widgets/online_library_dialog.dart
+  Widget _buildToggleButton(BuildContext context, {required String label, required bool isSelected, required VoidCallback onTap}) {
+    return Expanded(
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          decoration: BoxDecoration(
+            color: isSelected ? Colors.white : Colors.transparent,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: isSelected ? [
+              BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 4, offset: const Offset(0, 2))
+            ] : null,
+          ),
+          margin: const EdgeInsets.all(4),
+          alignment: Alignment.center,
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 16, // Increased as requested
+              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+              color: isSelected ? Colors.blue : Colors.grey.shade600,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
 }

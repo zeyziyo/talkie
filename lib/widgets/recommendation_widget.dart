@@ -26,7 +26,7 @@ class RecommendationWidget extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Text(
-                '✨ 오늘의 추천 학습',
+                '오늘의 추천 학습',
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,

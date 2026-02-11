@@ -163,71 +163,6 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                         padding: const EdgeInsets.all(16),
                         child: Column(
                           children: [
-                            // 1. Top Bar (Horizontal Row)
-                            Row(
-                              children: [
-                                // Word/Sentence Toggle
-                                Expanded(
-                                  flex: 3,
-                                  child: Container(
-                                    height: 45,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey.shade100,
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(color: Colors.grey.shade300),
-                                    ),
-                                    child: Row(
-                                      children: [
-                                        _buildToggleButton(
-                                          context, 
-                                          label: l10n.tabWord, 
-                                          isSelected: appState.recordTypeFilter == 'word',
-                                          onTap: () => appState.setRecordTypeFilter('word'),
-                                        ),
-                                        _buildToggleButton(
-                                          context, 
-                                          label: l10n.tabSentence, 
-                                          isSelected: appState.recordTypeFilter == 'sentence',
-                                          onTap: () => appState.setRecordTypeFilter('sentence'),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(width: 8),
-                                // Language Switch Area (Simplified for Row)
-                                Expanded(
-                                  flex: 2,
-                                  child: InkWell(
-                                    onTap: () => appState.swapLanguages(),
-                                    child: Container(
-                                      height: 45,
-                                      decoration: BoxDecoration(
-                                        color: Colors.blue.shade50,
-                                        borderRadius: BorderRadius.circular(12),
-                                        border: Border.all(color: Colors.blue.shade200),
-                                      ),
-                                      child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          const Icon(Icons.swap_horiz, color: Colors.blue, size: 20),
-                                          const SizedBox(width: 4),
-                                          Text(
-                                            "${appState.sourceLang.toUpperCase()} ↔ ${appState.targetLang.toUpperCase()}",
-                                            style: const TextStyle(
-                                              fontSize: 12, 
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blue,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 16),
                             
                             // 2. Note Display (Conditional)
                             if (appState.note.isNotEmpty)
@@ -242,11 +177,10 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                   ),
                                   child: Row(
                                     children: [
-                                      const Icon(Icons.lightbulb, size: 16, color: Colors.amber),
-                                      const SizedBox(width: 8),
+                                      const SizedBox(width: 4),
                                       Expanded(
                                         child: Text(
-                                          '💡 주석 표시: ${appState.note}', 
+                                          '${l10n.labelNote}: ${appState.note}', 
                                           style: TextStyle(fontSize: 13, color: Colors.brown[800]),
                                         ),
                                       ),
@@ -395,8 +329,8 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                   child: ElevatedButton.icon(
                                     key: widget.contextFieldKey,
                                     onPressed: () => _showMetadataDialog(context, appState),
-                                    icon: const Icon(Icons.settings_outlined, size: 18),
-                                    label: const Text("👉 상세분류 설정", style: TextStyle(fontSize: 13)),
+                                    icon: const Icon(Icons.settings_outlined, size: 20),
+                                    label: Text(l10n.metadataDialogTitle, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                                     style: ElevatedButton.styleFrom(
                                       padding: const EdgeInsets.symmetric(vertical: 14),
                                       backgroundColor: Colors.blueAccent, 
@@ -412,25 +346,13 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                             const SizedBox(height: 16),
                             
                             // 4. Translate Button
-                            ElevatedButton.icon(
+                            ElevatedButton(
                               key: widget.translateButtonKey,
                               onPressed: appState.isTranslating
                                   ? null
                                   : () async {
-                                      // ... same logic
                                       _performTranslation(context, appState, l10n);
                                     },
-                              icon: appState.isTranslating
-                                  ? const SizedBox(
-                                      width: 16,
-                                      height: 16,
-                                      child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
-                                    )
-                                  : const Icon(Icons.rocket_launch),
-                              label: Text(
-                                appState.isTranslating ? l10n.translating : "🚀 번역 실행 버튼",
-                                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                              ),
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: const Color(0xFF667eea),
                                 foregroundColor: Colors.white,
@@ -438,6 +360,16 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                 minimumSize: const Size(double.infinity, 50),
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                               ),
+                              child: appState.isTranslating
+                                  ? const SizedBox(
+                                      width: 16,
+                                      height: 16,
+                                      child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+                                    )
+                                  : Text(
+                                      l10n.translate,
+                                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                    ),
                             ),
                           ],
                         ),
@@ -466,8 +398,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                   ),
                                   child: Row(
                                     children: [
-                                      const Icon(Icons.flag, size: 16, color: Colors.green),
-                                      const SizedBox(width: 6),
+                                      const SizedBox(width: 4),
                                       Text(
                                         appState.languageNames[appState.targetLang] ?? '',
                                         style: TextStyle(
@@ -506,7 +437,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                     padding: const EdgeInsets.only(right: 8),
                                     child: Chip(
                                       label: Text(
-                                        "🌱 ${appState.sourceRoot}", 
+                                        appState.sourceRoot, 
                                         style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.indigo),
                                       ),
                                       backgroundColor: Colors.indigo.shade50,
@@ -520,7 +451,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                                     controller: _translatedTextController,
                                     decoration: const InputDecoration(
                                       border: OutlineInputBorder(),
-                                      hintText: "Translation result will appear here...",
+                                      hintText: l10n.enterTextToTranslate,
                                       contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                                     ),
                                     minLines: 1,
@@ -571,9 +502,7 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                       ),
                     ],
                   ),
-                  child: SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton.icon(
+                    child: ElevatedButton(
                       key: widget.saveButtonKey,
                       onPressed: (appState.sourceText.isEmpty || 
                                   appState.translatedText.isEmpty ||
@@ -595,17 +524,16 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                               
                               appState.saveTranslation(tags: allTags);
                             },
-                      icon: const Icon(Icons.save),
-                      label: Text(
-                        appState.isSaved ? l10n.saved : "💾 최종 저장 버튼",
-                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      ),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green[700],
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(vertical: 20),
                         disabledBackgroundColor: Colors.grey[300],
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      ),
+                      child: Text(
+                        appState.isSaved ? l10n.saved : l10n.saveData,
+                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
