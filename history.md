@@ -30,6 +30,7 @@
 - **Repair**: 버튼 아이콘 제거 과정에서 발생한 구조적 오류를 신속히 복구하고 일반적인 `ElevatedButton`으로 스타일 통일.
 - **Docs**: `main_view_flow.md` 및 `metadata_dialog_flow.md` 설계 문서를 실제 UI(토글 위치, 버튼 레이블) 및 "No Emoji" 규칙과 완벽히 동기화.
 - **Misc**: `RecommendationWidget` 등의 보조 위젯에서도 불필요한 이모지(✨)를 삭제하여 일관성 유지.
+- **Hotfix (CI/Build)**: `mode1_widget.dart`의 하위 위젯 중첩 시 발생한 초과 괄호(Syntax Error)를 제거하고 미사용 메서드(`_buildToggleButton`)를 정리하여 GitHub Actions 빌드 정상화 완료. `withOpacity` 경고 사항을 최신 `withValues`로 일괄 교체.
 
 ### [2026-02-11] Mode 1 UI Renewal & Root Detection (Phase 83-84)
 - **UI**: Mode 1 입력 화면을 Row 기반의 프리미엄 레이레이아웃으로 리뉴얼 (상단 바, 액션 라인 최적화).

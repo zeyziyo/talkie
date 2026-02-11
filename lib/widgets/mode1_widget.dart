@@ -536,7 +536,6 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                         style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ),
-                  ),
                 ),
               ),
             ),
@@ -794,33 +793,6 @@ class _Mode1WidgetState extends State<Mode1Widget> {
             _currentTags = newTags;
           });
         },
-      ),
-    );
-  }
-
-  Widget _buildToggleButton(BuildContext context, {required String label, required bool isSelected, required VoidCallback onTap}) {
-    return Expanded(
-      child: GestureDetector(
-        onTap: onTap,
-        child: Container(
-          decoration: BoxDecoration(
-            color: isSelected ? Colors.white : Colors.transparent,
-            borderRadius: BorderRadius.circular(10),
-            boxShadow: isSelected ? [
-              BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 4, offset: const Offset(0, 2))
-            ] : null,
-          ),
-          margin: const EdgeInsets.all(4),
-          alignment: Alignment.center,
-          child: Text(
-            label,
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-              color: isSelected ? Colors.blue : Colors.grey.shade600,
-            ),
-          ),
-        ),
       ),
     );
   }
