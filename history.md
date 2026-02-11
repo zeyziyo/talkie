@@ -28,6 +28,7 @@
 - **Rules**: 모든 Mode 1 UI(주석, 상세 분류, 번역 실행, 언어 배지, 어근 배지, 저장 버튼 등)에서 이모지를 전면 제거하여 전문적인 프리미엄 디자인 완성. 하드코딩된 한국어 문자열을 `l10n` 키로 전면 교체하여 80개 언어 지원 규격 준수.
 - **Font**: "상세 분류" 버튼 및 앱바 토글의 텍스트 크기를 확대하여 고령자 및 시인성 중심의 가독성 확보.
 - **Repair**: 버튼 아이콘 제거 과정에서 발생한 구조적 오류를 신속히 복구하고 일반적인 `ElevatedButton`으로 스타일 통일.
+- **Docs**: `main_view_flow.md` 및 `metadata_dialog_flow.md` 설계 문서를 실제 UI(토글 위치, 버튼 레이블) 및 "No Emoji" 규칙과 완벽히 동기화.
 - **Misc**: `RecommendationWidget` 등의 보조 위젯에서도 불필요한 이모지(✨)를 삭제하여 일관성 유지.
 
 ### [2026-02-11] Mode 1 UI Renewal & Root Detection (Phase 83-84)
