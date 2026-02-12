@@ -111,34 +111,34 @@ class OnlineLibraryDialog extends StatelessWidget {
                   // Phase 79.2 + 81.1: Refresh materials
                   await state.loadStudyMaterials(); 
 
-                  // Auto-Select Logic
+                  // Phase 97: Fix mode indices (1: Review, 2: Practice, 3: Chat)
                   if (type == 'dialogue') {
                       final dId = result['dialogue_id'] as String?;
                       if (dId != null) {
-                        final group = state.dialogueGroups.firstWhere(
-                          (g) => g.id == dId, 
-                          orElse: () => DialogueGroup(
-                            id: dId, 
-                            userId: 'user', 
-                            title: material['name'] ?? 'Imported Dialogue', 
-                            createdAt: DateTime.now()
-                          )
+                        final group = state.dialogueGroups.cast<DialogueGroup?>().firstWhere(
+                          (g) => g?.id == dId, 
+                          orElse: () => null,
                         );
-                        await state.loadExistingDialogue(group);
-                        state.switchMode(3);
+                        if (group != null) {
+                          await state.loadExistingDialogue(group);
+                        }
+                        state.switchMode(3); // Go to Chat
                       }
                   } else {
-                      if (state.currentMode != 2) {
-                        state.switchMode(2);
+                      // Move to Review Mode (Index 1) for Words/Sentences
+                      if (state.currentMode != 1) {
+                        state.switchMode(1);
                       }
                       
-                      final mId = result['material_id'] as int? ?? 0;
+                      final dynamic mIdRaw = result['material_id'];
+                      final int mId = (mIdRaw is int) ? mIdRaw : (int.tryParse(mIdRaw?.toString() ?? '0') ?? 0);
+                      
                       if (mId > 0) {
                         state.setRecordTypeFilter(type == 'word' ? 'word' : 'sentence');
                         state.selectMaterial(mId);
                       }
                   }
-                  if (context.mounted) Navigator.pop(context); // Close dialog on success
+                  if (context.mounted) Navigator.pop(context);
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text(_translateStatus(context, result['error'] ?? '', l10n))),

@@ -811,14 +811,14 @@ class DatabaseService {
                 final bool hasTarget = targetText != null && targetText.trim().isNotEmpty && targetLang != 'auto';
                 final type = entry['type'] as String? ?? effectiveDefaultType;
                 
-                // Collect Tags (File + Entry + Local Native Subject + Pivot Sync Subject)
+                // Collect Tags (File + Entry + Local Native Subject)
+                // Phase 97: Exclude syncSubject from user-visible tags to keep dropdown clean
                 final entryTags = (entry['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
-                final List<String> allTags = [
+                final List<String> allTags = {
                   ...fileTags, 
                   ...entryTags,
-                  materialSubject, // Localized title (e.g. 명사 1) - used for UI filters
-                  syncSubject // Stable internal key (e.g. nouns_1) - used for internal grouping
-                ]; 
+                  materialSubject,
+                }.toList(); // Use set literal to remove duplicates
                 
                 await saveUnifiedRecord(
                   text: sourceText,
@@ -1148,12 +1148,14 @@ class DatabaseService {
     ''');
     
     // 3. Discover Unique Tags that are NOT in materials or dialogues
-    // This ensures user-created subjects from Mode 1 show up
+    // Phase 97: Refine tag discovery to exclude system-internal keys or common non-subject tags
     final discoveredTags = await db.rawQuery('''
       SELECT DISTINCT tag FROM item_tags 
       WHERE tag NOT IN (SELECT subject FROM study_materials)
         AND tag NOT IN (SELECT title FROM dialogue_groups)
         AND tag != 'Dialogue'
+        AND tag NOT LIKE '%_1' -- Common internal sync keys like nouns_1, verbs_1
+        AND tag NOT LIKE '%_json'
     ''');
     
     final List<Map<String, dynamic>> result = [];

@@ -339,8 +339,20 @@ extension AppStateAuth on AppState {
       
       _statusMessage = 'L10N:statusImportSuccess|$mName';
       notify();
-      // Ensure material_id is returned for auto-selection in UI
-      return {'success': true, 'material_id': material['material_id'] ?? material['id']};
+
+      // Phase 97: Ensure material_id is int and prioritize the one from DB results
+      int? finalMaterialId;
+      if (material['material_id'] is int) {
+        finalMaterialId = material['material_id'];
+      } else if (material['id'] is int) {
+        finalMaterialId = material['id'];
+      }
+      
+      return {
+        'success': true, 
+        'material_id': finalMaterialId,
+        'dialogue_id': syncKey // For Dialogue mode, syncKey is used as dId
+      };
     } catch (e) {
       _statusMessage = 'L10N:statusImportFailed|$e';
       notify();
