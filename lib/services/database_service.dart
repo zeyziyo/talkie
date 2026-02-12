@@ -820,11 +820,15 @@ class DatabaseService {
                   materialSubject,
                 }.toList(); // Use set literal to remove duplicates
                 
+                // Phase 97.7: Proactive repair - if lang is 'auto', fallback to defaults
+                final effectiveSourceLang = (sourceLang == 'auto') ? (defaultSourceLang ?? 'auto') : sourceLang;
+                final effectiveTargetLang = (targetLang == 'auto') ? (defaultTargetLang ?? 'auto') : targetLang;
+
                 await saveUnifiedRecord(
                   text: sourceText,
-                  lang: sourceLang,
+                  lang: effectiveSourceLang,
                   translation: hasTarget ? targetText : '', 
-                  targetLang: hasTarget ? targetLang : '', 
+                  targetLang: hasTarget ? effectiveTargetLang : '', 
                   type: type,
                   // Extended Metadata
                   pos: (entry['pos'] ?? entryMeta['pos']) as String?,

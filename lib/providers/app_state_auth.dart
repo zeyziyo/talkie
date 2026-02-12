@@ -311,6 +311,8 @@ extension AppStateAuth on AppState {
         syncKey: syncKey, 
         userId: 'user', 
         defaultType: type,
+        defaultSourceLang: _sourceLang, 
+        defaultTargetLang: _targetLang, 
       );
       if (sResult['success'] == true) {
         localMaterialId = sResult['material_id'] as int?;
@@ -323,6 +325,8 @@ extension AppStateAuth on AppState {
         syncKey: syncKey, 
         userId: 'user', 
         defaultType: type,
+        defaultSourceLang: _targetLang, 
+        defaultTargetLang: _sourceLang, 
       );
 
       if (fetchPivot && results.length > 2 && results[2].statusCode == 200) {
@@ -334,6 +338,8 @@ extension AppStateAuth on AppState {
           syncKey: syncKey, 
           userId: 'user', 
           defaultType: type,
+          defaultSourceLang: 'en', 
+          defaultTargetLang: _sourceLang, 
         );
       }
 
