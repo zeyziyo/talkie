@@ -824,6 +824,10 @@ class DatabaseService {
                 final effectiveSourceLang = (sourceLang == 'auto') ? (defaultSourceLang ?? 'auto') : sourceLang;
                 final effectiveTargetLang = (targetLang == 'auto') ? (defaultTargetLang ?? 'auto') : targetLang;
 
+                // Phase 97.8: Generate a unique, stable integer groupId for the material entry
+                final entryId = int.tryParse(entry['id']?.toString() ?? '') ?? i;
+                final entryGroupId = (materialId * 100000) + entryId;
+
                 await saveUnifiedRecord(
                   text: sourceText,
                   lang: effectiveSourceLang,
@@ -838,10 +842,12 @@ class DatabaseService {
                   note: (entry['note'] ?? entryMeta['note'] ?? entry['context']) as String?,
                   tags: allTags.isNotEmpty ? allTags : null,
                   txn: txn,
-                  // Phase 77: Pivot Strategy Params
+                  // Phase 77/97.8: Pivot Strategy Params
                   syncSubject: syncSubject,
-                  sequenceOrder: i, 
+                  sequenceOrder: i,
+                  groupId: entryGroupId,
                   );
+
                 
                 // REMOVED: saveTranslationLinkWithMaterial (Legacy)
                 
@@ -1053,7 +1059,10 @@ class DatabaseService {
                       );
                     }
                   } else {
-                    // Create new record
+                    // Phase 97.8: Use a stable unique integer groupId for the dialogue message
+                    // Derived from dialogue ID hash + message sequence
+                    final msgGroupId = dId.hashCode + j;
+
                     groupId = await saveUnifiedRecord(
                       text: sText ?? tText!,
                       lang: (sText != null) ? sourceLang : targetLang,
@@ -1068,7 +1077,9 @@ class DatabaseService {
                       syncSubject: syncSubject,
                       tags: ['Dialogue', materialSubject, ...fileTags],
                       txn: txn,
+                      groupId: msgGroupId, // Phase 97.8: Pass explicit stable ID
                     );
+
                     
                     await txn.insert('chat_messages', {
                       'dialogue_id': dId,
@@ -1135,8 +1146,9 @@ class DatabaseService {
          JOIN sentences s ON it.item_id = s.id AND it.item_type = 'sentence'
          WHERE it.tag = m.subject), 0) as sentence_count
       FROM study_materials m 
+      GROUP BY m.subject
       ORDER BY m.imported_at DESC
-    ''');
+    ''',
     
     // 2. Get Dialogue Groups
     final dialogues = await db.rawQuery('''
@@ -1252,7 +1264,7 @@ class DatabaseService {
     
     return materials.first;
   }
-  
+
 
   // === Dialogue Group Operations (Phase 11) ===
 
@@ -1619,16 +1631,18 @@ class DatabaseService {
     // Phase 77/79: Pivot Strategy (Smart Sync) - internal stable key
     String? syncSubject,
     int? sequenceOrder,
+    int? groupId, // Phase 97.8: Explicit integer ID support
   }) async {
     final executor = txn ?? await database;
     final table = type == 'word' ? 'words' : 'sentences';
     
-    // 0. Determine Group ID (Pivot Strategy)
-    int groupId = DateTime.now().millisecondsSinceEpoch;
+    // Phase 97.8: Determine final integer Group ID
+    int effectiveGroupId = DateTime.now().millisecondsSinceEpoch;
     
-    if (syncSubject != null && sequenceOrder != null) {
+    if (groupId != null) {
+      effectiveGroupId = groupId;
+    } else if (syncSubject != null && sequenceOrder != null) {
       // Check for existing group ID for this Subject + Sequence (from any language)
-      // Implicitly, the first imported language sets the ID.
       try {
         final existing = await executor.rawQuery('''
           SELECT w.group_id 
@@ -1640,11 +1654,9 @@ class DatabaseService {
         ''', [syncSubject, sequenceOrder]);
         
         if (existing.isNotEmpty) {
-           final foundId = existing.first['group_id'] as int;
-           // Verify if this group_id is valid? Assumed yes.
-           if (foundId > 0) {
-             groupId = foundId;
-             print('[DB] Pivot Sync: Reusing Group ID $groupId for "$syncSubject" sequence $sequenceOrder');
+           final foundId = existing.first['group_id'] as int?;
+           if (foundId != null && foundId > 0) {
+             effectiveGroupId = foundId;
            }
         }
       } catch (e) {
@@ -1652,7 +1664,7 @@ class DatabaseService {
       }
     }
 
-    final timestamp = groupId; // Use determined group_id
+    final timestamp = effectiveGroupId; // Phase 97.8: Use the uniquely determined integer group_id
     final createdAt = DateTime.now().toIso8601String();
     // final table = type == 'word' ? 'words' : 'sentences'; // Already defined above
 
@@ -1972,6 +1984,65 @@ class DatabaseService {
     } catch (e) {
       print('[DB] Error marking group as synced: $e');
     }
+  /// Phase 97.8: Export Material to JSON (for sharing/manual sync)
+  static Future<String> exportMaterialToJson(int materialId) async {
+    final db = await database;
+    
+    // 1. Get Material Metadata
+    final materialRes = await db.query('study_materials', where: 'id = ?', whereArgs: [materialId]);
+    if (materialRes.isEmpty) return '{}';
+    final material = materialRes.first;
+    
+    // 2. Get Records (Joined with tags)
+    final subject = material['subject'] as String;
+    
+    final List<Map<String, dynamic>> sourceRows = await db.rawQuery('''
+      SELECT w.*, 'word' as source_table FROM words w
+      JOIN item_tags t ON w.id = t.item_id AND t.item_type = 'word'
+      WHERE t.tag = ?
+      UNION ALL
+      SELECT s.*, 'sentence' as source_table FROM sentences s
+      JOIN item_tags t ON s.id = t.item_id AND t.item_type = 'sentence'
+      WHERE t.tag = ?
+      ORDER BY created_at ASC
+    ''', [subject, subject]);
+
+    // 3. Prepare Entries
+    List<Map<String, dynamic>> entries = [];
+    
+    Map<int, List<Map<String, dynamic>>> grouped = {};
+    for (var row in sourceRows) {
+      final gId = row['group_id'] as int;
+      grouped.putIfAbsent(gId, () => []).add(row);
+    }
+    
+    for (var gId in grouped.keys) {
+      final rows = grouped[gId]!;
+      final source = rows.first;
+      final translations = rows.skip(1).toList();
+      
+      final tagRes = await db.query('item_tags', where: 'item_id = ? AND item_type = ?', whereArgs: [source['id'], source['source_table']]); 
+      final tags = tagRes.map((t) => t['tag'] as String).where((t) => t != subject).toList();
+
+      entries.add({
+        'text': source['text'],
+        'translation': translations.isNotEmpty ? translations.first['text'] : '',
+        'type': source['source_table'],
+        'pos': source['pos'],
+        'note': source['note'],
+        'tags': tags,
+      });
+    }
+
+    final Map<String, dynamic> output = {
+      'subject': subject,
+      'source_language': material['source_language'],
+      'target_language': material['target_language'],
+      'created_at': material['created_at'],
+      'entries': entries,
+    };
+
+    return jsonEncode(output);
   }
 }
 

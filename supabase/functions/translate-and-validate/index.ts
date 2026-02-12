@@ -43,12 +43,24 @@ Deno.serve(async (req) => {
          If truly ambiguous, provide a list of options in the source language (${sourceLang || 'Korean'}).
          
       3. LINGUISTIC ANALYSIS:
-         - 'pos' (Part of Speech): Identify the part of speech of the source text. 
-           (e.g., "noun", "verb", "adjective", "adverb", "preposition", "conjunction", "idiom", "sentence")
-         - 'formType' (Grammatical Form): Identify the tense or form. 
-           (e.g., "past", "present", "future", "comparative", "superlative", "plural", "singular", "formal", "informal")
-         - 'root' (Base Word): Provide the dictionary lemma/root form of the word.
-         - For sentences, set 'pos' as "sentence" and 'formType' as the overall formality (formal/informal).
+         Determine first if the input is a WORD or a SENTENCE.
+         
+         **If the input is a WORD (single word or short phrase):**
+         - 'pos' (Part of Speech): e.g., "noun", "verb", "adjective", "adverb", "preposition", "conjunction", "idiom"
+         - 'formType' (Grammatical Form): The specific inflected form.
+           For verbs: "base", "past", "present", "past_participle", "gerund"
+           For adjectives: "positive", "comparative", "superlative"
+           For nouns: "singular", "plural"
+         - 'root' (Base Word): The dictionary lemma/root form (e.g., "ran" → "run", "better" → "good")
+         - 'style': null (not applicable for words)
+         
+         **If the input is a SENTENCE (complete sentence or clause):**
+         - 'pos' (Sentence Type): e.g., "declarative" (평서문), "interrogative" (의문문), "imperative" (명령문), "exclamatory" (감탄문)
+         - 'formType': null (not applicable for sentences)
+         - 'root': null (not applicable for sentences)
+         - 'style' (Formality/Register): e.g., "formal" (존댓말/격식체), "informal" (반말/비격식체), "polite" (정중체), "casual" (구어체)
+         
+         Set 'inputType' to "word" or "sentence" based on the input.
       
       4. SAFETY & REASON:
          If the text contains EXPLICIT sexual content, SEVERE profanity, or CLEAR hate speech, set isValid to false.
@@ -65,9 +77,11 @@ Deno.serve(async (req) => {
         "isValid": boolean, 
         "reason": "string",
         "disambiguationOptions": ["string"],
-        "pos": "noun | verb | adjective | adverb | idiom | sentence | etc",
-        "formType": "past | present | formal | informal | etc",
-        "root": "string (base lemma)",
+        "inputType": "word | sentence",
+        "pos": "string (Part of Speech for words, Sentence Type for sentences)",
+        "formType": "string | null (grammatical form for words only)",
+        "root": "string | null (base lemma for words only)",
+        "style": "string | null (formality for sentences only)",
         "note": "string (brief explanation or usage tip in Korean)"
       }
 

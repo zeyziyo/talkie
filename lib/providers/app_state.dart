@@ -84,6 +84,7 @@ class AppState extends ChangeNotifier {
   String _sourcePos = ''; 
   String _sourceFormType = ''; 
   String _sourceRoot = ''; 
+  String _sourceStyle = ''; // Phase 98.1: Formality for sentences
   String _statusMessage = '';
   List<String> _aiDetectedTags = [];
   
@@ -200,6 +201,7 @@ class AppState extends ChangeNotifier {
   String get currentChatLocation => _currentChatLocation;
   String get sourcePos => _sourcePos;
   String get sourceFormType => _sourceFormType;
+  String get sourceStyle => _sourceStyle; // Phase 98.1
   String get sourceRoot => _sourceRoot;
   List<DialogueGroup> get dialogueGroups => _dialogueGroups;
   
@@ -290,6 +292,7 @@ class AppState extends ChangeNotifier {
     _aiDetectedTags = [];
     _sourcePos = '';
     _sourceFormType = '';
+    _sourceStyle = ''; // Phase 98.1
     _note = '';
     notify();
   }

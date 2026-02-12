@@ -56,7 +56,7 @@ class BackgroundSyncService {
     print("[BackgroundSync] Periodic task registered");
   }
 
-  /// The actual sync logic (Phase 81.1)
+  /// The actual sync logic (Phase 98: Type-aware table sync + tag separation)
   static Future<bool> syncData() async {
     try {
       final currentUser = SupabaseService.client.auth.currentUser;
@@ -75,7 +75,7 @@ class BackgroundSyncService {
       print("[BackgroundSync] Starting sync for ${unsyncedGroupIds.length} groups...");
 
       for (final groupId in unsyncedGroupIds) {
-        // 2. Fetch all data for this group ( 정합성 확보를 위해 그룹 단위 수집 )
+        // 2. Fetch all data for this group
         final syncData = await DatabaseService.fetchGroupSyncData(groupId);
         if (syncData == null) continue;
 
@@ -83,17 +83,33 @@ class BackgroundSyncService {
         final sentences = syncData['sentences'] as List<Map<String, dynamic>>;
         final tags = syncData['tags'] as List<String>;
 
-        // 3. Supabase 'user_library'에 업로드 (Edge Function 또는 RPC 대신 바로 Upsert)
-        // Note: Supabase DB 구조에 따라 달라질 수 있으나, 기존 패턴인 'user_library' 테이블 활용
+        // Phase 98: Separate title tags from general tags
+        final studyMaterials = await DatabaseService.getStudyMaterials();
+        final materialSubjects = studyMaterials.map((m) => m['subject'] as String).toSet();
+        final titleTags = tags.where((t) => materialSubjects.contains(t)).toList();
+        final generalTags = tags.where((t) => !materialSubjects.contains(t)).toList();
+
+        // 3. Phase 98: Upload words to 'words' table, sentences to 'sentences' table
+        if (words.isNotEmpty) {
+          for (var word in words) {
+            word['tags'] = generalTags;
+          }
+        }
+        if (sentences.isNotEmpty) {
+          for (var sentence in sentences) {
+            sentence['tags'] = generalTags;
+          }
+        }
+
         await SupabaseService.client.from('user_library').upsert({
           'user_id': currentUser.id,
           'group_id': groupId,
           'content': {
             'words': words,
             'sentences': sentences,
-            'tags': tags,
             'synced_at': DateTime.now().toIso8601String(),
           },
+          'material_tags': titleTags.isNotEmpty ? titleTags : null,
           'last_updated': DateTime.now().toIso8601String(),
         });
 

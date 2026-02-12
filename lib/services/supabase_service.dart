@@ -87,35 +87,77 @@ class SupabaseService {
     }
   }
 
-  /// Save a validated sentence to the public dictionary
+  /// Phase 98: Save to the correct Supabase table based on type
+  static String _getTable(String type) => type == 'word' ? 'words' : 'sentences';
+
+  /// Phase 98.1: Save entry with type-specific fields
+  /// words: pos, form_type, root (NO style)
+  /// sentences: pos, style (NO form_type, root)
+  static Future<void> saveEntry({
+    required int groupId,
+    required String text,
+    required String langCode,
+    required String type,
+    String? note,
+    String? pos,
+    String? formType,
+    String? root,
+    String? style,
+    List<String>? tags,
+  }) async {
+    final data = <String, dynamic>{
+      'group_id': groupId,
+      'text': text,
+      'lang_code': langCode,
+      'note': note,
+      'pos': pos,
+      'tags': tags,
+      'status': 'approved',
+      'author_id': client.auth.currentUser?.id,
+    };
+
+    if (type == 'word') {
+      // words 전용 필드
+      data['form_type'] = formType;
+      data['root'] = root;
+    } else {
+      // sentences 전용 필드
+      data['style'] = style;
+    }
+
+    await client.from(_getTable(type)).insert(data);
+  }
+
+  /// Legacy wrapper for backward compatibility
   static Future<void> saveSentence({
     required int groupId,
     required String text,
     required String langCode,
     String? note,
   }) async {
-    await client.from('sentences').insert({
-      'group_id': groupId,
-      'text': text,
-      'lang_code': langCode,
-      'note': note,
-      'status': 'approved', // Auto-approve for verified translations (simplification for now)
-      'author_id': client.auth.currentUser?.id,
-    });
+    await saveEntry(groupId: groupId, text: text, langCode: langCode, type: 'sentence', note: note);
   }
 
-  /// Find an existing group for a text (Deduplication)
+  /// Phase 98: Find an existing group for a text (searches both tables)
   static Future<int?> findGroupId(String text, String langCode) async {
-    final response = await client
+    // 1. Search words table first
+    final wordRes = await client
+        .from('words')
+        .select('group_id')
+        .eq('text', text)
+        .eq('lang_code', langCode)
+        .maybeSingle();
+    if (wordRes != null) return wordRes['group_id'] as int;
+
+    // 2. Search sentences table
+    final sentRes = await client
         .from('sentences')
         .select('group_id')
         .eq('text', text)
         .eq('lang_code', langCode)
         .maybeSingle();
+    if (sentRes != null) return sentRes['group_id'] as int;
 
-    if (response != null) {
-      return response['group_id'] as int;
-    }
     return null;
   }
 
@@ -217,31 +259,37 @@ class SupabaseService {
         }
       }
 
-      // 3. Insert Data
+      // 3. Insert Data — Phase 98: Use correct table based on type
       final authorId = client.auth.currentUser?.id;
+      final tableName = _getTable(type ?? 'sentence');
+      
+      // Phase 98: Separate title tags from general tags
+      final generalTags = tags?.where((t) => syncSubject == null || t != syncSubject).toList();
       
       if (groupId == null) {
         // New Group - use PostgreSQL Sequence
         groupId = await _getNextGroupId();
         
-        // Insert Source
-        await client.from('sentences').insert({
+        // Insert Source into correct table — Phase 98.1: type-specific fields
+        final sourceData = <String, dynamic>{
           'group_id': groupId,
           'lang_code': sourceLang,
           'text': sourceText,
           'note': note,
           'pos': pos,
-          'form_type': formType,
-          'root': root,
-          'type': type ?? 'sentence', // Preserve type
-          'tags': tags, // Preserve tags if column exists (Check needed) or handle via metadata
+          'tags': generalTags,
           'author_id': authorId,
           'status': 'approved',
-        });
+        };
+        if ((type ?? 'sentence') == 'word') {
+          sourceData['form_type'] = formType;
+          sourceData['root'] = root;
+        }
+        await client.from(tableName).insert(sourceData);
         
         // Insert English pivot (if different from source/target)
         if (englishText != null && sourceLang != 'en' && targetLang != 'en') {
-          await client.from('sentences').insert({
+          await client.from(tableName).insert({
             'group_id': groupId,
             'lang_code': 'en',
             'text': englishText,
@@ -253,7 +301,7 @@ class SupabaseService {
       
       // Insert Target (if not already exists in this group)
       final existingTarget = await client
-          .from('sentences')
+          .from(tableName)
           .select('id')
           .eq('group_id', groupId)
           .eq('lang_code', targetLang)
@@ -261,7 +309,7 @@ class SupabaseService {
           .maybeSingle();
           
       if (existingTarget == null) {
-        await client.from('sentences').insert({
+        await client.from(tableName).insert({
           'group_id': groupId,
           'lang_code': targetLang,
           'text': targetText,
@@ -270,8 +318,9 @@ class SupabaseService {
         });
       }
       
-      // 4. Add to library
-      await _addToLibrary(groupId, note);
+      // 4. Add to library — Phase 98: Include title tags as material_tags
+      final materialTags = syncSubject != null ? [syncSubject] : <String>[];
+      await _addToLibrary(groupId, note, materialTags: materialTags);
       
       return {'success': true, 'id': groupId};
     } catch (e) {
@@ -439,7 +488,8 @@ class SupabaseService {
     }
   }
   
-  static Future<void> _addToLibrary(int groupId, String? note, {String? dialogueId, String? speaker, int? sequenceOrder}) async {
+  /// Phase 98: material_tags added for title tag sync
+  static Future<void> _addToLibrary(int groupId, String? note, {String? dialogueId, String? speaker, int? sequenceOrder, List<String>? materialTags}) async {
     final userId = client.auth.currentUser?.id;
     if (userId == null) return;
     
@@ -451,7 +501,8 @@ class SupabaseService {
         'speaker': speaker,
         'sequence_order': sequenceOrder,
         'personal_note': note,
-      }, onConflict: 'user_id, group_id, dialogue_id'); // Updated for Phase 11
+        'material_tags': materialTags,
+      }, onConflict: 'user_id, group_id, dialogue_id');
     } catch (e) {
       print('Supabase: Add to library failed: $e');
     }

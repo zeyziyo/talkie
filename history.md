@@ -23,6 +23,12 @@
 
 ## 📅 최근 주요 변경 로그 (Recent Changelog)
 
+### [2026-02-12] Supabase 스키마 정규화 및 필드 의미 분리 (Phase 98 + 98.1)
+- **Schema**: Supabase `words` 테이블 신규 생성, `user_library`에 `material_tags` 컬럼 추가.
+- **Field Normalization**: `words`는 `pos`(품사)/`form_type`(형태)/`root`(기본형), `sentences`는 `pos`(문장종류)/`style`(존댓말/반말)로 필드 의미 분리.
+- **Sync**: 태그를 제목 태그(`user_library.material_tags`)와 일반 태그(`words.tags`/`sentences.tags`)로 분리 저장.
+- **Edge Function**: `translate-and-validate` 프롬프트를 단어/문장 구분 분석으로 업데이트, `inputType`/`style` 필드 추가.
+
 ### [2026-02-12] Technical Debt Cleanup & Optimization (Phase 96)
 - **Centralization**: `lib/constants/app_constants.dart`를 생성하여 분산되어 있던 서버 URL, GitHub 경로, 기본 학습 자료 명칭 등을 상수로 통합 관리.
 - **Refactoring**: `AppStateSettings` 내의 로캘 맵핑 로직(`getServiceLocale`)을 하나로 통합하고 중복된 레거시 메서드를 제거하여 코드 응집도 향상.

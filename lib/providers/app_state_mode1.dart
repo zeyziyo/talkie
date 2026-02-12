@@ -218,6 +218,12 @@ extension AppStateMode1 on AppState {
         _sourceRoot = rawRoot;
       }
       
+      // Phase 98.1: Style (formality for sentences)
+      final rawStyle = result['style'] as String? ?? '';
+      if (_sourceStyle.isEmpty && rawStyle.isNotEmpty) {
+        _sourceStyle = rawStyle;
+      }
+      
       // 5. Increment Usage (NEW)
       await _usageService.incrementUsage();
       
@@ -241,7 +247,7 @@ extension AppStateMode1 on AppState {
     return null;
   }
 
-  /// Helper to save to Supabase (Extracted for Dual Write)
+  /// Phase 98: Helper to save to Supabase (Dual Write with type branching + tag separation)
   Future<void> _saveToSupabase({
     required String? dialogueId, 
     required String speaker, 
@@ -256,30 +262,49 @@ extension AppStateMode1 on AppState {
 
       try {
         final timestamp = DateTime.now().millisecondsSinceEpoch;
+        final itemType = _isWordMode ? 'word' : 'sentence';
+        final tableName = itemType == 'word' ? 'words' : 'sentences';
         
-        // 1. Save Source
-        await SupabaseService.client.from('sentences').insert({
+        // Phase 98: Separate title tags from general tags
+        final materialSubjects = _studyMaterials.map((m) => m['subject'] as String).toSet();
+        final allTags = <String>[];
+        if (_selectedSaveSubject.isNotEmpty) allTags.add(_selectedSaveSubject);
+        
+        final titleTags = allTags.where((t) => materialSubjects.contains(t)).toList();
+        final generalTags = allTags.where((t) => !materialSubjects.contains(t)).toList();
+        
+        // 1. Phase 98.1: Build type-specific data for correct table
+        final data = <String, dynamic>{
           'lang_code': _targetLang,
           'text': _translatedText,
           'group_id': timestamp,
           'pos': pos,
-          'form_type': formType,
-          'root': root,
+          'tags': generalTags.isNotEmpty ? generalTags : null,
           'author_id': authorId,
           'status': 'approved',
-        });
+        };
 
-        // 2. Add to User Library (With Dialogue Metadata)
+        if (itemType == 'word') {
+          data['form_type'] = formType;
+          data['root'] = root;
+        } else {
+          data['style'] = _sourceStyle.isNotEmpty ? _sourceStyle : null;
+        }
+
+        await SupabaseService.client.from(tableName).insert(data);
+
+        // 2. Add to User Library with title tags (personal) + dialogue metadata
         await SupabaseService.client.from('user_library').insert({
           'user_id': authorId,
           'group_id': timestamp,
           'personal_note': _note.isNotEmpty ? _note : null,
+          'material_tags': titleTags.isNotEmpty ? titleTags : null,
           'dialogue_id': dialogueId,
           'speaker': speaker,
           'sequence_order': sequenceOrder,
         });
 
-        debugPrint('[AppState] Supabase Cloud Sync Successful: groupId=$timestamp, dialogueId=$dialogueId');
+        debugPrint('[AppState] Supabase Cloud Sync Successful: table=$tableName, groupId=$timestamp, titleTags=$titleTags, generalTags=$generalTags');
       } catch (e) {
         debugPrint('[AppState] Supabase background save failed: $e');
       }
@@ -340,6 +365,7 @@ extension AppStateMode1 on AppState {
         pos: _sourcePos.isNotEmpty ? _sourcePos : null,
         formType: _sourceFormType.isNotEmpty ? _sourceFormType : null,
         root: _sourceRoot.isNotEmpty ? _sourceRoot : null,
+        style: _sourceStyle.isNotEmpty ? _sourceStyle : null, // Phase 98.1
         note: _note.isNotEmpty ? _note : null,
         tags: finalTags,
         syncSubject: syncKey,
@@ -478,9 +504,19 @@ extension AppStateMode1 on AppState {
   /// Jump to result: Just set query and clear tags. 
   /// Type switching is NOT needed because we only search within the current tab.
   void jumpToSearchResult(String text, String type) {
-    _selectedTags.clear(); // Clear tag filters to show result
-    _selectedMaterialId = null; 
-    setSearchQuery(text); // This calls loadRecordsByTags
+    if (type == 'material') {
+      // Find material by title and select it
+      final material = _studyMaterials.firstWhere((m) => m['subject'] == text, orElse: () => {});
+      if (material.isNotEmpty) {
+        _selectedMaterialId = material['id'] as int;
+        _selectedTags = [text];
+        _searchQuery = ''; // Clear text search to show material items
+      }
+    } else {
+      _selectedTags.clear(); // Clear tag filters to show result
+      _selectedMaterialId = null; 
+      setSearchQuery(text); // This calls loadRecordsByTags
+    }
     notify();
   }
   

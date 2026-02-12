@@ -39,7 +39,7 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
     final l10n = AppLocalizations.of(context)!;
     
     // Separate Title Tags (Materials) from General Tags
-    final List<String> materialSubjects = widget.appState.studyMaterials.map((m) => m['subject'] as String).toList();
+    final List<String> materialSubjects = widget.appState.studyMaterials.map((m) => m['subject'] as String).toSet().toList();
     final List<String> allAvailableTags = widget.appState.availableTags;
     
     // Title Tags are strictly the subjects of imported materials
