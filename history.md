@@ -21,6 +21,12 @@
 
 ---
 
+### [2026-02-13] Mode 2 Data Visibility & Null Safety Fix (Phase 114)
+- **Bug Fix**: 온라인 자료실 자료 임포트 시 복습 모드(Mode 2)에서 카드가 표시되지 않던 결함(TypeError 및 타입 불일치)을 해결했습니다.
+- **Integrity**: `Mode2Card` 위젯에 널 안전성(Null Safety)을 적용하여 특정 언어의 번역 정보가 누락되더라도 리스트 전체의 렌더링이 중단되지 않도록 보완했습니다.
+- **Logic**: `is_memorized` 상태 확인 로직을 `bool` 매칭으로 수정하여 `AppState`와의 데이터 정합성을 확보했습니다.
+- **Quality**: `flutter analyze` 정적 분석을 통해 미사용 변수 및 테스트 코드의 중복 임포트를 정리하여 경고 제로 상태를 달성했습니다.
+
 ### [2026-02-13] Pivot Sync Precision & Performance Optimization (Phase 105 ~ 108)
 - **UI/L10n**: 문체 배지(`Style Badge`)를 80개 언어 전체에 적용하고, Mode 2 카드에서 문체 정보를 시각적으로 확인할 수 있도록 개선 (Phase 105).
 - **Integrity**: 서버의 정식 그룹 ID(`Canonical ID`) 확인 및 로컬 임시 ID의 자동 재연결(`Relinking`) 로직을 구현하여 데이터 정합성 강화 (Phase 106).
@@ -28,10 +34,12 @@
 - **Performance**: `sqflite`의 `Batch` 객체와 SQL 서브쿼리를 활용하여 수천 개의 레코드와 태그를 한꺼번에 삽입하는 고속 임포트 엔진 구축 (Phase 108).
 - **Database**: 인덱스 추가(`v16`)를 통해 대량 데이터 조회 성능을 최적화하고 시스템 안정성을 확보.
 
-### [2026-02-13] Focus & Autocomplete UX Maintenance (Phase 109)
+### [2026-02-13] Focus & Autocomplete UX Maintenance (Phase 109 / 113)
 - **Bug Fix**: 복습/발음 연습 모드에서 검색어 초기화 시 자동 완성 목록(Overlay)이 사라지지 않던 잔상 문제를 해결.
 - **Repository**: `WordRepository` 및 `SentenceRepository`의 검색 메서드에 빈 검색어 가드를 추가하여 불필요한 DB 조회를 차단.
 - **UI/UX**: `Autocomplete` 위젯의 컨트롤러와 `AppState` 간의 동기화 로직을 강화하고, 삭제 버튼 클릭 시 오버레이가 즉시 닫히도록 개선.
+- **Sync Fix**: `AppStateMode1.jumpToSearchResult`에서 '학습 자료(material)' 선택 시에도 `loadRecordsByTags()`가 호출되도록 하여 선택 결과가 즉시 UI에 반영되도록 수정 (Phase 113).
+- **Focus Fix**: 각 모드의 검색창 클리어(X) 버튼 및 항목 선택 시 `focusNode.unfocus()` 또는 `FocusScope`를 통해 오버레이를 강제로 해제하여 ghosting 현상 해결.
 
 ### [2026-02-13] Device Library & Localization (Phase 111)
 - **Feature**: 기기 자료실(Device Library) 기능 추가. HomeScreen 메뉴에 로컬 JSON 파일 임포트 기능 연결.

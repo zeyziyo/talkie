@@ -50,7 +50,10 @@ class _Mode2WidgetState extends State<Mode2Widget> {
 
         final selectedMaterialId = appState.selectedMaterialId;
         final materialRecords = appState.filteredMaterialRecords; // Use filtered records
-        final studiedIds = materialRecords.where((r) => r['is_memorized'] == 1).map((r) => r['id'] as int).toSet();
+        final studiedIds = materialRecords
+            .where((r) => r['is_memorized'] == true)
+            .map((r) => r['id'] as int? ?? 0)
+            .toSet();
         
 
 
@@ -83,7 +86,7 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                         onSelected: (Map<String, dynamic> selection) {
                            // Just jump to result within current tab
                            appState.jumpToSearchResult(selection['text']!, selection['type']!);
-                           FocusScope.of(context).unfocus(); // Dismiss overlay
+                           FocusScope.of(context).unfocus(); // Phase 113: Dismiss overlay using correct scope
                         },
                         fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
                           // Phase 109: Robust Sync with AppState's query
@@ -115,11 +118,10 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                                 IconButton(
                                   icon: const Icon(Icons.clear),
                                   onPressed: () {
-                                    // Phase 109: Explicitly clear and trigger overlay dismissal
+                                    // Phase 109/113: Explicitly clear and trigger overlay dismissal
                                     textEditingController.clear();
                                     appState.setSearchQuery('');
-                                    // Triggering onChanged with empty value helps Autocomplete close overlay
-                                    focusNode.requestFocus(); 
+                                    focusNode.unfocus(); // Phase 113: Force collapse overlay
                                   },
                                 ),
                             ],
@@ -572,13 +574,20 @@ class _Mode2WidgetState extends State<Mode2Widget> {
     Key? key,
     required int index,
   }) {
-    if (!_itemKeys.containsKey(index)) _itemKeys[index] = GlobalKey();
+    if (!_itemKeys.containsKey(index)) {
+      _itemKeys[index] = GlobalKey();
+    }
+    
+    final translationId = record['id'] as int? ?? 0;
+    final isStudied = studiedIds.contains(translationId);
+    final isExpanded = _expandedCards.contains(translationId);
+    final isPlaying = _isAutoPlaying && _currentPlayingIndex == index;
     return Mode2Card(
       appState: appState,
       record: record,
-      isStudied: studiedIds.contains(record['id']),
-      isExpanded: _expandedCards.contains(record['id']),
-      isPlaying: _isAutoPlaying && _currentPlayingIndex == index,
+      isStudied: isStudied,
+      isExpanded: isExpanded,
+      isPlaying: isPlaying,
       index: index,
       itemKey: key ?? _itemKeys[index],
       onToggleExpand: (id) => setState(() => _expandedCards.contains(id) ? _expandedCards.remove(id) : _expandedCards.add(id)),

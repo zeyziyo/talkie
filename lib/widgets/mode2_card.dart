@@ -27,12 +27,12 @@ class Mode2Card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final translationId = record['id'] as int;
+    final translationId = record['id'] as int? ?? 0;
     // final groupId = record['group_id'] as int;
-    final targetId = record['target_id'] as int; // Added Phase 53
-    final recordSourceLang = record['source_lang'] as String;
+    final targetId = record['target_id'] as int? ?? translationId; 
+    final recordSourceLang = record['source_lang'] as String? ?? appState.sourceLang;
 
-    final recordTargetLang = record['target_lang'] as String;
+    final recordTargetLang = record['target_lang'] as String? ?? appState.targetLang;
     
     // Check if we need to swap display based on current AppState settings
     final isSwapped = appState.sourceLang == recordTargetLang;
@@ -42,12 +42,12 @@ class Mode2Card extends StatelessWidget {
     final bottomLang = isSwapped ? recordSourceLang : recordTargetLang;
     
     final topText = isSwapped 
-        ? (record['target_text'] as String) 
-        : (record['source_text'] as String);
+        ? (record['target_text'] as String? ?? '') 
+        : (record['source_text'] as String? ?? '');
         
     final bottomText = isSwapped 
-        ? (record['source_text'] as String) 
-        : (record['target_text'] as String);
+        ? (record['source_text'] as String? ?? '') 
+        : (record['target_text'] as String? ?? '');
         
     final contextTag = record['note'] as String?;
 
