@@ -55,11 +55,13 @@ class _ChatScreenState extends State<ChatScreen> {
     );
     
     // Phase 70: Ensure Participants Exist for Legacy Messages
-    final Set<String> speakers = history.map((m) => m['speaker'] as String? ?? 'Unknown').toSet();
+    final Set<String> speakers = history
+        .map((m) => m['speaker'] as String? ?? 'Unknown')
+        .where((s) => s.isNotEmpty)
+        .toSet();
+        
     for (final speakerName in speakers) {
-       // Check if this speaker exists in activeParticipants
-       // We force a getOrAdd to ensure they are registered
-       final role = speakerName == 'User' ? 'user' : 'ai';
+       final role = speakerName.toLowerCase() == 'user' ? 'user' : 'ai';
        await appState.getOrAddParticipant(name: speakerName, role: role);
     }
 
@@ -176,7 +178,7 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() {
        _isLoading = true;
        _messages.add({
-        'speaker': isPartnerMessage ? l10n.partner : 'User',
+        'speaker': isPartnerMessage ? 'Partner' : 'User',
         'source_text': text, // Primary text (Original)
         'target_text': '',   // Translated
       });
@@ -215,7 +217,7 @@ class _ChatScreenState extends State<ChatScreen> {
            inputLang,
            translatedText, // translation
            outputLang,
-           isPartnerMessage ? l10n.partner : 'User'
+           isPartnerMessage ? 'Partner' : 'User'
         );
         
         setState(() => _isLoading = false);
@@ -318,7 +320,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (mounted) {
         setState(() {
           _messages.add({
-            'speaker': 'AI',
+            'speaker': appState.activePersona ?? 'AI',
             'source_text': aiResponse, 
             'target_text': translatedResponse,
           });
@@ -644,8 +646,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Widget _buildMessageBubble(Map<String, dynamic> msg, AppState appState, AppLocalizations l10n) {
     final speakerName = msg['speaker'] ?? 'Unknown';
-    final isUser = speakerName == 'User';
-    final isPartner = speakerName == l10n.partner;
+    final bool isUser = speakerName.toLowerCase() == 'user';
+    final bool isPartner = speakerName.toLowerCase() == 'partner';
     
     // Find Participant Config
     final participant = appState.activeParticipants.firstWhere(
@@ -746,7 +748,7 @@ class _ChatScreenState extends State<ChatScreen> {
           
           // 3. Name (Me)
           Text(
-             l10n.me,
+             isUser ? l10n.me : (isPartner ? l10n.partner : speakerName),
              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey[700]),
           ),
         ],

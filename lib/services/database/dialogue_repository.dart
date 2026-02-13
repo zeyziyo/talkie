@@ -54,12 +54,8 @@ class DialogueRepository {
 
     return await db.rawQuery('''
       SELECT d.*,
-        COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it 
-         JOIN words w ON it.item_id = w.id AND it.item_type = 'word'
-         WHERE it.tag = d.title), 0) as word_count,
-        COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it
-         JOIN sentences s ON it.item_id = s.id AND it.item_type = 'sentence'
-         WHERE it.tag = d.title), 0) as sentence_count
+        (SELECT COUNT(*) FROM chat_messages m WHERE m.dialogue_id = d.id AND LOWER(m.speaker) = 'user') as sentence_count,
+        (SELECT COUNT(*) FROM chat_messages m WHERE m.dialogue_id = d.id AND LOWER(m.speaker) != 'user') as ai_count
       FROM dialogue_groups d
       $whereClause
       ORDER BY d.created_at DESC
@@ -134,32 +130,37 @@ class DialogueRepository {
         Map<String, dynamic>? source;
         Map<String, dynamic>? target;
 
+        // Try exact match with provided languages
         if (sourceLang != null) {
-          source = allItems.where((s) => s['lang_code'] == sourceLang).firstOrNull;
+          source = allItems.where((s) => (s['lang_code'] as String).startsWith(sourceLang.substring(0, 2))).firstOrNull;
         }
         if (targetLang != null) {
-          target = allItems.where((s) => s['lang_code'] == targetLang).firstOrNull;
+          target = allItems.where((s) => (s['lang_code'] as String).startsWith(targetLang.substring(0, 2))).firstOrNull;
         }
 
+        // Fallbacks
         source ??= allItems.first;
-        target ??= allItems.length > 1 
-            ? (allItems[1]['lang_code'] != source['lang_code'] ? allItems[1] : allItems.firstWhere((s) => s['id'] != source!['id'], orElse: () => allItems.first)) 
-            : source;
+        if (allItems.length > 1) {
+           target ??= allItems.firstWhere((s) => s['id'] != source!['id'], orElse: () => allItems[1]);
+        } else {
+           target ??= source;
+        }
 
         results.add({
           'id': msg['id'],
           'group_id': groupId,
-          'source_text': source['text'],
-          'target_text': target['text'],
-          'source_lang': source['lang_code'],
-          'target_lang': target['lang_code'],
-          'speaker': msg['speaker'] ?? msg['p_name'],
+          'source_text': source['text'] ?? '',
+          'target_text': target['text'] ?? '',
+          'source_lang': source['lang_code'] ?? 'en',
+          'target_lang': target['lang_code'] ?? 'en',
+          'speaker': msg['speaker'] ?? msg['p_name'] ?? 'Unknown',
           'participant_id': msg['participant_id'],
           'gender': msg['gender'], 
           'participant_lang': msg['participant_lang'], 
           'sequence_order': msg['sequence_order'],
           'created_at': msg['created_at'],
           'note': source['note'] ?? target['note'],
+          'is_memorized': (source['is_memorized'] == 1 || target['is_memorized'] == 1),
         });
       }
     }

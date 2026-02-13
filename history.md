@@ -33,6 +33,22 @@
 - **Repository**: `WordRepository` 및 `SentenceRepository`의 검색 메서드에 빈 검색어 가드를 추가하여 불필요한 DB 조회를 차단.
 - **UI/UX**: `Autocomplete` 위젯의 컨트롤러와 `AppState` 간의 동기화 로직을 강화하고, 삭제 버튼 클릭 시 오버레이가 즉시 닫히도록 개선.
 
+### [2026-02-13] Device Library & Localization (Phase 111)
+- **Feature**: 기기 자료실(Device Library) 기능 추가. HomeScreen 메뉴에 로컬 JSON 파일 임포트 기능 연결.
+- **Improved**: 임포트 시 동일한 제목과 언어의 자료가 존재할 경우 중복 임포트를 차단하고 안내 메시지 표시 로직 추가.
+- **L10n**: 다국어(ES, JA) 번역 보완 및 중복 제목 에러 메시지(importDuplicateTitleError) 추가.
+
+### [2026-02-13] Dialogue Fix & Mode 2 Isolation (Phase 112)
+- **Bug Fix**: 새 대화 저장 후 채팅 히스토리에서 내용이 나타나지 않던 문제(로드 쿼리 언어 코드 불일치 등) 해결.
+- **Isolation**: 사용자 요청에 따라 대화(Dialogue) 자료를 복습 모드(Mode 2) 학습 자료 목록에서 완전히 제거하여 채팅 전용으로 격리.
+- **Integrity**: `DialogueRepository`의 메시지 조회 쿼리를 강화하고, `AppStateChat`에 참가자 생성 시 널 참조 방지 가드를 추가하여 안정성 확보.
+- **Reporting**: 대화 목록 로드 시 'User'/'user' 대소문자를 구분하지 않고 메시지 수를 정확히 카운트하도록 개선.
+
+### [2026-02-13] Import Visibility & ID Type Mismatch Fix (Phase 110)
+- **Bug Fix**: 자료 임포트 시 `syncKey`와 `id` 필드의 타입 불일치로 인해 임포트된 자료가 즉시 화면에 노출되지 않던 문제 해결.
+- **Integrity**: `DatabaseService.importFromJsonWithMetadata` 로직을 개선하여 임포트된 자료의 `id`가 `int` 타입으로 정확히 저장되도록 수정.
+- **UI/UX**: 임포트 완료 후 `AppState`의 `notifyListeners()`를 호출하여 UI가 즉시 업데이트되고, 임포트된 자료가 화면에 바로 표시되도록 개선.
+
 ### [2026-02-12] Supabase 스키마 정규화 및 양방향 동기화 정합성 완료 (Phase 98 + 98.1 + 98.2 + 98.3)
 - **Schema Alignment**: 로컬 SQLite와 Supabase 공용 DB의 `words`, `sentences` 테이블 스키마를 1:1로 일치시켰습니다. 불필요한 필드는 각 테이블에서 제거하여 데이터 순수성을 확보했습니다.
 - **Normalization**: `words`는 `pos`/`form_type`/`root`, `sentences`는 `pos`/`style` 필드로 명확히 분리하여 전문화된 정보만 보관합니다.

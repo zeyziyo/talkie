@@ -30,18 +30,21 @@ extension AppStateChat on AppState {
     if (existing.id != 'temp') return existing;
 
     // 2. Create New
+    final dId = _activeDialogueId ?? (role == 'user' ? 'legacy' : 'unknown');
     final newId = const Uuid().v4();
     final newParticipant = ChatParticipant(
       id: newId,
-      dialogueId: _activeDialogueId!,
+      dialogueId: dId,
       name: name,
       role: role,
-      gender: gender ?? (role == 'user' ? _chatUserGender : _chatAiGender),
-      langCode: languageCode ?? (role == 'user' ? _sourceLang : _targetLang),
+      gender: gender ?? (role.toLowerCase() == 'user' ? _chatUserGender : _chatAiGender),
+      langCode: languageCode ?? (role.toLowerCase() == 'user' ? _sourceLang : _targetLang),
       avatarColor: Colors.primaries[Random().nextInt(Colors.primaries.length)].toARGB32(),
     );
 
-    await DatabaseService.insertParticipant(newParticipant.toJson());
+    if (dId != 'legacy' && dId != 'unknown') {
+      await DatabaseService.insertParticipant(newParticipant.toJson());
+    }
     _activeParticipants.add(newParticipant);
     notify();
     
@@ -434,7 +437,7 @@ extension AppStateChat on AppState {
         await txn.insert('chat_messages', {
           'dialogue_id': _activeDialogueId,
           'group_id': timestamp,
-          'speaker': 'user',
+          'speaker': 'User', // Standardized to Title case for ChatScreen compatibility
           'sequence_order': _currentDialogueSequence,
           'created_at': createdAt,
         });
@@ -448,7 +451,7 @@ extension AppStateChat on AppState {
         targetText: targetText,
         sourceLang: _sourceLang,
         targetLang: _targetLang,
-        speaker: 'user',
+        speaker: 'User',
         sequenceOrder: _currentDialogueSequence,
       ).catchError((e) => debugPrint('[AppState] Cloud Sync Error: $e'));
 
@@ -527,7 +530,7 @@ extension AppStateChat on AppState {
         targetText: targetText,
         sourceLang: _sourceLang,
         targetLang: _targetLang,
-        speaker: speaker ?? 'unknown',
+        speaker: finalSpeaker,
         sequenceOrder: _currentDialogueSequence,
       ).catchError((e) => debugPrint('[AppState] Background Cloud Sync Error: $e'));
     } catch (e) {

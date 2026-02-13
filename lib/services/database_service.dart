@@ -103,13 +103,11 @@ class DatabaseService {
   // --- Material Repository Delegation ---
   static Future<List<Map<String, dynamic>>> getStudyMaterials() async {
     final materials = await MaterialRepository.getAll();
+    /* Phase 112: Dialogues are handled separately in Chat Mode.
     final dialogues = await DialogueRepository.getGroupsWithCounts();
-    
-    final List<Map<String, dynamic>> result = materials.map((m) => Map<String, dynamic>.from(m)).toList();
-    
     for (var d in dialogues) {
       result.add({
-        'id': d['id'], // String UUID
+        'id': d['id'],
         'subject': d['title'] ?? 'Conversation',
         'source': d['persona'] ?? 'AI Chat',
         'source_language': 'auto', 
@@ -122,20 +120,15 @@ class DatabaseService {
         'is_dialogue': 1,
       });
     }
+    */
     return result;
   }
   static Future<Map<String, dynamic>?> getStudyMaterialById(int id) => MaterialRepository.getById(id);
 
   // --- Data Transfer Delegation ---
-  static Future<Map<String, dynamic>> importFromJsonWithMetadata(
-    String jsonContent, {
-    String? overrideSubject,
-    String? syncKey,
-    String? defaultType,
-    String? defaultSourceLang,
-    String? defaultTargetLang,
     String? fileName,
     String? userId,
+    bool checkDuplicate = false,
   }) => DataTransferService.importFromJsonWithMetadata(
     jsonContent,
     overrideSubject: overrideSubject,
@@ -145,6 +138,7 @@ class DatabaseService {
     defaultTargetLang: defaultTargetLang,
     fileName: fileName,
     userId: userId,
+    checkDuplicate: checkDuplicate,
   );
 
   static Future<Map<String, dynamic>> importFromJson(String content, {String? fileName}) {

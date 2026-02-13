@@ -64,6 +64,7 @@
   "errors": "오류:",
   "error": "오류",
   "importErrorMessage": "파일 불러오기 실패:\\n{error}",
+  "importDuplicateTitleError": "동일한 제목의 자료가 이미 존재합니다. 제목을 변경한 후 다시 시도해주세요.",
   "selectStudyMaterial": "학습 자료 선택",
   "subject": "제목:",
   "source": "출처:",

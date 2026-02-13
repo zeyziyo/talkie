@@ -523,7 +523,7 @@
   "micButtonTooltip": "Start Listening",
   "menuHelp": "Help",
   "menuWebDownload": "Get Material from Web",
-  "menuDeviceImport": "Import from Device",
+  "menuDeviceImport": "デバイスからインポート",
   "menuSettings": "Settings",
   "@menuSettings": {
     "description": "Menu item for language settings"
