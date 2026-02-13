@@ -50,13 +50,15 @@ class UnifiedRepository {
       }
     }
 
+    final timestamp = DateTime.now().toIso8601String();
+
     final row = {
       'group_id': gId,
       'text': text,
       'lang_code': lang,
       'pos': pos,
       'note': note,
-      'created_at': DateTime.now().toIso8601String(),
+      'created_at': timestamp,
     };
 
     int id;
@@ -81,8 +83,16 @@ class UnifiedRepository {
         'group_id': gId,
         'text': translation,
         'lang_code': targetLang,
-        'created_at': DateTime.now().toIso8601String(),
+        // Phase 116: Sync ONLY shared metadata. Linguistic fields (root, form_type) must remain isolated.
+        'pos': pos,  // POS is generally shared conceptually in translations
+        'note': note,
+        'created_at': timestamp,
       };
+
+      if (type != 'word') {
+        targetRow['style'] = style; // Sentence style is shared
+      }
+
       int tId;
       if (type == 'word') {
         tId = await WordRepository.insert(targetRow, txn: txn);

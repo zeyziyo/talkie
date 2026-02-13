@@ -354,6 +354,16 @@ extension AppStateMode1 on AppState {
         finalTags.add(subjectToSave);
       }
 
+      // Phase 116: Ensure the material subject exists in study_materials table
+      // This ensures it appears in the "Title Tag (Material)" dropdown in Mode 2/3 filter
+      await DatabaseService.createStudyMaterial(
+        subject: subjectToSave,
+        source: 'User Input',
+        sourceLanguage: _sourceLang,
+        targetLanguage: _targetLang,
+        createdAt: DateTime.now().toIso8601String(),
+      );
+
       // Phase 77: Pivot Strategy (Internal key check for linking)
       String? syncKey;
       if (_englishText.isNotEmpty) {
@@ -549,6 +559,7 @@ extension AppStateMode1 on AppState {
         _selectedMaterialId = material['id'] as int;
         _selectedTags = [text];
         _searchQuery = ''; // Clear text search to show material items
+        loadRecordsByTags(); // Phase 113: Ensure UI updates immediately
       }
     } else {
       _selectedTags.clear(); // Clear tag filters to show result

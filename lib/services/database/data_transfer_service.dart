@@ -33,7 +33,9 @@ class DataTransferService {
       final syncSubject = syncKey ?? materialSubject;
       final source = (meta['source'] ?? data['source']) as String? ?? 'File Upload';
       final fileCreatedAt = (meta['created_at'] ?? data['created_at']) as String? ?? DateTime.now().toIso8601String();
+      final batchCreatedAt = DateTime.now().toIso8601String();
       final entryDefaultType = (data['default_type'] ?? meta['default_type'] ?? defaultType) as String? ?? 'sentence';
+      final entryPos = (data['pos'] ?? meta['pos']) as String?;
       
       final fileTags = (meta['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
 
@@ -87,7 +89,6 @@ class DataTransferService {
             for (var i = 0; i < entries.length; i++) {
               try {
                 final entry = entries[i] as Map<String, dynamic>;
-                final entryMeta = entry['meta'] as Map<String, dynamic>? ?? {};
                 
                 final sText = (entry['source_text'] ?? entry['text']) as String?;
                 final tText = (entry['target_text'] ?? entry['translation']) as String?;
@@ -101,44 +102,57 @@ class DataTransferService {
                 final entryTags = (entry['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
                 final List<String> allTags = [...fileTags, ...entryTags, materialSubject, syncSubject];
                 
-                // Directly use batch and manual logic for high performance (skipping high-level record save if possible)
-                // For simplicity and correctness, we keep using UnifiedRepository but ideally it should support batch
-                // Since UnifiedRepository.saveUnifiedRecord returns gId, we can't easily batch it unless we pre-calculate gId.
+                final int gId = DateTime.now().millisecondsSinceEpoch + i; 
                 
-                final int gId = DateTime.now().millisecondsSinceEpoch + i; // Unique sequence in batch
-                
+                // Phase 117: Intelligent Metadata Extraction with Default Inheritance
+                String? getVal(dynamic item, String key, [String? topLevelDefault]) {
+                   final val = item[key] as String?;
+                   if (val == null || val.trim().isEmpty) return (topLevelDefault?.trim().isEmpty ?? true) ? null : topLevelDefault;
+                   return val.trim();
+                }
+
                 final row = {
                   'group_id': gId,
                   'text': sText,
                   'lang_code': sourceLang,
-                  'pos': (entry['pos'] ?? entryMeta['pos']) as String?,
-                  'note': (entry['note'] ?? entryMeta['note'] ?? entry['context']) as String?,
-                  'created_at': DateTime.now().toIso8601String(),
+                  'pos': getVal(entry, 'pos', entryPos), // Inherit from top-level if entry pos is empty
+                  'note': getVal(entry, 'note'),
+                  'created_at': batchCreatedAt,
                 };
                 
                 final type = entry['type'] as String? ?? entryDefaultType;
                 final table = type == 'word' ? 'words' : 'sentences';
                 if (type == 'word') {
-                  row['form_type'] = (entry['form_type'] ?? entryMeta['form_type']) as String?;
-                  row['root'] = (entry['root'] ?? entryMeta['root']) as String?;
+                  row['form_type'] = getVal(entry, 'form_type');
+                  row['root'] = getVal(entry, 'root');
                 } else {
-                  row['style'] = (entry['style'] ?? entryMeta['style']) as String?;
+                  row['style'] = getVal(entry, 'style');
                 }
 
                 batch.insert(table, row);
                 
                 if (hasTarget) {
-                  batch.insert(table, {
+                  final targetRow = {
                     'group_id': gId,
                     'text': tText,
                     'lang_code': targetLang,
-                    'created_at': DateTime.now().toIso8601String(),
-                  });
+                    'created_at': batchCreatedAt,
+                    // Phase 117: Use target-specific metadata if available, fallback to source/top-level defaults
+                    'pos': getVal(entry, 'target_pos') ?? getVal(entry, 'pos', entryPos),
+                    'note': getVal(entry, 'note'), // Note is shared context
+                  };
+
+                  if (type == 'word') {
+                    targetRow['form_type'] = getVal(entry, 'target_form_type');
+                    targetRow['root'] = getVal(entry, 'target_root');
+                  } else {
+                    targetRow['style'] = getVal(entry, 'target_style') ?? getVal(entry, 'style');
+                  }
+
+                  batch.insert(table, targetRow);
                 }
 
-                // Phase 108: Batch tags using SQL subquery to avoid individual ID lookups
                 for (var t in allTags) {
-                  // This is a high-performance way to link tags to newly inserted items by group_id
                   batch.execute('''
                     INSERT INTO item_tags (item_id, item_type, tag)
                     SELECT id, ?, ? FROM $table WHERE group_id = ?
@@ -153,9 +167,9 @@ class DataTransferService {
             }
             await batch.commit(noResult: true);
           } 
-         
-         // Case B: Dialogues
-         if (dialogues != null) {
+          
+          // Case B: Dialogues
+          if (dialogues != null) {
             for (var d in dialogues) {
               final dMap = d as Map<String, dynamic>;
               final dMeta = dMap['meta'] as Map<String, dynamic>? ?? {};
@@ -163,7 +177,6 @@ class DataTransferService {
               final dTitle = (dMap['title'] ?? dMeta['title']) as String? ?? nativeSubject ?? syncSubject;
               final dPersona = (dMap['persona'] ?? dMeta['persona']) as String? ?? 'Partner';
               
-              // Smart Sync for Dialogues
               final existingGroup = await txn.query(
                 'dialogue_groups',
                 where: '(title = ? OR note = ?) AND user_id = ?',
@@ -176,7 +189,6 @@ class DataTransferService {
                 dId = existingGroup.first['id'] as String;
               } else {
                 dId = '${DateTime.now().millisecondsSinceEpoch}_$importedCount';
-
                 await DialogueRepository.insertGroup(
                   id: dId,
                   userId: userId, 
@@ -251,20 +263,18 @@ class DataTransferService {
                       tags: ['Dialogue', dTitle, materialSubject, ...fileTags],
                       txn: txn,
                     );
-                    
                     await txn.insert('chat_messages', {
                       'dialogue_id': dId,
                       'group_id': gId,
                       'speaker': msg['speaker'] ?? 'Unknown',
                       'sequence_order': j,
-                      'created_at': DateTime.now().toIso8601String(),
+                      'created_at': batchCreatedAt,
                     });
                   }
-                  
                   importedCount++;
                 } catch (e) {
-                   errors.add('Dialogue $importedCount: $e');
-                   skippedCount++;
+                  errors.add('Dialogue $importedCount: $e');
+                  skippedCount++;
                 }
               }
             }
@@ -289,7 +299,6 @@ class DataTransferService {
             'errors': errors,
           };
       });
-      
     } catch (e) {
       print('[DB] Error importing JSON with metadata: $e');
       return {

@@ -298,16 +298,71 @@ extension AppStateAuth on AppState {
 
       final sJson = utf8.decode(results[0].bodyBytes);
       final tJson = utf8.decode(results[1].bodyBytes);
+      final pJson = (results.length > 2 && results[2].statusCode == 200) ? utf8.decode(results[2].bodyBytes) : null;
 
+      final sData = json.decode(sJson) as Map<String, dynamic>;
+      final tData = json.decode(tJson) as Map<String, dynamic>;
+      final pData = pJson != null ? json.decode(pJson) as Map<String, dynamic> : null;
+
+      // Merge entries into a master record
+      final List<Map<String, dynamic>> masterEntries = [];
+      final sEntries = sData['entries'] as List? ?? [];
+      final tEntries = tData['entries'] as List? ?? [];
+      final pEntries = pData !=null ? pData['entries'] as List? ?? [] : [];
+
+      final int maxLen = sEntries.length; // Assume they are aligned
+      for (int i = 0; i < maxLen; i++) {
+        final sEntry = sEntries[i] as Map<String, dynamic>;
+        final tEntry = i < tEntries.length ? tEntries[i] as Map<String, dynamic> : null;
+        final pEntry = i < pEntries.length ? pEntries[i] as Map<String, dynamic> : null;
+
+        final Map<String, dynamic> merged = Map<String, dynamic>.from(sEntry);
+        merged['source_text'] = sEntry['text'];
+        merged['target_text'] = tEntry?['text'] ?? '';
+        
+        // Phase 117: Enhanced Metadata Mapping
+        final sMeta = sEntry['meta'] as Map<String, dynamic>? ?? {};
+        final tMeta = tEntry?['meta'] as Map<String, dynamic>? ?? {};
+
+        // 1. Source Metadata (normalized)
+        merged['pos'] = (sEntry['pos'] ?? sMeta['pos']) as String?;
+        merged['root'] = (sEntry['root'] ?? sMeta['root']) as String?;
+        merged['form_type'] = (sEntry['form_type'] ?? sMeta['form_type']) as String?;
+        merged['style'] = (sEntry['style'] ?? sMeta['style']) as String?;
+
+        // 2. Target Metadata (Isolated with prefix)
+        if (tEntry != null) {
+          merged['target_pos'] = (tEntry['pos'] ?? tMeta['pos']) as String?;
+          merged['target_root'] = (tEntry['root'] ?? tMeta['root']) as String?;
+          merged['target_form_type'] = (tEntry['form_type'] ?? tMeta['form_type']) as String?;
+          merged['target_style'] = (tEntry['style'] ?? tMeta['style']) as String?;
+        }
+        
+        // Phase 115: If pivot (English) is available, use it as a hint in note
+        if (pEntry != null && pEntry['text'] != null && _sourceLang != 'en' && _targetLang != 'en') {
+          final String pText = pEntry['text'];
+          final String currentNote = (merged['note'] ?? merged['context'] ?? '') as String;
+          merged['note'] = currentNote.isEmpty ? '(EN: $pText)' : '$currentNote (EN: $pText)';
+        }
+        
+        masterEntries.add(merged);
+      }
+
+      final Map<String, dynamic> masterData = Map<String, dynamic>.from(sData);
+      masterData['entries'] = masterEntries;
+      masterData['source_language'] = _sourceLang;
+      masterData['target_language'] = _targetLang;
+
+      final masterJson = json.encode(masterData);
       final syncKey = sPath.split('/').last.replaceAll('.json', '');
-
       int? localMaterialId;
 
       _statusMessage = 'L10N:importing';
       notify();
-      final sResult = await DatabaseService.importFromJsonWithMetadata(
-        sJson, 
-        fileName: 'remote_${mId}_$_sourceLang.json',
+
+      final result = await DatabaseService.importFromJsonWithMetadata(
+        masterJson, 
+        fileName: 'remote_${mId}_merged.json',
         overrideSubject: mName, 
         syncKey: syncKey, 
         userId: 'user', 
@@ -315,33 +370,9 @@ extension AppStateAuth on AppState {
         defaultSourceLang: _sourceLang, 
         defaultTargetLang: _targetLang, 
       );
-      if (sResult['success'] == true) {
-        localMaterialId = sResult['material_id'] as int?;
-      }
 
-      await DatabaseService.importFromJsonWithMetadata(
-        tJson, 
-        fileName: 'remote_${mId}_$_targetLang.json',
-        overrideSubject: mName, 
-        syncKey: syncKey, 
-        userId: 'user', 
-        defaultType: type,
-        defaultSourceLang: _targetLang, 
-        defaultTargetLang: _sourceLang, 
-      );
-
-      if (fetchPivot && results.length > 2 && results[2].statusCode == 200) {
-        final pJson = utf8.decode(results[2].bodyBytes);
-        await DatabaseService.importFromJsonWithMetadata(
-          pJson, 
-          fileName: 'remote_${mId}_en.json',
-          overrideSubject: mName, 
-          syncKey: syncKey, 
-          userId: 'user', 
-          defaultType: type,
-          defaultSourceLang: 'en', 
-          defaultTargetLang: _sourceLang, 
-        );
+      if (result['success'] == true) {
+        localMaterialId = result['material_id'] as int?;
       }
 
       await loadDialogueGroups();

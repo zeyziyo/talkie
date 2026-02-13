@@ -105,6 +105,24 @@ class DatabaseService {
     return await MaterialRepository.getAll();
   }
 
+  static Future<int> createStudyMaterial({
+    required String subject,
+    required String source,
+    required String sourceLanguage,
+    required String targetLanguage,
+    String? fileName,
+    required String createdAt,
+    Transaction? txn,
+  }) => MaterialRepository.create(
+    subject: subject,
+    source: source,
+    sourceLanguage: sourceLanguage,
+    targetLanguage: targetLanguage,
+    fileName: fileName,
+    createdAt: createdAt,
+    txn: txn,
+  );
+
   static Future<Map<String, dynamic>?> getStudyMaterialById(int id) => MaterialRepository.getById(id);
 
   // --- Data Transfer Delegation ---

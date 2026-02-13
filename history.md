@@ -27,6 +27,22 @@
 - **Logic**: `is_memorized` 상태 확인 로직을 `bool` 매칭으로 수정하여 `AppState`와의 데이터 정합성을 확보했습니다.
 - **Quality**: `flutter analyze` 정적 분석을 통해 미사용 변수 및 테스트 코드의 중복 임포트를 정리하여 경고 제로 상태를 달성했습니다.
 
+### [2026-02-13] Multi-Language Merge & Order Integrity Fix (Phase 115)
+- **Feature**: 온라인 자료실 임포트 시 소스/타겟/피봇 JSON을 인덱스 기준으로 병합하여 저장하는 지능형 엔진 구현. 이제 한국어 카드에 영어 번역이 정상 노출됩니다.
+- **Integrity**: 임포트 시 `batchCreatedAt` 타임스탬프를 고정하여 자료집 내 단어 순서가 역전되거나 뒤섞이는 현상을 원천 해결했습니다.
+- **Search**: 복습 모드 정렬 기준을 `created_at DESC, id ASC`로 정교화하여 최신 자료집 우선 노출 및 내부 순서 무결성을 확보했습니다.
+- **L10n**: 피봇 언어(English) 데이터 존재 시 학습 카드 노트에 영문 힌트를 자동 추가하도록 개선했습니다.
+
+### [2026-02-13] Manual Input Consistency & Visibility Fix (Phase 116)
+- **Bug Fix**: 수동 입력(Mode 1) 자료가 복습 모드(Mode 2/3)의 "제목 태그(자료집)" 필터 목록에서 누락되던 결함을 해결했습니다.
+- **Improved**: `saveTranslation` 시 `study_materials` 테이블에 자료집 정보를 자동 등록하여 수동/자동 데이터의 가시성을 일원화했습니다.
+- **Integrity**: 소스 행뿐만 아니라 타겟(번역) 행에도 공통 메타데이터(`note`, `style`)를 동기화하고, 언어별 고유 정보(`root`, `form_type`)는 엄격히 격리하여 무결성을 강화했습니다.
+
+### [2026-02-13] Online Material Metadata Enrichment (Phase 117)
+- **Feature**: 온라인 자료실 임포트 시 파일 상단의 기본 품사(`pos`)를 개별 엔트리로 상속하는 지능형 추출 로직(`getVal`)을 구현했습니다.
+- **Merging**: 소스/타겟 언어 파일의 고유 메타데이터(어근 등)가 병합 과정에서 유실되지 않고 각각의 행에 정확히 배분되도록 엔진을 고도화했습니다.
+- **Integrity**: 빈 문자열과 누락 필드를 정규화하여 앱의 고급 학습 기능(필터링, 그룹화)과의 100% 정합성을 Toxicology-style로 확보했습니다.
+
 ### [2026-02-13] Pivot Sync Precision & Performance Optimization (Phase 105 ~ 108)
 - **UI/L10n**: 문체 배지(`Style Badge`)를 80개 언어 전체에 적용하고, Mode 2 카드에서 문체 정보를 시각적으로 확인할 수 있도록 개선 (Phase 105).
 - **Integrity**: 서버의 정식 그룹 ID(`Canonical ID`) 확인 및 로컬 임시 ID의 자동 재연결(`Relinking`) 로직을 구현하여 데이터 정합성 강화 (Phase 106).
