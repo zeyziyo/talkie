@@ -1,7 +1,5 @@
 import 'package:sqflite/sqflite.dart';
 import 'database_helper.dart';
-import 'word_repository.dart';
-import 'sentence_repository.dart';
 
 class DialogueRepository {
   static Future<Database> get _db async => await DatabaseHelper.database;
@@ -110,6 +108,8 @@ class DialogueRepository {
   }) async {
     final db = await _db;
     
+    // Phase 126: Restore Data Isolation (Simplified Query)
+    // Read directly from chat_messages, JOIN only for participant info.
     final List<Map<String, dynamic>> messages = await db.rawQuery('''
       SELECT m.*, p.gender, p.lang_code as participant_lang, p.name as p_name
       FROM chat_messages m
@@ -121,51 +121,22 @@ class DialogueRepository {
     List<Map<String, dynamic>> results = [];
     
     for (var msg in messages) {
-      final groupId = msg['group_id'] as int;
-      
-      // Phase 120: JSON 통합 스키마 기반 데이터 추출
-      final allItems = [
-        ...await WordRepository.getWordsByGroupId(groupId),
-        ...await SentenceRepository.getSentencesByGroupId(groupId),
-      ];
-      
-      if (allItems.isNotEmpty) {
-        Map<String, dynamic>? source;
-        Map<String, dynamic>? target;
-
-        // Try exact match with provided languages
-        if (sourceLang != null) {
-          source = allItems.where((s) => (s['lang_code'] as String).startsWith(sourceLang.substring(0, 2))).firstOrNull;
-        }
-        if (targetLang != null) {
-          target = allItems.where((s) => (s['lang_code'] as String).startsWith(targetLang.substring(0, 2))).firstOrNull;
-        }
-
-        // Fallbacks
-        source ??= allItems.first;
-        if (allItems.length > 1) {
-           target ??= allItems.firstWhere((s) => s['lang_code'] != source!['lang_code'], orElse: () => allItems[1]);
-        } else {
-           target ??= source;
-        }
-
-        results.add({
-          'id': msg['id'],
-          'group_id': groupId,
-          'source_text': source['text'] ?? '',
-          'target_text': target['text'] ?? '',
-          'source_lang': source['lang_code'] ?? 'en',
-          'target_lang': target['lang_code'] ?? 'en',
-          'speaker': msg['speaker'] ?? msg['p_name'] ?? 'Unknown',
-          'participant_id': msg['participant_id'],
-          'gender': msg['gender'], 
-          'participant_lang': msg['participant_lang'], 
-          'sequence_order': msg['sequence_order'],
-          'created_at': msg['created_at'],
-          'note': source['note'] ?? target['note'],
-          'is_memorized': (source['is_memorized'] == 1 || target['is_memorized'] == 1),
-        });
-      }
+      results.add({
+        'id': msg['id'],
+        'group_id': msg['group_id'],
+        'source_text': msg['source_text'] ?? '',
+        'target_text': msg['target_text'] ?? '',
+        'source_lang': msg['source_lang'] ?? 'en',
+        'target_lang': msg['target_lang'] ?? 'en',
+        'speaker': msg['speaker'] ?? msg['p_name'] ?? 'Unknown',
+        'participant_id': msg['participant_id'],
+        'gender': msg['gender'], 
+        'participant_lang': msg['participant_lang'], 
+        'sequence_order': msg['sequence_order'],
+        'created_at': msg['created_at'],
+        'note': msg['note'], // If note column exists or joined
+        'is_memorized': false, // Dialogue doesn't track memorization needed
+      });
     }
     return results;
   }

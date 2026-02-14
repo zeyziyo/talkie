@@ -274,20 +274,18 @@ extension AppStateChat on AppState {
       final cloudMessages = await SupabaseService.getPrivateChatMessages(group.id);
       if (cloudMessages.isNotEmpty) {
         for (var msg in cloudMessages) {
-          await DatabaseService.saveUnifiedRecord(
-            text: msg['source_text'],
-            lang: 'auto',
-            translation: msg['target_text'],
-            targetLang: 'auto',
-            type: 'sentence',
-            tags: ['Dialogue'],
-          );
-          
+          // Phase 126: Restore Data Isolation (UnifiedRepository Removed)
+          // Store dialogue ONLY in chat_messages table.
+
           final db = await DatabaseService.database;
           await db.insert('chat_messages', {
             'dialogue_id': group.id,
             'group_id': msg['group_id'],
             'speaker': msg['speaker'],
+            'source_text': msg['source_text'],
+            'target_text': msg['target_text'],
+            'source_lang': 'auto', // Cloud data might need refinement, but keep as is for sync
+            'target_lang': 'auto',
             'sequence_order': msg['sequence_order'],
             'created_at': msg['created_at'],
           });
@@ -412,22 +410,18 @@ extension AppStateChat on AppState {
     try {
       final db = await DatabaseService.database;
       await db.transaction((txn) async {
-        // Phase 119: Use UnifiedRepository to handle multi-table insertion safely
-        await UnifiedRepository.saveUnifiedRecord(
-          text: sourceText,
-          lang: _sourceLang,
-          translation: targetText,
-          targetLang: _targetLang,
-          type: _isWordMode ? 'word' : 'sentence',
-          tags: ['Dialogue'],
-          txn: txn,
-          groupId: timestamp,
-        );
+      await db.transaction((txn) async {
+        // Phase 126: Restore Data Isolation (UnifiedRepository Removed)
+        // Store dialogue ONLY in chat_messages table.
 
         await txn.insert('chat_messages', {
           'dialogue_id': _activeDialogueId,
           'group_id': timestamp,
           'speaker': 'User',
+          'source_text': sourceText,
+          'target_text': targetText,
+          'source_lang': _sourceLang,
+          'target_lang': _targetLang,
           'sequence_order': _currentDialogueSequence,
           'created_at': DateTime.now().toIso8601String(),
         });
@@ -474,26 +468,18 @@ extension AppStateChat on AppState {
       final db = await DatabaseService.database;
       
       await db.transaction((txn) async {
-        // Phase 119: Use UnifiedRepository for AI response persistence
-        await UnifiedRepository.saveUnifiedRecord(
-          text: sourceText,
-          lang: _targetLang,
-          translation: targetText,
-          targetLang: _sourceLang,
-          type: 'sentence', // AI usually speaks sentences
-          pos: pos,
-          formType: formType,
-          root: root,
-          note: explanation,
-          tags: ['Dialogue'],
-          txn: txn,
-          groupId: timestamp,
-        );
+      await db.transaction((txn) async {
+        // Phase 126: Restore Data Isolation (UnifiedRepository Removed)
+        // Store dialogue ONLY in chat_messages table.
 
         await txn.insert('chat_messages', {
           'dialogue_id': _activeDialogueId,
           'group_id': timestamp,
           'speaker': finalSpeaker,
+          'source_text': sourceText,
+          'target_text': targetText,
+          'source_lang': _targetLang, // AI speaks target lang (usually)
+          'target_lang': _sourceLang,
           'sequence_order': _currentDialogueSequence,
           'created_at': createdAt,
         });

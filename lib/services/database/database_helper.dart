@@ -5,7 +5,7 @@ import 'package:path/path.dart';
 class DatabaseHelper {
   static Database? _database;
   static const String _dbName = 'talkie.db';
-  static const int _dbVersion = 17; // Phase 120: Consolidated JSON Schema
+  static const int _dbVersion = 18; // Phase 126: Restore Data Isolation
 
   static Future<Database> get database async {
     if (_database != null) return _database!;
@@ -55,6 +55,12 @@ class DatabaseHelper {
         if (oldVersion < 17) {
           print('[DB] Migrating to version 17: Consolidating to single record per group');
           await _migrateToV17(db);
+        }
+
+        // Phase 126: v18 (Restore Data Isolation)
+        if (oldVersion < 18) {
+          print('[DB] Migrating to version 18: Restoring Data Isolation (Separating Dialogue from Sentences)');
+          await _migrateToV18(db);
         }
       },
     );
@@ -132,6 +138,51 @@ class DatabaseHelper {
       // Re-create indexes
       await txn.execute('CREATE INDEX IF NOT EXISTS idx_words_group_id ON words (group_id)');
       await txn.execute('CREATE INDEX IF NOT EXISTS idx_sentences_group_id ON sentences (group_id)');
+    });
+  }
+
+  static Future<void> _migrateToV18(Database db) async {
+    await db.transaction((txn) async {
+      // 1. Enhance 'chat_messages' table (Add missing columns for standalone storage)
+      // SQLite doesn't support IF NOT EXISTS for ADD COLUMN easily. Using try-catch pattern.
+      final columnsToAdd = ['source_text', 'target_text', 'source_lang', 'target_lang'];
+      
+      for (var col in columnsToAdd) {
+        try {
+          await txn.execute('ALTER TABLE chat_messages ADD COLUMN $col TEXT');
+        } catch (e) {
+          // Ignore if column already exists
+          print('[DB] Column $col likely exists in chat_messages: $e');
+        }
+      }
+
+      // 2. Cleanup Polluted Data in 'sentences' table
+      // Identify and remove sentences that are actually dialogue messages
+      print('[DB] Cleaning up polluted dialogue data from sentences table...');
+      
+      // 2-1. Find Polluted Group IDs (Tagged with #Dialogue or type=sentence but context is dialogue)
+      // Since we can't easily join in DELETE, we select IDs first.
+      
+      final pollutedGroups = await txn.rawQuery('''
+        SELECT item_id 
+        FROM item_tags 
+        WHERE tag IN ('#Dialogue', 'Dialogue', 'User Input', 'File Import') 
+        AND item_type = 'sentence'
+      ''');
+      
+      if (pollutedGroups.isNotEmpty) {
+        final ids = pollutedGroups.map((r) => r['item_id']).join(',');
+        
+        // Delete from item_tags
+        await txn.rawDelete('DELETE FROM item_tags WHERE item_id IN ($ids) AND item_type = "sentence"');
+        
+        // Delete from sentences (The actual polluted data)
+        final deletedCount = await txn.rawDelete('DELETE FROM sentences WHERE group_id IN ($ids)');
+        print('[DB] Cleaned up $deletedCount polluted sentence records.');
+        
+        // Also cleanup words if any (though unlikely for dialogue)
+        await txn.rawDelete('DELETE FROM words WHERE group_id IN ($ids)');
+      }
     });
   }
 

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:talkie/providers/app_state.dart';
 import 'package:talkie/l10n/app_localizations.dart';
-import 'package:provider/provider.dart';
 
 class Mode2Card extends StatelessWidget {
   final AppState appState;
