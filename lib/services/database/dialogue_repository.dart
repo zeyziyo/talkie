@@ -1,5 +1,7 @@
 import 'package:sqflite/sqflite.dart';
 import 'database_helper.dart';
+import 'word_repository.dart';
+import 'sentence_repository.dart';
 
 class DialogueRepository {
   static Future<Database> get _db async => await DatabaseHelper.database;
@@ -121,10 +123,11 @@ class DialogueRepository {
     for (var msg in messages) {
       final groupId = msg['group_id'] as int;
       
-      // Get all sentences in this group (including words/sentences)
-      final words = await db.query('words', where: 'group_id = ?', whereArgs: [groupId]);
-      final sents = await db.query('sentences', where: 'group_id = ?', whereArgs: [groupId]);
-      final allItems = [...words, ...sents];
+      // Phase 120: JSON 통합 스키마 기반 데이터 추출
+      final allItems = [
+        ...await WordRepository.getWordsByGroupId(groupId),
+        ...await SentenceRepository.getSentencesByGroupId(groupId),
+      ];
       
       if (allItems.isNotEmpty) {
         Map<String, dynamic>? source;
@@ -141,7 +144,7 @@ class DialogueRepository {
         // Fallbacks
         source ??= allItems.first;
         if (allItems.length > 1) {
-           target ??= allItems.firstWhere((s) => s['id'] != source!['id'], orElse: () => allItems[1]);
+           target ??= allItems.firstWhere((s) => s['lang_code'] != source!['lang_code'], orElse: () => allItems[1]);
         } else {
            target ??= source;
         }

@@ -32,12 +32,51 @@ class WordRepository {
     if (query.isEmpty) return [];
     final db = await _db;
     // Phase 120: JSON 내부 텍스트 검색
-    return await db.rawQuery('''
+    final results = await db.rawQuery('''
       SELECT * FROM words 
       WHERE data_json LIKE ? 
       ORDER BY created_at DESC 
       LIMIT ?
     ''', ['%$query%', limit]);
+
+    // Phase 124: Flattening for UI compatibility
+    return results.map((row) {
+      final jsonStr = row['data_json'] as String?;
+      if (jsonStr == null) return row; // safety
+
+      final data = jsonDecode(jsonStr) as Map<String, dynamic>;
+      
+      // Try to find the entry that matched the query
+      Map<String, dynamic>? bestMatch;
+      String bestLang = 'en'; // default
+      
+      for (var entry in data.entries) {
+        final content = entry.value as Map<String, dynamic>;
+        final text = content['text'] as String?;
+        if (text != null && text.toLowerCase().contains(query.toLowerCase())) {
+          bestMatch = content;
+          bestLang = entry.key;
+          break;
+        }
+      }
+      
+      // Fallback
+      if (bestMatch == null && data.isNotEmpty) {
+         final first = data.entries.first;
+         bestMatch = first.value as Map<String, dynamic>;
+         bestLang = first.key;
+      }
+      
+      return {
+        ...row,
+        'lang_code': bestLang,
+        'text': bestMatch?['text'] ?? '',
+        'pos': bestMatch?['pos'],
+        'form_type': bestMatch?['form_type'],
+        'root': bestMatch?['root'],
+        'note': bestMatch?['note'],
+      };
+    }).toList();
   }
 
   static Future<List<Map<String, dynamic>>> searchAutocompleteText(String langCode, String text) async {

@@ -153,22 +153,66 @@ class UnifiedRepository {
   }
 
   /// Phase 106: Relink local temporary ID to server's canonical ID
+  /// Phase 120: Relink local temporary ID to server's canonical ID (With Merge Logic)
   static Future<void> relinkGroupId(int oldId, int newId) async {
     if (oldId == newId) return;
     
     final db = await _db;
     await db.transaction((txn) async {
-       // 1. Update Entries
-       await txn.update('words', {'group_id': newId}, where: 'group_id = ?', whereArgs: [oldId]);
-       await txn.update('sentences', {'group_id': newId}, where: 'group_id = ?', whereArgs: [oldId]);
+       // Helper: Merge and relink a table (words or sentences)
+       Future<void> mergeAndRelink(String table) async {
+         final existingNew = await txn.query(table, where: 'group_id = ?', whereArgs: [newId]);
+         final existingOld = await txn.query(table, where: 'group_id = ?', whereArgs: [oldId]);
+         
+         if (existingOld.isEmpty) return; // Nothing to move
+         
+         if (existingNew.isNotEmpty) {
+           // Collision: Merge old into new
+           final oldRow = existingOld.first;
+           final newRow = existingNew.first;
+           
+           final oldJson = jsonDecode(oldRow['data_json'] as String) as Map<String, dynamic>;
+           final newJson = jsonDecode(newRow['data_json'] as String) as Map<String, dynamic>;
+           
+           // Strategy: New (Server) is base, Old (Local) adds/overwrites if needed.
+           // Here we favor Local edits for same keys, or Server? 
+           // Usually Sync prioritizes Server. But Relink is "I just got a real ID for my local data".
+           // If Server has data, it means someone else (or me on another device) saved it.
+           // We'll merge: New + Old (Old overwrites new).
+           final mergedJson = {...newJson, ...oldJson}; 
+           
+           await txn.update(table, {
+             'data_json': jsonEncode(mergedJson),
+             // group_id is already newId
+           }, where: 'group_id = ?', whereArgs: [newId]);
+           
+           // Delete the old ghost
+           await txn.delete(table, where: 'group_id = ?', whereArgs: [oldId]);
+         } else {
+           // No collision: Just rename
+           await txn.update(table, {'group_id': newId}, where: 'group_id = ?', whereArgs: [oldId]);
+         }
+       }
+
+       await mergeAndRelink('words');
+       await mergeAndRelink('sentences');
        
-       // 2. Update User Library Links
-       await txn.update('user_library', {'group_id': newId}, where: 'group_id = ?', whereArgs: [oldId]);
-       
-       // 3. Update Sync Logs if any (words or sentences have is_synced)
-       // Those were already updated in step 1.
+       // 2. Update Tags: Delete old, Insert new (Ignore conflicts)
+       final oldTags = await txn.query('item_tags', where: 'item_id = ?', whereArgs: [oldId]);
+       if (oldTags.isNotEmpty) {
+         await txn.delete('item_tags', where: 'item_id = ?', whereArgs: [oldId]);
+         for (var tagRow in oldTags) {
+           final tagMap = Map<String, dynamic>.from(tagRow);
+           tagMap['item_id'] = newId;
+           // Primary Key (item_id, item_type, tag, lang_code) protects duplication
+           await txn.insert('item_tags', tagMap, conflictAlgorithm: ConflictAlgorithm.ignore);
+         }
+       }
+
+       // 3. Update Chat Messages (Simple update)
+       await txn.update('chat_messages', {'group_id': newId}, where: 'group_id = ?', whereArgs: [oldId]);
     });
-    print('[DB] Relinked group_id: $oldId -> $newId');
+    print('[DB] Relinked (with merge) group_id: $oldId -> $newId');
   }
 
   static String mapLanguageToCode(String name) {

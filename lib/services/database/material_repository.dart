@@ -57,10 +57,10 @@ class MaterialRepository {
     return await db.rawQuery('''
       SELECT m.*, 
         COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it 
-         JOIN words w ON it.item_id = w.id AND it.item_type = 'word'
+         JOIN words w ON it.item_id = w.group_id AND it.item_type = 'word'
          WHERE it.tag = m.subject), 0) as word_count,
         COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it
-         JOIN sentences s ON it.item_id = s.id AND it.item_type = 'sentence'
+         JOIN sentences s ON it.item_id = s.group_id AND it.item_type = 'sentence'
          WHERE it.tag = m.subject), 0) as sentence_count
       FROM study_materials m 
       ORDER BY m.imported_at DESC

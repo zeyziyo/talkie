@@ -1,0 +1,4 @@
+Analyzing talkie...                                             
+
+warning - A value of type 'void' can't be returned by the 'onError' handler because it must be assignable to 'FutureOr<bool>' - lib\screens\chat_screen.dart:43:51 - invalid_return_type_for_catch_error
+

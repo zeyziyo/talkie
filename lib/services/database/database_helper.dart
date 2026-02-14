@@ -65,13 +65,13 @@ class DatabaseHelper {
       // 1. Tag Search Optimization
       await txn.execute('CREATE INDEX IF NOT EXISTS idx_item_tags_tag ON item_tags (tag)');
       
-      // 2. Text Search Optimization (for Autocomplete/LIKE queries)
-      await txn.execute('CREATE INDEX IF NOT EXISTS idx_words_text ON words (text)');
-      await txn.execute('CREATE INDEX IF NOT EXISTS idx_sentences_text ON sentences (text)');
+      // 2. Text Search Optimization (Legacy - Removed in v17)
+      // await txn.execute('CREATE INDEX IF NOT EXISTS idx_words_text ON words (text)');
+      // await txn.execute('CREATE INDEX IF NOT EXISTS idx_sentences_text ON sentences (text)');
       
-      // 3. User Filter Optimization
-      await txn.execute('CREATE INDEX IF NOT EXISTS idx_sentences_style ON sentences (style)');
-      await txn.execute('CREATE INDEX IF NOT EXISTS idx_words_pos ON words (pos)');
+      // 3. User Filter Optimization (Legacy - Removed in v17)
+      // await txn.execute('CREATE INDEX IF NOT EXISTS idx_sentences_style ON sentences (style)');
+      // await txn.execute('CREATE INDEX IF NOT EXISTS idx_words_pos ON words (pos)');
     });
   }
 
@@ -223,14 +223,10 @@ class DatabaseHelper {
       )
     ''');
 
-    // Phase 105: Performance Indexes
+    // Phase 120: Performance Indexes (JSON-adjusted)
     await db.execute('CREATE INDEX IF NOT EXISTS idx_words_group_id ON words (group_id)');
     await db.execute('CREATE INDEX IF NOT EXISTS idx_sentences_group_id ON sentences (group_id)');
     await db.execute('CREATE INDEX IF NOT EXISTS idx_item_tags_tag ON item_tags (tag)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_words_text ON words (text)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_sentences_text ON sentences (text)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_sentences_style ON sentences (style)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_words_pos ON words (pos)');
   }
 
   static Future<void> _migrateToV17(Database db) async {
