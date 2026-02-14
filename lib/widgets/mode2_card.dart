@@ -150,9 +150,12 @@ class Mode2Card extends StatelessWidget {
                                       'word', 'sentence'
                                     }.map((e) => e.toLowerCase()).toSet();
 
+                                    final appState = Provider.of<AppState>(context, listen: false);
+                                    final materialSubjects = appState.studyMaterials.map((m) => m['subject'] as String).toSet();
+                                    
                                     final filteredTags = (record['tags'] as List)
                                         .map((t) => t.toString())
-                                        .where((t) => !systemTags.contains(t.toLowerCase()))
+                                        .where((t) => !systemTags.contains(t.toLowerCase()) && !materialSubjects.contains(t))
                                         .toList();
 
                                     return filteredTags.map((t) => Container(
