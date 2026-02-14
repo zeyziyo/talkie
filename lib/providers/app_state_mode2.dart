@@ -228,34 +228,26 @@ extension AppStateMode2 on AppState {
       String query = 'SELECT t.* FROM $table t ';
       List<String> conditions = [];
       
-      conditions.add('t.lang_code = ?');
+      // Phase 120: 소스 언어 포함 여부 확인 (JSON 내부)
+      conditions.add("json_extract(t.data_json, '\$.' || ? || '.text') IS NOT NULL");
       whereArgs.add(_sourceLang);
       
       if (_selectedTags.isNotEmpty) {
         for (var tag in _selectedTags) {
-          conditions.add('''
-            t.group_id IN (
-              SELECT DISTINCT w2.group_id FROM words w2 
-              JOIN item_tags it2 ON w2.id = it2.item_id AND it2.item_type = 'word'
-              WHERE it2.tag = ?
-              UNION
-              SELECT DISTINCT s2.group_id FROM sentences s2 
-              JOIN item_tags it2 ON s2.id = it2.item_id AND it2.item_type = 'sentence'
-              WHERE it2.tag = ?
-            )
-          ''');
+          conditions.add('t.group_id IN (SELECT item_id FROM item_tags WHERE tag = ? AND item_type = ?)');
           whereArgs.add(tag);
-          whereArgs.add(tag);
+          whereArgs.add(itemType);
         }
       }
       
       if (_searchQuery.isNotEmpty) {
-        conditions.add('t.text LIKE ?');
+        conditions.add('t.data_json LIKE ?');
         whereArgs.add('%$_searchQuery%');
       }
       
       if (_filterStartsWith != null && _filterStartsWith!.isNotEmpty) {
-        conditions.add('t.text LIKE ?');
+        conditions.add("json_extract(t.data_json, '\$.' || ? || '.text') LIKE ?");
+        whereArgs.add(_sourceLang);
         whereArgs.add('$_filterStartsWith%');
       }
 
@@ -267,9 +259,8 @@ extension AppStateMode2 on AppState {
          query += 'WHERE ${conditions.join(' AND ')} ';
       }
       
-      query += 'GROUP BY t.group_id ';
-      // Phase 115: Order by material date (Newest first) THEN original insertion order (JSON order)
-      query += 'ORDER BY t.created_at DESC, t.id ASC ';
+      // Phase 120: group_id가 PK이므로 GROUP BY 불필요
+      query += 'ORDER BY t.created_at DESC ';
 
       if (_filterLimit != null) {
         query += 'LIMIT ? ';
@@ -285,64 +276,60 @@ extension AppStateMode2 on AppState {
       }
 
       final groupIds = results.map((r) => r['group_id'] as int).toList();
-      final sourceIds = results.map((r) => r['id'] as int).toList();
       
-      final targetRows = await db.query(table, 
-          where: 'group_id IN (${groupIds.map((_) => '?').join(',')}) AND (lang_code = ? OR lang_code = ?)', 
-          whereArgs: [...groupIds, _targetLang, 'en']);
-      
-      // Group by groupId for easier lookup
-      final Map<int, List<Map<String, dynamic>>> groupMap = {};
-      for (var r in targetRows) {
-        final gId = r['group_id'] as int;
-        groupMap.putIfAbsent(gId, () => []).add(r);
-      }
-
+      // Fetch all tags for these groups at once
       final tagRows = await db.query('item_tags', 
-          where: 'item_id IN (${sourceIds.map((_) => '?').join(',')}) AND item_type = ?', 
-          whereArgs: [...sourceIds, itemType]);
-      final Map<int, List<String>> tagMap = {};
+          where: 'item_id IN (${groupIds.map((_) => '?').join(',')}) AND item_type = ?', 
+          whereArgs: [...groupIds, itemType]);
+          
+      // Map<groupId, Map<langCode, List<tags>>>
+      final Map<int, Map<String, List<String>>> localizedTagMap = {};
       for (var tr in tagRows) {
-        final id = tr['item_id'] as int;
-        tagMap.putIfAbsent(id, () => []).add(tr['tag'] as String);
+        final gId = tr['item_id'] as int;
+        final lang = tr['lang_code'] as String;
+        final tag = tr['tag'] as String;
+        localizedTagMap.putIfAbsent(gId, () => {}).putIfAbsent(lang, () => []).add(tag);
       }
 
       List<Map<String, dynamic>> pairedResults = [];
       
       for (var row in results) {
         final groupId = row['group_id'] as int;
-        final sourceRow = row;
+        final Map<String, dynamic> data = jsonDecode(row['data_json'] as String);
         
-        // Phase 89: Pivot Strategy Fallback
-        final groupRows = groupMap[groupId] ?? [];
-        Map<String, dynamic>? targetRow = groupRows.firstWhere((r) => r['lang_code'] == _targetLang, orElse: () => {});
+        final sourceData = data[_sourceLang] as Map<String, dynamic>? ?? {};
+        Map<String, dynamic> targetData = data[_targetLang] as Map<String, dynamic>? ?? {};
         bool isPivot = false;
-        
-        if (targetRow.isEmpty && _targetLang != 'en') {
-          targetRow = groupRows.firstWhere((r) => r['lang_code'] == 'en', orElse: () => {});
-          if (targetRow.isNotEmpty) isPivot = true;
+
+        if (targetData.isEmpty && _targetLang != 'en') {
+          targetData = data['en'] as Map<String, dynamic>? ?? {};
+          if (targetData.isNotEmpty) isPivot = true;
         }
-        
-        if (targetRow.isEmpty) targetRow = null;
+
+        // 언어별 태그 추출
+        final groupTagsMap = localizedTagMap[groupId] ?? {};
+        final sourceTags = groupTagsMap[_sourceLang] ?? [];
+        final targetTags = groupTagsMap[_targetLang] ?? (isPivot ? groupTagsMap['en'] : []) ?? [];
         
         pairedResults.add({
-          'id': sourceRow['id'], 
-          'target_id': targetRow?['id'], 
+          'id': groupId, 
           'group_id': groupId,
           'type': itemType, 
           'source_lang': _sourceLang,
           'target_lang': _targetLang,
-          'source_text': sourceRow['text'],
-          'target_text': targetRow != null ? targetRow['text'] : '', 
-          'is_pivot': isPivot, // Phase 89: Indicate if this is a pivot fallback
-          'note': sourceRow['note'] ?? targetRow?['note'],
-          'pos': sourceRow['pos'],
-          'form_type': sourceRow['form_type'],
-          'root': sourceRow['root'],
-          'tags': tagMap[sourceRow['id']] ?? [],
-          'created_at': sourceRow['created_at'],
-          'review_count': sourceRow['review_count'] ?? 0,
-          'is_memorized': (targetRow != null ? targetRow['is_memorized'] : sourceRow['is_memorized']) == 1, 
+          'source_text': sourceData['text'] ?? '',
+          'target_text': targetData['text'] ?? '', 
+          'is_pivot': isPivot,
+          'note': sourceData['note'] ?? targetData['note'],
+          'pos': sourceData['pos'],
+          'form_type': sourceData['form_type'],
+          'root': sourceData['root'],
+          'source_tags': sourceTags, // Phase 120: 분리된 소스 태그
+          'target_tags': targetTags, // Phase 120: 분리된 타겟 태그
+          'tags': sourceTags, // 호환성 유지용 (기본 태그)
+          'created_at': row['created_at'],
+          'review_count': row['review_count'] ?? 0,
+          'is_memorized': row['is_memorized'] == 1, 
         });
       }
 

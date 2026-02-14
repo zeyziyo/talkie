@@ -294,51 +294,20 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
     );
   }
 
-  String _selectedPersonaGender = 'female'; // Default
-
   void _showNewChatDialog(AppState appState, AppLocalizations l10n) {
     showDialog(
       context: context,
-      builder: (context) => StatefulBuilder(
-        builder: (context, setDialogState) => AlertDialog(
-          title: Text(l10n.chatChoosePersona),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              // Gender Selection Toggle
-              Padding(
-                padding: const EdgeInsets.only(bottom: 16),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    _genderChip(l10n.male, 'male', setDialogState),
-                    _genderChip(l10n.female, 'female', setDialogState),
-                    _genderChip(l10n.neutral, 'neutral', setDialogState),
-                  ],
-                ),
-              ),
-              const Divider(),
-              _personaTile(l10n.personaTeacher, Icons.school, appState),
-              _personaTile(l10n.personaGuide, Icons.map, appState),
-              _personaTile(l10n.personaFriend, Icons.face, appState),
-            ],
-          ),
+      builder: (context) => AlertDialog(
+        title: Text(l10n.chatChoosePersona),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _personaTile(l10n.personaTeacher, Icons.school, appState),
+            _personaTile(l10n.personaGuide, Icons.map, appState),
+            _personaTile(l10n.personaFriend, Icons.face, appState),
+          ],
         ),
       ),
-    );
-  }
-
-  Widget _genderChip(String label, String value, StateSetter setDialogState) {
-    final isSelected = _selectedPersonaGender == value;
-    return ChoiceChip(
-      label: Text(label),
-      selected: isSelected,
-      onSelected: (selected) {
-        if (selected) {
-          setDialogState(() => _selectedPersonaGender = value);
-          setState(() {}); // Update main widget level if needed
-        }
-      },
     );
   }
 
@@ -350,7 +319,7 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
         Navigator.pop(context);
         await appState.startNewDialogue(
           persona: name, 
-          gender: _selectedPersonaGender
+          gender: 'female' // Phase 119: Default to female, change in Chat header
         );
         if (mounted) {
           Navigator.push(

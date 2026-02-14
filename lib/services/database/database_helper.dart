@@ -1,10 +1,11 @@
+import 'dart:convert';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
 class DatabaseHelper {
   static Database? _database;
   static const String _dbName = 'talkie.db';
-  static const int _dbVersion = 16; // Phase 105: Adding indexes for performance
+  static const int _dbVersion = 17; // Phase 120: Consolidated JSON Schema
 
   static Future<Database> get database async {
     if (_database != null) return _database!;
@@ -38,23 +39,6 @@ class DatabaseHelper {
         await ensureDefaultMaterial(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
-        // ... (Existing upgrades from v2 to v14)
-        if (oldVersion < 2) {
-          await db.execute('''
-            CREATE TABLE dialogue_groups (
-              id TEXT PRIMARY KEY,
-              user_id TEXT,
-              title TEXT,
-              persona TEXT,
-              created_at TEXT NOT NULL
-            )
-          ''');
-          await db.execute('ALTER TABLE translations ADD COLUMN dialogue_id TEXT');
-          await db.execute('ALTER TABLE translations ADD COLUMN speaker TEXT');
-          await db.execute('ALTER TABLE translations ADD COLUMN sequence_order INTEGER');
-          print('[DB] Upgraded to version 2');
-        }
-
         // Phase 99: v15
         if (oldVersion < 15) {
           print('[DB] Migrating to version 15: Normalizing local tables');
@@ -65,6 +49,12 @@ class DatabaseHelper {
         if (oldVersion < 16) {
           print('[DB] Migrating to version 16: Adding indexes for performance');
           await _addIndexesV16(db);
+        }
+
+        // Phase 120: v17
+        if (oldVersion < 17) {
+          print('[DB] Migrating to version 17: Consolidating to single record per group');
+          await _migrateToV17(db);
         }
       },
     );
@@ -146,17 +136,11 @@ class DatabaseHelper {
   }
 
   static Future<void> createBaseTables(Database db) async {
-    // Content from DatabaseService._createBaseTables
+    // Phase 120: Consolidated Schema (1 Group = 1 Row)
     await db.execute('''
       CREATE TABLE IF NOT EXISTS words (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        group_id INTEGER,
-        text TEXT NOT NULL,
-        lang_code TEXT NOT NULL,
-        root TEXT,
-        pos TEXT,
-        form_type TEXT,
-        note TEXT,
+        group_id INTEGER PRIMARY KEY,
+        data_json TEXT,
         created_at TEXT NOT NULL,
         is_memorized INTEGER DEFAULT 0,
         is_synced INTEGER DEFAULT 0,
@@ -168,13 +152,8 @@ class DatabaseHelper {
     
     await db.execute('''
       CREATE TABLE IF NOT EXISTS sentences (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        group_id INTEGER,
-        text TEXT NOT NULL,
-        lang_code TEXT NOT NULL,
-        pos TEXT,
-        style TEXT,
-        note TEXT,
+        group_id INTEGER PRIMARY KEY,
+        data_json TEXT,
         created_at TEXT NOT NULL,
         is_memorized INTEGER DEFAULT 0,
         is_synced INTEGER DEFAULT 0,
@@ -189,7 +168,8 @@ class DatabaseHelper {
         item_id INTEGER NOT NULL,
         item_type TEXT NOT NULL,
         tag TEXT NOT NULL,
-        PRIMARY KEY (item_id, item_type, tag)
+        lang_code TEXT NOT NULL DEFAULT 'auto',
+        PRIMARY KEY (item_id, item_type, tag, lang_code)
       )
     ''');
 
@@ -251,6 +231,155 @@ class DatabaseHelper {
     await db.execute('CREATE INDEX IF NOT EXISTS idx_sentences_text ON sentences (text)');
     await db.execute('CREATE INDEX IF NOT EXISTS idx_sentences_style ON sentences (style)');
     await db.execute('CREATE INDEX IF NOT EXISTS idx_words_pos ON words (pos)');
+  }
+
+  static Future<void> _migrateToV17(Database db) async {
+    await db.transaction((txn) async {
+      // 1. item_tags 확장 (PK가 바뀌어야 하므로 재생성)
+      await txn.execute('ALTER TABLE item_tags RENAME TO item_tags_old');
+      await txn.execute('''
+        CREATE TABLE item_tags (
+          item_id INTEGER NOT NULL,
+          item_type TEXT NOT NULL,
+          tag TEXT NOT NULL,
+          lang_code TEXT NOT NULL DEFAULT 'auto',
+          PRIMARY KEY (item_id, item_type, tag, lang_code)
+        )
+      ''');
+
+      // 2. words 데이터 이관 준비
+      await txn.execute('ALTER TABLE words RENAME TO words_old');
+      await txn.execute('''
+        CREATE TABLE words (
+          group_id INTEGER PRIMARY KEY,
+          data_json TEXT,
+          created_at TEXT NOT NULL,
+          is_memorized INTEGER DEFAULT 0,
+          is_synced INTEGER DEFAULT 0,
+          audio_file BLOB,
+          last_reviewed TEXT,
+          review_count INTEGER DEFAULT 0
+        )
+      ''');
+
+      // 3. sentences 데이터 이관 준비
+      await txn.execute('ALTER TABLE sentences RENAME TO sentences_old');
+      await txn.execute('''
+        CREATE TABLE sentences (
+          group_id INTEGER PRIMARY KEY,
+          data_json TEXT,
+          created_at TEXT NOT NULL,
+          is_memorized INTEGER DEFAULT 0,
+          is_synced INTEGER DEFAULT 0,
+          audio_file BLOB,
+          last_reviewed TEXT,
+          review_count INTEGER DEFAULT 0
+        )
+      ''');
+
+      // 4. Words 데이터 통합 (Dart 레벨 가공)
+      final List<Map<String, dynamic>> oldWords = await txn.query('words_old');
+      final Map<int, Map<String, dynamic>> wordGroups = {};
+      final Map<int, int> wordIdToGroup = {};
+
+      for (var row in oldWords) {
+        final gId = row['group_id'] as int;
+        final lang = row['lang_code'] as String;
+        wordIdToGroup[row['id'] as int] = gId;
+
+        wordGroups.putIfAbsent(gId, () => {
+          'group_id': gId,
+          'created_at': row['created_at'],
+          'is_memorized': row['is_memorized'],
+          'is_synced': row['is_synced'],
+          'audio_file': row['audio_file'],
+          'last_reviewed': row['last_reviewed'],
+          'review_count': row['review_count'],
+          'translations': <String, dynamic>{},
+        });
+        
+        (wordGroups[gId]!['translations'] as Map<String, dynamic>)[lang] = {
+          'text': row['text'],
+          'pos': row['pos'],
+          'root': row['root'],
+          'form_type': row['form_type'],
+          'note': row['note'],
+        };
+      }
+
+      for (var group in wordGroups.values) {
+        final translations = group.remove('translations');
+        group['data_json'] = jsonEncode(translations);
+        await txn.insert('words', group);
+      }
+
+      // 5. Sentences 데이터 통합
+      final List<Map<String, dynamic>> oldSentences = await txn.query('sentences_old');
+      final Map<int, Map<String, dynamic>> sentenceGroups = {};
+      final Map<int, int> sentenceIdToGroup = {};
+
+      for (var row in oldSentences) {
+        final gId = row['group_id'] as int;
+        final lang = row['lang_code'] as String;
+        sentenceIdToGroup[row['id'] as int] = gId;
+
+        sentenceGroups.putIfAbsent(gId, () => {
+          'group_id': gId,
+          'created_at': row['created_at'],
+          'is_memorized': row['is_memorized'],
+          'is_synced': row['is_synced'],
+          'audio_file': row['audio_file'],
+          'last_reviewed': row['last_reviewed'],
+          'review_count': row['review_count'],
+          'translations': <String, dynamic>{},
+        });
+        
+        (sentenceGroups[gId]!['translations'] as Map<String, dynamic>)[lang] = {
+          'text': row['text'],
+          'pos': row['pos'],
+          'style': row['style'],
+          'note': row['note'],
+        };
+      }
+
+      for (var group in sentenceGroups.values) {
+        final translations = group.remove('translations');
+        group['data_json'] = jsonEncode(translations);
+        await txn.insert('sentences', group);
+      }
+
+      // 6. Tags 데이터 이관
+      final List<Map<String, dynamic>> oldTags = await txn.query('item_tags_old');
+      for (var tag in oldTags) {
+        final oldId = tag['item_id'] as int;
+        final type = tag['item_type'] as String;
+        int? groupId = (type == 'word') ? wordIdToGroup[oldId] : sentenceIdToGroup[oldId];
+        
+        // 원본 언어 찾기
+        String lang = 'auto';
+        if (type == 'word') {
+          final orig = oldWords.firstWhere((w) => w['id'] == oldId, orElse: () => {});
+          if (orig.isNotEmpty) lang = orig['lang_code'];
+        } else {
+          final orig = oldSentences.firstWhere((s) => s['id'] == oldId, orElse: () => {});
+          if (orig.isNotEmpty) lang = orig['lang_code'];
+        }
+
+        if (groupId != null) {
+          await txn.insert('item_tags', {
+            'item_id': groupId,
+            'item_type': type,
+            'tag': tag['tag'],
+            'lang_code': lang,
+          });
+        }
+      }
+
+      // 7. Cleanup
+      await txn.execute('DROP TABLE words_old');
+      await txn.execute('DROP TABLE sentences_old');
+      await txn.execute('DROP TABLE item_tags_old');
+    });
   }
 
   static Future<void> ensureDefaultMaterial(Database db) async {

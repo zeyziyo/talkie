@@ -38,11 +38,19 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     super.initState();
+    
+    // Phase 119: Pre-warm Speech Services to avoid initial STT/TTS delay
+    _speechService.initialize().catchError((e) {
+      debugPrint('[ChatScreen] Pre-warm failed: $e');
+      return false;
+    });
+
     if (widget.initialDialogue != null) {
       _loadHistory();
     }
     // Load list for Dropdown
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
       final appState = Provider.of<AppState>(context, listen: false);
       appState.loadDialogueGroups();
       appState.loadParticipants(); // Phase 70
@@ -759,43 +767,58 @@ class _ChatScreenState extends State<ChatScreen> {
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          // 1. Language Dropdown (User)
-          SizedBox(
-            height: 24,
-            child: DropdownButton<String>(
-              value: LanguageConstants.supportedLanguages.any((l) => l['code'] == appState.sourceLang) 
-                  ? appState.sourceLang 
-                  : 'en',
-              underline: const SizedBox(),
-              icon: const Icon(Icons.arrow_drop_down, size: 16),
-              style: const TextStyle(fontSize: 11, color: Colors.black87),
-              onChanged: (newLang) {
-                if (newLang != null && newLang != appState.sourceLang) {
-                  appState.setSourceLang(newLang);
-                }
-              },
-              items: LanguageConstants.supportedLanguages.map((l) {
-                return DropdownMenuItem(
-                  value: l['code'],
-                  child: Text(l['name']!),
-                );
-              }).toList(),
+          // Mode 4 UI Enhancement: Group Language & Gender
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 4),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: Colors.grey.shade300),
             ),
-          ),
-          const SizedBox(width: 8),
-
-          // 2. Gender Toggle (User)
-          InkWell(
-            onTap: () {
-              final newGender = appState.chatUserGender == 'male' ? 'female' : 'male';
-               appState.setChatUserGender(newGender);
-               // Re-speak
-               _speak(msg['source_text'], appState.sourceLang, isUser: true);
-            },
-            child: Icon(
-              appState.chatUserGender == 'male' ? Icons.face : Icons.face_3,
-              size: 16,
-              color: appState.chatUserGender == 'male' ? Colors.blue : Colors.pink,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // 1. Language Dropdown (User)
+                SizedBox(
+                  height: 24,
+                  child: DropdownButton<String>(
+                    value: LanguageConstants.supportedLanguages.any((l) => l['code'] == appState.sourceLang) 
+                        ? appState.sourceLang 
+                        : 'ko',
+                    underline: const SizedBox(),
+                    icon: const Icon(Icons.arrow_drop_down, size: 16),
+                    style: const TextStyle(fontSize: 11, color: Colors.black87),
+                    onChanged: (newLang) {
+                      if (newLang != null && newLang != appState.sourceLang) {
+                        appState.setSourceLang(newLang);
+                      }
+                    },
+                    items: LanguageConstants.supportedLanguages.map((l) {
+                      return DropdownMenuItem(
+                        value: l['code'],
+                        child: Text(l['name']!),
+                      );
+                    }).toList(),
+                  ),
+                ),
+                VerticalDivider(width: 8, thickness: 1, color: Colors.grey.shade300),
+                // 2. Gender Toggle (User)
+                InkWell(
+                  onTap: () {
+                    final newGender = appState.chatUserGender == 'male' ? 'female' : 'male';
+                    appState.setChatUserGender(newGender);
+                    _speak(msg['source_text'] ?? '', appState.sourceLang, isUser: true);
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                    child: Icon(
+                      appState.chatUserGender == 'male' ? Icons.face : Icons.face_3,
+                      size: 16,
+                      color: appState.chatUserGender == 'male' ? Colors.blue : Colors.pink,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           const SizedBox(width: 8),
@@ -837,42 +860,56 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
           ),
           
-          const SizedBox(width: 12),
-          
-          // 2. Gender Toggle
-          InkWell(
-            onTap: () async {
-              final newGender = participant.gender == 'male' ? 'female' : 'male';
-               await appState.updateParticipant(participant.id, gender: newGender);
-               // Re-speak immediately
-               _speak(msg['source_text'], participant.langCode, isUser: false);
-            },
-            child: Icon(
-              participant.gender == 'male' ? Icons.face : Icons.face_3, // Male/Female icons
-              size: 16,
-              color: participant.gender == 'male' ? Colors.blue : Colors.pink,
-            ),
-          ),
-          
           const SizedBox(width: 8),
 
-          // 3. Language Dropdown (Compact)
-          SizedBox(
-            height: 24,
-            child: DropdownButton<String>(
-              value: LanguageConstants.supportedLanguages.any((l) => l['code'] == participant.langCode) 
-                  ? participant.langCode 
-                  : 'en', // Fallback
-              underline: const SizedBox(),
-              icon: const Icon(Icons.arrow_drop_down, size: 16),
-              style: const TextStyle(fontSize: 11, color: Colors.black87),
-              onChanged: (newLang) => _handleLanguageChange(participant, newLang, appState, msg),
-              items: LanguageConstants.supportedLanguages.map((l) {
-                return DropdownMenuItem(
-                  value: l['code'],
-                  child: Text(l['name']!),
-                );
-              }).toList(),
+          // Mode 4 UI Enhancement: Group Language & Gender
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 4),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: Colors.grey.shade300),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // 1. Language Dropdown (AI)
+                SizedBox(
+                  height: 24,
+                  child: DropdownButton<String>(
+                    value: LanguageConstants.supportedLanguages.any((l) => l['code'] == participant.langCode) 
+                        ? participant.langCode 
+                        : 'en',
+                    underline: const SizedBox(),
+                    icon: const Icon(Icons.arrow_drop_down, size: 16),
+                    style: const TextStyle(fontSize: 11, color: Colors.black87),
+                    onChanged: (newLang) => _handleLanguageChange(participant, newLang, appState, msg),
+                    items: LanguageConstants.supportedLanguages.map((l) {
+                      return DropdownMenuItem(
+                        value: l['code'],
+                        child: Text(l['name']!),
+                      );
+                    }).toList(),
+                  ),
+                ),
+                VerticalDivider(width: 8, thickness: 1, color: Colors.grey.shade300),
+                // 2. Gender Toggle (AI)
+                InkWell(
+                  onTap: () async {
+                    final newGender = participant.gender == 'male' ? 'female' : 'male';
+                    await appState.updateParticipant(participant.id, gender: newGender);
+                    _speak(msg['source_text'] ?? '', participant.langCode, isUser: false);
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                    child: Icon(
+                      participant.gender == 'male' ? Icons.face : Icons.face_3,
+                      size: 16,
+                      color: participant.gender == 'male' ? Colors.blue : Colors.pink,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:talkie/providers/app_state.dart';
 import 'package:talkie/l10n/app_localizations.dart';
+import 'package:provider/provider.dart';
 
 class Mode2Card extends StatelessWidget {
   final AppState appState;
@@ -237,6 +238,44 @@ class Mode2Card extends StatelessWidget {
                          ),
                       ],
                     ),
+                    const SizedBox(height: 12),
+                    
+                    // Phase 120: Target-Specific Tags
+                    if (record['target_tags'] != null && (record['target_tags'] as List).isNotEmpty)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 12),
+                        child: Wrap(
+                          spacing: 8,
+                          runSpacing: 4,
+                          children: (() {
+                            final systemTags = {
+                              ...AppState.posCategories,
+                              ...AppState.sentenceCategories,
+                              ...AppState.verbFormCategories,
+                              ...AppState.adjectiveFormCategories,
+                              'word', 'sentence', 'Dialogue'
+                            }.map((e) => e.toLowerCase()).toSet();
+
+                            final appState = Provider.of<AppState>(context, listen: false);
+                            final materialSubjects = appState.studyMaterials.map((m) => m['subject'] as String).toSet();
+
+                            return (record['target_tags'] as List)
+                                .map((t) => t.toString())
+                                .where((t) => !systemTags.contains(t.toLowerCase()) && !materialSubjects.contains(t))
+                                .map((t) => Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white10,
+                                        borderRadius: BorderRadius.circular(4),
+                                        border: Border.all(color: Colors.white12),
+                                      ),
+                                      child: Text('#$t', style: const TextStyle(fontSize: 9, color: Colors.white60)),
+                                    ))
+                                .toList();
+                          })(),
+                        ),
+                      ),
+
                     const SizedBox(height: 16),
                     
                     // Actions (TTS / Hide)

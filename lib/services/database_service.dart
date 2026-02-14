@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:sqflite/sqflite.dart';
 import 'database/database_helper.dart';
 import 'database/word_repository.dart';
@@ -29,7 +30,7 @@ class DatabaseService {
   // --- Tag Repository Delegation ---
   static Future<List<String>> getAllTags() => TagRepository.getAllTags();
   static Future<List<String>> getAllTagsForLanguage(String langCode) => TagRepository.getAllTagsForLanguage(langCode);
-  static Future<void> addTag(int itemId, String itemType, String tag) => TagRepository.addTag(itemId, itemType, tag);
+  static Future<void> addTag(int itemId, String itemType, String tag, {String langCode = 'auto'}) => TagRepository.addTag(itemId, itemType, tag, langCode);
 
   // --- Dialogue Repository Delegation ---
   static Future<List<Map<String, dynamic>>> getDialogueGroups({String? userId}) => DialogueRepository.getGroups(userId: userId);
@@ -178,20 +179,62 @@ class DatabaseService {
 
   static Future<Map<String, dynamic>?> fetchGroupSyncData(int groupId) async {
     final db = await database;
-    final words = await db.query('words', where: 'group_id = ?', whereArgs: [groupId]);
-    final sentences = await db.query('sentences', where: 'group_id = ?', whereArgs: [groupId]);
+    final List<Map<String, dynamic>> rawWords = await db.query('words', where: 'group_id = ?', whereArgs: [groupId]);
+    final List<Map<String, dynamic>> rawSentences = await db.query('sentences', where: 'group_id = ?', whereArgs: [groupId]);
     
-    // Get tags for all items in this group
+    final List<Map<String, dynamic>> flattenedWords = [];
+    final List<Map<String, dynamic>> flattenedSentences = [];
+
+    // Parse JSON into flattened records for Supabase sync compatibility
+    for (var row in rawWords) {
+      if (row['data_json'] != null) {
+        final Map<String, dynamic> data = jsonDecode(row['data_json'] as String);
+        for (var entry in data.entries) {
+          final lang = entry.key;
+          final content = entry.value as Map<String, dynamic>;
+          flattenedWords.add({
+            ...row,
+            'lang_code': lang,
+            'text': content['text'],
+            'pos': content['pos'],
+            'note': content['note'],
+            'root': content['root'],
+            'form_type': content['form_type'],
+          });
+        }
+      }
+    }
+
+    for (var row in rawSentences) {
+      if (row['data_json'] != null) {
+        final Map<String, dynamic> data = jsonDecode(row['data_json'] as String);
+        for (var entry in data.entries) {
+          final lang = entry.key;
+          final content = entry.value as Map<String, dynamic>;
+          flattenedSentences.add({
+            ...row,
+            'lang_code': lang,
+            'text': content['text'],
+            'pos': content['pos'],
+            'note': content['note'],
+            'style': content['style'],
+          });
+        }
+      }
+    }
+
+    // Get tags for the whole group
     final List<String> tags = [];
-    final allItems = [...words, ...sentences];
-    for (var item in allItems) {
-      final itemTags = await TagRepository.getTagsForItem(item['id'] as int, words.contains(item) ? 'word' : 'sentence');
-      tags.addAll(itemTags);
+    if (rawWords.isNotEmpty) {
+      tags.addAll(await TagRepository.getTagsForItem(groupId, 'word'));
+    }
+    if (rawSentences.isNotEmpty) {
+      tags.addAll(await TagRepository.getTagsForItem(groupId, 'sentence'));
     }
 
     return {
-      'words': words,
-      'sentences': sentences,
+      'words': flattenedWords,
+      'sentences': flattenedSentences,
       'tags': tags.toSet().toList(), // Deduplicate
     };
   }

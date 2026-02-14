@@ -406,40 +406,30 @@ extension AppStateChat on AppState {
   Future<void> saveUserMessage(String sourceText, String targetText) async {
     if (_activeDialogueId == null) return;
 
-    final createdAt = DateTime.now().toIso8601String();
     final timestamp = DateTime.now().millisecondsSinceEpoch;
     _currentDialogueSequence++;
 
     try {
       final db = await DatabaseService.database;
       await db.transaction((txn) async {
-        const table = 'sentences';
-
-        final sourceId = await txn.insert(table, {
-          'group_id': timestamp,
-          'text': sourceText,
-          'lang_code': _sourceLang,
-          'created_at': createdAt,
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
-
-        final targetId = await txn.insert(table, {
-          'group_id': timestamp,
-          'text': targetText,
-          'lang_code': _targetLang,
-          'created_at': createdAt,
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
-
-        await txn.insert('sentence_translations', {
-          'source_sentence_id': sourceId,
-          'target_sentence_id': targetId,
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
+        // Phase 119: Use UnifiedRepository to handle multi-table insertion safely
+        await UnifiedRepository.saveUnifiedRecord(
+          text: sourceText,
+          lang: _sourceLang,
+          translation: targetText,
+          targetLang: _targetLang,
+          type: _isWordMode ? 'word' : 'sentence',
+          tags: ['Dialogue'],
+          txn: txn,
+          groupId: timestamp,
+        );
 
         await txn.insert('chat_messages', {
           'dialogue_id': _activeDialogueId,
           'group_id': timestamp,
-          'speaker': 'User', // Standardized to Title case for ChatScreen compatibility
+          'speaker': 'User',
           'sequence_order': _currentDialogueSequence,
-          'created_at': createdAt,
+          'created_at': DateTime.now().toIso8601String(),
         });
       });
 
@@ -484,36 +474,21 @@ extension AppStateChat on AppState {
       final db = await DatabaseService.database;
       
       await db.transaction((txn) async {
-        const table = 'sentences';
-        
-        final sourceId = await txn.insert(table, {
-          'group_id': timestamp,
-          'text': sourceText,
-          'lang_code': _targetLang,
-          'pos': pos,
-          'form_type': formType,
-          'root': root,
-          'note': explanation,
-          'created_at': createdAt,
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
-
-        final targetId = await txn.insert(table, {
-          'group_id': timestamp,
-          'text': targetText,
-          'lang_code': _sourceLang, 
-          'created_at': createdAt,
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
-
-        await txn.insert('sentence_translations', {
-          'source_sentence_id': sourceId > 0 ? sourceId : (await _getUnifiedId(txn, table, sourceText, _targetLang, explanation)),
-          'target_sentence_id': targetId > 0 ? targetId : (await _getUnifiedId(txn, table, targetText, _sourceLang, null)),
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
-
-        await txn.insert('item_tags', {
-          'item_id': sourceId > 0 ? sourceId : (await _getUnifiedId(txn, table, sourceText, _targetLang, explanation)),
-          'item_type': 'sentence',
-          'tag': 'Dialogue',
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
+        // Phase 119: Use UnifiedRepository for AI response persistence
+        await UnifiedRepository.saveUnifiedRecord(
+          text: sourceText,
+          lang: _targetLang,
+          translation: targetText,
+          targetLang: _sourceLang,
+          type: 'sentence', // AI usually speaks sentences
+          pos: pos,
+          formType: formType,
+          root: root,
+          note: explanation,
+          tags: ['Dialogue'],
+          txn: txn,
+          groupId: timestamp,
+        );
 
         await txn.insert('chat_messages', {
           'dialogue_id': _activeDialogueId,

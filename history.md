@@ -21,6 +21,13 @@
 
 ---
 
+### [2026-02-13] AI Chat UI/UX Refinement & Reliability (Phase 119)
+- **UI/UX**: 성별 선택 다이얼로그를 제거하고, 각 참가자의 헤더(언어 드롭다운 옆)로 성별 전환 위젯을 이동하여 실시간 제어성을 극대화했습니다. 
+- **Acoustic Symmetry**: 영어('en-US') 및 한국어('ko-KR') 로케일을 강제 매핑하여 억양 불일치(콩글리쉬)를 원천 차단했습니다.
+- **Performance**: 채팅 화면 진입 시 `SpeechService`를 사전 초기화(Pre-warm)하여 첫 마이크 클릭 시의 반응 지연 현상을 해결했습니다.
+- **Reliability**: 대화 저장 시 삭제된 레거시 테이블(`sentence_translations`) 참조로 인해 트랜잭션이 실패하여 내용이 누락되던 중대 결함을 해결했습니다. `UnifiedRepository` 기반으로 저장 로직을 정규화하여 대화 기록 로딩의 대규모 신뢰성을 확보했습니다.
+- **Stability**: `flutter analyze` 린트 오류 및 미사용 임포트/레거시 메서드(`_getUnifiedId`)를 정리하여 경고 제로 상태를 달성했습니다.
+
 ### [2026-02-13] Mode 2 Data Visibility & Null Safety Fix (Phase 114)
 - **Bug Fix**: 온라인 자료실 자료 임포트 시 복습 모드(Mode 2)에서 카드가 표시되지 않던 결함(TypeError 및 타입 불일치)을 해결했습니다.
 - **Integrity**: `Mode2Card` 위젯에 널 안전성(Null Safety)을 적용하여 특정 언어의 번역 정보가 누락되더라도 리스트 전체의 렌더링이 중단되지 않도록 보완했습니다.

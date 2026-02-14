@@ -5,8 +5,9 @@ import 'dart:io';
 import 'package:file_picker/file_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async';
-import 'package:sqflite/sqflite.dart';
+// Phase 119: Cleaned up unused sqflite import
 import '../services/database_service.dart';
+import '../services/database/unified_repository.dart';
 import '../services/translation_service.dart';
 import '../services/speech_service.dart';
 import '../constants/language_constants.dart';

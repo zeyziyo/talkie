@@ -153,10 +153,12 @@ class DataTransferService {
                 }
 
                 for (var t in allTags) {
-                  batch.execute('''
-                    INSERT INTO item_tags (item_id, item_type, tag)
-                    SELECT id, ?, ? FROM $table WHERE group_id = ?
-                  ''', [type, t, gId]);
+                  batch.insert('item_tags', {
+                    'item_id': gId,
+                    'item_type': type,
+                    'tag': t,
+                    'lang_code': sourceLang, // Phase 120: 소스 언어 코드 명시
+                  }, conflictAlgorithm: ConflictAlgorithm.ignore);
                 }
 
                 importedCount++;
@@ -328,7 +330,7 @@ class DataTransferService {
     
     final List<Map<String, dynamic>> entries = [];
     for (var item in items) {
-      final id = item['id'] as int;
+      final id = item['group_id'] as int;
       final type = item['origin_table'] == 'words' ? 'word' : 'sentence';
       final tags = await getTags(id, type);
       

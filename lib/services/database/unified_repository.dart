@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:sqflite/sqflite.dart';
 import 'database_helper.dart';
 import 'word_repository.dart';
@@ -27,22 +28,20 @@ class UnifiedRepository {
     final db = txn ?? await _db;
     final table = type == 'word' ? 'words' : 'sentences';
     
-    // Determine Group ID (Pivot Strategy)
+    // Determine Group ID
     int gId = groupId ?? DateTime.now().millisecondsSinceEpoch;
     
     if (groupId == null && syncSubject != null && sequenceOrder != null) {
       try {
-        final existing = await db.rawQuery('''
-          SELECT w.group_id 
-          FROM item_tags t 
-          JOIN $table w ON t.item_id = w.id 
-          WHERE t.tag = ? 
-          ORDER BY w.created_at ASC 
+        final existingPivot = await db.rawQuery('''
+          SELECT item_id as group_id FROM item_tags 
+          WHERE tag = ? AND item_type = ?
+          ORDER BY item_id ASC 
           LIMIT 1 OFFSET ?
-        ''', [syncSubject, sequenceOrder]);
+        ''', [syncSubject, type, sequenceOrder]);
         
-        if (existing.isNotEmpty) {
-           final foundId = existing.first['group_id'] as int;
+        if (existingPivot.isNotEmpty) {
+           final foundId = existingPivot.first['group_id'] as int;
            if (foundId > 0) gId = foundId;
         }
       } catch (e) {
@@ -52,56 +51,63 @@ class UnifiedRepository {
 
     final timestamp = DateTime.now().toIso8601String();
 
-    final row = {
-      'group_id': gId,
-      'text': text,
-      'lang_code': lang,
-      'pos': pos,
-      'note': note,
-      'created_at': timestamp,
-    };
+    // 1. 기존 레코드 유무 확인 및 데이터 준비
+    final existing = await db.query(table, where: 'group_id = ?', whereArgs: [gId], limit: 1);
+    Map<String, dynamic> translations = {};
+    Map<String, dynamic> row;
 
-    int id;
-    if (type == 'word') {
-      row['form_type'] = formType;
-      row['root'] = root;
-      id = await WordRepository.insert(row, txn: txn);
+    if (existing.isNotEmpty) {
+      row = Map.from(existing.first);
+      translations = jsonDecode(row['data_json'] as String);
     } else {
-      row['style'] = style;
-      id = await SentenceRepository.insert(row, txn: txn);
-    }
-
-    if (tags != null) {
-      for (var t in tags) {
-        await TagRepository.addTag(id, type, t, txn: txn);
-      }
-    }
-    
-    // Target 저장
-    if (translation.isNotEmpty && targetLang.isNotEmpty && targetLang != 'auto') {
-      final targetRow = {
+      row = {
         'group_id': gId,
-        'text': translation,
-        'lang_code': targetLang,
-        // Phase 116: Sync ONLY shared metadata. Linguistic fields (root, form_type) must remain isolated.
-        'pos': pos,  // POS is generally shared conceptually in translations
-        'note': note,
         'created_at': timestamp,
       };
+    }
 
+    // 2. 소스 데이터 병합
+    final sourceEntry = {
+      'text': text,
+      'pos': pos,
+      'note': note,
+    };
+    if (type == 'word') {
+      sourceEntry['root'] = root;
+      sourceEntry['form_type'] = formType;
+    } else {
+      sourceEntry['style'] = style;
+    }
+    translations[lang] = sourceEntry;
+
+    // 3. 타겟 데이터 병합
+    if (translation.isNotEmpty && targetLang.isNotEmpty && targetLang != 'auto') {
+      final targetEntry = {
+        'text': translation,
+        'pos': pos,
+        'note': note,
+      };
       if (type != 'word') {
-        targetRow['style'] = style; // Sentence style is shared
+        targetEntry['style'] = style;
       }
+      translations[targetLang] = targetEntry;
+    }
 
-      int tId;
-      if (type == 'word') {
-        tId = await WordRepository.insert(targetRow, txn: txn);
-      } else {
-        tId = await SentenceRepository.insert(targetRow, txn: txn);
-      }
-      if (tags != null) {
-        for (var t in tags) {
-          await TagRepository.addTag(tId, type, t, txn: txn);
+    row['data_json'] = jsonEncode(translations);
+
+    // 4. 단일 레코드로 저장 (Upsert)
+    if (type == 'word') {
+      await WordRepository.insert(row, txn: txn);
+    } else {
+      await SentenceRepository.insert(row, txn: txn);
+    }
+
+    // 5. 태그 저장 (언어별로 구분하여 저장)
+    if (tags != null) {
+      for (var t in tags) {
+        await TagRepository.addTag(gId, type, t, lang, txn: txn);
+        if (translation.isNotEmpty) {
+           await TagRepository.addTag(gId, type, t, targetLang, txn: txn);
         }
       }
     }
@@ -124,30 +130,25 @@ class UnifiedRepository {
     final db = txn ?? await _db;
     final table = type == 'word' ? 'words' : 'sentences';
 
-    final existing = await db.query(
-      table,
-      where: 'group_id = ? AND lang_code = ?',
-      whereArgs: [groupId, lang],
-      limit: 1,
-    );
-
-    if (existing.isEmpty) {
-      final row = {
-        'group_id': groupId,
+    final existing = await db.query(table, where: 'group_id = ?', whereArgs: [groupId], limit: 1);
+    if (existing.isNotEmpty) {
+      final row = Map<String, dynamic>.from(existing.first);
+      final Map<String, dynamic> translations = jsonDecode(row['data_json'] as String);
+      
+      final entry = {
         'text': text,
-        'lang_code': lang,
         'pos': pos,
-        'form_type': formType,
-        'style': style,
-        'root': root,
         'note': note,
-        'created_at': DateTime.now().toIso8601String(),
       };
       if (type == 'word') {
-        await WordRepository.insert(row, txn: txn);
+        entry['root'] = root;
+        entry['form_type'] = formType;
       } else {
-        await SentenceRepository.insert(row, txn: txn);
+        entry['style'] = style;
       }
+      translations[lang] = entry;
+      
+      await db.update(table, {'data_json': jsonEncode(translations)}, where: 'group_id = ?', whereArgs: [groupId]);
     }
   }
 

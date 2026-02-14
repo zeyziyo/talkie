@@ -334,10 +334,8 @@ extension AppStateMode1 on AppState {
       final itemType = _isWordMode ? 'word' : 'sentence';
       final finalTags = tags ?? [];
       
-      // Add 'Dialogue' tag if in AI chat
-      if (_activeDialogueId != null && !finalTags.contains('Dialogue')) {
-        finalTags.add('Dialogue');
-      }
+      // Phase 120: Remove automatic 'Dialogue' tag injection in manual input mode.
+      // Chat messages have their own explicit tagging in AppStateChat.
       
       // Add the User-Selected Material Subject as a Tag for Filtering
       String subjectToSave = _selectedSaveSubject;
@@ -409,16 +407,8 @@ extension AppStateMode1 on AppState {
         );
 
         if (canonicalId != timestamp) {
-          // Relink local temporary ID to canonical ID
-          await DatabaseService.saveUnifiedRecord(
-             text: _sourceText, lang: _sourceLang, translation: _translatedText, targetLang: _targetLang, type: itemType,
-             groupId: canonicalId, // Set to canonical
-          );
-          // Note: saveUnifiedRecord actually inserts/updates. 
-          // But we need to update ALL related records (item_tags, etc). 
-          // Let's use our new relink method via UnifiedRepository/DatabaseService facade if available.
-          // Since I haven't added relink to DatabaseService facade yet, I'll call it directly via UnifiedRepository if possible or use DatabaseService if I add it.
-          // I will use UnifiedRepository.relinkGroupId.
+          // Phase 120: Relink local temporary ID to canonical ID
+          // Avoid second saveUnifiedRecord call to prevent UI duplication
           await DatabaseService.relinkGroupId(timestamp, canonicalId);
         }
 

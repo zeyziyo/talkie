@@ -13,14 +13,7 @@ extension AppStateAuth on AppState {
     notify();
   }
 
-  /// 동일 텍스트 아이디 조회 헬퍼
-  Future<int> _getUnifiedId(Transaction txn, String table, String text, String lang, String? note) async {
-    final results = await txn.query(table, columns: ['id'], 
-        where: 'text = ? AND lang_code = ? AND IFNULL(note, "") = ?', 
-        whereArgs: [text, lang, note ?? ""]);
-    if (results.isNotEmpty) return results.first['id'] as int;
-    return 0;
-  }
+  // Removed _getUnifiedId as it is replaced by UnifiedRepository.saveUnifiedRecord in Phase 119
 
   /// Import study materials from JSON file content
   Future<Map<String, dynamic>> importFromJsonFile(String jsonContent, {String? fileName}) async {

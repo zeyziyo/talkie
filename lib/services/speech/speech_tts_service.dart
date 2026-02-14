@@ -32,7 +32,18 @@ class SpeechTtsService {
   Future<void> speak(String text, {String lang = 'ko-KR', bool slow = false, String? gender}) async {
     if (!_isInitialized) await initialize();
 
-    // Language Detection Heuristic
+    // Unified Language Normalization (Phase 119: Anti-Konglish)
+    if (lang == 'en') {
+      lang = 'en-US';
+    } else if (lang == 'ko') {
+      lang = 'ko-KR';
+    } else if (lang == 'ja') {
+      lang = 'ja-JP';
+    } else if (lang == 'es') {
+      lang = 'es-ES';
+    }
+
+    // Language Detection Heuristic (Fallback if lang wasn't explicitly set to a handled code)
     if (RegExp(r'[가-힣]').hasMatch(text)) {
       lang = 'ko-KR';
     } else if (RegExp(r'[\u3040-\u309F\u30A0-\u30FF]').hasMatch(text)) {
@@ -42,6 +53,7 @@ class SpeechTtsService {
     } else {
       final latinPattern = RegExp(r'^[a-zA-Z0-9\s.,?!;:()"\-]+$');
       if (latinPattern.hasMatch(text.trim())) {
+        // Force English if it looks completely latin and we are in an Asian locale
         if (lang.startsWith('ko') || lang.startsWith('ja') || lang.startsWith('zh')) {
           lang = 'en-US';
         }
