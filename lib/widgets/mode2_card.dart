@@ -142,21 +142,13 @@ class Mode2Card extends StatelessWidget {
                                // 3. User Tags - Moved to row 1
                                if (record['tags'] != null && (record['tags'] as List).isNotEmpty)
                                  ...(() {
-                                    // Phase 125.3: Enhanced Tag Filtering with Global Hidden Tags
-                                    final systemTags = {
-                                      ...AppState.posCategories,
-                                      ...AppState.sentenceCategories,
-                                      ...AppState.verbFormCategories,
-                                      ...AppState.adjectiveFormCategories,
-                                      ...AppState.systemHiddenTags,
-                                    }.map((e) => e.toLowerCase()).toSet();
-
-                                    final appState = Provider.of<AppState>(context, listen: false);
-                                    final materialSubjects = appState.studyMaterials.map((m) => m['subject'] as String).toSet();
+                                    // Phase 125.5: Strict Whitelist Filtering
+                                    // Only show tags that are explicitly defined in AppState.displayableTags
+                                    final displayableParams = AppState.displayableTags;
                                     
                                     final filteredTags = (record['tags'] as List)
                                         .map((t) => t.toString())
-                                        .where((t) => !systemTags.contains(t.toLowerCase()) && !materialSubjects.contains(t))
+                                        .where((t) => displayableParams.contains(t.toLowerCase()))
                                         .toList();
 
                                     return filteredTags.map((t) => Container(
@@ -252,21 +244,12 @@ class Mode2Card extends StatelessWidget {
                           spacing: 8,
                           runSpacing: 4,
                           children: (() {
-                            // Phase 125.3: Enhanced Tag Filtering with Global Hidden Tags
-                            final systemTags = {
-                              ...AppState.posCategories,
-                              ...AppState.sentenceCategories,
-                              ...AppState.verbFormCategories,
-                              ...AppState.adjectiveFormCategories,
-                              ...AppState.systemHiddenTags,
-                            }.map((e) => e.toLowerCase()).toSet();
-
-                            final appState = Provider.of<AppState>(context, listen: false);
-                            final materialSubjects = appState.studyMaterials.map((m) => m['subject'] as String).toSet();
+                            // Phase 125.5: Strict Whitelist Filtering
+                            final displayableParams = AppState.displayableTags;
 
                             return (record['target_tags'] as List)
                                 .map((t) => t.toString())
-                                .where((t) => !systemTags.contains(t.toLowerCase()) && !materialSubjects.contains(t))
+                                .where((t) => displayableParams.contains(t.toLowerCase()))
                                 .map((t) => Container(
                                       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                                       decoration: BoxDecoration(
