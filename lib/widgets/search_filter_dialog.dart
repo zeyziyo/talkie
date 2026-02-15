@@ -88,40 +88,14 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
               const Divider(),
               const SizedBox(height: 16),
 
-              // 2. General Tag Dropdown 1
+              // 2. General Tag Dropdown
               _buildDropdown(
-                label: '${l10n.generalTags} 1',
+                label: l10n.generalTags,
                 value: selectedGeneral.isNotEmpty ? selectedGeneral[0] : '',
                 items: generalTags,
                 l10n: l10n,
                 onChanged: (val) {
-                  _updateGeneralTag(0, val, selectedGeneral, titleTags);
-                },
-              ),
-
-              const SizedBox(height: 12),
-
-              // 3. General Tag Dropdown 2
-              _buildDropdown(
-                label: '${l10n.generalTags} 2',
-                value: selectedGeneral.length > 1 ? selectedGeneral[1] : '',
-                items: generalTags,
-                l10n: l10n,
-                onChanged: (val) {
-                  _updateGeneralTag(1, val, selectedGeneral, titleTags);
-                },
-              ),
-
-              const SizedBox(height: 12),
-
-              // 4. General Tag Dropdown 3
-              _buildDropdown(
-                label: '${l10n.generalTags} 3',
-                value: selectedGeneral.length > 2 ? selectedGeneral[2] : '',
-                items: generalTags,
-                l10n: l10n,
-                onChanged: (val) {
-                  _updateGeneralTag(2, val, selectedGeneral, titleTags);
+                  _updateGeneralTag(val, titleTags);
                 },
               ),
 
@@ -237,28 +211,14 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
     );
   }
 
-  void _updateGeneralTag(int index, String? val, List<String> currentGeneral, List<String> titleTags) {
+  void _updateGeneralTag(String? val, List<String> titleTags) {
     setState(() {
-      List<String> newGeneral = List.from(currentGeneral);
-      
-      if (val == null || val.isEmpty) {
-        if (index < newGeneral.length) {
-          newGeneral.removeAt(index);
-        }
-      } else {
-        if (index < newGeneral.length) {
-          newGeneral[index] = val;
-        } else {
-          newGeneral.add(val);
-        }
-      }
-
-      // Re-construct _localSelectedTags: [TitleTag] + [General Tags]
+      // Re-construct _localSelectedTags: [TitleTag (if any)] + [General Tag (if any)]
       String? activeTitle = _localSelectedTags.firstWhere((t) => titleTags.contains(t), orElse: () => '');
       
       _localSelectedTags = [
         if (activeTitle.isNotEmpty) activeTitle,
-        ...newGeneral.where((t) => t.isNotEmpty),
+        if (val != null && val.isNotEmpty) val,
       ];
     });
   }

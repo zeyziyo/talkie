@@ -35,7 +35,6 @@ class TagRepository {
     final db = await _db;
     final result = await db.rawQuery('''
       SELECT DISTINCT tag FROM item_tags 
-      WHERE tag NOT IN (SELECT subject FROM study_materials)
       ORDER BY tag ASC
     ''');
     return result.map((e) => e['tag'] as String).toList();
@@ -46,7 +45,6 @@ class TagRepository {
     final result = await db.rawQuery('''
       SELECT DISTINCT tag FROM item_tags 
       WHERE (lang_code = ? OR lang_code = "auto")
-      AND tag NOT IN (SELECT subject FROM study_materials)
       ORDER BY tag ASC
     ''', [langCode]);
     return result.map((e) => e['tag'] as String).toList();
