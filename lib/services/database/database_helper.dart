@@ -62,6 +62,10 @@ class DatabaseHelper {
           print('[DB] Migrating to version 18: Restoring Data Isolation (Separating Dialogue from Sentences)');
           await _migrateToV18(db);
         }
+        
+        // Final Safety Check: Ensure all base tables exist for upgraded users
+        // This fixes 'study_materials' missing issue for users who skipped intermediate versions
+        await createBaseTables(db);
       },
     );
   }
