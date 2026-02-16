@@ -105,6 +105,7 @@ extension AppStateMode1 on AppState {
           _isTranslating = false;
           _duplicateCheckTriggered = true; 
           _statusMessage = '유사한 문장이 발견되었습니다';
+          _showDuplicateDialog = true; // Fix: Show dialog logic
           notify();
           return null; 
         }
@@ -569,17 +570,23 @@ extension AppStateMode1 on AppState {
     _showDuplicateDialog = false;
     _duplicateCheckTriggered = false; 
     
-    final db = await DatabaseService.database;
-    final results = await db.query('sentences', 
-      where: 'id = ?', 
-      whereArgs: [id]
-    );
+    // Phase 129: Use Repository to fetch data correctly (parses data_json)
+    // Note: 'id' here might be group_id if it came from searchAutocomplete?
+    // searchAutocompleteText returns 'group_id'. Let's assume id is group_id.
+    
+    final results = await SentenceRepository.getSentencesByGroupId(id);
     
     if (results.isNotEmpty) {
-      _sourceText = results.first['text'] as String;
-      _sourcePos = results.first['pos'] as String? ?? '';
-      _sourceFormType = results.first['form_type'] as String? ?? '';
-      _sourceRoot = results.first['root'] as String? ?? '';
+      // Find the source lang entry
+      final match = results.firstWhere(
+        (r) => r['lang_code'] == _sourceLang, 
+        orElse: () => results.first // Fallback
+      );
+
+      _sourceText = match['text'] as String;
+      _sourcePos = match['pos'] as String? ?? '';
+      _sourceFormType = match['form_type'] as String? ?? ''; // sentences might not have form_type but let's keep safe
+      _sourceRoot = match['root'] as String? ?? '';
     }
     
     notify();

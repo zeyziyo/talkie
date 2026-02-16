@@ -101,6 +101,15 @@ class DatabaseService {
     }
   }
 
+  static Future<void> updateReviewStats(int id, String type, int increment) async {
+    final lastReviewed = DateTime.now().toIso8601String();
+    if (type == 'word') {
+      await WordRepository.updateReviewStats(id, increment, lastReviewed);
+    } else {
+      await SentenceRepository.updateReviewStats(id, increment, lastReviewed);
+    }
+  }
+
   // --- Material Repository Delegation ---
   static Future<List<Map<String, dynamic>>> getStudyMaterials() async {
     return await MaterialRepository.getAll();
@@ -125,6 +134,8 @@ class DatabaseService {
   );
 
   static Future<Map<String, dynamic>?> getStudyMaterialById(int id) => MaterialRepository.getById(id);
+
+  static Future<void> deleteStudyMaterial(int id) => MaterialRepository.delete(id);
 
   // --- Data Transfer Delegation ---
   static Future<Map<String, dynamic>> importFromJsonWithMetadata(
@@ -159,7 +170,45 @@ class DatabaseService {
 
     return DataTransferService.exportMaterialToJson(
       materialId,
-      getRows: (s, {targetLang}) => TagRepository.getItemsByTag(s, targetLang: targetLang),
+      getRows: (s, {targetLang}) async {
+        // Fetch raw rows with Method that Joins Meta
+        final rawItems = await TagRepository.getItemsByTag(s, targetLang: targetLang);
+        
+        // Parse & Flatten
+        return rawItems.map((row) {
+           final Map<String, dynamic> data = jsonDecode(row['data_json'] as String);
+           // Determine which language to export as 'text'? 
+           // Usually source language of material.
+           final sourceLang = material!['source_language'] as String? ?? 'auto';
+           // If auto, pick first key?
+           // Or search for matching lang?
+           
+           // Simple export logic:
+           // text = data[sourceLang]['text']
+           // translation = data[targetLang]['text']
+           
+           // We need robust selection.
+           String bestKey = data.keys.first;
+           if (sourceLang != 'auto' && data.containsKey(sourceLang)) bestKey = sourceLang;
+           
+           final content = data[bestKey] as Map<String, dynamic>;
+           String trans = '';
+           if (targetLang != null && data.containsKey(targetLang)) {
+              trans = data[targetLang]['text'];
+           }
+           
+           return {
+             ...row,
+             'text': content['text'],
+             'translation': trans,
+             'pos': content['pos'],
+             'note': row['caption'] ?? content['note'], // Phase 129: Use personal caption
+             'root': content['root'],
+             'form_type': content['form_type'],
+             'style': content['style'],
+           };
+        }).toList();
+      },
       getTags: (id, type) => TagRepository.getTagsForItem(id, type),
       targetLang: targetLang,
     );
@@ -168,10 +217,11 @@ class DatabaseService {
   // --- Sync & Utility ---
   static Future<List<int>> getUnsyncedGroupIds({int limit = 50}) async {
     final db = await database;
+    // Phase 129: is_synced is now in meta tables
     final List<Map<String, dynamic>> result = await db.rawQuery('''
-      SELECT DISTINCT group_id FROM words WHERE is_synced = 0
+      SELECT DISTINCT group_id FROM words_meta WHERE is_synced = 0
       UNION
-      SELECT DISTINCT group_id FROM sentences WHERE is_synced = 0
+      SELECT DISTINCT group_id FROM sentences_meta WHERE is_synced = 0
       LIMIT ?
     ''', [limit]);
     return result.map((row) => row['group_id'] as int).toList();
@@ -179,8 +229,23 @@ class DatabaseService {
 
   static Future<Map<String, dynamic>?> fetchGroupSyncData(int groupId) async {
     final db = await database;
-    final List<Map<String, dynamic>> rawWords = await db.query('words', where: 'group_id = ?', whereArgs: [groupId]);
-    final List<Map<String, dynamic>> rawSentences = await db.query('sentences', where: 'group_id = ?', whereArgs: [groupId]);
+    
+    // Phase 129: JOIN with Meta to get User Progress & Personal Notes
+    final List<Map<String, dynamic>> rawWords = await db.rawQuery('''
+      SELECT w.*, wm.notebook_title, wm.source_lang, wm.target_lang, wm.caption, wm.tags,
+             wm.is_memorized, wm.is_synced, wm.review_count, wm.last_reviewed
+      FROM words w
+      LEFT JOIN words_meta wm ON w.group_id = wm.group_id
+      WHERE w.group_id = ?
+    ''', [groupId]);
+
+    final List<Map<String, dynamic>> rawSentences = await db.rawQuery('''
+      SELECT s.*, sm.notebook_title, sm.source_lang, sm.target_lang, sm.caption, sm.tags,
+             sm.is_memorized, sm.is_synced, sm.review_count, sm.last_reviewed
+      FROM sentences s
+      LEFT JOIN sentences_meta sm ON s.group_id = sm.group_id
+      WHERE s.group_id = ?
+    ''', [groupId]);
     
     final List<Map<String, dynamic>> flattenedWords = [];
     final List<Map<String, dynamic>> flattenedSentences = [];
@@ -197,9 +262,10 @@ class DatabaseService {
             'lang_code': lang,
             'text': content['text'],
             'pos': content['pos'],
-            'note': content['note'],
+            'note': row['caption'] ?? content['note'], // Prioritize personal caption
             'root': content['root'],
             'form_type': content['form_type'],
+            // Meta fields are already in row from JOIN
           });
         }
       }
@@ -216,8 +282,9 @@ class DatabaseService {
             'lang_code': lang,
             'text': content['text'],
             'pos': content['pos'],
-            'note': content['note'],
+            'note': row['caption'] ?? content['note'], // Prioritize personal caption
             'style': content['style'],
+            // Meta fields are already in row from JOIN
           });
         }
       }
@@ -242,8 +309,9 @@ class DatabaseService {
   static Future<void> markGroupAsSynced(int groupId) async {
     final db = await database;
     await db.transaction((txn) async {
-      await txn.update('words', {'is_synced': 1}, where: 'group_id = ?', whereArgs: [groupId]);
-      await txn.update('sentences', {'is_synced': 1}, where: 'group_id = ?', whereArgs: [groupId]);
+      // Phase 129: Update meta tables
+      await txn.update('words_meta', {'is_synced': 1}, where: 'group_id = ?', whereArgs: [groupId]);
+      await txn.update('sentences_meta', {'is_synced': 1}, where: 'group_id = ?', whereArgs: [groupId]);
     });
   }
 

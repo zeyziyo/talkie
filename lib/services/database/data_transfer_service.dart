@@ -37,7 +37,7 @@ class DataTransferService {
       final entryDefaultType = (data['default_type'] ?? meta['default_type'] ?? defaultType) as String? ?? 'sentence';
       final entryPos = (data['pos'] ?? meta['pos']) as String?;
       
-      final fileTags = (meta['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
+      final fileTags = (meta['tags'] as List?)?.map((e) => e.toString().trim()).where((e) => e.isNotEmpty).toList() ?? [];
 
       if (checkDuplicate) {
         final exists = await MaterialRepository.existsBySubject(materialSubject, sourceLang, targetLang);
@@ -85,6 +85,47 @@ class DataTransferService {
               txn: txn,
             );
 
+            // Pre-fetch existing items for deduplication (to enable Upsert)
+            final Map<String, int> existingItems = {}; 
+            // If checkDuplicate is true, we return early anyway. 
+            // So we only run this if we are merging/updating.
+            
+             // Fetch Words
+             final words = await txn.rawQuery('''
+                SELECT w.group_id, w.data_json 
+                FROM words w 
+                JOIN words_meta wm ON w.group_id = wm.group_id 
+                WHERE wm.notebook_title = ?
+             ''', [materialSubject]);
+             
+             for (var w in words) {
+                try {
+                  final data = jsonDecode(w['data_json'] as String);
+                  // Check sourceLang first
+                  if (data[sourceLang] != null) {
+                     final text = data[sourceLang]['text'] as String;
+                     existingItems[text.trim()] = w['group_id'] as int;
+                  }
+                } catch (_) {}
+             }
+
+             // Fetch Sentences
+             final sentences = await txn.rawQuery('''
+                SELECT s.group_id, s.data_json 
+                FROM sentences s 
+                JOIN sentences_meta sm ON s.group_id = sm.group_id 
+                WHERE sm.notebook_title = ?
+             ''', [materialSubject]);
+             for (var s in sentences) {
+                try {
+                   final data = jsonDecode(s['data_json'] as String);
+                   if (data[sourceLang] != null) {
+                     final text = data[sourceLang]['text'] as String;
+                     existingItems[text.trim()] = s['group_id'] as int;
+                   }
+                } catch (_) {}
+             }
+
             final batch = txn.batch();
             for (var i = 0; i < entries.length; i++) {
               try {
@@ -99,67 +140,106 @@ class DataTransferService {
                 }
 
                 final bool hasTarget = tText != null && tText.trim().isNotEmpty && targetLang != 'auto';
-                final entryTags = (entry['tags'] as List?)?.map((e) => e.toString()).toList() ?? [];
-                final List<String> allTags = [...fileTags, ...entryTags, materialSubject, syncSubject];
+                final entryTags = (entry['tags'] as List?)?.map((e) => e.toString().trim()).where((e) => e.isNotEmpty).toList() ?? [];
                 
-                final int gId = DateTime.now().millisecondsSinceEpoch + i; 
+                // Phase 129: NoteBook Title uses materialSubject
+                // Use Set to remove duplicates and Trim everything
+                final Set<String> uniqueTags = {
+                   ...fileTags, 
+                   ...entryTags, 
+                   materialSubject.trim(), 
+                   syncSubject.trim()
+                };
+                final List<String> allTags = uniqueTags.where((t) => t.isNotEmpty).toList();
                 
-                // Phase 117: Intelligent Metadata Extraction with Default Inheritance
+                // Deduplication Logic: Reuse ID if text matches
+                final int gId = existingItems[sText.trim()] ?? (DateTime.now().millisecondsSinceEpoch + i); 
+                
+                // Phase 117: Metadata Extraction
                 String? getVal(dynamic item, String key, [String? topLevelDefault]) {
                    final val = item[key] as String?;
                    if (val == null || val.trim().isEmpty) return (topLevelDefault?.trim().isEmpty ?? true) ? null : topLevelDefault;
                    return val.trim();
                 }
 
-                final row = {
-                  'group_id': gId,
+                // Phase 129: Construct data_json (Shared Content)
+                final Map<String, dynamic> contentMap = {};
+                
+                // Source Language Data
+                contentMap[sourceLang] = {
                   'text': sText,
-                  'lang_code': sourceLang,
-                  'pos': getVal(entry, 'pos', entryPos), // Inherit from top-level if entry pos is empty
+                  'pos': getVal(entry, 'pos', entryPos),
                   'note': getVal(entry, 'note'),
-                  'created_at': batchCreatedAt,
                 };
                 
                 final type = entry['type'] as String? ?? entryDefaultType;
-                final table = type == 'word' ? 'words' : 'sentences';
+                final tableContent = type == 'word' ? 'words' : 'sentences';
+
                 if (type == 'word') {
-                  row['form_type'] = getVal(entry, 'form_type');
-                  row['root'] = getVal(entry, 'root');
+                  contentMap[sourceLang]['form_type'] = getVal(entry, 'form_type');
+                  contentMap[sourceLang]['root'] = getVal(entry, 'root');
                 } else {
-                  row['style'] = getVal(entry, 'style');
+                  contentMap[sourceLang]['style'] = getVal(entry, 'style');
                 }
 
-                batch.insert(table, row);
-                
+                // Target Language Data (if exists)
                 if (hasTarget) {
-                  final targetRow = {
-                    'group_id': gId,
+                  contentMap[targetLang] = {
                     'text': tText,
-                    'lang_code': targetLang,
-                    'created_at': batchCreatedAt,
-                    // Phase 117: Use target-specific metadata if available, fallback to source/top-level defaults
                     'pos': getVal(entry, 'target_pos') ?? getVal(entry, 'pos', entryPos),
-                    'note': getVal(entry, 'note'), // Note is shared context
+                    'note': getVal(entry, 'note'), // Note usually shared
                   };
-
                   if (type == 'word') {
-                    targetRow['form_type'] = getVal(entry, 'target_form_type');
-                    targetRow['root'] = getVal(entry, 'target_root');
+                    contentMap[targetLang]['form_type'] = getVal(entry, 'target_form_type');
+                    contentMap[targetLang]['root'] = getVal(entry, 'target_root');
                   } else {
-                    targetRow['style'] = getVal(entry, 'target_style') ?? getVal(entry, 'style');
+                    contentMap[targetLang]['style'] = getVal(entry, 'target_style') ?? getVal(entry, 'style');
                   }
-
-                  batch.insert(table, targetRow);
                 }
 
-                for (var t in allTags) {
-                  batch.insert('item_tags', {
-                    'item_id': gId,
-                    'item_type': type,
-                    'tag': t,
-                    'lang_code': sourceLang, // Phase 120: 소스 언어 코드 명시
-                  }, conflictAlgorithm: ConflictAlgorithm.ignore);
-                }
+                // 1. Insert Shared Content
+                batch.insert(tableContent, {
+                  'group_id': gId,
+                  'data_json': jsonEncode(contentMap),
+                  'created_at': batchCreatedAt,
+                }, conflictAlgorithm: ConflictAlgorithm.replace);
+
+                // 2. Insert Personal Meta (Upsert with Logic)
+                final metaTable = type == 'word' ? 'words_meta' : 'sentences_meta';
+                
+                // Using rawInsert for complex Upsert logic (Preserve user stats)
+                // Note: We use rawInsert directly on batch, but batch in sqflite is a bit different.
+                // batch.rawInsert(sql, arguments)
+                
+                batch.rawInsert('''
+                  INSERT INTO $metaTable (
+                    group_id, notebook_title, source_lang, target_lang, caption, tags,
+                    is_memorized, is_synced, review_count, last_reviewed
+                  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                  ON CONFLICT(group_id) DO UPDATE SET
+                    notebook_title = excluded.notebook_title,
+                    source_lang = excluded.source_lang,
+                    target_lang = excluded.target_lang,
+                    tags = excluded.tags,
+                    is_synced = MAX($metaTable.is_synced, excluded.is_synced),
+                    is_memorized = MAX($metaTable.is_memorized, excluded.is_memorized),
+                    review_count = MAX($metaTable.review_count, excluded.review_count),
+                    last_reviewed = MAX($metaTable.last_reviewed, excluded.last_reviewed),
+                    caption = COALESCE(NULLIF(excluded.caption, ''), $metaTable.caption)
+                ''', [
+                  gId,
+                  materialSubject,
+                  sourceLang,
+                  targetLang,
+                  getVal(entry, 'note') ?? '',
+                  allTags.join(','),
+                  0, // is_memorized default for import (safe to merge with MAX)
+                  0, // is_synced default
+                  0, // review_count default
+                  null // last_reviewed default
+                ]);
+
+                // 3. (Removed) item_tags table is deprecated/removed. Tags are stored in meta.
 
                 importedCount++;
               } catch (e) {
@@ -201,6 +281,9 @@ class DataTransferService {
                   txn: txn,
                 );
               }
+              
+              // Prevent Duplicate Messages: Clear existing messages for this session
+              await txn.delete('dialogues', where: 'session_id = ?', whereArgs: [dId]);
 
               final messages = dMap['messages'] as List? ?? [];
               totalMessages += messages.length;
@@ -216,63 +299,22 @@ class DataTransferService {
                     skippedCount++;
                     continue;
                   }
-
-                  final existingMessage = await txn.query(
-                    'chat_messages',
-                    where: 'dialogue_id = ? AND sequence_order = ?',
-                    whereArgs: [dId, j],
-                    limit: 1,
-                  );
-
-                  int gId;
-                  if (existingMessage.isNotEmpty) {
-                    gId = existingMessage.first['group_id'] as int;
-                    await UnifiedRepository.addLanguageToUnifiedRecord(
-                      groupId: gId,
-                      text: primaryText,
-                      lang: (sText != null) ? sourceLang : targetLang,
-                      type: msg['type'] as String? ?? 'sentence',
-                      pos: msg['pos'] as String?,
-                      formType: (msg['form_type'] ?? msg['formType']) as String?,
-                      style: msg['style'] as String?,
-                      root: msg['root'] as String?,
-                      note: (msg['note'] ?? msg['context']) as String?,
-                      txn: txn,
-                    );
-                    
-                    if (sText != null && tText != null && sText != tText) {
-                      await UnifiedRepository.addLanguageToUnifiedRecord(
-                        groupId: gId,
-                        text: tText,
-                        lang: targetLang,
-                        type: msg['type'] as String? ?? 'sentence',
-                        txn: txn,
-                      );
-                    }
-                  } else {
-                    gId = await UnifiedRepository.saveUnifiedRecord(
-                      text: sText ?? tText!,
-                      lang: (sText != null) ? sourceLang : targetLang,
-                      translation: tText ?? sText!,
-                      targetLang: (tText != null) ? targetLang : sourceLang,
-                      type: msg['type'] as String? ?? 'sentence',
-                      pos: msg['pos'] as String?,
-                      formType: (msg['form_type'] ?? msg['formType']) as String?,
-                      style: msg['style'] as String?,
-                      root: msg['root'] as String?,
-                      note: (msg['note'] ?? msg['context']) as String?,
-                      syncSubject: syncSubject,
-                      tags: ['Dialogue', dTitle, materialSubject, ...fileTags],
-                      txn: txn,
-                    );
-                    await txn.insert('chat_messages', {
-                      'dialogue_id': dId,
-                      'group_id': gId,
-                      'speaker': msg['speaker'] ?? 'Unknown',
-                      'sequence_order': j,
-                      'created_at': batchCreatedAt,
-                    });
-                  }
+                  
+                  // Phase 129: Use 'dialogues' table
+                  // Check existing message by session_id (exact match might differ by logic, simplify for import)
+                  // For import robustness, we probably insert new. Duplicate checking is minimal here.
+                  
+                  // Phase 129: Remove UnifiedRepository dependency for dialogues!
+                  // Dialogues are PERSONAL data now. No need to save to words/sentences unless explicit.
+                  
+                  await txn.insert('dialogues', {
+                    'session_id': dId,
+                    'speaker': msg['speaker'] ?? 'Unknown',
+                    'content': sText ?? '', // content is source
+                    'translation': tText ?? '', // translation is target
+                    'created_at': batchCreatedAt,
+                  });
+                  
                   importedCount++;
                 } catch (e) {
                   errors.add('Dialogue $importedCount: $e');

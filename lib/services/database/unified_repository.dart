@@ -26,19 +26,21 @@ class UnifiedRepository {
     int? groupId,
   }) async {
     final db = txn ?? await _db;
-    final table = type == 'word' ? 'words' : 'sentences';
+    // table variable removed as it is unused in v19 logic
     
     // Determine Group ID
     int gId = groupId ?? DateTime.now().millisecondsSinceEpoch;
     
     if (groupId == null && syncSubject != null && sequenceOrder != null) {
       try {
+        final table = type == 'word' ? 'words_meta' : 'sentences_meta';
+        // Phase 129: Use meta table instead of item_tags for sequence alignment
         final existingPivot = await db.rawQuery('''
-          SELECT item_id as group_id FROM item_tags 
-          WHERE tag = ? AND item_type = ?
-          ORDER BY item_id ASC 
+          SELECT group_id FROM $table 
+          WHERE notebook_title = ?
+          ORDER BY id ASC 
           LIMIT 1 OFFSET ?
-        ''', [syncSubject, type, sequenceOrder]);
+        ''', [syncSubject, sequenceOrder]);
         
         if (existingPivot.isNotEmpty) {
            final foundId = existingPivot.first['group_id'] as int;
@@ -51,55 +53,54 @@ class UnifiedRepository {
 
     final timestamp = DateTime.now().toIso8601String();
 
-    // 1. 기존 레코드 유무 확인 및 데이터 준비
-    final existing = await db.query(table, where: 'group_id = ?', whereArgs: [gId], limit: 1);
-    Map<String, dynamic> translations = {};
-    Map<String, dynamic> row;
+    // 5. Shared Content Data Map
+    Map<String, dynamic> contentMap = {};
 
-    if (existing.isNotEmpty) {
-      row = Map.from(existing.first);
-      translations = jsonDecode(row['data_json'] as String);
-    } else {
-      row = {
-        'group_id': gId,
-        'created_at': timestamp,
-      };
-    }
-
-    // 2. 소스 데이터 병합
-    final sourceEntry = {
+    // Source Language
+    contentMap[lang] = {
       'text': text,
       'pos': pos,
       'note': note,
     };
     if (type == 'word') {
-      sourceEntry['root'] = root;
-      sourceEntry['form_type'] = formType;
+      contentMap[lang]['root'] = root;
+      contentMap[lang]['form_type'] = formType;
     } else {
-      sourceEntry['style'] = style;
+      contentMap[lang]['style'] = style;
     }
-    translations[lang] = sourceEntry;
 
-    // 3. 타겟 데이터 병합
+    // Target Language
     if (translation.isNotEmpty && targetLang.isNotEmpty && targetLang != 'auto') {
-      final targetEntry = {
+      contentMap[targetLang] = {
         'text': translation,
         'pos': pos,
         'note': note,
       };
       if (type != 'word') {
-        targetEntry['style'] = style;
+        contentMap[targetLang]['style'] = style;
       }
-      translations[targetLang] = targetEntry;
     }
 
-    row['data_json'] = jsonEncode(translations);
+    // 6. Data Construction for Insert
+    // Phase 129: Pass both Content and Meta to Repository
+    final insertData = {
+      'group_id': gId,
+      'data_json': jsonEncode(contentMap),
+      'created_at': timestamp,
+      // Meta fields
+      'notebook_title': syncSubject ?? 'My Collection', // Use syncSubject as notebook title by default
+      'source_lang': lang,
+      'target_lang': targetLang,
+      'caption': note, // Note plays dual role: shared content note & personal caption
+      'tags': tags?.join(','),
+      'is_memorized': 0,
+    };
 
-    // 4. 단일 레코드로 저장 (Upsert)
+    // 7. Insert via Repository (which handles split)
     if (type == 'word') {
-      await WordRepository.insert(row, txn: txn);
+      await WordRepository.insert(insertData, txn: txn);
     } else {
-      await SentenceRepository.insert(row, txn: txn);
+      await SentenceRepository.insert(insertData, txn: txn);
     }
 
     // 5. 태그 저장 (언어별로 구분하여 저장)
@@ -159,58 +160,73 @@ class UnifiedRepository {
     
     final db = await _db;
     await db.transaction((txn) async {
-       // Helper: Merge and relink a table (words or sentences)
-       Future<void> mergeAndRelink(String table) async {
-         final existingNew = await txn.query(table, where: 'group_id = ?', whereArgs: [newId]);
-         final existingOld = await txn.query(table, where: 'group_id = ?', whereArgs: [oldId]);
+       // Helper: Merge and relink a table (Content + Meta)
+       Future<void> mergeAndRelink(String contentTable, String metaTable) async {
+         // 1. Relink Content (words/sentences)
+         final existingNew = await txn.query(contentTable, where: 'group_id = ?', whereArgs: [newId]);
+         final existingOld = await txn.query(contentTable, where: 'group_id = ?', whereArgs: [oldId]);
          
-         if (existingOld.isEmpty) return; // Nothing to move
+         if (existingOld.isNotEmpty) {
+           if (existingNew.isNotEmpty) {
+             // Collision: Merge old content into new
+             final oldRow = existingOld.first;
+             final newRow = existingNew.first;
+             
+             final oldJson = jsonDecode(oldRow['data_json'] as String) as Map<String, dynamic>;
+             final newJson = jsonDecode(newRow['data_json'] as String) as Map<String, dynamic>;
+             
+             final mergedJson = {...newJson, ...oldJson}; 
+             
+             await txn.update(contentTable, {
+               'data_json': jsonEncode(mergedJson),
+             }, where: 'group_id = ?', whereArgs: [newId]);
+             
+             await txn.delete(contentTable, where: 'group_id = ?', whereArgs: [oldId]);
+           } else {
+             // No collision: Rename
+             await txn.update(contentTable, {'group_id': newId}, where: 'group_id = ?', whereArgs: [oldId]);
+           }
+         }
+
+         // 2. Relink Meta (words_meta/sentences_meta)
+         // Meta usually belongs to the user. If ID changes, we just move it.
+         // If target ID already has meta, we might be overwriting or ignoring.
+         // Let's assume server ID wins, but we want to keep local Personal properties (like is_memorized).
          
-         if (existingNew.isNotEmpty) {
-           // Collision: Merge old into new
-           final oldRow = existingOld.first;
-           final newRow = existingNew.first;
-           
-           final oldJson = jsonDecode(oldRow['data_json'] as String) as Map<String, dynamic>;
-           final newJson = jsonDecode(newRow['data_json'] as String) as Map<String, dynamic>;
-           
-           // Strategy: New (Server) is base, Old (Local) adds/overwrites if needed.
-           // Here we favor Local edits for same keys, or Server? 
-           // Usually Sync prioritizes Server. But Relink is "I just got a real ID for my local data".
-           // If Server has data, it means someone else (or me on another device) saved it.
-           // We'll merge: New + Old (Old overwrites new).
-           final mergedJson = {...newJson, ...oldJson}; 
-           
-           await txn.update(table, {
-             'data_json': jsonEncode(mergedJson),
-             // group_id is already newId
-           }, where: 'group_id = ?', whereArgs: [newId]);
-           
-           // Delete the old ghost
-           await txn.delete(table, where: 'group_id = ?', whereArgs: [oldId]);
-         } else {
-           // No collision: Just rename
-           await txn.update(table, {'group_id': newId}, where: 'group_id = ?', whereArgs: [oldId]);
+         final existingMetaNew = await txn.query(metaTable, where: 'group_id = ?', whereArgs: [newId]);
+         final existingMetaOld = await txn.query(metaTable, where: 'group_id = ?', whereArgs: [oldId]);
+
+         if (existingMetaOld.isNotEmpty) {
+            if (existingMetaNew.isNotEmpty) {
+              // Collision: Update new with old's important personal flags if they are "better" (e.g. memorized)
+              // Or just keep Local?
+              // Let's keep existingNew (Server/Prior) but update with Old if New is empty-ish?
+              // Simplest: Delete Old Meta (Assume New Meta is correct from sync).
+              // BUT, if I am defining the ID for the first time, New Meta might not exist locally yet?
+              // ExistingNew check handles that.
+              
+              // Let's merge memorized status:
+              final oldMem = existingMetaOld.first['is_memorized'] == 1;
+              final newMem = existingMetaNew.first['is_memorized'] == 1;
+              if (oldMem && !newMem) {
+                 await txn.update(metaTable, {'is_memorized': 1}, where: 'group_id = ?', whereArgs: [newId]);
+              }
+              await txn.delete(metaTable, where: 'group_id = ?', whereArgs: [oldId]);
+            } else {
+              // No collision: Rename
+              await txn.update(metaTable, {'group_id': newId}, where: 'group_id = ?', whereArgs: [oldId]);
+            }
          }
        }
 
-       await mergeAndRelink('words');
-       await mergeAndRelink('sentences');
+       await mergeAndRelink('words', 'words_meta');
+       await mergeAndRelink('sentences', 'sentences_meta');
        
-       // 2. Update Tags: Delete old, Insert new (Ignore conflicts)
-       final oldTags = await txn.query('item_tags', where: 'item_id = ?', whereArgs: [oldId]);
-       if (oldTags.isNotEmpty) {
-         await txn.delete('item_tags', where: 'item_id = ?', whereArgs: [oldId]);
-         for (var tagRow in oldTags) {
-           final tagMap = Map<String, dynamic>.from(tagRow);
-           tagMap['item_id'] = newId;
-           // Primary Key (item_id, item_type, tag, lang_code) protects duplication
-           await txn.insert('item_tags', tagMap, conflictAlgorithm: ConflictAlgorithm.ignore);
-         }
-       }
+       // 2. Update Tags: (Removed) item_tags table is gone. Tags are in meta and moved with meta.
+       // Meta relinking handled above.
 
-       // 3. Update Chat Messages (Simple update)
-       await txn.update('chat_messages', {'group_id': newId}, where: 'group_id = ?', whereArgs: [oldId]);
+       // 3. Update Dialogues (if they used group_id references? No, Dialogues use UUIDs now)
+       // Old chat_messages update removed.
     });
     print('[DB] Relinked (with merge) group_id: $oldId -> $newId');
   }

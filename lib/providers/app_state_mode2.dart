@@ -135,8 +135,14 @@ extension AppStateMode2 on AppState {
        final db = await DatabaseService.database;
        
        await db.transaction((txn) async {
+         // Phase 129: Delete from Content & Meta tables
          await txn.delete('words', where: 'group_id = ?', whereArgs: [groupId]);
+         await txn.delete('words_meta', where: 'group_id = ?', whereArgs: [groupId]);
+         
          await txn.delete('sentences', where: 'group_id = ?', whereArgs: [groupId]);
+         await txn.delete('sentences_meta', where: 'group_id = ?', whereArgs: [groupId]);
+         
+         // Phase 129: item_tags removed. Meta tags deleted with meta.
        });
 
        final userId = SupabaseService.client.auth.currentUser?.id;
@@ -223,9 +229,14 @@ extension AppStateMode2 on AppState {
       final db = await DatabaseService.database;
       List<dynamic> whereArgs = [];
       final String table = _recordTypeFilter == 'word' ? 'words' : 'sentences';
+      final String metaTable = _recordTypeFilter == 'word' ? 'words_meta' : 'sentences_meta';
       final String itemType = _recordTypeFilter == 'word' ? 'word' : 'sentence';
 
-      String query = 'SELECT t.* FROM $table t ';
+      // Phase 129: JOIN with Meta Table
+      String query = 'SELECT t.*, m.notebook_title, m.caption, m.tags as meta_tags, m.is_memorized, m.review_count, m.last_reviewed '
+                     'FROM $table t '
+                     'JOIN $metaTable m ON t.group_id = m.group_id ';
+      
       List<String> conditions = [];
       
       // Phase 120: 소스 언어 포함 여부 확인 (JSON 내부)
@@ -233,15 +244,20 @@ extension AppStateMode2 on AppState {
       whereArgs.add(_sourceLang);
       
       if (_selectedTags.isNotEmpty) {
+        // Phase 129: Use meta tags column
+        // Search tag in CSV string: ',tag,' like '%,tag,%'
+        // We handle comma wrapping in logic or expect spaces?
+        // Tags are stored as "tag1,tag2".
         for (var tag in _selectedTags) {
-          conditions.add('t.group_id IN (SELECT item_id FROM item_tags WHERE tag = ? AND item_type = ?)');
-          whereArgs.add(tag);
-          whereArgs.add(itemType);
+          // Robust check: tag at start, middle, or end
+          conditions.add("',' || m.tags || ',' LIKE ?");
+          whereArgs.add('%,$tag,%');
         }
       }
       
       if (_searchQuery.isNotEmpty) {
-        conditions.add('t.data_json LIKE ?');
+        conditions.add('(t.data_json LIKE ? OR m.caption LIKE ?)');
+        whereArgs.add('%$_searchQuery%');
         whereArgs.add('%$_searchQuery%');
       }
       
@@ -252,7 +268,8 @@ extension AppStateMode2 on AppState {
       }
 
       if (!_showMemorized) {
-        conditions.add('(t.is_memorized IS NULL OR t.is_memorized = 0)');
+        // Phase 129: Use meta table column
+        conditions.add('(m.is_memorized IS NULL OR m.is_memorized = 0)');
       }
       
       if (conditions.isNotEmpty) {
@@ -275,27 +292,20 @@ extension AppStateMode2 on AppState {
         return;
       }
 
-      final groupIds = results.map((r) => r['group_id'] as int).toList();
-      
-      // Fetch all tags for these groups at once
-      final tagRows = await db.query('item_tags', 
-          where: 'item_id IN (${groupIds.map((_) => '?').join(',')}) AND item_type = ?', 
-          whereArgs: [...groupIds, itemType]);
-          
-      // Map<groupId, Map<langCode, List<tags>>>
-      final Map<int, Map<String, List<String>>> localizedTagMap = {};
-      for (var tr in tagRows) {
-        final gId = tr['item_id'] as int;
-        final lang = tr['lang_code'] as String;
-        final tag = tr['tag'] as String;
-        localizedTagMap.putIfAbsent(gId, () => {}).putIfAbsent(lang, () => []).add(tag);
-      }
-
       List<Map<String, dynamic>> pairedResults = [];
       
       for (var row in results) {
         final groupId = row['group_id'] as int;
         final Map<String, dynamic> data = jsonDecode(row['data_json'] as String);
+        
+        // Parse tags from meta
+        final String tagsStr = row['meta_tags'] as String? ?? '';
+        final List<String> recordTags = tagsStr.split(',').where((t) => t.isNotEmpty).toList();
+        
+        // Localize tags? Currently tags are shared strings.
+        // We just assign them to source/target for UI compatibility.
+        final sourceTags = recordTags;
+        final targetTags = recordTags;
         
         final sourceData = data[_sourceLang] as Map<String, dynamic>? ?? {};
         Map<String, dynamic> targetData = data[_targetLang] as Map<String, dynamic>? ?? {};
@@ -306,11 +316,6 @@ extension AppStateMode2 on AppState {
           if (targetData.isNotEmpty) isPivot = true;
         }
 
-        // 언어별 태그 추출
-        final groupTagsMap = localizedTagMap[groupId] ?? {};
-        final sourceTags = groupTagsMap[_sourceLang] ?? [];
-        final targetTags = groupTagsMap[_targetLang] ?? (isPivot ? groupTagsMap['en'] : []) ?? [];
-        
         pairedResults.add({
           'id': groupId, 
           'group_id': groupId,
@@ -320,13 +325,13 @@ extension AppStateMode2 on AppState {
           'source_text': sourceData['text'] ?? '',
           'target_text': targetData['text'] ?? '', 
           'is_pivot': isPivot,
-          'note': sourceData['note'] ?? targetData['note'],
+          'note': row['caption'] ?? sourceData['note'] ?? targetData['note'], // Phase 129: Use Meta Caption
           'pos': sourceData['pos'],
           'form_type': sourceData['form_type'],
           'root': sourceData['root'],
-          'source_tags': sourceTags, // Phase 120: 분리된 소스 태그
-          'target_tags': targetTags, // Phase 120: 분리된 타겟 태그
-          'tags': sourceTags, // 호환성 유지용 (기본 태그)
+          'source_tags': sourceTags, 
+          'target_tags': targetTags, 
+          'tags': sourceTags, 
           'created_at': row['created_at'],
           'review_count': row['review_count'] ?? 0,
           'is_memorized': row['is_memorized'] == 1, 

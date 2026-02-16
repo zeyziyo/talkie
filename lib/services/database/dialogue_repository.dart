@@ -31,12 +31,10 @@ class DialogueRepository {
     await db.transaction((txn) async {
       final group = await txn.query('dialogue_groups', columns: ['title'], where: 'id = ?', whereArgs: [id], limit: 1);
       if (group.isNotEmpty) {
-        final title = group.first['title'] as String?;
-        if (title != null) {
-          await txn.delete('item_tags', where: 'tag = ?', whereArgs: [title]);
-        }
+        // Phase 129: item_tags removed. No action needed.
       }
-      await txn.delete('chat_messages', where: 'dialogue_id = ?', whereArgs: [id]);
+      // Phase 129: Delete from new dialogues table
+      await txn.delete('dialogues', where: 'session_id = ?', whereArgs: [id]);
       await txn.delete('dialogue_participants', where: 'dialogue_id = ?', whereArgs: [id]);
       await txn.delete('dialogue_groups', where: 'id = ?', whereArgs: [id]);
     });
@@ -52,10 +50,11 @@ class DialogueRepository {
       whereArgs = [userId, 'anonymous'];
     }
 
+    // Phase 129: Count from dialogues table
     return await db.rawQuery('''
       SELECT d.*,
-        (SELECT COUNT(*) FROM chat_messages m WHERE m.dialogue_id = d.id AND LOWER(m.speaker) = 'user') as sentence_count,
-        (SELECT COUNT(*) FROM chat_messages m WHERE m.dialogue_id = d.id AND LOWER(m.speaker) != 'user') as ai_count
+        (SELECT COUNT(*) FROM dialogues m WHERE m.session_id = d.id AND LOWER(m.speaker) = 'user') as sentence_count,
+        (SELECT COUNT(*) FROM dialogues m WHERE m.session_id = d.id AND LOWER(m.speaker) != 'user') as ai_count
       FROM dialogue_groups d
       $whereClause
       ORDER BY d.created_at DESC
@@ -77,7 +76,18 @@ class DialogueRepository {
 
   static Future<void> insertMessage(Map<String, dynamic> data, {Transaction? txn}) async {
     final executor = txn ?? await _db;
-    await executor.insert('chat_messages', data);
+    // Phase 129: Insert into dialogues table
+    // Mapping: dialogue_id -> session_id, source_text -> content, target_text -> translation
+    
+    final row = {
+      'session_id': data['dialogue_id'] ?? data['session_id'],
+      'speaker': data['speaker'],
+      'content': data['source_text'] ?? data['content'] ?? '',
+      'translation': data['target_text'] ?? data['translation'] ?? '',
+      'created_at': data['created_at'] ?? DateTime.now().toIso8601String(),
+    };
+    
+    await executor.insert('dialogues', row);
   }
 
   static Future<int> getDialogueCount() async {
@@ -108,14 +118,19 @@ class DialogueRepository {
   }) async {
     final db = await _db;
     
-    // Phase 126: Restore Data Isolation (Simplified Query)
-    // Read directly from chat_messages, JOIN only for participant info.
+    // Phase 129: Query from 'dialogues' table
+    // No participants join needed for basic chat display unless we really need participant metadata inline.
+    // Assuming speaker name is enough or we fetch participants separately.
+    // However, existing code might expect 'participant_id' etc.
+    // The new table `dialogues` does NOT have `participant_id` linked directly unless we added it?
+    // In migration: CREATE TABLE dialogues (id, session_id, speaker, content, translation, created_at)
+    // So 'participant_id' is lost in direct message table. Speaker name is preserved.
+    
     final List<Map<String, dynamic>> messages = await db.rawQuery('''
-      SELECT m.*, p.gender, p.lang_code as participant_lang, p.name as p_name
-      FROM chat_messages m
-      LEFT JOIN dialogue_participants p ON m.participant_id = p.id
-      WHERE m.dialogue_id = ?
-      ORDER BY m.sequence_order ASC
+      SELECT m.* 
+      FROM dialogues m
+      WHERE m.session_id = ?
+      ORDER BY m.id ASC
     ''', [dialogueId]);
     
     List<Map<String, dynamic>> results = [];
@@ -123,19 +138,17 @@ class DialogueRepository {
     for (var msg in messages) {
       results.add({
         'id': msg['id'],
-        'group_id': msg['group_id'],
-        'source_text': msg['source_text'] ?? '',
-        'target_text': msg['target_text'] ?? '',
-        'source_lang': msg['source_lang'] ?? 'en',
-        'target_lang': msg['target_lang'] ?? 'en',
-        'speaker': msg['speaker'] ?? msg['p_name'] ?? 'Unknown',
-        'participant_id': msg['participant_id'],
-        'gender': msg['gender'], 
-        'participant_lang': msg['participant_lang'], 
-        'sequence_order': msg['sequence_order'],
+        'group_id': 0, // No group_id for dialogues
+        'source_text': msg['content'] ?? '',
+        'target_text': msg['translation'] ?? '',
+        'source_lang': sourceLang ?? 'auto', // Dialogues might not store per-msg lang anymore
+        'target_lang': targetLang ?? 'auto',
+        'speaker': msg['speaker'] ?? 'Unknown',
+        // 'participant_id': ... deprecated or lost
+        'sequence_order': msg['id'], // Use ID as sequence
         'created_at': msg['created_at'],
-        'note': msg['note'], // If note column exists or joined
-        'is_memorized': false, // Dialogue doesn't track memorization needed
+        'note': null, 
+        'is_memorized': false,
       });
     }
     return results;

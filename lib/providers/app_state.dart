@@ -12,6 +12,8 @@ import '../services/speech_service.dart';
 import '../constants/language_constants.dart';
 import '../services/usage_service.dart';
 import '../models/sentence.dart';
+import '../services/database/sentence_repository.dart';
+import '../services/database/dialogue_repository.dart';
 import '../models/user_library.dart';
 import '../models/dialogue_group.dart';
 import '../models/chat_participant.dart';

@@ -273,23 +273,23 @@ extension AppStateChat on AppState {
     if (records.isEmpty) {
       final cloudMessages = await SupabaseService.getPrivateChatMessages(group.id);
       if (cloudMessages.isNotEmpty) {
-        for (var msg in cloudMessages) {
-          // Phase 126: Restore Data Isolation (UnifiedRepository Removed)
-          // Store dialogue ONLY in chat_messages table.
-
-          final db = await DatabaseService.database;
-          await db.insert('chat_messages', {
-            'dialogue_id': group.id,
-            'group_id': msg['group_id'],
-            'speaker': msg['speaker'],
-            'source_text': msg['source_text'],
-            'target_text': msg['target_text'],
-            'source_lang': 'auto', // Cloud data might need refinement, but keep as is for sync
-            'target_lang': 'auto',
-            'sequence_order': msg['sequence_order'],
-            'created_at': msg['created_at'],
-          });
-        }
+        // Sort by sequence order to ensure correct insertion order for ID-based sorting
+        cloudMessages.sort((a, b) => (a['sequence_order'] as int).compareTo(b['sequence_order'] as int));
+        
+        final db = await DatabaseService.database;
+        await db.transaction((txn) async {
+          for (var msg in cloudMessages) {
+             // Phase 129: Use dialogues table via Repository (or direct logic matching Repo)
+             await DialogueRepository.insertMessage({
+               'dialogue_id': group.id,
+               'speaker': msg['speaker'],
+               'source_text': msg['source_text'],
+               'target_text': msg['target_text'],
+               'created_at': msg['created_at'],
+             }, txn: txn);
+          }
+        });
+        
         records = await DatabaseService.getRecordsByDialogueId(
           group.id,
           sourceLang: _sourceLang,
@@ -299,7 +299,9 @@ extension AppStateChat on AppState {
     }
 
     if (records.isNotEmpty) {
-      _currentDialogueSequence = records.map((r) => (r['sequence_order'] as int? ?? 0)).reduce((a, b) => a > b ? a : b);
+      // Sequence order is now implicitly ID-based or we rely on Cloud sequence for logical tracking
+      // But _currentDialogueSequence is a counter for next message.
+      _currentDialogueSequence = records.length; 
     } else {
       _currentDialogueSequence = 0;
     }
@@ -404,26 +406,16 @@ extension AppStateChat on AppState {
   Future<void> saveUserMessage(String sourceText, String targetText) async {
     if (_activeDialogueId == null) return;
 
-    final timestamp = DateTime.now().millisecondsSinceEpoch;
     _currentDialogueSequence++;
 
     try {
-      final db = await DatabaseService.database;
-      await db.transaction((txn) async {
-        // Phase 126: Restore Data Isolation (UnifiedRepository Removed)
-        // Store dialogue ONLY in chat_messages table.
-
-        await txn.insert('chat_messages', {
-          'dialogue_id': _activeDialogueId,
-          'group_id': timestamp,
-          'speaker': 'User',
-          'source_text': sourceText,
-          'target_text': targetText,
-          'source_lang': _sourceLang,
-          'target_lang': _targetLang,
-          'sequence_order': _currentDialogueSequence,
-          'created_at': DateTime.now().toIso8601String(),
-        });
+      // Phase 129: Use DialogueRepository (dialogues table)
+      await DialogueRepository.insertMessage({
+        'dialogue_id': _activeDialogueId,
+        'speaker': 'User',
+        'source_text': sourceText,
+        'target_text': targetText,
+        'created_at': DateTime.now().toIso8601String(),
       });
 
       notify();
@@ -459,28 +451,17 @@ extension AppStateChat on AppState {
     
     final finalSpeaker = speaker ?? _activePersona ?? 'AI';
     final createdAt = DateTime.now().toIso8601String();
-    final timestamp = DateTime.now().millisecondsSinceEpoch;
-
+    
     _currentDialogueSequence++;
     
     try {
-      final db = await DatabaseService.database;
-      
-      await db.transaction((txn) async {
-        // Phase 126: Restore Data Isolation (UnifiedRepository Removed)
-        // Store dialogue ONLY in chat_messages table.
-
-        await txn.insert('chat_messages', {
-          'dialogue_id': _activeDialogueId,
-          'group_id': timestamp,
-          'speaker': finalSpeaker,
-          'source_text': sourceText,
-          'target_text': targetText,
-          'source_lang': _targetLang, // AI speaks target lang (usually)
-          'target_lang': _sourceLang,
-          'sequence_order': _currentDialogueSequence,
-          'created_at': createdAt,
-        });
+      // Phase 129: Use DialogueRepository
+      await DialogueRepository.insertMessage({
+        'dialogue_id': _activeDialogueId,
+        'speaker': finalSpeaker,
+        'source_text': sourceText,
+        'target_text': targetText,
+        'created_at': createdAt,
       });
 
       SupabaseService.savePrivateChatMessage(

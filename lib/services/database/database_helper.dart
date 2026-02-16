@@ -5,7 +5,7 @@ import 'package:path/path.dart';
 class DatabaseHelper {
   static Database? _database;
   static const String _dbName = 'talkie.db';
-  static const int _dbVersion = 18; // Phase 126: Restore Data Isolation
+  static const int _dbVersion = 19; // Phase 129: DB Re-architecture (Shared/Personal Split)
 
   static Future<Database> get database async {
     if (_database != null) return _database!;
@@ -34,6 +34,9 @@ class DatabaseHelper {
     return await openDatabase(
       path,
       version: _dbVersion,
+      onConfigure: (db) async {
+        await db.execute('PRAGMA foreign_keys = ON');
+      },
       onCreate: (db, version) async {
         await createBaseTables(db);
         await ensureDefaultMaterial(db);
@@ -62,13 +65,336 @@ class DatabaseHelper {
           print('[DB] Migrating to version 18: Restoring Data Isolation (Separating Dialogue from Sentences)');
           await _migrateToV18(db);
         }
+
+        // Phase 129: v19 (Shared/Personal Split)
+        if (oldVersion < 19) {
+          print('[DB] Migrating to version 19: Splitting Shared/Personal Data & Dialogue Table');
+          await _migrateToV19(db);
+        }
         
         // Final Safety Check: Ensure all base tables exist for upgraded users
-        // This fixes 'study_materials' missing issue for users who skipped intermediate versions
         await createBaseTables(db);
       },
     );
   }
+
+  // ... (Previous Migrations Omitted for Brevity - kept as is)
+
+  static Future<void> _migrateToV19(Database db) async {
+    await db.transaction((txn) async {
+      print('[DB] Starting v19 Migration...');
+
+      // 1. Rename existing tables
+      await txn.execute('ALTER TABLE words RENAME TO words_old');
+      await txn.execute('ALTER TABLE sentences RENAME TO sentences_old');
+      await txn.execute('ALTER TABLE chat_messages RENAME TO chat_messages_old');
+
+      // 2. Create Shared Content Tables (words, sentences)
+      await txn.execute('''
+        CREATE TABLE words (
+          group_id INTEGER PRIMARY KEY, -- Shared ID
+          data_json TEXT,               -- Content (Translations)
+          created_at TEXT NOT NULL
+        )
+      ''');
+      await txn.execute('''
+        CREATE TABLE sentences (
+          group_id INTEGER PRIMARY KEY,
+          data_json TEXT,
+          created_at TEXT NOT NULL
+        )
+      ''');
+
+      // 3. Create Personalized Meta Tables (words_meta, sentences_meta)
+      await txn.execute('''
+        CREATE TABLE words_meta (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          group_id INTEGER NOT NULL,
+          notebook_title TEXT NOT NULL, -- from study_material subject
+          source_lang TEXT,
+          target_lang TEXT,
+          caption TEXT,                 -- note
+          tags TEXT,                    -- comma separated
+          is_memorized INTEGER DEFAULT 0,
+          is_synced INTEGER DEFAULT 0,
+          review_count INTEGER DEFAULT 0,
+          last_reviewed TEXT,
+          FOREIGN KEY (group_id) REFERENCES words (group_id) ON DELETE CASCADE
+        )
+      ''');
+      await txn.execute('''
+        CREATE TABLE sentences_meta (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          group_id INTEGER NOT NULL,
+          notebook_title TEXT NOT NULL,
+          source_lang TEXT,
+          target_lang TEXT,
+          caption TEXT,
+          tags TEXT,
+          is_memorized INTEGER DEFAULT 0,
+          is_synced INTEGER DEFAULT 0,
+          review_count INTEGER DEFAULT 0,
+          last_reviewed TEXT,
+          FOREIGN KEY (group_id) REFERENCES sentences (group_id) ON DELETE CASCADE
+        )
+      ''');
+
+      // 4. Create New Dialogue Table
+      await txn.execute('''
+        CREATE TABLE dialogues (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          session_id TEXT NOT NULL,     -- old dialogue_id
+          speaker TEXT,
+          content TEXT,                 -- source_text
+          translation TEXT,             -- target_text
+          created_at TEXT DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now')),
+          FOREIGN KEY (session_id) REFERENCES dialogue_groups (id) ON DELETE CASCADE
+        )
+      ''');
+
+      // 5. Migrate Data: Words
+      print('[DB] Migrating Words...');
+      await txn.execute('INSERT INTO words (group_id, data_json, created_at) SELECT group_id, data_json, created_at FROM words_old');
+      
+      // Prepare Meta Data
+      final oldWords = await txn.query('words_old');
+      final materials = await txn.query('study_materials');
+      final subjects = materials.map((m) => m['subject'] as String).toSet();
+      
+      // Get all word tags
+      final tagRows = await txn.query('item_tags', where: 'item_type = ?', whereArgs: ['word']);
+      final Map<int, List<String>> itemTagsMap = {};
+      for (var row in tagRows) {
+        final id = row['item_id'] as int;
+        final tag = row['tag'] as String;
+        itemTagsMap.putIfAbsent(id, () => []).add(tag);
+      }
+
+      final batch = txn.batch();
+      for (var row in oldWords) {
+        final gId = row['group_id'] as int;
+        final tags = itemTagsMap[gId] ?? [];
+        
+        // Determine Notebook Title
+        String notebook = 'My Wordbook';
+        for (var t in tags) {
+          if (subjects.contains(t)) {
+            notebook = t;
+            break;
+          }
+        }
+        
+        final tagsStr = tags.join(',');
+        
+        batch.insert('words_meta', {
+          'group_id': gId,
+          'notebook_title': notebook,
+          'source_lang': 'auto', // Default
+          'target_lang': 'auto', // Default
+          'caption': '', // Logic for note extraction is complex in json, leave empty for now
+          'tags': tagsStr,
+          'is_memorized': row['is_memorized'],
+          'is_synced': row['is_synced'] ?? 0,
+          'review_count': row['review_count'],
+          'last_reviewed': row['last_reviewed'],
+        });
+      }
+      await batch.commit(noResult: true);
+
+      // 6. Migrate Data: Sentences (Similar logic)
+      print('[DB] Migrating Sentences...');
+      await txn.execute('INSERT INTO sentences (group_id, data_json, created_at) SELECT group_id, data_json, created_at FROM sentences_old');
+      
+      final oldSentences = await txn.query('sentences_old');
+      final sTagRows = await txn.query('item_tags', where: 'item_type = ?', whereArgs: ['sentence']);
+      final Map<int, List<String>> sItemTagsMap = {};
+      for (var row in sTagRows) {
+        final id = row['item_id'] as int;
+        final tag = row['tag'] as String;
+        sItemTagsMap.putIfAbsent(id, () => []).add(tag);
+      }
+      
+      final sBatch = txn.batch();
+      for (var row in oldSentences) {
+        final gId = row['group_id'] as int;
+        final tags = sItemTagsMap[gId] ?? [];
+        
+        String notebook = 'My Sentencebook';
+        for (var t in tags) {
+          if (subjects.contains(t)) {
+            notebook = t;
+            break;
+          }
+        }
+        
+        sBatch.insert('sentences_meta', {
+          'group_id': gId,
+          'notebook_title': notebook,
+          'source_lang': 'auto',
+          'target_lang': 'auto',
+          'caption': '',
+          'tags': tags.join(','),
+          'is_memorized': row['is_memorized'],
+          'is_synced': row['is_synced'] ?? 0,
+          'review_count': row['review_count'],
+          'last_reviewed': row['last_reviewed'],
+        });
+      }
+      await sBatch.commit(noResult: true);
+
+      // 7. Migrate Data: Dialogues
+      print('[DB] Migrating Dialogues...');
+      // Note: chat_messages_old has id, dialogue_id, group_id, speaker, participant_id, sequence_order, created_at, source_text, target_text
+      // dialogues has id, session_id, speaker, content, translation, created_at
+      await txn.execute('''
+        INSERT INTO dialogues (session_id, speaker, content, translation, created_at)
+        SELECT dialogue_id, speaker, source_text, target_text, created_at 
+        FROM chat_messages_old
+      ''');
+
+      // 8. Safety Check & Cleanup
+      final int oldWordsCount = Sqflite.firstIntValue(await txn.rawQuery('SELECT COUNT(*) FROM words_old')) ?? 0;
+      final int newWordsCount = Sqflite.firstIntValue(await txn.rawQuery('SELECT COUNT(*) FROM words')) ?? 0;
+      
+      if (oldWordsCount != newWordsCount) {
+        throw Exception('[DB] Migration Failed: Word Count Mismatch (Old: $oldWordsCount, New: $newWordsCount). Aborting to prevent data loss.');
+      }
+
+      final int oldSentencesCount = Sqflite.firstIntValue(await txn.rawQuery('SELECT COUNT(*) FROM sentences_old')) ?? 0;
+      final int newSentencesCount = Sqflite.firstIntValue(await txn.rawQuery('SELECT COUNT(*) FROM sentences')) ?? 0;
+
+      if (oldSentencesCount != newSentencesCount) {
+        throw Exception('[DB] Migration Failed: Sentence Count Mismatch (Old: $oldSentencesCount, New: $newSentencesCount). Aborting to prevent data loss.');
+      }
+
+      print('[DB] Safety Check Passed. Dropping old tables...');
+      await txn.execute('DROP TABLE words_old');
+      await txn.execute('DROP TABLE sentences_old');
+      await txn.execute('DROP TABLE chat_messages_old');
+      
+      // Re-create Indexes
+      await txn.execute('CREATE INDEX IF NOT EXISTS idx_words_group_id ON words (group_id)');
+      await txn.execute('CREATE INDEX IF NOT EXISTS idx_sentences_group_id ON sentences (group_id)');
+      // Phase 129: Enforce 1:1 Meta via Unique Index
+      await txn.execute('CREATE UNIQUE INDEX IF NOT EXISTS idx_sentences_meta_group_id ON sentences_meta (group_id)');
+      
+      // Phase 129: item_tags removed, so no cleanup triggers needed.
+
+      print('[DB] v19 Migration Completed.');
+    });
+  }
+
+  static Future<void> createBaseTables(Database db) async {
+    // 1. Shared Content Tables
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS words (
+        group_id INTEGER PRIMARY KEY,
+        data_json TEXT, -- Content only
+        created_at TEXT NOT NULL
+      )
+    ''');
+    
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS sentences (
+        group_id INTEGER PRIMARY KEY,
+        data_json TEXT,
+        created_at TEXT NOT NULL
+      )
+    ''');
+
+    // 2. Personalized Meta Tables
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS words_meta (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        group_id INTEGER NOT NULL,
+        notebook_title TEXT NOT NULL,
+        source_lang TEXT,
+        target_lang TEXT,
+        caption TEXT,
+        tags TEXT,
+        is_memorized INTEGER DEFAULT 0,
+        is_synced INTEGER DEFAULT 0,
+        review_count INTEGER DEFAULT 0,
+        last_reviewed TEXT,
+        FOREIGN KEY (group_id) REFERENCES words (group_id) ON DELETE CASCADE
+      )
+    ''');
+
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS sentences_meta (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        group_id INTEGER NOT NULL,
+        notebook_title TEXT NOT NULL,
+        source_lang TEXT,
+        target_lang TEXT,
+        caption TEXT,
+        tags TEXT,
+        is_memorized INTEGER DEFAULT 0,
+        is_synced INTEGER DEFAULT 0,
+        review_count INTEGER DEFAULT 0,
+        last_reviewed TEXT,
+        FOREIGN KEY (group_id) REFERENCES sentences (group_id) ON DELETE CASCADE
+      )
+    ''');
+    
+    // 3. Dialogue Tables
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS dialogue_groups (
+        id TEXT PRIMARY KEY,
+        user_id TEXT,
+        title TEXT,
+        persona TEXT,
+        location TEXT,
+        note TEXT,
+        created_at TEXT NOT NULL
+      )
+    ''');
+
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS dialogues (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        session_id TEXT NOT NULL,
+        speaker TEXT,
+        content TEXT,
+        translation TEXT,
+        created_at TEXT DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now')),
+        FOREIGN KEY (session_id) REFERENCES dialogue_groups (id) ON DELETE CASCADE
+      )
+    ''');
+    
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS dialogue_participants (
+        id TEXT PRIMARY KEY,
+        dialogue_id TEXT NOT NULL,
+        name TEXT NOT NULL,
+        role TEXT NOT NULL, 
+        gender TEXT,
+        lang_code TEXT,
+        created_at TEXT NOT NULL
+      )
+    ''');
+    
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS study_materials (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        subject TEXT NOT NULL,
+        source TEXT,
+        source_language TEXT,
+        target_language TEXT,
+        file_name TEXT,
+        created_at TEXT NOT NULL,
+        imported_at TEXT NOT NULL
+      )
+    ''');
+
+    await db.execute('CREATE INDEX IF NOT EXISTS idx_words_group_id ON words (group_id)');
+    await db.execute('CREATE INDEX IF NOT EXISTS idx_sentences_group_id ON sentences (group_id)');
+    await db.execute('CREATE UNIQUE INDEX IF NOT EXISTS idx_words_meta_group_id ON words_meta (group_id)');
+    await db.execute('CREATE UNIQUE INDEX IF NOT EXISTS idx_sentences_meta_group_id ON sentences_meta (group_id)');
+  }
+
+  // Legacy migrations kept below...
+
 
   static Future<void> _addIndexesV16(Database db) async {
     await db.transaction((txn) async {
@@ -190,99 +516,12 @@ class DatabaseHelper {
     });
   }
 
-  static Future<void> createBaseTables(Database db) async {
-    // Phase 120: Consolidated Schema (1 Group = 1 Row)
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS words (
-        group_id INTEGER PRIMARY KEY,
-        data_json TEXT,
-        created_at TEXT NOT NULL,
-        is_memorized INTEGER DEFAULT 0,
-        is_synced INTEGER DEFAULT 0,
-        audio_file BLOB,
-        last_reviewed TEXT,
-        review_count INTEGER DEFAULT 0
-      )
-    ''');
-    
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS sentences (
-        group_id INTEGER PRIMARY KEY,
-        data_json TEXT,
-        created_at TEXT NOT NULL,
-        is_memorized INTEGER DEFAULT 0,
-        is_synced INTEGER DEFAULT 0,
-        audio_file BLOB,
-        last_reviewed TEXT,
-        review_count INTEGER DEFAULT 0
-      )
-    ''');
+  // ... (v15, v16, v17, v18 migrations are managed above or below, I will replace the createBaseTables method body entirely)
+  // Wait, I need to match the file structure.
+  // The previous replace replaced lines 8 to 71. 
+  // createBaseTables starts around line 193.
+  // I need to execute another replace for createBaseTables.
 
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS item_tags (
-        item_id INTEGER NOT NULL,
-        item_type TEXT NOT NULL,
-        tag TEXT NOT NULL,
-        lang_code TEXT NOT NULL DEFAULT 'auto',
-        PRIMARY KEY (item_id, item_type, tag, lang_code)
-      )
-    ''');
-
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS study_materials (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        subject TEXT NOT NULL,
-        source TEXT,
-        source_language TEXT,
-        target_language TEXT,
-        file_name TEXT,
-        created_at TEXT NOT NULL,
-        imported_at TEXT NOT NULL
-      )
-    ''');
-
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS dialogue_groups (
-        id TEXT PRIMARY KEY,
-        user_id TEXT,
-        title TEXT,
-        persona TEXT,
-        location TEXT,
-        note TEXT,
-        created_at TEXT NOT NULL
-      )
-    ''');
-
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS chat_messages (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        dialogue_id TEXT NOT NULL,
-        group_id INTEGER NOT NULL,
-        speaker TEXT,
-        participant_id TEXT,
-        sequence_order INTEGER NOT NULL,
-        created_at TEXT DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now')),
-        FOREIGN KEY (dialogue_id) REFERENCES dialogue_groups (id) ON DELETE CASCADE
-      )
-    ''');
-
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS dialogue_participants (
-        id TEXT PRIMARY KEY,
-        dialogue_id TEXT NOT NULL,
-        name TEXT NOT NULL,
-        role TEXT NOT NULL, 
-        gender TEXT,
-        lang_code TEXT,
-        created_at TEXT NOT NULL
-      )
-    ''');
-
-    // Phase 120: Performance Indexes (JSON-adjusted)
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_words_group_id ON words (group_id)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_sentences_group_id ON sentences (group_id)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_item_tags_tag ON item_tags (tag)');
-  }
 
   static Future<void> _migrateToV17(Database db) async {
     await db.transaction((txn) async {

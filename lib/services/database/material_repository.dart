@@ -77,4 +77,31 @@ class MaterialRepository {
     );
     return res.isNotEmpty;
   }
+
+  static Future<void> delete(int id) async {
+    final db = await _db;
+    await db.transaction((txn) async {
+      // 1. Get Subject to identify items
+      final material = await txn.query('study_materials', columns: ['subject'], where: 'id = ?', whereArgs: [id], limit: 1);
+      if (material.isEmpty) return;
+      
+      final subject = material.first['subject'] as String;
+
+      // 2. Delete Words (Cascade deletes meta)
+      // Use efficient subquery delete
+      await txn.rawDelete('''
+        DELETE FROM words 
+        WHERE group_id IN (SELECT group_id FROM words_meta WHERE notebook_title = ?)
+      ''', [subject]);
+
+      // 3. Delete Sentences (Cascade deletes meta)
+      await txn.rawDelete('''
+        DELETE FROM sentences 
+        WHERE group_id IN (SELECT group_id FROM sentences_meta WHERE notebook_title = ?)
+      ''', [subject]);
+
+      // 4. Delete Material
+      await txn.delete('study_materials', where: 'id = ?', whereArgs: [id]);
+    });
+  }
 }

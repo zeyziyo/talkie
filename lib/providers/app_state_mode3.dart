@@ -151,7 +151,17 @@ extension AppStateMode3 on AppState {
         
         if (_mode3Score! >= 100) { // Threshold 100%
           _mode3Feedback = 'PERFECT';
-          _mode3CompletedQuestionIds.add(_currentMode3Question!['id'] as int);
+          
+          final qId = _currentMode3Question!['id'] as int;
+          if (!_mode3CompletedQuestionIds.contains(qId)) {
+             _mode3CompletedQuestionIds.add(qId);
+             
+             // Phase 129: Persist Review Stats
+             final type = _currentMode3Question!['type'] as String? ?? 'sentence'; // default to sentence if missing
+             // Fire and forget to avoid UI delay
+             DatabaseService.updateReviewStats(qId, type, 1);
+          }
+          
           await _speechService.speak("Perfect!", lang: "en-US");
         } else {
           _mode3Feedback = 'TRY_AGAIN'; 
