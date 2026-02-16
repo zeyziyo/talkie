@@ -56,12 +56,8 @@ class MaterialRepository {
     // Enhanced query with counts
     return await db.rawQuery('''
       SELECT m.*, 
-        COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it 
-         JOIN words w ON it.item_id = w.group_id AND it.item_type = 'word'
-         WHERE it.tag = m.subject), 0) as word_count,
-        COALESCE((SELECT COUNT(DISTINCT it.item_id) FROM item_tags it
-         JOIN sentences s ON it.item_id = s.group_id AND it.item_type = 'sentence'
-         WHERE it.tag = m.subject), 0) as sentence_count
+        (SELECT COUNT(*) FROM words_meta wm WHERE wm.notebook_title = m.subject) as word_count,
+        (SELECT COUNT(*) FROM sentences_meta sm WHERE sm.notebook_title = m.subject) as sentence_count
       FROM study_materials m 
       ORDER BY m.imported_at DESC
     ''');
