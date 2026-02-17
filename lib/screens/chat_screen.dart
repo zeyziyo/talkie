@@ -727,12 +727,17 @@ class _ChatScreenState extends State<ChatScreen> {
     final bool isUser = speakerName.toLowerCase() == 'user';
     final bool isPartner = speakerName.toLowerCase() == 'partner';
 
-    // Phase 118: Securely find Participant Config for metadata isolation
+    // Phase 136: Securely find Participant Config for metadata isolation
+    // Fix: Case-insensitive matching for speaker name
     final participant = appState.activeParticipants.firstWhere(
-      (p) => p.name == speakerName,
-      orElse: () => ChatParticipant(
-        id: 'temp', dialogueId: '', name: speakerName, role: isUser ? 'user' : 'ai'
-      )
+      (p) => p.name.toLowerCase() == speakerName.toLowerCase() && 
+             (appState.activeDialogueId == null || p.dialogueId == appState.activeDialogueId),
+      orElse: () {
+        debugPrint('[ChatScreen] Participant NOT FOUND for $speakerName (Dialogue: ${appState.activeDialogueId})');
+        return ChatParticipant(
+          id: 'temp', dialogueId: '', name: speakerName, role: isUser ? 'user' : 'ai'
+        );
+      }
     );
     
     final int seq = msg['sequence_order'] as int? ?? index;
@@ -970,10 +975,21 @@ class _ChatScreenState extends State<ChatScreen> {
                   message: 'Toggle Gender',
                   child: InkWell(
                     onTap: () async {
+                      // Phase 136 Fix: JIT Creation for Temp Participants
+                      var targetId = participant.id;
+                      if (targetId == 'temp') {
+                        debugPrint('[ChatScreen] Creating JIT participant for ${participant.name}');
+                        final newP = await appState.getOrAddParticipant(
+                          name: participant.name, 
+                          role: participant.role,
+                          gender: participant.gender, // Keep current visual state
+                          languageCode: participant.langCode
+                        );
+                        targetId = newP.id;
+                      }
+
                       final newGender = participant.gender == 'male' ? 'female' : 'male';
-                      await appState.updateParticipant(participant.id, gender: newGender);
-                      // User requested to REMOVE auto-read on icon tap.
-                      // _speak(msg['source_text'] ?? '', participant.langCode, isUser: false);
+                      await appState.updateParticipant(targetId, gender: newGender);
                     },
                     borderRadius: BorderRadius.circular(12),
                     child: Padding(

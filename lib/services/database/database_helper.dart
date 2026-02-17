@@ -71,6 +71,12 @@ class DatabaseHelper {
           print('[DB] Migrating to version 19: Splitting Shared/Personal Data & Dialogue Table');
           await _migrateToV19(db);
         }
+
+        // Phase 136: v20 (Repair Missing Participants)
+        if (oldVersion < 20) {
+          print('[DB] Migrating to version 20: Populating missing dialogue_participants');
+          await _migrateToV20(db);
+        }
         
         // Final Safety Check: Ensure all base tables exist for upgraded users
         await createBaseTables(db);
