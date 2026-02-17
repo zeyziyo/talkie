@@ -269,6 +269,13 @@ class _ChatScreenState extends State<ChatScreen> {
       // Let's align: DB 'source_text' is what was spoken/typed. 'target_text' is translation.
       // 'speaker' field distinguishes who said it.
       
+      // Ensure Participant Exists
+      await appState.getOrAddParticipant(
+        name: speaker,
+        role: speaker == 'User' ? 'user' : 'ai',
+        languageCode: sLang, // Partner/User lang
+      );
+
       await appState.saveAiResponse(
         source, // Original
         target, // Translation

@@ -455,6 +455,13 @@ extension AppStateChat on AppState {
     _currentDialogueSequence++;
     
     try {
+      // Phase 130: Ensure Participant exists for Gender Toggle
+      await getOrAddParticipant(
+        name: finalSpeaker,
+        role: 'ai',
+        languageCode: _targetLang,
+      );
+
       // Phase 129: Use DialogueRepository
       await DialogueRepository.insertMessage({
         'dialogue_id': _activeDialogueId,
