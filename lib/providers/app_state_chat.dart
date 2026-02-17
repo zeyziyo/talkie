@@ -18,7 +18,7 @@ extension AppStateChat on AppState {
   }) async {
     // 1. Check Cache
     final existing = _activeParticipants.firstWhere(
-      (p) => p.name == name && 
+      (p) => p.name.toLowerCase() == name.toLowerCase() && 
              p.role == role && 
              (_activeDialogueId == null || p.dialogueId == _activeDialogueId), // Phase 136 Fix: Scope by Dialogue ID
       orElse: () => ChatParticipant(
@@ -69,8 +69,9 @@ extension AppStateChat on AppState {
     );
 
     _activeParticipants[index] = updated;
+    notify(); // Phase 136 Fix: Optimistic UI Update (Update UI first, then DB)
+    
     await DatabaseService.updateParticipant(id, updated.toJson());
-    notify();
   }
   
   /// Start listening for Game Mode (Continuous)
@@ -273,9 +274,20 @@ extension AppStateChat on AppState {
       if (participantsData.isNotEmpty) {
         _activeParticipants = participantsData.map((json) => ChatParticipant.fromJson(json)).toList();
       } else {
-        // Legacy Support: If no participants found, create default AI based on Persona
-        if (group.persona != null) {
-          await getOrAddParticipant(name: group.persona!, role: 'ai');
+        // Phase 136 Fix: Runtime Self-Healing
+        // If migration failed or didn't run, repair participants from existing messages now.
+        debugPrint('[AppState] No participants found. Attempting runtime repair...');
+        await _repairParticipantsFromMessages(group.id);
+        
+        // Reload after repair
+        final repaired = await DatabaseService.getParticipants(group.id);
+        if (repaired.isNotEmpty) {
+           _activeParticipants = repaired.map((json) => ChatParticipant.fromJson(json)).toList();
+        } else {
+           // Fallback: Default AI
+           if (group.persona != null) {
+             await getOrAddParticipant(name: group.persona!, role: 'ai');
+           }
         }
       }
     } catch (e) {
