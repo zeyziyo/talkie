@@ -259,7 +259,7 @@ class SupabaseService {
     }
   }
 
-  static Future<List<Map<String, dynamic>>> getPrivateChatMessages(String dialogueId) => SupabaseRepository.getPrivateChatMessages(dialogueId);
+  static Future<List<Map<String, dynamic>>> getPrivateChatMessages(String dialogueId) => SupabaseRepository.getChatMessages(dialogueId);
 
   static Future<void> savePrivateChatMessage({
     required String dialogueId,
@@ -272,10 +272,16 @@ class SupabaseService {
     String? note,
     String? style,
   }) async {
-    final groupId = DateTime.now().millisecondsSinceEpoch;
-    await saveEntry(groupId: groupId, text: sourceText, langCode: sourceLang, type: 'sentence', style: style);
-    await saveEntry(groupId: groupId, text: targetText, langCode: targetLang, type: 'sentence');
-    await SupabaseRepository.addToLibrary(groupId, note, dialogueId: dialogueId, speaker: speaker, sequenceOrder: sequenceOrder);
+    // Phase 131: Use dedicated chat_messages table
+    await SupabaseRepository.saveChatMessage(
+      dialogueId: dialogueId,
+      sourceText: sourceText,
+      targetText: targetText,
+      sourceLang: sourceLang,
+      targetLang: targetLang,
+      speaker: speaker,
+      sequenceOrder: sequenceOrder,
+    );
   }
 
   // Dialogue Group Delegation

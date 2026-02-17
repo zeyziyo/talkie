@@ -129,31 +129,8 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                 ],
               ),
               const SizedBox(height: 8),
-              // Subject Dropdown
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(horizontal: 12),
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.grey.shade300),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: DropdownButtonHideUnderline(
-                  child: DropdownButton<String>(
-                    hint: Text(l10n.labelNote), // Phase 130: Clarify this is Note/Subject filter
-                    value: _selectedSubject ?? 'All',
-                    isExpanded: true,
-                    items: [
-                      DropdownMenuItem(value: 'All', child: Text(l10n.chatAllConversations)),
-                      ...allSubjects.map((s) => DropdownMenuItem(value: s, child: Text(s))),
-                    ],
-                    onChanged: (val) {
-                      setState(() {
-                         _selectedSubject = (val == 'All') ? null : val;
-                      });
-                    },
-                  ),
-                ),
-              ),
+              // Subject Dropdown Removed per user request
+              // Container(...)
             ],
           ),
         ),

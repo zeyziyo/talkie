@@ -51,9 +51,13 @@ class SpeechTtsService {
     } else if (RegExp(r'[\u4E00-\u9FFF]').hasMatch(text)) {
       if (!lang.startsWith('zh')) lang = 'zh-CN';
     } else {
-      final latinPattern = RegExp(r'^[a-zA-Z0-9\s.,?!;:()"\-]+$');
-      if (latinPattern.hasMatch(text.trim())) {
-        // Force English if it looks completely latin and we are in an Asian locale
+      // Enhanced Latin Pattern: Allow common punctuation, numbers, and emojis, but ensure Latin letters exist.
+      // Checks if text contains Latin letters and does NOT contain CJK characters.
+      final hasLatin = RegExp(r'[a-zA-Z]').hasMatch(text);
+      final hasCJK = RegExp(r'[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF\uAC00-\uD7AF]').hasMatch(text);
+      
+      if (hasLatin && !hasCJK) {
+        // Force English if it looks consistently Latin (plus symbols)
         if (lang.startsWith('ko') || lang.startsWith('ja') || lang.startsWith('zh')) {
           lang = 'en-US';
         }

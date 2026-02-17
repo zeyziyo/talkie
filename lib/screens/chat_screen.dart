@@ -809,7 +809,8 @@ class _ChatScreenState extends State<ChatScreen> {
                     onTap: () {
                       final newGender = appState.chatUserGender == 'male' ? 'female' : 'male';
                       appState.setChatUserGender(newGender);
-                      _speak(msg['source_text'] ?? '', appState.sourceLang, isUser: true);
+                      // User requested to REMOVE auto-read on icon tap.
+                      // _speak(msg['source_text'] ?? '', appState.sourceLang, isUser: true);
                     },
                     borderRadius: BorderRadius.circular(12),
                     child: Padding(
@@ -904,7 +905,8 @@ class _ChatScreenState extends State<ChatScreen> {
                     onTap: () async {
                       final newGender = participant.gender == 'male' ? 'female' : 'male';
                       await appState.updateParticipant(participant.id, gender: newGender);
-                      _speak(msg['source_text'] ?? '', participant.langCode, isUser: false);
+                      // User requested to REMOVE auto-read on icon tap.
+                      // _speak(msg['source_text'] ?? '', participant.langCode, isUser: false);
                     },
                     borderRadius: BorderRadius.circular(12),
                     child: Padding(

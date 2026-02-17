@@ -131,30 +131,53 @@ class SupabaseRepository {
     await SupabaseHelper.client.from('user_library').delete().eq('dialogue_id', id).eq('user_id', userId);
   }
 
-  static Future<List<Map<String, dynamic>>> getPrivateChatMessages(String dialogueId) async {
+  // Phase 131: Chat Isolation - Use dedicated 'chat_messages' table
+  static Future<void> saveChatMessage({
+    required String dialogueId,
+    required String sourceText,
+    required String targetText,
+    required String sourceLang,
+    required String targetLang,
+    required String speaker,
+    required int sequenceOrder,
+  }) async {
+    final userId = SupabaseAuthService.currentUser?.id;
+    if (userId == null) return;
+
+    await SupabaseHelper.client.from('chat_messages').insert({
+      'user_id': userId,
+      'dialogue_id': dialogueId,
+      'speaker': speaker,
+      'source_text': sourceText,
+      'target_text': targetText,
+      'source_lang': sourceLang,
+      'target_lang': targetLang,
+      'sequence_order': sequenceOrder,
+    });
+  }
+
+  static Future<List<Map<String, dynamic>>> getChatMessages(String dialogueId) async {
     final userId = SupabaseAuthService.currentUser?.id;
     if (userId == null) return [];
 
     final response = await SupabaseHelper.client
-        .from('user_library')
-        .select('group_id, speaker, sequence_order, created_at, personal_note, sentences(text, lang_code)')
+        .from('chat_messages')
+        .select() // Select all fields
         .eq('user_id', userId)
         .eq('dialogue_id', dialogueId)
         .order('sequence_order', ascending: true);
 
-    return (response as List).map((link) {
-      final sentences = link['sentences'] as List;
-      final source = sentences.firstWhere((s) => s['lang_code'] != 'en', orElse: () => sentences.first);
-      final target = sentences.firstWhere((s) => s['lang_code'] == 'en', orElse: () => sentences.last);
-
+    return (response as List).map((msg) {
       return {
-        'group_id': link['group_id'],
-        'source_text': source['text'],
-        'target_text': target['text'],
-        'speaker': link['speaker'],
-        'sequence_order': link['sequence_order'],
-        'created_at': link['created_at'],
-        'note': link['personal_note'],
+        'id': msg['id'],
+        'dialogue_id': msg['dialogue_id'],
+        'source_text': msg['source_text'],
+        'target_text': msg['target_text'],
+        'source_lang': msg['source_lang'],
+        'target_lang': msg['target_lang'],
+        'speaker': msg['speaker'],
+        'sequence_order': msg['sequence_order'],
+        'created_at': msg['created_at'],
       };
     }).toList();
   }
