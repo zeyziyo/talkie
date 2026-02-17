@@ -9,6 +9,7 @@ import '../constants/language_constants.dart'; // Phase 70
 import '../services/supabase_service.dart';
 import '../services/database_service.dart';
 import '../services/translation_service.dart';
+import '../services/database/dialogue_repository.dart'; // Phase 135
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 
