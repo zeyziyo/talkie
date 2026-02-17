@@ -5,7 +5,7 @@ import 'package:path/path.dart';
 class DatabaseHelper {
   static Database? _database;
   static const String _dbName = 'talkie.db';
-  static const int _dbVersion = 19; // Phase 129: DB Re-architecture (Shared/Personal Split)
+  static const int _dbVersion = 20; // Phase 136: Fix Missing Dialogue Participants
 
   static Future<Database> get database async {
     if (_database != null) return _database!;
@@ -281,6 +281,54 @@ class DatabaseHelper {
       // Phase 129: item_tags removed, so no cleanup triggers needed.
 
       print('[DB] v19 Migration Completed.');
+    });
+  }
+
+  static Future<void> _migrateToV20(Database db) async {
+    await db.transaction((txn) async {
+      print('[DB] Starting v20 Migration: Repair Dialogue Participants...');
+      
+      // 1. Get Distinct Participants from Dialogues
+      // (session_id, speaker) unique pairs
+      final List<Map<String, dynamic>> speakers = await txn.rawQuery('''
+        SELECT DISTINCT session_id, speaker 
+        FROM dialogues 
+        WHERE speaker IS NOT NULL AND speaker != ''
+      ''');
+      
+      print('[DB] Found ${speakers.length} unique speaker entries to process.');
+      
+      for (var row in speakers) {
+        final String sessionId = row['session_id'];
+        final String name = row['speaker'];
+        final String role = name.toLowerCase() == 'user' ? 'user' : 'ai';
+        
+        // Check if exists
+        final existing = await txn.query(
+          'dialogue_participants',
+          where: 'dialogue_id = ? AND name = ?',
+          whereArgs: [sessionId, name],
+        );
+        
+        if (existing.isEmpty) {
+          // Determine language/gender defaults
+          // (We can't know for sure, so use smart defaults)
+          final lang = role == 'user' ? 'ko-KR' : 'en-US'; 
+          final gender = role == 'user' ? 'male' : 'female'; // Default
+          
+          await txn.insert('dialogue_participants', {
+            'id': DateTime.now().millisecondsSinceEpoch.toString() + name.hashCode.toString(), // Pseudo-random ID
+            'dialogue_id': sessionId,
+            'name': name,
+            'role': role,
+            'gender': gender,
+            'lang_code': lang,
+            'created_at': DateTime.now().toIso8601String(),
+          });
+          print('[DB] Restored Participant: $name (Role: $role) for Dialogue: $sessionId');
+        }
+      }
+      print('[DB] v20 Migration Completed.');
     });
   }
 
