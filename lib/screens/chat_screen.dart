@@ -59,27 +59,45 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Future<void> _loadHistory() async {
     final appState = Provider.of<AppState>(context, listen: false);
-    final history = await DatabaseService.getRecordsByDialogueId(
-      widget.initialDialogue!.id,
-      sourceLang: appState.sourceLang,
-      targetLang: appState.targetLang,
-    );
     
-    // Phase 70: Ensure Participants Exist for Legacy Messages
-    final Set<String> speakers = history
-        .map((m) => m['speaker'] as String? ?? 'Unknown')
-        .where((s) => s.isNotEmpty)
-        .toSet();
-        
-    for (final speakerName in speakers) {
-       final role = speakerName.toLowerCase() == 'user' ? 'user' : 'ai';
-       await appState.getOrAddParticipant(name: speakerName, role: role);
+    try {
+      final history = await DatabaseService.getRecordsByDialogueId(
+        widget.initialDialogue!.id,
+        sourceLang: appState.sourceLang,
+        targetLang: appState.targetLang,
+      );
+      
+      // Phase 133 Fix: Render messages immediately (Optimistic UI)
+      if (mounted) {
+        setState(() {
+          _messages = history;
+        });
+        _scrollToBottom();
+      }
+      
+      // Phase 70: Ensure Participants Exist for Legacy Messages
+      // Run this in background or logically after render to not block UI
+      final Set<String> speakers = history
+          .map((m) => m['speaker'] as String? ?? 'Unknown')
+          .where((s) => s.isNotEmpty)
+          .toSet();
+          
+      for (final speakerName in speakers) {
+         try {
+           final role = speakerName.toLowerCase() == 'user' ? 'user' : 'ai';
+           await appState.getOrAddParticipant(name: speakerName, role: role);
+         } catch (e) {
+           debugPrint('[ChatScreen] Participant sync warning for $speakerName: $e');
+         }
+      }
+    } catch (e) {
+      debugPrint('[ChatScreen] Load History Error: $e');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Failed to load chat history: $e')),
+        );
+      }
     }
-
-    setState(() {
-      _messages = history;
-    });
-    _scrollToBottom();
   }
 
   void _scrollToBottom() {
@@ -147,7 +165,8 @@ class _ChatScreenState extends State<ChatScreen> {
     final text = _textController.text.trim();
     if (text.isEmpty) return;
 
-    final appState = Provider.of<AppState>(context, listen: false);
+    // Phase 132 Fix: Enable listening for real-time updates (Gender Toggle, Partner Turn)
+    final appState = Provider.of<AppState>(context, listen: true);
     
     // Determine Speaker & Input Language
     // If PartneMode AND PartnerTurn -> Speaker is Partner (Opponent), Input is Target Lang
