@@ -163,6 +163,7 @@ class AppState extends ChangeNotifier {
   String _currentChatLocation = '';
   bool _mode4Active = false;
   List<ChatParticipant> _activeParticipants = [];
+  List<Map<String, dynamic>> _currentChatMessages = [];
 
   // ---------------------------------------------------------
   // Getters
@@ -215,6 +216,7 @@ class AppState extends ChangeNotifier {
   String get sourceStyle => _sourceStyle; // Phase 98.1
   String get sourceRoot => _sourceRoot;
   List<DialogueGroup> get dialogueGroups => _dialogueGroups;
+  List<Map<String, dynamic>> get currentChatMessages => _currentChatMessages;
   
   bool get mode3SessionActive => _mode3SessionActive;
   Map<String, dynamic>? get currentMode3Question => _currentMode3Question;
