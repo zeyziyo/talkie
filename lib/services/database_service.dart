@@ -179,7 +179,7 @@ class DatabaseService {
            final Map<String, dynamic> data = jsonDecode(row['data_json'] as String);
            // Determine which language to export as 'text'? 
            // Usually source language of material.
-           final sourceLang = material!['source_language'] as String? ?? 'auto';
+           final sourceLang = material['source_language'] as String? ?? 'auto';
            // If auto, pick first key?
            // Or search for matching lang?
            
