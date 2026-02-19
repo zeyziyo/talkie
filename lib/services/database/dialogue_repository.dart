@@ -1,4 +1,5 @@
 import 'package:sqflite/sqflite.dart';
+import '../../models/chat_participant.dart';
 import 'database_helper.dart';
 
 class DialogueRepository {
