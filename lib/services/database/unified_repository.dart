@@ -3,10 +3,24 @@ import 'package:sqflite/sqflite.dart';
 import 'database_helper.dart';
 import 'word_repository.dart';
 import 'sentence_repository.dart';
-import 'tag_repository.dart';
+
 
 class UnifiedRepository {
   static Future<Database> get _db async => await DatabaseHelper.database;
+
+  static int generateContentId(String text, String? properties) {
+    // Phase 2: Content-Based Hash ID Generation
+    final String combined = '$text|${properties ?? ""}';
+    final bytes = utf8.encode(combined);
+    
+    int hash = 0x811c9dc5;
+    for (var b in bytes) {
+      hash ^= b;
+      hash *= 0x01000193;
+      hash &= 0x7FFFFFFF; 
+    }
+    return hash == 0 ? 1 : hash;
+  }
 
   static Future<int> saveUnifiedRecord({
     required String text,
@@ -24,12 +38,20 @@ class UnifiedRepository {
     String? syncSubject,
     int? sequenceOrder,
     int? groupId,
+    String? knownProperties,
   }) async {
     final db = txn ?? await _db;
     // table variable removed as it is unused in v19 logic
     
     // Determine Group ID
-    int gId = groupId ?? DateTime.now().millisecondsSinceEpoch;
+    int gId;
+    if (groupId != null) {
+      gId = groupId;
+    } else {
+      // Generate ID from content
+      final props = '$type|$lang'; 
+      gId = generateContentId(text, props);
+    }
     
     if (groupId == null && syncSubject != null && sequenceOrder != null) {
       try {
@@ -103,15 +125,8 @@ class UnifiedRepository {
       await SentenceRepository.insert(insertData, txn: txn);
     }
 
-    // 5. 태그 저장 (언어별로 구분하여 저장)
-    if (tags != null) {
-      for (var t in tags) {
-        await TagRepository.addTag(gId, type, t, lang, txn: txn);
-        if (translation.isNotEmpty) {
-           await TagRepository.addTag(gId, type, t, targetLang, txn: txn);
-        }
-      }
-    }
+    // 5. Tags are stored in 'words_meta' / 'sentences_meta' directly.
+    // No separate table insert needed.
 
     return gId;
   }
