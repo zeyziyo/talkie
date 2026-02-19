@@ -1,6 +1,12 @@
+import 'package:supabase_flutter/supabase_flutter.dart';
+import 'supabase/supabase_helper.dart';
+import 'supabase/supabase_repository.dart';
+import 'supabase/supabase_edge_service.dart';
+import 'supabase/supabase_auth_service.dart';
 import 'database/unified_repository.dart';
 
-// ... (existing imports)
+/// SupabaseService - 클라우드 서비스 관리 (Facade)
+class SupabaseService {
 
   /// Phase 106: Resolve or Issue a canonical group ID for a translation set
   static Future<int> resolveCanonicalGroupId({
@@ -218,135 +224,6 @@ import 'database/unified_repository.dart';
     targetLang: targetLang,
     englishText: englishText,
   );
-
-  /// Phase 106: Resolve or Issue a canonical group ID for a translation set
-  static Future<int> resolveCanonicalGroupId({
-    required String sourceText,
-    required String sourceLang,
-    required String targetText,
-    required String targetLang,
-    String? englishText,
-    String? type,
-    String? pos,
-    String? formType,
-    String? root,
-    String? style,
-    String? note,
-  }) async {
-    // 1. Check if canonical ID already exists in cloud
-    int? canonicalId = await findGroupIdWithPivot(
-      sourceText: sourceText,
-      sourceLang: sourceLang,
-      targetText: targetText,
-      targetLang: targetLang,
-      englishText: englishText,
-    );
-
-    if (canonicalId != null) {
-      print('[Supabase] Found existing canonical group_id: $canonicalId');
-      return canonicalId;
-    }
-
-    // 2. No canonical ID found - Get a new one from server sequence
-    print('[Supabase] No canonical ID found. Requesting new ID...');
-    canonicalId = await SupabaseRepository.getNextGroupId();
-    
-    // 3. Register the new ID with basic data (Source + Pivot if any)
-    // This ensures other users can find this set via Source or Pivot immediately.
-    final itemType = type ?? ((sourceText.split(' ').length > 3) ? 'sentence' : 'word');
-    
-    // Save Source
-    await saveEntry(
-      groupId: canonicalId,
-      text: sourceText,
-      langCode: sourceLang,
-      type: itemType,
-      pos: pos,
-      formType: formType,
-      root: root,
-      style: style,
-      note: note,
-    );
-
-    // Save English Pivot (Shared Dictionary Key)
-    if (englishText != null && sourceLang != 'en' && targetLang != 'en') {
-      await saveEntry(
-        groupId: canonicalId,
-        text: englishText,
-        langCode: 'en',
-        type: itemType,
-      );
-    }
-    
-    return canonicalId;
-  }
-
-  // Complex Operations (Keep in facade or move to logic layer if needed)
-  static Future<Map<String, dynamic>> importJsonEntry({
-    required String sourceText,
-    required String sourceLang,
-    required String targetText,
-    required String targetLang,
-    String? note,
-    String? pos,
-    String? formType,
-    String? root,
-    String? style,
-    String? type,
-    List<String>? tags,
-    String? syncSubject,
-  }) async {
-    try {
-      final validation = await translateAndValidate(
-        text: sourceText,
-        sourceLang: sourceLang,
-        targetLang: targetLang,
-        note: note,
-      );
-      
-      if (validation['isValid'] != true) {
-        return {'success': false, 'reason': 'Content Policy: ${validation['reason'] ?? 'Unknown'}'};
-      }
-      
-      final englishText = validation['englishText'] as String?;
-      int? groupId = await findGroupIdWithPivot(
-        sourceText: sourceText,
-        sourceLang: sourceLang,
-        targetText: targetText,
-        targetLang: targetLang,
-        englishText: englishText,
-      );
-      
-      if (groupId == null) {
-        groupId = await SupabaseRepository.getNextGroupId();
-        await saveEntry(
-          groupId: groupId,
-          text: sourceText,
-          langCode: sourceLang,
-          type: type ?? 'sentence',
-          note: note,
-          pos: pos ?? validation['pos'] as String?,
-          formType: formType ?? validation['formType'] as String?,
-          root: root ?? validation['root'] as String?,
-          style: style ?? validation['style'] as String?,
-          tags: tags,
-        );
-
-        if (englishText != null && sourceLang != 'en' && targetLang != 'en') {
-          await saveEntry(groupId: groupId, text: englishText, langCode: 'en', type: type ?? 'sentence');
-        }
-      }
-
-      await saveEntry(groupId: groupId, text: targetText, langCode: targetLang, type: type ?? 'sentence');
-      
-      final materialTags = syncSubject != null ? [syncSubject] : <String>[];
-      await SupabaseRepository.addToLibrary(groupId, note, materialTags: materialTags);
-      
-      return {'success': true, 'id': groupId};
-    } catch (e) {
-      return {'success': false, 'reason': e.toString()};
-    }
-  }
 
   static Future<Map<String, dynamic>> importDialogueMessage({
     required String dialogueId,

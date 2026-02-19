@@ -240,6 +240,45 @@ class AppState extends ChangeNotifier {
   };
 
   // ---------------------------------------------------------
+  // Phase 4: Global Participant Management
+  // ---------------------------------------------------------
+  
+  List<ChatParticipant> _globalParticipants = [];
+  List<ChatParticipant> get globalParticipants => _globalParticipants;
+
+  Future<void> loadGlobalParticipants() async {
+    _globalParticipants = await DialogueRepository.getAllUniqueParticipants();
+    notifyListeners();
+  }
+
+  Future<void> addGlobalParticipant(ChatParticipant participant) async {
+    await DialogueRepository.insertParticipant({
+      'id': participant.id,
+      'name': participant.name,
+      'role': participant.role,
+      'gender': participant.gender,
+      'lang_code': participant.langCode,
+    });
+    await loadGlobalParticipants();
+  }
+
+  Future<void> updateGlobalParticipant(ChatParticipant participant) async {
+    await DialogueRepository.updateParticipant(participant.id, {
+      'id': participant.id,
+      'name': participant.name,
+      'role': participant.role,
+      'gender': participant.gender,
+      'lang_code': participant.langCode,
+    });
+    await loadGlobalParticipants();
+  }
+
+  Future<void> deleteGlobalParticipant(String id) async {
+    await DialogueRepository.deleteParticipant(id);
+    await loadGlobalParticipants();
+  }
+
+  // ---------------------------------------------------------
   // Controller / Hub Methods
   // ---------------------------------------------------------
 

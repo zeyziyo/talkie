@@ -118,44 +118,56 @@ extension AppStateChat on AppState {
   }
 
   /// Create a new dialogue and set as active session
-  Future<void> startNewDialogue({String? persona, String? gender}) async {
+  Future<void> startNewDialogue({
+    String? title, // Changed from 'persona' to 'title' to generally represent the chat
+    List<ChatParticipant>? initialParticipants, 
+  }) async {
     try {
       _statusMessage = 'Starting new chat...';
       notify();
 
+      final dialogueTitle = title ?? 'New Conversation';
+
       final dialogueId = await SupabaseService.createDialogueGroup(
-        title: 'New Conversation',
-        persona: persona,
+        title: dialogueTitle,
+        persona: 'Group', // Default persona type
       );
 
       _activeDialogueId = dialogueId;
-      _activeDialogueTitle = 'New Conversation';
-      _activePersona = persona;
-      _activePersonaGender = gender; 
+      _activeDialogueTitle = dialogueTitle;
+      _activePersona = 'Group';
       _currentDialogueSequence = 1;
 
       await DatabaseService.insertDialogueGroup(
         id: dialogueId,
-        title: 'New Conversation',
-        persona: persona,
+        title: dialogueTitle,
+        persona: 'Group',
         createdAt: DateTime.now().toIso8601String(),
         userId: SupabaseService.client.auth.currentUser?.id,
       );
 
-      if (persona != null) {
-        await getOrAddParticipant(
-          name: persona,
-          role: 'assistant',
-          gender: gender,
-          languageCode: _targetLang,
-        );
-      }
+      // Phase 4: Add Initial Participants
+      if (initialParticipants != null && initialParticipants.isNotEmpty) {
+        for (var p in initialParticipants) {
+          await DatabaseService.insertParticipant({
+            'id': p.id,
+            'name': p.name,
+            'role': p.role,
+            'gender': p.gender,
+            'lang_code': p.langCode,
+            'dialogue_id': dialogueId,
+          });
+          _activeParticipants.add(p);
+        }
+      } 
+      // Removed Legacy Fallback: Users must select participants via standard flow.
+      // If no participants, it's an empty chat (which is allowed, user can add later)
 
       _dialogueGroups.insert(0, DialogueGroup(
         id: dialogueId,
         userId: SupabaseService.client.auth.currentUser?.id ?? 'anonymous',
-        title: 'New Conversation',
-        persona: persona,
+        title: dialogueTitle,
+        persona: 'Group',
         createdAt: DateTime.now(),
       ));
 

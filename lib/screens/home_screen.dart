@@ -14,6 +14,7 @@ import '../constants/language_constants.dart';
 import 'chat_history_screen.dart';
 import '../widgets/online_library_dialog.dart';
 import '../constants/app_constants.dart';
+import 'participant_manage_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -491,6 +492,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     case 'settings':
                       _showLanguageSettingsDialog(context);
                       break;
+                    case 'manage_participants':
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const ParticipantManageScreen()),
+                      );
+                      break;
                     // select_material removed from menu as it's now an icon
                   }
                 },
@@ -534,6 +541,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 const PopupMenuDivider(),
 
+
                 PopupMenuItem<String>(
                   value: 'settings',
                   child: Row(
@@ -541,6 +549,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       const Icon(Icons.settings, color: Colors.grey),
                       const SizedBox(width: 8),
                       Text(l10n.menuSettings),
+                    ],
+                  ),
+                ),
+                
+                PopupMenuItem<String>(
+                  value: 'manage_participants',
+                  child: Row(
+                    children: [
+                      const Icon(Icons.people, color: Colors.purple),
+                      const SizedBox(width: 8),
+                      Text('Manage Participants'), // TODO: Add to l10n
                     ],
                   ),
                 ),

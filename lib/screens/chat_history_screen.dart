@@ -4,6 +4,8 @@ import '../providers/app_state.dart';
 import 'chat_screen.dart';
 import '../l10n/app_localizations.dart';
 import '../models/dialogue_group.dart';
+import '../models/chat_participant.dart';
+import '../widgets/participant_selector_dialog.dart';
 
 class ChatHistoryScreen extends StatefulWidget {
   final bool isWidget;
@@ -270,37 +272,27 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
   void _showNewChatDialog(AppState appState, AppLocalizations l10n) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
-        title: Text(l10n.chatChoosePersona),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            _personaTile(l10n.personaTeacher, Icons.school, appState),
-            _personaTile(l10n.personaGuide, Icons.map, appState),
-            _personaTile(l10n.personaFriend, Icons.face, appState),
-          ],
-        ),
+      builder: (context) => ParticipantSelectorDialog(
+        onSelected: (participants) async {
+            // Create chat with selected participants
+            // We can use the first selected item's name as title/persona hint or generic
+            final title = participants.isNotEmpty 
+                ? participants.map((p) => p.name).join(', ') 
+                : 'Group Chat';
+            
+            await appState.startNewDialogue(
+              title: title, // Pass title
+              initialParticipants: participants,
+            );
+            
+            if (context.mounted) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ChatScreen()),
+              );
+            }
+        },
       ),
-    );
-  }
-
-  Widget _personaTile(String name, IconData icon, AppState appState) {
-    return ListTile(
-      leading: Icon(icon),
-      title: Text(name),
-      onTap: () async {
-        Navigator.pop(context);
-        await appState.startNewDialogue(
-          persona: name, 
-          gender: 'female' // Phase 119: Default to female, change in Chat header
-        );
-        if (mounted) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const ChatScreen()),
-          );
-        }
-      },
     );
   }
 }

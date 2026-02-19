@@ -194,4 +194,28 @@ class DialogueRepository {
       orderBy: 'created_at ASC, rowid ASC' // Ensure proper chronological order
     );
   }
+  /// Phase 4: Get all unique participants for management UI
+  static Future<List<ChatParticipant>> getAllUniqueParticipants() async {
+    final db = await _db;
+    final List<Map<String, dynamic>> maps = await db.query('participants');
+    return List.generate(maps.length, (i) {
+      return ChatParticipant(
+        id: maps[i]['id'],
+        dialogueId: '', // Global list doesn't need dialogue context here
+        name: maps[i]['name'],
+        role: maps[i]['role'],
+        gender: maps[i]['gender'] ?? 'female',
+        langCode: maps[i]['lang_code'] ?? 'en-US',
+      );
+    });
+  }
+
+  static Future<void> deleteParticipant(String id) async {
+    final db = await _db;
+    await db.delete('participants', where: 'id = ?', whereArgs: [id]);
+    // Also delete links? Or keep history? 
+    // If we delete from master, we should probably delete links or set to null?
+    // Foreign key constraint might handle it or we leave it.
+    // For now, let's just delete the master record.
+  }
 }
