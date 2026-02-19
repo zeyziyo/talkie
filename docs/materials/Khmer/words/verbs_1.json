@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "កិរិយាស័ព្ទគោល ១០០",
-  "pos": "verb",
   "entries": [
     {
       "text": "ទៅ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "មក",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ញ៉ាំ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ផឹក",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "គេង",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "មើល",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ទិញ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "លក់",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "អាន",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "សរសេរ",
       "note": "ការសរសេរ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ស្តាប់",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "និយាយ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ធ្វើ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ធ្វើការ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "រៀន",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បង្រៀន",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "សិក្សា",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "រង់ចាំ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ជួប",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ស្រឡាញ់",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ចូលចិត្ត",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ស្អប់",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "សើច",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "យំ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ដើរ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "រត់",
       "note": "ការរត់",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "អង្គុយ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ឈរ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ឱ្យ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ទទួល",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បើក",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បិទ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "គិត",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ដឹង",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "មិនដឹង",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "រក / ឃើញ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បាត់",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ជួយ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "លាង",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ធ្វើម្ហូប",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ច្រៀង",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "រាំ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ប្រើ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ធ្វើ / បង្កើត",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ហៅ / ច្រៀង",
       "note": "ចម្រៀង / ឈ្មោះ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "កាន់ / ទីប",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ដាក់ / ទុកចោល",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ចូល",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ចេញ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ឡើង",
       "note": "យានយន្ត",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ចុះ",
       "note": "យានយន្ត",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ផ្ញើ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ដាក់ជូន",
       "note": "ការដាក់",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "សុខសប្បាយ",
       "note": "ការសួរសុខទុក្ខ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ចាប់ផ្តើម",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បញ្ចប់",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "សម្រាក",
       "note": "ការសម្រាក",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "សួរ",
       "note": "សំណួរ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ឆ្លើយ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "សន្យា",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បារម្ភ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ជឿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "សង្ស័យ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "សង្ឃឹម",
       "note": "ក្តីសង្ឃឹម",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "យល់សប្តិ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ឈ្លោះគ្នា",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ឈ្នះ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ចាញ់",
       "note": "ការចាញ់",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "រីកចម្រើន",
       "note": "ការលូតលាស់",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "រស់នៅ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ស្លាប់",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "រើស",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បោះចោល",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "លាក់",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ស្វែងរក",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ជ្រើសរើស",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ផ្លាស់ប្តូរ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "កម្ម៉ង់",
       "note": "ការទិញទំនិញ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "រៀបចំ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ចាប់",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បោះ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ទាញ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "រុញ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ជួសជុល",
       "note": "ការជួសជុល",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បែក / ខូច",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ឈឺ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ព្យាបាល",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ហាត់ប្រាណ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ហែលទឹក",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ដើរកម្សាន្ត",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បើកបរ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "សម្អាត",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "លាងចាន",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "បោកខោអាវ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ងូតទឹក",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ដុសធ្មេញ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ភ្ញាក់ពីគេង",
       "note": "ការភ្ញាក់",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ទៅគេង",
       "note": "ការគេង",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "យល់",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ចាំ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Nomino 50 za Msingi",
-  "pos": "noun",
   "entries": [
     {
       "text": "mimi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "wewe",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "hii",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ile",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "nani",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "nini",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "wapi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "lini",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "kwa nini",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "vipi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "mtu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "rafiki",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "familia",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "jina",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "nyumba",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "shule",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "kampuni",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "hospitali",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "soko",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "mkahawa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "kafe",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "choo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "kitabu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "maji",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "chakula",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "pesa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "nguo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "viatu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "fuko / begi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "saa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "simu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "kompyuta",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "gari",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "mwezi",
       "note": "mwezi",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "nyota",
       "note": "anga",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "jua",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "mbingu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "bahari",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "mlima",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ua",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "mti",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "mbwa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "paka",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "leo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "kesho",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "jana",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "sasa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "muda",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "mchana / siku",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "usiku",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

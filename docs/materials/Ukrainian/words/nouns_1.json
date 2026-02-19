@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Основні іменники 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Людина",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Вода",
       "note": "Питна вода",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Їжа / Рис",
       "note": "Їжа",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Хліб",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Яблуко",
       "note": "Фрукт",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Молоко",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "М'ясо",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Одяг",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Будинок",
       "note": "Житло",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Кімната",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Вікно",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Двері",
       "note": "Вхід",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Письмовий стіл",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Стілець",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Комп'ютер",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Телефон",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Книга",
       "note": "Книга",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Олівець",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Папір",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сумка",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Школа",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Компанія",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Лікарня",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Аптека",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ресторан",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ринок",
       "note": "Ринок",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Метро",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Автобус",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Таксі",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Літак",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Потяг",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Велосипед",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дорога",
       "note": "Траса",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Гора",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Море",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Річка",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Небо",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сонце / Рік",
       "note": "Сонце / Рік",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Місяць",
       "note": "Супутник",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Зірка",
       "note": "Небесне тіло",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дерево",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Квітка",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Цуценя",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Кішка",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Гроші",
       "note": "Готівка",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Час",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сьогодні",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Завтра",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Вчора",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Друг",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

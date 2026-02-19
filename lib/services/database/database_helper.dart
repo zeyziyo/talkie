@@ -5,7 +5,7 @@ import 'package:path/path.dart';
 class DatabaseHelper {
   static Database? _database;
   static const String _dbName = 'talkie.db';
-  static const int _dbVersion = 21; // Phase 136: Fix Missing Dialogue Participants (Retry)
+  static const int _dbVersion = 22; // Phase 1 Step 1: Normalize Participants
 
   static Future<Database> get database async {
     if (_database != null) return _database!;
@@ -82,6 +82,12 @@ class DatabaseHelper {
         if (oldVersion < 21) {
           print('[DB] Migrating to version 21: Retrying participant repair (force run)');
           await _migrateToV20(db); // Reuse idempotent logic
+        }
+
+        // Phase 1 Step 1: v22 (Normalize Participants)
+        if (oldVersion < 22) {
+          print('[DB] Migrating to version 22: Normalizing Participants Table');
+          await _migrateToV22(db);
         }
         
         // Final Safety Check: Ensure all base tables exist for upgraded users
@@ -411,6 +417,28 @@ class DatabaseHelper {
     ''');
 
     await db.execute('''
+      CREATE TABLE IF NOT EXISTS participants (
+        id TEXT PRIMARY KEY,
+        name TEXT NOT NULL,
+        role TEXT NOT NULL, -- 'user' or 'ai'
+        gender TEXT,
+        lang_code TEXT,
+        created_at TEXT NOT NULL
+      )
+    ''');
+
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS dialogue_participants (
+        dialogue_id TEXT NOT NULL,
+        participant_id TEXT NOT NULL,
+        joined_at TEXT NOT NULL,
+        PRIMARY KEY (dialogue_id, participant_id),
+        FOREIGN KEY (dialogue_id) REFERENCES dialogue_groups (id) ON DELETE CASCADE,
+        FOREIGN KEY (participant_id) REFERENCES participants (id) ON DELETE CASCADE
+      )
+    ''');
+
+    await db.execute('''
       CREATE TABLE IF NOT EXISTS dialogues (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         session_id TEXT NOT NULL,
@@ -419,18 +447,6 @@ class DatabaseHelper {
         translation TEXT,
         created_at TEXT DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now')),
         FOREIGN KEY (session_id) REFERENCES dialogue_groups (id) ON DELETE CASCADE
-      )
-    ''');
-    
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS dialogue_participants (
-        id TEXT PRIMARY KEY,
-        dialogue_id TEXT NOT NULL,
-        name TEXT NOT NULL,
-        role TEXT NOT NULL, 
-        gender TEXT,
-        lang_code TEXT,
-        created_at TEXT NOT NULL
       )
     ''');
     
@@ -451,6 +467,110 @@ class DatabaseHelper {
     await db.execute('CREATE INDEX IF NOT EXISTS idx_sentences_group_id ON sentences (group_id)');
     await db.execute('CREATE UNIQUE INDEX IF NOT EXISTS idx_words_meta_group_id ON words_meta (group_id)');
     await db.execute('CREATE UNIQUE INDEX IF NOT EXISTS idx_sentences_meta_group_id ON sentences_meta (group_id)');
+  }
+
+  // Legacy migrations kept below...
+
+  // ... (v15, v16, v17, v18, v19, v20, v21 omitted)
+
+  static Future<void> _migrateToV22(Database db) async {
+    await db.transaction((txn) async {
+      print('[DB] Starting v22 Migration: Normalizing Participants...');
+
+      // 1. Create Master Participants Table
+      await txn.execute('''
+        CREATE TABLE IF NOT EXISTS participants (
+          id TEXT PRIMARY KEY,
+          name TEXT NOT NULL,
+          role TEXT NOT NULL,
+          gender TEXT,
+          lang_code TEXT,
+          created_at TEXT NOT NULL
+        )
+      ''');
+
+      // 2. Extract Unique Participants from old table
+      // Old table schema: id, dialogue_id, name, role, gender, lang_code, created_at
+      final oldParticipants = await txn.query('dialogue_participants');
+      
+      // Memory deduplication (using name+role as key)
+      final Map<String, Map<String, dynamic>> uniqueParticipants = {};
+      final Map<String, String> oldIdToNewId = {}; // Map old row ID to new Master ID
+
+      for (var row in oldParticipants) {
+        final name = row['name'] as String;
+        final role = row['role'] as String;
+        final key = '$name:$role'; // Composite Key
+
+        String newId;
+        if (!uniqueParticipants.containsKey(key)) {
+          // Create new Master ID
+          // User always gets 'me' if role is user (optional, but good for logic)
+          // But to be safe, let's generate a hash or clean slug.
+          if (role == 'user' && name == 'User') {
+             newId = 'me';
+          } else {
+             newId = '${role}_${name.hashCode.abs()}'; 
+          }
+          
+          uniqueParticipants[key] = {
+            'id': newId,
+            'name': name,
+            'role': role,
+            'gender': row['gender'],
+            'lang_code': row['lang_code'],
+            'created_at': row['created_at'], // Keep earliest? or just current
+          };
+        } else {
+          newId = uniqueParticipants[key]!['id'];
+        }
+        
+        // Map old row ID to new Master ID for linking later
+        oldIdToNewId[row['id'] as String] = newId;
+      }
+
+      // 3. Insert Master Participants
+      final batch = txn.batch();
+      for (var p in uniqueParticipants.values) {
+        batch.insert('participants', p, conflictAlgorithm: ConflictAlgorithm.ignore);
+      }
+      await batch.commit(noResult: true);
+
+      // 4. Create Link Table
+      await txn.execute('ALTER TABLE dialogue_participants RENAME TO dialogue_participants_old');
+      await txn.execute('''
+        CREATE TABLE dialogue_participants (
+          dialogue_id TEXT NOT NULL,
+          participant_id TEXT NOT NULL,
+          joined_at TEXT NOT NULL,
+          PRIMARY KEY (dialogue_id, participant_id),
+          FOREIGN KEY (dialogue_id) REFERENCES dialogue_groups (id) ON DELETE CASCADE,
+          FOREIGN KEY (participant_id) REFERENCES participants (id) ON DELETE CASCADE
+        )
+      ''');
+
+      // 5. Migrate Links
+      final linkBatch = txn.batch();
+      for (var row in oldParticipants) {
+        final oldRowId = row['id'] as String;
+        final dialogueId = row['dialogue_id'] as String;
+        final newPartId = oldIdToNewId[oldRowId];
+        
+        if (newPartId != null) {
+          linkBatch.insert('dialogue_participants', {
+            'dialogue_id': dialogueId,
+            'participant_id': newPartId,
+            'joined_at': row['created_at'],
+          }, conflictAlgorithm: ConflictAlgorithm.ignore);
+        }
+      }
+      await linkBatch.commit(noResult: true);
+
+      // 6. Cleanup
+      await txn.execute('DROP TABLE dialogue_participants_old');
+      
+      print('[DB] v22 Migration Completed.');
+    });
   }
 
   // Legacy migrations kept below...

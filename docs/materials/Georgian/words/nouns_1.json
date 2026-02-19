@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "ძირითადი არსებითი სახელები 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "ადამიანი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "წყალი",
       "note": "Drinking water",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ბრინჯი / კვება",
       "note": "Meal",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "პური",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ვაშლი",
       "note": "Fruit",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "რძე",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ხორცი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ტანსაცმელი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "სახლი",
       "note": "Housing",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ოთახი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ფანჯარა",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "კარი",
       "note": "Entrance",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "მაგიდა",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "სკამი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "კომპიუტერი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ტელეფონი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "წიგნი",
       "note": "Library",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ფანქარი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ქაღალდი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ჩანთა",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "სკოლა",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "კომპანია",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "საავადმყოფო",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "აფთიაქი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "რესტორანი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ბაზარი",
       "note": "Marketplace",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "მეტრო",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ავტობუსი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ტაქსი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "თვითმფრინავი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "მატარებელი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ველოსიპედი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "გზა",
       "note": "Road",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "მთა",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ზღვა",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "მდინარე",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ცა",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "მზე / წელი",
       "note": "Sun / Year",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "მთვარე",
       "note": "Satellite",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ვარსკვლავი",
       "note": "Celestial Body",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ხე",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ყვავილი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ლეკვი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "კატა",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ფული",
       "note": "Cash",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "დრო",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "დღეს",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ხვალ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "გუშინ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "მეგობარი",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

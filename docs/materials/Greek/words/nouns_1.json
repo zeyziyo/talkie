@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Βασικά Ουσιαστικά 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Άνθρωπος",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Νερό",
       "note": "Πόσιμο νερό",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Φαγητό / Ρύζι",
       "note": "Γεύμα",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ψωμί",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Μήλο",
       "note": "Φρούτο",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Γάλα",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Κρέας",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ρούχα",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Σπίτι",
       "note": "Kατοικία",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Δωμάτιο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Παράθυρο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Πόρτα",
       "note": "Είσοδος",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Γραφείο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Καρέκλα",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Υπολογιστής",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Τηλέφωνο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Βιβλίο",
       "note": "Βιβλίο",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Μολύβι",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Χαρτί",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Τσάντα",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Σχολείο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Εταιρεία",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Νοσοκομείο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Φαρμακείο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Εστιατόριο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Αγορά",
       "note": "Αγορά",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Μετρό",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Λεωφορείο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ταξί",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Αεροπλάνο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Τρένο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ποδήλατο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Δρόμος",
       "note": "Δρόμος",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Βουνό",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Θάλασσα",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ποτάμι",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ουρανός",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ήλιος / Έτος",
       "note": "Ήλιος / Έτος",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Σελήνη",
       "note": "Δορυφόρος",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Αστέρι",
       "note": "Ουράνιο σώμα",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Δέντρο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Λουλούδι",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Κουτάβι",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Γάτα",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Χρήματα",
       "note": "Μετρητά",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Χρόνος",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Σήμερα",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Αύριο",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Χθες",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Φίλος",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

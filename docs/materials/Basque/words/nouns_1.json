@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Oinarrizko izenak 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Pertsona",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ura",
       "note": "Edaria ura",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Arroza / Otordua",
       "note": "Otordua",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ogia",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sagarra",
       "note": "Fruta",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Esnea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Haragia",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Arropa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Etxea",
       "note": "Etxebizitza",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Gela",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Leihoa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Atea",
       "note": "Sarrera",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mahaia",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Aulkia",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ordenagailua",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Telefonoa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Liburua",
       "note": "Liburutegia",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Arkatza",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Papera",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Poltsa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Eskola",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Enpresa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ospitalea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Farmacia",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Restaurantea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Merkatua",
       "note": "Azoka",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Metroa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Autobusa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Taxia",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Hegazkina",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Trena",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bizikleta",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Errepidea",
       "note": "Bidea",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mendia",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Itsasoa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ertza",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Zeru",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Eguzkia / Urtea",
       "note": "Eguzkia / Urtea",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ilargia",
       "note": "Satelitea",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Izarra",
       "note": "Zeruko Gorputza",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Zuhaitza",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Lorea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Txakurkumea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Katua",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dirua",
       "note": "Eskudirua",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Denbora",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Gaur",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bihar",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Atzo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Laguna",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

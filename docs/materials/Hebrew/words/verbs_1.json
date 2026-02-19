@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "100 פעלים בסיסיים",
-  "pos": "verb",
   "entries": [
     {
       "text": "ללכת",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לבוא",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לאכול",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשתות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לישון",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לראות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לקנות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "למכור",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לקרוא",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לכתוב",
       "note": "כתיבה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשמוע",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לדבר",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לעשות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לעבוד",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ללמוד",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ללמד",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ללמוד (Study)",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לחכות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לפגוש",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לאהוב",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לחבב / לאהוב",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשנוא",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לצחוק",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לבכות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ללכת ברגל",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לרוץ",
       "note": "ריצה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשבת",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לעמוד",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לתת",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לקבל",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לפתוח",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לסגור",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לחשוב",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לדעת",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לא לדעת",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לחפש / למצוא",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לאבד",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לעזור",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשטוף",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לבשל",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשיר",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לרקוד",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להשתמש",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להכין / ליצור",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לקרוא / לשיר",
       "note": "שיר / שם",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להחזיק",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להניח / לעזוב",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להיכנס",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לצאת",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לעלות",
       "note": "כלי רכב",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לרדת",
       "note": "כלי רכב",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשלוח",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להגיש (Submission)",
       "note": "הגשה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להרגיש / לחיות",
       "note": "ברכת שלום",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להתחיל",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לסיים",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לנוח",
       "note": "מנוחה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשאול",
       "note": "שאלה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לענות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להבטיח",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לדאוג",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להאמין",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לחשוד",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לקוות",
       "note": "תקווה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לחלום",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לריב",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לנצח",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להפסיד",
       "note": "תבוסה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לגדול",
       "note": "צמיחה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לחיות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "למות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לקחת",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לזרוק",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להתחבא",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לחפש",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לבחור",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשנות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להזמין (Order)",
       "note": "רכישת סחורה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להתכונן",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לתפוס",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לזרוק (Throw)",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "למשוך",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לדחוף",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לתקן",
       "note": "תיקון",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להישבר",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לכאוב / להיות חולה",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לרפא",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להתעמל",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשחות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לטייל",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לנהוג",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לנקות",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לשטוף כלים",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לכבס",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להתרחץ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לצחצח שיניים",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להתעורר",
       "note": "יקיצה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ללכת לישון",
       "note": "שינה",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "להבין",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "לזכור",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

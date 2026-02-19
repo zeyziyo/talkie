@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Emra themelorë 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Person",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ujë",
       "note": "Ujë për të pirë",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Oriz / Vakt",
       "note": "Vakt",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bukë",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mollë",
       "note": "Fruta",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Qumësht",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mish",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Rroba",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Shtëpi",
       "note": "Banesë",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dhomë",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dritare",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Derë",
       "note": "Hyrje",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tavolinë",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Karrige",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kompjuter",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Telefon",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Libër",
       "note": "Bibliotekë",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Laps",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Letër",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Çantë",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Shkollë",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kompani",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Spital",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Farmaci",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Restorant",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Treg",
       "note": "Vend tregu",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Metro",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Autobus",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Taksi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Aeroplan",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Biçikletë",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Rrugë",
       "note": "Rrugë",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mal",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Det",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Lumë",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Qiell",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Diell / Vit",
       "note": "Diell / Vit",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Hënë",
       "note": "Satelit",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Yll",
       "note": "Trupi qiellor",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Pemë",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Lule",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Këlysh",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mace",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Para",
       "note": "Para në dorë",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kohë",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sot",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Nesër",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dje",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mik",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

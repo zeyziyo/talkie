@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "Негізгі етістіктер 100",
-  "pos": "verb",
   "entries": [
     {
       "text": "Бару",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Келу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жеу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ішу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ұйықтау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Көру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Сатып алу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Сату",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Оқу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жазу",
       "note": "Writing",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Тыңдау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Сөйлеу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Істеу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жұмыс істеу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Оқу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Оқыту",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Үйрену",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Күту",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Кездесу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жақсы көру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ұнату",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жақтырмау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Күлу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жылау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жүру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жүгіру",
       "note": "Running",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Отыру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Тұру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Беру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Алу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ашу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жабу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ойлау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Білу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Білмеу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Табу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жоғалту",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Көмектесу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жуу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Тамақ дайындау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ән айту",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Билеу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Пайдалану",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жасау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Шақыру",
       "note": "Song / Name",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ұстау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Қою / қалдыру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Кіру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Шығу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Міну",
       "note": "Boarding",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Түсу",
       "note": "Alighting",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жіберу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Тапсыру",
       "note": "Submission",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Тіл табысу",
       "note": "Greetings",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Бастау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Аяқтау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Демалу",
       "note": "Relax",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Сұрау",
       "note": "Question",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жауап беру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Уәде беру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Уайымдау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Сену",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Күмәндану",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Тілеу / Үміттену",
       "note": "Hope",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Армандау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Төбелесу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жеңу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жеңілу",
       "note": "Defeat",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Өсу",
       "note": "Growth",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Өмір сүру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Өлу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Алып кету",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Лақтырып тастау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жасыру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Іздеу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Таңдау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Өзгерту",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Тапсырыс беру",
       "note": "Buying items",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Дайындау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ұстап алу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Лақтыру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Тарту",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Итеру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жөндеу",
       "note": "Repair",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Сындыру",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ауыру / жарақаттану",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Емдеу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жаттығу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Жүзу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Саяхаттау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Көлік жүргізу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Тазалау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ыдыс жуу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Кір жуу",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Душ қабылдау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Тіс тазалау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ояну",
       "note": "Wake up",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ұйықтауға кету",
       "note": "Sleeping",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Түсіну",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Есте сақтау",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

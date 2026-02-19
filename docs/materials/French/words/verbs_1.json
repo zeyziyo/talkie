@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "Verbes 1",
-  "pos": "Verbe",
   "entries": [
     {
       "text": "Aller",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Venir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Manger",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Boire",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Dormir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Voir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Acheter",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Vendre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Lire",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Écrire",
       "note": "Écriture",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Écouter",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Parler",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Faire",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Travailler",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Étudier",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Enseigner",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Apprendre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Attendre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Rencontrer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Aimer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Aimer / Apprécier",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Détester",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Rire",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Pleurer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Marcher",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Courir",
       "note": "Course",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "S'asseoir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Se tenir debout",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Donner",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Recevoir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Ouvrir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Fermer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Penser",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Savoir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Ne pas savoir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Chercher / Trouver",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Perdre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Aider",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Laver",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Cuisiner",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Chanter",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Danser",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Utiliser",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Faire / Créer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Appeler / Chanter",
       "note": "Chanson / Nom",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Attraper / Saisir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Poser / Laisser",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Entrer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Sortir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Monter",
       "note": "Dans un véhicule",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Descendre",
       "note": "D'un véhicule",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Envoyer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Remettre",
       "note": "Soumission",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Aller / Se passer",
       "note": "Salutations",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Commencer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Finir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Se reposer",
       "note": "Repos",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Demander",
       "note": "Question",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Répondre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Promettre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "S'inquiéter",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Croire",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Douter",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Désirer / Espérer",
       "note": "Espoir",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Rêver",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Se battre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Gagner",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Perdre",
       "note": "Défaite",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Grandir",
       "note": "Croissance",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Vivre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Mourir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Ramasser",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Jeter",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Cacher",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Chercher",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Choisir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Changer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Commander",
       "note": "Achat d'articles",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Préparer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Attraper",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Lancer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Tirer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Pousser",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Réparer",
       "note": "Réparation",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Casser",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Être malade / Avoir mal",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Soigner",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Faire de l'exercice",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Nager",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Voyager",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Conduire",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Nettoyer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Faire la vaisselle",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Faire la lessive",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Se doucher",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Se brosser les dents",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Se réveiller / Se lever",
       "note": "Réveil",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Se coucher",
       "note": "Sommeil",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Comprendre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     },
     {
       "text": "Se souvenir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verbe"
     }
   ]
 }

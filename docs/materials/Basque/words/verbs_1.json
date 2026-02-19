@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "Oinarrizko Aditzak 100",
-  "pos": "verb",
   "entries": [
     {
       "text": "Joan",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Etortzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Jatea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Edatea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Lo egitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ikustea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Erostea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Saltzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Irakurtzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Idaztea",
       "note": "Writing",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Entzutea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Hitz egitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Egitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Lan egitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ikastea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Irakastea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ikastea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Itxarotea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Elkartzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Maitatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Gustatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ez gustatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Barre egitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Negar egitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Oinez ibiltzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Korrika egitea",
       "note": "Running",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Esertea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Zutik egotea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ematzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Jasotzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Irekitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ixtea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Pentsatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Jakitzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ez jakitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Aurkitzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Galtzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Laguntzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Garbitzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Sukaldatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Kantatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Dantzatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Erabiltzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Egitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Deitzea",
       "note": "Song / Name",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Harrapatzea / eustea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Jartzea / uztea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Sartzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Irteera",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Igotzea",
       "note": "Boarding",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Jaistea",
       "note": "Alighting",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Bidaltzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Bidaltzea",
       "note": "Submission",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Elkarrekin moldatzea",
       "note": "Greetings",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Hasten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Amaitzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Atseden hartzea",
       "note": "Relax",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Galdetzea",
       "note": "Question",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Erantzutea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Agintzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Kezkatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Sinestea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Zalantzan jartzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Desiratzea / espero izatea",
       "note": "Hope",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Amets egitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Borrokatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Irabaztea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Galtzea",
       "note": "Defeat",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Haztea",
       "note": "Growth",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Bizitzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Hiltzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Hartzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Botatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ezkutatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Bilatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Hautatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Aldatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Eskaera egitea",
       "note": "Buying items",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Prestatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Harrapatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Botatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Tiratzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Bultzatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Konpontzea / berritzea",
       "note": "Repair",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Hautsitzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Gaixotzea / zauritzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Tratatzea / sendatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ariketa fisikoa egitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Igerian egitea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Bidaiatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Gidatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Garbitzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Platerak garbitzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Arropa garbitzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Dutxatzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Hortzak garbitzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Esnatzea",
       "note": "Wake up",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ohera joatea",
       "note": "Sleeping",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ulertzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Gogoratzea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

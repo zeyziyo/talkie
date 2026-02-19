@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Pamata Lietvārdi 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Persona",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ūdens",
       "note": "Dzeramais ūdens",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Rīsi / Ēdiens",
       "note": "Ēdiens",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Maize",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ābols",
       "note": "Auglis",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Piens",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Gaļa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Drēbes",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Māja",
       "note": "Mājoklis",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Istaba",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Logs",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Durvis",
       "note": "Ieeja",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Rakstāmgalds",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Krēsls",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dators",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Telefons",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Grāmata",
       "note": "Bibliotēka",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Zīmulis",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Papīrs",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Soma",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Skola",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Uzņēmums",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Slimnīca",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Aptieka",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Restorāns",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tirgus",
       "note": "Tirdzniecības vieta",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Metro",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Autobuss",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Taksometrs",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Lidmašīna",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Vilciens",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Velosipēds",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ceļš",
       "note": "Ceļš",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kalns",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Jūra",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Upe",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Debesis",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Saule / Gads",
       "note": "Saule / Gads",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mēness",
       "note": "Satelīts",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Zvaigzne",
       "note": "Debess ķermenis",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Koks",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Puķe",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kucēns",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kaķis",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Nauda",
       "note": "Skaidra nauda",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Laiks",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Šodien",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Rīt",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Vakar",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Draugs",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

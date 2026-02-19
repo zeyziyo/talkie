@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Grunnatriði nafnorða 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Manneskja",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Vatn",
       "note": "Drykkjarvatn",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Hrísgrjón / Máltíð",
       "note": "Máltíð",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Brauð",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Epli",
       "note": "Ávöxtur",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mjólk",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kjöt",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Föt",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Hús",
       "note": "Húsnæði",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Herbergi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Gluggi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dyr",
       "note": "Inngangur",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Skrifborð",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Stóll",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tölva",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sími",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bók",
       "note": "Bókasafn",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Blýantur",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Pappír",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Taska",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Skóli",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Fyrirtæki",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sjúkrahús",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Apótek",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Veitingastaður",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Markaður",
       "note": "Markaðstorg",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Neðanjarðarlest",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Strætó",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Leigubíll",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Flugvél",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Lest",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Reiðhjól",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Vegur",
       "note": "Vegur",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Fjall",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sjór",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Fljót",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Himinn",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sól / Ár",
       "note": "Sól / Ár",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tungl",
       "note": "Gervihnöttur",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Stjarna",
       "note": "Himinfyrirbæri",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tré",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Blóm",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Hvolpur",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Köttur",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Peningar",
       "note": "Fé",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tími",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Í dag",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Á morgun",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Í gær",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Vinur",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

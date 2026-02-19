@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "Basiswerkwoorden 100",
-  "pos": "verb",
   "entries": [
     {
       "text": "Gaan",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Komen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Eten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Drinken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Slapen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Zien",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Kopen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Verkopen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Lezen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Schrijven",
       "note": "Schrift",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Luisteren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Spreken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Doen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Werken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Studeren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Onderwijzen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Leren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Wachten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ontmoeten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Liefhebben",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Houden van",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Haten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Lachen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Huilen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Lopen / Wandelen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Rennen",
       "note": "Rennen",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Zitten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Staan",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Geven",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ontvangen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Openen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Sluiten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Denken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Weten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Niet weten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Zoeken / Vinden",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Verliezen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Helpen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Wassen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Koken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Zingen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Dansen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Gebruiken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Maken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Roepen / Zingen",
       "note": "Lied / Naam",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Vangen / Vasthouden",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Leggen / Laten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Binnengaan",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Naar buiten gaan",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Instappen",
       "note": "In een voertuig",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Uitstappen",
       "note": "Uit een voertuig",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Sturen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Indienen",
       "note": "Indiening",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Gaan",
       "note": "Groet",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Beginnen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Beëindigen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Rusten",
       "note": "Rust",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Vragen",
       "note": "Vraag",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Antwoorden",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Beloven",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Zich zorgen maken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Geloven",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Twijfelen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Wensen / Hopen",
       "note": "Hoop",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Dromen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Vechten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Winnen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Verliezen",
       "note": "Nederlaag",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Groeien",
       "note": "Groei",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Leven / Wonen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Sterven",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Oprapen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Weggooien",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Verbergen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Zoeken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Selecteren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Veranderen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Bestellen",
       "note": "Aankoop van artikelen",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Voorbereiden",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Vangen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Gooien",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Trekken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Duwen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Herstellen",
       "note": "Reparatie",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Breken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Ziek zijn / Pijn doen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Behandelen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Sporten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Zwemmen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Reizen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Rijden",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Schoonmaken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "De afwas doen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "De was doen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Douchen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Tanden poetsen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Opstaan",
       "note": "Ontwaken",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Naar bed gaan",
       "note": "Slaap",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Begrijpen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "Onthouden",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

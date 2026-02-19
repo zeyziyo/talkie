@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "Verbs 1",
-  "pos": "Verb",
   "entries": [
     {
       "text": "To go",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To come",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To eat",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To drink",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To sleep",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To see",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To buy",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To sell",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To read",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To write",
       "note": "Writing",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To listen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To speak",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To do",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To work",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To study",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To teach",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To learn",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To wait",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To meet",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To love",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To like",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To dislike",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To laugh",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To cry",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To walk",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To run",
       "note": "Running",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To sit",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To stand",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To give",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To receive",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To open",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To close",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To think",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To know",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To not know",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To find",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To lose",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To help",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To wash",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To cook",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To sing",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To dance",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To use",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To make",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To call",
       "note": "Song / Name",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To catch / hold",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To put / leave",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To enter",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To exit",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To get on",
       "note": "Boarding",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To get off",
       "note": "Alighting",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To send",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To submit",
       "note": "Submission",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To get along",
       "note": "Greetings",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To start",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To end",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To rest",
       "note": "Relax",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To ask",
       "note": "Question",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To answer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To promise",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To worry",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To believe",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To doubt",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To wish / hope",
       "note": "Hope",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To dream",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To fight",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To win",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To lose",
       "note": "Defeat",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To grow",
       "note": "Growth",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To live",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To die",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To pick up",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To throw away",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To hide",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To search",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To select",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To change",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To order",
       "note": "Buying items",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To prepare",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To catch",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To throw",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To pull",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To push",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To fix / repair",
       "note": "Repair",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To break",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To be sick / hurt",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To treat / cure",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To exercise",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To swim",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To travel",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To drive",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To clean",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To wash dishes",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To do laundry",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To take a shower",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To brush teeth",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To wake up",
       "note": "Wake up",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To go to bed",
       "note": "Sleeping",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To understand",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "To remember",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     }
   ]
 }

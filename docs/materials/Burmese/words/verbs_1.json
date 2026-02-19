@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "အခြေခံကြိယာ ၁၀၀ ခု",
-  "pos": "verb",
   "entries": [
     {
       "text": "သွားသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "လာသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "စားသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "သောက်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "အိပ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ကြည့်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ဝယ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ရောင်းသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ဖတ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ရေးသည်",
       "note": "စာရေးခြင်း",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "နားထောင်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပြောသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "လုပ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "အလုပ်လုပ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "လေ့လာသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "သင်ကြားသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "သင်ယူသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "စောင့်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "တွေ့ဆုံသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ချစ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ကြိုက်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "မုန်းသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ရယ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ငိုသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "လမ်းလျှောက်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပြေးသည်",
       "note": "အပြေးလေ့ကျင့်ခြင်း",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ထိုင်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "မတ်တပ်ရပ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပေးသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "လက်ခံသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ဖွင့်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပိတ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "စဉ်းစားသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "သိသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "မသိပါ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ရှာသည် / တွေ့သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပျောက်ဆုံးသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ကူညီသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ဆေးကြောသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ချက်ပြုတ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "သီချင်းဆိုသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ကသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "အသုံးပြုသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပြုလုပ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ခေါ်သည် / သီဆိုသည်",
       "note": "သီချင်း / နာမည်",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ကိုင်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ချထားသည် / လွှတ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ဝင်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ထွက်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "တက်သည်",
       "note": "ယာဉ်",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ဆင်းသည်",
       "note": "ယာဉ်",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပို့သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "တင်ပြသည်",
       "note": "တင်ပြချက်",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "နေကောင်းသည်",
       "note": "နှုတ်ဆက်ခြင်း",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "စတင်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပြီးဆုံးသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "အနားယူသည်",
       "note": "အနားယူခြင်း",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "မေးသည်",
       "note": "မေးခွန်း",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ဖြေသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ကတိပေးသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "စိုးရိမ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ယုံကြည်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "သံသယဖြစ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "မျှော်လင့်သည်",
       "note": "မျှော်လင့်ချက်",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "အိပ်မက်မက်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ရန်ဖြစ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "နိုင်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ရှုံးသည်",
       "note": "ရှုံးနိမ့်မှု",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ကြီးထွားသည်",
       "note": "ကြီးထွားမှု",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "နေထိုင်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "သေသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ကောက်ယူသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "စွန့်ပစ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ဖုံးကွယ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ရှာဖွေသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ရွေးချယ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပြောင်းလဲသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "မှာယူသည်",
       "note": "ကုန်ပစ္စည်းမှာယူခြင်း",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပြင်ဆင်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ဖမ်းသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပစ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ဆွဲသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "တွန်းသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပြင်ဆင်သည်",
       "note": "ပြုပြင်ခြင်း",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပျက်စီးသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "နာကျင်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ကုသသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "လေ့ကျင့်ခန်းလုပ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ရေကူးသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ခရီးသွားသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "မောင်းနှင်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "သန့်ရှင်းရေးလုပ်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ပန်းကန်ဆေးသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "အဝတ်လျှော်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ရေချိုးသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "သွားတိုက်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "နိုးသည်",
       "note": "နိုးထခြင်း",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "အိပ်ရန်သွားသည်",
       "note": "အိပ်စက်ခြင်း",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "နားလည်သည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "မှတ်မိသည်",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

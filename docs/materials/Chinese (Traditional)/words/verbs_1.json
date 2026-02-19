@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "動詞 1",
-  "pos": "動詞",
   "entries": [
     {
       "text": "去",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "來",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "吃",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "喝",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "睡覺",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "看",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "買",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "賣",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "讀",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "寫",
       "note": "寫字",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "聽",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "說",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "做",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "工作",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "學習",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "教",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "學",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "等",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "見",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "愛",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "喜歡",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "討厭",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "笑",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "哭",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "走",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "跑",
       "note": "跑步",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "坐",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "站",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "給",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "收",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "開",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "關",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "想",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "知道",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "不知道",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "找",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "丟",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "幫",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "洗",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "做飯",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "唱歌",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "跳舞",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "用",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "做",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "叫",
       "note": "歌曲 / 名字",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "抓",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "放",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "進",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "出",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "乘",
       "note": "乘車",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "下",
       "note": "下車",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "送",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "付",
       "note": "提交",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "過",
       "note": "問候",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "開始",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "結束",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "歇",
       "note": "休息",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "問",
       "note": "語言提問",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "答",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "約",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "愁",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "信",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "疑",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "願 / 望",
       "note": "希望",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "夢",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "吵",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "贏",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "輸",
       "note": "失敗",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "長",
       "note": "成長",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "活 / 住",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "死",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "撿",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "扔",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "藏",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "搜",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "選",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "換",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "訂",
       "note": "購買物品",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "准",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "抓",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "扔",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "拉",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "推",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "修",
       "note": "修理",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "壞",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "疼 / 病",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "治",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "運",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "泳",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "旅",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "開",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "掃",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "洗",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "洗",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "洗",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "刷",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "起",
       "note": "起床",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "睡",
       "note": "就寢",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "懂",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "記",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     }
   ]
 }

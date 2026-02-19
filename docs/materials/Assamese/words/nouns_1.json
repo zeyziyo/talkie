@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "মৌলিক বিশেষ্য 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "ব্যক্তি",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "পানী",
       "note": "খোৱাপানী",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ভাত / আহাৰ",
       "note": "আহাৰ",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "পাউৰুটি",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "আপেল",
       "note": "ফল",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "গাখীৰ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "মাংস",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "কাপোৰ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ঘৰ",
       "note": "আবাস",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "কোঠা",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "খিৰিকী",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "দুৱাৰ",
       "note": "প্ৰৱেশদ্বাৰ",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ডেস্ক",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "চকী",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "কম্পিউটাৰ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ফোন",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "কিতাপ",
       "note": "पुথিভঁৰাল",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "পেঞ্চিল",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "কাগজ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "বেগ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "স্কুল",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "কোম্পানী",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "চিকিৎসালয়",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ফাৰ্মাচী",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ৰেষ্টুৰেণ্ট",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "বজাৰ",
       "note": "Marketplace",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "মেট্ৰ’",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "বাছ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "টেক্সি",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "উৰাজাহাজ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ৰেল",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "চাইকেল",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "পথ",
       "note": "Road",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "পৰ্বত",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "সাগৰ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "নদী",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "আকাশ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "সূৰ্য / বছৰ",
       "note": "Sun / Year",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "জোন",
       "note": "Satellite",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "তৰা",
       "note": "Celestial Body",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "গছ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ফুল",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "কুকুৰ পোৱালী",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "মেকুৰী",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ধন",
       "note": "Cash",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "সময়",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "আজি",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "কালি",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "যোৱাকালি",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "বন্ধু",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

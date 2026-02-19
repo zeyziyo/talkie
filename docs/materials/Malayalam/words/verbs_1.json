@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "100 അടിസ്ഥാന ക്രിയകൾ",
-  "pos": "verb",
   "entries": [
     {
       "text": "പോകുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വരുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "കഴിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "കുടിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഉറങ്ങുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "കാണുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വാങ്ങുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വിൽക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വായിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "എഴുതുക",
       "note": "എഴുത്ത്",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "കേൾക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "സംസാരിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ചെയ്യുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ജോലി ചെയ്യുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പഠിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പഠിപ്പിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പഠിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "കാത്തിരിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "കണ്ടുമുട്ടുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "സ്നേഹിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഇഷ്ടപ്പെടുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വെറുക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ചിരിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "കരയുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "നടക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഓടുക",
       "note": "ഓട്ടം",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഇരിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "നിൽക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "നൽകുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "സ്വീകരിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "തുറക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "അടയ്ക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ചിന്തിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "അറിയുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "അറിയാതിരിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "അന്വേഷിക്കുക / കണ്ടെത്തുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "നഷ്ടപ്പെടുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "സഹായിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "കഴുകുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പാചകം ചെയ്യുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പാടുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "നൃത്തം ചെയ്യുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഉപയോഗിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഉണ്ടാക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വിളിക്കുക / പാടുക",
       "note": "പാട്ട് / പേര്",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പിടിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വെക്കുക / ഉപേക്ഷിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "അകത്ത് കടക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പുറത്ത് പോകുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "കയറുക",
       "note": "വാഹനം",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഇറങ്ങുക",
       "note": "വാഹനം",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "അയക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "സമർപ്പിക്കുക",
       "note": "സമർപ്പണം",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "സുഖമാണോ",
       "note": "അഭിവാദ്യം",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ആരംഭിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "അവസാനിപ്പിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വിശ്രമിക്കുക",
       "note": "വിശ്രമം",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ചോദിക്കുക",
       "note": "ചോദ്യം",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "മറുപടി പറയുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വാഗ്ദാനം ചെയ്യുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വിഷമിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വിശ്വസിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "സംശയിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ആഗ്രഹിക്കുക / പ്രത്യാശിക്കുക",
       "note": "പ്രത്യാശ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "സ്വപ്നം കാണുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വഴക്കിടുക / പൊരുതുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ജയിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "തോൽക്കുക",
       "note": "പരാജയം",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വളരുക",
       "note": "വളർച്ച",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ജീവിക്കുക / വസിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "മരിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "എടുക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "എറിഞ്ഞുകളയുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഒളിപ്പിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "തിരയുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "തിരഞ്ഞെടുക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "മാറ്റുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഓർഡർ ചെയ്യുക",
       "note": "സാധനങ്ങൾ വാങ്ങൽ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "തയ്യാറാക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പിടിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "എറിയുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വലിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "തള്ളുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "നന്നാക്കുക",
       "note": "അറ്റകുറ്റപ്പണി",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പൊട്ടിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "അസുഖം വരിക / വേദനിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ചികിത്സിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വ്യായാമം ചെയ്യുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "നീന്തുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "യാത്ര ചെയ്യുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഓടിക്കുക (വാഹനം)",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "വൃത്തിയാക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പാത്രം കഴുകുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "അലക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "കുളിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "പല്ല് തേക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഉണരുക / എഴുന്നേൽക്കുക",
       "note": "ഉണരൽ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഉറങ്ങാൻ പോകുക",
       "note": "ഉറക്കം",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "മനസ്സിലാക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ഓർമ്മിക്കുക",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

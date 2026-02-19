@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Enwau Sylfaenol 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Person",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dŵr",
       "note": "Drinking water",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Reis / Pryd",
       "note": "Meal",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bara",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Afal",
       "note": "Fruit",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Llaeth",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Cig",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dillad",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tŷ",
       "note": "Housing",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ystafell",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ffenestr",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Drws",
       "note": "Entrance",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Desg",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Cadair",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Cyfrifiadur",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ffôn",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Llyfr",
       "note": "Library",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Pensil",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Papur",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bag",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ysgol",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Cwmni",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ysbyty",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Fferyllfa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bwyty",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Marchnad",
       "note": "Marketplace",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Isffordd",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bws",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tacsi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Awyren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Trên",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Beic",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ffordd",
       "note": "Road",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mynydd",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Môr",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Afon",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Awyr",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Haul / Blwyddyn",
       "note": "Sun / Year",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Lleuad",
       "note": "Satellite",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Seren",
       "note": "Celestial Body",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Pren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Blodyn",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ci bach",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Cath",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Arian",
       "note": "Cash",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Amser",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Heddiw",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Yfory",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ddoe",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ffrind",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

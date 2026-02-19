@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "ମୂଳ କ୍ରିୟା 100",
-  "pos": "verb",
   "entries": [
     {
       "text": "ଯିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଆସିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଖାଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ପିଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଶୋଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଦେଖିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "କିଣିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବିକ୍ରି କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ପଢିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଲେଖିବା ପାଇଁ",
       "note": "Writing",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଶୁଣିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "କହିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "କାମ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଅଧ୍ୟୟନ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଶିକ୍ଷା ଦେବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଶିଖିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଅପେକ୍ଷା କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଭେଟିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଭଲ ପାଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ପସନ୍ଦ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଅପସନ୍ଦ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ହସିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "କାନ୍ଦିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଚାଲିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଦୌଡିବା ପାଇଁ",
       "note": "Running",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବସିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଠିଆ ହେବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଦେବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଗ୍ରହଣ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଖୋଲିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବନ୍ଦ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଭାବିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଜାଣିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଜାଣିବା ନାହିଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଖୋଜିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ହରାଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ସାହାଯ୍ୟ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଧୋଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ରାନ୍ଧିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଗୀତ ଗାଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ନାଚିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବ୍ୟବହାର କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ତିଆରି କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଡାକିବା ପାଇଁ",
       "note": "Song / Name",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଧରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ରଖିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ପ୍ରବେଶ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବାହାରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଚଢିବା ପାଇଁ",
       "note": "Boarding",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଓହ୍ଲାଇବା ପାଇଁ",
       "note": "Alighting",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ପଠାଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଦାଖଲ କରିବା ପାଇଁ",
       "note": "Submission",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ମିଳିମିଶି ରହିବା ପାଇଁ",
       "note": "Greetings",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଆରମ୍ଭ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଶେଷ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବିଶ୍ରାମ କରିବା ପାଇଁ",
       "note": "Relax",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ପଚାରିବା ପାଇଁ",
       "note": "Question",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଉତ୍ତର ଦେବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ପ୍ରତିଜ୍ଞା କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଚିନ୍ତା କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବିଶ୍ୱାସ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ସନ୍ଦେହ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଇଚ୍ଛା କରିବା ପାଇଁ",
       "note": "Hope",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ସ୍ୱପ୍ନ ଦେଖିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଲଢିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଜିତିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ହାରିବା ପାଇଁ",
       "note": "Defeat",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବଢିବା ପାଇଁ",
       "note": "Growth",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବାଞ୍ଚିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ମରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଉଠାଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଫିଙ୍ଗି ଦେବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଲୁଚାଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଖୋଜିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଚୟନ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ପରିବର୍ତ୍ତନ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଅର୍ଡର କରିବା ପାଇଁ",
       "note": "Buying items",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ପ୍ରସ୍ତୁତ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଧରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଫିଙ୍ଗିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଟାଣିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଠେଲିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ସଜାଡିବା ପାଇଁ",
       "note": "Repair",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଭାଙ୍ଗିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଅସୁସ୍ଥ ହେବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଚିକିତ୍ସା କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବ୍ୟାୟାମ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ପହଁରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଭ୍ରମଣ କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଗାଡି ଚଳାଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ସଫା କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବାସନ ମାଜିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଲୁଗା ସଫା କରିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଗାଧୋଇବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଦାନ୍ତ ଘଷିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଉଠିବା ପାଇଁ",
       "note": "Wake up",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ଶୋଇବାକୁ ଯିବା ପାଇଁ",
       "note": "Sleeping",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ବୁଝିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ମନେ ରଖିବା ପାଇଁ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Alapfőnevek 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Személy",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Víz",
       "note": "Ivóvíz",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Étkezés / Rizs",
       "note": "Étkezés",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kenyér",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Alma",
       "note": "Gyümölcs",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tej",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Hús",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ruha",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ház",
       "note": "Lakás",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Szoba",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ablak",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ajtó",
       "note": "Bejárat",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Íróasztal",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Szék",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Számítógép",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Telefon",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Könyv",
       "note": "Könyv",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ceruza",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Papír",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Táska",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Iskola",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Cég",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kórház",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Gyógyszertár",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Étterem",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Piac",
       "note": "Piac",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Metró",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Busz",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Taxi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Repülőgép",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Vonat",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kerékpár",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Út",
       "note": "Út",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Hegy",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tenger",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Folyó",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Égbolt",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Nap / Év",
       "note": "Nap / Év",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Hold",
       "note": "Hold",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Csillag",
       "note": "Égitest",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Fa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Virág",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kiskutya",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Macska",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Pénz",
       "note": "Készpénz",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Idő",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ma",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Holnap",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tegnap",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Barát",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

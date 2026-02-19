@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "བྱ་ཚིག་གཞི་རིམ་ ༡༠༠",
-  "pos": "verb",
   "entries": [
     {
       "text": "འགྲོ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཡོང་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཟ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཐུང་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཉལ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "མཐོང་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཉོ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཚོང་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཀློག་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འབྲི་བ།",
       "note": "Writing",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཉན་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "བཤད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ལས་ཀ་བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སློབ་སྦྱོང་བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སློབ་ཁྲིད་བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སློབ་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སྒུག་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཐུག་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "དགའ་པོ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "མོས་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "མི་དགའ་པོ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "དགོད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ངུ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འགྲོ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "རྒྱུག་པ།",
       "note": "Running",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སྡོད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ལངས་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སྤྲོད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ལེན་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཁ་ཕྱེ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "རྒྱག་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "བསམ་བློ་གཏོང་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཤེས་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "མི་ཤེས་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "རྙེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "བརླག་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "རོགས་བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཁྲུད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "གཡོས་སྦྱོར་བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "གླུ་ལེན་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཞབས་བྲོ་འཁྲབ་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "བེད་སྤྱོད་གཏོང་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "བཟོ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འབོད་པ།",
       "note": "Song / Name",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཛིན་པ / འཇུ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཇོག་པ / འདོར་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ནང་དུ་འཛུལ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཕྱིར་ཐོན་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ནང་འཛུལ་བ།",
       "note": "Boarding",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "མར་འབབ་པ།",
       "note": "Alighting",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སྐུར་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སྤྲོད་པ།",
       "note": "Submission",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "མཐུན་པ།",
       "note": "Greetings",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འགོ་འཛུགས་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "མཇུག་སྡུད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ངལ་གསོ་བ།",
       "note": "Relax",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འདྲི་བ།",
       "note": "Question",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ལན་རྒྱག་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཁས་ལེན་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སེམས་ཁྲལ་བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཡིད་ཆེས་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཐེ་ཚོམ་བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "རེ་བ་ / སྨོན་ལམ་འདེབས་པ།",
       "note": "Hope",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "རྨི་ལམ་རྨི་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཐབ་འཛིང་བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "རྒྱལ་ཁ་ཐོབ་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཕམ་ཁ་ཐེབས་པ།",
       "note": "Defeat",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སྐྱེ་བ།",
       "note": "Growth",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཚོ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཆི་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ལེན་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "དོར་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སྦེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཚོལ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འདེམས་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "བསྒྱུར་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "མངགས་པ།",
       "note": "Buying items",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "གྲ་སྒྲིག་བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཛིན་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཕེན་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འཐེན་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སྐྱོར་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཉམས་གསོ་བྱེད་པ / བཟོ་བཅོས་བྱེད་པ།",
       "note": "Repair",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "གས་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ན་བ / རྨས་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སྨན་བཅོས་བྱེད་པ / དྲག་སྐྱེད་གཏོང་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ལུས་སྦྱོང་བྱེད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "རྐྱལ་རྐྱལ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "འགྲུལ་བཞུད་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "རླངས་འཁོར་གཏོང་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "གཙང་མ་བཟོ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཕོར་པ་འཁྲུ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "གོས་འཁྲུ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཆུ་འཁྲུ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "སོ་འཁྲུ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཡར་ལངས་པ།",
       "note": "Wake up",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ཉལ་ཁྲིར་འགྲོ་བ།",
       "note": "Sleeping",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "གོ་བ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "དྲན་པ།",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

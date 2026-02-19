@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "ମୌଳିକ ବିଶେଷ୍ୟ 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "ଲୋକ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ପାଣି",
       "note": "Drinking water",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଭାତ / ଖାଦ୍ୟ",
       "note": "Meal",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ପାଉଁରୁଟି",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଆପେଲ୍",
       "note": "Fruit",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "କ୍ଷୀର",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ମାଂସ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ପୋଷାକ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଘର",
       "note": "Housing",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "କୋଠରୀ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଝରକା",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଦ୍ୱାର",
       "note": "Entrance",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଡେସ୍କ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଚେୟାର୍",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "କମ୍ପ୍ୟୁଟର୍",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଫୋନ୍",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ବହି",
       "note": "Library",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ପେନ୍ସିଲ୍",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "କାଗଜ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ବ୍ୟାଗ୍",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ବିଦ୍ୟାଳୟ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "କମ୍ପାନୀ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଡାକ୍ତରଖାନା",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଫାର୍ମାସି",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ରେଷ୍ଟୁରାଣ୍ଟ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ବଜାର",
       "note": "Marketplace",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ସବୱେ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ବସ୍",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଟ୍ୟାକ୍ସି",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ବିମାନ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଟ୍ରେନ୍",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ସାଇକେଲ୍",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ରାସ୍ତା",
       "note": "Road",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ପର୍ବତ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ସମୁଦ୍ର",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ନଦୀ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଆକାଶ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ସୂର୍ଯ୍ୟ / ବର୍ଷ",
       "note": "Sun / Year",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଚନ୍ଦ୍ର",
       "note": "Satellite",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ତାରା",
       "note": "Celestial Body",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଗଛ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଫୁଲ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "କୁକୁର ଛୁଆ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ବିଲେଇ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଟଙ୍କା",
       "note": "Cash",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ସମୟ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଆଜି",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଆସନ୍ତାକାଲି",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ଗତକାଲି",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "ସାଙ୍ଗ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Danh từ 1",
-  "pos": "Danh từ",
   "entries": [
     {
       "text": "tôi / mình",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "bạn / anh / chị",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "cái này",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "cái kia",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "ai",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "cái gì",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "ở đâu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "khi nào",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "tại sao",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "như thế nào",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "người",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "bạn bè",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "gia đình",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "tên",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "nhà",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "trường học",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "công ty",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "bệnh viện",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "chợ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "nhà hàng",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "quán cà phê",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "nhà vệ sinh",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "sách",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "nước",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "thức ăn",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "tiền",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "quần áo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "giày dép",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "túi xách",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "đồng hồ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "điện thoại",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "máy tính",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "xe hơi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "mặt trăng",
       "note": "nguyệt",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "ngôi sao",
       "note": "vũ trụ",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "mặt trời",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "bầu trời",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "biển",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "núi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "hoa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "cây",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "chó",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "mèo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "hôm nay",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "ngày mai",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "hôm qua",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "bây giờ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "thời gian",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "ngày",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     },
     {
       "text": "đêm",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Danh từ"
     }
   ]
 }

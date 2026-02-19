@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Основни Именки 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Лице",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Вода",
       "note": "Drinking water",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ориз / Јадење",
       "note": "Meal",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Леб",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Јаболко",
       "note": "Fruit",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Млеко",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Месо",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Облека",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Куќа",
       "note": "Housing",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Соба",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Прозорец",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Врата",
       "note": "Entrance",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Биро",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Стол",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Компјутер",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Телефон",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Книга",
       "note": "Library",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Молив",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Хартија",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Торба",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Училиште",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Компанија",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Болница",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Аптека",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ресторан",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Пазар",
       "note": "Marketplace",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Метро",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Автобус",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Такси",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Авион",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Воз",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Велосипед",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Пат",
       "note": "Road",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Планина",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Море",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Река",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Небо",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сонце / Година",
       "note": "Sun / Year",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Месечина",
       "note": "Satellite",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ѕвезда",
       "note": "Celestial Body",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дрво",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Цвет",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Кутре",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Мачка",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Пари",
       "note": "Cash",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Време",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Денес",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Утре",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Вчера",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Пријател",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

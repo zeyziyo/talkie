@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "මූලික ක්‍රියාපද 100",
-  "pos": "verb",
   "entries": [
     {
       "text": "යනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "එනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "කනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "බොනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "නිදාගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "බලනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "මිලදී ගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "විකුණනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "කියවනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ලියනවා",
       "note": "ලේඛනය",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අහනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "කතා කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "වැඩ කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ඉගෙන ගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "උගන්වනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ඉගෙන ගන්නවා (ප්‍රගුණ කරනවා)",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "බලා සිටිනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "හමු වෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ආදරය කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "කැමති වෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "වෛර කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "හිනා වෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අඬනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ඇවිදිනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "දුවනවා",
       "note": "දිවීම",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ඉඳගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "හිටගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "දෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ලැබෙනවා / පිළිගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අරිනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "වහනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "හිතනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "දන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "දන්නේ නැහැ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "සොයනවා / හමු වෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "නැති වෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "උදවු කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "සෝදනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "උයනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "සිංදු කියනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "නටනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "භාවිතා කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "හදනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අමතනවා / කියනවා",
       "note": "ගීතය / නම",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අල්ලනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "තබනවා / අත්හරිනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ඇතුල් වෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "පිටව යනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "නගිනවා",
       "note": "වාහනය",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "බහිනවා",
       "note": "වාහනය",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "යවනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ඉදිරිපත් කරනවා",
       "note": "ඉදිරිපත් කිරීම",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "සැප සනීප",
       "note": "සම්භාෂණය",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ආරම්භ කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අවසන් කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "විවේක ගන්නවා",
       "note": "විවේකය",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අසනවා",
       "note": "ප්‍රශ්නය",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "පිළිතුරු දෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "පොරොන්දු වෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "කනස්සල්ලට පත් වෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "විශ්වාස කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "සැක කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ප්‍රාර්ථනා කරනවා / බලාපොරොත්තු වෙනවා",
       "note": "බලාපොරොත්තුව",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "හීන දකිනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "රණ්ඩු වෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "දිනනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "පරදිනවා",
       "note": "පරාජය",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "වැඩෙනවා",
       "note": "වර්ධනය",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ජීවත් වෙනවා / පදිංචි වී සිටිනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "මිය යනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අහුලා ගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "විසි කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "සඟවනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "සොයනවා (අන්වේෂණය)",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "තෝරා ගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "වෙනස් කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ඇණවුම් කරනවා",
       "note": "භාණ්ඩ මිලදී ගැනීම",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "සූදානම් කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අල්ලා ගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "විසි කරනවා (ගසනවා)",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අදිනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "තල්ලු කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අලුත්වැඩියා කරනවා",
       "note": "අලුත්වැඩියාව",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "කඩනවා / කැඩෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අසනීප වෙනවා / රිදෙනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ප්‍රතිකාර කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ව්‍යායාම කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "පීනනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "සංචාරය කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ධාවනය කරනවා (වාහන)",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "පිරිසිදු කරනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "භාජන සෝදනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "රෙදි සෝදනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "නානවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "දත් මදිනවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "අවදි වෙනවා / නැගිටිනවා",
       "note": "අවදි වීම",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "නිදාගන්න යනවා",
       "note": "නිද්‍රාව",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "තේරුම් ගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "මතක තබා ගන්නවා",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

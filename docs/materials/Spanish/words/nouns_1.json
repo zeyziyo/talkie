@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Sustantivos 1",
-  "pos": "Sustantivo",
   "entries": [
     {
       "text": "Persona",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Agua",
       "note": "Agua potable",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Comida / Arroz",
       "note": "Comida",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Pan",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Manzana",
       "note": "Fruta",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Leche",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Carne",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Ropa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Casa",
       "note": "Vivienda",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Habitación",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Ventana",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Puerta",
       "note": "Entrada",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Escritorio",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Silla",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Computadora",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Teléfono",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Libro",
       "note": "Libro",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Lápiz",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Papel",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Bolso / Mochila",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Escuela",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Empresa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Hospital",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Farmacia",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Restaurante",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Mercado",
       "note": "Mercado",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Metro",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Autobús",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Taxi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Avión",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Tren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Bicicleta",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Camino",
       "note": "Carretera",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Montaña",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Mar",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Río",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Cielo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Sol / Año",
       "note": "Sol / Año",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Luna",
       "note": "Satélite",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Estrella",
       "note": "Cuerpo celeste",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Árbol",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Flor",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Cachorro",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Gato",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Dinero",
       "note": "Efectivo",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Tiempo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Hoy",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Mañana",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Ayer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     },
     {
       "text": "Amigo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Sustantivo"
     }
   ]
 }

@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Негизги зат атоочтор 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Адам",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Суу",
       "note": "Ичүүчү суу",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Күрүч / Тамак",
       "note": "Тамак",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Нан",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Алма",
       "note": "Мөмө-жемиш",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сүт",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Эт",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Кийим",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Үй",
       "note": "Тура жай",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Бөлмө",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Терезе",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Эшик",
       "note": "Кире бериш",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Парта",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Орундук",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Компьютер",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Телефон",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Китеп",
       "note": "Китепкана",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Калем сап",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Кагаз",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сумка",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Мектеп",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Компания",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Оорукана",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дарыкана",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ресторан",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Базар",
       "note": "Соода жайы",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Метро",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Автобус",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Такси",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Учак",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Поезд",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Велосипед",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Жол",
       "note": "Жол",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Тоо",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Деңиз",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дарыя",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Асман",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Күн / Жыл",
       "note": "Күн / Жыл",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ай",
       "note": "Спутник",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Жылдыз",
       "note": "Асман телосу",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дарак",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Гүл",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Күчүк",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Мышык",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Акча",
       "note": "Накталай",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Убакыт",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Бүгүн",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Эртең",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Кечээ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дос",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

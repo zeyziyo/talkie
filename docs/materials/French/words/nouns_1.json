@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Noms 1",
-  "pos": "Nom",
   "entries": [
     {
       "text": "Personne",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Eau",
       "note": "Eau potable",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Repas / Riz",
       "note": "Repas",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Pain",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Pomme",
       "note": "Fruit",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Lait",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Viande",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Vêtements",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Maison",
       "note": "Habitation",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Chambre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Fenêtre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Porte",
       "note": "Entrée",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Bureau",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Chaise",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Ordinateur",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Téléphone",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Livre",
       "note": "Livre",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Crayon",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Papier",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Sac",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "École",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Entreprise",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Hôpital",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Pharmacie",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Restaurant",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Marché",
       "note": "Marché",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Métro",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Bus",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Taxi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Avion",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Train",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Vélo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Chemin",
       "note": "Route",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Montagne",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Mer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Rivière",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Ciel",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Soleil / An",
       "note": "Soleil / An",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Lune",
       "note": "Satellite",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Étoile",
       "note": "Corps céleste",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Arbre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Fleur",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Chiot",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Chat",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Argent",
       "note": "Espèces",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Temps",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Aujourd'hui",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Demain",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Hier",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     },
     {
       "text": "Ami",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Nom"
     }
   ]
 }

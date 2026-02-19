@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "Verben 1",
-  "pos": "Verb",
   "entries": [
     {
       "text": "Gehen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Kommen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Essen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Trinken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Schlafen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Sehen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Kaufen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Verkaufen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Lesen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Schreiben",
       "note": "Handgeschrieben",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Hören",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Sprechen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Tun",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Arbeiten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Studieren / Lernen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Lehren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Lernen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Warten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Treffen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Lieben",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Mögen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Hassen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Lachen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Weinen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Gehen / Laufen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Rennen",
       "note": "Laufen",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Sitzen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Stehen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Geben",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Erhalten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Öffnen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Schließen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Denken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Wissen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Nicht wissen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Suchen / Finden",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Verlieren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Helfen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Waschen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Kochen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Singen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Tanzen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Benutzen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Machen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Rufen / Singen",
       "note": "Lied / Name",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Fangen / Halten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Legen / Lassen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Eintreten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Hinausgehen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Einsteigen",
       "note": "In ein Fahrzeug",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Aussteigen",
       "note": "Aus einem Fahrzeug",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Senden",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Einreichen",
       "note": "Abgabe",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Gehen",
       "note": "Befinden",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Beginnen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Beenden",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Ausruhen",
       "note": "Ruhe",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Fragen",
       "note": "Frage",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Antworten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Versprechen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Sich Sorgen machen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Glauben",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Zweifeln",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Wünschen / Hoffen",
       "note": "Hoffnung",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Träumen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Kämpfen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Gewinnen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Verlieren",
       "note": "Niederlage",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Wachsen",
       "note": "Wachstum",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Leben / Wohnen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Sterben",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Aufheben",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Wegwerfen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Verstecken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Suchen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Wählen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Ändern",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Bestellen",
       "note": "Warenkauf",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Vorbereiten",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Fangen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Werfen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Ziehen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Drücken",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Reparieren",
       "note": "Reparatur",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Zerbrechen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Krank sein / Weh tun",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Behandeln",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Sport treiben",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Schwimmen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Reisen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Fahren",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Putzen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Geschirr spülen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Wäsche waschen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Duschen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Zähne putzen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Aufwachen / Aufstehen",
       "note": "Erwachen",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Schlafen gehen",
       "note": "Nachtruhe",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Verstehen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     },
     {
       "text": "Sich erinnern",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Verb"
     }
   ]
 }

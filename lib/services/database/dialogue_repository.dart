@@ -121,17 +121,59 @@ class DialogueRepository {
 
   static Future<List<Map<String, dynamic>>> getParticipants(String dialogueId) async {
     final db = await _db;
-    return await db.query('dialogue_participants', where: 'dialogue_id = ?', whereArgs: [dialogueId]);
+    // Phase 1 Step 1: Join Helper
+    return await db.rawQuery('''
+      SELECT p.* 
+      FROM participants p
+      INNER JOIN dialogue_participants dp ON p.id = dp.participant_id
+      WHERE dp.dialogue_id = ?
+    ''', [dialogueId]);
   }
 
   static Future<void> insertParticipant(Map<String, dynamic> data) async {
     final db = await _db;
-    await db.insert('dialogue_participants', data, conflictAlgorithm: ConflictAlgorithm.replace);
+    await db.transaction((txn) async {
+      // 1. Prepare Master Participant Data
+      // data might come in as old flat format {id, dialogue_id, name...}
+      // We need to extract Master data.
+      
+      final String id = data['id'] ?? '${data['role']}_${data['name'].hashCode}'; // Fallback generation
+      final String name = data['name'];
+      final String role = data['role'];
+      
+      // Upsert into participants (Master)
+      // SQLite REPLACE works as Upsert here
+      await txn.insert('participants', {
+        'id': id,
+        'name': name,
+        'role': role,
+        'gender': data['gender'],
+        'lang_code': data['lang_code'],
+        'created_at': DateTime.now().toIso8601String(),
+      }, conflictAlgorithm: ConflictAlgorithm.replace);
+
+      // 2. Insert Link if dialogue_id is present
+      if (data.containsKey('dialogue_id')) {
+        await txn.insert('dialogue_participants', {
+          'dialogue_id': data['dialogue_id'],
+          'participant_id': id,
+          'joined_at': DateTime.now().toIso8601String(),
+        }, conflictAlgorithm: ConflictAlgorithm.ignore);
+      }
+    });
   }
 
   static Future<void> updateParticipant(String id, Map<String, dynamic> data) async {
     final db = await _db;
-    await db.update('dialogue_participants', data, where: 'id = ?', whereArgs: [id]);
+    // Logic change: updating a participant (e.g. name change) updates the Master record.
+    // This affects ALL dialogues they are in, which is the intended behavior of Normalization.
+    
+    // Filter out link-table specific fields if any
+    final masterData = Map<String, dynamic>.from(data);
+    masterData.remove('dialogue_id');
+    masterData.remove('joined_at');
+    
+    await db.update('participants', masterData, where: 'id = ?', whereArgs: [id]);
   }
 
   static Future<List<Map<String, dynamic>>> getRecordsByDialogueId(
@@ -141,39 +183,15 @@ class DialogueRepository {
   }) async {
     final db = await _db;
     
-    // Phase 129: Query from 'dialogues' table
-    // No participants join needed for basic chat display unless we really need participant metadata inline.
-    // Assuming speaker name is enough or we fetch participants separately.
-    // However, existing code might expect 'participant_id' etc.
-    // The new table `dialogues` does NOT have `participant_id` linked directly unless we added it?
-    // In migration: CREATE TABLE dialogues (id, session_id, speaker, content, translation, created_at)
-    // So 'participant_id' is lost in direct message table. Speaker name is preserved.
-    
-    final List<Map<String, dynamic>> messages = await db.rawQuery('''
-      SELECT m.* 
-      FROM dialogues m
-      WHERE m.session_id = ?
-      ORDER BY m.id ASC
-    ''', [dialogueId]);
-    
-    List<Map<String, dynamic>> results = [];
-    
-    for (var msg in messages) {
-      results.add({
-        'id': msg['id'],
-        'group_id': 0, // No group_id for dialogues
-        'source_text': msg['content'] ?? '',
-        'target_text': msg['translation'] ?? '',
-        'source_lang': sourceLang ?? 'auto', // Dialogues might not store per-msg lang anymore
-        'target_lang': targetLang ?? 'auto',
-        'speaker': msg['speaker'] ?? 'Unknown',
-        // 'participant_id': ... deprecated or lost
-        'sequence_order': msg['id'], // Use ID as sequence
-        'created_at': msg['created_at'],
-        'note': null, 
-        'is_memorized': false,
-      });
-    }
-    return results;
+    // Phase 137 Fix: Return ALL messages for the dialogue, regardless of speaker.
+    // The previous implementation might have implicitly filtered or joined incorrectly.
+    // We strictly select by session_id (dialogue_id).
+    return await db.query( 
+      'dialogues', 
+      columns: ['*'], // Select all columns: session_id, speaker, content, translation, created_at
+      where: 'session_id = ?', 
+      whereArgs: [dialogueId],
+      orderBy: 'created_at ASC, rowid ASC' // Ensure proper chronological order
+    );
   }
 }

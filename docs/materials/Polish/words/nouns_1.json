@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Podstawowe rzeczowniki 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Osoba",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Woda",
       "note": "Woda pitna",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Posiłek / Ryż",
       "note": "Posiłek",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Chleb",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Jabłko",
       "note": "Owoc",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mleko",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mięso",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ubranie",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dom",
       "note": "Mieszkanie",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Pokój",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Okno",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Drzwi",
       "note": "Wejście",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Biurko",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Krzesło",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Komputer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Telefon",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Książka",
       "note": "Książka",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ołówek",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Papier",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Torba",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Szkoła",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Firma",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Szpital",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Apteka",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Restauracja",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Targ / Rynki",
       "note": "Rynek",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Metro",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Autobus",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Taksówka",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Samolot",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Pociąg",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Rower",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Droga",
       "note": "Jezdnia",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Góra",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Morze",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Rzeka",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Niebo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Słońce / Rok",
       "note": "Słońce / Rok",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Księżyc",
       "note": "Satelita",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Gwiazda",
       "note": "Ciało niebieskie",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Drzewo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kwiat",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Szczeniak",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kot",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Pieniądze",
       "note": "Gotówka",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Czas",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dzisiaj",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Jutro",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Wczoraj",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Przyjaciel",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

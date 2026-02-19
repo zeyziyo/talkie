@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Основные существительные 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Человек",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Вода",
       "note": "Питьевая вода",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Еда / Рис",
       "note": "Еда",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Хлеб",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Яблоко",
       "note": "Фрукт",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Молоко",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Мясо",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Одежда",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дом",
       "note": "Жилье",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Комната",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Окно",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дверь",
       "note": "Вход",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Письменный стол",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Стул",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Компьютер",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Телефон",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Книга",
       "note": "Книга",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Карандаш",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Бумага",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сумка",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Школа",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Компания",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Больница",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Аптека",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ресторан",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Рынок",
       "note": "Рынок",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Метро",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Автобус",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Такси",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Самолет",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Поезд",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Велосипед",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дорога",
       "note": "Трасса",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Гора",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Море",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Река",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Небо",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Солнце / Год",
       "note": "Солнце / Год",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Луна",
       "note": "Спутник",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Звезда",
       "note": "Небесное тело",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Дерево",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Цветок",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Щенок",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Кошка",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Деньги",
       "note": "Наличные",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Время",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сегодня",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Завтра",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Вчера",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Друг",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

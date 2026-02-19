@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "Động từ 1",
-  "pos": "Động từ",
   "entries": [
     {
       "text": "đi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đến",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "ăn",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "uống",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "ngủ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "xem / nhìn",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "mua",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "bán",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đọc",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "viết",
       "note": "viết lách",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "nghe",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "nói",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "làm",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "làm việc",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "học tập",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "dạy",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "học",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "chờ đợi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "gặp gỡ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "yêu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "thích",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "ghét",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "cười",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "khóc",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đi bộ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "chạy",
       "note": "chạy bộ",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "ngồi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đứng",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "cho / tặng",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "nhận",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "mở",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đóng",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "suy nghĩ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "biết",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "không biết",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "tìm / thấy",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "mất",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "giúp đỡ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "rửa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "nấu ăn",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "hát",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "nhảy múa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "sử dụng",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "làm ra / chế biến",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "gọi / hát",
       "note": "bài hát / tên",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "cầm / giữ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "để / bỏ qua",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "vào",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "ra",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "lên",
       "note": "phương tiện",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "xuống",
       "note": "phương tiện",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "gửi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "nộp / trả",
       "note": "tiền / hồ sơ",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "sống / trải qua",
       "note": "lời chào",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "bắt đầu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "kết thúc",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "nghỉ ngơi",
       "note": "nghỉ ngơi",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "hỏi",
       "note": "câu hỏi",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "trả lời",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "hứa",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "lo lắng",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "tin tưởng",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "nghi ngờ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "hy vọng",
       "note": "hy vọng",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "mơ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đánh nhau / cãi nhau",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "thắng",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "thua",
       "note": "thất bại",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "phát triển",
       "note": "tăng trưởng",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "sống",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "chết",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "cầm lên",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "vứt bỏ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "giấu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "tìm kiếm",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "chọn / tuyển",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "thay đổi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đặt hàng",
       "note": "mua hàng",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "chuẩn bị",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "bắt lấy",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "ném",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "kéo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đẩy",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "sửa chữa",
       "note": "sửa chữa",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "hỏng / vỡ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đau / ốm",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "điều trị",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "tập thể dục",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "bơi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "du lịch",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "lái xe",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "dọn dẹp",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "rửa bát",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "giặt đồ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "tắm",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đánh răng",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "thức dậy",
       "note": "tỉnh giấc",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "đi ngủ",
       "note": "ngủ",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "hiểu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     },
     {
       "text": "nhớ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Động từ"
     }
   ]
 }

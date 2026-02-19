@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Basissubstantiv 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Person",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Vann",
       "note": "Drikkevann",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mat / Ris",
       "note": "Måltid",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Brød",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Eple",
       "note": "Frukt",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Melk",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kjøtt",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Klær",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Hus",
       "note": "Bolig",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Rom",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Vindu",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dør",
       "note": "Inngang",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Skrivebord",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Stol",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Datamaskin",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Telefon",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bok",
       "note": "Bok",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Blyant",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Papir",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Veske",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Skole",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Firma",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sykehus",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Apotek",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Restaurant",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Marked",
       "note": "Marked",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "T-bane",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Buss",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Taxi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Fly",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tog",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sykkel",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Vei",
       "note": "Vei",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Fjell",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Hav",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Elv",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Himmel",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sol / År",
       "note": "Sol / År",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Måne",
       "note": "Satellitt",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Stjerne",
       "note": "Himmellegeme",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tre",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Blomst",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Valp",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Katt",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Penger",
       "note": "Kontanter",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Tid",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "I dag",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "I morgen",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "I går",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Venn",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

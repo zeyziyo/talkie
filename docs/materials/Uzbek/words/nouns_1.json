@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Asosiy otlar 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Odam",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Suv",
       "note": "Ichimlik suvi",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Guruch / Ovqat",
       "note": "Ovqat",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Non",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Olma",
       "note": "Meva",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sut",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Goʻsht",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kiyimlar",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Uy",
       "note": "Turar joy",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Xona",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Oyna",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Eshik",
       "note": "Kirish",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Yozuv stoli",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Stul",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kompyuter",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Telefon",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kitob",
       "note": "Kutubxona",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Qalam",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Qogʻoz",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Sumka",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Maktab",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kompaniya",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kasalxona",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dorixona",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Restoran",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bozor",
       "note": "Savdo maydonchasi",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Metro",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Avtobus",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Taksi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Samolyot",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Poyezd",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Velosiped",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Yoʻl",
       "note": "Yoʻl",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Togʻ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Dengiz",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Daryo",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Osmon",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Quyosh / Yil",
       "note": "Quyosh / Yil",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Oy",
       "note": "Sun'iy yo'ldosh",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Yulduz",
       "note": "Osmon jismi",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Daraxt",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Gul",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kuchukcha",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Mushuk",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Pul",
       "note": "Naqd pul",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Vaqt",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Bugun",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ertaga",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Kecha",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Do'st",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

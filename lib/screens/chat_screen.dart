@@ -975,21 +975,32 @@ class _ChatScreenState extends State<ChatScreen> {
                   message: 'Toggle Gender',
                   child: InkWell(
                     onTap: () async {
-                      // Phase 136 Fix: JIT Creation for Temp Participants
-                      var targetId = participant.id;
+                      // Phase 137 Fix: Simplified Gender Toggle with Forced UI Update
+                      // 1. Resolve Target ID (Create JIT if temp)
+                      String targetId = participant.id;
                       if (targetId == 'temp') {
-                        debugPrint('[ChatScreen] Creating JIT participant for ${participant.name}');
+                        debugPrint('[ChatScreen] JIT Creation for ${participant.name}');
+                        // Create and add to active participants list
                         final newP = await appState.getOrAddParticipant(
                           name: participant.name, 
                           role: participant.role,
-                          gender: participant.gender, // Keep current visual state
+                          gender: participant.gender, 
                           languageCode: participant.langCode
                         );
                         targetId = newP.id;
                       }
 
+                      // 2. Toggle Gender
                       final newGender = participant.gender == 'male' ? 'female' : 'male';
+                      debugPrint('[ChatScreen] Toggling gender for $targetId to $newGender');
+                      
+                      // 3. Update State & DB
                       await appState.updateParticipant(targetId, gender: newGender);
+                      
+                      // 4. Force Rebuild (Just in case Provider doesn't catch deep change)
+                      if (context.mounted) {
+                        setState(() {}); 
+                      }
                     },
                     borderRadius: BorderRadius.circular(12),
                     child: Padding(

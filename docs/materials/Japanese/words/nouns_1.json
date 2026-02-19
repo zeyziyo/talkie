@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "名詞 1",
-  "pos": "名詞",
   "entries": [
     {
       "text": "人",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "水",
       "note": "飲料水",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "ご飯",
       "note": "食事",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "パン",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "りんご",
       "note": "果物",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "牛乳",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "肉",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "服",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "家",
       "note": "住宅",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "部屋",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "窓",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "門",
       "note": "入り口",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "机",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "椅子",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "コンピューター",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "電話",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "本",
       "note": "図書",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "鉛筆",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "紙",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "鞄",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "学校",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "会社",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "病院",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "薬局",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "식당",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "市場",
       "note": "市場",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "地下鉄",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "バス",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "タクシー",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "飛行機",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "電車",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "自転車",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "道",
       "note": "道路",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "山",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "海",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "川",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "空",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "太陽 / 年",
       "note": "太陽",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "月",
       "note": "衛星",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "星",
       "note": "天体",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "木",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "花",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "子犬",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "猫",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "お金",
       "note": "現金",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "時間",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "今日",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "明日",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "昨日",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     },
     {
       "text": "友達",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名詞"
     }
   ]
 }

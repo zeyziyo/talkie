@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "名词 1",
-  "pos": "名词",
   "entries": [
     {
       "text": "人",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "水",
       "note": "饮用水",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "饭",
       "note": "正餐",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "面包",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "苹果",
       "note": "水果",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "牛奶",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "肉",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "衣服",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "家",
       "note": "住房",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "房间",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "窗户",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "门",
       "note": "入口",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "桌子",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "椅子",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "电脑",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "电话",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "书",
       "note": "图书",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "铅笔",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "纸",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "包",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "学校",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "公司",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "医院",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "药店",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "餐馆",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "市场",
       "note": "老市场",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "地铁",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "公交车",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "出租车",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "飞机",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "火车",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "自行车",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "路",
       "note": "道路",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "山",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "海",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "河",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "天空",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "太阳",
       "note": "恒星",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "月亮",
       "note": "卫星",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "星星",
       "note": "天体",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "树",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "花",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "小狗",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "小猫",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "钱",
       "note": "现金",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "时间",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "今天",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "明天",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "昨天",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     },
     {
       "text": "朋友",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "名词"
     }
   ]
 }

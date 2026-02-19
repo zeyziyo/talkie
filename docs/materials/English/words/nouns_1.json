@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Nouns 1",
-  "pos": "Noun",
   "entries": [
     {
       "text": "Person",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Water",
       "note": "Drinking water",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Rice / Meal",
       "note": "Meal",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Bread",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Apple",
       "note": "Fruit",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Milk",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Meat",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Clothes",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "House",
       "note": "Housing",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Room",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Window",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Door",
       "note": "Entrance",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Desk",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Chair",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Computer",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Phone",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Book",
       "note": "Library",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Pencil",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Paper",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Bag",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "School",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Company",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Hospital",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Pharmacy",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Restaurant",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Market",
       "note": "Marketplace",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Subway",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Bus",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Taxi",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Airplane",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Train",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Bicycle",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Road",
       "note": "Road",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Mountain",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Sea",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "River",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Sky",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Sun / Year",
       "note": "Sun / Year",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Moon",
       "note": "Satellite",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Star",
       "note": "Celestial Body",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Tree",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Flower",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Puppy",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Cat",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Money",
       "note": "Cash",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Time",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Today",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Tomorrow",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Yesterday",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     },
     {
       "text": "Friend",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "Noun"
     }
   ]
 }

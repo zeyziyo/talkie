@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "100 ಮೂಲಭೂತ ಕ್ರಿಯಾಪದಗಳು",
-  "pos": "verb",
   "entries": [
     {
       "text": "ಹೋಗು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಬಾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ತಿನ್ನು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕುಡಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಮಲಗು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ನೋಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕೊಳ್ಳು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಮಾರು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಓದು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಬರೆಯಿರಿ",
       "note": "ಬರವಣಿಗೆ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕೇಳು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಮಾತನಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಮಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕೆಲಸ ಮಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಅಭ್ಯಾಸ ಮಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಹೇಳಿಕೊಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕಲಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕಾಯಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಭೇಟಿಯಾಗು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಪ್ರೀತಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಮೆಚ್ಚು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ದ್ವೇಷಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ನಗು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಅಳು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ನಡೆ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಓಡು",
       "note": "ಓಟ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕುಳಿತುಕೊ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ನಿಂತುಕೊ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕೊಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಪಡೆ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ತೆರೆ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಮುಚ್ಚು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಯೋಚಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ತಿಳಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಅರಿಯದಿರು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಹುಡುಕು / ಪತ್ತೆಹಚ್ಚು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕಳೆದುಕೊ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಸಹಾಯ ಮಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ತೊಳೆ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಅಡುಗೆ ಮಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಹಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕುಣಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಬಳಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ತಯಾರಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕರೆ / ಹಾಡು",
       "note": "ಹಾಡು / ಹೆಸರು",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಹಿಡಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಇಡು / ಬಿಟ್ಟುಕೊಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಒಳಬರು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಹೊರಹೋಗು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಹತ್ತಿ",
       "note": "ವಾಹನ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಇಳಿಯಿರಿ",
       "note": "ವಾಹನ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕಳುಹಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಸಲ್ಲಿಸಿ",
       "note": "ಸಲ್ಲಿಕೆ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಹೇಗಿದ್ದೀರಿ",
       "note": "ಶುಭಾಶಯ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಪ್ರಾರಂಭಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಮುಕ್ತಾಯಗೊಳಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ವಿಶ್ರಾಂತಿ ತಗೆದುಕೊ",
       "note": "ವಿಶ್ರಾಂತಿ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕೇಳಿ",
       "note": "ಪ್ರಶ್ನೆ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಉತ್ತರಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಭರವಸೆ ಕೊಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಚಿಂತಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ನಂಬು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಸಂದೇಹಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಬಯಸು / ಆಶಿಸು",
       "note": "ಆಶೆ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕನಸು ಕಾಣು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಜಗಳವಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಗೆಲ್ಲು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಸೋಲು",
       "note": "ಸೋಲು",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಬೆಳೆ",
       "note": "ಬೆಳವಣಿಗೆ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಬಾಳು / ವಾಸಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಸಾಯು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಎತ್ತು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಎಸೆದು ಬಿಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ದಾಚು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಶೋಧಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಆರಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಬದಲಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಆರ್ಡರ್ ಮಾಡಿ",
       "note": "ವಸ್ತುಗಳ ಖರೀದಿ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಸಿದ್ಧಮಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಹಿಡಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಎಸೆ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಎಳೆ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ತಳ್ಳು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ದುರಸ್ತಿ ಮಾಡು",
       "note": "ದುರಸ್ತಿ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಮುರಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಕಾಯಿಲೆ ಬೀಳು / ನೋಯಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಚಿಕಿತ್ಸೆ ನೀಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ವ್ಯಾಯಾಮ ಮಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಈಜು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಪ್ರಯಾಣ ಮಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಚಾಲನೆ ಮಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಶುಚಿಗೊಳಿಸು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಪಾತ್ರೆ ತೊಳೆಯಿರಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಬಟ್ಟೆ ಒಗೆಯು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಸ್ನಾನ ಮಾಡು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಹಲ್ಲುಜ್ಜು",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಎಚ್ಚರವಾಗು / ಎದ್ದೇಳು",
       "note": "ಎಚ್ಚರ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಮಲಗಲು ಹೋಗು",
       "note": "ನಿದ್ದೆ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ಅర్థಮಾಡಿಕೊಳ್ಳಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ನೆನಪಿಡಿ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

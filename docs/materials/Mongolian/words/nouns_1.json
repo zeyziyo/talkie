@@ -1,257 +1,306 @@
 {
   "default_type": "word",
   "subject": "Үндсэн нэр үг 50",
-  "pos": "noun",
   "entries": [
     {
       "text": "Хүн",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ус",
       "note": "Уух ус",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Будаа / Хоол",
       "note": "Хоол",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Талх",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Алим",
       "note": "Жимс",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сүү",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Мах",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Хувцас",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Байшин",
       "note": "Орон сууц",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Өрөө",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Цонх",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Хаалга",
       "note": "Орц",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ширээ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сандал",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Компьютер",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Утас",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ном",
       "note": "Номын сан",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Харандаа",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Цаас",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Цүнх",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сургууль",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Компани",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Эмнэлэг",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Эмийн сан",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Ресторан",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Зах",
       "note": "Худалдааны газар",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Метро",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Автобус",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Такси",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Нисэх онгоц",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Галт тэрэг",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Унадаг дугуй",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Зам",
       "note": "Зам",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Уул",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Тэнгис",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Гол",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Тэнгэр",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Нар / Жил",
       "note": "Нар / Жил",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Сар",
       "note": "Хиймэл дагуул",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Од",
       "note": "Тэнгэрийн биет",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Мод",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Цэцэг",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Гөлөг",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Муур",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Мөнгө",
       "note": "Бэлэн мөнгө",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Цаг",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Өнөөдөр",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Маргааш",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Өчигдөр",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     },
     {
       "text": "Найз",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "noun"
     }
   ]
 }

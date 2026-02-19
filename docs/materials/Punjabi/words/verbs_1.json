@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "100 ਬੁਨਿਆਦੀ ਕਿਰਿਆਵਾਂ",
-  "pos": "verb",
   "entries": [
     {
       "text": "ਜਾਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਆਉਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਖਾਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਪੀਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸੌਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਦੇਖਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਖਰੀਦਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਵੇਚਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਪੜ੍ਹਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਲਿਖਣਾ",
       "note": "ਲਿਖਤ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸੁਣਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਬੋਲਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਕੰਮ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਪੜ੍ਹਾਈ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸਿਖਾਉਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸਿੱਖਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਉਡੀਕ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਮਿਲਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਪਿਆਰ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਪਸੰਦ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਨਫ਼ਰਤ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਹੱਸਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਰੋਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਚੱਲਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਦੌੜਨਾ",
       "note": "ਦੌੜਨਾ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਬੈਠਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਖੜ੍ਹੇ ਹੋਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਦੇਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਪ੍ਰਾਪਤ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਖੋਲ੍ਹਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਬੰਦ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸੋਚਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਜਾਣਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਨਾ ਜਾਣਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਲੱਭਣਾ / ਪਾਉਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਗੁਆਉਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਮਦਦ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਧੋਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਪਕਾਉਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਗਾਉਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਨੱਚਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਵਰਤੋਂ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਬਣਾਉਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਬੁਲਾਉਣਾ / ਗਾਉਣਾ",
       "note": "ਗੀਤ / ਨਾਮ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਫੜਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਰੱਖਣਾ / ਛੱਡ ਦੇਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਦਾਖਲ ਹੋਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਬਾਹਰ ਜਾਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਚੜ੍ਹਨਾ",
       "note": "ਵਾਹਨ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਉਤਰਨਾ",
       "note": "ਵਾਹਨ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਭੇਜਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਜਮ੍ਹਾਂ ਕਰਨਾ",
       "note": "ਜਮ੍ਹਾਂ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਕਿਵੇਂ ਹੋ",
       "note": "ਸ਼ੁਭਕਾਮਨਾਵਾਂ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸ਼ੁਰੂ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਖ਼ਤਮ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਆਰਾਮ ਕਰਨਾ",
       "note": "ਆਰਾਮ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਪੁੱਛਣਾ",
       "note": "ਸਵਾਲ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਜਵਾਬ ਦੇਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਵਾਅਦਾ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਚਿੰਤਾ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਭਰੋਸਾ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸ਼ੱਕ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਇੱਛਾ / ਉਮੀਦ ਕਰਨਾ",
       "note": "ਉਮੀਦ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸੁਪਨਾ ਦੇਖਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਲੜਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਜਿੱਤਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਹਾਰਨਾ",
       "note": "ਹਾਰ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਵਧਣਾ",
       "note": "ਵਿਕਾਸ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਜੀਉਣਾ / ਰਹਿਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਮਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਚੁੱਕਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸੁੱਟ ਦੇਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਛੁਪਾਉਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਤਲਾਸ਼ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਚੁਣਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਬਦਲਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਆਰਡਰ ਕਰੋ",
       "note": "ਵਸਤੂਆਂ ਦੀ ਖਰੀਦ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਤਿਆਰ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਫੜਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸੁੱਟਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਖਿੱਚਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਧੱਕਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਠੀਕ ਕਰਨਾ",
       "note": "ਮੁਰੰਮਤ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਟੁੱਟਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਬਿਮਾਰ ਹੋਣਾ / ਦਰਦ ਹੋਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਇਲਾਜ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਕਸਰਤ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਤਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਯਾਤਰਾ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਗੱਡੀ ਚਲਾਉਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸਫਾਈ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਭਾਂਡੇ ਮਾਂਜਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਕੱਪੜੇ ਧੋਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਨਹਾਉਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਬਰੁਸ਼ ਕਰਨਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਜਾਗਣਾ / ਉੱਠਣਾ",
       "note": "ਜਾਗਣਾ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸੌਣ ਜਾਣਾ",
       "note": "ਨੀਂਦ",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਸਮਝਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     },
     {
       "text": "ਯਾਦ ਰੱਖਣਾ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "verb"
     }
   ]
 }

@@ -1,507 +1,606 @@
 {
   "default_type": "word",
   "subject": "動詞 1",
-  "pos": "動詞",
   "entries": [
     {
       "text": "行く",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "来る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "食べる",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "飲む",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "寝る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "見る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "買う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "売る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "読む",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "書く",
       "note": "筆記",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "聞く",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "話す",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "働く",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "勉強する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "教える",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "習う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "待つ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "会う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "愛する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "好きだ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "嫌いだ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "笑う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "泣く",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "歩く",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "走る",
       "note": "ランニング",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "座る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "立つ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "あげる / くれる",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "もらう",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "開ける",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "閉める",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "考える",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "わかる / 知る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "知らない",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "探す / 見つける",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "失う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "手伝う / 助ける",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "洗う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "料理する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "歌う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "踊る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "使う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "作る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "呼ぶ",
       "note": "歌 / 名前",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "捕まえる / 握る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "置く",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "入る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "出る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "乗る",
       "note": "乗車",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "降りる",
       "note": "降車",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "送る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "出す",
       "note": "提出",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "過ごす",
       "note": "挨拶",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "始める",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "終わらせる",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "休む",
       "note": "休息",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "問う",
       "note": "質問",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "答える",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "約束する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "心配する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "信じる",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "疑う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "願う / 望む",
       "note": "希望",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "夢見る",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "喧嘩する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "勝つ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "負ける",
       "note": "敗北",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "育つ",
       "note": "成長",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "生きる / 住む",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "死ぬ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "拾う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "捨てる",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "隠す",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "検索する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "選択する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "変える / 換える",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "注文する",
       "note": "品物購入",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "準備する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "捕まえる",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "投げる",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "引く",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "押す",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "直す / 修理する",
       "note": "修理",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "壊す",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "痛む / 具合が悪い",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "治療する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "運動する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "泳ぐ",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "旅行する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "運転する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "掃除する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "皿を洗う",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "洗濯する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "シャワーを浴びる",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "歯を磨く",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "起きる",
       "note": "起床",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "寝床につく",
       "note": "就寝",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "理解する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     },
     {
       "text": "覚える / 記憶する",
       "note": "",
-      "tags": []
+      "tags": [],
+      "pos": "動詞"
     }
   ]
 }
