@@ -73,13 +73,13 @@ class _ParticipantSelectorDialogState extends State<ParticipantSelectorDialog> {
           child: const Text('Cancel'),
         ),
         FilledButton(
-          onPressed: () {
-            if (_selectedIds.isEmpty) return; // Warning?
+          onPressed: () async {
+            if (_selectedIds.isEmpty) return;
             
             final appState = Provider.of<AppState>(context, listen: false);
             final selected = appState.globalParticipants.where((p) => _selectedIds.contains(p.id)).toList();
-            widget.onSelected(selected);
-            Navigator.pop(context);
+            Navigator.pop(context); // 다이얼로그를 먼저 닫음
+            await widget.onSelected(selected); // DB 작업 완료 후 ChatScreen으로 이동
           },
           child: const Text('Start Chat'),
         ),

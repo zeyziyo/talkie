@@ -21,6 +21,12 @@
 
 ---
 
+### [2026-02-20] Phase 6 Bug Fixes: Online Library & Start Chat
+
+- **Bug Fix (Online Library)**: `online_library_dialog.dart`의 category 필터 조건에서 `"Dialogue"` (단수형)를 `"Dialogues"` (복수형) 소문자 비교로 수정. JSON 실제 값과의 불일치로 대화 탭이 빈 화면으로 표시되던 문제 해결.
+- **Bug Fix (Start Chat)**: `participant_selector_dialog.dart`의 "Start Chat" 버튼 `onPressed`를 `async`로 변경하고 `onSelected` 콜백을 `await` 처리. 기존에는 `Navigator.pop` 이후 `startNewDialogue()`가 완료되기 전에 `ChatScreen`이 열려 `activeDialogueId == null` 상태였던 타이밍 버그 해결.
+- **Quality**: `flutter analyze` No issues found.
+
 ### [2026-02-13] AI Chat UI/UX Refinement & Reliability (Phase 119)
 - **UI/UX**: 성별 선택 다이얼로그를 제거하고, 각 참가자의 헤더(언어 드롭다운 옆)로 성별 전환 위젯을 이동하여 실시간 제어성을 극대화했습니다. 
 - **Acoustic Symmetry**: 영어('en-US') 및 한국어('ko-KR') 로케일을 강제 매핑하여 억양 불일치(콩글리쉬)를 원천 차단했습니다.

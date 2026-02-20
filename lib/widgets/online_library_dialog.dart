@@ -4,7 +4,7 @@ import '../providers/app_state.dart';
 import '../l10n/app_localizations.dart';
 import '../models/dialogue_group.dart';
 
-class OnlineLibraryDialog extends StatelessWidget {
+class OnlineLibraryDialog extends StatefulWidget {
   const OnlineLibraryDialog({super.key});
 
   static void show(BuildContext context) {
@@ -15,14 +15,37 @@ class OnlineLibraryDialog extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
-    final appState = Provider.of<AppState>(context, listen: false);
-    final l10n = AppLocalizations.of(context)!;
+  State<OnlineLibraryDialog> createState() => _OnlineLibraryDialogState();
+}
 
-    // Ensure materials are loaded
-    if (appState.onlineMaterials.isEmpty && !appState.isLoadingOnlineMaterials) {
-         appState.fetchOnlineMaterialsList();
+class _OnlineLibraryDialogState extends State<OnlineLibraryDialog> {
+  bool _hasError = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // Fetch data after build frame
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _loadMaterials();
+    });
+  }
+
+  Future<void> _loadMaterials() async {
+    final appState = Provider.of<AppState>(context, listen: false);
+    if (appState.onlineMaterials.isEmpty) {
+      if (mounted) setState(() => _hasError = false);
+      
+      await appState.fetchOnlineMaterialsList();
+      
+      if (mounted && appState.onlineMaterials.isEmpty) {
+        setState(() => _hasError = true);
+      }
     }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
 
     return DefaultTabController(
       length: 3,
@@ -50,11 +73,40 @@ class OnlineLibraryDialog extends StatelessWidget {
                       return const Center(child: CircularProgressIndicator());
                     }
 
-                    // Filter lists based on 'category' content in current json structure
-                    // Note: If category is missing, it might need adjustment based on actual JSON
-                    final wordMaterials = state.onlineMaterials.where((m) => m['category'] == 'Words' || m['type'] == 'word').toList();
-                    final sentenceMaterials = state.onlineMaterials.where((m) => m['category'] == 'Sentences' || m['type'] == 'sentence').toList();
-                    final dialogueMaterials = state.onlineMaterials.where((m) => m['category'] == 'Dialogue' || m['type'] == 'dialogue').toList();
+                    if (state.onlineMaterials.isEmpty) {
+                      if (_hasError) {
+                         return Center(
+                           child: Column(
+                             mainAxisAlignment: MainAxisAlignment.center,
+                             children: [
+                               const Icon(Icons.error_outline, size: 48, color: Colors.orange),
+                               const SizedBox(height: 16),
+                               const Text("자료를 불러오는데 실패했습니다.", style: TextStyle(fontSize: 16)),
+                               const SizedBox(height: 8),
+                               const Text("인터넷 연결을 확인하거나 나중에 다시 시도해주세요.", style: TextStyle(color: Colors.grey)),
+                               const SizedBox(height: 24),
+                               ElevatedButton.icon(
+                                 onPressed: _loadMaterials,
+                                 icon: const Icon(Icons.refresh),
+                                 label: const Text("다시 시도"),
+                               )
+                             ],
+                           ),
+                         );
+                      }
+                      return const Center(child: Text("자료가 없습니다."));
+                    }
+
+                    // Filter lists based on 'category' content — case-insensitive + plural form match
+                    final wordMaterials = state.onlineMaterials.where((m) =>
+                        (m['category'] as String?)?.toLowerCase() == 'words' ||
+                        m['type'] == 'word').toList();
+                    final sentenceMaterials = state.onlineMaterials.where((m) =>
+                        (m['category'] as String?)?.toLowerCase() == 'sentences' ||
+                        m['type'] == 'sentence').toList();
+                    final dialogueMaterials = state.onlineMaterials.where((m) =>
+                        (m['category'] as String?)?.toLowerCase() == 'dialogues' ||
+                        m['type'] == 'dialogue').toList();
 
                     return TabBarView(
                       children: [
@@ -85,7 +137,7 @@ class OnlineLibraryDialog extends StatelessWidget {
   Widget _buildMaterialList(BuildContext context, AppState state, List<Map<String, dynamic>> materials, String type) {
     final l10n = AppLocalizations.of(context)!;
     if (materials.isEmpty) {
-      return const Center(child: Text("자료가 없습니다."));
+      return const Center(child: Text("이 카테고리에는 자료가 없습니다."));
     }
     return ListView.builder(
       itemCount: materials.length,

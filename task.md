@@ -1,123 +1,41 @@
 # 🛑 시작 전 확인: `.agent/rules`를 반드시 먼저 읽을 것!
-# 🛑 에이전트 실책 사례 및 경고: **사용자의 승인 없는 커밋/푸시는 즉시 세션 종료 사유임.** (2026-01-31 사례 반영)
-# 🛑 중요 규칙 (필독)
-**[강제 규칙 원본 보기: docs/PROJECT_RULES.md](docs/PROJECT_RULES.md)**
-(모든 규칙은 위 문서를 따르며, 이곳에는 진행 상황만 기록합니다.)
 
 **[필수 문서 현행화 대상]**
-1. `docs/PROJECT_RULES.md`
-2. `task.md`
-3. `history.md`: 작업 이력 인덱스 (상세: `docs/history/*.md`)
-4. `README.md`: 사용자 매뉴얼 및 기능 소개.
-5. `future_roadmap.md`
+1. `task.md`
+2. `README.md`: 사용자 매뉴얼 및 기능 소개.
 
-- [ ] **Project Rules Update**: "승인 우선 원칙" 강화 (연속 작업 승인 불필요 관행 타파).
+---
 
+# 🚀 Current Project: Participant Management System (참여자 관리 시스템)
 
-- [ ] **Project Rules Update**: "승인 우선 원칙" 강화 (연속 작업 승인 불필요 관행 타파).
+## Phase 1: Database Migration (데이터베이스 마이그레이션)
+- [x] **DB 스키마 업데이트**: `participants` 테이블 생성 및 마이그레이션 (v22).
+- [x] **리포지토리 업데이트**: `DialogueRepository` 정규화된 참여자 CRUD 구현.
+- [x] **모델 업데이트**: `ChatParticipant` 클래스 DB 스키마 일치화.
 
-- [x] **Build Fixes**: `flutter build apk` 오류 수정.
-    - [x] **Mode2Widget**: Syntax error (unexpected `title` argument).
-    - [x] **Mode3Widget**: Missing `HelpDialog` import.
-    - [x] **SearchFilterDialog**: Undefined `_localSelectedTags` and `AppLocalizations`.
-    - [x] **HelpDialog Usage**: Fixed invalid `HelpTab` usage and missing `onStartTutorial` callback.
-    - [x] **Method Signature**: Fixed `_showMetadataDialog` argument mismatch.
+## Phase 2: ID Logic & Data Integrity (ID 로직 및 데이터 무결성)
+- [x] **컨텐츠 기반 ID**: `UnifiedRepository.generateContentId()` 구현.
+- [x] **마이그레이션 스크립트**: `ensure_participants_migration.dart` 실행.
 
-- [x] **Project Rules Overhaul**: 규칙 전면 개정 (3대 원칙: 한글, 승인, 80개국어 동기화).
+## Phase 3: Server Synchronization (서버 동기화)
+- [x] **Supabase 서비스**: `processChat` 및 ID 일관성 로직 업데이트.
+- [x] **동기화 로직**: `SupabaseRepository` 로컬 DB 변경 사항 반영.
 
-- [x] Phase 77.5: UX/Naming Revert & Feature Restoration (UX/명칭 원복 및 기능 복구)
-    - [x] **Mode 3 Title**: "Practice" -> "**발음 연습 (Speaking Practice)**" 원복.
-    - [x] **Search Filter Dialog**: 신규 다이얼로그 구현 (태그 필터, 최근 N개 제한, 시작 문자).
-    - [x] **UI/UX**: Mode 2/3에서 `MetadataDialog`(편집)를 `SearchFilterDialog`(필터)로 교체.
-    - [x] **Online Library**: 접근성 개선 (필터 팝업 내 제거 -> AppBar 상단 메뉴로 이동).
-    - [x] **Code Cleanup**: 사용하지 않는 `MetadataDialog` import 제거.
+## Phase 4: UI Implementation (UI 구현)
+- [x] **참여자 관리 화면**: `ParticipantManageScreen` (CRUD UI).
+- [x] **참여자 선택 다이얼로그**: `ParticipantSelectorDialog` 채팅 생성 시 사용.
+- [x] **채팅 통합**: `ChatScreen` 정규화된 참여자 사용 업데이트.
+- [x] **히스토리 통합**: `ChatHistoryScreen` 필터 및 생성 흐름.
+- [x] **코드 정리**: 레거시 페르소나 코드 제거 및 deprecation 수정.
 
-- [x] Phase 77: Native Tag Strategy & UI Refinements (Native Tag 전략 및 UI 개선)
-    - [x] **AppState**: Pivot Subject 강제 로직 제거 (Native Tag Strategy 적용).
-    - [x] **Mode 2/3**: 리뷰 모드 UI에서 현재 언어에 맞는 태그(자료집)만 필터링 노출.
-    - [x] **Metadata Dialog**: 'Online Library' 아이콘 제거 (AppBar 메뉴로만 접근).
-    - [x] **Metadata Dialog**: 'Total Tags' 드롭다운 상시 노출 (빈 상태라도 표시).
-    - [x] **Mode 1**: `_showMetadataDialog` 호출 시 `onOpenLibrary` 제거.
-    - [x] **Mode 1**: 튜토리얼용 `materialDropdownKey` 바인딩 누락 수정.
+## Phase 5: Final Verification (최종 검증)
+- [ ] **수동 테스트**: 참여자 생성 -> 대화 시작 -> 유지 여부 확인.
+- [ ] **회귀 테스트**: 특수 모드(Mode 1/2/3) 영향도 점검.
+- [x] **코드 품질**: 잔여 lint 문제 해결 (완료).
 
-- [x] 긴급 수정: 빌드 오류 해결 (Hotfix: Build Error Resolution)
-    - [x] `HomeScreen` 중복 함수 정의 제거 및 파라미터 오류 수정
-    - [x] `HelpDialog` 누락된 `startTutorial` 로컬라이제이션 키 추가
-    - [x] **L10n 동기화**: 전체 언어 ARB 파일 동기화 완료
-    - [x] `history.md` 및 `task.md` 현행화
-
-- [x] **Data Sync Fix (최종: 파일명 기반 동기화)**
-    - [x] **Online Library**: 파일 이름을 동기화 키(Sync Pivot)로 사용하도록 수정.
-    - [x] **Native Tag**: 원어 제목을 태그로 보존하여 필터링 지원.
-    - [x] **UI**: '제목 태그' 전용 드롭다운 구현.
-    - [x] **Hotfix**: 단일 언어 자료집 가져오기 오류 수정 및 자동 화면 갱신 적용.
-    - [x] **Emergency**: CI 빌드 오류(변수 누락) 긴급 수정 완료.
-
-- [x] **Documentation: Core Design Strategy**
-    - [x] **docs/STRATEGY.md**: 핵심 설계 원칙(Native Tag Strategy, Smart Sync 등) 문서화.
-
-- [x] **UI Revert & Cleanup (사용자 지시 이행)**
-    - [x] **HomeScreen**: App Bar 메뉴에 '온라인 자료실' 항목 추가.
-    - [x] **Mode 2**: 임의 추가된 헤더(타이틀, 구름, 도움말, 튠) 삭제.
-    - [x] **Mode 2**: '상세 분류' (Metadata Dialog) 버튼 삭제.
-    - [x] **Mode 3**: 임의 추가된 헤더(타이틀, 구름, 도움말) 삭제.
-    - [x] **Mode 3**: '상세 분류' (Metadata Dialog) 버튼 삭제.
-    - [x] `userId: 'user'` 명시적 전달로 **대화 노출** 수정
-    - [x] `importFromJsonWithMetadata` 시그니처 및 사용법 업데이트
-
-- [x] 긴급 수정: 홈 화면 빌드 오류 (Hotfix: HomeScreen Build Failure)
-    - [x] `_showMaterialSelectionDialog` 미정의 오류 수정 (`_showOnlineLibraryDialog`로 교체)
-    - [x] `DialogueGroup` 미정의 오류 수정 (import 추가)
-    - [x] `DialogueGroup` 생성자 오류 수정 (`userId: 'user'` 추가)
-    - [x] `selectMaterial` 빈 콘텐츠 버그 수정 (`loadStudyMaterials` & `getStudyMaterials` 복구)
-    - [x] 스마트 동기화를 위한 **피벗 전략(Pivot Strategy)** 구현 (공유 그룹 ID)
-    - [x] **수동 입력 피벗 전략** 구현 (텍스트 일치 연결)
-    - [x] **영어 피벗 자동 다운로드** 구현 (1+1 다운로드)
-
-- [x] Phase 76.5: UI/UX Polish - Online Library Refactor
-    - [x] `Online Library` 팝업 구조 개편 (단어/문장/대화 3탭 분리)
-    - [x] 온라인 자료 필터링 로직 구현 (Category: Words/Sentences/Dialogue)
-    - [x] 자료 임포트 후 자동 선택 및 화면 갱신(Auto-Select) 구현
-        - [x] Word/Sentence: `material_id` 기반 `selectMaterial`
-        - [x] Dialogue: `dialogue_id` 기반 `switchMode(3)`
-        - [x] 완료 메시지 형식: `"{Material Name} Imported Successfully"` 확인
-    - [x] 각 모드 'Online Library' 아이콘 제거 및 'Metadata Dialog' 통합
-        - [x] `MetadataDialog`에 'Online Library' 버튼 추가
-        - [x] Mode 1/2/3 위젯에서 `MetadataDialog` 호출로 변경
-        - [x] 'Total Tags' 드롭다운 추가 (Implemented in MetadataDialog)
-        - [x] 데이터 일관성 및 자동 태깅(Source Subject) 로직 확인 (DatabaseService.dart)
-    - [x] **규칙 준수 조치 (Rule Compliance Fixes)**
-        - [x] `history.md` 현행화 (Phase 76.5)
-        - [x] `README.md` 기능 설명 업데이트 (UI 변경 반영)
-        - [x] `l10n/app_ko.arb` 및 다국어 튜토리얼 문구 동기화
-        - [x] 한국어 소통 원칙 재확인
-
-- [x] Phase 76: Data Integration & AI Chat Optimization (데이터 통합 및 AI 채팅 고도화)
-    - [x] 학습 자료 병합 도구(`scripts/merge_materials.ps1`) 개발
-    - [x] DB 스키마 확장(`style` 컬럼 추가, Version 11)
-    - [x] AI 채팅 주제별 필터 드롭다운 UI 구현
-    - [x] 대화 임포트 후 목록 자동 새로고침 및 `user_id` 개인화 연동
-    - [x] 홈페이지 자료 생성 logic 및 가이드 문서 최신화
-    - [x] 5대 필수 문서(task, history, README, roadmap, future) 현행화
-
-- [x] 프로젝트 파일 정리 (Project File Cleanup)
-    - [x] 삭제: `models.json`, `ROADMAP_AND_CHANGELOG_*.md`, 로그/임시 파일.
-    - [x] 이동: `*_BUILD_STRUCTURE.md` → `docs/guides/`.
-
-- [x] Phase 75: Pre-deployment Quality Assurance (출시 전 품질 검증)
-    - [x] `docs/PRE_DEPLOYMENT_CHECKLIST.md` 생성 및 보안 점검 결과/계획 통합
-    - [x] 1. 보안 및 API 감사 (보안 강화 로직 반영 및 체크리스트 업데이트 완료)
-    - [x] 2. 다국어 및 데이터 정합성 검증
-        - [x] 탐본 점검 계획 수립 및 구현 계획서 작성
-        - [x] 검증 스크립트(`verify_l10n.py`) 작성 및 실행
-        - [x] 티베트어 ARB 복구 및 한국어 JSON 구문 오류 수정 완료 (전수 조사 Pass)
-        - [x] 비라틴 문자권(아랍어, 힌디어 등) 표본 육안 검사
-        - [x] 체크리스트 내 개선 계획 추가 및 조치 여부 명시화
-    - [/] 3. UX 및 튜토리얼 일치성 확인
-        - [x] 구현 계획서(`implementation_plan.md`) 작성 및 승인 요청
-        - [ ] Mode 3 `GlobalKey` 바인딩 시스템 버그 수정
-        - [ ] 도움말 JSON 가이드 최신화 (v66 스키마 및 참여자 필드 반영)
-        - [ ] 튜토리얼 타겟 문구 및 Drawer 내비게이션 용어 정합성 수정
-        - [ ] 통합 검증 (Manual Tutorial Tour)
-    - [ ] 4. 성능 및 메모리 누수 테스트 (Mode 4 집중)
-    - [ ] 4. 성능 및 메모리 누수 테스트 (Mode 4 집중)
+## [Phase 6] 버그 수정 및 안정화 (Bug Fixes & Stabilization)
+- [x] "Online Library" 데이터 표시 문제 해결 (`online_library_dialog.dart` category 대소문자/복수형 불일치 수정)
+- [x] "Start Chat" 기능 오류 수정 (`participant_selector_dialog.dart` async onSelected await 처리)
+- [x] "대화 시작" 시 대화창 진입 문제 해결 (Navigator.pop 순서 + await 수정)
+- [ ] 데이터베이스 무결성 검사 및 정규화 마무리
+- [ ] 전체 기능 회귀 테스트 수행
