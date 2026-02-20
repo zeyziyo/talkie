@@ -1,6 +1,0 @@
-Analyzing talkie...                                             
-
-warning - The declaration '_getUnifiedId' isn't referenced - lib\providers\app_state_auth.dart:17:15 - unused_element
-  error - Undefined name 'UnifiedRepository' - lib\providers\app_state_chat.dart:416:15 - undefined_identifier
-  error - Undefined name 'UnifiedRepository' - lib\providers\app_state_chat.dart:478:15 - undefined_identifier
-

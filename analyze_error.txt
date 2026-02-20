@@ -1,6 +1,0 @@
-Analyzing talkie...                                             
-
-  error - The method 'jsonDecode' isn't defined for the type 'DatabaseService' - lib\services\database_service.dart:190:43 - undefined_method
-  error - The method 'jsonDecode' isn't defined for the type 'DatabaseService' - lib\services\database_service.dart:209:43 - undefined_method
-
-2 issues found. (ran in 2.5s)
