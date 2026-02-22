@@ -692,5 +692,7 @@
   "addNewSubject": "Magdagdag ng bagong pamagat",
   "selectExistingSubject": "Pumili ng kasalukuyang pamagat",
   "addTagHint": "Magdagdag ng tag...",
-  "save": "I-save"
+  "save": "I-save",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

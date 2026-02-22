@@ -692,5 +692,7 @@
   "addNewSubject": "Adăugați titlu nou",
   "selectExistingSubject": "Selectați titlu existent",
   "addTagHint": "Adăugați etichetă...",
-  "save": "Salvare"
+  "save": "Salvare",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

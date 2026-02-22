@@ -692,5 +692,7 @@
   "addNewSubject": "ახალი სათაურის დამატება",
   "selectExistingSubject": "არსებული სათაურის არჩევა",
   "addTagHint": "ტეგის დამატება...",
-  "save": "შენახვა"
+  "save": "შენახვა",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

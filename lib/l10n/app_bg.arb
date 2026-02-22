@@ -692,5 +692,7 @@
   "addNewSubject": "Добавяне на ново заглавие",
   "selectExistingSubject": "Избор на съществуващо заглавие",
   "addTagHint": "Добавяне на етикет...",
-  "save": "Запазване"
+  "save": "Запазване",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

@@ -692,5 +692,7 @@
   "addNewSubject": "Legg til nytt navn",
   "selectExistingSubject": "Velg eksisterende navn",
   "addTagHint": "Legg til tagg...",
-  "save": "Lagre"
+  "save": "Lagre",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

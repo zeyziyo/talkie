@@ -692,5 +692,7 @@
   "addNewSubject": "ထည့်ရန်",
   "selectExistingSubject": "ရွေးရန်",
   "addTagHint": "အမှတ်အသားထည့်ရန်...",
-  "save": "သိမ်းမည်"
+  "save": "သိမ်းမည်",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

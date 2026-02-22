@@ -692,5 +692,7 @@
   "addNewSubject": "নতুন শিরোনাম যোগ করুন",
   "selectExistingSubject": "বিদ্যমান শিরোনাম নির্বাচন করুন",
   "addTagHint": "ট্যাগ যোগ করুন...",
-  "save": "সংরক্ষণ করুন"
+  "save": "সংরক্ষণ করুন",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

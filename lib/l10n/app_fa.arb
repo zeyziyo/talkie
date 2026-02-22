@@ -692,5 +692,7 @@
   "addNewSubject": "اضافه کردن عنوان جدید",
   "selectExistingSubject": "انتخاب عنوان موجود",
   "addTagHint": "اضافه کردن برچسب...",
-  "save": "ذخیره"
+  "save": "ذخیره",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

@@ -692,5 +692,7 @@
   "addNewSubject": "Lisa uus nimi",
   "selectExistingSubject": "Vali olemasolev nimi",
   "addTagHint": "Lisa silt...",
-  "save": "Salvesta"
+  "save": "Salvesta",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

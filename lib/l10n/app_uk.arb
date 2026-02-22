@@ -692,5 +692,7 @@
   "addNewSubject": "Додати нову назву",
   "selectExistingSubject": "Виберіть існуючу назву",
   "addTagHint": "Додати тег...",
-  "save": "Зберегти"
+  "save": "Зберегти",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

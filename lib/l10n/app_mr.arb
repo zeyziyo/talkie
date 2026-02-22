@@ -692,5 +692,7 @@
   "addNewSubject": "नवीन शीर्षक जोडा",
   "selectExistingSubject": "विद्यमान शीर्षक निवडा",
   "addTagHint": "टॅग जोडा...",
-  "save": "सेव्ह करा"
+  "save": "सेव्ह करा",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

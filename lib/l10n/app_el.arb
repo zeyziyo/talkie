@@ -692,5 +692,7 @@
   "addNewSubject": "Προσθήκη νέου τίτλου",
   "selectExistingSubject": "Επιλογή υπάρχοντος τίτλου",
   "addTagHint": "Προσθήκη ετικέτας...",
-  "save": "Αποθήκευση"
+  "save": "Αποθήκευση",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

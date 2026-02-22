@@ -692,5 +692,7 @@
   "addNewSubject": "Engeza Isihloko Esisha",
   "selectExistingSubject": "Khetha Isihloko Esikhona",
   "addTagHint": "Engeza ithegi...",
-  "save": "Londoloza"
+  "save": "Londoloza",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

@@ -692,5 +692,7 @@
   "addNewSubject": "Shto emër të ri",
   "selectExistingSubject": "Zgjidh emër ekzistues",
   "addTagHint": "Shto etiketë...",
-  "save": "Ruaj"
+  "save": "Ruaj",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

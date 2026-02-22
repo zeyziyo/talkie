@@ -692,5 +692,7 @@
   "addNewSubject": "ເພີ່ມຫົວຂໍ້ໃໝ່",
   "selectExistingSubject": "ເລືອກຫົວຂໍ້ທີ່ມີຢູ່",
   "addTagHint": "ເພີ່ມແທັກ...",
-  "save": "ບັນທຶກ"
+  "save": "ບັນທຶກ",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

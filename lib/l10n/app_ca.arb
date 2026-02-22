@@ -692,5 +692,7 @@
   "addNewSubject": "Afegeix un títol nou",
   "selectExistingSubject": "Selecciona un títol existent",
   "addTagHint": "Afegeix una etiqueta...",
-  "save": "Desa"
+  "save": "Desa",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

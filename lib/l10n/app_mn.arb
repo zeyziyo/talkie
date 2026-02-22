@@ -692,5 +692,7 @@
   "addNewSubject": "Шинэ нэр нэмэх",
   "selectExistingSubject": "Одоо байгаа нэрийг сонгох",
   "addTagHint": "Тэмдэг нэмэх...",
-  "save": "Хадгалах"
+  "save": "Хадгалах",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

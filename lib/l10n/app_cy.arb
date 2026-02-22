@@ -692,5 +692,7 @@
   "addNewSubject": "Ychwanegu teitl newydd",
   "selectExistingSubject": "Dewis teitl presennol",
   "addTagHint": "Ychwanegu tag...",
-  "save": "Cadw"
+  "save": "Cadw",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

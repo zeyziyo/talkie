@@ -692,5 +692,7 @@
   "addNewSubject": "Lisää uusi nimi",
   "selectExistingSubject": "Valitse olemassa oleva nimi",
   "addTagHint": "Lisää tagi...",
-  "save": "Tallenna"
+  "save": "Tallenna",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

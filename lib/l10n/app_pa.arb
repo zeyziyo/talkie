@@ -692,5 +692,7 @@
   "addNewSubject": "ਨਵਾਂ ਨਾਮ ਸ਼ਾਮਲ ਕਰੋ",
   "selectExistingSubject": "ਮੌਜੂਦਾ ਨਾਮ ਚੁਣੋ",
   "addTagHint": "ਟੈਗ ਸ਼ਾਮਲ ਕਰੋ...",
-  "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ"
+  "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

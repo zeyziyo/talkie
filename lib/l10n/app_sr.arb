@@ -692,5 +692,7 @@
   "addNewSubject": "Додај нови наслов",
   "selectExistingSubject": "Изабери постојећи наслов",
   "addTagHint": "Додај ознаку...",
-  "save": "Сачувај"
+  "save": "Сачувај",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

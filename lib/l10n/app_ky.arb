@@ -692,5 +692,7 @@
   "addNewSubject": "Жаңы аталышты кошуу",
   "selectExistingSubject": "Мурунку аталышты тандаңыз",
   "addTagHint": "Тэг кошуу...",
-  "save": "Сактоо"
+  "save": "Сактоо",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

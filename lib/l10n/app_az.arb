@@ -692,5 +692,7 @@
   "addNewSubject": "Yeni ad əlavə edin",
   "selectExistingSubject": "Mövcud adı seçin",
   "addTagHint": "Etiket əlavə edin...",
-  "save": "Saxla"
+  "save": "Saxla",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

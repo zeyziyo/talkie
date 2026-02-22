@@ -692,5 +692,7 @@
   "addNewSubject": "Dodaj novo ime",
   "selectExistingSubject": "Izberite obstoječe ime",
   "addTagHint": "Dodaj oznako...",
-  "save": "Shrani"
+  "save": "Shrani",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

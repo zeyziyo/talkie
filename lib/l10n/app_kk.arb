@@ -692,5 +692,7 @@
   "addNewSubject": "Жаңа атауды қосу",
   "selectExistingSubject": "Бар атауды таңдау",
   "addTagHint": "Тег қосу...",
-  "save": "Сақтау"
+  "save": "Сақтау",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

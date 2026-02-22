@@ -692,5 +692,7 @@
   "addNewSubject": "Gehitu izenburu berria",
   "selectExistingSubject": "Aukeratu lehendik dagoen izenburua",
   "addTagHint": "Gehitu etiketa...",
-  "save": "Gorde"
+  "save": "Gorde",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

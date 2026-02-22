@@ -692,5 +692,7 @@
   "addNewSubject": "Ավելացնել նոր վերնագիր",
   "selectExistingSubject": "Ընտրել առկա վերնագիրը",
   "addTagHint": "Ավելացնել թեգ...",
-  "save": "Պահպանել"
+  "save": "Պահպանել",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

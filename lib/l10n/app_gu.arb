@@ -692,5 +692,7 @@
   "addNewSubject": "નવું નામ ઉમેરો",
   "selectExistingSubject": "હાલનું નામ પસંદ કરો",
   "addTagHint": "ટૅગ ઉમેરો...",
-  "save": "સાચવો"
+  "save": "સાચવો",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

@@ -692,5 +692,7 @@
   "addNewSubject": "নতুন নাম যোগ কৰক",
   "selectExistingSubject": "পূৰ্বৰ নাম বাছক",
   "addTagHint": "টেগ যোগ কৰক...",
-  "save": "সংৰক্ষণ কৰক"
+  "save": "সংৰক্ষণ কৰক",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

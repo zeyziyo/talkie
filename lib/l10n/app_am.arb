@@ -692,5 +692,7 @@
   "addNewSubject": "አዲስ ርዕስ ያክሉ",
   "selectExistingSubject": "ያለውን ርዕስ ይምረጡ",
   "addTagHint": "መለያ ያክሉ...",
-  "save": "አስቀምጥ"
+  "save": "አስቀምጥ",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

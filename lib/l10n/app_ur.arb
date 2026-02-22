@@ -692,5 +692,7 @@
   "addNewSubject": "نیا عنوان شامل کریں",
   "selectExistingSubject": "موجودہ عنوان منتخب کریں",
   "addTagHint": "ٹیگ شامل کریں...",
-  "save": "محفوظ کریں"
+  "save": "محفوظ کریں",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

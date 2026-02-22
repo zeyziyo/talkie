@@ -692,5 +692,7 @@
   "addNewSubject": "Engadir título novo",
   "selectExistingSubject": "Seleccionar título existente",
   "addTagHint": "Engadir etiqueta...",
-  "save": "Gardar"
+  "save": "Gardar",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

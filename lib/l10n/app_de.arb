@@ -692,5 +692,7 @@
   "addNewSubject": "Neuen Titel hinzufügen",
   "selectExistingSubject": "Vorhandenen Titel auswählen",
   "addTagHint": "Tag hinzufügen...",
-  "save": "Speichern"
+  "save": "Speichern",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

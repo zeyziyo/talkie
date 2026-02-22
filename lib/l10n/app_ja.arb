@@ -709,5 +709,6 @@
   "styleFormal": "敬語",
   "styleInformal": "ため口",
   "stylePolite": "丁寧",
-  "styleSlang": "スラング"
+  "styleSlang": "スラング",
+  "noDialogueHistory": "No dialogue history."
 }

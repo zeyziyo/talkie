@@ -692,5 +692,7 @@
   "addNewSubject": "Voeg nuwe naam by",
   "selectExistingSubject": "Kies bestaande naam",
   "addTagHint": "Voeg merker by...",
-  "save": "Stoor"
+  "save": "Stoor",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

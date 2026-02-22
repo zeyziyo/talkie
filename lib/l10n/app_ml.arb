@@ -692,5 +692,7 @@
   "addNewSubject": "പുതിയ പേര് ചേർക്കുക",
   "selectExistingSubject": "നിലവിലുള്ള പേര് തിരഞ്ഞെടുക്കുക",
   "addTagHint": "ടാഗ് ചേർക്കുക...",
-  "save": "സംരക്ഷിക്കുക"
+  "save": "സംരക്ഷിക്കുക",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

@@ -692,5 +692,7 @@
   "addNewSubject": "Bæta við nýju nafni",
   "selectExistingSubject": "Veldu núverandi nafn",
   "addTagHint": "Bættu við merki...",
-  "save": "Vista"
+  "save": "Vista",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

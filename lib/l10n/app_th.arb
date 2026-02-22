@@ -692,5 +692,7 @@
   "addNewSubject": "เพิ่มชื่อใหม่",
   "selectExistingSubject": "เลือกชื่อที่มีอยู่",
   "addTagHint": "เพิ่มแท็ก...",
-  "save": "บันทึก"
+  "save": "บันทึก",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

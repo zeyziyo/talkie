@@ -692,5 +692,7 @@
   "addNewSubject": "Добавить новое название",
   "selectExistingSubject": "Выберите существующее название",
   "addTagHint": "Добавить тег...",
-  "save": "Сохранить"
+  "save": "Сохранить",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

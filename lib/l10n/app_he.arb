@@ -692,5 +692,7 @@
   "addNewSubject": "הוסף כותרת חדשה",
   "selectExistingSubject": "בחר כותרת קיימת",
   "addTagHint": "הוסף תג...",
-  "save": "שמור"
+  "save": "שמור",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

@@ -692,5 +692,7 @@
   "addNewSubject": "Pievienot jaunu nosaukumu",
   "selectExistingSubject": "Izvēlieties esošu nosaukumu",
   "addTagHint": "Pievienot tagu...",
-  "save": "Saglabāt"
+  "save": "Saglabāt",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

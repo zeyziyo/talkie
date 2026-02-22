@@ -692,5 +692,7 @@
   "addNewSubject": "Pridėti naują pavadinimą",
   "selectExistingSubject": "Pasirinkti esamą pavadinimą",
   "addTagHint": "Pridėti žymę...",
-  "save": "Išsaugoti"
+  "save": "Išsaugoti",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

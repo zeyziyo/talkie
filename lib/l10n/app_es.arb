@@ -709,5 +709,6 @@
   "styleFormal": "Formal",
   "styleInformal": "Informal",
   "stylePolite": "Cortés",
-  "styleSlang": "Argot"
+  "styleSlang": "Argot",
+  "noDialogueHistory": "No dialogue history."
 }

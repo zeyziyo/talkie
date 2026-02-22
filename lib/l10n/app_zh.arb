@@ -692,5 +692,7 @@
   "addNewSubject": "添加新标题",
   "selectExistingSubject": "选择现有标题",
   "addTagHint": "添加标签...",
-  "save": "保存"
+  "save": "保存",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

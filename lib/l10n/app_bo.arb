@@ -692,5 +692,7 @@
   "addNewSubject": "མིང་གསརཔ་བསྣོན།",
   "selectExistingSubject": "ཡོད་པའི་མིང་འདེམས།",
   "addTagHint": "ཚད་རྟགས་ཁ་སྣོན།...",
-  "save": "བསྲུང་"
+  "save": "བསྲུང་",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

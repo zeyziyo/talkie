@@ -692,5 +692,7 @@
   "addNewSubject": "إضافة اسم جديد",
   "selectExistingSubject": "اختيار اسم موجود",
   "addTagHint": "إضافة علامة...",
-  "save": "حفظ"
+  "save": "حفظ",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

@@ -692,5 +692,7 @@
   "addNewSubject": "కొత్త పేరును జోడించు",
   "selectExistingSubject": "ఉన్న పేరును ఎంచుకోండి",
   "addTagHint": "ట్యాగ్‌ను జోడించు...",
-  "save": "భద్రపరచు"
+  "save": "భద్రపరచు",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

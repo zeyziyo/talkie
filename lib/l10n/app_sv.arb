@@ -692,5 +692,7 @@
   "addNewSubject": "Lägg till nytt namn",
   "selectExistingSubject": "Välj befintligt namn",
   "addTagHint": "Lägg till tagg...",
-  "save": "Spara"
+  "save": "Spara",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

@@ -692,5 +692,7 @@
   "addNewSubject": "Új név hozzáadása",
   "selectExistingSubject": "Meglévő téma kiválasztása",
   "addTagHint": "Címke hozzáadása...",
-  "save": "Mentés"
+  "save": "Mentés",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

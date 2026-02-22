@@ -692,5 +692,7 @@
   "addNewSubject": "ಹೊಸ ಹೆಸರನ್ನು ಸೇರಿಸಿ",
   "selectExistingSubject": "ಈಗಿರುವ ಹೆಸರನ್ನು ಆಯ್ಕೆಮಾಡಿ",
   "addTagHint": "ಟ್ಯಾಗ್ ಸೇರಿಸಿ...",
-  "save": "ಉಳಿಸು"
+  "save": "ಉಳಿಸು",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

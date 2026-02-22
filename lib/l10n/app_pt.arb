@@ -692,5 +692,7 @@
   "addNewSubject": "Adicionar novo nome",
   "selectExistingSubject": "Selecionar nome existente",
   "addTagHint": "Adicionar etiqueta...",
-  "save": "Salvar"
+  "save": "Salvar",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

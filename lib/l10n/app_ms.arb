@@ -692,5 +692,7 @@
   "addNewSubject": "Tambah Tajuk baharu",
   "selectExistingSubject": "Pilih Tajuk Sedia Ada",
   "addTagHint": "Tambah tag...",
-  "save": "Simpan"
+  "save": "Simpan",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

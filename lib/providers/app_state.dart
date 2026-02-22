@@ -23,6 +23,7 @@ import 'package:flutter/material.dart';
 
 import 'package:supabase_flutter/supabase_flutter.dart';
 import '../services/supabase_service.dart';
+import '../services/supabase/supabase_auth_service.dart';
 import '../l10n/app_localizations.dart';
 import '../constants/app_constants.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';

@@ -692,5 +692,7 @@
   "addNewSubject": "Ajouter un nouveau titre",
   "selectExistingSubject": "Sélectionner un titre existant",
   "addTagHint": "Ajouter un tag...",
-  "save": "Enregistrer"
+  "save": "Enregistrer",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

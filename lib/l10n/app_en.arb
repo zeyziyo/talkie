@@ -474,6 +474,7 @@
   "tooltipIncrease": "Increase",
   "languageSettings": "Language Settings",
   "tutorialM2DropdownDesc": "Select study materials.",
+  "tutorialM2SearchDesc": "Search through your saved words and sentences.",
   "tutorialM2ImportDesc": "Import JSON file from device folder.",
   "tutorialLangSettingsTitle": "Language Settings",
   "tutorialLangSettingsDesc": "Configure source and target languages for translation.",
@@ -611,6 +612,7 @@
     }
   },
   "chatNoConversations": "No conversations yet",
+  "noDialogueHistory": "No dialogue history.",
   "chatStartNewPrompt": "Start a new chat to practice!",
   "chatFromConversation": "From Conversation ({speaker})",
   "@chatFromConversation": {

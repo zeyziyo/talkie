@@ -692,5 +692,7 @@
   "addNewSubject": "新增標題",
   "selectExistingSubject": "選擇現有標題",
   "addTagHint": "新增標籤...",
-  "save": "儲存"
+  "save": "儲存",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

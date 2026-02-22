@@ -692,5 +692,7 @@
   "addNewSubject": "Ongeza jina jipya",
   "selectExistingSubject": "Chagua jina lililopo",
   "addTagHint": "Ongeza lebo...",
-  "save": "Hifadhi"
+  "save": "Hifadhi",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

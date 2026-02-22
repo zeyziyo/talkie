@@ -692,5 +692,7 @@
   "addNewSubject": "Přidat nový název",
   "selectExistingSubject": "Vybrat existující název",
   "addTagHint": "Přidat štítek...",
-  "save": "Uložit"
+  "save": "Uložit",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

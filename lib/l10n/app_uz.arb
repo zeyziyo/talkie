@@ -692,5 +692,7 @@
   "addNewSubject": "Yangi nom qo'shish",
   "selectExistingSubject": "Mavjud nomni tanlang",
   "addTagHint": "Teg qo'shish...",
-  "save": "Saqlash"
+  "save": "Saqlash",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

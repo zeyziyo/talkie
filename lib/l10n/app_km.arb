@@ -692,5 +692,7 @@
   "addNewSubject": "បន្ថែមឈ្មោះថ្មី",
   "selectExistingSubject": "ជ្រើសរើសឈ្មោះដែលមានស្រាប់",
   "addTagHint": "បន្ថែមស្លាក...",
-  "save": "រក្សាទុក"
+  "save": "រក្សាទុក",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

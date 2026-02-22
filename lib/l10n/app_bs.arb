@@ -692,5 +692,7 @@
   "addNewSubject": "Dodaj novi naslov",
   "selectExistingSubject": "Odaberite postojeći naslov",
   "addTagHint": "Dodaj oznaku...",
-  "save": "Spasi"
+  "save": "Spasi",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

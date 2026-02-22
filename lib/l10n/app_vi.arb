@@ -692,5 +692,7 @@
   "addNewSubject": "Thêm tên mới",
   "selectExistingSubject": "Chọn tên hiện có",
   "addTagHint": "Thêm thẻ...",
-  "save": "Lưu"
+  "save": "Lưu",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

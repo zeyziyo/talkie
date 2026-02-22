@@ -692,5 +692,7 @@
   "addNewSubject": "புதிய தலைப்பைச் சேர்க்கவும்",
   "selectExistingSubject": "ஏற்கனவே உள்ள தலைப்பைத் தேர்ந்தெடுக்கவும்",
   "addTagHint": "குறிச்சொற்களைச் சேர்க்கவும்...",
-  "save": "சேமி"
+  "save": "சேமி",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

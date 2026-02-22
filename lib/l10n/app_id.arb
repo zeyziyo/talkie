@@ -692,5 +692,7 @@
   "addNewSubject": "Tambahkan Judul Baru",
   "selectExistingSubject": "Pilih Judul yang Ada",
   "addTagHint": "Tambahkan tag...",
-  "save": "Simpan"
+  "save": "Simpan",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

@@ -692,5 +692,7 @@
   "addNewSubject": "Nieuwe titel toevoegen",
   "selectExistingSubject": "Bestaande titel selecteren",
   "addTagHint": "Tag toevoegen...",
-  "save": "Opslaan"
+  "save": "Opslaan",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

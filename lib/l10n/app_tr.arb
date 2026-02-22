@@ -692,5 +692,7 @@
   "addNewSubject": "Yeni Başlık Ekle",
   "selectExistingSubject": "Mevcut Başlığı Seç",
   "addTagHint": "Etiket ekle...",
-  "save": "Kaydet"
+  "save": "Kaydet",
+  "noDialogueHistory": "No dialogue history.",
+  "manageParticipants": "Manage Participants"
 }

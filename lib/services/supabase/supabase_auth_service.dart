@@ -1,5 +1,5 @@
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:google_sign_in/google_sign_in.dart' as gAuth;
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'supabase_helper.dart';
 
@@ -26,7 +26,7 @@ class SupabaseAuthService {
       // webClientId and iosClientId are currently configured in Supabase Console
       // and google-services.json for native signIn() to work.
 
-      final dynamic googleClient = gAuth.GoogleSignIn();
+      final dynamic googleClient = GoogleSignIn();
       
       final googleUser = await googleClient.signIn();
       if (googleUser == null) return null; // Cancelled
