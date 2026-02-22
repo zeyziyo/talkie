@@ -233,16 +233,16 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
   "subject": "첫 만남 (First Meeting)",
   "dialogues": [
     {
-      "speaker": "조단",
+      "speaker": "ai_persona",
       "text": "안녕하세요! 제 이름은 조단입니다.",
       "sequence_order": 1,
-      "style": "높임말",
-      "tags": ["인사", "소개"]
+      "style": "Formal",
+      "tags": ["Greeting"]
     }
   ],
   "participants": [
-    { "id": "p1", "name": "조단", "role": "사용자", "gender": "남성", "lang_code": "en-US" },
-    { "id": "p2", "name": "민지", "role": "AI", "gender": "여성", "lang_code": "ko-KR" }
+    { "id": "user_1", "name": "나", "role": "user", "gender": "male", "lang_code": "ko-KR" },
+    { "id": "ai_persona", "name": "조단", "role": "ai", "gender": "male", "lang_code": "en-US" }
   ]
 }''';
 

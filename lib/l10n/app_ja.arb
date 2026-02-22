@@ -205,6 +205,14 @@
     "description": "Import error title"
   },
   "importFile": "ファイル: {fileName}",
+  "addParticipant": "参加者を追加",
+  "editParticipant": "参加者を編集",
+  "labelRole": "役割",
+  "labelLangCode": "言語コード (例: en-US, ja-JP)",
+  "roleUser": "ユーザー",
+  "roleAi": "AI",
+  "participantDeleted": "参加者が削除されました。",
+  "confirmDeleteParticipant": "この参加者を削除してもよろしいですか？",
   "@importFile": {
     "description": "Imported file name",
     "placeholders": {
@@ -617,6 +625,7 @@
   "personaFriend": "地元の友人",
   "chatUntitled": "Untitled Conversation",
   "chatAiChat": "チャット",
+  "manageParticipants": "参加者管理",
   "tutorialAiChatTitle": "AIチャット",
   "tutorialAiChatDesc": "AIペルソナと実践的な会話を練習しましょう。",
   "mode1SelectedMaterial": "Current Material Set: {name}",

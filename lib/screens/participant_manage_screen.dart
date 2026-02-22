@@ -28,7 +28,7 @@ class _ParticipantManageScreenState extends State<ParticipantManageScreen> {
     final nameController = TextEditingController(text: participant?.name ?? '');
     String role = participant?.role ?? 'user';
     String gender = participant?.gender ?? 'female';
-    String langCode = participant?.langCode ?? 'en-US'; // Default to English or AppState default?
+    String langCode = participant?.langCode ?? 'en-US';
 
     showDialog(
       context: context,
@@ -36,39 +36,40 @@ class _ParticipantManageScreenState extends State<ParticipantManageScreen> {
         return StatefulBuilder(
           builder: (context, setState) {
             return AlertDialog(
-              title: Text(participant == null ? 'Add Participant' : 'Edit Participant'),
+              title: Text(participant == null ? l10n.addParticipant : l10n.editParticipant),
               content: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     TextField(
                       controller: nameController,
-                      decoration: InputDecoration(labelText: 'Name'),
+                      decoration: InputDecoration(labelText: l10n.labelName),
                     ),
                     const SizedBox(height: 16),
                     DropdownButtonFormField<String>(
-                      initialValue: role,
-                      decoration: InputDecoration(labelText: 'Role'),
-                      items: const [
-                        DropdownMenuItem(value: 'user', child: Text('User')),
-                        DropdownMenuItem(value: 'ai', child: Text('AI')), // Changed to 'ai' for consistency
+                      value: role,
+                      decoration: InputDecoration(labelText: l10n.labelRole),
+                      items: [
+                        DropdownMenuItem(value: 'user', child: Text(l10n.roleUser)),
+                        DropdownMenuItem(value: 'ai', child: Text(l10n.roleAi)),
                       ],
                       onChanged: (val) => setState(() => role = val!),
                     ),
                      const SizedBox(height: 16),
                     DropdownButtonFormField<String>(
-                      initialValue: gender,
-                      decoration: InputDecoration(labelText: 'Gender'),
-                      items: const [
-                        DropdownMenuItem(value: 'male', child: Text('Male')),
-                        DropdownMenuItem(value: 'female', child: Text('Female')),
+                      value: gender,
+                      decoration: InputDecoration(labelText: l10n.gender),
+                      items: [
+                        DropdownMenuItem(value: 'male', child: Text(l10n.male)),
+                        DropdownMenuItem(value: 'female', child: Text(l10n.female)),
+                        DropdownMenuItem(value: 'neutral', child: Text(l10n.neutral)),
                       ],
                       onChanged: (val) => setState(() => gender = val!),
                     ),
                     const SizedBox(height: 16),
                     TextField(
                        controller: TextEditingController(text: langCode),
-                       decoration: InputDecoration(labelText: 'Language Code (e.g. en-US, fr-FR)'),
+                       decoration: InputDecoration(labelText: l10n.labelLangCode),
                        onChanged: (val) => langCode = val,
                     ),
                   ],
@@ -115,9 +116,10 @@ class _ParticipantManageScreenState extends State<ParticipantManageScreen> {
   Widget build(BuildContext context) {
     // We can use l10n for title if available, else hardcode for now or add to arb
     // Assuming 'Manage Participants' string might not be in l10n yet.
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Manage Participants'),
+        title: Text(l10n.manageParticipants),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => _showEditDialog(context, null),
@@ -145,21 +147,21 @@ class _ParticipantManageScreenState extends State<ParticipantManageScreen> {
                 trailing: IconButton(
                   icon: const Icon(Icons.delete, color: Colors.red),
                   onPressed: () async {
-                     final confirm = await showDialog<bool>(
-                       context: context,
-                       builder: (context) => AlertDialog(
-                         title: const Text('Delete?'),
-                         content: Text('Delete participant "${p.name}"?'),
-                         actions: [
-                           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
-                           TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Delete')),
-                         ],
-                       ),
-                     );
-                     
-                     if (confirm == true) {
-                       await appState.deleteGlobalParticipant(p.id);
-                     }
+                    final confirm = await showDialog<bool>(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        title: Text(l10n.delete),
+                        content: Text(l10n.confirmDeleteParticipant),
+                        actions: [
+                          TextButton(onPressed: () => Navigator.pop(context, false), child: Text(l10n.cancel)),
+                          TextButton(onPressed: () => Navigator.pop(context, true), child: Text(l10n.delete)),
+                        ],
+                      ),
+                    );
+                    
+                    if (confirm == true) {
+                      await appState.deleteGlobalParticipant(p.id);
+                    }
                   },
                 ),
                 onTap: () => _showEditDialog(context, p),

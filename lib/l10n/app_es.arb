@@ -205,6 +205,14 @@
     "description": "Import error title"
   },
   "importFile": "Archivo: {fileName}",
+  "addParticipant": "Añadir Participante",
+  "editParticipant": "Editar Participante",
+  "labelRole": "Rol",
+  "labelLangCode": "Código de Idioma (ej. en-US, es-ES)",
+  "roleUser": "Usuario",
+  "roleAi": "IA",
+  "participantDeleted": "Participante eliminado.",
+  "confirmDeleteParticipant": "¿Estás seguro de que quieres eliminar a este participante?",
   "@importFile": {
     "description": "Imported file name",
     "placeholders": {
@@ -617,6 +625,7 @@
   "personaFriend": "Amigo local",
   "chatUntitled": "Untitled Conversation",
   "chatAiChat": "Chat",
+  "manageParticipants": "Gestionar Participantes",
   "tutorialAiChatTitle": "Chat de IA",
   "tutorialAiChatDesc": "Practica conversaciones reales con personajes de IA.",
   "mode1SelectedMaterial": "Current Material Set: {name}",

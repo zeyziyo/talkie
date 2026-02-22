@@ -849,7 +849,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 VerticalDivider(width: 8, thickness: 1, color: Colors.grey.shade300),
                 // 2. Gender Toggle (User)
                 Tooltip(
-                  message: 'Toggle Gender',
+                  message: l10n.gender,
                   child: InkWell(
                     onTap: () {
                       final newGender = appState.chatUserGender == 'male' ? 'female' : 'male';
@@ -945,7 +945,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 VerticalDivider(width: 8, thickness: 1, color: Colors.grey.shade300),
                 // 2. Gender Toggle (AI)
                 Tooltip(
-                  message: 'Toggle Gender',
+                  message: l10n.gender,
                   child: InkWell(
                     onTap: () async {
                       // Phase 137 Fix: Simplified Gender Toggle with Forced UI Update
@@ -1037,13 +1037,14 @@ class _ChatScreenState extends State<ChatScreen> {
   // Handle Logic Helpers
   Future<void> _showRenameDialog(ChatParticipant p, AppState appState) async {
      final controller = TextEditingController(text: p.name);
+     final l10n = AppLocalizations.of(context)!;
      await showDialog(
        context: context,
        builder: (context) => AlertDialog(
-         title: Text(AppLocalizations.of(context)?.participantRename ?? 'Rename'),
+         title: Text(l10n.participantRename),
          content: TextField(
            controller: controller, 
-           decoration: const InputDecoration(labelText: 'Name', border: OutlineInputBorder())
+           decoration: InputDecoration(labelText: l10n.labelName, border: const OutlineInputBorder())
          ),
          actions: [
             TextButton(
