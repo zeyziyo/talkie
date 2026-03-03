@@ -13,24 +13,24 @@
   <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid #d0e3ff; margin-bottom: 20px;">
     <h4 style="margin-top: 0; color: #1565c0; border-bottom: 1px solid #eee; padding-bottom: 8px;">자료집 관리 (Subject Management)</h4>
     <div style="display: flex; gap: 10px; margin-bottom: 12px;">
-      <div style="flex: 4; background: #f9f9f9; padding: 10px; border-radius: 6px; border: 1px solid #ddd; color: #666;">
-        새 제목 입력... <a href="./logic_reference.md#LC-SUBJECT-NEW" style="text-decoration: none; font-size: 11px; vertical-align: super;">[1]</a>
+      <div style="flex: 4; background: #f9f9f9; padding: 10px; border-radius: 6px; border: 1px solid #ddd; color: #666; font-size: 13px;">
+        새 자료집/주제 이름 입력창 <a href="./logic_reference.md#LC-SUBJECT-NEW" style="text-decoration: none; font-size: 11px; vertical-align: super;">[1]</a>
       </div>
-      <div style="flex: 1; background: #eee; padding: 10px; border-radius: 6px; text-align: center; font-size: 13px;">추가</div>
+      <div style="flex: 1; background: #e0e0e0; padding: 10px; border-radius: 6px; text-align: center; font-size: 13px;">추가</div>
     </div>
-    <div style="background: #fff9c4; padding: 12px; border-radius: 6px; border: 1px solid #ffe082; font-size: 14px; color: #856404;">
-      기존 제목 태그 선택 (드롭다운) <a href="./logic_reference.md#LC-SUBJECT-PICK" style="text-decoration: none; font-size: 11px; vertical-align: super;">[2]</a>
+    <div style="background: #fff9c4; padding: 12px; border-radius: 6px; border: 1px solid #ffe082; font-size: 13px; color: #856404;">
+      기본 또는 기존 자료집 선택 (자동 완성 드롭다운 적용) <a href="./logic_reference.md#LC-SUBJECT-PICK" style="text-decoration: none; font-size: 11px; vertical-align: super;">[2]</a>
     </div>
   </div>
 
   <!-- 태그 및 주석 섹션 -->
   <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid #d0e3ff; margin-bottom: 20px;">
-    <h4 style="margin-top: 0; color: #1565c0; border-bottom: 1px solid #eee; padding-bottom: 8px;">메모 및 검색 태그</h4>
-    <div style="background: #f9f9f9; padding: 10px; border-radius: 6px; border: 1px solid #ddd; margin-bottom: 10px;">
-      일반 태그 관리 (추가/삭제) <a href="./logic_reference.md#LC-TAGS" style="text-decoration: none; font-size: 11px; vertical-align: super;">[3]</a>
+    <h4 style="margin-top: 0; color: #1565c0; border-bottom: 1px solid #eee; padding-bottom: 8px;">상황 메타데이터 (Context & Retrieval)</h4>
+    <div style="background: #fdfdfd; padding: 11px; border-radius: 6px; border: 1px solid #d0e3ff; border-left: 4px solid #1565c0; margin-bottom: 10px;">
+      주석 (Context Note) : 기계번역 품질 향상을 위한 필수 힌트 <a href="./logic_reference.md#LC-NOTE-INPUT" style="text-decoration: none; font-size: 11px; vertical-align: super;">[4]</a>
     </div>
-    <div style="background: #fdfdfd; padding: 11px; border-radius: 6px; border: 1px solid #d0e3ff; border-left: 4px solid #1565c0;">
-      주석 (Context Note) <a href="./logic_reference.md#LC-NOTE-INPUT" style="text-decoration: none; font-size: 11px; vertical-align: super;">[4]</a>
+    <div style="background: #f9f9f9; padding: 10px; border-radius: 6px; border: 1px solid #ddd; font-size: 13px;">
+      부가 검색 태그 입력 (여러 개 지정 가능) <a href="./logic_reference.md#LC-TAGS" style="text-decoration: none; font-size: 11px; vertical-align: super;">[3]</a>
     </div>
   </div>
 

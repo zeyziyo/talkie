@@ -53,8 +53,8 @@
 ### [8] 데이터 저장
 - **파일**: `lib/providers/app_state_mode1.dart`
 - **기능**: `saveTranslation({List<String>? tags})`
-- **설명**: 입력된 모든 정보(텍스트, 태그, 어근 등)를 로컬 및 클라우드 DB에 동시 저장합니다.
-- **Smart Sync (Phase 87+):** 저장 시 선택된 자료집 제목이 없으면 소스 문장의 파일명 등을 분석하여 기존 자료집에 자동으로 매칭하거나 중복을 방지하는 스마트 동기화 로직이 작동합니다.
+- **설명**: 입력된 모든 정보(텍스트, 태그, 어근, 주석 등)를 로컬 및 클라우드 DB에 동시 저장합니다.
+- **Smart Sync & Integrity (v16.1.0+):** 저장 시 선택된 자료집 제목이 없으면 소스 언어 환경에 맞춘 기본명(예: '나의 단어장')이 강제 부여되어 유실을 방지합니다. 외부 자료 임포트 내역(Online Library 등)과 통합 관리되며, 현지어로 이름이 바뀌어도 `syncKey`로 백그라운드 추적 및 복원(`_repairLocalTitles`)이 자동 수행됩니다.
 
 <a id="LC-SUBJECT-NEW"></a>
 ### [9] 새 제목 입력
@@ -63,10 +63,11 @@
 - **설명**: 사용자가 새로운 자료집 이름을 직접 입력하여 생성합니다.
 
 <a id="LC-SUBJECT-PICK"></a>
-### [10] 기존 제목 선택
-- **파일**: `lib/widgets/metadata_dialog.dart`
+### [10] 기존 제목 선택 (드롭다운)
+- **파일**: `lib/widgets/metadata_dialog.dart` (과거), `lib/widgets/mode1_widget.dart` (현재 메인뷰)
 - **로직**: `appState.setSelectedSaveSubject(value)`
-- **설명**: 이미 존재하는 자료집 목록 중에서 저장할 위치를 선택합니다.
+- **설명**: 사용자가 학습 자료를 묶어서 관리할 그룹(자료집 명칭)을 선택합니다. 
+- **Auto Completer**: 현재는 Mode 1 메인뷰에서 자동 완성 드롭다운으로 신속하게 기존 자료집을 찾고 할당할 수 있도록 UX가 개편되었습니다.
 
 <a id="LC-TAGS"></a>
 ### [11] 일반 태그 관리

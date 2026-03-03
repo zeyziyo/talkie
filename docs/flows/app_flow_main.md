@@ -11,13 +11,13 @@
 
   <!-- 상단 컨트롤 (AppBar Bottom) -->
   <div style="background: white; padding: 15px; border-radius: 12px; border: 1px solid #d0e3ff; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
-    <div style="font-size: 11px; color: #1a73e8; margin-bottom: 8px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">AppBar Bottom Area</div>
+    <div style="font-size: 11px; color: #1a73e8; margin-bottom: 8px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Navigation & Mode</div>
     <div style="display: flex; gap: 12px;">
       <div style="flex: 1; background: #f8faff; padding: 12px; border-radius: 8px; border: 1px solid #e1e8f5; text-align: center; font-size: 15px; font-weight: bold; color: #1a73e8;">
-        단어 / 문장 토글 <a href="./logic_reference.md#LC-TOGGLE" style="text-decoration: none; font-size: 12px; vertical-align: super;">[1]</a>
+        단어 / 문장 탭 토글 <a href="./logic_reference.md#LC-TOGGLE" style="text-decoration: none; font-size: 12px; vertical-align: super;">[1]</a>
       </div>
-      <div style="flex: 1; background: #f8faff; padding: 12px; border-radius: 8px; border: 1px solid #e1e8f5; text-align: center; font-size: 15px; font-weight: bold; color: #1a73e8;">
-        언어 전환 <a href="./logic_reference.md#LC-SWAP-LANG" style="text-decoration: none; font-size: 12px; vertical-align: super;">[2]</a>
+      <div style="flex: 1; background: #e8f0fe; padding: 12px; border-radius: 8px; border: 1px solid #d2e3fc; text-align: center; font-size: 14px; font-weight: bold; color: #1565c0;">
+        언어 표시 및 전환 <a href="./logic_reference.md#LC-SWAP-LANG" style="text-decoration: none; font-size: 12px; vertical-align: super;">[2]</a>
       </div>
     </div>
   </div>
@@ -32,15 +32,17 @@
 
   <!-- 액션 라인 -->
   <div style="display: flex; gap: 15px; margin-bottom: 25px; align-items: center;">
-    <div style="flex: 1; background: white; padding: 12px; border-radius: 8px; border: 1px solid #dce1e9; text-align: center;">
-      품사 선택 <a href="./logic_reference.md#LC-POS-SELECT" style="text-decoration: none; font-size: 12px; vertical-align: super;">[5]</a>
+    <div style="flex: 1.5; background: white; padding: 12px; border-radius: 8px; border: 1px solid #dce1e9; text-align: center; font-size: 13px;">
+      의미/품사 선택 <a href="./logic_reference.md#LC-POS-SELECT" style="text-decoration: none; font-size: 12px; vertical-align: super;">[5]</a>
     </div>
-    <a href="./app_flow_metadata.md" style="flex: 2; background: #2979ff; color: white; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(41, 121, 255, 0.3);">상세 분류 (클릭하여 이동)</a>
+    <a href="./app_flow_metadata.md" style="flex: 2; background: #e3f2fd; color: #1976d2; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: bold; border: 1px solid #bbdefb;">상세 분류 설정 시 이동 ➔</a>
   </div>
 
   <!-- 실행 및 결과 -->
-  <div style="background: #4caf50; color: white; padding: 15px; border-radius: 10px; text-align: center; font-weight: bold; margin-bottom: 20px;">
-    번역 <a href="./logic_reference.md#LC-TRANSLATE" style="text-decoration: none; color: white; font-size: 12px; vertical-align: super;">[6]</a>
+  <div style="display: flex; gap: 15px; margin-bottom: 20px;">
+    <div style="flex: 1; background: #4caf50; color: white; padding: 15px; border-radius: 10px; text-align: center; font-weight: bold; box-shadow: 0 4px 6px rgba(76, 175, 80, 0.3);">
+      번역 실행 <a href="./logic_reference.md#LC-TRANSLATE" style="text-decoration: none; color: white; font-size: 12px; vertical-align: super;">[6]</a>
+    </div>
   </div>
   
   <div style="background: white; padding: 20px; border-radius: 10px; border: 1px solid #dce1e9;">
