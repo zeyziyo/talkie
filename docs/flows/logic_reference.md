@@ -90,5 +90,94 @@
 <a id="LC-GRAMMAR"></a>
 ### [14] 활용형/문법 정보
 - **파일**: `lib/providers/app_state_mode1.dart`
-- **로직**: `appState.setSourcePos()`, `appState.setSourceFormType()`
 - **설명**: 품사나 문장 종류 등 구조화된 문법 메타데이터를 저장합니다.
+
+<a id="LC-SEARCHBAR"></a>
+### [15] 스마트 검색
+- **파일**: `lib/widgets/mode2_widget.dart`, `lib/widgets/mode3_widget.dart`
+- **로직**: `appState.searchByType()`, `appState.jumpToSearchResult()`
+- **설명**: 학습 자료 내 단어/문장을 자동 완성으로 신속 검색하고 점프합니다.
+
+<a id="LC-SEARCH-FILTER"></a>
+### [16] 검색 필터 및 태그 조건
+- **파일**: `lib/widgets/search_filter_dialog.dart`
+- **로직**: `appState.setSelectedTags()`, `appState.setFilterLimit()`
+- **설명**: 특정 품사, 품사 형태, 태그 등 다중 조건으로 학습 자료 풀을 필터링합니다.
+
+<a id="LC-TOGGLE-MEMORIZED"></a>
+### [17] 암기 완료 보기 토글
+- **파일**: `lib/widgets/mode2_widget.dart`, `lib/widgets/mode3_widget.dart`
+- **로직**: `appState.setShowMemorized(!appState.showMemorized)`
+- **설명**: 이미 외운 항목(is_memorized = true)을 리스트에 표시하거나 숨깁니다.
+
+<a id="LC-AUTOPLAY"></a>
+### [18] 자동 재생 (Auto Play)
+- **파일**: `lib/widgets/mode2_widget.dart`
+- **로직**: `_startAutoPlay()`, `_stopAutoPlay()`
+- **설명**: 전체 리스트를 순차적으로 스크롤하며 TTS를 자동 발음하는 복습 기능입니다.
+
+<a id="LC-THINKING-TIME"></a>
+### [19] 타이머(대기시간) 설정
+- **파일**: `lib/widgets/mode2_widget.dart`
+- **상태**: `_thinkingInterval`
+- **설명**: 자동 재생 시 카드 앞(모국어) 뒤(학습어) 사이의 생각할 시간을 조절합니다 (기본 2초).
+
+<a id="LC-MARK-MEMORIZED"></a>
+### [20] 암기 완료 체크
+- **파일**: `lib/widgets/mode2_card.dart`
+- **로직**: `appState.toggleMemorizedStatus()`
+- **설명**: 학습자가 암기를 완료했다고 표시하여 진행률과 필터에 반영합니다. DB에 `is_memorized` 플래그가 저장됩니다.
+
+<a id="LC-PRACTICE-STT"></a>
+### [21] 평가용 음성 인식 (Practice STT)
+- **파일**: `lib/widgets/mode3_practice_card.dart`
+- **로직**: `appState.startMode3ListeningManual()`
+- **설명**: 사용자의 발음을 인식하여 텍스트로 변환하고 `spoken_text`에 저장합니다.
+
+<a id="LC-STOP-MIC"></a>
+### [22] 연습 마이크 중지
+- **파일**: `lib/widgets/mode3_practice_card.dart`
+- **로직**: `appState.stopMode3ListeningManual()`
+- **설명**: 인식 대기 중인 마이크를 수동으로 닫고 세션을 초기화합니다.
+
+<a id="LC-JUDGE"></a>
+### [23] 발음 채점 (Judge)
+- **파일**: `lib/providers/app_state_mode3.dart`
+- **로직**: `_evaluateSpeech()`
+- **설명**: AI 또는 유사도 평가를 통해 사용자의 발음(STT)과 정답 텍스트를 비교하여 Great/Good/Try Again으로 평가합니다. 동음이의어 매핑 등이 적용됩니다.
+
+<a id="LC-PARTNER-MODE"></a>
+### [24] AI / 파트너 모드 전환
+- **파일**: `lib/screens/chat_screen.dart`
+- **상태**: `_isPartnerMode`
+- **설명**: 혼자서 1인 다역(Role-play)을 하는 파트너 모드와 AI가 능동적으로 대답하는 AI 모드를 전환합니다.
+
+<a id="LC-CHAT-SAVE"></a>
+### [25] 대화 저장 및 종료
+- **파일**: `lib/screens/chat_screen.dart`
+- **로직**: `_endChat()`
+- **설명**: 대화 이력을 닫으며 상황 제목과 위치 정보(GPS/IP) 및 주석을 저장합니다. (AI 자동 제목 추천 지원)
+
+<a id="LC-AI-TTS"></a>
+### [26] 대화 상대 TTS 듣기
+- **파일**: `lib/screens/chat_screen.dart`
+- **로직**: `_speak()`
+- **설명**: 파트너 또는 AI의 음성을 설정된 언어의 TTS 엔진으로 읽어줍니다. 
+
+<a id="LC-CHAT-TRANSLATE"></a>
+### [27] 대화 번역 토글
+- **파일**: `lib/screens/chat_screen.dart`
+- **상태**: `_showTranslationMap`
+- **설명**: 상대방의 외국어 문장 하단에 번역된 모국어 뜻을 보이거나 숨깁니다.
+
+<a id="LC-CHAT-PROCESS"></a>
+### [28] 대화 메시지 처리
+- **파일**: `lib/screens/chat_screen.dart`
+- **로직**: `_sendMessage()` -> `TranslationService` -> `SupabaseService.processChat()`
+- **설명**: 사용자의 입력을 즉시 번역하여 보여주고, AI 모드일 경우 문맥과 함께 서버로 전송해 AI 응답을 받아옵니다. 화면 상단에 로딩 게이지가 적용됩니다.
+
+<a id="LC-CHAT-MIC"></a>
+### [29] 대화용 마이크 (STT)
+- **파일**: `lib/screens/chat_screen.dart`
+- **로직**: `_startListening()`
+- **설명**: 대화창 전용 음성 인식 세션을 엽니다. 메인뷰의 전역 마이크와 충돌하지 않도록 독립 처리됩니다.
