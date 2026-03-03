@@ -12,7 +12,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get googleContinue => 'Continue with Google';
 
   @override
-  String get kakaoContinue => '카카오로 계속하기';
+  String get kakaoContinue => '使用Kakao继续';
 
   @override
   String get logout => 'Logout';
@@ -1190,7 +1190,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get statusCheckEmail => '请检查您的邮箱，完成验证。';
 
   @override
-  String get emailAlreadyInUse => '이미 등록된 이메일입니다. 로그인하거나 비밀번호 찾기를 이용해주세요.';
+  String get emailAlreadyInUse => '此邮箱已被注册，请直接登录或找回密码。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -1199,6 +1199,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get googleContinue => 'Continue with Google';
+
+  @override
+  String get kakaoContinue => '使用Kakao继续';
 
   @override
   String get logout => 'Logout';
@@ -2377,6 +2380,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get statusCheckEmail => '请验证您的电子邮件以完成身份验证。';
+
+  @override
+  String get emailAlreadyInUse => '此邮箱已被注册，请直接登录或找回密码。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -2385,6 +2391,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get googleContinue => 'Continue with Google';
+
+  @override
+  String get kakaoContinue => '以 Kakao 繼續';
 
   @override
   String get logout => 'Logout';
@@ -3563,4 +3572,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get statusCheckEmail => '請檢查電子郵件以完成驗證。';
+
+  @override
+  String get emailAlreadyInUse => '此電子郵件已註冊。請登入或使用忘記密碼功能。';
 }

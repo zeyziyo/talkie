@@ -1,0 +1,13 @@
+[한국어(ko-KR)]
+- AI와 함께하는 스마트 언어 학습 서비스 'Talkie'의 첫 번째 테스트 버전을 출시합니다.
+- 실시간 음성 인식 및 번역을 통한 학습 자료 생성 기능을 지원합니다.
+- 전 세계 80개 언어별 맞춤형 사용설명서 시스템이 탑재되었습니다.
+- 다양한 페르소나 및 GPS 위치 기반 상황극을 지원하는 AI 채팅 모드를 체험해 보세요.
+- 저장된 단어와 문장을 효율적으로 복습할 수 있는 암기 상태 관리 기능을 제공합니다.
+
+[English(en-US)]
+- Launching the first test version of 'Talkie', the smart AI-powered language learning service.
+- Supports real-time speech recognition and translation to build your own study materials.
+- Includes a localized user guide system supporting 80 different languages.
+- Try the AI Chat mode with various personas and GPS-based location scenarios.
+- Manage your vocabulary and sentences effectively with built-in review and memory tracking features.

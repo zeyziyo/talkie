@@ -12,7 +12,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get googleContinue => 'Continue with Google';
 
   @override
-  String get kakaoContinue => '카카오로 계속하기';
+  String get kakaoContinue => 'Продолжи со Kakao';
 
   @override
   String get logout => 'Logout';
@@ -1219,5 +1219,6 @@ class AppLocalizationsMk extends AppLocalizations {
       'Ве молиме проверете ја вашата е-пошта за да ја завршите верификацијата.';
 
   @override
-  String get emailAlreadyInUse => '이미 등록된 이메일입니다. 로그인하거나 비밀번호 찾기를 이용해주세요.';
+  String get emailAlreadyInUse =>
+      'Оваа е-пошта е веќе регистрирана. Ве молиме најавете се или користете го пронаоѓањето на лозинката.';
 }

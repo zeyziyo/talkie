@@ -12,7 +12,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get googleContinue => 'Continue with Google';
 
   @override
-  String get kakaoContinue => '카카오로 계속하기';
+  String get kakaoContinue => 'କାକାଓ ସହିତ ଜାରି ରଖନ୍ତୁ';
 
   @override
   String get logout => 'Logout';
@@ -1221,5 +1221,6 @@ class AppLocalizationsOr extends AppLocalizations {
   String get statusCheckEmail => 'ଇମେଲ ଯାଞ୍ଚ କରି ସତ୍ୟାପନ ସମାପ୍ତ କରନ୍ତୁ।';
 
   @override
-  String get emailAlreadyInUse => '이미 등록된 이메일입니다. 로그인하거나 비밀번호 찾기를 이용해주세요.';
+  String get emailAlreadyInUse =>
+      'ଏହି ଇମେଲ ପୂର୍ବରୁ ପଞ୍ଜୀକୃତ ହୋଇଛି। ଦୟାକରି ଲଗ୍ଇନ୍ କରନ୍ତୁ କିମ୍ବା ପାସୱାର୍ଡ ପୁନରୁଦ୍ଧାର ବ୍ୟବହାର କରନ୍ତୁ।';
 }

@@ -228,7 +228,54 @@ extension AppStateAuth on AppState {
       final response = await http.get(Uri.parse(AppConstants.onlineMaterialsIndexUrl));
       if (response.statusCode == 200) {
         final data = json.decode(utf8.decode(response.bodyBytes));
-        _onlineMaterials = List<Map<String, dynamic>>.from(data['materials'] ?? []);
+        final List<Map<String, dynamic>> rawMaterials = List<Map<String, dynamic>>.from(data['materials'] ?? []);
+        
+        // Phase 17469: Localize titles by fetching the 'subject' from the actual source JSON
+        final String baseRepoUrl = AppConstants.materialsBaseUrl;
+        
+        // Parallel fetch for subjects (Limit concurrent requests if needed, but for small index it's okay)
+        final localizedMaterials = await Future.wait(rawMaterials.map((m) async {
+          try {
+            final String? path = m['path'] as String?;
+            if (path == null) return m;
+
+            // Construct source URL based on current app source language (Native Language)
+            final String langDir = LanguageConstants.supportedLanguages.firstWhere(
+              (e) => e['code'] == _sourceLang,
+              orElse: () => {'code': _sourceLang, 'name': _sourceLang == 'en' ? 'English' : _sourceLang},
+            )['name']!;
+            
+            final String sourceUrl = '$baseRepoUrl/${Uri.encodeComponent(langDir)}/$path';
+            
+            final sResponse = await http.get(Uri.parse(sourceUrl)).timeout(const Duration(seconds: 5));
+            if (sResponse.statusCode == 200) {
+              final sData = json.decode(utf8.decode(sResponse.bodyBytes));
+              final String? localizedSubject = sData['subject'] as String?;
+              if (localizedSubject != null) {
+                 return {...m, 'localized_name': localizedSubject};
+              }
+            } else if (langDir != 'English') {
+              // Fallback to English if target language folder not found (e.g., 404)
+              final String fallbackUrl = '$baseRepoUrl/English/$path';
+              final fResponse = await http.get(Uri.parse(fallbackUrl)).timeout(const Duration(seconds: 5));
+              if (fResponse.statusCode == 200) {
+                final fData = json.decode(utf8.decode(fResponse.bodyBytes));
+                final String? fallbackSubject = fData['subject'] as String?;
+                if (fallbackSubject != null) {
+                   return {...m, 'localized_name': fallbackSubject};
+                }
+              }
+            }
+          } catch (e) {
+            debugPrint('[Online] Localization Error for ${m['name']}: $e');
+          }
+          return m; // Fallback to original name
+        }));
+
+        _onlineMaterials = localizedMaterials;
+        
+        // Phase 17480: Proactively repair existing local notebook titles using sync keys
+        await _repairLocalTitles();
       }
     } catch (e) {
       debugPrint('[Online] Index Error: $e');
@@ -240,7 +287,7 @@ extension AppStateAuth on AppState {
 
   Future<Map<String, dynamic>> importRemoteMaterial(Map<String, dynamic> material, {String? type}) async {
     final mId = material['id'];
-    final mName = material['name'] as String? ?? 'Unnamed Material';
+    final mName = material['localized_name'] as String? ?? material['name'] as String? ?? 'Unnamed Material';
     String? sPath = material['source_url'] as String?;
     String? tPath = material['target_url'] as String?;
     String? pPath = material['pivot_url'] as String?;
@@ -349,7 +396,8 @@ extension AppStateAuth on AppState {
       masterData['target_language'] = _targetLang;
 
       final masterJson = json.encode(masterData);
-      final syncKey = sPath.split('/').last.replaceAll('.json', '');
+      // Phase 17480: Use actual object ID as syncKey to match _repairLocalTitles lookup logic
+      final syncKey = mId ?? sPath.split('/').last.replaceAll('.json', '');
       String? localNotebookTitle;
 
       _statusMessage = 'L10N:importing';
@@ -357,8 +405,7 @@ extension AppStateAuth on AppState {
 
       final result = await DatabaseService.importFromJsonWithMetadata(
         masterJson, 
-        fileName: 'remote_${mId}_merged.json',
-        overrideSubject: mName, 
+        fileName: 'remote_\${mId}_merged.json',
         syncKey: syncKey, 
         userId: 'user', 
         defaultType: type,
@@ -393,6 +440,91 @@ extension AppStateAuth on AppState {
       _isTranslating = false;
       notify();
     }
+  }
+
+  Future<void> _repairLocalTitles() async {
+    if (_onlineMaterials.isEmpty) return;
+    
+    try {
+      final db = await DatabaseService.database;
+      int repairCount = 0;
+      
+      for (var m in _onlineMaterials) {
+        final id = m['id'] as String?;
+        final localizedName = m['localized_name'] as String?;
+        final originalName = m['name'] as String?;
+        if (id == null || localizedName == null) continue;
+        
+        // Phase 17480: Support for older materials that were saved with derived string sync_key instead of UUID
+        final storagePath = m['path'] as String?;
+        final legacySyncKey = storagePath != null && storagePath.isNotEmpty 
+            ? storagePath.split('/').last.replaceAll('.json', '') 
+            : 'INVALID_LEGACY_KEY';
+
+        await db.transaction((txn) async {
+          // 1. Repair Words & Sentences Meta
+          // We check if tags contain the original ID (sync key) OR the legacy sync key OR exact original English title
+          final wCount = await txn.rawUpdate('''
+            UPDATE words_meta 
+            SET notebook_title = ? 
+            WHERE notebook_title != ? 
+            AND (tags LIKE ? OR tags LIKE ? OR notebook_title = ?)
+          ''', [localizedName, localizedName, '%"$id"%', '%"$legacySyncKey"%', originalName]);
+          
+          if (wCount > 0) debugPrint('[AppState] Updated $wCount words_meta for $id');
+          
+          final sCount = await txn.rawUpdate('''
+            UPDATE sentences_meta 
+            SET notebook_title = ? 
+            WHERE notebook_title != ? 
+            AND (tags LIKE ? OR tags LIKE ? OR notebook_title = ?)
+          ''', [localizedName, localizedName, '%"$id"%', '%"$legacySyncKey"%', originalName]);
+          
+          if (sCount > 0) debugPrint('[AppState] Updated $sCount sentences_meta for $id');
+          
+          // 2. Repair Dialogue Groups
+          final dCount = await txn.rawUpdate('''
+            UPDATE dialogue_groups 
+            SET title = ? 
+            WHERE title != ? AND (note = ? OR note = ? OR title = ?)
+          ''', [localizedName, localizedName, id, legacySyncKey, originalName]);
+          
+          if (dCount > 0) debugPrint('[AppState] Updated $dCount dialogue_groups for $id');
+          
+          repairCount += wCount + sCount + dCount;
+        });
+      }
+      
+      if (repairCount > 0) {
+        debugPrint('[AppState] Repaired $repairCount existing material titles.');
+        await loadStudyMaterials();
+        await loadDialogueGroups();
+      }
+    } catch (e) {
+      debugPrint('[AppState] Title repair failed: $e');
+    }
+  }
+
+  /// Phase 17480: Global title check (Local + Online)
+  /// Returns: 'local' if exists in DB, 'online' if in online library, null if unique
+  Future<String?> checkTitleDuplicate(String title) async {
+    final cleanTitle = title.trim();
+    if (cleanTitle.isEmpty) return null;
+
+    // 1. Check Local DB (Words, Sentences, Dialogues)
+    final existsLocal = await DatabaseService.notebookTitleExists(cleanTitle);
+    if (existsLocal) return 'local';
+
+    // 2. Check Online Library (Localized Names or Subjects)
+    final existsOnline = _onlineMaterials.any((m) {
+      final locName = m['localized_name']?.toString().toLowerCase();
+      final subject = m['subject']?.toString().toLowerCase();
+      return locName == cleanTitle.toLowerCase() || subject == cleanTitle.toLowerCase();
+    });
+    
+    if (existsOnline) return 'online';
+
+    return null;
   }
 
   User? get currentUser => SupabaseAuthService.currentUser;

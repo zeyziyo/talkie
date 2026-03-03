@@ -27,7 +27,6 @@ import '../l10n/app_localizations.dart';
 import '../constants/app_constants.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:geocoding/geocoding.dart';
 
 part 'app_state_auth.dart';
 part 'app_state_mode1.dart';
@@ -97,6 +96,11 @@ class AppState extends ChangeNotifier {
       isLoggingIn = false; // Phase 15.8.11: Ensure logging in flag is also cleared
       notifyListeners();
       debugPrint('[AppState] >>> _initializeAll: FINISHED (Loading Cleared)');
+      
+      // Phase 17480: Fetch online materials in the background to proactively repair local legacy titles
+      fetchOnlineMaterialsList().catchError((e) {
+        debugPrint('[AppState] Background online fetch failed: \$e');
+      });
     }
   }
 

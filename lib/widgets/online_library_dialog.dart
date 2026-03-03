@@ -145,7 +145,7 @@ class _OnlineLibraryDialogState extends State<OnlineLibraryDialog> {
             type == 'word' ? Icons.book : (type == 'dialogue' ? Icons.chat : Icons.article),
             color: type == 'word' ? Colors.blue : (type == 'dialogue' ? Colors.green : Colors.orange),
           ),
-          title: Text(material['name'] ?? material['title'] ?? 'Untitled'),
+          title: Text(material['localized_name'] ?? material['name'] ?? material['title'] ?? 'Untitled'),
           subtitle: Text(material['description'] ?? ''),
           onTap: () async {
             try {

@@ -273,11 +273,12 @@ extension AppStateMode1 on AppState {
         
         // Phase 98: Separate title tags from general tags
         final materialSubjects = _studyMaterials.map((m) => m['subject'] as String).toSet();
-        final allTags = <String>[];
-        if (_selectedSaveSubject.isNotEmpty) allTags.add(_selectedSaveSubject);
         
-        final titleTags = allTags.where((t) => materialSubjects.contains(t)).toList();
-        final generalTags = allTags.where((t) => !materialSubjects.contains(t)).toList();
+        // If the selected subject is NOT a known material subject, treat it as a general tag
+        final generalTags = <String>[];
+        if (_selectedSaveSubject.isNotEmpty && !materialSubjects.contains(_selectedSaveSubject)) {
+          generalTags.add(_selectedSaveSubject);
+        }
         
         // 1. Phase 98.1: Build type-specific data for correct table
         final data = <String, dynamic>{
@@ -300,17 +301,22 @@ extension AppStateMode1 on AppState {
         await SupabaseService.client.from(tableName).insert(data);
 
         // 2. Add to User Meta Tables (Blueprint Alignment Phase)
+        // Phase 120/98 Fix: Use _selectedSaveSubject directly as notebook title if it's not Basic
+        final subjectToSave = _selectedSaveSubject.isNotEmpty && _selectedSaveSubject != 'Basic'
+            ? _selectedSaveSubject
+            : (itemType == 'word' ? 'My Wordbook' : 'My Collection');
+
         await SupabaseService.addToLibrary(
           groupId: gId,
           type: itemType,
           note: _note.isNotEmpty ? _note : null,
           sourceLang: _sourceLang,
           targetLang: _targetLang,
-          tags: titleTags.isNotEmpty ? titleTags : null,
-          notebookTitle: titleTags.isNotEmpty ? titleTags.first : (itemType == 'word' ? 'My Wordbook' : 'My Collection'),
+          tags: [_selectedSaveSubject.isNotEmpty ? _selectedSaveSubject : subjectToSave],
+          notebookTitle: subjectToSave,
         );
 
-        debugPrint('[AppState] Supabase Cloud Sync Successful: table=$tableName, groupId=$gId, titleTags=$titleTags, generalTags=$generalTags');
+        debugPrint('[AppState] Supabase Cloud Sync Successful: table=$tableName, groupId=$gId, subjectToSave=$subjectToSave');
       } catch (e) {
         debugPrint('[AppState] Supabase background save failed: $e');
       }
@@ -376,6 +382,7 @@ extension AppStateMode1 on AppState {
         note: _note.isNotEmpty ? _note : null,
         tags: finalTags,
         syncSubject: syncKey,
+        notebookTitle: subjectToSave, // Phase 120 Fix: Pass explicit notebook title
       );
 
       debugPrint('[AppState] Local unified save (via Service) successful: $timestamp');

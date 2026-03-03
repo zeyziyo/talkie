@@ -469,14 +469,13 @@ extension AppStateMode2 on AppState {
     }
   }
 
-  /// 기존 호환성 유지용 (Legacy)
   Future<void> loadStudyMaterials() async {
     await loadTags(); 
     // Phase 33: Also sync from cloud if logged in (v15.4)
     if (SupabaseService.client.auth.currentUser != null && !SupabaseService.client.auth.currentUser!.isAnonymous) {
       syncCloudLibraryToLocal().then((_) => loadRecordsByTags());
     }
-    _studyMaterials = await DatabaseService.getStudyMaterials(); 
+    _studyMaterials = await DatabaseService.getStudyMaterials(type: _recordTypeFilter); 
     notify();
   }
 
@@ -516,6 +515,10 @@ extension AppStateMode2 on AppState {
     } else if (filter == 'sentence') {
       _isWordMode = false;
     }
+    
+    // Phase 17469: Refresh study materials (notebooks) when filter changes
+    loadStudyMaterials();
+    
     notify();
   }
 

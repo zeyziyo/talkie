@@ -26,6 +26,16 @@ class DatabaseService {
     return sRes.isNotEmpty;
   }
 
+  /// Phase 17480: Global title check including dialogue groups
+  static Future<bool> notebookTitleExists(String title) async {
+    final db = await database;
+    // 1. Check Words/Sentences Meta
+    if (await materialExistsBySubject(title)) return true;
+    // 2. Check Dialogue Groups
+    final dRes = await db.query('dialogue_groups', where: 'title = ?', whereArgs: [title], limit: 1);
+    return dRes.isNotEmpty;
+  }
+
   // --- Word Repository Delegation ---
   static Future<int> insertWord(Map<String, dynamic> data) => WordRepository.insert(data);
   static Future<List<Map<String, dynamic>>> searchWords(String query, {int limit = 10}) => WordRepository.search(query, limit: limit);
@@ -131,9 +141,22 @@ class DatabaseService {
   // --- Material Management (Notebook based - Phase 160) ---
   // Material IDs are now strings (notebook titles)
   // getStudyMaterialById removed as it was for legacy table
-  static Future<List<Map<String, dynamic>>> getStudyMaterials() async {
+  static Future<List<Map<String, dynamic>>> getStudyMaterials({String? type}) async {
     final db = await database;
-    // Extract unique notebook titles from meta tables
+    // Extract unique notebook titles from meta tables with type filtering
+    if (type == 'word') {
+      return await db.rawQuery('''
+        SELECT DISTINCT notebook_title as subject, 'Notebook' as source 
+        FROM words_meta
+      ''');
+    } else if (type == 'sentence') {
+      return await db.rawQuery('''
+        SELECT DISTINCT notebook_title as subject, 'Notebook' as source 
+        FROM sentences_meta
+      ''');
+    }
+    
+    // Legacy/Unified fallback
     final List<Map<String, dynamic>> results = await db.rawQuery('''
       SELECT DISTINCT notebook_title as subject, 'Notebook' as source 
       FROM words_meta
@@ -368,6 +391,7 @@ class DatabaseService {
     String? syncSubject,
     int? sequenceOrder,
     int? groupId,
+    String? notebookTitle,
   }) => UnifiedRepository.saveUnifiedRecord(
     text: text,
     lang: lang,
@@ -384,6 +408,7 @@ class DatabaseService {
     syncSubject: syncSubject,
     sequenceOrder: sequenceOrder,
     groupId: groupId,
+    notebookTitle: notebookTitle,
   );
 
   static Future<void> addLanguageToUnifiedRecord({

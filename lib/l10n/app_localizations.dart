@@ -1593,7 +1593,7 @@ abstract class AppLocalizations {
   /// No description provided for @menuWebDownload.
   ///
   /// In ko, this message translates to:
-  /// **'홈페이지'**
+  /// **'사용설명서'**
   String get menuWebDownload;
 
   /// No description provided for @menuDeviceImport.

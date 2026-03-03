@@ -77,7 +77,8 @@ class TranslationService {
       final reason = result['reason'] as String? ?? (isValid ? null : 'OTHER');
       final disambiguationOptions = result['disambiguationOptions'] as List<dynamic>?;
 
-      if (!isValid) {
+      // Phase 17480: Accept translation even if AI flagged it out of ambiguity caution
+      if (!isValid && translatedText.isEmpty) {
         print('[Translation] Blocked by AI: $reason');
         return {'text': '', 'isValid': false, 'reason': reason};
       }

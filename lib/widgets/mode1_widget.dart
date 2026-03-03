@@ -299,59 +299,111 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                             
                             const SizedBox(height: 12),
                             
-                            // 3. Action Line (Horizontal Row)
-                            Row(
-                              children: [
-                                Expanded(
-                                  flex: 3,
-                                  child: DropdownButtonFormField<String>(
-                                    key: widget.materialDropdownKey,
-                                    initialValue: appState.recordTypeFilter == 'word' 
-                                        ? (AppState.posCategories.contains(appState.sourcePos) ? appState.sourcePos : null)
-                                        : (AppState.sentenceCategories.contains(appState.sourceFormType) ? appState.sourceFormType : null),
-                                    decoration: InputDecoration(
-                                      labelText: appState.recordTypeFilter == 'word' ? l10n.selectPOS : l10n.selectSentenceType,
-                                      isDense: true,
-                                      border: const OutlineInputBorder(),
-                                      contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+                             // 3. Action Line (Horizontal Row - Enhanced Phase 120)
+                             Row(
+                               children: [
+                                 // POS Dropdown (Condensed Label)
+                                 Expanded(
+                                   flex: 2,
+                                   child: DropdownButtonFormField<String>(
+                                     key: ValueKey('pos_${appState.recordTypeFilter}_${appState.sourcePos}'),
+                                     initialValue: appState.recordTypeFilter == 'word' 
+                                         ? (AppState.posCategories.contains(appState.sourcePos) ? appState.sourcePos : null)
+                                         : (AppState.sentenceCategories.contains(appState.sourceFormType) ? appState.sourceFormType : null),
+                                     decoration: InputDecoration(
+                                       labelText: appState.recordTypeFilter == 'word' ? '품사' : '문장 종류', // Dynamic label
+                                       isDense: true,
+                                       border: const OutlineInputBorder(),
+                                       contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                                     ),
+                                     items: (appState.recordTypeFilter == 'word' 
+                                             ? AppState.posCategories 
+                                             : AppState.sentenceCategories)
+                                         .map((cat) => DropdownMenuItem(
+                                               value: cat,
+                                               child: Text(_getLocalizedCategory(cat, l10n), style: const TextStyle(fontSize: 12)),
+                                             ))
+                                         .toList(),
+                                     onChanged: (val) {
+                                       if (val == null) return;
+                                       if (appState.recordTypeFilter == 'word') {
+                                         appState.setSourcePos(val);
+                                       } else {
+                                         appState.setSourceFormType(val);
+                                       }
+                                     },
+                                   ),
+                                 ),
+                                 const SizedBox(width: 6),
+                                 
+                                 // Notebook (Subject) Dropdown - New (User Request)
+                                  Expanded(
+                                    flex: 3,
+                                    child: Builder(
+                                      builder: (context) {
+                                        // Phase 17480: Robust dropdown building to prevent "Duplicate values" crash
+                                        final subjs = appState.studyMaterials
+                                            .map((m) => m['subject'] as String)
+                                            .where((s) => s != 'Basic')
+                                            .toSet()
+                                            .toList();
+                                        
+                                        // Ensure selected value is present or fallback to Basic
+                                        final String currentVal = (subjs.contains(appState.selectedSaveSubject) || appState.selectedSaveSubject == 'Basic')
+                                            ? appState.selectedSaveSubject
+                                            : 'Basic';
+
+                                        final itemsList = <DropdownMenuItem<String>>[
+                                          DropdownMenuItem(
+                                            value: 'Basic',
+                                            child: Text(
+                                              appState.recordTypeFilter == 'word' ? l10n.myWordbook : l10n.mySentenceCollection,
+                                              style: const TextStyle(fontSize: 12),
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
+                                          ),
+                                        ];
+
+                                        // Add unique subjects
+                                        for (final s in subjs) {
+                                          itemsList.add(DropdownMenuItem(
+                                            value: s,
+                                            child: Text(s, style: const TextStyle(fontSize: 12), overflow: TextOverflow.ellipsis),
+                                          ));
+                                        }
+
+                                        return DropdownButtonFormField<String>(
+                                          key: ValueKey('notebook_\${appState.recordTypeFilter}_\${appState.selectedSaveSubject}'),
+                                          initialValue: currentVal, 
+                                          decoration: InputDecoration(
+                                            labelText: appState.recordTypeFilter == 'word' ? '단어장' : '문장집',
+                                            isDense: true,
+                                            border: const OutlineInputBorder(),
+                                            contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                                          ),
+                                          items: itemsList,
+                                          onChanged: (val) {
+                                            appState.setSelectedSaveSubject(val ?? 'Basic');
+                                          },
+                                        );
+                                      },
                                     ),
-                                    items: (appState.recordTypeFilter == 'word' 
-                                            ? AppState.posCategories 
-                                            : AppState.sentenceCategories)
-                                        .map((cat) => DropdownMenuItem(
-                                              value: cat,
-                                              child: Text(_getLocalizedCategory(cat, l10n), style: const TextStyle(fontSize: 13)),
-                                            ))
-                                        .toList(),
-                                    onChanged: (val) {
-                                      if (val == null) return;
-                                      if (appState.recordTypeFilter == 'word') {
-                                        appState.setSourcePos(val);
-                                      } else {
-                                        appState.setSourceFormType(val);
-                                      }
-                                    },
                                   ),
-                                ),
-                                const SizedBox(width: 8),
-                                Expanded(
-                                  flex: 4,
-                                  child: ElevatedButton.icon(
-                                    key: widget.contextFieldKey,
-                                    onPressed: () => _showMetadataDialog(context, appState),
-                                    icon: const Icon(Icons.settings_outlined, size: 20),
-                                    label: Text(l10n.metadataDialogTitle, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                                    style: ElevatedButton.styleFrom(
-                                      padding: const EdgeInsets.symmetric(vertical: 14),
-                                      backgroundColor: Colors.blueAccent, 
-                                      foregroundColor: Colors.white,
-                                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                                      elevation: 0,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
+                                 const SizedBox(width: 4),
+                                 
+                                 // Metadata Gear Icon Button (User Request)
+                                 Material(
+                                   color: Colors.blueGrey[50],
+                                   borderRadius: BorderRadius.circular(8),
+                                   child: IconButton(
+                                     key: widget.contextFieldKey,
+                                     onPressed: () => _showMetadataDialog(context, appState),
+                                     icon: const Icon(Icons.settings, color: Colors.blueGrey),
+                                     tooltip: l10n.metadataDialogTitle,
+                                   ),
+                                 ),
+                               ],
+                             ),
                             
                             const SizedBox(height: 16),
                             

@@ -75,21 +75,64 @@ class _MetadataDialogState extends State<MetadataDialog> {
     super.dispose();
   }
 
-  void _addNewSubject() {
-    final newSubject = _newSubjectController.text.trim();
-    if (newSubject.isNotEmpty) {
-      final appState = Provider.of<AppState>(context, listen: false);
+  Future<void> _addNewSubject() async {
+    String newSubject = _newSubjectController.text.trim();
+    if (newSubject.isEmpty) return;
+
+    final appState = Provider.of<AppState>(context, listen: false);
+    final l10n = AppLocalizations.of(context)!;
+
+    // Phase 17480: If the name matches the localized default names, use 'Basic'
+    if (newSubject == l10n.myWordbook || newSubject == l10n.mySentenceCollection || newSubject == 'Basic') {
       setState(() {
-        if (!_availableTitleTags.contains(newSubject)) {
-          _availableTitleTags.add(newSubject);
-          _availableTitleTags.sort();
-        }
-        _selectedTitleTag = newSubject;
+        _selectedTitleTag = 'Basic';
         _newSubjectController.clear();
       });
-      // Update AppState immediately
-      appState.setSelectedSaveSubject(newSubject);
+      appState.setSelectedSaveSubject('Basic');
+      return;
     }
+
+    // Phase 17480: Check for duplicates before adding
+    final duplicateType = await appState.checkTitleDuplicate(newSubject);
+    
+    if (!mounted) return;
+
+    if (duplicateType == 'local') {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('"$newSubject"는 이미 생성된 자료집입니다. 해당 자료집을 선택합니다.')),
+      );
+    } else if (duplicateType == 'online') {
+      final navigator = Navigator.of(context);
+      final bool? useOnline = await showDialog<bool>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          title: const Text('온라인 자료실 중복'),
+          content: Text('"$newSubject"와 동일한 제목의 자료가 온라인 자료실에 있습니다. 온라인에서 가져오시겠습니까?'),
+          actions: [
+            TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('그냥 만들기')),
+            TextButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('온라인 자료실로 이동')),
+          ],
+        ),
+      );
+      
+      if (!mounted) return;
+      
+      if (useOnline == true) {
+        navigator.pop(); // Close MetadataDialog
+        return;
+      }
+    }
+
+    setState(() {
+      if (!_availableTitleTags.contains(newSubject)) {
+        _availableTitleTags.add(newSubject);
+        _availableTitleTags.sort();
+      }
+      _selectedTitleTag = newSubject;
+      _newSubjectController.clear();
+    });
+    // Update AppState immediately
+    appState.setSelectedSaveSubject(newSubject);
   }
 
   void _addTag() {
@@ -142,33 +185,6 @@ class _MetadataDialogState extends State<MetadataDialog> {
             ),
             const SizedBox(height: 16),
 
-            // 2. Existing Title Tag (Row 2)
-            Text(l10n.titleTagSelection, style: Theme.of(context).textTheme.labelMedium),
-            const SizedBox(height: 4),
-            DropdownButtonFormField<String>(
-              initialValue: _selectedTitleTag,
-              decoration: const InputDecoration(
-                isDense: true,
-                border: OutlineInputBorder(),
-                contentPadding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-                prefixIcon: Icon(Icons.folder_open, size: 20),
-              ),
-              hint: Text(l10n.selectExistingSubject),
-              items: _availableTitleTags.map((subject) {
-                return DropdownMenuItem(
-                  value: subject,
-                  child: Text(subject, overflow: TextOverflow.ellipsis),
-                );
-              }).toList(),
-              onChanged: (val) {
-                if (val != null) {
-                  setState(() {
-                    _selectedTitleTag = val;
-                  });
-                  appState.setSelectedSaveSubject(val);
-                }
-              },
-            ),
             const SizedBox(height: 16),
 
             // 3. General Tags (Row 3)

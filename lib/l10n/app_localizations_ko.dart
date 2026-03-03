@@ -727,7 +727,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get menuHelp => '도움말';
 
   @override
-  String get menuWebDownload => '홈페이지';
+  String get menuWebDownload => '사용설명서';
 
   @override
   String get menuDeviceImport => '기기에서 자료 가져오기';

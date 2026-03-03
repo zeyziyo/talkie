@@ -12,7 +12,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get googleContinue => 'Continue with Google';
 
   @override
-  String get kakaoContinue => '카카오로 계속하기';
+  String get kakaoContinue => 'Parhau â Kakao';
 
   @override
   String get logout => 'Logout';
@@ -1219,5 +1219,6 @@ class AppLocalizationsCy extends AppLocalizations {
   String get statusCheckEmail => 'Gwiriwch eich e-bost i gwblhau\'r dilysu.';
 
   @override
-  String get emailAlreadyInUse => '이미 등록된 이메일입니다. 로그인하거나 비밀번호 찾기를 이용해주세요.';
+  String get emailAlreadyInUse =>
+      'Mae\'r e-bost hwn eisoes yn bodoli. Mewngofnodwch neu defnyddiwch adfer cyfrinair.';
 }

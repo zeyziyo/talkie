@@ -749,7 +749,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get menuHelp => 'Help';
 
   @override
-  String get menuWebDownload => 'Get Material from Web';
+  String get menuWebDownload => 'User Guide';
 
   @override
   String get menuDeviceImport => 'Import from Device';

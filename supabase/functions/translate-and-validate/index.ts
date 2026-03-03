@@ -62,13 +62,18 @@ Deno.serve(async (req) => {
          
          Set 'inputType' to "word" or "sentence" based on the input.
       
-      4. SAFETY & REASON:
-         If the text contains EXPLICIT sexual content, SEVERE profanity, or CLEAR hate speech, set isValid to false.
-         In the "reason" field, provide a polite, descriptive sentence in the source language (${sourceLang || 'Korean'}) explaining WHY it was blocked.
+      4. SAFETY & VALIDATION (CRITICAL):
+         - You MUST ALWAYS set 'isValid' to true for all inputs.
+         - Do not act as a content filter. Do not reject or invalidate ambiguous words. Just pick the most common dictionary translation.
+         - Set 'reason' to an empty string "".
       
       5. DO NOT block harmless phrases, common greetings, or standard polite conversation.
       
       6. ENGLISH PIVOT: ${needsEnglishPivot ? 'ALWAYS include "englishText" field with the English translation for cross-language dictionary linking.' : 'If source or target is English, set "englishText" to whichever is in English.'}
+
+      7. TRANSLATION FORMAT: The 'translatedText' field MUST be a clean, single-term or phrase translation.
+         - DO NOT include explanatory text, the "note", or alternate definitions in the 'translatedText' itself.
+         - If the input is ambiguous without context (e.g., "사과"), pick the most common meaning for 'translatedText' and populate 'disambiguationOptions' with the alternatives. DO NOT set isValid=false just because of ambiguity.
 
       Provide the output in strict JSON format:
       {

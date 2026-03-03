@@ -81,6 +81,7 @@ class UnifiedRepository {
     String? syncSubject,
     int? sequenceOrder,
     int? groupId,
+    String? notebookTitle,
     String? knownProperties,
   }) async {
     final db = txn ?? await _db;
@@ -158,7 +159,7 @@ class UnifiedRepository {
       'data_json': jsonEncode(contentMap),
       'created_at': timestamp,
       // Meta fields
-      'notebook_title': syncSubject ?? 'My Collection', // Use syncSubject as notebook title by default
+      'notebook_title': notebookTitle ?? (syncSubject ?? 'My Collection'), // Use explicit title if provided, fallback to syncSubject (Phase 160) or default
       'source_lang': lang,
       'target_lang': targetLang,
       'caption': note, // Note plays dual role: shared content note & personal caption
