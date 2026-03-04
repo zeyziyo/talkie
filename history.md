@@ -23,6 +23,13 @@
 
 ---
 
+### [2026-03-04] GitHub Actions 빌드 복구 및 CI 워크플로우 견고화 (v16.2.1)
+
+- **CI Build Fix**: `sqlite3` 네이티브 에셋(`libsqlite3.x64.android.so`) 다운로드 시 발생하는 `HttpException` 이슈를 해결하기 위해 `build-apk.yml` 워크플로우를 수정했습니다.
+- **Robustness**: `curl` 옵션에 `--fail`, `--location`, `--connect-timeout`, `--retry 10` 등을 추가하여 네트워크 불안정 상황에서의 재시도 로직을 대폭 강화했습니다.
+- **Verification Logic**: 다운로드 완료 후 에셋 파일의 존재 여부와 개수(4개 아키텍처)를 검증하는 단계를 추가하여, 불완전한 상태로 빌드가 진행되는 것을 방지했습니다.
+
+
 ### [2026-03-04] 리소스 소실 복구 및 전 세계 언어 현지화 완결 (v16.2.0)
 
 - **Data Recovery**: `git checkout`으로 유실되었던 10,537개의 l10n 번역 항목을 `mark_all_untranslated.py` 도구를 통해 전수 식별하고 재번역하여 시스템 무결성을 완벽히 복구했습니다.

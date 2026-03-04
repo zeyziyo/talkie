@@ -43,11 +43,25 @@ jobs:
         PUB_CACHE_DIR="${PUB_CACHE:-$HOME/.pub-cache}"
         TARGET_DIR="$PUB_CACHE_DIR/hosted/pub.dev/sqlite3-$VERSION"
         mkdir -p "$TARGET_DIR"
+        
+        echo "Starting download for sqlite3 $VERSION native assets..."
         for arch in arm arm64 x64 x86; do
           FILE="libsqlite3.$arch.android.so"
-          echo "Attempting to download $FILE to $TARGET_DIR..."
-          curl --retry 5 --retry-delay 5 -L -o "$TARGET_DIR/$FILE" "$BASE_URL/$FILE" || echo "Warning: Failed to download $FILE"
+          echo "Downloading $FILE..."
+          # Use --fail, --retry, and --location for robustness
+          curl --fail --location --connect-timeout 30 --retry 10 --retry-delay 5 --retry-connrefused \
+            -o "$TARGET_DIR/$FILE" "$BASE_URL/$FILE"
         done
+        
+        echo "Verifying downloaded assets in $TARGET_DIR:"
+        ls -lh "$TARGET_DIR"
+        # Verify that at least one .so file was downloaded
+        count=$(ls -1 "$TARGET_DIR"/*.so 2>/dev/null | wc -l)
+        if [ "$count" -lt 4 ]; then
+          echo "Error: Some sqlite3 native assets are missing! (Found $count/4)"
+          exit 1
+        fi
+        echo "All sqlite3 native assets downloaded successfully."
 
     - name: Generate Localizations
       run: flutter gen-l10n
