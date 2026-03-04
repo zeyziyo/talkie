@@ -23,6 +23,12 @@
 
 ---
 
+### [2026-03-04] GitHub Actions 빌드 복구 - 아키텍처 명칭 불일치 해결 (v16.2.2)
+
+- **CI Asset Fix**: `sqlite3` 릴리스 자산의 `x86` 아키텍처 파일명이 서버상에서 `ia32`로 명명되어 있는 것을 확인하여 `build-apk.yml`의 다운로드 루프를 `ia32`로 수정했습니다.
+- **Verification Logic**: 다운로드 성공 여부 검증 필터를 다시 한번 최적화하여 빌드 안정성을 높였습니다.
+
+
 ### [2026-03-04] GitHub Actions 빌드 복구 및 CI 워크플로우 견고화 (v16.2.1)
 
 - **CI Build Fix**: `sqlite3` 네이티브 에셋(`libsqlite3.x64.android.so`) 다운로드 시 발생하는 `HttpException` 이슈를 해결하기 위해 `build-apk.yml` 워크플로우를 수정했습니다.

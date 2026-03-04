@@ -45,7 +45,7 @@ jobs:
         mkdir -p "$TARGET_DIR"
         
         echo "Starting download for sqlite3 $VERSION native assets..."
-        for arch in arm arm64 x64 x86; do
+        for arch in arm arm64 x64 ia32; do
           FILE="libsqlite3.$arch.android.so"
           echo "Downloading $FILE..."
           # Use --fail, --retry, and --location for robustness
