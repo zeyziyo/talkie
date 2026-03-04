@@ -132,6 +132,10 @@ extension AppStateSettings on AppState {
       'kn': 'kn-IN',
       'ml': 'ml-IN',
       'pa': 'pa-IN',
+      'as': 'as-IN', // Assamese
+      'ne': 'ne-NP', // Nepali
+      'si': 'si-LK', // Sinhala
+      'or': 'or-IN', // Odia
       
       // European
       'en': 'en-US',
@@ -151,7 +155,26 @@ extension AppStateSettings on AppState {
       'da': 'da-DK',
       'fi': 'fi-FI',
       'no': 'no-NO',
+      'nb': 'no-NO', // Bokmal
       'hu': 'hu-HU',
+      'pl-PL': 'pl-PL',
+      'sk': 'sk-SK', // Slovak
+      'sl': 'sl-SI', // Slovenian
+      'bg': 'bg-BG', // Bulgarian
+      'hr': 'hr-HR', // Croatian
+      'bs': 'bs-BA', // Bosnian
+      'sr': 'sr-RS', // Serbian
+      'sq': 'sq-AL', // Albanian
+      'et': 'et-EE', // Estonian
+      'lv': 'lv-LV', // Latvian
+      'lt': 'lt-LT', // Lithuanian
+      'is': 'is-IS', // Icelandic
+      'be': 'be-BY', // Belarusian
+      'ca': 'ca-ES', // Catalan
+      'gl': 'gl-ES', // Galician
+      'eu': 'eu-ES', // Basque
+      'cy': 'cy-GB', // Welsh
+      'mk': 'mk-MK', // Macedonian
       
       // Southeast Asian
       'id': 'id-ID',
@@ -159,16 +182,30 @@ extension AppStateSettings on AppState {
       'th': 'th-TH',
       'fil': 'fil-PH',
       'ms': 'ms-MY',
+      'km': 'km-KH', // Khmer
+      'lo': 'lo-LA', // Lao
+      'my': 'my-MM', // Burmese
+      'tl': 'tl-PH', // Tagalog variant
+      'tp': 'tl-PH', // Tagalog variant
       
-      // Middle Eastern
+      // Middle Eastern/Central Asian
       'ar': 'ar-SA',
       'tr': 'tr-TR',
       'fa': 'fa-IR',
       'he': 'he-IL',
+      'kk': 'kk-KZ', // Kazakh
+      'uz': 'uz-UZ', // Uzbek
+      'ky': 'ky-KG', // Kyrgyz
+      'az': 'az-AZ', // Azerbaijani
+      'ka': 'ka-GE', // Georgian
+      'hy': 'hy-AM', // Armenian
+      'mn': 'mn-MN', // Mongolian
       
       // African
       'sw': 'sw-KE',
       'af': 'af-ZA',
+      'zu': 'zu-ZA', // Zulu
+      'am': 'am-ET', // Amharic
     };
     return map[lang] ?? lang;
   }
