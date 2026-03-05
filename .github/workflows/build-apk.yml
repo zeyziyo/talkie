@@ -37,12 +37,9 @@ jobs:
 
     - name: Pre-download sqlite3 native assets
       run: |
-        # Use Version 3.45.3 as a potential stable alternative if 3.1.2 is problematic, 
-        # but let's keep 3.1.2 and improve robustness first.
         VERSION="3.1.2"
         BASE_URL="https://github.com/simolus3/sqlite3.dart/releases/download/sqlite3-$VERSION"
         PUB_CACHE_DIR="${PUB_CACHE:-$HOME/.pub-cache}"
-        # Use a more explicit target directory if needed
         TARGET_DIR="$PUB_CACHE_DIR/hosted/pub.dev/sqlite3-$VERSION"
         mkdir -p "$TARGET_DIR"
         
@@ -50,18 +47,26 @@ jobs:
         for arch in arm arm64 x64 ia32; do
           FILE="libsqlite3.$arch.android.so"
           echo ">>> Fetching $FILE..."
-          curl --fail --location --show-error --connect-timeout 60 --retry 15 --retry-delay 10 --retry-connrefused \
-            -o "$TARGET_DIR/$FILE" "$BASE_URL/$FILE" || echo "Warning: Failed to download $FILE"
+          if ! curl --fail --location --show-error --connect-timeout 60 --retry 15 --retry-delay 10 --retry-connrefused \
+            -o "$TARGET_DIR/$FILE" "$BASE_URL/$FILE"; then
+            echo "Error: Failed to download $FILE. Build aborted."
+            exit 1
+          fi
         done
         
         echo ">>> Verifying assets in $TARGET_DIR:"
         ls -lh "$TARGET_DIR"
         count=$(ls -1 "$TARGET_DIR"/*.so 2>/dev/null | wc -l)
         if [ "$count" -lt 4 ]; then
-          echo "Error: Only found $count of 4 sqlite3 native assets! Build cannot proceed."
+          echo "Error: Only found $count of 4 assets even after success reports! Build aborted."
           exit 1
         fi
         echo ">>> All 4 sqlite3 native assets verified."
+
+    - name: Clean and Install Dependencies
+      run: |
+        flutter clean
+        flutter pub get
 
     - name: Generate Localizations
       run: flutter gen-l10n
