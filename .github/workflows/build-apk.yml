@@ -37,6 +37,13 @@ jobs:
         flutter clean
         flutter pub get
 
+    - name: Ensure app_links release directory exists
+      run: |
+        # Workaround for AGP 8.x + app_links plugin missing source directory issue
+        PUB_CACHE_DIR="${PUB_CACHE:-$HOME/.pub-cache}"
+        mkdir -p "$PUB_CACHE_DIR/hosted/pub.dev/app_links-6.4.1/android/src/release/java"
+        echo ">>> Ensured app_links release directory exists at $PUB_CACHE_DIR"
+
     - name: Pre-download sqlite3 native assets (jniLibs Injection)
       run: |
         VERSION="3.1.2"
@@ -45,8 +52,6 @@ jobs:
         
         echo ">>> Injecting sqlite3 $VERSION native assets to $JNI_BASE"
         
-        # 아키텍처 맵핑: [Source Arch] -> [Target JNI Dir]
-        # Source filenames are: libsqlite3.arm.android.so, libsqlite3.arm64.android.so, etc.
         download_asset() {
           local src_arch=$1
           local target_dir=$2
@@ -57,7 +62,7 @@ jobs:
           echo ">>> Downloading $src_file for $target_dir..."
           if ! curl --fail --location --show-error --connect-timeout 60 --retry 15 --retry-delay 10 --retry-connrefused \
             -o "$target_file" "$BASE_URL/$src_file"; then
-            echo "Error: Failed to download $src_file. Build aborted."
+            echo "Error: Failed to download $src_file from $BASE_URL/$src_file. Build aborted."
             exit 1
           fi
         }
@@ -71,7 +76,7 @@ jobs:
         find "$JNI_BASE" -name "libsqlite3.so" -ls
         count=$(find "$JNI_BASE" -name "libsqlite3.so" | wc -l)
         if [ "$count" -lt 4 ]; then
-          echo "Error: Found only $count of 4 jniLibs assets! Build aborted."
+          echo "Error: Only found $count of 4 jniLibs assets! Build aborted."
           exit 1
         fi
         echo ">>> All 4 sqlite3 JNI assets successfully injected and verified."

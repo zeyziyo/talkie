@@ -65,8 +65,11 @@ android {
     }
 
     packaging {
+        jniLibs {
+            pickFirsts.add("**/libsqlite3.so")
+        }
         resources {
-            pickFirsts.add("lib/**/libsqlite3.so")
+            pickFirsts.add("**/libsqlite3.so")
         }
     }
 }
