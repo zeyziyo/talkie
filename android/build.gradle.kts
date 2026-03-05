@@ -10,7 +10,7 @@ subprojects {
 subprojects {
     configurations.all {
         resolutionStrategy {
-            force("com.google.android.gms:play-services-ads:23.6.0")
+            // allowing Gradle to pick best ads version for SDK 35
             force("androidx.work:work-runtime:2.9.0")
             force("androidx.work:work-runtime-ktx:2.9.0")
         }
