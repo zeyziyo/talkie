@@ -92,7 +92,7 @@ jobs:
     - name: Build APK
       env:
         FLUTTER_ROOT: ${{ env.FLUTTER_ROOT }}
-      run: flutter build apk --release --verbose
+      run: flutter build apk --release --verbose --stacktrace --info
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
@@ -102,7 +102,7 @@ jobs:
         retention-days: 7
 
     - name: Build App Bundle (AAB)
-      run: flutter build appbundle --release --verbose
+      run: flutter build appbundle --release --verbose --stacktrace --info
       
     - name: Upload AAB
       uses: actions/upload-artifact@v4
