@@ -3,13 +3,13 @@ package com.zeyziyo.talkie
 import android.content.Intent
 import android.media.AudioManager
 import android.os.Bundle
-import android.provider.Settings
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 
 class MainActivity : FlutterActivity() {
     private val CHANNEL = "com.zeyziyo.talkie/settings"
+    private val TTS_SETTINGS_ACTION = "com.android.settings.TTS_SETTINGS"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +23,7 @@ class MainActivity : FlutterActivity() {
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL).setMethodCallHandler { call, result ->
             if (call.method == "openTtsSettings") {
                 try {
-                    val intent = Intent("com.android.settings.TTS_SETTINGS")
+                    val intent = Intent(TTS_SETTINGS_ACTION)
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
                     result.success(true)
@@ -36,3 +36,4 @@ class MainActivity : FlutterActivity() {
         }
     }
 }
+
