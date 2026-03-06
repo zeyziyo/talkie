@@ -353,7 +353,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Kiválasztás: Válasszon készletet vagy \'Összes\'\n• Fordítás: \'Mutat/Rejt\' fordítás megtekintése\n• Hallgatás: Mondat TTS lejátszása\n• Jelölés: Pipa (V) a kész elemekhez\n• Törlés: Hosszan nyomja meg a kártyát\n• Szűrő: Összes vagy anyag szerint';
+      '• Válaszd ki a tanulási anyagot: Használd a jobb felső sarokban található menüt (⋮) a \'Tanulási anyag kiválasztása\' vagy az \'Online anyagtár\' eléréséhez.\n• Kártya megfordítása: A \'Megjelenítés/Elrejtés\' segítségével ellenőrizheted a fordítást.\n• Hallgatás: A hangszóró ikonra kattintva lejátszhatod a kiejtést.\n• Tanulás befejezése: A pipa (V) jelzi, ha befejezted a tanulást.\n• Törlés: Hosszú kattintással (Long Click) törölheted a rekordokat.\n• Keresés és szűrés: Használd a keresősávot (valós idejű intelligens keresés), a címkéket és a kezdőbetű szűrőket.';
 
   @override
   String get helpMode3Desc =>

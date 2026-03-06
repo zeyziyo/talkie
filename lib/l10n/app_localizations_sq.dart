@@ -359,7 +359,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Zgjidhni materialin: Zgjidhni një libër burim specifik ose \'Rishikim të plotë\'\n• Kthejeni kartën: Kontrolloni përkthimin me \'Shfaq/Fshih\' (kontrolli automatik i mësimit)\n• Dëgjimi: Luaj TTS të fjalive\n• Mësimi i përfunduar: Përfundoni mësimin me një shenjë tik (V)\n• Fshirja: Fshini regjistrimet duke shtypur gjatë kartën\n• Kushtet e kërkimit: Filtro sipas etiketave, artikujve të fundit ose shkronjave fillestare';
+      '• Zgjidhni një grup burimesh: Përdorni \'Zgjidhni grup burimesh mësimore\' ose \'Burimet online\' nga menyja (⋮) në këndin e sipërm djathtas.\n• Kthejeni kartën: Verifikoni përkthimin me \'Shfaq/Fshih\'.\n• Dëgjoni: Luaj sërish shqiptimin me ikonën e altoparlantit.\n• Mësimi i plotë: Trajtojeni si të plotë me shenjën e kontrollit (V).\n• Fshije: Fshijeni regjistrin duke shtypur gjatë kartën (Klikim i gjatë).\n• Kërko dhe filtro: Mbështetje për shiritin e kërkimit (kërkim inteligjent në kohë reale) dhe filtrat e etiketave dhe shkronjave fillestare.';
 
   @override
   String get helpMode3Desc =>

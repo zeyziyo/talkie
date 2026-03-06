@@ -357,7 +357,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Selectare: Alege set sau \'Tot\'\n• Întoarce: \'Arată/Ascunde\' traducerea\n• Ascultă: Redă TTS propoziție\n• Studiat: Bifează (V) pentru completat\n• Șterge: Apăsare lungă pentru ștergere\n• Filtru: Toate sau după material';
+      '• Selectarea materialului: accesează \'Alege materialul de studiu\' sau \'Biblioteca online\' din meniul (⋮) din dreapta sus\n• Întoarce cardul: folosește \'Arată/Ascunde\' pentru a verifica traducerea\n• Ascultă: redă pronunția cu pictograma difuzorului\n• Finalizare studiu: marchează cu bifa (V) pentru a finaliza studiul\n• Șterge: apasă lung (Long Click) pe card pentru a șterge înregistrarea\n• Caută și filtrează: folosește bara de căutare (căutare inteligentă în timp real) și filtrele de etichete, litere de început';
 
   @override
   String get helpMode3Desc =>

@@ -355,7 +355,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Material seçimi: Müəyyən material toplusunu və ya \'Bütün təkrar\'ı seçin\n• Kartı çevirin: Tərcüməni yoxlamaq üçün \'Göstər/Gizlət\' (avtomatik öyrənmə yoxlaması)\n• Dinləmə: Cümlə TTS səsləndirməsi\n• Öyrənmə tamamlandı: İşarə ilə (V) öyrənməni tamamlayın\n• Silmə: Qeydləri silmək üçün karta uzun müddət basın\n• Axtarış şərtləri: Etiket, son elementlər, başlanğıc hərflərlə filtrləyin';
+      '• Material seçimi: Sağ üst menyudan (⋮) \'Tədris materialı seçimi\' və ya \'Onlayn material kitabxanası\' istifadə edin\n• Kartı çevirmək: \'Göstər/Gizlət\' vasitəsilə tərcüməni yoxlayın\n• Dinləmək: Dinləmək üçün dinamik işarəsinə toxunun\n• Tədrisi bitirmək: Tədrisi bitirmək üçün onay işarəsinə(V) toxunun\n• Silmək: Qeydləri silmək üçün karta uzun basın\n• Axtarış və filtrləmə: Axtarış paneli (real vaxt ağıllı axtarış) və etiket, başlanğıc hərf filtrləri dəstəklənir';
 
   @override
   String get helpMode3Desc =>

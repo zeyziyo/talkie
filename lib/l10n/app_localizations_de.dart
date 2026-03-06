@@ -352,7 +352,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Materialwahl: Set wählen oder \'Alles wiederholen\'\n• Karte drehen: \'Anzeigen/Verbergen\' nutzen\n• Anhören: TTS für Satz abspielen\n• Gelernt markieren: Häkchen (V) für erledigte Elemente\n• Löschen: Lange auf Karte drücken\n• Filter: Alle oder nach Material filtern';
+      '• Materialauswahl: Verwende das Menü (⋮) oben rechts für \'Lernmaterial auswählen\' oder \'Online-Materialbibliothek\'\n• Karte umdrehen: \'Anzeigen/Verbergen\' zur Überprüfung der Übersetzung\n• Anhören: Wiedergabe der Aussprache über das Lautsprechersymbol\n• Lernen abgeschlossen: Markiere Karten mit einem Häkchen (V) als gelernt\n• Löschen: Gedrückt halten (Long Click) um die Karte zu löschen\n• Suche und Filter: Suchleiste (intelligente Echtzeitsuche) sowie Tag- und Anfangsbuchstabenfilter';
 
   @override
   String get helpMode3Desc =>

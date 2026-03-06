@@ -356,7 +356,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Selecció de materials: Selecciona una col·lecció de materials específica o \'Repàs complet\'\n• Gira la targeta: Comprova la traducció amb \'Mostra/Amaga\' (comprovació d\'aprenentatge automàtic)\n• Escolta: Reprodueix TTS de la frase\n• Aprenentatge complet: Marca com a complet amb una marca de verificació (V)\n• Suprimeix: Mantén premuda la targeta per suprimir l\'enregistrament\n• Criteris de cerca: Filtra per etiqueta, element recent o lletra inicial';
+      '• Selecció de llibres de text: fes servir \'Selecciona un llibre de text\' o \'Llibreria en línia\' al menú (⋮) de la part superior dreta\n• Girar la targeta: \'Mostra/Amaga\' per comprovar la traducció\n• Escoltar: reprodueix la pronunciació amb la icona de l\'altaveu\n• Aprèn: marca amb una marca de verificació (V) per completar l\'aprenentatge\n• Suprimeix: mantén premuda la targeta (clic llarg) per suprimir l\'historial\n• Cerca i filtra: admet la barra de cerca (cerca intel·ligent en temps real) i els filtres d\'etiquetes, lletra inicial';
 
   @override
   String get helpMode3Desc =>

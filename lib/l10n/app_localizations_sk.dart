@@ -354,7 +354,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Výber materiálu: výber konkrétnej zbierky materiálov alebo \'Celé opakovanie\'\n• Otočenie karty: overenie prekladu pomocou \'Zobraziť/Skryť\' (automatická kontrola učenia)\n• Počúvanie: prehrávanie TTS vety\n• Učenie dokončené: spracovanie učenia ako dokončeného pomocou zaškrtnutia (V)\n• Odstránenie: odstránenie záznamu dlhým stlačením karty\n• Podmienky vyhľadávania: filtrovanie pomocou značiek, posledných položiek, počiatočných písmen';
+      '• Výber materiálov: Použite \'Výber študijných materiálov\' alebo \'Online knižnicu materiálov\' v ponuke (⋮) vpravo hore\n• Otočenie kartičky: Potvrďte preklad pomocou \'Zobraziť/Skryť\'\n• Počúvanie: Prehrávanie výslovnosti pomocou ikony reproduktora\n• Dokončené štúdium: Označte ako dokončené pomocou začiarknutia (V)\n• Odstránenie: Odstráňte záznam dlhým stlačením karty\n• Vyhľadávanie a filtre: Podpora vyhľadávacieho panela (inteligentné vyhľadávanie v reálnom čase) a filtrov značiek a začiatočných písmen';
 
   @override
   String get helpMode3Desc =>

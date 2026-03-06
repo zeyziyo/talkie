@@ -189,7 +189,7 @@
   "helpMode1Desc": "Herken stem, vertaal en luister na resultaat.",
   "helpMode1Details": "• Stem: Tik mikrofoon vir begin/stop\n• Teks: Tik direk om te vertaal\n• Outo-Soek: Bespeur soortgelyke sinne\n• Vertaal: Knoppie vir direkte vertaling\n• Luister: Luidspreker-ikoon vir TTS\n• Stoor: Voeg by geskiedenis\n• Maak skoon: Stel alles terug",
   "helpMode2Desc": "Hersien gestorde sinne met versteekte vertaling.",
-  "helpMode2Details": "• Kies: Kies stel of 'Hersien Alles'\n• Draai: 'Wys/Versteek' vertaling\n• Luister: Speel TTS vir sin\n• Merk: Merk (V) vir voltooi\n• Verwyder: Lang druk om te verwyder\n• Filter: Sien alles of per materiaal",
+  "helpMode2Details": "• Kies 'n bron: Gebruik 'Kies studiemateriaal' of 'Aanlyn biblioteek' in die kieslys (⋮) regs bo.\n• Draai kaart om: Bevestig vertaling met 'Wys/Versteek'.\n• Luister: Speel uitspraak met die luidspreker-ikoon.\n• Voltooi leer: Merk (V) om leer as voltooi te merk.\n• Vee uit: Vee rekords uit deur lank op die kaart te druk.\n• Soek en filtreer: Ondersteun soekbalk (intydse slim soektog) en merker- en beginletterfilters.",
   "helpMode3Desc": "Oefen jou uitspraak deur na sinne te luister en dit te herhaal (Skadu).",
   "helpMode3Details": "• Kies: Kies pakket\n• Interval: [-] [+] wagtyd (3s-60s)\n• Begin/Stop: Beheer sessie\n• Praat: Luister en herhaal\n• Telling: Akkuraatheid (0-100)\n• Probeer weer: Knoppie as stem nie bespeur word nie",
   "helpModeChatDesc": "Oefen werklike gesprekke deur met 'n KI-persona te gesels.",

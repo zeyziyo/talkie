@@ -189,7 +189,7 @@
   "helpMode1Desc": "Herken stem, vertaal naar doeltaal en luister naar resultaat.",
   "helpMode1Details": "• Spraak: Tik microfoon om te starten/stoppen\n• Tekst: Typ direct om te vertalen\n• Auto-Zoek: Detecteert bestaande zinnen\n• Vertaal: Tik knop voor directe vertaling\n• Luister: Speaker icoon voor TTS\n• Opslaan: 'Data Opslaan' voegt toe aan geschiedenis\n• Wissen: Reset alle invoer",
   "helpMode2Desc": "Herhaal opgeslagen zinnen met auto-verberg vertalingen.",
-  "helpMode2Details": "• Selecteer Materiaal: Kies set of 'Alles Herhalen'\n• Kaart Draaien: Gebruik 'Toon/Verberg' voor vertaling\n• Luister: Speel TTS voor zin\n• Markeer Bestudeerd: Vinkje (V) voor voltooide items\n• Verwijder: Lang drukken op kaart om te verwijderen\n• Filter: Bekijk alles of filter op materiaal",
+  "helpMode2Details": "• Materiaal selecteren: Gebruik 'Leermateriaal selecteren' of 'Online materiaal' in het menu (⋮) rechtsboven\n• Kaart omdraaien: Controleer de vertaling met 'Tonen/Verbergen'\n• Luisteren: Afspelen van uitspraak via het luidsprekericoon\n• Leren voltooid: Afgewerkt leren markeren met een vinkje (V)\n• Verwijderen: Houd een kaart lang ingedrukt om de geschiedenis te verwijderen\n• Zoeken en filteren: Ondersteuning voor zoekbalk (realtime slim zoeken) en tags, filters voor beginletters",
   "helpMode3Desc": "Oefen je uitspraak door de zinnen te beluisteren en na te spreken (Shadowing).",
   "helpMode3Details": "• Selecteer Materiaal: Kies studiepakket\n• Interval: [-] [+] pas wachttijd aan (3s-60s)\n• Start/Stop: Beheer sessie\n• Spreek: Luister audio en herhaal\n• Feedback: Score (0-100)\n• Probeer Opnieuw: Knop als stem niet gedetecteerd",
   "helpModeChatDesc": "Oefen echte gesprekken door te chatten met een AI-persona.",

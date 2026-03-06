@@ -189,7 +189,7 @@
   "helpMode1Desc": "Talegenkendelse, oversættelse og lyt til resultat.",
   "helpMode1Details": "• Stemme: Tryk mikrofon for start/stop\n• Tekst: Skriv direkte for at oversætte\n• Auto-Søg: Finder lignende sætninger\n• Oversæt: Knap for øjeblikkelig oversættelse\n• Lyt: Højttalerikon for TTS\n• Gem: Tilføjer til historik\n• Ryd: Nulstil alt",
   "helpMode2Desc": "Gennemgå gemte sætninger med skjult oversættelse.",
-  "helpMode2Details": "• Vælg: Vælg sæt eller 'Alle'\n• Vend: 'Vis/Skjul' oversættelse\n• Lyt: Afspil TTS for sætning\n• Marker: Flueben (V) for færdige\n• Slet: Langt tryk for at slette\n• Filter: Vis alle eller efter materiale",
+  "helpMode2Details": "• Vælg materialesamling: Brug 'Vælg studiesamling' eller 'Online materialerum' i menuen (⋮) øverst til højre\n• Vend kort: Tjek oversættelsen med 'Vis/Skjul'\n• Lyt: Afspil udtale med højttalerikonet\n• Læring fuldført: Marker som fuldført med et flueben (V)\n• Slet: Slet poster ved at trykke længe på kortet (Langt klik)\n• Søg og filtrer: Understøtter søgefelt (smart realtidssøgning) og tags, startbogstavfilter",
   "helpMode3Desc": "Øv din udtale ved at lytte til sætninger og gentage dem (Shadowing).",
   "helpMode3Details": "• Vælg: Vælg pakke\n• Interval: [-] [+] ventetid (3s-60s)\n• Start/Stop: Kontroller session\n• Tal: Lyt og gentag\n• Score: Nøjagtighed (0-100)\n• Prøv igen: Knap hvis stemme ej fundet",
   "helpModeChatDesc": "Øv dig i praktisk samtale ved at tale med en AI-persona.",

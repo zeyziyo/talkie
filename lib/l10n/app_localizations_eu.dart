@@ -351,7 +351,7 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Materiala hautatu: hautatu datu-multzo zehatz bat edo \'Berrikuspen osoa\'\n• Txartela irauli: egiaztatu itzulpena \'Erakutsi/Ezkutatu\' erabiliz (ikaskuntza automatikoa egiaztatu)\n• Entzun: esaldiaren TTS erreprodukzioa\n• Ikaskuntza osatua: markatu ikaskuntza osatutzat (V)\n• Ezabatu: luze sakatu txartela erregistroa ezabatzeko\n• Bilaketa-baldintzak: etiketak, azken elementuak, hasierako letrarekin iragazi';
+      '• Materialak aukeratzea: Goiko eskuineko menuan (⋮) \'Ikasteko materialak aukeratu\' edo \'Online material biltegia\' erabili\n• Txartela itzuli: \'Erakutsi/Ezkutatu\' erabiliz itzulpena egiaztatu\n• Entzun: Bozgorailuaren ikonoarekin ahoskera erreproduzitu\n• Ikasketa burutzea: Marka (V) batekin ikasketa burutzea adierazi\n• Ezabatu: Txartela luze sakatu (Klik luzea) erregistroa ezabatzeko\n• Bilatu eta iragazi: Bilaketa-barra (denbora errealeko bilaketa adimenduna) eta etiketak, hasierako letra iragazkiak onartzen dira';
 
   @override
   String get helpMode3Desc =>

@@ -189,7 +189,7 @@
   "helpMode1Desc": "Röstigenkänning, översättning och lyssna på resultat.",
   "helpMode1Details": "• Röst: Tryck mikrofon för start/stopp\n• Text: Skriv direkt för översättning\n• Auto-Sök: Hittar liknande meningar\n• Översätt: Knapp för direktöversättning\n• Lyssna: Ikon för TTS\n• Spara: Lägger till i historik\n• Rensa: Återställ allt",
   "helpMode2Desc": "Repetera sparade meningar med dold översättning.",
-  "helpMode2Details": "• Välj: Välj set eller 'Alla'\n• Vänd: 'Visa/Dölj' översättning\n• Lyssna: Spela TTS för mening\n• Markera: Kryssa (V) för klara\n• Ta bort: Långtryck för att ta bort\n• Filter: Visa alla eller per material",
+  "helpMode2Details": "• Välj material: Använd menyn (⋮) uppe till höger för att välja 'Välj studiematerial' eller 'Online materialarkiv'\n• Vänd kort: Kontrollera översättningen med 'Visa/Dölj'\n• Lyssna: Spela upp uttal med högtalarikonen\n• Färdig med inlärning: Markera som färdig med en bock (V)\n• Radera: Ta bort poster genom att trycka länge (Long Click) på kortet\n• Sök och filtrera: Stöd för sökfält (smartsökning i realtid) och taggar, filter för begynnelsebokstav",
   "helpMode3Desc": "Öva ditt uttal genom att lyssna på och upprepa meningar (skuggning).",
   "helpMode3Details": "• Välj: Välj paket\n• Intervall: [-] [+] väntetid (3s-60s)\n• Start/Stopp: Kontrollera session\n• Tala: Lyssna och upprepa\n• Poäng: Noggrannhet (0-100)\n• Försök: Knapp om röst ej hittas",
   "helpModeChatDesc": "Öva konversationsfärdigheter genom att chatta med en AI-persona.",

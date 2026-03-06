@@ -353,7 +353,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Izbira gradiva: izbira določene zbirke gradiv ali »Celotno ponavljanje«\n• Obračanje kartic: preverjanje prevoda z »Pokaži/Skrij« (samodejna kontrola učenja)\n• Poslušanje: predvajanje TTS stavka\n• Učenje končano: obdelava zaključka učenja z oznako (V)\n• Brisanje: dolg pritisk na kartico za brisanje zapisa\n• Pogoji iskanja: filtriranje po oznakah, nedavnih elementih, začetnih črkah';
+      '• Izbira zbirke: V zgornjem desnem meniju (⋮) izberite \'Izberi učno zbirko\' ali uporabite \'Spletno knjižnico gradiv\'\n• Obračanje kartic: S funkcijo \'Pokaži/Skrij\' preverite prevod\n• Poslušanje: Predvajajte izgovorjavo z ikono zvočnika\n• Dokončano učenje: Označite z kljukico (V), da označite kot dokončano\n• Izbriši: Dolgo pritisnite na kartico, da izbrišete zapis\n• Iskanje in filtri: Podpora za iskalno vrstico (pametno iskanje v realnem času) in filtre oznak ter začetnih črk';
 
   @override
   String get helpMode3Desc =>

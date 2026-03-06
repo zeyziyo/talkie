@@ -359,7 +359,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Selecionar Material: Escolha conjunto ou \'Revisar Tudo\'\n• Virar Cartão: Use \'Mostrar/Ocultar\' para ver tradução\n• Ouvir: Reproduzir TTS para a frase\n• Marcar Estudado: Marque (V) para itens concluídos\n• Excluir: Pressione e segure cartão para remover\n• Filtro: Ver tudo ou filtrar por material';
+      '• Seleção de material: Use \'Selecionar material de estudo\' ou \'Biblioteca online\' no menu superior direito (⋮)\n• Virar carta: Verifique a tradução com \'Mostrar/Ocultar\'\n• Ouvir: Reproduza a pronúncia com o ícone do alto-falante\n• Concluído: Marque com um visto (V) para marcar como concluído\n• Excluir: Exclua registros pressionando e segurando (clique longo) o cartão\n• Pesquisa e filtro: Suporte para barra de pesquisa (pesquisa inteligente em tempo real) e filtros de tags e letras iniciais';
 
   @override
   String get helpMode3Desc =>

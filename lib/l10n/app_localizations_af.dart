@@ -351,7 +351,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Kies: Kies stel of \'Hersien Alles\'\n• Draai: \'Wys/Versteek\' vertaling\n• Luister: Speel TTS vir sin\n• Merk: Merk (V) vir voltooi\n• Verwyder: Lang druk om te verwyder\n• Filter: Sien alles of per materiaal';
+      '• Kies \'n bron: Gebruik \'Kies studiemateriaal\' of \'Aanlyn biblioteek\' in die kieslys (⋮) regs bo.\n• Draai kaart om: Bevestig vertaling met \'Wys/Versteek\'.\n• Luister: Speel uitspraak met die luidspreker-ikoon.\n• Voltooi leer: Merk (V) om leer as voltooi te merk.\n• Vee uit: Vee rekords uit deur lank op die kaart te druk.\n• Soek en filtreer: Ondersteun soekbalk (intydse slim soektog) en merker- en beginletterfilters.';
 
   @override
   String get helpMode3Desc =>

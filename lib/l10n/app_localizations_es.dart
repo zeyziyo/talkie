@@ -356,7 +356,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Seleccionar Material: Elige set o \'Repasar Todo\'\n• Girar Tarjeta: Usa \'Mostrar/Ocultar\' para ver traducción\n• Escuchar: Reproduce TTS para la oración \n• Marcar Estudiado: Check (V) para ítems completados\n• Eliminar: Mantén presionada la tarjeta\n• Filtro: Ver todo o filtrar por material';
+      '• Seleccionar cuaderno: Usa \'Seleccionar cuaderno de estudio\' o \'Biblioteca en línea\' en el menú (⋮) en la esquina superior derecha.\n• Voltear tarjetas: Usa \'Mostrar/Ocultar\' para verificar la traducción.\n• Escuchar: Reproduce la pronunciación con el icono del altavoz.\n• Completar aprendizaje: Marca con un check (V) para indicar que el aprendizaje está completo.\n• Eliminar: Mantén presionada la tarjeta (clic largo) para eliminar el registro.\n• Buscar y filtrar: Admite la barra de búsqueda (búsqueda inteligente en tiempo real) y los filtros de etiquetas y letra inicial.';
 
   @override
   String get helpMode3Desc =>

@@ -189,7 +189,7 @@
   "helpMode1Desc": "Kenali suara, terjemahkan, dan dengarkan hasilnya.",
   "helpMode1Details": "• Input Suara: Ketuk ikon mikrofon untuk mulai/berhenti\n• Input Teks: Ketik langsung untuk menerjemahkan\n• Cari Otomatis: Mendeteksi kalimat serupa yang ada\n• Terjemahkan: Ketuk tombol untuk terjemahan instan\n• Dengar: Ikon speaker untuk TTS\n• Simpan: 'Simpan Data' menambahkan ke riwayat\n• Hapus: Atur ulang semua input",
   "helpMode2Desc": "Ulas kalimat tersimpan dengan terjemahan sembunyi otomatis.",
-  "helpMode2Details": "• Pilih Materi: Pilih set atau 'Ulas Semua'\n• Balik Kartu: Gunakan 'Tampil/Sembunyi' untuk melihat terjemahan\n• Dengar: Mainkan TTS untuk kalimat\n• Tandai: Centang (V) untuk item selesai\n• Hapus: Tekan lama kartu untuk menghapus\n• Filter: Lihat semua atau filter berdasarkan materi",
+  "helpMode2Details": "• Pilih koleksi: Gunakan 'Pilih Koleksi Belajar' atau 'Perpustakaan Online' dari menu (⋮) di kanan atas\n• Balik Kartu: Periksa terjemahan dengan 'Tampilkan/Sembunyikan'\n• Dengarkan: Putar pengucapan dengan ikon speaker\n• Selesai Belajar: Tandai selesai dengan tanda centang (V)\n• Hapus: Tekan lama kartu untuk menghapus catatan\n• Cari dan Filter: Mendukung bilah pencarian (pencarian pintar waktu nyata) dan filter tag, huruf awal",
   "helpMode3Desc": "Berlatih pengucapan dengan mendengarkan dan menirukan kalimat (Shadowing).",
   "helpMode3Details": "• Pilih Materi: Pilih paket belajar\n• Interval: [-] [+] atur waktu tunggu (3d-60d)\n• Mulai/Berhenti: Kontrol sesi\n• Bicara: Dengar audio dan ulangi\n• Umpan Balik: Skor akurasi (0-100)\n• Coba Lagi: Gunakan tombol coba lagi jika suara tidak terdeteksi",
   "helpModeChatDesc": "Berlatih percakapan nyata dengan berinteraksi dengan persona AI.",

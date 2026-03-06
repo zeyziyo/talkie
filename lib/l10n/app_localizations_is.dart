@@ -355,7 +355,7 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Efnisval: Veldu ákveðið efnissett eða \'Yfirfara allt\'\n• Snúa korti við: Athugaðu þýðingu með \'Sýna/fela\' (sjálfvirk námsathugun)\n• Hlustun: Spilaðu setningu TTS\n• Nám lokið: Merktu sem lokið með hakmerki(V)\n• Eyða: Haltu korti inni til að eyða færslu\n• Leitarskilyrði: Síaðu eftir merki, nýlegum hlutum eða upphafsstöfum';
+      '• Veldu námsefni: Notaðu valmyndina efst til hægri (⋮) til að velja \'Veldu námsefni\' eða \'Námsefnisvef\'\n• Flettu spjaldi: \'Sýna/Fela\' til að staðfesta þýðingu\n• Hlusta: Spilaðu framburð með hátalaratákninu\n• Lokið námi: Merktu námið sem lokið með hakmerki (V)\n• Eyða: Eyða færslum með því að ýta lengi á spjaldið\n• Leita og sía: Stuðningur við leitarrönd (snjallleit í rauntíma) og síur fyrir merki og upphafsstafi';
 
   @override
   String get helpMode3Desc =>

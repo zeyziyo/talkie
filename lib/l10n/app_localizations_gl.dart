@@ -355,7 +355,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Selección de material: selecciona un libro de traballo específico ou «Repaso completo»\n• Dar a volta á tarxeta: comproba a tradución con «Mostrar/Ocultar» (marca de comprobación de aprendizaxe automática)\n• Escoitar: reprodución de TTS da frase\n• Aprendizaxe completa: marca de verificación (V) para marcar como aprendizaxe completa\n• Eliminar: mantén pulsada a tarxeta para eliminar o rexistro\n• Criterios de busca: filtrar por etiquetas, elementos recentes, letra inicial';
+      '• Selección de material: Usa o menú (⋮) na parte superior dereita para \'Seleccionar material de estudo\' ou \'Biblioteca en liña\'.\n• Virar tarxeta: Comproba a tradución con \'Mostrar/Ocultar\'.\n• Escoitar: Reproduce a pronuncia co ícone do altofalante.\n• Aprendizaxe completa: Marca cun símbolo de verificación (V) para completar a aprendizaxe.\n• Eliminar: Mantén presionada a tarxeta (clic longo) para eliminar o rexistro.\n• Busca e filtro: Admite a barra de busca (busca intelixente en tempo real) e as etiquetas, filtro de letra inicial.';
 
   @override
   String get helpMode3Desc =>

@@ -339,7 +339,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• 选择资料：选择特定资料集或“复习全部”\n• 翻转卡片：使用“显示/隐藏”查看译文\n• 收听：播放特定句子的 TTS\n• 标记已学：勾选 (V) 已完成的项目\n• 删除：长按卡片删除记录\n• 筛选：查看全部或按资料筛选';
+      '• 选择资料集：使用右上角菜单(⋮)中的“选择学习资料集”或“在线资料室”\n• 卡片翻转：使用“显示/隐藏”确认翻译\n• 听力：点击扬声器图标播放发音\n• 完成学习：勾选标记(V)表示完成学习\n• 删除：长按卡片删除记录\n• 搜索和过滤：支持搜索栏（实时智能搜索）以及标签、首字母过滤';
 
   @override
   String get helpMode3Desc => '聆听句子并跟读（影子跟读），练习发音。';
@@ -1567,7 +1567,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get helpMode2Details =>
-      '• 选择资料：选择特定资料集或“复习全部”\n• 翻转卡片：使用“显示/隐藏”查看译文\n• 收听：播放特定句子的 TTS\n• 标记已学：勾选 (V) 已完成的项目\n• 删除：长按卡片删除记录\n• 筛选：查看全部或按资料筛选';
+      '• 选择资料集：使用右上角菜单(⋮)中的“选择学习资料集”或“在线资料库”\n• 卡片翻转：使用“显示/隐藏”来确认翻译\n• 听力：点击扬声器图标播放发音\n• 完成学习：使用复选标记 (V) 完成学习处理\n• 删除：长按卡片删除记录\n• 搜索和筛选：支持搜索栏（实时智能搜索）以及标签、首字母筛选';
 
   @override
   String get helpMode3Desc => '听句子并跟读（影子跟读），练习发音。';
@@ -2796,7 +2796,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get helpMode2Details =>
-      '• 選擇資料：選擇特定資料集或「複習全部」\n• 翻轉卡片：使用「顯示/隱藏」查看譯文\n• 收聽：播放特定句子的 TTS\n• 標記已學：勾選 (V) 已完成的項目\n• 刪除：長按卡片刪除記錄\n• 篩選：查看全部或按資料篩選';
+      '• 選擇教材：使用右上角選單（⋮）中的「選擇學習教材」或「線上資料庫」\n• 翻轉卡片：使用「顯示/隱藏」來確認翻譯\n• 聆聽：點擊喇叭圖示播放發音\n• 完成學習：勾選（V）標記為已完成學習\n• 刪除：長按卡片以刪除紀錄\n• 搜尋與篩選：支援搜尋欄（即時智慧搜尋）和標籤、首字篩選';
 
   @override
   String get helpMode3Desc => '聆聽句子並跟讀（模仿），練習發音。';

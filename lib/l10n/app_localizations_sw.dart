@@ -351,7 +351,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Chagua: Chagua seti au \'Pitia Zote\'\n• Geuza: \'Onyesha/Ficha\' tafsiri\n• Sikiliza: Cheza TTS kwa sentensi\n• Weka alama: Tiki (V) kwa zilizokamilika\n• Futa: Bonyeza kwa muda mrefu kufuta\n• Kichujio: Tazama zote au kwa nyenzo';
+      '• Chagua kitabu cha masomo: Tumia \'Chagua kitabu cha masomo\' au \'Maktaba ya mtandaoni\' kutoka kwenye menyu (⋮) iliyo juu kulia.\n• Geuza kadi: Thibitisha tafsiri kwa \'Onyesha/Ficha\'.\n• Sikiliza: Cheza matamshi kwa ikoni ya spika.\n• Kamilisha kujifunza: Kamilisha kujifunza kwa alama ya tiki (V).\n• Futa: Futa rekodi kwa kubonyeza kadi kwa muda mrefu.\n• Tafuta na chujio: Saidia upau wa utafutaji (utafutaji mahiri wa moja kwa moja) na lebo, kichujio cha herufi ya kwanza.';
 
   @override
   String get helpMode3Desc =>

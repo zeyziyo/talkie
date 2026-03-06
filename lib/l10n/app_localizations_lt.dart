@@ -356,7 +356,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Medžiagos pasirinkimas: pasirinkite konkretų rinkinį arba „Visos apžvalgos“\n• Kortelės apvertimas: patikrinkite vertimą naudodami „Rodyti / slėpti“ (automatinis mokymosi patikrinimas)\n• Klausymas: sakinio TTS atkūrimas\n• Mokymasis baigtas: pažymėkite varnelę (V), kad mokymasis būtų baigtas\n• Ištrinti: ilgai paspauskite kortelę, kad ištrintumėte įrašą\n• Paieškos sąlygos: filtruokite pagal žymą, naujausius elementus, pradžios raidę';
+      '• Medžiagos pasirinkimas: viršutiniame dešiniajame kampe esančiame meniu (⋮) naudokite \'Pasirinkti mokymosi medžiagą\' arba \'Internetinę medžiagų biblioteką\'\n• Kortelės apvertimas: patikrinkite vertimą su \'Rodyti/Slėpti\'\n• Klausymas: atkurkite tarimą naudodami garsiakalbio piktogramą\n• Mokymosi užbaigimas: pažymėkite (V), kad užbaigtumėte mokymąsi\n• Ištrinti: ilgai paspauskite kortelę, kad ištrintumėte įrašą\n• Paieška ir filtrai: palaikykite paieškos juostą (pažangi paieška realiuoju laiku) ir žymas, pradedantį raidžių filtrą';
 
   @override
   String get helpMode3Desc =>

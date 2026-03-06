@@ -189,7 +189,7 @@
   "helpMode1Desc": "Rozpoznání hlasu, překlad a poslech výsledku.",
   "helpMode1Details": "• Hlas: Klepněte na mikrofon pro start/stop\n• Text: Pište přímo pro překlad\n• Auto-Hledání: Detekuje podobné věty\n• Překlad: Tlačítko pro okamžitý překlad\n• Poslech: Ikona reproduktoru pro TTS\n• Uložit: Přidá do historie\n• Vymazat: Resetovat vše",
   "helpMode2Desc": "Opakování uložených vět se skrytým překladem.",
-  "helpMode2Details": "• Výběr: Zvolte sadu nebo 'Vše'\n• Karta: 'Zobrazit/Skrýt' překlad\n• Poslech: Přehrát TTS věty\n• Nastudováno: Zaškrtnout (V) pro hotové\n• Smazat: Dlouhý stisk pro smazání\n• Filtr: Zobrazit vše nebo dle materiálu",
+  "helpMode2Details": "• Výběr sady: V nabídce (⋮) vpravo nahoře zvolte 'Vybrat sadu' nebo 'Online knihovna'\n• Otočení karty: Klepnutím na 'Zobrazit/Skrýt' zobrazíte překlad\n• Přehrávání: Klepnutím na ikonu reproduktoru přehrajete výslovnost\n• Dokončení studia: Zaškrtnutím (V) označíte jako dokončené\n• Smazání: Dlouhým podržením karty smažete záznam\n• Hledání a filtrování: Podpora vyhledávacího pole (inteligentní vyhledávání v reálném čase) a filtrů štítků a počátečních písmen",
   "helpMode3Desc": "Poslouchejte větu a opakujte ji (stínování) a procvičujte výslovnost.",
   "helpMode3Details": "• Výběr: Zvolte balíček\n• Interval: [-] [+] prodleva (3s-60s)\n• Start/Stop: Ovládání relace\n• Mluvit: Poslouchejte a opakujte\n• Skóre: Přesnost (0-100)\n• Znovu: Tlačítko opakování při nerozpoznání",
   "helpModeChatDesc": "Procvičujte si konverzaci s AI postavou.",

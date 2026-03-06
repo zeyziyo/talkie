@@ -358,7 +358,7 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Dewis Deunydd: dewiswch gasgliad deunydd penodol neu \'Adolygu Popeth\'\n• Fflipio Cerdyn: gwiriwch y cyfieithiad gyda \'Dangos/Cuddio\' (gwiriad dysgu awtomatig)\n• Gwrando: chwarae TTS brawddegau\n• Dysgu wedi\'i Gwblhau: prosesu wedi\'i gwblhau gyda marc gwirio (V)\n• Dileu: daliwch y cerdyn i lawr i ddileu cofnodion\n• Amodau Chwilio: hidlo yn ôl tagiau, eitemau diweddar, a llythrennau cyntaf';
+      '• Dewis llyfr nodiadau: Defnyddiwch y ddewislen (⋮) ar y dde uchaf i ddewis \'Dewis Llyfr Nodiadau Astudio\' neu \'Llyfrgell Ddigidol\'\n• Fflipio cerdyn: Gwiriwch y cyfieithiad gyda \'Dangos/Cuddio\'\n• Gwrando: Chwarae ynganiad gyda\'r eicon siaradwr\n• Astudiaeth wedi\'i chwblhau: Wedi\'i farcio fel wedi\'i chwblhau gyda marc siec (V)\n• Dileu: Pwyswch a dal cerdyn (Clic Hir) i ddileu\'r cofnod\n• Chwilio a hidlo: Cefnogaeth bar chwilio (chwilio craff amser real) a thagiau, hidlwyr llythrennau cychwynnol';
 
   @override
   String get helpMode3Desc =>

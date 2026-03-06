@@ -189,7 +189,7 @@
   "helpMode1Desc": "Talegjenkjenning, oversettelse og lytt til resultat.",
   "helpMode1Details": "• Stemme: Trykk mikrofon for start/stopp\n• Tekst: Skriv direkte for å oversette\n• Auto-Søk: Finner lignende setninger\n• Oversett: Knapp for umiddelbar oversettelse\n• Lytt: Høyttalerikon for TTS\n• Lagre: Legger til i historie\n• Tøm: Nullstill alt",
   "helpMode2Desc": "Gjennomgå lagrede setninger med skjult oversettelse.",
-  "helpMode2Details": "• Velg: Velg sett eller 'Alle'\n• Snu: 'Vis/Skjul' oversettelse\n• Lytt: Spill TTS for setning\n• Marker: Hake (V) for ferdige\n• Slett: Langt trykk for å slette\n• Filter: Vis alle eller etter materiell",
+  "helpMode2Details": "• Velg samling: Bruk 'Velg læremateriell' eller 'Online bibliotek' fra menyen (⋮) øverst til høyre\n• Snu kort: Bruk 'Vis/skjul' for å sjekke oversettelsen\n• Lytt: Spill av uttale med høyttalerikonet\n• Læring fullført: Merk som fullført med hake (V)\n• Slett: Slett oppføringer ved å trykke lenge på kortet\n• Søk og filtrer: Støtte for søkefelt (smart søk i sanntid) og tagger, startbokstavfilter",
   "helpMode3Desc": "Øv uttalen din ved å lytte til og gjenta setninger (skygging).",
   "helpMode3Details": "• Velg: Velg pakke\n• Intervall: [-] [+] ventetid (3s-60s)\n• Start/Stopp: Kontroller økt\n• Snakk: Lytt og gjenta\n• Poeng: Nøyaktighet (0-100)\n• Prøv igjen: Knapp hvis stemme ikke funnet",
   "helpModeChatDesc": "Øv på samtaler i den virkelige verden ved å snakke med en AI-persona.",

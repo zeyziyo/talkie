@@ -349,7 +349,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Vælg: Vælg sæt eller \'Alle\'\n• Vend: \'Vis/Skjul\' oversættelse\n• Lyt: Afspil TTS for sætning\n• Marker: Flueben (V) for færdige\n• Slet: Langt tryk for at slette\n• Filter: Vis alle eller efter materiale';
+      '• Vælg materialesamling: Brug \'Vælg studiesamling\' eller \'Online materialerum\' i menuen (⋮) øverst til højre\n• Vend kort: Tjek oversættelsen med \'Vis/Skjul\'\n• Lyt: Afspil udtale med højttalerikonet\n• Læring fuldført: Marker som fuldført med et flueben (V)\n• Slet: Slet poster ved at trykke længe på kortet (Langt klik)\n• Søg og filtrer: Understøtter søgefelt (smart realtidssøgning) og tags, startbogstavfilter';
 
   @override
   String get helpMode3Desc =>

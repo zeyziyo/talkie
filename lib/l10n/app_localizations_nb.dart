@@ -354,7 +354,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Velg materiale: Velg et bestemt materiale eller \'Gjennomgå alt\'\n• Vend kort: Sjekk oversettelsen med \'Vis/Skjul\' (automatisk læringsmerke)\n• Lytt: Setnings-TTS-avspilling\n• Læring fullført: Behandle læringen som fullført med en hake (V)\n• Slett: Slett poster ved å trykke lenge på kortet\n• Søkekriterier: Filtrer etter tagger, nylige elementer, startbokstaver';
+      '• Velg arbeidsbok: Bruk \'Velg arbeidsbok\' eller \'Online ressursbibliotek\' fra menyen (⋮) øverst til høyre\n• Snu kort: Sjekk oversettelsen med \'Vis/Skjul\'\n• Lytt: Spill av uttale med høyttalerikonet\n• Ferdig med læring: Merk som fullført med en hake (V)\n• Slett: Slett oppføringer ved å trykke lenge på kortet\n• Søk og filter: Støtte for søkefelt (smart sanntidssøk) og tagger, filter for startbokstav';
 
   @override
   String get helpMode3Desc =>

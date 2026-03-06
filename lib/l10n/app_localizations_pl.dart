@@ -354,7 +354,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Wybierz Materiał: Wybierz zestaw lub \'Wszystko\'\n• Odwróć Kartę: \'Pokaż/Ukryj\' tłumaczenie\n• Słuchaj: Odtwórz TTS dla zdania\n• Oznacz: Zaznacz (V) ukończone\n• Usuń: Przytrzymaj kartę aby usunąć\n• Filtr: Zobacz wszystko lub filtruj';
+      '• Wybór materiałów: Użyj \'Wybierz zestaw do nauki\' lub \'Biblioteki online\' w menu (⋮) w prawym górnym rogu\n• Odwracanie kart: Sprawdzaj tłumaczenia za pomocą \'Pokaż/Ukryj\'\n• Słuchanie: Odtwarzaj wymowę za pomocą ikony głośnika\n• Ukończono naukę: Zaznacz symbolem zaznaczenia (V), aby oznaczyć jako ukończone\n• Usuwanie: Długie naciśnięcie karty (długie kliknięcie), aby usunąć historię\n• Wyszukiwanie i filtrowanie: Obsługa paska wyszukiwania (inteligentne wyszukiwanie w czasie rzeczywistym) oraz filtrów tagów i początkowych liter';
 
   @override
   String get helpMode3Desc =>

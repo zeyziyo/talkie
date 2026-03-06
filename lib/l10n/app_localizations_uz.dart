@@ -357,7 +357,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Ma\'lumotlarni tanlash: ma\'lum ma\'lumotlar to\'plamini yoki \'To\'liq ko\'rib chiqish\'ni tanlang\n• Kartani aylantirish: \'Ko\'rsatish/yashirish\' orqali tarjimani tekshiring (avtomatik o\'rganish tekshiruvi)\n• Tinglash: jumlani TTS orqali ijro eting\n• O\'rganish yakunlandi: belgi (V) bilan o\'rganish yakunlanganligini ko\'rsating\n• O\'chirish: yozuvni o\'chirish uchun kartani uzoq bosing\n• Qidiruv shartlari: teglarga, so\'nggi elementlarga, bosh harflarga qarab filtrlash';
+      '• Ma\'lumotlar to\'plamini tanlash: o\'ng yuqori menyudan (⋮) \'O\'quv materiallarini tanlash\' yoki \'Onlayn ma\'lumotlar xonasi\'dan foydalaning\n• Kartani aylantirish: \'Ko\'rsatish/Yashirish\' orqali tarjimani tekshiring\n• Tinglash: karnay belgisi orqali talaffuzni tinglang\n• O\'qishni yakunlash: belgi (V) bilan o\'qish yakunlangani qayd etiladi\n• O\'chirish: kartani uzoq bosib (Long Click) yozuvni o\'chiring\n• Qidiruv va filtr: qidiruv paneli (real vaqtda aqlli qidiruv) va teglar, bosh harf filtri qo\'llab-quvvatlanadi';
 
   @override
   String get helpMode3Desc =>

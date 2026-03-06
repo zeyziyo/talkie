@@ -353,7 +353,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Chọn tài liệu: Chọn bộ cụ thể hoặc \'Ôn tập tất cả\'\n• Lật thẻ: Sử dụng \'Hiện/Ẩn\' để xem bản dịch\n• Nghe: Phát TTS cho câu cụ thể\n• Đánh dấu đã học: Chọn (V) cho các mục đã hoàn thành\n• Xóa: Nhấn giữ thẻ để xóa bản ghi\n• Lọc: Xem tất cả hoặc lọc theo tài liệu';
+      '• Chọn bộ tài liệu: Sử dụng \'Chọn bộ tài liệu học\' hoặc \'Thư viện tài liệu trực tuyến\' trong menu (⋮) ở góc trên bên phải\n• Lật thẻ: Kiểm tra bản dịch bằng cách \'Hiện/Ẩn\'\n• Nghe: Phát âm bằng biểu tượng loa\n• Hoàn thành học tập: Xử lý hoàn thành học tập bằng dấu kiểm (V)\n• Xóa: Xóa bản ghi bằng cách nhấn giữ (Nhấn lâu) vào thẻ\n• Tìm kiếm và lọc: Hỗ trợ thanh tìm kiếm (tìm kiếm thông minh theo thời gian thực), thẻ và bộ lọc chữ cái đầu';
 
   @override
   String get helpMode3Desc =>

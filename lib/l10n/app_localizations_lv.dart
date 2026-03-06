@@ -353,7 +353,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Materiālu izvēle: atlasiet noteiktu materiālu kopumu vai \'Visu pārskatīšana\'\n• Kartītes apgriešana: pārbaudiet tulkojumu ar \'Rādīt/Slēpt\' (automātiska mācību pārbaude)\n• Klausīšanās: teikuma TTS atskaņošana\n• Mācīšanās pabeigta: atzīmējiet ar atzīmi (V), lai atzīmētu, ka mācīšanās ir pabeigta\n• Dzēšana: ilgi nospiediet kartīti, lai dzēstu ierakstu\n• Meklēšanas nosacījumi: filtrēšana pēc atzīmēm, jaunākajiem vienumiem, sākuma burtiem';
+      '• Materiālu izvēle: augšējā labajā stūrī izvēlnē (⋮) izmantojiet \'Atlasīt mācību materiālu\' vai \'Tiešsaistes materiālu telpu\'\n• Kartes apgriešana: pārbaudiet tulkojumu ar \'Rādīt/Slēpt\'\n• Klausīšanās: atskaņojiet izrunu ar skaļruņa ikonu\n• Mācīšanās pabeigta: atzīmējiet ar ķeksīti (V), lai pabeigtu mācīšanos\n• Dzēšana: ilgi nospiediet karti (Long Click), lai izdzēstu ierakstu\n• Meklēšana un filtrēšana: meklēšanas josla (reāllaika viedā meklēšana) un atbalsts tagiem, sākuma burtu filtriem';
 
   @override
   String get helpMode3Desc =>

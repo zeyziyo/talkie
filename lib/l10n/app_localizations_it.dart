@@ -353,7 +353,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Seleziona Materiale: Scegli set o \'Ripassa Tutto\'\n• Gira Carta: Usa \'Mostra/Nascondi\' per vedere traduzione\n• Ascolta: Riproduci TTS per la frase\n• Segna Studiato: Spunta (V) per elementi completati\n• Elimina: Premi a lungo carta per rimuovere\n• Filtro: Vedi tutto o filtra per materiale';
+      '• Seleziona Materiale: Usa il menu (⋮) in alto a destra per \'Seleziona Materiale di Studio\' o \'Archivio Online\'\n• Gira Carta: Tocca \'Mostra/Nascondi\' per controllare la traduzione\n• Ascolta: Riproduci la pronuncia con l\'icona dell\'altoparlante\n• Apprendimento Completato: Contrassegna con un segno di spunta (V) quando hai finito di studiare\n• Elimina: Premi a lungo sulla carta per eliminare la cronologia\n• Ricerca e Filtri: Supporta la barra di ricerca (ricerca smart in tempo reale) e i filtri per tag e lettera iniziale';
 
   @override
   String get helpMode3Desc =>

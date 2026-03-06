@@ -357,7 +357,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Selecteer Materiaal: Kies set of \'Alles Herhalen\'\n• Kaart Draaien: Gebruik \'Toon/Verberg\' voor vertaling\n• Luister: Speel TTS voor zin\n• Markeer Bestudeerd: Vinkje (V) voor voltooide items\n• Verwijder: Lang drukken op kaart om te verwijderen\n• Filter: Bekijk alles of filter op materiaal';
+      '• Materiaal selecteren: Gebruik \'Leermateriaal selecteren\' of \'Online materiaal\' in het menu (⋮) rechtsboven\n• Kaart omdraaien: Controleer de vertaling met \'Tonen/Verbergen\'\n• Luisteren: Afspelen van uitspraak via het luidsprekericoon\n• Leren voltooid: Afgewerkt leren markeren met een vinkje (V)\n• Verwijderen: Houd een kaart lang ingedrukt om de geschiedenis te verwijderen\n• Zoeken en filteren: Ondersteuning voor zoekbalk (realtime slim zoeken) en tags, filters voor beginletters';
 
   @override
   String get helpMode3Desc =>

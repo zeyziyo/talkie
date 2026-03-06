@@ -357,7 +357,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Sélection Matériel: Choisissez un set ou \'Tout Réviser\'\n• Retourner Carte: Utilisez \'Afficher/Masquer\' pour voir la traduction\n• Écouter: Jouer TTS pour la phrase\n• Marquer Étudié: Coche (V) pour les éléments terminés\n• Supprimer: Appui long sur la carte\n• Filtre: Voir tout ou filtrer par matériel';
+      '• Sélection du manuel : utilisez le menu (⋮) en haut à droite pour sélectionner \'Choisir un manuel d\'apprentissage\' ou \'Bibliothèque de ressources en ligne\'.\n• Retourner les cartes : utilisez \'Afficher/Masquer\' pour vérifier la traduction.\n• Écouter : appuyez sur l\'icône du haut-parleur pour écouter la prononciation.\n• Apprentissage terminé : cochez la case (V) pour marquer l\'apprentissage comme terminé.\n• Supprimer : appuyez longuement sur une carte pour supprimer l\'enregistrement.\n• Recherche et filtre : prise en charge de la barre de recherche (recherche intelligente en temps réel) et des filtres par balises et par première lettre.';
 
   @override
   String get helpMode3Desc =>

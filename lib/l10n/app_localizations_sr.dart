@@ -355,7 +355,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Избор материјала: Изаберите одређену збирку материјала или „Комплетни преглед“\n• Превртање картице: Проверите превод помоћу опције „Прикажи/сакриј“ (аутоматска провера учења)\n• Слушање: Репродукција реченице помоћу текста у говор\n• Завршено учење: Означите као завршено учење помоћу ознаке за потврду (V)\n• Брисање: Држите картицу да бисте избрисали запис\n• Услови претраге: Филтрирање по ознаци, недавним ставкама, почетном слову';
+      '• Izaberite zbirku materijala: Koristite opciju \'Izaberite zbirku materijala\' ili \'Online biblioteka materijala\' u meniju (⋮) u gornjem desnom uglu.\n• Okrenite karticu: Proverite prevod pomoću opcije \'Prikaži/Sakrij\'.\n• Slušanje: Reprodukujte izgovor pomoću ikone zvučnika.\n• Završeno učenje: Označite znakom potvrde (V) da je učenje završeno.\n• Brisanje: Dugo pritisnite karticu (dugi klik) da biste izbrisali zapis.\n• Pretraga i filter: Podrška za traku za pretragu (pametna pretraga u realnom vremenu) i filtere oznaka i početnih slova.';
 
   @override
   String get helpMode3Desc =>

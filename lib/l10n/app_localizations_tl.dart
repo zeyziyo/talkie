@@ -358,7 +358,7 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Pumili ng Materyal: Pumili ng partikular na set ng materyal o \'Buong Pag-aaral\'\n• I-flip ang Card: Suriin ang pagsasalin gamit ang \'Ipakita/Itago\' (awtomatikong pagsusuri sa pag-aaral)\n• Pakinggan: TTS playback ng pangungusap\n• Tapos na sa Pag-aaral: Ipahiwatig na tapos na ang pag-aaral gamit ang checkmark (V)\n• I-delete: Pindutin nang matagal ang card para i-delete ang tala\n• Mga Kundisyon sa Paghahanap: I-filter ayon sa tag, kamakailang item, panimulang titik';
+      '• Pumili ng set ng aralin: Gamitin ang \'Pumili ng Set ng Aralin\' o \'Online Library\' sa menu (⋮) sa kanang itaas\n• Baliktarin ang card: Tingnan ang pagsasalin gamit ang \'Ipakita/Itago\'\n• Pakinggan: I-play ang pagbigkas gamit ang icon ng speaker\n• Kumpletuhin ang pag-aaral: Markahan bilang tapos na gamit ang check mark (V)\n• Tanggalin: Pindutin nang matagal (Long Click) ang card upang tanggalin ang talaan\n• Paghahanap at Filter: Suporta para sa search bar (real-time na smart search) at mga filter ng tag at panimulang letra';
 
   @override
   String get helpMode3Desc =>

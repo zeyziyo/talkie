@@ -189,7 +189,7 @@
   "helpMode1Desc": "Puheentunnistus, käännös ja kuuntelu.",
   "helpMode1Details": "• Ääni: Napauta mikrofonia aloittaaksesi\n• Teksti: Kirjoita kääntääksesi\n• Auto-Haku: Löytää samanlaiset lauseet\n• Käännä: Painike välittömään käännökseen\n• Kuuntele: Kaiutinikoni TTS:lle\n• Tallenna: Lisää historiaan\n• Tyhjennä: Nollaa kaikki",
   "helpMode2Desc": "Kertaa tallennetut lauseet piilottamalla käännös.",
-  "helpMode2Details": "• Valitse: Valitse setti tai 'Kaikki'\n• Käännä: 'Näytä/Piilota' käännös\n• Kuuntele: Toista TTS lauseelle\n• Merkitse: Rasti (V) valmiille\n• Poista: Pitkä painallus poistaaksesi\n• Suodatin: Kaikki tai materiaalin mukaan",
+  "helpMode2Details": "• Materiaalin valinta: Käytä oikean yläkulman valikkoa (⋮) valitaksesi 'Valitse oppimateriaali' tai 'Online-materiaalikirjasto'\n• Kortin kääntäminen: Tarkista käännös valinnalla 'Näytä/Piilota'\n• Kuunteleminen: Toista ääntä painamalla kaiutinkuvaketta\n• Oppiminen valmis: Merkitse suoritetuksi valintamerkillä (V)\n• Poistaminen: Poista merkintöjä pitkällä painalluksella\n• Haku ja suodattimet: Tukee hakupalkkia (reaaliaikainen älykäs haku) sekä tunniste- ja alkukirjainsuodattimia",
   "helpMode3Desc": "Harjoittele ääntämistä kuuntelemalla ja toistamalla lauseita (varjostus).",
   "helpMode3Details": "• Valitse: Valitse paketti\n• Aikaväli: [-] [+] odotusaika (3s-60s)\n• Aloita/Lopeta: Hallitse istuntoa\n• Puhu: Kuuntele ja toista\n• Pisteet: Tarkkuus (0-100)\n• Uusinta: Painike jos ääntä ei tunnisteta",
   "helpModeChatDesc": "Harjoittele käytännön keskustelua keskustelemalla tekoälypersoonan kanssa.",

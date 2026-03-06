@@ -348,7 +348,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Výběr: Zvolte sadu nebo \'Vše\'\n• Karta: \'Zobrazit/Skrýt\' překlad\n• Poslech: Přehrát TTS věty\n• Nastudováno: Zaškrtnout (V) pro hotové\n• Smazat: Dlouhý stisk pro smazání\n• Filtr: Zobrazit vše nebo dle materiálu';
+      '• Výběr sady: V nabídce (⋮) vpravo nahoře zvolte \'Vybrat sadu\' nebo \'Online knihovna\'\n• Otočení karty: Klepnutím na \'Zobrazit/Skrýt\' zobrazíte překlad\n• Přehrávání: Klepnutím na ikonu reproduktoru přehrajete výslovnost\n• Dokončení studia: Zaškrtnutím (V) označíte jako dokončené\n• Smazání: Dlouhým podržením karty smažete záznam\n• Hledání a filtrování: Podpora vyhledávacího pole (inteligentní vyhledávání v reálném čase) a filtrů štítků a počátečních písmen';
 
   @override
   String get helpMode3Desc =>

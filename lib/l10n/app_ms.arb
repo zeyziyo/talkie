@@ -189,7 +189,7 @@
   "helpMode1Desc": "Kenal pasti suara, terjemah dan dengar hasil.",
   "helpMode1Details": "• Suara: Ketik mikrofon untuk mula/berhenti\n• Teks: Taip terus untuk menterjemah\n• Auto-Cari: Mengesan ayat serupa\n• Terjemah: Butang untuk terjemahan segera\n• Dengar: Ikon pembesar suara untuk TTS\n• Simpan: Menambah ke sejarah\n• Padam: Tetapkan semula semua",
   "helpMode2Desc": "Ulas ayat disimpan dengan terjemahan tersembunyi.",
-  "helpMode2Details": "• Pilih: Pilih set atau 'Ulas Semua'\n• Terbalikkan: 'Tunjuk/Sembunyi' terjemahan\n• Dengar: Mainkan TTS untuk ayat\n• Tanda: Tanda (V) untuk selesai\n• Padam: Tekan lama kad untuk padam\n• Penapis: Lihat semua atau ikut bahan",
+  "helpMode2Details": "• Pilih Koleksi: Guna menu (⋮) di kanan atas untuk 'Pilih Koleksi Pembelajaran' atau 'Perpustakaan Dalam Talian'\n• Balikkan Kad: Semak terjemahan dengan 'Tunjuk/Sembunyi'\n• Dengar: Mainkan sebutan dengan ikon pembesar suara\n• Pembelajaran Selesai: Tandakan (V) untuk menandakan pembelajaran selesai\n• Padam: Tekan lama (Long Click) pada kad untuk memadam rekod\n• Cari & Tapis: Sokongan bar carian (Carian Pintar masa nyata) dan penapis tag, huruf permulaan",
   "helpMode3Desc": "Berlatih sebutan dengan mendengar dan mengulangi ayat (Membayangi).",
   "helpMode3Details": "• Pilih: Pilih pakej\n• Selang: [-] [+] masa menunggu (3s-60s)\n• Mula/Berhenti: Kawal sesi\n• Bercakap: Dengar dan ulang\n• Skor: Ketepatan (0-100)\n• Cuba lagi: Butang jika suara tidak dikesan",
   "helpModeChatDesc": "Berlatih perbualan dunia sebenar dengan berbual dengan persona AI.",

@@ -353,7 +353,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Valitse: Valitse setti tai \'Kaikki\'\n• Käännä: \'Näytä/Piilota\' käännös\n• Kuuntele: Toista TTS lauseelle\n• Merkitse: Rasti (V) valmiille\n• Poista: Pitkä painallus poistaaksesi\n• Suodatin: Kaikki tai materiaalin mukaan';
+      '• Materiaalin valinta: Käytä oikean yläkulman valikkoa (⋮) valitaksesi \'Valitse oppimateriaali\' tai \'Online-materiaalikirjasto\'\n• Kortin kääntäminen: Tarkista käännös valinnalla \'Näytä/Piilota\'\n• Kuunteleminen: Toista ääntä painamalla kaiutinkuvaketta\n• Oppiminen valmis: Merkitse suoritetuksi valintamerkillä (V)\n• Poistaminen: Poista merkintöjä pitkällä painalluksella\n• Haku ja suodattimet: Tukee hakupalkkia (reaaliaikainen älykäs haku) sekä tunniste- ja alkukirjainsuodattimia';
 
   @override
   String get helpMode3Desc =>

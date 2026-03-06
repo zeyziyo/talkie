@@ -353,7 +353,7 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Velg: Velg sett eller \'Alle\'\n• Snu: \'Vis/Skjul\' oversettelse\n• Lytt: Spill TTS for setning\n• Marker: Hake (V) for ferdige\n• Slett: Langt trykk for å slette\n• Filter: Vis alle eller etter materiell';
+      '• Velg samling: Bruk \'Velg læremateriell\' eller \'Online bibliotek\' fra menyen (⋮) øverst til høyre\n• Snu kort: Bruk \'Vis/skjul\' for å sjekke oversettelsen\n• Lytt: Spill av uttale med høyttalerikonet\n• Læring fullført: Merk som fullført med hake (V)\n• Slett: Slett oppføringer ved å trykke lenge på kortet\n• Søk og filtrer: Støtte for søkefelt (smart søk i sanntid) og tagger, startbokstavfilter';
 
   @override
   String get helpMode3Desc =>

@@ -189,7 +189,7 @@
   "helpMode1Desc": "Rozpoznaj głos, przetłumacz na język docelowy i odsłuchaj wynik.",
   "helpMode1Details": "• Głos: Dotknij mikrofonu aby zacząć/zatrzymać\n• Tekst: Pisz bezpośrednio aby tłumaczyć\n• Auto-Szukanie: Wykrywa podobne zdania\n• Tłumacz: Przycisk do natychmiastowego tłumaczenia\n• Słuchaj: Ikona głośnika dla TTS\n• Zapisz: 'Zapisz' dodaje do historii\n• Wyczyść: Resetuj wszystko",
   "helpMode2Desc": "Powtarzaj zapisane zdania z ukrywaniem tłumaczeń.",
-  "helpMode2Details": "• Wybierz Materiał: Wybierz zestaw lub 'Wszystko'\n• Odwróć Kartę: 'Pokaż/Ukryj' tłumaczenie\n• Słuchaj: Odtwórz TTS dla zdania\n• Oznacz: Zaznacz (V) ukończone\n• Usuń: Przytrzymaj kartę aby usunąć\n• Filtr: Zobacz wszystko lub filtruj",
+  "helpMode2Details": "• Wybór materiałów: Użyj 'Wybierz zestaw do nauki' lub 'Biblioteki online' w menu (⋮) w prawym górnym rogu\n• Odwracanie kart: Sprawdzaj tłumaczenia za pomocą 'Pokaż/Ukryj'\n• Słuchanie: Odtwarzaj wymowę za pomocą ikony głośnika\n• Ukończono naukę: Zaznacz symbolem zaznaczenia (V), aby oznaczyć jako ukończone\n• Usuwanie: Długie naciśnięcie karty (długie kliknięcie), aby usunąć historię\n• Wyszukiwanie i filtrowanie: Obsługa paska wyszukiwania (inteligentne wyszukiwanie w czasie rzeczywistym) oraz filtrów tagów i początkowych liter",
   "helpMode3Desc": "Słuchaj zdań i ćwicz wymowę, powtarzając je (Shadowing).",
   "helpMode3Details": "• Wybierz Materiał: Wybierz pakiet\n• Interwał: [-] [+] czas oczekiwania (3s-60s)\n• Start/Stop: Kontrola sesji\n• Mów: Słuchaj audio i powtarzaj\n• Feedback: Wynik dokładności (0-100)\n• Ponów: Przycisk ponawiania jeśli głos niewykryty",
   "helpModeChatDesc": "Ćwicz konwersacje w prawdziwych sytuacjach, rozmawiając z AI Personą.",

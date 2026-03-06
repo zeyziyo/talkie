@@ -357,7 +357,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Khetha Izinto Zokwakha: Khetha iqoqo lezinto ezithile noma \'Konke Ukubuyekeza\'\n• Phendula Ikhadi: Hlola ukuhumusha \'ngokubonisa/ukufihla\' (ukuhlola ukufunda okuzenzakalelayo)\n• Lalela: Dlala umusho we-TTS\n• Ukufunda Kuqediwe: Phatha ukufunda njengokuqediwe ngophawu lokuhlola (V)\n• Susa: Cindezela isikhathi eside ikhadi ukuze ususe amarekhodi\n• Izimo Zokusesha: Hlunga ngamathegi, izinto zamuva, izinhlamvu zokuqala';
+      '• Ukukhetha Incwadi Yokufunda: Sebenzisa imenyu engenhla kwesokudla (⋮) ukuze \'Ukhethe Incwadi Yokufunda\' noma \'Ilabhulali Yezinto Eziku-inthanethi\'\n• Ukuphenya Ikhadi: Qinisekisa ukuhumusha ngokuthi \'Bonisa/Fihla\'\n• Ukulalela: Dlala ukuphinyiselwa ngesithonjana sesipika\n• Ukuqeda Ukufunda: Maka njengokuqediwe ngokuthi uphawu lokuhlola (V)\n• Ukususa: Cindezela isikhathi eside ikhadi ukuze ususe umlando\n• Ukusesha Nokuhlunga: Sekela ibha yokusesha (ukusesha okuhlakaniphile kwesikhathi sangempela) namathegi, isihlungi sezinhlamvu zokuqala';
 
   @override
   String get helpMode3Desc =>

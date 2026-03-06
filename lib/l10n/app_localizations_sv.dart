@@ -353,7 +353,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Välj: Välj set eller \'Alla\'\n• Vänd: \'Visa/Dölj\' översättning\n• Lyssna: Spela TTS för mening\n• Markera: Kryssa (V) för klara\n• Ta bort: Långtryck för att ta bort\n• Filter: Visa alla eller per material';
+      '• Välj material: Använd menyn (⋮) uppe till höger för att välja \'Välj studiematerial\' eller \'Online materialarkiv\'\n• Vänd kort: Kontrollera översättningen med \'Visa/Dölj\'\n• Lyssna: Spela upp uttal med högtalarikonen\n• Färdig med inlärning: Markera som färdig med en bock (V)\n• Radera: Ta bort poster genom att trycka länge (Long Click) på kortet\n• Sök och filtrera: Stöd för sökfält (smartsökning i realtid) och taggar, filter för begynnelsebokstav';
 
   @override
   String get helpMode3Desc =>

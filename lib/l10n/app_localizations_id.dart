@@ -354,7 +354,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Pilih Materi: Pilih set atau \'Ulas Semua\'\n• Balik Kartu: Gunakan \'Tampil/Sembunyi\' untuk melihat terjemahan\n• Dengar: Mainkan TTS untuk kalimat\n• Tandai: Centang (V) untuk item selesai\n• Hapus: Tekan lama kartu untuk menghapus\n• Filter: Lihat semua atau filter berdasarkan materi';
+      '• Pilih koleksi: Gunakan \'Pilih Koleksi Belajar\' atau \'Perpustakaan Online\' dari menu (⋮) di kanan atas\n• Balik Kartu: Periksa terjemahan dengan \'Tampilkan/Sembunyikan\'\n• Dengarkan: Putar pengucapan dengan ikon speaker\n• Selesai Belajar: Tandai selesai dengan tanda centang (V)\n• Hapus: Tekan lama kartu untuk menghapus catatan\n• Cari dan Filter: Mendukung bilah pencarian (pencarian pintar waktu nyata) dan filter tag, huruf awal';
 
   @override
   String get helpMode3Desc =>

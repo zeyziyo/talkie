@@ -353,7 +353,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Materyal Seç: Set veya \'Tümünü Tekrarla\' seç\n• Kart Çevir: Çeviri için \'Göster/Gizle\'\n• Dinle: Cümle için TTS oynat\n• İşaretle: Tamamlananlar için tik (V)\n• Sil: Karta uzun basarak sil\n• Filtre: Tümünü gör veya materyale göre filtrele';
+      '• Materyal Seçimi: Sağ üst menüden (⋮) \'Çalışma Materyali Seç\' veya \'Online Materyal Arşivi\'ni kullanın\n• Kart Çevirme: \'Göster/Gizle\' ile çeviriyi kontrol edin\n• Dinleme: Hoparlör ikonu ile telaffuzu dinleyin\n• Öğrenme Tamamlama: Onay işareti (V) ile öğrenmeyi tamamlayın\n• Silme: Kartı uzun süre basılı tutarak (Uzun Tıklama) kaydı silin\n• Arama ve Filtre: Arama çubuğu (gerçek zamanlı akıllı arama) ve etiketler, başlangıç harfi filtresi desteği';
 
   @override
   String get helpMode3Desc =>

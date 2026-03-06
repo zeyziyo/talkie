@@ -352,7 +352,7 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Odabir materijala: Odaberite određenu zbirku materijala ili \'Cjelokupni pregled\'\n• Preokretanje kartice: Provjerite prijevod pomoću \'Prikaži/Sakrij\' (automatska provjera učenja)\n• Slušanje: Reprodukcija teksta u govor za rečenicu\n• Završeno učenje: Označite kvačicom (V) za obradu dovršenog učenja\n• Brisanje: Dugo pritisnite karticu za brisanje zapisa\n• Uvjeti pretraživanja: Filtrirajte po oznakama, nedavnim stavkama, početnom slovu';
+      '• Odabir materijala: Koristite \'Odabir materijala za učenje\' ili \'Online biblioteku\' u gornjem desnom meniju (⋮)\n• Okretanje kartice: Provjerite prijevod pomoću \'Prikaži/Sakrij\'\n• Slušanje: Reproducirajte izgovor pomoću ikone zvučnika\n• Završeno učenje: Označite kvačicom (V) da označite završetak učenja\n• Brisanje: Dugo pritisnite karticu (dugi klik) da biste izbrisali zapis\n• Pretraživanje i filtriranje: Podrška za traku za pretraživanje (pametno pretraživanje u stvarnom vremenu) i filtere oznaka i početnih slova';
 
   @override
   String get helpMode3Desc =>

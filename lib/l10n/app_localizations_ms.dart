@@ -353,7 +353,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Pilih: Pilih set atau \'Ulas Semua\'\n• Terbalikkan: \'Tunjuk/Sembunyi\' terjemahan\n• Dengar: Mainkan TTS untuk ayat\n• Tanda: Tanda (V) untuk selesai\n• Padam: Tekan lama kad untuk padam\n• Penapis: Lihat semua atau ikut bahan';
+      '• Pilih Koleksi: Guna menu (⋮) di kanan atas untuk \'Pilih Koleksi Pembelajaran\' atau \'Perpustakaan Dalam Talian\'\n• Balikkan Kad: Semak terjemahan dengan \'Tunjuk/Sembunyi\'\n• Dengar: Mainkan sebutan dengan ikon pembesar suara\n• Pembelajaran Selesai: Tandakan (V) untuk menandakan pembelajaran selesai\n• Padam: Tekan lama (Long Click) pada kad untuk memadam rekod\n• Cari & Tapis: Sokongan bar carian (Carian Pintar masa nyata) dan penapis tag, huruf permulaan';
 
   @override
   String get helpMode3Desc =>

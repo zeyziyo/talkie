@@ -355,7 +355,7 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get helpMode2Details =>
-      '• Materjali valik: vali konkreetne materjalikogum või \"Kogu kordamine\"\n• Kaardi pööramine: tõlke kontrollimiseks \"Näita/peida\" (automaatne õppimise kontroll)\n• Kuula: lause TTS taasesitus\n• Õppimine lõpetatud: märgi õppimine lõpetatuks linnukesega (V)\n• Kustuta: kirje kustutamiseks hoia kaarti all\n• Otsingutingimused: filtreeri siltide, hiljutiste üksuste või algustähe järgi';
+      '• Õppematerjali valik: kasutage paremas ülanurgas menüüd (⋮) või \'Vali õppematerjal\' või \'Online materjalide ruum\'\n• Kaardi pööramine: kontrollige tõlget \'Näita/Peida\' abil\n• Kuulamine: häälduse taasesitus kõlariikooniga\n• Õppimine lõpetatud: õppimine on lõpetatud märkeruuduga (V)\n• Kustutamine: kirje kustutamiseks vajutage pikalt (pikk klõps) kaardil\n• Otsing ja filter: otsinguriba (reaalajas nutikas otsing) ja siltide, algustähe filtreid';
 
   @override
   String get helpMode3Desc =>
