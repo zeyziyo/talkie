@@ -63,7 +63,8 @@ class Mode3Widget extends StatelessWidget {
                         displayStringForOption: (Map<String, dynamic> option) => option['text'] as String,
                         onSelected: (Map<String, dynamic> selection) {
                            // Just jump to result within current tab
-                           appState.jumpToSearchResult(selection['text']!, selection['type']!);
+                           final String type = selection['type'] as String? ?? appState.recordTypeFilter;
+                           appState.jumpToSearchResult(selection['text']!, type);
                            if (appState.mode3SessionActive) appState.startMode3SessionDirectly();
                            FocusManager.instance.primaryFocus?.unfocus(); // Phase 113: Dismiss overlay
                         },

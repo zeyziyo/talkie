@@ -87,7 +87,8 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                         displayStringForOption: (Map<String, dynamic> option) => option['text']!,
                         onSelected: (Map<String, dynamic> selection) {
                            // Just jump to result within current tab
-                           appState.jumpToSearchResult(selection['text']!, selection['type']!);
+                           final String type = selection['type'] as String? ?? appState.recordTypeFilter;
+                           appState.jumpToSearchResult(selection['text']!, type);
                            FocusManager.instance.primaryFocus?.unfocus(); // Phase 113: Dismiss overlay using global focus manager
                         },
                         fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
