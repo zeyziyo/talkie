@@ -104,24 +104,25 @@ class _Mode2WidgetState extends State<Mode2Widget> {
                             key: widget.searchKey,
                             controller: textEditingController,
                             focusNode: focusNode,
+                            backgroundColor: WidgetStateProperty.all(Colors.grey.shade900),
+                            textStyle: WidgetStateProperty.all(const TextStyle(color: Colors.white)),
+                            hintStyle: WidgetStateProperty.all(TextStyle(color: Colors.grey.shade400)),
                             hintText: appState.recordTypeFilter == 'word' 
                                 ? '${l10n.tabWord} ${l10n.search}' 
                                 : '${l10n.tabSentence} ${l10n.search}',
                             onChanged: (value) {
-                               if (value.isEmpty) {
-                                  appState.setSearchQuery(''); 
-                               }
+                               // 입력될 때마다 즉각 검색 목록 필터링
+                               appState.setSearchQuery(value);
                             },
                             onSubmitted: (value) => appState.setSearchQuery(value),
-                            leading: const Icon(Icons.search),
+                            leading: const Icon(Icons.search, color: Colors.white70),
                             padding: WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 16)),
                             elevation: WidgetStateProperty.all(1),
                             trailing: [
                               if (textEditingController.text.isNotEmpty)
                                 IconButton(
-                                  icon: const Icon(Icons.clear),
+                                  icon: const Icon(Icons.clear, color: Colors.white70),
                                   onPressed: () {
-                                    // Phase 109/113: Explicitly clear and trigger overlay dismissal
                                     textEditingController.clear();
                                     appState.setSearchQuery('');
                                     focusNode.unfocus(); // Phase 113: Force collapse overlay

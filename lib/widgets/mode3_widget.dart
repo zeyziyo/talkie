@@ -81,26 +81,27 @@ class Mode3Widget extends StatelessWidget {
                             key: searchKey,
                             controller: textEditingController,
                             focusNode: focusNode,
+                            backgroundColor: WidgetStateProperty.all(Colors.grey.shade900),
+                            textStyle: WidgetStateProperty.all(const TextStyle(color: Colors.white)),
+                            hintStyle: WidgetStateProperty.all(TextStyle(color: Colors.grey.shade400)),
                             hintText: appState.recordTypeFilter == 'word' 
                                 ? l10n.searchWordHint 
                                 : l10n.searchSentenceHint,
                             onChanged: (value) {
-                              if (value.isEmpty) {
-                                appState.setSearchQuery('');
-                                if (appState.mode3SessionActive) appState.startMode3SessionDirectly();
-                              }
+                              appState.setSearchQuery(value);
+                              if (value.isEmpty && appState.mode3SessionActive) appState.startMode3SessionDirectly();
                             },
                             onSubmitted: (value) {
                               appState.setSearchQuery(value);
                               if (appState.mode3SessionActive) appState.startMode3SessionDirectly();
                             },
-                            leading: const Icon(Icons.search),
+                            leading: const Icon(Icons.search, color: Colors.white70),
                             padding: WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 16)),
                             elevation: WidgetStateProperty.all(1),
                              trailing: [
                               if (textEditingController.text.isNotEmpty)
                                 IconButton(
-                                  icon: const Icon(Icons.clear),
+                                  icon: const Icon(Icons.clear, color: Colors.white70),
                                   onPressed: () {
                                     // Phase 109/113: Clear and dismiss
                                     textEditingController.clear();
