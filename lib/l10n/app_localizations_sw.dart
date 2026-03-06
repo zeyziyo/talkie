@@ -1261,4 +1261,8 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Matamshi Yako';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Matamshi ya sauti hayatumiki kiasili katika lugha hii kwenye mipangilio ya kifaa hiki.';
 }

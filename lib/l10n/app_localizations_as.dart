@@ -1266,4 +1266,8 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'আপোনাৰ উচ্চাৰণ';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'এই ডিভাইচৰ ডিফল্ট ছেটিংসমূহে এই ভাষাৰ বাবে কণ্ঠৰ আউটপুট সমৰ্থন নকৰে।';
 }

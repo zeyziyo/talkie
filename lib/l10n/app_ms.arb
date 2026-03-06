@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Pertahankan pangkalan anda dengan menyebut perkataan sebelum musuh tiba.",
   "wordDefenseTitle": "Pertahanan Perkataan",
   "wordModeLabel": "Mod Perkataan",
-  "yourPronunciation": "Sebutan Anda"
+  "yourPronunciation": "Sebutan Anda",
+  "ttsUnsupportedNatively": "Tetapan lalai peranti ini tidak menyokong output pertuturan untuk bahasa ini."
 }

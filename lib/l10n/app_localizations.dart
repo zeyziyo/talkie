@@ -2567,6 +2567,12 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'내 발음'**
   String get yourPronunciation;
+
+  /// No description provided for @ttsUnsupportedNatively.
+  ///
+  /// In ko, this message translates to:
+  /// **'이 기기의 기본 설정에서는 이 언어의 음성 출력을 지원하지 않습니다.'**
+  String get ttsUnsupportedNatively;
 }
 
 class _AppLocalizationsDelegate

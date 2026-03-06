@@ -1272,4 +1272,8 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ваша вымаўленне';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'На гэтай прыладзе не падтрымліваецца вывад маўлення для гэтай мовы ў натыўных наладах.';
 }

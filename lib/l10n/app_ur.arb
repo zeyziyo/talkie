@@ -770,5 +770,6 @@
   "wordDefenseDesc": "دشمن کے پہنچنے سے پہلے الفاظ کہہ کر اپنے اڈے کا دفاع کریں۔",
   "wordDefenseTitle": "لفظ دفاع",
   "wordModeLabel": "لفظ موڈ",
-  "yourPronunciation": "آپ کا تلفظ"
+  "yourPronunciation": "آپ کا تلفظ",
+  "ttsUnsupportedNatively": "اس ڈیوائس کی ڈیفالٹ سیٹنگ اس زبان میں آواز کی آؤٹ پُٹ کو سپورٹ نہیں کرتی ہے۔"
 }

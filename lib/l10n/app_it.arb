@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Difendi la base pronunciando le parole prima che i nemici arrivino.",
   "wordDefenseTitle": "Difesa delle parole",
   "wordModeLabel": "Modalità parola",
-  "yourPronunciation": "La tua Pronuncia"
+  "yourPronunciation": "La tua Pronuncia",
+  "ttsUnsupportedNatively": "La sintesi vocale per questa lingua non è supportata nativamente su questo dispositivo."
 }

@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Aizstāviet bāzi, izrunājot vārdus, pirms ienaidnieks sasniedz.",
   "wordDefenseTitle": "Vārdu aizsardzība",
   "wordModeLabel": "Vārdu režīms",
-  "yourPronunciation": "Jūsu izruna"
+  "yourPronunciation": "Jūsu izruna",
+  "ttsUnsupportedNatively": "Šī ierīce sākotnēji neatbalsta runas izvadi šajā valodā."
 }

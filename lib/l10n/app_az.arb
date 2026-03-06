@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Düşmənlər gəlmədən sözləri deyərək bazanı müdafiə edin.",
   "wordDefenseTitle": "Söz Müdafiəsi",
   "wordModeLabel": "Söz Rejimi",
-  "yourPronunciation": "Mənim Tələffüzüm"
+  "yourPronunciation": "Mənim Tələffüzüm",
+  "ttsUnsupportedNatively": "Bu cihazda bu dil üçün doğma səs dəstəyi yoxdur."
 }

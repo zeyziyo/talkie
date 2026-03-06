@@ -1258,4 +1258,8 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'تلفظ شما';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'خروجی صوتی برای این زبان در تنظیمات پیش فرض این دستگاه پشتیبانی نمی شود.';
 }

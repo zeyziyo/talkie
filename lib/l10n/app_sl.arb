@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Branite bazo tako, da izgovorite besede, preden prispejo sovražniki.",
   "wordDefenseTitle": "Besedna obramba",
   "wordModeLabel": "Besedni način",
-  "yourPronunciation": "Moja izgovorjava"
+  "yourPronunciation": "Moja izgovorjava",
+  "ttsUnsupportedNatively": "Ta naprava ne podpira izvornega glasovnega izhoda za ta jezik."
 }

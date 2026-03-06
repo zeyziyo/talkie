@@ -1279,4 +1279,8 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ang Pagbigkas Mo';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Hindi sinusuportahan ng mga default na setting ng device na ito ang output ng boses para sa wikang ito.';
 }

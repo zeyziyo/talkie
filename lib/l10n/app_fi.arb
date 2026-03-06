@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Puolusta tukikohtaa sanomalla sanat ennen kuin viholliset saapuvat.",
   "wordDefenseTitle": "Sana puolustus",
   "wordModeLabel": "Sanatila",
-  "yourPronunciation": "Sinun ääntämys"
+  "yourPronunciation": "Sinun ääntämys",
+  "ttsUnsupportedNatively": "Tämän laitteen oletusasetukset eivät tue tekstin puheeksi muuntoa tällä kielellä."
 }

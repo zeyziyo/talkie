@@ -1266,4 +1266,8 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Η προφορά σας';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Η προεπιλεγμένη ρύθμιση αυτής της συσκευής δεν υποστηρίζει έξοδο φωνής για αυτήν τη γλώσσα.';
 }

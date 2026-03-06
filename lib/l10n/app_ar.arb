@@ -770,5 +770,6 @@
   "wordDefenseDesc": "دافع عن قاعدتك عن طريق قول الكلمات قبل أن يصل العدو.",
   "wordDefenseTitle": "الدفاع عن الكلمات",
   "wordModeLabel": "وضع الكلمات",
-  "yourPronunciation": "نطقك"
+  "yourPronunciation": "نطقك",
+  "ttsUnsupportedNatively": "الإعدادات الأصلية لهذا الجهاز لا تدعم إخراج الصوت لهذه اللغة."
 }

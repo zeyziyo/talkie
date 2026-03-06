@@ -770,5 +770,6 @@
   "wordDefenseDesc": "დაიცავით ბაზა სიტყვების თქმით, სანამ მტრები მოვლენ.",
   "wordDefenseTitle": "სიტყვების დაცვა",
   "wordModeLabel": "სიტყვების რეჟიმი",
-  "yourPronunciation": "თქვენი გამოთქმა"
+  "yourPronunciation": "თქვენი გამოთქმა",
+  "ttsUnsupportedNatively": "ამ მოწყობილობის პარამეტრებში ამ ენის ხმოვანი გამოტანა არ არის მხარდაჭერილი."
 }

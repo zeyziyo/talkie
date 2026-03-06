@@ -1243,4 +1243,8 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ההגייה שלך';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'הגדרות ברירת המחדל של מכשיר זה אינן תומכות בפלט קולי בשפה זו.';
 }

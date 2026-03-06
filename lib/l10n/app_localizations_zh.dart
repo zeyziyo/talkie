@@ -1227,6 +1227,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get yourPronunciation => '你的发音';
+
+  @override
+  String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -2453,6 +2456,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get yourPronunciation => '你的发音';
+
+  @override
+  String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -3679,4 +3685,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get yourPronunciation => '你的發音';
+
+  @override
+  String get ttsUnsupportedNatively => '此裝置的預設設定不支援此語言的語音輸出。';
 }

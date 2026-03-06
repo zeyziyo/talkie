@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Pertahankan markas Anda dengan mengucapkan kata-kata sebelum musuh tiba.",
   "wordDefenseTitle": "Pertahanan Kata",
   "wordModeLabel": "Mode Kata",
-  "yourPronunciation": "Lafal Anda"
+  "yourPronunciation": "Lafal Anda",
+  "ttsUnsupportedNatively": "Perangkat ini tidak mendukung output suara untuk bahasa ini secara bawaan."
 }

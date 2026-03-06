@@ -770,5 +770,6 @@
   "wordDefenseDesc": "శత్రువులు రాకముందే పదాన్ని చెప్పడం ద్వారా స్థావరాన్ని రక్షించండి.",
   "wordDefenseTitle": "పద రక్షణ",
   "wordModeLabel": "పద మోడ్",
-  "yourPronunciation": "మీ ఉచ్చారణ"
+  "yourPronunciation": "మీ ఉచ్చారణ",
+  "ttsUnsupportedNatively": "ఈ పరికరం యొక్క స్థానిక సెట్టింగ్‌లలో ఈ భాషకు వాయిస్ అవుట్‌పుట్ మద్దతు లేదు."
 }

@@ -770,5 +770,6 @@
   "wordDefenseDesc": "દુશ્મનો આવે તે પહેલાં શબ્દો બોલીને તમારા આધારનો બચાવ કરો.",
   "wordDefenseTitle": "શબ્દ સંરક્ષણ",
   "wordModeLabel": "શબ્દ મોડ",
-  "yourPronunciation": "તમારું ઉચ્ચારણ"
+  "yourPronunciation": "તમારું ઉચ્ચારણ",
+  "ttsUnsupportedNatively": "આ ઉપકરણની મૂળભૂત સેટિંગ્સ આ ભાષામાં વૉઇસ આઉટપુટને સમર્થન આપતી નથી."
 }

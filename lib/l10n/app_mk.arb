@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Одбранете ја базата зборувајќи ги зборовите пред непријателите да пристигнат.",
   "wordDefenseTitle": "Одбрана на зборови",
   "wordModeLabel": "Режим на зборови",
-  "yourPronunciation": "Твој изговор"
+  "yourPronunciation": "Твој изговор",
+  "ttsUnsupportedNatively": "Овој уред не поддржува изговор на овој јазик стандардно."
 }

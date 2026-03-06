@@ -1270,4 +1270,8 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'आपका उच्चारण';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'यह उपकरण मूल रूप से इस भाषा में ध्वनि आउटपुट का समर्थन नहीं करता है.';
 }

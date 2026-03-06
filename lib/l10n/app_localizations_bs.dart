@@ -1267,4 +1267,8 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Vaš izgovor';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Ovaj uređaj izvorno ne podržava izgovor za ovaj jezik.';
 }

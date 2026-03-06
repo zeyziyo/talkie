@@ -770,5 +770,6 @@
   "wordDefenseDesc": "शत्रू पोहोचण्यापूर्वी शब्द बोलून आपल्या तळाचे संरक्षण करा.",
   "wordDefenseTitle": "शब्द संरक्षण",
   "wordModeLabel": "शब्द मोड",
-  "yourPronunciation": "तुमचे उच्चार"
+  "yourPronunciation": "तुमचे उच्चार",
+  "ttsUnsupportedNatively": "हे डिव्हाइस मूळतः या भाषेतील आवाज आउटपुटला सपोर्ट करत नाही."
 }

@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Digues la paraula abans que l'enemic arribi per defensar la base.",
   "wordDefenseTitle": "Defensa de paraules",
   "wordModeLabel": "Mode de paraules",
-  "yourPronunciation": "La teva pronunciació"
+  "yourPronunciation": "La teva pronunciació",
+  "ttsUnsupportedNatively": "La configuració predeterminada d'aquest dispositiu no admet la sortida de veu per a aquest idioma."
 }

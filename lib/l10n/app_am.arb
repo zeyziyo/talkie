@@ -770,5 +770,6 @@
   "wordDefenseDesc": "ጠላት ከመድረሱ በፊት ቃሉን በመናገር ጣቢያዎን ይከላከሉ።",
   "wordDefenseTitle": "የቃል መከላከያ",
   "wordModeLabel": "የቃል ሁነታ",
-  "yourPronunciation": "የእርስዎ አጠራር"
+  "yourPronunciation": "የእርስዎ አጠራር",
+  "ttsUnsupportedNatively": "ይህ መሣሪያ ይህን ቋንቋ በተፈጥሮው በድምፅ አይደግፍም።"
 }

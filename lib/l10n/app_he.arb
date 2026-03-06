@@ -770,5 +770,6 @@
   "wordDefenseDesc": "הגן על הבסיס שלך על ידי אמירת מילים לפני שהאויבים מגיעים.",
   "wordDefenseTitle": "הגנת מילים",
   "wordModeLabel": "מצב מילים",
-  "yourPronunciation": "ההגייה שלך"
+  "yourPronunciation": "ההגייה שלך",
+  "ttsUnsupportedNatively": "הגדרות ברירת המחדל של מכשיר זה אינן תומכות בפלט קולי בשפה זו."
 }

@@ -1276,4 +1276,8 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ukuphinyiselwa Kwakho';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Izilungiselelo zakho zangaphambilini zaleli divayisi azikusekeli ukukhishwa kwezwi lolu limi.';
 }

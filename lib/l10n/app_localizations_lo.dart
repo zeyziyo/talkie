@@ -1260,4 +1260,8 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ການອອກສຽງຂອງເຈົ້າ';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ການຕັ້ງຄ່າເລີ່ມຕົ້ນຂອງອຸປະກອນນີ້ບໍ່ຮອງຮັບສຽງອອກສຳລັບພາສານີ້.';
 }

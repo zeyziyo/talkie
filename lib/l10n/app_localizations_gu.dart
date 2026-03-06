@@ -1261,4 +1261,8 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'તમારું ઉચ્ચારણ';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'આ ઉપકરણની મૂળભૂત સેટિંગ્સ આ ભાષામાં વૉઇસ આઉટપુટને સમર્થન આપતી નથી.';
 }

@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Försvara basen genom att säga ordet innan fienden anländer.",
   "wordDefenseTitle": "Ordförsvar",
   "wordModeLabel": "Ord-läge",
-  "yourPronunciation": "Ditt uttal"
+  "yourPronunciation": "Ditt uttal",
+  "ttsUnsupportedNatively": "Den här enheten har inte stöd för röstutmatning för det här språket i sina standardinställningar."
 }

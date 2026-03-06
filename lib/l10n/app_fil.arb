@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Ipagtanggol ang base sa pamamagitan ng pagsasabi ng salita bago makarating ang kaaway.",
   "wordDefenseTitle": "Word Defense",
   "wordModeLabel": "Word Mode",
-  "yourPronunciation": "Ang iyong Pagbigkas"
+  "yourPronunciation": "Ang iyong Pagbigkas",
+  "ttsUnsupportedNatively": "Hindi sinusuportahan ng mga default na setting ng device na ito ang voice output sa wikang ito."
 }

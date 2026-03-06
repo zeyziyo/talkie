@@ -1268,4 +1268,8 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Сіздің айтылуыңыз';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Бұл тілді осы құрылғының параметрлеріндегі дауыстық шығыс қолдамайды.';
 }

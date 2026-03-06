@@ -1259,4 +1259,8 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'آپ کا تلفظ';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'اس ڈیوائس کی ڈیفالٹ سیٹنگ اس زبان میں آواز کی آؤٹ پُٹ کو سپورٹ نہیں کرتی ہے۔';
 }

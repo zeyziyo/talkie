@@ -1280,4 +1280,8 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Shqiptimi juaj';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Ky postim audio nuk mbështetet nga cilësimet e këtij telefoni.';
 }

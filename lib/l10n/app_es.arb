@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Defiende la base diciendo la palabra antes de que llegue el enemigo.",
   "wordDefenseTitle": "Defensa de palabras",
   "wordModeLabel": "Modo palabra",
-  "yourPronunciation": "Tu Pronunciación"
+  "yourPronunciation": "Tu Pronunciación",
+  "ttsUnsupportedNatively": "La configuración predeterminada de este dispositivo no es compatible con la salida de voz en este idioma."
 }

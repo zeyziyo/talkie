@@ -1275,4 +1275,8 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Eich Ynganiad';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon.';
 }

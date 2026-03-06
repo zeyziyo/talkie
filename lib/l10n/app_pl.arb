@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Broń bazy, wymawiając słowa zanim dotrą wrogowie.",
   "wordDefenseTitle": "Obrona słów",
   "wordModeLabel": "Tryb słów",
-  "yourPronunciation": "Twoja Wymowa"
+  "yourPronunciation": "Twoja Wymowa",
+  "ttsUnsupportedNatively": "To urządzenie natywnie nie obsługuje odczytywania tekstu w tym języku."
 }

@@ -1269,4 +1269,8 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Framburðurinn þinn';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu.';
 }

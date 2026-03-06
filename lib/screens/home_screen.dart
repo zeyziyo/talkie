@@ -91,6 +91,8 @@ class _HomeScreenState extends State<HomeScreen> {
         ? '${errorData.displayName} (${errorData.nativeName})'
         : errorData.displayName;
 
+    final bool isNativelyUnsupported = errorData.isNativelyUnsupported;
+
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Column(
@@ -99,12 +101,15 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Text('[$langInfo] ${l10n.ttsMissing}', style: const TextStyle(fontWeight: FontWeight.bold)),
             const SizedBox(height: 4),
-            Text(l10n.ttsInstallGuide, style: const TextStyle(fontSize: 12)),
+            Text(
+              isNativelyUnsupported ? l10n.ttsUnsupportedNatively : l10n.ttsInstallGuide, 
+              style: const TextStyle(fontSize: 12)
+            ),
           ],
         ),
         backgroundColor: Colors.orange.shade900,
-        duration: const Duration(seconds: 12),
-        action: SnackBarAction(
+        duration: Duration(seconds: isNativelyUnsupported ? 6 : 12),
+        action: isNativelyUnsupported ? null : SnackBarAction(
           label: '설정 열기',
           textColor: Colors.white,
           onPressed: () async {

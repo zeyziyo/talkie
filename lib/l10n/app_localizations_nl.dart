@@ -1268,4 +1268,8 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Jouw Uitspraak';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Deze taal wordt niet standaard ondersteund voor spraakuitvoer op dit apparaat.';
 }

@@ -1269,4 +1269,8 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Миний дуудлага';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Энэ хэлээр яриа үүсгэх нь таны төхөөрөмжийн тохиргоогоор дэмжигдэхгүй байна.';
 }

@@ -1260,4 +1260,8 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ваша вимова';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Налаштування цього пристрою не підтримують вивід мовлення для цієї мови.';
 }

@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Hitz egin hitzak etsaiak iritsi baino lehen oinarria defendatzeko.",
   "wordDefenseTitle": "Hitzen defentsa",
   "wordModeLabel": "Hitzen modua",
-  "yourPronunciation": "Zure ahoskera"
+  "yourPronunciation": "Zure ahoskera",
+  "ttsUnsupportedNatively": "Gailu honen ezarpen lehenetsiek ez dute hizkuntza honetako ahots-irteerarik onartzen."
 }

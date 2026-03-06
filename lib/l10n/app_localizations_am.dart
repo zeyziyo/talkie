@@ -1247,4 +1247,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'የእርስዎ አጠራር';
+
+  @override
+  String get ttsUnsupportedNatively => 'ይህ መሣሪያ ይህን ቋንቋ በተፈጥሮው በድምፅ አይደግፍም።';
 }

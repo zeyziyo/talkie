@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Душман келгенге чейин сөздү айтып базаны коргоңуз.",
   "wordDefenseTitle": "Сөз коргоо",
   "wordModeLabel": "Сөз режими",
-  "yourPronunciation": "Менин айтылышым"
+  "yourPronunciation": "Менин айтылышым",
+  "ttsUnsupportedNatively": "Бул түзмөктүн жөндөөлөрү бул тилде үн чыгарууну колдобойт."
 }

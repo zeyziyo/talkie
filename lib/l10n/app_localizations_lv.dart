@@ -1269,4 +1269,8 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Jūsu izruna';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Šī ierīce sākotnēji neatbalsta runas izvadi šajā valodā.';
 }

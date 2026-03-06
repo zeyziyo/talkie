@@ -1269,4 +1269,8 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ваш изговор';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Овај уређај не подржава гласовни излаз за овај језик.';
 }

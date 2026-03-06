@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Nói từ trước khi kẻ thù đến để bảo vệ căn cứ.",
   "wordDefenseTitle": "Phòng thủ từ vựng",
   "wordModeLabel": "Chế độ từ",
-  "yourPronunciation": "Phát âm của bạn"
+  "yourPronunciation": "Phát âm của bạn",
+  "ttsUnsupportedNatively": "Thiết bị này không hỗ trợ xuất âm thanh cho ngôn ngữ này trong cài đặt gốc."
 }

@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Sabihin ang salita para ipagtanggol ang base bago dumating ang kaaway.",
   "wordDefenseTitle": "Word Defense",
   "wordModeLabel": "Word Mode",
-  "yourPronunciation": "Ang Pagbigkas Mo"
+  "yourPronunciation": "Ang Pagbigkas Mo",
+  "ttsUnsupportedNatively": "Hindi sinusuportahan ng mga default na setting ng device na ito ang output ng boses para sa wikang ito."
 }

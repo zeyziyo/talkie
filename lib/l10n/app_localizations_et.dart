@@ -1268,4 +1268,8 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Sinu hääldus';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Seadme vaikeseaded ei toeta selle keele kõnet.';
 }

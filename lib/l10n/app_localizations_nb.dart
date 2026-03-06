@@ -1266,4 +1266,8 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Din uttale';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Denne enheten støtter ikke taleutdata for dette språket i sine standardinnstillinger.';
 }

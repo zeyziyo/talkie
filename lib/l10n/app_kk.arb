@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Жау келмес бұрын сөзді айтып, базаны қорғаңыз.",
   "wordDefenseTitle": "Сөзді қорғау",
   "wordModeLabel": "Сөз режимі",
-  "yourPronunciation": "Сіздің айтылуыңыз"
+  "yourPronunciation": "Сіздің айтылуыңыз",
+  "ttsUnsupportedNatively": "Бұл тілді осы құрылғының параметрлеріндегі дауыстық шығыс қолдамайды."
 }

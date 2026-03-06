@@ -1267,4 +1267,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Your Pronunciation';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'This device does not natively support voice output for this language.';
 }

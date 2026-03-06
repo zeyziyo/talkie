@@ -1274,4 +1274,8 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'നിങ്ങളുടെ ഉച്ചാരണം';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ഈ ഉപകരണത്തിന്റെ സ്ഥിര ക്രമീകരണങ്ങളിൽ ഈ ഭാഷയിലുള്ള സംഭാഷണ ഔട്ട്പുട്ട് പിന്തുണയ്ക്കുന്നില്ല.';
 }

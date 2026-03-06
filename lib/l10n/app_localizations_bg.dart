@@ -1274,4 +1274,8 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Вашето произношение';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Този език не се поддържа за гласов изход по подразбиране на това устройство.';
 }

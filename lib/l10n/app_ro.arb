@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Spune cuvintele pentru a apăra baza înainte ca inamicii să ajungă.",
   "wordDefenseTitle": "Apărarea cuvintelor",
   "wordModeLabel": "Mod cuvânt",
-  "yourPronunciation": "Pronunția ta"
+  "yourPronunciation": "Pronunția ta",
+  "ttsUnsupportedNatively": "Dispozitivul nu acceptă redarea vocală pentru această limbă în setările implicite."
 }

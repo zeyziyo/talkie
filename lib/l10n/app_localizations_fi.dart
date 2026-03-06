@@ -1263,4 +1263,8 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Sinun ääntämys';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Tämän laitteen oletusasetukset eivät tue tekstin puheeksi muuntoa tällä kielellä.';
 }

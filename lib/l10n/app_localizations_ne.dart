@@ -1271,4 +1271,8 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'मेरो उच्चारण';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'यो उपकरणको पूर्वनिर्धारित सेटिङहरूले यो भाषामा आवाज आउटपुटलाई समर्थन गर्दैन।';
 }

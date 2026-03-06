@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Дайсан ирэхээс өмнө үгийг хэлж баазыг хамгаалаарай.",
   "wordDefenseTitle": "Үг хамгаалах",
   "wordModeLabel": "Үгийн горим",
-  "yourPronunciation": "Миний дуудлага"
+  "yourPronunciation": "Миний дуудлага",
+  "ttsUnsupportedNatively": "Энэ хэлээр яриа үүсгэх нь таны төхөөрөмжийн тохиргоогоор дэмжигдэхгүй байна."
 }

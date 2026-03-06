@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Amddiffynwch y sylfaen trwy ddweud y gair cyn i'r gelyn gyrraedd.",
   "wordDefenseTitle": "Amddiffyn Gair",
   "wordModeLabel": "Modd Gair",
-  "yourPronunciation": "Eich Ynganiad"
+  "yourPronunciation": "Eich Ynganiad",
+  "ttsUnsupportedNatively": "Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon."
 }

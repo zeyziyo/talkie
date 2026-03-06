@@ -1256,4 +1256,8 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'نطقك';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'الإعدادات الأصلية لهذا الجهاز لا تدعم إخراج الصوت لهذه اللغة.';
 }

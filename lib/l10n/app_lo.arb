@@ -770,5 +770,6 @@
   "wordDefenseDesc": "ປ້ອງກັນຖານໂດຍການເວົ້າຄໍາສັບກ່ອນທີ່ສັດຕູຈະມາຮອດ.",
   "wordDefenseTitle": "ປ້ອງກັນຄຳສັບ",
   "wordModeLabel": "ໂໝດຄຳສັບ",
-  "yourPronunciation": "ການອອກສຽງຂອງເຈົ້າ"
+  "yourPronunciation": "ການອອກສຽງຂອງເຈົ້າ",
+  "ttsUnsupportedNatively": "ການຕັ້ງຄ່າເລີ່ມຕົ້ນຂອງອຸປະກອນນີ້ບໍ່ຮອງຮັບສຽງອອກສຳລັບພາສານີ້."
 }

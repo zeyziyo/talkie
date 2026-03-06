@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Verjaðu stöðina með því að segja orðið áður en óvinurinn kemur.",
   "wordDefenseTitle": "Orðavörn",
   "wordModeLabel": "Orðastilling",
-  "yourPronunciation": "Framburðurinn þinn"
+  "yourPronunciation": "Framburðurinn þinn",
+  "ttsUnsupportedNatively": "Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu."
 }

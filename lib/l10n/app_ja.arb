@@ -770,5 +770,6 @@
   "wordDefenseDesc": "敵が到着する前に単語を言って基地を守ってください。",
   "wordDefenseTitle": "単語ディフェンス",
   "wordModeLabel": "単語モード",
-  "yourPronunciation": "あなたの発音"
+  "yourPronunciation": "あなたの発音",
+  "ttsUnsupportedNatively": "このデバイスの標準設定では、この言語の音声出力をサポートしていません。"
 }

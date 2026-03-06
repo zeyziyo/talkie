@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Dushman kelishidan oldin so'zni aytib bazani himoya qiling.",
   "wordDefenseTitle": "So'z himoyasi",
   "wordModeLabel": "So'z rejimi",
-  "yourPronunciation": "Talaffuzingiz"
+  "yourPronunciation": "Talaffuzingiz",
+  "ttsUnsupportedNatively": "Ushbu qurilmaning sozlamalari ushbu tilda ovoz chiqarishni qo'llab-quvvatlamaydi."
 }

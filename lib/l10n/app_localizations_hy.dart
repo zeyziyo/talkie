@@ -1274,4 +1274,8 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ձեր արտասանությունը';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Այս սարքի լռելյայն կարգավորումներն այս լեզվի ձայնային արտածումը չեն ապահովում:';
 }

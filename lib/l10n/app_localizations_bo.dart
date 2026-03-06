@@ -1269,4 +1269,8 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ངའི་ཀློག་སྟངས།';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'འདི་ག་ཐབས་སྒྲིག་གི་སྔོན་འཛིན་སྒྲིག་འགོད་འདི་གིས་སྐད་ཡིག་འདི་གི་ངག་ཐོག་གཏང་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།';
 }

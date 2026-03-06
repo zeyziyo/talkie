@@ -1267,4 +1267,8 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ඔබේ උච්චාරණය';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'මෙම උපාංගයේ පෙරනිමි සැකසුම් මඟින් මෙම භාෂාව සඳහා හඬ ප්‍රතිදානය සහාය නොදක්වයි.';
 }

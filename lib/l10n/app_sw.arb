@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Tetea msingi wako kwa kusema neno kabla adui hajafika.",
   "wordDefenseTitle": "Ulinzi wa Neno",
   "wordModeLabel": "Hali ya Neno",
-  "yourPronunciation": "Matamshi Yako"
+  "yourPronunciation": "Matamshi Yako",
+  "ttsUnsupportedNatively": "Matamshi ya sauti hayatumiki kiasili katika lugha hii kwenye mipangilio ya kifaa hiki."
 }

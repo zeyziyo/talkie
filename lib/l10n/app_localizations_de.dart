@@ -1272,4 +1272,8 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Deine Aussprache';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Dieses Gerät unterstützt die Sprachausgabe für diese Sprache in den Standardeinstellungen nicht.';
 }

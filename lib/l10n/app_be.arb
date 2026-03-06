@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Абараніце базу, вымаўляючы словы да таго, як ворагі дойдуць да яе.",
   "wordDefenseTitle": "Абарона слоў",
   "wordModeLabel": "Рэжым слоў",
-  "yourPronunciation": "Ваша вымаўленне"
+  "yourPronunciation": "Ваша вымаўленне",
+  "ttsUnsupportedNatively": "На гэтай прыладзе не падтрымліваецца вывад маўлення для гэтай мовы ў натыўных наладах."
 }

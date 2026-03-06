@@ -1257,4 +1257,8 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'तुमचे उच्चार';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'हे डिव्हाइस मूळतः या भाषेतील आवाज आउटपुटला सपोर्ट करत नाही.';
 }

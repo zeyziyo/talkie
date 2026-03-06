@@ -5,6 +5,8 @@ class LanguageConstants {
     return _localizedMaps[langCode] ?? _localizedMaps['en']!;
   }
 
+  static const List<String> unsupportedTtsLanguages = ['kk', 'bo', 'as', 'or'];
+
   static const List<Map<String, String>> supportedLanguages = [
     {'code': 'ko', 'name': 'Korean'},
     {'code': 'en', 'name': 'English'},

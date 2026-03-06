@@ -289,6 +289,9 @@ class AppState extends ChangeNotifier {
     if (e is TtsEngineMissingException) {
       final langCode = e.langCode;
       
+      // 기기 기본 지원 불가 언어 여부 확인 (예: 카자흐어 kk)
+      final bool isUnsupported = LanguageConstants.unsupportedTtsLanguages.contains(langCode);
+      
       // Get Native Name and Display Name
       String? nativeName;
       String? displayName;
@@ -314,6 +317,7 @@ class AppState extends ChangeNotifier {
         langCode: langCode,
         displayName: displayName ?? langCode,
         nativeName: nativeName,
+        isNativelyUnsupported: isUnsupported,
       );
     } else {
       debugPrint('[TTS Error] $e');
@@ -865,10 +869,12 @@ class TtsErrorData {
   final String langCode;
   final String displayName;
   final String? nativeName;
+  final bool isNativelyUnsupported;
 
   TtsErrorData({
     required this.langCode,
     required this.displayName,
     this.nativeName,
+    this.isNativelyUnsupported = false,
   });
 }

@@ -770,5 +770,6 @@
   "wordDefenseDesc": "با گفتن کلمه، قبل از رسیدن دشمنان از پایگاه دفاع کنید.",
   "wordDefenseTitle": "دفاع از کلمه",
   "wordModeLabel": "حالت کلمه",
-  "yourPronunciation": "تلفظ شما"
+  "yourPronunciation": "تلفظ شما",
+  "ttsUnsupportedNatively": "خروجی صوتی برای این زبان در تنظیمات پیش فرض این دستگاه پشتیبانی نمی شود."
 }

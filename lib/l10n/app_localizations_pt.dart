@@ -1275,4 +1275,8 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Sua Pronúncia';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'A configuração padrão deste dispositivo não oferece suporte à saída de voz neste idioma.';
 }

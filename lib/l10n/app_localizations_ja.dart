@@ -1233,4 +1233,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'あなたの発音';
+
+  @override
+  String get ttsUnsupportedNatively => 'このデバイスの標準設定では、この言語の音声出力をサポートしていません。';
 }

@@ -770,5 +770,6 @@
   "wordDefenseDesc": "শত্রুরা পৌঁছানোর আগে শব্দ বলে আপনার বেস রক্ষা করুন।",
   "wordDefenseTitle": "শব্দ প্রতিরক্ষা",
   "wordModeLabel": "শব্দ মোড",
-  "yourPronunciation": "আপনার উচ্চারণ"
+  "yourPronunciation": "আপনার উচ্চারণ",
+  "ttsUnsupportedNatively": "এই ডিভাইসের ডিফল্ট সেটিংস এই ভাষার ভয়েস আউটপুট সমর্থন করে না।"
 }

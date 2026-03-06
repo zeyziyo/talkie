@@ -1271,4 +1271,8 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Pronunția ta';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Dispozitivul nu acceptă redarea vocală pentru această limbă în setările implicite.';
 }

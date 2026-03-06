@@ -1261,4 +1261,8 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Phát âm của bạn';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Thiết bị này không hỗ trợ xuất âm thanh cho ngôn ngữ này trong cài đặt gốc.';
 }

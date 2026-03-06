@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Verdedig die basis deur woorde te sê voordat die vyande arriveer.",
   "wordDefenseTitle": "Woordverdediging",
   "wordModeLabel": "Woordmodus",
-  "yourPronunciation": "Jou Uitspraak"
+  "yourPronunciation": "Jou Uitspraak",
+  "ttsUnsupportedNatively": "Hierdie toestel ondersteun nie teks-na-spraak vir hierdie taal in sy verstekinstellings nie."
 }

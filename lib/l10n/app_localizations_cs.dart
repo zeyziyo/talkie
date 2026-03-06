@@ -1253,4 +1253,8 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Vaše výslovnost';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Tento jazyk není nativně podporován pro převod textu na řeč na tomto zařízení.';
 }

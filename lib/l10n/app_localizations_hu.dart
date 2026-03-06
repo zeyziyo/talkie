@@ -1266,4 +1266,8 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Kiejtésed';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Ez az eszköz alapértelmezés szerint nem támogatja a hangkimenetet ezen a nyelven.';
 }

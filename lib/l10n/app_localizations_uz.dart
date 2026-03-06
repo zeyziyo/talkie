@@ -1276,4 +1276,8 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Talaffuzingiz';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Ushbu qurilmaning sozlamalari ushbu tilda ovoz chiqarishni qo\'llab-quvvatlamaydi.';
 }

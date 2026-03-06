@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Kaitske oma baasi, öeldes sõnu enne, kui vaenlased kohale jõuavad.",
   "wordDefenseTitle": "Sõnade kaitse",
   "wordModeLabel": "Sõnarežiim",
-  "yourPronunciation": "Sinu hääldus"
+  "yourPronunciation": "Sinu hääldus",
+  "ttsUnsupportedNatively": "Seadme vaikeseaded ei toeta selle keele kõnet."
 }

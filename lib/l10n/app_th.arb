@@ -770,5 +770,6 @@
   "wordDefenseDesc": "ป้องกันฐานของคุณโดยพูดคำศัพท์ก่อนที่ศัตรูจะมาถึง",
   "wordDefenseTitle": "ป้องกันคำศัพท์",
   "wordModeLabel": "โหมดคำศัพท์",
-  "yourPronunciation": "การออกเสียงของคุณ"
+  "yourPronunciation": "การออกเสียงของคุณ",
+  "ttsUnsupportedNatively": "อุปกรณ์นี้ไม่รองรับการอ่านออกเสียงด้วยภาษาที่เลือก"
 }

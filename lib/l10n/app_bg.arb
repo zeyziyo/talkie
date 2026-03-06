@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Защитете базата, като кажете думата, преди врагът да пристигне.",
   "wordDefenseTitle": "Защита на думи",
   "wordModeLabel": "Режим „Думи“",
-  "yourPronunciation": "Вашето произношение"
+  "yourPronunciation": "Вашето произношение",
+  "ttsUnsupportedNatively": "Този език не се поддържа за гласов изход по подразбиране на това устройство."
 }

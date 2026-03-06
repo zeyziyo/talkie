@@ -1266,4 +1266,8 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ваше произношение';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Этот язык не поддерживается для озвучивания на вашем устройстве.';
 }

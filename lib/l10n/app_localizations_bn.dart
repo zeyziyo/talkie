@@ -1260,4 +1260,8 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'আপনার উচ্চারণ';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'এই ডিভাইসের ডিফল্ট সেটিংস এই ভাষার ভয়েস আউটপুট সমর্থন করে না।';
 }

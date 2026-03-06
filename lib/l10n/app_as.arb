@@ -770,5 +770,6 @@
   "wordDefenseDesc": "শত্ৰু অহাৰ আগতে শব্দ কৈ ঘাটি ৰক্ষা কৰক।",
   "wordDefenseTitle": "শব্দ ৰক্ষা",
   "wordModeLabel": "শব্দ মোড",
-  "yourPronunciation": "আপোনাৰ উচ্চাৰণ"
+  "yourPronunciation": "আপোনাৰ উচ্চাৰণ",
+  "ttsUnsupportedNatively": "এই ডিভাইচৰ ডিফল্ট ছেটিংসমূহে এই ভাষাৰ বাবে কণ্ঠৰ আউটপুট সমৰ্থন নকৰে।"
 }

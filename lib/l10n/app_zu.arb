@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Vikela isizinda ngokukhuluma igama ngaphambi kokufika kwesitha.",
   "wordDefenseTitle": "Ukuzivikela Ngegama",
   "wordModeLabel": "Imodi Yamagama",
-  "yourPronunciation": "Ukuphinyiselwa Kwakho"
+  "yourPronunciation": "Ukuphinyiselwa Kwakho",
+  "ttsUnsupportedNatively": "Izilungiselelo zakho zangaphambilini zaleli divayisi azikusekeli ukukhishwa kwezwi lolu limi."
 }

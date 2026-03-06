@@ -1275,4 +1275,8 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Твој изговор';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Овој уред не поддржува изговор на овој јазик стандардно.';
 }

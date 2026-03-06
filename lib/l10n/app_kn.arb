@@ -770,5 +770,6 @@
   "wordDefenseDesc": "ಶತ್ರುಗಳು ಬರುವ ಮೊದಲು ಪದಗಳನ್ನು ಮಾತನಾಡುವ ಮೂಲಕ ನಿಮ್ಮ ನೆಲೆಯನ್ನು ರಕ್ಷಿಸಿ.",
   "wordDefenseTitle": "ಪದ ರಕ್ಷಣೆ",
   "wordModeLabel": "ಪದ ಮೋಡ್",
-  "yourPronunciation": "ನಿಮ್ಮ ಉಚ್ಚಾರಣೆ"
+  "yourPronunciation": "ನಿಮ್ಮ ಉಚ್ಚಾರಣೆ",
+  "ttsUnsupportedNatively": "ಈ ಸಾಧನದ ಸ್ಥಳೀಯ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಈ ಭಾಷೆಯ ಧ್ವನಿ ಔಟ್‌ಪುಟ್ ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 }

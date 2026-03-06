@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Védd meg a bázisodat úgy, hogy kimondod a szavakat, mielőtt az ellenség odaérne.",
   "wordDefenseTitle": "Szó védelem",
   "wordModeLabel": "Szó mód",
-  "yourPronunciation": "Kiejtésed"
+  "yourPronunciation": "Kiejtésed",
+  "ttsUnsupportedNatively": "Ez az eszköz alapértelmezés szerint nem támogatja a hangkimenetet ezen a nyelven."
 }

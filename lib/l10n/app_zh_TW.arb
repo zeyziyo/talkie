@@ -770,5 +770,6 @@
   "wordDefenseDesc": "在敵人抵達前說出單字來防禦基地。",
   "wordDefenseTitle": "單字防禦",
   "wordModeLabel": "單字模式",
-  "yourPronunciation": "你的發音"
+  "yourPronunciation": "你的發音",
+  "ttsUnsupportedNatively": "此裝置的預設設定不支援此語言的語音輸出。"
 }

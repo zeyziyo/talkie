@@ -770,5 +770,6 @@
   "wordDefenseDesc": "ਦੁਸ਼ਮਣ ਦੇ ਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ਬਦ ਬੋਲ ਕੇ ਅਧਾਰ ਦਾ ਬਚਾਅ ਕਰੋ।",
   "wordDefenseTitle": "ਸ਼ਬਦ ਡਿਫੈਂਸ",
   "wordModeLabel": "ਸ਼ਬਦ ਮੋਡ",
-  "yourPronunciation": "ਤੁਹਾਡਾ ਉਚਾਰਨ"
+  "yourPronunciation": "ਤੁਹਾਡਾ ਉਚਾਰਨ",
+  "ttsUnsupportedNatively": "ਇਹ ਭਾਸ਼ਾ ਇਸ ਡਿਵਾਈਸ ਦੀਆਂ ਸੈਟਿੰਗਾਂ 'ਤੇ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।"
 }

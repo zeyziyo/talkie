@@ -770,5 +770,6 @@
   "wordDefenseDesc": "ရန်သူ မရောက်ခင် စကားလုံးကို ပြော၍ အခြေခံကို ကာကွယ်ပါ။",
   "wordDefenseTitle": "စကားလုံး ခုခံခြင်း",
   "wordModeLabel": "စကားလုံး ပုံစံ",
-  "yourPronunciation": "ကျွန်ုပ်၏ အသံထွက်"
+  "yourPronunciation": "ကျွန်ုပ်၏ အသံထွက်",
+  "ttsUnsupportedNatively": "ဤစက်တွင် ဤဘာသာစကားအတွက် အသံထွက်စနစ်ကို မပံ့ပိုးပါ။"
 }

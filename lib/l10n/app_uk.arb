@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Захистіть базу, вимовляючи слова, перш ніж вороги досягнуть її.",
   "wordDefenseTitle": "Захист слів",
   "wordModeLabel": "Режим слів",
-  "yourPronunciation": "Ваша вимова"
+  "yourPronunciation": "Ваша вимова",
+  "ttsUnsupportedNatively": "Налаштування цього пристрою не підтримують вивід мовлення для цієї мови."
 }

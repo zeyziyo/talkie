@@ -1270,4 +1270,8 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Zure ahoskera';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Gailu honen ezarpen lehenetsiek ez dute hizkuntza honetako ahots-irteerarik onartzen.';
 }

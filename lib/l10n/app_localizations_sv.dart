@@ -1259,4 +1259,8 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ditt uttal';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Den här enheten har inte stöd för röstutmatning för det här språket i sina standardinställningar.';
 }

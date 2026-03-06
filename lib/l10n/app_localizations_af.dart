@@ -1255,4 +1255,8 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Jou Uitspraak';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Hierdie toestel ondersteun nie teks-na-spraak vir hierdie taal in sy verstekinstellings nie.';
 }

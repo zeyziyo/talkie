@@ -770,5 +770,6 @@
   "wordDefenseDesc": "在敌人到达之前说出单词来防御基地。",
   "wordDefenseTitle": "单词防御",
   "wordModeLabel": "单词模式",
-  "yourPronunciation": "你的发音"
+  "yourPronunciation": "你的发音",
+  "ttsUnsupportedNatively": "此设备的默认设置不支持此语言的语音输出。"
 }

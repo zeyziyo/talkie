@@ -770,5 +770,6 @@
   "wordDefenseDesc": "शत्रु के आने से पहले शब्द बोलकर अड्डे की रक्षा करें।",
   "wordDefenseTitle": "शब्द रक्षा",
   "wordModeLabel": "शब्द मोड",
-  "yourPronunciation": "आपका उच्चारण"
+  "yourPronunciation": "आपका उच्चारण",
+  "ttsUnsupportedNatively": "यह उपकरण मूल रूप से इस भाषा में ध्वनि आउटपुट का समर्थन नहीं करता है."
 }

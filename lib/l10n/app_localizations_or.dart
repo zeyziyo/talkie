@@ -1276,4 +1276,8 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ତୁମର ଉଚ୍ଚାରଣ';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ଏହି ଉପକରଣର ସେଟିଂସମୂହ ଏହି ଭାଷା ପାଇଁ ଭଏସ ଆଉଟପୁଟକୁ ସମର୍ଥନ କରେ ନାହିଁ।';
 }

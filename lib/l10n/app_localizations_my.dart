@@ -1282,4 +1282,8 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ကျွန်ုပ်၏ အသံထွက်';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ဤစက်တွင် ဤဘာသာစကားအတွက် အသံထွက်စနစ်ကို မပံ့ပိုးပါ။';
 }

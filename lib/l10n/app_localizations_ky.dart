@@ -1274,4 +1274,8 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Менин айтылышым';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Бул түзмөктүн жөндөөлөрү бул тилде үн чыгарууну колдобойт.';
 }

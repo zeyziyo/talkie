@@ -1271,4 +1271,8 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'თქვენი გამოთქმა';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ამ მოწყობილობის პარამეტრებში ამ ენის ხმოვანი გამოტანა არ არის მხარდაჭერილი.';
 }

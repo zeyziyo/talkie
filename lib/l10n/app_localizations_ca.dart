@@ -1281,4 +1281,8 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'La teva pronunciació';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'La configuració predeterminada d\'aquest dispositiu no admet la sortida de veu per a aquest idioma.';
 }

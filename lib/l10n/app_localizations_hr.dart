@@ -1265,4 +1265,8 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Moj izgovor';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Ovaj uređaj ne podržava izvorni izgovor za ovaj jezik.';
 }

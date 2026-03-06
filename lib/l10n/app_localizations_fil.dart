@@ -1274,4 +1274,8 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ang iyong Pagbigkas';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Hindi sinusuportahan ng mga default na setting ng device na ito ang voice output sa wikang ito.';
 }

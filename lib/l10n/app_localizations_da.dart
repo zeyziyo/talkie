@@ -1257,4 +1257,8 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Din udtale';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Denne enheds standardindstillinger understøtter ikke tekst-til-tale for dette sprog.';
 }

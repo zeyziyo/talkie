@@ -770,5 +770,6 @@
   "wordDefenseDesc": "적이 도착하기 전에 단어를 말해서 기지를 방어하세요.",
   "wordDefenseTitle": "단어 디펜스",
   "wordModeLabel": "단어 모드",
-  "yourPronunciation": "내 발음"
+  "yourPronunciation": "내 발음",
+  "ttsUnsupportedNatively": "이 기기의 기본 설정에서는 이 언어의 음성 출력을 지원하지 않습니다."
 }

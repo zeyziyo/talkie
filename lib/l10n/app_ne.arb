@@ -770,5 +770,6 @@
   "wordDefenseDesc": "शत्रु आइपुग्नु अघि शब्द बोलेर आधारको रक्षा गर्नुहोस्।",
   "wordDefenseTitle": "शब्द डिफेन्स",
   "wordModeLabel": "शब्द मोड",
-  "yourPronunciation": "मेरो उच्चारण"
+  "yourPronunciation": "मेरो उच्चारण",
+  "ttsUnsupportedNatively": "यो उपकरणको पूर्वनिर्धारित सेटिङहरूले यो भाषामा आवाज आउटपुटलाई समर्थन गर्दैन।"
 }

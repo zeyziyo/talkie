@@ -1271,4 +1271,8 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Jūsų tarimas';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Šio įrenginio numatytieji nustatymai nepalaiko teksto į kalbą šia kalba.';
 }

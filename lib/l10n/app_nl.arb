@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Verdedig je basis door de woorden te zeggen voordat de vijand arriveert.",
   "wordDefenseTitle": "Woordverdediging",
   "wordModeLabel": "Woordmodus",
-  "yourPronunciation": "Jouw Uitspraak"
+  "yourPronunciation": "Jouw Uitspraak",
+  "ttsUnsupportedNatively": "Deze taal wordt niet standaard ondersteund voor spraakuitvoer op dit apparaat."
 }

@@ -1267,4 +1267,8 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ನಿಮ್ಮ ಉಚ್ಚಾರಣೆ';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ಈ ಸಾಧನದ ಸ್ಥಳೀಯ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಈ ಭಾಷೆಯ ಧ್ವನಿ ಔಟ್‌ಪುಟ್ ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.';
 }

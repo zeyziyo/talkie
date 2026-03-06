@@ -770,5 +770,6 @@
   "wordDefenseDesc": "ଶତ୍ରୁ ପହଞ୍ଚିବା ପୂର୍ବରୁ ଏକ ଶବ୍ଦ କହି ବେସ୍ ରକ୍ଷା କରନ୍ତୁ।",
   "wordDefenseTitle": "ଶବ୍ଦ ପ୍ରତିରକ୍ଷା",
   "wordModeLabel": "ଶବ୍ଦ ମୋଡ୍",
-  "yourPronunciation": "ତୁମର ଉଚ୍ଚାରଣ"
+  "yourPronunciation": "ତୁମର ଉଚ୍ଚାରଣ",
+  "ttsUnsupportedNatively": "ଏହି ଉପକରଣର ସେଟିଂସମୂହ ଏହି ଭାଷା ପାଇଁ ଭଏସ ଆଉଟପୁଟକୁ ସମର୍ଥନ କରେ ନାହିଁ।"
 }

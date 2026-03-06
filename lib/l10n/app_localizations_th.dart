@@ -1251,4 +1251,8 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'การออกเสียงของคุณ';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'อุปกรณ์นี้ไม่รองรับการอ่านออกเสียงด้วยภาษาที่เลือก';
 }

@@ -1271,4 +1271,8 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Mənim Tələffüzüm';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Bu cihazda bu dil üçün doğma səs dəstəyi yoxdur.';
 }

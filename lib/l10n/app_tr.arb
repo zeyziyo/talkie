@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Düşmanlar ulaşmadan kelimeyi söyleyerek üssü savunun.",
   "wordDefenseTitle": "Kelime Savunması",
   "wordModeLabel": "Kelime Modu",
-  "yourPronunciation": "Telaffuzunuz"
+  "yourPronunciation": "Telaffuzunuz",
+  "ttsUnsupportedNatively": "Bu cihazda bu dil için yerel olarak sesli okuma desteği bulunmuyor."
 }

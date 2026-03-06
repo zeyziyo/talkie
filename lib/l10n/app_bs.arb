@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Odbranite bazu izgovarajući riječi prije nego što neprijatelji stignu.",
   "wordDefenseTitle": "Odbrana riječi",
   "wordModeLabel": "Način rada riječi",
-  "yourPronunciation": "Vaš izgovor"
+  "yourPronunciation": "Vaš izgovor",
+  "ttsUnsupportedNatively": "Ovaj uređaj izvorno ne podržava izgovor za ovaj jezik."
 }

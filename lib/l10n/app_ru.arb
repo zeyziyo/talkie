@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Защитите базу, произнося слова до того, как враги доберутся до нее.",
   "wordDefenseTitle": "Защита слов",
   "wordModeLabel": "Режим слов",
-  "yourPronunciation": "Ваше произношение"
+  "yourPronunciation": "Ваше произношение",
+  "ttsUnsupportedNatively": "Этот язык не поддерживается для озвучивания на вашем устройстве."
 }

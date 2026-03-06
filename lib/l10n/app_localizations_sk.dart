@@ -1266,4 +1266,8 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Vaša výslovnosť';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'V tomto zariadení nie je natívne podporovaný výstup hlasu pre tento jazyk.';
 }

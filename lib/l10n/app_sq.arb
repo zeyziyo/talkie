@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Mbroni bazën duke thënë fjalët përpara se të mbërrijnë armiqtë.",
   "wordDefenseTitle": "Mbrojtja e fjalëve",
   "wordModeLabel": "Modaliteti i fjalës",
-  "yourPronunciation": "Shqiptimi juaj"
+  "yourPronunciation": "Shqiptimi juaj",
+  "ttsUnsupportedNatively": "Ky postim audio nuk mbështetet nga cilësimet e këtij telefoni."
 }

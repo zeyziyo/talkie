@@ -1266,4 +1266,8 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Twoja Wymowa';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'To urządzenie natywnie nie obsługuje odczytywania tekstu w tym języku.';
 }

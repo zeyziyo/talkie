@@ -1268,4 +1268,8 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Telaffuzunuz';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Bu cihazda bu dil için yerel olarak sesli okuma desteği bulunmuyor.';
 }

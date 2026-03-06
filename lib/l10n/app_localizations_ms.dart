@@ -1265,4 +1265,8 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Sebutan Anda';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Tetapan lalai peranti ini tidak menyokong output pertuturan untuk bahasa ini.';
 }

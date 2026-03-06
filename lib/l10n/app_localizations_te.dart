@@ -1266,4 +1266,8 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'మీ ఉచ్చారణ';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ఈ పరికరం యొక్క స్థానిక సెట్టింగ్‌లలో ఈ భాషకు వాయిస్ అవుట్‌పుట్ మద్దతు లేదు.';
 }

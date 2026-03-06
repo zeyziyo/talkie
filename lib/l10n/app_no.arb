@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Forsvar basen ved å si ord før fienden ankommer.",
   "wordDefenseTitle": "Ord-forsvar",
   "wordModeLabel": "Ordmodus",
-  "yourPronunciation": "Din uttale"
+  "yourPronunciation": "Din uttale",
+  "ttsUnsupportedNatively": "Denne enheten støtter ikke taleutdata for dette språket i sine standardinnstillinger."
 }

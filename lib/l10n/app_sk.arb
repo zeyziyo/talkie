@@ -770,5 +770,6 @@
   "wordDefenseDesc": "Bráňte základňu vyslovením slov predtým, ako dorazí nepriateľ.",
   "wordDefenseTitle": "Slovná obrana",
   "wordModeLabel": "Režim slov",
-  "yourPronunciation": "Vaša výslovnosť"
+  "yourPronunciation": "Vaša výslovnosť",
+  "ttsUnsupportedNatively": "V tomto zariadení nie je natívne podporovaný výstup hlasu pre tento jazyk."
 }

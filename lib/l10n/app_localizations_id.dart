@@ -1269,4 +1269,8 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Lafal Anda';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Perangkat ini tidak mendukung output suara untuk bahasa ini secara bawaan.';
 }

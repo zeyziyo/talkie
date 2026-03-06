@@ -1264,4 +1264,8 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ਤੁਹਾਡਾ ਉਚਾਰਨ';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ਇਹ ਭਾਸ਼ਾ ਇਸ ਡਿਵਾਈਸ ਦੀਆਂ ਸੈਟਿੰਗਾਂ \'ਤੇ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।';
 }

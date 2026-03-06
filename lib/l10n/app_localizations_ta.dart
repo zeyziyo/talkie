@@ -1280,4 +1280,8 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'உங்கள் உச்சரிப்பு';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'இந்த சாதனத்தின் இயல்புநிலை அமைப்புகளில் இந்த மொழிக்கான குரல் வெளியீடு ஆதரிக்கப்படவில்லை.';
 }
