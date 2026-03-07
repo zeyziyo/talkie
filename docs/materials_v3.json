@@ -1,1 +1,123 @@
-{"materials":[{"id":"nouns_1","name":"Nouns 1","path":"words/nouns_1.json","category":"Words","type":"word"},{"id":"verbs_1","name":"Verbs 1","path":"words/verbs_1.json","category":"Words","type":"word"},{"id":"greetings_1","name":"Greetings 1","path":"sentences/greetings_1.json","category":"Sentences","type":"sentence"},{"id":"first_meeting","name":"First Meeting","path":"dialogues/first_meeting.json","category":"Dialogues","type":"dialogue"}]}
+{
+    "materials": [
+        {
+            "id": "basic_expressions_1",
+            "name": "Basic Expressions 1",
+            "path": "sentences/basic_expressions1.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_2",
+            "name": "Basic Expressions 2",
+            "path": "sentences/basic_expressions2.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_3",
+            "name": "Basic Expressions 3",
+            "path": "sentences/basic_expressions3.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_4",
+            "name": "Basic Expressions 4",
+            "path": "words/basic_expressions4.json",
+            "category": "Words",
+            "type": "word"
+        },
+        {
+            "id": "basic_expressions_5",
+            "name": "Basic Expressions 5",
+            "path": "words/basic_expressions5.json",
+            "category": "Words",
+            "type": "word"
+        },
+        {
+            "id": "basic_expressions_6",
+            "name": "Basic Expressions 6",
+            "path": "words/basic_expressions6.json",
+            "category": "Words",
+            "type": "word"
+        },
+        {
+            "id": "basic_expressions_7",
+            "name": "Basic Expressions 7",
+            "path": "sentences/basic_expressions7.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_8",
+            "name": "Basic Expressions 8",
+            "path": "words/basic_expressions8.json",
+            "category": "Words",
+            "type": "word"
+        },
+        {
+            "id": "basic_expressions_9",
+            "name": "Basic Expressions 9",
+            "path": "sentences/basic_expressions9.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_10",
+            "name": "Basic Expressions 10",
+            "path": "sentences/basic_expressions10.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_11",
+            "name": "Basic Expressions 11",
+            "path": "sentences/basic_expressions11.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_12",
+            "name": "Basic Expressions 12",
+            "path": "sentences/basic_expressions12.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_13",
+            "name": "Basic Expressions 13",
+            "path": "sentences/basic_expressions13.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_14",
+            "name": "Basic Expressions 14",
+            "path": "sentences/basic_expressions14.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_15",
+            "name": "Basic Expressions 15",
+            "path": "sentences/basic_expressions15.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "basic_expressions_16",
+            "name": "Basic Expressions 16",
+            "path": "sentences/basic_expressions16.json",
+            "category": "Sentences",
+            "type": "sentence"
+        },
+        {
+            "id": "first_meeting",
+            "name": "First Meeting",
+            "path": "dialogues/first_meeting.json",
+            "category": "Dialogues",
+            "type": "dialogue"
+        }
+    ]
+}
