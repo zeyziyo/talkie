@@ -102,6 +102,11 @@ class AppState extends ChangeNotifier {
       fetchOnlineMaterialsList().catchError((e) {
         debugPrint('[AppState] Background online fetch failed: \$e');
       });
+
+      // Phase 17500: Repair any records with 'auto' language code from legacy imports
+      DatabaseService.repairAutoLanguageRecords(_sourceLang, _targetLang).catchError((e) {
+        debugPrint('[AppState] Language repair failed: \$e');
+      });
     }
   }
 

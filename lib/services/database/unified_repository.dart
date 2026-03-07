@@ -322,4 +322,38 @@ class UnifiedRepository {
       default: return code;
     }
   }
+
+  /// Phase 17500: Repair records with 'auto' language code
+  static Future<void> repairAutoLanguageRecords(String currentLang, String targetLang) async {
+    final db = await _db;
+    await db.transaction((txn) async {
+      // 1. Repair meta tables (Safe SQL)
+      await txn.update('words_meta', 
+        {'source_lang': currentLang, 'target_lang': targetLang}, 
+        where: "source_lang = 'auto' OR target_lang = 'auto'");
+      await txn.update('sentences_meta', 
+        {'source_lang': currentLang, 'target_lang': targetLang}, 
+        where: "source_lang = 'auto' OR target_lang = 'auto'");
+
+      // 2. Repair content tables (Use Dart for JSON manipulation for maximum compatibility)
+      for (var table in ['words', 'sentences']) {
+        final rows = await txn.query(table, where: "data_json LIKE '%\"auto\":%'");
+        for (var row in rows) {
+          final gId = row['group_id'] as int;
+          try {
+            final jsonStr = row['data_json'] as String;
+            final Map<String, dynamic> data = jsonDecode(jsonStr);
+            if (data.containsKey('auto')) {
+              final autoData = data.remove('auto');
+              data[currentLang] = autoData;
+              await txn.update(table, {'data_json': jsonEncode(data)}, where: 'group_id = ?', whereArgs: [gId]);
+            }
+          } catch (e) {
+            print('[DB] Error repairing row $gId in $table: $e');
+          }
+        }
+      }
+    });
+    print('[DB] Repaired records with "auto" language code to "$currentLang"');
+  }
 }

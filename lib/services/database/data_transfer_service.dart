@@ -167,7 +167,9 @@ class DataTransferService {
                     finalContentMap = jsonDecode(existing.first['data_json'] as String);
                   }
 
-                  // Add/Update Source Data
+                  // Removed Phase 17500 data_json_map handling based on user request
+
+                  // Add/Update Source Data (Ensure latest from entry overrides or supplements)
                   finalContentMap[sourceLang] = {
                     'text': sText,
                     'pos': _getVal(entry, 'pos', entryPos),

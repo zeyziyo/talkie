@@ -438,4 +438,7 @@ class DatabaseService {
   static Future<void> relinkGroupId(int oldId, int newId) => UnifiedRepository.relinkGroupId(oldId, newId);
 
   static Future<void> mergeUserSessions(String oldId, String newId) => DialogueRepository.mergeUserSessions(oldId, newId);
+
+  static Future<void> repairAutoLanguageRecords(String currentLang, String targetLang) => 
+      UnifiedRepository.repairAutoLanguageRecords(currentLang, targetLang);
 }
