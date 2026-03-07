@@ -1,0 +1,56 @@
+{
+    "default_type": "sentence",
+    "subject": "Emociones 1",
+    "entries": [
+        {
+            "text": "Te quiero.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "emoción",
+                "amor"
+            ]
+        },
+        {
+            "text": "Soy feliz.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "emoción",
+                "positivo"
+            ]
+        },
+        {
+            "text": "Estoy cansado/a.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "emoción",
+                "físico"
+            ]
+        },
+        {
+            "text": "Tengo hambre.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "emoción",
+                "físico"
+            ]
+        },
+        {
+            "text": "Estoy bien.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "emoción",
+                "positivo"
+            ]
+        }
+    ]
+}

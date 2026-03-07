@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "택시 1",
+    "entries": [
+        {
+            "text": "택시!",
+            "note": "",
+            "form_type": "감탄문",
+            "style": "비격식",
+            "tags": [
+                "택시",
+                "교통"
+            ]
+        },
+        {
+            "text": "어디로 가세요?",
+            "note": "",
+            "form_type": "의문문",
+            "style": "비격식",
+            "tags": [
+                "택시",
+                "질문"
+            ]
+        },
+        {
+            "text": "호텔로 가 주세요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "택시",
+                "목적지"
+            ]
+        },
+        {
+            "text": "잔돈은 가지세요.",
+            "note": "",
+            "form_type": "명령문",
+            "style": "격식",
+            "tags": [
+                "택시",
+                "결제"
+            ]
+        }
+    ]
+}

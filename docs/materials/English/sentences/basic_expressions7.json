@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "Taxi 1",
+    "entries": [
+        {
+            "text": "Taxi!",
+            "note": "",
+            "form_type": "Exclamatory",
+            "style": "Informal",
+            "tags": [
+                "taxi",
+                "transport"
+            ]
+        },
+        {
+            "text": "Where to?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "taxi",
+                "question"
+            ]
+        },
+        {
+            "text": "I'm going to the hotel, please.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "taxi",
+                "destination"
+            ]
+        },
+        {
+            "text": "Keep the change.",
+            "note": "",
+            "form_type": "Imperative",
+            "style": "Formal",
+            "tags": [
+                "taxi",
+                "payment"
+            ]
+        }
+    ]
+}

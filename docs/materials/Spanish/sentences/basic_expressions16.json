@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "Emergencia 1",
+    "entries": [
+        {
+            "text": "¡Ayuda!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Informal",
+            "tags": [
+                "emergencia",
+                "esencial"
+            ]
+        },
+        {
+            "text": "¡Llame a un médico!",
+            "note": "",
+            "form_type": "Imperativa",
+            "style": "Informal",
+            "tags": [
+                "emergencia",
+                "médico"
+            ]
+        },
+        {
+            "text": "Me han robado.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "emergencia",
+                "crimen"
+            ]
+        },
+        {
+            "text": "Es urgente.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "emergencia",
+                "esencial"
+            ]
+        }
+    ]
+}

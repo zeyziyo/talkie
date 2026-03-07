@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "Learning Phrases 1",
+    "entries": [
+        {
+            "text": "What does this mean?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "learning",
+                "question"
+            ]
+        },
+        {
+            "text": "How do you say that in English?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "learning",
+                "language"
+            ]
+        },
+        {
+            "text": "Can you repeat, please?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Formal",
+            "tags": [
+                "learning",
+                "request"
+            ]
+        },
+        {
+            "text": "Please speak more slowly.",
+            "note": "",
+            "form_type": "Imperative",
+            "style": "Informal",
+            "tags": [
+                "learning",
+                "request"
+            ]
+        }
+    ]
+}

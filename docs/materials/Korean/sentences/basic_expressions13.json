@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "교통 1",
+    "entries": [
+        {
+            "text": "기차가 몇 시에 출발하나요?",
+            "note": "",
+            "form_type": "의문문",
+            "style": "비격식",
+            "tags": [
+                "교통",
+                "기차"
+            ]
+        },
+        {
+            "text": "...행 티켓 한 장 주세요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "교통",
+                "티켓"
+            ]
+        },
+        {
+            "text": "버스 정류장이 어디예요?",
+            "note": "",
+            "form_type": "의문문",
+            "style": "비격식",
+            "tags": [
+                "교통",
+                "버스"
+            ]
+        }
+    ]
+}

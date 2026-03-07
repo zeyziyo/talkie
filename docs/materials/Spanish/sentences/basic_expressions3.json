@@ -1,0 +1,86 @@
+{
+    "default_type": "sentence",
+    "subject": "Frases de Aprendizaje 1",
+    "entries": [
+        {
+            "text": "¿Qué significa esto?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "aprendizaje",
+                "pregunta"
+            ]
+        },
+        {
+            "text": "¿Cómo se dice eso en español?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "aprendizaje",
+                "idioma"
+            ]
+        },
+        {
+            "text": "¿Puede repetir, por favor?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Formal",
+            "tags": [
+                "aprendizaje",
+                "petición"
+            ]
+        },
+        {
+            "text": "Por favor, habla más despacio.",
+            "note": "",
+            "form_type": "Imperativa",
+            "style": "Informal",
+            "tags": [
+                "aprendizaje",
+                "petición"
+            ]
+        },
+        {
+            "text": "¿Puede escribirlo?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Formal",
+            "tags": [
+                "aprendizaje",
+                "petición"
+            ]
+        },
+        {
+            "text": "¿Cómo se escribe?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "aprendizaje",
+                "escritura"
+            ]
+        },
+        {
+            "text": "No entiendo bien el español.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "aprendizaje",
+                "idioma"
+            ]
+        },
+        {
+            "text": "Estoy aprendiendo español.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "aprendizaje",
+                "presentación"
+            ]
+        }
+    ]
+}

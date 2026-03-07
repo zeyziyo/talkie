@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "Bar and Cafe 1",
+    "entries": [
+        {
+            "text": "Would you like something to drink?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "bar",
+                "drink"
+            ]
+        },
+        {
+            "text": "A beer, please.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "bar",
+                "order"
+            ]
+        },
+        {
+            "text": "Cheers!",
+            "note": "",
+            "form_type": "Exclamatory",
+            "style": "Informal",
+            "tags": [
+                "bar",
+                "toast"
+            ]
+        },
+        {
+            "text": "The bill, please.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "bar",
+                "payment"
+            ]
+        }
+    ]
+}

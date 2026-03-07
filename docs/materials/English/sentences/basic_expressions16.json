@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "Emergency 1",
+    "entries": [
+        {
+            "text": "Help!",
+            "note": "",
+            "form_type": "Exclamatory",
+            "style": "Informal",
+            "tags": [
+                "emergency",
+                "essential"
+            ]
+        },
+        {
+            "text": "Call a doctor!",
+            "note": "",
+            "form_type": "Imperative",
+            "style": "Informal",
+            "tags": [
+                "emergency",
+                "medical"
+            ]
+        },
+        {
+            "text": "I've been robbed.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "emergency",
+                "crime"
+            ]
+        },
+        {
+            "text": "It's an emergency.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "emergency",
+                "essential"
+            ]
+        }
+    ]
+}

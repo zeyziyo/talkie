@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "감정 1",
+    "entries": [
+        {
+            "text": "행복해요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "감정",
+                "긍정적"
+            ]
+        },
+        {
+            "text": "슬퍼요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "감정",
+                "부정적"
+            ]
+        },
+        {
+            "text": "피곤해요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "감정",
+                "신체적"
+            ]
+        },
+        {
+            "text": "배고파요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "감정",
+                "신체적"
+            ]
+        }
+    ]
+}

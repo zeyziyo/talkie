@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "Restaurante 1",
+    "entries": [
+        {
+            "text": "¿Quieren algo para comer?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Formal",
+            "tags": [
+                "restaurante",
+                "pedido"
+            ]
+        },
+        {
+            "text": "El menú, por favor.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "restaurante",
+                "petición"
+            ]
+        },
+        {
+            "text": "¡Está delicioso!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Informal",
+            "tags": [
+                "restaurante",
+                "opinión"
+            ]
+        },
+        {
+            "text": "La cuenta, por favor.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "restaurante",
+                "pago"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "술집 및 카페 1",
+    "entries": [
+        {
+            "text": "뭐 좀 마시겠어요?",
+            "note": "",
+            "form_type": "의문문",
+            "style": "비격식",
+            "tags": [
+                "술집",
+                "음료"
+            ]
+        },
+        {
+            "text": "맥주 한 잔 주세요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "술집",
+                "주문"
+            ]
+        },
+        {
+            "text": "건배!",
+            "note": "",
+            "form_type": "감탄문",
+            "style": "비격식",
+            "tags": [
+                "술집",
+                "건배"
+            ]
+        },
+        {
+            "text": "계산서 주세요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "술집",
+                "결제"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "default_type": "word",
+    "subject": "Números 1",
+    "entries": [
+        {
+            "text": "cero",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "número",
+                "básico"
+            ]
+        },
+        {
+            "text": "uno",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "número",
+                "básico"
+            ]
+        },
+        {
+            "text": "dos",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "número",
+                "básico"
+            ]
+        },
+        {
+            "text": "diez",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "número",
+                "básico"
+            ]
+        },
+        {
+            "text": "veinte",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "número"
+            ]
+        },
+        {
+            "text": "cien",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "número"
+            ]
+        },
+        {
+            "text": "mil",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "número"
+            ]
+        },
+        {
+            "text": "diez mil",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "número"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "default_type": "word",
+    "subject": "Family 1",
+    "entries": [
+        {
+            "text": "father",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "family",
+                "basic"
+            ]
+        },
+        {
+            "text": "mother",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "family",
+                "basic"
+            ]
+        },
+        {
+            "text": "son",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "family"
+            ]
+        },
+        {
+            "text": "daughter",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "family"
+            ]
+        },
+        {
+            "text": "brother",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "family"
+            ]
+        },
+        {
+            "text": "sister",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "family"
+            ]
+        }
+    ]
+}

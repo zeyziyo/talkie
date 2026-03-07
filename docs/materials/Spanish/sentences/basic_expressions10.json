@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "Bar y Cafetería 1",
+    "entries": [
+        {
+            "text": "¿Deseas beber algo?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "bar",
+                "bebida"
+            ]
+        },
+        {
+            "text": "Una cerveza, por favor.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "bar",
+                "pedido"
+            ]
+        },
+        {
+            "text": "¡Salud!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Informal",
+            "tags": [
+                "bar",
+                "brindis"
+            ]
+        },
+        {
+            "text": "La cuenta, por favor.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "bar",
+                "pago"
+            ]
+        }
+    ]
+}

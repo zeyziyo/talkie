@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "식당 1",
+    "entries": [
+        {
+            "text": "주문하시겠어요?",
+            "note": "",
+            "form_type": "의문문",
+            "style": "격식",
+            "tags": [
+                "식당",
+                "주문"
+            ]
+        },
+        {
+            "text": "메뉴판 좀 보여주세요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "식당",
+                "요청"
+            ]
+        },
+        {
+            "text": "정말 맛있어요!",
+            "note": "",
+            "form_type": "감탄문",
+            "style": "비격식",
+            "tags": [
+                "식당",
+                "의견"
+            ]
+        }
+    ]
+}

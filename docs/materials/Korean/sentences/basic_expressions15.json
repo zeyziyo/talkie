@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "해변 1",
+    "entries": [
+        {
+            "text": "여기서 수영할 수 있나요?",
+            "note": "",
+            "form_type": "의문문",
+            "style": "비격식",
+            "tags": [
+                "해변",
+                "질문"
+            ]
+        },
+        {
+            "text": "수건 좀 주세요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "해변",
+                "요청"
+            ]
+        },
+        {
+            "text": "바다가 정말 아름다워요!",
+            "note": "",
+            "form_type": "감탄문",
+            "style": "비격식",
+            "tags": [
+                "해변",
+                "의견"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "Restaurant 1",
+    "entries": [
+        {
+            "text": "Would you like to order?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Formal",
+            "tags": [
+                "restaurant",
+                "order"
+            ]
+        },
+        {
+            "text": "The menu, please.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "restaurant",
+                "request"
+            ]
+        },
+        {
+            "text": "It's delicious!",
+            "note": "",
+            "form_type": "Exclamatory",
+            "style": "Informal",
+            "tags": [
+                "restaurant",
+                "opinion"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "default_type": "word",
+    "subject": "Colors 1",
+    "entries": [
+        {
+            "text": "red",
+            "note": "",
+            "pos": "Adjective",
+            "tags": [
+                "color",
+                "basic"
+            ]
+        },
+        {
+            "text": "blue",
+            "note": "",
+            "pos": "Adjective",
+            "tags": [
+                "color",
+                "basic"
+            ]
+        },
+        {
+            "text": "yellow",
+            "note": "",
+            "pos": "Adjective",
+            "tags": [
+                "color",
+                "basic"
+            ]
+        },
+        {
+            "text": "green",
+            "note": "",
+            "pos": "Adjective",
+            "tags": [
+                "color",
+                "basic"
+            ]
+        },
+        {
+            "text": "white",
+            "note": "",
+            "pos": "Adjective",
+            "tags": [
+                "color",
+                "basic"
+            ]
+        },
+        {
+            "text": "black",
+            "note": "",
+            "pos": "Adjective",
+            "tags": [
+                "color",
+                "basic"
+            ]
+        }
+    ]
+}

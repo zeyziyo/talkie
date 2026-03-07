@@ -1,0 +1,58 @@
+{
+    "default_type": "word",
+    "subject": "Numbers 1",
+    "entries": [
+        {
+            "text": "zero",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "number",
+                "basic"
+            ]
+        },
+        {
+            "text": "one",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "number",
+                "basic"
+            ]
+        },
+        {
+            "text": "two",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "number",
+                "basic"
+            ]
+        },
+        {
+            "text": "ten",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "number",
+                "basic"
+            ]
+        },
+        {
+            "text": "hundred",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "number"
+            ]
+        },
+        {
+            "text": "thousand",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "number"
+            ]
+        }
+    ]
+}

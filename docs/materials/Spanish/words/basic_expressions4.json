@@ -1,0 +1,119 @@
+{
+    "default_type": "word",
+    "subject": "Colores 1",
+    "entries": [
+        {
+            "text": "rojo",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color",
+                "básico"
+            ]
+        },
+        {
+            "text": "azul",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color",
+                "básico"
+            ]
+        },
+        {
+            "text": "amarillo",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color",
+                "básico"
+            ]
+        },
+        {
+            "text": "verde",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color",
+                "básico"
+            ]
+        },
+        {
+            "text": "naranja",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color",
+                "básico"
+            ]
+        },
+        {
+            "text": "morado",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color",
+                "básico"
+            ]
+        },
+        {
+            "text": "blanco",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color",
+                "básico"
+            ]
+        },
+        {
+            "text": "negro",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color",
+                "básico"
+            ]
+        },
+        {
+            "text": "gris",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color",
+                "básico"
+            ]
+        },
+        {
+            "text": "marrón",
+            "note": "color marrón / castaño",
+            "pos": "Adjetivo",
+            "tags": [
+                "color"
+            ]
+        },
+        {
+            "text": "rosa",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color"
+            ]
+        },
+        {
+            "text": "dorado",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color"
+            ]
+        },
+        {
+            "text": "plateado",
+            "note": "",
+            "pos": "Adjetivo",
+            "tags": [
+                "color"
+            ]
+        }
+    ]
+}

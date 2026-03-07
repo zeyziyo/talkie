@@ -1,0 +1,56 @@
+{
+    "default_type": "sentence",
+    "subject": "Taxi 1",
+    "entries": [
+        {
+            "text": "¡Taxi!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Informal",
+            "tags": [
+                "taxi",
+                "transporte"
+            ]
+        },
+        {
+            "text": "¿A dónde quiere ir?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Formal",
+            "tags": [
+                "taxi",
+                "pregunta"
+            ]
+        },
+        {
+            "text": "Voy al hotel, por favor.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "taxi",
+                "destino"
+            ]
+        },
+        {
+            "text": "Pare aquí, por favor.",
+            "note": "",
+            "form_type": "Imperativa",
+            "style": "Informal",
+            "tags": [
+                "taxi",
+                "petición"
+            ]
+        },
+        {
+            "text": "¿Cuánto es?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "taxi",
+                "pago"
+            ]
+        }
+    ]
+}

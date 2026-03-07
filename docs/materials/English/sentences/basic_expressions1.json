@@ -1,0 +1,126 @@
+{
+    "default_type": "sentence",
+    "subject": "Basic Expressions 1",
+    "entries": [
+        {
+            "text": "Hello!",
+            "note": "",
+            "form_type": "Exclamatory",
+            "style": "Informal",
+            "tags": [
+                "greeting",
+                "basic"
+            ]
+        },
+        {
+            "text": "Good afternoon.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "greeting",
+                "basic"
+            ]
+        },
+        {
+            "text": "Goodbye.",
+            "note": "",
+            "form_type": "Exclamatory",
+            "style": "Informal",
+            "tags": [
+                "greeting",
+                "farewell"
+            ]
+        },
+        {
+            "text": "See you later.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "greeting",
+                "farewell"
+            ]
+        },
+        {
+            "text": "Yes.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "response",
+                "basic"
+            ]
+        },
+        {
+            "text": "No.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "response",
+                "basic"
+            ]
+        },
+        {
+            "text": "Excuse me!",
+            "note": "",
+            "form_type": "Exclamatory",
+            "style": "Formal",
+            "tags": [
+                "politeness",
+                "basic"
+            ]
+        },
+        {
+            "text": "Thank you.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "gratitude",
+                "essential"
+            ]
+        },
+        {
+            "text": "You're welcome.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "response",
+                "politeness"
+            ]
+        },
+        {
+            "text": "How much is it?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "shopping",
+                "question"
+            ]
+        },
+        {
+            "text": "I'm sorry.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "apology",
+                "essential"
+            ]
+        },
+        {
+            "text": "Where is the bathroom?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "question",
+                "essential"
+            ]
+        }
+    ]
+}

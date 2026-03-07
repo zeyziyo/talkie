@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "Transporte 1",
+    "entries": [
+        {
+            "text": "¿A qué hora sale el tren?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "transporte",
+                "tren"
+            ]
+        },
+        {
+            "text": "Un billete para..., por favor.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "transporte",
+                "billete"
+            ]
+        },
+        {
+            "text": "¿Dónde está la parada de autobús?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "transporte",
+                "autobús"
+            ]
+        }
+    ]
+}

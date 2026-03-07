@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "Hotel 1",
+    "entries": [
+        {
+            "text": "¿Tiene alguna habitación disponible?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Formal",
+            "tags": [
+                "hotel",
+                "check-in"
+            ]
+        },
+        {
+            "text": "Quisiera reservar una habitación.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Formal",
+            "tags": [
+                "hotel",
+                "reserva"
+            ]
+        },
+        {
+            "text": "¿Tienen wifi?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "hotel",
+                "servicio"
+            ]
+        }
+    ]
+}

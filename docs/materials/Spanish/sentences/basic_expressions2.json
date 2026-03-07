@@ -1,0 +1,196 @@
+{
+    "default_type": "sentence",
+    "subject": "Conversación 1",
+    "entries": [
+        {
+            "text": "Hola. ¿Cómo estás?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "saludo"
+            ]
+        },
+        {
+            "text": "Muy bien, gracias.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "respuesta"
+            ]
+        },
+        {
+            "text": "¿Hablas español?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "idioma"
+            ]
+        },
+        {
+            "text": "No, no hablo español.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "idioma"
+            ]
+        },
+        {
+            "text": "Sólo un poco.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "respuesta"
+            ]
+        },
+        {
+            "text": "¿De qué país eres?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "presentación"
+            ]
+        },
+        {
+            "text": "¿Cuál es tu nacionalidad?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "presentación"
+            ]
+        },
+        {
+            "text": "Soy coreano/coreana.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "presentación"
+            ]
+        },
+        {
+            "text": "¿Y tú, vives aquí?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "pregunta"
+            ]
+        },
+        {
+            "text": "Sí, vivo aquí.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "respuesta"
+            ]
+        },
+        {
+            "text": "¿Cómo te llamas?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "presentación"
+            ]
+        },
+        {
+            "text": "Me llamo ...",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "presentación"
+            ]
+        },
+        {
+            "text": "¿Qué estás haciendo aquí?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "pregunta"
+            ]
+        },
+        {
+            "text": "Estoy de vacaciones.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "viaje"
+            ]
+        },
+        {
+            "text": "Estoy en viaje de trabajo.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "negocios"
+            ]
+        },
+        {
+            "text": "Trabajo aquí.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "trabajo"
+            ]
+        },
+        {
+            "text": "¿Cuáles son buenos lugares para comer?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "restaurante"
+            ]
+        },
+        {
+            "text": "¿Hay algún museo por aquí?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "turismo"
+            ]
+        },
+        {
+            "text": "¿Dónde puedo conseguir una conexión a internet?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "conversación",
+                "práctica"
+            ]
+        }
+    ]
+}

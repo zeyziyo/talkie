@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "Transportation 1",
+    "entries": [
+        {
+            "text": "What time does the train leave?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "transport",
+                "train"
+            ]
+        },
+        {
+            "text": "A ticket to..., please.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "transport",
+                "ticket"
+            ]
+        },
+        {
+            "text": "Where is the bus stop?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "transport",
+                "bus"
+            ]
+        }
+    ]
+}

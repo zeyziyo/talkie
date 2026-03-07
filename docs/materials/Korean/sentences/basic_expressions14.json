@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "호텔 1",
+    "entries": [
+        {
+            "text": "빈 방 있나요?",
+            "note": "",
+            "form_type": "의문문",
+            "style": "격식",
+            "tags": [
+                "호텔",
+                "체크인"
+            ]
+        },
+        {
+            "text": "방을 예약하고 싶습니다.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "격식",
+            "tags": [
+                "호텔",
+                "예약"
+            ]
+        },
+        {
+            "text": "와이파이 되나요?",
+            "note": "",
+            "form_type": "의문문",
+            "style": "비격식",
+            "tags": [
+                "호텔",
+                "서비스"
+            ]
+        }
+    ]
+}

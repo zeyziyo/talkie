@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "Beach 1",
+    "entries": [
+        {
+            "text": "Can we swim here?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "beach",
+                "question"
+            ]
+        },
+        {
+            "text": "A towel, please.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "beach",
+                "request"
+            ]
+        },
+        {
+            "text": "The sea is beautiful!",
+            "note": "",
+            "form_type": "Exclamatory",
+            "style": "Informal",
+            "tags": [
+                "beach",
+                "opinion"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "default_type": "sentence",
+    "subject": "긴급 상황 1",
+    "entries": [
+        {
+            "text": "도와주세요!",
+            "note": "",
+            "form_type": "감탄문",
+            "style": "비격식",
+            "tags": [
+                "긴급",
+                "필수"
+            ]
+        },
+        {
+            "text": "의사를 불러 주세요!",
+            "note": "",
+            "form_type": "명령문",
+            "style": "비격식",
+            "tags": [
+                "긴급",
+                "의료"
+            ]
+        },
+        {
+            "text": "도둑맞았어요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "긴급",
+                "범죄"
+            ]
+        },
+        {
+            "text": "응급 상황입니다.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "긴급",
+                "필수"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "default_type": "word",
+    "subject": "Tiempo y Fechas 1",
+    "entries": [
+        {
+            "text": "hoy",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "tiempo",
+                "básico"
+            ]
+        },
+        {
+            "text": "ayer",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "tiempo",
+                "básico"
+            ]
+        },
+        {
+            "text": "mañana",
+            "note": "día siguiente / la mañana",
+            "pos": "Sustantivo",
+            "tags": [
+                "tiempo",
+                "básico"
+            ]
+        },
+        {
+            "text": "lunes",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "día",
+                "básico"
+            ]
+        },
+        {
+            "text": "martes",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "día",
+                "básico"
+            ]
+        },
+        {
+            "text": "enero",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "mes",
+                "básico"
+            ]
+        },
+        {
+            "text": "febrero",
+            "note": "",
+            "pos": "Sustantivo",
+            "tags": [
+                "mes",
+                "básico"
+            ]
+        },
+        {
+            "text": "ahora",
+            "note": "",
+            "pos": "Adverbio",
+            "tags": [
+                "tiempo"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,226 @@
+{
+    "default_type": "sentence",
+    "subject": "Expresiones Básicas 1",
+    "entries": [
+        {
+            "text": "¡Hola!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Informal",
+            "tags": [
+                "saludo",
+                "básico"
+            ]
+        },
+        {
+            "text": "Buenas tardes.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "saludo",
+                "básico"
+            ]
+        },
+        {
+            "text": "Adiós.",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Informal",
+            "tags": [
+                "saludo",
+                "despedida"
+            ]
+        },
+        {
+            "text": "Hasta luego.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "saludo",
+                "despedida"
+            ]
+        },
+        {
+            "text": "Sí.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "respuesta",
+                "básico"
+            ]
+        },
+        {
+            "text": "No.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "respuesta",
+                "básico"
+            ]
+        },
+        {
+            "text": "¡Disculpe!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Formal",
+            "tags": [
+                "cortesía",
+                "básico"
+            ]
+        },
+        {
+            "text": "Gracias.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "agradecimiento",
+                "esencial"
+            ]
+        },
+        {
+            "text": "¡Muchas gracias!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Informal",
+            "tags": [
+                "agradecimiento",
+                "esencial"
+            ]
+        },
+        {
+            "text": "Gracias por su ayuda.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Formal",
+            "tags": [
+                "agradecimiento",
+                "cortesía"
+            ]
+        },
+        {
+            "text": "De nada.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "respuesta",
+                "cortesía"
+            ]
+        },
+        {
+            "text": "De acuerdo.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "respuesta",
+                "básico"
+            ]
+        },
+        {
+            "text": "¿Cuánto cuesta?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "compras",
+                "pregunta"
+            ]
+        },
+        {
+            "text": "¡Discúlpeme!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Formal",
+            "tags": [
+                "disculpa",
+                "esencial"
+            ]
+        },
+        {
+            "text": "No entiendo.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "comunicación",
+                "básico"
+            ]
+        },
+        {
+            "text": "Entendí.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "comunicación",
+                "básico"
+            ]
+        },
+        {
+            "text": "No sé.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Informal",
+            "tags": [
+                "respuesta",
+                "básico"
+            ]
+        },
+        {
+            "text": "Prohibido.",
+            "note": "",
+            "form_type": "Afirmativa",
+            "style": "Formal",
+            "tags": [
+                "aviso",
+                "señal"
+            ]
+        },
+        {
+            "text": "¿Dónde están los baños?",
+            "note": "",
+            "form_type": "Interrogativa",
+            "style": "Informal",
+            "tags": [
+                "pregunta",
+                "esencial"
+            ]
+        },
+        {
+            "text": "¡Feliz año nuevo!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Informal",
+            "tags": [
+                "saludo",
+                "celebración"
+            ]
+        },
+        {
+            "text": "¡Feliz cumpleaños!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Informal",
+            "tags": [
+                "saludo",
+                "celebración"
+            ]
+        },
+        {
+            "text": "¡Felicidades!",
+            "note": "",
+            "form_type": "Exclamativa",
+            "style": "Informal",
+            "tags": [
+                "saludo",
+                "celebración"
+            ]
+        }
+    ]
+}

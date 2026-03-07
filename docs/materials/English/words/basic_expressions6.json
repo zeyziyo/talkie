@@ -1,0 +1,69 @@
+{
+    "default_type": "word",
+    "subject": "Time and Dates 1",
+    "entries": [
+        {
+            "text": "today",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "time",
+                "basic"
+            ]
+        },
+        {
+            "text": "yesterday",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "time",
+                "basic"
+            ]
+        },
+        {
+            "text": "tomorrow",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "time",
+                "basic"
+            ]
+        },
+        {
+            "text": "Monday",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "day",
+                "basic"
+            ]
+        },
+        {
+            "text": "Tuesday",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "day",
+                "basic"
+            ]
+        },
+        {
+            "text": "January",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "month",
+                "basic"
+            ]
+        },
+        {
+            "text": "February",
+            "note": "",
+            "pos": "Noun",
+            "tags": [
+                "month",
+                "basic"
+            ]
+        }
+    ]
+}

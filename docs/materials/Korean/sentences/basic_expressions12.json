@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "작별 1",
+    "entries": [
+        {
+            "text": "안녕히 가세요!",
+            "note": "",
+            "form_type": "감탄문",
+            "style": "비격식",
+            "tags": [
+                "작별",
+                "인사"
+            ]
+        },
+        {
+            "text": "내일 봐요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "작별",
+                "인사"
+            ]
+        },
+        {
+            "text": "잘 지내세요.",
+            "note": "",
+            "form_type": "평서문",
+            "style": "비격식",
+            "tags": [
+                "작별",
+                "인사"
+            ]
+        }
+    ]
+}

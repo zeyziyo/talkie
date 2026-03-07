@@ -1,0 +1,66 @@
+{
+    "default_type": "sentence",
+    "subject": "Conversation 1",
+    "entries": [
+        {
+            "text": "Hi. How are you?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "conversation",
+                "greeting"
+            ]
+        },
+        {
+            "text": "I'm doing well, thanks.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "conversation",
+                "response"
+            ]
+        },
+        {
+            "text": "Do you speak English?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "conversation",
+                "language"
+            ]
+        },
+        {
+            "text": "Where are you from?",
+            "note": "",
+            "form_type": "Interrogative",
+            "style": "Informal",
+            "tags": [
+                "conversation",
+                "introduction"
+            ]
+        },
+        {
+            "text": "My name is ...",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "conversation",
+                "introduction"
+            ]
+        },
+        {
+            "text": "I'm on vacation.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "conversation",
+                "travel"
+            ]
+        }
+    ]
+}

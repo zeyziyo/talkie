@@ -1,0 +1,36 @@
+{
+    "default_type": "sentence",
+    "subject": "Farewell 1",
+    "entries": [
+        {
+            "text": "Goodbye!",
+            "note": "",
+            "form_type": "Exclamatory",
+            "style": "Informal",
+            "tags": [
+                "farewell",
+                "greeting"
+            ]
+        },
+        {
+            "text": "See you tomorrow.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "farewell",
+                "greeting"
+            ]
+        },
+        {
+            "text": "Take care.",
+            "note": "",
+            "form_type": "Declarative",
+            "style": "Informal",
+            "tags": [
+                "farewell",
+                "greeting"
+            ]
+        }
+    ]
+}
