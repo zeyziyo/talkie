@@ -1276,4 +1276,14 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'На гэтай прыладзе не падтрымліваецца вывад маўлення для гэтай мовы ў натыўных наладах.';
+
+  @override
+  String get welcomeTitle => 'Сардэчна запрашаем у Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie падтрымлівае больш за 80 моў і з\'яўляецца разумным інструментам для перакладу для падарожнікаў. Паляпшайце свае навыкі маўлення з дапамогай AI Chat!';
+
+  @override
+  String get welcomeButton => 'Пачаць';
 }

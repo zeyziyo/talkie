@@ -1284,4 +1284,14 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'La synthèse vocale n\'est pas prise en charge nativement pour cette langue sur cet appareil.';
+
+  @override
+  String get welcomeTitle => 'Bienvenue sur Talkie !';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie supporte plus de 80 langues et est un outil intelligent pour les voyageurs. Améliorez votre expression orale avec le chat IA !';
+
+  @override
+  String get welcomeButton => 'Commencer';
 }

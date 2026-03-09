@@ -1275,4 +1275,14 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'ამ მოწყობილობის პარამეტრებში ამ ენის ხმოვანი გამოტანა არ არის მხარდაჭერილი.';
+
+  @override
+  String get welcomeTitle => 'კეთილი იყოს თქვენი მობრძანება Talkie-ში!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie მხარს უჭერს 80-ზე მეტ ენას და არის ჭკვიანი მთარგმნელობითი ინსტრუმენტი მოგზაურებისთვის. გააუმჯობესეთ თქვენი მეტყველება AI Chat-ით!';
+
+  @override
+  String get welcomeButton => 'დაწყება';
 }

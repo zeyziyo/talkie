@@ -1264,4 +1264,14 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'এই ডিভাইসের ডিফল্ট সেটিংস এই ভাষার ভয়েস আউটপুট সমর্থন করে না।';
+
+  @override
+  String get welcomeTitle => 'Talkie-তে স্বাগতম!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie ৮০টিরও বেশি ভাষা সমর্থন করে এবং এটি ভ্রমণকারীদের জন্য একটি স্মার্ট অনুবাদ সরঞ্জাম। AI চ্যাটের মাধ্যমে আপনার কথা বলার দক্ষতা বাড়ান!';
+
+  @override
+  String get welcomeButton => 'শুরু করুন';
 }

@@ -1273,4 +1273,14 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'འདི་ག་ཐབས་སྒྲིག་གི་སྔོན་འཛིན་སྒྲིག་འགོད་འདི་གིས་སྐད་ཡིག་འདི་གི་ངག་ཐོག་གཏང་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།';
+
+  @override
+  String get welcomeTitle => 'Talkie ལ་ཕེབས་པར་དགའ་བསུ་ཞུ།';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie ཡིས་སྐད་རིགས་ ༨༠ ལྷག་ལ་རྒྱབ་སྐྱོར་བྱེད་ཀྱི་ཡོད་པ་མ་ཟད། འགྲུལ་བཞུད་པའི་ཆེད་དུ་བཟོས་པའི་རིག་ནུས་ལོ་ཙཱའི་ལག་ཆ་ཞིག་རེད། AI ཁ་བརྡའི་ཐོག་ནས་སྦྱོང་བརྡར་གནང་རོགས།';
+
+  @override
+  String get welcomeButton => 'འགོ་འཛུགས།';
 }

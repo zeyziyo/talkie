@@ -27,6 +27,10 @@ extension AppStateSettings on AppState {
     // Chat Gender Settings
     _chatUserGender = _prefs?.getString('chatUserGender') ?? 'male';
     _chatAiGender = _prefs?.getString('chatAiGender') ?? 'female';
+
+    // Onboarding Settings
+    final hasSeenOnboarding = _prefs?.getBool('has_seen_onboarding') ?? false;
+    _showWelcomeBanner = !hasSeenOnboarding;
   }
 
   Future<void> _saveSettings() async {
@@ -208,5 +212,11 @@ extension AppStateSettings on AppState {
       'am': 'am-ET', // Amharic
     };
     return map[lang] ?? lang;
+  }
+
+  void dismissWelcomeBanner() {
+    _showWelcomeBanner = false;
+    _prefs?.setBool('has_seen_onboarding', true);
+    notify();
   }
 }

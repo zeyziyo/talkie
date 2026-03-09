@@ -1274,4 +1274,14 @@ class AppLocalizationsEu extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Gailu honen ezarpen lehenetsiek ez dute hizkuntza honetako ahots-irteerarik onartzen.';
+
+  @override
+  String get welcomeTitle => 'Ongi etorri Talkiera!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie-k 80 hizkuntza baino gehiago onartzen ditu eta itzulpen-tresna adimentsua da. Hobetu zure mintzamena AI Chatekin!';
+
+  @override
+  String get welcomeButton => 'Hasi';
 }

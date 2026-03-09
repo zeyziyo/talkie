@@ -1276,4 +1276,14 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Dieses Gerät unterstützt die Sprachausgabe für diese Sprache in den Standardeinstellungen nicht.';
+
+  @override
+  String get welcomeTitle => 'Willkommen bei Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie unterstützt über 80 Sprachen und ist ein intelligentes Übersetzungstool für Reisende. Verbessern Sie Ihre Sprechfertigkeiten durch KI-Chat!';
+
+  @override
+  String get welcomeButton => 'Loslegen';
 }

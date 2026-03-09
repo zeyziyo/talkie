@@ -1279,4 +1279,14 @@ class AppLocalizationsCy extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon.';
+
+  @override
+  String get welcomeTitle => 'Croeso i Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Mae Talkie yn cefnogi dros 80 o ieithoedd ac yn offeryn cyfieithu craff ar gyfer teithwyr. Gwella dy sgiliau siarad gyda Sgwrs AI!';
+
+  @override
+  String get welcomeButton => 'Dechrau';
 }

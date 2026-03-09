@@ -2573,6 +2573,24 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'이 기기의 기본 설정에서는 이 언어의 음성 출력을 지원하지 않습니다.'**
   String get ttsUnsupportedNatively;
+
+  /// No description provided for @welcomeTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'Talkie에 오신 것을 환영합니다!'**
+  String get welcomeTitle;
+
+  /// No description provided for @welcomeDesc.
+  ///
+  /// In ko, this message translates to:
+  /// **'Talkie는 80개 이상의 언어를 지원하는 해외 여행자와 학습자를 위한 스마트 번역 도구입니다. 말하기 연습과 AI 채팅으로 실전 회화 실력을 키워보세요!'**
+  String get welcomeDesc;
+
+  /// No description provided for @welcomeButton.
+  ///
+  /// In ko, this message translates to:
+  /// **'시작하기'**
+  String get welcomeButton;
 }
 
 class _AppLocalizationsDelegate

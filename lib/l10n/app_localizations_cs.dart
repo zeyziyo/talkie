@@ -1257,4 +1257,14 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Tento jazyk není nativně podporován pro převod textu na řeč na tomto zařízení.';
+
+  @override
+  String get welcomeTitle => 'Vítejte v Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie podporuje více než 80 jazyků a je chytrý nástroj pro překlad pro cestovatele. Zlepšete své řečové dovednosti pomocí AI chatu!';
+
+  @override
+  String get welcomeButton => 'Začít';
 }

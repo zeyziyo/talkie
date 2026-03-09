@@ -1273,4 +1273,14 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Энэ хэлээр яриа үүсгэх нь таны төхөөрөмжийн тохиргоогоор дэмжигдэхгүй байна.';
+
+  @override
+  String get welcomeTitle => 'Talkie-д тавтай морил!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie 80 гаруй хэл дэмждэг бөгөөд аялагчдад зориулсан ухаалаг орчуулгын хэрэгсэл юм. AI Chat-ын тусламжтайгаар ярианы чадвараа сайжруулаарай!';
+
+  @override
+  String get welcomeButton => 'Эхлэх';
 }

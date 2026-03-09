@@ -772,4 +772,8 @@
   "wordModeLabel": "Hitzen modua",
   "yourPronunciation": "Zure ahoskera",
   "ttsUnsupportedNatively": "Gailu honen ezarpen lehenetsiek ez dute hizkuntza honetako ahots-irteerarik onartzen."
+,
+  "welcomeTitle": "Ongi etorri Talkiera!",
+  "welcomeDesc": "Talkie-k 80 hizkuntza baino gehiago onartzen ditu eta itzulpen-tresna adimentsua da. Hobetu zure mintzamena AI Chatekin!",
+  "welcomeButton": "Hasi"
 }

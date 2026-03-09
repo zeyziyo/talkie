@@ -1267,4 +1267,14 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Tämän laitteen oletusasetukset eivät tue tekstin puheeksi muuntoa tällä kielellä.';
+
+  @override
+  String get welcomeTitle => 'Tervetuloa Talkieen!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie tukee yli 80 kieltä ja on älykäs käännöstyökalu matkailijoille. Paranna puhekykyäsi tehisälychatin avulla!';
+
+  @override
+  String get welcomeButton => 'Aloita';
 }

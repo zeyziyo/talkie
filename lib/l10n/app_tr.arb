@@ -772,4 +772,8 @@
   "wordModeLabel": "Kelime Modu",
   "yourPronunciation": "Telaffuzunuz",
   "ttsUnsupportedNatively": "Bu cihazda bu dil için yerel olarak sesli okuma desteği bulunmuyor."
+,
+  "welcomeTitle": "Talkie'ye Hoş Geldiniz!",
+  "welcomeDesc": "Talkie 80'den fazla dili destekler ve gezginler için akıllı bir çeviri aracıdır. AI Chat ile konuşma becerilerinizi geliştirin!",
+  "welcomeButton": "Başla"
 }

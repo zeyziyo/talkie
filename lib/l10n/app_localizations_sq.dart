@@ -1284,4 +1284,14 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Ky postim audio nuk mbështetet nga cilësimet e këtij telefoni.';
+
+  @override
+  String get welcomeTitle => 'Mirë se vini në Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie mbështet mbi 80 gjuhë dhe është një mjet inteligjent përkthimi për udhëtarët. Përmirësoni aftësitë tuaja të të folurit me AI Chat!';
+
+  @override
+  String get welcomeButton => 'Fillo';
 }

@@ -1275,4 +1275,14 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'यो उपकरणको पूर्वनिर्धारित सेटिङहरूले यो भाषामा आवाज आउटपुटलाई समर्थन गर्दैन।';
+
+  @override
+  String get welcomeTitle => 'Talkie मा स्वागत छ!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie ले ८० भन्दा बढी भाषाहरू समर्थन गर्दछ र यात्रीहरूका लागि स्मार्ट अनुवाद उपकरण हो। AI च्याट मार्फत आफ्नो बोल्ने कला सुधार गर्नुहोस्!';
+
+  @override
+  String get welcomeButton => 'سुरु गर्नुहोस्';
 }

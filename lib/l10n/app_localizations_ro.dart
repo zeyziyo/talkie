@@ -1275,4 +1275,14 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Dispozitivul nu acceptă redarea vocală pentru această limbă în setările implicite.';
+
+  @override
+  String get welcomeTitle => 'Bun venit la Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie suportă peste 80 de limbi și este un instrument inteligent de traducere pentru călători. Îmbunătățiți-vă abilitățile de vorbire cu AI Chat!';
+
+  @override
+  String get welcomeButton => 'Începe';
 }

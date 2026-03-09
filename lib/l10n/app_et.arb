@@ -772,4 +772,8 @@
   "wordModeLabel": "Sõnarežiim",
   "yourPronunciation": "Sinu hääldus",
   "ttsUnsupportedNatively": "Seadme vaikeseaded ei toeta selle keele kõnet."
+,
+  "welcomeTitle": "Tere tulemast Talkiesse!",
+  "welcomeDesc": "Talkie toetab üle 80 keele ja on nutikas tõlketööriist ränduritele. Parandage oma rääkimisoskust tehisintellekti vestluse abil!",
+  "welcomeButton": "Alusta"
 }

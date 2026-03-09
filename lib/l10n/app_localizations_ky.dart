@@ -1278,4 +1278,14 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Бул түзмөктүн жөндөөлөрү бул тилде үн чыгарууну колдобойт.';
+
+  @override
+  String get welcomeTitle => 'Talkie-ге кош келиңиз!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie 80ден ашык тилди колдойт жана саяхатчылар үчүн акылдуу котормо куралы. AI Chat менен сүйлөө жөндөмүңүздү өнүктүрүңүз!';
+
+  @override
+  String get welcomeButton => 'Баштоо';
 }

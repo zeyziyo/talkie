@@ -1250,4 +1250,14 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get ttsUnsupportedNatively => 'ይህ መሣሪያ ይህን ቋንቋ በተፈጥሮው በድምፅ አይደግፍም።';
+
+  @override
+  String get welcomeTitle => 'ወደ Talkie እንኳን በደህና መጡ!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie ከ80 በላይ ቋንቋዎችን የሚደግፍ ሲሆን ለተጓዦች እና ለቋንቋ ተማሪዎች ብልጥ የትርጉም እና የውይይት መማሪያ መሳሪያ ነው። የመናገር ችሎታዎን በ AI ቻት ያሳድጉ!';
+
+  @override
+  String get welcomeButton => 'ይጀምሩ';
 }

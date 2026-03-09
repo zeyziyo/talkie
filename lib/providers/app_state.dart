@@ -276,6 +276,8 @@ class AppState extends ChangeNotifier {
   String _statusMessage = '';
   List<String> _aiDetectedTags = [];
   
+  bool _showWelcomeBanner = false; // Phase: Onboarding Improvement
+  
   bool _isSyncing = false; // Phase 33: Global sync status
   bool _isMerging = false; // Phase 15.6: Prevent race condition on post-login merge
   
@@ -399,6 +401,7 @@ class AppState extends ChangeNotifier {
   // ---------------------------------------------------------
 
   int get currentMode => _currentMode;
+  bool get showWelcomeBanner => _showWelcomeBanner;
   String get sourceText => _sourceText;
   String get translatedText => _translatedText;
   String get sourceLang => _sourceLang;

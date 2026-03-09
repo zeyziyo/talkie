@@ -1275,4 +1275,14 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Šio įrenginio numatytieji nustatymai nepalaiko teksto į kalbą šia kalba.';
+
+  @override
+  String get welcomeTitle => 'Sveiki atvykę į Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie palaiko daugiau nei 80 kalbų ir yra išmanus vertimo įrankis keliautojams. Tobulinkite savo kalbėjimą naudodami AI pokalbius!';
+
+  @override
+  String get welcomeButton => 'Pradėti';
 }

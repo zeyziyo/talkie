@@ -1268,4 +1268,14 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'ਇਹ ਭਾਸ਼ਾ ਇਸ ਡਿਵਾਈਸ ਦੀਆਂ ਸੈਟਿੰਗਾਂ \'ਤੇ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।';
+
+  @override
+  String get welcomeTitle => 'Talkie ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie 80 ਤੋਂ ਵੱਧ ਭਾਸ਼ਾਵਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ ਅਤੇ ਯਾਤਰੀਆਂ ਲਈ ਇੱਕ ਸਮਾਰਟ ਅਨੁਵਾਦ ਸਾਧਨ ਹੈ। AI ਚੈਟ ਰਾਹੀਂ ਆਪਣੇ ਬੋਲਣ ਦੇ ਹੁਨર ਨੂੰ ਵਧਾਓ!';
+
+  @override
+  String get welcomeButton => 'ਸ਼ੁਰੂ ਕਰੋ';
 }

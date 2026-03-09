@@ -1265,4 +1265,14 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'આ ઉપકરણની મૂળભૂત સેટિંગ્સ આ ભાષામાં વૉઇસ આઉટપુટને સમર્થન આપતી નથી.';
+
+  @override
+  String get welcomeTitle => 'Talkie માં આપનું સ્વાગત છે!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie 80 થી વધુ ભાષાઓને સપોર્ટ કરે છે અને મુસાફરો માટે સ્માર્ટ અનુવાદ સાધન છે. AI ચેટ દ્વારા તમારી બોલવાની કુશળતામાં વધારો કરો!';
+
+  @override
+  String get welcomeButton => 'શરૂ કરો';
 }

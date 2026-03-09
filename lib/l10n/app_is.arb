@@ -772,4 +772,8 @@
   "wordModeLabel": "Orðastilling",
   "yourPronunciation": "Framburðurinn þinn",
   "ttsUnsupportedNatively": "Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu."
+,
+  "welcomeTitle": "Velkomin í Talkie!",
+  "welcomeDesc": "Talkie styður yfir 80 tungumál og er snjallt þýðingartæki fyrir ferðalanga. Bættu talfærni þína með gervigreindarspjalli!",
+  "welcomeButton": "Byrja"
 }

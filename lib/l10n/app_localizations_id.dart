@@ -1273,4 +1273,14 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Perangkat ini tidak mendukung output suara untuk bahasa ini secara bawaan.';
+
+  @override
+  String get welcomeTitle => 'Selamat datang di Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie mendukung lebih dari 80 bahasa dan merupakan alat penerjemahan cerdas bagi para pelancong. Tingkatkan keterampilan berbicara Anda dengan AI Chat!';
+
+  @override
+  String get welcomeButton => 'Mulai';
 }

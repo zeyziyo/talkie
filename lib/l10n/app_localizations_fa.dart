@@ -1262,4 +1262,14 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'خروجی صوتی برای این زبان در تنظیمات پیش فرض این دستگاه پشتیبانی نمی شود.';
+
+  @override
+  String get welcomeTitle => 'به Talkie خوش آمدید!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie از بیش از ۸۰ زبان پشتیبانی می‌کند و ابزاری هوشمند برای مسافران است. مهارت‌های گفتاری خود را با چت هوش مصنوعی ارتقا دهید!';
+
+  @override
+  String get welcomeButton => 'شروع کنید';
 }

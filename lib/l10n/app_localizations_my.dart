@@ -1286,4 +1286,14 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'ဤစက်တွင် ဤဘာသာစကားအတွက် အသံထွက်စနစ်ကို မပံ့ပိုးပါ။';
+
+  @override
+  String get welcomeTitle => 'Talkie မှ ကြိုဆိုပါတယ်!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie သည် ဘာသာစကား ၈၀ ကျော်ကို ပံ့ပိုးပေးထားပြီး ခရီးသွားများအတွက် စမတ်ကျသော ဘာသာပြန်သင်ယူမှုကိရိယာ ဖြစ်သည်။ AI Chat ဖြင့် သင်၏စကားပြောစွမ်းရည်ကို မြှင့်တင်ပါ။';
+
+  @override
+  String get welcomeButton => 'စတင်ပါ';
 }

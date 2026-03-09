@@ -772,4 +772,8 @@
   "wordModeLabel": "單字模式",
   "yourPronunciation": "你的發音",
   "ttsUnsupportedNatively": "此裝置的預設設定不支援此語言的語音輸出。"
+,
+  "welcomeTitle": "欢迎使用 Talkie!",
+  "welcomeDesc": "Talkie 支持 80 多种语言，是一款专为旅行者设计的智能翻译工具。通过 AI 聊天提升您的口语能力！",
+  "welcomeButton": "开始使用"
 }

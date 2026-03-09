@@ -772,4 +772,8 @@
   "wordModeLabel": "מצב מילים",
   "yourPronunciation": "ההגייה שלך",
   "ttsUnsupportedNatively": "הגדרות ברירת המחדל של מכשיר זה אינן תומכות בפלט קולי בשפה זו."
+,
+  "welcomeTitle": "ברוכים הבאים ל-Talkie!",
+  "welcomeDesc": "Talkie תומך ביותר מ-80 שפות והוא כלי חכם למטיילים ולומדי שפות. שפרו את כישורי הדיבור שלכם בעזרת צ'אט AI!",
+  "welcomeButton": "מתחילים"
 }

@@ -1265,4 +1265,14 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Thiết bị này không hỗ trợ xuất âm thanh cho ngôn ngữ này trong cài đặt gốc.';
+
+  @override
+  String get welcomeTitle => 'Chào mừng bạn đến với Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie hỗ trợ hơn 80 ngôn ngữ và là công cụ dịch thuật thông minh dành cho khách du lịch. Hãy nâng cao kỹ năng nói của bạn thông qua Chat AI!';
+
+  @override
+  String get welcomeButton => 'Bắt đầu';
 }

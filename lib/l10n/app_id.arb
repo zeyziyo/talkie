@@ -772,4 +772,8 @@
   "wordModeLabel": "Mode Kata",
   "yourPronunciation": "Lafal Anda",
   "ttsUnsupportedNatively": "Perangkat ini tidak mendukung output suara untuk bahasa ini secara bawaan."
+,
+  "welcomeTitle": "Selamat datang di Talkie!",
+  "welcomeDesc": "Talkie mendukung lebih dari 80 bahasa dan merupakan alat penerjemahan cerdas bagi para pelancong. Tingkatkan keterampilan berbicara Anda dengan AI Chat!",
+  "welcomeButton": "Mulai"
 }

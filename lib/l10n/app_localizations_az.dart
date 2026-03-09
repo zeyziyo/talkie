@@ -1275,4 +1275,14 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Bu cihazda bu dil üçün doğma səs dəstəyi yoxdur.';
+
+  @override
+  String get welcomeTitle => 'Talkie-yə xoş gəlmisiniz!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie 80-dən çox dili dəstəkləyir və səyahətçilər üçün ağıllı tərcümə və söhbət öyrənmə vasitəsidir. AI Chat ilə danışıq bacarıqlarınızı artırın!';
+
+  @override
+  String get welcomeButton => 'Başla';
 }

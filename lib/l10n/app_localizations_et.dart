@@ -1272,4 +1272,14 @@ class AppLocalizationsEt extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Seadme vaikeseaded ei toeta selle keele kõnet.';
+
+  @override
+  String get welcomeTitle => 'Tere tulemast Talkiesse!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie toetab üle 80 keele ja on nutikas tõlketööriist ränduritele. Parandage oma rääkimisoskust tehisintellekti vestluse abil!';
+
+  @override
+  String get welcomeButton => 'Alusta';
 }

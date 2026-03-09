@@ -1273,4 +1273,14 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Šī ierīce sākotnēji neatbalsta runas izvadi šajā valodā.';
+
+  @override
+  String get welcomeTitle => 'Laipni lūdzam Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie atbalsta vairāk nekā 80 valodas un ir vieds tulkošanas rīks ceļotājiem. Uzlabojiet savas runas prasmes, izmantojot AI tērzēšanu!';
+
+  @override
+  String get welcomeButton => 'Sākt';
 }

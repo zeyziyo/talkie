@@ -772,4 +772,8 @@
   "wordModeLabel": "Žodžių režimas",
   "yourPronunciation": "Jūsų tarimas",
   "ttsUnsupportedNatively": "Šio įrenginio numatytieji nustatymai nepalaiko teksto į kalbą šia kalba."
+,
+  "welcomeTitle": "Sveiki atvykę į Talkie!",
+  "welcomeDesc": "Talkie palaiko daugiau nei 80 kalbų ir yra išmanus vertimo įrankis keliautojams. Tobulinkite savo kalbėjimą naudodami AI pokalbius!",
+  "welcomeButton": "Pradėti"
 }

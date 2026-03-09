@@ -1278,4 +1278,14 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Този език не се поддържа за гласов изход по подразбиране на това устройство.';
+
+  @override
+  String get welcomeTitle => 'Добре дошли в Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie поддържа над 80 езика и е интелигентен инструмент за превод за пътешественици и изучаващи езици. Подобрете говоренето си с AI Chat!';
+
+  @override
+  String get welcomeButton => 'Започнете';
 }

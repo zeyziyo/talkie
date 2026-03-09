@@ -1273,4 +1273,14 @@ class AppLocalizationsIs extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu.';
+
+  @override
+  String get welcomeTitle => 'Velkomin í Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie styður yfir 80 tungumál og er snjallt þýðingartæki fyrir ferðalanga. Bættu talfærni þína með gervigreindarspjalli!';
+
+  @override
+  String get welcomeButton => 'Byrja';
 }

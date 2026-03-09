@@ -1259,4 +1259,14 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Hierdie toestel ondersteun nie teks-na-spraak vir hierdie taal in sy verstekinstellings nie.';
+
+  @override
+  String get welcomeTitle => 'Welkom by Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie ondersteun meer as 80 tale en is \'n slim vertaal- en gesprek leerhulpmiddel vir reisigers en taalaanleerders. Verbeter jou praatvaardighede met KI-klets!';
+
+  @override
+  String get welcomeButton => 'Begin';
 }

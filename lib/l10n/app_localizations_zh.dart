@@ -1230,6 +1230,16 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
+
+  @override
+  String get welcomeTitle => '欢迎使用 Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie 支持 80 多种语言，是一款专为旅行者设计的智能翻译工具。通过 AI 聊天提升您的口语能力！';
+
+  @override
+  String get welcomeButton => '开始使用';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -2459,6 +2469,16 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
+
+  @override
+  String get welcomeTitle => '欢迎使用 Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie 支持 80 多种语言，是一款专为旅行者设计的智能翻译工具。通过 AI 聊天提升您的口语能力！';
+
+  @override
+  String get welcomeButton => '开始使用';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -3688,4 +3708,14 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get ttsUnsupportedNatively => '此裝置的預設設定不支援此語言的語音輸出。';
+
+  @override
+  String get welcomeTitle => '欢迎使用 Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie 支持 80 多种语言，是一款专为旅行者设计的智能翻译工具。通过 AI 聊天提升您的口语能力！';
+
+  @override
+  String get welcomeButton => '开始使用';
 }

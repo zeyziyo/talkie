@@ -1265,4 +1265,14 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Matamshi ya sauti hayatumiki kiasili katika lugha hii kwenye mipangilio ya kifaa hiki.';
+
+  @override
+  String get welcomeTitle => 'Karibu kwenye Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie inasaidia zaidi ya lugha 80 na ni zana mahiri ya kutafsiri kwa wasafiri. Boresha ujuzi wako wa kuzungumza na Chat ya AI!';
+
+  @override
+  String get welcomeButton => 'Anza';
 }

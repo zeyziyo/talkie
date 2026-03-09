@@ -772,4 +772,8 @@
   "wordModeLabel": "Hali ya Neno",
   "yourPronunciation": "Matamshi Yako",
   "ttsUnsupportedNatively": "Matamshi ya sauti hayatumiki kiasili katika lugha hii kwenye mipangilio ya kifaa hiki."
+,
+  "welcomeTitle": "Karibu kwenye Talkie!",
+  "welcomeDesc": "Talkie inasaidia zaidi ya lugha 80 na ni zana mahiri ya kutafsiri kwa wasafiri. Boresha ujuzi wako wa kuzungumza na Chat ya AI!",
+  "welcomeButton": "Anza"
 }

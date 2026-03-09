@@ -1270,4 +1270,14 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Ez az eszköz alapértelmezés szerint nem támogatja a hangkimenetet ezen a nyelven.';
+
+  @override
+  String get welcomeTitle => 'Üdvözöljük a Talkie-ban!';
+
+  @override
+  String get welcomeDesc =>
+      'A Talkie több mint 80 nyelvet támogat, és egy intelligens fordítóeszköz utazók számára. Fejlessze beszédkészségét AI Chat-tel!';
+
+  @override
+  String get welcomeButton => 'Kezdés';
 }

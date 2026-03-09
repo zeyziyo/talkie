@@ -1284,4 +1284,14 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'இந்த சாதனத்தின் இயல்புநிலை அமைப்புகளில் இந்த மொழிக்கான குரல் வெளியீடு ஆதரிக்கப்படவில்லை.';
+
+  @override
+  String get welcomeTitle => 'Talkie-க்கு உங்களை வரவேற்கிறோம்!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie 80-க்கும் மேற்பட்ட மொழிகளை ஆதரிக்கிறது மற்றும் பயணிகளுக்கான ஒரு புத்திசாலித்தனமான மொழிபெயர்ப்பு கருவியாகும். AI அரட்டை மூலம் உங்கள் பேச்சுத் திறனை மேம்படுத்துங்கள்!';
+
+  @override
+  String get welcomeButton => 'தொடங்கு';
 }

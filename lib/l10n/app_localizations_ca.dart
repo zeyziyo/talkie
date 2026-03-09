@@ -1285,4 +1285,14 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'La configuració predeterminada d\'aquest dispositiu no admet la sortida de veu per a aquest idioma.';
+
+  @override
+  String get welcomeTitle => 'Benvingut a Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie admet més de 80 idiomes i és una eina intel·ligent de traducció per a viatgers i aprenents. Millora les teves habilitats de parla amb el xat d\'IA!';
+
+  @override
+  String get welcomeButton => 'Comença';
 }

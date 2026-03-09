@@ -1269,4 +1269,14 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Tetapan lalai peranti ini tidak menyokong output pertuturan untuk bahasa ini.';
+
+  @override
+  String get welcomeTitle => 'Selamat datang ke Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie menyokong lebih 80 bahasa und ialah alat terjemahan pintar untuk pengembara. Tingkatkan kemahiran bertutur anda dengan Sembang AI!';
+
+  @override
+  String get welcomeButton => 'Mula';
 }

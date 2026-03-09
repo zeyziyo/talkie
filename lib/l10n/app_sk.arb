@@ -772,4 +772,8 @@
   "wordModeLabel": "Režim slov",
   "yourPronunciation": "Vaša výslovnosť",
   "ttsUnsupportedNatively": "V tomto zariadení nie je natívne podporovaný výstup hlasu pre tento jazyk."
+,
+  "welcomeTitle": "Vitajte v Talkie!",
+  "welcomeDesc": "Talkie podporuje viac ako 80 jazykov a je inteligentný nástroj na preklad pre cestovateľov. Zlepšite svoje rečové zručnosti pomocou AI chatu!",
+  "welcomeButton": "Začať"
 }

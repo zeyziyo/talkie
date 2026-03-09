@@ -772,4 +772,8 @@
   "wordModeLabel": "Söz Rejimi",
   "yourPronunciation": "Mənim Tələffüzüm",
   "ttsUnsupportedNatively": "Bu cihazda bu dil üçün doğma səs dəstəyi yoxdur."
+,
+  "welcomeTitle": "Talkie-yə xoş gəlmisiniz!",
+  "welcomeDesc": "Talkie 80-dən çox dili dəstəkləyir və səyahətçilər üçün ağıllı tərcümə və söhbət öyrənmə vasitəsidir. AI Chat ilə danışıq bacarıqlarınızı artırın!",
+  "welcomeButton": "Başla"
 }

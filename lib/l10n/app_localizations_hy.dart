@@ -1278,4 +1278,14 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Այս սարքի լռելյայն կարգավորումներն այս լեզվի ձայնային արտածումը չեն ապահովում:';
+
+  @override
+  String get welcomeTitle => 'Բարի գալուստ Talkie:';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie-ն աջակցում է ավելի քան 80 լեզուների և թարգմանության խելացի գործիք է ճամփորդների համար: Բարելավեք ձեր խոսակցական հմտությունները AI Chat-ի միջոցով:';
+
+  @override
+  String get welcomeButton => 'Սկսել';
 }

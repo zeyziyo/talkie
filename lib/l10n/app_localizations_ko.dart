@@ -1239,4 +1239,14 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get ttsUnsupportedNatively => '이 기기의 기본 설정에서는 이 언어의 음성 출력을 지원하지 않습니다.';
+
+  @override
+  String get welcomeTitle => 'Talkie에 오신 것을 환영합니다!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie는 80개 이상의 언어를 지원하는 해외 여행자와 학습자를 위한 스마트 번역 도구입니다. 말하기 연습과 AI 채팅으로 실전 회화 실력을 키워보세요!';
+
+  @override
+  String get welcomeButton => '시작하기';
 }

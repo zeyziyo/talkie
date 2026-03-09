@@ -1278,4 +1278,14 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'ഈ ഉപകരണത്തിന്റെ സ്ഥിര ക്രമീകരണങ്ങളിൽ ഈ ഭാഷയിലുള്ള സംഭാഷണ ഔട്ട്പുട്ട് പിന്തുണയ്ക്കുന്നില്ല.';
+
+  @override
+  String get welcomeTitle => 'Talkie-ലേക്ക് സ്വാഗതം!';
+
+  @override
+  String get welcomeDesc =>
+      '80-ലധികം ഭാഷകളെ പിന്തുണയ്ക്കുന്ന യാത്രികർക്കുള്ള സ്മാർട്ട് വിവർത്തന ഉപകരണമാണ് Talkie. AI ചാറ്റിലൂടെ നിങ്ങളുടെ സംസാരശേഷി വർദ്ധിപ്പിക്കുക!';
+
+  @override
+  String get welcomeButton => 'ആരംഭിക്കുക';
 }

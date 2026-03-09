@@ -1270,4 +1270,14 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'V tomto zariadení nie je natívne podporovaný výstup hlasu pre tento jazyk.';
+
+  @override
+  String get welcomeTitle => 'Vitajte v Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie podporuje viac ako 80 jazykov a je inteligentný nástroj na preklad pre cestovateľov. Zlepšite svoje rečové zručnosti pomocou AI chatu!';
+
+  @override
+  String get welcomeButton => 'Začať';
 }

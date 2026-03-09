@@ -7,6 +7,7 @@ import '../l10n/app_localizations.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart' hide AppState;
 import '../services/usage_service.dart';
 import 'recommendation_widget.dart';
+import 'welcome_banner.dart';
 import 'package:talkie/widgets/metadata_dialog.dart';
 
 
@@ -152,8 +153,9 @@ class _Mode1WidgetState extends State<Mode1Widget> {
                 child: Column(
                   children: [
                     // ===================================
-                    // Phase 10: AI Recommendations
+                    // Onboarding & AI Recommendations
                     // ===================================
+                    const WelcomeBanner(),
                     const RecommendationWidget(),
                     const SizedBox(height: 12),
                     

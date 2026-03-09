@@ -1280,4 +1280,14 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Izilungiselelo zakho zangaphambilini zaleli divayisi azikusekeli ukukhishwa kwezwi lolu limi.';
+
+  @override
+  String get welcomeTitle => 'Siyakwamukela ku-Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'I-Talkie isekela izilimi ezingaphezu kuka-80 futhi iyithuluzi lokuhumusha labahambi. Ithuthukise ikhono lakho lokukhuluma nge-AI Chat!';
+
+  @override
+  String get welcomeButton => 'Qala';
 }

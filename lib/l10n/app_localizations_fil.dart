@@ -1278,4 +1278,14 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Hindi sinusuportahan ng mga default na setting ng device na ito ang voice output sa wikang ito.';
+
+  @override
+  String get welcomeTitle => 'Maligayang pagdating sa Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Sinusuportahan ng Talkie ang mahigit 80 wika at isang matalinong tool para sa mga manlalakbay. Pagbutihin ang iyong pagsasalita gamit ang AI Chat!';
+
+  @override
+  String get welcomeButton => 'Magsimula';
 }

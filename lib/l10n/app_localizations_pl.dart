@@ -1270,4 +1270,14 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'To urządzenie natywnie nie obsługuje odczytywania tekstu w tym języku.';
+
+  @override
+  String get welcomeTitle => 'Witaj w Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie obsługuje ponad 80 języków i jest inteligentnym narzędziem do tłumaczenia dla podróżników. Rozwijaj umiejętności mówienia dzięki AI Chat!';
+
+  @override
+  String get welcomeButton => 'Zacznij';
 }

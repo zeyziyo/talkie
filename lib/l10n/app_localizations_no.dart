@@ -1262,4 +1262,14 @@ class AppLocalizationsNo extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Denne enheten støtter ikke taleutdata for dette språket i sine standardinnstillinger.';
+
+  @override
+  String get welcomeTitle => 'Velkommen til Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie støtter over 80 språk og er et smart verktøy for oversettelse for reisende. Forbedre taleferdighetene dine med AI-chat!';
+
+  @override
+  String get welcomeButton => 'Kom i gang';
 }

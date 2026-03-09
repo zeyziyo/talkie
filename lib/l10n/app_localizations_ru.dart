@@ -1270,4 +1270,14 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Этот язык не поддерживается для озвучивания на вашем устройстве.';
+
+  @override
+  String get welcomeTitle => 'Добро пожаловать в Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie поддерживает более 80 языков и является умным инструментом перевода для путешественников. Улучшайте свои навыки речи с помощью AI Chat!';
+
+  @override
+  String get welcomeButton => 'Начать';
 }

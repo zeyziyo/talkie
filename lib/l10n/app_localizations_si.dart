@@ -1271,4 +1271,14 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'මෙම උපාංගයේ පෙරනිමි සැකසුම් මඟින් මෙම භාෂාව සඳහා හඬ ප්‍රතිදානය සහාය නොදක්වයි.';
+
+  @override
+  String get welcomeTitle => 'Talkie වෙත සාදරයෙන් පිළිගනිමු!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie භාෂා 80කට වඩා සහාය දක්වන සංචාරකයින් සඳහා වන ස්මාර්ට් පරිවර්තන මෙවලමකි. AI Chat හරහා ඔබේ කථන කුසලතා ඉහළ නංවා ගන්න!';
+
+  @override
+  String get welcomeButton => 'ආරම්භ කරන්න';
 }

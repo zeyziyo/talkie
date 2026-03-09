@@ -772,4 +772,8 @@
   "wordModeLabel": "የቃል ሁነታ",
   "yourPronunciation": "የእርስዎ አጠራር",
   "ttsUnsupportedNatively": "ይህ መሣሪያ ይህን ቋንቋ በተፈጥሮው በድምፅ አይደግፍም።"
+,
+  "welcomeTitle": "ወደ Talkie እንኳን በደህና መጡ!",
+  "welcomeDesc": "Talkie ከ80 በላይ ቋንቋዎችን የሚደግፍ ሲሆን ለተጓዦች እና ለቋንቋ ተማሪዎች ብልጥ የትርጉም እና የውይይት መማሪያ መሳሪያ ነው። የመናገር ችሎታዎን በ AI ቻት ያሳድጉ!",
+  "welcomeButton": "ይጀምሩ"
 }

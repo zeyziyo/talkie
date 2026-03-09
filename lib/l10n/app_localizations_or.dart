@@ -1280,4 +1280,14 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'ଏହି ଉପକରଣର ସେଟିଂସମୂହ ଏହି ଭାଷା ପାଇଁ ଭଏସ ଆଉଟପୁଟକୁ ସମର୍ଥନ କରେ ନାହିଁ।';
+
+  @override
+  String get welcomeTitle => 'Talkie କୁ ସ୍ୱାଗତ!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie ୮୦ ରୁ ଅଧିକ ଭାଷାକୁ ସମର୍ଥନ କରେ ଏବଂ ଏହା ଭ୍ରମଣକାରୀଙ୍କ ପାଇଁ ଏକ ସ୍ମାର୍ଟ ଅନୁବାଦ ଉପକରଣ | AI ଚାଟ୍ ମାଧ୍ୟମରେ ଆପଣଙ୍କର କହିବା ଦକ୍ଷତା ବଢ଼ାନ୍ତୁ |';
+
+  @override
+  String get welcomeButton => 'ଆରମ୍ଭ କରନ୍ତୁ';
 }

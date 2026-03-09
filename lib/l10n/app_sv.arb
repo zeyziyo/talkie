@@ -772,4 +772,8 @@
   "wordModeLabel": "Ord-läge",
   "yourPronunciation": "Ditt uttal",
   "ttsUnsupportedNatively": "Den här enheten har inte stöd för röstutmatning för det här språket i sina standardinställningar."
+,
+  "welcomeTitle": "Välkommen till Talkie!",
+  "welcomeDesc": "Talkie stöder över 80 språk och är ett smart verktyg för översättning för resenärer. Förbättra dina talfärdigheter med AI-chatten!",
+  "welcomeButton": "Kom igång"
 }

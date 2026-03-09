@@ -1260,4 +1260,14 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'الإعدادات الأصلية لهذا الجهاز لا تدعم إخراج الصوت لهذه اللغة.';
+
+  @override
+  String get welcomeTitle => 'مرحبًا بك في Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'يدعم Talkie أكثر من 80 لغة وهو أداة ذكية للترجمة وتعلم المحادثة للمسافرين ومتعلمي اللغات. ارتقِ بمهاراتك في التحدث مع دردشة الذكاء الاصطناعي!';
+
+  @override
+  String get welcomeButton => 'ابدأ الآن';
 }

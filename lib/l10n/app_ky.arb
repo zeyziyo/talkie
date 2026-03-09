@@ -772,4 +772,8 @@
   "wordModeLabel": "Сөз режими",
   "yourPronunciation": "Менин айтылышым",
   "ttsUnsupportedNatively": "Бул түзмөктүн жөндөөлөрү бул тилде үн чыгарууну колдобойт."
+,
+  "welcomeTitle": "Talkie-ге кош келиңиз!",
+  "welcomeDesc": "Talkie 80ден ашык тилди колдойт жана саяхатчылар үчүн акылдуу котормо куралы. AI Chat менен сүйлөө жөндөмүңүздү өнүктүрүңүз!",
+  "welcomeButton": "Баштоо"
 }

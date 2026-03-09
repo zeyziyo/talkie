@@ -772,4 +772,8 @@
   "wordModeLabel": "Modalità parola",
   "yourPronunciation": "La tua Pronuncia",
   "ttsUnsupportedNatively": "La sintesi vocale per questa lingua non è supportata nativamente su questo dispositivo."
+,
+  "welcomeTitle": "Benvenuto in Talkie!",
+  "welcomeDesc": "Talkie supporta oltre 80 lingue ed è uno strumento intelligente per viaggiatori e studenti. Migliora le tue abilità oratorie con la chat AI!",
+  "welcomeButton": "Inizia"
 }

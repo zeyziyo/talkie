@@ -1264,4 +1264,14 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'ການຕັ້ງຄ່າເລີ່ມຕົ້ນຂອງອຸປະກອນນີ້ບໍ່ຮອງຮັບສຽງອອກສຳລັບພາສານີ້.';
+
+  @override
+  String get welcomeTitle => 'ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie ຮອງຮັບຫຼາຍກວ່າ 80 ພາສາ ແລະ ເປັນເຄື່ອງມືແປພາສາທີ່ສະຫຼາດສຳລັບນັກທ່ອງທ່ຽວ. ພັດທະນາທັກສະການເວົ້າຂອງທ່ານດ້ວຍ AI Chat!';
+
+  @override
+  String get welcomeButton => 'ເລີ່ມຕົ້ນ';
 }

@@ -1272,4 +1272,14 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Бұл тілді осы құрылғының параметрлеріндегі дауыстық шығыс қолдамайды.';
+
+  @override
+  String get welcomeTitle => 'Talkie-ге қош келдіңіз!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie 80-нен астам тілді қолдайды және саяхатшыларға арналған ақылды аударма құралы болып табылады. AI Chat арқылы сөйлеу дағдыларыңызды арттырыңыз!';
+
+  @override
+  String get welcomeButton => 'Бастау';
 }

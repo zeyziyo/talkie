@@ -1272,4 +1272,14 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Deze taal wordt niet standaard ondersteund voor spraakuitvoer op dit apparaat.';
+
+  @override
+  String get welcomeTitle => 'Welkom bij Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie ondersteunt meer dan 80 talen en is een slimme vertaaltool voor reizigers. Verbeter je spreekvaardigheid met AI Chat!';
+
+  @override
+  String get welcomeButton => 'Aan de slag';
 }

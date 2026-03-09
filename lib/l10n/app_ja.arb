@@ -772,4 +772,8 @@
   "wordModeLabel": "単語モード",
   "yourPronunciation": "あなたの発音",
   "ttsUnsupportedNatively": "このデバイスの標準設定では、この言語の音声出力をサポートしていません。"
+,
+  "welcomeTitle": "Talkieへようこそ！",
+  "welcomeDesc": "Talkieは80以上の言語に対応した、旅行者や学習者のためのスマートな翻訳ツールです。練習やAIチャットで実戦的な会話力を磨きましょう！",
+  "welcomeButton": "始める"
 }

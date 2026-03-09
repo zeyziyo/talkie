@@ -1270,4 +1270,14 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'Η προεπιλεγμένη ρύθμιση αυτής της συσκευής δεν υποστηρίζει έξοδο φωνής για αυτήν τη γλώσσα.';
+
+  @override
+  String get welcomeTitle => 'Καλώς ήρθατε στο Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Το Talkie υποστηρίζει πάνω από 80 γλώσσες και είναι ένα έξυπνο εργαλείο μετάφρασης για ταξιδιώτες. Βελτιώστε την ομιλία σας με το AI Chat!';
+
+  @override
+  String get welcomeButton => 'Ξεκινήστε';
 }

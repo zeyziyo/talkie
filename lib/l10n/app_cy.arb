@@ -772,4 +772,8 @@
   "wordModeLabel": "Modd Gair",
   "yourPronunciation": "Eich Ynganiad",
   "ttsUnsupportedNatively": "Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon."
+,
+  "welcomeTitle": "Croeso i Talkie!",
+  "welcomeDesc": "Mae Talkie yn cefnogi dros 80 o ieithoedd ac yn offeryn cyfieithu craff ar gyfer teithwyr. Gwella dy sgiliau siarad gyda Sgwrs AI!",
+  "welcomeButton": "Dechrau"
 }

@@ -1247,4 +1247,14 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get ttsUnsupportedNatively =>
       'הגדרות ברירת המחדל של מכשיר זה אינן תומכות בפלט קולי בשפה זו.';
+
+  @override
+  String get welcomeTitle => 'ברוכים הבאים ל-Talkie!';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie תומך ביותר מ-80 שפות והוא כלי חכם למטיילים ולומדי שפות. שפרו את כישורי הדיבור שלכם בעזרת צ\'אט AI!';
+
+  @override
+  String get welcomeButton => 'מתחילים';
 }
