@@ -350,12 +350,8 @@ class AppLocalizationsLv extends AppLocalizations {
   String get helpJsonTypeWord => 'Vārds';
 
   @override
-  String get helpMode1Desc =>
-      'Atpazīst un tulko balsi, ļauj noklausīties rezultātus.';
-
-  @override
   String get helpMode1Details =>
-      '• Valodas iestatījumi: mainiet valodu, nospiežot ikonas augšā/apakšā\n• Vārdu/teikumu pārslēgšana: režīmu pārslēgšana\n• Balss ievade: nospiediet mikrofona ikonu, lai sāktu/pārtrauktu klausīšanos\n• Teksta ievade: ievadiet tekstu manuāli tulkošanai\n• Automātiska meklēšana: atrod līdzīgus esošus teikumus\n• Tulkošana: nospiediet pogu Tulkot, lai nekavējoties tulkotu\n• Klausīšanās: atskaņojiet TTS ar skaļruņa ikonu\n• Saglabāšana: pievienojiet ierakstus ar \'Datu saglabāšana\'\n• Notīrīšana: atiestatiet ievadi';
+      '• Valodas iestatījumi: mainiet valodu, nospiežot ikonas augšā/apakšā\n• Vārdu/teikumu pārslēgšana: režīmu pārslēgšana\n• Balss ievade: nospiediet mikrofona ikonu, lai sāktu/pārtrauktu klausīšanos\n• Teksta ievade: ievadiet tekstu manuāli tulkošanai\n• Automātiska meklēšana: atrod līdzīgus esošus teikumus\n• Tulkošana: nospiediet pogu Tulkot, lai nekavējoties tulkotu\n• Klausīšanās: atskaņojiet TTS ar skaļruņa ikonu\n• Saglabāšana: pievienojiet ierakstus ar \'Datu saglabāšana\'\n• Notīrīšana: atiestatiet ievadi (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +375,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI tērzēšana: runājiet savā valodā, lai praktizētu sarunu\n• Vairākas personas: mainiet otras puses dzimumu/valodu/vārdu ar izvēlni virs runas burbuļa\n• Partnera pievienošana: pievienojiet jaunu sarunu partneri (Svešinieku) ar pogu +\n• GPS: uz atrašanās vietu balstīti scenāriji\n• Automātiska saglabāšana: automātiska sarunu satura tulkošana un saglabāšana';
+      '• AI tērzēšana: runājiet savā valodā, lai praktizētu sarunu\n• Vairākas personas: mainiet otras puses dzimumu/valodu/vārdu ar izvēlni virs runas burbuļa\n• Partnera pievienošana: pievienojiet jaunu sarunu partneri (Svešinieku) ar pogu +\n• GPS: uz atrašanās vietu balstīti scenāriji\n• Automātiska saglabāšana: automātiska sarunu satura tulkošana un saglabāšana (TODO: Translate)';
 
   @override
   String get helpTabJson => 'JSON formāts';

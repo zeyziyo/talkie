@@ -354,12 +354,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get helpJsonTypeWord => 'So\'z';
 
   @override
-  String get helpMode1Desc =>
-      'Nutqni aniqlab tarjima qiling va natijalarni tinglang.';
-
-  @override
   String get helpMode1Details =>
-      '• Til sozlamalari: yuqori/pastki belgilarni bosib tilni o\'zgartiring\n• So\'z/gap o\'tish: rejimni almashtirish\n• Ovozli kiritish: mikrofon belgisini bosib tinglashni boshlang/to\'xtating\n• Matn kiritish: to\'g\'ridan-to\'g\'ri kiritib tarjima qiling\n• Avtomatik qidiruv: o\'xshash mavjud jumlalarni aniqlash\n• Tarjima: Tarjima tugmasini bosib darhol tarjima qiling\n• Tinglash: dinamik belgisidan TTS-ni ijro eting\n• Saqlash: \'Ma\'lumotlarni saqlash\' bilan yozuv qo\'shing\n• Tozalash: kirishni qayta o\'rnating';
+      '• Til sozlamalari: yuqori/pastki belgilarni bosib tilni o\'zgartiring\n• So\'z/gap o\'tish: rejimni almashtirish\n• Ovozli kiritish: mikrofon belgisini bosib tinglashni boshlang/to\'xtating\n• Matn kiritish: to\'g\'ridan-to\'g\'ri kiritib tarjima qiling\n• Avtomatik qidiruv: o\'xshash mavjud jumlalarni aniqlash\n• Tarjima: Tarjima tugmasini bosib darhol tarjima qiling\n• Tinglash: dinamik belgisidan TTS-ni ijro eting\n• Saqlash: \'Ma\'lumotlarni saqlash\' bilan yozuv qo\'shing\n• Tozalash: kirishni qayta o\'rnating (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -383,7 +379,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI chat: o\'z tilingizda gapirib, suhbatni mashq qiling\n• Multi-persona: nutq pufagi ustidagi menyu orqali boshqa odamning jinsi/tili/nomini o\'zgartirishingiz mumkin\n• Hamkor qo\'shish: + tugmasi bilan yangi suhbatdosh (Stranger) qo\'shing\n• GPS: joriy joylashuvga asoslangan vaziyatli dramatik sahna\n• Avtomatik saqlash: suhbat mazmunini avtomatik tarjima qilish va saqlash';
+      '• AI chat: o\'z tilingizda gapirib, suhbatni mashq qiling\n• Multi-persona: nutq pufagi ustidagi menyu orqali boshqa odamning jinsi/tili/nomini o\'zgartirishingiz mumkin\n• Hamkor qo\'shish: + tugmasi bilan yangi suhbatdosh (Stranger) qo\'shing\n• GPS: joriy joylashuvga asoslangan vaziyatli dramatik sahna\n• Avtomatik saqlash: suhbat mazmunini avtomatik tarjima qilish va saqlash (TODO: Translate)';
 
   @override
   String get helpTabJson => 'JSON formati';

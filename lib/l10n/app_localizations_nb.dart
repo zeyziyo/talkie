@@ -351,12 +351,8 @@ class AppLocalizationsNb extends AppLocalizations {
   String get helpJsonTypeWord => 'Ord';
 
   @override
-  String get helpMode1Desc =>
-      'Oversett ved å gjenkjenne stemmen og lytte til resultatene.';
-
-  @override
   String get helpMode1Details =>
-      '• Språkinnstillinger: Endre språk ved å trykke på ikoner øverst/nederst\n• Ord/setning-bryter: Bytt modus\n• Stemmeinput: Trykk på mikrofonikonet for å starte/stoppe lytting\n• Tekstinput: Skriv inn direkte for å oversette\n• Automatisk søk: Oppdag lignende eksisterende setninger\n• Oversett: Oversett umiddelbart ved å trykke på oversett-knappen\n• Lytt: TTS-avspilling med høyttalerikon\n• Lagre: Legg til poster med \'Lagre data\'\n• Tøm: Tilbakestill input';
+      '• Språkinnstillinger: Endre språk ved å trykke på ikoner øverst/nederst\n• Ord/setning-bryter: Bytt modus\n• Stemmeinput: Trykk på mikrofonikonet for å starte/stoppe lytting\n• Tekstinput: Skriv inn direkte for å oversette\n• Automatisk søk: Oppdag lignende eksisterende setninger\n• Oversett: Oversett umiddelbart ved å trykke på oversett-knappen\n• Lytt: TTS-avspilling med høyttalerikon\n• Lagre: Legg til poster med \'Lagre data\'\n• Tøm: Tilbakestill input (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +375,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI-chat: Øv på samtaler ved å snakke på ditt språk\n• Flere personligheter: Du kan endre den andres kjønn/språk/navn med menyen over taleboblen\n• Legg til partner: Legg til en ny samtalepartner (fremmed) med +-knappen\n• GPS: Situasjonskomedie basert på din nåværende posisjon\n• Automatisk lagring: Automatisk oversettelse og lagring av samtaleinnhold';
+      '• AI-chat: Øv på samtaler ved å snakke på ditt språk\n• Flere personligheter: Du kan endre den andres kjønn/språk/navn med menyen over taleboblen\n• Legg til partner: Legg til en ny samtalepartner (fremmed) med +-knappen\n• GPS: Situasjonskomedie basert på din nåværende posisjon\n• Automatisk lagring: Automatisk oversettelse og lagring av samtaleinnhold (TODO: Translate)';
 
   @override
   String get helpTabJson => 'JSON-format';

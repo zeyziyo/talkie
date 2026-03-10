@@ -352,11 +352,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get helpJsonTypeWord => 'Kelime';
 
   @override
-  String get helpMode1Desc => 'Sesi tanı, hedef dile çevir ve sonucu dinle.';
-
-  @override
   String get helpMode1Details =>
-      '• Ses Girişi: Başlat/durdur için mikrofona dokun\n• Metin Girişi: Çevirmek için yaz\n• Oto-Arama: Benzer cümleleri bulur\n• Çevir: Anında çeviri butonu\n• Dinle: TTS için hoparlör simgesi\n• Kaydet: \'Veri Kaydet\' geçmişe ekler\n• Temizle: Tüm girişleri sıfırla';
+      '• Ses Girişi: Başlat/durdur için mikrofona dokun\n• Metin Girişi: Çevirmek için yaz\n• Oto-Arama: Benzer cümleleri bulur\n• Çevir: Anında çeviri butonu\n• Dinle: TTS için hoparlör simgesi\n• Kaydet: \'Veri Kaydet\' geçmişe ekler\n• Temizle: Tüm girişleri sıfırla (TODO: Translate)';
 
   @override
   String get helpMode2Desc => 'Kayıtlı cümleleri gizli çevirilerle tekrar et.';
@@ -379,7 +376,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI Sohbet: Personel ile gerçek hayattaki konuşmaları pratik yapın.\n• Katılımcı Yönetimi: Dil uyuşmazlıklarını önlemek için kendi dilinizi ve AI\'nın dilini ayrı ayrı ayarlayabilirsiniz.\n• GPS Senaryosu: Mevcut konumunuza göre doğal konuşma senaryoları oluşturun.\n• Kayıt Tutma: Tüm konuşmalar, ID tabanlı olarak güvenli bir şekilde saklanır ve adını değiştirseniz bile kayıtlar korunur.';
+      '• AI Sohbet: Personel ile gerçek hayattaki konuşmaları pratik yapın.\n• Katılımcı Yönetimi: Dil uyuşmazlıklarını önlemek için kendi dilinizi ve AI\'nın dilini ayrı ayrı ayarlayabilirsiniz.\n• GPS Senaryosu: Mevcut konumunuza göre doğal konuşma senaryoları oluşturun.\n• Kayıt Tutma: Tüm konuşmalar, ID tabanlı olarak güvenli bir şekilde saklanır ve adını değiştirseniz bile kayıtlar korunur. (TODO: Translate)';
 
   @override
   String get helpTabJson => 'JSON Formatı';

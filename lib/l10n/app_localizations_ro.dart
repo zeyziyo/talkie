@@ -354,12 +354,8 @@ class AppLocalizationsRo extends AppLocalizations {
   String get helpJsonTypeWord => 'Cuvânt';
 
   @override
-  String get helpMode1Desc =>
-      'Recunoaștere vocală, traducere și ascultare rezultat.';
-
-  @override
   String get helpMode1Details =>
-      '• Voce: Apasă microfon pentru start/stop\n• Text: Scrie direct pentru traducere\n• Auto-Căutare: Detectează propoziții similare\n• Traducere: Buton pentru traducere instantă\n• Ascultă: Icoană difuzor pentru TTS\n• Salvează: Adaugă în istoric\n• Șterge: Resetează tot';
+      '• Voce: Apasă microfon pentru start/stop\n• Text: Scrie direct pentru traducere\n• Auto-Căutare: Detectează propoziții similare\n• Traducere: Buton pentru traducere instantă\n• Ascultă: Icoană difuzor pentru TTS\n• Salvează: Adaugă în istoric\n• Șterge: Resetează tot (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -383,7 +379,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Chat AI: Exersează conversații reale cu personaje.\n• Gestionarea participanților: Setează-ți limba și limba AI-ului pentru a evita nepotrivirile lingvistice.\n• Situații GPS: Creează situații de conversație naturale bazate pe locația ta curentă.\n• Păstrarea istoricului: Toate conversațiile sunt stocate în siguranță pe baza ID-ului, iar istoricul se păstrează chiar dacă schimbi numele.';
+      '• Chat AI: Exersează conversații reale cu personaje.\n• Gestionarea participanților: Setează-ți limba și limba AI-ului pentru a evita nepotrivirile lingvistice.\n• Situații GPS: Creează situații de conversație naturale bazate pe locația ta curentă.\n• Păstrarea istoricului: Toate conversațiile sunt stocate în siguranță pe baza ID-ului, iar istoricul se păstrează chiar dacă schimbi numele. (TODO: Translate)';
 
   @override
   String get helpTabJson => 'Format JSON';

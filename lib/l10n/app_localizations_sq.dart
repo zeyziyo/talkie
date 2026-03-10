@@ -356,12 +356,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get helpJsonTypeWord => 'Fjalë';
 
   @override
-  String get helpMode1Desc =>
-      'Njihni zërin për të përkthyer dhe dëgjoni rezultatin.';
-
-  @override
   String get helpMode1Details =>
-      '• Cilësimet e gjuhës: Ndryshoni gjuhën duke shtypur ikonat lart/poshtë\n• Ndërroni Fjalë/Fjali: Ndërroni modalitetin\n• Hyrja zanore: Shtypni ikonën e mikrofonit për të filluar/ndaluar dëgjimin\n• Hyrja e tekstit: Shkruani drejtpërdrejt për të përkthyer\n• Kërkimi automatik: Zbuloni fjali ekzistuese të ngjashme\n• Përkthimi: Përktheni menjëherë duke shtypur butonin e përkthimit\n• Dëgjimi: Luaj me TTS përmes ikonës së altoparlantit\n• Ruajtja: Shto një rekord me \'Ruaj të dhënat\'\n• Fshirja: Rivendosni hyrjen';
+      '• Cilësimet e gjuhës: Ndryshoni gjuhën duke shtypur ikonat lart/poshtë\n• Ndërroni Fjalë/Fjali: Ndërroni modalitetin\n• Hyrja zanore: Shtypni ikonën e mikrofonit për të filluar/ndaluar dëgjimin\n• Hyrja e tekstit: Shkruani drejtpërdrejt për të përkthyer\n• Kërkimi automatik: Zbuloni fjali ekzistuese të ngjashme\n• Përkthimi: Përktheni menjëherë duke shtypur butonin e përkthimit\n• Dëgjimi: Luaj me TTS përmes ikonës së altoparlantit\n• Ruajtja: Shto një rekord me \'Ruaj të dhënat\'\n• Fshirja: Rivendosni hyrjen (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -385,7 +381,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Biseda AI: Ushtroni bisedën duke folur në gjuhën tuaj\n• Multi-Personazh: Ndryshoni gjininë/gjuhën/emrin e palës tjetër me menunë mbi flluskën e të folurit\n• Shto partner: Shto një bashkëbisedues të ri (i panjohur) me butonin +\n• GPS: Sitcom i bazuar në vendndodhjen aktuale\n• Ruajtja automatike: Përkthimi dhe ruajtja automatike e përmbajtjes së bisedës';
+      '• Biseda AI: Ushtroni bisedën duke folur në gjuhën tuaj\n• Multi-Personazh: Ndryshoni gjininë/gjuhën/emrin e palës tjetër me menunë mbi flluskën e të folurit\n• Shto partner: Shto një bashkëbisedues të ri (i panjohur) me butonin +\n• GPS: Sitcom i bazuar në vendndodhjen aktuale\n• Ruajtja automatike: Përkthimi dhe ruajtja automatike e përmbajtjes së bisedës (TODO: Translate)';
 
   @override
   String get helpTabJson => 'Formati JSON';

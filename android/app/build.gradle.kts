@@ -18,7 +18,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.zeyziyo.talkie"
-    compileSdk = 36
+    compileSdk = 35
     ndkVersion = flutter.ndkVersion
 
     compileOptions {

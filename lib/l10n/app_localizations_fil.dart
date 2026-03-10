@@ -12,14 +12,14 @@ class AppLocalizationsFil extends AppLocalizations {
   String get basicWords => 'Basic na Repository ng mga Salita';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Wika ng Pagpasok';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Wika ng Pagsasalin';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Agad na baguhin ang pang-araw-araw na pag-uusap sa isang banyagang wika! Itinatala ng Talkie ang iyong buhay pang-wika.';
 
   @override
   String get cancel => 'Kanselahin';
@@ -355,12 +355,8 @@ class AppLocalizationsFil extends AppLocalizations {
   String get helpJsonTypeWord => 'Salita (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'Kilalanin ang boses, isalin at pakinggan ang resulta.';
-
-  @override
   String get helpMode1Details =>
-      '• Boses: I-tap ang mikropono para magsimula/huminto\n• Teksto: Mag-type nang direkta para isalin\n• Auto-Search: Nakikita ang mga katulad na pangungusap\n• Isalin: Pindutan para sa agarang pagsasalin\n• Makinig: Speaker icon para sa TTS\n• I-save: Nagdaragdag sa kasaysayan\n• I-clear: I-reset ang lahat';
+      '• Pagtatakda ng Wika: Baguhin ang aking wika at wika ng pag-aaral sa pamamagitan ng menu ng app bar o button ng wika sa ibaba\n• Simpleng Input: Awtomatikong pag-aanalisa (salita/pangungusap) kapag nag-input ng teksto at pag-activate ng lugar ng pagtatakda\n• Mikropono/Keyboard: Magsimula ng pagkilala ng boses o pag-input ng teksto gamit ang malaking icon sa pangunahing screen\n• Detalyadong Pagtatakda: Tukuyin ang materyales, tag, at sitwasyon ng memo sa ibabang lugar na lumilitaw habang nag-i-input\n• Awtomatikong Paghahanap: Real-time na pagtuklas ng mga katulad na umiiral nang pagsasalin\n• Pakikinig: Pag-playback ng pagbigkas ng katutubong nagsasalita (TTS) gamit ang icon ng speaker\n• Pag-iimbak: Agad na idagdag sa iyong sariling listahan ng pag-aaral gamit ang \'Pag-iimbak ng Data\'';
 
   @override
   String get helpMode2Desc => 'Balik-aralan ang mga na-save na pangungusap.';
@@ -383,7 +379,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI Chat: Magsanay ng mga totoong pag-uusap gamit ang mga persona.\n• Pamamahala ng Kalahok: Itakda ang iyong wika at ang wika ng AI upang maiwasan ang hindi pagkakatugma ng wika.\n• GPS Roleplay: Lumikha ng mga natural na sitwasyon sa pag-uusap batay sa iyong kasalukuyang lokasyon.\n• Pagpapanatili ng Kasaysayan: Ang lahat ng pag-uusap ay ligtas na naka-save batay sa ID, at ang kasaysayan ay nananatili kahit na palitan mo ang pangalan.';
+      '• AI Chat: Magsanay ng tunay na pag-uusap sa isang persona sa menu na \'Chat\' sa tab bar sa ibaba\n• Pagtatakda ng Persona: Malayang tukuyin ang kasarian, pangalan, at code ng wika ng kabilang partido\n• GPS Sitwasyon: Kilalanin ang aking kasalukuyang lokasyon at magrekomenda ng mga paksa ng pag-uusap na angkop para sa lugar\n• Dalawang Wika: Ang mga sagot ng AI ay ipinapakita kasama ang pagsasalin upang i-maximize ang epekto ng pag-aaral\n• Pamamahala ng Talaan: Pagsala ng nakaraang kasaysayan ng pag-uusap at pag-iimbak ng mga partikular na mensahe sa pag-uusap bilang mga materyales sa pag-aaral';
 
   @override
   String get helpTabJson => 'JSON Format';

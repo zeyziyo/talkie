@@ -354,12 +354,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get helpJsonTypeWord => 'Woord';
 
   @override
-  String get helpMode1Desc =>
-      'Herken stem, vertaal naar doeltaal en luister naar resultaat.';
-
-  @override
   String get helpMode1Details =>
-      '• Spraak: Tik microfoon om te starten/stoppen\n• Tekst: Typ direct om te vertalen\n• Auto-Zoek: Detecteert bestaande zinnen\n• Vertaal: Tik knop voor directe vertaling\n• Luister: Speaker icoon voor TTS\n• Opslaan: \'Data Opslaan\' voegt toe aan geschiedenis\n• Wissen: Reset alle invoer';
+      '• Spraak: Tik microfoon om te starten/stoppen\n• Tekst: Typ direct om te vertalen\n• Auto-Zoek: Detecteert bestaande zinnen\n• Vertaal: Tik knop voor directe vertaling\n• Luister: Speaker icoon voor TTS\n• Opslaan: \'Data Opslaan\' voegt toe aan geschiedenis\n• Wissen: Reset alle invoer (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -383,7 +379,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI Chat: Oefen realistische gesprekken met persona\'s.\n• Deelnemersbeheer: Stel je eigen taal en de taal van de AI in om taalverschillen te voorkomen.\n• GPS-rollenspel: Creëer natuurlijke gespreksscenario\'s op basis van je huidige locatie.\n• Geschiedenis behouden: Alle gesprekken worden veilig opgeslagen op basis van ID, zelfs als je de naam wijzigt, blijft de geschiedenis behouden.';
+      '• AI Chat: Oefen realistische gesprekken met persona\'s.\n• Deelnemersbeheer: Stel je eigen taal en de taal van de AI in om taalverschillen te voorkomen.\n• GPS-rollenspel: Creëer natuurlijke gespreksscenario\'s op basis van je huidige locatie.\n• Geschiedenis behouden: Alle gesprekken worden veilig opgeslagen op basis van ID, zelfs als je de naam wijzigt, blijft de geschiedenis behouden. (TODO: Translate)';
 
   @override
   String get helpTabJson => 'JSON Formaat';

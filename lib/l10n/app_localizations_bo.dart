@@ -12,14 +12,14 @@ class AppLocalizationsBo extends AppLocalizations {
   String get basicWords => 'རྨང་གཞིའི་ཐ་སྙད་ཉར་མཛོད།';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'འཇུག་པའི་སྐད།';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'བསྒྱུར་བའི་སྐད།';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'སྐད་ཡིག་གཞན་པའི་ནང་དུ་ཉིན་རེའི་གཏམ་བཤད་ཐོག་མར་བསྒྱུར། སྐད་བརྡ་འཕྲུལ་ཆས་ཀྱིས་ཁྱེད་ཀྱི་སྐད་བརྡའི་འཚོ་བ་ཟིན་ཐོ་བཟོ།';
 
   @override
   String get cancel => 'འ বাতিল';
@@ -349,12 +349,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get helpJsonTypeWord => 'ཐ་སྙད་ (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'སྐད་ངག་ངོས་འཛིན་བྱས་ཏེ་བསྒྱུར་བ་དང་། མཇུག་འབྲས་ལ་ཉན་ཐུབ།';
-
-  @override
   String get helpMode1Details =>
-      '• Language Settings: Change via top/bottom Translate icon\n• Toggle: Switch between \'Word\' and \'Sentence\' mode\n• Voice Input: Tap mic icon to start/stop listening\n• Text Input: Type directly to translate\n• Auto-Search: Detects similar existing sentences\n• Translate: Tap button for instant translation\n• Listen: Speaker icon for TTS (Original/Translated)\n• Save: \'Save Data\' adds to history\n• Clear: Reset all inputs';
+      '• སྐད་བརྡ་སྒྲིག་སྦྱོར། ཨེབ་བར་གྱི་འདེམས་ཐོ་འམ་ཡང་ན་འོག་གི་སྐད་བརྡའི་ཨེབ་རྟགས་ཀྱིས་ངའི་སྐད་བརྡ་དང་སྦྱོང་བརྡར་གྱི་སྐད་བརྡ་བསྒྱུར།\n• སྟབས་བདེའི་འཇུག་པ། ཡི་གེ་འཇུག་དུས་རང་འགུལ་གྱིས་དབྱེ་ཞིབ་བྱེད།\n• སྒྲ་ཕབ་འཕྲུལ་ཆས་/མཐེབ་སྟེགས། སྒྲ་སྐད་ངོས་འཛིན་འམ་ཡང་ན་ཡི་གེ་འཇུག་པ་གཙོ་འཛིན་གྱི་འཆར་ངོས་སྟེང་གི་འཕྲུལ་ཆས་ཆེན་པོས་འགོ་བཙུགས།\n• ཞིབ་ཚགས་ཀྱི་སྒྲིག་སྦྱོར། འཇུག་པའི་བར་དུ་མངོན་པའི་འོག་གི་ས་ཁོངས་ནས་ཡིག་ཆ་དང་། མཚན་བྱང་། གནས་སྟངས་ཀྱི་དྲན་ཐོ་བཀོད་སྒྲིག་བྱེད།\n• རང་འགུལ་འཚོལ་ཞིབ། དེ་མཚུངས་ཀྱི་སྔོན་གྱི་བསྒྱུར་ཡིག་དངོས་དུས་སུ་ཚོར།\n• ཉན། སྒྲ་སྐྱེད་རྟགས་ཀྱིས་སྐད་ཡིག་གི་གདངས་(TTS)སླར་གཏོང་།\n• ཉར་ཚགས། \'གནད་སྡུད་ཉར་ཚགས་\'ཀྱིས་ཁྱེད་ཀྱི་སྦྱོང་བརྡར་གྱི་ཐོ་ཡིག་ལ་མྱུར་དུ་ཁ་སྣོན་བྱེད།';
 
   @override
   String get helpMode2Desc =>
@@ -378,7 +374,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI གླེང་མོ། མི་སྣ་དང་མཉམ་དུ་དངོས་སྦྱོང་གླེང་མོ་བྱེད་པ།\n• མཉམ་ཞུགས་པ་དོ་དམ། ངའི་སྐད་དང་ AI ཡི་སྐད་སོ་སོར་སྒྲིག་སྟེ་སྐད་ཆ་མི་མཐུན་པ་སྔོན་འགོག་བྱེད་ཐུབ།\n• GPS གནས་སྟངས་འཁྲབ་སྟོན། ད་ལྟའི་གནས་གཞི་གཞིར་བཞག་ནས་རང་བྱུང་གླེང་མོའི་གནས་སྟངས་འཁྲབ་སྟོན།\n• ཟིན་ཐོ་ཉར་ཚགས། གླེང་མོ་ཚང་མ་ID གཞིར་བཞག་ནས་བདེ་འཇགས་ངང་ཉར་ཚགས་བྱེད་པ་དང་། མིང་བསྒྱུར་རུང་ཟིན་ཐོ་མུ་མཐུད་དུ་ཉར་ཚགས་བྱེད།';
+      '• AI བགྲོ་གླེང་། འོག་གི་ཨེབ་ཐེབ་ཀྱི་ \'བགྲོ་གླེང་\' འདེམས་ཐོ་ནས་མི་སྣ་དང་དངོས་སྦྱོང་གི་གཏམ་བཤད་བྱེད།\n• མི་སྣའི་སྒྲིག་སྦྱོར། ཕ་རོལ་པོའི་ཕོ་མོའི་རྟགས་དང་། མིང་། སྐད་བརྡའི་ཨང་རྟགས་རང་དབང་གིས་བཀོད་སྒྲིག་བྱེད།\n• GPS གནས་སྟངས་འཁྲབ་སྟོན། ད་ལྟའི་ངའི་གནས་ས་ངོས་འཛིན་བྱེད་དེ་གནས་སའི་འོས་འབབ་ཀྱི་གཏམ་བཤད་ཀྱི་བརྗོད་གཞི་མཐོང་སྟོན་བྱེད།\n• སྐད་བརྡ་གཉིས། AI ཡི་ལན་བསྒྱུར་ཡིག་དང་མཉམ་དུ་མངོན་པས་སྦྱོང་བརྡར་གྱི་ཕན་འབྲས་ཆེ་རུ་གཏོང་།\n• ཟིན་ཐོ་དོ་དམ། འདས་སོང་གི་བགྲོ་གླེང་གི་ནང་དོན་ཚགས་འདྲི་དང་བགྲོ་གླེང་གི་བར་དུ་ངེས་ཅན་གྱི་འཕྲིན་ཐུང་སྦྱོང་བརྡར་གྱི་ཡིག་ཆར་ཉར་ཚགས་བྱེད།';
 
   @override
   String get helpTabJson => 'JSON རྣམ་གཞག';

@@ -12,14 +12,14 @@ class AppLocalizationsCs extends AppLocalizations {
   String get basicWords => 'Základní úložiště slov';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Jazyk vstupu';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Jazyk překladu';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Okamžitá konverze každodenních konverzací do cizího jazyka! Talkie zaznamenává váš jazykový život.';
 
   @override
   String get cancel => 'Zrušit';
@@ -347,11 +347,8 @@ class AppLocalizationsCs extends AppLocalizations {
   String get helpJsonTypeWord => 'Slovo';
 
   @override
-  String get helpMode1Desc => 'Rozpoznání hlasu, překlad a poslech výsledku.';
-
-  @override
   String get helpMode1Details =>
-      '• Hlas: Klepněte na mikrofon pro start/stop\n• Text: Pište přímo pro překlad\n• Auto-Hledání: Detekuje podobné věty\n• Překlad: Tlačítko pro okamžitý překlad\n• Poslech: Ikona reproduktoru pro TTS\n• Uložit: Přidá do historie\n• Vymazat: Resetovat vše';
+      '• Nastavení jazyka: Změňte svůj jazyk a jazyk, který se učíte, v nabídce aplikace nebo pomocí tlačítka jazyka ve spodní části\n• Jednoduché zadávání: Automatická analýza (slovo/věta) při zadávání textu a aktivace oblasti nastavení\n• Mikrofon/klávesnice: Spusťte rozpoznávání hlasu nebo zadávání textu pomocí velké ikony na hlavní obrazovce\n• Podrobné nastavení: Určete sbírku dat, značky, situační poznámky v dolní oblasti, která se objeví během zadávání\n• Automatické vyhledávání: Detekce podobných existujících překladů v reálném čase\n• Poslech: Přehrávání výslovnosti rodilého mluvčího (TTS) pomocí ikony reproduktoru\n• Uložit: Okamžité přidání do vašeho vlastního studijního seznamu pomocí \'Uložit data\'';
 
   @override
   String get helpMode2Desc => 'Opakování uložených vět se skrytým překladem.';
@@ -373,7 +370,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI Chat: Procvičujte si konverzace s personami.\n• Správa účastníků: Nastavte si jazyk svůj a jazyk AI, abyste zabránili neshodám v jazycích.\n• GPS hraní rolí: Vytvořte si přirozené konverzační situace na základě vaší aktuální polohy.\n• Uchovávání záznamů: Všechny konverzace jsou bezpečně uloženy na základě ID a záznamy zůstanou zachovány i po přejmenování.';
+      '• AI Chat: Procvičujte si praktické konverzace s personou v nabídce \'Chat\' na spodní liště karet\n• Nastavení persony: Volně zadejte pohlaví, jméno a jazykový kód druhé strany\n• GPS situační hra: Doporučuje témata konverzace, která jsou vhodná pro dané místo, rozpoznáním vaší aktuální polohy\n• Dva jazyky: Odpověď AI se zobrazuje s překladem, čímž se maximalizuje efekt učení\n• Správa záznamů: Filtrování minulých konverzací a ukládání konkrétních zpráv z konverzace jako studijních materiálů';
 
   @override
   String get helpTabJson => 'Formát JSON';

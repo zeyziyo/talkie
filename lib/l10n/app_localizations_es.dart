@@ -12,14 +12,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get basicWords => 'Repositorio de palabras';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Idioma de entrada';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Idioma de traducción';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      '¡Transforma instantáneamente las conversaciones cotidianas a un idioma extranjero! Talkie registra tu vida lingüística.';
 
   @override
   String get cancel => 'Cancelar';
@@ -353,12 +353,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get helpJsonTypeWord => 'Palabra';
 
   @override
-  String get helpMode1Desc =>
-      'Reconoce voz, traduce al idioma destino y escucha el resultado.';
-
-  @override
   String get helpMode1Details =>
-      '• Configuración de idioma: Cambia el idioma mediante el icono de traducir superior\n• Ayuda: Consulta la guía mediante el icono de ayuda superior\n• Entrada de Voz: Toca el icono del micro para empezar/parar\n• Entrada de Texto: Escribe directamente para traducir\n• Auto-Búsqueda: Detecta frases existentes similares\n• Traducir: Toca para traducción instantánea\n• Escuchar: Icono de altavoz para TTS (Original/Traducido)\n• Guardar: \'Guardar\' añade al historial\n• Limpiar: Reinicia todos los campos';
+      '• Configuración de idioma: Cambia tu idioma y el idioma de aprendizaje en el menú de la barra de la aplicación o en el botón de idioma en la parte inferior.\n• Entrada simple: Analiza automáticamente (palabras/oraciones) al ingresar texto y activa el área de configuración.\n• Micrófono/Teclado: Inicia el reconocimiento de voz o la entrada de texto con el icono grande en la pantalla principal.\n• Configuración detallada: Especifica la colección de datos, la etiqueta y la nota de situación en el área inferior que aparece durante la entrada.\n• Búsqueda automática: Detecta traducciones similares existentes en tiempo real.\n• Escuchar: Reproduce la pronunciación nativa (TTS) con el icono del altavoz.\n• Guardar: Agrega instantáneamente a tu propia lista de aprendizaje con \'Guardar datos\'.';
 
   @override
   String get helpMode2Desc =>
@@ -382,7 +378,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Chat con IA: Practica conversaciones reales con personajes.\n• Gestión de participantes: Configura tu idioma y el de la IA para evitar discrepancias lingüísticas.\n• Juego de roles con GPS: Crea situaciones de conversación naturales basadas en tu ubicación actual.\n• Conservación de registros: Todas las conversaciones se guardan de forma segura con un ID y se mantienen incluso si cambias el nombre.';
+      '• Chat AI: Practica conversaciones reales con personas en el menú \'Chat\' en la barra de pestañas inferior.\n• Configuración de persona: Especifica libremente el género, el nombre y el código de idioma de la otra persona.\n• Juego de roles GPS: Reconoce tu ubicación actual y recomienda temas de conversación apropiados para el lugar.\n• 2 idiomas: La respuesta de la IA se muestra con la traducción para maximizar el efecto de aprendizaje.\n• Gestión de registros: Filtra el historial de conversaciones pasadas y guarda mensajes específicos durante la conversación como materiales de aprendizaje.';
 
   @override
   String get helpTabJson => 'Formato JSON';

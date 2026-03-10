@@ -12,14 +12,14 @@ class AppLocalizationsCa extends AppLocalizations {
   String get basicWords => 'Repositori bàsic de paraules';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Idioma d\'entrada';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Idioma de traducció';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Transforma converses quotidianes a un idioma estranger a l\'instant! Talkie registra la teva vida lingüística.';
 
   @override
   String get cancel => 'Cancel·la';
@@ -353,12 +353,8 @@ class AppLocalizationsCa extends AppLocalizations {
   String get helpJsonTypeWord => 'Paraula';
 
   @override
-  String get helpMode1Desc =>
-      'Reconeix la veu per traduir i escolta els resultats.';
-
-  @override
   String get helpMode1Details =>
-      '• Configuració de l\'idioma: Canvia l\'idioma prement les icones superior/inferior\n• Commutador de paraules/frases: Canvia de mode\n• Entrada de veu: Prem la icona del micròfon per començar/aturar l\'escolta\n• Entrada de text: Introdueix text directament per traduir\n• Cerca automàtica: Detecta frases existents similars\n• Traducció: Prem el botó de traducció per traduir immediatament\n• Escolta: Reprodueix TTS amb la icona de l\'altaveu\n• Desa: Afegeix enregistraments amb \'Desa les dades\'\n• Esborra: Inicialitza l\'entrada';
+      '• Configuració d\'idioma: Canvia el teu idioma i l\'idioma d\'aprenentatge al menú de la barra d\'aplicacions o al botó d\'idioma inferior.\n• Entrada senzilla: Analitza automàticament l\'entrada de text (paraula/frase) i activa l\'àrea de configuració.\n• Micròfon/Teclat: Inicia el reconeixement de veu o l\'entrada de text amb la icona gran a la pantalla principal.\n• Configuració detallada: Especifica la col·lecció de materials, les etiquetes i les notes de situació a l\'àrea inferior que apareix durant l\'entrada.\n• Cerca automàtica: Detecta traduccions existents similars en temps real.\n• Escolta: Reprodueix la pronunciació nativa (TTS) amb la icona de l\'altaveu.\n• Desa: Afegeix immediatament a la teva pròpia llista d\'aprenentatge amb \'Desa les dades\'';
 
   @override
   String get helpMode2Desc =>
@@ -382,7 +378,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Xat amb IA: Practica la conversa parlant en el teu idioma\n• Persona múltiple: Canvia el gènere/idioma/nom de l\'altra persona amb el menú de sobre la bombolla de diàleg\n• Afegeix un soci: Afegeix una nova persona amb qui parlar (desconegut) amb el botó +\n• GPS: Obra de situació basada en la ubicació actual\n• Desa automàticament: Tradueix i desa automàticament el contingut de la conversa';
+      '• Xat amb IA: Practica converses reals amb una persona al menú \'Xat\' a la barra de pestanyes inferior.\n• Configuració de la persona: Especifica lliurement el gènere, el nom i el codi d\'idioma de l\'interlocutor.\n• Situació de joc de rol GPS: Reconeix la teva ubicació actual i recomana temes de conversa adequats per al lloc.\n• 2 idiomes: La resposta de la IA es mostra amb la traducció per maximitzar l\'efecte d\'aprenentatge.\n• Gestió de l\'historial: Filtra l\'historial de converses passades i desa missatges específics de la conversa com a material d\'aprenentatge';
 
   @override
   String get helpTabJson => 'Format JSON';

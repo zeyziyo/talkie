@@ -349,11 +349,8 @@ class AppLocalizationsSw extends AppLocalizations {
   String get helpJsonTypeWord => 'Neno';
 
   @override
-  String get helpMode1Desc => 'Tambua sauti, tafsiri na sikiliza matokeo.';
-
-  @override
   String get helpMode1Details =>
-      '• Sauti: Gonga maikrofoni kuanza/kusimamisha\n• Maandishi: Andika moja kwa moja kwa kutafsiri\n• Utafutaji Kiotomatiki: Inagundua sentensi zinazofanana\n• Tafsiri: Kitufe cha tafsiri ya papo hapo\n• Sikiliza: Aikoni ya spika kwa TTS\n• Hifadhi: Inaongeza kwenye historia\n• Futa: Weka upya yote';
+      '• Sauti: Gonga maikrofoni kuanza/kusimamisha\n• Maandishi: Andika moja kwa moja kwa kutafsiri\n• Utafutaji Kiotomatiki: Inagundua sentensi zinazofanana\n• Tafsiri: Kitufe cha tafsiri ya papo hapo\n• Sikiliza: Aikoni ya spika kwa TTS\n• Hifadhi: Inaongeza kwenye historia\n• Futa: Weka upya yote (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -377,7 +374,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Gumzo la AI: Fanya mazoezi ya mazungumzo halisi na wahusika.\n• Usimamizi wa Washiriki: Weka lugha yako na lugha ya AI ili kuzuia kutolingana kwa lugha.\n• Mchezo wa Kuigiza wa GPS: Unda hali za mazungumzo asilia kulingana na eneo lako la sasa.\n• Hifadhi ya Historia: Mazungumzo yote yamehifadhiwa kwa usalama kulingana na Kitambulisho, na historia huhifadhiwa hata kama unabadilisha jina.';
+      '• Gumzo la AI: Fanya mazoezi ya mazungumzo halisi na wahusika.\n• Usimamizi wa Washiriki: Weka lugha yako na lugha ya AI ili kuzuia kutolingana kwa lugha.\n• Mchezo wa Kuigiza wa GPS: Unda hali za mazungumzo asilia kulingana na eneo lako la sasa.\n• Hifadhi ya Historia: Mazungumzo yote yamehifadhiwa kwa usalama kulingana na Kitambulisho, na historia huhifadhiwa hata kama unabadilisha jina. (TODO: Translate)';
 
   @override
   String get helpTabJson => 'Muundo wa JSON';

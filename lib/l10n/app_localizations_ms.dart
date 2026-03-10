@@ -351,11 +351,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get helpJsonTypeWord => 'Perkataan';
 
   @override
-  String get helpMode1Desc => 'Kenal pasti suara, terjemah dan dengar hasil.';
-
-  @override
   String get helpMode1Details =>
-      '• Suara: Ketik mikrofon untuk mula/berhenti\n• Teks: Taip terus untuk menterjemah\n• Auto-Cari: Mengesan ayat serupa\n• Terjemah: Butang untuk terjemahan segera\n• Dengar: Ikon pembesar suara untuk TTS\n• Simpan: Menambah ke sejarah\n• Padam: Tetapkan semula semua';
+      '• Suara: Ketik mikrofon untuk mula/berhenti\n• Teks: Taip terus untuk menterjemah\n• Auto-Cari: Mengesan ayat serupa\n• Terjemah: Butang untuk terjemahan segera\n• Dengar: Ikon pembesar suara untuk TTS\n• Simpan: Menambah ke sejarah\n• Padam: Tetapkan semula semua (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +376,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Sembang AI: Berlatih perbualan sebenar dengan persona.\n• Pengurusan Peserta: Tetapkan bahasa anda dan bahasa AI untuk mengelakkan ketidakpadanan bahasa.\n• Lakonan GPS: Cipta senario perbualan semula jadi berdasarkan lokasi semasa anda.\n• Penyimpanan Rekod: Semua perbualan disimpan dengan selamat berdasarkan ID, dan rekod dikekalkan walaupun nama ditukar.';
+      '• Sembang AI: Berlatih perbualan sebenar dengan persona.\n• Pengurusan Peserta: Tetapkan bahasa anda dan bahasa AI untuk mengelakkan ketidakpadanan bahasa.\n• Lakonan GPS: Cipta senario perbualan semula jadi berdasarkan lokasi semasa anda.\n• Penyimpanan Rekod: Semua perbualan disimpan dengan selamat berdasarkan ID, dan rekod dikekalkan walaupun nama ditukar. (TODO: Translate)';
 
   @override
   String get helpTabJson => 'Format JSON';

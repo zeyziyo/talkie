@@ -353,12 +353,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get helpJsonTypeWord => 'Word';
 
   @override
-  String get helpMode1Desc =>
-      'Recognize voice, translate to target language, and listen to the result.';
-
-  @override
   String get helpMode1Details =>
-      '• Languages: Tap bottom buttons to switch Source and Target languages.\n• Word/Sentence: Switch modes using the top tabs.\n• Voice: Tap the microphone icon to start/stop listening.\n• Text: Type directly for instant translation.\n• Context Tag: Add situation tags (e.g., Morning Greeting) to save separately.\n• Search: Auto-detects similar existing sentences.\n• Translate: Manual translation button for instant results.\n• Listen: Tap speaker icons for TTS playback.\n• Save: Use \'Save Data\' to add to your records.';
+      '• Language Settings: Change Source and Target languages via Appbar menu or bottom buttons.\n• Simple Input: Auto-analyzes text (Word/Sentence) and activates settings on typing.\n• Mic/Keyboard: Start voice recognition or text input via large home screen icons.\n• Advanced Settings: Specify materials, tags, and context notes in the bottom area during input.\n• Smart Search: Real-time detection of similar existing translations.\n• TTS Playback: Listen to native speaker pronunciation (TTS).\n• Save: Instantly add to your peronalized study list via \'Save Data\'.';
 
   @override
   String get helpMode2Desc =>
@@ -382,7 +378,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history';
+      '• AI Chat: Practice real-world conversations via the \'Chat\' menu in the bottom navigation bar.\n• Persona Settings: Freely customize your partner\'s gender, name, and language code.\n• GPS Context: Recognizes your current location to suggest context-aware conversation topics.\n• Dual Language: AI responses are displayed with translations for maximum learning efficiency.\n• History & Save: Filter past conversations and save specific messages as study materials during the chat.';
 
   @override
   String get helpTabJson => 'JSON Format';

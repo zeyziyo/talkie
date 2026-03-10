@@ -12,14 +12,14 @@ class AppLocalizationsCy extends AppLocalizations {
   String get basicWords => 'Storio geiriau sylfaenol';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Iaith Mewnbwn';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Iaith Cyfieithu';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Trawsnewidiwch sgyrsiau bob dydd yn syth i iaith dramor! Bydd Talkie yn cofnodi eich bywyd iaith.';
 
   @override
   String get cancel => 'Canslo';
@@ -355,12 +355,8 @@ class AppLocalizationsCy extends AppLocalizations {
   String get helpJsonTypeWord => 'Gair';
 
   @override
-  String get helpMode1Desc =>
-      'Adnabod llais a chyfieithu, a gwrando ar y canlyniadau.';
-
-  @override
   String get helpMode1Details =>
-      '• Gosodiadau Iaith: newidiwch yr iaith trwy wasgu\'r eiconau uchaf/gwaelod\n• Toglo Gair/Brawddeg: newidiwch y modd\n• Mewnbwn Llais: pwyswch yr eicon meicroffon i ddechrau/stopio gwrando\n• Mewnbwn Testun: teipiwch yn uniongyrchol i gyfieithu\n• Chwilio Awtomatig: canfod brawddegau presennol tebyg\n• Cyfieithu: pwyswch y botwm cyfieithu i gyfieithu ar unwaith\n• Gwrando: chwarae TTS gydag eicon y siaradwr\n• Cadw: ychwanegu cofnod trwy \'Cadw Data\'\n• Clirio: ailosod mewnbwn';
+      '• Gosodiadau Iaith: Newidiwch fy iaith a\'r iaith ddysgu gyda\'r ddewislen bar app neu\'r botwm iaith ar y gwaelod\n• Mewnbwn Syml: Dadansoddir testun yn awtomatig (gair/brawddeg) a gosod ardal yn cael ei actifadu wrth fewnbynnu\n• Meicroffon/Bysellfwrdd: Dechreuwch adnabod llais neu fewnbynnu testun gyda\'r eicon mawr ar y prif sgrin\n• Gosodiadau Manwl: Nodi llyfr ffynhonnell, tagiau, a nodyn sefyllfa yn yr ardal isaf sy\'n ymddangos wrth fewnbynnu\n• Chwilio Awtomatig: Canfod cyfieithiadau presennol tebyg mewn amser real\n• Gwrando: Chwarae ynganiad brodor (TTS) gyda\'r eicon siaradwr\n• Cadw: Ychwanegu ar unwaith at eich rhestr ddysgu eich hun gyda \'Cadw Data\'';
 
   @override
   String get helpMode2Desc =>
@@ -384,7 +380,7 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Sgwrs AI: ymarfer sgwrsio trwy siarad yn fy iaith\n• Personâu Lluosog: newidiwch ryw/iaith/enw\'r parti arall gyda\'r ddewislen uwchben y swigen lleferydd\n• Ychwanegu Partner: ychwanegu partner sgwrsio newydd (Dieithryn) gyda\'r botwm +\n• GPS: seiliau sefyllfa ar leoliad cyfredol\n• Cadw Awtomatig: cyfieithu a chadw cynnwys sgwrsio yn awtomatig';
+      '• Sgwrs AI: Ymarfer sgyrsiau go iawn gyda personau yn y ddewislen \'Sgwrs\' ar y bar tabiau gwaelod\n• Gosodiadau Persona: Nodi rhyw, enw a chod iaith y parti arall yn rhydd\n• Drama Chwarae GPS: Argymell pynciau sgwrsio sy\'n addas ar gyfer y lleoliad trwy adnabod fy lleoliad presennol\n• Dwy Iaith: Mae atebion AI yn cael eu harddangos gyda chyfieithiadau i wneud y gorau o effeithiau dysgu\n• Rheoli Cofnodion: Hidlo hanes sgwrsio blaenorol a chadw negeseuon penodol o sgyrsiau fel deunyddiau dysgu';
 
   @override
   String get helpTabJson => 'Fformat JSON';

@@ -12,14 +12,14 @@ class AppLocalizationsHr extends AppLocalizations {
   String get basicWords => 'Osnovna pohrana riječi';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Jezik unosa';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Jezik prijevoda';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Trenutno pretvorite svakodnevne razgovore na strani jezik! Talkie bilježi vaš jezični život.';
 
   @override
   String get cancel => 'Odustani';
@@ -349,12 +349,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get helpJsonTypeWord => 'Riječ';
 
   @override
-  String get helpMode1Desc =>
-      'Prepoznajte govor, prevedite ga i poslušajte rezultat.';
-
-  @override
   String get helpMode1Details =>
-      '• Postavke jezika: Promijenite jezik pritiskom na ikone gore/dolje\n• Prebacivanje riječi/rečenica: Promjena načina rada\n• Glasovni unos: Pritisnite ikonu mikrofona za početak/zaustavljanje slušanja\n• Unos teksta: Izravno unesite tekst za prevođenje\n• Automatsko pretraživanje: Otkrivanje sličnih postojećih rečenica\n• Prijevod: Pritisnite gumb za prijevod za trenutni prijevod\n• Slušanje: Reprodukcija TTS-a pomoću ikone zvučnika\n• Spremanje: Dodajte zapis pomoću \'Spremi podatke\'\n• Brisanje: Resetiranje unosa';
+      '• Postavke jezika: Promijenite svoj jezik i jezik učenja putem izbornika trake aplikacije ili donje tipke jezika\n• Jednostavan unos: Automatska analiza (riječi/rečenice) i aktivacija područja postavki prilikom unosa teksta\n• Mikrofon/tipkovnica: Započnite prepoznavanje glasa ili unos teksta s velikim ikonama na glavnom zaslonu\n• Detaljne postavke: Odredite zbirku materijala, oznake i situacijske bilješke u donjem području koje se pojavljuje tijekom unosa\n• Automatsko pretraživanje: Otkrivanje sličnih postojećih prijevoda u stvarnom vremenu\n• Slušanje: Reprodukcija izvornog izgovora (TTS) pomoću ikone zvučnika\n• Spremanje: Odmah dodajte na svoj popis učenja putem \'Spremi podatke\'';
 
   @override
   String get helpMode2Desc =>
@@ -378,7 +374,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI Chat: Vježbajte razgovor govoreći na svom jeziku\n• Više persona: Možete promijeniti spol/jezik/ime druge osobe pomoću izbornika iznad oblačića za razgovor\n• Dodavanje partnera: Dodajte novog sugovornika (Stranger) pomoću gumba +\n• GPS: Situacijska drama temeljena na trenutnoj lokaciji\n• Automatsko spremanje: Automatski prijevod i spremanje sadržaja razgovora';
+      '• AI Chat: Vježbajte razgovore iz stvarnog života s personom u izborniku \'Chat\' na donjoj traci kartica\n• Postavke persone: Slobodno odredite spol, ime i jezični kod druge osobe\n• GPS simulacija: Preporučite teme razgovora prikladne za mjesto prepoznavanjem vaše trenutne lokacije\n• Dvojezičnost: AI odgovori se prikazuju s prijevodom kako bi se povećao učinak učenja\n• Upravljanje zapisima: Filtriranje prošlih povijesti razgovora i spremanje određenih poruka tijekom razgovora kao materijala za učenje';
 
   @override
   String get helpTabJson => 'JSON format';

@@ -12,14 +12,14 @@ class AppLocalizationsGl extends AppLocalizations {
   String get basicWords => 'Repositorio básico de palabras';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Idioma de entrada';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Idioma de tradución';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Transforma conversas cotiás en idiomas estranxeiros ao instante! Talkie rexistra a túa vida lingüística.';
 
   @override
   String get cancel => 'Cancelar';
@@ -352,12 +352,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get helpJsonTypeWord => 'Palabra';
 
   @override
-  String get helpMode1Desc =>
-      'Recoñece a voz para traducir e permite escoitar os resultados.';
-
-  @override
   String get helpMode1Details =>
-      '• Axustes de idioma: toca as iconas superior/inferior para cambiar o idioma\n• Alternar palabra/frase: cambiar de modo\n• Entrada de voz: toca a icona do micrófono para comezar/deter a escoita\n• Entrada de texto: escribe directamente para traducir\n• Busca automática: detecta frases existentes similares\n• Tradución: toca o botón de tradución para traducir inmediatamente\n• Escoitar: reprodución de TTS mediante a icona do altofalante\n• Gardar: engade rexistros con «Gardar datos»\n• Borrar: inicializa a entrada';
+      '• Configuración de idioma: cambia o meu idioma e o idioma de aprendizaxe a través do menú da barra de aplicacións ou o botón de idioma na parte inferior\n• Entrada sinxela: análise automática (palabra/frase) e activación da área de configuración ao introducir texto\n• Micrófono/teclado: inicia o recoñecemento de voz ou a entrada de texto coa icona grande na pantalla principal\n• Configuración detallada: especifica coleccións de datos, etiquetas e notas de situación na área inferior que aparece durante a entrada\n• Busca automática: detección en tempo real de traducións existentes similares\n• Escoitar: reproduce a pronuncia nativa (TTS) coa icona do altofalante\n• Gardar: engade inmediatamente á túa propia lista de aprendizaxe con \'Gardar datos\'';
 
   @override
   String get helpMode2Desc =>
@@ -381,7 +377,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Chat de IA: fala no teu idioma para practicar a conversa\n• Multi-persoa: podes cambiar o sexo/idioma/nome da outra persoa co menú sobre a burbulla de diálogo\n• Engadir socio: engade un novo compañeiro de conversa (estranxeiro) co botón +\n• GPS: situación baseada na localización actual\n• Gardado automático: tradución e gardado automático do contido da conversa';
+      '• Chat de IA: practica conversas reais con personaxes no menú \'Chat\' na barra de pestanas inferior\n• Configuración de personaxe: especifica libremente o xénero, o nome e o código de idioma da outra persoa\n• Escenas de GPS: recoñece a miña localización actual e recomenda temas de conversa axeitados para o lugar\n• Dous idiomas: as respostas da IA móstranse coa tradución para maximizar o efecto da aprendizaxe\n• Xestión de rexistros: filtra o historial de conversas pasadas e garda mensaxes específicas das conversas como material de aprendizaxe';
 
   @override
   String get helpTabJson => 'Formato JSON';

@@ -12,14 +12,14 @@ class AppLocalizationsEt extends AppLocalizations {
   String get basicWords => 'Põhiliste sõnade hoidla';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Sisestuskeel';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Tõlkekeel';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Muutke igapäevased vestlused hetkega võõrkeelde! Talkie salvestab teie keelekasutuse.';
 
   @override
   String get cancel => 'Tühista';
@@ -352,12 +352,8 @@ class AppLocalizationsEt extends AppLocalizations {
   String get helpJsonTypeWord => 'Sõna';
 
   @override
-  String get helpMode1Desc =>
-      'Tuvastab häält ja tõlgib selle ning võimaldab tulemusi kuulata.';
-
-  @override
   String get helpMode1Details =>
-      '• Keele seadistus: keele muutmiseks vajuta ülemisele/alumisele ikoonile\n• Sõna/lause lüliti: režiimi vahetus\n• Häälsisend: alustamiseks/peatamiseks vajuta mikrofoni ikooni\n• Tekstisisestus: tõlkimiseks sisesta otse tekst\n• Automaatne otsing: sarnaste olemasolevate lausete tuvastamine\n• Tõlgi: koheseks tõlkimiseks vajuta tõlkenupule\n• Kuula: TTS taasesitus kõlari ikooniga\n• Salvesta: lisab kirje \"Andmete salvestamisega\"\n• Tühjenda: sisendi lähtestamine';
+      '• Keele seaded: muuda oma ja õppimiskeelt rakenduse riba menüü või alumise keelenupu kaudu\n• Lihtne sisestus: teksti sisestamisel analüüsitakse automaatselt (sõna/lause) ja aktiveeritakse seadistusala\n• Mikrofon/klaviatuur: alusta hääletuvastust või teksti sisestamist põhiekraani suure ikooni kaudu\n• Täpsemad seaded: määra sisestamise ajal alumisel alal andmekogum, sildid ja olukorramärkus\n• Automaatne otsing: sarnaste olemasolevate tõlgete reaalajas tuvastamine\n• Kuulamine: esita emakeelne hääldus (TTS) kõlariikooni abil\n• Salvestamine: lisa kohe oma õppeloendisse \'Andmete salvestamine\'';
 
   @override
   String get helpMode2Desc =>
@@ -381,7 +377,7 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI vestlus: harjuta vestlust, rääkides oma keeles\n• Mitu personaži: muuda partneri sugu/keelt/nime kõnemulli kohal asuva menüü kaudu\n• Lisa partner: lisa uusi vestluskaaslasi (võõraid) nupuga +\n• GPS: praegusel asukohal põhinevad situatsioonid\n• Automaatne salvestamine: vestlussisu automaatne tõlkimine ja salvestamine';
+      '• AI vestlus: harjuta vestlust tegelikus elus personaga alumise vahekaardiriba menüüs \'Vestlus\'\n• Persona seaded: määra vabalt partneri sugu, nimi ja keelekood\n• GPS olukorramäng: soovitab kohale sobivaid vestlusteemasid, tunnetades minu praegust asukohta\n• Kaks keelt: AI vastused kuvatakse koos tõlkega, et maksimeerida õppimist\n• Kirjete haldamine: filtreeri varasemaid vestlusi ja salvesta teatud sõnumeid õppematerjalidena vestluse ajal';
 
   @override
   String get helpTabJson => 'JSON-vorming';

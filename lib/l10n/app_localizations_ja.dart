@@ -12,14 +12,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get basicWords => '基本単語リポジトリ';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => '入力言語';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => '翻訳言語';
 
   @override
-  String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+  String get simplifiedGuidance => '日常会話を外国語に瞬間変換！Talkieがあなたの言語生活を記録します。';
 
   @override
   String get cancel => 'キャンセル';
@@ -339,11 +338,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get helpJsonTypeWord => '単語 (Word)';
 
   @override
-  String get helpMode1Desc => '音声を認識して翻訳し、結果を聞くことができます。新しい表現を学ぶのに最適です。';
-
-  @override
   String get helpMode1Details =>
-      '• 言語設定: 上部の翻訳アイコンで言語を変更\n• ヘルプ: 上部のハテナアイコンで使い方ガイドを確認\n• 音声入力: マイクアイコンをタップして会話を開始/停止\n• テキスト入力: 直接入力して翻訳可能\n• 自動検索: 入力時に類似の既存の文章があれば通知\n• 翻訳: 「翻訳」ボタンですぐに翻訳を実行\n• 聞く: スピーカーアイコンで原文/翻訳文を再生 (TTS)\n• 保存: 「保存」ボタンで学習記録に保存\n• クリア: 「削除」ボタンで入力内容を消去';
+      '• 言語設定：アプリバーメニューまたは下部の言語ボタンで自分の言語と学習言語を変更\n• シンプル入力：テキスト入力時に自動的に分析（単語/文章）および設定領域を活性化\n• マイク/キーボード：メイン画面の大型アイコンで音声認識またはテキスト入力を開始\n• 詳細設定：入力中に表示される下部領域で資料集、タグ、状況メモを指定\n• 自動検索：類似した既存の翻訳をリアルタイムで検出\n• 聞く：スピーカーアイコンでネイティブの発音（TTS）を再生\n• 保存：「データ保存」で自分だけの学習リストに即時追加';
 
   @override
   String get helpMode2Desc => '保存された文章を復習します。翻訳を隠して確認し、復習回数を記録しましょう。';
@@ -364,7 +360,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AIチャット：ペルソナと実践的な会話を練習します。\n• 参加者管理：自分の言語とAIの言語をそれぞれ設定して、言語の不一致を防ぐことができます。\n• GPSロールプレイ：現在の位置情報に基づいて自然な会話状況を演出します。\n• 記録保存：すべての会話はIDに基づいて安全に保存され、名前を変更しても記録は維持されます。';
+      '• AIチャット：下部タブバーの「チャット」メニューでペルソナと実践会話練習\n• ペルソナ設定：相手の性別、名前、言語コードを自由に指定\n• GPSシチュエーション：現在地を認識して場所にふさわしい会話テーマを推薦\n• 2ヶ国語：AIの回答が翻訳と共に表示され学習効果を最大化\n• 記録管理：過去の会話履歴フィルタリングおよび会話中の特定メッセージを学習資料として保存';
 
   @override
   String get helpTabJson => 'JSON形式';

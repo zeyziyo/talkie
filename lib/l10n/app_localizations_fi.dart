@@ -12,14 +12,14 @@ class AppLocalizationsFi extends AppLocalizations {
   String get basicWords => 'Perussanojen arkisto';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Syöttökieli';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Käännöskieli';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Muunna arkipäiväiset keskustelut vieraalle kielelle hetkessä! Talkie tallentaa kielielämäsi.';
 
   @override
   String get cancel => 'Peruuta';
@@ -351,11 +351,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get helpJsonTypeWord => 'Sana (Word)';
 
   @override
-  String get helpMode1Desc => 'Puheentunnistus, käännös ja kuuntelu.';
-
-  @override
   String get helpMode1Details =>
-      '• Ääni: Napauta mikrofonia aloittaaksesi\n• Teksti: Kirjoita kääntääksesi\n• Auto-Haku: Löytää samanlaiset lauseet\n• Käännä: Painike välittömään käännökseen\n• Kuuntele: Kaiutinikoni TTS:lle\n• Tallenna: Lisää historiaan\n• Tyhjennä: Nollaa kaikki';
+      '• Kieliasetukset: Muuta omaa kieltäsi ja opiskelukieltäsi sovelluspalkin valikosta tai alareunan kielipainikkeesta\n• Yksinkertainen syöttö: Tekstin syöttö analysoi automaattisesti (sanan/lauseen) ja aktivoi asetusosio\n• Mikrofoni/näppäimistö: Aloita puheentunnistus tai tekstinsyöttö päänäytön suurilla kuvakkeilla\n• Yksityiskohtaiset asetukset: Määritä aineistokokoelma, tunnisteet ja tilannemuistiinpanot syötön aikana näkyvässä alaosassa\n• Automaattinen haku: Tunnista samankaltaiset aiemmat käännökset reaaliajassa\n• Kuuntelu: Toista natiivipuhujan ääntäminen (TTS) kaiutinkuvakkeella\n• Tallenna: Lisää heti omaan oppimislistaan \'Tallenna tiedot\' -toiminnolla';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +376,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI-chat: Harjoittele käytännön keskusteluja persoonien kanssa.\n• Osallistujien hallinta: Määritä oma kielesi ja tekoälyn kieli erikseen välttääksesi kielieroja.\n• GPS-roolipeli: Luo luonnollisia keskustelutilanteita nykyisen sijaintisi perusteella.\n• Tallennushistoria: Kaikki keskustelut tallennetaan turvallisesti tunnuksen perusteella, ja historia säilyy, vaikka nimeä muutettaisiin.';
+      '• AI-chat: Harjoittele käytännön keskusteluja persoonan kanssa alareunan välilehdellä \'Chat\'\n• Persoonan asetukset: Määritä vapaasti vastapuolen sukupuoli, nimi ja kielikoodi\n• GPS-tilanneleikki: Tunnistaa nykyisen sijaintisi ja suosittelee paikkaan sopivia keskustelunaiheita\n• Kaksi kieltä: AI:n vastaukset näytetään käännöksen kera, mikä maksimoi oppimisen\n• Historianhallinta: Suodata menneitä keskusteluja ja tallenna tiettyjä viestejä oppimismateriaaliksi keskustelujen aikana';
 
   @override
   String get helpTabJson => 'JSON Muoto';

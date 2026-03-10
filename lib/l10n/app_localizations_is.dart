@@ -12,14 +12,14 @@ class AppLocalizationsIs extends AppLocalizations {
   String get basicWords => 'Grunn orðageymsla';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Inntaksmál';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Þýðingarmál';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Umbreyttu daglegum samtölum samstundis á erlent tungumál! Talkie heldur utan um tungumálanotkun þína.';
 
   @override
   String get cancel => 'Hætta við';
@@ -353,11 +353,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get helpJsonTypeWord => 'Orð';
 
   @override
-  String get helpMode1Desc => 'Þekkja rödd, þýða og hlusta á niðurstöðurnar.';
-
-  @override
   String get helpMode1Details =>
-      '• Tungumálastillingar: Breyttu tungumáli með því að ýta á táknin efst/neðst\n• Orð/setningaskipti: Skiptu um stillingu\n• Raddinntak: Ýttu á hljóðnemstáknið til að hefja/stöðva hlustun\n• Textainntak: Sláðu beint inn til að þýða\n• Sjálfvirk leit: Finndu svipaðar setningar sem fyrir eru\n• Þýðing: Þýddu strax með því að ýta á þýðingarhnappinn\n• Hlustun: Spilaðu TTS með hátalaratákninu\n• Vista: Bættu við færslu með \'Vista gögn\'\n• Hreinsa: Endurstilltu inntak';
+      '• Tungumálastillingar: Breyttu tungumálunum þínum og tungumálunum sem þú ert að læra í valmynd appsins eða með tungumálahnappnum neðst\n• Einföld innsláttur: Greinir og virkjar stillingarsvæðið sjálfkrafa þegar texti er sleginn inn (orð/setning)\n• Hljóðnemi/lyklaborð: Byrjaðu raddgreiningu eða textainnslátt með stóru táknunum á aðalskjánum\n• Ítarlegar stillingar: Tilgreindu gagnasafn, merki og aðstæðnaathugasemdir á neðri svæðinu sem birtist meðan á innslætti stendur\n• Sjálfvirk leit: Greinir svipaðar fyrri þýðingar í rauntíma\n• Hlustun: Spilaðu framburð móðurmáls með hátalaratákninu (TTS)\n• Vista: Bættu strax við þinn eigin námslista með \'Vista gögn\'';
 
   @override
   String get helpMode2Desc =>
@@ -381,7 +378,7 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Gervigreindarspjall: Talaðu á þínu tungumáli til að æfa samtöl\n• Margar persónur: Hægt er að breyta kyni/tungumáli/nafni viðmælandans með valmyndinni fyrir ofan talbólu\n• Bæta við maka: Bættu við nýjum samtalsfélaga (ókunnum) með + hnappinum\n• GPS: Aðstæður byggðar á núverandi staðsetningu\n• Sjálfvirk vistun: Sjálfvirk þýðing og vistun samtalsinnihalds';
+      '• Gervigreind spjall: Æfðu raunveruleg samtöl við persónur í \'Spjall\' valmyndinni á flipastikunni neðst\n• Persónustillingar: Tilgreindu kyn, nafn og tungumálakóða hins aðilans að vild\n• GPS sviðsetning: Mælir með umræðuefnum sem henta staðsetningunni með því að þekkja núverandi staðsetningu þína\n• Tvö tungumál: Svör gervigreindarinnar eru sýnd ásamt þýðingum til að hámarka námsárangur\n• Skráastjórnun: Síaðu fyrri samtalsferil og vistaðu ákveðin skilaboð úr samtalinu sem námsefni';
 
   @override
   String get helpTabJson => 'JSON snið';

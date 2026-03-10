@@ -12,14 +12,14 @@ class AppLocalizationsAz extends AppLocalizations {
   String get basicWords => 'Əsas Söz Deposu';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Giriş dili';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Tərcümə dili';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Gündəlik söhbətləri anında xarici dilə çevirin! Talkie dil həyatınızı qeyd edir.';
 
   @override
   String get cancel => 'Ləğv Et';
@@ -352,12 +352,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get helpJsonTypeWord => 'Söz';
 
   @override
-  String get helpMode1Desc =>
-      'Səsi tanıyaraq tərcümə edin və nəticələrə qulaq asa bilərsiniz.';
-
-  @override
   String get helpMode1Details =>
-      '• Dil seçimi: Yuxarı/aşağı işarələrə basaraq dili dəyişdirin\n• Söz/cümlə keçidi: Rejimi dəyişdirin\n• Səsli giriş: Dinləməyə başlamaq/dayandırmaq üçün mikrofon işarəsinə basın\n• Mətn girişi: Birbaşa daxil edərək tərcümə edin\n• Avtomatik axtarış: Bənzər mövcud cümlələri aşkar edin\n• Tərcümə: Dərhal tərcümə etmək üçün tərcümə düyməsinə basın\n• Dinləmə: TTS-i səsləndirmək üçün dinamik işarəsi\n• Saxlama: \'Məlumatları Saxla\' ilə qeyd əlavə edin\n• Təmizləmə: Girişi sıfırlayın';
+      '• Dil seçimi: Tətbiq menyusu və ya aşağıdakı dil düymələri ilə öz dilinizi və öyrənmək istədiyiniz dili dəyişdirin\n• Sadə giriş: Mətn daxil edildikdə avtomatik analiz (söz / cümlə) və tənzimləmə sahəsinin aktivləşdirilməsi\n• Mikrofon / klaviatura: Əsas ekrandakı böyük işarə ilə səs tanıma və ya mətn daxil etməyə başlayın\n• Ətraflı parametrlər: Giriş zamanı görünən aşağı sahədə məlumat kitabçası, etiket və vəziyyət qeydlərini təyin edin\n• Avtomatik axtarış: Oxşar mövcud tərcümələrin real vaxtda aşkarlanması\n• Dinləmək: Dinamik işarəsi ilə ana dilində tələffüzün (TTS) oxunması\n• Saxlamaq: \'Məlumatları saxla\' ilə dərhal öz öyrənmə siyahınıza əlavə edin';
 
   @override
   String get helpMode2Desc =>
@@ -381,7 +377,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI Söhbət: Dilinizdə danışaraq söhbət bacarıqlarınızı məşq edin\n• Çoxlu personaj: Nitq balonunun yuxarısındakı menyu ilə qarşı tərəfin cinsini/dilini/adını dəyişdirə bilərsiniz\n• Tərəfdaş əlavə edin: + düyməsi ilə yeni söhbət ortağı (Yad) əlavə edin\n• GPS: Mövcud yerə əsaslanan teatrlaşdırılmış vəziyyət\n• Avtomatik saxla: Söhbət məzmununun avtomatik tərcüməsi və saxlanılması';
+      '• Süni intellekt söhbəti: Aşağıdakı tab paneli menyusundakı \'Söhbət\' menyusunda şəxsiyyətinizlə real söhbət təcrübəsi\n• Şəxsiyyət tənzimləməsi: Qarşı tərəfin cinsiyyətini, adını və dil kodunu sərbəst şəkildə təyin edin\n• GPS vəziyyət oyunu: Cari yerinizi tanıyaraq yerə uyğun söhbət mövzularını tövsiyə edin\n• İkidilli: Süni intellektin cavabı tərcümə ilə birlikdə göstərilir və öyrənmə effektini maksimuma çatdırır\n• Qeyd idarəetmə: Keçmiş söhbət tarixçəsini filtrləmə və söhbət zamanı müəyyən mesajları öyrənmə materialı kimi saxlama';
 
   @override
   String get helpTabJson => 'JSON Formatı';

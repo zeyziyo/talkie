@@ -356,12 +356,8 @@ class AppLocalizationsPt extends AppLocalizations {
   String get helpJsonTypeWord => 'Palavra';
 
   @override
-  String get helpMode1Desc =>
-      'Reconhecer voz, traduzir para idioma de destino e ouvir o resultado.';
-
-  @override
   String get helpMode1Details =>
-      '• Voz: Toque no microfone para iniciar/parar\n• Texto: Digite diretamente para traduzir\n• Busca Auto: Detecta frases similares existentes\n• Traduzir: Toque no botão para tradução instantânea\n• Ouvir: Ícone de alto-falante para TTS\n• Salvar: \'Salvar Dados\' adiciona ao histórico\n• Limpar: Redefinir todas as entradas';
+      '• Voz: Toque no microfone para iniciar/parar\n• Texto: Digite diretamente para traduzir\n• Busca Auto: Detecta frases similares existentes\n• Traduzir: Toque no botão para tradução instantânea\n• Ouvir: Ícone de alto-falante para TTS\n• Salvar: \'Salvar Dados\' adiciona ao histórico\n• Limpar: Redefinir todas as entradas (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -385,7 +381,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Chat com IA: Pratique conversas reais com personas.\n• Gerenciamento de participantes: Defina seu idioma e o idioma da IA para evitar incompatibilidades de idioma.\n• RPG com GPS: Crie cenários de conversação naturais com base em sua localização atual.\n• Preservação de histórico: Todas as conversas são armazenadas com segurança com base no ID, e o histórico é mantido mesmo se você renomear.';
+      '• Chat com IA: Pratique conversas reais com personas.\n• Gerenciamento de participantes: Defina seu idioma e o idioma da IA para evitar incompatibilidades de idioma.\n• RPG com GPS: Crie cenários de conversação naturais com base em sua localização atual.\n• Preservação de histórico: Todas as conversas são armazenadas com segurança com base no ID, e o histórico é mantido mesmo se você renomear. (TODO: Translate)';
 
   @override
   String get helpTabJson => 'Formato JSON';

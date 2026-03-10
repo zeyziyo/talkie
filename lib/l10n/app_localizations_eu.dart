@@ -12,14 +12,14 @@ class AppLocalizationsEu extends AppLocalizations {
   String get basicWords => 'Oinarrizko hitz biltegia';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Sarrerako hizkuntza';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Itzulpen-hizkuntza';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Eguneroko elkarrizketak atzerriko hizkuntzetara berehala bihurtu! Talkiek zure hizkuntza-bizitza erregistratzen du.';
 
   @override
   String get cancel => 'Ezeztatu';
@@ -348,12 +348,8 @@ class AppLocalizationsEu extends AppLocalizations {
   String get helpJsonTypeWord => 'Hitz';
 
   @override
-  String get helpMode1Desc =>
-      'Ahotsa ezagutuz itzultzen du eta emaitzak entzun ditzakezu.';
-
-  @override
   String get helpMode1Details =>
-      '• Hizkuntza ezarpena: aldatu hizkuntza goiko/beheko ikonoak sakatuta\n• Hitz/Esaldia txandakatu: aldatu modua\n• Ahots sarrera: sakatu mikrofonoaren ikonoa entzuten hasteko/gelditzeko\n• Testu sarrera: idatzi zuzenean itzultzeko\n• Bilaketa automatikoa: antzeko esaldiak detektatu\n• Itzulpena: sakatu itzultzeko botoia berehala itzultzeko\n• Entzun: TTS erreprodukzioa bozgorailuaren ikonoarekin\n• Gorde: gehitu erregistro bat \'Datuak gorde\'rekin\n• Garbitu: hasieratu sarrera';
+      '• Hizkuntza-ezarpenak: aldatu nire hizkuntza eta ikaskuntza-hizkuntza aplikazioaren barrako menuan edo beheko hizkuntza-botoian\n• Sarrera sinplea: testua sartzean automatikoki aztertzen da (hitza/esaldia) eta ezarpen-eremua aktibatzen da\n• Mikrofonoa/Teklatua: hasi ahots-ezagutza edo testu-sarrera pantaila nagusiko ikono handiarekin\n• Ezarpen zehatzak: zehaztu material-bilduma, etiketak eta egoera-oharrak sarreran agertzen den beheko eremuan\n• Bilaketa automatikoa: antzeko lehendik dauden itzulpenak denbora errealean detektatzen dira\n• Entzun: erreproduzitu jatorrizko hiztunaren ahoskera (TTS) bozgorailuaren ikonoarekin\n• Gorde: gehitu berehala zure ikaskuntza-zerrendara \'Datuak gorde\' erabiliz';
 
   @override
   String get helpMode2Desc =>
@@ -377,7 +373,7 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI txata: praktikatu elkarrizketa zure hizkuntzan hitz eginez\n• Pertsonaia anitz: aldatu beste pertsonaren generoa/hizkuntza/izena goiko menuarekin\n• Bazkidea gehitu: gehitu solaskide berri bat (+) botoiarekin (Ezezaguna)\n• GPS: uneko kokapenean oinarritutako antzezpena\n• Automatikoki gorde: elkarrizketa automatikoki itzuli eta gorde';
+      '• AI txata: praktikatu elkarrizketa errealak pertsonaiekin beheko tabernako \'Txata\' menuan\n• Pertsonaia-ezarpenak: zehaztu libreki beste pertsonaren generoa, izena eta hizkuntza-kodea\n• GPS egoera-komedia: gomendatu zure kokapenarekin bat datozen elkarrizketa-gaiak\n• 2 hizkuntza: AIren erantzuna itzulpenarekin batera bistaratzen da ikaskuntza-efektua maximizatzeko\n• Erregistro-kudeaketa: iraganeko elkarrizketen historia iragazi eta elkarrizketako mezu zehatzak ikaskuntza-material gisa gorde';
 
   @override
   String get helpTabJson => 'JSON formatua';

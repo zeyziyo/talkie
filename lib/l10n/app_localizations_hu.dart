@@ -12,14 +12,14 @@ class AppLocalizationsHu extends AppLocalizations {
   String get basicWords => 'Alap szógyűjtemény';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Bemeneti nyelv';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Fordítási nyelv';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Azonnali idegennyelvű fordítás a mindennapi beszélgetésekhez! A Talkie rögzíti a nyelvhasználatodat.';
 
   @override
   String get cancel => 'Mégse';
@@ -350,12 +350,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get helpJsonTypeWord => 'Szó (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'Hangfelismerés, fordítás és eredmény meghallgatása.';
-
-  @override
   String get helpMode1Details =>
-      '• Hang: Érintse meg a mikrofont az indításhoz/leállításhoz\n• Szöveg: Írjon közvetlenül a fordításhoz\n• Auto-Keresés: Hasonló mondatokat keres\n• Fordítás: Gomb az azonnali fordításhoz\n• Hallgatás: Hangszóró ikon a TTS-hez\n• Mentés: Hozzáadja az előzményekhez\n• Törlés: Összes visszaállítása';
+      '• Nyelvbeállítás: A saját és a tanult nyelv módosítása az alkalmazássáv menüjében vagy az alsó nyelv gombbal\n• Egyszerű bevitel: A szöveg beírásakor automatikusan elemzi (szó/mondat) és aktiválja a beállítási területet\n• Mikrofon/billentyűzet: Hangfelismerés vagy szövegbevitel indítása a főképernyőn található nagy ikonnal\n• Részletes beállítások: Adatgyűjtemény, címke, helyzetjegyzet megadása a bevitel során megjelenő alsó területen\n• Automatikus keresés: Hasonló meglévő fordítások valós idejű észlelése\n• Hallgatás: Anyanyelvi kiejtés (TTS) lejátszása a hangszóró ikonnal\n• Mentés: Azonnali hozzáadás a saját tanulási listádhoz az \'Adatok mentése\' funkcióval';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +375,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI csevegés: Gyakorold a valós beszélgetéseket személyiségekkel.\n• Résztvevők kezelése: Állítsd be a saját nyelvedet és az AI nyelvét a nyelvi eltérések elkerülése érdekében.\n• GPS helyzetgyakorlat: Hozz létre valósághű beszélgetési helyzeteket a jelenlegi tartózkodási helyed alapján.\n• Előzmények megőrzése: Minden beszélgetés biztonságosan tárolva van az azonosító alapján, és a feljegyzések akkor is megmaradnak, ha átnevezed őket.';
+      '• AI chat: Gyakorold a valós beszélgetéseket a személyiséggel a \'Chat\' menüben az alsó lapon\n• Személyiség beállítása: Szabadon megadhatod a másik fél nemét, nevét és nyelvkódját\n• GPS helyzetjáték: A jelenlegi helyzeted felismerése, hogy a helynek megfelelő beszélgetési témákat ajánljon\n• Kétnyelvű: Az AI válaszai fordítással együtt jelennek meg a maximális tanulási hatékonyság érdekében\n• Előzmények kezelése: A korábbi beszélgetések szűrése és a beszélgetés során a bizonyos üzenetek mentése tananyagként';
 
   @override
   String get helpTabJson => 'JSON Formátum';

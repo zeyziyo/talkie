@@ -351,12 +351,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get helpJsonTypeWord => 'Słowo';
 
   @override
-  String get helpMode1Desc =>
-      'Rozpoznaj głos, przetłumacz na język docelowy i odsłuchaj wynik.';
-
-  @override
   String get helpMode1Details =>
-      '• Głos: Dotknij mikrofonu aby zacząć/zatrzymać\n• Tekst: Pisz bezpośrednio aby tłumaczyć\n• Auto-Szukanie: Wykrywa podobne zdania\n• Tłumacz: Przycisk do natychmiastowego tłumaczenia\n• Słuchaj: Ikona głośnika dla TTS\n• Zapisz: \'Zapisz\' dodaje do historii\n• Wyczyść: Resetuj wszystko';
+      '• Głos: Dotknij mikrofonu aby zacząć/zatrzymać\n• Tekst: Pisz bezpośrednio aby tłumaczyć\n• Auto-Szukanie: Wykrywa podobne zdania\n• Tłumacz: Przycisk do natychmiastowego tłumaczenia\n• Słuchaj: Ikona głośnika dla TTS\n• Zapisz: \'Zapisz\' dodaje do historii\n• Wyczyść: Resetuj wszystko (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -380,7 +376,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Czat AI: Ćwicz rozmowy z personami.\n• Zarządzanie uczestnikami: Ustaw język swój i AI, aby uniknąć niezgodności językowej.\n• Scenki GPS: Twórz naturalne scenki dialogowe oparte na bieżącej lokalizacji.\n• Archiwizacja: Wszystkie rozmowy są bezpiecznie przechowywane na podstawie identyfikatora, a historia jest zachowywana nawet po zmianie nazwy.';
+      '• Czat AI: Ćwicz rozmowy z personami.\n• Zarządzanie uczestnikami: Ustaw język swój i AI, aby uniknąć niezgodności językowej.\n• Scenki GPS: Twórz naturalne scenki dialogowe oparte na bieżącej lokalizacji.\n• Archiwizacja: Wszystkie rozmowy są bezpiecznie przechowywane na podstawie identyfikatora, a historia jest zachowywana nawet po zmianie nazwy. (TODO: Translate)';
 
   @override
   String get helpTabJson => 'Format JSON';

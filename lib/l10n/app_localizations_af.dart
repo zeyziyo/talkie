@@ -12,14 +12,14 @@ class AppLocalizationsAf extends AppLocalizations {
   String get basicWords => 'Basiese woordebewaarplek';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Invoertaal';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Vertalingstaal';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Skakel alledaagse gesprekke onmiddellik in vreemde tale om! Talkie teken jou taallewe aan.';
 
   @override
   String get cancel => 'Kanselleer';
@@ -349,11 +349,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get helpJsonTypeWord => 'Woord';
 
   @override
-  String get helpMode1Desc => 'Herken stem, vertaal en luister na resultaat.';
-
-  @override
   String get helpMode1Details =>
-      '• Stem: Tik mikrofoon vir begin/stop\n• Teks: Tik direk om te vertaal\n• Outo-Soek: Bespeur soortgelyke sinne\n• Vertaal: Knoppie vir direkte vertaling\n• Luister: Luidspreker-ikoon vir TTS\n• Stoor: Voeg by geskiedenis\n• Maak skoon: Stel alles terug';
+      '• Taalinstellings: Verander my taal en leer taal met die appbalkkieslys of onderste taalknoppie\n• Vereenvoudigde invoer: Ontleed outomaties (woord/sin) en aktiveer instellingsarea wanneer teks ingevoer word\n• Mikrofoon/sleutelbord: Begin stemherkenning of teksinvoer met die groot ikoon op die hoofskerm\n• Gedetailleerde instellings: Spesifiseer databronne, etikette en situasienotas in die onderste area wat tydens invoer verskyn\n• Outomatiese soektog: Bespeur soortgelyke bestaande vertalings intyds\n• Luister: Speel moedertaaluitspraak (TTS) met die luidsprekerikoon\n• Stoor: Voeg onmiddellik by jou eie leerlys met \'Data stoor\'';
 
   @override
   String get helpMode2Desc =>
@@ -377,7 +374,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• KI-klets: Oefen gesprekke met personas.\n• Deelnemerbestuur: Stel jou taal en KI se taal afsonderlik om taalverskille te vermy.\n• GPS-scenario\'s: Skep natuurlike gesprekscenario\'s gebaseer op jou huidige ligging.\n• Rekordbewaring: Alle gesprekke word veilig gestoor op grond van ID, en rekords word gehandhaaf, selfs al word die naam verander.';
+      '• KI-gesels: Oefen werklike gesprekke met personas in die \'Gesels\'-kieslys op die onderste oortjiebalk\n• Persona-instellings: Spesifiseer die ander persoon se geslag, naam en taalkode vrylik\n• GPS-situasiespel: Herken my huidige ligging en beveel gespreksonderwerpe aan wat by die plek pas\n• 2 tale: KI se antwoorde word saam met vertalings vertoon om die leereffek te maksimeer\n• Rekordbestuur: Filter vorige gespreksgeskiedenis en stoor spesifieke boodskappe tydens gesprekke as leermateriaal';
 
   @override
   String get helpTabJson => 'JSON Formaat';

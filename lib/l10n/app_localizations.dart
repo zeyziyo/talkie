@@ -894,16 +894,10 @@ abstract class AppLocalizations {
   /// **'단어 (Word)'**
   String get helpJsonTypeWord;
 
-  /// No description provided for @helpMode1Desc.
-  ///
-  /// In ko, this message translates to:
-  /// **'음성을 인식하여 번역하고, 결과를 들어볼 수 있습니다.'**
-  String get helpMode1Desc;
-
   /// No description provided for @helpMode1Details.
   ///
   /// In ko, this message translates to:
-  /// **'• 언어 설정: 하단 버튼을 눌러 내 언어와 학습 언어 변경\n• 단어/문장 토글: 상단 탭에서 모드 전환\n• 음성 입력: 마이크 아이콘을 눌러 듣기 시작/정지\n• 텍스트 입력: 직접 입력하여 번역\n• 상황 태그: 문맥(예: 아침인사)을 입력하여 구분 저장\n• 자동 검색: 유사한 기존 문장 감지\n• 번역: 번역 버튼을 눌러 즉시 번역\n• 듣기: 스피커 아이콘으로 TTS 재생\n• 저장: \'데이터 저장\'으로 기록 추가'**
+  /// **'• 언어 설정: 앱바 메뉴 또는 하단 언어 버튼으로 내 언어와 학습 언어 변경\n• 심플 입력: 텍스트 입력 시 자동으로 분석(단어/문장) 및 설정 영역 활성화\n• 마이크/키보드: 메인 화면의 대형 아이콘으로 음성 인식 또는 텍스트 입력 시작\n• 상세 설정: 입력 중 나타나는 하단 영역에서 자료집, 태그, 상황 메모 지정\n• 자동 검색: 유사한 기존 번역 실시간 감지\n• 듣기: 스피커 아이콘으로 원어민 발음(TTS) 재생\n• 저장: \'데이터 저장\'으로 나만의 학습 리스트에 즉시 추가'**
   String get helpMode1Details;
 
   /// No description provided for @helpMode2Desc.
@@ -939,7 +933,7 @@ abstract class AppLocalizations {
   /// No description provided for @helpModeChatDetails.
   ///
   /// In ko, this message translates to:
-  /// **'• AI 채팅: 페르소나와 실전 대화를 연습하세요.\n• 참가자 관리: 내 언어와 AI의 언어를 각각 설정하여 언어 불일치를 방지할 수 있습니다.\n• GPS 상황극: 현재 위치 기반으로 자연스러운 대화 상황을 연출합니다.\n• 기록 보존: 모든 대화는 ID 기반으로 안전하게 저장되며, 이름을 바꿔도 기록이 유지됩니다.'**
+  /// **'• AI 채팅: 하단 탭 바의 \'채팅\' 메뉴에서 페르소나와 실전 대화 연습\n• 페르소나 설정: 상대방의 성별, 이름, 언어 코드를 자유롭게 지정\n• GPS 상황극: 현재 내 위치를 인식하여 장소에 어울리는 대화 주제 추천\n• 2개 국어: AI의 답변이 번역과 함께 표시되어 학습 효과 극대화\n• 기록 관리: 과거 대화 내역 필터링 및 대화 중 특정 메시지 학습 자료로 저장'**
   String get helpModeChatDetails;
 
   /// No description provided for @helpTabJson.

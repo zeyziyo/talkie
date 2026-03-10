@@ -12,14 +12,14 @@ class AppLocalizationsIt extends AppLocalizations {
   String get basicWords => 'Archivio di parole di base';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Lingua di input';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Lingua di traduzione';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Trasforma istantaneamente le conversazioni quotidiane in lingue straniere! Talkie registra la tua vita linguistica.';
 
   @override
   String get cancel => 'Annulla';
@@ -350,12 +350,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get helpJsonTypeWord => 'Parola';
 
   @override
-  String get helpMode1Desc =>
-      'Riconosci voce, traduci nella lingua di destinazione e ascolta il risultato.';
-
-  @override
   String get helpMode1Details =>
-      '• Input Vocale: Tocca microfono per iniziare/fermare\n• Input Testo: Scrivi direttamente per tradurre\n• Auto-Cerca: Rileva frasi simili esistenti\n• Traduci: Tocca pulsante per traduzione istantanea\n• Ascolta: Icona altoparlante per TTS\n• Salva: \'Salva Dati\' aggiunge alla cronologia\n• Pulisci: Resetta tutti gli input';
+      '• Impostazioni lingua: cambia la mia lingua e la lingua di apprendimento tramite il menu della barra delle app o il pulsante della lingua in basso\n• Input semplificato: analizza automaticamente (parola/frase) durante l\'immissione del testo e attiva l\'area di impostazione\n• Microfono/tastiera: avvia il riconoscimento vocale o l\'input di testo con l\'icona grande nella schermata principale\n• Impostazioni dettagliate: specifica materiali, tag e note di situazione nell\'area inferiore visualizzata durante l\'immissione\n• Ricerca automatica: rileva traduzioni esistenti simili in tempo reale\n• Ascolto: riproduci la pronuncia madrelingua (TTS) con l\'icona dell\'altoparlante\n• Salva: aggiungi immediatamente al tuo elenco di apprendimento con \'Salva dati\'';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +375,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Chat AI: Esercitati in conversazioni reali con personaggi.\n• Gestione partecipanti: Imposta la tua lingua e quella dell\'AI per evitare incongruenze linguistiche.\n• Simulazione GPS: Crea situazioni di conversazione realistiche basate sulla tua posizione attuale.\n• Conservazione della cronologia: Tutte le conversazioni vengono salvate in modo sicuro in base all\'ID e la cronologia viene mantenuta anche se cambi il nome.';
+      '• Chat AI: esercita la conversazione pratica con la persona nel menu \'Chat\' nella barra delle schede in basso\n• Impostazioni personaggio: specifica liberamente il sesso, il nome e il codice lingua dell\'altra persona\n• Situazione GPS: riconosce la mia posizione attuale e consiglia argomenti di conversazione adatti al luogo\n• Bilingue: le risposte dell\'IA vengono visualizzate con la traduzione per massimizzare l\'effetto di apprendimento\n• Gestione dei record: filtra la cronologia delle conversazioni passate e salva messaggi specifici durante la conversazione come materiale di apprendimento';
 
   @override
   String get helpTabJson => 'Formato JSON';

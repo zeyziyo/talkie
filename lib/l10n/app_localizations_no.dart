@@ -350,12 +350,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get helpJsonTypeWord => 'Ord';
 
   @override
-  String get helpMode1Desc =>
-      'Talegjenkjenning, oversettelse og lytt til resultat.';
-
-  @override
   String get helpMode1Details =>
-      '• Stemme: Trykk mikrofon for start/stopp\n• Tekst: Skriv direkte for å oversette\n• Auto-Søk: Finner lignende setninger\n• Oversett: Knapp for umiddelbar oversettelse\n• Lytt: Høyttalerikon for TTS\n• Lagre: Legger til i historie\n• Tøm: Nullstill alt';
+      '• Stemme: Trykk mikrofon for start/stopp\n• Tekst: Skriv direkte for å oversette\n• Auto-Søk: Finner lignende setninger\n• Oversett: Knapp for umiddelbar oversettelse\n• Lytt: Høyttalerikon for TTS\n• Lagre: Legger til i historie\n• Tøm: Nullstill alt (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +375,7 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI-chat: Øv på samtaler med en AI-persona.\n• Deltakeradministrasjon: Angi språkene for deg og AI-en for å unngå språkinkonsistenser.\n• GPS-rollespill: Skap naturlige samtalesituasjoner basert på din nåværende posisjon.\n• Bevaring av historikk: Alle samtaler lagres sikkert basert på ID, og historikken beholdes selv om du endrer navn.';
+      '• AI-chat: Øv på samtaler med en AI-persona.\n• Deltakeradministrasjon: Angi språkene for deg og AI-en for å unngå språkinkonsistenser.\n• GPS-rollespill: Skap naturlige samtalesituasjoner basert på din nåværende posisjon.\n• Bevaring av historikk: Alle samtaler lagres sikkert basert på ID, og historikken beholdes selv om du endrer navn. (TODO: Translate)';
 
   @override
   String get helpTabJson => 'JSON-format';

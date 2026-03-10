@@ -350,12 +350,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get helpJsonTypeWord => 'Ord (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'Röstigenkänning, översättning och lyssna på resultat.';
-
-  @override
   String get helpMode1Details =>
-      '• Röst: Tryck mikrofon för start/stopp\n• Text: Skriv direkt för översättning\n• Auto-Sök: Hittar liknande meningar\n• Översätt: Knapp för direktöversättning\n• Lyssna: Ikon för TTS\n• Spara: Lägger till i historik\n• Rensa: Återställ allt';
+      '• Röst: Tryck mikrofon för start/stopp\n• Text: Skriv direkt för översättning\n• Auto-Sök: Hittar liknande meningar\n• Översätt: Knapp för direktöversättning\n• Lyssna: Ikon för TTS\n• Spara: Lägger till i historik\n• Rensa: Återställ allt (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +375,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI-chatt: Öva verkliga samtal med en AI-persona.\n• Deltagarhantering: Ställ in dina och AI:s språk för att undvika språkfel.\n• GPS-rollspel: Skapa naturliga samtal baserade på din plats.\n• Historik: Alla konversationer sparas säkert med ID, och historiken bevaras även om du byter namn.';
+      '• AI-chatt: Öva verkliga samtal med en AI-persona.\n• Deltagarhantering: Ställ in dina och AI:s språk för att undvika språkfel.\n• GPS-rollspel: Skapa naturliga samtal baserade på din plats.\n• Historik: Alla konversationer sparas säkert med ID, och historiken bevaras även om du byter namn. (TODO: Translate)';
 
   @override
   String get helpTabJson => 'JSON-format';

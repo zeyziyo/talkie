@@ -12,14 +12,14 @@ class AppLocalizationsId extends AppLocalizations {
   String get basicWords => 'Repositori Kata Dasar';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Bahasa Input';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Bahasa Terjemahan';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Ubah percakapan sehari-hari menjadi bahasa asing dalam sekejap! Talkie akan merekam kehidupan bahasa Anda.';
 
   @override
   String get cancel => 'Batal';
@@ -351,12 +351,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get helpJsonTypeWord => 'Kata';
 
   @override
-  String get helpMode1Desc =>
-      'Kenali suara, terjemahkan, dan dengarkan hasilnya.';
-
-  @override
   String get helpMode1Details =>
-      '• Input Suara: Ketuk ikon mikrofon untuk mulai/berhenti\n• Input Teks: Ketik langsung untuk menerjemahkan\n• Cari Otomatis: Mendeteksi kalimat serupa yang ada\n• Terjemahkan: Ketuk tombol untuk terjemahan instan\n• Dengar: Ikon speaker untuk TTS\n• Simpan: \'Simpan Data\' menambahkan ke riwayat\n• Hapus: Atur ulang semua input';
+      '• Pengaturan Bahasa: Ubah bahasa saya dan bahasa pembelajaran di menu bilah aplikasi atau tombol bahasa di bagian bawah\n• Input Sederhana: Analisis otomatis (kata/kalimat) dan aktivasi area pengaturan saat memasukkan teks\n• Mikrofon/Papan Ketik: Mulai pengenalan suara atau masukkan teks dengan ikon besar di layar utama\n• Pengaturan Detail: Tentukan buku sumber, tag, dan memo situasi di area bawah yang muncul selama input\n• Pencarian Otomatis: Deteksi terjemahan lama serupa secara real time\n• Dengarkan: Putar pengucapan penutur asli (TTS) dengan ikon speaker\n• Simpan: Tambahkan langsung ke daftar pembelajaran Anda sendiri dengan \'Simpan Data\'';
 
   @override
   String get helpMode2Desc =>
@@ -380,7 +376,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Obrolan AI: Latih percakapan praktis dengan persona.\n• Manajemen peserta: Atur bahasa Anda dan bahasa AI untuk mencegah perbedaan bahasa.\n• Situasi GPS: Ciptakan situasi percakapan alami berdasarkan lokasi Anda saat ini.\n• Penyimpanan riwayat: Semua percakapan disimpan dengan aman berdasarkan ID, dan riwayat dipertahankan bahkan jika Anda mengubah nama.';
+      '• Obrolan AI: Berlatih percakapan praktis dengan persona di menu \'Obrolan\' di bilah tab bawah\n• Pengaturan Persona: Tentukan jenis kelamin, nama, dan kode bahasa lawan secara bebas\n• Situasi GPS: Mengenali lokasi saya saat ini dan merekomendasikan topik percakapan yang sesuai dengan tempat tersebut\n• 2 Bahasa: Jawaban AI ditampilkan dengan terjemahan untuk memaksimalkan efek pembelajaran\n• Manajemen Catatan: Saring riwayat percakapan sebelumnya dan simpan pesan tertentu dalam percakapan sebagai materi pembelajaran';
 
   @override
   String get helpTabJson => 'Format JSON';

@@ -12,14 +12,14 @@ class AppLocalizationsDe extends AppLocalizations {
   String get basicWords => 'Wortschatz';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Eingabesprache';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Übersetzungssprache';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Verwandle alltägliche Gespräche sofort in Fremdsprachen! Talkie zeichnet dein Sprachleben auf.';
 
   @override
   String get cancel => 'Abbrechen';
@@ -349,12 +349,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get helpJsonTypeWord => 'Wort';
 
   @override
-  String get helpMode1Desc =>
-      'Stimme erkennen, in Zielsprache übersetzen und Ergebnis anhören.';
-
-  @override
   String get helpMode1Details =>
-      '• Spracheinstellungen: Sprache ändern über das Übersetzungs-Symbol\n• Hilfe: Anleitung über das Hilfe-Symbol aufrufen\n• Spracheingabe: Mikrofon-Symbol tippen zum Starten/Stoppen\n• Texteingabe: Direkt tippen zum Übersetzen\n• Auto-Suche: Findet ähnliche vorhandene Sätze\n• Übersetzen: Button tippen für Sofortübersetzung\n• Anhören: Lautsprecher-Symbol für TTS (Original/Übersetzung)\n• Speichern: \'Daten speichern\' fügt zum Verlauf hinzu\n• Leeren: Alle Eingaben zurücksetzen';
+      '• Spracheinstellungen: Ändere deine Sprache und die Lernsprache über das App-Bar-Menü oder die Sprachschaltfläche unten.\n• Einfache Eingabe: Automatische Analyse (Wort/Satz) und Aktivierung des Einstellungsbereichs bei Texteingabe.\n• Mikrofon/Tastatur: Starte die Spracherkennung oder Texteingabe mit dem großen Symbol auf dem Hauptbildschirm.\n• Detaillierte Einstellungen: Gib im unteren Bereich, der während der Eingabe erscheint, Sammlungen, Tags und Situationsnotizen an.\n• Automatische Suche: Ähnliche bestehende Übersetzungen werden in Echtzeit erkannt.\n• Hören: Wiedergabe der Muttersprachlichen Aussprache (TTS) mit dem Lautsprechersymbol.\n• Speichern: Sofortiges Hinzufügen zu deiner eigenen Lernliste mit \'Daten speichern\'.';
 
   @override
   String get helpMode2Desc =>
@@ -378,7 +374,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• KI-Chat: Üben Sie realistische Gespräche mit verschiedenen Persönlichkeiten.\n• Teilnehmerverwaltung: Stellen Sie Ihre Sprache und die der KI separat ein, um Sprachunterschiede zu vermeiden.\n• GPS-Rollenspiel: Erstellen Sie natürliche Gesprächssituationen basierend auf Ihrem aktuellen Standort.\n• Protokollierung: Alle Gespräche werden sicher anhand der ID gespeichert, und die Historie bleibt auch bei Namensänderungen erhalten.';
+      '• KI-Chat: Übe echte Gespräche mit Personas im Menü \'Chat\' in der unteren Tab-Leiste.\n• Persona-Einstellungen: Lege Geschlecht, Name und Sprachcode der anderen Person frei fest.\n• GPS-Rollenspiel: Erkennt deinen aktuellen Standort und empfiehlt Gesprächsthemen, die zum Ort passen.\n• Zweisprachig: Die Antwort der KI wird zusammen mit der Übersetzung angezeigt, um den Lerneffekt zu maximieren.\n• Verlaufsverwaltung: Filtern des bisherigen Gesprächsverlaufs und Speichern bestimmter Nachrichten aus dem Gespräch als Lernmaterial.';
 
   @override
   String get helpTabJson => 'JSON-Format';

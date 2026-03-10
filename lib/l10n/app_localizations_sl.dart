@@ -350,12 +350,8 @@ class AppLocalizationsSl extends AppLocalizations {
   String get helpJsonTypeWord => 'Beseda';
 
   @override
-  String get helpMode1Desc =>
-      'Prepoznajte govor, ga prevedite in poslušajte rezultate.';
-
-  @override
   String get helpMode1Details =>
-      '• Nastavitev jezika: spremenite jezik s pritiskom na ikone zgoraj/spodaj\n• Preklop med besedami/stavki: preklop načina\n• Glasovni vnos: pritisnite ikono mikrofona za začetek/ustavitev poslušanja\n• Vnos besedila: ročni vnos besedila za prevajanje\n• Samodejno iskanje: zaznavanje podobnih obstoječih stavkov\n• Prevajanje: takojšnje prevajanje s pritiskom na gumb za prevajanje\n• Poslušanje: predvajanje TTS z ikono zvočnika\n• Shranjevanje: dodajanje zapisa s »Shrani podatke«\n• Brisanje: ponastavitev vnosa';
+      '• Nastavitev jezika: spremenite jezik s pritiskom na ikone zgoraj/spodaj\n• Preklop med besedami/stavki: preklop načina\n• Glasovni vnos: pritisnite ikono mikrofona za začetek/ustavitev poslušanja\n• Vnos besedila: ročni vnos besedila za prevajanje\n• Samodejno iskanje: zaznavanje podobnih obstoječih stavkov\n• Prevajanje: takojšnje prevajanje s pritiskom na gumb za prevajanje\n• Poslušanje: predvajanje TTS z ikono zvočnika\n• Shranjevanje: dodajanje zapisa s »Shrani podatke«\n• Brisanje: ponastavitev vnosa (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +375,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Klepet AI: vadite pogovor s pogovorom v mojem jeziku\n• Več osebnosti: spremenite spol/jezik/ime sogovornika z menijem nad oblački\n• Dodajanje partnerja: dodajanje novega sogovornika (Neznanec) z gumbom +\n• GPS: Situacijska komedija na podlagi trenutne lokacije\n• Samodejno shranjevanje: samodejno prevajanje in shranjevanje pogovorov';
+      '• Klepet AI: vadite pogovor s pogovorom v mojem jeziku\n• Več osebnosti: spremenite spol/jezik/ime sogovornika z menijem nad oblački\n• Dodajanje partnerja: dodajanje novega sogovornika (Neznanec) z gumbom +\n• GPS: Situacijska komedija na podlagi trenutne lokacije\n• Samodejno shranjevanje: samodejno prevajanje in shranjevanje pogovorov (TODO: Translate)';
 
   @override
   String get helpTabJson => 'Format JSON';

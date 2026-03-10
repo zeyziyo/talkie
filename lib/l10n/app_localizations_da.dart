@@ -12,14 +12,14 @@ class AppLocalizationsDa extends AppLocalizations {
   String get basicWords => 'Grundlæggende ordlager';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Inputsprog';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Oversættelsessprog';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Konverter øjeblikkeligt hverdagsagtaler til fremmedsprog! Talkie registrerer dit sprog liv.';
 
   @override
   String get cancel => 'Annuller';
@@ -346,12 +346,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get helpJsonTypeWord => 'Ord (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'Talegenkendelse, oversættelse og lyt til resultat.';
-
-  @override
   String get helpMode1Details =>
-      '• Stemme: Tryk mikrofon for start/stop\n• Tekst: Skriv direkte for at oversætte\n• Auto-Søg: Finder lignende sætninger\n• Oversæt: Knap for øjeblikkelig oversættelse\n• Lyt: Højttalerikon for TTS\n• Gem: Tilføjer til historik\n• Ryd: Nulstil alt';
+      '• Sprogindstillinger: Skift mit sprog og læringssprog med app-bar-menuen eller den nederste sprogknap\n• Enkel input: Analyserer automatisk (ord/sætning) og aktiverer indstillingsområdet, når du indtaster tekst\n• Mikrofon/tastatur: Start stemmegenkendelse eller tekstinput med det store ikon på hovedskærmen\n• Detaljerede indstillinger: Angiv databog, tag og situationsnotat i det nederste område, der vises under input\n• Automatisk søgning: Registrerer lignende eksisterende oversættelser i realtid\n• Lyt: Afspil indfødt udtale (TTS) med højttalerikonet\n• Gem: Tilføj straks til din egen læringsliste med \'Gem data\'';
 
   @override
   String get helpMode2Desc =>
@@ -375,7 +371,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI-chat: Øv dig i samtaler med en persona.\n• Deltagerstyring: Indstil dine sprog og AI\'s sprog separat for at undgå sprogforskelle.\n• GPS-rollespil: Skab naturlige samtalesituationer baseret på din nuværende placering.\n• Logføring: Alle samtaler gemmes sikkert baseret på ID, og loggen bevares, selvom du ændrer navn.';
+      '• AI-chat: Øv dig i praktiske samtaler med personaen i menuen \'Chat\' på den nederste fanebjælke\n• Personaindstillinger: Angiv frit den anden parts køn, navn og sprogkode\n• GPS-situationsdrama: Genkender min nuværende placering og anbefaler samtaleemner, der passer til stedet\n• 2 sprog: AI\'s svar vises med oversættelse for at maksimere læringseffekten\n• Record management: Filtrering af tidligere samtalelogg og lagring af specifikke beskeder i samtale som læringsmateriale';
 
   @override
   String get helpTabJson => 'JSON-format';

@@ -338,11 +338,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get helpJsonTypeWord => '单词 (Word)';
 
   @override
-  String get helpMode1Desc => '语音识别、翻译并收听结果。';
-
-  @override
   String get helpMode1Details =>
-      '• 语音输入：点击麦克风图标开始/停止聆听\n• 文本输入：直接输入文本进行翻译\n• 自动搜索：检测相似的现有句子\n• 翻译：点击按钮立即翻译\n• 收听：点击扬声器图标收听 TTS（原文/译文）\n• 保存：“保存数据”添加到历史记录\n• 清除：重置所有输入';
+      '• 语音输入：点击麦克风图标开始/停止聆听\n• 文本输入：直接输入文本进行翻译\n• 自动搜索：检测相似的现有句子\n• 翻译：点击按钮立即翻译\n• 收听：点击扬声器图标收听 TTS（原文/译文）\n• 保存：“保存数据”添加到历史记录\n• 清除：重置所有输入 (TODO: Translate)';
 
   @override
   String get helpMode2Desc => '复习已保存的句子，自动隐藏译文并跟踪复习次数。';
@@ -363,7 +360,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI 聊天：与角色进行实战对话练习。\n• 参与者管理：分别设置您和 AI 的语言，以避免语言不一致。\n• GPS 情景：根据当前位置创建自然的对话情境。\n• 记录保存：所有对话都基于 ID 安全存储，即使更改名称也能保留记录。';
+      '• AI 聊天：与角色进行实战对话练习。\n• 参与者管理：分别设置您和 AI 的语言，以避免语言不一致。\n• GPS 情景：根据当前位置创建自然的对话情境。\n• 记录保存：所有对话都基于 ID 安全存储，即使更改名称也能保留记录。 (TODO: Translate)';
 
   @override
   String get helpTabJson => 'JSON 格式';
@@ -1576,11 +1573,8 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get helpJsonTypeWord => '单词（Word）';
 
   @override
-  String get helpMode1Desc => '语音识别、翻译并收听结果。';
-
-  @override
   String get helpMode1Details =>
-      '• 语言设置：通过顶部翻译图标更改语言\n• 帮助：通过顶部帮助图标查看指南\n• 语音输入：点击麦克风图标开始/停止聆听\n• 文本输入：直接输入文本进行翻译\n• 自动搜索：检测相似的现有句子\n• 翻译：点击按钮立即翻译\n• 收听：点击扬声器图标收听 TTS（原文/译文）\n• 保存：“保存数据”添加到历史记录\n• 清除：重置所有输入';
+      '• 语言设置：通过顶部翻译图标更改语言\n• 帮助：通过顶部帮助图标查看指南\n• 语音输入：点击麦克风图标开始/停止聆听\n• 文本输入：直接输入文本进行翻译\n• 自动搜索：检测相似的现有句子\n• 翻译：点击按钮立即翻译\n• 收听：点击扬声器图标收听 TTS（原文/译文）\n• 保存：“保存数据”添加到历史记录\n• 清除：重置所有输入 (TODO: Translate)';
 
   @override
   String get helpMode2Desc => '复习已保存的句子，自动隐藏译文并跟踪复习次数。';
@@ -1601,7 +1595,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get helpModeChatDetails =>
-      '• AI 聊天：与角色扮演进行真实对话练习。\n• 参与者管理：分别设置您和 AI 的语言，避免语言不匹配。\n• GPS 情景：根据当前位置模拟自然的对话场景。\n• 记录保存：所有对话都基于 ID 安全存储，即使重命名也能保留记录。';
+      '• AI 聊天：与角色扮演进行真实对话练习。\n• 参与者管理：分别设置您和 AI 的语言，避免语言不匹配。\n• GPS 情景：根据当前位置模拟自然的对话场景。\n• 记录保存：所有对话都基于 ID 安全存储，即使重命名也能保留记录。 (TODO: Translate)';
 
   @override
   String get helpTabJson => 'JSON 格式';
@@ -2815,11 +2809,8 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get helpJsonTypeWord => '單字 (Word)';
 
   @override
-  String get helpMode1Desc => '語音辨識、翻譯並收聽結果。';
-
-  @override
   String get helpMode1Details =>
-      '• 語言設定：透過頂部翻譯圖示更改語言\n• 幫助：透過頂部幫助圖示查看指南\n• 語音輸入：點擊麥克風圖示開始/停止聆聽\n• 文字輸入：直接輸入文字進行翻譯\n• 自動搜尋：偵測相似的現有句子\n• 翻譯：點擊按鈕立即翻譯\n• 收聽：點擊揚聲器圖示收聽 TTS（原文/譯文）\n• 儲存：「儲存資料」添加到歷史記錄\n• 清除：重設所有輸入';
+      '• 語言設定：透過頂部翻譯圖示更改語言\n• 幫助：透過頂部幫助圖示查看指南\n• 語音輸入：點擊麥克風圖示開始/停止聆聽\n• 文字輸入：直接輸入文字進行翻譯\n• 自動搜尋：偵測相似的現有句子\n• 翻譯：點擊按鈕立即翻譯\n• 收聽：點擊揚聲器圖示收聽 TTS（原文/譯文）\n• 儲存：「儲存資料」添加到歷史記錄\n• 清除：重設所有輸入 (TODO: Translate)';
 
   @override
   String get helpMode2Desc => '複習已儲存的句子，自動隱藏譯文並追蹤複習次數。';
@@ -2840,7 +2831,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get helpModeChatDetails =>
-      '• AI 聊天：練習與 AI 角色的實際對話。\n• 參與者管理：您可以分別設定您的語言和 AI 的語言，以避免語言不一致。\n• GPS 情境劇：根據您目前的位置建立自然的對話情境。\n• 記錄保存：所有對話都以 ID 為基礎安全地儲存，即使您更改名稱，記錄也會保留。';
+      '• AI 聊天：練習與 AI 角色的實際對話。\n• 參與者管理：您可以分別設定您的語言和 AI 的語言，以避免語言不一致。\n• GPS 情境劇：根據您目前的位置建立自然的對話情境。\n• 記錄保存：所有對話都以 ID 為基礎安全地儲存，即使您更改名稱，記錄也會保留。 (TODO: Translate)';
 
   @override
   String get helpTabJson => 'JSON 格式';

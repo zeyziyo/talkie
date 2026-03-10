@@ -350,12 +350,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get helpJsonTypeWord => 'Từ';
 
   @override
-  String get helpMode1Desc =>
-      'Nhận dạng giọng nói, dịch sang ngôn ngữ đích và nghe kết quả.';
-
-  @override
   String get helpMode1Details =>
-      '• Nhập giọng nói: Nhấn biểu tượng mic để bắt đầu/dừng\n• Nhập văn bản: Nhập trực tiếp để dịch\n• Tự động tìm kiếm: Phát hiện các câu tương tự đã có\n• Dịch: Nhấn nút để dịch ngay lập tức\n• Nghe: Biểu tượng loa để nghe TTS\n• Lưu: \'Lưu dữ liệu\' thêm vào lịch sử\n• Xóa: Đặt lại tất cả đầu vào';
+      '• Nhập giọng nói: Nhấn biểu tượng mic để bắt đầu/dừng\n• Nhập văn bản: Nhập trực tiếp để dịch\n• Tự động tìm kiếm: Phát hiện các câu tương tự đã có\n• Dịch: Nhấn nút để dịch ngay lập tức\n• Nghe: Biểu tượng loa để nghe TTS\n• Lưu: \'Lưu dữ liệu\' thêm vào lịch sử\n• Xóa: Đặt lại tất cả đầu vào (TODO: Translate)';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +375,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Trò chuyện AI: Luyện tập hội thoại thực tế với nhân vật.\n• Quản lý người tham gia: Cài đặt ngôn ngữ của bạn và ngôn ngữ của AI để tránh sai lệch ngôn ngữ.\n• Nhập vai GPS: Tạo tình huống hội thoại tự nhiên dựa trên vị trí hiện tại.\n• Lưu giữ lịch sử: Tất cả cuộc trò chuyện được lưu trữ an toàn dựa trên ID và lịch sử được giữ lại ngay cả khi bạn đổi tên.';
+      '• Trò chuyện AI: Luyện tập hội thoại thực tế với nhân vật.\n• Quản lý người tham gia: Cài đặt ngôn ngữ của bạn và ngôn ngữ của AI để tránh sai lệch ngôn ngữ.\n• Nhập vai GPS: Tạo tình huống hội thoại tự nhiên dựa trên vị trí hiện tại.\n• Lưu giữ lịch sử: Tất cả cuộc trò chuyện được lưu trữ an toàn dựa trên ID và lịch sử được giữ lại ngay cả khi bạn đổi tên. (TODO: Translate)';
 
   @override
   String get helpTabJson => 'Định dạng JSON';
