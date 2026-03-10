@@ -9,6 +9,22 @@ class AppLocalizationsRo extends AppLocalizations {
   AppLocalizationsRo([String locale = 'ro']) : super(locale);
 
   @override
+  String get basicWords => 'Depozit de bază cu cuvinte';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'Anulare';
+
+  @override
   String get accuracy => 'Acuratețe';
 
   @override
@@ -58,12 +74,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'Depozit de cuvinte de bază';
-
-  @override
-  String get basicWords => 'Depozit de bază cu cuvinte';
-
-  @override
-  String get cancel => 'Anulare';
 
   @override
   String get caseObject => 'Acuzativ';

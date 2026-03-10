@@ -9,6 +9,22 @@ class AppLocalizationsEt extends AppLocalizations {
   AppLocalizationsEt([String locale = 'et']) : super(locale);
 
   @override
+  String get basicWords => 'Põhiliste sõnade hoidla';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'Tühista';
+
+  @override
   String get accuracy => 'Täpsus';
 
   @override
@@ -58,12 +74,6 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'Põhiliste sõnade hoidla';
-
-  @override
-  String get basicWords => 'Põhiliste sõnade hoidla';
-
-  @override
-  String get cancel => 'Tühista';
 
   @override
   String get caseObject => 'Sihitiskääne';

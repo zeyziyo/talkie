@@ -1,5 +1,16 @@
 {
   "@@locale": "fi",
+  "basicWords": "Perussanojen arkisto",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Syöttökieli",
+  "translationLanguage": "Käännöskieli",
+  "simplifiedGuidance": "Muunna arkipäiväiset keskustelut vieraalle kielelle hetkessä! Talkie tallentaa kielielämäsi.",
+  "cancel": "Peruuta",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Tarkkuus",
   "ttsMissing": "Tämän kielen puhemoottoria ei ole asennettu laitteeseesi.",
   "ttsInstallGuide": "Asenna kielipaketti Android-asetuksista > Googlen tekstistä puheeksi -toiminnosta.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Perussanavarasto",
-  "basicWords": "Perussanojen arkisto",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Peruuta",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Objekti",
   "casePossessive": "Genetiivi",
   "casePossessivePronoun": "Possessiivipronomini",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Keskustelu (Dialogue)",
   "helpJsonTypeSentence": "Lause (Sentence)",
   "helpJsonTypeWord": "Sana (Word)",
-  "helpMode1Desc": "Puheentunnistus, käännös ja kuuntelu.",
-  "helpMode1Details": "• Ääni: Napauta mikrofonia aloittaaksesi\n• Teksti: Kirjoita kääntääksesi\n• Auto-Haku: Löytää samanlaiset lauseet\n• Käännä: Painike välittömään käännökseen\n• Kuuntele: Kaiutinikoni TTS:lle\n• Tallenna: Lisää historiaan\n• Tyhjennä: Nollaa kaikki",
+  "helpMode1Details": "• Kieliasetukset: Muuta omaa kieltäsi ja opiskelukieltäsi sovelluspalkin valikosta tai alareunan kielipainikkeesta\n• Yksinkertainen syöttö: Tekstin syöttö analysoi automaattisesti (sanan/lauseen) ja aktivoi asetusosio\n• Mikrofoni/näppäimistö: Aloita puheentunnistus tai tekstinsyöttö päänäytön suurilla kuvakkeilla\n• Yksityiskohtaiset asetukset: Määritä aineistokokoelma, tunnisteet ja tilannemuistiinpanot syötön aikana näkyvässä alaosassa\n• Automaattinen haku: Tunnista samankaltaiset aiemmat käännökset reaaliajassa\n• Kuuntelu: Toista natiivipuhujan ääntäminen (TTS) kaiutinkuvakkeella\n• Tallenna: Lisää heti omaan oppimislistaan 'Tallenna tiedot' -toiminnolla",
   "helpMode2Desc": "Kertaa tallennetut lauseet piilottamalla käännös.",
   "helpMode2Details": "• Materiaalin valinta: Käytä oikean yläkulman valikkoa (⋮) valitaksesi 'Valitse oppimateriaali' tai 'Online-materiaalikirjasto'\n• Kortin kääntäminen: Tarkista käännös valinnalla 'Näytä/Piilota'\n• Kuunteleminen: Toista ääntä painamalla kaiutinkuvaketta\n• Oppiminen valmis: Merkitse suoritetuksi valintamerkillä (V)\n• Poistaminen: Poista merkintöjä pitkällä painalluksella\n• Haku ja suodattimet: Tukee hakupalkkia (reaaliaikainen älykäs haku) sekä tunniste- ja alkukirjainsuodattimia",
   "helpMode3Desc": "Harjoittele ääntämistä kuuntelemalla ja toistamalla lauseita (varjostus).",
   "helpMode3Details": "• Valitse: Valitse paketti\n• Aikaväli: [-] [+] odotusaika (3s-60s)\n• Aloita/Lopeta: Hallitse istuntoa\n• Puhu: Kuuntele ja toista\n• Pisteet: Tarkkuus (0-100)\n• Uusinta: Painike jos ääntä ei tunnisteta",
   "helpModeChatDesc": "Harjoittele käytännön keskustelua keskustelemalla tekoälypersoonan kanssa.",
-  "helpModeChatDetails": "• AI-chat: Harjoittele käytännön keskusteluja persoonien kanssa.\n• Osallistujien hallinta: Määritä oma kielesi ja tekoälyn kieli erikseen välttääksesi kielieroja.\n• GPS-roolipeli: Luo luonnollisia keskustelutilanteita nykyisen sijaintisi perusteella.\n• Tallennushistoria: Kaikki keskustelut tallennetaan turvallisesti tunnuksen perusteella, ja historia säilyy, vaikka nimeä muutettaisiin.",
+  "helpModeChatDetails": "• AI-chat: Harjoittele käytännön keskusteluja persoonan kanssa alareunan välilehdellä 'Chat'\n• Persoonan asetukset: Määritä vapaasti vastapuolen sukupuoli, nimi ja kielikoodi\n• GPS-tilanneleikki: Tunnistaa nykyisen sijaintisi ja suosittelee paikkaan sopivia keskustelunaiheita\n• Kaksi kieltä: AI:n vastaukset näytetään käännöksen kera, mikä maksimoi oppimisen\n• Historianhallinta: Suodata menneitä keskusteluja ja tallenna tiettyjä viestejä oppimismateriaaliksi keskustelujen aikana",
   "helpTabJson": "JSON Muoto",
   "helpTabModes": "Tilat",
   "helpTabTour": "Kierros",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Sana puolustus",
   "wordModeLabel": "Sanatila",
   "yourPronunciation": "Sinun ääntämys",
-  "ttsUnsupportedNatively": "Tämän laitteen oletusasetukset eivät tue tekstin puheeksi muuntoa tällä kielellä."
-,
+  "ttsUnsupportedNatively": "Tämän laitteen oletusasetukset eivät tue tekstin puheeksi muuntoa tällä kielellä.",
   "welcomeTitle": "Tervetuloa Talkieen!",
   "welcomeDesc": "Talkie tukee yli 80 kieltä ja on älykäs käännöstyökalu matkailijoille. Paranna puhekykyäsi tehisälychatin avulla!",
   "welcomeButton": "Aloita"

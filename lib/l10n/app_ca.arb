@@ -1,5 +1,16 @@
 {
   "@@locale": "ca",
+  "basicWords": "Repositori bàsic de paraules",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Idioma d'entrada",
+  "translationLanguage": "Idioma de traducció",
+  "simplifiedGuidance": "Transforma converses quotidianes a un idioma estranger a l'instant! Talkie registra la teva vida lingüística.",
+  "cancel": "Cancel·la",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Precisió",
   "ttsMissing": "No s'ha instal·lat el motor de veu per a aquest idioma al dispositiu.",
   "ttsInstallGuide": "Instal·leu les dades d'idioma a Configuració d'Android > TTS de Google.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Repositori bàsic de paraules",
-  "basicWords": "Repositori bàsic de paraules",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Cancel·la",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Objecte",
   "casePossessive": "Possessiu",
   "casePossessivePronoun": "Pronom possessiu",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Diàleg",
   "helpJsonTypeSentence": "Frase",
   "helpJsonTypeWord": "Paraula",
-  "helpMode1Desc": "Reconeix la veu per traduir i escolta els resultats.",
-  "helpMode1Details": "• Configuració de l'idioma: Canvia l'idioma prement les icones superior/inferior\n• Commutador de paraules/frases: Canvia de mode\n• Entrada de veu: Prem la icona del micròfon per començar/aturar l'escolta\n• Entrada de text: Introdueix text directament per traduir\n• Cerca automàtica: Detecta frases existents similars\n• Traducció: Prem el botó de traducció per traduir immediatament\n• Escolta: Reprodueix TTS amb la icona de l'altaveu\n• Desa: Afegeix enregistraments amb 'Desa les dades'\n• Esborra: Inicialitza l'entrada",
+  "helpMode1Details": "• Configuració d'idioma: Canvia el teu idioma i l'idioma d'aprenentatge al menú de la barra d'aplicacions o al botó d'idioma inferior.\n• Entrada senzilla: Analitza automàticament l'entrada de text (paraula/frase) i activa l'àrea de configuració.\n• Micròfon/Teclat: Inicia el reconeixement de veu o l'entrada de text amb la icona gran a la pantalla principal.\n• Configuració detallada: Especifica la col·lecció de materials, les etiquetes i les notes de situació a l'àrea inferior que apareix durant l'entrada.\n• Cerca automàtica: Detecta traduccions existents similars en temps real.\n• Escolta: Reprodueix la pronunciació nativa (TTS) amb la icona de l'altaveu.\n• Desa: Afegeix immediatament a la teva pròpia llista d'aprenentatge amb 'Desa les dades'",
   "helpMode2Desc": "Repassa les frases desades i comprova si les recordes amb la funció d'ocultació automàtica.",
   "helpMode2Details": "• Selecció de llibres de text: fes servir 'Selecciona un llibre de text' o 'Llibreria en línia' al menú (⋮) de la part superior dreta\n• Girar la targeta: 'Mostra/Amaga' per comprovar la traducció\n• Escoltar: reprodueix la pronunciació amb la icona de l'altaveu\n• Aprèn: marca amb una marca de verificació (V) per completar l'aprenentatge\n• Suprimeix: mantén premuda la targeta (clic llarg) per suprimir l'historial\n• Cerca i filtra: admet la barra de cerca (cerca intel·ligent en temps real) i els filtres d'etiquetes, lletra inicial",
   "helpMode3Desc": "Escolteu i repetiu les frases (imitant) per practicar la pronunciació.",
   "helpMode3Details": "• Selecció de materials: Selecciona la col·lecció de materials que vols estudiar\n• Configuració de l'interval: Ajusta el temps d'espera entre frases amb els botons [-] [+](3 segons ~ 60 segons)\n• Comença/Atura: Controla la sessió de shadowing\n• Parla: Escolta la veu i repeteix\n• Comentaris: Puntuació de precisió (0-100) i visualització del color\n• Criteris de cerca: Filtra l'objectiu de la pràctica per etiqueta, element recent o lletra inicial",
   "helpModeChatDesc": "Practiqueu la conversa real xerrant amb una IA personalitzada.",
-  "helpModeChatDetails": "• Xat amb IA: Practica la conversa parlant en el teu idioma\n• Persona múltiple: Canvia el gènere/idioma/nom de l'altra persona amb el menú de sobre la bombolla de diàleg\n• Afegeix un soci: Afegeix una nova persona amb qui parlar (desconegut) amb el botó +\n• GPS: Obra de situació basada en la ubicació actual\n• Desa automàticament: Tradueix i desa automàticament el contingut de la conversa",
+  "helpModeChatDetails": "• Xat amb IA: Practica converses reals amb una persona al menú 'Xat' a la barra de pestanyes inferior.\n• Configuració de la persona: Especifica lliurement el gènere, el nom i el codi d'idioma de l'interlocutor.\n• Situació de joc de rol GPS: Reconeix la teva ubicació actual i recomana temes de conversa adequats per al lloc.\n• 2 idiomes: La resposta de la IA es mostra amb la traducció per maximitzar l'efecte d'aprenentatge.\n• Gestió de l'historial: Filtra l'historial de converses passades i desa missatges específics de la conversa com a material d'aprenentatge",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Descripció dels modes",
   "helpTabTour": "Fer un recorregut",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Defensa de paraules",
   "wordModeLabel": "Mode de paraules",
   "yourPronunciation": "La teva pronunciació",
-  "ttsUnsupportedNatively": "La configuració predeterminada d'aquest dispositiu no admet la sortida de veu per a aquest idioma."
-,
+  "ttsUnsupportedNatively": "La configuració predeterminada d'aquest dispositiu no admet la sortida de veu per a aquest idioma.",
   "welcomeTitle": "Benvingut a Talkie!",
   "welcomeDesc": "Talkie admet més de 80 idiomes i és una eina intel·ligent de traducció per a viatgers i aprenents. Millora les teves habilitats de parla amb el xat d'IA!",
   "welcomeButton": "Comença"

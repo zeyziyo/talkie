@@ -9,6 +9,22 @@ class AppLocalizationsUz extends AppLocalizations {
   AppLocalizationsUz([String locale = 'uz']) : super(locale);
 
   @override
+  String get basicWords => 'Asosiy so\'zlar ombori';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'Bekor qilish';
+
+  @override
   String get accuracy => 'Aniqlik';
 
   @override
@@ -58,12 +74,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'Asosiy so\'zlar ombori';
-
-  @override
-  String get basicWords => 'Asosiy so\'zlar ombori';
-
-  @override
-  String get cancel => 'Bekor qilish';
 
   @override
   String get caseObject => 'Tushum kelishik';

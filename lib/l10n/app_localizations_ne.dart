@@ -9,6 +9,22 @@ class AppLocalizationsNe extends AppLocalizations {
   AppLocalizationsNe([String locale = 'ne']) : super(locale);
 
   @override
+  String get basicWords => 'आधारभूत शब्द भण्डार';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'रद्द गर्नुहोस्';
+
+  @override
   String get accuracy => 'शुद्धता';
 
   @override
@@ -57,12 +73,6 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'आधारभूत शब्द भण्डार';
-
-  @override
-  String get basicWords => 'आधारभूत शब्द भण्डार';
-
-  @override
-  String get cancel => 'रद्द गर्नुहोस्';
 
   @override
   String get caseObject => 'कर्म कारक';

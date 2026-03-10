@@ -6,7 +6,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import '../l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
-import '../widgets/mode1_widget.dart';
+// import '../widgets/mode1_widget.dart'; // Removed: Integrated into Home
 import '../widgets/mode2_widget.dart';
 import '../widgets/mode3_widget.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
@@ -18,6 +18,7 @@ import '../constants/app_constants.dart';
 import 'participant_manage_screen.dart';
 import 'auth_screen.dart';
 import 'package:flutter/services.dart';
+import '../widgets/simplified_input_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   static const _channel = MethodChannel('com.zeyziyo.talkie/settings');
@@ -27,16 +28,15 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
-  // Mode 1 Keys
+class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
+  // Mode 1 Keys (Old Input Mode - Mostly unused now, kept for tutorial if needed)
   final GlobalKey _micButtonKey = GlobalKey();
   final GlobalKey _translateButtonKey = GlobalKey();
   final GlobalKey _saveButtonKey = GlobalKey();
-  final GlobalKey _swapButtonKey = GlobalKey(); // New: Swap Button Key
+  final GlobalKey _swapButtonKey = GlobalKey();
   final GlobalKey _contextFieldKey = GlobalKey();
-  final GlobalKey _mode1DropdownKey = GlobalKey(); // Mode 1 Material Dropdown Key
-  final GlobalKey _chatFabKey = GlobalKey(); // AI Chat FloatingActionButton Key
-  final GlobalKey _mode1ToggleKey = GlobalKey(); // Mode 1 Word/Sentence Toggle Key
+  final GlobalKey _mode1DropdownKey = GlobalKey(); 
+  final GlobalKey _mode1ToggleKey = GlobalKey(); 
 
   // Mode 2 Keys
   final GlobalKey _mode2DropdownKey = GlobalKey();
@@ -51,22 +51,26 @@ class _HomeScreenState extends State<HomeScreen> {
   // Tutorial Keys - Fixed
   final GlobalKey _menuKey = GlobalKey(); // Renamed from _tabKey
   final GlobalKey _actionButtonKey = GlobalKey();
+  final GlobalKey _chatFabKey = GlobalKey(); // Added: Fixed undefined identifier
 
   // AdMob Banner
   BannerAd? _bannerAd;
   bool _isBannerAdReady = false;
 
-  // PageController for swipe navigation
+  // Navigation Controllers
   late PageController _pageController;
+  late TabController _tabController;
 
   @override
   void initState() {
     super.initState();
     _loadBannerAd();
     
-    // Initialize PageController with current mode
+    // Initialize Controllers with current mode
     final appState = Provider.of<AppState>(context, listen: false);
     _pageController = PageController(initialPage: appState.currentMode);
+    _tabController = TabController(length: 4, vsync: this, initialIndex: appState.currentMode);
+    
     appState.setPageController(_pageController);
 
     // TTS Error Listener
@@ -159,6 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
     appState.ttsErrorNotifier.removeListener(_showTtsInstallGuide);
     _bannerAd?.dispose();
     _pageController.dispose();
+    _tabController.dispose();
     super.dispose();
   }
 
@@ -402,147 +407,108 @@ class _HomeScreenState extends State<HomeScreen> {
     final appState = Provider.of<AppState>(context);
 
     return Scaffold(
-      appBar: AppBar(
-        title: Consumer<AppState>(
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight((appState.currentMode >= 1 && appState.currentMode <= 2) ? 154.0 : 104.0),
+        child: Consumer<AppState>(
           builder: (context, appState, child) {
-                // Show Mode Name in Title instead of Material Name
-                String modeName;
-                switch (appState.currentMode) {
-                  case 0:
-                    modeName = l10n.inputModeTitle; // "입력"
-                    break;
-                  case 1:
-                    modeName = l10n.reviewModeTitle; // "복습"
-                    break;
-                  case 2:
-                    modeName = l10n.practiceModeTitle; // "발음 연습"
-                    break;
-                  case 3:
-                    modeName = l10n.chatAiChat; // "AI 채팅"
-                    break;
-                  default:
-                    modeName = l10n.appTitle;
-                }
+            String modeName;
+            switch (appState.currentMode) {
+              case 0: modeName = 'Talkie'; break;
+              case 1: modeName = l10n.reviewModeTitle; break;
+              case 2: modeName = l10n.practiceModeTitle; break;
+              case 3: modeName = l10n.chatAiChat; break;
+              default: modeName = l10n.appTitle;
+            }
 
-                if (appState.currentMode == 3) {
-                  return Text(
-                    modeName,
-                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                  );
-                }
-
-                return Text(
-                  modeName,
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                );
-              },
-            ),
-            centerTitle: true,
-            backgroundColor: Colors.orange, // VISUAL PROOF 2
-            foregroundColor: Colors.white,
-            leading: Builder(
-              builder: (context) => IconButton(
-                key: _menuKey,
-                icon: const Icon(Icons.menu),
-                onPressed: () => Scaffold.of(context).openDrawer(),
+            return AppBar(
+              title: Text(modeName, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+              centerTitle: true,
+              backgroundColor: Colors.orange,
+              foregroundColor: Colors.white,
+              leading: Builder(
+                builder: (context) => IconButton(
+                  key: _menuKey,
+                  icon: const Icon(Icons.menu),
+                  onPressed: () => Scaffold.of(context).openDrawer(),
+                ),
               ),
-            ),
-            bottom: appState.currentMode <= 2 
-              ? PreferredSize(
-                  preferredSize: const Size.fromHeight(50.0),
-                  child: Container(
-                    color: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          flex: 3,
-                          child: Container(
-                            height: 40,
-                            decoration: BoxDecoration(
-                              color: Colors.grey.shade100,
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(color: Colors.grey.shade300),
-                            ),
-                            child: Row(
-                              key: _mode1ToggleKey,
-                              children: [
-                                _buildToggleButton(
-                                  context, 
-                                  label: l10n.tabWord, 
-                                  isSelected: appState.recordTypeFilter == 'word',
-                                  onTap: () {
-                                    appState.setRecordTypeFilter('word');
-                                    appState.selectMaterial(null);
-                                  },
-                                ),
-                                _buildToggleButton(
-                                  context, 
-                                  label: l10n.tabSentence, 
-                                  isSelected: appState.recordTypeFilter == 'sentence',
-                                  onTap: () {
-                                    appState.setRecordTypeFilter('sentence');
-                                    appState.selectMaterial(null);
-                                  },
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 12),
-                        // Mini Language Swap Button
-                        Expanded(
-                          flex: 4,
-                          child: InkWell(
-                            key: _swapButtonKey, // Attached Key
-                            onTap: () => appState.swapLanguages(),
-                            borderRadius: BorderRadius.circular(8),
-                            child: Container(
-                              height: 40,
-                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-                              decoration: BoxDecoration(
-                                color: Colors.blue[50],
-                                borderRadius: BorderRadius.circular(8),
-                                border: Border.all(color: Colors.blue.shade200),
-                              ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Flexible(
-                                    child: Text(
-                                      appState.languageNames[appState.sourceLang] ?? appState.sourceLang.toUpperCase(),
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.blue.shade800,
-                                      ),
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                  ),
-                                  const SizedBox(width: 4),
-                                  Icon(Icons.swap_horiz, size: 16, color: Colors.blue.shade600),
-                                  const SizedBox(width: 4),
-                                  Flexible(
-                                    child: Text(
-                                      appState.languageNames[appState.targetLang] ?? appState.targetLang.toUpperCase(),
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.blue.shade800,
-                                      ),
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
+              bottom: PreferredSize(
+                preferredSize: Size.fromHeight((appState.currentMode >= 1 && appState.currentMode <= 2) ? 98.0 : 48.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      color: Colors.white,
+                      child: TabBar(
+                        controller: _tabController,
+                        labelColor: Colors.indigo,
+                        unselectedLabelColor: Colors.grey,
+                        indicatorColor: Colors.indigo,
+                        indicatorWeight: 3,
+                        onTap: (index) => appState.switchMode(index),
+                        tabs: [
+                          Tab(text: '홈', icon: const Icon(Icons.home_rounded, size: 20)),
+                          Tab(text: l10n.reviewModeTitle, icon: const Icon(Icons.auto_stories, size: 20)),
+                          Tab(text: l10n.practiceModeTitle, icon: const Icon(Icons.record_voice_over, size: 20)),
+                          Tab(text: l10n.chatAiChat, icon: const Icon(Icons.chat_bubble, size: 20)),
+                        ],
+                      ),
                     ),
-                  ),
-                )
-              : null,
+                    if (appState.currentMode >= 1 && appState.currentMode <= 2)
+                      Container(
+                        color: Colors.white,
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                height: 40,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey.shade100,
+                                  borderRadius: BorderRadius.circular(12),
+                                  border: Border.all(color: Colors.grey.shade300),
+                                ),
+                                child: Row(
+                                  key: _mode1ToggleKey,
+                                  children: [
+                                    _buildToggleButton(context, label: l10n.tabWord, isSelected: appState.recordTypeFilter == 'word', onTap: () { appState.setRecordTypeFilter('word'); appState.selectMaterial(null); }),
+                                    _buildToggleButton(context, label: l10n.tabSentence, isSelected: appState.recordTypeFilter == 'sentence', onTap: () { appState.setRecordTypeFilter('sentence'); appState.selectMaterial(null); }),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              flex: 4,
+                              child: InkWell(
+                                key: _swapButtonKey,
+                                onTap: () => appState.swapLanguages(),
+                                borderRadius: BorderRadius.circular(8),
+                                child: Container(
+                                  height: 40,
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                                  decoration: BoxDecoration(color: Colors.blue[50], borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.blue.shade200)),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Flexible(child: Text(appState.languageNames[appState.sourceLang] ?? appState.sourceLang.toUpperCase(), style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
+                                      const SizedBox(width: 4),
+                                      Icon(Icons.swap_horiz, size: 16, color: Colors.blue.shade600),
+                                      const SizedBox(width: 4),
+                                      Flexible(child: Text(appState.languageNames[appState.targetLang] ?? appState.targetLang.toUpperCase(), style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+
             actions: [
               // Phase 15.6: Web-Friendly Login Action in AppBar
               if (appState.currentUser == null || appState.currentUser!.isAnonymous)
@@ -689,7 +655,10 @@ class _HomeScreenState extends State<HomeScreen> {
             },
           ),
         ],
-      ),
+      );
+    },
+  ),
+),
       drawer: Drawer(
         child: Consumer<AppState>(
           builder: (context, appState, child) {
@@ -818,13 +787,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 const Divider(),
                 ListTile(
-                  leading: const Icon(Icons.keyboard),
-                  title: Text(l10n.inputModeTitle),
+                  leading: const Icon(Icons.home_rounded),
+                  title: const Text('홈'),
                   selected: appState.currentMode == 0,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {
                     appState.switchMode(0);
-                    Navigator.pop(context); // Close drawer
+                    Navigator.pop(context);
                   },
                 ),
                 ListTile(
@@ -887,25 +856,17 @@ class _HomeScreenState extends State<HomeScreen> {
           Expanded(
             child: PageView(
               controller: _pageController,
-              onPageChanged: (index) {
-                 final appState = Provider.of<AppState>(context, listen: false);
-                 appState.switchMode(index, fromPage: true);
-                 if (index == 3) {
-                   // Ensure list is loaded for the AppBar Dropdown
-                   appState.loadDialogueGroups();
-                 }
-              },
+               onPageChanged: (index) {
+                  final appState = Provider.of<AppState>(context, listen: false);
+                  appState.switchMode(index, fromPage: true);
+                  _tabController.animateTo(index); // Sync TabBar with swipe
+                  if (index == 3) {
+                    // Ensure list is loaded for the AI Chat
+                    appState.loadDialogueGroups();
+                  }
+               },
               children: [
-                Mode1Widget(
-                  micButtonKey: _micButtonKey,
-                  translateButtonKey: _translateButtonKey,
-                  swapButtonKey: _swapButtonKey,
-                  saveButtonKey: _saveButtonKey,
-                  contextFieldKey: _contextFieldKey,
-                  materialDropdownKey: _mode1DropdownKey,
-                  toggleButtonKey: _mode1ToggleKey,
-                  onSelectMaterial: () => OnlineLibraryDialog.show(context),
-                ),
+                const SimplifiedInputWidget(),
                 Mode2Widget(
                   key: const ValueKey('mode2'),
                   materialDropdownKey: _mode2DropdownKey,
@@ -983,10 +944,20 @@ class _HomeScreenState extends State<HomeScreen> {
                     initialValue: tempSource,
                     decoration: const InputDecoration(border: OutlineInputBorder()),
                     items: LanguageConstants.supportedLanguages.map((lang) {
-                      final nativeName = LanguageConstants.getLanguageMap(lang['code']!)[lang['code']!] ?? lang['name'];
+                      final code = lang['code']!;
+                      final myLang = appState.sourceLang;
+                      
+                      final myLangMap = LanguageConstants.getLanguageMap(myLang);
+                      final nativeMap = LanguageConstants.getLanguageMap(code);
+                      
+                      final nameInMyLang = myLangMap[code] ?? code.toUpperCase();
+                      final nativeName = nativeMap[code] ?? nameInMyLang;
+                      
+                      final displayName = nameInMyLang == nativeName ? nameInMyLang : '$nameInMyLang($nativeName)';
+
                       return DropdownMenuItem<String>(
-                        value: lang['code'],
-                        child: Text('${lang['name']} ($nativeName)'),
+                        value: code,
+                        child: Text(displayName),
                       );
                     }).toList(),
                     onChanged: (value) {
@@ -1014,10 +985,20 @@ class _HomeScreenState extends State<HomeScreen> {
                     initialValue: tempTarget,
                     decoration: const InputDecoration(border: OutlineInputBorder()),
                     items: LanguageConstants.supportedLanguages.map((lang) {
-                      final nativeName = LanguageConstants.getLanguageMap(lang['code']!)[lang['code']!] ?? lang['name'];
+                      final code = lang['code']!;
+                      final myLang = appState.sourceLang;
+                      
+                      final myLangMap = LanguageConstants.getLanguageMap(myLang);
+                      final nativeMap = LanguageConstants.getLanguageMap(code);
+                      
+                      final nameInMyLang = myLangMap[code] ?? code.toUpperCase();
+                      final nativeName = nativeMap[code] ?? nameInMyLang;
+                      
+                      final displayName = nameInMyLang == nativeName ? nameInMyLang : '$nameInMyLang($nativeName)';
+
                       return DropdownMenuItem<String>(
-                        value: lang['code'],
-                        child: Text('${lang['name']} ($nativeName)'),
+                        value: code,
+                        child: Text(displayName),
                       );
                     }).toList(),
                     onChanged: (value) {

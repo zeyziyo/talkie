@@ -9,6 +9,22 @@ class AppLocalizationsZh extends AppLocalizations {
   AppLocalizationsZh([String locale = 'zh']) : super(locale);
 
   @override
+  String get basicWords => '基础词库';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => '取消';
+
+  @override
   String get accuracy => '准确率';
 
   @override
@@ -55,12 +71,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get basicWordRepository => '基础词库';
-
-  @override
-  String get basicWords => '基础词库';
-
-  @override
-  String get cancel => '取消';
 
   @override
   String get caseObject => '宾格';
@@ -1247,6 +1257,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   AppLocalizationsZhCn() : super('zh_CN');
 
   @override
+  String get basicWords => '基础词库';
+
+  @override
+  String get cancel => '取消';
+
+  @override
   String get accuracy => '准确率';
 
   @override
@@ -1293,12 +1309,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get basicWordRepository => '基础词汇库';
-
-  @override
-  String get basicWords => '基础词库';
-
-  @override
-  String get cancel => '取消';
 
   @override
   String get caseObject => '宾格';
@@ -2486,6 +2496,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   AppLocalizationsZhTw() : super('zh_TW');
 
   @override
+  String get basicWords => '基礎詞庫';
+
+  @override
+  String get cancel => '取消';
+
+  @override
   String get accuracy => '準確度';
 
   @override
@@ -2532,12 +2548,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get basicWordRepository => '基礎詞彙庫';
-
-  @override
-  String get basicWords => '基礎詞庫';
-
-  @override
-  String get cancel => '取消';
 
   @override
   String get caseObject => '受格';

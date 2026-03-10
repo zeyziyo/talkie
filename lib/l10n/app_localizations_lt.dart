@@ -9,6 +9,22 @@ class AppLocalizationsLt extends AppLocalizations {
   AppLocalizationsLt([String locale = 'lt']) : super(locale);
 
   @override
+  String get basicWords => 'Pagrindinė žodžių saugykla';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'Atšaukti';
+
+  @override
   String get accuracy => 'Tikslumas';
 
   @override
@@ -58,12 +74,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'Pagrindinė žodžių saugykla';
-
-  @override
-  String get basicWords => 'Pagrindinė žodžių saugykla';
-
-  @override
-  String get cancel => 'Atšaukti';
 
   @override
   String get caseObject => 'Galima';

@@ -30,21 +30,21 @@ dart run sqflite_common_ffi_web:setup --dir web
 
 ## 기능 (Features)
 
-### MODE 1: 입력 (Input)
-- 🎤 **음성 인식**: 모국어로 말하기 (80개 언어 지원)
-- 🔄 **번역**: 실시간 번역 및 중복 감지
-- 🔀 **모드 전환**: **단어 / 문장** 토글을 통한 입력 모드 변경
-- 🔊 **TTS**: 번역된 텍스트 듣기
-- 💾 **저장**: 학습 기록으로 저장
+### MODE 1: 심플 입력 (Simplified Input)
+- 🎤 **스마트 입력**: 마이크(음성) 또는 키보드(텍스트) 아이콘으로 즉시 시작
+- 🔄 **자동 분석**: 입력된 텍스트의 종류(단어/문장)와 언어를 자동 감지
+- 📊 **실시간 설정**: 입력 중 하단에 나타나는 영역에서 자료집, 태그, 상황 메모를 즉시 지정
+- 🔊 **TTS**: 번역된 텍스트 듣기 (원어민 발음)
+- 💾 **저장**: 나만의 학습 기록으로 즉시 추가
 
-* **Voice Recognition**: Speak in your native language (supports 80 languages)
-* **Translation**: Real-time translation & duplicate detection
-* **Toggle Mode**: Switch between **Word / Sentence** input modes
-* **TTS**: Listen to translated text
-* **Save**: Save as study records
+* **Smart Input**: Start instantly via Mic or Keyboard icons on the home screen
+* **Auto-Analysis**: Automatically detects input type (Word/Sentence) and language
+* **Real-time Settings**: Configure material sets, tags, and context notes on the fly
+* **TTS**: Listen to translated text with native pronunciation
+* **Save**: Instantly add to your peronalized study list
 
 ### MODE 2: 복습 (Review)
-- ↔️ **스와이프 전환**: 화면을 밀어 모드 간 자유로운 이동
+- 📱 **하단 네비게이션**: 탭 바를 통한 직관적인 모드 이동
 - 📚 **학습 자료 관리**: 상단 앱바의 **구름(Cloud) 아이콘**으로 온라인 자료실 접근
 - 📖 **복습 모드**: 저장된 문장 복습 및 카드 뒤집기
 - 🔊 **TTS 재생**: 원문 및 번역문 듣기
@@ -98,11 +98,11 @@ dart run sqflite_common_ffi_web:setup --dir web
 
 ## 최근 업데이트 (Recent Updates - 2026-03-03)
 
-- **온라인 자료실 자동 현지화 시스템 (v16.1.0)**: 사용자의 모국어 설정에 맞춰 자료집 제목(예: Nouns 1 -> 명사 1)이 백그라운드에서 자동으로 복구 및 매핑되도록 무결성을 대폭 개선했습니다. 과거 자료와의 정합성 보장 및 다운로드 시 발생하는 제목 덮어쓰기 치명적 결함을 전면 수정했습니다. (2026-03-03)
-- **출시 준비 및 국제화 (v14.6+, Phase 31)**: `ParticipantManageScreen` 및 `ChatScreen`의 하드코딩 문자열을 l10n으로 교체하여 4개 국어(KO, EN, ES, JA) 대응을 완료했습니다.
-- **도움말 현행화**: `HelpDialog`의 안내 문구와 JSON 예제를 최신 데이터 규격(ID 기반 매핑 등)에 맞게 갱신했습니다.
-- **데이터 무결성 복구 (v14.6, Phase 28-30)**: 대화 저장 시 제목 오류, 본문 유실, 참가자 증식 문제를 ID 기반 매핑 체계 도입으로 근본적으로 해결했습니다. (2026-02-21)
-- **CI/CD 빌드 정상화**: GitHub Actions 빌드 실패 원인이었던 소스 누락 및 의존성 오류를 해결했습니다. (2026-02-21)
+- **메인 화면 리모델링 및 심플 모드 도입 (2026-03-10)**: 탭 전환 구조를 하단 네비게이션으로 변경하고, 불필요한 설정을 숨긴 '심플 입력' 모드를 도입하여 사용성을 극대화했습니다.
+- **언어 표기 지능화**: 설정 메뉴에서 언어 이름을 "한국어", "영어(English)"와 같이 모국어와 학습어의 특성에 맞춰 병기하도록 개선했습니다.
+- **안내 배너 개선**: 메인 화면 상단에 파란색 테마의 가이드 배너를 추가하여 앱의 핵심 가치를 명확히 전달합니다.
+- **데이터베이스 최적화**: 리모델링 이후에도 기존 데이터와의 호환성을 완벽히 유지하며, 단일화된 구조로 성능을 최적화했습니다.
+- **온라인 자료실 자동 현지화 시스템 (v16.1.0)**: 사용자의 모국어 설정에 맞춰 자료집 제목(예: Nouns 1 -> 명사 1)이 백그라운드에서 자동으로 복구 및 매핑되도록 무결성을 대폭 개선했습니다.
 
 
 
@@ -219,7 +219,7 @@ lib/
 │   ├── chat_screen.dart         # AI Chat Room
 │   └── chat_history_screen.dart # AI Chat History (Mode 4 Entry)
 ├── widgets/
-│   ├── mode1_widget.dart        # MODE 1: Search UI
+│   ├── simplified_input_widget.dart # MODE 1: Simplified Input UI
 │   ├── mode2_widget.dart        # MODE 2: Study Material & Review UI
 │   ├── mode3_widget.dart        # MODE 3: Speaking Practice UI
 │   └── help_dialog.dart         # Help Dialog

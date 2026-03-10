@@ -1,5 +1,16 @@
 {
   "@@locale": "gl",
+  "basicWords": "Repositorio básico de palabras",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Idioma de entrada",
+  "translationLanguage": "Idioma de tradución",
+  "simplifiedGuidance": "Transforma conversas cotiás en idiomas estranxeiros ao instante! Talkie rexistra a túa vida lingüística.",
+  "cancel": "Cancelar",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Precisión",
   "ttsMissing": "Non hai o motor de voz para este idioma instalado no teu dispositivo.",
   "ttsInstallGuide": "Por favor, instala os datos do idioma en Configuración de Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Repositorio básico de palabras",
-  "basicWords": "Repositorio básico de palabras",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Cancelar",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Obxectivo",
   "casePossessive": "Posesivo",
   "casePossessivePronoun": "Pronome posesivo",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Diálogo",
   "helpJsonTypeSentence": "Frase",
   "helpJsonTypeWord": "Palabra",
-  "helpMode1Desc": "Recoñece a voz para traducir e permite escoitar os resultados.",
-  "helpMode1Details": "• Axustes de idioma: toca as iconas superior/inferior para cambiar o idioma\n• Alternar palabra/frase: cambiar de modo\n• Entrada de voz: toca a icona do micrófono para comezar/deter a escoita\n• Entrada de texto: escribe directamente para traducir\n• Busca automática: detecta frases existentes similares\n• Tradución: toca o botón de tradución para traducir inmediatamente\n• Escoitar: reprodución de TTS mediante a icona do altofalante\n• Gardar: engade rexistros con «Gardar datos»\n• Borrar: inicializa a entrada",
+  "helpMode1Details": "• Configuración de idioma: cambia o meu idioma e o idioma de aprendizaxe a través do menú da barra de aplicacións ou o botón de idioma na parte inferior\n• Entrada sinxela: análise automática (palabra/frase) e activación da área de configuración ao introducir texto\n• Micrófono/teclado: inicia o recoñecemento de voz ou a entrada de texto coa icona grande na pantalla principal\n• Configuración detallada: especifica coleccións de datos, etiquetas e notas de situación na área inferior que aparece durante a entrada\n• Busca automática: detección en tempo real de traducións existentes similares\n• Escoitar: reproduce a pronuncia nativa (TTS) coa icona do altofalante\n• Gardar: engade inmediatamente á túa propia lista de aprendizaxe con 'Gardar datos'",
   "helpMode2Desc": "Repasa as frases gardadas e comproba se as memorizaches coa función de ocultación automática.",
   "helpMode2Details": "• Selección de material: Usa o menú (⋮) na parte superior dereita para 'Seleccionar material de estudo' ou 'Biblioteca en liña'.\n• Virar tarxeta: Comproba a tradución con 'Mostrar/Ocultar'.\n• Escoitar: Reproduce a pronuncia co ícone do altofalante.\n• Aprendizaxe completa: Marca cun símbolo de verificación (V) para completar a aprendizaxe.\n• Eliminar: Mantén presionada a tarxeta (clic longo) para eliminar o rexistro.\n• Busca e filtro: Admite a barra de busca (busca intelixente en tempo real) e as etiquetas, filtro de letra inicial.",
   "helpMode3Desc": "Escoita a frase e practica a pronunciación repetíndoa (Shadowing).",
   "helpMode3Details": "• Selección de material: selecciona o libro de traballo para aprender\n• Axuste do intervalo: axusta o tempo de espera entre frases cos botóns [-] [+]. (3 segundos ~ 60 segundos)\n• Comezar/Deter: controlar a sesión de shadowing\n• Falar: escoitar a voz e repetir\n• Comentarios: puntuación de precisión (0-100) e visualización de cor\n• Criterios de busca: filtrar os obxectivos da práctica por etiquetas, elementos recentes, letra inicial",
   "helpModeChatDesc": "Practica a conversación real falando cunha personaxe de IA.",
-  "helpModeChatDetails": "• Chat de IA: fala no teu idioma para practicar a conversa\n• Multi-persoa: podes cambiar o sexo/idioma/nome da outra persoa co menú sobre a burbulla de diálogo\n• Engadir socio: engade un novo compañeiro de conversa (estranxeiro) co botón +\n• GPS: situación baseada na localización actual\n• Gardado automático: tradución e gardado automático do contido da conversa",
+  "helpModeChatDetails": "• Chat de IA: practica conversas reais con personaxes no menú 'Chat' na barra de pestanas inferior\n• Configuración de personaxe: especifica libremente o xénero, o nome e o código de idioma da outra persoa\n• Escenas de GPS: recoñece a miña localización actual e recomenda temas de conversa axeitados para o lugar\n• Dous idiomas: as respostas da IA móstranse coa tradución para maximizar o efecto da aprendizaxe\n• Xestión de rexistros: filtra o historial de conversas pasadas e garda mensaxes específicas das conversas como material de aprendizaxe",
   "helpTabJson": "Formato JSON",
   "helpTabModes": "Descrición dos modos",
   "helpTabTour": "Visita guiada",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Defensa de palabras",
   "wordModeLabel": "Modo palabra",
   "yourPronunciation": "A túa pronuncia",
-  "ttsUnsupportedNatively": "A configuración predeterminada deste dispositivo non admite a saída de voz neste idioma."
-,
+  "ttsUnsupportedNatively": "A configuración predeterminada deste dispositivo non admite a saída de voz neste idioma.",
   "welcomeTitle": "Benvido a Talkie!",
   "welcomeDesc": "Talkie admite máis de 80 idiomas e é unha ferramenta intelixente para viaxeiros. Mellora a túa fala co chat de IA!",
   "welcomeButton": "Comezar"

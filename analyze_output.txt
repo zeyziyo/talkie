@@ -1,2 +1,5 @@
 Analyzing talkie...                                             
-No issues found! (ran in 2.7s)
+
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\widgets\simplified_input_widget.dart:517:7 - deprecated_member_use
+
+1 issue found. (ran in 2.8s)

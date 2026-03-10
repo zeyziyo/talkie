@@ -1,5 +1,16 @@
 {
   "@@locale": "az",
+  "basicWords": "Əsas Söz Deposu",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Giriş dili",
+  "translationLanguage": "Tərcümə dili",
+  "simplifiedGuidance": "Gündəlik söhbətləri anında xarici dilə çevirin! Talkie dil həyatınızı qeyd edir.",
+  "cancel": "Ləğv Et",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Dəqiqlik",
   "ttsMissing": "Bu dil üçün mətn-nitq mühərriki cihazda quraşdırılmayıb.",
   "ttsInstallGuide": "Zəhmət olmasa, Android Parametrləri > Google TTS bölməsindən müvafiq dil məlumatlarını quraşdırın.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Əsas Söz Deposu",
-  "basicWords": "Əsas Söz Deposu",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Ləğv Et",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Obyekt",
   "casePossessive": "Yiyəlik",
   "casePossessivePronoun": "Yiyəlik Əvəzlik",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Dialoq",
   "helpJsonTypeSentence": "Cümlə",
   "helpJsonTypeWord": "Söz",
-  "helpMode1Desc": "Səsi tanıyaraq tərcümə edin və nəticələrə qulaq asa bilərsiniz.",
-  "helpMode1Details": "• Dil seçimi: Yuxarı/aşağı işarələrə basaraq dili dəyişdirin\n• Söz/cümlə keçidi: Rejimi dəyişdirin\n• Səsli giriş: Dinləməyə başlamaq/dayandırmaq üçün mikrofon işarəsinə basın\n• Mətn girişi: Birbaşa daxil edərək tərcümə edin\n• Avtomatik axtarış: Bənzər mövcud cümlələri aşkar edin\n• Tərcümə: Dərhal tərcümə etmək üçün tərcümə düyməsinə basın\n• Dinləmə: TTS-i səsləndirmək üçün dinamik işarəsi\n• Saxlama: 'Məlumatları Saxla' ilə qeyd əlavə edin\n• Təmizləmə: Girişi sıfırlayın",
+  "helpMode1Details": "• Dil seçimi: Tətbiq menyusu və ya aşağıdakı dil düymələri ilə öz dilinizi və öyrənmək istədiyiniz dili dəyişdirin\n• Sadə giriş: Mətn daxil edildikdə avtomatik analiz (söz / cümlə) və tənzimləmə sahəsinin aktivləşdirilməsi\n• Mikrofon / klaviatura: Əsas ekrandakı böyük işarə ilə səs tanıma və ya mətn daxil etməyə başlayın\n• Ətraflı parametrlər: Giriş zamanı görünən aşağı sahədə məlumat kitabçası, etiket və vəziyyət qeydlərini təyin edin\n• Avtomatik axtarış: Oxşar mövcud tərcümələrin real vaxtda aşkarlanması\n• Dinləmək: Dinamik işarəsi ilə ana dilində tələffüzün (TTS) oxunması\n• Saxlamaq: 'Məlumatları saxla' ilə dərhal öz öyrənmə siyahınıza əlavə edin",
   "helpMode2Desc": "Saxlanılan cümlələri nəzərdən keçirin və avtomatik gizlətmə funksiyası ilə əzbərləməyi yoxlayın.",
   "helpMode2Details": "• Material seçimi: Sağ üst menyudan (⋮) 'Tədris materialı seçimi' və ya 'Onlayn material kitabxanası' istifadə edin\n• Kartı çevirmək: 'Göstər/Gizlət' vasitəsilə tərcüməni yoxlayın\n• Dinləmək: Dinləmək üçün dinamik işarəsinə toxunun\n• Tədrisi bitirmək: Tədrisi bitirmək üçün onay işarəsinə(V) toxunun\n• Silmək: Qeydləri silmək üçün karta uzun basın\n• Axtarış və filtrləmə: Axtarış paneli (real vaxt ağıllı axtarış) və etiket, başlanğıc hərf filtrləri dəstəklənir",
   "helpMode3Desc": "Cümlələri dinləyərək və təkrarlayaraq (kölgələmə) tələffüzünüzü məşq edin.",
   "helpMode3Details": "• Material seçimi: Öyrənmək üçün material toplusunu seçin\n• İnterval təyin edin: [-] [+] düymələri ilə cümlələr arasındakı gözləmə müddətini tənzimləyin (3 saniyə ~ 60 saniyə)\n• Başlat/Dayandır: Kölgələmə seansını idarə edin\n• Danışmaq: Səsi dinləyin və təkrarlayın\n• Rəy: Dəqiqlik balı (0-100) və rəngli ekran\n• Axtarış şərtləri: Etiket, son elementlər, başlanğıc hərflərlə məşq hədəfini filtrləyin",
   "helpModeChatDesc": "Süni intellekt personajı ilə danışaraq real söhbət bacarıqlarınızı məşq edin.",
-  "helpModeChatDetails": "• AI Söhbət: Dilinizdə danışaraq söhbət bacarıqlarınızı məşq edin\n• Çoxlu personaj: Nitq balonunun yuxarısındakı menyu ilə qarşı tərəfin cinsini/dilini/adını dəyişdirə bilərsiniz\n• Tərəfdaş əlavə edin: + düyməsi ilə yeni söhbət ortağı (Yad) əlavə edin\n• GPS: Mövcud yerə əsaslanan teatrlaşdırılmış vəziyyət\n• Avtomatik saxla: Söhbət məzmununun avtomatik tərcüməsi və saxlanılması",
+  "helpModeChatDetails": "• Süni intellekt söhbəti: Aşağıdakı tab paneli menyusundakı 'Söhbət' menyusunda şəxsiyyətinizlə real söhbət təcrübəsi\n• Şəxsiyyət tənzimləməsi: Qarşı tərəfin cinsiyyətini, adını və dil kodunu sərbəst şəkildə təyin edin\n• GPS vəziyyət oyunu: Cari yerinizi tanıyaraq yerə uyğun söhbət mövzularını tövsiyə edin\n• İkidilli: Süni intellektin cavabı tərcümə ilə birlikdə göstərilir və öyrənmə effektini maksimuma çatdırır\n• Qeyd idarəetmə: Keçmiş söhbət tarixçəsini filtrləmə və söhbət zamanı müəyyən mesajları öyrənmə materialı kimi saxlama",
   "helpTabJson": "JSON Formatı",
   "helpTabModes": "Rejim Açıqlaması",
   "helpTabTour": "Sınaqdan Keç",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Söz Müdafiəsi",
   "wordModeLabel": "Söz Rejimi",
   "yourPronunciation": "Mənim Tələffüzüm",
-  "ttsUnsupportedNatively": "Bu cihazda bu dil üçün doğma səs dəstəyi yoxdur."
-,
+  "ttsUnsupportedNatively": "Bu cihazda bu dil üçün doğma səs dəstəyi yoxdur.",
   "welcomeTitle": "Talkie-yə xoş gəlmisiniz!",
   "welcomeDesc": "Talkie 80-dən çox dili dəstəkləyir və səyahətçilər üçün ağıllı tərcümə və söhbət öyrənmə vasitəsidir. AI Chat ilə danışıq bacarıqlarınızı artırın!",
   "welcomeButton": "Başla"

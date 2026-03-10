@@ -9,6 +9,22 @@ class AppLocalizationsPa extends AppLocalizations {
   AppLocalizationsPa([String locale = 'pa']) : super(locale);
 
   @override
+  String get basicWords => 'ਮੂਲ ਸ਼ਬਦ ਰਿਪੋਜ਼ਟਰੀ';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'ਰੱਦ ਕਰੋ';
+
+  @override
   String get accuracy => 'ਸ਼ੁੱਧਤਾ';
 
   @override
@@ -58,12 +74,6 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'ਮੁਢਲੇ ਸ਼ਬਦ ਭੰਡਾਰ';
-
-  @override
-  String get basicWords => 'ਮੂਲ ਸ਼ਬਦ ਰਿਪੋਜ਼ਟਰੀ';
-
-  @override
-  String get cancel => 'ਰੱਦ ਕਰੋ';
 
   @override
   String get caseObject => 'ਕਰਮ ਕਾਰਕ';

@@ -1,5 +1,16 @@
 {
   "@@locale": "da",
+  "basicWords": "Grundlæggende ordlager",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Inputsprog",
+  "translationLanguage": "Oversættelsessprog",
+  "simplifiedGuidance": "Konverter øjeblikkeligt hverdagsagtaler til fremmedsprog! Talkie registrerer dit sprog liv.",
+  "cancel": "Annuller",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Nøjagtighed",
   "ttsMissing": "Lydmotoren for dette sprog er ikke installeret på din enhed.",
   "ttsInstallGuide": "Installer sprogdataene under Android-indstillinger > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Grundlæggende ordarkiv",
-  "basicWords": "Grundlæggende ordlager",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Annuller",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Akkusativ",
   "casePossessive": "Genitiv",
   "casePossessivePronoun": "Possessivt pronomen",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Dialog (Dialogue)",
   "helpJsonTypeSentence": "Sætning (Sentence)",
   "helpJsonTypeWord": "Ord (Word)",
-  "helpMode1Desc": "Talegenkendelse, oversættelse og lyt til resultat.",
-  "helpMode1Details": "• Stemme: Tryk mikrofon for start/stop\n• Tekst: Skriv direkte for at oversætte\n• Auto-Søg: Finder lignende sætninger\n• Oversæt: Knap for øjeblikkelig oversættelse\n• Lyt: Højttalerikon for TTS\n• Gem: Tilføjer til historik\n• Ryd: Nulstil alt",
+  "helpMode1Details": "• Sprogindstillinger: Skift mit sprog og læringssprog med app-bar-menuen eller den nederste sprogknap\n• Enkel input: Analyserer automatisk (ord/sætning) og aktiverer indstillingsområdet, når du indtaster tekst\n• Mikrofon/tastatur: Start stemmegenkendelse eller tekstinput med det store ikon på hovedskærmen\n• Detaljerede indstillinger: Angiv databog, tag og situationsnotat i det nederste område, der vises under input\n• Automatisk søgning: Registrerer lignende eksisterende oversættelser i realtid\n• Lyt: Afspil indfødt udtale (TTS) med højttalerikonet\n• Gem: Tilføj straks til din egen læringsliste med 'Gem data'",
   "helpMode2Desc": "Gennemgå gemte sætninger med skjult oversættelse.",
   "helpMode2Details": "• Vælg materialesamling: Brug 'Vælg studiesamling' eller 'Online materialerum' i menuen (⋮) øverst til højre\n• Vend kort: Tjek oversættelsen med 'Vis/Skjul'\n• Lyt: Afspil udtale med højttalerikonet\n• Læring fuldført: Marker som fuldført med et flueben (V)\n• Slet: Slet poster ved at trykke længe på kortet (Langt klik)\n• Søg og filtrer: Understøtter søgefelt (smart realtidssøgning) og tags, startbogstavfilter",
   "helpMode3Desc": "Øv din udtale ved at lytte til sætninger og gentage dem (Shadowing).",
   "helpMode3Details": "• Vælg: Vælg pakke\n• Interval: [-] [+] ventetid (3s-60s)\n• Start/Stop: Kontroller session\n• Tal: Lyt og gentag\n• Score: Nøjagtighed (0-100)\n• Prøv igen: Knap hvis stemme ej fundet",
   "helpModeChatDesc": "Øv dig i praktisk samtale ved at tale med en AI-persona.",
-  "helpModeChatDetails": "• AI-chat: Øv dig i samtaler med en persona.\n• Deltagerstyring: Indstil dine sprog og AI's sprog separat for at undgå sprogforskelle.\n• GPS-rollespil: Skab naturlige samtalesituationer baseret på din nuværende placering.\n• Logføring: Alle samtaler gemmes sikkert baseret på ID, og loggen bevares, selvom du ændrer navn.",
+  "helpModeChatDetails": "• AI-chat: Øv dig i praktiske samtaler med personaen i menuen 'Chat' på den nederste fanebjælke\n• Personaindstillinger: Angiv frit den anden parts køn, navn og sprogkode\n• GPS-situationsdrama: Genkender min nuværende placering og anbefaler samtaleemner, der passer til stedet\n• 2 sprog: AI's svar vises med oversættelse for at maksimere læringseffekten\n• Record management: Filtrering af tidligere samtalelogg og lagring af specifikke beskeder i samtale som læringsmateriale",
   "helpTabJson": "JSON-format",
   "helpTabModes": "Tilstande",
   "helpTabTour": "Tur",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Ord-forsvar",
   "wordModeLabel": "Ordtilstand",
   "yourPronunciation": "Din udtale",
-  "ttsUnsupportedNatively": "Denne enheds standardindstillinger understøtter ikke tekst-til-tale for dette sprog."
-,
+  "ttsUnsupportedNatively": "Denne enheds standardindstillinger understøtter ikke tekst-til-tale for dette sprog.",
   "welcomeTitle": "Velkommen til Talkie!",
   "welcomeDesc": "Talkie understøtter over 80 sprog og er et smart værktøj til oversættelse for rejsende. Forbedr dine talefærdigheder med AI-chat!",
   "welcomeButton": "Kom i gang"

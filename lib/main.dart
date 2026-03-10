@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'providers/app_state.dart';
+import 'providers/simplified_app_state.dart';
 import 'screens/home_screen.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -106,8 +107,11 @@ class TalkieApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => AppState(prefs),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => AppState(prefs)),
+        ChangeNotifierProvider(create: (context) => SimplifiedAppState()),
+      ],
       child: Consumer<AppState>(
         builder: (context, appState, child) {
           return MaterialApp(

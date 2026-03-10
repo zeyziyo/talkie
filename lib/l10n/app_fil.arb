@@ -1,5 +1,16 @@
 {
   "@@locale": "fil",
+  "basicWords": "Basic na Repository ng mga Salita",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Wika ng Pagpasok",
+  "translationLanguage": "Wika ng Pagsasalin",
+  "simplifiedGuidance": "Agad na baguhin ang pang-araw-araw na pag-uusap sa isang banyagang wika! Itinatala ng Talkie ang iyong buhay pang-wika.",
+  "cancel": "Kanselahin",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Katumpakan",
   "ttsMissing": "Wala pang voice engine para sa wikang ito na naka-install sa device.",
   "ttsInstallGuide": "Pumunta sa Android Settings > Google TTS para i-install ang language data.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Repository ng Mga Pangunahing Salita",
-  "basicWords": "Basic na Repository ng mga Salita",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Kanselahin",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Layon",
   "casePossessive": "Pang-angkin",
   "casePossessivePronoun": "Panghalip na Pang-angkin",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Dayalogo (Dialogue)",
   "helpJsonTypeSentence": "Pangungusap (Sentence)",
   "helpJsonTypeWord": "Salita (Word)",
-  "helpMode1Desc": "Kilalanin ang boses, isalin at pakinggan ang resulta.",
-  "helpMode1Details": "• Boses: I-tap ang mikropono para magsimula/huminto\n• Teksto: Mag-type nang direkta para isalin\n• Auto-Search: Nakikita ang mga katulad na pangungusap\n• Isalin: Pindutan para sa agarang pagsasalin\n• Makinig: Speaker icon para sa TTS\n• I-save: Nagdaragdag sa kasaysayan\n• I-clear: I-reset ang lahat",
+  "helpMode1Details": "• Pagtatakda ng Wika: Baguhin ang aking wika at wika ng pag-aaral sa pamamagitan ng menu ng app bar o button ng wika sa ibaba\n• Simpleng Input: Awtomatikong pag-aanalisa (salita/pangungusap) kapag nag-input ng teksto at pag-activate ng lugar ng pagtatakda\n• Mikropono/Keyboard: Magsimula ng pagkilala ng boses o pag-input ng teksto gamit ang malaking icon sa pangunahing screen\n• Detalyadong Pagtatakda: Tukuyin ang materyales, tag, at sitwasyon ng memo sa ibabang lugar na lumilitaw habang nag-i-input\n• Awtomatikong Paghahanap: Real-time na pagtuklas ng mga katulad na umiiral nang pagsasalin\n• Pakikinig: Pag-playback ng pagbigkas ng katutubong nagsasalita (TTS) gamit ang icon ng speaker\n• Pag-iimbak: Agad na idagdag sa iyong sariling listahan ng pag-aaral gamit ang 'Pag-iimbak ng Data'",
   "helpMode2Desc": "Balik-aralan ang mga na-save na pangungusap.",
   "helpMode2Details": "• Pumili ng set ng aralin: Gamitin ang 'Pumili ng set ng aralin' o 'Online Library' sa menu (⋮) sa kanang itaas\n• Baliktarin ang card: Kumpirmahin ang pagsasalin gamit ang 'Ipakita/Itago'\n• Pakinggan: I-play ang pagbigkas gamit ang icon ng speaker\n• Tapos na ang pag-aaral: Markahan bilang tapos na ang pag-aaral gamit ang check (V)\n• Tanggalin: Pindutin nang matagal (Long Click) ang card para tanggalin ang tala\n• Paghahanap at Filter: Suportado ang search bar (real-time smart search) at mga tag, mga filter ng panimulang letra",
   "helpMode3Desc": "Makinig at gayahin ang mga pangungusap (Shadowing) upang magsanay ng iyong pagbigkas.",
   "helpMode3Details": "• Pumili: Pumili ng package\n• Agwat: [-] [+] oras ng paghihintay (3s-60s)\n• Simulan/Itigil: Kontrolin ang sesyon\n• Magsalita: Makinig at ulitin\n• Marka: Kawastuhan (0-100)\n• Subukan muli: Button kung hindi makita ang boses",
   "helpModeChatDesc": "Magsanay ng totoong pag-uusap sa pamamagitan ng pakikipag-usap sa isang AI persona.",
-  "helpModeChatDetails": "• AI Chat: Magsanay ng mga totoong pag-uusap gamit ang mga persona.\n• Pamamahala ng Kalahok: Itakda ang iyong wika at ang wika ng AI upang maiwasan ang hindi pagkakatugma ng wika.\n• GPS Roleplay: Lumikha ng mga natural na sitwasyon sa pag-uusap batay sa iyong kasalukuyang lokasyon.\n• Pagpapanatili ng Kasaysayan: Ang lahat ng pag-uusap ay ligtas na naka-save batay sa ID, at ang kasaysayan ay nananatili kahit na palitan mo ang pangalan.",
+  "helpModeChatDetails": "• AI Chat: Magsanay ng tunay na pag-uusap sa isang persona sa menu na 'Chat' sa tab bar sa ibaba\n• Pagtatakda ng Persona: Malayang tukuyin ang kasarian, pangalan, at code ng wika ng kabilang partido\n• GPS Sitwasyon: Kilalanin ang aking kasalukuyang lokasyon at magrekomenda ng mga paksa ng pag-uusap na angkop para sa lugar\n• Dalawang Wika: Ang mga sagot ng AI ay ipinapakita kasama ang pagsasalin upang i-maximize ang epekto ng pag-aaral\n• Pamamahala ng Talaan: Pagsala ng nakaraang kasaysayan ng pag-uusap at pag-iimbak ng mga partikular na mensahe sa pag-uusap bilang mga materyales sa pag-aaral",
   "helpTabJson": "JSON Format",
   "helpTabModes": "Mga Mode",
   "helpTabTour": "Pasyal",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Word Defense",
   "wordModeLabel": "Word Mode",
   "yourPronunciation": "Ang iyong Pagbigkas",
-  "ttsUnsupportedNatively": "Hindi sinusuportahan ng mga default na setting ng device na ito ang voice output sa wikang ito."
-,
+  "ttsUnsupportedNatively": "Hindi sinusuportahan ng mga default na setting ng device na ito ang voice output sa wikang ito.",
   "welcomeTitle": "Maligayang pagdating sa Talkie!",
   "welcomeDesc": "Sinusuportahan ng Talkie ang mahigit 80 wika at isang matalinong tool para sa mga manlalakbay. Pagbutihin ang iyong pagsasalita gamit ang AI Chat!",
   "welcomeButton": "Magsimula"

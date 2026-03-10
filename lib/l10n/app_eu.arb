@@ -1,5 +1,16 @@
 {
   "@@locale": "eu",
+  "basicWords": "Oinarrizko hitz biltegia",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Sarrerako hizkuntza",
+  "translationLanguage": "Itzulpen-hizkuntza",
+  "simplifiedGuidance": "Eguneroko elkarrizketak atzerriko hizkuntzetara berehala bihurtu! Talkiek zure hizkuntza-bizitza erregistratzen du.",
+  "cancel": "Ezeztatu",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Zehaztasuna",
   "ttsMissing": "Hizkuntza honetarako ahots-motorra ez dago zure gailuan instalatuta.",
   "ttsInstallGuide": "Instalatu hizkuntza-datuak Android ezarpenak > Google TTS atalean.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Oinarrizko hitz biltegia",
-  "basicWords": "Oinarrizko hitz biltegia",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Ezeztatu",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Objektua",
   "casePossessive": "Jabetza",
   "casePossessivePronoun": "Jabetza-izenordaina",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Elkarrizketa",
   "helpJsonTypeSentence": "Esaldi",
   "helpJsonTypeWord": "Hitz",
-  "helpMode1Desc": "Ahotsa ezagutuz itzultzen du eta emaitzak entzun ditzakezu.",
-  "helpMode1Details": "• Hizkuntza ezarpena: aldatu hizkuntza goiko/beheko ikonoak sakatuta\n• Hitz/Esaldia txandakatu: aldatu modua\n• Ahots sarrera: sakatu mikrofonoaren ikonoa entzuten hasteko/gelditzeko\n• Testu sarrera: idatzi zuzenean itzultzeko\n• Bilaketa automatikoa: antzeko esaldiak detektatu\n• Itzulpena: sakatu itzultzeko botoia berehala itzultzeko\n• Entzun: TTS erreprodukzioa bozgorailuaren ikonoarekin\n• Gorde: gehitu erregistro bat 'Datuak gorde'rekin\n• Garbitu: hasieratu sarrera",
+  "helpMode1Details": "• Hizkuntza-ezarpenak: aldatu nire hizkuntza eta ikaskuntza-hizkuntza aplikazioaren barrako menuan edo beheko hizkuntza-botoian\n• Sarrera sinplea: testua sartzean automatikoki aztertzen da (hitza/esaldia) eta ezarpen-eremua aktibatzen da\n• Mikrofonoa/Teklatua: hasi ahots-ezagutza edo testu-sarrera pantaila nagusiko ikono handiarekin\n• Ezarpen zehatzak: zehaztu material-bilduma, etiketak eta egoera-oharrak sarreran agertzen den beheko eremuan\n• Bilaketa automatikoa: antzeko lehendik dauden itzulpenak denbora errealean detektatzen dira\n• Entzun: erreproduzitu jatorrizko hiztunaren ahoskera (TTS) bozgorailuaren ikonoarekin\n• Gorde: gehitu berehala zure ikaskuntza-zerrendara 'Datuak gorde' erabiliz",
   "helpMode2Desc": "Berrikusi gordetako esaldiak eta egiaztatu memorizatu duzun ala ez ezkutatzeko funtzio automatikoarekin.",
   "helpMode2Details": "• Materialak aukeratzea: Goiko eskuineko menuan (⋮) 'Ikasteko materialak aukeratu' edo 'Online material biltegia' erabili\n• Txartela itzuli: 'Erakutsi/Ezkutatu' erabiliz itzulpena egiaztatu\n• Entzun: Bozgorailuaren ikonoarekin ahoskera erreproduzitu\n• Ikasketa burutzea: Marka (V) batekin ikasketa burutzea adierazi\n• Ezabatu: Txartela luze sakatu (Klik luzea) erregistroa ezabatzeko\n• Bilatu eta iragazi: Bilaketa-barra (denbora errealeko bilaketa adimenduna) eta etiketak, hasierako letra iragazkiak onartzen dira",
   "helpMode3Desc": "Entzun esaldiak eta errepikatu (itzal eginez) ahoskera lantzeko.",
   "helpMode3Details": "• Materiala hautatu: ikasteko datu-multzoa hautatu\n• Tartea ezarri: doitu esaldien arteko itxaron-denbora [-] [+] botoiekin (3s-60s)\n• Hasi/Gelditu: itzal saioa kontrolatu\n• Hitz egin: entzun ahotsa eta errepikatu\n• Iradokizunak: zehaztasun puntuazioa (0-100) eta kolore-adierazpena\n• Bilaketa-baldintzak: etiketak, azken elementuak, hasierako letrarekin iragazi",
   "helpModeChatDesc": "Praktikatu elkarrizketak AI pertsonaiarekin hizketan.",
-  "helpModeChatDetails": "• AI txata: praktikatu elkarrizketa zure hizkuntzan hitz eginez\n• Pertsonaia anitz: aldatu beste pertsonaren generoa/hizkuntza/izena goiko menuarekin\n• Bazkidea gehitu: gehitu solaskide berri bat (+) botoiarekin (Ezezaguna)\n• GPS: uneko kokapenean oinarritutako antzezpena\n• Automatikoki gorde: elkarrizketa automatikoki itzuli eta gorde",
+  "helpModeChatDetails": "• AI txata: praktikatu elkarrizketa errealak pertsonaiekin beheko tabernako 'Txata' menuan\n• Pertsonaia-ezarpenak: zehaztu libreki beste pertsonaren generoa, izena eta hizkuntza-kodea\n• GPS egoera-komedia: gomendatu zure kokapenarekin bat datozen elkarrizketa-gaiak\n• 2 hizkuntza: AIren erantzuna itzulpenarekin batera bistaratzen da ikaskuntza-efektua maximizatzeko\n• Erregistro-kudeaketa: iraganeko elkarrizketen historia iragazi eta elkarrizketako mezu zehatzak ikaskuntza-material gisa gorde",
   "helpTabJson": "JSON formatua",
   "helpTabModes": "Moduen azalpena",
   "helpTabTour": "Esperimentatu",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Hitzen defentsa",
   "wordModeLabel": "Hitzen modua",
   "yourPronunciation": "Zure ahoskera",
-  "ttsUnsupportedNatively": "Gailu honen ezarpen lehenetsiek ez dute hizkuntza honetako ahots-irteerarik onartzen."
-,
+  "ttsUnsupportedNatively": "Gailu honen ezarpen lehenetsiek ez dute hizkuntza honetako ahots-irteerarik onartzen.",
   "welcomeTitle": "Ongi etorri Talkiera!",
   "welcomeDesc": "Talkie-k 80 hizkuntza baino gehiago onartzen ditu eta itzulpen-tresna adimentsua da. Hobetu zure mintzamena AI Chatekin!",
   "welcomeButton": "Hasi"

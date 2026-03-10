@@ -1,5 +1,16 @@
 {
   "@@locale": "cs",
+  "basicWords": "Základní úložiště slov",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Jazyk vstupu",
+  "translationLanguage": "Jazyk překladu",
+  "simplifiedGuidance": "Okamžitá konverze každodenních konverzací do cizího jazyka! Talkie zaznamenává váš jazykový život.",
+  "cancel": "Zrušit",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Přesnost",
   "ttsMissing": "Pro tento jazyk není v zařízení nainstalován hlasový modul.",
   "ttsInstallGuide": "Nainstalujte jazyková data v Nastavení Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Základní úložiště slov",
-  "basicWords": "Základní úložiště slov",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Zrušit",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Akuzativ",
   "casePossessive": "Genitiv",
   "casePossessivePronoun": "Přivlastňovací zájmeno",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Dialog",
   "helpJsonTypeSentence": "Věta",
   "helpJsonTypeWord": "Slovo",
-  "helpMode1Desc": "Rozpoznání hlasu, překlad a poslech výsledku.",
-  "helpMode1Details": "• Hlas: Klepněte na mikrofon pro start/stop\n• Text: Pište přímo pro překlad\n• Auto-Hledání: Detekuje podobné věty\n• Překlad: Tlačítko pro okamžitý překlad\n• Poslech: Ikona reproduktoru pro TTS\n• Uložit: Přidá do historie\n• Vymazat: Resetovat vše",
+  "helpMode1Details": "• Nastavení jazyka: Změňte svůj jazyk a jazyk, který se učíte, v nabídce aplikace nebo pomocí tlačítka jazyka ve spodní části\n• Jednoduché zadávání: Automatická analýza (slovo/věta) při zadávání textu a aktivace oblasti nastavení\n• Mikrofon/klávesnice: Spusťte rozpoznávání hlasu nebo zadávání textu pomocí velké ikony na hlavní obrazovce\n• Podrobné nastavení: Určete sbírku dat, značky, situační poznámky v dolní oblasti, která se objeví během zadávání\n• Automatické vyhledávání: Detekce podobných existujících překladů v reálném čase\n• Poslech: Přehrávání výslovnosti rodilého mluvčího (TTS) pomocí ikony reproduktoru\n• Uložit: Okamžité přidání do vašeho vlastního studijního seznamu pomocí 'Uložit data'",
   "helpMode2Desc": "Opakování uložených vět se skrytým překladem.",
   "helpMode2Details": "• Výběr sady: V nabídce (⋮) vpravo nahoře zvolte 'Vybrat sadu' nebo 'Online knihovna'\n• Otočení karty: Klepnutím na 'Zobrazit/Skrýt' zobrazíte překlad\n• Přehrávání: Klepnutím na ikonu reproduktoru přehrajete výslovnost\n• Dokončení studia: Zaškrtnutím (V) označíte jako dokončené\n• Smazání: Dlouhým podržením karty smažete záznam\n• Hledání a filtrování: Podpora vyhledávacího pole (inteligentní vyhledávání v reálném čase) a filtrů štítků a počátečních písmen",
   "helpMode3Desc": "Poslouchejte větu a opakujte ji (stínování) a procvičujte výslovnost.",
   "helpMode3Details": "• Výběr: Zvolte balíček\n• Interval: [-] [+] prodleva (3s-60s)\n• Start/Stop: Ovládání relace\n• Mluvit: Poslouchejte a opakujte\n• Skóre: Přesnost (0-100)\n• Znovu: Tlačítko opakování při nerozpoznání",
   "helpModeChatDesc": "Procvičujte si konverzaci s AI postavou.",
-  "helpModeChatDetails": "• AI Chat: Procvičujte si konverzace s personami.\n• Správa účastníků: Nastavte si jazyk svůj a jazyk AI, abyste zabránili neshodám v jazycích.\n• GPS hraní rolí: Vytvořte si přirozené konverzační situace na základě vaší aktuální polohy.\n• Uchovávání záznamů: Všechny konverzace jsou bezpečně uloženy na základě ID a záznamy zůstanou zachovány i po přejmenování.",
+  "helpModeChatDetails": "• AI Chat: Procvičujte si praktické konverzace s personou v nabídce 'Chat' na spodní liště karet\n• Nastavení persony: Volně zadejte pohlaví, jméno a jazykový kód druhé strany\n• GPS situační hra: Doporučuje témata konverzace, která jsou vhodná pro dané místo, rozpoznáním vaší aktuální polohy\n• Dva jazyky: Odpověď AI se zobrazuje s překladem, čímž se maximalizuje efekt učení\n• Správa záznamů: Filtrování minulých konverzací a ukládání konkrétních zpráv z konverzace jako studijních materiálů",
   "helpTabJson": "Formát JSON",
   "helpTabModes": "Režimy",
   "helpTabTour": "Prohlídka",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Slovní obrana",
   "wordModeLabel": "Režim slov",
   "yourPronunciation": "Vaše výslovnost",
-  "ttsUnsupportedNatively": "Tento jazyk není nativně podporován pro převod textu na řeč na tomto zařízení."
-,
+  "ttsUnsupportedNatively": "Tento jazyk není nativně podporován pro převod textu na řeč na tomto zařízení.",
   "welcomeTitle": "Vítejte v Talkie!",
   "welcomeDesc": "Talkie podporuje více než 80 jazyků a je chytrý nástroj pro překlad pro cestovatele. Zlepšete své řečové dovednosti pomocí AI chatu!",
   "welcomeButton": "Začít"

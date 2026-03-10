@@ -1,5 +1,16 @@
 {
   "@@locale": "af",
+  "basicWords": "Basiese woordebewaarplek",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Invoertaal",
+  "translationLanguage": "Vertalingstaal",
+  "simplifiedGuidance": "Skakel alledaagse gesprekke onmiddellik in vreemde tale om! Talkie teken jou taallewe aan.",
+  "cancel": "Kanselleer",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Akkuraatheid",
   "ttsMissing": "Die stem-enjin vir hierdie taal is nie op jou toestel geïnstalleer nie.",
   "ttsInstallGuide": "Installeer die taaldata in Android-instellings > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Basiese Woordbewaarplek",
-  "basicWords": "Basiese woordebewaarplek",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Kanselleer",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Akusatief",
   "casePossessive": "Possessief",
   "casePossessivePronoun": "Possessiewe voornaamwoord",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Dialoog",
   "helpJsonTypeSentence": "Sin",
   "helpJsonTypeWord": "Woord",
-  "helpMode1Desc": "Herken stem, vertaal en luister na resultaat.",
-  "helpMode1Details": "• Stem: Tik mikrofoon vir begin/stop\n• Teks: Tik direk om te vertaal\n• Outo-Soek: Bespeur soortgelyke sinne\n• Vertaal: Knoppie vir direkte vertaling\n• Luister: Luidspreker-ikoon vir TTS\n• Stoor: Voeg by geskiedenis\n• Maak skoon: Stel alles terug",
+  "helpMode1Details": "• Taalinstellings: Verander my taal en leer taal met die appbalkkieslys of onderste taalknoppie\n• Vereenvoudigde invoer: Ontleed outomaties (woord/sin) en aktiveer instellingsarea wanneer teks ingevoer word\n• Mikrofoon/sleutelbord: Begin stemherkenning of teksinvoer met die groot ikoon op die hoofskerm\n• Gedetailleerde instellings: Spesifiseer databronne, etikette en situasienotas in die onderste area wat tydens invoer verskyn\n• Outomatiese soektog: Bespeur soortgelyke bestaande vertalings intyds\n• Luister: Speel moedertaaluitspraak (TTS) met die luidsprekerikoon\n• Stoor: Voeg onmiddellik by jou eie leerlys met 'Data stoor'",
   "helpMode2Desc": "Hersien gestorde sinne met versteekte vertaling.",
   "helpMode2Details": "• Kies 'n bron: Gebruik 'Kies studiemateriaal' of 'Aanlyn biblioteek' in die kieslys (⋮) regs bo.\n• Draai kaart om: Bevestig vertaling met 'Wys/Versteek'.\n• Luister: Speel uitspraak met die luidspreker-ikoon.\n• Voltooi leer: Merk (V) om leer as voltooi te merk.\n• Vee uit: Vee rekords uit deur lank op die kaart te druk.\n• Soek en filtreer: Ondersteun soekbalk (intydse slim soektog) en merker- en beginletterfilters.",
   "helpMode3Desc": "Oefen jou uitspraak deur na sinne te luister en dit te herhaal (Skadu).",
   "helpMode3Details": "• Kies: Kies pakket\n• Interval: [-] [+] wagtyd (3s-60s)\n• Begin/Stop: Beheer sessie\n• Praat: Luister en herhaal\n• Telling: Akkuraatheid (0-100)\n• Probeer weer: Knoppie as stem nie bespeur word nie",
   "helpModeChatDesc": "Oefen werklike gesprekke deur met 'n KI-persona te gesels.",
-  "helpModeChatDetails": "• KI-klets: Oefen gesprekke met personas.\n• Deelnemerbestuur: Stel jou taal en KI se taal afsonderlik om taalverskille te vermy.\n• GPS-scenario's: Skep natuurlike gesprekscenario's gebaseer op jou huidige ligging.\n• Rekordbewaring: Alle gesprekke word veilig gestoor op grond van ID, en rekords word gehandhaaf, selfs al word die naam verander.",
+  "helpModeChatDetails": "• KI-gesels: Oefen werklike gesprekke met personas in die 'Gesels'-kieslys op die onderste oortjiebalk\n• Persona-instellings: Spesifiseer die ander persoon se geslag, naam en taalkode vrylik\n• GPS-situasiespel: Herken my huidige ligging en beveel gespreksonderwerpe aan wat by die plek pas\n• 2 tale: KI se antwoorde word saam met vertalings vertoon om die leereffek te maksimeer\n• Rekordbestuur: Filter vorige gespreksgeskiedenis en stoor spesifieke boodskappe tydens gesprekke as leermateriaal",
   "helpTabJson": "JSON Formaat",
   "helpTabModes": "Modusse",
   "helpTabTour": "Toer",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Woordverdediging",
   "wordModeLabel": "Woordmodus",
   "yourPronunciation": "Jou Uitspraak",
-  "ttsUnsupportedNatively": "Hierdie toestel ondersteun nie teks-na-spraak vir hierdie taal in sy verstekinstellings nie."
-,
+  "ttsUnsupportedNatively": "Hierdie toestel ondersteun nie teks-na-spraak vir hierdie taal in sy verstekinstellings nie.",
   "welcomeTitle": "Welkom by Talkie!",
   "welcomeDesc": "Talkie ondersteun meer as 80 tale en is 'n slim vertaal- en gesprek leerhulpmiddel vir reisigers en taalaanleerders. Verbeter jou praatvaardighede met KI-klets!",
   "welcomeButton": "Begin"

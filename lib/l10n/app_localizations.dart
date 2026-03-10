@@ -252,6 +252,36 @@ abstract class AppLocalizations {
     Locale('zu')
   ];
 
+  /// Default name for basic vocabulary material
+  ///
+  /// In ko, this message translates to:
+  /// **'기본 단어 저장소'**
+  String get basicWords;
+
+  /// No description provided for @inputLanguage.
+  ///
+  /// In ko, this message translates to:
+  /// **'입력 언어'**
+  String get inputLanguage;
+
+  /// No description provided for @translationLanguage.
+  ///
+  /// In ko, this message translates to:
+  /// **'번역 언어'**
+  String get translationLanguage;
+
+  /// No description provided for @simplifiedGuidance.
+  ///
+  /// In ko, this message translates to:
+  /// **'일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.'**
+  String get simplifiedGuidance;
+
+  /// Cancel button
+  ///
+  /// In ko, this message translates to:
+  /// **'취소'**
+  String get cancel;
+
   /// No description provided for @accuracy.
   ///
   /// In ko, this message translates to:
@@ -347,18 +377,6 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'기본 단어 저장소'**
   String get basicWordRepository;
-
-  /// Default name for basic vocabulary material
-  ///
-  /// In ko, this message translates to:
-  /// **'기본 단어 저장소'**
-  String get basicWords;
-
-  /// Cancel button
-  ///
-  /// In ko, this message translates to:
-  /// **'취소'**
-  String get cancel;
 
   /// No description provided for @caseObject.
   ///

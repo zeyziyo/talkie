@@ -1,5 +1,16 @@
 {
   "@@locale": "id",
+  "basicWords": "Repositori Kata Dasar",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Bahasa Input",
+  "translationLanguage": "Bahasa Terjemahan",
+  "simplifiedGuidance": "Ubah percakapan sehari-hari menjadi bahasa asing dalam sekejap! Talkie akan merekam kehidupan bahasa Anda.",
+  "cancel": "Batal",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Akurasi",
   "ttsMissing": "Mesin suara untuk bahasa ini belum terpasang di perangkat Anda.",
   "ttsInstallGuide": "Silakan pasang data bahasa yang sesuai di Setelan Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Repositori Kata Dasar",
-  "basicWords": "Repositori Kata Dasar",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Batal",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Kasus Objek",
   "casePossessive": "Kasus Kepemilikan",
   "casePossessivePronoun": "Kata Ganti Kepemilikan",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Dialog",
   "helpJsonTypeSentence": "Kalimat",
   "helpJsonTypeWord": "Kata",
-  "helpMode1Desc": "Kenali suara, terjemahkan, dan dengarkan hasilnya.",
-  "helpMode1Details": "• Input Suara: Ketuk ikon mikrofon untuk mulai/berhenti\n• Input Teks: Ketik langsung untuk menerjemahkan\n• Cari Otomatis: Mendeteksi kalimat serupa yang ada\n• Terjemahkan: Ketuk tombol untuk terjemahan instan\n• Dengar: Ikon speaker untuk TTS\n• Simpan: 'Simpan Data' menambahkan ke riwayat\n• Hapus: Atur ulang semua input",
+  "helpMode1Details": "• Pengaturan Bahasa: Ubah bahasa saya dan bahasa pembelajaran di menu bilah aplikasi atau tombol bahasa di bagian bawah\n• Input Sederhana: Analisis otomatis (kata/kalimat) dan aktivasi area pengaturan saat memasukkan teks\n• Mikrofon/Papan Ketik: Mulai pengenalan suara atau masukkan teks dengan ikon besar di layar utama\n• Pengaturan Detail: Tentukan buku sumber, tag, dan memo situasi di area bawah yang muncul selama input\n• Pencarian Otomatis: Deteksi terjemahan lama serupa secara real time\n• Dengarkan: Putar pengucapan penutur asli (TTS) dengan ikon speaker\n• Simpan: Tambahkan langsung ke daftar pembelajaran Anda sendiri dengan 'Simpan Data'",
   "helpMode2Desc": "Ulas kalimat tersimpan dengan terjemahan sembunyi otomatis.",
   "helpMode2Details": "• Pilih koleksi: Gunakan 'Pilih Koleksi Belajar' atau 'Perpustakaan Online' dari menu (⋮) di kanan atas\n• Balik Kartu: Periksa terjemahan dengan 'Tampilkan/Sembunyikan'\n• Dengarkan: Putar pengucapan dengan ikon speaker\n• Selesai Belajar: Tandai selesai dengan tanda centang (V)\n• Hapus: Tekan lama kartu untuk menghapus catatan\n• Cari dan Filter: Mendukung bilah pencarian (pencarian pintar waktu nyata) dan filter tag, huruf awal",
   "helpMode3Desc": "Berlatih pengucapan dengan mendengarkan dan menirukan kalimat (Shadowing).",
   "helpMode3Details": "• Pilih Materi: Pilih paket belajar\n• Interval: [-] [+] atur waktu tunggu (3d-60d)\n• Mulai/Berhenti: Kontrol sesi\n• Bicara: Dengar audio dan ulangi\n• Umpan Balik: Skor akurasi (0-100)\n• Coba Lagi: Gunakan tombol coba lagi jika suara tidak terdeteksi",
   "helpModeChatDesc": "Berlatih percakapan nyata dengan berinteraksi dengan persona AI.",
-  "helpModeChatDetails": "• Obrolan AI: Latih percakapan praktis dengan persona.\n• Manajemen peserta: Atur bahasa Anda dan bahasa AI untuk mencegah perbedaan bahasa.\n• Situasi GPS: Ciptakan situasi percakapan alami berdasarkan lokasi Anda saat ini.\n• Penyimpanan riwayat: Semua percakapan disimpan dengan aman berdasarkan ID, dan riwayat dipertahankan bahkan jika Anda mengubah nama.",
+  "helpModeChatDetails": "• Obrolan AI: Berlatih percakapan praktis dengan persona di menu 'Obrolan' di bilah tab bawah\n• Pengaturan Persona: Tentukan jenis kelamin, nama, dan kode bahasa lawan secara bebas\n• Situasi GPS: Mengenali lokasi saya saat ini dan merekomendasikan topik percakapan yang sesuai dengan tempat tersebut\n• 2 Bahasa: Jawaban AI ditampilkan dengan terjemahan untuk memaksimalkan efek pembelajaran\n• Manajemen Catatan: Saring riwayat percakapan sebelumnya dan simpan pesan tertentu dalam percakapan sebagai materi pembelajaran",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Mode",
   "helpTabTour": "Tur",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Pertahanan Kata",
   "wordModeLabel": "Mode Kata",
   "yourPronunciation": "Lafal Anda",
-  "ttsUnsupportedNatively": "Perangkat ini tidak mendukung output suara untuk bahasa ini secara bawaan."
-,
+  "ttsUnsupportedNatively": "Perangkat ini tidak mendukung output suara untuk bahasa ini secara bawaan.",
   "welcomeTitle": "Selamat datang di Talkie!",
   "welcomeDesc": "Talkie mendukung lebih dari 80 bahasa dan merupakan alat penerjemahan cerdas bagi para pelancong. Tingkatkan keterampilan berbicara Anda dengan AI Chat!",
   "welcomeButton": "Mulai"

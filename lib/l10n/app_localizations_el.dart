@@ -9,6 +9,22 @@ class AppLocalizationsEl extends AppLocalizations {
   AppLocalizationsEl([String locale = 'el']) : super(locale);
 
   @override
+  String get basicWords => 'Βασικό αποθετήριο λέξεων';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'Ακύρωση';
+
+  @override
   String get accuracy => 'Ακρίβεια';
 
   @override
@@ -57,12 +73,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'Βασικό Αποθετήριο Λέξεων';
-
-  @override
-  String get basicWords => 'Βασικό αποθετήριο λέξεων';
-
-  @override
-  String get cancel => 'Ακύρωση';
 
   @override
   String get caseObject => 'Αιτιατική';

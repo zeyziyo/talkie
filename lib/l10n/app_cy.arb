@@ -1,5 +1,16 @@
 {
   "@@locale": "cy",
+  "basicWords": "Storio geiriau sylfaenol",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Iaith Mewnbwn",
+  "translationLanguage": "Iaith Cyfieithu",
+  "simplifiedGuidance": "Trawsnewidiwch sgyrsiau bob dydd yn syth i iaith dramor! Bydd Talkie yn cofnodi eich bywyd iaith.",
+  "cancel": "Canslo",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Cywirdeb",
   "ttsMissing": "Nid yw injan lleferydd ar gyfer yr iaith hon wedi'i gosod ar eich dyfais.",
   "ttsInstallGuide": "Ewch i Gosodiadau Android > Google TTS a gosod data'r iaith honno.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Storio geiriau sylfaenol",
-  "basicWords": "Storio geiriau sylfaenol",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Canslo",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Gwrthrychol",
   "casePossessive": "Meddiannol",
   "casePossessivePronoun": "Rhagenw Meddiannol",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Deialog",
   "helpJsonTypeSentence": "Brawddeg",
   "helpJsonTypeWord": "Gair",
-  "helpMode1Desc": "Adnabod llais a chyfieithu, a gwrando ar y canlyniadau.",
-  "helpMode1Details": "• Gosodiadau Iaith: newidiwch yr iaith trwy wasgu'r eiconau uchaf/gwaelod\n• Toglo Gair/Brawddeg: newidiwch y modd\n• Mewnbwn Llais: pwyswch yr eicon meicroffon i ddechrau/stopio gwrando\n• Mewnbwn Testun: teipiwch yn uniongyrchol i gyfieithu\n• Chwilio Awtomatig: canfod brawddegau presennol tebyg\n• Cyfieithu: pwyswch y botwm cyfieithu i gyfieithu ar unwaith\n• Gwrando: chwarae TTS gydag eicon y siaradwr\n• Cadw: ychwanegu cofnod trwy 'Cadw Data'\n• Clirio: ailosod mewnbwn",
+  "helpMode1Details": "• Gosodiadau Iaith: Newidiwch fy iaith a'r iaith ddysgu gyda'r ddewislen bar app neu'r botwm iaith ar y gwaelod\n• Mewnbwn Syml: Dadansoddir testun yn awtomatig (gair/brawddeg) a gosod ardal yn cael ei actifadu wrth fewnbynnu\n• Meicroffon/Bysellfwrdd: Dechreuwch adnabod llais neu fewnbynnu testun gyda'r eicon mawr ar y prif sgrin\n• Gosodiadau Manwl: Nodi llyfr ffynhonnell, tagiau, a nodyn sefyllfa yn yr ardal isaf sy'n ymddangos wrth fewnbynnu\n• Chwilio Awtomatig: Canfod cyfieithiadau presennol tebyg mewn amser real\n• Gwrando: Chwarae ynganiad brodor (TTS) gyda'r eicon siaradwr\n• Cadw: Ychwanegu ar unwaith at eich rhestr ddysgu eich hun gyda 'Cadw Data'",
   "helpMode2Desc": "Adolygu brawddegau sydd wedi'u cadw a gwirio a ydych wedi'u cofio gyda'r swyddogaeth cuddio awtomatig.",
   "helpMode2Details": "• Dewis llyfr nodiadau: Defnyddiwch y ddewislen (⋮) ar y dde uchaf i ddewis 'Dewis Llyfr Nodiadau Astudio' neu 'Llyfrgell Ddigidol'\n• Fflipio cerdyn: Gwiriwch y cyfieithiad gyda 'Dangos/Cuddio'\n• Gwrando: Chwarae ynganiad gyda'r eicon siaradwr\n• Astudiaeth wedi'i chwblhau: Wedi'i farcio fel wedi'i chwblhau gyda marc siec (V)\n• Dileu: Pwyswch a dal cerdyn (Clic Hir) i ddileu'r cofnod\n• Chwilio a hidlo: Cefnogaeth bar chwilio (chwilio craff amser real) a thagiau, hidlwyr llythrennau cychwynnol",
   "helpMode3Desc": "Ymarferwch eich ynganiad trwy wrando ar frawddeg ac yna'i hailadrodd (Cysgodi).",
   "helpMode3Details": "• Dewis Deunydd: dewiswch y casgliad deunydd i'w astudio\n• Gosod Cyfwng: addaswch yr amser aros rhwng brawddegau gyda botymau [-] [+] (3 eiliad i 60 eiliad)\n• Dechrau/Stopio: rheoli sesiwn gysgodi\n• Siarad: gwrando ar lais a'i ailadrodd\n• Adborth: sgôr cywirdeb (0-100) a dangos lliwiau\n• Amodau Chwilio: hidlo targedau ymarfer yn ôl tagiau, eitemau diweddar, a llythrennau cyntaf",
   "helpModeChatDesc": "Ymarferwch sgiliau sgwrsio go iawn trwy sgwrsio â persona AI.",
-  "helpModeChatDetails": "• Sgwrs AI: ymarfer sgwrsio trwy siarad yn fy iaith\n• Personâu Lluosog: newidiwch ryw/iaith/enw'r parti arall gyda'r ddewislen uwchben y swigen lleferydd\n• Ychwanegu Partner: ychwanegu partner sgwrsio newydd (Dieithryn) gyda'r botwm +\n• GPS: seiliau sefyllfa ar leoliad cyfredol\n• Cadw Awtomatig: cyfieithu a chadw cynnwys sgwrsio yn awtomatig",
+  "helpModeChatDetails": "• Sgwrs AI: Ymarfer sgyrsiau go iawn gyda personau yn y ddewislen 'Sgwrs' ar y bar tabiau gwaelod\n• Gosodiadau Persona: Nodi rhyw, enw a chod iaith y parti arall yn rhydd\n• Drama Chwarae GPS: Argymell pynciau sgwrsio sy'n addas ar gyfer y lleoliad trwy adnabod fy lleoliad presennol\n• Dwy Iaith: Mae atebion AI yn cael eu harddangos gyda chyfieithiadau i wneud y gorau o effeithiau dysgu\n• Rheoli Cofnodion: Hidlo hanes sgwrsio blaenorol a chadw negeseuon penodol o sgyrsiau fel deunyddiau dysgu",
   "helpTabJson": "Fformat JSON",
   "helpTabModes": "Esboniad o'r Moddau",
   "helpTabTour": "Cymryd Taith",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Amddiffyn Gair",
   "wordModeLabel": "Modd Gair",
   "yourPronunciation": "Eich Ynganiad",
-  "ttsUnsupportedNatively": "Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon."
-,
+  "ttsUnsupportedNatively": "Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon.",
   "welcomeTitle": "Croeso i Talkie!",
   "welcomeDesc": "Mae Talkie yn cefnogi dros 80 o ieithoedd ac yn offeryn cyfieithu craff ar gyfer teithwyr. Gwella dy sgiliau siarad gyda Sgwrs AI!",
   "welcomeButton": "Dechrau"

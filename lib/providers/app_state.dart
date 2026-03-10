@@ -679,9 +679,7 @@ class AppState extends ChangeNotifier {
       );
     }
     
-    if (mode == 0) {
-      loadStudyRecords();
-    } else if (mode == 1) {
+    if (mode == 1) {
       loadStudyMaterials(); 
       loadRecordsByTags();
     } else if (mode == 2) {

@@ -9,6 +9,22 @@ class AppLocalizationsGu extends AppLocalizations {
   AppLocalizationsGu([String locale = 'gu']) : super(locale);
 
   @override
+  String get basicWords => 'મૂળભૂત શબ્દો ભંડાર';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'રદ કરો';
+
+  @override
   String get accuracy => 'ચોકસાઈ';
 
   @override
@@ -58,12 +74,6 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'મૂળભૂત શબ્દ ભંડાર';
-
-  @override
-  String get basicWords => 'મૂળભૂત શબ્દો ભંડાર';
-
-  @override
-  String get cancel => 'રદ કરો';
 
   @override
   String get caseObject => 'કર્મ વિભક્તિ';

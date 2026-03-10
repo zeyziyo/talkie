@@ -9,6 +9,22 @@ class AppLocalizationsBo extends AppLocalizations {
   AppLocalizationsBo([String locale = 'bo']) : super(locale);
 
   @override
+  String get basicWords => 'རྨང་གཞིའི་ཐ་སྙད་ཉར་མཛོད།';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'འ বাতিল';
+
+  @override
   String get accuracy => 'ཏག་ཏག་ཚད།';
 
   @override
@@ -57,12 +73,6 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'རྨང་གཞིའི་ཐ་སྙད་ཉར་མཛོད།';
-
-  @override
-  String get basicWords => 'རྨང་གཞིའི་ཐ་སྙད་ཉར་མཛོད།';
-
-  @override
-  String get cancel => 'འ বাতিল';
 
   @override
   String get caseObject => 'ཡུལ་སྒྲ།';

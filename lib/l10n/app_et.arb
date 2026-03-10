@@ -1,5 +1,16 @@
 {
   "@@locale": "et",
+  "basicWords": "Põhiliste sõnade hoidla",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Sisestuskeel",
+  "translationLanguage": "Tõlkekeel",
+  "simplifiedGuidance": "Muutke igapäevased vestlused hetkega võõrkeelde! Talkie salvestab teie keelekasutuse.",
+  "cancel": "Tühista",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Täpsus",
   "ttsMissing": "Selle keele kõnesünteesimootor pole sinu seadmesse installitud.",
   "ttsInstallGuide": "Installi vastavad keeleandmed Androidi seadetes > Google'i kõnesünteesis.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Põhiliste sõnade hoidla",
-  "basicWords": "Põhiliste sõnade hoidla",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Tühista",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Sihitiskääne",
   "casePossessive": "Omastav kääne",
   "casePossessivePronoun": "Omastav asesõna",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Dialoog",
   "helpJsonTypeSentence": "Laused",
   "helpJsonTypeWord": "Sõna",
-  "helpMode1Desc": "Tuvastab häält ja tõlgib selle ning võimaldab tulemusi kuulata.",
-  "helpMode1Details": "• Keele seadistus: keele muutmiseks vajuta ülemisele/alumisele ikoonile\n• Sõna/lause lüliti: režiimi vahetus\n• Häälsisend: alustamiseks/peatamiseks vajuta mikrofoni ikooni\n• Tekstisisestus: tõlkimiseks sisesta otse tekst\n• Automaatne otsing: sarnaste olemasolevate lausete tuvastamine\n• Tõlgi: koheseks tõlkimiseks vajuta tõlkenupule\n• Kuula: TTS taasesitus kõlari ikooniga\n• Salvesta: lisab kirje \"Andmete salvestamisega\"\n• Tühjenda: sisendi lähtestamine",
+  "helpMode1Details": "• Keele seaded: muuda oma ja õppimiskeelt rakenduse riba menüü või alumise keelenupu kaudu\n• Lihtne sisestus: teksti sisestamisel analüüsitakse automaatselt (sõna/lause) ja aktiveeritakse seadistusala\n• Mikrofon/klaviatuur: alusta hääletuvastust või teksti sisestamist põhiekraani suure ikooni kaudu\n• Täpsemad seaded: määra sisestamise ajal alumisel alal andmekogum, sildid ja olukorramärkus\n• Automaatne otsing: sarnaste olemasolevate tõlgete reaalajas tuvastamine\n• Kuulamine: esita emakeelne hääldus (TTS) kõlariikooni abil\n• Salvestamine: lisa kohe oma õppeloendisse 'Andmete salvestamine'",
   "helpMode2Desc": "Vaata salvestatud lauseid üle ja kontrolli meeldejätmist automaatse peitmise funktsiooniga.",
   "helpMode2Details": "• Õppematerjali valik: kasutage paremas ülanurgas menüüd (⋮) või 'Vali õppematerjal' või 'Online materjalide ruum'\n• Kaardi pööramine: kontrollige tõlget 'Näita/Peida' abil\n• Kuulamine: häälduse taasesitus kõlariikooniga\n• Õppimine lõpetatud: õppimine on lõpetatud märkeruuduga (V)\n• Kustutamine: kirje kustutamiseks vajutage pikalt (pikk klõps) kaardil\n• Otsing ja filter: otsinguriba (reaalajas nutikas otsing) ja siltide, algustähe filtreid",
   "helpMode3Desc": "Harjuta hääldust, kuulates lauseid ja neid korrates (varjutades).",
   "helpMode3Details": "• Materjali valik: vali õpitav materjalikogum\n• Intervalli seadistus: reguleeri lausete vahelist ooteaega nuppudega [-] [+], (3 sekundit kuni 60 sekundit)\n• Alusta/peata: varjutamise seansi juhtimine\n• Räägi: kuula häält ja korda seda\n• Tagasiside: täpsusskoor (0–100) ja värviindikaator\n• Otsingutingimused: filtreeri harjutatavaid üksusi siltide, hiljutiste üksuste või algustähe järgi",
   "helpModeChatDesc": "Harjuta vestlust tehisintellekti persooniga suheldes.",
-  "helpModeChatDetails": "• AI vestlus: harjuta vestlust, rääkides oma keeles\n• Mitu personaži: muuda partneri sugu/keelt/nime kõnemulli kohal asuva menüü kaudu\n• Lisa partner: lisa uusi vestluskaaslasi (võõraid) nupuga +\n• GPS: praegusel asukohal põhinevad situatsioonid\n• Automaatne salvestamine: vestlussisu automaatne tõlkimine ja salvestamine",
+  "helpModeChatDetails": "• AI vestlus: harjuta vestlust tegelikus elus personaga alumise vahekaardiriba menüüs 'Vestlus'\n• Persona seaded: määra vabalt partneri sugu, nimi ja keelekood\n• GPS olukorramäng: soovitab kohale sobivaid vestlusteemasid, tunnetades minu praegust asukohta\n• Kaks keelt: AI vastused kuvatakse koos tõlkega, et maksimeerida õppimist\n• Kirjete haldamine: filtreeri varasemaid vestlusi ja salvesta teatud sõnumeid õppematerjalidena vestluse ajal",
   "helpTabJson": "JSON-vorming",
   "helpTabModes": "Režiimide selgitus",
   "helpTabTour": "Tutvustus",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Sõnade kaitse",
   "wordModeLabel": "Sõnarežiim",
   "yourPronunciation": "Sinu hääldus",
-  "ttsUnsupportedNatively": "Seadme vaikeseaded ei toeta selle keele kõnet."
-,
+  "ttsUnsupportedNatively": "Seadme vaikeseaded ei toeta selle keele kõnet.",
   "welcomeTitle": "Tere tulemast Talkiesse!",
   "welcomeDesc": "Talkie toetab üle 80 keele ja on nutikas tõlketööriist ränduritele. Parandage oma rääkimisoskust tehisintellekti vestluse abil!",
   "welcomeButton": "Alusta"

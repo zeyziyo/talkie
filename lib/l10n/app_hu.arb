@@ -1,5 +1,16 @@
 {
   "@@locale": "hu",
+  "basicWords": "Alap szógyűjtemény",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Bemeneti nyelv",
+  "translationLanguage": "Fordítási nyelv",
+  "simplifiedGuidance": "Azonnali idegennyelvű fordítás a mindennapi beszélgetésekhez! A Talkie rögzíti a nyelvhasználatodat.",
+  "cancel": "Mégse",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Pontosság",
   "ttsMissing": "Ehhez a nyelvhez nincs telepítve hangmotor az eszközön.",
   "ttsInstallGuide": "Telepítse a nyelvi adatokat az Android Beállítások > Google TTS menüpontban.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Alapvető Szótár",
-  "basicWords": "Alap szógyűjtemény",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Mégse",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Tárgyeset",
   "casePossessive": "Birtokos eset",
   "casePossessivePronoun": "Birtokos névmás",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Beszélgetés (Dialógus)",
   "helpJsonTypeSentence": "Mondat (Sentence)",
   "helpJsonTypeWord": "Szó (Word)",
-  "helpMode1Desc": "Hangfelismerés, fordítás és eredmény meghallgatása.",
-  "helpMode1Details": "• Hang: Érintse meg a mikrofont az indításhoz/leállításhoz\n• Szöveg: Írjon közvetlenül a fordításhoz\n• Auto-Keresés: Hasonló mondatokat keres\n• Fordítás: Gomb az azonnali fordításhoz\n• Hallgatás: Hangszóró ikon a TTS-hez\n• Mentés: Hozzáadja az előzményekhez\n• Törlés: Összes visszaállítása",
+  "helpMode1Details": "• Nyelvbeállítás: A saját és a tanult nyelv módosítása az alkalmazássáv menüjében vagy az alsó nyelv gombbal\n• Egyszerű bevitel: A szöveg beírásakor automatikusan elemzi (szó/mondat) és aktiválja a beállítási területet\n• Mikrofon/billentyűzet: Hangfelismerés vagy szövegbevitel indítása a főképernyőn található nagy ikonnal\n• Részletes beállítások: Adatgyűjtemény, címke, helyzetjegyzet megadása a bevitel során megjelenő alsó területen\n• Automatikus keresés: Hasonló meglévő fordítások valós idejű észlelése\n• Hallgatás: Anyanyelvi kiejtés (TTS) lejátszása a hangszóró ikonnal\n• Mentés: Azonnali hozzáadás a saját tanulási listádhoz az 'Adatok mentése' funkcióval",
   "helpMode2Desc": "Mentett mondatok áttekintése rejtett fordítással.",
   "helpMode2Details": "• Válaszd ki a tanulási anyagot: Használd a jobb felső sarokban található menüt (⋮) a 'Tanulási anyag kiválasztása' vagy az 'Online anyagtár' eléréséhez.\n• Kártya megfordítása: A 'Megjelenítés/Elrejtés' segítségével ellenőrizheted a fordítást.\n• Hallgatás: A hangszóró ikonra kattintva lejátszhatod a kiejtést.\n• Tanulás befejezése: A pipa (V) jelzi, ha befejezted a tanulást.\n• Törlés: Hosszú kattintással (Long Click) törölheted a rekordokat.\n• Keresés és szűrés: Használd a keresősávot (valós idejű intelligens keresés), a címkéket és a kezdőbetű szűrőket.",
   "helpMode3Desc": "Hallgass meg egy mondatot, majd gyakorold a kiejtést utánmondással (Shadowing).",
   "helpMode3Details": "• Kiválasztás: Válasszon csomagot\n• Időköz: [-] [+] várakozás (3mp-60mp)\n• Start/Stop: Munkamenet vezérlése\n• Beszéd: Hallgassa és ismételje\n• Pontszám: Pontosság (0-100)\n• Újra: Gomb ha a hang nem észlelhető",
   "helpModeChatDesc": "Gyakorold a valós beszélgetéseket egy AI személyiséggel.",
-  "helpModeChatDetails": "• AI csevegés: Gyakorold a valós beszélgetéseket személyiségekkel.\n• Résztvevők kezelése: Állítsd be a saját nyelvedet és az AI nyelvét a nyelvi eltérések elkerülése érdekében.\n• GPS helyzetgyakorlat: Hozz létre valósághű beszélgetési helyzeteket a jelenlegi tartózkodási helyed alapján.\n• Előzmények megőrzése: Minden beszélgetés biztonságosan tárolva van az azonosító alapján, és a feljegyzések akkor is megmaradnak, ha átnevezed őket.",
+  "helpModeChatDetails": "• AI chat: Gyakorold a valós beszélgetéseket a személyiséggel a 'Chat' menüben az alsó lapon\n• Személyiség beállítása: Szabadon megadhatod a másik fél nemét, nevét és nyelvkódját\n• GPS helyzetjáték: A jelenlegi helyzeted felismerése, hogy a helynek megfelelő beszélgetési témákat ajánljon\n• Kétnyelvű: Az AI válaszai fordítással együtt jelennek meg a maximális tanulási hatékonyság érdekében\n• Előzmények kezelése: A korábbi beszélgetések szűrése és a beszélgetés során a bizonyos üzenetek mentése tananyagként",
   "helpTabJson": "JSON Formátum",
   "helpTabModes": "Módok",
   "helpTabTour": "Túra",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Szó védelem",
   "wordModeLabel": "Szó mód",
   "yourPronunciation": "Kiejtésed",
-  "ttsUnsupportedNatively": "Ez az eszköz alapértelmezés szerint nem támogatja a hangkimenetet ezen a nyelven."
-,
+  "ttsUnsupportedNatively": "Ez az eszköz alapértelmezés szerint nem támogatja a hangkimenetet ezen a nyelven.",
   "welcomeTitle": "Üdvözöljük a Talkie-ban!",
   "welcomeDesc": "A Talkie több mint 80 nyelvet támogat, és egy intelligens fordítóeszköz utazók számára. Fejlessze beszédkészségét AI Chat-tel!",
   "welcomeButton": "Kezdés"

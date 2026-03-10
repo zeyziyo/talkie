@@ -1,5 +1,16 @@
 {
   "@@locale": "es",
+  "basicWords": "Repositorio de palabras",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Idioma de entrada",
+  "translationLanguage": "Idioma de traducción",
+  "simplifiedGuidance": "¡Transforma instantáneamente las conversaciones cotidianas a un idioma extranjero! Talkie registra tu vida lingüística.",
+  "cancel": "Cancelar",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Precisión",
   "ttsMissing": "El motor de voz para este idioma no está instalado en el dispositivo.",
   "ttsInstallGuide": "Por favor, instala los datos del idioma en Ajustes de Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Repositorio básico de palabras",
-  "basicWords": "Repositorio de palabras",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Cancelar",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Acusativo",
   "casePossessive": "Genitivo",
   "casePossessivePronoun": "Pronombre posesivo",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Diálogo",
   "helpJsonTypeSentence": "Frase",
   "helpJsonTypeWord": "Palabra",
-  "helpMode1Desc": "Reconoce voz, traduce al idioma destino y escucha el resultado.",
-  "helpMode1Details": "• Configuración de idioma: Cambia el idioma mediante el icono de traducir superior\n• Ayuda: Consulta la guía mediante el icono de ayuda superior\n• Entrada de Voz: Toca el icono del micro para empezar/parar\n• Entrada de Texto: Escribe directamente para traducir\n• Auto-Búsqueda: Detecta frases existentes similares\n• Traducir: Toca para traducción instantánea\n• Escuchar: Icono de altavoz para TTS (Original/Traducido)\n• Guardar: 'Guardar' añade al historial\n• Limpiar: Reinicia todos los campos",
+  "helpMode1Details": "• Configuración de idioma: Cambia tu idioma y el idioma de aprendizaje en el menú de la barra de la aplicación o en el botón de idioma en la parte inferior.\n• Entrada simple: Analiza automáticamente (palabras/oraciones) al ingresar texto y activa el área de configuración.\n• Micrófono/Teclado: Inicia el reconocimiento de voz o la entrada de texto con el icono grande en la pantalla principal.\n• Configuración detallada: Especifica la colección de datos, la etiqueta y la nota de situación en el área inferior que aparece durante la entrada.\n• Búsqueda automática: Detecta traducciones similares existentes en tiempo real.\n• Escuchar: Reproduce la pronunciación nativa (TTS) con el icono del altavoz.\n• Guardar: Agrega instantáneamente a tu propia lista de aprendizaje con 'Guardar datos'.",
   "helpMode2Desc": "Repasa oraciones guardadas con auto-ocultar traducciones y seguimiento.",
   "helpMode2Details": "• Seleccionar cuaderno: Usa 'Seleccionar cuaderno de estudio' o 'Biblioteca en línea' en el menú (⋮) en la esquina superior derecha.\n• Voltear tarjetas: Usa 'Mostrar/Ocultar' para verificar la traducción.\n• Escuchar: Reproduce la pronunciación con el icono del altavoz.\n• Completar aprendizaje: Marca con un check (V) para indicar que el aprendizaje está completo.\n• Eliminar: Mantén presionada la tarjeta (clic largo) para eliminar el registro.\n• Buscar y filtrar: Admite la barra de búsqueda (búsqueda inteligente en tiempo real) y los filtros de etiquetas y letra inicial.",
   "helpMode3Desc": "Escucha y repite la frase (Shadowing) para practicar la pronunciación.",
   "helpMode3Details": "• Seleccionar Material: Elige paquete de aprendizaje\n• Intervalo: [-] [+] ajusta tiempo de espera (3s-60s)\n• Iniciar/Parar: Controla la sesión\n• Hablar: Escucha el audio y repite después\n• Feedback: Puntuación de precisión (0-100) con código de color\n• Reintentar: Usa el botón si no se detecta voz",
   "helpModeChatDesc": "Practica conversaciones reales hablando con una IA.",
-  "helpModeChatDetails": "• Chat con IA: Practica conversaciones reales con personajes.\n• Gestión de participantes: Configura tu idioma y el de la IA para evitar discrepancias lingüísticas.\n• Juego de roles con GPS: Crea situaciones de conversación naturales basadas en tu ubicación actual.\n• Conservación de registros: Todas las conversaciones se guardan de forma segura con un ID y se mantienen incluso si cambias el nombre.",
+  "helpModeChatDetails": "• Chat AI: Practica conversaciones reales con personas en el menú 'Chat' en la barra de pestañas inferior.\n• Configuración de persona: Especifica libremente el género, el nombre y el código de idioma de la otra persona.\n• Juego de roles GPS: Reconoce tu ubicación actual y recomienda temas de conversación apropiados para el lugar.\n• 2 idiomas: La respuesta de la IA se muestra con la traducción para maximizar el efecto de aprendizaje.\n• Gestión de registros: Filtra el historial de conversaciones pasadas y guarda mensajes específicos durante la conversación como materiales de aprendizaje.",
   "helpTabJson": "Formato JSON",
   "helpTabModes": "Modos",
   "helpTabTour": "Hacer un recorrido",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Defensa de palabras",
   "wordModeLabel": "Modo palabra",
   "yourPronunciation": "Tu Pronunciación",
-  "ttsUnsupportedNatively": "La configuración predeterminada de este dispositivo no es compatible con la salida de voz en este idioma."
-,
+  "ttsUnsupportedNatively": "La configuración predeterminada de este dispositivo no es compatible con la salida de voz en este idioma.",
   "welcomeTitle": "¡Bienvenido a Talkie!",
   "welcomeDesc": "Talkie admite más de 80 idiomas y es una herramienta inteligente para viajeros y estudiantes. ¡Mejora tu habla con el chat de IA!",
   "welcomeButton": "Empezar"

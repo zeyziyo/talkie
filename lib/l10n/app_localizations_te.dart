@@ -9,6 +9,22 @@ class AppLocalizationsTe extends AppLocalizations {
   AppLocalizationsTe([String locale = 'te']) : super(locale);
 
   @override
+  String get basicWords => 'ప్రాథమిక పద నిల్వ';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'రద్దు చేయి';
+
+  @override
   String get accuracy => 'ఖచ్చితత్వం';
 
   @override
@@ -58,12 +74,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'ప్రాథమిక పద రిపోజిటరీ';
-
-  @override
-  String get basicWords => 'ప్రాథమిక పద నిల్వ';
-
-  @override
-  String get cancel => 'రద్దు చేయి';
 
   @override
   String get caseObject => 'ఆబ్జెక్టివ్';

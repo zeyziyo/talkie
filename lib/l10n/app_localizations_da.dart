@@ -9,6 +9,22 @@ class AppLocalizationsDa extends AppLocalizations {
   AppLocalizationsDa([String locale = 'da']) : super(locale);
 
   @override
+  String get basicWords => 'Grundlæggende ordlager';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'Annuller';
+
+  @override
   String get accuracy => 'Nøjagtighed';
 
   @override
@@ -57,12 +73,6 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'Grundlæggende ordarkiv';
-
-  @override
-  String get basicWords => 'Grundlæggende ordlager';
-
-  @override
-  String get cancel => 'Annuller';
 
   @override
   String get caseObject => 'Akkusativ';

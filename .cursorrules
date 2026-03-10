@@ -14,4 +14,4 @@
 - **Approval**: Must ask for confirmation before `git push`.
 
 ## 3. Localization
-- **All Languages**: "Internationalization" means ALL 40+ ARB files. Do not just update EN/KO. Use scripts to propagate keys.
+- **All Languages**: "Internationalization" means ALL 80+ ARB files. Do not just update EN/KO. Use scripts to propagate keys.

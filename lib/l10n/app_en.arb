@@ -29,6 +29,9 @@
   "@basicWords": {
     "description": "Default name for basic vocabulary material"
   },
+  "inputLanguage": "Input Language",
+  "translationLanguage": "Translation Language",
+  "simplifiedGuidance": "Instant translation for your daily conversations! Talkie documents your language journey.",
   "cancel": "Cancel",
   "@cancel": {
     "description": "Cancel button"
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Dialogue",
   "helpJsonTypeSentence": "Sentence",
   "helpJsonTypeWord": "Word",
-  "helpMode1Desc": "Recognize voice, translate to target language, and listen to the result.",
-  "helpMode1Details": "• Languages: Tap bottom buttons to switch Source and Target languages.\n• Word/Sentence: Switch modes using the top tabs.\n• Voice: Tap the microphone icon to start/stop listening.\n• Text: Type directly for instant translation.\n• Context Tag: Add situation tags (e.g., Morning Greeting) to save separately.\n• Search: Auto-detects similar existing sentences.\n• Translate: Manual translation button for instant results.\n• Listen: Tap speaker icons for TTS playback.\n• Save: Use 'Save Data' to add to your records.",
+  "helpMode1Details": "• Language Settings: Change Source and Target languages via Appbar menu or bottom buttons.\n• Simple Input: Auto-analyzes text (Word/Sentence) and activates settings on typing.\n• Mic/Keyboard: Start voice recognition or text input via large home screen icons.\n• Advanced Settings: Specify materials, tags, and context notes in the bottom area during input.\n• Smart Search: Real-time detection of similar existing translations.\n• TTS Playback: Listen to native speaker pronunciation (TTS).\n• Save: Instantly add to your peronalized study list via 'Save Data'.",
   "helpMode2Desc": "Review saved words and sentences with hide/reveal functionality.",
   "helpMode2Details": "• Materials: Access 'Select Material Set' or 'Online Library' via the top-right menu (⋮).\n• Flip Card: Use 'Show/Hide' to check translations.\n• Listen: Tap speaker icons for pronunciation.\n• Mastery: Mark items as studied with the checkmark (V).\n• Delete: Long-press a card to remove it from your records.\n• Filter: Real-time smart search and filter by tags or starting letters.",
   "helpMode3Desc": "Practice your pronunciation by listening to and shadowing sentences.",
   "helpMode3Details": "• Materials: Select a material set via the top-right menu (⋮).\n• Interval: Adjust wait time between sentences (3s to 60s) using [-] [+].\n• Start/Stop: Control shadowing sessions with central buttons.\n• Speak: Listen to the native speaker and repeat loudly.\n• Feedback: Real-time accuracy scores (0-100) and color coding.\n• Settings: Use the gear icon to filter practice scope by tags.",
   "helpModeChatDesc": "Practice real-world conversations by chatting with an AI persona.",
-  "helpModeChatDetails": "• Start Chat: Tap bubble icon on top right\n• Choose Persona: Pick teacher, guide or friend\n• Chat & Save: AI responses are auto-translated. Tap any message to save it to Mode 2\n• Dual Language: View both mother tongue and target language for all messages\n• TTS: Tap speaker icon to hear pronunciation for both languages\n• Auto-Title: AI suggests a title based on topic\n• Management: View past chats in history",
+  "helpModeChatDetails": "• AI Chat: Practice real-world conversations via the 'Chat' menu in the bottom navigation bar.\n• Persona Settings: Freely customize your partner's gender, name, and language code.\n• GPS Context: Recognizes your current location to suggest context-aware conversation topics.\n• Dual Language: AI responses are displayed with translations for maximum learning efficiency.\n• History & Save: Filter past conversations and save specific messages as study materials during the chat.",
   "helpTabJson": "JSON Format",
   "helpTabModes": "Modes",
   "helpTabTour": "Tour",

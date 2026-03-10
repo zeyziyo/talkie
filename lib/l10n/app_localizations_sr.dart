@@ -9,6 +9,22 @@ class AppLocalizationsSr extends AppLocalizations {
   AppLocalizationsSr([String locale = 'sr']) : super(locale);
 
   @override
+  String get basicWords => 'Основно складиште речи';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'Откажи';
+
+  @override
   String get accuracy => 'Тачност';
 
   @override
@@ -57,12 +73,6 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'Основно складиште речи';
-
-  @override
-  String get basicWords => 'Основно складиште речи';
-
-  @override
-  String get cancel => 'Откажи';
 
   @override
   String get caseObject => 'Акузатив';

@@ -9,6 +9,22 @@ class AppLocalizationsFil extends AppLocalizations {
   AppLocalizationsFil([String locale = 'fil']) : super(locale);
 
   @override
+  String get basicWords => 'Basic na Repository ng mga Salita';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'Kanselahin';
+
+  @override
   String get accuracy => 'Katumpakan';
 
   @override
@@ -60,12 +76,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'Repository ng Mga Pangunahing Salita';
-
-  @override
-  String get basicWords => 'Basic na Repository ng mga Salita';
-
-  @override
-  String get cancel => 'Kanselahin';
 
   @override
   String get caseObject => 'Layon';

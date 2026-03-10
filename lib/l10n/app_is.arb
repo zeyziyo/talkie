@@ -1,5 +1,16 @@
 {
   "@@locale": "is",
+  "basicWords": "Grunn orðageymsla",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Inntaksmál",
+  "translationLanguage": "Þýðingarmál",
+  "simplifiedGuidance": "Umbreyttu daglegum samtölum samstundis á erlent tungumál! Talkie heldur utan um tungumálanotkun þína.",
+  "cancel": "Hætta við",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Nákvæmni",
   "ttsMissing": "Raddræðuvél fyrir þetta tungumál er ekki uppsett á tækinu þínu.",
   "ttsInstallGuide": "Vinsamlegast settu upp viðeigandi tungumálapakka í Android stillingum > Google Texti í Tal.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Grunn orðageymsla",
-  "basicWords": "Grunn orðageymsla",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Hætta við",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Þolfall",
   "casePossessive": "Eignarfall",
   "casePossessivePronoun": "Eignarfornafn",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Samræða",
   "helpJsonTypeSentence": "Setning",
   "helpJsonTypeWord": "Orð",
-  "helpMode1Desc": "Þekkja rödd, þýða og hlusta á niðurstöðurnar.",
-  "helpMode1Details": "• Tungumálastillingar: Breyttu tungumáli með því að ýta á táknin efst/neðst\n• Orð/setningaskipti: Skiptu um stillingu\n• Raddinntak: Ýttu á hljóðnemstáknið til að hefja/stöðva hlustun\n• Textainntak: Sláðu beint inn til að þýða\n• Sjálfvirk leit: Finndu svipaðar setningar sem fyrir eru\n• Þýðing: Þýddu strax með því að ýta á þýðingarhnappinn\n• Hlustun: Spilaðu TTS með hátalaratákninu\n• Vista: Bættu við færslu með 'Vista gögn'\n• Hreinsa: Endurstilltu inntak",
+  "helpMode1Details": "• Tungumálastillingar: Breyttu tungumálunum þínum og tungumálunum sem þú ert að læra í valmynd appsins eða með tungumálahnappnum neðst\n• Einföld innsláttur: Greinir og virkjar stillingarsvæðið sjálfkrafa þegar texti er sleginn inn (orð/setning)\n• Hljóðnemi/lyklaborð: Byrjaðu raddgreiningu eða textainnslátt með stóru táknunum á aðalskjánum\n• Ítarlegar stillingar: Tilgreindu gagnasafn, merki og aðstæðnaathugasemdir á neðri svæðinu sem birtist meðan á innslætti stendur\n• Sjálfvirk leit: Greinir svipaðar fyrri þýðingar í rauntíma\n• Hlustun: Spilaðu framburð móðurmáls með hátalaratákninu (TTS)\n• Vista: Bættu strax við þinn eigin námslista með 'Vista gögn'",
   "helpMode2Desc": "Farðu yfir vistaðar setningar og athugaðu hvort þú manst þær með sjálfvirkri felaeiginleikanum.",
   "helpMode2Details": "• Veldu námsefni: Notaðu valmyndina efst til hægri (⋮) til að velja 'Veldu námsefni' eða 'Námsefnisvef'\n• Flettu spjaldi: 'Sýna/Fela' til að staðfesta þýðingu\n• Hlusta: Spilaðu framburð með hátalaratákninu\n• Lokið námi: Merktu námið sem lokið með hakmerki (V)\n• Eyða: Eyða færslum með því að ýta lengi á spjaldið\n• Leita og sía: Stuðningur við leitarrönd (snjallleit í rauntíma) og síur fyrir merki og upphafsstafi",
   "helpMode3Desc": "Hlustaðu á setninguna og æfðu framburð með því að endurtaka (Shadowing).",
   "helpMode3Details": "• Efnisval: Veldu efnissett til að læra\n• Millibilsstilling: Stilltu biðtímann á milli setninga með [-] [+] hnöppunum (3 sekúndur til 60 sekúndur)\n• Byrja/stöðva: Stjórnaðu skuggastund\n• Tala: Hlustaðu á rödd og endurtaktu\n• Viðbrögð: Nákvæmnisstig (0-100) og litaskjár\n• Leitarskilyrði: Síaðu æfingamarkmið eftir merki, nýlegum hlutum eða upphafsstöfum",
   "helpModeChatDesc": "Æfðu raunverulegar samræður með því að spjalla við AI persónu.",
-  "helpModeChatDetails": "• Gervigreindarspjall: Talaðu á þínu tungumáli til að æfa samtöl\n• Margar persónur: Hægt er að breyta kyni/tungumáli/nafni viðmælandans með valmyndinni fyrir ofan talbólu\n• Bæta við maka: Bættu við nýjum samtalsfélaga (ókunnum) með + hnappinum\n• GPS: Aðstæður byggðar á núverandi staðsetningu\n• Sjálfvirk vistun: Sjálfvirk þýðing og vistun samtalsinnihalds",
+  "helpModeChatDetails": "• Gervigreind spjall: Æfðu raunveruleg samtöl við persónur í 'Spjall' valmyndinni á flipastikunni neðst\n• Persónustillingar: Tilgreindu kyn, nafn og tungumálakóða hins aðilans að vild\n• GPS sviðsetning: Mælir með umræðuefnum sem henta staðsetningunni með því að þekkja núverandi staðsetningu þína\n• Tvö tungumál: Svör gervigreindarinnar eru sýnd ásamt þýðingum til að hámarka námsárangur\n• Skráastjórnun: Síaðu fyrri samtalsferil og vistaðu ákveðin skilaboð úr samtalinu sem námsefni",
   "helpTabJson": "JSON snið",
   "helpTabModes": "Umfjöllun um stillingar",
   "helpTabTour": "Kynnisferð",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Orðavörn",
   "wordModeLabel": "Orðastilling",
   "yourPronunciation": "Framburðurinn þinn",
-  "ttsUnsupportedNatively": "Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu."
-,
+  "ttsUnsupportedNatively": "Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu.",
   "welcomeTitle": "Velkomin í Talkie!",
   "welcomeDesc": "Talkie styður yfir 80 tungumál og er snjallt þýðingartæki fyrir ferðalanga. Bættu talfærni þína með gervigreindarspjalli!",
   "welcomeButton": "Byrja"

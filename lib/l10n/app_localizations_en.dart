@@ -9,6 +9,22 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get basicWords => 'Basic Word Repository';
+
+  @override
+  String get inputLanguage => 'Input Language';
+
+  @override
+  String get translationLanguage => 'Translation Language';
+
+  @override
+  String get simplifiedGuidance =>
+      'Instant translation for your daily conversations! Talkie documents your language journey.';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
   String get accuracy => 'Accuracy';
 
   @override
@@ -57,12 +73,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'Basic Word Repository';
-
-  @override
-  String get basicWords => 'Basic Word Repository';
-
-  @override
-  String get cancel => 'Cancel';
 
   @override
   String get caseObject => 'Object';

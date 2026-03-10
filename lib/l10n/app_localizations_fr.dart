@@ -9,6 +9,22 @@ class AppLocalizationsFr extends AppLocalizations {
   AppLocalizationsFr([String locale = 'fr']) : super(locale);
 
   @override
+  String get basicWords => 'Répertoire de mots';
+
+  @override
+  String get inputLanguage => '입력 언어';
+
+  @override
+  String get translationLanguage => '번역 언어';
+
+  @override
+  String get simplifiedGuidance =>
+      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+
+  @override
+  String get cancel => 'Annuler';
+
+  @override
   String get accuracy => 'Précision';
 
   @override
@@ -58,12 +74,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get basicWordRepository => 'Répertoire de mots de base';
-
-  @override
-  String get basicWords => 'Répertoire de mots';
-
-  @override
-  String get cancel => 'Annuler';
 
   @override
   String get caseObject => 'Accusatif';

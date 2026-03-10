@@ -1,5 +1,16 @@
 {
   "@@locale": "de",
+  "basicWords": "Wortschatz",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Eingabesprache",
+  "translationLanguage": "Übersetzungssprache",
+  "simplifiedGuidance": "Verwandle alltägliche Gespräche sofort in Fremdsprachen! Talkie zeichnet dein Sprachleben auf.",
+  "cancel": "Abbrechen",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Genauigkeit",
   "ttsMissing": "Die Sprachausgabe-Engine für diese Sprache ist auf Ihrem Gerät nicht installiert.",
   "ttsInstallGuide": "Bitte installieren Sie die entsprechenden Sprachdaten in den Android-Einstellungen > Google Text-in-Sprache.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Basis-Wortschatz",
-  "basicWords": "Wortschatz",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Abbrechen",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Akkusativ",
   "casePossessive": "Genitiv",
   "casePossessivePronoun": "Possessivpronomen",
@@ -186,14 +189,13 @@
   "helpJsonTypeDialogue": "Dialog",
   "helpJsonTypeSentence": "Satz",
   "helpJsonTypeWord": "Wort",
-  "helpMode1Desc": "Stimme erkennen, in Zielsprache übersetzen und Ergebnis anhören.",
-  "helpMode1Details": "• Spracheinstellungen: Sprache ändern über das Übersetzungs-Symbol\n• Hilfe: Anleitung über das Hilfe-Symbol aufrufen\n• Spracheingabe: Mikrofon-Symbol tippen zum Starten/Stoppen\n• Texteingabe: Direkt tippen zum Übersetzen\n• Auto-Suche: Findet ähnliche vorhandene Sätze\n• Übersetzen: Button tippen für Sofortübersetzung\n• Anhören: Lautsprecher-Symbol für TTS (Original/Übersetzung)\n• Speichern: 'Daten speichern' fügt zum Verlauf hinzu\n• Leeren: Alle Eingaben zurücksetzen",
+  "helpMode1Details": "• Spracheinstellungen: Ändere deine Sprache und die Lernsprache über das App-Bar-Menü oder die Sprachschaltfläche unten.\n• Einfache Eingabe: Automatische Analyse (Wort/Satz) und Aktivierung des Einstellungsbereichs bei Texteingabe.\n• Mikrofon/Tastatur: Starte die Spracherkennung oder Texteingabe mit dem großen Symbol auf dem Hauptbildschirm.\n• Detaillierte Einstellungen: Gib im unteren Bereich, der während der Eingabe erscheint, Sammlungen, Tags und Situationsnotizen an.\n• Automatische Suche: Ähnliche bestehende Übersetzungen werden in Echtzeit erkannt.\n• Hören: Wiedergabe der Muttersprachlichen Aussprache (TTS) mit dem Lautsprechersymbol.\n• Speichern: Sofortiges Hinzufügen zu deiner eigenen Lernliste mit 'Daten speichern'.",
   "helpMode2Desc": "Gespeicherte Sätze wiederholen mit Auto-Ausblenden und Wiederholungszähler.",
   "helpMode2Details": "• Materialauswahl: Verwende das Menü (⋮) oben rechts für 'Lernmaterial auswählen' oder 'Online-Materialbibliothek'\n• Karte umdrehen: 'Anzeigen/Verbergen' zur Überprüfung der Übersetzung\n• Anhören: Wiedergabe der Aussprache über das Lautsprechersymbol\n• Lernen abgeschlossen: Markiere Karten mit einem Häkchen (V) als gelernt\n• Löschen: Gedrückt halten (Long Click) um die Karte zu löschen\n• Suche und Filter: Suchleiste (intelligente Echtzeitsuche) sowie Tag- und Anfangsbuchstabenfilter",
   "helpMode3Desc": "Übe deine Aussprache, indem du Sätze anhörst und nachsprichst (Shadowing).",
   "helpMode3Details": "• Materialwahl: Lernpaket wählen\n• Intervall: [-] [+] Wartezeit anpassen (3s-60s)\n• Start/Stop: Sitzung steuern\n• Sprechen: Audio hören und nachsprechen\n• Feedback: Genauigkeit (0-100) mit Farbcode\n• Wiederholen: Retry-Button nutzen falls keine Stimme erkannt",
   "helpModeChatDesc": "Übe echte Konversationen, indem du mit einer KI-Persona chattest.",
-  "helpModeChatDetails": "• KI-Chat: Üben Sie realistische Gespräche mit verschiedenen Persönlichkeiten.\n• Teilnehmerverwaltung: Stellen Sie Ihre Sprache und die der KI separat ein, um Sprachunterschiede zu vermeiden.\n• GPS-Rollenspiel: Erstellen Sie natürliche Gesprächssituationen basierend auf Ihrem aktuellen Standort.\n• Protokollierung: Alle Gespräche werden sicher anhand der ID gespeichert, und die Historie bleibt auch bei Namensänderungen erhalten.",
+  "helpModeChatDetails": "• KI-Chat: Übe echte Gespräche mit Personas im Menü 'Chat' in der unteren Tab-Leiste.\n• Persona-Einstellungen: Lege Geschlecht, Name und Sprachcode der anderen Person frei fest.\n• GPS-Rollenspiel: Erkennt deinen aktuellen Standort und empfiehlt Gesprächsthemen, die zum Ort passen.\n• Zweisprachig: Die Antwort der KI wird zusammen mit der Übersetzung angezeigt, um den Lerneffekt zu maximieren.\n• Verlaufsverwaltung: Filtern des bisherigen Gesprächsverlaufs und Speichern bestimmter Nachrichten aus dem Gespräch als Lernmaterial.",
   "helpTabJson": "JSON-Format",
   "helpTabModes": "Modi",
   "helpTabTour": "Tour starten",
@@ -771,8 +773,7 @@
   "wordDefenseTitle": "Wortverteidigung",
   "wordModeLabel": "Wort-Modus",
   "yourPronunciation": "Deine Aussprache",
-  "ttsUnsupportedNatively": "Dieses Gerät unterstützt die Sprachausgabe für diese Sprache in den Standardeinstellungen nicht."
-,
+  "ttsUnsupportedNatively": "Dieses Gerät unterstützt die Sprachausgabe für diese Sprache in den Standardeinstellungen nicht.",
   "welcomeTitle": "Willkommen bei Talkie!",
   "welcomeDesc": "Talkie unterstützt über 80 Sprachen und ist ein intelligentes Übersetzungstool für Reisende. Verbessern Sie Ihre Sprechfertigkeiten durch KI-Chat!",
   "welcomeButton": "Loslegen"
