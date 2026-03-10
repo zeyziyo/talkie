@@ -338,6 +338,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get helpJsonTypeWord => '单词 (Word)';
 
   @override
+  String get helpMode1Desc => '语音识别、翻译并收听结果。';
+
+  @override
   String get helpMode1Details =>
       '• 语音输入：点击麦克风图标开始/停止聆听\n• 文本输入：直接输入文本进行翻译\n• 自动搜索：检测相似的现有句子\n• 翻译：点击按钮立即翻译\n• 收听：点击扬声器图标收听 TTS（原文/译文）\n• 保存：“保存数据”添加到历史记录\n• 清除：重置所有输入 (TODO: Translate)';
 
@@ -1571,6 +1574,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get helpJsonTypeWord => '单词（Word）';
+
+  @override
+  String get helpMode1Desc => '语音识别、翻译并收听结果。';
 
   @override
   String get helpMode1Details =>
@@ -2807,6 +2813,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get helpJsonTypeWord => '單字 (Word)';
+
+  @override
+  String get helpMode1Desc => '語音辨識、翻譯並收聽結果。';
 
   @override
   String get helpMode1Details =>

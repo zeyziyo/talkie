@@ -352,6 +352,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get helpJsonTypeWord => 'Sõna';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Keele seaded: muuda oma ja õppimiskeelt rakenduse riba menüü või alumise keelenupu kaudu\n• Lihtne sisestus: teksti sisestamisel analüüsitakse automaatselt (sõna/lause) ja aktiveeritakse seadistusala\n• Mikrofon/klaviatuur: alusta hääletuvastust või teksti sisestamist põhiekraani suure ikooni kaudu\n• Täpsemad seaded: määra sisestamise ajal alumisel alal andmekogum, sildid ja olukorramärkus\n• Automaatne otsing: sarnaste olemasolevate tõlgete reaalajas tuvastamine\n• Kuulamine: esita emakeelne hääldus (TTS) kõlariikooni abil\n• Salvestamine: lisa kohe oma õppeloendisse \'Andmete salvestamine\'';
 

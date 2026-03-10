@@ -894,6 +894,12 @@ abstract class AppLocalizations {
   /// **'단어 (Word)'**
   String get helpJsonTypeWord;
 
+  /// No description provided for @helpMode1Desc.
+  ///
+  /// In ko, this message translates to:
+  /// **'음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.'**
+  String get helpMode1Desc;
+
   /// No description provided for @helpMode1Details.
   ///
   /// In ko, this message translates to:

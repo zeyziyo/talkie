@@ -350,6 +350,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get helpJsonTypeWord => 'Ord';
 
   @override
+  String get helpMode1Desc =>
+      'Talegjenkjenning, oversettelse og lytt til resultat.';
+
+  @override
   String get helpMode1Details =>
       '• Stemme: Trykk mikrofon for start/stopp\n• Tekst: Skriv direkte for å oversette\n• Auto-Søk: Finner lignende setninger\n• Oversett: Knapp for umiddelbar oversettelse\n• Lytt: Høyttalerikon for TTS\n• Lagre: Legger til i historie\n• Tøm: Nullstill alt (TODO: Translate)';
 

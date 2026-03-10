@@ -351,6 +351,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String get helpJsonTypeWord => 'Słowo';
 
   @override
+  String get helpMode1Desc =>
+      'Rozpoznaj głos, przetłumacz na język docelowy i odsłuchaj wynik.';
+
+  @override
   String get helpMode1Details =>
       '• Głos: Dotknij mikrofonu aby zacząć/zatrzymać\n• Tekst: Pisz bezpośrednio aby tłumaczyć\n• Auto-Szukanie: Wykrywa podobne zdania\n• Tłumacz: Przycisk do natychmiastowego tłumaczenia\n• Słuchaj: Ikona głośnika dla TTS\n• Zapisz: \'Zapisz\' dodaje do historii\n• Wyczyść: Resetuj wszystko (TODO: Translate)';
 

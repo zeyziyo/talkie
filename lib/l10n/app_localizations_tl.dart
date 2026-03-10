@@ -355,6 +355,10 @@ class AppLocalizationsTl extends AppLocalizations {
   String get helpJsonTypeWord => 'Salita';
 
   @override
+  String get helpMode1Desc =>
+      'Kilalanin ang boses, isalin, at pakinggan ang resulta.';
+
+  @override
   String get helpMode1Details =>
       '• Mga Setting ng Wika: Pindutin ang icon sa itaas/ibaba para baguhin ang wika\n• Toggle ng Salita/Pangungusap: Lumipat ng mode\n• Input ng Boses: Pindutin ang icon ng mikropono para magsimula/huminto sa pakikinig\n• Input ng Teksto: Direktang mag-type para magsalin\n• Awtomatikong Paghahanap: Tukuyin ang magkatulad na umiiral na mga pangungusap\n• Isalin: Pindutin ang button na Isalin para agad na magsalin\n• Pakinggan: TTS playback gamit ang icon ng speaker\n• I-save: Magdagdag ng mga tala sa \'I-save ang Data\'\n• I-clear: I-reset ang input (TODO: Translate)';
 

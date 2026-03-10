@@ -351,6 +351,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get helpJsonTypeWord => 'Sana (Word)';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Kieliasetukset: Muuta omaa kieltäsi ja opiskelukieltäsi sovelluspalkin valikosta tai alareunan kielipainikkeesta\n• Yksinkertainen syöttö: Tekstin syöttö analysoi automaattisesti (sanan/lauseen) ja aktivoi asetusosio\n• Mikrofoni/näppäimistö: Aloita puheentunnistus tai tekstinsyöttö päänäytön suurilla kuvakkeilla\n• Yksityiskohtaiset asetukset: Määritä aineistokokoelma, tunnisteet ja tilannemuistiinpanot syötön aikana näkyvässä alaosassa\n• Automaattinen haku: Tunnista samankaltaiset aiemmat käännökset reaaliajassa\n• Kuuntelu: Toista natiivipuhujan ääntäminen (TTS) kaiutinkuvakkeella\n• Tallenna: Lisää heti omaan oppimislistaan \'Tallenna tiedot\' -toiminnolla';
 

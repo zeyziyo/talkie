@@ -351,6 +351,10 @@ class AppLocalizationsNb extends AppLocalizations {
   String get helpJsonTypeWord => 'Ord';
 
   @override
+  String get helpMode1Desc =>
+      'Oversett ved å gjenkjenne stemmen og lytte til resultatene.';
+
+  @override
   String get helpMode1Details =>
       '• Språkinnstillinger: Endre språk ved å trykke på ikoner øverst/nederst\n• Ord/setning-bryter: Bytt modus\n• Stemmeinput: Trykk på mikrofonikonet for å starte/stoppe lytting\n• Tekstinput: Skriv inn direkte for å oversette\n• Automatisk søk: Oppdag lignende eksisterende setninger\n• Oversett: Oversett umiddelbart ved å trykke på oversett-knappen\n• Lytt: TTS-avspilling med høyttalerikon\n• Lagre: Legg til poster med \'Lagre data\'\n• Tøm: Tilbakestill input (TODO: Translate)';
 

@@ -353,6 +353,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get helpJsonTypeWord => 'Paraula';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Configuració d\'idioma: Canvia el teu idioma i l\'idioma d\'aprenentatge al menú de la barra d\'aplicacions o al botó d\'idioma inferior.\n• Entrada senzilla: Analitza automàticament l\'entrada de text (paraula/frase) i activa l\'àrea de configuració.\n• Micròfon/Teclat: Inicia el reconeixement de veu o l\'entrada de text amb la icona gran a la pantalla principal.\n• Configuració detallada: Especifica la col·lecció de materials, les etiquetes i les notes de situació a l\'àrea inferior que apareix durant l\'entrada.\n• Cerca automàtica: Detecta traduccions existents similars en temps real.\n• Escolta: Reprodueix la pronunciació nativa (TTS) amb la icona de l\'altaveu.\n• Desa: Afegeix immediatament a la teva pròpia llista d\'aprenentatge amb \'Desa les dades\'';
 

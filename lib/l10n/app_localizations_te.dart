@@ -350,6 +350,10 @@ class AppLocalizationsTe extends AppLocalizations {
   String get helpJsonTypeWord => 'పదం (Word)';
 
   @override
+  String get helpMode1Desc =>
+      'వాయిస్‌ని గుర్తించండి, అనువదించండి మరియు ఫలితాన్ని వినండి.';
+
+  @override
   String get helpMode1Details =>
       '• వాయిస్: ప్రారంభించడానికి/ఆపడానికి మైక్‌ని నొక్కండి\n• వచనం: అనువదించడానికి నేరుగా టైప్ చేయండి\n• ఆటో-సెర్చ్: ఇలాంటి వాక్యాలను గుర్తిస్తుంది\n• అనువాదం: తక్షణ అనువాద బటన్\n• వినండి: TTS కోసం స్పీకర్ ఐకాన్\n• సేవ్: చరిత్రకు జోడిస్తుంది\n• క్లియర్: అన్నీ రీసెట్ చేయండి (TODO: Translate)';
 

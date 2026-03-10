@@ -350,6 +350,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get helpJsonTypeWord => 'Từ';
 
   @override
+  String get helpMode1Desc =>
+      'Nhận dạng giọng nói, dịch sang ngôn ngữ đích và nghe kết quả.';
+
+  @override
   String get helpMode1Details =>
       '• Nhập giọng nói: Nhấn biểu tượng mic để bắt đầu/dừng\n• Nhập văn bản: Nhập trực tiếp để dịch\n• Tự động tìm kiếm: Phát hiện các câu tương tự đã có\n• Dịch: Nhấn nút để dịch ngay lập tức\n• Nghe: Biểu tượng loa để nghe TTS\n• Lưu: \'Lưu dữ liệu\' thêm vào lịch sử\n• Xóa: Đặt lại tất cả đầu vào (TODO: Translate)';
 

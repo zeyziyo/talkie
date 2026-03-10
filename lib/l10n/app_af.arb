@@ -189,6 +189,7 @@
   "helpJsonTypeDialogue": "Dialoog",
   "helpJsonTypeSentence": "Sin",
   "helpJsonTypeWord": "Woord",
+  "helpMode1Desc": "Vertaal onmiddellik deur spraak te herken of teks in te voer, en stoor dit in die leerlys.",
   "helpMode1Details": "• Taalinstellings: Verander my taal en leer taal met die appbalkkieslys of onderste taalknoppie\n• Vereenvoudigde invoer: Ontleed outomaties (woord/sin) en aktiveer instellingsarea wanneer teks ingevoer word\n• Mikrofoon/sleutelbord: Begin stemherkenning of teksinvoer met die groot ikoon op die hoofskerm\n• Gedetailleerde instellings: Spesifiseer databronne, etikette en situasienotas in die onderste area wat tydens invoer verskyn\n• Outomatiese soektog: Bespeur soortgelyke bestaande vertalings intyds\n• Luister: Speel moedertaaluitspraak (TTS) met die luidsprekerikoon\n• Stoor: Voeg onmiddellik by jou eie leerlys met 'Data stoor'",
   "helpMode2Desc": "Hersien gestorde sinne met versteekte vertaling.",
   "helpMode2Details": "• Kies 'n bron: Gebruik 'Kies studiemateriaal' of 'Aanlyn biblioteek' in die kieslys (⋮) regs bo.\n• Draai kaart om: Bevestig vertaling met 'Wys/Versteek'.\n• Luister: Speel uitspraak met die luidspreker-ikoon.\n• Voltooi leer: Merk (V) om leer as voltooi te merk.\n• Vee uit: Vee rekords uit deur lank op die kaart te druk.\n• Soek en filtreer: Ondersteun soekbalk (intydse slim soektog) en merker- en beginletterfilters.",

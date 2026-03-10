@@ -347,6 +347,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get helpJsonTypeWord => 'Slovo';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Nastavení jazyka: Změňte svůj jazyk a jazyk, který se učíte, v nabídce aplikace nebo pomocí tlačítka jazyka ve spodní části\n• Jednoduché zadávání: Automatická analýza (slovo/věta) při zadávání textu a aktivace oblasti nastavení\n• Mikrofon/klávesnice: Spusťte rozpoznávání hlasu nebo zadávání textu pomocí velké ikony na hlavní obrazovce\n• Podrobné nastavení: Určete sbírku dat, značky, situační poznámky v dolní oblasti, která se objeví během zadávání\n• Automatické vyhledávání: Detekce podobných existujících překladů v reálném čase\n• Poslech: Přehrávání výslovnosti rodilého mluvčího (TTS) pomocí ikony reproduktoru\n• Uložit: Okamžité přidání do vašeho vlastního studijního seznamu pomocí \'Uložit data\'';
 

@@ -352,6 +352,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get helpJsonTypeWord => 'Kelime';
 
   @override
+  String get helpMode1Desc => 'Sesi tanı, hedef dile çevir ve sonucu dinle.';
+
+  @override
   String get helpMode1Details =>
       '• Ses Girişi: Başlat/durdur için mikrofona dokun\n• Metin Girişi: Çevirmek için yaz\n• Oto-Arama: Benzer cümleleri bulur\n• Çevir: Anında çeviri butonu\n• Dinle: TTS için hoparlör simgesi\n• Kaydet: \'Veri Kaydet\' geçmişe ekler\n• Temizle: Tüm girişleri sıfırla (TODO: Translate)';
 

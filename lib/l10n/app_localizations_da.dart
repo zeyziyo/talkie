@@ -346,6 +346,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get helpJsonTypeWord => 'Ord (Word)';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Sprogindstillinger: Skift mit sprog og læringssprog med app-bar-menuen eller den nederste sprogknap\n• Enkel input: Analyserer automatisk (ord/sætning) og aktiverer indstillingsområdet, når du indtaster tekst\n• Mikrofon/tastatur: Start stemmegenkendelse eller tekstinput med det store ikon på hovedskærmen\n• Detaljerede indstillinger: Angiv databog, tag og situationsnotat i det nederste område, der vises under input\n• Automatisk søgning: Registrerer lignende eksisterende oversættelser i realtid\n• Lyt: Afspil indfødt udtale (TTS) med højttalerikonet\n• Gem: Tilføj straks til din egen læringsliste med \'Gem data\'';
 

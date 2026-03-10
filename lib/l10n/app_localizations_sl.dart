@@ -350,6 +350,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get helpJsonTypeWord => 'Beseda';
 
   @override
+  String get helpMode1Desc =>
+      'Prepoznajte govor, ga prevedite in poslušajte rezultate.';
+
+  @override
   String get helpMode1Details =>
       '• Nastavitev jezika: spremenite jezik s pritiskom na ikone zgoraj/spodaj\n• Preklop med besedami/stavki: preklop načina\n• Glasovni vnos: pritisnite ikono mikrofona za začetek/ustavitev poslušanja\n• Vnos besedila: ročni vnos besedila za prevajanje\n• Samodejno iskanje: zaznavanje podobnih obstoječih stavkov\n• Prevajanje: takojšnje prevajanje s pritiskom na gumb za prevajanje\n• Poslušanje: predvajanje TTS z ikono zvočnika\n• Shranjevanje: dodajanje zapisa s »Shrani podatke«\n• Brisanje: ponastavitev vnosa (TODO: Translate)';
 

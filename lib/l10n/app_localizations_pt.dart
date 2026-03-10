@@ -356,6 +356,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get helpJsonTypeWord => 'Palavra';
 
   @override
+  String get helpMode1Desc =>
+      'Reconhecer voz, traduzir para idioma de destino e ouvir o resultado.';
+
+  @override
   String get helpMode1Details =>
       '• Voz: Toque no microfone para iniciar/parar\n• Texto: Digite diretamente para traduzir\n• Busca Auto: Detecta frases similares existentes\n• Traduzir: Toque no botão para tradução instantânea\n• Ouvir: Ícone de alto-falante para TTS\n• Salvar: \'Salvar Dados\' adiciona ao histórico\n• Limpar: Redefinir todas as entradas (TODO: Translate)';
 

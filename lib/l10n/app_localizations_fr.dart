@@ -354,6 +354,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get helpJsonTypeWord => 'Mot';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Paramètres de langue : modifiez ma langue et la langue d\'apprentissage via le menu de la barre d\'application ou le bouton de langue en bas\n• Saisie simplifiée : analyse automatique (mots/phrases) et activation de la zone de réglage lors de la saisie de texte\n• Microphone/clavier : démarrez la reconnaissance vocale ou la saisie de texte avec l\'icône grand écran sur l\'écran principal\n• Paramètres détaillés : spécifiez des documents, des balises et des mémos de situation dans la zone inférieure qui apparaît pendant la saisie\n• Recherche automatique : détection en temps réel des traductions existantes similaires\n• Écoute : lecture de la prononciation native (TTS) avec l\'icône du haut-parleur\n• Enregistrer : ajoutez instantanément à votre propre liste d\'apprentissage avec « Enregistrer les données »';
 

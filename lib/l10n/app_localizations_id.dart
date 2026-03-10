@@ -351,6 +351,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get helpJsonTypeWord => 'Kata';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Pengaturan Bahasa: Ubah bahasa saya dan bahasa pembelajaran di menu bilah aplikasi atau tombol bahasa di bagian bawah\n• Input Sederhana: Analisis otomatis (kata/kalimat) dan aktivasi area pengaturan saat memasukkan teks\n• Mikrofon/Papan Ketik: Mulai pengenalan suara atau masukkan teks dengan ikon besar di layar utama\n• Pengaturan Detail: Tentukan buku sumber, tag, dan memo situasi di area bawah yang muncul selama input\n• Pencarian Otomatis: Deteksi terjemahan lama serupa secara real time\n• Dengarkan: Putar pengucapan penutur asli (TTS) dengan ikon speaker\n• Simpan: Tambahkan langsung ke daftar pembelajaran Anda sendiri dengan \'Simpan Data\'';
 

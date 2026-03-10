@@ -349,6 +349,9 @@ class AppLocalizationsBs extends AppLocalizations {
   String get helpJsonTypeWord => 'Riječ';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Postavke jezika: Promijenite svoj jezik i jezik učenja putem izbornika trake aplikacija ili donje tipke za jezik\n• Jednostavan unos: Automatska analiza (riječ/rečenica) prilikom unosa teksta i aktivacija područja postavki\n• Mikrofon/tastatura: Pokrenite prepoznavanje glasa ili unos teksta pomoću velike ikone na glavnom ekranu\n• Detaljne postavke: Odredite priručnik, oznaku, situacijsku bilješku u donjem području koje se pojavljuje tijekom unosa\n• Automatsko pretraživanje: Otkrivanje sličnih postojećih prijevoda u stvarnom vremenu\n• Slušanje: Reprodukcija izvornog izgovora (TTS) pomoću ikone zvučnika\n• Spremanje: Odmah dodajte na vlastiti popis učenja s \'Spremi podatke\'';
 

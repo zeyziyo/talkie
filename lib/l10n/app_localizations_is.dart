@@ -353,6 +353,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get helpJsonTypeWord => 'Orð';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Tungumálastillingar: Breyttu tungumálunum þínum og tungumálunum sem þú ert að læra í valmynd appsins eða með tungumálahnappnum neðst\n• Einföld innsláttur: Greinir og virkjar stillingarsvæðið sjálfkrafa þegar texti er sleginn inn (orð/setning)\n• Hljóðnemi/lyklaborð: Byrjaðu raddgreiningu eða textainnslátt með stóru táknunum á aðalskjánum\n• Ítarlegar stillingar: Tilgreindu gagnasafn, merki og aðstæðnaathugasemdir á neðri svæðinu sem birtist meðan á innslætti stendur\n• Sjálfvirk leit: Greinir svipaðar fyrri þýðingar í rauntíma\n• Hlustun: Spilaðu framburð móðurmáls með hátalaratákninu (TTS)\n• Vista: Bættu strax við þinn eigin námslista með \'Vista gögn\'';
 

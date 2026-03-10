@@ -349,6 +349,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get helpJsonTypeWord => 'Woord';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Taalinstellings: Verander my taal en leer taal met die appbalkkieslys of onderste taalknoppie\n• Vereenvoudigde invoer: Ontleed outomaties (woord/sin) en aktiveer instellingsarea wanneer teks ingevoer word\n• Mikrofoon/sleutelbord: Begin stemherkenning of teksinvoer met die groot ikoon op die hoofskerm\n• Gedetailleerde instellings: Spesifiseer databronne, etikette en situasienotas in die onderste area wat tydens invoer verskyn\n• Outomatiese soektog: Bespeur soortgelyke bestaande vertalings intyds\n• Luister: Speel moedertaaluitspraak (TTS) met die luidsprekerikoon\n• Stoor: Voeg onmiddellik by jou eie leerlys met \'Data stoor\'';
 

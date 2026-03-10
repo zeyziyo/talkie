@@ -353,6 +353,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get helpJsonTypeWord => 'Word';
 
   @override
+  String get helpMode1Desc =>
+      'Translate your voice or text instantly and save them to your training list.';
+
+  @override
   String get helpMode1Details =>
       '• Language Settings: Change Source and Target languages via Appbar menu or bottom buttons.\n• Simple Input: Auto-analyzes text (Word/Sentence) and activates settings on typing.\n• Mic/Keyboard: Start voice recognition or text input via large home screen icons.\n• Advanced Settings: Specify materials, tags, and context notes in the bottom area during input.\n• Smart Search: Real-time detection of similar existing translations.\n• TTS Playback: Listen to native speaker pronunciation (TTS).\n• Save: Instantly add to your peronalized study list via \'Save Data\'.';
 

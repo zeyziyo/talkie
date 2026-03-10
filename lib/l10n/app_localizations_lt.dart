@@ -353,6 +353,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get helpJsonTypeWord => 'Žodis';
 
   @override
+  String get helpMode1Desc =>
+      'Atpažįsta jūsų balsą, verčia ir leidžia klausytis rezultatų.';
+
+  @override
   String get helpMode1Details =>
       '• Kalbos nustatymas: pakeiskite kalbą spustelėdami viršutines/apatinės piktogramas\n• Žodžių / sakinių perjungimas: perjungti režimus\n• Įvestis balsu: spustelėkite mikrofono piktogramą, kad pradėtumėte / sustabdytumėte klausymąsi\n• Teksto įvestis: įveskite tiesiogiai, kad išverstumėte\n• Automatinė paieška: aptikite panašius esamus sakinius\n• Vertimas: spustelėkite vertimo mygtuką, kad išverstumėte iš karto\n• Klausymas: TTS atkūrimas naudojant garsiakalbio piktogramą\n• Išsaugoti: pridėkite įrašą su „Duomenų įrašymas“\n• Išvalyti: atkurkite pradinę įvestį (TODO: Translate)';
 

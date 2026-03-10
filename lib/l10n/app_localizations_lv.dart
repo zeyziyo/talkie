@@ -350,6 +350,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get helpJsonTypeWord => 'Vārds';
 
   @override
+  String get helpMode1Desc =>
+      'Atpazīst un tulko balsi, ļauj noklausīties rezultātus.';
+
+  @override
   String get helpMode1Details =>
       '• Valodas iestatījumi: mainiet valodu, nospiežot ikonas augšā/apakšā\n• Vārdu/teikumu pārslēgšana: režīmu pārslēgšana\n• Balss ievade: nospiediet mikrofona ikonu, lai sāktu/pārtrauktu klausīšanos\n• Teksta ievade: ievadiet tekstu manuāli tulkošanai\n• Automātiska meklēšana: atrod līdzīgus esošus teikumus\n• Tulkošana: nospiediet pogu Tulkot, lai nekavējoties tulkotu\n• Klausīšanās: atskaņojiet TTS ar skaļruņa ikonu\n• Saglabāšana: pievienojiet ierakstus ar \'Datu saglabāšana\'\n• Notīrīšana: atiestatiet ievadi (TODO: Translate)';
 

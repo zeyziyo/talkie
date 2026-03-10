@@ -354,6 +354,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get helpJsonTypeWord => 'Igama (Word)';
 
   @override
+  String get helpMode1Desc =>
+      'Qaphela izwi lakho ukuhumusha, bese ulalela imiphumela.';
+
+  @override
   String get helpMode1Details =>
       '• Izilungiselelo Zolimi: Shintsha ulimi ngokuthepha izithonjana ezingaphezulu/ezansi\n• Ukuguqula Igama/Umusho: Shintsha izindlela\n• Okokufaka Kwezwi: Thepha isithonjana semakrofoni ukuze uqale/umise ukulalela\n• Okokufaka Kombhalo: Faka ngokuqondile ukuze uhumushe\n• Ukusesha Okuzenzakalelayo: Thola imisho ekhona efanayo\n• Humusha: Thepha inkinobho yokuhumusha ukuze uhumushe ngokushesha\n• Lalela: Dlala i-TTS ngesithonjana sesipika\n• Londoloza: Engeza amarekhodi \'ngokulondoloza idatha\'\n• Sula: Qalisa kabusha okokufaka (TODO: Translate)';
 

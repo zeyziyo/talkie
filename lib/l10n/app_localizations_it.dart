@@ -350,6 +350,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get helpJsonTypeWord => 'Parola';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Impostazioni lingua: cambia la mia lingua e la lingua di apprendimento tramite il menu della barra delle app o il pulsante della lingua in basso\n• Input semplificato: analizza automaticamente (parola/frase) durante l\'immissione del testo e attiva l\'area di impostazione\n• Microfono/tastiera: avvia il riconoscimento vocale o l\'input di testo con l\'icona grande nella schermata principale\n• Impostazioni dettagliate: specifica materiali, tag e note di situazione nell\'area inferiore visualizzata durante l\'immissione\n• Ricerca automatica: rileva traduzioni esistenti simili in tempo reale\n• Ascolto: riproduci la pronuncia madrelingua (TTS) con l\'icona dell\'altoparlante\n• Salva: aggiungi immediatamente al tuo elenco di apprendimento con \'Salva dati\'';
 

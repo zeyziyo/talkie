@@ -354,6 +354,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get helpJsonTypeWord => 'Cuvânt';
 
   @override
+  String get helpMode1Desc =>
+      'Recunoaștere vocală, traducere și ascultare rezultat.';
+
+  @override
   String get helpMode1Details =>
       '• Voce: Apasă microfon pentru start/stop\n• Text: Scrie direct pentru traducere\n• Auto-Căutare: Detectează propoziții similare\n• Traducere: Buton pentru traducere instantă\n• Ascultă: Icoană difuzor pentru TTS\n• Salvează: Adaugă în istoric\n• Șterge: Resetează tot (TODO: Translate)';
 

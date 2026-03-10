@@ -351,6 +351,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get helpJsonTypeWord => 'Perkataan';
 
   @override
+  String get helpMode1Desc => 'Kenal pasti suara, terjemah dan dengar hasil.';
+
+  @override
   String get helpMode1Details =>
       '• Suara: Ketik mikrofon untuk mula/berhenti\n• Teks: Taip terus untuk menterjemah\n• Auto-Cari: Mengesan ayat serupa\n• Terjemah: Butang untuk terjemahan segera\n• Dengar: Ikon pembesar suara untuk TTS\n• Simpan: Menambah ke sejarah\n• Padam: Tetapkan semula semua (TODO: Translate)';
 

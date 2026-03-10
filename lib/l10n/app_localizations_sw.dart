@@ -349,6 +349,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get helpJsonTypeWord => 'Neno';
 
   @override
+  String get helpMode1Desc => 'Tambua sauti, tafsiri na sikiliza matokeo.';
+
+  @override
   String get helpMode1Details =>
       '• Sauti: Gonga maikrofoni kuanza/kusimamisha\n• Maandishi: Andika moja kwa moja kwa kutafsiri\n• Utafutaji Kiotomatiki: Inagundua sentensi zinazofanana\n• Tafsiri: Kitufe cha tafsiri ya papo hapo\n• Sikiliza: Aikoni ya spika kwa TTS\n• Hifadhi: Inaongeza kwenye historia\n• Futa: Weka upya yote (TODO: Translate)';
 

@@ -348,6 +348,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get helpJsonTypeWord => 'Hitz';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Hizkuntza-ezarpenak: aldatu nire hizkuntza eta ikaskuntza-hizkuntza aplikazioaren barrako menuan edo beheko hizkuntza-botoian\n• Sarrera sinplea: testua sartzean automatikoki aztertzen da (hitza/esaldia) eta ezarpen-eremua aktibatzen da\n• Mikrofonoa/Teklatua: hasi ahots-ezagutza edo testu-sarrera pantaila nagusiko ikono handiarekin\n• Ezarpen zehatzak: zehaztu material-bilduma, etiketak eta egoera-oharrak sarreran agertzen den beheko eremuan\n• Bilaketa automatikoa: antzeko lehendik dauden itzulpenak denbora errealean detektatzen dira\n• Entzun: erreproduzitu jatorrizko hiztunaren ahoskera (TTS) bozgorailuaren ikonoarekin\n• Gorde: gehitu berehala zure ikaskuntza-zerrendara \'Datuak gorde\' erabiliz';
 

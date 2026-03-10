@@ -355,6 +355,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get helpJsonTypeWord => 'Salita (Word)';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Pagtatakda ng Wika: Baguhin ang aking wika at wika ng pag-aaral sa pamamagitan ng menu ng app bar o button ng wika sa ibaba\n• Simpleng Input: Awtomatikong pag-aanalisa (salita/pangungusap) kapag nag-input ng teksto at pag-activate ng lugar ng pagtatakda\n• Mikropono/Keyboard: Magsimula ng pagkilala ng boses o pag-input ng teksto gamit ang malaking icon sa pangunahing screen\n• Detalyadong Pagtatakda: Tukuyin ang materyales, tag, at sitwasyon ng memo sa ibabang lugar na lumilitaw habang nag-i-input\n• Awtomatikong Paghahanap: Real-time na pagtuklas ng mga katulad na umiiral nang pagsasalin\n• Pakikinig: Pag-playback ng pagbigkas ng katutubong nagsasalita (TTS) gamit ang icon ng speaker\n• Pag-iimbak: Agad na idagdag sa iyong sariling listahan ng pag-aaral gamit ang \'Pag-iimbak ng Data\'';
 

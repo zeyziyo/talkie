@@ -352,6 +352,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get helpJsonTypeWord => 'Söz';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Dil seçimi: Tətbiq menyusu və ya aşağıdakı dil düymələri ilə öz dilinizi və öyrənmək istədiyiniz dili dəyişdirin\n• Sadə giriş: Mətn daxil edildikdə avtomatik analiz (söz / cümlə) və tənzimləmə sahəsinin aktivləşdirilməsi\n• Mikrofon / klaviatura: Əsas ekrandakı böyük işarə ilə səs tanıma və ya mətn daxil etməyə başlayın\n• Ətraflı parametrlər: Giriş zamanı görünən aşağı sahədə məlumat kitabçası, etiket və vəziyyət qeydlərini təyin edin\n• Avtomatik axtarış: Oxşar mövcud tərcümələrin real vaxtda aşkarlanması\n• Dinləmək: Dinamik işarəsi ilə ana dilində tələffüzün (TTS) oxunması\n• Saxlamaq: \'Məlumatları saxla\' ilə dərhal öz öyrənmə siyahınıza əlavə edin';
 

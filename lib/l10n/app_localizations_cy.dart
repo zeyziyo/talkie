@@ -355,6 +355,9 @@ class AppLocalizationsCy extends AppLocalizations {
   String get helpJsonTypeWord => 'Gair';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Gosodiadau Iaith: Newidiwch fy iaith a\'r iaith ddysgu gyda\'r ddewislen bar app neu\'r botwm iaith ar y gwaelod\n• Mewnbwn Syml: Dadansoddir testun yn awtomatig (gair/brawddeg) a gosod ardal yn cael ei actifadu wrth fewnbynnu\n• Meicroffon/Bysellfwrdd: Dechreuwch adnabod llais neu fewnbynnu testun gyda\'r eicon mawr ar y prif sgrin\n• Gosodiadau Manwl: Nodi llyfr ffynhonnell, tagiau, a nodyn sefyllfa yn yr ardal isaf sy\'n ymddangos wrth fewnbynnu\n• Chwilio Awtomatig: Canfod cyfieithiadau presennol tebyg mewn amser real\n• Gwrando: Chwarae ynganiad brodor (TTS) gyda\'r eicon siaradwr\n• Cadw: Ychwanegu ar unwaith at eich rhestr ddysgu eich hun gyda \'Cadw Data\'';
 

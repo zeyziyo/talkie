@@ -350,6 +350,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get helpJsonTypeWord => 'Szó (Word)';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• Nyelvbeállítás: A saját és a tanult nyelv módosítása az alkalmazássáv menüjében vagy az alsó nyelv gombbal\n• Egyszerű bevitel: A szöveg beírásakor automatikusan elemzi (szó/mondat) és aktiválja a beállítási területet\n• Mikrofon/billentyűzet: Hangfelismerés vagy szövegbevitel indítása a főképernyőn található nagy ikonnal\n• Részletes beállítások: Adatgyűjtemény, címke, helyzetjegyzet megadása a bevitel során megjelenő alsó területen\n• Automatikus keresés: Hasonló meglévő fordítások valós idejű észlelése\n• Hallgatás: Anyanyelvi kiejtés (TTS) lejátszása a hangszóró ikonnal\n• Mentés: Azonnali hozzáadás a saját tanulási listádhoz az \'Adatok mentése\' funkcióval';
 

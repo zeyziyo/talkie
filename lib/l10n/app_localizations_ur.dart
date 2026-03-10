@@ -351,6 +351,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get helpJsonTypeWord => 'لفظ (Word)';
 
   @override
+  String get helpMode1Desc => 'آواز پہچانیں، ترجمہ کریں اور نتیجہ سنیں۔';
+
+  @override
   String get helpMode1Details =>
       '• آواز: شروع/بند کرنے کے لیے مائک دبائیں\n• متن: ترجمہ کے لیے براہ راست ٹائپ کریں\n• آٹو سرچ: ملتے جلتے جملے تلاش کرتا ہے\n• ترجمہ: فوری ترجمہ کا بٹن\n• سنیں: TTS کے لیے اسپیکر آئیکن\n• محفوظ کریں: تاریخ میں شامل کرتا ہے\n• صاف کریں: سب ری سیٹ کریں (TODO: Translate)';
 

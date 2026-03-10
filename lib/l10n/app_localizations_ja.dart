@@ -338,6 +338,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get helpJsonTypeWord => '単語 (Word)';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• 言語設定：アプリバーメニューまたは下部の言語ボタンで自分の言語と学習言語を変更\n• シンプル入力：テキスト入力時に自動的に分析（単語/文章）および設定領域を活性化\n• マイク/キーボード：メイン画面の大型アイコンで音声認識またはテキスト入力を開始\n• 詳細設定：入力中に表示される下部領域で資料集、タグ、状況メモを指定\n• 自動検索：類似した既存の翻訳をリアルタイムで検出\n• 聞く：スピーカーアイコンでネイティブの発音（TTS）を再生\n• 保存：「データ保存」で自分だけの学習リストに即時追加';
 

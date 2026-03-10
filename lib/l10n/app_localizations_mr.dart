@@ -346,6 +346,9 @@ class AppLocalizationsMr extends AppLocalizations {
   String get helpJsonTypeWord => 'शब्द (Word)';
 
   @override
+  String get helpMode1Desc => 'आवाज ओळखा, भाषांतर करा आणि निकाल ऐका.';
+
+  @override
   String get helpMode1Details =>
       '• आवाज: सुरू/थांबवण्यासाठी माईक टॅप करा\n• मजकूर: भाषांतरासाठी थेट टाईप करा\n• ऑटो-सर्च: समान वाक्ये शोधते\n• भाषांतर: त्वरित भाषांतरासाठी बटण\n• ऐका: TTS साठी स्पीकर चिन्ह\n• जतन करा: इतिहासामध्ये जोडते\n• साफ करा: सर्व रीसेट करा (TODO: Translate)';
 

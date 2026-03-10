@@ -351,6 +351,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get helpJsonTypeWord => 'Slovo';
 
   @override
+  String get helpMode1Desc =>
+      'Rozpoznáva a prekladá reč, výsledky si môžete vypočuť.';
+
+  @override
   String get helpMode1Details =>
       '• Nastavenie jazyka: zmena jazyka stlačením ikon hore/dole\n• Prepínač slov/viet: prepínanie režimov\n• Hlasový vstup: spustenie/zastavenie počúvania stlačením ikony mikrofónu\n• Textový vstup: zadávanie textu priamo na preklad\n• Automatické vyhľadávanie: detekcia podobných existujúcich viet\n• Preklad: okamžitý preklad stlačením tlačidla prekladu\n• Počúvanie: prehrávanie TTS pomocou ikony reproduktora\n• Uloženie: pridanie záznamu pomocou \'Uložiť dáta\'\n• Vymazanie: inicializácia vstupu (TODO: Translate)';
 

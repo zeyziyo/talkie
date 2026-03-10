@@ -351,6 +351,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get helpJsonTypeWord => 'Слово';
 
   @override
+  String get helpMode1Desc =>
+      'Распознавание голоса, перевод и прослушивание результата.';
+
+  @override
   String get helpMode1Details =>
       '• Голос: Нажмите микрофон для начала/остановки\n• Текст: Введите текст для перевода\n• Авто-поиск: Обнаруживает похожие предложения\n• Перевод: Нажмите кнопку для перевода\n• Слушать: Динамик для TTS (Оригинал/Перевод)\n• Сохранить: Добавляет в историю\n• Очистить: Сброс всех полей (TODO: Translate)';
 

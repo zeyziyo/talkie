@@ -339,6 +339,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get helpJsonTypeWord => '단어 (Word)';
 
   @override
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+
+  @override
   String get helpMode1Details =>
       '• 언어 설정: 앱바 메뉴 또는 하단 언어 버튼으로 내 언어와 학습 언어 변경\n• 심플 입력: 텍스트 입력 시 자동으로 분석(단어/문장) 및 설정 영역 활성화\n• 마이크/키보드: 메인 화면의 대형 아이콘으로 음성 인식 또는 텍스트 입력 시작\n• 상세 설정: 입력 중 나타나는 하단 영역에서 자료집, 태그, 상황 메모 지정\n• 자동 검색: 유사한 기존 번역 실시간 감지\n• 듣기: 스피커 아이콘으로 원어민 발음(TTS) 재생\n• 저장: \'데이터 저장\'으로 나만의 학습 리스트에 즉시 추가';
 
