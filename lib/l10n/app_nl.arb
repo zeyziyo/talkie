@@ -1,5 +1,16 @@
 {
   "@@locale": "nl",
+  "basicWords": "Basis opslagplaats voor woorden",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Invoertaal",
+  "translationLanguage": "Vertalingstaal",
+  "simplifiedGuidance": "Zet alledaagse gesprekken direct om in een vreemde taal! Talkie houdt uw taalleven bij.",
+  "cancel": "Annuleren",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Nauwkeurigheid",
   "ttsMissing": "De spraakengine voor deze taal is niet op uw apparaat geïnstalleerd.",
   "ttsInstallGuide": "Ga naar Android Instellingen > Google TTS en installeer de bijbehorende taalgegevens.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Basis Woordenlijst",
-  "basicWords": "Basis opslagplaats voor woorden",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Annuleren",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Accusatief",
   "casePossessive": "Genitief",
   "casePossessivePronoun": "Possessief voornaamwoord",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Zin",
   "helpJsonTypeWord": "Woord",
   "helpMode1Desc": "Herken stem, vertaal naar doeltaal en luister naar resultaat.",
-  "helpMode1Details": "• Spraak: Tik microfoon om te starten/stoppen\n• Tekst: Typ direct om te vertalen\n• Auto-Zoek: Detecteert bestaande zinnen\n• Vertaal: Tik knop voor directe vertaling\n• Luister: Speaker icoon voor TTS\n• Opslaan: 'Data Opslaan' voegt toe aan geschiedenis\n• Wissen: Reset alle invoer (TODO: Translate)",
+  "helpMode1Details": "• Taalinstellingen: wijzig uw taal en leertaal via het app-balkmenu of de taalknop onderaan\n• Eenvoudige invoer: begin direct met invoeren via de grote microfoon en het tekstvenster in het midden\n• Automatische analyse: analyseert automatisch (woord/zin) bij tekstinvoer en activeert het instellingengebied\n• Gedetailleerde instellingen: specificeer gegevensboeken, tags en situatiememo's in het onderste gebied dat verschijnt tijdens het invoeren\n• Automatisch zoeken: detecteert vergelijkbare bestaande vertalingen in realtime\n• Luisteren: speel moedertaaluitspraak (TTS) af met het luidsprekerpictogram\n• Opslaan: voeg direct toe aan uw eigen leerlijst met 'Gegevens opslaan'",
   "helpMode2Desc": "Herhaal opgeslagen zinnen met auto-verberg vertalingen.",
   "helpMode2Details": "• Materiaal selecteren: Gebruik 'Leermateriaal selecteren' of 'Online materiaal' in het menu (⋮) rechtsboven\n• Kaart omdraaien: Controleer de vertaling met 'Tonen/Verbergen'\n• Luisteren: Afspelen van uitspraak via het luidsprekericoon\n• Leren voltooid: Afgewerkt leren markeren met een vinkje (V)\n• Verwijderen: Houd een kaart lang ingedrukt om de geschiedenis te verwijderen\n• Zoeken en filteren: Ondersteuning voor zoekbalk (realtime slim zoeken) en tags, filters voor beginletters",
   "helpMode3Desc": "Oefen je uitspraak door de zinnen te beluisteren en na te spreken (Shadowing).",
   "helpMode3Details": "• Selecteer Materiaal: Kies studiepakket\n• Interval: [-] [+] pas wachttijd aan (3s-60s)\n• Start/Stop: Beheer sessie\n• Spreek: Luister audio en herhaal\n• Feedback: Score (0-100)\n• Probeer Opnieuw: Knop als stem niet gedetecteerd",
   "helpModeChatDesc": "Oefen echte gesprekken door te chatten met een AI-persona.",
-  "helpModeChatDetails": "• AI Chat: Oefen realistische gesprekken met persona's.\n• Deelnemersbeheer: Stel je eigen taal en de taal van de AI in om taalverschillen te voorkomen.\n• GPS-rollenspel: Creëer natuurlijke gespreksscenario's op basis van je huidige locatie.\n• Geschiedenis behouden: Alle gesprekken worden veilig opgeslagen op basis van ID, zelfs als je de naam wijzigt, blijft de geschiedenis behouden. (TODO: Translate)",
+  "helpModeChatDetails": "• AI-chat: oefen praktische gesprekken met persona's in het 'Chat'-menu op de onderste tabbladbalk\n• Persona-instellingen: specificeer vrijelijk het geslacht, de naam en de taalcode van de andere partij\n• GPS-situatiespel: herkent mijn huidige locatie en beveelt gespreksonderwerpen aan die passen bij de locatie\n• Tweetalig: de antwoorden van de AI worden weergegeven met vertalingen om het leereffect te maximaliseren\n• Recordbeheer: filter de geschiedenis van eerdere gesprekken en sla specifieke berichten tijdens het gesprek op als leermateriaal",
   "helpTabJson": "JSON Formaat",
   "helpTabModes": "Modi",
   "helpTabTour": "Rondleiding",

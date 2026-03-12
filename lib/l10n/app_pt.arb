@@ -1,5 +1,16 @@
 {
   "@@locale": "pt",
+  "basicWords": "Repositório de palavras básicas",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Idioma de entrada",
+  "translationLanguage": "Idioma de tradução",
+  "simplifiedGuidance": "Transforme instantaneamente conversas do dia a dia em um idioma estrangeiro! Talkie registra sua vida linguística.",
+  "cancel": "Cancelar",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Precisão",
   "ttsMissing": "O motor de voz para este idioma não está instalado no dispositivo.",
   "ttsInstallGuide": "Instale os dados do idioma em Configurações do Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Repositório de palavras básicas",
-  "basicWords": "Repositório de palavras básicas",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Cancelar",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Caso oblíquo",
   "casePossessive": "Caso possessivo",
   "casePossessivePronoun": "Pronome possessivo",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Frase",
   "helpJsonTypeWord": "Palavra",
   "helpMode1Desc": "Reconhecer voz, traduzir para idioma de destino e ouvir o resultado.",
-  "helpMode1Details": "• Voz: Toque no microfone para iniciar/parar\n• Texto: Digite diretamente para traduzir\n• Busca Auto: Detecta frases similares existentes\n• Traduzir: Toque no botão para tradução instantânea\n• Ouvir: Ícone de alto-falante para TTS\n• Salvar: 'Salvar Dados' adiciona ao histórico\n• Limpar: Redefinir todas as entradas (TODO: Translate)",
+  "helpMode1Details": "• Configurações de idioma: Altere meu idioma e o idioma de estudo no menu da barra de aplicativos ou no botão de idioma na parte inferior.\n• Entrada simples: Comece a digitar instantaneamente através do microfone grande central e da janela de texto.\n• Análise automática: Analisa automaticamente (palavra/frase) ao inserir texto e ativa a área de configuração.\n• Configurações detalhadas: Especifique materiais, etiquetas e notas de situação na área inferior que aparece durante a entrada.\n• Pesquisa automática: Detecta traduções existentes semelhantes em tempo real.\n• Ouvir: Reproduza a pronúncia nativa (TTS) com o ícone do alto-falante.\n• Salvar: Adicione instantaneamente à sua própria lista de estudo com 'Salvar dados'",
   "helpMode2Desc": "Revise frases salvas com tradução oculta automaticamente.",
   "helpMode2Details": "• Seleção de material: Use 'Selecionar material de estudo' ou 'Biblioteca online' no menu superior direito (⋮)\n• Virar carta: Verifique a tradução com 'Mostrar/Ocultar'\n• Ouvir: Reproduza a pronúncia com o ícone do alto-falante\n• Concluído: Marque com um visto (V) para marcar como concluído\n• Excluir: Exclua registros pressionando e segurando (clique longo) o cartão\n• Pesquisa e filtro: Suporte para barra de pesquisa (pesquisa inteligente em tempo real) e filtros de tags e letras iniciais",
   "helpMode3Desc": "Pratique sua pronúncia ouvindo e repetindo frases (Shadowing).",
   "helpMode3Details": "• Selecionar Material: Escolha pacote de estudo\n• Intervalo: [-] [+] ajustar espera (3s-60s)\n• Iniciar/Parar: Controlar sessão\n• Falar: Ouvir áudio e repetir\n• Feedback: Pontuação de precisão (0-100)\n• Tentar: Botão de tentar novamente se voz não detectada",
   "helpModeChatDesc": "Pratique conversação real interagindo com uma IA.",
-  "helpModeChatDetails": "• Chat com IA: Pratique conversas reais com personas.\n• Gerenciamento de participantes: Defina seu idioma e o idioma da IA para evitar incompatibilidades de idioma.\n• RPG com GPS: Crie cenários de conversação naturais com base em sua localização atual.\n• Preservação de histórico: Todas as conversas são armazenadas com segurança com base no ID, e o histórico é mantido mesmo se você renomear. (TODO: Translate)",
+  "helpModeChatDetails": "• Chat AI: Pratique conversas reais com personas no menu 'Chat' na barra de guias inferior.\n• Configurações de persona: Especifique livremente o gênero, nome e código de idioma do interlocutor.\n• Situação dramática de GPS: Reconhece minha localização atual e recomenda tópicos de conversação apropriados para o local.\n• 2 idiomas: As respostas da IA são exibidas com traduções para maximizar o efeito de aprendizado.\n• Gerenciamento de registros: Filtre o histórico de conversas passadas e salve mensagens específicas das conversas como materiais de estudo",
   "helpTabJson": "Formato JSON",
   "helpTabModes": "Modos",
   "helpTabTour": "Fazer um tour",

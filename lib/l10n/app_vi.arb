@@ -1,5 +1,16 @@
 {
   "@@locale": "vi",
+  "basicWords": "Kho từ cơ bản",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Ngôn ngữ nhập",
+  "translationLanguage": "Ngôn ngữ dịch",
+  "simplifiedGuidance": "Chuyển đổi tức thì các cuộc trò chuyện hàng ngày sang ngoại ngữ! Talkie sẽ ghi lại cuộc sống ngôn ngữ của bạn.",
+  "cancel": "Hủy",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Độ chính xác",
   "ttsMissing": "Không tìm thấy công cụ chuyển văn bản thành giọng nói cho ngôn ngữ này trên thiết bị của bạn.",
   "ttsInstallGuide": "Vui lòng cài đặt dữ liệu ngôn ngữ tương ứng trong Cài đặt Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Kho từ cơ bản",
-  "basicWords": "Kho từ cơ bản",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Hủy",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Tân cách",
   "casePossessive": "Sở hữu cách",
   "casePossessivePronoun": "Đại từ sở hữu",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Câu",
   "helpJsonTypeWord": "Từ",
   "helpMode1Desc": "Nhận dạng giọng nói, dịch sang ngôn ngữ đích và nghe kết quả.",
-  "helpMode1Details": "• Nhập giọng nói: Nhấn biểu tượng mic để bắt đầu/dừng\n• Nhập văn bản: Nhập trực tiếp để dịch\n• Tự động tìm kiếm: Phát hiện các câu tương tự đã có\n• Dịch: Nhấn nút để dịch ngay lập tức\n• Nghe: Biểu tượng loa để nghe TTS\n• Lưu: 'Lưu dữ liệu' thêm vào lịch sử\n• Xóa: Đặt lại tất cả đầu vào (TODO: Translate)",
+  "helpMode1Details": "• Cài đặt ngôn ngữ: Thay đổi ngôn ngữ của bạn và ngôn ngữ học tập trong menu ứng dụng hoặc nút ngôn ngữ ở dưới cùng\n• Nhập đơn giản: Bắt đầu nhập ngay lập tức thông qua micrô lớn và cửa sổ văn bản ở giữa\n• Phân tích tự động: Tự động phân tích (từ/câu) và kích hoạt vùng cài đặt khi nhập văn bản\n• Cài đặt chi tiết: Chỉ định bộ sưu tập tài liệu, thẻ và ghi nhớ tình huống trong vùng dưới cùng xuất hiện trong khi nhập\n• Tìm kiếm tự động: Phát hiện bản dịch hiện có tương tự trong thời gian thực\n• Nghe: Phát âm bản xứ (TTS) bằng biểu tượng loa\n• Lưu: Thêm ngay vào danh sách học tập của riêng bạn bằng 'Lưu dữ liệu'",
   "helpMode2Desc": "Ôn tập các câu đã lưu với tính năng tự động ẩn bản dịch.",
   "helpMode2Details": "• Chọn bộ tài liệu: Sử dụng 'Chọn bộ tài liệu học' hoặc 'Thư viện tài liệu trực tuyến' trong menu (⋮) ở góc trên bên phải\n• Lật thẻ: Kiểm tra bản dịch bằng cách 'Hiện/Ẩn'\n• Nghe: Phát âm bằng biểu tượng loa\n• Hoàn thành học tập: Xử lý hoàn thành học tập bằng dấu kiểm (V)\n• Xóa: Xóa bản ghi bằng cách nhấn giữ (Nhấn lâu) vào thẻ\n• Tìm kiếm và lọc: Hỗ trợ thanh tìm kiếm (tìm kiếm thông minh theo thời gian thực), thẻ và bộ lọc chữ cái đầu",
   "helpMode3Desc": "Luyện tập phát âm bằng cách nghe và lặp lại câu (Shadowing).",
   "helpMode3Details": "• Chọn tài liệu: Chọn gói học tập\n• Khoảng cách: [-] [+] điều chỉnh thời gian chờ (3s-60s)\n• Bắt đầu/Dừng: Điều khiển phiên nhại lại\n• Nói: Nghe âm thanh và lặp lại theo\n• Phản hồi: Điểm chính xác (0-100) với mã màu\n• Thử lại: Sử dụng nút thử lại nếu không phát hiện được giọng nói",
   "helpModeChatDesc": "Luyện tập hội thoại thực tế bằng cách trò chuyện với AI Persona.",
-  "helpModeChatDetails": "• Trò chuyện AI: Luyện tập hội thoại thực tế với nhân vật.\n• Quản lý người tham gia: Cài đặt ngôn ngữ của bạn và ngôn ngữ của AI để tránh sai lệch ngôn ngữ.\n• Nhập vai GPS: Tạo tình huống hội thoại tự nhiên dựa trên vị trí hiện tại.\n• Lưu giữ lịch sử: Tất cả cuộc trò chuyện được lưu trữ an toàn dựa trên ID và lịch sử được giữ lại ngay cả khi bạn đổi tên. (TODO: Translate)",
+  "helpModeChatDetails": "• Trò chuyện AI: Thực hành trò chuyện thực tế với một nhân vật trong menu 'Trò chuyện' trên thanh tab ở dưới cùng\n• Cài đặt nhân vật: Tự do chỉ định giới tính, tên và mã ngôn ngữ của đối phương\n• Tình huống GPS: Nhận biết vị trí hiện tại của bạn và đề xuất các chủ đề trò chuyện phù hợp với địa điểm\n• Hai ngôn ngữ: Câu trả lời của AI được hiển thị cùng với bản dịch để tối đa hóa hiệu quả học tập\n• Quản lý lịch sử: Lọc lịch sử trò chuyện trước đây và lưu các tin nhắn cụ thể trong cuộc trò chuyện dưới dạng tài liệu học tập",
   "helpTabJson": "Định dạng JSON",
   "helpTabModes": "Chế độ",
   "helpTabTour": "Hướng dẫn",

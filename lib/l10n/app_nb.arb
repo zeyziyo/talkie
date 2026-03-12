@@ -1,5 +1,16 @@
 {
   "@@locale": "nb",
+  "basicWords": "Grunnleggende ordlager",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Inndataspråk",
+  "translationLanguage": "Oversettelsesspråk",
+  "simplifiedGuidance": "Konverter hverdagsprat til fremmedspråk på et øyeblikk! Talkie logger ditt språkliv.",
+  "cancel": "Avbryt",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Nøyaktighet",
   "ttsMissing": "Stemmemotoren for dette språket er ikke installert på enheten din.",
   "ttsInstallGuide": "Installer språkdataene i Android-innstillinger > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Grunnleggende ordliste",
-  "basicWords": "Grunnleggende ordlager",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Avbryt",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Objekt",
   "casePossessive": "Eiendomsform",
   "casePossessivePronoun": "Eiendomspronomen",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Setning",
   "helpJsonTypeWord": "Ord",
   "helpMode1Desc": "Oversett ved å gjenkjenne stemmen og lytte til resultatene.",
-  "helpMode1Details": "• Språkinnstillinger: Endre språk ved å trykke på ikoner øverst/nederst\n• Ord/setning-bryter: Bytt modus\n• Stemmeinput: Trykk på mikrofonikonet for å starte/stoppe lytting\n• Tekstinput: Skriv inn direkte for å oversette\n• Automatisk søk: Oppdag lignende eksisterende setninger\n• Oversett: Oversett umiddelbart ved å trykke på oversett-knappen\n• Lytt: TTS-avspilling med høyttalerikon\n• Lagre: Legg til poster med 'Lagre data'\n• Tøm: Tilbakestill input (TODO: Translate)",
+  "helpMode1Details": "• Språkinnstillinger: Endre mitt språk og læringsspråk via applinjemenyen eller språkknappen nederst\n• Enkel input: Start umiddelbart input via den store mikrofonen og tekstvinduet i midten\n• Automatisk analyse: Analyserer automatisk (ord/setning) og aktiverer innstillingsområdet ved tekstinput\n• Detaljerte innstillinger: Spesifiser datamateriell, tagger og situasjonsnotater i området nederst som vises under input\n• Automatisk søk: Oppdager lignende eksisterende oversettelser i sanntid\n• Lytt: Spill av morsmålsuttale (TTS) med høyttalerikonet\n• Lagre: Legg umiddelbart til din egen læringsliste med 'Lagre data'",
   "helpMode2Desc": "Gå gjennom lagrede setninger og sjekk om du husker dem med automatisk skjuling.",
   "helpMode2Details": "• Velg arbeidsbok: Bruk 'Velg arbeidsbok' eller 'Online ressursbibliotek' fra menyen (⋮) øverst til høyre\n• Snu kort: Sjekk oversettelsen med 'Vis/Skjul'\n• Lytt: Spill av uttale med høyttalerikonet\n• Ferdig med læring: Merk som fullført med en hake (V)\n• Slett: Slett oppføringer ved å trykke lenge på kortet\n• Søk og filter: Støtte for søkefelt (smart sanntidssøk) og tagger, filter for startbokstav",
   "helpMode3Desc": "Øv uttale ved å lytte til og gjenta setninger (skygging).",
   "helpMode3Details": "• Velg materiale: Velg materialet du vil studere\n• Angi intervall: Juster ventetiden mellom setningene med [-] [+] (3 sekunder til 60 sekunder)\n• Start/Stopp: Kontroller skyggeøkten\n• Snakk: Lytt til stemmen og gjenta\n• Tilbakemelding: Nøyaktighetsskår (0-100) og fargedisplay\n• Søkekriterier: Filtrer øvelsesmål etter tagger, nylige elementer, startbokstaver",
   "helpModeChatDesc": "Øv på samtaler med en AI-persona.",
-  "helpModeChatDetails": "• AI-chat: Øv på samtaler ved å snakke på ditt språk\n• Flere personligheter: Du kan endre den andres kjønn/språk/navn med menyen over taleboblen\n• Legg til partner: Legg til en ny samtalepartner (fremmed) med +-knappen\n• GPS: Situasjonskomedie basert på din nåværende posisjon\n• Automatisk lagring: Automatisk oversettelse og lagring av samtaleinnhold (TODO: Translate)",
+  "helpModeChatDetails": "• AI-chat: Øv på samtaler med en persona i 'Chat'-menyen i den nederste fanebaren\n• Personainnstillinger: Spesifiser fritt kjønn, navn og språkkode for den andre parten\n• GPS-situasjonsspill: Gjenkjenner min nåværende posisjon og anbefaler samtaletemaer som passer til stedet\n• Tospråklig: AI-ens svar vises med oversettelse, noe som maksimerer læringseffekten\n• Journalføring: Filtrer tidligere samtalehistorikk og lagre spesifikke meldinger i samtaler som læremateriell",
   "helpTabJson": "JSON-format",
   "helpTabModes": "Modusforklaring",
   "helpTabTour": "Prøv en omvisning",

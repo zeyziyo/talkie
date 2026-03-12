@@ -1,5 +1,16 @@
 {
   "@@locale": "zu",
+  "basicWords": "Inqolobane Yamagama Ayisisekelo",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Ulimi wokufaka",
+  "translationLanguage": "Ulimi lokuhumusha",
+  "simplifiedGuidance": "Guqula izingxoxo zansuku zonke zibe izilimi zangaphandle ngokushesha! I-Talkie izorekhoda impilo yakho yezilimi.",
+  "cancel": "Khansela",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Ukunemba",
   "ttsMissing": "Injini yezwi yalolu limi ayifakiwe kudivayisi yakho.",
   "ttsInstallGuide": "Sicela ufake idatha yolimi olufanele kuzilungiselelo ze-Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Inqolobane Yamagama Ayisisekelo",
-  "basicWords": "Inqolobane Yamagama Ayisisekelo",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Khansela",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Into",
   "casePossessive": "Okobanini",
   "casePossessivePronoun": "Isabizwana Esibanini",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Umusho (Sentence)",
   "helpJsonTypeWord": "Igama (Word)",
   "helpMode1Desc": "Qaphela izwi lakho ukuhumusha, bese ulalela imiphumela.",
-  "helpMode1Details": "• Izilungiselelo Zolimi: Shintsha ulimi ngokuthepha izithonjana ezingaphezulu/ezansi\n• Ukuguqula Igama/Umusho: Shintsha izindlela\n• Okokufaka Kwezwi: Thepha isithonjana semakrofoni ukuze uqale/umise ukulalela\n• Okokufaka Kombhalo: Faka ngokuqondile ukuze uhumushe\n• Ukusesha Okuzenzakalelayo: Thola imisho ekhona efanayo\n• Humusha: Thepha inkinobho yokuhumusha ukuze uhumushe ngokushesha\n• Lalela: Dlala i-TTS ngesithonjana sesipika\n• Londoloza: Engeza amarekhodi 'ngokulondoloza idatha'\n• Sula: Qalisa kabusha okokufaka (TODO: Translate)",
+  "helpMode1Details": "• Izilungiselelo Zolimi: Shintsha ulimi lwami nolimi lokufunda ngemenyu yebha yohlelo lokusebenza noma inkinobho yolimi engezansi\n• Ukufaka Okulula: Qala ukufaka ngokushesha ngemakrofoni enkulu kanye nefasitela lombhalo elisemaphakathi\n• Ukuhlaziywa Okuzenzakalelayo: Ukuhlaziywa okuzenzakalelayo (amagama/imisho) nokuvulwa kwendawo yezilungiselelo lapho ufaka umbhalo\n• Izilungiselelo Ezinemininingwane: Cacisa iqoqo lezinto zokufunda, ithegi, kanye nememo yesimo endaweni engezansi evela ngenkathi uthayipha\n• Ukusesha Okuzenzakalelayo: Thola izinguqulo ezikhona ezifanayo ngesikhathi sangempela\n• Ukulalela: Dlala ukuphinyiselwa komdabu (i-TTS) ngesithonjana sesipika\n• Londoloza: Engeza ngokushesha ohlwini lwakho lokufunda ngokwezifiso ngokuthi 'Londoloza Idatha'",
   "helpMode2Desc": "Bukeza imisho elondoloziwe, bese uhlola ukuthi ukhumbule nge-auto-hide.",
   "helpMode2Details": "• Ukukhetha Incwadi Yokufunda: Sebenzisa imenyu engenhla kwesokudla (⋮) ukuze 'Ukhethe Incwadi Yokufunda' noma 'Ilabhulali Yezinto Eziku-inthanethi'\n• Ukuphenya Ikhadi: Qinisekisa ukuhumusha ngokuthi 'Bonisa/Fihla'\n• Ukulalela: Dlala ukuphinyiselwa ngesithonjana sesipika\n• Ukuqeda Ukufunda: Maka njengokuqediwe ngokuthi uphawu lokuhlola (V)\n• Ukususa: Cindezela isikhathi eside ikhadi ukuze ususe umlando\n• Ukusesha Nokuhlunga: Sekela ibha yokusesha (ukusesha okuhlakaniphile kwesikhathi sangempela) namathegi, isihlungi sezinhlamvu zokuqala",
   "helpMode3Desc": "Lalela umusho bese uwuphinda (Ukushadelwa) ukuze uthuthukise indlela obiza ngayo amagama.",
   "helpMode3Details": "• Khetha Izinto Zokwakha: Khetha iqoqo lezinto zokufunda\n• Setha Isikhawu: Lungisa isikhathi sokulinda phakathi kwemisho ngezinkinobho [-] [+] (3 imizuzwana - 60 imizuzwana)\n• Qala/Misa: Lawula iseshini ye-shadowing\n• Khuluma: Lalela izwi bese ukhuluma ngemuva\n• Impendulo: Amamaki okunemba (0-100) nokuboniswa kombala\n• Izimo Zokusesha: Hlunga izinto ezingapheli ngamathegi, izinto zamuva, izinhlamvu zokuqala",
   "helpModeChatDesc": "Zijwayeze ingxoxo yangempela ngokuxoxa no-AI.",
-  "helpModeChatDetails": "• Ingxoxo ye-AI: Khuluma ngolimi lwakho ukuze uzilolonge ingxoxo\n• Ubuningi Bezimo: Ungashintsha ubulili/ulimi/igama lomuntu okhuluma naye ngemenyu engaphezu kwebhamuza lenkulumo\n• Engeza Umlingani: Engeza umuntu omusha (Ongamazi) ngenkinobho +\n• I-GPS: Isimo esisekelwe endaweni yamanje\n• Ukulondolozwa Okuzenzakalelayo: Ukuhumusha okuzenzakalelayo nokulondolozwa kokuqukethwe kwengxoxo (TODO: Translate)",
+  "helpModeChatDetails": "• Ingxoxo ye-AI: Zijwayeze ingxoxo yangempela nomuntu ku-'Chat' kumathebhu angezansi\n• Izilungiselelo Zomuntu: Cacisa ngokukhululekile ubulili, igama, kanye nekhodi yolimi lomunye umuntu\n• Idrama yesimo se-GPS: Thola indawo yakho yamanje futhi uncoma izihloko zengxoxo ezifanele indawo\n• Izilimi ezi-2: Izimpendulo ze-AI ziboniswa ngokuhumusha ukukhulisa umphumela wokufunda\n• Ukuphathwa Kwerekhodi: Hlunga umlando wezingxoxo ezedlule bese ugcina imilayezo ethile ezingxoxweni njengezinto zokufunda",
   "helpTabJson": "Ifomethi ye-JSON",
   "helpTabModes": "Incazelo Yezindlela",
   "helpTabTour": "Zithokozise",

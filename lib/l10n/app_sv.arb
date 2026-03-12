@@ -1,5 +1,16 @@
 {
   "@@locale": "sv",
+  "basicWords": "Grundläggande ordlista",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Inputspråk",
+  "translationLanguage": "Översättningsspråk",
+  "simplifiedGuidance": "Konvertera vardagliga konversationer till ett främmande språk på ett ögonblick! Talkie kommer att registrera ditt språkliv.",
+  "cancel": "Avbryt",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Noggrannhet",
   "ttsMissing": "Den här språkets röstmotor är inte installerad på enheten.",
   "ttsInstallGuide": "Installera språkdata under Android-inställningar > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Grundläggande ordlista",
-  "basicWords": "Grundläggande ordlista",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Avbryt",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Objekt",
   "casePossessive": "Possessiv",
   "casePossessivePronoun": "Possessivt pronomen",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Mening (Sentence)",
   "helpJsonTypeWord": "Ord (Word)",
   "helpMode1Desc": "Röstigenkänning, översättning och lyssna på resultat.",
-  "helpMode1Details": "• Röst: Tryck mikrofon för start/stopp\n• Text: Skriv direkt för översättning\n• Auto-Sök: Hittar liknande meningar\n• Översätt: Knapp för direktöversättning\n• Lyssna: Ikon för TTS\n• Spara: Lägger till i historik\n• Rensa: Återställ allt (TODO: Translate)",
+  "helpMode1Details": "• Språkinställningar: Ändra mitt språk och inlärningsspråk via appbarmenyn eller språkknappen längst ner\n• Enkel inmatning: Börja mata in omedelbart via den stora mikrofonen och textfönstret i mitten\n• Automatisk analys: Analyseras automatiskt (ord/mening) vid textinmatning och aktiverar inställningsområdet\n• Detaljerade inställningar: Ange databok, tagg och situationsanteckning i det nedre området som visas under inmatningen\n• Automatisk sökning: Upptäck liknande befintliga översättningar i realtid\n• Lyssna: Spela upp modersmålstal (TTS) med högtalarikonen\n• Spara: Lägg omedelbart till din egen inlärningslista med 'Spara data'",
   "helpMode2Desc": "Repetera sparade meningar med dold översättning.",
   "helpMode2Details": "• Välj material: Använd menyn (⋮) uppe till höger för att välja 'Välj studiematerial' eller 'Online materialarkiv'\n• Vänd kort: Kontrollera översättningen med 'Visa/Dölj'\n• Lyssna: Spela upp uttal med högtalarikonen\n• Färdig med inlärning: Markera som färdig med en bock (V)\n• Radera: Ta bort poster genom att trycka länge (Long Click) på kortet\n• Sök och filtrera: Stöd för sökfält (smartsökning i realtid) och taggar, filter för begynnelsebokstav",
   "helpMode3Desc": "Öva ditt uttal genom att lyssna på och upprepa meningar (skuggning).",
   "helpMode3Details": "• Välj: Välj paket\n• Intervall: [-] [+] väntetid (3s-60s)\n• Start/Stopp: Kontrollera session\n• Tala: Lyssna och upprepa\n• Poäng: Noggrannhet (0-100)\n• Försök: Knapp om röst ej hittas",
   "helpModeChatDesc": "Öva konversationsfärdigheter genom att chatta med en AI-persona.",
-  "helpModeChatDetails": "• AI-chatt: Öva verkliga samtal med en AI-persona.\n• Deltagarhantering: Ställ in dina och AI:s språk för att undvika språkfel.\n• GPS-rollspel: Skapa naturliga samtal baserade på din plats.\n• Historik: Alla konversationer sparas säkert med ID, och historiken bevaras även om du byter namn. (TODO: Translate)",
+  "helpModeChatDetails": "• AI-chatt: Öva på verkliga konversationer med en persona i menyn 'Chatt' i den nedre flikfältet\n• Personainställningar: Ange fritt motpartens kön, namn och språkkod\n• GPS-situationskomedi: Känner igen min nuvarande plats och rekommenderar samtalsämnen som passar platsen\n• Tvåspråkig: AI:s svar visas med översättning för att maximera inlärningseffekten\n• Logghantering: Filtrera tidigare konversationshistorik och spara specifika meddelanden i konversationen som läromedel",
   "helpTabJson": "JSON-format",
   "helpTabModes": "Lägen",
   "helpTabTour": "Tur",

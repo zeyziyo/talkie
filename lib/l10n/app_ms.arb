@@ -1,5 +1,16 @@
 {
   "@@locale": "ms",
+  "basicWords": "Repositori Perkataan Asas",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Bahasa Input",
+  "translationLanguage": "Bahasa Terjemahan",
+  "simplifiedGuidance": "Ubah perbualan harian ke bahasa asing dalam sekelip mata! Talkie merekodkan kehidupan bahasa anda.",
+  "cancel": "Batal",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Ketepatan",
   "ttsMissing": "Enjin suara untuk bahasa ini tidak dipasang pada peranti anda.",
   "ttsInstallGuide": "Sila pasang data bahasa yang berkaitan dalam Tetapan Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Repositori Kata Dasar",
-  "basicWords": "Repositori Perkataan Asas",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Batal",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Akusatif",
   "casePossessive": "Genitif",
   "casePossessivePronoun": "Kata Ganti Nama Milik",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Ayat",
   "helpJsonTypeWord": "Perkataan",
   "helpMode1Desc": "Kenal pasti suara, terjemah dan dengar hasil.",
-  "helpMode1Details": "• Suara: Ketik mikrofon untuk mula/berhenti\n• Teks: Taip terus untuk menterjemah\n• Auto-Cari: Mengesan ayat serupa\n• Terjemah: Butang untuk terjemahan segera\n• Dengar: Ikon pembesar suara untuk TTS\n• Simpan: Menambah ke sejarah\n• Padam: Tetapkan semula semua (TODO: Translate)",
+  "helpMode1Details": "• Tetapan Bahasa: Tukar bahasa saya dan bahasa pembelajaran dalam menu bar aplikasi atau butang bahasa di bahagian bawah\n• Input Mudah: Mula menaip serta-merta melalui mikrofon besar pusat dan tetingkap teks\n• Analisis Automatik: Analisis automatik (perkataan/ayat) dan pengaktifan kawasan tetapan semasa input teks\n• Tetapan Terperinci: Tentukan koleksi data, teg dan memo situasi dalam kawasan bawah yang muncul semasa input\n• Carian Automatik: Mengesan terjemahan sedia ada yang serupa dalam masa nyata\n• Dengar: Mainkan sebutan penutur asli (TTS) dengan ikon pembesar suara\n• Simpan: Tambah serta-merta pada senarai pembelajaran anda sendiri dengan 'Simpan Data'",
   "helpMode2Desc": "Ulas ayat disimpan dengan terjemahan tersembunyi.",
   "helpMode2Details": "• Pilih Koleksi: Guna menu (⋮) di kanan atas untuk 'Pilih Koleksi Pembelajaran' atau 'Perpustakaan Dalam Talian'\n• Balikkan Kad: Semak terjemahan dengan 'Tunjuk/Sembunyi'\n• Dengar: Mainkan sebutan dengan ikon pembesar suara\n• Pembelajaran Selesai: Tandakan (V) untuk menandakan pembelajaran selesai\n• Padam: Tekan lama (Long Click) pada kad untuk memadam rekod\n• Cari & Tapis: Sokongan bar carian (Carian Pintar masa nyata) dan penapis tag, huruf permulaan",
   "helpMode3Desc": "Berlatih sebutan dengan mendengar dan mengulangi ayat (Membayangi).",
   "helpMode3Details": "• Pilih: Pilih pakej\n• Selang: [-] [+] masa menunggu (3s-60s)\n• Mula/Berhenti: Kawal sesi\n• Bercakap: Dengar dan ulang\n• Skor: Ketepatan (0-100)\n• Cuba lagi: Butang jika suara tidak dikesan",
   "helpModeChatDesc": "Berlatih perbualan dunia sebenar dengan berbual dengan persona AI.",
-  "helpModeChatDetails": "• Sembang AI: Berlatih perbualan sebenar dengan persona.\n• Pengurusan Peserta: Tetapkan bahasa anda dan bahasa AI untuk mengelakkan ketidakpadanan bahasa.\n• Lakonan GPS: Cipta senario perbualan semula jadi berdasarkan lokasi semasa anda.\n• Penyimpanan Rekod: Semua perbualan disimpan dengan selamat berdasarkan ID, dan rekod dikekalkan walaupun nama ditukar. (TODO: Translate)",
+  "helpModeChatDetails": "• Sembang AI: Berlatih perbualan sebenar dengan persona dalam menu 'Sembang' pada bar tab bawah\n• Tetapan Persona: Tentukan jantina, nama dan kod bahasa pihak lawan secara bebas\n• Situasi Main GPS: Mencadangkan topik perbualan yang sesuai untuk tempat dengan mengenali lokasi semasa saya\n• 2 Bahasa: Jawapan AI dipaparkan dengan terjemahan untuk memaksimumkan kesan pembelajaran\n• Pengurusan Rekod: Menapis sejarah perbualan lalu dan menyimpan mesej tertentu daripada perbualan sebagai bahan pembelajaran",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Mod",
   "helpTabTour": "Lawatan",

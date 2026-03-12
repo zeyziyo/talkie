@@ -1,5 +1,16 @@
 {
   "@@locale": "sw",
+  "basicWords": "Hifadhi ya Msingi ya Maneno",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Lugha ya kuingiza",
+  "translationLanguage": "Lugha ya kutafsiri",
+  "simplifiedGuidance": "Badilisha mazungumzo ya kila siku mara moja katika lugha ya kigeni! Talkie inarekodi maisha yako ya lugha.",
+  "cancel": "Ghairi",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Usahihi",
   "ttsMissing": "Injini ya sauti ya lugha hii haijasakinishwa kwenye kifaa chako.",
   "ttsInstallGuide": "Tafadhali sakinisha data ya lugha husika katika Mipangilio ya Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Hifadhi ya Maneno ya Msingi",
-  "basicWords": "Hifadhi ya Msingi ya Maneno",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Ghairi",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Lengo",
   "casePossessive": "Miliki",
   "casePossessivePronoun": "Kiwakilishi cha Kumiliki",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Sentensi",
   "helpJsonTypeWord": "Neno",
   "helpMode1Desc": "Tambua sauti, tafsiri na sikiliza matokeo.",
-  "helpMode1Details": "• Sauti: Gonga maikrofoni kuanza/kusimamisha\n• Maandishi: Andika moja kwa moja kwa kutafsiri\n• Utafutaji Kiotomatiki: Inagundua sentensi zinazofanana\n• Tafsiri: Kitufe cha tafsiri ya papo hapo\n• Sikiliza: Aikoni ya spika kwa TTS\n• Hifadhi: Inaongeza kwenye historia\n• Futa: Weka upya yote (TODO: Translate)",
+  "helpMode1Details": "• Mpangilio wa lugha: Badilisha lugha yangu na lugha ya kujifunza kupitia menyu ya upau wa programu au kitufe cha lugha chini\n• Ingizo rahisi: Anza kuingiza mara moja kupitia maikrofoni kubwa ya kati na dirisha la maandishi\n• Uchambuzi wa kiotomatiki: Uchambuzi otomatiki (neno/sentensi) na uamilishaji wa eneo la mipangilio wakati wa kuingiza maandishi\n• Mipangilio ya kina: Bainisha kitabu cha nyenzo, lebo, na memo ya hali katika eneo la chini linaloonekana wakati wa kuingiza\n• Utafutaji otomatiki: Gundua tafsiri zilizopo zinazofanana katika wakati halisi\n• Sikiliza: Cheza matamshi ya asili (TTS) na ikoni ya spika\n• Hifadhi: Ongeza mara moja kwenye orodha yako ya kujifunza na 'Hifadhi data'",
   "helpMode2Desc": "Pitia sentensi zilizohifadhiwa na tafsiri iliyofichwa.",
   "helpMode2Details": "• Chagua kitabu cha masomo: Tumia 'Chagua kitabu cha masomo' au 'Maktaba ya mtandaoni' kutoka kwenye menyu (⋮) iliyo juu kulia.\n• Geuza kadi: Thibitisha tafsiri kwa 'Onyesha/Ficha'.\n• Sikiliza: Cheza matamshi kwa ikoni ya spika.\n• Kamilisha kujifunza: Kamilisha kujifunza kwa alama ya tiki (V).\n• Futa: Futa rekodi kwa kubonyeza kadi kwa muda mrefu.\n• Tafuta na chujio: Saidia upau wa utafutaji (utafutaji mahiri wa moja kwa moja) na lebo, kichujio cha herufi ya kwanza.",
   "helpMode3Desc": "Sikiliza sentensi na urudie (Shadowing) ili kufanya mazoezi ya matamshi.",
   "helpMode3Details": "• Chagua: Chagua kifurushi\n• Muda: [-] [+] muda wa kusubiri (3s-60s)\n• Anza/Simama: Dhibiti kikao\n• Zungumza: Sikiliza na rudia\n• Alama: Usahihi (0-100)\n• Jaribu tena: Kitufe ikiwa sauti haigunduliwi",
   "helpModeChatDesc": "Fanya mazoezi ya mazungumzo halisi kwa kuzungumza na AI.",
-  "helpModeChatDetails": "• Gumzo la AI: Fanya mazoezi ya mazungumzo halisi na wahusika.\n• Usimamizi wa Washiriki: Weka lugha yako na lugha ya AI ili kuzuia kutolingana kwa lugha.\n• Mchezo wa Kuigiza wa GPS: Unda hali za mazungumzo asilia kulingana na eneo lako la sasa.\n• Hifadhi ya Historia: Mazungumzo yote yamehifadhiwa kwa usalama kulingana na Kitambulisho, na historia huhifadhiwa hata kama unabadilisha jina. (TODO: Translate)",
+  "helpModeChatDetails": "• Gumzo la AI: Fanya mazoezi ya mazungumzo ya vitendo na mtu kupitia menyu ya 'Gumzo' kwenye upau wa kichupo cha chini\n• Mpangilio wa mtu: Bainisha kwa uhuru jinsia, jina na msimbo wa lugha wa mhusika mwingine\n• Hali ya GPS: Tambua eneo langu la sasa na upendekeze mada za mazungumzo zinazofaa eneo\n• Lugha 2: Majibu ya AI yanaonyeshwa pamoja na tafsiri ili kuongeza athari ya kujifunza\n• Usimamizi wa rekodi: Chuja historia ya mazungumzo ya zamani na uhifadhi ujumbe maalum kama nyenzo za kujifunza wakati wa mazungumzo",
   "helpTabJson": "Muundo wa JSON",
   "helpTabModes": "Njia",
   "helpTabTour": "Ziara",

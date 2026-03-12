@@ -1,5 +1,16 @@
 {
   "@@locale": "lt",
+  "basicWords": "Pagrindinė žodžių saugykla",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Įvesties kalba",
+  "translationLanguage": "Vertimo kalba",
+  "simplifiedGuidance": "Akimirksniu paverskite kasdienius pokalbius į užsienio kalbas! „Talkie“ įrašys jūsų kalbos gyvenimą.",
+  "cancel": "Atšaukti",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Tikslumas",
   "ttsMissing": "Šiam kalbos paketui įrenginyje neįdiegta jokio teksto į kalbą variklio.",
   "ttsInstallGuide": "Įdiekite kalbos duomenis skiltyje „Android“ nustatymai > „Google TTS“.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Pagrindinė žodžių saugykla",
-  "basicWords": "Pagrindinė žodžių saugykla",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Atšaukti",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Galima",
   "casePossessive": "Giminininkas",
   "casePossessivePronoun": "Savybinis įvardis",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Sakinys",
   "helpJsonTypeWord": "Žodis",
   "helpMode1Desc": "Atpažįsta jūsų balsą, verčia ir leidžia klausytis rezultatų.",
-  "helpMode1Details": "• Kalbos nustatymas: pakeiskite kalbą spustelėdami viršutines/apatinės piktogramas\n• Žodžių / sakinių perjungimas: perjungti režimus\n• Įvestis balsu: spustelėkite mikrofono piktogramą, kad pradėtumėte / sustabdytumėte klausymąsi\n• Teksto įvestis: įveskite tiesiogiai, kad išverstumėte\n• Automatinė paieška: aptikite panašius esamus sakinius\n• Vertimas: spustelėkite vertimo mygtuką, kad išverstumėte iš karto\n• Klausymas: TTS atkūrimas naudojant garsiakalbio piktogramą\n• Išsaugoti: pridėkite įrašą su „Duomenų įrašymas“\n• Išvalyti: atkurkite pradinę įvestį (TODO: Translate)",
+  "helpMode1Details": "• Kalbos nustatymas: pakeiskite savo ir mokymosi kalbas programos juostos meniu arba apatiniu kalbos mygtuku\n• Paprastas įvedimas: pradėkite įvedimą iškart per didelį centrinį mikrofoną ir teksto langą\n• Automatinė analizė: automatiškai analizuokite (žodžius / sakinius) ir suaktyvinkite nustatymų sritį įvedant tekstą\n• Išsamūs nustatymai: įvedant nurodykite medžiagų rinkinį, žymes ir situacijos pastabas apatinėje srityje, kuri pasirodo\n• Automatinė paieška: aptikti panašius esamus vertimus realiuoju laiku\n• Klausymas: leiskite gimtosios kalbos tarimą (TTS) su garsiakalbio piktograma\n• Išsaugojimas: iškart pridėkite prie savo mokymosi sąrašo naudodami „Išsaugoti duomenis“",
   "helpMode2Desc": "Peržiūrėkite išsaugotus sakinius ir patikrinkite, ar jie įsiminti, naudodami automatinio slėpimo funkciją.",
   "helpMode2Details": "• Medžiagos pasirinkimas: viršutiniame dešiniajame kampe esančiame meniu (⋮) naudokite 'Pasirinkti mokymosi medžiagą' arba 'Internetinę medžiagų biblioteką'\n• Kortelės apvertimas: patikrinkite vertimą su 'Rodyti/Slėpti'\n• Klausymas: atkurkite tarimą naudodami garsiakalbio piktogramą\n• Mokymosi užbaigimas: pažymėkite (V), kad užbaigtumėte mokymąsi\n• Ištrinti: ilgai paspauskite kortelę, kad ištrintumėte įrašą\n• Paieška ir filtrai: palaikykite paieškos juostą (pažangi paieška realiuoju laiku) ir žymas, pradedantį raidžių filtrą",
   "helpMode3Desc": "Klausykite sakinio ir kartokite (šešėliavimas), kad praktikuotumėte tarimą.",
   "helpMode3Details": "• Medžiagos pasirinkimas: pasirinkite medžiagų rinkinį, kurį norite studijuoti\n• Intervalo nustatymas: reguliuokite laukimo laiką tarp sakinių naudodami mygtukus [-] [+]. (3–60 sekundžių)\n• Pradėti / sustabdyti: šešėliavimo sesijos valdymas\n• Kalbėjimas: klausykitės ir kartokite balsą\n• Atsiliepimas: tikslumo balas (0–100) ir spalvų ekranas\n• Paieškos sąlygos: filtruokite praktikos taikinius pagal žymą, naujausius elementus, pradžios raidę",
   "helpModeChatDesc": "Praktikuokite pokalbius su AI personažu.",
-  "helpModeChatDetails": "• AI pokalbiai: praktikuokite pokalbius kalbėdami savo kalba\n• Keli personažai: galima pakeisti oponento lytį / kalbą / vardą meniu virš baliono\n• Pridėti partnerį: pridėkite naują pašnekovą (Nepažįstamąjį) naudodami mygtuką +\n• GPS: situacijos komedija pagal dabartinę vietą\n• Automatinis išsaugojimas: automatinis pokalbio turinio vertimas ir išsaugojimas (TODO: Translate)",
+  "helpModeChatDetails": "• AI pokalbiai: praktikuokite pokalbius realiame gyvenime su asmenybėmis meniu „Pokalbis“ apatinėje skirtukų juostoje\n• Asmenybės nustatymas: laisvai nurodykite pašnekovo lytį, vardą ir kalbos kodą\n• GPS inscenizacija: atpažinkite savo dabartinę vietą ir rekomenduokite pokalbio temas, atitinkančias vietą\n• 2 kalbos: AI atsakymai rodomi kartu su vertimu, kad maksimaliai padidintumėte mokymosi efektą\n• Įrašų valdymas: filtruokite ankstesnę pokalbių istoriją ir išsaugokite konkrečias žinutes iš pokalbio kaip mokymosi medžiagą",
   "helpTabJson": "JSON formatas",
   "helpTabModes": "Režimų paaiškinimas",
   "helpTabTour": "Apžiūrėti",

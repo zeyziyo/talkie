@@ -1,5 +1,16 @@
 {
   "@@locale": "pl",
+  "basicWords": "Podstawowe repozytorium słów",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Język wejściowy",
+  "translationLanguage": "Język tłumaczenia",
+  "simplifiedGuidance": "Natychmiastowa transformacja codziennych rozmów na języki obce! Talkie rejestruje Twoje życie językowe.",
+  "cancel": "Anuluj",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Dokładność",
   "ttsMissing": "Silnik mowy dla tego języka nie jest zainstalowany na Twoim urządzeniu.",
   "ttsInstallGuide": "Zainstaluj dane językowe w Ustawieniach Androida > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Podstawowy magazyn słów",
-  "basicWords": "Podstawowe repozytorium słów",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Anuluj",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Biernik",
   "casePossessive": "Dopełniacz",
   "casePossessivePronoun": "Zaimek dzierżawczy",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Zdanie",
   "helpJsonTypeWord": "Słowo",
   "helpMode1Desc": "Rozpoznaj głos, przetłumacz na język docelowy i odsłuchaj wynik.",
-  "helpMode1Details": "• Głos: Dotknij mikrofonu aby zacząć/zatrzymać\n• Tekst: Pisz bezpośrednio aby tłumaczyć\n• Auto-Szukanie: Wykrywa podobne zdania\n• Tłumacz: Przycisk do natychmiastowego tłumaczenia\n• Słuchaj: Ikona głośnika dla TTS\n• Zapisz: 'Zapisz' dodaje do historii\n• Wyczyść: Resetuj wszystko (TODO: Translate)",
+  "helpMode1Details": "• Ustawienia językowe: Zmień język ojczysty i język, którego się uczysz, w menu paska aplikacji lub za pomocą dolnego przycisku języka\n• Proste wprowadzanie: Natychmiast rozpocznij wprowadzanie za pomocą dużego mikrofonu i okna tekstowego na środku\n• Automatyczna analiza: Automatyczna analiza (słów/zdań) i aktywacja obszaru ustawień podczas wprowadzania tekstu\n• Szczegółowe ustawienia: Określ zbiór materiałów, tagi i notatki sytuacyjne w dolnym obszarze wyświetlanym podczas wprowadzania\n• Automatyczne wyszukiwanie: Wykrywanie podobnych istniejących tłumaczeń w czasie rzeczywistym\n• Słuchanie: Odtwarzanie wymowy native speakera (TTS) za pomocą ikony głośnika\n• Zapisywanie: Natychmiastowe dodawanie do własnej listy nauki za pomocą „Zapisz dane”",
   "helpMode2Desc": "Powtarzaj zapisane zdania z ukrywaniem tłumaczeń.",
   "helpMode2Details": "• Wybór materiałów: Użyj 'Wybierz zestaw do nauki' lub 'Biblioteki online' w menu (⋮) w prawym górnym rogu\n• Odwracanie kart: Sprawdzaj tłumaczenia za pomocą 'Pokaż/Ukryj'\n• Słuchanie: Odtwarzaj wymowę za pomocą ikony głośnika\n• Ukończono naukę: Zaznacz symbolem zaznaczenia (V), aby oznaczyć jako ukończone\n• Usuwanie: Długie naciśnięcie karty (długie kliknięcie), aby usunąć historię\n• Wyszukiwanie i filtrowanie: Obsługa paska wyszukiwania (inteligentne wyszukiwanie w czasie rzeczywistym) oraz filtrów tagów i początkowych liter",
   "helpMode3Desc": "Słuchaj zdań i ćwicz wymowę, powtarzając je (Shadowing).",
   "helpMode3Details": "• Wybierz Materiał: Wybierz pakiet\n• Interwał: [-] [+] czas oczekiwania (3s-60s)\n• Start/Stop: Kontrola sesji\n• Mów: Słuchaj audio i powtarzaj\n• Feedback: Wynik dokładności (0-100)\n• Ponów: Przycisk ponawiania jeśli głos niewykryty",
   "helpModeChatDesc": "Ćwicz konwersacje w prawdziwych sytuacjach, rozmawiając z AI Personą.",
-  "helpModeChatDetails": "• Czat AI: Ćwicz rozmowy z personami.\n• Zarządzanie uczestnikami: Ustaw język swój i AI, aby uniknąć niezgodności językowej.\n• Scenki GPS: Twórz naturalne scenki dialogowe oparte na bieżącej lokalizacji.\n• Archiwizacja: Wszystkie rozmowy są bezpiecznie przechowywane na podstawie identyfikatora, a historia jest zachowywana nawet po zmianie nazwy. (TODO: Translate)",
+  "helpModeChatDetails": "• Czat AI: Ćwicz prawdziwe rozmowy z personami w menu „Czat” na dolnym pasku kart\n• Ustawienia persony: Dowolne określanie płci, imienia i kodu języka rozmówcy\n• Scenki GPS: Rozpoznawanie bieżącej lokalizacji i rekomendowanie tematów rozmów odpowiednich do miejsca\n• Dwa języki: Odpowiedzi AI są wyświetlane wraz z tłumaczeniem, co maksymalizuje efekt uczenia się\n• Zarządzanie historią: Filtrowanie historii poprzednich rozmów i zapisywanie określonych wiadomości podczas rozmowy jako materiałów do nauki",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Tryby",
   "helpTabTour": "Wycieczka",

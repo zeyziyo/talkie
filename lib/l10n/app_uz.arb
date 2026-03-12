@@ -1,5 +1,16 @@
 {
   "@@locale": "uz",
+  "basicWords": "Asosiy so'zlar ombori",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Kirish tili",
+  "translationLanguage": "Tarjima tili",
+  "simplifiedGuidance": "Kundalik suhbatlarni bir zumda chet tiliga aylantiring! Talkie sizning til hayotingizni yozib boradi.",
+  "cancel": "Bekor qilish",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Aniqlik",
   "ttsMissing": "Ushbu til uchun ovozli dvigatel qurilmangizga o'rnatilmagan.",
   "ttsInstallGuide": "Android Sozlamalari > Google TTS bo'limida mos til ma'lumotlarini o'rnating.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Asosiy so'zlar ombori",
-  "basicWords": "Asosiy so'zlar ombori",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Bekor qilish",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Tushum kelishik",
   "casePossessive": "Qaratqich kelishik",
   "casePossessivePronoun": "Qaratqich olmoshi",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Gap",
   "helpJsonTypeWord": "So'z",
   "helpMode1Desc": "Nutqni aniqlab tarjima qiling va natijalarni tinglang.",
-  "helpMode1Details": "• Til sozlamalari: yuqori/pastki belgilarni bosib tilni o'zgartiring\n• So'z/gap o'tish: rejimni almashtirish\n• Ovozli kiritish: mikrofon belgisini bosib tinglashni boshlang/to'xtating\n• Matn kiritish: to'g'ridan-to'g'ri kiritib tarjima qiling\n• Avtomatik qidiruv: o'xshash mavjud jumlalarni aniqlash\n• Tarjima: Tarjima tugmasini bosib darhol tarjima qiling\n• Tinglash: dinamik belgisidan TTS-ni ijro eting\n• Saqlash: 'Ma'lumotlarni saqlash' bilan yozuv qo'shing\n• Tozalash: kirishni qayta o'rnating (TODO: Translate)",
+  "helpMode1Details": "• Til sozlamalari: Ilova menyusi yoki pastki til tugmasi orqali o'z tilingizni va o'rganilayotgan tilni o'zgartiring\n• Oddiy kiritish: Markazdagi katta mikrofon va matn oynasi orqali darhol kiritishni boshlang\n• Avtomatik tahlil: Matn kiritilganda avtomatik ravishda tahlil qilish (so'z / gap) va sozlash maydonini faollashtirish\n• Batafsil sozlash: Kiritish vaqtida paydo bo'ladigan pastki maydonda ma'lumotlar to'plami, teglar, vaziyat eslatmasini belgilang\n• Avtomatik qidiruv: O'xshash mavjud tarjimalarni real vaqtda aniqlash\n• Tinglash: Dinamik belgisi bilan ona tilida so'zlashuvchi talaffuzi (TTS)ni ijro etish\n• Saqlash: 'Ma'lumotlarni saqlash' orqali shaxsiy o'quv ro'yxatingizga darhol qo'shing",
   "helpMode2Desc": "Saqlangan jumlalarni ko'rib chiqing va avtomatik yashirish funktsiyasi yordamida yodlashganingizni tekshiring.",
   "helpMode2Details": "• Ma'lumotlar to'plamini tanlash: o'ng yuqori menyudan (⋮) 'O'quv materiallarini tanlash' yoki 'Onlayn ma'lumotlar xonasi'dan foydalaning\n• Kartani aylantirish: 'Ko'rsatish/Yashirish' orqali tarjimani tekshiring\n• Tinglash: karnay belgisi orqali talaffuzni tinglang\n• O'qishni yakunlash: belgi (V) bilan o'qish yakunlangani qayd etiladi\n• O'chirish: kartani uzoq bosib (Long Click) yozuvni o'chiring\n• Qidiruv va filtr: qidiruv paneli (real vaqtda aqlli qidiruv) va teglar, bosh harf filtri qo'llab-quvvatlanadi",
   "helpMode3Desc": "Gaplarni tinglang va takrorlang (Shadowing) talaffuzingizni mashq qiling.",
   "helpMode3Details": "• Ma'lumotlarni tanlash: o'rganmoqchi bo'lgan ma'lumotlar to'plamini tanlang\n• Intervalni sozlash: [-] [+] tugmalari bilan jumlalar orasidagi kutish vaqtini sozlang (3 soniyadan 60 soniyagacha)\n• Boshlash/to'xtatish: soyalash seansini boshqaring\n• Gapirish: ovozni tinglang va takrorlang\n• Fikr-mulohaza: aniqlik balli (0-100) va rangli displey\n• Qidiruv shartlari: mashq qilish uchun teglarga, so'nggi elementlarga, bosh harflarga qarab filtrlash",
   "helpModeChatDesc": "AI persona bilan suhbatlashib, amaliy suhbatni mashq qiling.",
-  "helpModeChatDetails": "• AI chat: o'z tilingizda gapirib, suhbatni mashq qiling\n• Multi-persona: nutq pufagi ustidagi menyu orqali boshqa odamning jinsi/tili/nomini o'zgartirishingiz mumkin\n• Hamkor qo'shish: + tugmasi bilan yangi suhbatdosh (Stranger) qo'shing\n• GPS: joriy joylashuvga asoslangan vaziyatli dramatik sahna\n• Avtomatik saqlash: suhbat mazmunini avtomatik tarjima qilish va saqlash (TODO: Translate)",
+  "helpModeChatDetails": "• AI Chat: Pastki tab bardagi 'Chat' menyusida personaj bilan amaliy suhbat mashq qiling\n• Personaj sozlamalari: Qarshi tomonning jinsi, ismi, til kodini erkin belgilang\n• GPS ssenariysi: Hozirgi joylashuvingizni aniqlab, joyga mos suhbat mavzularini tavsiya etadi\n• 2 til: AI javoblari tarjima bilan birga ko'rsatiladi, bu esa o'rganish samaradorligini maksimal darajaga yetkazadi\n• Yozuvlarni boshqarish: O'tgan suhbatlar tarixini filtrlash va suhbat davomida ma'lum xabarlarni o'quv materiali sifatida saqlash",
   "helpTabJson": "JSON formati",
   "helpTabModes": "Rejimlar haqida ma'lumot",
   "helpTabTour": "Namuna",

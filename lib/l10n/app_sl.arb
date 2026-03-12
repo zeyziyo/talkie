@@ -1,5 +1,16 @@
 {
   "@@locale": "sl",
+  "basicWords": "Osnovno skladišče besed",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Vhodni jezik",
+  "translationLanguage": "Jezik prevoda",
+  "simplifiedGuidance": "Takojšnja pretvorba vsakodnevnih pogovorov v tuj jezik! Talkie beleži vaše jezikovno življenje.",
+  "cancel": "Prekliči",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Točnost",
   "ttsMissing": "Za ta jezik ni nameščen mehanizem za pretvorbo besedila v govor.",
   "ttsInstallGuide": "V nastavitvah sistema Android > Google TTS namestite podatke za ta jezik.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Osnovno skladišče besed",
-  "basicWords": "Osnovno skladišče besed",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Prekliči",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Tožilnik",
   "casePossessive": "Lastnik",
   "casePossessivePronoun": "Lastnilni zaimek",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Stavek",
   "helpJsonTypeWord": "Beseda",
   "helpMode1Desc": "Prepoznajte govor, ga prevedite in poslušajte rezultate.",
-  "helpMode1Details": "• Nastavitev jezika: spremenite jezik s pritiskom na ikone zgoraj/spodaj\n• Preklop med besedami/stavki: preklop načina\n• Glasovni vnos: pritisnite ikono mikrofona za začetek/ustavitev poslušanja\n• Vnos besedila: ročni vnos besedila za prevajanje\n• Samodejno iskanje: zaznavanje podobnih obstoječih stavkov\n• Prevajanje: takojšnje prevajanje s pritiskom na gumb za prevajanje\n• Poslušanje: predvajanje TTS z ikono zvočnika\n• Shranjevanje: dodajanje zapisa s »Shrani podatke«\n• Brisanje: ponastavitev vnosa (TODO: Translate)",
+  "helpMode1Details": "• Nastavitev jezika: Spremenite svoj jezik in učni jezik v meniju aplikacije ali z gumbom za jezik na dnu\n• Enostaven vnos: Takoj začnite vnos preko velikega mikrofona in okna za besedilo na sredini\n• Samodejna analiza: Samodejna analiza (besede/stavki) in aktivacija območja z nastavitvami ob vnosu besedila\n• Podrobne nastavitve: Določite zbirko gradiv, oznake in situacijske zapiske v spodnjem območju, ki se pojavi med vnosom\n• Samodejno iskanje: Zaznavanje podobnih obstoječih prevodov v realnem času\n• Poslušanje: Predvajanje izgovorjave maternega govorca (TTS) z ikono zvočnika\n• Shranjevanje: Takojšnje dodajanje na svoj učni seznam s 'Shrani podatke'",
   "helpMode2Desc": "Ponovite shranjene stavke in s funkcijo samodejnega skrivanja preverite, ali si jih zapomnite.",
   "helpMode2Details": "• Izbira zbirke: V zgornjem desnem meniju (⋮) izberite 'Izberi učno zbirko' ali uporabite 'Spletno knjižnico gradiv'\n• Obračanje kartic: S funkcijo 'Pokaži/Skrij' preverite prevod\n• Poslušanje: Predvajajte izgovorjavo z ikono zvočnika\n• Dokončano učenje: Označite z kljukico (V), da označite kot dokončano\n• Izbriši: Dolgo pritisnite na kartico, da izbrišete zapis\n• Iskanje in filtri: Podpora za iskalno vrstico (pametno iskanje v realnem času) in filtre oznak ter začetnih črk",
   "helpMode3Desc": "Poslušajte stavek in ga ponovite (senčenje), da vadite izgovorjavo.",
   "helpMode3Details": "• Izbira gradiva: izbira zbirke gradiv za učenje\n• Nastavitev intervala: prilagajanje časa čakanja med stavki z gumboma [-] [+](3 sekunde ~ 60 sekund)\n• Začetek/ustavitev: nadzor nad sejo senčenja\n• Govorjenje: poslušanje zvoka in ponavljanje\n• Povratne informacije: prikaz ocene točnosti (0–100) in barve\n• Pogoji iskanja: filtriranje cilja vadbe po oznakah, nedavnih elementih, začetnih črkah",
   "helpModeChatDesc": "Vadite pogovor v resničnem življenju s pogovorom z osebnostjo AI.",
-  "helpModeChatDetails": "• Klepet AI: vadite pogovor s pogovorom v mojem jeziku\n• Več osebnosti: spremenite spol/jezik/ime sogovornika z menijem nad oblački\n• Dodajanje partnerja: dodajanje novega sogovornika (Neznanec) z gumbom +\n• GPS: Situacijska komedija na podlagi trenutne lokacije\n• Samodejno shranjevanje: samodejno prevajanje in shranjevanje pogovorov (TODO: Translate)",
+  "helpModeChatDetails": "• AI Klepet: Vadite pogovore s personami v meniju 'Klepet' na spodnji vrstici zavihkov\n• Nastavitev persone: Prosto določite spol, ime in jezikovno kodo sogovornika\n• GPS Situacijska igra: Prepoznavanje vaše trenutne lokacije in priporočanje tem pogovorov, ki ustrezajo lokaciji\n• Dva jezika: Odgovori AI so prikazani skupaj s prevodom, kar povečuje učinkovitost učenja\n• Upravljanje zgodovine: Filtriranje preteklih pogovorov in shranjevanje določenih sporočil med pogovorom kot učnega gradiva",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Razlaga načinov",
   "helpTabTour": "Vodeni ogled",

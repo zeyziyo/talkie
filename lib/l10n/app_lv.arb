@@ -1,5 +1,16 @@
 {
   "@@locale": "lv",
+  "basicWords": "Pamata vārdu repozitorijs",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Ievades valoda",
+  "translationLanguage": "Tulkošanas valoda",
+  "simplifiedGuidance": "Mirklī pārvērtiet ikdienas sarunas svešvalodā! Talkie ierakstīs jūsu valodas dzīvi.",
+  "cancel": "Atcelt",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Precizitāte",
   "ttsMissing": "Šajā valodā nav instalēta runas dzinēja jūsu ierīcē.",
   "ttsInstallGuide": "Lūdzu, instalējiet valodas datus Android iestatījumos > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Pamata vārdu repozitorijs",
-  "basicWords": "Pamata vārdu repozitorijs",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Atcelt",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Akuzatīvs",
   "casePossessive": "Ģenitīvs",
   "casePossessivePronoun": "Piederības vietniekvārds",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Teikums",
   "helpJsonTypeWord": "Vārds",
   "helpMode1Desc": "Atpazīst un tulko balsi, ļauj noklausīties rezultātus.",
-  "helpMode1Details": "• Valodas iestatījumi: mainiet valodu, nospiežot ikonas augšā/apakšā\n• Vārdu/teikumu pārslēgšana: režīmu pārslēgšana\n• Balss ievade: nospiediet mikrofona ikonu, lai sāktu/pārtrauktu klausīšanos\n• Teksta ievade: ievadiet tekstu manuāli tulkošanai\n• Automātiska meklēšana: atrod līdzīgus esošus teikumus\n• Tulkošana: nospiediet pogu Tulkot, lai nekavējoties tulkotu\n• Klausīšanās: atskaņojiet TTS ar skaļruņa ikonu\n• Saglabāšana: pievienojiet ierakstus ar 'Datu saglabāšana'\n• Notīrīšana: atiestatiet ievadi (TODO: Translate)",
+  "helpMode1Details": "• Valodas iestatījumi: mainiet savu valodu un mācību valodu lietotnes joslas izvēlnē vai apakšējā valodu pogā\n• Vienkārša ievade: sāciet ievadīt nekavējoties, izmantojot centrālo lielo mikrofonu un teksta logu\n• Automātiska analīze: automātiski analizējiet (vārdus/teikumus) un aktivizējiet iestatījumu apgabalu, ievadot tekstu\n• Detalizēti iestatījumi: norādiet materiālu kolekciju, tagus un situācijas piezīmes apakšējā apgabalā, kas parādās ievades laikā\n• Automātiska meklēšana: reāllaikā nosakiet līdzīgus esošos tulkojumus\n• Klausīšanās: atskaņojiet dzimtā valodas runātāja izrunu (TTS) ar skaļruņa ikonu\n• Saglabāt: nekavējoties pievienojiet to savam mācību sarakstam ar 'Saglabāt datus'",
   "helpMode2Desc": "Pārskatiet saglabātos teikumus un pārbaudiet, vai atceraties, izmantojot automātiskās slēpšanas funkciju.",
   "helpMode2Details": "• Materiālu izvēle: augšējā labajā stūrī izvēlnē (⋮) izmantojiet 'Atlasīt mācību materiālu' vai 'Tiešsaistes materiālu telpu'\n• Kartes apgriešana: pārbaudiet tulkojumu ar 'Rādīt/Slēpt'\n• Klausīšanās: atskaņojiet izrunu ar skaļruņa ikonu\n• Mācīšanās pabeigta: atzīmējiet ar ķeksīti (V), lai pabeigtu mācīšanos\n• Dzēšana: ilgi nospiediet karti (Long Click), lai izdzēstu ierakstu\n• Meklēšana un filtrēšana: meklēšanas josla (reāllaika viedā meklēšana) un atbalsts tagiem, sākuma burtu filtriem",
   "helpMode3Desc": "Klausieties teikumu un praktizējiet izrunu, to atdarot (Shadowing).",
   "helpMode3Details": "• Materiālu izvēle: atlasiet materiālu kopumu, ko mācīties\n• Intervāla iestatīšana: pielāgojiet gaidīšanas laiku starp teikumiem ar pogām [-] [+](3 s ~ 60 s)\n• Sākums/Pārtraukums: ēnošanas sesijas kontrole\n• Runāšana: klausieties un atkārtojiet balsi\n• Atsauksmes: precizitātes rādītājs (0–100) un krāsu displejs\n• Meklēšanas nosacījumi: filtrēšanas mērķi pēc atzīmēm, jaunākajiem vienumiem, sākuma burtiem",
   "helpModeChatDesc": "Praktizējiet sarunas reālajā dzīvē, sarunājoties ar AI personu.",
-  "helpModeChatDetails": "• AI tērzēšana: runājiet savā valodā, lai praktizētu sarunu\n• Vairākas personas: mainiet otras puses dzimumu/valodu/vārdu ar izvēlni virs runas burbuļa\n• Partnera pievienošana: pievienojiet jaunu sarunu partneri (Svešinieku) ar pogu +\n• GPS: uz atrašanās vietu balstīti scenāriji\n• Automātiska saglabāšana: automātiska sarunu satura tulkošana un saglabāšana (TODO: Translate)",
+  "helpModeChatDetails": "• AI tērzēšana: praktizējiet sarunas reālajā dzīvē ar personām izvēlnē 'Tērzēšana' apakšējā cilnes joslā\n• Personas iestatījumi: brīvi norādiet otras personas dzimumu, vārdu un valodas kodu\n• GPS situācijas spēle: atpazīst manu pašreizējo atrašanās vietu un iesaka tērzēšanas tēmas, kas piemērotas vietai\n• Divvalodu: AI atbildes tiek parādītas kopā ar tulkojumiem, lai maksimāli palielinātu mācību efektu\n• Ierakstu pārvaldība: filtrējiet pagātnes sarunu vēsturi un saglabājiet noteiktus ziņojumus sarunās kā mācību materiālus",
   "helpTabJson": "JSON formāts",
   "helpTabModes": "Režīmu skaidrojumi",
   "helpTabTour": "Apskatīt",

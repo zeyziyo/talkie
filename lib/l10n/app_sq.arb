@@ -1,5 +1,16 @@
 {
   "@@locale": "sq",
+  "basicWords": "Depo bazë e fjalëve",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Gjuha e hyrjes",
+  "translationLanguage": "Gjuha e përkthimit",
+  "simplifiedGuidance": "Konvertoni bisedat e përditshme në një gjuhë të huaj menjëherë! Talkie regjistron jetën tuaj gjuhësore.",
+  "cancel": "Anulo",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Saktësia",
   "ttsMissing": "Motori i zërit për këtë gjuhë nuk është instaluar në pajisjen tuaj.",
   "ttsInstallGuide": "Ju lutemi instaloni të dhënat e gjuhës përkatëse te Cilësimet e Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Depo bazë e fjalëve",
-  "basicWords": "Depo bazë e fjalëve",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Anulo",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Kallëzore",
   "casePossessive": "Gjinore",
   "casePossessivePronoun": "Përemër pronor",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Fjali",
   "helpJsonTypeWord": "Fjalë",
   "helpMode1Desc": "Njihni zërin për të përkthyer dhe dëgjoni rezultatin.",
-  "helpMode1Details": "• Cilësimet e gjuhës: Ndryshoni gjuhën duke shtypur ikonat lart/poshtë\n• Ndërroni Fjalë/Fjali: Ndërroni modalitetin\n• Hyrja zanore: Shtypni ikonën e mikrofonit për të filluar/ndaluar dëgjimin\n• Hyrja e tekstit: Shkruani drejtpërdrejt për të përkthyer\n• Kërkimi automatik: Zbuloni fjali ekzistuese të ngjashme\n• Përkthimi: Përktheni menjëherë duke shtypur butonin e përkthimit\n• Dëgjimi: Luaj me TTS përmes ikonës së altoparlantit\n• Ruajtja: Shto një rekord me 'Ruaj të dhënat'\n• Fshirja: Rivendosni hyrjen (TODO: Translate)",
+  "helpMode1Details": "• Konfigurimi i gjuhës: Ndryshoni gjuhën time dhe gjuhën e mësimit në menunë e shiritit të aplikacionit ose butonin e gjuhës në fund.\n• Hyrje e thjeshtë: Filloni menjëherë hyrjen përmes mikrofonit të madh qendror dhe dritares së tekstit.\n• Analiza automatike: Analizë automatike (fjalë/fjali) kur futet tekst dhe aktivizimi i zonës së konfigurimit.\n• Cilësime të detajuara: Specifikoni librin e burimeve, etiketën dhe shënimin e situatës në zonën e poshtme që shfaqet gjatë hyrjes.\n• Kërkim automatik: Zbulimi në kohë reale i përkthimeve ekzistuese të ngjashme.\n• Dëgjim: Luaj shqiptimin amtare (TTS) me ikonën e altoparlantit.\n• Ruajtja: Shtoni menjëherë në listën tuaj të personalizuar të studimit me 'Ruaj të dhënat'",
   "helpMode2Desc": "Rishikoni fjalitë e ruajtura dhe kontrolloni nëse i mbani mend me funksionin e fshehjes automatike.",
   "helpMode2Details": "• Zgjidhni një grup burimesh: Përdorni 'Zgjidhni grup burimesh mësimore' ose 'Burimet online' nga menyja (⋮) në këndin e sipërm djathtas.\n• Kthejeni kartën: Verifikoni përkthimin me 'Shfaq/Fshih'.\n• Dëgjoni: Luaj sërish shqiptimin me ikonën e altoparlantit.\n• Mësimi i plotë: Trajtojeni si të plotë me shenjën e kontrollit (V).\n• Fshije: Fshijeni regjistrin duke shtypur gjatë kartën (Klikim i gjatë).\n• Kërko dhe filtro: Mbështetje për shiritin e kërkimit (kërkim inteligjent në kohë reale) dhe filtrat e etiketave dhe shkronjave fillestare.",
   "helpMode3Desc": "Dëgjoni fjalinë dhe përsëriteni (Shadowing) për të praktikuar shqiptimin.",
   "helpMode3Details": "• Zgjidhni materialin: Zgjidhni librin e burimeve për të studiuar\n• Vendosni intervalin: Rregulloni kohën e pritjes midis fjalive me butonat [-] [+](3 sekonda deri në 60 sekonda)\n• Fillimi/Ndalo: Kontrolloni seancën e hijezimit\n• Të folurit: Dëgjoni zërin dhe përsëriteni\n• Reagimet: Shfaqni rezultatin e saktësisë (0-100) dhe ngjyrat\n• Kushtet e kërkimit: Filtro objektivat e praktikës sipas etiketës, artikujve të fundit ose shkronjave fillestare",
   "helpModeChatDesc": "Praktikoni biseda reale duke biseduar me një personazh AI.",
-  "helpModeChatDetails": "• Biseda AI: Ushtroni bisedën duke folur në gjuhën tuaj\n• Multi-Personazh: Ndryshoni gjininë/gjuhën/emrin e palës tjetër me menunë mbi flluskën e të folurit\n• Shto partner: Shto një bashkëbisedues të ri (i panjohur) me butonin +\n• GPS: Sitcom i bazuar në vendndodhjen aktuale\n• Ruajtja automatike: Përkthimi dhe ruajtja automatike e përmbajtjes së bisedës (TODO: Translate)",
+  "helpModeChatDetails": "• Bisedë AI: Praktikoni biseda të vërteta me një personazh në menunë 'Bisedë' në shiritin e poshtëm të skedave.\n• Cilësimet e personazhit: Specifikoni lirisht gjininë, emrin dhe kodin e gjuhës së tjetrit.\n• Situata GPS: Njoh vendndodhjen time aktuale dhe rekomando tema bisede të përshtatshme për vendin.\n• Dy gjuhë: Përgjigjet e AI shfaqen me përkthime për të maksimizuar efektin e të mësuarit.\n• Menaxhimi i rekordeve: Filtroni historinë e kaluar të bisedave dhe ruani mesazhe specifike nga biseda si materiale studimore.",
   "helpTabJson": "Formati JSON",
   "helpTabModes": "Përshkrimi i Modit",
   "helpTabTour": "Bëni një shëtitje",

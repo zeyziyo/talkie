@@ -1,5 +1,16 @@
 {
   "@@locale": "zh_TW",
+  "basicWords": "基礎詞庫",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "輸入語言",
+  "translationLanguage": "翻譯語言",
+  "simplifiedGuidance": "將日常對話瞬間翻譯成外語！ Talkie 將記錄您的語言生活。",
+  "cancel": "取消",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "準確度",
   "ttsMissing": "您的裝置未安裝此語言的語音引擎。",
   "ttsInstallGuide": "請在「Android 設定」>「Google 文字轉語音」中安裝相應的語言資料。",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "基礎詞彙庫",
-  "basicWords": "基礎詞庫",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "取消",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "受格",
   "casePossessive": "所有格",
   "casePossessivePronoun": "所有代名詞",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "句子 (Sentence)",
   "helpJsonTypeWord": "單字 (Word)",
   "helpMode1Desc": "語音辨識、翻譯並收聽結果。",
-  "helpMode1Details": "• 語言設定：透過頂部翻譯圖示更改語言\n• 幫助：透過頂部幫助圖示查看指南\n• 語音輸入：點擊麥克風圖示開始/停止聆聽\n• 文字輸入：直接輸入文字進行翻譯\n• 自動搜尋：偵測相似的現有句子\n• 翻譯：點擊按鈕立即翻譯\n• 收聽：點擊揚聲器圖示收聽 TTS（原文/譯文）\n• 儲存：「儲存資料」添加到歷史記錄\n• 清除：重設所有輸入 (TODO: Translate)",
+  "helpMode1Details": "• 語言設定：通過應用程式欄菜單或底部語言按鈕更改我的語言和學習語言\n• 簡單輸入：通過中央的大型麥克風和文本窗口立即開始輸入\n• 自動分析：文本輸入時自動分析（單詞/句子）並激活設定區域\n• 詳細設定：在輸入過程中出現的底部區域中指定資料集、標籤、情境備忘錄\n• 自動搜尋：實時檢測相似的現有翻譯\n• 聆聽：使用揚聲器圖標播放母語發音 (TTS)\n• 保存：通過“保存數據”立即添加到您自己的學習列表中",
   "helpMode2Desc": "複習已儲存的句子，自動隱藏譯文並追蹤複習次數。",
   "helpMode2Details": "• 選擇教材：使用右上角選單（⋮）中的「選擇學習教材」或「線上資料庫」\n• 翻轉卡片：使用「顯示/隱藏」來確認翻譯\n• 聆聽：點擊喇叭圖示播放發音\n• 完成學習：勾選（V）標記為已完成學習\n• 刪除：長按卡片以刪除紀錄\n• 搜尋與篩選：支援搜尋欄（即時智慧搜尋）和標籤、首字篩選",
   "helpMode3Desc": "聆聽句子並跟讀（模仿），練習發音。",
   "helpMode3Details": "• 選擇資料：選擇學習包\n• 間隔：使用 [-] [+] 調整等待時間（3秒-60秒）\n• 開始/停止：控制跟讀會話\n• 說話：聆聽音訊並跟讀\n• 反饋：準確率評分（0-100）及顏色代碼\n• 重試：如果未偵測到聲音，請使用重試按鈕",
   "helpModeChatDesc": "與 AI 角色對話，練習實際會話。",
-  "helpModeChatDetails": "• AI 聊天：練習與 AI 角色的實際對話。\n• 參與者管理：您可以分別設定您的語言和 AI 的語言，以避免語言不一致。\n• GPS 情境劇：根據您目前的位置建立自然的對話情境。\n• 記錄保存：所有對話都以 ID 為基礎安全地儲存，即使您更改名稱，記錄也會保留。 (TODO: Translate)",
+  "helpModeChatDetails": "• AI 聊天：在底部標籤欄的“聊天”菜單中與角色進行實際對話練習\n• 角色設定：自由指定對方的性別、姓名、語言代碼\n• GPS 情境劇：識別您當前的位置並推薦適合該地點的對話主題\n• 2 種語言：AI 的回答與翻譯一起顯示，以最大限度地提高學習效果\n• 記錄管理：過濾過去的對話歷史記錄並將對話中的特定消息保存為學習材料",
   "helpTabJson": "JSON 格式",
   "helpTabModes": "模式",
   "helpTabTour": "導覽",

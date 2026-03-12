@@ -1,5 +1,16 @@
 {
   "@@locale": "ro",
+  "basicWords": "Depozit de bază cu cuvinte",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Limbă de intrare",
+  "translationLanguage": "Limbă de traducere",
+  "simplifiedGuidance": "Transformă conversațiile de zi cu zi în limbi străine instantaneu! Talkie îți va înregistra viața lingvistică.",
+  "cancel": "Anulare",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Acuratețe",
   "ttsMissing": "Motorul vocal pentru această limbă nu este instalat pe dispozitiv.",
   "ttsInstallGuide": "Instalează datele lingvistice corespunzătoare în Setări Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Depozit de cuvinte de bază",
-  "basicWords": "Depozit de bază cu cuvinte",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Anulare",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Acuzativ",
   "casePossessive": "Genitiv",
   "casePossessivePronoun": "Pronume posesiv",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Sentință",
   "helpJsonTypeWord": "Cuvânt",
   "helpMode1Desc": "Recunoaștere vocală, traducere și ascultare rezultat.",
-  "helpMode1Details": "• Voce: Apasă microfon pentru start/stop\n• Text: Scrie direct pentru traducere\n• Auto-Căutare: Detectează propoziții similare\n• Traducere: Buton pentru traducere instantă\n• Ascultă: Icoană difuzor pentru TTS\n• Salvează: Adaugă în istoric\n• Șterge: Resetează tot (TODO: Translate)",
+  "helpMode1Details": "• Setări limbă: Modifică-ți limba și limba de învățare din meniul barei de aplicații sau butonul de limbă din partea de jos\n• Introducere simplă: Începe să introduci imediat prin microfonul mare central și fereastra de text\n• Analiză automată: Analizează automat (cuvânt/propoziție) și activează zona de setări la introducerea textului\n• Setări detaliate: Specifică colecția de materiale, etichetele și notele de context în zona inferioară care apare în timpul introducerii\n• Căutare automată: Detectează în timp real traducerile existente similare\n• Ascultare: Redă pronunția nativă (TTS) cu pictograma difuzorului\n• Salvare: Adaugă imediat în propria ta listă de studiu cu 'Salvare date'",
   "helpMode2Desc": "Recapitulare propoziții salvate cu ascundere traducere.",
   "helpMode2Details": "• Selectarea materialului: accesează 'Alege materialul de studiu' sau 'Biblioteca online' din meniul (⋮) din dreapta sus\n• Întoarce cardul: folosește 'Arată/Ascunde' pentru a verifica traducerea\n• Ascultă: redă pronunția cu pictograma difuzorului\n• Finalizare studiu: marchează cu bifa (V) pentru a finaliza studiul\n• Șterge: apasă lung (Long Click) pe card pentru a șterge înregistrarea\n• Caută și filtrează: folosește bara de căutare (căutare inteligentă în timp real) și filtrele de etichete, litere de început",
   "helpMode3Desc": "Ascultă și repetă propoziții (Shadowing) pentru a-ți exersa pronunția.",
   "helpMode3Details": "• Selectare: Alege pachet\n• Interval: [-] [+] pauză (3s-60s)\n• Start/Stop: Control sesiune\n• Vorbește: Ascultă și repetă\n• Scor: Acuratețe (0-100)\n• Reîncearcă: Buton dacă vocea nu este detectată",
   "helpModeChatDesc": "Exersează conversații reale vorbind cu un personaj AI.",
-  "helpModeChatDetails": "• Chat AI: Exersează conversații reale cu personaje.\n• Gestionarea participanților: Setează-ți limba și limba AI-ului pentru a evita nepotrivirile lingvistice.\n• Situații GPS: Creează situații de conversație naturale bazate pe locația ta curentă.\n• Păstrarea istoricului: Toate conversațiile sunt stocate în siguranță pe baza ID-ului, iar istoricul se păstrează chiar dacă schimbi numele. (TODO: Translate)",
+  "helpModeChatDetails": "• Chat AI: Exersează conversații reale cu personaje din meniul 'Chat' din bara de tab-uri de jos\n• Setări personaj: Specifică liber sexul, numele și codul de limbă al celeilalte persoane\n• Joc de rol GPS: Recunoaște locația mea actuală și recomandă subiecte de conversație potrivite pentru locație\n• 2 limbi: Răspunsurile AI sunt afișate cu traducere pentru a maximiza efectul de învățare\n• Gestionarea înregistrărilor: Filtrează istoricul conversațiilor anterioare și salvează anumite mesaje din conversație ca materiale de studiu",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Moduri",
   "helpTabTour": "Tur",

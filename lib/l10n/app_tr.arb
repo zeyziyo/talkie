@@ -1,5 +1,16 @@
 {
   "@@locale": "tr",
+  "basicWords": "Temel Kelime Deposu",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Giriş Dili",
+  "translationLanguage": "Çeviri Dili",
+  "simplifiedGuidance": "Günlük konuşmaları anında yabancı dillere çevirin! Talkie, dil deneyiminizi kaydeder.",
+  "cancel": "İptal",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Doğruluk",
   "ttsMissing": "Bu dil için konuşma motoru cihazınızda yüklü değil.",
   "ttsInstallGuide": "Lütfen Android Ayarları > Google TTS'den ilgili dil verilerini yükleyin.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Temel Kelime Deposu",
-  "basicWords": "Temel Kelime Deposu",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "İptal",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Nesne",
   "casePossessive": "İyelik",
   "casePossessivePronoun": "İyelik Zamiri",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Cümle",
   "helpJsonTypeWord": "Kelime",
   "helpMode1Desc": "Sesi tanı, hedef dile çevir ve sonucu dinle.",
-  "helpMode1Details": "• Ses Girişi: Başlat/durdur için mikrofona dokun\n• Metin Girişi: Çevirmek için yaz\n• Oto-Arama: Benzer cümleleri bulur\n• Çevir: Anında çeviri butonu\n• Dinle: TTS için hoparlör simgesi\n• Kaydet: 'Veri Kaydet' geçmişe ekler\n• Temizle: Tüm girişleri sıfırla (TODO: Translate)",
+  "helpMode1Details": "• Dil Ayarları: Uygulama çubuğu menüsünden veya alttaki dil düğmelerinden kendi dilinizi ve öğrenme dilinizi değiştirin\n• Basit Giriş: Ortadaki büyük mikrofon ve metin penceresi ile anında giriş yapmaya başlayın\n• Otomatik Analiz: Metin girildiğinde otomatik olarak analiz (kelime/cümle) ve ayarlar alanı etkinleştirilir\n• Ayrıntılı Ayarlar: Giriş sırasında görünen alt alanda materyal, etiket ve durum notları belirtin\n• Otomatik Arama: Benzer mevcut çevirileri gerçek zamanlı olarak algılar\n• Dinleme: Hoparlör simgesiyle anadili (TTS) oynatma\n• Kaydet: 'Verileri kaydet' ile anında kendi öğrenme listenize ekleyin",
   "helpMode2Desc": "Kayıtlı cümleleri gizli çevirilerle tekrar et.",
   "helpMode2Details": "• Materyal Seçimi: Sağ üst menüden (⋮) 'Çalışma Materyali Seç' veya 'Online Materyal Arşivi'ni kullanın\n• Kart Çevirme: 'Göster/Gizle' ile çeviriyi kontrol edin\n• Dinleme: Hoparlör ikonu ile telaffuzu dinleyin\n• Öğrenme Tamamlama: Onay işareti (V) ile öğrenmeyi tamamlayın\n• Silme: Kartı uzun süre basılı tutarak (Uzun Tıklama) kaydı silin\n• Arama ve Filtre: Arama çubuğu (gerçek zamanlı akıllı arama) ve etiketler, başlangıç harfi filtresi desteği",
   "helpMode3Desc": "Cümleyi dinleyerek tekrar edin (Shadowing) ve telaffuzunuzu geliştirin.",
   "helpMode3Details": "• Materyal Seç: Çalışma paketi seç\n• Aralık: [-] [+] bekleme süresi (3sn-60sn)\n• Başlat/Durdur: Oturumu kontrol et\n• Konuş: Sesi dinle ve tekrarla\n• Geri Bildirim: Doğruluk puanı (0-100)\n• Tekrar Dene: Ses algılanmazsa butonu kullan",
   "helpModeChatDesc": "AI karakterlerle sohbet ederek gerçek hayattaki konuşmaları alıştırma yapın.",
-  "helpModeChatDetails": "• AI Sohbet: Personel ile gerçek hayattaki konuşmaları pratik yapın.\n• Katılımcı Yönetimi: Dil uyuşmazlıklarını önlemek için kendi dilinizi ve AI'nın dilini ayrı ayrı ayarlayabilirsiniz.\n• GPS Senaryosu: Mevcut konumunuza göre doğal konuşma senaryoları oluşturun.\n• Kayıt Tutma: Tüm konuşmalar, ID tabanlı olarak güvenli bir şekilde saklanır ve adını değiştirseniz bile kayıtlar korunur. (TODO: Translate)",
+  "helpModeChatDetails": "• AI Sohbeti: Alt sekme çubuğundaki 'Sohbet' menüsünden persona ile pratik konuşma alıştırması yapın\n• Persona Ayarları: Karşı tarafın cinsiyetini, adını ve dil kodunu serbestçe belirtin\n• GPS Rol Yapma: Mevcut konumunuzu tanıyarak mekana uygun konuşma konuları önerir\n• İki Dil: AI'nın yanıtı çeviri ile birlikte görüntülenerek öğrenme etkisi en üst düzeye çıkarılır\n• Kayıt Yönetimi: Geçmiş konuşma geçmişini filtreleyin ve konuşma sırasında belirli mesajları öğrenme materyali olarak kaydedin",
   "helpTabJson": "JSON Formatı",
   "helpTabModes": "Modlar",
   "helpTabTour": "Tur",

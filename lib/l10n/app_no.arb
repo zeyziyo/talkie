@@ -1,5 +1,16 @@
 {
   "@@locale": "no",
+  "basicWords": "Grunnleggende ordlager",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Inputtspråk",
+  "translationLanguage": "Oversettelsesspråk",
+  "simplifiedGuidance": "Konverter hverdagsprat til fremmedspråk umiddelbart! Talkie registrerer ditt språkliv.",
+  "cancel": "Avbryt",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Nøyaktighet",
   "ttsMissing": "Talemotoren for dette språket er ikke installert på enheten din.",
   "ttsInstallGuide": "Vennligst installer språkdataene i Android-innstillinger > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Grunnleggende ordlager",
-  "basicWords": "Grunnleggende ordlager",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Avbryt",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Akkusativ",
   "casePossessive": "Genitiv",
   "casePossessivePronoun": "Possessivt pronomen",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Setning",
   "helpJsonTypeWord": "Ord",
   "helpMode1Desc": "Talegjenkjenning, oversettelse og lytt til resultat.",
-  "helpMode1Details": "• Stemme: Trykk mikrofon for start/stopp\n• Tekst: Skriv direkte for å oversette\n• Auto-Søk: Finner lignende setninger\n• Oversett: Knapp for umiddelbar oversettelse\n• Lytt: Høyttalerikon for TTS\n• Lagre: Legger til i historie\n• Tøm: Nullstill alt (TODO: Translate)",
+  "helpMode1Details": "• Språkinnstillinger: Endre mitt språk og læringsspråk via applinjemenyen eller språkknappen nederst\n• Enkel input: Start umiddelbart input via den store mikrofonen og tekstvinduet i midten\n• Automatisk analyse: Analyserer automatisk (ord/setning) og aktiverer innstillingsområdet ved tekstinput\n• Detaljerte innstillinger: Spesifiser datamateriell, tagger, situasjonsnotater i området nederst som vises under input\n• Automatisk søk: Oppdager lignende eksisterende oversettelser i sanntid\n• Lytt: Spill av morsmålsuttale (TTS) med høyttalerikonet\n• Lagre: Legg til i din egen læringsliste umiddelbart med 'Lagre data'",
   "helpMode2Desc": "Gjennomgå lagrede setninger med skjult oversettelse.",
   "helpMode2Details": "• Velg samling: Bruk 'Velg læremateriell' eller 'Online bibliotek' fra menyen (⋮) øverst til høyre\n• Snu kort: Bruk 'Vis/skjul' for å sjekke oversettelsen\n• Lytt: Spill av uttale med høyttalerikonet\n• Læring fullført: Merk som fullført med hake (V)\n• Slett: Slett oppføringer ved å trykke lenge på kortet\n• Søk og filtrer: Støtte for søkefelt (smart søk i sanntid) og tagger, startbokstavfilter",
   "helpMode3Desc": "Øv uttalen din ved å lytte til og gjenta setninger (skygging).",
   "helpMode3Details": "• Velg: Velg pakke\n• Intervall: [-] [+] ventetid (3s-60s)\n• Start/Stopp: Kontroller økt\n• Snakk: Lytt og gjenta\n• Poeng: Nøyaktighet (0-100)\n• Prøv igjen: Knapp hvis stemme ikke funnet",
   "helpModeChatDesc": "Øv på samtaler i den virkelige verden ved å snakke med en AI-persona.",
-  "helpModeChatDetails": "• AI-chat: Øv på samtaler med en AI-persona.\n• Deltakeradministrasjon: Angi språkene for deg og AI-en for å unngå språkinkonsistenser.\n• GPS-rollespill: Skap naturlige samtalesituasjoner basert på din nåværende posisjon.\n• Bevaring av historikk: Alle samtaler lagres sikkert basert på ID, og historikken beholdes selv om du endrer navn. (TODO: Translate)",
+  "helpModeChatDetails": "• AI-chat: Øv på praktiske samtaler med en persona i 'Chat'-menyen på den nederste fanelinjen\n• Personainnstillinger: Spesifiser fritt kjønn, navn og språkkode for motparten\n• GPS-situasjonsspill: Gjenkjenner min nåværende posisjon og anbefaler samtaleemner som passer stedet\n• 2 språk: AI-ens svar vises med oversettelse for å maksimere læringseffekten\n• Loggadministrasjon: Filtrer tidligere samtalelogger og lagre spesifikke meldinger i samtalen som læringsmateriell",
   "helpTabJson": "JSON-format",
   "helpTabModes": "Moduser",
   "helpTabTour": "Tur",

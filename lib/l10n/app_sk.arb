@@ -1,5 +1,16 @@
 {
   "@@locale": "sk",
+  "basicWords": "Základné úložisko slov",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Vstupný jazyk",
+  "translationLanguage": "Jazyk prekladu",
+  "simplifiedGuidance": "Okamžitá konverzia každodenných rozhovorov do cudzích jazykov! Talkie zaznamenáva váš jazykový život.",
+  "cancel": "Zrušiť",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Presnosť",
   "ttsMissing": "Hlasový engine pre tento jazyk nie je nainštalovaný vo vašom zariadení.",
   "ttsInstallGuide": "Nainštalujte jazykové dáta v Nastavenia Android > Google TTS.",
@@ -25,14 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Základné úložisko slov",
-  "basicWords": "Základné úložisko slov",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "cancel": "Zrušiť",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Akuzatív",
   "casePossessive": "Genitív",
   "casePossessivePronoun": "Privlastňovacie zámeno",
@@ -187,13 +190,13 @@
   "helpJsonTypeSentence": "Veta",
   "helpJsonTypeWord": "Slovo",
   "helpMode1Desc": "Rozpoznáva a prekladá reč, výsledky si môžete vypočuť.",
-  "helpMode1Details": "• Nastavenie jazyka: zmena jazyka stlačením ikon hore/dole\n• Prepínač slov/viet: prepínanie režimov\n• Hlasový vstup: spustenie/zastavenie počúvania stlačením ikony mikrofónu\n• Textový vstup: zadávanie textu priamo na preklad\n• Automatické vyhľadávanie: detekcia podobných existujúcich viet\n• Preklad: okamžitý preklad stlačením tlačidla prekladu\n• Počúvanie: prehrávanie TTS pomocou ikony reproduktora\n• Uloženie: pridanie záznamu pomocou 'Uložiť dáta'\n• Vymazanie: inicializácia vstupu (TODO: Translate)",
+  "helpMode1Details": "• Nastavenie jazyka: Zmeňte svoj jazyk a jazyk učenia v ponuke panela aplikácií alebo pomocou tlačidla jazyka v dolnej časti\n• Jednoduchý vstup: Okamžite začnite zadávať text cez veľký centrálny mikrofón a textové okno\n• Automatická analýza: Automaticky analyzujte (slová/vety) pri zadávaní textu a aktivujte oblasť nastavení\n• Podrobné nastavenia: Určite zbierku materiálov, značku a situačnú poznámku v dolnej oblasti, ktorá sa zobrazí počas zadávania\n• Automatické vyhľadávanie: Detekcia podobných existujúcich prekladov v reálnom čase\n• Počúvanie: Prehrávanie rodeného jazyka (TTS) pomocou ikony reproduktora\n• Uloženie: Okamžite pridajte do svojho osobného zoznamu učenia pomocou možnosti 'Uložiť dáta'",
   "helpMode2Desc": "Zopakujte si uložené vety a skontrolujte si zapamätanie pomocou funkcie automatického skrytia.",
   "helpMode2Details": "• Výber materiálov: Použite 'Výber študijných materiálov' alebo 'Online knižnicu materiálov' v ponuke (⋮) vpravo hore\n• Otočenie kartičky: Potvrďte preklad pomocou 'Zobraziť/Skryť'\n• Počúvanie: Prehrávanie výslovnosti pomocou ikony reproduktora\n• Dokončené štúdium: Označte ako dokončené pomocou začiarknutia (V)\n• Odstránenie: Odstráňte záznam dlhým stlačením karty\n• Vyhľadávanie a filtre: Podpora vyhľadávacieho panela (inteligentné vyhľadávanie v reálnom čase) a filtrov značiek a začiatočných písmen",
   "helpMode3Desc": "Počúvajte a opakujte vety (shadowing) a precvičujte si výslovnosť.",
   "helpMode3Details": "• Výber materiálu: výber zbierky materiálov na učenie\n• Nastavenie intervalu: úprava čakacej doby medzi vetami pomocou tlačidiel [-] [+] (3 s ~ 60 s)\n• Spustenie/Zastavenie: ovládanie relácie shadowing\n• Rozprávanie: počúvanie a opakovanie reči\n• Spätná väzba: zobrazenie skóre presnosti (0-100) a farby\n• Podmienky vyhľadávania: filtrovanie cieľa cvičenia pomocou značiek, posledných položiek, počiatočných písmen",
   "helpModeChatDesc": "Precvičujte si konverzáciu v reálnom svete rozhovorom s AI osobnosťou.",
-  "helpModeChatDetails": "• AI Chat: precvičujte si konverzáciu rozprávaním vo svojom jazyku\n• Viacero osôb: zmena pohlavia/jazyka/mena partnera pomocou ponuky nad bublinou\n• Pridanie partnera: pridanie nového partnera na konverzáciu (Neznámy) pomocou tlačidla +\n• GPS: situačná komédia založená na aktuálnej polohe\n• Automatické uloženie: automatický preklad a ukladanie obsahu konverzácie (TODO: Translate)",
+  "helpModeChatDetails": "• AI Chat: Precvičte si konverzáciu s osobnosťou v ponuke 'Chat' na paneli kariet v dolnej časti\n• Nastavenie osobnosti: Slobodne určite pohlavie, meno a jazykový kód partnera\n• GPS situačná hra: Odporúčanie tém konverzácie, ktoré sú vhodné pre dané miesto rozpoznaním vašej aktuálnej polohy\n• 2 jazyky: Odpoveď AI sa zobrazuje s prekladom, čím sa maximalizuje efekt učenia\n• Správa záznamov: Filtrovanie minulej histórie konverzácií a ukladanie konkrétnych správ počas konverzácie ako študijných materiálov",
   "helpTabJson": "Formát JSON",
   "helpTabModes": "Popis režimov",
   "helpTabTour": "Prehliadka",
