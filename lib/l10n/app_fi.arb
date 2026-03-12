@@ -189,6 +189,7 @@
   "helpJsonTypeDialogue": "Keskustelu (Dialogue)",
   "helpJsonTypeSentence": "Lause (Sentence)",
   "helpJsonTypeWord": "Sana (Word)",
+  "helpMode1Desc": "Tunnista puhe tai kirjoita tekstiä kääntääksesi välittömästi ja tallenna opiskelulistalle.",
   "helpMode1Details": "• Kieliasetukset: Muuta omaa kieltäsi ja opiskelukieltäsi sovelluspalkin valikosta tai alareunan kielipainikkeesta\n• Yksinkertainen syöttö: Tekstin syöttö analysoi automaattisesti (sanan/lauseen) ja aktivoi asetusosio\n• Mikrofoni/näppäimistö: Aloita puheentunnistus tai tekstinsyöttö päänäytön suurilla kuvakkeilla\n• Yksityiskohtaiset asetukset: Määritä aineistokokoelma, tunnisteet ja tilannemuistiinpanot syötön aikana näkyvässä alaosassa\n• Automaattinen haku: Tunnista samankaltaiset aiemmat käännökset reaaliajassa\n• Kuuntelu: Toista natiivipuhujan ääntäminen (TTS) kaiutinkuvakkeella\n• Tallenna: Lisää heti omaan oppimislistaan 'Tallenna tiedot' -toiminnolla",
   "helpMode2Desc": "Kertaa tallennetut lauseet piilottamalla käännös.",
   "helpMode2Details": "• Materiaalin valinta: Käytä oikean yläkulman valikkoa (⋮) valitaksesi 'Valitse oppimateriaali' tai 'Online-materiaalikirjasto'\n• Kortin kääntäminen: Tarkista käännös valinnalla 'Näytä/Piilota'\n• Kuunteleminen: Toista ääntä painamalla kaiutinkuvaketta\n• Oppiminen valmis: Merkitse suoritetuksi valintamerkillä (V)\n• Poistaminen: Poista merkintöjä pitkällä painalluksella\n• Haku ja suodattimet: Tukee hakupalkkia (reaaliaikainen älykäs haku) sekä tunniste- ja alkukirjainsuodattimia",

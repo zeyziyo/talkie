@@ -58,75 +58,65 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // 1. Guidance & Recommendations (Integrated from Mode 1)
-            Container(
-              margin: const EdgeInsets.only(bottom: 12),
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-              decoration: BoxDecoration(
-                color: Colors.blue.shade50,
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.blue.shade200),
-              ),
-              child: Row(
-                children: [
-                  Icon(Icons.auto_stories, size: 18, color: Colors.blue.shade800),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text(
-                      l10n.simplifiedGuidance,
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blue.shade900,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
             const WelcomeBanner(),
             const RecommendationWidget(),
             const SizedBox(height: 16),
 
             // 2. Language Selectors (Top)
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               decoration: BoxDecoration(
-                color: Colors.blue.shade50,
-                borderRadius: BorderRadius.circular(15),
-                border: Border.all(color: Colors.blue.shade100),
+                color: Colors.grey.shade100,
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: Colors.grey.shade300),
                 boxShadow: [
-                  BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 4, offset: const Offset(0, 2))
+                  BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 10, offset: const Offset(0, 4))
                 ],
               ),
-              child: Row(
+              child: Column(
                 children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(l10n.inputLanguage, style: TextStyle(fontSize: 11, color: Colors.blue.shade700, fontWeight: FontWeight.bold)),
-                        _buildSimpleLangButton(context, state.sourceLang, (val) => state.setSourceLang(val)),
-                      ],
+                  Text(
+                    "총 80개 언어 중 원하는 언어 간 즉시 상호 번역 및 무한 반복 학습 가능",
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black87,
                     ),
+                    textAlign: TextAlign.center,
                   ),
-                  IconButton(
-                    icon: const Icon(Icons.swap_horiz, color: Colors.blueAccent, size: 24),
-                    onPressed: () {
-                      state.swapLanguages();
-                      // Clear translation results when swapping
-                      state.setTranslatedText("");
-                    },
-                    tooltip: l10n.swapLanguages,
-                  ),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(l10n.translationLanguage, style: TextStyle(fontSize: 11, color: Colors.blue.shade700, fontWeight: FontWeight.bold)),
-                        _buildSimpleLangButton(context, state.targetLang, (val) => state.setTargetLang(val)),
-                      ],
-                    ),
+                  const Divider(color: Colors.black12, height: 20, thickness: 1),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text('입력:', style: TextStyle(fontSize: 11, color: Colors.black45, fontWeight: FontWeight.bold)),
+                            const SizedBox(width: 4),
+                            _buildSimpleLangButton(context, state.sourceLang, (val) => state.setSourceLang(val), textColor: Colors.blue.shade700),
+                          ],
+                        ),
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.swap_horiz, color: Colors.blue.shade700, size: 24),
+                        onPressed: () {
+                          state.swapLanguages();
+                          // Clear translation results when swapping
+                          state.setTranslatedText("");
+                        },
+                        tooltip: l10n.swapLanguages,
+                      ),
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text('번역:', style: TextStyle(fontSize: 11, color: Colors.black45, fontWeight: FontWeight.bold)),
+                            const SizedBox(width: 4),
+                            _buildSimpleLangButton(context, state.targetLang, (val) => state.setTargetLang(val), textColor: Colors.blue.shade700),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -136,13 +126,19 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
             // 3. Main Input Area (Central Mic & Text Field)
             Center(
               child: _buildLargeIconButton(
-                icon: state.isListening ? Icons.mic : Icons.mic_none,
-                label: state.isListening ? '인식 중...' : '음성 입력',
-                color: state.isListening ? Colors.red : Colors.indigo,
-                onPressed: () {}, 
+                icon: state.isListening ? Icons.mic : Icons.mic,
+                label: '', 
+                color: state.isListening ? Colors.red : const Color(0xFF7A00E6), // Slightly deeper, more premium purple
+                isListening: state.isListening,
+                onPressed: () {
+                   if (state.isListening) {
+                     state.stopListening();
+                   } else {
+                     state.startListening();
+                   }
+                }, 
                 onLongPressStart: (_) => state.startListening(),
                 onLongPressEnd: (_) => state.stopListening(),
-                isListening: state.isListening,
               ),
             ),
             const SizedBox(height: 24),
@@ -301,7 +297,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     );
   }
 
-  Widget _buildSimpleLangButton(BuildContext context, String currentLang, Function(String) onSelected) {
+  Widget _buildSimpleLangButton(BuildContext context, String currentLang, Function(String) onSelected, {Color textColor = Colors.teal}) {
     final appState = Provider.of<AppState>(context, listen: false);
     final myLang = appState.sourceLang; // UI Language (Source in Settings)
     
@@ -328,7 +324,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
         child: Text(
           displayName,
           textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.blueAccent),
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: textColor),
         ),
       ),
       itemBuilder: (context) => LanguageConstants.supportedLanguages.map((lang) {
@@ -360,35 +356,18 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     GestureLongPressEndCallback? onLongPressEnd,
     bool isListening = false,
   }) {
-    return Column(
-      children: [
-        GestureDetector(
-          onTap: onPressed,
-          onLongPressStart: onLongPressStart,
-          onLongPressEnd: onLongPressEnd,
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 200),
-            padding: const EdgeInsets.all(25),
-            decoration: BoxDecoration(
-              color: color,
-              shape: BoxShape.circle,
-              boxShadow: [
-                BoxShadow(
-                  color: color.withValues(alpha: 0.4),
-                  blurRadius: isListening ? 25 : 12,
-                  spreadRadius: isListening ? 8 : 2,
-                ),
-              ],
-            ),
-            child: Icon(icon, size: 60, color: Colors.white),
-          ),
+    return GestureDetector(
+      onTap: onPressed,
+      onLongPressStart: onLongPressStart,
+      onLongPressEnd: onLongPressEnd,
+      child: Container(
+        padding: const EdgeInsets.all(12),
+        child: MeshMicIcon(
+          size: 100,
+          color: color,
+          isListening: isListening,
         ),
-        const SizedBox(height: 12),
-        Text(
-          label,
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: color),
-        ),
-      ],
+      ),
     );
   }
 
@@ -562,4 +541,143 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
       ),
     );
   }
+}
+
+class MeshMicIcon extends StatelessWidget {
+  final double size;
+  final Color color;
+  final bool isListening;
+
+  const MeshMicIcon({
+    super.key,
+    this.size = 100,
+    required this.color,
+    this.isListening = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.transparent, // 마이크 이미지의 자체 원형 배경 사용
+        boxShadow: [
+          if (isListening)
+            BoxShadow(
+              color: color.withValues(alpha: 0.4),
+              blurRadius: 25,
+              spreadRadius: 8,
+            ),
+        ],
+      ),
+      child: Center(
+        child: Image.asset(
+          'assets/mic_geometric_final.png',
+          width: size,
+          height: size,
+          fit: BoxFit.contain,
+          filterQuality: FilterQuality.high, // 극대화된 선명도 보장
+        ),
+      ),
+    );
+  }
+}
+
+class MeshMicPainter extends CustomPainter {
+  final Color color;
+
+  MeshMicPainter({required this.color});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final double centerX = size.width / 2;
+    final double centerY = size.height * 0.40;
+    final double micWidth = size.width * 0.44; 
+    final double micHeight = size.height * 0.72; 
+    
+    // 1. Sleek Capsule Body (Premium Emerald Green)
+    final RRect micBodyRRect = RRect.fromRectAndRadius(
+      Rect.fromCenter(center: Offset(centerX, centerY), width: micWidth, height: micHeight),
+      Radius.circular(micWidth / 2.0),
+    );
+
+    // Paints for Vibrant Emerald Green Metallic
+    final greenGradient = LinearGradient(
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+      colors: [
+        const Color(0xFFA5D6A7), // Light Green (Reflection)
+        const Color(0xFF2E7D32), // Emerald Green (Base)
+        const Color(0xFF1B5E20), // Deep Forest Green (Shadow)
+      ],
+      stops: const [0.0, 0.45, 1.0],
+    ).createShader(Rect.fromLTWH(centerX - micWidth/2, centerY - micHeight/2, micWidth, micHeight));
+
+    final paint = Paint()..isAntiAlias = true..style = PaintingStyle.fill;
+    paint.shader = greenGradient;
+
+    // Draw One-Piece Minimal Green Body
+    canvas.drawRRect(micBodyRRect, paint);
+
+    // 2. Seamless Unified Frame (U + Pillar + Base integrated)
+    final framePaint = Paint()
+      ..shader = LinearGradient(
+        colors: [const Color(0xFF2E7D32), const Color(0xFFA5D6A7), const Color(0xFF1B5E20)],
+      ).createShader(Rect.fromLTWH(centerX - micWidth * 0.8, centerY, micWidth * 1.6, micHeight))
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 10.0
+      ..strokeCap = StrokeCap.round;
+
+    final Path seamlessPath = Path();
+    final double yokeInnerW = micWidth * 1.60;
+    final double yokeTopY = centerY + 10;
+    final double yokeBottomY = centerY + micHeight * 0.48;
+    final double basePillarY = size.height * 1.12;
+
+    // Left half of U
+    seamlessPath.moveTo(centerX - yokeInnerW / 2, yokeTopY);
+    seamlessPath.lineTo(centerX - yokeInnerW / 2, yokeBottomY - 18);
+    
+    // Bottom Curve leading to THE CENTER (Seamless)
+    seamlessPath.arcToPoint(
+      Offset(centerX, yokeBottomY + 2), // Meet at the center bottom
+      radius: Radius.circular(yokeInnerW / 2.0),
+      clockwise: false,
+    );
+    
+    // Right half of U
+    seamlessPath.arcToPoint(
+      Offset(centerX + yokeInnerW / 2, yokeBottomY - 18),
+      radius: Radius.circular(yokeInnerW / 2.0),
+      clockwise: false,
+    );
+    seamlessPath.lineTo(centerX + yokeInnerW / 2, yokeTopY);
+    
+    // Pillar connected SEAMLESSLY from the center bottom of the U
+    // Note: To make it look "integrated", we start the pillar path from the arc's center-bottom point
+    seamlessPath.moveTo(centerX, yokeBottomY + 2);
+    seamlessPath.lineTo(centerX, basePillarY);
+
+    canvas.drawPath(seamlessPath, framePaint);
+
+    // 3. Integrated Horizontal Base (Completing the structure)
+    final basePaint = Paint()
+      ..shader = LinearGradient(
+        colors: [const Color(0xFF2E7D32), const Color(0xFF1B5E20)],
+      ).createShader(Rect.fromCenter(center: Offset(centerX, basePillarY), width: size.width * 0.65, height: 12))
+      ..style = PaintingStyle.fill;
+    
+    canvas.drawRRect(
+      RRect.fromRectAndRadius(
+        Rect.fromCenter(center: Offset(centerX, basePillarY), width: size.width * 0.65, height: 12),
+        const Radius.circular(4),
+      ),
+      basePaint
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

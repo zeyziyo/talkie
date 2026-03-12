@@ -20,28 +20,27 @@
 
 <a id="LC-NOTE-DISPLAY"></a>
 ### [3] 주석 표시 (Display)
-- **파일**: `lib/widgets/mode1_widget.dart`
+- **파일**: `lib/widgets/simplified_input_widget.dart`
 - **상태**: `appState.note`
-- **설명**: 현재 입력 중인 항목에 주석이 설정되어 있을 경우, 입력창 상단에 시각적 알림을 표시합니다.
+- **설명**: 현재 입력 중인 항목에 주석이 설정되어 있을 경우, '상세 설정' 섹션 내 주석 필드에 텍스트가 표시됩니다.
 
 <a id="LC-INPUT"></a>
 ### [4] 소스 텍스트 입력
-- **파일**: `lib/widgets/mode1_widget.dart` (EasyAutocomplete)
-- **로직**: `appState.setSourceText(value)` (in `app_state_mode1.dart`)
-- **설명**: 사용자의 텍스트 입력을 받아 전역 상태를 업데이트하고 DB 내 유사 데이터를 검색합니다.
+- **파일**: `lib/widgets/simplified_input_widget.dart`
+- **로직**: `appState.setSourceText(value)`
+- **설명**: 사용자의 키보드 입력을 받아 전역 상태를 업데이트합니다. 입력값이 있을 때만 상세 설정 섹션이 노출됩니다.
 
 <a id="LC-POS-SELECT"></a>
 ### [5] 품사(POS) 선택
-- **파일**: `lib/widgets/mode1_widget.dart`
-- **로직**: `appState.setSourcePos(value)` (in `app_state_mode1.dart`)
-- **설명**: 단어 모드에서 데이터의 문법적 범주를 지정합니다.
+- **파일**: `lib/widgets/simplified_input_widget.dart`
+- **로직**: `appState.setSourcePos(value)`
+- **설명**: 단어 모드에서 데이터의 문법적 범주를 지정합니다. (상세 설정 섹션 내 포함)
 
 <a id="LC-TRANSLATE"></a>
 ### [6] 번역 실행
-- **파일**: `lib/providers/app_state_mode1.dart`
-- **기능**: `translate({BuildContext? context})`
-- **설명**: Gemini AI를 통해 문맥(주석 등)을 반영한 번역을 수행하며 어근을 자동 감지합니다. 
-- **개선(Phase 86+):** 사용자가 이미 주석(`_note`)을 입력한 경우, AI가 동음이의어 후보를 반환하더라도 선택 팝업을 억제하고 즉시 번역 결과를 표시하여 입력 흐름을 최적화했습니다.
+- **파일**: `lib/providers/app_state.dart`
+- **기능**: `translate()`
+- **설명**: Gemini AI를 통해 번역을 수행합니다. 음성 입력을 통한 STT 완료 후 자동으로 호출되거나, 텍스트 입력 시 실시간/수동으로 호출됩니다.
 
 <a id="LC-TTS"></a>
 ### [7] 듣기 (TTS)
@@ -54,7 +53,6 @@
 - **파일**: `lib/providers/app_state_mode1.dart`
 - **기능**: `saveTranslation({List<String>? tags})`
 - **설명**: 입력된 모든 정보(텍스트, 태그, 어근, 주석 등)를 로컬 및 클라우드 DB에 동시 저장합니다.
-- **Smart Sync & Integrity (v16.1.0+):** 저장 시 선택된 자료집 제목이 없으면 소스 언어 환경에 맞춘 기본명(예: '나의 단어장')이 강제 부여되어 유실을 방지합니다. 외부 자료 임포트 내역(Online Library 등)과 통합 관리되며, 현지어로 이름이 바뀌어도 `syncKey`로 백그라운드 추적 및 복원(`_repairLocalTitles`)이 자동 수행됩니다.
 
 <a id="LC-SUBJECT-NEW"></a>
 ### [9] 새 제목 입력
@@ -64,22 +62,27 @@
 
 <a id="LC-SUBJECT-PICK"></a>
 ### [10] 기존 제목 선택 (드롭다운)
-- **파일**: `lib/widgets/metadata_dialog.dart` (과거), `lib/widgets/mode1_widget.dart` (현재 메인뷰)
+- **파일**: `lib/widgets/simplified_input_widget.dart` (메인), `lib/widgets/mode2_widget.dart` (복습)
 - **로직**: `appState.setSelectedSaveSubject(value)`
-- **설명**: 사용자가 학습 자료를 묶어서 관리할 그룹(자료집 명칭)을 선택합니다. 
-- **Auto Completer**: 현재는 Mode 1 메인뷰에서 자동 완성 드롭다운으로 신속하게 기존 자료집을 찾고 할당할 수 있도록 UX가 개편되었습니다.
+- **설명**: 사용자가 학습 자료를 묶어서 관리할 그룹(자료집 명칭)을 선택합니다. 메인화면과 각 모드에서 공통 사용됩니다.
 
 <a id="LC-TAGS"></a>
 ### [11] 일반 태그 관리
-- **파일**: `lib/widgets/metadata_dialog.dart`
-- **상태**: `MetadataDialog._currentTags` (Internal)
+- **파일**: `lib/widgets/simplified_input_widget.dart`
+- **상태**: `appState.setTags(tags)`
 - **설명**: 해당 데이터에 부여할 임의의 해시태그 목록을 편집합니다.
 
 <a id="LC-NOTE-INPUT"></a>
 ### [12] 주석 입력 (Input)
-- **파일**: `lib/providers/app_state_mode1.dart`
+- **파일**: `lib/widgets/simplified_input_widget.dart`
 - **로직**: `appState.setNote(value)`
-- **설명**: 번역의 품질을 높이거나 의미를 명확히 하기 위한 문맥적 힌트를 입력합니다.
+- **설명**: 번역 품질 향상을 위한 문맥적 힌트를 입력합니다. 상세 설정 섹션에 위치합니다.
+
+<a id="LC-STT"></a>
+### [LC-STT] 메인 음성 인식
+- **파일**: `lib/widgets/simplified_input_widget.dart`
+- **로직**: `appState.startListening()`
+- **설명**: 대형 마이크 버튼을 통해 사용자의 음성을 인식하여 소스 텍스트로 변환합니다. 인식 종료 후 자동 번역 로직으로 연결됩니다.
 
 <a id="LC-ROOT"></a>
 ### [13] 어근 (Root)
@@ -144,13 +147,13 @@
 ### [23] 발음 채점 (Judge)
 - **파일**: `lib/providers/app_state_mode3.dart`
 - **로직**: `_evaluateSpeech()`
-- **설명**: AI 또는 유사도 평가를 통해 사용자의 발음(STT)과 정답 텍스트를 비교하여 Great/Good/Try Again으로 평가합니다. 동음이의어 매핑 등이 적용됩니다.
+- **설명**: AI 또는 유사도 평가를 통해 사용자의 발음(STT)과 정답 텍스트를 비교하여 Great/Good/Try Again으로 평가합니다. 
 
 <a id="LC-PARTNER-MODE"></a>
-### [24] AI / 파트너 모드 전환
+### [24] AI 문장 생성 요청 (수동)
 - **파일**: `lib/screens/chat_screen.dart`
-- **상태**: `_isPartnerMode`
-- **설명**: 혼자서 1인 다역(Role-play)을 하는 파트너 모드와 AI가 능동적으로 대답하는 AI 모드를 전환합니다.
+- **기능**: `_triggerAiResponseManually()`
+- **설명**: 현재 대화 문맥을 바탕으로 AI가 다음 응답을 생성하도록 요청합니다. (매직 완드 아이콘)
 
 <a id="LC-CHAT-SAVE"></a>
 ### [25] 대화 저장 및 종료
@@ -180,4 +183,28 @@
 ### [29] 대화용 마이크 (STT)
 - **파일**: `lib/screens/chat_screen.dart`
 - **로직**: `_startListening()`
-- **설명**: 대화창 전용 음성 인식 세션을 엽니다. 메인뷰의 전역 마이크와 충돌하지 않도록 독립 처리됩니다.
+- **설명**: 대화창 전용 음성 인식 세션을 엽니다. 메인뷰의 전역 마이크와 독립 처리됩니다.
+
+<a id="LC-CHAT-SEARCH"></a>
+### [LC-CHAT-SEARCH] 대화 내역 검색
+- **파일**: `lib/screens/chat_history_screen.dart`
+- **로직**: `_filterDialogues()` 내 제목 매칭
+- **설명**: 제목 검색어를 통해 과거 대화 내역을 필터링합니다.
+
+<a id="LC-CHAT-DATE"></a>
+### [LC-CHAT-DATE] 대화 날짜 필터링
+- **파일**: `lib/screens/chat_history_screen.dart`
+- **로직**: `_pickDateRange()`
+- **설명**: 특정 기간을 지정하여 대화 내역을 필터링합니다.
+
+<a id="LC-CHAT-NEW"></a>
+### [LC-CHAT-NEW] 새 대화 시작
+- **파일**: `lib/screens/chat_history_screen.dart`
+- **로직**: `_showNewChatDialog()`
+- **설명**: 참가자 선택 다이얼로그를 통해 AI 또는 파트너와의 새로운 대화 세션을 생성합니다.
+
+<a id="LC-CHAT-RENAME"></a>
+### [LC-CHAT-RENAME] 참가자 이름 변경
+- **파일**: `lib/screens/chat_screen.dart`
+- **로직**: `_showRenameDialog()`
+- **설명**: 메세지 상단의 이름/아바타를 클릭하여 해당 참가자의 이름을 수정합니다.

@@ -411,20 +411,19 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         preferredSize: Size.fromHeight((appState.currentMode >= 1 && appState.currentMode <= 2) ? 154.0 : 104.0),
         child: Consumer<AppState>(
           builder: (context, appState, child) {
-            String modeName;
-            switch (appState.currentMode) {
-              case 0: modeName = 'Talkie'; break;
-              case 1: modeName = l10n.reviewModeTitle; break;
-              case 2: modeName = l10n.practiceModeTitle; break;
-              case 3: modeName = l10n.chatAiChat; break;
-              default: modeName = l10n.appTitle;
-            }
-
             return AppBar(
-              title: Text(modeName, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+              title: const Text('Talkie', style: TextStyle(
+                fontWeight: FontWeight.w900, 
+                fontSize: 32, 
+                letterSpacing: -1.2, 
+                color: Colors.black,
+                shadows: [
+                  Shadow(color: Colors.black26, offset: Offset(0, 0.5), blurRadius: 1),
+                ],
+              )),
               centerTitle: true,
-              backgroundColor: Colors.orange,
-              foregroundColor: Colors.white,
+              backgroundColor: Colors.grey.shade100,
+              foregroundColor: Colors.blue.shade700,
               leading: Builder(
                 builder: (context) => IconButton(
                   key: _menuKey,
@@ -441,10 +440,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       color: Colors.white,
                       child: TabBar(
                         controller: _tabController,
-                        labelColor: Colors.indigo,
-                        unselectedLabelColor: Colors.grey,
-                        indicatorColor: Colors.indigo,
-                        indicatorWeight: 3,
+                        labelColor: Colors.white,
+                        unselectedLabelColor: Colors.indigo.shade300,
+                        indicatorSize: TabBarIndicatorSize.tab,
+                        indicator: BoxDecoration(
+                          borderRadius: BorderRadius.circular(0),
+                          color: Colors.indigo,
+                        ),
                         onTap: (index) => appState.switchMode(index),
                         tabs: [
                           Tab(text: '홈', icon: const Icon(Icons.home_rounded, size: 20)),

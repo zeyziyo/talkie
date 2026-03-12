@@ -349,7 +349,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get helpJsonTypeWord => 'Woord';
 
   @override
-  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+  String get helpMode1Desc =>
+      'Vertaal onmiddellik deur spraak te herken of teks in te voer, en stoor dit in die leerlys.';
 
   @override
   String get helpMode1Details =>

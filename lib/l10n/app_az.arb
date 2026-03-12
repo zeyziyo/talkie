@@ -189,6 +189,7 @@
   "helpJsonTypeDialogue": "Dialoq",
   "helpJsonTypeSentence": "Cümlə",
   "helpJsonTypeWord": "Söz",
+  "helpMode1Desc": "Səsi tanıyın və ya mətn daxil edərək dərhal tərcümə edin və öyrənmə siyahısına saxlayın.",
   "helpMode1Details": "• Dil seçimi: Tətbiq menyusu və ya aşağıdakı dil düymələri ilə öz dilinizi və öyrənmək istədiyiniz dili dəyişdirin\n• Sadə giriş: Mətn daxil edildikdə avtomatik analiz (söz / cümlə) və tənzimləmə sahəsinin aktivləşdirilməsi\n• Mikrofon / klaviatura: Əsas ekrandakı böyük işarə ilə səs tanıma və ya mətn daxil etməyə başlayın\n• Ətraflı parametrlər: Giriş zamanı görünən aşağı sahədə məlumat kitabçası, etiket və vəziyyət qeydlərini təyin edin\n• Avtomatik axtarış: Oxşar mövcud tərcümələrin real vaxtda aşkarlanması\n• Dinləmək: Dinamik işarəsi ilə ana dilində tələffüzün (TTS) oxunması\n• Saxlamaq: 'Məlumatları saxla' ilə dərhal öz öyrənmə siyahınıza əlavə edin",
   "helpMode2Desc": "Saxlanılan cümlələri nəzərdən keçirin və avtomatik gizlətmə funksiyası ilə əzbərləməyi yoxlayın.",
   "helpMode2Details": "• Material seçimi: Sağ üst menyudan (⋮) 'Tədris materialı seçimi' və ya 'Onlayn material kitabxanası' istifadə edin\n• Kartı çevirmək: 'Göstər/Gizlət' vasitəsilə tərcüməni yoxlayın\n• Dinləmək: Dinləmək üçün dinamik işarəsinə toxunun\n• Tədrisi bitirmək: Tədrisi bitirmək üçün onay işarəsinə(V) toxunun\n• Silmək: Qeydləri silmək üçün karta uzun basın\n• Axtarış və filtrləmə: Axtarış paneli (real vaxt ağıllı axtarış) və etiket, başlanğıc hərf filtrləri dəstəklənir",

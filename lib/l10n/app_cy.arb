@@ -189,6 +189,7 @@
   "helpJsonTypeDialogue": "Deialog",
   "helpJsonTypeSentence": "Brawddeg",
   "helpJsonTypeWord": "Gair",
+  "helpMode1Desc": "Adnabod llais neu deipio testun i gyfieithu ar unwaith, a'i gadw i restr ddysgu.",
   "helpMode1Details": "• Gosodiadau Iaith: Newidiwch fy iaith a'r iaith ddysgu gyda'r ddewislen bar app neu'r botwm iaith ar y gwaelod\n• Mewnbwn Syml: Dadansoddir testun yn awtomatig (gair/brawddeg) a gosod ardal yn cael ei actifadu wrth fewnbynnu\n• Meicroffon/Bysellfwrdd: Dechreuwch adnabod llais neu fewnbynnu testun gyda'r eicon mawr ar y prif sgrin\n• Gosodiadau Manwl: Nodi llyfr ffynhonnell, tagiau, a nodyn sefyllfa yn yr ardal isaf sy'n ymddangos wrth fewnbynnu\n• Chwilio Awtomatig: Canfod cyfieithiadau presennol tebyg mewn amser real\n• Gwrando: Chwarae ynganiad brodor (TTS) gyda'r eicon siaradwr\n• Cadw: Ychwanegu ar unwaith at eich rhestr ddysgu eich hun gyda 'Cadw Data'",
   "helpMode2Desc": "Adolygu brawddegau sydd wedi'u cadw a gwirio a ydych wedi'u cofio gyda'r swyddogaeth cuddio awtomatig.",
   "helpMode2Details": "• Dewis llyfr nodiadau: Defnyddiwch y ddewislen (⋮) ar y dde uchaf i ddewis 'Dewis Llyfr Nodiadau Astudio' neu 'Llyfrgell Ddigidol'\n• Fflipio cerdyn: Gwiriwch y cyfieithiad gyda 'Dangos/Cuddio'\n• Gwrando: Chwarae ynganiad gyda'r eicon siaradwr\n• Astudiaeth wedi'i chwblhau: Wedi'i farcio fel wedi'i chwblhau gyda marc siec (V)\n• Dileu: Pwyswch a dal cerdyn (Clic Hir) i ddileu'r cofnod\n• Chwilio a hidlo: Cefnogaeth bar chwilio (chwilio craff amser real) a thagiau, hidlwyr llythrennau cychwynnol",

@@ -189,6 +189,7 @@
   "helpJsonTypeDialogue": "Dialog (Dialogue)",
   "helpJsonTypeSentence": "Sætning (Sentence)",
   "helpJsonTypeWord": "Ord (Word)",
+  "helpMode1Desc": "Oversæt øjeblikkeligt ved at genkende din stemme eller indtaste tekst, og gem den på din studieliste.",
   "helpMode1Details": "• Sprogindstillinger: Skift mit sprog og læringssprog med app-bar-menuen eller den nederste sprogknap\n• Enkel input: Analyserer automatisk (ord/sætning) og aktiverer indstillingsområdet, når du indtaster tekst\n• Mikrofon/tastatur: Start stemmegenkendelse eller tekstinput med det store ikon på hovedskærmen\n• Detaljerede indstillinger: Angiv databog, tag og situationsnotat i det nederste område, der vises under input\n• Automatisk søgning: Registrerer lignende eksisterende oversættelser i realtid\n• Lyt: Afspil indfødt udtale (TTS) med højttalerikonet\n• Gem: Tilføj straks til din egen læringsliste med 'Gem data'",
   "helpMode2Desc": "Gennemgå gemte sætninger med skjult oversættelse.",
   "helpMode2Details": "• Vælg materialesamling: Brug 'Vælg studiesamling' eller 'Online materialerum' i menuen (⋮) øverst til højre\n• Vend kort: Tjek oversættelsen med 'Vis/Skjul'\n• Lyt: Afspil udtale med højttalerikonet\n• Læring fuldført: Marker som fuldført med et flueben (V)\n• Slet: Slet poster ved at trykke længe på kortet (Langt klik)\n• Søg og filtrer: Understøtter søgefelt (smart realtidssøgning) og tags, startbogstavfilter",

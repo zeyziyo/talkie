@@ -31,17 +31,17 @@ dart run sqflite_common_ffi_web:setup --dir web
 ## 기능 (Features)
 
 ### MODE 1: 심플 입력 (Simplified Input)
-- 🎤 **스마트 입력**: 마이크(음성) 또는 키보드(텍스트) 아이콘으로 즉시 시작
+- 🎤 **스마트 입력**: 중앙의 대형 마이크 또는 텍스트 입력창을 통해 즉시 시작
 - 🔄 **자동 분석**: 입력된 텍스트의 종류(단어/문장)와 언어를 자동 감지
 - 📊 **실시간 설정**: 입력 중 하단에 나타나는 영역에서 자료집, 태그, 상황 메모를 즉시 지정
 - 🔊 **TTS**: 번역된 텍스트 듣기 (원어민 발음)
 - 💾 **저장**: 나만의 학습 기록으로 즉시 추가
 
-* **Smart Input**: Start instantly via Mic or Keyboard icons on the home screen
+* **Smart Input**: Start instantly via the central Mic icon or direct text input
 * **Auto-Analysis**: Automatically detects input type (Word/Sentence) and language
 * **Real-time Settings**: Configure material sets, tags, and context notes on the fly
 * **TTS**: Listen to translated text with native pronunciation
-* **Save**: Instantly add to your peronalized study list
+* **Save**: Instantly add to your personalized study list
 
 ### MODE 2: 복습 (Review)
 - 📱 **하단 네비게이션**: 탭 바를 통한 직관적인 모드 이동

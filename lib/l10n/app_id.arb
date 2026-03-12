@@ -189,6 +189,7 @@
   "helpJsonTypeDialogue": "Dialog",
   "helpJsonTypeSentence": "Kalimat",
   "helpJsonTypeWord": "Kata",
+  "helpMode1Desc": "Terjemahkan langsung dengan mengenali suara atau memasukkan teks, lalu simpan ke daftar belajar.",
   "helpMode1Details": "• Pengaturan Bahasa: Ubah bahasa saya dan bahasa pembelajaran di menu bilah aplikasi atau tombol bahasa di bagian bawah\n• Input Sederhana: Analisis otomatis (kata/kalimat) dan aktivasi area pengaturan saat memasukkan teks\n• Mikrofon/Papan Ketik: Mulai pengenalan suara atau masukkan teks dengan ikon besar di layar utama\n• Pengaturan Detail: Tentukan buku sumber, tag, dan memo situasi di area bawah yang muncul selama input\n• Pencarian Otomatis: Deteksi terjemahan lama serupa secara real time\n• Dengarkan: Putar pengucapan penutur asli (TTS) dengan ikon speaker\n• Simpan: Tambahkan langsung ke daftar pembelajaran Anda sendiri dengan 'Simpan Data'",
   "helpMode2Desc": "Ulas kalimat tersimpan dengan terjemahan sembunyi otomatis.",
   "helpMode2Details": "• Pilih koleksi: Gunakan 'Pilih Koleksi Belajar' atau 'Perpustakaan Online' dari menu (⋮) di kanan atas\n• Balik Kartu: Periksa terjemahan dengan 'Tampilkan/Sembunyikan'\n• Dengarkan: Putar pengucapan dengan ikon speaker\n• Selesai Belajar: Tandai selesai dengan tanda centang (V)\n• Hapus: Tekan lama kartu untuk menghapus catatan\n• Cari dan Filter: Mendukung bilah pencarian (pencarian pintar waktu nyata) dan filter tag, huruf awal",

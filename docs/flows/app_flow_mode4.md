@@ -123,6 +123,35 @@ Mode 4 (자유 대화/채팅 화면)
 
 </div>
 
+</div>
+
+---
+
+## 📋 상세 흐름 명세 (Detailed Flow)
+
+### 1. 대화 내역 필터링 및 관리
+- **[A] 제목 검색**: `ChatHistoryScreen` 상단 검색바에 키워드를 입력하여 대화 제목과 매칭되는 내역을 실시간 필터링합니다. <a href="./logic_reference.md#LC-CHAT-SEARCH">[LC-CHAT-SEARCH]</a>
+- **[B] 날짜 필터**: 달력 아이콘 클릭 시 `DateRangePicker`가 호출되며, 특정 기간 내 생성된 대화만 목록에 노출합니다. <a href="./logic_reference.md#LC-CHAT-DATE">[LC-CHAT-DATE]</a>
+- **[C] 상세 정보**: 각 대화 아이템은 날짜, 위치(GPS/IP), 주석을 요약하여 보여줍니다. 쓰레기통 아이콘 클릭 시 해당 대화가 DB에서 완전히 삭제됩니다.
+
+### 2. 새 대화 시작 및 참가자 구성
+- **[D] 참가자 선택**: `+ 새 대화` 버튼 클릭 시 `ParticipantSelectorDialog`가 열립니다. 여기서 AI 비서, 언어별 파트너 등을 다중 선택하여 대화방을 생성할 수 있습니다. <a href="./logic_reference.md#LC-CHAT-NEW">[LC-CHAT-NEW]</a>
+- **[E] 모드 결정**: 선택된 참가자 중 AI가 포함되어 있으면 AI 응답 자동 생성 기능이 활성화됩니다.
+
+### 3. 대화창 상호작용 (Chat Screen)
+- **[F] 발화자 전환**: 하단 드롭다운을 통해 '나(User)' 또는 다른 참가자(AI, Third Party) 중 누가 말할지 선택합니다. 선택된 화자의 언어 설정에 맞춰 STT/TTS가 동작합니다.
+- **[G] 이름 변경**: 메시지 상단의 아바타나 이름을 클릭하면 팝업이 뜨며, 해당 참가자의 이름을 자유롭게 수정할 수 있습니다. <a href="./logic_reference.md#LC-CHAT-RENAME">[LC-CHAT-RENAME]</a>
+- **[H] 번역 토글**: 각 메시지 옆의 스위치를 통해 원문(Spoken Text)과 번역문(App Native Lang)을 개별적으로 전환하여 볼 수 있습니다. <a href="./logic_reference.md#LC-CHAT-TRANSLATE">[LC-CHAT-TRANSLATE]</a>
+
+### 4. 메시지 처리 및 AI 연동
+- **[I] 음성 인식 (STT)**: 마이크 버튼 클릭 시 전용 세션이 시작되며, 인식된 텍스트는 즉시 입력창에 채워집니다. <a href="./logic_reference.md#LC-CHAT-MIC">[LC-CHAT-MIC]</a>
+- **[J] 메시지 전송**: 전송 버튼 클릭 시 `TranslationService`를 거쳐 번역 후 DB에 저장되며, 화면에 낙관적(Optimistic)으로 즉시 표시됩니다. <a href="./logic_reference.md#LC-CHAT-PROCESS">[LC-CHAT-PROCESS]</a>
+- **[K] AI 수동 생성**: 화자가 AI인 경우 노출되는 요술봉(✨) 버튼을 누르면, 이전 대화 문맥을 AI가 분석하여 가장 적절한 답변을 생성하고 자동으로 TTS 발화합니다. <a href="./logic_reference.md#LC-PARTNER-MODE">[LC-PARTNER-MODE]</a>
+
+### 5. 대화 종료 및 데이터 영구 저장
+- **[L] 종료 다이얼로그**: 상단 저장(💾) 버튼 클릭 시 호출됩니다. <a href="./logic_reference.md#LC-CHAT-SAVE">[LC-CHAT-SAVE]</a>
+- **[M] 정보 최신화**: AI가 추천하는 제목 중 하나를 고르거나 직접 입력하고, 위치 정보 및 대화 요약 주석을 추가하여 최종 저장한 뒤 목록으로 돌아갑니다.
+
 ---
 
 ## 🔗 참고 문서

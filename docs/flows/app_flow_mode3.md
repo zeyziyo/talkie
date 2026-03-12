@@ -78,43 +78,73 @@ Mode 3 (말하기 실전 연습)
 <div style="background: rgba(0,0,0,0.12); padding: 20px; border-radius: 0 0 20px 20px; text-align: center;">
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 20px;">
 <!-- Skip Button -->
-<span style="background: rgba(255,255,255,0.24); width: 40px; height: 40px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">⏭️</span>
+<div style="background: rgba(255,255,255,0.24); width: 44px; height: 44px; border-radius: 22px; display: flex; align-items: center; justify-content: center; font-size: 18px;">⏭️</div>
 
 <!-- 대형 마이크 버튼 -->
-<span style="background: white; color: #764ba2; width: 70px; height: 70px; border-radius: 35px; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">🎤</span> <a href="./logic_reference.md#LC-PRACTICE-STT" style="text-decoration: none; font-size: 11px; vertical-align: super; color: white;">[21]</a>
+<div style="background: white; color: #764ba2; width: 76px; height: 76px; border-radius: 38px; display: flex; align-items: center; justify-content: center; font-size: 34px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">🎙️</div> <a href="./logic_reference.md#LC-PRACTICE-STT" style="text-decoration: none; font-size: 11px; vertical-align: super; color: white;">[21]</a>
 
 <!-- TTS 듣기 버튼 -->
-<span style="background: rgba(255,255,255,0.24); width: 40px; height: 40px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">🔊</span> <a href="./logic_reference.md#LC-TTS" style="text-decoration: none; font-size: 11px; vertical-align: super; color: white;">[7]</a>
+<div style="background: rgba(255,255,255,0.24); width: 44px; height: 44px; border-radius: 22px; display: flex; align-items: center; justify-content: center; font-size: 18px;">🔊</div> <a href="./logic_reference.md#LC-TTS" style="text-decoration: none; font-size: 11px; vertical-align: super; color: white;">[7]</a>
 
 <!-- Reset Button -->
-<span style="background: rgba(255,255,255,0.24); width: 40px; height: 40px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">🔄</span>
+<div style="background: rgba(255,255,255,0.24); width: 44px; height: 44px; border-radius: 22px; display: flex; align-items: center; justify-content: center; font-size: 18px;">🔄</div>
 </div>
 
-<!-- 글자 수 힌트 제공 영역 -->
-<div style="background: rgba(255,255,255,0.1); display: inline-block; padding: 4px 8px; border-radius: 6px; font-family: monospace; letter-spacing: 2px;">
-I- ---- - ------ (Hint)
-</div>
-</div>
-</div>
-
-<!-- (결과 화면 예시 : 발음을 마치고 난 직후) -->
-<div style="background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 20px; margin-top: 16px; color: white; box-shadow: 0 6px 12px rgba(118, 75, 162, 0.4);">
-<div style="background: rgba(0,0,0,0.12); padding: 20px; border-radius: 0 0 20px 20px; text-align: center;">  
-<div style="font-size: 18px; font-weight: bold; color: #69f0ae; margin-bottom: 8px;">정확도: 100.0% <a href="./logic_reference.md#LC-JUDGE" style="text-decoration: none; font-size: 11px; vertical-align: super; color: white;">[23]</a></div>
-<div style="font-size: 22px; font-weight: bold; margin-bottom: 10px;">Is this a pencil? (정답 어휘)</div>
-<div style="font-size: 14px; font-style: italic; color: rgba(255,255,255,0.7); margin-bottom: 20px;">"Is this a pencil?" (내 발음 인식 결과)</div>
-<div style="display: flex; gap: 8px; justify-content: center;">
-<span style="background: rgba(255,255,255,0.12); width: 48px; height: 48px; border-radius: 24px; display: flex; justify-content: center; align-items: center;">🔄</span>
-<span style="background: rgba(255,255,255,0.24); padding: 12px; flex: 1; border-radius: 12px; font-weight: bold; display: flex; justify-content: center; align-items: center;">🔁 Retry</span>
-<span style="background: white; color: #764ba2; padding: 12px; flex: 1; border-radius: 12px; font-weight: bold; display: flex; justify-content: center; align-items: center;">Next ➔</span>
+<!-- 텍스트 힌트 제공 영역 -->
+<div style="background: rgba(255,255,255,0.1); display: inline-block; padding: 6px 12px; border-radius: 8px; font-family: monospace; letter-spacing: 1.5px; border: 1px solid rgba(255,255,255,0.2);">
+I _ _ _ _ _ _ _ _ _ _ _ (Hint)
 </div>
 </div>
 </div>
 
+<!-- 결과 화면 예시 (발음 평가 완료 후) -->
+<div style="background: linear-gradient(135deg, #43e97b, #38f9d7); border-radius: 20px; margin-top: 20px; color: #1b5e20; box-shadow: 0 4px 15px rgba(67, 233, 123, 0.4);">
+<div style="padding: 20px; text-align: center;">
+<div style="font-size: 20px; font-weight: bold; margin-bottom: 5px;">Excellent! 🌟</div>
+<div style="font-size: 16px; font-weight: bold; margin-bottom: 12px;">정확도: 98.5% <a href="./logic_reference.md#LC-JUDGE" style="text-decoration: none; font-size: 11px; vertical-align: super;">[23]</a></div>
+<div style="background: white; padding: 12px; border-radius: 12px; margin-bottom: 15px; border: 1px solid rgba(0,0,0,0.05);">
+<div style="font-size: 13px; color: #666; margin-bottom: 4px;">Target</div>
+<div style="font-size: 18px; font-weight: bold;">I have been a developer.</div>
 </div>
+<div style="display: flex; gap: 10px;">
+<div style="flex: 1; background: rgba(0,0,0,0.05); padding: 12px; border-radius: 10px; font-weight: bold;">다시 하기</div>
+<div style="flex: 1; background: #1b5e20; color: white; padding: 12px; border-radius: 10px; font-weight: bold;">다음 ➔</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
 </div>
 
 ---
+
+## 📋 상세 흐름 명세 (Detailed Flow)
+
+### 1. 연습 자료 준비 및 필터링
+- **[A] 자료집 및 검색**: 연습하고자 하는 학습 세트(단어/문장)를 선택하고, 스마트 검색바를 통해 연습할 특정 항목을 신속하게 찾습니다. <a href="./logic_reference.md#LC-SEARCHBAR">[15]</a>
+- **[B] 조건 필터**: '외운 항목 보기' 토글 등을 활용하여 아직 숙달되지 않은 문장들로 연습 풀을 구성합니다. <a href="./logic_reference.md#LC-TOGGLE-MEMORIZED">[17]</a>
+
+### 2. 연습 세션 활성화
+- **[C] 카드 로딩**: 목록에서 카드를 선택하면 연습 모드가 활성화되며, 상단에 모국어(KO) 텍스트가 제시되고 하단에 학습어(EN) 힌트(언더바 등)가 표시됩니다.
+- **[D] 원어민 발음 청취**: 연습 전 TTS 버튼을 통해 목표 문장의 정확한 발음을 청취하여 가이드를 얻습니다. <a href="./logic_reference.md#LC-TTS">[7]</a>
+
+### 3. 실전 말하기 및 인식 (STT)
+- **[E] 마이크 제어**: 대형 중앙 마이크 버튼을 클릭하여 음성 인식을 시작합니다. 인식 중에는 버튼이 애니메이션되며 사용자의 발음을 텍스트로 변환합니다. <a href="./logic_reference.md#LC-PRACTICE-STT">[21]</a>
+- **[F] 인식 중지**: 발음이 완료되면 수동으로 마이크를 닫거나 시스템이 침묵을 감지하여 인식을 종료합니다. <a href="./logic_reference.md#LC-STOP-MIC">[22]</a>
+
+### 4. 발음 정합성 평가 (Judge)
+- **[G] AI 채점**: 인식된 텍스트와 실제 정답 텍스트를 AI가 비교 분석하여 정확도(%) 및 평가 등급(Excellent, Good 등)을 도출합니다. <a href="./logic_reference.md#LC-JUDGE">[23]</a>
+
+### 5. 결과 검토 및 다음 단계
+- **[H] 피드백 확인**: 본인이 발음한 내용과 정답의 차이를 시각적으로 확인합니다.
+- **[I] 반복 연습**: 결과가 미흡할 경우 '다시 하기'를 눌러 즉시 재시도하거나, 성공 시 '다음' 버튼을 눌러 다음 문장으로 넘어갑니다.
+- **[J] 암기 완료 처리**: 충분히 숙달되었다고 판단되면 카드의 체크박스를 눌러 완료 상태로 기록합니다. <a href="./logic_reference.md#LC-MARK-MEMORIZED">[20]</a>
+
+---
+
 ## 🔗 참고 문서
 - [로직 통합 명세 (Logic Reference)](./logic_reference.md)
 - [메인 화면 흐름도 (App Flow Main)](./app_flow_main.md)
