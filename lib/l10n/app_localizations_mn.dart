@@ -12,14 +12,14 @@ class AppLocalizationsMn extends AppLocalizations {
   String get basicWords => 'Үндсэн үгсийн сан';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Оролтын хэл';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Орчуулгын хэл';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Өдөр тутмын яриаг гадаад хэл рүү шууд хөрвүүлээрэй! Talkie таны хэлний амьдралыг тэмдэглэнэ.';
 
   @override
   String get cancel => 'Цуцлах';
@@ -318,6 +318,12 @@ class AppLocalizationsMn extends AppLocalizations {
   String get gender => 'Хүйс';
 
   @override
+  String get labelFilterMaterial => 'Материал';
+
+  @override
+  String get labelFilterTag => 'Тэмдэг';
+
+  @override
   String get generalTags => 'Ерөнхий шошго';
 
   @override
@@ -351,12 +357,11 @@ class AppLocalizationsMn extends AppLocalizations {
   String get helpJsonTypeWord => 'Үг (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'Дуудлагыг таньж орчуулж, үр дүнг сонсох боломжтой.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Хэл тохируулах: Дээд/доод дүрс дээр дарж хэл өөрчлөх\n• Үг/Өгүүлбэр хооронд шилжих: Горим солих\n• Дуут оруулах: Микрофон дүрс дээр дарж сонсож эхлэх/зогсоох\n• Текст оруулах: Шууд бичиж орчуулах\n• Автомат хайлт: Ижил төстэй өгүүлбэрүүдийг илрүүлэх\n• Орчуулах: Орчуулах товчлуур дээр дарж шууд орчуулах\n• Сонсох: Чанга яригч дүрсээр TTS тоглуулах\n• Хадгалах: \'Мэдээлэл хадгалах\' руу бичлэг нэмэх\n• Цэвэрлэх: Оруулахыг анхны байдалд оруулах (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -380,7 +385,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI чат: Өөрийн хэлээр ярьж ярианы дадлага хийх\n• Олон дүр: Ярианы бөмбөлөгийн дээрх цэсээр харилцагчийн хүйс/хэл/нэрийг өөрчлөх боломжтой\n• Хамтрагч нэмэх: + товчлуураар шинэ ярилцах хүнтэй (Stranger) нэмэх\n• GPS: Одоогийн байршилд суурилсан драм\n• Автомат хадгалах: Ярианы агуулгыг автоматаар орчуулж хадгалах (TODO: Translate)';
+      '• AI чат: Доод таб баарны \'Чат\' цэснээс дүр төрхтэй бодит ярианы дадлага хийх\n• Дүр төрх тохируулах: Харилцагчийн хүйс, нэр, хэлний кодыг чөлөөтэй зааж өгөх\n• GPS жүжигчилсэн тоглоом: Одоогийн байгаа газрыг таньж, тухайн газарт тохирох ярианы сэдвийг санал болгох\n• 2 хэл: AI-ийн хариултыг орчуулгатай хамт харуулснаар сургалтын үр дүнг дээд зэргээр нэмэгдүүлэх\n• Бичлэгийн удирдлага: Өнгөрсөн ярианы түүхийг шүүж, ярианы явцад тодорхой мессежийг сургалтын материал болгон хадгалах';
 
   @override
   String get helpTabJson => 'JSON формат';
@@ -1285,12 +1290,62 @@ class AppLocalizationsMn extends AppLocalizations {
       'Энэ хэлээр яриа үүсгэх нь таны төхөөрөмжийн тохиргоогоор дэмжигдэхгүй байна.';
 
   @override
+  String get homeTab => 'Нүүр';
+
+  @override
   String get welcomeTitle => 'Talkie-д тавтай морил!';
 
   @override
   String get welcomeDesc =>
-      'Talkie 80 гаруй хэл дэмждэг бөгөөд аялагчдад зориулсан ухаалаг орчуулгын хэрэгсэл юм. AI Chat-ын тусламжтайгаар ярианы чадвараа сайжруулаарай!';
+      'Talkie-аар 80 хэлний аль нэгээр нь хоорондоо шууд орчуулж, хязгааргүй давтах боломжтой.';
 
   @override
   String get welcomeButton => 'Эхлэх';
+
+  @override
+  String get labelDetails => 'Дэлгэрэнгүй тохиргоо';
+
+  @override
+  String get translationResult => 'Орчуулгын үр дүн';
+
+  @override
+  String get inputContent => 'Оруулах агуулга';
+
+  @override
+  String get translateNow => 'Орчуулах';
+
+  @override
+  String get tooltipSettingsConfirm => 'Тохиргоог баталгаажуулах';
+
+  @override
+  String get hintNoteExample =>
+      'Жишээ нь: Нөхцөл байдал, ижил утгатай үгс гэх мэт';
+
+  @override
+  String get hintTagExample => 'Жишээ нь: Бизнес, аялал...';
+
+  @override
+  String get addNew => 'Шинээр нэмэх';
+
+  @override
+  String get newNotebookTitle => 'Шинэ дэвтэрийн нэр';
+
+  @override
+  String get enterNameHint => 'Нэр оруулна уу';
+
+  @override
+  String get add => 'Нэмэх';
+
+  @override
+  String get openSettings => 'Тохиргоог нээх';
+
+  @override
+  String get helpNotebook => 'Орчуулгын үр дүнг хадгалах хавтас сонгоно уу.';
+
+  @override
+  String get helpNote =>
+      'Үгийн утга, жишээ, нөхцөл байдлыг чөлөөтэй тэмдэглээрэй.';
+
+  @override
+  String get helpTag => 'Дараа нь ангилах эсвэл хайх түлхүүр үгээ оруулна уу.';
 }

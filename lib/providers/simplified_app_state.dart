@@ -14,11 +14,15 @@ class SimplifiedAppState extends ChangeNotifier {
   String _type = 'word'; 
   String _note = '';
   String _tags = '';
-  String _selectedNotebook = '나의 단어장'; // Default notebook
+  String _selectedNotebook = ''; // 초기값 비움 (sync 시 설정)
+  String _localizedWordbook = '';
+  String _localizedSentencebook = '';
   List<String> _availableNotebooks = [];
   bool _isListening = false;
   bool _isTranslating = false;
+  bool _isSettingsConfirmed = false;
   List<Map<String, dynamic>> _records = [];
+  int _loadSeq = 0; // Sequence number to handle async races
 
   // Getters
   String get sourceText => _sourceText;
@@ -32,6 +36,7 @@ class SimplifiedAppState extends ChangeNotifier {
   List<String> get availableNotebooks => _availableNotebooks;
   bool get isListening => _isListening;
   bool get isTranslating => _isTranslating;
+  bool get isSettingsConfirmed => _isSettingsConfirmed;
   List<Map<String, dynamic>> get records => _records;
 
   SimplifiedAppState() {
@@ -39,27 +44,53 @@ class SimplifiedAppState extends ChangeNotifier {
   }
 
   Future<void> init() async {
-    await loadNotebooks(type: _type);
+    await loadNotebooks(type: _type, langCode: _sourceLang);
     notifyListeners();
   }
 
-  Future<void> loadNotebooks({String? type}) async {
+  Future<void> loadNotebooks({String? type, String? langCode}) async {
+    if (type != null) _type = type;
+    if (langCode != null) _sourceLang = langCode;
+    
+    final currentType = _type;
+    final currentLang = _sourceLang;
+    final seq = ++_loadSeq;
+    
     try {
-      final materials = await DatabaseService.getStudyMaterials(type: type);
+      final materials = await DatabaseService.getStudyMaterials(type: currentType, langCode: currentLang);
+      
+      // If a newer request has started, discard this result
+      if (seq != _loadSeq) return;
+
       _availableNotebooks = materials.map((m) => m['subject'] as String).toList();
       
-      String defaultTitle = (type == 'sentence') ? '나의 문장집' : '나의 단어장';
-      if (!_availableNotebooks.contains(defaultTitle)) {
-        _availableNotebooks.insert(0, defaultTitle);
+      final String defaultTitle = (currentType == 'sentence') ? _localizedSentencebook : _localizedWordbook;
+      final String otherDefault = (currentType == 'sentence') ? _localizedWordbook : _localizedSentencebook;
+      
+      String effectiveDefault = defaultTitle;
+      if (effectiveDefault.isEmpty) {
+        effectiveDefault = (currentType == 'sentence') ? 'My Sentence Collection' : 'My Wordbook';
+      }
+
+      if (!_availableNotebooks.contains(effectiveDefault)) {
+        _availableNotebooks.insert(0, effectiveDefault);
       }
       
-      // Reset selected if it's no longer in the list or if we're switching modes
-      if (!_availableNotebooks.contains(_selectedNotebook)) {
-         _selectedNotebook = defaultTitle;
+      // Force update if:
+      // 1. Explicit type switch request (type != null)
+      // 2. No notebook selected
+      // 3. Selected notebook is not in available list
+      // 4. Selected notebook is the DEFAULT of the WRONG mode (Mismatched)
+      bool isMismatched = otherDefault.isNotEmpty && _selectedNotebook == otherDefault;
+      
+      if (type != null || _selectedNotebook.isEmpty || !_availableNotebooks.contains(_selectedNotebook) || isMismatched) {
+         _selectedNotebook = effectiveDefault;
       }
     } catch (e) {
+      if (seq != _loadSeq) return;
       debugPrint('[SimplifiedAppState] Error loading notebooks: $e');
-      _availableNotebooks = [(type == 'sentence') ? '나의 문장집' : '나의 단어장'];
+      _availableNotebooks = [(currentType == 'sentence') ? _localizedSentencebook : _localizedWordbook];
+      _selectedNotebook = _availableNotebooks.first;
     }
     notifyListeners();
   }
@@ -68,11 +99,15 @@ class SimplifiedAppState extends ChangeNotifier {
   void setSourceText(String text) {
     _sourceText = text;
     // Automatic type detection: If it contains spaces or is longer than 15 chars, treat as sentence
-    if (text.trim().contains(' ') || text.trim().length > 15) {
-      _type = 'sentence';
-    } else {
-      _type = 'word';
+    final detectedType = (text.trim().contains(' ') || text.trim().length > 15) ? 'sentence' : 'word';
+
+    if (detectedType != _type) {
+      _type = detectedType; // Update immediately to prevent race conditions during rebuild
+      loadNotebooks(type: detectedType);
     }
+
+    // Phase 17480: Reset confirmation when text changes
+    _isSettingsConfirmed = false;
     notifyListeners();
   }
 
@@ -88,8 +123,8 @@ class SimplifiedAppState extends ChangeNotifier {
 
   void setType(String type) {
     if (_type != type) {
-      _type = type;
-      loadNotebooks(type: type); // Auto-reload on type change
+      _type = type; // Update immediately
+      loadNotebooks(type: type); 
     }
     notifyListeners();
   }
@@ -106,6 +141,11 @@ class SimplifiedAppState extends ChangeNotifier {
 
   void setSelectedNotebook(String notebook) {
     _selectedNotebook = notebook;
+    notifyListeners();
+  }
+
+  void setSettingsConfirmed(bool confirmed) {
+    _isSettingsConfirmed = confirmed;
     notifyListeners();
   }
 
@@ -193,6 +233,7 @@ class SimplifiedAppState extends ChangeNotifier {
     _translatedText = '';
     _note = '';
     _tags = '';
+    _isSettingsConfirmed = false;
     notifyListeners();
   }
 
@@ -208,25 +249,42 @@ class SimplifiedAppState extends ChangeNotifier {
     // Not implemented for main DB here, but could be added if needed.
   }
 
+  // The local swap function is no longer needed since direction is managed 
+  // globally via AppState's _isDirectionSwapped flag.
   void swapLanguages() {
-    final temp = _sourceLang;
-    _sourceLang = _targetLang;
-    _targetLang = temp;
-    notifyListeners();
+    // Left empty or removed, global AppState handles logic now.
+    // To trigger UI update, rely on Global State change.
   }
 
-  void syncWithGlobalState(String source, String target) {
+  void syncWithGlobalState({
+    required String inputLang, 
+    required String outputLang,
+    required String wordbookName,
+    required String sentencebookName,
+  }) {
     bool changed = false;
-    if (_sourceLang != source) {
-      _sourceLang = source;
+    
+    if (_sourceLang != inputLang) {
+      _sourceLang = inputLang;
       changed = true;
     }
-    if (_targetLang != target) {
-      _targetLang = target;
+    if (_targetLang != outputLang) {
+      _targetLang = outputLang;
       changed = true;
     }
+    
+    // 로컬라이즈된 이름 업데이트
+    if (_localizedWordbook != wordbookName || _localizedSentencebook != sentencebookName) {
+      _localizedWordbook = wordbookName;
+      _localizedSentencebook = sentencebookName;
+      changed = true;
+      // 기본 자료집 경로 재로딩
+      loadNotebooks(type: _type);
+    }
+
     if (changed) {
       notifyListeners();
     }
   }
 }
+

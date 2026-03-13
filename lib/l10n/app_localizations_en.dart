@@ -320,6 +320,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get gender => 'Gender';
 
   @override
+  String get labelFilterMaterial => 'Study Material';
+
+  @override
+  String get labelFilterTag => 'Tags';
+
+  @override
   String get generalTags => 'General Tags';
 
   @override
@@ -354,11 +360,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpMode1Desc =>
-      'Translate your voice or text instantly and save them to your training list.';
+      'Translate speech or text instantly and save them to your study list.';
 
   @override
   String get helpMode1Details =>
-      '• Language Settings: Change Source and Target languages via Appbar menu or bottom buttons.\n• Simple Input: Auto-analyzes text (Word/Sentence) and activates settings on typing.\n• Mic/Keyboard: Start voice recognition or text input via large home screen icons.\n• Advanced Settings: Specify materials, tags, and context notes in the bottom area during input.\n• Smart Search: Real-time detection of similar existing translations.\n• TTS Playback: Listen to native speaker pronunciation (TTS).\n• Save: Instantly add to your peronalized study list via \'Save Data\'.';
+      '• Language Settings: You can verify your native language and current learning language, and change the learning language via the top-bar language buttons.\n• Simple Input: Start instantly via the central large Mic or text input box.\n• Confirm Settings: After input, tap the blue check button on the right to open the Detailed Settings dialog.\n• Detailed Settings: Configure the material set, note (context), and tags for saving in the dialog.\n• Translate Now: Tap the green translation button after configuration to perform AI translation.\n• Auto-Search: Detects similar existing translations in real-time as you type.\n• Shadowing & Saving: Listen to pronunciation via the speaker icon and tap \'Save Data\' to add to your study list.';
 
   @override
   String get helpMode2Desc =>
@@ -468,7 +474,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get labelName => 'Name';
 
   @override
-  String get labelNote => 'Note';
+  String get labelNote => 'Enter Note';
 
   @override
   String get labelPOS => 'Part of Speech';
@@ -1036,7 +1042,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tagFormal => 'Formal';
 
   @override
-  String get tagSelection => 'Select Tags';
+  String get tagSelection => 'Enter Tags';
 
   @override
   String get targetLanguage => 'Target Language';
@@ -1283,12 +1289,60 @@ class AppLocalizationsEn extends AppLocalizations {
       'This device does not natively support voice output for this language.';
 
   @override
+  String get homeTab => 'Home';
+
+  @override
   String get welcomeTitle => 'Welcome to Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie supports 80+ languages and is a smart translation tool for travelers and learners. Level up your speaking skills with practice and AI Chat!';
+      'With Talkie, you can instantly translate between any of the 80 supported languages and practice them with unlimited repetition.';
 
   @override
   String get welcomeButton => 'Get Started';
+
+  @override
+  String get labelDetails => 'Detail Settings';
+
+  @override
+  String get translationResult => 'Translation Result';
+
+  @override
+  String get inputContent => 'Input Content';
+
+  @override
+  String get translateNow => 'Translate Now';
+
+  @override
+  String get tooltipSettingsConfirm => 'Confirm Settings';
+
+  @override
+  String get hintNoteExample => 'e.g. context, homonyms...';
+
+  @override
+  String get hintTagExample => 'e.g. business, travel...';
+
+  @override
+  String get addNew => 'Add New';
+
+  @override
+  String get newNotebookTitle => 'New Material Set Name';
+
+  @override
+  String get enterNameHint => 'Enter name';
+
+  @override
+  String get add => 'Add';
+
+  @override
+  String get openSettings => 'Open Settings';
+
+  @override
+  String get helpNotebook => 'Select a folder to save translated results.';
+
+  @override
+  String get helpNote => 'Record meanings, examples, or context freely.';
+
+  @override
+  String get helpTag => 'Enter keywords for categorization or searching later.';
 }

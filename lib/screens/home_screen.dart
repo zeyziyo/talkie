@@ -114,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         backgroundColor: Colors.orange.shade900,
         duration: Duration(seconds: isNativelyUnsupported ? 6 : 12),
         action: isNativelyUnsupported ? null : SnackBarAction(
-          label: '설정 열기',
+          label: l10n.openSettings,
           textColor: Colors.white,
           onPressed: () async {
             if (Platform.isAndroid) {
@@ -406,6 +406,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     final l10n = AppLocalizations.of(context)!;
     final appState = Provider.of<AppState>(context);
 
+    // Phase 17480: Sync localized defaults to AppState
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (context.mounted) {
+        appState.updateLocalizedDefaults(
+          wordbook: l10n.myWordbook,
+          sentencebook: l10n.mySentenceCollection,
+        );
+      }
+    });
+
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight((appState.currentMode >= 1 && appState.currentMode <= 2) ? 154.0 : 104.0),
@@ -449,7 +459,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                         onTap: (index) => appState.switchMode(index),
                         tabs: [
-                          Tab(text: '홈', icon: const Icon(Icons.home_rounded, size: 20)),
+                          Tab(text: l10n.homeTab, icon: const Icon(Icons.home_rounded, size: 20)),
                           Tab(text: l10n.reviewModeTitle, icon: const Icon(Icons.auto_stories, size: 20)),
                           Tab(text: l10n.practiceModeTitle, icon: const Icon(Icons.record_voice_over, size: 20)),
                           Tab(text: l10n.chatAiChat, icon: const Icon(Icons.chat_bubble, size: 20)),
@@ -494,11 +504,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Flexible(child: Text(appState.languageNames[appState.sourceLang] ?? appState.sourceLang.toUpperCase(), style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
+                                      Flexible(child: Text(appState.languageNames[appState.currentInputLang] ?? appState.currentInputLang.toUpperCase(), style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
                                       const SizedBox(width: 4),
                                       Icon(Icons.swap_horiz, size: 16, color: Colors.blue.shade600),
                                       const SizedBox(width: 4),
-                                      Flexible(child: Text(appState.languageNames[appState.targetLang] ?? appState.targetLang.toUpperCase(), style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
+                                      Flexible(child: Text(appState.languageNames[appState.currentOutputLang] ?? appState.currentOutputLang.toUpperCase(), style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
                                     ],
                                   ),
                                 ),
@@ -790,7 +800,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 const Divider(),
                 ListTile(
                   leading: const Icon(Icons.home_rounded),
-                  title: const Text('홈'),
+                  title: Text(l10n.homeTab),
                   selected: appState.currentMode == 0,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {

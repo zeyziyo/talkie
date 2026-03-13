@@ -311,6 +311,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get gender => 'ፆታ';
 
   @override
+  String get labelFilterMaterial => 'ማጣሪያዎች';
+
+  @override
+  String get labelFilterTag => 'መለያዎች';
+
+  @override
   String get generalTags => 'አጠቃላይ መለያዎች';
 
   @override
@@ -344,11 +350,11 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get helpMode1Desc =>
-      'ድምጽህን በመጠቀም ወይም ጽሑፍ በማስገባት በፍጥነት ተርጉም፤ እንዲሁም ወደ ማስታዎሻ ዝርዝር አስቀምጥ።';
+      'ድምጽን በመለየት ወይም ጽሑፍን በማስገባት ወዲያውኑ ይተርጉሙ እና በትምህርት ዝርዝርዎ ውስጥ ያስቀምጡ።';
 
   @override
   String get helpMode1Details =>
-      '• የቋንቋ ቅንብሮች፡ የመተግበሪያ አሞሌ ምናሌን ወይም ከታች ያለውን የቋንቋ ቁልፍ በመጠቀም ቋንቋዬን እና የምማርበትን ቋንቋ ይለውጡ\n• ቀላል ግቤት፡ ጽሑፍ ሲያስገቡ በራስ-ሰር ትንተና (ቃል/ዓረፍተ ነገር) እና የቅንብር ቦታው ገቢር ይሆናል።\n• ማይክሮፎን/የቁልፍ ሰሌዳ፡ በዋናው ስክሪን ላይ ያለውን ትልቅ አዶ በመጠቀም የድምጽ ማወቂያን ወይም የጽሑፍ ግቤትን ይጀምሩ\n• የላቁ ቅንብሮች፡ በመግባት ላይ እያሉ ከታች በሚታየው አካባቢ የመረጃ መጽሐፍ፣ መለያ እና የሁኔታ ማስታወሻ ይመድቡ\n• ራስ-ሰር ፍለጋ፡ ተመሳሳይ ነባር ትርጉሞችን በእውነተኛ ጊዜ መለየት\n• ማዳመጥ፡ የአፍ መፍቻ ቋንቋ ተናጋሪ ድምጽን (TTS) በድምጽ ማጉያ አዶ ያጫውቱ\n• አስቀምጥ፡ \'ውሂብ አስቀምጥ\' የሚለውን በመጠቀም ወዲያውኑ ወደ የራስዎ የመማሪያ ዝርዝር ያክሉ';
+      '• የቋንቋ ቅንብር፡ በመነሻ ገጽ ላይኛው ክፍል ላይ ያለውን የቋንቋ ቁልፍ በመጠቀም ቋንቋዬን እና እየተማርኩ ያለውን ቋንቋ መፈተሽ እና የመማሪያ ቋንቋውን መቀየር ትችላላችሁ።\n• ቀላል ግቤት፡ በማዕከላዊው ትልቅ ማይክሮፎን እና የጽሑፍ መስኮት በኩል ወዲያውኑ ያስገቡ።\n• ቅንብሮችን ያረጋግጡ፡ ግቤቱን ከጨረሱ በኋላ በቀኝ በኩል ያለውን ሰማያዊውን ምልክት ማድረጊያ ቁልፍ ይጫኑ። የዝርዝር ቅንብር መስኮቱ ይታያል።\n• የዝርዝር ቅንብር፡ በሚታየው የንግግር ሳጥን ውስጥ ለማስቀመጥ የመረጃ ስብስብ፣ ማብራሪያ (ማስታወሻ) እና መለያ መግለጽ ይችላሉ።\n• አሁን ተርጉም፡ ቅንብሩን ከጨረሱ በኋላ አረንጓዴውን የትርጉም ቁልፍን ከተጫኑ በኋላ ሰው ሰራሽ የማሰብ ችሎታ ወዲያውኑ ትርጉሙን ያከናውናል።\n• ራስ-ሰር ፍለጋ፡ በሚያስገቡበት ጊዜ ተመሳሳይ ነባር ትርጉሞችን በእውነተኛ ጊዜ በመለየት ያሳያል።\n• ማዳመጥ እና ማስቀመጥ፡ የትርጉም ውጤቱን በታችኛው ክፍል ላይ ባለው የድምጽ ማጉያ አዶ በመጠቀም አጠራሩን ያዳምጡ እና \'ውሂብ አስቀምጥ\' ን በመጠቀም በትምህርት ዝርዝርዎ ላይ ያክሉ።';
 
   @override
   String get helpMode2Desc =>
@@ -1263,12 +1269,60 @@ class AppLocalizationsAm extends AppLocalizations {
   String get ttsUnsupportedNatively => 'ይህ መሣሪያ ይህን ቋንቋ በተፈጥሮው በድምፅ አይደግፍም።';
 
   @override
+  String get homeTab => 'ቤት';
+
+  @override
   String get welcomeTitle => 'ወደ Talkie እንኳን በደህና መጡ!';
 
   @override
   String get welcomeDesc =>
-      'Talkie ከ80 በላይ ቋንቋዎችን የሚደግፍ ሲሆን ለተጓዦች እና ለቋንቋ ተማሪዎች ብልጥ የትርጉም እና የውይይት መማሪያ መሳሪያ ነው። የመናገር ችሎታዎን በ AI ቻት ያሳድጉ!';
+      'በTalkie በመጠቀም ከ80 ቋንቋዎች መካከል የሚፈልጉትን ቋንቋዎች በፍጥነት መተረጎምና ማለቂያ በሌለው መልኩ መማር ይችላሉ።';
 
   @override
   String get welcomeButton => 'ይጀምሩ';
+
+  @override
+  String get labelDetails => 'ዝርዝር ቅንጅቶች';
+
+  @override
+  String get translationResult => 'የትርጉም ውጤት';
+
+  @override
+  String get inputContent => 'የግቤት ይዘት';
+
+  @override
+  String get translateNow => 'አሁን ተርጉም';
+
+  @override
+  String get tooltipSettingsConfirm => 'ቅንብሮችን አረጋግጥ';
+
+  @override
+  String get hintNoteExample => 'ለምሳሌ: የሁኔታ መግለጫ፣ ተመሳሳይ ቃላት ወዘተ';
+
+  @override
+  String get hintTagExample => 'ለምሳሌ: ንግድ፣ ጉዞ...';
+
+  @override
+  String get addNew => 'አዲስ ጨምር';
+
+  @override
+  String get newNotebookTitle => 'አዲስ ማስታወሻ ደብተር ርዕስ';
+
+  @override
+  String get enterNameHint => 'ስም ያስገቡ';
+
+  @override
+  String get add => 'አክል';
+
+  @override
+  String get openSettings => 'ቅንብሮችን ክፈት';
+
+  @override
+  String get helpNotebook => 'የተተረጎሙ ውጤቶች የሚቀመጡበትን አቃፊ ይምረጡ።';
+
+  @override
+  String get helpNote => 'የቃላት ፍቺዎችን፣ ምሳሌዎችን ወይም ሁኔታዎችን በነፃነት ይመዝግቡ።';
+
+  @override
+  String get helpTag => 'ለመመደብ ወይም ለመፈለግ ቁልፍ ቃላትን ያስገቡ።';
 }

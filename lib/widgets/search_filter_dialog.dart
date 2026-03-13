@@ -67,19 +67,21 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // 1. Title Tag Dropdown (Material Subject)
+               // 1. Title Tag Dropdown (Material Subject)
               _buildDropdown(
-                label: l10n.titleTagSelection,
+                label: l10n.labelFilterMaterial,
                 value: selectedTitle,
                 items: titleTags.where((t) => t != 'Basic' && t != 'Noun').toList(),
                 l10n: l10n,
                 isTitle: true,
-                onChanged: (val) {
+                onChanged: (val) async {
                   setState(() {
                     _localSelectedTags.removeWhere((t) => titleTags.contains(t));
                     if (val != null && val.isNotEmpty) {
                       _localSelectedTags.add(val);
                     }
+                    // Reset general tag when notebook changes to ensure consistency
+                    _localSelectedTags.removeWhere((t) => generalTags.contains(t));
                   });
                 },
               ),
@@ -89,14 +91,22 @@ class _SearchFilterDialogState extends State<SearchFilterDialog> {
               const SizedBox(height: 16),
 
               // 2. General Tag Dropdown
-              _buildDropdown(
-                label: l10n.generalTags,
-                value: selectedGeneral.isNotEmpty ? selectedGeneral[0] : '',
-                items: generalTags,
-                l10n: l10n,
-                onChanged: (val) {
-                  _updateGeneralTag(val, titleTags);
-                },
+              FutureBuilder<List<String>>(
+                future: selectedTitle.isNotEmpty 
+                  ? widget.appState.getTagsForNotebook(selectedTitle)
+                  : Future.value(generalTags),
+                builder: (context, snapshot) {
+                  final displayTags = snapshot.data ?? (selectedTitle.isNotEmpty ? [] : generalTags);
+                  return _buildDropdown(
+                    label: l10n.labelFilterTag,
+                    value: selectedGeneral.isNotEmpty ? selectedGeneral[0] : '',
+                    items: displayTags.where((t) => !titleTags.contains(t)).toList(),
+                    l10n: l10n,
+                    onChanged: (val) {
+                      _updateGeneralTag(val, titleTags);
+                    },
+                  );
+                }
               ),
 
               const SizedBox(height: 24),

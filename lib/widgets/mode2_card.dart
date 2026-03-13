@@ -88,29 +88,14 @@ class Mode2Card extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Header: Lang Badge + Info + Checkbox
+                  // Header: Info + Checkbox
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                       // Lang Badge
-                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                        decoration: BoxDecoration(
-                          color: Colors.white24,
-                          borderRadius: BorderRadius.circular(4),
-                          border: Border.all(color: Colors.white30),
-                        ),
-                        child: Text(
-                          topLang.toUpperCase(),
-                          style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.white),
-                        ),
-                       ),
-                       const SizedBox(width: 8),
-                       
                        // Metadata Badges (Phase 94: Unified Row 1)
                        Expanded(
                          child: Padding(
-                           padding: const EdgeInsets.symmetric(horizontal: 8),
+                           padding: const EdgeInsets.only(right: 8),
                            child: Wrap(
                              spacing: 6,
                              runSpacing: 4,
@@ -141,8 +126,6 @@ class Mode2Card extends StatelessWidget {
                                // 3. User Tags - Moved to row 1
                                if (record['tags'] != null && (record['tags'] as List).isNotEmpty)
                                  ...(() {
-                                    // Phase 125.5: Strict Whitelist Filtering
-                                    // Only show tags that are explicitly defined in AppState.displayableTags
                                     final displayableParams = AppState.displayableTags;
                                     
                                     final filteredTags = (record['tags'] as List)
@@ -217,21 +200,9 @@ class Mode2Card extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // Target Text
-                    Row(
-                      children: [
-                         Container(
-                           padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                           decoration: BoxDecoration(color: Colors.white24, borderRadius: BorderRadius.circular(4)),
-                           child: Text(bottomLang.toUpperCase(), style: const TextStyle(fontSize: 10, color: Colors.white, fontWeight: FontWeight.bold)),
-                         ),
-                         const SizedBox(width: 8),
-                         Expanded(
-                           child: Text(
-                             bottomText,
-                             style: const TextStyle(fontSize: 17, color: Colors.white, height: 1.4),
-                           ),
-                         ),
-                      ],
+                    Text(
+                      bottomText,
+                      style: const TextStyle(fontSize: 17, color: Colors.white, height: 1.4),
                     ),
                     const SizedBox(height: 12),
                     

@@ -315,6 +315,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get gender => 'Φύλο';
 
   @override
+  String get labelFilterMaterial => 'Υλικό';
+
+  @override
+  String get labelFilterTag => 'Ετικέτα';
+
+  @override
   String get generalTags => 'Γενικές ετικέτες';
 
   @override
@@ -352,7 +358,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Ρύθμιση γλώσσας: Αλλάξτε τη γλώσσα μου και τη γλώσσα εκμάθησης από το μενού της γραμμής εφαρμογών ή το κάτω κουμπί γλώσσας\n• Απλή εισαγωγή: Αυτόματη ανάλυση (λέξη/πρόταση) και ενεργοποίηση περιοχής ρυθμίσεων κατά την εισαγωγή κειμένου\n• Μικρόφωνο/πληκτρολόγιο: Ξεκινήστε την αναγνώριση φωνής ή την εισαγωγή κειμένου με το μεγάλο εικονίδιο στην κύρια οθόνη\n• Λεπτομερείς ρυθμίσεις: Καθορίστε το βιβλίο δεδομένων, την ετικέτα και το σημείωμα περίστασης στην κάτω περιοχή που εμφανίζεται κατά την εισαγωγή\n• Αυτόματη αναζήτηση: Εντοπίστε παρόμοιες υπάρχουσες μεταφράσεις σε πραγματικό χρόνο\n• Ακούστε: Αναπαραγωγή προφοράς μητρικής γλώσσας (TTS) με το εικονίδιο του ηχείου\n• Αποθήκευση: Προσθέστε αμέσως στη λίστα εκμάθησής σας με την «Αποθήκευση δεδομένων»';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1281,12 +1287,63 @@ class AppLocalizationsEl extends AppLocalizations {
       'Η προεπιλεγμένη ρύθμιση αυτής της συσκευής δεν υποστηρίζει έξοδο φωνής για αυτήν τη γλώσσα.';
 
   @override
+  String get homeTab => 'Αρχική';
+
+  @override
   String get welcomeTitle => 'Καλώς ήρθατε στο Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Το Talkie υποστηρίζει πάνω από 80 γλώσσες και είναι ένα έξυπνο εργαλείο μετάφρασης για ταξιδιώτες. Βελτιώστε την ομιλία σας με το AI Chat!';
+      'Με το Talkie, μπορείτε να μεταφράσετε άμεσα και αμοιβαία σε οποιαδήποτε από τις 80 γλώσσες και να μάθετε ατελείωτα.';
 
   @override
   String get welcomeButton => 'Ξεκινήστε';
+
+  @override
+  String get labelDetails => 'Λεπτομέρειες';
+
+  @override
+  String get translationResult => 'Αποτέλεσμα μετάφρασης';
+
+  @override
+  String get inputContent => 'Περιεχόμενο εισαγωγής';
+
+  @override
+  String get translateNow => 'Μετάφραση τώρα';
+
+  @override
+  String get tooltipSettingsConfirm => 'Επιβεβαίωση ρυθμίσεων';
+
+  @override
+  String get hintNoteExample => 'Π.χ.: Περιβάλλον, ομώνυμα, κ.λπ.';
+
+  @override
+  String get hintTagExample => 'Π.χ.: Επιχειρήσεις, ταξίδια...';
+
+  @override
+  String get addNew => 'Προσθήκη νέου';
+
+  @override
+  String get newNotebookTitle => 'Όνομα νέου σημειωματάριου';
+
+  @override
+  String get enterNameHint => 'Εισαγάγετε όνομα';
+
+  @override
+  String get add => 'Προσθήκη';
+
+  @override
+  String get openSettings => 'Άνοιγμα ρυθμίσεων';
+
+  @override
+  String get helpNotebook =>
+      'Επιλέξτε έναν φάκελο για να αποθηκεύσετε τα μεταφρασμένα αποτελέσματα.';
+
+  @override
+  String get helpNote =>
+      'Καταγράψτε ελεύθερα τις έννοιες, τα παραδείγματα ή τις περιστάσεις των λέξεων.';
+
+  @override
+  String get helpTag =>
+      'Εισαγάγετε λέξεις-κλειδιά για να ταξινομήσετε ή να αναζητήσετε αργότερα.';
 }

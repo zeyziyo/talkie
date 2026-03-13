@@ -285,6 +285,10 @@ class AppState extends ChangeNotifier {
   bool _isRecommendationLoading = false;
   List<Map<String, dynamic>> _recommendedItems = [];
 
+  // Localized Defaults (Phase 17480)
+  String _localizedWordbook = 'My Wordbook';
+  String _localizedSentencebook = 'My Sentence Collection';
+
   // Settings & Voice
   String _chatUserGender = 'male'; 
   String _chatAiGender = 'female';
@@ -474,9 +478,16 @@ class AppState extends ChangeNotifier {
   List<Map<String, dynamic>> get recommendedItems => _recommendedItems;
   List<Map<String, dynamic>> get studyMaterials => _studyMaterials;
   List<Map<String, dynamic>> get filteredMaterialRecords => _materialRecords;
-  Map<String, String> get languageNames => {
-    for (var l in LanguageConstants.supportedLanguages) l['code']! : l['name']!
-  };
+  Map<String, String> get languageNames => LanguageConstants.getLanguageMap(_sourceLang);
+  String get localizedWordbook => _localizedWordbook;
+  String get localizedSentencebook => _localizedSentencebook;
+
+
+  // Phase: Decoupled translation direction for Swap Button
+  bool _isDirectionSwapped = false;
+  bool get isDirectionSwapped => _isDirectionSwapped;
+  String get currentInputLang => _isDirectionSwapped ? _targetLang : _sourceLang;
+  String get currentOutputLang => _isDirectionSwapped ? _sourceLang : _targetLang;
 
   // ---------------------------------------------------------
   // Phase 4: Global Participant Management
@@ -721,6 +732,15 @@ class AppState extends ChangeNotifier {
     _sourceStyle = ''; // Phase 98.1
     _note = '';
     notify();
+  }
+
+  /// Update localized default names from UI (Phase 17480)
+  void updateLocalizedDefaults({required String wordbook, required String sentencebook}) {
+    if (_localizedWordbook != wordbook || _localizedSentencebook != sentencebook) {
+      _localizedWordbook = wordbook;
+      _localizedSentencebook = sentencebook;
+      notify();
+    }
   }
 
   void closeDisambiguationDialog() {

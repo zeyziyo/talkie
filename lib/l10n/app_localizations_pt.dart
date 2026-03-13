@@ -12,14 +12,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String get basicWords => 'Repositório de palavras básicas';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Idioma de entrada';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Idioma de tradução';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Transforme instantaneamente conversas do dia a dia em um idioma estrangeiro! Talkie registra sua vida linguística.';
 
   @override
   String get cancel => 'Cancelar';
@@ -323,6 +323,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get gender => 'Gênero';
 
   @override
+  String get labelFilterMaterial => 'Material';
+
+  @override
+  String get labelFilterTag => 'Etiqueta';
+
+  @override
   String get generalTags => 'Tags gerais';
 
   @override
@@ -356,12 +362,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get helpJsonTypeWord => 'Palavra';
 
   @override
-  String get helpMode1Desc =>
-      'Reconhecer voz, traduzir para idioma de destino e ouvir o resultado.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Voz: Toque no microfone para iniciar/parar\n• Texto: Digite diretamente para traduzir\n• Busca Auto: Detecta frases similares existentes\n• Traduzir: Toque no botão para tradução instantânea\n• Ouvir: Ícone de alto-falante para TTS\n• Salvar: \'Salvar Dados\' adiciona ao histórico\n• Limpar: Redefinir todas as entradas (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -385,7 +390,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Chat com IA: Pratique conversas reais com personas.\n• Gerenciamento de participantes: Defina seu idioma e o idioma da IA para evitar incompatibilidades de idioma.\n• RPG com GPS: Crie cenários de conversação naturais com base em sua localização atual.\n• Preservação de histórico: Todas as conversas são armazenadas com segurança com base no ID, e o histórico é mantido mesmo se você renomear. (TODO: Translate)';
+      '• Chat AI: Pratique conversas reais com personas no menu \'Chat\' na barra de guias inferior.\n• Configurações de persona: Especifique livremente o gênero, nome e código de idioma do interlocutor.\n• Situação dramática de GPS: Reconhece minha localização atual e recomenda tópicos de conversação apropriados para o local.\n• 2 idiomas: As respostas da IA são exibidas com traduções para maximizar o efeito de aprendizado.\n• Gerenciamento de registros: Filtre o histórico de conversas passadas e salve mensagens específicas das conversas como materiais de estudo';
 
   @override
   String get helpTabJson => 'Formato JSON';
@@ -1291,12 +1296,63 @@ class AppLocalizationsPt extends AppLocalizations {
       'A configuração padrão deste dispositivo não oferece suporte à saída de voz neste idioma.';
 
   @override
+  String get homeTab => 'Início';
+
+  @override
   String get welcomeTitle => 'Bem-vindo ao Talkie!';
 
   @override
   String get welcomeDesc =>
-      'O Talkie suporta mais de 80 idiomas e é uma ferramenta inteligente para viajantes e estudantes. Melhore a sua fala com o Chat de IA!';
+      'Com o Talkie, traduza instantaneamente e aprenda repetidamente entre 80 idiomas.';
 
   @override
   String get welcomeButton => 'Começar';
+
+  @override
+  String get labelDetails => 'Configurações Detalhadas';
+
+  @override
+  String get translationResult => 'Resultado da Tradução';
+
+  @override
+  String get inputContent => 'Conteúdo de Entrada';
+
+  @override
+  String get translateNow => 'Traduzir Agora';
+
+  @override
+  String get tooltipSettingsConfirm => 'Confirmar Configurações';
+
+  @override
+  String get hintNoteExample => 'Ex: Contexto, Sinônimos, etc.';
+
+  @override
+  String get hintTagExample => 'Ex: Negócios, Viagem...';
+
+  @override
+  String get addNew => 'Adicionar Novo';
+
+  @override
+  String get newNotebookTitle => 'Nome do Novo Caderno';
+
+  @override
+  String get enterNameHint => 'Digite o nome';
+
+  @override
+  String get add => 'Adicionar';
+
+  @override
+  String get openSettings => 'Abrir Configurações';
+
+  @override
+  String get helpNotebook =>
+      'Selecione a pasta onde deseja salvar os resultados traduzidos.';
+
+  @override
+  String get helpNote =>
+      'Anote livremente o significado de palavras, exemplos, situações, etc.';
+
+  @override
+  String get helpTag =>
+      'Digite palavras-chave para classificar ou pesquisar mais tarde.';
 }

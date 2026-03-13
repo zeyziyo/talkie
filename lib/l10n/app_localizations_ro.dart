@@ -12,14 +12,14 @@ class AppLocalizationsRo extends AppLocalizations {
   String get basicWords => 'Depozit de bază cu cuvinte';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Limbă de intrare';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Limbă de traducere';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Transformă conversațiile de zi cu zi în limbi străine instantaneu! Talkie îți va înregistra viața lingvistică.';
 
   @override
   String get cancel => 'Anulare';
@@ -322,6 +322,12 @@ class AppLocalizationsRo extends AppLocalizations {
   String get gender => 'Gen';
 
   @override
+  String get labelFilterMaterial => 'Materiale';
+
+  @override
+  String get labelFilterTag => 'Etichetă';
+
+  @override
   String get generalTags => 'Etichete generale';
 
   @override
@@ -354,12 +360,11 @@ class AppLocalizationsRo extends AppLocalizations {
   String get helpJsonTypeWord => 'Cuvânt';
 
   @override
-  String get helpMode1Desc =>
-      'Recunoaștere vocală, traducere și ascultare rezultat.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Voce: Apasă microfon pentru start/stop\n• Text: Scrie direct pentru traducere\n• Auto-Căutare: Detectează propoziții similare\n• Traducere: Buton pentru traducere instantă\n• Ascultă: Icoană difuzor pentru TTS\n• Salvează: Adaugă în istoric\n• Șterge: Resetează tot (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -383,7 +388,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Chat AI: Exersează conversații reale cu personaje.\n• Gestionarea participanților: Setează-ți limba și limba AI-ului pentru a evita nepotrivirile lingvistice.\n• Situații GPS: Creează situații de conversație naturale bazate pe locația ta curentă.\n• Păstrarea istoricului: Toate conversațiile sunt stocate în siguranță pe baza ID-ului, iar istoricul se păstrează chiar dacă schimbi numele. (TODO: Translate)';
+      '• Chat AI: Exersează conversații reale cu personaje din meniul \'Chat\' din bara de tab-uri de jos\n• Setări personaj: Specifică liber sexul, numele și codul de limbă al celeilalte persoane\n• Joc de rol GPS: Recunoaște locația mea actuală și recomandă subiecte de conversație potrivite pentru locație\n• 2 limbi: Răspunsurile AI sunt afișate cu traducere pentru a maximiza efectul de învățare\n• Gestionarea înregistrărilor: Filtrează istoricul conversațiilor anterioare și salvează anumite mesaje din conversație ca materiale de studiu';
 
   @override
   String get helpTabJson => 'Format JSON';
@@ -1287,12 +1292,63 @@ class AppLocalizationsRo extends AppLocalizations {
       'Dispozitivul nu acceptă redarea vocală pentru această limbă în setările implicite.';
 
   @override
+  String get homeTab => 'Acasă';
+
+  @override
   String get welcomeTitle => 'Bun venit la Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie suportă peste 80 de limbi și este un instrument inteligent de traducere pentru călători. Îmbunătățiți-vă abilitățile de vorbire cu AI Chat!';
+      'Cu Talkie, poți obține traduceri instantanee bidirecționale și învățare repetată nelimitată în oricare dintre cele 80 de limbi.';
 
   @override
   String get welcomeButton => 'Începe';
+
+  @override
+  String get labelDetails => 'Setări detaliate';
+
+  @override
+  String get translationResult => 'Rezultatul traducerii';
+
+  @override
+  String get inputContent => 'Conținut introdus';
+
+  @override
+  String get translateNow => 'Traduce acum';
+
+  @override
+  String get tooltipSettingsConfirm => 'Confirmă setările';
+
+  @override
+  String get hintNoteExample => 'Ex: Context, omonime, etc.';
+
+  @override
+  String get hintTagExample => 'Ex: Afaceri, călătorie...';
+
+  @override
+  String get addNew => 'Adaugă nou';
+
+  @override
+  String get newNotebookTitle => 'Numele noului caiet';
+
+  @override
+  String get enterNameHint => 'Introdu numele';
+
+  @override
+  String get add => 'Adaugă';
+
+  @override
+  String get openSettings => 'Deschide setările';
+
+  @override
+  String get helpNotebook =>
+      'Selectați folderul unde să salvați rezultatele traducerii.';
+
+  @override
+  String get helpNote =>
+      'Înregistrați liber semnificația, exemplele sau situațiile cuvântului.';
+
+  @override
+  String get helpTag =>
+      'Introduceți cuvinte cheie pentru a clasifica sau căuta mai târziu.';
 }

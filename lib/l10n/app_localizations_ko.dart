@@ -308,6 +308,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get gender => '성별';
 
   @override
+  String get labelFilterMaterial => '자료집';
+
+  @override
+  String get labelFilterTag => '태그';
+
+  @override
   String get generalTags => '일반 태그';
 
   @override
@@ -343,7 +349,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• 언어 설정: 앱바 메뉴 또는 하단 언어 버튼으로 내 언어와 학습 언어 변경\n• 심플 입력: 텍스트 입력 시 자동으로 분석(단어/문장) 및 설정 영역 활성화\n• 마이크/키보드: 메인 화면의 대형 아이콘으로 음성 인식 또는 텍스트 입력 시작\n• 상세 설정: 입력 중 나타나는 하단 영역에서 자료집, 태그, 상황 메모 지정\n• 자동 검색: 유사한 기존 번역 실시간 감지\n• 듣기: 스피커 아이콘으로 원어민 발음(TTS) 재생\n• 저장: \'데이터 저장\'으로 나만의 학습 리스트에 즉시 추가';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc => '저장된 단어와 문장을 복습하고, 보이기/숨기기 기능으로 암기 여부를 확인하세요.';
@@ -450,7 +456,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get labelName => '이름';
 
   @override
-  String get labelNote => '주석';
+  String get labelNote => '주석 입력';
 
   @override
   String get labelPOS => '품사';
@@ -1015,7 +1021,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tagFormal => '존댓말';
 
   @override
-  String get tagSelection => '태그 선택';
+  String get tagSelection => '태그 입력';
 
   @override
   String get targetLanguage => '대상 언어';
@@ -1251,12 +1257,60 @@ class AppLocalizationsKo extends AppLocalizations {
   String get ttsUnsupportedNatively => '이 기기의 기본 설정에서는 이 언어의 음성 출력을 지원하지 않습니다.';
 
   @override
+  String get homeTab => '홈';
+
+  @override
   String get welcomeTitle => 'Talkie에 오신 것을 환영합니다!';
 
   @override
   String get welcomeDesc =>
-      'Talkie는 80개 이상의 언어를 지원하는 해외 여행자와 학습자를 위한 스마트 번역 도구입니다. 말하기 연습과 AI 채팅으로 실전 회화 실력을 키워보세요!';
+      'Talkie로 80가지 언어 중 원하는 언어 간 즉시 상호 번역 및 무한 반복 학습이 가능합니다.';
 
   @override
   String get welcomeButton => '시작하기';
+
+  @override
+  String get labelDetails => '상세 설정';
+
+  @override
+  String get translationResult => '번역 결과';
+
+  @override
+  String get inputContent => '입력 내용';
+
+  @override
+  String get translateNow => '지금 번역하기';
+
+  @override
+  String get tooltipSettingsConfirm => '설정 확인';
+
+  @override
+  String get hintNoteExample => '예: 상황 설명, 동음이의어 등';
+
+  @override
+  String get hintTagExample => '예: 비즈니스, 여행...';
+
+  @override
+  String get addNew => '새 추가';
+
+  @override
+  String get newNotebookTitle => '새 자료집 이름';
+
+  @override
+  String get enterNameHint => '이름을 입력하세요';
+
+  @override
+  String get add => '추가';
+
+  @override
+  String get openSettings => '설정 열기';
+
+  @override
+  String get helpNotebook => '번역된 결과를 저장할 폴더를 선택합니다.';
+
+  @override
+  String get helpNote => '단어의 뜻이나 예문, 상황 등을 자유롭게 기록하세요.';
+
+  @override
+  String get helpTag => '나중에 분류하거나 검색하기 위한 키워드를 입력하세요.';
 }

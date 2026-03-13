@@ -12,14 +12,14 @@ class AppLocalizationsVi extends AppLocalizations {
   String get basicWords => 'Kho từ cơ bản';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Ngôn ngữ nhập';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Ngôn ngữ dịch';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Chuyển đổi tức thì các cuộc trò chuyện hàng ngày sang ngoại ngữ! Talkie sẽ ghi lại cuộc sống ngôn ngữ của bạn.';
 
   @override
   String get cancel => 'Hủy';
@@ -317,6 +317,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get gender => 'Giới tính';
 
   @override
+  String get labelFilterMaterial => 'Tài liệu';
+
+  @override
+  String get labelFilterTag => 'Thẻ';
+
+  @override
   String get generalTags => 'Thẻ chung';
 
   @override
@@ -350,12 +356,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get helpJsonTypeWord => 'Từ';
 
   @override
-  String get helpMode1Desc =>
-      'Nhận dạng giọng nói, dịch sang ngôn ngữ đích và nghe kết quả.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Nhập giọng nói: Nhấn biểu tượng mic để bắt đầu/dừng\n• Nhập văn bản: Nhập trực tiếp để dịch\n• Tự động tìm kiếm: Phát hiện các câu tương tự đã có\n• Dịch: Nhấn nút để dịch ngay lập tức\n• Nghe: Biểu tượng loa để nghe TTS\n• Lưu: \'Lưu dữ liệu\' thêm vào lịch sử\n• Xóa: Đặt lại tất cả đầu vào (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +384,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Trò chuyện AI: Luyện tập hội thoại thực tế với nhân vật.\n• Quản lý người tham gia: Cài đặt ngôn ngữ của bạn và ngôn ngữ của AI để tránh sai lệch ngôn ngữ.\n• Nhập vai GPS: Tạo tình huống hội thoại tự nhiên dựa trên vị trí hiện tại.\n• Lưu giữ lịch sử: Tất cả cuộc trò chuyện được lưu trữ an toàn dựa trên ID và lịch sử được giữ lại ngay cả khi bạn đổi tên. (TODO: Translate)';
+      '• Trò chuyện AI: Thực hành trò chuyện thực tế với một nhân vật trong menu \'Trò chuyện\' trên thanh tab ở dưới cùng\n• Cài đặt nhân vật: Tự do chỉ định giới tính, tên và mã ngôn ngữ của đối phương\n• Tình huống GPS: Nhận biết vị trí hiện tại của bạn và đề xuất các chủ đề trò chuyện phù hợp với địa điểm\n• Hai ngôn ngữ: Câu trả lời của AI được hiển thị cùng với bản dịch để tối đa hóa hiệu quả học tập\n• Quản lý lịch sử: Lọc lịch sử trò chuyện trước đây và lưu các tin nhắn cụ thể trong cuộc trò chuyện dưới dạng tài liệu học tập';
 
   @override
   String get helpTabJson => 'Định dạng JSON';
@@ -1277,12 +1282,60 @@ class AppLocalizationsVi extends AppLocalizations {
       'Thiết bị này không hỗ trợ xuất âm thanh cho ngôn ngữ này trong cài đặt gốc.';
 
   @override
+  String get homeTab => 'Trang chủ';
+
+  @override
   String get welcomeTitle => 'Chào mừng bạn đến với Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie hỗ trợ hơn 80 ngôn ngữ và là công cụ dịch thuật thông minh dành cho khách du lịch. Hãy nâng cao kỹ năng nói của bạn thông qua Chat AI!';
+      'Với Talkie, bạn có thể dịch qua lại tức thì giữa 80 ngôn ngữ và học lặp đi lặp lại vô hạn số lần.';
 
   @override
   String get welcomeButton => 'Bắt đầu';
+
+  @override
+  String get labelDetails => 'Cài đặt chi tiết';
+
+  @override
+  String get translationResult => 'Kết quả dịch';
+
+  @override
+  String get inputContent => 'Nội dung nhập';
+
+  @override
+  String get translateNow => 'Dịch ngay';
+
+  @override
+  String get tooltipSettingsConfirm => 'Xác nhận cài đặt';
+
+  @override
+  String get hintNoteExample => 'Ví dụ: Giải thích ngữ cảnh, từ đồng âm,...';
+
+  @override
+  String get hintTagExample => 'Ví dụ: Kinh doanh, Du lịch...';
+
+  @override
+  String get addNew => 'Thêm mới';
+
+  @override
+  String get newNotebookTitle => 'Tên sổ tay mới';
+
+  @override
+  String get enterNameHint => 'Nhập tên';
+
+  @override
+  String get add => 'Thêm';
+
+  @override
+  String get openSettings => 'Mở cài đặt';
+
+  @override
+  String get helpNotebook => 'Chọn thư mục để lưu trữ các kết quả đã dịch.';
+
+  @override
+  String get helpNote => 'Tự do ghi lại ý nghĩa, ví dụ hoặc tình huống của từ.';
+
+  @override
+  String get helpTag => 'Nhập từ khóa để phân loại hoặc tìm kiếm sau này.';
 }

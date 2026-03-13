@@ -33,11 +33,18 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     
     final globalState = context.watch<AppState>();
     
+    final l10n = AppLocalizations.of(context)!;
+    
     // Sync languages with global state on initial load or when global changes
     // SimplifiedAppState will only notify if values actually change
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
-        state.syncWithGlobalState(globalState.sourceLang, globalState.targetLang);
+        state.syncWithGlobalState(
+          inputLang: globalState.currentInputLang, 
+          outputLang: globalState.currentOutputLang,
+          wordbookName: l10n.myWordbook,
+          sentencebookName: l10n.mySentenceCollection,
+        );
       }
     });
 
@@ -49,8 +56,6 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
         TextPosition(offset: _sourceController.text.length),
       );
     }
-
-    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
@@ -76,8 +81,8 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
               child: Column(
                 children: [
                   Text(
-                    "총 80개 언어 중 원하는 언어 간 즉시 상호 번역 및 무한 반복 학습 가능",
-                    style: TextStyle(
+                    l10n.welcomeDesc,
+                    style: const TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.w600,
                       color: Colors.black87,
@@ -91,16 +96,26 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Text('입력:', style: TextStyle(fontSize: 11, color: Colors.black45, fontWeight: FontWeight.bold)),
+                            Text('${l10n.inputModeTitle}:', style: const TextStyle(fontSize: 11, color: Colors.black45, fontWeight: FontWeight.bold)),
                             const SizedBox(width: 4),
-                            _buildSimpleLangButton(context, state.sourceLang, (val) => state.setSourceLang(val), textColor: Colors.blue.shade700),
+                            _buildSimpleLangButton(context, state.sourceLang, (val) {
+                              state.setSourceLang(val);
+                              // Sync with global state (ONLY if it's the learning lang)
+                              final appState = context.read<AppState>();
+                              if (val != appState.sourceLang) {
+                                appState.setTargetLang(val);
+                              }
+                            }, 
+                            isLocked: state.sourceLang == globalState.sourceLang,
+                            textColor: Colors.blue.shade700),
                           ],
                         ),
                       ),
                       IconButton(
                         icon: Icon(Icons.swap_horiz, color: Colors.blue.shade700, size: 24),
                         onPressed: () {
-                          state.swapLanguages();
+                          // appState(글로벌)의 방향 반전 메서드를 호출해야 함
+                          context.read<AppState>().swapLanguages();
                           // Clear translation results when swapping
                           state.setTranslatedText("");
                         },
@@ -110,9 +125,18 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Text('번역:', style: TextStyle(fontSize: 11, color: Colors.black45, fontWeight: FontWeight.bold)),
+                            Text('${l10n.translation}:', style: const TextStyle(fontSize: 11, color: Colors.black45, fontWeight: FontWeight.bold)),
                             const SizedBox(width: 4),
-                            _buildSimpleLangButton(context, state.targetLang, (val) => state.setTargetLang(val), textColor: Colors.blue.shade700),
+                            _buildSimpleLangButton(context, state.targetLang, (val) {
+                              state.setTargetLang(val);
+                              // Sync with global state (ONLY if it's the learning lang)
+                              final appState = context.read<AppState>();
+                              if (val != appState.sourceLang) {
+                                appState.setTargetLang(val);
+                              }
+                            }, 
+                            isLocked: state.targetLang == globalState.sourceLang,
+                            textColor: Colors.blue.shade700),
                           ],
                         ),
                       ),
@@ -143,8 +167,9 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
             ),
             const SizedBox(height: 24),
 
-            // 4. Manual Text Input & Detail Settings Gear
+            // 4. Manual Text Input & Confirmation Activity
             Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Expanded(
                   child: TextField(
@@ -152,6 +177,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                     onChanged: (val) => state.setSourceText(val),
                     decoration: InputDecoration(
                       hintText: l10n.enterTextHint,
+                      hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400),
                       filled: true,
                       fillColor: Colors.grey.shade50,
                       contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
@@ -181,106 +207,46 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                     maxLines: null,
                   ),
                 ),
+                if (state.sourceText.isNotEmpty && !state.isSettingsConfirmed) ...[
+                  const SizedBox(width: 8),
+                  Container(
+                    decoration: const BoxDecoration(
+                      color: Colors.indigo,
+                      shape: BoxShape.circle,
+                    ),
+                    child: IconButton(
+                      icon: const Icon(Icons.check, color: Colors.white),
+                      onPressed: () => _showSettingsDialog(context, state),
+                      tooltip: l10n.tooltipSettingsConfirm,
+                    ),
+                  ),
+                ],
               ],
             ),
             const SizedBox(height: 16),
 
-            // 5. Context-aware Settings Area (Expanded when text is present)
-            if (state.sourceText.isNotEmpty) ...[
-              _buildSettingsArea(context, state),
-              const SizedBox(height: 16),
-            ],
-
-            // Quick Translate Button (Added for easy access)
-            if (state.sourceText.isNotEmpty)
+            // 5. Action Buttons: Translate (Only after confirmation)
+            if (state.sourceText.isNotEmpty && state.isSettingsConfirmed)
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 40),
+                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 8),
                 child: ElevatedButton.icon(
-                  onPressed: () => state.translate(),
+                  onPressed: () {
+                    state.translate();
+                    _showTranslationDialog(context, state);
+                  },
                   icon: const Icon(Icons.translate),
-                  label: const Text('지금 번역하기'),
+                  label: Text(l10n.translateNow),
                   style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    backgroundColor: const Color(0xFF2E7D32),
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                   ),
                 ),
               ),
             const SizedBox(height: 24),
 
-            // 4. Results Area (Vertical Layout)
-            if (state.sourceText.isNotEmpty || state.translatedText.isNotEmpty) ...[
-              const Divider(thickness: 1.5, height: 40),
-              
-              if (state.sourceText.isNotEmpty) ...[
-                _buildLabel('입력/인식 내용'),
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: Colors.grey.shade50,
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.grey.shade200),
-                  ),
-                  child: Text(
-                    state.sourceText,
-                    style: const TextStyle(fontSize: 18, color: Colors.black87),
-                  ),
-                ),
-                const SizedBox(height: 20),
-              ],
-
-              if (state.translatedText.isNotEmpty) ...[
-                _buildLabel('번역 결과'),
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: Colors.green.shade50,
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.green.shade100),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        state.translatedText,
-                        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.green),
-                      ),
-                      if (state.note.isNotEmpty) ...[
-                        const SizedBox(height: 8),
-                        Text(
-                          '(${state.note})',
-                          style: TextStyle(fontSize: 14, color: Colors.blueGrey.shade600, fontStyle: FontStyle.italic),
-                        ),
-                      ],
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 32),
-
-                // Save Button
-                ElevatedButton.icon(
-                  onPressed: () async {
-                    await state.saveRecord();
-                    if (!context.mounted) return;
-                    state.clearAll();
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text(l10n.importComplete)), // Placeholder for saved message
-                    );
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green.shade700,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                    elevation: 2,
-                  ),
-                  icon: const Icon(Icons.save_alt),
-                  label: Text(l10n.saveData, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-                ),
-              ],
-              const SizedBox(height: 40),
-            ],
+            const SizedBox(height: 48),
           ],
         ),
       ),
@@ -297,7 +263,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     );
   }
 
-  Widget _buildSimpleLangButton(BuildContext context, String currentLang, Function(String) onSelected, {Color textColor = Colors.teal}) {
+  Widget _buildSimpleLangButton(BuildContext context, String currentLang, Function(String) onSelected, {Color textColor = Colors.teal, bool isLocked = false}) {
     final appState = Provider.of<AppState>(context, listen: false);
     final myLang = appState.sourceLang; // UI Language (Source in Settings)
     
@@ -315,22 +281,35 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
       displayName = '$nameInMyLang($nativeName)';
     }
 
+    final Widget labelWidget = Container(
+      padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+      alignment: Alignment.center,
+      decoration: isLocked ? null : BoxDecoration(
+        color: Colors.blue.shade50.withValues(alpha: 0.5),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Text(
+        displayName,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 16, 
+          fontWeight: FontWeight.bold, 
+          color: isLocked ? Colors.black54 : textColor,
+        ),
+      ),
+    );
+
+    if (isLocked) return labelWidget;
+
     return PopupMenuButton<String>(
       initialValue: currentLang,
       onSelected: onSelected,
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 4),
-        alignment: Alignment.center,
-        child: Text(
-          displayName,
-          textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: textColor),
-        ),
-      ),
-      itemBuilder: (context) => LanguageConstants.supportedLanguages.map((lang) {
+      child: labelWidget,
+      itemBuilder: (context) => LanguageConstants.supportedLanguages
+          .where((lang) => lang['code'] != myLang && lang['code'] != currentLang)
+          .map((lang) {
         final code = lang['code']!;
         
-        // Use the same bilingual logic for the dropdown list too
         final langMap = LanguageConstants.getLanguageMap(myLang);
         final natMap = LanguageConstants.getLanguageMap(code);
         
@@ -371,155 +350,227 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     );
   }
 
-  Widget _buildSettingsArea(BuildContext context, SimplifiedAppState state) {
-    final l10n = AppLocalizations.of(context)!;
-    
-    // Sync local controllers with state
-    if (_noteController.text != state.note) {
-      _noteController.text = state.note;
-    }
-    if (_tagController.text != state.tags) {
-      _tagController.text = state.tags;
-    }
-
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.indigo.withValues(alpha: 0.03),
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: Colors.indigo.withValues(alpha: 0.1)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              const Icon(Icons.tune, size: 18, color: Colors.indigo),
-              const SizedBox(width: 8),
-              Text(
-                '상세 설정',
-                style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.indigo.shade700),
-              ),
-            ],
-          ),
-          const SizedBox(height: 12),
-
-          // Word/Sentence Toggle
-          Row(
-            children: [
-              Expanded(
-                child: SegmentedButton<String>(
-                  segments: [
-                    ButtonSegment(value: 'word', label: Text(l10n.word, style: const TextStyle(fontSize: 13))),
-                    ButtonSegment(value: 'sentence', label: Text(l10n.sentence, style: const TextStyle(fontSize: 13))),
-                  ],
-                  selected: {state.type},
-                  onSelectionChanged: (val) => state.setType(val.first),
-                ),
-              ),
-              _buildHelpIcon('단어 또는 문장 중 어떤 형태인지 선택해 주세요.'),
-            ],
-          ),
-          const SizedBox(height: 12),
-
-          // Notebook Dropdown
-          Row(
-            children: [
-              Expanded(child: _buildNotebookDropdown(context, state)),
-              _buildHelpIcon('데이터가 저장될 그룹(자료집)을 선택해 주세요.'),
-            ],
-          ),
-          const SizedBox(height: 12),
-
-          // Note Field
-          Row(
-            children: [
-              Expanded(
-                child: TextField(
-                  controller: _noteController,
-                  onChanged: (val) => state.setNote(val),
-                  decoration: InputDecoration(
-                    labelText: l10n.labelNote,
-                    hintText: '예: 상황 설명, 동음이의어(눈/eyes, 눈/snow) 등',
-                    hintStyle: TextStyle(fontSize: 12, color: Colors.grey.shade400, fontStyle: FontStyle.italic),
-                    isDense: true,
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+  void _showSettingsDialog(BuildContext context, SimplifiedAppState state) {
+    showDialog(
+      context: context,
+      builder: (context) => Consumer<SimplifiedAppState>(
+        builder: (context, state, child) {
+          final l10n = AppLocalizations.of(context)!;
+          return AlertDialog(
+            title: Row(
+              children: [
+                const Icon(Icons.tune, color: Colors.indigo),
+                const SizedBox(width: 10),
+                Text(l10n.labelDetails, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              ],
+            ),
+            content: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  // Word/Sentence Toggle
+                  Row(
+                    children: [
+                      Expanded(
+                        child: SegmentedButton<String>(
+                          segments: [
+                            ButtonSegment(value: 'word', label: Text(l10n.word, style: const TextStyle(fontSize: 13))),
+                            ButtonSegment(value: 'sentence', label: Text(l10n.sentence, style: const TextStyle(fontSize: 13))),
+                          ],
+                          selected: {state.type},
+                          onSelectionChanged: (val) {
+                            state.setType(val.first);
+                          },
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-              ),
-              _buildHelpIcon('상황 설명이나 동음이의어 등 추가 정보를 적어주세요.'),
-            ],
-          ),
-          const SizedBox(height: 12),
-
-          // Tag Field
-          Row(
-            children: [
-              Expanded(
-                child: TextField(
-                  controller: _tagController,
-                  onChanged: (val) => state.setTags(val),
-                  decoration: InputDecoration(
-                    labelText: l10n.tagSelection,
-                    hintText: '예: 비즈니스, 여행, 초급...',
-                    hintStyle: TextStyle(fontSize: 12, color: Colors.grey.shade400, fontStyle: FontStyle.italic),
-                    isDense: true,
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+                  const SizedBox(height: 16),
+                  _buildNotebookDropdown(context, state),
+                  const SizedBox(height: 16),
+                  _buildFieldLabel(l10n.labelNote, l10n.helpNote),
+                  const SizedBox(height: 8),
+                  TextField(
+                    controller: _noteController,
+                    onChanged: (val) => state.setNote(val),
+                    decoration: InputDecoration(
+                      hintText: l10n.hintNoteExample,
+                      hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                    ),
                   ),
-                ),
+                  const SizedBox(height: 16),
+                  _buildFieldLabel(l10n.tagSelection, l10n.helpTag),
+                  const SizedBox(height: 8),
+                  TextField(
+                    controller: _tagController,
+                    onChanged: (val) => state.setTags(val),
+                    decoration: InputDecoration(
+                      hintText: l10n.hintTagExample,
+                      hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                    ),
+                  ),
+                ],
               ),
-              _buildHelpIcon('쉼표(,)로 구분하여 여러 태그를 입력할 수 있습니다.'),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: Text(l10n.cancel),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  state.setSettingsConfirmed(true);
+                  Navigator.pop(context);
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.indigo,
+                  foregroundColor: Colors.white,
+                ),
+                child: Text(l10n.confirm),
+              ),
             ],
-          ),
-        ],
+          );
+        },
       ),
     );
   }
 
-  Widget _buildHelpIcon(String message) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 8.0),
-      child: Tooltip(
-        message: message,
-        triggerMode: TooltipTriggerMode.tap,
-        showDuration: const Duration(seconds: 3),
-        child: Icon(Icons.help_outline, color: Colors.indigo.shade200, size: 22),
-      ),
+  void _showTranslationDialog(BuildContext context, SimplifiedAppState state) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return Consumer<SimplifiedAppState>(
+          builder: (context, state, child) {
+            final l10n = AppLocalizations.of(context)!;
+            return AlertDialog(
+              title: Text(l10n.translationResult, style: const TextStyle(fontWeight: FontWeight.bold)),
+              content: SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _buildLabel(l10n.inputContent),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade100,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(state.sourceText, style: const TextStyle(fontSize: 16)),
+                    ),
+                    const SizedBox(height: 20),
+                    _buildLabel(l10n.translationResult),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Colors.green.shade50,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: Colors.green.shade100),
+                      ),
+                      child: state.isTranslating 
+                        ? const Center(child: CircularProgressIndicator())
+                        : Text(
+                            state.translatedText, 
+                            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.green),
+                          ),
+                    ),
+                    if (!state.isTranslating && state.note.isNotEmpty) ...[
+                      const SizedBox(height: 8),
+                      Text('(${state.note})', style: const TextStyle(fontSize: 13, fontStyle: FontStyle.italic, color: Colors.grey)),
+                    ],
+                  ],
+                ),
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: Text(l10n.cancel),
+                ),
+                ElevatedButton.icon(
+                  onPressed: state.isTranslating ? null : () async {
+                    await state.saveRecord();
+                    if (!context.mounted) return;
+                    state.clearAll();
+                    _sourceController.clear(); // Clear main input field
+                    Navigator.pop(context); // Close dialog
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text(l10n.importComplete)),
+                    );
+                  },
+                  icon: const Icon(Icons.save_alt),
+                  label: Text(l10n.saveData),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.green.shade700,
+                    foregroundColor: Colors.white,
+                  ),
+                ),
+              ],
+            );
+          },
+        );
+      },
     );
   }
 
   Widget _buildNotebookDropdown(BuildContext context, SimplifiedAppState state) {
     final l10n = AppLocalizations.of(context)!;
-    return DropdownButtonFormField<String>(
-      initialValue: state.selectedNotebook,
-      decoration: InputDecoration(
-        labelText: l10n.selectMaterialSet,
-        isDense: true,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-      ),
-      items: [
-        ...state.availableNotebooks.map((name) => DropdownMenuItem(
-          value: name,
-          child: Text(name, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 13)),
-        )),
-        const DropdownMenuItem(
-          value: '__new__',
-          child: Text('+ 새 추가', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 13)),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _buildFieldLabel(l10n.selectStudyMaterial, l10n.helpNotebook),
+        const SizedBox(height: 8),
+        DropdownButtonFormField<String>(
+          key: ValueKey('${state.type}_notebook_dropdown'),
+          initialValue: state.selectedNotebook.isNotEmpty && state.availableNotebooks.contains(state.selectedNotebook) 
+              ? state.selectedNotebook 
+              : null,
+          decoration: InputDecoration(
+            isDense: true,
+            contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+          ),
+          items: [
+            ...state.availableNotebooks.map((name) => DropdownMenuItem(
+              value: name,
+              child: Text(name, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 13)),
+            )),
+            const DropdownMenuItem(
+              value: '__new__',
+              child: Text('+ 새 추가', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 13)), // TODO: Localize '+ 새 추가' if needed, or keep for now if it requires complex interpolation
+            ),
+          ],
+          onChanged: (val) async {
+            if (val == '__new__') {
+              final newName = await _showNewNotebookDialog(context);
+              if (newName != null && newName.isNotEmpty) {
+                state.setSelectedNotebook(newName);
+              }
+            } else if (val != null) {
+              state.setSelectedNotebook(val);
+            }
+          },
         ),
       ],
-      onChanged: (val) async {
-        if (val == '__new__') {
-          final newName = await _showNewNotebookDialog(context);
-          if (newName != null && newName.isNotEmpty) {
-            state.setSelectedNotebook(newName);
-          }
-        } else if (val != null) {
-          state.setSelectedNotebook(val);
-        }
-      },
+    );
+  }
+
+  Widget _buildFieldLabel(String text, String helpMessage) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(text, style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade600, fontSize: 13, fontWeight: FontWeight.w500)),
+        const SizedBox(width: 6),
+        Tooltip(
+          message: helpMessage,
+          child: Icon(Icons.help_outline, size: 15, color: Colors.grey.shade400),
+        ),
+      ],
     );
   }
 
@@ -527,18 +578,21 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     String newName = '';
     return showDialog<String>(
       context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('새 자료집 이름'),
-        content: TextField(
-          autofocus: true,
-          decoration: const InputDecoration(hintText: '이름을 입력하세요'),
-          onChanged: (val) => newName = val,
-        ),
-        actions: [
-          TextButton(onPressed: () => Navigator.pop(context), child: const Text('취소')),
-          TextButton(onPressed: () => Navigator.pop(context, newName), child: const Text('추가')),
-        ],
-      ),
+      builder: (context) {
+        final l10n = AppLocalizations.of(context)!;
+        return AlertDialog(
+          title: Text(l10n.newNotebookTitle),
+          content: TextField(
+            autofocus: true,
+            decoration: InputDecoration(hintText: l10n.enterNameHint),
+            onChanged: (val) => newName = val,
+          ),
+          actions: [
+            TextButton(onPressed: () => Navigator.pop(context), child: Text(l10n.cancel)),
+            TextButton(onPressed: () => Navigator.pop(context, newName), child: Text(l10n.add)),
+          ],
+        );
+      },
     );
   }
 }

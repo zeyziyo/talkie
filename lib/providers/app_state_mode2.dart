@@ -360,21 +360,39 @@ extension AppStateMode2 on AppState {
 
   /// Toggle is_memorized status (Target Only)
   Future<void> toggleMemorizedStatus(int id, bool currentStatus) async {
+    final newStatus = !currentStatus;
+
+    // Phase 17469: Optimistic Update - Update local list immediately for instant feedback
+    final index = _materialRecords.indexWhere((r) => r['id'] == id);
+    if (index != -1) {
+      final updatedRecord = Map<String, dynamic>.from(_materialRecords[index]);
+      updatedRecord['is_memorized'] = newStatus;
+      _materialRecords[index] = updatedRecord;
+      notify();
+    }
+
     final type = _recordTypeFilter == 'word' ? 'word' : 'sentence';
-    await DatabaseService.toggleMemorizedStatus(id, type, !currentStatus);
+    await DatabaseService.toggleMemorizedStatus(id, type, newStatus);
     
     if (_currentMode3Question != null) {
       final currentTargetId = _currentMode3Question!['target_id'] as int? ?? _currentMode3Question!['id'] as int;
       if (currentTargetId == id) {
          final newMap = Map<String, dynamic>.from(_currentMode3Question!);
-         newMap['is_memorized'] = !currentStatus;
+         newMap['is_memorized'] = newStatus;
          _currentMode3Question = newMap;
          notify(); 
       }
     }
 
+    // Phase 17469: Visual Buffer - If the item is being marked as memorized and we are in "hide memorized" mode,
+    // wait for a short duration so the user can see the checkmark before the item disappears.
+    if (!_showMemorized && newStatus) {
+      await Future.delayed(const Duration(milliseconds: 500));
+    }
+
     await loadRecordsByTags();
   }
+
 
   /// Phase 33: Sync User's Cloud Library to Local (v15.4)
   Future<void> syncCloudLibraryToLocal() async {
@@ -480,8 +498,13 @@ extension AppStateMode2 on AppState {
     if (SupabaseService.client.auth.currentUser != null && !SupabaseService.client.auth.currentUser!.isAnonymous) {
       syncCloudLibraryToLocal().then((_) => loadRecordsByTags());
     }
-    _studyMaterials = await DatabaseService.getStudyMaterials(type: _recordTypeFilter); 
+    _studyMaterials = await DatabaseService.getStudyMaterials(type: _recordTypeFilter, langCode: _sourceLang); 
     notify();
+  }
+
+  /// 특정 자료집(노트북)에 해당하는 태그 목록 조회
+  Future<List<String>> getTagsForNotebook(String notebookTitle) async {
+    return await DatabaseService.getTagsForNotebook(notebookTitle, _sourceLang, type: _recordTypeFilter);
   }
 
   /// 학습 자료 선택 (Notebook based - Phase 160)

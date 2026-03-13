@@ -312,6 +312,12 @@ class AppLocalizationsHe extends AppLocalizations {
   String get gender => 'מגדר';
 
   @override
+  String get labelFilterMaterial => 'חוברת חומרים';
+
+  @override
+  String get labelFilterTag => 'תגית';
+
+  @override
   String get generalTags => 'תגים כלליים';
 
   @override
@@ -347,7 +353,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• הגדרת שפה: שנה את שפת האם ושפת הלימוד שלך באמצעות תפריט סרגל האפליקציות או כפתור השפה בתחתית.\n• קלט פשוט: ניתוח אוטומטי (מילים/משפטים) והפעלת אזור ההגדרות בעת הזנת טקסט.\n• מיקרופון/מקלדת: התחל זיהוי קולי או הזנת טקסט עם הסמל הגדול במסך הראשי.\n• הגדרות מפורטות: ציין אוסף חומרים, תגים ותזכורות מצבים באזור התחתון המופיע במהלך הקלט.\n• חיפוש אוטומטי: זיהוי בזמן אמת של תרגומים קיימים דומים.\n• האזנה: הפעלת הגייה של דוברי שפת אם (TTS) באמצעות סמל הרמקול.\n• שמירה: הוספה מיידית לרשימת הלמידה האישית שלך באמצעות \'שמירת נתונים\'.';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc => 'חזור על משפטים שמורים עם הסתרת תרגום.';
@@ -1259,12 +1265,61 @@ class AppLocalizationsHe extends AppLocalizations {
       'הגדרות ברירת המחדל של מכשיר זה אינן תומכות בפלט קולי בשפה זו.';
 
   @override
+  String get homeTab => 'בית';
+
+  @override
   String get welcomeTitle => 'ברוכים הבאים ל-Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie תומך ביותר מ-80 שפות והוא כלי חכם למטיילים ולומדי שפות. שפרו את כישורי הדיבור שלכם בעזרת צ\'אט AI!';
+      'בעזרת Talkie, ניתן לתרגם באופן מיידי בין 80 שפות שונות וללמוד ללא הגבלה.';
 
   @override
   String get welcomeButton => 'מתחילים';
+
+  @override
+  String get labelDetails => 'הגדרות מתקדמות';
+
+  @override
+  String get translationResult => 'תוצאת תרגום';
+
+  @override
+  String get inputContent => 'תוכן קלט';
+
+  @override
+  String get translateNow => 'תרגם עכשיו';
+
+  @override
+  String get tooltipSettingsConfirm => 'אישור הגדרות';
+
+  @override
+  String get hintNoteExample => 'לדוגמה: הקשר, מילים נרדפות וכו\'';
+
+  @override
+  String get hintTagExample => 'לדוגמה: עסקים, נסיעות...';
+
+  @override
+  String get addNew => 'הוסף חדש';
+
+  @override
+  String get newNotebookTitle => 'שם מחברת חדשה';
+
+  @override
+  String get enterNameHint => 'הזן שם';
+
+  @override
+  String get add => 'הוסף';
+
+  @override
+  String get openSettings => 'פתח הגדרות';
+
+  @override
+  String get helpNotebook => 'בחר תיקייה לשמירת התרגומים.';
+
+  @override
+  String get helpNote =>
+      'רשום באופן חופשי את משמעות המילה, דוגמאות, הקשר וכו\'.';
+
+  @override
+  String get helpTag => 'הזן מילות מפתח למיון או חיפוש מאוחר יותר.';
 }

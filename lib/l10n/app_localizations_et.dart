@@ -319,6 +319,12 @@ class AppLocalizationsEt extends AppLocalizations {
   String get gender => 'Sugu';
 
   @override
+  String get labelFilterMaterial => 'Materjalid';
+
+  @override
+  String get labelFilterTag => 'Sildid';
+
+  @override
   String get generalTags => 'Üldised sildid';
 
   @override
@@ -356,7 +362,7 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Keele seaded: muuda oma ja õppimiskeelt rakenduse riba menüü või alumise keelenupu kaudu\n• Lihtne sisestus: teksti sisestamisel analüüsitakse automaatselt (sõna/lause) ja aktiveeritakse seadistusala\n• Mikrofon/klaviatuur: alusta hääletuvastust või teksti sisestamist põhiekraani suure ikooni kaudu\n• Täpsemad seaded: määra sisestamise ajal alumisel alal andmekogum, sildid ja olukorramärkus\n• Automaatne otsing: sarnaste olemasolevate tõlgete reaalajas tuvastamine\n• Kuulamine: esita emakeelne hääldus (TTS) kõlariikooni abil\n• Salvestamine: lisa kohe oma õppeloendisse \'Andmete salvestamine\'';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1283,12 +1289,60 @@ class AppLocalizationsEt extends AppLocalizations {
       'Seadme vaikeseaded ei toeta selle keele kõnet.';
 
   @override
+  String get homeTab => 'Avakuva';
+
+  @override
   String get welcomeTitle => 'Tere tulemast Talkiesse!';
 
   @override
   String get welcomeDesc =>
-      'Talkie toetab üle 80 keele ja on nutikas tõlketööriist ränduritele. Parandage oma rääkimisoskust tehisintellekti vestluse abil!';
+      'Talkie abil saate koheselt tõlkida ja lõputult õppida 80 keele vahel.';
 
   @override
   String get welcomeButton => 'Alusta';
+
+  @override
+  String get labelDetails => 'Detailseaded';
+
+  @override
+  String get translationResult => 'Tõlketulemus';
+
+  @override
+  String get inputContent => 'Sisestatud sisu';
+
+  @override
+  String get translateNow => 'Tõlgi kohe';
+
+  @override
+  String get tooltipSettingsConfirm => 'Kinnita seaded';
+
+  @override
+  String get hintNoteExample => 'Nt: kontekst, homonüümid jne';
+
+  @override
+  String get hintTagExample => 'Nt: äri, reisimine...';
+
+  @override
+  String get addNew => 'Lisa uus';
+
+  @override
+  String get newNotebookTitle => 'Uue märkmiku nimi';
+
+  @override
+  String get enterNameHint => 'Sisesta nimi';
+
+  @override
+  String get add => 'Lisa';
+
+  @override
+  String get openSettings => 'Ava seaded';
+
+  @override
+  String get helpNotebook => 'Vali kaust, kuhu tõlgitud tulemused salvestada.';
+
+  @override
+  String get helpNote => 'Kirjuta üles sõna tähendus, näited või olukorrad.';
+
+  @override
+  String get helpTag => 'Sisesta märksõnad, et hiljem liigitada või otsida.';
 }

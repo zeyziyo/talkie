@@ -57,9 +57,12 @@ keystore-base64.txt
 # Backups & Temporary Files
 backups/
 backup/
+archive/
+**/archive/
 *.bak
 *.zip
 *.7z
 *.rar
 *.tar
+*.gz
 *.gz

@@ -315,6 +315,12 @@ class AppLocalizationsEu extends AppLocalizations {
   String get gender => 'Generoa';
 
   @override
+  String get labelFilterMaterial => 'Materiala';
+
+  @override
+  String get labelFilterTag => 'Etiketak';
+
+  @override
   String get generalTags => 'Etiketa orokorrak';
 
   @override
@@ -352,7 +358,7 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Hizkuntza-ezarpenak: aldatu nire hizkuntza eta ikaskuntza-hizkuntza aplikazioaren barrako menuan edo beheko hizkuntza-botoian\n• Sarrera sinplea: testua sartzean automatikoki aztertzen da (hitza/esaldia) eta ezarpen-eremua aktibatzen da\n• Mikrofonoa/Teklatua: hasi ahots-ezagutza edo testu-sarrera pantaila nagusiko ikono handiarekin\n• Ezarpen zehatzak: zehaztu material-bilduma, etiketak eta egoera-oharrak sarreran agertzen den beheko eremuan\n• Bilaketa automatikoa: antzeko lehendik dauden itzulpenak denbora errealean detektatzen dira\n• Entzun: erreproduzitu jatorrizko hiztunaren ahoskera (TTS) bozgorailuaren ikonoarekin\n• Gorde: gehitu berehala zure ikaskuntza-zerrendara \'Datuak gorde\' erabiliz';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1285,12 +1291,62 @@ class AppLocalizationsEu extends AppLocalizations {
       'Gailu honen ezarpen lehenetsiek ez dute hizkuntza honetako ahots-irteerarik onartzen.';
 
   @override
+  String get homeTab => 'Hasiera';
+
+  @override
   String get welcomeTitle => 'Ongi etorri Talkiera!';
 
   @override
   String get welcomeDesc =>
-      'Talkie-k 80 hizkuntza baino gehiago onartzen ditu eta itzulpen-tresna adimentsua da. Hobetu zure mintzamena AI Chatekin!';
+      'Talkie-rekin 80 hizkuntzaren artean nahi duzun hizkuntzan berehalako itzulpena eta etengabeko ikaskuntza eskaintzen dira.';
 
   @override
   String get welcomeButton => 'Hasi';
+
+  @override
+  String get labelDetails => 'Ezarpen zehatzak';
+
+  @override
+  String get translationResult => 'Itzulpen emaitza';
+
+  @override
+  String get inputContent => 'Sarrerako edukia';
+
+  @override
+  String get translateNow => 'Itzuli orain';
+
+  @override
+  String get tooltipSettingsConfirm => 'Ezarpenak baieztatu';
+
+  @override
+  String get hintNoteExample =>
+      'Adibidez: testuinguru azalpena, homonimoak, etab.';
+
+  @override
+  String get hintTagExample => 'Adibidez: negozioa, bidaiak...';
+
+  @override
+  String get addNew => 'Gehitu berria';
+
+  @override
+  String get newNotebookTitle => 'Koaderno berriaren izena';
+
+  @override
+  String get enterNameHint => 'Idatzi izena';
+
+  @override
+  String get add => 'Gehitu';
+
+  @override
+  String get openSettings => 'Ezarpenak ireki';
+
+  @override
+  String get helpNotebook => 'Hautatu itzulpenak gordetzeko karpeta.';
+
+  @override
+  String get helpNote =>
+      'Idatzi hitzaren esanahia, adibideak edo egoerak aske.';
+
+  @override
+  String get helpTag => 'Sartu gero sailkatu edo bilatzeko gako-hitzak.';
 }

@@ -317,6 +317,12 @@ class AppLocalizationsAf extends AppLocalizations {
   String get gender => 'Geslag';
 
   @override
+  String get labelFilterMaterial => 'Bronmateriaal';
+
+  @override
+  String get labelFilterTag => 'Merkers';
+
+  @override
   String get generalTags => 'Algemene merkers';
 
   @override
@@ -350,11 +356,11 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get helpMode1Desc =>
-      'Vertaal onmiddellik deur spraak te herken of teks in te voer, en stoor dit in die leerlys.';
+      'Vertaal onmiddellik deur spraak te herken of teks in te voer, en stoor dit in jou studeerkamerlys.';
 
   @override
   String get helpMode1Details =>
-      '• Taalinstellings: Verander my taal en leer taal met die appbalkkieslys of onderste taalknoppie\n• Vereenvoudigde invoer: Ontleed outomaties (woord/sin) en aktiveer instellingsarea wanneer teks ingevoer word\n• Mikrofoon/sleutelbord: Begin stemherkenning of teksinvoer met die groot ikoon op die hoofskerm\n• Gedetailleerde instellings: Spesifiseer databronne, etikette en situasienotas in die onderste area wat tydens invoer verskyn\n• Outomatiese soektog: Bespeur soortgelyke bestaande vertalings intyds\n• Luister: Speel moedertaaluitspraak (TTS) met die luidsprekerikoon\n• Stoor: Voeg onmiddellik by jou eie leerlys met \'Data stoor\'';
+      '• Taalinstellings: Bevestig jou taal en die taal wat jy leer met die taal-knoppie bo-aan die tuisskerm, en verander die studeertaal.\n• Eenvoudige invoer: Voer onmiddellik in deur die groot mikrofoon en teksvenster in die middel.\n• Bevestig instellings: Nadat jy klaar ingevoer het, druk die blou regmerkie-knoppie aan die regterkant. \'n Gedetailleerde instellingsvenster sal verskyn.\n• Gedetailleerde instellings: In die dialoog wat verskyn, kan jy die materiaalversameling, aantekeninge (notas) en etikette spesifiseer wat jy wil stoor.\n• Vertaal nou: Nadat jy klaar ingestel het, druk die groen vertaalknoppie om die kunsmatige intelligensie onmiddellik te laat vertaal.\n• Outomatiese soektog: Bespeur en wys soortgelyke bestaande vertalings intyds terwyl jy invoer.\n• Luister en stoor: Luister na die uitspraak met die luidspreker-ikoon onderaan die vertaalresultate, en voeg dit by jou studeerkamerlys deur \'Data stoor\' te gebruik.';
 
   @override
   String get helpMode2Desc =>
@@ -1272,12 +1278,62 @@ class AppLocalizationsAf extends AppLocalizations {
       'Hierdie toestel ondersteun nie teks-na-spraak vir hierdie taal in sy verstekinstellings nie.';
 
   @override
+  String get homeTab => 'Tuisblad';
+
+  @override
   String get welcomeTitle => 'Welkom by Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie ondersteun meer as 80 tale en is \'n slim vertaal- en gesprek leerhulpmiddel vir reisigers en taalaanleerders. Verbeter jou praatvaardighede met KI-klets!';
+      'Talkie bied onmiddellike heen-en-weer vertaling en onbeperkte herhaalde leer in enige van 80 tale.';
 
   @override
   String get welcomeButton => 'Begin';
+
+  @override
+  String get labelDetails => 'Gedetailleerde instellings';
+
+  @override
+  String get translationResult => 'Vertalingsresultaat';
+
+  @override
+  String get inputContent => 'Invoerkonteks';
+
+  @override
+  String get translateNow => 'Vertaal Nou';
+
+  @override
+  String get tooltipSettingsConfirm => 'Bevestig instellings';
+
+  @override
+  String get hintNoteExample =>
+      'bv. kontekstuele aantekeninge, homonieme, ens.';
+
+  @override
+  String get hintTagExample => 'bv. besigheid, reis...';
+
+  @override
+  String get addNew => 'Nuwe byvoeg';
+
+  @override
+  String get newNotebookTitle => 'Nuwe notaboek titel';
+
+  @override
+  String get enterNameHint => 'Voer naam in';
+
+  @override
+  String get add => 'Voeg by';
+
+  @override
+  String get openSettings => 'Open instellings';
+
+  @override
+  String get helpNotebook => 'Kies \'n gids om vertaalde resultate te stoor.';
+
+  @override
+  String get helpNote =>
+      'Teken die betekenis, voorbeelde of situasies van die woord vrylik aan.';
+
+  @override
+  String get helpTag => 'Sleutelwoorde vir latere kategorisering of soektogte.';
 }

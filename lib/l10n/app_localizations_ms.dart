@@ -12,14 +12,14 @@ class AppLocalizationsMs extends AppLocalizations {
   String get basicWords => 'Repositori Perkataan Asas';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Bahasa Input';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Bahasa Terjemahan';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Ubah perbualan harian ke bahasa asing dalam sekelip mata! Talkie merekodkan kehidupan bahasa anda.';
 
   @override
   String get cancel => 'Batal';
@@ -319,6 +319,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get gender => 'Jantina';
 
   @override
+  String get labelFilterMaterial => 'Bahan';
+
+  @override
+  String get labelFilterTag => 'Tag';
+
+  @override
   String get generalTags => 'Tag Umum';
 
   @override
@@ -351,11 +357,11 @@ class AppLocalizationsMs extends AppLocalizations {
   String get helpJsonTypeWord => 'Perkataan';
 
   @override
-  String get helpMode1Desc => 'Kenal pasti suara, terjemah dan dengar hasil.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Suara: Ketik mikrofon untuk mula/berhenti\n• Teks: Taip terus untuk menterjemah\n• Auto-Cari: Mengesan ayat serupa\n• Terjemah: Butang untuk terjemahan segera\n• Dengar: Ikon pembesar suara untuk TTS\n• Simpan: Menambah ke sejarah\n• Padam: Tetapkan semula semua (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +385,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Sembang AI: Berlatih perbualan sebenar dengan persona.\n• Pengurusan Peserta: Tetapkan bahasa anda dan bahasa AI untuk mengelakkan ketidakpadanan bahasa.\n• Lakonan GPS: Cipta senario perbualan semula jadi berdasarkan lokasi semasa anda.\n• Penyimpanan Rekod: Semua perbualan disimpan dengan selamat berdasarkan ID, dan rekod dikekalkan walaupun nama ditukar. (TODO: Translate)';
+      '• Sembang AI: Berlatih perbualan sebenar dengan persona dalam menu \'Sembang\' pada bar tab bawah\n• Tetapan Persona: Tentukan jantina, nama dan kod bahasa pihak lawan secara bebas\n• Situasi Main GPS: Mencadangkan topik perbualan yang sesuai untuk tempat dengan mengenali lokasi semasa saya\n• 2 Bahasa: Jawapan AI dipaparkan dengan terjemahan untuk memaksimumkan kesan pembelajaran\n• Pengurusan Rekod: Menapis sejarah perbualan lalu dan menyimpan mesej tertentu daripada perbualan sebagai bahan pembelajaran';
 
   @override
   String get helpTabJson => 'Format JSON';
@@ -1281,12 +1287,62 @@ class AppLocalizationsMs extends AppLocalizations {
       'Tetapan lalai peranti ini tidak menyokong output pertuturan untuk bahasa ini.';
 
   @override
+  String get homeTab => 'Laman Utama';
+
+  @override
   String get welcomeTitle => 'Selamat datang ke Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie menyokong lebih 80 bahasa und ialah alat terjemahan pintar untuk pengembara. Tingkatkan kemahiran bertutur anda dengan Sembang AI!';
+      'Dengan Talkie, anda boleh menterjemah serta-merta antara mana-mana 80 bahasa dan belajar berulang kali tanpa had.';
 
   @override
   String get welcomeButton => 'Mula';
+
+  @override
+  String get labelDetails => 'Tetapan Terperinci';
+
+  @override
+  String get translationResult => 'Hasil Terjemahan';
+
+  @override
+  String get inputContent => 'Kandungan Input';
+
+  @override
+  String get translateNow => 'Terjemah Sekarang';
+
+  @override
+  String get tooltipSettingsConfirm => 'Sahkan Tetapan';
+
+  @override
+  String get hintNoteExample => 'Cth: Konteks, homonim, dll.';
+
+  @override
+  String get hintTagExample => 'Cth: Perniagaan, Melancong...';
+
+  @override
+  String get addNew => 'Tambah Baharu';
+
+  @override
+  String get newNotebookTitle => 'Nama Buku Nota Baharu';
+
+  @override
+  String get enterNameHint => 'Masukkan nama';
+
+  @override
+  String get add => 'Tambah';
+
+  @override
+  String get openSettings => 'Buka Tetapan';
+
+  @override
+  String get helpNotebook => 'Pilih folder untuk menyimpan hasil terjemahan.';
+
+  @override
+  String get helpNote =>
+      'Catat makna, contoh ayat atau situasi perkataan dengan bebas.';
+
+  @override
+  String get helpTag =>
+      'Masukkan kata kunci untuk mengklasifikasikan atau mencari kemudian.';
 }

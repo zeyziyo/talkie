@@ -316,6 +316,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get gender => 'Spol';
 
   @override
+  String get labelFilterMaterial => 'Materijali';
+
+  @override
+  String get labelFilterTag => 'Oznake';
+
+  @override
   String get generalTags => 'Općenite oznake';
 
   @override
@@ -353,7 +359,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Postavke jezika: Promijenite svoj jezik i jezik učenja putem izbornika trake aplikacije ili donje tipke jezika\n• Jednostavan unos: Automatska analiza (riječi/rečenice) i aktivacija područja postavki prilikom unosa teksta\n• Mikrofon/tipkovnica: Započnite prepoznavanje glasa ili unos teksta s velikim ikonama na glavnom zaslonu\n• Detaljne postavke: Odredite zbirku materijala, oznake i situacijske bilješke u donjem području koje se pojavljuje tijekom unosa\n• Automatsko pretraživanje: Otkrivanje sličnih postojećih prijevoda u stvarnom vremenu\n• Slušanje: Reprodukcija izvornog izgovora (TTS) pomoću ikone zvučnika\n• Spremanje: Odmah dodajte na svoj popis učenja putem \'Spremi podatke\'';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1280,12 +1286,63 @@ class AppLocalizationsHr extends AppLocalizations {
       'Ovaj uređaj ne podržava izvorni izgovor za ovaj jezik.';
 
   @override
+  String get homeTab => 'Početna';
+
+  @override
   String get welcomeTitle => 'Dobrodošli u Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie podržava preko 80 jezika i pametni je alat za prevođenje za putnike. Unaprijedite svoje vještine govora uz AI Chat!';
+      'Uz Talkie, trenutno se međusobno prevodite na 80 jezika i učite beskonačno.';
 
   @override
   String get welcomeButton => 'Započni';
+
+  @override
+  String get labelDetails => 'Detaljne postavke';
+
+  @override
+  String get translationResult => 'Rezultat prijevoda';
+
+  @override
+  String get inputContent => 'Uneseni sadržaj';
+
+  @override
+  String get translateNow => 'Prevedi sada';
+
+  @override
+  String get tooltipSettingsConfirm => 'Potvrdi postavke';
+
+  @override
+  String get hintNoteExample => 'Primjer: kontekst, homonimi itd.';
+
+  @override
+  String get hintTagExample => 'Primjer: posao, putovanje...';
+
+  @override
+  String get addNew => 'Dodaj novo';
+
+  @override
+  String get newNotebookTitle => 'Naziv nove bilježnice';
+
+  @override
+  String get enterNameHint => 'Unesite ime';
+
+  @override
+  String get add => 'Dodaj';
+
+  @override
+  String get openSettings => 'Otvori postavke';
+
+  @override
+  String get helpNotebook =>
+      'Odaberite mapu za spremanje prevedenih rezultata.';
+
+  @override
+  String get helpNote =>
+      'Slobodno zapišite značenje riječi, primjere ili situacije.';
+
+  @override
+  String get helpTag =>
+      'Unesite ključne riječi za kasniju klasifikaciju ili pretraživanje.';
 }

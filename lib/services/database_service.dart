@@ -141,30 +141,37 @@ class DatabaseService {
   // --- Material Management (Notebook based - Phase 160) ---
   // Material IDs are now strings (notebook titles)
   // getStudyMaterialById removed as it was for legacy table
-  static Future<List<Map<String, dynamic>>> getStudyMaterials({String? type}) async {
+  static Future<List<Map<String, dynamic>>> getStudyMaterials({String? type, String? langCode}) async {
     final db = await database;
+    String whereClause = langCode != null ? 'WHERE source_lang = ?' : '';
+    List<dynamic> whereArgs = langCode != null ? [langCode] : [];
+
     // Extract unique notebook titles from meta tables with type filtering
     if (type == 'word') {
       return await db.rawQuery('''
         SELECT DISTINCT notebook_title as subject, 'Notebook' as source 
         FROM words_meta
-      ''');
+        $whereClause
+      ''', whereArgs);
     } else if (type == 'sentence') {
       return await db.rawQuery('''
         SELECT DISTINCT notebook_title as subject, 'Notebook' as source 
         FROM sentences_meta
-      ''');
+        $whereClause
+      ''', whereArgs);
     }
     
     // Legacy/Unified fallback
     final List<Map<String, dynamic>> results = await db.rawQuery('''
       SELECT DISTINCT notebook_title as subject, 'Notebook' as source 
       FROM words_meta
+      ${langCode != null ? 'WHERE source_lang = ?' : ''}
       UNION
       SELECT DISTINCT notebook_title as subject, 'Notebook' as source 
       FROM sentences_meta
-      WHERE notebook_title NOT IN (SELECT notebook_title FROM words_meta)
-    ''');
+      ${langCode != null ? 'WHERE source_lang = ?' : ''}
+      ${langCode != null ? 'AND notebook_title NOT IN (SELECT notebook_title FROM words_meta WHERE source_lang = ?)' : 'WHERE notebook_title NOT IN (SELECT notebook_title FROM words_meta)'}
+    ''', langCode != null ? [langCode, langCode, langCode] : []);
     return results;
   }
 
@@ -441,4 +448,7 @@ class DatabaseService {
 
   static Future<void> repairAutoLanguageRecords(String currentLang, String targetLang) => 
       UnifiedRepository.repairAutoLanguageRecords(currentLang, targetLang);
+
+  static Future<List<String>> getTagsForNotebook(String notebookTitle, String langCode, {String? type}) =>
+      TagRepository.getTagsForNotebook(notebookTitle, langCode, type: type);
 }

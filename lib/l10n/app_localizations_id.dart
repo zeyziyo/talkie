@@ -318,6 +318,12 @@ class AppLocalizationsId extends AppLocalizations {
   String get gender => 'Jenis Kelamin';
 
   @override
+  String get labelFilterMaterial => 'Bahan';
+
+  @override
+  String get labelFilterTag => 'Tag';
+
+  @override
   String get generalTags => 'Tag Umum';
 
   @override
@@ -355,7 +361,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Pengaturan Bahasa: Ubah bahasa saya dan bahasa pembelajaran di menu bilah aplikasi atau tombol bahasa di bagian bawah\n• Input Sederhana: Analisis otomatis (kata/kalimat) dan aktivasi area pengaturan saat memasukkan teks\n• Mikrofon/Papan Ketik: Mulai pengenalan suara atau masukkan teks dengan ikon besar di layar utama\n• Pengaturan Detail: Tentukan buku sumber, tag, dan memo situasi di area bawah yang muncul selama input\n• Pencarian Otomatis: Deteksi terjemahan lama serupa secara real time\n• Dengarkan: Putar pengucapan penutur asli (TTS) dengan ikon speaker\n• Simpan: Tambahkan langsung ke daftar pembelajaran Anda sendiri dengan \'Simpan Data\'';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1284,12 +1290,62 @@ class AppLocalizationsId extends AppLocalizations {
       'Perangkat ini tidak mendukung output suara untuk bahasa ini secara bawaan.';
 
   @override
+  String get homeTab => 'Beranda';
+
+  @override
   String get welcomeTitle => 'Selamat datang di Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie mendukung lebih dari 80 bahasa dan merupakan alat penerjemahan cerdas bagi para pelancong. Tingkatkan keterampilan berbicara Anda dengan AI Chat!';
+      'Dengan Talkie, terjemahkan langsung dan pelajari tanpa batas antara 80 bahasa pilihanmu.';
 
   @override
   String get welcomeButton => 'Mulai';
+
+  @override
+  String get labelDetails => 'Pengaturan Detail';
+
+  @override
+  String get translationResult => 'Hasil Terjemahan';
+
+  @override
+  String get inputContent => 'Konten Masukan';
+
+  @override
+  String get translateNow => 'Terjemahkan Sekarang';
+
+  @override
+  String get tooltipSettingsConfirm => 'Konfirmasi Pengaturan';
+
+  @override
+  String get hintNoteExample => 'Contoh: Konteks, homonim, dll.';
+
+  @override
+  String get hintTagExample => 'Contoh: Bisnis, wisata...';
+
+  @override
+  String get addNew => 'Tambah Baru';
+
+  @override
+  String get newNotebookTitle => 'Nama Buku Catatan Baru';
+
+  @override
+  String get enterNameHint => 'Masukkan nama';
+
+  @override
+  String get add => 'Tambah';
+
+  @override
+  String get openSettings => 'Buka Pengaturan';
+
+  @override
+  String get helpNotebook => 'Pilih folder untuk menyimpan hasil terjemahan.';
+
+  @override
+  String get helpNote =>
+      'Bebas mencatat arti kata, contoh kalimat, situasi, dll.';
+
+  @override
+  String get helpTag =>
+      'Masukkan kata kunci untuk klasifikasi atau pencarian nanti.';
 }

@@ -12,14 +12,14 @@ class AppLocalizationsTe extends AppLocalizations {
   String get basicWords => 'ప్రాథమిక పద నిల్వ';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'ఇన్‌పుట్ భాష';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'అనువాద భాష';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'రోజువారీ సంభాషణలను తక్షణమే విదేశీ భాషలోకి మార్చండి! టాకీ మీ భాషా జీవితాన్ని రికార్డ్ చేస్తుంది.';
 
   @override
   String get cancel => 'రద్దు చేయి';
@@ -318,6 +318,12 @@ class AppLocalizationsTe extends AppLocalizations {
   String get gender => 'లింగం';
 
   @override
+  String get labelFilterMaterial => 'మెటీరియల్';
+
+  @override
+  String get labelFilterTag => 'ట్యాగ్';
+
+  @override
   String get generalTags => 'సాధారణ ట్యాగ్‌లు';
 
   @override
@@ -350,12 +356,11 @@ class AppLocalizationsTe extends AppLocalizations {
   String get helpJsonTypeWord => 'పదం (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'వాయిస్‌ని గుర్తించండి, అనువదించండి మరియు ఫలితాన్ని వినండి.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• వాయిస్: ప్రారంభించడానికి/ఆపడానికి మైక్‌ని నొక్కండి\n• వచనం: అనువదించడానికి నేరుగా టైప్ చేయండి\n• ఆటో-సెర్చ్: ఇలాంటి వాక్యాలను గుర్తిస్తుంది\n• అనువాదం: తక్షణ అనువాద బటన్\n• వినండి: TTS కోసం స్పీకర్ ఐకాన్\n• సేవ్: చరిత్రకు జోడిస్తుంది\n• క్లియర్: అన్నీ రీసెట్ చేయండి (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +384,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI చాటింగ్: వ్యక్తిత్వంతో నిజమైన సంభాషణను ప్రాక్టీస్ చేయండి.\n• పార్టిసిపెంట్ నిర్వహణ: మీ భాషను మరియు AI భాషను సెట్ చేయడం ద్వారా భాషా అసమానతలను నివారించండి.\n• GPS రోల్-ప్లే: మీ ప్రస్తుత స్థానం ఆధారంగా సహజమైన సంభాషణ పరిస్థితులను సెట్ చేయండి.\n• రికార్డ్ నిలుపుదల: అన్ని సంభాషణలు ID ఆధారంగా సురక్షితంగా నిల్వ చేయబడతాయి మరియు మీరు పేరు మార్చినప్పటికీ ట్రాక్ చేయబడతాయి. (TODO: Translate)';
+      '• AI చాట్: దిగువ ట్యాబ్ బార్‌లోని \'చాట్\' మెనులో వ్యక్తిత్వం మరియు ఆచరణాత్మక సంభాషణను అభ్యసించండి\n• వ్యక్తిత్వ సెట్టింగ్‌లు: అవతలి వ్యక్తి యొక్క లింగం, పేరు మరియు భాషా కోడ్‌ను స్వేచ్ఛగా పేర్కొనండి\n• GPS పరిస్థితి నాటకం: ప్రస్తుతం నా స్థానాన్ని గుర్తించడం ద్వారా స్థలానికి సరిపోయే సంభాషణ అంశాలను సిఫార్సు చేయండి\n• 2 భాషలు: AI యొక్క సమాధానం అనువాదంతో పాటు ప్రదర్శించబడుతుంది, అభ్యాస ప్రభావాన్ని పెంచుతుంది\n• రికార్డ్ నిర్వహణ: గత సంభాషణ చరిత్రను ఫిల్టర్ చేయండి మరియు సంభాషణ సమయంలో నిర్దిష్ట సందేశాలను అభ్యాస పదార్థంగా సేవ్ చేయండి';
 
   @override
   String get helpTabJson => 'JSON ఫార్మాట్';
@@ -1282,12 +1287,63 @@ class AppLocalizationsTe extends AppLocalizations {
       'ఈ పరికరం యొక్క స్థానిక సెట్టింగ్‌లలో ఈ భాషకు వాయిస్ అవుట్‌పుట్ మద్దతు లేదు.';
 
   @override
+  String get homeTab => 'హోమ్';
+
+  @override
   String get welcomeTitle => 'Talkie కి స్వాగతం!';
 
   @override
   String get welcomeDesc =>
-      'Talkie 80 కంటే ఎక్కువ భాషలకు మద్దతు ఇస్తుంది మరియు ప్రయాణీకులకు ఒక స్మార్ట్ అనువాద సాధనం. AI చాట్ ద్వారా మీ మాట్లాడే నైపుణ్యాలను పెంపొందించుకోండి!';
+      'టాకీతో 80 భాషల మధ్య మీకు కావలసిన భాషల్లో తక్షణ అనువాదం మరియు అపరిమిత పునరావృత అభ్యాసం సాధ్యమవుతుంది.';
 
   @override
   String get welcomeButton => 'ప్రారంభించు';
+
+  @override
+  String get labelDetails => 'వివరాలు';
+
+  @override
+  String get translationResult => 'అనువాదం ఫలితం';
+
+  @override
+  String get inputContent => 'ఇన్‌పుట్ చేసిన విషయం';
+
+  @override
+  String get translateNow => 'ఇప్పుడు అనువదించు';
+
+  @override
+  String get tooltipSettingsConfirm => 'సెట్టింగ్‌లను నిర్ధారించండి';
+
+  @override
+  String get hintNoteExample => 'ఉదాహరణ: సందర్భం, ఒకేలాంటి పదాలు మొదలైనవి';
+
+  @override
+  String get hintTagExample => 'ఉదాహరణ: వ్యాపారం, ప్రయాణం...';
+
+  @override
+  String get addNew => 'కొత్తగా చేర్చు';
+
+  @override
+  String get newNotebookTitle => 'కొత్త నోట్‌బుక్ పేరు';
+
+  @override
+  String get enterNameHint => 'పేరును నమోదు చేయండి';
+
+  @override
+  String get add => 'చేర్చు';
+
+  @override
+  String get openSettings => 'సెట్టింగ్‌లు తెరువు';
+
+  @override
+  String get helpNotebook =>
+      'అనువదించబడిన ఫలితాలను నిల్వ చేయడానికి ఫోల్డర్‌ను ఎంచుకోండి.';
+
+  @override
+  String get helpNote =>
+      'పదాల అర్థాలు, ఉదాహరణలు, సందర్భాలు మొదలైన వాటిని స్వేచ్ఛగా వ్రాయండి.';
+
+  @override
+  String get helpTag =>
+      'తరువాత వర్గీకరించడానికి లేదా శోధించడానికి కీలకపదాలను నమోదు చేయండి.';
 }

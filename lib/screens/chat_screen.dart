@@ -52,6 +52,12 @@ class _ChatScreenState extends State<ChatScreen> {
     final appState = Provider.of<AppState>(context, listen: false);
     debugPrint('[ChatScreen] Initialized with hasAiParticipant: ${widget.hasAiParticipant}');
     
+    // [Phase 162/164] Sync existing messages from AppState to local state if reloading/opening history
+    if (appState.currentChatMessages.isNotEmpty) {
+      _messages = List.from(appState.currentChatMessages);
+      debugPrint('[ChatScreen] Loaded ${_messages.length} existing messages from AppState');
+    }
+
     // 초기 발화자는 주로 '나(User)'로 설정 시도
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
@@ -66,6 +72,7 @@ class _ChatScreenState extends State<ChatScreen> {
            });
         }
       }); // Phase 70
+      _scrollToBottom();
     });
   }
 
@@ -898,55 +905,58 @@ class _ChatScreenState extends State<ChatScreen> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // Phase 180: Multi-Speaker Dropdown Selector
-          Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                 Text(l10n.speaker, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey[700], fontSize: 13)),
-                 const SizedBox(width: 8),
-                 Expanded(
-                   child: Container(
-                     padding: const EdgeInsets.symmetric(horizontal: 12),
-                     decoration: BoxDecoration(
-                       color: Colors.white,
-                       borderRadius: BorderRadius.circular(12),
-                       border: Border.all(color: Colors.grey.shade300),
-                     ),
-                     child: DropdownButtonHideUnderline(
-                       child: DropdownButton<String>(
-                         value: appState.activeParticipants.any((p) => p.id == _currentSpeakerId) 
-                            ? _currentSpeakerId 
-                            : (appState.activeParticipants.isNotEmpty ? appState.activeParticipants.first.id : null),
-                         isExpanded: true,
-                         hint: Text(l10n.speakerSelect, style: const TextStyle(fontSize: 13)),
-                         items: appState.activeParticipants.map((p) {
-                           return DropdownMenuItem<String>(
-                             value: p.id,
-                             child: Row(
-                               children: [
-                                 Icon(
-                                    p.role == 'user' ? Icons.person : (p.role == 'third_party' ? Icons.people : Icons.smart_toy),
-                                    size: 16, 
-                                    color: p.role == 'user' ? Colors.blue : (p.role == 'third_party' ? Colors.orange : Colors.green)
-                                 ),
-                                 const SizedBox(width: 8),
-                                 Expanded(child: Text('${p.name} (${p.langCode})', overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 13))),
-                               ],
-                             ),
-                           );
-                         }).toList(),
-                         onChanged: (val) {
-                           if (val != null) {
-                             setState(() => _currentSpeakerId = val);
-                           }
-                         },
-                       ),
-                     ),
-                   ),
-                 ),
-              ],
+          // Phase 180 改: Horizontal Speaker Selector (Horizontal Scroll)
+          SizedBox(
+            height: 48,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: appState.activeParticipants.length,
+              itemBuilder: (context, index) {
+                final p = appState.activeParticipants[index];
+                final isSelected = _currentSpeakerId == p.id || 
+                    (_currentSpeakerId == null && index == 0);
+                
+                return GestureDetector(
+                  onTap: () => setState(() => _currentSpeakerId = p.id),
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 200),
+                    margin: const EdgeInsets.only(right: 8, bottom: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: isSelected ? const Color(0xFF667eea) : Colors.white,
+                      borderRadius: BorderRadius.circular(24),
+                      border: Border.all(
+                        color: isSelected ? const Color(0xFF667eea) : Colors.grey.shade300,
+                        width: 1.5,
+                      ),
+                      boxShadow: isSelected ? [
+                        BoxShadow(color: const Color(0xFF667eea).withValues(alpha: 0.3), blurRadius: 4, offset: const Offset(0, 2))
+                      ] : [
+                        BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 2, offset: const Offset(0, 1))
+                      ],
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(
+                          p.role == 'user' ? Icons.person : (p.role == 'third_party' ? Icons.people : Icons.smart_toy),
+                          size: 18,
+                          color: isSelected ? Colors.white : (p.role == 'user' ? Colors.blue : (p.role == 'third_party' ? Colors.orange : Colors.green)),
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          '${p.name} (${p.langCode})',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+                            color: isSelected ? Colors.white : Colors.grey.shade800,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
             ),
           ),
 

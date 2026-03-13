@@ -12,14 +12,14 @@ class AppLocalizationsKm extends AppLocalizations {
   String get basicWords => 'ឃ្លាំងផ្ទុកពាក្យជាមូលដ្ឋាន';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'ភាសាបញ្ចូល';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'ភាសា​បកប្រែ';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'បម្លែងការសន្ទនាប្រចាំថ្ងៃទៅជាភាសាបរទេសភ្លាមៗ! Talkie នឹងកត់ត្រាជីវិតភាសារបស់អ្នក។';
 
   @override
   String get cancel => 'បោះបង់';
@@ -319,6 +319,12 @@ class AppLocalizationsKm extends AppLocalizations {
   String get gender => 'ភេទ';
 
   @override
+  String get labelFilterMaterial => 'សៀវភៅណែនាំ';
+
+  @override
+  String get labelFilterTag => 'ស្លាក';
+
+  @override
   String get generalTags => 'ស្លាកទូទៅ';
 
   @override
@@ -352,11 +358,11 @@ class AppLocalizationsKm extends AppLocalizations {
   String get helpJsonTypeWord => 'ពាក្យ';
 
   @override
-  String get helpMode1Desc => 'ស្គាល់សំឡេង បកប្រែ និងស្តាប់លទ្ធផល។';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• ការកំណត់ភាសា៖ ចុចរូបតំណាងខាងលើ/ខាងក្រោមដើម្បីផ្លាស់ប្ដូរភាសា\n• បិទ/បើកពាក្យ/ប្រយោគ៖ ផ្លាស់ប្ដូររបៀប\n• ការបញ្ចូលសំឡេង៖ ចុចរូបតំណាងមីក្រូហ្វូនដើម្បីចាប់ផ្ដើម/បញ្ឈប់ការស្ដាប់\n• ការបញ្ចូលអត្ថបទ៖ បញ្ចូលដោយផ្ទាល់ដើម្បីបកប្រែ\n• ការស្វែងរកដោយស្វ័យប្រវត្តិ៖ រកមើលប្រយោគដែលមានស្រាប់ស្រដៀងគ្នា\n• ការបកប្រែ៖ ចុចប៊ូតុងបកប្រែដើម្បីបកប្រែភ្លាមៗ\n• ស្ដាប់៖ ចាក់សារ TTS ជាមួយរូបតំណាងឧបករណ៍បំពងសំឡេង\n• រក្សាទុក៖ បន្ថែមកំណត់ត្រាជាមួយ \'រក្សាទុកទិន្នន័យ\'\n• សម្អាត៖ សម្អាតការបញ្ចូល (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -380,7 +386,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI Chat៖ និយាយជាភាសារបស់អ្នកដើម្បីអនុវត្តការសន្ទនា\n• Multi Persona៖ ផ្លាស់ប្ដូរភេទ/ភាសា/ឈ្មោះរបស់ភាគីម្ខាងទៀតជាមួយម៉ឺនុយខាងលើពពុះសន្ទនា\n• បន្ថែមដៃគូ៖ បន្ថែម Stranger ថ្មីជាមួយប៊ូតុង + \n• GPS៖ ធ្វើសេណារីយ៉ូដោយផ្អែកលើទីតាំងបច្ចុប្បន្ន\n• រក្សាទុកដោយស្វ័យប្រវត្តិ៖ បកប្រែ និងរក្សាទុកខ្លឹមសារសន្ទនាដោយស្វ័យប្រវត្តិ (TODO: Translate)';
+      '• ជជែក AI៖ ហាត់សន្ទនាជាក់ស្តែងជាមួយមនុស្ស តាមរយៈម៉ឺនុយ \'ជជែក\' នៅក្នុងរបារផ្ទាំងខាងក្រោម\n• ការកំណត់បុគ្គល៖ កំណត់ភេទ ឈ្មោះ និងលេខកូដភាសារបស់ភាគីម្ខាងទៀតដោយសេរី\n• ស្ថានភាព GPS៖ ណែនាំប្រធានបទសន្ទនាដែលសាកសមនឹងទីកន្លែង ដោយការស្គាល់ទីតាំងបច្ចុប្បន្នរបស់ខ្ញុំ\n• ពីរភាសា៖ ចម្លើយរបស់ AI ត្រូវបានបង្ហាញជាមួយនឹងការបកប្រែ ដើម្បីបង្កើនប្រសិទ្ធភាពសិក្សា\n• ការគ្រប់គ្រងកំណត់ត្រា៖ ត្រងប្រវត្តិជជែកកន្លងមក និងរក្សាទុកសារជាក់លាក់ជាសម្ភារៈសិក្សាកំឡុងពេលជជែក';
 
   @override
   String get helpTabJson => 'ទម្រង់ JSON';
@@ -1285,12 +1291,63 @@ class AppLocalizationsKm extends AppLocalizations {
       'ឧបករណ៍​នេះ​មិន​គាំទ្រ​ការ​បញ្ចេញ​សំឡេង​សម្រាប់​ភាសា​នេះ​តាម​លំនាំដើម​ទេ។';
 
   @override
+  String get homeTab => 'ទំព័រដើម';
+
+  @override
   String get welcomeTitle => 'សូមស្វាគមន៍មកកាន់ Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie គាំទ្រភាសាច្រើនជាង 80 និងជាឧបករណ៍បកប្រែដ៏ឆ្លាតវៃសម្រាប់អ្នកធ្វើដំណើរ។ បង្កើនជំនាញនិយាយរបស់អ្នកតាមរយៈការជជែកជាមួយ AI!';
+      'ជាមួយ Talkie អ្នកអាចបកប្រែទៅវិញទៅមកភ្លាមៗ និងរៀនដដែលៗដោយគ្មានកំណត់រវាងភាសាណាមួយក្នុងចំណោម 80 ភាសាដែលអ្នកចង់បាន។';
 
   @override
   String get welcomeButton => 'ចាប់ផ្តើម';
+
+  @override
+  String get labelDetails => 'ការកំណត់កម្រិតខ្ពស់';
+
+  @override
+  String get translationResult => 'លទ្ធផល​ការបកប្រែ';
+
+  @override
+  String get inputContent => 'បញ្ចូល​ខ្លឹមសារ';
+
+  @override
+  String get translateNow => 'បកប្រែ​ឥឡូវ';
+
+  @override
+  String get tooltipSettingsConfirm => 'យល់ព្រម';
+
+  @override
+  String get hintNoteExample =>
+      'ឧទាហរណ៍៖ ព័ត៌មានលម្អិតអំពីបរិបទ, ពាក្យដូចគ្នា...';
+
+  @override
+  String get hintTagExample => 'ឧទាហរណ៍៖ អាជីវកម្ម, ដំណើរកំសាន្ត...';
+
+  @override
+  String get addNew => 'បន្ថែម​ថ្មី';
+
+  @override
+  String get newNotebookTitle => 'ឈ្មោះ​សៀវភៅ​ថ្មី';
+
+  @override
+  String get enterNameHint => 'បញ្ចូល​ឈ្មោះ';
+
+  @override
+  String get add => 'បន្ថែម';
+
+  @override
+  String get openSettings => 'បើក​ការកំណត់';
+
+  @override
+  String get helpNotebook =>
+      'ជ្រើសរើស​ថត​ដើម្បី​រក្សា​ទុក​លទ្ធផល​ដែល​បាន​បកប្រែ។';
+
+  @override
+  String get helpNote => 'សរសេរ​អត្ថន័យ ឧទាហរណ៍ ឬ​ស្ថានភាព​នៃ​ពាក្យ​ដោយ​សេរី​។';
+
+  @override
+  String get helpTag =>
+      'បញ្ចូល​ពាក្យ​គន្លឹះ​សម្រាប់​ចាត់ថ្នាក់ ឬ​ស្វែងរក​នៅ​ពេល​ក្រោយ​។';
 }

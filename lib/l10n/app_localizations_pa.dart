@@ -12,14 +12,14 @@ class AppLocalizationsPa extends AppLocalizations {
   String get basicWords => 'ਮੂਲ ਸ਼ਬਦ ਰਿਪੋਜ਼ਟਰੀ';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'ਇਨਪੁਟ ਭਾਸ਼ਾ';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'ਅਨੁਵਾਦ ਭਾਸ਼ਾ';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'ਰੋਜ਼ਾਨਾ ਗੱਲਬਾਤ ਨੂੰ ਵਿਦੇਸ਼ੀ ਭਾਸ਼ਾ ਵਿੱਚ ਤੁਰੰਤ ਬਦਲੋ! ਟਾਕੀ ਤੁਹਾਡੀ ਭਾਸ਼ਾਈ ਜ਼ਿੰਦਗੀ ਨੂੰ ਰਿਕਾਰਡ ਕਰੇਗਾ।';
 
   @override
   String get cancel => 'ਰੱਦ ਕਰੋ';
@@ -322,6 +322,12 @@ class AppLocalizationsPa extends AppLocalizations {
   String get gender => 'ਲਿੰਗ';
 
   @override
+  String get labelFilterMaterial => 'ਸਮੱਗਰੀ';
+
+  @override
+  String get labelFilterTag => 'ਟੈਗ';
+
+  @override
   String get generalTags => 'ਆਮ ਟੈਗ';
 
   @override
@@ -354,11 +360,11 @@ class AppLocalizationsPa extends AppLocalizations {
   String get helpJsonTypeWord => 'ਸ਼ਬਦ (Word)';
 
   @override
-  String get helpMode1Desc => 'ਆਵਾਜ਼ ਪਛਾਣੋ, ਅਨੁਵਾਦ ਕਰੋ ਅਤੇ ਨਤੀਜਾ ਸੁਣੋ।';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• ਆਵਾਜ਼: ਸ਼ੁਰੂ/ਬੰਦ ਕਰਨ ਲਈ ਮਾਈਕ ਦਬਾਓ\n• ਟੈਕਸਟ: ਅਨੁਵਾਦ ਲਈ ਸਿੱਧਾ ਟਾਈਪ ਕਰੋ\n• ਆਟੋ-ਸਰਚ: ਸਮਾਨ ਵਾਕਾਂ ਨੂੰ ਲੱਭਦਾ ਹੈ\n• ਅਨੁਵਾਦ: ਤੁਰੰਤ ਅਨੁਵਾਦ ਦਾ ਬਟਨ\n• ਸੁਣੋ: TTS ਲਈ ਸਪੀਕਰ ਆਈਕਨ\n• ਸੇਵ: ਇਤਿਹਾਸ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰਦਾ ਹੈ\n• ਸਾਫ਼ ਕਰੋ: ਸਭ ਰੀਸੈਟ ਕਰੋ (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -382,7 +388,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI ਚੈਟ: ਕਿਸੇ ਪਾਤਰ ਨਾਲ ਅਸਲ ਗੱਲਬਾਤ ਦਾ ਅਭਿਆਸ ਕਰੋ।\n• ਭਾਗੀਦਾਰ ਪ੍ਰਬੰਧਨ: ਤੁਸੀਂ ਆਪਣੀ ਭਾਸ਼ਾ ਅਤੇ AI ਦੀ ਭਾਸ਼ਾ ਨੂੰ ਸੈੱਟ ਕਰਕੇ ਭਾਸ਼ਾ ਵਿੱਚ ਅੰਤਰ ਤੋਂ ਬਚ ਸਕਦੇ ਹੋ।\n• GPS ਸਥਿਤੀ ਨਾਟਕ: ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਟਿਕਾਣੇ ਦੇ ਆਧਾਰ \'ਤੇ ਕੁਦਰਤੀ ਗੱਲਬਾਤ ਦੀ ਸਥਿਤੀ ਬਣਾਓ।\n• ਰਿਕਾਰਡ ਰੱਖੋ: ਸਾਰੀਆਂ ਗੱਲਬਾਤਾਂ ID ਆਧਾਰ \'ਤੇ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸਟੋਰ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ, ਅਤੇ ਰਿਕਾਰਡ ਨਾਮ ਬਦਲਣ \'ਤੇ ਵੀ ਸੁਰੱਖਿਅਤ ਰਹਿੰਦੇ ਹਨ। (TODO: Translate)';
+      '• AI ਚੈਟ: ਹੇਠਲੇ ਟੈਬ ਬਾਰ ਦੇ \'ਚੈਟ\' ਮੀਨੂ ਵਿੱਚ ਵਿਅਕਤੀਆਂ ਨਾਲ ਅਸਲ ਗੱਲਬਾਤ ਦਾ ਅਭਿਆਸ ਕਰੋ\n• ਵਿਅਕਤੀ ਸੈਟਿੰਗ: ਵਿਰੋਧੀ ਲਿੰਗ, ਨਾਮ ਅਤੇ ਭਾਸ਼ਾ ਕੋਡ ਨੂੰ ਸੁਤੰਤਰ ਰੂਪ ਵਿੱਚ ਨਿਰਧਾਰਤ ਕਰੋ\n• GPS ਸਥਿਤੀ ਨਾਟਕ: ਮੌਜੂਦਾ ਸਥਿਤੀ ਨੂੰ ਪਛਾਣ ਕੇ ਸਥਾਨ ਲਈ ਢੁਕਵੇਂ ਗੱਲਬਾਤ ਦੇ ਵਿਸ਼ਿਆਂ ਦੀ ਸਿਫਾਰਸ਼ ਕਰੋ\n• ਦੋ ਭਾਸ਼ਾਵਾਂ: AI ਦੇ ਜਵਾਬ ਅਨੁਵਾਦ ਦੇ ਨਾਲ ਪ੍ਰਦਰਸ਼ਿਤ ਹੁੰਦੇ ਹਨ ਤਾਂ ਜੋ ਸਿੱਖਣ ਦੇ ਪ੍ਰਭਾਵ ਨੂੰ ਵੱਧ ਤੋਂ ਵੱਧ ਕੀਤਾ ਜਾ ਸਕੇ\n• ਰਿਕਾਰਡ ਪ੍ਰਬੰਧਨ: ਪਿਛਲੀ ਗੱਲਬਾਤ ਦੇ ਇਤਿਹਾਸ ਨੂੰ ਫਿਲਟਰ ਕਰੋ ਅਤੇ ਗੱਲਬਾਤ ਦੌਰਾਨ ਕੁਝ ਸੰਦੇਸ਼ਾਂ ਨੂੰ ਸਿੱਖਣ ਸਮੱਗਰੀ ਵਜੋਂ ਸੁਰੱਖਿਅਤ ਕਰੋ';
 
   @override
   String get helpTabJson => 'JSON ਫਾਰਮੈਟ';
@@ -1280,12 +1286,62 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਇਹ ਭਾਸ਼ਾ ਇਸ ਡਿਵਾਈਸ ਦੀਆਂ ਸੈਟਿੰਗਾਂ \'ਤੇ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।';
 
   @override
+  String get homeTab => 'ਘਰ';
+
+  @override
   String get welcomeTitle => 'Talkie ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ!';
 
   @override
   String get welcomeDesc =>
-      'Talkie 80 ਤੋਂ ਵੱਧ ਭਾਸ਼ਾਵਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ ਅਤੇ ਯਾਤਰੀਆਂ ਲਈ ਇੱਕ ਸਮਾਰਟ ਅਨੁਵਾਦ ਸਾਧਨ ਹੈ। AI ਚੈਟ ਰਾਹੀਂ ਆਪਣੇ ਬੋਲਣ ਦੇ ਹੁਨર ਨੂੰ ਵਧਾਓ!';
+      'ਟਾਕੀ ਤੁਹਾਨੂੰ 80 ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਤੁਰੰਤ ਆਪਸੀ ਅਨੁਵਾਦ ਕਰਨ ਅਤੇ ਅਨੰਤ ਦੁਹਰਾਓ ਸਿੱਖਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।';
 
   @override
   String get welcomeButton => 'ਸ਼ੁਰੂ ਕਰੋ';
+
+  @override
+  String get labelDetails => 'ਵੇਰਵੇ ਸੈਟਿੰਗ';
+
+  @override
+  String get translationResult => 'ਅਨੁਵਾਦ ਨਤੀਜਾ';
+
+  @override
+  String get inputContent => 'ਇਨਪੁਟ ਸਮੱਗਰੀ';
+
+  @override
+  String get translateNow => 'ਹੁਣੇ ਅਨੁਵਾਦ ਕਰੋ';
+
+  @override
+  String get tooltipSettingsConfirm => 'ਸੈਟਿੰਗਾਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ';
+
+  @override
+  String get hintNoteExample => 'ਉਦਾਹਰਨ: ਸਥਿਤੀ ਦਾ ਵਰਣਨ, ਸਮਾਨਾਰਥੀ ਸ਼ਬਦ, ਆਦਿ';
+
+  @override
+  String get hintTagExample => 'ਉਦਾਹਰਨ: ਕਾਰੋਬਾਰ, ਯਾਤਰਾ...';
+
+  @override
+  String get addNew => 'ਨਵਾਂ ਸ਼ਾਮਲ ਕਰੋ';
+
+  @override
+  String get newNotebookTitle => 'ਨਵੀਂ ਨੋਟਬੁੱਕ ਦਾ ਸਿਰਲੇਖ';
+
+  @override
+  String get enterNameHint => 'ਨਾਮ ਦਰਜ ਕਰੋ';
+
+  @override
+  String get add => 'ਸ਼ਾਮਲ ਕਰੋ';
+
+  @override
+  String get openSettings => 'ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ';
+
+  @override
+  String get helpNotebook =>
+      'ਅਨੁਵਾਦ ਕੀਤੇ ਨਤੀਜਿਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਫੋਲਡਰ ਚੁਣੋ।';
+
+  @override
+  String get helpNote =>
+      'ਸ਼ਬਦ ਦਾ ਅਰਥ, ਉਦਾਹਰਣਾਂ ਜਾਂ ਸਥਿਤੀਆਂ ਆਦਿ ਨੂੰ ਬੇਝਿਜਕ ਨੋਟ ਕਰੋ।';
+
+  @override
+  String get helpTag => 'ਵਰਗੀਕਰਨ ਜਾਂ ਖੋਜ ਲਈ ਕੀਵਰਡ ਦਰਜ ਕਰੋ।';
 }

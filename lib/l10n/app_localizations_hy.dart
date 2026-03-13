@@ -320,6 +320,12 @@ class AppLocalizationsHy extends AppLocalizations {
   String get gender => 'Սեռ';
 
   @override
+  String get labelFilterMaterial => 'Նյութեր';
+
+  @override
+  String get labelFilterTag => 'Թեգեր';
+
+  @override
   String get generalTags => 'Ընդհանուր պիտակներ';
 
   @override
@@ -357,7 +363,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Լեզվի կարգավորումներ. փոխեք իմ լեզուն և սովորելու լեզուն հավելվածի վերնագիրում կամ ներքևի լեզվի կոճակով:\n• Պարզ մուտքագրում. տեքստի մուտքագրման դեպքում ավտոմատ վերլուծություն (բառ/նախադասություն) և կարգավորումների տարածքի ակտիվացում\n• Խոսափող/ստեղնաշար. սկսեք ձայնի ճանաչումը կամ տեքստի մուտքագրումը հիմնական էկրանի մեծ պատկերակով\n• Մանրամասն կարգավորումներ. մուտքագրման ընթացքում նշեք տվյալների հավաքածուն, պիտակը և իրավիճակային հուշագրությունը ներքևի տարածքում\n• Ավտոմատ որոնում. նման առկա թարգմանությունների իրական ժամանակի հայտնաբերում\n• Լսել. բնիկ խոսնակի արտասանության վերարտադրում (TTS) բարձրախոսի պատկերակով\n• Պահպանել. անմիջապես ավելացրեք ձեր սեփական ուսուցման ցուցակում «Տվյալների պահպանում»-ով';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1289,12 +1295,64 @@ class AppLocalizationsHy extends AppLocalizations {
       'Այս սարքի լռելյայն կարգավորումներն այս լեզվի ձայնային արտածումը չեն ապահովում:';
 
   @override
+  String get homeTab => 'Գլխավոր';
+
+  @override
   String get welcomeTitle => 'Բարի գալուստ Talkie:';
 
   @override
   String get welcomeDesc =>
-      'Talkie-ն աջակցում է ավելի քան 80 լեզուների և թարգմանության խելացի գործիք է ճամփորդների համար: Բարելավեք ձեր խոսակցական հմտությունները AI Chat-ի միջոցով:';
+      'Talkie-ի միջոցով դուք կարող եք անմիջապես թարգմանել և անսահմանափակ սովորել 80 լեզուներից ցանկացածը:';
 
   @override
   String get welcomeButton => 'Սկսել';
+
+  @override
+  String get labelDetails => 'Մանրամասներ';
+
+  @override
+  String get translationResult => 'Թարգմանության արդյունք';
+
+  @override
+  String get inputContent => 'Մուտքագրվող տեքստ';
+
+  @override
+  String get translateNow => 'Թարգմանել հիմա';
+
+  @override
+  String get tooltipSettingsConfirm => 'Հաստատել կարգավորումները';
+
+  @override
+  String get hintNoteExample =>
+      'Օրինակ՝ իրավիճակի բացատրություն, համանուններ և այլն';
+
+  @override
+  String get hintTagExample => 'Օրինակ՝ բիզնես, ճանապարհորդություն...';
+
+  @override
+  String get addNew => 'Ավելացնել նորը';
+
+  @override
+  String get newNotebookTitle => 'Նոր գրքույկի անվանումը';
+
+  @override
+  String get enterNameHint => 'Մուտքագրեք անունը';
+
+  @override
+  String get add => 'Ավելացնել';
+
+  @override
+  String get openSettings => 'Բացել կարգավորումները';
+
+  @override
+  String get helpNotebook =>
+      'Ընտրեք թարգմանված արդյունքները պահպանելու համար գրացուցակը:';
+
+  @override
+  String get helpNote =>
+      'Ազատ զգացեք գրել բառի նշանակությունը, օրինակները կամ իրավիճակները:';
+
+  @override
+  String get helpTag =>
+      'Մուտքագրեք բանալի բառեր հետագայում դասակարգելու կամ որոնելու համար:';
 }

@@ -12,14 +12,14 @@ class AppLocalizationsSq extends AppLocalizations {
   String get basicWords => 'Depo bazë e fjalëve';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Gjuha e hyrjes';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Gjuha e përkthimit';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Konvertoni bisedat e përditshme në një gjuhë të huaj menjëherë! Talkie regjistron jetën tuaj gjuhësore.';
 
   @override
   String get cancel => 'Anulo';
@@ -323,6 +323,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get gender => 'Gjinia';
 
   @override
+  String get labelFilterMaterial => 'Materiale';
+
+  @override
+  String get labelFilterTag => 'Etiketë';
+
+  @override
   String get generalTags => 'Etiketa të përgjithshme';
 
   @override
@@ -356,12 +362,11 @@ class AppLocalizationsSq extends AppLocalizations {
   String get helpJsonTypeWord => 'Fjalë';
 
   @override
-  String get helpMode1Desc =>
-      'Njihni zërin për të përkthyer dhe dëgjoni rezultatin.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Cilësimet e gjuhës: Ndryshoni gjuhën duke shtypur ikonat lart/poshtë\n• Ndërroni Fjalë/Fjali: Ndërroni modalitetin\n• Hyrja zanore: Shtypni ikonën e mikrofonit për të filluar/ndaluar dëgjimin\n• Hyrja e tekstit: Shkruani drejtpërdrejt për të përkthyer\n• Kërkimi automatik: Zbuloni fjali ekzistuese të ngjashme\n• Përkthimi: Përktheni menjëherë duke shtypur butonin e përkthimit\n• Dëgjimi: Luaj me TTS përmes ikonës së altoparlantit\n• Ruajtja: Shto një rekord me \'Ruaj të dhënat\'\n• Fshirja: Rivendosni hyrjen (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -385,7 +390,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Biseda AI: Ushtroni bisedën duke folur në gjuhën tuaj\n• Multi-Personazh: Ndryshoni gjininë/gjuhën/emrin e palës tjetër me menunë mbi flluskën e të folurit\n• Shto partner: Shto një bashkëbisedues të ri (i panjohur) me butonin +\n• GPS: Sitcom i bazuar në vendndodhjen aktuale\n• Ruajtja automatike: Përkthimi dhe ruajtja automatike e përmbajtjes së bisedës (TODO: Translate)';
+      '• Bisedë AI: Praktikoni biseda të vërteta me një personazh në menunë \'Bisedë\' në shiritin e poshtëm të skedave.\n• Cilësimet e personazhit: Specifikoni lirisht gjininë, emrin dhe kodin e gjuhës së tjetrit.\n• Situata GPS: Njoh vendndodhjen time aktuale dhe rekomando tema bisede të përshtatshme për vendin.\n• Dy gjuhë: Përgjigjet e AI shfaqen me përkthime për të maksimizuar efektin e të mësuarit.\n• Menaxhimi i rekordeve: Filtroni historinë e kaluar të bisedave dhe ruani mesazhe specifike nga biseda si materiale studimore.';
 
   @override
   String get helpTabJson => 'Formati JSON';
@@ -1296,12 +1301,63 @@ class AppLocalizationsSq extends AppLocalizations {
       'Ky postim audio nuk mbështetet nga cilësimet e këtij telefoni.';
 
   @override
+  String get homeTab => 'Kryefaqe';
+
+  @override
   String get welcomeTitle => 'Mirë se vini në Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie mbështet mbi 80 gjuhë dhe është një mjet inteligjent përkthimi për udhëtarët. Përmirësoni aftësitë tuaja të të folurit me AI Chat!';
+      'Me Talkie, ju mund të përktheni menjëherë dhe të mësoni pafundësisht midis 80 gjuhëve të ndryshme.';
 
   @override
   String get welcomeButton => 'Fillo';
+
+  @override
+  String get labelDetails => 'Detaje të hollësishme';
+
+  @override
+  String get translationResult => 'Rezultati i përkthimit';
+
+  @override
+  String get inputContent => 'Përmbajtja e futur';
+
+  @override
+  String get translateNow => 'Përkthe tani';
+
+  @override
+  String get tooltipSettingsConfirm => 'Konfirmo cilësimet';
+
+  @override
+  String get hintNoteExample => 'P.sh.: shpjegim konteksti, homonime, etj.';
+
+  @override
+  String get hintTagExample => 'P.sh.: biznes, udhëtime...';
+
+  @override
+  String get addNew => 'Shto të re';
+
+  @override
+  String get newNotebookTitle => 'Emri i koleksionit të ri';
+
+  @override
+  String get enterNameHint => 'Shkruaj emrin';
+
+  @override
+  String get add => 'Shto';
+
+  @override
+  String get openSettings => 'Hap cilësimet';
+
+  @override
+  String get helpNotebook =>
+      'Zgjidhni dosjen ku dëshironi të ruani rezultatet e përkthimit.';
+
+  @override
+  String get helpNote =>
+      'Regjistroni lirisht kuptimin, shembujt ose situatat e fjalëve.';
+
+  @override
+  String get helpTag =>
+      'Fut çelësfjalët për t\'i klasifikuar ose kërkuar më vonë.';
 }

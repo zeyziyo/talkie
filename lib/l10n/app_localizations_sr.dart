@@ -12,14 +12,14 @@ class AppLocalizationsSr extends AppLocalizations {
   String get basicWords => 'Основно складиште речи';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Улазни језик';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Језик превода';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Тренутна конверзија свакодневних разговора на стране језике! Talkie бележи твој језички живот.';
 
   @override
   String get cancel => 'Откажи';
@@ -319,6 +319,12 @@ class AppLocalizationsSr extends AppLocalizations {
   String get gender => 'Пол';
 
   @override
+  String get labelFilterMaterial => 'Материјал';
+
+  @override
+  String get labelFilterTag => 'Ознака';
+
+  @override
   String get generalTags => 'Опште ознаке';
 
   @override
@@ -352,12 +358,11 @@ class AppLocalizationsSr extends AppLocalizations {
   String get helpJsonTypeWord => 'Реч';
 
   @override
-  String get helpMode1Desc =>
-      'Препознајте глас да бисте превели и преслушали резултате.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Подешавање језика: Притисните иконе на врху/дну да бисте променили језик\n• Пребацивање између речи/реченица: Промена режима\n• Гласовни унос: Притисните икону микрофона да бисте започели/зауставили слушање\n• Унос текста: Директно унесите текст за превод\n• Аутоматско претраживање: Откривање сличних постојећих реченица\n• Превод: Притисните дугме за превод за тренутни превод\n• Слушање: Репродукција текста у говор помоћу иконе звучника\n• Чување: Додајте запис помоћу опције „Сачувај податке“\n• Брисање: Иницијализација уноса (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -381,7 +386,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI ћаскање: Вежбајте разговор говорећи на свом језику\n• Вишеструка персона: Можете променити пол/језик/име друге особе помоћу менија изнад облачића за разговор\n• Додавање партнера: Додајте нову особу за разговор (Странац) помоћу дугмета +\n• GPS: Ситуациона драма заснована на вашој тренутној локацији\n• Аутоматско чување: Аутоматски превод и чување садржаја разговора (TODO: Translate)';
+      '• AI ћаскање: Вежбајте разговор из стварног живота са персоном у менију \'Ћаскање\' на доњој траци са картицама\n• Подешавање персоне: Слободно одредите пол, име и код језика друге стране\n• GPS ситуациона драма: Препоручује теме разговора које одговарају месту препознавањем моје тренутне локације\n• 2 језика: Одговори вештачке интелигенције се приказују са преводом како би се максимизовао ефекат учења\n• Управљање записима: Филтрирање претходне историје разговора и чување одређених порука током разговора као материјала за учење';
 
   @override
   String get helpTabJson => 'JSON формат';
@@ -1285,12 +1290,63 @@ class AppLocalizationsSr extends AppLocalizations {
       'Овај уређај не подржава гласовни излаз за овај језик.';
 
   @override
+  String get homeTab => 'Почетна';
+
+  @override
   String get welcomeTitle => 'Dobro došli u Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie podržava preko 80 jezika i pametni je alat za prevođenje za putnike. Unapredite svoje veštine govora kroz AI Chat!';
+      'Sa Talkie-jem, trenutno prevedite i beskonačno učite između željenih jezika od 80 dostupnih.';
 
   @override
   String get welcomeButton => 'Započni';
+
+  @override
+  String get labelDetails => 'Детаљна подешавања';
+
+  @override
+  String get translationResult => 'Резултат превода';
+
+  @override
+  String get inputContent => 'Унети садржај';
+
+  @override
+  String get translateNow => 'Преведи сада';
+
+  @override
+  String get tooltipSettingsConfirm => 'Потврди подешавања';
+
+  @override
+  String get hintNoteExample => 'Нпр.: Контекст, хомоними...';
+
+  @override
+  String get hintTagExample => 'Нпр.: Посао, путовање...';
+
+  @override
+  String get addNew => 'Додај ново';
+
+  @override
+  String get newNotebookTitle => 'Назив нове свеске';
+
+  @override
+  String get enterNameHint => 'Унесите име';
+
+  @override
+  String get add => 'Додај';
+
+  @override
+  String get openSettings => 'Отвори подешавања';
+
+  @override
+  String get helpNotebook =>
+      'Изаберите фасциклу за чување преведених резултата.';
+
+  @override
+  String get helpNote =>
+      'Слободно забележите значење речи, примере или ситуације.';
+
+  @override
+  String get helpTag =>
+      'Унесите кључне речи за каснију класификацију или претрагу.';
 }

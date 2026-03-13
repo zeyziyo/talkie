@@ -318,6 +318,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get gender => 'Nem';
 
   @override
+  String get labelFilterMaterial => 'Anyag';
+
+  @override
+  String get labelFilterTag => 'Címke';
+
+  @override
   String get generalTags => 'Általános címkék';
 
   @override
@@ -354,7 +360,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Nyelvbeállítás: A saját és a tanult nyelv módosítása az alkalmazássáv menüjében vagy az alsó nyelv gombbal\n• Egyszerű bevitel: A szöveg beírásakor automatikusan elemzi (szó/mondat) és aktiválja a beállítási területet\n• Mikrofon/billentyűzet: Hangfelismerés vagy szövegbevitel indítása a főképernyőn található nagy ikonnal\n• Részletes beállítások: Adatgyűjtemény, címke, helyzetjegyzet megadása a bevitel során megjelenő alsó területen\n• Automatikus keresés: Hasonló meglévő fordítások valós idejű észlelése\n• Hallgatás: Anyanyelvi kiejtés (TTS) lejátszása a hangszóró ikonnal\n• Mentés: Azonnali hozzáadás a saját tanulási listádhoz az \'Adatok mentése\' funkcióval';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1281,12 +1287,63 @@ class AppLocalizationsHu extends AppLocalizations {
       'Ez az eszköz alapértelmezés szerint nem támogatja a hangkimenetet ezen a nyelven.';
 
   @override
+  String get homeTab => 'Kezdőlap';
+
+  @override
   String get welcomeTitle => 'Üdvözöljük a Talkie-ban!';
 
   @override
   String get welcomeDesc =>
-      'A Talkie több mint 80 nyelvet támogat, és egy intelligens fordítóeszköz utazók számára. Fejlessze beszédkészségét AI Chat-tel!';
+      'A Talkie segítségével azonnal fordíthatsz 80 nyelv között, és végtelenül ismételheted a tanulást.';
 
   @override
   String get welcomeButton => 'Kezdés';
+
+  @override
+  String get labelDetails => 'Részletes beállítások';
+
+  @override
+  String get translationResult => 'Fordítás eredménye';
+
+  @override
+  String get inputContent => 'Bevitt tartalom';
+
+  @override
+  String get translateNow => 'Fordítás most';
+
+  @override
+  String get tooltipSettingsConfirm => 'Beállítások megerősítése';
+
+  @override
+  String get hintNoteExample => 'Pl.: Kontextus, azonos hangzású szavak stb.';
+
+  @override
+  String get hintTagExample => 'Pl.: Üzleti, utazás...';
+
+  @override
+  String get addNew => 'Új hozzáadása';
+
+  @override
+  String get newNotebookTitle => 'Új jegyzetfüzet neve';
+
+  @override
+  String get enterNameHint => 'Adja meg a nevet';
+
+  @override
+  String get add => 'Hozzáadás';
+
+  @override
+  String get openSettings => 'Beállítások megnyitása';
+
+  @override
+  String get helpNotebook =>
+      'Válaszd ki a mappát, ahová a fordításaid mentésre kerüljenek.';
+
+  @override
+  String get helpNote =>
+      'Jegyezd fel a szavak jelentését, példamondatokat vagy egyéb hasznos információkat.';
+
+  @override
+  String get helpTag =>
+      'Adj meg kulcsszavakat, amikkel később rendszerezheted vagy megkeresheted a jegyzeteket.';
 }

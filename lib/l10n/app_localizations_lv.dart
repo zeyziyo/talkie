@@ -12,14 +12,14 @@ class AppLocalizationsLv extends AppLocalizations {
   String get basicWords => 'Pamata vārdu repozitorijs';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Ievades valoda';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Tulkošanas valoda';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Mirklī pārvērtiet ikdienas sarunas svešvalodā! Talkie ierakstīs jūsu valodas dzīvi.';
 
   @override
   String get cancel => 'Atcelt';
@@ -317,6 +317,12 @@ class AppLocalizationsLv extends AppLocalizations {
   String get gender => 'Dzimums';
 
   @override
+  String get labelFilterMaterial => 'Materiāli';
+
+  @override
+  String get labelFilterTag => 'Atzīme';
+
+  @override
   String get generalTags => 'Vispārīgās atzīmes';
 
   @override
@@ -350,12 +356,11 @@ class AppLocalizationsLv extends AppLocalizations {
   String get helpJsonTypeWord => 'Vārds';
 
   @override
-  String get helpMode1Desc =>
-      'Atpazīst un tulko balsi, ļauj noklausīties rezultātus.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Valodas iestatījumi: mainiet valodu, nospiežot ikonas augšā/apakšā\n• Vārdu/teikumu pārslēgšana: režīmu pārslēgšana\n• Balss ievade: nospiediet mikrofona ikonu, lai sāktu/pārtrauktu klausīšanos\n• Teksta ievade: ievadiet tekstu manuāli tulkošanai\n• Automātiska meklēšana: atrod līdzīgus esošus teikumus\n• Tulkošana: nospiediet pogu Tulkot, lai nekavējoties tulkotu\n• Klausīšanās: atskaņojiet TTS ar skaļruņa ikonu\n• Saglabāšana: pievienojiet ierakstus ar \'Datu saglabāšana\'\n• Notīrīšana: atiestatiet ievadi (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +384,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI tērzēšana: runājiet savā valodā, lai praktizētu sarunu\n• Vairākas personas: mainiet otras puses dzimumu/valodu/vārdu ar izvēlni virs runas burbuļa\n• Partnera pievienošana: pievienojiet jaunu sarunu partneri (Svešinieku) ar pogu +\n• GPS: uz atrašanās vietu balstīti scenāriji\n• Automātiska saglabāšana: automātiska sarunu satura tulkošana un saglabāšana (TODO: Translate)';
+      '• AI tērzēšana: praktizējiet sarunas reālajā dzīvē ar personām izvēlnē \'Tērzēšana\' apakšējā cilnes joslā\n• Personas iestatījumi: brīvi norādiet otras personas dzimumu, vārdu un valodas kodu\n• GPS situācijas spēle: atpazīst manu pašreizējo atrašanās vietu un iesaka tērzēšanas tēmas, kas piemērotas vietai\n• Divvalodu: AI atbildes tiek parādītas kopā ar tulkojumiem, lai maksimāli palielinātu mācību efektu\n• Ierakstu pārvaldība: filtrējiet pagātnes sarunu vēsturi un saglabājiet noteiktus ziņojumus sarunās kā mācību materiālus';
 
   @override
   String get helpTabJson => 'JSON formāts';
@@ -1285,12 +1290,63 @@ class AppLocalizationsLv extends AppLocalizations {
       'Šī ierīce sākotnēji neatbalsta runas izvadi šajā valodā.';
 
   @override
+  String get homeTab => 'Sākums';
+
+  @override
   String get welcomeTitle => 'Laipni lūdzam Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie atbalsta vairāk nekā 80 valodas un ir vieds tulkošanas rīks ceļotājiem. Uzlabojiet savas runas prasmes, izmantojot AI tērzēšanu!';
+      'Ar Talkie varat nekavējoties savstarpēji tulkot 80 valodās un mācīties bezgalīgi.';
 
   @override
   String get welcomeButton => 'Sākt';
+
+  @override
+  String get labelDetails => 'Detalizēti iestatījumi';
+
+  @override
+  String get translationResult => 'Tulkošanas rezultāts';
+
+  @override
+  String get inputContent => 'Ievades saturs';
+
+  @override
+  String get translateNow => 'Tulkot tagad';
+
+  @override
+  String get tooltipSettingsConfirm => 'Apstiprināt iestatījumus';
+
+  @override
+  String get hintNoteExample =>
+      'Piemēram: konteksta skaidrojums, homonīmi utt.';
+
+  @override
+  String get hintTagExample => 'Piemēram: bizness, ceļojumi...';
+
+  @override
+  String get addNew => 'Pievienot jaunu';
+
+  @override
+  String get newNotebookTitle => 'Jaunas piezīmju grāmatiņas nosaukums';
+
+  @override
+  String get enterNameHint => 'Ievadiet vārdu';
+
+  @override
+  String get add => 'Pievienot';
+
+  @override
+  String get openSettings => 'Atvērt iestatījumus';
+
+  @override
+  String get helpNotebook => 'Izvēlieties mapi, kurā saglabāt tulkojumus.';
+
+  @override
+  String get helpNote =>
+      'Brīvi pierakstiet vārda nozīmi, piemērus vai kontekstu.';
+
+  @override
+  String get helpTag =>
+      'Ievadiet atslēgvārdus, lai tos vēlāk varētu kārtot vai meklēt.';
 }

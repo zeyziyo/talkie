@@ -12,14 +12,14 @@ class AppLocalizationsKy extends AppLocalizations {
   String get basicWords => 'Негизги сөз сактагычы';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Киргиз тили';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Котормо тили';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Күнүмдүк сүйлөшүүлөрдү заматта чет тилге которуңуз! Talkie сиздин тил жашооңузду жазып алат.';
 
   @override
   String get cancel => 'Артка';
@@ -321,6 +321,12 @@ class AppLocalizationsKy extends AppLocalizations {
   String get gender => 'Жынысы';
 
   @override
+  String get labelFilterMaterial => 'Материалдар';
+
+  @override
+  String get labelFilterTag => 'Тег';
+
+  @override
   String get generalTags => 'Жалпы тегдер';
 
   @override
@@ -354,12 +360,11 @@ class AppLocalizationsKy extends AppLocalizations {
   String get helpJsonTypeWord => 'Сөз';
 
   @override
-  String get helpMode1Desc =>
-      'Үндү таануу аркылуу которуп, жыйынтыгын угууга болот.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Тилди жөндөө: жогорку/төмөнкү белгини басып тилди өзгөртүү\n• Сөз/сөйлөм которгучу: режимди которуу\n• Үн киргизүү: микрофон белгисин басып угууну баштоо/токтотуу\n• Текст киргизүү: түз киргизип которуу\n• Автоматтык издөө: окшош мурунку сүйлөмдөрдү табуу\n• Которуу: которуу баскычын басып дароо которуу\n• Угуу: спикер белгиси менен TTS ойнотуу\n• Сактоо: \'Маалыматтарды сактоо\' менен жазууну кошуу\n• Тазалоо: киргизүүнү баштапкы абалга келтирүү (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -383,7 +388,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI чат: өзүңүздүн тилиңизде сүйлөп сүйлөшүүнү машыктырыңыз\n• Көп Persona: көбүкчөнүн үстүндөгү меню менен оппоненттин жынысын/тилин/атын өзгөртүүгө болот\n• Өнөктөштү кошуу: + баскычы менен жаңы сүйлөшүү өнөктөшүн (бейтааныш адамды) кошуу\n• GPS: учурдагы жайгашкан жерге негизделген кырдаалдык драма\n• Автоматтык сактоо: сүйлөшүүнүн мазмунун автоматтык которуу жана сактоо (TODO: Translate)';
+      '• AI чат: Төмөнкү өтмөк тилкесиндеги \'Чат\' менюсунан персона менен реалдуу сүйлөшүү практикасын жасаңыз\n• Персонаны жөндөө: Каршылаштын жынысын, атын, тил кодун эркин белгилеңиз\n• GPS жагдайлык оюну: Учурдагы жайгашкан жериңизди таануу менен жерге ылайыктуу сүйлөшүү темаларын сунуштайт\n• 2 тил: AI жооптору котормо менен көрсөтүлүп, окуу эффектиси максималдуу болот\n• Жазууларды башкаруу: Мурунку сүйлөшүү таржымалын чыпкалоо жана сүйлөшүү учурунда белгилүү билдирүүлөрдү окуу материалы катары сактоо';
 
   @override
   String get helpTabJson => 'JSON форматы';
@@ -1290,12 +1295,62 @@ class AppLocalizationsKy extends AppLocalizations {
       'Бул түзмөктүн жөндөөлөрү бул тилде үн чыгарууну колдобойт.';
 
   @override
+  String get homeTab => 'Башкы бет';
+
+  @override
   String get welcomeTitle => 'Talkie-ге кош келиңиз!';
 
   @override
   String get welcomeDesc =>
-      'Talkie 80ден ашык тилди колдойт жана саяхатчылар үчүн акылдуу котормо куралы. AI Chat менен сүйлөө жөндөмүңүздү өнүктүрүңүз!';
+      'Talkie сизге 80 тилдин ичинен каалаган тилдерде заматта өз ара которууга жана чексиз кайталоо менен үйрөнүүгө мүмкүндүк берет.';
 
   @override
   String get welcomeButton => 'Баштоо';
+
+  @override
+  String get labelDetails => 'Толук маалыматтар';
+
+  @override
+  String get translationResult => 'Которулган натыйжа';
+
+  @override
+  String get inputContent => 'Киргизүү тексти';
+
+  @override
+  String get translateNow => 'Азыр которуу';
+
+  @override
+  String get tooltipSettingsConfirm => 'Жөндөөлөрдү ырастоо';
+
+  @override
+  String get hintNoteExample => 'Мисалы: контекст, омонимдер ж.б.';
+
+  @override
+  String get hintTagExample => 'Мисалы: бизнес, саякат...';
+
+  @override
+  String get addNew => 'Жаңысын кошуу';
+
+  @override
+  String get newNotebookTitle => 'Жаңы дептердин аталышы';
+
+  @override
+  String get enterNameHint => 'Атын киргизиңиз';
+
+  @override
+  String get add => 'Кошуу';
+
+  @override
+  String get openSettings => 'Жөндөөлөрдү ачуу';
+
+  @override
+  String get helpNotebook =>
+      'Которулган натыйжаларды сактай турган папканы тандаңыз.';
+
+  @override
+  String get helpNote => 'Сөздүн маанисин, мисалдарын же контекстти жазыңыз.';
+
+  @override
+  String get helpTag =>
+      'Кийинчерээк классификациялоо же издөө үчүн ачкыч сөздөрдү киргизиңиз.';
 }

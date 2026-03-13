@@ -12,14 +12,14 @@ class AppLocalizationsNl extends AppLocalizations {
   String get basicWords => 'Basis opslagplaats voor woorden';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Invoertaal';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Vertalingstaal';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Zet alledaagse gesprekken direct om in een vreemde taal! Talkie houdt uw taalleven bij.';
 
   @override
   String get cancel => 'Annuleren';
@@ -321,6 +321,12 @@ class AppLocalizationsNl extends AppLocalizations {
   String get gender => 'Geslacht';
 
   @override
+  String get labelFilterMaterial => 'Materiaal';
+
+  @override
+  String get labelFilterTag => 'Tag';
+
+  @override
   String get generalTags => 'Algemene tags';
 
   @override
@@ -354,12 +360,11 @@ class AppLocalizationsNl extends AppLocalizations {
   String get helpJsonTypeWord => 'Woord';
 
   @override
-  String get helpMode1Desc =>
-      'Herken stem, vertaal naar doeltaal en luister naar resultaat.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Spraak: Tik microfoon om te starten/stoppen\n• Tekst: Typ direct om te vertalen\n• Auto-Zoek: Detecteert bestaande zinnen\n• Vertaal: Tik knop voor directe vertaling\n• Luister: Speaker icoon voor TTS\n• Opslaan: \'Data Opslaan\' voegt toe aan geschiedenis\n• Wissen: Reset alle invoer (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -383,7 +388,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI Chat: Oefen realistische gesprekken met persona\'s.\n• Deelnemersbeheer: Stel je eigen taal en de taal van de AI in om taalverschillen te voorkomen.\n• GPS-rollenspel: Creëer natuurlijke gespreksscenario\'s op basis van je huidige locatie.\n• Geschiedenis behouden: Alle gesprekken worden veilig opgeslagen op basis van ID, zelfs als je de naam wijzigt, blijft de geschiedenis behouden. (TODO: Translate)';
+      '• AI-chat: oefen praktische gesprekken met persona\'s in het \'Chat\'-menu op de onderste tabbladbalk\n• Persona-instellingen: specificeer vrijelijk het geslacht, de naam en de taalcode van de andere partij\n• GPS-situatiespel: herkent mijn huidige locatie en beveelt gespreksonderwerpen aan die passen bij de locatie\n• Tweetalig: de antwoorden van de AI worden weergegeven met vertalingen om het leereffect te maximaliseren\n• Recordbeheer: filter de geschiedenis van eerdere gesprekken en sla specifieke berichten tijdens het gesprek op als leermateriaal';
 
   @override
   String get helpTabJson => 'JSON Formaat';
@@ -1284,12 +1289,63 @@ class AppLocalizationsNl extends AppLocalizations {
       'Deze taal wordt niet standaard ondersteund voor spraakuitvoer op dit apparaat.';
 
   @override
+  String get homeTab => 'Start';
+
+  @override
   String get welcomeTitle => 'Welkom bij Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie ondersteunt meer dan 80 talen en is een slimme vertaaltool voor reizigers. Verbeter je spreekvaardigheid met AI Chat!';
+      'Met Talkie kun je direct heen en weer vertalen tussen 80 talen en eindeloos herhalen om te leren.';
 
   @override
   String get welcomeButton => 'Aan de slag';
+
+  @override
+  String get labelDetails => 'Gedetailleerde instellingen';
+
+  @override
+  String get translationResult => 'Vertaling';
+
+  @override
+  String get inputContent => 'Invoer';
+
+  @override
+  String get translateNow => 'Vertaal nu';
+
+  @override
+  String get tooltipSettingsConfirm => 'Instellingen bevestigen';
+
+  @override
+  String get hintNoteExample => 'Bijv.: context, homoniemen, enz.';
+
+  @override
+  String get hintTagExample => 'Bijv.: Zakelijk, reizen...';
+
+  @override
+  String get addNew => 'Nieuwe toevoegen';
+
+  @override
+  String get newNotebookTitle => 'Nieuwe mapnaam';
+
+  @override
+  String get enterNameHint => 'Voer een naam in';
+
+  @override
+  String get add => 'Toevoegen';
+
+  @override
+  String get openSettings => 'Instellingen openen';
+
+  @override
+  String get helpNotebook =>
+      'Selecteer de map waarin u de vertalingen wilt opslaan.';
+
+  @override
+  String get helpNote =>
+      'Noteer vrijelijk de betekenis, voorbeelden of situaties van een woord.';
+
+  @override
+  String get helpTag =>
+      'Voer trefwoorden in om later te categoriseren of te zoeken.';
 }

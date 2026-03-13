@@ -322,6 +322,12 @@ class AppLocalizationsCy extends AppLocalizations {
   String get gender => 'Rhyw';
 
   @override
+  String get labelFilterMaterial => 'Deunyddiau';
+
+  @override
+  String get labelFilterTag => 'Tagiau';
+
+  @override
   String get generalTags => 'Tagiau Cyffredinol';
 
   @override
@@ -355,11 +361,12 @@ class AppLocalizationsCy extends AppLocalizations {
   String get helpJsonTypeWord => 'Gair';
 
   @override
-  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+  String get helpMode1Desc =>
+      'Adnabod llais neu fewnbynnu testun i gyfieithu ar unwaith, a\'i gadw i\'r rhestr astudio.';
 
   @override
   String get helpMode1Details =>
-      '• Gosodiadau Iaith: Newidiwch fy iaith a\'r iaith ddysgu gyda\'r ddewislen bar app neu\'r botwm iaith ar y gwaelod\n• Mewnbwn Syml: Dadansoddir testun yn awtomatig (gair/brawddeg) a gosod ardal yn cael ei actifadu wrth fewnbynnu\n• Meicroffon/Bysellfwrdd: Dechreuwch adnabod llais neu fewnbynnu testun gyda\'r eicon mawr ar y prif sgrin\n• Gosodiadau Manwl: Nodi llyfr ffynhonnell, tagiau, a nodyn sefyllfa yn yr ardal isaf sy\'n ymddangos wrth fewnbynnu\n• Chwilio Awtomatig: Canfod cyfieithiadau presennol tebyg mewn amser real\n• Gwrando: Chwarae ynganiad brodor (TTS) gyda\'r eicon siaradwr\n• Cadw: Ychwanegu ar unwaith at eich rhestr ddysgu eich hun gyda \'Cadw Data\'';
+      '• Gosod iaith: Gwiriwch fy iaith a\'r iaith rydych chi\'n ei hastudio gyda\'r botwm iaith ar frig y sgrin gartref, a gallwch newid yr iaith astudio.\n• Mewnbwn syml: Mewnbwn ar unwaith trwy\'r meicroffon mawr a\'r ffenestr destun yn y canol.\n• Gwirio gosodiadau: Ar ôl gorffen mewnbynnu, pwyswch y botwm gwirio glas ar y dde. Ymddengys ffenestr gosodiadau manwl.\n• Gosodiadau manwl: Yn y deialog sy\'n ymddangos, gallwch nodi casgliad data i\'w gadw, sylwadau (nodiadau), a thagiau.\n• Cyfieithu nawr: Ar ôl gorffen y gosodiadau, pwyswch y botwm cyfieithu gwyrdd i wneud i\'r deallusrwydd artiffisial gyfieithu ar unwaith.\n• Chwilio awtomatig: Yn canfod cyfieithiadau presennol tebyg mewn amser real wrth fewnbynnu a\'u dangos.\n• Gwrando a chadw: Gwrandewch ar yr ynganiad gyda\'r eicon siaradwr ar waelod y canlyniad cyfieithu, a\'i ychwanegu at y rhestr astudio trwy \'Cadw data\'.';
 
   @override
   String get helpMode2Desc =>
@@ -1290,12 +1297,63 @@ class AppLocalizationsCy extends AppLocalizations {
       'Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon.';
 
   @override
+  String get homeTab => 'Cartref';
+
+  @override
   String get welcomeTitle => 'Croeso i Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Mae Talkie yn cefnogi dros 80 o ieithoedd ac yn offeryn cyfieithu craff ar gyfer teithwyr. Gwella dy sgiliau siarad gyda Sgwrs AI!';
+      'Gyda Talkie, gallwch gyfieithu ar unwaith rhwng yr ieithoedd o\'ch dewis o 80 o ieithoedd a dysgu dro ar ôl tro.';
 
   @override
   String get welcomeButton => 'Dechrau';
+
+  @override
+  String get labelDetails => 'Gosodiadau Manwl';
+
+  @override
+  String get translationResult => 'Canlyniad Cyfieithu';
+
+  @override
+  String get inputContent => 'Cynnwys Mewnbwn';
+
+  @override
+  String get translateNow => 'Cyfieithu Nawr';
+
+  @override
+  String get tooltipSettingsConfirm => 'Cadarnhau Gosodiadau';
+
+  @override
+  String get hintNoteExample => 'E.e.: Cyd-destun, amwysedd, ac ati';
+
+  @override
+  String get hintTagExample => 'E.e.: Busnes, Teithio...';
+
+  @override
+  String get addNew => 'Ychwanegu Newydd';
+
+  @override
+  String get newNotebookTitle => 'Enw Llyfr Nodiadau Newydd';
+
+  @override
+  String get enterNameHint => 'Rhowch enw';
+
+  @override
+  String get add => 'Ychwanegu';
+
+  @override
+  String get openSettings => 'Agor Gosodiadau';
+
+  @override
+  String get helpNotebook =>
+      'Dewiswch y ffolder i gadw\'r canlyniadau wedi\'u cyfieithu.';
+
+  @override
+  String get helpNote =>
+      'Cofnodwch ystyr geiriau, enghreifftiau, sefyllfaoedd, ac ati yn rhydd.';
+
+  @override
+  String get helpTag =>
+      'Rhowch eiriau allweddol i\'w dosbarthu neu i chwilio amdanynt yn nes ymlaen.';
 }

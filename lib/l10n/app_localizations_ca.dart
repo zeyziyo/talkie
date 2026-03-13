@@ -320,6 +320,12 @@ class AppLocalizationsCa extends AppLocalizations {
   String get gender => 'Gènere';
 
   @override
+  String get labelFilterMaterial => 'Material';
+
+  @override
+  String get labelFilterTag => 'Etiqueta';
+
+  @override
   String get generalTags => 'Etiquetes generals';
 
   @override
@@ -353,11 +359,12 @@ class AppLocalizationsCa extends AppLocalizations {
   String get helpJsonTypeWord => 'Paraula';
 
   @override
-  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+  String get helpMode1Desc =>
+      'Reconeix la veu o introdueix text per traduir a l\'instant i desar-ho a la llista d\'aprenentatge.';
 
   @override
   String get helpMode1Details =>
-      '• Configuració d\'idioma: Canvia el teu idioma i l\'idioma d\'aprenentatge al menú de la barra d\'aplicacions o al botó d\'idioma inferior.\n• Entrada senzilla: Analitza automàticament l\'entrada de text (paraula/frase) i activa l\'àrea de configuració.\n• Micròfon/Teclat: Inicia el reconeixement de veu o l\'entrada de text amb la icona gran a la pantalla principal.\n• Configuració detallada: Especifica la col·lecció de materials, les etiquetes i les notes de situació a l\'àrea inferior que apareix durant l\'entrada.\n• Cerca automàtica: Detecta traduccions existents similars en temps real.\n• Escolta: Reprodueix la pronunciació nativa (TTS) amb la icona de l\'altaveu.\n• Desa: Afegeix immediatament a la teva pròpia llista d\'aprenentatge amb \'Desa les dades\'';
+      '• Configuració d\'idioma: Comproveu el meu idioma i l\'idioma que estic aprenent amb el botó d\'idioma a la part superior de la pantalla d\'inici i canvieu l\'idioma d\'aprenentatge.\n• Entrada senzilla: Introduïu-ho immediatament mitjançant el micròfon gran i la finestra de text al centre.\n• Comproveu la configuració: Un cop hàgiu acabat d\'introduir-ho, premeu el botó de marca de verificació blau a la dreta. Apareixerà una finestra de configuració detallada.\n• Configuració detallada: Podeu especificar la col·lecció de materials, les anotacions (notes) i les etiquetes per desar al diàleg que apareix.\n• Tradueix ara: Un cop hàgiu acabat de configurar, feu clic al botó de traducció verd i la intel·ligència artificial realitzarà la traducció immediatament.\n• Cerca automàtica: Detecta i mostra traduccions existents similars en temps real durant l\'entrada.\n• Escolteu i deseu: Escolteu la pronunciació amb la icona de l\'altaveu a la part inferior dels resultats de la traducció i afegiu-la a la llista d\'aprenentatge mitjançant \'Desa les dades\'.';
 
   @override
   String get helpMode2Desc =>
@@ -1296,12 +1303,63 @@ class AppLocalizationsCa extends AppLocalizations {
       'La configuració predeterminada d\'aquest dispositiu no admet la sortida de veu per a aquest idioma.';
 
   @override
+  String get homeTab => 'Inici';
+
+  @override
   String get welcomeTitle => 'Benvingut a Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie admet més de 80 idiomes i és una eina intel·ligent de traducció per a viatgers i aprenents. Millora les teves habilitats de parla amb el xat d\'IA!';
+      'Amb Talkie pots traduir instantàniament entre 80 idiomes i aprendre de manera il·limitada.';
 
   @override
   String get welcomeButton => 'Comença';
+
+  @override
+  String get labelDetails => 'Configuració detallada';
+
+  @override
+  String get translationResult => 'Resultat de la traducció';
+
+  @override
+  String get inputContent => 'Contingut d\'entrada';
+
+  @override
+  String get translateNow => 'Tradueix ara';
+
+  @override
+  String get tooltipSettingsConfirm => 'Confirma la configuració';
+
+  @override
+  String get hintNoteExample => 'Ex: Context, homònims, etc.';
+
+  @override
+  String get hintTagExample => 'Ex: Negocis, viatges...';
+
+  @override
+  String get addNew => 'Afegeix-ne un de nou';
+
+  @override
+  String get newNotebookTitle => 'Nom del nou quadern';
+
+  @override
+  String get enterNameHint => 'Introdueix el nom';
+
+  @override
+  String get add => 'Afegeix';
+
+  @override
+  String get openSettings => 'Obre la configuració';
+
+  @override
+  String get helpNotebook =>
+      'Selecciona la carpeta on guardar els resultats traduïts.';
+
+  @override
+  String get helpNote =>
+      'Anota lliurement el significat de les paraules, exemples o situacions.';
+
+  @override
+  String get helpTag =>
+      'Introdueix paraules clau per classificar o cercar més tard.';
 }

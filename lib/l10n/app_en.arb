@@ -1,5 +1,16 @@
 {
   "@@locale": "en",
+  "basicWords": "Basic Word Repository",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "inputLanguage": "Input Language",
+  "translationLanguage": "Translation Language",
+  "simplifiedGuidance": "Instant translation for your daily conversations! Talkie documents your language journey.",
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "accuracy": "Accuracy",
   "ttsMissing": "The voice engine for this language is not installed on your device.",
   "ttsInstallGuide": "Please install the language data in Android Settings > Google TTS.",
@@ -25,17 +36,6 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Basic Word Repository",
-  "basicWords": "Basic Word Repository",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Input Language",
-  "translationLanguage": "Translation Language",
-  "simplifiedGuidance": "Instant translation for your daily conversations! Talkie documents your language journey.",
-  "cancel": "Cancel",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "caseObject": "Object",
   "casePossessive": "Possessive",
   "casePossessivePronoun": "Possessive Pronoun",
@@ -179,6 +179,8 @@
   "gameModeTitle": "Game Mode",
   "gameOver": "Game Over",
   "gender": "Gender",
+  "labelFilterMaterial": "Study Material",
+  "labelFilterTag": "Tags",
   "generalTags": "General Tags",
   "getMaterials": "Get Materials",
   "good": "Good",
@@ -189,8 +191,8 @@
   "helpJsonTypeDialogue": "Dialogue",
   "helpJsonTypeSentence": "Sentence",
   "helpJsonTypeWord": "Word",
-  "helpMode1Desc": "Translate your voice or text instantly and save them to your training list.",
-  "helpMode1Details": "• Language Settings: Change Source and Target languages via Appbar menu or bottom buttons.\n• Simple Input: Start instantly via the central Mic icon or direct text input.\n• Auto-Analysis: Auto-analyzes text (Word/Sentence) and activates settings on typing.\n• Advanced Settings: Specify materials, tags, and context notes in the bottom area during input.\n• Smart Search: Real-time detection of similar existing translations.\n• TTS Playback: Listen to native speaker pronunciation (TTS).\n• Save: Instantly add to your personalized study list via 'Save Data'.",
+  "helpMode1Desc": "Translate speech or text instantly and save them to your study list.",
+  "helpMode1Details": "• Language Settings: You can verify your native language and current learning language, and change the learning language via the top-bar language buttons.\n• Simple Input: Start instantly via the central large Mic or text input box.\n• Confirm Settings: After input, tap the blue check button on the right to open the Detailed Settings dialog.\n• Detailed Settings: Configure the material set, note (context), and tags for saving in the dialog.\n• Translate Now: Tap the green translation button after configuration to perform AI translation.\n• Auto-Search: Detects similar existing translations in real-time as you type.\n• Shadowing & Saving: Listen to pronunciation via the speaker icon and tap 'Save Data' to add to your study list.",
   "helpMode2Desc": "Review saved words and sentences with hide/reveal functionality.",
   "helpMode2Details": "• Materials: Access 'Select Material Set' or 'Online Library' via the top-right menu (⋮).\n• Flip Card: Use 'Show/Hide' to check translations.\n• Listen: Tap speaker icons for pronunciation.\n• Mastery: Mark items as studied with the checkmark (V).\n• Delete: Long-press a card to remove it from your records.\n• Filter: Real-time smart search and filter by tags or starting letters.",
   "helpMode3Desc": "Practice your pronunciation by listening to and shadowing sentences.",
@@ -285,7 +287,7 @@
   "kakaoContinue": "Continue with Kakao",
   "labelLangCode": "Language Code (e.g. en-US, ko-KR)",
   "labelName": "Name",
-  "labelNote": "Note",
+  "labelNote": "Enter Note",
   "labelPOS": "Part of Speech",
   "labelRole": "Role",
   "labelSentence": "Sentence",
@@ -657,7 +659,7 @@
   },
   "tabWord": "word",
   "tagFormal": "Formal",
-  "tagSelection": "Select Tags",
+  "tagSelection": "Enter Tags",
   "targetLanguage": "Target Language",
   "@targetLanguage": {
     "description": "Target language label"
@@ -774,9 +776,24 @@
   "wordDefenseTitle": "Word Defense",
   "wordModeLabel": "Word Mode",
   "yourPronunciation": "Your Pronunciation",
-  "ttsUnsupportedNatively": "This device does not natively support voice output for this language."
-,
+  "ttsUnsupportedNatively": "This device does not natively support voice output for this language.",
+  "homeTab": "Home",
   "welcomeTitle": "Welcome to Talkie!",
   "welcomeDesc": "With Talkie, you can instantly translate between any of the 80 supported languages and practice them with unlimited repetition.",
-  "welcomeButton": "Get Started"
+  "welcomeButton": "Get Started",
+  "labelDetails": "Detail Settings",
+  "translationResult": "Translation Result",
+  "inputContent": "Input Content",
+  "translateNow": "Translate Now",
+  "tooltipSettingsConfirm": "Confirm Settings",
+  "hintNoteExample": "e.g. context, homonyms...",
+  "hintTagExample": "e.g. business, travel...",
+  "addNew": "Add New",
+  "newNotebookTitle": "New Material Set Name",
+  "enterNameHint": "Enter name",
+  "add": "Add",
+  "openSettings": "Open Settings",
+  "helpNotebook": "Select a folder to save translated results.",
+  "helpNote": "Record meanings, examples, or context freely.",
+  "helpTag": "Enter keywords for categorization or searching later."
 }

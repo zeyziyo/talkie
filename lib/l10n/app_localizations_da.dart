@@ -314,6 +314,12 @@ class AppLocalizationsDa extends AppLocalizations {
   String get gender => 'Køn';
 
   @override
+  String get labelFilterMaterial => 'Materiale';
+
+  @override
+  String get labelFilterTag => 'Tag';
+
+  @override
   String get generalTags => 'Generelle tags';
 
   @override
@@ -350,7 +356,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Sprogindstillinger: Skift mit sprog og læringssprog med app-bar-menuen eller den nederste sprogknap\n• Enkel input: Analyserer automatisk (ord/sætning) og aktiverer indstillingsområdet, når du indtaster tekst\n• Mikrofon/tastatur: Start stemmegenkendelse eller tekstinput med det store ikon på hovedskærmen\n• Detaljerede indstillinger: Angiv databog, tag og situationsnotat i det nederste område, der vises under input\n• Automatisk søgning: Registrerer lignende eksisterende oversættelser i realtid\n• Lyt: Afspil indfødt udtale (TTS) med højttalerikonet\n• Gem: Tilføj straks til din egen læringsliste med \'Gem data\'';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1272,12 +1278,63 @@ class AppLocalizationsDa extends AppLocalizations {
       'Denne enheds standardindstillinger understøtter ikke tekst-til-tale for dette sprog.';
 
   @override
+  String get homeTab => 'Hjem';
+
+  @override
   String get welcomeTitle => 'Velkommen til Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie understøtter over 80 sprog og er et smart værktøj til oversættelse for rejsende. Forbedr dine talefærdigheder med AI-chat!';
+      'Med Talkie kan du øjeblikkeligt oversætte og uendeligt gentage læring mellem 80 sprog.';
 
   @override
   String get welcomeButton => 'Kom i gang';
+
+  @override
+  String get labelDetails => 'Detaljerede indstillinger';
+
+  @override
+  String get translationResult => 'Oversættelsesresultat';
+
+  @override
+  String get inputContent => 'Indtastet indhold';
+
+  @override
+  String get translateNow => 'Oversæt nu';
+
+  @override
+  String get tooltipSettingsConfirm => 'Bekræft indstillinger';
+
+  @override
+  String get hintNoteExample => 'F.eks. kontekst, homonymer osv.';
+
+  @override
+  String get hintTagExample => 'F.eks. Virksomhed, Rejser...';
+
+  @override
+  String get addNew => 'Tilføj ny';
+
+  @override
+  String get newNotebookTitle => 'Nyt notesbogsnavn';
+
+  @override
+  String get enterNameHint => 'Indtast navn';
+
+  @override
+  String get add => 'Tilføj';
+
+  @override
+  String get openSettings => 'Åbn indstillinger';
+
+  @override
+  String get helpNotebook =>
+      'Vælg den mappe, hvor de oversatte resultater skal gemmes.';
+
+  @override
+  String get helpNote =>
+      'Notér frit ordets betydning, eksempler eller situationer.';
+
+  @override
+  String get helpTag =>
+      'Indtast nøgleord til senere kategorisering eller søgning.';
 }

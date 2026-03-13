@@ -319,6 +319,12 @@ class AppLocalizationsAz extends AppLocalizations {
   String get gender => 'Cins';
 
   @override
+  String get labelFilterMaterial => 'Materiallar';
+
+  @override
+  String get labelFilterTag => 'Etiketlər';
+
+  @override
   String get generalTags => 'Ümumi etiketlər';
 
   @override
@@ -352,11 +358,12 @@ class AppLocalizationsAz extends AppLocalizations {
   String get helpJsonTypeWord => 'Söz';
 
   @override
-  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+  String get helpMode1Desc =>
+      'Səsi tanıyaraq və ya mətn daxil edərək dərhal tərcümə edin və öyrənmə siyahısına əlavə edin.';
 
   @override
   String get helpMode1Details =>
-      '• Dil seçimi: Tətbiq menyusu və ya aşağıdakı dil düymələri ilə öz dilinizi və öyrənmək istədiyiniz dili dəyişdirin\n• Sadə giriş: Mətn daxil edildikdə avtomatik analiz (söz / cümlə) və tənzimləmə sahəsinin aktivləşdirilməsi\n• Mikrofon / klaviatura: Əsas ekrandakı böyük işarə ilə səs tanıma və ya mətn daxil etməyə başlayın\n• Ətraflı parametrlər: Giriş zamanı görünən aşağı sahədə məlumat kitabçası, etiket və vəziyyət qeydlərini təyin edin\n• Avtomatik axtarış: Oxşar mövcud tərcümələrin real vaxtda aşkarlanması\n• Dinləmək: Dinamik işarəsi ilə ana dilində tələffüzün (TTS) oxunması\n• Saxlamaq: \'Məlumatları saxla\' ilə dərhal öz öyrənmə siyahınıza əlavə edin';
+      '• Dil seçimi: Ana ekranın yuxarısındakı dil düyməsi ilə öz dilinizi və öyrəndiyiniz dili yoxlaya və öyrənmə dilinizi dəyişə bilərsiniz.\n• Sadə giriş: Mərkəzdəki böyük mikrofon və mətn pəncərəsi vasitəsilə dərhal daxil edin.\n• Parametrləri yoxlayın: Giriş bitdikdən sonra sağdakı mavi işarə düyməsini basın. Ətraflı parametrlər pəncərəsi görünəcəkdir.\n• Ətraflı parametrlər: Açılan dialoqda yadda saxlanılacaq məlumat kitabını, şərhi (qeyd) və teqləri təyin edə bilərsiniz.\n• İndi tərcümə edin: Parametrləri tamamladıqdan sonra yaşıl tərcümə düyməsini basdıqda süni intellekt dərhal tərcüməni həyata keçirəcəkdir.\n• Avtomatik axtarış: Daxil etmə zamanı oxşar mövcud tərcümələri real vaxtda aşkar edərək göstərir.\n• Dinləyin və yadda saxlayın: Tərcümə nəticəsinin altındakı dinamik ikonası ilə tələffüzü dinləyin və \'Məlumatları yadda saxla\' vasitəsilə öyrənmə siyahısına əlavə edin.';
 
   @override
   String get helpMode2Desc =>
@@ -1286,12 +1293,63 @@ class AppLocalizationsAz extends AppLocalizations {
       'Bu cihazda bu dil üçün doğma səs dəstəyi yoxdur.';
 
   @override
+  String get homeTab => 'Əsas Səhifə';
+
+  @override
   String get welcomeTitle => 'Talkie-yə xoş gəlmisiniz!';
 
   @override
   String get welcomeDesc =>
-      'Talkie 80-dən çox dili dəstəkləyir və səyahətçilər üçün ağıllı tərcümə və söhbət öyrənmə vasitəsidir. AI Chat ilə danışıq bacarıqlarınızı artırın!';
+      'Talkie ilə 80 dildən istədiyiniz arasında ani qarşılıqlı tərcümə və sonsuz təkrarlama öyrənməsi mümkündür.';
 
   @override
   String get welcomeButton => 'Başla';
+
+  @override
+  String get labelDetails => 'Ətraflı parametrlər';
+
+  @override
+  String get translationResult => 'Tərcümə nəticəsi';
+
+  @override
+  String get inputContent => 'Daxil edilən məzmun';
+
+  @override
+  String get translateNow => 'İndi tərcümə et';
+
+  @override
+  String get tooltipSettingsConfirm => 'Parametrləri təsdiqlə';
+
+  @override
+  String get hintNoteExample => 'Nümunə: Kontekst, omonimlər və s.';
+
+  @override
+  String get hintTagExample => 'Nümunə: Biznes, Səyahət...';
+
+  @override
+  String get addNew => 'Yeni əlavə et';
+
+  @override
+  String get newNotebookTitle => 'Yeni qeyd dəftərinin adı';
+
+  @override
+  String get enterNameHint => 'Ad daxil edin';
+
+  @override
+  String get add => 'Əlavə et';
+
+  @override
+  String get openSettings => 'Parametrləri aç';
+
+  @override
+  String get helpNotebook =>
+      'Tərcümə olunmuş nəticələri saxlamaq üçün qovluq seçin.';
+
+  @override
+  String get helpNote =>
+      'Sözün mənasını, nümunələrini və ya vəziyyətlərini sərbəst şəkildə qeyd edin.';
+
+  @override
+  String get helpTag =>
+      'Sonra təsnif etmək və ya axtarmaq üçün açar sözlər daxil edin.';
 }

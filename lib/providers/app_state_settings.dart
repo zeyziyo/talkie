@@ -95,22 +95,14 @@ extension AppStateSettings on AppState {
   }
 
   void swapLanguages() {
-    final temp = _sourceLang;
-    _sourceLang = _targetLang;
-    _targetLang = temp;
+    _isDirectionSwapped = !_isDirectionSwapped;
     
-    _saveSettings(); // Save persistence
-    
-     // Sync Review Tab Filter - ENABLED
-     _selectedReviewLanguage = _targetLang;
-    
-    // Clear texts as direction flipped
+    // Clear texts as direction flipped (keep this behavior)
     clearTexts();
     
-    // Reload Mode 2/3 for consistency
-    loadStudyRecords(); // Keep current list
-    selectMaterial(null);
-    loadStudyMaterials();
+    // Note: Do not load/sync Mode 2/3 here or save physical preference
+    // because this is only a temporary translation direction flip for the UI.
+    // Base languages remain unchanged.
     
     notify();
   }

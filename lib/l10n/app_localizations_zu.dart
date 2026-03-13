@@ -12,14 +12,14 @@ class AppLocalizationsZu extends AppLocalizations {
   String get basicWords => 'Inqolobane Yamagama Ayisisekelo';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Ulimi wokufaka';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Ulimi lokuhumusha';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Guqula izingxoxo zansuku zonke zibe izilimi zangaphandle ngokushesha! I-Talkie izorekhoda impilo yakho yezilimi.';
 
   @override
   String get cancel => 'Khansela';
@@ -321,6 +321,12 @@ class AppLocalizationsZu extends AppLocalizations {
   String get gender => 'Ubulili';
 
   @override
+  String get labelFilterMaterial => 'Izinsiza';
+
+  @override
+  String get labelFilterTag => 'Ithegi';
+
+  @override
   String get generalTags => 'Amathegi ajwayelekile';
 
   @override
@@ -354,12 +360,11 @@ class AppLocalizationsZu extends AppLocalizations {
   String get helpJsonTypeWord => 'Igama (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'Qaphela izwi lakho ukuhumusha, bese ulalela imiphumela.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Izilungiselelo Zolimi: Shintsha ulimi ngokuthepha izithonjana ezingaphezulu/ezansi\n• Ukuguqula Igama/Umusho: Shintsha izindlela\n• Okokufaka Kwezwi: Thepha isithonjana semakrofoni ukuze uqale/umise ukulalela\n• Okokufaka Kombhalo: Faka ngokuqondile ukuze uhumushe\n• Ukusesha Okuzenzakalelayo: Thola imisho ekhona efanayo\n• Humusha: Thepha inkinobho yokuhumusha ukuze uhumushe ngokushesha\n• Lalela: Dlala i-TTS ngesithonjana sesipika\n• Londoloza: Engeza amarekhodi \'ngokulondoloza idatha\'\n• Sula: Qalisa kabusha okokufaka (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -383,7 +388,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Ingxoxo ye-AI: Khuluma ngolimi lwakho ukuze uzilolonge ingxoxo\n• Ubuningi Bezimo: Ungashintsha ubulili/ulimi/igama lomuntu okhuluma naye ngemenyu engaphezu kwebhamuza lenkulumo\n• Engeza Umlingani: Engeza umuntu omusha (Ongamazi) ngenkinobho +\n• I-GPS: Isimo esisekelwe endaweni yamanje\n• Ukulondolozwa Okuzenzakalelayo: Ukuhumusha okuzenzakalelayo nokulondolozwa kokuqukethwe kwengxoxo (TODO: Translate)';
+      '• Ingxoxo ye-AI: Zijwayeze ingxoxo yangempela nomuntu ku-\'Chat\' kumathebhu angezansi\n• Izilungiselelo Zomuntu: Cacisa ngokukhululekile ubulili, igama, kanye nekhodi yolimi lomunye umuntu\n• Idrama yesimo se-GPS: Thola indawo yakho yamanje futhi uncoma izihloko zengxoxo ezifanele indawo\n• Izilimi ezi-2: Izimpendulo ze-AI ziboniswa ngokuhumusha ukukhulisa umphumela wokufunda\n• Ukuphathwa Kwerekhodi: Hlunga umlando wezingxoxo ezedlule bese ugcina imilayezo ethile ezingxoxweni njengezinto zokufunda';
 
   @override
   String get helpTabJson => 'Ifomethi ye-JSON';
@@ -1292,12 +1297,64 @@ class AppLocalizationsZu extends AppLocalizations {
       'Izilungiselelo zakho zangaphambilini zaleli divayisi azikusekeli ukukhishwa kwezwi lolu limi.';
 
   @override
+  String get homeTab => 'Ikhaya';
+
+  @override
   String get welcomeTitle => 'Siyakwamukela ku-Talkie!';
 
   @override
   String get welcomeDesc =>
-      'I-Talkie isekela izilimi ezingaphezu kuka-80 futhi iyithuluzi lokuhumusha labahambi. Ithuthukise ikhono lakho lokukhuluma nge-AI Chat!';
+      'Nge-Talkie, ungahumusha ngokushesha futhi ufunde ngokuphindaphinda okungenamkhawulo phakathi kwezilimi ezingu-80 ozithandayo.';
 
   @override
   String get welcomeButton => 'Qala';
+
+  @override
+  String get labelDetails => 'Izilungiselelo Ezinemininingwane';
+
+  @override
+  String get translationResult => 'Umphumela Wokuhumusha';
+
+  @override
+  String get inputContent => 'Okuqukethwe Kokufakiwe';
+
+  @override
+  String get translateNow => 'Humusha Manje';
+
+  @override
+  String get tooltipSettingsConfirm => 'Qinisekisa Izilungiselelo';
+
+  @override
+  String get hintNoteExample =>
+      'Isibonelo: Incazelo yesimo, amagama afanayo njll.';
+
+  @override
+  String get hintTagExample => 'Isibonelo: Ibhizinisi, ukuhamba...';
+
+  @override
+  String get addNew => 'Engeza Okusha';
+
+  @override
+  String get newNotebookTitle => 'Igama Elisha Lencwajana';
+
+  @override
+  String get enterNameHint => 'Faka Igama';
+
+  @override
+  String get add => 'Engeza';
+
+  @override
+  String get openSettings => 'Vula Izilungiselelo';
+
+  @override
+  String get helpNotebook =>
+      'Khetha ifolda lapho imiphumela ehunyushiwe izogcinwa khona.';
+
+  @override
+  String get helpNote =>
+      'Bhala ngokukhululekile incazelo yegama, imisho eyisibonelo, izimo, njll.';
+
+  @override
+  String get helpTag =>
+      'Faka amagama angukhiye okuhlunga noma okusesha ngokuhamba kwesikhathi.';
 }

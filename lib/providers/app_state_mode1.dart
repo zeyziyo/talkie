@@ -304,7 +304,7 @@ extension AppStateMode1 on AppState {
         // Phase 120/98 Fix: Use _selectedSaveSubject directly as notebook title if it's not Basic
         final subjectToSave = _selectedSaveSubject.isNotEmpty && _selectedSaveSubject != 'Basic'
             ? _selectedSaveSubject
-            : (itemType == 'word' ? 'My Wordbook' : 'My Collection');
+            : (itemType == 'word' ? _localizedWordbook : _localizedSentencebook);
 
         await SupabaseService.addToLibrary(
           groupId: gId,
@@ -343,13 +343,9 @@ extension AppStateMode1 on AppState {
       
       // Add the User-Selected Material Subject as a Tag for Filtering
       String subjectToSave = _selectedSaveSubject;
-      // Phase 81.5/96: Enforce localized default titles using AppConstants
+      // Phase 81.5/96/17480: Enforce localized default titles
       if (subjectToSave.isEmpty || subjectToSave == 'Basic') {
-        if (_sourceLang == 'ko') {
-          subjectToSave = _isWordMode ? AppConstants.defaultWordbookKo : AppConstants.defaultSentenceBookKo;
-        } else {
-          subjectToSave = _isWordMode ? AppConstants.defaultWordbookEn : AppConstants.defaultSentenceBookEn;
-        }
+        subjectToSave = _isWordMode ? _localizedWordbook : _localizedSentencebook;
       }
 
       if (!finalTags.contains(subjectToSave)) {

@@ -318,6 +318,12 @@ class AppLocalizationsAs extends AppLocalizations {
   String get gender => 'লিংগ';
 
   @override
+  String get labelFilterMaterial => 'সামগ্ৰী';
+
+  @override
+  String get labelFilterTag => 'টেগ';
+
+  @override
   String get generalTags => 'সাধাৰণ টেগসমূহ';
 
   @override
@@ -351,11 +357,12 @@ class AppLocalizationsAs extends AppLocalizations {
   String get helpJsonTypeWord => 'শব্দ (Word)';
 
   @override
-  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+  String get helpMode1Desc =>
+      'ভয়েচ ৰিকগনাইজ কৰক বা পাঠ্য লিখি ততালিকে অনুবাদ কৰক আৰু আপোনাৰ শিকাৰ তালিকাত ইয়াক সংৰক্ষণ কৰক।';
 
   @override
   String get helpMode1Details =>
-      '• ভাষাৰ ছেটিং: এপবাৰ মেনু বা তলৰ ভাষা বুটামৰ সৈতে মোৰ ভাষা আৰু শিকিবলগীয়া ভাষা সলনি কৰক\n• সৰল ইনপুট: টেক্সট ইনপুট কৰিলে স্বয়ংক্ৰিয়ভাৱে বিশ্লেষণ কৰা হয় (শব্দ/বাক্য) আৰু ছেটিং এলেকা সক্ৰিয় হয়\n• মাইক্ৰ’ফোন/কীৰ্ডব: মূল স্ক্ৰীণৰ ডাঙৰ আইকনৰ সৈতে ভয়েচ ৰিকগনিচন বা টেক্সট ইনপুট আৰম্ভ কৰক\n• বিস্তাৰিত ছেটিং: ইনপুটৰ সময়ত দেখা দিয়া তলৰ এলেকাত সামগ্ৰীৰ সংগ্ৰহ, টেগ, পৰিস্থিতিৰ টোকা নিৰ্ধাৰণ কৰক\n• স্বয়ংক্ৰিয় সন্ধান: একে ধৰণৰ বিদ্যমান অনুবাদ ৰিয়েল টাইমত ধৰা পেলায়\n• শ্ৰৱণ কৰক: স্পীকাৰ আইকনৰ সৈতে স্থানীয় বক্তাৰ উচ্চাৰণ (TTS) প্লে’ কৰক\n• সংৰক্ষণ কৰক: ‘ডাটা সংৰক্ষণ’ৰ সৈতে আপোনাৰ নিজা শিক্ষাৰ তালিকাত তৎক্ষণাত যোগ কৰক';
+      '• ভাষা ছেটিং: হোম স্ক্ৰীণৰ শীৰ্ষত থকা ভাষা বুটামৰ সৈতে আপোনাৰ ভাষা আৰু আপুনি শিকা ভাষা পৰীক্ষা কৰক, আৰু শিকা ভাষা সলনি কৰিব পাৰে।\n• সহজ ইনপুট: কেন্দ্ৰত থকা ডাঙৰ মাইক্ৰোফোন আৰু পাঠ্য উইণ্ডোৰ জৰিয়তে ততালিকে ইনপুট কৰক।\n• ছেটিং পৰীক্ষা কৰক: আপুনি ইনপুট কৰাৰ পিছত, সোঁফালে থকা নীলা চেকবক্স বুটাম টিপক। এটা বিশদ ছেটিং উইণ্ডো দেখা যাব।\n• বিশদ ছেটিং: আপুনি ডাইলগ বক্সত সংৰক্ষণ কৰিবলৈ ডাটা সংগ্ৰহ, টোকা (মেমো), আৰু টেগ নিৰ্ধাৰণ কৰিব পাৰে।\n• এতিয়া অনুবাদ কৰক: ছেটিং সম্পূৰ্ণ কৰাৰ পিছত, সেউজীয়া অনুবাদ বুটাম টিপিলে কৃত্ৰিম বুদ্ধিমত্তাই ততালিকে অনুবাদ কৰিব।\n• স্বয়ংক্ৰিয় সন্ধান: ইনপুট কৰাৰ সময়ত, ই ৰিয়েল টাইমত একে ধৰণৰ বিদ্যমান অনুবাদ ধৰা পেলায় আৰু দেখুৱায়।\n• শুনক আৰু সংৰক্ষণ কৰক: অনুবাদ ফলাফলৰ তলত থকা স্পীকাৰ আইকনৰ সৈতে উচ্চাৰণ শুনক, আৰু \'ডাটা সংৰক্ষণ কৰক\'ৰ জৰিয়তে আপোনাৰ শিকাৰ তালিকাত যোগ দিয়ক।';
 
   @override
   String get helpMode2Desc =>
@@ -1282,12 +1289,63 @@ class AppLocalizationsAs extends AppLocalizations {
       'এই ডিভাইচৰ ডিফল্ট ছেটিংসমূহে এই ভাষাৰ বাবে কণ্ঠৰ আউটপুট সমৰ্থন নকৰে।';
 
   @override
+  String get homeTab => 'গৃহ';
+
+  @override
   String get welcomeTitle => 'Talkie-লৈ স্বাগতম!';
 
   @override
   String get welcomeDesc =>
-      'Talkie-এ ৮০ টাতকৈও অধিক ভাষা সমৰ্থন কৰে আৰু ই ভ্ৰমণকাৰী আৰু ভাষা শিকাৰুসকলৰ বাবে এক স্মাৰ্ট অনুবাদ সঁজুলি। AI চেটৰ জৰিয়তে আপোনাৰ কোৱাৰ দক্ষতা বৃদ্ধি কৰক!';
+      'Talkie ৰ সহায়ত ৮০টা ভাষাৰ মাজত যিকোনো ভাষালৈ তাৎক্ষণিকভাৱে অনুবাদ কৰিব পাৰি আৰু সীমাহীনভাৱে শিকিব পাৰি।';
 
   @override
   String get welcomeButton => 'আৰম্ভ কৰক';
+
+  @override
+  String get labelDetails => 'বিৱৰণসমূহ';
+
+  @override
+  String get translationResult => 'অনুবাদৰ ফলাফল';
+
+  @override
+  String get inputContent => 'ইনপুট সমল';
+
+  @override
+  String get translateNow => 'এতিয়াই অনুবাদ কৰক';
+
+  @override
+  String get tooltipSettingsConfirm => 'সংস্থাপন নিশ্চিত কৰক';
+
+  @override
+  String get hintNoteExample =>
+      'উদাহৰণ: পৰিস্থিতিৰ ব্যাখ্যা, একে অৰ্থৰ শব্দ আদি';
+
+  @override
+  String get hintTagExample => 'উদাহৰণ: ব্যৱসায়, ভ্ৰমণ...';
+
+  @override
+  String get addNew => 'নতুন যোগ কৰক';
+
+  @override
+  String get newNotebookTitle => 'নতুন নোটবুকৰ নাম';
+
+  @override
+  String get enterNameHint => 'নাম লিখক';
+
+  @override
+  String get add => 'যোগ কৰক';
+
+  @override
+  String get openSettings => 'সংস্থাপন খোলক';
+
+  @override
+  String get helpNotebook =>
+      'অনুবাদিত ফলাফলসমূহ সুৰক্ষিত কৰিবলৈ এটা ফোল্ডাৰ নিৰ্ব্বাচন কৰক।';
+
+  @override
+  String get helpNote =>
+      'শব্দৰ অৰ্থ বা উদাহৰণ, পৰিস্থিতি আদিৰ দৰে আপুনি যিকোনো কথা ইয়াত লিখিব পাৰে।';
+
+  @override
+  String get helpTag => ' পিছত শ্ৰেণীবিভাজন বা সন্ধান কৰিবলৈ কিৱৰ্ডসমূহ লিখক।';
 }

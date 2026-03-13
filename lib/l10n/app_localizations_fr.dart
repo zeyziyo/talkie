@@ -321,6 +321,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get gender => 'Genre';
 
   @override
+  String get labelFilterMaterial => 'Matériel';
+
+  @override
+  String get labelFilterTag => 'Étiquette';
+
+  @override
   String get generalTags => 'Balises générales';
 
   @override
@@ -354,11 +360,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get helpJsonTypeWord => 'Mot';
 
   @override
-  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+  String get helpMode1Desc =>
+      'Traduisez instantanément par reconnaissance vocale ou saisie de texte et enregistrez dans votre liste d\'étude.';
 
   @override
   String get helpMode1Details =>
-      '• Paramètres de langue : modifiez ma langue et la langue d\'apprentissage via le menu de la barre d\'application ou le bouton de langue en bas\n• Saisie simplifiée : analyse automatique (mots/phrases) et activation de la zone de réglage lors de la saisie de texte\n• Microphone/clavier : démarrez la reconnaissance vocale ou la saisie de texte avec l\'icône grand écran sur l\'écran principal\n• Paramètres détaillés : spécifiez des documents, des balises et des mémos de situation dans la zone inférieure qui apparaît pendant la saisie\n• Recherche automatique : détection en temps réel des traductions existantes similaires\n• Écoute : lecture de la prononciation native (TTS) avec l\'icône du haut-parleur\n• Enregistrer : ajoutez instantanément à votre propre liste d\'apprentissage avec « Enregistrer les données »';
+      '• Paramètres de langue : Vérifiez votre langue maternelle et la langue d\'apprentissage en haut de l\'écran, et changez la langue d\'apprentissage via les boutons de langue.\n• Saisie simple : Commencez immédiatement via le grand micro central ou la zone de saisie de texte.\n• Confirmer les paramètres : Une fois la saisie terminée, appuyez sur le bouton bleu (coche) à droite. La fenêtre des paramètres détaillés apparaîtra.\n• Paramètres détaillés : Dans le dialogue qui s\'affiche, vous pouvez spécifier le recueil, la note (mémo) et les balises pour l\'enregistrement.\n• Traduire maintenant : Une fois configuré, appuyez sur le bouton de traduction vert pour que l\'IA effectue la traduction instantanément.\n• Recherche automatique : Détecte les traductions existantes similaires en temps réel pendant la saisie.\n• Écouter et enregistrer : Écoutez la prononciation via l\'icône du haut-parleur et appuyez sur \'Enregistrer les données\' pour l\'ajouter à votre liste d\'étude.';
 
   @override
   String get helpMode2Desc =>
@@ -1295,12 +1302,63 @@ class AppLocalizationsFr extends AppLocalizations {
       'La synthèse vocale n\'est pas prise en charge nativement pour cette langue sur cet appareil.';
 
   @override
+  String get homeTab => 'Accueil';
+
+  @override
   String get welcomeTitle => 'Bienvenue sur Talkie !';
 
   @override
   String get welcomeDesc =>
-      'Talkie supporte plus de 80 langues et est un outil intelligent pour les voyageurs. Améliorez votre expression orale avec le chat IA !';
+      'Avec Talkie, traduisez instantanément et apprenez à l\'infini dans la langue de votre choix parmi 80 langues.';
 
   @override
   String get welcomeButton => 'Commencer';
+
+  @override
+  String get labelDetails => 'Paramètres détaillés';
+
+  @override
+  String get translationResult => 'Résultat de la traduction';
+
+  @override
+  String get inputContent => 'Contenu d\'entrée';
+
+  @override
+  String get translateNow => 'Traduire maintenant';
+
+  @override
+  String get tooltipSettingsConfirm => 'Confirmer les paramètres';
+
+  @override
+  String get hintNoteExample => 'Ex : Contexte, homonymes...';
+
+  @override
+  String get hintTagExample => 'Ex : Entreprise, voyage...';
+
+  @override
+  String get addNew => 'Ajouter nouveau';
+
+  @override
+  String get newNotebookTitle => 'Nom du nouveau cahier';
+
+  @override
+  String get enterNameHint => 'Entrez un nom';
+
+  @override
+  String get add => 'Ajouter';
+
+  @override
+  String get openSettings => 'Ouvrir les paramètres';
+
+  @override
+  String get helpNotebook =>
+      'Sélectionnez le dossier où enregistrer les résultats traduits.';
+
+  @override
+  String get helpNote =>
+      'Notez librement la signification, les exemples et les situations des mots.';
+
+  @override
+  String get helpTag =>
+      'Entrez des mots-clés pour classer ou rechercher plus tard.';
 }

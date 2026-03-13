@@ -12,14 +12,14 @@ class AppLocalizationsMy extends AppLocalizations {
   String get basicWords => 'အခြေခံ စကားလုံး သိမ်းဆည်းရာ';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'ထည့်သွင်းဘာသာစကား';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'ဘာသာပြန်ဘာသာစကား';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'နေ့စဉ်စကားပြောဆိုမှုများကို နိုင်ငံခြားဘာသာစကားသို့ ချက်ချင်းပြောင်းပါ။ Talkie သည် သင်၏ဘာသာစကားအသုံးပြုမှုကို မှတ်တမ်းတင်ပေးပါသည်။';
 
   @override
   String get cancel => 'ပယ်ဖျက်';
@@ -321,6 +321,12 @@ class AppLocalizationsMy extends AppLocalizations {
   String get gender => 'ကျား/မ';
 
   @override
+  String get labelFilterMaterial => 'စာရွက်စာတမ်း';
+
+  @override
+  String get labelFilterTag => 'တဂ်';
+
+  @override
   String get generalTags => 'အထွေထွေ တဂ်များ';
 
   @override
@@ -354,12 +360,11 @@ class AppLocalizationsMy extends AppLocalizations {
   String get helpJsonTypeWord => 'စကားလုံး';
 
   @override
-  String get helpMode1Desc =>
-      'အသံကို မှတ်သားပြီး ဘာသာပြန်နိုင်ကာ ရလဒ်ကို နားထောင်နိုင်သည်။';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• ဘာသာစကား ဆက်တင်များ- အပေါ်/အောက် အိုင်ကွန်ကို နှိပ်၍ ဘာသာစကားကို ပြောင်းပါ\n• စကားလုံး/စာကြောင်း ပြောင်းရန်- ပုံစံပြောင်းရန်\n• အသံထည့်သွင်းခြင်း- မိုက်ခရိုဖုန်း အိုင်ကွန်ကို နှိပ်၍ နားထောင်ခြင်း စတင်/ရပ်ပါ\n• စာသားထည့်သွင်းခြင်း- တိုက်ရိုက် ရိုက်ထည့်၍ ဘာသာပြန်ပါ\n• အလိုအလျောက် ရှာဖွေခြင်း- ဆင်တူသော ရှိပြီးသား စာကြောင်းကို ရှာဖွေပါ\n• ဘာသာပြန်ခြင်း- ဘာသာပြန်ရန် ခလုတ်ကို နှိပ်၍ ချက်ချင်း ဘာသာပြန်ပါ\n• နားထောင်ခြင်း- စပီကာ အိုင်ကွန်ဖြင့် TTS ပြန်ဖွင့်ပါ\n• သိမ်းဆည်းခြင်း- \'ဒေတာ သိမ်းဆည်းခြင်း\' ဖြင့် မှတ်တမ်းထည့်ပါ\n• ဖျက်ခြင်း- ထည့်သွင်းမှုကို မူလအတိုင်း ပြန်ထားပါ (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -383,7 +388,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI စကားပြော- မိမိဘာသာစကားဖြင့် ပြော၍ စကားပြောဆိုမှုကို လေ့ကျင့်ပါ\n• မလ်တီ ပုံစံ- စကားပြောပူဖောင်းပေါ်ရှိ မီနူးဖြင့် တစ်ဖက်လူ၏ ကျား/မ၊ ဘာသာစကား/အမည်ကို ပြောင်းနိုင်သည်\n• ပါတနာ ထပ်ထည့်ခြင်း: + ခလုတ်ဖြင့် စကားပြောရန် အသစ် (Stranger) ထပ်ထည့်ပါ\n• GPS: လက်ရှိ တည်နေရာကို အခြေခံသော အခြေအနေတု\n• အလိုအလျောက် သိမ်းဆည်းခြင်း- စကားပြော အကြောင်းအရာကို အလိုအလျောက် ဘာသာပြန်ပြီး သိမ်းဆည်းပါ (TODO: Translate)';
+      '• AI ချတ်- အောက်ခြေရှိ တက်ဘ်ဘား၏ \'ချတ်\' မီနူးမှတစ်ဆင့် ကိုယ်ရည်ကိုယ်သွေးနှင့် လက်တွေ့စကားပြောလေ့ကျင့်ပါ။\n• ကိုယ်ရည်ကိုယ်သွေးဆက်တင်- ပြိုင်ဘက်၏ ကျား၊ မ၊ အမည်နှင့် ဘာသာစကားကုဒ်ကို လွတ်လပ်စွာ သတ်မှတ်ပါ။\n• GPS အခြေအနေပြဇာတ်- လက်ရှိ ကျွန်ုပ်၏တည်နေရာကို အသိအမှတ်ပြုပြီး နေရာနှင့်သင့်လျော်သော စကားပြောဆိုမှုအကြောင်းအရာကို အကြံပြုပါ။\n• ဘာသာစကား ၂ မျိုး- AI ၏အဖြေကို ဘာသာပြန်နှင့်အတူ ပြသထားသောကြောင့် သင်ယူမှုအကျိုးသက်ရောက်မှုကို အမြင့်ဆုံးမြှင့်တင်ပါ။\n• မှတ်တမ်းစီမံခန့်ခွဲမှု- ယခင်စကားပြောမှတ်တမ်းကို စစ်ထုတ်ပြီး စကားပြောဆိုနေစဉ်အတွင်း သီးခြားမက်ဆေ့ချ်များကို သင်ယူမှုဆိုင်ရာပစ္စည်းများအဖြစ် သိမ်းဆည်းပါ။';
 
   @override
   String get helpTabJson => 'JSON ဖော်မတ်';
@@ -1298,12 +1303,64 @@ class AppLocalizationsMy extends AppLocalizations {
       'ဤစက်တွင် ဤဘာသာစကားအတွက် အသံထွက်စနစ်ကို မပံ့ပိုးပါ။';
 
   @override
+  String get homeTab => 'ပင်မ';
+
+  @override
   String get welcomeTitle => 'Talkie မှ ကြိုဆိုပါတယ်!';
 
   @override
   String get welcomeDesc =>
-      'Talkie သည် ဘာသာစကား ၈၀ ကျော်ကို ပံ့ပိုးပေးထားပြီး ခရီးသွားများအတွက် စမတ်ကျသော ဘာသာပြန်သင်ယူမှုကိရိယာ ဖြစ်သည်။ AI Chat ဖြင့် သင်၏စကားပြောစွမ်းရည်ကို မြှင့်တင်ပါ။';
+      'Talkie ဖြင့် ဘာသာစကား ၈၀ မှ သင်အလိုရှိသော ဘာသာစကားများသို့ ချက်ချင်း အပြန်အလှန် ဘာသာပြန်နိုင်ပြီး အကန့်အသတ်မဲ့ ထပ်ခါတလဲလဲ လေ့လာနိုင်ပါသည်။';
 
   @override
   String get welcomeButton => 'စတင်ပါ';
+
+  @override
+  String get labelDetails => 'အသေးစိတ် ဆက်တင်များ';
+
+  @override
+  String get translationResult => 'ဘာသာပြန် ရလဒ်';
+
+  @override
+  String get inputContent => 'ထည့်သွင်း အကြောင်းအရာ';
+
+  @override
+  String get translateNow => 'ယခု ဘာသာပြန်ပါ';
+
+  @override
+  String get tooltipSettingsConfirm => 'ဆက်တင်များကို အတည်ပြုပါ';
+
+  @override
+  String get hintNoteExample =>
+      'ဥပမာ- အခြေအနေ ရှင်းလင်းချက်၊ အသံတူ စကားလုံးများ စသည်';
+
+  @override
+  String get hintTagExample => 'ဥပမာ- စီးပွားရေး၊ ခရီးသွား...';
+
+  @override
+  String get addNew => 'အသစ် ထပ်ထည့်ပါ';
+
+  @override
+  String get newNotebookTitle => 'မှတ်စုစာအုပ် အသစ် ခေါင်းစဉ်';
+
+  @override
+  String get enterNameHint => 'အမည်ကို ရိုက်ထည့်ပါ';
+
+  @override
+  String get add => 'ထည့်ပါ';
+
+  @override
+  String get openSettings => 'ဆက်တင်များ ဖွင့်ပါ';
+
+  @override
+  String get helpNotebook =>
+      'ဘာသာပြန်ရလဒ်တွေကို သိမ်းဆည်းမယ့် ဖိုဒါကို ရွေးပါ။';
+
+  @override
+  String get helpNote =>
+      'စကားလုံးရဲ့ အဓိပ္ပါယ်၊ ဥပမာစာကြောင်း၊ အခြေအနေ စတာတွေကို လွတ်လပ်စွာ မှတ်သားပါ။';
+
+  @override
+  String get helpTag =>
+      'နောက်ပိုင်း အမျိုးအစားခွဲ ဒါမှမဟုတ် ရှာဖွေဖို့အတွက် သော့ချက်စာလုံးကို ရိုက်ထည့်ပါ။';
 }

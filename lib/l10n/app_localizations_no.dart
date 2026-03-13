@@ -12,14 +12,14 @@ class AppLocalizationsNo extends AppLocalizations {
   String get basicWords => 'Grunnleggende ordlager';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Inputtspråk';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Oversettelsesspråk';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Konverter hverdagsprat til fremmedspråk umiddelbart! Talkie registrerer ditt språkliv.';
 
   @override
   String get cancel => 'Avbryt';
@@ -319,6 +319,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get gender => 'Kjønn';
 
   @override
+  String get labelFilterMaterial => 'Materiale';
+
+  @override
+  String get labelFilterTag => 'Tag';
+
+  @override
   String get generalTags => 'Generelle tagger';
 
   @override
@@ -350,12 +356,11 @@ class AppLocalizationsNo extends AppLocalizations {
   String get helpJsonTypeWord => 'Ord';
 
   @override
-  String get helpMode1Desc =>
-      'Talegjenkjenning, oversettelse og lytt til resultat.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Stemme: Trykk mikrofon for start/stopp\n• Tekst: Skriv direkte for å oversette\n• Auto-Søk: Finner lignende setninger\n• Oversett: Knapp for umiddelbar oversettelse\n• Lytt: Høyttalerikon for TTS\n• Lagre: Legger til i historie\n• Tøm: Nullstill alt (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -379,7 +384,7 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI-chat: Øv på samtaler med en AI-persona.\n• Deltakeradministrasjon: Angi språkene for deg og AI-en for å unngå språkinkonsistenser.\n• GPS-rollespill: Skap naturlige samtalesituasjoner basert på din nåværende posisjon.\n• Bevaring av historikk: Alle samtaler lagres sikkert basert på ID, og historikken beholdes selv om du endrer navn. (TODO: Translate)';
+      '• AI-chat: Øv på praktiske samtaler med en persona i \'Chat\'-menyen på den nederste fanelinjen\n• Personainnstillinger: Spesifiser fritt kjønn, navn og språkkode for motparten\n• GPS-situasjonsspill: Gjenkjenner min nåværende posisjon og anbefaler samtaleemner som passer stedet\n• 2 språk: AI-ens svar vises med oversettelse for å maksimere læringseffekten\n• Loggadministrasjon: Filtrer tidligere samtalelogger og lagre spesifikke meldinger i samtalen som læringsmateriell';
 
   @override
   String get helpTabJson => 'JSON-format';
@@ -1274,12 +1279,63 @@ class AppLocalizationsNo extends AppLocalizations {
       'Denne enheten støtter ikke taleutdata for dette språket i sine standardinnstillinger.';
 
   @override
+  String get homeTab => 'Hjem';
+
+  @override
   String get welcomeTitle => 'Velkommen til Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie støtter over 80 språk og er et smart verktøy for oversettelse for reisende. Forbedre taleferdighetene dine med AI-chat!';
+      'Med Talkie kan du umiddelbart oversette mellom 80 språk og lære ubegrenset med repetisjoner.';
 
   @override
   String get welcomeButton => 'Kom i gang';
+
+  @override
+  String get labelDetails => 'Detaljerte innstillinger';
+
+  @override
+  String get translationResult => 'Oversettelsesresultat';
+
+  @override
+  String get inputContent => 'Innhold som skal oversettes';
+
+  @override
+  String get translateNow => 'Oversett nå';
+
+  @override
+  String get tooltipSettingsConfirm => 'Bekreft innstillinger';
+
+  @override
+  String get hintNoteExample => 'Eks: Kontekst, homonymer, etc.';
+
+  @override
+  String get hintTagExample => 'Eks: Forretninger, reise...';
+
+  @override
+  String get addNew => 'Legg til ny';
+
+  @override
+  String get newNotebookTitle => 'Nytt notatboknavn';
+
+  @override
+  String get enterNameHint => 'Skriv inn navn';
+
+  @override
+  String get add => 'Legg til';
+
+  @override
+  String get openSettings => 'Åpne innstillinger';
+
+  @override
+  String get helpNotebook =>
+      'Velg mappen for å lagre de oversatte resultatene.';
+
+  @override
+  String get helpNote =>
+      'Skriv fritt ned ordets betydning, eksempler, situasjoner osv.';
+
+  @override
+  String get helpTag =>
+      'Skriv inn nøkkelord for å klassifisere eller søke senere.';
 }

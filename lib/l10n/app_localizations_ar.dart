@@ -314,6 +314,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get gender => 'الجنس';
 
   @override
+  String get labelFilterMaterial => 'مادة العرض';
+
+  @override
+  String get labelFilterTag => 'الوسم';
+
+  @override
   String get generalTags => 'علامات عامة';
 
   @override
@@ -346,11 +352,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get helpJsonTypeWord => 'كلمة';
 
   @override
-  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+  String get helpMode1Desc =>
+      'ترجم فورًا عن طريق التعرف على الصوت أو إدخال النص، واحفظه في قائمة التعلم.';
 
   @override
   String get helpMode1Details =>
-      '• إعداد اللغة: قم بتغيير لغتي ولغة التعلم من قائمة شريط التطبيق أو زر اللغة السفلي\n• إدخال بسيط: تحليل تلقائي (كلمة/جملة) وتفعيل منطقة الإعداد عند إدخال النص\n• ميكروفون/لوحة مفاتيح: ابدأ التعرف على الصوت أو إدخال النص باستخدام الرمز الكبير على الشاشة الرئيسية\n• إعدادات تفصيلية: حدد مجموعة البيانات والعلامة والمذكرة الظرفية في المنطقة السفلية التي تظهر أثناء الإدخال\n• بحث تلقائي: الكشف عن الترجمات الحالية المماثلة في الوقت الفعلي\n• الاستماع: تشغيل نطق المتحدث الأصلي (TTS) باستخدام رمز مكبر الصوت\n• حفظ: أضف على الفور إلى قائمة التعلم الخاصة بك عن طريق \'حفظ البيانات\'';
+      '• إعداد اللغة: تحقق من لغتي واللغة التي أتعلمها وقم بتغيير لغة التعلم باستخدام زر اللغة في الجزء العلوي من الشاشة الرئيسية.\n• إدخال بسيط: أدخل على الفور من خلال الميكروفون الكبير ونافذة النص في المنتصف.\n• تأكيد الإعداد: اضغط على زر علامة الاختيار الزرقاء على اليمين بعد الانتهاء من الإدخال. ستظهر نافذة الإعدادات التفصيلية.\n• إعدادات مفصلة: في مربع الحوار الذي يظهر، يمكنك تحديد مجموعة البيانات التي تريد حفظها والتعليقات التوضيحية (الملاحظات) والعلامات.\n• الترجمة الآن: بعد الانتهاء من الإعدادات، اضغط على زر الترجمة الأخضر وسيقوم الذكاء الاصطناعي بالترجمة على الفور.\n• البحث التلقائي: يكتشف ويعرض الترجمات الحالية المماثلة في الوقت الفعلي أثناء الإدخال.\n• الاستماع والحفظ: استمع إلى النطق باستخدام رمز مكبر الصوت أسفل نتيجة الترجمة، وأضفها إلى قائمة التعلم من خلال \"حفظ البيانات\".';
 
   @override
   String get helpMode2Desc =>
@@ -1271,12 +1278,61 @@ class AppLocalizationsAr extends AppLocalizations {
       'الإعدادات الأصلية لهذا الجهاز لا تدعم إخراج الصوت لهذه اللغة.';
 
   @override
+  String get homeTab => 'الرئيسية';
+
+  @override
   String get welcomeTitle => 'مرحبًا بك في Talkie!';
 
   @override
   String get welcomeDesc =>
-      'يدعم Talkie أكثر من 80 لغة وهو أداة ذكية للترجمة وتعلم المحادثة للمسافرين ومتعلمي اللغات. ارتقِ بمهاراتك في التحدث مع دردشة الذكاء الاصطناعي!';
+      'مع Talkie، يمكنك الترجمة الفورية والتعلّم المتكرر بلا حدود بين أي لغتين من بين 80 لغة.';
 
   @override
   String get welcomeButton => 'ابدأ الآن';
+
+  @override
+  String get labelDetails => 'إعدادات تفصيلية';
+
+  @override
+  String get translationResult => 'نتيجة الترجمة';
+
+  @override
+  String get inputContent => 'محتوى الإدخال';
+
+  @override
+  String get translateNow => 'ترجمة الآن';
+
+  @override
+  String get tooltipSettingsConfirm => 'تأكيد الإعدادات';
+
+  @override
+  String get hintNoteExample => 'مثال: سياق الكلام، الكلمات المتشابهة';
+
+  @override
+  String get hintTagExample => 'مثال: عمل، سفر...';
+
+  @override
+  String get addNew => 'إضافة جديد';
+
+  @override
+  String get newNotebookTitle => 'اسم دفتر الملاحظات الجديد';
+
+  @override
+  String get enterNameHint => 'أدخل الاسم';
+
+  @override
+  String get add => 'إضافة';
+
+  @override
+  String get openSettings => 'فتح الإعدادات';
+
+  @override
+  String get helpNotebook => 'اختر المجلد لحفظ الترجمة.';
+
+  @override
+  String get helpNote =>
+      'سجل بحرية معاني الكلمات أو الأمثلة أو المواقف وما إلى ذلك.';
+
+  @override
+  String get helpTag => 'أدخل الكلمات الرئيسية لتصنيفها أو البحث عنها لاحقًا.';
 }

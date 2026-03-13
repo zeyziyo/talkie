@@ -12,14 +12,14 @@ class AppLocalizationsMr extends AppLocalizations {
   String get basicWords => 'मूलभूत शब्द संग्रह';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'इनपुट भाषा';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'भाषांतरण भाषा';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'रोजच्या बोलचालीचे परदेशी भाषेत झटपट रूपांतरण! Talkie तुमच्या भाषिक जीवनाची नोंद ठेवते.';
 
   @override
   String get cancel => 'रद्द करा';
@@ -314,6 +314,12 @@ class AppLocalizationsMr extends AppLocalizations {
   String get gender => 'लिंग';
 
   @override
+  String get labelFilterMaterial => 'मटेरिअल';
+
+  @override
+  String get labelFilterTag => 'टॅग';
+
+  @override
   String get generalTags => 'सामान्य टॅग';
 
   @override
@@ -346,11 +352,11 @@ class AppLocalizationsMr extends AppLocalizations {
   String get helpJsonTypeWord => 'शब्द (Word)';
 
   @override
-  String get helpMode1Desc => 'आवाज ओळखा, भाषांतर करा आणि निकाल ऐका.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• आवाज: सुरू/थांबवण्यासाठी माईक टॅप करा\n• मजकूर: भाषांतरासाठी थेट टाईप करा\n• ऑटो-सर्च: समान वाक्ये शोधते\n• भाषांतर: त्वरित भाषांतरासाठी बटण\n• ऐका: TTS साठी स्पीकर चिन्ह\n• जतन करा: इतिहासामध्ये जोडते\n• साफ करा: सर्व रीसेट करा (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -374,7 +380,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI चॅट: व्यक्तिरेखा (Personas) आणि प्रत्यक्ष संभाषणाचा सराव करा.\n• सहभागी व्यवस्थापन: तुमची भाषा आणि AI ची भाषा स्वतंत्रपणे सेट करून भाषिक विसंगती टाळा.\n• GPS Roleplay: तुमच्या वर्तमान स्थानावर आधारित नैसर्गिक संभाषणाचे प्रसंग तयार करा.\n• इतिहास जतन: सर्व संभाषणे ID आधारित सुरक्षितपणे जतन केली जातात आणि नाव बदलले तरी इतिहास जपला जातो. (TODO: Translate)';
+      '• AI चॅट: खालच्या टॅब बारमधील \'चॅट\' मेनूमध्ये व्यक्तिरेखा (persona) आणि प्रत्यक्ष संभाषणाचा सराव करा\n• व्यक्तिरेखा सेटिंग: समोरच्या व्यक्तीचे लिंग, नाव, भाषा कोड तुमच्या सोयीनुसार सेट करा\n• GPS Situational Roleplay: तुमच्या सध्याच्या स्थानानुसार योग्य विषयांची शिफारस करते\n• 2 भाषा: AI चे उत्तर भाषांतरासह दर्शविले जाते, ज्यामुळे शिकण्याचा प्रभाव वाढतो\n• रेकॉर्ड व्यवस्थापन: मागील संभाषणांचा इतिहास फिल्टर करा आणि संभाषणातील विशिष्ट संदेश शिक्षण सामग्री म्हणून जतन करा';
 
   @override
   String get helpTabJson => 'JSON फॉरमॅट';
@@ -1273,12 +1279,62 @@ class AppLocalizationsMr extends AppLocalizations {
       'हे डिव्हाइस मूळतः या भाषेतील आवाज आउटपुटला सपोर्ट करत नाही.';
 
   @override
+  String get homeTab => 'मुख्यपृष्ठ';
+
+  @override
   String get welcomeTitle => 'Talkie मध्ये आपले स्वागत आहे!';
 
   @override
   String get welcomeDesc =>
-      'Talkie ८० हून अधिक भाषांना सपोर्ट करते आणि प्रवाशांसाठी स्मार्ट भाषांतर साधन आहे. AI चॅटद्वारे तुमचे बोलण्याचे कौशल्य वाढवा!';
+      'टॉकी वापरून 80 भाषांमध्ये झटपट भाषांतर करा आणि अमर्यादित पुनरावृत्ती शिक्षण मिळवा.';
 
   @override
   String get welcomeButton => 'सुरू करा';
+
+  @override
+  String get labelDetails => 'तपशीलवार सेटिंग्ज';
+
+  @override
+  String get translationResult => 'भाषांतर निकाल';
+
+  @override
+  String get inputContent => 'इनपुट मजकूर';
+
+  @override
+  String get translateNow => 'आता भाषांतर करा';
+
+  @override
+  String get tooltipSettingsConfirm => 'सेटिंग्ज निश्चित करा';
+
+  @override
+  String get hintNoteExample => 'उदा: संदर्भाचा अर्थ, समानार्थी शब्द इ.';
+
+  @override
+  String get hintTagExample => 'उदा: व्यवसाय, प्रवास...';
+
+  @override
+  String get addNew => 'नवीन जोडा';
+
+  @override
+  String get newNotebookTitle => 'नवीन नोटबुक शीर्षक';
+
+  @override
+  String get enterNameHint => 'नाव प्रविष्ट करा';
+
+  @override
+  String get add => 'जोडा';
+
+  @override
+  String get openSettings => 'सेटिंग्ज उघडा';
+
+  @override
+  String get helpNotebook => 'अनुवादित निकाल जतन करण्यासाठी फोल्डर निवडा.';
+
+  @override
+  String get helpNote =>
+      'शब्दाचा अर्थ, उदाहरण किंवा परिस्थिती यासारख्या गोष्टीlibertyने लिहा.';
+
+  @override
+  String get helpTag =>
+      'नंतर वर्गीकरण किंवा शोध घेण्यासाठी कीवर्ड प्रविष्ट करा.';
 }

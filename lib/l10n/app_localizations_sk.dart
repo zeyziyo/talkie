@@ -12,14 +12,14 @@ class AppLocalizationsSk extends AppLocalizations {
   String get basicWords => 'Základné úložisko slov';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Vstupný jazyk';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Jazyk prekladu';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Okamžitá konverzia každodenných rozhovorov do cudzích jazykov! Talkie zaznamenáva váš jazykový život.';
 
   @override
   String get cancel => 'Zrušiť';
@@ -318,6 +318,12 @@ class AppLocalizationsSk extends AppLocalizations {
   String get gender => 'Pohlavie';
 
   @override
+  String get labelFilterMaterial => 'Materiály';
+
+  @override
+  String get labelFilterTag => 'Štítky';
+
+  @override
   String get generalTags => 'Všeobecné značky';
 
   @override
@@ -351,12 +357,11 @@ class AppLocalizationsSk extends AppLocalizations {
   String get helpJsonTypeWord => 'Slovo';
 
   @override
-  String get helpMode1Desc =>
-      'Rozpoznáva a prekladá reč, výsledky si môžete vypočuť.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Nastavenie jazyka: zmena jazyka stlačením ikon hore/dole\n• Prepínač slov/viet: prepínanie režimov\n• Hlasový vstup: spustenie/zastavenie počúvania stlačením ikony mikrofónu\n• Textový vstup: zadávanie textu priamo na preklad\n• Automatické vyhľadávanie: detekcia podobných existujúcich viet\n• Preklad: okamžitý preklad stlačením tlačidla prekladu\n• Počúvanie: prehrávanie TTS pomocou ikony reproduktora\n• Uloženie: pridanie záznamu pomocou \'Uložiť dáta\'\n• Vymazanie: inicializácia vstupu (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -380,7 +385,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI Chat: precvičujte si konverzáciu rozprávaním vo svojom jazyku\n• Viacero osôb: zmena pohlavia/jazyka/mena partnera pomocou ponuky nad bublinou\n• Pridanie partnera: pridanie nového partnera na konverzáciu (Neznámy) pomocou tlačidla +\n• GPS: situačná komédia založená na aktuálnej polohe\n• Automatické uloženie: automatický preklad a ukladanie obsahu konverzácie (TODO: Translate)';
+      '• AI Chat: Precvičte si konverzáciu s osobnosťou v ponuke \'Chat\' na paneli kariet v dolnej časti\n• Nastavenie osobnosti: Slobodne určite pohlavie, meno a jazykový kód partnera\n• GPS situačná hra: Odporúčanie tém konverzácie, ktoré sú vhodné pre dané miesto rozpoznaním vašej aktuálnej polohy\n• 2 jazyky: Odpoveď AI sa zobrazuje s prekladom, čím sa maximalizuje efekt učenia\n• Správa záznamov: Filtrovanie minulej histórie konverzácií a ukladanie konkrétnych správ počas konverzácie ako študijných materiálov';
 
   @override
   String get helpTabJson => 'Formát JSON';
@@ -1282,12 +1287,63 @@ class AppLocalizationsSk extends AppLocalizations {
       'V tomto zariadení nie je natívne podporovaný výstup hlasu pre tento jazyk.';
 
   @override
+  String get homeTab => 'Domov';
+
+  @override
   String get welcomeTitle => 'Vitajte v Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie podporuje viac ako 80 jazykov a je inteligentný nástroj na preklad pre cestovateľov. Zlepšite svoje rečové zručnosti pomocou AI chatu!';
+      'S Talkie môžete okamžite vzájomne prekladať a neobmedzene sa učiť v 80 jazykoch.';
 
   @override
   String get welcomeButton => 'Začať';
+
+  @override
+  String get labelDetails => 'Podrobné nastavenia';
+
+  @override
+  String get translationResult => 'Výsledok prekladu';
+
+  @override
+  String get inputContent => 'Vstupný obsah';
+
+  @override
+  String get translateNow => 'Preložiť teraz';
+
+  @override
+  String get tooltipSettingsConfirm => 'Potvrdiť nastavenia';
+
+  @override
+  String get hintNoteExample => 'Napr.: Kontext, homonymá atď.';
+
+  @override
+  String get hintTagExample => 'Napr.: Obchod, cestovanie...';
+
+  @override
+  String get addNew => 'Pridať nový';
+
+  @override
+  String get newNotebookTitle => 'Názov nového zápisníka';
+
+  @override
+  String get enterNameHint => 'Zadajte názov';
+
+  @override
+  String get add => 'Pridať';
+
+  @override
+  String get openSettings => 'Otvoriť nastavenia';
+
+  @override
+  String get helpNotebook =>
+      'Vyberte priečinok, kam chcete uložiť preložené výsledky.';
+
+  @override
+  String get helpNote =>
+      'Slobodne si zapisujte významy slov, príklady alebo situácie.';
+
+  @override
+  String get helpTag =>
+      'Zadajte kľúčové slová na neskoršie triedenie alebo vyhľadávanie.';
 }

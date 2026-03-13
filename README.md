@@ -32,14 +32,14 @@ dart run sqflite_common_ffi_web:setup --dir web
 
 ### MODE 1: 심플 입력 (Simplified Input)
 - 🎤 **스마트 입력**: 중앙의 대형 마이크 또는 텍스트 입력창을 통해 즉시 시작
-- 🔄 **자동 분석**: 입력된 텍스트의 종류(단어/문장)와 언어를 자동 감지
-- 📊 **실시간 설정**: 입력 중 하단에 나타나는 영역에서 자료집, 태그, 상황 메모를 즉시 지정
+- ⚙️ **상세 설정**: 입력 후 나타나는 '설정 확인(파란색 체크)' 버튼을 통해 자료집, 태그, 주석(메모)을 다이얼로그에서 지정
+- 🚀 **즉시 번역**: 설정을 마친 후 '지금 번역하기(초록색 버튼)'를 눌러 AI 번역 수행
 - 🔊 **TTS**: 번역된 텍스트 듣기 (원어민 발음)
 - 💾 **저장**: 나만의 학습 기록으로 즉시 추가
 
 * **Smart Input**: Start instantly via the central Mic icon or direct text input
-* **Auto-Analysis**: Automatically detects input type (Word/Sentence) and language
-* **Real-time Settings**: Configure material sets, tags, and context notes on the fly
+* **Detailed Settings**: Configure material sets, tags, and context notes via the 'Confirm Settings' dialog
+* **Instant Translation**: Tap 'Translate Now' to perform AI translation after configuration
 * **TTS**: Listen to translated text with native pronunciation
 * **Save**: Instantly add to your personalized study list
 

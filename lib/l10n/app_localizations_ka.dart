@@ -12,14 +12,14 @@ class AppLocalizationsKa extends AppLocalizations {
   String get basicWords => 'სიტყვების ძირითადი საცავი';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'შეყვანის ენა';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'თარგმანის ენა';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'მყისიერად გადააკეთეთ ყოველდღიური საუბრები უცხო ენებზე! Talkie აღწერს თქვენს ენობრივ ცხოვრებას.';
 
   @override
   String get cancel => 'გაუქმება';
@@ -319,6 +319,12 @@ class AppLocalizationsKa extends AppLocalizations {
   String get gender => 'სქესი';
 
   @override
+  String get labelFilterMaterial => 'მასალები';
+
+  @override
+  String get labelFilterTag => 'ტეგები';
+
+  @override
   String get generalTags => 'ზოგადი ტეგები';
 
   @override
@@ -352,11 +358,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String get helpJsonTypeWord => 'სიტყვა';
 
   @override
-  String get helpMode1Desc => 'თარგმნეთ თქვენი ხმა და მოუსმინეთ შედეგებს.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• ენის პარამეტრები: შეცვალეთ ენები ზედა/ქვედა ხატულებზე დაჭერით.\n• სიტყვა/წინადადება: რეჟიმების შეცვლა\n• ხმოვანი შეყვანა: დაიწყეთ/შეაჩერეთ მოსმენა მიკროფონის ხატულაზე დაჭერით.\n• ტექსტის შეყვანა: შეიყვანეთ ტექსტი თარგმნისთვის.\n• ავტომატური ძებნა: მსგავსი არსებული წინადადებების ამოცნობა\n• თარგმნა: დააჭირეთ ღილაკს თარგმნა მყისიერი თარგმანისთვის.\n• მოსმენა: TTS დაკვრა დინამიკის ხატულაზე.\n• შენახვა: ჩანაწერების დამატება „მონაცემების შენახვით“\n• გასუფთავება: შეყვანის ინიციალიზაცია (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -380,7 +386,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI ჩატი: ისაუბრეთ ჩემს ენაზე საუბრის სავარჯიშოდ.\n• მრავალი პერსონაჟი: შეცვალეთ მეორე მხარის სქესი/ენა/სახელი მეტყველების ბუშტის ზემოთ მენიუდან.\n• პარტნიორის დამატება: დაამატეთ ახალი თანამოსაუბრე (უცნობი) + ღილაკით.\n• GPS: სიტუაციური თამაშები მიმდინარე მდებარეობაზე დაყრდნობით.\n• ავტომატური შენახვა: საუბრის ავტომატური თარგმნა და შენახვა (TODO: Translate)';
+      '• AI ჩატი: ივარჯიშეთ რეალურ საუბარში პერსონაჟთან ქვედა ჩანართის ზოლის მენიუდან „ჩატში“.\n• პერსონაჟის დაყენება: თავისუფლად მიუთითეთ მოწინააღმდეგის სქესი, სახელი და ენის კოდი.\n• GPS სიტუაციური დრამა: გირჩევთ საუბრის თემებს, რომლებიც შეესაბამება ადგილს თქვენი ამჟამინდელი მდებარეობის ამოცნობით.\n• 2 ენა: AI-ის პასუხი ნაჩვენებია თარგმანთან ერთად, რაც მაქსიმალურად ზრდის სწავლის ეფექტს.\n• ჩანაწერების მართვა: წარსული საუბრების ისტორიის გაფილტვრა და კონკრეტული შეტყობინებების შენახვა საუბრის დროს, როგორც სასწავლო მასალა';
 
   @override
   String get helpTabJson => 'JSON ფორმატი';
@@ -1287,12 +1293,62 @@ class AppLocalizationsKa extends AppLocalizations {
       'ამ მოწყობილობის პარამეტრებში ამ ენის ხმოვანი გამოტანა არ არის მხარდაჭერილი.';
 
   @override
+  String get homeTab => 'მთავარი';
+
+  @override
   String get welcomeTitle => 'კეთილი იყოს თქვენი მობრძანება Talkie-ში!';
 
   @override
   String get welcomeDesc =>
-      'Talkie მხარს უჭერს 80-ზე მეტ ენას და არის ჭკვიანი მთარგმნელობითი ინსტრუმენტი მოგზაურებისთვის. გააუმჯობესეთ თქვენი მეტყველება AI Chat-ით!';
+      'Talkie-ით შეგიძლიათ მყისიერად თარგმნოთ და ისწავლოთ 80 ენაზე შეუზღუდავად.';
 
   @override
   String get welcomeButton => 'დაწყება';
+
+  @override
+  String get labelDetails => 'დეტალური პარამეტრები';
+
+  @override
+  String get translationResult => 'თარგმანის შედეგი';
+
+  @override
+  String get inputContent => 'შეყვანის შინაარსი';
+
+  @override
+  String get translateNow => 'ახლავე თარგმნეთ';
+
+  @override
+  String get tooltipSettingsConfirm => 'პარამეტრების დადასტურება';
+
+  @override
+  String get hintNoteExample => 'მაგ.: კონტექსტი, ჰომონიმები და ა.შ.';
+
+  @override
+  String get hintTagExample => 'მაგ.: ბიზნესი, მოგზაურობა...';
+
+  @override
+  String get addNew => 'ახლის დამატება';
+
+  @override
+  String get newNotebookTitle => 'ახალი ბლოკნოტის სათაური';
+
+  @override
+  String get enterNameHint => 'შეიყვანეთ სახელი';
+
+  @override
+  String get add => 'დამატება';
+
+  @override
+  String get openSettings => 'პარამეტრების გახსნა';
+
+  @override
+  String get helpNotebook => 'აირჩიეთ საქაღალდე თარგმანების შესანახად.';
+
+  @override
+  String get helpNote =>
+      'თავისუფლად ჩაიწერეთ სიტყვების მნიშვნელობები, მაგალითები ან კონტექსტი.';
+
+  @override
+  String get helpTag =>
+      'შეიყვანეთ საკვანძო სიტყვები შემდგომი კლასიფიკაციისთვის ან ძიებისთვის.';
 }

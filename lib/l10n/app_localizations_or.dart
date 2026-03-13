@@ -12,14 +12,14 @@ class AppLocalizationsOr extends AppLocalizations {
   String get basicWords => 'ମୌଳିକ ଶବ୍ଦ ଷ୍ଟୋରେଜ୍';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'ଇନପୁଟ୍ ଭାଷା';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'ଅନୁବାଦ ଭାଷା';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'ଦୈନନ୍ଦିନ କଥାବାର୍ତ୍ତାକୁ ବିଦେଶୀ ଭାଷାରେ ତୁରନ୍ତ ରୂପାନ୍ତର କରନ୍ତୁ! Talkie ଆପଣଙ୍କର ଭାଷା ଜୀବନକୁ ରେକର୍ଡ କରିବ।';
 
   @override
   String get cancel => 'ବାତିଲ୍ କରନ୍ତୁ';
@@ -323,6 +323,12 @@ class AppLocalizationsOr extends AppLocalizations {
   String get gender => 'ଲିଙ୍ଗ';
 
   @override
+  String get labelFilterMaterial => 'ସାମଗ୍ରୀ';
+
+  @override
+  String get labelFilterTag => 'ଟ୍ୟାଗ୍';
+
+  @override
   String get generalTags => 'ସାଧାରଣ ଟ୍ୟାଗ୍';
 
   @override
@@ -356,12 +362,11 @@ class AppLocalizationsOr extends AppLocalizations {
   String get helpJsonTypeWord => 'ଶବ୍ଦ (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'ଭଏସ୍ ଚିହ୍ନଟ କରି ଅନୁବାଦ କରନ୍ତୁ ଏବଂ ଫଳାଫଳ ଶୁଣନ୍ତୁ।';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• ଭାଷା ସେଟିଂ: ଉପର/ତଳ ଆଇକନ୍ ଦବାଇ ଭାଷା ବଦଳାନ୍ତୁ\n• ଶବ୍ଦ/ବାକ୍ୟ ଟୋଗଲ୍: ମୋଡ୍ ବଦଳାନ୍ତୁ\n• ଭଏସ୍ ଇନପୁଟ୍: ମାଇକ୍ରୋଫୋନ୍ ଆଇକନ୍ ଦବାଇ ଶୁଣିବା ଆରମ୍ଭ/ବନ୍ଦ କରନ୍ତୁ\n• ଟେକ୍ସଟ୍ ଇନପୁଟ୍: ସିଧାସଳଖ ଟାଇପ୍ କରି ଅନୁବାଦ କରନ୍ତୁ\n• ସ୍ୱୟଂଚାଳିତ ସନ୍ଧାନ: ସମାନ ପୂର୍ବ ବାକ୍ୟ ଚିହ୍ନଟ କରନ୍ତୁ\n• ଅନୁବାଦ: ତୁରନ୍ତ ଅନୁବାଦ କରିବାକୁ ଅନୁବାଦ ବଟନ୍ ଦବାନ୍ତୁ\n• ଶୁଣନ୍ତୁ: ସ୍ପିକର୍ ଆଇକନ୍ ସହିତ TTS ପ୍ଲେ କରନ୍ତୁ\n• ସେଭ୍: \'ଡାଟା ସେଭ୍\' ସହିତ ରେକର୍ଡ ଯୋଡନ୍ତୁ\n• କ୍ଲିଅର୍: ଇନପୁଟ୍ ରିସେଟ୍ କରନ୍ତୁ (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -385,7 +390,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI ଚାଟିଂ: ମୋ ଭାଷାରେ କହି କଥାବାର୍ତ୍ତା ଅଭ୍ୟାସ କରନ୍ତୁ\n• ମଲ୍ଟି ପର୍ସୋନା: ବାର୍ତ୍ତା ବବୁଲ୍ ଉପରେ ମେନୁ ସହିତ ଅନ୍ୟ ବ୍ୟକ୍ତିଙ୍କ ଲିଙ୍ଗ/ଭାଷା/ନାମ ବଦଳାଇପାରିବେ\n• ଅଂଶୀଦାର ଯୋଡନ୍ତୁ: + ବଟନ୍ ସହିତ ନୂତନ କଥାବାର୍ତ୍ତା ସାଥୀ (ଅପରିଚିତ ବ୍ୟକ୍ତି) ଯୋଡନ୍ତୁ\n• GPS: ବର୍ତ୍ତମାନର ଅବସ୍ଥା ଉପରେ ଆଧାର କରି ପରିସ୍ଥିତି ଡ୍ରାମା\n• ସ୍ୱୟଂଚାଳିତ ସେଭ୍: କଥାବାର୍ତ୍ତା ବିଷୟବସ୍ତୁ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଅନୁବାଦ ଏବଂ ସେଭ୍ କରାଯାଏ (TODO: Translate)';
+      '• AI ଚାଟିଂ: ତଳ ଟ୍ୟାବ୍ ବାରର \'ଚାଟ୍\' ମେନୁରେ ବ୍ୟକ୍ତିତ୍ୱ ସହିତ ବାସ୍ତବ କଥାବାର୍ତ୍ତା ଅଭ୍ୟାସ କରନ୍ତୁ\n• ବ୍ୟକ୍ତିତ୍ୱ ସେଟିଂ: ପ୍ରତିପକ୍ଷର ଲିଙ୍ଗ, ନାମ ଏବଂ ଭାଷା କୋଡ୍ ମୁକ୍ତ ଭାବରେ ନିର୍ଦ୍ଦିଷ୍ଟ କରନ୍ତୁ\n• GPS ପରିସ୍ଥିତି ନାଟକ: ବର୍ତ୍ତମାନର ଆପଣଙ୍କର ଅବସ୍ଥାନକୁ ଚିହ୍ନିବା ଦ୍ୱାରା ସ୍ଥାନ ପାଇଁ ଉପଯୁକ୍ତ କଥାବାର୍ତ୍ତା ବିଷୟଗୁଡ଼ିକର ସୁପାରିଶ କରନ୍ତୁ\n• ଦୁଇଟି ଭାଷା: AI ର ଉତ୍ତର ଅନୁବାଦ ସହିତ ପ୍ରଦର୍ଶିତ ହୋଇ ଶିକ୍ଷଣ ପ୍ରଭାବକୁ ସର୍ବାଧିକ କରେ\n• ରେକର୍ଡ ପରିଚାଳନା: ପୂର୍ବ କଥାବାର୍ତ୍ତା ଇତିହାସ ଫିଲ୍ଟର୍ କରନ୍ତୁ ଏବଂ କଥାବାର୍ତ୍ତା ସମୟରେ ନିର୍ଦ୍ଦିଷ୍ଟ ବାର୍ତ୍ତାଗୁଡ଼ିକୁ ଶିକ୍ଷଣ ସାମଗ୍ରୀ ଭାବରେ ସେଭ୍ କରନ୍ତୁ';
 
   @override
   String get helpTabJson => 'JSON ଫର୍ମାଟ୍';
@@ -1292,12 +1297,63 @@ class AppLocalizationsOr extends AppLocalizations {
       'ଏହି ଉପକରଣର ସେଟିଂସମୂହ ଏହି ଭାଷା ପାଇଁ ଭଏସ ଆଉଟପୁଟକୁ ସମର୍ଥନ କରେ ନାହିଁ।';
 
   @override
+  String get homeTab => 'ଘର';
+
+  @override
   String get welcomeTitle => 'Talkie କୁ ସ୍ୱାଗତ!';
 
   @override
   String get welcomeDesc =>
-      'Talkie ୮୦ ରୁ ଅଧିକ ଭାଷାକୁ ସମର୍ଥନ କରେ ଏବଂ ଏହା ଭ୍ରମଣକାରୀଙ୍କ ପାଇଁ ଏକ ସ୍ମାର୍ଟ ଅନୁବାଦ ଉପକରଣ | AI ଚାଟ୍ ମାଧ୍ୟମରେ ଆପଣଙ୍କର କହିବା ଦକ୍ଷତା ବଢ଼ାନ୍ତୁ |';
+      'ଟକି ସହିତ, 80ଟି ଭାଷା ମଧ୍ୟରୁ ଯେକୌଣସି ଭାଷା ମଧ୍ୟରେ ତୁରନ୍ତ ପରସ୍ପରକୁ ଅନୁବାଦ କରନ୍ତୁ ଏବଂ ଅସୀମିତ ପୁନରାବୃତ୍ତି ସହିତ ଶିଖନ୍ତୁ।';
 
   @override
   String get welcomeButton => 'ଆରମ୍ଭ କରନ୍ତୁ';
+
+  @override
+  String get labelDetails => 'ବିବରଣୀ';
+
+  @override
+  String get translationResult => 'ଅନୁବାଦ ଫଳାଫଳ';
+
+  @override
+  String get inputContent => 'ଇନପୁଟ ବିଷୟବସ୍ତୁ';
+
+  @override
+  String get translateNow => 'ଏବେ ଅନୁବାଦ କରନ୍ତୁ';
+
+  @override
+  String get tooltipSettingsConfirm => 'ସେଟିଂ ନିଶ୍ଚିତ କରନ୍ତୁ';
+
+  @override
+  String get hintNoteExample => 'ଉଦାହରଣ: ପରିସ୍ଥିତି, ସମାନାର୍ଥକ ଶବ୍ଦ ଇତ୍ୟାଦି';
+
+  @override
+  String get hintTagExample => 'ଉଦାହରଣ: ବ୍ୟବସାୟ, ଭ୍ରମଣ...';
+
+  @override
+  String get addNew => 'ନୂଆ ଯୋଡନ୍ତୁ';
+
+  @override
+  String get newNotebookTitle => 'ନୂଆ ନୋଟବୁକର ନାମ';
+
+  @override
+  String get enterNameHint => 'ନାମ ଦିଅନ୍ତୁ';
+
+  @override
+  String get add => 'ଯୋଡନ୍ତୁ';
+
+  @override
+  String get openSettings => 'ସେଟିଂ ଖୋଲନ୍ତୁ';
+
+  @override
+  String get helpNotebook =>
+      'ଅନୁବାଦ ହୋଇଥିବା ଫଳାଫଳକୁ ସଞ୍ଚୟ କରିବାକୁ ଫୋଲ୍ଡର ଚୟନ କରନ୍ତୁ।';
+
+  @override
+  String get helpNote =>
+      'ଶବ୍ଦର ଅର୍ଥ କିମ୍ବା ଉଦାହରଣ, ପରିସ୍ଥିତି ଇତ୍ୟାଦିକୁ ମୁକ୍ତ ଭାବରେ ରେକର୍ଡ଼ କରନ୍ତୁ।';
+
+  @override
+  String get helpTag =>
+      'ପରେ ବର୍ଗୀକରଣ କିମ୍ବା ଖୋଜିବା ପାଇଁ କୀୱାର୍ଡ଼ ପ୍ରବେଶ କରନ୍ତୁ।';
 }

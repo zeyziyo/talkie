@@ -12,14 +12,14 @@ class AppLocalizationsMl extends AppLocalizations {
   String get basicWords => 'അടിസ്ഥാന വാക്ക് ശേഖരം';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'ഇൻപുട്ട് ഭാഷ';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'വിവർത്തന ഭാഷ';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'നിങ്ങളുടെ ദൈനംദിന സംഭാഷണങ്ങൾ തൽക്ഷണം ഒരു വിദേശ ഭാഷയിലേക്ക് മാറ്റുക! ടോക്കി നിങ്ങളുടെ ഭാഷാ ജീവിതം രേഖപ്പെടുത്തുന്നു.';
 
   @override
   String get cancel => 'റദ്ദാക്കുക';
@@ -320,6 +320,12 @@ class AppLocalizationsMl extends AppLocalizations {
   String get gender => 'ലിംഗം';
 
   @override
+  String get labelFilterMaterial => 'മെറ്റീരിയൽ';
+
+  @override
+  String get labelFilterTag => 'ടാഗ്';
+
+  @override
   String get generalTags => 'പൊതുവായ ടാഗുകൾ';
 
   @override
@@ -352,12 +358,11 @@ class AppLocalizationsMl extends AppLocalizations {
   String get helpJsonTypeWord => 'വാക്ക് (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'ശബ്ദം തിരിച്ചറിയുക, വിവർത്തനം ചെയ്യുക, ഫലം കേൾക്കുക.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• ശബ്ദം: ആരംഭിക്കാൻ/നിർത്താൻ മൈക്ക് ടാപ്പ് ചെയ്യുക\n• ടെക്സ്റ്റ്: വിവർത്തനം ചെയ്യാൻ നേരിട്ട് ടൈപ്പ് ചെയ്യുക\n• ഓട്ടോ-സെർച്ച്: സമാനമായ വാക്യങ്ങൾ കണ്ടെത്തുന്നു\n• വിവർത്തനം: പെട്ടെന്നുള്ള വിവർത്തന ബട്ടൺ\n• കേൾക്കുക: TTS-നുള്ള സ്പീക്കർ ഐക്കൺ\n• സേവ്: ചരിത്രത്തിലേക്ക് ചേർക്കുന്നു\n• മായ്ക്കുക: എല്ലാം പുനഃസജ്ജമാക്കുക (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -381,7 +386,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI ചാറ്റ്: വ്യക്തിത്വങ്ങളുമായി സംഭാഷണം പരിശീലിക്കുക.\n• പങ്കാളികളുടെ മാനേജ്മെന്റ്: നിങ്ങളുടെ ഭാഷയും AI-യുടെ ഭാഷയും സജ്ജീകരിച്ച് ഭാഷാ പൊരുത്തക്കേടുകൾ ഒഴിവാക്കുക.\n• GPS റോൾപ്ലേ: നിങ്ങളുടെ ലൊക്കേഷനെ അടിസ്ഥാനമാക്കി സ്വാഭാവിക സംഭാഷണ സാഹചര്യങ്ങൾ ഉണ്ടാക്കുക.\n• സംഭാഷണ ചരിത്രം: എല്ലാ സംഭാഷണങ്ങളും സുരക്ഷിതമായി ID അടിസ്ഥാനമാക്കി സൂക്ഷിക്കുന്നു, പേര് മാറ്റിയാലും നിലനിർത്തുന്നു. (TODO: Translate)';
+      '• AI ചാറ്റ്: താഴെയുള്ള ടാബ് ബാറിലെ \'ചാറ്റ്\' മെനുവിൽ വ്യക്തിത്വങ്ങളുമായി സംഭാഷണം പരിശീലിക്കുക\n• വ്യക്തിത്വ ക്രമീകരണം: എതിരാളിയുടെ ലിംഗഭേദം, പേര്, ഭാഷാ കോഡ് എന്നിവ സ്വതന്ത്രമായി വ്യക്തമാക്കുക\n• GPS സാഹചര്യ നാടകം: നിങ്ങളുടെ നിലവിലെ സ്ഥാനം തിരിച്ചറിഞ്ഞ് ലൊക്കേഷന് അനുയോജ്യമായ സംഭാഷണ വിഷയങ്ങൾ ശുപാർശ ചെയ്യുന്നു\n• ദ്വിഭാഷാ: AI-യുടെ പ്രതികരണങ്ങൾ വിവർത്തനത്തോടൊപ്പം പ്രദർശിപ്പിക്കുന്നു, ഇത് പഠന ഫലം വർദ്ധിപ്പിക്കുന്നു\n• റെക്കോർഡ് മാനേജ്മെന്റ്: പഴയ സംഭാഷണ ചരിത്രം ഫിൽട്ടർ ചെയ്യുകയും സംഭാഷണത്തിനിടയിൽ പ്രത്യേക സന്ദേശങ്ങൾ പഠന സാമഗ്രികളായി സംരക്ഷിക്കുകയും ചെയ്യുക';
 
   @override
   String get helpTabJson => 'JSON ഫോർമാറ്റ്';
@@ -1290,12 +1295,62 @@ class AppLocalizationsMl extends AppLocalizations {
       'ഈ ഉപകരണത്തിന്റെ സ്ഥിര ക്രമീകരണങ്ങളിൽ ഈ ഭാഷയിലുള്ള സംഭാഷണ ഔട്ട്പുട്ട് പിന്തുണയ്ക്കുന്നില്ല.';
 
   @override
+  String get homeTab => 'ഹോം';
+
+  @override
   String get welcomeTitle => 'Talkie-ലേക്ക് സ്വാഗതം!';
 
   @override
   String get welcomeDesc =>
-      '80-ലധികം ഭാഷകളെ പിന്തുണയ്ക്കുന്ന യാത്രികർക്കുള്ള സ്മാർട്ട് വിവർത്തന ഉപകരണമാണ് Talkie. AI ചാറ്റിലൂടെ നിങ്ങളുടെ സംസാരശേഷി വർദ്ധിപ്പിക്കുക!';
+      'ടോക്കി ഉപയോഗിച്ച് 80 ഭാഷകളിൽ നിന്ന് തൽക്ഷണം പരസ്പരം വിവർത്തനം ചെയ്യാനും പരിധിയില്ലാത്ത ആവർത്തന പഠനം നടത്താനും കഴിയും.';
 
   @override
   String get welcomeButton => 'ആരംഭിക്കുക';
+
+  @override
+  String get labelDetails => 'വിശദാംശങ്ങൾ';
+
+  @override
+  String get translationResult => 'വിവർത്തന ഫലം';
+
+  @override
+  String get inputContent => 'ഇൻപുട്ട് ഉള്ളടക്കം';
+
+  @override
+  String get translateNow => 'ഇപ്പോൾ വിവർത്തനം ചെയ്യുക';
+
+  @override
+  String get tooltipSettingsConfirm => 'ക്രമീകരണങ്ങൾ സ്ഥിരീകരിക്കുക';
+
+  @override
+  String get hintNoteExample => 'ഉദാഹരണം: സന്ദർഭം, പര്യായപദങ്ങൾ തുടങ്ങിയവ';
+
+  @override
+  String get hintTagExample => 'ഉദാഹരണം: ബിസിനസ്, യാത്ര...';
+
+  @override
+  String get addNew => 'പുതിയവ ചേർക്കുക';
+
+  @override
+  String get newNotebookTitle => 'പുതിയ നോട്ട്ബുക്കിന്റെ പേര്';
+
+  @override
+  String get enterNameHint => 'പേര് നൽകുക';
+
+  @override
+  String get add => 'ചേർക്കുക';
+
+  @override
+  String get openSettings => 'ക്രമീകരണങ്ങൾ തുറക്കുക';
+
+  @override
+  String get helpNotebook =>
+      'പരിഭാഷപ്പെടുത്തിയ ഫലങ്ങൾ സംരക്ഷിക്കാൻ ഒരു ഫോൾഡർ തിരഞ്ഞെടുക്കുക.';
+
+  @override
+  String get helpNote =>
+      'വാക്കുകളുടെ അർത്ഥം, ഉദാഹരണങ്ങൾ, സാഹചര്യങ്ങൾ എന്നിവ സ്വതന്ത്രമായി രേഖപ്പെടുത്തുക.';
+
+  @override
+  String get helpTag => 'പിന്നീട് തരംതിരിക്കാനോ തിരയാനോ ഉള്ള കീവേഡുകൾ നൽകുക.';
 }

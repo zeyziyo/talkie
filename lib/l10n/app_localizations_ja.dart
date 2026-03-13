@@ -307,6 +307,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get gender => '性別';
 
   @override
+  String get labelFilterMaterial => '資料集';
+
+  @override
+  String get labelFilterTag => 'タグ';
+
+  @override
   String get generalTags => '一般タグ';
 
   @override
@@ -338,11 +344,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get helpJsonTypeWord => '単語 (Word)';
 
   @override
-  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+  String get helpMode1Desc => '音声認識またはテキスト入力で即座に翻訳し、学習リストに保存しましょう。';
 
   @override
   String get helpMode1Details =>
-      '• 言語設定：アプリバーメニューまたは下部の言語ボタンで自分の言語と学習言語を変更\n• シンプル入力：テキスト入力時に自動的に分析（単語/文章）および設定領域を活性化\n• マイク/キーボード：メイン画面の大型アイコンで音声認識またはテキスト入力を開始\n• 詳細設定：入力中に表示される下部領域で資料集、タグ、状況メモを指定\n• 自動検索：類似した既存の翻訳をリアルタイムで検出\n• 聞く：スピーカーアイコンでネイティブの発音（TTS）を再生\n• 保存：「データ保存」で自分だけの学習リストに即時追加';
+      '• 言語設定：ホーム画面上部の言語ボタンで、自分の言語と学習中の言語を確認し、学習言語を変更できます。\n• シンプル入力：中央の大きなマ이크またはテキスト入力ボックスからすぐに入力を開始できます。\n• 設定確認：入力が終わったら、右側の青いチェックボタンを押してください。詳細設定ウィンドウが表示されます。\n• 詳細設定：表示されたダイアログで、保存先の資料集、注釈（メモ）、タグを指定できます。\n• 今すぐ翻訳：設定完了後、緑色の翻訳ボタンを押すと、AIが即座に翻訳を実行します。\n• 자동 검색：入力中に類似した既存の翻訳をリアルタイムで検出し表示します。\n• 聴取と保存：翻訳結果の下部にあるスピーカーアイコンで発音を確認し、「データを保存」で学習リストに追加しましょう。';
 
   @override
   String get helpMode2Desc => '保存された文章を復習します。翻訳を隠して確認し、復習回数を記録しましょう。';
@@ -1247,12 +1253,59 @@ class AppLocalizationsJa extends AppLocalizations {
   String get ttsUnsupportedNatively => 'このデバイスの標準設定では、この言語の音声出力をサポートしていません。';
 
   @override
+  String get homeTab => 'ホーム';
+
+  @override
   String get welcomeTitle => 'Talkieへようこそ！';
 
   @override
-  String get welcomeDesc =>
-      'Talkieは80以上の言語に対応した、旅行者や学習者のためのスマートな翻訳ツールです。練習やAIチャットで実戦的な会話力を磨きましょう！';
+  String get welcomeDesc => 'Talkieでは80の言語から好きな言語を選んで、即座に相互翻訳や無限反復学習ができます。';
 
   @override
   String get welcomeButton => '始める';
+
+  @override
+  String get labelDetails => '詳細設定';
+
+  @override
+  String get translationResult => '翻訳結果';
+
+  @override
+  String get inputContent => '入力内容';
+
+  @override
+  String get translateNow => '翻訳する';
+
+  @override
+  String get tooltipSettingsConfirm => '設定確認';
+
+  @override
+  String get hintNoteExample => '例：状況説明、同音異義語など';
+
+  @override
+  String get hintTagExample => '例：ビジネス、旅行...';
+
+  @override
+  String get addNew => '新規追加';
+
+  @override
+  String get newNotebookTitle => '新しいノートブック名';
+
+  @override
+  String get enterNameHint => '名前を入力してください';
+
+  @override
+  String get add => '追加';
+
+  @override
+  String get openSettings => '設定を開く';
+
+  @override
+  String get helpNotebook => '翻訳された結果を保存するフォルダを選択してください。';
+
+  @override
+  String get helpNote => '単語の意味や例文、状況などを自由にご記入ください。';
+
+  @override
+  String get helpTag => '後で分類したり検索したりするためのキーワードを入力してください。';
 }

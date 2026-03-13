@@ -12,14 +12,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get basicWords => '基础词库';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => '输入语言';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => '翻译语言';
 
   @override
-  String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+  String get simplifiedGuidance => '将日常对话瞬间翻译成外语！Talkie会记录您的语言生活。';
 
   @override
   String get cancel => '取消';
@@ -307,6 +306,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get gender => '性别';
 
   @override
+  String get labelFilterMaterial => '资料集';
+
+  @override
+  String get labelFilterTag => '标签';
+
+  @override
   String get generalTags => '通用标签';
 
   @override
@@ -338,11 +343,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get helpJsonTypeWord => '单词 (Word)';
 
   @override
-  String get helpMode1Desc => '语音识别、翻译并收听结果。';
+  String get helpMode1Desc => '通过语音识别或文本输入即时翻译，并保存到学习列表。';
 
   @override
   String get helpMode1Details =>
-      '• 语音输入：点击麦克风图标开始/停止聆听\n• 文本输入：直接输入文本进行翻译\n• 自动搜索：检测相似的现有句子\n• 翻译：点击按钮立即翻译\n• 收听：点击扬声器图标收听 TTS（原文/译文）\n• 保存：“保存数据”添加到历史记录\n• 清除：重置所有输入 (TODO: Translate)';
+      '• 语言设置：点击主屏幕上方的语言按钮，查看母语及学习语言，并可更改学习语言。\n• 简单输入：通过中央的大型麦克风或文本输入框立即开始输入。\n• 确认设置：输入完成后，点击右侧的蓝色勾选按钮。将出现详细设置窗口。\n• 详细设置：在弹出的对话框中，可以指定保存的数据集、注释（备忘录）和标签。\n• 立即翻译：设置完成后，点击绿色翻译按钮，AI 将立即进行翻译。\n• 自动搜索：输入时实时检测并显示相似的现有翻译。\n• 听音与保存：点击翻译结果下方的扬声器图标听发音，点击“保存数据”添加到学习列表。';
 
   @override
   String get helpMode2Desc => '复习已保存的句子，自动隐藏译文并跟踪复习次数。';
@@ -363,7 +368,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI 聊天：与角色进行实战对话练习。\n• 参与者管理：分别设置您和 AI 的语言，以避免语言不一致。\n• GPS 情景：根据当前位置创建自然的对话情境。\n• 记录保存：所有对话都基于 ID 安全存储，即使更改名称也能保留记录。 (TODO: Translate)';
+      '• AI聊天：在底部标签栏的“聊天”菜单中与角色进行实际对话练习\n• 角色设置：自由指定对方的性别、姓名、语言代码\n• GPS情景剧：识别我当前的位置并推荐适合该地点的对话主题\n• 2种语言：AI的答案与翻译一起显示，最大限度地提高学习效果\n• 记录管理：过滤过去的对话历史记录并将对话中的特定消息保存为学习材料';
 
   @override
   String get helpTabJson => 'JSON 格式';
@@ -1242,14 +1247,61 @@ class AppLocalizationsZh extends AppLocalizations {
   String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
 
   @override
+  String get homeTab => '首页';
+
+  @override
   String get welcomeTitle => '欢迎使用 Talkie!';
 
   @override
-  String get welcomeDesc =>
-      'Talkie 支持 80 多种语言，是一款专为旅行者设计的智能翻译工具。通过 AI 聊天提升您的口语能力！';
+  String get welcomeDesc => '使用Talkie，您可以立即在80种语言之间进行相互翻译，并进行无限重复学习。';
 
   @override
   String get welcomeButton => '开始使用';
+
+  @override
+  String get labelDetails => '详细设置';
+
+  @override
+  String get translationResult => '翻译结果';
+
+  @override
+  String get inputContent => '输入内容';
+
+  @override
+  String get translateNow => '立即翻译';
+
+  @override
+  String get tooltipSettingsConfirm => '确认设置';
+
+  @override
+  String get hintNoteExample => '例如：情景说明，同音异义词等';
+
+  @override
+  String get hintTagExample => '例如：商务，旅行...';
+
+  @override
+  String get addNew => '新增';
+
+  @override
+  String get newNotebookTitle => '新笔记本名称';
+
+  @override
+  String get enterNameHint => '输入名称';
+
+  @override
+  String get add => '添加';
+
+  @override
+  String get openSettings => '打开设置';
+
+  @override
+  String get helpNotebook => '选择保存翻译结果的文件夹。';
+
+  @override
+  String get helpNote => '自由记录单词的释义、例句和使用场景等。';
+
+  @override
+  String get helpTag => '输入用于日后分类或搜索的关键词。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -1258,6 +1310,15 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get basicWords => '基础词库';
+
+  @override
+  String get inputLanguage => '输入语言';
+
+  @override
+  String get translationLanguage => '翻译语言';
+
+  @override
+  String get simplifiedGuidance => '将日常对话瞬间转换为外语！Talkie会记录您的语言生活。';
 
   @override
   String get cancel => '取消';
@@ -1545,6 +1606,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get gender => '性别';
 
   @override
+  String get labelFilterMaterial => '资料集';
+
+  @override
+  String get labelFilterTag => '标签';
+
+  @override
   String get generalTags => '通用标签';
 
   @override
@@ -1576,11 +1643,11 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get helpJsonTypeWord => '单词（Word）';
 
   @override
-  String get helpMode1Desc => '语音识别、翻译并收听结果。';
+  String get helpMode1Desc => '通过语音识别或文本输入即时翻译，并保存到学习列表。';
 
   @override
   String get helpMode1Details =>
-      '• 语言设置：通过顶部翻译图标更改语言\n• 帮助：通过顶部帮助图标查看指南\n• 语音输入：点击麦克风图标开始/停止聆听\n• 文本输入：直接输入文本进行翻译\n• 自动搜索：检测相似的现有句子\n• 翻译：点击按钮立即翻译\n• 收听：点击扬声器图标收听 TTS（原文/译文）\n• 保存：“保存数据”添加到历史记录\n• 清除：重置所有输入 (TODO: Translate)';
+      '• 语言设置：点击主屏幕上方的语言按钮，查看母语及学习语言，并可更改学习语言。\n• 简单输入：通过中央的大型麦克风或文本输入框立即开始输入。\n• 确认设置：输入完成后，点击右侧的蓝色勾选按钮。将出现详细设置窗口。\n• 详细设置：在弹出的对话框中，可以指定保存的数据集、注释（备忘录）和标签。\n• 立即翻译：设置完成后，点击绿色翻译按钮，AI 将立即进行翻译。\n• 自动搜索：输入时实时检测并显示相似的现有翻译。\n• 听音与保存：点击翻译结果下方的扬声器图标听发音，点击“保存数据”添加到学习列表。';
 
   @override
   String get helpMode2Desc => '复习已保存的句子，自动隐藏译文并跟踪复习次数。';
@@ -1601,7 +1668,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get helpModeChatDetails =>
-      '• AI 聊天：与角色扮演进行真实对话练习。\n• 参与者管理：分别设置您和 AI 的语言，避免语言不匹配。\n• GPS 情景：根据当前位置模拟自然的对话场景。\n• 记录保存：所有对话都基于 ID 安全存储，即使重命名也能保留记录。 (TODO: Translate)';
+      '• AI聊天：在底部选项卡栏的“聊天”菜单中，与角色进行实际对话练习\n• 角色设置：自由指定对方的性别、姓名、语言代码\n• GPS情景剧：识别我当前的位置并推荐适合该地点的对话主题\n• 2种语言：AI的回复与翻译一起显示，从而最大限度地提高学习效果\n• 记录管理：过滤过去的对话历史记录，并将对话中的特定消息保存为学习资料';
 
   @override
   String get helpTabJson => 'JSON 格式';
@@ -2481,14 +2548,61 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
 
   @override
+  String get homeTab => '首页';
+
+  @override
   String get welcomeTitle => '欢迎使用 Talkie!';
 
   @override
-  String get welcomeDesc =>
-      'Talkie 支持 80 多种语言，是一款专为旅行者设计的智能翻译工具。通过 AI 聊天提升您的口语能力！';
+  String get welcomeDesc => '使用Talkie，您可以立即在80种语言之间进行互译，并进行无限重复学习。';
 
   @override
   String get welcomeButton => '开始使用';
+
+  @override
+  String get labelDetails => '详细设置';
+
+  @override
+  String get translationResult => '翻译结果';
+
+  @override
+  String get inputContent => '输入内容';
+
+  @override
+  String get translateNow => '立即翻译';
+
+  @override
+  String get tooltipSettingsConfirm => '确认设置';
+
+  @override
+  String get hintNoteExample => '例：情景说明、同音异义词等';
+
+  @override
+  String get hintTagExample => '例：商务、旅行...';
+
+  @override
+  String get addNew => '新增';
+
+  @override
+  String get newNotebookTitle => '新笔记本名称';
+
+  @override
+  String get enterNameHint => '请输入名称';
+
+  @override
+  String get add => '添加';
+
+  @override
+  String get openSettings => '打开设置';
+
+  @override
+  String get helpNotebook => '选择用于保存翻译结果的文件夹。';
+
+  @override
+  String get helpNote => '自由记录单词的含义、例句、情景等。';
+
+  @override
+  String get helpTag => '输入用于日后分类或搜索的关键词。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -2497,6 +2611,15 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get basicWords => '基礎詞庫';
+
+  @override
+  String get inputLanguage => '輸入語言';
+
+  @override
+  String get translationLanguage => '翻譯語言';
+
+  @override
+  String get simplifiedGuidance => '將日常對話瞬間翻譯成外語！ Talkie 將記錄您的語言生活。';
 
   @override
   String get cancel => '取消';
@@ -2784,6 +2907,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get gender => '性別';
 
   @override
+  String get labelFilterMaterial => '資料集';
+
+  @override
+  String get labelFilterTag => '標籤';
+
+  @override
   String get generalTags => '一般標籤';
 
   @override
@@ -2815,11 +2944,11 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get helpJsonTypeWord => '單字 (Word)';
 
   @override
-  String get helpMode1Desc => '語音辨識、翻譯並收聽結果。';
+  String get helpMode1Desc => '透過語音識別或文本輸入即時翻譯，並保存到學習列表。';
 
   @override
   String get helpMode1Details =>
-      '• 語言設定：透過頂部翻譯圖示更改語言\n• 幫助：透過頂部幫助圖示查看指南\n• 語音輸入：點擊麥克風圖示開始/停止聆聽\n• 文字輸入：直接輸入文字進行翻譯\n• 自動搜尋：偵測相似的現有句子\n• 翻譯：點擊按鈕立即翻譯\n• 收聽：點擊揚聲器圖示收聽 TTS（原文/譯文）\n• 儲存：「儲存資料」添加到歷史記錄\n• 清除：重設所有輸入 (TODO: Translate)';
+      '• 語言設置：點擊主屏幕上方的語言按鈕，查看母語及學習語言，並可更改學習語言。\n• 簡單輸入：透過中央的大型麥克風或文本輸入框立即開始輸入。\n• 確認設置：輸入完成後，點擊右側的藍色勾選按鈕。將出現詳細設置窗口。\n• 詳細設置：在彈出的對話框中，可以指定保存的資料集、注釋（備忘錄）和標籤。\n• 立即翻譯：設置完成後，點擊綠色翻譯按鈕，AI 將立即進行翻譯。\n• 自動搜索：輸入時實時檢測並顯示相似的現有翻譯。\n• 聽音與保存：點擊翻譯結果下方的揚聲器圖標聽發音，點擊「保存數據」添加到學習列表。';
 
   @override
   String get helpMode2Desc => '複習已儲存的句子，自動隱藏譯文並追蹤複習次數。';
@@ -2840,7 +2969,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get helpModeChatDetails =>
-      '• AI 聊天：練習與 AI 角色的實際對話。\n• 參與者管理：您可以分別設定您的語言和 AI 的語言，以避免語言不一致。\n• GPS 情境劇：根據您目前的位置建立自然的對話情境。\n• 記錄保存：所有對話都以 ID 為基礎安全地儲存，即使您更改名稱，記錄也會保留。 (TODO: Translate)';
+      '• AI 聊天：在底部標籤欄的“聊天”菜單中與角色進行實際對話練習\n• 角色設定：自由指定對方的性別、姓名、語言代碼\n• GPS 情境劇：識別您當前的位置並推薦適合該地點的對話主題\n• 2 種語言：AI 的回答與翻譯一起顯示，以最大限度地提高學習效果\n• 記錄管理：過濾過去的對話歷史記錄並將對話中的特定消息保存為學習材料';
 
   @override
   String get helpTabJson => 'JSON 格式';
@@ -3720,12 +3849,59 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get ttsUnsupportedNatively => '此裝置的預設設定不支援此語言的語音輸出。';
 
   @override
+  String get homeTab => '首頁';
+
+  @override
   String get welcomeTitle => '欢迎使用 Talkie!';
 
   @override
-  String get welcomeDesc =>
-      'Talkie 支持 80 多种语言，是一款专为旅行者设计的智能翻译工具。通过 AI 聊天提升您的口语能力！';
+  String get welcomeDesc => '透過 Talkie，你可以使用 80 種語言即時互相翻譯，並進行無限次重複學習。';
 
   @override
   String get welcomeButton => '开始使用';
+
+  @override
+  String get labelDetails => '詳細設定';
+
+  @override
+  String get translationResult => '翻譯結果';
+
+  @override
+  String get inputContent => '輸入內容';
+
+  @override
+  String get translateNow => '立即翻譯';
+
+  @override
+  String get tooltipSettingsConfirm => '確認設定';
+
+  @override
+  String get hintNoteExample => '例：情境說明、同音異義詞等';
+
+  @override
+  String get hintTagExample => '例：商務、旅行...';
+
+  @override
+  String get addNew => '新增';
+
+  @override
+  String get newNotebookTitle => '新筆記本名稱';
+
+  @override
+  String get enterNameHint => '請輸入名稱';
+
+  @override
+  String get add => '新增';
+
+  @override
+  String get openSettings => '開啟設定';
+
+  @override
+  String get helpNotebook => '選擇儲存翻譯結果的資料夾。';
+
+  @override
+  String get helpNote => '自由記錄單字的意思、例句或情境等。';
+
+  @override
+  String get helpTag => '輸入關鍵字以便日後分類或搜尋。';
 }

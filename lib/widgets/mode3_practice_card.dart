@@ -22,11 +22,9 @@ class Mode3PracticeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     // Basic data extraction
     final targetId = record['target_id'] as int? ?? record['id'] as int;
-    final recordSourceLang = record['source_lang'] as String? ?? appState.sourceLang;
 
     
     // In Mode 3, Top is ALWAYS Source (Mother Tongue), Bottom is Target (Learning Language)
-    final topLang = recordSourceLang;
     final topText = record['source_text'] as String;
     
 
@@ -68,36 +66,51 @@ class Mode3PracticeCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Header: Lang Badge + Info + Checkbox
+                    // Header: Info + Checkbox
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.center, // Center for horizontal alignment
                       children: [
-                         // Lang Badge + Note
+                         // Metadata Badges (Context Tag + Tags)
                          Expanded(
-                           child: Row(
+                           child: Wrap(
+                             spacing: 8,
+                             runSpacing: 4,
+                             crossAxisAlignment: WrapCrossAlignment.center,
                              children: [
-                               Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                                decoration: BoxDecoration(
-                                  color: Colors.white24,
-                                  borderRadius: BorderRadius.circular(4),
-                                  border: Border.all(color: Colors.white30),
-                                ),
-                                child: Text(
-                                  (appState.languageNames[topLang] ?? topLang).toUpperCase(),
-                                  style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.white),
-                                ),
-                               ),
-                               if (contextTag != null && contextTag.isNotEmpty) ...[
-                                 const SizedBox(width: 8),
-                                 Expanded(
+                               // 1. Context Tag (Note)
+                               if (contextTag != null && contextTag.isNotEmpty)
+                                 Container(
+                                   padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                   decoration: BoxDecoration(
+                                     color: Colors.white12,
+                                     borderRadius: BorderRadius.circular(4),
+                                   ),
                                    child: Text(
                                      contextTag,
                                      style: const TextStyle(fontSize: 12, color: Colors.white70, fontStyle: FontStyle.italic),
-                                     overflow: TextOverflow.ellipsis,
                                    ),
                                  ),
-                               ],
+
+                               // 2. User Tags (Added for parity with Mode 2)
+                               if (record['tags'] != null && (record['tags'] as List).isNotEmpty)
+                                 ...(() {
+                                    final displayableParams = AppState.displayableTags;
+                                    
+                                    final filteredTags = (record['tags'] as List)
+                                        .map((t) => t.toString())
+                                        .where((t) => displayableParams.contains(t.toLowerCase()))
+                                        .toList();
+
+                                    return filteredTags.map((t) => Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white10,
+                                        borderRadius: BorderRadius.circular(4),
+                                        border: Border.all(color: Colors.white12),
+                                      ),
+                                      child: Text('#$t', style: const TextStyle(fontSize: 10, color: Colors.white60)),
+                                    ));
+                                 })(),
                              ],
                            ),
                          ),

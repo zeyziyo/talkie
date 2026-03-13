@@ -12,14 +12,14 @@ class AppLocalizationsSw extends AppLocalizations {
   String get basicWords => 'Hifadhi ya Msingi ya Maneno';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Lugha ya kuingiza';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Lugha ya kutafsiri';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Badilisha mazungumzo ya kila siku mara moja katika lugha ya kigeni! Talkie inarekodi maisha yako ya lugha.';
 
   @override
   String get cancel => 'Ghairi';
@@ -317,6 +317,12 @@ class AppLocalizationsSw extends AppLocalizations {
   String get gender => 'Jinsia';
 
   @override
+  String get labelFilterMaterial => 'Nyaraka';
+
+  @override
+  String get labelFilterTag => 'Lebo';
+
+  @override
   String get generalTags => 'Tagi za jumla';
 
   @override
@@ -349,11 +355,11 @@ class AppLocalizationsSw extends AppLocalizations {
   String get helpJsonTypeWord => 'Neno';
 
   @override
-  String get helpMode1Desc => 'Tambua sauti, tafsiri na sikiliza matokeo.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Sauti: Gonga maikrofoni kuanza/kusimamisha\n• Maandishi: Andika moja kwa moja kwa kutafsiri\n• Utafutaji Kiotomatiki: Inagundua sentensi zinazofanana\n• Tafsiri: Kitufe cha tafsiri ya papo hapo\n• Sikiliza: Aikoni ya spika kwa TTS\n• Hifadhi: Inaongeza kwenye historia\n• Futa: Weka upya yote (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -377,7 +383,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• Gumzo la AI: Fanya mazoezi ya mazungumzo halisi na wahusika.\n• Usimamizi wa Washiriki: Weka lugha yako na lugha ya AI ili kuzuia kutolingana kwa lugha.\n• Mchezo wa Kuigiza wa GPS: Unda hali za mazungumzo asilia kulingana na eneo lako la sasa.\n• Hifadhi ya Historia: Mazungumzo yote yamehifadhiwa kwa usalama kulingana na Kitambulisho, na historia huhifadhiwa hata kama unabadilisha jina. (TODO: Translate)';
+      '• Gumzo la AI: Fanya mazoezi ya mazungumzo ya vitendo na mtu kupitia menyu ya \'Gumzo\' kwenye upau wa kichupo cha chini\n• Mpangilio wa mtu: Bainisha kwa uhuru jinsia, jina na msimbo wa lugha wa mhusika mwingine\n• Hali ya GPS: Tambua eneo langu la sasa na upendekeze mada za mazungumzo zinazofaa eneo\n• Lugha 2: Majibu ya AI yanaonyeshwa pamoja na tafsiri ili kuongeza athari ya kujifunza\n• Usimamizi wa rekodi: Chuja historia ya mazungumzo ya zamani na uhifadhi ujumbe maalum kama nyenzo za kujifunza wakati wa mazungumzo';
 
   @override
   String get helpTabJson => 'Muundo wa JSON';
@@ -1277,12 +1283,63 @@ class AppLocalizationsSw extends AppLocalizations {
       'Matamshi ya sauti hayatumiki kiasili katika lugha hii kwenye mipangilio ya kifaa hiki.';
 
   @override
+  String get homeTab => 'Nyumbani';
+
+  @override
   String get welcomeTitle => 'Karibu kwenye Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie inasaidia zaidi ya lugha 80 na ni zana mahiri ya kutafsiri kwa wasafiri. Boresha ujuzi wako wa kuzungumza na Chat ya AI!';
+      'Ukiwa na Talkie, unaweza kutafsiri na kujifunza bila kikomo kati ya lugha 80 mara moja.';
 
   @override
   String get welcomeButton => 'Anza';
+
+  @override
+  String get labelDetails => 'Mipangilio Zaidi';
+
+  @override
+  String get translationResult => 'Matokeo ya Tafsiri';
+
+  @override
+  String get inputContent => 'Ingiza Maandishi';
+
+  @override
+  String get translateNow => 'Tafsiri Sasa';
+
+  @override
+  String get tooltipSettingsConfirm => 'Thibitisha Mipangilio';
+
+  @override
+  String get hintNoteExample =>
+      'Mfano: Maelezo ya muktadha, maneno yenye maana nyingi, nk.';
+
+  @override
+  String get hintTagExample => 'Mfano: Biashara, safari... ';
+
+  @override
+  String get addNew => 'Ongeza Mpya';
+
+  @override
+  String get newNotebookTitle => 'Jina la Daftari Jipya';
+
+  @override
+  String get enterNameHint => 'Ingiza jina';
+
+  @override
+  String get add => 'Ongeza';
+
+  @override
+  String get openSettings => 'Fungua Mipangilio';
+
+  @override
+  String get helpNotebook =>
+      'Chagua folda ya kuhifadhi matokeo yaliyotafsiriwa.';
+
+  @override
+  String get helpNote =>
+      'Andika maana za maneno, mifano, au hali mbalimbali kwa uhuru.';
+
+  @override
+  String get helpTag => 'Weka maneno muhimu ya kuainisha au kutafuta baadaye.';
 }

@@ -12,14 +12,14 @@ class AppLocalizationsLo extends AppLocalizations {
   String get basicWords => 'ບ່ອນເກັບມ້ຽນຄຳສັບພື້ນຖານ';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'ພາສາປ້ອນຂໍ້ມູນ';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'ພາສາແປ';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'ປ່ຽນການສົນທະນາປະຈຳວັນເປັນພາສາຕ່າງປະເທດທັນທີ! Talkie ຈະບັນທຶກຊີວິດພາສາຂອງທ່ານ.';
 
   @override
   String get cancel => 'ຍົກເລີກ';
@@ -315,6 +315,12 @@ class AppLocalizationsLo extends AppLocalizations {
   String get gender => 'ເພດ';
 
   @override
+  String get labelFilterMaterial => 'ເອກະສານອ້າງອີງ';
+
+  @override
+  String get labelFilterTag => 'ແທັກ';
+
+  @override
   String get generalTags => 'ປ້າຍກຳກັບທົ່ວໄປ';
 
   @override
@@ -348,11 +354,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String get helpJsonTypeWord => 'ຄຳສັບ (Word)';
 
   @override
-  String get helpMode1Desc => 'ຮັບຮູ້ສຽງເພື່ອແປ, ແລະສາມາດຟັງຜົນໄດ້.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• ຕັ້ງຄ່າພາສາ: ກົດໄອຄອນດ້ານເທິງ/ລຸ່ມເພື່ອປ່ຽນພາສາ\n• ປ່ຽນຄຳສັບ/ປະໂຫຍກ: ປ່ຽນໂໝດ\n• ປ້ອນຂໍ້ມູນດ້ວຍສຽງ: ກົດໄອຄອນໄມໂຄຣໂຟນເພື່ອເລີ່ມ/ຢຸດຟັງ\n• ປ້ອນຂໍ້ມູນດ້ວຍຂໍ້ຄວາມ: ປ້ອນໂດຍກົງເພື່ອແປ\n• ຄົ້ນຫາອັດຕະໂນມັດ: ກວດຫາປະໂຫຍກທີ່ມີຢູ່ຄ້າຍຄືກັນ\n• ແປ: ກົດປຸ່ມແປເພື່ອແປທັນທີ\n• ຟັງ: ຫຼິ້ນ TTS ດ້ວຍໄອຄອນລຳໂພງ\n• ບັນທຶກ: ເພີ່ມບັນທຶກດ້ວຍ \'ບັນທຶກຂໍ້ມູນ\'\n• ລຶບ: ລ້າງຂໍ້ມູນທີ່ປ້ອນ (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -374,7 +380,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• ສົນທະນາ AI: ເວົ້າດ້ວຍພາສາຂອງເຈົ້າເພື່ອຝຶກສົນທະນາ\n• Multi Persona: ສາມາດປ່ຽນເພດ/ພາສາ/ຊື່ຂອງຄູ່ສົນທະນາໄດ້ດ້ວຍເມນູເທິງຟອງຄຳເວົ້າ\n• ເພີ່ມຄູ່ຮ່ວມງານ: ເພີ່ມຄູ່ສົນທະນາໃໝ່ (Stranger) ດ້ວຍປຸ່ມ +\n• GPS: ສະຖານະການທີ່ອີງໃສ່ສະຖານທີ່ປະຈຸບັນ\n• ບັນທຶກອັດຕະໂນມັດ: ແປ ແລະບັນທຶກເນື້ອໃນການສົນທະນາອັດຕະໂນມັດ (TODO: Translate)';
+      '• ສົນທະນາ AI: ຝຶກສົນທະນາຕົວຈິງກັບບຸກຄະລິກກະພາບໃນເມນູ \'ສົນທະນາ\' ໃນແຖບລຸ່ມ\n• ການຕັ້ງຄ່າບຸກຄະລິກກະພາບ: ລະບຸເພດ, ຊື່, ລະຫັດພາສາຂອງອີກຝ່າຍຢ່າງອິດສະຫຼະ\n• ສະຖານະການ GPS: ແນະນຳຫົວຂໍ້ການສົນທະນາທີ່ເໝາະສົມກັບສະຖານທີ່ໂດຍການຮັບຮູ້ສະຖານທີ່ປະຈຸບັນຂອງຂ້ອຍ\n• 2 ພາສາ: ຄຳຕອບຂອງ AI ຖືກສະແດງພ້ອມກັບການແປພາສາເພື່ອເພີ່ມປະສິດທິພາບການຮຽນຮູ້ສູງສຸດ\n• ການຈັດການບັນທຶກ: ກັ່ນຕອງປະຫວັດການສົນທະນາທີ່ຜ່ານມາ ແລະບັນທຶກຂໍ້ຄວາມສະເພາະໃດໜຶ່ງໃນລະຫວ່າງການສົນທະນາເປັນເອກະສານການຮຽນຮູ້';
 
   @override
   String get helpTabJson => 'ຮູບແບບ JSON';
@@ -1276,12 +1282,61 @@ class AppLocalizationsLo extends AppLocalizations {
       'ການຕັ້ງຄ່າເລີ່ມຕົ້ນຂອງອຸປະກອນນີ້ບໍ່ຮອງຮັບສຽງອອກສຳລັບພາສານີ້.';
 
   @override
+  String get homeTab => 'ໜ້າຫຼັກ';
+
+  @override
   String get welcomeTitle => 'ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie ຮອງຮັບຫຼາຍກວ່າ 80 ພາສາ ແລະ ເປັນເຄື່ອງມືແປພາສາທີ່ສະຫຼາດສຳລັບນັກທ່ອງທ່ຽວ. ພັດທະນາທັກສະການເວົ້າຂອງທ່ານດ້ວຍ AI Chat!';
+      'ດ້ວຍ Talkie, ເຈົ້າສາມາດແປພາສາລະຫວ່າງ 80 ພາສາໄດ້ທັນທີ ແລະ ຮຽນຮູ້ຊ້ຳໆໄດ້ບໍ່ຈຳກັດ.';
 
   @override
   String get welcomeButton => 'ເລີ່ມຕົ້ນ';
+
+  @override
+  String get labelDetails => 'ລາຍລະອຽດເພີ່ມເຕີມ';
+
+  @override
+  String get translationResult => 'ຜົນການແປ';
+
+  @override
+  String get inputContent => 'ເນື້ອໃນທີ່ປ້ອນ';
+
+  @override
+  String get translateNow => 'ແປດຽວນີ້';
+
+  @override
+  String get tooltipSettingsConfirm => 'ຢືນຢັນການຕັ້ງຄ່າ';
+
+  @override
+  String get hintNoteExample =>
+      'ຕົວຢ່າງ: ຄຳອະທິບາຍສະຖານະການ, ຄຳສັບຄ້າຍຄືກັນ, ແລະອື່ນໆ';
+
+  @override
+  String get hintTagExample => 'ຕົວຢ່າງ: ທຸລະກິດ, ການທ່ອງທ່ຽວ...';
+
+  @override
+  String get addNew => 'ເພີ່ມໃໝ່';
+
+  @override
+  String get newNotebookTitle => 'ຊື່ປື້ມບັນທຶກໃໝ່';
+
+  @override
+  String get enterNameHint => 'ປ້ອນຊື່';
+
+  @override
+  String get add => 'ເພີ່ມ';
+
+  @override
+  String get openSettings => 'ເປີດການຕັ້ງຄ່າ';
+
+  @override
+  String get helpNotebook => 'ເລືອກໂຟນເດີ້ເພື່ອບັນທຶກຜົນການແປ.';
+
+  @override
+  String get helpNote => 'ບັນທຶກຄວາມໝາຍ, ຕົວຢ່າງ, ສະຖານະການ, ແລະອື່ນໆ ຕາມໃຈ.';
+
+  @override
+  String get helpTag => 'ປ້ອນຄຳສັບຫຼັກສຳລັບການຈັດໝວດໝູ່ ຫຼື ຄົ້ນຫາໃນພາຍຫຼັງ.';
 }

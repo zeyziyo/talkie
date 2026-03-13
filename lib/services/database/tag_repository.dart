@@ -81,12 +81,59 @@ class TagRepository {
   }
 
   static Future<List<String>> getAllTagsForLanguage(String langCode) async {
-    // Tags in meta are not strictly language-bound anymore (shared per item).
-    // We just return all tags effectively, or filter by source/target lang of the item?
-    // User requested remove item_tags. 'lang_code' column in item_tags is gone.
-    // We will just return all tags for now, or maybe filter by item's language?
-    // For simplicity and correctness with new schema, we return all tags.
-    return getAllTags();
+    final db = await _db;
+    final Set<String> allTags = {};
+
+    // Phase: Filter by source_lang in metas
+    final wordRows = await db.query('words_meta', columns: ['tags'], where: 'source_lang = ?', whereArgs: [langCode]);
+    for (var row in wordRows) {
+      final t = row['tags'] as String?;
+      if (t != null && t.isNotEmpty) {
+        allTags.addAll(t.split(',').where((s) => s.isNotEmpty));
+      }
+    }
+
+    final sentenceRows = await db.query('sentences_meta', columns: ['tags'], where: 'source_lang = ?', whereArgs: [langCode]);
+    for (var row in sentenceRows) {
+      final t = row['tags'] as String?;
+      if (t != null && t.isNotEmpty) {
+        allTags.addAll(t.split(',').where((s) => s.isNotEmpty));
+      }
+    }
+
+    final sorted = allTags.toList()..sort();
+    return sorted;
+  }
+
+  /// Get specific tags belonging to a notebook
+  static Future<List<String>> getTagsForNotebook(String notebookTitle, String langCode, {String? type}) async {
+    final db = await _db;
+    final Set<String> allTags = {};
+
+    if (type == null || type == 'word') {
+      final rows = await db.query('words_meta', 
+        columns: ['tags'], 
+        where: 'notebook_title = ? AND source_lang = ?', 
+        whereArgs: [notebookTitle, langCode]);
+      for (var row in rows) {
+        final t = row['tags'] as String?;
+        if (t != null && t.isNotEmpty) allTags.addAll(t.split(',').where((s) => s.isNotEmpty));
+      }
+    }
+
+    if (type == null || type == 'sentence') {
+      final rows = await db.query('sentences_meta', 
+        columns: ['tags'], 
+        where: 'notebook_title = ? AND source_lang = ?', 
+        whereArgs: [notebookTitle, langCode]);
+      for (var row in rows) {
+        final t = row['tags'] as String?;
+        if (t != null && t.isNotEmpty) allTags.addAll(t.split(',').where((s) => s.isNotEmpty));
+      }
+    }
+
+    final sorted = allTags.toList()..sort();
+    return sorted;
   }
 
   static Future<List<Map<String, dynamic>>> getItemsByTag(String tag, {String? targetLang}) async {

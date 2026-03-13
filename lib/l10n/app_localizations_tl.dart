@@ -12,14 +12,14 @@ class AppLocalizationsTl extends AppLocalizations {
   String get basicWords => 'Basic na Imbakan ng Salita';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Wika ng Input';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Wika ng Pagsasalin';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Agad na isalin ang pang-araw-araw na pag-uusap sa ibang wika! Itatala ng Talkie ang iyong buhay pangwika.';
 
   @override
   String get cancel => 'Kanselahin';
@@ -322,6 +322,12 @@ class AppLocalizationsTl extends AppLocalizations {
   String get gender => 'Kasarian';
 
   @override
+  String get labelFilterMaterial => 'Materyales';
+
+  @override
+  String get labelFilterTag => 'Mga Tag';
+
+  @override
   String get generalTags => 'Pangkalahatang mga Tag';
 
   @override
@@ -355,12 +361,11 @@ class AppLocalizationsTl extends AppLocalizations {
   String get helpJsonTypeWord => 'Salita';
 
   @override
-  String get helpMode1Desc =>
-      'Kilalanin ang boses, isalin, at pakinggan ang resulta.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Mga Setting ng Wika: Pindutin ang icon sa itaas/ibaba para baguhin ang wika\n• Toggle ng Salita/Pangungusap: Lumipat ng mode\n• Input ng Boses: Pindutin ang icon ng mikropono para magsimula/huminto sa pakikinig\n• Input ng Teksto: Direktang mag-type para magsalin\n• Awtomatikong Paghahanap: Tukuyin ang magkatulad na umiiral na mga pangungusap\n• Isalin: Pindutin ang button na Isalin para agad na magsalin\n• Pakinggan: TTS playback gamit ang icon ng speaker\n• I-save: Magdagdag ng mga tala sa \'I-save ang Data\'\n• I-clear: I-reset ang input (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -384,7 +389,7 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI Chat: Magsalita sa aking wika para magsanay sa pag-uusap\n• Multi Persona: Maaaring baguhin ang kasarian/wika/pangalan ng kabilang panig gamit ang menu sa ibabaw ng speech bubble\n• Magdagdag ng Partner: Magdagdag ng bagong kausap (Stranger) gamit ang button na +\n• GPS: Pagsasadula batay sa kasalukuyang lokasyon\n• Awtomatikong I-save: Awtomatikong isalin at i-save ang nilalaman ng pag-uusap (TODO: Translate)';
+      '• AI Chat: Magsanay ng tunay na pag-uusap sa persona sa menu na \'Chat\' sa ibabang tab bar\n• Mga Setting ng Persona: Malayang tukuyin ang kasarian, pangalan, at code ng wika ng ibang partido\n• GPS Sitwasyon: Inirerekomenda ang mga paksa ng pag-uusap na angkop para sa lokasyon sa pamamagitan ng pagkilala sa aking kasalukuyang lokasyon\n• 2 Wika: Ang sagot ng AI ay ipinapakita kasama ng pagsasalin upang mapakinabangan ang epekto ng pag-aaral\n• Pamamahala ng Talaan: Pag-filter ng nakaraang kasaysayan ng pag-uusap at pag-save ng mga partikular na mensahe sa pag-uusap bilang materyal sa pag-aaral';
 
   @override
   String get helpTabJson => 'Format ng JSON';
@@ -1295,12 +1300,64 @@ class AppLocalizationsTl extends AppLocalizations {
       'Hindi sinusuportahan ng mga default na setting ng device na ito ang output ng boses para sa wikang ito.';
 
   @override
+  String get homeTab => 'Home';
+
+  @override
   String get welcomeTitle => 'Maligayang pagdating sa Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Sinusuportahan ng Talkie ang mahigit 80 wika at isang matalinong tool sa pagsasalin para sa mga manlalakbay. Pagbutihin ang iyong kakayahan sa pagsasalita gamit ang AI Chat!';
+      'Sa Talkie, agad kang makakapag-translate at walang limitasyong makakapag-aral sa pagitan ng kahit anong 80 wika.';
 
   @override
   String get welcomeButton => 'Magsimula';
+
+  @override
+  String get labelDetails => 'Mga Detalye';
+
+  @override
+  String get translationResult => 'Resulta ng Pagsasalin';
+
+  @override
+  String get inputContent => 'Ipinasok na Nilalaman';
+
+  @override
+  String get translateNow => 'Isalin Ngayon';
+
+  @override
+  String get tooltipSettingsConfirm => 'Kumpirmahin ang mga Setting';
+
+  @override
+  String get hintNoteExample =>
+      'Hal: Konteksto, mga salitang magkasingtunog, atbp.';
+
+  @override
+  String get hintTagExample => 'Hal: Negosyo, Paglalakbay...';
+
+  @override
+  String get addNew => 'Magdagdag ng Bago';
+
+  @override
+  String get newNotebookTitle => 'Pamagat ng Bagong Notebook';
+
+  @override
+  String get enterNameHint => 'Ipasok ang pangalan';
+
+  @override
+  String get add => 'Idagdag';
+
+  @override
+  String get openSettings => 'Buksan ang mga Setting';
+
+  @override
+  String get helpNotebook =>
+      'Pumili ng folder kung saan ilalagay ang mga isinalin.';
+
+  @override
+  String get helpNote =>
+      'Malayang isulat ang kahulugan, halimbawa, o sitwasyon ng salita.';
+
+  @override
+  String get helpTag =>
+      'Maglagay ng mga keyword para sa pag-uuri o paghahanap sa hinaharap.';
 }

@@ -12,14 +12,14 @@ class AppLocalizationsUz extends AppLocalizations {
   String get basicWords => 'Asosiy so\'zlar ombori';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Kirish tili';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Tarjima tili';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Kundalik suhbatlarni bir zumda chet tiliga aylantiring! Talkie sizning til hayotingizni yozib boradi.';
 
   @override
   String get cancel => 'Bekor qilish';
@@ -321,6 +321,12 @@ class AppLocalizationsUz extends AppLocalizations {
   String get gender => 'Jins';
 
   @override
+  String get labelFilterMaterial => 'Materiallar';
+
+  @override
+  String get labelFilterTag => 'Teglar';
+
+  @override
   String get generalTags => 'Umumiy teglar';
 
   @override
@@ -354,12 +360,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get helpJsonTypeWord => 'So\'z';
 
   @override
-  String get helpMode1Desc =>
-      'Nutqni aniqlab tarjima qiling va natijalarni tinglang.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Til sozlamalari: yuqori/pastki belgilarni bosib tilni o\'zgartiring\n• So\'z/gap o\'tish: rejimni almashtirish\n• Ovozli kiritish: mikrofon belgisini bosib tinglashni boshlang/to\'xtating\n• Matn kiritish: to\'g\'ridan-to\'g\'ri kiritib tarjima qiling\n• Avtomatik qidiruv: o\'xshash mavjud jumlalarni aniqlash\n• Tarjima: Tarjima tugmasini bosib darhol tarjima qiling\n• Tinglash: dinamik belgisidan TTS-ni ijro eting\n• Saqlash: \'Ma\'lumotlarni saqlash\' bilan yozuv qo\'shing\n• Tozalash: kirishni qayta o\'rnating (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -383,7 +388,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI chat: o\'z tilingizda gapirib, suhbatni mashq qiling\n• Multi-persona: nutq pufagi ustidagi menyu orqali boshqa odamning jinsi/tili/nomini o\'zgartirishingiz mumkin\n• Hamkor qo\'shish: + tugmasi bilan yangi suhbatdosh (Stranger) qo\'shing\n• GPS: joriy joylashuvga asoslangan vaziyatli dramatik sahna\n• Avtomatik saqlash: suhbat mazmunini avtomatik tarjima qilish va saqlash (TODO: Translate)';
+      '• AI Chat: Pastki tab bardagi \'Chat\' menyusida personaj bilan amaliy suhbat mashq qiling\n• Personaj sozlamalari: Qarshi tomonning jinsi, ismi, til kodini erkin belgilang\n• GPS ssenariysi: Hozirgi joylashuvingizni aniqlab, joyga mos suhbat mavzularini tavsiya etadi\n• 2 til: AI javoblari tarjima bilan birga ko\'rsatiladi, bu esa o\'rganish samaradorligini maksimal darajaga yetkazadi\n• Yozuvlarni boshqarish: O\'tgan suhbatlar tarixini filtrlash va suhbat davomida ma\'lum xabarlarni o\'quv materiali sifatida saqlash';
 
   @override
   String get helpTabJson => 'JSON formati';
@@ -1292,12 +1297,63 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ushbu qurilmaning sozlamalari ushbu tilda ovoz chiqarishni qo\'llab-quvvatlamaydi.';
 
   @override
+  String get homeTab => 'Bosh sahifa';
+
+  @override
   String get welcomeTitle => 'Talkie-ga xush kelibsiz!';
 
   @override
   String get welcomeDesc =>
-      'Talkie 80 dan ortiq tillarni qo\'llab-quvvatlaydi va sayohatchilar uchun aqlli tarjima vositasidir. AI Chat orqali so\'zlashuv qobiliyatingizni oshiring!';
+      'Talkie orqali 80 ta tildan istalgan tilga bir zumda o‘zaro tarjima va cheksiz takroriy o‘rganish imkoniyatiga ega bo‘ling.';
 
   @override
   String get welcomeButton => 'Boshlash';
+
+  @override
+  String get labelDetails => 'Batafsil sozlamalar';
+
+  @override
+  String get translationResult => 'Tarjima natijasi';
+
+  @override
+  String get inputContent => 'Kiritilgan matn';
+
+  @override
+  String get translateNow => 'Hozir tarjima qilish';
+
+  @override
+  String get tooltipSettingsConfirm => 'Sozlamalarni tasdiqlash';
+
+  @override
+  String get hintNoteExample => 'Masalan: vaziyat izohi, omonimlar va h.k.';
+
+  @override
+  String get hintTagExample => 'Masalan: biznes, sayohat...';
+
+  @override
+  String get addNew => 'Yangi qo\'shish';
+
+  @override
+  String get newNotebookTitle => 'Yangi daftar nomi';
+
+  @override
+  String get enterNameHint => 'Ismni kiriting';
+
+  @override
+  String get add => 'Qo\'shish';
+
+  @override
+  String get openSettings => 'Sozlamalarni ochish';
+
+  @override
+  String get helpNotebook =>
+      'Tarjima qilingan natijalarni saqlash uchun papkani tanlang.';
+
+  @override
+  String get helpNote =>
+      'So\'zlarning ma\'nosi, misollari yoki holatlari kabi istalgan narsalarni yozing.';
+
+  @override
+  String get helpTag =>
+      'Keyinroq saralash yoki qidirish uchun kalit so\'zlarni kiriting.';
 }

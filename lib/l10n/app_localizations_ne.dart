@@ -12,14 +12,14 @@ class AppLocalizationsNe extends AppLocalizations {
   String get basicWords => 'आधारभूत शब्द भण्डार';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'इनपुट भाषा';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'अनुवाद भाषा';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'विदेशी भाषामा दैनिक कुराकानीलाई तुरुन्तै रूपान्तरण गर्नुहोस्! Talkie ले तपाईंको भाषा जीवन रेकर्ड गर्दछ।';
 
   @override
   String get cancel => 'रद्द गर्नुहोस्';
@@ -318,6 +318,12 @@ class AppLocalizationsNe extends AppLocalizations {
   String get gender => 'लिङ्ग';
 
   @override
+  String get labelFilterMaterial => 'सामग्री';
+
+  @override
+  String get labelFilterTag => 'ट्याग';
+
+  @override
   String get generalTags => 'सामान्य ट्यागहरू';
 
   @override
@@ -351,12 +357,11 @@ class AppLocalizationsNe extends AppLocalizations {
   String get helpJsonTypeWord => 'शब्द (Word)';
 
   @override
-  String get helpMode1Desc =>
-      'आवाज पहिचान गरेर अनुवाद गर्नुहोस्, र परिणाम सुन्न सक्नुहुन्छ।';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• भाषा सेटिङ: माथि/तलको आइकन थिचेर भाषा परिवर्तन गर्नुहोस्\n• शब्द/वाक्य टगल: मोड परिवर्तन\n• आवाज इनपुट: माइक्रोफोन आइकन थिचेर सुन्न सुरु/बन्द गर्नुहोस्\n• पाठ इनपुट: सिधै टाइप गरेर अनुवाद गर्नुहोस्\n• स्वतः खोजी: समान अवस्थित वाक्य पत्ता लगाउनुहोस्\n• अनुवाद: अनुवाद बटन थिचेर तुरुन्तै अनुवाद गर्नुहोस्\n• सुन्नुहोस्: स्पिकर आइकनबाट TTS प्ले गर्नुहोस्\n• सुरक्षित गर्नुहोस्: \'डाटा सुरक्षित गर्नुहोस्\' मा रेकर्ड थप्नुहोस्\n• मेटाउनुहोस्: इनपुट रिसेट गर्नुहोस् (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -380,7 +385,7 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI च्याट: आफ्नो भाषामा बोलेर कुराकानी अभ्यास गर्नुहोस्\n• बहु व्यक्तित्व: कुराकानीको बबलमाथिको मेनुबाट अर्को व्यक्तिको लिङ्ग/भाषा/नाम परिवर्तन गर्न सकिन्छ\n• साझेदार थप्नुहोस्: + बटनबाट नयाँ कुराकानी गर्ने व्यक्ति (Stranger) थप्नुहोस्\n• GPS: हालको स्थानमा आधारित नाटक\n• स्वतः सुरक्षित: कुराकानीको सामग्री स्वतः अनुवाद र सुरक्षित हुन्छ (TODO: Translate)';
+      '• AI च्याट: तल्लो ट्याब बारको \'च्याट\' मेनुमा व्यक्तित्वसँग वास्तविक कुराकानी अभ्यास गर्नुहोस्\n• व्यक्तित्व सेटिङ: विपक्षीको लिंग, नाम र भाषा कोड निर्दिष्ट गर्नुहोस्\n• GPS अवस्था प्ले: तपाईंको वर्तमान स्थान पहिचान गर्नुहोस् र स्थानको लागि उपयुक्त कुराकानी विषयहरू सिफारिस गर्नुहोस्\n• २ भाषाहरू: AI को जवाफ अनुवादको साथ प्रदर्शित हुन्छ, सिकाइ प्रभाव अधिकतम पार्दै\n• रेकर्ड व्यवस्थापन: विगतको कुराकानी इतिहास फिल्टर गर्नुहोस् र कुराकानीको क्रममा विशिष्ट सन्देशहरू सिकाइ सामग्रीको रूपमा बचत गर्नुहोस्';
 
   @override
   String get helpTabJson => 'JSON ढाँचा';
@@ -1287,12 +1292,62 @@ class AppLocalizationsNe extends AppLocalizations {
       'यो उपकरणको पूर्वनिर्धारित सेटिङहरूले यो भाषामा आवाज आउटपुटलाई समर्थन गर्दैन।';
 
   @override
+  String get homeTab => 'गृहपृष्ठ';
+
+  @override
   String get welcomeTitle => 'Talkie मा स्वागत छ!';
 
   @override
   String get welcomeDesc =>
-      'Talkie ले ८० भन्दा बढी भाषाहरू समर्थन गर्दछ र यात्रीहरूका लागि स्मार्ट अनुवाद उपकरण हो। AI च्याट मार्फत आफ्नो बोल्ने कला सुधार गर्नुहोस्!';
+      'टॉकीले 80 भाषाहरू बीच तुरुन्त पारस्परिक अनुवाद र अनन्त दोहोर्याउने सिकाइलाई सक्षम बनाउँछ।';
 
   @override
   String get welcomeButton => 'سुरु गर्नुहोस्';
+
+  @override
+  String get labelDetails => 'विस्तृत सेटिङहरू';
+
+  @override
+  String get translationResult => 'अनुवाद परिणाम';
+
+  @override
+  String get inputContent => 'इनपुट सामग्री';
+
+  @override
+  String get translateNow => 'अहिले अनुवाद गर्नुहोस्';
+
+  @override
+  String get tooltipSettingsConfirm => 'सेटिङहरू पुष्टि गर्नुहोस्';
+
+  @override
+  String get hintNoteExample => 'उदाहरण: सन्दर्भ, समानार्थी शब्द आदि';
+
+  @override
+  String get hintTagExample => 'उदाहरण: व्यापार, यात्रा...';
+
+  @override
+  String get addNew => 'नयाँ थप्नुहोस्';
+
+  @override
+  String get newNotebookTitle => 'नयाँ नोटबुक शीर्षक';
+
+  @override
+  String get enterNameHint => 'नाम प्रविष्ट गर्नुहोस्';
+
+  @override
+  String get add => 'थप्नुहोस्';
+
+  @override
+  String get openSettings => 'सेटिङहरू खोल्नुहोस्';
+
+  @override
+  String get helpNotebook => 'अनुवादित परिणामहरू बचत गर्न फोल्डर छान्नुहोस्।';
+
+  @override
+  String get helpNote =>
+      'शब्दको अर्थ, उदाहरण वा स्थिति जस्ता कुराहरू स्वतन्त्र रूपमा रेकर्ड गर्नुहोस्।';
+
+  @override
+  String get helpTag =>
+      'पछि वर्गीकरण वा खोजीका लागि कुञ्जी शब्दहरू प्रविष्ट गर्नुहोस्।';
 }

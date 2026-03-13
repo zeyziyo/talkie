@@ -12,14 +12,14 @@ class AppLocalizationsTa extends AppLocalizations {
   String get basicWords => 'அடிப்படை சொல் களஞ்சியம்';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'உள்ளீட்டு மொழி';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'மொழிபெயர்ப்பு மொழி';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'அன்றாட உரையாடல்களை உடனடியாக வெளிநாட்டு மொழியில் மாற்றுக! Talkie உங்கள் மொழி வாழ்க்கையைப் பதிவு செய்கிறது.';
 
   @override
   String get cancel => 'ரத்துசெய்';
@@ -323,6 +323,12 @@ class AppLocalizationsTa extends AppLocalizations {
   String get gender => 'பாலினம்';
 
   @override
+  String get labelFilterMaterial => 'உருப்பொருள்';
+
+  @override
+  String get labelFilterTag => 'குறிச்சொற்கள்';
+
+  @override
   String get generalTags => 'பொதுவான குறிச்சொற்கள்';
 
   @override
@@ -356,12 +362,11 @@ class AppLocalizationsTa extends AppLocalizations {
   String get helpJsonTypeWord => 'சொல்';
 
   @override
-  String get helpMode1Desc =>
-      'குரலை அறிதல், மொழிபெயர்த்தல் மற்றும் முடிவைக் கேட்டல்.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• குரல்: தொடங்க/நிறுத்த மைக்கைத் தட்டவும்\n• உரை: மொழிபெயர்க்க நேரடியாக தட்டச்சு செய்யவும்\n• தானியங்கி தேடல்: ஒத்த வாக்கியங்களைக் கண்டறிகிறது\n• மொழிபெயர்: உடனடி மொழிபெயர்ப்பு பொத்தான்\n• கேள்: TTSக்கான ஸ்பீக்கர் ஐகான்\n• சேமி: வரலாற்றில் சேர்க்கிறது\n• அழி: அனைத்தையும் மீட்டமை (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -385,7 +390,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '• AI அரட்டை: ஒரு பாத்திரத்துடன் உண்மையான உரையாடலைப் பயிற்சி செய்யுங்கள்.\n• பங்கேற்பாளர் மேலாண்மை: உங்கள் மொழி மற்றும் AI மொழியை அமைக்கவும்.\n• GPS ரோல் பிளே: உங்கள் தற்போதைய இருப்பிடத்தின் அடிப்படையில் ஒரு உரையாடல் சூழ்நிலையை உருவாக்கவும்.\n• பதிவுகளை வைத்திருங்கள்: அனைத்து உரையாடல்களும் ஐடி அடிப்படையில் பாதுகாப்பாக சேமிக்கப்படுகின்றன, பெயரை மாற்றினாலும் பதிவுகள் இருக்கும். (TODO: Translate)';
+      '• AI அரட்டை: கீழ் தாவல் பட்டியில் உள்ள \'அரட்டை\' மெனுவில் பெர்சோனாவுடன் பயிற்சி உரையாடல்\n• பெர்சோனா அமைப்பு: எதிர் பாலினம், பெயர், மொழி குறியீட்டை சுதந்திரமாக குறிப்பிடவும்\n• GPS நிலை விளையாட்டு: தற்போதைய எனது இருப்பிடத்தை அடையாளம் கண்டு, இடத்திற்கு ஏற்ற உரையாடல் தலைப்பை பரிந்துரைக்கவும்\n• 2 மொழிகள்: AI-யின் பதில்கள் மொழிபெயர்ப்புடன் காட்டப்படுவதால் கற்றல் விளைவை அதிகரிக்கிறது\n• பதிவு மேலாண்மை: கடந்த உரையாடல் வரலாற்றை வடிகட்டி மற்றும் உரையாடலில் குறிப்பிட்ட செய்திகளை கற்றல் பொருட்களாக சேமிக்கவும்';
 
   @override
   String get helpTabJson => 'JSON வடிவம்';
@@ -1296,12 +1301,64 @@ class AppLocalizationsTa extends AppLocalizations {
       'இந்த சாதனத்தின் இயல்புநிலை அமைப்புகளில் இந்த மொழிக்கான குரல் வெளியீடு ஆதரிக்கப்படவில்லை.';
 
   @override
+  String get homeTab => 'முகப்பு';
+
+  @override
   String get welcomeTitle => 'Talkie-க்கு உங்களை வரவேற்கிறோம்!';
 
   @override
   String get welcomeDesc =>
-      'Talkie 80-க்கும் மேற்பட்ட மொழிகளை ஆதரிக்கிறது மற்றும் பயணிகளுக்கான ஒரு புத்திசாலித்தனமான மொழிபெயர்ப்பு கருவியாகும். AI அரட்டை மூலம் உங்கள் பேச்சுத் திறனை மேம்படுத்துங்கள்!';
+      'டாக்கியுடன் 80 மொழிகளில் உங்களுக்கு விருப்பமான மொழிகளுக்கு இடையே உடனடியாக மொழிபெயர்க்கலாம் மற்றும் வரம்பற்ற மறுபயிற்சியைப் பெறலாம்.';
 
   @override
   String get welcomeButton => 'தொடங்கு';
+
+  @override
+  String get labelDetails => 'விவர அமைப்புகள்';
+
+  @override
+  String get translationResult => 'மொழிபெயர்ப்பு முடிவு';
+
+  @override
+  String get inputContent => 'உள்ளீடு உள்ளடக்கம்';
+
+  @override
+  String get translateNow => 'இப்போது மொழிபெயர்க்கவும்';
+
+  @override
+  String get tooltipSettingsConfirm => 'அமைப்புகளை உறுதிப்படுத்தவும்';
+
+  @override
+  String get hintNoteExample =>
+      'உதாரணம்: சூழ்நிலை விளக்கம், ஒரு பொருள் குறித்த வேறு வார்த்தைகள் போன்றவை';
+
+  @override
+  String get hintTagExample => 'உதாரணம்: வணிகம், பயணம்...';
+
+  @override
+  String get addNew => 'புதியதைச் சேர்';
+
+  @override
+  String get newNotebookTitle => 'புதிய குறிப்பேட்டின் பெயர்';
+
+  @override
+  String get enterNameHint => 'பெயரை உள்ளிடவும்';
+
+  @override
+  String get add => 'சேர்';
+
+  @override
+  String get openSettings => 'அமைப்புகளைத் திற';
+
+  @override
+  String get helpNotebook =>
+      'மொழிபெயர்க்கப்பட்ட முடிவுகளை சேமிக்க ஒரு கோப்புறையைத் தேர்ந்தெடுக்கவும்.';
+
+  @override
+  String get helpNote =>
+      'வார்த்தையின் அர்த்தம், எடுத்துக்காட்டுகள் அல்லது சூழ்நிலைகள் போன்றவற்றை சுதந்திரமாகப் பதிவு செய்யுங்கள்.';
+
+  @override
+  String get helpTag =>
+      'பின்னர் வகைப்படுத்த அல்லது தேட முக்கிய வார்த்தைகளை உள்ளிடவும்.';
 }

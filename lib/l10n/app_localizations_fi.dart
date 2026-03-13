@@ -319,6 +319,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get gender => 'Sukupuoli';
 
   @override
+  String get labelFilterMaterial => 'Materiaali';
+
+  @override
+  String get labelFilterTag => 'Tunniste';
+
+  @override
   String get generalTags => 'Yleiset tunnisteet';
 
   @override
@@ -355,7 +361,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Kieliasetukset: Muuta omaa kieltäsi ja opiskelukieltäsi sovelluspalkin valikosta tai alareunan kielipainikkeesta\n• Yksinkertainen syöttö: Tekstin syöttö analysoi automaattisesti (sanan/lauseen) ja aktivoi asetusosio\n• Mikrofoni/näppäimistö: Aloita puheentunnistus tai tekstinsyöttö päänäytön suurilla kuvakkeilla\n• Yksityiskohtaiset asetukset: Määritä aineistokokoelma, tunnisteet ja tilannemuistiinpanot syötön aikana näkyvässä alaosassa\n• Automaattinen haku: Tunnista samankaltaiset aiemmat käännökset reaaliajassa\n• Kuuntelu: Toista natiivipuhujan ääntäminen (TTS) kaiutinkuvakkeella\n• Tallenna: Lisää heti omaan oppimislistaan \'Tallenna tiedot\' -toiminnolla';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1279,12 +1285,63 @@ class AppLocalizationsFi extends AppLocalizations {
       'Tämän laitteen oletusasetukset eivät tue tekstin puheeksi muuntoa tällä kielellä.';
 
   @override
+  String get homeTab => 'Aloitusnäyttö';
+
+  @override
   String get welcomeTitle => 'Tervetuloa Talkieen!';
 
   @override
   String get welcomeDesc =>
-      'Talkie tukee yli 80 kieltä ja on älykäs käännöstyökalu matkailijoille. Paranna puhekykyäsi tehisälychatin avulla!';
+      'Talkie mahdollistaa välittömän ja toistuvan käännöksen 80 kielen välillä.';
 
   @override
   String get welcomeButton => 'Aloita';
+
+  @override
+  String get labelDetails => 'Lisäasetukset';
+
+  @override
+  String get translationResult => 'Käännöstulos';
+
+  @override
+  String get inputContent => 'Syöttö';
+
+  @override
+  String get translateNow => 'Käännä nyt';
+
+  @override
+  String get tooltipSettingsConfirm => 'Vahvista asetukset';
+
+  @override
+  String get hintNoteExample => 'Esimerkki: Konteksti, samannimiset sanat jne.';
+
+  @override
+  String get hintTagExample => 'Esimerkki: Liiketoiminta, matkailu...';
+
+  @override
+  String get addNew => 'Lisää uusi';
+
+  @override
+  String get newNotebookTitle => 'Uuden muistikirjan nimi';
+
+  @override
+  String get enterNameHint => 'Syötä nimi';
+
+  @override
+  String get add => 'Lisää';
+
+  @override
+  String get openSettings => 'Avaa asetukset';
+
+  @override
+  String get helpNotebook =>
+      'Valitse kansio, johon haluat tallentaa käännetyt tulokset.';
+
+  @override
+  String get helpNote =>
+      'Kirjoita vapaasti sanan merkitys, esimerkkejä tai tilanteita.';
+
+  @override
+  String get helpTag =>
+      'Kirjoita avainsanoja, joilla voit myöhemmin luokitella tai etsiä.';
 }

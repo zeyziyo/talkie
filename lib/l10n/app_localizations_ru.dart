@@ -12,14 +12,14 @@ class AppLocalizationsRu extends AppLocalizations {
   String get basicWords => 'Базовое хранилище слов';
 
   @override
-  String get inputLanguage => '입력 언어';
+  String get inputLanguage => 'Язык ввода';
 
   @override
-  String get translationLanguage => '번역 언어';
+  String get translationLanguage => 'Язык перевода';
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Мгновенно переводите повседневные разговоры на иностранные языки! Talkie сохранит вашу языковую историю.';
 
   @override
   String get cancel => 'Отмена';
@@ -318,6 +318,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get gender => 'Пол';
 
   @override
+  String get labelFilterMaterial => 'Материалы';
+
+  @override
+  String get labelFilterTag => 'Теги';
+
+  @override
   String get generalTags => 'Общие теги';
 
   @override
@@ -351,12 +357,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get helpJsonTypeWord => 'Слово';
 
   @override
-  String get helpMode1Desc =>
-      'Распознавание голоса, перевод и прослушивание результата.';
+  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
 
   @override
   String get helpMode1Details =>
-      '• Голос: Нажмите микрофон для начала/остановки\n• Текст: Введите текст для перевода\n• Авто-поиск: Обнаруживает похожие предложения\n• Перевод: Нажмите кнопку для перевода\n• Слушать: Динамик для TTS (Оригинал/Перевод)\n• Сохранить: Добавляет в историю\n• Очистить: Сброс всех полей (TODO: Translate)';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -380,7 +385,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get helpModeChatDetails =>
-      '•\tЧат с ИИ: Практикуйте реальные разговоры с персонажем.\n•\tУправление участниками: Настройте язык для себя и для ИИ, чтобы избежать языковых несоответствий.\n•\tРолевая игра с GPS: Создавайте реалистичные диалоги, основанные на вашем текущем местоположении.\n•\tСохранение истории: Все разговоры безопасно хранятся на основе идентификатора, и история сохраняется даже при смене имени. (TODO: Translate)';
+      '• AI Чат: попрактикуйтесь в реальных разговорах с персонажами в меню «Чат» на нижней панели вкладок.\n• Настройка персонажа: свободно указывайте пол, имя и языковой код собеседника.\n• GPS-ситуация: распознает ваше текущее местоположение и рекомендует темы для разговора, соответствующие этому месту.\n• 2 языка: ответы ИИ отображаются вместе с переводами, чтобы максимизировать эффект обучения.\n• Управление записями: фильтрация прошлых разговоров и сохранение определенных сообщений из разговора в качестве учебных материалов.';
 
   @override
   String get helpTabJson => 'Формат JSON';
@@ -1282,12 +1287,63 @@ class AppLocalizationsRu extends AppLocalizations {
       'Этот язык не поддерживается для озвучивания на вашем устройстве.';
 
   @override
+  String get homeTab => 'Главная';
+
+  @override
   String get welcomeTitle => 'Добро пожаловать в Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie поддерживает более 80 языков и является умным инструментом перевода для путешественников. Улучшайте свои навыки речи с помощью AI Chat!';
+      'С Talkie вы можете мгновенно переводить между любыми из 80 языков и бесконечно практиковаться.';
 
   @override
   String get welcomeButton => 'Начать';
+
+  @override
+  String get labelDetails => 'Детальные настройки';
+
+  @override
+  String get translationResult => 'Результат перевода';
+
+  @override
+  String get inputContent => 'Содержание ввода';
+
+  @override
+  String get translateNow => 'Перевести сейчас';
+
+  @override
+  String get tooltipSettingsConfirm => 'Подтвердить настройки';
+
+  @override
+  String get hintNoteExample => 'Например: контекст, омонимы и т.д.';
+
+  @override
+  String get hintTagExample => 'Например: Бизнес, Путешествия...';
+
+  @override
+  String get addNew => 'Добавить новое';
+
+  @override
+  String get newNotebookTitle => 'Название новой тетради';
+
+  @override
+  String get enterNameHint => 'Введите имя';
+
+  @override
+  String get add => 'Добавить';
+
+  @override
+  String get openSettings => 'Открыть настройки';
+
+  @override
+  String get helpNotebook =>
+      'Выберите папку для сохранения переведенных результатов.';
+
+  @override
+  String get helpNote =>
+      'Свободно записывайте значения слов, примеры или ситуации.';
+
+  @override
+  String get helpTag =>
+      'Введите ключевые слова для классификации или поиска позже.';
 }

@@ -319,6 +319,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get gender => 'Xénero';
 
   @override
+  String get labelFilterMaterial => 'Material';
+
+  @override
+  String get labelFilterTag => 'Etiqueta';
+
+  @override
   String get generalTags => 'Etiquetas xerais';
 
   @override
@@ -356,7 +362,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Configuración de idioma: cambia o meu idioma e o idioma de aprendizaxe a través do menú da barra de aplicacións ou o botón de idioma na parte inferior\n• Entrada sinxela: análise automática (palabra/frase) e activación da área de configuración ao introducir texto\n• Micrófono/teclado: inicia o recoñecemento de voz ou a entrada de texto coa icona grande na pantalla principal\n• Configuración detallada: especifica coleccións de datos, etiquetas e notas de situación na área inferior que aparece durante a entrada\n• Busca automática: detección en tempo real de traducións existentes similares\n• Escoitar: reproduce a pronuncia nativa (TTS) coa icona do altofalante\n• Gardar: engade inmediatamente á túa propia lista de aprendizaxe con \'Gardar datos\'';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1290,12 +1296,63 @@ class AppLocalizationsGl extends AppLocalizations {
       'A configuración predeterminada deste dispositivo non admite a saída de voz neste idioma.';
 
   @override
+  String get homeTab => 'Inicio';
+
+  @override
   String get welcomeTitle => 'Benvido a Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie admite máis de 80 idiomas e é unha ferramenta intelixente para viaxeiros. Mellora a túa fala co chat de IA!';
+      'Con Talkie, podes traducir e practicar sen límites en 80 idiomas ao instante.';
 
   @override
   String get welcomeButton => 'Comezar';
+
+  @override
+  String get labelDetails => 'Axustes detallados';
+
+  @override
+  String get translationResult => 'Resultado da tradución';
+
+  @override
+  String get inputContent => 'Contido de entrada';
+
+  @override
+  String get translateNow => 'Traducir agora';
+
+  @override
+  String get tooltipSettingsConfirm => 'Confirmar axustes';
+
+  @override
+  String get hintNoteExample => 'Exemplo: Contexto, homónimos, etc.';
+
+  @override
+  String get hintTagExample => 'Exemplo: Negocios, viaxes...';
+
+  @override
+  String get addNew => 'Engadir novo';
+
+  @override
+  String get newNotebookTitle => 'Nome da nova colección';
+
+  @override
+  String get enterNameHint => 'Escribe un nome';
+
+  @override
+  String get add => 'Engadir';
+
+  @override
+  String get openSettings => 'Abrir axustes';
+
+  @override
+  String get helpNotebook =>
+      'Selecciona un cartafol para gardar os resultados traducidos.';
+
+  @override
+  String get helpNote =>
+      'Escribe libremente os significados das palabras, exemplos ou situacións.';
+
+  @override
+  String get helpTag =>
+      'Introduce palabras clave para clasificar ou buscar máis tarde.';
 }

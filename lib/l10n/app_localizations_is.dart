@@ -320,6 +320,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get gender => 'Kyn';
 
   @override
+  String get labelFilterMaterial => 'Efnisyfirlit';
+
+  @override
+  String get labelFilterTag => 'Merki';
+
+  @override
   String get generalTags => 'Almenn merki';
 
   @override
@@ -357,7 +363,7 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• Tungumálastillingar: Breyttu tungumálunum þínum og tungumálunum sem þú ert að læra í valmynd appsins eða með tungumálahnappnum neðst\n• Einföld innsláttur: Greinir og virkjar stillingarsvæðið sjálfkrafa þegar texti er sleginn inn (orð/setning)\n• Hljóðnemi/lyklaborð: Byrjaðu raddgreiningu eða textainnslátt með stóru táknunum á aðalskjánum\n• Ítarlegar stillingar: Tilgreindu gagnasafn, merki og aðstæðnaathugasemdir á neðri svæðinu sem birtist meðan á innslætti stendur\n• Sjálfvirk leit: Greinir svipaðar fyrri þýðingar í rauntíma\n• Hlustun: Spilaðu framburð móðurmáls með hátalaratákninu (TTS)\n• Vista: Bættu strax við þinn eigin námslista með \'Vista gögn\'';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1285,12 +1291,61 @@ class AppLocalizationsIs extends AppLocalizations {
       'Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu.';
 
   @override
+  String get homeTab => 'Heim';
+
+  @override
   String get welcomeTitle => 'Velkomin í Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie styður yfir 80 tungumál og er snjallt þýðingartæki fyrir ferðalanga. Bættu talfærni þína með gervigreindarspjalli!';
+      'Talkie gerir þér kleift að þýða strax á milli 80 tungumála og læra endalaust.';
 
   @override
   String get welcomeButton => 'Byrja';
+
+  @override
+  String get labelDetails => 'Ítarlegar stillingar';
+
+  @override
+  String get translationResult => 'Þýðingarniðurstaða';
+
+  @override
+  String get inputContent => 'Inntak';
+
+  @override
+  String get translateNow => 'Þýða núna';
+
+  @override
+  String get tooltipSettingsConfirm => 'Staðfesta stillingar';
+
+  @override
+  String get hintNoteExample => 'Dæmi: Samhengi, samheiti o.s.frv.';
+
+  @override
+  String get hintTagExample => 'Dæmi: Viðskipti, ferðalög...';
+
+  @override
+  String get addNew => 'Bæta við nýju';
+
+  @override
+  String get newNotebookTitle => 'Nafn á nýrri minnisbók';
+
+  @override
+  String get enterNameHint => 'Sláðu inn nafn';
+
+  @override
+  String get add => 'Bæta við';
+
+  @override
+  String get openSettings => 'Opna stillingar';
+
+  @override
+  String get helpNotebook => 'Veldu möppuna til að vista þýddar niðurstöður í.';
+
+  @override
+  String get helpNote =>
+      'Skrifaðu frjálst um merkingu orðsins, dæmi eða aðstæður.';
+
+  @override
+  String get helpTag => 'Sláðu inn leitarorð til að flokka eða leita seinna.';
 }

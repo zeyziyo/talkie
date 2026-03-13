@@ -316,6 +316,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get gender => 'Geschlecht';
 
   @override
+  String get labelFilterMaterial => 'Materialien';
+
+  @override
+  String get labelFilterTag => 'Schlagwörter';
+
+  @override
   String get generalTags => 'Allgemeine Tags';
 
   @override
@@ -349,11 +355,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get helpJsonTypeWord => 'Wort';
 
   @override
-  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+  String get helpMode1Desc =>
+      'Übersetzen Sie Sprache oder Text sofort und speichern Sie diese in Ihrer Lernliste.';
 
   @override
   String get helpMode1Details =>
-      '• Spracheinstellungen: Ändere deine Sprache und die Lernsprache über das App-Bar-Menü oder die Sprachschaltfläche unten.\n• Einfache Eingabe: Automatische Analyse (Wort/Satz) und Aktivierung des Einstellungsbereichs bei Texteingabe.\n• Mikrofon/Tastatur: Starte die Spracherkennung oder Texteingabe mit dem großen Symbol auf dem Hauptbildschirm.\n• Detaillierte Einstellungen: Gib im unteren Bereich, der während der Eingabe erscheint, Sammlungen, Tags und Situationsnotizen an.\n• Automatische Suche: Ähnliche bestehende Übersetzungen werden in Echtzeit erkannt.\n• Hören: Wiedergabe der Muttersprachlichen Aussprache (TTS) mit dem Lautsprechersymbol.\n• Speichern: Sofortiges Hinzufügen zu deiner eigenen Lernliste mit \'Daten speichern\'.';
+      '• Spracheinstellungen: Überprüfen Sie Ihre Muttersprache und die aktuelle Lernsprache oben auf dem Bildschirm und ändern Sie die Lernsprache über die Schaltflächen.\n• Einfache Eingabe: Starten Sie sofort über das große Mikrofon in der Mitte oder das Texteingabefeld.\n• Einstellungen bestätigen: Tippen Sie nach der Eingabe auf die blaue Häkchen-Schaltfläche rechts. Das Fenster für die detaillierten Einstellungen wird angezeigt.\n• Detaillierte Einstellungen: Legen Sie im Dialogfeld den Materialsatz, Notizen (Memos) und Tags für die Speicherung fest.\n• Jetzt übersetzen: Tippen Sie nach der Konfiguration auf die grüne Übersetzungsschaltfläche, um die KI-Übersetzung sofort durchzuführen.\n• Automatische Suche: Erkennt ähnliche vorhandene Übersetzungen in Echtzeit während der Eingabe.\n• Hören & Speichern: Hören Sie die Aussprache über das Lautsprechersymbol und tippen Sie auf \'Daten speichern\', um sie Ihrer Lernliste hinzuzufügen.';
 
   @override
   String get helpMode2Desc =>
@@ -1287,12 +1294,63 @@ class AppLocalizationsDe extends AppLocalizations {
       'Dieses Gerät unterstützt die Sprachausgabe für diese Sprache in den Standardeinstellungen nicht.';
 
   @override
+  String get homeTab => 'Startseite';
+
+  @override
   String get welcomeTitle => 'Willkommen bei Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie unterstützt über 80 Sprachen und ist ein intelligentes Übersetzungstool für Reisende. Verbessern Sie Ihre Sprechfertigkeiten durch KI-Chat!';
+      'Mit Talkie können Sie sofortiges wechselseitiges Übersetzen und unbegrenztes Wiederholungslernen zwischen 80 beliebigen Sprachen nutzen.';
 
   @override
   String get welcomeButton => 'Loslegen';
+
+  @override
+  String get labelDetails => 'Detaileinstellungen';
+
+  @override
+  String get translationResult => 'Übersetzungsergebnis';
+
+  @override
+  String get inputContent => 'Eingabeinhalt';
+
+  @override
+  String get translateNow => 'Jetzt übersetzen';
+
+  @override
+  String get tooltipSettingsConfirm => 'Einstellungen bestätigen';
+
+  @override
+  String get hintNoteExample => 'Beispiel: Kontext, Homonyme usw.';
+
+  @override
+  String get hintTagExample => 'Beispiel: Geschäftlich, Reisen...';
+
+  @override
+  String get addNew => 'Neu hinzufügen';
+
+  @override
+  String get newNotebookTitle => 'Neuer Notizbuchtitel';
+
+  @override
+  String get enterNameHint => 'Namen eingeben';
+
+  @override
+  String get add => 'Hinzufügen';
+
+  @override
+  String get openSettings => 'Einstellungen öffnen';
+
+  @override
+  String get helpNotebook =>
+      'Wählen Sie den Ordner zum Speichern der übersetzten Ergebnisse aus.';
+
+  @override
+  String get helpNote =>
+      'Notieren Sie frei die Bedeutung, Beispiele oder Situationen eines Wortes.';
+
+  @override
+  String get helpTag =>
+      'Geben Sie Schlüsselwörter zur späteren Kategorisierung oder Suche ein.';
 }

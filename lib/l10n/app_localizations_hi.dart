@@ -320,6 +320,12 @@ class AppLocalizationsHi extends AppLocalizations {
   String get gender => 'लिंग';
 
   @override
+  String get labelFilterMaterial => 'सामग्री';
+
+  @override
+  String get labelFilterTag => 'टैग';
+
+  @override
   String get generalTags => 'सामान्य टैग';
 
   @override
@@ -357,7 +363,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• भाषा सेटिंग: ऐप बार मेनू या निचले भाषा बटन के साथ मेरी भाषा और सीखने की भाषा बदलें\n• सरल इनपुट: टेक्स्ट इनपुट करते समय स्वचालित रूप से विश्लेषण (शब्द/वाक्य) और सेटिंग क्षेत्र को सक्रिय करें\n• माइक्रोफ़ोन/कीबोर्ड: मुख्य स्क्रीन पर बड़े आइकन के साथ ध्वनि पहचान या टेक्स्ट इनपुट शुरू करें\n• विस्तृत सेटिंग: इनपुट के दौरान दिखाई देने वाले निचले क्षेत्र में सामग्री, टैग और स्थिति मेमो निर्दिष्ट करें\n• स्वचालित खोज: समान मौजूदा अनुवाद का वास्तविक समय में पता लगाना\n• सुनना: स्पीकर आइकन के साथ देशी उच्चारण (टीटीएस) प्लेबैक\n• सहेजें: \'डेटा सहेजें\' के साथ तुरंत अपनी सीखने की सूची में जोड़ें';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc =>
@@ -1285,12 +1291,63 @@ class AppLocalizationsHi extends AppLocalizations {
       'यह उपकरण मूल रूप से इस भाषा में ध्वनि आउटपुट का समर्थन नहीं करता है.';
 
   @override
+  String get homeTab => 'होम';
+
+  @override
   String get welcomeTitle => 'Talkie में आपका स्वागत है!';
 
   @override
   String get welcomeDesc =>
-      'Talkie 80 से अधिक भाषाओं का समर्थन करता है और यात्रियों के लिए एक स्मार्ट अनुवाद उपकरण है। AI चैट के माध्यम से अपने बोलने के कौशल को बढ़ाएं!';
+      'टॉकी के साथ, 80 भाषाओं के बीच तुरंत आपसी अनुवाद और असीमित पुनरावृत्ति सीखें।';
 
   @override
   String get welcomeButton => 'शुरू करें';
+
+  @override
+  String get labelDetails => 'विस्तृत सेटिंग';
+
+  @override
+  String get translationResult => 'अनुवाद परिणाम';
+
+  @override
+  String get inputContent => 'इनपुट सामग्री';
+
+  @override
+  String get translateNow => 'अभी अनुवाद करें';
+
+  @override
+  String get tooltipSettingsConfirm => 'सेटिंग की पुष्टि करें';
+
+  @override
+  String get hintNoteExample => 'उदाहरण: स्थिति का वर्णन, समानार्थी शब्द आदि';
+
+  @override
+  String get hintTagExample => 'उदाहरण: व्यवसाय, यात्रा...';
+
+  @override
+  String get addNew => 'नया जोड़ें';
+
+  @override
+  String get newNotebookTitle => 'नई नोटबुक का नाम';
+
+  @override
+  String get enterNameHint => 'नाम दर्ज करें';
+
+  @override
+  String get add => 'जोड़ें';
+
+  @override
+  String get openSettings => 'सेटिंग खोलें';
+
+  @override
+  String get helpNotebook =>
+      'अनुवादित परिणामों को सहेजने के लिए फ़ोल्डर चुनें।';
+
+  @override
+  String get helpNote =>
+      'शब्दों के अर्थ, उदाहरण या स्थितियों आदि को स्वतंत्र रूप से लिखें।';
+
+  @override
+  String get helpTag =>
+      'बाद में वर्गीकृत करने या खोजने के लिए कीवर्ड दर्ज करें।';
 }

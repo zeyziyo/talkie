@@ -318,6 +318,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get gender => 'جنسیت';
 
   @override
+  String get labelFilterMaterial => 'جزوه';
+
+  @override
+  String get labelFilterTag => 'برچسب';
+
+  @override
   String get generalTags => 'برچسب های عمومی';
 
   @override
@@ -354,7 +360,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• تنظیمات زبان: زبان خود و زبان یادگیری را با منوی نوار برنامه یا دکمه زبان پایین تغییر دهید.\n• ورودی ساده: هنگام وارد کردن متن، به طور خودکار تجزیه و تحلیل می شود (کلمه/جمله) و ناحیه تنظیمات فعال می شود.\n• میکروفون/صفحه کلید: تشخیص صدا یا ورودی متن را با نماد بزرگ در صفحه اصلی شروع کنید.\n• تنظیمات دقیق: دفترچه راهنما، برچسب و یادداشت موقعیت را در ناحیه پایین که در حین وارد کردن ظاهر می شود، مشخص کنید.\n• جستجوی خودکار: تشخیص فوری ترجمه های موجود مشابه.\n• گوش دادن: پخش تلفظ زبان مادری (TTS) با نماد بلندگو.\n• ذخیره: بلافاصله با «ذخیره داده» به لیست یادگیری خود اضافه کنید';
+      '• 언어 설정: 홈 화면 상단의 언어 버튼으로 내 언어와 학습 중인 언어를 확인하고 학습 언어를 변경할 수 있습니다.\n• 심플 입력: 중앙의 대형 마이크 및 텍스트 창을 통해 즉시 입력하세요.\n• 설정 확인: 입력이 끝나면 오른쪽의 파란색 체크 버튼을 누르세요. 상세 설정 창이 나타납니다.\n• 상세 설정: 나타난 다이얼로그에서 저장할 자료집, 주석(메모), 태그를 지정할 수 있습니다.\n• 지금 번역하기: 설정을 마친 후 초록색 번역 버튼을 누르면 인공지능이 즉시 번역을 수행합니다.\n• 자동 검색: 입력 중 유사한 기존 번역을 실시간으로 감지하여 보여줍니다.\n• 듣기 및 저장: 번역 결과 하단의 스피커 아이콘으로 발음을 듣고, \'데이터 저장\'을 통해 학습 리스트에 추가하세요.';
 
   @override
   String get helpMode2Desc => 'مرور جملات ذخیره شده با ترجمه مخفی.';
@@ -1274,12 +1280,62 @@ class AppLocalizationsFa extends AppLocalizations {
       'خروجی صوتی برای این زبان در تنظیمات پیش فرض این دستگاه پشتیبانی نمی شود.';
 
   @override
+  String get homeTab => 'خانه';
+
+  @override
   String get welcomeTitle => 'به Talkie خوش آمدید!';
 
   @override
   String get welcomeDesc =>
-      'Talkie از بیش از ۸۰ زبان پشتیبانی می‌کند و ابزاری هوشمند برای مسافران است. مهارت‌های گفتاری خود را با چت هوش مصنوعی ارتقا دهید!';
+      'با Talkie، می توانید فوراً بین هر یک از 80 زبان ترجمه متقابل داشته باشید و یادگیری نامحدود را تکرار کنید.';
 
   @override
   String get welcomeButton => 'شروع کنید';
+
+  @override
+  String get labelDetails => 'جزئیات';
+
+  @override
+  String get translationResult => 'نتیجه ترجمه';
+
+  @override
+  String get inputContent => 'متن ورودی';
+
+  @override
+  String get translateNow => 'ترجمه کن';
+
+  @override
+  String get tooltipSettingsConfirm => 'تایید تنظیمات';
+
+  @override
+  String get hintNoteExample => 'مثال: توضیحات بیشتر، کلمات هم‌معنی و غیره';
+
+  @override
+  String get hintTagExample => 'مثال: کسب و کار، سفر و...';
+
+  @override
+  String get addNew => 'اضافه کردن جدید';
+
+  @override
+  String get newNotebookTitle => 'نام دفترچه یادداشت جدید';
+
+  @override
+  String get enterNameHint => 'نام را وارد کنید';
+
+  @override
+  String get add => 'اضافه';
+
+  @override
+  String get openSettings => 'باز کردن تنظیمات';
+
+  @override
+  String get helpNotebook => 'پوشه ای را برای ذخیره نتایج ترجمه انتخاب کنید.';
+
+  @override
+  String get helpNote =>
+      'معانی، مثال ها، موقعیت ها و غیره کلمات را آزادانه یادداشت کنید.';
+
+  @override
+  String get helpTag =>
+      'برای طبقه بندی یا جستجو در آینده، کلمات کلیدی را وارد کنید.';
 }

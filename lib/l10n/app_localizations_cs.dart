@@ -315,6 +315,12 @@ class AppLocalizationsCs extends AppLocalizations {
   String get gender => 'Pohlaví';
 
   @override
+  String get labelFilterMaterial => 'Materiály';
+
+  @override
+  String get labelFilterTag => 'Štítky';
+
+  @override
   String get generalTags => 'Obecné štítky';
 
   @override
@@ -347,11 +353,12 @@ class AppLocalizationsCs extends AppLocalizations {
   String get helpJsonTypeWord => 'Slovo';
 
   @override
-  String get helpMode1Desc => '음성을 인식하거나 텍스트를 입력하여 즉시 번역하고, 학습 리스트에 저장하세요.';
+  String get helpMode1Desc =>
+      'Okamžitě překládejte rozpoznáním hlasu nebo zadáním textu a uložte si je do seznamu učení.';
 
   @override
   String get helpMode1Details =>
-      '• Nastavení jazyka: Změňte svůj jazyk a jazyk, který se učíte, v nabídce aplikace nebo pomocí tlačítka jazyka ve spodní části\n• Jednoduché zadávání: Automatická analýza (slovo/věta) při zadávání textu a aktivace oblasti nastavení\n• Mikrofon/klávesnice: Spusťte rozpoznávání hlasu nebo zadávání textu pomocí velké ikony na hlavní obrazovce\n• Podrobné nastavení: Určete sbírku dat, značky, situační poznámky v dolní oblasti, která se objeví během zadávání\n• Automatické vyhledávání: Detekce podobných existujících překladů v reálném čase\n• Poslech: Přehrávání výslovnosti rodilého mluvčího (TTS) pomocí ikony reproduktoru\n• Uložit: Okamžité přidání do vašeho vlastního studijního seznamu pomocí \'Uložit data\'';
+      '• Nastavení jazyka: Pomocí jazykového tlačítka v horní části domovské obrazovky zkontrolujte svůj jazyk a jazyk, který se učíte, a změňte jazyk učení.\n• Jednoduché zadávání: Okamžitě zadejte text pomocí velkého mikrofonu a textového okna uprostřed.\n• Zkontrolovat nastavení: Po dokončení zadávání stiskněte modré tlačítko zaškrtnutí vpravo. Zobrazí se okno podrobného nastavení.\n• Podrobné nastavení: V zobrazeném dialogovém okně můžete určit sbírku dat, poznámky (poznámky) a značky, které chcete uložit.\n• Přeložit nyní: Po dokončení nastavení stiskněte zelené tlačítko překladu a umělá inteligence okamžitě provede překlad.\n• Automatické vyhledávání: Během psaní detekuje a zobrazuje podobné existující překlady v reálném čase.\n• Poslech a uložení: Poslechněte si výslovnost pomocí ikony reproduktoru ve spodní části výsledku překladu a přidejte jej do seznamu učení pomocí možnosti „Uložit data“.';
 
   @override
   String get helpMode2Desc => 'Opakování uložených vět se skrytým překladem.';
@@ -1269,12 +1276,63 @@ class AppLocalizationsCs extends AppLocalizations {
       'Tento jazyk není nativně podporován pro převod textu na řeč na tomto zařízení.';
 
   @override
+  String get homeTab => 'Domů';
+
+  @override
   String get welcomeTitle => 'Vítejte v Talkie!';
 
   @override
   String get welcomeDesc =>
-      'Talkie podporuje více než 80 jazyků a je chytrý nástroj pro překlad pro cestovatele. Zlepšete své řečové dovednosti pomocí AI chatu!';
+      'S Talkie můžete okamžitě překládat mezi 80 jazyky a učit se donekonečna.';
 
   @override
   String get welcomeButton => 'Začít';
+
+  @override
+  String get labelDetails => 'Podrobné nastavení';
+
+  @override
+  String get translationResult => 'Výsledek překladu';
+
+  @override
+  String get inputContent => 'Vstupní obsah';
+
+  @override
+  String get translateNow => 'Přeložit nyní';
+
+  @override
+  String get tooltipSettingsConfirm => 'Potvrdit nastavení';
+
+  @override
+  String get hintNoteExample => 'Např.: kontext, homonyma atd.';
+
+  @override
+  String get hintTagExample => 'Např.: podnikání, cestování...';
+
+  @override
+  String get addNew => 'Přidat nový';
+
+  @override
+  String get newNotebookTitle => 'Název nového zápisníku';
+
+  @override
+  String get enterNameHint => 'Zadejte jméno';
+
+  @override
+  String get add => 'Přidat';
+
+  @override
+  String get openSettings => 'Otevřít nastavení';
+
+  @override
+  String get helpNotebook =>
+      'Vyberte složku, kam chcete uložit přeložené výsledky.';
+
+  @override
+  String get helpNote =>
+      'Libovolně si zapisujte významy slov, příklady nebo situace.';
+
+  @override
+  String get helpTag =>
+      'Zadejte klíčová slova pro pozdější kategorizaci nebo vyhledávání.';
 }
