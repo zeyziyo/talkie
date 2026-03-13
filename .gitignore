@@ -66,3 +66,4 @@ archive/
 *.tar
 *.gz
 *.gz
+node_modules
