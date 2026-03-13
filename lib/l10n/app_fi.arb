@@ -776,6 +776,6 @@
   "yourPronunciation": "Sinun ääntämys",
   "ttsUnsupportedNatively": "Tämän laitteen oletusasetukset eivät tue tekstin puheeksi muuntoa tällä kielellä.",
   "welcomeTitle": "Tervetuloa Talkieen!",
-  "welcomeDesc": "Talkie tukee yli 80 kieltä ja on älykäs käännöstyökalu matkailijoille. Paranna puhekykyäsi tehisälychatin avulla!",
+  "welcomeDesc": "Talkie mahdollistaa välittömän ja toistuvan käännöksen 80 kielen välillä.",
   "welcomeButton": "Aloita"
 }

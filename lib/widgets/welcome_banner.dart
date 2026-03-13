@@ -17,14 +17,14 @@ class WelcomeBanner extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 16),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
-          colors: [Color(0xFF667eea), Color(0xFF764ba2)],
+          colors: [Color(0xFF1E293B), Color(0xFF0F172A)],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.indigo.withValues(alpha: 0.3),
+            color: Colors.black.withValues(alpha: 0.3),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -42,7 +42,7 @@ class WelcomeBanner extends StatelessWidget {
                 width: 100,
                 height: 100,
                 decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.1),
+                  color: Colors.white.withValues(alpha: 0.05),
                   shape: BoxShape.circle,
                 ),
               ),
@@ -58,7 +58,7 @@ class WelcomeBanner extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                          color: Colors.white.withValues(alpha: 0.2),
+                          color: Colors.white.withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: const Icon(Icons.auto_awesome, color: Colors.white, size: 24),
@@ -79,8 +79,8 @@ class WelcomeBanner extends StatelessWidget {
                   const SizedBox(height: 12),
                   Text(
                     l10n.welcomeDesc,
-                    style: TextStyle(
-                      color: Colors.white.withValues(alpha: 0.9),
+                    style: const TextStyle(
+                      color: Colors.white,
                       fontSize: 14,
                       height: 1.5,
                     ),
