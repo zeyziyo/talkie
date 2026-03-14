@@ -625,7 +625,7 @@ class MeshMicIcon extends StatelessWidget {
       height: size,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: Colors.transparent, // 마이크 이미지의 자체 원형 배경 사용
+        color: Colors.transparent, 
         boxShadow: [
           if (isListening)
             BoxShadow(
@@ -635,122 +635,12 @@ class MeshMicIcon extends StatelessWidget {
             ),
         ],
       ),
-      child: CustomPaint(
-        size: Size(size, size),
-        painter: MeshMicPainter(color: color),
+      child: Image.asset(
+        'assets/icon_mic.png',
+        width: size,
+        height: size,
+        fit: BoxFit.contain,
       ),
     );
   }
-}
-
-class MeshMicPainter extends CustomPainter {
-  final Color color;
-
-  MeshMicPainter({required this.color});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final double centerX = size.width / 2;
-    final double centerY = size.height / 2;
-    final double radius = size.width / 2;
-
-    // 1. Deep Navy Circular Background (Matching original PNG)
-    final Paint bgPaint = Paint()
-      ..color = const Color(0xFF0D1B2A) // Very deep navy/dark blue
-      ..style = PaintingStyle.fill;
-    canvas.drawCircle(Offset(centerX, centerY), radius, bgPaint);
-
-    final double micCenterX = centerX;
-    final double micCenterY = centerY * 0.9; // Slightly upper center
-    final double micWidth = size.width * 0.32;
-    final double micHeight = size.height * 0.55;
-
-    // Colors for Metallic effect
-    const Color silverLight = Color(0xFFE0E0E0);
-    const Color silverMid = Color(0xFF9E9E9E);
-    const Color silverDark = Color(0xFF616161);
-
-    // 2. Microphone Head (Grille) - Top Half
-    final Rect grilleRect = Rect.fromCenter(
-      center: Offset(micCenterX, micCenterY - micHeight * 0.15),
-      width: micWidth,
-      height: micHeight * 0.5,
-    );
-    final RRect grilleRRect = RRect.fromRectAndCorners(
-      grilleRect,
-      topLeft: Radius.circular(micWidth / 2),
-      topRight: Radius.circular(micWidth / 2),
-    );
-
-    final Paint grillePaint = Paint()
-      ..shader = LinearGradient(
-        colors: [silverDark, silverLight, silverDark],
-        begin: Alignment.centerLeft,
-        end: Alignment.centerRight,
-      ).createShader(grilleRect);
-    canvas.drawRRect(grilleRRect, grillePaint);
-
-    // Mesh Pattern on Grille
-    final Paint meshPaint = Paint()
-      ..color = Colors.black.withValues(alpha: 0.25)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 0.8;
-    for (double y = grilleRect.top + 8; y < grilleRect.bottom - 4; y += 5) {
-      canvas.drawLine(Offset(grilleRect.left + 4, y), Offset(grilleRect.right - 4, y), meshPaint);
-    }
-
-    // 3. Middle Ring (Separator)
-    final Paint ringPaint = Paint()..color = silverLight;
-    canvas.drawRect(
-      Rect.fromCenter(center: Offset(micCenterX, micCenterY + micHeight * 0.1), width: micWidth + 2, height: 4),
-      ringPaint,
-    );
-
-    // 4. Microphone Body (Bottom Half)
-    final Rect bodyRect = Rect.fromCenter(
-      center: Offset(micCenterX, micCenterY + micHeight * 0.3),
-      width: micWidth * 0.9,
-      height: micHeight * 0.4,
-    );
-    final Paint bodyPaint = Paint()
-      ..shader = LinearGradient(
-        colors: [silverDark, silverLight, silverDark],
-        begin: Alignment.centerLeft,
-        end: Alignment.centerRight,
-      ).createShader(bodyRect);
-    canvas.drawRect(bodyRect, bodyPaint);
-
-    // 5. Cradle (U-Shape Support)
-    final Paint cradlePaint = Paint()
-      ..color = silverLight
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 5.0
-      ..strokeCap = StrokeCap.round;
-
-    final Rect cradleArcRect = Rect.fromCenter(
-      center: Offset(micCenterX, micCenterY + micHeight * 0.25),
-      width: micWidth + 16,
-      height: micHeight * 0.6,
-    );
-    canvas.drawArc(cradleArcRect, 0.1 * 3.1415, 0.8 * 3.1415, false, cradlePaint);
-
-    // 6. Stand Pillar & Base
-    final Paint standPaint = Paint()..color = silverMid;
-    // Pillar
-    canvas.drawRect(
-      Rect.fromCenter(center: Offset(micCenterX, centerY + micHeight * 0.65), width: 8, height: 12),
-      standPaint,
-    );
-    // Base Plate (3D look)
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(center: Offset(micCenterX, centerY + micHeight * 0.75), width: micWidth * 1.5, height: 6),
-        const Radius.circular(3),
-      ),
-      standPaint,
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant MeshMicPainter oldDelegate) => oldDelegate.color != color;
 }
