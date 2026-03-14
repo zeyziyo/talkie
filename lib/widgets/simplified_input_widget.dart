@@ -626,115 +626,12 @@ class MeshMicIcon extends StatelessWidget {
             ),
         ],
       ),
-      child: CustomPaint(
-        size: Size(size, size),
-        painter: MeshMicPainter(color: color),
+      child: Image.asset(
+        'assets/mic_geometric_final.png',
+        width: size,
+        height: size,
+        fit: BoxFit.contain,
       ),
     );
   }
-}
-
-class MeshMicPainter extends CustomPainter {
-  final Color color;
-
-  MeshMicPainter({required this.color});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final double centerX = size.width / 2;
-    final double centerY = size.height * 0.40;
-    final double micWidth = size.width * 0.44; 
-    final double micHeight = size.height * 0.72; 
-    
-    // 1. Sleek Capsule Body (Dynamic Metallic Gradient)
-    final RRect micBodyRRect = RRect.fromRectAndRadius(
-      Rect.fromCenter(center: Offset(centerX, centerY), width: micWidth, height: micHeight),
-      Radius.circular(micWidth / 2.0),
-    );
-
-    // Dynamic Gradient based on base color
-    final HSLColor colorHSL = HSLColor.fromColor(color);
-    
-    final metallicGradient = LinearGradient(
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-      colors: [
-        colorHSL.withLightness((colorHSL.lightness + 0.3).clamp(0.0, 1.0)).toColor(), // Reflection
-        color, // Base Color
-        colorHSL.withLightness((colorHSL.lightness - 0.2).clamp(0.0, 1.0)).toColor(), // Shadow
-      ],
-      stops: const [0.0, 0.45, 1.0],
-    ).createShader(Rect.fromLTWH(centerX - micWidth/2, centerY - micHeight/2, micWidth, micHeight));
-
-    final paint = Paint()..isAntiAlias = true..style = PaintingStyle.fill;
-    paint.shader = metallicGradient;
-
-    // Draw Capsule Body
-    canvas.drawRRect(micBodyRRect, paint);
-
-    // 2. Seamless Unified Frame (U + Pillar + Base integrated)
-    final framePaint = Paint()
-      ..shader = LinearGradient(
-        colors: [
-           colorHSL.withLightness((colorHSL.lightness - 0.1).clamp(0.0, 1.0)).toColor(),
-           colorHSL.withLightness((colorHSL.lightness + 0.2).clamp(0.0, 1.0)).toColor(),
-           colorHSL.withLightness((colorHSL.lightness - 0.3).clamp(0.0, 1.0)).toColor(),
-        ],
-      ).createShader(Rect.fromLTWH(centerX - micWidth * 0.8, centerY, micWidth * 1.6, micHeight))
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 10.0
-      ..strokeCap = StrokeCap.round;
-
-    final Path seamlessPath = Path();
-    final double yokeInnerW = micWidth * 1.60;
-    final double yokeTopY = centerY + 10;
-    final double yokeBottomY = centerY + micHeight * 0.48;
-    final double basePillarY = size.height * 0.95; // Adjusted to be within container
-
-    // Left half of U
-    seamlessPath.moveTo(centerX - yokeInnerW / 2, yokeTopY);
-    seamlessPath.lineTo(centerX - yokeInnerW / 2, yokeBottomY - 18);
-    
-    // Bottom Curve leading to THE CENTER (Seamless)
-    seamlessPath.arcToPoint(
-      Offset(centerX, yokeBottomY + 2),
-      radius: Radius.circular(yokeInnerW / 2.0),
-      clockwise: false,
-    );
-    
-    // Right half of U
-    seamlessPath.arcToPoint(
-      Offset(centerX + yokeInnerW / 2, yokeBottomY - 18),
-      radius: Radius.circular(yokeInnerW / 2.0),
-      clockwise: false,
-    );
-    seamlessPath.lineTo(centerX + yokeInnerW / 2, yokeTopY);
-    
-    // Pillar
-    seamlessPath.moveTo(centerX, yokeBottomY + 2);
-    seamlessPath.lineTo(centerX, basePillarY);
-
-    canvas.drawPath(seamlessPath, framePaint);
-
-    // 3. Integrated Horizontal Base
-    final basePaint = Paint()
-      ..shader = LinearGradient(
-        colors: [
-           colorHSL.withLightness((colorHSL.lightness - 0.2).clamp(0.0, 1.0)).toColor(),
-           colorHSL.withLightness((colorHSL.lightness - 0.4).clamp(0.0, 1.0)).toColor(),
-        ],
-      ).createShader(Rect.fromCenter(center: Offset(centerX, basePillarY), width: size.width * 0.65, height: 12))
-      ..style = PaintingStyle.fill;
-    
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(center: Offset(centerX, basePillarY), width: size.width * 0.65, height: 12),
-        const Radius.circular(4),
-      ),
-      basePaint
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

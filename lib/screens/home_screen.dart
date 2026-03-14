@@ -75,6 +75,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _tabController.addListener(() {
       if (!mounted) return;
       if (!_tabController.indexIsChanging) {
+         if (appState.currentMode != _tabController.index) {
+           appState.switchMode(_tabController.index);
+         }
          setState(() {}); 
       }
     });
@@ -432,7 +435,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             return AppBar(
               title: const Text('Talkie', style: TextStyle(
                 fontWeight: FontWeight.w900, 
-                fontSize: 32, 
+                fontSize: 34, // v15.9: Increased font size for better balance
                 letterSpacing: -1.2, 
                 color: Colors.black,
                 shadows: [
@@ -445,12 +448,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               leading: Builder(
                 builder: (context) => IconButton(
                   key: _menuKey,
-                  icon: const Icon(Icons.menu),
+                  icon: const Icon(Icons.menu, size: 28), // v15.9: Slightly larger menu icon
                   onPressed: () => Scaffold.of(context).openDrawer(),
                 ),
               ),
               bottom: PreferredSize(
-                preferredSize: Size.fromHeight((appState.currentMode >= 1 && appState.currentMode <= 2) ? 98.0 : 48.0),
+                preferredSize: Size.fromHeight((appState.currentMode >= 1 && appState.currentMode <= 2) ? 104.0 : 54.0), // v15.9: Optimized heights
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -467,21 +470,25 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                         onTap: (index) => appState.switchMode(index),
                         tabs: [
-                          Tab(
-                            text: _tabController.index == 0 ? l10n.homeTab : null, 
-                            icon: const Icon(Icons.home_rounded, size: 24)
+                          _buildModernTab(
+                            isSelected: appState.currentMode == 0,
+                            icon: Icons.home_rounded,
+                            label: l10n.homeTab,
                           ),
-                          Tab(
-                            text: _tabController.index == 1 ? l10n.reviewModeTitle : null, 
-                            icon: const Icon(Icons.auto_stories, size: 24)
+                          _buildModernTab(
+                            isSelected: appState.currentMode == 1,
+                            icon: Icons.auto_stories,
+                            label: l10n.reviewModeTitle,
                           ),
-                          Tab(
-                            text: _tabController.index == 2 ? l10n.practiceModeTitle : null, 
-                            icon: const Icon(Icons.record_voice_over, size: 24)
+                          _buildModernTab(
+                            isSelected: appState.currentMode == 2,
+                            icon: Icons.record_voice_over,
+                            label: l10n.practiceModeTitle,
                           ),
-                          Tab(
-                            text: _tabController.index == 3 ? l10n.chatAiChat : null, 
-                            icon: const Icon(Icons.chat_bubble, size: 24)
+                          _buildModernTab(
+                            isSelected: appState.currentMode == 3,
+                            icon: Icons.chat_bubble,
+                            label: l10n.chatAiChat,
                           ),
                         ],
                       ),
@@ -1101,5 +1108,30 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         ),
       ),
     );
+  }
+  
+  Widget _buildModernTab({required bool isSelected, required IconData icon, required String label}) {
+     return Tab(
+       height: 44, // v15.9: Compact height
+       child: Row(
+         mainAxisAlignment: MainAxisAlignment.center,
+         mainAxisSize: MainAxisSize.min,
+         children: [
+           Icon(icon, size: 22), // slightly smaller icon
+           if (isSelected) 
+             Padding(
+               padding: const EdgeInsets.only(left: 6.0),
+               child: Text(
+                 label, 
+                 style: const TextStyle(
+                   fontWeight: FontWeight.bold,
+                   fontSize: 14,
+                 ),
+                 overflow: TextOverflow.ellipsis,
+               ),
+             ),
+         ],
+       ),
+     );
   }
 }
