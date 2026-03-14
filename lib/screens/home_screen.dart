@@ -71,6 +71,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _pageController = PageController(initialPage: appState.currentMode);
     _tabController = TabController(length: 4, vsync: this, initialIndex: appState.currentMode);
     
+    // UI simplification: Refresh when tab changes to show/hide labels
+    _tabController.addListener(() {
+      if (!mounted) return;
+      if (!_tabController.indexIsChanging) {
+         setState(() {}); 
+      }
+    });
+
     appState.setPageController(_pageController);
 
     // TTS Error Listener
@@ -459,10 +467,22 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                         onTap: (index) => appState.switchMode(index),
                         tabs: [
-                          Tab(text: l10n.homeTab, icon: const Icon(Icons.home_rounded, size: 20)),
-                          Tab(text: l10n.reviewModeTitle, icon: const Icon(Icons.auto_stories, size: 20)),
-                          Tab(text: l10n.practiceModeTitle, icon: const Icon(Icons.record_voice_over, size: 20)),
-                          Tab(text: l10n.chatAiChat, icon: const Icon(Icons.chat_bubble, size: 20)),
+                          Tab(
+                            text: _tabController.index == 0 ? l10n.homeTab : null, 
+                            icon: const Icon(Icons.home_rounded, size: 24)
+                          ),
+                          Tab(
+                            text: _tabController.index == 1 ? l10n.reviewModeTitle : null, 
+                            icon: const Icon(Icons.auto_stories, size: 24)
+                          ),
+                          Tab(
+                            text: _tabController.index == 2 ? l10n.practiceModeTitle : null, 
+                            icon: const Icon(Icons.record_voice_over, size: 24)
+                          ),
+                          Tab(
+                            text: _tabController.index == 3 ? l10n.chatAiChat : null, 
+                            icon: const Icon(Icons.chat_bubble, size: 24)
+                          ),
                         ],
                       ),
                     ),
