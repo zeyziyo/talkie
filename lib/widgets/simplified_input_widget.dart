@@ -651,75 +651,101 @@ class MeshMicPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final double centerX = size.width / 2;
-    final double centerY = size.height * 0.42;
-    final double micWidth = size.width * 0.42;
-    final double micHeight = size.height * 0.68;
+    final double centerY = size.height / 2;
+    final double radius = size.width / 2;
 
-    // 1. Sleek Capsule Body with 3D Depth
-    final RRect micBodyRRect = RRect.fromRectAndRadius(
-      Rect.fromCenter(center: Offset(centerX, centerY), width: micWidth, height: micHeight),
-      Radius.circular(micWidth / 2),
+    // 1. Deep Navy Circular Background (Matching original PNG)
+    final Paint bgPaint = Paint()
+      ..color = const Color(0xFF0D1B2A) // Very deep navy/dark blue
+      ..style = PaintingStyle.fill;
+    canvas.drawCircle(Offset(centerX, centerY), radius, bgPaint);
+
+    final double micCenterX = centerX;
+    final double micCenterY = centerY * 0.9; // Slightly upper center
+    final double micWidth = size.width * 0.32;
+    final double micHeight = size.height * 0.55;
+
+    // Colors for Metallic effect
+    const Color silverLight = Color(0xFFE0E0E0);
+    const Color silverMid = Color(0xFF9E9E9E);
+    const Color silverDark = Color(0xFF616161);
+
+    // 2. Microphone Head (Grille) - Top Half
+    final Rect grilleRect = Rect.fromCenter(
+      center: Offset(micCenterX, micCenterY - micHeight * 0.15),
+      width: micWidth,
+      height: micHeight * 0.5,
+    );
+    final RRect grilleRRect = RRect.fromRectAndCorners(
+      grilleRect,
+      topLeft: Radius.circular(micWidth / 2),
+      topRight: Radius.circular(micWidth / 2),
     );
 
-    final HSLColor hsl = HSLColor.fromColor(color);
-    
-    // Multi-tone Metallic Gradient for 3D effect
-    final Paint bodyPaint = Paint()
+    final Paint grillePaint = Paint()
       ..shader = LinearGradient(
-        colors: [
-          hsl.withLightness(0.2).toColor(),
-          hsl.withLightness(0.5).toColor(),
-          hsl.withLightness(0.8).toColor(), // Highlight
-          hsl.withLightness(0.5).toColor(),
-          hsl.withLightness(0.2).toColor(),
-        ],
-        stops: const [0.0, 0.25, 0.5, 0.75, 1.0],
+        colors: [silverDark, silverLight, silverDark],
         begin: Alignment.centerLeft,
         end: Alignment.centerRight,
-      ).createShader(micBodyRRect.outerRect);
+      ).createShader(grilleRect);
+    canvas.drawRRect(grilleRRect, grillePaint);
 
-    canvas.drawRRect(micBodyRRect, bodyPaint);
-
-    // 2. Mesh/Grille Pattern (Subtle)
+    // Mesh Pattern on Grille
     final Paint meshPaint = Paint()
-      ..color = Colors.black.withValues(alpha: 0.15)
+      ..color = Colors.black.withValues(alpha: 0.25)
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.2;
-
-    for (double y = centerY - micHeight / 2 + 12; y < centerY + micHeight / 3; y += 7) {
-      canvas.drawLine(
-        Offset(centerX - micWidth / 2 + 5, y),
-        Offset(centerX + micWidth / 2 - 5, y),
-        meshPaint,
-      );
+      ..strokeWidth = 0.8;
+    for (double y = grilleRect.top + 8; y < grilleRect.bottom - 4; y += 5) {
+      canvas.drawLine(Offset(grilleRect.left + 4, y), Offset(grilleRect.right - 4, y), meshPaint);
     }
 
-    // 3. Realistic Cradle (U-Shape)
+    // 3. Middle Ring (Separator)
+    final Paint ringPaint = Paint()..color = silverLight;
+    canvas.drawRect(
+      Rect.fromCenter(center: Offset(micCenterX, micCenterY + micHeight * 0.1), width: micWidth + 2, height: 4),
+      ringPaint,
+    );
+
+    // 4. Microphone Body (Bottom Half)
+    final Rect bodyRect = Rect.fromCenter(
+      center: Offset(micCenterX, micCenterY + micHeight * 0.3),
+      width: micWidth * 0.9,
+      height: micHeight * 0.4,
+    );
+    final Paint bodyPaint = Paint()
+      ..shader = LinearGradient(
+        colors: [silverDark, silverLight, silverDark],
+        begin: Alignment.centerLeft,
+        end: Alignment.centerRight,
+      ).createShader(bodyRect);
+    canvas.drawRect(bodyRect, bodyPaint);
+
+    // 5. Cradle (U-Shape Support)
     final Paint cradlePaint = Paint()
-      ..color = hsl.withLightness(0.3).toColor()
+      ..color = silverLight
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 6.0
+      ..strokeWidth = 5.0
       ..strokeCap = StrokeCap.round;
 
-    final Rect cradleRect = Rect.fromCenter(
-      center: Offset(centerX, centerY + 8),
-      width: micWidth + 18,
-      height: micHeight,
+    final Rect cradleArcRect = Rect.fromCenter(
+      center: Offset(micCenterX, micCenterY + micHeight * 0.25),
+      width: micWidth + 16,
+      height: micHeight * 0.6,
     );
-    canvas.drawArc(cradleRect, 0.15 * 3.1415, 0.7 * 3.1415, false, cradlePaint);
+    canvas.drawArc(cradleArcRect, 0.1 * 3.1415, 0.8 * 3.1415, false, cradlePaint);
 
-    // 4. Sturdy Base/Stand
-    final Paint standPaint = Paint()..color = hsl.withLightness(0.2).toColor();
+    // 6. Stand Pillar & Base
+    final Paint standPaint = Paint()..color = silverMid;
     // Pillar
     canvas.drawRect(
-      Rect.fromCenter(center: Offset(centerX, size.height * 0.88), width: 10, height: 16),
+      Rect.fromCenter(center: Offset(micCenterX, centerY + micHeight * 0.65), width: 8, height: 12),
       standPaint,
     );
-    // Base Plate
+    // Base Plate (3D look)
     canvas.drawRRect(
       RRect.fromRectAndRadius(
-        Rect.fromCenter(center: Offset(centerX, size.height * 0.95), width: size.width * 0.6, height: 8),
-        const Radius.circular(4),
+        Rect.fromCenter(center: Offset(micCenterX, centerY + micHeight * 0.75), width: micWidth * 1.5, height: 6),
+        const Radius.circular(3),
       ),
       standPaint,
     );
