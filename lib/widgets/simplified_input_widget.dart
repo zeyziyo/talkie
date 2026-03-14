@@ -282,19 +282,28 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     }
 
     final Widget labelWidget = Container(
-      padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+      padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 12),
       alignment: Alignment.center,
-      decoration: isLocked ? null : BoxDecoration(
-        color: Colors.blue.shade50.withValues(alpha: 0.5),
-        borderRadius: BorderRadius.circular(8),
+      decoration: BoxDecoration(
+        color: isLocked ? Colors.grey.shade300 : const Color(0xFF3F51B5), // Deep Indigo for contrast
+        borderRadius: BorderRadius.circular(20), // More rounded capsule
+        boxShadow: [
+          if (!isLocked)
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.1),
+              blurRadius: 4,
+              offset: const Offset(0, 2),
+            )
+        ],
       ),
       child: Text(
         displayName,
         textAlign: TextAlign.center,
         style: TextStyle(
-          fontSize: 16, 
-          fontWeight: FontWeight.bold, 
-          color: isLocked ? Colors.black54 : textColor,
+          fontSize: 14, 
+          fontWeight: FontWeight.w700, 
+          color: isLocked ? Colors.black54 : Colors.white, // Crisp white text
+          letterSpacing: 0.5,
         ),
       ),
     );
