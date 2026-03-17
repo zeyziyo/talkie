@@ -795,5 +795,14 @@
   "openSettings": "Beállítások megnyitása",
   "helpNotebook": "Válaszd ki a mappát, ahová a fordításaid mentésre kerüljenek.",
   "helpNote": "Jegyezd fel a szavak jelentését, példamondatokat vagy egyéb hasznos információkat.",
-  "helpTag": "Adj meg kulcsszavakat, amikkel később rendszerezheted vagy megkeresheted a jegyzeteket."
+  "helpTag": "Adj meg kulcsszavakat, amikkel később rendszerezheted vagy megkeresheted a jegyzeteket.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

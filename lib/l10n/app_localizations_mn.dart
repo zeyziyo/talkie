@@ -22,6 +22,14 @@ class AppLocalizationsMn extends AppLocalizations {
       'Өдөр тутмын яриаг гадаад хэл рүү шууд хөрвүүлээрэй! Talkie таны хэлний амьдралыг тэмдэглэнэ.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Цуцлах';
 
   @override

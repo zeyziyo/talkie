@@ -22,6 +22,14 @@ class AppLocalizationsSr extends AppLocalizations {
       'Тренутна конверзија свакодневних разговора на стране језике! Talkie бележи твој језички живот.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Откажи';
 
   @override

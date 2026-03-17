@@ -22,6 +22,14 @@ class AppLocalizationsTa extends AppLocalizations {
       'அன்றாட உரையாடல்களை உடனடியாக வெளிநாட்டு மொழியில் மாற்றுக! Talkie உங்கள் மொழி வாழ்க்கையைப் பதிவு செய்கிறது.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'ரத்துசெய்';
 
   @override

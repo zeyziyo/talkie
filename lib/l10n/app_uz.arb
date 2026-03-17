@@ -795,5 +795,14 @@
   "openSettings": "Sozlamalarni ochish",
   "helpNotebook": "Tarjima qilingan natijalarni saqlash uchun papkani tanlang.",
   "helpNote": "So'zlarning ma'nosi, misollari yoki holatlari kabi istalgan narsalarni yozing.",
-  "helpTag": "Keyinroq saralash yoki qidirish uchun kalit so'zlarni kiriting."
+  "helpTag": "Keyinroq saralash yoki qidirish uchun kalit so'zlarni kiriting.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

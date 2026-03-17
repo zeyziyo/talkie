@@ -795,5 +795,14 @@
   "openSettings": "Åbn indstillinger",
   "helpNotebook": "Vælg den mappe, hvor de oversatte resultater skal gemmes.",
   "helpNote": "Notér frit ordets betydning, eksempler eller situationer.",
-  "helpTag": "Indtast nøgleord til senere kategorisering eller søgning."
+  "helpTag": "Indtast nøgleord til senere kategorisering eller søgning.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

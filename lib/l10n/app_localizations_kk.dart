@@ -22,6 +22,14 @@ class AppLocalizationsKk extends AppLocalizations {
       'Күнделікті әңгімелерді шетел тілдеріне лезде аударыңыз! Talkie сіздің тіл өміріңізді жазып отырады.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Болдырмау';
 
   @override

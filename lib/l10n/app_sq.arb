@@ -795,5 +795,14 @@
   "openSettings": "Hap cilësimet",
   "helpNotebook": "Zgjidhni dosjen ku dëshironi të ruani rezultatet e përkthimit.",
   "helpNote": "Regjistroni lirisht kuptimin, shembujt ose situatat e fjalëve.",
-  "helpTag": "Fut çelësfjalët për t'i klasifikuar ose kërkuar më vonë."
+  "helpTag": "Fut çelësfjalët për t'i klasifikuar ose kërkuar më vonë.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

@@ -795,5 +795,14 @@
   "openSettings": "Otevřít nastavení",
   "helpNotebook": "Vyberte složku, kam chcete uložit přeložené výsledky.",
   "helpNote": "Libovolně si zapisujte významy slov, příklady nebo situace.",
-  "helpTag": "Zadejte klíčová slova pro pozdější kategorizaci nebo vyhledávání."
+  "helpTag": "Zadejte klíčová slova pro pozdější kategorizaci nebo vyhledávání.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

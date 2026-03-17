@@ -795,5 +795,14 @@
   "openSettings": "ସେଟିଂ ଖୋଲନ୍ତୁ",
   "helpNotebook": "ଅନୁବାଦ ହୋଇଥିବା ଫଳାଫଳକୁ ସଞ୍ଚୟ କରିବାକୁ ଫୋଲ୍ଡର ଚୟନ କରନ୍ତୁ।",
   "helpNote": "ଶବ୍ଦର ଅର୍ଥ କିମ୍ବା ଉଦାହରଣ, ପରିସ୍ଥିତି ଇତ୍ୟାଦିକୁ ମୁକ୍ତ ଭାବରେ ରେକର୍ଡ଼ କରନ୍ତୁ।",
-  "helpTag": "ପରେ ବର୍ଗୀକରଣ କିମ୍ବା ଖୋଜିବା ପାଇଁ କୀୱାର୍ଡ଼ ପ୍ରବେଶ କରନ୍ତୁ।"
+  "helpTag": "ପରେ ବର୍ଗୀକରଣ କିମ୍ବା ଖୋଜିବା ପାଇଁ କୀୱାର୍ଡ଼ ପ୍ରବେଶ କରନ୍ତୁ।",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

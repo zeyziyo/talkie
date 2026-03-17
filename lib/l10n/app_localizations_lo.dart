@@ -22,6 +22,14 @@ class AppLocalizationsLo extends AppLocalizations {
       'ປ່ຽນການສົນທະນາປະຈຳວັນເປັນພາສາຕ່າງປະເທດທັນທີ! Talkie ຈະບັນທຶກຊີວິດພາສາຂອງທ່ານ.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'ຍົກເລີກ';
 
   @override

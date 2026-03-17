@@ -22,6 +22,14 @@ class AppLocalizationsHi extends AppLocalizations {
       'रोज़मर्रा की बातचीत को विदेशी भाषाओं में तुरंत बदलें! टॉकी आपकी भाषा जीवन को रिकॉर्ड करेगा।';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'रद्द करें';
 
   @override

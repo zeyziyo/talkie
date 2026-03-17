@@ -22,6 +22,14 @@ class AppLocalizationsKn extends AppLocalizations {
       'ದೈನಂದಿನ ಸಂಭಾಷಣೆಗಳನ್ನು ವಿದೇಶಿ ಭಾಷೆಗಳಿಗೆ ತ್ವರಿತವಾಗಿ ಪರಿವರ್ತಿಸಿ! Talkie ನಿಮ್ಮ ಭಾಷಾ ಜೀವನವನ್ನು ದಾಖಲಿಸುತ್ತದೆ.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'ರದ್ದುಮಾಡಿ';
 
   @override

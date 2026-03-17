@@ -22,6 +22,14 @@ class AppLocalizationsEt extends AppLocalizations {
       'Muutke igapäevased vestlused hetkega võõrkeelde! Talkie salvestab teie keelekasutuse.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Tühista';
 
   @override

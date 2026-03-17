@@ -22,6 +22,14 @@ class AppLocalizationsHy extends AppLocalizations {
       'Անմիջապես փոխակերպեք առօրյա խոսակցությունները օտար լեզուներով: Talkie-ն կգրանցի ձեր լեզվական կյանքը:';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Չեղարկել';
 
   @override

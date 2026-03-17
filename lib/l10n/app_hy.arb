@@ -795,5 +795,14 @@
   "openSettings": "Բացել կարգավորումները",
   "helpNotebook": "Ընտրեք թարգմանված արդյունքները պահպանելու համար գրացուցակը:",
   "helpNote": "Ազատ զգացեք գրել բառի նշանակությունը, օրինակները կամ իրավիճակները:",
-  "helpTag": "Մուտքագրեք բանալի բառեր հետագայում դասակարգելու կամ որոնելու համար:"
+  "helpTag": "Մուտքագրեք բանալի բառեր հետագայում դասակարգելու կամ որոնելու համար:",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

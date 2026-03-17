@@ -22,6 +22,14 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਰੋਜ਼ਾਨਾ ਗੱਲਬਾਤ ਨੂੰ ਵਿਦੇਸ਼ੀ ਭਾਸ਼ਾ ਵਿੱਚ ਤੁਰੰਤ ਬਦਲੋ! ਟਾਕੀ ਤੁਹਾਡੀ ਭਾਸ਼ਾਈ ਜ਼ਿੰਦਗੀ ਨੂੰ ਰਿਕਾਰਡ ਕਰੇਗਾ।';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'ਰੱਦ ਕਰੋ';
 
   @override

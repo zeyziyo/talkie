@@ -795,5 +795,14 @@
   "openSettings": "Mở cài đặt",
   "helpNotebook": "Chọn thư mục để lưu trữ các kết quả đã dịch.",
   "helpNote": "Tự do ghi lại ý nghĩa, ví dụ hoặc tình huống của từ.",
-  "helpTag": "Nhập từ khóa để phân loại hoặc tìm kiếm sau này."
+  "helpTag": "Nhập từ khóa để phân loại hoặc tìm kiếm sau này.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

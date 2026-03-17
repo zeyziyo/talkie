@@ -22,6 +22,14 @@ class AppLocalizationsFil extends AppLocalizations {
       'Agad na baguhin ang pang-araw-araw na pag-uusap sa isang banyagang wika! Itinatala ng Talkie ang iyong buhay pang-wika.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Kanselahin';
 
   @override

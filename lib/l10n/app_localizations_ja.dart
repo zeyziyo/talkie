@@ -21,6 +21,14 @@ class AppLocalizationsJa extends AppLocalizations {
   String get simplifiedGuidance => '日常会話を外国語に瞬間変換！Talkieがあなたの言語生活を記録します。';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'キャンセル';
 
   @override

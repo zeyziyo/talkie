@@ -22,6 +22,14 @@ class AppLocalizationsBg extends AppLocalizations {
       'Незабавно преобразувайте ежедневните разговори на чужд език! Talkie записва вашия езиков живот.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Отказ';
 
   @override

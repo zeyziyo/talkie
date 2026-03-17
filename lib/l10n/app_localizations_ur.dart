@@ -22,6 +22,14 @@ class AppLocalizationsUr extends AppLocalizations {
       'روز مرہ کی گفتگو کو غیر ملکی زبان میں تبدیل کریں! ٹاکی آپ کی لسانی زندگی کو ریکارڈ کرے گا۔';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'منسوخ';
 
   @override

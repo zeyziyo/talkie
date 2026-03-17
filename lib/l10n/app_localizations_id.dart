@@ -22,6 +22,14 @@ class AppLocalizationsId extends AppLocalizations {
       'Ubah percakapan sehari-hari menjadi bahasa asing dalam sekejap! Talkie akan merekam kehidupan bahasa Anda.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Batal';
 
   @override

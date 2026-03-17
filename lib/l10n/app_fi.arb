@@ -795,5 +795,14 @@
   "openSettings": "Avaa asetukset",
   "helpNotebook": "Valitse kansio, johon haluat tallentaa käännetyt tulokset.",
   "helpNote": "Kirjoita vapaasti sanan merkitys, esimerkkejä tai tilanteita.",
-  "helpTag": "Kirjoita avainsanoja, joilla voit myöhemmin luokitella tai etsiä."
+  "helpTag": "Kirjoita avainsanoja, joilla voit myöhemmin luokitella tai etsiä.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

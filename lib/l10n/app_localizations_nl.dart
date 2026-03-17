@@ -22,6 +22,14 @@ class AppLocalizationsNl extends AppLocalizations {
       'Zet alledaagse gesprekken direct om in een vreemde taal! Talkie houdt uw taalleven bij.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Annuleren';
 
   @override

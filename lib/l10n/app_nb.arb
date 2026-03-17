@@ -795,5 +795,14 @@
   "openSettings": "Åpne innstillinger",
   "helpNotebook": "Velg mappen der du vil lagre de oversatte resultatene.",
   "helpNote": "Skriv ned betydningen av ordet, eksempler eller situasjoner.",
-  "helpTag": "Skriv inn nøkkelord for å klassifisere eller søke senere."
+  "helpTag": "Skriv inn nøkkelord for å klassifisere eller søke senere.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

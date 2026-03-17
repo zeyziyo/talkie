@@ -795,5 +795,14 @@
   "openSettings": "Отвори поставки",
   "helpNotebook": "Изберете папка за зачувување на преведените резултати.",
   "helpNote": "Слободно запишувајте значења, примери, ситуации итн. за зборот.",
-  "helpTag": "Внесете клучни зборови за подоцнежна категоризација или пребарување."
+  "helpTag": "Внесете клучни зборови за подоцнежна категоризација или пребарување.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

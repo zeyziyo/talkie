@@ -795,5 +795,14 @@
   "openSettings": "સેટિંગ્સ ખોલો",
   "helpNotebook": "તમે અનુવાદિત પરિણામો સાચવવા માંગો છો તે ફોલ્ડર પસંદ કરો.",
   "helpNote": "શબ્દોનો અર્થ, ઉદાહરણો અથવા પરિસ્થિતિઓ જેવી માહિતી મુક્તપણે રેકોર્ડ કરો.",
-  "helpTag": "વર્ગીકરણ અથવા શોધ માટે કીવર્ડ્સ દાખલ કરો."
+  "helpTag": "વર્ગીકરણ અથવા શોધ માટે કીવર્ડ્સ દાખલ કરો.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

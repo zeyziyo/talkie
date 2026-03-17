@@ -795,5 +795,14 @@
   "openSettings": "Apri impostazioni",
   "helpNotebook": "Seleziona la cartella dove salvare le traduzioni.",
   "helpNote": "Scrivi liberamente definizioni, esempi o contesti per la parola.",
-  "helpTag": "Inserisci parole chiave per categorizzare o cercare in seguito."
+  "helpTag": "Inserisci parole chiave per categorizzare o cercare in seguito.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

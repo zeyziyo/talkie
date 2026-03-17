@@ -795,5 +795,14 @@
   "openSettings": "सेटिंग्ज उघडा",
   "helpNotebook": "अनुवादित निकाल जतन करण्यासाठी फोल्डर निवडा.",
   "helpNote": "शब्दाचा अर्थ, उदाहरण किंवा परिस्थिती यासारख्या गोष्टीlibertyने लिहा.",
-  "helpTag": "नंतर वर्गीकरण किंवा शोध घेण्यासाठी कीवर्ड प्रविष्ट करा."
+  "helpTag": "नंतर वर्गीकरण किंवा शोध घेण्यासाठी कीवर्ड प्रविष्ट करा.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

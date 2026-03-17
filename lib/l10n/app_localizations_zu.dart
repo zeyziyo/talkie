@@ -22,6 +22,14 @@ class AppLocalizationsZu extends AppLocalizations {
       'Guqula izingxoxo zansuku zonke zibe izilimi zangaphandle ngokushesha! I-Talkie izorekhoda impilo yakho yezilimi.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Khansela';
 
   @override

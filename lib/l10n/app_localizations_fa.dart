@@ -22,6 +22,14 @@ class AppLocalizationsFa extends AppLocalizations {
       'تبدیل فوری مکالمات روزمره به زبان خارجی! Talkie زندگی زبانی شما را ثبت می کند.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'لغو';
 
   @override

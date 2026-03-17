@@ -795,5 +795,14 @@
   "openSettings": "Άνοιγμα ρυθμίσεων",
   "helpNotebook": "Επιλέξτε έναν φάκελο για να αποθηκεύσετε τα μεταφρασμένα αποτελέσματα.",
   "helpNote": "Καταγράψτε ελεύθερα τις έννοιες, τα παραδείγματα ή τις περιστάσεις των λέξεων.",
-  "helpTag": "Εισαγάγετε λέξεις-κλειδιά για να ταξινομήσετε ή να αναζητήσετε αργότερα."
+  "helpTag": "Εισαγάγετε λέξεις-κλειδιά για να ταξινομήσετε ή να αναζητήσετε αργότερα.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

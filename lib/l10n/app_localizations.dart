@@ -273,8 +273,20 @@ abstract class AppLocalizations {
   /// No description provided for @simplifiedGuidance.
   ///
   /// In ko, this message translates to:
-  /// **'일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.'**
+  /// **'Talkie로 80가지 언어 중 원하는 언어 간 즉시 상호 번역 및 무한 반복 학습이 가능합니다!'**
   String get simplifiedGuidance;
+
+  /// No description provided for @versionLabel.
+  ///
+  /// In ko, this message translates to:
+  /// **'버전: {version}'**
+  String versionLabel(String version);
+
+  /// No description provided for @developerContact.
+  ///
+  /// In ko, this message translates to:
+  /// **'개발자 연락처: talkie.help@gmail.com'**
+  String get developerContact;
 
   /// Cancel button
   ///

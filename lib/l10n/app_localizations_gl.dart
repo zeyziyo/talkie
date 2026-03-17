@@ -22,6 +22,14 @@ class AppLocalizationsGl extends AppLocalizations {
       'Transforma conversas cotiás en idiomas estranxeiros ao instante! Talkie rexistra a túa vida lingüística.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Cancelar';
 
   @override

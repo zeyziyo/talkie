@@ -795,5 +795,14 @@
   "openSettings": "เปิดการตั้งค่า",
   "helpNotebook": "เลือกโฟลเดอร์ที่จะบันทึกผลการแปล",
   "helpNote": "บันทึกความหมาย ตัวอย่าง หรือสถานการณ์ของคำศัพท์ได้อย่างอิสระ",
-  "helpTag": "ป้อนคำหลักเพื่อจัดหมวดหมู่หรือค้นหาในภายหลัง"
+  "helpTag": "ป้อนคำหลักเพื่อจัดหมวดหมู่หรือค้นหาในภายหลัง",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

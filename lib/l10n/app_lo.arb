@@ -795,5 +795,14 @@
   "openSettings": "ເປີດການຕັ້ງຄ່າ",
   "helpNotebook": "ເລືອກໂຟນເດີ້ເພື່ອບັນທຶກຜົນການແປ.",
   "helpNote": "ບັນທຶກຄວາມໝາຍ, ຕົວຢ່າງ, ສະຖານະການ, ແລະອື່ນໆ ຕາມໃຈ.",
-  "helpTag": "ປ້ອນຄຳສັບຫຼັກສຳລັບການຈັດໝວດໝູ່ ຫຼື ຄົ້ນຫາໃນພາຍຫຼັງ."
+  "helpTag": "ປ້ອນຄຳສັບຫຼັກສຳລັບການຈັດໝວດໝູ່ ຫຼື ຄົ້ນຫາໃນພາຍຫຼັງ.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

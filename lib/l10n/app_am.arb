@@ -795,5 +795,14 @@
   "openSettings": "ቅንብሮችን ክፈት",
   "helpNotebook": "የተተረጎሙ ውጤቶች የሚቀመጡበትን አቃፊ ይምረጡ።",
   "helpNote": "የቃላት ፍቺዎችን፣ ምሳሌዎችን ወይም ሁኔታዎችን በነፃነት ይመዝግቡ።",
-  "helpTag": "ለመመደብ ወይም ለመፈለግ ቁልፍ ቃላትን ያስገቡ።"
+  "helpTag": "ለመመደብ ወይም ለመፈለግ ቁልፍ ቃላትን ያስገቡ።",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

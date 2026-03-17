@@ -22,6 +22,14 @@ class AppLocalizationsCs extends AppLocalizations {
       'Okamžitá konverze každodenních konverzací do cizího jazyka! Talkie zaznamenává váš jazykový život.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Zrušit';
 
   @override

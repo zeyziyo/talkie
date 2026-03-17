@@ -22,6 +22,14 @@ class AppLocalizationsEu extends AppLocalizations {
       'Eguneroko elkarrizketak atzerriko hizkuntzetara berehala bihurtu! Talkiek zure hizkuntza-bizitza erregistratzen du.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Ezeztatu';
 
   @override

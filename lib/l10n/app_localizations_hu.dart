@@ -22,6 +22,14 @@ class AppLocalizationsHu extends AppLocalizations {
       'Azonnali idegennyelvű fordítás a mindennapi beszélgetésekhez! A Talkie rögzíti a nyelvhasználatodat.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Mégse';
 
   @override

@@ -795,5 +795,14 @@
   "openSettings": "Открыть настройки",
   "helpNotebook": "Выберите папку для сохранения переведенных результатов.",
   "helpNote": "Свободно записывайте значения слов, примеры или ситуации.",
-  "helpTag": "Введите ключевые слова для классификации или поиска позже."
+  "helpTag": "Введите ключевые слова для классификации или поиска позже.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

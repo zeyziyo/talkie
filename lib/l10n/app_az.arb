@@ -795,5 +795,14 @@
   "openSettings": "Parametrləri aç",
   "helpNotebook": "Tərcümə olunmuş nəticələri saxlamaq üçün qovluq seçin.",
   "helpNote": "Sözün mənasını, nümunələrini və ya vəziyyətlərini sərbəst şəkildə qeyd edin.",
-  "helpTag": "Sonra təsnif etmək və ya axtarmaq üçün açar sözlər daxil edin."
+  "helpTag": "Sonra təsnif etmək və ya axtarmaq üçün açar sözlər daxil edin.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

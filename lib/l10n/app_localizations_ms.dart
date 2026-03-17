@@ -22,6 +22,14 @@ class AppLocalizationsMs extends AppLocalizations {
       'Ubah perbualan harian ke bahasa asing dalam sekelip mata! Talkie merekodkan kehidupan bahasa anda.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Batal';
 
   @override

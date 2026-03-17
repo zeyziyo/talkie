@@ -22,6 +22,14 @@ class AppLocalizationsKm extends AppLocalizations {
       'បម្លែងការសន្ទនាប្រចាំថ្ងៃទៅជាភាសាបរទេសភ្លាមៗ! Talkie នឹងកត់ត្រាជីវិតភាសារបស់អ្នក។';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'បោះបង់';
 
   @override

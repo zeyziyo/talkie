@@ -22,6 +22,14 @@ class AppLocalizationsAm extends AppLocalizations {
       'የዕለት ተዕለት ንግግሮችን በቅጽበት ወደ የውጭ ቋንቋ ይለውጡ! ቶኪ የቋንቋ ሕይወትዎን ይመዘግባል።';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'ይቅር';
 
   @override

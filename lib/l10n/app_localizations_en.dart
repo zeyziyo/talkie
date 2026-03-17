@@ -19,7 +19,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get simplifiedGuidance =>
-      'Instant translation for your daily conversations! Talkie documents your language journey.';
+      'Talkie enables instant mutual translation and infinite repetitive learning between 80 languages!';
+
+  @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get cancel => 'Cancel';

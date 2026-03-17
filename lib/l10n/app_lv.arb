@@ -795,5 +795,14 @@
   "openSettings": "Atvērt iestatījumus",
   "helpNotebook": "Izvēlieties mapi, kurā saglabāt tulkojumus.",
   "helpNote": "Brīvi pierakstiet vārda nozīmi, piemērus vai kontekstu.",
-  "helpTag": "Ievadiet atslēgvārdus, lai tos vēlāk varētu kārtot vai meklēt."
+  "helpTag": "Ievadiet atslēgvārdus, lai tos vēlāk varētu kārtot vai meklēt.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

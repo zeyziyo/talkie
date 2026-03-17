@@ -795,5 +795,14 @@
   "openSettings": "सेटिंग खोलें",
   "helpNotebook": "अनुवादित परिणामों को सहेजने के लिए फ़ोल्डर चुनें।",
   "helpNote": "शब्दों के अर्थ, उदाहरण या स्थितियों आदि को स्वतंत्र रूप से लिखें।",
-  "helpTag": "बाद में वर्गीकृत करने या खोजने के लिए कीवर्ड दर्ज करें।"
+  "helpTag": "बाद में वर्गीकृत करने या खोजने के लिए कीवर्ड दर्ज करें।",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

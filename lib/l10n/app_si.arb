@@ -795,5 +795,14 @@
   "openSettings": "සැකසුම් විවෘත කරන්න",
   "helpNotebook": "පරිවර්තන ප්‍රතිඵල සුරැකීමට ෆෝල්ඩරයක් තෝරන්න.",
   "helpNote": "වචනයේ තේරුම, උදාහරණ, තත්වයන් වැනි දේ නිදහසේ සටහන් කරන්න.",
-  "helpTag": "පසුව වර්ග කිරීමට හෝ සෙවීමට මූල පද ඇතුළත් කරන්න."
+  "helpTag": "පසුව වර්ග කිරීමට හෝ සෙවීමට මූල පද ඇතුළත් කරන්න.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

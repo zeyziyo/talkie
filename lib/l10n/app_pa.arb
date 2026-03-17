@@ -795,5 +795,14 @@
   "openSettings": "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
   "helpNotebook": "ਅਨੁਵਾਦ ਕੀਤੇ ਨਤੀਜਿਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਫੋਲਡਰ ਚੁਣੋ।",
   "helpNote": "ਸ਼ਬਦ ਦਾ ਅਰਥ, ਉਦਾਹਰਣਾਂ ਜਾਂ ਸਥਿਤੀਆਂ ਆਦਿ ਨੂੰ ਬੇਝਿਜਕ ਨੋਟ ਕਰੋ।",
-  "helpTag": "ਵਰਗੀਕਰਨ ਜਾਂ ਖੋਜ ਲਈ ਕੀਵਰਡ ਦਰਜ ਕਰੋ।"
+  "helpTag": "ਵਰਗੀਕਰਨ ਜਾਂ ਖੋਜ ਲਈ ਕੀਵਰਡ ਦਰਜ ਕਰੋ।",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

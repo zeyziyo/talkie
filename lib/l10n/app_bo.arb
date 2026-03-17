@@ -795,5 +795,14 @@
   "openSettings": "སྒྲིག་འཛུགས་ཁ་ཕྱེ།",
   "helpNotebook": "བསྒྱུར་ཡིག་འབྲི་དེབ་ཉར་ཚགས་འབད་ནིའི་ फोल्डर སེལ་འཐུ་འབད།",
   "helpNote": "མིང་ཚིག་གི་དོན་དང་ དཔེར་བརྗོད། གནས་སྟངས་ཚུ་རང་དབང་ཐོག་འབྲི།",
-  "helpTag": "མ་འོངས་པར་དབྱེ་དཔྱད་འབད་ནི་དང་འཚོལ་ཞིབ་འབད་ནིའི་དོན་ལུ་ түлхүүр үг བཙུགས།"
+  "helpTag": "མ་འོངས་པར་དབྱེ་དཔྱད་འབད་ནི་དང་འཚོལ་ཞིབ་འབད་ནིའི་དོན་ལུ་ түлхүүр үг བཙུགས།",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

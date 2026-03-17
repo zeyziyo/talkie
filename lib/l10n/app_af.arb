@@ -795,5 +795,14 @@
   "openSettings": "Open instellings",
   "helpNotebook": "Kies 'n gids om vertaalde resultate te stoor.",
   "helpNote": "Teken die betekenis, voorbeelde of situasies van die woord vrylik aan.",
-  "helpTag": "Sleutelwoorde vir latere kategorisering of soektogte."
+  "helpTag": "Sleutelwoorde vir latere kategorisering of soektogte.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

@@ -795,5 +795,14 @@
   "openSettings": "Ava seaded",
   "helpNotebook": "Vali kaust, kuhu tõlgitud tulemused salvestada.",
   "helpNote": "Kirjuta üles sõna tähendus, näited või olukorrad.",
-  "helpTag": "Sisesta märksõnad, et hiljem liigitada või otsida."
+  "helpTag": "Sisesta märksõnad, et hiljem liigitada või otsida.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

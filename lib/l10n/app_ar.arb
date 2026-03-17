@@ -795,5 +795,14 @@
   "openSettings": "فتح الإعدادات",
   "helpNotebook": "اختر المجلد لحفظ الترجمة.",
   "helpNote": "سجل بحرية معاني الكلمات أو الأمثلة أو المواقف وما إلى ذلك.",
-  "helpTag": "أدخل الكلمات الرئيسية لتصنيفها أو البحث عنها لاحقًا."
+  "helpTag": "أدخل الكلمات الرئيسية لتصنيفها أو البحث عنها لاحقًا.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

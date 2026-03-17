@@ -22,6 +22,14 @@ class AppLocalizationsBo extends AppLocalizations {
       'སྐད་ཡིག་གཞན་པའི་ནང་དུ་ཉིན་རེའི་གཏམ་བཤད་ཐོག་མར་བསྒྱུར། སྐད་བརྡ་འཕྲུལ་ཆས་ཀྱིས་ཁྱེད་ཀྱི་སྐད་བརྡའི་འཚོ་བ་ཟིན་ཐོ་བཟོ།';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'འ বাতিল';
 
   @override

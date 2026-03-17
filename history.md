@@ -21,6 +21,13 @@
 
 ---
 
+### [2026-03-18] 상시 안내문 고도화 및 전 세계 현지화 무결성 확보 (v1.9.6+60)
+
+- **UI Update (Guidance & Footer)**: 홈 화면의 상시 안내문을 새 문구("Talkie로 80가지 언어 중 원하는 언어 간 즉시 상호 번역 및 무한 반복 학습이 가능합니다!")로 업데이트하고, 하단 푸터에 앱 버전(`1.9.6+60`) 및 개발자 연락처 정보를 추가하여 사용자 신뢰도를 높였습니다.
+- **80+ L10n Integrity**: 주요 언어뿐만 아니라 80개 이상의 모든 지원 언어 ARB 파일에 대해 누락된 필수 키(`versionLabel`, `developerContact` 등)를 일괄 동기화하는 자동화 스크립트를 실행하여 글로벌 현지화 무결성을 100% 확보했습니다.
+- **Verification & Analysis**: `flutter gen-l10n`을 통해 모든 지역화 리소스를 재생성하고, `flutter analyze` 정적 분석 결과 **0 issues**를 달성하여 배포 안정성을 최종 검증했습니다.
+- **Deployment**: GitHub Actions를 통한 원격 빌드 워크플로우를 트리거하여 릴리스 APK/AAB 생성을 시작했습니다.
+
 ### [2026-03-17] 데이터 구조 최신화 및 UI 무결성 확보 (v1.9.6+59)
 
 - **Data Structure Optimization (v20)**: 설계 문서(`integrated_data_structure.md`)에 따라 `pos`, `style`, `form_type`, `caption` 등 미사용 필드를 프로젝트 전반(DB 스키마, 레파지토리, 서비스 레이어, AppState)에서 완전히 제거했습니다. 이를 통해 데이터 정합성을 높이고 스토리지 효율을 개선했습니다.

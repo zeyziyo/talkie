@@ -795,5 +795,14 @@
   "openSettings": "Тохиргоог нээх",
   "helpNotebook": "Орчуулгын үр дүнг хадгалах хавтас сонгоно уу.",
   "helpNote": "Үгийн утга, жишээ, нөхцөл байдлыг чөлөөтэй тэмдэглээрэй.",
-  "helpTag": "Дараа нь ангилах эсвэл хайх түлхүүр үгээ оруулна уу."
+  "helpTag": "Дараа нь ангилах эсвэл хайх түлхүүр үгээ оруулна уу.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

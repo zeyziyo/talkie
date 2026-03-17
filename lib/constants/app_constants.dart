@@ -15,4 +15,8 @@ class AppConstants {
   // --- UI Config ---
   static const double defaultBorderRadius = 12.0;
   static const double cardBorderRadius = 20.0;
+
+  // --- App Info ---
+  static const String appVersion = '1.9.6+60';
+  static const String developerEmail = 'talkie.help@gmail.com';
 }

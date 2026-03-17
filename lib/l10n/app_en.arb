@@ -6,7 +6,16 @@
   },
   "inputLanguage": "Input Language",
   "translationLanguage": "Translation Language",
-  "simplifiedGuidance": "Instant translation for your daily conversations! Talkie documents your language journey.",
+  "simplifiedGuidance": "Talkie enables instant mutual translation and infinite repetitive learning between 80 languages!",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "cancel": "Cancel",
   "@cancel": {
     "description": "Cancel button"

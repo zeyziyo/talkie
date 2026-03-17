@@ -795,5 +795,14 @@
   "openSettings": "Fungua Mipangilio",
   "helpNotebook": "Chagua folda ya kuhifadhi matokeo yaliyotafsiriwa.",
   "helpNote": "Andika maana za maneno, mifano, au hali mbalimbali kwa uhuru.",
-  "helpTag": "Weka maneno muhimu ya kuainisha au kutafuta baadaye."
+  "helpTag": "Weka maneno muhimu ya kuainisha au kutafuta baadaye.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

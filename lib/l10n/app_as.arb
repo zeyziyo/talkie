@@ -795,5 +795,14 @@
   "openSettings": "সংস্থাপন খোলক",
   "helpNotebook": "অনুবাদিত ফলাফলসমূহ সুৰক্ষিত কৰিবলৈ এটা ফোল্ডাৰ নিৰ্ব্বাচন কৰক।",
   "helpNote": "শব্দৰ অৰ্থ বা উদাহৰণ, পৰিস্থিতি আদিৰ দৰে আপুনি যিকোনো কথা ইয়াত লিখিব পাৰে।",
-  "helpTag": " পিছত শ্ৰেণীবিভাজন বা সন্ধান কৰিবলৈ কিৱৰ্ডসমূহ লিখক।"
+  "helpTag": " পিছত শ্ৰেণীবিভাজন বা সন্ধান কৰিবলৈ কিৱৰ্ডসমূহ লিখক।",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

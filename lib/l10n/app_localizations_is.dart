@@ -22,6 +22,14 @@ class AppLocalizationsIs extends AppLocalizations {
       'Umbreyttu daglegum samtölum samstundis á erlent tungumál! Talkie heldur utan um tungumálanotkun þína.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Hætta við';
 
   @override

@@ -6,6 +6,7 @@ import '../constants/language_constants.dart';
 import '../widgets/welcome_banner.dart';
 import '../widgets/recommendation_widget.dart';
 import '../l10n/app_localizations.dart';
+import '../constants/app_constants.dart';
 
 class SimplifiedInputWidget extends StatefulWidget {
   const SimplifiedInputWidget({super.key});
@@ -81,7 +82,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
               child: Column(
                 children: [
                   Text(
-                    l10n.welcomeDesc,
+                    l10n.simplifiedGuidance,
                     style: const TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.w600,
@@ -242,7 +243,10 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
               ),
             const SizedBox(height: 24),
 
-            const SizedBox(height: 48),
+            const SizedBox(height: 24),
+
+            // 6. Footer (Version & Contact)
+            _buildFooter(context),
           ],
         ),
       ),
@@ -510,6 +514,29 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
           },
         );
       },
+    );
+  }
+
+  Widget _buildFooter(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 32.0),
+      child: Column(
+        children: [
+          const Divider(color: Colors.black12),
+          const SizedBox(height: 16),
+          Text(
+            l10n.versionLabel(AppConstants.appVersion),
+            style: TextStyle(color: Colors.grey.shade500, fontSize: 12),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            l10n.developerContact,
+            style: TextStyle(color: Colors.grey.shade500, fontSize: 12),
+          ),
+          const SizedBox(height: 16),
+        ],
+      ),
     );
   }
 

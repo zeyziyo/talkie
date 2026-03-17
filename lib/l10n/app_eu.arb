@@ -795,5 +795,14 @@
   "openSettings": "Ezarpenak ireki",
   "helpNotebook": "Hautatu itzulpenak gordetzeko karpeta.",
   "helpNote": "Idatzi hitzaren esanahia, adibideak edo egoerak aske.",
-  "helpTag": "Sartu gero sailkatu edo bilatzeko gako-hitzak."
+  "helpTag": "Sartu gero sailkatu edo bilatzeko gako-hitzak.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

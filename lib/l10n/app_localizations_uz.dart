@@ -22,6 +22,14 @@ class AppLocalizationsUz extends AppLocalizations {
       'Kundalik suhbatlarni bir zumda chet tiliga aylantiring! Talkie sizning til hayotingizni yozib boradi.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Bekor qilish';
 
   @override

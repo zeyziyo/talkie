@@ -22,6 +22,14 @@ class AppLocalizationsMl extends AppLocalizations {
       'നിങ്ങളുടെ ദൈനംദിന സംഭാഷണങ്ങൾ തൽക്ഷണം ഒരു വിദേശ ഭാഷയിലേക്ക് മാറ്റുക! ടോക്കി നിങ്ങളുടെ ഭാഷാ ജീവിതം രേഖപ്പെടുത്തുന്നു.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'റദ്ദാക്കുക';
 
   @override

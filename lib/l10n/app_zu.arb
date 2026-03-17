@@ -795,5 +795,14 @@
   "openSettings": "Vula Izilungiselelo",
   "helpNotebook": "Khetha ifolda lapho imiphumela ehunyushiwe izogcinwa khona.",
   "helpNote": "Bhala ngokukhululekile incazelo yegama, imisho eyisibonelo, izimo, njll.",
-  "helpTag": "Faka amagama angukhiye okuhlunga noma okusesha ngokuhamba kwesikhathi."
+  "helpTag": "Faka amagama angukhiye okuhlunga noma okusesha ngokuhamba kwesikhathi.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

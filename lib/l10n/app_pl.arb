@@ -795,5 +795,14 @@
   "openSettings": "Otwórz ustawienia",
   "helpNotebook": "Wybierz folder, w którym chcesz zapisać przetłumaczone wyniki.",
   "helpNote": "Zapisuj dowolnie znaczenie słów, przykłady lub sytuacje.",
-  "helpTag": "Wprowadź słowa kluczowe do późniejszej klasyfikacji lub wyszukiwania."
+  "helpTag": "Wprowadź słowa kluczowe do późniejszej klasyfikacji lub wyszukiwania.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

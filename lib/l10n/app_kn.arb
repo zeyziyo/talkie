@@ -795,5 +795,14 @@
   "openSettings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ",
   "helpNotebook": "ಪರಿವರ್ತಿತ ಫಲಿತಾಂಶಗಳನ್ನು ಉಳಿಸಲು ಫೋಲ್ಡರ್ ಆಯ್ಕೆಮಾಡಿ.",
   "helpNote": "ಪದದ ಅರ್ಥ, ಉದಾಹರಣೆಗಳು, ಸನ್ನಿವೇಶಗಳು ಇತ್ಯಾದಿಗಳನ್ನು ಮುಕ್ತವಾಗಿ ಬರೆಯಿರಿ.",
-  "helpTag": "ನಂತರ ವರ್ಗೀಕರಿಸಲು ಅಥವಾ ಹುಡುಕಲು ಕೀವರ್ಡ್‌ಗಳನ್ನು ನಮೂದಿಸಿ."
+  "helpTag": "ನಂತರ ವರ್ಗೀಕರಿಸಲು ಅಥವಾ ಹುಡುಕಲು ಕೀವರ್ಡ್‌ಗಳನ್ನು ನಮೂದಿಸಿ.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

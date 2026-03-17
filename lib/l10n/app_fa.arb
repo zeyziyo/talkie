@@ -795,5 +795,14 @@
   "openSettings": "باز کردن تنظیمات",
   "helpNotebook": "پوشه ای را برای ذخیره نتایج ترجمه انتخاب کنید.",
   "helpNote": "معانی، مثال ها، موقعیت ها و غیره کلمات را آزادانه یادداشت کنید.",
-  "helpTag": "برای طبقه بندی یا جستجو در آینده، کلمات کلیدی را وارد کنید."
+  "helpTag": "برای طبقه بندی یا جستجو در آینده، کلمات کلیدی را وارد کنید.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

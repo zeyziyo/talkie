@@ -795,5 +795,14 @@
   "openSettings": "Отвори подешавања",
   "helpNotebook": "Изаберите фасциклу за чување преведених резултата.",
   "helpNote": "Слободно забележите значење речи, примере или ситуације.",
-  "helpTag": "Унесите кључне речи за каснију класификацију или претрагу."
+  "helpTag": "Унесите кључне речи за каснију класификацију или претрагу.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

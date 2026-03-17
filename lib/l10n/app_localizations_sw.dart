@@ -22,6 +22,14 @@ class AppLocalizationsSw extends AppLocalizations {
       'Badilisha mazungumzo ya kila siku mara moja katika lugha ya kigeni! Talkie inarekodi maisha yako ya lugha.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Ghairi';
 
   @override

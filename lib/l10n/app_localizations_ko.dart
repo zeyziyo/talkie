@@ -19,7 +19,15 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get simplifiedGuidance =>
-      '일상의 대화를 외국어로 순간 변환! Talkie가 당신의 언어 생활을 기록해 드립니다.';
+      'Talkie로 80가지 언어 중 원하는 언어 간 즉시 상호 번역 및 무한 반복 학습이 가능합니다!';
+
+  @override
+  String versionLabel(String version) {
+    return '버전: $version';
+  }
+
+  @override
+  String get developerContact => '개발자 연락처: talkie.help@gmail.com';
 
   @override
   String get cancel => '취소';

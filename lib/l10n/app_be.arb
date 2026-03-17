@@ -795,5 +795,14 @@
   "openSettings": "Адкрыць налады",
   "helpNotebook": "Выберыце тэчку для захавання перакладзеных вынікаў.",
   "helpNote": "Запісвайце значэнне слоў, прыклады, сітуацыі і г.д. свабодна.",
-  "helpTag": "Увядзіце ключавыя словы для класіфікацыі ці пошуку пазней."
+  "helpTag": "Увядзіце ключавыя словы для класіфікацыі ці пошуку пазней.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

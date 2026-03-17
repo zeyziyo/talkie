@@ -795,5 +795,14 @@
   "openSettings": "সেটিংস খুলুন",
   "helpNotebook": "অনুবাদিত ফলাফল সংরক্ষণের জন্য একটি ফোল্ডার নির্বাচন করুন।",
   "helpNote": "শব্দের অর্থ, উদাহরণ বা পরিস্থিতি ইত্যাদি নির্দ্বিধায় লিখুন।",
-  "helpTag": "শ্রেণীবদ্ধ বা অনুসন্ধানের জন্য কীওয়ার্ড লিখুন।"
+  "helpTag": "শ্রেণীবদ্ধ বা অনুসন্ধানের জন্য কীওয়ার্ড লিখুন।",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

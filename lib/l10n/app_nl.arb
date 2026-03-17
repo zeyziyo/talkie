@@ -795,5 +795,14 @@
   "openSettings": "Instellingen openen",
   "helpNotebook": "Selecteer de map waarin u de vertalingen wilt opslaan.",
   "helpNote": "Noteer vrijelijk de betekenis, voorbeelden of situaties van een woord.",
-  "helpTag": "Voer trefwoorden in om later te categoriseren of te zoeken."
+  "helpTag": "Voer trefwoorden in om later te categoriseren of te zoeken.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

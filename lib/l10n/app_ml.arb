@@ -795,5 +795,14 @@
   "openSettings": "ക്രമീകരണങ്ങൾ തുറക്കുക",
   "helpNotebook": "പരിഭാഷപ്പെടുത്തിയ ഫലങ്ങൾ സംരക്ഷിക്കാൻ ഒരു ഫോൾഡർ തിരഞ്ഞെടുക്കുക.",
   "helpNote": "വാക്കുകളുടെ അർത്ഥം, ഉദാഹരണങ്ങൾ, സാഹചര്യങ്ങൾ എന്നിവ സ്വതന്ത്രമായി രേഖപ്പെടുത്തുക.",
-  "helpTag": "പിന്നീട് തരംതിരിക്കാനോ തിരയാനോ ഉള്ള കീവേഡുകൾ നൽകുക."
+  "helpTag": "പിന്നീട് തരംതിരിക്കാനോ തിരയാനോ ഉള്ള കീവേഡുകൾ നൽകുക.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

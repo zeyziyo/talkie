@@ -795,5 +795,14 @@
   "openSettings": "Ayarları Aç",
   "helpNotebook": "Çevrilen sonuçların kaydedileceği klasörü seçin.",
   "helpNote": "Kelimenin anlamını, örneklerini veya durumlarını serbestçe not alın.",
-  "helpTag": "Daha sonra sınıflandırmak veya aramak için anahtar kelimeler girin."
+  "helpTag": "Daha sonra sınıflandırmak veya aramak için anahtar kelimeler girin.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

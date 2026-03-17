@@ -22,6 +22,14 @@ class AppLocalizationsAs extends AppLocalizations {
       'দৈনন্দিন কথোপকথনবোৰক বিদেশী ভাষালৈ তৎক্ষণাত ৰূপান্তৰ কৰক! Talkieয়ে আপোনাৰ ভাষাৰ জীৱন লিপিবদ্ধ কৰিব।';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'বাতিল কৰক';
 
   @override

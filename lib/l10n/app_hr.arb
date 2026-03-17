@@ -795,5 +795,14 @@
   "openSettings": "Otvori postavke",
   "helpNotebook": "Odaberite mapu za spremanje prevedenih rezultata.",
   "helpNote": "Slobodno zapišite značenje riječi, primjere ili situacije.",
-  "helpTag": "Unesite ključne riječi za kasniju klasifikaciju ili pretraživanje."
+  "helpTag": "Unesite ključne riječi za kasniju klasifikaciju ili pretraživanje.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

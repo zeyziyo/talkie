@@ -795,5 +795,14 @@
   "openSettings": "Buka Tetapan",
   "helpNotebook": "Pilih folder untuk menyimpan hasil terjemahan.",
   "helpNote": "Catat makna, contoh ayat atau situasi perkataan dengan bebas.",
-  "helpTag": "Masukkan kata kunci untuk mengklasifikasikan atau mencari kemudian."
+  "helpTag": "Masukkan kata kunci untuk mengklasifikasikan atau mencari kemudian.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

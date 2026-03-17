@@ -22,6 +22,14 @@ class AppLocalizationsAf extends AppLocalizations {
       'Skakel alledaagse gesprekke onmiddellik in vreemde tale om! Talkie teken jou taallewe aan.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Kanselleer';
 
   @override

@@ -795,5 +795,14 @@
   "openSettings": "సెట్టింగ్‌లు తెరువు",
   "helpNotebook": "అనువదించబడిన ఫలితాలను నిల్వ చేయడానికి ఫోల్డర్‌ను ఎంచుకోండి.",
   "helpNote": "పదాల అర్థాలు, ఉదాహరణలు, సందర్భాలు మొదలైన వాటిని స్వేచ్ఛగా వ్రాయండి.",
-  "helpTag": "తరువాత వర్గీకరించడానికి లేదా శోధించడానికి కీలకపదాలను నమోదు చేయండి."
+  "helpTag": "తరువాత వర్గీకరించడానికి లేదా శోధించడానికి కీలకపదాలను నమోదు చేయండి.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

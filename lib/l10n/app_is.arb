@@ -795,5 +795,14 @@
   "openSettings": "Opna stillingar",
   "helpNotebook": "Veldu möppuna til að vista þýddar niðurstöður í.",
   "helpNote": "Skrifaðu frjálst um merkingu orðsins, dæmi eða aðstæður.",
-  "helpTag": "Sláðu inn leitarorð til að flokka eða leita seinna."
+  "helpTag": "Sláðu inn leitarorð til að flokka eða leita seinna.",
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com"
 }

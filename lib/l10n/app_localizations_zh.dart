@@ -21,6 +21,14 @@ class AppLocalizationsZh extends AppLocalizations {
   String get simplifiedGuidance => '将日常对话瞬间翻译成外语！Talkie会记录您的语言生活。';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => '取消';
 
   @override
@@ -1320,6 +1328,14 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get simplifiedGuidance => '将日常对话瞬间转换为外语！Talkie会记录您的语言生活。';
+
+  @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get cancel => '取消';
@@ -2622,6 +2638,14 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get simplifiedGuidance => '將日常對話瞬間翻譯成外語！ Talkie 將記錄您的語言生活。';
+
+  @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get cancel => '取消';

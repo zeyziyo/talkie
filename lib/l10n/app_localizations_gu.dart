@@ -22,6 +22,14 @@ class AppLocalizationsGu extends AppLocalizations {
       'રોજબરોજના સંવાદોને વિદેશી ભાષામાં તુરંત રૂપાંતરિત કરો! Talkie તમારી ભાષાકીય જીવનશૈલીને રેકોર્ડ કરે છે.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'રદ કરો';
 
   @override

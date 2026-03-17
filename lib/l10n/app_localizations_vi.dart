@@ -22,6 +22,14 @@ class AppLocalizationsVi extends AppLocalizations {
       'Chuyển đổi tức thì các cuộc trò chuyện hàng ngày sang ngoại ngữ! Talkie sẽ ghi lại cuộc sống ngôn ngữ của bạn.';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
+
+  @override
   String get cancel => 'Hủy';
 
   @override
