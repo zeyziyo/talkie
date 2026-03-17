@@ -1,139 +1,139 @@
 {
+  "updated_at": "2026-03-17",
   "materials": [
     {
-      "category": "Dialogue",
+      "name": "첫 만남",
       "description": "dialogues material: first_meeting",
-      "path": "dialogues/first_meeting.json",
       "id": "first_meeting",
-      "name": "첫 만남"
+      "path": "dialogues/first_meeting.json",
+      "category": "Dialogue"
     },
     {
-      "category": "Words",
+      "name": "색깔 1",
       "description": "words material: basic_expressions4",
-      "path": "words/basic_expressions4.json",
       "id": "basic_expressions4",
-      "name": "색깔 1"
+      "path": "words/basic_expressions4.json",
+      "category": "Words"
     },
     {
-      "category": "Words",
+      "name": "숫자 1",
       "description": "words material: basic_expressions5",
-      "path": "words/basic_expressions5.json",
       "id": "basic_expressions5",
-      "name": "숫자 1"
+      "path": "words/basic_expressions5.json",
+      "category": "Words"
     },
     {
-      "category": "Words",
+      "name": "시간 및 날짜 1",
       "description": "words material: basic_expressions6",
-      "path": "words/basic_expressions6.json",
       "id": "basic_expressions6",
-      "name": "시간 및 날짜 1"
+      "path": "words/basic_expressions6.json",
+      "category": "Words"
     },
     {
-      "category": "Words",
+      "name": "가족 1",
       "description": "words material: basic_expressions8",
-      "path": "words/basic_expressions8.json",
       "id": "basic_expressions8",
-      "name": "가족 1"
+      "path": "words/basic_expressions8.json",
+      "category": "Words"
     },
     {
-      "category": "Words",
+      "name": "명사 1",
       "description": "words material: nouns_1",
-      "path": "words/nouns_1.json",
       "id": "nouns_1",
-      "name": "명사 1"
+      "path": "words/nouns_1.json",
+      "category": "Words"
     },
     {
-      "category": "Words",
+      "name": "동사 1",
       "description": "words material: verbs_1",
-      "path": "words/verbs_1.json",
       "id": "verbs_1",
-      "name": "동사 1"
+      "path": "words/verbs_1.json",
+      "category": "Words"
     },
     {
-      "category": "Sentences",
+      "name": "기본 표현 1",
       "description": "sentences material: basic_expressions1",
-      "path": "sentences/basic_expressions1.json",
       "id": "basic_expressions1",
-      "name": "기본 표현 1"
+      "path": "sentences/basic_expressions1.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "술집 및 카페 1",
       "description": "sentences material: basic_expressions10",
-      "path": "sentences/basic_expressions10.json",
       "id": "basic_expressions10",
-      "name": "술집 및 카페 1"
+      "path": "sentences/basic_expressions10.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "식당 1",
       "description": "sentences material: basic_expressions11",
-      "path": "sentences/basic_expressions11.json",
       "id": "basic_expressions11",
-      "name": "식당 1"
+      "path": "sentences/basic_expressions11.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "작별 1",
       "description": "sentences material: basic_expressions12",
-      "path": "sentences/basic_expressions12.json",
       "id": "basic_expressions12",
-      "name": "작별 1"
+      "path": "sentences/basic_expressions12.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "교통 1",
       "description": "sentences material: basic_expressions13",
-      "path": "sentences/basic_expressions13.json",
       "id": "basic_expressions13",
-      "name": "교통 1"
+      "path": "sentences/basic_expressions13.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "호텔 1",
       "description": "sentences material: basic_expressions14",
-      "path": "sentences/basic_expressions14.json",
       "id": "basic_expressions14",
-      "name": "호텔 1"
+      "path": "sentences/basic_expressions14.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "해변 1",
       "description": "sentences material: basic_expressions15",
-      "path": "sentences/basic_expressions15.json",
       "id": "basic_expressions15",
-      "name": "해변 1"
+      "path": "sentences/basic_expressions15.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "긴급 상황 1",
       "description": "sentences material: basic_expressions16",
-      "path": "sentences/basic_expressions16.json",
       "id": "basic_expressions16",
-      "name": "긴급 상황 1"
+      "path": "sentences/basic_expressions16.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "대화 1",
       "description": "sentences material: basic_expressions2",
-      "path": "sentences/basic_expressions2.json",
       "id": "basic_expressions2",
-      "name": "대화 1"
+      "path": "sentences/basic_expressions2.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "학습 표현 1",
       "description": "sentences material: basic_expressions3",
-      "path": "sentences/basic_expressions3.json",
       "id": "basic_expressions3",
-      "name": "학습 표현 1"
+      "path": "sentences/basic_expressions3.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "택시 1",
       "description": "sentences material: basic_expressions7",
-      "path": "sentences/basic_expressions7.json",
       "id": "basic_expressions7",
-      "name": "택시 1"
+      "path": "sentences/basic_expressions7.json",
+      "category": "Sentences"
     },
     {
-      "category": "Sentences",
+      "name": "감정 1",
       "description": "sentences material: basic_expressions9",
-      "path": "sentences/basic_expressions9.json",
       "id": "basic_expressions9",
-      "name": "감정 1"
+      "path": "sentences/basic_expressions9.json",
+      "category": "Sentences"
     }
   ],
-  "updated_at": "2026-03-16",
   "version": "3.0"
 }
