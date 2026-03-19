@@ -2,7 +2,7 @@ name: talkie
 description: "Talkie - Language learning app with speech recognition and translation"
 publish_to: 'none'
 
-version: 2.0.0+100
+version: 1.5.0+22
 
 environment:
   sdk: ^3.5.0
@@ -47,7 +47,7 @@ dependencies:
   sqlite3_flutter_libs: ^0.5.18
   flutter_dotenv: ^6.0.0
   shared_preferences: ^2.5.4
-  google_mobile_ads: ^5.2.0
+  google_mobile_ads: ^7.0.0
   url_launcher: ^6.3.1
   supabase_flutter: ^2.12.0
   geolocator: ^13.0.0
@@ -55,7 +55,7 @@ dependencies:
   workmanager: ^0.9.0+3
   uuid: ^4.5.2
   sqflite_common_ffi_web: ^1.1.1
-  connectivity_plus: ^6.0.0
+  connectivity_plus: ^7.0.0
   google_sign_in: ^6.2.1
   kakao_flutter_sdk_user: ^1.10.0
 
@@ -91,9 +91,6 @@ flutter:
   assets:
     - .env
     - assets/help/
-    - assets/icon_mic.png
-    - assets/icon_mic_2.png
-    - assets/icon_mic_premium.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

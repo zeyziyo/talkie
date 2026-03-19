@@ -166,14 +166,14 @@ class DatabaseService {
     final List<Map<String, dynamic>> results = await db.rawQuery('''
       SELECT notebook_title as subject, 'Notebook' as source 
       FROM (
-        SELECT notebook_title, created_at, source_lang FROM words_meta
+        SELECT notebook_title, created_at, source_lang, target_lang FROM words_meta
         UNION ALL
-        SELECT notebook_title, created_at, source_lang FROM sentences_meta
+        SELECT notebook_title, created_at, source_lang, target_lang FROM sentences_meta
       )
-      WHERE source_lang = ?
+      WHERE source_lang = ? OR target_lang = ?
       GROUP BY notebook_title
       ORDER BY MAX(created_at) DESC
-    ''', [langCode]);
+    ''', [langCode, langCode]);
     return results;
   }
 

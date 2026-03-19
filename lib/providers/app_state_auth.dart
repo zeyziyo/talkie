@@ -675,6 +675,7 @@ extension AppStateAuth on AppState {
     // Final sync trigger is handled via the Auth Listener in AppState
   }
 
+
   Future<void> logout() async {
     await SupabaseAuthService.signOut();
     _currentChatMessages = [];

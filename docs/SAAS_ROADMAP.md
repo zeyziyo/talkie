@@ -1,122 +1,101 @@
-# Talkie SaaS Evolution Roadmap
+# 🚀 Talkie SaaS 로드맵
 
-현재의 독립형 앱(Standalone App)에서 **구독형 서비스(SaaS)**로 발전하기 위한 4가지 핵심 전략을 제안합니다.
-
----
-
-## 📊 현재 앱 상태 (v1.8.16 기준, 2026-03-07)
-
-| 항목 | 내용 |
-|---|---|
-| **배포 플랫폼** | Google Play Store (비공개 테스트 → 공개 출시 준비 중) |
-| **지원 언어** | 80개국어 (한국어, 영어, 일본어, 스페인어 등) |
-| **백엔드** | Supabase (Auth, PostgreSQL DB, Storage) |
-| **Target SDK** | Android 15 (API 35), compileSdk 36 |
-| **앱 버전** | v1.8.16+50 |
-| **주요 구현 완료 기능** | Mode 1~4 전체, AI 페르소나 채팅, 온라인 자료실, 실시간 스마트 검색, TTS 80개 언어 |
-
----
+이 문서는 Talkie의 향후 기능 확장 및 서비스 고도화 계획을 담고 있습니다. 현재의 독립형 앱(Standalone App)에서 **구독형 서비스(SaaS)**로 발전하기 위한 핵심 전략을 제안합니다.
 
 ## 1. AI 튜터 & 롤플레잉 (Premium B2C)
 단순한 발음 체크를 넘어, 실제 상황처럼 대화하는 LLM(거대언어모델) 기반 기능입니다.
 *   **현재 문제:** 정해진 문장만 읽는 연습은 실제 회화 적응력이 떨어짐.
-*   **현재 상태 (구현 완료 ✅):** **"AI 페르소나 채팅 & 2개 국어 및 TTS 지원"**
+*   **현재 상태 (Implemented):** **"AI 페르소나 채팅"** (Phase 11 완료)
     *   사용자가 '교사', '가이드', '친구' 등 페르소나를 선택하여 대화.
-    *   AI 응답 및 사용자 메시지 2개 국어 표시 및 TTS 발음 듣기 지원.
     *   AI 응답 자동 번역 및 원하는 문장 즉시 학습 목록(Mode 2) 저장.
-    *   JSON 파일을 통해 대화 데이터셋 및 과거 채팅 내역을 일괄 복원/가져오기 가능.
-    *   채팅 다크 테마 UI 적용 및 실시간 스마트 검색 지원.
-*   **다음 단계 (SaaS):** 고급 교정 & 무제한 대화 유료화 / 발음 정확도 점수 리포트.
+    *   **향후 SaaS 고도화:** 실시간 음성 교정 및 문법 피드백 기능 유료화.
 *   **수익 모델:** 기본 채팅 무료 / 고급 교정 및 무제한 대화는 월 구독 ($9.99/월).
-
----
 
 ## 2. 콘텐츠 마켓플레이스 (Creator Economy)
 현재의 JSON 파일 기능을 클라우드 플랫폼으로 확장합니다.
 *   **현재 문제:** 좋은 학습 자료(JSON)를 구하기 어렵고, 만들기 귀찮음.
-*   **현재 상태 (부분 구현 ✅):**
-    *   Supabase 연동 온라인 자료실(Online Library): 클라우드에서 단어/문장 세트 공유 가능.
-    *   JSON Import/Export: 사용자 간 학습 자료 공유의 기반 인프라 완성.
-    *   80개국어 UI 지원으로 글로벌 콘텐츠 배포 기반 확보.
-*   **다음 단계 (SaaS):** **"Talkie Store"**
-    *   유명 강사나 일반 사용자가 자신만의 '단어장/문장 세트'를 유료로 등록.
-    *   큐레이션: "영화 쉐도잉 세트", "토익 빈출 800" 등 고퀄리티 자료 유료 판매.
+*   **SaaS 솔루션:** **"Talkie Store"**
+    *   유명 강사나 일반 사용자가 자신만의 '단어장/문장 세트'를 만들어 올림.
+    *   다른 사용자는 이를 다운로드하여 앱에서 바로 학습(Mode 2, 3, 4).
+    *   **큐레이션:** "영화 쉐도잉 세트", "토익 빈출 800" 등 고퀄리티 자료 유료 판매 또는 프리미엄 구독자 전용 제공.
 *   **수익 모델:** 프리미엄 자료 판매 수수료 or 구독자에게 무제한 다운로드 제공.
-
----
 
 ## 3. 학습 관리 시스템 (LMS) - 교육용 B2B
 학교, 학원, 스터디 그룹을 위한 관리 도구입니다.
 *   **현재 문제:** 선생님이 학생들의 연습 여부를 확인할 수 없음.
-*   **현재 상태 (기반 인프라 완성 ✅):**
-    *   Supabase Auth: 계정 기반 사용자 관리 가능.
-    *   Mode 2, 3 학습 데이터 로컬 SQLite 저장 → 클라우드 연동으로 확장 가능.
-*   **다음 단계 (SaaS):** **"Talkie Class"**
-    *   선생님용 웹 대시보드: 학생들에게 이번 주 학습 세트를 원격 배포.
-    *   리포트: 학생의 발음 점수, 학습 시간이 선생님에게 자동 전송.
+*   **SaaS 솔루션:** **"Talkie Class"**
+    *   **선생님용 웹 대시보드:** 학생들에게 이번 주 학습할 단어/문장 세트(JSON)를 원격으로 배포.
+    *   **학생 앱:** "오늘의 숙제" 알림이 뜨고, Mode 3(말하기)와 Mode 4(게임)로 숙제 수행.
+    *   **리포트:** 학생의 발음 점수, 학습 시간, 게임 점수가 선생님에게 자동 전송됨.
 *   **수익 모델:** 학생 1인당 월 과금 (학교/학원 대상 영업).
-
----
 
 ## 4. 실시간 단어 배틀 (Multiplayer)
 혼자 하는 게임을 실시간 경쟁으로 확장하여 리텐션(재접속률)을 높입니다.
 *   **현재 문제:** Mode 4 게임이 혼자 하기 심심할 수 있음.
-*   **현재 상태:** Mode 4 단어 비 게임 싱글플레이어 구현 완료.
-*   **다음 단계 (SaaS):** **"Word Rain Battle"**
+*   **SaaS 솔루션:** **"Word Rain Battle"**
     *   비슷한 레벨의 사용자와 1:1 매칭.
     *   같은 단어가 떨어지고, 누가 더 빨리 정확하게 말해서 없애는지 대결.
-    *   승리 시 포인트 획득 → 앱 내 아바타 꾸미기 등 보상.
+    *   승리 시 포인트 획득 -> 앱 내 아바타 꾸미기 등 보상.
 *   **수익 모델:** 부분 유료화 (게임 아이템), 광고 제거.
 
 ---
 
-## 추천 단계 (Phasing)
+## 📡 [Backlog] 실시간 글로벌 커뮤니티 (언어 교환 채팅)
 
-| 단계 | 목표 | 상태 |
-|---|---|---|
-| **Phase 1** (User Base) | Supabase 연동, 80개국어, 온라인 자료실 | ✅ 완료 |
-| **Phase 1.5** (Engagement) | AI 페르소나 채팅, TTS 80개 언어, 실시간 검색 | ✅ 완료 |
-| **Phase 2** (Revenue) | RevenueCat 인앱 결제 연동, 프리미엄 구독 모델 도입 | 🔜 다음 목표 |
-| **Phase 2.5** (Store) | Talkie Store (콘텐츠 마켓플레이스) 오픈 | 📋 계획 중 |
-| **Phase 3** (Scale) | B2B (Talkie Class) 진출 | 📋 계획 중 |
+사용자가 배우고 있는 언어를 모국어로 사용하는 전 세계 사람들과 실시간으로 소통하며 언어 능력을 향상시킬 수 있는 기능입니다.
+
+### 1. 주요 기능 (Key Features)
+- **언어 기반 매칭**: 사용자의 모국어와 학습 언어 설정을 기반으로 최적화된 대화 상대 추천.
+- **실시간 채팅 (Supabase Realtime)**: 웹소켓 기술을 활용한 지연 없는 즉각적인 메시지 송수신.
+- **AI 자동 번역 (Gemini)**: 모든 채팅 메시지에 대해 상대방 언어로의 실시간 번역 결과 제공.
+- **사용자 상태 추적**: 실시간 접속 중인 유저와 오프라인 유저 구분 표시.
+
+### 2. 기술 아키텍처 (Tech Stack)
+- **Database**: Supabase `profiles`, `public_chat_rooms`, `public_chat_messages` 테이블.
+- **Realtime**: PostgreSQL 변동 사항을 추적하는 Realtime 채널 구독.
+- **AI Integration**: 전송 시점에 번역 및 콘텐츠 필터링을 동시 수행하는 `translateAndValidate` 로직 활용.
+
+### 3. 비용 관리 전략 (Cost Optimization)
+- **번역 선택제 (On-Demand)**: 모든 메시지 자동 번역 대신 사용자가 클릭 시에만 API 호출.
+- **캐싱 (Caching)**: 반복되는 일상적인 표현(인사말 등)은 AI 호출 없이 DB에서 즉시 매칭.
+- **메시지 TTL**: 일정 기간(예: 30일)이 지난 대화 내역은 자동 삭제하여 DB 비용 절감.
 
 ---
 
-## 5. 추천 기술 스택 (Tech Stack Strategy)
+## 🚀 추천 단계 (Phasing)
+
+1.  **Phase 1 (User Base):** **콘텐츠 마켓플레이스** 구축. (현재 진행 중: Supabase 클라우드 동기화 완료).
+2.  **Phase 1.5 (Engagement):** **AI 페르소나 채팅** 기초 구현 완료 (Phase 11).
+3.  **Phase 2 (Revenue):** **실시간 교정 및 롤플레잉** 고도화.
+4.  **Phase 3 (Scale):** **B2B(학원용)** 진출 및 **글로벌 커뮤니티** 활성화.
+
+---
+
+## 🛠️ 추천 기술 스택 (Tech Stack Strategy)
 1인 개발 또는 소규모 팀이 효율적으로 확장하기 위한 **"가성비 & 생산성"** 중심의 스택입니다.
 
 ### A. 백엔드 (Backend as a Service)
-*   **Supabase** ✅ (현재 사용 중)
-    *   **DB:** PostgreSQL — 사용자, 학습 기록, 채팅 내역 관리.
-    *   **Auth:** 소셜 로그인(Google, Kakao) 및 이메일 인증 통합.
-    *   **Storage:** 온라인 자료실 파일 저장.
-    *   **Edge Functions:** AI API 호출 등 서버 로직 처리.
-    *   **Realtime:** 워드 배틀(멀티플레이) 구현 시 필수.
+*   **Supabase** (추천): PostgreSQL, Auth, Edge Functions, Realtime 통합 제공.
 
 ### B. AI & LLM
-*   **Google Cloud Translation API** ✅ (현재 사용 중) — 80개국어 번역.
-*   **OpenAI API (GPT-4o-mini):** 회화 롤플레잉 고도화 시 도입 예정.
+*   **OpenAI API (GPT-4o-mini):** 회화 및 교정에 최적.
+*   **Gemini API:** 번역 및 콘텐츠 필터링 보조.
 
 ### C. 결제 (Payments)
-*   **RevenueCat** 📋 (Phase 2 도입 예정)
-    *   인앱 결제(구글/애플) 구현의 복잡성을 제거. 구독 모델 관리에 필수.
+*   **RevenueCat:** 구독 모델 관리 필수.
 
-### D. 웹 대시보드 (Talkie Class)
-*   **Flutter Web:** 기존 앱 코드를 90% 재사용하여 선생님용 웹사이트를 빠르게 구축.
-
-### E. 아키텍처 다이어그램 (Flow)
+### D. 아키텍처 다이어그램 (Flow)
 ```mermaid
 graph TD
-    User[사용자 앱 Flutter] -->|Auth/DB/Storage| Supabase
-    User -->|In-App Purchase| RevenueCat["RevenueCat (Phase 2)"]
-    User -->|Translation| GoogleCloud[Google Cloud API]
+    User[사용자 앱 (Flutter)] -->|Auth/DB/Realtime| Supabase
+    User -->|In-App Purchase| RevenueCat
     User -->|Voice/Text| EdgeFunc[Supabase Edge Functions]
     
-    Teacher[선생님 웹 Flutter Web] -->|Manage| Supabase
+    Teacher[선생님 웹 (Flutter Web)] -->|Manage| Supabase
     
-    EdgeFunc -->|Request| OpenAI["GPT-4o (Phase 2)"]
-    EdgeFunc -->|TTS| GoogleCloudTTS[Google Cloud TTS]
+    EdgeFunc -->|Request| OpenAI[GPT-4o]
+    EdgeFunc -->|TTS| GoogleCloudTTS
 ```
 
 ---
-*Last Updated: 2026-03-07 (v1.8.16 기준 현재 상태 업데이트)*
+*Last Updated: 2026-03-18*

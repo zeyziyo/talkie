@@ -517,6 +517,7 @@ extension AppStateMode2 on AppState {
     if (subject != null && subject.isNotEmpty) {
       await loadMaterialRecords(subject);
     } else {
+      _selectedTags.clear(); // Clear any specific notebook/tag filter
       await loadRecordsByTags();
     }
     notify();

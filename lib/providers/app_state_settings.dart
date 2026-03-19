@@ -80,6 +80,8 @@ extension AppStateSettings on AppState {
     
     // 3. Reset Mode 3 (incompatible source)
     selectMaterial(null);
+    _selectedTags.clear(); // Ensure filters are reset
+    _materialRecords = []; // Clear visual backlog
     loadStudyMaterials(); // Refresh availability
     
     // v59 Improvement: Clear online materials cache so it re-filters for the new source language
@@ -104,6 +106,8 @@ extension AppStateSettings on AppState {
     
     // 3. Reset Mode 3 (incompatible target)
     selectMaterial(null); 
+    _selectedTags.clear(); 
+    _materialRecords = [];
     loadStudyMaterials(); // Refresh availability
     
     notify();

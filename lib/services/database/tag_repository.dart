@@ -84,8 +84,9 @@ class TagRepository {
     final db = await _db;
     final Set<String> allTags = {};
 
-    // Phase: Filter by source_lang in metas
-    final wordRows = await db.query('words_meta', columns: ['tags'], where: 'source_lang = ?', whereArgs: [langCode]);
+    // Phase: Filter by source_lang or target_lang in metas
+    final wordRows = await db.query('words_meta', columns: ['tags'], 
+      where: 'source_lang = ? OR target_lang = ?', whereArgs: [langCode, langCode]);
     for (var row in wordRows) {
       final t = row['tags'] as String?;
       if (t != null && t.isNotEmpty) {
@@ -93,7 +94,8 @@ class TagRepository {
       }
     }
 
-    final sentenceRows = await db.query('sentences_meta', columns: ['tags'], where: 'source_lang = ?', whereArgs: [langCode]);
+    final sentenceRows = await db.query('sentences_meta', columns: ['tags'], 
+      where: 'source_lang = ? OR target_lang = ?', whereArgs: [langCode, langCode]);
     for (var row in sentenceRows) {
       final t = row['tags'] as String?;
       if (t != null && t.isNotEmpty) {
@@ -113,8 +115,8 @@ class TagRepository {
     if (type == null || type == 'word') {
       final rows = await db.query('words_meta', 
         columns: ['tags'], 
-        where: 'notebook_title = ? AND source_lang = ?', 
-        whereArgs: [notebookTitle, langCode]);
+        where: 'notebook_title = ? AND (source_lang = ? OR target_lang = ?)', 
+        whereArgs: [notebookTitle, langCode, langCode]);
       for (var row in rows) {
         final t = row['tags'] as String?;
         if (t != null && t.isNotEmpty) allTags.addAll(t.split(',').where((s) => s.isNotEmpty));
@@ -124,8 +126,8 @@ class TagRepository {
     if (type == null || type == 'sentence') {
       final rows = await db.query('sentences_meta', 
         columns: ['tags'], 
-        where: 'notebook_title = ? AND source_lang = ?', 
-        whereArgs: [notebookTitle, langCode]);
+        where: 'notebook_title = ? AND (source_lang = ? OR target_lang = ?)', 
+        whereArgs: [notebookTitle, langCode, langCode]);
       for (var row in rows) {
         final t = row['tags'] as String?;
         if (t != null && t.isNotEmpty) allTags.addAll(t.split(',').where((s) => s.isNotEmpty));
