@@ -17,6 +17,6 @@ class AppConstants {
   static const double cardBorderRadius = 20.0;
 
   // --- App Info ---
-  static const String appVersion = '2.0.0';
+  static const String appVersion = '1.0.0';
   static const String developerEmail = 'talkie.help@gmail.com';
 }
