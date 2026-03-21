@@ -805,5 +805,24 @@
   "openSettings": "Open instellings",
   "helpNotebook": "Kies 'n gids om vertaalde resultate te stoor.",
   "helpNote": "Teken die betekenis, voorbeelde of situasies van die woord vrylik aan.",
-  "helpTag": "Sleutelwoorde vir latere kategorisering of soektogte."
+  "helpTag": "Sleutelwoorde vir latere kategorisering of soektogte.",
+  "requestTranslation": "Vertaal versoek",
+  "statusRequestSuccess": "Vertaling versoek suksesvol.",
+  "statusRequestFailed": "Vertaling versoek het misluk: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Studie taal nie ondersteun nie",
+  "studyLangNotFoundDesc": "Die gekose materiaal ondersteun nie die huidige studie taal ({targetLang}) nie en kan nie plaaslik gestoor word nie. Wil jy 'n vertaling aanvra?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

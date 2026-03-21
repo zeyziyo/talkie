@@ -805,5 +805,24 @@
   "openSettings": "සැකසුම් විවෘත කරන්න",
   "helpNotebook": "පරිවර්තන ප්‍රතිඵල සුරැකීමට ෆෝල්ඩරයක් තෝරන්න.",
   "helpNote": "වචනයේ තේරුම, උදාහරණ, තත්වයන් වැනි දේ නිදහසේ සටහන් කරන්න.",
-  "helpTag": "පසුව වර්ග කිරීමට හෝ සෙවීමට මූල පද ඇතුළත් කරන්න."
+  "helpTag": "පසුව වර්ග කිරීමට හෝ සෙවීමට මූල පද ඇතුළත් කරන්න.",
+  "requestTranslation": "පරිවර්තනයක් ඉල්ලන්න",
+  "statusRequestSuccess": "පරිවර්තන ඉල්ලීම සාර්ථක විය.",
+  "statusRequestFailed": "පරිවර්තන ඉල්ලීම අසාර්ථක විය: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "පරිශීලන භාෂාව හඳුනාගත නොහැක",
+  "studyLangNotFoundDesc": "ඔබ තෝරාගත් අන්තර්ගතය දැනට ඔබගේ පාඩම් භාෂාව ({targetLang}) සඳහා සහය නොදක්වන බැවින් එය ඔබගේ උපාංගයේ සුරැකිය නොහැක. ඔබ පරිවර්තනයක් ඉල්ලීමට කැමතිද?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

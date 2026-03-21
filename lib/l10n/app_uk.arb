@@ -805,5 +805,24 @@
   "openSettings": "Відкрити налаштування",
   "helpNotebook": "Виберіть папку для збереження перекладених результатів.",
   "helpNote": "Вільно записуйте значення слів, приклади, ситуації тощо.",
-  "helpTag": "Введіть ключові слова для подальшої класифікації або пошуку."
+  "helpTag": "Введіть ключові слова для подальшої класифікації або пошуку.",
+  "requestTranslation": "Замовити переклад",
+  "statusRequestSuccess": "Запит на переклад успішно надіслано.",
+  "statusRequestFailed": "Помилка запиту на переклад: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Мова навчання не підтримується",
+  "studyLangNotFoundDesc": "Вибраний вами матеріал не підтримує поточну мову навчання ({targetLang}) і не може бути збережений локально. Бажаєте замовити переклад?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

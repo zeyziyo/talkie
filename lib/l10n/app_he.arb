@@ -805,5 +805,24 @@
   "openSettings": "פתח הגדרות",
   "helpNotebook": "בחר תיקייה לשמירת התרגומים.",
   "helpNote": "רשום באופן חופשי את משמעות המילה, דוגמאות, הקשר וכו'.",
-  "helpTag": "הזן מילות מפתח למיון או חיפוש מאוחר יותר."
+  "helpTag": "הזן מילות מפתח למיון או חיפוש מאוחר יותר.",
+  "requestTranslation": "בקש תרגום",
+  "statusRequestSuccess": "בקשת התרגום הושלמה.",
+  "statusRequestFailed": "בקשת התרגום נכשלה: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "שפת לימוד לא נתמכת",
+  "studyLangNotFoundDesc": "החומר שבחרת אינו תומך בשפת הלימוד הנוכחית שלך ({targetLang}) ולכן לא ניתן לשמור אותו באופן מקומי. האם תרצה לבקש תרגום?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

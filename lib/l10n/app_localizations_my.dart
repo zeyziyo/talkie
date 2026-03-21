@@ -1378,21 +1378,21 @@ class AppLocalizationsMy extends AppLocalizations {
       'နောက်ပိုင်း အမျိုးအစားခွဲ ဒါမှမဟုတ် ရှာဖွေဖို့အတွက် သော့ချက်စာလုံးကို ရိုက်ထည့်ပါ။';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'ဘာသာပြန်ရန် တောင်းဆိုပါ';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'ဘာသာပြန်ရန် တောင်းဆိုမှု အောင်မြင်ပါသည်။';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'ဘာသာပြန်ရန် တောင်းဆိုမှု မအောင်မြင်ပါ- $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'လေ့လာလိုသော ဘာသာစကားကို မထောက်ပံ့ပါ';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'သင်ရွေးချယ်ထားသော အကြောင်းအရာသည် လက်ရှိ သင်၏ လေ့လာလိုသော ဘာသာစကား ($targetLang) ကို မထောက်ပံ့သောကြောင့် ဒေသအလိုက် သိမ်းဆည်း၍ မရပါ။ ဘာသာပြန်ရန် တောင်းဆိုလိုပါသလား?';
   }
 }

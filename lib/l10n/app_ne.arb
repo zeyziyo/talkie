@@ -805,5 +805,24 @@
   "openSettings": "सेटिङहरू खोल्नुहोस्",
   "helpNotebook": "अनुवादित परिणामहरू बचत गर्न फोल्डर छान्नुहोस्।",
   "helpNote": "शब्दको अर्थ, उदाहरण वा स्थिति जस्ता कुराहरू स्वतन्त्र रूपमा रेकर्ड गर्नुहोस्।",
-  "helpTag": "पछि वर्गीकरण वा खोजीका लागि कुञ्जी शब्दहरू प्रविष्ट गर्नुहोस्।"
+  "helpTag": "पछि वर्गीकरण वा खोजीका लागि कुञ्जी शब्दहरू प्रविष्ट गर्नुहोस्।",
+  "requestTranslation": "अनुवाद अनुरोध गर्नुहोस्",
+  "statusRequestSuccess": "अनुवाद अनुरोध सफल भयो।",
+  "statusRequestFailed": "अनुवाद अनुरोध असफल भयो: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "अध्ययन भाषा समर्थित छैन",
+  "studyLangNotFoundDesc": "तपाईंले चयन गर्नुभएको सामग्रीले हालको अध्ययन भाषा ({targetLang}) लाई समर्थन नगर्ने भएकाले यसलाई स्थानीय रूपमा बचत गर्न सकिँदैन। के तपाईं अनुवाद अनुरोध गर्न चाहनुहुन्छ?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

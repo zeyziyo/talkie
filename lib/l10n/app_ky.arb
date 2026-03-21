@@ -805,5 +805,24 @@
   "openSettings": "Жөндөөлөрдү ачуу",
   "helpNotebook": "Которулган натыйжаларды сактай турган папканы тандаңыз.",
   "helpNote": "Сөздүн маанисин, мисалдарын же контекстти жазыңыз.",
-  "helpTag": "Кийинчерээк классификациялоо же издөө үчүн ачкыч сөздөрдү киргизиңиз."
+  "helpTag": "Кийинчерээк классификациялоо же издөө үчүн ачкыч сөздөрдү киргизиңиз.",
+  "requestTranslation": "Которууну суроо",
+  "statusRequestSuccess": "Которуу сурамыңыз ийгиликтүү аяктады.",
+  "statusRequestFailed": "Которуу сурамы аткарылган жок: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Окуу тили колдоого алынбайт",
+  "studyLangNotFoundDesc": "Сиз тандаган материал учурда окуу тилиңизди ({targetLang}) колдобойт, ошондуктан жергиликтүү сактагычка сакталбайт. Которууну сурагыңыз келеби?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

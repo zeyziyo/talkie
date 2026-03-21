@@ -805,5 +805,24 @@
   "openSettings": "Ava seaded",
   "helpNotebook": "Vali kaust, kuhu tõlgitud tulemused salvestada.",
   "helpNote": "Kirjuta üles sõna tähendus, näited või olukorrad.",
-  "helpTag": "Sisesta märksõnad, et hiljem liigitada või otsida."
+  "helpTag": "Sisesta märksõnad, et hiljem liigitada või otsida.",
+  "requestTranslation": "Taotle tõlget",
+  "statusRequestSuccess": "Tõlketaotlus on esitatud.",
+  "statusRequestFailed": "Tõlketaotlus ebaõnnestus: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Õppekeel pole toetatud",
+  "studyLangNotFoundDesc": "Valitud materjal ei toeta praegust õppekeelt ({targetLang}), seega ei saa seda kohalikult salvestada. Kas soovid tõlget taotleda?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

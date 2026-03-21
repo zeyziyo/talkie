@@ -1376,21 +1376,21 @@ class AppLocalizationsTa extends AppLocalizations {
       'பின்னர் வகைப்படுத்த அல்லது தேட முக்கிய வார்த்தைகளை உள்ளிடவும்.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'மொழிபெயர்ப்பு கோரிக்கை';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'மொழிபெயர்ப்பு கோரிக்கை முடிந்தது.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'மொழிபெயர்ப்பு கோரிக்கை தோல்வியடைந்தது: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'கற்றல் மொழி ஆதரிக்கப்படவில்லை';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'நீங்கள் தேர்ந்தெடுத்த உள்ளடக்கம் தற்போது அமைக்கப்பட்ட கற்றல் மொழி ($targetLang) ஆதரிக்காததால் உள்நாட்டில் சேமிக்க முடியாது. மொழிபெயர்க்க வேண்டுமா?';
   }
 }

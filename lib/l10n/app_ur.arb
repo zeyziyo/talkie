@@ -805,5 +805,24 @@
   "openSettings": "ترتیبات کھولیں",
   "helpNotebook": "ترجمہ شدہ نتائج کو محفوظ کرنے کے لیے فولڈر منتخب کریں۔",
   "helpNote": "الفاظ کے معنی، مثالیں، حالات وغیرہ آزادانہ طور پر ریکارڈ کریں۔",
-  "helpTag": "بعد میں درجہ بندی یا تلاش کرنے کے لیے مطلوبہ الفاظ درج کریں۔"
+  "helpTag": "بعد میں درجہ بندی یا تلاش کرنے کے لیے مطلوبہ الفاظ درج کریں۔",
+  "requestTranslation": "ترجمہ کی درخواست کریں",
+  "statusRequestSuccess": "ترجمہ کی درخواست مکمل ہو گئی۔",
+  "statusRequestFailed": "ترجمہ کی درخواست ناکام: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "زبان کی معاونت دستیاب نہیں",
+  "studyLangNotFoundDesc": "منتخب کردہ مواد آپ کی موجودہ سیکھنے کی زبان ({targetLang}) میں دستیاب نہیں ہے، اس لیے اسے مقامی طور پر محفوظ نہیں کیا جا سکتا۔ کیا آپ ترجمہ کی درخواست کرنا چاہتے ہیں؟",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

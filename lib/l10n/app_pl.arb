@@ -805,5 +805,24 @@
   "openSettings": "Otwórz ustawienia",
   "helpNotebook": "Wybierz folder, w którym chcesz zapisać przetłumaczone wyniki.",
   "helpNote": "Zapisuj dowolnie znaczenie słów, przykłady lub sytuacje.",
-  "helpTag": "Wprowadź słowa kluczowe do późniejszej klasyfikacji lub wyszukiwania."
+  "helpTag": "Wprowadź słowa kluczowe do późniejszej klasyfikacji lub wyszukiwania.",
+  "requestTranslation": "Poproś o tłumaczenie",
+  "statusRequestSuccess": "Prośba o tłumaczenie została wysłana.",
+  "statusRequestFailed": "Błąd prośby o tłumaczenie: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Nieobsługiwany język nauki",
+  "studyLangNotFoundDesc": "Wybrane materiały nie są obsługiwane w ustawionym języku nauki ({targetLang}), więc nie można ich zapisać lokalnie. Czy chcesz poprosić o tłumaczenie?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

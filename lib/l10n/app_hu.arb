@@ -805,5 +805,24 @@
   "openSettings": "Beállítások megnyitása",
   "helpNotebook": "Válaszd ki a mappát, ahová a fordításaid mentésre kerüljenek.",
   "helpNote": "Jegyezd fel a szavak jelentését, példamondatokat vagy egyéb hasznos információkat.",
-  "helpTag": "Adj meg kulcsszavakat, amikkel később rendszerezheted vagy megkeresheted a jegyzeteket."
+  "helpTag": "Adj meg kulcsszavakat, amikkel később rendszerezheted vagy megkeresheted a jegyzeteket.",
+  "requestTranslation": "Fordítás kérése",
+  "statusRequestSuccess": "A fordítási kérelem sikeresen megtörtént.",
+  "statusRequestFailed": "Fordítási kérelem sikertelen: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Tanulási nyelv nem támogatott",
+  "studyLangNotFoundDesc": "A kiválasztott anyag nem támogatja a jelenleg beállított tanulási nyelvet ({targetLang}), ezért nem lehet helyben tárolni. Szeretné kérni a fordítást?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

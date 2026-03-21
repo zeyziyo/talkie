@@ -805,5 +805,24 @@
   "openSettings": "Atvērt iestatījumus",
   "helpNotebook": "Izvēlieties mapi, kurā saglabāt tulkojumus.",
   "helpNote": "Brīvi pierakstiet vārda nozīmi, piemērus vai kontekstu.",
-  "helpTag": "Ievadiet atslēgvārdus, lai tos vēlāk varētu kārtot vai meklēt."
+  "helpTag": "Ievadiet atslēgvārdus, lai tos vēlāk varētu kārtot vai meklēt.",
+  "requestTranslation": "Pieprasīt tulkojumu",
+  "statusRequestSuccess": "Tulkošanas pieprasījums ir pabeigts.",
+  "statusRequestFailed": "Tulkošanas pieprasījums neizdevās: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Mācību valoda nav atrasta",
+  "studyLangNotFoundDesc": "Atlasītie materiāli neatbalsta pašreizējo mācību valodu ({targetLang}), tāpēc tos nevar saglabāt lokāli. Vai vēlaties pieprasīt tulkojumu?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

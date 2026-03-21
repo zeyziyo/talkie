@@ -805,5 +805,24 @@
   "openSettings": "Opna stillingar",
   "helpNotebook": "Veldu möppuna til að vista þýddar niðurstöður í.",
   "helpNote": "Skrifaðu frjálst um merkingu orðsins, dæmi eða aðstæður.",
-  "helpTag": "Sláðu inn leitarorð til að flokka eða leita seinna."
+  "helpTag": "Sláðu inn leitarorð til að flokka eða leita seinna.",
+  "requestTranslation": "Sækja um þýðingu",
+  "statusRequestSuccess": "Beiðni um þýðingu tókst.",
+  "statusRequestFailed": "Beiðni um þýðingu mistókst: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Námstungumál ekki stutt",
+  "studyLangNotFoundDesc": "Valin gögn styðja ekki núverandi námstungumál ({targetLang}) og því er ekki hægt að vista þau staðbundið. Viltu biðja um þýðingu?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

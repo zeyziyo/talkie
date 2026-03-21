@@ -1364,21 +1364,21 @@ class AppLocalizationsEu extends AppLocalizations {
   String get helpTag => 'Sartu gero sailkatu edo bilatzeko gako-hitzak.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'Itzulpena eskatu';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'Itzulpen eskaera burutu da.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'Itzulpen eskaera huts egin du: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'Ikasteko hizkuntza ez da aurkitu';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'Hautatu duzun materialak ez du onartzen unean ezarrita daukazun ikasteko hizkuntza ($targetLang), eta ezin da lokalean gorde. Itzulpena eskatu nahi duzu?';
   }
 }

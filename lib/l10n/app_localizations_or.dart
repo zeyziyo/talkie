@@ -1371,21 +1371,21 @@ class AppLocalizationsOr extends AppLocalizations {
       'ପରେ ବର୍ଗୀକରଣ କିମ୍ବା ଖୋଜିବା ପାଇଁ କୀୱାର୍ଡ଼ ପ୍ରବେଶ କରନ୍ତୁ।';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'ଅନୁବାଦ ପାଇଁ ଅନୁରୋଧ କରନ୍ତୁ';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'ଅନୁବାଦ ଅନୁରୋଧ ସଫଳ ହୋଇଛି।';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'ଅନୁବାଦ ଅନୁରୋଧ ବିଫଳ: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'ଅଧ୍ୟୟନ ଭାଷା ସମର୍ଥିତ ନୁହେଁ';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'ଆପଣଙ୍କ ଦ୍ୱାରା ଚୟନ କରାଯାଇଥିବା ସାମଗ୍ରୀ ବର୍ତ୍ତମାନ ସେଟ୍ ହୋଇଥିବା ଅଧ୍ୟୟନ ଭାଷା ($targetLang) କୁ ସମର୍ଥନ କରେ ନାହିଁ ଏବଂ ସ୍ଥାନୀୟ ଭାବରେ ସଂରକ୍ଷିତ ହୋଇପାରିବ ନାହିଁ। ଆପଣ ଏହାର ଅନୁବାଦ କରିବାକୁ ଅନୁରୋଧ କରିବାକୁ ଚାହାଁନ୍ତି କି?';
   }
 }

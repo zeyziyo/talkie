@@ -805,5 +805,24 @@
   "openSettings": "Abrir axustes",
   "helpNotebook": "Selecciona un cartafol para gardar os resultados traducidos.",
   "helpNote": "Escribe libremente os significados das palabras, exemplos ou situacións.",
-  "helpTag": "Introduce palabras clave para clasificar ou buscar máis tarde."
+  "helpTag": "Introduce palabras clave para clasificar ou buscar máis tarde.",
+  "requestTranslation": "Solicitar tradución",
+  "statusRequestSuccess": "Solicitude de tradución completada.",
+  "statusRequestFailed": "Erro na solicitude de tradución: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Idioma de estudo non admitido",
+  "studyLangNotFoundDesc": "O material seleccionado non admite o idioma de estudo actual ({targetLang}), polo que non se pode gardar localmente. Queres solicitar unha tradución?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

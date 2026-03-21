@@ -805,5 +805,24 @@
   "openSettings": "Открыть настройки",
   "helpNotebook": "Выберите папку для сохранения переведенных результатов.",
   "helpNote": "Свободно записывайте значения слов, примеры или ситуации.",
-  "helpTag": "Введите ключевые слова для классификации или поиска позже."
+  "helpTag": "Введите ключевые слова для классификации или поиска позже.",
+  "requestTranslation": "Запросить перевод",
+  "statusRequestSuccess": "Запрос на перевод выполнен.",
+  "statusRequestFailed": "Ошибка запроса на перевод: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Учебный язык не поддерживается",
+  "studyLangNotFoundDesc": "Выбранный вами материал не поддерживает установленный в данный момент учебный язык ({targetLang}), поэтому его нельзя сохранить локально. Хотите запросить перевод?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

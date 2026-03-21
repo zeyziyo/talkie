@@ -805,5 +805,24 @@
   "openSettings": "ເປີດການຕັ້ງຄ່າ",
   "helpNotebook": "ເລືອກໂຟນເດີ້ເພື່ອບັນທຶກຜົນການແປ.",
   "helpNote": "ບັນທຶກຄວາມໝາຍ, ຕົວຢ່າງ, ສະຖານະການ, ແລະອື່ນໆ ຕາມໃຈ.",
-  "helpTag": "ປ້ອນຄຳສັບຫຼັກສຳລັບການຈັດໝວດໝູ່ ຫຼື ຄົ້ນຫາໃນພາຍຫຼັງ."
+  "helpTag": "ປ້ອນຄຳສັບຫຼັກສຳລັບການຈັດໝວດໝູ່ ຫຼື ຄົ້ນຫາໃນພາຍຫຼັງ.",
+  "requestTranslation": "ຂໍການແປ",
+  "statusRequestSuccess": "ຄຳຮ້ອງຂໍການແປສຳເລັດແລ້ວ.",
+  "statusRequestFailed": "ຄຳຮ້ອງຂໍການແປຜິດພາດ: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "ບໍ່ຮອງຮັບພາສາການຮຽນ",
+  "studyLangNotFoundDesc": "ເອກະສານທີ່ທ່ານເລືອກບໍ່ຮອງຮັບພາສາການຮຽນທີ່ຕັ້ງໄວ້ໃນປັດຈຸບັນ ({targetLang}) ແລະບໍ່ສາມາດບັນທຶກໄວ້ໃນເຄື່ອງໄດ້. ທ່ານຕ້ອງການຂໍການແປບໍ່?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

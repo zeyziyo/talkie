@@ -1362,21 +1362,21 @@ class AppLocalizationsAs extends AppLocalizations {
   String get helpTag => ' পিছত শ্ৰেণীবিভাজন বা সন্ধান কৰিবলৈ কিৱৰ্ডসমূহ লিখক।';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'অনুবাদৰ বাবে অনুৰোধ কৰক';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'অনুবাদৰ বাবে কৰা অনুৰোধ সফল হৈছে।';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'অনুবাদৰ বাবে কৰা অনুৰোধ ব্যৰ্থ: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'অধ্যয়নৰ ভাষা সমৰ্থিত নহয়';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'আপুনি নিৰ্বাচন কৰা সামগ্ৰীটোৱে বৰ্তমানৰ অধ্যয়নৰ ভাষা ($targetLang) সমৰ্থন নকৰে, সেয়ে ইয়াক স্থানীয়ভাৱে সংৰক্ষণ কৰিব নোৱাৰি। আপুনি অনুবাদৰ বাবে অনুৰোধ কৰিব বিচাৰেনে?';
   }
 }

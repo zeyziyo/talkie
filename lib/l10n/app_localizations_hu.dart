@@ -1361,21 +1361,22 @@ class AppLocalizationsHu extends AppLocalizations {
       'Adj meg kulcsszavakat, amikkel később rendszerezheted vagy megkeresheted a jegyzeteket.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'Fordítás kérése';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess =>
+      'A fordítási kérelem sikeresen megtörtént.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'Fordítási kérelem sikertelen: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'Tanulási nyelv nem támogatott';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'A kiválasztott anyag nem támogatja a jelenleg beállított tanulási nyelvet ($targetLang), ezért nem lehet helyben tárolni. Szeretné kérni a fordítást?';
   }
 }

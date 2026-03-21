@@ -805,5 +805,24 @@
   "openSettings": "เปิดการตั้งค่า",
   "helpNotebook": "เลือกโฟลเดอร์ที่จะบันทึกผลการแปล",
   "helpNote": "บันทึกความหมาย ตัวอย่าง หรือสถานการณ์ของคำศัพท์ได้อย่างอิสระ",
-  "helpTag": "ป้อนคำหลักเพื่อจัดหมวดหมู่หรือค้นหาในภายหลัง"
+  "helpTag": "ป้อนคำหลักเพื่อจัดหมวดหมู่หรือค้นหาในภายหลัง",
+  "requestTranslation": "ขอคำแปล",
+  "statusRequestSuccess": "ส่งคำขอแปลเรียบร้อยแล้ว",
+  "statusRequestFailed": "ส่งคำขอแปลล้มเหลว: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "ไม่รองรับภาษาที่ใช้เรียนรู้",
+  "studyLangNotFoundDesc": "เอกสารที่คุณเลือกไม่รองรับภาษาที่ใช้เรียนรู้ ({targetLang}) ที่ตั้งค่าไว้ในปัจจุบัน จึงไม่สามารถบันทึกลงในเครื่องได้ คุณต้องการขอคำแปลหรือไม่",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

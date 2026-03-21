@@ -805,5 +805,24 @@
   "openSettings": "Отваряне на настройките",
   "helpNotebook": "Изберете папка за запазване на преведените резултати.",
   "helpNote": "Записвайте свободно значения, примери, ситуации и други за думата.",
-  "helpTag": "Въведете ключови думи за по-късно класифициране или търсене."
+  "helpTag": "Въведете ключови думи за по-късно класифициране или търсене.",
+  "requestTranslation": "Заявка за превод",
+  "statusRequestSuccess": "Заявката за превод е завършена.",
+  "statusRequestFailed": "Неуспешна заявка за превод: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Езикът за обучение не се поддържа",
+  "studyLangNotFoundDesc": "Избраният от вас материал не поддържа текущо зададения език за обучение ({targetLang}) и не може да бъде запазен локално. Искате ли да заявите превод?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

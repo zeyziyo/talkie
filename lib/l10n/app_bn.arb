@@ -805,5 +805,24 @@
   "openSettings": "সেটিংস খুলুন",
   "helpNotebook": "অনুবাদিত ফলাফল সংরক্ষণের জন্য একটি ফোল্ডার নির্বাচন করুন।",
   "helpNote": "শব্দের অর্থ, উদাহরণ বা পরিস্থিতি ইত্যাদি নির্দ্বিধায় লিখুন।",
-  "helpTag": "শ্রেণীবদ্ধ বা অনুসন্ধানের জন্য কীওয়ার্ড লিখুন।"
+  "helpTag": "শ্রেণীবদ্ধ বা অনুসন্ধানের জন্য কীওয়ার্ড লিখুন।",
+  "requestTranslation": "অনুবাদ করার জন্য অনুরোধ করুন",
+  "statusRequestSuccess": "অনুবাদ করার অনুরোধটি সম্পন্ন হয়েছে।",
+  "statusRequestFailed": "অনুবাদ করার অনুরোধটি ব্যর্থ হয়েছে: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "শেখার ভাষা সমর্থিত নয়",
+  "studyLangNotFoundDesc": "আপনি যে উপাদানটি নির্বাচন করেছেন তা বর্তমানে আপনার নির্বাচিত শেখার ভাষা ({targetLang}) সমর্থন করে না, তাই এটি স্থানীয়ভাবে সংরক্ষণ করা যাবে না। আপনি কি অনুবাদ করার জন্য অনুরোধ করতে চান?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

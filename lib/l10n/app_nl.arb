@@ -805,5 +805,24 @@
   "openSettings": "Instellingen openen",
   "helpNotebook": "Selecteer de map waarin u de vertalingen wilt opslaan.",
   "helpNote": "Noteer vrijelijk de betekenis, voorbeelden of situaties van een woord.",
-  "helpTag": "Voer trefwoorden in om later te categoriseren of te zoeken."
+  "helpTag": "Voer trefwoorden in om later te categoriseren of te zoeken.",
+  "requestTranslation": "Vertaalverzoek indienen",
+  "statusRequestSuccess": "Vertaalverzoek voltooid.",
+  "statusRequestFailed": "Vertaalverzoek mislukt: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Leertaal niet ondersteund",
+  "studyLangNotFoundDesc": "Het geselecteerde materiaal ondersteunt de huidige ingestelde leertaal ({targetLang}) niet en kan niet lokaal worden opgeslagen. Wilt u een vertaling aanvragen?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

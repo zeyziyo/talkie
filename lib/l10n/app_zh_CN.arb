@@ -805,5 +805,24 @@
   "openSettings": "打开设置",
   "helpNotebook": "选择用于保存翻译结果的文件夹。",
   "helpNote": "自由记录单词的含义、例句、情景等。",
-  "helpTag": "输入用于日后分类或搜索的关键词。"
+  "helpTag": "输入用于日后分类或搜索的关键词。",
+  "requestTranslation": "请求翻译",
+  "statusRequestSuccess": "翻译请求已完成。",
+  "statusRequestFailed": "翻译请求失败: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "不支持学习语言",
+  "studyLangNotFoundDesc": "您选择的资料目前不支持您设置的学习语言（{targetLang}），因此无法保存到本地。是否请求翻译？",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

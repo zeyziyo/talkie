@@ -805,5 +805,24 @@
   "openSettings": "Fungua Mipangilio",
   "helpNotebook": "Chagua folda ya kuhifadhi matokeo yaliyotafsiriwa.",
   "helpNote": "Andika maana za maneno, mifano, au hali mbalimbali kwa uhuru.",
-  "helpTag": "Weka maneno muhimu ya kuainisha au kutafuta baadaye."
+  "helpTag": "Weka maneno muhimu ya kuainisha au kutafuta baadaye.",
+  "requestTranslation": "Omba Tafsiri",
+  "statusRequestSuccess": "Ombi lako la tafsiri limepokelewa.",
+  "statusRequestFailed": "Ombi la tafsiri halikufaulu: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Lugha ya kujifunzia haipatikani",
+  "studyLangNotFoundDesc": "Nyenzo uliyochagua haiauni lugha ya kujifunzia uliyochagua ({targetLang}), na haiwezi kuhifadhiwa. Je, ungependa kuomba tafsiri?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -1368,21 +1368,21 @@ class AppLocalizationsMl extends AppLocalizations {
   String get helpTag => 'പിന്നീട് തരംതിരിക്കാനോ തിരയാനോ ഉള്ള കീവേഡുകൾ നൽകുക.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'വിവർത്തനം അഭ്യർത്ഥിക്കുക';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'വിവർത്ത അഭ്യർത്ഥന പൂർത്തിയായിരിക്കുന്നു.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'വിവർത്തന അഭ്യർത്ഥന പരാജയപ്പെട്ടു: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'പഠന ഭാഷ ലഭ്യമല്ല';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'നിങ്ങൾ തിരഞ്ഞെടുത്ത മെറ്റീരിയൽ നിലവിൽ തിരഞ്ഞെടുത്തിട്ടുള്ള പഠന ഭാഷയായ ($targetLang) പിന്തുണയ്ക്കുന്നില്ല അതിനാൽ ലോക്കലായി സേവ് ചെയ്യാൻ കഴിയില്ല. വിവർത്തനം അഭ്യർത്ഥിക്കാമോ?';
   }
 }

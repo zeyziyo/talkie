@@ -805,5 +805,24 @@
   "openSettings": "Einstellungen öffnen",
   "helpNotebook": "Wählen Sie den Ordner zum Speichern der übersetzten Ergebnisse aus.",
   "helpNote": "Notieren Sie frei die Bedeutung, Beispiele oder Situationen eines Wortes.",
-  "helpTag": "Geben Sie Schlüsselwörter zur späteren Kategorisierung oder Suche ein."
+  "helpTag": "Geben Sie Schlüsselwörter zur späteren Kategorisierung oder Suche ein.",
+  "requestTranslation": "Übersetzung anfordern",
+  "statusRequestSuccess": "Übersetzungsanfrage erfolgreich.",
+  "statusRequestFailed": "Übersetzungsanfrage fehlgeschlagen: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Lernsprache nicht unterstützt",
+  "studyLangNotFoundDesc": "Das ausgewählte Material unterstützt die aktuell eingestellte Lernsprache ({targetLang}) nicht und kann daher nicht lokal gespeichert werden. Möchten Sie eine Übersetzung anfordern?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

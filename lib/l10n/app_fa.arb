@@ -805,5 +805,24 @@
   "openSettings": "باز کردن تنظیمات",
   "helpNotebook": "پوشه ای را برای ذخیره نتایج ترجمه انتخاب کنید.",
   "helpNote": "معانی، مثال ها، موقعیت ها و غیره کلمات را آزادانه یادداشت کنید.",
-  "helpTag": "برای طبقه بندی یا جستجو در آینده، کلمات کلیدی را وارد کنید."
+  "helpTag": "برای طبقه بندی یا جستجو در آینده، کلمات کلیدی را وارد کنید.",
+  "requestTranslation": "درخواست ترجمه",
+  "statusRequestSuccess": "درخواست ترجمه با موفقیت انجام شد.",
+  "statusRequestFailed": "درخواست ترجمه ناموفق بود: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "زبان یادگیری پشتیبانی نمی‌شود",
+  "studyLangNotFoundDesc": "مواد انتخابی شما از زبان یادگیری ({targetLang}) فعلی پشتیبانی نمی‌کند و نمی‌تواند به صورت محلی ذخیره شود. آیا می‌خواهید ترجمه درخواست کنید؟",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

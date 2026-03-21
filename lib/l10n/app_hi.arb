@@ -805,5 +805,24 @@
   "openSettings": "सेटिंग खोलें",
   "helpNotebook": "अनुवादित परिणामों को सहेजने के लिए फ़ोल्डर चुनें।",
   "helpNote": "शब्दों के अर्थ, उदाहरण या स्थितियों आदि को स्वतंत्र रूप से लिखें।",
-  "helpTag": "बाद में वर्गीकृत करने या खोजने के लिए कीवर्ड दर्ज करें।"
+  "helpTag": "बाद में वर्गीकृत करने या खोजने के लिए कीवर्ड दर्ज करें।",
+  "requestTranslation": "अनुवाद का अनुरोध करें",
+  "statusRequestSuccess": "अनुवाद का अनुरोध पूरा हुआ।",
+  "statusRequestFailed": "अनुवाद अनुरोध विफल: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "सीखने की भाषा समर्थित नहीं है",
+  "studyLangNotFoundDesc": "चुनी गई सामग्री वर्तमान में सेट की गई सीखने की भाषा ({targetLang}) का समर्थन नहीं करती है, इसलिए इसे स्थानीय रूप से सहेजा नहीं जा सकता है। क्या आप अनुवाद का अनुरोध करना चाहेंगे?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

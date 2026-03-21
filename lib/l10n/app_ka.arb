@@ -805,5 +805,24 @@
   "openSettings": "პარამეტრების გახსნა",
   "helpNotebook": "აირჩიეთ საქაღალდე თარგმანების შესანახად.",
   "helpNote": "თავისუფლად ჩაიწერეთ სიტყვების მნიშვნელობები, მაგალითები ან კონტექსტი.",
-  "helpTag": "შეიყვანეთ საკვანძო სიტყვები შემდგომი კლასიფიკაციისთვის ან ძიებისთვის."
+  "helpTag": "შეიყვანეთ საკვანძო სიტყვები შემდგომი კლასიფიკაციისთვის ან ძიებისთვის.",
+  "requestTranslation": "თარგმნის მოთხოვნა",
+  "statusRequestSuccess": "თარგმნის მოთხოვნა დასრულდა.",
+  "statusRequestFailed": "თარგმნის მოთხოვნა ვერ მოხერხდა: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "სასწავლო ენის მხარდაჭერა არ არის",
+  "studyLangNotFoundDesc": "თქვენს მიერ არჩეული მასალა ამჟამად არ უჭერს მხარს სასწავლო ენას ({targetLang}) და მისი ლოკალურად შენახვა შეუძლებელია. გსურთ თარგმნის მოთხოვნა?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

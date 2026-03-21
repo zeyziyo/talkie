@@ -805,5 +805,24 @@
   "openSettings": "設定を開く",
   "helpNotebook": "翻訳された結果を保存するフォルダを選択してください。",
   "helpNote": "単語の意味や例文、状況などを自由にご記入ください。",
-  "helpTag": "後で分類したり検索したりするためのキーワードを入力してください。"
+  "helpTag": "後で分類したり検索したりするためのキーワードを入力してください。",
+  "requestTranslation": "翻訳をリクエスト",
+  "statusRequestSuccess": "翻訳リクエストが完了しました。",
+  "statusRequestFailed": "翻訳リクエスト失敗: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "学習言語はサポートされていません",
+  "studyLangNotFoundDesc": "選択した教材は、現在設定されている学習言語（{targetLang}）をサポートしていないため、ローカルに保存できません。翻訳をリクエストしますか？",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

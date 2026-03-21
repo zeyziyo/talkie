@@ -805,5 +805,24 @@
   "openSettings": "Apri impostazioni",
   "helpNotebook": "Seleziona la cartella dove salvare le traduzioni.",
   "helpNote": "Scrivi liberamente definizioni, esempi o contesti per la parola.",
-  "helpTag": "Inserisci parole chiave per categorizzare o cercare in seguito."
+  "helpTag": "Inserisci parole chiave per categorizzare o cercare in seguito.",
+  "requestTranslation": "Richiedi traduzione",
+  "statusRequestSuccess": "Richiesta di traduzione completata.",
+  "statusRequestFailed": "Richiesta di traduzione fallita: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Lingua di studio non supportata",
+  "studyLangNotFoundDesc": "Il materiale selezionato non supporta la lingua di studio impostata ({targetLang}) e non può essere salvato localmente. Vuoi richiedere una traduzione?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

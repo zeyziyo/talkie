@@ -805,5 +805,24 @@
   "openSettings": "Buka Pengaturan",
   "helpNotebook": "Pilih folder untuk menyimpan hasil terjemahan.",
   "helpNote": "Bebas mencatat arti kata, contoh kalimat, situasi, dll.",
-  "helpTag": "Masukkan kata kunci untuk klasifikasi atau pencarian nanti."
+  "helpTag": "Masukkan kata kunci untuk klasifikasi atau pencarian nanti.",
+  "requestTranslation": "Minta Terjemahan",
+  "statusRequestSuccess": "Permintaan terjemahan berhasil.",
+  "statusRequestFailed": "Permintaan terjemahan gagal: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Bahasa Belajar Tidak Didukung",
+  "studyLangNotFoundDesc": "Materi yang Anda pilih tidak mendukung bahasa belajar yang saat ini diatur ({targetLang}), sehingga tidak dapat disimpan secara lokal. Apakah Anda ingin meminta terjemahan?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

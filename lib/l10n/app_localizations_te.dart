@@ -1361,21 +1361,21 @@ class AppLocalizationsTe extends AppLocalizations {
       'తరువాత వర్గీకరించడానికి లేదా శోధించడానికి కీలకపదాలను నమోదు చేయండి.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'అనువాదం అభ్యర్థించు';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'అనువాదం అభ్యర్థన పూర్తయింది.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'అనువాదం అభ్యర్థన విఫలమైంది: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'అధ్యయన భాష మద్దతు లేదు';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'మీరు ఎంచుకున్న మెటీరియల్ ప్రస్తుతం సెట్ చేయబడిన అధ్యయన భాష ($targetLang)కు మద్దతు ఇవ్వదు కాబట్టి దీన్ని స్థానికంగా సేవ్ చేయలేరు. మీరు అనువాదం కోసం అభ్యర్థించాలనుకుంటున్నారా?';
   }
 }

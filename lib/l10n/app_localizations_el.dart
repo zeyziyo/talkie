@@ -1361,21 +1361,21 @@ class AppLocalizationsEl extends AppLocalizations {
       'Εισαγάγετε λέξεις-κλειδιά για να ταξινομήσετε ή να αναζητήσετε αργότερα.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'Αίτημα μετάφρασης';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'Το αίτημα μετάφρασης ολοκληρώθηκε.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'Αποτυχία αιτήματος μετάφρασης: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'Μη υποστηριζόμενη γλώσσα εκμάθησης';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'Το υλικό που επιλέξατε δεν υποστηρίζει την τρέχουσα γλώσσα εκμάθησης ($targetLang) και δεν μπορεί να αποθηκευτεί τοπικά. Θέλετε να ζητήσετε μετάφραση;';
   }
 }

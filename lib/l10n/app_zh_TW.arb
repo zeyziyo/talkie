@@ -805,5 +805,24 @@
   "openSettings": "開啟設定",
   "helpNotebook": "選擇儲存翻譯結果的資料夾。",
   "helpNote": "自由記錄單字的意思、例句或情境等。",
-  "helpTag": "輸入關鍵字以便日後分類或搜尋。"
+  "helpTag": "輸入關鍵字以便日後分類或搜尋。",
+  "requestTranslation": "請求翻譯",
+  "statusRequestSuccess": "翻譯請求已完成。",
+  "statusRequestFailed": "翻譯請求失敗：{error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "學習語言不支援",
+  "studyLangNotFoundDesc": "您選擇的資料目前不支援您設定的學習語言（{targetLang}），因此無法儲存到本機。您要請求翻譯嗎？",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -805,5 +805,24 @@
   "openSettings": "Åbn indstillinger",
   "helpNotebook": "Vælg den mappe, hvor de oversatte resultater skal gemmes.",
   "helpNote": "Notér frit ordets betydning, eksempler eller situationer.",
-  "helpTag": "Indtast nøgleord til senere kategorisering eller søgning."
+  "helpTag": "Indtast nøgleord til senere kategorisering eller søgning.",
+  "requestTranslation": "Anmod om oversættelse",
+  "statusRequestSuccess": "Oversættelsesanmodning fuldført.",
+  "statusRequestFailed": "Oversættelsesanmodning mislykkedes: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Undervisningssprog ikke understøttet",
+  "studyLangNotFoundDesc": "Det valgte materiale understøtter ikke det aktuelt indstillede undervisningssprog ({targetLang}) og kan ikke gemmes lokalt. Vil du anmode om en oversættelse?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

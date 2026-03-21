@@ -1353,21 +1353,21 @@ class AppLocalizationsVi extends AppLocalizations {
   String get helpTag => 'Nhập từ khóa để phân loại hoặc tìm kiếm sau này.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'Yêu cầu dịch';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'Yêu cầu dịch đã hoàn tất.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'Yêu cầu dịch thất bại: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'Ngôn ngữ học tập không được hỗ trợ';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'Tài liệu bạn chọn hiện không hỗ trợ ngôn ngữ học tập đã đặt ($targetLang) nên không thể lưu cục bộ. Bạn có muốn yêu cầu dịch không?';
   }
 }

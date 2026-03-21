@@ -805,5 +805,24 @@
   "openSettings": "Otvori postavke",
   "helpNotebook": "Odaberite mapu za spremanje prevedenih rezultata.",
   "helpNote": "Slobodno zabilježite značenje riječi, primjere ili kontekst.",
-  "helpTag": "Unesite ključne riječi za kasniju klasifikaciju ili pretragu."
+  "helpTag": "Unesite ključne riječi za kasniju klasifikaciju ili pretragu.",
+  "requestTranslation": "Zatraži prijevod",
+  "statusRequestSuccess": "Zahtjev za prijevod je uspješan.",
+  "statusRequestFailed": "Zahtjev za prijevod nije uspio: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Jezik učenja nije podržan",
+  "studyLangNotFoundDesc": "Odabrani materijal ne podržava trenutno postavljeni jezik učenja ({targetLang}) i ne može se pohraniti lokalno. Želite li zatražiti prijevod?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -805,5 +805,24 @@
   "openSettings": "Mở cài đặt",
   "helpNotebook": "Chọn thư mục để lưu trữ các kết quả đã dịch.",
   "helpNote": "Tự do ghi lại ý nghĩa, ví dụ hoặc tình huống của từ.",
-  "helpTag": "Nhập từ khóa để phân loại hoặc tìm kiếm sau này."
+  "helpTag": "Nhập từ khóa để phân loại hoặc tìm kiếm sau này.",
+  "requestTranslation": "Yêu cầu dịch",
+  "statusRequestSuccess": "Yêu cầu dịch đã hoàn tất.",
+  "statusRequestFailed": "Yêu cầu dịch thất bại: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Ngôn ngữ học tập không được hỗ trợ",
+  "studyLangNotFoundDesc": "Tài liệu bạn chọn hiện không hỗ trợ ngôn ngữ học tập đã đặt ({targetLang}) nên không thể lưu cục bộ. Bạn có muốn yêu cầu dịch không?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

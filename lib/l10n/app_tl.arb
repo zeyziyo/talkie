@@ -805,5 +805,24 @@
   "openSettings": "Buksan ang mga Setting",
   "helpNotebook": "Pumili ng folder kung saan ilalagay ang mga isinalin.",
   "helpNote": "Malayang isulat ang kahulugan, halimbawa, o sitwasyon ng salita.",
-  "helpTag": "Maglagay ng mga keyword para sa pag-uuri o paghahanap sa hinaharap."
+  "helpTag": "Maglagay ng mga keyword para sa pag-uuri o paghahanap sa hinaharap.",
+  "requestTranslation": "Humiling ng Pagsasalin",
+  "statusRequestSuccess": "Matagumpay na hiniling ang pagsasalin.",
+  "statusRequestFailed": "Nabigo ang paghiling ng pagsasalin: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Hindi Suportado ang Wika ng Pag-aaral",
+  "studyLangNotFoundDesc": "Hindi sinusuportahan ng materyal na iyong pinili ang kasalukuyang wika ng pag-aaral ({targetLang}), kaya hindi ito maaaring i-save nang lokal. Gusto mo bang humiling ng pagsasalin?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

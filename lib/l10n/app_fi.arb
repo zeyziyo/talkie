@@ -805,5 +805,24 @@
   "openSettings": "Avaa asetukset",
   "helpNotebook": "Valitse kansio, johon haluat tallentaa käännetyt tulokset.",
   "helpNote": "Kirjoita vapaasti sanan merkitys, esimerkkejä tai tilanteita.",
-  "helpTag": "Kirjoita avainsanoja, joilla voit myöhemmin luokitella tai etsiä."
+  "helpTag": "Kirjoita avainsanoja, joilla voit myöhemmin luokitella tai etsiä.",
+  "requestTranslation": "Pyydä käännöstä",
+  "statusRequestSuccess": "Käännöspyyntö onnistui.",
+  "statusRequestFailed": "Käännöspyyntö epäonnistui: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Oppimiskieltä ei tueta",
+  "studyLangNotFoundDesc": "Valitsemasi materiaali ei tue nykyistä oppimiskieltäsi ({targetLang}), joten sitä ei voida tallentaa paikallisesti. Haluatko pyytää käännöstä?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

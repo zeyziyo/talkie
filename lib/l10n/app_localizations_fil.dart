@@ -1369,21 +1369,21 @@ class AppLocalizationsFil extends AppLocalizations {
       'Maglagay ng mga keyword para sa pag-uuri o paghahanap sa hinaharap.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'Hilingin ang Pagsasalin';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'Matagumpay na naihiling ang pagsasalin.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'Nabigo ang Hiling sa Pagsasalin: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'Hindi Suportado ang Wika ng Pag-aaral';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'Hindi maaaring i-save ang napiling materyal sa lokal dahil hindi nito suportado ang kasalukuyang wika ng pag-aaral ($targetLang). Gusto mo bang humiling ng pagsasalin?';
   }
 }

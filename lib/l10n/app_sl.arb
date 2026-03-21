@@ -805,5 +805,24 @@
   "openSettings": "Odpri nastavitve",
   "helpNotebook": "Izberite mapo, kamor želite shraniti prevedene rezultate.",
   "helpNote": "Prosto si zapišite definicije besed, primere, situacije itd.",
-  "helpTag": "Vnesite ključne besede za kasnejšo kategorizacijo ali iskanje."
+  "helpTag": "Vnesite ključne besede za kasnejšo kategorizacijo ali iskanje.",
+  "requestTranslation": "Zahtevaj prevod",
+  "statusRequestSuccess": "Zahteva za prevod je bila uspešna.",
+  "statusRequestFailed": "Zahteva za prevod neuspešna: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Učni jezik ni podprt",
+  "studyLangNotFoundDesc": "Izbrano gradivo ne podpira trenutno nastavljenega učnega jezika ({targetLang}) in ga ni mogoče shraniti lokalno. Ali želite zahtevati prevod?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

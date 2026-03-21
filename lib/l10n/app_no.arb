@@ -805,5 +805,24 @@
   "openSettings": "Åpne innstillinger",
   "helpNotebook": "Velg mappen for å lagre de oversatte resultatene.",
   "helpNote": "Skriv fritt ned ordets betydning, eksempler, situasjoner osv.",
-  "helpTag": "Skriv inn nøkkelord for å klassifisere eller søke senere."
+  "helpTag": "Skriv inn nøkkelord for å klassifisere eller søke senere.",
+  "requestTranslation": "Be om oversettelse",
+  "statusRequestSuccess": "Oversettelse forespurt.",
+  "statusRequestFailed": "Forespørsel om oversettelse mislyktes: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Studie språk ikke støttet",
+  "studyLangNotFoundDesc": "Det valgte materialet støtter ikke det gjeldende studiespråket ditt ({targetLang}) og kan ikke lagres lokalt. Vil du be om en oversettelse?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

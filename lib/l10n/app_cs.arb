@@ -805,5 +805,24 @@
   "openSettings": "Otevřít nastavení",
   "helpNotebook": "Vyberte složku, kam chcete uložit přeložené výsledky.",
   "helpNote": "Libovolně si zapisujte významy slov, příklady nebo situace.",
-  "helpTag": "Zadejte klíčová slova pro pozdější kategorizaci nebo vyhledávání."
+  "helpTag": "Zadejte klíčová slova pro pozdější kategorizaci nebo vyhledávání.",
+  "requestTranslation": "Požádat o překlad",
+  "statusRequestSuccess": "Žádost o překlad byla úspěšně odeslána.",
+  "statusRequestFailed": "Žádost o překlad selhala: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Nepodporovaný jazyk výuky",
+  "studyLangNotFoundDesc": "Vybraný materiál nepodporuje aktuální jazyk výuky ({targetLang}), takže jej nelze uložit lokálně. Chcete požádat o překlad?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -805,5 +805,24 @@
   "openSettings": "Atverti nustatymus",
   "helpNotebook": "Pasirinkite aplanką, kuriame norite išsaugoti išverstus rezultatus.",
   "helpNote": "Laisvai įrašykite žodžių reikšmes, sakinius ar situacijas.",
-  "helpTag": "Įveskite raktinius žodžius, kad vėliau galėtumėte rūšiuoti ar ieškoti."
+  "helpTag": "Įveskite raktinius žodžius, kad vėliau galėtumėte rūšiuoti ar ieškoti.",
+  "requestTranslation": "Prašyti vertimo",
+  "statusRequestSuccess": "Vertimo užklausa sėkminga.",
+  "statusRequestFailed": "Vertimo užklausa nepavyko: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Mokymosi kalba nepalaikoma",
+  "studyLangNotFoundDesc": "Pasirinkta medžiaga nepalaiko šiuo metu nustatytos mokymosi kalbos ({targetLang}), todėl negalima jos išsaugoti lokaliai. Ar norite prašyti vertimo?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -1367,21 +1367,21 @@ class AppLocalizationsBe extends AppLocalizations {
       'Увядзіце ключавыя словы для класіфікацыі ці пошуку пазней.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'Запытаць пераклад';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'Запыт на пераклад выкананы.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'Памылка запыту на пераклад: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'Мова навучання не падтрымліваецца';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'Выбраны вамі матэрыял не можа быць захаваны лакальна, паколькі ён не падтрымлівае бягучую мову навучання ($targetLang). Запытаць пераклад?';
   }
 }

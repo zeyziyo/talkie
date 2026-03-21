@@ -1316,22 +1316,22 @@ class AppLocalizationsZh extends AppLocalizations {
   String get helpTag => '输入用于日后分类或搜索的关键词。';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => '请求翻译';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => '翻译请求已完成。';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return '翻译请求失败: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => '学习语言不支持';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return '您选择的材料当前不支持您设置的学习语言（$targetLang），因此无法保存到本地。是否请求翻译？';
   }
 }
 
@@ -2646,6 +2646,25 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get helpTag => '输入用于日后分类或搜索的关键词。';
+
+  @override
+  String get requestTranslation => '请求翻译';
+
+  @override
+  String get statusRequestSuccess => '翻译请求已完成。';
+
+  @override
+  String statusRequestFailed(String error) {
+    return '翻译请求失败: $error';
+  }
+
+  @override
+  String get studyLangNotFoundTitle => '不支持学习语言';
+
+  @override
+  String studyLangNotFoundDesc(String targetLang) {
+    return '您选择的资料目前不支持您设置的学习语言（$targetLang），因此无法保存到本地。是否请求翻译？';
+  }
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -3959,4 +3978,23 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get helpTag => '輸入關鍵字以便日後分類或搜尋。';
+
+  @override
+  String get requestTranslation => '請求翻譯';
+
+  @override
+  String get statusRequestSuccess => '翻譯請求已完成。';
+
+  @override
+  String statusRequestFailed(String error) {
+    return '翻譯請求失敗：$error';
+  }
+
+  @override
+  String get studyLangNotFoundTitle => '學習語言不支援';
+
+  @override
+  String studyLangNotFoundDesc(String targetLang) {
+    return '您選擇的資料目前不支援您設定的學習語言（$targetLang），因此無法儲存到本機。您要請求翻譯嗎？';
+  }
 }

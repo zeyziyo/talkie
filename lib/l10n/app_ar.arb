@@ -805,5 +805,24 @@
   "openSettings": "فتح الإعدادات",
   "helpNotebook": "اختر المجلد لحفظ الترجمة.",
   "helpNote": "سجل بحرية معاني الكلمات أو الأمثلة أو المواقف وما إلى ذلك.",
-  "helpTag": "أدخل الكلمات الرئيسية لتصنيفها أو البحث عنها لاحقًا."
+  "helpTag": "أدخل الكلمات الرئيسية لتصنيفها أو البحث عنها لاحقًا.",
+  "requestTranslation": "طلب الترجمة",
+  "statusRequestSuccess": "تم طلب الترجمة بنجاح.",
+  "statusRequestFailed": "فشل طلب الترجمة: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "لغة الدراسة غير مدعومة",
+  "studyLangNotFoundDesc": "المادة التي اخترتها لا تدعم لغة الدراسة المحددة حاليًا ({targetLang}) ولا يمكن حفظها محليًا. هل ترغب في طلب ترجمة؟",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

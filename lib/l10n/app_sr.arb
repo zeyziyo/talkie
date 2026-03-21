@@ -805,5 +805,24 @@
   "openSettings": "Отвори подешавања",
   "helpNotebook": "Изаберите фасциклу за чување преведених резултата.",
   "helpNote": "Слободно забележите значење речи, примере или ситуације.",
-  "helpTag": "Унесите кључне речи за каснију класификацију или претрагу."
+  "helpTag": "Унесите кључне речи за каснију класификацију или претрагу.",
+  "requestTranslation": "Затражите превод",
+  "statusRequestSuccess": "Захтев за превод је завршен.",
+  "statusRequestFailed": "Захтев за превод није успео: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Језик учења није подржан",
+  "studyLangNotFoundDesc": "Изабрани материјал не подржава тренутно подешени језик учења ({targetLang}), тако да се не може сачувати локално. Да ли желите да затражите превод?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

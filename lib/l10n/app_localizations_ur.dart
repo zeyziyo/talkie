@@ -1355,21 +1355,21 @@ class AppLocalizationsUr extends AppLocalizations {
       'بعد میں درجہ بندی یا تلاش کرنے کے لیے مطلوبہ الفاظ درج کریں۔';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'ترجمہ کی درخواست کریں';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'ترجمہ کی درخواست مکمل ہو گئی۔';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'ترجمہ کی درخواست ناکام: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'زبان کی معاونت دستیاب نہیں';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'منتخب کردہ مواد آپ کی موجودہ سیکھنے کی زبان ($targetLang) میں دستیاب نہیں ہے، اس لیے اسے مقامی طور پر محفوظ نہیں کیا جا سکتا۔ کیا آپ ترجمہ کی درخواست کرنا چاہتے ہیں؟';
   }
 }

@@ -805,5 +805,24 @@
   "openSettings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ",
   "helpNotebook": "ಪರಿವರ್ತಿತ ಫಲಿತಾಂಶಗಳನ್ನು ಉಳಿಸಲು ಫೋಲ್ಡರ್ ಆಯ್ಕೆಮಾಡಿ.",
   "helpNote": "ಪದದ ಅರ್ಥ, ಉದಾಹರಣೆಗಳು, ಸನ್ನಿವೇಶಗಳು ಇತ್ಯಾದಿಗಳನ್ನು ಮುಕ್ತವಾಗಿ ಬರೆಯಿರಿ.",
-  "helpTag": "ನಂತರ ವರ್ಗೀಕರಿಸಲು ಅಥವಾ ಹುಡುಕಲು ಕೀವರ್ಡ್‌ಗಳನ್ನು ನಮೂದಿಸಿ."
+  "helpTag": "ನಂತರ ವರ್ಗೀಕರಿಸಲು ಅಥವಾ ಹುಡುಕಲು ಕೀವರ್ಡ್‌ಗಳನ್ನು ನಮೂದಿಸಿ.",
+  "requestTranslation": "ಅನುವಾದಿಸಲು ವಿನಂತಿಸಿ",
+  "statusRequestSuccess": "ಅನುವಾದ ವಿನಂತಿ ಪೂರ್ಣಗೊಂಡಿದೆ.",
+  "statusRequestFailed": "ಅನುವಾದ ವಿನಂತಿ ವಿಫಲವಾಗಿದೆ: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "ಅಧ್ಯಯನ ಭಾಷೆ ಲಭ್ಯವಿಲ್ಲ",
+  "studyLangNotFoundDesc": "ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ವಿಷಯವು ಪ್ರಸ್ತುತ ಅಧ್ಯಯನ ಭಾಷೆ ({targetLang}) ಅನ್ನು ಬೆಂಬಲಿಸದ ಕಾರಣ ಸ್ಥಳೀಯವಾಗಿ ಉಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಅನುವಾದಿಸಲು ವಿನಂತಿಸಬೇಕೆ?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

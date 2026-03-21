@@ -1361,21 +1361,21 @@ class AppLocalizationsSl extends AppLocalizations {
       'Vnesite ključne besede za kasnejšo kategorizacijo ali iskanje.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'Zahtevaj prevod';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'Zahteva za prevod je bila uspešna.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'Zahteva za prevod neuspešna: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'Učni jezik ni podprt';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'Izbrano gradivo ne podpira trenutno nastavljenega učnega jezika ($targetLang) in ga ni mogoče shraniti lokalno. Ali želite zahtevati prevod?';
   }
 }

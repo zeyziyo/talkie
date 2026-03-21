@@ -1365,21 +1365,21 @@ class AppLocalizationsKm extends AppLocalizations {
       'បញ្ចូល​ពាក្យ​គន្លឹះ​សម្រាប់​ចាត់ថ្នាក់ ឬ​ស្វែងរក​នៅ​ពេល​ក្រោយ​។';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'ស្នើសុំការបកប្រែ';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'សំណើបកប្រែបានជោគជ័យ។';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'សំណើបកប្រែបរាជ័យ៖ $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'ភាសាសិក្សាមិនគាំទ្រ';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'ឯកសារដែលអ្នកបានជ្រើសរើសមិនគាំទ្រភាសាសិក្សាដែលបានកំណត់បច្ចុប្បន្ន ($targetLang) ដូច្នេះវាមិនអាចរក្សាទុកក្នុងមូលដ្ឋានបានទេ។ តើអ្នកចង់ស្នើសុំការបកប្រែទេ?';
   }
 }

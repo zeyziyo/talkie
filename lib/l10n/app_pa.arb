@@ -805,5 +805,24 @@
   "openSettings": "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
   "helpNotebook": "ਅਨੁਵਾਦ ਕੀਤੇ ਨਤੀਜਿਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਫੋਲਡਰ ਚੁਣੋ।",
   "helpNote": "ਸ਼ਬਦ ਦਾ ਅਰਥ, ਉਦਾਹਰਣਾਂ ਜਾਂ ਸਥਿਤੀਆਂ ਆਦਿ ਨੂੰ ਬੇਝਿਜਕ ਨੋਟ ਕਰੋ।",
-  "helpTag": "ਵਰਗੀਕਰਨ ਜਾਂ ਖੋਜ ਲਈ ਕੀਵਰਡ ਦਰਜ ਕਰੋ।"
+  "helpTag": "ਵਰਗੀਕਰਨ ਜਾਂ ਖੋਜ ਲਈ ਕੀਵਰਡ ਦਰਜ ਕਰੋ।",
+  "requestTranslation": "ਅਨੁਵਾਦ ਲਈ ਬੇਨਤੀ ਕਰੋ",
+  "statusRequestSuccess": "ਅਨੁਵਾਦ ਦੀ ਬੇਨਤੀ ਸਫ਼ਲ ਹੋ ਗਈ ਹੈ।",
+  "statusRequestFailed": "ਅਨੁਵਾਦ ਦੀ ਬੇਨਤੀ ਅਸਫ਼ਲ: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "ਸਿੱਖਣ ਦੀ ਭਾਸ਼ਾ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ",
+  "studyLangNotFoundDesc": "ਚੁਣੀ ਗਈ ਸਮੱਗਰੀ ਵਰਤਮਾਨ ਸਿੱਖਣ ਦੀ ਭਾਸ਼ਾ ({targetLang}) ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ ਹੈ, ਇਸਲਈ ਇਸਨੂੰ ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਕੀ ਤੁਸੀਂ ਅਨੁਵਾਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

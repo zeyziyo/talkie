@@ -1352,21 +1352,21 @@ class AppLocalizationsMr extends AppLocalizations {
       'नंतर वर्गीकरण किंवा शोध घेण्यासाठी कीवर्ड प्रविष्ट करा.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'भाषांतर करण्याची विनंती करा';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'भाषांतर करण्याची विनंती यशस्वी झाली.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'भाषांतर करण्याची विनंती अयशस्वी: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'शिकण्याची भाषा समर्थित नाही';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'तुम्ही निवडलेली सामग्री सध्या निवडलेली शिकण्याची भाषा ($targetLang) समर्थित करत नसल्यामुळे ती स्थानिक पातळीवर जतन केली जाऊ शकत नाही. भाषांतर करण्याची विनंती करू इच्छिता?';
   }
 }

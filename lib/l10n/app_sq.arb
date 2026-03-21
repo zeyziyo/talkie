@@ -805,5 +805,24 @@
   "openSettings": "Hap cilësimet",
   "helpNotebook": "Zgjidhni dosjen ku dëshironi të ruani rezultatet e përkthimit.",
   "helpNote": "Regjistroni lirisht kuptimin, shembujt ose situatat e fjalëve.",
-  "helpTag": "Fut çelësfjalët për t'i klasifikuar ose kërkuar më vonë."
+  "helpTag": "Fut çelësfjalët për t'i klasifikuar ose kërkuar më vonë.",
+  "requestTranslation": "Kërko përkthim",
+  "statusRequestSuccess": "Kërkesa për përkthim u krye me sukses.",
+  "statusRequestFailed": "Kërkesa për përkthim dështoi: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Gjuha e studimit nuk mbështetet",
+  "studyLangNotFoundDesc": "Materiali që keni zgjedhur nuk mbështet gjuhën e studimit të vendosur aktualisht ({targetLang}), prandaj nuk mund të ruhet lokalisht. Dëshironi të kërkoni përkthim?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

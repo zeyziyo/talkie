@@ -805,5 +805,24 @@
   "openSettings": "Ayarları Aç",
   "helpNotebook": "Çevrilen sonuçların kaydedileceği klasörü seçin.",
   "helpNote": "Kelimenin anlamını, örneklerini veya durumlarını serbestçe not alın.",
-  "helpTag": "Daha sonra sınıflandırmak veya aramak için anahtar kelimeler girin."
+  "helpTag": "Daha sonra sınıflandırmak veya aramak için anahtar kelimeler girin.",
+  "requestTranslation": "Çeviri İste",
+  "statusRequestSuccess": "Çeviri isteği başarıyla tamamlandı.",
+  "statusRequestFailed": "Çeviri isteği başarısız oldu: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Öğrenme Dili Desteklenmiyor",
+  "studyLangNotFoundDesc": "Seçtiğiniz materyal, şu anda ayarlanan öğrenme dilinizi ({targetLang}) desteklemediği için yerel olarak kaydedilemiyor. Çeviri istemek ister misiniz?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

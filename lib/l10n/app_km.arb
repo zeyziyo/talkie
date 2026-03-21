@@ -805,5 +805,24 @@
   "openSettings": "បើក​ការកំណត់",
   "helpNotebook": "ជ្រើសរើស​ថត​ដើម្បី​រក្សា​ទុក​លទ្ធផល​ដែល​បាន​បកប្រែ។",
   "helpNote": "សរសេរ​អត្ថន័យ ឧទាហរណ៍ ឬ​ស្ថានភាព​នៃ​ពាក្យ​ដោយ​សេរី​។",
-  "helpTag": "បញ្ចូល​ពាក្យ​គន្លឹះ​សម្រាប់​ចាត់ថ្នាក់ ឬ​ស្វែងរក​នៅ​ពេល​ក្រោយ​។"
+  "helpTag": "បញ្ចូល​ពាក្យ​គន្លឹះ​សម្រាប់​ចាត់ថ្នាក់ ឬ​ស្វែងរក​នៅ​ពេល​ក្រោយ​។",
+  "requestTranslation": "ស្នើសុំការបកប្រែ",
+  "statusRequestSuccess": "សំណើបកប្រែបានជោគជ័យ។",
+  "statusRequestFailed": "សំណើបកប្រែបរាជ័យ៖ {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "ភាសាសិក្សាមិនគាំទ្រ",
+  "studyLangNotFoundDesc": "ឯកសារដែលអ្នកបានជ្រើសរើសមិនគាំទ្រភាសាសិក្សាដែលបានកំណត់បច្ចុប្បន្ន ({targetLang}) ដូច្នេះវាមិនអាចរក្សាទុកក្នុងមូលដ្ឋានបានទេ។ តើអ្នកចង់ស្នើសុំការបកប្រែទេ?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

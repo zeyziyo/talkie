@@ -805,5 +805,24 @@
   "openSettings": "ቅንብሮችን ክፈት",
   "helpNotebook": "የተተረጎሙ ውጤቶች የሚቀመጡበትን አቃፊ ይምረጡ።",
   "helpNote": "የቃላት ፍቺዎችን፣ ምሳሌዎችን ወይም ሁኔታዎችን በነፃነት ይመዝግቡ።",
-  "helpTag": "ለመመደብ ወይም ለመፈለግ ቁልፍ ቃላትን ያስገቡ።"
+  "helpTag": "ለመመደብ ወይም ለመፈለግ ቁልፍ ቃላትን ያስገቡ።",
+  "requestTranslation": "ትርጉም ለመጠየቅ",
+  "statusRequestSuccess": "የትርጉም ጥያቄ ተሳክቷል።",
+  "statusRequestFailed": "የትርጉም ጥያቄ አልተሳካም፡ {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "የጥናት ቋንቋ አልተገኘም።",
+  "studyLangNotFoundDesc": "የመረጡት መረጃ በአሁኑ ጊዜ የተዋቀረውን የጥናት ቋንቋን ({targetLang}) ስለማይደግፍ በአካባቢው ማስቀመጥ አይቻልም። ትርጉም መጠየቅ ይፈልጋሉ?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

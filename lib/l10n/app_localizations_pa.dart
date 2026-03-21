@@ -1359,21 +1359,21 @@ class AppLocalizationsPa extends AppLocalizations {
   String get helpTag => 'ਵਰਗੀਕਰਨ ਜਾਂ ਖੋਜ ਲਈ ਕੀਵਰਡ ਦਰਜ ਕਰੋ।';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'ਅਨੁਵਾਦ ਲਈ ਬੇਨਤੀ ਕਰੋ';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'ਅਨੁਵਾਦ ਦੀ ਬੇਨਤੀ ਸਫ਼ਲ ਹੋ ਗਈ ਹੈ।';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'ਅਨੁਵਾਦ ਦੀ ਬੇਨਤੀ ਅਸਫ਼ਲ: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'ਸਿੱਖਣ ਦੀ ਭਾਸ਼ਾ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'ਚੁਣੀ ਗਈ ਸਮੱਗਰੀ ਵਰਤਮਾਨ ਸਿੱਖਣ ਦੀ ਭਾਸ਼ਾ ($targetLang) ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ ਹੈ, ਇਸਲਈ ਇਸਨੂੰ ਸਥਾਨਕ ਤੌਰ \'ਤੇ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਕੀ ਤੁਸੀਂ ਅਨੁਵਾਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?';
   }
 }

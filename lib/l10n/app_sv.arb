@@ -805,5 +805,24 @@
   "openSettings": "Öppna inställningar",
   "helpNotebook": "Välj mappen där du vill spara de översatta resultaten.",
   "helpNote": "Skriv fritt ner ordets betydelse, exempelmeningar, situationer etc.",
-  "helpTag": "Ange sökord för att senare kategorisera eller söka."
+  "helpTag": "Ange sökord för att senare kategorisera eller söka.",
+  "requestTranslation": "Begär översättning",
+  "statusRequestSuccess": "Översättningsförfrågan har slutförts.",
+  "statusRequestFailed": "Översättningsförfrågan misslyckades: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Språket stöds inte för inlärning",
+  "studyLangNotFoundDesc": "Det valda materialet stöder inte det nuvarande inlärningsspråket ({targetLang}) och kan inte sparas lokalt. Vill du begära en översättning?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

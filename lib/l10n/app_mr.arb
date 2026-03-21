@@ -805,5 +805,24 @@
   "openSettings": "सेटिंग्ज उघडा",
   "helpNotebook": "अनुवादित निकाल जतन करण्यासाठी फोल्डर निवडा.",
   "helpNote": "शब्दाचा अर्थ, उदाहरण किंवा परिस्थिती यासारख्या गोष्टीlibertyने लिहा.",
-  "helpTag": "नंतर वर्गीकरण किंवा शोध घेण्यासाठी कीवर्ड प्रविष्ट करा."
+  "helpTag": "नंतर वर्गीकरण किंवा शोध घेण्यासाठी कीवर्ड प्रविष्ट करा.",
+  "requestTranslation": "भाषांतर करण्याची विनंती करा",
+  "statusRequestSuccess": "भाषांतर करण्याची विनंती यशस्वी झाली.",
+  "statusRequestFailed": "भाषांतर करण्याची विनंती अयशस्वी: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "शिकण्याची भाषा समर्थित नाही",
+  "studyLangNotFoundDesc": "तुम्ही निवडलेली सामग्री सध्या निवडलेली शिकण्याची भाषा ({targetLang}) समर्थित करत नसल्यामुळे ती स्थानिक पातळीवर जतन केली जाऊ शकत नाही. भाषांतर करण्याची विनंती करू इच्छिता?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

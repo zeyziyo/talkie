@@ -805,5 +805,24 @@
   "openSettings": "Otvoriť nastavenia",
   "helpNotebook": "Vyberte priečinok, kam chcete uložiť preložené výsledky.",
   "helpNote": "Slobodne si zapisujte významy slov, príklady alebo situácie.",
-  "helpTag": "Zadajte kľúčové slová na neskoršie triedenie alebo vyhľadávanie."
+  "helpTag": "Zadajte kľúčové slová na neskoršie triedenie alebo vyhľadávanie.",
+  "requestTranslation": "Požiadať o preklad",
+  "statusRequestSuccess": "Žiadosť o preklad bola úspešná.",
+  "statusRequestFailed": "Žiadosť o preklad zlyhala: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Nepodporovaný jazyk štúdia",
+  "studyLangNotFoundDesc": "Vybraný materiál nepodporuje aktuálne nastavený jazyk štúdia ({targetLang}), preto ho nie je možné uložiť lokálne. Chcete požiadať o preklad?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

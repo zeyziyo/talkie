@@ -1345,21 +1345,21 @@ class AppLocalizationsTh extends AppLocalizations {
   String get helpTag => 'ป้อนคำหลักเพื่อจัดหมวดหมู่หรือค้นหาในภายหลัง';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'ขอคำแปล';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'ส่งคำขอแปลเรียบร้อยแล้ว';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'ส่งคำขอแปลล้มเหลว: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'ไม่รองรับภาษาที่ใช้เรียนรู้';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'เอกสารที่คุณเลือกไม่รองรับภาษาที่ใช้เรียนรู้ ($targetLang) ที่ตั้งค่าไว้ในปัจจุบัน จึงไม่สามารถบันทึกลงในเครื่องได้ คุณต้องการขอคำแปลหรือไม่';
   }
 }

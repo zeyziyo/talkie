@@ -805,5 +805,24 @@
   "openSettings": "Agor Gosodiadau",
   "helpNotebook": "Dewiswch y ffolder i gadw'r canlyniadau wedi'u cyfieithu.",
   "helpNote": "Cofnodwch ystyr geiriau, enghreifftiau, sefyllfaoedd, ac ati yn rhydd.",
-  "helpTag": "Rhowch eiriau allweddol i'w dosbarthu neu i chwilio amdanynt yn nes ymlaen."
+  "helpTag": "Rhowch eiriau allweddol i'w dosbarthu neu i chwilio amdanynt yn nes ymlaen.",
+  "requestTranslation": "Gofyn am Gyfieithiad",
+  "statusRequestSuccess": "Cwblhawyd y cais am gyfieithiad.",
+  "statusRequestFailed": "Methwyd â gofyn am gyfieithiad: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Iaith Astudio Heb ei Chefnogi",
+  "studyLangNotFoundDesc": "Nid yw'r iaith astudio ({targetLang}) a ddewiswyd gennych yn cael ei chefnogi ar gyfer y deunydd hwn. A ydych am ofyn am gyfieithiad?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

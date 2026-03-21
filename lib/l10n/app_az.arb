@@ -805,5 +805,24 @@
   "openSettings": "Parametrləri aç",
   "helpNotebook": "Tərcümə olunmuş nəticələri saxlamaq üçün qovluq seçin.",
   "helpNote": "Sözün mənasını, nümunələrini və ya vəziyyətlərini sərbəst şəkildə qeyd edin.",
-  "helpTag": "Sonra təsnif etmək və ya axtarmaq üçün açar sözlər daxil edin."
+  "helpTag": "Sonra təsnif etmək və ya axtarmaq üçün açar sözlər daxil edin.",
+  "requestTranslation": "Tərcümə tələb et",
+  "statusRequestSuccess": "Tərcümə tələbi tamamlandı.",
+  "statusRequestFailed": "Tərcümə tələbi uğursuz oldu: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Öyrənmə dili dəstəklənmir",
+  "studyLangNotFoundDesc": "Seçdiyiniz material hal-hazırda təyin edilmiş öyrənmə dilinizi ({targetLang}) dəstəkləmir və yerli olaraq saxlanıla bilməz. Tərcümə tələb etmək istəyirsiniz?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

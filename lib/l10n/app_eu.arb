@@ -805,5 +805,24 @@
   "openSettings": "Ezarpenak ireki",
   "helpNotebook": "Hautatu itzulpenak gordetzeko karpeta.",
   "helpNote": "Idatzi hitzaren esanahia, adibideak edo egoerak aske.",
-  "helpTag": "Sartu gero sailkatu edo bilatzeko gako-hitzak."
+  "helpTag": "Sartu gero sailkatu edo bilatzeko gako-hitzak.",
+  "requestTranslation": "Itzulpena eskatu",
+  "statusRequestSuccess": "Itzulpen eskaera burutu da.",
+  "statusRequestFailed": "Itzulpen eskaera huts egin du: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Ikasteko hizkuntza ez da aurkitu",
+  "studyLangNotFoundDesc": "Hautatu duzun materialak ez du onartzen unean ezarrita daukazun ikasteko hizkuntza ({targetLang}), eta ezin da lokalean gorde. Itzulpena eskatu nahi duzu?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -1350,21 +1350,21 @@ class AppLocalizationsAf extends AppLocalizations {
   String get helpTag => 'Sleutelwoorde vir latere kategorisering of soektogte.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'Vertaal versoek';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'Vertaling versoek suksesvol.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'Vertaling versoek het misluk: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'Studie taal nie ondersteun nie';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'Die gekose materiaal ondersteun nie die huidige studie taal ($targetLang) nie en kan nie plaaslik gestoor word nie. Wil jy \'n vertaling aanvra?';
   }
 }

@@ -805,5 +805,24 @@
   "openSettings": "Параметрлерді ашу",
   "helpNotebook": "Аударылған нәтижелерді сақтау үшін қалтаны таңдаңыз.",
   "helpNote": "Сөздің мағынасын, мысалды немесе жағдайды еркін жазыңыз.",
-  "helpTag": "Кейінірек сұрыптау немесе іздеу үшін кілт сөздерді енгізіңіз."
+  "helpTag": "Кейінірек сұрыптау немесе іздеу үшін кілт сөздерді енгізіңіз.",
+  "requestTranslation": "Аударма сұрау",
+  "statusRequestSuccess": "Аударма сұрауыңыз орындалды.",
+  "statusRequestFailed": "Аударма сұрауы орындалмады: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Оқу тілі қолдау көрсетпейді",
+  "studyLangNotFoundDesc": "Сіз таңдаған материал қазіргі оқу тіліңізді ({targetLang}) қолдамайтындықтан, жергілікті жерде сақталмайды. Аударманы сұрағыңыз келе ме?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -1364,21 +1364,21 @@ class AppLocalizationsKk extends AppLocalizations {
       'Кейінірек сұрыптау немесе іздеу үшін кілт сөздерді енгізіңіз.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'Аударма сұрау';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'Аударма сұрауыңыз орындалды.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'Аударма сұрауы орындалмады: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'Оқу тілі қолдау көрсетпейді';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'Сіз таңдаған материал қазіргі оқу тіліңізді ($targetLang) қолдамайтындықтан, жергілікті жерде сақталмайды. Аударманы сұрағыңыз келе ме?';
   }
 }

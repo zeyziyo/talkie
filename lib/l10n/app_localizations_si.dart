@@ -1360,21 +1360,21 @@ class AppLocalizationsSi extends AppLocalizations {
   String get helpTag => 'පසුව වර්ග කිරීමට හෝ සෙවීමට මූල පද ඇතුළත් කරන්න.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'පරිවර්තනයක් ඉල්ලන්න';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'පරිවර්තන ඉල්ලීම සාර්ථක විය.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'පරිවර්තන ඉල්ලීම අසාර්ථක විය: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'පරිශීලන භාෂාව හඳුනාගත නොහැක';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'ඔබ තෝරාගත් අන්තර්ගතය දැනට ඔබගේ පාඩම් භාෂාව ($targetLang) සඳහා සහය නොදක්වන බැවින් එය ඔබගේ උපාංගයේ සුරැකිය නොහැක. ඔබ පරිවර්තනයක් ඉල්ලීමට කැමතිද?';
   }
 }

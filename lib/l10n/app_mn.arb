@@ -805,5 +805,24 @@
   "openSettings": "Тохиргоог нээх",
   "helpNotebook": "Орчуулгын үр дүнг хадгалах хавтас сонгоно уу.",
   "helpNote": "Үгийн утга, жишээ, нөхцөл байдлыг чөлөөтэй тэмдэглээрэй.",
-  "helpTag": "Дараа нь ангилах эсвэл хайх түлхүүр үгээ оруулна уу."
+  "helpTag": "Дараа нь ангилах эсвэл хайх түлхүүр үгээ оруулна уу.",
+  "requestTranslation": "Орчуулга хүсэх",
+  "statusRequestSuccess": "Орчуулгын хүсэлт амжилттай боллоо.",
+  "statusRequestFailed": "Орчуулгын хүсэлт амжилтгүй: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Суралцах хэл дэмжигдэхгүй байна",
+  "studyLangNotFoundDesc": "Таны сонгосон материал нь одоогоор тохируулсан суралцах хэл ({targetLang})-ийг дэмжихгүй байгаа тул локал хадгалах боломжгүй. Орчуулга хүсэх үү?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

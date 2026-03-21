@@ -1361,21 +1361,21 @@ class AppLocalizationsKn extends AppLocalizations {
   String get helpTag => 'ನಂತರ ವರ್ಗೀಕರಿಸಲು ಅಥವಾ ಹುಡುಕಲು ಕೀವರ್ಡ್‌ಗಳನ್ನು ನಮೂದಿಸಿ.';
 
   @override
-  String get requestTranslation => '번역 요청하기';
+  String get requestTranslation => 'ಅನುವಾದಿಸಲು ವಿನಂತಿಸಿ';
 
   @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
+  String get statusRequestSuccess => 'ಅನುವಾದ ವಿನಂತಿ ಪೂರ್ಣಗೊಂಡಿದೆ.';
 
   @override
   String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
+    return 'ಅನುವಾದ ವಿನಂತಿ ವಿಫಲವಾಗಿದೆ: $error';
   }
 
   @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
+  String get studyLangNotFoundTitle => 'ಅಧ್ಯಯನ ಭಾಷೆ ಲಭ್ಯವಿಲ್ಲ';
 
   @override
   String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
+    return 'ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ವಿಷಯವು ಪ್ರಸ್ತುತ ಅಧ್ಯಯನ ಭಾಷೆ ($targetLang) ಅನ್ನು ಬೆಂಬಲಿಸದ ಕಾರಣ ಸ್ಥಳೀಯವಾಗಿ ಉಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಅನುವಾದಿಸಲು ವಿನಂತಿಸಬೇಕೆ?';
   }
 }

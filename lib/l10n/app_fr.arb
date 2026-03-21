@@ -805,5 +805,24 @@
   "openSettings": "Ouvrir les paramètres",
   "helpNotebook": "Sélectionnez le dossier où enregistrer les résultats traduits.",
   "helpNote": "Notez librement la signification, les exemples et les situations des mots.",
-  "helpTag": "Entrez des mots-clés pour classer ou rechercher plus tard."
+  "helpTag": "Entrez des mots-clés pour classer ou rechercher plus tard.",
+  "requestTranslation": "Demander une traduction",
+  "statusRequestSuccess": "Demande de traduction effectuée.",
+  "statusRequestFailed": "Échec de la demande de traduction : {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Langue d'étude non prise en charge",
+  "studyLangNotFoundDesc": "Le matériel sélectionné ne prend pas en charge la langue d'étude actuelle ({targetLang}) et ne peut pas être stocké localement. Voulez-vous demander une traduction ?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

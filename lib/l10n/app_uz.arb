@@ -805,5 +805,24 @@
   "openSettings": "Sozlamalarni ochish",
   "helpNotebook": "Tarjima qilingan natijalarni saqlash uchun papkani tanlang.",
   "helpNote": "So'zlarning ma'nosi, misollari yoki holatlari kabi istalgan narsalarni yozing.",
-  "helpTag": "Keyinroq saralash yoki qidirish uchun kalit so'zlarni kiriting."
+  "helpTag": "Keyinroq saralash yoki qidirish uchun kalit so'zlarni kiriting.",
+  "requestTranslation": "Tarjima so'rash",
+  "statusRequestSuccess": "Tarjima so'rovi bajarildi.",
+  "statusRequestFailed": "Tarjima so'rovi bajarilmadi: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "O'rganish tili topilmadi",
+  "studyLangNotFoundDesc": "Siz tanlagan material hozirda o'rnatilgan o'rganish tili ({targetLang})ni qo'llab-quvvatlamaydi, shuning uchun uni mahalliy xotiraga saqlab bo'lmaydi. Tarjima so'ramoqchimisiz?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

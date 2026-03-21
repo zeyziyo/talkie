@@ -805,5 +805,24 @@
   "openSettings": "সংস্থাপন খোলক",
   "helpNotebook": "অনুবাদিত ফলাফলসমূহ সুৰক্ষিত কৰিবলৈ এটা ফোল্ডাৰ নিৰ্ব্বাচন কৰক।",
   "helpNote": "শব্দৰ অৰ্থ বা উদাহৰণ, পৰিস্থিতি আদিৰ দৰে আপুনি যিকোনো কথা ইয়াত লিখিব পাৰে।",
-  "helpTag": " পিছত শ্ৰেণীবিভাজন বা সন্ধান কৰিবলৈ কিৱৰ্ডসমূহ লিখক।"
+  "helpTag": " পিছত শ্ৰেণীবিভাজন বা সন্ধান কৰিবলৈ কিৱৰ্ডসমূহ লিখক।",
+  "requestTranslation": "অনুবাদৰ বাবে অনুৰোধ কৰক",
+  "statusRequestSuccess": "অনুবাদৰ বাবে কৰা অনুৰোধ সফল হৈছে।",
+  "statusRequestFailed": "অনুবাদৰ বাবে কৰা অনুৰোধ ব্যৰ্থ: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "অধ্যয়নৰ ভাষা সমৰ্থিত নহয়",
+  "studyLangNotFoundDesc": "আপুনি নিৰ্বাচন কৰা সামগ্ৰীটোৱে বৰ্তমানৰ অধ্যয়নৰ ভাষা ({targetLang}) সমৰ্থন নকৰে, সেয়ে ইয়াক স্থানীয়ভাৱে সংৰক্ষণ কৰিব নোৱাৰি। আপুনি অনুবাদৰ বাবে অনুৰোধ কৰিব বিচাৰেনে?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -805,5 +805,24 @@
   "openSettings": "Abrir configuración",
   "helpNotebook": "Selecciona la carpeta donde guardar los resultados traducidos.",
   "helpNote": "Escribe libremente el significado de la palabra, ejemplos o situaciones.",
-  "helpTag": "Introduce palabras clave para clasificar o buscar más tarde."
+  "helpTag": "Introduce palabras clave para clasificar o buscar más tarde.",
+  "requestTranslation": "Solicitar traducción",
+  "statusRequestSuccess": "Solicitud de traducción completada.",
+  "statusRequestFailed": "Error al solicitar la traducción: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Idioma de estudio no compatible",
+  "studyLangNotFoundDesc": "El material seleccionado no es compatible con el idioma de estudio actual ({targetLang}), por lo que no se puede guardar localmente. ¿Desea solicitar una traducción?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }

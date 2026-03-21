@@ -805,5 +805,24 @@
   "openSettings": "Deschide setările",
   "helpNotebook": "Selectați folderul unde să salvați rezultatele traducerii.",
   "helpNote": "Înregistrați liber semnificația, exemplele sau situațiile cuvântului.",
-  "helpTag": "Introduceți cuvinte cheie pentru a clasifica sau căuta mai târziu."
+  "helpTag": "Introduceți cuvinte cheie pentru a clasifica sau căuta mai târziu.",
+  "requestTranslation": "Solicită traducere",
+  "statusRequestSuccess": "Solicitarea de traducere a fost finalizată.",
+  "statusRequestFailed": "Eșec la solicitarea de traducere: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Limbă de studiu neacceptată",
+  "studyLangNotFoundDesc": "Materialul selectat nu acceptă limba de studiu setată curent ({targetLang}) și nu poate fi salvat local. Doriți să solicitați o traducere?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  }
 }
