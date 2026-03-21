@@ -273,7 +273,7 @@ abstract class AppLocalizations {
   /// No description provided for @simplifiedGuidance.
   ///
   /// In ko, this message translates to:
-  /// **'\'언어 설정\' 메뉴에서 \'내 언어\'와 \'학습 언어\'를 지정 후 번역, 저장해 보세요.'**
+  /// **'\'언어 설정\' 메뉴에서 \'내 언어\'와 \'학습 언어\'를 지정한 다음 사용해주세요.'**
   String get simplifiedGuidance;
 
   /// No description provided for @noDataForLanguage.
