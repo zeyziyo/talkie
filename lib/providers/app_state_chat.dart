@@ -156,6 +156,8 @@ extension AppStateChat on AppState {
   }) async {
     try {
       _statusMessage = 'Starting new chat...';
+      _currentChatMessages = []; // v16.1 Fix: Clear previous chat messages
+      _activeParticipants = [];  // v16.1 Fix: Clear previous participants
       notify();
 
       final dialogueTitle = title ?? 'New Conversation';

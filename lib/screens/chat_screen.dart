@@ -146,9 +146,15 @@ class _ChatScreenState extends State<ChatScreen> {
         String finalTargetText;
 
         if (currentParticipant.role == 'user') {
-          // User speaks: typed in inputLang, translated to targetLang
+          // User speaks: typed in inputLang, translated to the current AI's langCode
           final inputLang = appState.sourceLang;
-          final outputLang = appState.targetLang;
+          
+          // v16.1 Fix: Find the first AI/Assistant participant's language
+          final primaryAi = appState.activeParticipants.firstWhere(
+            (p) => p.role == 'ai' || p.role == 'assistant',
+            orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: appState.targetLang)
+          );
+          final outputLang = primaryAi.langCode;
 
           final translationResult = await TranslationService.translate(
             text: text,
