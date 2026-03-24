@@ -720,8 +720,9 @@ class _ChatScreenState extends State<ChatScreen> {
     
     final int seq = msg['sequence_order'] as int? ?? index;
     
-    // Phase 180: [FIXED v106] If it's AI, default to HIDING translation to show the original speaker language (Spanish) first.
-    final bool isTranslationVisible = _showTranslationMap[seq] ?? (participant.role == 'user' ? true : false);
+    // Phase 180: [FIXED v104] Default to HIDING translation for ALL roles to show the original speaker language first.
+    // Use the toggle map if exists, otherwise ALWAYS false (Original language first for both ME and AI)
+    final bool isTranslationVisible = _showTranslationMap[seq] ?? false;
     
     // Text Logic for Acoustic Symmetry
     // If translation is visible, we show the target_text(translated to App's sourceLang) and speak in target_lang.

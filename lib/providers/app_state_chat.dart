@@ -238,16 +238,26 @@ extension AppStateChat on AppState {
           _activeParticipants.add(p);
         }
       } else {
-        // Phase 180: Automatically add Global Template AI to the new dialogue (FIXED v106)
+        // Phase 180: Automatically add Template ME and Template AI to the new dialogue (FIXED v104)
+        final templateMe = _globalParticipants.firstWhere(
+          (p) => p.id == 'me',
+          orElse: () => ChatParticipant(id: 'me', dialogueId: '', name: '나', role: 'user', langCode: _sourceLang, gender: _chatUserGender),
+        );
         final templateAi = _globalParticipants.firstWhere(
           (p) => p.id == 'ai',
           orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: _targetLang, gender: _chatAiGender),
         );
+
+        final meForDialogue = templateMe.copyWith(dialogueId: dialogueId);
         final aiForDialogue = templateAi.copyWith(dialogueId: dialogueId);
         
+        await DatabaseService.insertParticipant(meForDialogue.toJson());
         await DatabaseService.insertParticipant(aiForDialogue.toJson());
+        
+        _activeParticipants.add(meForDialogue);
         _activeParticipants.add(aiForDialogue);
-        debugPrint('[AppState] New Conversation: Injected Template AI (lang=${aiForDialogue.langCode})');
+        
+        debugPrint('[AppState] New Conversation: Injected ME (${meForDialogue.langCode}) and AI (${aiForDialogue.langCode})');
       }
 
       _dialogueGroups.insert(0, DialogueGroup(
