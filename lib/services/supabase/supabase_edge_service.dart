@@ -27,6 +27,7 @@ class SupabaseEdgeService {
     required String text,
     required String context,
     required String targetLang,
+    String? sourceLang, // Phase 180: Use user's UI language for translation target
     List<Map<String, dynamic>>? history,
   }) async {
     try {
@@ -36,6 +37,7 @@ class SupabaseEdgeService {
           'text': text,
           'context': context,
           'targetLang': targetLang,
+          'sourceLang': sourceLang, // UI language
           'history': history,
         },
       ).timeout(const Duration(seconds: 20));

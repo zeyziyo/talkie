@@ -167,11 +167,13 @@ class SupabaseService {
     required String text,
     required String context,
     required String targetLang,
+    String? sourceLang, // Phase 180: UI Language
     List<Map<String, dynamic>>? history,
   }) => SupabaseEdgeService.processChat(
     text: text,
     context: context,
     targetLang: targetLang,
+    sourceLang: sourceLang,
     history: history,
   );
 

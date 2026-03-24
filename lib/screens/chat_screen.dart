@@ -189,9 +189,15 @@ class _ChatScreenState extends State<ChatScreen> {
         // Step 3: Local/Cloud Save
         await appState.saveUserMessage(finalSourceText, finalTargetText, speakerId: speakerId);
 
-        // AUTOMATIC AI RESPONSE REMOVED
-        // 사용자 피드백("다음 대화는 내가 선택한 참가자가 해야지") 반영
-        // 이전에는 발화 시 무조건 AI가 답하여 턴을 빼앗았으나, 이제는 수동으로 요술봉 버튼을 눌러 AI 답변을 생성합니다.
+        // Phase 180: Precise Conditional Automatic AI Response
+        // 1. 참여 인원이 정확히 2명이고,
+        // 2. 그 중 한 명이 AI(role == 'ai')이며,
+        // 3. 현재 발화자가 사용자(role == 'user')인 경우에만 자동으로 AI 응답 트리거.
+        final hasAi = appState.activeParticipants.any((p) => p.role == 'ai');
+        if (appState.activeParticipants.length == 2 && hasAi && currentParticipant.role == 'user') {
+          debugPrint('[Chat] Auto-triggering AI response for 1:1 AI chat.');
+          await _triggerAiResponseManually(appState, l10n);
+        }
 
       } catch (e) {
         debugPrint('[Chat] BG Error: $e');
@@ -265,6 +271,7 @@ class _ChatScreenState extends State<ChatScreen> {
         text: userText,
         context: contextString,
         targetLang: aiLangCode, // Reflect individual AI setting
+        sourceLang: appState.sourceLang, // Phase 180: Use user's UI language for translation target
         history: history,
       );
 
@@ -553,8 +560,16 @@ class _ChatScreenState extends State<ChatScreen> {
     final appState = Provider.of<AppState>(context);
     final l10n = AppLocalizations.of(context)!;
     
-    // Phase 14.4: Remove dangerous microtask that overwrites optimistic UI updates
-    // Language changes should be handled explicitly or via Consumer.
+    // Phase 180: [CRITICAL BUG FIX] Synchronize local state with AppState when cleared
+    // 만약 전역 상태의 메시지가 비어있는데 로컬에만 남아있다면(예: 새 대화 시작 직후), 
+    // 로컬 리스트를 즉시 비워 잔상을 제거합니다.
+    if (appState.currentChatMessages.isEmpty && _messages.isNotEmpty && !_isLoading) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted && _messages.isNotEmpty) {
+           setState(() => _messages = []);
+        }
+      });
+    }
 
     return Scaffold(
       backgroundColor: Colors.yellow[50], // VISUAL PROOF OF v14.2

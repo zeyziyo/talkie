@@ -20,7 +20,14 @@ class _ParticipantSelectorDialogState extends State<ParticipantSelectorDialog> {
   @override
   void initState() {
     super.initState();
-    debugPrint('[ParticipantSelectorDialog] Initialized. Waiting for AppState data.');
+    debugPrint('[ParticipantSelectorDialog] Initialized. Triggering Global Participants Load.');
+    
+    // Phase 180: Ensure global participants are fully loaded when selection starts
+    Future.microtask(() {
+      if (mounted) {
+        Provider.of<AppState>(context, listen: false).loadGlobalParticipants(force: true);
+      }
+    });
   }
 
   @override
@@ -34,12 +41,14 @@ class _ParticipantSelectorDialogState extends State<ParticipantSelectorDialog> {
           builder: (context, appState, child) {
             final participants = appState.globalParticipants;
 
-            // Consumer 리빌드 시 아직 미초기화면 전체 선택 (Safety Net)
+            // Consumer 리빌드 시 아직 미초기화면 기본 필수 참가자(나/AI)만 우선 선택
             if (!_initialized && participants.isNotEmpty) {
               WidgetsBinding.instance.addPostFrameCallback((_) {
                 if (mounted && !_initialized) {
                   setState(() {
-                    _selectedIds.addAll(participants.map((p) => p.id));
+                    // 필수 참가자(me, ai)만 기본 활성화하여 과거 대화 상대가 무분별하게 추가되는 것을 방지
+                    _selectedIds.addAll(
+                        participants.where((p) => p.id == 'me' || p.id == 'ai').map((p) => p.id));
                     _initialized = true;
                   });
                 }
