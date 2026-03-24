@@ -628,6 +628,16 @@ extension AppStateChat on AppState {
         'created_at': DateTime.now().toIso8601String(),
       });
 
+      // Phase 180: Update in-memory list IMMEDIATELY for UI consistency
+      _currentChatMessages.add({
+        'speaker_id': userPart.id,
+        'speaker': userPart.name,
+        'source_text': sourceText,
+        'target_text': targetText,
+        'sequence_order': _currentDialogueSequence,
+        'created_at': DateTime.now().toIso8601String(),
+      });
+
       notify();
 
       SupabaseService.savePrivateChatMessage(
@@ -694,6 +704,18 @@ extension AppStateChat on AppState {
         'target_text': targetText,
         'created_at': createdAt,
       });
+
+      // Phase 180: Update in-memory list IMMEDIATELY for UI consistency
+      _currentChatMessages.add({
+        'speaker_id': updatedAiPart.id,
+        'speaker': speaker ?? updatedAiPart.name,
+        'source_text': sourceText,
+        'target_text': targetText,
+        'sequence_order': _currentDialogueSequence,
+        'created_at': createdAt,
+      });
+
+      notify();
 
       SupabaseService.savePrivateChatMessage(
         dialogueId: _activeDialogueId!,
