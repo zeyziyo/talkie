@@ -83,6 +83,15 @@ extension AppStateChat on AppState {
     } else if ((role == 'ai' || role == 'assistant') && (name == 'AI' || id == 'ai')) {
       newId = 'ai';
       newName = 'AI';
+      
+      // Phase 180: Ensure AI inherits from Global Template if available
+      final templateAi = _globalParticipants.firstWhere(
+        (p) => p.id == 'ai',
+        orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: _targetLang, gender: _chatAiGender),
+      );
+      languageCode ??= templateAi.langCode;
+      gender ??= templateAi.gender;
+      debugPrint('[AppState] Inheriting AI settings from Global Template: lang=$languageCode, gender=$gender');
     } else if (id == 'me') {
       newName = '나'; 
     } else if (id == 'ai') {
@@ -228,6 +237,17 @@ extension AppStateChat on AppState {
           });
           _activeParticipants.add(p);
         }
+      } else {
+        // Phase 180: Automatically add Global Template AI to the new dialogue (FIXED v106)
+        final templateAi = _globalParticipants.firstWhere(
+          (p) => p.id == 'ai',
+          orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: _targetLang, gender: _chatAiGender),
+        );
+        final aiForDialogue = templateAi.copyWith(dialogueId: dialogueId);
+        
+        await DatabaseService.insertParticipant(aiForDialogue.toJson());
+        _activeParticipants.add(aiForDialogue);
+        debugPrint('[AppState] New Conversation: Injected Template AI (lang=${aiForDialogue.langCode})');
       }
 
       _dialogueGroups.insert(0, DialogueGroup(

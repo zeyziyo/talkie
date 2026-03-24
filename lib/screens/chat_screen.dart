@@ -189,7 +189,7 @@ class _ChatScreenState extends State<ChatScreen> {
         // Step 3: Local/Cloud Save
         await appState.saveUserMessage(finalSourceText, finalTargetText, speakerId: speakerId);
 
-        // Phase 180: Automatic Speaker Switch & Response Trigger
+        // Phase 180: Automatic Speaker Switch & Response Trigger (RELIABILITY FIX v106)
         if (currentParticipant.role == 'user') {
           // 1. 자동으로 다음 발화자를 AI로 전환 (UI 버튼 동기화)
           final aiPart = appState.activeParticipants.firstWhere(
@@ -200,14 +200,19 @@ class _ChatScreenState extends State<ChatScreen> {
           if (mounted) {
             setState(() {
               _currentSpeakerId = aiPart.id;
+              debugPrint('[Chat] Speaker switched to AI (${aiPart.id})');
             });
           }
 
-          // 2. AI가 존재하면 자동으로 응답 트리거 (인원수 제한 완화)
+          // 2. AI가 전송 완료 후 즉시 응답 트리거 (딜레이 조정 및 상태 체크 강화)
           final hasAi = appState.activeParticipants.any((p) => p.role == 'ai' || p.role == 'assistant');
           if (hasAi) {
-            debugPrint('[Chat] Auto-triggering AI response.');
-            await _triggerAiResponseManually(appState, l10n);
+            debugPrint('[Chat] Auto-triggering AI response (v106).');
+            // Ensure UI is updated before triggering
+            await Future.delayed(const Duration(milliseconds: 100));
+            if (mounted) {
+              await _triggerAiResponseManually(appState, l10n);
+            }
           }
         }
 
@@ -714,7 +719,9 @@ class _ChatScreenState extends State<ChatScreen> {
     final color = participant.role == 'user' ? Colors.blue[50] : (participant.role == 'third_party' ? Colors.orange[50] : const Color(0xFFF5F5F5));
     
     final int seq = msg['sequence_order'] as int? ?? index;
-    final bool isTranslationVisible = _showTranslationMap[seq] ?? false;
+    
+    // Phase 180: [FIXED v106] If it's AI, default to HIDING translation to show the original speaker language (Spanish) first.
+    final bool isTranslationVisible = _showTranslationMap[seq] ?? (participant.role == 'user' ? true : false);
     
     // Text Logic for Acoustic Symmetry
     // If translation is visible, we show the target_text(translated to App's sourceLang) and speak in target_lang.
@@ -725,7 +732,7 @@ class _ChatScreenState extends State<ChatScreen> {
         
     final String displayLang = isTranslationVisible
         ? appState.sourceLang // Translated to my native language
-        : participant.langCode; // Original spoken language
+        : participant.langCode; // Original spoken language (e.g. Spanish)
 
     // Unified gender logic for identity consistency
     final String displayGender = participant.gender;
