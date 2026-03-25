@@ -281,7 +281,7 @@ class _ChatScreenState extends State<ChatScreen> {
       debugPrint('[Chat] Calling processChat: aiLang=$aiLangCode, userLang=$userLangCode');
       
       final result = await SupabaseService.processChat(
-        text: '$userText (Respond into $aiLangCode ONLY. Native Language is $userLangCode)',
+        text: '$userText (Respond into $aiLangCode ONLY. Native Language is $userLangCode. You MUST return a JSON with "response" and "translatedResponse" fields.)',
         context: contextString,
         targetLang: aiLangCode, // Main text language (e.g. Spanish)
         sourceLang: userLangCode, // Sub-text translation target (e.g. Korean)
@@ -289,7 +289,12 @@ class _ChatScreenState extends State<ChatScreen> {
       );
 
       final String aiResponse = result['response'] as String? ?? '';
-      final String translatedResponse = result['translatedResponse'] as String? ?? '';
+      // Fallback: If translatedResponse is missing, use aiResponse or empty string
+      String translatedResponse = result['translatedResponse'] as String? ?? '';
+      if (translatedResponse.isEmpty && aiResponse.isNotEmpty) {
+        debugPrint('[Chat] Warning: translatedResponse is empty. Falling back to aiResponse.');
+        translatedResponse = aiResponse; 
+      }
       final String? pos = result['pos'] as String?;
       final String? formType = result['formType'] as String?;
       final String? root = result['root'] as String?;

@@ -15,7 +15,10 @@ Deno.serve(async (req) => {
     }
 
     try {
-        const { text: prompt, history } = await req.json()
+        const { text: prompt, history, sourceLang, targetLang } = await req.json()
+        
+        const finalSourceLang = sourceLang || 'Korean'
+        const finalTargetLang = targetLang || 'English'
 
         if (!prompt) {
             throw new Error('Missing prompt')
@@ -37,12 +40,12 @@ Deno.serve(async (req) => {
             CRITICAL INSTRUCTIONS:
             1. Provide your response as a JSON object.
             2. The JSON must contain:
-               - "response": Your actual chat message in the target language.
-               - "translatedResponse": Translation of your message in the user's source language.
+               - "response": Your actual chat message in the ${finalTargetLang} language.
+               - "translatedResponse": Translation of your message in the ${finalSourceLang} language.
                - "pos": Part of speech of the KEY word or overall sentence type ("sentence").
                - "formType": Grammatical form or formality of your response ("formal", "informal", "past", etc.).
                - "root": The base lemma of the main verb or subject in your response.
-               - "explanation": A very brief tip or explanation in the user's source language.
+               - "explanation": A very brief tip or explanation in the ${finalSourceLang} language.
         `;
 
         const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`, {
