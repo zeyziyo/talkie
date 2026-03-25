@@ -143,6 +143,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get chatSearchHint => 'Söhbətlərin adları ilə axtar...';
 
   @override
+  String get chatNoteSearchHint => 'Qeydlər üzrə axtar...';
+
+  @override
   String get chatSaveAndExit => 'Saxlayın və Çıxın';
 
   @override

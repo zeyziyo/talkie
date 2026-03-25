@@ -143,6 +143,9 @@ class AppLocalizationsCy extends AppLocalizations {
   String get chatSearchHint => 'Chwilio yn ôl teitl sgwrs...';
 
   @override
+  String get chatNoteSearchHint => 'Chwilio mewn nodiadau...';
+
+  @override
   String get chatSaveAndExit => 'Cadw ac Allgofnodi';
 
   @override

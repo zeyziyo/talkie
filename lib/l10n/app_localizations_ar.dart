@@ -142,6 +142,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get chatSearchHint => 'ابحث عن طريق عنوان المحادثة...';
 
   @override
+  String get chatNoteSearchHint => 'البحث في الملاحظات...';
+
+  @override
   String get chatSaveAndExit => 'حفظ وخروج';
 
   @override

@@ -142,6 +142,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get chatSearchHint => 'ค้นหาจากชื่อการสนทนา...';
 
   @override
+  String get chatNoteSearchHint => 'ค้นหาจากโน้ต...';
+
+  @override
   String get chatSaveAndExit => 'บันทึกและออก';
 
   @override

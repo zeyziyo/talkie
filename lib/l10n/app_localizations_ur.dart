@@ -142,6 +142,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get chatSearchHint => 'چیٹ کے عنوان سے تلاش کریں...';
 
   @override
+  String get chatNoteSearchHint => 'تبصرہ کے ذریعے تلاش کریں...';
+
+  @override
   String get chatSaveAndExit => 'محفوظ کریں اور باہر نکلیں';
 
   @override

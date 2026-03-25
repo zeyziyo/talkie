@@ -142,6 +142,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get chatSearchHint => 'Iskanje po naslovu pogovora ...';
 
   @override
+  String get chatNoteSearchHint => 'Poiščite v opombah ...';
+
+  @override
   String get chatSaveAndExit => 'Shrani in izstopi';
 
   @override

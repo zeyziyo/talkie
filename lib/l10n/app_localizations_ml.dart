@@ -143,6 +143,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get chatSearchHint => 'സംഭാഷണ ശീർഷകം ഉപയോഗിച്ച് തിരയുക...';
 
   @override
+  String get chatNoteSearchHint => 'അഭിപ്രായത്തിലൂടെ തിരയുക...';
+
+  @override
   String get chatSaveAndExit => 'സംരക്ഷിച്ച് പുറത്തുകടക്കുക';
 
   @override

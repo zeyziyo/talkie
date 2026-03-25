@@ -143,6 +143,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get chatSearchHint => 'Cerca pel títol de la conversa...';
 
   @override
+  String get chatNoteSearchHint => 'Cerca a les notes...';
+
+  @override
   String get chatSaveAndExit => 'Desa i surt';
 
   @override

@@ -77,6 +77,7 @@
   "chatNewChat": "新對話",
   "chatNoConversations": "還沒有對話",
   "chatSearchHint": "以聊天室標題搜尋...",
+  "chatNoteSearchHint": "用註解搜尋...",
   "chatSaveAndExit": "儲存後結束",
   "chatStartNewPrompt": "開始新的對話練習吧！",
   "chatTypeHint": "輸入訊息...",

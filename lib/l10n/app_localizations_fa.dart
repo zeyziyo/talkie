@@ -141,6 +141,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get chatSearchHint => 'جستجو با عنوان گفتگو...';
 
   @override
+  String get chatNoteSearchHint => 'جستجو در یادداشت‌ها...';
+
+  @override
   String get chatSaveAndExit => 'ذخیره و خروج';
 
   @override

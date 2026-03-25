@@ -143,6 +143,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get chatSearchHint => 'Caută după titlul conversației...';
 
   @override
+  String get chatNoteSearchHint => 'Caută în note...';
+
+  @override
   String get chatSaveAndExit => 'Salvează și ieși';
 
   @override

@@ -143,6 +143,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get chatSearchHint => 'ಚಾಟ್ ಶೀರ್ಷಿಕೆಯ ಮೂಲಕ ಹುಡುಕಿ...';
 
   @override
+  String get chatNoteSearchHint => 'ಟಿಪ್ಪಣಿ ಮೂಲಕ ಹುಡುಕಿ...';
+
+  @override
   String get chatSaveAndExit => 'ಉಳಿಸಿ ಮತ್ತು ನಿರ್ಗಮಿಸಿ';
 
   @override

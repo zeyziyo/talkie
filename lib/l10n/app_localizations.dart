@@ -498,6 +498,12 @@ abstract class AppLocalizations {
   /// **'대화 제목으로 검색...'**
   String get chatSearchHint;
 
+  /// No description provided for @chatNoteSearchHint.
+  ///
+  /// In ko, this message translates to:
+  /// **'주석으로 검색...'**
+  String get chatNoteSearchHint;
+
   /// No description provided for @chatSaveAndExit.
   ///
   /// In ko, this message translates to:

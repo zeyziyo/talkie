@@ -142,6 +142,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get chatSearchHint => 'Cari mengikut tajuk perbualan...';
 
   @override
+  String get chatNoteSearchHint => 'Cari dalam nota...';
+
+  @override
   String get chatSaveAndExit => 'Simpan dan Keluar';
 
   @override

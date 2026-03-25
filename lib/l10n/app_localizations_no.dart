@@ -142,6 +142,9 @@ class AppLocalizationsNo extends AppLocalizations {
   String get chatSearchHint => 'Søk etter samtaletittel...';
 
   @override
+  String get chatNoteSearchHint => 'Søk i merknader...';
+
+  @override
   String get chatSaveAndExit => 'Lagre og avslutt';
 
   @override

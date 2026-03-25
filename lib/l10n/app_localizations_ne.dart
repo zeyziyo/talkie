@@ -142,6 +142,9 @@ class AppLocalizationsNe extends AppLocalizations {
   String get chatSearchHint => 'च्याट शीर्षकद्वारा खोज्नुहोस्...';
 
   @override
+  String get chatNoteSearchHint => 'टिप्पणी खोज्नुहोस्...';
+
+  @override
   String get chatSaveAndExit => 'सुरक्षित गरेर बाहिर निस्कनुहोस्';
 
   @override

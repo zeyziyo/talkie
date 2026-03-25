@@ -77,6 +77,7 @@
   "chatNewChat": "Nuwe gesprek",
   "chatNoConversations": "Nog geen gesprekke nie",
   "chatSearchHint": "Soek volgens gesprektitel...",
+  "chatNoteSearchHint": "Soek volgens aantekening...",
   "chatSaveAndExit": "Stoor en verlaat",
   "chatStartNewPrompt": "Begin 'n nuwe gesprek om te oefen!",
   "chatTypeHint": "Tik 'n boodskap...",

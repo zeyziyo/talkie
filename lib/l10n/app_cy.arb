@@ -77,6 +77,7 @@
   "chatNewChat": "Sgwrs Newydd",
   "chatNoConversations": "Dim sgyrsiau eto",
   "chatSearchHint": "Chwilio yn ôl teitl sgwrs...",
+  "chatNoteSearchHint": "Chwilio mewn nodiadau...",
   "chatSaveAndExit": "Cadw ac Allgofnodi",
   "chatStartNewPrompt": "Dechreuwch sgwrs newydd i ymarfer!",
   "chatTypeHint": "Teipiwch neges...",

@@ -77,6 +77,7 @@
   "chatNewChat": "新しいチャット",
   "chatNoConversations": "会話がありません",
   "chatSearchHint": "チャット名で検索...",
+  "chatNoteSearchHint": "コメントで検索...",
   "chatSaveAndExit": "保存して終了",
   "chatStartNewPrompt": "練習を始めるために新しいチャットを開始しましょう！",
   "chatTypeHint": "メッセージを入力...",

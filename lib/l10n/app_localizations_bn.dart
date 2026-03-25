@@ -142,6 +142,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get chatSearchHint => 'কথোপকথনের শিরোনাম দিয়ে খুঁজুন...';
 
   @override
+  String get chatNoteSearchHint => 'মন্তব্য দিয়ে খুঁজুন...';
+
+  @override
   String get chatSaveAndExit => 'সংরক্ষণ করে শেষ করুন';
 
   @override

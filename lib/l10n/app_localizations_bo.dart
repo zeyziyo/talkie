@@ -142,6 +142,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String get chatSearchHint => 'གླེང་མོལ་གྱི་མགོ་བརྗོད་ནས་འཚོལ་ཞིབ་...';
 
   @override
+  String get chatNoteSearchHint => 'འགྲེལ་བཤད་ནང་འཚོལ...';
+
+  @override
   String get chatSaveAndExit => 'ཉར་ཚགས་བྱས་རྗེས་ཕྱིར་འཐོན་པ།';
 
   @override

@@ -77,6 +77,7 @@
   "chatNewChat": "নতুন বাৰ্তালাপ",
   "chatNoConversations": "এতিয়ালৈকে কোনো বাৰ্তালাপ নাই",
   "chatSearchHint": " কথোপকথনৰ শিৰোনাম অনুসৰি সন্ধান কৰক...",
+  "chatNoteSearchHint": "টোকাৰ সহায়ত সন্ধান কৰক...",
   "chatSaveAndExit": "সংৰক্ষণ কৰক আৰু ওলাই যাওক",
   "chatStartNewPrompt": "অনুশীলনৰ বাবে এটা নতুন বাৰ্তালাপ আৰম্ভ কৰিবলৈ চেষ্টা কৰক!",
   "chatTypeHint": "এটা বাৰ্তা লিখক...",

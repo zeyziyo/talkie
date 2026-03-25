@@ -143,6 +143,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get chatSearchHint => 'Keresés a beszélgetés címében...';
 
   @override
+  String get chatNoteSearchHint => 'Keresés jegyzetekben...';
+
+  @override
   String get chatSaveAndExit => 'Mentés és kilépés';
 
   @override

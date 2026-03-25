@@ -143,6 +143,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get chatSearchHint => 'సంభాషణ శీర్షిక ద్వారా వెతకండి...';
 
   @override
+  String get chatNoteSearchHint => 'వ్యాఖ్య ద్వారా వెతకండి...';
+
+  @override
   String get chatSaveAndExit => 'సేవ్ చేసి నిష్క్రమించు';
 
   @override

@@ -140,6 +140,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get chatSearchHint => 'チャット名で検索...';
 
   @override
+  String get chatNoteSearchHint => 'コメントで検索...';
+
+  @override
   String get chatSaveAndExit => '保存して終了';
 
   @override

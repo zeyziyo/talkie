@@ -143,6 +143,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get chatSearchHint => 'Soek volgens gesprektitel...';
 
   @override
+  String get chatNoteSearchHint => 'Soek volgens aantekening...';
+
+  @override
   String get chatSaveAndExit => 'Stoor en verlaat';
 
   @override

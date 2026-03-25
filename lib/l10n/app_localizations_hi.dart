@@ -143,6 +143,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get chatSearchHint => 'चैट शीर्षक से खोजें...';
 
   @override
+  String get chatNoteSearchHint => 'टिप्पणी से खोजें...';
+
+  @override
   String get chatSaveAndExit => 'सहेजें और बाहर निकलें';
 
   @override

@@ -143,6 +143,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get chatSearchHint => 'Meklēt pēc tēmas nosaukuma...';
 
   @override
+  String get chatNoteSearchHint => 'Meklēt piezīmēs...';
+
+  @override
   String get chatSaveAndExit => 'Saglabāt un iziet';
 
   @override

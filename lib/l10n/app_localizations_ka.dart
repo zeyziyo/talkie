@@ -144,6 +144,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get chatSearchHint => 'ჩატების სათაურების ძიება...';
 
   @override
+  String get chatNoteSearchHint => 'კომენტარებში ძიება...';
+
+  @override
   String get chatSaveAndExit => 'შენახვა და გამოსვლა';
 
   @override

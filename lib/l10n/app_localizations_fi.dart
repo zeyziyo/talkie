@@ -143,6 +143,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get chatSearchHint => 'Hae keskusteluja otsikon perusteella...';
 
   @override
+  String get chatNoteSearchHint => 'Hae muistiinpanoista...';
+
+  @override
   String get chatSaveAndExit => 'Tallenna ja lopeta';
 
   @override

@@ -77,6 +77,7 @@
   "chatNewChat": "Νέα συνομιλία",
   "chatNoConversations": "Δεν υπάρχουν ακόμη συνομιλίες",
   "chatSearchHint": "Αναζήτηση με βάση τον τίτλο της συνομιλίας...",
+  "chatNoteSearchHint": "Αναζήτηση στις σημειώσεις...",
   "chatSaveAndExit": "Αποθήκευση και έξοδος",
   "chatStartNewPrompt": "Ξεκινήστε μια νέα συνομιλία για εξάσκηση!",
   "chatTypeHint": "Πληκτρολογήστε ένα μήνυμα...",

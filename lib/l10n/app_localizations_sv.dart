@@ -143,6 +143,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get chatSearchHint => 'Sök efter konversationstitel...';
 
   @override
+  String get chatNoteSearchHint => 'Sök i anteckningar...';
+
+  @override
   String get chatSaveAndExit => 'Spara och avsluta';
 
   @override

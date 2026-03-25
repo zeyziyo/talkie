@@ -143,6 +143,9 @@ class AppLocalizationsTl extends AppLocalizations {
   String get chatSearchHint => 'Maghanap sa pamamagitan ng pamagat ng chat...';
 
   @override
+  String get chatNoteSearchHint => 'Maghanap sa mga tala...';
+
+  @override
   String get chatSaveAndExit => 'I-save at Lumabas';
 
   @override

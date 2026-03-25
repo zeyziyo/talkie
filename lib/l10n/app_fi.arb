@@ -77,6 +77,7 @@
   "chatNewChat": "Uusi keskustelu",
   "chatNoConversations": "Ei vielä keskusteluja",
   "chatSearchHint": "Hae keskusteluja otsikon perusteella...",
+  "chatNoteSearchHint": "Hae muistiinpanoista...",
   "chatSaveAndExit": "Tallenna ja lopeta",
   "chatStartNewPrompt": "Aloita uusi keskustelu harjoitellaksesi!",
   "chatTypeHint": "Kirjoita viesti...",

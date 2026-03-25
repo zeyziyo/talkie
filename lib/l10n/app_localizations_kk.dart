@@ -143,6 +143,9 @@ class AppLocalizationsKk extends AppLocalizations {
   String get chatSearchHint => 'Диалог тақырыбы бойынша іздеу...';
 
   @override
+  String get chatNoteSearchHint => 'Түсініктеме арқылы іздеу...';
+
+  @override
   String get chatSaveAndExit => 'Сақтап шығу';
 
   @override

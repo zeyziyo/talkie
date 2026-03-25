@@ -143,6 +143,9 @@ class AppLocalizationsPa extends AppLocalizations {
   String get chatSearchHint => 'ਗੱਲਬਾਤ ਦੇ ਸਿਰਲੇਖ ਦੁਆਰਾ ਖੋਜ ਕਰੋ...';
 
   @override
+  String get chatNoteSearchHint => 'ਟਿੱਪਣੀ ਦੁਆਰਾ ਖੋਜ ਕਰੋ...';
+
+  @override
   String get chatSaveAndExit => 'ਸੁਰੱਖਿਅਤ ਕਰੋ ਅਤੇ ਬਾਹਰ ਜਾਓ';
 
   @override

@@ -77,6 +77,7 @@
   "chatNewChat": "ახალი საუბარი",
   "chatNoConversations": "ჯერ საუბრები არ არის",
   "chatSearchHint": "ჩატების სათაურების ძიება...",
+  "chatNoteSearchHint": "კომენტარებში ძიება...",
   "chatSaveAndExit": "შენახვა და გამოსვლა",
   "chatStartNewPrompt": "სცადეთ ახალი საუბრის დაწყება სავარჯიშოდ!",
   "chatTypeHint": "დაწერეთ შეტყობინება...",

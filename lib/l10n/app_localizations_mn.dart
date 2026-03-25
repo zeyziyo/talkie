@@ -143,6 +143,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get chatSearchHint => 'Чатны гарчигаар хайх...';
 
   @override
+  String get chatNoteSearchHint => 'Тайлбараар хайх...';
+
+  @override
   String get chatSaveAndExit => 'Хадгалж гараад гарах';
 
   @override

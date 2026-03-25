@@ -143,6 +143,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get chatSearchHint => 'Rechercher par titre de conversation...';
 
   @override
+  String get chatNoteSearchHint => 'Rechercher dans les notes...';
+
+  @override
   String get chatSaveAndExit => 'Enregistrer et quitter';
 
   @override

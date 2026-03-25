@@ -77,6 +77,7 @@
   "chatNewChat": "പുതിയ സംഭാഷണം",
   "chatNoConversations": "സംഭാഷണങ്ങളൊന്നും ലഭ്യമല്ല",
   "chatSearchHint": "സംഭാഷണ ശീർഷകം ഉപയോഗിച്ച് തിരയുക...",
+  "chatNoteSearchHint": "അഭിപ്രായത്തിലൂടെ തിരയുക...",
   "chatSaveAndExit": "സംരക്ഷിച്ച് പുറത്തുകടക്കുക",
   "chatStartNewPrompt": "പരിശീലനത്തിനായി ഒരു പുതിയ സംഭാഷണം ആരംഭിക്കുക!",
   "chatTypeHint": "ഒരു സന്ദേശം ടൈപ്പ് ചെയ്യുക...",

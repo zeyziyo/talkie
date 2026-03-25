@@ -143,6 +143,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get chatSearchHint => 'Ieškoti pagal pokalbio pavadinimą...';
 
   @override
+  String get chatNoteSearchHint => 'Ieškokite pagal pastabas...';
+
+  @override
   String get chatSaveAndExit => 'Išsaugoti ir išeiti';
 
   @override

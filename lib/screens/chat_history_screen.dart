@@ -6,6 +6,7 @@ import '../l10n/app_localizations.dart';
 import '../models/dialogue_group.dart';
 
 import '../widgets/participant_selector_dialog.dart';
+import '../widgets/welcome_banner.dart';
 
 class ChatHistoryScreen extends StatefulWidget {
   final bool isWidget;
@@ -18,6 +19,7 @@ class ChatHistoryScreen extends StatefulWidget {
 
 class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
   final TextEditingController _searchController = TextEditingController();
+  final TextEditingController _noteSearchController = TextEditingController();
   DateTimeRange? _selectedDateRange;
   String? _selectedSubject; // Added for filtering by subject/material
   
@@ -33,18 +35,25 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
   @override
   void dispose() {
     _searchController.dispose();
+    _noteSearchController.dispose();
     super.dispose();
   }
 
   // Filter Logic
   List<DialogueGroup> _filterDialogues(List<DialogueGroup> allDialogues) {
     return allDialogues.where((group) {
-      // 1. Search Text (Restricted to Title per user request)
+      // 1. Search Text (Title)
       if (_searchController.text.isNotEmpty) {
         final query = _searchController.text.toLowerCase();
         final titleMatch = group.title?.toLowerCase().contains(query) ?? false;
-        
         if (!titleMatch) return false;
+      }
+      
+      // 1-2. Note Search (New)
+      if (_noteSearchController.text.isNotEmpty) {
+        final query = _noteSearchController.text.toLowerCase();
+        final noteMatch = group.note?.toLowerCase().contains(query) ?? false;
+        if (!noteMatch) return false;
       }
       
       // 2. Subject Filter
@@ -92,6 +101,7 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
 
     final content = Column(
       children: [
+        const WelcomeBanner(),
         // Search & Filter Bar
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -106,11 +116,11 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                       decoration: InputDecoration(
                         hintText: l10n.chatSearchHint,
                         hintStyle: TextStyle(color: Colors.grey.shade400),
-                        prefixIcon: const Icon(Icons.search, color: Colors.white70),
+                        prefixIcon: const Icon(Icons.title, color: Colors.white70, size: 20),
                         filled: true,
                         fillColor: Colors.grey.shade900,
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30), // Match Material 3 SearchBar rounding
+                          borderRadius: BorderRadius.circular(30),
                           borderSide: BorderSide.none,
                         ),
                         contentPadding: const EdgeInsets.symmetric(horizontal: 16),
@@ -121,7 +131,8 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                   const SizedBox(width: 8),
                   IconButton(
                     icon: Icon(Icons.calendar_today, 
-                      color: _selectedDateRange != null ? const Color(0xFF667eea) : Colors.grey
+                      color: _selectedDateRange != null ? const Color(0xFF667eea) : Colors.grey,
+                      size: 20,
                     ),
                     onPressed: _pickDateRange,
                     tooltip: 'Filter by Date',
@@ -134,8 +145,25 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                 ],
               ),
               const SizedBox(height: 8),
-              // Subject Dropdown Removed per user request
-              // Container(...)
+              // Second Search Bar: Note Only
+              TextField(
+                controller: _noteSearchController,
+                style: const TextStyle(color: Colors.white),
+                decoration: InputDecoration(
+                  hintText: l10n.chatNoteSearchHint,
+                  hintStyle: TextStyle(color: Colors.grey.shade400),
+                  prefixIcon: const Icon(Icons.note_alt_outlined, color: Colors.white70, size: 20),
+                  filled: true,
+                  fillColor: Colors.grey.shade900,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide.none,
+                  ),
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+                ),
+                onChanged: (val) => setState(() {}),
+              ),
+              const SizedBox(height: 4),
             ],
           ),
         ),

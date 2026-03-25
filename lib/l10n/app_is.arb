@@ -77,6 +77,7 @@
   "chatNewChat": "Nýtt samtal",
   "chatNoConversations": "Engin samtöl ennþá",
   "chatSearchHint": "Leita eftir spjalltitli...",
+  "chatNoteSearchHint": "Leita í athugasemdum...",
   "chatSaveAndExit": "Vista og hætta",
   "chatStartNewPrompt": "Byrjaðu nýtt samtal til að æfa!",
   "chatTypeHint": "Sláðu inn skilaboð...",

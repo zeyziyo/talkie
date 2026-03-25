@@ -77,6 +77,7 @@
   "chatNewChat": "စကားပြော အသစ်",
   "chatNoConversations": "စကားပြောဆိုမှု မရှိသေးပါ",
   "chatSearchHint": "စကားဝိုင်းခေါင်းစဉ်ဖြင့် ရှာဖွေ...",
+  "chatNoteSearchHint": "မှတ်ချက်များဖြင့် ရှာဖွေ...",
   "chatSaveAndExit": "သိမ်းဆည်းပြီး ထွက်ပါ",
   "chatStartNewPrompt": "လေ့ကျင့်ရန် စကားပြောဆိုမှု အသစ်ကို စတင်ကြည့်ပါ။",
   "chatTypeHint": "မက်ဆေ့ချ်ကို ရိုက်ထည့်ပါ...",

@@ -142,6 +142,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get chatSearchHint => 'Αναζήτηση με βάση τον τίτλο της συνομιλίας...';
 
   @override
+  String get chatNoteSearchHint => 'Αναζήτηση στις σημειώσεις...';
+
+  @override
   String get chatSaveAndExit => 'Αποθήκευση και έξοδος';
 
   @override

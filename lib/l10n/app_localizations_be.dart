@@ -143,6 +143,9 @@ class AppLocalizationsBe extends AppLocalizations {
   String get chatSearchHint => 'Пошук па назве чата...';
 
   @override
+  String get chatNoteSearchHint => 'Пошук па нататках...';
+
+  @override
   String get chatSaveAndExit => 'Захаваць і выйсці';
 
   @override

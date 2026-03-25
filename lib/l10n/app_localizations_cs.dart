@@ -142,6 +142,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get chatSearchHint => 'Hledat v názvech konverzací...';
 
   @override
+  String get chatNoteSearchHint => 'Hledat v poznámkách...';
+
+  @override
   String get chatSaveAndExit => 'Uložit a ukončit';
 
   @override

@@ -143,6 +143,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get chatSearchHint => 'Leita eftir spjalltitli...';
 
   @override
+  String get chatNoteSearchHint => 'Leita í athugasemdum...';
+
+  @override
   String get chatSaveAndExit => 'Vista og hætta';
 
   @override

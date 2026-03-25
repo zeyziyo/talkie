@@ -142,6 +142,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get chatSearchHint => 'Пребарувај по наслов на разговор...';
 
   @override
+  String get chatNoteSearchHint => 'Пребарувај по коментари...';
+
+  @override
   String get chatSaveAndExit => 'Зачувај и излези';
 
   @override

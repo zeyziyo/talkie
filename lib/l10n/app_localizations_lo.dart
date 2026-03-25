@@ -142,6 +142,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get chatSearchHint => 'ຄົ້ນຫາຈາກຊື່ຫ້ອງສົນທະນາ...';
 
   @override
+  String get chatNoteSearchHint => 'ຄົ້ນຫາໃນບັນທຶກ...';
+
+  @override
   String get chatSaveAndExit => 'ບັນທຶກແລ້ວອອກ';
 
   @override

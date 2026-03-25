@@ -143,6 +143,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get chatSearchHint => 'உரையாடல் தலைப்பின் மூலம் தேடவும்...';
 
   @override
+  String get chatNoteSearchHint => 'கருத்து மூலம் தேடு...';
+
+  @override
   String get chatSaveAndExit => 'சேமித்துவிட்டு வெளியேறவும்';
 
   @override

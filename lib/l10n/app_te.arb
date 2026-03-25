@@ -77,6 +77,7 @@
   "chatNewChat": "కొత్త చాట్",
   "chatNoConversations": "ఇంకా సంభాషణలు ఏమీ లేవు",
   "chatSearchHint": "సంభాషణ శీర్షిక ద్వారా వెతకండి...",
+  "chatNoteSearchHint": "వ్యాఖ్య ద్వారా వెతకండి...",
   "chatSaveAndExit": "సేవ్ చేసి నిష్క్రమించు",
   "chatStartNewPrompt": "అభ్యాసం కోసం కొత్త సంభాషణను ప్రారంభించండి!",
   "chatTypeHint": "సందేశాన్ని టైప్ చేయండి...",

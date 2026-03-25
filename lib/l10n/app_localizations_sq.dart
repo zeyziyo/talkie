@@ -144,6 +144,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get chatSearchHint => 'Kërko sipas titullit të bisedës...';
 
   @override
+  String get chatNoteSearchHint => 'Kërko sipas shënimit...';
+
+  @override
   String get chatSaveAndExit => 'Ruaj dhe dil';
 
   @override

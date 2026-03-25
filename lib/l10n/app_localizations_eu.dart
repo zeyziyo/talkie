@@ -143,6 +143,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get chatSearchHint => 'Bilatu elkarrizketen izenburuak...';
 
   @override
+  String get chatNoteSearchHint => 'Bilatu oharren artean...';
+
+  @override
   String get chatSaveAndExit => 'Gorde eta irten';
 
   @override

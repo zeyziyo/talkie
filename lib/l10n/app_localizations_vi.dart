@@ -142,6 +142,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get chatSearchHint => 'Tìm kiếm theo tên cuộc trò chuyện...';
 
   @override
+  String get chatNoteSearchHint => 'Tìm kiếm bằng ghi chú...';
+
+  @override
   String get chatSaveAndExit => 'Lưu và thoát';
 
   @override

@@ -143,6 +143,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get chatSearchHint => 'Konuşma başlığına göre ara...';
 
   @override
+  String get chatNoteSearchHint => 'Notlarda ara...';
+
+  @override
   String get chatSaveAndExit => 'Kaydet ve Çık';
 
   @override

@@ -143,6 +143,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get chatSearchHint => 'ស្វែងរក​តាម​ចំណងជើង​ការ​ສົន្ទនា...';
 
   @override
+  String get chatNoteSearchHint => 'ស្វែងរកតាមកំណត់ចំណាំ...';
+
+  @override
   String get chatSaveAndExit => 'រក្សាទុក និងចាកចេញ';
 
   @override

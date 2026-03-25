@@ -143,6 +143,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get chatSearchHint => 'Suhbat sarlavhasi bo‘yicha qidiring...';
 
   @override
+  String get chatNoteSearchHint => 'Izohlar bo\'yicha qidiring...';
+
+  @override
   String get chatSaveAndExit => 'Saqlash va chiqish';
 
   @override

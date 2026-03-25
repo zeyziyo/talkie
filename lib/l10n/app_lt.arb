@@ -77,6 +77,7 @@
   "chatNewChat": "Naujas pokalbis",
   "chatNoConversations": "Dar nėra pokalbių",
   "chatSearchHint": "Ieškoti pagal pokalbio pavadinimą...",
+  "chatNoteSearchHint": "Ieškokite pagal pastabas...",
   "chatSaveAndExit": "Išsaugoti ir išeiti",
   "chatStartNewPrompt": "Pradėkite naują pokalbį praktikai!",
   "chatTypeHint": "Įveskite pranešimą...",

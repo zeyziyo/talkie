@@ -142,6 +142,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get chatSearchHint => 'Cari berdasarkan judul obrolan...';
 
   @override
+  String get chatNoteSearchHint => 'Cari di catatan...';
+
+  @override
   String get chatSaveAndExit => 'Simpan & Keluar';
 
   @override

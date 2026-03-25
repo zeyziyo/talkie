@@ -141,6 +141,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get chatSearchHint => 'חיפוש לפי שם צ\'אט…';
 
   @override
+  String get chatNoteSearchHint => 'חיפוש בהערות...';
+
+  @override
   String get chatSaveAndExit => 'שמור וצא';
 
   @override

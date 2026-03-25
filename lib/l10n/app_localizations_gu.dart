@@ -143,6 +143,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get chatSearchHint => 'ચેટ શીર્ષક દ્વારા શોધો...';
 
   @override
+  String get chatNoteSearchHint => 'નોંધ દ્વારા શોધો...';
+
+  @override
   String get chatSaveAndExit => 'સાચવો અને બહાર નીકળો';
 
   @override

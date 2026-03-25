@@ -143,6 +143,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get chatSearchHint => 'Otsi vestluse pealkirjaga...';
 
   @override
+  String get chatNoteSearchHint => 'Otsi märgete seast...';
+
+  @override
   String get chatSaveAndExit => 'Salvesta ja välju';
 
   @override

@@ -144,6 +144,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get chatSearchHint => 'Sesha ngesihloko sengxoxo...';
 
   @override
+  String get chatNoteSearchHint => 'Sesha ngamazwana...';
+
+  @override
   String get chatSaveAndExit => 'Londoloza bese Uphuma';
 
   @override

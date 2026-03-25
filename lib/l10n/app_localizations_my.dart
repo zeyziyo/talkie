@@ -142,6 +142,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get chatSearchHint => 'စကားဝိုင်းခေါင်းစဉ်ဖြင့် ရှာဖွေ...';
 
   @override
+  String get chatNoteSearchHint => 'မှတ်ချက်များဖြင့် ရှာဖွေ...';
+
+  @override
   String get chatSaveAndExit => 'သိမ်းဆည်းပြီး ထွက်ပါ';
 
   @override

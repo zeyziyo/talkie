@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import '../providers/simplified_app_state.dart';
 import '../providers/app_state.dart';
 import '../constants/language_constants.dart';
-import '../widgets/welcome_banner.dart';
 import '../widgets/recommendation_widget.dart';
 import '../l10n/app_localizations.dart';
 import '../constants/app_constants.dart';
@@ -76,8 +75,6 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            const WelcomeBanner(),
             const RecommendationWidget(),
             const SizedBox(height: 16),
 

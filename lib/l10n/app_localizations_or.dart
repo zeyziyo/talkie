@@ -144,6 +144,9 @@ class AppLocalizationsOr extends AppLocalizations {
   String get chatSearchHint => 'ବାର୍ତ୍ତାଳାପ ଶୀର୍ଷକ ଦ୍ଵାରା ଖୋଜ...';
 
   @override
+  String get chatNoteSearchHint => 'ଟିପ୍ପଣୀ ଦ୍ୱାରା ସନ୍ଧାନ କରନ୍ତୁ...';
+
+  @override
   String get chatSaveAndExit => 'ସେଭ୍ କରନ୍ତୁ ଏବଂ ବାହାରକୁ ଯାଆନ୍ତୁ';
 
   @override

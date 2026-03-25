@@ -142,6 +142,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get chatSearchHint => 'Tafuta kwa jina la mazungumzo...';
 
   @override
+  String get chatNoteSearchHint => 'Tafuta kwa maelezo...';
+
+  @override
   String get chatSaveAndExit => 'Hifadhi na Uondoke';
 
   @override

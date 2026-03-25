@@ -77,6 +77,7 @@
   "chatNewChat": "නව කතාබස",
   "chatNoConversations": "තවම සංවාද නැත",
   "chatSearchHint": "කතාබස් මාතෘකාව අනුව සොයන්න...",
+  "chatNoteSearchHint": "සටහන් මගින් සොයන්න...",
   "chatSaveAndExit": "සුරැකීමෙන් පසු පිටවන්න",
   "chatStartNewPrompt": "පුහුණුවීම් සඳහා නව සංවාදයක් ආරම්භ කිරීමට උත්සාහ කරන්න!",
   "chatTypeHint": "පණිවිඩයක් ටයිප් කරන්න...",

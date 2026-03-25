@@ -142,6 +142,9 @@ class AppLocalizationsNb extends AppLocalizations {
   String get chatSearchHint => 'Søk etter chattenavn...';
 
   @override
+  String get chatNoteSearchHint => 'Søk i merknader…';
+
+  @override
   String get chatSaveAndExit => 'Lagre og avslutt';
 
   @override

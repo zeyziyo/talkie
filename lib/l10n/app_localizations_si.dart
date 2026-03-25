@@ -143,6 +143,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get chatSearchHint => 'කතාබස් මාතෘකාව අනුව සොයන්න...';
 
   @override
+  String get chatNoteSearchHint => 'සටහන් මගින් සොයන්න...';
+
+  @override
   String get chatSaveAndExit => 'සුරැකීමෙන් පසු පිටවන්න';
 
   @override

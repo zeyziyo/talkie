@@ -141,6 +141,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get chatSearchHint => 'በውይይት ርዕስ ፈልግ...';
 
   @override
+  String get chatNoteSearchHint => 'በማብራሪያ ፈልግ...';
+
+  @override
   String get chatSaveAndExit => 'አስቀምጥ እና ውጣ';
 
   @override

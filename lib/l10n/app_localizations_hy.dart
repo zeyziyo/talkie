@@ -143,6 +143,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get chatSearchHint => 'Որոնել զրույցի վերնագրով...';
 
   @override
+  String get chatNoteSearchHint => 'Փնտրել նշումներով...';
+
+  @override
   String get chatSaveAndExit => 'Պահպանել և դուրս գալ';
 
   @override

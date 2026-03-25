@@ -77,6 +77,7 @@
   "chatNewChat": "புதிய அரட்டை",
   "chatNoConversations": "எந்த உரையாடலும் இல்லை",
   "chatSearchHint": "உரையாடல் தலைப்பின் மூலம் தேடவும்...",
+  "chatNoteSearchHint": "கருத்து மூலம் தேடு...",
   "chatSaveAndExit": "சேமித்துவிட்டு வெளியேறவும்",
   "chatStartNewPrompt": "பயிற்சி செய்ய ஒரு புதிய உரையாடலைத் தொடங்கவும்!",
   "chatTypeHint": "ஒரு செய்தியை உள்ளிடவும்...",

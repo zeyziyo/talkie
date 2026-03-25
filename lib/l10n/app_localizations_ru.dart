@@ -143,6 +143,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get chatSearchHint => 'Поиск по названию чата...';
 
   @override
+  String get chatNoteSearchHint => 'Поиск по заметкам...';
+
+  @override
   String get chatSaveAndExit => 'Сохранить и выйти';
 
   @override

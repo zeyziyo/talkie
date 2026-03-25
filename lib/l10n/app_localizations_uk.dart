@@ -142,6 +142,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get chatSearchHint => 'Пошук за назвою чату…';
 
   @override
+  String get chatNoteSearchHint => 'Пошук в примітках...';
+
+  @override
   String get chatSaveAndExit => 'Зберегти та вийти';
 
   @override
