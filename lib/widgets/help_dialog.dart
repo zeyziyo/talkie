@@ -279,15 +279,6 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
         ),
         
         const SizedBox(height: 16),
-        if (l10n.helpTourDesc.isNotEmpty)
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Text(
-              l10n.helpTourDesc,
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 15, color: Colors.grey[800], height: 1.5),
-            ),
-          ),
           
         if (_selectedJsonType == 'dialogue')
           Padding(

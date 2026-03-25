@@ -9,7 +9,20 @@ import '../l10n/app_localizations.dart';
 import '../constants/app_constants.dart';
 
 class SimplifiedInputWidget extends StatefulWidget {
-  const SimplifiedInputWidget({super.key});
+  final GlobalKey? micKey;
+  final GlobalKey? swapKey;
+  final GlobalKey? keyboardKey;
+  final GlobalKey? nextKey;
+  final GlobalKey? translateKey;
+
+  const SimplifiedInputWidget({
+    super.key,
+    this.micKey,
+    this.swapKey,
+    this.keyboardKey,
+    this.nextKey,
+    this.translateKey,
+  });
 
   @override
   State<SimplifiedInputWidget> createState() => _SimplifiedInputWidgetState();
@@ -111,6 +124,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                         ),
                       ),
                       IconButton(
+                        key: widget.swapKey,
                         icon: Icon(Icons.swap_horiz, color: Colors.blue.shade700, size: 24),
                         onPressed: () {
                           // appState(글로벌)의 방향 반전 메서드를 호출해야 함
@@ -160,6 +174,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                 }, 
                 onLongPressStart: (_) => state.startListening(),
                 onLongPressEnd: (_) => state.stopListening(),
+                key: widget.micKey,
               ),
             ),
             const SizedBox(height: 24),
@@ -190,7 +205,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                         borderRadius: BorderRadius.circular(30),
                         borderSide: const BorderSide(color: Colors.indigo, width: 2),
                       ),
-                      prefixIcon: const Icon(Icons.keyboard, color: Colors.indigo),
+                      prefixIcon: Icon(Icons.keyboard, color: Colors.indigo, key: widget.keyboardKey),
                       suffixIcon: state.sourceText.isNotEmpty 
                         ? IconButton(
                             icon: const Icon(Icons.clear), 
@@ -217,6 +232,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                     ),
                     child: Text(
                       l10n.next,
+                      key: widget.nextKey,
                       style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -242,6 +258,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                   ),
+                  key: widget.translateKey,
                 ),
               ),
             const SizedBox(height: 24),
@@ -336,6 +353,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     GestureLongPressStartCallback? onLongPressStart,
     GestureLongPressEndCallback? onLongPressEnd,
     bool isListening = false,
+    Key? key,
   }) {
     return GestureDetector(
       onTap: onPressed,
@@ -344,6 +362,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
       child: Container(
         padding: const EdgeInsets.all(12),
         child: MeshMicIcon(
+          key: key,
           size: 100,
           color: color,
           isListening: isListening,

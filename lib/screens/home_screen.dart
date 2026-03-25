@@ -32,10 +32,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   // Mode 1 Keys (Old Input Mode - Mostly unused now, kept for tutorial if needed)
   final GlobalKey _micButtonKey = GlobalKey();
   final GlobalKey _translateButtonKey = GlobalKey();
-  final GlobalKey _saveButtonKey = GlobalKey();
   final GlobalKey _swapButtonKey = GlobalKey();
-  final GlobalKey _contextFieldKey = GlobalKey();
-  final GlobalKey _mode1DropdownKey = GlobalKey(); 
+  final GlobalKey _keyboardKey = GlobalKey(); 
+  final GlobalKey _nextKey = GlobalKey(); 
   final GlobalKey _mode1ToggleKey = GlobalKey(); 
 
   // Mode 2 Keys
@@ -217,62 +216,49 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       radius: 12,
     ));
 
-    // Mode-specific targets
+    // Mode 0: Home (Premium Simplified Input)
     if (modeIndex == 0) {
       targets.add(_buildTarget(
         _micButtonKey, 
         l10n.tutorialMicTitle, 
         l10n.tutorialMicDesc,
-        ContentAlign.top,
-        radius: 12,
-      ));
-      targets.add(_buildTarget(
-        _translateButtonKey, 
-        l10n.tutorialTransTitle, 
-        l10n.tutorialTransDesc,
-        ContentAlign.top,
-        radius: 12,
-      ));
-      targets.add(_buildTarget(
-        _mode1ToggleKey, 
-        l10n.word, 
-        l10n.helpMode1Details.split('\n').firstWhere((l) => l.contains('Toggle'), orElse: () => 'Toggle Word/Sentence'),
         ContentAlign.bottom,
-        radius: 8,
+        radius: 60, // Large for 3D Mic
+      ));
+      targets.add(_buildTarget(
+        _keyboardKey, 
+        l10n.inputContent, 
+        l10n.helpMode1Details.split('\n').firstWhere((l) => l.contains('텍스트') || l.contains('키보드'), orElse: () => 'Type your text using the keyboard.'),
+        ContentAlign.bottom,
+        radius: 12,
       ));
       targets.add(_buildTarget(
         _swapButtonKey, 
         l10n.swapLanguages, 
         l10n.tutorialSwapDesc,
-        ContentAlign.top,
+        ContentAlign.bottom,
         radius: 12,
       ));
       targets.add(_buildTarget(
-        _contextFieldKey,
-        l10n.tutorialContextTitle, 
-        l10n.tutorialContextDesc,
+        _nextKey, 
+        l10n.next, 
+        l10n.helpMode1Details.split('\n').firstWhere((l) => l.contains('체크') || l.contains('다음'), orElse: () => 'Check and confirm your settings.'),
+        ContentAlign.bottom,
+        radius: 12,
+        shape: ShapeLightFocus.RRect,
+      ));
+      targets.add(_buildTarget(
+        _translateButtonKey, 
+        l10n.translate, 
+        l10n.tutorialTransDesc,
         ContentAlign.top,
         radius: 12,
         shape: ShapeLightFocus.RRect,
       ));
       targets.add(_buildTarget(
-        _saveButtonKey, 
-        l10n.tutorialSaveTitle, 
-        l10n.tutorialSaveDesc,
-        ContentAlign.top,
-        radius: 12,
-      ));
-      targets.add(_buildTarget(
-        _mode1DropdownKey, 
-        l10n.menuSelectMaterialSet, 
-        l10n.tutorialM2DropdownDesc,
-        ContentAlign.top,
-        radius: 12,
-      ));
-      targets.add(_buildTarget(
         _actionButtonKey, 
-        l10n.tutorialLangSettingsTitle, 
-        l10n.tutorialLangSettingsDesc,
+        l10n.labelDetails, 
+        l10n.helpMode1Details.split('\n').firstWhere((l) => l.contains('설정') || l.contains('메뉴'), orElse: () => 'Access more options from the menu.'),
         ContentAlign.bottom,
         radius: 12,
       ));
@@ -905,7 +891,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   }
                },
               children: [
-                const SimplifiedInputWidget(),
+                SimplifiedInputWidget(
+                  micKey: _micButtonKey,
+                  swapKey: _swapButtonKey,
+                  keyboardKey: _keyboardKey,
+                  nextKey: _nextKey,
+                  translateKey: _translateButtonKey,
+                ),
                 Mode2Widget(
                   key: const ValueKey('mode2'),
                   materialDropdownKey: _mode2DropdownKey,
