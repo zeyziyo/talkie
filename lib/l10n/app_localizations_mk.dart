@@ -1312,7 +1312,7 @@ class AppLocalizationsMk extends AppLocalizations {
       'Овој уред не поддржува изговор на овој јазик стандардно.';
 
   @override
-  String get homeTab => 'Дома';
+  String get homeTab => 'Превод';
 
   @override
   String get welcomeTitle => 'Добредојдовте во Talkie!';

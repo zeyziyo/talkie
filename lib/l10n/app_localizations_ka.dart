@@ -1309,7 +1309,7 @@ class AppLocalizationsKa extends AppLocalizations {
       'ამ მოწყობილობის პარამეტრებში ამ ენის ხმოვანი გამოტანა არ არის მხარდაჭერილი.';
 
   @override
-  String get homeTab => 'მთავარი';
+  String get homeTab => 'თარგმანი';
 
   @override
   String get welcomeTitle => 'კეთილი იყოს თქვენი მობრძანება Talkie-ში!';

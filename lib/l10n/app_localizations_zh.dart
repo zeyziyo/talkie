@@ -1261,7 +1261,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
 
   @override
-  String get homeTab => '首页';
+  String get homeTab => '翻译';
 
   @override
   String get welcomeTitle => '欢迎使用 Talkie!';
@@ -2596,7 +2596,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
 
   @override
-  String get homeTab => '首页';
+  String get homeTab => '翻译';
 
   @override
   String get welcomeTitle => '欢迎使用 Talkie!';
@@ -3931,7 +3931,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get ttsUnsupportedNatively => '此裝置的預設設定不支援此語言的語音輸出。';
 
   @override
-  String get homeTab => '首頁';
+  String get homeTab => '翻譯';
 
   @override
   String get welcomeTitle => '欢迎使用 Talkie!';

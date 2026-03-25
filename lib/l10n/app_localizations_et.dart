@@ -1305,7 +1305,7 @@ class AppLocalizationsEt extends AppLocalizations {
       'Seadme vaikeseaded ei toeta selle keele kõnet.';
 
   @override
-  String get homeTab => 'Avakuva';
+  String get homeTab => 'Tõlge';
 
   @override
   String get welcomeTitle => 'Tere tulemast Talkiesse!';

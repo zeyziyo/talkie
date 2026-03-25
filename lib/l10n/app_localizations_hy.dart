@@ -1311,7 +1311,7 @@ class AppLocalizationsHy extends AppLocalizations {
       'Այս սարքի լռելյայն կարգավորումներն այս լեզվի ձայնային արտածումը չեն ապահովում:';
 
   @override
-  String get homeTab => 'Գլխավոր';
+  String get homeTab => 'Թարգմանել';
 
   @override
   String get welcomeTitle => 'Բարի գալուստ Talkie:';

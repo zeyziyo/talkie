@@ -1291,7 +1291,7 @@ class AppLocalizationsCs extends AppLocalizations {
       'Tento jazyk není nativně podporován pro převod textu na řeč na tomto zařízení.';
 
   @override
-  String get homeTab => 'Domů';
+  String get homeTab => 'Překlad';
 
   @override
   String get welcomeTitle => 'Vítejte v Talkie!';

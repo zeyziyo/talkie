@@ -1311,7 +1311,7 @@ class AppLocalizationsFil extends AppLocalizations {
       'Hindi sinusuportahan ng mga default na setting ng device na ito ang voice output sa wikang ito.';
 
   @override
-  String get homeTab => 'Home';
+  String get homeTab => 'Isalin';
 
   @override
   String get welcomeTitle => 'Maligayang pagdating sa Talkie!';

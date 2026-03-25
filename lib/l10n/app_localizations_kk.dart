@@ -1305,7 +1305,7 @@ class AppLocalizationsKk extends AppLocalizations {
       'Бұл тілді осы құрылғының параметрлеріндегі дауыстық шығыс қолдамайды.';
 
   @override
-  String get homeTab => 'Үй';
+  String get homeTab => 'Аударма';
 
   @override
   String get welcomeTitle => 'Talkie-ге қош келдіңіз!';

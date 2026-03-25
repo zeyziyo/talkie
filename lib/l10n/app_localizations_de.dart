@@ -1309,7 +1309,7 @@ class AppLocalizationsDe extends AppLocalizations {
       'Dieses Gerät unterstützt die Sprachausgabe für diese Sprache in den Standardeinstellungen nicht.';
 
   @override
-  String get homeTab => 'Startseite';
+  String get homeTab => 'Übersetzen';
 
   @override
   String get welcomeTitle => 'Willkommen bei Talkie!';

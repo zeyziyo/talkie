@@ -1302,7 +1302,7 @@ class AppLocalizationsHr extends AppLocalizations {
       'Ovaj uređaj ne podržava izvorni izgovor za ovaj jezik.';
 
   @override
-  String get homeTab => 'Početna';
+  String get homeTab => 'Prijevod';
 
   @override
   String get welcomeTitle => 'Dobrodošli u Talkie!';

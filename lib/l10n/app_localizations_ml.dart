@@ -1311,7 +1311,7 @@ class AppLocalizationsMl extends AppLocalizations {
       'ഈ ഉപകരണത്തിന്റെ സ്ഥിര ക്രമീകരണങ്ങളിൽ ഈ ഭാഷയിലുള്ള സംഭാഷണ ഔട്ട്പുട്ട് പിന്തുണയ്ക്കുന്നില്ല.';
 
   @override
-  String get homeTab => 'ഹോം';
+  String get homeTab => 'വിവർത്തനം';
 
   @override
   String get welcomeTitle => 'Talkie-ലേക്ക് സ്വാഗതം!';

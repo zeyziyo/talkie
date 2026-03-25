@@ -1305,7 +1305,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Deze taal wordt niet standaard ondersteund voor spraakuitvoer op dit apparaat.';
 
   @override
-  String get homeTab => 'Start';
+  String get homeTab => 'Vertalen';
 
   @override
   String get welcomeTitle => 'Welkom bij Talkie!';

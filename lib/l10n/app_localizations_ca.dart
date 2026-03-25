@@ -1318,7 +1318,7 @@ class AppLocalizationsCa extends AppLocalizations {
       'La configuració predeterminada d\'aquest dispositiu no admet la sortida de veu per a aquest idioma.';
 
   @override
-  String get homeTab => 'Inici';
+  String get homeTab => 'Traducció';
 
   @override
   String get welcomeTitle => 'Benvingut a Talkie!';

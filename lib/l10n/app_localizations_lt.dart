@@ -1308,7 +1308,7 @@ class AppLocalizationsLt extends AppLocalizations {
       'Šio įrenginio numatytieji nustatymai nepalaiko teksto į kalbą šia kalba.';
 
   @override
-  String get homeTab => 'Pagrindinis';
+  String get homeTab => 'Vertimas';
 
   @override
   String get welcomeTitle => 'Sveiki atvykę į Talkie!';

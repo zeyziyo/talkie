@@ -1289,7 +1289,7 @@ class AppLocalizationsTh extends AppLocalizations {
       'อุปกรณ์นี้ไม่รองรับการอ่านออกเสียงด้วยภาษาที่เลือก';
 
   @override
-  String get homeTab => 'หน้าหลัก';
+  String get homeTab => 'แปล';
 
   @override
   String get welcomeTitle => 'ยินดีต้อนรับสู่ Talkie!';

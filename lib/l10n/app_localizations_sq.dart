@@ -1317,7 +1317,7 @@ class AppLocalizationsSq extends AppLocalizations {
       'Ky postim audio nuk mbështetet nga cilësimet e këtij telefoni.';
 
   @override
-  String get homeTab => 'Kryefaqe';
+  String get homeTab => 'Përkthim';
 
   @override
   String get welcomeTitle => 'Mirë se vini në Talkie!';

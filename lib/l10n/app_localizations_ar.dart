@@ -1293,7 +1293,7 @@ class AppLocalizationsAr extends AppLocalizations {
       'الإعدادات الأصلية لهذا الجهاز لا تدعم إخراج الصوت لهذه اللغة.';
 
   @override
-  String get homeTab => 'الرئيسية';
+  String get homeTab => 'ترجمة';
 
   @override
   String get welcomeTitle => 'مرحبًا بك في Talkie!';

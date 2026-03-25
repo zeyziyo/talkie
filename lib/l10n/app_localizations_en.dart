@@ -1304,7 +1304,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'This device does not natively support voice output for this language.';
 
   @override
-  String get homeTab => 'Home';
+  String get homeTab => 'Translation';
 
   @override
   String get welcomeTitle => 'Welcome to Talkie!';

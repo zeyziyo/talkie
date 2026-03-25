@@ -1296,7 +1296,7 @@ class AppLocalizationsSv extends AppLocalizations {
       'Den här enheten har inte stöd för röstutmatning för det här språket i sina standardinställningar.';
 
   @override
-  String get homeTab => 'Hem';
+  String get homeTab => 'Översätt';
 
   @override
   String get welcomeTitle => 'Välkommen till Talkie!';

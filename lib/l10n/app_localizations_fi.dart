@@ -1301,7 +1301,7 @@ class AppLocalizationsFi extends AppLocalizations {
       'Tämän laitteen oletusasetukset eivät tue tekstin puheeksi muuntoa tällä kielellä.';
 
   @override
-  String get homeTab => 'Aloitusnäyttö';
+  String get homeTab => 'Käännä';
 
   @override
   String get welcomeTitle => 'Tervetuloa Talkieen!';

@@ -1306,7 +1306,7 @@ class AppLocalizationsTr extends AppLocalizations {
       'Bu cihazda bu dil için yerel olarak sesli okuma desteği bulunmuyor.';
 
   @override
-  String get homeTab => 'Anasayfa';
+  String get homeTab => 'Çeviri';
 
   @override
   String get welcomeTitle => 'Talkie\'ye Hoş Geldiniz!';

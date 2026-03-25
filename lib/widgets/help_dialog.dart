@@ -108,8 +108,15 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
             },
             children: [
               _buildModeCard(
-                icon: Icons.input,
-                title: l10n.inputModeTitle,
+                icon: Icons.chat_bubble,
+                title: l10n.chatAiChat,
+                desc: l10n.helpModeChatDesc,
+                details: l10n.helpModeChatDetails,
+                color: Colors.orange[50]!,
+              ),
+              _buildModeCard(
+                icon: Icons.translate, // Changed from Icons.input to match HomeScreen
+                title: l10n.homeTab, // Changed label to match "번역"
                 desc: l10n.helpMode1Desc,
                 details: l10n.helpMode1Details,
                 color: Colors.blue[50]!,
@@ -127,13 +134,6 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
                 desc: l10n.helpMode3Desc,
                 details: l10n.helpMode3Details,
                 color: Colors.purple[50]!,
-              ),
-              _buildModeCard(
-                icon: Icons.chat_bubble,
-                title: l10n.chatAiChat,
-                desc: l10n.helpModeChatDesc,
-                details: l10n.helpModeChatDetails,
-                color: Colors.orange[50]!,
               ),
             ],
           ),

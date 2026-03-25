@@ -1317,7 +1317,7 @@ class AppLocalizationsTa extends AppLocalizations {
       'இந்த சாதனத்தின் இயல்புநிலை அமைப்புகளில் இந்த மொழிக்கான குரல் வெளியீடு ஆதரிக்கப்படவில்லை.';
 
   @override
-  String get homeTab => 'முகப்பு';
+  String get homeTab => 'மொழிபெயர்ப்பு';
 
   @override
   String get welcomeTitle => 'Talkie-க்கு உங்களை வரவேற்கிறோம்!';

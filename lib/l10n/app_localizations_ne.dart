@@ -1308,7 +1308,7 @@ class AppLocalizationsNe extends AppLocalizations {
       'यो उपकरणको पूर्वनिर्धारित सेटिङहरूले यो भाषामा आवाज आउटपुटलाई समर्थन गर्दैन।';
 
   @override
-  String get homeTab => 'गृहपृष्ठ';
+  String get homeTab => 'अनुवाद';
 
   @override
   String get welcomeTitle => 'Talkie मा स्वागत छ!';

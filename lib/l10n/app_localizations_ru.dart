@@ -1303,7 +1303,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Этот язык не поддерживается для озвучивания на вашем устройстве.';
 
   @override
-  String get homeTab => 'Главная';
+  String get homeTab => 'Перевод';
 
   @override
   String get welcomeTitle => 'Добро пожаловать в Talkie!';

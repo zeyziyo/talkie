@@ -1298,7 +1298,7 @@ class AppLocalizationsLo extends AppLocalizations {
       'ການຕັ້ງຄ່າເລີ່ມຕົ້ນຂອງອຸປະກອນນີ້ບໍ່ຮອງຮັບສຽງອອກສຳລັບພາສານີ້.';
 
   @override
-  String get homeTab => 'ໜ້າຫຼັກ';
+  String get homeTab => 'ແປ';
 
   @override
   String get welcomeTitle => 'ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ Talkie!';

@@ -2631,7 +2631,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeTab.
   ///
   /// In ko, this message translates to:
-  /// **'홈'**
+  /// **'번역'**
   String get homeTab;
 
   /// No description provided for @welcomeTitle.

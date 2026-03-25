@@ -1281,7 +1281,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'הגדרות ברירת המחדל של מכשיר זה אינן תומכות בפלט קולי בשפה זו.';
 
   @override
-  String get homeTab => 'בית';
+  String get homeTab => 'תרגום';
 
   @override
   String get welcomeTitle => 'ברוכים הבאים ל-Talkie!';

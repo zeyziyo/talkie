@@ -1307,7 +1307,7 @@ class AppLocalizationsIs extends AppLocalizations {
       'Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu.';
 
   @override
-  String get homeTab => 'Heim';
+  String get homeTab => 'Þýðingar';
 
   @override
   String get welcomeTitle => 'Velkomin í Talkie!';

@@ -1302,7 +1302,7 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਇਹ ਭਾਸ਼ਾ ਇਸ ਡਿਵਾਈਸ ਦੀਆਂ ਸੈਟਿੰਗਾਂ \'ਤੇ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।';
 
   @override
-  String get homeTab => 'ਘਰ';
+  String get homeTab => 'ਤਰਜਮਾ';
 
   @override
   String get welcomeTitle => 'Talkie ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ!';

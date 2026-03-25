@@ -1299,7 +1299,7 @@ class AppLocalizationsGu extends AppLocalizations {
       'આ ઉપકરણની મૂળભૂત સેટિંગ્સ આ ભાષામાં વૉઇસ આઉટપુટને સમર્થન આપતી નથી.';
 
   @override
-  String get homeTab => 'હોમ';
+  String get homeTab => 'ભાષાંતર';
 
   @override
   String get welcomeTitle => 'Talkie માં આપનું સ્વાગત છે!';

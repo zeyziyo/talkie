@@ -1311,7 +1311,7 @@ class AppLocalizationsIt extends AppLocalizations {
       'La sintesi vocale per questa lingua non è supportata nativamente su questo dispositivo.';
 
   @override
-  String get homeTab => 'Home';
+  String get homeTab => 'Traduci';
 
   @override
   String get welcomeTitle => 'Benvenuto in Talkie!';

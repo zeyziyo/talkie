@@ -1303,7 +1303,7 @@ class AppLocalizationsPl extends AppLocalizations {
       'To urządzenie natywnie nie obsługuje odczytywania tekstu w tym języku.';
 
   @override
-  String get homeTab => 'Strona główna';
+  String get homeTab => 'Tłumacz';
 
   @override
   String get welcomeTitle => 'Witaj w Talkie!';

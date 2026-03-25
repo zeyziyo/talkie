@@ -1304,7 +1304,7 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಈ ಸಾಧನದ ಸ್ಥಳೀಯ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಈ ಭಾಷೆಯ ಧ್ವನಿ ಔಟ್‌ಪುಟ್ ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.';
 
   @override
-  String get homeTab => 'ಮುಖಪುಟ';
+  String get homeTab => 'ಅನುವಾದಿಸು';
 
   @override
   String get welcomeTitle => 'Talkie ಗೆ ಸುಸ್ವಾಗತ!';

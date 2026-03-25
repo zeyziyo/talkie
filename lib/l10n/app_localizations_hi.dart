@@ -1307,7 +1307,7 @@ class AppLocalizationsHi extends AppLocalizations {
       'यह उपकरण मूल रूप से इस भाषा में ध्वनि आउटपुट का समर्थन नहीं करता है.';
 
   @override
-  String get homeTab => 'होम';
+  String get homeTab => 'अनुवाद';
 
   @override
   String get welcomeTitle => 'Talkie में आपका स्वागत है!';

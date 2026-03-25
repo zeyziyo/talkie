@@ -1304,7 +1304,7 @@ class AppLocalizationsAs extends AppLocalizations {
       'এই ডিভাইচৰ ডিফল্ট ছেটিংসমূহে এই ভাষাৰ বাবে কণ্ঠৰ আউটপুট সমৰ্থন নকৰে।';
 
   @override
-  String get homeTab => 'গৃহ';
+  String get homeTab => 'অনুবাদ';
 
   @override
   String get welcomeTitle => 'Talkie-লৈ স্বাগতম!';

@@ -1303,7 +1303,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Η προεπιλεγμένη ρύθμιση αυτής της συσκευής δεν υποστηρίζει έξοδο φωνής για αυτήν τη γλώσσα.';
 
   @override
-  String get homeTab => 'Αρχική';
+  String get homeTab => 'Μετάφραση';
 
   @override
   String get welcomeTitle => 'Καλώς ήρθατε στο Talkie!';

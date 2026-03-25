@@ -1317,7 +1317,7 @@ class AppLocalizationsFr extends AppLocalizations {
       'La synthèse vocale n\'est pas prise en charge nativement pour cette langue sur cet appareil.';
 
   @override
-  String get homeTab => 'Accueil';
+  String get homeTab => 'Traduction';
 
   @override
   String get welcomeTitle => 'Bienvenue sur Talkie !';

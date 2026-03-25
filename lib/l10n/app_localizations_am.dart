@@ -1284,7 +1284,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get ttsUnsupportedNatively => 'ይህ መሣሪያ ይህን ቋንቋ በተፈጥሮው በድምፅ አይደግፍም።';
 
   @override
-  String get homeTab => 'ቤት';
+  String get homeTab => 'ትርጉም';
 
   @override
   String get welcomeTitle => 'ወደ Talkie እንኳን በደህና መጡ!';

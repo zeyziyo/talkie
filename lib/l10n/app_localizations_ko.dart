@@ -1273,7 +1273,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get ttsUnsupportedNatively => '이 기기의 기본 설정에서는 이 언어의 음성 출력을 지원하지 않습니다.';
 
   @override
-  String get homeTab => '홈';
+  String get homeTab => '번역';
 
   @override
   String get welcomeTitle => 'Talkie에 오신 것을 환영합니다!';

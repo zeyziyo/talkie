@@ -1306,7 +1306,7 @@ class AppLocalizationsBo extends AppLocalizations {
       'འདི་ག་ཐབས་སྒྲིག་གི་སྔོན་འཛིན་སྒྲིག་འགོད་འདི་གིས་སྐད་ཡིག་འདི་གི་ངག་ཐོག་གཏང་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།';
 
   @override
-  String get homeTab => 'ཁྱིམ';
+  String get homeTab => 'སྐད་བསྒྱུར།';
 
   @override
   String get welcomeTitle => 'Talkie ལ་ཕེབས་པར་དགའ་བསུ་ཞུ།';

@@ -1319,7 +1319,7 @@ class AppLocalizationsMy extends AppLocalizations {
       'ဤစက်တွင် ဤဘာသာစကားအတွက် အသံထွက်စနစ်ကို မပံ့ပိုးပါ။';
 
   @override
-  String get homeTab => 'ပင်မ';
+  String get homeTab => 'ဘာသာပြန်';
 
   @override
   String get welcomeTitle => 'Talkie မှ ကြိုဆိုပါတယ်!';

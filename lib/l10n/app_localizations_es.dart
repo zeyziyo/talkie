@@ -1310,7 +1310,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'La configuración predeterminada de este dispositivo no es compatible con la salida de voz en este idioma.';
 
   @override
-  String get homeTab => 'Inicio';
+  String get homeTab => 'Traducción';
 
   @override
   String get welcomeTitle => '¡Bienvenido a Talkie!';

@@ -1311,7 +1311,7 @@ class AppLocalizationsBg extends AppLocalizations {
       'Този език не се поддържа за гласов изход по подразбиране на това устройство.';
 
   @override
-  String get homeTab => 'Начало';
+  String get homeTab => 'Превод';
 
   @override
   String get welcomeTitle => 'Добре дошли в Talkie!';

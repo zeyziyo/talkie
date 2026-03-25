@@ -1297,7 +1297,7 @@ class AppLocalizationsUr extends AppLocalizations {
       'اس ڈیوائس کی ڈیفالٹ سیٹنگ اس زبان میں آواز کی آؤٹ پُٹ کو سپورٹ نہیں کرتی ہے۔';
 
   @override
-  String get homeTab => 'گھر';
+  String get homeTab => 'ترجمہ';
 
   @override
   String get welcomeTitle => 'Talkie میں خوش آمدید!';

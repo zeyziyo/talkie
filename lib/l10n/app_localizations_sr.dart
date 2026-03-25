@@ -1306,7 +1306,7 @@ class AppLocalizationsSr extends AppLocalizations {
       'Овај уређај не подржава гласовни излаз за овај језик.';
 
   @override
-  String get homeTab => 'Почетна';
+  String get homeTab => 'Превод';
 
   @override
   String get welcomeTitle => 'Dobro došli u Talkie!';

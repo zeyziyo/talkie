@@ -1312,7 +1312,7 @@ class AppLocalizationsCy extends AppLocalizations {
       'Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon.';
 
   @override
-  String get homeTab => 'Cartref';
+  String get homeTab => 'Cyfieithu';
 
   @override
   String get welcomeTitle => 'Croeso i Talkie!';

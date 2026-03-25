@@ -1307,7 +1307,7 @@ class AppLocalizationsEu extends AppLocalizations {
       'Gailu honen ezarpen lehenetsiek ez dute hizkuntza honetako ahots-irteerarik onartzen.';
 
   @override
-  String get homeTab => 'Hasiera';
+  String get homeTab => 'Itzuli';
 
   @override
   String get welcomeTitle => 'Ongi etorri Talkiera!';

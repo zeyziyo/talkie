@@ -1297,7 +1297,7 @@ class AppLocalizationsUk extends AppLocalizations {
       'Налаштування цього пристрою не підтримують вивід мовлення для цієї мови.';
 
   @override
-  String get homeTab => 'Додому';
+  String get homeTab => 'Переклад';
 
   @override
   String get welcomeTitle => 'Ласкаво просимо до Talkie!';

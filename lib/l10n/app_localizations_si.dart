@@ -1304,7 +1304,7 @@ class AppLocalizationsSi extends AppLocalizations {
       'මෙම උපාංගයේ පෙරනිමි සැකසුම් මඟින් මෙම භාෂාව සඳහා හඬ ප්‍රතිදානය සහාය නොදක්වයි.';
 
   @override
-  String get homeTab => 'මුල් පිටුව';
+  String get homeTab => 'පරිවර්තනය';
 
   @override
   String get welcomeTitle => 'Talkie වෙත සාදරයෙන් පිළිගනිමු!';

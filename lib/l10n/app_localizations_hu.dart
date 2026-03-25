@@ -1303,7 +1303,7 @@ class AppLocalizationsHu extends AppLocalizations {
       'Ez az eszköz alapértelmezés szerint nem támogatja a hangkimenetet ezen a nyelven.';
 
   @override
-  String get homeTab => 'Kezdőlap';
+  String get homeTab => 'Fordítás';
 
   @override
   String get welcomeTitle => 'Üdvözöljük a Talkie-ban!';

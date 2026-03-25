@@ -1297,7 +1297,7 @@ class AppLocalizationsBn extends AppLocalizations {
       'এই ডিভাইসের ডিফল্ট সেটিংস এই ভাষার ভয়েস আউটপুট সমর্থন করে না।';
 
   @override
-  String get homeTab => 'হোম';
+  String get homeTab => 'অনুবাদ';
 
   @override
   String get welcomeTitle => 'Talkie-তে স্বাগতম!';

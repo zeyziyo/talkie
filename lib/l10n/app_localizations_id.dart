@@ -1306,7 +1306,7 @@ class AppLocalizationsId extends AppLocalizations {
       'Perangkat ini tidak mendukung output suara untuk bahasa ini secara bawaan.';
 
   @override
-  String get homeTab => 'Beranda';
+  String get homeTab => 'Terjemahan';
 
   @override
   String get welcomeTitle => 'Selamat datang di Talkie!';

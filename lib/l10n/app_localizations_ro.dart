@@ -1308,7 +1308,7 @@ class AppLocalizationsRo extends AppLocalizations {
       'Dispozitivul nu acceptă redarea vocală pentru această limbă în setările implicite.';
 
   @override
-  String get homeTab => 'Acasă';
+  String get homeTab => 'Traducere';
 
   @override
   String get welcomeTitle => 'Bun venit la Talkie!';

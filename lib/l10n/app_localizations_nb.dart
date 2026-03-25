@@ -1303,7 +1303,7 @@ class AppLocalizationsNb extends AppLocalizations {
       'Denne enheten støtter ikke taleutdata for dette språket i sine standardinnstillinger.';
 
   @override
-  String get homeTab => 'Hjem';
+  String get homeTab => 'Oversettelse';
 
   @override
   String get welcomeTitle => 'Velkommen til Talkie!';

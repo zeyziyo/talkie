@@ -1299,7 +1299,7 @@ class AppLocalizationsSw extends AppLocalizations {
       'Matamshi ya sauti hayatumiki kiasili katika lugha hii kwenye mipangilio ya kifaa hiki.';
 
   @override
-  String get homeTab => 'Nyumbani';
+  String get homeTab => 'Tafsiri';
 
   @override
   String get welcomeTitle => 'Karibu kwenye Talkie!';

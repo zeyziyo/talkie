@@ -1313,7 +1313,7 @@ class AppLocalizationsZu extends AppLocalizations {
       'Izilungiselelo zakho zangaphambilini zaleli divayisi azikusekeli ukukhishwa kwezwi lolu limi.';
 
   @override
-  String get homeTab => 'Ikhaya';
+  String get homeTab => 'Ukuhumusha';
 
   @override
   String get welcomeTitle => 'Siyakwamukela ku-Talkie!';

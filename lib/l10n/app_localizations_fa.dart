@@ -1296,7 +1296,7 @@ class AppLocalizationsFa extends AppLocalizations {
       'خروجی صوتی برای این زبان در تنظیمات پیش فرض این دستگاه پشتیبانی نمی شود.';
 
   @override
-  String get homeTab => 'خانه';
+  String get homeTab => 'ترجمه';
 
   @override
   String get welcomeTitle => 'به Talkie خوش آمدید!';

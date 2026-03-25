@@ -1303,7 +1303,7 @@ class AppLocalizationsMs extends AppLocalizations {
       'Tetapan lalai peranti ini tidak menyokong output pertuturan untuk bahasa ini.';
 
   @override
-  String get homeTab => 'Laman Utama';
+  String get homeTab => 'Terjemahan';
 
   @override
   String get welcomeTitle => 'Selamat datang ke Talkie!';

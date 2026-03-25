@@ -1313,7 +1313,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ushbu qurilmaning sozlamalari ushbu tilda ovoz chiqarishni qo\'llab-quvvatlamaydi.';
 
   @override
-  String get homeTab => 'Bosh sahifa';
+  String get homeTab => 'Tarjima';
 
   @override
   String get welcomeTitle => 'Talkie-ga xush kelibsiz!';

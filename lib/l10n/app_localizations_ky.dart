@@ -1311,7 +1311,7 @@ class AppLocalizationsKy extends AppLocalizations {
       'Бул түзмөктүн жөндөөлөрү бул тилде үн чыгарууну колдобойт.';
 
   @override
-  String get homeTab => 'Башкы бет';
+  String get homeTab => 'Которуу';
 
   @override
   String get welcomeTitle => 'Talkie-ге кош келиңиз!';

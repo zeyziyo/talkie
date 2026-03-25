@@ -1293,7 +1293,7 @@ class AppLocalizationsAf extends AppLocalizations {
       'Hierdie toestel ondersteun nie teks-na-spraak vir hierdie taal in sy verstekinstellings nie.';
 
   @override
-  String get homeTab => 'Tuisblad';
+  String get homeTab => 'Vertaling';
 
   @override
   String get welcomeTitle => 'Welkom by Talkie!';

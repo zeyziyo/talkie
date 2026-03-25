@@ -1312,7 +1312,7 @@ class AppLocalizationsGl extends AppLocalizations {
       'A configuración predeterminada deste dispositivo non admite a saída de voz neste idioma.';
 
   @override
-  String get homeTab => 'Inicio';
+  String get homeTab => 'Tradución';
 
   @override
   String get welcomeTitle => 'Benvido a Talkie!';

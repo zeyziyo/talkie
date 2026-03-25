@@ -1294,7 +1294,7 @@ class AppLocalizationsDa extends AppLocalizations {
       'Denne enheds standardindstillinger understøtter ikke tekst-til-tale for dette sprog.';
 
   @override
-  String get homeTab => 'Hjem';
+  String get homeTab => 'Oversæt';
 
   @override
   String get welcomeTitle => 'Velkommen til Talkie!';

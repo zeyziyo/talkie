@@ -1298,7 +1298,7 @@ class AppLocalizationsVi extends AppLocalizations {
       'Thiết bị này không hỗ trợ xuất âm thanh cho ngôn ngữ này trong cài đặt gốc.';
 
   @override
-  String get homeTab => 'Trang chủ';
+  String get homeTab => 'Dịch';
 
   @override
   String get welcomeTitle => 'Chào mừng bạn đến với Talkie!';

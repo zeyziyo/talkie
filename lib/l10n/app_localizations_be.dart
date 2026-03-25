@@ -1309,7 +1309,7 @@ class AppLocalizationsBe extends AppLocalizations {
       'На гэтай прыладзе не падтрымліваецца вывад маўлення для гэтай мовы ў натыўных наладах.';
 
   @override
-  String get homeTab => 'Галоўная';
+  String get homeTab => 'Пераклад';
 
   @override
   String get welcomeTitle => 'Сардэчна запрашаем у Talkie!';

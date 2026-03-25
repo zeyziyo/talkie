@@ -700,13 +700,13 @@ class AppState extends ChangeNotifier {
       );
     }
     
-    if (mode == 1) {
+    if (mode == 2) {
       loadStudyMaterials(); 
       loadRecordsByTags();
-    } else if (mode == 2) {
+    } else if (mode == 3) {
       loadStudyMaterials();
       _practiceWordsOnly = false;
-    } else if (mode == 3) {
+    } else if (mode == 0) {
       loadDialogueGroups();
     }
 

@@ -1313,7 +1313,7 @@ class AppLocalizationsOr extends AppLocalizations {
       'ଏହି ଉପକରଣର ସେଟିଂସମୂହ ଏହି ଭାଷା ପାଇଁ ଭଏସ ଆଉଟପୁଟକୁ ସମର୍ଥନ କରେ ନାହିଁ।';
 
   @override
-  String get homeTab => 'ଘର';
+  String get homeTab => 'ଅନୁବାଦ';
 
   @override
   String get welcomeTitle => 'Talkie କୁ ସ୍ୱାଗତ!';

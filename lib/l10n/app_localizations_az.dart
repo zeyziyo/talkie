@@ -1308,7 +1308,7 @@ class AppLocalizationsAz extends AppLocalizations {
       'Bu cihazda bu dil üçün doğma səs dəstəyi yoxdur.';
 
   @override
-  String get homeTab => 'Əsas Səhifə';
+  String get homeTab => 'Tərcümə';
 
   @override
   String get welcomeTitle => 'Talkie-yə xoş gəlmisiniz!';

@@ -458,23 +458,23 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         tabs: [
                           _buildModernTab(
                             isSelected: appState.currentMode == 0,
-                            icon: Icons.home_rounded,
-                            label: l10n.homeTab,
+                            icon: Icons.chat_bubble,
+                            label: l10n.chatAiChat,
                           ),
                           _buildModernTab(
                             isSelected: appState.currentMode == 1,
+                            icon: Icons.translate,
+                            label: l10n.homeTab,
+                          ),
+                          _buildModernTab(
+                            isSelected: appState.currentMode == 2,
                             icon: Icons.auto_stories,
                             label: l10n.reviewModeTitle,
                           ),
                           _buildModernTab(
-                            isSelected: appState.currentMode == 2,
+                            isSelected: appState.currentMode == 3,
                             icon: Icons.record_voice_over,
                             label: l10n.practiceModeTitle,
-                          ),
-                          _buildModernTab(
-                            isSelected: appState.currentMode == 3,
-                            icon: Icons.chat_bubble,
-                            label: l10n.chatAiChat,
                           ),
                         ],
                       ),
@@ -812,8 +812,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   ),
                 const Divider(),
                 ListTile(
-                  leading: const Icon(Icons.home_rounded),
-                  title: Text(l10n.homeTab),
+                  leading: const Icon(Icons.chat_bubble),
+                  title: Text(l10n.chatAiChat),
                   selected: appState.currentMode == 0,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {
@@ -822,8 +822,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   },
                 ),
                 ListTile(
-                  leading: const Icon(Icons.auto_stories),
-                  title: Text(l10n.reviewModeTitle),
+                  leading: const Icon(Icons.translate),
+                  title: Text(l10n.homeTab),
                   selected: appState.currentMode == 1,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {
@@ -832,8 +832,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   },
                 ),
                 ListTile(
-                  leading: const Icon(Icons.record_voice_over),
-                  title: Text(l10n.practiceModeTitle),
+                  leading: const Icon(Icons.auto_stories),
+                  title: Text(l10n.reviewModeTitle),
                   selected: appState.currentMode == 2,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {
@@ -841,10 +841,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     Navigator.pop(context);
                   },
                 ),
-                const Divider(),
                 ListTile(
-                  leading: const Icon(Icons.chat_bubble),
-                  title: Text(l10n.chatAiChat),
+                  leading: const Icon(Icons.record_voice_over),
+                  title: Text(l10n.practiceModeTitle),
                   selected: appState.currentMode == 3,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {
@@ -885,12 +884,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   final appState = Provider.of<AppState>(context, listen: false);
                   appState.switchMode(index, fromPage: true);
                   _tabController.animateTo(index); // Sync TabBar with swipe
-                  if (index == 3) {
+                  if (index == 0) {
                     // Ensure list is loaded for the AI Chat
                     appState.loadDialogueGroups();
                   }
                },
               children: [
+                ChatHistoryScreen(
+                  isWidget: true,
+                  fabKey: _chatFabKey,
+                ),
                 SimplifiedInputWidget(
                   micKey: _micButtonKey,
                   swapKey: _swapButtonKey,
@@ -911,10 +914,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   settingsKey: _mode3SettingsKey,
                   searchKey: _mode3SearchKey,
                   onSelectMaterial: () => OnlineLibraryDialog.show(context),
-                ),
-                ChatHistoryScreen(
-                  isWidget: true,
-                  fabKey: _chatFabKey,
                 ),
               ],
             ),

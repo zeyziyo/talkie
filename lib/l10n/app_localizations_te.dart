@@ -1303,7 +1303,7 @@ class AppLocalizationsTe extends AppLocalizations {
       'ఈ పరికరం యొక్క స్థానిక సెట్టింగ్‌లలో ఈ భాషకు వాయిస్ అవుట్‌పుట్ మద్దతు లేదు.';
 
   @override
-  String get homeTab => 'హోమ్';
+  String get homeTab => 'అనువాదం';
 
   @override
   String get welcomeTitle => 'Talkie కి స్వాగతం!';

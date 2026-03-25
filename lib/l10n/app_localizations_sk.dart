@@ -1303,7 +1303,7 @@ class AppLocalizationsSk extends AppLocalizations {
       'V tomto zariadení nie je natívne podporovaný výstup hlasu pre tento jazyk.';
 
   @override
-  String get homeTab => 'Domov';
+  String get homeTab => 'Preklad';
 
   @override
   String get welcomeTitle => 'Vitajte v Talkie!';

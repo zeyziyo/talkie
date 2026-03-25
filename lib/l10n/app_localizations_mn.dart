@@ -1306,7 +1306,7 @@ class AppLocalizationsMn extends AppLocalizations {
       'Энэ хэлээр яриа үүсгэх нь таны төхөөрөмжийн тохиргоогоор дэмжигдэхгүй байна.';
 
   @override
-  String get homeTab => 'Нүүр';
+  String get homeTab => 'Орчуулга';
 
   @override
   String get welcomeTitle => 'Talkie-д тавтай морил!';

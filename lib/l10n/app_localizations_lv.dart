@@ -1306,7 +1306,7 @@ class AppLocalizationsLv extends AppLocalizations {
       'Šī ierīce sākotnēji neatbalsta runas izvadi šajā valodā.';
 
   @override
-  String get homeTab => 'Sākums';
+  String get homeTab => 'Tulkot';
 
   @override
   String get welcomeTitle => 'Laipni lūdzam Talkie!';

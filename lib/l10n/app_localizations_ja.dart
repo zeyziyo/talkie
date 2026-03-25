@@ -1268,7 +1268,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get ttsUnsupportedNatively => 'このデバイスの標準設定では、この言語の音声出力をサポートしていません。';
 
   @override
-  String get homeTab => 'ホーム';
+  String get homeTab => '翻訳';
 
   @override
   String get welcomeTitle => 'Talkieへようこそ！';
