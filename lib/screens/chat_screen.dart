@@ -699,16 +699,21 @@ class _ChatScreenState extends State<ChatScreen> {
     // Use the toggle map if exists, otherwise ALWAYS false (Original language first for both ME and AI)
     final bool isTranslationVisible = _showTranslationMap[seq] ?? false;
     
+    // Phase 180: Use Human participant's langCode as the anchor for translation language (v104 Final Repair)
+    final humanPart = appState.activeParticipants.firstWhere(
+        (p) => p.role == 'user',
+        orElse: () => ChatParticipant(id: 'me', dialogueId: '', name: '나', role: 'user', langCode: appState.sourceLang)
+    );
+
     // Text Logic for Acoustic Symmetry
-    // If translation is visible, we show the target_text(translated to App's sourceLang) and speak in target_lang.
-    // Otherwise, we show source_text(original speaker lang) and speak in source_lang.
+    // If translation is visible, we show the target_text (translated to Human's langCode)
     final String displayText = isTranslationVisible 
-        ? (msg['target_text'] ?? '') // 번역된 언어(주로 앱 사용자의 sourceLang)
-        : (msg['source_text'] ?? ''); // 발화자의 원래 언어(participant.langCode)
+        ? (msg['target_text'] ?? '')
+        : (msg['source_text'] ?? '');
         
     final String displayLang = isTranslationVisible
-        ? appState.sourceLang // Translated to my native language
-        : participant.langCode; // Original spoken language (e.g. Spanish)
+        ? humanPart.langCode // Phase 180: Must match the participant-centric translation (e.g. Korean)
+        : participant.langCode; // Original language (e.g. Spanish)
 
     // Unified gender logic for identity consistency
     final String displayGender = participant.gender;
