@@ -216,8 +216,18 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       radius: 12,
     ));
 
-    // Mode 0: Home (Premium Simplified Input)
+    // Mode 0: AI Chat (New Chat History)
     if (modeIndex == 0) {
+      targets.add(_buildTarget(
+        _chatFabKey, 
+        l10n.tutorialAiChatTitle, 
+        l10n.tutorialAiChatDesc,
+        ContentAlign.top,
+        paddingFocus: 4,
+      ));
+    } 
+    // Mode 1: Translation (Premium Simplified Input)
+    else if (modeIndex == 1) {
       targets.add(_buildTarget(
         _micButtonKey, 
         l10n.tutorialMicTitle, 
@@ -262,7 +272,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         ContentAlign.bottom,
         radius: 12,
       ));
-    } else if (modeIndex == 1) {
+    } 
+    // Mode 2: Review (Material Collection)
+    else if (modeIndex == 2) {
       targets.add(_buildTarget(
         _mode2DropdownKey, 
         l10n.menuSelectMaterialSet, 
@@ -293,7 +305,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         ContentAlign.bottom,
         paddingFocus: 4,
       ));
-    } else if (modeIndex == 2) {
+    } 
+    // Mode 3: Practice (Sentence Cards)
+    else if (modeIndex == 3) {
       targets.add(_buildTarget(
         _mode3DropdownKey, 
         l10n.menuSelectMaterialSet, 
@@ -315,14 +329,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         ContentAlign.top,
         shape: ShapeLightFocus.RRect,
         radius: 8,
-        paddingFocus: 4,
-      ));
-    } else if (modeIndex == 3) {
-      targets.add(_buildTarget(
-        _chatFabKey, 
-        l10n.tutorialAiChatTitle, 
-        l10n.tutorialAiChatDesc,
-        ContentAlign.top,
         paddingFocus: 4,
       ));
     }
