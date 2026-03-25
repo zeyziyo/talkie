@@ -262,18 +262,7 @@ class _ChatScreenState extends State<ChatScreen> {
         )
       );
       final aiLangCode = aiParticipant.langCode;
-
-      // User Feedback: Show used languages
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('AI: $aiLangCode, User: ${appState.sourceLang}'),
-            duration: const Duration(seconds: 1),
-            behavior: SnackBarBehavior.floating,
-          )
-        );
-      }
-
+      
       final result = await SupabaseService.processChat(
         text: userText,
         context: contextString,
