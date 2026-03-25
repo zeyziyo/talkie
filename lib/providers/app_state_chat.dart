@@ -272,9 +272,10 @@ extension AppStateChat on AppState {
         note: null,
         createdAt: DateTime.now(),
       ));
-
+      
+      _materialRecords = []; // Final cleanup
       _statusMessage = 'Chat started';
-      notify();
+      notify(); // v16.1 Final Notify
     } catch (e) {
       _statusMessage = 'Failed to start chat: $e';
       notify();

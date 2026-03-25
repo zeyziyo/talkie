@@ -546,7 +546,8 @@ class _ChatScreenState extends State<ChatScreen> {
     final messages = appState.currentChatMessages;
 
     return Scaffold(
-      backgroundColor: Colors.yellow[50], // VISUAL PROOF OF v14.2
+      key: ValueKey(appState.activeDialogueId ?? 'new_chat'),
+      backgroundColor: Colors.white, 
       appBar: AppBar(
         backgroundColor: const Color(0xFF4A69BD), 
         elevation: 4,
