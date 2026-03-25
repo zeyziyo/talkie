@@ -20,8 +20,7 @@ class ChatHistoryScreen extends StatefulWidget {
 class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
   final TextEditingController _searchController = TextEditingController();
   final TextEditingController _noteSearchController = TextEditingController();
-  DateTimeRange? _selectedDateRange;
-  String? _selectedSubject; // Added for filtering by subject/material
+  
   
   @override
   void initState() {
@@ -57,35 +56,10 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
       }
       
       // 2. Subject Filter
-      if (_selectedSubject != null && _selectedSubject != 'All') {
-        if (group.note != _selectedSubject) return false;
-      }
-      
-      // 3. Date Range (Robust Date-Only comparison)
-      if (_selectedDateRange != null) {
-        final start = DateTime(_selectedDateRange!.start.year, _selectedDateRange!.start.month, _selectedDateRange!.start.day);
-        final end = DateTime(_selectedDateRange!.end.year, _selectedDateRange!.end.month, _selectedDateRange!.end.day);
-        final current = DateTime(group.createdAt.year, group.createdAt.month, group.createdAt.day);
-
-        if (current.isBefore(start) || current.isAfter(end)) {
-          return false;
-        }
-      }
       return true;
     }).toList();
   }
   
-  Future<void> _pickDateRange() async {
-    final picked = await showDateRangePicker(
-      context: context,
-      firstDate: DateTime(2025),
-      lastDate: DateTime.now(),
-      initialDateRange: _selectedDateRange,
-    );
-    if (picked != null) {
-      setState(() => _selectedDateRange = picked);
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -128,20 +102,6 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                       onChanged: (val) => setState(() {}),
                     ),
                   ),
-                  const SizedBox(width: 8),
-                  IconButton(
-                    icon: Icon(Icons.calendar_today, 
-                      color: _selectedDateRange != null ? const Color(0xFF667eea) : Colors.grey,
-                      size: 20,
-                    ),
-                    onPressed: _pickDateRange,
-                    tooltip: 'Filter by Date',
-                  ),
-                  if (_selectedDateRange != null)
-                    IconButton(
-                      icon: const Icon(Icons.close, size: 20),
-                      onPressed: () => setState(() => _selectedDateRange = null),
-                    ),
                 ],
               ),
               const SizedBox(height: 8),
@@ -365,7 +325,7 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
 
   Widget _buildEmptyState(AppLocalizations l10n) {
     // Only show "No Conversations" if truly empty, otherwise "No Matches"
-    final isFiltering = _searchController.text.isNotEmpty || _selectedDateRange != null;
+    final isFiltering = _searchController.text.isNotEmpty || _noteSearchController.text.isNotEmpty;
     
     return Center(
       child: Column(
