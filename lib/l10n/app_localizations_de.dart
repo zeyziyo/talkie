@@ -140,6 +140,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get chatNoConversations => 'Keine Gespräche';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Speichern & Beenden';
 
   @override

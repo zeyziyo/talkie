@@ -140,6 +140,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get chatNoConversations => 'Vēl nav sarunu';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Saglabāt un iziet';
 
   @override

@@ -140,6 +140,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get chatNoConversations => 'Ei vielä keskusteluja';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Tallenna ja lopeta';
 
   @override

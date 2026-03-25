@@ -140,6 +140,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get chatNoConversations => 'હજી સુધી કોઈ વાતચીત નથી';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'સાચવો અને બહાર નીકળો';
 
   @override

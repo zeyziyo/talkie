@@ -104,7 +104,7 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
                       controller: _searchController,
                       style: const TextStyle(color: Colors.white),
                       decoration: InputDecoration(
-                        hintText: l10n.search,
+                        hintText: l10n.chatSearchHint,
                         hintStyle: TextStyle(color: Colors.grey.shade400),
                         prefixIcon: const Icon(Icons.search, color: Colors.white70),
                         filled: true,

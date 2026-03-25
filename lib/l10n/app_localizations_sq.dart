@@ -141,6 +141,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get chatNoConversations => 'Ende nuk ka biseda';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Ruaj dhe dil';
 
   @override

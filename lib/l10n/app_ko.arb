@@ -434,6 +434,7 @@
   "chatNew": "새 대화",
   "chatNewChat": "새 대화",
   "chatNoConversations": "아직 대화가 없습니다",
+  "chatSearchHint": "대화 제목으로 검색...",
   "chatSaveAndExit": "저장 후 종료",
   "chatStartNewPrompt": "연습을 위해 새 대화를 시작해보세요!",
   "chatTypeHint": "메시지를 입력하세요...",

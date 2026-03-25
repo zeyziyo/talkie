@@ -492,6 +492,12 @@ abstract class AppLocalizations {
   /// **'아직 대화가 없습니다'**
   String get chatNoConversations;
 
+  /// No description provided for @chatSearchHint.
+  ///
+  /// In ko, this message translates to:
+  /// **'대화 제목으로 검색...'**
+  String get chatSearchHint;
+
   /// No description provided for @chatSaveAndExit.
   ///
   /// In ko, this message translates to:

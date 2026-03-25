@@ -140,6 +140,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get chatNoConversations => 'មិនទាន់មានការសន្ទនា';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'រក្សាទុក និងចាកចេញ';
 
   @override

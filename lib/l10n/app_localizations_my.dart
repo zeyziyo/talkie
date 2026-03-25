@@ -139,6 +139,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get chatNoConversations => 'စကားပြောဆိုမှု မရှိသေးပါ';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'သိမ်းဆည်းပြီး ထွက်ပါ';
 
   @override

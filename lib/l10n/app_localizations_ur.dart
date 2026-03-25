@@ -139,6 +139,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get chatNoConversations => 'ابھی تک کوئی بات چیت نہیں ہوئی۔';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'محفوظ کریں اور باہر نکلیں';
 
   @override

@@ -139,6 +139,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get chatNoConversations => 'Поки немає розмов';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Зберегти та вийти';
 
   @override

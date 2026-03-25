@@ -139,6 +139,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get chatNoConversations => 'Chưa có cuộc trò chuyện nào';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Lưu và thoát';
 
   @override

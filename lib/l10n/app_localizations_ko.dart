@@ -137,6 +137,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get chatNoConversations => '아직 대화가 없습니다';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => '저장 후 종료';
 
   @override

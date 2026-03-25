@@ -138,6 +138,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get chatNoConversations => 'עדיין אין שיחות';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'שמור וצא';
 
   @override

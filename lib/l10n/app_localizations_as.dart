@@ -140,6 +140,9 @@ class AppLocalizationsAs extends AppLocalizations {
   String get chatNoConversations => 'এতিয়ালৈকে কোনো বাৰ্তালাপ নাই';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'সংৰক্ষণ কৰক আৰু ওলাই যাওক';
 
   @override

@@ -140,6 +140,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get chatNoConversations => 'Encara no hi ha cap conversa';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Desa i surt';
 
   @override

@@ -139,6 +139,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get chatNoConversations => 'ຍັງບໍ່ມີການສົນທະນາ';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'ບັນທຶກແລ້ວອອກ';
 
   @override

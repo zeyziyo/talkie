@@ -140,6 +140,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get chatNoConversations => 'Dar nėra pokalbių';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Išsaugoti ir išeiti';
 
   @override

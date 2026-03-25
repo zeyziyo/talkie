@@ -140,6 +140,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get chatNoConversations => 'තවම සංවාද නැත';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'සුරැකීමෙන් පසු පිටවන්න';
 
   @override

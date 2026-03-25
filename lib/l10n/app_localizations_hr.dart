@@ -139,6 +139,9 @@ class AppLocalizationsHr extends AppLocalizations {
   String get chatNoConversations => 'Još nema razgovora';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Spremi i izađi';
 
   @override

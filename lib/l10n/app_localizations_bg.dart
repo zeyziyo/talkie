@@ -140,6 +140,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get chatNoConversations => 'Все още нямате разговори';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Запазване и излизане';
 
   @override

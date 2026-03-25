@@ -138,6 +138,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get chatNoConversations => 'هنوز هیچ گفتگویی وجود ندارد';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'ذخیره و خروج';
 
   @override

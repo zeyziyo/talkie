@@ -140,6 +140,9 @@ class AppLocalizationsCy extends AppLocalizations {
   String get chatNoConversations => 'Dim sgyrsiau eto';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Cadw ac Allgofnodi';
 
   @override

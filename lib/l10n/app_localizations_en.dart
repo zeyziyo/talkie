@@ -140,6 +140,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chatNoConversations => 'No conversations yet';
 
   @override
+  String get chatSearchHint => 'Search by dialogue title...';
+
+  @override
   String get chatSaveAndExit => 'Save & Exit';
 
   @override

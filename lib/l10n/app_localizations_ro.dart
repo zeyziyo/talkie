@@ -140,6 +140,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get chatNoConversations => 'Nu există conversații încă';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Salvează și ieși';
 
   @override

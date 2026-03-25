@@ -140,6 +140,9 @@ class AppLocalizationsKy extends AppLocalizations {
   String get chatNoConversations => 'Азырынча сүйлөшүү жок';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Сактап чыгуу';
 
   @override

@@ -140,6 +140,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get chatNoConversations => 'Még nincsenek beszélgetések';
 
   @override
+  String get chatSearchHint => '대화 제목으로 검색...';
+
+  @override
   String get chatSaveAndExit => 'Mentés és kilépés';
 
   @override
