@@ -99,9 +99,7 @@ class _ChatScreenState extends State<ChatScreen> {
     debugPrint('[Chat] Sending message: $text');
     
     // v14.3: FORCE SNACKBAR FOR FEEDBACK
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('>>> 메시지 처리 시작: $text')),
-    );
+    debugPrint('[Chat] Processing message: $text');
 
     // Phase 180: Use selected dynamic speaker
     final speakerId = _currentSpeakerId ?? 'user';
@@ -180,13 +178,14 @@ class _ChatScreenState extends State<ChatScreen> {
             });
           }
 
-          // 2. AI가 전송 완료 후 즉시 응답 트리거 (딜레이 조정 및 상태 체크 강화)
           final hasAi = appState.activeParticipants.any((p) => p.role == 'ai' || p.role == 'assistant');
           if (hasAi) {
             debugPrint('[Chat] Auto-triggering AI response (v106).');
-            await Future.delayed(const Duration(milliseconds: 200)); // Give some time for DB sync
+            // Give a tiny delay for DB consistency but no too long
+            await Future.delayed(const Duration(milliseconds: 300)); 
             if (mounted) {
-              await _triggerAiResponseManually(appState, l10n);
+              // ignoreLoading: true -> Skip the _isLoading guard because we are in the same flow
+              await _triggerAiResponseManually(appState, l10n, ignoreLoading: true);
             }
           }
         }
@@ -205,8 +204,10 @@ class _ChatScreenState extends State<ChatScreen> {
     });
   }
 
-  Future<void> _triggerAiResponseManually(AppState appState, AppLocalizations l10n) async {
-    if (_isLoading) return;
+  Future<void> _triggerAiResponseManually(AppState appState, AppLocalizations l10n, {bool ignoreLoading = false}) async {
+    if (_isLoading && !ignoreLoading) return;
+    if (!mounted) return;
+    
     setState(() => _isLoading = true);
 
     String lastUserText = '';
@@ -261,6 +262,17 @@ class _ChatScreenState extends State<ChatScreen> {
         )
       );
       final aiLangCode = aiParticipant.langCode;
+
+      // User Feedback: Show used languages
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('AI: $aiLangCode, User: ${appState.sourceLang}'),
+            duration: const Duration(seconds: 1),
+            behavior: SnackBarBehavior.floating,
+          )
+        );
+      }
 
       final result = await SupabaseService.processChat(
         text: userText,
