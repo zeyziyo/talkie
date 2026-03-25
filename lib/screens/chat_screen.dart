@@ -116,26 +116,32 @@ class _ChatScreenState extends State<ChatScreen> {
         // Step 1: Usage Check
         await appState.checkUsageLimit();
 
-        final currentParticipant = appState.activeParticipants.firstWhere(
-           (p) => p.id == speakerId, 
-           orElse: () => ChatParticipant(id: 'user', dialogueId: '', name: 'ME', role: 'user', langCode: appState.sourceLang)
+        // Participant-Centric Migration (v104 Final Repair)
+        // 1. Find the Human Participant configuration
+        final humanPart = appState.activeParticipants.firstWhere(
+            (p) => p.role == 'user',
+            orElse: () => ChatParticipant(id: 'me', dialogueId: '', name: '나', role: 'user', langCode: appState.sourceLang)
         );
 
-        String finalSourceText;
-        String finalTargetText;
+        final aiPart = appState.activeParticipants.firstWhere(
+            (p) => (p.role == 'ai' || p.role == 'assistant') && p.langCode != 'en',
+            orElse: () => appState.activeParticipants.firstWhere(
+                (p) => p.role == 'ai' || p.role == 'assistant',
+                orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: appState.targetLang)
+            )
+        );
+
+        // 3. Resolve current participant
+        final currentParticipant = (speakerId == humanPart.id) ? humanPart : aiPart;
+
+        String finalSourceText = '';
+        String finalTargetText = '';
 
         if (currentParticipant.role == 'user') {
-          // User speaks: typed in inputLang, translated to the current AI's langCode
-          final inputLang = appState.sourceLang;
-          
-          final primaryAi = appState.activeParticipants.firstWhere(
-            (p) => (p.role == 'ai' || p.role == 'assistant') && p.langCode != 'en', // Prefer specific setting
-            orElse: () => appState.activeParticipants.firstWhere(
-              (p) => p.role == 'ai' || p.role == 'assistant',
-              orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: appState.targetLang)
-            )
-          );
-          final outputLang = primaryAi.langCode;
+          // User speaks: Use Human's configured language as inputLang
+          final inputLang = humanPart.langCode;
+          // Target is the AI's configured language
+          final outputLang = aiPart.langCode;
 
           final translationResult = await TranslationService.translate(
             text: text,
@@ -166,15 +172,15 @@ class _ChatScreenState extends State<ChatScreen> {
         // Phase 180: Automatic Speaker Switch & Response Trigger (RELIABILITY FIX v106)
         if (currentParticipant.role == 'user') {
           // 1. 자동으로 다음 발화자를 AI로 전환 (UI 버튼 동기화)
-          final aiPart = appState.activeParticipants.firstWhere(
+          final aiTarget = appState.activeParticipants.firstWhere(
             (p) => p.role == 'ai' || p.role == 'assistant',
-            orElse: () => currentParticipant // Switch to self if no AI (fallback)
+            orElse: () => humanPart
           );
           
           if (mounted) {
             setState(() {
-              _currentSpeakerId = aiPart.id;
-              debugPrint('[Chat] Speaker switched to AI (${aiPart.id})');
+              _currentSpeakerId = aiTarget.id;
+              debugPrint('[Chat] Speaker switched to AI (${aiTarget.id})');
             });
           }
 
@@ -240,10 +246,29 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Future<void> _processAiChat(AppState appState, String userText, String userTranslation, AppLocalizations l10n) async {
-      // Get GPS Context
+      // Find Listeners and Speakers from Participant Profiles (v104 Final Repair)
+      final aiPart = appState.activeParticipants.firstWhere(
+          (p) => (p.role == 'ai' || p.role == 'assistant') && p.langCode != 'en',
+          orElse: () => appState.activeParticipants.firstWhere(
+              (p) => p.role == 'ai' || p.role == 'assistant',
+              orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: appState.targetLang)
+          )
+      );
+      final humanPart = appState.activeParticipants.firstWhere(
+          (p) => p.role == 'user',
+          orElse: () => ChatParticipant(id: 'me', dialogueId: '', name: '나', role: 'user', langCode: appState.sourceLang)
+      );
+
+      final aiLangCode = aiPart.langCode;
+      final userLangCode = humanPart.langCode;
+
+      // Get GPS Context & Force AI Language Instruction
       final location = appState.activeDialogueLocation ?? '';
       final currentLocationLabel = l10n.currentLocation;
-      final contextString = '${appState.activeDialogueTitle ?? "None"}. ${location.isNotEmpty ? "$currentLocationLabel: $location" : ""}';
+      
+      // EXTREME FIX: Explicitly command the AI to respond in the target language within the context
+      final baseContext = '${appState.activeDialogueTitle ?? "None"}. ${location.isNotEmpty ? "$currentLocationLabel: $location" : ""}';
+      final contextString = '$baseContext Critical Instruction: You MUST respond ONLY in $aiLangCode language. NEVER use English.';
 
       // Build History
       final history = appState.currentChatMessages.where((m) => m['speaker'] != 'Partner').map((msg) {
@@ -253,21 +278,13 @@ class _ChatScreenState extends State<ChatScreen> {
         };
       }).toList();
 
-      // Phase 180: Use specific AI participant's langCode instead of global appState.targetLang (ROBUST)
-      final aiParticipant = appState.activeParticipants.firstWhere(
-        (p) => (p.role == 'ai' || p.role == 'assistant') && p.langCode != 'en', // Prefer non-English if available
-        orElse: () => appState.activeParticipants.firstWhere(
-          (p) => p.role == 'ai' || p.role == 'assistant',
-          orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: appState.targetLang)
-        )
-      );
-      final aiLangCode = aiParticipant.langCode;
+      debugPrint('[Chat] Calling processChat: aiLang=$aiLangCode, userLang=$userLangCode');
       
       final result = await SupabaseService.processChat(
         text: userText,
         context: contextString,
-        targetLang: aiLangCode, // Reflect individual AI setting (FIXED: Spanish AI will speak Spanish)
-        sourceLang: appState.sourceLang, // Phase 180: User's UI language for translation target
+        targetLang: aiLangCode, // Main text language (e.g. Spanish)
+        sourceLang: userLangCode, // Sub-text translation target (e.g. Korean)
         history: history,
       );
 
