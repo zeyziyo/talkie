@@ -260,6 +260,9 @@ extension AppStateChat on AppState {
         debugPrint('[AppState] New Conversation: Injected ME (${meForDialogue.langCode}) and AI (${aiForDialogue.langCode})');
       }
 
+      // Phase 180: Clear mode 3 search results to prevent stale UI
+      _materialRecords = []; 
+      
       _dialogueGroups.insert(0, DialogueGroup(
         id: dialogueId,
         userId: userId ?? 'anonymous',
@@ -712,18 +715,24 @@ extension AppStateChat on AppState {
     _currentDialogueSequence++;
     
     try {
-      // Phase 130: Ensure Participant exists for Gender Toggle
-      await getOrAddParticipant(
-        name: finalSpeaker,
-        role: 'ai',
-        languageCode: _targetLang,
+      // AI Participant 찾기 (이름/역할 기준)
+      final existingAi = _activeParticipants.firstWhere(
+        (p) => (p.role == 'ai' || p.role == 'assistant') && (speaker == null || p.name == speaker),
+        orElse: () => ChatParticipant(id: 'temp', dialogueId: '', name: '', role: ''),
       );
 
-      // AI Participant 찾기 (Ensure we have the latest participant after getOrAddParticipant)
-      final updatedAiPart = _activeParticipants.firstWhere(
-        (p) => p.role == 'ai' || p.role == 'assistant',
-        orElse: () => ChatParticipant(id: 'ai', dialogueId: _activeDialogueId!, name: 'AI', role: 'ai'),
-      );
+      ChatParticipant updatedAiPart;
+      if (existingAi.id == 'temp') {
+        // 존재하지 않을 때만 새로 추가 (이때만 targetLang 기본값 사용)
+        updatedAiPart = await getOrAddParticipant(
+          name: finalSpeaker,
+          role: 'ai',
+          languageCode: _targetLang, 
+        );
+      } else {
+        // 이미 존재한다면 기존 언어 설정을 파괴하지 않음 (버그 수정)
+        updatedAiPart = existingAi;
+      }
 
       // Phase 21: ID 기반 저장
       await DialogueRepository.insertMessage({

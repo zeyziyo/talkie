@@ -23,7 +23,6 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _textController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
-  List<Map<String, dynamic>> _messages = [];
   bool _isLoading = false;
   final SpeechService _speechService = SpeechService();
   
@@ -51,12 +50,6 @@ class _ChatScreenState extends State<ChatScreen> {
     // Load History if we have an active dialogue (New Chat or Existing)
     final appState = Provider.of<AppState>(context, listen: false);
     debugPrint('[ChatScreen] Initialized with hasAiParticipant: ${widget.hasAiParticipant}');
-    
-    // [Phase 162/164] Sync existing messages from AppState to local state if reloading/opening history
-    if (appState.currentChatMessages.isNotEmpty) {
-      _messages = List.from(appState.currentChatMessages);
-      debugPrint('[ChatScreen] Loaded ${_messages.length} existing messages from AppState');
-    }
 
     // 초기 발화자는 주로 '나(User)'로 설정 시도
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -112,24 +105,12 @@ class _ChatScreenState extends State<ChatScreen> {
 
     // Phase 180: Use selected dynamic speaker
     final speakerId = _currentSpeakerId ?? 'user';
-    final speakerName = appState.activeParticipants.firstWhere((p) => p.id == speakerId, orElse: () => ChatParticipant(id: 'user', dialogueId: '', name: 'ME', role: 'user')).name;
 
-    // 1. IMMEDIATE UI UPDATE (Aggressive Refresh)
+    // 1. CLEAR INPUT & SET LOADING
     setState(() {
-      _messages = List.from(_messages)..add({
-        'speaker': speakerId, // Save ID instead of hardcoded 'User'
-        'speaker_name': speakerName, // for UI convenience
-        'source_text': text,
-        'target_text': '[...] Processing...',
-      });
       _textController.clear();
       _isLoading = true; 
     });
-    debugPrint('>>> UI UPDATED. Total Messages: ${_messages.length}');
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('>>> 리스트 업데이트됨 (총 ${_messages.length}개)'), duration: Duration(milliseconds: 1000)),
-    );
-    _scrollToBottom();
 
     // 2. DETACHED BACKGROUND PROCESSING (Run in isolation)
     Future.microtask(() async {
@@ -149,10 +130,12 @@ class _ChatScreenState extends State<ChatScreen> {
           // User speaks: typed in inputLang, translated to the current AI's langCode
           final inputLang = appState.sourceLang;
           
-          // v16.1 Fix: Find the first AI/Assistant participant's language
           final primaryAi = appState.activeParticipants.firstWhere(
-            (p) => p.role == 'ai' || p.role == 'assistant',
-            orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: appState.targetLang)
+            (p) => (p.role == 'ai' || p.role == 'assistant') && p.langCode != 'en', // Prefer specific setting
+            orElse: () => appState.activeParticipants.firstWhere(
+              (p) => p.role == 'ai' || p.role == 'assistant',
+              orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: appState.targetLang)
+            )
           );
           final outputLang = primaryAi.langCode;
 
@@ -165,7 +148,7 @@ class _ChatScreenState extends State<ChatScreen> {
           finalSourceText = text;
           finalTargetText = translationResult['text'] as String;
         } else {
-          // Non-user (AI/Third Party) speaks: User typed in inputLang, translate to non-user's langCode
+          // Non-user speaker
           final inputLang = appState.sourceLang;
           final speakerLang = currentParticipant.langCode;
 
@@ -175,18 +158,11 @@ class _ChatScreenState extends State<ChatScreen> {
             targetLang: speakerLang,
           ).timeout(const Duration(seconds: 10), onTimeout: () => {'text': '[Translation Timeout] $text', 'isValid': true});
           
-          finalSourceText = translationResult['text'] as String; // The speaker's native language expression
-          finalTargetText = text; // The original text user typed in their UI language
+          finalSourceText = translationResult['text'] as String;
+          finalTargetText = text;
         }
 
-        if (mounted) {
-          setState(() {
-            _messages.last['source_text'] = finalSourceText;
-            _messages.last['target_text'] = finalTargetText;
-          });
-        }
-
-        // Step 3: Local/Cloud Save
+        // Step 3: Local/Cloud Save (This updates AppState.currentChatMessages and calls notifyListeners)
         await appState.saveUserMessage(finalSourceText, finalTargetText, speakerId: speakerId);
 
         // Phase 180: Automatic Speaker Switch & Response Trigger (RELIABILITY FIX v106)
@@ -208,8 +184,7 @@ class _ChatScreenState extends State<ChatScreen> {
           final hasAi = appState.activeParticipants.any((p) => p.role == 'ai' || p.role == 'assistant');
           if (hasAi) {
             debugPrint('[Chat] Auto-triggering AI response (v106).');
-            // Ensure UI is updated before triggering
-            await Future.delayed(const Duration(milliseconds: 100));
+            await Future.delayed(const Duration(milliseconds: 200)); // Give some time for DB sync
             if (mounted) {
               await _triggerAiResponseManually(appState, l10n);
             }
@@ -236,10 +211,10 @@ class _ChatScreenState extends State<ChatScreen> {
 
     String lastUserText = '';
     String lastUserTrans = '';
-    if (_messages.isNotEmpty) {
-      final lastMsg = _messages.lastWhere(
-        (m) => m['speaker'] != appState.activePersona && m['speaker'] != 'AI',
-        orElse: () => _messages.last
+    if (appState.currentChatMessages.isNotEmpty) {
+      final lastMsg = appState.currentChatMessages.lastWhere(
+        (m) => m['speaker'] != appState.activePersona && m['speaker'] != 'ai' && m['speaker'] != 'assistant',
+        orElse: () => appState.currentChatMessages.last
       );
       lastUserText = (lastMsg['source_text'] ?? '').toString();
       lastUserTrans = (lastMsg['target_text'] ?? '').toString();
@@ -270,17 +245,20 @@ class _ChatScreenState extends State<ChatScreen> {
       final contextString = '${appState.activeDialogueTitle ?? "None"}. ${location.isNotEmpty ? "$currentLocationLabel: $location" : ""}';
 
       // Build History
-      final history = _messages.where((m) => m['speaker'] != 'Partner').map((msg) {
+      final history = appState.currentChatMessages.where((m) => m['speaker'] != 'Partner').map((msg) {
         return {
-          'role': msg['speaker'] == 'User' ? 'user' : 'model',
+          'role': (msg['speaker'] == 'user' || msg['speaker'] == 'me') ? 'user' : 'model',
           'parts': [{'text': msg['source_text'] ?? ''}]
         };
       }).toList();
 
-      // Phase 29: Use specific AI participant's langCode instead of global appState.targetLang
+      // Phase 180: Use specific AI participant's langCode instead of global appState.targetLang (ROBUST)
       final aiParticipant = appState.activeParticipants.firstWhere(
-        (p) => p.id == 'ai' || p.role == 'ai' || p.role == 'assistant',
-        orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: appState.targetLang)
+        (p) => (p.role == 'ai' || p.role == 'assistant') && p.langCode != 'en', // Prefer non-English if available
+        orElse: () => appState.activeParticipants.firstWhere(
+          (p) => p.role == 'ai' || p.role == 'assistant',
+          orElse: () => ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', langCode: appState.targetLang)
+        )
       );
       final aiLangCode = aiParticipant.langCode;
 
@@ -300,6 +278,7 @@ class _ChatScreenState extends State<ChatScreen> {
       final String? explanation = result['explanation'] as String?;
       final String? suggestedTitle = result['title'] as String?;
 
+      // Step 3: Save AI Response (This updates AppState.currentChatMessages and calls notifyListeners)
       await appState.saveAiResponse(
         aiResponse, 
         translatedResponse,
@@ -312,30 +291,16 @@ class _ChatScreenState extends State<ChatScreen> {
       if (suggestedTitle != null && 
           (appState.activeDialogueTitle == 'New Conversation' || appState.activeDialogueTitle == l10n.chatUntitled) &&
           appState.activeDialogueId != null &&
-          _messages.length < 5) { // Phase 28: Only auto-title in early stage
+          appState.currentChatMessages.length < 5) { // Phase 28: Only auto-title in early stage
         
         // Append Location to Title if available
         String finalTitle = suggestedTitle;
         if (location.isNotEmpty) {
-           // Phase 15.8.8: Use only the address part for title if possible, or keep full
            final displayLocation = location.contains(']') ? location.split(']').last.trim() : location;
            finalTitle = '$finalTitle @ ${displayLocation.split(',')[0]}';
         }
         
         await SupabaseService.updateDialogueTitle(appState.activeDialogueId!, finalTitle);
-        // Do not force reload groups here to avoid UI flicker during active chat
-        // appState.loadDialogueGroups(); 
-      }
-
-      if (mounted) {
-        setState(() {
-          _messages.add({
-            'speaker': appState.activePersona ?? 'AI',
-            'source_text': aiResponse, 
-            'target_text': translatedResponse,
-          });
-          _isLoading = false;
-        });
       }
   }
 
@@ -577,16 +542,7 @@ class _ChatScreenState extends State<ChatScreen> {
     final appState = Provider.of<AppState>(context);
     final l10n = AppLocalizations.of(context)!;
     
-    // Phase 180: [CRITICAL BUG FIX] Synchronize local state with AppState when cleared
-    // 만약 전역 상태의 메시지가 비어있다면(예: 새 대화 시작), 로컬 리스트를 즉시 비워 잔상을 제거합니다.
-    // 단, 메시지 로딩 중(isEmpty && _isLoading)일 때는 비우지 않도록 가드하여 발화 도중 사라지는 문제 방지.
-    if (appState.currentChatMessages.isEmpty && _messages.isNotEmpty && !_isLoading) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted && _messages.isNotEmpty) {
-           setState(() => _messages = []);
-        }
-      });
-    }
+    final messages = appState.currentChatMessages;
 
     return Scaffold(
       backgroundColor: Colors.yellow[50], // VISUAL PROOF OF v14.2
@@ -664,16 +620,16 @@ class _ChatScreenState extends State<ChatScreen> {
       body: Column(
         children: [
           Expanded(
-            child: _messages.isEmpty 
+            child: messages.isEmpty 
               ? Center(child: Text(l10n.noMaterialsInCategory, style: TextStyle(color: Colors.grey[400])))
               : ListView.builder(
-                  key: ValueKey('msg_list_${_messages.length}_$_isSearching'), // Force whole list rebuild
+                  key: ValueKey('msg_list_${messages.length}_$_isSearching'), // Force whole list rebuild
                   controller: _scrollController,
                   padding: const EdgeInsets.all(16),
                   physics: const AlwaysScrollableScrollPhysics(),
-                  itemCount: _messages.length,
+                  itemCount: messages.length,
                   itemBuilder: (context, index) {
-                    final msg = _messages[index];
+                    final msg = messages[index];
                     
                     // Filter Logic for Search
                     if (_isSearching && _searchQuery.isNotEmpty) {
