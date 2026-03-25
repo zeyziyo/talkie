@@ -281,7 +281,7 @@ class _ChatScreenState extends State<ChatScreen> {
       debugPrint('[Chat] Calling processChat: aiLang=$aiLangCode, userLang=$userLangCode');
       
       final result = await SupabaseService.processChat(
-        text: userText,
+        text: '$userText (Respond into $aiLangCode ONLY. Native Language is $userLangCode)',
         context: contextString,
         targetLang: aiLangCode, // Main text language (e.g. Spanish)
         sourceLang: userLangCode, // Sub-text translation target (e.g. Korean)
