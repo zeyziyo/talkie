@@ -139,7 +139,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get chatNoConversations => 'कुनै कुराकानी छैन';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'च्याट शीर्षकद्वारा खोज्नुहोस्...';
 
   @override
   String get chatSaveAndExit => 'सुरक्षित गरेर बाहिर निस्कनुहोस्';

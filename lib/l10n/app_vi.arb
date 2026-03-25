@@ -76,6 +76,7 @@
   "chatNew": "Cuộc trò chuyện mới",
   "chatNewChat": "Trò chuyện mới",
   "chatNoConversations": "Chưa có cuộc trò chuyện nào",
+  "chatSearchHint": "Tìm kiếm theo tên cuộc trò chuyện...",
   "chatSaveAndExit": "Lưu và thoát",
   "chatStartNewPrompt": "Hãy bắt đầu một cuộc trò chuyện mới để luyện tập!",
   "chatTypeHint": "Nhập tin nhắn...",

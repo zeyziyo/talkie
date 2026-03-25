@@ -76,6 +76,7 @@
   "chatNew": "Gumzo Jipya",
   "chatNewChat": "Gumzo Jipya",
   "chatNoConversations": "Hakuna mazungumzo bado",
+  "chatSearchHint": "Tafuta kwa jina la mazungumzo...",
   "chatSaveAndExit": "Hifadhi na Uondoke",
   "chatStartNewPrompt": "Anza mazungumzo mapya kwa mazoezi!",
   "chatTypeHint": "Andika ujumbe...",

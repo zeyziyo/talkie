@@ -76,6 +76,7 @@
   "chatNew": "Նոր զրույց",
   "chatNewChat": "Նոր զրույց",
   "chatNoConversations": "Դեռևս զրույցներ չկան",
+  "chatSearchHint": "Որոնել զրույցի վերնագրով...",
   "chatSaveAndExit": "Պահպանել և դուրս գալ",
   "chatStartNewPrompt": "Սկսեք նոր զրույց մարզվելու համար!",
   "chatTypeHint": "Մուտքագրեք ձեր հաղորդագրությունը...",

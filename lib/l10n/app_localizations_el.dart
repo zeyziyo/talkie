@@ -139,7 +139,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get chatNoConversations => 'Δεν υπάρχουν ακόμη συνομιλίες';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Αναζήτηση με βάση τον τίτλο της συνομιλίας...';
 
   @override
   String get chatSaveAndExit => 'Αποθήκευση και έξοδος';

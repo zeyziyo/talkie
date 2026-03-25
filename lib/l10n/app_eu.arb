@@ -76,6 +76,7 @@
   "chatNew": "Elkarrizketa berria",
   "chatNewChat": "Elkarrizketa berria",
   "chatNoConversations": "Oraindik ez dago elkarrizketarik",
+  "chatSearchHint": "Bilatu elkarrizketen izenburuak...",
   "chatSaveAndExit": "Gorde eta irten",
   "chatStartNewPrompt": "Hasi elkarrizketa berri bat praktikatzeko!",
   "chatTypeHint": "Idatzi mezu bat...",

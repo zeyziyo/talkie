@@ -140,7 +140,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get chatNoConversations => 'Engin samtöl ennþá';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Leita eftir spjalltitli...';
 
   @override
   String get chatSaveAndExit => 'Vista og hætta';

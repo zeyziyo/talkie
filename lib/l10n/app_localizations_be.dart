@@ -140,7 +140,7 @@ class AppLocalizationsBe extends AppLocalizations {
   String get chatNoConversations => 'Пакуль няма размоў';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Пошук па назве чата...';
 
   @override
   String get chatSaveAndExit => 'Захаваць і выйсці';

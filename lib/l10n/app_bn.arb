@@ -76,6 +76,7 @@
   "chatNew": "নতুন কথোপকথন",
   "chatNewChat": "নতুন কথোপকথন",
   "chatNoConversations": "এখনও কোনও কথোপকথন নেই",
+  "chatSearchHint": "কথোপকথনের শিরোনাম দিয়ে খুঁজুন...",
   "chatSaveAndExit": "সংরক্ষণ করে শেষ করুন",
   "chatStartNewPrompt": "অনুশীলনের জন্য একটি নতুন কথোপকথন শুরু করুন!",
   "chatTypeHint": "এখানে একটি বার্তা লিখুন...",

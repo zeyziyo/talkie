@@ -76,6 +76,7 @@
   "chatNew": "Nieuwe chat",
   "chatNewChat": "Nieuwe chat",
   "chatNoConversations": "Nog geen gesprekken",
+  "chatSearchHint": "Zoeken op chatnaam...",
   "chatSaveAndExit": "Opslaan en afsluiten",
   "chatStartNewPrompt": "Start een nieuw gesprek om te oefenen!",
   "chatTypeHint": "Typ een bericht...",

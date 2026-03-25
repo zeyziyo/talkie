@@ -139,7 +139,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get chatNoConversations => 'Hakuna mazungumzo bado';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Tafuta kwa jina la mazungumzo...';
 
   @override
   String get chatSaveAndExit => 'Hifadhi na Uondoke';

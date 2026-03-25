@@ -135,7 +135,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get chatNoConversations => '暂无对话';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => '通过聊天标题搜索...';
 
   @override
   String get chatSaveAndExit => '保存并退出';
@@ -1469,6 +1469,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get chatNoConversations => '还没有对话';
 
   @override
+  String get chatSearchHint => '通过对话标题搜索...';
+
+  @override
   String get chatSaveAndExit => '保存后退出';
 
   @override
@@ -2799,6 +2802,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get chatNoConversations => '還沒有對話';
+
+  @override
+  String get chatSearchHint => '以聊天室標題搜尋...';
 
   @override
   String get chatSaveAndExit => '儲存後結束';

@@ -140,7 +140,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get chatNoConversations => 'ఇంకా సంభాషణలు ఏమీ లేవు';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'సంభాషణ శీర్షిక ద్వారా వెతకండి...';
 
   @override
   String get chatSaveAndExit => 'సేవ్ చేసి నిష్క్రమించు';

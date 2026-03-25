@@ -76,6 +76,7 @@
   "chatNew": "Uus vestlus",
   "chatNewChat": "Uus vestlus",
   "chatNoConversations": "Vestlusi pole veel",
+  "chatSearchHint": "Otsi vestluse pealkirjaga...",
   "chatSaveAndExit": "Salvesta ja välju",
   "chatStartNewPrompt": "Proovige harjutamiseks uut vestlust alustada!",
   "chatTypeHint": "Sisesta sõnum...",

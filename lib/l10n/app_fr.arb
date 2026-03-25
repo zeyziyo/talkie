@@ -76,6 +76,7 @@
   "chatNew": "Nouvelle conversation",
   "chatNewChat": "Nouveau chat",
   "chatNoConversations": "Aucune conversation",
+  "chatSearchHint": "Rechercher par titre de conversation...",
   "chatSaveAndExit": "Enregistrer et quitter",
   "chatStartNewPrompt": "Commencez un chat pour vous entraîner !",
   "chatTypeHint": "Écrivez ici...",

@@ -141,7 +141,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get chatNoConversations => 'Nog geen gesprekken';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Zoeken op chatnaam...';
 
   @override
   String get chatSaveAndExit => 'Opslaan en afsluiten';

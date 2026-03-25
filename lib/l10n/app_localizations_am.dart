@@ -138,7 +138,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get chatNoConversations => 'ገና ምንም ንግግሮች የሉም';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'በውይይት ርዕስ ፈልግ...';
 
   @override
   String get chatSaveAndExit => 'አስቀምጥ እና ውጣ';

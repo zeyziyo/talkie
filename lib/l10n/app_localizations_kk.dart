@@ -140,7 +140,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get chatNoConversations => 'Әлі сөйлесулер жоқ';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Диалог тақырыбы бойынша іздеу...';
 
   @override
   String get chatSaveAndExit => 'Сақтап шығу';

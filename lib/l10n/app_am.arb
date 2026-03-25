@@ -76,6 +76,7 @@
   "chatNew": "አዲስ ውይይት",
   "chatNewChat": "አዲስ ውይይት",
   "chatNoConversations": "ገና ምንም ንግግሮች የሉም",
+  "chatSearchHint": "በውይይት ርዕስ ፈልግ...",
   "chatSaveAndExit": "አስቀምጥ እና ውጣ",
   "chatStartNewPrompt": "ለመለማመድ አዲስ ውይይት ይጀምሩ!",
   "chatTypeHint": "መልእክትህን አስገባ...",

@@ -140,7 +140,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get chatNoConversations => 'സംഭാഷണങ്ങളൊന്നും ലഭ്യമല്ല';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'സംഭാഷണ ശീർഷകം ഉപയോഗിച്ച് തിരയുക...';
 
   @override
   String get chatSaveAndExit => 'സംരക്ഷിച്ച് പുറത്തുകടക്കുക';

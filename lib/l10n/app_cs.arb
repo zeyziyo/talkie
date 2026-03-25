@@ -76,6 +76,7 @@
   "chatNew": "Nový chat",
   "chatNewChat": "Nový chat",
   "chatNoConversations": "Zatím žádné konverzace",
+  "chatSearchHint": "Hledat v názvech konverzací...",
   "chatSaveAndExit": "Uložit a ukončit",
   "chatStartNewPrompt": "Začněte nový dialog pro trénink!",
   "chatTypeHint": "Zadejte zprávu...",

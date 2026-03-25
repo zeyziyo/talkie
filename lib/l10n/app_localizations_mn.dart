@@ -140,7 +140,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get chatNoConversations => 'Одоогоор яриа байхгүй байна';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Чатны гарчигаар хайх...';
 
   @override
   String get chatSaveAndExit => 'Хадгалж гараад гарах';

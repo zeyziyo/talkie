@@ -76,6 +76,7 @@
   "chatNew": "محادثة جديدة",
   "chatNewChat": "دردشة جديدة",
   "chatNoConversations": "لا توجد محادثات حتى الآن",
+  "chatSearchHint": "ابحث عن طريق عنوان المحادثة...",
   "chatSaveAndExit": "حفظ وخروج",
   "chatStartNewPrompt": "ابدأ محادثة جديدة للتدريب!",
   "chatTypeHint": "اكتب رسالة...",

@@ -76,6 +76,7 @@
   "chatNew": "नवीन चॅट",
   "chatNewChat": "नवीन चॅट",
   "chatNoConversations": "अद्याप संभाषणे नाहीत",
+  "chatSearchHint": "चॅट शीर्षकानुसार शोधा...",
   "chatSaveAndExit": "जतन करा आणि बाहेर पडा",
   "chatStartNewPrompt": "सरावासाठी नवीन संभाषण सुरू करा!",
   "chatTypeHint": "संदेश प्रविष्ट करा...",

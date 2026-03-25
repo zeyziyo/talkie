@@ -140,7 +140,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get chatNoConversations => 'ಇನ್ನೂ ಯಾವುದೇ ಸಂಭಾಷಣೆಗಳಿಲ್ಲ';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'ಚಾಟ್ ಶೀರ್ಷಿಕೆಯ ಮೂಲಕ ಹುಡುಕಿ...';
 
   @override
   String get chatSaveAndExit => 'ಉಳಿಸಿ ಮತ್ತು ನಿರ್ಗಮಿಸಿ';

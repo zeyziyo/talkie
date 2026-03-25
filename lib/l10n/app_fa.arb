@@ -76,6 +76,7 @@
   "chatNew": "گفتگوی جدید",
   "chatNewChat": "گفتگوی جدید",
   "chatNoConversations": "هنوز هیچ گفتگویی وجود ندارد",
+  "chatSearchHint": "جستجو با عنوان گفتگو...",
   "chatSaveAndExit": "ذخیره و خروج",
   "chatStartNewPrompt": "برای تمرین یک گفتگوی جدید را شروع کنید!",
   "chatTypeHint": "پیام خود را وارد کنید...",

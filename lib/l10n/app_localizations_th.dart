@@ -139,7 +139,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get chatNoConversations => 'ยังไม่มีการสนทนา';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'ค้นหาจากชื่อการสนทนา...';
 
   @override
   String get chatSaveAndExit => 'บันทึกและออก';

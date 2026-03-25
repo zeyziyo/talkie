@@ -76,6 +76,7 @@
   "chatNew": "שיחה חדשה",
   "chatNewChat": "שיחה חדשה",
   "chatNoConversations": "עדיין אין שיחות",
+  "chatSearchHint": "חיפוש לפי שם צ'אט…",
   "chatSaveAndExit": "שמור וצא",
   "chatStartNewPrompt": "התחל שיחה חדשה כדי לתרגל!",
   "chatTypeHint": "הקלד הודעה...",

@@ -140,7 +140,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get chatNoConversations => 'Henüz bir sohbet yok';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Konuşma başlığına göre ara...';
 
   @override
   String get chatSaveAndExit => 'Kaydet ve Çık';

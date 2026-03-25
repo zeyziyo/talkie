@@ -140,7 +140,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get chatNoConversations => 'Hali suhbatlar yo\'q';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Suhbat sarlavhasi bo‘yicha qidiring...';
 
   @override
   String get chatSaveAndExit => 'Saqlash va chiqish';

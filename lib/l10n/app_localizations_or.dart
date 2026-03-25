@@ -141,7 +141,7 @@ class AppLocalizationsOr extends AppLocalizations {
       'ବର୍ତ୍ତମାନ ପର୍ଯ୍ୟନ୍ତ କୌଣସି କଥାବାର୍ତ୍ତା ନାହିଁ';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'ବାର୍ତ୍ତାଳାପ ଶୀର୍ଷକ ଦ୍ଵାରା ଖୋଜ...';
 
   @override
   String get chatSaveAndExit => 'ସେଭ୍ କରନ୍ତୁ ଏବଂ ବାହାରକୁ ଯାଆନ୍ତୁ';

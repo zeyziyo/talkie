@@ -139,7 +139,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String get chatNoConversations => 'ད་དུང་གླེང་མོ་མེད།';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'གླེང་མོལ་གྱི་མགོ་བརྗོད་ནས་འཚོལ་ཞིབ་...';
 
   @override
   String get chatSaveAndExit => 'ཉར་ཚགས་བྱས་རྗེས་ཕྱིར་འཐོན་པ།';

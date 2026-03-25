@@ -76,6 +76,7 @@
   "chatNew": "Yangi suhbat",
   "chatNewChat": "Yangi suhbat",
   "chatNoConversations": "Hali suhbatlar yo'q",
+  "chatSearchHint": "Suhbat sarlavhasi bo‘yicha qidiring...",
   "chatSaveAndExit": "Saqlash va chiqish",
   "chatStartNewPrompt": "Mashq qilish uchun yangi suhbatni boshlang!",
   "chatTypeHint": "Xabar kiriting...",

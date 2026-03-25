@@ -76,6 +76,7 @@
   "chatNew": "Novo bate-papo",
   "chatNewChat": "Novo chat",
   "chatNoConversations": "Sem conversas",
+  "chatSearchHint": "Pesquisar por título da conversa...",
   "chatSaveAndExit": "Salvar e Sair",
   "chatStartNewPrompt": "Comece um novo bate-papo para praticar!",
   "chatTypeHint": "Digite uma msg...",

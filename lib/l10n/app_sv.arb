@@ -76,6 +76,7 @@
   "chatNew": "Ny chatt",
   "chatNewChat": "Ny chatt",
   "chatNoConversations": "Inga konversationer ännu",
+  "chatSearchHint": "Sök efter konversationstitel...",
   "chatSaveAndExit": "Spara och avsluta",
   "chatStartNewPrompt": "Starta en ny konversation för att öva!",
   "chatTypeHint": "Skriv ett meddelande...",

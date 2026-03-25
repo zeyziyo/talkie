@@ -76,6 +76,7 @@
   "chatNew": "การสนทนาใหม่",
   "chatNewChat": "เริ่มแชทใหม่",
   "chatNoConversations": "ยังไม่มีการสนทนา",
+  "chatSearchHint": "ค้นหาจากชื่อการสนทนา...",
   "chatSaveAndExit": "บันทึกและออก",
   "chatStartNewPrompt": "ลองเริ่มการสนทนาใหม่เพื่อฝึกฝน!",
   "chatTypeHint": "พิมพ์ข้อความ...",

@@ -140,7 +140,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get chatNoConversations => 'अभी तक कोई बातचीत नहीं हुई है';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'चैट शीर्षक से खोजें...';
 
   @override
   String get chatSaveAndExit => 'सहेजें और बाहर निकलें';

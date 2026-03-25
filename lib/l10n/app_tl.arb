@@ -76,6 +76,7 @@
   "chatNew": "Bagong Pag-uusap",
   "chatNewChat": "Bagong Chat",
   "chatNoConversations": "Wala pang pag-uusap",
+  "chatSearchHint": "Maghanap sa pamamagitan ng pamagat ng chat...",
   "chatSaveAndExit": "I-save at Lumabas",
   "chatStartNewPrompt": "Subukang magsimula ng bagong pag-uusap para sa pagsasanay!",
   "chatTypeHint": "I-type ang mensahe...",

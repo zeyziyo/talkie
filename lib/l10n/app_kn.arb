@@ -76,6 +76,7 @@
   "chatNew": "ಹೊಸ ಚಾಟ್",
   "chatNewChat": "ಹೊಸ ಚಾಟ್",
   "chatNoConversations": "ಇನ್ನೂ ಯಾವುದೇ ಸಂಭಾಷಣೆಗಳಿಲ್ಲ",
+  "chatSearchHint": "ಚಾಟ್ ಶೀರ್ಷಿಕೆಯ ಮೂಲಕ ಹುಡುಕಿ...",
   "chatSaveAndExit": "ಉಳಿಸಿ ಮತ್ತು ನಿರ್ಗಮಿಸಿ",
   "chatStartNewPrompt": "ಅಭ್ಯಾಸ ಮಾಡಲು ಹೊಸ ಸಂಭಾಷಣೆಯನ್ನು ಪ್ರಾರಂಭಿಸಿ!",
   "chatTypeHint": "ಸಂದೇಶವನ್ನು ನಮೂದಿಸಿ...",

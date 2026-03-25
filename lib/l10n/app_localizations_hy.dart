@@ -140,7 +140,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get chatNoConversations => 'Դեռևս զրույցներ չկան';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Որոնել զրույցի վերնագրով...';
 
   @override
   String get chatSaveAndExit => 'Պահպանել և դուրս գալ';

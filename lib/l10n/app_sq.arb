@@ -76,6 +76,7 @@
   "chatNew": "Bisedë e re",
   "chatNewChat": "Bisedë e re",
   "chatNoConversations": "Ende nuk ka biseda",
+  "chatSearchHint": "Kërko sipas titullit të bisedës...",
   "chatSaveAndExit": "Ruaj dhe dil",
   "chatStartNewPrompt": "Fillo një bisedë të re për të praktikuar!",
   "chatTypeHint": "Shkruaj një mesazh...",

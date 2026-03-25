@@ -76,6 +76,7 @@
   "chatNew": "Nowy czat",
   "chatNewChat": "Nowy czat",
   "chatNoConversations": "Brak rozmów",
+  "chatSearchHint": "Szukaj po tytule czatu...",
   "chatSaveAndExit": "Zapisz i zakończ",
   "chatStartNewPrompt": "Rozpocznij nową rozmowę, aby ćwiczyć!",
   "chatTypeHint": "Wpisz wiadomość...",

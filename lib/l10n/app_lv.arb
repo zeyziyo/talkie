@@ -76,6 +76,7 @@
   "chatNew": "Jauna saruna",
   "chatNewChat": "Jauna saruna",
   "chatNoConversations": "Vēl nav sarunu",
+  "chatSearchHint": "Meklēt pēc tēmas nosaukuma...",
   "chatSaveAndExit": "Saglabāt un iziet",
   "chatStartNewPrompt": "Sāciet jaunu sarunu, lai praktizētu!",
   "chatTypeHint": "Ierakstiet ziņojumu...",

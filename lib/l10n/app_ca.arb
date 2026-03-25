@@ -76,6 +76,7 @@
   "chatNew": "Xat nou",
   "chatNewChat": "Xat nou",
   "chatNoConversations": "Encara no hi ha cap conversa",
+  "chatSearchHint": "Cerca pel títol de la conversa...",
   "chatSaveAndExit": "Desa i surt",
   "chatStartNewPrompt": "Comença una conversa nova per practicar!",
   "chatTypeHint": "Escriu un missatge...",

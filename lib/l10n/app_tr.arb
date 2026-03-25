@@ -76,6 +76,7 @@
   "chatNew": "Yeni Sohbet",
   "chatNewChat": "Yeni Sohbet",
   "chatNoConversations": "Henüz bir sohbet yok",
+  "chatSearchHint": "Konuşma başlığına göre ara...",
   "chatSaveAndExit": "Kaydet ve Çık",
   "chatStartNewPrompt": "Pratik yapmak için yeni bir sohbete başlayın!",
   "chatTypeHint": "Bir mesaj yazın...",

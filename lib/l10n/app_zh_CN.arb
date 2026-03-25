@@ -76,6 +76,7 @@
   "chatNew": "新对话",
   "chatNewChat": "新对话",
   "chatNoConversations": "还没有对话",
+  "chatSearchHint": "通过对话标题搜索...",
   "chatSaveAndExit": "保存后退出",
   "chatStartNewPrompt": "开始新的对话练习吧！",
   "chatTypeHint": "输入消息...",

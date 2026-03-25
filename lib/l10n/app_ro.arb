@@ -76,6 +76,7 @@
   "chatNew": "Conversație nouă",
   "chatNewChat": "Conversație nouă",
   "chatNoConversations": "Nu există conversații încă",
+  "chatSearchHint": "Caută după titlul conversației...",
   "chatSaveAndExit": "Salvează și ieși",
   "chatStartNewPrompt": "Începe o nouă conversație pentru a exersa!",
   "chatTypeHint": "Scrie un mesaj...",

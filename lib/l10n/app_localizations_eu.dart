@@ -140,7 +140,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get chatNoConversations => 'Oraindik ez dago elkarrizketarik';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Bilatu elkarrizketen izenburuak...';
 
   @override
   String get chatSaveAndExit => 'Gorde eta irten';

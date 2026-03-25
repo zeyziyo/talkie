@@ -140,7 +140,7 @@ class AppLocalizationsTl extends AppLocalizations {
   String get chatNoConversations => 'Wala pang pag-uusap';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Maghanap sa pamamagitan ng pamagat ng chat...';
 
   @override
   String get chatSaveAndExit => 'I-save at Lumabas';

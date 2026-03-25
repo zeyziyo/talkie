@@ -139,7 +139,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get chatNoConversations => 'Zatím žádné konverzace';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Hledat v názvech konverzací...';
 
   @override
   String get chatSaveAndExit => 'Uložit a ukončit';

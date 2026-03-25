@@ -76,6 +76,7 @@
   "chatNew": "Шинэ яриа",
   "chatNewChat": "Шинэ яриа",
   "chatNoConversations": "Одоогоор яриа байхгүй байна",
+  "chatSearchHint": "Чатны гарчигаар хайх...",
   "chatSaveAndExit": "Хадгалж гараад гарах",
   "chatStartNewPrompt": "Дадлага хийхийн тулд шинэ яриа эхлүүлээд үзээрэй!",
   "chatTypeHint": "Зурвас оруулна уу...",

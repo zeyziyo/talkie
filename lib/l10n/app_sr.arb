@@ -76,6 +76,7 @@
   "chatNew": "Нови разговор",
   "chatNewChat": "Нови разговор",
   "chatNoConversations": "Још нема разговора",
+  "chatSearchHint": "Претрага по наслову разговора...",
   "chatSaveAndExit": "Сачувај и изађи",
   "chatStartNewPrompt": "Започните нови разговор за вежбање!",
   "chatTypeHint": "Унесите поруку...",

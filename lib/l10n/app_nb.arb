@@ -76,6 +76,7 @@
   "chatNew": "Ny chat",
   "chatNewChat": "Ny chat",
   "chatNoConversations": "Ingen samtaler ennå",
+  "chatSearchHint": "Søk etter chattenavn...",
   "chatSaveAndExit": "Lagre og avslutt",
   "chatStartNewPrompt": "Start en ny samtale for å øve!",
   "chatTypeHint": "Skriv en melding...",

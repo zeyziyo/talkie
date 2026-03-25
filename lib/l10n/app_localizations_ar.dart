@@ -139,7 +139,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get chatNoConversations => 'لا توجد محادثات حتى الآن';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'ابحث عن طريق عنوان المحادثة...';
 
   @override
   String get chatSaveAndExit => 'حفظ وخروج';

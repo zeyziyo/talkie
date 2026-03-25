@@ -139,7 +139,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get chatNoConversations => 'এখনও কোনও কথোপকথন নেই';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'কথোপকথনের শিরোনাম দিয়ে খুঁজুন...';
 
   @override
   String get chatSaveAndExit => 'সংরক্ষণ করে শেষ করুন';

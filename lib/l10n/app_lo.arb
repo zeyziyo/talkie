@@ -76,6 +76,7 @@
   "chatNew": "ສົນທະນາໃໝ່",
   "chatNewChat": "ສົນທະນາໃໝ່",
   "chatNoConversations": "ຍັງບໍ່ມີການສົນທະນາ",
+  "chatSearchHint": "ຄົ້ນຫາຈາກຊື່ຫ້ອງສົນທະນາ...",
   "chatSaveAndExit": "ບັນທຶກແລ້ວອອກ",
   "chatStartNewPrompt": "ເລີ່ມຕົ້ນການສົນທະນາໃໝ່ສຳລັບການຝຶກຊ້ອມ!",
   "chatTypeHint": "ປ້ອນຂໍ້ຄວາມ...",

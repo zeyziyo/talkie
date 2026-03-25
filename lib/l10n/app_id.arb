@@ -76,6 +76,7 @@
   "chatNew": "Obrolan Baru",
   "chatNewChat": "Obrolan Baru",
   "chatNoConversations": "Belum ada percakapan",
+  "chatSearchHint": "Cari berdasarkan judul obrolan...",
   "chatSaveAndExit": "Simpan & Keluar",
   "chatStartNewPrompt": "Mulai percakapan baru untuk latihan!",
   "chatTypeHint": "Ketik pesan...",

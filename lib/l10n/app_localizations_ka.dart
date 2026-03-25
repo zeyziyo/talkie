@@ -141,7 +141,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get chatNoConversations => 'ჯერ საუბრები არ არის';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'ჩატების სათაურების ძიება...';
 
   @override
   String get chatSaveAndExit => 'შენახვა და გამოსვლა';

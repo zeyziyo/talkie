@@ -76,6 +76,7 @@
   "chatNew": "Új beszélgetés",
   "chatNewChat": "Új beszélgetés",
   "chatNoConversations": "Még nincsenek beszélgetések",
+  "chatSearchHint": "Keresés a beszélgetés címében...",
   "chatSaveAndExit": "Mentés és kilépés",
   "chatStartNewPrompt": "Kezdj egy új beszélgetést a gyakorláshoz!",
   "chatTypeHint": "Írd be az üzenetet...",

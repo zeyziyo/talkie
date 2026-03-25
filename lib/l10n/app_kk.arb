@@ -76,6 +76,7 @@
   "chatNew": "Жаңа сөйлесу",
   "chatNewChat": "Жаңа сөйлесу",
   "chatNoConversations": "Әлі сөйлесулер жоқ",
+  "chatSearchHint": "Диалог тақырыбы бойынша іздеу...",
   "chatSaveAndExit": "Сақтап шығу",
   "chatStartNewPrompt": "Жаттығу үшін жаңа сөйлесуді бастап көріңіз!",
   "chatTypeHint": "Хабарламаны енгізіңіз...",

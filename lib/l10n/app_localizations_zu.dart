@@ -141,7 +141,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get chatNoConversations => 'Azikho izingxoxo okwamanje';
 
   @override
-  String get chatSearchHint => '대화 제목으로 검색...';
+  String get chatSearchHint => 'Sesha ngesihloko sengxoxo...';
 
   @override
   String get chatSaveAndExit => 'Londoloza bese Uphuma';
