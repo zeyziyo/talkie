@@ -414,6 +414,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get helpTabModes => 'Објаснување на режимите';
 
   @override
+  String get helpTabQuickStart => 'Брз почеток';
+
+  @override
   String get helpTabTour => 'Пробај';
 
   @override
@@ -1393,4 +1396,25 @@ class AppLocalizationsMk extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Избраниот материјал не го поддржува моментално поставениот јазик за учење ($targetLang) и не може да се зачува локално. Дали сакате да испратите барање за превод?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Постави јазик';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Прво одреди ги својот јазик и јазикот за учење во Мени > Поставки за јазик.';
+
+  @override
+  String get quickStartStep2Title => '2. Основен тек';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Креирај своја картичка за учење по редоследот: Внеси (микрофон/тастатура) -> Преведи -> Зачувај.';
+
+  @override
+  String get quickStartStep3Title => '3. Користи режими';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Вежбај преку разговор и вежбај изговор директно гледајќи го текстот во табот за вежбање изговор.';
 }

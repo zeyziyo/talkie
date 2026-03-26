@@ -404,6 +404,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get helpTabModes => 'ስለ ሞዶች';
 
   @override
+  String get helpTabQuickStart => 'ፈጣን ጅምር';
+
+  @override
   String get helpTabTour => 'ተሞክሮ ያድርጉ';
 
   @override
@@ -1362,4 +1365,25 @@ class AppLocalizationsAm extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'የመረጡት መረጃ በአሁኑ ጊዜ የተዋቀረውን የጥናት ቋንቋን ($targetLang) ስለማይደግፍ በአካባቢው ማስቀመጥ አይቻልም። ትርጉም መጠየቅ ይፈልጋሉ?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. ቋንቋዎችን ያስተካክሉ';
+
+  @override
+  String get quickStartStep1Desc =>
+      'በምናሌ > ቋንቋ ቅንብሮች ውስጥ የእርስዎን ቋንቋ እና የሚማሩትን ቋንቋ መጀመሪያ ይምረጡ።';
+
+  @override
+  String get quickStartStep2Title => '2. መሰረታዊ ሂደት';
+
+  @override
+  String get quickStartStep2Desc =>
+      'የግል የትምህርት ካርድዎን ለመፍጠር ግቤት (ማይክ/ቁልፍ ሰሌዳ) -> ትርጉም -> አስቀምጥ የሚለውን ቅደም ተከተል ይከተሉ።';
+
+  @override
+  String get quickStartStep3Title => '3. ሁነታዎችን መጠቀም';
+
+  @override
+  String get quickStartStep3Desc =>
+      'በውይይት ይለማመዱ፣ የጽሑፍ ንግግር ልምምድ ትር ላይ ጽሑፉን ይመልከቱ እና ጮክ ብለው በማንበብ ይለማመዱ።';
 }

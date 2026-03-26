@@ -416,6 +416,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get helpTabModes => 'Moduri';
 
   @override
+  String get helpTabQuickStart => 'Începe rapid';
+
+  @override
   String get helpTabTour => 'Tur';
 
   @override
@@ -1390,4 +1393,25 @@ class AppLocalizationsRo extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Materialul selectat nu acceptă limba de studiu setată curent ($targetLang) și nu poate fi salvat local. Doriți să solicitați o traducere?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Setează limba';
+
+  @override
+  String get quickStartStep1Desc =>
+      'În Meniu > Setări limbă, specifică mai întâi limba ta și limba pe care o înveți.';
+
+  @override
+  String get quickStartStep2Title => '2. Fluxul de bază';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Creează-ți propriile carduri de studiu în ordinea: introducere (microfon/tastatură) -> traducere -> salvare.';
+
+  @override
+  String get quickStartStep3Title => '3. Utilizează modurile';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Exersează prin chat și exersează pronunția direct în fila de exersare a pronunției, uitându-te la text.';
 }

@@ -415,6 +415,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get helpTabModes => 'मोड';
 
   @override
+  String get helpTabQuickStart => 'क्विक स्टार्ट';
+
+  @override
   String get helpTabTour => 'टूर';
 
   @override
@@ -1388,4 +1391,25 @@ class AppLocalizationsHi extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'चुनी गई सामग्री वर्तमान में सेट की गई सीखने की भाषा ($targetLang) का समर्थन नहीं करती है, इसलिए इसे स्थानीय रूप से सहेजा नहीं जा सकता है। क्या आप अनुवाद का अनुरोध करना चाहेंगे?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. भाषा सेट करें';
+
+  @override
+  String get quickStartStep1Desc =>
+      'मेनू > भाषा सेटिंग में अपनी और सीखने की भाषा पहले सेट करें।';
+
+  @override
+  String get quickStartStep2Title => '2. बुनियादी तरीका';
+
+  @override
+  String get quickStartStep2Desc =>
+      'इनपुट (माइक्रोफ़ोन/कीबोर्ड) -> अनुवाद -> सेव क्रम में अपना लर्निंग कार्ड बनाएँ।';
+
+  @override
+  String get quickStartStep3Title => '3. मोड का उपयोग';
+
+  @override
+  String get quickStartStep3Desc =>
+      'चैट से अभ्यास करें, और उच्चारण अभ्यास टैब में टेक्स्ट देखकर सीधे उच्चारण करते हुए अभ्यास करें।';
 }

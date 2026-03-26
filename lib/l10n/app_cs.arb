@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI Chat: Procvičujte si praktické konverzace s personou v nabídce 'Chat' na spodní liště karet\n• Nastavení persony: Volně zadejte pohlaví, jméno a jazykový kód druhé strany\n• GPS situační hra: Doporučuje témata konverzace, která jsou vhodná pro dané místo, rozpoznáním vaší aktuální polohy\n• Dva jazyky: Odpověď AI se zobrazuje s překladem, čímž se maximalizuje efekt učení\n• Správa záznamů: Filtrování minulých konverzací a ukládání konkrétních zpráv z konverzace jako studijních materiálů",
   "helpTabJson": "Formát JSON",
   "helpTabModes": "Režimy",
+  "helpTabQuickStart": "Rychlý start",
   "helpTabTour": "Prohlídka",
   "helpTitle": "Nápověda a Průvodce",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Nastavení jazyků",
+  "quickStartStep1Desc": "Nejprve nastavte svůj jazyk a jazyk, který se chcete učit, v nabídce > Nastavení jazyka.",
+  "quickStartStep2Title": "2. Základní postup",
+  "quickStartStep2Desc": "Vytvořte si vlastní studijní karty v pořadí: vstup (mikrofon/klávesnice) -> překlad -> uložení.",
+  "quickStartStep3Title": "3. Využití režimů",
+  "quickStartStep3Desc": "Procvičujte si v chatu a trénujte výslovnost přímo sledováním textu na kartě Procvičování výslovnosti."
 }

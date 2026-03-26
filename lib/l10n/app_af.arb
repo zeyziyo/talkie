@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• KI-gesels: Oefen werklike gesprekke met personas in die 'Gesels'-kieslys op die onderste oortjiebalk\n• Persona-instellings: Spesifiseer die ander persoon se geslag, naam en taalkode vrylik\n• GPS-situasiespel: Herken my huidige ligging en beveel gespreksonderwerpe aan wat by die plek pas\n• 2 tale: KI se antwoorde word saam met vertalings vertoon om die leereffek te maksimeer\n• Rekordbestuur: Filter vorige gespreksgeskiedenis en stoor spesifieke boodskappe tydens gesprekke as leermateriaal",
   "helpTabJson": "JSON Formaat",
   "helpTabModes": "Modusse",
+  "helpTabQuickStart": "Vinnige Begin",
   "helpTabTour": "Toer",
   "helpTitle": "Hulp & Gids",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Stel Taal",
+  "quickStartStep1Desc": "Kies eers jou taal en die taal wat jy leer onder Kieslys > Taalinstellings.",
+  "quickStartStep2Title": "2. Basiese Vloei",
+  "quickStartStep2Desc": "Skep jou eie leerkaarte in die volgorde van invoer (mikrofoon/sleutelbord) -> vertaling -> stoor.",
+  "quickStartStep3Title": "3. Gebruik Modusse",
+  "quickStartStep3Desc": "Oefen met klets, en oefen uitspraak direk terwyl jy die teks in die Uitspraakoefening-oortjie bekyk."
 }

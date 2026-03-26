@@ -412,6 +412,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get helpTabModes => 'Chế độ';
 
   @override
+  String get helpTabQuickStart => 'Bắt đầu nhanh';
+
+  @override
   String get helpTabTour => 'Hướng dẫn';
 
   @override
@@ -1376,4 +1379,25 @@ class AppLocalizationsVi extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Tài liệu bạn chọn hiện không hỗ trợ ngôn ngữ học tập đã đặt ($targetLang) nên không thể lưu cục bộ. Bạn có muốn yêu cầu dịch không?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Cài đặt ngôn ngữ';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Trong Menu > Cài đặt ngôn ngữ, hãy chỉ định ngôn ngữ của bạn và ngôn ngữ bạn muốn học trước.';
+
+  @override
+  String get quickStartStep2Title => '2. Luồng cơ bản';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Tạo thẻ học tập của riêng bạn theo thứ tự: Nhập (micrô/bàn phím) -> Dịch -> Lưu.';
+
+  @override
+  String get quickStartStep3Title => '3. Sử dụng các chế độ';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Luyện tập bằng cách trò chuyện và luyện phát âm trực tiếp bằng cách xem văn bản trong tab Luyện phát âm.';
 }

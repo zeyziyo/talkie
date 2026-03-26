@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Süni intellekt söhbəti: Aşağıdakı tab paneli menyusundakı 'Söhbət' menyusunda şəxsiyyətinizlə real söhbət təcrübəsi\n• Şəxsiyyət tənzimləməsi: Qarşı tərəfin cinsiyyətini, adını və dil kodunu sərbəst şəkildə təyin edin\n• GPS vəziyyət oyunu: Cari yerinizi tanıyaraq yerə uyğun söhbət mövzularını tövsiyə edin\n• İkidilli: Süni intellektin cavabı tərcümə ilə birlikdə göstərilir və öyrənmə effektini maksimuma çatdırır\n• Qeyd idarəetmə: Keçmiş söhbət tarixçəsini filtrləmə və söhbət zamanı müəyyən mesajları öyrənmə materialı kimi saxlama",
   "helpTabJson": "JSON Formatı",
   "helpTabModes": "Rejim Açıqlaması",
+  "helpTabQuickStart": "Tez Başla",
   "helpTabTour": "Sınaqdan Keç",
   "helpTitle": "Kömək & Bələdçi",
   "helpTourDesc": "**Vurğulanan dairə** əsas funksiyaları göstərir.\n(Məsələn, **vurğulanan dairənin** göstərdiyi kartı silmək üçün uzun müddət basın.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Dili təyin edin",
+  "quickStartStep1Desc": "Menyu > Dil Parametrləri bölməsində əvvəlcə öz dilinizi və öyrənmək istədiyiniz dili seçin.",
+  "quickStartStep2Title": "2. Əsas axın",
+  "quickStartStep2Desc": "Öz təlim kartlarınızı yaratmaq üçün: Giriş (mikrofon/klaviatura) -> Tərcümə -> Saxla sırasını izləyin.",
+  "quickStartStep3Title": "3. Rejimlərdən istifadə edin",
+  "quickStartStep3Desc": "Çatda məşq edin və Tələffüz Məşqi tabında mətni oxuyaraq özünüz tələffüz etməklə məşq edin."
 }

@@ -412,6 +412,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get helpTabModes => 'Módok';
 
   @override
+  String get helpTabQuickStart => 'Gyors kezdés';
+
+  @override
   String get helpTabTour => 'Túra';
 
   @override
@@ -1385,4 +1388,25 @@ class AppLocalizationsHu extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'A kiválasztott anyag nem támogatja a jelenleg beállított tanulási nyelvet ($targetLang), ezért nem lehet helyben tárolni. Szeretné kérni a fordítást?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Nyelv beállítása';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Először állítsa be a saját és a tanulni kívánt nyelvet a Menü > Nyelv beállítások menüpontban.';
+
+  @override
+  String get quickStartStep2Title => '2. Alapvető folyamat';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Készítsen saját tanulókártyákat a következő sorrendben: bevitel (mikrofon/billentyűzet) -> fordítás -> mentés.';
+
+  @override
+  String get quickStartStep3Title => '3. Módok használata';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Gyakoroljon chaten, és gyakorolja a kiejtést a Kiejtés gyakorlása fülön a szöveg elolvasásával és a saját kiejtésével.';
 }

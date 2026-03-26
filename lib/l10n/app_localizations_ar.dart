@@ -408,6 +408,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get helpTabModes => 'أوضاع';
 
   @override
+  String get helpTabQuickStart => 'بداية سريعة';
+
+  @override
   String get helpTabTour => 'جولة';
 
   @override
@@ -1372,4 +1375,25 @@ class AppLocalizationsAr extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'المادة التي اخترتها لا تدعم لغة الدراسة المحددة حاليًا ($targetLang) ولا يمكن حفظها محليًا. هل ترغب في طلب ترجمة؟';
   }
+
+  @override
+  String get quickStartStep1Title => '1. إعداد اللغة';
+
+  @override
+  String get quickStartStep1Desc =>
+      'حدد لغتك ولغة التعلم أولاً في القائمة > إعدادات اللغة.';
+
+  @override
+  String get quickStartStep2Title => '2. التدفق الأساسي';
+
+  @override
+  String get quickStartStep2Desc =>
+      'أنشئ بطاقات التعلم الخاصة بك بترتيب الإدخال (ميكروفون/لوحة المفاتيح) -> الترجمة -> الحفظ.';
+
+  @override
+  String get quickStartStep3Title => '3. استخدام الوضع';
+
+  @override
+  String get quickStartStep3Desc =>
+      'تدرب بالمحادثة، وشاهد النص في علامة تبويب ممارسة النطق وتدرب على النطق مباشرة.';
 }

@@ -414,6 +414,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get helpTabModes => 'Rejim Açıqlaması';
 
   @override
+  String get helpTabQuickStart => 'Tez Başla';
+
+  @override
   String get helpTabTour => 'Sınaqdan Keç';
 
   @override
@@ -1389,4 +1392,25 @@ class AppLocalizationsAz extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Seçdiyiniz material hal-hazırda təyin edilmiş öyrənmə dilinizi ($targetLang) dəstəkləmir və yerli olaraq saxlanıla bilməz. Tərcümə tələb etmək istəyirsiniz?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Dili təyin edin';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Menyu > Dil Parametrləri bölməsində əvvəlcə öz dilinizi və öyrənmək istədiyiniz dili seçin.';
+
+  @override
+  String get quickStartStep2Title => '2. Əsas axın';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Öz təlim kartlarınızı yaratmaq üçün: Giriş (mikrofon/klaviatura) -> Tərcümə -> Saxla sırasını izləyin.';
+
+  @override
+  String get quickStartStep3Title => '3. Rejimlərdən istifadə edin';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Çatda məşq edin və Tələffüz Məşqi tabında mətni oxuyaraq özünüz tələffüz etməklə məşq edin.';
 }

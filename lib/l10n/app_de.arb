@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• KI-Chat: Übe echte Gespräche mit Personas im Menü 'Chat' in der unteren Tab-Leiste.\n• Persona-Einstellungen: Lege Geschlecht, Name und Sprachcode der anderen Person frei fest.\n• GPS-Rollenspiel: Erkennt deinen aktuellen Standort und empfiehlt Gesprächsthemen, die zum Ort passen.\n• Zweisprachig: Die Antwort der KI wird zusammen mit der Übersetzung angezeigt, um den Lerneffekt zu maximieren.\n• Verlaufsverwaltung: Filtern des bisherigen Gesprächsverlaufs und Speichern bestimmter Nachrichten aus dem Gespräch als Lernmaterial.",
   "helpTabJson": "JSON-Format",
   "helpTabModes": "Modi",
+  "helpTabQuickStart": "Schnellstart",
   "helpTabTour": "Tour starten",
   "helpTitle": "Hilfe & Anleitung",
   "helpTourDesc": "Der **Hervorhebungs-Kreis** führt Sie durch die Hauptfunktionen.\n(z. B. können Sie einen Eintrag löschen, indem Sie lange drücken, wenn der **Hervorhebungs-Kreis** darauf zeigt.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Spracheinstellungen",
+  "quickStartStep1Desc": "Wähle zuerst deine Sprache und Lernsprache unter Menü > Spracheinstellungen.",
+  "quickStartStep2Title": "2. Grundlegender Ablauf",
+  "quickStartStep2Desc": "Erstelle deine eigenen Lernkarten in der Reihenfolge Eingabe (Mikrofon/Tastatur) -> Übersetzung -> Speichern.",
+  "quickStartStep3Title": "3. Modusnutzung",
+  "quickStartStep3Desc": "Übe im Chat, und übe die Aussprache direkt, indem du den Text auf der Registerkarte \"Ausspracheübung\" ansiehst."
 }

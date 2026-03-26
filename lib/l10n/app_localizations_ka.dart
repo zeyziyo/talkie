@@ -414,6 +414,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get helpTabModes => 'რეჟიმების აღწერა';
 
   @override
+  String get helpTabQuickStart => 'სწრაფი დაწყება';
+
+  @override
   String get helpTabTour => 'დემო';
 
   @override
@@ -1389,4 +1392,25 @@ class AppLocalizationsKa extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'თქვენს მიერ არჩეული მასალა ამჟამად არ უჭერს მხარს სასწავლო ენას ($targetLang) და მისი ლოკალურად შენახვა შეუძლებელია. გსურთ თარგმნის მოთხოვნა?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. ენის დაყენება';
+
+  @override
+  String get quickStartStep1Desc =>
+      'მენიუ > ენის დაყენება-ში, ჯერ მიუთითეთ თქვენი და სასწავლო ენები.';
+
+  @override
+  String get quickStartStep2Title => '2. ძირითადი ნაკადი';
+
+  @override
+  String get quickStartStep2Desc =>
+      'შექმენით თქვენი სასწავლო ბარათები შეყვანის (მიკროფონი/კლავიატურა) -> თარგმანი -> შენახვა თანმიმდევრობით.';
+
+  @override
+  String get quickStartStep3Title => '3. რეჟიმების გამოყენება';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ივარჯიშეთ ჩეთში და ივარჯიშეთ გამოთქმაზე გამოთქმის სავარჯიშო ჩანართში ტექსტის ყურებით და პირდაპირ გამოთქმით.';
 }

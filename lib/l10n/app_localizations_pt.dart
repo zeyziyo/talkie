@@ -418,6 +418,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get helpTabModes => 'Modos';
 
   @override
+  String get helpTabQuickStart => 'Início Rápido';
+
+  @override
   String get helpTabTour => 'Fazer um tour';
 
   @override
@@ -1393,4 +1396,25 @@ class AppLocalizationsPt extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'O material selecionado não oferece suporte ao idioma de estudo definido ($targetLang) e não pode ser salvo localmente. Deseja solicitar uma tradução?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Configurar Idiomas';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Primeiro, defina seu idioma e o idioma de aprendizado em Menu > Configurações de idioma.';
+
+  @override
+  String get quickStartStep2Title => '2. Fluxo Básico';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Crie seus próprios cartões de estudo na ordem: entrada (microfone/teclado) -> tradução -> salvar.';
+
+  @override
+  String get quickStartStep3Title => '3. Utilize os Modos';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Pratique com o bate-papo e pratique a pronúncia diretamente na aba de prática de pronúncia.';
 }

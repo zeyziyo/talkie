@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI chat: Gyakorold a valós beszélgetéseket a személyiséggel a 'Chat' menüben az alsó lapon\n• Személyiség beállítása: Szabadon megadhatod a másik fél nemét, nevét és nyelvkódját\n• GPS helyzetjáték: A jelenlegi helyzeted felismerése, hogy a helynek megfelelő beszélgetési témákat ajánljon\n• Kétnyelvű: Az AI válaszai fordítással együtt jelennek meg a maximális tanulási hatékonyság érdekében\n• Előzmények kezelése: A korábbi beszélgetések szűrése és a beszélgetés során a bizonyos üzenetek mentése tananyagként",
   "helpTabJson": "JSON Formátum",
   "helpTabModes": "Módok",
+  "helpTabQuickStart": "Gyors kezdés",
   "helpTabTour": "Túra",
   "helpTitle": "Segítség és Útmutató",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Nyelv beállítása",
+  "quickStartStep1Desc": "Először állítsa be a saját és a tanulni kívánt nyelvet a Menü > Nyelv beállítások menüpontban.",
+  "quickStartStep2Title": "2. Alapvető folyamat",
+  "quickStartStep2Desc": "Készítsen saját tanulókártyákat a következő sorrendben: bevitel (mikrofon/billentyűzet) -> fordítás -> mentés.",
+  "quickStartStep3Title": "3. Módok használata",
+  "quickStartStep3Desc": "Gyakoroljon chaten, és gyakorolja a kiejtést a Kiejtés gyakorlása fülön a szöveg elolvasásával és a saját kiejtésével."
 }

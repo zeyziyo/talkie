@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI Sohbeti: Alt sekme çubuğundaki 'Sohbet' menüsünden persona ile pratik konuşma alıştırması yapın\n• Persona Ayarları: Karşı tarafın cinsiyetini, adını ve dil kodunu serbestçe belirtin\n• GPS Rol Yapma: Mevcut konumunuzu tanıyarak mekana uygun konuşma konuları önerir\n• İki Dil: AI'nın yanıtı çeviri ile birlikte görüntülenerek öğrenme etkisi en üst düzeye çıkarılır\n• Kayıt Yönetimi: Geçmiş konuşma geçmişini filtreleyin ve konuşma sırasında belirli mesajları öğrenme materyali olarak kaydedin",
   "helpTabJson": "JSON Formatı",
   "helpTabModes": "Modlar",
+  "helpTabQuickStart": "Hızlı Başlangıç",
   "helpTabTour": "Tur",
   "helpTitle": "Yardım & Rehber",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Dil Ayarları",
+  "quickStartStep1Desc": "Menü > Dil Ayarları'ndan önce kendi dilinizi ve öğrenmek istediğiniz dili belirtin.",
+  "quickStartStep2Title": "2. Temel Akış",
+  "quickStartStep2Desc": "Girdi (mikrofon/klavye) -> Çeviri -> Kaydet sırasıyla kendi öğrenme kartlarınızı oluşturun.",
+  "quickStartStep3Title": "3. Modları Kullanma",
+  "quickStartStep3Desc": "Sohbet ederek pratik yapın ve Telaffuz Pratiği sekmesinde metni görerek doğrudan telaffuz ederek pratik yapın."
 }

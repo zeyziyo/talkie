@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Trò chuyện AI: Thực hành trò chuyện thực tế với một nhân vật trong menu 'Trò chuyện' trên thanh tab ở dưới cùng\n• Cài đặt nhân vật: Tự do chỉ định giới tính, tên và mã ngôn ngữ của đối phương\n• Tình huống GPS: Nhận biết vị trí hiện tại của bạn và đề xuất các chủ đề trò chuyện phù hợp với địa điểm\n• Hai ngôn ngữ: Câu trả lời của AI được hiển thị cùng với bản dịch để tối đa hóa hiệu quả học tập\n• Quản lý lịch sử: Lọc lịch sử trò chuyện trước đây và lưu các tin nhắn cụ thể trong cuộc trò chuyện dưới dạng tài liệu học tập",
   "helpTabJson": "Định dạng JSON",
   "helpTabModes": "Chế độ",
+  "helpTabQuickStart": "Bắt đầu nhanh",
   "helpTabTour": "Hướng dẫn",
   "helpTitle": "Trợ giúp & Hướng dẫn",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Cài đặt ngôn ngữ",
+  "quickStartStep1Desc": "Trong Menu > Cài đặt ngôn ngữ, hãy chỉ định ngôn ngữ của bạn và ngôn ngữ bạn muốn học trước.",
+  "quickStartStep2Title": "2. Luồng cơ bản",
+  "quickStartStep2Desc": "Tạo thẻ học tập của riêng bạn theo thứ tự: Nhập (micrô/bàn phím) -> Dịch -> Lưu.",
+  "quickStartStep3Title": "3. Sử dụng các chế độ",
+  "quickStartStep3Desc": "Luyện tập bằng cách trò chuyện và luyện phát âm trực tiếp bằng cách xem văn bản trong tab Luyện phát âm."
 }

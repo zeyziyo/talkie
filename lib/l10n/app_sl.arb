@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI Klepet: Vadite pogovore s personami v meniju 'Klepet' na spodnji vrstici zavihkov\n• Nastavitev persone: Prosto določite spol, ime in jezikovno kodo sogovornika\n• GPS Situacijska igra: Prepoznavanje vaše trenutne lokacije in priporočanje tem pogovorov, ki ustrezajo lokaciji\n• Dva jezika: Odgovori AI so prikazani skupaj s prevodom, kar povečuje učinkovitost učenja\n• Upravljanje zgodovine: Filtriranje preteklih pogovorov in shranjevanje določenih sporočil med pogovorom kot učnega gradiva",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Razlaga načinov",
+  "helpTabQuickStart": "Hiteri začetek",
   "helpTabTour": "Vodeni ogled",
   "helpTitle": "Pomoč in vodniki",
   "helpTourDesc": "**Poudarjeni krogi** vas vodijo skozi ključne funkcije.\n(Primer: **Poudarjeni krog**, ki kaže na kartico, lahko izbrišete z dolgim pritiskom.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Izbira jezika",
+  "quickStartStep1Desc": "V meniju > Nastavitve jezika najprej izberite svoj jezik in jezik učenja.",
+  "quickStartStep2Title": "2. Osnovni postopek",
+  "quickStartStep2Desc": "Ustvarite lastne učne kartice v naslednjem vrstnem redu: vnos (mikrofon/tipkovnica) -> prevod -> shranjevanje.",
+  "quickStartStep3Title": "3. Uporaba načinov",
+  "quickStartStep3Desc": "Vadite s klepetom in vadite izgovorjavo neposredno z ogledom besedila na zavihku za vadbo izgovorjave."
 }

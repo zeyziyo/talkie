@@ -411,6 +411,9 @@ class AppLocalizationsBs extends AppLocalizations {
   String get helpTabModes => 'Objašnjenje načina rada';
 
   @override
+  String get helpTabQuickStart => 'Brzi početak';
+
+  @override
   String get helpTabTour => 'Probajte';
 
   @override
@@ -1385,4 +1388,25 @@ class AppLocalizationsBs extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Odabrani materijal ne podržava trenutno postavljeni jezik učenja ($targetLang) i ne može se pohraniti lokalno. Želite li zatražiti prijevod?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Postavljanje jezika';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Prvo odaberite svoj jezik i jezik za učenje u Izbornik > Postavke jezika.';
+
+  @override
+  String get quickStartStep2Title => '2. Osnovni tok';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Kreirajte vlastite kartice za učenje redoslijedom Unos (mikrofon/tipkovnica) -> Prijevod -> Spremanje.';
+
+  @override
+  String get quickStartStep3Title => '3. Korištenje načina rada';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Vježbajte putem chata i vježbajte izgovor izravno gledajući tekst u kartici Vježba izgovora.';
 }

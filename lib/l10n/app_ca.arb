@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Xat amb IA: Practica converses reals amb una persona al menú 'Xat' a la barra de pestanyes inferior.\n• Configuració de la persona: Especifica lliurement el gènere, el nom i el codi d'idioma de l'interlocutor.\n• Situació de joc de rol GPS: Reconeix la teva ubicació actual i recomana temes de conversa adequats per al lloc.\n• 2 idiomes: La resposta de la IA es mostra amb la traducció per maximitzar l'efecte d'aprenentatge.\n• Gestió de l'historial: Filtra l'historial de converses passades i desa missatges específics de la conversa com a material d'aprenentatge",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Descripció dels modes",
+  "helpTabQuickStart": "Inici ràpid",
   "helpTabTour": "Fer un recorregut",
   "helpTitle": "Ajuda i guia",
   "helpTourDesc": "El **cercle de ressalt** et guiarà per les funcions principals.\n(Per exemple: pots suprimir les targetes mantenint premuda la targeta que indica el **cercle de ressalt**).",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Configura l'idioma",
+  "quickStartStep1Desc": "Primer, especifica el teu idioma i l'idioma que vols aprendre a Menú > Configuració d'idioma.",
+  "quickStartStep2Title": "2. Flux bàsic",
+  "quickStartStep2Desc": "Crea les teves pròpies targetes d'aprenentatge seguint l'ordre: entrada (micròfon/teclat) -> traducció -> desar.",
+  "quickStartStep3Title": "3. Utilitza els modes",
+  "quickStartStep3Desc": "Practica xerrant i practica la pronunciació directament a la pestanya d'exercicis de pronunciació."
 }

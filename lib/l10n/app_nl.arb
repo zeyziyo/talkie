@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI-chat: oefen praktische gesprekken met persona's in het 'Chat'-menu op de onderste tabbladbalk\n• Persona-instellingen: specificeer vrijelijk het geslacht, de naam en de taalcode van de andere partij\n• GPS-situatiespel: herkent mijn huidige locatie en beveelt gespreksonderwerpen aan die passen bij de locatie\n• Tweetalig: de antwoorden van de AI worden weergegeven met vertalingen om het leereffect te maximaliseren\n• Recordbeheer: filter de geschiedenis van eerdere gesprekken en sla specifieke berichten tijdens het gesprek op als leermateriaal",
   "helpTabJson": "JSON Formaat",
   "helpTabModes": "Modi",
+  "helpTabQuickStart": "Snel aan de slag",
   "helpTabTour": "Rondleiding",
   "helpTitle": "Hulp & Gids",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Stel de taal in",
+  "quickStartStep1Desc": "Stel eerst uw taal en de taal die u wilt leren in via Menu > Taalinstellingen.",
+  "quickStartStep2Title": "2. Basisworkflow",
+  "quickStartStep2Desc": "Maak uw eigen leerkaarten in de volgorde: invoer (microfoon/toetsenbord) -> vertaling -> opslaan.",
+  "quickStartStep3Title": "3. Gebruik de modi",
+  "quickStartStep3Desc": "Oefen met chatten en oefen uw uitspraak door de tekst te bekijken en zelf uit te spreken in het tabblad Oefen uitspraak."
 }

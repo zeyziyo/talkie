@@ -416,6 +416,9 @@ class AppLocalizationsPa extends AppLocalizations {
   String get helpTabModes => 'ਮੋਡ';
 
   @override
+  String get helpTabQuickStart => 'ਤੁਰੰਤ ਸ਼ੁਰੂਆਤ';
+
+  @override
   String get helpTabTour => 'ਟੂਰ';
 
   @override
@@ -1382,4 +1385,25 @@ class AppLocalizationsPa extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'ਚੁਣੀ ਗਈ ਸਮੱਗਰੀ ਵਰਤਮਾਨ ਸਿੱਖਣ ਦੀ ਭਾਸ਼ਾ ($targetLang) ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ ਹੈ, ਇਸਲਈ ਇਸਨੂੰ ਸਥਾਨਕ ਤੌਰ \'ਤੇ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਕੀ ਤੁਸੀਂ ਅਨੁਵਾਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. ਭਾਸ਼ਾ ਸੈਟਿੰਗ';
+
+  @override
+  String get quickStartStep1Desc =>
+      'ਮੇਨੂ > ਭਾਸ਼ਾ ਸੈਟਿੰਗ ਵਿੱਚੋਂ ਪਹਿਲਾਂ ਆਪਣੀ ਅਤੇ ਸਿੱਖਣ ਵਾਲੀ ਭਾਸ਼ਾ ਨਿਸ਼ਚਿਤ ਕਰੋ।';
+
+  @override
+  String get quickStartStep2Title => '2. ਮੁਢਲੀ ਪ੍ਰਕਿਰਿਆ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ਇਨਪੁਟ (ਮਾਈਕ੍ਰੋਫ਼ੋਨ/ਕੀਬੋਰਡ) -> ਅਨੁਵਾਦ -> ਸੇਵ ਕ੍ਰਮ ਵਿੱਚ ਆਪਣੇ ਸਿੱਖਣ ਵਾਲੇ ਕਾਰਡ ਬਣਾਓ।';
+
+  @override
+  String get quickStartStep3Title => '3. ਮੋਡ ਦੀ ਵਰਤੋਂ ਕਰੋ';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ਚੈਟ ਨਾਲ ਅਭਿਆਸ ਕਰੋ, ਅਤੇ ਉਚਾਰਨ ਅਭਿਆਸ ਟੈਬ ਵਿੱਚ ਟੈਕਸਟ ਦੇਖ ਕੇ ਸਿੱਧਾ ਉਚਾਰਨ ਕਰਨ ਦਾ ਅਭਿਆਸ ਕਰੋ।';
 }

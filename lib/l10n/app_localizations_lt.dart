@@ -414,6 +414,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get helpTabModes => 'Režimų paaiškinimas';
 
   @override
+  String get helpTabQuickStart => 'Greita pradžia';
+
+  @override
   String get helpTabTour => 'Apžiūrėti';
 
   @override
@@ -1389,4 +1392,25 @@ class AppLocalizationsLt extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Pasirinkta medžiaga nepalaiko šiuo metu nustatytos mokymosi kalbos ($targetLang), todėl negalima jos išsaugoti lokaliai. Ar norite prašyti vertimo?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Kalbos nustatymai';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Pirmiausia nustatykite savo ir mokymosi kalbas meniu > Kalbos nustatymai.';
+
+  @override
+  String get quickStartStep2Title => '2. Pagrindinis procesas';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Sukurkite savo mokymosi korteles tokia tvarka: įvestis (mikrofonas / klaviatūra) -> vertimas -> išsaugojimas.';
+
+  @override
+  String get quickStartStep3Title => '3. Režimų naudojimas';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Praktikuokitės per pokalbį, o skirtuke „Tarimo praktika“ skaitykite tekstą ir praktikuokite tartį patys.';
 }

@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI Chat: Pastki tab bardagi 'Chat' menyusida personaj bilan amaliy suhbat mashq qiling\n• Personaj sozlamalari: Qarshi tomonning jinsi, ismi, til kodini erkin belgilang\n• GPS ssenariysi: Hozirgi joylashuvingizni aniqlab, joyga mos suhbat mavzularini tavsiya etadi\n• 2 til: AI javoblari tarjima bilan birga ko'rsatiladi, bu esa o'rganish samaradorligini maksimal darajaga yetkazadi\n• Yozuvlarni boshqarish: O'tgan suhbatlar tarixini filtrlash va suhbat davomida ma'lum xabarlarni o'quv materiali sifatida saqlash",
   "helpTabJson": "JSON formati",
   "helpTabModes": "Rejimlar haqida ma'lumot",
+  "helpTabQuickStart": "Tezkor Boshlash",
   "helpTabTour": "Namuna",
   "helpTitle": "Yordam & Qo'llanma",
   "helpTourDesc": "**Ta'kidlangan doira** asosiy funktsiyalarni ko'rsatadi.\n(Masalan: **Ta'kidlangan doira** ko'rsatgan kartani uzoq bosib o'chirish mumkin.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Tilni sozlang",
+  "quickStartStep1Desc": "Menyu > Til sozlamalaridan o'z tilingizni va o'rganish tilini belgilang.",
+  "quickStartStep2Title": "2. Asosiy jarayon",
+  "quickStartStep2Desc": "Kiritish (mikrofon/klaviatura) -> Tarjima -> Saqlash tartibida o'zingizning o'quv kartochkalaringizni yarating.",
+  "quickStartStep3Title": "3. Rejimdan foydalanish",
+  "quickStartStep3Desc": "Chatda mashq qiling va Talaffuz mashqlari yorlig'ida matnni ko'rib, to'g'ridan-to'g'ri talaffuz qilib mashq qiling."
 }

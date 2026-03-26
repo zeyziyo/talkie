@@ -413,6 +413,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get helpTabModes => 'Tryby';
 
   @override
+  String get helpTabQuickStart => 'Szybki start';
+
+  @override
   String get helpTabTour => 'Wycieczka';
 
   @override
@@ -1384,4 +1387,25 @@ class AppLocalizationsPl extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Wybrane materiały nie są obsługiwane w ustawionym języku nauki ($targetLang), więc nie można ich zapisać lokalnie. Czy chcesz poprosić o tłumaczenie?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Ustaw język';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Najpierw ustaw swój język i język nauki w Menu > Ustawienia języka.';
+
+  @override
+  String get quickStartStep2Title => '2. Podstawowy tok pracy';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Twórz własne karty do nauki w kolejności: wprowadź (mikrofon/klawiatura) -> przetłumacz -> zapisz.';
+
+  @override
+  String get quickStartStep3Title => '3. Wykorzystaj tryby';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Ćwicz na czacie i ćwicz wymowę, patrząc na tekst w zakładce Ćwiczenia wymowy.';
 }

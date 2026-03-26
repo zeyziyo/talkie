@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Ingxoxo ye-AI: Zijwayeze ingxoxo yangempela nomuntu ku-'Chat' kumathebhu angezansi\n• Izilungiselelo Zomuntu: Cacisa ngokukhululekile ubulili, igama, kanye nekhodi yolimi lomunye umuntu\n• Idrama yesimo se-GPS: Thola indawo yakho yamanje futhi uncoma izihloko zengxoxo ezifanele indawo\n• Izilimi ezi-2: Izimpendulo ze-AI ziboniswa ngokuhumusha ukukhulisa umphumela wokufunda\n• Ukuphathwa Kwerekhodi: Hlunga umlando wezingxoxo ezedlule bese ugcina imilayezo ethile ezingxoxweni njengezinto zokufunda",
   "helpTabJson": "Ifomethi ye-JSON",
   "helpTabModes": "Incazelo Yezindlela",
+  "helpTabQuickStart": "Ukuqalisa Ngokushesha",
   "helpTabTour": "Zithokozise",
   "helpTitle": "Usizo & Umhlahlandlela",
   "helpTourDesc": "**Umbuthano ogqamile** uqondisa izici ezibalulekile.\n(Isb: Cindezela isikhathi eside ikhadi **Umbuthano ogqamile** okhomba kulo ukuze ulisuse.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Ukusetha Ulimi",
+  "quickStartStep1Desc": "Emenyu > Izilungiselelo Zolimi, qala ngokucacisa ulimi lwakho nolimi lokufunda.",
+  "quickStartStep2Title": "2. Ukuhamba Okuyisisekelo",
+  "quickStartStep2Desc": "Dala ikhadi lakho lokufunda ngendlela oyithandayo ngokulandelana kokokufaka (imakhrofoni/ikhibhodi) -> ukuhumusha -> ukulondoloza.",
+  "quickStartStep3Title": "3. Ukusebenzisa Izindlela Ezihlukahlukene",
+  "quickStartStep3Desc": "Prakthiza ngengxoxo, bese usebenzisa ithebhu yokuzijwayeza ukuphimisa amagama ukuze uzilolonge ngokuphimisa amagama ngokwakho ngenkathi ubuka umbhalo."
 }

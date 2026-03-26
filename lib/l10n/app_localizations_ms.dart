@@ -413,6 +413,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get helpTabModes => 'Mod';
 
   @override
+  String get helpTabQuickStart => 'Mula Pantas';
+
+  @override
   String get helpTabTour => 'Lawatan';
 
   @override
@@ -1383,4 +1386,25 @@ class AppLocalizationsMs extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Bahan yang anda pilih tidak menyokong bahasa pembelajaran anda ($targetLang) pada masa ini dan tidak boleh disimpan secara setempat. Adakah anda ingin meminta terjemahan?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Tetapan Bahasa';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Mula-mula tetapkan bahasa saya dan bahasa pembelajaran anda dalam Menu > Tetapan Bahasa.';
+
+  @override
+  String get quickStartStep2Title => '2. Aliran Asas';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Cipta kad pembelajaran anda sendiri dalam susunan input (mikrofon/papan kekunci) -> terjemahan -> simpan.';
+
+  @override
+  String get quickStartStep3Title => '3. Gunakan Mod';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Berlatih dengan bersembang dan berlatih menyebut secara langsung dengan melihat teks dalam tab latihan sebutan.';
 }

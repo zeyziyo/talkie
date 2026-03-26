@@ -414,6 +414,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get helpTabModes => 'Описание на режимите';
 
   @override
+  String get helpTabQuickStart => 'Бърз старт';
+
+  @override
   String get helpTabTour => 'Обиколка';
 
   @override
@@ -1392,4 +1395,25 @@ class AppLocalizationsBg extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Избраният от вас материал не поддържа текущо зададения език за обучение ($targetLang) и не може да бъде запазен локално. Искате ли да заявите превод?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Настройка на езика';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Първо задайте своя език и езика за обучение в Меню > Настройки на езика.';
+
+  @override
+  String get quickStartStep2Title => '2. Основен поток';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Създайте свои собствени карти за обучение в реда Въвеждане (микрофон/клавиатура) -> Превод -> Запазване.';
+
+  @override
+  String get quickStartStep3Title => '3. Използване на режими';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Практикувайте с чат и практикувайте произношение, като гледате текст в раздела Практика на произношението.';
 }

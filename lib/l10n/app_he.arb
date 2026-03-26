@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• צ'אט AI: תרגל שיחות מעשיות עם דמויות דרך תפריט 'צ'אט' בסרגל הכרטיסיות התחתון.\n• הגדרת דמות: ציין באופן חופשי את מין, שם וקוד השפה של הצד השני.\n• משחק תפקידים GPS: המלצה על נושאי שיחה המתאימים למקום על ידי זיהוי המיקום הנוכחי שלך.\n• דו לשוני: תשובות ה-AI מוצגות עם תרגום כדי למקסם את אפקט הלמידה.\n• ניהול רשומות: סינון היסטוריית שיחות קודמות ושמירת הודעות ספציפיות במהלך שיחות כחומרי לימוד.",
   "helpTabJson": "פורמט JSON",
   "helpTabModes": "מצבים",
+  "helpTabQuickStart": "התחלה מהירה",
   "helpTabTour": "סיור",
   "helpTitle": "עזרה ומדריך",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. הגדרת שפה",
+  "quickStartStep1Desc": "בתפריט > הגדרות שפה, הגדר תחילה את שפת הממשק ושפת הלמידה שלך.",
+  "quickStartStep2Title": "2. תהליך בסיסי",
+  "quickStartStep2Desc": "צור כרטיסיות למידה מותאמות אישית לפי הסדר הזה: קלט (מיקרופון/מקלדת) -> תרגום -> שמירה.",
+  "quickStartStep3Title": "3. שימוש במצבים שונים",
+  "quickStartStep3Desc": "תרגל בצ'אט, ובכרטיסיית תרגול הגייה, תרגל הגייה ישירה תוך כדי צפייה בטקסט."
 }

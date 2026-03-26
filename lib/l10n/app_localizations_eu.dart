@@ -410,6 +410,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get helpTabModes => 'Moduen azalpena';
 
   @override
+  String get helpTabQuickStart => 'Laster hastea';
+
+  @override
   String get helpTabTour => 'Esperimentatu';
 
   @override
@@ -1387,4 +1390,25 @@ class AppLocalizationsEu extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Hautatu duzun materialak ez du onartzen unean ezarrita daukazun ikasteko hizkuntza ($targetLang), eta ezin da lokalean gorde. Itzulpena eskatu nahi duzu?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Hizkuntza ezarri';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Ezarri zure hizkuntza eta ikasteko hizkuntza Menua > Hizkuntza ezarpenak atalean.';
+
+  @override
+  String get quickStartStep2Title => '2. Oinarrizko prozesua';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Sortu zure ikasketa-txartelak ordena honetan: Sarrera (mikrofonoa/tekla) -> Itzulpena -> Gorde.';
+
+  @override
+  String get quickStartStep3Title => '3. Erabili moduak';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Praktikatu txateatzen, eta praktikatu ahoskera Ahoskera praktikatzeko fitxan testua ikusiz eta zuzenean ahoskatuz.';
 }

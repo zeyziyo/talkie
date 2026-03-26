@@ -412,6 +412,9 @@ class AppLocalizationsNb extends AppLocalizations {
   String get helpTabModes => 'Modusforklaring';
 
   @override
+  String get helpTabQuickStart => 'Hurtigstart';
+
+  @override
   String get helpTabTour => 'Prøv en omvisning';
 
   @override
@@ -1384,4 +1387,25 @@ class AppLocalizationsNb extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Det valgte materialet støtter ikke det valgte studiespråket ($targetLang) og kan ikke lagres lokalt. Vil du be om en oversettelse?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Angi språk';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Spesifiser først mitt språk og læringsspråk i Meny > Språkinnstillinger.';
+
+  @override
+  String get quickStartStep2Title => '2. Grunnleggende flyt';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Lag dine egne læringskort i rekkefølgen input (mikrofon/tastatur) -> oversettelse -> lagre.';
+
+  @override
+  String get quickStartStep3Title => '3. Bruk moduser';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Øv deg med chat, og øv deg på uttale direkte ved å se på teksten i fanen Uttaleøvelse.';
 }

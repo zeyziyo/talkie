@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Sembang AI: Berlatih perbualan sebenar dengan persona dalam menu 'Sembang' pada bar tab bawah\n• Tetapan Persona: Tentukan jantina, nama dan kod bahasa pihak lawan secara bebas\n• Situasi Main GPS: Mencadangkan topik perbualan yang sesuai untuk tempat dengan mengenali lokasi semasa saya\n• 2 Bahasa: Jawapan AI dipaparkan dengan terjemahan untuk memaksimumkan kesan pembelajaran\n• Pengurusan Rekod: Menapis sejarah perbualan lalu dan menyimpan mesej tertentu daripada perbualan sebagai bahan pembelajaran",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Mod",
+  "helpTabQuickStart": "Mula Pantas",
   "helpTabTour": "Lawatan",
   "helpTitle": "Bantuan & Panduan",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Tetapan Bahasa",
+  "quickStartStep1Desc": "Mula-mula tetapkan bahasa saya dan bahasa pembelajaran anda dalam Menu > Tetapan Bahasa.",
+  "quickStartStep2Title": "2. Aliran Asas",
+  "quickStartStep2Desc": "Cipta kad pembelajaran anda sendiri dalam susunan input (mikrofon/papan kekunci) -> terjemahan -> simpan.",
+  "quickStartStep3Title": "3. Gunakan Mod",
+  "quickStartStep3Desc": "Berlatih dengan bersembang dan berlatih menyebut secara langsung dengan melihat teks dalam tab latihan sebutan."
 }

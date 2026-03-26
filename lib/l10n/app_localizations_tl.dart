@@ -417,6 +417,9 @@ class AppLocalizationsTl extends AppLocalizations {
   String get helpTabModes => 'Paglalarawan ng Mode';
 
   @override
+  String get helpTabQuickStart => 'Mabilis na Pagsisimula';
+
+  @override
   String get helpTabTour => 'Mag-tour';
 
   @override
@@ -1398,4 +1401,25 @@ class AppLocalizationsTl extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Hindi sinusuportahan ng materyal na iyong pinili ang kasalukuyang wika ng pag-aaral ($targetLang), kaya hindi ito maaaring i-save nang lokal. Gusto mo bang humiling ng pagsasalin?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Itakda ang Wika';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Sa Menu > Mga Setting ng Wika, itakda muna ang iyong wika at ang wikang pinag-aaralan.';
+
+  @override
+  String get quickStartStep2Title => '2. Pangunahing Daloy';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Lumikha ng sarili mong learning card sa pamamagitan ng Input (Mikropono/Keyboard) -> Pagsasalin -> Pag-save.';
+
+  @override
+  String get quickStartStep3Title => '3. Gamitin ang mga Mode';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Magpraktis sa pamamagitan ng chat, at magpraktis ng pagbigkas sa tab na Pagsasanay sa Pagbigkas sa pamamagitan ng pagtingin sa teksto at pagbigkas nito nang direkta.';
 }

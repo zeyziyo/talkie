@@ -418,6 +418,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get helpTabModes => 'Përshkrimi i Modit';
 
   @override
+  String get helpTabQuickStart => 'Fillimi i Shpejtë';
+
+  @override
   String get helpTabTour => 'Bëni një shëtitje';
 
   @override
@@ -1398,4 +1401,25 @@ class AppLocalizationsSq extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Materiali që keni zgjedhur nuk mbështet gjuhën e studimit të vendosur aktualisht ($targetLang), prandaj nuk mund të ruhet lokalisht. Dëshironi të kërkoni përkthim?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Përcakto Gjuhët';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Në Menunë > Cilësimet e Gjuhës, specifikoni fillimisht gjuhën tuaj dhe gjuhën e mësimit.';
+
+  @override
+  String get quickStartStep2Title => '2. Rrjedha Bazë';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Krijoni kartat tuaja të personalizuara të studimit sipas renditjes: Hyrje (Mikrofon/Tastierë) -> Përkthim -> Ruaj.';
+
+  @override
+  String get quickStartStep3Title => '3. Shfrytëzo Modalitetet';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Praktikohuni me bisedë, praktikoni shqiptimin duke parë tekstin në tabin e praktikës së shqiptimit.';
 }

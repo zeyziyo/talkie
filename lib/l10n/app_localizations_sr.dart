@@ -414,6 +414,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get helpTabModes => 'Објашњење режима';
 
   @override
+  String get helpTabQuickStart => 'Брзи почетак';
+
+  @override
   String get helpTabTour => 'Пробајте';
 
   @override
@@ -1387,4 +1390,25 @@ class AppLocalizationsSr extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Изабрани материјал не подржава тренутно подешени језик учења ($targetLang), тако да се не може сачувати локално. Да ли желите да затражите превод?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Подешавање језика';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Прво изаберите свој језик и језик за учење у Мени > Подешавање језика.';
+
+  @override
+  String get quickStartStep2Title => '2. Основни ток';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Направите своје картице за учење редоследом: Унос (микрофон/тастатура) -> Превод -> Сачувај.';
+
+  @override
+  String get quickStartStep3Title => '3. Коришћење режима';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Вежбајте ћаскање и вежбајте изговор директно гледајући текст на картици за вежбање изговора.';
 }

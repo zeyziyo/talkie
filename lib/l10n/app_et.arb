@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI vestlus: harjuta vestlust tegelikus elus personaga alumise vahekaardiriba menüüs 'Vestlus'\n• Persona seaded: määra vabalt partneri sugu, nimi ja keelekood\n• GPS olukorramäng: soovitab kohale sobivaid vestlusteemasid, tunnetades minu praegust asukohta\n• Kaks keelt: AI vastused kuvatakse koos tõlkega, et maksimeerida õppimist\n• Kirjete haldamine: filtreeri varasemaid vestlusi ja salvesta teatud sõnumeid õppematerjalidena vestluse ajal",
   "helpTabJson": "JSON-vorming",
   "helpTabModes": "Režiimide selgitus",
+  "helpTabQuickStart": "Kiire algus",
   "helpTabTour": "Tutvustus",
   "helpTitle": "Abi & juhend",
   "helpTourDesc": "**Esiletõstetud ring** juhendab peamisi funktsioone.\n(Näide: **Esiletõstetud ringi** osutatud kaardi kustutamiseks hoia seda all.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Seadista keel",
+  "quickStartStep1Desc": "Määra esmalt oma keel ja õpitav keel menüüs > Keeleseaded.",
+  "quickStartStep2Title": "2. Põhivool",
+  "quickStartStep2Desc": "Koosta oma õppekaardid järjekorras: sisend (mikrofon/klaviatuur) -> tõlkimine -> salvestamine.",
+  "quickStartStep3Title": "3. Režiimide kasutamine",
+  "quickStartStep3Desc": "Harjuta vestluse kaudu ja harjuta hääldust, vaadates teksti ja hääldades seda otse vahekaardil Hääldusharjutus."
 }

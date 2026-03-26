@@ -406,6 +406,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get helpTabModes => 'โหมด';
 
   @override
+  String get helpTabQuickStart => 'เริ่มต้นอย่างรวดเร็ว';
+
+  @override
   String get helpTabTour => 'ทัวร์';
 
   @override
@@ -1368,4 +1371,25 @@ class AppLocalizationsTh extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'เอกสารที่คุณเลือกไม่รองรับภาษาที่ใช้เรียนรู้ ($targetLang) ที่ตั้งค่าไว้ในปัจจุบัน จึงไม่สามารถบันทึกลงในเครื่องได้ คุณต้องการขอคำแปลหรือไม่';
   }
+
+  @override
+  String get quickStartStep1Title => '1. ตั้งค่าภาษา';
+
+  @override
+  String get quickStartStep1Desc =>
+      'ไปที่ เมนู > การตั้งค่าภาษา เพื่อระบุภาษาของคุณและภาษาที่คุณต้องการเรียนรู้ก่อน';
+
+  @override
+  String get quickStartStep2Title => '2. ขั้นตอนพื้นฐาน';
+
+  @override
+  String get quickStartStep2Desc =>
+      'สร้างบัตรคำศัพท์ของคุณเองตามลำดับ: ป้อนข้อมูล (ไมโครโฟน/คีย์บอร์ด) -> แปล -> บันทึก';
+
+  @override
+  String get quickStartStep3Title => '3. ใช้โหมดต่างๆ';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ฝึกฝนด้วยการแชท และฝึกออกเสียงโดยดูข้อความในแท็บฝึกออกเสียง';
 }

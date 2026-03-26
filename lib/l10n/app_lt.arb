@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI pokalbiai: praktikuokite pokalbius realiame gyvenime su asmenybėmis meniu „Pokalbis“ apatinėje skirtukų juostoje\n• Asmenybės nustatymas: laisvai nurodykite pašnekovo lytį, vardą ir kalbos kodą\n• GPS inscenizacija: atpažinkite savo dabartinę vietą ir rekomenduokite pokalbio temas, atitinkančias vietą\n• 2 kalbos: AI atsakymai rodomi kartu su vertimu, kad maksimaliai padidintumėte mokymosi efektą\n• Įrašų valdymas: filtruokite ankstesnę pokalbių istoriją ir išsaugokite konkrečias žinutes iš pokalbio kaip mokymosi medžiagą",
   "helpTabJson": "JSON formatas",
   "helpTabModes": "Režimų paaiškinimas",
+  "helpTabQuickStart": "Greita pradžia",
   "helpTabTour": "Apžiūrėti",
   "helpTitle": "Pagalba ir gidai",
   "helpTourDesc": "**Paryškintas apskritimas** nurodo pagrindines funkcijas.\n(Pavyzdžiui, **Paryškintas apskritimas** rodo, kad galite ištrinti ilgai paspausdami kortelę.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Kalbos nustatymai",
+  "quickStartStep1Desc": "Pirmiausia nustatykite savo ir mokymosi kalbas meniu > Kalbos nustatymai.",
+  "quickStartStep2Title": "2. Pagrindinis procesas",
+  "quickStartStep2Desc": "Sukurkite savo mokymosi korteles tokia tvarka: įvestis (mikrofonas / klaviatūra) -> vertimas -> išsaugojimas.",
+  "quickStartStep3Title": "3. Režimų naudojimas",
+  "quickStartStep3Desc": "Praktikuokitės per pokalbį, o skirtuke „Tarimo praktika“ skaitykite tekstą ir praktikuokite tartį patys."
 }

@@ -412,6 +412,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get helpTabModes => 'Režīmu skaidrojumi';
 
   @override
+  String get helpTabQuickStart => 'Ātrā uzsākšana';
+
+  @override
   String get helpTabTour => 'Apskatīt';
 
   @override
@@ -1387,4 +1390,25 @@ class AppLocalizationsLv extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Atlasītie materiāli neatbalsta pašreizējo mācību valodu ($targetLang), tāpēc tos nevar saglabāt lokāli. Vai vēlaties pieprasīt tulkojumu?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. valodas iestatīšana';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Vispirms izvēlieties savu un mācību valodu izvēlnē > valodas iestatījumi.';
+
+  @override
+  String get quickStartStep2Title => '2. pamata plūsma';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Izveidojiet savas mācību kartītes šādā secībā: ievade (mikrofons/tastatūra) -> tulkošana -> saglabāšana.';
+
+  @override
+  String get quickStartStep3Title => '3. režīma izmantošana';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Trenējieties tērzējot un praktizējiet izrunu, skatoties tekstu cilnē izrunas praktizēšana.';
 }

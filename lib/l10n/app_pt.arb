@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Chat AI: Pratique conversas reais com personas no menu 'Chat' na barra de guias inferior.\n• Configurações de persona: Especifique livremente o gênero, nome e código de idioma do interlocutor.\n• Situação dramática de GPS: Reconhece minha localização atual e recomenda tópicos de conversação apropriados para o local.\n• 2 idiomas: As respostas da IA são exibidas com traduções para maximizar o efeito de aprendizado.\n• Gerenciamento de registros: Filtre o histórico de conversas passadas e salve mensagens específicas das conversas como materiais de estudo",
   "helpTabJson": "Formato JSON",
   "helpTabModes": "Modos",
+  "helpTabQuickStart": "Início Rápido",
   "helpTabTour": "Fazer um tour",
   "helpTitle": "Ajuda & Guia",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Configurar Idiomas",
+  "quickStartStep1Desc": "Primeiro, defina seu idioma e o idioma de aprendizado em Menu > Configurações de idioma.",
+  "quickStartStep2Title": "2. Fluxo Básico",
+  "quickStartStep2Desc": "Crie seus próprios cartões de estudo na ordem: entrada (microfone/teclado) -> tradução -> salvar.",
+  "quickStartStep3Title": "3. Utilize os Modos",
+  "quickStartStep3Desc": "Pratique com o bate-papo e pratique a pronúncia diretamente na aba de prática de pronúncia."
 }

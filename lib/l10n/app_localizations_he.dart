@@ -403,6 +403,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get helpTabModes => 'מצבים';
 
   @override
+  String get helpTabQuickStart => 'התחלה מהירה';
+
+  @override
   String get helpTabTour => 'סיור';
 
   @override
@@ -1360,4 +1363,25 @@ class AppLocalizationsHe extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'החומר שבחרת אינו תומך בשפת הלימוד הנוכחית שלך ($targetLang) ולכן לא ניתן לשמור אותו באופן מקומי. האם תרצה לבקש תרגום?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. הגדרת שפה';
+
+  @override
+  String get quickStartStep1Desc =>
+      'בתפריט > הגדרות שפה, הגדר תחילה את שפת הממשק ושפת הלמידה שלך.';
+
+  @override
+  String get quickStartStep2Title => '2. תהליך בסיסי';
+
+  @override
+  String get quickStartStep2Desc =>
+      'צור כרטיסיות למידה מותאמות אישית לפי הסדר הזה: קלט (מיקרופון/מקלדת) -> תרגום -> שמירה.';
+
+  @override
+  String get quickStartStep3Title => '3. שימוש במצבים שונים';
+
+  @override
+  String get quickStartStep3Desc =>
+      'תרגל בצ\'אט, ובכרטיסיית תרגול הגייה, תרגל הגייה ישירה תוך כדי צפייה בטקסט.';
 }

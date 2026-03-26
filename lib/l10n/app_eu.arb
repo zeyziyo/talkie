@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI txata: praktikatu elkarrizketa errealak pertsonaiekin beheko tabernako 'Txata' menuan\n• Pertsonaia-ezarpenak: zehaztu libreki beste pertsonaren generoa, izena eta hizkuntza-kodea\n• GPS egoera-komedia: gomendatu zure kokapenarekin bat datozen elkarrizketa-gaiak\n• 2 hizkuntza: AIren erantzuna itzulpenarekin batera bistaratzen da ikaskuntza-efektua maximizatzeko\n• Erregistro-kudeaketa: iraganeko elkarrizketen historia iragazi eta elkarrizketako mezu zehatzak ikaskuntza-material gisa gorde",
   "helpTabJson": "JSON formatua",
   "helpTabModes": "Moduen azalpena",
+  "helpTabQuickStart": "Laster hastea",
   "helpTabTour": "Esperimentatu",
   "helpTitle": "Laguntza eta Gidak",
   "helpTourDesc": "**Nabarmendutako zirkuluak** funtzio nagusiak gidatzen ditu.\n(Adibidez: **Nabarmendutako zirkuluak** seinalatzen duen txartela luze sakatuta ezaba dezakezu.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Hizkuntza ezarri",
+  "quickStartStep1Desc": "Ezarri zure hizkuntza eta ikasteko hizkuntza Menua > Hizkuntza ezarpenak atalean.",
+  "quickStartStep2Title": "2. Oinarrizko prozesua",
+  "quickStartStep2Desc": "Sortu zure ikasketa-txartelak ordena honetan: Sarrera (mikrofonoa/tekla) -> Itzulpena -> Gorde.",
+  "quickStartStep3Title": "3. Erabili moduak",
+  "quickStartStep3Desc": "Praktikatu txateatzen, eta praktikatu ahoskera Ahoskera praktikatzeko fitxan testua ikusiz eta zuzenean ahoskatuz."
 }

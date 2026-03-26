@@ -394,6 +394,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get helpTabModes => '模式';
 
   @override
+  String get helpTabQuickStart => '快速入门';
+
+  @override
   String get helpTabTour => '新手引导';
 
   @override
@@ -1339,6 +1342,24 @@ class AppLocalizationsZh extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return '您选择的材料当前不支持您设置的学习语言（$targetLang），因此无法保存到本地。是否请求翻译？';
   }
+
+  @override
+  String get quickStartStep1Title => '1. 设置语言';
+
+  @override
+  String get quickStartStep1Desc => '请先在“菜单 > 语言设置”中指定你的语言和学习语言。';
+
+  @override
+  String get quickStartStep2Title => '2. 基本流程';
+
+  @override
+  String get quickStartStep2Desc => '按照“输入（麦克风/键盘）-> 翻译 -> 保存”的顺序创建你自己的学习卡。';
+
+  @override
+  String get quickStartStep3Title => '3. 模式活用';
+
+  @override
+  String get quickStartStep3Desc => '通过聊天进行练习，并在发音练习标签中查看文本并直接发音练习。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -1729,6 +1750,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get helpTabModes => '模式';
+
+  @override
+  String get helpTabQuickStart => '快速开始';
 
   @override
   String get helpTabTour => '新手引导';
@@ -2677,6 +2701,24 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String studyLangNotFoundDesc(String targetLang) {
     return '您选择的资料目前不支持您设置的学习语言（$targetLang），因此无法保存到本地。是否请求翻译？';
   }
+
+  @override
+  String get quickStartStep1Title => '1. 设置语言';
+
+  @override
+  String get quickStartStep1Desc => '请在“菜单 > 语言设置”中首先指定您的母语和学习语言。';
+
+  @override
+  String get quickStartStep2Title => '2. 基本流程';
+
+  @override
+  String get quickStartStep2Desc => '按照“输入（麦克风/键盘）-> 翻译 -> 保存”的顺序创建您自己的学习卡片。';
+
+  @override
+  String get quickStartStep3Title => '3. 模式活用';
+
+  @override
+  String get quickStartStep3Desc => '通过聊天进行练习，并在发音练习选项卡中查看文本并直接发音练习。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -3067,6 +3109,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get helpTabModes => '模式';
+
+  @override
+  String get helpTabQuickStart => '快速開始';
 
   @override
   String get helpTabTour => '導覽';
@@ -4015,4 +4060,22 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String studyLangNotFoundDesc(String targetLang) {
     return '您選擇的資料目前不支援您設定的學習語言（$targetLang），因此無法儲存到本機。您要請求翻譯嗎？';
   }
+
+  @override
+  String get quickStartStep1Title => '1. 設定語言';
+
+  @override
+  String get quickStartStep1Desc => '請先在「選單 > 語言設定」中指定您的母語和學習語言。';
+
+  @override
+  String get quickStartStep2Title => '2. 基本流程';
+
+  @override
+  String get quickStartStep2Desc => '按照「輸入 (麥克風/鍵盤) -> 翻譯 -> 儲存」的順序，建立您自己的學習卡。';
+
+  @override
+  String get quickStartStep3Title => '3. 模式活用';
+
+  @override
+  String get quickStartStep3Desc => '透過聊天進行練習，並在「發音練習」分頁中看著文字直接發音練習。';
 }

@@ -418,6 +418,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get helpTabModes => 'பயன்முறைகள்';
 
   @override
+  String get helpTabQuickStart => 'விரைவு தொடக்கம்';
+
+  @override
   String get helpTabTour => 'சுற்றுலா';
 
   @override
@@ -1399,4 +1402,25 @@ class AppLocalizationsTa extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'நீங்கள் தேர்ந்தெடுத்த உள்ளடக்கம் தற்போது அமைக்கப்பட்ட கற்றல் மொழி ($targetLang) ஆதரிக்காததால் உள்நாட்டில் சேமிக்க முடியாது. மொழிபெயர்க்க வேண்டுமா?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. மொழி அமைவு';
+
+  @override
+  String get quickStartStep1Desc =>
+      'மெனு > மொழி அமைவு என்பதில் உங்கள் மொழி மற்றும் கற்றல் மொழியை முதலில் குறிப்பிடவும்.';
+
+  @override
+  String get quickStartStep2Title => '2. அடிப்படை ஓட்டம்';
+
+  @override
+  String get quickStartStep2Desc =>
+      'உள்ளீடு (மைக்/விசைப்பலகை) -> மொழிபெயர்ப்பு -> சேமிப்பு வரிசையில் உங்களுடைய சொந்த கற்றல் அட்டையை உருவாக்கவும்.';
+
+  @override
+  String get quickStartStep3Title => '3. பயன்முறை பயன்பாடு';
+
+  @override
+  String get quickStartStep3Desc =>
+      'பேச்சு மூலம் பயிற்சி செய்யுங்கள், உச்சரிப்பு பயிற்சி தாவலில் உரையைப் பார்த்து நேரடியாக உச்சரிப்பதன் மூலம் பயிற்சி செய்யுங்கள்.';
 }

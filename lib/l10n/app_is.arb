@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Gervigreind spjall: Æfðu raunveruleg samtöl við persónur í 'Spjall' valmyndinni á flipastikunni neðst\n• Persónustillingar: Tilgreindu kyn, nafn og tungumálakóða hins aðilans að vild\n• GPS sviðsetning: Mælir með umræðuefnum sem henta staðsetningunni með því að þekkja núverandi staðsetningu þína\n• Tvö tungumál: Svör gervigreindarinnar eru sýnd ásamt þýðingum til að hámarka námsárangur\n• Skráastjórnun: Síaðu fyrri samtalsferil og vistaðu ákveðin skilaboð úr samtalinu sem námsefni",
   "helpTabJson": "JSON snið",
   "helpTabModes": "Umfjöllun um stillingar",
+  "helpTabQuickStart": "Fljót byrjun",
   "helpTabTour": "Kynnisferð",
   "helpTitle": "Hjálp & leiðbeiningar",
   "helpTourDesc": "**Auðkenndur hringur** leiðbeinir lykileiginleikum.\n(Dæmi: Hægt er að eyða kortinu sem **auðkenndi hringurinn** vísar á með því að halda því inni.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Veldu tungumál",
+  "quickStartStep1Desc": "Farðu í Valmynd > Tungumál til að velja þitt tungumál og tungumálið sem þú vilt læra.",
+  "quickStartStep2Title": "2. Grunnflæði",
+  "quickStartStep2Desc": "Búðu til þín eigin spjöld í þessari röð: Inntak (hljóðnemi/lyklaborð) -> Þýðing -> Vista.",
+  "quickStartStep3Title": "3. Nýttu stillingar",
+  "quickStartStep3Desc": "Æfðu þig í spjalli og æfðu framburð með því að horfa á textann í Framburðarflipanum."
 }

@@ -414,6 +414,9 @@ class AppLocalizationsGl extends AppLocalizations {
   String get helpTabModes => 'Descrición dos modos';
 
   @override
+  String get helpTabQuickStart => 'Guía rápida';
+
+  @override
   String get helpTabTour => 'Visita guiada';
 
   @override
@@ -1393,4 +1396,25 @@ class AppLocalizationsGl extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'O material seleccionado non admite o idioma de estudo actual ($targetLang), polo que non se pode gardar localmente. Queres solicitar unha tradución?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Selecciona o idioma';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Primeiro, especifica o teu idioma e o idioma que queres aprender en Menú > Configuración de idioma.';
+
+  @override
+  String get quickStartStep2Title => '2. Fluxo básico';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Crea as túas propias tarxetas de aprendizaxe na seguinte orde: entrada (micrófono/teclado) -> tradución -> gardar.';
+
+  @override
+  String get quickStartStep3Title => '3. Usa os modos';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Practica chateando e practica pronunciando directamente mentres ves o texto na pestana de práctica de pronuncia.';
 }

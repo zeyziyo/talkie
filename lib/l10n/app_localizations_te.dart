@@ -412,6 +412,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get helpTabModes => 'మోడ్‌లు';
 
   @override
+  String get helpTabQuickStart => 'త్వరిత ప్రారంభం';
+
+  @override
   String get helpTabTour => 'టూర్';
 
   @override
@@ -1384,4 +1387,25 @@ class AppLocalizationsTe extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'మీరు ఎంచుకున్న మెటీరియల్ ప్రస్తుతం సెట్ చేయబడిన అధ్యయన భాష ($targetLang)కు మద్దతు ఇవ్వదు కాబట్టి దీన్ని స్థానికంగా సేవ్ చేయలేరు. మీరు అనువాదం కోసం అభ్యర్థించాలనుకుంటున్నారా?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. భాషను ఎంచుకోండి';
+
+  @override
+  String get quickStartStep1Desc =>
+      'మెనూ > భాషా సెట్టింగ్‌లలో మీ భాషను మరియు మీరు నేర్చుకోవాలనుకుంటున్న భాషను ఎంచుకోండి.';
+
+  @override
+  String get quickStartStep2Title => '2. ఎలా ఉపయోగించాలి?';
+
+  @override
+  String get quickStartStep2Desc =>
+      'మీ స్వంత అభ్యాస కార్డులను సృష్టించడానికి, నమోదు(మైక్/కీబోర్డ్) -> అనువదించు -> సేవ్ చేయండి.';
+
+  @override
+  String get quickStartStep3Title => '3. మోడ్‌లను ఉపయోగించండి';
+
+  @override
+  String get quickStartStep3Desc =>
+      'చాట్ ద్వారా ప్రాక్టీస్ చేయండి మరియు ఉచ్ఛారణ సాధన ట్యాబ్‌లో టెక్స్ట్ చూస్తూ నేరుగా ఉచ్చరించడం ద్వారా ప్రాక్టీస్ చేయండి.';
 }

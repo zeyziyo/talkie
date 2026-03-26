@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Bisedë AI: Praktikoni biseda të vërteta me një personazh në menunë 'Bisedë' në shiritin e poshtëm të skedave.\n• Cilësimet e personazhit: Specifikoni lirisht gjininë, emrin dhe kodin e gjuhës së tjetrit.\n• Situata GPS: Njoh vendndodhjen time aktuale dhe rekomando tema bisede të përshtatshme për vendin.\n• Dy gjuhë: Përgjigjet e AI shfaqen me përkthime për të maksimizuar efektin e të mësuarit.\n• Menaxhimi i rekordeve: Filtroni historinë e kaluar të bisedave dhe ruani mesazhe specifike nga biseda si materiale studimore.",
   "helpTabJson": "Formati JSON",
   "helpTabModes": "Përshkrimi i Modit",
+  "helpTabQuickStart": "Fillimi i Shpejtë",
   "helpTabTour": "Bëni një shëtitje",
   "helpTitle": "Ndihmë & Udhëzime",
   "helpTourDesc": "**Rrethi i theksuar** do t'ju udhëzojë për funksionet kryesore.\n(Për shembull: Ju mund të fshini një kartë duke shtypur gjatë kartën e treguar nga **rrethi i theksuar**.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Përcakto Gjuhët",
+  "quickStartStep1Desc": "Në Menunë > Cilësimet e Gjuhës, specifikoni fillimisht gjuhën tuaj dhe gjuhën e mësimit.",
+  "quickStartStep2Title": "2. Rrjedha Bazë",
+  "quickStartStep2Desc": "Krijoni kartat tuaja të personalizuara të studimit sipas renditjes: Hyrje (Mikrofon/Tastierë) -> Përkthim -> Ruaj.",
+  "quickStartStep3Title": "3. Shfrytëzo Modalitetet",
+  "quickStartStep3Desc": "Praktikohuni me bisedë, praktikoni shqiptimin duke parë tekstin në tabin e praktikës së shqiptimit."
 }

@@ -416,6 +416,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get helpTabModes => 'Rejimlar haqida ma\'lumot';
 
   @override
+  String get helpTabQuickStart => 'Tezkor Boshlash';
+
+  @override
   String get helpTabTour => 'Namuna';
 
   @override
@@ -1394,4 +1397,25 @@ class AppLocalizationsUz extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Siz tanlagan material hozirda o\'rnatilgan o\'rganish tili ($targetLang)ni qo\'llab-quvvatlamaydi, shuning uchun uni mahalliy xotiraga saqlab bo\'lmaydi. Tarjima so\'ramoqchimisiz?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Tilni sozlang';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Menyu > Til sozlamalaridan o\'z tilingizni va o\'rganish tilini belgilang.';
+
+  @override
+  String get quickStartStep2Title => '2. Asosiy jarayon';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Kiritish (mikrofon/klaviatura) -> Tarjima -> Saqlash tartibida o\'zingizning o\'quv kartochkalaringizni yarating.';
+
+  @override
+  String get quickStartStep3Title => '3. Rejimdan foydalanish';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Chatda mashq qiling va Talaffuz mashqlari yorlig\'ida matnni ko\'rib, to\'g\'ridan-to\'g\'ri talaffuz qilib mashq qiling.';
 }

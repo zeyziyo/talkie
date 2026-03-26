@@ -413,6 +413,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get helpTabModes => 'Горим тайлбар';
 
   @override
+  String get helpTabQuickStart => 'Шуурхай эхлүүлэх';
+
+  @override
   String get helpTabTour => 'Туршлага хуримтлуулах';
 
   @override
@@ -1386,4 +1389,25 @@ class AppLocalizationsMn extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Таны сонгосон материал нь одоогоор тохируулсан суралцах хэл ($targetLang)-ийг дэмжихгүй байгаа тул локал хадгалах боломжгүй. Орчуулга хүсэх үү?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Хэл тохируулах';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Цэс > Хэл тохируулах хэсгээс өөрийн болон сурах хэлээ эхлээд тохируулна уу.';
+
+  @override
+  String get quickStartStep2Title => '2. Үндсэн урсгал';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Оруулах (микрофон/гар) -> Орчуулах -> Хадгалах гэсэн дарааллаар өөрийн сурах картуудыг үүсгээрэй.';
+
+  @override
+  String get quickStartStep3Title => '3. Горим ашиглах';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Чат горимоор дадлага хийж, дуудлагын дадлагын таб дээр текст хараад шууд дуудан дадлага хийгээрэй.';
 }

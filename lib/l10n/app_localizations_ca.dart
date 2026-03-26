@@ -415,6 +415,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get helpTabModes => 'Descripció dels modes';
 
   @override
+  String get helpTabQuickStart => 'Inici ràpid';
+
+  @override
   String get helpTabTour => 'Fer un recorregut';
 
   @override
@@ -1400,4 +1403,25 @@ class AppLocalizationsCa extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'El material seleccionat no és compatible amb l\'idioma d\'estudi actual ($targetLang) i no es pot desar localment. Voleu sol·licitar una traducció?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Configura l\'idioma';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Primer, especifica el teu idioma i l\'idioma que vols aprendre a Menú > Configuració d\'idioma.';
+
+  @override
+  String get quickStartStep2Title => '2. Flux bàsic';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Crea les teves pròpies targetes d\'aprenentatge seguint l\'ordre: entrada (micròfon/teclat) -> traducció -> desar.';
+
+  @override
+  String get quickStartStep3Title => '3. Utilitza els modes';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Practica xerrant i practica la pronunciació directament a la pestanya d\'exercicis de pronunciació.';
 }

@@ -410,6 +410,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get helpTabModes => 'Λειτουργίες';
 
   @override
+  String get helpTabQuickStart => 'Γρήγορη εκκίνηση';
+
+  @override
   String get helpTabTour => 'Περιήγηση';
 
   @override
@@ -1384,4 +1387,25 @@ class AppLocalizationsEl extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Το υλικό που επιλέξατε δεν υποστηρίζει την τρέχουσα γλώσσα εκμάθησης ($targetLang) και δεν μπορεί να αποθηκευτεί τοπικά. Θέλετε να ζητήσετε μετάφραση;';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Ρύθμιση γλώσσας';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Ορίστε πρώτα τη γλώσσα σας και τη γλώσσα εκμάθησης στο Μενού > Ρύθμιση γλώσσας.';
+
+  @override
+  String get quickStartStep2Title => '2. Βασική ροή';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Δημιουργήστε τις δικές σας κάρτες εκμάθησης με τη σειρά: Εισαγωγή (Μικρόφωνο/Πληκτρολόγιο) -> Μετάφραση -> Αποθήκευση.';
+
+  @override
+  String get quickStartStep3Title => '3. Χρήση λειτουργιών';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Εξασκηθείτε μέσω συνομιλίας και εξασκήστε την άρθρωση προφέροντας απευθείας το κείμενο στην καρτέλα εξάσκησης προφοράς.';
 }

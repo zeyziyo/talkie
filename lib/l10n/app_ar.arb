@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• دردشة الذكاء الاصطناعي: تدرب على المحادثات العملية مع شخصية من قائمة 'دردشة' في شريط علامات التبويب السفلي\n• إعداد الشخصية: حدد جنس واسم ورمز لغة الطرف الآخر بحرية\n• مسرحية نظام تحديد المواقع العالمي (GPS): يوصي بمواضيع المحادثة المناسبة للمكان من خلال التعرف على موقعي الحالي\n• لغتان: يتم عرض إجابة الذكاء الاصطناعي مع الترجمة لتعظيم تأثير التعلم\n• إدارة السجلات: تصفية سجلات المحادثات السابقة وحفظ رسائل معينة في المحادثة كمواد تعليمية",
   "helpTabJson": "تنسيق JSON",
   "helpTabModes": "أوضاع",
+  "helpTabQuickStart": "بداية سريعة",
   "helpTabTour": "جولة",
   "helpTitle": "مساعدة ودليل",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. إعداد اللغة",
+  "quickStartStep1Desc": "حدد لغتك ولغة التعلم أولاً في القائمة > إعدادات اللغة.",
+  "quickStartStep2Title": "2. التدفق الأساسي",
+  "quickStartStep2Desc": "أنشئ بطاقات التعلم الخاصة بك بترتيب الإدخال (ميكروفون/لوحة المفاتيح) -> الترجمة -> الحفظ.",
+  "quickStartStep3Title": "3. استخدام الوضع",
+  "quickStartStep3Desc": "تدرب بالمحادثة، وشاهد النص في علامة تبويب ممارسة النطق وتدرب على النطق مباشرة."
 }

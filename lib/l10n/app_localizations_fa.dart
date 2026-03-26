@@ -411,6 +411,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get helpTabModes => 'حالت‌ها';
 
   @override
+  String get helpTabQuickStart => 'شروع سریع';
+
+  @override
   String get helpTabTour => 'تور';
 
   @override
@@ -1376,4 +1379,25 @@ class AppLocalizationsFa extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'مواد انتخابی شما از زبان یادگیری ($targetLang) فعلی پشتیبانی نمی‌کند و نمی‌تواند به صورت محلی ذخیره شود. آیا می‌خواهید ترجمه درخواست کنید؟';
   }
+
+  @override
+  String get quickStartStep1Title => '۱. تنظیم زبان';
+
+  @override
+  String get quickStartStep1Desc =>
+      'ابتدا زبان خود و زبان یادگیری را در منو > تنظیمات زبان مشخص کنید.';
+
+  @override
+  String get quickStartStep2Title => '۲. جریان اصلی';
+
+  @override
+  String get quickStartStep2Desc =>
+      'کارت‌های یادگیری خود را به ترتیب ورودی (میکروفون/صفحه‌کلید) -> ترجمه -> ذخیره ایجاد کنید.';
+
+  @override
+  String get quickStartStep3Title => '۳. استفاده از حالت‌ها';
+
+  @override
+  String get quickStartStep3Desc =>
+      'با چت تمرین کنید و در تب تمرین تلفظ، متن را ببینید و مستقیماً تلفظ کنید و تمرین کنید.';
 }

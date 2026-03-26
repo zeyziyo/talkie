@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI-chat: Øv dig i praktiske samtaler med personaen i menuen 'Chat' på den nederste fanebjælke\n• Personaindstillinger: Angiv frit den anden parts køn, navn og sprogkode\n• GPS-situationsdrama: Genkender min nuværende placering og anbefaler samtaleemner, der passer til stedet\n• 2 sprog: AI's svar vises med oversættelse for at maksimere læringseffekten\n• Record management: Filtrering af tidligere samtalelogg og lagring af specifikke beskeder i samtale som læringsmateriale",
   "helpTabJson": "JSON-format",
   "helpTabModes": "Tilstande",
+  "helpTabQuickStart": "Hurtigstart",
   "helpTabTour": "Tur",
   "helpTitle": "Hjælp & Guide",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Indstil sprog",
+  "quickStartStep1Desc": "Indstil først dit sprog og det sprog, du vil lære, under Menu > Sprogindstillinger.",
+  "quickStartStep2Title": "2. Grundlæggende flow",
+  "quickStartStep2Desc": "Opret dine egne flashcards i rækkefølgen input (mikrofon/tastatur) -> oversættelse -> gem.",
+  "quickStartStep3Title": "3. Udnyt tilstande",
+  "quickStartStep3Desc": "Øv dig med chat, og øv dig i at udtale ved at se teksten direkte under fanen Udtaleøvelse."
 }

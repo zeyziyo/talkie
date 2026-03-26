@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• اے آئی چیٹ: نیچے ٹیب بار میں 'چیٹ' مینو سے پرسونا کے ساتھ عملی گفتگو کی مشق کریں\n• پرسونا سیٹنگ: فریق مخالف کی جنس، نام اور لینگویج کوڈ آزادانہ طور پر متعین کریں\n• جی پی ایس حالات: موجودہ مقام کو پہچان کر جگہ کے مطابق گفتگو کے موضوعات تجویز کریں\n• 2 لینگویج: اے آئی کا جواب ترجمہ کے ساتھ ظاہر ہوتا ہے تاکہ سیکھنے کا اثر زیادہ سے زیادہ ہو\n• ریکارڈ مینجمنٹ: ماضی کی گفتگو کی تاریخ کو فلٹر کریں اور گفتگو کے دوران مخصوص پیغامات کو سیکھنے کے مواد کے طور پر محفوظ کریں",
   "helpTabJson": "JSON فارمیٹ",
   "helpTabModes": "موڈز",
+  "helpTabQuickStart": "فوری آغاز",
   "helpTabTour": "ٹور",
   "helpTitle": "مدد اور رہنما",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1۔ زبان منتخب کریں",
+  "quickStartStep1Desc": "مینو > زبان کی ترتیبات میں اپنی اور سیکھنے کی زبان منتخب کریں۔",
+  "quickStartStep2Title": "2۔ بنیادی طریقہ کار",
+  "quickStartStep2Desc": "ان پٹ (مائیکروفون/کی بورڈ) -> ترجمہ -> محفوظ کریں کے ترتیب سے اپنے لرننگ کارڈز بنائیں۔",
+  "quickStartStep3Title": "3۔ طریقوں کا استعمال",
+  "quickStartStep3Desc": "چیٹ کے ذریعے مشق کریں، اور تلفظ کی مشق ٹیب میں متن کو دیکھ کر خود تلفظ کی مشق کریں۔"
 }

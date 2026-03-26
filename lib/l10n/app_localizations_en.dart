@@ -415,6 +415,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get helpTabModes => 'Modes';
 
   @override
+  String get helpTabQuickStart => 'Quick Start';
+
+  @override
   String get helpTabTour => 'Tour';
 
   @override
@@ -1382,4 +1385,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'The selected material does not support your current study language ($targetLang). Would you like to request a translation?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Set Languages';
+
+  @override
+  String get quickStartStep1Desc =>
+      'First, specify your language and the language you are learning in Menu > Language Settings.';
+
+  @override
+  String get quickStartStep2Title => '2. Basic Flow';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Create your own learning cards in the order of Input (microphone/keyboard) -> Translation -> Save.';
+
+  @override
+  String get quickStartStep3Title => '3. Utilize Modes';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Practice with chat, and practice pronunciation by looking at the text and pronouncing it yourself in the Pronunciation Practice tab.';
 }

@@ -411,6 +411,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get helpTabModes => 'Modusse';
 
   @override
+  String get helpTabQuickStart => 'Vinnige Begin';
+
+  @override
   String get helpTabTour => 'Toer';
 
   @override
@@ -1373,4 +1376,25 @@ class AppLocalizationsAf extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Die gekose materiaal ondersteun nie die huidige studie taal ($targetLang) nie en kan nie plaaslik gestoor word nie. Wil jy \'n vertaling aanvra?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Stel Taal';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Kies eers jou taal en die taal wat jy leer onder Kieslys > Taalinstellings.';
+
+  @override
+  String get quickStartStep2Title => '2. Basiese Vloei';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Skep jou eie leerkaarte in die volgorde van invoer (mikrofoon/sleutelbord) -> vertaling -> stoor.';
+
+  @override
+  String get quickStartStep3Title => '3. Gebruik Modusse';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Oefen met klets, en oefen uitspraak direk terwyl jy die teks in die Uitspraakoefening-oortjie bekyk.';
 }

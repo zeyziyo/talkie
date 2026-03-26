@@ -412,6 +412,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get helpTabModes => 'موڈز';
 
   @override
+  String get helpTabQuickStart => 'فوری آغاز';
+
+  @override
   String get helpTabTour => 'ٹور';
 
   @override
@@ -1378,4 +1381,25 @@ class AppLocalizationsUr extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'منتخب کردہ مواد آپ کی موجودہ سیکھنے کی زبان ($targetLang) میں دستیاب نہیں ہے، اس لیے اسے مقامی طور پر محفوظ نہیں کیا جا سکتا۔ کیا آپ ترجمہ کی درخواست کرنا چاہتے ہیں؟';
   }
+
+  @override
+  String get quickStartStep1Title => '1۔ زبان منتخب کریں';
+
+  @override
+  String get quickStartStep1Desc =>
+      'مینو > زبان کی ترتیبات میں اپنی اور سیکھنے کی زبان منتخب کریں۔';
+
+  @override
+  String get quickStartStep2Title => '2۔ بنیادی طریقہ کار';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ان پٹ (مائیکروفون/کی بورڈ) -> ترجمہ -> محفوظ کریں کے ترتیب سے اپنے لرننگ کارڈز بنائیں۔';
+
+  @override
+  String get quickStartStep3Title => '3۔ طریقوں کا استعمال';
+
+  @override
+  String get quickStartStep3Desc =>
+      'چیٹ کے ذریعے مشق کریں، اور تلفظ کی مشق ٹیب میں متن کو دیکھ کر خود تلفظ کی مشق کریں۔';
 }

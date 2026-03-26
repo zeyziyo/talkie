@@ -378,7 +378,8 @@ class AppLocalizationsKo extends AppLocalizations {
       '• 자료집 선택: 우측 상단 메뉴(⋮)에서 \'학습 자료집 선택\'이나 \'온라인 자료실\' 이용\n• 카드 뒤집기: \'보이기/숨기기\'로 번역 확인\n• 듣기: 스피커 아이콘으로 발음 재생\n• 학습 완료: 체크 표시(V)로 학습 완료 처리\n• 삭제: 카드를 길게 눌러(Long Click) 기록 삭제\n• 검색 및 필터: 검색바(실시간 스마트 검색)와 태그, 시작 글자 필터 지원';
 
   @override
-  String get helpMode3Desc => '문장을 듣고 따라 말하며(Shadowing) 발음을 연습하세요.';
+  String get helpMode3Desc =>
+      '문장을 듣고 텍스트를 보며 직접 발음 연습(Speaking Practice)을 하세요.';
 
   @override
   String get helpMode3Details =>
@@ -396,6 +397,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get helpTabModes => '모드 설명';
+
+  @override
+  String get helpTabQuickStart => '빠른 시작';
 
   @override
   String get helpTabTour => '체험하기';
@@ -1351,4 +1355,24 @@ class AppLocalizationsKo extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. 언어 설정';
+
+  @override
+  String get quickStartStep1Desc => '메뉴 > 언어 설정에서 내 언어와 학습 언어를 먼저 지정하세요.';
+
+  @override
+  String get quickStartStep2Title => '2. 기본 흐름';
+
+  @override
+  String get quickStartStep2Desc =>
+      '입력(마이크/키보드) -> 번역 -> 저장 순서로 나만의 학습 카드를 만드세요.';
+
+  @override
+  String get quickStartStep3Title => '3. 모드 활용';
+
+  @override
+  String get quickStartStep3Desc =>
+      '채팅으로 연습하고, 발음 연습 탭에서 텍스트를 보고 직접 발음하며 연습하세요.';
 }

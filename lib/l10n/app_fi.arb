@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI-chat: Harjoittele käytännön keskusteluja persoonan kanssa alareunan välilehdellä 'Chat'\n• Persoonan asetukset: Määritä vapaasti vastapuolen sukupuoli, nimi ja kielikoodi\n• GPS-tilanneleikki: Tunnistaa nykyisen sijaintisi ja suosittelee paikkaan sopivia keskustelunaiheita\n• Kaksi kieltä: AI:n vastaukset näytetään käännöksen kera, mikä maksimoi oppimisen\n• Historianhallinta: Suodata menneitä keskusteluja ja tallenna tiettyjä viestejä oppimismateriaaliksi keskustelujen aikana",
   "helpTabJson": "JSON Muoto",
   "helpTabModes": "Tilat",
+  "helpTabQuickStart": "Pika-aloitus",
   "helpTabTour": "Kierros",
   "helpTitle": "Ohje & Opas",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Aseta kielet",
+  "quickStartStep1Desc": "Määritä ensin oma kielesi ja opiskelukielesi valikossa Asetukset > Kielet.",
+  "quickStartStep2Title": "2. Peruskulku",
+  "quickStartStep2Desc": "Luo omia oppimiskortteja järjestyksessä Syöttö (mikrofoni/näppäimistö) -> Käännös -> Tallenna.",
+  "quickStartStep3Title": "3. Hyödynnä tiloja",
+  "quickStartStep3Desc": "Harjoittele chatissa ja harjoittele ääntämistä ääntämisharjoitukset-välilehdellä katsomalla tekstiä ja ääntämällä itse."
 }

@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Chat AI: Practica conversaciones reales con personas en el menú 'Chat' en la barra de pestañas inferior.\n• Configuración de persona: Especifica libremente el género, el nombre y el código de idioma de la otra persona.\n• Juego de roles GPS: Reconoce tu ubicación actual y recomienda temas de conversación apropiados para el lugar.\n• 2 idiomas: La respuesta de la IA se muestra con la traducción para maximizar el efecto de aprendizaje.\n• Gestión de registros: Filtra el historial de conversaciones pasadas y guarda mensajes específicos durante la conversación como materiales de aprendizaje.",
   "helpTabJson": "Formato JSON",
   "helpTabModes": "Modos",
+  "helpTabQuickStart": "Inicio rápido",
   "helpTabTour": "Hacer un recorrido",
   "helpTitle": "Ayuda y Guía",
   "helpTourDesc": "El **Círculo Resaltado** le guiará a través de las funciones principales.\n(p. ej., puede eliminar un registro manteniendo pulsado cuando el **Círculo Resaltado** lo señale.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Configuración de idioma",
+  "quickStartStep1Desc": "Primero, especifica tu idioma y el idioma de aprendizaje en Menú > Configuración de idioma.",
+  "quickStartStep2Title": "2. Flujo básico",
+  "quickStartStep2Desc": "Crea tus propias tarjetas de aprendizaje en el orden de entrada (micrófono/teclado) -> traducción -> guardar.",
+  "quickStartStep3Title": "3. Utilización de modos",
+  "quickStartStep3Desc": "Practica chateando y practica pronunciando directamente mientras miras el texto en la pestaña de práctica de pronunciación."
 }

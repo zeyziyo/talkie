@@ -415,6 +415,9 @@ class AppLocalizationsBe extends AppLocalizations {
   String get helpTabModes => 'Апісанне рэжымаў';
 
   @override
+  String get helpTabQuickStart => 'Хуткі старт';
+
+  @override
   String get helpTabTour => 'Пачаць тур';
 
   @override
@@ -1390,4 +1393,25 @@ class AppLocalizationsBe extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Выбраны вамі матэрыял не можа быць захаваны лакальна, паколькі ён не падтрымлівае бягучую мову навучання ($targetLang). Запытаць пераклад?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Наладзьце мовы';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Спачатку вызначце сваю мову і мову навучання ў меню > Налады мовы.';
+
+  @override
+  String get quickStartStep2Title => '2. Асноўны працэс';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Стварыце свае ўласныя навучальныя карткі ў парадку: увод (мікрафон/клавіятура) -> пераклад -> захаванне.';
+
+  @override
+  String get quickStartStep3Title => '3. Выкарыстоўвайце рэжымы';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Практыкуйцеся ў чаце і практыкуйце вымаўленне, гледзячы на тэкст ва ўкладцы практыкаванняў па вымаўленні.';
 }

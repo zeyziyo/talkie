@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Chat AI: Exersează conversații reale cu personaje din meniul 'Chat' din bara de tab-uri de jos\n• Setări personaj: Specifică liber sexul, numele și codul de limbă al celeilalte persoane\n• Joc de rol GPS: Recunoaște locația mea actuală și recomandă subiecte de conversație potrivite pentru locație\n• 2 limbi: Răspunsurile AI sunt afișate cu traducere pentru a maximiza efectul de învățare\n• Gestionarea înregistrărilor: Filtrează istoricul conversațiilor anterioare și salvează anumite mesaje din conversație ca materiale de studiu",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Moduri",
+  "helpTabQuickStart": "Începe rapid",
   "helpTabTour": "Tur",
   "helpTitle": "Ajutor & Ghid",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Setează limba",
+  "quickStartStep1Desc": "În Meniu > Setări limbă, specifică mai întâi limba ta și limba pe care o înveți.",
+  "quickStartStep2Title": "2. Fluxul de bază",
+  "quickStartStep2Desc": "Creează-ți propriile carduri de studiu în ordinea: introducere (microfon/tastatură) -> traducere -> salvare.",
+  "quickStartStep3Title": "3. Utilizează modurile",
+  "quickStartStep3Desc": "Exersează prin chat și exersează pronunția direct în fila de exersare a pronunției, uitându-te la text."
 }

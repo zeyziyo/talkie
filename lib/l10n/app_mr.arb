@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI चॅट: खालच्या टॅब बारमधील 'चॅट' मेनूमध्ये व्यक्तिरेखा (persona) आणि प्रत्यक्ष संभाषणाचा सराव करा\n• व्यक्तिरेखा सेटिंग: समोरच्या व्यक्तीचे लिंग, नाव, भाषा कोड तुमच्या सोयीनुसार सेट करा\n• GPS Situational Roleplay: तुमच्या सध्याच्या स्थानानुसार योग्य विषयांची शिफारस करते\n• 2 भाषा: AI चे उत्तर भाषांतरासह दर्शविले जाते, ज्यामुळे शिकण्याचा प्रभाव वाढतो\n• रेकॉर्ड व्यवस्थापन: मागील संभाषणांचा इतिहास फिल्टर करा आणि संभाषणातील विशिष्ट संदेश शिक्षण सामग्री म्हणून जतन करा",
   "helpTabJson": "JSON फॉरमॅट",
   "helpTabModes": "मोड्स",
+  "helpTabQuickStart": "झटपट सुरू करा",
   "helpTabTour": "टूर",
   "helpTitle": "मदत आणि मार्गदर्शक",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. भाषा सेट करा",
+  "quickStartStep1Desc": "मेनू > भाषा सेटिंग्ज मध्ये तुमची आणि शिकायची भाषा निवडा.",
+  "quickStartStep2Title": "2. मूलभूत प्रक्रिया",
+  "quickStartStep2Desc": "इनपुट (माइक/कीबोर्ड) -> भाषांतर -> जतन करा अशा क्रमाने तुमचे स्वतःचे लर्निंग कार्ड तयार करा.",
+  "quickStartStep3Title": "3. मोड वापरा",
+  "quickStartStep3Desc": "चॅटिंगद्वारे सराव करा आणि उच्चार सराव टॅबमध्ये मजकूर पाहून थेट उच्चारण्याचा सराव करा."
 }

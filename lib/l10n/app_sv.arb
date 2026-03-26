@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI-chatt: Öva på verkliga konversationer med en persona i menyn 'Chatt' i den nedre flikfältet\n• Personainställningar: Ange fritt motpartens kön, namn och språkkod\n• GPS-situationskomedi: Känner igen min nuvarande plats och rekommenderar samtalsämnen som passar platsen\n• Tvåspråkig: AI:s svar visas med översättning för att maximera inlärningseffekten\n• Logghantering: Filtrera tidigare konversationshistorik och spara specifika meddelanden i konversationen som läromedel",
   "helpTabJson": "JSON-format",
   "helpTabModes": "Lägen",
+  "helpTabQuickStart": "Snabbstart",
   "helpTabTour": "Tur",
   "helpTitle": "Hjälp & Guide",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Ställ in språk",
+  "quickStartStep1Desc": "Gå till Meny > Språkinställningar och välj först ditt språk och inlärningsspråk.",
+  "quickStartStep2Title": "2. Grundläggande flöde",
+  "quickStartStep2Desc": "Skapa dina egna studiekort i följande ordning: Inmatning (mikrofon/tangentbord) -> Översättning -> Spara.",
+  "quickStartStep3Title": "3. Använd lägen",
+  "quickStartStep3Desc": "Öva genom att chatta och öva på uttal genom att titta på texten i fliken Uttalsövning och uttala den själv."
 }

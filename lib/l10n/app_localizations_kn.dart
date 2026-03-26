@@ -415,6 +415,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get helpTabModes => 'ಮೋಡ್‌ಗಳು';
 
   @override
+  String get helpTabQuickStart => 'ತ್ವರಿತ ಪ್ರಾರಂಭ';
+
+  @override
   String get helpTabTour => 'ಪ್ರವಾಸ';
 
   @override
@@ -1384,4 +1387,25 @@ class AppLocalizationsKn extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ವಿಷಯವು ಪ್ರಸ್ತುತ ಅಧ್ಯಯನ ಭಾಷೆ ($targetLang) ಅನ್ನು ಬೆಂಬಲಿಸದ ಕಾರಣ ಸ್ಥಳೀಯವಾಗಿ ಉಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಅನುವಾದಿಸಲು ವಿನಂತಿಸಬೇಕೆ?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. ಭಾಷೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು';
+
+  @override
+  String get quickStartStep1Desc =>
+      'ಮೆನು > ಭಾಷಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ನಿಮ್ಮ ಭಾಷೆ ಮತ್ತು ಕಲಿಕೆಯ ಭಾಷೆಯನ್ನು ಮೊದಲು ನಿರ್ದಿಷ್ಟಪಡಿಸಿ.';
+
+  @override
+  String get quickStartStep2Title => '2. ಮೂಲ ಹರಿವು';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ಇನ್‌ಪುಟ್ (ಮೈಕ್ರೊಫೋನ್/ಕೀಬೋರ್ಡ್) -> ಅನುವಾದ -> ಉಳಿಸು ಕ್ರಮದಲ್ಲಿ ನಿಮ್ಮ ಸ್ವಂತ ಕಲಿಕೆ ಕಾರ್ಡ್‌ಗಳನ್ನು ರಚಿಸಿ.';
+
+  @override
+  String get quickStartStep3Title => '3. ಮೋಡ್ ಬಳಸಿ';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ಚಾಟ್ ಮೂಲಕ ಅಭ್ಯಾಸ ಮಾಡಿ, ಉಚ್ಚಾರಣೆ ಅಭ್ಯಾಸ ಟ್ಯಾಬ್‌ನಲ್ಲಿ ಪಠ್ಯವನ್ನು ವೀಕ್ಷಿಸಿ ಮತ್ತು ನೇರವಾಗಿ ಉಚ್ಚರಿಸುವ ಮೂಲಕ ಅಭ್ಯಾಸ ಮಾಡಿ.';
 }

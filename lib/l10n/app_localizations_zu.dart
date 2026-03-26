@@ -416,6 +416,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get helpTabModes => 'Incazelo Yezindlela';
 
   @override
+  String get helpTabQuickStart => 'Ukuqalisa Ngokushesha';
+
+  @override
   String get helpTabTour => 'Zithokozise';
 
   @override
@@ -1395,4 +1398,26 @@ class AppLocalizationsZu extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Izinto ozikhethile azilusekeli ulimi lokufunda olusethiwe njengamanje ($targetLang) futhi azikwazi ukulondolozwa endaweni yangakini. Ungathanda ukucela ukuhumushwa?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Ukusetha Ulimi';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Emenyu > Izilungiselelo Zolimi, qala ngokucacisa ulimi lwakho nolimi lokufunda.';
+
+  @override
+  String get quickStartStep2Title => '2. Ukuhamba Okuyisisekelo';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Dala ikhadi lakho lokufunda ngendlela oyithandayo ngokulandelana kokokufaka (imakhrofoni/ikhibhodi) -> ukuhumusha -> ukulondoloza.';
+
+  @override
+  String get quickStartStep3Title =>
+      '3. Ukusebenzisa Izindlela Ezihlukahlukene';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Prakthiza ngengxoxo, bese usebenzisa ithebhu yokuzijwayeza ukuphimisa amagama ukuze uzilolonge ngokuphimisa amagama ngokwakho ngenkathi ubuka umbhalo.';
 }

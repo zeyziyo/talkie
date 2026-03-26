@@ -416,6 +416,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get helpTabModes => 'ပုံစံများအကြောင်း';
 
   @override
+  String get helpTabQuickStart => 'အမြန်စတင်ရန်';
+
+  @override
   String get helpTabTour => 'စမ်းသုံးကြည့်ပါ';
 
   @override
@@ -1401,4 +1404,25 @@ class AppLocalizationsMy extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'သင်ရွေးချယ်ထားသော အကြောင်းအရာသည် လက်ရှိ သင်၏ လေ့လာလိုသော ဘာသာစကား ($targetLang) ကို မထောက်ပံ့သောကြောင့် ဒေသအလိုက် သိမ်းဆည်း၍ မရပါ။ ဘာသာပြန်ရန် တောင်းဆိုလိုပါသလား?';
   }
+
+  @override
+  String get quickStartStep1Title => '၁။ ဘာသာစကားများ သတ်မှတ်ပါ';
+
+  @override
+  String get quickStartStep1Desc =>
+      'မီနူး > ဘာသာစကားများ သတ်မှတ်ခြင်း တွင် သင်၏ဘာသာစကားနှင့် သင်ယူလိုသည့် ဘာသာစကားကို ဦးစွာ သတ်မှတ်ပါ။';
+
+  @override
+  String get quickStartStep2Title => '၂။ အခြေခံ လုပ်ဆောင်ပုံ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ထည့်သွင်း (မိုက်/ကီးဘုတ်) -> ဘာသာပြန် -> သိမ်းဆည်း အစီအစဉ်အတိုင်း သင့်ကိုယ်ပိုင် သင်ယူမှုကတ်များကို ဖန်တီးပါ။';
+
+  @override
+  String get quickStartStep3Title => '၃။ မုဒ်များကို အသုံးချပါ';
+
+  @override
+  String get quickStartStep3Desc =>
+      'စကားပြောခြင်းဖြင့် လေ့ကျင့်ပါ၊ အသံထွက် လေ့ကျင့်ရန် တက်ဘ်တွင် စာသားကိုကြည့်ပြီး ကိုယ်တိုင် အသံထွက်ကာ လေ့ကျင့်ပါ။';
 }

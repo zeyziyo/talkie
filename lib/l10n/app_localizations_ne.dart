@@ -413,6 +413,9 @@ class AppLocalizationsNe extends AppLocalizations {
   String get helpTabModes => 'मोड विवरण';
 
   @override
+  String get helpTabQuickStart => 'द्रुत सुरुवात';
+
+  @override
   String get helpTabTour => 'अनुभव लिनुहोस्';
 
   @override
@@ -1388,4 +1391,25 @@ class AppLocalizationsNe extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'तपाईंले चयन गर्नुभएको सामग्रीले हालको अध्ययन भाषा ($targetLang) लाई समर्थन नगर्ने भएकाले यसलाई स्थानीय रूपमा बचत गर्न सकिँदैन। के तपाईं अनुवाद अनुरोध गर्न चाहनुहुन्छ?';
   }
+
+  @override
+  String get quickStartStep1Title => '१. भाषा सेटिङ';
+
+  @override
+  String get quickStartStep1Desc =>
+      'मेनु > भाषा सेटिङमा गएर आफ्नो भाषा र सिक्ने भाषा पहिले तोक्नुहोस्।';
+
+  @override
+  String get quickStartStep2Title => '२. आधारभूत प्रक्रिया';
+
+  @override
+  String get quickStartStep2Desc =>
+      'इनपुट (माइक्रोफोन/किबोर्ड) -> अनुवाद -> बचत गर्ने क्रममा आफ्नै सिकाइ कार्ड बनाउनुहोस्।';
+
+  @override
+  String get quickStartStep3Title => '३. मोड प्रयोग';
+
+  @override
+  String get quickStartStep3Desc =>
+      'च्याटमा अभ्यास गर्नुहोस्, र उच्चारण अभ्यास ट्याबमा पाठ हेरेर प्रत्यक्ष उच्चारण गरी अभ्यास गर्नुहोस्।';
 }

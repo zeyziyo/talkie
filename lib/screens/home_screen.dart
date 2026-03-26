@@ -14,7 +14,6 @@ import '../widgets/help_dialog.dart';
 import '../constants/language_constants.dart';
 import 'chat_history_screen.dart';
 import '../widgets/online_library_dialog.dart';
-import '../constants/app_constants.dart';
 import 'participant_manage_screen.dart';
 import 'auth_screen.dart';
 import 'package:flutter/services.dart';
@@ -588,14 +587,20 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         context: context,
                         builder: (context) => HelpDialog(
                           initialModeIndex: appState.currentMode,
+                          initialTabIndex: 1, // Open "Modes" tab
                           onStartTutorial: () => _showTutorial(context),
                         ),
                       );
                       break;
                     case 'downloads':
-                      final localeCode = Localizations.localeOf(context).languageCode;
-                      final targetUrl = '${AppConstants.devWebsiteUrl}?lang=$localeCode';
-                      _launchURL(targetUrl);
+                      showDialog(
+                        context: context,
+                        builder: (context) => HelpDialog(
+                          initialModeIndex: appState.currentMode,
+                          initialTabIndex: 0, // Open "Quick Start" tab
+                          onStartTutorial: () => _showTutorial(context),
+                        ),
+                      );
                       break;
                     case 'settings':
                       _showLanguageSettingsDialog(context);
@@ -942,17 +947,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
 
 
-  // Unused _handleImport removed
-  Future<void> _launchURL(String urlString) async {
-    final Uri url = Uri.parse(urlString);
-    if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
-      if (mounted) {
-         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Could not launch $urlString')),
-        );
-      }
-    }
-  }
 
   void _showLanguageSettingsDialog(BuildContext context) {
     showDialog(

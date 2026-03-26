@@ -412,6 +412,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get helpTabModes => 'Razlaga načinov';
 
   @override
+  String get helpTabQuickStart => 'Hiteri začetek';
+
+  @override
   String get helpTabTour => 'Vodeni ogled';
 
   @override
@@ -1384,4 +1387,25 @@ class AppLocalizationsSl extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Izbrano gradivo ne podpira trenutno nastavljenega učnega jezika ($targetLang) in ga ni mogoče shraniti lokalno. Ali želite zahtevati prevod?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Izbira jezika';
+
+  @override
+  String get quickStartStep1Desc =>
+      'V meniju > Nastavitve jezika najprej izberite svoj jezik in jezik učenja.';
+
+  @override
+  String get quickStartStep2Title => '2. Osnovni postopek';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Ustvarite lastne učne kartice v naslednjem vrstnem redu: vnos (mikrofon/tipkovnica) -> prevod -> shranjevanje.';
+
+  @override
+  String get quickStartStep3Title => '3. Uporaba načinov';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Vadite s klepetom in vadite izgovorjavo neposredno z ogledom besedila na zavihku za vadbo izgovorjave.';
 }

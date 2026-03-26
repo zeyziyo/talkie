@@ -412,6 +412,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get helpTabModes => 'Modalità';
 
   @override
+  String get helpTabQuickStart => 'Guida Rapida';
+
+  @override
   String get helpTabTour => 'Guida introduttiva';
 
   @override
@@ -1392,4 +1395,25 @@ class AppLocalizationsIt extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Il materiale selezionato non supporta la lingua di studio impostata ($targetLang) e non può essere salvato localmente. Vuoi richiedere una traduzione?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Imposta le lingue';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Per prima cosa, specifica la tua lingua e la lingua di apprendimento in Menu > Impostazioni lingua.';
+
+  @override
+  String get quickStartStep2Title => '2. Flusso di base';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Crea le tue flashcard di apprendimento nell\'ordine: input (microfono/tastiera) -> traduzione -> salvataggio.';
+
+  @override
+  String get quickStartStep3Title => '3. Usa le modalità';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Esercitati tramite chat e fai pratica con la pronuncia nella scheda Esercizio di pronuncia guardando il testo e pronunciandolo direttamente.';
 }

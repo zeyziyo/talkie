@@ -416,6 +416,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get helpTabModes => 'Modi';
 
   @override
+  String get helpTabQuickStart => 'Snel aan de slag';
+
+  @override
   String get helpTabTour => 'Rondleiding';
 
   @override
@@ -1386,4 +1389,25 @@ class AppLocalizationsNl extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Het geselecteerde materiaal ondersteunt de huidige ingestelde leertaal ($targetLang) niet en kan niet lokaal worden opgeslagen. Wilt u een vertaling aanvragen?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Stel de taal in';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Stel eerst uw taal en de taal die u wilt leren in via Menu > Taalinstellingen.';
+
+  @override
+  String get quickStartStep2Title => '2. Basisworkflow';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Maak uw eigen leerkaarten in de volgorde: invoer (microfoon/toetsenbord) -> vertaling -> opslaan.';
+
+  @override
+  String get quickStartStep3Title => '3. Gebruik de modi';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Oefen met chatten en oefen uw uitspraak door de tekst te bekijken en zelf uit te spreken in het tabblad Oefen uitspraak.';
 }

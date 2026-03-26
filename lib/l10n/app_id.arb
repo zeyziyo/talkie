@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Obrolan AI: Berlatih percakapan praktis dengan persona di menu 'Obrolan' di bilah tab bawah\n• Pengaturan Persona: Tentukan jenis kelamin, nama, dan kode bahasa lawan secara bebas\n• Situasi GPS: Mengenali lokasi saya saat ini dan merekomendasikan topik percakapan yang sesuai dengan tempat tersebut\n• 2 Bahasa: Jawaban AI ditampilkan dengan terjemahan untuk memaksimalkan efek pembelajaran\n• Manajemen Catatan: Saring riwayat percakapan sebelumnya dan simpan pesan tertentu dalam percakapan sebagai materi pembelajaran",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Mode",
+  "helpTabQuickStart": "Mulai Cepat",
   "helpTabTour": "Tur",
   "helpTitle": "Bantuan & Panduan",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Atur Bahasa",
+  "quickStartStep1Desc": "Tentukan bahasa Anda dan bahasa yang ingin dipelajari di Menu > Pengaturan Bahasa terlebih dahulu.",
+  "quickStartStep2Title": "2. Alur Dasar",
+  "quickStartStep2Desc": "Buat kartu belajar Anda sendiri dengan urutan: Masukan (Mikrofon/Keyboard) -> Terjemahan -> Simpan.",
+  "quickStartStep3Title": "3. Manfaatkan Mode",
+  "quickStartStep3Desc": "Berlatih dengan obrolan, dan berlatih pengucapan secara langsung sambil melihat teks di tab Latihan Pengucapan."
 }

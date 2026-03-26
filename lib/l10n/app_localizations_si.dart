@@ -415,6 +415,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get helpTabModes => 'මාදිලි පැහැදිලි කිරීම';
 
   @override
+  String get helpTabQuickStart => 'ඉක්මන් ආරම්භය';
+
+  @override
   String get helpTabTour => 'අත්දැකීම';
 
   @override
@@ -1383,4 +1386,25 @@ class AppLocalizationsSi extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'ඔබ තෝරාගත් අන්තර්ගතය දැනට ඔබගේ පාඩම් භාෂාව ($targetLang) සඳහා සහය නොදක්වන බැවින් එය ඔබගේ උපාංගයේ සුරැකිය නොහැක. ඔබ පරිවර්තනයක් ඉල්ලීමට කැමතිද?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. භාෂාව සකසන්න';
+
+  @override
+  String get quickStartStep1Desc =>
+      'මෙනුව > භාෂා සැකසීම් වෙත ගොස් ඔබේ භාෂාව සහ ඉගෙනුම් භාෂාව පළමුව තෝරන්න.';
+
+  @override
+  String get quickStartStep2Title => '2. මූලික පියවර';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ආදානය (මයික්‍රෆෝනය/යතුරුපුවරුව) -> පරිවර්තනය -> සුරැකීම යන අනුපිළිවෙලට ඔබේම ඉගෙනුම් කාඩ්පතක් සාදන්න.';
+
+  @override
+  String get quickStartStep3Title => '3. ක්‍රම භාවිතා කරන්න';
+
+  @override
+  String get quickStartStep3Desc =>
+      'චැට් කිරීමෙන් පුහුණු වන්න, උච්චාරණ පුහුණු පටිත්තෙහි පෙළ දෙස බලා කෙලින්ම උච්චාරණය කරමින් පුහුණු වන්න.';
 }

@@ -414,6 +414,9 @@ class AppLocalizationsKk extends AppLocalizations {
   String get helpTabModes => 'Режимдерді түсіндіру';
 
   @override
+  String get helpTabQuickStart => 'Жылдам бастау';
+
+  @override
   String get helpTabTour => 'Тәжірибе жасау';
 
   @override
@@ -1387,4 +1390,25 @@ class AppLocalizationsKk extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Сіз таңдаған материал қазіргі оқу тіліңізді ($targetLang) қолдамайтындықтан, жергілікті жерде сақталмайды. Аударманы сұрағыңыз келе ме?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Тілді орнату';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Мәзір > Тілді орнату бөлімінен өз тіліңізді және оқу тілін алдымен көрсетіңіз.';
+
+  @override
+  String get quickStartStep2Title => '2. Негізгі ағын';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Кіріс (микрофон/пернетақта) -> Аударма -> Сақтау ретімен өзіңіздің оқу картаңызды жасаңыз.';
+
+  @override
+  String get quickStartStep3Title => '3. Режимді пайдалану';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Чат арқылы жаттығып, айтылым жаттығулары қосымша бетінде мәтінді көріп, тікелей айтып жаттығыңыз.';
 }

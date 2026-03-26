@@ -411,6 +411,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get helpTabModes => 'Modi';
 
   @override
+  String get helpTabQuickStart => 'Schnellstart';
+
+  @override
   String get helpTabTour => 'Tour starten';
 
   @override
@@ -1390,4 +1393,25 @@ class AppLocalizationsDe extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Das ausgewählte Material unterstützt die aktuell eingestellte Lernsprache ($targetLang) nicht und kann daher nicht lokal gespeichert werden. Möchten Sie eine Übersetzung anfordern?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Spracheinstellungen';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Wähle zuerst deine Sprache und Lernsprache unter Menü > Spracheinstellungen.';
+
+  @override
+  String get quickStartStep2Title => '2. Grundlegender Ablauf';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Erstelle deine eigenen Lernkarten in der Reihenfolge Eingabe (Mikrofon/Tastatur) -> Übersetzung -> Speichern.';
+
+  @override
+  String get quickStartStep3Title => '3. Modusnutzung';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Übe im Chat, und übe die Aussprache direkt, indem du den Text auf der Registerkarte \"Ausspracheübung\" ansiehst.';
 }

@@ -417,6 +417,9 @@ class AppLocalizationsCy extends AppLocalizations {
   String get helpTabModes => 'Esboniad o\'r Moddau';
 
   @override
+  String get helpTabQuickStart => 'Dechrau Arni’n Gyflym';
+
+  @override
   String get helpTabTour => 'Cymryd Taith';
 
   @override
@@ -1393,4 +1396,25 @@ class AppLocalizationsCy extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Nid yw\'r iaith astudio ($targetLang) a ddewiswyd gennych yn cael ei chefnogi ar gyfer y deunydd hwn. A ydych am ofyn am gyfieithiad?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Gosod Iaith';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Yn newislen Gosodiadau > Iaith, dewiswch eich iaith frodorol a’r iaith rydych chi’n ei dysgu yn gyntaf.';
+
+  @override
+  String get quickStartStep2Title => '2. Llif Sylfaenol';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Creuwch eich cardiau dysgu eich hun trwy fewnbynnu (meicroffon/bysellfwrdd) -> cyfieithu -> cadw.';
+
+  @override
+  String get quickStartStep3Title => '3. Defnyddio Moddau';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Ymarferwch trwy sgwrsio, ac ymarferwch ynganiad trwy edrych ar destun a’i ynganu’n uniongyrchol yn y tab ymarfer ynganu.';
 }

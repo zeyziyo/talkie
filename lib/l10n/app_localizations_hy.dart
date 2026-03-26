@@ -415,6 +415,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get helpTabModes => 'Ռեժիմների նկարագրություն';
 
   @override
+  String get helpTabQuickStart => 'Արագ մեկնարկ';
+
+  @override
   String get helpTabTour => 'Փորձարկել';
 
   @override
@@ -1393,4 +1396,25 @@ class AppLocalizationsHy extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Ընտրված նյութը չի աջակցում ներկայիս ուսուցման լեզուն ($targetLang), և այն հնարավոր չէ տեղայնացնել: Ցանկանու՞մ եք թարգմանել:';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Լեզվի կարգավորումներ';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Նախ սահմանեք իմ և ուսումնասիրվող լեզուն Մենյու > Լեզվի կարգավորումներ բաժնում:';
+
+  @override
+  String get quickStartStep2Title => '2. Հիմնական հոսք';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Ստեղծեք ձեր սեփական ուսումնական քարտերը՝ մուտքագրում (խոսափող/ստեղնաշար) -> թարգմանություն -> պահպանում հաջորդականությամբ:';
+
+  @override
+  String get quickStartStep3Title => '3. Ռեժիմի օգտագործում';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Զրուցեք վարժվելու համար և վարժվեք ուղղակիորեն արտասանելով տեքստը Արտասանության վարժանք ներդիրում:';
 }

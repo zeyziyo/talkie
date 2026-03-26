@@ -415,6 +415,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get helpTabModes => 'Umfjöllun um stillingar';
 
   @override
+  String get helpTabQuickStart => 'Fljót byrjun';
+
+  @override
   String get helpTabTour => 'Kynnisferð';
 
   @override
@@ -1386,4 +1389,25 @@ class AppLocalizationsIs extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Valin gögn styðja ekki núverandi námstungumál ($targetLang) og því er ekki hægt að vista þau staðbundið. Viltu biðja um þýðingu?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Veldu tungumál';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Farðu í Valmynd > Tungumál til að velja þitt tungumál og tungumálið sem þú vilt læra.';
+
+  @override
+  String get quickStartStep2Title => '2. Grunnflæði';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Búðu til þín eigin spjöld í þessari röð: Inntak (hljóðnemi/lyklaborð) -> Þýðing -> Vista.';
+
+  @override
+  String get quickStartStep3Title => '3. Nýttu stillingar';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Æfðu þig í spjalli og æfðu framburð með því að horfa á textann í Framburðarflipanum.';
 }

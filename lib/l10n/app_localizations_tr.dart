@@ -413,6 +413,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get helpTabModes => 'Modlar';
 
   @override
+  String get helpTabQuickStart => 'Hızlı Başlangıç';
+
+  @override
   String get helpTabTour => 'Tur';
 
   @override
@@ -1386,4 +1389,25 @@ class AppLocalizationsTr extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Seçtiğiniz materyal, şu anda ayarlanan öğrenme dilinizi ($targetLang) desteklemediği için yerel olarak kaydedilemiyor. Çeviri istemek ister misiniz?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Dil Ayarları';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Menü > Dil Ayarları\'ndan önce kendi dilinizi ve öğrenmek istediğiniz dili belirtin.';
+
+  @override
+  String get quickStartStep2Title => '2. Temel Akış';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Girdi (mikrofon/klavye) -> Çeviri -> Kaydet sırasıyla kendi öğrenme kartlarınızı oluşturun.';
+
+  @override
+  String get quickStartStep3Title => '3. Modları Kullanma';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Sohbet ederek pratik yapın ve Telaffuz Pratiği sekmesinde metni görerek doğrudan telaffuz ederek pratik yapın.';
 }

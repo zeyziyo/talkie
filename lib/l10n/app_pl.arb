@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Czat AI: Ćwicz prawdziwe rozmowy z personami w menu „Czat” na dolnym pasku kart\n• Ustawienia persony: Dowolne określanie płci, imienia i kodu języka rozmówcy\n• Scenki GPS: Rozpoznawanie bieżącej lokalizacji i rekomendowanie tematów rozmów odpowiednich do miejsca\n• Dwa języki: Odpowiedzi AI są wyświetlane wraz z tłumaczeniem, co maksymalizuje efekt uczenia się\n• Zarządzanie historią: Filtrowanie historii poprzednich rozmów i zapisywanie określonych wiadomości podczas rozmowy jako materiałów do nauki",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Tryby",
+  "helpTabQuickStart": "Szybki start",
   "helpTabTour": "Wycieczka",
   "helpTitle": "Pomoc i Przewodnik",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Ustaw język",
+  "quickStartStep1Desc": "Najpierw ustaw swój język i język nauki w Menu > Ustawienia języka.",
+  "quickStartStep2Title": "2. Podstawowy tok pracy",
+  "quickStartStep2Desc": "Twórz własne karty do nauki w kolejności: wprowadź (mikrofon/klawiatura) -> przetłumacz -> zapisz.",
+  "quickStartStep3Title": "3. Wykorzystaj tryby",
+  "quickStartStep3Desc": "Ćwicz na czacie i ćwicz wymowę, patrząc na tekst w zakładce Ćwiczenia wymowy."
 }

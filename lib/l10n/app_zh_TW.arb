@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI 聊天：在底部標籤欄的“聊天”菜單中與角色進行實際對話練習\n• 角色設定：自由指定對方的性別、姓名、語言代碼\n• GPS 情境劇：識別您當前的位置並推薦適合該地點的對話主題\n• 2 種語言：AI 的回答與翻譯一起顯示，以最大限度地提高學習效果\n• 記錄管理：過濾過去的對話歷史記錄並將對話中的特定消息保存為學習材料",
   "helpTabJson": "JSON 格式",
   "helpTabModes": "模式",
+  "helpTabQuickStart": "快速開始",
   "helpTabTour": "導覽",
   "helpTitle": "幫助與指南",
   "helpTourDesc": "開始教學後，**高亮圓圈**將引導您了解主要功能。\n(例如：當**高亮圓圈**指向學習卡片時，長按可將其刪除。)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. 設定語言",
+  "quickStartStep1Desc": "請先在「選單 > 語言設定」中指定您的母語和學習語言。",
+  "quickStartStep2Title": "2. 基本流程",
+  "quickStartStep2Desc": "按照「輸入 (麥克風/鍵盤) -> 翻譯 -> 儲存」的順序，建立您自己的學習卡。",
+  "quickStartStep3Title": "3. 模式活用",
+  "quickStartStep3Desc": "透過聊天進行練習，並在「發音練習」分頁中看著文字直接發音練習。"
 }

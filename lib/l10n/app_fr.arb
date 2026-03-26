@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Chat IA : entraînez-vous à des conversations pratiques avec des personnalités dans le menu « Chat » dans la barre d'onglets inférieure\n• Paramètres de personnalité : spécifiez librement le sexe, le nom et le code de langue de l'autre personne\n• Pièce de situation GPS : reconnaissez ma position actuelle et recommandez des sujets de conversation adaptés au lieu\n• Bilingue : les réponses de l'IA sont affichées avec des traductions pour maximiser l'effet d'apprentissage\n• Gestion des enregistrements : filtrez l'historique des conversations passées et enregistrez des messages spécifiques des conversations comme matériel d'apprentissage",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Explication des modes",
+  "helpTabQuickStart": "Démarrage rapide",
   "helpTabTour": "Visite guidée",
   "helpTitle": "Aide et Guide",
   "helpTourDesc": "Le **Cercle de Surbrillance** vous guidera à travers les fonctionnalités principales.\n(ex : vous pouvez supprimer un enregistrement en appuyant longuement lorsque le **Cercle de Surbrillance** le pointe.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Configuration de la langue",
+  "quickStartStep1Desc": "Définissez d'abord votre langue et votre langue d'apprentissage dans Menu > Paramètres de langue.",
+  "quickStartStep2Title": "2. Flux de base",
+  "quickStartStep2Desc": "Créez vos propres cartes d'apprentissage dans l'ordre suivant : Saisie (microphone/clavier) -> Traduction -> Enregistrement.",
+  "quickStartStep3Title": "3. Utilisation des modes",
+  "quickStartStep3Desc": "Entraînez-vous par chat et entraînez-vous à prononcer directement en regardant le texte dans l'onglet d'entraînement à la prononciation."
 }

@@ -413,6 +413,9 @@ class AppLocalizationsAs extends AppLocalizations {
   String get helpTabModes => 'মোডৰ বিষয়ে';
 
   @override
+  String get helpTabQuickStart => 'দ্ৰুত আৰম্ভণি';
+
+  @override
   String get helpTabTour => 'অনুভৱ কৰক';
 
   @override
@@ -1385,4 +1388,25 @@ class AppLocalizationsAs extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'আপুনি নিৰ্বাচন কৰা সামগ্ৰীটোৱে বৰ্তমানৰ অধ্যয়নৰ ভাষা ($targetLang) সমৰ্থন নকৰে, সেয়ে ইয়াক স্থানীয়ভাৱে সংৰক্ষণ কৰিব নোৱাৰি। আপুনি অনুবাদৰ বাবে অনুৰোধ কৰিব বিচাৰেনে?';
   }
+
+  @override
+  String get quickStartStep1Title => '১. ভাষা ছেটিং';
+
+  @override
+  String get quickStartStep1Desc =>
+      'মেনু > ভাষা ছেটিংত আপোনাৰ ভাষা আৰু শিকিব বিচৰা ভাষা নিৰ্ধাৰণ কৰক।';
+
+  @override
+  String get quickStartStep2Title => '২. মৌলিক প্ৰক্ৰিয়া';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ইনপুট (মাইক্ৰোফোন/কী-বৰ্ড) -> অনুবাদ -> সংৰক্ষণ ক্ৰমত আপোনাৰ নিজৰ শিকন কাৰ্ড সৃষ্টি কৰক।';
+
+  @override
+  String get quickStartStep3Title => '৩. মোড ব্যৱহাৰ কৰক';
+
+  @override
+  String get quickStartStep3Desc =>
+      'চেটিংৰ জৰিয়তে অনুশীলন কৰক, আৰু উচ্চাৰণ অনুশীলন টেবত পাঠ চাই পোনপটীয়াকৈ উচ্চাৰণ কৰি অনুশীলন কৰক।';
 }

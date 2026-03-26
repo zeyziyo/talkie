@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI Chat: Magsanay ng tunay na pag-uusap sa persona sa menu na 'Chat' sa ibabang tab bar\n• Mga Setting ng Persona: Malayang tukuyin ang kasarian, pangalan, at code ng wika ng ibang partido\n• GPS Sitwasyon: Inirerekomenda ang mga paksa ng pag-uusap na angkop para sa lokasyon sa pamamagitan ng pagkilala sa aking kasalukuyang lokasyon\n• 2 Wika: Ang sagot ng AI ay ipinapakita kasama ng pagsasalin upang mapakinabangan ang epekto ng pag-aaral\n• Pamamahala ng Talaan: Pag-filter ng nakaraang kasaysayan ng pag-uusap at pag-save ng mga partikular na mensahe sa pag-uusap bilang materyal sa pag-aaral",
   "helpTabJson": "Format ng JSON",
   "helpTabModes": "Paglalarawan ng Mode",
+  "helpTabQuickStart": "Mabilis na Pagsisimula",
   "helpTabTour": "Mag-tour",
   "helpTitle": "Tulong at Gabay",
   "helpTourDesc": "Ginagabayan ka ng **Highlight Circle** sa mga pangunahing feature.\n(Hal: Maaari mong i-delete ang card na itinuturo ng **Highlight Circle** sa pamamagitan ng pagpindot nang matagal dito.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Itakda ang Wika",
+  "quickStartStep1Desc": "Sa Menu > Mga Setting ng Wika, itakda muna ang iyong wika at ang wikang pinag-aaralan.",
+  "quickStartStep2Title": "2. Pangunahing Daloy",
+  "quickStartStep2Desc": "Lumikha ng sarili mong learning card sa pamamagitan ng Input (Mikropono/Keyboard) -> Pagsasalin -> Pag-save.",
+  "quickStartStep3Title": "3. Gamitin ang mga Mode",
+  "quickStartStep3Desc": "Magpraktis sa pamamagitan ng chat, at magpraktis ng pagbigkas sa tab na Pagsasanay sa Pagbigkas sa pamamagitan ng pagtingin sa teksto at pagbigkas nito nang direkta."
 }

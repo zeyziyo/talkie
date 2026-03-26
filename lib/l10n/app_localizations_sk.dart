@@ -413,6 +413,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get helpTabModes => 'Popis režimov';
 
   @override
+  String get helpTabQuickStart => 'Rýchly štart';
+
+  @override
   String get helpTabTour => 'Prehliadka';
 
   @override
@@ -1384,4 +1387,25 @@ class AppLocalizationsSk extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Vybraný materiál nepodporuje aktuálne nastavený jazyk štúdia ($targetLang), preto ho nie je možné uložiť lokálne. Chcete požiadať o preklad?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Nastavenie jazykov';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Najprv nastavte svoj jazyk a jazyk, ktorý sa učíte, v ponuke > Nastavenie jazyka.';
+
+  @override
+  String get quickStartStep2Title => '2. Základný postup';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Vytvorte si vlastné vzdelávacie kartičky v poradí: Vstup (mikrofón/klávesnica) -> Preklad -> Uloženie.';
+
+  @override
+  String get quickStartStep3Title => '3. Využívanie režimov';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Precvičujte si prostredníctvom chatu a cvičte výslovnosť priamym vyslovovaním textu na karte Cvičenie výslovnosti.';
 }

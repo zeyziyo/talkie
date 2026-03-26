@@ -412,6 +412,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get helpTabModes => 'Lägen';
 
   @override
+  String get helpTabQuickStart => 'Snabbstart';
+
+  @override
   String get helpTabTour => 'Tur';
 
   @override
@@ -1376,4 +1379,25 @@ class AppLocalizationsSv extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Det valda materialet stöder inte det nuvarande inlärningsspråket ($targetLang) och kan inte sparas lokalt. Vill du begära en översättning?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Ställ in språk';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Gå till Meny > Språkinställningar och välj först ditt språk och inlärningsspråk.';
+
+  @override
+  String get quickStartStep2Title => '2. Grundläggande flöde';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Skapa dina egna studiekort i följande ordning: Inmatning (mikrofon/tangentbord) -> Översättning -> Spara.';
+
+  @override
+  String get quickStartStep3Title => '3. Använd lägen';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Öva genom att chatta och öva på uttal genom att titta på texten i fliken Uttalsövning och uttala den själv.';
 }

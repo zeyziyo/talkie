@@ -396,6 +396,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get helpTabModes => '機能紹介';
 
   @override
+  String get helpTabQuickStart => 'クイックスタート';
+
+  @override
   String get helpTabTour => 'ツアー';
 
   @override
@@ -1346,4 +1349,23 @@ class AppLocalizationsJa extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return '選択した教材は、現在設定されている学習言語（$targetLang）をサポートしていないため、ローカルに保存できません。翻訳をリクエストしますか？';
   }
+
+  @override
+  String get quickStartStep1Title => '1. 言語設定';
+
+  @override
+  String get quickStartStep1Desc => 'メニュー > 言語設定で、自分の言語と学習言語をまず指定してください。';
+
+  @override
+  String get quickStartStep2Title => '2. 基本的な流れ';
+
+  @override
+  String get quickStartStep2Desc =>
+      '入力（マイク/キーボード） -> 翻訳 -> 保存 の順で、自分だけの学習カードを作りましょう。';
+
+  @override
+  String get quickStartStep3Title => '3. モード活用';
+
+  @override
+  String get quickStartStep3Desc => 'チャットで練習したり、発音練習タブでテキストを見て直接発音しながら練習しましょう。';
 }

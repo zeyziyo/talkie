@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Chat de IA: practica conversas reais con personaxes no menú 'Chat' na barra de pestanas inferior\n• Configuración de personaxe: especifica libremente o xénero, o nome e o código de idioma da outra persoa\n• Escenas de GPS: recoñece a miña localización actual e recomenda temas de conversa axeitados para o lugar\n• Dous idiomas: as respostas da IA móstranse coa tradución para maximizar o efecto da aprendizaxe\n• Xestión de rexistros: filtra o historial de conversas pasadas e garda mensaxes específicas das conversas como material de aprendizaxe",
   "helpTabJson": "Formato JSON",
   "helpTabModes": "Descrición dos modos",
+  "helpTabQuickStart": "Guía rápida",
   "helpTabTour": "Visita guiada",
   "helpTitle": "Axuda e guía",
   "helpTourDesc": "Un **círculo resaltado** guiaráche polas funcións clave.\n(Ex: mantén pulsada a tarxeta que apunta o **círculo resaltado** para eliminar.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Selecciona o idioma",
+  "quickStartStep1Desc": "Primeiro, especifica o teu idioma e o idioma que queres aprender en Menú > Configuración de idioma.",
+  "quickStartStep2Title": "2. Fluxo básico",
+  "quickStartStep2Desc": "Crea as túas propias tarxetas de aprendizaxe na seguinte orde: entrada (micrófono/teclado) -> tradución -> gardar.",
+  "quickStartStep3Title": "3. Usa os modos",
+  "quickStartStep3Desc": "Practica chateando e practica pronunciando directamente mentres ves o texto na pestana de práctica de pronuncia."
 }

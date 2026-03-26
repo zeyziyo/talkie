@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI-chat: Øv på praktiske samtaler med en persona i 'Chat'-menyen på den nederste fanelinjen\n• Personainnstillinger: Spesifiser fritt kjønn, navn og språkkode for motparten\n• GPS-situasjonsspill: Gjenkjenner min nåværende posisjon og anbefaler samtaleemner som passer stedet\n• 2 språk: AI-ens svar vises med oversettelse for å maksimere læringseffekten\n• Loggadministrasjon: Filtrer tidligere samtalelogger og lagre spesifikke meldinger i samtalen som læringsmateriell",
   "helpTabJson": "JSON-format",
   "helpTabModes": "Moduser",
+  "helpTabQuickStart": "Hurtigstart",
   "helpTabTour": "Tur",
   "helpTitle": "Hjelp & Guide",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Angi språk",
+  "quickStartStep1Desc": "Spesifiser først språket ditt og språket du vil lære under Meny > Språkinnstillinger.",
+  "quickStartStep2Title": "2. Grunnleggende flyt",
+  "quickStartStep2Desc": "Lag dine egne læringskort i rekkefølgen Input (mikrofon/tastatur) -> Oversettelse -> Lagre.",
+  "quickStartStep3Title": "3. Bruk moduser",
+  "quickStartStep3Desc": "Øv deg med chat, og øv på uttale direkte ved å se på teksten i kategorien Uttaleøvelse."
 }

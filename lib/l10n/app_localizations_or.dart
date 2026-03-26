@@ -418,6 +418,9 @@ class AppLocalizationsOr extends AppLocalizations {
   String get helpTabModes => 'ମୋଡ୍ ବ୍ୟାଖ୍ୟା';
 
   @override
+  String get helpTabQuickStart => 'ଶୀଘ୍ର ଆରମ୍ଭ';
+
+  @override
   String get helpTabTour => 'ଅନୁଭବ କରନ୍ତୁ';
 
   @override
@@ -1394,4 +1397,25 @@ class AppLocalizationsOr extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'ଆପଣଙ୍କ ଦ୍ୱାରା ଚୟନ କରାଯାଇଥିବା ସାମଗ୍ରୀ ବର୍ତ୍ତମାନ ସେଟ୍ ହୋଇଥିବା ଅଧ୍ୟୟନ ଭାଷା ($targetLang) କୁ ସମର୍ଥନ କରେ ନାହିଁ ଏବଂ ସ୍ଥାନୀୟ ଭାବରେ ସଂରକ୍ଷିତ ହୋଇପାରିବ ନାହିଁ। ଆପଣ ଏହାର ଅନୁବାଦ କରିବାକୁ ଅନୁରୋଧ କରିବାକୁ ଚାହାଁନ୍ତି କି?';
   }
+
+  @override
+  String get quickStartStep1Title => '୧. ଭାଷା ସେଟିଂ';
+
+  @override
+  String get quickStartStep1Desc =>
+      'ମେନୁ > ଭାଷା ସେଟିଂକୁ ଯାଇ ପ୍ରଥମେ ଆପଣଙ୍କ ଭାଷା ଏବଂ ଶିକ୍ଷଣ ଭାଷା ବାଛନ୍ତୁ।';
+
+  @override
+  String get quickStartStep2Title => '୨. ମୂଳ ପ୍ରବାହ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ଇନପୁଟ୍ (ମାଇକ୍ରୋଫୋନ୍/କୀବୋର୍ଡ) -> ଅନୁବାଦ -> ସେଭ୍ କ୍ରମରେ ଆପଣଙ୍କର ନିଜସ୍ୱ ଶିକ୍ଷଣ କାର୍ଡ ତିଆରି କରନ୍ତୁ।';
+
+  @override
+  String get quickStartStep3Title => '୩. ମୋଡ୍ ବ୍ୟବହାର';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ଚାଟିଂ କରି ଅଭ୍ୟାସ କରନ୍ତୁ, ଏବଂ ଉଚ୍ଚାରଣ ଅଭ୍ୟାସ ଟ୍ୟାବରେ ଟେକ୍ସଟ୍ ଦେଖି ସିଧାସଳଖ ଉଚ୍ଚାରଣ କରି ଅଭ୍ୟାସ କରନ୍ତୁ।';
 }

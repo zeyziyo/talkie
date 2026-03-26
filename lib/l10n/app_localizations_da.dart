@@ -408,6 +408,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get helpTabModes => 'Tilstande';
 
   @override
+  String get helpTabQuickStart => 'Hurtigstart';
+
+  @override
   String get helpTabTour => 'Tur';
 
   @override
@@ -1375,4 +1378,25 @@ class AppLocalizationsDa extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Det valgte materiale understøtter ikke det aktuelt indstillede undervisningssprog ($targetLang) og kan ikke gemmes lokalt. Vil du anmode om en oversættelse?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Indstil sprog';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Indstil først dit sprog og det sprog, du vil lære, under Menu > Sprogindstillinger.';
+
+  @override
+  String get quickStartStep2Title => '2. Grundlæggende flow';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Opret dine egne flashcards i rækkefølgen input (mikrofon/tastatur) -> oversættelse -> gem.';
+
+  @override
+  String get quickStartStep3Title => '3. Udnyt tilstande';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Øv dig med chat, og øv dig i at udtale ved at se teksten direkte under fanen Udtaleøvelse.';
 }

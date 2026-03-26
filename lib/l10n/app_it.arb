@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Chat AI: esercita la conversazione pratica con la persona nel menu 'Chat' nella barra delle schede in basso\n• Impostazioni personaggio: specifica liberamente il sesso, il nome e il codice lingua dell'altra persona\n• Situazione GPS: riconosce la mia posizione attuale e consiglia argomenti di conversazione adatti al luogo\n• Bilingue: le risposte dell'IA vengono visualizzate con la traduzione per massimizzare l'effetto di apprendimento\n• Gestione dei record: filtra la cronologia delle conversazioni passate e salva messaggi specifici durante la conversazione come materiale di apprendimento",
   "helpTabJson": "Formato JSON",
   "helpTabModes": "Modalità",
+  "helpTabQuickStart": "Guida Rapida",
   "helpTabTour": "Guida introduttiva",
   "helpTitle": "Aiuto & Guida",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Imposta le lingue",
+  "quickStartStep1Desc": "Per prima cosa, specifica la tua lingua e la lingua di apprendimento in Menu > Impostazioni lingua.",
+  "quickStartStep2Title": "2. Flusso di base",
+  "quickStartStep2Desc": "Crea le tue flashcard di apprendimento nell'ordine: input (microfono/tastiera) -> traduzione -> salvataggio.",
+  "quickStartStep3Title": "3. Usa le modalità",
+  "quickStartStep3Desc": "Esercitati tramite chat e fai pratica con la pronuncia nella scheda Esercizio di pronuncia guardando il testo e pronunciandolo direttamente."
 }

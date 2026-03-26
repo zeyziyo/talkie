@@ -408,6 +408,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get helpTabModes => 'ຄຳອະທິບາຍໂໝດ';
 
   @override
+  String get helpTabQuickStart => 'ເລີ່ມຕົ້ນດ່ວນ';
+
+  @override
   String get helpTabTour => 'ທົດລອງໃຊ້';
 
   @override
@@ -1377,4 +1380,25 @@ class AppLocalizationsLo extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'ເອກະສານທີ່ທ່ານເລືອກບໍ່ຮອງຮັບພາສາການຮຽນທີ່ຕັ້ງໄວ້ໃນປັດຈຸບັນ ($targetLang) ແລະບໍ່ສາມາດບັນທຶກໄວ້ໃນເຄື່ອງໄດ້. ທ່ານຕ້ອງການຂໍການແປບໍ່?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. ຕັ້ງຄ່າພາສາ';
+
+  @override
+  String get quickStartStep1Desc =>
+      'ກຳນົດພາສາຂອງຂ້ອຍ ແລະ ພາສາການຮຽນຮູ້ຂອງຂ້ອຍກ່ອນໃນ ເມນູ > ການຕັ້ງຄ່າພາສາ.';
+
+  @override
+  String get quickStartStep2Title => '2. ຂັ້ນຕອນພື້ນຖານ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ສ້າງບັດຮຽນຂອງເຈົ້າເອງຕາມລຳດັບ: ປ້ອນຂໍ້ມູນ (ໄມໂຄຣໂຟນ/ແປ້ນພິມ) -> ແປ -> ບັນທຶກ.';
+
+  @override
+  String get quickStartStep3Title => '3. ໃຊ້ໂໝດ';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ຝຶກສົນທະນາ ແລະ ຝຶກອອກສຽງໂດຍການເບິ່ງຂໍ້ຄວາມໃນແຖບຝຶກອອກສຽງ.';
 }

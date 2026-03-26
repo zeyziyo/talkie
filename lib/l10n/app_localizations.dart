@@ -963,7 +963,7 @@ abstract class AppLocalizations {
   /// No description provided for @helpMode3Desc.
   ///
   /// In ko, this message translates to:
-  /// **'문장을 듣고 따라 말하며(Shadowing) 발음을 연습하세요.'**
+  /// **'문장을 듣고 텍스트를 보며 직접 발음 연습(Speaking Practice)을 하세요.'**
   String get helpMode3Desc;
 
   /// No description provided for @helpMode3Details.
@@ -995,6 +995,12 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'모드 설명'**
   String get helpTabModes;
+
+  /// No description provided for @helpTabQuickStart.
+  ///
+  /// In ko, this message translates to:
+  /// **'빠른 시작'**
+  String get helpTabQuickStart;
 
   /// No description provided for @helpTabTour.
   ///
@@ -2777,6 +2783,42 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'선택하신 자료는 현재 설정된 학습 언어({targetLang})를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?'**
   String studyLangNotFoundDesc(String targetLang);
+
+  /// No description provided for @quickStartStep1Title.
+  ///
+  /// In ko, this message translates to:
+  /// **'1. 언어 설정'**
+  String get quickStartStep1Title;
+
+  /// No description provided for @quickStartStep1Desc.
+  ///
+  /// In ko, this message translates to:
+  /// **'메뉴 > 언어 설정에서 내 언어와 학습 언어를 먼저 지정하세요.'**
+  String get quickStartStep1Desc;
+
+  /// No description provided for @quickStartStep2Title.
+  ///
+  /// In ko, this message translates to:
+  /// **'2. 기본 흐름'**
+  String get quickStartStep2Title;
+
+  /// No description provided for @quickStartStep2Desc.
+  ///
+  /// In ko, this message translates to:
+  /// **'입력(마이크/키보드) -> 번역 -> 저장 순서로 나만의 학습 카드를 만드세요.'**
+  String get quickStartStep2Desc;
+
+  /// No description provided for @quickStartStep3Title.
+  ///
+  /// In ko, this message translates to:
+  /// **'3. 모드 활용'**
+  String get quickStartStep3Title;
+
+  /// No description provided for @quickStartStep3Desc.
+  ///
+  /// In ko, this message translates to:
+  /// **'채팅으로 연습하고, 발음 연습 탭에서 텍스트를 보고 직접 발음하며 연습하세요.'**
+  String get quickStartStep3Desc;
 }
 
 class _AppLocalizationsDelegate

@@ -411,6 +411,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get helpTabModes => 'Njia';
 
   @override
+  String get helpTabQuickStart => 'Mwongozo wa Haraka';
+
+  @override
   String get helpTabTour => 'Ziara';
 
   @override
@@ -1380,4 +1383,25 @@ class AppLocalizationsSw extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Nyenzo uliyochagua haiauni lugha ya kujifunzia uliyochagua ($targetLang), na haiwezi kuhifadhiwa. Je, ungependa kuomba tafsiri?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Weka Lugha';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Nenda Menyu > Weka Lugha. Chagua lugha yako na lugha unayojifunza.';
+
+  @override
+  String get quickStartStep2Title => '2. Hatua za Msingi';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Unda kadi zako za kujifunzia kwa mpangilio huu: Ingiza (maikrofoni/kibodi) -> Tafsiri -> Hifadhi.';
+
+  @override
+  String get quickStartStep3Title => '3. Tumia Njia Mbalimbali';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Fanya mazoezi kwa kupitia mazungumzo, na fanya mazoezi ya matamshi kwa kuangalia maandishi kwenye kichupo cha mazoezi ya matamshi.';
 }

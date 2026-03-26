@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI tērzēšana: praktizējiet sarunas reālajā dzīvē ar personām izvēlnē 'Tērzēšana' apakšējā cilnes joslā\n• Personas iestatījumi: brīvi norādiet otras personas dzimumu, vārdu un valodas kodu\n• GPS situācijas spēle: atpazīst manu pašreizējo atrašanās vietu un iesaka tērzēšanas tēmas, kas piemērotas vietai\n• Divvalodu: AI atbildes tiek parādītas kopā ar tulkojumiem, lai maksimāli palielinātu mācību efektu\n• Ierakstu pārvaldība: filtrējiet pagātnes sarunu vēsturi un saglabājiet noteiktus ziņojumus sarunās kā mācību materiālus",
   "helpTabJson": "JSON formāts",
   "helpTabModes": "Režīmu skaidrojumi",
+  "helpTabQuickStart": "Ātrā uzsākšana",
   "helpTabTour": "Apskatīt",
   "helpTitle": "Palīdzība un ceļveži",
   "helpTourDesc": "**Izgaismots aplis** sniedz norādījumus par galvenajām funkcijām.\n(Piemērs: varat ilgi nospiest kartīti, uz kuru norāda **izgaismots aplis**, lai to izdzēstu.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. valodas iestatīšana",
+  "quickStartStep1Desc": "Vispirms izvēlieties savu un mācību valodu izvēlnē > valodas iestatījumi.",
+  "quickStartStep2Title": "2. pamata plūsma",
+  "quickStartStep2Desc": "Izveidojiet savas mācību kartītes šādā secībā: ievade (mikrofons/tastatūra) -> tulkošana -> saglabāšana.",
+  "quickStartStep3Title": "3. režīma izmantošana",
+  "quickStartStep3Desc": "Trenējieties tērzējot un praktizējiet izrunu, skatoties tekstu cilnē izrunas praktizēšana."
 }

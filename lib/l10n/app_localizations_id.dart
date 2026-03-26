@@ -413,6 +413,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get helpTabModes => 'Mode';
 
   @override
+  String get helpTabQuickStart => 'Mulai Cepat';
+
+  @override
   String get helpTabTour => 'Tur';
 
   @override
@@ -1386,4 +1389,25 @@ class AppLocalizationsId extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Materi yang Anda pilih tidak mendukung bahasa belajar yang saat ini diatur ($targetLang), sehingga tidak dapat disimpan secara lokal. Apakah Anda ingin meminta terjemahan?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Atur Bahasa';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Tentukan bahasa Anda dan bahasa yang ingin dipelajari di Menu > Pengaturan Bahasa terlebih dahulu.';
+
+  @override
+  String get quickStartStep2Title => '2. Alur Dasar';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Buat kartu belajar Anda sendiri dengan urutan: Masukan (Mikrofon/Keyboard) -> Terjemahan -> Simpan.';
+
+  @override
+  String get quickStartStep3Title => '3. Manfaatkan Mode';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Berlatih dengan obrolan, dan berlatih pengucapan secara langsung sambil melihat teks di tab Latihan Pengucapan.';
 }

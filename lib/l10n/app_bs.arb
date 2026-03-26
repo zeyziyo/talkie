@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• AI chat: Vježbajte stvarne razgovore s personama u izborniku 'Chat' na donjoj traci kartica\n• Postavke persone: Slobodno odredite spol, ime i jezični kod druge osobe\n• GPS situacijska drama: Preporučuje teme razgovora prikladne za mjesto prepoznavanjem vaše trenutne lokacije\n• Dvojezično: Odgovor AI se prikazuje s prijevodom kako bi se maksimizirao učinak učenja\n• Upravljanje zapisima: Filtrirajte prošle povijesti razgovora i spremite određene poruke tijekom razgovora kao materijale za učenje",
   "helpTabJson": "JSON format",
   "helpTabModes": "Objašnjenje načina rada",
+  "helpTabQuickStart": "Brzi početak",
   "helpTabTour": "Probajte",
   "helpTitle": "Pomoć i vodiči",
   "helpTourDesc": "**Istaknuti krug** vas vodi kroz ključne funkcije.\n(Npr. dugi pritisak na karticu koju pokazuje **istaknuti krug** omogućava brisanje.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Postavljanje jezika",
+  "quickStartStep1Desc": "Prvo odaberite svoj jezik i jezik za učenje u Izbornik > Postavke jezika.",
+  "quickStartStep2Title": "2. Osnovni tok",
+  "quickStartStep2Desc": "Kreirajte vlastite kartice za učenje redoslijedom Unos (mikrofon/tipkovnica) -> Prijevod -> Spremanje.",
+  "quickStartStep3Title": "3. Korištenje načina rada",
+  "quickStartStep3Desc": "Vježbajte putem chata i vježbajte izgovor izravno gledajući tekst u kartici Vježba izgovora."
 }

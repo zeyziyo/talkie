@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Sgwrs AI: Ymarfer sgyrsiau go iawn gyda personau yn y ddewislen 'Sgwrs' ar y bar tabiau gwaelod\n• Gosodiadau Persona: Nodi rhyw, enw a chod iaith y parti arall yn rhydd\n• Drama Chwarae GPS: Argymell pynciau sgwrsio sy'n addas ar gyfer y lleoliad trwy adnabod fy lleoliad presennol\n• Dwy Iaith: Mae atebion AI yn cael eu harddangos gyda chyfieithiadau i wneud y gorau o effeithiau dysgu\n• Rheoli Cofnodion: Hidlo hanes sgwrsio blaenorol a chadw negeseuon penodol o sgyrsiau fel deunyddiau dysgu",
   "helpTabJson": "Fformat JSON",
   "helpTabModes": "Esboniad o'r Moddau",
+  "helpTabQuickStart": "Dechrau Arni’n Gyflym",
   "helpTabTour": "Cymryd Taith",
   "helpTitle": "Help & Canllawiau",
   "helpTourDesc": "Mae **Cylch Tynnau Sylw** yn eich tywys trwy'r prif nodweddion.\n(Ex: Gallwch ddileu'r cerdyn y mae'r **Cylch Tynnau Sylw** yn pwyntio ato trwy ei wasgu am amser hir.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Gosod Iaith",
+  "quickStartStep1Desc": "Yn newislen Gosodiadau > Iaith, dewiswch eich iaith frodorol a’r iaith rydych chi’n ei dysgu yn gyntaf.",
+  "quickStartStep2Title": "2. Llif Sylfaenol",
+  "quickStartStep2Desc": "Creuwch eich cardiau dysgu eich hun trwy fewnbynnu (meicroffon/bysellfwrdd) -> cyfieithu -> cadw.",
+  "quickStartStep3Title": "3. Defnyddio Moddau",
+  "quickStartStep3Desc": "Ymarferwch trwy sgwrsio, ac ymarferwch ynganiad trwy edrych ar destun a’i ynganu’n uniongyrchol yn y tab ymarfer ynganu."
 }

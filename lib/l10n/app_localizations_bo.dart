@@ -411,6 +411,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String get helpTabModes => 'ཐབས་ལམ་གྱི་འགྲེལ་བཤད།';
 
   @override
+  String get helpTabQuickStart => 'འགོ་འཛུགས་མགྱོགས་པོ།';
+
+  @override
   String get helpTabTour => 'ཉམས་ལེན་བྱེད།';
 
   @override
@@ -1388,4 +1391,25 @@ class AppLocalizationsBo extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'ཁྱེད་ཀྱིས་བདམས་པའི་ཡིག་ཆ་དེས་ད་ལྟའི་སློབ་སྦྱོང་སྐད་ཡིག་($targetLang)ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པས་ས་གནས་སུ་ཉར་ཚགས་བྱེད་མི་ཐུབ། སྐད་བསྒྱུར་རེ་འདུན་འབུལ་འདོད་དམ།';
   }
+
+  @override
+  String get quickStartStep1Title => '༡. སྐད་བརྡ་སྒྲིག་འཛུགས།';
+
+  @override
+  String get quickStartStep1Desc =>
+      'དཀར་ཆག་ > སྐད་བརྡ་སྒྲིག་འཛུགས་ནང་ནས་རང་གི་སྐད་བརྡ་དང་སློབ་སྦྱོང་སྐད་བརྡ་ཐོག་མར་གཏན་འཁེལ་བྱེད།';
+
+  @override
+  String get quickStartStep2Title => '༢. རྒྱུན་ལམ་གཞི་རྩ།';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ནང་འཇུག་( microphone/keyboard) -> བསྒྱུར་བཅོས་ -> གསོག་འཇོག་གོ་རིམ་ལྟར་རང་ཉིད་ཀྱི་སློབ་སྦྱོང་ཤོག་བྱང་བཟོས།';
+
+  @override
+  String get quickStartStep3Title => '༣. བྱེད་ལུགས་སྤྱོད།';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ཁ་བརྡས་ལག་ལེན་བྱེད་, སྒྲ་གདངས་ལག་ལེན་  Tab ནང་ཡི་གེ་མཐོང་སྟེ་ཐད་ཀར་སྒྲ་གདངས་བཏོན་ནས་ལག་ལེན་བྱེད།';
 }

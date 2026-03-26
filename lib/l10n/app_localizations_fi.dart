@@ -413,6 +413,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get helpTabModes => 'Tilat';
 
   @override
+  String get helpTabQuickStart => 'Pika-aloitus';
+
+  @override
   String get helpTabTour => 'Kierros';
 
   @override
@@ -1382,4 +1385,25 @@ class AppLocalizationsFi extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Valitsemasi materiaali ei tue nykyistä oppimiskieltäsi ($targetLang), joten sitä ei voida tallentaa paikallisesti. Haluatko pyytää käännöstä?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Aseta kielet';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Määritä ensin oma kielesi ja opiskelukielesi valikossa Asetukset > Kielet.';
+
+  @override
+  String get quickStartStep2Title => '2. Peruskulku';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Luo omia oppimiskortteja järjestyksessä Syöttö (mikrofoni/näppäimistö) -> Käännös -> Tallenna.';
+
+  @override
+  String get quickStartStep3Title => '3. Hyödynnä tiloja';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Harjoittele chatissa ja harjoittele ääntämistä ääntämisharjoitukset-välilehdellä katsomalla tekstiä ja ääntämällä itse.';
 }

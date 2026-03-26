@@ -414,6 +414,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get helpTabModes => 'മോഡുകൾ';
 
   @override
+  String get helpTabQuickStart => 'പെട്ടെന്നുള്ള ആരംഭം';
+
+  @override
   String get helpTabTour => 'ടൂർ';
 
   @override
@@ -1391,4 +1394,25 @@ class AppLocalizationsMl extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'നിങ്ങൾ തിരഞ്ഞെടുത്ത മെറ്റീരിയൽ നിലവിൽ തിരഞ്ഞെടുത്തിട്ടുള്ള പഠന ഭാഷയായ ($targetLang) പിന്തുണയ്ക്കുന്നില്ല അതിനാൽ ലോക്കലായി സേവ് ചെയ്യാൻ കഴിയില്ല. വിവർത്തനം അഭ്യർത്ഥിക്കാമോ?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. ഭാഷ തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get quickStartStep1Desc =>
+      'മെനു > ഭാഷാ ക്രമീകരണങ്ങളിൽ നിന്ന് നിങ്ങളുടെ ഭാഷയും പഠന ഭാഷയും ആദ്യം തിരഞ്ഞെടുക്കുക.';
+
+  @override
+  String get quickStartStep2Title => '2. അടിസ്ഥാന രീതി';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ഇൻപുട്ട് (മൈക്രോഫോൺ/കീബോർഡ്) -> വിവർത്തനം -> സംരക്ഷിക്കുക എന്ന ക്രമത്തിൽ നിങ്ങളുടെ പഠന കാർഡുകൾ ഉണ്ടാക്കുക.';
+
+  @override
+  String get quickStartStep3Title => '3. മോഡുകൾ പ്രയോജനപ്പെടുത്തുക';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ചാറ്റ് ചെയ്ത് പരിശീലിക്കുക, ഉച്ചാരണ പരിശീലന ടാബിൽ ടെക്സ്റ്റ് നോക്കി ഉച്ചരിച്ച് പരിശീലിക്കുക.';
 }

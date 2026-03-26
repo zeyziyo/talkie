@@ -408,6 +408,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get helpTabModes => 'মোড';
 
   @override
+  String get helpTabQuickStart => 'দ্রুত শুরু';
+
+  @override
   String get helpTabTour => 'ট্যুর';
 
   @override
@@ -1378,4 +1381,25 @@ class AppLocalizationsBn extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'আপনি যে উপাদানটি নির্বাচন করেছেন তা বর্তমানে আপনার নির্বাচিত শেখার ভাষা ($targetLang) সমর্থন করে না, তাই এটি স্থানীয়ভাবে সংরক্ষণ করা যাবে না। আপনি কি অনুবাদ করার জন্য অনুরোধ করতে চান?';
   }
+
+  @override
+  String get quickStartStep1Title => '১. ভাষা নির্বাচন করুন';
+
+  @override
+  String get quickStartStep1Desc =>
+      'মেনু > ভাষা সেটিং থেকে আপনার ভাষা এবং শেখার ভাষা নির্বাচন করুন।';
+
+  @override
+  String get quickStartStep2Title => '২. মূল প্রবাহ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ইনপুট (মাইক্রোফোন/কীবোর্ড) -> অনুবাদ -> সংরক্ষণ ক্রমে আপনার নিজস্ব লার্নিং কার্ড তৈরি করুন।';
+
+  @override
+  String get quickStartStep3Title => '৩. মোড ব্যবহার করুন';
+
+  @override
+  String get quickStartStep3Desc =>
+      'চ্যাটের মাধ্যমে অনুশীলন করুন এবং উচ্চারণ অনুশীলন ট্যাবে টেক্সট দেখে সরাসরি উচ্চারণ করে অনুশীলন করুন।';
 }

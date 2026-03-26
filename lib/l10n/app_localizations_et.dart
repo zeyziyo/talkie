@@ -414,6 +414,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get helpTabModes => 'Režiimide selgitus';
 
   @override
+  String get helpTabQuickStart => 'Kiire algus';
+
+  @override
   String get helpTabTour => 'Tutvustus';
 
   @override
@@ -1383,4 +1386,25 @@ class AppLocalizationsEt extends AppLocalizations {
   String studyLangNotFoundDesc(String targetLang) {
     return 'Valitud materjal ei toeta praegust õppekeelt ($targetLang), seega ei saa seda kohalikult salvestada. Kas soovid tõlget taotleda?';
   }
+
+  @override
+  String get quickStartStep1Title => '1. Seadista keel';
+
+  @override
+  String get quickStartStep1Desc =>
+      'Määra esmalt oma keel ja õpitav keel menüüs > Keeleseaded.';
+
+  @override
+  String get quickStartStep2Title => '2. Põhivool';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Koosta oma õppekaardid järjekorras: sisend (mikrofon/klaviatuur) -> tõlkimine -> salvestamine.';
+
+  @override
+  String get quickStartStep3Title => '3. Režiimide kasutamine';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Harjuta vestluse kaudu ja harjuta hääldust, vaadates teksti ja hääldades seda otse vahekaardil Hääldusharjutus.';
 }

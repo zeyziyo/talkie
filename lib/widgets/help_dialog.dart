@@ -4,12 +4,14 @@ import '../l10n/app_localizations.dart';
 
 class HelpDialog extends StatefulWidget {
   final int initialModeIndex;
+  final int initialTabIndex; // New: To select Quick Start by default
   final VoidCallback onStartTutorial;
 
   const HelpDialog({
     super.key,
     required this.onStartTutorial,
     this.initialModeIndex = 0,
+    this.initialTabIndex = 0, // Default to Quick Start
   });
 
   @override
@@ -24,9 +26,12 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
-    // Map home screen index (0,1,2) to page index (0,1,2)
-    // Mode 1 (index 0) -> Page 0
+    _tabController = TabController(
+      length: 4, 
+      vsync: this, 
+      initialIndex: widget.initialTabIndex
+    );
+    // Map home screen index (0,1,2,3) to page index
     _currentPage = widget.initialModeIndex;
     _pageController = PageController(initialPage: _currentPage);
   }
@@ -72,6 +77,7 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
               labelColor: const Color(0xFF667eea),
               unselectedLabelColor: Colors.grey,
               tabs: [
+                Tab(text: l10n.helpTabQuickStart), // New
                 Tab(text: l10n.helpTabModes),
                 Tab(text: l10n.helpTabJson),
                 Tab(text: l10n.helpTabTour),
@@ -83,6 +89,7 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
               child: TabBarView(
                 controller: _tabController,
                 children: [
+                  _buildQuickStartGuide(l10n), // New
                   _buildModesGuide(l10n),
                   _buildJsonGuide(l10n),
                   _buildTourGuide(l10n),
@@ -350,7 +357,7 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
           const Icon(Icons.touch_app, size: 64, color: Color(0xFF667eea)),
           const SizedBox(height: 24),
           Text(
-            l10n.helpTourDesc, // "Start the interactive tutorial to learn the basics."
+            l10n.helpTourDesc,
             style: const TextStyle(fontSize: 18),
             textAlign: TextAlign.center,
           ),
@@ -368,25 +375,105 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
               foregroundColor: Colors.white,
             ),
           ),
+        ],
+      ),
+    );
+  }
 
-          /*
-          const SizedBox(height: 16),
-          ElevatedButton.icon(
-            onPressed: _launchUrl,
-            icon: const Icon(Icons.open_in_browser),
-            label: Text(
-              l10n.viewOnlineGuide, 
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+  Widget _buildQuickStartGuide(AppLocalizations l10n) {
+    return ListView(
+      padding: const EdgeInsets.all(16),
+      children: [
+        _buildStepItem(
+          icon: Icons.language,
+          color: Colors.blue,
+          title: l10n.quickStartStep1Title,
+          description: l10n.quickStartStep1Desc,
+        ),
+        _buildStepItem(
+          icon: Icons.sync_alt,
+          color: Colors.green,
+          title: l10n.quickStartStep2Title,
+          description: l10n.quickStartStep2Desc,
+        ),
+        _buildStepItem(
+          icon: Icons.auto_awesome,
+          color: Colors.orange,
+          title: l10n.quickStartStep3Title,
+          description: l10n.quickStartStep3Desc,
+        ),
+        const SizedBox(height: 16),
+        Container(
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: Colors.blue[50],
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(color: Colors.blue[100]!),
+          ),
+          child: Row(
+            children: [
+              const Icon(Icons.lightbulb_outline, color: Colors.blue),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Text(
+                  l10n.helpTabTour, 
+                  style: const TextStyle(fontSize: 13, color: Colors.blueGrey),
+                ),
+              ),
+              TextButton(
+                onPressed: () => _tabController.animateTo(3),
+                child: Text(l10n.startTutorial),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildStepItem({
+    required IconData icon,
+    required Color color,
+    required String title,
+    required String description,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 24),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: color.withValues(alpha: 0.1),
+              shape: BoxShape.circle,
             ),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.white,
-              foregroundColor: const Color(0xFF667eea),
-              side: const BorderSide(color: Color(0xFF667eea), width: 1.5),
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-              elevation: 0,
+            child: Icon(icon, color: color, size: 28),
+          ),
+          const SizedBox(width: 16),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  description,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.grey[700],
+                    height: 1.5,
+                  ),
+                ),
+              ],
             ),
           ),
-          */
         ],
       ),
     );

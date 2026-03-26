@@ -213,6 +213,7 @@
   "helpModeChatDetails": "• Gumzo la AI: Fanya mazoezi ya mazungumzo ya vitendo na mtu kupitia menyu ya 'Gumzo' kwenye upau wa kichupo cha chini\n• Mpangilio wa mtu: Bainisha kwa uhuru jinsia, jina na msimbo wa lugha wa mhusika mwingine\n• Hali ya GPS: Tambua eneo langu la sasa na upendekeze mada za mazungumzo zinazofaa eneo\n• Lugha 2: Majibu ya AI yanaonyeshwa pamoja na tafsiri ili kuongeza athari ya kujifunza\n• Usimamizi wa rekodi: Chuja historia ya mazungumzo ya zamani na uhifadhi ujumbe maalum kama nyenzo za kujifunza wakati wa mazungumzo",
   "helpTabJson": "Muundo wa JSON",
   "helpTabModes": "Njia",
+  "helpTabQuickStart": "Mwongozo wa Haraka",
   "helpTabTour": "Ziara",
   "helpTitle": "Msaada & Mwongozo",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
@@ -826,5 +827,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "quickStartStep1Title": "1. Weka Lugha",
+  "quickStartStep1Desc": "Nenda Menyu > Weka Lugha. Chagua lugha yako na lugha unayojifunza.",
+  "quickStartStep2Title": "2. Hatua za Msingi",
+  "quickStartStep2Desc": "Unda kadi zako za kujifunzia kwa mpangilio huu: Ingiza (maikrofoni/kibodi) -> Tafsiri -> Hifadhi.",
+  "quickStartStep3Title": "3. Tumia Njia Mbalimbali",
+  "quickStartStep3Desc": "Fanya mazoezi kwa kupitia mazungumzo, na fanya mazoezi ya matamshi kwa kuangalia maandishi kwenye kichupo cha mazoezi ya matamshi."
 }
