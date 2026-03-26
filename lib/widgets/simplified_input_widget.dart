@@ -43,13 +43,10 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
   @override
   Widget build(BuildContext context) {
     final state = context.watch<SimplifiedAppState>();
-    
     final globalState = context.watch<AppState>();
-    
     final l10n = AppLocalizations.of(context)!;
     
     // Sync languages with global state on initial load or when global changes
-    // SimplifiedAppState will only notify if values actually change
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         state.syncWithGlobalState(
@@ -61,14 +58,14 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
       }
     });
 
-    // Sync controller with state text (e.g., after speech recognition)
+    // Sync controller with state text
     if (_sourceController.text != state.sourceText) {
       _sourceController.text = state.sourceText;
-      // Move cursor to end
       _sourceController.selection = TextSelection.fromPosition(
         TextPosition(offset: _sourceController.text.length),
       );
     }
+
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
@@ -110,7 +107,6 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                           children: [
                             _buildSimpleLangButton(context, state.sourceLang, (val) {
                               state.setSourceLang(val);
-                              // Sync with global state (ONLY if it's the learning lang)
                               final appState = context.read<AppState>();
                               if (val != appState.sourceLang) {
                                 appState.setTargetLang(val);
@@ -125,9 +121,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                         key: widget.swapKey,
                         icon: Icon(Icons.swap_horiz, color: Colors.blue.shade700, size: 24),
                         onPressed: () {
-                          // appState(글로벌)의 방향 반전 메서드를 호출해야 함
                           context.read<AppState>().swapLanguages();
-                          // Clear translation results when swapping
                           state.setTranslatedText("");
                         },
                         tooltip: l10n.swapLanguages,
@@ -138,7 +132,6 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                           children: [
                             _buildSimpleLangButton(context, state.targetLang, (val) {
                               state.setTargetLang(val);
-                              // Sync with global state (ONLY if it's the learning lang)
                               final appState = context.read<AppState>();
                               if (val != appState.sourceLang) {
                                 appState.setTargetLang(val);
@@ -156,12 +149,12 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
             ),
             const SizedBox(height: 24),
 
-            // 3. Main Input Area (Central Mic & Text Field)
+            // 3. Main Input Area (Central Mic)
             Center(
               child: _buildLargeIconButton(
-                icon: state.isListening ? Icons.mic : Icons.mic,
+                icon: Icons.mic,
                 label: '', 
-                color: state.isListening ? Colors.red : const Color(0xFF7A00E6), // Slightly deeper, more premium purple
+                color: state.isListening ? Colors.red : const Color(0xFF7A00E6),
                 isListening: state.isListening,
                 onPressed: () {
                    if (state.isListening) {
@@ -177,7 +170,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
             ),
             const SizedBox(height: 24),
 
-            // 4. Manual Text Input & Confirmation Activity
+            // 4. Manual Text Input & Translate Button
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -191,18 +184,9 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                       filled: true,
                       fillColor: Colors.grey.shade50,
                       contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(color: Colors.grey.shade300),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(color: Colors.grey.shade200),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        borderSide: const BorderSide(color: Colors.indigo, width: 2),
-                      ),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(30), borderSide: BorderSide(color: Colors.grey.shade300)),
+                      enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(30), borderSide: BorderSide(color: Colors.grey.shade200)),
+                      focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(30), borderSide: const BorderSide(color: Colors.indigo, width: 2)),
                       prefixIcon: Icon(Icons.keyboard, color: Colors.indigo, key: widget.keyboardKey),
                       suffixIcon: state.sourceText.isNotEmpty 
                         ? IconButton(
@@ -217,50 +201,48 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                     maxLines: null,
                   ),
                 ),
-                if (state.sourceText.isNotEmpty && !state.isSettingsConfirmed) ...[
+                if (state.sourceText.isNotEmpty) ...[
                   const SizedBox(width: 8),
                   ElevatedButton(
-                    onPressed: () => _showSettingsDialog(context, state),
+                    onPressed: () {
+                      state.translate();
+                      _showSettingsDialog(context, state);
+                    },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.orange.shade700,
+                      backgroundColor: const Color(0xFF3F51B5),
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                      elevation: 2,
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      elevation: 4,
                     ),
                     child: Text(
-                      l10n.next,
-                      key: widget.nextKey,
-                      style: const TextStyle(fontWeight: FontWeight.bold),
+                      l10n.translate,
+                      key: widget.translateKey,
+                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                   ),
                 ],
               ],
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 12),
 
-            // 5. Action Buttons: Translate (Only after confirmation)
-            if (state.sourceText.isNotEmpty && state.isSettingsConfirmed)
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 8),
-                child: ElevatedButton.icon(
-                  onPressed: () {
-                    state.translate();
-                    _showTranslationDialog(context, state);
-                  },
-                  icon: const Icon(Icons.translate),
-                  label: Text(l10n.translateNow),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF2E7D32),
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                  ),
-                  key: widget.translateKey,
+            // Moved Note Field (Below source text)
+            if (state.sourceText.isNotEmpty)
+              TextField(
+                controller: _noteController,
+                onChanged: (val) => state.setNote(val),
+                decoration: InputDecoration(
+                  hintText: l10n.labelNote,
+                  hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400, fontSize: 13),
+                  filled: true,
+                  fillColor: Colors.grey.shade50,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: BorderSide(color: Colors.grey.shade200)),
+                  enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: BorderSide(color: Colors.grey.shade100)),
+                  prefixIcon: const Icon(Icons.sticky_note_2_outlined, size: 18, color: Colors.amber),
                 ),
               ),
-            const SizedBox(height: 24),
-
+            
             const SizedBox(height: 24),
 
             // 6. Footer (Version & Contact)
@@ -271,21 +253,9 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     );
   }
 
-  Widget _buildLabel(String label) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 8.0, left: 4),
-      child: Text(
-        label,
-        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.indigo),
-      ),
-    );
-  }
-
   Widget _buildSimpleLangButton(BuildContext context, String currentLang, Function(String) onSelected, {Color textColor = Colors.teal, bool isLocked = false}) {
     final appState = Provider.of<AppState>(context, listen: false);
-    final myLang = appState.sourceLang; // UI Language (Source in Settings)
-    
-    // Naming Logic: Simplified to show only the name in 'My Language'
+    final myLang = appState.sourceLang;
     final myLangMap = LanguageConstants.getLanguageMap(myLang);
     final String displayName = myLangMap[currentLang] ?? currentLang.toUpperCase();
 
@@ -293,15 +263,11 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
       padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 12),
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: isLocked ? Colors.grey.shade300 : const Color(0xFF3F51B5), // Deep Indigo for contrast
-        borderRadius: BorderRadius.circular(20), // More rounded capsule
+        color: isLocked ? Colors.grey.shade300 : const Color(0xFF3F51B5),
+        borderRadius: BorderRadius.circular(20),
         boxShadow: [
           if (!isLocked)
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.1),
-              blurRadius: 4,
-              offset: const Offset(0, 2),
-            )
+            BoxShadow(color: Colors.black.withValues(alpha: 0.1), blurRadius: 4, offset: const Offset(0, 2))
         ],
       ),
       child: Text(
@@ -310,7 +276,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
         style: TextStyle(
           fontSize: 14, 
           fontWeight: FontWeight.w700, 
-          color: isLocked ? Colors.black54 : Colors.white, // Crisp white text
+          color: isLocked ? Colors.black54 : Colors.white,
           letterSpacing: 0.5,
         ),
       ),
@@ -326,13 +292,10 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
           .where((lang) => lang['code'] != myLang && lang['code'] != currentLang)
           .map((lang) {
         final code = lang['code']!;
-        
         final langMap = LanguageConstants.getLanguageMap(myLang);
         final natMap = LanguageConstants.getLanguageMap(code);
-        
         final nameMy = langMap[code] ?? code.toUpperCase();
         final nameNat = natMap[code] ?? nameMy;
-        
         final listDisplayName = nameMy == nameNat ? nameMy : '$nameMy ($nameNat)';
         
         return PopupMenuItem(
@@ -376,22 +339,45 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
         builder: (context, state, child) {
           final l10n = AppLocalizations.of(context)!;
           return AlertDialog(
-            title: Row(
-              children: [
-                const Icon(Icons.tune, color: Colors.indigo),
-                const SizedBox(width: 10),
-                Text(l10n.labelDetails, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-              ],
-            ),
+            title: Text(l10n.labelDetails, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.indigo)),
             content: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+                  // Result View at Top
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.indigo.shade50,
+                      borderRadius: BorderRadius.circular(15),
+                      border: Border.all(color: Colors.indigo.shade100),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                         Text(state.sourceText, style: const TextStyle(fontSize: 14, color: Colors.black54)),
+                         const SizedBox(height: 10),
+                         state.isTranslating 
+                           ? const Center(child: Padding(padding: EdgeInsets.all(8.0), child: CircularProgressIndicator(strokeWidth: 2)))
+                           : SelectableText(
+                               state.translatedText.isNotEmpty ? state.translatedText : '...', 
+                               style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.indigo),
+                             ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+
                   // Word/Sentence Toggle
                   Row(
                     children: [
                       Expanded(
                         child: SegmentedButton<String>(
+                          style: SegmentedButton.styleFrom(
+                            selectedBackgroundColor: Colors.indigo,
+                            selectedForegroundColor: Colors.white,
+                          ),
                           segments: [
                             ButtonSegment(value: 'word', label: Text(l10n.word, style: const TextStyle(fontSize: 13))),
                             ButtonSegment(value: 'sentence', label: Text(l10n.sentence, style: const TextStyle(fontSize: 13))),
@@ -407,19 +393,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                   const SizedBox(height: 16),
                   _buildNotebookDropdown(context, state),
                   const SizedBox(height: 16),
-                  _buildFieldLabel(l10n.labelNote, l10n.helpNote),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: _noteController,
-                    onChanged: (val) => state.setNote(val),
-                    decoration: InputDecoration(
-                      hintText: l10n.hintNoteExample,
-                      hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400),
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                    ),
-                  ),
-                  const SizedBox(height: 16),
+                  
                   _buildFieldLabel(l10n.tagSelection, l10n.helpTag),
                   const SizedBox(height: 8),
                   TextField(
@@ -427,9 +401,10 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                     onChanged: (val) => state.setTags(val),
                     decoration: InputDecoration(
                       hintText: l10n.hintTagExample,
-                      hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400),
+                      hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400, fontSize: 13),
                       border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                       contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                      prefixIcon: const Icon(Icons.tag, size: 18),
                     ),
                   ),
                 ],
@@ -441,99 +416,30 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                 child: Text(l10n.cancel),
               ),
               ElevatedButton(
-                onPressed: () {
-                  state.setSettingsConfirmed(true);
+                onPressed: state.isTranslating ? null : () async {
+                  await state.saveRecord();
+                  if (!context.mounted) return;
+                  state.clearAll();
+                  _sourceController.clear();
+                  _noteController.clear();
+                  _tagController.clear();
                   Navigator.pop(context);
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(l10n.saved), behavior: SnackBarBehavior.floating),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.indigo,
                   foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
                 ),
-                child: Text(l10n.confirm),
+                child: Text(l10n.save, style: const TextStyle(fontWeight: FontWeight.bold)),
               ),
             ],
           );
         },
       ),
-    );
-  }
-
-  void _showTranslationDialog(BuildContext context, SimplifiedAppState state) {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return Consumer<SimplifiedAppState>(
-          builder: (context, state, child) {
-            final l10n = AppLocalizations.of(context)!;
-            return AlertDialog(
-              title: Text(l10n.translationResult, style: const TextStyle(fontWeight: FontWeight.bold)),
-              content: SingleChildScrollView(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _buildLabel(l10n.inputContent),
-                    Container(
-                      width: double.infinity,
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: Colors.grey.shade100,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Text(state.sourceText, style: const TextStyle(fontSize: 16)),
-                    ),
-                    const SizedBox(height: 20),
-                    _buildLabel(l10n.translationResult),
-                    Container(
-                      width: double.infinity,
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: Colors.green.shade50,
-                        borderRadius: BorderRadius.circular(8),
-                        border: Border.all(color: Colors.green.shade100),
-                      ),
-                      child: state.isTranslating 
-                        ? const Center(child: CircularProgressIndicator())
-                        : Text(
-                            state.translatedText, 
-                            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.green),
-                          ),
-                    ),
-                    if (!state.isTranslating && state.note.isNotEmpty) ...[
-                      const SizedBox(height: 8),
-                      Text('(${state.note})', style: const TextStyle(fontSize: 13, fontStyle: FontStyle.italic, color: Colors.grey)),
-                    ],
-                  ],
-                ),
-              ),
-              actions: [
-                TextButton(
-                  onPressed: () => Navigator.pop(context),
-                  child: Text(l10n.cancel),
-                ),
-                ElevatedButton.icon(
-                  onPressed: state.isTranslating ? null : () async {
-                    await state.saveRecord();
-                    if (!context.mounted) return;
-                    state.clearAll();
-                    _sourceController.clear(); // Clear main input field
-                    Navigator.pop(context); // Close dialog
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text(l10n.importComplete)),
-                    );
-                  },
-                  icon: const Icon(Icons.save_alt),
-                  label: Text(l10n.saveData),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green.shade700,
-                    foregroundColor: Colors.white,
-                  ),
-                ),
-              ],
-            );
-          },
-        );
-      },
     );
   }
 
@@ -580,7 +486,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
             )),
             const DropdownMenuItem(
               value: '__new__',
-              child: Text('+ 새 추가', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 13)), // TODO: Localize '+ 새 추가' if needed, or keep for now if it requires complex interpolation
+              child: Text('+ 새 추가', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 13)),
             ),
           ],
           onChanged: (val) async {
@@ -670,10 +576,8 @@ class MeshMicIcon extends StatelessWidget {
           width: size * 0.9,
           height: size * 0.9,
           fit: BoxFit.contain,
-          // Color filtering is removed to show the premium 3D textures of the new asset
         ),
       ),
     );
   }
 }
-
