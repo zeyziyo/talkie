@@ -235,6 +235,17 @@
     "description": "Import success title"
   },
   "importDuplicateTitleError": "A material with the same title already exists. Please change the title and try again.",
+  "importSourceTitle": "Select Import Source",
+  "importSourceFile": "Single JSON File",
+  "importSourceFolder": "Folder (Language Library Structure)",
+  "importSourceZip": "ZIP File (Compressed Folders)",
+  "importFolderSuccess": "Imported {files} files and {entries} entries.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": { "type": "num" },
+      "entries": { "type": "num" }
+    }
+  },
   "importErrorMessage": "Failed to import file:\\n{error}",
   "@importErrorMessage": {
     "description": "Import error message",

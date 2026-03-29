@@ -188,7 +188,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                       enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(30), borderSide: BorderSide(color: Colors.grey.shade200)),
                       focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(30), borderSide: const BorderSide(color: Colors.indigo, width: 2)),
                       prefixIcon: Icon(Icons.keyboard, color: Colors.indigo, key: widget.keyboardKey),
-                      suffixIcon: state.sourceText.isNotEmpty 
+                      suffixIcon: state.sourceText.trim().isNotEmpty 
                         ? IconButton(
                             icon: const Icon(Icons.clear), 
                             onPressed: () {
@@ -201,7 +201,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                     maxLines: null,
                   ),
                 ),
-                if (state.sourceText.isNotEmpty) ...[
+                if (state.sourceText.trim().isNotEmpty) ...[
                   const SizedBox(width: 8),
                   ElevatedButton(
                     onPressed: () {
@@ -227,7 +227,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
             const SizedBox(height: 12),
 
             // Moved Note Field (Below source text)
-            if (state.sourceText.isNotEmpty)
+            if (state.sourceText.trim().isNotEmpty)
               TextField(
                 controller: _noteController,
                 onChanged: (val) => state.setNote(val),

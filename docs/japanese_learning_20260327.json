@@ -1,0 +1,72 @@
+{
+  "subject": "[입에 착착 붙는 일본어] 잠시 담가 두다 (2026-03-27)",
+  "default_type": "sentence",
+  "source_language": "ko",
+  "target_language": "ja",
+  "entries": [
+    {
+      "source_text": "이 얼룩, 빠질까?",
+      "target_text": "この汚れ、取れるかな。",
+      "note": "汚れ(よごれ): 때, 더러움 / 取れる(とれる): 빠지다",
+      "type": "sentence",
+      "tags": ["조선일보", "일본어"]
+    },
+    {
+      "source_text": "괜찮아. 미지근한 물에 세제를 넣고 잠시 담가 두면 돼.",
+      "target_text": "괜찮아. 미지근한 물에 세제를 넣고 잠시 담가 두면 돼.",
+      "target_text_ja": "大丈夫よ。ぬるま湯に洗剤を入れてしばらく浸しておけばいいよ。",
+      "note": "ぬるま湯(ぬるまゆ): 미지근한 물 / しばらく浸しておく: 잠시 담가 두다",
+      "type": "sentence",
+      "tags": ["조선일보", "일본어"]
+    },
+    {
+      "source_text": "다행이다. 좋아하는 옷이라서 걱정했거든.",
+      "target_text": "よかった。気に入ってた服なので、心配だったんだ。",
+      "note": "気に入る(きにいる): 마음에 들다 / 心配(しんぱ이): 걱정",
+      "type": "sentence",
+      "tags": ["조선일보", "일본어"]
+    },
+    {
+      "source_text": "때, 더러움",
+      "target_text": "汚れ",
+      "note": "よごれ",
+      "type": "word",
+      "tags": ["조선일보", "단어"]
+    },
+    {
+      "source_text": "빠지다, 제거되다",
+      "target_text": "取れる",
+      "note": "とれる",
+      "type": "word",
+      "tags": ["조선일보", "단어"]
+    },
+    {
+      "source_text": "미지근한 물",
+      "target_text": "ぬるま湯",
+      "note": "ぬるまゆ",
+      "type": "word",
+      "tags": ["조선일보", "단어"]
+    },
+    {
+      "source_text": "담그다",
+      "target_text": "浸す",
+      "note": "ひたす",
+      "type": "word",
+      "tags": ["조선일보", "단어"]
+    },
+    {
+      "source_text": "마음에 들다",
+      "target_text": "気に入る",
+      "note": "きにいる",
+      "type": "word",
+      "tags": ["조선일보", "단어"]
+    },
+    {
+      "source_text": "걱정",
+      "target_text": "心配",
+      "note": "しんぱい",
+      "type": "word",
+      "tags": ["조선일보", "단어"]
+    }
+  ]
+}

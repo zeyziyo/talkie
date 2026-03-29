@@ -29,6 +29,7 @@ import '../l10n/app_localizations.dart';
 import '../constants/app_constants.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:geolocator/geolocator.dart';
+import '../services/folder_import_service.dart';
 
 part 'app_state_auth.dart';
 part 'app_state_mode1.dart';

@@ -446,6 +446,23 @@ class AppLocalizationsOr extends AppLocalizations {
       'ସମାନ ଶୀର୍ଷକ ସହିତ ଉପାଦାନ ପୂର୍ବରୁ ବିଦ୍ୟମାନ ଅଛି। ଦୟାକରି ଶୀର୍ଷକ ବଦଳାଇ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ।';
 
   @override
+  String get importSourceTitle => '가져오기 원본 선택';
+
+  @override
+  String get importSourceFile => '단일 JSON 파일';
+
+  @override
+  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
+
+  @override
+  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
+
+  @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files개 파일, $entries개 항목을 가져왔습니다.';
+  }
+
+  @override
   String importErrorMessage(String error) {
     return 'ଫାଇଲ୍ ଆମଦାନୀ କରିବାରେ ବିଫଳ:\\n$error';
   }

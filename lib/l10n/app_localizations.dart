@@ -1044,6 +1044,36 @@ abstract class AppLocalizations {
   /// **'동일한 제목의 자료가 이미 존재합니다. 제목을 변경한 후 다시 시도해주세요.'**
   String get importDuplicateTitleError;
 
+  /// No description provided for @importSourceTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'가져오기 원본 선택'**
+  String get importSourceTitle;
+
+  /// No description provided for @importSourceFile.
+  ///
+  /// In ko, this message translates to:
+  /// **'단일 JSON 파일'**
+  String get importSourceFile;
+
+  /// No description provided for @importSourceFolder.
+  ///
+  /// In ko, this message translates to:
+  /// **'폴더 (언어별 라이브러리 구조)'**
+  String get importSourceFolder;
+
+  /// No description provided for @importSourceZip.
+  ///
+  /// In ko, this message translates to:
+  /// **'ZIP 파일 (압축된 폴더)'**
+  String get importSourceZip;
+
+  /// No description provided for @importFolderSuccess.
+  ///
+  /// In ko, this message translates to:
+  /// **'{files}개 파일, {entries}개 항목을 가져왔습니다.'**
+  String importFolderSuccess(num files, num entries);
+
   /// Import error message
   ///
   /// In ko, this message translates to:

@@ -156,9 +156,16 @@ class SimplifiedAppState extends ChangeNotifier {
       await _speechService.startSTT(
         lang: _sourceLang,
         onResult: (text, isFinal, alternates) {
-          _sourceText = text;
-          if (isFinal) _isListening = false;
-          notifyListeners();
+          if (text.trim().isEmpty && !isFinal) return; // Ignore empty partial results
+          
+          if (text.trim().isNotEmpty) {
+            setSourceText(text); // Use helper to trigger type detection and confirm reset
+          }
+          
+          if (isFinal) {
+            _isListening = false;
+            notifyListeners();
+          }
         },
       );
     } catch (e) {

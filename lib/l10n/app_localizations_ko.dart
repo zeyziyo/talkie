@@ -427,6 +427,23 @@ class AppLocalizationsKo extends AppLocalizations {
       '동일한 제목의 자료가 이미 존재합니다. 제목을 변경한 후 다시 시도해주세요.';
 
   @override
+  String get importSourceTitle => '가져오기 원본 선택';
+
+  @override
+  String get importSourceFile => '단일 JSON 파일';
+
+  @override
+  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
+
+  @override
+  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
+
+  @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files개 파일, $entries개 항목을 가져왔습니다.';
+  }
+
+  @override
   String importErrorMessage(String error) {
     return '파일 불러오기 실패:\\n$error';
   }

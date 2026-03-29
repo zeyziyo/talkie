@@ -1,5 +1,6 @@
 part of 'app_state.dart';
 
+
 extension AppStateAuth on AppState {
   Future<void> checkUsageLimit() async => await _usageService.checkLimitOrThrow();
 
@@ -690,6 +691,66 @@ extension AppStateAuth on AppState {
       return {'success': true};
     } catch (e) {
       debugPrint('[AppState] Translation request failed: $e');
+      return {'success': false, 'error': e.toString()};
+    }
+  }
+
+  /// Pick Root Directory and Import Folders (Language/Type/File.json)
+  Future<Map<String, dynamic>?> pickAndImportFolder() async {
+    try {
+      final String? selectedPath = await FilePicker.platform.getDirectoryPath();
+      if (selectedPath == null) return null;
+
+      _statusMessage = 'L10N:statusImportingFolder';
+      notify();
+
+      final result = await FolderImportService.importFromDirectory(
+        selectedPath,
+        nativeLang: _sourceLang,
+        studyLang: _targetLang,
+      );
+
+      await loadStudyMaterials();
+      await loadDialogueGroups();
+      notify();
+
+      return result;
+    } catch (e) {
+      debugPrint('[FolderImport] Error: $e');
+      return {'success': false, 'error': e.toString()};
+    }
+  }
+
+  /// Pick ZIP file and Import Folders (Language/Type/File.json)
+  Future<Map<String, dynamic>?> pickAndImportZip() async {
+    try {
+      final result = await FilePicker.platform.pickFiles(
+        type: FileType.custom,
+        allowedExtensions: ['zip'],
+        withData: true,
+      );
+
+      if (result == null || result.files.isEmpty) return null;
+
+      final file = result.files.single;
+      if (file.bytes == null) return {'success': false, 'error': 'Failed to read ZIP data'};
+
+      _statusMessage = 'L10N:statusImportingZip';
+      notify();
+
+      final importResult = await FolderImportService.importFromZip(
+        file.bytes!,
+        nativeLang: _sourceLang,
+        studyLang: _targetLang,
+      );
+
+      await loadStudyMaterials();
+      await loadDialogueGroups();
+      notify();
+
+      return importResult;
+    } catch (e) {
+      debugPrint('[ZipImport] Error: $e');
       return {'success': false, 'error': e.toString()};
     }
   }

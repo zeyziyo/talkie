@@ -443,6 +443,23 @@ class AppLocalizationsEn extends AppLocalizations {
       'A material with the same title already exists. Please change the title and try again.';
 
   @override
+  String get importSourceTitle => 'Select Import Source';
+
+  @override
+  String get importSourceFile => 'Single JSON File';
+
+  @override
+  String get importSourceFolder => 'Folder (Language Library Structure)';
+
+  @override
+  String get importSourceZip => 'ZIP File (Compressed Folders)';
+
+  @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Imported $files files and $entries entries.';
+  }
+
+  @override
   String importErrorMessage(String error) {
     return 'Failed to import file:\\n$error';
   }

@@ -442,6 +442,23 @@ class AppLocalizationsMl extends AppLocalizations {
       'ഇതേ പേരിലുള്ള മെറ്റീരിയൽ നിലവിൽ ഉണ്ട്. പേര് മാറ്റി വീണ്ടും ശ്രമിക്കുക.';
 
   @override
+  String get importSourceTitle => '가져오기 원본 선택';
+
+  @override
+  String get importSourceFile => '단일 JSON 파일';
+
+  @override
+  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
+
+  @override
+  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
+
+  @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files개 파일, $entries개 항목을 가져왔습니다.';
+  }
+
+  @override
   String importErrorMessage(String error) {
     return 'ഫയൽ ഇറക്കുമതി ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു:\\n$error';
   }

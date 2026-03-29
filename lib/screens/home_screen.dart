@@ -565,22 +565,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       OnlineLibraryDialog.show(context); // Open Online Tab
                       break;
                     case 'device_import':
-                      final result = await appState.pickAndImportJson();
-                      if (result != null && context.mounted) {
-                        if (result['success'] == true) {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text(l10n.importComplete)),
-                          );
-                        } else if (result['error'] == 'DuplicateTitle') {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text(l10n.importDuplicateTitleError)),
-                          );
-                        } else if (result['error'] != null) {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text(result['error'])),
-                          );
-                        }
-                      }
+                      _showImportSelectionDialog(context);
                       break;
                     case 'help':
                       showDialog(
@@ -1121,5 +1106,117 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
            : Icon(icon, size: 24), // Show icon only when not selected (v59)
        ),
      );
+  }
+
+  void _showImportSelectionDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    final appState = Provider.of<AppState>(context, listen: false);
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(l10n.importSourceTitle, style: const TextStyle(fontWeight: FontWeight.bold)),
+        backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _buildImportOption(
+              context,
+              icon: Icons.insert_drive_file,
+              color: Colors.blue.shade600,
+              title: l10n.importSourceFile,
+              onTap: () async {
+                Navigator.pop(context);
+                final res = await appState.pickAndImportJson();
+                if (!context.mounted) return;
+                _handleImportResult(context, res);
+              },
+            ),
+            const Divider(height: 1),
+            _buildImportOption(
+              context,
+              icon: Icons.folder,
+              color: Colors.orange.shade700,
+              title: l10n.importSourceFolder,
+              onTap: () async {
+                Navigator.pop(context);
+                final res = await appState.pickAndImportFolder();
+                if (!context.mounted) return;
+                _handleImportResult(context, res);
+              },
+            ),
+            const Divider(height: 1),
+            _buildImportOption(
+              context,
+              icon: Icons.archive,
+              color: Colors.green.shade700,
+              title: l10n.importSourceZip,
+              onTap: () async {
+                Navigator.pop(context);
+                final res = await appState.pickAndImportZip();
+                if (!context.mounted) return;
+                _handleImportResult(context, res);
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildImportOption(BuildContext context, {required IconData icon, required Color color, required String title, required VoidCallback onTap}) {
+    return ListTile(
+      leading: Container(
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(color: color.withValues(alpha: 0.1), shape: BoxShape.circle),
+        child: Icon(icon, color: color, size: 20)
+      ),
+      title: Text(title, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500)),
+      onTap: onTap,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+    );
+  }
+
+  void _handleImportResult(BuildContext context, Map<String, dynamic>? result) {
+    if (result == null || !context.mounted) return;
+    final l10n = AppLocalizations.of(context)!;
+
+    if (result['success'] == true) {
+      String message = l10n.importComplete;
+      if (result['imported_files'] != null) {
+        message = l10n.importFolderSuccess(result['imported_files'], result['total_entries']);
+      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Row(
+            children: [
+              const Icon(Icons.check_circle, color: Colors.white),
+              const SizedBox(width: 12),
+              Expanded(child: Text(message)),
+            ],
+          ),
+          backgroundColor: Colors.green.shade800,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        )
+      );
+    } else {
+      final error = result['error']?.toString() ?? 'Unknown Error';
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Row(
+            children: [
+              const Icon(Icons.error, color: Colors.white),
+              const SizedBox(width: 12),
+              Expanded(child: Text('${l10n.importFailed}: $error')),
+            ],
+          ),
+          backgroundColor: Colors.red.shade800,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        )
+      );
+    }
   }
 }

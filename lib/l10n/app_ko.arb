@@ -526,6 +526,17 @@
   "importAdded": "추가: {count}개",
   "importComplete": "불러오기 완료",
   "importDuplicateTitleError": "동일한 제목의 자료가 이미 존재합니다. 제목을 변경한 후 다시 시도해주세요.",
+  "importSourceTitle": "가져오기 원본 선택",
+  "importSourceFile": "단일 JSON 파일",
+  "importSourceFolder": "폴더 (언어별 라이브러리 구조)",
+  "importSourceZip": "ZIP 파일 (압축된 폴더)",
+  "importFolderSuccess": "{files}개 파일, {entries}개 항목을 가져왔습니다.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": { "type": "num" },
+      "entries": { "type": "num" }
+    }
+  },
   "importErrorMessage": "파일 불러오기 실패:\\n{error}",
   "importFailed": "불러오기 실패",
   "importFile": "파일: {fileName}",
