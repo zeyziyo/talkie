@@ -463,23 +463,23 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         tabs: [
                           _buildModernTab(
                             isSelected: appState.currentMode == 0,
-                            icon: Icons.chat_bubble,
-                            label: l10n.chatAiChat,
-                          ),
-                          _buildModernTab(
-                            isSelected: appState.currentMode == 1,
                             icon: Icons.translate,
                             label: l10n.homeTab,
                           ),
                           _buildModernTab(
-                            isSelected: appState.currentMode == 2,
+                            isSelected: appState.currentMode == 1,
                             icon: Icons.auto_stories,
                             label: l10n.reviewModeTitle,
                           ),
                           _buildModernTab(
-                            isSelected: appState.currentMode == 3,
+                            isSelected: appState.currentMode == 2,
                             icon: Icons.record_voice_over,
                             label: l10n.practiceModeTitle,
+                          ),
+                          _buildModernTab(
+                            isSelected: appState.currentMode == 3,
+                            icon: Icons.chat_bubble,
+                            label: l10n.chatAiChat,
                           ),
                         ],
                       ),
@@ -531,6 +531,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   ),
                                 ),
                               ),
+                            ),
+                            IconButton(
+                              onPressed: () => _showSimplifiedGuidance(context),
+                              icon: const Icon(Icons.info_outline, color: Colors.amber, size: 24),
+                              tooltip: l10n.menuHelp,
+                              padding: EdgeInsets.zero,
+                              constraints: const BoxConstraints(),
                             ),
                           ],
                         ),
@@ -798,8 +805,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   ),
                 const Divider(),
                 ListTile(
-                  leading: const Icon(Icons.chat_bubble),
-                  title: Text(l10n.chatAiChat),
+                  leading: const Icon(Icons.translate),
+                  title: Text(l10n.homeTab),
                   selected: appState.currentMode == 0,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {
@@ -808,8 +815,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   },
                 ),
                 ListTile(
-                  leading: const Icon(Icons.translate),
-                  title: Text(l10n.homeTab),
+                  leading: const Icon(Icons.auto_stories),
+                  title: Text(l10n.reviewModeTitle),
                   selected: appState.currentMode == 1,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {
@@ -818,8 +825,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   },
                 ),
                 ListTile(
-                  leading: const Icon(Icons.auto_stories),
-                  title: Text(l10n.reviewModeTitle),
+                  leading: const Icon(Icons.record_voice_over),
+                  title: Text(l10n.practiceModeTitle),
                   selected: appState.currentMode == 2,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {
@@ -828,8 +835,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   },
                 ),
                 ListTile(
-                  leading: const Icon(Icons.record_voice_over),
-                  title: Text(l10n.practiceModeTitle),
+                  leading: const Icon(Icons.chat_bubble),
+                  title: Text(l10n.chatAiChat),
                   selected: appState.currentMode == 3,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {
@@ -870,16 +877,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   final appState = Provider.of<AppState>(context, listen: false);
                   appState.switchMode(index, fromPage: true);
                   _tabController.animateTo(index); // Sync TabBar with swipe
-                  if (index == 0) {
-                    // Ensure list is loaded for the AI Chat
+                  if (index == 3) {
+                    // Ensure list is loaded for the AI Chat (Now at index 3)
                     appState.loadDialogueGroups();
                   }
                },
               children: [
-                ChatHistoryScreen(
-                  isWidget: true,
-                  fabKey: _chatFabKey,
-                ),
                 SimplifiedInputWidget(
                   micKey: _micButtonKey,
                   swapKey: _swapButtonKey,
@@ -900,6 +903,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   settingsKey: _mode3SettingsKey,
                   searchKey: _mode3SearchKey,
                   onSelectMaterial: () => OnlineLibraryDialog.show(context),
+                ),
+                ChatHistoryScreen(
+                  isWidget: true,
+                  fabKey: _chatFabKey,
                 ),
               ],
             ),
@@ -1096,6 +1103,31 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
            : Icon(icon, size: 24), // Show icon only when not selected (v59)
        ),
      );
+  }
+
+
+  void _showSimplifiedGuidance(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Row(
+          children: [
+            const Icon(Icons.info_outline, color: Colors.amber),
+            const SizedBox(width: 10),
+            Text(l10n.menuHelp, style: const TextStyle(fontWeight: FontWeight.bold)),
+          ],
+        ),
+        content: Text(l10n.simplifiedGuidance),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text(l10n.confirm),
+          ),
+        ],
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      ),
+    );
   }
 
   void _showImportSelectionDialog(BuildContext context) {

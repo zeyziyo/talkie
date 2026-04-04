@@ -701,13 +701,13 @@ class AppState extends ChangeNotifier {
       );
     }
     
-    if (mode == 2) {
+    if (mode == 1) { // Review (New Index 1)
       loadStudyMaterials(); 
       loadRecordsByTags();
-    } else if (mode == 3) {
+    } else if (mode == 2) { // Practice (New Index 2)
       loadStudyMaterials();
       _practiceWordsOnly = false;
-    } else if (mode == 0) {
+    } else if (mode == 3) { // AI Chat (New Index 3)
       loadDialogueGroups();
     }
 
