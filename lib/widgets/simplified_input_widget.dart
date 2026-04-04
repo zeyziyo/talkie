@@ -128,13 +128,30 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                       style: const TextStyle(fontSize: 15),
                       decoration: InputDecoration(
                         hintText: l10n.labelNote,
-                        hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400, fontSize: 13),
+                        hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400),
                         filled: true,
                         fillColor: Colors.grey.shade50,
-                        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: BorderSide(color: Colors.grey.shade300)),
                         enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: BorderSide(color: Colors.grey.shade200)),
                         focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: const BorderSide(color: Colors.indigo, width: 2)),
+                        suffixIcon: IconButton(
+                          onPressed: () {
+                            showDialog(
+                              context: context,
+                              builder: (context) => AlertDialog(
+                                content: const Text("정확한 번역을 위하여 추가적인 내용을 입력하는 곳"),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () => Navigator.pop(context), 
+                                    child: Text(l10n.confirm)
+                                  )
+                                ],
+                              ),
+                            );
+                          },
+                          icon: const Icon(Icons.help_outline, size: 20, color: Colors.grey),
+                        ),
                       ),
                     ),
                   ),

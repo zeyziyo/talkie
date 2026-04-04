@@ -444,7 +444,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 ),
               ),
               bottom: PreferredSize(
-                preferredSize: Size.fromHeight((appState.currentMode >= 1 && appState.currentMode <= 2) ? 104.0 : 54.0), // v15.9: Optimized heights
+                preferredSize: Size.fromHeight((appState.currentMode <= 2) ? 104.0 : 54.0), // v15.9: Optimized heights (0-2 for buttons)
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -484,7 +484,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ],
                       ),
                     ),
-                    if (appState.currentMode >= 1 && appState.currentMode <= 2)
+                    if (appState.currentMode <= 2)
                       Container(
                         color: Colors.white,
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
