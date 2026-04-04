@@ -1428,6 +1428,5 @@ class AppLocalizationsBs extends AppLocalizations {
       'Vježbajte putem chata i vježbajte izgovor izravno gledajući tekst u kartici Vježba izgovora.';
 
   @override
-  String get noteGuidance =>
-      'Gdje unosite dodatne detalje za precizniji prijevod';
+  String get noteGuidance => 'Gdje unosite dodatne detalje za tačniji prijevod';
 }

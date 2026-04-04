@@ -4103,5 +4103,5 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get quickStartStep3Desc => '透過聊天進行練習，並在「發音練習」分頁中看著文字直接發音練習。';
 
   @override
-  String get noteGuidance => '輸入額外詳細信息以獲得更準確翻譯的地方';
+  String get noteGuidance => '輸入額外詳細資訊以獲得更準確翻譯的地方';
 }

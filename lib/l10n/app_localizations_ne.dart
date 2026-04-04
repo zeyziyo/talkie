@@ -1432,5 +1432,5 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'थप सटीक अनुवादको लागि जहाँ तपៃঁলে थप विवरणहरू प्रविष्ट गर्नुहुन्छ';
+      'थप सटीक अनुवादको लागि जहाँ तपៃঁले थप विवरणहरू प्रविष्ट गर्नुहुन्छ';
 }

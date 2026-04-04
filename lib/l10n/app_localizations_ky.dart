@@ -1435,5 +1435,5 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'Так которуу үчүн кошумча маалы말тарды киргизе турган жер';
+      'Так которуу үчүн кошумча маалыматтарды киргизе турган жер';
 }

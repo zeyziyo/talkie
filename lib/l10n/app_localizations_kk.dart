@@ -1431,5 +1431,5 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'Дәлірек аударма үшін қосымша мәліметтерді енгізетін жер';
+      'Дәлірек аударма үшін қосымша мәліметтерді енгізетިން жер';
 }

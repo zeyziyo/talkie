@@ -1428,5 +1428,5 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'ಹೆಚ್ಚು ನಿಖರವಾದ ಅನುವಾದಕ್ಕಾಗಿ ನೀವು ಹೆಚ್ಚುವರಿ ವಿವರಗಳನ್ನು ಎಲ್ಲಿ ನಮூದಿಸುತ್ತೀರಿ';
+      'ಹೆಚ್ಚು ನಿಖರವಾದ ಅನುವಾದಕ್ಕಾಗಿ ನೀವು ಹೆಚ್ಚುವರಿ ವಿವರಗಳನ್ನು ಎಲ್ಲಿ ನಮೂದಿಸುತ್ತೀರಿ';
 }

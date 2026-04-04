@@ -1423,5 +1423,5 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'વધુ સચોટ અનુવાદ માટે جہاں તમે વધારાની વિગતો દાખલ કરો છો';
+      'વધુ સચોટ અનુવાદ માટે જ્યાં તમે વધારાની વિગતો દાખલ કરો છો';
 }

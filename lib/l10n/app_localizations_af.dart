@@ -1417,5 +1417,5 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'Waar jy bykomende besonderhede insit vir meer akkurate vertaling';
+      'Waar jy addisionele besonderhede insit vir meer akkurate vertaling';
 }

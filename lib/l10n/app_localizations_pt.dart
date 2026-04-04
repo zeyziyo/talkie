@@ -1437,5 +1437,5 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'Onde você insere detalhes adicionais para uma tradução mais precisa';
+      'Insira detalhes adicionales para uma tradução mais precisa';
 }

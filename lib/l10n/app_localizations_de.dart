@@ -1434,5 +1434,5 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'Geben Sie hier zusätzliche Details für eine genauere Übersetzung ein';
+      'Geben Sie zusätzliche Details für eine genauere Übersetzung ein';
 }

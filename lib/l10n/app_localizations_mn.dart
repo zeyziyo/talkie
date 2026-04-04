@@ -1430,5 +1430,5 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'Илүү нарийвчлалтай орчуулгын тулд нэмэл트 мэдээллийг хаана оруулах вэ';
+      'Илүү нарийвчлалтай орчуулгын тулд нэмэлт мэдээллийг хаана оруулах вэ';
 }

@@ -1442,5 +1442,5 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'Où vous saisissez des détails supplémentaires pour une traduction plus précise';
+      'Entrez des détails supplémentaires pour une traduction plus précise';
 }

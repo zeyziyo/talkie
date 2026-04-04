@@ -1405,5 +1405,5 @@ class AppLocalizationsAm extends AppLocalizations {
       'በውይይት ይለማመዱ፣ የጽሑፍ ንግግር ልምምድ ትር ላይ ጽሑፉን ይመልከቱ እና ጮክ ብለው በማንበብ ይለማመዱ።';
 
   @override
-  String get noteGuidance => 'ለትክክለኛ ትርጉም ተጨማሪ ዝርዝሮችን የት እንደሚያስገቡ';
+  String get noteGuidance => 'ለትክክለኛ ትርጉም ተጨማሪ ዝርዝሮችን የሚያስገቡበት ቦታ';
 }

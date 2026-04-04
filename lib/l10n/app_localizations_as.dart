@@ -1429,5 +1429,5 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'অধিক সঠিক অনুবাদৰ বাবে আপুনি অতিৰিক্ত বিৱৰণ এণ্টাৰ কৰা ঠাই';
+      'অধিক সঠিক অনুবাদৰ বাবে আপুনি অতিৰিক্ত বিৱৰণ দিয়া ঠাই';
 }

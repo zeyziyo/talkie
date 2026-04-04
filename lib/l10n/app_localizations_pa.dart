@@ -1426,5 +1426,5 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'ਵਧੇਰੇ ਸਹੀ ਅਨੁਵਾਦ ਲਈ ਜਿੱਥੇ ਤੁਸੀਂ ਵਾਧੂ ਵੇਰਵੇ ਦਰਜ ਕਰਦੇ ਹੋ';
+      'ਵਧੇਰੇ ਸਹੀ ਅਨੁਵਾਦ ਲਈ ਜਿੱਥੇ ਤੁਸੀਂ ਵਾਧੂ ਵੇරਵੇ ਦਰਜ ਕਰਦੇ ਹੋ';
 }

@@ -1428,5 +1428,5 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'మరింత ఖచ్చيتమైన అనువాదం కోసం మీరు అదనపు వివరాలను ఇక్కడ నమోదు చేస్తారు';
+      'మరింత ఖచ్చితమైన అనువాదం కోసం మీరు అదనపు వివరాలను ఇక్కడ నమోదు చేస్తారు';
 }

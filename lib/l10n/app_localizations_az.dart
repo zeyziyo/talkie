@@ -1433,5 +1433,5 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get noteGuidance =>
-      'Daha dəqiq tərcümə üçün əlavə detalları daxil etdiyiniz yer';
+      'Daha dəqiq tərcümə üçün əlavə təfərrüatları daxil etdiyiniz yer';
 }
