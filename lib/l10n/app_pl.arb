@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Podstawowy tok pracy",
   "quickStartStep2Desc": "Twórz własne karty do nauki w kolejności: wprowadź (mikrofon/klawiatura) -> przetłumacz -> zapisz.",
   "quickStartStep3Title": "3. Wykorzystaj tryby",
-  "quickStartStep3Desc": "Ćwicz na czacie i ćwicz wymowę, patrząc na tekst w zakładce Ćwiczenia wymowy."
+  "quickStartStep3Desc": "Ćwicz na czacie i ćwicz wymowę, patrząc na tekst w zakładce Ćwiczenia wymowy.",
+  "noteGuidance": "Gdzie wpisujesz dodatkowe szczegóły, aby uzyskać dokładniejsze tłumaczenie"
 }

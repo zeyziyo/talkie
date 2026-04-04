@@ -1434,4 +1434,8 @@ class AppLocalizationsCy extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Ymarferwch trwy sgwrsio, ac ymarferwch ynganiad trwy edrych ar destun a’i ynganu’n uniongyrchol yn y tab ymarfer ynganu.';
+
+  @override
+  String get noteGuidance =>
+      'Lle rydych chi\'n nodi manylion ychwanegol ar gyfer cyfieithiad mwy cywir';
 }

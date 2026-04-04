@@ -844,5 +844,6 @@
   "quickStartStep2Title": "2. Basic Flow",
   "quickStartStep2Desc": "Create your own learning cards in the order of Input (microphone/keyboard) -> Translation -> Save.",
   "quickStartStep3Title": "3. Utilize Modes",
-  "quickStartStep3Desc": "Practice with chat, and practice pronunciation by looking at the text and pronouncing it yourself in the Pronunciation Practice tab."
+  "quickStartStep3Desc": "Practice with chat, and practice pronunciation by looking at the text and pronouncing it yourself in the Pronunciation Practice tab.",
+  "noteGuidance": "Where you enter additional details for more accurate translation"
 }

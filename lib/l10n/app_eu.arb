@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Oinarrizko prozesua",
   "quickStartStep2Desc": "Sortu zure ikasketa-txartelak ordena honetan: Sarrera (mikrofonoa/tekla) -> Itzulpena -> Gorde.",
   "quickStartStep3Title": "3. Erabili moduak",
-  "quickStartStep3Desc": "Praktikatu txateatzen, eta praktikatu ahoskera Ahoskera praktikatzeko fitxan testua ikusiz eta zuzenean ahoskatuz."
+  "quickStartStep3Desc": "Praktikatu txateatzen, eta praktikatu ahoskera Ahoskera praktikatzeko fitxan testua ikusiz eta zuzenean ahoskatuz.",
+  "noteGuidance": "Itzulpen zehatzagoa lortzeko xehetasun gehigarriak sartzen dituzun lekua"
 }

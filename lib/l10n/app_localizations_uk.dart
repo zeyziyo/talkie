@@ -1419,4 +1419,8 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Практикуйтеся в чаті та тренуйте вимову, переглядаючи текст на вкладці «Практика вимови».';
+
+  @override
+  String get noteGuidance =>
+      'Де ви вводите додаткові відомості для більш точного перекладу';
 }

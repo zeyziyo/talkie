@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Základný postup",
   "quickStartStep2Desc": "Vytvorte si vlastné vzdelávacie kartičky v poradí: Vstup (mikrofón/klávesnica) -> Preklad -> Uloženie.",
   "quickStartStep3Title": "3. Využívanie režimov",
-  "quickStartStep3Desc": "Precvičujte si prostredníctvom chatu a cvičte výslovnosť priamym vyslovovaním textu na karte Cvičenie výslovnosti."
+  "quickStartStep3Desc": "Precvičujte si prostredníctvom chatu a cvičte výslovnosť priamym vyslovovaním textu na karte Cvičenie výslovnosti.",
+  "noteGuidance": "Tu zadávate ďalšie podrobnosti pre presnejší preklad"
 }

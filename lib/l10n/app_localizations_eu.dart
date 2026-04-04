@@ -1428,4 +1428,8 @@ class AppLocalizationsEu extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Praktikatu txateatzen, eta praktikatu ahoskera Ahoskera praktikatzeko fitxan testua ikusiz eta zuzenean ahoskatuz.';
+
+  @override
+  String get noteGuidance =>
+      'Itzulpen zehatzagoa lortzeko xehetasun gehigarriak sartzen dituzun lekua';
 }

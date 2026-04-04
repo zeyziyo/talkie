@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Basisworkflow",
   "quickStartStep2Desc": "Maak uw eigen leerkaarten in de volgorde: invoer (microfoon/toetsenbord) -> vertaling -> opslaan.",
   "quickStartStep3Title": "3. Gebruik de modi",
-  "quickStartStep3Desc": "Oefen met chatten en oefen uw uitspraak door de tekst te bekijken en zelf uit te spreken in het tabblad Oefen uitspraak."
+  "quickStartStep3Desc": "Oefen met chatten en oefen uw uitspraak door de tekst te bekijken en zelf uit te spreken in het tabblad Oefen uitspraak.",
+  "noteGuidance": "Waar u aanvullende details invoert voor een nauwkeurigere vertaling"
 }

@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. pamata plūsma",
   "quickStartStep2Desc": "Izveidojiet savas mācību kartītes šādā secībā: ievade (mikrofons/tastatūra) -> tulkošana -> saglabāšana.",
   "quickStartStep3Title": "3. režīma izmantošana",
-  "quickStartStep3Desc": "Trenējieties tērzējot un praktizējiet izrunu, skatoties tekstu cilnē izrunas praktizēšana."
+  "quickStartStep3Desc": "Trenējieties tērzējot un praktizējiet izrunu, skatoties tekstu cilnē izrunas praktizēšana.",
+  "noteGuidance": "Kur ievadāt papildu informāciju precīzākam tulkojumam"
 }

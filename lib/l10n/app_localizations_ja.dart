@@ -1385,4 +1385,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get quickStartStep3Desc => 'チャットで練習したり、発音練習タブでテキストを見て直接発音しながら練習しましょう。';
+
+  @override
+  String get noteGuidance => 'より正確な翻訳のために詳細を入力하는 장소';
 }

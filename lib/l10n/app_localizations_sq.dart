@@ -1439,4 +1439,8 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Praktikohuni me bisedë, praktikoni shqiptimin duke parë tekstin në tabin e praktikës së shqiptimit.';
+
+  @override
+  String get noteGuidance =>
+      'Aty ku jepni detaje shtesë për përkthim më të saktë';
 }

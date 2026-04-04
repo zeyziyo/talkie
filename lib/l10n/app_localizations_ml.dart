@@ -1432,4 +1432,8 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'ചാറ്റ് ചെയ്ത് പരിശീലിക്കുക, ഉച്ചാരണ പരിശീലന ടാബിൽ ടെക്സ്റ്റ് നോക്കി ഉച്ചരിച്ച് പരിശീലിക്കുക.';
+
+  @override
+  String get noteGuidance =>
+      'കൂടുതൽ കൃത്യമായ വിവർത്തനത്തിനായി നിങ്ങൾ കൂടുതൽ വിശദാംശങ്ങൾ നൽകുന്നിടത്ത്';
 }

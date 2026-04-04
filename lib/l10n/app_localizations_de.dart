@@ -1431,4 +1431,8 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Übe im Chat, und übe die Aussprache direkt, indem du den Text auf der Registerkarte \"Ausspracheübung\" ansiehst.';
+
+  @override
+  String get noteGuidance =>
+      'Geben Sie hier zusätzliche Details für eine genauere Übersetzung ein';
 }

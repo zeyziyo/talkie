@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Aliran Asas",
   "quickStartStep2Desc": "Cipta kad pembelajaran anda sendiri dalam susunan input (mikrofon/papan kekunci) -> terjemahan -> simpan.",
   "quickStartStep3Title": "3. Gunakan Mod",
-  "quickStartStep3Desc": "Berlatih dengan bersembang dan berlatih menyebut secara langsung dengan melihat teks dalam tab latihan sebutan."
+  "quickStartStep3Desc": "Berlatih dengan bersembang dan berlatih menyebut secara langsung dengan melihat teks dalam tab latihan sebutan.",
+  "noteGuidance": "Tempat anda memasukkan butiran tambahan untuk terjemahan yang lebih tepat"
 }

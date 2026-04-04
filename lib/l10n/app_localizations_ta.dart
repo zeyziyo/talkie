@@ -1440,4 +1440,8 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'பேச்சு மூலம் பயிற்சி செய்யுங்கள், உச்சரிப்பு பயிற்சி தாவலில் உரையைப் பார்த்து நேரடியாக உச்சரிப்பதன் மூலம் பயிற்சி செய்யுங்கள்.';
+
+  @override
+  String get noteGuidance =>
+      'மிகவும் துல்லியமான மொழிபெயர்ப்பிற்காக கூடுதல் விவரங்களை எங்கே உள்ளிடுவீர்கள்';
 }

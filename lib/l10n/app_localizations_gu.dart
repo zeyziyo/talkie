@@ -1420,4 +1420,8 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'ચેટ દ્વારા પ્રેક્ટિસ કરો, અને ઉચ્ચાર પ્રેક્ટિસ ટેબમાં ટેક્સ્ટ જુઓ અને જાતે ઉચ્ચાર કરીને પ્રેક્ટિસ કરો.';
+
+  @override
+  String get noteGuidance =>
+      'વધુ સચોટ અનુવાદ માટે جہاں તમે વધારાની વિગતો દાખલ કરો છો';
 }

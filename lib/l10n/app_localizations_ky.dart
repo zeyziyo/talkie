@@ -1432,4 +1432,8 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Чат аркылуу машыгыңыз, айтылыш көнүгүүсү бетинде текстти көрүп, өзүңүз айтып машыгыңыз.';
+
+  @override
+  String get noteGuidance =>
+      'Так которуу үчүн кошумча маалы말тарды киргизе турган жер';
 }

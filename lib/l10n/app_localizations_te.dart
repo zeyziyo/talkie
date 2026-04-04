@@ -1425,4 +1425,8 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'చాట్ ద్వారా ప్రాక్టీస్ చేయండి మరియు ఉచ్ఛారణ సాధన ట్యాబ్‌లో టెక్స్ట్ చూస్తూ నేరుగా ఉచ్చరించడం ద్వారా ప్రాక్టీస్ చేయండి.';
+
+  @override
+  String get noteGuidance =>
+      'మరింత ఖచ్చيتమైన అనువాదం కోసం మీరు అదనపు వివరాలను ఇక్కడ నమోదు చేస్తారు';
 }

@@ -1425,4 +1425,8 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Vadite s klepetom in vadite izgovorjavo neposredno z ogledom besedila na zavihku za vadbo izgovorjave.';
+
+  @override
+  String get noteGuidance =>
+      'Kjer vnesete dodatne podrobnosti za natančnejši prevod';
 }

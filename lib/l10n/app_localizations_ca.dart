@@ -1441,4 +1441,8 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Practica xerrant i practica la pronunciació directament a la pestanya d\'exercicis de pronunciació.';
+
+  @override
+  String get noteGuidance =>
+      'On introduïu detalls addicionals per a una traducció més precisa';
 }

@@ -420,7 +420,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight((appState.currentMode >= 1 && appState.currentMode <= 2) ? 154.0 : 104.0),
+        preferredSize: Size.fromHeight((appState.currentMode <= 2) ? 154.0 : 104.0),
         child: Consumer<AppState>(
           builder: (context, appState, child) {
             return AppBar(

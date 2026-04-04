@@ -1442,4 +1442,8 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'စကားပြောခြင်းဖြင့် လေ့ကျင့်ပါ၊ အသံထွက် လေ့ကျင့်ရန် တက်ဘ်တွင် စာသားကိုကြည့်ပြီး ကိုယ်တိုင် အသံထွက်ကာ လေ့ကျင့်ပါ။';
+
+  @override
+  String get noteGuidance =>
+      'ပိုမိုတိကျသောဘာသာပြန်ဆိုမှုအတွက် နောက်ထပ်အသေးစိတ်အချက်အလက်များကို သင်ထည့်သွင်းသည့်နေရာ';
 }

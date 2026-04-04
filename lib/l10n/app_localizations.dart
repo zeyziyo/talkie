@@ -2849,6 +2849,12 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'채팅으로 연습하고, 발음 연습 탭에서 텍스트를 보고 직접 발음하며 연습하세요.'**
   String get quickStartStep3Desc;
+
+  /// No description provided for @noteGuidance.
+  ///
+  /// In ko, this message translates to:
+  /// **'정확한 번역을 위하여 추가적인 내용을 입력하는 곳'**
+  String get noteGuidance;
 }
 
 class _AppLocalizationsDelegate

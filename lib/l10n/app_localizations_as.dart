@@ -1426,4 +1426,8 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'চেটিংৰ জৰিয়তে অনুশীলন কৰক, আৰু উচ্চাৰণ অনুশীলন টেবত পাঠ চাই পোনপটীয়াকৈ উচ্চাৰণ কৰি অনুশীলন কৰক।';
+
+  @override
+  String get noteGuidance =>
+      'অধিক সঠিক অনুবাদৰ বাবে আপুনি অতিৰিক্ত বিৱৰণ এণ্টাৰ কৰা ঠাই';
 }

@@ -1417,4 +1417,8 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'با چت تمرین کنید و در تب تمرین تلفظ، متن را ببینید و مستقیماً تلفظ کنید و تمرین کنید.';
+
+  @override
+  String get noteGuidance =>
+      'جایی که جزئیات اضافی را برای ترجمه دقیق‌تر وارد می‌کنید';
 }

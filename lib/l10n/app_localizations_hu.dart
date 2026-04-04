@@ -1426,4 +1426,8 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Gyakoroljon chaten, és gyakorolja a kiejtést a Kiejtés gyakorlása fülön a szöveg elolvasásával és a saját kiejtésével.';
+
+  @override
+  String get noteGuidance =>
+      'Ahol további részleteket adhat meg a pontosabb fordítás érdekében';
 }

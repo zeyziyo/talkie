@@ -850,5 +850,6 @@
   "quickStartStep2Title": "2. 기본 흐름",
   "quickStartStep2Desc": "입력(마이크/키보드) -> 번역 -> 저장 순서로 나만의 학습 카드를 만드세요.",
   "quickStartStep3Title": "3. 모드 활용",
-  "quickStartStep3Desc": "채팅으로 연습하고, 발음 연습 탭에서 텍스트를 보고 직접 발음하며 연습하세요."
+  "quickStartStep3Desc": "채팅으로 연습하고, 발음 연습 탭에서 텍스트를 보고 직접 발음하며 연습하세요.",
+  "noteGuidance": "정확한 번역을 위하여 추가적인 내용을 입력하는 곳"
 }

@@ -1425,4 +1425,8 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'ಚಾಟ್ ಮೂಲಕ ಅಭ್ಯಾಸ ಮಾಡಿ, ಉಚ್ಚಾರಣೆ ಅಭ್ಯಾಸ ಟ್ಯಾಬ್‌ನಲ್ಲಿ ಪಠ್ಯವನ್ನು ವೀಕ್ಷಿಸಿ ಮತ್ತು ನೇರವಾಗಿ ಉಚ್ಚರಿಸುವ ಮೂಲಕ ಅಭ್ಯಾಸ ಮಾಡಿ.';
+
+  @override
+  String get noteGuidance =>
+      'ಹೆಚ್ಚು ನಿಖರವಾದ ಅನುವಾದಕ್ಕಾಗಿ ನೀವು ಹೆಚ್ಚುವರಿ ವಿವರಗಳನ್ನು ಎಲ್ಲಿ ನಮூದಿಸುತ್ತೀರಿ';
 }

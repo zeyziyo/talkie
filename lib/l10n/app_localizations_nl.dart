@@ -1427,4 +1427,8 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Oefen met chatten en oefen uw uitspraak door de tekst te bekijken en zelf uit te spreken in het tabblad Oefen uitspraak.';
+
+  @override
+  String get noteGuidance =>
+      'Waar u aanvullende details invoert voor een nauwkeurigere vertaling';
 }

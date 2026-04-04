@@ -1425,4 +1425,7 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Практикуйтесь в чате, а также тренируйте произношение, просматривая текст и произнося его самостоятельно на вкладке \"Практика произношения\".';
+
+  @override
+  String get noteGuidance => 'Введите детали для более точного перевода';
 }

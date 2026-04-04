@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Pagrindinis procesas",
   "quickStartStep2Desc": "Sukurkite savo mokymosi korteles tokia tvarka: įvestis (mikrofonas / klaviatūra) -> vertimas -> išsaugojimas.",
   "quickStartStep3Title": "3. Režimų naudojimas",
-  "quickStartStep3Desc": "Praktikuokitės per pokalbį, o skirtuke „Tarimo praktika“ skaitykite tekstą ir praktikuokite tartį patys."
+  "quickStartStep3Desc": "Praktikuokitės per pokalbį, o skirtuke „Tarimo praktika“ skaitykite tekstą ir praktikuokite tartį patys.",
+  "noteGuidance": "Kur įvedate papildomą informaciją tikslesniam vertimui"
 }

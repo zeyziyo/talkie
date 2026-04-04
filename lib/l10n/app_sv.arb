@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Grundläggande flöde",
   "quickStartStep2Desc": "Skapa dina egna studiekort i följande ordning: Inmatning (mikrofon/tangentbord) -> Översättning -> Spara.",
   "quickStartStep3Title": "3. Använd lägen",
-  "quickStartStep3Desc": "Öva genom att chatta och öva på uttal genom att titta på texten i fliken Uttalsövning och uttala den själv."
+  "quickStartStep3Desc": "Öva genom att chatta och öva på uttal genom att titta på texten i fliken Uttalsövning och uttala den själv.",
+  "noteGuidance": "Där du anger ytterligare information för en mer exakt översättning"
 }

@@ -1409,4 +1409,8 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'ฝึกฝนด้วยการแชท และฝึกออกเสียงโดยดูข้อความในแท็บฝึกออกเสียง';
+
+  @override
+  String get noteGuidance =>
+      'ที่ซึ่งคุณป้อนรายละเอียดเพิ่มเติมเพื่อการแปลที่แม่นยำยิ่งขึ้น';
 }

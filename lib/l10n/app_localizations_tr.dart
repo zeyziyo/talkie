@@ -1427,4 +1427,8 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Sohbet ederek pratik yapın ve Telaffuz Pratiği sekmesinde metni görerek doğrudan telaffuz ederek pratik yapın.';
+
+  @override
+  String get noteGuidance =>
+      'Daha doğru çeviri için ek ayrıntıları girdiğiniz yer';
 }

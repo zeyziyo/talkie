@@ -1433,4 +1433,8 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Практикувайте с чат и практикувайте произношение, като гледате текст в раздела Практика на произношението.';
+
+  @override
+  String get noteGuidance =>
+      'Където въвеждате допълнителни подробности за по-точен превод';
 }

@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Pangunahing Daloy",
   "quickStartStep2Desc": "Lumikha ng sarili mong learning card sa pamamagitan ng Input (Mikropono/Keyboard) -> Pagsasalin -> Pag-save.",
   "quickStartStep3Title": "3. Gamitin ang mga Mode",
-  "quickStartStep3Desc": "Magpraktis sa pamamagitan ng chat, at magpraktis ng pagbigkas sa tab na Pagsasanay sa Pagbigkas sa pamamagitan ng pagtingin sa teksto at pagbigkas nito nang direkta."
+  "quickStartStep3Desc": "Magpraktis sa pamamagitan ng chat, at magpraktis ng pagbigkas sa tab na Pagsasanay sa Pagbigkas sa pamamagitan ng pagtingin sa teksto at pagbigkas nito nang direkta.",
+  "noteGuidance": "Kung saan mo ipinapasok ang karagdagang mga detalye para sa mas tumpak na pagsasalin"
 }

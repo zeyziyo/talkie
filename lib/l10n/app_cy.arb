@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Llif Sylfaenol",
   "quickStartStep2Desc": "Creuwch eich cardiau dysgu eich hun trwy fewnbynnu (meicroffon/bysellfwrdd) -> cyfieithu -> cadw.",
   "quickStartStep3Title": "3. Defnyddio Moddau",
-  "quickStartStep3Desc": "Ymarferwch trwy sgwrsio, ac ymarferwch ynganiad trwy edrych ar destun a’i ynganu’n uniongyrchol yn y tab ymarfer ynganu."
+  "quickStartStep3Desc": "Ymarferwch trwy sgwrsio, ac ymarferwch ynganiad trwy edrych ar destun a’i ynganu’n uniongyrchol yn y tab ymarfer ynganu.",
+  "noteGuidance": "Lle rydych chi'n nodi manylion ychwanegol ar gyfer cyfieithiad mwy cywir"
 }

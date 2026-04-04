@@ -1429,4 +1429,8 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'चैट से अभ्यास करें, और उच्चारण अभ्यास टैब में टेक्स्ट देखकर सीधे उच्चारण करते हुए अभ्यास करें।';
+
+  @override
+  String get noteGuidance =>
+      'अधिक सटीक अनुवाद के लिए जहां आप अतिरिक्त विवरण दर्ज करते हैं';
 }

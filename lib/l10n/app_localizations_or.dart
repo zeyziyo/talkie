@@ -1435,4 +1435,8 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'ଚାଟିଂ କରି ଅଭ୍ୟାସ କରନ୍ତୁ, ଏବଂ ଉଚ୍ଚାରଣ ଅଭ୍ୟାସ ଟ୍ୟାବରେ ଟେକ୍ସଟ୍ ଦେଖି ସିଧାସଳଖ ଉଚ୍ଚାରଣ କରି ଅଭ୍ୟାସ କରନ୍ତୁ।';
+
+  @override
+  String get noteGuidance =>
+      'ଅଧିକ ସଠିକ୍ ଅନୁବାଦ ପାଇଁ ଆପଣ ଯେଉଁଠାରେ ଅତିରିକ୍ତ ବିବରଣୀ ପ୍ରବେଶ କରନ୍ତି';
 }

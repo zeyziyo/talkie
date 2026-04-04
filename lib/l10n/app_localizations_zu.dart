@@ -1437,4 +1437,8 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Prakthiza ngengxoxo, bese usebenzisa ithebhu yokuzijwayeza ukuphimisa amagama ukuze uzilolonge ngokuphimisa amagama ngokwakho ngenkathi ubuka umbhalo.';
+
+  @override
+  String get noteGuidance =>
+      'Lapho ufaka khona imininingwane eyengeziwe ukuze uthole ukuhumusha okunembile';
 }

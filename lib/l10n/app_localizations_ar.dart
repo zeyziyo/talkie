@@ -1413,4 +1413,7 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'تدرب بالمحادثة، وشاهد النص في علامة تبويب ممارسة النطق وتدرب على النطق مباشرة.';
+
+  @override
+  String get noteGuidance => 'حيث تقوم بإدخال تفاصيل إضافية لترجمة أكثر دقة';
 }

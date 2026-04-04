@@ -1425,4 +1425,8 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Εξασκηθείτε μέσω συνομιλίας και εξασκήστε την άρθρωση προφέροντας απευθείας το κείμενο στην καρτέλα εξάσκησης προφοράς.';
+
+  @override
+  String get noteGuidance =>
+      'Όπου εισάγετε πρόσθετες λεπτομέρειες για ακριβέστερη μετάφραση';
 }

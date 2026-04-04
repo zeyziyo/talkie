@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Rrjedha Bazë",
   "quickStartStep2Desc": "Krijoni kartat tuaja të personalizuara të studimit sipas renditjes: Hyrje (Mikrofon/Tastierë) -> Përkthim -> Ruaj.",
   "quickStartStep3Title": "3. Shfrytëzo Modalitetet",
-  "quickStartStep3Desc": "Praktikohuni me bisedë, praktikoni shqiptimin duke parë tekstin në tabin e praktikës së shqiptimit."
+  "quickStartStep3Desc": "Praktikohuni me bisedë, praktikoni shqiptimin duke parë tekstin në tabin e praktikës së shqiptimit.",
+  "noteGuidance": "Aty ku jepni detaje shtesë për përkthim më të saktë"
 }

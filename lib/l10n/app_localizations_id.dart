@@ -1427,4 +1427,8 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Berlatih dengan obrolan, dan berlatih pengucapan secara langsung sambil melihat teks di tab Latihan Pengucapan.';
+
+  @override
+  String get noteGuidance =>
+      'Tempat Anda memasukkan detail tambahan untuk terjemahan yang lebih akurat';
 }

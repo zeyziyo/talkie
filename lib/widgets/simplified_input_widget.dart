@@ -140,7 +140,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                             showDialog(
                               context: context,
                               builder: (context) => AlertDialog(
-                                content: const Text("정확한 번역을 위하여 추가적인 내용을 입력하는 곳"),
+                                content: Text(l10n.noteGuidance),
                                 actions: [
                                   TextButton(
                                     onPressed: () => Navigator.pop(context), 

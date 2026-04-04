@@ -1403,4 +1403,7 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'በውይይት ይለማመዱ፣ የጽሑፍ ንግግር ልምምድ ትር ላይ ጽሑፉን ይመልከቱ እና ጮክ ብለው በማንበብ ይለማመዱ።';
+
+  @override
+  String get noteGuidance => 'ለትክክለኛ ትርጉም ተጨማሪ ዝርዝሮችን የት እንደሚያስገቡ';
 }

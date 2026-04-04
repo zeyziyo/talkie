@@ -1427,4 +1427,8 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Чат горимоор дадлага хийж, дуудлагын дадлагын таб дээр текст хараад шууд дуудан дадлага хийгээрэй.';
+
+  @override
+  String get noteGuidance =>
+      'Илүү нарийвчлалтай орчуулгын тулд нэмэл트 мэдээллийг хаана оруулах вэ';
 }

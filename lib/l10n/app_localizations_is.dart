@@ -1427,4 +1427,8 @@ class AppLocalizationsIs extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Æfðu þig í spjalli og æfðu framburð með því að horfa á textann í Framburðarflipanum.';
+
+  @override
+  String get noteGuidance =>
+      'Þar sem þú slærð inn frekari upplýsingar fyrir nákvæmari þýðingu';
 }

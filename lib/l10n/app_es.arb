@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Flujo básico",
   "quickStartStep2Desc": "Crea tus propias tarjetas de aprendizaje en el orden de entrada (micrófono/teclado) -> traducción -> guardar.",
   "quickStartStep3Title": "3. Utilización de modos",
-  "quickStartStep3Desc": "Practica chateando y practica pronunciando directamente mientras miras el texto en la pestaña de práctica de pronunciación."
+  "quickStartStep3Desc": "Practica chateando y practica pronunciando directamente mientras miras el texto en la pestaña de práctica de pronunciación.",
+  "noteGuidance": "Donde ingresas detalles adicionales para una traducción más precisa"
 }

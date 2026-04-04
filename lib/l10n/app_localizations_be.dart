@@ -1431,4 +1431,8 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Практыкуйцеся ў чаце і практыкуйце вымаўленне, гледзячы на тэкст ва ўкладцы практыкаванняў па вымаўленні.';
+
+  @override
+  String get noteGuidance =>
+      'Дзе вы ўводзіце дадатковыя звесткі для больш дакладнага перакладу';
 }

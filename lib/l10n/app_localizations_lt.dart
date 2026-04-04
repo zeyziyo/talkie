@@ -1430,4 +1430,8 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Praktikuokitės per pokalbį, o skirtuke „Tarimo praktika“ skaitykite tekstą ir praktikuokite tartį patys.';
+
+  @override
+  String get noteGuidance =>
+      'Kur įvedate papildomą informaciją tikslesniam vertimui';
 }

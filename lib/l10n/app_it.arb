@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Flusso di base",
   "quickStartStep2Desc": "Crea le tue flashcard di apprendimento nell'ordine: input (microfono/tastiera) -> traduzione -> salvataggio.",
   "quickStartStep3Title": "3. Usa le modalità",
-  "quickStartStep3Desc": "Esercitati tramite chat e fai pratica con la pronuncia nella scheda Esercizio di pronuncia guardando il testo e pronunciandolo direttamente."
+  "quickStartStep3Desc": "Esercitati tramite chat e fai pratica con la pronuncia nella scheda Esercizio di pronuncia guardando il testo e pronunciandolo direttamente.",
+  "noteGuidance": "Dove inserisci dettagli aggiuntivi per una traduzione più accurata"
 }

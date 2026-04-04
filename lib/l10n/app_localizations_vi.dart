@@ -1417,4 +1417,7 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Luyện tập bằng cách trò chuyện và luyện phát âm trực tiếp bằng cách xem văn bản trong tab Luyện phát âm.';
+
+  @override
+  String get noteGuidance => 'Nơi bạn nhập thêm chi tiết để dịch chính xác hơn';
 }

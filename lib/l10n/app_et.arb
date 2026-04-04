@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Põhivool",
   "quickStartStep2Desc": "Koosta oma õppekaardid järjekorras: sisend (mikrofon/klaviatuur) -> tõlkimine -> salvestamine.",
   "quickStartStep3Title": "3. Režiimide kasutamine",
-  "quickStartStep3Desc": "Harjuta vestluse kaudu ja harjuta hääldust, vaadates teksti ja hääldades seda otse vahekaardil Hääldusharjutus."
+  "quickStartStep3Desc": "Harjuta vestluse kaudu ja harjuta hääldust, vaadates teksti ja hääldades seda otse vahekaardil Hääldusharjutus.",
+  "noteGuidance": "Kuhu sisestate täpsemaks tõlkimiseks täiendavaid üksikasju"
 }

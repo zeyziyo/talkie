@@ -1423,4 +1423,8 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'ਚੈਟ ਨਾਲ ਅਭਿਆਸ ਕਰੋ, ਅਤੇ ਉਚਾਰਨ ਅਭਿਆਸ ਟੈਬ ਵਿੱਚ ਟੈਕਸਟ ਦੇਖ ਕੇ ਸਿੱਧਾ ਉਚਾਰਨ ਕਰਨ ਦਾ ਅਭਿਆਸ ਕਰੋ।';
+
+  @override
+  String get noteGuidance =>
+      'ਵਧੇਰੇ ਸਹੀ ਅਨੁਵਾਦ ਲਈ ਜਿੱਥੇ ਤੁਸੀਂ ਵਾਧੂ ਵੇਰਵੇ ਦਰਜ ਕਰਦੇ ਹੋ';
 }

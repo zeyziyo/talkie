@@ -1429,4 +1429,8 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'ཁ་བརྡས་ལག་ལེན་བྱེད་, སྒྲ་གདངས་ལག་ལེན་  Tab ནང་ཡི་གེ་མཐོང་སྟེ་ཐད་ཀར་སྒྲ་གདངས་བཏོན་ནས་ལག་ལེན་བྱེད།';
+
+  @override
+  String get noteGuidance =>
+      'ཡང་དག་པའི་ལོ་ཙཱའི་ཆེད་དུ་ཁྱེད་ཀྱིས་ཞིབ་ཕྲའི་གནས་ཚུལ་ཁ་སྣོན་འཇུག་ས།';
 }

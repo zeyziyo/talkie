@@ -1439,4 +1439,8 @@ class AppLocalizationsTl extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Magpraktis sa pamamagitan ng chat, at magpraktis ng pagbigkas sa tab na Pagsasanay sa Pagbigkas sa pamamagitan ng pagtingin sa teksto at pagbigkas nito nang direkta.';
+
+  @override
+  String get noteGuidance =>
+      'Kung saan mo ipinapasok ang karagdagang mga detalye para sa mas tumpak na pagsasalin';
 }

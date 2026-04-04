@@ -1425,4 +1425,8 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Precvičujte si prostredníctvom chatu a cvičte výslovnosť priamym vyslovovaním textu na karte Cvičenie výslovnosti.';
+
+  @override
+  String get noteGuidance =>
+      'Tu zadávate ďalšie podrobnosti pre presnejší preklad';
 }

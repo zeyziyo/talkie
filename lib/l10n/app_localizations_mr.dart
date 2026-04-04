@@ -1416,4 +1416,8 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'चॅटिंगद्वारे सराव करा आणि उच्चार सराव टॅबमध्ये मजकूर पाहून थेट उच्चारण्याचा सराव करा.';
+
+  @override
+  String get noteGuidance =>
+      'अधिक अचूक अनुवादासाठी तुम्ही अतिरिक्त तपशील कुठे प्रविष्ट करता';
 }

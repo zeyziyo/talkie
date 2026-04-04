@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Grunnflæði",
   "quickStartStep2Desc": "Búðu til þín eigin spjöld í þessari röð: Inntak (hljóðnemi/lyklaborð) -> Þýðing -> Vista.",
   "quickStartStep3Title": "3. Nýttu stillingar",
-  "quickStartStep3Desc": "Æfðu þig í spjalli og æfðu framburð með því að horfa á textann í Framburðarflipanum."
+  "quickStartStep3Desc": "Æfðu þig í spjalli og æfðu framburð með því að horfa á textann í Framburðarflipanum.",
+  "noteGuidance": "Þar sem þú slærð inn frekari upplýsingar fyrir nákvæmari þýðingu"
 }

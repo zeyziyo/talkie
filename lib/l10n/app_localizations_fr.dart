@@ -1439,4 +1439,8 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Entraînez-vous par chat et entraînez-vous à prononcer directement en regardant le texte dans l\'onglet d\'entraînement à la prononciation.';
+
+  @override
+  String get noteGuidance =>
+      'Où vous saisissez des détails supplémentaires pour une traduction plus précise';
 }

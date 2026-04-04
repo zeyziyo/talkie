@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Fluxul de bază",
   "quickStartStep2Desc": "Creează-ți propriile carduri de studiu în ordinea: introducere (microfon/tastatură) -> traducere -> salvare.",
   "quickStartStep3Title": "3. Utilizează modurile",
-  "quickStartStep3Desc": "Exersează prin chat și exersează pronunția direct în fila de exersare a pronunției, uitându-te la text."
+  "quickStartStep3Desc": "Exersează prin chat și exersează pronunția direct în fila de exersare a pronunției, uitându-te la text.",
+  "noteGuidance": "Unde introduceți detalii suplimentare pentru o traducere mai precisă"
 }

@@ -1424,4 +1424,8 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'චැට් කිරීමෙන් පුහුණු වන්න, උච්චාරණ පුහුණු පටිත්තෙහි පෙළ දෙස බලා කෙලින්ම උච්චාරණය කරමින් පුහුණු වන්න.';
+
+  @override
+  String get noteGuidance =>
+      'වඩාත් නිවැරදි පරිවර්තනයක් සඳහා ඔබ අමතර තොරතුරු ඇතුළත් කරන ස්ථානය';
 }

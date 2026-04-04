@@ -1428,4 +1428,8 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Trenējieties tērzējot un praktizējiet izrunu, skatoties tekstu cilnē izrunas praktizēšana.';
+
+  @override
+  String get noteGuidance =>
+      'Kur ievadāt papildu informāciju precīzākam tulkojumam';
 }

@@ -1434,4 +1434,8 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Вежбај преку разговор и вежбај изговор директно гледајќи го текстот во табот за вежбање изговор.';
+
+  @override
+  String get noteGuidance =>
+      'Каде внесувате дополнителни детали за поточен превод';
 }

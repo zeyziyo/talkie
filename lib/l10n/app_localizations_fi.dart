@@ -1423,4 +1423,8 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Harjoittele chatissa ja harjoittele ääntämistä ääntämisharjoitukset-välilehdellä katsomalla tekstiä ja ääntämällä itse.';
+
+  @override
+  String get noteGuidance =>
+      'Mihin syötät lisätietoja tarkempaa käännöstä varten';
 }

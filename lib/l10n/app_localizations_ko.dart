@@ -1392,4 +1392,7 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       '채팅으로 연습하고, 발음 연습 탭에서 텍스트를 보고 직접 발음하며 연습하세요.';
+
+  @override
+  String get noteGuidance => '정확한 번역을 위하여 추가적인 내용을 입력하는 곳';
 }

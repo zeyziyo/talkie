@@ -1428,4 +1428,8 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Чат арқылы жаттығып, айтылым жаттығулары қосымша бетінде мәтінді көріп, тікелей айтып жаттығыңыз.';
+
+  @override
+  String get noteGuidance =>
+      'Дәлірек аударма үшін қосымша мәліметтерді енгізетін жер';
 }

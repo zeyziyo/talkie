@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Flux bàsic",
   "quickStartStep2Desc": "Crea les teves pròpies targetes d'aprenentatge seguint l'ordre: entrada (micròfon/teclat) -> traducció -> desar.",
   "quickStartStep3Title": "3. Utilitza els modes",
-  "quickStartStep3Desc": "Practica xerrant i practica la pronunciació directament a la pestanya d'exercicis de pronunciació."
+  "quickStartStep3Desc": "Practica xerrant i practica la pronunciació directament a la pestanya d'exercicis de pronunciació.",
+  "noteGuidance": "On introduïu detalls addicionals per a una traducció més precisa"
 }

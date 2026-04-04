@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Osnovni postopek",
   "quickStartStep2Desc": "Ustvarite lastne učne kartice v naslednjem vrstnem redu: vnos (mikrofon/tipkovnica) -> prevod -> shranjevanje.",
   "quickStartStep3Title": "3. Uporaba načinov",
-  "quickStartStep3Desc": "Vadite s klepetom in vadite izgovorjavo neposredno z ogledom besedila na zavihku za vadbo izgovorjave."
+  "quickStartStep3Desc": "Vadite s klepetom in vadite izgovorjavo neposredno z ogledom besedila na zavihku za vadbo izgovorjave.",
+  "noteGuidance": "Kjer vnesete dodatne podrobnosti za natančnejši prevod"
 }

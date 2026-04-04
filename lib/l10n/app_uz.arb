@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Asosiy jarayon",
   "quickStartStep2Desc": "Kiritish (mikrofon/klaviatura) -> Tarjima -> Saqlash tartibida o'zingizning o'quv kartochkalaringizni yarating.",
   "quickStartStep3Title": "3. Rejimdan foydalanish",
-  "quickStartStep3Desc": "Chatda mashq qiling va Talaffuz mashqlari yorlig'ida matnni ko'rib, to'g'ridan-to'g'ri talaffuz qilib mashq qiling."
+  "quickStartStep3Desc": "Chatda mashq qiling va Talaffuz mashqlari yorlig'ida matnni ko'rib, to'g'ridan-to'g'ri talaffuz qilib mashq qiling.",
+  "noteGuidance": "Aniqroq tarjima qilish uchun qo'shimcha ma'lumotlarni kiritadigan joy"
 }

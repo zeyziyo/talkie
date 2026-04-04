@@ -1430,4 +1430,8 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'ივარჯიშეთ ჩეთში და ივარჯიშეთ გამოთქმაზე გამოთქმის სავარჯიშო ჩანართში ტექსტის ყურებით და პირდაპირ გამოთქმით.';
+
+  @override
+  String get noteGuidance =>
+      'სადაც შეიყვანთ დამატებით დეტალებს უფრო ზუსტი თარგმანისთვის';
 }

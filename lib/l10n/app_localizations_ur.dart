@@ -1419,4 +1419,8 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'چیٹ کے ذریعے مشق کریں، اور تلفظ کی مشق ٹیب میں متن کو دیکھ کر خود تلفظ کی مشق کریں۔';
+
+  @override
+  String get noteGuidance =>
+      'جہاں آپ مزید درست ترجمہ کے لیے اضافی تفصیلات درج کرتے ہیں۔';
 }

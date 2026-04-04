@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. 基本流程",
   "quickStartStep2Desc": "按照“输入（麦克风/键盘）-> 翻译 -> 保存”的顺序创建您自己的学习卡片。",
   "quickStartStep3Title": "3. 模式活用",
-  "quickStartStep3Desc": "通过聊天进行练习，并在发音练习选项卡中查看文本并直接发音练习。"
+  "quickStartStep3Desc": "通过聊天进行练习，并在发音练习选项卡中查看文本并直接发音练习。",
+  "noteGuidance": "输入额外详细信息以获得更准确翻译的地方"
 }

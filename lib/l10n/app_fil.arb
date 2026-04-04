@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Pangunahing Daloy",
   "quickStartStep2Desc": "Lumikha ng sarili mong flashcard sa pamamagitan ng pagkakasunod-sunod na: Input (microphone/keyboard) -> Pagsasalin -> Pagsave.",
   "quickStartStep3Title": "3. Gamitin ang mga Mode",
-  "quickStartStep3Desc": "Magsanay sa pamamagitan ng pakikipag-chat, at magsanay ng pagbigkas nang direkta habang tinitingnan ang teksto sa tab na Pagsasanay sa Pagbigkas."
+  "quickStartStep3Desc": "Magsanay sa pamamagitan ng pakikipag-chat, at magsanay ng pagbigkas nang direkta habang tinitingnan ang teksto sa tab na Pagsasanay sa Pagbigkas.",
+  "noteGuidance": "Kung saan mo ipinapasok ang karagdagang mga detalye para sa mas tumpak na pagsasalin"
 }

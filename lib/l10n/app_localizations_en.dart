@@ -1423,4 +1423,8 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Practice with chat, and practice pronunciation by looking at the text and pronouncing it yourself in the Pronunciation Practice tab.';
+
+  @override
+  String get noteGuidance =>
+      'Where you enter additional details for more accurate translation';
 }

@@ -1418,4 +1418,8 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'ຝຶກສົນທະນາ ແລະ ຝຶກອອກສຽງໂດຍການເບິ່ງຂໍ້ຄວາມໃນແຖບຝຶກອອກສຽງ.';
+
+  @override
+  String get noteGuidance =>
+      'ບ່ອນ​ທີ່​ທ່ານ​ປ້ອນ​ລາຍ​ລະ​ອຽດ​ເພີ່ມ​ເຕີມ​ສໍາ​ລັບ​ການ​ແປ​ພາ​ສາ​ໃຫ້​ຖືກ​ต้อง​ຫຼາຍ​ຂຶ້ນ';
 }

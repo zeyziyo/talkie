@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Alapvető folyamat",
   "quickStartStep2Desc": "Készítsen saját tanulókártyákat a következő sorrendben: bevitel (mikrofon/billentyűzet) -> fordítás -> mentés.",
   "quickStartStep3Title": "3. Módok használata",
-  "quickStartStep3Desc": "Gyakoroljon chaten, és gyakorolja a kiejtést a Kiejtés gyakorlása fülön a szöveg elolvasásával és a saját kiejtésével."
+  "quickStartStep3Desc": "Gyakoroljon chaten, és gyakorolja a kiejtést a Kiejtés gyakorlása fülön a szöveg elolvasásával és a saját kiejtésével.",
+  "noteGuidance": "Ahol további részleteket adhat meg a pontosabb fordítás érdekében"
 }

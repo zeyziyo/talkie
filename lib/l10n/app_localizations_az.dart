@@ -1430,4 +1430,8 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Çatda məşq edin və Tələffüz Məşqi tabında mətni oxuyaraq özünüz tələffüz etməklə məşq edin.';
+
+  @override
+  String get noteGuidance =>
+      'Daha dəqiq tərcümə üçün əlavə detalları daxil etdiyiniz yer';
 }

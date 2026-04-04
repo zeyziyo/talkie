@@ -1434,4 +1434,8 @@ class AppLocalizationsGl extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Practica chateando e practica pronunciando directamente mentres ves o texto na pestana de práctica de pronuncia.';
+
+  @override
+  String get noteGuidance =>
+      'Onde introduce detalles adicionais para unha tradución máis precisa';
 }

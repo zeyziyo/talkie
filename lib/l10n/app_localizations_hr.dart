@@ -1424,4 +1424,8 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Vježbajte putem chata i vježbajte izgovor gledajući tekst u kartici za vježbanje izgovora.';
+
+  @override
+  String get noteGuidance =>
+      'Gdje unosite dodatne pojedinosti za točniji prijevod';
 }

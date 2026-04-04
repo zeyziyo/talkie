@@ -1433,4 +1433,8 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Magsanay sa pamamagitan ng pakikipag-chat, at magsanay ng pagbigkas nang direkta habang tinitingnan ang teksto sa tab na Pagsasanay sa Pagbigkas.';
+
+  @override
+  String get noteGuidance =>
+      'Kung saan mo ipinapasok ang karagdagang mga detalye para sa mas tumpak na pagsasalin';
 }

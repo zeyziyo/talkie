@@ -1419,4 +1419,8 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'চ্যাটের মাধ্যমে অনুশীলন করুন এবং উচ্চারণ অনুশীলন ট্যাবে টেক্সট দেখে সরাসরি উচ্চারণ করে অনুশীলন করুন।';
+
+  @override
+  String get noteGuidance =>
+      'আরও সঠিক অনুবাদের জন্য যেখানে আপনি অতিরিক্ত বিবরণ লিখবেন';
 }

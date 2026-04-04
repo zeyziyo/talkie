@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Temel Akış",
   "quickStartStep2Desc": "Girdi (mikrofon/klavye) -> Çeviri -> Kaydet sırasıyla kendi öğrenme kartlarınızı oluşturun.",
   "quickStartStep3Title": "3. Modları Kullanma",
-  "quickStartStep3Desc": "Sohbet ederek pratik yapın ve Telaffuz Pratiği sekmesinde metni görerek doğrudan telaffuz ederek pratik yapın."
+  "quickStartStep3Desc": "Sohbet ederek pratik yapın ve Telaffuz Pratiği sekmesinde metni görerek doğrudan telaffuz ederek pratik yapın.",
+  "noteGuidance": "Daha doğru çeviri için ek ayrıntıları girdiğiniz yer"
 }

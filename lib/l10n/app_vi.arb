@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Luồng cơ bản",
   "quickStartStep2Desc": "Tạo thẻ học tập của riêng bạn theo thứ tự: Nhập (micrô/bàn phím) -> Dịch -> Lưu.",
   "quickStartStep3Title": "3. Sử dụng các chế độ",
-  "quickStartStep3Desc": "Luyện tập bằng cách trò chuyện và luyện phát âm trực tiếp bằng cách xem văn bản trong tab Luyện phát âm."
+  "quickStartStep3Desc": "Luyện tập bằng cách trò chuyện và luyện phát âm trực tiếp bằng cách xem văn bản trong tab Luyện phát âm.",
+  "noteGuidance": "Nơi bạn nhập thêm chi tiết để dịch chính xác hơn"
 }

@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Hatua za Msingi",
   "quickStartStep2Desc": "Unda kadi zako za kujifunzia kwa mpangilio huu: Ingiza (maikrofoni/kibodi) -> Tafsiri -> Hifadhi.",
   "quickStartStep3Title": "3. Tumia Njia Mbalimbali",
-  "quickStartStep3Desc": "Fanya mazoezi kwa kupitia mazungumzo, na fanya mazoezi ya matamshi kwa kuangalia maandishi kwenye kichupo cha mazoezi ya matamshi."
+  "quickStartStep3Desc": "Fanya mazoezi kwa kupitia mazungumzo, na fanya mazoezi ya matamshi kwa kuangalia maandishi kwenye kichupo cha mazoezi ya matamshi.",
+  "noteGuidance": "Ambapo unaingiza maelezo ya ziada kwa tafsiri sahihi zaidi"
 }

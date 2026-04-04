@@ -1434,4 +1434,8 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Pratique com o bate-papo e pratique a pronúncia diretamente na aba de prática de pronúncia.';
+
+  @override
+  String get noteGuidance =>
+      'Onde você insere detalhes adicionais para uma tradução mais precisa';
 }

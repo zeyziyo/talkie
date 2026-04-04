@@ -1434,4 +1434,8 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Զրուցեք վարժվելու համար և վարժվեք ուղղակիորեն արտասանելով տեքստը Արտասանության վարժանք ներդիրում:';
+
+  @override
+  String get noteGuidance =>
+      'Այնտեղ, որտեղ դուք մուտքագրում եք լրացուցիչ մանրամասներ ավելի ճշգ리տ թարգմանության համար';
 }

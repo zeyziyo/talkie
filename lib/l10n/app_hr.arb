@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Osnovni tijek",
   "quickStartStep2Desc": "Stvorite vlastite kartice za učenje redoslijedom unos (mikrofon/tipkovnica) -> prijevod -> spremanje.",
   "quickStartStep3Title": "3. Korištenje načina rada",
-  "quickStartStep3Desc": "Vježbajte putem chata i vježbajte izgovor gledajući tekst u kartici za vježbanje izgovora."
+  "quickStartStep3Desc": "Vježbajte putem chata i vježbajte izgovor gledajući tekst u kartici za vježbanje izgovora.",
+  "noteGuidance": "Gdje unosite dodatne pojedinosti za točniji prijevod"
 }

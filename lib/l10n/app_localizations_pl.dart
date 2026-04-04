@@ -1425,4 +1425,8 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Ćwicz na czacie i ćwicz wymowę, patrząc na tekst w zakładce Ćwiczenia wymowy.';
+
+  @override
+  String get noteGuidance =>
+      'Gdzie wpisujesz dodatkowe szczegóły, aby uzyskać dokładniejsze tłumaczenie';
 }

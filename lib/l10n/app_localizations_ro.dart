@@ -1431,4 +1431,8 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Exersează prin chat și exersează pronunția direct în fila de exersare a pronunției, uitându-te la text.';
+
+  @override
+  String get noteGuidance =>
+      'Unde introduceți detalii suplimentare pentru o traducere mai precisă';
 }

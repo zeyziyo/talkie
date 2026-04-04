@@ -833,5 +833,6 @@
   "quickStartStep2Title": "2. Alur Dasar",
   "quickStartStep2Desc": "Buat kartu belajar Anda sendiri dengan urutan: Masukan (Mikrofon/Keyboard) -> Terjemahan -> Simpan.",
   "quickStartStep3Title": "3. Manfaatkan Mode",
-  "quickStartStep3Desc": "Berlatih dengan obrolan, dan berlatih pengucapan secara langsung sambil melihat teks di tab Latihan Pengucapan."
+  "quickStartStep3Desc": "Berlatih dengan obrolan, dan berlatih pengucapan secara langsung sambil melihat teks di tab Latihan Pengucapan.",
+  "noteGuidance": "Tempat Anda memasukkan detail tambahan untuk terjemahan yang lebih akurat"
 }

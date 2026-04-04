@@ -1421,4 +1421,8 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Fanya mazoezi kwa kupitia mazungumzo, na fanya mazoezi ya matamshi kwa kuangalia maandishi kwenye kichupo cha mazoezi ya matamshi.';
+
+  @override
+  String get noteGuidance =>
+      'Ambapo unaingiza maelezo ya ziada kwa tafsiri sahihi zaidi';
 }

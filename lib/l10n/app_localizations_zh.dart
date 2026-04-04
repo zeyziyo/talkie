@@ -1377,6 +1377,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get quickStartStep3Desc => '通过聊天进行练习，并在发音练习标签中查看文本并直接发音练习。';
+
+  @override
+  String get noteGuidance => '输入额外详细信息以获得更准确翻译的地方';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -2736,6 +2739,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get quickStartStep3Desc => '通过聊天进行练习，并在发音练习选项卡中查看文本并直接发音练习。';
+
+  @override
+  String get noteGuidance => '输入额外详细信息以获得更准确翻译的地方';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -4095,4 +4101,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get quickStartStep3Desc => '透過聊天進行練習，並在「發音練習」分頁中看著文字直接發音練習。';
+
+  @override
+  String get noteGuidance => '輸入額外詳細信息以獲得更準確翻譯的地方';
 }

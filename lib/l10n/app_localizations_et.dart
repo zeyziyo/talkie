@@ -1424,4 +1424,8 @@ class AppLocalizationsEt extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Harjuta vestluse kaudu ja harjuta hääldust, vaadates teksti ja hääldades seda otse vahekaardil Hääldusharjutus.';
+
+  @override
+  String get noteGuidance =>
+      'Kuhu sisestate täpsemaks tõlkimiseks täiendavaid üksikasju';
 }

@@ -1417,4 +1417,8 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Öva genom att chatta och öva på uttal genom att titta på texten i fliken Uttalsövning och uttala den själv.';
+
+  @override
+  String get noteGuidance =>
+      'Där du anger ytterligare information för en mer exakt översättning';
 }

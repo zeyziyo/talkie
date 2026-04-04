@@ -1414,4 +1414,8 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Oefen met klets, en oefen uitspraak direk terwyl jy die teks in die Uitspraakoefening-oortjie bekyk.';
+
+  @override
+  String get noteGuidance =>
+      'Waar jy bykomende besonderhede insit vir meer akkurate vertaling';
 }

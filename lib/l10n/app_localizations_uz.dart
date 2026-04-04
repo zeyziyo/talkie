@@ -1435,4 +1435,8 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get quickStartStep3Desc =>
       'Chatda mashq qiling va Talaffuz mashqlari yorlig\'ida matnni ko\'rib, to\'g\'ridan-to\'g\'ri talaffuz qilib mashq qiling.';
+
+  @override
+  String get noteGuidance =>
+      'Aniqroq tarjima qilish uchun qo\'shimcha ma\'lumotlarni kiritadigan joy';
 }
