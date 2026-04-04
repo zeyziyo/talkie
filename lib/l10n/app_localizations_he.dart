@@ -1403,5 +1403,5 @@ class AppLocalizationsHe extends AppLocalizations {
       'תרגל בצ\'אט, ובכרטיסיית תרגול הגייה, תרגל הגייה ישירה תוך כדי צפייה בטקסט.';
 
   @override
-  String get noteGuidance => 'היכן שאתה מזין פרטים נוספים לתרגום מד위ק יותר';
+  String get noteGuidance => 'היכן שאתה מזין פרטים נוספים לתרגום מדויק יותר';
 }
