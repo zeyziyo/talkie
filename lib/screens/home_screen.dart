@@ -626,16 +626,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   ),
                 ),
 
-                PopupMenuItem<String>(
-                  value: 'device_import',
-                  child: Row(
-                    children: [
-                      const Icon(Icons.folder_open, color: Colors.orange),
-                      const SizedBox(width: 8),
-                      Text(l10n.menuDeviceImport),
-                    ],
-                  ),
-                ),
 
                 const PopupMenuDivider(),
 

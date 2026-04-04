@@ -117,15 +117,6 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                           ],
                         ),
                       ),
-                      IconButton(
-                        key: widget.swapKey,
-                        icon: Icon(Icons.swap_horiz, color: Colors.blue.shade700, size: 24),
-                        onPressed: () {
-                          context.read<AppState>().swapLanguages();
-                          state.setTranslatedText("");
-                        },
-                        tooltip: l10n.swapLanguages,
-                      ),
                       Expanded(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -147,7 +138,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                 ],
               ),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 12), // Adjusted: Moved mic up
 
             // 3. Main Input Area (Central Mic)
             Center(
@@ -201,33 +192,12 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                     maxLines: null,
                   ),
                 ),
-                if (state.sourceText.trim().isNotEmpty) ...[
-                  const SizedBox(width: 8),
-                  ElevatedButton(
-                    onPressed: () {
-                      state.translate();
-                      _showSettingsDialog(context, state);
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF3F51B5),
-                      foregroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                      elevation: 4,
-                    ),
-                    child: Text(
-                      l10n.translate,
-                      key: widget.translateKey,
-                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                    ),
-                  ),
-                ],
               ],
             ),
             const SizedBox(height: 12),
 
             // Moved Note Field (Below source text)
-            if (state.sourceText.trim().isNotEmpty)
+            if (state.sourceText.trim().isNotEmpty) ...[
               TextField(
                 controller: _noteController,
                 onChanged: (val) => state.setNote(val),
@@ -240,8 +210,44 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                   border: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: BorderSide(color: Colors.grey.shade200)),
                   enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: BorderSide(color: Colors.grey.shade100)),
                   prefixIcon: const Icon(Icons.sticky_note_2_outlined, size: 18, color: Colors.amber),
+                  suffixIcon: IconButton(
+                    icon: const Icon(Icons.help_outline, size: 18, color: Colors.grey),
+                    onPressed: () {
+                      showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          content: const Text("정확한 번역을 위해 추가적인 내용을 입력하는 곳"),
+                          actions: [
+                            TextButton(onPressed: () => Navigator.pop(context), child: const Text("확인"))
+                          ],
+                        ),
+                      );
+                    },
+                    tooltip: '도움말',
+                  ),
                 ),
               ),
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () {
+                  state.translate();
+                  _showSettingsDialog(context, state);
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF3F51B5),
+                  foregroundColor: Colors.white,
+                  minimumSize: const Size(double.infinity, 50),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  elevation: 4,
+                ),
+                child: Text(
+                  l10n.translate,
+                  key: widget.translateKey,
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
+              ),
+            ],
             
             const SizedBox(height: 24),
 
@@ -387,6 +393,16 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                             state.setType(val.first);
                           },
                         ),
+                      ),
+                      const SizedBox(width: 8),
+                      IconButton(
+                        key: widget.swapKey,
+                        icon: const Icon(Icons.swap_horiz, color: Colors.indigo),
+                        onPressed: () {
+                          context.read<AppState>().swapLanguages();
+                          state.setTranslatedText("");
+                        },
+                        tooltip: l10n.swapLanguages,
                       ),
                     ],
                   ),
