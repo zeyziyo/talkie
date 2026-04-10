@@ -56,8 +56,8 @@ void main() async {
   if (kIsWeb) {
     // Web setup
     databaseFactory = databaseFactoryFfiWeb;
-  } else if (io.Platform.isWindows || io.Platform.isLinux) {
-    // Desktop setup
+  } else if (io.Platform.isWindows || io.Platform.isLinux || io.Platform.isAndroid) {
+    // v110 Fix: Desktop & Android setup (using FFI for consistent SQLite version & JSON1 support)
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
   }

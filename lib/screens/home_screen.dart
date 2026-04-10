@@ -490,27 +490,29 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         child: Row(
                           children: [
-                            Expanded(
-                              flex: 3,
-                              child: Container(
-                                height: 40,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey.shade100,
-                                  borderRadius: BorderRadius.circular(12),
-                                  border: Border.all(color: Colors.grey.shade300),
-                                ),
-                                child: Row(
-                                  key: _mode1ToggleKey,
-                                  children: [
-                                    _buildToggleButton(context, label: l10n.tabWord, isSelected: appState.recordTypeFilter == 'word', onTap: () { appState.setRecordTypeFilter('word'); appState.selectMaterial(null); }),
-                                    _buildToggleButton(context, label: l10n.tabSentence, isSelected: appState.recordTypeFilter == 'sentence', onTap: () { appState.setRecordTypeFilter('sentence'); appState.selectMaterial(null); }),
-                                  ],
+                            if (appState.currentMode != 0) ...[
+                              Expanded(
+                                flex: 3,
+                                child: Container(
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey.shade100,
+                                    borderRadius: BorderRadius.circular(12),
+                                    border: Border.all(color: Colors.grey.shade300),
+                                  ),
+                                  child: Row(
+                                    key: _mode1ToggleKey,
+                                    children: [
+                                      _buildToggleButton(context, label: l10n.tabWord, isSelected: appState.recordTypeFilter == 'word', onTap: () { appState.setRecordTypeFilter('word'); appState.selectMaterial(null); }),
+                                      _buildToggleButton(context, label: l10n.tabSentence, isSelected: appState.recordTypeFilter == 'sentence', onTap: () { appState.setRecordTypeFilter('sentence'); appState.selectMaterial(null); }),
+                                    ],
+                                  ),
                                 ),
                               ),
-                            ),
-                            const SizedBox(width: 12),
+                              const SizedBox(width: 12),
+                            ],
                             Expanded(
-                              flex: 4,
+                              flex: appState.currentMode == 0 ? 1 : 4, // v110: Expand swap button in Translate mode
                               child: InkWell(
                                 key: _swapButtonKey,
                                 onTap: () => appState.swapLanguages(),
@@ -532,6 +534,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                 ),
                               ),
                             ),
+                            if (appState.currentMode == 0) const SizedBox(width: 12),
                             IconButton(
                               onPressed: () => _showSimplifiedGuidance(context),
                               icon: const Icon(Icons.info_outline, color: Colors.amber, size: 24),

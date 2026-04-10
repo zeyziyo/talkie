@@ -6,6 +6,7 @@ import '../widgets/recommendation_widget.dart';
 import '../widgets/welcome_banner.dart';
 import '../l10n/app_localizations.dart';
 import '../constants/app_constants.dart';
+import '../services/speech_service.dart';
 
 class SimplifiedInputWidget extends StatefulWidget {
   final GlobalKey? micKey;
@@ -243,9 +244,29 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                          const SizedBox(height: 10),
                          state.isTranslating 
                            ? const Center(child: Padding(padding: EdgeInsets.all(8.0), child: CircularProgressIndicator(strokeWidth: 2)))
-                           : SelectableText(
-                               state.translatedText.isNotEmpty ? state.translatedText : '...', 
-                               style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.indigo),
+                           : Row(
+                               crossAxisAlignment: CrossAxisAlignment.start,
+                               children: [
+                                 Expanded(
+                                   child: SelectableText(
+                                     state.translatedText.isNotEmpty ? state.translatedText : '...', 
+                                     style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.indigo),
+                                   ),
+                                 ),
+                                 if (state.translatedText.isNotEmpty)
+                                   IconButton(
+                                     icon: const Icon(Icons.volume_up, color: Colors.indigo),
+                                     padding: EdgeInsets.zero,
+                                     constraints: const BoxConstraints(),
+                                     onPressed: () {
+                                       final appState = context.read<AppState>();
+                                       SpeechService().speak(
+                                         state.translatedText,
+                                         lang: appState.getServiceLocale(state.targetLang),
+                                       );
+                                     },
+                                   ),
+                               ],
                              ),
                       ],
                     ),
