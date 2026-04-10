@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
@@ -52,16 +53,22 @@ void main() async {
 
   debugPrint('>>> MAIN [3] Widgets Binding Initialized');
   
-  // Desktop SQLite FFI setup (not for web)
+  // v112 Fix: Dynamic SQLite Engine Selection (Native vs FFI)
   if (kIsWeb) {
-    // Web setup
     databaseFactory = databaseFactoryFfiWeb;
-  } else if (io.Platform.isWindows || io.Platform.isLinux || io.Platform.isAndroid) {
-    // v110 Fix: Desktop & Android setup (using FFI for consistent SQLite version & JSON1 support)
+  } else if (io.Platform.isWindows || io.Platform.isLinux) {
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
+  } else if (io.Platform.isAndroid) {
+    // Feature Detection: Check if system SQLite supports JSON1
+    bool useFfi = await _shouldUseFfiOnAndroid();
+    if (useFfi) {
+      sqfliteFfiInit();
+      databaseFactory = databaseFactoryFfi;
+    }
+    // Else: Use default native databaseFactory (already set for Android)
   }
-  debugPrint('>>> MAIN [2] Database Factory Set');
+  debugPrint('>>> MAIN [2] Database Factory Set: ${databaseFactory.toString()}');
   
   // Initialize AdMob (mobile only)
   if (!kIsWeb) {
@@ -99,6 +106,22 @@ void main() async {
   }
 
   runApp(TalkieApp(prefs: prefs));
+}
+
+/// v112: Feature detection to decide if we need FFI on Android (for JSON1 support)
+Future<bool> _shouldUseFfiOnAndroid() async {
+  try {
+    // Default factory is native on Android
+    final db = await openDatabase(inMemoryDatabasePath);
+    // Test JSON1 support
+    await db.rawQuery("SELECT json('{}')");
+    await db.close();
+    debugPrint('[SQLite] Native JSON1 support detected. Using stable native driver.');
+    return false;
+  } catch (e) {
+    debugPrint('[SQLite] Native JSON1 support missing or failed: $e. Falling back to FFI.');
+    return true; 
+  }
 }
 
 class TalkieApp extends StatelessWidget {
