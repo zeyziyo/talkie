@@ -207,7 +207,12 @@ class SimplifiedAppState extends ChangeNotifier {
   }
 
   Future<void> saveRecord() async {
-    if (_sourceText.isEmpty || _translatedText.isEmpty) return;
+    LogService.info('Card Save: START (source: ${_sourceText.isNotEmpty}, trans: ${_translatedText.isNotEmpty})');
+    
+    if (_sourceText.isEmpty || _translatedText.isEmpty) {
+      LogService.info('Card Save: ABORTED (Empty text detected)');
+      return;
+    }
 
     try {
       // Phase 15.6: Enhanced Tag & Note saving
@@ -234,6 +239,7 @@ class SimplifiedAppState extends ChangeNotifier {
       notifyListeners();
     } catch (e, stack) {
       LogService.error('Card Save: FAILED', e, stack);
+      rethrow; // 에러를 UI로 던져서 정상 저장된 척 모달이 닫히는 것을 방지
     }
   }
 

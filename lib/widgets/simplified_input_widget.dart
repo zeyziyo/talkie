@@ -333,16 +333,33 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
               ),
               ElevatedButton(
                 onPressed: state.isTranslating ? null : () async {
-                  await state.saveRecord();
-                  if (!context.mounted) return;
-                  state.clearAll();
-                  _sourceController.clear();
-                  _noteController.clear();
-                  _tagController.clear();
-                  Navigator.pop(context);
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text(l10n.saved), behavior: SnackBarBehavior.floating),
-                  );
+                  try {
+                    await state.saveRecord();
+                    if (!context.mounted) return;
+                    
+                    // 핵심 수정: 목록 엔진 동기화 (최신 카드를 화면에 표시)
+                    context.read<AppState>().loadStudyMaterials(); 
+                    
+                    state.clearAll();
+                    _sourceController.clear();
+                    _noteController.clear();
+                    _tagController.clear();
+                    Navigator.pop(context);
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text(l10n.saved), behavior: SnackBarBehavior.floating),
+                    );
+                  } catch (e) {
+                    // 구형 기기 에러 시 화면에 표시
+                    if (!context.mounted) return;
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('저장 실패: $e'), 
+                        backgroundColor: Colors.red.shade800,
+                        behavior: SnackBarBehavior.floating,
+                        duration: const Duration(seconds: 4),
+                      ),
+                    );
+                  }
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.indigo,
