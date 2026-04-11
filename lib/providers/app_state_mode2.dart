@@ -256,9 +256,9 @@ extension AppStateMode2 on AppState {
       
       List<String> conditions = [];
       
-      // Phase 120: 소스 언어 포함 여부 확인 (JSON 내부)
-      conditions.add("json_extract(t.data_json, '\$.' || ? || '.text') IS NOT NULL");
-      whereArgs.add(_sourceLang);
+      // Phase 120: 소스 언어 포함 여부 확인 (호환성을 위해 json_extract 제거, LIKE 사용)
+      conditions.add("t.data_json LIKE ?");
+      whereArgs.add('%"$_sourceLang":%');
       
       if (_selectedTags.isNotEmpty) {
         // Phase 129/17520: Search in both notebook_title and tags column
@@ -271,18 +271,14 @@ extension AppStateMode2 on AppState {
       }
       
       if (_searchQuery.isNotEmpty) {
-        // Phase 17500: Use json_extract to precisely target text fields in both languages
-        conditions.add("(json_extract(t.data_json, '\$.' || ? || '.text') LIKE ? OR json_extract(t.data_json, '\$.' || ? || '.text') LIKE ?)");
-        whereArgs.add(_sourceLang);
-        whereArgs.add('%$_searchQuery%');
-        whereArgs.add(_targetLang);
+        // Phase 17500 -> 115: Broad search using LIKE, exact filter in Dart layer
+        conditions.add("t.data_json LIKE ?");
         whereArgs.add('%$_searchQuery%');
       }
       
       if (_filterStartsWith != null && _filterStartsWith!.isNotEmpty) {
-        conditions.add("json_extract(t.data_json, '\$.' || ? || '.text') LIKE ?");
-        whereArgs.add(_sourceLang);
-        whereArgs.add('$_filterStartsWith%');
+        conditions.add("t.data_json LIKE ?");
+        whereArgs.add('%$_filterStartsWith%');
       }
 
       if (!_showMemorized) {
@@ -330,7 +326,24 @@ extension AppStateMode2 on AppState {
         Map<String, dynamic> targetData = data[_targetLang] as Map<String, dynamic>? ?? {};
 
         // [Phase 15.8.14] Remove English pivot fallback. If no data for target lang, skip this record.
-        if (targetData.isEmpty) continue;
+        if (targetData.isEmpty || sourceData.isEmpty) continue;
+
+        // --- Dart-side filtering for search & startsWith ---
+        if (_searchQuery.isNotEmpty) {
+          final srcText = sourceData['text']?.toString().toLowerCase() ?? '';
+          final tgtText = targetData['text']?.toString().toLowerCase() ?? '';
+          final queryLower = _searchQuery.toLowerCase();
+          if (!srcText.contains(queryLower) && !tgtText.contains(queryLower)) {
+            continue;
+          }
+        }
+
+        if (_filterStartsWith != null && _filterStartsWith!.isNotEmpty) {
+          final srcText = sourceData['text']?.toString().toLowerCase() ?? '';
+          if (!srcText.startsWith(_filterStartsWith!.toLowerCase())) {
+            continue;
+          }
+        }
 
         pairedResults.add({
           'id': groupId, 
