@@ -90,15 +90,14 @@ class SentenceRepository {
   static Future<List<Map<String, dynamic>>> search(String query, {int limit = 10}) async {
     if (query.isEmpty) return [];
     final db = await _db;
-    // Phase 129: Search with json_each for precision
+    // v115: Remove json_each/json_extract for 100% Android compatibility.
     final results = await db.rawQuery('''
-      SELECT DISTINCT s.group_id, s.data_json, s.created_at,
+      SELECT s.group_id, s.data_json, s.created_at,
              sm.notebook_title, sm.source_lang, sm.target_lang, sm.tags,
              sm.is_memorized, sm.review_count, sm.last_reviewed
       FROM sentences s
-      JOIN sentences_meta sm ON s.group_id = sm.group_id,
-           json_each(s.data_json) as je
-      WHERE json_extract(je.value, '\$.text') LIKE ?
+      JOIN sentences_meta sm ON s.group_id = sm.group_id
+      WHERE s.data_json LIKE ?
       ORDER BY s.created_at DESC 
       LIMIT ?
     ''', ['%$query%', limit]);
@@ -140,15 +139,16 @@ class SentenceRepository {
 
   static Future<List<Map<String, dynamic>>> searchAutocompleteText(String langCode, String text) async {
     final db = await _db;
+    // v115: Standard SQL for Autocomplete
     final results = await db.rawQuery('''
       SELECT s.group_id, s.data_json, s.created_at,
              sm.notebook_title, sm.source_lang, sm.target_lang, sm.tags,
              sm.is_memorized, sm.review_count, sm.last_reviewed
       FROM sentences s
       JOIN sentences_meta sm ON s.group_id = sm.group_id
-      WHERE json_extract(s.data_json, '\$.' || ? || '.text') LIKE ?
+      WHERE s.data_json LIKE ?
       LIMIT 10
-    ''', [langCode, '$text%']);
+    ''', ['%$text%']);
     
     return results.map((row) {
       final data = jsonDecode(row['data_json'] as String);

@@ -51,25 +51,24 @@ class DatabaseHelper {
     if (kIsWeb) {
       path = _dbName;
     } else {
-      String databasesPath;
+      final standardDatabasesPath = await getDatabasesPath();
       
-      // v112: Special path handling for Android FFI to avoid permission issues
-      if (io.Platform.isAndroid && databaseFactory.runtimeType.toString().contains('Ffi')) {
+      // v115: Recovery/Revert migration. 
+      // If the user was on v112, their DB might be in the 'documents' folder.
+      // We check and move it back to the standard system databases folder.
+      if (io.Platform.isAndroid) {
         final docDir = await getApplicationDocumentsDirectory();
-        databasesPath = docDir.path;
+        final ffiDbPath = join(docDir.path, _dbName);
+        final standardDbPath = join(standardDatabasesPath, _dbName);
         
-        // Ensure the old DB is copied if it exists in the system databases folder
-        final oldDbPath = join(await getDatabasesPath(), _dbName);
-        final newDbPath = join(databasesPath, _dbName);
-        if (await io.File(oldDbPath).exists() && !await io.File(newDbPath).exists()) {
-          debugPrint('[DB] Migrating old DB to FFI-friendly path...');
-          await io.File(oldDbPath).copy(newDbPath);
+        if (await io.File(ffiDbPath).exists() && !await io.File(standardDbPath).exists()) {
+          debugPrint('[DB] Recovery: Found DB in doc folder. Moving back to system path...');
+          await io.File(ffiDbPath).copy(standardDbPath);
+          // Optional: we could delete the old one, but keeping it as backup for safety in this session.
         }
-      } else {
-        databasesPath = await getDatabasesPath();
       }
       
-      path = join(databasesPath, _dbName);
+      path = join(standardDatabasesPath, _dbName);
     }
 
     debugPrint('[DB] Initializing database at $path (Target Version: $_dbVersion)');

@@ -54,27 +54,13 @@ void main() async {
 
   debugPrint('>>> MAIN [3] Widgets Binding Initialized');
   
-  // v112 Fix: Dynamic SQLite Engine Selection (Native vs FFI)
+  // v115: Use Native SQLite factory on Android/iOS for maximum stability.
+  // FFI is only used for Desktop and Web-fallback.
   if (kIsWeb) {
     databaseFactory = databaseFactoryFfiWeb;
   } else if (io.Platform.isWindows || io.Platform.isLinux) {
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
-  } else if (io.Platform.isAndroid) {
-    // v112: Use API Level detection for safer engine switching on old Android
-    final apiLevel = _getAndroidApiLevel();
-    bool useFfi = apiLevel > 0 && apiLevel <= 30;
-    
-    // Fallback to feature detection if API level check is inconclusive
-    if (!useFfi) {
-      useFfi = await _shouldUseFfiOnAndroid();
-    }
-
-    if (useFfi) {
-      debugPrint('[SQLite] Android API $apiLevel detected or JSON1 missing. Switching to FFI.');
-      sqfliteFfiInit();
-      databaseFactory = databaseFactoryFfi;
-    }
   }
   debugPrint('>>> MAIN [2] Database Factory Set: ${databaseFactory.runtimeType}');
   
@@ -116,49 +102,6 @@ void main() async {
   runApp(TalkieApp(prefs: prefs));
 }
 
-/// v112: Feature detection to decide if we need FFI on Android (for JSON1 support)
-Future<bool> _shouldUseFfiOnAndroid() async {
-  try {
-    // Default factory is native on Android
-    final db = await openDatabase(inMemoryDatabasePath);
-    // Test JSON1 support
-    await db.rawQuery("SELECT json('{}')");
-    await db.close();
-    debugPrint('[SQLite] Native JSON1 support detected. Using stable native driver.');
-    return false;
-  } catch (e) {
-    debugPrint('[SQLite] Native JSON1 support missing or failed: $e. Falling back to FFI.');
-    return true; 
-  }
-}
-
-/// v112: Extract Android API Level from system string
-int _getAndroidApiLevel() {
-  if (!io.Platform.isAndroid) return 0;
-  try {
-    final versionString = io.Platform.operatingSystemVersion;
-    // Format: "Android 11 (build... API 30)" or "API 30"
-    final apiMatch = RegExp(r'API\s+(\d+)').firstMatch(versionString);
-    if (apiMatch != null) {
-      return int.parse(apiMatch.group(1)!);
-    }
-    // Fallback for "Android 11"
-    final androidMatch = RegExp(r'Android\s+(\d+)').firstMatch(versionString);
-    if (androidMatch != null) {
-      int major = int.parse(androidMatch.group(1)!);
-      if (major >= 11) return 30;
-      if (major == 10) return 29;
-      if (major == 9) return 28;
-      if (major == 8) return 26;
-      if (major == 7) return 24;
-      if (major == 6) return 23;
-      if (major == 5) return 21;
-    }
-  } catch (e) {
-    debugPrint('[SQLite] API parse error: $e');
-  }
-  return 0;
-}
 
 class TalkieApp extends StatelessWidget {
   final SharedPreferences prefs;

@@ -490,59 +490,83 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       Container(
                         color: Colors.white,
                         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-                        child: Row(
+                        child: Column(
                           children: [
-                            if (appState.currentMode != 0) ...[
-                              Expanded(
-                                flex: 3,
-                                child: Container(
-                                  height: 40.h,
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey.shade100,
-                                    borderRadius: BorderRadius.circular(12.r),
-                                    border: Border.all(color: Colors.grey.shade300),
+                            // Row 1: Word/Sentence Toggle + Help Icon (Mode 1, 2 only)
+                            if (appState.currentMode != 0)
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      height: 40.h,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey.shade100,
+                                        borderRadius: BorderRadius.circular(12.r),
+                                        border: Border.all(color: Colors.grey.shade300),
+                                      ),
+                                      child: Row(
+                                        key: _mode1ToggleKey,
+                                        children: [
+                                          _buildToggleButton(context, label: l10n.tabWord, isSelected: appState.recordTypeFilter == 'word', onTap: () { appState.setRecordTypeFilter('word'); appState.selectMaterial(null); }),
+                                          _buildToggleButton(context, label: l10n.tabSentence, isSelected: appState.recordTypeFilter == 'sentence', onTap: () { appState.setRecordTypeFilter('sentence'); appState.selectMaterial(null); }),
+                                        ],
+                                      ),
+                                    ),
                                   ),
-                                  child: Row(
-                                    key: _mode1ToggleKey,
-                                    children: [
-                                      _buildToggleButton(context, label: l10n.tabWord, isSelected: appState.recordTypeFilter == 'word', onTap: () { appState.setRecordTypeFilter('word'); appState.selectMaterial(null); }),
-                                      _buildToggleButton(context, label: l10n.tabSentence, isSelected: appState.recordTypeFilter == 'sentence', onTap: () { appState.setRecordTypeFilter('sentence'); appState.selectMaterial(null); }),
-                                    ],
+                                  SizedBox(width: 8.w),
+                                  IconButton(
+                                    onPressed: () => _showSimplifiedGuidance(context),
+                                    icon: Icon(Icons.info_outline, color: Colors.amber, size: 24.r),
+                                    tooltip: l10n.menuHelp,
+                                    padding: EdgeInsets.zero,
+                                    constraints: const BoxConstraints(),
+                                  ),
+                                ],
+                              ),
+                            
+                            if (appState.currentMode != 0) SizedBox(height: 8.h),
+
+                            // Row 2: Language Switcher
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: InkWell(
+                                    key: _swapButtonKey,
+                                    onTap: () => appState.swapLanguages(),
+                                    borderRadius: BorderRadius.circular(8.r),
+                                    child: Container(
+                                      height: 48.h, // v115: Slightly larger for better touch target
+                                      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue[50], 
+                                        borderRadius: BorderRadius.circular(8.r), 
+                                        border: Border.all(color: Colors.blue.shade200)
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Flexible(child: Text(appState.languageNames[appState.currentInputLang] ?? appState.currentInputLang.toUpperCase(), style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
+                                          SizedBox(width: 12.w),
+                                          Icon(Icons.swap_horiz, size: 20.r, color: Colors.blue.shade600),
+                                          SizedBox(width: 12.w),
+                                          Flexible(child: Text(appState.languageNames[appState.currentOutputLang] ?? appState.currentOutputLang.toUpperCase(), style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
+                                        ],
+                                      ),
+                                    ),
                                   ),
                                 ),
-                              ),
-                              SizedBox(width: 12.w),
-                            ],
-                            Expanded(
-                              flex: appState.currentMode == 0 ? 1 : 4, // v110: Expand swap button in Translate mode
-                              child: InkWell(
-                                key: _swapButtonKey,
-                                onTap: () => appState.swapLanguages(),
-                                borderRadius: BorderRadius.circular(8.r),
-                                child: Container(
-                                  height: 40.h,
-                                  padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
-                                  decoration: BoxDecoration(color: Colors.blue[50], borderRadius: BorderRadius.circular(8.r), border: Border.all(color: Colors.blue.shade200)),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Flexible(child: Text(appState.languageNames[appState.currentInputLang] ?? appState.currentInputLang.toUpperCase(), style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
-                                      SizedBox(width: 4.w),
-                                      Icon(Icons.swap_horiz, size: 16.r, color: Colors.blue.shade600),
-                                      SizedBox(width: 4.w),
-                                      Flexible(child: Text(appState.languageNames[appState.currentOutputLang] ?? appState.currentOutputLang.toUpperCase(), style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
-                                    ],
+                                // Mode 0 only: Help Icon stays in the same row
+                                if (appState.currentMode == 0) ...[
+                                  SizedBox(width: 12.w),
+                                  IconButton(
+                                    onPressed: () => _showSimplifiedGuidance(context),
+                                    icon: Icon(Icons.info_outline, color: Colors.amber, size: 24.r),
+                                    tooltip: l10n.menuHelp,
+                                    padding: EdgeInsets.zero,
+                                    constraints: const BoxConstraints(),
                                   ),
-                                ),
-                              ),
-                            ),
-                            if (appState.currentMode == 0) SizedBox(width: 12.w),
-                            IconButton(
-                              onPressed: () => _showSimplifiedGuidance(context),
-                              icon: Icon(Icons.info_outline, color: Colors.amber, size: 24.r),
-                              tooltip: l10n.menuHelp,
-                              padding: EdgeInsets.zero,
-                              constraints: const BoxConstraints(),
+                                ],
+                              ],
                             ),
                           ],
                         ),

@@ -94,16 +94,15 @@ class WordRepository {
   static Future<List<Map<String, dynamic>>> search(String query, {int limit = 10}) async {
     if (query.isEmpty) return [];
     final db = await _db;
-    // Phase 129: Search with json_each for precision
-    // Note: requires SQLite JSON1 extension (usually available in Flutter sqflite)
+    // v115: Remove json_each/json_extract for 100% Android compatibility.
+    // We use a broad LIKE search and refine in Dart logic below.
     final results = await db.rawQuery('''
-      SELECT DISTINCT w.group_id, w.data_json, w.created_at,
+      SELECT w.group_id, w.data_json, w.created_at,
              wm.notebook_title, wm.source_lang, wm.target_lang, wm.tags,
              wm.is_memorized, wm.review_count, wm.last_reviewed
       FROM words w
-      JOIN words_meta wm ON w.group_id = wm.group_id,
-           json_each(w.data_json) as je
-      WHERE json_extract(je.value, '\$.text') LIKE ?
+      JOIN words_meta wm ON w.group_id = wm.group_id
+      WHERE w.data_json LIKE ?
       ORDER BY w.created_at DESC 
       LIMIT ?
     ''', ['%$query%', limit]);
@@ -146,15 +145,16 @@ class WordRepository {
 
   static Future<List<Map<String, dynamic>>> searchAutocompleteText(String langCode, String text) async {
     final db = await _db;
+    // v115: Standard SQL for Autocomplete
     final results = await db.rawQuery('''
       SELECT w.group_id, w.data_json, w.created_at,
              wm.notebook_title, wm.source_lang, wm.target_lang, wm.tags,
              wm.is_memorized, wm.review_count, wm.last_reviewed
       FROM words w
       JOIN words_meta wm ON w.group_id = wm.group_id
-      WHERE json_extract(w.data_json, '\$.' || ? || '.text') LIKE ?
+      WHERE w.data_json LIKE ?
       LIMIT 10
-    ''', [langCode, '$text%']);
+    ''', ['%$text%']);
     
     return results.map((row) {
       final data = jsonDecode(row['data_json'] as String);
