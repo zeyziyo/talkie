@@ -3,6 +3,7 @@ import '../services/database_service.dart';
 import '../services/translation_service.dart';
 import '../services/speech_service.dart';
 import '../services/util/log_service.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class SimplifiedAppState extends ChangeNotifier {
   final SpeechService _speechService = SpeechService();
@@ -151,6 +152,19 @@ class SimplifiedAppState extends ChangeNotifier {
   }
 
   Future<void> startListening() async {
+    // 1. 명시적 마이크 권한 체크 및 요청 (설치 후 최초 1회 인식 씹힘 방지)
+    final micStatus = await Permission.microphone.status;
+    if (micStatus.isDenied) {
+      final reqResult = await Permission.microphone.request();
+      if (!reqResult.isGranted) return;
+      // OS에서 권한을 갓 부여받은 직후 마이크 자원 할당 시간을 확보
+      await Future.delayed(const Duration(milliseconds: 500));
+    }
+
+    // 2. 엔진 초기화 (미리 초기화되지 않은 경우 여기서 대기)
+    final isInit = await _speechService.initialize();
+    if (!isInit) return;
+
     _isListening = true;
     notifyListeners();
     try {
