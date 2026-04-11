@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'package:flutter/foundation.dart';
+import 'package:path_provider/path_provider.dart';
+import 'dart:io' as io;
 
 class DatabaseHelper {
   static Database? _database;
@@ -47,10 +49,26 @@ class DatabaseHelper {
   static Future<Database> _initDatabase() async {
     String path;
     if (kIsWeb) {
-      // On web, the path is used as the IndexedDB database name
       path = _dbName;
     } else {
-      final databasesPath = await getDatabasesPath();
+      String databasesPath;
+      
+      // v112: Special path handling for Android FFI to avoid permission issues
+      if (io.Platform.isAndroid && databaseFactory.runtimeType.toString().contains('Ffi')) {
+        final docDir = await getApplicationDocumentsDirectory();
+        databasesPath = docDir.path;
+        
+        // Ensure the old DB is copied if it exists in the system databases folder
+        final oldDbPath = join(await getDatabasesPath(), _dbName);
+        final newDbPath = join(databasesPath, _dbName);
+        if (await io.File(oldDbPath).exists() && !await io.File(newDbPath).exists()) {
+          debugPrint('[DB] Migrating old DB to FFI-friendly path...');
+          await io.File(oldDbPath).copy(newDbPath);
+        }
+      } else {
+        databasesPath = await getDatabasesPath();
+      }
+      
       path = join(databasesPath, _dbName);
     }
 
