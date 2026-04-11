@@ -21,18 +21,16 @@ class UnifiedRepository {
     // Rule 3.1: hash(텍스트 내용)
     combined = normalizedText;
     
-    // 4. FNV-1a Hash 알고리즘 (32비트)
+    // 4. FNV-1a Hash 알고리즘 (31비트 안전 범위)
     final bytes = utf8.encode(combined);
     int hash = 0x811c9dc5;
     for (var b in bytes) {
       hash ^= b;
       hash *= 0x01000193; // FNV Prime
-      hash &= 0xFFFFFFFF; // Ensure 32-bit (unsigned behavior simulation)
+      hash &= 0x7FFFFFFF; // Phase 115: 일부 구형 32비트 SQLite 환경 호환성을 위해 31비트 양수 범위로 제한
     }
     
-    // Dart int는 64비트이므로 signed로 변환되거나 클 수 있으므로 
-    // 저장하기 안전한 양의 정수 범위(SQLite INTEGER는 64비트 가능)로 제한
-    return hash.abs() == 0 ? 1 : hash.abs();
+    return hash == 0 ? 1 : hash;
   }
 
   /// AppState 등에서 사용하기 편리한 래퍼

@@ -4,6 +4,7 @@ import 'package:path/path.dart';
 import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io' as io;
+import '../util/log_service.dart';
 
 class DatabaseHelper {
   static Database? _database;
@@ -23,10 +24,12 @@ class DatabaseHelper {
     debugPrint('[DB] Starting new database initialization Future.');
     _initFuture = _initDatabase();
     try {
+      LogService.info('DB Init: Waiting for Future...');
       _database = await _initFuture!;
+      LogService.info('DB Init: SUCCESS (Open: ${_database?.isOpen})');
       return _database!;
-    } catch (e) {
-      debugPrint('[DB] Database initialization Future FAILED: $e');
+    } catch (e, stack) {
+      LogService.error('DB Init: FAILED', e, stack);
       _initFuture = null; // Allow retry
       rethrow;
     }
@@ -71,15 +74,23 @@ class DatabaseHelper {
       path = join(standardDatabasesPath, _dbName);
     }
 
-    debugPrint('[DB] Initializing database at $path (Target Version: $_dbVersion)');
+    LogService.info('DB Path: $path (Native SQLite)');
     return await openDatabase(
       path,
       version: _dbVersion,
       onConfigure: (db) async {
+        LogService.info('DB Config: Setting foreign_keys = ON');
         await db.execute('PRAGMA foreign_keys = ON');
+        
+        try {
+          final res = await db.rawQuery('SELECT sqlite_version()');
+          LogService.info('DB Check: SQLite Version ${res.first.values.first}');
+        } catch(e) {
+          LogService.error('DB Check: Version check failed', e);
+        }
       },
       onCreate: (db, version) async {
-        debugPrint('[DB] onCreate triggered (Version: $version)');
+        LogService.info('DB Create: Triggered (Version: $version)');
         await createBaseTables(db);
         await ensureDefaultMaterial(db);
       },

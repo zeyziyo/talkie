@@ -3,6 +3,8 @@ import 'package:google_mobile_ads/google_mobile_ads.dart' hide AppState;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import '../services/util/log_service.dart';
+import 'package:sqflite/sqflite.dart';
 import '../l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
@@ -871,6 +873,34 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   onTap: () {
                     appState.switchMode(3);
                     Navigator.pop(context);
+                  },
+                ),
+                const Divider(),
+                ListTile(
+                  leading: const Icon(Icons.bug_report_outlined, color: Colors.blueGrey),
+                  title: const Text('진단 정보 복사', style: TextStyle(color: Colors.blueGrey, fontSize: 13)),
+                  onTap: () async {
+                    try {
+                      final logs = LogService.getAllLogs();
+                      final dbPath = await getDatabasesPath();
+                      
+                      String info = '--- Talkie Diagnostics ---\n';
+                      info += 'Device: ${Platform.isAndroid ? "Android" : Platform.isIOS ? "iOS" : "Other"}\n';
+                      info += 'DB Path: $dbPath\n';
+                      info += '--- Logs ---\n';
+                      info += logs;
+                      
+                      await Clipboard.setData(ClipboardData(text: info));
+                      
+                      if (context.mounted) {
+                        Navigator.pop(context);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('진단 정보가 클립보드에 복사되었습니다. 개발자에게 전달해주세요.')),
+                        );
+                      }
+                    } catch (e) {
+                      LogService.error('Diagnostics Copy Failed', e);
+                    }
                   },
                 ),
               ],

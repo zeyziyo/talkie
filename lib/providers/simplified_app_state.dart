@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../services/database_service.dart';
 import '../services/translation_service.dart';
 import '../services/speech_service.dart';
+import '../services/util/log_service.dart';
 
 class SimplifiedAppState extends ChangeNotifier {
   final SpeechService _speechService = SpeechService();
@@ -225,12 +226,14 @@ class SimplifiedAppState extends ChangeNotifier {
         notebookTitle: _selectedNotebook,
       );
 
+      LogService.info('Card Save: SUCCESS');
+
       // Refresh notebooks list in case a new one was added
       await loadNotebooks();
       
       notifyListeners();
-    } catch (e) {
-      debugPrint('[SimplifiedAppState] Error saving record: $e');
+    } catch (e, stack) {
+      LogService.error('Card Save: FAILED', e, stack);
     }
   }
 
