@@ -7,6 +7,7 @@ import '../widgets/welcome_banner.dart';
 import '../l10n/app_localizations.dart';
 import '../constants/app_constants.dart';
 import '../services/speech_service.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SimplifiedInputWidget extends StatefulWidget {
   final GlobalKey? micKey;
@@ -70,13 +71,13 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+        padding: EdgeInsets.symmetric(horizontal: 16.0.w, vertical: 8.0.h),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const WelcomeBanner(),
             const RecommendationWidget(),
-            const SizedBox(height: 16),
+            SizedBox(height: 16.h),
 
 
             // 2. Main Input Area (Source & Mic)
@@ -110,11 +111,11 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                     maxLines: null,
                   ),
                 ),
-                const SizedBox(width: 12),
+                SizedBox(width: 12.w),
                 _buildCompactMicIcon(state),
               ],
             ),
-            const SizedBox(height: 12),
+            SizedBox(height: 12.h),
 
             // 3. Note Field & Translate Button
             if (state.sourceText.trim().isNotEmpty) ...[
@@ -156,7 +157,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 12),
+                  SizedBox(width: 12.w),
                   Expanded(
                     flex: 1,
                     child: ElevatedButton(
@@ -167,15 +168,15 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFF3F51B5),
                         foregroundColor: Colors.white,
-                        minimumSize: const Size(0, 54),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                        minimumSize: Size(0, 54.h),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.r)),
                         padding: EdgeInsets.zero,
                         elevation: 4,
                       ),
                       child: Text(
                         l10n.translate,
                         key: widget.translateKey,
-                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp),
                       ),
                     ),
                   ),
@@ -183,7 +184,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
               ),
             ],
             
-            const SizedBox(height: 24),
+            SizedBox(height: 24.h),
 
             // 6. Footer (Version & Contact)
             _buildFooter(context),
@@ -195,7 +196,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
 
 
   Widget _buildCompactMicIcon(SimplifiedAppState state) {
-    const double micWidth = 64.0;
+    final double micWidth = 64.0.r;
     return GestureDetector(
       onTap: () {
         if (state.isListening) {
@@ -223,7 +224,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
         builder: (context, state, child) {
           final l10n = AppLocalizations.of(context)!;
           return AlertDialog(
-            title: Text(l10n.labelDetails, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.indigo)),
+            title: Text(l10n.labelDetails, style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: Colors.indigo)),
             content: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -231,17 +232,17 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                   // Result View at Top
                   Container(
                     width: double.infinity,
-                    padding: const EdgeInsets.all(16),
+                    padding: EdgeInsets.all(16.r),
                     decoration: BoxDecoration(
                       color: Colors.indigo.shade50,
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(15.r),
                       border: Border.all(color: Colors.indigo.shade100),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                         Text(state.sourceText, style: const TextStyle(fontSize: 14, color: Colors.black54)),
-                         const SizedBox(height: 10),
+                         Text(state.sourceText, style: TextStyle(fontSize: 14.sp, color: Colors.black54)),
+                         SizedBox(height: 10.h),
                          state.isTranslating 
                            ? const Center(child: Padding(padding: EdgeInsets.all(8.0), child: CircularProgressIndicator(strokeWidth: 2)))
                            : Row(
@@ -271,7 +272,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20.h),
 
                   // Word/Sentence Toggle
                   Row(
@@ -283,8 +284,8 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                             selectedForegroundColor: Colors.white,
                           ),
                           segments: [
-                            ButtonSegment(value: 'word', label: Text(l10n.word, style: const TextStyle(fontSize: 13))),
-                            ButtonSegment(value: 'sentence', label: Text(l10n.sentence, style: const TextStyle(fontSize: 13))),
+                            ButtonSegment(value: 'word', label: Text(l10n.word, style: TextStyle(fontSize: 13.sp))),
+                            ButtonSegment(value: 'sentence', label: Text(l10n.sentence, style: TextStyle(fontSize: 13.sp))),
                           ],
                           selected: {state.type},
                           onSelectionChanged: (val) {
@@ -295,7 +296,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                       const SizedBox(width: 8),
                       IconButton(
                         key: widget.swapKey,
-                        icon: const Icon(Icons.swap_horiz, color: Colors.indigo),
+                        icon: Icon(Icons.swap_horiz, color: Colors.indigo, size: 24.r),
                         onPressed: () {
                           context.read<AppState>().swapLanguages();
                           state.setTranslatedText("");
@@ -304,21 +305,22 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 16),
+                  SizedBox(height: 16.h),
                   _buildNotebookDropdown(context, state),
-                  const SizedBox(height: 16),
+                  SizedBox(height: 16.h),
                   
                   _buildFieldLabel(l10n.tagSelection, l10n.helpTag),
-                  const SizedBox(height: 8),
+                  SizedBox(height: 8.h),
                   TextField(
                     controller: _tagController,
                     onChanged: (val) => state.setTags(val),
+                    style: TextStyle(fontSize: 14.sp),
                     decoration: InputDecoration(
                       hintText: l10n.hintTagExample,
-                      hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400, fontSize: 13),
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                      prefixIcon: const Icon(Icons.tag, size: 18),
+                      hintStyle: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade400, fontSize: 13.sp),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10.r)),
+                      contentPadding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                      prefixIcon: Icon(Icons.tag, size: 18.r),
                     ),
                   ),
                 ],
@@ -422,11 +424,11 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(text, style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade600, fontSize: 13, fontWeight: FontWeight.w500)),
-        const SizedBox(width: 6),
+        Text(text, style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade600, fontSize: 13.sp, fontWeight: FontWeight.w500)),
+        SizedBox(width: 6.w),
         Tooltip(
           message: helpMessage,
-          child: Icon(Icons.help_outline, size: 15, color: Colors.grey.shade400),
+          child: Icon(Icons.help_outline, size: 15.r, color: Colors.grey.shade400),
         ),
       ],
     );

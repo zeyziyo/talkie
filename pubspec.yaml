@@ -59,6 +59,7 @@ dependencies:
   google_sign_in: ^6.2.1
   kakao_flutter_sdk_user: ^1.10.0
   archive: ^3.6.1
+  flutter_screenutil: ^5.9.3
 
 
 dev_dependencies:

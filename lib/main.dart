@@ -12,6 +12,7 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'services/supabase_service.dart';
 import 'services/background_sync_service.dart';
 import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'dart:io' as io;
 import 'package:google_mobile_ads/google_mobile_ads.dart' hide AppState;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -165,35 +166,42 @@ class TalkieApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (context) => AppState(prefs)),
-        ChangeNotifierProvider(create: (context) => SimplifiedAppState()),
-      ],
-      child: Consumer<AppState>(
-        builder: (context, appState, child) {
-          return MaterialApp(
-            title: 'Talkie',
-            
-            // Localization
-            locale: _resolveLocale(appState.sourceLang),
-            localizationsDelegates: const [
-              AppLocalizations.delegate,
-              GlobalMaterialLocalizations.delegate,
-              GlobalWidgetsLocalizations.delegate,
-              GlobalCupertinoLocalizations.delegate,
-            ],
-            supportedLocales: AppLocalizations.supportedLocales,
-            
-            theme: ThemeData(
-              colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-              useMaterial3: true,
-            ),
-            home: const HomeScreen(),
-            debugShowCheckedModeBanner: false,
-          );
-        },
-      ),
+    return ScreenUtilInit(
+      designSize: const Size(360, 690),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) {
+        return MultiProvider(
+          providers: [
+            ChangeNotifierProvider(create: (context) => AppState(prefs)),
+            ChangeNotifierProvider(create: (context) => SimplifiedAppState()),
+          ],
+          child: Consumer<AppState>(
+            builder: (context, appState, child) {
+              return MaterialApp(
+                title: 'Talkie',
+                
+                // Localization
+                locale: _resolveLocale(appState.sourceLang),
+                localizationsDelegates: const [
+                  AppLocalizations.delegate,
+                  GlobalMaterialLocalizations.delegate,
+                  GlobalWidgetsLocalizations.delegate,
+                  GlobalCupertinoLocalizations.delegate,
+                ],
+                supportedLocales: AppLocalizations.supportedLocales,
+                
+                theme: ThemeData(
+                  colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+                  useMaterial3: true,
+                ),
+                home: const HomeScreen(),
+                debugShowCheckedModeBanner: false,
+              );
+            },
+          ),
+        );
+      },
     );
   }
 

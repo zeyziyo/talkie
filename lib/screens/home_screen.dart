@@ -17,6 +17,7 @@ import '../widgets/online_library_dialog.dart';
 import 'participant_manage_screen.dart';
 import 'auth_screen.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../widgets/simplified_input_widget.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -362,33 +363,33 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               children: [
                 Text(
                   title,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.bold, 
-                    fontSize: 20.0, 
+                    fontSize: 20.0.sp, 
                     color: Colors.yellowAccent,
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 10.0),
+                  padding: EdgeInsets.only(top: 10.0.h),
                   child: Text(
                     desc,
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.yellowAccent,
-                      fontSize: 16.0,
+                      fontSize: 16.0.sp,
                     ),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 16.0),
+                  padding: EdgeInsets.only(top: 16.0.h),
                   child: Row(
                     children: [
-                      const Icon(Icons.touch_app, color: Colors.cyanAccent, size: 16),
-                      const SizedBox(width: 8),
+                      Icon(Icons.touch_app, color: Colors.cyanAccent, size: 16.r),
+                      SizedBox(width: 8.w),
                       Text(
                         l10n.tutorialTapToContinue,
-                        style: const TextStyle(
+                        style: TextStyle(
                           color: Colors.cyanAccent,
-                          fontSize: 14.0,
+                          fontSize: 14.0.sp,
                           fontStyle: FontStyle.italic,
                         ),
                       ),
@@ -420,16 +421,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight((appState.currentMode <= 2) ? 154.0 : 104.0),
+        preferredSize: Size.fromHeight((appState.currentMode <= 2) ? 154.0.h : 104.0.h),
         child: Consumer<AppState>(
           builder: (context, appState, child) {
             return AppBar(
-              title: const Text('Talkie', style: TextStyle(
+              title: Text('Talkie', style: TextStyle(
                 fontWeight: FontWeight.w900, 
-                fontSize: 34, // v15.9: Increased font size for better balance
+                fontSize: 34.sp, // v15.9: Increased font size for better balance
                 letterSpacing: -1.2, 
                 color: Colors.black,
-                shadows: [
+                shadows: const [
                   Shadow(color: Colors.black26, offset: Offset(0, 0.5), blurRadius: 1),
                 ],
               )),
@@ -439,12 +440,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               leading: Builder(
                 builder: (context) => IconButton(
                   key: _menuKey,
-                  icon: const Icon(Icons.menu, size: 28), // v15.9: Slightly larger menu icon
+                  icon: Icon(Icons.menu, size: 28.r), // v15.9: Slightly larger menu icon
                   onPressed: () => Scaffold.of(context).openDrawer(),
                 ),
               ),
+              leadingWidth: 56.w,
               bottom: PreferredSize(
-                preferredSize: Size.fromHeight((appState.currentMode <= 2) ? 104.0 : 54.0), // v15.9: Optimized heights (0-2 for buttons)
+                preferredSize: Size.fromHeight((appState.currentMode <= 2) ? 104.0.h : 54.0.h), // v15.9: Optimized heights (0-2 for buttons)
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -487,17 +489,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     if (appState.currentMode <= 2)
                       Container(
                         color: Colors.white,
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                         child: Row(
                           children: [
                             if (appState.currentMode != 0) ...[
                               Expanded(
                                 flex: 3,
                                 child: Container(
-                                  height: 40,
+                                  height: 40.h,
                                   decoration: BoxDecoration(
                                     color: Colors.grey.shade100,
-                                    borderRadius: BorderRadius.circular(12),
+                                    borderRadius: BorderRadius.circular(12.r),
                                     border: Border.all(color: Colors.grey.shade300),
                                   ),
                                   child: Row(
@@ -509,35 +511,35 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   ),
                                 ),
                               ),
-                              const SizedBox(width: 12),
+                              SizedBox(width: 12.w),
                             ],
                             Expanded(
                               flex: appState.currentMode == 0 ? 1 : 4, // v110: Expand swap button in Translate mode
                               child: InkWell(
                                 key: _swapButtonKey,
                                 onTap: () => appState.swapLanguages(),
-                                borderRadius: BorderRadius.circular(8),
+                                borderRadius: BorderRadius.circular(8.r),
                                 child: Container(
-                                  height: 40,
-                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-                                  decoration: BoxDecoration(color: Colors.blue[50], borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.blue.shade200)),
+                                  height: 40.h,
+                                  padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
+                                  decoration: BoxDecoration(color: Colors.blue[50], borderRadius: BorderRadius.circular(8.r), border: Border.all(color: Colors.blue.shade200)),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Flexible(child: Text(appState.languageNames[appState.currentInputLang] ?? appState.currentInputLang.toUpperCase(), style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
-                                      const SizedBox(width: 4),
-                                      Icon(Icons.swap_horiz, size: 16, color: Colors.blue.shade600),
-                                      const SizedBox(width: 4),
-                                      Flexible(child: Text(appState.languageNames[appState.currentOutputLang] ?? appState.currentOutputLang.toUpperCase(), style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
+                                      Flexible(child: Text(appState.languageNames[appState.currentInputLang] ?? appState.currentInputLang.toUpperCase(), style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
+                                      SizedBox(width: 4.w),
+                                      Icon(Icons.swap_horiz, size: 16.r, color: Colors.blue.shade600),
+                                      SizedBox(width: 4.w),
+                                      Flexible(child: Text(appState.languageNames[appState.currentOutputLang] ?? appState.currentOutputLang.toUpperCase(), style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
                                     ],
                                   ),
                                 ),
                               ),
                             ),
-                            if (appState.currentMode == 0) const SizedBox(width: 12),
+                            if (appState.currentMode == 0) SizedBox(width: 12.w),
                             IconButton(
                               onPressed: () => _showSimplifiedGuidance(context),
-                              icon: const Icon(Icons.info_outline, color: Colors.amber, size: 24),
+                              icon: Icon(Icons.info_outline, color: Colors.amber, size: 24.r),
                               tooltip: l10n.menuHelp,
                               padding: EdgeInsets.zero,
                               constraints: const BoxConstraints(),
