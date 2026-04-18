@@ -258,6 +258,24 @@ abstract class AppLocalizations {
   /// **'기본 단어 저장소'**
   String get basicWords;
 
+  /// No description provided for @scanLabel.
+  String get scanLabel => 'Scan';
+
+  /// No description provided for @scanInstructions.
+  String get scanInstructions => 'Select an image to scan';
+
+  /// No description provided for @pickGallery.
+  String get pickGallery => 'Pick Gallery';
+
+  /// No description provided for @extractedText.
+  String get extractedText => 'Extracted Text';
+
+  /// No description provided for @saveAsWord.
+  String get saveAsWord => 'Save as Word';
+
+  /// No description provided for @saveAsSentence.
+  String get saveAsSentence => 'Save as Sentence';
+
   /// No description provided for @inputLanguage.
   ///
   /// In ko, this message translates to:

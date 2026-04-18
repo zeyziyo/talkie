@@ -60,6 +60,8 @@ dependencies:
   kakao_flutter_sdk_user: ^1.10.0
   archive: ^3.6.1
   flutter_screenutil: ^5.9.3
+  google_mlkit_text_recognition: ^0.13.0
+  image_picker: ^1.1.2
 
 
 dev_dependencies:

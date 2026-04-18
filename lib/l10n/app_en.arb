@@ -26,7 +26,7 @@
   "ttsInstallGuide": "Please install the language data in Android Settings > Google TTS.",
   "adLoading": "Loading ad, please try again in a moment.",
   "addNewSubject": "Add New Subject",
-  "addParticipant": "Add Participant",
+
   "addTagHint": "Add Tag...",
   "alreadyHaveAccount": "Already have an account?",
   "appTitle": "Talkie",
@@ -51,37 +51,12 @@
   "casePossessivePronoun": "Possessive Pronoun",
   "caseReflexive": "Reflexive",
   "caseSubject": "Subject",
-  "chatAiChat": "Chat",
-  "chatAllConversations": "All Conversations",
-  "chatChoosePersona": "Choose a Persona",
-  "chatEndMessage": "Do you want to end this conversation? You can set a title for it.",
-  "chatEndTitle": "End & Save Chat",
-  "chatFailed": "Chat failed: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "From Conversation ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Conversation History",
-  "chatNew": "New Chat",
-  "chatNewChat": "New Chat",
-  "chatNoConversations": "No conversations yet",
-  "chatSearchHint": "Search by dialogue title...",
-  "chatNoteSearchHint": "Search by note...",
-  "chatSaveAndExit": "Save & Exit",
-  "chatStartNewPrompt": "Start a new chat to practice!",
-  "chatTypeHint": "Type a message...",
-  "chatUntitled": "Untitled Conversation",
+  "scanLabel": "Scan",
+  "scanInstructions": "Select an image to scan",
+  "pickGallery": "Pick Gallery",
+  "extractedText": "Extracted Text",
+  "saveAsWord": "Save as Word",
+  "saveAsSentence": "Save as Sentence",
   "checking": "Checking...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +70,7 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Are you sure you want to delete this conversation?\nThis action cannot be undone.",
-  "confirmDeleteParticipant": "Are you sure you want to delete this participant?",
+
   "contextTagHint": "Describe situation for easier classification later",
   "contextTagLabel": "Context/Situation (Optional) - Ex: Morning greeting, polite form",
   "copiedToClipboard": "Copied to clipboard!",
@@ -131,8 +105,7 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Roleplay in scenarios. Choose the right response and speak it aloud.",
-  "dialogueQuestTitle": "Dialogue Quest",
+
   "disambiguationPrompt": "Which meaning do you intend?",
   "@disambiguationPrompt": {
     "description": "Prompt for disambiguation dialog"
@@ -142,7 +115,7 @@
     "description": "Title for disambiguation dialog"
   },
   "dontHaveAccount": "Don't have an account?",
-  "editParticipant": "Edit Participant",
+
   "email": "Email",
   "emailAlreadyInUse": "This email is already in use. Please log in or use password recovery.",
   "enterNewSubjectName": "Enter new subject name",
@@ -197,10 +170,9 @@
   "getMaterials": "Get Materials",
   "good": "Good",
   "googleContinue": "Continue with Google",
-  "helpDialogueImportDesc": "Import complete dialogue sets via JSON files.",
-  "helpDialogueImportDetails": "• JSON Structure: Use the `entries` array and specify a `speaker` for each turn.\n• Participants: Accurate `participants` data will auto-configure personas and languages in AI Chat.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
+
   "helpJsonDesc": "Learn how to import study materials in bulk using JSON files.",
-  "helpJsonTypeDialogue": "Dialogue",
+
   "helpJsonTypeSentence": "Sentence",
   "helpJsonTypeWord": "Word",
   "helpMode1Desc": "Start language learning in the most intuitive way with premium 3D microphones and large keyboard icons.",
@@ -209,8 +181,6 @@
   "helpMode2Details": "• Materials: Access 'Select Material Set' or 'Online Library' via the top-right menu (⋮).\n• Flip Card: Use 'Show/Hide' to check translations.\n• Listen: Tap speaker icons for pronunciation.\n• Mastery: Mark items as studied with the checkmark (V).\n• Delete: Long-press a card to remove it from your records.\n• Filter: Real-time smart search and filter by tags or starting letters.",
   "helpMode3Desc": "Practice your pronunciation by listening to and shadowing sentences.",
   "helpMode3Details": "• Materials: Select a material set via the top-right menu (⋮).\n• Interval: Adjust wait time between sentences (3s to 60s) using [-] [+].\n• Start/Stop: Control shadowing sessions with central buttons.\n• Speak: Listen to the native speaker and repeat loudly.\n• Feedback: Real-time accuracy scores (0-100) and color coding.\n• Settings: Use the gear icon to filter practice scope by tags.",
-  "helpModeChatDesc": "Practice real-world conversations by chatting with an AI persona.",
-  "helpModeChatDetails": "• AI Chat: Practice real-world conversations via the 'Chat' menu in the bottom navigation bar.\n• Persona Settings: Freely customize your partner's gender, name, and language code.\n• GPS Context: Recognizes your current location to suggest context-aware conversation topics.\n• Dual Language: AI responses are displayed with translations for maximum learning efficiency.\n• History & Save: Filter past conversations and save specific messages as study materials during the chat.",
   "helpTabJson": "JSON Format",
   "helpTabModes": "Modes",
   "helpTabQuickStart": "Quick Start",
@@ -313,7 +283,7 @@
   "labelName": "Name",
   "labelNote": "Enter Note",
   "labelPOS": "Part of Speech",
-  "labelRole": "Role",
+
   "labelSentence": "Sentence",
   "labelSentenceCollection": "Sentence Collection",
   "labelSentenceType": "Sentence Type",
@@ -336,17 +306,13 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Loading participants...",
-  "location": "Location",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
+
+
   "login": "Login",
   "logout": "Logout",
   "logoutConfirmMessage": "Are you sure you want to logout from this device?",
   "logoutConfirmTitle": "Logout",
   "male": "Male",
-  "manageParticipants": "Manage Participants",
   "manual": "Manual",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -359,10 +325,7 @@
   "@materialInfo": {
     "description": "Title for material metadata section"
   },
-  "me": "Me",
-  "@me": {
-    "description": "Label for self speaker"
-  },
+
   "menuDeviceImport": "Import from Device",
   "menuHelp": "Help",
   "menuLanguageSettings": "Language Settings",
@@ -392,11 +355,7 @@
   "neutral": "Neutral",
   "newSubjectName": "New Subject Name",
   "next": "Next",
-  "noDialogueHistory": "No dialogue history.",
-  "noInternetWarningMic": "No internet connection. Voice recognition may not work offline.",
-  "noInternetWarningTranslate": "No internet connection. Translation is unavailable offline. Please use Review mode.",
-  "noMaterialsInCategory": "No materials in this category.",
-  "noParticipantsFound": "No participants found.",
+
   "noRecords": "No study records for selected language",
   "@noRecords": {
     "description": "Empty state message"
@@ -415,22 +374,13 @@
   "onlineLibraryCheckInternet": "Please check your internet connection or try again later.",
   "onlineLibraryLoadFailed": "Failed to load materials.",
   "onlineLibraryNoMaterials": "No materials found.",
-  "participantDeleted": "Participant deleted.",
-  "participantRename": "Rename Participant",
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Partner Mode",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+
+
+
   "password": "Password",
   "passwordTooShort": "Password must be at least 6 characters.",
   "perfect": "Perfect!",
-  "personaFriend": "Local Friend",
-  "personaGuide": "Travel Guide",
-  "personaTeacher": "English Teacher",
+
   "playAgain": "Play Again",
   "playbackFailed": "Playback failed: {error}",
   "@playbackFailed": {
@@ -501,19 +451,9 @@
   "resetPracticeHistory": "Reset Practice History",
   "retry": "Retry?",
   "reviewAll": "Review All",
-  "reviewCount": "Review {count} time(s)",
-  "@reviewCount": {
-    "description": "Review count display",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
+
   "reviewModeTitle": "Review",
-  "roleAi": "AI",
-  "roleThirdParty": "Third Party",
-  "roleUser": "User",
+
   "save": "Save",
   "saveData": "Save Data",
   "@saveData": {
@@ -605,14 +545,8 @@
     "description": "Source language label"
   },
   "sourceLanguageLabel": "My Language (Source)",
-  "speakNow": "Speak now!",
-  "speaker": "Speaker",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Select Speaker",
-  "speakingPractice": "Speaking Practice",
-  "startChat": "Start Chat",
+
+
   "startPractice": "Start Practice",
   "startTutorial": "Start Tutorial",
   "startWarning": "Warning",
@@ -660,7 +594,7 @@
     "description": "Tooltip for switching to Partner mode"
   },
   "syncingData": "Syncing data...",
-  "tabConversation": "Conversation",
+
   "tabReview": "Review ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -746,8 +680,7 @@
   "translationRefilled": "Translations refilled by 5!",
   "translationResultHint": "Translation result - editable",
   "tryAgain": "Try Again",
-  "tutorialAiChatDesc": "Practice real conversation with AI personas here.",
-  "tutorialAiChatTitle": "AI Chat",
+
   "tutorialContextDesc": "Add context (e.g., Morning) to distinguish similar sentences.",
   "tutorialContextTitle": "Context Tag",
   "tutorialLangSettingsDesc": "Configure source and target languages for translation.",

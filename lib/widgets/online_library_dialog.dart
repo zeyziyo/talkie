@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_state.dart';
 import '../l10n/app_localizations.dart';
-import '../models/dialogue_group.dart';
 
 class OnlineLibraryDialog extends StatefulWidget {
   const OnlineLibraryDialog({super.key});
@@ -48,7 +47,7 @@ class _OnlineLibraryDialogState extends State<OnlineLibraryDialog> {
     final l10n = AppLocalizations.of(context)!;
 
     return DefaultTabController(
-      length: 3,
+      length: 2,
       child: AlertDialog(
         title: Text(l10n.menuOnlineLibrary), // "온라인 자료실"
         content: SizedBox(
@@ -63,7 +62,6 @@ class _OnlineLibraryDialogState extends State<OnlineLibraryDialog> {
                 tabs: [
                   Tab(text: l10n.tabWord), // "단어"
                   Tab(text: l10n.tabSentence), // "문장"
-                  Tab(text: l10n.tabConversation), // "대화"
                 ],
               ),
               Expanded(
@@ -104,9 +102,6 @@ class _OnlineLibraryDialogState extends State<OnlineLibraryDialog> {
                     final sentenceMaterials = state.onlineMaterials.where((m) =>
                         (m['category'] as String?)?.toLowerCase() == 'sentences' ||
                         m['type'] == 'sentence').toList();
-                    final dialogueMaterials = state.onlineMaterials.where((m) =>
-                        (m['category'] as String?)?.toLowerCase() == 'dialogues' ||
-                        m['type'] == 'dialogue').toList();
 
                     return TabBarView(
                       children: [
@@ -114,8 +109,6 @@ class _OnlineLibraryDialogState extends State<OnlineLibraryDialog> {
                         _buildMaterialList(context, state, wordMaterials, 'word'),
                         // 2. Sentence Tab
                         _buildMaterialList(context, state, sentenceMaterials, 'sentence'),
-                        // 3. Dialogue Tab
-                        _buildMaterialList(context, state, dialogueMaterials, 'dialogue'),
                       ],
                     );
                   },
@@ -142,8 +135,8 @@ class _OnlineLibraryDialogState extends State<OnlineLibraryDialog> {
         final material = materials[index];
         return ListTile(
           leading: Icon(
-            type == 'word' ? Icons.book : (type == 'dialogue' ? Icons.chat : Icons.article),
-            color: type == 'word' ? Colors.blue : (type == 'dialogue' ? Colors.green : Colors.orange),
+            type == 'word' ? Icons.book : Icons.article,
+            color: type == 'word' ? Colors.blue : Colors.orange,
           ),
           title: Text(_getLocalizedTitle(l10n, material)),
           subtitle: Text(material['description'] ?? ''),
@@ -158,29 +151,17 @@ class _OnlineLibraryDialogState extends State<OnlineLibraryDialog> {
                   );
                   
                   await state.loadStudyMaterials(); 
-                  if (type == 'dialogue') {
-                    final String? dId = result['dialogue_id'] as String?;
-                    if (dId != null) {
-                      state.setRecordTypeFilter('sentence');
-                      state.selectMaterial(dId);
-                      final group = state.dialogueGroups.cast<DialogueGroup?>().firstWhere(
-                        (g) => g?.id == dId, 
-                        orElse: () => null,
-                      );
-                      if (group != null) await state.loadExistingDialogue(group);
-                    }
-                  } else {
-                    final dynamic mIdRaw = result['material_id'];
-                    String? materialId;
-                    if (mIdRaw is String && mIdRaw.isNotEmpty) {
-                      materialId = mIdRaw;
-                    } else if (mIdRaw is int && mIdRaw > 0) {
-                      materialId = mIdRaw.toString();
-                    }
-                    if (materialId != null) {
-                      state.setRecordTypeFilter(type == 'word' ? 'word' : 'sentence');
-                      state.selectMaterial(materialId);
-                    }
+                  
+                  final dynamic mIdRaw = result['material_id'];
+                  String? materialId;
+                  if (mIdRaw is String && mIdRaw.isNotEmpty) {
+                    materialId = mIdRaw;
+                  } else if (mIdRaw is int && mIdRaw > 0) {
+                    materialId = mIdRaw.toString();
+                  }
+                  if (materialId != null) {
+                    state.setRecordTypeFilter(type == 'word' ? 'word' : 'sentence');
+                    state.selectMaterial(materialId);
                   }
                   if (context.mounted) Navigator.pop(context);
                 } else if (result['error'] == 'StudyLangNotFound') {

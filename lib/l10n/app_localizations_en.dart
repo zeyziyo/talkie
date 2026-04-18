@@ -12,6 +12,24 @@ class AppLocalizationsEn extends AppLocalizations {
   String get basicWords => 'Basic Word Repository';
 
   @override
+  String get scanLabel => 'Scan';
+
+  @override
+  String get scanInstructions => 'Select an image to scan';
+
+  @override
+  String get pickGallery => 'Pick Gallery';
+
+  @override
+  String get extractedText => 'Extracted Text';
+
+  @override
+  String get saveAsWord => 'Save as Word';
+
+  @override
+  String get saveAsSentence => 'Save as Sentence';
+
+  @override
   String get inputLanguage => 'Input Language';
 
   @override

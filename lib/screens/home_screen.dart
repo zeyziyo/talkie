@@ -14,13 +14,12 @@ import '../widgets/mode3_widget.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 import '../widgets/help_dialog.dart';
 import '../constants/language_constants.dart';
-import 'chat_history_screen.dart';
 import '../widgets/online_library_dialog.dart';
-import 'participant_manage_screen.dart';
 import 'auth_screen.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../widgets/simplified_input_widget.dart';
+import '../widgets/scan_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   static const _channel = MethodChannel('com.zeyziyo.talkie/settings');
@@ -52,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   // Tutorial Keys - Fixed
   final GlobalKey _menuKey = GlobalKey(); // Renamed from _tabKey
   final GlobalKey _actionButtonKey = GlobalKey();
-  final GlobalKey _chatFabKey = GlobalKey(); // Added: Fixed undefined identifier
+
 
   // AdMob Banner
   BannerAd? _bannerAd;
@@ -218,15 +217,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       radius: 12,
     ));
 
-    // Mode 0: AI Chat (New Chat History)
+    // Mode 0: Translation (Home)
     if (modeIndex == 0) {
-      targets.add(_buildTarget(
-        _chatFabKey, 
-        l10n.tutorialAiChatTitle, 
-        l10n.tutorialAiChatDesc,
-        ContentAlign.top,
-        paddingFocus: 4,
-      ));
+      // No specific tutorial targets for Mode 0 yet
     } 
     // Mode 1: Translation (Premium Simplified Input)
     else if (modeIndex == 1) {
@@ -482,8 +475,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           ),
                           _buildModernTab(
                             isSelected: appState.currentMode == 3,
-                            icon: Icons.chat_bubble,
-                            label: l10n.chatAiChat,
+                            icon: Icons.document_scanner,
+                            label: l10n.scanLabel,
                           ),
                         ],
                       ),
@@ -628,12 +621,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     case 'settings':
                       _showLanguageSettingsDialog(context);
                       break;
-                    case 'manage_participants':
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const ParticipantManageScreen()),
-                      );
-                      break;
                     // select_material removed from menu as it's now an icon
                   }
                 },
@@ -679,16 +666,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   ),
                 ),
                 
-                PopupMenuItem<String>(
-                  value: 'manage_participants',
-                  child: Row(
-                    children: [
-                      const Icon(Icons.people, color: Colors.purple),
-                      const SizedBox(width: 8),
-                      Text(l10n.manageParticipants),
-                    ],
-                  ),
-                ),
 
                 PopupMenuItem<String>(
                   value: 'help',
@@ -856,18 +833,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   },
                 ),
                 ListTile(
-                  leading: const Icon(Icons.record_voice_over),
-                  title: Text(l10n.practiceModeTitle),
-                  selected: appState.currentMode == 2,
-                  selectedColor: const Color(0xFF667eea),
-                  onTap: () {
-                    appState.switchMode(2);
-                    Navigator.pop(context);
-                  },
-                ),
-                ListTile(
-                  leading: const Icon(Icons.chat_bubble),
-                  title: Text(l10n.chatAiChat),
+                  leading: const Icon(Icons.document_scanner),
+                  title: Text(l10n.scanLabel),
                   selected: appState.currentMode == 3,
                   selectedColor: const Color(0xFF667eea),
                   onTap: () {
@@ -936,9 +903,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   final appState = Provider.of<AppState>(context, listen: false);
                   appState.switchMode(index, fromPage: true);
                   _tabController.animateTo(index); // Sync TabBar with swipe
-                  if (index == 3) {
-                    // Ensure list is loaded for the AI Chat (Now at index 3)
-                    appState.loadDialogueGroups();
+                   if (index == 3) {
+                    // Scan mode init if needed
                   }
                },
               children: [
@@ -963,10 +929,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   searchKey: _mode3SearchKey,
                   onSelectMaterial: () => OnlineLibraryDialog.show(context),
                 ),
-                ChatHistoryScreen(
-                  isWidget: true,
-                  fabKey: _chatFabKey,
-                ),
+                const ScanWidget(),
               ],
             ),
           ),

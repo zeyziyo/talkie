@@ -12,6 +12,24 @@ class AppLocalizationsKo extends AppLocalizations {
   String get basicWords => '기본 단어 저장소';
 
   @override
+  String get scanLabel => '스캔';
+
+  @override
+  String get scanInstructions => '스캔할 이미지를 선택하세요';
+
+  @override
+  String get pickGallery => '갤러리에서 선택';
+
+  @override
+  String get extractedText => '인식된 텍스트';
+
+  @override
+  String get saveAsWord => '단어로 저장';
+
+  @override
+  String get saveAsSentence => '문장으로 저장';
+
+  @override
   String get inputLanguage => '입력 언어';
 
   @override

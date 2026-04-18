@@ -24,9 +24,6 @@ extension AppStateSettings on AppState {
       _selectedReviewLanguage = _targetLang;
     }
     
-    // Chat Gender Settings
-    _chatUserGender = _prefs?.getString('chatUserGender') ?? 'male';
-    _chatAiGender = _prefs?.getString('chatAiGender') ?? 'female';
     _useSimpleMic = _prefs?.getBool('useSimpleMic') ?? false;
 
     // Onboarding Settings
@@ -37,22 +34,9 @@ extension AppStateSettings on AppState {
   Future<void> _saveSettings() async {
     await _prefs?.setString('sourceLang', _sourceLang);
     await _prefs?.setString('targetLang', _targetLang);
-    await _prefs?.setString('chatUserGender', _chatUserGender);
-    await _prefs?.setString('chatAiGender', _chatAiGender);
     await _prefs?.setBool('useSimpleMic', _useSimpleMic);
   }
 
-  void setChatUserGender(String gender) {
-    _chatUserGender = gender;
-    _saveSettings();
-    notify();
-  }
-
-  void setChatAiGender(String gender) {
-    _chatAiGender = gender;
-    _saveSettings();
-    notify();
-  }
 
   /// Internal setter for automatic optimization (UI toggle removed as requested)
   void setUseSimpleMic(bool value) {

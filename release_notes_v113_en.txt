@@ -1,8 +1,8 @@
 Release Notes - v2.0.0 (Build 113)
 
-- Fixed a critical learning card creation and display failure on legacy Android devices by completely removing non-standard SQL functions (json_extract) from all queries.
-- Improved microphone permission handling on the first app launch to ensure voice input works immediately without requiring a second button tap.
-- Optimized database ID generation (31-bit limit) to guarantee 32-bit legacy system compatibility.
-- Implemented real-time study list synchronization upon successfully saving new cards.
-- Added in-app diagnostic data export functionality directly to the sidebar for advanced user troubleshooting.
-- Enhanced UX with a streamlined 2-row layout controller in Review and Pronunciation Practice modes.
+- Fixed learning card display issues on legacy Android devices.
+- Improved microphone permission flow for smoother first-time voice input.
+- Enhanced database stability and older system compatibility.
+- Added real-time study list updates when saving new cards.
+- Added a diagnostic data export feature for troubleshooting.
+- Improved UI layout in Review and Pronunciation Practice modes.

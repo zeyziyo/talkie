@@ -11,13 +11,11 @@ import '../services/translation_service.dart';
 import '../services/speech_service.dart';
 import '../constants/language_constants.dart';
 import '../services/usage_service.dart';
-import '../models/sentence.dart';
 import '../services/database/sentence_repository.dart';
-import '../services/database/dialogue_repository.dart';
 import '../services/database/unified_repository.dart';
-import '../models/dialogue_group.dart';
-import '../models/chat_participant.dart';
-import 'package:uuid/uuid.dart';
+import '../models/sentence.dart';
+import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
+import 'package:image_picker/image_picker.dart';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
@@ -28,14 +26,13 @@ import '../services/supabase/supabase_auth_service.dart';
 import '../l10n/app_localizations.dart';
 import '../constants/app_constants.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:geolocator/geolocator.dart';
 import '../services/folder_import_service.dart';
 
 part 'app_state_auth.dart';
 part 'app_state_mode1.dart';
 part 'app_state_mode2.dart';
 part 'app_state_mode3.dart';
-part 'app_state_chat.dart';
+part 'app_state_scan.dart';
 part 'app_state_settings.dart';
 
 /// App-wide state management for Talkie (Modularized Hub)
@@ -63,52 +60,17 @@ class AppState extends ChangeNotifier {
   Future<void> _initializeAll() async {
     debugPrint('[AppState] >>> _initializeAll: START');
     
-    // [Phase 164] 강제 구원 타이머: 15초 후 무조건 로딩 상태 해제 및 기본 데이터 주입
-    Future.delayed(const Duration(seconds: 15), () async {
-      if (_globalParticipantsLoading) {
-        debugPrint('[AppState] !!! RESCUE TIMER fired: Force clearing loading state');
-        _globalParticipantsLoading = false;
-        
-        // 만약 여전히 비어있다면 강제로 메모리 상에라도 '나/AI'를 주입하여 사용자 경험을 보호합니다.
-        if (_globalParticipants.isEmpty) {
-          debugPrint('[AppState] !!! RESCUE TIMER: Injecting default participants to memory as emergency fallback.');
-          _globalParticipants = [
-            ChatParticipant(id: 'me', dialogueId: '', name: '나', role: 'user', gender: _chatUserGender, langCode: _sourceLang),
-            ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', gender: _chatAiGender, langCode: _targetLang),
-          ];
-        }
-        notifyListeners();
-      }
-    });
-
     try {
-      // loadGlobalParticipants 내부에서 cleanup 및 ensureDefault를 통합 처리합니다.
-      await loadGlobalParticipants().timeout(const Duration(seconds: 12));
-    } catch (e) {
-      debugPrint('[AppState] !!! _initializeAll Error (caught): $e');
-    } finally {
-      // 에러 여부와 상관없이 초기 로딩 상태는 반드시 해제하여 화면이 멈추지 않게 합니다.
-      _globalParticipantsLoading = false;
-      if (_globalParticipants.isEmpty) {
-        debugPrint('[AppState] Resetting to fallback participants due to init failure.');
-        _globalParticipants = [
-          ChatParticipant(id: 'me', dialogueId: '', name: '나', role: 'user', gender: _chatUserGender, langCode: _sourceLang),
-          ChatParticipant(id: 'ai', dialogueId: '', name: 'AI', role: 'ai', gender: _chatAiGender, langCode: _targetLang),
-        ];
-      }
-      isLoggingIn = false; // Phase 15.8.11: Ensure logging in flag is also cleared
-      notifyListeners();
-      debugPrint('[AppState] >>> _initializeAll: FINISHED (Loading Cleared)');
-      
-      // Phase 17480: Fetch online materials in the background to proactively repair local legacy titles
-      fetchOnlineMaterialsList().catchError((e) {
-        debugPrint('[AppState] Background online fetch failed: \$e');
-      });
-
-      // Phase 17500: Repair any records with 'auto' language code from legacy imports
+      // Phase 17500: Repair any records with 'auto' language code
       DatabaseService.repairAutoLanguageRecords(_sourceLang, _targetLang).catchError((e) {
-        debugPrint('[AppState] Language repair failed: \$e');
+        debugPrint('[AppState] Language repair failed: $e');
       });
+    } catch (e) {
+      debugPrint('[AppState] !!! _initializeAll Error: $e');
+    } finally {
+      isLoggingIn = false;
+      notifyListeners();
+      debugPrint('[AppState] >>> _initializeAll: FINISHED');
     }
   }
 
@@ -213,7 +175,6 @@ class AppState extends ChangeNotifier {
     if (_isSyncing) return;
     isSyncing = true;
     try {
-      await loadDialogueGroups();
       await loadStudyMaterials();
       await loadRecordsByTags(); // Ensure Mode 2 UI updates
     } finally {
@@ -284,7 +245,6 @@ class AppState extends ChangeNotifier {
   String _sourceRoot = ''; 
   String _sourceStyle = ''; // Phase 98.1: Formality for sentences
   String _statusMessage = '';
-  List<String> _aiDetectedTags = [];
   
   bool _showWelcomeBanner = false; // Phase: Onboarding Improvement
   
@@ -299,10 +259,6 @@ class AppState extends ChangeNotifier {
   String _localizedWordbook = 'My Wordbook';
   String _localizedSentencebook = 'My Sentence Collection';
 
-  // Settings & Voice
-  String _chatUserGender = 'male'; 
-  String _chatAiGender = 'female';
-  
   // TTS Error Notification
   final ValueNotifier<TtsErrorData?> ttsErrorNotifier = ValueNotifier(null);
   
@@ -388,27 +344,31 @@ class AppState extends ChangeNotifier {
   StreamSubscription? _speechStatusSubscription;
   bool _practiceWordsOnly = false;
 
-  // Mode 4 (AI Chat)
-  String? _activeDialogueId;
-  String? _activeDialogueTitle;
-  String? _activeDialogueLocation;
-  String? _activePersona;
-  String? _activePersonaGender;
-  int _currentDialogueSequence = 0;
-  List<DialogueGroup> _dialogueGroups = [];
-  List<String> _suggestedTitles = [];
-  bool _isFetchingTitles = false;
-  String _currentChatLocation = '';
-  List<ChatParticipant> _activeParticipants = [];
-  List<Map<String, dynamic>> _currentChatMessages = [];
+  // Mode 4 (Scan)
+  File? _scannedImage;
+  String _scannedText = '';
+  final String _scanDetectedLang = 'auto';
+
+  // Mode 4 (Scan) Getters
+  File? get scannedImage => _scannedImage;
+  String get scannedText => _scannedText;
+  String get scanDetectedLang => _scanDetectedLang;
+
+  void setScannedText(String text) {
+    _scannedText = text;
+    notify();
+  }
+
+  void setScannedImage(File? image) {
+    _scannedImage = image;
+    notify();
+  }
 
   // Phase 9: Offline State
   bool _isOffline = false;
   StreamSubscription<List<ConnectivityResult>>? _connectivitySubscription;
 
-  // Phase 1: Identity & Lifecycle Guard
-  bool _globalParticipantsLoading = true;
-  bool get globalParticipantsLoading => _globalParticipantsLoading;
+  // Legacy LifeCycle Guard Removed
 
   // ---------------------------------------------------------
   // Getters
@@ -434,10 +394,7 @@ class AppState extends ChangeNotifier {
   bool get isSyncing => _isSyncing;
   set isSyncing(bool val) { _isSyncing = val; notifyListeners(); }
   String get statusMessage => _statusMessage;
-  List<String> get aiDetectedTags => _aiDetectedTags;
-  String get chatUserGender => _chatUserGender;
-  String get chatAiGender => _chatAiGender;
-  String? get activePersonaGender => _activePersonaGender;
+  // Removed Legacy Chat UI Getters
   bool get isWordMode => _isWordMode;
   List<Map<String, dynamic>> get studyRecords => _studyRecords;
   List<Map<String, dynamic>> get similarSources => _similarSources;
@@ -456,20 +413,10 @@ class AppState extends ChangeNotifier {
   String? get filterStartsWith => _filterStartsWith;
   String get searchQuery => _searchQuery;
   bool get showMemorized => _showMemorized;
-  String? get activeDialogueId => _activeDialogueId;
-  String? get activeDialogueTitle => _activeDialogueTitle;
-  String? get activeDialogueLocation => _activeDialogueLocation;
-  String? get activePersona => _activePersona;
-  List<String> get suggestedTitles => _suggestedTitles;
-  bool get isFetchingTitles => _isFetchingTitles;
-  String get currentChatLocation => _currentChatLocation;
   String get sourcePos => _sourcePos;
   String get sourceFormType => _sourceFormType;
   String get sourceStyle => _sourceStyle;
   String get sourceRoot => _sourceRoot;
-  List<DialogueGroup> get dialogueGroups => _dialogueGroups;
-  List<ChatParticipant> get activeParticipants => _activeParticipants;
-  List<Map<String, dynamic>> get currentChatMessages => _currentChatMessages;
   bool get isOffline => _isOffline;
   
   bool get mode3SessionActive => _mode3SessionActive;
@@ -500,181 +447,7 @@ class AppState extends ChangeNotifier {
   String get currentInputLang => _isDirectionSwapped ? _targetLang : _sourceLang;
   String get currentOutputLang => _isDirectionSwapped ? _sourceLang : _targetLang;
 
-  // ---------------------------------------------------------
-  // Phase 4: Global Participant Management
-  // ---------------------------------------------------------
-  
-  List<ChatParticipant> _globalParticipants = [];
-  List<ChatParticipant> get globalParticipants => _globalParticipants;
-
-  Future<void> loadGlobalParticipants({bool force = false}) async {
-    if (_globalParticipantsLoading) {
-      debugPrint('[AppState] loadGlobalParticipants: Already loading. Skipping.');
-      return;
-    }
-    
-    if (!force && _globalParticipants.isNotEmpty) {
-      debugPrint('[AppState] loadGlobalParticipants: Already has ${_globalParticipants.length} participants. Skipping.');
-      return;
-    }
-
-    _globalParticipantsLoading = true;
-    notifyListeners();
-    
-    try {
-      final startTime = DateTime.now();
-      debugPrint('[AppState] Starting Optimized Global Participants Loading...');
-
-      // 1. 1회 통합 조회 (타임아웃 적용)
-      List<ChatParticipant> rawParticipants = await DialogueRepository.getAllUniqueParticipants().timeout(
-        const Duration(seconds: 10),
-        onTimeout: () {
-          debugPrint('[AppState] !!! Global Participants Loading TIMEOUT (10s).');
-          return [];
-        },
-      );
-
-      // 2. 메모리 상에서 자가 치유 (Self-healing: 이름이 없거나 중복된 항목 제거)
-      final Set<String> seenIds = {};
-      final List<ChatParticipant> cleanList = [];
-      
-      for (var p in rawParticipants) {
-        if (p.name.trim().isEmpty || p.name == 'Group') continue;
-        if (seenIds.contains(p.id)) continue;
-        seenIds.add(p.id);
-        cleanList.add(p);
-      }
-      
-      _globalParticipants = cleanList;
-
-      // 3. 기본 참가자 보장 (메모리 우선 처리 후 비동기 DB 삽입)
-      await _ensureDefaultParticipants();
-      
-      final duration = DateTime.now().difference(startTime);
-      debugPrint('[AppState] Participants load/clean finished in ${duration.inMilliseconds}ms. Count: ${_globalParticipants.length}');
-      
-    } catch (e) {
-      debugPrint('[AppState] Global Participants Loading Error: $e');
-      if (_globalParticipants.isEmpty) {
-        await _ensureDefaultParticipants();
-      }
-    } finally {
-      _globalParticipantsLoading = false;
-      notifyListeners();
-    }
-  }
-
-  /// 기본 참가자('나', 'AI')가 없으면 자동 생성 (앱 최초 구동 시 1회만 동작하도록 개선)
-  Future<void> _ensureDefaultParticipants() async {
-    final bool hasCreatedDefaults = _prefs?.getBool('hasDefaultParticipantsCreated') ?? false;
-    if (hasCreatedDefaults) {
-      // 이미 생성했던 이력이 있다면(사용자가 의도적으로 지웠더라도) 다시 강제 부활시키지 않음
-      return;
-    }
-
-    // 1. role과 name 모두를 기준으로 중복 체크 (더 엄격하게)
-    final hasUserMe = _globalParticipants.any((p) => p.role == 'user' && p.name == '나');
-    final hasAiBot = _globalParticipants.any((p) => (p.role == 'ai' || p.role == 'assistant') && p.name == 'AI');
-
-    debugPrint('[AppState] _ensureDefaultParticipants: hasUserMe=$hasUserMe, hasAiBot=$hasAiBot');
-
-    if (!hasUserMe) {
-      debugPrint('[AppState] Creating default user: me');
-      final user = ChatParticipant(
-        id: 'me',
-        dialogueId: '',
-        name: '나',
-        role: 'user',
-        gender: _chatUserGender,
-        langCode: _sourceLang,
-      );
-      try {
-        // DB에도 없는 경우에만 insert 시도하거나, 에러를 무시하도록 처리
-        await DialogueRepository.insertParticipant(user.toJson());
-      } catch (e) {
-        debugPrint('[AppState] Default user might already exist in DB: $e');
-      }
-      _globalParticipants.removeWhere((p) => p.id == 'me'); // 메모리 내 중복 방지
-      _globalParticipants.insert(0, user);
-    }
-    
-    if (!hasAiBot) {
-      debugPrint('[AppState] Creating default AI: ai');
-      final ai = ChatParticipant(
-        id: 'ai',
-        dialogueId: '',
-        name: 'AI',
-        role: 'ai',
-        gender: _chatAiGender,
-        langCode: _targetLang,
-      );
-      try {
-        await DialogueRepository.insertParticipant(ai.toJson());
-      } catch (e) {
-        debugPrint('[AppState] Default AI might already exist in DB: $e');
-      }
-      _globalParticipants.removeWhere((p) => p.id == 'ai'); // 메모리 내 중복 방지
-      _globalParticipants.add(ai);
-    }
-
-    // 레거시 'assistant' 역할 정규화
-    final assistants = _globalParticipants.where((p) => p.role == 'assistant').toList();
-    for (var legacyAi in assistants) {
-        final updatedAi = legacyAi.copyWith(role: 'ai');
-        await DialogueRepository.updateParticipant(updatedAi.id, {'role': 'ai'});
-        final idx = _globalParticipants.indexOf(legacyAi);
-        if (idx != -1) _globalParticipants[idx] = updatedAi;
-    }
-
-    await _prefs?.setBool('hasDefaultParticipantsCreated', true);
-  }
-
-  Future<void> addGlobalParticipant(ChatParticipant participant) async {
-    await DialogueRepository.insertParticipant({
-      'id': participant.id,
-      'name': participant.name,
-      'role': participant.role,
-      'gender': participant.gender,
-      'lang_code': participant.langCode,
-    });
-    await loadGlobalParticipants(force: true);
-  }
-
-  Future<void> updateGlobalParticipant(ChatParticipant participant) async {
-    await DialogueRepository.updateParticipant(participant.id, {
-      'id': participant.id,
-      'name': participant.name,
-      'role': participant.role,
-      'gender': participant.gender,
-      'lang_code': participant.langCode,
-    });
-    
-    // 현재 활성화된 채팅방(activeParticipants) 에도 변경 사항 동기화
-    final index = _activeParticipants.indexWhere((p) => p.id == participant.id);
-    if (index != -1) {
-      final old = _activeParticipants[index];
-      _activeParticipants[index] = ChatParticipant(
-        id: old.id,
-        dialogueId: old.dialogueId,
-        name: participant.name,
-        role: participant.role,
-        gender: participant.gender,
-        langCode: participant.langCode,
-        avatarColor: old.avatarColor,
-      );
-    }
-
-    await loadGlobalParticipants(force: true);
-  }
-
-  Future<void> deleteGlobalParticipant(String id) async {
-    await DialogueRepository.deleteParticipant(id);
-    
-    // 현재 활성화된 채팅방에서도 삭제 처리
-    _activeParticipants.removeWhere((p) => p.id == id);
-    
-    await loadGlobalParticipants(force: true);
-  }
+  // Removed Global Participant Management - Legacy Chat Feature Purged
 
   // ---------------------------------------------------------
   // Controller / Hub Methods
@@ -707,8 +480,8 @@ class AppState extends ChangeNotifier {
     } else if (mode == 2) { // Practice (New Index 2)
       loadStudyMaterials();
       _practiceWordsOnly = false;
-    } else if (mode == 3) { // AI Chat (New Index 3)
-      loadDialogueGroups();
+    } else if (mode == 3) { // Scan (New Index 3)
+      // Any init for scan mode
     }
 
     notify();
@@ -737,7 +510,7 @@ class AppState extends ChangeNotifier {
     _statusMessage = '';
     _selectedSourceId = null;
     _duplicateCheckTriggered = false;
-    _aiDetectedTags = [];
+
     _sourcePos = '';
     _sourceFormType = '';
     _sourceStyle = ''; // Phase 98.1

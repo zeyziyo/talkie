@@ -1,13 +1,13 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:sqflite/sqflite.dart';
 import 'database/database_helper.dart';
 import 'database/word_repository.dart';
 import 'database/sentence_repository.dart';
 import 'database/tag_repository.dart';
-import 'database/dialogue_repository.dart';
 import 'database/data_transfer_service.dart';
 import 'database/unified_repository.dart';
-import '../models/chat_participant.dart';
+
 
 /// DatabaseService - 로컬 데이터베이스 관리 (Facade)
 class DatabaseService {
@@ -26,14 +26,9 @@ class DatabaseService {
     return sRes.isNotEmpty;
   }
 
-  /// Phase 17480: Global title check including dialogue groups
+  /// Global title check
   static Future<bool> notebookTitleExists(String title) async {
-    final db = await database;
-    // 1. Check Words/Sentences Meta
-    if (await materialExistsBySubject(title)) return true;
-    // 2. Check Dialogue Groups
-    final dRes = await db.query('dialogue_groups', where: 'title = ?', whereArgs: [title], limit: 1);
-    return dRes.isNotEmpty;
+    return await materialExistsBySubject(title);
   }
 
   // --- Word Repository Delegation ---
@@ -50,45 +45,6 @@ class DatabaseService {
   static Future<List<String>> getAllTags() => TagRepository.getAllTags();
   static Future<List<String>> getAllTagsForLanguage(String langCode) => TagRepository.getAllTagsForLanguage(langCode);
   static Future<void> addTag(int itemId, String itemType, String tag, {String langCode = 'auto'}) => TagRepository.addTag(itemId, itemType, tag, langCode);
-
-  // --- Dialogue Repository Delegation ---
-  static Future<List<Map<String, dynamic>>> getDialogueGroups({String? userId}) => DialogueRepository.getGroups(userId: userId);
-  static Future<void> insertDialogueGroup({
-    required String id,
-    String? userId,
-    String? title,
-    String? persona,
-    String? location,
-    String? note,
-    required String createdAt,
-    Transaction? txn,
-  }) => DialogueRepository.insertGroup(
-    id: id,
-    userId: userId,
-    title: title,
-    persona: persona,
-    location: location,
-    note: note,
-    createdAt: createdAt,
-    txn: txn,
-  );
-  static Future<void> deleteDialogueGroup(String id) => DialogueRepository.deleteGroup(id);
-  static Future<int> getDialogueCount() => DialogueRepository.getDialogueCount();
-
-  // --- Dialogue Participants Delegation ---
-  static Future<List<Map<String, dynamic>>> getParticipants(String dialogueId) => DialogueRepository.getParticipants(dialogueId);
-  static Future<List<Map<String, dynamic>>> getDialogueParticipants(String dialogueId) => DialogueRepository.getParticipants(dialogueId);
-  static Future<void> updateMessageSpeaker({required String dialogueId, required String oldSpeakerId, required String newSpeakerId}) =>
-      DialogueRepository.updateMessageSpeaker(dialogueId, oldSpeakerId, newSpeakerId);
-      
-  static Future<void> removeParticipantFromDialogue({required String dialogueId, required String participantId}) =>
-      DialogueRepository.removeParticipantFromDialogue(dialogueId, participantId);
-
-  static Future<void> insertParticipant(Map<String, dynamic> data) => DialogueRepository.insertParticipant(data);
-  static Future<void> updateParticipant(String id, Map<String, dynamic> data) => DialogueRepository.updateParticipant(id, data);
-  static Future<List<ChatParticipant>> getAllUniqueParticipants() => DialogueRepository.getAllUniqueParticipants();
-  static Future<void> deleteParticipant(String id) => DialogueRepository.deleteParticipant(id);
-  static Future<List<Map<String, dynamic>>> getRecordsByDialogueId(String dialogueId, {String? sourceLang, String? targetLang}) => DialogueRepository.getRecordsByDialogueId(dialogueId, sourceLang: sourceLang, targetLang: targetLang);
 
   // --- Search & Autocomplete Delegation ---
   static Future<List<Map<String, dynamic>>> searchAutocompleteText(String langCode, String text) async {
@@ -427,11 +383,19 @@ class DatabaseService {
 
   static Future<void> relinkGroupId(int oldId, int newId) => UnifiedRepository.relinkGroupId(oldId, newId);
 
-  static Future<void> mergeUserSessions(String oldId, String newId) => DialogueRepository.mergeUserSessions(oldId, newId);
 
   static Future<void> repairAutoLanguageRecords(String currentLang, String targetLang) => 
       UnifiedRepository.repairAutoLanguageRecords(currentLang, targetLang);
 
   static Future<List<String>> getTagsForNotebook(String notebookTitle, String langCode, {String? type}) =>
       TagRepository.getTagsForNotebook(notebookTitle, langCode, type: type);
+
+  /// Phase 15.6: Merge Anonymous data to Google User
+  static Future<void> mergeUserSessions(String oldUid, String newUid) async {
+    // This method is a placeholder if we need to do DB level UID updates.
+    // However, with Phase 129 architecture, records are mapped via notebook_title/groupId
+    // which are currently not tied to a specific UID in local SQLite.
+    // If we add user_id column to meta tables later, we handle it here.
+    debugPrint('[DB] mergeUserSessions: $oldUid -> $newUid (No-op in current local schema)');
+  }
 }

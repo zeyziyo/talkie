@@ -97,34 +97,14 @@ class DatabaseHelper {
       onUpgrade: (db, oldVersion, newVersion) async {
         debugPrint('[DB] onUpgrade triggered ($oldVersion -> $newVersion)');
         if (oldVersion < _dbVersion) {
-          debugPrint('[DB] Old version detected ($oldVersion). Wiping and re-creating for clean development state.');
-          // 개발 단계이므로 레거시 지원 대신 초기화 진행
-          await _dropAllTables(db);
+          debugPrint('[DB] Old version detected ($oldVersion). Running safe migration.');
+          // Phase 26: 이전의 모든 테이블 드롭 로직(_dropAllTables)은 위험하므로 제거함.
+          // 대신 필요한 테이블만 생성하거나 기존 데이터를 보존하는 방식으로 진행.
           await createBaseTables(db);
           await ensureDefaultMaterial(db);
         }
       },
     );
-  }
-
-  static Future<void> _dropAllTables(Database db) async {
-    debugPrint('[DB] Dropping all tables for fresh start...');
-    await db.execute('PRAGMA foreign_keys = OFF');
-    try {
-      // android_metadata 및 sqlite_ 시스템 테이블 제외
-      final List<Map<String, dynamic>> tables = await db.rawQuery(
-        "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' AND name NOT LIKE 'android_%'"
-      );
-      for (var table in tables) {
-        final name = table['name'] as String;
-        debugPrint('[DB] Wiping table: $name');
-        await db.execute('DROP TABLE IF EXISTS "$name"');
-      }
-    } catch (e) {
-      debugPrint('[DB] Table wipe failed: $e');
-    } finally {
-      await db.execute('PRAGMA foreign_keys = ON');
-    }
   }
 
   static Future<void> createBaseTables(Database db) async {
@@ -185,59 +165,7 @@ class DatabaseHelper {
     ''');
     debugPrint('[DB] Table "sentences_meta" created.');
     
-    // 3. Dialogue Tables
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS dialogue_groups (
-        id TEXT PRIMARY KEY,
-        user_id TEXT,
-        title TEXT,
-        persona TEXT,
-        location TEXT,
-        note TEXT,
-        created_at TEXT NOT NULL
-      )
-    ''');
-    debugPrint('[DB] Table "dialogue_groups" created.');
-
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS participants (
-        id TEXT PRIMARY KEY,
-        name TEXT NOT NULL,
-        role TEXT NOT NULL, -- 'user' or 'ai'
-        gender TEXT,
-        lang_code TEXT,
-        avatar_color INTEGER, -- Missing column from v11
-        created_at TEXT NOT NULL
-      )
-    ''');
-    debugPrint('[DB] Table "participants" created.');
-
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS dialogue_participants (
-        dialogue_id TEXT NOT NULL,
-        participant_id TEXT NOT NULL,
-        joined_at TEXT NOT NULL,
-        PRIMARY KEY (dialogue_id, participant_id),
-        FOREIGN KEY (dialogue_id) REFERENCES dialogue_groups (id) ON DELETE CASCADE,
-        FOREIGN KEY (participant_id) REFERENCES participants (id) ON DELETE CASCADE
-      )
-    ''');
-    debugPrint('[DB] Table "dialogue_participants" created.');
-
-    await db.execute('''
-      CREATE TABLE IF NOT EXISTS dialogues (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        session_id TEXT NOT NULL,
-        speaker TEXT,
-        content TEXT,
-        translation TEXT,
-        sequence_order INTEGER, -- Added per design
-        created_at TEXT DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now')),
-        FOREIGN KEY (session_id) REFERENCES dialogue_groups (id) ON DELETE CASCADE
-      )
-    ''');
-    debugPrint('[DB] Table "dialogues" created.');
-    
+    // 3. Translation Cache
     await db.execute('''
       CREATE TABLE IF NOT EXISTS translation_cache (
         cache_key TEXT PRIMARY KEY,
@@ -255,7 +183,6 @@ class DatabaseHelper {
     await db.execute('CREATE UNIQUE INDEX IF NOT EXISTS idx_words_meta_composite ON words_meta (group_id, notebook_title)');
     await db.execute('CREATE UNIQUE INDEX IF NOT EXISTS idx_sentences_meta_composite ON sentences_meta (group_id, notebook_title)');
     
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_dialogues_session_id ON dialogues (session_id)');
     debugPrint('[DB] All indexes created.');
   }
 

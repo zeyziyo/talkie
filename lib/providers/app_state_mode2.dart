@@ -36,7 +36,7 @@ extension AppStateMode2 on AppState {
           .select()
           .filter('group_id', 'in', groupIds);
           
-      final allSentences = (sentencesResponse as List).map((e) => Sentence.fromJson(e)).toList();
+      final List<Sentence> allSentences = (sentencesResponse as List).map((e) => Sentence.fromJson(e)).toList();
 
       // 3. Assemble Data (Map UserLibrary + Source Sentence + Target Sentence)
       List<Map<String, dynamic>> combinedRecords = [];
@@ -45,12 +45,12 @@ extension AppStateMode2 on AppState {
         final groupId = entry['group_id'] as int;
         final groupSentences = allSentences.where((s) => s.groupId == groupId).toList();
         
-        final sourceSentence = groupSentences.firstWhere(
+        final Sentence sourceSentence = groupSentences.firstWhere(
           (s) => s.langCode == _sourceLang,
           orElse: () => Sentence(id: -1, groupId: -1, langCode: 'unknown', text: 'Unknown', createdAt: DateTime.now()),
         );
         
-        final targetSentence = groupSentences.firstWhere(
+        final Sentence targetSentence = groupSentences.firstWhere(
           (s) => s.langCode == _selectedReviewLanguage,
           orElse: () => Sentence(id: -1, groupId: -1, langCode: 'unknown', text: '', createdAt: DateTime.now()),
         );
@@ -553,17 +553,10 @@ extension AppStateMode2 on AppState {
     if (subject.isEmpty) {
       await loadRecordsByTags();
     } else {
-      // Check if it's a Dialogue Title by searching dialogue groups
-      final matchedDialogues = _dialogueGroups.where((g) => g.title == subject).toList();
-      if (matchedDialogues.isNotEmpty) {
-        _selectedTags = [subject];
-        await loadRecordsByTags();
-      } else {
-        // Assume it's a Notebook Title (already in _studyMaterials or new)
-        _selectedTags = [subject];
-        debugPrint('[AppState] loadMaterialRecords (Notebook): $subject');
-        await loadRecordsByTags();
-      }
+      // Assume it's a Notebook Title (already in _studyMaterials or new)
+      _selectedTags = [subject];
+      debugPrint('[AppState] loadMaterialRecords (Notebook): $subject');
+      await loadRecordsByTags();
     }
   }
   

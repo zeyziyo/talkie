@@ -206,7 +206,6 @@ extension AppStateAuth on AppState {
       );
       
       await loadStudyMaterials();
-      await loadDialogueGroups();
       
       // Phase 8: Automatically select the newly imported material so cards show up immediately
       if (importResult['success'] == true && importResult['notebook_title'] != null) {
@@ -439,7 +438,6 @@ extension AppStateAuth on AppState {
         localNotebookTitle = result['notebook_title']?.toString(); 
       }
 
-      await loadDialogueGroups();
       await loadStudyMaterials();
       await loadTags(); 
       await loadStudyRecords();
@@ -503,23 +501,13 @@ extension AppStateAuth on AppState {
           
           if (sCount > 0) debugPrint('[AppState] Updated $sCount sentences_meta for $id');
           
-          // 2. Repair Dialogue Groups
-          final dCount = await txn.rawUpdate('''
-            UPDATE dialogue_groups 
-            SET title = ? 
-            WHERE title != ? AND (note = ? OR note = ? OR title = ?)
-          ''', [localizedName, localizedName, id, legacySyncKey, originalName]);
-          
-          if (dCount > 0) debugPrint('[AppState] Updated $dCount dialogue_groups for $id');
-          
-          repairCount += wCount + sCount + dCount;
+          repairCount += wCount + sCount;
         });
       }
       
       if (repairCount > 0) {
         debugPrint('[AppState] Repaired $repairCount existing material titles.');
         await loadStudyMaterials();
-        await loadDialogueGroups();
       }
     } catch (e) {
       debugPrint('[AppState] Title repair failed: $e');
@@ -667,8 +655,8 @@ extension AppStateAuth on AppState {
     
     if (oldUserId != null && oldUserId != newUserId) {
       debugPrint('[AppState] Triggering Data Merge: $oldUserId -> $newUserId');
-      // 1. Local DB Merge
-      await mergeAnonymousDataToUser(oldUserId, newUserId);
+      // 1. Local DB Merge (Notebooks/Records via DatabaseService)
+      await DatabaseService.mergeUserSessions(oldUserId, newUserId);
       // 2. Cloud Server Merge
       await SupabaseService.mergeUserSessions(oldUserId, newUserId);
     }
@@ -679,8 +667,6 @@ extension AppStateAuth on AppState {
 
   Future<void> logout() async {
     await SupabaseAuthService.signOut();
-    _currentChatMessages = [];
-    _dialogueGroups = [];
     notify();
   }
 
@@ -711,7 +697,6 @@ extension AppStateAuth on AppState {
       );
 
       await loadStudyMaterials();
-      await loadDialogueGroups();
       notify();
 
       return result;
@@ -745,7 +730,6 @@ extension AppStateAuth on AppState {
       );
 
       await loadStudyMaterials();
-      await loadDialogueGroups();
       notify();
 
       return importResult;

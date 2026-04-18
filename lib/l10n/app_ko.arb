@@ -30,20 +30,6 @@
   "@cancel": {
     "description": "Cancel button"
   },
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
   "@checking": {
     "description": "Checking for duplicates"
   },
@@ -168,9 +154,6 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "@manual": {
     "description": "Label for manual input in Partner Mode"
   },
@@ -179,9 +162,6 @@
   },
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "@me": {
-    "description": "Label for self speaker"
   },
   "@menuSettings": {
     "description": "Menu item for language settings"
@@ -197,12 +177,6 @@
   },
   "@noTranslationToSave": {
     "description": "Save error - no data"
-  },
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
   },
   "@playbackFailed": {
     "description": "TTS error message",
@@ -318,9 +292,6 @@
   "@sourceLanguage": {
     "description": "Source language label"
   },
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
   "@studyComplete": {
     "description": "Study complete button text"
   },
@@ -405,7 +376,6 @@
   "ttsInstallGuide": "안드로이드 설정 > Google TTS에서 해당 언어 데이터를 설치해 주세요.",
   "adLoading": "광고를 불러오는 중입니다. 잠시 후 다시 시도해주세요.",
   "addNewSubject": "새 제목 추가",
-  "addParticipant": "참가자 추가",
   "addTagHint": "태그 추가...",
   "alreadyHaveAccount": "이미 계정이 있으신가요?",
   "appTitle": "Talkie",
@@ -423,29 +393,17 @@
   "casePossessivePronoun": "소유대명사",
   "caseReflexive": "재귀대명사",
   "caseSubject": "주격",
-  "chatAiChat": "채팅",
-  "chatAllConversations": "전체 대화",
-  "chatChoosePersona": "페르소나 선택",
-  "chatEndMessage": "대화를 종료하시겠습니까?",
-  "chatEndTitle": "대화 종료 및 저장",
-  "chatFailed": "채팅 실패: {error}",
-  "chatFromConversation": "대화 발췌 ({speaker})",
-  "chatHistoryTitle": "대화 기록",
-  "chatNew": "새 대화",
-  "chatNewChat": "새 대화",
-  "chatNoConversations": "아직 대화가 없습니다",
-  "chatSearchHint": "대화 제목으로 검색...",
-  "chatNoteSearchHint": "주석으로 검색...",
-  "chatSaveAndExit": "저장 후 종료",
-  "chatStartNewPrompt": "연습을 위해 새 대화를 시작해보세요!",
-  "chatTypeHint": "메시지를 입력하세요...",
-  "chatUntitled": "제목 없는 대화",
+  "scanLabel": "스캔",
+  "scanInstructions": "스캔할 이미지를 선택하세요",
+  "pickGallery": "갤러리에서 선택",
+  "extractedText": "인식된 텍스트",
+  "saveAsWord": "단어로 저장",
+  "saveAsSentence": "문장으로 저장",
+  "onlineLibraryLoadFailed": "자료를 불러오는데 실패했습니다.",
   "checking": "확인 중...",
   "clearAll": "모두 지우기",
   "confirm": "확인",
   "confirmDelete": "이 학습 기록을 삭제하시겠습니까?",
-  "confirmDeleteConversation": "이 대화를 삭제하시겠습니까?\n삭제된 대화는 복구할 수 없습니다.",
-  "confirmDeleteParticipant": "이 참가자를 삭제하시겠습니까?",
   "contextTagHint": "나중에 구분하기 쉽도록 상황을 적어주세요",
   "contextTagLabel": "문맥/상황 (선택사항) - 예: 아침인사, 존댓말",
   "copiedToClipboard": "클립보드에 복사되었습니다!",
@@ -457,12 +415,7 @@
   "delete": "삭제",
   "deleteFailed": "삭제 실패: {error}",
   "deleteRecord": "레코드 삭제",
-  "dialogueQuestDesc": "상황극을 통해 대화 연습을 하세요. 적절한 답변을 선택하고 말해보세요.",
-  "dialogueQuestTitle": "대화 퀘스트",
-  "disambiguationPrompt": "어떤 의미로 번역하시겠습니까?",
-  "disambiguationTitle": "의미 선택",
   "dontHaveAccount": "계정이 없으신가요?",
-  "editParticipant": "참가자 수정",
   "email": "이메일",
   "emailAlreadyInUse": "이미 등록된 이메일입니다. 로그인하거나 비밀번호 찾기를 이용해주세요.",
   "enterNewSubjectName": "새 제목 입력",
@@ -502,10 +455,7 @@
   "getMaterials": "자료 받기",
   "good": "좋아요",
   "googleContinue": "Google로 계속하기",
-  "helpDialogueImportDesc": "JSON 파일로 전체 대화 세트를 가져옵니다.",
-  "helpDialogueImportDetails": "• JSON 구조: `entries` 배열 내에 `speaker`를 지정하여 대화 흐름을 구성합니다.\n• 참가자 설정: `participants` 정보를 정확히 입력하면 AI 채팅 모드에서 페르소나와 언어가 자동으로 설정됩니다.\n• 위치: 가져온 대화는 AI 채팅 모드의 '기록' 탭에 나타납니다.",
   "helpJsonDesc": "학습 자료를 JSON 파일로 대량으로 가져오는 방법입니다.",
-  "helpJsonTypeDialogue": "대화 (Dialogue)",
   "helpJsonTypeSentence": "문장 (Sentence)",
   "helpJsonTypeWord": "단어 (Word)",
   "helpMode1Desc": "프리미엄 3D 마이크와 대형 키보드 아이콘을 통해 가장 직관적인 방식으로 언어 학습을 시작하세요.",
@@ -514,8 +464,6 @@
   "helpMode2Details": "• 자료집 선택: 우측 상단 메뉴(⋮)에서 '학습 자료집 선택'이나 '온라인 자료실' 이용\n• 카드 뒤집기: '보이기/숨기기'로 번역 확인\n• 듣기: 스피커 아이콘으로 발음 재생\n• 학습 완료: 체크 표시(V)로 학습 완료 처리\n• 삭제: 카드를 길게 눌러(Long Click) 기록 삭제\n• 검색 및 필터: 검색바(실시간 스마트 검색)와 태그, 시작 글자 필터 지원",
   "helpMode3Desc": "문장을 듣고 텍스트를 보며 직접 발음 연습(Speaking Practice)을 하세요.",
   "helpMode3Details": "• 자료집 선택: 우측 상단 메뉴(⋮)에서 '학습 자료집 선택' 이용\n• 간격 설정: [-] [+] 버튼으로 문장 간 대기 시간 조정 (3초~60초)\n• 시작/정지: 중앙의 시작/종료 버튼으로 세션 제어\n• 말하기: 원어민 음성을 듣고 큰 소리로 따라하기\n• 피드백: 정확도 점수(0-100) 및 색상 표시\n• 필터 설정: 설정(톱니바퀴) 아이콘에서 태그별 연습 범위 지정",
-  "helpModeChatDesc": "AI 페르소나와 대화하며 실전 회화를 연습하세요.",
-  "helpModeChatDetails": "• AI 채팅: 하단 탭 바의 '채팅' 메뉴에서 페르소나와 실전 대화 연습\n• 페르소나 설정: 상대방의 성별, 이름, 언어 코드를 자유롭게 지정\n• GPS 상황극: 현재 내 위치를 인식하여 장소에 어울리는 대화 주제 추천\n• 2개 국어: AI의 답변이 번역과 함께 표시되어 학습 효과 극대화\n• 기록 관리: 과거 대화 내역 필터링 및 대화 중 특정 메시지 학습 자료로 저장",
   "helpTabJson": "JSON 형식",
   "helpTabModes": "모드 설명",
   "helpTabQuickStart": "빠른 시작",
@@ -550,10 +498,8 @@
   "invalidEmail": "유효한 이메일을 입력하세요.",
   "kakaoContinue": "카카오로 계속하기",
   "labelLangCode": "언어 코드 (예: en-US, ko-KR)",
-  "labelName": "이름",
   "labelNote": "주석 입력",
   "labelPOS": "품사",
-  "labelRole": "역할",
   "labelSentence": "문장",
   "labelSentenceCollection": "문장 자료집",
   "labelSentenceType": "문장의 종류",
@@ -570,18 +516,15 @@
   "libTitleVerbs1": "동사 1",
   "listen": "듣기",
   "listening": "듣는 중...",
-  "loadingParticipants": "참가자 불러오는 중...",
   "location": "위치",
   "login": "로그인",
   "logout": "로그아웃",
   "logoutConfirmMessage": "현재 기기에서 로그아웃하시겠습니까?",
   "logoutConfirmTitle": "로그아웃",
   "male": "남성",
-  "manageParticipants": "참가자 관리",
   "manual": "수동 입력",
   "markAsStudied": "학습 표시",
   "materialInfo": "자료 정보",
-  "me": "나",
   "menuDeviceImport": "기기에서 자료 가져오기",
   "menuHelp": "도움말",
   "menuLanguageSettings": "언어 설정",
@@ -605,11 +548,7 @@
   "neutral": "중성",
   "newSubjectName": "새 단어장/문장집 제목",
   "next": "다음",
-  "noDialogueHistory": "대화 내역이 없습니다.",
-  "noInternetWarningMic": "인터넷 연결이 없습니다. 오프라인 상태에서는 음성 인식이 불가능할 수 있습니다.",
-  "noInternetWarningTranslate": "인터넷 연결이 없습니다. 오프라인 상태에서는 번역 기능을 사용할 수 없습니다. 복습 모드를 이용해 주세요.",
   "noMaterialsInCategory": "이 카테고리에는 자료가 없습니다.",
-  "noParticipantsFound": "등록된 참가자가 없습니다.",
   "noRecords": "선택한 언어의 학습 기록이 없습니다",
   "noStudyMaterial": "학습 자료가 없습니다.",
   "noTextToPlay": "재생할 텍스트가 없습니다",
@@ -619,16 +558,7 @@
   "onlineLibraryCheckInternet": "인터넷 연결을 확인하거나 나중에 다시 시도해주세요.",
   "onlineLibraryLoadFailed": "자료를 불러오는데 실패했습니다.",
   "onlineLibraryNoMaterials": "자료가 없습니다.",
-  "participantDeleted": "참가자가 삭제되었습니다.",
-  "participantRename": "참가자 이름 변경",
-  "partner": "파트너",
-  "partnerMode": "파트너 모드",
-  "password": "비밀번호",
-  "passwordTooShort": "비밀번호는 6자 이상이어야 합니다.",
   "perfect": "완벽해요!",
-  "personaFriend": "현지인 친구",
-  "personaGuide": "여행 가이드",
-  "personaTeacher": "영어 선생님",
   "playAgain": "다시 하기",
   "playbackFailed": "재생 실패: {error}",
   "playing": "재생 중...",
@@ -655,9 +585,6 @@
   "reviewAll": "전체 복습",
   "reviewCount": "복습 {count}회",
   "reviewModeTitle": "복습",
-  "roleAi": "AI",
-  "roleThirdParty": "제삼자",
-  "roleUser": "사용자",
   "save": "저장",
   "saveData": "데이터 저장",
   "saveFailed": "저장 실패: {error}",
@@ -678,50 +605,8 @@
   "selectMaterialPrompt": "학습 자료를 선택하세요",
   "selectMaterialSet": "학습 자료집 선택",
   "selectPOS": "품사 선택",
-  "selectParticipants": "참가자 선택",
-  "selectSentenceType": "문장 종류 선택",
-  "selectStudyMaterial": "학습 자료 선택",
-  "sendingMessage": "메시지 전송 중...",
-  "sentence": "문장",
   "signUp": "회원가입",
-  "similarTextFound": "유사한 텍스트 발견",
-  "skip": "건너뛰기",
-  "source": "출처:",
-  "sourceLanguage": "원본 언어",
-  "sourceLanguageLabel": "내 언어 (Source)",
-  "speakNow": "지금 말하세요!",
-  "speaker": "화자",
-  "speakerSelect": "발화자 선택",
-  "speakingPractice": "말하기 연습",
-  "startChat": "대화 시작",
-  "startPractice": "연습 시작",
-  "startTutorial": "튜토리얼 시작",
-  "startWarning": "주의",
-  "startsWith": "시작 글자",
-  "statusCheckEmail": "이메일을 확인하여 인증을 완료해주세요.",
-  "statusDownloading": "다운로드 중: {name}...",
-  "statusImportFailed": "가져오기 실패: {error}",
-  "statusImportSuccess": "{name} 가져오기 완료",
-  "statusLoggingIn": "로그인 중...",
-  "statusLoginCancelled": "로그인이 취소되었습니다.",
-  "statusLoginFailed": "로그인 실패: {error}",
-  "statusLoginSuccess": "로그인에 성공했습니다.",
-  "statusLogoutSuccess": "로그아웃되었습니다.",
-  "statusSignUpFailed": "회원가입 실패: {error}",
-  "statusSigningUp": "회원가입 중...",
-  "stopPractice": "연습 중지",
-  "studyComplete": "학습 완료",
-  "studyRecords": "학습 기록 ({count})",
-  "styleFormal": "존댓말",
-  "styleInformal": "반말",
-  "stylePolite": "정중함",
-  "styleSlang": "슬랭/속어",
-  "subject": "제목:",
-  "swapLanguages": "언어 전환",
-  "switchToAi": "AI 모드로 전환",
-  "switchToPartner": "파트너 모드로 전환",
   "syncingData": "데이터 동기화 중...",
-  "tabConversation": "대화",
   "tabReview": "복습 ({count})",
   "tabSentence": "문장",
   "tabSpeaking": "말하기",
@@ -736,8 +621,6 @@
   "thinkingTimeInterval": "재생 시차",
   "timeUp": "시간 초과!",
   "titleFormat": "{type}: {materialName}",
-  "labelFilterMaterial": "자료집",
-  "labelFilterTag": "태그",
   "titleTagSelection": "제목 태그 (자료집)",
   "tooltipDecrease": "감소",
   "tooltipIncrease": "증가",
@@ -756,8 +639,6 @@
   "translationRefilled": "번역 횟수가 5회 충전되었습니다!",
   "translationResultHint": "번역 결과 - 수정 가능함",
   "tryAgain": "다시 시도",
-  "tutorialAiChatDesc": "AI 페르소나와 실전 대화를 연습해 보세요.",
-  "tutorialAiChatTitle": "AI 채팅",
   "tutorialContextDesc": "같은 문장이라도 상황(예: 아침, 저녁)을 적어두면 별도로 저장할 수 있어요.",
   "tutorialContextTitle": "상황/문맥 태그",
   "tutorialLangSettingsDesc": "번역할 원본 언어와 대상 언어를 설정합니다.",
@@ -850,6 +731,6 @@
   "quickStartStep2Title": "2. 기본 흐름",
   "quickStartStep2Desc": "입력(마이크/키보드) -> 번역 -> 저장 순서로 나만의 학습 카드를 만드세요.",
   "quickStartStep3Title": "3. 모드 활용",
-  "quickStartStep3Desc": "채팅으로 연습하고, 발음 연습 탭에서 텍스트를 보고 직접 발음하며 연습하세요.",
+  "quickStartStep3Desc": "번역된 단어와 문장을 내 학습 목록에서 복습하고, 발음 연습 탭에서 직접 말하며 연습하세요.",
   "noteGuidance": "정확한 번역을 위하여 추가적인 내용을 입력하는 곳"
 }
