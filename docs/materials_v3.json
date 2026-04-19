@@ -1,139 +1,132 @@
 {
-  "updated_at": "2026-03-17",
   "materials": [
     {
-      "name": "첫 만남",
-      "description": "dialogues material: first_meeting",
-      "id": "first_meeting",
-      "path": "dialogues/first_meeting.json",
-      "category": "Dialogue"
-    },
-    {
       "name": "색깔 1",
-      "description": "words material: basic_expressions4",
       "id": "basic_expressions4",
       "path": "words/basic_expressions4.json",
+      "description": "words material: basic_expressions4",
       "category": "Words"
     },
     {
       "name": "숫자 1",
-      "description": "words material: basic_expressions5",
       "id": "basic_expressions5",
       "path": "words/basic_expressions5.json",
+      "description": "words material: basic_expressions5",
       "category": "Words"
     },
     {
       "name": "시간 및 날짜 1",
-      "description": "words material: basic_expressions6",
       "id": "basic_expressions6",
       "path": "words/basic_expressions6.json",
+      "description": "words material: basic_expressions6",
       "category": "Words"
     },
     {
       "name": "가족 1",
-      "description": "words material: basic_expressions8",
       "id": "basic_expressions8",
       "path": "words/basic_expressions8.json",
+      "description": "words material: basic_expressions8",
       "category": "Words"
     },
     {
       "name": "명사 1",
-      "description": "words material: nouns_1",
       "id": "nouns_1",
       "path": "words/nouns_1.json",
+      "description": "words material: nouns_1",
       "category": "Words"
     },
     {
       "name": "동사 1",
-      "description": "words material: verbs_1",
       "id": "verbs_1",
       "path": "words/verbs_1.json",
+      "description": "words material: verbs_1",
       "category": "Words"
     },
     {
       "name": "기본 표현 1",
-      "description": "sentences material: basic_expressions1",
       "id": "basic_expressions1",
       "path": "sentences/basic_expressions1.json",
+      "description": "sentences material: basic_expressions1",
       "category": "Sentences"
     },
     {
       "name": "술집 및 카페 1",
-      "description": "sentences material: basic_expressions10",
       "id": "basic_expressions10",
       "path": "sentences/basic_expressions10.json",
+      "description": "sentences material: basic_expressions10",
       "category": "Sentences"
     },
     {
       "name": "식당 1",
-      "description": "sentences material: basic_expressions11",
       "id": "basic_expressions11",
       "path": "sentences/basic_expressions11.json",
+      "description": "sentences material: basic_expressions11",
       "category": "Sentences"
     },
     {
       "name": "작별 1",
-      "description": "sentences material: basic_expressions12",
       "id": "basic_expressions12",
       "path": "sentences/basic_expressions12.json",
+      "description": "sentences material: basic_expressions12",
       "category": "Sentences"
     },
     {
       "name": "교통 1",
-      "description": "sentences material: basic_expressions13",
       "id": "basic_expressions13",
       "path": "sentences/basic_expressions13.json",
+      "description": "sentences material: basic_expressions13",
       "category": "Sentences"
     },
     {
       "name": "호텔 1",
-      "description": "sentences material: basic_expressions14",
       "id": "basic_expressions14",
       "path": "sentences/basic_expressions14.json",
+      "description": "sentences material: basic_expressions14",
       "category": "Sentences"
     },
     {
       "name": "해변 1",
-      "description": "sentences material: basic_expressions15",
       "id": "basic_expressions15",
       "path": "sentences/basic_expressions15.json",
+      "description": "sentences material: basic_expressions15",
       "category": "Sentences"
     },
     {
       "name": "긴급 상황 1",
-      "description": "sentences material: basic_expressions16",
       "id": "basic_expressions16",
       "path": "sentences/basic_expressions16.json",
+      "description": "sentences material: basic_expressions16",
       "category": "Sentences"
     },
     {
       "name": "대화 1",
-      "description": "sentences material: basic_expressions2",
       "id": "basic_expressions2",
       "path": "sentences/basic_expressions2.json",
+      "description": "sentences material: basic_expressions2",
       "category": "Sentences"
     },
     {
       "name": "학습 표현 1",
-      "description": "sentences material: basic_expressions3",
       "id": "basic_expressions3",
       "path": "sentences/basic_expressions3.json",
+      "description": "sentences material: basic_expressions3",
       "category": "Sentences"
     },
     {
       "name": "택시 1",
-      "description": "sentences material: basic_expressions7",
       "id": "basic_expressions7",
       "path": "sentences/basic_expressions7.json",
+      "description": "sentences material: basic_expressions7",
       "category": "Sentences"
     },
     {
       "name": "감정 1",
-      "description": "sentences material: basic_expressions9",
       "id": "basic_expressions9",
       "path": "sentences/basic_expressions9.json",
+      "description": "sentences material: basic_expressions9",
       "category": "Sentences"
     }
   ],
+  "updated_at": "2026-04-19",
   "version": "3.0"
 }
