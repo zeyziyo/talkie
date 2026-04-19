@@ -9,7 +9,7 @@ import '../util/log_service.dart';
 class DatabaseHelper {
   static Database? _database;
   static const String _dbName = 'talkie.db';
-  static const int _dbVersion = 26; // Phase 26: Remove unused fields (pos, style, form_type, caption)
+  static const int _dbVersion = 27; // Phase 27: Introduce scanned_records & scanned_meta for data isolation
 
   static Future<Database>? _initFuture;
 
@@ -104,7 +104,32 @@ class DatabaseHelper {
           await ensureDefaultMaterial(db);
         }
       },
+      onOpen: (db) async {
+        // [Phase 27] 앱 시작 시마다 레거시 테이블 존재 여부를 확인하고 삭제하여 용량 확보 및 구조 단순화
+        await _purgeLegacyTables(db);
+      },
     );
+  }
+
+  static Future<void> _purgeLegacyTables(Database db) async {
+    final List<String> legacyTables = [
+      'chat_messages',
+      'dialogue_groups',
+      'dialogue_messages',
+      'participants',
+      'dialogue_participants',
+      'item_tags',
+      'study_materials'
+    ];
+
+    for (var table in legacyTables) {
+      try {
+        await db.execute('DROP TABLE IF EXISTS $table');
+        debugPrint('[DB] Purged legacy table: $table');
+      } catch (e) {
+        debugPrint('[DB] Error purging table $table: $e');
+      }
+    }
   }
 
   static Future<void> createBaseTables(Database db) async {
@@ -164,6 +189,35 @@ class DatabaseHelper {
       )
     ''');
     debugPrint('[DB] Table "sentences_meta" created.');
+
+    // 2.1 Scanned Data Tables (Phase 27 Isolation)
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS scanned_records (
+        group_id INTEGER PRIMARY KEY,
+        data_json TEXT,
+        created_at TEXT NOT NULL
+      )
+    ''');
+    debugPrint('[DB] Table "scanned_records" created.');
+
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS scanned_meta (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        group_id INTEGER NOT NULL,
+        notebook_title TEXT NOT NULL,
+        type TEXT, -- 'word' or 'sentence'
+        source_lang TEXT,
+        target_lang TEXT,
+        tags TEXT,
+        is_memorized INTEGER DEFAULT 0,
+        is_synced INTEGER DEFAULT 0,
+        review_count INTEGER DEFAULT 0,
+        last_reviewed TEXT,
+        created_at TEXT NOT NULL,
+        FOREIGN KEY (group_id) REFERENCES scanned_records (group_id) ON DELETE CASCADE
+      )
+    ''');
+    debugPrint('[DB] Table "scanned_meta" created.');
     
     // 3. Translation Cache
     await db.execute('''
@@ -178,10 +232,12 @@ class DatabaseHelper {
     // Indexes
     await db.execute('CREATE INDEX IF NOT EXISTS idx_words_group_id ON words (group_id)');
     await db.execute('CREATE INDEX IF NOT EXISTS idx_sentences_group_id ON sentences (group_id)');
+    await db.execute('CREATE INDEX IF NOT EXISTS idx_scanned_group_id ON scanned_records (group_id)');
     
     // Fixed Composite Unique Index per 설계 3.4 (같은 단어라도 다른 단어장에 중복 저장 허용)
     await db.execute('CREATE UNIQUE INDEX IF NOT EXISTS idx_words_meta_composite ON words_meta (group_id, notebook_title)');
     await db.execute('CREATE UNIQUE INDEX IF NOT EXISTS idx_sentences_meta_composite ON sentences_meta (group_id, notebook_title)');
+    await db.execute('CREATE UNIQUE INDEX IF NOT EXISTS idx_scanned_meta_composite ON scanned_meta (group_id, notebook_title)');
     
     debugPrint('[DB] All indexes created.');
   }

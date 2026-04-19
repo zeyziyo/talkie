@@ -9,53 +9,20 @@ class AppLocalizationsSq extends AppLocalizations {
   AppLocalizationsSq([String locale = 'sq']) : super(locale);
 
   @override
-  String get basicWords => 'Depo bazë e fjalëve';
-
-  @override
-  String get inputLanguage => 'Gjuha e hyrjes';
-
-  @override
-  String get translationLanguage => 'Gjuha e përkthimit';
-
-  @override
-  String get simplifiedGuidance =>
-      'Konvertoni bisedat e përditshme në një gjuhë të huaj menjëherë! Talkie regjistron jetën tuaj gjuhësore.';
-
-  @override
-  String get noDataForLanguage =>
-      'Nuk ka të dhëna trajnimi për gjuhën e zgjedhur në DB-në lokale. Shkarkoni materialet ose zgjidhni një gjuhë tjetër.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Anulo';
-
-  @override
   String get accuracy => 'Saktësia';
-
-  @override
-  String get ttsMissing =>
-      'Motori i zërit për këtë gjuhë nuk është instaluar në pajisjen tuaj.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Ju lutemi instaloni të dhënat e gjuhës përkatëse te Cilësimet e Android > Google TTS.';
 
   @override
   String get adLoading =>
       'Po ngarkohet reklama. Ju lutemi provoni përsëri pas pak.';
 
   @override
-  String get addNewSubject => 'Shto emër të ri';
+  String get add => 'Shto';
 
   @override
-  String get addParticipant => 'Shto pjesëmarrës';
+  String get addNew => 'Shto të re';
+
+  @override
+  String get addNewSubject => 'Shto emër të ri';
 
   @override
   String get addTagHint => 'Shto etiketë...';
@@ -88,6 +55,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get basicWordRepository => 'Depo bazë e fjalëve';
 
   @override
+  String get basicWords => 'Depo bazë e fjalëve';
+
+  @override
+  String get cancel => 'Anulo';
+
+  @override
   String get caseObject => 'Kallëzore';
 
   @override
@@ -103,62 +76,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get caseSubject => 'Rasnore';
 
   @override
-  String get chatAiChat => 'Bisedë';
-
-  @override
-  String get chatAllConversations => 'Të gjitha bisedat';
-
-  @override
-  String get chatChoosePersona => 'Zgjidhni personazhin';
-
-  @override
-  String get chatEndMessage =>
-      'A jeni i sigurt që dëshironi ta përfundoni bisedën?';
-
-  @override
-  String get chatEndTitle => 'Përfundo dhe ruaj bisedën';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Biseda dështoi: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Ekstrakt nga biseda ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Historia e bisedës';
-
-  @override
-  String get chatNew => 'Bisedë e re';
-
-  @override
-  String get chatNewChat => 'Bisedë e re';
-
-  @override
-  String get chatNoConversations => 'Ende nuk ka biseda';
-
-  @override
-  String get chatSearchHint => 'Kërko sipas titullit të bisedës...';
-
-  @override
-  String get chatNoteSearchHint => 'Kërko sipas shënimit...';
-
-  @override
-  String get chatSaveAndExit => 'Ruaj dhe dil';
-
-  @override
-  String get chatStartNewPrompt => 'Fillo një bisedë të re për të praktikuar!';
-
-  @override
-  String get chatTypeHint => 'Shkruaj një mesazh...';
-
-  @override
-  String get chatUntitled => 'Bisedë pa titull';
-
-  @override
   String get checking => 'Duke kontrolluar...';
 
   @override
@@ -170,14 +87,6 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get confirmDelete =>
       'A jeni i sigurt që dëshironi ta fshini këtë regjistrim studimi?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'A jeni i sigurt që dëshironi ta fshini këtë bisedë?\nBisedat e fshira nuk mund të rikthehen.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'A jeni i sigurt që dëshironi të fshini këtë pjesëmarrës?';
 
   @override
   String get contextTagHint =>
@@ -217,23 +126,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get deleteRecord => 'Fshi regjistrimin';
 
   @override
-  String get dialogueQuestDesc =>
-      'Ushtroni bisedën përmes sitcom. Zgjidhni dhe thoni përgjigjen e duhur.';
-
-  @override
-  String get dialogueQuestTitle => 'Kërkimi i dialogut';
-
-  @override
-  String get disambiguationPrompt => 'Si do të donit ta përktheni atë?';
-
-  @override
-  String get disambiguationTitle => 'Zgjidh kuptimin';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Nuk keni llogari?';
-
-  @override
-  String get editParticipant => 'Redakto pjesëmarrës';
 
   @override
   String get email => 'Email';
@@ -241,6 +137,9 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Ky email është tashmë i regjistruar. Ju lutemi identifkohuni ose përdorni opsionin e rivendosjes së fjalëkalimit.';
+
+  @override
+  String get enterNameHint => 'Shkruaj emrin';
 
   @override
   String get enterNewSubjectName => 'Vendos emrin e ri';
@@ -282,6 +181,9 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get errors => 'Gabime:';
+
+  @override
+  String get extractedText => 'Teksti i njohur';
 
   @override
   String get female => 'Femër';
@@ -341,12 +243,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get gender => 'Gjinia';
 
   @override
-  String get labelFilterMaterial => 'Materiale';
-
-  @override
-  String get labelFilterTag => 'Etiketë';
-
-  @override
   String get generalTags => 'Etiketa të përgjithshme';
 
   @override
@@ -359,19 +255,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get googleContinue => 'Vazhdo me Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Importoni një grup të tërë dialogësh si një skedar JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• Struktura JSON: Përdorni një varg `dialogues` në vend të `entries`\n• Rikuperimi automatik: Titulli i dialogut, personazhi dhe rendi i mesazheve restaurohen.\n• Vendndodhja: Dialogët e importuar shfaqen në skedën \'Histori\' të modalitetit të bisedës AI.';
-
-  @override
   String get helpJsonDesc =>
       'Për të importuar materialet e studimit për t\'u përdorur në Modalitetin 3 si një skedar JSON, ndiqni formatin e mëposhtëm:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dialog';
 
   @override
   String get helpJsonTypeSentence => 'Fjali';
@@ -404,12 +289,12 @@ class AppLocalizationsSq extends AppLocalizations {
       '• Zgjidhni materialin: Zgjidhni librin e burimeve për të studiuar\n• Vendosni intervalin: Rregulloni kohën e pritjes midis fjalive me butonat [-] [+](3 sekonda deri në 60 sekonda)\n• Fillimi/Ndalo: Kontrolloni seancën e hijezimit\n• Të folurit: Dëgjoni zërin dhe përsëriteni\n• Reagimet: Shfaqni rezultatin e saktësisë (0-100) dhe ngjyrat\n• Kushtet e kërkimit: Filtro objektivat e praktikës sipas etiketës, artikujve të fundit ose shkronjave fillestare';
 
   @override
-  String get helpModeChatDesc =>
-      'Praktikoni biseda reale duke biseduar me një personazh AI.';
+  String get helpNote =>
+      'Regjistroni lirisht kuptimin, shembujt ose situatat e fjalëve.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Bisedë AI: Praktikoni biseda të vërteta me një personazh në menunë \'Bisedë\' në shiritin e poshtëm të skedave.\n• Cilësimet e personazhit: Specifikoni lirisht gjininë, emrin dhe kodin e gjuhës së tjetrit.\n• Situata GPS: Njoh vendndodhjen time aktuale dhe rekomando tema bisede të përshtatshme për vendin.\n• Dy gjuhë: Përgjigjet e AI shfaqen me përkthime për të maksimizuar efektin e të mësuarit.\n• Menaxhimi i rekordeve: Filtroni historinë e kaluar të bisedave dhe ruani mesazhe specifike nga biseda si materiale studimore.';
+  String get helpNotebook =>
+      'Zgjidhni dosjen ku dëshironi të ruani rezultatet e përkthimit.';
 
   @override
   String get helpTabJson => 'Formati JSON';
@@ -424,6 +309,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get helpTabTour => 'Bëni një shëtitje';
 
   @override
+  String get helpTag =>
+      'Fut çelësfjalët për t\'i klasifikuar ose kërkuar më vonë.';
+
+  @override
   String get helpTitle => 'Ndihmë & Udhëzime';
 
   @override
@@ -432,6 +321,15 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get hide => 'Fshih';
+
+  @override
+  String get hintNoteExample => 'P.sh.: shpjegim konteksti, homonime, etj.';
+
+  @override
+  String get hintTagExample => 'P.sh.: biznes, udhëtime...';
+
+  @override
+  String get homeTab => 'Përkthim';
 
   @override
   String importAdded(int count) {
@@ -444,23 +342,6 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Një material me të njëjtin titull ekziston tashmë. Ju lutemi ndryshoni titullin dhe provoni përsëri.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -476,6 +357,11 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'U importuan $files skedarë, $entries hyrje.';
+  }
+
+  @override
   String get importJsonFile => 'Importo skedarin JSON';
 
   @override
@@ -487,12 +373,31 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Skedar i vetëm JSON';
+
+  @override
+  String get importSourceFolder =>
+      'Dosje (strukturë e bibliotekës sipas gjuhës)';
+
+  @override
+  String get importSourceTitle => 'Zgjidhni burimin e importimit';
+
+  @override
+  String get importSourceZip => 'Skedar ZIP (dosje e kompresuar)';
+
+  @override
   String importTotal(int count) {
     return 'Totali: $count';
   }
 
   @override
   String get importing => 'Duke importuar...';
+
+  @override
+  String get inputContent => 'Përmbajtja e futur';
+
+  @override
+  String get inputLanguage => 'Gjuha e hyrjes';
 
   @override
   String get inputModeTitle => 'Hyrje';
@@ -509,19 +414,22 @@ class AppLocalizationsSq extends AppLocalizations {
   String get kakaoContinue => 'Vazhdo me Kakao';
 
   @override
-  String get labelLangCode => 'Kodi i gjuhës (psh. en-US, ko-KR)';
+  String get labelDetails => 'Detaje të hollësishme';
 
   @override
-  String get labelName => 'Emri';
+  String get labelFilterMaterial => 'Materiale';
+
+  @override
+  String get labelFilterTag => 'Etiketë';
+
+  @override
+  String get labelLangCode => 'Kodi i gjuhës (psh. en-US, ko-KR)';
 
   @override
   String get labelNote => 'Shënim';
 
   @override
   String get labelPOS => 'Pjesë e ligjëratës';
-
-  @override
-  String get labelRole => 'Roli';
 
   @override
   String get labelSentence => 'Fjali';
@@ -572,9 +480,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get listening => 'Duke dëgjuar...';
 
   @override
-  String get loadingParticipants => 'Duke ngarkuar pjesëmarrësit...';
-
-  @override
   String get location => 'Vendndodhja';
 
   @override
@@ -594,9 +499,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get male => 'Mashkull';
 
   @override
-  String get manageParticipants => 'Menaxho pjesëmarrësit';
-
-  @override
   String get manual => 'Hyrje manuale';
 
   @override
@@ -604,9 +506,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get materialInfo => 'Informacione materiale';
-
-  @override
-  String get me => 'Unë';
 
   @override
   String get menuDeviceImport => 'Importo material nga pajisja';
@@ -675,27 +574,20 @@ class AppLocalizationsSq extends AppLocalizations {
   String get neutral => 'Asnjëanës';
 
   @override
+  String get newNotebookTitle => 'Emri i koleksionit të ri';
+
+  @override
   String get newSubjectName => 'Emri i ri i grupit/fjalorit';
 
   @override
   String get next => 'Tjetër';
 
   @override
-  String get noDialogueHistory => 'Nuk ka histori dialogu.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Nuk ka lidhje interneti. Njohja e zërit mund të mos jetë e mundur jashtë linje.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Nuk ka lidhje interneti. Funksioni i përkthimit nuk mund të përdoret jashtë linje. Ju lutemi përdorni modalitetin e rishikimit.';
+  String get noDataForLanguage =>
+      'Nuk ka të dhëna trajnimi për gjuhën e zgjedhur në DB-në lokale. Shkarkoni materialet ose zgjidhni një gjuhë tjetër.';
 
   @override
   String get noMaterialsInCategory => 'Nuk ka materiale në këtë kategori.';
-
-  @override
-  String get noParticipantsFound => 'Nuk u gjetën pjesëmarrës të regjistruar.';
 
   @override
   String get noRecords => 'Nuk ka regjistrime studimi për gjuhën e zgjedhur';
@@ -716,6 +608,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get notSelected => '- Nuk është zgjedhur -';
 
   @override
+  String get noteGuidance =>
+      'Aty ku jepni detaje shtesë për përkthim më të saktë';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Ju lutemi kontrolloni lidhjen tuaj të internetit ose provoni përsëri më vonë.';
 
@@ -726,16 +622,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Nuk ka materiale.';
 
   @override
-  String get participantDeleted => 'Pjesëmarrësi është fshirë.';
-
-  @override
-  String get participantRename => 'Riemëro pjesëmarrësin';
-
-  @override
-  String get partner => 'Partner';
-
-  @override
-  String get partnerMode => 'Modaliteti i partnerit';
+  String get openSettings => 'Hap cilësimet';
 
   @override
   String get password => 'Fjalëkalimi';
@@ -748,13 +635,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get perfect => 'E përkryer!';
 
   @override
-  String get personaFriend => 'Shok vendas';
-
-  @override
-  String get personaGuide => 'Guida turistike';
-
-  @override
-  String get personaTeacher => 'Mësues i anglishtes';
+  String get pickGallery => 'Zgjidh nga galeria';
 
   @override
   String get playAgain => 'Luaj përsëri';
@@ -774,6 +655,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get posAdverb => 'Ndajfolje';
 
   @override
+  String get posArticle => 'Artikull';
+
+  @override
   String get posConjunction => 'Lidhëz';
 
   @override
@@ -781,6 +665,9 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get posNoun => 'Emër';
+
+  @override
+  String get posParticle => 'Grimcë';
 
   @override
   String get posPreposition => 'Parafjalë';
@@ -798,9 +685,33 @@ class AppLocalizationsSq extends AppLocalizations {
   String get practiceWordsOnly => 'Ushtroni vetëm fjalët';
 
   @override
+  String get processing => 'Duke u përpunuar...';
+
+  @override
   String progress(int current, int total) {
     return 'Progresi: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Në Menunë > Cilësimet e Gjuhës, specifikoni fillimisht gjuhën tuaj dhe gjuhën e mësimit.';
+
+  @override
+  String get quickStartStep1Title => '1. Përcakto Gjuhët';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Krijoni kartat tuaja të personalizuara të studimit sipas renditjes: Hyrje (Mikrofon/Tastierë) -> Përkthim -> Ruaj.';
+
+  @override
+  String get quickStartStep2Title => '2. Rrjedha Bazë';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Praktikohuni me bisedë, praktikoni shqiptimin duke parë tekstin në tabin e praktikës së shqiptimit.';
+
+  @override
+  String get quickStartStep3Title => '3. Shfrytëzo Modalitetet';
 
   @override
   String recentNItems(int count) {
@@ -825,6 +736,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get refresh => 'Rifresko';
 
   @override
+  String get requestTranslation => 'Kërko përkthim';
+
+  @override
   String get reset => 'Rivendos';
 
   @override
@@ -845,16 +759,13 @@ class AppLocalizationsSq extends AppLocalizations {
   String get reviewModeTitle => 'Rishikim';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Palë e tretë';
-
-  @override
-  String get roleUser => 'Përdorues';
-
-  @override
   String get save => 'Ruaj';
+
+  @override
+  String get saveAsSentence => 'Ruaj si fjali';
+
+  @override
+  String get saveAsWord => 'Ruaj si fjalë';
 
   @override
   String get saveData => 'Ruaj të dhënat';
@@ -865,6 +776,9 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Ruaj në historikun e skanimit';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Provoje të ruash përkthimet nga modaliteti i kërkimit';
 
@@ -873,6 +787,12 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get saving => 'Duke ruajtur...';
+
+  @override
+  String get scanInstructions => 'Zgjidhni imazhin për ta skanuar';
+
+  @override
+  String get scanLabel => 'Skano';
 
   @override
   String score(String score) {
@@ -919,16 +839,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get selectPOS => 'Zgjidh pjesën e ligjëratës';
 
   @override
-  String get selectParticipants => 'Zgjidhni pjesëmarrësit';
-
-  @override
-  String get selectSentenceType => 'Zgjidh llojin e fjalisë';
-
-  @override
   String get selectStudyMaterial => 'Zgjidh materialin e studimit';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Fjali';
@@ -937,43 +848,14 @@ class AppLocalizationsSq extends AppLocalizations {
   String get signUp => 'Regjistrohu';
 
   @override
-  String get similarTextFound => 'U gjet tekst i ngjashëm';
-
-  @override
-  String get skip => 'Anashkalo';
-
-  @override
-  String get source => 'Burimi:';
-
-  @override
-  String get sourceLanguage => 'Gjuha burimore';
+  String get simplifiedGuidance =>
+      'Konvertoni bisedat e përditshme në një gjuhë të huaj menjëherë! Talkie regjistron jetën tuaj gjuhësore.';
 
   @override
   String get sourceLanguageLabel => 'Gjuha ime (Burimi)';
 
   @override
-  String get speakNow => 'Foli tani!';
-
-  @override
-  String get speaker => 'Folësi';
-
-  @override
-  String get speakerSelect => 'Zgjidhni folësin';
-
-  @override
-  String get speakingPractice => 'Ushtrim i të folurit';
-
-  @override
-  String get startChat => 'Fillo bisedën';
-
-  @override
-  String get startPractice => 'Fillo praktikën';
-
-  @override
   String get startTutorial => 'Fillo udhëzuesin';
-
-  @override
-  String get startWarning => 'Paralajmërim';
 
   @override
   String get startsWith => 'Shkronja fillestare';
@@ -983,28 +865,22 @@ class AppLocalizationsSq extends AppLocalizations {
       'Ju lutemi, verifikoni email-in për të përfunduar vërtetimin.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Duke shkarkuar: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Importimi dështoi: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name importuar me sukses';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Hyrja u anulua.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Hyrja dështoi: $error';
   }
 
@@ -1015,23 +891,23 @@ class AppLocalizationsSq extends AppLocalizations {
   String get statusLogoutSuccess => 'Keni dalë me sukses.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Regjistrimi dështoi: $error';
+  String statusRequestFailed(String error) {
+    return 'Kërkesa për përkthim dështoi: $error';
   }
 
   @override
-  String get statusSigningUp => 'Duke u regjistruar...';
+  String get statusRequestSuccess => 'Kërkesa për përkthim u krye me sukses.';
 
   @override
   String get stopPractice => 'Ndalo praktikën';
 
   @override
-  String get studyComplete => 'Studimi u përfundua';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Materiali që keni zgjedhur nuk mbështet gjuhën e studimit të vendosur aktualisht ($targetLang), prandaj nuk mund të ruhet lokalisht. Dëshironi të kërkoni përkthim?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Regjistrime studimi ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Gjuha e studimit nuk mbështetet';
 
   @override
   String get styleFormal => 'Formale';
@@ -1046,22 +922,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get styleSlang => 'Slang';
 
   @override
-  String get subject => 'Subjekti:';
-
-  @override
   String get swapLanguages => 'Shkëmbeni gjuhët';
 
   @override
-  String get switchToAi => 'Kalo në Modalitetin AI';
-
-  @override
-  String get switchToPartner => 'Kalo në Modalitetin e Partnerit';
-
-  @override
   String get syncingData => 'Duke sinkronizuar të dhënat...';
-
-  @override
-  String get tabConversation => 'Bisedë';
 
   @override
   String tabReview(int count) {
@@ -1125,6 +989,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tooltipSearch => 'Kërko';
 
   @override
+  String get tooltipSettingsConfirm => 'Konfirmo cilësimet';
+
+  @override
   String get tooltipSpeaking => 'Të folurit';
 
   @override
@@ -1137,6 +1004,9 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get translate => 'Përkthe';
+
+  @override
+  String get translateNow => 'Përkthe tani';
 
   @override
   String get translating => 'Duke përkthyer...';
@@ -1153,6 +1023,9 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Gjuha e përkthimit';
+
+  @override
   String get translationLimitExceeded => 'Kufiri i përkthimit tejkalohet';
 
   @override
@@ -1166,6 +1039,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get translationRefilled => 'Numri i përkthimeve u rimbush 5 herë!';
 
   @override
+  String get translationResult => 'Rezultati i përkthimit';
+
+  @override
   String get translationResultHint =>
       'Rezultati i përkthimit - mund të modifikohet';
 
@@ -1173,11 +1049,16 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tryAgain => 'Provoje përsëri';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Ushtroni bisedat e jetës reale me personazhet AI.';
+  String get ttsInstallGuide =>
+      'Ju lutemi instaloni të dhënat e gjuhës përkatëse te Cilësimet e Android > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'Bisedë me AI';
+  String get ttsMissing =>
+      'Motori i zërit për këtë gjuhë nuk është instaluar në pajisjen tuaj.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Ky postim audio nuk mbështetet nga cilësimet e këtij telefoni.';
 
   @override
   String get tutorialContextDesc =>
@@ -1296,7 +1177,13 @@ class AppLocalizationsSq extends AppLocalizations {
   String get typeExclamation => 'Thirrje';
 
   @override
+  String get typeIdiom => 'Frazëologji';
+
+  @override
   String get typeImperative => 'Urdhërore';
+
+  @override
+  String get typeProverb => 'Fjalë e urtë';
 
   @override
   String get typeQuestion => 'Pyetje';
@@ -1311,6 +1198,11 @@ class AppLocalizationsSq extends AppLocalizations {
   String get useExistingText => 'Përdorni tekstin ekzistues';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Shikoni Udhëzuesin Online';
 
   @override
@@ -1318,6 +1210,16 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Shikoni reklamën dhe rimbushni (+5 herë)';
+
+  @override
+  String get welcomeButton => 'Fillo';
+
+  @override
+  String get welcomeDesc =>
+      'Mirë se vini në Talkie! Ne mbështesim 100% të gjitha gjuhët, mbi 80 gjithsej, me integritet të plotë dhe ju ofrojmë një përvojë të përsosur mësimi me dizajnin tonë të ri premium 3D dhe performancën e optimizuar.';
+
+  @override
+  String get welcomeTitle => 'Mirë se vini në Talkie!';
 
   @override
   String get word => 'Fjalë';
@@ -1334,113 +1236,4 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Shqiptimi juaj';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Ky postim audio nuk mbështetet nga cilësimet e këtij telefoni.';
-
-  @override
-  String get homeTab => 'Përkthim';
-
-  @override
-  String get welcomeTitle => 'Mirë se vini në Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Mirë se vini në Talkie! Ne mbështesim 100% të gjitha gjuhët, mbi 80 gjithsej, me integritet të plotë dhe ju ofrojmë një përvojë të përsosur mësimi me dizajnin tonë të ri premium 3D dhe performancën e optimizuar.';
-
-  @override
-  String get welcomeButton => 'Fillo';
-
-  @override
-  String get labelDetails => 'Detaje të hollësishme';
-
-  @override
-  String get translationResult => 'Rezultati i përkthimit';
-
-  @override
-  String get inputContent => 'Përmbajtja e futur';
-
-  @override
-  String get translateNow => 'Përkthe tani';
-
-  @override
-  String get tooltipSettingsConfirm => 'Konfirmo cilësimet';
-
-  @override
-  String get hintNoteExample => 'P.sh.: shpjegim konteksti, homonime, etj.';
-
-  @override
-  String get hintTagExample => 'P.sh.: biznes, udhëtime...';
-
-  @override
-  String get addNew => 'Shto të re';
-
-  @override
-  String get newNotebookTitle => 'Emri i koleksionit të ri';
-
-  @override
-  String get enterNameHint => 'Shkruaj emrin';
-
-  @override
-  String get add => 'Shto';
-
-  @override
-  String get openSettings => 'Hap cilësimet';
-
-  @override
-  String get helpNotebook =>
-      'Zgjidhni dosjen ku dëshironi të ruani rezultatet e përkthimit.';
-
-  @override
-  String get helpNote =>
-      'Regjistroni lirisht kuptimin, shembujt ose situatat e fjalëve.';
-
-  @override
-  String get helpTag =>
-      'Fut çelësfjalët për t\'i klasifikuar ose kërkuar më vonë.';
-
-  @override
-  String get requestTranslation => 'Kërko përkthim';
-
-  @override
-  String get statusRequestSuccess => 'Kërkesa për përkthim u krye me sukses.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Kërkesa për përkthim dështoi: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Gjuha e studimit nuk mbështetet';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Materiali që keni zgjedhur nuk mbështet gjuhën e studimit të vendosur aktualisht ($targetLang), prandaj nuk mund të ruhet lokalisht. Dëshironi të kërkoni përkthim?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Përcakto Gjuhët';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Në Menunë > Cilësimet e Gjuhës, specifikoni fillimisht gjuhën tuaj dhe gjuhën e mësimit.';
-
-  @override
-  String get quickStartStep2Title => '2. Rrjedha Bazë';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Krijoni kartat tuaja të personalizuara të studimit sipas renditjes: Hyrje (Mikrofon/Tastierë) -> Përkthim -> Ruaj.';
-
-  @override
-  String get quickStartStep3Title => '3. Shfrytëzo Modalitetet';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Praktikohuni me bisedë, praktikoni shqiptimin duke parë tekstin në tabin e praktikës së shqiptimit.';
-
-  @override
-  String get noteGuidance =>
-      'Aty ku jepni detaje shtesë për përkthim më të saktë';
 }

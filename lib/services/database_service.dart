@@ -7,6 +7,7 @@ import 'database/sentence_repository.dart';
 import 'database/tag_repository.dart';
 import 'database/data_transfer_service.dart';
 import 'database/unified_repository.dart';
+import 'database/scanned_repository.dart';
 
 
 /// DatabaseService - 로컬 데이터베이스 관리 (Facade)
@@ -40,6 +41,11 @@ class DatabaseService {
   static Future<int> insertSentence(Map<String, dynamic> data) => SentenceRepository.insert(data);
   static Future<List<Map<String, dynamic>>> searchSentences(String query, {int limit = 10}) => SentenceRepository.search(query, limit: limit);
   static Future<void> toggleSentenceMemorized(int id, bool status) => SentenceRepository.updateMemorizedStatus(id, status);
+
+  // --- Scanned Repository Delegation (Phase 27) ---
+  static Future<int> insertScannedRecord(Map<String, dynamic> data) => ScannedRepository.insert(data);
+  static Future<List<Map<String, dynamic>>> getScannedRecords() => ScannedRepository.getScannedRecords();
+  static Future<void> deleteScannedRecord(int groupId) => ScannedRepository.delete(groupId);
 
   // --- Tag Repository Delegation ---
   static Future<List<String>> getAllTags() => TagRepository.getAllTags();

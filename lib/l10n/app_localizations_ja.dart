@@ -9,50 +9,19 @@ class AppLocalizationsJa extends AppLocalizations {
   AppLocalizationsJa([String locale = 'ja']) : super(locale);
 
   @override
-  String get basicWords => '基本単語リポジトリ';
-
-  @override
-  String get inputLanguage => '入力言語';
-
-  @override
-  String get translationLanguage => '翻訳言語';
-
-  @override
-  String get simplifiedGuidance => '日常会話を外国語に瞬間変換！Talkieがあなたの言語生活を記録します。';
-
-  @override
-  String get noDataForLanguage =>
-      '選択された言語の学習データがローカルDBにありません。データをダウンロードするか、別の言語を選択してください。';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'キャンセル';
-
-  @override
   String get accuracy => '正確度';
-
-  @override
-  String get ttsMissing => 'この言語の音声エンジンがデバイスにインストールされていません。';
-
-  @override
-  String get ttsInstallGuide =>
-      'Androidの設定 > Googleテキスト読み上げから、該当する言語データをインストールしてください。';
 
   @override
   String get adLoading => '広告を読み込み中です。しばらくしてからもう一度試してください。';
 
   @override
-  String get addNewSubject => '新しいタイトルを追加';
+  String get add => '追加';
 
   @override
-  String get addParticipant => '参加者を追加';
+  String get addNew => '新規追加';
+
+  @override
+  String get addNewSubject => '新しいタイトルを追加';
 
   @override
   String get addTagHint => 'タグを追加...';
@@ -85,6 +54,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get basicWordRepository => '基本単語リポジトリ';
 
   @override
+  String get basicWords => '基本単語リポジトリ';
+
+  @override
+  String get cancel => 'キャンセル';
+
+  @override
   String get caseObject => '目的格';
 
   @override
@@ -100,61 +75,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get caseSubject => '主格';
 
   @override
-  String get chatAiChat => 'チャット';
-
-  @override
-  String get chatAllConversations => 'すべての会話';
-
-  @override
-  String get chatChoosePersona => 'ペルソナを選択';
-
-  @override
-  String get chatEndMessage => '会話を終了しますか？';
-
-  @override
-  String get chatEndTitle => '会話を終了して保存';
-
-  @override
-  String chatFailed(Object error) {
-    return 'チャット失敗: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return '会話から抜粋 ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => '会話履歴';
-
-  @override
-  String get chatNew => '新しい会話';
-
-  @override
-  String get chatNewChat => '新しいチャット';
-
-  @override
-  String get chatNoConversations => '会話がありません';
-
-  @override
-  String get chatSearchHint => 'チャット名で検索...';
-
-  @override
-  String get chatNoteSearchHint => 'コメントで検索...';
-
-  @override
-  String get chatSaveAndExit => '保存して終了';
-
-  @override
-  String get chatStartNewPrompt => '練習を始めるために新しいチャットを開始しましょう！';
-
-  @override
-  String get chatTypeHint => 'メッセージを入力...';
-
-  @override
-  String get chatUntitled => '無題の会話';
-
-  @override
   String get checking => '確認中...';
 
   @override
@@ -165,12 +85,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get confirmDelete => 'この学習記録を削除しますか？';
-
-  @override
-  String get confirmDeleteConversation => 'この会話を削除しますか？\n削除した会話は復元できません。';
-
-  @override
-  String get confirmDeleteParticipant => 'この参加者を削除してもよろしいですか？';
 
   @override
   String get contextTagHint => '後で区別しやすいように状況を記入してください';
@@ -208,28 +122,19 @@ class AppLocalizationsJa extends AppLocalizations {
   String get deleteRecord => '記録の削除';
 
   @override
-  String get dialogueQuestDesc => 'ロールプレイを通じて会話練習をしてください。適切な答えを選択して話してください。';
-
-  @override
-  String get dialogueQuestTitle => '対話クエスト';
-
-  @override
-  String get disambiguationPrompt => 'どの意味で翻訳しますか？';
-
-  @override
-  String get disambiguationTitle => '意味を選択';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'アカウントをお持ちでないですか？';
-
-  @override
-  String get editParticipant => '参加者を編集';
 
   @override
   String get email => 'メールアドレス';
 
   @override
   String get emailAlreadyInUse => 'すでに登録済みのメールアドレスです。ログインまたはパスワード再設定をご利用ください。';
+
+  @override
+  String get enterNameHint => '名前を入力してください';
 
   @override
   String get enterNewSubjectName => '新しいタイトルを入力';
@@ -266,6 +171,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get errors => 'エラー:';
+
+  @override
+  String get extractedText => '認識されたテキスト';
 
   @override
   String get female => '女性';
@@ -325,12 +233,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get gender => '性別';
 
   @override
-  String get labelFilterMaterial => '資料集';
-
-  @override
-  String get labelFilterTag => 'タグ';
-
-  @override
   String get generalTags => '一般タグ';
 
   @override
@@ -343,17 +245,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get googleContinue => 'Googleで続行';
 
   @override
-  String get helpDialogueImportDesc => 'JSONファイルで全体の対話セットをインポートします。';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc => 'モード3等で学習教材をインポートするには、以下の構造のJSONファイルを使用してください:';
-
-  @override
-  String get helpJsonTypeDialogue => '対話 (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => '文 (Sentence)';
@@ -366,7 +258,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get helpMode1Details =>
-      '• 言語設定：ホーム画面上部の言語ボタンで、自分の言語と学習中の言語を確認し、学習言語を変更できます。\n• シンプル入力：中央の大きなマ이크またはテキスト入力ボックスからすぐに入力を開始できます。\n• 設定確認：入力が終わったら、右側の青いチェックボタンを押してください。詳細設定ウィンドウが表示されます。\n• 詳細設定：表示されたダイアログで、保存先の資料集、注釈（メモ）、タグを指定できます。\n• 今すぐ翻訳：設定完了後、緑色の翻訳ボタンを押すと、AIが即座に翻訳を実行します。\n• 자동 검색：入力中に類似した既存の翻訳をリアルタイムで検出し表示します。\n• 聴取と保存：翻訳結果の下部にあるスピーカーアイコンで発音を確認し、「データを保存」で学習リストに追加しましょう。';
+      '• 言語設定：ホーム画面上部の言語ボタンで、自分の言語と学習中の言語を確認し、学習言語を変更できます。\n• シンプル入力：中央の大きなマイクとテキストウィンドウから即座に入力してください。\n• 設定確認：入力が終わったら、右側の青いチェックボタンを押してください。詳細設定ウィンドウが表示されます。\n• 詳細設定：表示されたダイアログで、保存する資料集、注釈（メモ）、タグを指定できます。\n• 今すぐ翻訳：設定後、緑色の翻訳ボタンを押すと、人工知能が即座に翻訳を実行します。\n• 自動検索：入力中、類似した既存の翻訳をリアルタイムで検知して表示します。\n• 聴取と保存：翻訳結果の下にあるスピーカーアイコンで発音を聞き、「データ保存」で学習リストに追加してください。';
 
   @override
   String get helpMode2Desc => '保存された文章を復習します。翻訳を隠して確認し、復習回数を記録しましょう。';
@@ -383,11 +275,10 @@ class AppLocalizationsJa extends AppLocalizations {
       '• 教材選択: 学習する教材パックを選択\n• 間隔調整: [-] [+] ボタンで文章間の待機時間を設定 (3秒〜60秒)\n• 開始/停止: 再生ボタンでシャドーイングセッションを制御\n• 話す: ネイティブの音声を聞いて真似て話す\n• フィードバック: 発音の正確さをスコア (0-100) と色で表示 (緑/橙/赤)\n• 再試行: 認識失敗時に再試行ボタンを使用';
 
   @override
-  String get helpModeChatDesc => 'AIペルソナと会話して、実践的な会話を練習してください。';
+  String get helpNote => '単語の意味や例文、状況などを自由にご記入ください。';
 
   @override
-  String get helpModeChatDetails =>
-      '• AIチャット：下部タブバーの「チャット」メニューでペルソナと実践会話練習\n• ペルソナ設定：相手の性別、名前、言語コードを自由に指定\n• GPSシチュエーション：現在地を認識して場所にふさわしい会話テーマを推薦\n• 2ヶ国語：AIの回答が翻訳と共に表示され学習効果を最大化\n• 記録管理：過去の会話履歴フィルタリングおよび会話中の特定メッセージを学習資料として保存';
+  String get helpNotebook => '翻訳された結果を保存するフォルダを選択してください。';
 
   @override
   String get helpTabJson => 'JSON形式';
@@ -402,6 +293,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get helpTabTour => 'ツアー';
 
   @override
+  String get helpTag => '後で分類したり検索したりするためのキーワードを入力してください。';
+
+  @override
   String get helpTitle => 'ヘルプ＆ガイド';
 
   @override
@@ -410,6 +304,15 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get hide => '隠す';
+
+  @override
+  String get hintNoteExample => '例：状況説明、同音異義語など';
+
+  @override
+  String get hintTagExample => '例：ビジネス、旅行...';
+
+  @override
+  String get homeTab => '翻訳';
 
   @override
   String importAdded(int count) {
@@ -422,23 +325,6 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       '同じタイトルの資料が既に存在します。タイトルを変更してからもう一度試してください。';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -454,6 +340,11 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files個のファイル、$entries個の項目をインポートしました。';
+  }
+
+  @override
   String get importJsonFile => 'JSONファイル読込';
 
   @override
@@ -465,12 +356,30 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => '単一のJSONファイル';
+
+  @override
+  String get importSourceFolder => 'フォルダ (言語別ライブラリ構造)';
+
+  @override
+  String get importSourceTitle => 'インポート元を選択';
+
+  @override
+  String get importSourceZip => 'ZIPファイル (圧縮されたフォルダ)';
+
+  @override
   String importTotal(int count) {
     return '合計: $count件';
   }
 
   @override
   String get importing => '読込中...';
+
+  @override
+  String get inputContent => '入力内容';
+
+  @override
+  String get inputLanguage => '入力言語';
 
   @override
   String get inputModeTitle => '入力';
@@ -487,19 +396,22 @@ class AppLocalizationsJa extends AppLocalizations {
   String get kakaoContinue => 'カカオで続ける';
 
   @override
-  String get labelLangCode => '言語コード (例: en-US, ja-JP)';
+  String get labelDetails => '詳細設定';
 
   @override
-  String get labelName => '名前';
+  String get labelFilterMaterial => '資料集';
+
+  @override
+  String get labelFilterTag => 'タグ';
+
+  @override
+  String get labelLangCode => '言語コード (例: en-US, ja-JP)';
 
   @override
   String get labelNote => '注釈';
 
   @override
   String get labelPOS => '品詞';
-
-  @override
-  String get labelRole => '役割';
 
   @override
   String get labelSentence => '文';
@@ -550,9 +462,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get listening => '聞き取り中...';
 
   @override
-  String get loadingParticipants => '参加者を読み込み中...';
-
-  @override
   String get location => '場所';
 
   @override
@@ -571,9 +480,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get male => '男性';
 
   @override
-  String get manageParticipants => '参加者管理';
-
-  @override
   String get manual => '手動入力';
 
   @override
@@ -581,9 +487,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get materialInfo => '教材情報';
-
-  @override
-  String get me => '私';
 
   @override
   String get menuDeviceImport => 'デバイスからインポート';
@@ -651,27 +554,20 @@ class AppLocalizationsJa extends AppLocalizations {
   String get neutral => '中性';
 
   @override
+  String get newNotebookTitle => '新しいノートブック名';
+
+  @override
   String get newSubjectName => '新しい単語帳/文章集のタイトル';
 
   @override
   String get next => '次へ';
 
   @override
-  String get noDialogueHistory => '会話履歴がありません。';
-
-  @override
-  String get noInternetWarningMic =>
-      'インターネット接続がありません。オフライン状態では音声認識ができない場合があります。';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'インターネット接続がありません。オフライン状態では翻訳機能を利用できません。復習モードをご利用ください。';
+  String get noDataForLanguage =>
+      '選択された言語の学習データがローカルDBにありません。データをダウンロードするか、別の言語を選択してください。';
 
   @override
   String get noMaterialsInCategory => 'このカテゴリには資料がありません。';
-
-  @override
-  String get noParticipantsFound => '登録された参加者はいません。';
 
   @override
   String get noRecords => '選択した言語の学習記録がありません';
@@ -692,6 +588,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get notSelected => 'ー選択されていませんー';
 
   @override
+  String get noteGuidance => 'より正確な翻訳のために詳細を入力する場所';
+
+  @override
   String get onlineLibraryCheckInternet => 'インターネット接続を確認するか、後でもう一度試してください。';
 
   @override
@@ -701,16 +600,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get onlineLibraryNoMaterials => '資料がありません。';
 
   @override
-  String get participantDeleted => '参加者が削除されました。';
-
-  @override
-  String get participantRename => '参加者の名前を変更';
-
-  @override
-  String get partner => 'パートナー';
-
-  @override
-  String get partnerMode => 'パートナーモード';
+  String get openSettings => '設定を開く';
 
   @override
   String get password => 'パスワード';
@@ -722,13 +612,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get perfect => '完璧です！';
 
   @override
-  String get personaFriend => '地元の友人';
-
-  @override
-  String get personaGuide => '旅行ガイド';
-
-  @override
-  String get personaTeacher => '英語の先生';
+  String get pickGallery => 'ギャラリーから選択';
 
   @override
   String get playAgain => 'もう一度プレイ';
@@ -748,6 +632,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get posAdverb => '副詞';
 
   @override
+  String get posArticle => '冠詞';
+
+  @override
   String get posConjunction => '接続詞';
 
   @override
@@ -755,6 +642,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get posNoun => '名詞';
+
+  @override
+  String get posParticle => '助詞';
 
   @override
   String get posPreposition => '前置詞/助詞';
@@ -772,9 +662,31 @@ class AppLocalizationsJa extends AppLocalizations {
   String get practiceWordsOnly => '単語のみ練習';
 
   @override
+  String get processing => '処理中...';
+
+  @override
   String progress(int current, int total) {
     return '進捗: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc => 'メニュー > 言語設定で、自分の言語と学習言語をまず指定してください。';
+
+  @override
+  String get quickStartStep1Title => '1. 言語設定';
+
+  @override
+  String get quickStartStep2Desc =>
+      '入力（マイク/キーボード） -> 翻訳 -> 保存 の順で、自分だけの学習カードを作りましょう。';
+
+  @override
+  String get quickStartStep2Title => '2. 基本的な流れ';
+
+  @override
+  String get quickStartStep3Desc => 'チャットで練習したり、発音練習タブでテキストを見て直接発音しながら練習しましょう。';
+
+  @override
+  String get quickStartStep3Title => '3. モード活用';
 
   @override
   String recentNItems(int count) {
@@ -799,6 +711,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get refresh => '更新';
 
   @override
+  String get requestTranslation => '翻訳をリクエスト';
+
+  @override
   String get reset => 'リセット';
 
   @override
@@ -819,16 +734,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get reviewModeTitle => '復習';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => '第三者';
-
-  @override
-  String get roleUser => 'ユーザー';
-
-  @override
   String get save => '保存';
+
+  @override
+  String get saveAsSentence => '文章として保存';
+
+  @override
+  String get saveAsWord => '単語として保存';
 
   @override
   String get saveData => '保存';
@@ -839,6 +751,9 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'スキャン履歴に保存';
+
+  @override
   String get saveTranslationsFromSearch => '検索モードから翻訳を保存してください';
 
   @override
@@ -846,6 +761,12 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get saving => '保存中...';
+
+  @override
+  String get scanInstructions => 'スキャンする画像を選択してください';
+
+  @override
+  String get scanLabel => 'スキャン';
 
   @override
   String score(String score) {
@@ -892,16 +813,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get selectPOS => '品詞を選択';
 
   @override
-  String get selectParticipants => '参加者を選択';
-
-  @override
-  String get selectSentenceType => '文の種類を選択';
-
-  @override
   String get selectStudyMaterial => '学習教材を選択';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => '文';
@@ -910,43 +822,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get signUp => '会員登録';
 
   @override
-  String get similarTextFound => '類似したテキストが見つかりました';
-
-  @override
-  String get skip => 'スキップ';
-
-  @override
-  String get source => '出典:';
-
-  @override
-  String get sourceLanguage => '原文言語';
+  String get simplifiedGuidance => '日常会話を外国語に瞬間変換！Talkieがあなたの言語生活を記録します。';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => '今すぐ話してください！';
-
-  @override
-  String get speaker => '発話者';
-
-  @override
-  String get speakerSelect => '発話者を選択';
-
-  @override
-  String get speakingPractice => 'スピーキング練習';
-
-  @override
-  String get startChat => '会話を開始';
-
-  @override
-  String get startPractice => '練習開始';
-
-  @override
   String get startTutorial => 'チュートリアル開始';
-
-  @override
-  String get startWarning => '注意';
 
   @override
   String get startsWith => '先頭文字';
@@ -955,28 +837,22 @@ class AppLocalizationsJa extends AppLocalizations {
   String get statusCheckEmail => 'メールを確認して認証を完了してください。';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'ダウンロード中: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'インポート失敗: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$nameのインポートが完了しました';
   }
 
   @override
-  String get statusLoggingIn => 'ログイン中...';
-
-  @override
-  String get statusLoginCancelled => 'ログインがキャンセルされました。';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'ログイン失敗: $error';
   }
 
@@ -987,23 +863,23 @@ class AppLocalizationsJa extends AppLocalizations {
   String get statusLogoutSuccess => 'ログアウトしました。';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return '会員登録失敗: $error';
+  String statusRequestFailed(String error) {
+    return '翻訳リクエスト失敗: $error';
   }
 
   @override
-  String get statusSigningUp => '会員登録中...';
+  String get statusRequestSuccess => '翻訳リクエストが完了しました。';
 
   @override
   String get stopPractice => '練習停止';
 
   @override
-  String get studyComplete => '学習完了';
+  String studyLangNotFoundDesc(String targetLang) {
+    return '選択した教材は、現在設定されている学習言語（$targetLang）をサポートしていないため、ローカルに保存できません。翻訳をリクエストしますか？';
+  }
 
   @override
-  String studyRecords(int count) {
-    return '学習記録 ($count)';
-  }
+  String get studyLangNotFoundTitle => '学習言語はサポートされていません';
 
   @override
   String get styleFormal => '敬語';
@@ -1018,22 +894,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get styleSlang => 'スラング';
 
   @override
-  String get subject => '主題:';
-
-  @override
   String get swapLanguages => '言語を切り替え';
 
   @override
-  String get switchToAi => 'AIモードに切り替え';
-
-  @override
-  String get switchToPartner => 'パートナーモードに切り替え';
-
-  @override
   String get syncingData => 'データを同期中...';
-
-  @override
-  String get tabConversation => '会話';
 
   @override
   String tabReview(int count) {
@@ -1096,6 +960,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tooltipSearch => '検索';
 
   @override
+  String get tooltipSettingsConfirm => '設定確認';
+
+  @override
   String get tooltipSpeaking => 'スピーキング';
 
   @override
@@ -1108,6 +975,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get translate => '翻訳する';
+
+  @override
+  String get translateNow => '翻訳する';
 
   @override
   String get translating => '翻訳中...';
@@ -1124,6 +994,9 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => '翻訳言語';
+
+  @override
   String get translationLimitExceeded => '翻訳制限を超過';
 
   @override
@@ -1137,16 +1010,23 @@ class AppLocalizationsJa extends AppLocalizations {
   String get translationRefilled => '翻訳回数が5回チャージされました！';
 
   @override
+  String get translationResult => '翻訳結果';
+
+  @override
   String get translationResultHint => '翻訳結果 - 修正可能';
 
   @override
   String get tryAgain => 'もう一度';
 
   @override
-  String get tutorialAiChatDesc => 'AIペルソナと実践的な会話を練習しましょう。';
+  String get ttsInstallGuide =>
+      'Androidの設定 > Googleテキスト読み上げから、該当する言語データをインストールしてください。';
 
   @override
-  String get tutorialAiChatTitle => 'AIチャット';
+  String get ttsMissing => 'この言語の音声エンジンがデバイスにインストールされていません。';
+
+  @override
+  String get ttsUnsupportedNatively => 'このデバイスの標準設定では、この言語の音声出力をサポートしていません。';
 
   @override
   String get tutorialContextDesc => '同じ文章でも状況（例：朝、夜）を追加して区別できます。';
@@ -1249,7 +1129,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get typeExclamation => '感嘆文';
 
   @override
+  String get typeIdiom => '慣用句';
+
+  @override
   String get typeImperative => '命令文';
+
+  @override
+  String get typeProverb => 'ことわざ';
 
   @override
   String get typeQuestion => '疑問文';
@@ -1264,6 +1150,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get useExistingText => '既存のテキストを使用';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'オンラインガイドを見る';
 
   @override
@@ -1271,6 +1162,16 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => '広告を見てチャージ (+5回)';
+
+  @override
+  String get welcomeButton => '始める';
+
+  @override
+  String get welcomeDesc =>
+      'Talkieへようこそ！世界80以上の言語を100%の完全性でサポートし、新しいプレミアム3Dデザインと最適化されたパフォーマンスで完璧な学習体験を提供します。';
+
+  @override
+  String get welcomeTitle => 'Talkieへようこそ！';
 
   @override
   String get word => '単語';
@@ -1286,106 +1187,4 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'あなたの発音';
-
-  @override
-  String get ttsUnsupportedNatively => 'このデバイスの標準設定では、この言語の音声出力をサポートしていません。';
-
-  @override
-  String get homeTab => '翻訳';
-
-  @override
-  String get welcomeTitle => 'Talkieへようこそ！';
-
-  @override
-  String get welcomeDesc =>
-      'Talkieへようこそ！世界80以上の言語を100%の完全性でサポートし、新しいプレミアム3Dデザインと最適化されたパフォーマンスで完璧な学習体験を提供します。';
-
-  @override
-  String get welcomeButton => '始める';
-
-  @override
-  String get labelDetails => '詳細設定';
-
-  @override
-  String get translationResult => '翻訳結果';
-
-  @override
-  String get inputContent => '入力内容';
-
-  @override
-  String get translateNow => '翻訳する';
-
-  @override
-  String get tooltipSettingsConfirm => '設定確認';
-
-  @override
-  String get hintNoteExample => '例：状況説明、同音異義語など';
-
-  @override
-  String get hintTagExample => '例：ビジネス、旅行...';
-
-  @override
-  String get addNew => '新規追加';
-
-  @override
-  String get newNotebookTitle => '新しいノートブック名';
-
-  @override
-  String get enterNameHint => '名前を入力してください';
-
-  @override
-  String get add => '追加';
-
-  @override
-  String get openSettings => '設定を開く';
-
-  @override
-  String get helpNotebook => '翻訳された結果を保存するフォルダを選択してください。';
-
-  @override
-  String get helpNote => '単語の意味や例文、状況などを自由にご記入ください。';
-
-  @override
-  String get helpTag => '後で分類したり検索したりするためのキーワードを入力してください。';
-
-  @override
-  String get requestTranslation => '翻訳をリクエスト';
-
-  @override
-  String get statusRequestSuccess => '翻訳リクエストが完了しました。';
-
-  @override
-  String statusRequestFailed(String error) {
-    return '翻訳リクエスト失敗: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => '学習言語はサポートされていません';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return '選択した教材は、現在設定されている学習言語（$targetLang）をサポートしていないため、ローカルに保存できません。翻訳をリクエストしますか？';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. 言語設定';
-
-  @override
-  String get quickStartStep1Desc => 'メニュー > 言語設定で、自分の言語と学習言語をまず指定してください。';
-
-  @override
-  String get quickStartStep2Title => '2. 基本的な流れ';
-
-  @override
-  String get quickStartStep2Desc =>
-      '入力（マイク/キーボード） -> 翻訳 -> 保存 の順で、自分だけの学習カードを作りましょう。';
-
-  @override
-  String get quickStartStep3Title => '3. モード活用';
-
-  @override
-  String get quickStartStep3Desc => 'チャットで練習したり、発音練習タブでテキストを見て直接発音しながら練習しましょう。';
-
-  @override
-  String get noteGuidance => 'より正確な翻訳のために詳細を入力する場所';
 }

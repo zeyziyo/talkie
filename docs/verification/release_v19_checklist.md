@@ -6,7 +6,7 @@
 ## 1. Global & Navigation (The Shell)
 앱의 뼈대와 전역 설정입니다.
 - [x] **App Launch**: 앱 실행 시 크래시 없이 `HomeScreen`에 진입하는가? ('v19' Schema Init Verified)
-- [x] **Drawer Menu**: 햄버거 메뉴 터치 시 Drawer가 열리고, 각 모드(`Input`, `Review`, `Practice`, `Chat`)로 정상 이동하는가? (Verified via Code Logic)
+- [x] **Drawer Menu**: 햄버거 메뉴 터치 시 Drawer가 열리고, 각 모드(`Input`, `Review`, `Practice`, `Scan`)로 정상 이동하는가? (Verified via Code Logic)
 - [x] **AppBar Actions**: 상단 우측 메뉴(`Help`, `Settings`, `Import`, `Library`)가 모두 정상 작동하는가?
     - [x] **Help**: `HelpDialog`가 뜨고 탭(Modes/JSON/Tour) 전환이 되는가? (Verified)
     - [x] **Settings**: `LanguageSettingsDialog`에서 Source/Target 언어 변경이 즉시 반영되는가? (Verified)
@@ -45,17 +45,6 @@
 - [x] **Feedback**: 정답/오답에 따른 오디오/시각적 피드백(Effect) 출력 확인. (Verified)
 - [x] **Stats Update**: 정답 처리 시 `review_count` 증가 및 `last_reviewed` 갱신 확인. (Verified)
 - [x] **Skip/Next**: '다음' 버튼 or 제스처로 다음 문제로 넘어가는가? (Verified)
-
-## 5. Mode 4: Chat & Roleplay (The Simulator)
-AI와의 자유 대화 또는 상황극입니다.
-- [x] **New Chat**: FAB(+) 버튼 -> 페르소나 선택 -> 새 채팅방 생성 확인. (Verified)
-- [x] **History List**: 채팅 목록이 최신순으로 정렬되고, 검색/날짜 필터가 작동하는가? (Verified)
-- [x] **Chat Interface**:
-    - [x] **Partner Mode**: '상대방 모드' 토글 시 UI 색상 변경 및 입력 언어 전환 확인. (Verified)
-    - [x] **Message Persistence**: 사용자/AI 메시지 및 번역 데이터가 DB에 정상 저장되는가? (Verified)
-    - [x] **AI Chat**: 입력 -> AI 응답 -> 응답 번역 -> 말풍선 표시. (Verified)
-    - [x] **Visibility Toggle**: 말풍선 옆 스위치로 번역문 숨기기/보이기 작동 확인. (Verified: Local State Map)
-    - [x] **End Chat**: 저장/종료 버튼 -> 제목/노트 입력 다이얼로그 -> 제목 자동 추천(AI) -> 저장 후 목록 이동. (Verified)
 
 ## 6. System & Stability (The Foundation)
 - [x] **Permissions**: 마이크/저장소 검사 및 권한 거부 시나리오. (Verified Implicit)

@@ -47,7 +47,6 @@
 ---
 
 ## 3. 대화 및 AI 기능 테이블 (AI & Dialogue)
-AI 페르소나와의 대화 내역 및 참여자 정보를 관리합니다.
 
 ### [dialogue_groups] - 대화 세션 그룹
 | 컬럼명 | 타입 | 설명 |
@@ -55,7 +54,6 @@ AI 페르소나와의 대화 내역 및 참여자 정보를 관리합니다.
 | `id` | TEXT (PK) | 대화 세션 UUID |
 | `user_id` | TEXT | 소유자 고유 ID (클라우드 식별용) |
 | `title` | TEXT | 대화 주제/제목 |
-| `persona` | TEXT | 적용된 AI 페르소나 이름 |
 | `location` | TEXT | 가상 상황/장소 설정 |
 | `note` | TEXT | 세션 관련 추가 기록 |
 | `created_at` | TEXT | 세션 생성 일시 |

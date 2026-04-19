@@ -9,48 +9,19 @@ class AppLocalizationsZh extends AppLocalizations {
   AppLocalizationsZh([String locale = 'zh']) : super(locale);
 
   @override
-  String get basicWords => '基础词库';
-
-  @override
-  String get inputLanguage => '输入语言';
-
-  @override
-  String get translationLanguage => '翻译语言';
-
-  @override
-  String get simplifiedGuidance => '将日常对话瞬间翻译成外语！Talkie会记录您的语言生活。';
-
-  @override
-  String get noDataForLanguage => '本地数据库中没有您所选语言的学习资料。请下载资料或选择其他语言。';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => '取消';
-
-  @override
   String get accuracy => '准确率';
-
-  @override
-  String get ttsMissing => '您的设备未安装此语言的语音引擎。';
-
-  @override
-  String get ttsInstallGuide => '请在安卓设置 > Google TTS 中安装相应的语言数据。';
 
   @override
   String get adLoading => '正在加载广告。请稍后重试。';
 
   @override
-  String get addNewSubject => '添加新标题';
+  String get add => '添加';
 
   @override
-  String get addParticipant => '添加参与者';
+  String get addNew => '新增';
+
+  @override
+  String get addNewSubject => '添加新标题';
 
   @override
   String get addTagHint => '添加标签...';
@@ -83,6 +54,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get basicWordRepository => '基础词库';
 
   @override
+  String get basicWords => '基础词库';
+
+  @override
+  String get cancel => '取消';
+
+  @override
   String get caseObject => '宾格';
 
   @override
@@ -98,61 +75,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get caseSubject => '主格';
 
   @override
-  String get chatAiChat => '聊天';
-
-  @override
-  String get chatAllConversations => '所有对话';
-
-  @override
-  String get chatChoosePersona => '选择角色';
-
-  @override
-  String get chatEndMessage => '是否结束此对话？';
-
-  @override
-  String get chatEndTitle => '结束并保存对话';
-
-  @override
-  String chatFailed(Object error) {
-    return '聊天失败: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return '对话摘录 ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => '对话历史';
-
-  @override
-  String get chatNew => '新对话';
-
-  @override
-  String get chatNewChat => '新对话';
-
-  @override
-  String get chatNoConversations => '暂无对话';
-
-  @override
-  String get chatSearchHint => '通过聊天标题搜索...';
-
-  @override
-  String get chatNoteSearchHint => '通过注释搜索...';
-
-  @override
-  String get chatSaveAndExit => '保存并退出';
-
-  @override
-  String get chatStartNewPrompt => '开始新对话进行练习！';
-
-  @override
-  String get chatTypeHint => '输入消息...';
-
-  @override
-  String get chatUntitled => '无标题对话';
-
-  @override
   String get checking => '正在检查...';
 
   @override
@@ -163,12 +85,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get confirmDelete => '确定要删除这条学习记录吗？';
-
-  @override
-  String get confirmDeleteConversation => '确定要删除此对话吗？\n删除后将无法恢复。';
-
-  @override
-  String get confirmDeleteParticipant => '确定要删除此参与者吗？';
 
   @override
   String get contextTagHint => '请写下情境以便以后区分';
@@ -206,28 +122,19 @@ class AppLocalizationsZh extends AppLocalizations {
   String get deleteRecord => '删除记录';
 
   @override
-  String get dialogueQuestDesc => '通过情景对话练习。选择并说出适当的答案。';
-
-  @override
-  String get dialogueQuestTitle => '对话任务';
-
-  @override
-  String get disambiguationPrompt => '您想翻译成哪个含义？';
-
-  @override
-  String get disambiguationTitle => '选择含义';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => '没有账户？';
-
-  @override
-  String get editParticipant => '编辑参与者';
 
   @override
   String get email => '电子邮件';
 
   @override
   String get emailAlreadyInUse => '此邮箱已被注册，请直接登录或找回密码。';
+
+  @override
+  String get enterNameHint => '输入名称';
 
   @override
   String get enterNewSubjectName => '输入新标题';
@@ -264,6 +171,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get errors => '错误:';
+
+  @override
+  String get extractedText => '识别到的文本';
 
   @override
   String get female => '女性';
@@ -323,12 +233,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get gender => '性别';
 
   @override
-  String get labelFilterMaterial => '资料集';
-
-  @override
-  String get labelFilterTag => '标签';
-
-  @override
   String get generalTags => '通用标签';
 
   @override
@@ -341,17 +245,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get googleContinue => '使用 Google 帐户继续';
 
   @override
-  String get helpDialogueImportDesc => '导入 JSON 文件中的完整对话集。';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc => '要在模式 3 中导入学习资料，请创建具有以下结构的 JSON 文件：';
-
-  @override
-  String get helpJsonTypeDialogue => '对话 (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => '句子 (Sentence)';
@@ -381,11 +275,10 @@ class AppLocalizationsZh extends AppLocalizations {
       '• 选择资料：选择学习包\n• 间隔：使用 [-] [+] 调整等待时间（3秒-60秒）\n• 开始/停止：控制跟读会话\n• 说话：聆听音频并跟读\n• 反馈：准确率评分（0-100）及颜色代码\n• 重试：如果未检测到声音，请使用重试按钮';
 
   @override
-  String get helpModeChatDesc => '与 AI 角色对话，练习实际会话。';
+  String get helpNote => '自由记录单词的释义、例句和使用场景等。';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI聊天：在底部标签栏的“聊天”菜单中与角色进行实际对话练习\n• 角色设置：自由指定对方的性别、姓名、语言代码\n• GPS情景剧：识别我当前的位置并推荐适合该地点的对话主题\n• 2种语言：AI的答案与翻译一起显示，最大限度地提高学习效果\n• 记录管理：过滤过去的对话历史记录并将对话中的特定消息保存为学习材料';
+  String get helpNotebook => '选择保存翻译结果的文件夹。';
 
   @override
   String get helpTabJson => 'JSON 格式';
@@ -400,6 +293,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get helpTabTour => '新手引导';
 
   @override
+  String get helpTag => '输入用于日后分类或搜索的关键词。';
+
+  @override
   String get helpTitle => '帮助与指南';
 
   @override
@@ -407,6 +303,15 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get hide => '隐藏';
+
+  @override
+  String get hintNoteExample => '例如：情景说明，同音异义词等';
+
+  @override
+  String get hintTagExample => '例如：商务，旅行...';
+
+  @override
+  String get homeTab => '翻译';
 
   @override
   String importAdded(int count) {
@@ -418,23 +323,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get importDuplicateTitleError => '已存在相同标题的资料。请更改标题后重试。';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -450,6 +338,11 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '已导入 $files 个文件，$entries 个条目。';
+  }
+
+  @override
   String get importJsonFile => '导入 JSON 文件';
 
   @override
@@ -461,12 +354,30 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => '单个JSON文件';
+
+  @override
+  String get importSourceFolder => '文件夹 (按语言划分的库结构)';
+
+  @override
+  String get importSourceTitle => '选择导入来源';
+
+  @override
+  String get importSourceZip => 'ZIP文件 (压缩文件夹)';
+
+  @override
   String importTotal(int count) {
     return '总计: $count 项';
   }
 
   @override
   String get importing => '正在导入...';
+
+  @override
+  String get inputContent => '输入内容';
+
+  @override
+  String get inputLanguage => '输入语言';
 
   @override
   String get inputModeTitle => '输入';
@@ -483,19 +394,22 @@ class AppLocalizationsZh extends AppLocalizations {
   String get kakaoContinue => '使用Kakao继续';
 
   @override
-  String get labelLangCode => '语言代码 (例如：en-US, ko-KR)';
+  String get labelDetails => '详细设置';
 
   @override
-  String get labelName => '名称';
+  String get labelFilterMaterial => '资料集';
+
+  @override
+  String get labelFilterTag => '标签';
+
+  @override
+  String get labelLangCode => '语言代码 (例如：en-US, ko-KR)';
 
   @override
   String get labelNote => '注释';
 
   @override
   String get labelPOS => '词性';
-
-  @override
-  String get labelRole => '角色';
 
   @override
   String get labelSentence => '句子';
@@ -546,9 +460,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get listening => '正在聆听...';
 
   @override
-  String get loadingParticipants => '正在加载参与者...';
-
-  @override
   String get location => '位置';
 
   @override
@@ -567,9 +478,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get male => '男性';
 
   @override
-  String get manageParticipants => '管理参与者';
-
-  @override
   String get manual => '手动输入';
 
   @override
@@ -577,9 +485,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get materialInfo => '资料信息';
-
-  @override
-  String get me => '我';
 
   @override
   String get menuDeviceImport => '从设备导入资料';
@@ -647,25 +552,19 @@ class AppLocalizationsZh extends AppLocalizations {
   String get neutral => '中性';
 
   @override
+  String get newNotebookTitle => '新笔记本名称';
+
+  @override
   String get newSubjectName => '新词汇/句子集标题';
 
   @override
   String get next => '下一步';
 
   @override
-  String get noDialogueHistory => '没有对话历史。';
-
-  @override
-  String get noInternetWarningMic => '没有网络连接。离线状态下语音识别可能无法使用。';
-
-  @override
-  String get noInternetWarningTranslate => '没有网络连接。离线状态下翻译功能无法使用。请使用复习模式。';
+  String get noDataForLanguage => '本地数据库中没有您所选语言的学习资料。请下载资料或选择其他语言。';
 
   @override
   String get noMaterialsInCategory => '此类别中没有资料。';
-
-  @override
-  String get noParticipantsFound => '未找到已注册的参与者。';
 
   @override
   String get noRecords => '所选语言没有学习记录';
@@ -686,6 +585,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get notSelected => '- 未选择 -';
 
   @override
+  String get noteGuidance => '输入额外详细信息以获得更准确翻译的地方';
+
+  @override
   String get onlineLibraryCheckInternet => '请检查网络连接或稍后重试。';
 
   @override
@@ -695,16 +597,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get onlineLibraryNoMaterials => '没有资料。';
 
   @override
-  String get participantDeleted => '参与者已删除。';
-
-  @override
-  String get participantRename => '重命名参与者';
-
-  @override
-  String get partner => '伙伴';
-
-  @override
-  String get partnerMode => '伙伴模式';
+  String get openSettings => '打开设置';
 
   @override
   String get password => '密码';
@@ -716,13 +609,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get perfect => '完美！';
 
   @override
-  String get personaFriend => '当地朋友';
-
-  @override
-  String get personaGuide => '旅行导游';
-
-  @override
-  String get personaTeacher => '英语老师';
+  String get pickGallery => '从相册选择';
 
   @override
   String get playAgain => '再玩一次';
@@ -742,6 +629,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get posAdverb => '副词';
 
   @override
+  String get posArticle => '冠词';
+
+  @override
   String get posConjunction => '连词';
 
   @override
@@ -749,6 +639,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get posNoun => '名词';
+
+  @override
+  String get posParticle => '助词';
 
   @override
   String get posPreposition => '介词/助词';
@@ -766,9 +659,30 @@ class AppLocalizationsZh extends AppLocalizations {
   String get practiceWordsOnly => '仅练习单词';
 
   @override
+  String get processing => '处理中...';
+
+  @override
   String progress(int current, int total) {
     return '进度: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc => '请先在“菜单 > 语言设置”中指定你的语言和学习语言。';
+
+  @override
+  String get quickStartStep1Title => '1. 设置语言';
+
+  @override
+  String get quickStartStep2Desc => '按照“输入（麦克风/键盘）-> 翻译 -> 保存”的顺序创建你自己的学习卡。';
+
+  @override
+  String get quickStartStep2Title => '2. 基本流程';
+
+  @override
+  String get quickStartStep3Desc => '通过聊天进行练习，并在发音练习标签中查看文本并直接发音练习。';
+
+  @override
+  String get quickStartStep3Title => '3. 模式活用';
 
   @override
   String recentNItems(int count) {
@@ -793,6 +707,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get refresh => '刷新';
 
   @override
+  String get requestTranslation => '请求翻译';
+
+  @override
   String get reset => '重置';
 
   @override
@@ -813,16 +730,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get reviewModeTitle => '复习';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => '第三方';
-
-  @override
-  String get roleUser => '用户';
-
-  @override
   String get save => '保存';
+
+  @override
+  String get saveAsSentence => '保存为句子';
+
+  @override
+  String get saveAsWord => '保存为单词';
 
   @override
   String get saveData => '保存数据';
@@ -833,6 +747,9 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => '保存到扫描历史';
+
+  @override
   String get saveTranslationsFromSearch => '在搜索模式下保存翻译';
 
   @override
@@ -840,6 +757,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get saving => '正在保存...';
+
+  @override
+  String get scanInstructions => '选择要扫描的图像';
+
+  @override
+  String get scanLabel => '扫描';
 
   @override
   String score(String score) {
@@ -886,16 +809,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get selectPOS => '选择词性';
 
   @override
-  String get selectParticipants => '选择参与者';
-
-  @override
-  String get selectSentenceType => '选择句子类型';
-
-  @override
   String get selectStudyMaterial => '选择学习资料';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => '句子';
@@ -904,43 +818,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get signUp => '注册';
 
   @override
-  String get similarTextFound => '发现相似文本';
-
-  @override
-  String get skip => '跳过';
-
-  @override
-  String get source => '来源:';
-
-  @override
-  String get sourceLanguage => '源语言';
+  String get simplifiedGuidance => '将日常对话瞬间翻译成外语！Talkie会记录您的语言生活。';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => '现在说话！';
-
-  @override
-  String get speaker => '说话者';
-
-  @override
-  String get speakerSelect => '选择发话者';
-
-  @override
-  String get speakingPractice => '口语练习';
-
-  @override
-  String get startChat => '开始对话';
-
-  @override
-  String get startPractice => '开始练习';
-
-  @override
   String get startTutorial => '开始教程';
-
-  @override
-  String get startWarning => '警告';
 
   @override
   String get startsWith => '起始字符';
@@ -949,28 +833,22 @@ class AppLocalizationsZh extends AppLocalizations {
   String get statusCheckEmail => '请检查您的邮箱，完成验证。';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return '正在下载: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return '导入失败: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name 导入完成';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => '登录已取消。';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return '登录失败: $error';
   }
 
@@ -981,23 +859,23 @@ class AppLocalizationsZh extends AppLocalizations {
   String get statusLogoutSuccess => '已登出。';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return '注册失败: $error';
+  String statusRequestFailed(String error) {
+    return '翻译请求失败: $error';
   }
 
   @override
-  String get statusSigningUp => '正在注册...';
+  String get statusRequestSuccess => '翻译请求已完成。';
 
   @override
   String get stopPractice => '停止练习';
 
   @override
-  String get studyComplete => '已学习';
+  String studyLangNotFoundDesc(String targetLang) {
+    return '您选择的材料当前不支持您设置的学习语言（$targetLang），因此无法保存到本地。是否请求翻译？';
+  }
 
   @override
-  String studyRecords(int count) {
-    return '学习记录 ($count)';
-  }
+  String get studyLangNotFoundTitle => '学习语言不支持';
 
   @override
   String get styleFormal => '敬语';
@@ -1012,22 +890,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get styleSlang => '俚语/俗语';
 
   @override
-  String get subject => '主题:';
-
-  @override
   String get swapLanguages => '切换语言';
 
   @override
-  String get switchToAi => '切换到 AI 模式';
-
-  @override
-  String get switchToPartner => '切换到伙伴模式';
-
-  @override
   String get syncingData => '正在同步数据...';
-
-  @override
-  String get tabConversation => '对话';
 
   @override
   String tabReview(int count) {
@@ -1090,6 +956,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tooltipSearch => '搜索';
 
   @override
+  String get tooltipSettingsConfirm => '确认设置';
+
+  @override
   String get tooltipSpeaking => '口语';
 
   @override
@@ -1102,6 +971,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get translate => '翻译';
+
+  @override
+  String get translateNow => '立即翻译';
 
   @override
   String get translating => '正在翻译...';
@@ -1118,6 +990,9 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => '翻译语言';
+
+  @override
   String get translationLimitExceeded => '超出翻译限额';
 
   @override
@@ -1130,16 +1005,22 @@ class AppLocalizationsZh extends AppLocalizations {
   String get translationRefilled => '翻译次数已补充 5 次！';
 
   @override
+  String get translationResult => '翻译结果';
+
+  @override
   String get translationResultHint => '翻译结果 - 可修改';
 
   @override
   String get tryAgain => '再试一次';
 
   @override
-  String get tutorialAiChatDesc => '在这里与 AI 角色练习实际对话。';
+  String get ttsInstallGuide => '请在安卓设置 > Google TTS 中安装相应的语言数据。';
 
   @override
-  String get tutorialAiChatTitle => 'AI 聊天';
+  String get ttsMissing => '您的设备未安装此语言的语音引擎。';
+
+  @override
+  String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
 
   @override
   String get tutorialContextDesc => '添加上下文（例如：早上）以区分相似的句子。';
@@ -1242,7 +1123,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get typeExclamation => '感叹句';
 
   @override
+  String get typeIdiom => '惯用语';
+
+  @override
   String get typeImperative => '祈使句';
+
+  @override
+  String get typeProverb => '谚语/格言';
 
   @override
   String get typeQuestion => '疑问句';
@@ -1257,6 +1144,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get useExistingText => '使用现有';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => '查看在线指南';
 
   @override
@@ -1264,6 +1156,16 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => '观看广告并补充 (+5次)';
+
+  @override
+  String get welcomeButton => '开始使用';
+
+  @override
+  String get welcomeDesc =>
+      '欢迎来到Talkie！我们以100%的完整性支持全球80多种语言，并通过全新的优质3D设计和优化的性能，为您带来完美的学习体验。';
+
+  @override
+  String get welcomeTitle => '欢迎使用 Talkie!';
 
   @override
   String get word => '单词';
@@ -1279,107 +1181,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get yourPronunciation => '你的发音';
-
-  @override
-  String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
-
-  @override
-  String get homeTab => '翻译';
-
-  @override
-  String get welcomeTitle => '欢迎使用 Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      '欢迎来到Talkie！我们以100%的完整性支持全球80多种语言，并通过全新的优质3D设计和优化的性能，为您带来完美的学习体验。';
-
-  @override
-  String get welcomeButton => '开始使用';
-
-  @override
-  String get labelDetails => '详细设置';
-
-  @override
-  String get translationResult => '翻译结果';
-
-  @override
-  String get inputContent => '输入内容';
-
-  @override
-  String get translateNow => '立即翻译';
-
-  @override
-  String get tooltipSettingsConfirm => '确认设置';
-
-  @override
-  String get hintNoteExample => '例如：情景说明，同音异义词等';
-
-  @override
-  String get hintTagExample => '例如：商务，旅行...';
-
-  @override
-  String get addNew => '新增';
-
-  @override
-  String get newNotebookTitle => '新笔记本名称';
-
-  @override
-  String get enterNameHint => '输入名称';
-
-  @override
-  String get add => '添加';
-
-  @override
-  String get openSettings => '打开设置';
-
-  @override
-  String get helpNotebook => '选择保存翻译结果的文件夹。';
-
-  @override
-  String get helpNote => '自由记录单词的释义、例句和使用场景等。';
-
-  @override
-  String get helpTag => '输入用于日后分类或搜索的关键词。';
-
-  @override
-  String get requestTranslation => '请求翻译';
-
-  @override
-  String get statusRequestSuccess => '翻译请求已完成。';
-
-  @override
-  String statusRequestFailed(String error) {
-    return '翻译请求失败: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => '学习语言不支持';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return '您选择的材料当前不支持您设置的学习语言（$targetLang），因此无法保存到本地。是否请求翻译？';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. 设置语言';
-
-  @override
-  String get quickStartStep1Desc => '请先在“菜单 > 语言设置”中指定你的语言和学习语言。';
-
-  @override
-  String get quickStartStep2Title => '2. 基本流程';
-
-  @override
-  String get quickStartStep2Desc => '按照“输入（麦克风/键盘）-> 翻译 -> 保存”的顺序创建你自己的学习卡。';
-
-  @override
-  String get quickStartStep3Title => '3. 模式活用';
-
-  @override
-  String get quickStartStep3Desc => '通过聊天进行练习，并在发音练习标签中查看文本并直接发音练习。';
-
-  @override
-  String get noteGuidance => '输入额外详细信息以获得更准确翻译的地方';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -1387,48 +1188,19 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   AppLocalizationsZhCn() : super('zh_CN');
 
   @override
-  String get basicWords => '基础词库';
-
-  @override
-  String get inputLanguage => '输入语言';
-
-  @override
-  String get translationLanguage => '翻译语言';
-
-  @override
-  String get simplifiedGuidance => '将日常对话瞬间转换为外语！Talkie会记录您的语言生活。';
-
-  @override
-  String get noDataForLanguage => '本地数据库中没有您所选语言的学习资料。请下载资料或选择其他语言。';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => '取消';
-
-  @override
   String get accuracy => '准确率';
-
-  @override
-  String get ttsMissing => '您的设备上未安装此语言的语音引擎。';
-
-  @override
-  String get ttsInstallGuide => '请在安卓设置 > Google 文字转语音中安装相应的语言数据。';
 
   @override
   String get adLoading => '正在加载广告。请稍后重试。';
 
   @override
-  String get addNewSubject => '添加新标题';
+  String get add => '添加';
 
   @override
-  String get addParticipant => '添加参与者';
+  String get addNew => '新增';
+
+  @override
+  String get addNewSubject => '添加新标题';
 
   @override
   String get addTagHint => '添加标签...';
@@ -1461,6 +1233,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get basicWordRepository => '基础词汇库';
 
   @override
+  String get basicWords => '基础词库';
+
+  @override
+  String get cancel => '取消';
+
+  @override
   String get caseObject => '宾格';
 
   @override
@@ -1476,61 +1254,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get caseSubject => '主格';
 
   @override
-  String get chatAiChat => '聊天';
-
-  @override
-  String get chatAllConversations => '所有对话';
-
-  @override
-  String get chatChoosePersona => '选择角色';
-
-  @override
-  String get chatEndMessage => '要结束对话吗？';
-
-  @override
-  String get chatEndTitle => '结束并保存对话';
-
-  @override
-  String chatFailed(Object error) {
-    return '聊天失败: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return '对话摘录 ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => '对话记录';
-
-  @override
-  String get chatNew => '新对话';
-
-  @override
-  String get chatNewChat => '新对话';
-
-  @override
-  String get chatNoConversations => '还没有对话';
-
-  @override
-  String get chatSearchHint => '通过对话标题搜索...';
-
-  @override
-  String get chatNoteSearchHint => '通过注释搜索...';
-
-  @override
-  String get chatSaveAndExit => '保存后退出';
-
-  @override
-  String get chatStartNewPrompt => '开始新的对话练习吧！';
-
-  @override
-  String get chatTypeHint => '输入消息...';
-
-  @override
-  String get chatUntitled => '无标题对话';
-
-  @override
   String get checking => '正在检查...';
 
   @override
@@ -1541,12 +1264,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get confirmDelete => '确定要删除这条学习记录吗？';
-
-  @override
-  String get confirmDeleteConversation => '确定要删除此对话吗？\n删除后将无法恢复。';
-
-  @override
-  String get confirmDeleteParticipant => '确定要删除此参与者吗？';
 
   @override
   String get contextTagHint => '为了方便以后区分，请描述情景';
@@ -1584,28 +1301,19 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get deleteRecord => '删除记录';
 
   @override
-  String get dialogueQuestDesc => '通过情景对话进行练习。选择合适的答案并说出来。';
-
-  @override
-  String get dialogueQuestTitle => '对话任务';
-
-  @override
-  String get disambiguationPrompt => '您想翻译成哪个意思？';
-
-  @override
-  String get disambiguationTitle => '选择释义';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => '没有账号？';
-
-  @override
-  String get editParticipant => '编辑参与者';
 
   @override
   String get email => '电子邮件';
 
   @override
   String get emailAlreadyInUse => '此邮箱已被注册，请直接登录或找回密码。';
+
+  @override
+  String get enterNameHint => '请输入名称';
 
   @override
   String get enterNewSubjectName => '输入新标题';
@@ -1642,6 +1350,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get errors => '错误:';
+
+  @override
+  String get extractedText => '识别的文本';
 
   @override
   String get female => '女性';
@@ -1701,12 +1412,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get gender => '性别';
 
   @override
-  String get labelFilterMaterial => '资料集';
-
-  @override
-  String get labelFilterTag => '标签';
-
-  @override
   String get generalTags => '通用标签';
 
   @override
@@ -1719,17 +1424,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get googleContinue => '使用 Google 账号继续';
 
   @override
-  String get helpDialogueImportDesc => '通过 JSON 文件导入整个对话集。';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc => '要在模式 3 中导入学习资料，请创建具有以下结构的 JSON 文件：';
-
-  @override
-  String get helpJsonTypeDialogue => '对话（Dialogue）';
 
   @override
   String get helpJsonTypeSentence => '句子（Sentence）';
@@ -1759,11 +1454,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       '• 选择资料：选择学习包\n• 间隔：使用 [-] [+] 调整等待时间（3秒-60秒）\n• 开始/停止：控制跟读会话\n• 说话：聆听音频并跟读\n• 反馈：准确率评分（0-100）及颜色代码\n• 重试：如果未检测到声音，请使用重试按钮';
 
   @override
-  String get helpModeChatDesc => '与AI角色对话，练习实际会话。';
+  String get helpNote => '自由记录单词的含义、例句、情景等。';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI聊天：在底部选项卡栏的“聊天”菜单中，与角色进行实际对话练习\n• 角色设置：自由指定对方的性别、姓名、语言代码\n• GPS情景剧：识别我当前的位置并推荐适合该地点的对话主题\n• 2种语言：AI的回复与翻译一起显示，从而最大限度地提高学习效果\n• 记录管理：过滤过去的对话历史记录，并将对话中的特定消息保存为学习资料';
+  String get helpNotebook => '选择用于保存翻译结果的文件夹。';
 
   @override
   String get helpTabJson => 'JSON 格式';
@@ -1778,6 +1472,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get helpTabTour => '新手引导';
 
   @override
+  String get helpTag => '输入用于日后分类或搜索的关键词。';
+
+  @override
   String get helpTitle => '帮助与指南';
 
   @override
@@ -1786,6 +1483,15 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get hide => '隐藏';
+
+  @override
+  String get hintNoteExample => '例：情景说明、同音异义词等';
+
+  @override
+  String get hintTagExample => '例：商务、旅行...';
+
+  @override
+  String get homeTab => '翻译';
 
   @override
   String importAdded(int count) {
@@ -1812,6 +1518,11 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '已导入 $files 个文件，$entries 个条目。';
+  }
+
+  @override
   String get importJsonFile => '导入 JSON 文件';
 
   @override
@@ -1823,12 +1534,30 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
+  String get importSourceFile => '单个 JSON 文件';
+
+  @override
+  String get importSourceFolder => '文件夹（按语言库结构）';
+
+  @override
+  String get importSourceTitle => '选择导入源';
+
+  @override
+  String get importSourceZip => 'ZIP 文件（压缩文件夹）';
+
+  @override
   String importTotal(int count) {
     return '总计: $count 项';
   }
 
   @override
   String get importing => '正在导入...';
+
+  @override
+  String get inputContent => '输入内容';
+
+  @override
+  String get inputLanguage => '输入语言';
 
   @override
   String get inputModeTitle => '输入';
@@ -1845,19 +1574,22 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get kakaoContinue => '使用Kakao继续';
 
   @override
-  String get labelLangCode => '语言代码 (例: en-US, ko-KR)';
+  String get labelDetails => '详细设置';
 
   @override
-  String get labelName => '名称';
+  String get labelFilterMaterial => '资料集';
+
+  @override
+  String get labelFilterTag => '标签';
+
+  @override
+  String get labelLangCode => '语言代码 (例: en-US, ko-KR)';
 
   @override
   String get labelNote => '注释';
 
   @override
   String get labelPOS => '词性';
-
-  @override
-  String get labelRole => '角色';
 
   @override
   String get labelSentence => '句子';
@@ -1908,9 +1640,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get listening => '正在聆听...';
 
   @override
-  String get loadingParticipants => '正在加载参与者...';
-
-  @override
   String get location => '位置';
 
   @override
@@ -1929,9 +1658,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get male => '男性';
 
   @override
-  String get manageParticipants => '管理参与者';
-
-  @override
   String get manual => '手动输入';
 
   @override
@@ -1939,9 +1665,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get materialInfo => '资料信息';
-
-  @override
-  String get me => '我';
 
   @override
   String get menuDeviceImport => '从设备导入资料';
@@ -2009,25 +1732,19 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get neutral => '中性';
 
   @override
+  String get newNotebookTitle => '新笔记本名称';
+
+  @override
   String get newSubjectName => '新建词汇本/句子集标题';
 
   @override
   String get next => '下一个';
 
   @override
-  String get noDialogueHistory => '没有对话历史记录。';
-
-  @override
-  String get noInternetWarningMic => '没有网络连接。离线状态下语音识别可能无法使用。';
-
-  @override
-  String get noInternetWarningTranslate => '没有网络连接。离线状态下翻译功能无法使用。请使用复习模式。';
+  String get noDataForLanguage => '本地数据库中没有您所选语言的学习资料。请下载资料或选择其他语言。';
 
   @override
   String get noMaterialsInCategory => '此类别下没有资料。';
-
-  @override
-  String get noParticipantsFound => '没有已注册的参与者。';
 
   @override
   String get noRecords => '所选语言没有学习记录';
@@ -2048,6 +1765,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get notSelected => '- 未选择 -';
 
   @override
+  String get noteGuidance => '输入额外详细信息以获得更准确翻译的地方';
+
+  @override
   String get onlineLibraryCheckInternet => '请检查网络连接，或稍后重试。';
 
   @override
@@ -2057,16 +1777,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get onlineLibraryNoMaterials => '没有资料。';
 
   @override
-  String get participantDeleted => '参与者已删除。';
-
-  @override
-  String get participantRename => '重命名参与者';
-
-  @override
-  String get partner => '伙伴';
-
-  @override
-  String get partnerMode => '伙伴模式';
+  String get openSettings => '打开设置';
 
   @override
   String get password => '密码';
@@ -2078,13 +1789,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get perfect => '完美！';
 
   @override
-  String get personaFriend => '当地朋友';
-
-  @override
-  String get personaGuide => '旅行指南';
-
-  @override
-  String get personaTeacher => '英语老师';
+  String get pickGallery => '从相册选择';
 
   @override
   String get playAgain => '再玩一次';
@@ -2104,6 +1809,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get posAdverb => '副词';
 
   @override
+  String get posArticle => '冠词';
+
+  @override
   String get posConjunction => '连词';
 
   @override
@@ -2111,6 +1819,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get posNoun => '名词';
+
+  @override
+  String get posParticle => '助词';
 
   @override
   String get posPreposition => '介词/助词';
@@ -2128,9 +1839,30 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get practiceWordsOnly => '仅练习单词';
 
   @override
+  String get processing => '处理中...';
+
+  @override
   String progress(int current, int total) {
     return '进度: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc => '请在“菜单 > 语言设置”中首先指定您的母语和学习语言。';
+
+  @override
+  String get quickStartStep1Title => '1. 设置语言';
+
+  @override
+  String get quickStartStep2Desc => '按照“输入（麦克风/键盘）-> 翻译 -> 保存”的顺序创建您自己的学习卡片。';
+
+  @override
+  String get quickStartStep2Title => '2. 基本流程';
+
+  @override
+  String get quickStartStep3Desc => '通过聊天进行练习，并在发音练习选项卡中查看文本并直接发音练习。';
+
+  @override
+  String get quickStartStep3Title => '3. 模式活用';
 
   @override
   String recentNItems(int count) {
@@ -2155,6 +1887,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get refresh => '刷新';
 
   @override
+  String get requestTranslation => '请求翻译';
+
+  @override
   String get reset => '重置';
 
   @override
@@ -2175,16 +1910,13 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get reviewModeTitle => '复习';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => '第三方';
-
-  @override
-  String get roleUser => '用户';
-
-  @override
   String get save => '保存';
+
+  @override
+  String get saveAsSentence => '保存为句子';
+
+  @override
+  String get saveAsWord => '保存为单词';
 
   @override
   String get saveData => '保存数据';
@@ -2195,6 +1927,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
+  String get saveToHistory => '保存到扫描历史记录';
+
+  @override
   String get saveTranslationsFromSearch => '在搜索模式下保存翻译';
 
   @override
@@ -2202,6 +1937,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get saving => '正在保存...';
+
+  @override
+  String get scanInstructions => '选择要扫描的图像';
+
+  @override
+  String get scanLabel => '扫描';
 
   @override
   String score(String score) {
@@ -2248,16 +1989,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get selectPOS => '选择词性';
 
   @override
-  String get selectParticipants => '选择参与者';
-
-  @override
-  String get selectSentenceType => '选择句子类型';
-
-  @override
   String get selectStudyMaterial => '选择学习资料';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => '句子';
@@ -2266,43 +1998,13 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get signUp => '注册';
 
   @override
-  String get similarTextFound => '发现相似文本';
-
-  @override
-  String get skip => '跳过';
-
-  @override
-  String get source => '来源:';
-
-  @override
-  String get sourceLanguage => '源语言';
+  String get simplifiedGuidance => '将日常对话瞬间转换为外语！Talkie会记录您的语言生活。';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => '现在说话！';
-
-  @override
-  String get speaker => '说话者';
-
-  @override
-  String get speakerSelect => '选择发话人';
-
-  @override
-  String get speakingPractice => '口语练习';
-
-  @override
-  String get startChat => '开始对话';
-
-  @override
-  String get startPractice => '开始练习';
-
-  @override
   String get startTutorial => '开始教程';
-
-  @override
-  String get startWarning => '警告';
 
   @override
   String get startsWith => '起始字符';
@@ -2311,28 +2013,22 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get statusCheckEmail => '请验证您的电子邮件以完成身份验证。';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return '下载中: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return '导入失败: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name 导入完成';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => '登录已取消。';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return '登录失败: $error';
   }
 
@@ -2343,23 +2039,23 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get statusLogoutSuccess => '已退出登录。';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return '注册失败: $error';
+  String statusRequestFailed(String error) {
+    return '翻译请求失败: $error';
   }
 
   @override
-  String get statusSigningUp => '注册中...';
+  String get statusRequestSuccess => '翻译请求已完成。';
 
   @override
   String get stopPractice => '停止练习';
 
   @override
-  String get studyComplete => '已学习';
+  String studyLangNotFoundDesc(String targetLang) {
+    return '您选择的资料目前不支持您设置的学习语言（$targetLang），因此无法保存到本地。是否请求翻译？';
+  }
 
   @override
-  String studyRecords(int count) {
-    return '学习记录 ($count)';
-  }
+  String get studyLangNotFoundTitle => '不支持学习语言';
 
   @override
   String get styleFormal => '敬语';
@@ -2374,22 +2070,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get styleSlang => '俚语/俗语';
 
   @override
-  String get subject => '主题:';
-
-  @override
   String get swapLanguages => '切换语言';
 
   @override
-  String get switchToAi => '切换到 AI 模式';
-
-  @override
-  String get switchToPartner => '切换到伙伴模式';
-
-  @override
   String get syncingData => '数据同步中...';
-
-  @override
-  String get tabConversation => '对话';
 
   @override
   String tabReview(int count) {
@@ -2452,6 +2136,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tooltipSearch => '搜索';
 
   @override
+  String get tooltipSettingsConfirm => '确认设置';
+
+  @override
   String get tooltipSpeaking => '口语';
 
   @override
@@ -2464,6 +2151,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get translate => '翻译';
+
+  @override
+  String get translateNow => '立即翻译';
 
   @override
   String get translating => '正在翻译...';
@@ -2480,6 +2170,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
+  String get translationLanguage => '翻译语言';
+
+  @override
   String get translationLimitExceeded => '超出翻译限额';
 
   @override
@@ -2492,16 +2185,22 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get translationRefilled => '翻译次数已补充 5 次！';
 
   @override
+  String get translationResult => '翻译结果';
+
+  @override
   String get translationResultHint => '翻译结果 - 可修改';
 
   @override
   String get tryAgain => '再试一次';
 
   @override
-  String get tutorialAiChatDesc => '与 AI 角色扮演进行真实对话练习。';
+  String get ttsInstallGuide => '请在安卓设置 > Google 文字转语音中安装相应的语言数据。';
 
   @override
-  String get tutorialAiChatTitle => 'AI 聊天';
+  String get ttsMissing => '您的设备上未安装此语言的语音引擎。';
+
+  @override
+  String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
 
   @override
   String get tutorialContextDesc => '添加上下文（例如：早上）以区分相似的句子。';
@@ -2604,7 +2303,13 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get typeExclamation => '感叹句';
 
   @override
+  String get typeIdiom => '成语';
+
+  @override
   String get typeImperative => '祈使句';
+
+  @override
+  String get typeProverb => '谚语/格言';
 
   @override
   String get typeQuestion => '疑问句';
@@ -2619,6 +2324,11 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get useExistingText => '使用现有';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => '查看在线指南';
 
   @override
@@ -2626,6 +2336,16 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get watchAdAndRefill => '观看广告并补充 (+5 次)';
+
+  @override
+  String get welcomeButton => '开始使用';
+
+  @override
+  String get welcomeDesc =>
+      '欢迎来到Talkie！我们以100%的完整性支持全球80多种语言，并通过全新的高级3D设计和优化的性能，为您提供完美的学习体验。';
+
+  @override
+  String get welcomeTitle => '欢迎使用 Talkie!';
 
   @override
   String get word => '单词';
@@ -2641,107 +2361,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get yourPronunciation => '你的发音';
-
-  @override
-  String get ttsUnsupportedNatively => '此设备的默认设置不支持此语言的语音输出。';
-
-  @override
-  String get homeTab => '翻译';
-
-  @override
-  String get welcomeTitle => '欢迎使用 Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      '欢迎来到Talkie！我们以100%的完整性支持全球80多种语言，并通过全新的高级3D设计和优化的性能，为您提供完美的学习体验。';
-
-  @override
-  String get welcomeButton => '开始使用';
-
-  @override
-  String get labelDetails => '详细设置';
-
-  @override
-  String get translationResult => '翻译结果';
-
-  @override
-  String get inputContent => '输入内容';
-
-  @override
-  String get translateNow => '立即翻译';
-
-  @override
-  String get tooltipSettingsConfirm => '确认设置';
-
-  @override
-  String get hintNoteExample => '例：情景说明、同音异义词等';
-
-  @override
-  String get hintTagExample => '例：商务、旅行...';
-
-  @override
-  String get addNew => '新增';
-
-  @override
-  String get newNotebookTitle => '新笔记本名称';
-
-  @override
-  String get enterNameHint => '请输入名称';
-
-  @override
-  String get add => '添加';
-
-  @override
-  String get openSettings => '打开设置';
-
-  @override
-  String get helpNotebook => '选择用于保存翻译结果的文件夹。';
-
-  @override
-  String get helpNote => '自由记录单词的含义、例句、情景等。';
-
-  @override
-  String get helpTag => '输入用于日后分类或搜索的关键词。';
-
-  @override
-  String get requestTranslation => '请求翻译';
-
-  @override
-  String get statusRequestSuccess => '翻译请求已完成。';
-
-  @override
-  String statusRequestFailed(String error) {
-    return '翻译请求失败: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => '不支持学习语言';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return '您选择的资料目前不支持您设置的学习语言（$targetLang），因此无法保存到本地。是否请求翻译？';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. 设置语言';
-
-  @override
-  String get quickStartStep1Desc => '请在“菜单 > 语言设置”中首先指定您的母语和学习语言。';
-
-  @override
-  String get quickStartStep2Title => '2. 基本流程';
-
-  @override
-  String get quickStartStep2Desc => '按照“输入（麦克风/键盘）-> 翻译 -> 保存”的顺序创建您自己的学习卡片。';
-
-  @override
-  String get quickStartStep3Title => '3. 模式活用';
-
-  @override
-  String get quickStartStep3Desc => '通过聊天进行练习，并在发音练习选项卡中查看文本并直接发音练习。';
-
-  @override
-  String get noteGuidance => '输入额外详细信息以获得更准确翻译的地方';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -2749,48 +2368,19 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   AppLocalizationsZhTw() : super('zh_TW');
 
   @override
-  String get basicWords => '基礎詞庫';
-
-  @override
-  String get inputLanguage => '輸入語言';
-
-  @override
-  String get translationLanguage => '翻譯語言';
-
-  @override
-  String get simplifiedGuidance => '將日常對話瞬間翻譯成外語！ Talkie 將記錄您的語言生活。';
-
-  @override
-  String get noDataForLanguage => '您選擇的語言沒有學習資料在本機資料庫中。請下載資料或選擇其他語言。';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => '取消';
-
-  @override
   String get accuracy => '準確度';
-
-  @override
-  String get ttsMissing => '您的裝置未安裝此語言的語音引擎。';
-
-  @override
-  String get ttsInstallGuide => '請在「Android 設定」>「Google 文字轉語音」中安裝相應的語言資料。';
 
   @override
   String get adLoading => '正在載入廣告。請稍後重試。';
 
   @override
-  String get addNewSubject => '新增標題';
+  String get add => '新增';
 
   @override
-  String get addParticipant => '新增參與者';
+  String get addNew => '新增';
+
+  @override
+  String get addNewSubject => '新增標題';
 
   @override
   String get addTagHint => '新增標籤...';
@@ -2823,6 +2413,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get basicWordRepository => '基礎詞彙庫';
 
   @override
+  String get basicWords => '基礎詞庫';
+
+  @override
+  String get cancel => '取消';
+
+  @override
   String get caseObject => '受格';
 
   @override
@@ -2838,61 +2434,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get caseSubject => '主格';
 
   @override
-  String get chatAiChat => '聊天';
-
-  @override
-  String get chatAllConversations => '所有對話';
-
-  @override
-  String get chatChoosePersona => '選擇角色';
-
-  @override
-  String get chatEndMessage => '確定要結束對話嗎？';
-
-  @override
-  String get chatEndTitle => '結束並儲存對話';
-
-  @override
-  String chatFailed(Object error) {
-    return '聊天失敗：$error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return '從對話摘錄 ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => '對話記錄';
-
-  @override
-  String get chatNew => '新對話';
-
-  @override
-  String get chatNewChat => '新對話';
-
-  @override
-  String get chatNoConversations => '還沒有對話';
-
-  @override
-  String get chatSearchHint => '以聊天室標題搜尋...';
-
-  @override
-  String get chatNoteSearchHint => '用註解搜尋...';
-
-  @override
-  String get chatSaveAndExit => '儲存後結束';
-
-  @override
-  String get chatStartNewPrompt => '開始新的對話練習吧！';
-
-  @override
-  String get chatTypeHint => '輸入訊息...';
-
-  @override
-  String get chatUntitled => '未命名對話';
-
-  @override
   String get checking => '正在檢查...';
 
   @override
@@ -2903,12 +2444,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get confirmDelete => '確定要刪除這條學習記錄嗎？';
-
-  @override
-  String get confirmDeleteConversation => '您確定要刪除此對話嗎？\n刪除的對話將無法復原。';
-
-  @override
-  String get confirmDeleteParticipant => '確定要刪除此參與者嗎？';
 
   @override
   String get contextTagHint => '請註明情境以便日後區分';
@@ -2946,28 +2481,19 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get deleteRecord => '刪除記錄';
 
   @override
-  String get dialogueQuestDesc => '透過情境劇練習對話。選擇並說出適當的回答。';
-
-  @override
-  String get dialogueQuestTitle => '對話任務';
-
-  @override
-  String get disambiguationPrompt => '您想翻譯成哪個含義？';
-
-  @override
-  String get disambiguationTitle => '選擇含義';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => '還沒有帳號嗎？';
-
-  @override
-  String get editParticipant => '編輯參與者';
 
   @override
   String get email => '電子郵件';
 
   @override
   String get emailAlreadyInUse => '此電子郵件已註冊。請登入或使用忘記密碼功能。';
+
+  @override
+  String get enterNameHint => '請輸入名稱';
 
   @override
   String get enterNewSubjectName => '輸入新標題';
@@ -3004,6 +2530,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get errors => '錯誤:';
+
+  @override
+  String get extractedText => '辨識文字';
 
   @override
   String get female => '女性';
@@ -3063,12 +2592,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get gender => '性別';
 
   @override
-  String get labelFilterMaterial => '資料集';
-
-  @override
-  String get labelFilterTag => '標籤';
-
-  @override
   String get generalTags => '一般標籤';
 
   @override
@@ -3081,17 +2604,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get googleContinue => '使用 Google 帳戶繼續';
 
   @override
-  String get helpDialogueImportDesc => '匯入 JSON 檔案中的整個對話集。';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc => '要在模式 3 中匯入學習資料，請建立具有以下結構的 JSON 檔案：';
-
-  @override
-  String get helpJsonTypeDialogue => '對話 (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => '句子 (Sentence)';
@@ -3121,11 +2634,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       '• 選擇資料：選擇學習包\n• 間隔：使用 [-] [+] 調整等待時間（3秒-60秒）\n• 開始/停止：控制跟讀會話\n• 說話：聆聽音訊並跟讀\n• 反饋：準確率評分（0-100）及顏色代碼\n• 重試：如果未偵測到聲音，請使用重試按鈕';
 
   @override
-  String get helpModeChatDesc => '與 AI 角色對話，練習實際會話。';
+  String get helpNote => '自由記錄單字的意思、例句或情境等。';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI 聊天：在底部標籤欄的“聊天”菜單中與角色進行實際對話練習\n• 角色設定：自由指定對方的性別、姓名、語言代碼\n• GPS 情境劇：識別您當前的位置並推薦適合該地點的對話主題\n• 2 種語言：AI 的回答與翻譯一起顯示，以最大限度地提高學習效果\n• 記錄管理：過濾過去的對話歷史記錄並將對話中的特定消息保存為學習材料';
+  String get helpNotebook => '選擇儲存翻譯結果的資料夾。';
 
   @override
   String get helpTabJson => 'JSON 格式';
@@ -3140,6 +2652,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get helpTabTour => '導覽';
 
   @override
+  String get helpTag => '輸入關鍵字以便日後分類或搜尋。';
+
+  @override
   String get helpTitle => '幫助與指南';
 
   @override
@@ -3148,6 +2663,15 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get hide => '隱藏';
+
+  @override
+  String get hintNoteExample => '例：情境說明、同音異義詞等';
+
+  @override
+  String get hintTagExample => '例：商務、旅行...';
+
+  @override
+  String get homeTab => '翻譯';
 
   @override
   String importAdded(int count) {
@@ -3174,6 +2698,11 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '已匯入 $files 個檔案、$entries 個項目';
+  }
+
+  @override
   String get importJsonFile => '匯入 JSON 檔案';
 
   @override
@@ -3185,12 +2714,30 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
+  String get importSourceFile => '單個 JSON 檔案';
+
+  @override
+  String get importSourceFolder => '資料夾 (按語言區分的庫結構)';
+
+  @override
+  String get importSourceTitle => '選擇匯入來源';
+
+  @override
+  String get importSourceZip => 'ZIP 檔案 (壓縮資料夾)';
+
+  @override
   String importTotal(int count) {
     return '總計: $count 項';
   }
 
   @override
   String get importing => '正在匯入...';
+
+  @override
+  String get inputContent => '輸入內容';
+
+  @override
+  String get inputLanguage => '輸入語言';
 
   @override
   String get inputModeTitle => '輸入';
@@ -3207,19 +2754,22 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get kakaoContinue => '以 Kakao 繼續';
 
   @override
-  String get labelLangCode => '語言代碼 (例如：en-US, ko-KR)';
+  String get labelDetails => '詳細設定';
 
   @override
-  String get labelName => '名稱';
+  String get labelFilterMaterial => '資料集';
+
+  @override
+  String get labelFilterTag => '標籤';
+
+  @override
+  String get labelLangCode => '語言代碼 (例如：en-US, ko-KR)';
 
   @override
   String get labelNote => '註解';
 
   @override
   String get labelPOS => '詞性';
-
-  @override
-  String get labelRole => '角色';
 
   @override
   String get labelSentence => '句子';
@@ -3270,9 +2820,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get listening => '正在聆聽...';
 
   @override
-  String get loadingParticipants => '正在載入參與者...';
-
-  @override
   String get location => '位置';
 
   @override
@@ -3291,9 +2838,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get male => '男性';
 
   @override
-  String get manageParticipants => '管理參與者';
-
-  @override
   String get manual => '手動輸入';
 
   @override
@@ -3301,9 +2845,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get materialInfo => '資料資訊';
-
-  @override
-  String get me => '我';
 
   @override
   String get menuDeviceImport => '從裝置匯入資料';
@@ -3371,25 +2912,19 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get neutral => '中性';
 
   @override
+  String get newNotebookTitle => '新筆記本名稱';
+
+  @override
   String get newSubjectName => '新增字彙本/句子集標題';
 
   @override
   String get next => '下一步';
 
   @override
-  String get noDialogueHistory => '沒有對話歷史記錄。';
-
-  @override
-  String get noInternetWarningMic => '沒有網路連線。離線狀態下可能無法使用語音辨識。';
-
-  @override
-  String get noInternetWarningTranslate => '沒有網路連線。離線狀態下無法使用翻譯功能。請使用複習模式。';
+  String get noDataForLanguage => '您選擇的語言沒有學習資料在本機資料庫中。請下載資料或選擇其他語言。';
 
   @override
   String get noMaterialsInCategory => '此類別中沒有資料。';
-
-  @override
-  String get noParticipantsFound => '沒有已註冊的參與者。';
 
   @override
   String get noRecords => '所選語言沒有學習記錄';
@@ -3410,6 +2945,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get notSelected => '- 未選擇 -';
 
   @override
+  String get noteGuidance => '輸入額外詳細資訊以獲得更準確翻譯的地方';
+
+  @override
   String get onlineLibraryCheckInternet => '請檢查網路連線或稍後重試。';
 
   @override
@@ -3419,16 +2957,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get onlineLibraryNoMaterials => '沒有資料。';
 
   @override
-  String get participantDeleted => '參與者已刪除。';
-
-  @override
-  String get participantRename => '參與者重新命名';
-
-  @override
-  String get partner => '夥伴';
-
-  @override
-  String get partnerMode => '夥伴模式';
+  String get openSettings => '開啟設定';
 
   @override
   String get password => '密碼';
@@ -3440,13 +2969,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get perfect => '完美！';
 
   @override
-  String get personaFriend => '當地朋友';
-
-  @override
-  String get personaGuide => '旅遊導遊';
-
-  @override
-  String get personaTeacher => '英文老師';
+  String get pickGallery => '從相簿選擇';
 
   @override
   String get playAgain => '再玩一次';
@@ -3466,6 +2989,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get posAdverb => '副詞';
 
   @override
+  String get posArticle => '冠詞';
+
+  @override
   String get posConjunction => '連接詞';
 
   @override
@@ -3473,6 +2999,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get posNoun => '名詞';
+
+  @override
+  String get posParticle => '助詞';
 
   @override
   String get posPreposition => '介系詞/助詞';
@@ -3490,9 +3019,30 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get practiceWordsOnly => '只練習單字';
 
   @override
+  String get processing => '處理中...';
+
+  @override
   String progress(int current, int total) {
     return '進度: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc => '請先在「選單 > 語言設定」中指定您的母語和學習語言。';
+
+  @override
+  String get quickStartStep1Title => '1. 設定語言';
+
+  @override
+  String get quickStartStep2Desc => '按照「輸入 (麥克風/鍵盤) -> 翻譯 -> 儲存」的順序，建立您自己的學習卡。';
+
+  @override
+  String get quickStartStep2Title => '2. 基本流程';
+
+  @override
+  String get quickStartStep3Desc => '透過聊天進行練習，並在「發音練習」分頁中看著文字直接發音練習。';
+
+  @override
+  String get quickStartStep3Title => '3. 模式活用';
 
   @override
   String recentNItems(int count) {
@@ -3517,6 +3067,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get refresh => '重新整理';
 
   @override
+  String get requestTranslation => '請求翻譯';
+
+  @override
   String get reset => '重置';
 
   @override
@@ -3537,16 +3090,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get reviewModeTitle => '複習';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => '第三方';
-
-  @override
-  String get roleUser => '使用者';
-
-  @override
   String get save => '儲存';
+
+  @override
+  String get saveAsSentence => '儲存為句子';
+
+  @override
+  String get saveAsWord => '儲存為單字';
 
   @override
   String get saveData => '儲存資料';
@@ -3557,6 +3107,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
+  String get saveToHistory => '儲存至掃描歷史';
+
+  @override
   String get saveTranslationsFromSearch => '在搜尋模式下儲存翻譯';
 
   @override
@@ -3564,6 +3117,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get saving => '正在儲存...';
+
+  @override
+  String get scanInstructions => '請選擇要掃描的圖片';
+
+  @override
+  String get scanLabel => '掃描';
 
   @override
   String score(String score) {
@@ -3610,16 +3169,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get selectPOS => '選擇詞性';
 
   @override
-  String get selectParticipants => '選擇參與者';
-
-  @override
-  String get selectSentenceType => '選擇句型';
-
-  @override
   String get selectStudyMaterial => '選擇學習資料';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => '句子';
@@ -3628,43 +3178,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get signUp => '註冊';
 
   @override
-  String get similarTextFound => '發現相似文字';
-
-  @override
-  String get skip => '跳過';
-
-  @override
-  String get source => '來源:';
-
-  @override
-  String get sourceLanguage => '源語言';
+  String get simplifiedGuidance => '將日常對話瞬間翻譯成外語！ Talkie 將記錄您的語言生活。';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => '現在說！';
-
-  @override
-  String get speaker => '說話者';
-
-  @override
-  String get speakerSelect => '選擇發話者';
-
-  @override
-  String get speakingPractice => '口說練習';
-
-  @override
-  String get startChat => '開始對話';
-
-  @override
-  String get startPractice => '開始練習';
-
-  @override
   String get startTutorial => '開始教學';
-
-  @override
-  String get startWarning => '警告';
 
   @override
   String get startsWith => '開頭字母';
@@ -3673,28 +3193,22 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get statusCheckEmail => '請檢查電子郵件以完成驗證。';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return '下載中：$name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return '匯入失敗：$error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name 匯入完成';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => '登入已取消。';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return '登入失敗：$error';
   }
 
@@ -3705,23 +3219,23 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get statusLogoutSuccess => '已登出。';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return '註冊失敗：$error';
+  String statusRequestFailed(String error) {
+    return '翻譯請求失敗：$error';
   }
 
   @override
-  String get statusSigningUp => '註冊中...';
+  String get statusRequestSuccess => '翻譯請求已完成。';
 
   @override
   String get stopPractice => '停止練習';
 
   @override
-  String get studyComplete => '已學習';
+  String studyLangNotFoundDesc(String targetLang) {
+    return '您選擇的資料目前不支援您設定的學習語言（$targetLang），因此無法儲存到本機。您要請求翻譯嗎？';
+  }
 
   @override
-  String studyRecords(int count) {
-    return '學習記錄 ($count)';
-  }
+  String get studyLangNotFoundTitle => '學習語言不支援';
 
   @override
   String get styleFormal => '敬語';
@@ -3736,22 +3250,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get styleSlang => '俚語/粗俗語';
 
   @override
-  String get subject => '主題:';
-
-  @override
   String get swapLanguages => '交換語言';
 
   @override
-  String get switchToAi => '切換到 AI 模式';
-
-  @override
-  String get switchToPartner => '切換到夥伴模式';
-
-  @override
   String get syncingData => '正在同步資料...';
-
-  @override
-  String get tabConversation => '對話';
 
   @override
   String tabReview(int count) {
@@ -3814,6 +3316,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tooltipSearch => '搜尋';
 
   @override
+  String get tooltipSettingsConfirm => '確認設定';
+
+  @override
   String get tooltipSpeaking => '口語';
 
   @override
@@ -3826,6 +3331,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get translate => '翻譯';
+
+  @override
+  String get translateNow => '立即翻譯';
 
   @override
   String get translating => '正在翻譯...';
@@ -3842,6 +3350,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
+  String get translationLanguage => '翻譯語言';
+
+  @override
   String get translationLimitExceeded => '已超過翻譯限制';
 
   @override
@@ -3854,16 +3365,22 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get translationRefilled => '翻譯次數已補充 5 次！';
 
   @override
+  String get translationResult => '翻譯結果';
+
+  @override
   String get translationResultHint => '翻譯結果 - 可修改';
 
   @override
   String get tryAgain => '再試一次';
 
   @override
-  String get tutorialAiChatDesc => '練習與 AI 角色的實際對話。';
+  String get ttsInstallGuide => '請在「Android 設定」>「Google 文字轉語音」中安裝相應的語言資料。';
 
   @override
-  String get tutorialAiChatTitle => 'AI 聊天';
+  String get ttsMissing => '您的裝置未安裝此語言的語音引擎。';
+
+  @override
+  String get ttsUnsupportedNatively => '此裝置的預設設定不支援此語言的語音輸出。';
 
   @override
   String get tutorialContextDesc => '添加上下文（例如：早上）以區分相似的句子。';
@@ -3966,7 +3483,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get typeExclamation => '感嘆句';
 
   @override
+  String get typeIdiom => '慣用語';
+
+  @override
   String get typeImperative => '祈使句';
+
+  @override
+  String get typeProverb => '諺語/格言';
 
   @override
   String get typeQuestion => '疑問句';
@@ -3981,6 +3504,11 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get useExistingText => '使用現有';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => '查看線上指南';
 
   @override
@@ -3988,6 +3516,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get watchAdAndRefill => '觀看廣告並補充 (+5 次)';
+
+  @override
+  String get welcomeButton => '开始使用';
+
+  @override
+  String get welcomeDesc =>
+      '歡迎使用 Talkie！我們以 100% 的完整性支援全球超過 80 種語言，並透過全新的頂級 3D 設計和最佳化效能，提供完美的學習體驗。';
+
+  @override
+  String get welcomeTitle => '欢迎使用 Talkie!';
 
   @override
   String get word => '單字';
@@ -4003,105 +3541,4 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get yourPronunciation => '你的發音';
-
-  @override
-  String get ttsUnsupportedNatively => '此裝置的預設設定不支援此語言的語音輸出。';
-
-  @override
-  String get homeTab => '翻譯';
-
-  @override
-  String get welcomeTitle => '欢迎使用 Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      '歡迎使用 Talkie！我們以 100% 的完整性支援全球超過 80 種語言，並透過全新的頂級 3D 設計和最佳化效能，提供完美的學習體驗。';
-
-  @override
-  String get welcomeButton => '开始使用';
-
-  @override
-  String get labelDetails => '詳細設定';
-
-  @override
-  String get translationResult => '翻譯結果';
-
-  @override
-  String get inputContent => '輸入內容';
-
-  @override
-  String get translateNow => '立即翻譯';
-
-  @override
-  String get tooltipSettingsConfirm => '確認設定';
-
-  @override
-  String get hintNoteExample => '例：情境說明、同音異義詞等';
-
-  @override
-  String get hintTagExample => '例：商務、旅行...';
-
-  @override
-  String get addNew => '新增';
-
-  @override
-  String get newNotebookTitle => '新筆記本名稱';
-
-  @override
-  String get enterNameHint => '請輸入名稱';
-
-  @override
-  String get add => '新增';
-
-  @override
-  String get openSettings => '開啟設定';
-
-  @override
-  String get helpNotebook => '選擇儲存翻譯結果的資料夾。';
-
-  @override
-  String get helpNote => '自由記錄單字的意思、例句或情境等。';
-
-  @override
-  String get helpTag => '輸入關鍵字以便日後分類或搜尋。';
-
-  @override
-  String get requestTranslation => '請求翻譯';
-
-  @override
-  String get statusRequestSuccess => '翻譯請求已完成。';
-
-  @override
-  String statusRequestFailed(String error) {
-    return '翻譯請求失敗：$error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => '學習語言不支援';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return '您選擇的資料目前不支援您設定的學習語言（$targetLang），因此無法儲存到本機。您要請求翻譯嗎？';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. 設定語言';
-
-  @override
-  String get quickStartStep1Desc => '請先在「選單 > 語言設定」中指定您的母語和學習語言。';
-
-  @override
-  String get quickStartStep2Title => '2. 基本流程';
-
-  @override
-  String get quickStartStep2Desc => '按照「輸入 (麥克風/鍵盤) -> 翻譯 -> 儲存」的順序，建立您自己的學習卡。';
-
-  @override
-  String get quickStartStep3Title => '3. 模式活用';
-
-  @override
-  String get quickStartStep3Desc => '透過聊天進行練習，並在「發音練習」分頁中看著文字直接發音練習。';
-
-  @override
-  String get noteGuidance => '輸入額外詳細資訊以獲得更準確翻譯的地方';
 }

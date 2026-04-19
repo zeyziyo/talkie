@@ -9,51 +9,19 @@ class AppLocalizationsHe extends AppLocalizations {
   AppLocalizationsHe([String locale = 'he']) : super(locale);
 
   @override
-  String get basicWords => 'מאגר מילים בסיסי';
-
-  @override
-  String get inputLanguage => 'שפת מקור';
-
-  @override
-  String get translationLanguage => 'שפת תרגום';
-
-  @override
-  String get simplifiedGuidance =>
-      'תרגום מיידי של שיחות יומיומיות לשפה זרה! Talkie יתעד את חיי השפה שלך.';
-
-  @override
-  String get noDataForLanguage =>
-      'אין נתונים זמינים עבור שפה זו במסד הנתונים המקומי. נא להוריד נתונים או לבחור שפה אחרת.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'ביטול';
-
-  @override
   String get accuracy => 'דיוק';
-
-  @override
-  String get ttsMissing => 'מנוע הדיבור לשפה זו אינו מותקן במכשיר שלך.';
-
-  @override
-  String get ttsInstallGuide =>
-      'התקן את נתוני השפה בהגדרות אנדרואיד > Google TTS.';
 
   @override
   String get adLoading => 'טוען מודעה. אנא נסה שוב מאוחר יותר.';
 
   @override
-  String get addNewSubject => 'הוסף כותרת חדשה';
+  String get add => 'הוסף';
 
   @override
-  String get addParticipant => 'הוסף משתתף';
+  String get addNew => 'הוסף חדש';
+
+  @override
+  String get addNewSubject => 'הוסף כותרת חדשה';
 
   @override
   String get addTagHint => 'הוסף תג...';
@@ -86,6 +54,12 @@ class AppLocalizationsHe extends AppLocalizations {
   String get basicWordRepository => 'מאגר מילים בסיסי';
 
   @override
+  String get basicWords => 'מאגר מילים בסיסי';
+
+  @override
+  String get cancel => 'ביטול';
+
+  @override
   String get caseObject => 'מושא';
 
   @override
@@ -101,61 +75,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get caseSubject => 'נושא';
 
   @override
-  String get chatAiChat => 'צ\'אט';
-
-  @override
-  String get chatAllConversations => 'כל השיחות';
-
-  @override
-  String get chatChoosePersona => 'בחר דמות';
-
-  @override
-  String get chatEndMessage => 'האם ברצונך לסיים את השיחה?';
-
-  @override
-  String get chatEndTitle => 'סיים ושמור שיחה';
-
-  @override
-  String chatFailed(Object error) {
-    return 'השיחה נכשלה: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'קטע משיחה ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'היסטוריית שיחות';
-
-  @override
-  String get chatNew => 'שיחה חדשה';
-
-  @override
-  String get chatNewChat => 'שיחה חדשה';
-
-  @override
-  String get chatNoConversations => 'עדיין אין שיחות';
-
-  @override
-  String get chatSearchHint => 'חיפוש לפי שם צ\'אט…';
-
-  @override
-  String get chatNoteSearchHint => 'חיפוש בהערות...';
-
-  @override
-  String get chatSaveAndExit => 'שמור וצא';
-
-  @override
-  String get chatStartNewPrompt => 'התחל שיחה חדשה כדי לתרגל!';
-
-  @override
-  String get chatTypeHint => 'הקלד הודעה...';
-
-  @override
-  String get chatUntitled => 'שיחה ללא כותרת';
-
-  @override
   String get checking => 'בודק...';
 
   @override
@@ -166,13 +85,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get confirmDelete => 'האם אתה בטוח שברצונך למחוק רשומה זו?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'האם למחוק שיחה זו?\nלא ניתן יהיה לשחזר שיחה שנמחקה.';
-
-  @override
-  String get confirmDeleteParticipant => 'האם למחוק משתתף זה?';
 
   @override
   String get contextTagHint => 'רשום את המצב כדי להקל על ההבחנה בהמשך';
@@ -211,23 +123,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get deleteRecord => 'מחק רשומה';
 
   @override
-  String get dialogueQuestDesc =>
-      'תרגל שיחות באמצעות משחק תפקידים. בחר את התשובות המתאימות ואמור אותן.';
-
-  @override
-  String get dialogueQuestTitle => 'משימת דיאלוג';
-
-  @override
-  String get disambiguationPrompt => 'לאיזו משמעות תרצה לתרגם?';
-
-  @override
-  String get disambiguationTitle => 'בחר משמעות';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'אין לך חשבון?';
-
-  @override
-  String get editParticipant => 'ערוך משתתף';
 
   @override
   String get email => 'אימייל';
@@ -235,6 +134,9 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'כתובת האימייל כבר רשומה. יש להתחבר או לשחזר את הסיסמה.';
+
+  @override
+  String get enterNameHint => 'הזן שם';
 
   @override
   String get enterNewSubjectName => 'הזן כותרת חדשה';
@@ -271,6 +173,9 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get errors => 'שגיאות:';
+
+  @override
+  String get extractedText => 'טקסט שזוהה';
 
   @override
   String get female => 'נקבה';
@@ -330,12 +235,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get gender => 'מגדר';
 
   @override
-  String get labelFilterMaterial => 'חוברת חומרים';
-
-  @override
-  String get labelFilterTag => 'תגית';
-
-  @override
   String get generalTags => 'תגים כלליים';
 
   @override
@@ -348,17 +247,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get googleContinue => 'המשך עם Google';
 
   @override
-  String get helpDialogueImportDesc => 'ייבא ערכת דיאלוג שלמה מקובץ JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc => 'לייבוא חומרים במצב 3, צור JSON:';
-
-  @override
-  String get helpJsonTypeDialogue => 'דיאלוג (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'משפט (Sentence)';
@@ -390,11 +279,11 @@ class AppLocalizationsHe extends AppLocalizations {
       '• בחר: בחר חבילה\n• מרווח: [-] [+] זמן המתנה (3ש\'-60ש\')\n• התחל/עצור: שליטה בסשן\n• דבר: האזן וחזור\n• ניקוד: דיוק (0-100)\n• נסה שוב: כפתור אם קול לא מזוהה';
 
   @override
-  String get helpModeChatDesc => 'תרגלו שיחה אמיתית על ידי שיחה עם דמות AI.';
+  String get helpNote =>
+      'רשום באופן חופשי את משמעות המילה, דוגמאות, הקשר וכו\'.';
 
   @override
-  String get helpModeChatDetails =>
-      '• צ\'אט AI: תרגל שיחות מעשיות עם דמויות דרך תפריט \'צ\'אט\' בסרגל הכרטיסיות התחתון.\n• הגדרת דמות: ציין באופן חופשי את מין, שם וקוד השפה של הצד השני.\n• משחק תפקידים GPS: המלצה על נושאי שיחה המתאימים למקום על ידי זיהוי המיקום הנוכחי שלך.\n• דו לשוני: תשובות ה-AI מוצגות עם תרגום כדי למקסם את אפקט הלמידה.\n• ניהול רשומות: סינון היסטוריית שיחות קודמות ושמירת הודעות ספציפיות במהלך שיחות כחומרי לימוד.';
+  String get helpNotebook => 'בחר תיקייה לשמירת התרגומים.';
 
   @override
   String get helpTabJson => 'פורמט JSON';
@@ -409,6 +298,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get helpTabTour => 'סיור';
 
   @override
+  String get helpTag => 'הזן מילות מפתח למיון או חיפוש מאוחר יותר.';
+
+  @override
   String get helpTitle => 'עזרה ומדריך';
 
   @override
@@ -417,6 +309,15 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get hide => 'הסתר';
+
+  @override
+  String get hintNoteExample => 'לדוגמה: הקשר, מילים נרדפות וכו\'';
+
+  @override
+  String get hintTagExample => 'לדוגמה: עסקים, נסיעות...';
+
+  @override
+  String get homeTab => 'תרגום';
 
   @override
   String importAdded(int count) {
@@ -429,23 +330,6 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'חומר עם שם זהה כבר קיים. שנה את השם ונסה שוב.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -461,6 +345,11 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files קבצים, $entries רשומות יובאו.';
+  }
+
+  @override
   String get importJsonFile => 'ייבא JSON';
 
   @override
@@ -472,12 +361,30 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'קובץ JSON בודד';
+
+  @override
+  String get importSourceFolder => 'תיקייה (מבנה ספריות לפי שפה)';
+
+  @override
+  String get importSourceTitle => 'בחר מקור ייבוא';
+
+  @override
+  String get importSourceZip => 'קובץ ZIP (תיקייה דחוסה)';
+
+  @override
   String importTotal(int count) {
     return 'סה\"כ: $count';
   }
 
   @override
   String get importing => 'מייבא...';
+
+  @override
+  String get inputContent => 'תוכן קלט';
+
+  @override
+  String get inputLanguage => 'שפת מקור';
 
   @override
   String get inputModeTitle => 'קלט';
@@ -494,19 +401,22 @@ class AppLocalizationsHe extends AppLocalizations {
   String get kakaoContinue => 'המשך עם קקאו';
 
   @override
-  String get labelLangCode => 'קוד שפה (לדוגמה: en-US, ko-KR)';
+  String get labelDetails => 'הגדרות מתקדמות';
 
   @override
-  String get labelName => 'שם';
+  String get labelFilterMaterial => 'חוברת חומרים';
+
+  @override
+  String get labelFilterTag => 'תגית';
+
+  @override
+  String get labelLangCode => 'קוד שפה (לדוגמה: en-US, ko-KR)';
 
   @override
   String get labelNote => 'הערה';
 
   @override
   String get labelPOS => 'חלקי דיבר';
-
-  @override
-  String get labelRole => 'תפקיד';
 
   @override
   String get labelSentence => 'משפט';
@@ -557,9 +467,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get listening => 'מקשיב...';
 
   @override
-  String get loadingParticipants => 'טוען משתתפים...';
-
-  @override
   String get location => 'מיקום';
 
   @override
@@ -578,9 +485,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get male => 'זכר';
 
   @override
-  String get manageParticipants => 'נהל משתתפים';
-
-  @override
   String get manual => 'הזנה ידנית';
 
   @override
@@ -588,9 +492,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get materialInfo => 'מידע על חומר';
-
-  @override
-  String get me => 'אני';
 
   @override
   String get menuDeviceImport => 'ייבא חומרים מהמכשיר';
@@ -658,27 +559,20 @@ class AppLocalizationsHe extends AppLocalizations {
   String get neutral => 'ניטרלי';
 
   @override
+  String get newNotebookTitle => 'שם מחברת חדשה';
+
+  @override
   String get newSubjectName => 'כותרת מחברת/אוסף חדש';
 
   @override
   String get next => 'הבא';
 
   @override
-  String get noDialogueHistory => 'אין היסטוריית שיחות.';
-
-  @override
-  String get noInternetWarningMic =>
-      'אין חיבור לאינטרנט. ייתכן שזיהוי קולי אינו אפשרי במצב לא מקוון.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'אין חיבור לאינטרנט. תכונת התרגום לא תעבוד. אנא השתמש במצב חזרה.';
+  String get noDataForLanguage =>
+      'אין נתונים זמינים עבור שפה זו במסד הנתונים המקומי. נא להוריד נתונים או לבחור שפה אחרת.';
 
   @override
   String get noMaterialsInCategory => 'אין חומרים בקטגוריה זו.';
-
-  @override
-  String get noParticipantsFound => 'לא נמצאו משתתפים רשומים.';
 
   @override
   String get noRecords => 'אין רשומות לשפה שנבחרה';
@@ -699,6 +593,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get notSelected => '- לא נבחר -';
 
   @override
+  String get noteGuidance => 'היכן שאתה מזין פרטים נוספים לתרגום מדויק יותר';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'אנא בדוק את חיבור האינטרנט שלך או נסה שוב מאוחר יותר.';
 
@@ -709,34 +606,19 @@ class AppLocalizationsHe extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'אין חומרים.';
 
   @override
-  String get participantDeleted => 'המשתתף נמחק.';
-
-  @override
-  String get participantRename => 'שנה שם משתתף';
-
-  @override
-  String get partner => 'שותף';
-
-  @override
-  String get partnerMode => 'מצב שותף';
+  String get openSettings => 'פתח הגדרות';
 
   @override
   String get password => 'סיסמה';
 
   @override
-  String get passwordTooShort => 'הסיסמה חייבת להיות באורך 6 תווים לפחות.';
+  String get passwordTooShort => 'הסיסמה קצרה מדי';
 
   @override
   String get perfect => 'מושלם!';
 
   @override
-  String get personaFriend => 'חבר מקומי';
-
-  @override
-  String get personaGuide => 'מדריך טיולים';
-
-  @override
-  String get personaTeacher => 'מורה לאנגלית';
+  String get pickGallery => 'בחר מהגלריה';
 
   @override
   String get playAgain => 'שחק שוב';
@@ -756,6 +638,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get posAdverb => 'תואר הפועל';
 
   @override
+  String get posArticle => 'מילת יידוע';
+
+  @override
   String get posConjunction => 'מילת קישור';
 
   @override
@@ -763,6 +648,9 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get posNoun => 'שם עצם';
+
+  @override
+  String get posParticle => 'חלקיק';
 
   @override
   String get posPreposition => 'מילת יחס';
@@ -780,9 +668,33 @@ class AppLocalizationsHe extends AppLocalizations {
   String get practiceWordsOnly => 'תרגל מילים בלבד';
 
   @override
+  String get processing => 'מעבד...';
+
+  @override
   String progress(int current, int total) {
     return 'התקדמות: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'בתפריט > הגדרות שפה, הגדר תחילה את שפת הממשק ושפת הלמידה שלך.';
+
+  @override
+  String get quickStartStep1Title => '1. הגדרת שפה';
+
+  @override
+  String get quickStartStep2Desc =>
+      'צור כרטיסיות למידה מותאמות אישית לפי הסדר הזה: קלט (מיקרופון/מקלדת) -> תרגום -> שמירה.';
+
+  @override
+  String get quickStartStep2Title => '2. תהליך בסיסי';
+
+  @override
+  String get quickStartStep3Desc =>
+      'תרגל בצ\'אט, ובכרטיסיית תרגול הגייה, תרגל הגייה ישירה תוך כדי צפייה בטקסט.';
+
+  @override
+  String get quickStartStep3Title => '3. שימוש במצבים שונים';
 
   @override
   String recentNItems(int count) {
@@ -807,6 +719,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get refresh => 'רענן';
 
   @override
+  String get requestTranslation => 'בקש תרגום';
+
+  @override
   String get reset => 'איפוס';
 
   @override
@@ -827,16 +742,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get reviewModeTitle => 'חזרה';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'צד שלישי';
-
-  @override
-  String get roleUser => 'משתמש';
-
-  @override
   String get save => 'שמור';
+
+  @override
+  String get saveAsSentence => 'שמור כמשפט';
+
+  @override
+  String get saveAsWord => 'שמור כמילה';
 
   @override
   String get saveData => 'שמור';
@@ -847,6 +759,9 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'שמור בהיסטוריית הסריקות';
+
+  @override
   String get saveTranslationsFromSearch => 'שמור תרגומים ממצב חיפוש';
 
   @override
@@ -854,6 +769,12 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get saving => 'שומר...';
+
+  @override
+  String get scanInstructions => 'בחר תמונה לסריקה';
+
+  @override
+  String get scanLabel => 'סרוק';
 
   @override
   String score(String score) {
@@ -900,16 +821,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get selectPOS => 'בחר חלק דיבר';
 
   @override
-  String get selectParticipants => 'בחר משתתפים';
-
-  @override
-  String get selectSentenceType => 'בחר סוג משפט';
-
-  @override
   String get selectStudyMaterial => 'בחר חומר';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'משפט';
@@ -918,101 +830,65 @@ class AppLocalizationsHe extends AppLocalizations {
   String get signUp => 'הרשמה';
 
   @override
-  String get similarTextFound => 'נמצא טקסט דומה';
+  String get simplifiedGuidance =>
+      'תרגום מיידי של שיחות יומיומיות לשפה זרה! Talkie יתעד את חיי השפה שלך.';
 
   @override
-  String get skip => 'דלג';
+  String get sourceLanguageLabel => 'השפה שלי';
 
   @override
-  String get source => 'מקור:';
-
-  @override
-  String get sourceLanguage => 'שפת מקור';
-
-  @override
-  String get sourceLanguageLabel => 'Source Language';
-
-  @override
-  String get speakNow => 'דבר עכשיו!';
-
-  @override
-  String get speaker => 'דובר';
-
-  @override
-  String get speakerSelect => 'בחר דובר';
-
-  @override
-  String get speakingPractice => 'תרגול דיבור';
-
-  @override
-  String get startChat => 'התחל שיחה';
-
-  @override
-  String get startPractice => 'התחל תרגול';
-
-  @override
-  String get startTutorial => 'התחל סיור';
-
-  @override
-  String get startWarning => 'אזהרה';
+  String get startTutorial => 'התחלת הדרכה';
 
   @override
   String get startsWith => 'מתחיל ב';
 
   @override
-  String get statusCheckEmail =>
-      'אמת את כתובת האימייל שלך כדי להשלים את האימות.';
+  String get statusCheckEmail => 'יש לבדוק את האימייל שלך';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'מוריד: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'הייבוא נכשל: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name יובא בהצלחה';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'ההתחברות בוטלה.';
-
-  @override
-  String statusLoginFailed(Object error) {
-    return 'ההתחברות נכשלה: $error';
+  String statusLoginFailed(String error) {
+    return 'התחברות נכשלה: $error';
   }
 
   @override
-  String get statusLoginSuccess => 'התחברת בהצלחה.';
+  String get statusLoginSuccess => 'התחברות מוצלחת';
 
   @override
-  String get statusLogoutSuccess => 'התנתקת בהצלחה.';
+  String get statusLogoutSuccess => 'התנתקות מוצלחת';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'ההרשמה נכשלה: $error';
+  String statusRequestFailed(String error) {
+    return 'בקשת התרגום נכשלה: $error';
   }
 
   @override
-  String get statusSigningUp => 'נרשם...';
+  String get statusRequestSuccess => 'בקשת התרגום הושלמה.';
 
   @override
   String get stopPractice => 'עצור';
 
   @override
-  String get studyComplete => 'נלמד';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'החומר שבחרת אינו תומך בשפת הלימוד הנוכחית שלך ($targetLang) ולכן לא ניתן לשמור אותו באופן מקומי. האם תרצה לבקש תרגום?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'רשומות ($count)';
-  }
+  String get studyLangNotFoundTitle => 'שפת לימוד לא נתמכת';
 
   @override
   String get styleFormal => 'רשמי';
@@ -1027,22 +903,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get styleSlang => 'סלנג';
 
   @override
-  String get subject => 'נושא:';
-
-  @override
   String get swapLanguages => 'החלף שפות';
 
   @override
-  String get switchToAi => 'מעבר למצב AI';
-
-  @override
-  String get switchToPartner => 'מעבר למצב שותף';
-
-  @override
   String get syncingData => 'מסנכרן נתונים...';
-
-  @override
-  String get tabConversation => 'שיחה';
 
   @override
   String tabReview(int count) {
@@ -1105,6 +969,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tooltipSearch => 'חיפוש';
 
   @override
+  String get tooltipSettingsConfirm => 'אישור הגדרות';
+
+  @override
   String get tooltipSpeaking => 'דיבור';
 
   @override
@@ -1117,6 +984,9 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get translate => 'תרגם';
+
+  @override
+  String get translateNow => 'תרגם עכשיו';
 
   @override
   String get translating => 'מתרגם...';
@@ -1133,6 +1003,9 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'שפת תרגום';
+
+  @override
   String get translationLimitExceeded => 'חריגה ממגבלת תרגום';
 
   @override
@@ -1146,16 +1019,24 @@ class AppLocalizationsHe extends AppLocalizations {
   String get translationRefilled => 'מכסת התרגומים שלך מולאה ב-5!';
 
   @override
+  String get translationResult => 'תוצאת תרגום';
+
+  @override
   String get translationResultHint => 'תוצאת תרגום - ניתן לעריכה';
 
   @override
   String get tryAgain => 'נסה שוב';
 
   @override
-  String get tutorialAiChatDesc => 'תרגל שיחות אמיתיות עם דמויות AI.';
+  String get ttsInstallGuide =>
+      'התקן את נתוני השפה בהגדרות אנדרואיד > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'צ\'אט AI';
+  String get ttsMissing => 'מנוע הדיבור לשפה זו אינו מותקן במכשיר שלך.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'הגדרות ברירת המחדל של מכשיר זה אינן תומכות בפלט קולי בשפה זו.';
 
   @override
   String get tutorialContextDesc =>
@@ -1260,7 +1141,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get typeExclamation => 'קריאה';
 
   @override
+  String get typeIdiom => 'ניב';
+
+  @override
   String get typeImperative => 'ציווי';
+
+  @override
+  String get typeProverb => 'פתגם';
 
   @override
   String get typeQuestion => 'שאלה';
@@ -1275,6 +1162,11 @@ class AppLocalizationsHe extends AppLocalizations {
   String get useExistingText => 'השתמש בקיים';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'הצג מדריך מקוון';
 
   @override
@@ -1282,6 +1174,16 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'צפה במודעה ומלא מחדש (+5 פעמים)';
+
+  @override
+  String get welcomeButton => 'מתחילים';
+
+  @override
+  String get welcomeDesc =>
+      'ברוכים הבאים ל-Talkie! אנו תומכים ביותר מ-80 שפות ברחבי העולם ב-100% תקינות, ומספקים חווית למידה מושלמת עם עיצוב תלת מימדי פרימיום חדש וביצועים מיטביים.';
+
+  @override
+  String get welcomeTitle => 'ברוכים הבאים ל-Talkie!';
 
   @override
   String get word => 'מילה';
@@ -1298,110 +1200,4 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ההגייה שלך';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'הגדרות ברירת המחדל של מכשיר זה אינן תומכות בפלט קולי בשפה זו.';
-
-  @override
-  String get homeTab => 'תרגום';
-
-  @override
-  String get welcomeTitle => 'ברוכים הבאים ל-Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'ברוכים הבאים ל-Talkie! אנו תומכים ביותר מ-80 שפות ברחבי העולם ב-100% תקינות, ומספקים חווית למידה מושלמת עם עיצוב תלת מימדי פרימיום חדש וביצועים מיטביים.';
-
-  @override
-  String get welcomeButton => 'מתחילים';
-
-  @override
-  String get labelDetails => 'הגדרות מתקדמות';
-
-  @override
-  String get translationResult => 'תוצאת תרגום';
-
-  @override
-  String get inputContent => 'תוכן קלט';
-
-  @override
-  String get translateNow => 'תרגם עכשיו';
-
-  @override
-  String get tooltipSettingsConfirm => 'אישור הגדרות';
-
-  @override
-  String get hintNoteExample => 'לדוגמה: הקשר, מילים נרדפות וכו\'';
-
-  @override
-  String get hintTagExample => 'לדוגמה: עסקים, נסיעות...';
-
-  @override
-  String get addNew => 'הוסף חדש';
-
-  @override
-  String get newNotebookTitle => 'שם מחברת חדשה';
-
-  @override
-  String get enterNameHint => 'הזן שם';
-
-  @override
-  String get add => 'הוסף';
-
-  @override
-  String get openSettings => 'פתח הגדרות';
-
-  @override
-  String get helpNotebook => 'בחר תיקייה לשמירת התרגומים.';
-
-  @override
-  String get helpNote =>
-      'רשום באופן חופשי את משמעות המילה, דוגמאות, הקשר וכו\'.';
-
-  @override
-  String get helpTag => 'הזן מילות מפתח למיון או חיפוש מאוחר יותר.';
-
-  @override
-  String get requestTranslation => 'בקש תרגום';
-
-  @override
-  String get statusRequestSuccess => 'בקשת התרגום הושלמה.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'בקשת התרגום נכשלה: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'שפת לימוד לא נתמכת';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'החומר שבחרת אינו תומך בשפת הלימוד הנוכחית שלך ($targetLang) ולכן לא ניתן לשמור אותו באופן מקומי. האם תרצה לבקש תרגום?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. הגדרת שפה';
-
-  @override
-  String get quickStartStep1Desc =>
-      'בתפריט > הגדרות שפה, הגדר תחילה את שפת הממשק ושפת הלמידה שלך.';
-
-  @override
-  String get quickStartStep2Title => '2. תהליך בסיסי';
-
-  @override
-  String get quickStartStep2Desc =>
-      'צור כרטיסיות למידה מותאמות אישית לפי הסדר הזה: קלט (מיקרופון/מקלדת) -> תרגום -> שמירה.';
-
-  @override
-  String get quickStartStep3Title => '3. שימוש במצבים שונים';
-
-  @override
-  String get quickStartStep3Desc =>
-      'תרגל בצ\'אט, ובכרטיסיית תרגול הגייה, תרגל הגייה ישירה תוך כדי צפייה בטקסט.';
-
-  @override
-  String get noteGuidance => 'היכן שאתה מזין פרטים נוספים לתרגום מדויק יותר';
 }

@@ -1,32 +1,10 @@
 {
   "@@locale": "gl",
-  "basicWords": "Repositorio básico de palabras",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Idioma de entrada",
-  "translationLanguage": "Idioma de tradución",
-  "simplifiedGuidance": "Transforma conversas cotiás en idiomas estranxeiros ao instante! Talkie rexistra a túa vida lingüística.",
-  "noDataForLanguage": "Non hai datos de aprendizaxe para o idioma seleccionado na base de datos local. Descarga os datos ou selecciona outro idioma.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Cancelar",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Precisión",
-  "ttsMissing": "Non hai o motor de voz para este idioma instalado no teu dispositivo.",
-  "ttsInstallGuide": "Por favor, instala os datos do idioma en Configuración de Android > Google TTS.",
   "adLoading": "Cargando anuncio. Téntao de novo en breve.",
+  "add": "Engadir",
+  "addNew": "Engadir novo",
   "addNewSubject": "Engadir título novo",
-  "addParticipant": "Engadir participante",
   "addTagHint": "Engadir etiqueta...",
   "alreadyHaveAccount": "Xa tes unha conta?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Repositorio básico de palabras",
+  "basicWords": "Repositorio básico de palabras",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Cancelar",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Obxectivo",
   "casePossessive": "Posesivo",
   "casePossessivePronoun": "Pronome posesivo",
   "caseReflexive": "Reflexivo",
   "caseSubject": "Nominativo",
-  "chatAiChat": "Chat",
-  "chatAllConversations": "Todas as conversas",
-  "chatChoosePersona": "Seleccionar persoa",
-  "chatEndMessage": "Queres finalizar a conversa?",
-  "chatEndTitle": "Finalizar e gardar a conversa",
-  "chatFailed": "Erro no chat: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Extracto da conversa ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Historial de chat",
-  "chatNew": "Novo chat",
-  "chatNewChat": "Novo chat",
-  "chatNoConversations": "Aínda non hai conversas",
-  "chatSearchHint": "Buscar polo título da conversa...",
-  "chatNoteSearchHint": "Buscar na nota...",
-  "chatSaveAndExit": "Gardar e saír",
-  "chatStartNewPrompt": "Comeza unha nova conversa para practicar!",
-  "chatTypeHint": "Escribe unha mensaxe...",
-  "chatUntitled": "Conversa sen título",
   "checking": "Comprobando...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Queres eliminar esta conversa?\nNon poderás recuperala.",
-  "confirmDeleteParticipant": "Queres eliminar este participante?",
   "contextTagHint": "Escribe a situación para que sexa máis doado de distinguir máis tarde",
   "contextTagLabel": "Contexto/Situación (opcional) - Ex: Saúdo matinal, formal",
   "copiedToClipboard": "Copiado no portapapeis!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Practica diálogos a través de xogos de rol. Selecciona e di as respostas axeitadas.",
-  "dialogueQuestTitle": "Busca de diálogos",
-  "disambiguationPrompt": "A que significado queres traducir?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Seleccionar significado",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Non tes unha conta?",
-  "editParticipant": "Editar participante",
   "email": "Correo electrónico",
   "emailAlreadyInUse": "Este correo electrónico xa está rexistrado. Inicia sesión ou usa a recuperación de contrasinal.",
+  "enterNameHint": "Escribe un nome",
   "enterNewSubjectName": "Introduce un título novo",
   "enterSentenceHint": "Escribe unha frase...",
   "enterTextHint": "Escribe o texto para traducir",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Texto recoñecido",
   "female": "Muller",
   "file": "Ficheiro:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Modo de xogo",
   "gameOver": "Fin da partida",
   "gender": "Xénero",
-  "labelFilterMaterial": "Material",
-  "labelFilterTag": "Etiqueta",
   "generalTags": "Etiquetas xerais",
   "getMaterials": "Obter materiais",
   "good": "Ben",
   "googleContinue": "Continuar con Google",
-  "helpDialogueImportDesc": "Importa un conxunto completo de diálogos como un ficheiro JSON.",
-  "helpDialogueImportDetails": "• Estrutura JSON: usa a matriz `dialogues` en lugar de `entries`\n• Recuperación automática: o título, a persoa e a orde da mensaxe do diálogo restablécense.\n• Localización: os diálogos importados aparecen na pestana «Historial» do modo de chat da IA.",
   "helpJsonDesc": "Para importar material de aprendizaxe para usar no modo 3 como ficheiro JSON, siga o seguinte formato:",
-  "helpJsonTypeDialogue": "Diálogo",
   "helpJsonTypeSentence": "Frase",
   "helpJsonTypeWord": "Palabra",
   "helpMode1Desc": "Comeza a aprender idiomas da forma máis intuitiva con iconas premium de micrófono 3D e teclado grande.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Selección de material: Usa o menú (⋮) na parte superior dereita para 'Seleccionar material de estudo' ou 'Biblioteca en liña'.\n• Virar tarxeta: Comproba a tradución con 'Mostrar/Ocultar'.\n• Escoitar: Reproduce a pronuncia co ícone do altofalante.\n• Aprendizaxe completa: Marca cun símbolo de verificación (V) para completar a aprendizaxe.\n• Eliminar: Mantén presionada a tarxeta (clic longo) para eliminar o rexistro.\n• Busca e filtro: Admite a barra de busca (busca intelixente en tempo real) e as etiquetas, filtro de letra inicial.",
   "helpMode3Desc": "Escoita a frase e practica a pronunciación repetíndoa (Shadowing).",
   "helpMode3Details": "• Selección de material: selecciona o libro de traballo para aprender\n• Axuste do intervalo: axusta o tempo de espera entre frases cos botóns [-] [+]. (3 segundos ~ 60 segundos)\n• Comezar/Deter: controlar a sesión de shadowing\n• Falar: escoitar a voz e repetir\n• Comentarios: puntuación de precisión (0-100) e visualización de cor\n• Criterios de busca: filtrar os obxectivos da práctica por etiquetas, elementos recentes, letra inicial",
-  "helpModeChatDesc": "Practica a conversación real falando cunha personaxe de IA.",
-  "helpModeChatDetails": "• Chat de IA: practica conversas reais con personaxes no menú 'Chat' na barra de pestanas inferior\n• Configuración de personaxe: especifica libremente o xénero, o nome e o código de idioma da outra persoa\n• Escenas de GPS: recoñece a miña localización actual e recomenda temas de conversa axeitados para o lugar\n• Dous idiomas: as respostas da IA móstranse coa tradución para maximizar o efecto da aprendizaxe\n• Xestión de rexistros: filtra o historial de conversas pasadas e garda mensaxes específicas das conversas como material de aprendizaxe",
+  "helpNote": "Escribe libremente os significados das palabras, exemplos ou situacións.",
+  "helpNotebook": "Selecciona un cartafol para gardar os resultados traducidos.",
   "helpTabJson": "Formato JSON",
   "helpTabModes": "Descrición dos modos",
   "helpTabQuickStart": "Guía rápida",
   "helpTabTour": "Visita guiada",
+  "helpTag": "Introduce palabras clave para clasificar ou buscar máis tarde.",
   "helpTitle": "Axuda e guía",
   "helpTourDesc": "Un **círculo resaltado** guiaráche polas funcións clave.\n(Ex: mantén pulsada a tarxeta que apunta o **círculo resaltado** para eliminar.)",
   "hide": "Ocultar",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Exemplo: Contexto, homónimos, etc.",
+  "hintTagExample": "Exemplo: Negocios, viaxes...",
+  "homeTab": "Tradución",
   "importAdded": "Engadido: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Importáronse {files} ficheiros e {entries} entradas.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Importar ficheiro JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Ficheiro JSON único",
+  "importSourceFolder": "Cartafol (estrutura de biblioteca específica do idioma)",
+  "importSourceTitle": "Seleccionar orixe de importación",
+  "importSourceZip": "Ficheiro ZIP (cartafol comprimido)",
   "importTotal": "Total: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Contido de entrada",
+  "inputLanguage": "Idioma de entrada",
   "inputModeTitle": "Entrada",
   "intervalSeconds": "Intervalo: {seconds} segundos",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Introduce un correo electrónico válido.",
   "kakaoContinue": "Continuar con Kakao",
+  "labelDetails": "Axustes detallados",
+  "labelFilterMaterial": "Material",
+  "labelFilterTag": "Etiqueta",
   "labelLangCode": "Código de idioma (p. ex., en-US, ko-KR)",
-  "labelName": "Nome",
   "labelNote": "Nota",
   "labelPOS": "Categoría gramatical",
-  "labelRole": "Rol",
   "labelSentence": "Frase",
   "labelSentenceCollection": "Colección de frases",
   "labelSentenceType": "Tipo de frase",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Cargando participantes...",
   "location": "Localización",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Iniciar sesión",
   "logout": "Saír",
   "logoutConfirmMessage": "Queres saír deste dispositivo?",
   "logoutConfirmTitle": "Saír",
   "male": "Home",
-  "manageParticipants": "Xestionar participantes",
   "manual": "Entrada manual",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Información do material",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Eu",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Importar material desde o dispositivo",
   "menuHelp": "Axuda",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "A miña colección de frases",
   "myWordbook": "O meu vocabulario",
   "neutral": "Neutro",
+  "newNotebookTitle": "Nome da nova colección",
   "newSubjectName": "Novo título de tema/colección de frases",
   "next": "Seguinte",
-  "noDialogueHistory": "Non hai historial de conversa.",
-  "noInternetWarningMic": "Non hai conexión a internet. É posible que o recoñecemento de voz non funcione sen conexión.",
-  "noInternetWarningTranslate": "Non hai conexión a internet. A función de tradución non está dispoñible sen conexión. Usa o modo de repaso.",
+  "noDataForLanguage": "Non hai datos de aprendizaxe para o idioma seleccionado na base de datos local. Descarga os datos ou selecciona outro idioma.",
   "noMaterialsInCategory": "Non hai materiais nesta categoría.",
-  "noParticipantsFound": "Non se atoparon participantes rexistrados.",
   "noRecords": "Non hai rexistros de estudo para o idioma seleccionado",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Non se detectou ningunha voz",
   "notSelected": "- Sen seleccionar -",
+  "noteGuidance": "Onde introduce detalles adicionais para unha tradución máis precisa",
   "onlineLibraryCheckInternet": "Comproba a túa conexión a internet ou inténtao de novo máis tarde.",
   "onlineLibraryLoadFailed": "Non se puideron cargar os materiais.",
   "onlineLibraryNoMaterials": "Non hai materiais.",
-  "participantDeleted": "Eliminouse o participante.",
-  "participantRename": "Cambiar o nome do participante",
-  "partner": "Socio",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Modo socio",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Abrir axustes",
   "password": "Contrasinal",
   "passwordTooShort": "O contrasinal debe ter polo menos 6 caracteres.",
   "perfect": "Perfecto!",
-  "personaFriend": "Amigo local",
-  "personaGuide": "Guía turístico",
-  "personaTeacher": "Profesor de inglés",
+  "pickGallery": "Escoller da galería",
   "playAgain": "Xogar de novo",
   "playbackFailed": "Erro ao reproducir: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Adxectivo",
   "posAdverb": "Adverbio",
+  "posArticle": "Artigo",
   "posConjunction": "Conxunción",
   "posInterjection": "Interxección",
   "posNoun": "Substantivo",
+  "posParticle": "Partícula",
   "posPreposition": "Preposición",
   "posPronoun": "Pronome",
   "posVerb": "Verbo",
   "practiceModeTitle": "Práctica",
   "practiceWordsOnly": "Practicar só palabras",
+  "processing": "Procesando...",
   "progress": "Progreso: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Primeiro, especifica o teu idioma e o idioma que queres aprender en Menú > Configuración de idioma.",
+  "quickStartStep1Title": "1. Selecciona o idioma",
+  "quickStartStep2Desc": "Crea as túas propias tarxetas de aprendizaxe na seguinte orde: entrada (micrófono/teclado) -> tradución -> gardar.",
+  "quickStartStep2Title": "2. Fluxo básico",
+  "quickStartStep3Desc": "Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.",
+  "quickStartStep3Title": "3. Usa os modos",
   "recentNItems": "Mostrar os {count} elementos creados recentemente",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Solicitar tradución",
   "reset": "Restablecer",
   "resetPracticeHistory": "Restablecer o historial de práctica",
   "retry": "Tentar de novo?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Repaso",
-  "roleAi": "IA",
-  "roleThirdParty": "Terceiro",
-  "roleUser": "Usuario",
   "save": "Gardar",
+  "saveAsSentence": "Gardar como frase",
+  "saveAsWord": "Gardar como palabra",
   "saveData": "Gardar datos",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Gardar no historial de dixitalización",
   "saveTranslationsFromSearch": "Tenta gardar as traducións desde o modo de busca",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Selecciona unha imaxe para dixitalizar",
+  "scanLabel": "Dixitalizar",
   "score": "Precisión: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Seleccionar categoría gramatical",
-  "selectParticipants": "Seleccionar participantes",
-  "selectSentenceType": "Seleccionar tipo de frase",
   "selectStudyMaterial": "Selecciona o material de estudo",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Frase",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Rexistrarse",
-  "similarTextFound": "Texto similar atopado",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Omitir",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Fonte:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Idioma orixinal",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Transforma conversas cotiás en idiomas estranxeiros ao instante! Talkie rexistra a túa vida lingüística.",
   "sourceLanguageLabel": "O meu idioma (Orixinal)",
-  "speakNow": "Fala agora!",
-  "speaker": "Falante",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Seleccionar falante",
-  "speakingPractice": "Práctica de fala",
-  "startChat": "Comezar conversa",
-  "startPractice": "Comezar a practicar",
   "startTutorial": "Comezar o titorial",
-  "startWarning": "Aviso",
   "startsWith": "Comeza por",
   "statusCheckEmail": "Por favor, comproba o teu correo electrónico para completar a verificación.",
   "statusDownloading": "Descargando: {name}...",
-  "statusImportFailed": "Erro ao importar: {error}",
-  "statusImportSuccess": "{name} importado correctamente",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Cancelouse o inicio de sesión.",
-  "statusLoginFailed": "Erro ao iniciar sesión: {error}",
-  "statusLoginSuccess": "Sesión iniciada correctamente.",
-  "statusLogoutSuccess": "Sesión pechada.",
-  "statusSignUpFailed": "Erro ao rexistrarse: {error}",
-  "statusSigningUp": "Rexistrando...",
-  "stopPractice": "Deter a práctica",
-  "studyComplete": "Estudo completo",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Rexistros de estudo ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Erro ao importar: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} importado correctamente",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Erro ao iniciar sesión: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Sesión iniciada correctamente.",
+  "statusLogoutSuccess": "Sesión pechada.",
+  "statusRequestFailed": "Erro na solicitude de tradución: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Solicitude de tradución completada.",
+  "stopPractice": "Deter a práctica",
+  "studyLangNotFoundDesc": "O material seleccionado non admite o idioma de estudo actual ({targetLang}), polo que non se pode gardar localmente. Queres solicitar unha tradución?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Idioma de estudo non admitido",
   "styleFormal": "Formal",
   "styleInformal": "Informal",
   "stylePolite": "Educado",
   "styleSlang": "Xerga/argot",
-  "subject": "Título:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Cambiar idiomas",
-  "switchToAi": "Cambiar ao modo IA",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Cambiar ao modo socio",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Sincronizando datos...",
-  "tabConversation": "Conversa",
   "tabReview": "Repaso ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Diminuír",
   "tooltipIncrease": "Aumentar",
   "tooltipSearch": "Buscar",
+  "tooltipSettingsConfirm": "Confirmar axustes",
   "tooltipSpeaking": "Falar",
   "tooltipStudyReview": "Estudo+Repaso",
   "totalRecords": "Total de {count} rexistros (ver todo)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Traducir agora",
   "translating": "Traducindo...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Idioma de tradución",
   "translationLimitExceeded": "Superouse o límite de tradución",
   "translationLimitMessage": "Usaches todas as traducións gratuítas diarias (5 veces).\\n\\nQueres ver un anuncio e recargar 5 veces ao instante?",
   "translationLoaded": "Tradución gardada cargada",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "O número de traducións recargouse 5 veces!",
+  "translationResult": "Resultado da tradución",
   "translationResultHint": "Resultado da tradución - editable",
   "tryAgain": "Téntao de novo",
-  "tutorialAiChatDesc": "Practica a conversa real cunha persoa da IA.",
-  "tutorialAiChatTitle": "Chat con IA",
+  "ttsInstallGuide": "Por favor, instala os datos do idioma en Configuración de Android > Google TTS.",
+  "ttsMissing": "Non hai o motor de voz para este idioma instalado no teu dispositivo.",
+  "ttsUnsupportedNatively": "A configuración predeterminada deste dispositivo non admite a saída de voz neste idioma.",
   "tutorialContextDesc": "Podes gardar a mesma frase por separado se anotas a situación (por exemplo, mañá, noite).",
   "tutorialContextTitle": "Etiqueta de situación/contexto",
   "tutorialLangSettingsDesc": "Establece o idioma orixinal e o idioma de destino para traducir.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Traduce o texto que escribiches.",
   "tutorialTransTitle": "Traducir",
   "typeExclamation": "Exclamación",
+  "typeIdiom": "Idioma",
   "typeImperative": "Imperativo",
+  "typeProverb": "Proverbio/Dito",
   "typeQuestion": "Pregunta",
   "typeStatement": "Declaración",
   "usageLimitTitle": "Límite acadado",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Ver guía en liña",
   "voluntaryTranslations": "Traducións voluntarias",
   "watchAdAndRefill": "Ver anuncio e recargar (+5 veces)",
+  "welcomeButton": "Comezar",
+  "welcomeDesc": "Benvido a Talkie! Admite máis de 80 idiomas de todo o mundo cunha integridade do 100 %, cun novo deseño 3D premium e un rendemento optimizado para unha experiencia de aprendizaxe perfecta.",
+  "welcomeTitle": "Benvido a Talkie!",
   "word": "Palabra",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Defende a base dicindo a palabra antes de que chegue o inimigo.",
   "wordDefenseTitle": "Defensa de palabras",
   "wordModeLabel": "Modo palabra",
-  "yourPronunciation": "A túa pronuncia",
-  "ttsUnsupportedNatively": "A configuración predeterminada deste dispositivo non admite a saída de voz neste idioma.",
-  "homeTab": "Tradución",
-  "welcomeTitle": "Benvido a Talkie!",
-  "welcomeDesc": "Benvido a Talkie! Admite máis de 80 idiomas de todo o mundo cunha integridade do 100 %, cun novo deseño 3D premium e un rendemento optimizado para unha experiencia de aprendizaxe perfecta.",
-  "welcomeButton": "Comezar",
-  "labelDetails": "Axustes detallados",
-  "translationResult": "Resultado da tradución",
-  "inputContent": "Contido de entrada",
-  "translateNow": "Traducir agora",
-  "tooltipSettingsConfirm": "Confirmar axustes",
-  "hintNoteExample": "Exemplo: Contexto, homónimos, etc.",
-  "hintTagExample": "Exemplo: Negocios, viaxes...",
-  "addNew": "Engadir novo",
-  "newNotebookTitle": "Nome da nova colección",
-  "enterNameHint": "Escribe un nome",
-  "add": "Engadir",
-  "openSettings": "Abrir axustes",
-  "helpNotebook": "Selecciona un cartafol para gardar os resultados traducidos.",
-  "helpNote": "Escribe libremente os significados das palabras, exemplos ou situacións.",
-  "helpTag": "Introduce palabras clave para clasificar ou buscar máis tarde.",
-  "requestTranslation": "Solicitar tradución",
-  "statusRequestSuccess": "Solicitude de tradución completada.",
-  "statusRequestFailed": "Erro na solicitude de tradución: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Idioma de estudo non admitido",
-  "studyLangNotFoundDesc": "O material seleccionado non admite o idioma de estudo actual ({targetLang}), polo que non se pode gardar localmente. Queres solicitar unha tradución?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Selecciona o idioma",
-  "quickStartStep1Desc": "Primeiro, especifica o teu idioma e o idioma que queres aprender en Menú > Configuración de idioma.",
-  "quickStartStep2Title": "2. Fluxo básico",
-  "quickStartStep2Desc": "Crea as túas propias tarxetas de aprendizaxe na seguinte orde: entrada (micrófono/teclado) -> tradución -> gardar.",
-  "quickStartStep3Title": "3. Usa os modos",
-  "quickStartStep3Desc": "Practica chateando e practica pronunciando directamente mentres ves o texto na pestana de práctica de pronuncia.",
-  "noteGuidance": "Onde introduce detalles adicionais para unha tradución máis precisa"
+  "yourPronunciation": "A túa pronuncia"
 }

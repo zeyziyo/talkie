@@ -9,52 +9,19 @@ class AppLocalizationsSr extends AppLocalizations {
   AppLocalizationsSr([String locale = 'sr']) : super(locale);
 
   @override
-  String get basicWords => 'Основно складиште речи';
-
-  @override
-  String get inputLanguage => 'Улазни језик';
-
-  @override
-  String get translationLanguage => 'Језик превода';
-
-  @override
-  String get simplifiedGuidance =>
-      'Тренутна конверзија свакодневних разговора на стране језике! Talkie бележи твој језички живот.';
-
-  @override
-  String get noDataForLanguage =>
-      'Нема доступних материјала за учење за изабрани језик у локалној бази података. Преузмите материјале или изаберите други језик.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Откажи';
-
-  @override
   String get accuracy => 'Тачност';
-
-  @override
-  String get ttsMissing =>
-      'Глас мотора за овај језик није инсталиран на вашем уређају.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Инсталирајте одговарајуће језичке податке у подешавањима за Андроид > Google TTS.';
 
   @override
   String get adLoading => 'Оглас се учитава. Покушајте поново касније.';
 
   @override
-  String get addNewSubject => 'Додај нови наслов';
+  String get add => 'Додај';
 
   @override
-  String get addParticipant => 'Додај учесника';
+  String get addNew => 'Додај ново';
+
+  @override
+  String get addNewSubject => 'Додај нови наслов';
 
   @override
   String get addTagHint => 'Додај ознаку...';
@@ -87,6 +54,12 @@ class AppLocalizationsSr extends AppLocalizations {
   String get basicWordRepository => 'Основно складиште речи';
 
   @override
+  String get basicWords => 'Основно складиште речи';
+
+  @override
+  String get cancel => 'Откажи';
+
+  @override
   String get caseObject => 'Акузатив';
 
   @override
@@ -102,61 +75,6 @@ class AppLocalizationsSr extends AppLocalizations {
   String get caseSubject => 'Номинатив';
 
   @override
-  String get chatAiChat => 'Ћаскање';
-
-  @override
-  String get chatAllConversations => 'Сви разговори';
-
-  @override
-  String get chatChoosePersona => 'Изаберите персону';
-
-  @override
-  String get chatEndMessage => 'Да ли желите да завршите разговор?';
-
-  @override
-  String get chatEndTitle => 'Завршетак и чување разговора';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Ћаскање није успело: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Издвојено из разговора ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Историја разговора';
-
-  @override
-  String get chatNew => 'Нови разговор';
-
-  @override
-  String get chatNewChat => 'Нови разговор';
-
-  @override
-  String get chatNoConversations => 'Још нема разговора';
-
-  @override
-  String get chatSearchHint => 'Претрага по наслову разговора...';
-
-  @override
-  String get chatNoteSearchHint => 'Претрага по белешкама...';
-
-  @override
-  String get chatSaveAndExit => 'Сачувај и изађи';
-
-  @override
-  String get chatStartNewPrompt => 'Започните нови разговор за вежбање!';
-
-  @override
-  String get chatTypeHint => 'Унесите поруку...';
-
-  @override
-  String get chatUntitled => 'Разговор без наслова';
-
-  @override
   String get checking => 'Провера у току...';
 
   @override
@@ -168,14 +86,6 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get confirmDelete =>
       'Да ли сте сигурни да желите да обришете овај запис о учењу?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Да ли сте сигурни да желите да избришете овај разговор?\nИзбрисани разговори се не могу вратити.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Да ли сте сигурни да желите да избришете овог учесника?';
 
   @override
   String get contextTagHint =>
@@ -215,23 +125,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get deleteRecord => 'Обриши запис';
 
   @override
-  String get dialogueQuestDesc =>
-      'Вежбајте разговор кроз ситуациону драму. Изаберите и изговорите одговарајући одговор.';
-
-  @override
-  String get dialogueQuestTitle => 'Дијалошка потрага';
-
-  @override
-  String get disambiguationPrompt => 'Како желите да преведете?';
-
-  @override
-  String get disambiguationTitle => 'Изаберите значење';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Немате налог?';
-
-  @override
-  String get editParticipant => 'Измени учесника';
 
   @override
   String get email => 'Е-пошта';
@@ -239,6 +136,9 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Овај имејл је већ регистрован. Молимо вас да се пријавите или користите опцију за проналажење лозинке.';
+
+  @override
+  String get enterNameHint => 'Унесите име';
 
   @override
   String get enterNewSubjectName => 'Унесите нови наслов';
@@ -278,6 +178,9 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get errors => 'Грешке:';
+
+  @override
+  String get extractedText => 'Препознати текст';
 
   @override
   String get female => 'Женски';
@@ -337,12 +240,6 @@ class AppLocalizationsSr extends AppLocalizations {
   String get gender => 'Пол';
 
   @override
-  String get labelFilterMaterial => 'Материјал';
-
-  @override
-  String get labelFilterTag => 'Ознака';
-
-  @override
   String get generalTags => 'Опште ознаке';
 
   @override
@@ -355,19 +252,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get googleContinue => 'Настави преко Google-а';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Увезите комплетан скуп дијалога као JSON датотеку.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON структура: Користите низ `dialogues` уместо `entries`\n• Аутоматски опоравак: Наслов дијалога, персона и редослед порука се враћају.\n• Локација: Увезени дијалози се појављују на картици \'Историја\' у режиму AI ћаскања.';
-
-  @override
   String get helpJsonDesc =>
       'Да бисте увезли материјале за учење које ћете користити у режиму 3 као JSON датотеку, следите овај формат:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Дијалог';
 
   @override
   String get helpJsonTypeSentence => 'Реченица';
@@ -400,12 +286,12 @@ class AppLocalizationsSr extends AppLocalizations {
       '• Избор материјала: Изаберите збирку материјала за учење\n• Подешавање интервала: Подесите време чекања између реченица помоћу дугмади [-] [+]. (3 секунде ~ 60 секунди)\n• Почетак/заустављање: Контролишите сесију праћења\n• Говор: Слушајте глас и понављајте\n• Повратне информације: Приказ резултата тачности (0-100) и боје\n• Услови претраге: Филтрирање циља за вежбање по ознаци, недавним ставкама, почетном слову';
 
   @override
-  String get helpModeChatDesc =>
-      'Вежбајте разговор у стварним ситуацијама комуницирајући са АИ персоном.';
+  String get helpNote =>
+      'Слободно забележите значење речи, примере или ситуације.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI ћаскање: Вежбајте разговор из стварног живота са персоном у менију \'Ћаскање\' на доњој траци са картицама\n• Подешавање персоне: Слободно одредите пол, име и код језика друге стране\n• GPS ситуациона драма: Препоручује теме разговора које одговарају месту препознавањем моје тренутне локације\n• 2 језика: Одговори вештачке интелигенције се приказују са преводом како би се максимизовао ефекат учења\n• Управљање записима: Филтрирање претходне историје разговора и чување одређених порука током разговора као материјала за учење';
+  String get helpNotebook =>
+      'Изаберите фасциклу за чување преведених резултата.';
 
   @override
   String get helpTabJson => 'JSON формат';
@@ -420,6 +306,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get helpTabTour => 'Пробајте';
 
   @override
+  String get helpTag =>
+      'Унесите кључне речи за каснију класификацију или претрагу.';
+
+  @override
   String get helpTitle => 'Помоћ и водич';
 
   @override
@@ -428,6 +318,15 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get hide => 'Сакриј';
+
+  @override
+  String get hintNoteExample => 'Нпр.: Контекст, хомоними...';
+
+  @override
+  String get hintTagExample => 'Нпр.: Посао, путовање...';
+
+  @override
+  String get homeTab => 'Превод';
 
   @override
   String importAdded(int count) {
@@ -440,23 +339,6 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Материјал са истим насловом већ постоји. Промените наслов и покушајте поново.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -472,6 +354,11 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files датотека, $entries ставки је увезено.';
+  }
+
+  @override
   String get importJsonFile => 'Увези JSON датотеку';
 
   @override
@@ -483,12 +370,30 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Једна JSON датотека';
+
+  @override
+  String get importSourceFolder => 'Фасцикла (структура библиотеке по језику)';
+
+  @override
+  String get importSourceTitle => 'Изаберите извор увоза';
+
+  @override
+  String get importSourceZip => 'ZIP датотека (компресована фасцикла)';
+
+  @override
   String importTotal(int count) {
     return 'Укупно: $count';
   }
 
   @override
   String get importing => 'Увоз у току...';
+
+  @override
+  String get inputContent => 'Унети садржај';
+
+  @override
+  String get inputLanguage => 'Улазни језик';
 
   @override
   String get inputModeTitle => 'Унос';
@@ -505,19 +410,22 @@ class AppLocalizationsSr extends AppLocalizations {
   String get kakaoContinue => 'Настави преко Какао-а';
 
   @override
-  String get labelLangCode => 'Код језика (нпр. en-US, ko-KR)';
+  String get labelDetails => 'Детаљна подешавања';
 
   @override
-  String get labelName => 'Име';
+  String get labelFilterMaterial => 'Материјал';
+
+  @override
+  String get labelFilterTag => 'Ознака';
+
+  @override
+  String get labelLangCode => 'Код језика (нпр. en-US, ko-KR)';
 
   @override
   String get labelNote => 'Белешка';
 
   @override
   String get labelPOS => 'Врста речи';
-
-  @override
-  String get labelRole => 'Улога';
 
   @override
   String get labelSentence => 'Реченица';
@@ -568,9 +476,6 @@ class AppLocalizationsSr extends AppLocalizations {
   String get listening => 'Слушање у току...';
 
   @override
-  String get loadingParticipants => 'Учитавање учесника...';
-
-  @override
   String get location => 'Локација';
 
   @override
@@ -590,9 +495,6 @@ class AppLocalizationsSr extends AppLocalizations {
   String get male => 'Мушки';
 
   @override
-  String get manageParticipants => 'Управљање учесницима';
-
-  @override
   String get manual => 'Ручни унос';
 
   @override
@@ -600,9 +502,6 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get materialInfo => 'Информације о материјалу';
-
-  @override
-  String get me => 'Ја';
 
   @override
   String get menuDeviceImport => 'Увези материјале са уређаја';
@@ -670,27 +569,20 @@ class AppLocalizationsSr extends AppLocalizations {
   String get neutral => 'Неутрално';
 
   @override
+  String get newNotebookTitle => 'Назив нове свеске';
+
+  @override
   String get newSubjectName => 'Нови наслов збирке речи/фраза';
 
   @override
   String get next => 'Следеће';
 
   @override
-  String get noDialogueHistory => 'Нема историје разговора.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Нема интернет конекције. Препознавање говора можда неће бити доступно у офлајн режиму.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Нема интернет конекције. Функција превођења није доступна у офлајн режиму. Користите режим за преглед.';
+  String get noDataForLanguage =>
+      'Нема доступних материјала за учење за изабрани језик у локалној бази података. Преузмите материјале или изаберите други језик.';
 
   @override
   String get noMaterialsInCategory => 'Нема материјала у овој категорији.';
-
-  @override
-  String get noParticipantsFound => 'Нема регистрованих учесника.';
 
   @override
   String get noRecords => 'Нема записа о учењу за изабрани језик';
@@ -711,6 +603,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get notSelected => '- Није изабрано -';
 
   @override
+  String get noteGuidance => 'Где уносите додатне детаље за прецизнији превод';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Проверите интернет конекцију или покушајте поново касније.';
 
@@ -721,16 +616,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Нема материјала.';
 
   @override
-  String get participantDeleted => 'Учесник је избрисан.';
-
-  @override
-  String get participantRename => 'Промени име учесника';
-
-  @override
-  String get partner => 'Партнер';
-
-  @override
-  String get partnerMode => 'Режим партнера';
+  String get openSettings => 'Отвори подешавања';
 
   @override
   String get password => 'Лозинка';
@@ -742,13 +628,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get perfect => 'Савршено!';
 
   @override
-  String get personaFriend => 'Локални пријатељ';
-
-  @override
-  String get personaGuide => 'Туристички водич';
-
-  @override
-  String get personaTeacher => 'Наставник енглеског';
+  String get pickGallery => 'Изаберите из галерије';
 
   @override
   String get playAgain => 'Играј поново';
@@ -768,6 +648,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get posAdverb => 'Прилог';
 
   @override
+  String get posArticle => 'Члан';
+
+  @override
   String get posConjunction => 'Веза';
 
   @override
@@ -775,6 +658,9 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get posNoun => 'Именица';
+
+  @override
+  String get posParticle => 'Партикула';
 
   @override
   String get posPreposition => 'Предлог/Предлог';
@@ -792,9 +678,33 @@ class AppLocalizationsSr extends AppLocalizations {
   String get practiceWordsOnly => 'Вежбајте само речи';
 
   @override
+  String get processing => 'Обрада у току...';
+
+  @override
   String progress(int current, int total) {
     return 'Напредак: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Прво изаберите свој језик и језик за учење у Мени > Подешавање језика.';
+
+  @override
+  String get quickStartStep1Title => '1. Подешавање језика';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Направите своје картице за учење редоследом: Унос (микрофон/тастатура) -> Превод -> Сачувај.';
+
+  @override
+  String get quickStartStep2Title => '2. Основни ток';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Вежбајте ћаскање и вежбајте изговор директно гледајући текст на картици за вежбање изговора.';
+
+  @override
+  String get quickStartStep3Title => '3. Коришћење режима';
 
   @override
   String recentNItems(int count) {
@@ -819,6 +729,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get refresh => 'Освежи';
 
   @override
+  String get requestTranslation => 'Затражите превод';
+
+  @override
   String get reset => 'Ресетуј';
 
   @override
@@ -839,16 +752,13 @@ class AppLocalizationsSr extends AppLocalizations {
   String get reviewModeTitle => 'Преглед';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Трећа страна';
-
-  @override
-  String get roleUser => 'Корисник';
-
-  @override
   String get save => 'Сачувај';
+
+  @override
+  String get saveAsSentence => 'Сачувај као реченицу';
+
+  @override
+  String get saveAsWord => 'Сачувај као реч';
 
   @override
   String get saveData => 'Сачувај податке';
@@ -859,6 +769,9 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Сачувај у историју скенирања';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Покушајте да сачувате преводе из режима претраге';
 
@@ -867,6 +780,12 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get saving => 'Чување у току...';
+
+  @override
+  String get scanInstructions => 'Изаберите слику за скенирање';
+
+  @override
+  String get scanLabel => 'Скенирај';
 
   @override
   String score(String score) {
@@ -913,16 +832,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get selectPOS => 'Изаберите врсту речи';
 
   @override
-  String get selectParticipants => 'Изаберите учеснике';
-
-  @override
-  String get selectSentenceType => 'Изаберите врсту реченице';
-
-  @override
   String get selectStudyMaterial => 'Изаберите материјал за учење';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Реченица';
@@ -931,43 +841,14 @@ class AppLocalizationsSr extends AppLocalizations {
   String get signUp => 'Региструј ме';
 
   @override
-  String get similarTextFound => 'Пронађен сличан текст';
-
-  @override
-  String get skip => 'Прескочи';
-
-  @override
-  String get source => 'Извор:';
-
-  @override
-  String get sourceLanguage => 'Изворни језик';
+  String get simplifiedGuidance =>
+      'Тренутна конверзија свакодневних разговора на стране језике! Talkie бележи твој језички живот.';
 
   @override
   String get sourceLanguageLabel => 'Мој језик (Изворни)';
 
   @override
-  String get speakNow => 'Изговори сада!';
-
-  @override
-  String get speaker => 'Говорник';
-
-  @override
-  String get speakerSelect => 'Изаберите говорника';
-
-  @override
-  String get speakingPractice => 'Вежбање говора';
-
-  @override
-  String get startChat => 'Започни разговор';
-
-  @override
-  String get startPractice => 'Започните вежбање';
-
-  @override
   String get startTutorial => 'Започните упутство';
-
-  @override
-  String get startWarning => 'Упозорење';
 
   @override
   String get startsWith => 'Почетно слово';
@@ -977,28 +858,22 @@ class AppLocalizationsSr extends AppLocalizations {
       'Молимо вас да верификујете своју е-пошту да бисте довршили аутентификацију.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Преузимање: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Увоз није успео: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name је успешно увезен/а';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Пријава је отказана.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Пријава није успела: $error';
   }
 
@@ -1009,23 +884,23 @@ class AppLocalizationsSr extends AppLocalizations {
   String get statusLogoutSuccess => 'Успешно сте се одјавили.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Регистрација није успела: $error';
+  String statusRequestFailed(String error) {
+    return 'Захтев за превод није успео: $error';
   }
 
   @override
-  String get statusSigningUp => 'Регистрација у току...';
+  String get statusRequestSuccess => 'Захтев за превод је завршен.';
 
   @override
   String get stopPractice => 'Зауставите вежбање';
 
   @override
-  String get studyComplete => 'Учење завршено';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Изабрани материјал не подржава тренутно подешени језик учења ($targetLang), тако да се не може сачувати локално. Да ли желите да затражите превод?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Записи о учењу ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Језик учења није подржан';
 
   @override
   String get styleFormal => 'Формално';
@@ -1040,22 +915,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get styleSlang => 'Сленг';
 
   @override
-  String get subject => 'Наслов:';
-
-  @override
   String get swapLanguages => 'Замени језике';
 
   @override
-  String get switchToAi => 'Пребацивање на AI режим';
-
-  @override
-  String get switchToPartner => 'Пребацивање на режим партнера';
-
-  @override
   String get syncingData => 'Синхронизација података...';
-
-  @override
-  String get tabConversation => 'Разговор';
 
   @override
   String tabReview(int count) {
@@ -1119,6 +982,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tooltipSearch => 'Претрага';
 
   @override
+  String get tooltipSettingsConfirm => 'Потврди подешавања';
+
+  @override
   String get tooltipSpeaking => 'Говор';
 
   @override
@@ -1131,6 +997,9 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get translate => 'Превод';
+
+  @override
+  String get translateNow => 'Преведи сада';
 
   @override
   String get translating => 'Превод у току...';
@@ -1147,6 +1016,9 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Језик превода';
+
+  @override
   String get translationLimitExceeded => 'Прекорачено ограничење превода';
 
   @override
@@ -1160,17 +1032,25 @@ class AppLocalizationsSr extends AppLocalizations {
   String get translationRefilled => 'Број превода је допуњен 5 пута!';
 
   @override
+  String get translationResult => 'Резултат превода';
+
+  @override
   String get translationResultHint => 'Резултат превода - може се изменити';
 
   @override
   String get tryAgain => 'Покушајте поново';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Вежбајте разговор у стварном животу са AI персоном.';
+  String get ttsInstallGuide =>
+      'Инсталирајте одговарајуће језичке податке у подешавањима за Андроид > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'АИ Ћаскање';
+  String get ttsMissing =>
+      'Глас мотора за овај језик није инсталиран на вашем уређају.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Овај уређај не подржава гласовни излаз за овај језик.';
 
   @override
   String get tutorialContextDesc =>
@@ -1285,7 +1165,13 @@ class AppLocalizationsSr extends AppLocalizations {
   String get typeExclamation => 'Узвик';
 
   @override
+  String get typeIdiom => 'Идиом';
+
+  @override
   String get typeImperative => 'Заповест';
+
+  @override
+  String get typeProverb => 'Пословица';
 
   @override
   String get typeQuestion => 'Питање';
@@ -1300,6 +1186,11 @@ class AppLocalizationsSr extends AppLocalizations {
   String get useExistingText => 'Користи постојећи текст';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Погледајте онлајн водич';
 
   @override
@@ -1307,6 +1198,16 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Допуните гледањем огласа (+5 пута)';
+
+  @override
+  String get welcomeButton => 'Započni';
+
+  @override
+  String get welcomeDesc =>
+      'Добродошли у Talkie! Подржавамо преко 80 језика широм света са 100% интегритетом, а нови премиум 3Д дизајн и оптимизоване перформансе пружају савршено искуство учења.';
+
+  @override
+  String get welcomeTitle => 'Dobro došli u Talkie!';
 
   @override
   String get word => 'Реч';
@@ -1323,112 +1224,4 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ваш изговор';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Овај уређај не подржава гласовни излаз за овај језик.';
-
-  @override
-  String get homeTab => 'Превод';
-
-  @override
-  String get welcomeTitle => 'Dobro došli u Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Добродошли у Talkie! Подржавамо преко 80 језика широм света са 100% интегритетом, а нови премиум 3Д дизајн и оптимизоване перформансе пружају савршено искуство учења.';
-
-  @override
-  String get welcomeButton => 'Započni';
-
-  @override
-  String get labelDetails => 'Детаљна подешавања';
-
-  @override
-  String get translationResult => 'Резултат превода';
-
-  @override
-  String get inputContent => 'Унети садржај';
-
-  @override
-  String get translateNow => 'Преведи сада';
-
-  @override
-  String get tooltipSettingsConfirm => 'Потврди подешавања';
-
-  @override
-  String get hintNoteExample => 'Нпр.: Контекст, хомоними...';
-
-  @override
-  String get hintTagExample => 'Нпр.: Посао, путовање...';
-
-  @override
-  String get addNew => 'Додај ново';
-
-  @override
-  String get newNotebookTitle => 'Назив нове свеске';
-
-  @override
-  String get enterNameHint => 'Унесите име';
-
-  @override
-  String get add => 'Додај';
-
-  @override
-  String get openSettings => 'Отвори подешавања';
-
-  @override
-  String get helpNotebook =>
-      'Изаберите фасциклу за чување преведених резултата.';
-
-  @override
-  String get helpNote =>
-      'Слободно забележите значење речи, примере или ситуације.';
-
-  @override
-  String get helpTag =>
-      'Унесите кључне речи за каснију класификацију или претрагу.';
-
-  @override
-  String get requestTranslation => 'Затражите превод';
-
-  @override
-  String get statusRequestSuccess => 'Захтев за превод је завршен.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Захтев за превод није успео: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Језик учења није подржан';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Изабрани материјал не подржава тренутно подешени језик учења ($targetLang), тако да се не може сачувати локално. Да ли желите да затражите превод?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Подешавање језика';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Прво изаберите свој језик и језик за учење у Мени > Подешавање језика.';
-
-  @override
-  String get quickStartStep2Title => '2. Основни ток';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Направите своје картице за учење редоследом: Унос (микрофон/тастатура) -> Превод -> Сачувај.';
-
-  @override
-  String get quickStartStep3Title => '3. Коришћење режима';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Вежбајте ћаскање и вежбајте изговор директно гледајући текст на картици за вежбање изговора.';
-
-  @override
-  String get noteGuidance => 'Где уносите додатне детаље за прецизнији превод';
 }

@@ -50,7 +50,8 @@ Future<void> _processFileBatch(File file, Map<String, dynamic> masterMap, String
   for (final key in sortedKeys) {
     if (key.startsWith('@')) continue;
     bool isMissing = !targetMap.containsKey(key);
-    bool needsTranslation = !isMissing && targetMap[key].toString().contains('(TODO: Translate)');
+    final targetValue = targetMap[key]?.toString() ?? '';
+    bool needsTranslation = !isMissing && (targetValue.contains('(TODO: Translate)') || (langCode != 'ko' && _containsKorean(targetValue)));
     if (isMissing || needsTranslation) {
       batchToTranslate[key] = masterMap[key];
     }
@@ -172,4 +173,8 @@ Future<Map<String, String>> _loadEnv() async {
     env[parts[0].trim()] = val;
   }
   return env;
+}
+
+bool _containsKorean(String text) {
+  return RegExp(r'[ㄱ-ㅎㅏ-ㅣ가-힣]').hasMatch(text);
 }

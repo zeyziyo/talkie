@@ -9,53 +9,20 @@ class AppLocalizationsMn extends AppLocalizations {
   AppLocalizationsMn([String locale = 'mn']) : super(locale);
 
   @override
-  String get basicWords => 'Үндсэн үгсийн сан';
-
-  @override
-  String get inputLanguage => 'Оролтын хэл';
-
-  @override
-  String get translationLanguage => 'Орчуулгын хэл';
-
-  @override
-  String get simplifiedGuidance =>
-      'Өдөр тутмын яриаг гадаад хэл рүү шууд хөрвүүлээрэй! Talkie таны хэлний амьдралыг тэмдэглэнэ.';
-
-  @override
-  String get noDataForLanguage =>
-      'Таны сонгосон хэл дээр сургалтын материал Local DB-д байхгүй байна. Материалыг татаж авах эсвэл өөр хэл сонгоно уу.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Цуцлах';
-
-  @override
   String get accuracy => 'Нарийвчлал';
-
-  @override
-  String get ttsMissing =>
-      'Энэ хэлний дуут хөдөлгүүр таны төхөөрөмж дээр суугаагүй байна.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Андройд тохиргоо > Google TTS хэсгээс энэ хэлний өгөгдлийг суулгана уу.';
 
   @override
   String get adLoading =>
       'Зар татаж байна. Хэсэг хугацааны дараа дахин оролдоно уу.';
 
   @override
-  String get addNewSubject => 'Шинэ нэр нэмэх';
+  String get add => 'Нэмэх';
 
   @override
-  String get addParticipant => 'Оролцогч нэмэх';
+  String get addNew => 'Шинээр нэмэх';
+
+  @override
+  String get addNewSubject => 'Шинэ нэр нэмэх';
 
   @override
   String get addTagHint => 'Тэмдэг нэмэх...';
@@ -88,6 +55,12 @@ class AppLocalizationsMn extends AppLocalizations {
   String get basicWordRepository => 'Үндсэн үгсийн сан';
 
   @override
+  String get basicWords => 'Үндсэн үгсийн сан';
+
+  @override
+  String get cancel => 'Цуцлах';
+
+  @override
   String get caseObject => 'Зорилгын тохиолдол';
 
   @override
@@ -103,62 +76,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get caseSubject => 'Гол тохиолдол';
 
   @override
-  String get chatAiChat => 'Чат';
-
-  @override
-  String get chatAllConversations => 'Бүх яриа';
-
-  @override
-  String get chatChoosePersona => 'Дүр сонгох';
-
-  @override
-  String get chatEndMessage => 'Яриагаа дуусгах уу?';
-
-  @override
-  String get chatEndTitle => 'Яриаг дуусгаж хадгалах';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Чат хийж чадсангүй: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Ярианаас иш татах ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Ярианы түүх';
-
-  @override
-  String get chatNew => 'Шинэ яриа';
-
-  @override
-  String get chatNewChat => 'Шинэ яриа';
-
-  @override
-  String get chatNoConversations => 'Одоогоор яриа байхгүй байна';
-
-  @override
-  String get chatSearchHint => 'Чатны гарчигаар хайх...';
-
-  @override
-  String get chatNoteSearchHint => 'Тайлбараар хайх...';
-
-  @override
-  String get chatSaveAndExit => 'Хадгалж гараад гарах';
-
-  @override
-  String get chatStartNewPrompt =>
-      'Дадлага хийхийн тулд шинэ яриа эхлүүлээд үзээрэй!';
-
-  @override
-  String get chatTypeHint => 'Зурвас оруулна уу...';
-
-  @override
-  String get chatUntitled => 'Гарчиггүй яриа';
-
-  @override
   String get checking => 'Шалгаж байна...';
 
   @override
@@ -169,13 +86,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Энэ сургалтын бичлэгийг устгах уу?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Та энэ яриаг устгах уу?\nУстгасан яриаг сэргээх боломжгүй.';
-
-  @override
-  String get confirmDeleteParticipant => 'Та энэ оролцогчийг устгах уу?';
 
   @override
   String get contextTagHint =>
@@ -215,23 +125,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get deleteRecord => 'Бичлэгийг устгах';
 
   @override
-  String get dialogueQuestDesc =>
-      'Нөхцөл байдлын жүжгээр ярианы дадлага хийгээрэй. Тохиромжтой хариултыг сонгож хэлээрэй.';
-
-  @override
-  String get dialogueQuestTitle => 'Ярианы даалгавар';
-
-  @override
-  String get disambiguationPrompt => 'Ямар утгаар орчуулах вэ?';
-
-  @override
-  String get disambiguationTitle => 'Утга сонгох';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Та дансгүй юу?';
-
-  @override
-  String get editParticipant => 'Оролцогчийг засах';
 
   @override
   String get email => 'И-мэйл';
@@ -239,6 +136,9 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Бүртгэгдсэн имэйл хаяг байна. Нэвтэрч эсвэл нууц үгээ сэргээнэ үү.';
+
+  @override
+  String get enterNameHint => 'Нэр оруулна уу';
 
   @override
   String get enterNewSubjectName => 'Шинэ нэр оруулна уу';
@@ -277,6 +177,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get errors => 'Алдаа:';
+
+  @override
+  String get extractedText => 'Танигдсан текст';
 
   @override
   String get female => 'Эмэгтэй';
@@ -336,12 +239,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get gender => 'Хүйс';
 
   @override
-  String get labelFilterMaterial => 'Материал';
-
-  @override
-  String get labelFilterTag => 'Тэмдэг';
-
-  @override
   String get generalTags => 'Ерөнхий шошго';
 
   @override
@@ -354,19 +251,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get googleContinue => 'Google-ээр үргэлжлүүлэх';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Бүхэл ярианы багцыг JSON файлаар импортлох.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON бүтэц: `entries`-ийн оронд `dialogues` массивыг ашиглах\n• Автомат сэргээлт: Ярианы гарчиг, дүр, мессежийн дарааллыг сэргээнэ.\n• Байршил: Импортолсон яриа нь AI чат горимын \'Түүх\' таб дээр гарч ирнэ.';
-
-  @override
   String get helpJsonDesc =>
       'Mode 3-т ашиглах сургалтын материалыг JSON файлаар импортлохын тулд дараах форматыг баримтална уу:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Яриа (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'Өгүүлбэр (Sentence)';
@@ -399,12 +285,11 @@ class AppLocalizationsMn extends AppLocalizations {
       '• Материал сонгох: Сурах материалаа сонгох\n• Завсрын хугацаа тохируулах: [-] [+] товчлуураар өгүүлбэр хоорондын хүлээх хугацааг тохируулах (3 секундээс 60 секунд хүртэл)\n• Эхлүүлэх/Зогсоох: Shadowing сессийг хянах\n• Ярих: Дууг сонсоод дагаж ярих\n• Санал хүсэлт: Нарийвчлалын оноо (0-100) болон өнгөний дэлгэц\n• Хайлтын нөхцөл: Таг, саяхны зүйл, эхний үсгээр дадлага хийх зүйлийг шүүх';
 
   @override
-  String get helpModeChatDesc =>
-      'AI дүртэй ярилцаж, бодит харилцан яриаг дадлагажуулаарай.';
+  String get helpNote =>
+      'Үгийн утга, жишээ, нөхцөл байдлыг чөлөөтэй тэмдэглээрэй.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI чат: Доод таб баарны \'Чат\' цэснээс дүр төрхтэй бодит ярианы дадлага хийх\n• Дүр төрх тохируулах: Харилцагчийн хүйс, нэр, хэлний кодыг чөлөөтэй зааж өгөх\n• GPS жүжигчилсэн тоглоом: Одоогийн байгаа газрыг таньж, тухайн газарт тохирох ярианы сэдвийг санал болгох\n• 2 хэл: AI-ийн хариултыг орчуулгатай хамт харуулснаар сургалтын үр дүнг дээд зэргээр нэмэгдүүлэх\n• Бичлэгийн удирдлага: Өнгөрсөн ярианы түүхийг шүүж, ярианы явцад тодорхой мессежийг сургалтын материал болгон хадгалах';
+  String get helpNotebook => 'Орчуулгын үр дүнг хадгалах хавтас сонгоно уу.';
 
   @override
   String get helpTabJson => 'JSON формат';
@@ -419,6 +304,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get helpTabTour => 'Туршлага хуримтлуулах';
 
   @override
+  String get helpTag => 'Дараа нь ангилах эсвэл хайх түлхүүр үгээ оруулна уу.';
+
+  @override
   String get helpTitle => 'Тусламж & Заавар';
 
   @override
@@ -427,6 +315,16 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get hide => 'Нуух';
+
+  @override
+  String get hintNoteExample =>
+      'Жишээ нь: Нөхцөл байдал, ижил утгатай үгс гэх мэт';
+
+  @override
+  String get hintTagExample => 'Жишээ нь: Бизнес, аялал...';
+
+  @override
+  String get homeTab => 'Орчуулга';
 
   @override
   String importAdded(int count) {
@@ -439,23 +337,6 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Ижил нэртэй материал аль хэдийн байгаа. Нэрээ өөрчлөөд дахин оролдоно уу.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -471,6 +352,11 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files файл, $entries оруулгыг импортлов.';
+  }
+
+  @override
   String get importJsonFile => 'JSON файл оруулах';
 
   @override
@@ -482,12 +368,30 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Ганц JSON файл';
+
+  @override
+  String get importSourceFolder => 'Хавтас (хэлний сангийн бүтэцтэй)';
+
+  @override
+  String get importSourceTitle => 'Импортлох эх сурвалжаа сонгоно уу';
+
+  @override
+  String get importSourceZip => 'ZIP файл (шахсан хавтас)';
+
+  @override
   String importTotal(int count) {
     return 'Нийт: $count ширхэг';
   }
 
   @override
   String get importing => 'Оруулж байна...';
+
+  @override
+  String get inputContent => 'Оруулах агуулга';
+
+  @override
+  String get inputLanguage => 'Оролтын хэл';
 
   @override
   String get inputModeTitle => 'Оруулах';
@@ -504,19 +408,22 @@ class AppLocalizationsMn extends AppLocalizations {
   String get kakaoContinue => 'Какао-гоор үргэлжлүүлэх';
 
   @override
-  String get labelLangCode => 'Хэлний код (жш: en-US, ko-KR)';
+  String get labelDetails => 'Дэлгэрэнгүй тохиргоо';
 
   @override
-  String get labelName => 'Нэр';
+  String get labelFilterMaterial => 'Материал';
+
+  @override
+  String get labelFilterTag => 'Тэмдэг';
+
+  @override
+  String get labelLangCode => 'Хэлний код (жш: en-US, ko-KR)';
 
   @override
   String get labelNote => 'Тайлбар';
 
   @override
   String get labelPOS => 'Үгийн төрөл';
-
-  @override
-  String get labelRole => 'Үүрэг';
 
   @override
   String get labelSentence => 'Өгүүлбэр';
@@ -567,9 +474,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get listening => 'Сонсож байна...';
 
   @override
-  String get loadingParticipants => 'Оролцогчдыг ачаалж байна...';
-
-  @override
   String get location => 'Байршил';
 
   @override
@@ -588,9 +492,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get male => 'Эрэгтэй';
 
   @override
-  String get manageParticipants => 'Оролцогчдыг удирдах';
-
-  @override
   String get manual => 'Гараар оруулах';
 
   @override
@@ -598,9 +499,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get materialInfo => 'Материалын мэдээлэл';
-
-  @override
-  String get me => 'Би';
 
   @override
   String get menuDeviceImport => 'Төхөөрөмжөөс материал оруулах';
@@ -668,27 +566,20 @@ class AppLocalizationsMn extends AppLocalizations {
   String get neutral => 'Төвийг сахисан';
 
   @override
+  String get newNotebookTitle => 'Шинэ дэвтэрийн нэр';
+
+  @override
   String get newSubjectName => 'Шинэ нэр томьёоны сангийн нэр';
 
   @override
   String get next => 'Дараах';
 
   @override
-  String get noDialogueHistory => 'Ярианы түүх байхгүй.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Интернет холболт байхгүй байна. Офлайн үед дуу хоолой таних боломжгүй байж болно.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Интернет холболт байхгүй байна. Офлайн үед орчуулгын үйл ажиллагааг ашиглах боломжгүй. Дадлагын горимыг ашиглана уу.';
+  String get noDataForLanguage =>
+      'Таны сонгосон хэл дээр сургалтын материал Local DB-д байхгүй байна. Материалыг татаж авах эсвэл өөр хэл сонгоно уу.';
 
   @override
   String get noMaterialsInCategory => 'Энэ ангилалд материал байхгүй байна.';
-
-  @override
-  String get noParticipantsFound => 'Бүртгэгдсэн оролцогч байхгүй.';
 
   @override
   String get noRecords => 'Сонгосон хэлний сурах бичлэг байхгүй байна';
@@ -709,6 +600,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get notSelected => '- Сонгоогүй -';
 
   @override
+  String get noteGuidance =>
+      'Илүү нарийвчлалтай орчуулгын тулд нэмэлт мэдээллийг хаана оруулах вэ';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Интернет холболтоо шалгаад эсвэл дараа дахин оролдоно уу.';
 
@@ -719,16 +614,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Материал байхгүй байна.';
 
   @override
-  String get participantDeleted => 'Оролцогчийг устгасан.';
-
-  @override
-  String get participantRename => 'Оролцогчийн нэрийг өөрчлөх';
-
-  @override
-  String get partner => 'Хамтрагч';
-
-  @override
-  String get partnerMode => 'Хамтрагчийн горим';
+  String get openSettings => 'Тохиргоог нээх';
 
   @override
   String get password => 'Нууц үг';
@@ -740,13 +626,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get perfect => 'Төгс байна!';
 
   @override
-  String get personaFriend => 'Орон нутгийн найз';
-
-  @override
-  String get personaGuide => 'Аялал жуулчлалын хөтөч';
-
-  @override
-  String get personaTeacher => 'Англи хэлний багш';
+  String get pickGallery => 'Зургийн цомгоос сонгох';
 
   @override
   String get playAgain => 'Дахин тоглох';
@@ -766,6 +646,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get posAdverb => 'Дайвар үг';
 
   @override
+  String get posArticle => 'Артикл';
+
+  @override
   String get posConjunction => 'Холбох үг';
 
   @override
@@ -773,6 +656,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get posNoun => 'Нэр үг';
+
+  @override
+  String get posParticle => 'Бөөмс';
 
   @override
   String get posPreposition => 'Орхигдох эгшиг/Төлөөний үг';
@@ -790,9 +676,33 @@ class AppLocalizationsMn extends AppLocalizations {
   String get practiceWordsOnly => 'Зөвхөн үг дадлага хийх';
 
   @override
+  String get processing => 'Боловсруулж байна...';
+
+  @override
   String progress(int current, int total) {
     return 'Ахиц: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Цэс > Хэл тохируулах хэсгээс өөрийн болон сурах хэлээ эхлээд тохируулна уу.';
+
+  @override
+  String get quickStartStep1Title => '1. Хэл тохируулах';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Оруулах (микрофон/гар) -> Орчуулах -> Хадгалах гэсэн дарааллаар өөрийн сурах картуудыг үүсгээрэй.';
+
+  @override
+  String get quickStartStep2Title => '2. Үндсэн урсгал';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Чат горимоор дадлага хийж, дуудлагын дадлагын таб дээр текст хараад шууд дуудан дадлага хийгээрэй.';
+
+  @override
+  String get quickStartStep3Title => '3. Горим ашиглах';
 
   @override
   String recentNItems(int count) {
@@ -817,6 +727,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get refresh => 'Шинэчлэх';
 
   @override
+  String get requestTranslation => 'Орчуулга хүсэх';
+
+  @override
   String get reset => 'Анхны байдалд оруулах';
 
   @override
@@ -837,16 +750,13 @@ class AppLocalizationsMn extends AppLocalizations {
   String get reviewModeTitle => 'Давтах';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Гуравдагч этгээд';
-
-  @override
-  String get roleUser => 'Хэрэглэгч';
-
-  @override
   String get save => 'Хадгалах';
+
+  @override
+  String get saveAsSentence => 'Өгүүлбэрээр хадгалах';
+
+  @override
+  String get saveAsWord => 'Үгээр хадгалах';
 
   @override
   String get saveData => 'Мэдээлэл хадгалах';
@@ -857,6 +767,9 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Скан түүхэнд хадгалах';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Хайх горимд орчуулгыг хадгалаад үзээрэй';
 
@@ -865,6 +778,12 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get saving => 'Хадгалж байна...';
+
+  @override
+  String get scanInstructions => 'Скан хийх зургаа сонгоно уу';
+
+  @override
+  String get scanLabel => 'Скан';
 
   @override
   String score(String score) {
@@ -911,16 +830,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get selectPOS => 'Үгийн төрөл сонгох';
 
   @override
-  String get selectParticipants => 'Оролцогчдыг сонгох';
-
-  @override
-  String get selectSentenceType => 'Өгүүлбэрийн төрөл сонгох';
-
-  @override
   String get selectStudyMaterial => 'Сурах материал сонгох';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Өгүүлбэр';
@@ -929,43 +839,14 @@ class AppLocalizationsMn extends AppLocalizations {
   String get signUp => 'Бүртгүүлэх';
 
   @override
-  String get similarTextFound => 'Ижил төстэй текст олдлоо';
-
-  @override
-  String get skip => 'Алгасах';
-
-  @override
-  String get source => 'Эх сурвалж:';
-
-  @override
-  String get sourceLanguage => 'Эх хэл';
+  String get simplifiedGuidance =>
+      'Өдөр тутмын яриаг гадаад хэл рүү шууд хөрвүүлээрэй! Talkie таны хэлний амьдралыг тэмдэглэнэ.';
 
   @override
   String get sourceLanguageLabel => 'Миний хэл (Source)';
 
   @override
-  String get speakNow => 'Одоо ярина уу!';
-
-  @override
-  String get speaker => 'Яригч';
-
-  @override
-  String get speakerSelect => 'Яригчийг сонгох';
-
-  @override
-  String get speakingPractice => 'Ярих дадлага';
-
-  @override
-  String get startChat => 'Яриаг эхлүүлэх';
-
-  @override
-  String get startPractice => 'Дадлага эхлүүлэх';
-
-  @override
   String get startTutorial => 'Хичээл эхлүүлэх';
-
-  @override
-  String get startWarning => 'Анхааруулга';
 
   @override
   String get startsWith => 'Эхний үсэг';
@@ -975,28 +856,22 @@ class AppLocalizationsMn extends AppLocalizations {
       'Имэйлээ шалгаж баталгаажуулалтаа дуусгана уу.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return '$name татаж байна...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Импортлох ажиллагаа амжилтгүй боллоо: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name импортлох ажиллагаа амжилттай боллоо';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Нэвтрэх ажиллагаа цуцлагдсан.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Нэвтрэх ажиллагаа амжилтгүй боллоо: $error';
   }
 
@@ -1007,23 +882,23 @@ class AppLocalizationsMn extends AppLocalizations {
   String get statusLogoutSuccess => 'Таныг амжилттай гарлаа.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Бүртгүүлэх ажиллагаа амжилтгүй боллоо: $error';
+  String statusRequestFailed(String error) {
+    return 'Орчуулгын хүсэлт амжилтгүй: $error';
   }
 
   @override
-  String get statusSigningUp => 'Бүртгүүлж байна...';
+  String get statusRequestSuccess => 'Орчуулгын хүсэлт амжилттай боллоо.';
 
   @override
   String get stopPractice => 'Дадлага зогсоох';
 
   @override
-  String get studyComplete => 'Суралцаж дууслаа';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Таны сонгосон материал нь одоогоор тохируулсан суралцах хэл ($targetLang)-ийг дэмжихгүй байгаа тул локал хадгалах боломжгүй. Орчуулга хүсэх үү?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Сурах бичлэг ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Суралцах хэл дэмжигдэхгүй байна';
 
   @override
   String get styleFormal => 'Албан ёсны';
@@ -1038,22 +913,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get styleSlang => 'Слэнг/Хар яриа';
 
   @override
-  String get subject => 'Гарчиг:';
-
-  @override
   String get swapLanguages => 'Хэл солих';
 
   @override
-  String get switchToAi => 'AI горимд шилжих';
-
-  @override
-  String get switchToPartner => 'Хамтрагчийн горимд шилжих';
-
-  @override
   String get syncingData => 'Мэдээлэл синхрончлогдож байна...';
-
-  @override
-  String get tabConversation => 'Яриа';
 
   @override
   String tabReview(int count) {
@@ -1116,6 +979,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tooltipSearch => 'Хайх';
 
   @override
+  String get tooltipSettingsConfirm => 'Тохиргоог баталгаажуулах';
+
+  @override
   String get tooltipSpeaking => 'Ярих';
 
   @override
@@ -1128,6 +994,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get translate => 'Орчуулах';
+
+  @override
+  String get translateNow => 'Орчуулах';
 
   @override
   String get translating => 'Орчуулж байна...';
@@ -1144,6 +1013,9 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Орчуулгын хэл';
+
+  @override
   String get translationLimitExceeded => 'Орчуулгын хязгаар хэтэрсэн';
 
   @override
@@ -1157,17 +1029,25 @@ class AppLocalizationsMn extends AppLocalizations {
   String get translationRefilled => 'Орчуулгын тоо 5-аар цэнэглэгдлээ!';
 
   @override
+  String get translationResult => 'Орчуулгын үр дүн';
+
+  @override
   String get translationResultHint => 'Орчуулгын үр дүн - засварлах боломжтой';
 
   @override
   String get tryAgain => 'Дахин оролдох';
 
   @override
-  String get tutorialAiChatDesc =>
-      'AI дүртэй бодит ярианы дадлага хийж үзээрэй.';
+  String get ttsInstallGuide =>
+      'Андройд тохиргоо > Google TTS хэсгээс энэ хэлний өгөгдлийг суулгана уу.';
 
   @override
-  String get tutorialAiChatTitle => 'AI чат';
+  String get ttsMissing =>
+      'Энэ хэлний дуут хөдөлгүүр таны төхөөрөмж дээр суугаагүй байна.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Энэ хэлээр яриа үүсгэх нь таны төхөөрөмжийн тохиргоогоор дэмжигдэхгүй байна.';
 
   @override
   String get tutorialContextDesc =>
@@ -1285,7 +1165,13 @@ class AppLocalizationsMn extends AppLocalizations {
   String get typeExclamation => 'Уулга алдах';
 
   @override
+  String get typeIdiom => 'Зүйр цэцэн үг';
+
+  @override
   String get typeImperative => 'Тушаах үг';
+
+  @override
+  String get typeProverb => 'Зүйр үг/Цэцэн үг';
 
   @override
   String get typeQuestion => 'Асуулт';
@@ -1300,6 +1186,11 @@ class AppLocalizationsMn extends AppLocalizations {
   String get useExistingText => 'Одоо байгаа текстийг ашиглах';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Онлайн гарын авлага үзэх';
 
   @override
@@ -1307,6 +1198,16 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Зар үзэж цэнэглэх (+5 удаа)';
+
+  @override
+  String get welcomeButton => 'Эхлэх';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie-д тавтай морил! Бид дэлхийн 80 гаруй хэлийг 100% бүрэн дэмждэг бөгөөд шинэ дээд зэрэглэлийн 3D дизайн болон оновчтой гүйцэтгэлээр танд төгс суралцах туршлагыг санал болгож байна.';
+
+  @override
+  String get welcomeTitle => 'Talkie-д тавтай морил!';
 
   @override
   String get word => 'Үг';
@@ -1323,112 +1224,4 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Миний дуудлага';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Энэ хэлээр яриа үүсгэх нь таны төхөөрөмжийн тохиргоогоор дэмжигдэхгүй байна.';
-
-  @override
-  String get homeTab => 'Орчуулга';
-
-  @override
-  String get welcomeTitle => 'Talkie-д тавтай морил!';
-
-  @override
-  String get welcomeDesc =>
-      'Talkie-д тавтай морил! Бид дэлхийн 80 гаруй хэлийг 100% бүрэн дэмждэг бөгөөд шинэ дээд зэрэглэлийн 3D дизайн болон оновчтой гүйцэтгэлээр танд төгс суралцах туршлагыг санал болгож байна.';
-
-  @override
-  String get welcomeButton => 'Эхлэх';
-
-  @override
-  String get labelDetails => 'Дэлгэрэнгүй тохиргоо';
-
-  @override
-  String get translationResult => 'Орчуулгын үр дүн';
-
-  @override
-  String get inputContent => 'Оруулах агуулга';
-
-  @override
-  String get translateNow => 'Орчуулах';
-
-  @override
-  String get tooltipSettingsConfirm => 'Тохиргоог баталгаажуулах';
-
-  @override
-  String get hintNoteExample =>
-      'Жишээ нь: Нөхцөл байдал, ижил утгатай үгс гэх мэт';
-
-  @override
-  String get hintTagExample => 'Жишээ нь: Бизнес, аялал...';
-
-  @override
-  String get addNew => 'Шинээр нэмэх';
-
-  @override
-  String get newNotebookTitle => 'Шинэ дэвтэрийн нэр';
-
-  @override
-  String get enterNameHint => 'Нэр оруулна уу';
-
-  @override
-  String get add => 'Нэмэх';
-
-  @override
-  String get openSettings => 'Тохиргоог нээх';
-
-  @override
-  String get helpNotebook => 'Орчуулгын үр дүнг хадгалах хавтас сонгоно уу.';
-
-  @override
-  String get helpNote =>
-      'Үгийн утга, жишээ, нөхцөл байдлыг чөлөөтэй тэмдэглээрэй.';
-
-  @override
-  String get helpTag => 'Дараа нь ангилах эсвэл хайх түлхүүр үгээ оруулна уу.';
-
-  @override
-  String get requestTranslation => 'Орчуулга хүсэх';
-
-  @override
-  String get statusRequestSuccess => 'Орчуулгын хүсэлт амжилттай боллоо.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Орчуулгын хүсэлт амжилтгүй: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Суралцах хэл дэмжигдэхгүй байна';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Таны сонгосон материал нь одоогоор тохируулсан суралцах хэл ($targetLang)-ийг дэмжихгүй байгаа тул локал хадгалах боломжгүй. Орчуулга хүсэх үү?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Хэл тохируулах';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Цэс > Хэл тохируулах хэсгээс өөрийн болон сурах хэлээ эхлээд тохируулна уу.';
-
-  @override
-  String get quickStartStep2Title => '2. Үндсэн урсгал';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Оруулах (микрофон/гар) -> Орчуулах -> Хадгалах гэсэн дарааллаар өөрийн сурах картуудыг үүсгээрэй.';
-
-  @override
-  String get quickStartStep3Title => '3. Горим ашиглах';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Чат горимоор дадлага хийж, дуудлагын дадлагын таб дээр текст хараад шууд дуудан дадлага хийгээрэй.';
-
-  @override
-  String get noteGuidance =>
-      'Илүү нарийвчлалтай орчуулгын тулд нэмэлт мэдээллийг хаана оруулах вэ';
 }

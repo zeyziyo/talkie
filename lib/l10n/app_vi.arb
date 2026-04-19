@@ -1,32 +1,10 @@
 {
   "@@locale": "vi",
-  "basicWords": "Kho từ cơ bản",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Ngôn ngữ nhập",
-  "translationLanguage": "Ngôn ngữ dịch",
-  "simplifiedGuidance": "Chuyển đổi tức thì các cuộc trò chuyện hàng ngày sang ngoại ngữ! Talkie sẽ ghi lại cuộc sống ngôn ngữ của bạn.",
-  "noDataForLanguage": "Không có tài liệu học tập cho ngôn ngữ bạn đã chọn trong cơ sở dữ liệu cục bộ. Vui lòng tải xuống tài liệu hoặc chọn một ngôn ngữ khác.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Hủy",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Độ chính xác",
-  "ttsMissing": "Không tìm thấy công cụ chuyển văn bản thành giọng nói cho ngôn ngữ này trên thiết bị của bạn.",
-  "ttsInstallGuide": "Vui lòng cài đặt dữ liệu ngôn ngữ tương ứng trong Cài đặt Android > Google TTS.",
   "adLoading": "Đang tải quảng cáo. Vui lòng thử lại sau.",
+  "add": "Thêm",
+  "addNew": "Thêm mới",
   "addNewSubject": "Thêm tên mới",
-  "addParticipant": "Thêm người tham gia",
   "addTagHint": "Thêm thẻ...",
   "alreadyHaveAccount": "Bạn đã có tài khoản?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Kho từ cơ bản",
+  "basicWords": "Kho từ cơ bản",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Hủy",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Tân cách",
   "casePossessive": "Sở hữu cách",
   "casePossessivePronoun": "Đại từ sở hữu",
   "caseReflexive": "Phản thân đại từ",
   "caseSubject": "Chủ cách",
-  "chatAiChat": "Trò chuyện",
-  "chatAllConversations": "Toàn bộ hội thoại",
-  "chatChoosePersona": "Chọn nhân vật",
-  "chatEndMessage": "Bạn có muốn kết thúc cuộc trò chuyện không?",
-  "chatEndTitle": "Kết thúc và lưu cuộc trò chuyện",
-  "chatFailed": "Trò chuyện thất bại: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Trích đoạn từ cuộc trò chuyện ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Lịch sử trò chuyện",
-  "chatNew": "Cuộc trò chuyện mới",
-  "chatNewChat": "Trò chuyện mới",
-  "chatNoConversations": "Chưa có cuộc trò chuyện nào",
-  "chatSearchHint": "Tìm kiếm theo tên cuộc trò chuyện...",
-  "chatNoteSearchHint": "Tìm kiếm bằng ghi chú...",
-  "chatSaveAndExit": "Lưu và thoát",
-  "chatStartNewPrompt": "Hãy bắt đầu một cuộc trò chuyện mới để luyện tập!",
-  "chatTypeHint": "Nhập tin nhắn...",
-  "chatUntitled": "Cuộc trò chuyện không có tiêu đề",
   "checking": "Đang kiểm tra...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Bạn có chắc chắn muốn xóa hội thoại này?\nHội thoại đã xóa không thể khôi phục.",
-  "confirmDeleteParticipant": "Bạn có muốn xóa người tham gia này không?",
   "contextTagHint": "Ghi lại tình huống để dễ phân biệt sau này",
   "contextTagLabel": "Ngữ cảnh/Tình huống (tùy chọn) - Ví dụ: Chào buổi sáng, Kính ngữ",
   "copiedToClipboard": "Đã sao chép vào bộ nhớ tạm!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Luyện tập hội thoại thông qua nhập vai. Chọn và nói câu trả lời thích hợp.",
-  "dialogueQuestTitle": "Nhiệm vụ hội thoại",
-  "disambiguationPrompt": "Bạn muốn dịch theo nghĩa nào?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Chọn nghĩa",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Bạn chưa có tài khoản?",
-  "editParticipant": "Sửa người tham gia",
   "email": "Email",
   "emailAlreadyInUse": "Email này đã được sử dụng. Vui lòng đăng nhập hoặc sử dụng chức năng tìm mật khẩu.",
+  "enterNameHint": "Nhập tên",
   "enterNewSubjectName": "Nhập tên mới",
   "enterSentenceHint": "Nhập câu...",
   "enterTextHint": "Nhập văn bản cần dịch",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Văn bản đã nhận dạng",
   "female": "Nữ",
   "file": "Tập tin:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Chế độ trò chơi",
   "gameOver": "Kết thúc trò chơi",
   "gender": "Giới tính",
-  "labelFilterMaterial": "Tài liệu",
-  "labelFilterTag": "Thẻ",
   "generalTags": "Thẻ chung",
   "getMaterials": "Nhận tài liệu",
   "good": "Tốt",
   "googleContinue": "Tiếp tục với Google",
-  "helpDialogueImportDesc": "Nhập toàn bộ bộ hội thoại bằng tệp JSON.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "Để nhập tài liệu học tập trong Chế độ 3, hãy tạo tệp JSON với cấu trúc sau:",
-  "helpJsonTypeDialogue": "Hội thoại",
   "helpJsonTypeSentence": "Câu",
   "helpJsonTypeWord": "Từ",
   "helpMode1Desc": "Bắt đầu học ngôn ngữ một cách trực quan nhất với micrô 3D cao cấp và biểu tượng bàn phím lớn.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Chọn bộ tài liệu: Sử dụng 'Chọn bộ tài liệu học' hoặc 'Thư viện tài liệu trực tuyến' trong menu (⋮) ở góc trên bên phải\n• Lật thẻ: Kiểm tra bản dịch bằng cách 'Hiện/Ẩn'\n• Nghe: Phát âm bằng biểu tượng loa\n• Hoàn thành học tập: Xử lý hoàn thành học tập bằng dấu kiểm (V)\n• Xóa: Xóa bản ghi bằng cách nhấn giữ (Nhấn lâu) vào thẻ\n• Tìm kiếm và lọc: Hỗ trợ thanh tìm kiếm (tìm kiếm thông minh theo thời gian thực), thẻ và bộ lọc chữ cái đầu",
   "helpMode3Desc": "Luyện tập phát âm bằng cách nghe và lặp lại câu (Shadowing).",
   "helpMode3Details": "• Chọn tài liệu: Chọn gói học tập\n• Khoảng cách: [-] [+] điều chỉnh thời gian chờ (3s-60s)\n• Bắt đầu/Dừng: Điều khiển phiên nhại lại\n• Nói: Nghe âm thanh và lặp lại theo\n• Phản hồi: Điểm chính xác (0-100) với mã màu\n• Thử lại: Sử dụng nút thử lại nếu không phát hiện được giọng nói",
-  "helpModeChatDesc": "Luyện tập hội thoại thực tế bằng cách trò chuyện với AI Persona.",
-  "helpModeChatDetails": "• Trò chuyện AI: Thực hành trò chuyện thực tế với một nhân vật trong menu 'Trò chuyện' trên thanh tab ở dưới cùng\n• Cài đặt nhân vật: Tự do chỉ định giới tính, tên và mã ngôn ngữ của đối phương\n• Tình huống GPS: Nhận biết vị trí hiện tại của bạn và đề xuất các chủ đề trò chuyện phù hợp với địa điểm\n• Hai ngôn ngữ: Câu trả lời của AI được hiển thị cùng với bản dịch để tối đa hóa hiệu quả học tập\n• Quản lý lịch sử: Lọc lịch sử trò chuyện trước đây và lưu các tin nhắn cụ thể trong cuộc trò chuyện dưới dạng tài liệu học tập",
+  "helpNote": "Tự do ghi lại ý nghĩa, ví dụ hoặc tình huống của từ.",
+  "helpNotebook": "Chọn thư mục để lưu trữ các kết quả đã dịch.",
   "helpTabJson": "Định dạng JSON",
   "helpTabModes": "Chế độ",
   "helpTabQuickStart": "Bắt đầu nhanh",
   "helpTabTour": "Hướng dẫn",
+  "helpTag": "Nhập từ khóa để phân loại hoặc tìm kiếm sau này.",
   "helpTitle": "Trợ giúp & Hướng dẫn",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "Ẩn",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Ví dụ: Giải thích ngữ cảnh, từ đồng âm,...",
+  "hintTagExample": "Ví dụ: Kinh doanh, Du lịch...",
+  "homeTab": "Dịch",
   "importAdded": "Đã thêm: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Đã nhập {files} tệp, {entries} mục.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Nhập file JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Tệp JSON đơn",
+  "importSourceFolder": "Thư mục (cấu trúc thư viện theo ngôn ngữ)",
+  "importSourceTitle": "Chọn nguồn nhập",
+  "importSourceZip": "Tệp ZIP (thư mục đã nén)",
   "importTotal": "Tổng: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Nội dung nhập",
+  "inputLanguage": "Ngôn ngữ nhập",
   "inputModeTitle": "Nhập",
   "intervalSeconds": "Khoảng cách: {seconds}s",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Vui lòng nhập email hợp lệ.",
   "kakaoContinue": "Tiếp tục với Kakao",
+  "labelDetails": "Cài đặt chi tiết",
+  "labelFilterMaterial": "Tài liệu",
+  "labelFilterTag": "Thẻ",
   "labelLangCode": "Mã ngôn ngữ (ví dụ: en-US, ko-KR)",
-  "labelName": "Tên",
   "labelNote": "Ghi chú",
   "labelPOS": "Loại từ",
-  "labelRole": "Vai trò",
   "labelSentence": "Câu",
   "labelSentenceCollection": "Bộ sưu tập câu",
   "labelSentenceType": "Loại câu",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Đang tải người tham gia...",
   "location": "Vị trí",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Đăng nhập",
   "logout": "Đăng xuất",
   "logoutConfirmMessage": "Bạn có muốn đăng xuất khỏi thiết bị này không?",
   "logoutConfirmTitle": "Đăng xuất",
   "male": "Nam",
-  "manageParticipants": "Quản lý người tham gia",
   "manual": "Nhập thủ công",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Thông tin tài liệu",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Tôi",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Nhập tài liệu từ thiết bị",
   "menuHelp": "Trợ giúp",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Tuyển tập câu của tôi",
   "myWordbook": "Từ vựng của tôi",
   "neutral": "Trung tính",
+  "newNotebookTitle": "Tên sổ tay mới",
   "newSubjectName": "Tên Sổ từ/Câu mới",
   "next": "Tiếp theo",
-  "noDialogueHistory": "Không có lịch sử hội thoại.",
-  "noInternetWarningMic": "Không có kết nối Internet. Nhận dạng giọng nói có thể không khả dụng ở chế độ ngoại tuyến.",
-  "noInternetWarningTranslate": "Không có kết nối Internet. Chức năng dịch không khả dụng ở chế độ ngoại tuyến. Vui lòng sử dụng chế độ ôn tập.",
+  "noDataForLanguage": "Không có tài liệu học tập cho ngôn ngữ bạn đã chọn trong cơ sở dữ liệu cục bộ. Vui lòng tải xuống tài liệu hoặc chọn một ngôn ngữ khác.",
   "noMaterialsInCategory": "Không có tài liệu nào trong danh mục này.",
-  "noParticipantsFound": "Không tìm thấy người tham gia nào.",
   "noRecords": "Không có bản ghi cho ngôn ngữ đã chọn",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Không phát hiện giọng nói",
   "notSelected": "- Không chọn -",
+  "noteGuidance": "Nơi bạn nhập thêm chi tiết để dịch chính xác hơn",
   "onlineLibraryCheckInternet": "Vui lòng kiểm tra kết nối Internet hoặc thử lại sau.",
   "onlineLibraryLoadFailed": "Không tải được tài liệu.",
   "onlineLibraryNoMaterials": "Không có tài liệu.",
-  "participantDeleted": "Đã xóa người tham gia.",
-  "participantRename": "Đổi tên người tham gia",
-  "partner": "Đối tác",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Chế độ đối tác",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Mở cài đặt",
   "password": "Mật khẩu",
   "passwordTooShort": "Mật khẩu phải có ít nhất 6 ký tự.",
   "perfect": "Hoàn hảo!",
-  "personaFriend": "Bạn địa phương",
-  "personaGuide": "Hướng dẫn viên du lịch",
-  "personaTeacher": "Giáo viên tiếng Anh",
+  "pickGallery": "Chọn từ thư viện",
   "playAgain": "Chơi lại",
   "playbackFailed": "Phát thất bại: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Tính từ",
   "posAdverb": "Trạng từ",
+  "posArticle": "Mạo từ",
   "posConjunction": "Liên từ",
   "posInterjection": "Thán từ",
   "posNoun": "Danh từ",
+  "posParticle": "Tiểu từ",
   "posPreposition": "Giới từ",
   "posPronoun": "Đại từ",
   "posVerb": "Động từ",
   "practiceModeTitle": "Luyện tập",
   "practiceWordsOnly": "Chỉ luyện tập từ",
+  "processing": "Đang xử lý...",
   "progress": "Tiến độ: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Trong Menu > Cài đặt ngôn ngữ, hãy chỉ định ngôn ngữ của bạn và ngôn ngữ bạn muốn học trước.",
+  "quickStartStep1Title": "1. Cài đặt ngôn ngữ",
+  "quickStartStep2Desc": "Tạo thẻ học tập của riêng bạn theo thứ tự: Nhập (micrô/bàn phím) -> Dịch -> Lưu.",
+  "quickStartStep2Title": "2. Luồng cơ bản",
+  "quickStartStep3Desc": "Luyện tập bằng cách trò chuyện và luyện phát âm trực tiếp bằng cách xem văn bản trong tab Luyện phát âm.",
+  "quickStartStep3Title": "3. Sử dụng các chế độ",
   "recentNItems": "Xem {count} mục mới tạo gần đây",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Yêu cầu dịch",
   "reset": "Đặt lại",
   "resetPracticeHistory": "Đặt lại lịch sử luyện tập",
   "retry": "Thử lại?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Ôn tập",
-  "roleAi": "AI",
-  "roleThirdParty": "Bên thứ ba",
-  "roleUser": "Người dùng",
   "save": "Lưu",
+  "saveAsSentence": "Lưu dưới dạng câu",
+  "saveAsWord": "Lưu dưới dạng từ",
   "saveData": "Lưu",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Lưu vào lịch sử quét",
   "saveTranslationsFromSearch": "Lưu bản dịch từ chế độ tìm kiếm",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Chọn ảnh để quét",
+  "scanLabel": "Quét",
   "score": "Độ chính xác: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Chọn từ loại",
-  "selectParticipants": "Chọn người tham gia",
-  "selectSentenceType": "Chọn loại câu",
   "selectStudyMaterial": "Chọn tài liệu học",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Câu",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Đăng ký",
-  "similarTextFound": "Tìm thấy văn bản tương tự",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Bỏ qua",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Nguồn:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Ngôn ngữ nguồn",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Chuyển đổi tức thì các cuộc trò chuyện hàng ngày sang ngoại ngữ! Talkie sẽ ghi lại cuộc sống ngôn ngữ của bạn.",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "Nói ngay!",
-  "speaker": "Người nói",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Chọn người nói",
-  "speakingPractice": "Luyện nói",
-  "startChat": "Bắt đầu trò chuyện",
-  "startPractice": "Bắt đầu luyện tập",
   "startTutorial": "Bắt đầu hướng dẫn",
-  "startWarning": "Cảnh báo",
   "startsWith": "Bắt đầu bằng",
   "statusCheckEmail": "Vui lòng kiểm tra email để hoàn tất xác minh.",
   "statusDownloading": "Đang tải xuống: {name}...",
-  "statusImportFailed": "Nhập thất bại: {error}",
-  "statusImportSuccess": "Đã nhập {name} thành công",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Đăng nhập đã bị hủy.",
-  "statusLoginFailed": "Đăng nhập thất bại: {error}",
-  "statusLoginSuccess": "Đăng nhập thành công.",
-  "statusLogoutSuccess": "Đã đăng xuất.",
-  "statusSignUpFailed": "Đăng ký thất bại: {error}",
-  "statusSigningUp": "Đang đăng ký...",
-  "stopPractice": "Dừng luyện tập",
-  "studyComplete": "Đã học",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Bản ghi học tập ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Nhập thất bại: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "Đã nhập {name} thành công",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Đăng nhập thất bại: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Đăng nhập thành công.",
+  "statusLogoutSuccess": "Đã đăng xuất.",
+  "statusRequestFailed": "Yêu cầu dịch thất bại: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Yêu cầu dịch đã hoàn tất.",
+  "stopPractice": "Dừng luyện tập",
+  "studyLangNotFoundDesc": "Tài liệu bạn chọn hiện không hỗ trợ ngôn ngữ học tập đã đặt ({targetLang}) nên không thể lưu cục bộ. Bạn có muốn yêu cầu dịch không?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Ngôn ngữ học tập không được hỗ trợ",
   "styleFormal": "Kính ngữ",
   "styleInformal": "Thân mật",
   "stylePolite": "Lịch sự",
   "styleSlang": "Tiếng lóng",
-  "subject": "Chủ đề:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Đổi ngôn ngữ",
-  "switchToAi": "Chuyển sang chế độ AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Chuyển sang chế độ đối tác",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Đang đồng bộ dữ liệu...",
-  "tabConversation": "Hội thoại",
   "tabReview": "Ôn tập ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Giảm",
   "tooltipIncrease": "Tăng",
   "tooltipSearch": "Tìm kiếm",
+  "tooltipSettingsConfirm": "Xác nhận cài đặt",
   "tooltipSpeaking": "Nói",
   "tooltipStudyReview": "Học+Ôn tập",
   "totalRecords": "Tổng cộng {count} bản ghi (Xem tất cả)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Dịch ngay",
   "translating": "Đang dịch...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Ngôn ngữ dịch",
   "translationLimitExceeded": "Đã vượt quá giới hạn dịch",
   "translationLimitMessage": "Bạn đã sử dụng hết lượt dịch miễn phí hàng ngày (5 lần).\\n\\nBạn có muốn xem quảng cáo để nạp ngay 5 lượt không?",
   "translationLoaded": "Đã tải bản dịch đã lưu",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Bạn đã được nạp 5 lượt dịch!",
+  "translationResult": "Kết quả dịch",
   "translationResultHint": "Kết quả dịch - Có thể chỉnh sửa",
   "tryAgain": "Thử lại",
-  "tutorialAiChatDesc": "Luyện tập hội thoại thực tế với nhân vật AI.",
-  "tutorialAiChatTitle": "Trò chuyện AI",
+  "ttsInstallGuide": "Vui lòng cài đặt dữ liệu ngôn ngữ tương ứng trong Cài đặt Android > Google TTS.",
+  "ttsMissing": "Không tìm thấy công cụ chuyển văn bản thành giọng nói cho ngôn ngữ này trên thiết bị của bạn.",
+  "ttsUnsupportedNatively": "Thiết bị này không hỗ trợ xuất âm thanh cho ngôn ngữ này trong cài đặt gốc.",
   "tutorialContextDesc": "Thêm ngữ cảnh (ví dụ: Buổi sáng) để phân biệt các câu tương tự.",
   "tutorialContextTitle": "Thẻ ngữ cảnh",
   "tutorialLangSettingsDesc": "Đặt ngôn ngữ gốc và ngôn ngữ đích để dịch.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Nhấn vào đây để dịch văn bản của bạn.",
   "tutorialTransTitle": "Dịch",
   "typeExclamation": "Câu cảm thán",
+  "typeIdiom": "Thành ngữ",
   "typeImperative": "Câu mệnh lệnh",
+  "typeProverb": "Tục ngữ/Châm ngôn",
   "typeQuestion": "Câu hỏi",
   "typeStatement": "Câu trần thuật",
   "usageLimitTitle": "Đã đạt đến giới hạn",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Xem hướng dẫn trực tuyến",
   "voluntaryTranslations": "Bản dịch đóng góp",
   "watchAdAndRefill": "Xem quảng cáo để nạp (+5 lượt)",
+  "welcomeButton": "Bắt đầu",
+  "welcomeDesc": "Chào mừng bạn đến với Talkie! Chúng tôi hỗ trợ hơn 80 ngôn ngữ trên toàn thế giới với độ chính xác 100%, cùng với thiết kế 3D cao cấp mới và hiệu suất tối ưu hóa để mang lại trải nghiệm học tập hoàn hảo.",
+  "welcomeTitle": "Chào mừng bạn đến với Talkie!",
   "word": "Từ",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Nói từ trước khi kẻ thù đến để bảo vệ căn cứ.",
   "wordDefenseTitle": "Phòng thủ từ vựng",
   "wordModeLabel": "Chế độ từ",
-  "yourPronunciation": "Phát âm của bạn",
-  "ttsUnsupportedNatively": "Thiết bị này không hỗ trợ xuất âm thanh cho ngôn ngữ này trong cài đặt gốc.",
-  "homeTab": "Dịch",
-  "welcomeTitle": "Chào mừng bạn đến với Talkie!",
-  "welcomeDesc": "Chào mừng bạn đến với Talkie! Chúng tôi hỗ trợ hơn 80 ngôn ngữ trên toàn thế giới với độ chính xác 100%, cùng với thiết kế 3D cao cấp mới và hiệu suất tối ưu hóa để mang lại trải nghiệm học tập hoàn hảo.",
-  "welcomeButton": "Bắt đầu",
-  "labelDetails": "Cài đặt chi tiết",
-  "translationResult": "Kết quả dịch",
-  "inputContent": "Nội dung nhập",
-  "translateNow": "Dịch ngay",
-  "tooltipSettingsConfirm": "Xác nhận cài đặt",
-  "hintNoteExample": "Ví dụ: Giải thích ngữ cảnh, từ đồng âm,...",
-  "hintTagExample": "Ví dụ: Kinh doanh, Du lịch...",
-  "addNew": "Thêm mới",
-  "newNotebookTitle": "Tên sổ tay mới",
-  "enterNameHint": "Nhập tên",
-  "add": "Thêm",
-  "openSettings": "Mở cài đặt",
-  "helpNotebook": "Chọn thư mục để lưu trữ các kết quả đã dịch.",
-  "helpNote": "Tự do ghi lại ý nghĩa, ví dụ hoặc tình huống của từ.",
-  "helpTag": "Nhập từ khóa để phân loại hoặc tìm kiếm sau này.",
-  "requestTranslation": "Yêu cầu dịch",
-  "statusRequestSuccess": "Yêu cầu dịch đã hoàn tất.",
-  "statusRequestFailed": "Yêu cầu dịch thất bại: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Ngôn ngữ học tập không được hỗ trợ",
-  "studyLangNotFoundDesc": "Tài liệu bạn chọn hiện không hỗ trợ ngôn ngữ học tập đã đặt ({targetLang}) nên không thể lưu cục bộ. Bạn có muốn yêu cầu dịch không?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Cài đặt ngôn ngữ",
-  "quickStartStep1Desc": "Trong Menu > Cài đặt ngôn ngữ, hãy chỉ định ngôn ngữ của bạn và ngôn ngữ bạn muốn học trước.",
-  "quickStartStep2Title": "2. Luồng cơ bản",
-  "quickStartStep2Desc": "Tạo thẻ học tập của riêng bạn theo thứ tự: Nhập (micrô/bàn phím) -> Dịch -> Lưu.",
-  "quickStartStep3Title": "3. Sử dụng các chế độ",
-  "quickStartStep3Desc": "Luyện tập bằng cách trò chuyện và luyện phát âm trực tiếp bằng cách xem văn bản trong tab Luyện phát âm.",
-  "noteGuidance": "Nơi bạn nhập thêm chi tiết để dịch chính xác hơn"
+  "yourPronunciation": "Phát âm của bạn"
 }

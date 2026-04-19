@@ -9,53 +9,20 @@ class AppLocalizationsPt extends AppLocalizations {
   AppLocalizationsPt([String locale = 'pt']) : super(locale);
 
   @override
-  String get basicWords => 'Repositório de palavras básicas';
-
-  @override
-  String get inputLanguage => 'Idioma de entrada';
-
-  @override
-  String get translationLanguage => 'Idioma de tradução';
-
-  @override
-  String get simplifiedGuidance =>
-      'Transforme instantaneamente conversas do dia a dia em um idioma estrangeiro! Talkie registra sua vida linguística.';
-
-  @override
-  String get noDataForLanguage =>
-      'Não há materiais de aprendizado para o idioma selecionado no banco de dados local. Por favor, baixe os materiais ou selecione outro idioma.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Cancelar';
-
-  @override
   String get accuracy => 'Precisão';
-
-  @override
-  String get ttsMissing =>
-      'O motor de voz para este idioma não está instalado no dispositivo.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Instale os dados do idioma em Configurações do Android > Google TTS.';
 
   @override
   String get adLoading =>
       'Carregando anúncio. Por favor, tente novamente mais tarde.';
 
   @override
-  String get addNewSubject => 'Adicionar novo nome';
+  String get add => 'Adicionar';
 
   @override
-  String get addParticipant => 'Adicionar participante';
+  String get addNew => 'Adicionar Novo';
+
+  @override
+  String get addNewSubject => 'Adicionar novo nome';
 
   @override
   String get addTagHint => 'Adicionar etiqueta...';
@@ -88,6 +55,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get basicWordRepository => 'Repositório de palavras básicas';
 
   @override
+  String get basicWords => 'Repositório de palavras básicas';
+
+  @override
+  String get cancel => 'Cancelar';
+
+  @override
   String get caseObject => 'Caso oblíquo';
 
   @override
@@ -103,62 +76,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get caseSubject => 'Caso nominativo';
 
   @override
-  String get chatAiChat => 'Bate-papo';
-
-  @override
-  String get chatAllConversations => 'Todas as conversas';
-
-  @override
-  String get chatChoosePersona => 'Escolha person.';
-
-  @override
-  String get chatEndMessage =>
-      'Tem certeza de que deseja finalizar o bate-papo?';
-
-  @override
-  String get chatEndTitle => 'Finalizar e salvar bate-papo';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Falha no bate-papo: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Trecho da conversa ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Histórico';
-
-  @override
-  String get chatNew => 'Novo bate-papo';
-
-  @override
-  String get chatNewChat => 'Novo chat';
-
-  @override
-  String get chatNoConversations => 'Sem conversas';
-
-  @override
-  String get chatSearchHint => 'Pesquisar por título da conversa...';
-
-  @override
-  String get chatNoteSearchHint => 'Pesquisar em notas...';
-
-  @override
-  String get chatSaveAndExit => 'Salvar e Sair';
-
-  @override
-  String get chatStartNewPrompt => 'Comece um novo bate-papo para praticar!';
-
-  @override
-  String get chatTypeHint => 'Digite uma msg...';
-
-  @override
-  String get chatUntitled => 'Bate-papo sem título';
-
-  @override
   String get checking => 'Verificando...';
 
   @override
@@ -169,14 +86,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Tem certeza que deseja excluir este registro?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Tem certeza que deseja excluir esta conversa?\nAs conversas excluídas não podem ser recuperadas.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Tem certeza de que deseja excluir este participante?';
 
   @override
   String get contextTagHint =>
@@ -216,24 +125,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get deleteRecord => 'Excluir Registro';
 
   @override
-  String get dialogueQuestDesc =>
-      'Pratique conversação através de RPGs. Escolha a resposta apropriada e diga-a.';
-
-  @override
-  String get dialogueQuestTitle => 'Missão de diálogo';
-
-  @override
-  String get disambiguationPrompt =>
-      'Qual significado você gostaria de traduzir?';
-
-  @override
-  String get disambiguationTitle => 'Selecione o significado';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Não tem uma conta?';
-
-  @override
-  String get editParticipant => 'Editar participante';
 
   @override
   String get email => 'E-mail';
@@ -241,6 +136,9 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Este e-mail já está em uso. Faça login ou use a recuperação de senha.';
+
+  @override
+  String get enterNameHint => 'Digite o nome';
 
   @override
   String get enterNewSubjectName => 'Digite o novo nome';
@@ -282,6 +180,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get errors => 'Erros:';
+
+  @override
+  String get extractedText => 'Texto reconhecido';
 
   @override
   String get female => 'Feminino';
@@ -341,12 +242,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get gender => 'Gênero';
 
   @override
-  String get labelFilterMaterial => 'Material';
-
-  @override
-  String get labelFilterTag => 'Etiqueta';
-
-  @override
   String get generalTags => 'Tags gerais';
 
   @override
@@ -359,19 +254,8 @@ class AppLocalizationsPt extends AppLocalizations {
   String get googleContinue => 'Continuar com o Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Importe conjuntos de diálogos inteiros com arquivos JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc =>
       'Para importar materiais de estudo no Modo 3, crie arquivo JSON com esta estrutura:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Diálogo';
 
   @override
   String get helpJsonTypeSentence => 'Frase';
@@ -404,12 +288,12 @@ class AppLocalizationsPt extends AppLocalizations {
       '• Selecionar Material: Escolha pacote de estudo\n• Intervalo: [-] [+] ajustar espera (3s-60s)\n• Iniciar/Parar: Controlar sessão\n• Falar: Ouvir áudio e repetir\n• Feedback: Pontuação de precisão (0-100)\n• Tentar: Botão de tentar novamente se voz não detectada';
 
   @override
-  String get helpModeChatDesc =>
-      'Pratique conversação real interagindo com uma IA.';
+  String get helpNote =>
+      'Anote livremente o significado de palavras, exemplos, situações, etc.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Chat AI: Pratique conversas reais com personas no menu \'Chat\' na barra de guias inferior.\n• Configurações de persona: Especifique livremente o gênero, nome e código de idioma do interlocutor.\n• Situação dramática de GPS: Reconhece minha localização atual e recomenda tópicos de conversação apropriados para o local.\n• 2 idiomas: As respostas da IA são exibidas com traduções para maximizar o efeito de aprendizado.\n• Gerenciamento de registros: Filtre o histórico de conversas passadas e salve mensagens específicas das conversas como materiais de estudo';
+  String get helpNotebook =>
+      'Selecione a pasta onde deseja salvar os resultados traduzidos.';
 
   @override
   String get helpTabJson => 'Formato JSON';
@@ -424,6 +308,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get helpTabTour => 'Fazer um tour';
 
   @override
+  String get helpTag =>
+      'Digite palavras-chave para classificar ou pesquisar mais tarde.';
+
+  @override
   String get helpTitle => 'Ajuda & Guia';
 
   @override
@@ -432,6 +320,15 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get hide => 'Ocultar';
+
+  @override
+  String get hintNoteExample => 'Ex: Contexto, Sinônimos, etc.';
+
+  @override
+  String get hintTagExample => 'Ex: Negócios, Viagem...';
+
+  @override
+  String get homeTab => 'Tradução';
 
   @override
   String importAdded(int count) {
@@ -444,23 +341,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Já existe um material com o mesmo título. Tente novamente após alterar o título.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -476,6 +356,11 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files ficheiros, $entries entradas importadas.';
+  }
+
+  @override
   String get importJsonFile => 'Importar JSON';
 
   @override
@@ -487,12 +372,30 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Ficheiro JSON único';
+
+  @override
+  String get importSourceFolder => 'Pasta (estrutura de biblioteca por idioma)';
+
+  @override
+  String get importSourceTitle => 'Selecionar origem da importação';
+
+  @override
+  String get importSourceZip => 'Ficheiro ZIP (pasta comprimida)';
+
+  @override
   String importTotal(int count) {
     return 'Total: $count';
   }
 
   @override
   String get importing => 'Importando...';
+
+  @override
+  String get inputContent => 'Conteúdo de Entrada';
+
+  @override
+  String get inputLanguage => 'Idioma de entrada';
 
   @override
   String get inputModeTitle => 'Entrada';
@@ -509,19 +412,22 @@ class AppLocalizationsPt extends AppLocalizations {
   String get kakaoContinue => 'Continuar com o Kakao';
 
   @override
-  String get labelLangCode => 'Código do idioma (ex: en-US, ko-KR)';
+  String get labelDetails => 'Configurações Detalhadas';
 
   @override
-  String get labelName => 'Nome';
+  String get labelFilterMaterial => 'Material';
+
+  @override
+  String get labelFilterTag => 'Etiqueta';
+
+  @override
+  String get labelLangCode => 'Código do idioma (ex: en-US, ko-KR)';
 
   @override
   String get labelNote => 'Nota';
 
   @override
   String get labelPOS => 'Classe gramatical';
-
-  @override
-  String get labelRole => 'Função';
 
   @override
   String get labelSentence => 'Frase';
@@ -572,9 +478,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get listening => 'Ouvindo...';
 
   @override
-  String get loadingParticipants => 'Carregando participantes...';
-
-  @override
   String get location => 'Localização';
 
   @override
@@ -594,9 +497,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get male => 'Masculino';
 
   @override
-  String get manageParticipants => 'Gerenciar participantes';
-
-  @override
   String get manual => 'Entrada manual';
 
   @override
@@ -604,9 +504,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get materialInfo => 'Info do material';
-
-  @override
-  String get me => 'Eu';
 
   @override
   String get menuDeviceImport => 'Importar materiais do dispositivo';
@@ -674,27 +571,20 @@ class AppLocalizationsPt extends AppLocalizations {
   String get neutral => 'Neutro';
 
   @override
+  String get newNotebookTitle => 'Nome do Novo Caderno';
+
+  @override
   String get newSubjectName => 'Novo nome do caderno/fraseário';
 
   @override
   String get next => 'Próximo';
 
   @override
-  String get noDialogueHistory => 'Sem histórico de diálogo.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Sem conexão com a Internet. O reconhecimento de voz pode não estar disponível offline.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Sem conexão com a Internet. A função de tradução não está disponível offline. Use o modo de revisão.';
+  String get noDataForLanguage =>
+      'Não há materiais de aprendizado para o idioma selecionado no banco de dados local. Por favor, baixe os materiais ou selecione outro idioma.';
 
   @override
   String get noMaterialsInCategory => 'Não há materiais nesta categoria.';
-
-  @override
-  String get noParticipantsFound => 'Nenhum participante registrado.';
 
   @override
   String get noRecords => 'Nenhum registro para o idioma selecionado';
@@ -715,6 +605,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notSelected => '- Não selecionado -';
 
   @override
+  String get noteGuidance =>
+      'Insira detalhes adicionales para uma tradução mais precisa';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Verifique sua conexão com a Internet ou tente novamente mais tarde.';
 
@@ -725,16 +619,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Não há materiais.';
 
   @override
-  String get participantDeleted => 'Participante excluído.';
-
-  @override
-  String get participantRename => 'Renomear participante';
-
-  @override
-  String get partner => 'Parceiro';
-
-  @override
-  String get partnerMode => 'Modo de parceiro';
+  String get openSettings => 'Abrir Configurações';
 
   @override
   String get password => 'Senha';
@@ -746,13 +631,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get perfect => 'Perfeito!';
 
   @override
-  String get personaFriend => 'Amigo Local';
-
-  @override
-  String get personaGuide => 'Guia de Viagem';
-
-  @override
-  String get personaTeacher => 'Professor de Inglês';
+  String get pickGallery => 'Selecionar da galeria';
 
   @override
   String get playAgain => 'Jogar novamente';
@@ -772,6 +651,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get posAdverb => 'Advérbio';
 
   @override
+  String get posArticle => 'Artigo';
+
+  @override
   String get posConjunction => 'Conjunção';
 
   @override
@@ -779,6 +661,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get posNoun => 'Substantivo';
+
+  @override
+  String get posParticle => 'Partícula';
 
   @override
   String get posPreposition => 'Preposição';
@@ -796,9 +681,33 @@ class AppLocalizationsPt extends AppLocalizations {
   String get practiceWordsOnly => 'Praticar somente palavras';
 
   @override
+  String get processing => 'A processar...';
+
+  @override
   String progress(int current, int total) {
     return 'Progresso: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Primeiro, defina seu idioma e o idioma de aprendizado em Menu > Configurações de idioma.';
+
+  @override
+  String get quickStartStep1Title => '1. Configurar Idiomas';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Crie seus próprios cartões de estudo na ordem: entrada (microfone/teclado) -> tradução -> salvar.';
+
+  @override
+  String get quickStartStep2Title => '2. Fluxo Básico';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Pratique com o bate-papo e pratique a pronúncia diretamente na aba de prática de pronúncia.';
+
+  @override
+  String get quickStartStep3Title => '3. Utilize os Modos';
 
   @override
   String recentNItems(int count) {
@@ -823,6 +732,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get refresh => 'Atualizar';
 
   @override
+  String get requestTranslation => 'Solicitar tradução';
+
+  @override
   String get reset => 'Redefinir';
 
   @override
@@ -843,16 +755,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get reviewModeTitle => 'Revisão';
 
   @override
-  String get roleAi => 'IA';
-
-  @override
-  String get roleThirdParty => 'Terceiro';
-
-  @override
-  String get roleUser => 'Usuário';
-
-  @override
   String get save => 'Salvar';
+
+  @override
+  String get saveAsSentence => 'Guardar como frase';
+
+  @override
+  String get saveAsWord => 'Guardar como palavra';
 
   @override
   String get saveData => 'Salvar';
@@ -863,6 +772,9 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Guardar no histórico de digitalização';
+
+  @override
   String get saveTranslationsFromSearch => 'Salve traduções do modo de busca';
 
   @override
@@ -870,6 +782,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get saving => 'Salvando...';
+
+  @override
+  String get scanInstructions => 'Selecione uma imagem para digitalizar';
+
+  @override
+  String get scanLabel => 'Digitalizar';
 
   @override
   String score(String score) {
@@ -917,16 +835,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get selectPOS => 'Selecionar parte da fala';
 
   @override
-  String get selectParticipants => 'Selecionar participantes';
-
-  @override
-  String get selectSentenceType => 'Selecionar tipo de frase';
-
-  @override
   String get selectStudyMaterial => 'Selecionar Material';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Frase';
@@ -935,43 +844,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String get signUp => 'Cadastre-se';
 
   @override
-  String get similarTextFound => 'Texto similar encontrado';
-
-  @override
-  String get skip => 'Pular';
-
-  @override
-  String get source => 'Fonte:';
-
-  @override
-  String get sourceLanguage => 'Idioma Origem';
+  String get simplifiedGuidance =>
+      'Transforme instantaneamente conversas do dia a dia em um idioma estrangeiro! Talkie registra sua vida linguística.';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => 'Fale agora!';
-
-  @override
-  String get speaker => 'Orador';
-
-  @override
-  String get speakerSelect => 'Selecionar orador';
-
-  @override
-  String get speakingPractice => 'Prática de Fala';
-
-  @override
-  String get startChat => 'Iniciar bate-papo';
-
-  @override
-  String get startPractice => 'Iniciar Prática';
-
-  @override
   String get startTutorial => 'Iniciar Tutorial';
-
-  @override
-  String get startWarning => 'Aviso';
 
   @override
   String get startsWith => 'Começa com';
@@ -981,28 +861,22 @@ class AppLocalizationsPt extends AppLocalizations {
       'Verifique seu e-mail para concluir a autenticação.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Baixando: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Falha ao importar: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name importado com sucesso';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Login cancelado.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Falha no login: $error';
   }
 
@@ -1013,23 +887,23 @@ class AppLocalizationsPt extends AppLocalizations {
   String get statusLogoutSuccess => 'Você saiu.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Falha no cadastro: $error';
+  String statusRequestFailed(String error) {
+    return 'Falha ao solicitar tradução: $error';
   }
 
   @override
-  String get statusSigningUp => 'Cadastrando...';
+  String get statusRequestSuccess => 'Pedido de tradução concluído.';
 
   @override
   String get stopPractice => 'Parar Prática';
 
   @override
-  String get studyComplete => 'Estudado';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'O material selecionado não oferece suporte ao idioma de estudo definido ($targetLang) e não pode ser salvo localmente. Deseja solicitar uma tradução?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Registros ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Idioma de estudo não suportado';
 
   @override
   String get styleFormal => 'Formal';
@@ -1044,22 +918,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get styleSlang => 'Gírias/Argot';
 
   @override
-  String get subject => 'Assunto:';
-
-  @override
   String get swapLanguages => 'Inverter idiomas';
 
   @override
-  String get switchToAi => 'Mudar para o modo IA';
-
-  @override
-  String get switchToPartner => 'Mudar para o modo de parceiro';
-
-  @override
   String get syncingData => 'Sincronizando dados...';
-
-  @override
-  String get tabConversation => 'Conversa';
 
   @override
   String tabReview(int count) {
@@ -1123,6 +985,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tooltipSearch => 'Pesquisar';
 
   @override
+  String get tooltipSettingsConfirm => 'Confirmar Configurações';
+
+  @override
   String get tooltipSpeaking => 'Falar';
 
   @override
@@ -1135,6 +1000,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get translate => 'Traduzir';
+
+  @override
+  String get translateNow => 'Traduzir Agora';
 
   @override
   String get translating => 'Traduzindo...';
@@ -1151,6 +1019,9 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Idioma de tradução';
+
+  @override
   String get translationLimitExceeded => 'Limite de tradução excedido';
 
   @override
@@ -1165,17 +1036,25 @@ class AppLocalizationsPt extends AppLocalizations {
       'O número de traduções foi recarregado 5 vezes!';
 
   @override
+  String get translationResult => 'Resultado da Tradução';
+
+  @override
   String get translationResultHint => 'Resultado da tradução - editável';
 
   @override
   String get tryAgain => 'Tente Novamente';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Pratique conversas reais com personas de IA.';
+  String get ttsInstallGuide =>
+      'Instale os dados do idioma em Configurações do Android > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'Bate-papo com IA';
+  String get ttsMissing =>
+      'O motor de voz para este idioma não está instalado no dispositivo.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'A configuração padrão deste dispositivo não oferece suporte à saída de voz neste idioma.';
 
   @override
   String get tutorialContextDesc =>
@@ -1291,7 +1170,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get typeExclamation => 'Exclamação';
 
   @override
+  String get typeIdiom => 'Expressão idiomática';
+
+  @override
   String get typeImperative => 'Imperativo';
+
+  @override
+  String get typeProverb => 'Provérbio';
 
   @override
   String get typeQuestion => 'Pergunta';
@@ -1306,6 +1191,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get useExistingText => 'Usar Existente';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Ver guia online';
 
   @override
@@ -1313,6 +1203,16 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Assistir ao anúncio e recarregar (+5 vezes)';
+
+  @override
+  String get welcomeButton => 'Começar';
+
+  @override
+  String get welcomeDesc =>
+      'Bem-vindo ao Talkie! Compatível com mais de 80 idiomas em todo o mundo com 100% de integridade, juntamente com novos designs 3D premium e desempenho otimizado para uma experiência de aprendizado perfeita.';
+
+  @override
+  String get welcomeTitle => 'Bem-vindo ao Talkie!';
 
   @override
   String get word => 'Palavra';
@@ -1329,113 +1229,4 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Sua Pronúncia';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'A configuração padrão deste dispositivo não oferece suporte à saída de voz neste idioma.';
-
-  @override
-  String get homeTab => 'Tradução';
-
-  @override
-  String get welcomeTitle => 'Bem-vindo ao Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Bem-vindo ao Talkie! Compatível com mais de 80 idiomas em todo o mundo com 100% de integridade, juntamente com novos designs 3D premium e desempenho otimizado para uma experiência de aprendizado perfeita.';
-
-  @override
-  String get welcomeButton => 'Começar';
-
-  @override
-  String get labelDetails => 'Configurações Detalhadas';
-
-  @override
-  String get translationResult => 'Resultado da Tradução';
-
-  @override
-  String get inputContent => 'Conteúdo de Entrada';
-
-  @override
-  String get translateNow => 'Traduzir Agora';
-
-  @override
-  String get tooltipSettingsConfirm => 'Confirmar Configurações';
-
-  @override
-  String get hintNoteExample => 'Ex: Contexto, Sinônimos, etc.';
-
-  @override
-  String get hintTagExample => 'Ex: Negócios, Viagem...';
-
-  @override
-  String get addNew => 'Adicionar Novo';
-
-  @override
-  String get newNotebookTitle => 'Nome do Novo Caderno';
-
-  @override
-  String get enterNameHint => 'Digite o nome';
-
-  @override
-  String get add => 'Adicionar';
-
-  @override
-  String get openSettings => 'Abrir Configurações';
-
-  @override
-  String get helpNotebook =>
-      'Selecione a pasta onde deseja salvar os resultados traduzidos.';
-
-  @override
-  String get helpNote =>
-      'Anote livremente o significado de palavras, exemplos, situações, etc.';
-
-  @override
-  String get helpTag =>
-      'Digite palavras-chave para classificar ou pesquisar mais tarde.';
-
-  @override
-  String get requestTranslation => 'Solicitar tradução';
-
-  @override
-  String get statusRequestSuccess => 'Pedido de tradução concluído.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Falha ao solicitar tradução: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Idioma de estudo não suportado';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'O material selecionado não oferece suporte ao idioma de estudo definido ($targetLang) e não pode ser salvo localmente. Deseja solicitar uma tradução?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Configurar Idiomas';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Primeiro, defina seu idioma e o idioma de aprendizado em Menu > Configurações de idioma.';
-
-  @override
-  String get quickStartStep2Title => '2. Fluxo Básico';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Crie seus próprios cartões de estudo na ordem: entrada (microfone/teclado) -> tradução -> salvar.';
-
-  @override
-  String get quickStartStep3Title => '3. Utilize os Modos';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Pratique com o bate-papo e pratique a pronúncia diretamente na aba de prática de pronúncia.';
-
-  @override
-  String get noteGuidance =>
-      'Insira detalhes adicionales para uma tradução mais precisa';
 }

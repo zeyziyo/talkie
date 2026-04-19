@@ -9,53 +9,20 @@ class AppLocalizationsCy extends AppLocalizations {
   AppLocalizationsCy([String locale = 'cy']) : super(locale);
 
   @override
-  String get basicWords => 'Storio geiriau sylfaenol';
-
-  @override
-  String get inputLanguage => 'Iaith Mewnbwn';
-
-  @override
-  String get translationLanguage => 'Iaith Cyfieithu';
-
-  @override
-  String get simplifiedGuidance =>
-      'Trawsnewidiwch sgyrsiau bob dydd yn syth i iaith dramor! Bydd Talkie yn cofnodi eich bywyd iaith.';
-
-  @override
-  String get noDataForLanguage =>
-      'Nid oes unrhyw ddata dysgu ar gyfer yr iaith a ddewiswyd yn y DB lleol. Lawrlwythwch y data neu dewiswch iaith arall.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Canslo';
-
-  @override
   String get accuracy => 'Cywirdeb';
-
-  @override
-  String get ttsMissing =>
-      'Nid yw injan lleferydd ar gyfer yr iaith hon wedi\'i gosod ar eich dyfais.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Ewch i Gosodiadau Android > Google TTS a gosod data\'r iaith honno.';
 
   @override
   String get adLoading =>
       'Wrthi\'n llwytho hysbyseb. Ceisiwch eto yn nes ymlaen.';
 
   @override
-  String get addNewSubject => 'Ychwanegu teitl newydd';
+  String get add => 'Ychwanegu';
 
   @override
-  String get addParticipant => 'Ychwanegu Cyfranogwr';
+  String get addNew => 'Ychwanegu Newydd';
+
+  @override
+  String get addNewSubject => 'Ychwanegu teitl newydd';
 
   @override
   String get addTagHint => 'Ychwanegu tag...';
@@ -88,6 +55,12 @@ class AppLocalizationsCy extends AppLocalizations {
   String get basicWordRepository => 'Storio geiriau sylfaenol';
 
   @override
+  String get basicWords => 'Storio geiriau sylfaenol';
+
+  @override
+  String get cancel => 'Canslo';
+
+  @override
   String get caseObject => 'Gwrthrychol';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsCy extends AppLocalizations {
   String get caseSubject => 'Enwebiol';
 
   @override
-  String get chatAiChat => 'Sgwrsio';
-
-  @override
-  String get chatAllConversations => 'Pob sgwrs';
-
-  @override
-  String get chatChoosePersona => 'Dewis Persona';
-
-  @override
-  String get chatEndMessage => 'A ydych yn siŵr eich bod am derfynu\'r sgwrs?';
-
-  @override
-  String get chatEndTitle => 'Terfynu a chadw sgwrs';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Methu sgwrsio: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Detholiad sgwrsio ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Hanes Sgwrs';
-
-  @override
-  String get chatNew => 'Sgwrs Newydd';
-
-  @override
-  String get chatNewChat => 'Sgwrs Newydd';
-
-  @override
-  String get chatNoConversations => 'Dim sgyrsiau eto';
-
-  @override
-  String get chatSearchHint => 'Chwilio yn ôl teitl sgwrs...';
-
-  @override
-  String get chatNoteSearchHint => 'Chwilio mewn nodiadau...';
-
-  @override
-  String get chatSaveAndExit => 'Cadw ac Allgofnodi';
-
-  @override
-  String get chatStartNewPrompt => 'Dechreuwch sgwrs newydd i ymarfer!';
-
-  @override
-  String get chatTypeHint => 'Teipiwch neges...';
-
-  @override
-  String get chatUntitled => 'Sgwrs ddi-deitl';
-
-  @override
   String get checking => 'Gwirio...';
 
   @override
@@ -169,14 +87,6 @@ class AppLocalizationsCy extends AppLocalizations {
   @override
   String get confirmDelete =>
       'Ydych chi\'n siŵr eich bod am ddileu\'r cofnod astudio hwn?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Ydych chi\'n siŵr eich bod am ddileu\'r sgwrs hon?\nNi ellir adfer sgyrsiau sydd wedi\'u dileu.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Ydych chi\'n siŵr eich bod am ddileu\'r cyfranogwr hwn?';
 
   @override
   String get contextTagHint =>
@@ -217,23 +127,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get deleteRecord => 'Dileu Cofnod';
 
   @override
-  String get dialogueQuestDesc =>
-      'Ymarfer sgwrsio trwy berfformio sefyllfa. Dewiswch yr ateb cywir a\'i ddweud.';
-
-  @override
-  String get dialogueQuestTitle => 'Cwest Sgwrs';
-
-  @override
-  String get disambiguationPrompt => 'Pa ystyr hoffech chi gyfieithu iddo?';
-
-  @override
-  String get disambiguationTitle => 'Dewis ystyr';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Nid oes gennych gyfrif?';
-
-  @override
-  String get editParticipant => 'Golygu Cyfranogwr';
 
   @override
   String get email => 'E-bost';
@@ -241,6 +138,9 @@ class AppLocalizationsCy extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Mae\'r e-bost hwn eisoes yn bodoli. Mewngofnodwch neu defnyddiwch adfer cyfrinair.';
+
+  @override
+  String get enterNameHint => 'Rhowch enw';
 
   @override
   String get enterNewSubjectName => 'Rhowch deitl newydd';
@@ -281,6 +181,9 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get errors => 'Gwallau:';
+
+  @override
+  String get extractedText => 'Testun wedi\'i echdynnu';
 
   @override
   String get female => 'Benyw';
@@ -340,12 +243,6 @@ class AppLocalizationsCy extends AppLocalizations {
   String get gender => 'Rhyw';
 
   @override
-  String get labelFilterMaterial => 'Deunyddiau';
-
-  @override
-  String get labelFilterTag => 'Tagiau';
-
-  @override
   String get generalTags => 'Tagiau Cyffredinol';
 
   @override
@@ -358,19 +255,8 @@ class AppLocalizationsCy extends AppLocalizations {
   String get googleContinue => 'Parhau gyda Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Mewnforio set sgwrs gyfan fel ffeil JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• Strwythur JSON: defnyddiwch arae `dialogues` yn lle `entries`\n• Adferiad Awtomatig: mae teitlau sgwrs, personâu a threfn negeseuon yn cael eu hadfer.\n• Lleoliad: mae sgyrsiau wedi\'u mewnforio yn ymddangos yn y tab \'Hanes\' yn y modd Sgwrs AI.';
-
-  @override
   String get helpJsonDesc =>
       'Dilynwch y fformat canlynol i fewnforio deunyddiau astudio i ffeil JSON i\'w defnyddio yn Mode 3:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Deialog';
 
   @override
   String get helpJsonTypeSentence => 'Brawddeg';
@@ -403,12 +289,12 @@ class AppLocalizationsCy extends AppLocalizations {
       '• Dewis Deunydd: dewiswch y casgliad deunydd i\'w astudio\n• Gosod Cyfwng: addaswch yr amser aros rhwng brawddegau gyda botymau [-] [+] (3 eiliad i 60 eiliad)\n• Dechrau/Stopio: rheoli sesiwn gysgodi\n• Siarad: gwrando ar lais a\'i ailadrodd\n• Adborth: sgôr cywirdeb (0-100) a dangos lliwiau\n• Amodau Chwilio: hidlo targedau ymarfer yn ôl tagiau, eitemau diweddar, a llythrennau cyntaf';
 
   @override
-  String get helpModeChatDesc =>
-      'Ymarferwch sgiliau sgwrsio go iawn trwy sgwrsio â persona AI.';
+  String get helpNote =>
+      'Cofnodwch ystyr geiriau, enghreifftiau, sefyllfaoedd, ac ati yn rhydd.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Sgwrs AI: Ymarfer sgyrsiau go iawn gyda personau yn y ddewislen \'Sgwrs\' ar y bar tabiau gwaelod\n• Gosodiadau Persona: Nodi rhyw, enw a chod iaith y parti arall yn rhydd\n• Drama Chwarae GPS: Argymell pynciau sgwrsio sy\'n addas ar gyfer y lleoliad trwy adnabod fy lleoliad presennol\n• Dwy Iaith: Mae atebion AI yn cael eu harddangos gyda chyfieithiadau i wneud y gorau o effeithiau dysgu\n• Rheoli Cofnodion: Hidlo hanes sgwrsio blaenorol a chadw negeseuon penodol o sgyrsiau fel deunyddiau dysgu';
+  String get helpNotebook =>
+      'Dewiswch y ffolder i gadw\'r canlyniadau wedi\'u cyfieithu.';
 
   @override
   String get helpTabJson => 'Fformat JSON';
@@ -423,6 +309,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get helpTabTour => 'Cymryd Taith';
 
   @override
+  String get helpTag =>
+      'Rhowch eiriau allweddol i\'w dosbarthu neu i chwilio amdanynt yn nes ymlaen.';
+
+  @override
   String get helpTitle => 'Help & Canllawiau';
 
   @override
@@ -431,6 +321,15 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get hide => 'Cuddio';
+
+  @override
+  String get hintNoteExample => 'E.e.: Cyd-destun, amwysedd, ac ati';
+
+  @override
+  String get hintTagExample => 'E.e.: Busnes, Teithio...';
+
+  @override
+  String get homeTab => 'Cyfieithu';
 
   @override
   String importAdded(int count) {
@@ -443,23 +342,6 @@ class AppLocalizationsCy extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Mae deunydd gyda\'r un teitl yn bodoli eisoes. Newidiwch y teitl a cheisiwch eto.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -475,6 +357,11 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Wedi mewnforio $files ffeil, $entries o gofnodion.';
+  }
+
+  @override
   String get importJsonFile => 'Mewnforio Ffeil JSON';
 
   @override
@@ -486,12 +373,31 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Ffeil JSON sengl';
+
+  @override
+  String get importSourceFolder =>
+      'Ffolder (strwythur llyfrgell benodol i\'r iaith)';
+
+  @override
+  String get importSourceTitle => 'Dewis Ffynhonnell Mewnforio';
+
+  @override
+  String get importSourceZip => 'Ffeil ZIP (ffolder wedi\'i gywasgu)';
+
+  @override
   String importTotal(int count) {
     return 'Cyfanswm: $count';
   }
 
   @override
   String get importing => 'Mewnforio...';
+
+  @override
+  String get inputContent => 'Cynnwys Mewnbwn';
+
+  @override
+  String get inputLanguage => 'Iaith Mewnbwn';
 
   @override
   String get inputModeTitle => 'Mewnbwn';
@@ -508,19 +414,22 @@ class AppLocalizationsCy extends AppLocalizations {
   String get kakaoContinue => 'Parhau â Kakao';
 
   @override
-  String get labelLangCode => 'Côd Iaith (e.e. en-US, ko-KR)';
+  String get labelDetails => 'Gosodiadau Manwl';
 
   @override
-  String get labelName => 'Enw';
+  String get labelFilterMaterial => 'Deunyddiau';
+
+  @override
+  String get labelFilterTag => 'Tagiau';
+
+  @override
+  String get labelLangCode => 'Côd Iaith (e.e. en-US, ko-KR)';
 
   @override
   String get labelNote => 'Nodyn';
 
   @override
   String get labelPOS => 'Rhan o leferydd';
-
-  @override
-  String get labelRole => 'Rôl';
 
   @override
   String get labelSentence => 'Brawddeg';
@@ -571,9 +480,6 @@ class AppLocalizationsCy extends AppLocalizations {
   String get listening => 'Gwrando...';
 
   @override
-  String get loadingParticipants => 'Yn llwytho Cyfranogwyr...';
-
-  @override
   String get location => 'Lleoliad';
 
   @override
@@ -593,9 +499,6 @@ class AppLocalizationsCy extends AppLocalizations {
   String get male => 'Gwryw';
 
   @override
-  String get manageParticipants => 'Rheoli Cyfranogwyr';
-
-  @override
   String get manual => 'Mewnbwn â Llaw';
 
   @override
@@ -603,9 +506,6 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get materialInfo => 'Gwybodaeth Deunydd';
-
-  @override
-  String get me => 'Fi';
 
   @override
   String get menuDeviceImport => 'Mewnforio deunyddiau o\'r ddyfais';
@@ -673,28 +573,20 @@ class AppLocalizationsCy extends AppLocalizations {
   String get neutral => 'Niwtral';
 
   @override
+  String get newNotebookTitle => 'Enw Llyfr Nodiadau Newydd';
+
+  @override
   String get newSubjectName => 'Teitl Geirfa/Brawddeg Newydd';
 
   @override
   String get next => 'Nesaf';
 
   @override
-  String get noDialogueHistory => 'Dim hanes deialog.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Dim cysylltiad rhyngrwyd. Efallai na fydd adnabod llais ar gael pan fyddwch all-lein.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Dim cysylltiad rhyngrwyd. Ni fydd y nodwedd gyfieithu ar gael pan fyddwch all-lein. Defnyddiwch y modd adolygu.';
+  String get noDataForLanguage =>
+      'Nid oes unrhyw ddata dysgu ar gyfer yr iaith a ddewiswyd yn y DB lleol. Lawrlwythwch y data neu dewiswch iaith arall.';
 
   @override
   String get noMaterialsInCategory => 'Nid oes deunyddiau yn y categori hwn.';
-
-  @override
-  String get noParticipantsFound =>
-      'Ni chanfuwyd unrhyw gyfranogwyr cofrestredig.';
 
   @override
   String get noRecords =>
@@ -716,6 +608,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get notSelected => '- Heb ei Ddewis -';
 
   @override
+  String get noteGuidance =>
+      'Lle rydych chi\'n nodi manylion ychwanegol ar gyfer cyfieithiad mwy cywir';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Gwiriwch eich cysylltiad rhyngrwyd neu ceisiwch eto yn nes ymlaen.';
 
@@ -726,16 +622,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Dim deunyddiau ar gael.';
 
   @override
-  String get participantDeleted => 'Dilewyd y cyfranogwr.';
-
-  @override
-  String get participantRename => 'Ailenwi Cyfranogwr';
-
-  @override
-  String get partner => 'Partner';
-
-  @override
-  String get partnerMode => 'Modd Partner';
+  String get openSettings => 'Agor Gosodiadau';
 
   @override
   String get password => 'Cyfrinair';
@@ -747,13 +634,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get perfect => 'Perffaith!';
 
   @override
-  String get personaFriend => 'Ffrind Lleol';
-
-  @override
-  String get personaGuide => 'Tywysydd Teithiau';
-
-  @override
-  String get personaTeacher => 'Athro Saesneg';
+  String get pickGallery => 'Dewis o\'r Oriel';
 
   @override
   String get playAgain => 'Chwarae Eto';
@@ -773,6 +654,9 @@ class AppLocalizationsCy extends AppLocalizations {
   String get posAdverb => 'Adferf';
 
   @override
+  String get posArticle => 'Erthygl';
+
+  @override
   String get posConjunction => 'Cysylltair';
 
   @override
@@ -780,6 +664,9 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get posNoun => 'Enw';
+
+  @override
+  String get posParticle => 'Grōnyn';
 
   @override
   String get posPreposition => 'Arddodiad/Ôl-ddodiad';
@@ -797,9 +684,33 @@ class AppLocalizationsCy extends AppLocalizations {
   String get practiceWordsOnly => 'Ymarfer geiriau yn unig';
 
   @override
+  String get processing => 'Yn prosesu...';
+
+  @override
   String progress(int current, int total) {
     return 'Cynnydd: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Yn newislen Gosodiadau > Iaith, dewiswch eich iaith frodorol a’r iaith rydych chi’n ei dysgu yn gyntaf.';
+
+  @override
+  String get quickStartStep1Title => '1. Gosod Iaith';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Creuwch eich cardiau dysgu eich hun trwy fewnbynnu (meicroffon/bysellfwrdd) -> cyfieithu -> cadw.';
+
+  @override
+  String get quickStartStep2Title => '2. Llif Sylfaenol';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Ymarferwch trwy sgwrsio, ac ymarferwch ynganiad trwy edrych ar destun a’i ynganu’n uniongyrchol yn y tab ymarfer ynganu.';
+
+  @override
+  String get quickStartStep3Title => '3. Defnyddio Moddau';
 
   @override
   String recentNItems(int count) {
@@ -824,6 +735,9 @@ class AppLocalizationsCy extends AppLocalizations {
   String get refresh => 'Adnewyddu';
 
   @override
+  String get requestTranslation => 'Gofyn am Gyfieithiad';
+
+  @override
   String get reset => 'Ailosod';
 
   @override
@@ -844,16 +758,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get reviewModeTitle => 'Adolygu';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Trydydd Parti';
-
-  @override
-  String get roleUser => 'Defnyddiwr';
-
-  @override
   String get save => 'Cadw';
+
+  @override
+  String get saveAsSentence => 'Cadw fel Brawddeg';
+
+  @override
+  String get saveAsWord => 'Cadw fel Gair';
 
   @override
   String get saveData => 'Cadw Data';
@@ -864,6 +775,9 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Cadw i\'r Hanes Sganio';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Ceisiwch gadw cyfieithiadau o\'r modd chwilio';
 
@@ -872,6 +786,12 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get saving => 'Cadw...';
+
+  @override
+  String get scanInstructions => 'Dewiswch ddelwedd i\'w sganio';
+
+  @override
+  String get scanLabel => 'Sganio';
 
   @override
   String score(String score) {
@@ -918,16 +838,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get selectPOS => 'Dewis Rhannau o\'r Lleferydd';
 
   @override
-  String get selectParticipants => 'Dewis Cyfranogwyr';
-
-  @override
-  String get selectSentenceType => 'Dewis Math o Frawddeg';
-
-  @override
   String get selectStudyMaterial => 'Dewis Deunydd Astudio';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Brawddeg';
@@ -936,43 +847,14 @@ class AppLocalizationsCy extends AppLocalizations {
   String get signUp => 'Cofrestru';
 
   @override
-  String get similarTextFound => 'Canfuwyd testun tebyg';
-
-  @override
-  String get skip => 'Hepgor';
-
-  @override
-  String get source => 'Ffynhonnell:';
-
-  @override
-  String get sourceLanguage => 'Iaith Ffynhonnell';
+  String get simplifiedGuidance =>
+      'Trawsnewidiwch sgyrsiau bob dydd yn syth i iaith dramor! Bydd Talkie yn cofnodi eich bywyd iaith.';
 
   @override
   String get sourceLanguageLabel => 'Fy iaith (Ffynhonnell)';
 
   @override
-  String get speakNow => 'Siarad Nawr!';
-
-  @override
-  String get speaker => 'Llefarydd';
-
-  @override
-  String get speakerSelect => 'Dewis Siaradwr';
-
-  @override
-  String get speakingPractice => 'Ymarfer Siarad';
-
-  @override
-  String get startChat => 'Dechrau Sgwrs';
-
-  @override
-  String get startPractice => 'Dechrau Ymarfer';
-
-  @override
   String get startTutorial => 'Dechrau Tiwtorial';
-
-  @override
-  String get startWarning => 'Rhybudd';
 
   @override
   String get startsWith => 'Llythrennau cyntaf';
@@ -981,28 +863,22 @@ class AppLocalizationsCy extends AppLocalizations {
   String get statusCheckEmail => 'Gwiriwch eich e-bost i gwblhau\'r dilysu.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Yn lawrlwytho: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Wedi methu mewnforio: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return 'Wedi mewnforio $name yn llwyddiannus';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Wedi canslo\'r mewngofnodi.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Wedi methu mewngofnodi: $error';
   }
 
@@ -1013,23 +889,23 @@ class AppLocalizationsCy extends AppLocalizations {
   String get statusLogoutSuccess => 'Wedi allgofnodi.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Wedi methu cofrestru: $error';
+  String statusRequestFailed(String error) {
+    return 'Methwyd â gofyn am gyfieithiad: $error';
   }
 
   @override
-  String get statusSigningUp => 'Yn cofrestru...';
+  String get statusRequestSuccess => 'Cwblhawyd y cais am gyfieithiad.';
 
   @override
   String get stopPractice => 'Stopio Ymarfer';
 
   @override
-  String get studyComplete => 'Astudiaeth wedi\'i Gwblhau';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Nid yw\'r iaith astudio ($targetLang) a ddewiswyd gennych yn cael ei chefnogi ar gyfer y deunydd hwn. A ydych am ofyn am gyfieithiad?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Cofnodion Astudio ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Iaith Astudio Heb ei Chefnogi';
 
   @override
   String get styleFormal => 'Ffurfiol';
@@ -1044,22 +920,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get styleSlang => 'Slang';
 
   @override
-  String get subject => 'Pwnc:';
-
-  @override
   String get swapLanguages => 'Cyfnewid Ieithoedd';
 
   @override
-  String get switchToAi => 'Newid i\'r Modd AI';
-
-  @override
-  String get switchToPartner => 'Newid i\'r Modd Partner';
-
-  @override
   String get syncingData => 'Yn cysoni data...';
-
-  @override
-  String get tabConversation => 'Sgwrs';
 
   @override
   String tabReview(int count) {
@@ -1123,6 +987,9 @@ class AppLocalizationsCy extends AppLocalizations {
   String get tooltipSearch => 'Chwilio';
 
   @override
+  String get tooltipSettingsConfirm => 'Cadarnhau Gosodiadau';
+
+  @override
   String get tooltipSpeaking => 'Siarad';
 
   @override
@@ -1135,6 +1002,9 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get translate => 'Cyfieithu';
+
+  @override
+  String get translateNow => 'Cyfieithu Nawr';
 
   @override
   String get translating => 'Cyfieithu...';
@@ -1151,6 +1021,9 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Iaith Cyfieithu';
+
+  @override
   String get translationLimitExceeded => 'Terfyn cyfieithu wedi\'i ragori';
 
   @override
@@ -1165,16 +1038,25 @@ class AppLocalizationsCy extends AppLocalizations {
       'Ail-lenwyd nifer y cyfieithiadau 5 gwaith!';
 
   @override
+  String get translationResult => 'Canlyniad Cyfieithu';
+
+  @override
   String get translationResultHint => 'Canlyniad Cyfieithu - gellir ei olygu';
 
   @override
   String get tryAgain => 'Ceisiwch Eto';
 
   @override
-  String get tutorialAiChatDesc => 'Ymarfer sgyrsiau go iawn gyda AI Persona.';
+  String get ttsInstallGuide =>
+      'Ewch i Gosodiadau Android > Google TTS a gosod data\'r iaith honno.';
 
   @override
-  String get tutorialAiChatTitle => 'Sgwrsio AI';
+  String get ttsMissing =>
+      'Nid yw injan lleferydd ar gyfer yr iaith hon wedi\'i gosod ar eich dyfais.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon.';
 
   @override
   String get tutorialContextDesc =>
@@ -1291,7 +1173,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get typeExclamation => 'Ebychnod';
 
   @override
+  String get typeIdiom => 'Idiom';
+
+  @override
   String get typeImperative => 'Gorchymyn';
+
+  @override
+  String get typeProverb => 'Dihareb';
 
   @override
   String get typeQuestion => 'Cwestiwn';
@@ -1306,6 +1194,11 @@ class AppLocalizationsCy extends AppLocalizations {
   String get useExistingText => 'Defnyddio testun presennol';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Gweler Canllaw Ar-lein';
 
   @override
@@ -1313,6 +1206,16 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Gwylio hysbyseb a\'i ail-lenwi (+5 gwaith)';
+
+  @override
+  String get welcomeButton => 'Dechrau';
+
+  @override
+  String get welcomeDesc =>
+      'Croeso i Talkie! Rydym yn cefnogi pob un o\'r 80+ o ieithoedd ledled y byd gyda 100% o gywirdeb, ynghyd â dyluniad 3D premiwm newydd a pherfformiad wedi\'i optimeiddio ar gyfer profiad dysgu perffaith.';
+
+  @override
+  String get welcomeTitle => 'Croeso i Talkie!';
 
   @override
   String get word => 'Gair';
@@ -1329,113 +1232,4 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Eich Ynganiad';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon.';
-
-  @override
-  String get homeTab => 'Cyfieithu';
-
-  @override
-  String get welcomeTitle => 'Croeso i Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Croeso i Talkie! Rydym yn cefnogi pob un o\'r 80+ o ieithoedd ledled y byd gyda 100% o gywirdeb, ynghyd â dyluniad 3D premiwm newydd a pherfformiad wedi\'i optimeiddio ar gyfer profiad dysgu perffaith.';
-
-  @override
-  String get welcomeButton => 'Dechrau';
-
-  @override
-  String get labelDetails => 'Gosodiadau Manwl';
-
-  @override
-  String get translationResult => 'Canlyniad Cyfieithu';
-
-  @override
-  String get inputContent => 'Cynnwys Mewnbwn';
-
-  @override
-  String get translateNow => 'Cyfieithu Nawr';
-
-  @override
-  String get tooltipSettingsConfirm => 'Cadarnhau Gosodiadau';
-
-  @override
-  String get hintNoteExample => 'E.e.: Cyd-destun, amwysedd, ac ati';
-
-  @override
-  String get hintTagExample => 'E.e.: Busnes, Teithio...';
-
-  @override
-  String get addNew => 'Ychwanegu Newydd';
-
-  @override
-  String get newNotebookTitle => 'Enw Llyfr Nodiadau Newydd';
-
-  @override
-  String get enterNameHint => 'Rhowch enw';
-
-  @override
-  String get add => 'Ychwanegu';
-
-  @override
-  String get openSettings => 'Agor Gosodiadau';
-
-  @override
-  String get helpNotebook =>
-      'Dewiswch y ffolder i gadw\'r canlyniadau wedi\'u cyfieithu.';
-
-  @override
-  String get helpNote =>
-      'Cofnodwch ystyr geiriau, enghreifftiau, sefyllfaoedd, ac ati yn rhydd.';
-
-  @override
-  String get helpTag =>
-      'Rhowch eiriau allweddol i\'w dosbarthu neu i chwilio amdanynt yn nes ymlaen.';
-
-  @override
-  String get requestTranslation => 'Gofyn am Gyfieithiad';
-
-  @override
-  String get statusRequestSuccess => 'Cwblhawyd y cais am gyfieithiad.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Methwyd â gofyn am gyfieithiad: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Iaith Astudio Heb ei Chefnogi';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Nid yw\'r iaith astudio ($targetLang) a ddewiswyd gennych yn cael ei chefnogi ar gyfer y deunydd hwn. A ydych am ofyn am gyfieithiad?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Gosod Iaith';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Yn newislen Gosodiadau > Iaith, dewiswch eich iaith frodorol a’r iaith rydych chi’n ei dysgu yn gyntaf.';
-
-  @override
-  String get quickStartStep2Title => '2. Llif Sylfaenol';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Creuwch eich cardiau dysgu eich hun trwy fewnbynnu (meicroffon/bysellfwrdd) -> cyfieithu -> cadw.';
-
-  @override
-  String get quickStartStep3Title => '3. Defnyddio Moddau';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Ymarferwch trwy sgwrsio, ac ymarferwch ynganiad trwy edrych ar destun a’i ynganu’n uniongyrchol yn y tab ymarfer ynganu.';
-
-  @override
-  String get noteGuidance =>
-      'Lle rydych chi\'n nodi manylion ychwanegol ar gyfer cyfieithiad mwy cywir';
 }

@@ -163,24 +163,6 @@ class SupabaseService {
     note: note,
   );
 
-  static Future<Map<String, dynamic>> processChat({
-    required String text,
-    required String context,
-    required String targetLang,
-    String? sourceLang, // Phase 180: UI Language
-    List<Map<String, dynamic>>? history,
-  }) => SupabaseEdgeService.processChat(
-    text: text,
-    context: context,
-    targetLang: targetLang,
-    sourceLang: sourceLang,
-    history: history,
-  );
-
-  static Future<List<String>> suggestTitles({
-    required List<Map<String, dynamic>> history,
-  }) => SupabaseEdgeService.suggestTitles(history: history);
-
   static Future<Map<String, dynamic>> getRecommendations({
     required List<Map<String, dynamic>> history,
     required String sourceLang,
@@ -250,105 +232,13 @@ class SupabaseService {
     englishText: englishText,
   );
 
-  static Future<Map<String, dynamic>> importDialogueMessage({
-    required String dialogueId,
-    required String sourceText,
-    required String sourceLang,
-    required String targetText,
-    required String targetLang,
-    required String speaker,
-    required int sequenceOrder,
-    String? root,
-  }) async {
-    try {
-      int? groupId = await findGroupId(sourceText, sourceLang);
-      if (groupId == null) {
-        final itemType = (sourceText.split(' ').length > 3) ? 'sentence' : 'word';
-        groupId = UnifiedRepository.generateGroupId(
-          text: sourceText,
-          type: itemType,
-        );
-        await saveEntry(
-          groupId: groupId,
-          text: sourceText,
-          langCode: sourceLang,
-          type: itemType,
-          root: root,
-        );
-      }
-      await saveEntry(groupId: groupId, text: targetText, langCode: targetLang, type: 'sentence');
-      await SupabaseRepository.addToLibrary(
-        groupId: groupId, 
-        type: (sourceText.split(' ').length > 3) ? 'sentence' : 'word',
-        note: null,
-        tags: [speaker],
-        notebookTitle: 'Dialogue Import',
-      );
-      return {'success': true};
-    } catch (e) {
-      return {'success': false, 'reason': e.toString()};
-    }
-  }
-
-  static Future<List<Map<String, dynamic>>> getPrivateChatMessages(String dialogueId) => SupabaseRepository.getChatMessages(dialogueId);
-
-  static Future<void> savePrivateChatMessage({
-    required String dialogueId,
-    required String sourceText,
-    required String targetText,
-    required String sourceLang,
-    required String targetLang,
-    required String speaker,
-    required int sequenceOrder,
-    String? note,
-  }) async {
-    // Phase 131: Use dedicated user_dialogue_messages table
-    await SupabaseRepository.saveChatMessage(
-      dialogueId: dialogueId,
-      sourceText: sourceText,
-      targetText: targetText,
-      sourceLang: sourceLang,
-      targetLang: targetLang,
-      speaker: speaker,
-      sequenceOrder: sequenceOrder,
-    );
-  }
-
-  // Dialogue Group Delegation
-  static Future<String> createDialogueGroup({String? id, String? title, String? persona, String? location, String? note}) =>
-      SupabaseRepository.createDialogueGroup(id: id, title: title, persona: persona, location: location, note: note);
-  static Future<void> updateDialogueTitle(String id, String title) => SupabaseRepository.updateDialogueTitle(id, title);
-  static Future<void> deleteDialogueGroup(String id) => SupabaseRepository.deleteDialogueGroup(id);
-
-  static Future<List<Map<String, dynamic>>> getDialogueParticipants(String dialogueId) => SupabaseRepository.getDialogueParticipants(dialogueId);
-  static Future<int> getChatMessageCount(String dialogueId) => SupabaseRepository.getChatMessageCount(dialogueId);
-
   /// Phase 33: Merge anonymous data to permanent user account on Supabase server
   static Future<void> mergeUserSessions(String oldId, String newId) =>
       SupabaseRepository.mergeUserSessions(oldId, newId);
 
   // Legacy wrappers
-  // Legacy wrappers
   static Future<void> saveSentence({required int groupId, required String text, required String langCode, String? note}) => 
     SupabaseRepository.saveEntry(groupId: groupId, text: text, langCode: langCode, type: 'sentence', note: note);
-
-  static Future<void> syncParticipant({
-    required String dialogueId,
-    required String id,
-    required String name,
-    required String role,
-    String? gender,
-    String? langCode,
-    int? avatarColor,
-  }) => SupabaseRepository.syncParticipant(
-    dialogueId: dialogueId,
-    id: id,
-    name: name,
-    role: role,
-    gender: gender,
-    langCode: langCode,
-    avatarColor: avatarColor,
-  );
 
   /// Phase 17462: Request missing translation for online material
   static Future<void> requestTranslation(String materialId, String langCode) async {

@@ -9,53 +9,20 @@ class AppLocalizationsZu extends AppLocalizations {
   AppLocalizationsZu([String locale = 'zu']) : super(locale);
 
   @override
-  String get basicWords => 'Inqolobane Yamagama Ayisisekelo';
-
-  @override
-  String get inputLanguage => 'Ulimi wokufaka';
-
-  @override
-  String get translationLanguage => 'Ulimi lokuhumusha';
-
-  @override
-  String get simplifiedGuidance =>
-      'Guqula izingxoxo zansuku zonke zibe izilimi zangaphandle ngokushesha! I-Talkie izorekhoda impilo yakho yezilimi.';
-
-  @override
-  String get noDataForLanguage =>
-      'Azikho izinto zokufunda zolimi olukhethiwe ku-DB yendawo. Sicela ulande izinto zokufunda noma ukhethe olunye ulimi.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Khansela';
-
-  @override
   String get accuracy => 'Ukunemba';
-
-  @override
-  String get ttsMissing =>
-      'Injini yezwi yalolu limi ayifakiwe kudivayisi yakho.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Sicela ufake idatha yolimi olufanele kuzilungiselelo ze-Android > Google TTS.';
 
   @override
   String get adLoading =>
       'Iskhangiso siyalayisha. Zama futhi ngemva kwesikhashana.';
 
   @override
-  String get addNewSubject => 'Engeza Isihloko Esisha';
+  String get add => 'Engeza';
 
   @override
-  String get addParticipant => 'Engeza umhlanganyeli';
+  String get addNew => 'Engeza Okusha';
+
+  @override
+  String get addNewSubject => 'Engeza Isihloko Esisha';
 
   @override
   String get addTagHint => 'Engeza ithegi...';
@@ -89,6 +56,12 @@ class AppLocalizationsZu extends AppLocalizations {
   String get basicWordRepository => 'Inqolobane Yamagama Ayisisekelo';
 
   @override
+  String get basicWords => 'Inqolobane Yamagama Ayisisekelo';
+
+  @override
+  String get cancel => 'Khansela';
+
+  @override
   String get caseObject => 'Into';
 
   @override
@@ -104,61 +77,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get caseSubject => 'Ubomuntu';
 
   @override
-  String get chatAiChat => 'Ingxoxo';
-
-  @override
-  String get chatAllConversations => 'Zonke izingxoxo';
-
-  @override
-  String get chatChoosePersona => 'Khetha Ubungcweti';
-
-  @override
-  String get chatEndMessage => 'Uyafuna ukuqeda ingxoxo?';
-
-  @override
-  String get chatEndTitle => 'Qeda bese Ulondoloza Ingxoxo';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Ingxoxo Ihlulekile: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Ingxoxo Eyacashuniwe ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Umlando Wengxoxo';
-
-  @override
-  String get chatNew => 'Ingxoxo Entsha';
-
-  @override
-  String get chatNewChat => 'Ingxoxo Entsha';
-
-  @override
-  String get chatNoConversations => 'Azikho izingxoxo okwamanje';
-
-  @override
-  String get chatSearchHint => 'Sesha ngesihloko sengxoxo...';
-
-  @override
-  String get chatNoteSearchHint => 'Sesha ngamazwana...';
-
-  @override
-  String get chatSaveAndExit => 'Londoloza bese Uphuma';
-
-  @override
-  String get chatStartNewPrompt => 'Qala ingxoxo entsha ukuze uzilolonge!';
-
-  @override
-  String get chatTypeHint => 'Thayipha umyalezo...';
-
-  @override
-  String get chatUntitled => 'Ingxoxo Engenasiihloko';
-
-  @override
   String get checking => 'Kuyahlolwa...';
 
   @override
@@ -169,13 +87,6 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Uyafuna ukulisusa leli rekhodi lokufunda?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Uqinisekile ukuthi ufuna ukususa le ngxoxo?\nAyikwazi ukubuyiselwa emuva uma isisusiwe.';
-
-  @override
-  String get confirmDeleteParticipant => 'Uyafuna ukususa lo mhlanganyeli?';
 
   @override
   String get contextTagHint =>
@@ -216,23 +127,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get deleteRecord => 'Susa Irekhodi';
 
   @override
-  String get dialogueQuestDesc =>
-      'Prakthiza ingxoxo ngezimo. Khetha impendulo efanele bese uyayikhuluma.';
-
-  @override
-  String get dialogueQuestTitle => 'Ukufuna Ingxoxo';
-
-  @override
-  String get disambiguationPrompt => 'Ungathanda ukuhumusha ngayiphi incazelo?';
-
-  @override
-  String get disambiguationTitle => 'Khetha Incazelo';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Awunayo i-akhawunti?';
-
-  @override
-  String get editParticipant => 'Hlela umhlanganyeli';
 
   @override
   String get email => 'I-imeyili';
@@ -240,6 +138,9 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'I-imeyili isivele isetshenziswa. Ngena ngemvume noma usebenzise ukuthola iphasiwedi.';
+
+  @override
+  String get enterNameHint => 'Faka Igama';
 
   @override
   String get enterNewSubjectName => 'Faka isihloko esisha';
@@ -280,6 +181,9 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get errors => 'Amaphutha:';
+
+  @override
+  String get extractedText => 'Umbhalo otholakele';
 
   @override
   String get female => 'Owesifazane';
@@ -339,12 +243,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get gender => 'Ubulili';
 
   @override
-  String get labelFilterMaterial => 'Izinsiza';
-
-  @override
-  String get labelFilterTag => 'Ithegi';
-
-  @override
   String get generalTags => 'Amathegi ajwayelekile';
 
   @override
@@ -357,19 +255,8 @@ class AppLocalizationsZu extends AppLocalizations {
   String get googleContinue => 'Qhubeka nge-Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Ngenisa isethi yonke yezingxoxo njengefayela le-JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• Isakhiwo se-JSON: Sebenzisa uhlu \'lwezingxoxo\' esikhundleni \'sokungenela\'\n• Ukubuyisela okuzenzakalelayo: Isihloko sengxoxo, ubungcweti, nokuhleleka kwemilayezo kuyabuyiselwa.\n• Indawo: Izingxoxo ezingenisiwe zivela kuthebhu \'Yomlando\' yemodi yengxoxo ye-AI.';
-
-  @override
   String get helpJsonDesc =>
       'Ukuze ungenise izinto zokwakha zokufunda njengefayela le-JSON ongazisebenzisa kumodi 3, landela ifomethi elandelayo:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Ingxoxo (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'Umusho (Sentence)';
@@ -402,12 +289,12 @@ class AppLocalizationsZu extends AppLocalizations {
       '• Khetha Izinto Zokwakha: Khetha iqoqo lezinto zokufunda\n• Setha Isikhawu: Lungisa isikhathi sokulinda phakathi kwemisho ngezinkinobho [-] [+] (3 imizuzwana - 60 imizuzwana)\n• Qala/Misa: Lawula iseshini ye-shadowing\n• Khuluma: Lalela izwi bese ukhuluma ngemuva\n• Impendulo: Amamaki okunemba (0-100) nokuboniswa kombala\n• Izimo Zokusesha: Hlunga izinto ezingapheli ngamathegi, izinto zamuva, izinhlamvu zokuqala';
 
   @override
-  String get helpModeChatDesc =>
-      'Zijwayeze ingxoxo yangempela ngokuxoxa no-AI.';
+  String get helpNote =>
+      'Bhala ngokukhululekile incazelo yegama, imisho eyisibonelo, izimo, njll.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Ingxoxo ye-AI: Zijwayeze ingxoxo yangempela nomuntu ku-\'Chat\' kumathebhu angezansi\n• Izilungiselelo Zomuntu: Cacisa ngokukhululekile ubulili, igama, kanye nekhodi yolimi lomunye umuntu\n• Idrama yesimo se-GPS: Thola indawo yakho yamanje futhi uncoma izihloko zengxoxo ezifanele indawo\n• Izilimi ezi-2: Izimpendulo ze-AI ziboniswa ngokuhumusha ukukhulisa umphumela wokufunda\n• Ukuphathwa Kwerekhodi: Hlunga umlando wezingxoxo ezedlule bese ugcina imilayezo ethile ezingxoxweni njengezinto zokufunda';
+  String get helpNotebook =>
+      'Khetha ifolda lapho imiphumela ehunyushiwe izogcinwa khona.';
 
   @override
   String get helpTabJson => 'Ifomethi ye-JSON';
@@ -422,6 +309,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get helpTabTour => 'Zithokozise';
 
   @override
+  String get helpTag =>
+      'Faka amagama angukhiye okuhlunga noma okusesha ngokuhamba kwesikhathi.';
+
+  @override
   String get helpTitle => 'Usizo & Umhlahlandlela';
 
   @override
@@ -430,6 +321,16 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get hide => 'Fihla';
+
+  @override
+  String get hintNoteExample =>
+      'Isibonelo: Incazelo yesimo, amagama afanayo njll.';
+
+  @override
+  String get hintTagExample => 'Isibonelo: Ibhizinisi, ukuhamba...';
+
+  @override
+  String get homeTab => 'Ukuhumusha';
 
   @override
   String importAdded(int count) {
@@ -442,23 +343,6 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Izinto ezinombhalo ofanayo sezikona kakade. Sicela uzame futhi ngemva kokushintsha umbhalo.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -474,6 +358,11 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files amafayela, kufakwe $entries okusha.';
+  }
+
+  @override
   String get importJsonFile => 'Ngenisa Ifayela Le-JSON';
 
   @override
@@ -485,12 +374,31 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Ifayela le-JSON elilodwa';
+
+  @override
+  String get importSourceFolder =>
+      'Ifolda (isakhiwo somtapo wolwazi ngolimi ngalunye)';
+
+  @override
+  String get importSourceTitle => 'Khetha umthombo wokungenisa';
+
+  @override
+  String get importSourceZip => 'Ifayela le-ZIP (ifolda egciniwe)';
+
+  @override
   String importTotal(int count) {
     return 'Isamba: $count';
   }
 
   @override
   String get importing => 'Ngenisa...';
+
+  @override
+  String get inputContent => 'Okuqukethwe Kokufakiwe';
+
+  @override
+  String get inputLanguage => 'Ulimi wokufaka';
 
   @override
   String get inputModeTitle => 'Okokufaka';
@@ -507,19 +415,22 @@ class AppLocalizationsZu extends AppLocalizations {
   String get kakaoContinue => 'Qhubeka nge-Kakao';
 
   @override
-  String get labelLangCode => 'Ikhodi yolimi (isb. en-US, ko-KR)';
+  String get labelDetails => 'Izilungiselelo Ezinemininingwane';
 
   @override
-  String get labelName => 'Igama';
+  String get labelFilterMaterial => 'Izinsiza';
+
+  @override
+  String get labelFilterTag => 'Ithegi';
+
+  @override
+  String get labelLangCode => 'Ikhodi yolimi (isb. en-US, ko-KR)';
 
   @override
   String get labelNote => 'Inothi';
 
   @override
   String get labelPOS => 'Ingxenye yenkulumo';
-
-  @override
-  String get labelRole => 'Indima';
 
   @override
   String get labelSentence => 'Umusho';
@@ -570,9 +481,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get listening => 'Kuyalalelwa...';
 
   @override
-  String get loadingParticipants => 'Ilayisha abahlanganyeli...';
-
-  @override
   String get location => 'Indawo';
 
   @override
@@ -591,9 +499,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get male => 'Owesilisa';
 
   @override
-  String get manageParticipants => 'Phatha abahlanganyeli';
-
-  @override
   String get manual => 'Okokufaka Kwesandla';
 
   @override
@@ -601,9 +506,6 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get materialInfo => 'Ulwazi Lwezinto Zokwakha';
-
-  @override
-  String get me => 'Mina';
 
   @override
   String get menuDeviceImport => 'Ngenisa Izinto Zokwakha Kusuka Kudivayisi';
@@ -671,27 +573,20 @@ class AppLocalizationsZu extends AppLocalizations {
   String get neutral => 'Ukungathathi hlangothi';
 
   @override
+  String get newNotebookTitle => 'Igama Elisha Lencwajana';
+
+  @override
   String get newSubjectName => 'Isihloko Esisha Seqoqo Lamagama/Imisho';
 
   @override
   String get next => 'Okulandelayo';
 
   @override
-  String get noDialogueHistory => 'Ayikho umlando wengxoxo.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Ayikho i-inthanethi. Ukukhuluma kungase kungatholakali ungaxhunyiwe ku-inthanethi.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Ayikho i-inthanethi. Umsebenzi wokuhumusha awutholakali ungaxhunyiwe ku-inthanethi. Sicela usebenzise imodi yokubukeza.';
+  String get noDataForLanguage =>
+      'Azikho izinto zokufunda zolimi olukhethiwe ku-DB yendawo. Sicela ulande izinto zokufunda noma ukhethe olunye ulimi.';
 
   @override
   String get noMaterialsInCategory => 'Azikho izinto ezikulolu hlobo.';
-
-  @override
-  String get noParticipantsFound => 'Abekho abahlanganyeli abatholakele.';
 
   @override
   String get noRecords => 'Awekho amarekhodi okufunda olimi olukhethiwe';
@@ -712,6 +607,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get notSelected => '- Akukhethiwe - ';
 
   @override
+  String get noteGuidance =>
+      'Lapho ufaka khona imininingwane eyengeziwe ukuze uthole ukuhumusha okunembile';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Sicela uhlole uxhumano lwe-inthanethi noma uzame futhi ngemva kwesikhashana.';
 
@@ -722,16 +621,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Azikho izinto ezitholakalayo.';
 
   @override
-  String get participantDeleted => 'Umhlanganyeli ususiwe.';
-
-  @override
-  String get participantRename => 'Qamba Kabusha Igama Lomhlanganyeli';
-
-  @override
-  String get partner => 'Umlingani';
-
-  @override
-  String get partnerMode => 'Imodi Yomlingani';
+  String get openSettings => 'Vula Izilungiselelo';
 
   @override
   String get password => 'Iphasiwedi';
@@ -744,13 +634,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get perfect => 'Kuhle!';
 
   @override
-  String get personaFriend => 'Umthengisi Wendawo';
-
-  @override
-  String get personaGuide => 'Umqondisi Wokuvakasha';
-
-  @override
-  String get personaTeacher => 'Uthisha WesiNgisi';
+  String get pickGallery => 'Khetha kusuka kugalari';
 
   @override
   String get playAgain => 'Dlala Futhi';
@@ -770,6 +654,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get posAdverb => 'Isandiso';
 
   @override
+  String get posArticle => 'Isihlanganisi';
+
+  @override
   String get posConjunction => 'Isihlanganisi';
 
   @override
@@ -777,6 +664,9 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get posNoun => 'Ibizo';
+
+  @override
+  String get posParticle => 'Inxusa';
 
   @override
   String get posPreposition => 'Isandiso/Inhlanganiso';
@@ -794,9 +684,34 @@ class AppLocalizationsZu extends AppLocalizations {
   String get practiceWordsOnly => 'Prakthiza Amagama Kuphela';
 
   @override
+  String get processing => 'Kuyalungiselelwa...';
+
+  @override
   String progress(int current, int total) {
     return 'Inqubekelaphambili: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Emenyu > Izilungiselelo Zolimi, qala ngokucacisa ulimi lwakho nolimi lokufunda.';
+
+  @override
+  String get quickStartStep1Title => '1. Ukusetha Ulimi';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Dala ikhadi lakho lokufunda ngendlela oyithandayo ngokulandelana kokokufaka (imakhrofoni/ikhibhodi) -> ukuhumusha -> ukulondoloza.';
+
+  @override
+  String get quickStartStep2Title => '2. Ukuhamba Okuyisisekelo';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Prakthiza ngengxoxo, bese usebenzisa ithebhu yokuzijwayeza ukuphimisa amagama ukuze uzilolonge ngokuphimisa amagama ngokwakho ngenkathi ubuka umbhalo.';
+
+  @override
+  String get quickStartStep3Title =>
+      '3. Ukusebenzisa Izindlela Ezihlukahlukene';
 
   @override
   String recentNItems(int count) {
@@ -821,6 +736,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get refresh => 'Qabula';
 
   @override
+  String get requestTranslation => 'Cela ukuhumusha';
+
+  @override
   String get reset => 'Setha kabusha';
 
   @override
@@ -841,16 +759,13 @@ class AppLocalizationsZu extends AppLocalizations {
   String get reviewModeTitle => 'Buyekeza';
 
   @override
-  String get roleAi => 'I-AI';
-
-  @override
-  String get roleThirdParty => 'Umuntu wesithathu';
-
-  @override
-  String get roleUser => 'Umsebenzisi';
-
-  @override
   String get save => 'Londoloza';
+
+  @override
+  String get saveAsSentence => 'Londoloza njengomshwana';
+
+  @override
+  String get saveAsWord => 'Londoloza njengegama';
 
   @override
   String get saveData => 'Londoloza Idatha';
@@ -861,6 +776,9 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Londoloza kumlando wokuthwebula';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Zama ukulondoloza izinguqulo ezivela kumodi yokusesha';
 
@@ -869,6 +787,12 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get saving => 'Kuyalondolozwa...';
+
+  @override
+  String get scanInstructions => 'Khetha isithombe ozosithwebula';
+
+  @override
+  String get scanLabel => 'Thwebula';
 
   @override
   String score(String score) {
@@ -915,16 +839,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get selectPOS => 'Khetha Ingxenye Yenkulumo';
 
   @override
-  String get selectParticipants => 'Khetha abahlanganyeli';
-
-  @override
-  String get selectSentenceType => 'Khetha Uhlobo Lomusho';
-
-  @override
   String get selectStudyMaterial => 'Khetha Izinto Zokwakha Zokufunda';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Umusho';
@@ -933,43 +848,14 @@ class AppLocalizationsZu extends AppLocalizations {
   String get signUp => 'Bhalisa';
 
   @override
-  String get similarTextFound => 'Umbhalo Ofanayo Utholakele';
-
-  @override
-  String get skip => 'Yeqa';
-
-  @override
-  String get source => 'Umthombo:';
-
-  @override
-  String get sourceLanguage => 'Ulimi Lokuqala';
+  String get simplifiedGuidance =>
+      'Guqula izingxoxo zansuku zonke zibe izilimi zangaphandle ngokushesha! I-Talkie izorekhoda impilo yakho yezilimi.';
 
   @override
   String get sourceLanguageLabel => 'Ulimi Lwami (Umthombo)';
 
   @override
-  String get speakNow => 'Khuluma Manje!';
-
-  @override
-  String get speaker => 'Isikhulumi';
-
-  @override
-  String get speakerSelect => 'Khetha isikhulumi';
-
-  @override
-  String get speakingPractice => 'Prakthiza Ukukhuluma';
-
-  @override
-  String get startChat => 'Qala ingxoxo';
-
-  @override
-  String get startPractice => 'Qala Ukuzijwayeza';
-
-  @override
   String get startTutorial => 'Qala Isifundo';
-
-  @override
-  String get startWarning => 'Qaphela';
 
   @override
   String get startsWith => 'Iqala Ngenhlamvu';
@@ -979,28 +865,22 @@ class AppLocalizationsZu extends AppLocalizations {
       'Sicela uqinisekise i-imeyili ukuze uqedele ukuqinisekiswa.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Iyalanda: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Ihlulekile ukulayisha: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name ilayishwe ngempumelelo';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Ukungena kukhanseliwe.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Ukungena kuhlulekile: $error';
   }
 
@@ -1011,23 +891,23 @@ class AppLocalizationsZu extends AppLocalizations {
   String get statusLogoutSuccess => 'Uphume ngempumelelo.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Ukubhalisa kuhlulekile: $error';
+  String statusRequestFailed(String error) {
+    return 'Ukuhumusha kwehlulekile: $error';
   }
 
   @override
-  String get statusSigningUp => 'Iyabhalisa...';
+  String get statusRequestSuccess => 'Isicelo sokuhumusha siphumelele.';
 
   @override
   String get stopPractice => 'Misa Ukuzijwayeza';
 
   @override
-  String get studyComplete => 'Ukufunda Kuqediwe';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Izinto ozikhethile azilusekeli ulimi lokufunda olusethiwe njengamanje ($targetLang) futhi azikwazi ukulondolozwa endaweni yangakini. Ungathanda ukucela ukuhumushwa?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Amarekhodi Okufunda ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Ulimi lokufunda alutholakali';
 
   @override
   String get styleFormal => 'Okusesimweni';
@@ -1042,22 +922,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get styleSlang => 'Isilengiso';
 
   @override
-  String get subject => 'Isihloko:';
-
-  @override
   String get swapLanguages => 'Shintsha Izilimi';
 
   @override
-  String get switchToAi => 'Shintshela kumodi ye-AI';
-
-  @override
-  String get switchToPartner => 'Shintshela kumodi Yomlingani';
-
-  @override
   String get syncingData => 'Ithumela idatha...';
-
-  @override
-  String get tabConversation => 'Ingxoxo';
 
   @override
   String tabReview(int count) {
@@ -1121,6 +989,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tooltipSearch => 'Sesha';
 
   @override
+  String get tooltipSettingsConfirm => 'Qinisekisa Izilungiselelo';
+
+  @override
   String get tooltipSpeaking => 'Ukukhuluma';
 
   @override
@@ -1133,6 +1004,9 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get translate => 'Humusha';
+
+  @override
+  String get translateNow => 'Humusha Manje';
 
   @override
   String get translating => 'Kuyahunyushwa...';
@@ -1150,6 +1024,9 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Ulimi lokuhumusha';
+
+  @override
   String get translationLimitExceeded => 'Umkhawulo Wokuhumusha Udluliwe';
 
   @override
@@ -1164,17 +1041,25 @@ class AppLocalizationsZu extends AppLocalizations {
       'Inani lakho lokuhumusha ligcwaliswe izikhathi ezingu-5!';
 
   @override
+  String get translationResult => 'Umphumela Wokuhumusha';
+
+  @override
   String get translationResultHint => 'Umphumela wokuhumusha - uyahleleka';
 
   @override
   String get tryAgain => 'Zama Futhi';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Prakthiza izingxoxo zempilo yangempela nezinhlamvu ze-AI.';
+  String get ttsInstallGuide =>
+      'Sicela ufake idatha yolimi olufanele kuzilungiselelo ze-Android > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'Ingxoxo ye-AI';
+  String get ttsMissing =>
+      'Injini yezwi yalolu limi ayifakiwe kudivayisi yakho.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Izilungiselelo zakho zangaphambilini zaleli divayisi azikusekeli ukukhishwa kwezwi lolu limi.';
 
   @override
   String get tutorialContextDesc =>
@@ -1291,7 +1176,13 @@ class AppLocalizationsZu extends AppLocalizations {
   String get typeExclamation => 'Isibabazo';
 
   @override
+  String get typeIdiom => 'Isisho';
+
+  @override
   String get typeImperative => 'Isiyalezo';
+
+  @override
+  String get typeProverb => 'Isaga';
 
   @override
   String get typeQuestion => 'Umbuzo';
@@ -1306,6 +1197,11 @@ class AppLocalizationsZu extends AppLocalizations {
   String get useExistingText => 'Sebenzisa Umbhalo Okhona';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Buka Umhlahlandlela Oku-inthanethi';
 
   @override
@@ -1314,6 +1210,16 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get watchAdAndRefill =>
       'Buka Isikhangiso bese Ugcwalisa (+Izikhathi ezingu-5)';
+
+  @override
+  String get welcomeButton => 'Qala';
+
+  @override
+  String get welcomeDesc =>
+      'Siyakwamukela ku-Talkie! Sekela zonke izilimi ezingu-80+ emhlabeni wonke ngo-100% wobuqotho, kanye nomklamo omusha we-3D we-premium nokusebenza okuthuthukisiwe ukuze uthole ulwazi oluphelele lokufunda.';
+
+  @override
+  String get welcomeTitle => 'Siyakwamukela ku-Talkie!';
 
   @override
   String get word => 'Igama';
@@ -1330,115 +1236,4 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ukuphinyiselwa Kwakho';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Izilungiselelo zakho zangaphambilini zaleli divayisi azikusekeli ukukhishwa kwezwi lolu limi.';
-
-  @override
-  String get homeTab => 'Ukuhumusha';
-
-  @override
-  String get welcomeTitle => 'Siyakwamukela ku-Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Siyakwamukela ku-Talkie! Sekela zonke izilimi ezingu-80+ emhlabeni wonke ngo-100% wobuqotho, kanye nomklamo omusha we-3D we-premium nokusebenza okuthuthukisiwe ukuze uthole ulwazi oluphelele lokufunda.';
-
-  @override
-  String get welcomeButton => 'Qala';
-
-  @override
-  String get labelDetails => 'Izilungiselelo Ezinemininingwane';
-
-  @override
-  String get translationResult => 'Umphumela Wokuhumusha';
-
-  @override
-  String get inputContent => 'Okuqukethwe Kokufakiwe';
-
-  @override
-  String get translateNow => 'Humusha Manje';
-
-  @override
-  String get tooltipSettingsConfirm => 'Qinisekisa Izilungiselelo';
-
-  @override
-  String get hintNoteExample =>
-      'Isibonelo: Incazelo yesimo, amagama afanayo njll.';
-
-  @override
-  String get hintTagExample => 'Isibonelo: Ibhizinisi, ukuhamba...';
-
-  @override
-  String get addNew => 'Engeza Okusha';
-
-  @override
-  String get newNotebookTitle => 'Igama Elisha Lencwajana';
-
-  @override
-  String get enterNameHint => 'Faka Igama';
-
-  @override
-  String get add => 'Engeza';
-
-  @override
-  String get openSettings => 'Vula Izilungiselelo';
-
-  @override
-  String get helpNotebook =>
-      'Khetha ifolda lapho imiphumela ehunyushiwe izogcinwa khona.';
-
-  @override
-  String get helpNote =>
-      'Bhala ngokukhululekile incazelo yegama, imisho eyisibonelo, izimo, njll.';
-
-  @override
-  String get helpTag =>
-      'Faka amagama angukhiye okuhlunga noma okusesha ngokuhamba kwesikhathi.';
-
-  @override
-  String get requestTranslation => 'Cela ukuhumusha';
-
-  @override
-  String get statusRequestSuccess => 'Isicelo sokuhumusha siphumelele.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Ukuhumusha kwehlulekile: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Ulimi lokufunda alutholakali';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Izinto ozikhethile azilusekeli ulimi lokufunda olusethiwe njengamanje ($targetLang) futhi azikwazi ukulondolozwa endaweni yangakini. Ungathanda ukucela ukuhumushwa?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Ukusetha Ulimi';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Emenyu > Izilungiselelo Zolimi, qala ngokucacisa ulimi lwakho nolimi lokufunda.';
-
-  @override
-  String get quickStartStep2Title => '2. Ukuhamba Okuyisisekelo';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Dala ikhadi lakho lokufunda ngendlela oyithandayo ngokulandelana kokokufaka (imakhrofoni/ikhibhodi) -> ukuhumusha -> ukulondoloza.';
-
-  @override
-  String get quickStartStep3Title =>
-      '3. Ukusebenzisa Izindlela Ezihlukahlukene';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Prakthiza ngengxoxo, bese usebenzisa ithebhu yokuzijwayeza ukuphimisa amagama ukuze uzilolonge ngokuphimisa amagama ngokwakho ngenkathi ubuka umbhalo.';
-
-  @override
-  String get noteGuidance =>
-      'Lapho ufaka khona imininingwane eyengeziwe ukuze uthole ukuhumusha okunembile';
 }

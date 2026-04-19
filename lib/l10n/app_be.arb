@@ -1,32 +1,10 @@
 {
   "@@locale": "be",
-  "basicWords": "Асноўнае сховішча слоў",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Мова ўводу",
-  "translationLanguage": "Мова перакладу",
-  "simplifiedGuidance": "Імгненна перакладайце штодзённыя размовы на замежныя мовы! Talkie будзе запісваць ваша моўнае жыццё.",
-  "noDataForLanguage": "Для абранай мовы няма навучальных матэрыялаў у лакальнай базе даных. Калі ласка, спампуйце матэрыялы альбо абярыце іншую мову.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Адмяніць",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Дакладнасць",
-  "ttsMissing": "На прыладзе адсутнічае галасавы рухавік для гэтай мовы.",
-  "ttsInstallGuide": "Калі ласка, усталюйце адпаведныя моўныя даныя ў наладах Android > Google TTS.",
   "adLoading": "Рэклама загружаецца. Калі ласка, паспрабуйце пазней.",
+  "add": "Дадаць",
+  "addNew": "Дадаць новы",
   "addNewSubject": "Дадаць новую назву",
-  "addParticipant": "Дадаць удзельніка",
   "addTagHint": "Дадаць тэг...",
   "alreadyHaveAccount": "У вас ужо ёсць акаўнт?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Асноўнае сховішча слоў",
+  "basicWords": "Асноўнае сховішча слоў",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Адмяніць",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Вінавальны склон",
   "casePossessive": "Родны склон",
   "casePossessivePronoun": "Прыналежны займеннік",
   "caseReflexive": "Зваротны займеннік",
   "caseSubject": "Назоўны склон",
-  "chatAiChat": "Чат",
-  "chatAllConversations": "Усе размовы",
-  "chatChoosePersona": "Выберыце персанажа",
-  "chatEndMessage": "Вы хочаце завяршыць размову?",
-  "chatEndTitle": "Завяршыць і захаваць размову",
-  "chatFailed": "Не атрымалася пагутарыць: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Вытрымка з размовы ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Гісторыя чата",
-  "chatNew": "Новы чат",
-  "chatNewChat": "Новы чат",
-  "chatNoConversations": "Пакуль няма размоў",
-  "chatSearchHint": "Пошук па назве чата...",
-  "chatNoteSearchHint": "Пошук па нататках...",
-  "chatSaveAndExit": "Захаваць і выйсці",
-  "chatStartNewPrompt": "Пачніце новую размову для практыкі!",
-  "chatTypeHint": "Увядзіце паведамленне...",
-  "chatUntitled": "Размова без назвы",
   "checking": "Праверка...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Вы сапраўды жадаеце выдаліць гэтую размову?\nЯе нельга будзе аднавіць.",
-  "confirmDeleteParticipant": "Вы сапраўды хочаце выдаліць гэтага ўдзельніка?",
   "contextTagHint": "Запішыце сітуацыю, каб яе было лягчэй адрозніць пазней",
   "contextTagLabel": "Кантэкст/сітуацыя (неабавязкова) - Напрыклад: прывітанне, ветлівасць",
   "copiedToClipboard": "Скапіявана ў буфер абмену!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Практыкуйце размову праз ролевыя гульні. Выберыце адпаведныя адказы і вымавіце іх.",
-  "dialogueQuestTitle": "Квест дыялогу",
-  "disambiguationPrompt": "Якое значэнне вы хочаце перакласці?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Выберыце значэнне",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "У вас яшчэ няма акаўнта?",
-  "editParticipant": "Рэдагаваць удзельніка",
   "email": "Электронная пошта",
   "emailAlreadyInUse": "Гэты адрас электроннай пошты ўжо выкарыстоўваецца. Калі ласка, увайдзіце або выкарыстоўвайце аднаўленне пароля.",
+  "enterNameHint": "Увядзіце назву",
   "enterNewSubjectName": "Увядзіце новую назву",
   "enterSentenceHint": "Увядзіце сказ...",
   "enterTextHint": "Увядзіце тэкст для перакладу",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Распазнаны тэкст",
   "female": "Жанчына",
   "file": "Файл:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Рэжым гульні",
   "gameOver": "Гульня скончана",
   "gender": "Пол",
-  "labelFilterMaterial": "Матэрыялы",
-  "labelFilterTag": "Тэгі",
   "generalTags": "Агульныя тэгі",
   "getMaterials": "Атрымаць матэрыялы",
   "good": "Добра",
   "googleContinue": "Працягнуць з Google",
-  "helpDialogueImportDesc": "Імпартуйце поўны набор дыялогаў у выглядзе файла JSON.",
-  "helpDialogueImportDetails": "• Структура JSON: выкарыстоўвайце масіў `dialogues` замест `entries`\n• Аўтаматычнае аднаўленне: аднаўляюцца назва дыялогу, персанаж і парадак паведамленняў.\n• Месцазнаходжанне: імпартаваныя дыялогі з'яўляюцца ва ўкладцы «Гісторыя» ў рэжыме чата AI.",
   "helpJsonDesc": "Калі вы хочаце імпартаваць навучальныя матэрыялы для рэжыму 3 у выглядзе файла JSON, прытрымлівайцеся наступнага фармату:",
-  "helpJsonTypeDialogue": "Дыялог",
   "helpJsonTypeSentence": "Фраза",
   "helpJsonTypeWord": "Слова",
   "helpMode1Desc": "Пачніце вывучаць мову найбольш інтуітыўна зразумелым спосабам з прэміум 3D-мікрафонам і вялікімі значкамі клавіятуры.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Выбар зборніка матэрыялаў: выкарыстоўвайце 'Выбраць зборнік матэрыялаў для вывучэння' або 'Інтэрнэт-бібліятэку' ў меню (⋮) уверсе справа.\n• Перагортванне карткі: правярайце пераклад з дапамогай 'Паказаць/Схаваць'.\n• Праслухоўванне: прайгравайце вымаўленне з дапамогай значка дынаміка.\n• Завершана вывучэнне: адзначце галачкай (V), каб пазначыць як завершанае.\n• Выдаліць: доўгім націскам на картку выдаліце запіс.\n• Пошук і фільтр: падтрымліваюцца радок пошуку (разумны пошук у рэжыме рэальнага часу) і фільтры па тэгах і пачатковых літарах.",
   "helpMode3Desc": "Паўтарайце прапановы ўслед за дыктарам (Shadowing) і практыкуйце вымаўленне.",
   "helpMode3Details": "• Выбар матэрыялаў: выберыце набор матэрыялаў для вывучэння\n• Налада інтэрвалу: наладзьце час чакання паміж фразамі з дапамогай кнопак [-] [+]. (3 секунды ~ 60 секунд)\n• Пачатак/Стоп: кантроль сеансу ценявога паўтарэння\n• Размова: праслухоўванне і паўтарэнне гаворкі\n• Зваротная сувязь: паказ дакладнасці ў балах (0-100) і колерам\n• Крытэрыі пошуку: фільтрацыя практыкаванняў па тэгах, нядаўніх элементах або пачатковых літарах",
-  "helpModeChatDesc": "Практыкуйце рэальную размову, размаўляючы з AI-персанажам.",
-  "helpModeChatDetails": "• Чат са штучным інтэлектам: Практыкуйце размовы з персанажамі ў меню «Чат» на ніжняй панэлі ўкладак\n• Налады персанажа: свабодна ўказвайце пол, імя і моўны код іншага чалавека\n• GPS-сітуацыйная камедыя: распазнае ваша бягучае месцазнаходжанне і рэкамендуе тэмы для размоў, прыдатныя для гэтага месца\n• 2 мовы: Адказы штучнага інтэлекту адлюстроўваюцца разам з перакладам для максімальнага эфекту навучання\n• Кіраванне запісамі: Фільтрацыя мінулых гісторый размоў і захаванне пэўных паведамленняў з размоў у якасці навучальных матэрыялаў",
+  "helpNote": "Запісвайце значэнне слоў, прыклады, сітуацыі і г.д. свабодна.",
+  "helpNotebook": "Выберыце тэчку для захавання перакладзеных вынікаў.",
   "helpTabJson": "Фармат JSON",
   "helpTabModes": "Апісанне рэжымаў",
   "helpTabQuickStart": "Хуткі старт",
   "helpTabTour": "Пачаць тур",
+  "helpTag": "Увядзіце ключавыя словы для класіфікацыі ці пошуку пазней.",
   "helpTitle": "Дапамога і даведнікі",
   "helpTourDesc": "**Вылучанае кола** правядзе вас па асноўных функцыях.\n(Напрыклад: вы можаце выдаліць картку, доўга націскаючы на яе, на якую паказвае **вылучанае кола**.)",
   "hide": "Схаваць",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Напрыклад: кантэкст, амонімы і г.д.",
+  "hintTagExample": "Напрыклад: бізнес, падарожжы...",
+  "homeTab": "Пераклад",
   "importAdded": "Дададзена: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Імпартавана {files} файлаў, {entries} элементаў.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Імпартаваць файл JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Адзіны JSON файл",
+  "importSourceFolder": "Папка (структура бібліятэкі паводле моў)",
+  "importSourceTitle": "Выберыце крыніцу імпарту",
+  "importSourceZip": "ZIP файл (архіваваная папка)",
   "importTotal": "Усяго: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Уведзены тэкст",
+  "inputLanguage": "Мова ўводу",
   "inputModeTitle": "Увод",
   "intervalSeconds": "Інтэрвал: {seconds} сек",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Увядзіце сапраўдны адрас электроннай пошты.",
   "kakaoContinue": "Працягнуць з Kakao",
+  "labelDetails": "Падрабязныя налады",
+  "labelFilterMaterial": "Матэрыялы",
+  "labelFilterTag": "Тэгі",
   "labelLangCode": "Код мовы (напр., en-US, ko-KR)",
-  "labelName": "Імя",
   "labelNote": "Заўвага",
   "labelPOS": "Часціна мовы",
-  "labelRole": "Роля",
   "labelSentence": "Фраза",
   "labelSentenceCollection": "Зборнік прапаноў",
   "labelSentenceType": "Тып прапановы",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Загрузка ўдзельнікаў...",
   "location": "Месцазнаходжанне",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Увайсці",
   "logout": "Выйсці",
   "logoutConfirmMessage": "Вы сапраўды хочаце выйсці з гэтага прылады?",
   "logoutConfirmTitle": "Выйсці",
   "male": "Мужчына",
-  "manageParticipants": "Кіраванне ўдзельнікамі",
   "manual": "Ручны ўвод",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Інфармацыя пра матэрыял",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Я",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Імпартаваць матэрыялы з прылады",
   "menuHelp": "Даведка",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Мой зборнік прапаноў",
   "myWordbook": "Мой слоўнік",
   "neutral": "Нейтральны",
+  "newNotebookTitle": "Назва новага сшытка",
   "newSubjectName": "Новая назва сшытка/падборкі фраз",
   "next": "Далей",
-  "noDialogueHistory": "Гісторыя дыялогаў адсутнічае.",
-  "noInternetWarningMic": "Няма падключэння да Інтэрнэту. Распазнаванне голасу ў аўтаномным рэжыме можа быць недаступным.",
-  "noInternetWarningTranslate": "Няма падключэння да Інтэрнэту. Функцыя перакладу ў аўтаномным рэжыме недаступная. Калі ласка, выкарыстоўвайце рэжым паўтарэння.",
+  "noDataForLanguage": "Для абранай мовы няма навучальных матэрыялаў у лакальнай базе даных. Калі ласка, спампуйце матэрыялы альбо абярыце іншую мову.",
   "noMaterialsInCategory": "У гэтай катэгорыі няма матэрыялаў.",
-  "noParticipantsFound": "Удзельнікі не знойдзены.",
   "noRecords": "Няма запісаў навучання для выбранай мовы",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Не выяўлена голасу",
   "notSelected": "- Не выбрана -",
+  "noteGuidance": "Дзе вы ўводзіце дадатковыя звесткі для больш дакладнага перакладу",
   "onlineLibraryCheckInternet": "Праверце падключэнне да Інтэрнэту або паспрабуйце пазней.",
   "onlineLibraryLoadFailed": "Не ўдалося загрузіць матэрыялы.",
   "onlineLibraryNoMaterials": "Матэрыялы адсутнічаюць.",
-  "participantDeleted": "Удзельнік выдалены.",
-  "participantRename": "Перайменаваць удзельніка",
-  "partner": "Партнёр",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Рэжым партнёра",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Адкрыць налады",
   "password": "Пароль",
-  "passwordTooShort": "Пароль павінен складацца як мінімум з 6 сімвалаў.",
+  "passwordTooShort": "Пароль занадта кароткі",
   "perfect": "Ідэальна!",
-  "personaFriend": "Мясцовы сябар",
-  "personaGuide": "Гід",
-  "personaTeacher": "Настаўнік англійскай мовы",
+  "pickGallery": "Выбраць з галерэі",
   "playAgain": "Згуляць яшчэ раз",
   "playbackFailed": "Не атрымалася прайграць: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Прыметнік",
   "posAdverb": "Прыслоўе",
+  "posArticle": "Артыкль",
   "posConjunction": "Злучнік",
   "posInterjection": "Выклічнік",
   "posNoun": "Назоўнік",
+  "posParticle": "Часціца",
   "posPreposition": "Прыназоўнік/часціца",
   "posPronoun": "Займеннік",
   "posVerb": "Дзеяслоў",
   "practiceModeTitle": "Практыка",
   "practiceWordsOnly": "Практыкаваць толькі словы",
+  "processing": "Апрацоўка...",
   "progress": "Прагрэс: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Спачатку вызначце сваю мову і мову навучання ў меню > Налады мовы.",
+  "quickStartStep1Title": "1. Наладзьце мовы",
+  "quickStartStep2Desc": "Стварыце свае ўласныя навучальныя карткі ў парадку: увод (мікрафон/клавіятура) -> пераклад -> захаванне.",
+  "quickStartStep2Title": "2. Асноўны працэс",
+  "quickStartStep3Desc": "Практыкуйцеся ў чаце і практыкуйце вымаўленне, гледзячы на тэкст ва ўкладцы практыкаванняў па вымаўленні.",
+  "quickStartStep3Title": "3. Выкарыстоўвайце рэжымы",
   "recentNItems": "Паказаць апошнія {count} створаных",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Запытаць пераклад",
   "reset": "Скінуць",
   "resetPracticeHistory": "Скінуць гісторыю практыкі",
   "retry": "Паспрабаваць яшчэ раз?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Агляд",
-  "roleAi": "Штучны інтэлект",
-  "roleThirdParty": "Трэці бок",
-  "roleUser": "Карыстальнік",
   "save": "Захаваць",
+  "saveAsSentence": "Захаваць як сказ",
+  "saveAsWord": "Захаваць як слова",
   "saveData": "Захаваць даныя",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Захаваць у гісторыю сканіраванняў",
   "saveTranslationsFromSearch": "Паспрабуйце захаваць пераклады з рэжыму пошуку",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Выберыце выяву для сканіравання",
+  "scanLabel": "Сканіраваць",
   "score": "Дакладнасць: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Выберыце часціну мовы",
-  "selectParticipants": "Выберыце ўдзельнікаў",
-  "selectSentenceType": "Выберыце тып фразы",
   "selectStudyMaterial": "Выберыце вучэбны матэрыял",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Фраза",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Зарэгістравацца",
-  "similarTextFound": "Знойдзены падобны тэкст",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Прапусціць",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Крыніца:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Зыходная мова",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "sourceLanguageLabel": "Мая мова (Source)",
-  "speakNow": "Гаварыце зараз!",
-  "speaker": "Гаворачы",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Выберыце выступоўцу",
-  "speakingPractice": "Практыка размовы",
-  "startChat": "Пачаць размову",
-  "startPractice": "Пачніце практыкаванне",
-  "startTutorial": "Пачніце навучанне",
-  "startWarning": "Увага",
+  "simplifiedGuidance": "Імгненна перакладайце штодзённыя размовы на замежныя мовы! Talkie будзе запісваць ваша моўнае жыццё.",
+  "sourceLanguageLabel": "Мая мова",
+  "startTutorial": "Пачаць навучанне",
   "startsWith": "Пачынаецца з",
-  "statusCheckEmail": "Каб завяршыць аўтэнтыфікацыю, праверце сваю электронную пошту.",
+  "statusCheckEmail": "Праверце сваю электронную пошту",
   "statusDownloading": "Загрузка: {name}...",
-  "statusImportFailed": "Памылка імпарту: {error}",
-  "statusImportSuccess": "{name} імпартавана",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Уваход адменены.",
-  "statusLoginFailed": "Памылка ўваходу: {error}",
-  "statusLoginSuccess": "Уваход выкананы паспяхова.",
-  "statusLogoutSuccess": "Вы выйшлі з сістэмы.",
-  "statusSignUpFailed": "Памылка рэгістрацыі: {error}",
-  "statusSigningUp": "Ідзе рэгістрацыя...",
-  "stopPractice": "Спыніце практыкаванне",
-  "studyComplete": "Навучанне завершана",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Запісы навучання ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "progress": {
+        "type": "String",
+        "example": "50"
       }
     }
   },
+  "statusImportFailed": "Памылка імпарту: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} імпартавана",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Не атрымалася ўвайсці: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Уваход выкананы",
+  "statusLogoutSuccess": "Выхад выкананы",
+  "statusRequestFailed": "Памылка запыту на пераклад: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Запыт на пераклад выкананы.",
+  "stopPractice": "Спыніце практыкаванне",
+  "studyLangNotFoundDesc": "Выбраны вамі матэрыял не можа быць захаваны лакальна, паколькі ён не падтрымлівае бягучую мову навучання ({targetLang}). Запытаць пераклад?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Мова навучання не падтрымліваецца",
   "styleFormal": "Афіцыйны",
   "styleInformal": "Неафіцыйны",
   "stylePolite": "Ветлівы",
   "styleSlang": "Слэнг",
-  "subject": "Тэма:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Памяняць мовы",
-  "switchToAi": "Пераключыцца ў рэжым AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Пераключыцца ў рэжым партнёра",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Сінхранізацыя даных...",
-  "tabConversation": "Размова",
   "tabReview": "Агляд ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Паменшыць",
   "tooltipIncrease": "Павялічыць",
   "tooltipSearch": "Пошук",
+  "tooltipSettingsConfirm": "Пацвердзіць налады",
   "tooltipSpeaking": "Размова",
   "tooltipStudyReview": "Навучанне + Агляд",
   "totalRecords": "Усяго {count} запісаў (паказаць усе)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Перакласці зараз",
   "translating": "Пераклад...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Мова перакладу",
   "translationLimitExceeded": "Перавышаны ліміт перакладаў",
   "translationLimitMessage": "Вы выкарысталі ўсе бясплатныя штодзённыя пераклады (5).\n\nХочаце паглядзець рэкламу і неадкладна папоўніць яшчэ 5?",
   "translationLoaded": "Загружаны захаваны пераклад",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Вы папоўнілі колькасць перакладаў на 5!",
+  "translationResult": "Вынік перакладу",
   "translationResultHint": "Вынік перакладу - можна рэдагаваць",
   "tryAgain": "Паспрабуйце яшчэ раз",
-  "tutorialAiChatDesc": "Практыкуйце размовы ў рэальным жыцці з персанажам AI.",
-  "tutorialAiChatTitle": "AI Чат",
+  "ttsInstallGuide": "Калі ласка, усталюйце адпаведныя моўныя даныя ў наладах Android > Google TTS.",
+  "ttsMissing": "На прыладзе адсутнічае галасавы рухавік для гэтай мовы.",
+  "ttsUnsupportedNatively": "На гэтай прыладзе не падтрымліваецца вывад маўлення для гэтай мовы ў натыўных наладах.",
   "tutorialContextDesc": "Вы можаце захаваць адну і тую ж фразу асобна, запісаўшы сітуацыю (напрыклад, раніца, вечар).",
   "tutorialContextTitle": "Тэг сітуацыі/кантэксту",
   "tutorialLangSettingsDesc": "Наладзьце мову зыходнага тэксту і мову перакладу.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Перакладзе ўведзены тэкст.",
   "tutorialTransTitle": "Перакласці",
   "typeExclamation": "Клічнае",
+  "typeIdiom": "Ідыёма",
   "typeImperative": "Загаднае",
+  "typeProverb": "Прыказка",
   "typeQuestion": "Пытальнае",
   "typeStatement": "Сцвярджальнае",
   "usageLimitTitle": "Ліміт дасягнуты",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Паглядзець онлайн-даведнік",
   "voluntaryTranslations": "Добраахвотныя пераклады",
   "watchAdAndRefill": "Паглядзець рэкламу і папоўніць (+5)",
+  "welcomeButton": "Пачаць",
+  "welcomeDesc": "Сардэчна запрашаем у Talkie! Мы падтрымліваем усе 80+ моў па ўсім свеце са 100% цэласнасцю і даем вам ідэальны вопыт навучання з новым прэміум 3D-дызайнам і аптымізаванай прадукцыйнасцю.",
+  "welcomeTitle": "Сардэчна запрашаем у Talkie!",
   "word": "Слова",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Абараніце базу, вымаўляючы словы да таго, як ворагі дойдуць да яе.",
   "wordDefenseTitle": "Абарона слоў",
   "wordModeLabel": "Рэжым слоў",
-  "yourPronunciation": "Ваша вымаўленне",
-  "ttsUnsupportedNatively": "На гэтай прыладзе не падтрымліваецца вывад маўлення для гэтай мовы ў натыўных наладах.",
-  "homeTab": "Пераклад",
-  "welcomeTitle": "Сардэчна запрашаем у Talkie!",
-  "welcomeDesc": "Сардэчна запрашаем у Talkie! Мы падтрымліваем усе 80+ моў па ўсім свеце са 100% цэласнасцю і даем вам ідэальны вопыт навучання з новым прэміум 3D-дызайнам і аптымізаванай прадукцыйнасцю.",
-  "welcomeButton": "Пачаць",
-  "labelDetails": "Падрабязныя налады",
-  "translationResult": "Вынік перакладу",
-  "inputContent": "Уведзены тэкст",
-  "translateNow": "Перакласці зараз",
-  "tooltipSettingsConfirm": "Пацвердзіць налады",
-  "hintNoteExample": "Напрыклад: кантэкст, амонімы і г.д.",
-  "hintTagExample": "Напрыклад: бізнес, падарожжы...",
-  "addNew": "Дадаць новы",
-  "newNotebookTitle": "Назва новага сшытка",
-  "enterNameHint": "Увядзіце назву",
-  "add": "Дадаць",
-  "openSettings": "Адкрыць налады",
-  "helpNotebook": "Выберыце тэчку для захавання перакладзеных вынікаў.",
-  "helpNote": "Запісвайце значэнне слоў, прыклады, сітуацыі і г.д. свабодна.",
-  "helpTag": "Увядзіце ключавыя словы для класіфікацыі ці пошуку пазней.",
-  "requestTranslation": "Запытаць пераклад",
-  "statusRequestSuccess": "Запыт на пераклад выкананы.",
-  "statusRequestFailed": "Памылка запыту на пераклад: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Мова навучання не падтрымліваецца",
-  "studyLangNotFoundDesc": "Выбраны вамі матэрыял не можа быць захаваны лакальна, паколькі ён не падтрымлівае бягучую мову навучання ({targetLang}). Запытаць пераклад?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Наладзьце мовы",
-  "quickStartStep1Desc": "Спачатку вызначце сваю мову і мову навучання ў меню > Налады мовы.",
-  "quickStartStep2Title": "2. Асноўны працэс",
-  "quickStartStep2Desc": "Стварыце свае ўласныя навучальныя карткі ў парадку: увод (мікрафон/клавіятура) -> пераклад -> захаванне.",
-  "quickStartStep3Title": "3. Выкарыстоўвайце рэжымы",
-  "quickStartStep3Desc": "Практыкуйцеся ў чаце і практыкуйце вымаўленне, гледзячы на тэкст ва ўкладцы практыкаванняў па вымаўленні.",
-  "noteGuidance": "Дзе вы ўводзіце дадатковыя звесткі для больш дакладнага перакладу"
+  "yourPronunciation": "Ваша вымаўленне"
 }

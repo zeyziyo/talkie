@@ -148,7 +148,6 @@ class Mode3PracticeCard extends StatelessWidget {
                     
                     const SizedBox(height: 12),
                     
-                    // Main Source Text
                     Text(
                       topText,
                       style: const TextStyle(
@@ -158,22 +157,6 @@ class Mode3PracticeCard extends StatelessWidget {
                         height: 1.4,
                       ),
                     ),
-                    
-                    // Dialogue Info
-                    if (record['dialogue_id'] != null)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8),
-                        child: Row(
-                          children: [
-                            const Icon(Icons.chat_bubble_outline, size: 12, color: Colors.white70),
-                            const SizedBox(width: 4),
-                            Text(
-                              l10n.chatFromConversation(record['speaker'] ?? "AI"),
-                              style: const TextStyle(fontSize: 11, color: Colors.white70, fontWeight: FontWeight.bold),
-                            ),
-                          ],
-                        ),
-                      ),
                   ],
                 ),
               ),

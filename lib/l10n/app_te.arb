@@ -1,32 +1,10 @@
 {
   "@@locale": "te",
-  "basicWords": "ప్రాథమిక పద నిల్వ",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "ఇన్‌పుట్ భాష",
-  "translationLanguage": "అనువాద భాష",
-  "simplifiedGuidance": "రోజువారీ సంభాషణలను తక్షణమే విదేశీ భాషలోకి మార్చండి! టాకీ మీ భాషా జీవితాన్ని రికార్డ్ చేస్తుంది.",
-  "noDataForLanguage": "మీరు ఎంచుకున్న భాషకు సంబంధించిన అభ్యాస సామగ్రి స్థానిక DBలో లేదు. దయచేసి డౌన్‌లోడ్ చేయండి లేదా వేరే భాషను ఎంచుకోండి.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "రద్దు చేయి",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "ఖచ్చితత్వం",
-  "ttsMissing": "ఈ భాషకు సంబంధించిన వాయిస్ ఇంజిన్ మీ పరికరంలో ఇన్స్టాల్ చేయబడలేదు.",
-  "ttsInstallGuide": "Android సెట్టింగ్‌లు > Google TTSలో సంబంధిత భాషా డేటాను ఇన్స్టాల్ చేయండి.",
   "adLoading": "ప్రకటనను లోడ్ చేస్తోంది. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి.",
+  "add": "చేర్చు",
+  "addNew": "కొత్తగా చేర్చు",
   "addNewSubject": "కొత్త పేరును జోడించు",
-  "addParticipant": "భాగస్వామిని చేర్చు",
   "addTagHint": "ట్యాగ్‌ను జోడించు...",
   "alreadyHaveAccount": "ఇప్పటికే ఖాతా ఉందా?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "ప్రాథమిక పద రిపోజిటరీ",
+  "basicWords": "ప్రాథమిక పద నిల్వ",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "రద్దు చేయి",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "ఆబ్జెక్టివ్",
   "casePossessive": "ఆస్తికరమైన",
   "casePossessivePronoun": "ఆస్తికరమైన సర్వనామం",
   "caseReflexive": "రిఫ్లెక్సివ్",
   "caseSubject": "సబ్జెక్టివ్",
-  "chatAiChat": "చాటింగ్",
-  "chatAllConversations": "అన్ని సంభాషణలు",
-  "chatChoosePersona": "వ్యక్తిత్వాన్ని ఎంచుకోండి",
-  "chatEndMessage": "మీరు చాట్‌ను ముగించాలనుకుంటున్నారా?",
-  "chatEndTitle": "చాట్‌ను ముగించి, సేవ్ చేయండి",
-  "chatFailed": "చాట్ విఫలమైంది: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "సంభాషణ నుండి సంగ్రహించబడింది ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "చాట్ చరిత్ర",
-  "chatNew": "కొత్త చాట్",
-  "chatNewChat": "కొత్త చాట్",
-  "chatNoConversations": "ఇంకా సంభాషణలు ఏమీ లేవు",
-  "chatSearchHint": "సంభాషణ శీర్షిక ద్వారా వెతకండి...",
-  "chatNoteSearchHint": "వ్యాఖ్య ద్వారా వెతకండి...",
-  "chatSaveAndExit": "సేవ్ చేసి నిష్క్రమించు",
-  "chatStartNewPrompt": "అభ్యాసం కోసం కొత్త సంభాషణను ప్రారంభించండి!",
-  "chatTypeHint": "సందేశాన్ని టైప్ చేయండి...",
-  "chatUntitled": "పేరు లేని చాట్",
   "checking": "తనిఖీ చేస్తోంది...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "మీరు ఈ సంభాషణను తొలగించాలనుకుంటున్నారా?\nతొలగించిన సంభాషణను తిరిగి పొందలేరు.",
-  "confirmDeleteParticipant": "ఈ భాగస్వామిని తొలగించాలా?",
   "contextTagHint": "తర్వాత వేరు చేయడానికి సహాయపడటానికి పరిస్థితిని నమోదు చేయండి",
   "contextTagLabel": "సందర్భం/పరిస్థితి (ఐచ్ఛికం) - ఉదా: ఉదయకాల శుభాకాంక్షలు, గౌరవప్రదమైన ప్రసంగం",
   "copiedToClipboard": "క్లిప్‌బోర్డ్‌కు నకలు చేయబడింది!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "సంభాషణ అభ్యాసం కోసం రోల్-ప్లేయింగ్ గేమ్. సరైన సమాధానాన్ని ఎంచుకోండి మరియు చెప్పండి.",
-  "dialogueQuestTitle": "సంభాషణ అన్వేషణ",
-  "disambiguationPrompt": "మీరు ఏ అర్థంతో అనువదించాలనుకుంటున్నారు?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "అర్థాన్ని ఎంచుకోండి",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "ఖాతా లేదా?",
-  "editParticipant": "భాగస్వామిని సవరించు",
   "email": "ఇమెయిల్",
   "emailAlreadyInUse": "ఈ ఇమెయిల్ ఇప్పటికే ఉపయోగంలో ఉంది. దయచేసి లాగిన్ అవ్వండి లేదా మీ పాస్‌వర్డ్‌ను తిరిగి పొందండి.",
+  "enterNameHint": "పేరును నమోదు చేయండి",
   "enterNewSubjectName": "కొత్త పేరును నమోదు చేయండి",
   "enterSentenceHint": "వాక్యాన్ని నమోదు చేయండి...",
   "enterTextHint": "అనువదించడానికి వచనాన్ని నమోదు చేయండి",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "గుర్తించబడిన వచనం",
   "female": "స్త్రీ",
   "file": "ఫైల్:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "గేమ్ మోడ్",
   "gameOver": "గేమ్ ఓవర్",
   "gender": "లింగం",
-  "labelFilterMaterial": "మెటీరియల్",
-  "labelFilterTag": "ట్యాగ్",
   "generalTags": "సాధారణ ట్యాగ్‌లు",
   "getMaterials": "మెటీరియల్‌లను పొందండి",
   "good": "బాగుంది",
   "googleContinue": "Googleతో కొనసాగించు",
-  "helpDialogueImportDesc": "JSON ఫైల్‌ల నుండి మొత్తం సంభాషణ సెట్‌లను దిగుమతి చేయండి.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "మోడ్ 3లో దిగుమతి చేయడానికి, JSONని సృష్టించండి:",
-  "helpJsonTypeDialogue": "సంభాషణ (Dialogue)",
   "helpJsonTypeSentence": "వాక్యం (Sentence)",
   "helpJsonTypeWord": "పదం (Word)",
   "helpMode1Desc": "ప్రీమియం 3D మైక్రోఫోన్ మరియు పెద్ద కీబోర్డ్ చిహ్నంతో అత్యంత స్పష్టమైన రీతిలో భాషా అభ్యాసాన్ని ప్రారంభించండి.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• స్టడీ మెటీరియల్ ఎంచుకోండి: కుడి ఎగువ మెనూ(⋮) నుండి 'స్టడీ మెటీరియల్ ఎంచుకోండి' లేదా 'ఆన్‌లైన్ మెటీరియల్ లైబ్రరీ' ఉపయోగించండి\n• కార్డును తిప్పండి: అనువాదం చూడటానికి 'చూపించు/దాచు' ఉపయోగించండి\n• వినండి: స్పీకర్ చిహ్నంతో ఉచ్ఛారణ ప్లే చేయండి\n• అభ్యాసం పూర్తయింది: చెక్ మార్క్ (V)తో అభ్యాసం పూర్తయినట్లు గుర్తించండి\n• తొలగించు: రికార్డును తొలగించడానికి కార్డును ఎక్కువసేపు నొక్కండి (లాంగ్ క్లిక్ చేయండి)\n• శోధన & ఫిల్టర్: శోధన పట్టీ (రియల్ టైమ్ స్మార్ట్ శోధన) మరియు ట్యాగ్‌లు, ప్రారంభ అక్షరాల ఫిల్టర్‌కు మద్దతు ఉంది",
   "helpMode3Desc": "వాక్యాన్ని విని, అనుకరిస్తూ (Shadowing) ఉచ్ఛారణను ప్రాక్టీస్ చేయండి.",
   "helpMode3Details": "• ఎంచుకోండి: ప్యాకేజీని ఎంచుకోండి\n• విరామం: [-] [+] వేచి ఉండే సమయం (3సె-60సె)\n• ప్రారంభించు/ఆపు: సెషన్‌ను నియంత్రించండి\n• మాట్లాడు: ఆడియో వినండి మరియు పునరావృతం చేయండి\n• స్కోర్: ఖచ్చితత్వం (0-100)\n• మళ్ళీ ప్రయత్నించు: వాయిస్ గుర్తించబడకపోతే బటన్",
-  "helpModeChatDesc": "AI వ్యక్తిత్వంతో సంభాషిస్తూ నిజ జీవిత సంభాషణను ప్రాక్టీస్ చేయండి.",
-  "helpModeChatDetails": "• AI చాట్: దిగువ ట్యాబ్ బార్‌లోని 'చాట్' మెనులో వ్యక్తిత్వం మరియు ఆచరణాత్మక సంభాషణను అభ్యసించండి\n• వ్యక్తిత్వ సెట్టింగ్‌లు: అవతలి వ్యక్తి యొక్క లింగం, పేరు మరియు భాషా కోడ్‌ను స్వేచ్ఛగా పేర్కొనండి\n• GPS పరిస్థితి నాటకం: ప్రస్తుతం నా స్థానాన్ని గుర్తించడం ద్వారా స్థలానికి సరిపోయే సంభాషణ అంశాలను సిఫార్సు చేయండి\n• 2 భాషలు: AI యొక్క సమాధానం అనువాదంతో పాటు ప్రదర్శించబడుతుంది, అభ్యాస ప్రభావాన్ని పెంచుతుంది\n• రికార్డ్ నిర్వహణ: గత సంభాషణ చరిత్రను ఫిల్టర్ చేయండి మరియు సంభాషణ సమయంలో నిర్దిష్ట సందేశాలను అభ్యాస పదార్థంగా సేవ్ చేయండి",
+  "helpNote": "పదాల అర్థాలు, ఉదాహరణలు, సందర్భాలు మొదలైన వాటిని స్వేచ్ఛగా వ్రాయండి.",
+  "helpNotebook": "అనువదించబడిన ఫలితాలను నిల్వ చేయడానికి ఫోల్డర్‌ను ఎంచుకోండి.",
   "helpTabJson": "JSON ఫార్మాట్",
   "helpTabModes": "మోడ్‌లు",
   "helpTabQuickStart": "త్వరిత ప్రారంభం",
   "helpTabTour": "టూర్",
+  "helpTag": "తరువాత వర్గీకరించడానికి లేదా శోధించడానికి కీలకపదాలను నమోదు చేయండి.",
   "helpTitle": "సహాయం & గైడ్",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "దాచు",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "ఉదాహరణ: సందర్భం, ఒకేలాంటి పదాలు మొదలైనవి",
+  "hintTagExample": "ఉదాహరణ: వ్యాపారం, ప్రయాణం...",
+  "homeTab": "అనువాదం",
   "importAdded": "జోడించబడింది: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} ఫైళ్లు, {entries} ఎంట్రీలు దిగుమతి చేయబడ్డాయి.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON దిగుమతి",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "ఒకే JSON ఫైల్",
+  "importSourceFolder": "ఫోల్డర్ (భాష నిర్దిష్ట లైబ్రరీ నిర్మాణం)",
+  "importSourceTitle": "దిగుమతి మూలాన్ని ఎంచుకోండి",
+  "importSourceZip": "ZIP ఫైల్ (కుదించబడిన ఫోల్డర్)",
   "importTotal": "మొత్తం: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "ఇన్‌పుట్ చేసిన విషయం",
+  "inputLanguage": "ఇన్‌పుట్ భాష",
   "inputModeTitle": "ఇన్‌పుట్",
   "intervalSeconds": "విరామం: {seconds}సెకన్లు",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "దయచేసి సరైన ఇమెయిల్‌ను నమోదు చేయండి.",
   "kakaoContinue": "Kakaoతో కొనసాగించండి",
+  "labelDetails": "వివరాలు",
+  "labelFilterMaterial": "మెటీరియల్",
+  "labelFilterTag": "ట్యాగ్",
   "labelLangCode": "భాషా కోడ్ (ఉదా: en-US, ko-KR)",
-  "labelName": "పేరు",
   "labelNote": "గమనిక",
   "labelPOS": "భాషా భాగం",
-  "labelRole": "పాత్ర",
   "labelSentence": "వాక్యం",
   "labelSentenceCollection": "వాక్యాల సమాహారం",
   "labelSentenceType": "వాక్య రకం",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "భాగస్వాములను లోడ్ చేస్తోంది...",
   "location": "స్థానం",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "లాగిన్",
   "logout": "నిష్క్రమించు",
   "logoutConfirmMessage": "ప్రస్తుత పరికరం నుండి నిష్క్రమించాలా?",
   "logoutConfirmTitle": "నిష్క్రమించు",
   "male": "పురుషుడు",
-  "manageParticipants": "భాగస్వాములను నిర్వహించు",
   "manual": "మాన్యువల్ ఇన్‌పుట్",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "విషయ సమాచారం",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "నేను",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "పరికరంలో మెటీరియల్‌ను దిగుమతి చేయండి",
   "menuHelp": "సహాయం",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "నా వాక్యాల సేకరణ",
   "myWordbook": "నా పదజాలం",
   "neutral": "తటస్థ",
+  "newNotebookTitle": "కొత్త నోట్‌బుక్ పేరు",
   "newSubjectName": "కొత్త పదజాలం/వాక్యాల సేకరణ పేరు",
   "next": "తర్వాత",
-  "noDialogueHistory": "సంభాషణ చరిత్ర లేదు.",
-  "noInternetWarningMic": "ఇంటర్నెట్ కనెక్షన్ లేదు. ఆఫ్‌లైన్‌లో వాయిస్ రికగ్నిషన్ అందుబాటులో ఉండకపోవచ్చు.",
-  "noInternetWarningTranslate": "ఇంటర్నెట్ కనెక్షన్ లేదు. ఆఫ్‌లైన్‌లో అనువాద ఫీచర్ అందుబాటులో లేదు. దయచేసి సమీక్ష మోడ్‌ను ఉపయోగించండి.",
+  "noDataForLanguage": "మీరు ఎంచుకున్న భాషకు సంబంధించిన అభ్యాస సామగ్రి స్థానిక DBలో లేదు. దయచేసి డౌన్‌లోడ్ చేయండి లేదా వేరే భాషను ఎంచుకోండి.",
   "noMaterialsInCategory": "ఈ వర్గంలో మెటీరియల్ ఏదీ లేదు.",
-  "noParticipantsFound": "నమోదు చేసుకున్న భాగస్వాములు లేరు.",
   "noRecords": "ఎంచుకున్న భాషకు రికార్డులు లేవు",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "వాయిస్ గుర్తించబడలేదు",
   "notSelected": "- ఎంచుకోలేదు -",
+  "noteGuidance": "మరింత ఖచ్చితమైన అనువాదం కోసం మీరు అదనపు వివరాలను ఇక్కడ నమోదు చేస్తారు",
   "onlineLibraryCheckInternet": "మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి లేదా తర్వాత మళ్లీ ప్రయత్నించండి.",
   "onlineLibraryLoadFailed": "మెటీరియల్‌లను లోడ్ చేయడంలో విఫలమైంది.",
   "onlineLibraryNoMaterials": "మెటీరియల్ ఏదీ లేదు.",
-  "participantDeleted": "భాగస్వామి తొలగించబడింది.",
-  "participantRename": "భాగస్వామి పేరు మార్చండి",
-  "partner": "భాగస్వామి",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "భాగస్వామి మోడ్",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "సెట్టింగ్‌లు తెరువు",
   "password": "పాస్‌వర్డ్",
   "passwordTooShort": "పాస్‌వర్డ్ కనీసం 6 అక్షరాలు ఉండాలి.",
   "perfect": "పర్ఫెక్ట్!",
-  "personaFriend": "స్థానిక స్నేహితుడు",
-  "personaGuide": "ట్రావెల్ గైడ్",
-  "personaTeacher": "ఆంగ్ల ఉపాధ్యాయుడు",
+  "pickGallery": "గ్యాలరీ నుండి ఎంచుకోండి",
   "playAgain": "మళ్లీ ఆడు",
   "playbackFailed": "ప్లేబ్యాక్ విఫలమైంది: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "విశేషణం",
   "posAdverb": "క్రియా విశేషణం",
+  "posArticle": "ఆర్టికల్",
   "posConjunction": "సంయోజకం",
   "posInterjection": "ఆశ్చర్యార్థకం",
   "posNoun": "నామవాచకం",
+  "posParticle": "పార్టికల్",
   "posPreposition": "సర్గ/అవ్యయం",
   "posPronoun": "సర్వనామం",
   "posVerb": "క్రియ",
   "practiceModeTitle": "అభ్యాసం",
   "practiceWordsOnly": "పదాలను మాత్రమే ప్రాక్టీస్ చేయండి",
+  "processing": "ప్రాసెసింగ్ అవుతోంది...",
   "progress": "పురోగతి: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "మెనూ > భాషా సెట్టింగ్‌లలో మీ భాషను మరియు మీరు నేర్చుకోవాలనుకుంటున్న భాషను ఎంచుకోండి.",
+  "quickStartStep1Title": "1. భాషను ఎంచుకోండి",
+  "quickStartStep2Desc": "మీ స్వంత అభ్యాస కార్డులను సృష్టించడానికి, నమోదు(మైక్/కీబోర్డ్) -> అనువదించు -> సేవ్ చేయండి.",
+  "quickStartStep2Title": "2. ఎలా ఉపయోగించాలి?",
+  "quickStartStep3Desc": "చాట్ ద్వారా ప్రాక్టీస్ చేయండి మరియు ఉచ్ఛారణ సాధన ట్యాబ్‌లో టెక్స్ట్ చూస్తూ నేరుగా ఉచ్చరించడం ద్వారా ప్రాక్టీస్ చేయండి.",
+  "quickStartStep3Title": "3. మోడ్‌లను ఉపయోగించండి",
   "recentNItems": "ఇటీవల సృష్టించబడిన {count} ఐటెమ్‌లను చూడండి",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "అనువాదం అభ్యర్థించు",
   "reset": "రీసెట్ చేయి",
   "resetPracticeHistory": "ప్రాక్టీస్ చరిత్రను రీసెట్ చేయండి",
   "retry": "మళ్లీ ప్రయత్నించాలా?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "సమీక్ష",
-  "roleAi": "AI",
-  "roleThirdParty": "మూడవ వ్యక్తి",
-  "roleUser": "వినియోగదారు",
   "save": "భద్రపరచు",
+  "saveAsSentence": "వాక్యంగా సేవ్ చేయండి",
+  "saveAsWord": "పదంగా సేవ్ చేయండి",
   "saveData": "సేవ్ చేయి",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "స్కాన్ చరిత్రలో సేవ్ చేయండి",
   "saveTranslationsFromSearch": "శోధన మోడ్ నుండి అనువాదాలను సేవ్ చేయండి",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "స్కాన్ చేయడానికి ఒక చిత్రాన్ని ఎంచుకోండి",
+  "scanLabel": "స్కాన్",
   "score": "ఖచ్చితత్వం: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "మాట యొక్క భాగాన్ని ఎంచుకోండి",
-  "selectParticipants": "భాగస్వాములను ఎంచుకోండి",
-  "selectSentenceType": "వాక్యం రకాన్ని ఎంచుకోండి",
   "selectStudyMaterial": "మెటీరియల్ ఎంచుకోండి",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "వాక్యం",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "సైన్ అప్",
-  "similarTextFound": "అలాంటి వచనం కనుగొనబడింది",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "దాటవేయి",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "మూలం:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "మూల భాష",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "రోజువారీ సంభాషణలను తక్షణమే విదేశీ భాషలోకి మార్చండి! టాకీ మీ భాషా జీవితాన్ని రికార్డ్ చేస్తుంది.",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "ఇప్పుడు మాట్లాడండి!",
-  "speaker": "మాట్లాడేవారు",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "మాట్లాడేవారిని ఎంచుకోండి",
-  "speakingPractice": "మాట్లాడే సాధన",
-  "startChat": "చాట్ ప్రారంభించు",
-  "startPractice": "సాధన ప్రారంభించు",
   "startTutorial": "టూర్ ప్రారంభించు",
-  "startWarning": "హెచ్చరిక",
   "startsWith": "ప్రారంభమయ్యే అక్షరం",
   "statusCheckEmail": "దయచేసి మీ ఇమెయిల్‌ను ధృవీకరించడం ద్వారా ప్రామాణీకరణను పూర్తి చేయండి.",
   "statusDownloading": "డౌన్‌లోడ్ చేస్తోంది: {name}...",
-  "statusImportFailed": "దిగుమతి విఫలమైంది: {error}",
-  "statusImportSuccess": "{name} దిగుమతి పూర్తయింది",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "లాగిన్ రద్దు చేయబడింది.",
-  "statusLoginFailed": "లాగిన్ విఫలమైంది: {error}",
-  "statusLoginSuccess": "లాగిన్ విజయవంతమైంది.",
-  "statusLogoutSuccess": "నిష్క్రమించబడింది.",
-  "statusSignUpFailed": "సైన్ అప్ విఫలమైంది: {error}",
-  "statusSigningUp": "సైన్ అప్ చేస్తోంది...",
-  "stopPractice": "ఆపు",
-  "studyComplete": "చదివాను",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "రికార్డులు ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "దిగుమతి విఫలమైంది: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} దిగుమతి పూర్తయింది",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "లాగిన్ విఫలమైంది: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "లాగిన్ విజయవంతమైంది.",
+  "statusLogoutSuccess": "నిష్క్రమించబడింది.",
+  "statusRequestFailed": "అనువాదం అభ్యర్థన విఫలమైంది: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "అనువాదం అభ్యర్థన పూర్తయింది.",
+  "stopPractice": "ఆపు",
+  "studyLangNotFoundDesc": "మీరు ఎంచుకున్న మెటీరియల్ ప్రస్తుతం సెట్ చేయబడిన అధ్యయన భాష ({targetLang})కు మద్దతు ఇవ్వదు కాబట్టి దీన్ని స్థానికంగా సేవ్ చేయలేరు. మీరు అనువాదం కోసం అభ్యర్థించాలనుకుంటున్నారా?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "అధ్యయన భాష మద్దతు లేదు",
   "styleFormal": "గౌరవంగా",
   "styleInformal": "అనధికారిక",
   "stylePolite": "మర్యాదగా",
   "styleSlang": "స్లాంగ్",
-  "subject": "విషయం:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "భాషలను మార్చు",
-  "switchToAi": "AI మోడ్‌కు మారు",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "భాగస్వామి మోడ్‌కు మారు",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "డేటా సమకాలీకరిస్తోంది...",
-  "tabConversation": "సంభాషణ",
   "tabReview": "సమీక్ష ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "తగ్గించు",
   "tooltipIncrease": "పెంచు",
   "tooltipSearch": "వెతకండి",
+  "tooltipSettingsConfirm": "సెట్టింగ్‌లను నిర్ధారించండి",
   "tooltipSpeaking": "మాట్లాడటం",
   "tooltipStudyReview": "అధ్యయనం+సమీక్ష",
   "totalRecords": "మొత్తం {count} రికార్డులు (అన్నింటినీ చూడండి)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "ఇప్పుడు అనువదించు",
   "translating": "అనువదిస్తోంది...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "అనువాద భాష",
   "translationLimitExceeded": "అనువాద పరిమితి మించిపోయింది",
   "translationLimitMessage": "మీ రోజువారీ ఉచిత అనువాదాలను (5 సార్లు) మీరు ఉపయోగించారు.\\n\\nమీరు ప్రకటన చూసి వెంటనే 5 సార్లు రీఫిల్ చేయాలనుకుంటున్నారా?",
   "translationLoaded": "సేవ్ చేసిన అనువాదం లోడ్ చేయబడింది",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "అనువాదాల సంఖ్య 5 సార్లు రీఫిల్ చేయబడింది!",
+  "translationResult": "అనువాదం ఫలితం",
   "translationResultHint": "అనువాద ఫలితం - సవరించడానికి అందుబాటులో ఉంది",
   "tryAgain": "మళ్ళీ ప్రయత్నించు",
-  "tutorialAiChatDesc": "AI వ్యక్తిత్వంతో నిజమైన సంభాషణను ప్రాక్టీస్ చేయండి.",
-  "tutorialAiChatTitle": "AI చాటింగ్",
+  "ttsInstallGuide": "Android సెట్టింగ్‌లు > Google TTSలో సంబంధిత భాషా డేటాను ఇన్స్టాల్ చేయండి.",
+  "ttsMissing": "ఈ భాషకు సంబంధించిన వాయిస్ ఇంజిన్ మీ పరికరంలో ఇన్స్టాల్ చేయబడలేదు.",
+  "ttsUnsupportedNatively": "ఈ పరికరం యొక్క స్థానిక సెట్టింగ్‌లలో ఈ భాషకు వాయిస్ అవుట్‌పుట్ మద్దతు లేదు.",
   "tutorialContextDesc": "సారూప్య వాక్యాలను వేరు చేయడానికి సందర్భాన్ని (ఉదా. ఉదయం) జోడించండి.",
   "tutorialContextTitle": "సందర్భ ట్యాగ్",
   "tutorialLangSettingsDesc": "అనువదించడానికి మూలం మరియు గమ్య భాషను సెట్ చేయండి.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "మీ వచనాన్ని అనువదించడానికి ఇక్కడ నొక్కండి.",
   "tutorialTransTitle": "అనువాదం",
   "typeExclamation": "ఆశ్చర్యార్థక వాక్యం",
+  "typeIdiom": "జాతీయం",
   "typeImperative": "ఆదేశం",
+  "typeProverb": "సామెత",
   "typeQuestion": "ప్రశ్న",
   "typeStatement": "ప్రకటన",
   "usageLimitTitle": "పరిమితి చేరుకుంది",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "ఆన్‌లైన్ గైడ్‌ను చూడండి",
   "voluntaryTranslations": "స్వచ్ఛంద అనువాదాలు",
   "watchAdAndRefill": "ప్రకటన చూసి రీఫిల్ చేయండి (+5 సార్లు)",
+  "welcomeButton": "ప్రారంభించు",
+  "welcomeDesc": "టాకీకి స్వాగతం! ప్రపంచవ్యాప్తంగా 80 కంటే ఎక్కువ భాషలకు 100% సమగ్రతతో మద్దతు ఉంది మరియు కొత్త ప్రీమియం 3D డిజైన్ మరియు ఆప్టిమైజ్ చేసిన పనితీరుతో అతుకులు లేని అభ్యాస అనుభవాన్ని అందిస్తుంది.",
+  "welcomeTitle": "Talkie కి స్వాగతం!",
   "word": "పదం",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "శత్రువులు రాకముందే పదాన్ని చెప్పడం ద్వారా స్థావరాన్ని రక్షించండి.",
   "wordDefenseTitle": "పద రక్షణ",
   "wordModeLabel": "పద మోడ్",
-  "yourPronunciation": "మీ ఉచ్చారణ",
-  "ttsUnsupportedNatively": "ఈ పరికరం యొక్క స్థానిక సెట్టింగ్‌లలో ఈ భాషకు వాయిస్ అవుట్‌పుట్ మద్దతు లేదు.",
-  "homeTab": "అనువాదం",
-  "welcomeTitle": "Talkie కి స్వాగతం!",
-  "welcomeDesc": "టాకీకి స్వాగతం! ప్రపంచవ్యాప్తంగా 80 కంటే ఎక్కువ భాషలకు 100% సమగ్రతతో మద్దతు ఉంది మరియు కొత్త ప్రీమియం 3D డిజైన్ మరియు ఆప్టిమైజ్ చేసిన పనితీరుతో అతుకులు లేని అభ్యాస అనుభవాన్ని అందిస్తుంది.",
-  "welcomeButton": "ప్రారంభించు",
-  "labelDetails": "వివరాలు",
-  "translationResult": "అనువాదం ఫలితం",
-  "inputContent": "ఇన్‌పుట్ చేసిన విషయం",
-  "translateNow": "ఇప్పుడు అనువదించు",
-  "tooltipSettingsConfirm": "సెట్టింగ్‌లను నిర్ధారించండి",
-  "hintNoteExample": "ఉదాహరణ: సందర్భం, ఒకేలాంటి పదాలు మొదలైనవి",
-  "hintTagExample": "ఉదాహరణ: వ్యాపారం, ప్రయాణం...",
-  "addNew": "కొత్తగా చేర్చు",
-  "newNotebookTitle": "కొత్త నోట్‌బుక్ పేరు",
-  "enterNameHint": "పేరును నమోదు చేయండి",
-  "add": "చేర్చు",
-  "openSettings": "సెట్టింగ్‌లు తెరువు",
-  "helpNotebook": "అనువదించబడిన ఫలితాలను నిల్వ చేయడానికి ఫోల్డర్‌ను ఎంచుకోండి.",
-  "helpNote": "పదాల అర్థాలు, ఉదాహరణలు, సందర్భాలు మొదలైన వాటిని స్వేచ్ఛగా వ్రాయండి.",
-  "helpTag": "తరువాత వర్గీకరించడానికి లేదా శోధించడానికి కీలకపదాలను నమోదు చేయండి.",
-  "requestTranslation": "అనువాదం అభ్యర్థించు",
-  "statusRequestSuccess": "అనువాదం అభ్యర్థన పూర్తయింది.",
-  "statusRequestFailed": "అనువాదం అభ్యర్థన విఫలమైంది: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "అధ్యయన భాష మద్దతు లేదు",
-  "studyLangNotFoundDesc": "మీరు ఎంచుకున్న మెటీరియల్ ప్రస్తుతం సెట్ చేయబడిన అధ్యయన భాష ({targetLang})కు మద్దతు ఇవ్వదు కాబట్టి దీన్ని స్థానికంగా సేవ్ చేయలేరు. మీరు అనువాదం కోసం అభ్యర్థించాలనుకుంటున్నారా?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. భాషను ఎంచుకోండి",
-  "quickStartStep1Desc": "మెనూ > భాషా సెట్టింగ్‌లలో మీ భాషను మరియు మీరు నేర్చుకోవాలనుకుంటున్న భాషను ఎంచుకోండి.",
-  "quickStartStep2Title": "2. ఎలా ఉపయోగించాలి?",
-  "quickStartStep2Desc": "మీ స్వంత అభ్యాస కార్డులను సృష్టించడానికి, నమోదు(మైక్/కీబోర్డ్) -> అనువదించు -> సేవ్ చేయండి.",
-  "quickStartStep3Title": "3. మోడ్‌లను ఉపయోగించండి",
-  "quickStartStep3Desc": "చాట్ ద్వారా ప్రాక్టీస్ చేయండి మరియు ఉచ్ఛారణ సాధన ట్యాబ్‌లో టెక్స్ట్ చూస్తూ నేరుగా ఉచ్చరించడం ద్వారా ప్రాక్టీస్ చేయండి.",
-  "noteGuidance": "మరింత ఖచ్చితమైన అనువాదం కోసం మీరు అదనపు వివరాలను ఇక్కడ నమోదు చేస్తారు"
+  "yourPronunciation": "మీ ఉచ్చారణ"
 }

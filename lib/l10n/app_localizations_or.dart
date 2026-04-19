@@ -9,53 +9,20 @@ class AppLocalizationsOr extends AppLocalizations {
   AppLocalizationsOr([String locale = 'or']) : super(locale);
 
   @override
-  String get basicWords => 'ମୌଳିକ ଶବ୍ଦ ଷ୍ଟୋରେଜ୍';
-
-  @override
-  String get inputLanguage => 'ଇନପୁଟ୍ ଭାଷା';
-
-  @override
-  String get translationLanguage => 'ଅନୁବାଦ ଭାଷା';
-
-  @override
-  String get simplifiedGuidance =>
-      'ଦୈନନ୍ଦିନ କଥାବାର୍ତ୍ତାକୁ ବିଦେଶୀ ଭାଷାରେ ତୁରନ୍ତ ରୂପାନ୍ତର କରନ୍ତୁ! Talkie ଆପଣଙ୍କର ଭାଷା ଜୀବନକୁ ରେକର୍ଡ କରିବ।';
-
-  @override
-  String get noDataForLanguage =>
-      'ଆପଣଙ୍କ ଦ୍ୱାରା ଚୟନ କରାଯାଇଥିବା ଭାଷା ପାଇଁ କୌଣସି ଶିକ୍ଷଣ ଉପାଦାନ ସ୍ଥାନୀୟ DB ରେ ନାହିଁ | ଦୟାକରି ଉପାଦାନଗୁଡିକ ଡାଉନଲୋଡ୍ କରନ୍ତୁ କିମ୍ବା ଅନ୍ୟ ଏକ ଭାଷା ଚୟନ କରନ୍ତୁ |';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'ବାତିଲ୍ କରନ୍ତୁ';
-
-  @override
   String get accuracy => 'ସଠିକତା';
-
-  @override
-  String get ttsMissing =>
-      'ଏହି ଭାଷା ପାଇଁ ଭଏସ୍ ଇଞ୍ଜିନ୍ ଆପଣଙ୍କ ଡିଭାଇସରେ ସ୍ଥାପିତ ହୋଇନାହିଁ।';
-
-  @override
-  String get ttsInstallGuide =>
-      'ଆଣ୍ଡ୍ରଏଡ୍ ସେଟିଙ୍ଗ୍ସ > ଗୁଗଲ୍ TTS ରେ ଏହି ଭାଷା ଡାଟା ସ୍ଥାପନ କରନ୍ତୁ।';
 
   @override
   String get adLoading =>
       'ବିଜ୍ଞାପନ ଲୋଡ୍ ହେଉଛି। ଦୟାକରି ପରେ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ।';
 
   @override
-  String get addNewSubject => 'ନୂଆ ନାମ ଯୋଡନ୍ତୁ';
+  String get add => 'ଯୋଡନ୍ତୁ';
 
   @override
-  String get addParticipant => 'ଅଂଶଗ୍ରହଣକାରୀଙ୍କୁ ଯୋଡନ୍ତୁ';
+  String get addNew => 'ନୂଆ ଯୋଡନ୍ତୁ';
+
+  @override
+  String get addNewSubject => 'ନୂଆ ନାମ ଯୋଡନ୍ତୁ';
 
   @override
   String get addTagHint => 'ଟ୍ୟାଗ୍ ଯୋଡନ୍ତୁ...';
@@ -88,6 +55,12 @@ class AppLocalizationsOr extends AppLocalizations {
   String get basicWordRepository => 'ମୌଳିକ ଶବ୍ଦ ଷ୍ଟୋରେଜ୍';
 
   @override
+  String get basicWords => 'ମୌଳିକ ଶବ୍ଦ ଷ୍ଟୋରେଜ୍';
+
+  @override
+  String get cancel => 'ବାତିଲ୍ କରନ୍ତୁ';
+
+  @override
   String get caseObject => 'କର୍ମ କାରକ';
 
   @override
@@ -103,63 +76,6 @@ class AppLocalizationsOr extends AppLocalizations {
   String get caseSubject => 'କର୍ତ୍ତୃ କାରକ';
 
   @override
-  String get chatAiChat => 'ଚାଟିଂ';
-
-  @override
-  String get chatAllConversations => 'ସମସ୍ତ ବାର୍ତ୍ତାଳାପ';
-
-  @override
-  String get chatChoosePersona => 'ପର୍ସୋନା ଚୟନ କରନ୍ତୁ';
-
-  @override
-  String get chatEndMessage => 'ଆପଣ କଥାବାର୍ତ୍ତା ଶେଷ କରିବାକୁ ଚାହାଁନ୍ତି କି?';
-
-  @override
-  String get chatEndTitle => 'କଥାବାର୍ତ୍ତା ଶେଷ ଏବଂ ସେଭ୍ କରନ୍ତୁ';
-
-  @override
-  String chatFailed(Object error) {
-    return 'ଚାଟିଂ ବିଫଳ: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'କଥାବାର୍ତ୍ତାରୁ ଉଦ୍ଧୃତ ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'କଥାବାର୍ତ୍ତା ଇତିହାସ';
-
-  @override
-  String get chatNew => 'ନୂତନ କଥାବାର୍ତ୍ତା';
-
-  @override
-  String get chatNewChat => 'ନୂତନ କଥାବାର୍ତ୍ତା';
-
-  @override
-  String get chatNoConversations =>
-      'ବର୍ତ୍ତମାନ ପର୍ଯ୍ୟନ୍ତ କୌଣସି କଥାବାର୍ତ୍ତା ନାହିଁ';
-
-  @override
-  String get chatSearchHint => 'ବାର୍ତ୍ତାଳାପ ଶୀର୍ଷକ ଦ୍ଵାରା ଖୋଜ...';
-
-  @override
-  String get chatNoteSearchHint => 'ଟିପ୍ପଣୀ ଦ୍ୱାରା ସନ୍ଧାନ କରନ୍ତୁ...';
-
-  @override
-  String get chatSaveAndExit => 'ସେଭ୍ କରନ୍ତୁ ଏବଂ ବାହାରକୁ ଯାଆନ୍ତୁ';
-
-  @override
-  String get chatStartNewPrompt =>
-      'ଅଭ୍ୟାସ କରିବାକୁ ଏକ ନୂତନ କଥାବାର୍ତ୍ତା ଆରମ୍ଭ କରିବାକୁ ଚେଷ୍ଟା କରନ୍ତୁ!';
-
-  @override
-  String get chatTypeHint => 'ଏକ ବାର୍ତ୍ତା ଟାଇପ୍ କରନ୍ତୁ...';
-
-  @override
-  String get chatUntitled => 'ଶୀର୍ଷକହୀନ କଥାବାର୍ତ୍ତା';
-
-  @override
   String get checking => 'ଯାଞ୍ଚ କରୁଛି...';
 
   @override
@@ -171,14 +87,6 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get confirmDelete =>
       'ଆପଣ ଏହି ଅଧ୍ୟୟନ ରେକର୍ଡ ଡିଲିଟ୍ କରିବାକୁ ନିଶ୍ଚିତ କି?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'ଆପଣ ଏହି ବାର୍ତ୍ତାଳାପକୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?\nଡିଲିଟ୍ ହୋଇଥିବା ବାର୍ତ୍ତାଳାପକୁ ପୁନରୁଦ୍ଧାର କରାଯାଇପାରିବ ନାହିଁ।';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'ଆପଣ ଏହି ଅଂଶଗ୍ରହଣକାରୀଙ୍କୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?';
 
   @override
   String get contextTagHint => 'ପରେ ପୃଥକ କରିବା ସହଜ କରିବାକୁ ପରିସ୍ଥିତି ଲେଖନ୍ତୁ';
@@ -217,24 +125,10 @@ class AppLocalizationsOr extends AppLocalizations {
   String get deleteRecord => 'ରେକର୍ଡ ଡିଲିଟ୍ କରନ୍ତୁ';
 
   @override
-  String get dialogueQuestDesc =>
-      'ପରିସ୍ଥିତି ଡ୍ରାମା ମାଧ୍ୟମରେ କଥାବାର୍ତ୍ତା ଅଭ୍ୟାସ କରନ୍ତୁ। ଏକ ଉପଯୁକ୍ତ ଉତ୍ତର ଚୟନ କରନ୍ତୁ ଏବଂ କୁହନ୍ତୁ।';
-
-  @override
-  String get dialogueQuestTitle => 'ସଂଳାପ ଅନୁସନ୍ଧାନ';
-
-  @override
-  String get disambiguationPrompt =>
-      'ଆପଣ କେଉଁ ଅର୍ଥରେ ଅନୁବାଦ କରିବାକୁ ଚାହାଁନ୍ତି?';
-
-  @override
-  String get disambiguationTitle => 'ଅର୍ଥ ଚୟନ';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'ଆପଣଙ୍କର ଆକାଉଣ୍ଟ ନାହିଁ କି?';
-
-  @override
-  String get editParticipant => 'ଅଂଶଗ୍ରହଣକାରୀଙ୍କୁ ସଂପାଦନ କରନ୍ତୁ';
 
   @override
   String get email => 'ଇମେଲ୍';
@@ -242,6 +136,9 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'ଏହି ଇମେଲ ପୂର୍ବରୁ ପଞ୍ଜୀକୃତ ହୋଇଛି। ଦୟାକରି ଲଗ୍ଇନ୍ କରନ୍ତୁ କିମ୍ବା ପାସୱାର୍ଡ ପୁନରୁଦ୍ଧାର ବ୍ୟବହାର କରନ୍ତୁ।';
+
+  @override
+  String get enterNameHint => 'ନାମ ଦିଅନ୍ତୁ';
 
   @override
   String get enterNewSubjectName => 'ନୂଆ ନାମ ଦିଅନ୍ତୁ';
@@ -282,6 +179,9 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get errors => 'ତ୍ରୁଟି:';
+
+  @override
+  String get extractedText => 'ଚିହ୍ନଟ ହୋଇଥିବା ଟେକ୍ସଟ୍';
 
   @override
   String get female => 'ମହିଳା';
@@ -341,12 +241,6 @@ class AppLocalizationsOr extends AppLocalizations {
   String get gender => 'ଲିଙ୍ଗ';
 
   @override
-  String get labelFilterMaterial => 'ସାମଗ୍ରୀ';
-
-  @override
-  String get labelFilterTag => 'ଟ୍ୟାଗ୍';
-
-  @override
   String get generalTags => 'ସାଧାରଣ ଟ୍ୟାଗ୍';
 
   @override
@@ -359,19 +253,8 @@ class AppLocalizationsOr extends AppLocalizations {
   String get googleContinue => 'Google ସହିତ ଜାରି ରଖନ୍ତୁ';
 
   @override
-  String get helpDialogueImportDesc =>
-      'ଏକ JSON ଫାଇଲ୍ ଭାବରେ ସମ୍ପୂର୍ଣ୍ଣ ସଂଳାପ ସେଟ୍ ଆଣନ୍ତୁ।';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON ଗଠନ: `entries` ପରିବର୍ତ୍ତେ `dialogues` ଆରେ ବ୍ୟବହାର କରନ୍ତୁ\n• ସ୍ୱୟଂଚାଳିତ ପୁନରୁଦ୍ଧାର: ସଂଳାପ ଶୀର୍ଷକ, ପର୍ସୋନା, ବାର୍ତ୍ତା କ୍ରମ ପୁନରୁଦ୍ଧାର କରାଯାଏ।\n• ଅବସ୍ଥାନ: ଆମଦାନୀ ହୋଇଥିବା ସଂଳାପଗୁଡ଼ିକ AI ଚାଟିଂ ମୋଡ୍ ର \'ରେକର୍ଡ\' ଟ୍ୟାବରେ ଦେଖାଯାଏ।';
-
-  @override
   String get helpJsonDesc =>
       'ମୋଡ୍ 3 ରେ ବ୍ୟବହାର କରିବାକୁ ଏକ JSON ଫାଇଲ୍ ଭାବରେ ଶିକ୍ଷଣ ସାମଗ୍ରୀ ଆଣିବାକୁ, ନିମ୍ନଲିଖିତ ଫର୍ମାଟ୍ ଅନୁସରଣ କରନ୍ତୁ:';
-
-  @override
-  String get helpJsonTypeDialogue => 'ବାର୍ତ୍ତାଳାପ (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'ବାକ୍ୟ (Sentence)';
@@ -404,12 +287,12 @@ class AppLocalizationsOr extends AppLocalizations {
       '• ଉପାଦାନ ଚୟନ: ଅଧ୍ୟୟନ କରିବାକୁ ଉପାଦାନ ସଂଗ୍ରହ ଚୟନ କରନ୍ତୁ\n• ବ୍ୟବଧାନ ସେଟ୍ କରନ୍ତୁ: ବାକ୍ୟ ମଧ୍ୟରେ ଅପେକ୍ଷା ସମୟ ସମାୟୋଜନ କରିବାକୁ [-] [+] ବଟନ୍ (3 ସେକେଣ୍ଡ ~ 60 ସେକେଣ୍ଡ)\n• ଆରମ୍ଭ/ବନ୍ଦ: ଛାୟା ସେସନ୍ ନିୟନ୍ତ୍ରଣ କରନ୍ତୁ\n• କୁହନ୍ତୁ: ଭଏସ୍ ଶୁଣନ୍ତୁ ଏବଂ ପୁନରାବୃତ୍ତି କରନ୍ତୁ\n• ଫିଡବ୍ୟାକ୍: ସଠିକତା ସ୍କୋର୍ (0-100) ଏବଂ ରଙ୍ଗ ପ୍ରଦର୍ଶନ\n• ସର୍ଚ୍ଚ ସର୍ତ୍ତ: ଟ୍ୟାଗ୍, ସାମ୍ପ୍ରତିକ ଆଇଟମ୍, ଆରମ୍ଭ ଅକ୍ଷର ଦ୍ୱାରା ଅଭ୍ୟାସ ଲକ୍ଷ୍ୟ ଫିଲ୍ଟର୍ କରନ୍ତୁ';
 
   @override
-  String get helpModeChatDesc =>
-      'AI ପେର୍ସୋନା ସହିତ କଥାବାର୍ତ୍ତା କରି ପ୍ରକୃତ ବାର୍ତ୍ତାଳାପର ଅଭ୍ୟାସ କରନ୍ତୁ।';
+  String get helpNote =>
+      'ଶବ୍ଦର ଅର୍ଥ କିମ୍ବା ଉଦାହରଣ, ପରିସ୍ଥିତି ଇତ୍ୟାଦିକୁ ମୁକ୍ତ ଭାବରେ ରେକର୍ଡ଼ କରନ୍ତୁ।';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI ଚାଟିଂ: ତଳ ଟ୍ୟାବ୍ ବାରର \'ଚାଟ୍\' ମେନୁରେ ବ୍ୟକ୍ତିତ୍ୱ ସହିତ ବାସ୍ତବ କଥାବାର୍ତ୍ତା ଅଭ୍ୟାସ କରନ୍ତୁ\n• ବ୍ୟକ୍ତିତ୍ୱ ସେଟିଂ: ପ୍ରତିପକ୍ଷର ଲିଙ୍ଗ, ନାମ ଏବଂ ଭାଷା କୋଡ୍ ମୁକ୍ତ ଭାବରେ ନିର୍ଦ୍ଦିଷ୍ଟ କରନ୍ତୁ\n• GPS ପରିସ୍ଥିତି ନାଟକ: ବର୍ତ୍ତମାନର ଆପଣଙ୍କର ଅବସ୍ଥାନକୁ ଚିହ୍ନିବା ଦ୍ୱାରା ସ୍ଥାନ ପାଇଁ ଉପଯୁକ୍ତ କଥାବାର୍ତ୍ତା ବିଷୟଗୁଡ଼ିକର ସୁପାରିଶ କରନ୍ତୁ\n• ଦୁଇଟି ଭାଷା: AI ର ଉତ୍ତର ଅନୁବାଦ ସହିତ ପ୍ରଦର୍ଶିତ ହୋଇ ଶିକ୍ଷଣ ପ୍ରଭାବକୁ ସର୍ବାଧିକ କରେ\n• ରେକର୍ଡ ପରିଚାଳନା: ପୂର୍ବ କଥାବାର୍ତ୍ତା ଇତିହାସ ଫିଲ୍ଟର୍ କରନ୍ତୁ ଏବଂ କଥାବାର୍ତ୍ତା ସମୟରେ ନିର୍ଦ୍ଦିଷ୍ଟ ବାର୍ତ୍ତାଗୁଡ଼ିକୁ ଶିକ୍ଷଣ ସାମଗ୍ରୀ ଭାବରେ ସେଭ୍ କରନ୍ତୁ';
+  String get helpNotebook =>
+      'ଅନୁବାଦ ହୋଇଥିବା ଫଳାଫଳକୁ ସଞ୍ଚୟ କରିବାକୁ ଫୋଲ୍ଡର ଚୟନ କରନ୍ତୁ।';
 
   @override
   String get helpTabJson => 'JSON ଫର୍ମାଟ୍';
@@ -424,6 +307,10 @@ class AppLocalizationsOr extends AppLocalizations {
   String get helpTabTour => 'ଅନୁଭବ କରନ୍ତୁ';
 
   @override
+  String get helpTag =>
+      'ପରେ ବର୍ଗୀକରଣ କିମ୍ବା ଖୋଜିବା ପାଇଁ କୀୱାର୍ଡ଼ ପ୍ରବେଶ କରନ୍ତୁ।';
+
+  @override
   String get helpTitle => 'ସହାୟତା ଏବଂ ଗାଇଡ୍';
 
   @override
@@ -432,6 +319,15 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get hide => 'ଲୁଚାନ୍ତୁ';
+
+  @override
+  String get hintNoteExample => 'ଉଦାହରଣ: ପରିସ୍ଥିତି, ସମାନାର୍ଥକ ଶବ୍ଦ ଇତ୍ୟାଦି';
+
+  @override
+  String get hintTagExample => 'ଉଦାହରଣ: ବ୍ୟବସାୟ, ଭ୍ରମଣ...';
+
+  @override
+  String get homeTab => 'ଅନୁବାଦ';
 
   @override
   String importAdded(int count) {
@@ -444,23 +340,6 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'ସମାନ ଶୀର୍ଷକ ସହିତ ଉପାଦାନ ପୂର୍ବରୁ ବିଦ୍ୟମାନ ଅଛି। ଦୟାକରି ଶୀର୍ଷକ ବଦଳାଇ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ।';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -476,6 +355,11 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$filesଟି ଫାଇଲ୍, $entriesଟି ଏଣ୍ଟ୍ରି ଆମଦାନୀ ହୋଇଛି।';
+  }
+
+  @override
   String get importJsonFile => 'JSON ଫାଇଲ୍ ଆମଦାନୀ କରନ୍ତୁ';
 
   @override
@@ -487,12 +371,30 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'ଗୋଟିଏ JSON ଫାଇଲ୍';
+
+  @override
+  String get importSourceFolder => 'ଫୋଲ୍ଡର୍ (ଭାଷା ଅନୁସାରେ ଲାଇବ୍ରେରୀ ଗଠନ)';
+
+  @override
+  String get importSourceTitle => 'ଆମଦାନୀର ମୂଳ ସ୍ରୋତ ବାଛନ୍ତୁ';
+
+  @override
+  String get importSourceZip => 'ZIP ଫାଇଲ୍ (ସଙ୍କୁଚିତ ଫୋଲ୍ଡର୍)';
+
+  @override
   String importTotal(int count) {
     return 'ସମୁଦାୟ: $countଟି';
   }
 
   @override
   String get importing => 'ଆମଦାନୀ କରାଯାଉଛି...';
+
+  @override
+  String get inputContent => 'ଇନପୁଟ ବିଷୟବସ୍ତୁ';
+
+  @override
+  String get inputLanguage => 'ଇନପୁଟ୍ ଭାଷା';
 
   @override
   String get inputModeTitle => 'ଇନପୁଟ୍';
@@ -509,19 +411,22 @@ class AppLocalizationsOr extends AppLocalizations {
   String get kakaoContinue => 'କାକାଓ ସହିତ ଜାରି ରଖନ୍ତୁ';
 
   @override
-  String get labelLangCode => 'ଭାଷା କୋଡ୍ (ଉଦାହରଣ: en-US, ko-KR)';
+  String get labelDetails => 'ବିବରଣୀ';
 
   @override
-  String get labelName => 'ନାମ';
+  String get labelFilterMaterial => 'ସାମଗ୍ରୀ';
+
+  @override
+  String get labelFilterTag => 'ଟ୍ୟାଗ୍';
+
+  @override
+  String get labelLangCode => 'ଭାଷା କୋଡ୍ (ଉଦାହରଣ: en-US, ko-KR)';
 
   @override
   String get labelNote => 'ଟିପ୍ପଣୀ';
 
   @override
   String get labelPOS => 'ଶବ୍ଦର ପ୍ରକାର';
-
-  @override
-  String get labelRole => 'ଭୂମିକା';
 
   @override
   String get labelSentence => 'ବାକ୍ୟ';
@@ -572,10 +477,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get listening => 'ଶୁଣୁଛି...';
 
   @override
-  String get loadingParticipants => 'ଅଂଶଗ୍ରହଣକାରୀଙ୍କୁ ଲୋଡ୍ କରାଯାଉଛି...';
-
-  @override
-  String get location => 'ଅବସ୍ଥାନ';
+  String get location => 'ସ୍ଥାନ';
 
   @override
   String get login => 'ଲଗଇନ୍';
@@ -594,9 +496,6 @@ class AppLocalizationsOr extends AppLocalizations {
   String get male => 'ପୁରୁଷ';
 
   @override
-  String get manageParticipants => 'ଅଂଶଗ୍ରହଣକାରୀଙ୍କୁ ପରିଚାଳନା କରନ୍ତୁ';
-
-  @override
   String get manual => 'ମାନୁଆଲ୍ ଇନପୁଟ୍';
 
   @override
@@ -604,9 +503,6 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get materialInfo => 'ସାମଗ୍ରୀ ସୂଚନା';
-
-  @override
-  String get me => 'ମୁଁ';
 
   @override
   String get menuDeviceImport => 'ଡିଭାଇସରୁ ସାମଗ୍ରୀ ଆମଦାନୀ କରନ୍ତୁ';
@@ -674,27 +570,20 @@ class AppLocalizationsOr extends AppLocalizations {
   String get neutral => 'ଉଦାସୀନ';
 
   @override
+  String get newNotebookTitle => 'ନୂଆ ନୋଟବୁକର ନାମ';
+
+  @override
   String get newSubjectName => 'ନୂଆ ବିଷୟ ନାମ';
 
   @override
   String get next => 'ପରବର୍ତ୍ତୀ';
 
   @override
-  String get noDialogueHistory => 'କୌଣସି ବାର୍ତ୍ତାଳାପ ଇତିହାସ ନାହିଁ।';
-
-  @override
-  String get noInternetWarningMic =>
-      'ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ନାହିଁ। ଅଫଲାଇନ୍ ଥିବାବେଳେ ଭଏସ୍ ଚିହ୍ନଟ ସମ୍ଭବ ହୋଇନପାରେ।';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ନାହିଁ। ଅଫଲାଇନ୍ ଥିବାବେଳେ ଅନୁବାଦ ଫଙ୍କସନ୍ ଉପଲବ୍ଧ ନୁହେଁ। ଦୟାକରି ରିଭ୍ୟୁ ମୋଡ୍ ବ୍ୟବହାର କରନ୍ତୁ।';
+  String get noDataForLanguage =>
+      'ଆପଣଙ୍କ ଦ୍ୱାରା ଚୟନ କରାଯାଇଥିବା ଭାଷା ପାଇଁ କୌଣସି ଶିକ୍ଷଣ ଉପାଦାନ ସ୍ଥାନୀୟ DB ରେ ନାହିଁ | ଦୟାକରି ଉପାଦାନଗୁଡିକ ଡାଉନଲୋଡ୍ କରନ୍ତୁ କିମ୍ବା ଅନ୍ୟ ଏକ ଭାଷା ଚୟନ କରନ୍ତୁ |';
 
   @override
   String get noMaterialsInCategory => 'ଏହି ବର୍ଗରେ କୌଣସି ଉପାଦାନ ନାହିଁ।';
-
-  @override
-  String get noParticipantsFound => 'କୌଣସି ଅଂଶଗ୍ରହଣକାରୀ ମିଳିଲେ ନାହିଁ।';
 
   @override
   String get noRecords => 'ଚୟନିତ ଭାଷା ପାଇଁ କୌଣସି ଅଧ୍ୟୟନ ରେକର୍ଡ ନାହିଁ';
@@ -715,6 +604,10 @@ class AppLocalizationsOr extends AppLocalizations {
   String get notSelected => '- ଚୟନ କରାଯାଇ ନାହିଁ -';
 
   @override
+  String get noteGuidance =>
+      'ଅଧିକ ସଠିକ୍ ଅନୁବାଦ ପାଇଁ ଆପଣ ଯେଉଁଠାରେ ଅତିରିକ୍ତ ବିବରଣୀ ପ୍ରବେଶ କରନ୍ତି';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'ଆପଣଙ୍କର ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ଯାଞ୍ଚ କରନ୍ତୁ କିମ୍ବା ପରେ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ।';
 
@@ -725,16 +618,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'କୌଣସି ଉପାଦାନ ନାହିଁ।';
 
   @override
-  String get participantDeleted => 'ଅଂଶଗ୍ରହଣକାରୀଙ୍କୁ ଡିଲିଟ୍ କରାଯାଇଛି।';
-
-  @override
-  String get participantRename => 'ଅଂଶଗ୍ରହଣକାରୀଙ୍କ ନାମ ପରିବର୍ତ୍ତନ କରନ୍ତୁ';
-
-  @override
-  String get partner => 'ଅଂଶୀଦାର';
-
-  @override
-  String get partnerMode => 'ପାର୍ଟନର୍ ମୋଡ୍';
+  String get openSettings => 'ସେଟିଂ ଖୋଲନ୍ତୁ';
 
   @override
   String get password => 'ପାସୱାର୍ଡ';
@@ -746,13 +630,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get perfect => 'ସମ୍ପୂର୍ଣ୍ଣ!';
 
   @override
-  String get personaFriend => 'ସ୍ଥାନୀୟ ବନ୍ଧୁ';
-
-  @override
-  String get personaGuide => 'ଭ୍ରମଣ ଗାଇଡ୍';
-
-  @override
-  String get personaTeacher => 'ଇଂରାଜୀ ଶିକ୍ଷକ';
+  String get pickGallery => 'ଗ୍ୟାଲେରୀରୁ ବାଛନ୍ତୁ';
 
   @override
   String get playAgain => 'ପୁନର୍ବାର ଖେଳନ୍ତୁ';
@@ -772,6 +650,9 @@ class AppLocalizationsOr extends AppLocalizations {
   String get posAdverb => 'କ୍ରିୟା ବିଶେଷଣ';
 
   @override
+  String get posArticle => 'ଆର୍ଟିକିଲ୍';
+
+  @override
   String get posConjunction => 'ସଂଯୋଜକ';
 
   @override
@@ -779,6 +660,9 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get posNoun => 'ବିଶେଷ୍ୟ';
+
+  @override
+  String get posParticle => 'ପାର୍ଟିକ୍ଲ୍';
 
   @override
   String get posPreposition => 'ଅବ୍ୟୟ';
@@ -796,9 +680,33 @@ class AppLocalizationsOr extends AppLocalizations {
   String get practiceWordsOnly => 'କେବଳ ଶବ୍ଦ ଅଭ୍ୟାସ କରନ୍ତୁ';
 
   @override
+  String get processing => 'ପ୍ରକ୍ରିୟା ଚାଲୁଅଛି...';
+
+  @override
   String progress(int current, int total) {
     return 'ପ୍ରଗତି: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'ମେନୁ > ଭାଷା ସେଟିଂକୁ ଯାଇ ପ୍ରଥମେ ଆପଣଙ୍କ ଭାଷା ଏବଂ ଶିକ୍ଷଣ ଭାଷା ବାଛନ୍ତୁ।';
+
+  @override
+  String get quickStartStep1Title => '୧. ଭାଷା ସେଟିଂ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ଇନପୁଟ୍ (ମାଇକ୍ରୋଫୋନ୍/କୀବୋର୍ଡ) -> ଅନୁବାଦ -> ସେଭ୍ କ୍ରମରେ ଆପଣଙ୍କର ନିଜସ୍ୱ ଶିକ୍ଷଣ କାର୍ଡ ତିଆରି କରନ୍ତୁ।';
+
+  @override
+  String get quickStartStep2Title => '୨. ମୂଳ ପ୍ରବାହ';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ଚାଟିଂ କରି ଅଭ୍ୟାସ କରନ୍ତୁ, ଏବଂ ଉଚ୍ଚାରଣ ଅଭ୍ୟାସ ଟ୍ୟାବରେ ଟେକ୍ସଟ୍ ଦେଖି ସିଧାସଳଖ ଉଚ୍ଚାରଣ କରି ଅଭ୍ୟାସ କରନ୍ତୁ।';
+
+  @override
+  String get quickStartStep3Title => '୩. ମୋଡ୍ ବ୍ୟବହାର';
 
   @override
   String recentNItems(int count) {
@@ -823,6 +731,9 @@ class AppLocalizationsOr extends AppLocalizations {
   String get refresh => 'ରିଫ୍ରେସ୍ କରନ୍ତୁ';
 
   @override
+  String get requestTranslation => 'ଅନୁବାଦ ପାଇଁ ଅନୁରୋଧ କରନ୍ତୁ';
+
+  @override
   String get reset => 'ପୁନଃ ସେଟ୍';
 
   @override
@@ -843,16 +754,13 @@ class AppLocalizationsOr extends AppLocalizations {
   String get reviewModeTitle => 'ପୁନର୍ବିଚାର';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'ତୃତୀୟ ପକ୍ଷ';
-
-  @override
-  String get roleUser => 'ଉପଭୋକ୍ତା';
-
-  @override
   String get save => 'ସଞ୍ଚୟ କରନ୍ତୁ';
+
+  @override
+  String get saveAsSentence => 'ବାକ୍ୟ ଭାବେ ସଞ୍ଚୟ କରନ୍ତୁ';
+
+  @override
+  String get saveAsWord => 'ଶବ୍ଦ ଭାବେ ସଞ୍ଚୟ କରନ୍ତୁ';
 
   @override
   String get saveData => 'ଡାଟା ସେଭ୍ କରନ୍ତୁ';
@@ -863,6 +771,9 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'ସ୍କାନ୍ ଇତିହାସରେ ସଞ୍ଚୟ କରନ୍ତୁ';
+
+  @override
   String get saveTranslationsFromSearch =>
       'ସର୍ଚ୍ଚ ମୋଡ୍ ରୁ ଅନୁବାଦ ସେଭ୍ କରିବାକୁ ଚେଷ୍ଟା କରନ୍ତୁ';
 
@@ -871,6 +782,12 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get saving => 'ସେଭ୍ କରୁଛି...';
+
+  @override
+  String get scanInstructions => 'ସ୍କାନ୍ କରିବା ପାଇଁ ଏକ ଛବି ବାଛନ୍ତୁ';
+
+  @override
+  String get scanLabel => 'ସ୍କାନ୍';
 
   @override
   String score(String score) {
@@ -917,16 +834,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get selectPOS => 'ବାକ୍ୟର ଅଂଶ ଚୟନ କରନ୍ତୁ';
 
   @override
-  String get selectParticipants => 'ଅଂଶଗ୍ରହଣକାରୀଙ୍କୁ ଚୟନ କରନ୍ତୁ';
-
-  @override
-  String get selectSentenceType => 'ବାକ୍ୟ ପ୍ରକାର ଚୟନ କରନ୍ତୁ';
-
-  @override
   String get selectStudyMaterial => 'ଅଧ୍ୟୟନ ସାମଗ୍ରୀ ଚୟନ କରନ୍ତୁ';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'ବାକ୍ୟ';
@@ -935,43 +843,14 @@ class AppLocalizationsOr extends AppLocalizations {
   String get signUp => 'ସାଇନ୍ ଅପ୍';
 
   @override
-  String get similarTextFound => 'ସମାନ ଟେକ୍ସଟ୍ ମିଳିଲା';
-
-  @override
-  String get skip => 'ଏଡ଼ାଇ ଦିଅନ୍ତୁ';
-
-  @override
-  String get source => 'ଉତ୍ସ:';
-
-  @override
-  String get sourceLanguage => 'ମୂଳ ଭାଷା';
+  String get simplifiedGuidance =>
+      'ଦୈନନ୍ଦିନ କଥାବାର୍ତ୍ତାକୁ ବିଦେଶୀ ଭାଷାରେ ତୁରନ୍ତ ରୂପାନ୍ତର କରନ୍ତୁ! Talkie ଆପଣଙ୍କର ଭାଷା ଜୀବନକୁ ରେକର୍ଡ କରିବ।';
 
   @override
   String get sourceLanguageLabel => 'ମୋ ଭାଷା (ଉତ୍ସ)';
 
   @override
-  String get speakNow => 'ବର୍ତ୍ତମାନ କୁହନ୍ତୁ!';
-
-  @override
-  String get speaker => 'ବକ୍ତା';
-
-  @override
-  String get speakerSelect => 'ବକ୍ତା ଚୟନ କରନ୍ତୁ';
-
-  @override
-  String get speakingPractice => 'କହିବା ଅଭ୍ୟାସ';
-
-  @override
-  String get startChat => 'ଚାଟିଙ୍ଗ୍ ଆରମ୍ଭ କରନ୍ତୁ';
-
-  @override
-  String get startPractice => 'ଅଭ୍ୟାସ ଆରମ୍ଭ କରନ୍ତୁ';
-
-  @override
   String get startTutorial => 'ଟ୍ୟୁଟୋରିଆଲ୍ ଆରମ୍ଭ କରନ୍ତୁ';
-
-  @override
-  String get startWarning => 'ଚେତାବନୀ';
 
   @override
   String get startsWith => 'ଅକ୍ଷରରୁ ଆରମ୍ଭ';
@@ -980,28 +859,22 @@ class AppLocalizationsOr extends AppLocalizations {
   String get statusCheckEmail => 'ଇମେଲ ଯାଞ୍ଚ କରି ସତ୍ୟାପନ ସମାପ୍ତ କରନ୍ତୁ।';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'ଡାଉନଲୋଡ୍ ହେଉଛି: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'ଇମ୍ପୋର୍ଟ ବିଫଳ ହେଲା: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name ଇମ୍ପୋର୍ଟ ସଫଳ ହେଲା';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'ଲଗଇନ୍ ବାତିଲ୍ ହେଲା।';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'ଲଗଇନ୍ ବିଫଳ ହେଲା: $error';
   }
 
@@ -1012,23 +885,23 @@ class AppLocalizationsOr extends AppLocalizations {
   String get statusLogoutSuccess => 'ଲଗଆଉଟ୍ ହେଲା।';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'ସାଇନ୍ ଅପ୍ ବିଫଳ ହେଲା: $error';
+  String statusRequestFailed(String error) {
+    return 'ଅନୁବାଦ ଅନୁରୋଧ ବିଫଳ: $error';
   }
 
   @override
-  String get statusSigningUp => 'ସାଇନ୍ ଅପ୍ ହେଉଛି...';
+  String get statusRequestSuccess => 'ଅନୁବାଦ ଅନୁରୋଧ ସଫଳ ହୋଇଛି।';
 
   @override
   String get stopPractice => 'ଅଭ୍ୟାସ ବନ୍ଦ କରନ୍ତୁ';
 
   @override
-  String get studyComplete => 'ଅଧ୍ୟୟନ ସମାପ୍ତ';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'ଆପଣଙ୍କ ଦ୍ୱାରା ଚୟନ କରାଯାଇଥିବା ସାମଗ୍ରୀ ବର୍ତ୍ତମାନ ସେଟ୍ ହୋଇଥିବା ଅଧ୍ୟୟନ ଭାଷା ($targetLang) କୁ ସମର୍ଥନ କରେ ନାହିଁ ଏବଂ ସ୍ଥାନୀୟ ଭାବରେ ସଂରକ୍ଷିତ ହୋଇପାରିବ ନାହିଁ। ଆପଣ ଏହାର ଅନୁବାଦ କରିବାକୁ ଅନୁରୋଧ କରିବାକୁ ଚାହାଁନ୍ତି କି?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'ଅଧ୍ୟୟନ ରେକର୍ଡ ($count)';
-  }
+  String get studyLangNotFoundTitle => 'ଅଧ୍ୟୟନ ଭାଷା ସମର୍ଥିତ ନୁହେଁ';
 
   @override
   String get styleFormal => 'ଆନୁଷ୍ଠାନିକ';
@@ -1043,22 +916,10 @@ class AppLocalizationsOr extends AppLocalizations {
   String get styleSlang => 'ସ୍ଲାଙ୍ଗ/ଅଶ୍ଳୀଳ';
 
   @override
-  String get subject => 'ବିଷୟ:';
-
-  @override
   String get swapLanguages => 'ଭାଷା ବଦଳାନ୍ତୁ';
 
   @override
-  String get switchToAi => 'AI ମୋଡ୍ କୁ ବଦଳାନ୍ତୁ';
-
-  @override
-  String get switchToPartner => 'ପାର୍ଟନର୍ ମୋଡ୍ କୁ ବଦଳାନ୍ତୁ';
-
-  @override
   String get syncingData => 'ଡାଟା ସିଙ୍କ୍ ହେଉଛି...';
-
-  @override
-  String get tabConversation => 'ବାର୍ତ୍ତାଳାପ';
 
   @override
   String tabReview(int count) {
@@ -1122,6 +983,9 @@ class AppLocalizationsOr extends AppLocalizations {
   String get tooltipSearch => 'ସର୍ଚ୍ଚ';
 
   @override
+  String get tooltipSettingsConfirm => 'ସେଟିଂ ନିଶ୍ଚିତ କରନ୍ତୁ';
+
+  @override
   String get tooltipSpeaking => 'କହିବା';
 
   @override
@@ -1134,6 +998,9 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get translate => 'ଅନୁବାଦ';
+
+  @override
+  String get translateNow => 'ଏବେ ଅନୁବାଦ କରନ୍ତୁ';
 
   @override
   String get translating => 'ଅନୁବାଦ କରୁଛି...';
@@ -1150,6 +1017,9 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'ଅନୁବାଦ ଭାଷା';
+
+  @override
   String get translationLimitExceeded => 'ଅନୁବାଦ ସୀମା ଅତିକ୍ରମ କରାଯାଇଛି';
 
   @override
@@ -1163,17 +1033,25 @@ class AppLocalizationsOr extends AppLocalizations {
   String get translationRefilled => 'ଅନୁବାଦ ସଂଖ୍ୟା 5 ଥର ରିଚାର୍ଜ ହୋଇଛି!';
 
   @override
+  String get translationResult => 'ଅନୁବାଦ ଫଳାଫଳ';
+
+  @override
   String get translationResultHint => 'ଅନୁବାଦ ଫଳାଫଳ - ସଂଶୋଧନ କରାଯାଇପାରିବ';
 
   @override
   String get tryAgain => 'ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ';
 
   @override
-  String get tutorialAiChatDesc =>
-      'AI ପର୍ସୋନା ସହିତ ବାସ୍ତବିକ କଥାବାର୍ତ୍ତା ଅଭ୍ୟାସ କରନ୍ତୁ।';
+  String get ttsInstallGuide =>
+      'ଆଣ୍ଡ୍ରଏଡ୍ ସେଟିଙ୍ଗ୍ସ > ଗୁଗଲ୍ TTS ରେ ଏହି ଭାଷା ଡାଟା ସ୍ଥାପନ କରନ୍ତୁ।';
 
   @override
-  String get tutorialAiChatTitle => 'AI ଚାଟିଂ';
+  String get ttsMissing =>
+      'ଏହି ଭାଷା ପାଇଁ ଭଏସ୍ ଇଞ୍ଜିନ୍ ଆପଣଙ୍କ ଡିଭାଇସରେ ସ୍ଥାପିତ ହୋଇନାହିଁ।';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ଏହି ଉପକରଣର ସେଟିଂସମୂହ ଏହି ଭାଷା ପାଇଁ ଭଏସ ଆଉଟପୁଟକୁ ସମର୍ଥନ କରେ ନାହିଁ।';
 
   @override
   String get tutorialContextDesc =>
@@ -1292,7 +1170,13 @@ class AppLocalizationsOr extends AppLocalizations {
   String get typeExclamation => 'ଉଦ୍ଗାର';
 
   @override
+  String get typeIdiom => 'ରୁଢ଼ି ପ୍ରୟୋଗ';
+
+  @override
   String get typeImperative => 'ଆଦେଶ';
+
+  @override
+  String get typeProverb => 'ଢଗ/ଢମାଳି';
 
   @override
   String get typeQuestion => 'ପ୍ରଶ୍ନ';
@@ -1307,6 +1191,11 @@ class AppLocalizationsOr extends AppLocalizations {
   String get useExistingText => 'ବର୍ତ୍ତମାନର ଟେକ୍ସଟ୍ ବ୍ୟବହାର କରନ୍ତୁ';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'ଅନଲାଇନ୍ ଗାଇଡ୍ ଦେଖନ୍ତୁ';
 
   @override
@@ -1314,6 +1203,16 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'ବିଜ୍ଞାପନ ଦେଖି ରିଚାର୍ଜ କରନ୍ତୁ (+5 ଥର)';
+
+  @override
+  String get welcomeButton => 'ଆରମ୍ଭ କରନ୍ତୁ';
+
+  @override
+  String get welcomeDesc =>
+      'ଟକ୍କିକୁ ସ୍ୱାଗତ! ଏହା ବିଶ୍ୱର 80 ରୁ ଅଧିକ ଭାଷାକୁ 100% ସଠିକତା ସହିତ ସମର୍ଥନ କରେ ଏବଂ ଏକ ନୂତନ ପ୍ରିମିୟମ୍ 3D ଡିଜାଇନ୍ ଏବଂ ଅପ୍ଟିମାଇଜଡ୍ ପରଫର୍ମାନ୍ସ ସହିତ ଏକ ସମ୍ପୂର୍ଣ୍ଣ ଶିକ୍ଷଣ ଅଭିଜ୍ଞତା ପ୍ରଦାନ କରେ।';
+
+  @override
+  String get welcomeTitle => 'Talkie କୁ ସ୍ୱାଗତ!';
 
   @override
   String get word => 'ଶବ୍ଦ';
@@ -1330,113 +1229,4 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ତୁମର ଉଚ୍ଚାରଣ';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'ଏହି ଉପକରଣର ସେଟିଂସମୂହ ଏହି ଭାଷା ପାଇଁ ଭଏସ ଆଉଟପୁଟକୁ ସମର୍ଥନ କରେ ନାହିଁ।';
-
-  @override
-  String get homeTab => 'ଅନୁବାଦ';
-
-  @override
-  String get welcomeTitle => 'Talkie କୁ ସ୍ୱାଗତ!';
-
-  @override
-  String get welcomeDesc =>
-      'ଟକ୍କିକୁ ସ୍ୱାଗତ! ଏହା ବିଶ୍ୱର 80 ରୁ ଅଧିକ ଭାଷାକୁ 100% ସଠିକତା ସହିତ ସମର୍ଥନ କରେ ଏବଂ ଏକ ନୂତନ ପ୍ରିମିୟମ୍ 3D ଡିଜାଇନ୍ ଏବଂ ଅପ୍ଟିମାଇଜଡ୍ ପରଫର୍ମାନ୍ସ ସହିତ ଏକ ସମ୍ପୂର୍ଣ୍ଣ ଶିକ୍ଷଣ ଅଭିଜ୍ଞତା ପ୍ରଦାନ କରେ।';
-
-  @override
-  String get welcomeButton => 'ଆରମ୍ଭ କରନ୍ତୁ';
-
-  @override
-  String get labelDetails => 'ବିବରଣୀ';
-
-  @override
-  String get translationResult => 'ଅନୁବାଦ ଫଳାଫଳ';
-
-  @override
-  String get inputContent => 'ଇନପୁଟ ବିଷୟବସ୍ତୁ';
-
-  @override
-  String get translateNow => 'ଏବେ ଅନୁବାଦ କରନ୍ତୁ';
-
-  @override
-  String get tooltipSettingsConfirm => 'ସେଟିଂ ନିଶ୍ଚିତ କରନ୍ତୁ';
-
-  @override
-  String get hintNoteExample => 'ଉଦାହରଣ: ପରିସ୍ଥିତି, ସମାନାର୍ଥକ ଶବ୍ଦ ଇତ୍ୟାଦି';
-
-  @override
-  String get hintTagExample => 'ଉଦାହରଣ: ବ୍ୟବସାୟ, ଭ୍ରମଣ...';
-
-  @override
-  String get addNew => 'ନୂଆ ଯୋଡନ୍ତୁ';
-
-  @override
-  String get newNotebookTitle => 'ନୂଆ ନୋଟବୁକର ନାମ';
-
-  @override
-  String get enterNameHint => 'ନାମ ଦିଅନ୍ତୁ';
-
-  @override
-  String get add => 'ଯୋଡନ୍ତୁ';
-
-  @override
-  String get openSettings => 'ସେଟିଂ ଖୋଲନ୍ତୁ';
-
-  @override
-  String get helpNotebook =>
-      'ଅନୁବାଦ ହୋଇଥିବା ଫଳାଫଳକୁ ସଞ୍ଚୟ କରିବାକୁ ଫୋଲ୍ଡର ଚୟନ କରନ୍ତୁ।';
-
-  @override
-  String get helpNote =>
-      'ଶବ୍ଦର ଅର୍ଥ କିମ୍ବା ଉଦାହରଣ, ପରିସ୍ଥିତି ଇତ୍ୟାଦିକୁ ମୁକ୍ତ ଭାବରେ ରେକର୍ଡ଼ କରନ୍ତୁ।';
-
-  @override
-  String get helpTag =>
-      'ପରେ ବର୍ଗୀକରଣ କିମ୍ବା ଖୋଜିବା ପାଇଁ କୀୱାର୍ଡ଼ ପ୍ରବେଶ କରନ୍ତୁ।';
-
-  @override
-  String get requestTranslation => 'ଅନୁବାଦ ପାଇଁ ଅନୁରୋଧ କରନ୍ତୁ';
-
-  @override
-  String get statusRequestSuccess => 'ଅନୁବାଦ ଅନୁରୋଧ ସଫଳ ହୋଇଛି।';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'ଅନୁବାଦ ଅନୁରୋଧ ବିଫଳ: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'ଅଧ୍ୟୟନ ଭାଷା ସମର୍ଥିତ ନୁହେଁ';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'ଆପଣଙ୍କ ଦ୍ୱାରା ଚୟନ କରାଯାଇଥିବା ସାମଗ୍ରୀ ବର୍ତ୍ତମାନ ସେଟ୍ ହୋଇଥିବା ଅଧ୍ୟୟନ ଭାଷା ($targetLang) କୁ ସମର୍ଥନ କରେ ନାହିଁ ଏବଂ ସ୍ଥାନୀୟ ଭାବରେ ସଂରକ୍ଷିତ ହୋଇପାରିବ ନାହିଁ। ଆପଣ ଏହାର ଅନୁବାଦ କରିବାକୁ ଅନୁରୋଧ କରିବାକୁ ଚାହାଁନ୍ତି କି?';
-  }
-
-  @override
-  String get quickStartStep1Title => '୧. ଭାଷା ସେଟିଂ';
-
-  @override
-  String get quickStartStep1Desc =>
-      'ମେନୁ > ଭାଷା ସେଟିଂକୁ ଯାଇ ପ୍ରଥମେ ଆପଣଙ୍କ ଭାଷା ଏବଂ ଶିକ୍ଷଣ ଭାଷା ବାଛନ୍ତୁ।';
-
-  @override
-  String get quickStartStep2Title => '୨. ମୂଳ ପ୍ରବାହ';
-
-  @override
-  String get quickStartStep2Desc =>
-      'ଇନପୁଟ୍ (ମାଇକ୍ରୋଫୋନ୍/କୀବୋର୍ଡ) -> ଅନୁବାଦ -> ସେଭ୍ କ୍ରମରେ ଆପଣଙ୍କର ନିଜସ୍ୱ ଶିକ୍ଷଣ କାର୍ଡ ତିଆରି କରନ୍ତୁ।';
-
-  @override
-  String get quickStartStep3Title => '୩. ମୋଡ୍ ବ୍ୟବହାର';
-
-  @override
-  String get quickStartStep3Desc =>
-      'ଚାଟିଂ କରି ଅଭ୍ୟାସ କରନ୍ତୁ, ଏବଂ ଉଚ୍ଚାରଣ ଅଭ୍ୟାସ ଟ୍ୟାବରେ ଟେକ୍ସଟ୍ ଦେଖି ସିଧାସଳଖ ଉଚ୍ଚାରଣ କରି ଅଭ୍ୟାସ କରନ୍ତୁ।';
-
-  @override
-  String get noteGuidance =>
-      'ଅଧିକ ସଠିକ୍ ଅନୁବାଦ ପାଇଁ ଆପଣ ଯେଉଁଠାରେ ଅତିରିକ୍ତ ବିବରଣୀ ପ୍ରବେଶ କରନ୍ତି';
 }

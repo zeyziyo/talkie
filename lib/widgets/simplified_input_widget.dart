@@ -8,6 +8,7 @@ import '../l10n/app_localizations.dart';
 import '../constants/app_constants.dart';
 import '../services/speech_service.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 class SimplifiedInputWidget extends StatefulWidget {
   final GlobalKey? micKey;
@@ -33,6 +34,22 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
   final TextEditingController _sourceController = TextEditingController();
   final TextEditingController _noteController = TextEditingController();
   final TextEditingController _tagController = TextEditingController();
+  String _appVersion = AppConstants.appVersion; // 동적 로딩 전 기본값
+
+  @override
+  void initState() {
+    super.initState();
+    _loadAppVersion();
+  }
+
+  Future<void> _loadAppVersion() async {
+    final info = await PackageInfo.fromPlatform();
+    if (mounted) {
+      setState(() {
+        _appVersion = info.version;
+      });
+    }
+  }
 
   @override
   void dispose() {
@@ -385,7 +402,7 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
           const Divider(color: Colors.black12),
           const SizedBox(height: 16),
           Text(
-            '${l10n.versionLabel(AppConstants.appVersion)}  |  ${l10n.developerContact}',
+            '${l10n.versionLabel(_appVersion)}  |  ${l10n.developerContact}',
             style: TextStyle(color: Colors.grey.shade500, fontSize: 12),
             textAlign: TextAlign.center,
           ),

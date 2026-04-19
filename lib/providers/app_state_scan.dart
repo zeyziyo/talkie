@@ -12,73 +12,148 @@ extension AppStateScanExtension on AppState {
 
     if (image == null) return;
 
+    clearScanData(); 
     setScannedImage(File(image.path));
-    setScannedText('Recognizing...'); // Initial state
-
-    try {
-      final inputImage = InputImage.fromFilePath(image.path);
-      final textRecognizer = TextRecognizer(script: TextRecognitionScript.latin); // Latin as default, can be adjusted
-      
-      // For multi-language support (Auto-detect requested)
-      // Google ML Kit automatically handles many languages in Latin script.
-      // For Korean/Japanese/Chinese, specific recognizers might be needed if they are separate modules,
-      // but the latest ML Kit often combines them or allows multi-script.
-      // Based on google_mlkit_text_recognition 0.13.0, scripts are specified.
-      
-      final RecognizedText recognizedText = await textRecognizer.processImage(inputImage);
-      String text = recognizedText.text;
-      
-      if (text.trim().isEmpty) {
-        setScannedText('No text found in the image.');
-      } else {
-        setScannedText(text);
-      }
-      
-      await textRecognizer.close();
-    } catch (e) {
-      debugPrint('[Scan] OCR Error: $e');
-      setScannedText('Error recognizing text: $e');
-    }
-  }
-
-  Future<void> translateScannedText() async {
-    if (_scannedText.isEmpty || _scannedText == 'Recognizing...') return;
-
     isTranslating = true;
     notify();
 
     try {
-      final result = await TranslationService.translate(
-        text: _scannedText,
-        sourceLang: 'auto', // Let AI detect the language
-        targetLang: _targetLang,
-      );
+      final inputImage = InputImage.fromFilePath(image.path);
+      
+      // Scripts to try
+      final scripts = [
+        TextRecognitionScript.latin,
+        TextRecognitionScript.korean,
+        TextRecognitionScript.japanese,
+      ];
 
-      if (result['isValid'] == true) {
-        setScannedText(result['text']);
-        // Store the original scanned text as note for context if needed?
-        // Actually, we usually want to KEEP the original and SHOW the translation.
-        // Let's adjust the UI logic to show both.
+      List<Map<String, dynamic>> allBlocks = [];
+
+      for (var script in scripts) {
+        final recognizer = TextRecognizer(script: script);
+        final RecognizedText recognizedText = await recognizer.processImage(inputImage);
+        
+        for (var block in recognizedText.blocks) {
+          String lang = 'auto';
+          if (block.recognizedLanguages.isNotEmpty) {
+            lang = block.recognizedLanguages.first;
+          } else {
+            if (script == TextRecognitionScript.korean) { lang = 'ko'; }
+            else if (script == TextRecognitionScript.japanese) { lang = 'ja'; }
+            else if (script == TextRecognitionScript.latin) { lang = 'en'; }
+          }
+
+          allBlocks.add({
+            'lang': lang,
+            'text': block.text,
+            'rect': block.boundingBox,
+          });
+        }
+        await recognizer.close();
       }
+
+      // Deduplicate blocks based on Rect overlap (> 70%)
+      List<Map<String, dynamic>> dedupedSegments = [];
+      for (var block in allBlocks) {
+        bool isDuplicate = false;
+        final rect = block['rect'] as ui.Rect;
+        
+        for (var existing in dedupedSegments) {
+          final existingRect = existing['rect'] as ui.Rect;
+          final intersection = rect.intersect(existingRect);
+          if (intersection.width > 0 && intersection.height > 0) {
+             final overlapArea = intersection.width * intersection.height;
+             final rectArea = rect.width * rect.height;
+             if (overlapArea / rectArea > 0.7) {
+               isDuplicate = true;
+               break;
+             }
+          }
+        }
+        if (!isDuplicate) {
+          dedupedSegments.add(block);
+        }
+      }
+
+      // Group by language
+      Map<String, List<String>> langGroups = {};
+      for (var seg in dedupedSegments) {
+        final lang = seg['lang'] as String;
+        langGroups.putIfAbsent(lang, () => []).add(seg['text']);
+      }
+
+      List<Map<String, dynamic>> finalSegments = [];
+      for (var entry in langGroups.entries) {
+        finalSegments.add({
+          'lang': entry.key,
+          'original': entry.value.join('\n'),
+          'translated': '',
+        });
+      }
+
+      setScanReviewItems(finalSegments);
+      await _translateAllSegments();
+
     } catch (e) {
-      debugPrint('[Scan] Translation Error: $e');
+      debugPrint('[Scan] OCR/Process Error: $e');
     } finally {
       isTranslating = false;
       notify();
     }
   }
 
-  Future<void> saveScannedItem({required String text, required String translation, required String type}) async {
+  Future<void> _translateAllSegments() async {
+    for (int i = 0; i < _scanReviewItems.length; i++) {
+        final item = _scanReviewItems[i];
+        if (item['original'].toString().trim().isEmpty) continue;
+
+        // Skip translation if it's already in the native language
+        if (item['lang'] == _sourceLang) {
+          _scanReviewItems[i]['translated'] = item['original'];
+          continue;
+        }
+
+        try {
+          final result = await TranslationService.translate(
+            text: item['original'],
+            sourceLang: item['lang'],
+            targetLang: _sourceLang, // Native language
+          );
+
+          if (result['isValid'] == true) {
+            _scanReviewItems[i]['translated'] = result['text'];
+          } else {
+             _scanReviewItems[i]['translated'] = 'Translation rejected: AI safety';
+          }
+        } catch (e) {
+          _scanReviewItems[i]['translated'] = 'Error: $e';
+        }
+    }
+    notify();
+  }
+
+  Future<void> saveScannedItem() async {
+    if (_scanReviewItems.isEmpty) return;
+
     try {
-      await DatabaseService.saveUnifiedRecord(
-        text: text,
-        lang: 'auto', // Will be detected during save or use detected if available
-        translation: translation,
-        targetLang: _targetLang,
-        type: type,
-        tags: ['Scanned'], // Auto-add tag as requested
-        notebookTitle: type == 'word' ? _localizedWordbook : _localizedSentencebook,
-      );
+      // Build data_json map: { "en": { "text": "...", "translation": "..." }, ... }
+      Map<String, dynamic> dataJson = {};
+      for (var item in _scanReviewItems) {
+        dataJson[item['lang']] = {
+          'text': item['original'],
+          'translation': item['translated'],
+        };
+      }
+      
+      await DatabaseService.insertScannedRecord({
+        'data_json': jsonEncode(dataJson),
+        'notebook_title': 'Scanned History',
+        'tags': 'Scanned',
+        'type': 'mixed', // Structured multi-lang
+        'source_lang': _scanReviewItems.first['lang'], // Primary detect or mixed
+        'target_lang': _sourceLang, // Native lang
+        'created_at': DateTime.now().toIso8601String(),
+      });
       
       _isSaved = true;
       notify();

@@ -344,15 +344,17 @@ class AppState extends ChangeNotifier {
   StreamSubscription? _speechStatusSubscription;
   bool _practiceWordsOnly = false;
 
-  // Mode 4 (Scan)
+  // Mode 3 (Scan)
   File? _scannedImage;
   String _scannedText = '';
   final String _scanDetectedLang = 'auto';
+  List<Map<String, dynamic>> _scanReviewItems = []; // Phase 27: Multi-language segments
 
-  // Mode 4 (Scan) Getters
+  // Mode 3 (Scan) Getters
   File? get scannedImage => _scannedImage;
   String get scannedText => _scannedText;
   String get scanDetectedLang => _scanDetectedLang;
+  List<Map<String, dynamic>> get scanReviewItems => _scanReviewItems;
 
   void setScannedText(String text) {
     _scannedText = text;
@@ -361,6 +363,19 @@ class AppState extends ChangeNotifier {
 
   void setScannedImage(File? image) {
     _scannedImage = image;
+    notify();
+  }
+
+  void setScanReviewItems(List<Map<String, dynamic>> items) {
+    _scanReviewItems = items;
+    notify();
+  }
+
+  void clearScanData() {
+    _scannedImage = null;
+    _scannedText = '';
+    _scanReviewItems = [];
+    _isSaved = false;
     notify();
   }
 
@@ -480,7 +495,7 @@ class AppState extends ChangeNotifier {
     } else if (mode == 2) { // Practice (New Index 2)
       loadStudyMaterials();
       _practiceWordsOnly = false;
-    } else if (mode == 3) { // Scan (New Index 3)
+    } else if (mode == 3) { // Scan (Index 3)
       // Any init for scan mode
     }
 

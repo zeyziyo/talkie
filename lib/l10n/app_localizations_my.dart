@@ -9,52 +9,19 @@ class AppLocalizationsMy extends AppLocalizations {
   AppLocalizationsMy([String locale = 'my']) : super(locale);
 
   @override
-  String get basicWords => 'အခြေခံ စကားလုံး သိမ်းဆည်းရာ';
-
-  @override
-  String get inputLanguage => 'ထည့်သွင်းဘာသာစကား';
-
-  @override
-  String get translationLanguage => 'ဘာသာပြန်ဘာသာစကား';
-
-  @override
-  String get simplifiedGuidance =>
-      'နေ့စဉ်စကားပြောဆိုမှုများကို နိုင်ငံခြားဘာသာစကားသို့ ချက်ချင်းပြောင်းပါ။ Talkie သည် သင်၏ဘာသာစကားအသုံးပြုမှုကို မှတ်တမ်းတင်ပေးပါသည်။';
-
-  @override
-  String get noDataForLanguage =>
-      'သင်​ရွေး​ချယ်​ထား​သော​ဘာ​သာ​စကား​အတွက်​ သင်​ယူ​စ​ရာ​များ​သည်​ Local DB တွင်​မ​ရှိ​ပါ။ ဒေ​တာ​များ​ကို​ ဒေါင်း​လုဒ်​ပြု​လုပ်​ပါ​ သို့​မ​ဟုတ်​ အ​ခြား​ဘာ​သာ​စ​ကား​ကို​ရွေး​ချယ်​ပါ။';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'ပယ်ဖျက်';
-
-  @override
   String get accuracy => 'တိကျမှု';
-
-  @override
-  String get ttsMissing =>
-      'ဤဘာသာစကားအတွက် အသံအင်ဂျင်ကို သင့်စက်တွင် ထည့်သွင်းထားခြင်းမရှိပါ။';
-
-  @override
-  String get ttsInstallGuide =>
-      'Android ဆက်တင်များ > Google TTS တွင် သက်ဆိုင်ရာဘာသာစကားဒေတာကို ထည့်သွင်းပါ။';
 
   @override
   String get adLoading => 'ကြော်ငြာကို တင်နေပါသည်။ ခဏနေမှ ထပ်ကြိုးစားပေးပါ။';
 
   @override
-  String get addNewSubject => 'ထည့်ရန်';
+  String get add => 'ထည့်ပါ';
 
   @override
-  String get addParticipant => 'ပါဝင်သူထည့်ရန်';
+  String get addNew => 'အသစ် ထပ်ထည့်ပါ';
+
+  @override
+  String get addNewSubject => 'ထည့်ရန်';
 
   @override
   String get addTagHint => 'အမှတ်အသားထည့်ရန်...';
@@ -87,6 +54,12 @@ class AppLocalizationsMy extends AppLocalizations {
   String get basicWordRepository => 'အခြေခံ စကားလုံး သိမ်းဆည်းရာ';
 
   @override
+  String get basicWords => 'အခြေခံ စကားလုံး သိမ်းဆည်းရာ';
+
+  @override
+  String get cancel => 'ပယ်ဖျက်';
+
+  @override
   String get caseObject => 'ကံ';
 
   @override
@@ -102,62 +75,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get caseSubject => 'ကတ္တား';
 
   @override
-  String get chatAiChat => 'စကားပြောရန်';
-
-  @override
-  String get chatAllConversations => 'စကားပြောအားလုံး';
-
-  @override
-  String get chatChoosePersona => 'ကိုယ်ပွား ရွေးချယ်ခြင်း';
-
-  @override
-  String get chatEndMessage => 'စကားပြောကို အဆုံးသတ်လိုပါသလား?';
-
-  @override
-  String get chatEndTitle => 'စကားပြောကို အဆုံးသတ်ပြီး သိမ်းဆည်းပါ';
-
-  @override
-  String chatFailed(Object error) {
-    return 'စကားပြော ပျက်ကွက်ခြင်း: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'စကားပြောမှ ကောက်နုတ်ချက် ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'စကားပြော မှတ်တမ်း';
-
-  @override
-  String get chatNew => 'စကားပြော အသစ်';
-
-  @override
-  String get chatNewChat => 'စကားပြော အသစ်';
-
-  @override
-  String get chatNoConversations => 'စကားပြောဆိုမှု မရှိသေးပါ';
-
-  @override
-  String get chatSearchHint => 'စကားဝိုင်းခေါင်းစဉ်ဖြင့် ရှာဖွေ...';
-
-  @override
-  String get chatNoteSearchHint => 'မှတ်ချက်များဖြင့် ရှာဖွေ...';
-
-  @override
-  String get chatSaveAndExit => 'သိမ်းဆည်းပြီး ထွက်ပါ';
-
-  @override
-  String get chatStartNewPrompt =>
-      'လေ့ကျင့်ရန် စကားပြောဆိုမှု အသစ်ကို စတင်ကြည့်ပါ။';
-
-  @override
-  String get chatTypeHint => 'မက်ဆေ့ချ်ကို ရိုက်ထည့်ပါ...';
-
-  @override
-  String get chatUntitled => 'ခေါင်းစဉ်မဲ့ စကားပြော';
-
-  @override
   String get checking => 'စစ်ဆေးနေသည်...';
 
   @override
@@ -168,13 +85,6 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get confirmDelete => 'ဤ သင်ယူခြင်း မှတ်တမ်းကို ဖျက်လိုပါသလား?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'ဤစကားပြောကို ဖျက်ရန်သေချာပါသလား။\nဖျက်လိုက်သော စကားပြောများကို ပြန်ယူ၍မရပါ။';
-
-  @override
-  String get confirmDeleteParticipant => 'ဤပါဝင်သူကို ဖျက်မလား။';
 
   @override
   String get contextTagHint =>
@@ -215,23 +125,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get deleteRecord => 'မှတ်တမ်း ဖျက်ခြင်း';
 
   @override
-  String get dialogueQuestDesc =>
-      'အခြေအနေတုမှတစ်ဆင့် စကားပြော လေ့ကျင့်ပါ။ သင့်လျော်သော အဖြေကို ရွေးပြီး ပြောကြည့်ပါ။';
-
-  @override
-  String get dialogueQuestTitle => 'စကားပြော မစ်ရှင်';
-
-  @override
-  String get disambiguationPrompt => 'ဘယ်လို အဓိပ္ပာယ်ဖြင့် ဘာသာပြန်လိုပါသလဲ?';
-
-  @override
-  String get disambiguationTitle => 'အဓိပ္ပာယ်ကို ရွေးပါ';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'အကောင့် မရှိသေးဘူးလား။';
-
-  @override
-  String get editParticipant => 'ပါဝင်သူ ပြင်ဆင်ရန်';
 
   @override
   String get email => 'အီးမေးလ်';
@@ -239,6 +136,9 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'အီးမေးလ်လိပ်စာသည် မှတ်ပုံတင်ပြီးဖြစ်သည်။ ဝင်ရောက်ပါ သို့မဟုတ် စကားဝှက်ကို ပြန်လည်ရယူပါ။';
+
+  @override
+  String get enterNameHint => 'အမည်ကို ရိုက်ထည့်ပါ';
 
   @override
   String get enterNewSubjectName => 'ခေါင်းစဥ်အသစ်ထည့်ပါ';
@@ -280,6 +180,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get errors => 'အမှားများ:';
+
+  @override
+  String get extractedText => 'ထုတ်ယူထားသော စာသား';
 
   @override
   String get female => 'မ';
@@ -339,12 +242,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get gender => 'ကျား/မ';
 
   @override
-  String get labelFilterMaterial => 'စာရွက်စာတမ်း';
-
-  @override
-  String get labelFilterTag => 'တဂ်';
-
-  @override
   String get generalTags => 'အထွေထွေ တဂ်များ';
 
   @override
@@ -357,19 +254,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get googleContinue => 'Google ဖြင့်ဆက်လုပ်ရန်';
 
   @override
-  String get helpDialogueImportDesc =>
-      'JSON ဖိုင်ဖြင့် စကားပြောဆိုမှု အစုံကို တင်သွင်းပါ။';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON တည်ဆောက်ပုံ: `entries` အစား `dialogues` အစီအစဉ်ကို သုံးပါ\n• အလိုအလျောက် ပြန်လည်ရယူခြင်း- စကားပြော ခေါင်းစဉ်၊ ပုံစံ၊ မက်ဆေ့ချ် အစီအစဉ်ကို ပြန်လည်ရယူပါမည်။\n• တည်နေရာ- တင်သွင်းထားသော စကားပြောဆိုမှုသည် AI စကားပြောပုံစံ၏ \'မှတ်တမ်း\' တက်ဘ်တွင် ပေါ်လာပါမည်။';
-
-  @override
   String get helpJsonDesc =>
       'Mode 3 တွင် အသုံးပြုမည့် သင်ယူရန် အချက်အလက်ကို JSON ဖိုင်ဖြင့် ထည့်သွင်းလိုပါက အောက်ပါ ဖော်မတ်အတိုင်း လိုက်နာပါ-';
-
-  @override
-  String get helpJsonTypeDialogue => 'စကားဝိုင်း';
 
   @override
   String get helpJsonTypeSentence => 'စာကြောင်း';
@@ -399,15 +285,15 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get helpMode3Details =>
-      '• အချက်အလက် ရွေးချယ်ခြင်း- သင်ယူလိုသော အချက်အလက်များ စုစည်းထားသော စာအုပ်ကို ရွေးပါ\n• ကြားကာလ ဆက်တင်- [-] [+] ခလုတ်ဖြင့် စာကြောင်းကြား စောင့်ဆိုင်းချိန်ကို ချိန်ညှိပါ (၃ စက္ကန့်မှ ၆၀ စက္ကန့်ထိ)\n• စတင်/ရပ်ခြင်း- 쉐도잉 စစ်ဆင်ရေးကို ထိန်းချုပ်ပါ\n• ပြောခြင်း- အသံကို နားထောင်ပြီး လိုက်ပြောပါ\n• တုံ့ပြန်ချက်- တိကျမှု ရမှတ် (၀-၁၀၀) နှင့် အရောင်ကို ပြပါ\n• ရှာဖွေရန် အခြေအနေ- တဂ်၊ နောက်ဆုံးအကြောင်းအရာ၊ စာလုံးအစဖြင့် လေ့ကျင့်ရန်အတွက် စစ်ထုတ်ခြင်း';
+      '• သင်ရိုးရွေးချယ်ခြင်း: ညာဘက်အပေါ်ထောင့်ရှိ မီနူး(⋮)မှ \'လေ့လာရန် သင်ရိုးရွေးချယ်ရန်\' ကို အသုံးပြုပါ။\n• အချိန်ကာလ သတ်မှတ်ခြင်း: [-] [+] ခလုတ်များဖြင့် ဝါကျများကြား စောင့်ဆိုင်းချိန်ကို ချိန်ညှိပါ (၃စက္ကန့်မှ ၆၀ စက္ကန့်အထိ)\n• စတင်/ရပ်ရန်: အလယ်ဗဟိုရှိ စတင်/ရပ်ရန် ခလုတ်ဖြင့် session ကို ထိန်းချုပ်ပါ။\n• ပြောပါ: မူရင်းအသံကို နားထောင်ပြီး ကျယ်လောင်စွာ လိုက်ဆိုပါ။\n• တုံ့ပြန်ချက်: တိကျမှုရမှတ် (၀-၁၀၀) နှင့် အရောင်အမှတ်အသားကို ပြသပါ။\n• စစ်ထုတ်ခြင်း ဆက်တင်များ: ဆက်တင်များ (စက်သွားပုံ) အိုင်ကွန်တွင် အကဲဖြတ်ခြင်းအကွာအဝေးကို သတ်မှတ်ပါ။';
 
   @override
-  String get helpModeChatDesc =>
-      'AI ပုံရိပ်နဲ့ စကားပြောပြီး လက်တွေ့စကားပြောကို လေ့ကျင့်ပါ။';
+  String get helpNote =>
+      'စကားလုံးရဲ့ အဓိပ္ပါယ်၊ ဥပမာစာကြောင်း၊ အခြေအနေ စတာတွေကို လွတ်လပ်စွာ မှတ်သားပါ။';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI ချတ်- အောက်ခြေရှိ တက်ဘ်ဘား၏ \'ချတ်\' မီနူးမှတစ်ဆင့် ကိုယ်ရည်ကိုယ်သွေးနှင့် လက်တွေ့စကားပြောလေ့ကျင့်ပါ။\n• ကိုယ်ရည်ကိုယ်သွေးဆက်တင်- ပြိုင်ဘက်၏ ကျား၊ မ၊ အမည်နှင့် ဘာသာစကားကုဒ်ကို လွတ်လပ်စွာ သတ်မှတ်ပါ။\n• GPS အခြေအနေပြဇာတ်- လက်ရှိ ကျွန်ုပ်၏တည်နေရာကို အသိအမှတ်ပြုပြီး နေရာနှင့်သင့်လျော်သော စကားပြောဆိုမှုအကြောင်းအရာကို အကြံပြုပါ။\n• ဘာသာစကား ၂ မျိုး- AI ၏အဖြေကို ဘာသာပြန်နှင့်အတူ ပြသထားသောကြောင့် သင်ယူမှုအကျိုးသက်ရောက်မှုကို အမြင့်ဆုံးမြှင့်တင်ပါ။\n• မှတ်တမ်းစီမံခန့်ခွဲမှု- ယခင်စကားပြောမှတ်တမ်းကို စစ်ထုတ်ပြီး စကားပြောဆိုနေစဉ်အတွင်း သီးခြားမက်ဆေ့ချ်များကို သင်ယူမှုဆိုင်ရာပစ္စည်းများအဖြစ် သိမ်းဆည်းပါ။';
+  String get helpNotebook =>
+      'ဘာသာပြန်ရလဒ်တွေကို သိမ်းဆည်းမယ့် ဖိုဒါကို ရွေးပါ။';
 
   @override
   String get helpTabJson => 'JSON ဖော်မတ်';
@@ -422,6 +308,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get helpTabTour => 'စမ်းသုံးကြည့်ပါ';
 
   @override
+  String get helpTag =>
+      'နောက်ပိုင်း အမျိုးအစားခွဲ ဒါမှမဟုတ် ရှာဖွေဖို့အတွက် သော့ချက်စာလုံးကို ရိုက်ထည့်ပါ။';
+
+  @override
   String get helpTitle => 'အကူအညီ & လမ်းညွှန်';
 
   @override
@@ -430,6 +320,16 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get hide => 'ဖျောက်ရန်';
+
+  @override
+  String get hintNoteExample =>
+      'ဥပမာ- အခြေအနေ ရှင်းလင်းချက်၊ အသံတူ စကားလုံးများ စသည်';
+
+  @override
+  String get hintTagExample => 'ဥပမာ- စီးပွားရေး၊ ခရီးသွား...';
+
+  @override
+  String get homeTab => 'ဘာသာပြန်';
 
   @override
   String importAdded(int count) {
@@ -442,23 +342,6 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'ခေါင်းစဉ်တူဖြင့် ဒေတာ ရှိပြီးသားပါ။ ခေါင်းစဉ်ကို ပြောင်းပြီး ထပ်ကြိုးစားပါ။';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -474,6 +357,11 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files ခု ဖိုင်၊ $entries ခု အကြောင်းအရာများ ထည့်သွင်းပြီးပါပြီ။';
+  }
+
+  @override
   String get importJsonFile => 'JSON ဖိုင်ကို တင်သွင်းပါ';
 
   @override
@@ -485,12 +373,31 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'JSON ဖိုင် တစ်ခုတည်း';
+
+  @override
+  String get importSourceFolder =>
+      'ဖိုဒါ (ဘာသာစကားအလိုက် စာကြည့်တိုက် တည်ဆောက်ပုံ)';
+
+  @override
+  String get importSourceTitle => 'တင်သွင်းမည့် အရင်းအမြစ်ကို ရွေးပါ';
+
+  @override
+  String get importSourceZip => 'ZIP ဖိုင် (ဖိုဒါကို ချုံ့ထားသည်)';
+
+  @override
   String importTotal(int count) {
     return 'စုစုပေါင်း: $countခု';
   }
 
   @override
   String get importing => 'တင်သွင်းနေသည်...';
+
+  @override
+  String get inputContent => 'ထည့်သွင်း အကြောင်းအရာ';
+
+  @override
+  String get inputLanguage => 'ထည့်သွင်းဘာသာစကား';
 
   @override
   String get inputModeTitle => 'ထည့်သွင်းခြင်း';
@@ -507,19 +414,22 @@ class AppLocalizationsMy extends AppLocalizations {
   String get kakaoContinue => 'ကာကာအိုနဲ့ ဆက်လုပ်ရန်';
 
   @override
-  String get labelLangCode => 'ဘာသာစကားကုဒ် (ဥပမာ en-US, ko-KR)';
+  String get labelDetails => 'အသေးစိတ် ဆက်တင်များ';
 
   @override
-  String get labelName => 'အမည်';
+  String get labelFilterMaterial => 'စာရွက်စာတမ်း';
+
+  @override
+  String get labelFilterTag => 'တဂ်';
+
+  @override
+  String get labelLangCode => 'ဘာသာစကားကုဒ် (ဥပမာ en-US, ko-KR)';
 
   @override
   String get labelNote => 'မှတ်စု';
 
   @override
   String get labelPOS => 'စကားအမျိုးအစား';
-
-  @override
-  String get labelRole => 'အခန်းကဏ္ဍ';
 
   @override
   String get labelSentence => 'စာကြောင်း';
@@ -570,9 +480,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get listening => 'နားထောင်နေသည်...';
 
   @override
-  String get loadingParticipants => 'ပါဝင်သူများ တင်နေသည်...';
-
-  @override
   String get location => 'တည်နေရာ';
 
   @override
@@ -591,9 +498,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get male => 'ကျား';
 
   @override
-  String get manageParticipants => 'ပါဝင်သူများ စီမံရန်';
-
-  @override
   String get manual => 'ကိုယ်တိုင် ထည့်သွင်းခြင်း';
 
   @override
@@ -601,9 +505,6 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get materialInfo => 'အချက်အလက် အကြောင်း';
-
-  @override
-  String get me => 'ငါ';
 
   @override
   String get menuDeviceImport => 'စက်မှ အချက်အလက် တင်သွင်းပါ';
@@ -672,27 +573,20 @@ class AppLocalizationsMy extends AppLocalizations {
   String get neutral => 'ကြားနေ';
 
   @override
+  String get newNotebookTitle => 'မှတ်စုစာအုပ် အသစ် ခေါင်းစဉ်';
+
+  @override
   String get newSubjectName => 'ခေါင်းစဥ်အသစ်';
 
   @override
   String get next => 'နောက်တစ်ခု';
 
   @override
-  String get noDialogueHistory => 'စကားပြောမှတ်တမ်း မရှိပါ။';
-
-  @override
-  String get noInternetWarningMic =>
-      'အင်တာနက် ချိတ်ဆက်မှု မရှိပါ။ အော့ဖ်လိုင်းတွင် အသံမှတ်တမ်း တင်၍ မရပါ။';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'အင်တာနက် ချိတ်ဆက်မှု မရှိပါ။ အော့ဖ်လိုင်းတွင် ဘာသာပြန်၍ မရပါ။ ပြန်လည်သုံးသပ်ခြင်း မုဒ်ကို သုံးပါ။';
+  String get noDataForLanguage =>
+      'သင်​ရွေး​ချယ်​ထား​သော​ဘာ​သာ​စကား​အတွက်​ သင်​ယူ​စ​ရာ​များ​သည်​ Local DB တွင်​မ​ရှိ​ပါ။ ဒေ​တာ​များ​ကို​ ဒေါင်း​လုဒ်​ပြု​လုပ်​ပါ​ သို့​မ​ဟုတ်​ အ​ခြား​ဘာ​သာ​စ​ကား​ကို​ရွေး​ချယ်​ပါ။';
 
   @override
   String get noMaterialsInCategory => 'ဤအမျိုးအစားတွင် ဒေတာ မရှိပါ။';
-
-  @override
-  String get noParticipantsFound => 'စာရင်းသွင်းထားသော ပါဝင်သူ မရှိပါ။';
 
   @override
   String get noRecords =>
@@ -714,6 +608,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get notSelected => '- မရွေးချယ်ထားပါ - ';
 
   @override
+  String get noteGuidance =>
+      'ပိုမိုတိကျသောဘာသာပြန်ဆိုမှုအတွက် နောက်ထပ်အသေးစိတ်အချက်အလက်များကို သင်ထည့်သွင်းသည့်နေရာ';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ သို့မဟုတ် နောက်မှ ထပ်ကြိုးစားပါ။';
 
@@ -724,16 +622,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'ဒေတာ မရှိပါ။';
 
   @override
-  String get participantDeleted => 'ပါဝင်သူကို ဖျက်လိုက်ပါပြီ။';
-
-  @override
-  String get participantRename => 'ပါဝင်သူ အမည် ပြောင်း';
-
-  @override
-  String get partner => 'ပါတနာ';
-
-  @override
-  String get partnerMode => 'ပါတနာ ပုံစံ';
+  String get openSettings => 'ဆက်တင်များ ဖွင့်ပါ';
 
   @override
   String get password => 'လျှို့ဝှက်နံပါတ်';
@@ -746,13 +635,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get perfect => 'ပြီးပြည့်စုံတယ်!';
 
   @override
-  String get personaFriend => 'ဒေသခံ သူငယ်ချင်း';
-
-  @override
-  String get personaGuide => 'ခရီးသွား လမ်းညွှန်';
-
-  @override
-  String get personaTeacher => 'အင်္ဂလိပ်ဆရာ';
+  String get pickGallery => 'ပြခန်းမှ ရွေးပါ';
 
   @override
   String get playAgain => 'နောက်တစ်ကြိမ် ထပ်ကစားပါ';
@@ -772,6 +655,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get posAdverb => 'ကြိယာဝိသေသန';
 
   @override
+  String get posArticle => 'နာမ်စား';
+
+  @override
   String get posConjunction => 'ဆက်စပ်ပုဒ်';
 
   @override
@@ -779,6 +665,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get posNoun => 'နာမ်';
+
+  @override
+  String get posParticle => 'ဆက်စပ်ပစ္စည်း';
 
   @override
   String get posPreposition => 'ဝိဘတ်/အစ';
@@ -796,9 +685,33 @@ class AppLocalizationsMy extends AppLocalizations {
   String get practiceWordsOnly => 'စကားလုံးများကိုသာ လေ့ကျင့်ပါ';
 
   @override
+  String get processing => 'ဆောင်ရွက်နေသည်...';
+
+  @override
   String progress(int current, int total) {
     return 'တိုးတက်မှု: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'မီနူး > ဘာသာစကားများ သတ်မှတ်ခြင်း တွင် သင်၏ဘာသာစကားနှင့် သင်ယူလိုသည့် ဘာသာစကားကို ဦးစွာ သတ်မှတ်ပါ။';
+
+  @override
+  String get quickStartStep1Title => '၁။ ဘာသာစကားများ သတ်မှတ်ပါ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ထည့်သွင်း (မိုက်/ကီးဘုတ်) -> ဘာသာပြန် -> သိမ်းဆည်း အစီအစဉ်အတိုင်း သင့်ကိုယ်ပိုင် သင်ယူမှုကတ်များကို ဖန်တီးပါ။';
+
+  @override
+  String get quickStartStep2Title => '၂။ အခြေခံ လုပ်ဆောင်ပုံ';
+
+  @override
+  String get quickStartStep3Desc =>
+      'စကားပြောခြင်းဖြင့် လေ့ကျင့်ပါ၊ အသံထွက် လေ့ကျင့်ရန် တက်ဘ်တွင် စာသားကိုကြည့်ပြီး ကိုယ်တိုင် အသံထွက်ကာ လေ့ကျင့်ပါ။';
+
+  @override
+  String get quickStartStep3Title => '၃။ မုဒ်များကို အသုံးချပါ';
 
   @override
   String recentNItems(int count) {
@@ -823,6 +736,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get refresh => 'ပြန်လည်ဆန်းသစ်';
 
   @override
+  String get requestTranslation => 'ဘာသာပြန်ရန် တောင်းဆိုပါ';
+
+  @override
   String get reset => 'ပြန်လည်သတ်မှတ်';
 
   @override
@@ -844,16 +760,13 @@ class AppLocalizationsMy extends AppLocalizations {
   String get reviewModeTitle => 'ပြန်လည်သုံးသပ်ခြင်း';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'ပြင်ပအဖွဲ့အစည်း';
-
-  @override
-  String get roleUser => 'အသုံးပြုသူ';
-
-  @override
   String get save => 'သိမ်းမည်';
+
+  @override
+  String get saveAsSentence => 'ဝါကျအဖြစ် သိမ်းမည်';
+
+  @override
+  String get saveAsWord => 'စကားလုံးအဖြစ် သိမ်းမည်';
 
   @override
   String get saveData => 'ဒေတာ သိမ်းဆည်းခြင်း';
@@ -864,6 +777,9 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'စကင်မှတ်တမ်းတွင် သိမ်းမည်';
+
+  @override
   String get saveTranslationsFromSearch =>
       'ရှာဖွေခြင်း ပုံစံမှ ဘာသာပြန်ခြင်းကို သိမ်းဆည်းကြည့်ပါ';
 
@@ -872,6 +788,12 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get saving => 'သိမ်းဆည်းနေသည်...';
+
+  @override
+  String get scanInstructions => 'စကင်ဖတ်ရန် ပုံကို ရွေးပါ';
+
+  @override
+  String get scanLabel => 'စကင်ဖတ်';
 
   @override
   String score(String score) {
@@ -919,16 +841,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get selectPOS => 'နာမ်စား ရွေးပါ';
 
   @override
-  String get selectParticipants => 'ပါဝင်သူများ ရွေးချယ်ရန်';
-
-  @override
-  String get selectSentenceType => 'စာကြောင်း အမျိုးအစား ရွေးပါ';
-
-  @override
   String get selectStudyMaterial => 'သင်ယူရန် အချက်အလက် ရွေးပါ';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'စာကြောင်း';
@@ -937,43 +850,14 @@ class AppLocalizationsMy extends AppLocalizations {
   String get signUp => 'အကောင့်ဖွင့်ရန်';
 
   @override
-  String get similarTextFound => 'ဆင်တူသော စာသားကို တွေ့ရှိပါပြီ';
-
-  @override
-  String get skip => 'ကျော်ပါ';
-
-  @override
-  String get source => 'မူရင်း:';
-
-  @override
-  String get sourceLanguage => 'မူရင်း ဘာသာစကား';
+  String get simplifiedGuidance =>
+      'နေ့စဉ်စကားပြောဆိုမှုများကို နိုင်ငံခြားဘာသာစကားသို့ ချက်ချင်းပြောင်းပါ။ Talkie သည် သင်၏ဘာသာစကားအသုံးပြုမှုကို မှတ်တမ်းတင်ပေးပါသည်။';
 
   @override
   String get sourceLanguageLabel => 'ကျွန်ုပ်၏ ဘာသာစကား (Source)';
 
   @override
-  String get speakNow => 'ယခု ပြောပါ!';
-
-  @override
-  String get speaker => 'ပြောသူ';
-
-  @override
-  String get speakerSelect => 'ပြောသူ ရွေးချယ်ရန်';
-
-  @override
-  String get speakingPractice => 'ပြောခြင်း လေ့ကျင့်ခန်း';
-
-  @override
-  String get startChat => 'စကားပြော စရန်';
-
-  @override
-  String get startPractice => 'လေ့ကျင့်ခန်း စတင်';
-
-  @override
   String get startTutorial => 'သင်ခန်းစာ စတင်';
-
-  @override
-  String get startWarning => 'သတိပေးချက်';
 
   @override
   String get startsWith => 'အစ စာလုံး';
@@ -982,29 +866,22 @@ class AppLocalizationsMy extends AppLocalizations {
   String get statusCheckEmail => 'အတည်ပြုရန် အီးမေးလ်ကို စစ်ဆေးပါ။';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'ဒေါင်းလုဒ် လုပ်နေသည်: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'ထည့်သွင်းမှု မအောင်မြင်ပါ: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name ထည့်သွင်းမှု အောင်မြင်ပါသည်';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled =>
-      'လော့ဂ်အင် ဝင်ရောက်မှုကို ပယ်ဖျက်လိုက်ပါသည်';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'လော့ဂ်အင် ဝင်ရောက်မှု မအောင်မြင်ပါ: $error';
   }
 
@@ -1015,23 +892,23 @@ class AppLocalizationsMy extends AppLocalizations {
   String get statusLogoutSuccess => 'ထွက်သွားပါပြီ။';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'အကောင့်ဖွင့်ခြင်း မအောင်မြင်ပါ: $error';
+  String statusRequestFailed(String error) {
+    return 'ဘာသာပြန်ရန် တောင်းဆိုမှု မအောင်မြင်ပါ- $error';
   }
 
   @override
-  String get statusSigningUp => 'အကောင့်ဖွင့်နေသည်...';
+  String get statusRequestSuccess => 'ဘာသာပြန်ရန် တောင်းဆိုမှု အောင်မြင်ပါသည်။';
 
   @override
   String get stopPractice => 'လေ့ကျင့်ခန်း ရပ်ပါ';
 
   @override
-  String get studyComplete => 'သင်ယူခြင်း ပြီးစီးပါပြီ';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'သင်ရွေးချယ်ထားသော အကြောင်းအရာသည် လက်ရှိ သင်၏ လေ့လာလိုသော ဘာသာစကား ($targetLang) ကို မထောက်ပံ့သောကြောင့် ဒေသအလိုက် သိမ်းဆည်း၍ မရပါ။ ဘာသာပြန်ရန် တောင်းဆိုလိုပါသလား?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'သင်ယူခြင်း မှတ်တမ်း ($count)';
-  }
+  String get studyLangNotFoundTitle => 'လေ့လာလိုသော ဘာသာစကားကို မထောက်ပံ့ပါ';
 
   @override
   String get styleFormal => 'ရိုသေသော';
@@ -1046,22 +923,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get styleSlang => 'စကားအတိုအသုံးအနှုန်း';
 
   @override
-  String get subject => 'ခေါင်းစဉ်:';
-
-  @override
   String get swapLanguages => 'ဘာသာစကား ပြောင်းပါ';
 
   @override
-  String get switchToAi => 'AI ပုံစံသို့ ပြောင်းပါ';
-
-  @override
-  String get switchToPartner => 'ပါတနာ ပုံစံသို့ ပြောင်းပါ';
-
-  @override
   String get syncingData => 'ဒေတာ စင့်ခ်လုပ်နေသည်...';
-
-  @override
-  String get tabConversation => 'စကားပြော';
 
   @override
   String tabReview(int count) {
@@ -1125,6 +990,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tooltipSearch => 'ရှာဖွေခြင်း';
 
   @override
+  String get tooltipSettingsConfirm => 'ဆက်တင်များကို အတည်ပြုပါ';
+
+  @override
   String get tooltipSpeaking => 'ပြောခြင်း';
 
   @override
@@ -1137,6 +1005,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get translate => 'ဘာသာပြန်ခြင်း';
+
+  @override
+  String get translateNow => 'ယခု ဘာသာပြန်ပါ';
 
   @override
   String get translating => 'ဘာသာပြန်နေသည်...';
@@ -1152,6 +1023,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String translationFailed(String error) {
     return 'ဘာသာပြန်ရန် ပျက်ကွက်ခြင်း: $error';
   }
+
+  @override
+  String get translationLanguage => 'ဘာသာပြန်ဘာသာစကား';
 
   @override
   String get translationLimitExceeded =>
@@ -1170,17 +1044,25 @@ class AppLocalizationsMy extends AppLocalizations {
       'ဘာသာပြန် အရေအတွက်ကို ၅ ကြိမ် ဖြည့်ပြီးပါပြီ!';
 
   @override
+  String get translationResult => 'ဘာသာပြန် ရလဒ်';
+
+  @override
   String get translationResultHint => 'ဘာသာပြန်ရလဒ် - ပြင်ဆင်နိုင်သည်';
 
   @override
   String get tryAgain => 'နောက်တစ်ကြိမ် ထပ်ကြိုးစား';
 
   @override
-  String get tutorialAiChatDesc =>
-      'AI ကိုယ်ပွားဖြင့် လက်တွေ့ စကားပြောဆိုမှုကို လေ့ကျင့်ကြည့်ပါ။';
+  String get ttsInstallGuide =>
+      'Android ဆက်တင်များ > Google TTS တွင် သက်ဆိုင်ရာဘာသာစကားဒေတာကို ထည့်သွင်းပါ။';
 
   @override
-  String get tutorialAiChatTitle => 'AI စကားပြော';
+  String get ttsMissing =>
+      'ဤဘာသာစကားအတွက် အသံအင်ဂျင်ကို သင့်စက်တွင် ထည့်သွင်းထားခြင်းမရှိပါ။';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ဤစက်တွင် ဤဘာသာစကားအတွက် အသံထွက်စနစ်ကို မပံ့ပိုးပါ။';
 
   @override
   String get tutorialContextDesc =>
@@ -1298,7 +1180,13 @@ class AppLocalizationsMy extends AppLocalizations {
   String get typeExclamation => 'အာမေဋိတ်';
 
   @override
+  String get typeIdiom => 'စကားပုံ';
+
+  @override
   String get typeImperative => 'အမိန့်ပေး';
+
+  @override
+  String get typeProverb => 'စကားပုံ/ဆောင်ရိုး';
 
   @override
   String get typeQuestion => 'အမေး';
@@ -1313,6 +1201,11 @@ class AppLocalizationsMy extends AppLocalizations {
   String get useExistingText => 'ရှိပြီးသား စာသားကို သုံးပါ';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'အွန်လိုင်း လမ်းညွှန်ကို ကြည့်ပါ';
 
   @override
@@ -1320,6 +1213,16 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'ကြော်ငြာ ကြည့်၍ ဖြည့်သွင်းပါ (+၅ ကြိမ်)';
+
+  @override
+  String get welcomeButton => 'စတင်ပါ';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie မှ ကြိုဆိုပါတယ်! ဘာသာစကား ၈၀ ကျော်ကို 100% တိကျမှန်ကန်စွာ ထောက်ပံ့ပေးပြီး ပရီမီယံ 3D ဒီဇိုင်းအသစ်နှင့် အကောင်းဆုံးစွမ်းဆောင်ရည်တို့ဖြင့် သင်ယူမှုအတွေ့အကြုံကို အပြည့်အဝ ခံစားလိုက်ပါ။';
+
+  @override
+  String get welcomeTitle => 'Talkie မှ ကြိုဆိုပါတယ်!';
 
   @override
   String get word => 'စကားလုံး';
@@ -1336,114 +1239,4 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ကျွန်ုပ်၏ အသံထွက်';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'ဤစက်တွင် ဤဘာသာစကားအတွက် အသံထွက်စနစ်ကို မပံ့ပိုးပါ။';
-
-  @override
-  String get homeTab => 'ဘာသာပြန်';
-
-  @override
-  String get welcomeTitle => 'Talkie မှ ကြိုဆိုပါတယ်!';
-
-  @override
-  String get welcomeDesc =>
-      'Talkie မှ ကြိုဆိုပါတယ်! ဘာသာစကား ၈၀ ကျော်ကို 100% တိကျမှန်ကန်စွာ ထောက်ပံ့ပေးပြီး ပရီမီယံ 3D ဒီဇိုင်းအသစ်နှင့် အကောင်းဆုံးစွမ်းဆောင်ရည်တို့ဖြင့် သင်ယူမှုအတွေ့အကြုံကို အပြည့်အဝ ခံစားလိုက်ပါ။';
-
-  @override
-  String get welcomeButton => 'စတင်ပါ';
-
-  @override
-  String get labelDetails => 'အသေးစိတ် ဆက်တင်များ';
-
-  @override
-  String get translationResult => 'ဘာသာပြန် ရလဒ်';
-
-  @override
-  String get inputContent => 'ထည့်သွင်း အကြောင်းအရာ';
-
-  @override
-  String get translateNow => 'ယခု ဘာသာပြန်ပါ';
-
-  @override
-  String get tooltipSettingsConfirm => 'ဆက်တင်များကို အတည်ပြုပါ';
-
-  @override
-  String get hintNoteExample =>
-      'ဥပမာ- အခြေအနေ ရှင်းလင်းချက်၊ အသံတူ စကားလုံးများ စသည်';
-
-  @override
-  String get hintTagExample => 'ဥပမာ- စီးပွားရေး၊ ခရီးသွား...';
-
-  @override
-  String get addNew => 'အသစ် ထပ်ထည့်ပါ';
-
-  @override
-  String get newNotebookTitle => 'မှတ်စုစာအုပ် အသစ် ခေါင်းစဉ်';
-
-  @override
-  String get enterNameHint => 'အမည်ကို ရိုက်ထည့်ပါ';
-
-  @override
-  String get add => 'ထည့်ပါ';
-
-  @override
-  String get openSettings => 'ဆက်တင်များ ဖွင့်ပါ';
-
-  @override
-  String get helpNotebook =>
-      'ဘာသာပြန်ရလဒ်တွေကို သိမ်းဆည်းမယ့် ဖိုဒါကို ရွေးပါ။';
-
-  @override
-  String get helpNote =>
-      'စကားလုံးရဲ့ အဓိပ္ပါယ်၊ ဥပမာစာကြောင်း၊ အခြေအနေ စတာတွေကို လွတ်လပ်စွာ မှတ်သားပါ။';
-
-  @override
-  String get helpTag =>
-      'နောက်ပိုင်း အမျိုးအစားခွဲ ဒါမှမဟုတ် ရှာဖွေဖို့အတွက် သော့ချက်စာလုံးကို ရိုက်ထည့်ပါ။';
-
-  @override
-  String get requestTranslation => 'ဘာသာပြန်ရန် တောင်းဆိုပါ';
-
-  @override
-  String get statusRequestSuccess => 'ဘာသာပြန်ရန် တောင်းဆိုမှု အောင်မြင်ပါသည်။';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'ဘာသာပြန်ရန် တောင်းဆိုမှု မအောင်မြင်ပါ- $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'လေ့လာလိုသော ဘာသာစကားကို မထောက်ပံ့ပါ';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'သင်ရွေးချယ်ထားသော အကြောင်းအရာသည် လက်ရှိ သင်၏ လေ့လာလိုသော ဘာသာစကား ($targetLang) ကို မထောက်ပံ့သောကြောင့် ဒေသအလိုက် သိမ်းဆည်း၍ မရပါ။ ဘာသာပြန်ရန် တောင်းဆိုလိုပါသလား?';
-  }
-
-  @override
-  String get quickStartStep1Title => '၁။ ဘာသာစကားများ သတ်မှတ်ပါ';
-
-  @override
-  String get quickStartStep1Desc =>
-      'မီနူး > ဘာသာစကားများ သတ်မှတ်ခြင်း တွင် သင်၏ဘာသာစကားနှင့် သင်ယူလိုသည့် ဘာသာစကားကို ဦးစွာ သတ်မှတ်ပါ။';
-
-  @override
-  String get quickStartStep2Title => '၂။ အခြေခံ လုပ်ဆောင်ပုံ';
-
-  @override
-  String get quickStartStep2Desc =>
-      'ထည့်သွင်း (မိုက်/ကီးဘုတ်) -> ဘာသာပြန် -> သိမ်းဆည်း အစီအစဉ်အတိုင်း သင့်ကိုယ်ပိုင် သင်ယူမှုကတ်များကို ဖန်တီးပါ။';
-
-  @override
-  String get quickStartStep3Title => '၃။ မုဒ်များကို အသုံးချပါ';
-
-  @override
-  String get quickStartStep3Desc =>
-      'စကားပြောခြင်းဖြင့် လေ့ကျင့်ပါ၊ အသံထွက် လေ့ကျင့်ရန် တက်ဘ်တွင် စာသားကိုကြည့်ပြီး ကိုယ်တိုင် အသံထွက်ကာ လေ့ကျင့်ပါ။';
-
-  @override
-  String get noteGuidance =>
-      'ပိုမိုတိကျသောဘာသာပြန်ဆိုမှုအတွက် နောက်ထပ်အသေးစိတ်အချက်အလက်များကို သင်ထည့်သွင်းသည့်နေရာ';
 }

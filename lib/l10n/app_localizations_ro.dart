@@ -9,53 +9,20 @@ class AppLocalizationsRo extends AppLocalizations {
   AppLocalizationsRo([String locale = 'ro']) : super(locale);
 
   @override
-  String get basicWords => 'Depozit de bază cu cuvinte';
-
-  @override
-  String get inputLanguage => 'Limbă de intrare';
-
-  @override
-  String get translationLanguage => 'Limbă de traducere';
-
-  @override
-  String get simplifiedGuidance =>
-      'Transformă conversațiile de zi cu zi în limbi străine instantaneu! Talkie îți va înregistra viața lingvistică.';
-
-  @override
-  String get noDataForLanguage =>
-      'Nu există date de învățare pentru limba selectată în baza de date locală. Vă rugăm să descărcați datele sau să selectați o altă limbă.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Anulare';
-
-  @override
   String get accuracy => 'Acuratețe';
-
-  @override
-  String get ttsMissing =>
-      'Motorul vocal pentru această limbă nu este instalat pe dispozitiv.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Instalează datele lingvistice corespunzătoare în Setări Android > Google TTS.';
 
   @override
   String get adLoading =>
       'Se încarcă anunțul. Te rugăm să încerci din nou mai târziu.';
 
   @override
-  String get addNewSubject => 'Adăugați titlu nou';
+  String get add => 'Adaugă';
 
   @override
-  String get addParticipant => 'Adaugă participant';
+  String get addNew => 'Adaugă nou';
+
+  @override
+  String get addNewSubject => 'Adăugați titlu nou';
 
   @override
   String get addTagHint => 'Adăugați etichetă...';
@@ -88,6 +55,12 @@ class AppLocalizationsRo extends AppLocalizations {
   String get basicWordRepository => 'Depozit de cuvinte de bază';
 
   @override
+  String get basicWords => 'Depozit de bază cu cuvinte';
+
+  @override
+  String get cancel => 'Anulare';
+
+  @override
   String get caseObject => 'Acuzativ';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get caseSubject => 'Nominativ';
 
   @override
-  String get chatAiChat => 'Conversație';
-
-  @override
-  String get chatAllConversations => 'Toate conversațiile';
-
-  @override
-  String get chatChoosePersona => 'Alege personajul';
-
-  @override
-  String get chatEndMessage => 'Sigur dorești să închei conversația?';
-
-  @override
-  String get chatEndTitle => 'Încheie și salvează conversația';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Conversație eșuată: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Extras din conversație ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Istoric conversații';
-
-  @override
-  String get chatNew => 'Conversație nouă';
-
-  @override
-  String get chatNewChat => 'Conversație nouă';
-
-  @override
-  String get chatNoConversations => 'Nu există conversații încă';
-
-  @override
-  String get chatSearchHint => 'Caută după titlul conversației...';
-
-  @override
-  String get chatNoteSearchHint => 'Caută în note...';
-
-  @override
-  String get chatSaveAndExit => 'Salvează și ieși';
-
-  @override
-  String get chatStartNewPrompt => 'Începe o nouă conversație pentru a exersa!';
-
-  @override
-  String get chatTypeHint => 'Scrie un mesaj...';
-
-  @override
-  String get chatUntitled => 'Conversație fără titlu';
-
-  @override
   String get checking => 'Verificare...';
 
   @override
@@ -168,14 +86,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Sigur doriți să ștergeți această înregistrare?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Sigur dorești să ștergi această conversație?\nConversațiile șterse nu pot fi recuperate.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Sigur dorești să ștergi acest participant?';
 
   @override
   String get contextTagHint =>
@@ -215,23 +125,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get deleteRecord => 'Șterge Înregistrare';
 
   @override
-  String get dialogueQuestDesc =>
-      'Exersează conversații prin joc de rol. Selectează răspunsurile potrivite și spune-le.';
-
-  @override
-  String get dialogueQuestTitle => 'Misiune dialog';
-
-  @override
-  String get disambiguationPrompt => 'Ce sens doriți să traducem?';
-
-  @override
-  String get disambiguationTitle => 'Selectați sensul';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Nu ai un cont?';
-
-  @override
-  String get editParticipant => 'Editează participant';
 
   @override
   String get email => 'Email';
@@ -239,6 +136,9 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Acest e-mail este deja înregistrat. Te rugăm să te autentifici sau să recuperezi parola.';
+
+  @override
+  String get enterNameHint => 'Introdu numele';
 
   @override
   String get enterNewSubjectName => 'Introduceți titlul nou';
@@ -280,6 +180,9 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get errors => 'Erori:';
+
+  @override
+  String get extractedText => 'Text extras';
 
   @override
   String get female => 'Feminin';
@@ -340,12 +243,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get gender => 'Gen';
 
   @override
-  String get labelFilterMaterial => 'Materiale';
-
-  @override
-  String get labelFilterTag => 'Etichetă';
-
-  @override
   String get generalTags => 'Etichete generale';
 
   @override
@@ -358,18 +255,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get googleContinue => 'Continuă cu Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Importă seturi complete de dialoguri din fișiere JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc => 'Pentru import materiale în Mod 3, creați JSON:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dialog';
 
   @override
   String get helpJsonTypeSentence => 'Sentință';
@@ -402,12 +288,12 @@ class AppLocalizationsRo extends AppLocalizations {
       '• Selectare: Alege pachet\n• Interval: [-] [+] pauză (3s-60s)\n• Start/Stop: Control sesiune\n• Vorbește: Ascultă și repetă\n• Scor: Acuratețe (0-100)\n• Reîncearcă: Buton dacă vocea nu este detectată';
 
   @override
-  String get helpModeChatDesc =>
-      'Exersează conversații reale vorbind cu un personaj AI.';
+  String get helpNote =>
+      'Înregistrați liber semnificația, exemplele sau situațiile cuvântului.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Chat AI: Exersează conversații reale cu personaje din meniul \'Chat\' din bara de tab-uri de jos\n• Setări personaj: Specifică liber sexul, numele și codul de limbă al celeilalte persoane\n• Joc de rol GPS: Recunoaște locația mea actuală și recomandă subiecte de conversație potrivite pentru locație\n• 2 limbi: Răspunsurile AI sunt afișate cu traducere pentru a maximiza efectul de învățare\n• Gestionarea înregistrărilor: Filtrează istoricul conversațiilor anterioare și salvează anumite mesaje din conversație ca materiale de studiu';
+  String get helpNotebook =>
+      'Selectați folderul unde să salvați rezultatele traducerii.';
 
   @override
   String get helpTabJson => 'Format JSON';
@@ -422,6 +308,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get helpTabTour => 'Tur';
 
   @override
+  String get helpTag =>
+      'Introduceți cuvinte cheie pentru a clasifica sau căuta mai târziu.';
+
+  @override
   String get helpTitle => 'Ajutor & Ghid';
 
   @override
@@ -430,6 +320,15 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get hide => 'Ascunde';
+
+  @override
+  String get hintNoteExample => 'Ex: Context, omonime, etc.';
+
+  @override
+  String get hintTagExample => 'Ex: Afaceri, călătorie...';
+
+  @override
+  String get homeTab => 'Traducere';
 
   @override
   String importAdded(int count) {
@@ -442,23 +341,6 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Există deja un material cu același titlu. Te rugăm să schimbi titlul și să încerci din nou.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -474,6 +356,11 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files fișiere, $entries intrări importate.';
+  }
+
+  @override
   String get importJsonFile => 'Import JSON';
 
   @override
@@ -485,12 +372,30 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Un singur fișier JSON';
+
+  @override
+  String get importSourceFolder => 'Dosar (structură de bibliotecă pe limbă)';
+
+  @override
+  String get importSourceTitle => 'Selectați sursa de import';
+
+  @override
+  String get importSourceZip => 'Fișier ZIP (dosar comprimat)';
+
+  @override
   String importTotal(int count) {
     return 'Total: $count';
   }
 
   @override
   String get importing => 'Se importă...';
+
+  @override
+  String get inputContent => 'Conținut introdus';
+
+  @override
+  String get inputLanguage => 'Limbă de intrare';
 
   @override
   String get inputModeTitle => 'Introducere';
@@ -507,19 +412,22 @@ class AppLocalizationsRo extends AppLocalizations {
   String get kakaoContinue => 'Continuă cu Kakao';
 
   @override
-  String get labelLangCode => 'Cod limbă (ex: en-US, ko-KR)';
+  String get labelDetails => 'Setări detaliate';
 
   @override
-  String get labelName => 'Nume';
+  String get labelFilterMaterial => 'Materiale';
+
+  @override
+  String get labelFilterTag => 'Etichetă';
+
+  @override
+  String get labelLangCode => 'Cod limbă (ex: en-US, ko-KR)';
 
   @override
   String get labelNote => 'Notă';
 
   @override
   String get labelPOS => 'Parte de vorbire';
-
-  @override
-  String get labelRole => 'Rol';
 
   @override
   String get labelSentence => 'Sentință';
@@ -570,9 +478,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get listening => 'Ascult...';
 
   @override
-  String get loadingParticipants => 'Se încarcă participanții...';
-
-  @override
   String get location => 'Locație';
 
   @override
@@ -592,9 +497,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get male => 'Masculin';
 
   @override
-  String get manageParticipants => 'Gestionează participanți';
-
-  @override
   String get manual => 'Introducere manuală';
 
   @override
@@ -602,9 +504,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get materialInfo => 'Informații material';
-
-  @override
-  String get me => 'Eu';
 
   @override
   String get menuDeviceImport => 'Importă materiale de pe dispozitiv';
@@ -672,28 +571,21 @@ class AppLocalizationsRo extends AppLocalizations {
   String get neutral => 'Neutru';
 
   @override
+  String get newNotebookTitle => 'Numele noului caiet';
+
+  @override
   String get newSubjectName => 'Titlu nou caiet/colecție';
 
   @override
   String get next => 'Următorul';
 
   @override
-  String get noDialogueHistory => 'Nu există istoric de dialoguri.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Nu există conexiune la internet. Recunoașterea vocală ar putea să nu funcționeze offline.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Nu există conexiune la internet. Funcția de traducere nu este disponibilă offline. Te rugăm să folosești modul de revizuire.';
+  String get noDataForLanguage =>
+      'Nu există date de învățare pentru limba selectată în baza de date locală. Vă rugăm să descărcați datele sau să selectați o altă limbă.';
 
   @override
   String get noMaterialsInCategory =>
       'Nu există materiale în această categorie.';
-
-  @override
-  String get noParticipantsFound => 'Nu există participanți înregistrați.';
 
   @override
   String get noRecords => 'Nu există înregistrări pentru limba selectată';
@@ -714,6 +606,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get notSelected => '- Neselectat -';
 
   @override
+  String get noteGuidance =>
+      'Unde introduceți detalii suplimentare pentru o traducere mai precisă';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Verifică-ți conexiunea la internet sau încearcă din nou mai târziu.';
 
@@ -724,16 +620,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Nu există materiale.';
 
   @override
-  String get participantDeleted => 'Participantul a fost șters.';
-
-  @override
-  String get participantRename => 'Redenumește participantul';
-
-  @override
-  String get partner => 'Partener';
-
-  @override
-  String get partnerMode => 'Mod partener';
+  String get openSettings => 'Deschide setările';
 
   @override
   String get password => 'Parolă';
@@ -746,13 +633,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get perfect => 'Perfect!';
 
   @override
-  String get personaFriend => 'Prieten local';
-
-  @override
-  String get personaGuide => 'Ghid turistic';
-
-  @override
-  String get personaTeacher => 'Profesor de engleză';
+  String get pickGallery => 'Alege din galerie';
 
   @override
   String get playAgain => 'Joacă din nou';
@@ -772,6 +653,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get posAdverb => 'Adverb';
 
   @override
+  String get posArticle => 'Articol';
+
+  @override
   String get posConjunction => 'Conjuncție';
 
   @override
@@ -779,6 +663,9 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get posNoun => 'Substantiv';
+
+  @override
+  String get posParticle => 'Particulă';
 
   @override
   String get posPreposition => 'Prepoziție';
@@ -796,9 +683,33 @@ class AppLocalizationsRo extends AppLocalizations {
   String get practiceWordsOnly => 'Exersează doar cuvinte';
 
   @override
+  String get processing => 'Se procesează...';
+
+  @override
   String progress(int current, int total) {
     return 'Progres: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'În Meniu > Setări limbă, specifică mai întâi limba ta și limba pe care o înveți.';
+
+  @override
+  String get quickStartStep1Title => '1. Setează limba';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Creează-ți propriile carduri de studiu în ordinea: introducere (microfon/tastatură) -> traducere -> salvare.';
+
+  @override
+  String get quickStartStep2Title => '2. Fluxul de bază';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.';
+
+  @override
+  String get quickStartStep3Title => '3. Utilizează modurile';
 
   @override
   String recentNItems(int count) {
@@ -823,6 +734,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get refresh => 'Reîmprospătare';
 
   @override
+  String get requestTranslation => 'Solicită traducere';
+
+  @override
   String get reset => 'Resetează';
 
   @override
@@ -843,16 +757,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get reviewModeTitle => 'Revizuire';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Terț';
-
-  @override
-  String get roleUser => 'Utilizator';
-
-  @override
   String get save => 'Salvare';
+
+  @override
+  String get saveAsSentence => 'Salvează ca propoziție';
+
+  @override
+  String get saveAsWord => 'Salvează ca cuvânt';
 
   @override
   String get saveData => 'Salvare';
@@ -863,6 +774,9 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Salvează în istoricul de scanare';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Vă rugăm să salvați traducerile din modul de căutare';
 
@@ -871,6 +785,12 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get saving => 'Salvare...';
+
+  @override
+  String get scanInstructions => 'Selectați o imagine de scanat';
+
+  @override
+  String get scanLabel => 'Scanează';
 
   @override
   String score(String score) {
@@ -917,16 +837,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get selectPOS => 'Selectează partea de vorbire';
 
   @override
-  String get selectParticipants => 'Selectează participanți';
-
-  @override
-  String get selectSentenceType => 'Selectează tipul de propoziție';
-
-  @override
   String get selectStudyMaterial => 'Selectare Material';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Sentință';
@@ -935,43 +846,14 @@ class AppLocalizationsRo extends AppLocalizations {
   String get signUp => 'Înregistrare';
 
   @override
-  String get similarTextFound => 'Text similar găsit';
-
-  @override
-  String get skip => 'Omite';
-
-  @override
-  String get source => 'Sursă:';
-
-  @override
-  String get sourceLanguage => 'Limbă Sursă';
+  String get simplifiedGuidance =>
+      'Transformă conversațiile de zi cu zi în limbi străine instantaneu! Talkie îți va înregistra viața lingvistică.';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => 'Vorbește acum!';
-
-  @override
-  String get speaker => 'Vorbitor';
-
-  @override
-  String get speakerSelect => 'Selectează vorbitorul';
-
-  @override
-  String get speakingPractice => 'Practică Vorbire';
-
-  @override
-  String get startChat => 'Începe conversația';
-
-  @override
-  String get startPractice => 'Începe Practica';
-
-  @override
   String get startTutorial => 'Start Tur';
-
-  @override
-  String get startWarning => 'Avertisment';
 
   @override
   String get startsWith => 'Începe cu';
@@ -981,28 +863,22 @@ class AppLocalizationsRo extends AppLocalizations {
       'Verifică-ți emailul pentru a finaliza autentificarea.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Se descarcă: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Importare eșuată: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name a fost importat cu succes';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Autentificare anulată.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Autentificare eșuată: $error';
   }
 
@@ -1013,23 +889,24 @@ class AppLocalizationsRo extends AppLocalizations {
   String get statusLogoutSuccess => 'Deconectare reușită.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Înregistrare eșuată: $error';
+  String statusRequestFailed(String error) {
+    return 'Eșec la solicitarea de traducere: $error';
   }
 
   @override
-  String get statusSigningUp => 'Se înregistrează...';
+  String get statusRequestSuccess =>
+      'Solicitarea de traducere a fost finalizată.';
 
   @override
   String get stopPractice => 'Oprește';
 
   @override
-  String get studyComplete => 'Studiat';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Materialul selectat nu acceptă limba de studiu setată curent ($targetLang) și nu poate fi salvat local. Doriți să solicitați o traducere?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Înregistrări ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Limbă de studiu neacceptată';
 
   @override
   String get styleFormal => 'Formal';
@@ -1044,22 +921,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get styleSlang => 'Argou/Slang';
 
   @override
-  String get subject => 'Subiect:';
-
-  @override
   String get swapLanguages => 'Schimbă limbile';
 
   @override
-  String get switchToAi => 'Trece la modul AI';
-
-  @override
-  String get switchToPartner => 'Trece la modul partener';
-
-  @override
   String get syncingData => 'Se sincronizează datele...';
-
-  @override
-  String get tabConversation => 'Conversație';
 
   @override
   String tabReview(int count) {
@@ -1123,6 +988,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tooltipSearch => 'Căutare';
 
   @override
+  String get tooltipSettingsConfirm => 'Confirmă setările';
+
+  @override
   String get tooltipSpeaking => 'Vorbire';
 
   @override
@@ -1135,6 +1003,9 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get translate => 'Traducere';
+
+  @override
+  String get translateNow => 'Traduce acum';
 
   @override
   String get translating => 'Traducere...';
@@ -1151,6 +1022,9 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Limbă de traducere';
+
+  @override
   String get translationLimitExceeded => 'Limită de traducere depășită';
 
   @override
@@ -1165,6 +1039,9 @@ class AppLocalizationsRo extends AppLocalizations {
       'Numărul de traduceri a fost reîncărcat cu 5!';
 
   @override
+  String get translationResult => 'Rezultatul traducerii';
+
+  @override
   String get translationResultHint =>
       'Rezultatul traducerii - poate fi modificat';
 
@@ -1172,11 +1049,16 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tryAgain => 'Încearcă din nou';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Exersează conversații reale cu personaje AI.';
+  String get ttsInstallGuide =>
+      'Instalează datele lingvistice corespunzătoare în Setări Android > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'Chat AI';
+  String get ttsMissing =>
+      'Motorul vocal pentru această limbă nu este instalat pe dispozitiv.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Dispozitivul nu acceptă redarea vocală pentru această limbă în setările implicite.';
 
   @override
   String get tutorialContextDesc =>
@@ -1287,7 +1169,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get typeExclamation => 'Exclamativă';
 
   @override
+  String get typeIdiom => 'Expresie';
+
+  @override
   String get typeImperative => 'Imperativă';
+
+  @override
+  String get typeProverb => 'Proverb';
 
   @override
   String get typeQuestion => 'Întrebare';
@@ -1302,6 +1190,11 @@ class AppLocalizationsRo extends AppLocalizations {
   String get useExistingText => 'Folosește Existent';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Vezi ghidul online';
 
   @override
@@ -1309,6 +1202,16 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Vezi un anunț și reîncarcă (+5)';
+
+  @override
+  String get welcomeButton => 'Începe';
+
+  @override
+  String get welcomeDesc =>
+      'Bine ați venit la Talkie! Acceptăm peste 80 de limbi din întreaga lume cu integritate 100% și oferim o experiență de învățare perfectă cu un nou design 3D premium și performanțe optimizate.';
+
+  @override
+  String get welcomeTitle => 'Bun venit la Talkie!';
 
   @override
   String get word => 'Cuvânt';
@@ -1325,114 +1228,4 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Pronunția ta';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Dispozitivul nu acceptă redarea vocală pentru această limbă în setările implicite.';
-
-  @override
-  String get homeTab => 'Traducere';
-
-  @override
-  String get welcomeTitle => 'Bun venit la Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Bine ați venit la Talkie! Acceptăm peste 80 de limbi din întreaga lume cu integritate 100% și oferim o experiență de învățare perfectă cu un nou design 3D premium și performanțe optimizate.';
-
-  @override
-  String get welcomeButton => 'Începe';
-
-  @override
-  String get labelDetails => 'Setări detaliate';
-
-  @override
-  String get translationResult => 'Rezultatul traducerii';
-
-  @override
-  String get inputContent => 'Conținut introdus';
-
-  @override
-  String get translateNow => 'Traduce acum';
-
-  @override
-  String get tooltipSettingsConfirm => 'Confirmă setările';
-
-  @override
-  String get hintNoteExample => 'Ex: Context, omonime, etc.';
-
-  @override
-  String get hintTagExample => 'Ex: Afaceri, călătorie...';
-
-  @override
-  String get addNew => 'Adaugă nou';
-
-  @override
-  String get newNotebookTitle => 'Numele noului caiet';
-
-  @override
-  String get enterNameHint => 'Introdu numele';
-
-  @override
-  String get add => 'Adaugă';
-
-  @override
-  String get openSettings => 'Deschide setările';
-
-  @override
-  String get helpNotebook =>
-      'Selectați folderul unde să salvați rezultatele traducerii.';
-
-  @override
-  String get helpNote =>
-      'Înregistrați liber semnificația, exemplele sau situațiile cuvântului.';
-
-  @override
-  String get helpTag =>
-      'Introduceți cuvinte cheie pentru a clasifica sau căuta mai târziu.';
-
-  @override
-  String get requestTranslation => 'Solicită traducere';
-
-  @override
-  String get statusRequestSuccess =>
-      'Solicitarea de traducere a fost finalizată.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Eșec la solicitarea de traducere: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Limbă de studiu neacceptată';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Materialul selectat nu acceptă limba de studiu setată curent ($targetLang) și nu poate fi salvat local. Doriți să solicitați o traducere?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Setează limba';
-
-  @override
-  String get quickStartStep1Desc =>
-      'În Meniu > Setări limbă, specifică mai întâi limba ta și limba pe care o înveți.';
-
-  @override
-  String get quickStartStep2Title => '2. Fluxul de bază';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Creează-ți propriile carduri de studiu în ordinea: introducere (microfon/tastatură) -> traducere -> salvare.';
-
-  @override
-  String get quickStartStep3Title => '3. Utilizează modurile';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Exersează prin chat și exersează pronunția direct în fila de exersare a pronunției, uitându-te la text.';
-
-  @override
-  String get noteGuidance =>
-      'Unde introduceți detalii suplimentare pentru o traducere mai precisă';
 }

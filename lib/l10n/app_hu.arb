@@ -1,32 +1,10 @@
 {
   "@@locale": "hu",
-  "basicWords": "Alap szógyűjtemény",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Bemeneti nyelv",
-  "translationLanguage": "Fordítási nyelv",
-  "simplifiedGuidance": "Azonnali idegennyelvű fordítás a mindennapi beszélgetésekhez! A Talkie rögzíti a nyelvhasználatodat.",
-  "noDataForLanguage": "A kiválasztott nyelvhez nem található tananyag a helyi adatbázisban. Töltse le az anyagot, vagy válasszon másik nyelvet.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Mégse",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Pontosság",
-  "ttsMissing": "Ehhez a nyelvhez nincs telepítve hangmotor az eszközön.",
-  "ttsInstallGuide": "Telepítse a nyelvi adatokat az Android Beállítások > Google TTS menüpontban.",
   "adLoading": "Hirdetés betöltése folyamatban. Kérlek, próbáld újra később.",
+  "add": "Hozzáadás",
+  "addNew": "Új hozzáadása",
   "addNewSubject": "Új név hozzáadása",
-  "addParticipant": "Résztvevő hozzáadása",
   "addTagHint": "Címke hozzáadása...",
   "alreadyHaveAccount": "Már van fiókod?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Alapvető Szótár",
+  "basicWords": "Alap szógyűjtemény",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Mégse",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Tárgyeset",
   "casePossessive": "Birtokos eset",
   "casePossessivePronoun": "Birtokos névmás",
   "caseReflexive": "Visszaható névmás",
   "caseSubject": "Alanyeset",
-  "chatAiChat": "Csevegés",
-  "chatAllConversations": "Összes beszélgetés",
-  "chatChoosePersona": "Személyiség választása",
-  "chatEndMessage": "Biztosan befejezed a beszélgetést?",
-  "chatEndTitle": "Beszélgetés befejezése és mentése",
-  "chatFailed": "A csevegés sikertelen: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Beszélgetés részlete ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Beszélgetési előzmények",
-  "chatNew": "Új beszélgetés",
-  "chatNewChat": "Új beszélgetés",
-  "chatNoConversations": "Még nincsenek beszélgetések",
-  "chatSearchHint": "Keresés a beszélgetés címében...",
-  "chatNoteSearchHint": "Keresés jegyzetekben...",
-  "chatSaveAndExit": "Mentés és kilépés",
-  "chatStartNewPrompt": "Kezdj egy új beszélgetést a gyakorláshoz!",
-  "chatTypeHint": "Írd be az üzenetet...",
-  "chatUntitled": "Cím nélküli beszélgetés",
   "checking": "Ellenőrzés...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Törli ezt a beszélgetést?\nA törölt beszélgetések nem állíthatók vissza.",
-  "confirmDeleteParticipant": "Biztosan törlöd ezt a résztvevőt?",
   "contextTagHint": "Írd le a helyzetet, hogy később könnyebb legyen azonosítani.",
   "contextTagLabel": "Szövegkörnyezet/helyzet (opcionális) - pl.: Reggeli üdvözlés, Udvarias beszéd",
   "copiedToClipboard": "Vágólapra másolva!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Gyakorold a beszélgetést helyzetekben. Válaszd ki a megfelelő választ, és mondd ki.",
-  "dialogueQuestTitle": "Beszélgetés küldetés",
-  "disambiguationPrompt": "Melyik jelentéssel fordítsam le?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Jelentés kiválasztása",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Nincs még fiókod?",
-  "editParticipant": "Résztvevő szerkesztése",
   "email": "E-mail",
   "emailAlreadyInUse": "Ez az e-mail cím már regisztrálva van. Jelentkezz be, vagy kérj jelszóemlékeztetőt.",
+  "enterNameHint": "Adja meg a nevet",
   "enterNewSubjectName": "Új név megadása",
   "enterSentenceHint": "Írj be egy mondatot...",
   "enterTextHint": "Írd be a lefordítandó szöveget",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Felismert szöveg",
   "female": "Nő",
   "file": "Fájl:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Játék mód",
   "gameOver": "Játék vége",
   "gender": "Nem",
-  "labelFilterMaterial": "Anyag",
-  "labelFilterTag": "Címke",
   "generalTags": "Általános címkék",
   "getMaterials": "Anyagok beszerzése",
   "good": "Jó",
   "googleContinue": "Folytatás a Google-lal",
-  "helpDialogueImportDesc": "Teljes beszélgetés-készletek importálása JSON fájlból.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "3. Mód importhoz hozzon létre JSON-t:",
-  "helpJsonTypeDialogue": "Beszélgetés (Dialógus)",
   "helpJsonTypeSentence": "Mondat (Sentence)",
   "helpJsonTypeWord": "Szó (Word)",
   "helpMode1Desc": "Kezdje el a nyelvtanulást a legintuitívabb módon a prémium 3D mikrofon és a nagyméretű billentyűzet ikon segítségével.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Válaszd ki a tanulási anyagot: Használd a jobb felső sarokban található menüt (⋮) a 'Tanulási anyag kiválasztása' vagy az 'Online anyagtár' eléréséhez.\n• Kártya megfordítása: A 'Megjelenítés/Elrejtés' segítségével ellenőrizheted a fordítást.\n• Hallgatás: A hangszóró ikonra kattintva lejátszhatod a kiejtést.\n• Tanulás befejezése: A pipa (V) jelzi, ha befejezted a tanulást.\n• Törlés: Hosszú kattintással (Long Click) törölheted a rekordokat.\n• Keresés és szűrés: Használd a keresősávot (valós idejű intelligens keresés), a címkéket és a kezdőbetű szűrőket.",
   "helpMode3Desc": "Hallgass meg egy mondatot, majd gyakorold a kiejtést utánmondással (Shadowing).",
   "helpMode3Details": "• Kiválasztás: Válasszon csomagot\n• Időköz: [-] [+] várakozás (3mp-60mp)\n• Start/Stop: Munkamenet vezérlése\n• Beszéd: Hallgassa és ismételje\n• Pontszám: Pontosság (0-100)\n• Újra: Gomb ha a hang nem észlelhető",
-  "helpModeChatDesc": "Gyakorold a valós beszélgetéseket egy AI személyiséggel.",
-  "helpModeChatDetails": "• AI chat: Gyakorold a valós beszélgetéseket a személyiséggel a 'Chat' menüben az alsó lapon\n• Személyiség beállítása: Szabadon megadhatod a másik fél nemét, nevét és nyelvkódját\n• GPS helyzetjáték: A jelenlegi helyzeted felismerése, hogy a helynek megfelelő beszélgetési témákat ajánljon\n• Kétnyelvű: Az AI válaszai fordítással együtt jelennek meg a maximális tanulási hatékonyság érdekében\n• Előzmények kezelése: A korábbi beszélgetések szűrése és a beszélgetés során a bizonyos üzenetek mentése tananyagként",
+  "helpNote": "Jegyezd fel a szavak jelentését, példamondatokat vagy egyéb hasznos információkat.",
+  "helpNotebook": "Válaszd ki a mappát, ahová a fordításaid mentésre kerüljenek.",
   "helpTabJson": "JSON Formátum",
   "helpTabModes": "Módok",
   "helpTabQuickStart": "Gyors kezdés",
   "helpTabTour": "Túra",
+  "helpTag": "Adj meg kulcsszavakat, amikkel később rendszerezheted vagy megkeresheted a jegyzeteket.",
   "helpTitle": "Segítség és Útmutató",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "Elrejt",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Pl.: Kontextus, azonos hangzású szavak stb.",
+  "hintTagExample": "Pl.: Üzleti, utazás...",
+  "homeTab": "Fordítás",
   "importAdded": "Hozzáadva: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} fájl, {entries} bejegyzés importálva.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON Import",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Egyetlen JSON fájl",
+  "importSourceFolder": "Mappa (nyelvi könyvtárszerkezet)",
+  "importSourceTitle": "Importálás forrásának kiválasztása",
+  "importSourceZip": "ZIP fájl (tömörített mappa)",
   "importTotal": "Összes: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Bevitt tartalom",
+  "inputLanguage": "Bemeneti nyelv",
   "inputModeTitle": "Bevitel",
   "intervalSeconds": "Időköz: {seconds}mp",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Érvényes e-mail címet adj meg.",
   "kakaoContinue": "Folytatás a Kakao-val",
+  "labelDetails": "Részletes beállítások",
+  "labelFilterMaterial": "Anyag",
+  "labelFilterTag": "Címke",
   "labelLangCode": "Nyelvkód (pl.: en-US, ko-KR)",
-  "labelName": "Név",
   "labelNote": "Jegyzet",
   "labelPOS": "Szófaj",
-  "labelRole": "Szerep",
   "labelSentence": "Mondat",
   "labelSentenceCollection": "Mondatgyűjtemény",
   "labelSentenceType": "Mondattípus",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Résztvevők betöltése...",
   "location": "Helyszín",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Bejelentkezés",
   "logout": "Kijelentkezés",
   "logoutConfirmMessage": "Biztosan kijelentkezel erről az eszközről?",
   "logoutConfirmTitle": "Kijelentkezés",
   "male": "Férfi",
-  "manageParticipants": "Résztvevők kezelése",
   "manual": "Kézi bevitel",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Anyaginformáció",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Én",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Anyagok importálása az eszközről",
   "menuHelp": "Súgó",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Mondatgyűjteményem",
   "myWordbook": "Szógyűjteményem",
   "neutral": "Semleges",
+  "newNotebookTitle": "Új jegyzetfüzet neve",
   "newSubjectName": "Új téma/mondatgyűjtemény neve",
   "next": "Következő",
-  "noDialogueHistory": "Nincs beszélgetési előzmény.",
-  "noInternetWarningMic": "Nincs internetkapcsolat. Offline állapotban a hangfelismerés nem biztos, hogy működik.",
-  "noInternetWarningTranslate": "Nincs internetkapcsolat. Offline állapotban a fordítás nem érhető el. Használd az ismétlő módot.",
+  "noDataForLanguage": "A kiválasztott nyelvhez nem található tananyag a helyi adatbázisban. Töltse le az anyagot, vagy válasszon másik nyelvet.",
   "noMaterialsInCategory": "Ebben a kategóriában nincsenek anyagok.",
-  "noParticipantsFound": "Nincsenek regisztrált résztvevők.",
   "noRecords": "Nincs rekord a választott nyelvhez",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Hang nem észlelhető",
   "notSelected": "- Nincs kiválasztva -",
+  "noteGuidance": "Ahol további részleteket adhat meg a pontosabb fordítás érdekében",
   "onlineLibraryCheckInternet": "Ellenőrizd az internetkapcsolatot, vagy próbáld később újra.",
   "onlineLibraryLoadFailed": "Az anyagok betöltése sikertelen.",
   "onlineLibraryNoMaterials": "Nincsenek anyagok.",
-  "participantDeleted": "A résztvevő törölve.",
-  "participantRename": "Résztvevő átnevezése",
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Partner mód",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Beállítások megnyitása",
   "password": "Jelszó",
-  "passwordTooShort": "A jelszónak legalább 6 karakter hosszúnak kell lennie.",
+  "passwordTooShort": "A jelszó túl rövid",
   "perfect": "Tökéletes!",
-  "personaFriend": "Helyi barát",
-  "personaGuide": "Idegenvezető",
-  "personaTeacher": "Angoltanár",
+  "pickGallery": "Választás a galériából",
   "playAgain": "Újra játszom",
   "playbackFailed": "Lejátszás sikertelen: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Melléknév",
   "posAdverb": "Határozószó",
+  "posArticle": "Névelő",
   "posConjunction": "Kötőszó",
   "posInterjection": "Felkiáltószó",
   "posNoun": "Főnév",
+  "posParticle": "Partikula",
   "posPreposition": "Elöljárószó",
   "posPronoun": "Névmás",
   "posVerb": "Ige",
   "practiceModeTitle": "Gyakorlás",
   "practiceWordsOnly": "Csak szavak gyakorlása",
+  "processing": "Feldolgozás...",
   "progress": "Folyamat: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Először állítsa be a saját és a tanulni kívánt nyelvet a Menü > Nyelv beállítások menüpontban.",
+  "quickStartStep1Title": "1. Nyelv beállítása",
+  "quickStartStep2Desc": "Készítsen saját tanulókártyákat a következő sorrendben: bevitel (mikrofon/billentyűzet) -> fordítás -> mentés.",
+  "quickStartStep2Title": "2. Alapvető folyamat",
+  "quickStartStep3Desc": "Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.",
+  "quickStartStep3Title": "3. Módok használata",
   "recentNItems": "Legutóbb létrehozott {count} db megtekintése",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Fordítás kérése",
   "reset": "Visszaállítás",
   "resetPracticeHistory": "Gyakorlási előzmények törlése",
   "retry": "Újrapróbálkozás?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Áttekintés",
-  "roleAi": "AI",
-  "roleThirdParty": "Harmadik fél",
-  "roleUser": "Felhasználó",
   "save": "Mentés",
+  "saveAsSentence": "Mentés mondatként",
+  "saveAsWord": "Mentés szóként",
   "saveData": "Mentés",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Mentés a szkennelési előzményekbe",
   "saveTranslationsFromSearch": "Mentse a fordításokat a keresési módból",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Válassza ki a szkennelni kívánt képet",
+  "scanLabel": "Szkennelés",
   "score": "Pontosság: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Szófaj kiválasztása",
-  "selectParticipants": "Résztvevők kiválasztása",
-  "selectSentenceType": "Mondatfajta kiválasztása",
   "selectStudyMaterial": "Anyag Kiválasztása",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Mondat",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Regisztráció",
-  "similarTextFound": "Hasonló szöveg található",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Kihagyás",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Forrás:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Forrásnyelv",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "sourceLanguageLabel": "Source Language",
-  "speakNow": "Beszélj most!",
-  "speaker": "Beszélő",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Beszélő kiválasztása",
-  "speakingPractice": "Beszédgyakorlat",
-  "startChat": "Beszélgetés indítása",
-  "startPractice": "Gyakorlás Indítása",
-  "startTutorial": "Túra Indítása",
-  "startWarning": "Figyelem",
+  "simplifiedGuidance": "Azonnali idegennyelvű fordítás a mindennapi beszélgetésekhez! A Talkie rögzíti a nyelvhasználatodat.",
+  "sourceLanguageLabel": "Az én nyelvem",
+  "startTutorial": "Bemutató indítása",
   "startsWith": "Kezdődik",
-  "statusCheckEmail": "Kérjük, ellenőrizze az e-mail címét a hitelesítés befejezéséhez.",
+  "statusCheckEmail": "Kérjük, ellenőrizd az e-mail fiókodat",
   "statusDownloading": "Letöltés: {name}...",
-  "statusImportFailed": "Importálás sikertelen: {error}",
-  "statusImportSuccess": "{name} importálása sikeres",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "A bejelentkezés megszakítva.",
-  "statusLoginFailed": "Sikertelen bejelentkezés: {error}",
-  "statusLoginSuccess": "Sikeres bejelentkezés.",
-  "statusLogoutSuccess": "Kijelentkezve.",
-  "statusSignUpFailed": "Sikertelen regisztráció: {error}",
-  "statusSigningUp": "Regisztráció folyamatban...",
-  "stopPractice": "Leállítás",
-  "studyComplete": "Megtanulva",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Rekordok ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Importálás sikertelen: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} importálása sikeres",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Sikertelen bejelentkezés: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Sikeres bejelentkezés",
+  "statusLogoutSuccess": "Sikeres kijelentkezés",
+  "statusRequestFailed": "Fordítási kérelem sikertelen: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "A fordítási kérelem sikeresen megtörtént.",
+  "stopPractice": "Leállítás",
+  "studyLangNotFoundDesc": "A kiválasztott anyag nem támogatja a jelenleg beállított tanulási nyelvet ({targetLang}), ezért nem lehet helyben tárolni. Szeretné kérni a fordítást?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Tanulási nyelv nem támogatott",
   "styleFormal": "Magázó",
   "styleInformal": "Tegező",
   "stylePolite": "Udvarias",
   "styleSlang": "Szleng",
-  "subject": "Tárgy:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Nyelvcsere",
-  "switchToAi": "Váltás AI módba",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Váltás Partner módba",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Adatok szinkronizálása...",
-  "tabConversation": "Beszélgetés",
   "tabReview": "Áttekintés ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Csökkentés",
   "tooltipIncrease": "Növelés",
   "tooltipSearch": "Keresés",
+  "tooltipSettingsConfirm": "Beállítások megerősítése",
   "tooltipSpeaking": "Beszéd",
   "tooltipStudyReview": "Tanulás+Ismétlés",
   "totalRecords": "Összesen {count} bejegyzés (Összes megtekintése)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Fordítás most",
   "translating": "Fordítás...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Fordítási nyelv",
   "translationLimitExceeded": "Fordítási limit túllépve",
   "translationLimitMessage": "Elhasználtad az összes napi ingyenes fordítási lehetőséget (5 alkalom).\\n\\nSzeretnél megnézni egy hirdetést, hogy azonnal feltöltsd 5 alkalommal?",
   "translationLoaded": "Mentett fordítás betöltve",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "A fordítási számláló feltöltve 5 alkalommal!",
+  "translationResult": "Fordítás eredménye",
   "translationResultHint": "Fordítás eredménye - szerkeszthető",
   "tryAgain": "Próbáld újra",
-  "tutorialAiChatDesc": "Gyakorolj valós beszélgetéseket AI személyiségekkel.",
-  "tutorialAiChatTitle": "AI csevegés",
+  "ttsInstallGuide": "Telepítse a nyelvi adatokat az Android Beállítások > Google TTS menüpontban.",
+  "ttsMissing": "Ehhez a nyelvhez nincs telepítve hangmotor az eszközön.",
+  "ttsUnsupportedNatively": "Ez az eszköz alapértelmezés szerint nem támogatja a hangkimenetet ezen a nyelven.",
   "tutorialContextDesc": "Adjon hozzá kontextust (pl. Reggel) a hasonló mondatok megkülönböztetéséhez.",
   "tutorialContextTitle": "Kontextus címke",
   "tutorialLangSettingsDesc": "Állítsd be a lefordítandó forrásnyelvet és a célnyelvet.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Érintse meg ide a fordításhoz.",
   "tutorialTransTitle": "Fordítás",
   "typeExclamation": "Felkiáltó mondat",
+  "typeIdiom": "Idióma",
   "typeImperative": "Felszólító mondat",
+  "typeProverb": "Közmondás",
   "typeQuestion": "Kérdő mondat",
   "typeStatement": "Állító mondat",
   "usageLimitTitle": "Elérte a limitet",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Online útmutató megtekintése",
   "voluntaryTranslations": "Önkéntes fordítások",
   "watchAdAndRefill": "Hirdetés megtekintése és feltöltés (+5 alkalom)",
+  "welcomeButton": "Kezdés",
+  "welcomeDesc": "Üdvözöljük a Talkie-ban! Több mint 80 nyelvet támogatunk világszerte, 100%-os megbízhatósággal, új prémium 3D dizájnnal és optimalizált teljesítménnyel a tökéletes tanulási élményért.",
+  "welcomeTitle": "Üdvözöljük a Talkie-ban!",
   "word": "Szó",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Védd meg a bázisodat úgy, hogy kimondod a szavakat, mielőtt az ellenség odaérne.",
   "wordDefenseTitle": "Szó védelem",
   "wordModeLabel": "Szó mód",
-  "yourPronunciation": "Kiejtésed",
-  "ttsUnsupportedNatively": "Ez az eszköz alapértelmezés szerint nem támogatja a hangkimenetet ezen a nyelven.",
-  "homeTab": "Fordítás",
-  "welcomeTitle": "Üdvözöljük a Talkie-ban!",
-  "welcomeDesc": "Üdvözöljük a Talkie-ban! Több mint 80 nyelvet támogatunk világszerte, 100%-os megbízhatósággal, új prémium 3D dizájnnal és optimalizált teljesítménnyel a tökéletes tanulási élményért.",
-  "welcomeButton": "Kezdés",
-  "labelDetails": "Részletes beállítások",
-  "translationResult": "Fordítás eredménye",
-  "inputContent": "Bevitt tartalom",
-  "translateNow": "Fordítás most",
-  "tooltipSettingsConfirm": "Beállítások megerősítése",
-  "hintNoteExample": "Pl.: Kontextus, azonos hangzású szavak stb.",
-  "hintTagExample": "Pl.: Üzleti, utazás...",
-  "addNew": "Új hozzáadása",
-  "newNotebookTitle": "Új jegyzetfüzet neve",
-  "enterNameHint": "Adja meg a nevet",
-  "add": "Hozzáadás",
-  "openSettings": "Beállítások megnyitása",
-  "helpNotebook": "Válaszd ki a mappát, ahová a fordításaid mentésre kerüljenek.",
-  "helpNote": "Jegyezd fel a szavak jelentését, példamondatokat vagy egyéb hasznos információkat.",
-  "helpTag": "Adj meg kulcsszavakat, amikkel később rendszerezheted vagy megkeresheted a jegyzeteket.",
-  "requestTranslation": "Fordítás kérése",
-  "statusRequestSuccess": "A fordítási kérelem sikeresen megtörtént.",
-  "statusRequestFailed": "Fordítási kérelem sikertelen: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Tanulási nyelv nem támogatott",
-  "studyLangNotFoundDesc": "A kiválasztott anyag nem támogatja a jelenleg beállított tanulási nyelvet ({targetLang}), ezért nem lehet helyben tárolni. Szeretné kérni a fordítást?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Nyelv beállítása",
-  "quickStartStep1Desc": "Először állítsa be a saját és a tanulni kívánt nyelvet a Menü > Nyelv beállítások menüpontban.",
-  "quickStartStep2Title": "2. Alapvető folyamat",
-  "quickStartStep2Desc": "Készítsen saját tanulókártyákat a következő sorrendben: bevitel (mikrofon/billentyűzet) -> fordítás -> mentés.",
-  "quickStartStep3Title": "3. Módok használata",
-  "quickStartStep3Desc": "Gyakoroljon chaten, és gyakorolja a kiejtést a Kiejtés gyakorlása fülön a szöveg elolvasásával és a saját kiejtésével.",
-  "noteGuidance": "Ahol további részleteket adhat meg a pontosabb fordítás érdekében"
+  "yourPronunciation": "Kiejtésed"
 }

@@ -1,32 +1,10 @@
 {
   "@@locale": "he",
-  "basicWords": "מאגר מילים בסיסי",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "שפת מקור",
-  "translationLanguage": "שפת תרגום",
-  "simplifiedGuidance": "תרגום מיידי של שיחות יומיומיות לשפה זרה! Talkie יתעד את חיי השפה שלך.",
-  "noDataForLanguage": "אין נתונים זמינים עבור שפה זו במסד הנתונים המקומי. נא להוריד נתונים או לבחור שפה אחרת.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "ביטול",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "דיוק",
-  "ttsMissing": "מנוע הדיבור לשפה זו אינו מותקן במכשיר שלך.",
-  "ttsInstallGuide": "התקן את נתוני השפה בהגדרות אנדרואיד > Google TTS.",
   "adLoading": "טוען מודעה. אנא נסה שוב מאוחר יותר.",
+  "add": "הוסף",
+  "addNew": "הוסף חדש",
   "addNewSubject": "הוסף כותרת חדשה",
-  "addParticipant": "הוסף משתתף",
   "addTagHint": "הוסף תג...",
   "alreadyHaveAccount": "כבר יש לך חשבון?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "מאגר מילים בסיסי",
+  "basicWords": "מאגר מילים בסיסי",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "ביטול",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "מושא",
   "casePossessive": "שייכות",
   "casePossessivePronoun": "כינוי שייכות",
   "caseReflexive": "כינוי חוזר",
   "caseSubject": "נושא",
-  "chatAiChat": "צ'אט",
-  "chatAllConversations": "כל השיחות",
-  "chatChoosePersona": "בחר דמות",
-  "chatEndMessage": "האם ברצונך לסיים את השיחה?",
-  "chatEndTitle": "סיים ושמור שיחה",
-  "chatFailed": "השיחה נכשלה: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "קטע משיחה ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "היסטוריית שיחות",
-  "chatNew": "שיחה חדשה",
-  "chatNewChat": "שיחה חדשה",
-  "chatNoConversations": "עדיין אין שיחות",
-  "chatSearchHint": "חיפוש לפי שם צ'אט…",
-  "chatNoteSearchHint": "חיפוש בהערות...",
-  "chatSaveAndExit": "שמור וצא",
-  "chatStartNewPrompt": "התחל שיחה חדשה כדי לתרגל!",
-  "chatTypeHint": "הקלד הודעה...",
-  "chatUntitled": "שיחה ללא כותרת",
   "checking": "בודק...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "האם למחוק שיחה זו?\nלא ניתן יהיה לשחזר שיחה שנמחקה.",
-  "confirmDeleteParticipant": "האם למחוק משתתף זה?",
   "contextTagHint": "רשום את המצב כדי להקל על ההבחנה בהמשך",
   "contextTagLabel": "הקשר/מצב (אופציונלי) - לדוגמה: ברכת בוקר, נימוס",
   "copiedToClipboard": "הועתק ללוח!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "תרגל שיחות באמצעות משחק תפקידים. בחר את התשובות המתאימות ואמור אותן.",
-  "dialogueQuestTitle": "משימת דיאלוג",
-  "disambiguationPrompt": "לאיזו משמעות תרצה לתרגם?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "בחר משמעות",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "אין לך חשבון?",
-  "editParticipant": "ערוך משתתף",
   "email": "אימייל",
   "emailAlreadyInUse": "כתובת האימייל כבר רשומה. יש להתחבר או לשחזר את הסיסמה.",
+  "enterNameHint": "הזן שם",
   "enterNewSubjectName": "הזן כותרת חדשה",
   "enterSentenceHint": "כתוב משפט...",
   "enterTextHint": "הזן טקסט לתרגום",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "טקסט שזוהה",
   "female": "נקבה",
   "file": "קובץ:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "מצב משחק",
   "gameOver": "המשחק נגמר",
   "gender": "מגדר",
-  "labelFilterMaterial": "חוברת חומרים",
-  "labelFilterTag": "תגית",
   "generalTags": "תגים כלליים",
   "getMaterials": "קבל חומרים",
   "good": "טוב",
   "googleContinue": "המשך עם Google",
-  "helpDialogueImportDesc": "ייבא ערכת דיאלוג שלמה מקובץ JSON.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "לייבוא חומרים במצב 3, צור JSON:",
-  "helpJsonTypeDialogue": "דיאלוג (Dialogue)",
   "helpJsonTypeSentence": "משפט (Sentence)",
   "helpJsonTypeWord": "מילה (Word)",
   "helpMode1Desc": "התחילו ללמוד שפה בצורה האינטואיטיבית ביותר, באמצעות מיקרופון תלת מימדי פרימיום ואייקוני מקלדת גדולים.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• בחירת אוסף חומרים: השתמשו בתפריט (⋮) בפינה הימנית העליונה כדי לבחור 'בחר אוסף חומרים' או 'ספריית חומרים מקוונת'\n• היפוך כרטיסייה: השתמשו ב'הצג/הסתר' כדי לבדוק את התרגום\n• האזנה: לחצו על סמל הרמקול כדי להשמיע את ההגייה\n• סיום לימוד: סמנו ✓ כדי לסמן שלימדתם את הכרטיסייה\n• מחיקה: לחצו לחיצה ארוכה על הכרטיסייה כדי למחוק את התיעוד\n• חיפוש וסינון: תומך בסרגל חיפוש (חיפוש חכם בזמן אמת) ומסנני תגיות, אותיות התחלה",
   "helpMode3Desc": "תרגלו הגייה על ידי האזנה וחזרה על משפטים (Shadowing).",
   "helpMode3Details": "• בחר: בחר חבילה\n• מרווח: [-] [+] זמן המתנה (3ש'-60ש')\n• התחל/עצור: שליטה בסשן\n• דבר: האזן וחזור\n• ניקוד: דיוק (0-100)\n• נסה שוב: כפתור אם קול לא מזוהה",
-  "helpModeChatDesc": "תרגלו שיחה אמיתית על ידי שיחה עם דמות AI.",
-  "helpModeChatDetails": "• צ'אט AI: תרגל שיחות מעשיות עם דמויות דרך תפריט 'צ'אט' בסרגל הכרטיסיות התחתון.\n• הגדרת דמות: ציין באופן חופשי את מין, שם וקוד השפה של הצד השני.\n• משחק תפקידים GPS: המלצה על נושאי שיחה המתאימים למקום על ידי זיהוי המיקום הנוכחי שלך.\n• דו לשוני: תשובות ה-AI מוצגות עם תרגום כדי למקסם את אפקט הלמידה.\n• ניהול רשומות: סינון היסטוריית שיחות קודמות ושמירת הודעות ספציפיות במהלך שיחות כחומרי לימוד.",
+  "helpNote": "רשום באופן חופשי את משמעות המילה, דוגמאות, הקשר וכו'.",
+  "helpNotebook": "בחר תיקייה לשמירת התרגומים.",
   "helpTabJson": "פורמט JSON",
   "helpTabModes": "מצבים",
   "helpTabQuickStart": "התחלה מהירה",
   "helpTabTour": "סיור",
+  "helpTag": "הזן מילות מפתח למיון או חיפוש מאוחר יותר.",
   "helpTitle": "עזרה ומדריך",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "הסתר",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "לדוגמה: הקשר, מילים נרדפות וכו'",
+  "hintTagExample": "לדוגמה: עסקים, נסיעות...",
+  "homeTab": "תרגום",
   "importAdded": "נוסף: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} קבצים, {entries} רשומות יובאו.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "ייבא JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "קובץ JSON בודד",
+  "importSourceFolder": "תיקייה (מבנה ספריות לפי שפה)",
+  "importSourceTitle": "בחר מקור ייבוא",
+  "importSourceZip": "קובץ ZIP (תיקייה דחוסה)",
   "importTotal": "סה\"כ: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "תוכן קלט",
+  "inputLanguage": "שפת מקור",
   "inputModeTitle": "קלט",
   "intervalSeconds": "מרווח: {seconds}ש'",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "אנא הזן אימייל חוקי.",
   "kakaoContinue": "המשך עם קקאו",
+  "labelDetails": "הגדרות מתקדמות",
+  "labelFilterMaterial": "חוברת חומרים",
+  "labelFilterTag": "תגית",
   "labelLangCode": "קוד שפה (לדוגמה: en-US, ko-KR)",
-  "labelName": "שם",
   "labelNote": "הערה",
   "labelPOS": "חלקי דיבר",
-  "labelRole": "תפקיד",
   "labelSentence": "משפט",
   "labelSentenceCollection": "אוסף משפטים",
   "labelSentenceType": "סוג המשפט",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "טוען משתתפים...",
   "location": "מיקום",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "התחברות",
   "logout": "התנתק",
   "logoutConfirmMessage": "האם ברצונך להתנתק מהמכשיר הנוכחי?",
   "logoutConfirmTitle": "התנתקות",
   "male": "זכר",
-  "manageParticipants": "נהל משתתפים",
   "manual": "הזנה ידנית",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "מידע על חומר",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "אני",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "ייבא חומרים מהמכשיר",
   "menuHelp": "עזרה",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "אוסף המשפטים שלי",
   "myWordbook": "אוצר המילים שלי",
   "neutral": "ניטרלי",
+  "newNotebookTitle": "שם מחברת חדשה",
   "newSubjectName": "כותרת מחברת/אוסף חדש",
   "next": "הבא",
-  "noDialogueHistory": "אין היסטוריית שיחות.",
-  "noInternetWarningMic": "אין חיבור לאינטרנט. ייתכן שזיהוי קולי אינו אפשרי במצב לא מקוון.",
-  "noInternetWarningTranslate": "אין חיבור לאינטרנט. תכונת התרגום לא תעבוד. אנא השתמש במצב חזרה.",
+  "noDataForLanguage": "אין נתונים זמינים עבור שפה זו במסד הנתונים המקומי. נא להוריד נתונים או לבחור שפה אחרת.",
   "noMaterialsInCategory": "אין חומרים בקטגוריה זו.",
-  "noParticipantsFound": "לא נמצאו משתתפים רשומים.",
   "noRecords": "אין רשומות לשפה שנבחרה",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "לא זוהה קול",
   "notSelected": "- לא נבחר -",
+  "noteGuidance": "היכן שאתה מזין פרטים נוספים לתרגום מדויק יותר",
   "onlineLibraryCheckInternet": "אנא בדוק את חיבור האינטרנט שלך או נסה שוב מאוחר יותר.",
   "onlineLibraryLoadFailed": "הטעינה של החומרים נכשלה.",
   "onlineLibraryNoMaterials": "אין חומרים.",
-  "participantDeleted": "המשתתף נמחק.",
-  "participantRename": "שנה שם משתתף",
-  "partner": "שותף",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "מצב שותף",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "פתח הגדרות",
   "password": "סיסמה",
-  "passwordTooShort": "הסיסמה חייבת להיות באורך 6 תווים לפחות.",
+  "passwordTooShort": "הסיסמה קצרה מדי",
   "perfect": "מושלם!",
-  "personaFriend": "חבר מקומי",
-  "personaGuide": "מדריך טיולים",
-  "personaTeacher": "מורה לאנגלית",
+  "pickGallery": "בחר מהגלריה",
   "playAgain": "שחק שוב",
   "playbackFailed": "הניגון נכשל: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "שם תואר",
   "posAdverb": "תואר הפועל",
+  "posArticle": "מילת יידוע",
   "posConjunction": "מילת קישור",
   "posInterjection": "מילת קריאה",
   "posNoun": "שם עצם",
+  "posParticle": "חלקיק",
   "posPreposition": "מילת יחס",
   "posPronoun": "כינוי גוף",
   "posVerb": "פועל",
   "practiceModeTitle": "תרגול",
   "practiceWordsOnly": "תרגל מילים בלבד",
+  "processing": "מעבד...",
   "progress": "התקדמות: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "בתפריט > הגדרות שפה, הגדר תחילה את שפת הממשק ושפת הלמידה שלך.",
+  "quickStartStep1Title": "1. הגדרת שפה",
+  "quickStartStep2Desc": "צור כרטיסיות למידה מותאמות אישית לפי הסדר הזה: קלט (מיקרופון/מקלדת) -> תרגום -> שמירה.",
+  "quickStartStep2Title": "2. תהליך בסיסי",
+  "quickStartStep3Desc": "תרגל בצ'אט, ובכרטיסיית תרגול הגייה, תרגל הגייה ישירה תוך כדי צפייה בטקסט.",
+  "quickStartStep3Title": "3. שימוש במצבים שונים",
   "recentNItems": "הצג את {count} הפריטים שנוצרו לאחרונה",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "בקש תרגום",
   "reset": "איפוס",
   "resetPracticeHistory": "אפס היסטוריית תרגול",
   "retry": "לנסות שוב?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "חזרה",
-  "roleAi": "AI",
-  "roleThirdParty": "צד שלישי",
-  "roleUser": "משתמש",
   "save": "שמור",
+  "saveAsSentence": "שמור כמשפט",
+  "saveAsWord": "שמור כמילה",
   "saveData": "שמור",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "שמור בהיסטוריית הסריקות",
   "saveTranslationsFromSearch": "שמור תרגומים ממצב חיפוש",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "בחר תמונה לסריקה",
+  "scanLabel": "סרוק",
   "score": "דיוק: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "בחר חלק דיבר",
-  "selectParticipants": "בחר משתתפים",
-  "selectSentenceType": "בחר סוג משפט",
   "selectStudyMaterial": "בחר חומר",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "משפט",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "הרשמה",
-  "similarTextFound": "נמצא טקסט דומה",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "דלג",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "מקור:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "שפת מקור",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "sourceLanguageLabel": "Source Language",
-  "speakNow": "דבר עכשיו!",
-  "speaker": "דובר",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "בחר דובר",
-  "speakingPractice": "תרגול דיבור",
-  "startChat": "התחל שיחה",
-  "startPractice": "התחל תרגול",
-  "startTutorial": "התחל סיור",
-  "startWarning": "אזהרה",
+  "simplifiedGuidance": "תרגום מיידי של שיחות יומיומיות לשפה זרה! Talkie יתעד את חיי השפה שלך.",
+  "sourceLanguageLabel": "השפה שלי",
+  "startTutorial": "התחלת הדרכה",
   "startsWith": "מתחיל ב",
-  "statusCheckEmail": "אמת את כתובת האימייל שלך כדי להשלים את האימות.",
+  "statusCheckEmail": "יש לבדוק את האימייל שלך",
   "statusDownloading": "מוריד: {name}...",
-  "statusImportFailed": "הייבוא נכשל: {error}",
-  "statusImportSuccess": "{name} יובא בהצלחה",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "ההתחברות בוטלה.",
-  "statusLoginFailed": "ההתחברות נכשלה: {error}",
-  "statusLoginSuccess": "התחברת בהצלחה.",
-  "statusLogoutSuccess": "התנתקת בהצלחה.",
-  "statusSignUpFailed": "ההרשמה נכשלה: {error}",
-  "statusSigningUp": "נרשם...",
-  "stopPractice": "עצור",
-  "studyComplete": "נלמד",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "רשומות ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "הייבוא נכשל: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} יובא בהצלחה",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "התחברות נכשלה: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "התחברות מוצלחת",
+  "statusLogoutSuccess": "התנתקות מוצלחת",
+  "statusRequestFailed": "בקשת התרגום נכשלה: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "בקשת התרגום הושלמה.",
+  "stopPractice": "עצור",
+  "studyLangNotFoundDesc": "החומר שבחרת אינו תומך בשפת הלימוד הנוכחית שלך ({targetLang}) ולכן לא ניתן לשמור אותו באופן מקומי. האם תרצה לבקש תרגום?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "שפת לימוד לא נתמכת",
   "styleFormal": "רשמי",
   "styleInformal": "לא רשמי",
   "stylePolite": "מנומס",
   "styleSlang": "סלנג",
-  "subject": "נושא:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "החלף שפות",
-  "switchToAi": "מעבר למצב AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "מעבר למצב שותף",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "מסנכרן נתונים...",
-  "tabConversation": "שיחה",
   "tabReview": "חזרה ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "הפחתה",
   "tooltipIncrease": "הגדלה",
   "tooltipSearch": "חיפוש",
+  "tooltipSettingsConfirm": "אישור הגדרות",
   "tooltipSpeaking": "דיבור",
   "tooltipStudyReview": "לימוד+חזרה",
   "totalRecords": "סה\"כ {count} רשומות (הצג הכל)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "תרגם עכשיו",
   "translating": "מתרגם...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "שפת תרגום",
   "translationLimitExceeded": "חריגה ממגבלת תרגום",
   "translationLimitMessage": "ניצלת את כל מכסת התרגומים החינמיים היומית שלך (5 פעמים).\\n\\nהאם ברצונך לצפות במודעה כדי למלא מיד 5 תרגומים?",
   "translationLoaded": "תרגום שמור נטען",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "מכסת התרגומים שלך מולאה ב-5!",
+  "translationResult": "תוצאת תרגום",
   "translationResultHint": "תוצאת תרגום - ניתן לעריכה",
   "tryAgain": "נסה שוב",
-  "tutorialAiChatDesc": "תרגל שיחות אמיתיות עם דמויות AI.",
-  "tutorialAiChatTitle": "צ'אט AI",
+  "ttsInstallGuide": "התקן את נתוני השפה בהגדרות אנדרואיד > Google TTS.",
+  "ttsMissing": "מנוע הדיבור לשפה זו אינו מותקן במכשיר שלך.",
+  "ttsUnsupportedNatively": "הגדרות ברירת המחדל של מכשיר זה אינן תומכות בפלט קולי בשפה זו.",
   "tutorialContextDesc": "הוסף הקשר (למשל: בוקר) להבחנה בין משפטים דומים.",
   "tutorialContextTitle": "תגית הקשר",
   "tutorialLangSettingsDesc": "הגדר את שפת המקור ושפת היעד לתרגום.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "הקש כאן לתרגום.",
   "tutorialTransTitle": "תרגם",
   "typeExclamation": "קריאה",
+  "typeIdiom": "ניב",
   "typeImperative": "ציווי",
+  "typeProverb": "פתגם",
   "typeQuestion": "שאלה",
   "typeStatement": "הצהרה",
   "usageLimitTitle": "הגעת למגבלת השימוש",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "הצג מדריך מקוון",
   "voluntaryTranslations": "תרגומים בהתנדבות",
   "watchAdAndRefill": "צפה במודעה ומלא מחדש (+5 פעמים)",
+  "welcomeButton": "מתחילים",
+  "welcomeDesc": "ברוכים הבאים ל-Talkie! אנו תומכים ביותר מ-80 שפות ברחבי העולם ב-100% תקינות, ומספקים חווית למידה מושלמת עם עיצוב תלת מימדי פרימיום חדש וביצועים מיטביים.",
+  "welcomeTitle": "ברוכים הבאים ל-Talkie!",
   "word": "מילה",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "הגן על הבסיס שלך על ידי אמירת מילים לפני שהאויבים מגיעים.",
   "wordDefenseTitle": "הגנת מילים",
   "wordModeLabel": "מצב מילים",
-  "yourPronunciation": "ההגייה שלך",
-  "ttsUnsupportedNatively": "הגדרות ברירת המחדל של מכשיר זה אינן תומכות בפלט קולי בשפה זו.",
-  "homeTab": "תרגום",
-  "welcomeTitle": "ברוכים הבאים ל-Talkie!",
-  "welcomeDesc": "ברוכים הבאים ל-Talkie! אנו תומכים ביותר מ-80 שפות ברחבי העולם ב-100% תקינות, ומספקים חווית למידה מושלמת עם עיצוב תלת מימדי פרימיום חדש וביצועים מיטביים.",
-  "welcomeButton": "מתחילים",
-  "labelDetails": "הגדרות מתקדמות",
-  "translationResult": "תוצאת תרגום",
-  "inputContent": "תוכן קלט",
-  "translateNow": "תרגם עכשיו",
-  "tooltipSettingsConfirm": "אישור הגדרות",
-  "hintNoteExample": "לדוגמה: הקשר, מילים נרדפות וכו'",
-  "hintTagExample": "לדוגמה: עסקים, נסיעות...",
-  "addNew": "הוסף חדש",
-  "newNotebookTitle": "שם מחברת חדשה",
-  "enterNameHint": "הזן שם",
-  "add": "הוסף",
-  "openSettings": "פתח הגדרות",
-  "helpNotebook": "בחר תיקייה לשמירת התרגומים.",
-  "helpNote": "רשום באופן חופשי את משמעות המילה, דוגמאות, הקשר וכו'.",
-  "helpTag": "הזן מילות מפתח למיון או חיפוש מאוחר יותר.",
-  "requestTranslation": "בקש תרגום",
-  "statusRequestSuccess": "בקשת התרגום הושלמה.",
-  "statusRequestFailed": "בקשת התרגום נכשלה: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "שפת לימוד לא נתמכת",
-  "studyLangNotFoundDesc": "החומר שבחרת אינו תומך בשפת הלימוד הנוכחית שלך ({targetLang}) ולכן לא ניתן לשמור אותו באופן מקומי. האם תרצה לבקש תרגום?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. הגדרת שפה",
-  "quickStartStep1Desc": "בתפריט > הגדרות שפה, הגדר תחילה את שפת הממשק ושפת הלמידה שלך.",
-  "quickStartStep2Title": "2. תהליך בסיסי",
-  "quickStartStep2Desc": "צור כרטיסיות למידה מותאמות אישית לפי הסדר הזה: קלט (מיקרופון/מקלדת) -> תרגום -> שמירה.",
-  "quickStartStep3Title": "3. שימוש במצבים שונים",
-  "quickStartStep3Desc": "תרגל בצ'אט, ובכרטיסיית תרגול הגייה, תרגל הגייה ישירה תוך כדי צפייה בטקסט.",
-  "noteGuidance": "היכן שאתה מזין פרטים נוספים לתרגום מדויק יותר"
+  "yourPronunciation": "ההגייה שלך"
 }

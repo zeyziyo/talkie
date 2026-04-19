@@ -1,32 +1,10 @@
 {
   "@@locale": "mn",
-  "basicWords": "Үндсэн үгсийн сан",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Оролтын хэл",
-  "translationLanguage": "Орчуулгын хэл",
-  "simplifiedGuidance": "Өдөр тутмын яриаг гадаад хэл рүү шууд хөрвүүлээрэй! Talkie таны хэлний амьдралыг тэмдэглэнэ.",
-  "noDataForLanguage": "Таны сонгосон хэл дээр сургалтын материал Local DB-д байхгүй байна. Материалыг татаж авах эсвэл өөр хэл сонгоно уу.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Цуцлах",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Нарийвчлал",
-  "ttsMissing": "Энэ хэлний дуут хөдөлгүүр таны төхөөрөмж дээр суугаагүй байна.",
-  "ttsInstallGuide": "Андройд тохиргоо > Google TTS хэсгээс энэ хэлний өгөгдлийг суулгана уу.",
   "adLoading": "Зар татаж байна. Хэсэг хугацааны дараа дахин оролдоно уу.",
+  "add": "Нэмэх",
+  "addNew": "Шинээр нэмэх",
   "addNewSubject": "Шинэ нэр нэмэх",
-  "addParticipant": "Оролцогч нэмэх",
   "addTagHint": "Тэмдэг нэмэх...",
   "alreadyHaveAccount": "Та аль хэдийн данстай юу?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Үндсэн үгсийн сан",
+  "basicWords": "Үндсэн үгсийн сан",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Цуцлах",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Зорилгын тохиолдол",
   "casePossessive": "Эзэмших тохиолдол",
   "casePossessivePronoun": "Эзэмших орлуун үг",
   "caseReflexive": "Өөртөө тусах орлуун үг",
   "caseSubject": "Гол тохиолдол",
-  "chatAiChat": "Чат",
-  "chatAllConversations": "Бүх яриа",
-  "chatChoosePersona": "Дүр сонгох",
-  "chatEndMessage": "Яриагаа дуусгах уу?",
-  "chatEndTitle": "Яриаг дуусгаж хадгалах",
-  "chatFailed": "Чат хийж чадсангүй: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Ярианаас иш татах ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Ярианы түүх",
-  "chatNew": "Шинэ яриа",
-  "chatNewChat": "Шинэ яриа",
-  "chatNoConversations": "Одоогоор яриа байхгүй байна",
-  "chatSearchHint": "Чатны гарчигаар хайх...",
-  "chatNoteSearchHint": "Тайлбараар хайх...",
-  "chatSaveAndExit": "Хадгалж гараад гарах",
-  "chatStartNewPrompt": "Дадлага хийхийн тулд шинэ яриа эхлүүлээд үзээрэй!",
-  "chatTypeHint": "Зурвас оруулна уу...",
-  "chatUntitled": "Гарчиггүй яриа",
   "checking": "Шалгаж байна...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Та энэ яриаг устгах уу?\nУстгасан яриаг сэргээх боломжгүй.",
-  "confirmDeleteParticipant": "Та энэ оролцогчийг устгах уу?",
   "contextTagHint": "Дараа нь ялгахад хялбар болгохын тулд нөхцөлийг бичнэ үү",
   "contextTagLabel": "Утга/Нөхцөл (Сонгох) - Жишээ нь: Өглөөний мэнд, Хүндэтгэлийн хэл",
   "copiedToClipboard": "Санах ойд хуулсан!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Нөхцөл байдлын жүжгээр ярианы дадлага хийгээрэй. Тохиромжтой хариултыг сонгож хэлээрэй.",
-  "dialogueQuestTitle": "Ярианы даалгавар",
-  "disambiguationPrompt": "Ямар утгаар орчуулах вэ?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Утга сонгох",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Та дансгүй юу?",
-  "editParticipant": "Оролцогчийг засах",
   "email": "И-мэйл",
   "emailAlreadyInUse": "Бүртгэгдсэн имэйл хаяг байна. Нэвтэрч эсвэл нууц үгээ сэргээнэ үү.",
+  "enterNameHint": "Нэр оруулна уу",
   "enterNewSubjectName": "Шинэ нэр оруулна уу",
   "enterSentenceHint": "Өгүүлбэр оруулна уу...",
   "enterTextHint": "Орчуулах текстийг оруулна уу",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Танигдсан текст",
   "female": "Эмэгтэй",
   "file": "Файл:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Тоглоомын горим",
   "gameOver": "Тоглоом дууслаа",
   "gender": "Хүйс",
-  "labelFilterMaterial": "Материал",
-  "labelFilterTag": "Тэмдэг",
   "generalTags": "Ерөнхий шошго",
   "getMaterials": "Материал авах",
   "good": "Сайн байна",
   "googleContinue": "Google-ээр үргэлжлүүлэх",
-  "helpDialogueImportDesc": "Бүхэл ярианы багцыг JSON файлаар импортлох.",
-  "helpDialogueImportDetails": "• JSON бүтэц: `entries`-ийн оронд `dialogues` массивыг ашиглах\n• Автомат сэргээлт: Ярианы гарчиг, дүр, мессежийн дарааллыг сэргээнэ.\n• Байршил: Импортолсон яриа нь AI чат горимын 'Түүх' таб дээр гарч ирнэ.",
   "helpJsonDesc": "Mode 3-т ашиглах сургалтын материалыг JSON файлаар импортлохын тулд дараах форматыг баримтална уу:",
-  "helpJsonTypeDialogue": "Яриа (Dialogue)",
   "helpJsonTypeSentence": "Өгүүлбэр (Sentence)",
   "helpJsonTypeWord": "Үг (Word)",
   "helpMode1Desc": "Дээд зэрэглэлийн 3D микрофон болон томруулсан гарны дүрс ашиглан хэл сурах хамгийн ойлгомжтой аргаар эхлээрэй.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Материал сонгох: Баруун дээд буланд байгаа цэснээс (⋮) 'Хичээлийн материал сонгох' эсвэл 'Онлайн материал'-ыг ашиглана уу\n• Карт эргүүлэх: 'Харуулах/Нуух' товчийг ашиглаж орчуулгыг шалгана уу\n• Сонсох: Чанга яригчийн дүрс дээр дарж дуудлагыг сонсох\n• Хичээл дуусгах: Чек тэмдэг (V) дарж хичээлийг дуусгах\n• Устгах: Картыг удаан дарж (Long Click) бичлэгийг устгах\n• Хайлт ба шүүлтүүр: Хайлтын хэсэг (бодит цагийн ухаалаг хайлт) болон tag, эхний үсгийн шүүлтүүрийг дэмжинэ",
   "helpMode3Desc": "Өгүүлбэрийг сонсож, даган хэлж (Shadowing) дуудлагаа сайжруулаарай.",
   "helpMode3Details": "• Материал сонгох: Сурах материалаа сонгох\n• Завсрын хугацаа тохируулах: [-] [+] товчлуураар өгүүлбэр хоорондын хүлээх хугацааг тохируулах (3 секундээс 60 секунд хүртэл)\n• Эхлүүлэх/Зогсоох: Shadowing сессийг хянах\n• Ярих: Дууг сонсоод дагаж ярих\n• Санал хүсэлт: Нарийвчлалын оноо (0-100) болон өнгөний дэлгэц\n• Хайлтын нөхцөл: Таг, саяхны зүйл, эхний үсгээр дадлага хийх зүйлийг шүүх",
-  "helpModeChatDesc": "AI дүртэй ярилцаж, бодит харилцан яриаг дадлагажуулаарай.",
-  "helpModeChatDetails": "• AI чат: Доод таб баарны 'Чат' цэснээс дүр төрхтэй бодит ярианы дадлага хийх\n• Дүр төрх тохируулах: Харилцагчийн хүйс, нэр, хэлний кодыг чөлөөтэй зааж өгөх\n• GPS жүжигчилсэн тоглоом: Одоогийн байгаа газрыг таньж, тухайн газарт тохирох ярианы сэдвийг санал болгох\n• 2 хэл: AI-ийн хариултыг орчуулгатай хамт харуулснаар сургалтын үр дүнг дээд зэргээр нэмэгдүүлэх\n• Бичлэгийн удирдлага: Өнгөрсөн ярианы түүхийг шүүж, ярианы явцад тодорхой мессежийг сургалтын материал болгон хадгалах",
+  "helpNote": "Үгийн утга, жишээ, нөхцөл байдлыг чөлөөтэй тэмдэглээрэй.",
+  "helpNotebook": "Орчуулгын үр дүнг хадгалах хавтас сонгоно уу.",
   "helpTabJson": "JSON формат",
   "helpTabModes": "Горим тайлбар",
   "helpTabQuickStart": "Шуурхай эхлүүлэх",
   "helpTabTour": "Туршлага хуримтлуулах",
+  "helpTag": "Дараа нь ангилах эсвэл хайх түлхүүр үгээ оруулна уу.",
   "helpTitle": "Тусламж & Заавар",
   "helpTourDesc": "**Тодруулсан хүрээ** нь үндсэн функцийг чиглүүлдэг.\n(Жишээ нь: **Тодруулсан хүрээ** нь зааж буй картыг удаан дарснаар устгах боломжтой.)",
   "hide": "Нуух",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Жишээ нь: Нөхцөл байдал, ижил утгатай үгс гэх мэт",
+  "hintTagExample": "Жишээ нь: Бизнес, аялал...",
+  "homeTab": "Орчуулга",
   "importAdded": "Нэмсэн: {count} ширхэг",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} файл, {entries} оруулгыг импортлов.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON файл оруулах",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Ганц JSON файл",
+  "importSourceFolder": "Хавтас (хэлний сангийн бүтэцтэй)",
+  "importSourceTitle": "Импортлох эх сурвалжаа сонгоно уу",
+  "importSourceZip": "ZIP файл (шахсан хавтас)",
   "importTotal": "Нийт: {count} ширхэг",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Оруулах агуулга",
+  "inputLanguage": "Оролтын хэл",
   "inputModeTitle": "Оруулах",
   "intervalSeconds": "Завсар: {seconds} секунд",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Тохиромжтой и-мэйл хаяг оруулна уу.",
   "kakaoContinue": "Какао-гоор үргэлжлүүлэх",
+  "labelDetails": "Дэлгэрэнгүй тохиргоо",
+  "labelFilterMaterial": "Материал",
+  "labelFilterTag": "Тэмдэг",
   "labelLangCode": "Хэлний код (жш: en-US, ko-KR)",
-  "labelName": "Нэр",
   "labelNote": "Тайлбар",
   "labelPOS": "Үгийн төрөл",
-  "labelRole": "Үүрэг",
   "labelSentence": "Өгүүлбэр",
   "labelSentenceCollection": "Өгүүлбэрийн цуглуулга",
   "labelSentenceType": "Өгүүлбэрийн төрөл",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Оролцогчдыг ачаалж байна...",
   "location": "Байршил",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Нэвтрэх",
   "logout": "Гарах",
   "logoutConfirmMessage": "Та одоогийн төхөөрөмжөөс гарах уу?",
   "logoutConfirmTitle": "Гарах",
   "male": "Эрэгтэй",
-  "manageParticipants": "Оролцогчдыг удирдах",
   "manual": "Гараар оруулах",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Материалын мэдээлэл",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Би",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Төхөөрөмжөөс материал оруулах",
   "menuHelp": "Тусламж",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Миний өгүүлбэрийн цуглуулга",
   "myWordbook": "Миний үгийн сан",
   "neutral": "Төвийг сахисан",
+  "newNotebookTitle": "Шинэ дэвтэрийн нэр",
   "newSubjectName": "Шинэ нэр томьёоны сангийн нэр",
   "next": "Дараах",
-  "noDialogueHistory": "Ярианы түүх байхгүй.",
-  "noInternetWarningMic": "Интернет холболт байхгүй байна. Офлайн үед дуу хоолой таних боломжгүй байж болно.",
-  "noInternetWarningTranslate": "Интернет холболт байхгүй байна. Офлайн үед орчуулгын үйл ажиллагааг ашиглах боломжгүй. Дадлагын горимыг ашиглана уу.",
+  "noDataForLanguage": "Таны сонгосон хэл дээр сургалтын материал Local DB-д байхгүй байна. Материалыг татаж авах эсвэл өөр хэл сонгоно уу.",
   "noMaterialsInCategory": "Энэ ангилалд материал байхгүй байна.",
-  "noParticipantsFound": "Бүртгэгдсэн оролцогч байхгүй.",
   "noRecords": "Сонгосон хэлний сурах бичлэг байхгүй байна",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Дуу хоолой илрээгүй байна",
   "notSelected": "- Сонгоогүй -",
+  "noteGuidance": "Илүү нарийвчлалтай орчуулгын тулд нэмэлт мэдээллийг хаана оруулах вэ",
   "onlineLibraryCheckInternet": "Интернет холболтоо шалгаад эсвэл дараа дахин оролдоно уу.",
   "onlineLibraryLoadFailed": "Материалыг ачаалж чадсангүй.",
   "onlineLibraryNoMaterials": "Материал байхгүй байна.",
-  "participantDeleted": "Оролцогчийг устгасан.",
-  "participantRename": "Оролцогчийн нэрийг өөрчлөх",
-  "partner": "Хамтрагч",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Хамтрагчийн горим",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Тохиргоог нээх",
   "password": "Нууц үг",
   "passwordTooShort": "Нууц үг 6-аас дээш тэмдэгтэй байх ёстой.",
   "perfect": "Төгс байна!",
-  "personaFriend": "Орон нутгийн найз",
-  "personaGuide": "Аялал жуулчлалын хөтөч",
-  "personaTeacher": "Англи хэлний багш",
+  "pickGallery": "Зургийн цомгоос сонгох",
   "playAgain": "Дахин тоглох",
   "playbackFailed": "Тоглуулж чадсангүй: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Тэмдэг нэр",
   "posAdverb": "Дайвар үг",
+  "posArticle": "Артикл",
   "posConjunction": "Холбох үг",
   "posInterjection": "Ам барьцаалах үг",
   "posNoun": "Нэр үг",
+  "posParticle": "Бөөмс",
   "posPreposition": "Орхигдох эгшиг/Төлөөний үг",
   "posPronoun": "Орлуун үг",
   "posVerb": "Үйл үг",
   "practiceModeTitle": "Дадлага",
   "practiceWordsOnly": "Зөвхөн үг дадлага хийх",
+  "processing": "Боловсруулж байна...",
   "progress": "Ахиц: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Цэс > Хэл тохируулах хэсгээс өөрийн болон сурах хэлээ эхлээд тохируулна уу.",
+  "quickStartStep1Title": "1. Хэл тохируулах",
+  "quickStartStep2Desc": "Оруулах (микрофон/гар) -> Орчуулах -> Хадгалах гэсэн дарааллаар өөрийн сурах картуудыг үүсгээрэй.",
+  "quickStartStep2Title": "2. Үндсэн урсгал",
+  "quickStartStep3Desc": "Чат горимоор дадлага хийж, дуудлагын дадлагын таб дээр текст хараад шууд дуудан дадлага хийгээрэй.",
+  "quickStartStep3Title": "3. Горим ашиглах",
   "recentNItems": "Саяхан үүсгэсэн {count} зүйлийг харах",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Орчуулга хүсэх",
   "reset": "Анхны байдалд оруулах",
   "resetPracticeHistory": "Дадлагын түүхийг анхны байдалд оруулах",
   "retry": "Дахин оролдох уу?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Давтах",
-  "roleAi": "AI",
-  "roleThirdParty": "Гуравдагч этгээд",
-  "roleUser": "Хэрэглэгч",
   "save": "Хадгалах",
+  "saveAsSentence": "Өгүүлбэрээр хадгалах",
+  "saveAsWord": "Үгээр хадгалах",
   "saveData": "Мэдээлэл хадгалах",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Скан түүхэнд хадгалах",
   "saveTranslationsFromSearch": "Хайх горимд орчуулгыг хадгалаад үзээрэй",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Скан хийх зургаа сонгоно уу",
+  "scanLabel": "Скан",
   "score": "Нарийвчлал: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Үгийн төрөл сонгох",
-  "selectParticipants": "Оролцогчдыг сонгох",
-  "selectSentenceType": "Өгүүлбэрийн төрөл сонгох",
   "selectStudyMaterial": "Сурах материал сонгох",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Өгүүлбэр",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Бүртгүүлэх",
-  "similarTextFound": "Ижил төстэй текст олдлоо",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Алгасах",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Эх сурвалж:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Эх хэл",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Өдөр тутмын яриаг гадаад хэл рүү шууд хөрвүүлээрэй! Talkie таны хэлний амьдралыг тэмдэглэнэ.",
   "sourceLanguageLabel": "Миний хэл (Source)",
-  "speakNow": "Одоо ярина уу!",
-  "speaker": "Яригч",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Яригчийг сонгох",
-  "speakingPractice": "Ярих дадлага",
-  "startChat": "Яриаг эхлүүлэх",
-  "startPractice": "Дадлага эхлүүлэх",
   "startTutorial": "Хичээл эхлүүлэх",
-  "startWarning": "Анхааруулга",
   "startsWith": "Эхний үсэг",
   "statusCheckEmail": "Имэйлээ шалгаж баталгаажуулалтаа дуусгана уу.",
   "statusDownloading": "{name} татаж байна...",
-  "statusImportFailed": "Импортлох ажиллагаа амжилтгүй боллоо: {error}",
-  "statusImportSuccess": "{name} импортлох ажиллагаа амжилттай боллоо",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Нэвтрэх ажиллагаа цуцлагдсан.",
-  "statusLoginFailed": "Нэвтрэх ажиллагаа амжилтгүй боллоо: {error}",
-  "statusLoginSuccess": "Нэвтрэх ажиллагаа амжилттай боллоо.",
-  "statusLogoutSuccess": "Таныг амжилттай гарлаа.",
-  "statusSignUpFailed": "Бүртгүүлэх ажиллагаа амжилтгүй боллоо: {error}",
-  "statusSigningUp": "Бүртгүүлж байна...",
-  "stopPractice": "Дадлага зогсоох",
-  "studyComplete": "Суралцаж дууслаа",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Сурах бичлэг ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Импортлох ажиллагаа амжилтгүй боллоо: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} импортлох ажиллагаа амжилттай боллоо",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Нэвтрэх ажиллагаа амжилтгүй боллоо: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Нэвтрэх ажиллагаа амжилттай боллоо.",
+  "statusLogoutSuccess": "Таныг амжилттай гарлаа.",
+  "statusRequestFailed": "Орчуулгын хүсэлт амжилтгүй: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Орчуулгын хүсэлт амжилттай боллоо.",
+  "stopPractice": "Дадлага зогсоох",
+  "studyLangNotFoundDesc": "Таны сонгосон материал нь одоогоор тохируулсан суралцах хэл ({targetLang})-ийг дэмжихгүй байгаа тул локал хадгалах боломжгүй. Орчуулга хүсэх үү?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Суралцах хэл дэмжигдэхгүй байна",
   "styleFormal": "Албан ёсны",
   "styleInformal": "Энгийн",
   "stylePolite": "Найрсаг",
   "styleSlang": "Слэнг/Хар яриа",
-  "subject": "Гарчиг:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Хэл солих",
-  "switchToAi": "AI горимд шилжих",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Хамтрагчийн горимд шилжих",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Мэдээлэл синхрончлогдож байна...",
-  "tabConversation": "Яриа",
   "tabReview": "Давтах ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Багасгах",
   "tooltipIncrease": "Нэмэгдүүлэх",
   "tooltipSearch": "Хайх",
+  "tooltipSettingsConfirm": "Тохиргоог баталгаажуулах",
   "tooltipSpeaking": "Ярих",
   "tooltipStudyReview": "Сурах+Давтах",
   "totalRecords": "Нийт {count} бичлэг (Бүгдийг харах)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Орчуулах",
   "translating": "Орчуулж байна...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Орчуулгын хэл",
   "translationLimitExceeded": "Орчуулгын хязгаар хэтэрсэн",
   "translationLimitMessage": "Өдөрт үнэгүй орчуулга (5 удаа) дууссан байна.\\n\\nЗар үзэж 5 удааг нэн даруй цэнэглэх үү?",
   "translationLoaded": "Хадгалсан орчуулгыг орууллаа",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Орчуулгын тоо 5-аар цэнэглэгдлээ!",
+  "translationResult": "Орчуулгын үр дүн",
   "translationResultHint": "Орчуулгын үр дүн - засварлах боломжтой",
   "tryAgain": "Дахин оролдох",
-  "tutorialAiChatDesc": "AI дүртэй бодит ярианы дадлага хийж үзээрэй.",
-  "tutorialAiChatTitle": "AI чат",
+  "ttsInstallGuide": "Андройд тохиргоо > Google TTS хэсгээс энэ хэлний өгөгдлийг суулгана уу.",
+  "ttsMissing": "Энэ хэлний дуут хөдөлгүүр таны төхөөрөмж дээр суугаагүй байна.",
+  "ttsUnsupportedNatively": "Энэ хэлээр яриа үүсгэх нь таны төхөөрөмжийн тохиргоогоор дэмжигдэхгүй байна.",
   "tutorialContextDesc": "Ижил өгүүлбэр байсан ч нөхцөл (Жишээ нь: Өглөө, орой) бичсэнээр тусад нь хадгалах боломжтой.",
   "tutorialContextTitle": "Нөхцөл/Утга санааны таг",
   "tutorialLangSettingsDesc": "Орчуулах эх хэл болон зорилтот хэлийг тохируулна.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Оруулсан текстийг орчуулна.",
   "tutorialTransTitle": "Орчуулах",
   "typeExclamation": "Уулга алдах",
+  "typeIdiom": "Зүйр цэцэн үг",
   "typeImperative": "Тушаах үг",
+  "typeProverb": "Зүйр үг/Цэцэн үг",
   "typeQuestion": "Асуулт",
   "typeStatement": "Мэдэгдэл",
   "usageLimitTitle": "Хязгаарт хүрсэн",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Онлайн гарын авлага үзэх",
   "voluntaryTranslations": "Сайн дурын орчуулга",
   "watchAdAndRefill": "Зар үзэж цэнэглэх (+5 удаа)",
+  "welcomeButton": "Эхлэх",
+  "welcomeDesc": "Talkie-д тавтай морил! Бид дэлхийн 80 гаруй хэлийг 100% бүрэн дэмждэг бөгөөд шинэ дээд зэрэглэлийн 3D дизайн болон оновчтой гүйцэтгэлээр танд төгс суралцах туршлагыг санал болгож байна.",
+  "welcomeTitle": "Talkie-д тавтай морил!",
   "word": "Үг",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Дайсан ирэхээс өмнө үгийг хэлж баазыг хамгаалаарай.",
   "wordDefenseTitle": "Үг хамгаалах",
   "wordModeLabel": "Үгийн горим",
-  "yourPronunciation": "Миний дуудлага",
-  "ttsUnsupportedNatively": "Энэ хэлээр яриа үүсгэх нь таны төхөөрөмжийн тохиргоогоор дэмжигдэхгүй байна.",
-  "homeTab": "Орчуулга",
-  "welcomeTitle": "Talkie-д тавтай морил!",
-  "welcomeDesc": "Talkie-д тавтай морил! Бид дэлхийн 80 гаруй хэлийг 100% бүрэн дэмждэг бөгөөд шинэ дээд зэрэглэлийн 3D дизайн болон оновчтой гүйцэтгэлээр танд төгс суралцах туршлагыг санал болгож байна.",
-  "welcomeButton": "Эхлэх",
-  "labelDetails": "Дэлгэрэнгүй тохиргоо",
-  "translationResult": "Орчуулгын үр дүн",
-  "inputContent": "Оруулах агуулга",
-  "translateNow": "Орчуулах",
-  "tooltipSettingsConfirm": "Тохиргоог баталгаажуулах",
-  "hintNoteExample": "Жишээ нь: Нөхцөл байдал, ижил утгатай үгс гэх мэт",
-  "hintTagExample": "Жишээ нь: Бизнес, аялал...",
-  "addNew": "Шинээр нэмэх",
-  "newNotebookTitle": "Шинэ дэвтэрийн нэр",
-  "enterNameHint": "Нэр оруулна уу",
-  "add": "Нэмэх",
-  "openSettings": "Тохиргоог нээх",
-  "helpNotebook": "Орчуулгын үр дүнг хадгалах хавтас сонгоно уу.",
-  "helpNote": "Үгийн утга, жишээ, нөхцөл байдлыг чөлөөтэй тэмдэглээрэй.",
-  "helpTag": "Дараа нь ангилах эсвэл хайх түлхүүр үгээ оруулна уу.",
-  "requestTranslation": "Орчуулга хүсэх",
-  "statusRequestSuccess": "Орчуулгын хүсэлт амжилттай боллоо.",
-  "statusRequestFailed": "Орчуулгын хүсэлт амжилтгүй: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Суралцах хэл дэмжигдэхгүй байна",
-  "studyLangNotFoundDesc": "Таны сонгосон материал нь одоогоор тохируулсан суралцах хэл ({targetLang})-ийг дэмжихгүй байгаа тул локал хадгалах боломжгүй. Орчуулга хүсэх үү?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Хэл тохируулах",
-  "quickStartStep1Desc": "Цэс > Хэл тохируулах хэсгээс өөрийн болон сурах хэлээ эхлээд тохируулна уу.",
-  "quickStartStep2Title": "2. Үндсэн урсгал",
-  "quickStartStep2Desc": "Оруулах (микрофон/гар) -> Орчуулах -> Хадгалах гэсэн дарааллаар өөрийн сурах картуудыг үүсгээрэй.",
-  "quickStartStep3Title": "3. Горим ашиглах",
-  "quickStartStep3Desc": "Чат горимоор дадлага хийж, дуудлагын дадлагын таб дээр текст хараад шууд дуудан дадлага хийгээрэй.",
-  "noteGuidance": "Илүү нарийвчлалтай орчуулгын тулд нэмэлт мэдээллийг хаана оруулах вэ"
+  "yourPronunciation": "Миний дуудлага"
 }

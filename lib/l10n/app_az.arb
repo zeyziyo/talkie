@@ -1,32 +1,10 @@
 {
   "@@locale": "az",
-  "basicWords": "Əsas Söz Deposu",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Giriş dili",
-  "translationLanguage": "Tərcümə dili",
-  "simplifiedGuidance": "Gündəlik söhbətləri anında xarici dilə çevirin! Talkie dil həyatınızı qeyd edir.",
-  "noDataForLanguage": "Seçdiyiniz dil üçün təlim materialları lokal verilənlər bazasında mövcud deyil. Materialları yükləyin və ya başqa dil seçin.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Ləğv Et",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Dəqiqlik",
-  "ttsMissing": "Bu dil üçün mətn-nitq mühərriki cihazda quraşdırılmayıb.",
-  "ttsInstallGuide": "Zəhmət olmasa, Android Parametrləri > Google TTS bölməsindən müvafiq dil məlumatlarını quraşdırın.",
   "adLoading": "Reklam yüklənir. Zəhmət olmasa, bir az sonra yenidən cəhd edin.",
+  "add": "Əlavə et",
+  "addNew": "Yeni əlavə et",
   "addNewSubject": "Yeni ad əlavə edin",
-  "addParticipant": "İştirakçı əlavə et",
   "addTagHint": "Etiket əlavə edin...",
   "alreadyHaveAccount": "Artıq hesabınız var?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Əsas Söz Deposu",
+  "basicWords": "Əsas Söz Deposu",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Ləğv Et",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Obyekt",
   "casePossessive": "Yiyəlik",
   "casePossessivePronoun": "Yiyəlik Əvəzlik",
   "caseReflexive": "Qayıdış Əvəzlik",
   "caseSubject": "Subyekt",
-  "chatAiChat": "Söhbət",
-  "chatAllConversations": "Bütün söhbətlər",
-  "chatChoosePersona": "Personaj Seçin",
-  "chatEndMessage": "Söhbəti bitirmək istəyirsiniz?",
-  "chatEndTitle": "Söhbəti Bitirin və Saxlayın",
-  "chatFailed": "Söhbət Uğursuz oldu: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Söhbətdən Çıxarış ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Söhbət Tarixi",
-  "chatNew": "Yeni Söhbət",
-  "chatNewChat": "Yeni Söhbət",
-  "chatNoConversations": "Hələ heç bir söhbət yoxdur",
-  "chatSearchHint": "Söhbətlərin adları ilə axtar...",
-  "chatNoteSearchHint": "Qeydlər üzrə axtar...",
-  "chatSaveAndExit": "Saxlayın və Çıxın",
-  "chatStartNewPrompt": "Məşq üçün yeni söhbətə başlayın!",
-  "chatTypeHint": "Mesajınızı yazın...",
-  "chatUntitled": "Başlıqsız Söhbət",
   "checking": "Yoxlanılır...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Bu söhbəti silmək istədiyinizə əminsinizmi?\nSilinmiş söhbətləri geri qaytarmaq mümkün deyil.",
-  "confirmDeleteParticipant": "Bu iştirakçını silmək istəyirsiniz?",
   "contextTagHint": "Daha sonra ayırd etmək üçün vəziyyəti qeyd edin",
   "contextTagLabel": "Məzmun/Vəziyyət (İsteğe bağlı) - Məsələn: Səhər Salamı, Rəsmi",
   "copiedToClipboard": "Panoya kopyalandı!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Teatrlaşdırılmış vəziyyət vasitəsilə dialoq məşqi edin. Müvafiq cavabları seçin və deyin.",
-  "dialogueQuestTitle": "Dialoq Tapşırığı",
-  "disambiguationPrompt": "Hansı mənada tərcümə etmək istərdiniz?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Məna Seçimi",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Hesabınız yoxdur?",
-  "editParticipant": "İştirakçını redaktə et",
   "email": "E-poçt",
   "emailAlreadyInUse": "Bu e-poçt artıq qeydiyyatdan keçib. Daxil olun və ya şifrəni bərpa etmək üçün istifadə edin.",
+  "enterNameHint": "Ad daxil edin",
   "enterNewSubjectName": "Yeni ad daxil edin",
   "enterSentenceHint": "Cümlə daxil edin...",
   "enterTextHint": "Tərcümə etmək üçün mətn daxil edin",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Çıxarılmış mətn",
   "female": "Qadın",
   "file": "Fayl:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Oyun Rejimi",
   "gameOver": "Oyun Bitdi",
   "gender": "Cins",
-  "labelFilterMaterial": "Materiallar",
-  "labelFilterTag": "Etiketlər",
   "generalTags": "Ümumi etiketlər",
   "getMaterials": "Materialları Əldə Edin",
   "good": "Yaxşıdır",
   "googleContinue": "Google ilə davam et",
-  "helpDialogueImportDesc": "Bütün dialoq dəstlərini JSON faylı olaraq idxal edin.",
-  "helpDialogueImportDetails": "• JSON strukturu: `Girişlər` əvəzinə `dialoqlar` massivindən istifadə edin\n• Avtomatik bərpa: Dialoq başlığı, persona, mesaj ardıcıllığı bərpa edilir.\n• Yer: İdxal olunan dialoqlar Süni İntellekt Söhbət rejiminin 'Qeydlər' sekmesinde görünür.",
   "helpJsonDesc": "3-cü Rejimdə istifadə etmək üçün öyrənmə materiallarını JSON faylı kimi idxal etmək üçün aşağıdakı formata əməl edin:",
-  "helpJsonTypeDialogue": "Dialoq",
   "helpJsonTypeSentence": "Cümlə",
   "helpJsonTypeWord": "Söz",
   "helpMode1Desc": "Premium 3D mikrofonlar və böyük klaviatura ikonları vasitəsilə dil öyrənməyə ən intuitiv şəkildə başlayın.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Material seçimi: Sağ üst menyudan (⋮) 'Tədris materialı seçimi' və ya 'Onlayn material kitabxanası' istifadə edin\n• Kartı çevirmək: 'Göstər/Gizlət' vasitəsilə tərcüməni yoxlayın\n• Dinləmək: Dinləmək üçün dinamik işarəsinə toxunun\n• Tədrisi bitirmək: Tədrisi bitirmək üçün onay işarəsinə(V) toxunun\n• Silmək: Qeydləri silmək üçün karta uzun basın\n• Axtarış və filtrləmə: Axtarış paneli (real vaxt ağıllı axtarış) və etiket, başlanğıc hərf filtrləri dəstəklənir",
   "helpMode3Desc": "Cümlələri dinləyərək və təkrarlayaraq (kölgələmə) tələffüzünüzü məşq edin.",
   "helpMode3Details": "• Material seçimi: Öyrənmək üçün material toplusunu seçin\n• İnterval təyin edin: [-] [+] düymələri ilə cümlələr arasındakı gözləmə müddətini tənzimləyin (3 saniyə ~ 60 saniyə)\n• Başlat/Dayandır: Kölgələmə seansını idarə edin\n• Danışmaq: Səsi dinləyin və təkrarlayın\n• Rəy: Dəqiqlik balı (0-100) və rəngli ekran\n• Axtarış şərtləri: Etiket, son elementlər, başlanğıc hərflərlə məşq hədəfini filtrləyin",
-  "helpModeChatDesc": "Süni intellekt personajı ilə danışaraq real söhbət bacarıqlarınızı məşq edin.",
-  "helpModeChatDetails": "• Süni intellekt söhbəti: Aşağıdakı tab paneli menyusundakı 'Söhbət' menyusunda şəxsiyyətinizlə real söhbət təcrübəsi\n• Şəxsiyyət tənzimləməsi: Qarşı tərəfin cinsiyyətini, adını və dil kodunu sərbəst şəkildə təyin edin\n• GPS vəziyyət oyunu: Cari yerinizi tanıyaraq yerə uyğun söhbət mövzularını tövsiyə edin\n• İkidilli: Süni intellektin cavabı tərcümə ilə birlikdə göstərilir və öyrənmə effektini maksimuma çatdırır\n• Qeyd idarəetmə: Keçmiş söhbət tarixçəsini filtrləmə və söhbət zamanı müəyyən mesajları öyrənmə materialı kimi saxlama",
+  "helpNote": "Sözün mənasını, nümunələrini və ya vəziyyətlərini sərbəst şəkildə qeyd edin.",
+  "helpNotebook": "Tərcümə olunmuş nəticələri saxlamaq üçün qovluq seçin.",
   "helpTabJson": "JSON Formatı",
   "helpTabModes": "Rejim Açıqlaması",
   "helpTabQuickStart": "Tez Başla",
   "helpTabTour": "Sınaqdan Keç",
+  "helpTag": "Sonra təsnif etmək və ya axtarmaq üçün açar sözlər daxil edin.",
   "helpTitle": "Kömək & Bələdçi",
   "helpTourDesc": "**Vurğulanan dairə** əsas funksiyaları göstərir.\n(Məsələn, **vurğulanan dairənin** göstərdiyi kartı silmək üçün uzun müddət basın.)",
   "hide": "Gizlət",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Nümunə: Kontekst, omonimlər və s.",
+  "hintTagExample": "Nümunə: Biznes, Səyahət...",
+  "homeTab": "Tərcümə",
   "importAdded": "Əlavə Edildi: {count} ədəd",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} fayl, {entries} element idxal edildi.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON Faylını İdxal Et",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Tək JSON faylı",
+  "importSourceFolder": "Qovluq (dilə görə kitabxana quruluşu)",
+  "importSourceTitle": "İdxal mənbəyini seçin",
+  "importSourceZip": "ZIP faylı (sıxılmış qovluq)",
   "importTotal": "Ümumi: {count} ədəd",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Daxil edilən məzmun",
+  "inputLanguage": "Giriş dili",
   "inputModeTitle": "Giriş",
   "intervalSeconds": "İnterval: {seconds} saniyə",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Zəhmət olmasa, düzgün e-poçt ünvanı daxil edin.",
   "kakaoContinue": "Kakao ilə davam et",
+  "labelDetails": "Ətraflı parametrlər",
+  "labelFilterMaterial": "Materiallar",
+  "labelFilterTag": "Etiketlər",
   "labelLangCode": "Dil kodu (məsələn, en-US, ko-KR)",
-  "labelName": "Ad",
   "labelNote": "Qeyd",
   "labelPOS": "Nitq hissəsi",
-  "labelRole": "Rol",
   "labelSentence": "Cümlə",
   "labelSentenceCollection": "Cümlə kolleksiyası",
   "labelSentenceType": "Cümlə növü",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "İştirakçılar yüklənir...",
   "location": "Yer",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Giriş",
   "logout": "Çıxış",
   "logoutConfirmMessage": "Bu cihazdan çıxış etmək istəyirsiniz?",
   "logoutConfirmTitle": "Çıxış",
   "male": "Kişi",
-  "manageParticipants": "İştirakçıları idarə et",
   "manual": "Əl ilə giriş",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Material Məlumatları",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Mən",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Cihazdan Material İdxal Et",
   "menuHelp": "Kömək",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Mənim Cümlə Kolleksiyam",
   "myWordbook": "Mənim Söz Kitabım",
   "neutral": "neytral",
+  "newNotebookTitle": "Yeni qeyd dəftərinin adı",
   "newSubjectName": "Yeni Mövzu Adı",
   "next": "Sonrakı",
-  "noDialogueHistory": "Söhbət tarixçəsi yoxdur.",
-  "noInternetWarningMic": "İnternet bağlantısı yoxdur. Oflayn rejimdə səs tanıma mümkün olmaya bilər.",
-  "noInternetWarningTranslate": "İnternet bağlantısı yoxdur. Oflayn rejimdə tərcümə funksiyası istifadə edilə bilməz. Təkrar rejimindən istifadə edin.",
+  "noDataForLanguage": "Seçdiyiniz dil üçün təlim materialları lokal verilənlər bazasında mövcud deyil. Materialları yükləyin və ya başqa dil seçin.",
   "noMaterialsInCategory": "Bu kateqoriyada material yoxdur.",
-  "noParticipantsFound": "Qeydiyyatdan keçmiş iştirakçı yoxdur.",
   "noRecords": "Seçilmiş dildə öyrənmə qeydləri yoxdur",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Səs aşkarlanmadı",
   "notSelected": "- Seçilməyib -",
+  "noteGuidance": "Daha dəqiq tərcümə üçün əlavə təfərrüatları daxil etdiyiniz yer",
   "onlineLibraryCheckInternet": "İnternet bağlantınızı yoxlayın və ya sonra yenidən cəhd edin.",
   "onlineLibraryLoadFailed": "Materialları yükləmək alınmadı.",
   "onlineLibraryNoMaterials": "Material yoxdur.",
-  "participantDeleted": "İştirakçı silindi.",
-  "participantRename": "İştirakçının Adını Dəyişdirin",
-  "partner": "Tərəfdaş",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Tərəfdaş rejimi",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Parametrləri aç",
   "password": "Şifrə",
-  "passwordTooShort": "Şifrə 6 simvoldan az olmamalıdır.",
+  "passwordTooShort": "Şifrə çox qısadır",
   "perfect": "Mükəmməldir!",
-  "personaFriend": "Yerli Dost",
-  "personaGuide": "Səyahət Bələdçisi",
-  "personaTeacher": "İngilis Dili Müəllimi",
+  "pickGallery": "Qalereyadan seçin",
   "playAgain": "Yenidən Oyna",
   "playbackFailed": "Səsləndirmə Uğursuz oldu: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Sıfat",
   "posAdverb": "Zərf",
+  "posArticle": "Artikl",
   "posConjunction": "Bağlayıcı",
   "posInterjection": "Nida",
   "posNoun": "İsim",
+  "posParticle": "Ədat",
   "posPreposition": "Ön söz",
   "posPronoun": "Əvəzlik",
   "posVerb": "Fiil",
   "practiceModeTitle": "Məşq",
   "practiceWordsOnly": "Yalnız Sözləri Məşq Edin",
+  "processing": "Emal olunur...",
   "progress": "Gedişat: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Menyu > Dil Parametrləri bölməsində əvvəlcə öz dilinizi və öyrənmək istədiyiniz dili seçin.",
+  "quickStartStep1Title": "1. Dili təyin edin",
+  "quickStartStep2Desc": "Öz təlim kartlarınızı yaratmaq üçün: Giriş (mikrofon/klaviatura) -> Tərcümə -> Saxla sırasını izləyin.",
+  "quickStartStep2Title": "2. Əsas axın",
+  "quickStartStep3Desc": "Çatda məşq edin və Tələffüz Məşqi tabında mətni oxuyaraq özünüz tələffüz etməklə məşq edin.",
+  "quickStartStep3Title": "3. Rejimlərdən istifadə edin",
   "recentNItems": "Son {count} ədədə baxın",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Tərcümə tələb et",
   "reset": "Sıfırla",
   "resetPracticeHistory": "Məşq Tarixini Sıfırla",
   "retry": "Yenidən cəhd edilsin?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Təkrar",
-  "roleAi": "Süni intellekt",
-  "roleThirdParty": "Üçüncü tərəf",
-  "roleUser": "İstifadəçi",
   "save": "Saxla",
+  "saveAsSentence": "Cümlə olaraq saxla",
+  "saveAsWord": "Söz olaraq saxla",
   "saveData": "Məlumatları Saxla",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Skan tarixçəsinə saxla",
   "saveTranslationsFromSearch": "Axtarış rejimindən tərcümələri saxlayın",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Skan etmək üçün bir şəkil seçin",
+  "scanLabel": "Skan et",
   "score": "Dəqiqlik: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Nitq Hissəsini Seçin",
-  "selectParticipants": "İştirakçıları seç",
-  "selectSentenceType": "Cümlə Növünü Seçin",
   "selectStudyMaterial": "Öyrənmə Materialını Seçin",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Cümlə",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Qeydiyyat",
-  "similarTextFound": "Bənzər mətn tapıldı",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Burax",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Mənbə:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Mənbə Dili",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "sourceLanguageLabel": "Mənim Dilim (Mənbə)",
-  "speakNow": "İndi Danış!",
-  "speaker": "Danışan",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Danışanı seç",
-  "speakingPractice": "Danışıq Məşqi",
-  "startChat": "Söhbətə başla",
-  "startPractice": "Məşqə Başlayın",
-  "startTutorial": "Təlimata Başlayın",
-  "startWarning": "Diqqət",
+  "simplifiedGuidance": "Gündəlik söhbətləri anında xarici dilə çevirin! Talkie dil həyatınızı qeyd edir.",
+  "sourceLanguageLabel": "Mənim dilim",
+  "startTutorial": "Təlimata başla",
   "startsWith": "Başlayan Hərflər",
-  "statusCheckEmail": "Zəhmət olmasa, identifikasiyanı tamamlamaq üçün e-poçtunuzu yoxlayın.",
+  "statusCheckEmail": "E-poçtunuzu yoxlayın",
   "statusDownloading": "Yüklənir: {name}...",
-  "statusImportFailed": "İdxal uğursuz oldu: {error}",
-  "statusImportSuccess": "{name} idxalı tamamlandı",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Giriş ləğv edildi.",
-  "statusLoginFailed": "Giriş uğursuz oldu: {error}",
-  "statusLoginSuccess": "Giriş uğurlu oldu.",
-  "statusLogoutSuccess": "Çıxış edildi.",
-  "statusSignUpFailed": "Qeydiyyat uğursuz oldu: {error}",
-  "statusSigningUp": "Qeydiyyatdan keçilir...",
-  "stopPractice": "Məşqi Dayandırın",
-  "studyComplete": "Öyrənmə Tamamlandı",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Öyrənmə Qeydləri ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "progress": {
+        "type": "String",
+        "example": "50"
       }
     }
   },
+  "statusImportFailed": "İdxal uğursuz oldu: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} idxalı tamamlandı",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Giriş alınmadı: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Giriş edildi",
+  "statusLogoutSuccess": "Çıxış edildi",
+  "statusRequestFailed": "Tərcümə tələbi uğursuz oldu: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Tərcümə tələbi tamamlandı.",
+  "stopPractice": "Məşqi Dayandırın",
+  "studyLangNotFoundDesc": "Seçdiyiniz material hal-hazırda təyin edilmiş öyrənmə dilinizi ({targetLang}) dəstəkləmir və yerli olaraq saxlanıla bilməz. Tərcümə tələb etmək istəyirsiniz?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Öyrənmə dili dəstəklənmir",
   "styleFormal": "Rəsmi",
   "styleInformal": "Qeyri-rəsmi",
   "stylePolite": "Nəzakətli",
   "styleSlang": "Jarqon/argo",
-  "subject": "Başlıq:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Dilləri Dəyişdir",
-  "switchToAi": "AI Rejiminə Keç",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Tərəfdaş Rejiminə Keç",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Məlumat sinxronizasiya olunur...",
-  "tabConversation": "Söhbət",
   "tabReview": "Təkrar ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Azalt",
   "tooltipIncrease": "Artır",
   "tooltipSearch": "Axtarış",
+  "tooltipSettingsConfirm": "Parametrləri təsdiqlə",
   "tooltipSpeaking": "Danışmaq",
   "tooltipStudyReview": "Öyrənmə + Təkrar",
   "totalRecords": "Cəmi {count} qeyd (Hamısına Bax)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "İndi tərcümə et",
   "translating": "Tərcümə Edilir...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Tərcümə dili",
   "translationLimitExceeded": "Tərcümə limiti aşıldı",
   "translationLimitMessage": "Gündəlik pulsuz tərcümələrinizdən (5 dəfə) istifadə etdiniz.\\n\\nReklama baxaraq dərhal 5 dəfə doldurmaq istəyirsiniz?",
   "translationLoaded": "Saxlanılan tərcümə yükləndi",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Tərcümə sayı 5 dəfə dolduruldu!",
+  "translationResult": "Tərcümə nəticəsi",
   "translationResultHint": "Tərcümə nəticəsi - redaktə edilə bilər",
   "tryAgain": "Yenidən Cəhd Edin",
-  "tutorialAiChatDesc": "Süni intellekt personajları ilə real söhbət bacarıqlarınızı məşq edin.",
-  "tutorialAiChatTitle": "Süni İntellekt Söhbəti",
+  "ttsInstallGuide": "Zəhmət olmasa, Android Parametrləri > Google TTS bölməsindən müvafiq dil məlumatlarını quraşdırın.",
+  "ttsMissing": "Bu dil üçün mətn-nitq mühərriki cihazda quraşdırılmayıb.",
+  "ttsUnsupportedNatively": "Bu cihazda bu dil üçün doğma səs dəstəyi yoxdur.",
   "tutorialContextDesc": "Eyni cümlə olsa belə, vəziyyəti (məsələn, səhər, axşam) qeyd etsəniz, onu ayrı saxlayabilirsiniz.",
   "tutorialContextTitle": "Vəziyyət/Məzmun Etiketi",
   "tutorialLangSettingsDesc": "Tərcümə etmək üçün mənbə və hədəf dilləri təyin edin.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Daxil edilmiş mətni tərcümə edin.",
   "tutorialTransTitle": "Tərcümə Et",
   "typeExclamation": "Nida",
+  "typeIdiom": "İdiom",
   "typeImperative": "Əmr",
+  "typeProverb": "Atalar sözü",
   "typeQuestion": "Sual",
   "typeStatement": "Bildiriş",
   "usageLimitTitle": "Limitə Çatdı",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Onlayn Bələdçiyə Bax",
   "voluntaryTranslations": "Könüllü tərcümələr",
   "watchAdAndRefill": "Reklama baxaraq doldurun (+5 dəfə)",
+  "welcomeButton": "Başla",
+  "welcomeDesc": "Talkie-yə xoş gəlmisiniz! Dünyada 80-dən çox dili 100% sədaqətlə dəstəkləyirik və yeni premium 3D dizaynı və optimallaşdırılmış performansı ilə mükəmməl öyrənmə təcrübəsi təqdim edirik.",
+  "welcomeTitle": "Talkie-yə xoş gəlmisiniz!",
   "word": "Söz",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Düşmənlər gəlmədən sözləri deyərək bazanı müdafiə edin.",
   "wordDefenseTitle": "Söz Müdafiəsi",
   "wordModeLabel": "Söz Rejimi",
-  "yourPronunciation": "Mənim Tələffüzüm",
-  "ttsUnsupportedNatively": "Bu cihazda bu dil üçün doğma səs dəstəyi yoxdur.",
-  "homeTab": "Tərcümə",
-  "welcomeTitle": "Talkie-yə xoş gəlmisiniz!",
-  "welcomeDesc": "Talkie-yə xoş gəlmisiniz! Dünyada 80-dən çox dili 100% sədaqətlə dəstəkləyirik və yeni premium 3D dizaynı və optimallaşdırılmış performansı ilə mükəmməl öyrənmə təcrübəsi təqdim edirik.",
-  "welcomeButton": "Başla",
-  "labelDetails": "Ətraflı parametrlər",
-  "translationResult": "Tərcümə nəticəsi",
-  "inputContent": "Daxil edilən məzmun",
-  "translateNow": "İndi tərcümə et",
-  "tooltipSettingsConfirm": "Parametrləri təsdiqlə",
-  "hintNoteExample": "Nümunə: Kontekst, omonimlər və s.",
-  "hintTagExample": "Nümunə: Biznes, Səyahət...",
-  "addNew": "Yeni əlavə et",
-  "newNotebookTitle": "Yeni qeyd dəftərinin adı",
-  "enterNameHint": "Ad daxil edin",
-  "add": "Əlavə et",
-  "openSettings": "Parametrləri aç",
-  "helpNotebook": "Tərcümə olunmuş nəticələri saxlamaq üçün qovluq seçin.",
-  "helpNote": "Sözün mənasını, nümunələrini və ya vəziyyətlərini sərbəst şəkildə qeyd edin.",
-  "helpTag": "Sonra təsnif etmək və ya axtarmaq üçün açar sözlər daxil edin.",
-  "requestTranslation": "Tərcümə tələb et",
-  "statusRequestSuccess": "Tərcümə tələbi tamamlandı.",
-  "statusRequestFailed": "Tərcümə tələbi uğursuz oldu: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Öyrənmə dili dəstəklənmir",
-  "studyLangNotFoundDesc": "Seçdiyiniz material hal-hazırda təyin edilmiş öyrənmə dilinizi ({targetLang}) dəstəkləmir və yerli olaraq saxlanıla bilməz. Tərcümə tələb etmək istəyirsiniz?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Dili təyin edin",
-  "quickStartStep1Desc": "Menyu > Dil Parametrləri bölməsində əvvəlcə öz dilinizi və öyrənmək istədiyiniz dili seçin.",
-  "quickStartStep2Title": "2. Əsas axın",
-  "quickStartStep2Desc": "Öz təlim kartlarınızı yaratmaq üçün: Giriş (mikrofon/klaviatura) -> Tərcümə -> Saxla sırasını izləyin.",
-  "quickStartStep3Title": "3. Rejimlərdən istifadə edin",
-  "quickStartStep3Desc": "Çatda məşq edin və Tələffüz Məşqi tabında mətni oxuyaraq özünüz tələffüz etməklə məşq edin.",
-  "noteGuidance": "Daha dəqiq tərcümə üçün əlavə təfərrüatları daxil etdiyiniz yer"
+  "yourPronunciation": "Mənim Tələffüzüm"
 }

@@ -9,52 +9,19 @@ class AppLocalizationsSw extends AppLocalizations {
   AppLocalizationsSw([String locale = 'sw']) : super(locale);
 
   @override
-  String get basicWords => 'Hifadhi ya Msingi ya Maneno';
-
-  @override
-  String get inputLanguage => 'Lugha ya kuingiza';
-
-  @override
-  String get translationLanguage => 'Lugha ya kutafsiri';
-
-  @override
-  String get simplifiedGuidance =>
-      'Badilisha mazungumzo ya kila siku mara moja katika lugha ya kigeni! Talkie inarekodi maisha yako ya lugha.';
-
-  @override
-  String get noDataForLanguage =>
-      'Hakuna data ya kujifunza kwa lugha uliyochagua kwenye DB ya ndani. Tafadhali pakua data au chagua lugha nyingine.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Ghairi';
-
-  @override
   String get accuracy => 'Usahihi';
-
-  @override
-  String get ttsMissing =>
-      'Injini ya sauti ya lugha hii haijasakinishwa kwenye kifaa chako.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Tafadhali sakinisha data ya lugha husika katika Mipangilio ya Android > Google TTS.';
 
   @override
   String get adLoading => 'Inapakia tangazo. Tafadhali jaribu tena baadaye.';
 
   @override
-  String get addNewSubject => 'Ongeza jina jipya';
+  String get add => 'Ongeza';
 
   @override
-  String get addParticipant => 'Ongeza Mshiriki';
+  String get addNew => 'Ongeza Mpya';
+
+  @override
+  String get addNewSubject => 'Ongeza jina jipya';
 
   @override
   String get addTagHint => 'Ongeza lebo...';
@@ -87,6 +54,12 @@ class AppLocalizationsSw extends AppLocalizations {
   String get basicWordRepository => 'Hifadhi ya Maneno ya Msingi';
 
   @override
+  String get basicWords => 'Hifadhi ya Msingi ya Maneno';
+
+  @override
+  String get cancel => 'Ghairi';
+
+  @override
   String get caseObject => 'Lengo';
 
   @override
@@ -102,61 +75,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get caseSubject => 'Nominative';
 
   @override
-  String get chatAiChat => 'Ongea';
-
-  @override
-  String get chatAllConversations => 'Mazungumzo Yote';
-
-  @override
-  String get chatChoosePersona => 'Chagua Mhusika';
-
-  @override
-  String get chatEndMessage => 'Unataka kumaliza gumzo?';
-
-  @override
-  String get chatEndTitle => 'Maliza na Uhifadhi Gumzo';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Gumzo Limegoma: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Dondoo la Mazungumzo ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Historia ya Gumzo';
-
-  @override
-  String get chatNew => 'Gumzo Jipya';
-
-  @override
-  String get chatNewChat => 'Gumzo Jipya';
-
-  @override
-  String get chatNoConversations => 'Hakuna mazungumzo bado';
-
-  @override
-  String get chatSearchHint => 'Tafuta kwa jina la mazungumzo...';
-
-  @override
-  String get chatNoteSearchHint => 'Tafuta kwa maelezo...';
-
-  @override
-  String get chatSaveAndExit => 'Hifadhi na Uondoke';
-
-  @override
-  String get chatStartNewPrompt => 'Anza mazungumzo mapya kwa mazoezi!';
-
-  @override
-  String get chatTypeHint => 'Andika ujumbe...';
-
-  @override
-  String get chatUntitled => 'Gumzo Lisilo na Kichwa';
-
-  @override
   String get checking => 'Inaangalia...';
 
   @override
@@ -167,13 +85,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Una uhakika unataka kufuta rekodi hii?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Unataka kufuta mazungumzo haya?\nHazitaweza kurejeshwa.';
-
-  @override
-  String get confirmDeleteParticipant => 'Unataka kumfuta mshiriki huyu?';
 
   @override
   String get contextTagHint =>
@@ -213,23 +124,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get deleteRecord => 'Futa Rekodi';
 
   @override
-  String get dialogueQuestDesc =>
-      'Fanya mazoezi ya mazungumzo kupitia mchezo wa kuigiza. Chagua jibu linalofaa na useme.';
-
-  @override
-  String get dialogueQuestTitle => 'Jitihada za Mazungumzo';
-
-  @override
-  String get disambiguationPrompt => 'Ungependa itafsiriwe kwa maana gani?';
-
-  @override
-  String get disambiguationTitle => 'Chagua maana';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Huna akaunti?';
-
-  @override
-  String get editParticipant => 'Hariri Mshiriki';
 
   @override
   String get email => 'Barua pepe';
@@ -237,6 +135,9 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Barua pepe hii tayari inatumika. Tafadhali ingia au tumia urejeshaji wa nywila.';
+
+  @override
+  String get enterNameHint => 'Ingiza jina';
 
   @override
   String get enterNewSubjectName => 'Ingiza jina jipya';
@@ -276,6 +177,9 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get errors => 'Makosa:';
+
+  @override
+  String get extractedText => 'Matini yaliyotambuliwa';
 
   @override
   String get female => 'Kike';
@@ -335,12 +239,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get gender => 'Jinsia';
 
   @override
-  String get labelFilterMaterial => 'Nyaraka';
-
-  @override
-  String get labelFilterTag => 'Lebo';
-
-  @override
   String get generalTags => 'Tagi za jumla';
 
   @override
@@ -353,18 +251,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get googleContinue => 'Endelea na Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Ingiza seti nzima ya mazungumzo kutoka kwa faili ya JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc => 'Kwa kuleta katika Hali 3, unda JSON:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Mazungumzo';
 
   @override
   String get helpJsonTypeSentence => 'Sentensi';
@@ -397,12 +284,12 @@ class AppLocalizationsSw extends AppLocalizations {
       '• Chagua: Chagua kifurushi\n• Muda: [-] [+] muda wa kusubiri (3s-60s)\n• Anza/Simama: Dhibiti kikao\n• Zungumza: Sikiliza na rudia\n• Alama: Usahihi (0-100)\n• Jaribu tena: Kitufe ikiwa sauti haigunduliwi';
 
   @override
-  String get helpModeChatDesc =>
-      'Fanya mazoezi ya mazungumzo halisi kwa kuzungumza na AI.';
+  String get helpNote =>
+      'Andika maana za maneno, mifano, au hali mbalimbali kwa uhuru.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Gumzo la AI: Fanya mazoezi ya mazungumzo ya vitendo na mtu kupitia menyu ya \'Gumzo\' kwenye upau wa kichupo cha chini\n• Mpangilio wa mtu: Bainisha kwa uhuru jinsia, jina na msimbo wa lugha wa mhusika mwingine\n• Hali ya GPS: Tambua eneo langu la sasa na upendekeze mada za mazungumzo zinazofaa eneo\n• Lugha 2: Majibu ya AI yanaonyeshwa pamoja na tafsiri ili kuongeza athari ya kujifunza\n• Usimamizi wa rekodi: Chuja historia ya mazungumzo ya zamani na uhifadhi ujumbe maalum kama nyenzo za kujifunza wakati wa mazungumzo';
+  String get helpNotebook =>
+      'Chagua folda ya kuhifadhi matokeo yaliyotafsiriwa.';
 
   @override
   String get helpTabJson => 'Muundo wa JSON';
@@ -417,6 +304,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get helpTabTour => 'Ziara';
 
   @override
+  String get helpTag => 'Weka maneno muhimu ya kuainisha au kutafuta baadaye.';
+
+  @override
   String get helpTitle => 'Msaada & Mwongozo';
 
   @override
@@ -425,6 +315,16 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get hide => 'Ficha';
+
+  @override
+  String get hintNoteExample =>
+      'Mfano: Maelezo ya muktadha, maneno yenye maana nyingi, nk.';
+
+  @override
+  String get hintTagExample => 'Mfano: Biashara, safari... ';
+
+  @override
+  String get homeTab => 'Tafsiri';
 
   @override
   String importAdded(int count) {
@@ -437,23 +337,6 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Nyenzo iliyo na kichwa sawa tayari ipo. Tafadhali badilisha kichwa na ujaribu tena.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -469,6 +352,11 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Imefaulu kuleta faili $files na vitu $entries.';
+  }
+
+  @override
   String get importJsonFile => 'Leta JSON';
 
   @override
@@ -480,12 +368,30 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Faili moja ya JSON';
+
+  @override
+  String get importSourceFolder => 'Folda (muundo wa maktaba kwa kila lugha)';
+
+  @override
+  String get importSourceTitle => 'Chagua chanzo cha kuleta';
+
+  @override
+  String get importSourceZip => 'Faili ya ZIP (folda iliyobanwa)';
+
+  @override
   String importTotal(int count) {
     return 'Jumla: $count';
   }
 
   @override
   String get importing => 'inaleta...';
+
+  @override
+  String get inputContent => 'Ingiza Maandishi';
+
+  @override
+  String get inputLanguage => 'Lugha ya kuingiza';
 
   @override
   String get inputModeTitle => 'Uingizaji';
@@ -502,19 +408,22 @@ class AppLocalizationsSw extends AppLocalizations {
   String get kakaoContinue => 'Endelea na Kakao';
 
   @override
-  String get labelLangCode => 'Msimbo wa Lugha (mfano: en-US, ko-KR)';
+  String get labelDetails => 'Mipangilio Zaidi';
 
   @override
-  String get labelName => 'Jina';
+  String get labelFilterMaterial => 'Nyaraka';
+
+  @override
+  String get labelFilterTag => 'Lebo';
+
+  @override
+  String get labelLangCode => 'Msimbo wa Lugha (mfano: en-US, ko-KR)';
 
   @override
   String get labelNote => 'Dokezo';
 
   @override
   String get labelPOS => 'Aina ya maneno';
-
-  @override
-  String get labelRole => 'Nafasi';
 
   @override
   String get labelSentence => 'Sentensi';
@@ -565,9 +474,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get listening => 'Inasikiliza...';
 
   @override
-  String get loadingParticipants => 'Inapakia Washiriki...';
-
-  @override
   String get location => 'Mahali';
 
   @override
@@ -586,9 +492,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get male => 'Kiume';
 
   @override
-  String get manageParticipants => 'Simamia Washiriki';
-
-  @override
   String get manual => 'Uingizaji Kiotomatiki';
 
   @override
@@ -596,9 +499,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get materialInfo => 'Maelezo ya nyenzo';
-
-  @override
-  String get me => 'Mimi';
 
   @override
   String get menuDeviceImport => 'Ingiza Nyenzo kutoka kwa Kifaa';
@@ -666,27 +566,20 @@ class AppLocalizationsSw extends AppLocalizations {
   String get neutral => 'Si upande wowote';
 
   @override
+  String get newNotebookTitle => 'Jina la Daftari Jipya';
+
+  @override
   String get newSubjectName => 'Jina jipya la mada/sentensi';
 
   @override
   String get next => 'Inayofuata';
 
   @override
-  String get noDialogueHistory => 'Hakuna historia ya mazungumzo.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Hakuna muunganisho wa intaneti. Utambuzi wa sauti unaweza usiwezekane nje ya mtandao.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Hakuna muunganisho wa intaneti. Kitendaji cha tafsiri hakipatikani nje ya mtandao. Tafadhali tumia hali ya kukagua.';
+  String get noDataForLanguage =>
+      'Hakuna data ya kujifunza kwa lugha uliyochagua kwenye DB ya ndani. Tafadhali pakua data au chagua lugha nyingine.';
 
   @override
   String get noMaterialsInCategory => 'Hakuna nyenzo katika kitengo hiki.';
-
-  @override
-  String get noParticipantsFound => 'Hakuna washiriki waliosajiliwa.';
 
   @override
   String get noRecords => 'Hakuna rekodi kwa lugha iliyochaguliwa';
@@ -707,6 +600,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get notSelected => '- Haijachaguliwa -';
 
   @override
+  String get noteGuidance =>
+      'Ambapo unaingiza maelezo ya ziada kwa tafsiri sahihi zaidi';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Tafadhali angalia muunganisho wako wa intaneti au ujaribu tena baadaye.';
 
@@ -717,16 +614,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Hakuna nyenzo.';
 
   @override
-  String get participantDeleted => 'Mshiriki amefutwa.';
-
-  @override
-  String get participantRename => 'Badilisha Jina la Mshiriki';
-
-  @override
-  String get partner => 'Mshirika';
-
-  @override
-  String get partnerMode => 'Hali ya Mshirika';
+  String get openSettings => 'Fungua Mipangilio';
 
   @override
   String get password => 'Nenosiri';
@@ -738,13 +626,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get perfect => 'Nzuri sana!';
 
   @override
-  String get personaFriend => 'Rafiki Mwenyeji';
-
-  @override
-  String get personaGuide => 'Mwongoza Watalii';
-
-  @override
-  String get personaTeacher => 'Mwalimu wa Kiingereza';
+  String get pickGallery => 'Chagua kutoka ghala';
 
   @override
   String get playAgain => 'Cheza Tena';
@@ -764,6 +646,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get posAdverb => 'Kielezi';
 
   @override
+  String get posArticle => 'Kihusishi';
+
+  @override
   String get posConjunction => 'Kiunganishi';
 
   @override
@@ -771,6 +656,9 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get posNoun => 'Nomino';
+
+  @override
+  String get posParticle => 'Kiambishi';
 
   @override
   String get posPreposition => 'Kihusishi';
@@ -788,9 +676,33 @@ class AppLocalizationsSw extends AppLocalizations {
   String get practiceWordsOnly => 'Fanya Mazoezi ya Maneno Tu';
 
   @override
+  String get processing => 'Inachakatwa...';
+
+  @override
   String progress(int current, int total) {
     return 'Maendeleo: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Nenda Menyu > Weka Lugha. Chagua lugha yako na lugha unayojifunza.';
+
+  @override
+  String get quickStartStep1Title => '1. Weka Lugha';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Unda kadi zako za kujifunzia kwa mpangilio huu: Ingiza (maikrofoni/kibodi) -> Tafsiri -> Hifadhi.';
+
+  @override
+  String get quickStartStep2Title => '2. Hatua za Msingi';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Fanya mazoezi kwa kupitia mazungumzo, na fanya mazoezi ya matamshi kwa kuangalia maandishi kwenye kichupo cha mazoezi ya matamshi.';
+
+  @override
+  String get quickStartStep3Title => '3. Tumia Njia Mbalimbali';
 
   @override
   String recentNItems(int count) {
@@ -815,6 +727,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get refresh => 'Onyesha upya';
 
   @override
+  String get requestTranslation => 'Omba Tafsiri';
+
+  @override
   String get reset => 'Weka Upya';
 
   @override
@@ -835,16 +750,13 @@ class AppLocalizationsSw extends AppLocalizations {
   String get reviewModeTitle => 'Kagua';
 
   @override
-  String get roleAi => 'Akili Bandia';
-
-  @override
-  String get roleThirdParty => 'Mtu wa Tatu';
-
-  @override
-  String get roleUser => 'Mtumiaji';
-
-  @override
   String get save => 'Hifadhi';
+
+  @override
+  String get saveAsSentence => 'Hifadhi kama sentensi';
+
+  @override
+  String get saveAsWord => 'Hifadhi kama neno';
 
   @override
   String get saveData => 'Hifadhi';
@@ -855,6 +767,9 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Hifadhi kwenye historia ya skani';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Hifadhi tafsiri kutoka kwa hali ya utafutaji';
 
@@ -863,6 +778,12 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get saving => 'Inahifadhi...';
+
+  @override
+  String get scanInstructions => 'Chagua picha ya kuchanganua';
+
+  @override
+  String get scanLabel => 'Changanua';
 
   @override
   String score(String score) {
@@ -909,16 +830,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get selectPOS => 'Chagua Sehemu ya Hotuba';
 
   @override
-  String get selectParticipants => 'Chagua Washiriki';
-
-  @override
-  String get selectSentenceType => 'Chagua Aina ya Sentensi';
-
-  @override
   String get selectStudyMaterial => 'Chagua Nyenzo';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Sentensi';
@@ -927,43 +839,14 @@ class AppLocalizationsSw extends AppLocalizations {
   String get signUp => 'Jisajili';
 
   @override
-  String get similarTextFound => 'Maandishi yanayofanana yamepatikana';
-
-  @override
-  String get skip => 'Ruka';
-
-  @override
-  String get source => 'Chanzo:';
-
-  @override
-  String get sourceLanguage => 'Lugha Chanzo';
+  String get simplifiedGuidance =>
+      'Badilisha mazungumzo ya kila siku mara moja katika lugha ya kigeni! Talkie inarekodi maisha yako ya lugha.';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => 'Sema Sasa!';
-
-  @override
-  String get speaker => 'Mzungumzaji';
-
-  @override
-  String get speakerSelect => 'Chagua Mzungumzaji';
-
-  @override
-  String get speakingPractice => 'Mazoezi ya Kuzungumza';
-
-  @override
-  String get startChat => 'Anza Gumzo';
-
-  @override
-  String get startPractice => 'Anza Mazoezi';
-
-  @override
   String get startTutorial => 'Anza Ziara';
-
-  @override
-  String get startWarning => 'Onyo';
 
   @override
   String get startsWith => 'Huanza na';
@@ -973,28 +856,22 @@ class AppLocalizationsSw extends AppLocalizations {
       'Tafadhali thibitisha barua pepe ili ukamilishe uthibitishaji.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Inapakua: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Imeshindwa Kuleta: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name Imekamilika Kuleta';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Kuingia kumeghairiwa.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Imeshindwa kuingia: $error';
   }
 
@@ -1005,23 +882,23 @@ class AppLocalizationsSw extends AppLocalizations {
   String get statusLogoutSuccess => 'Umeondoka.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Imeshindwa kusajili: $error';
+  String statusRequestFailed(String error) {
+    return 'Ombi la tafsiri halikufaulu: $error';
   }
 
   @override
-  String get statusSigningUp => 'Inasajili...';
+  String get statusRequestSuccess => 'Ombi lako la tafsiri limepokelewa.';
 
   @override
   String get stopPractice => 'Simamisha';
 
   @override
-  String get studyComplete => 'Imesomwa';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Nyenzo uliyochagua haiauni lugha ya kujifunzia uliyochagua ($targetLang), na haiwezi kuhifadhiwa. Je, ungependa kuomba tafsiri?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Rekodi ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Lugha ya kujifunzia haipatikani';
 
   @override
   String get styleFormal => 'Rasmi';
@@ -1036,22 +913,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get styleSlang => 'Mitaani';
 
   @override
-  String get subject => 'Somo:';
-
-  @override
   String get swapLanguages => 'Badilisha Lugha';
 
   @override
-  String get switchToAi => 'Badilisha kwenda Hali ya AI';
-
-  @override
-  String get switchToPartner => 'Badilisha kwenda Hali ya Mshirika';
-
-  @override
   String get syncingData => 'Inasawazisha data...';
-
-  @override
-  String get tabConversation => 'Mazungumzo';
 
   @override
   String tabReview(int count) {
@@ -1115,6 +980,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tooltipSearch => 'Tafuta';
 
   @override
+  String get tooltipSettingsConfirm => 'Thibitisha Mipangilio';
+
+  @override
   String get tooltipSpeaking => 'Kuzungumza';
 
   @override
@@ -1127,6 +995,9 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get translate => 'Tafsiri';
+
+  @override
+  String get translateNow => 'Tafsiri Sasa';
 
   @override
   String get translating => 'Inatafsiri...';
@@ -1143,6 +1014,9 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Lugha ya kutafsiri';
+
+  @override
   String get translationLimitExceeded => 'Umefikia kikomo cha tafsiri';
 
   @override
@@ -1156,6 +1030,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get translationRefilled => 'Hesabu ya tafsiri imejazwa tena mara 5!';
 
   @override
+  String get translationResult => 'Matokeo ya Tafsiri';
+
+  @override
   String get translationResultHint =>
       'Matokeo ya Tafsiri - Inaweza Kurekebishwa';
 
@@ -1163,11 +1040,16 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tryAgain => 'Jaribu tena';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Fanya mazoezi ya mazungumzo halisi na wahusika wa AI.';
+  String get ttsInstallGuide =>
+      'Tafadhali sakinisha data ya lugha husika katika Mipangilio ya Android > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'Ongea na AI';
+  String get ttsMissing =>
+      'Injini ya sauti ya lugha hii haijasakinishwa kwenye kifaa chako.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Matamshi ya sauti hayatumiki kiasili katika lugha hii kwenye mipangilio ya kifaa hiki.';
 
   @override
   String get tutorialContextDesc =>
@@ -1278,7 +1160,13 @@ class AppLocalizationsSw extends AppLocalizations {
   String get typeExclamation => 'Mshangao';
 
   @override
+  String get typeIdiom => 'Nahau';
+
+  @override
   String get typeImperative => 'Agizo';
+
+  @override
+  String get typeProverb => 'Methali';
 
   @override
   String get typeQuestion => 'Swali';
@@ -1293,6 +1181,11 @@ class AppLocalizationsSw extends AppLocalizations {
   String get useExistingText => 'Tumia Iliyopo';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Angalia Mwongozo wa Mtandaoni';
 
   @override
@@ -1300,6 +1193,16 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Tazama Tangazo na Ujazwe Tena (+5)';
+
+  @override
+  String get welcomeButton => 'Anza';
+
+  @override
+  String get welcomeDesc =>
+      'Karibu Talkie! Tunasaidia lugha zote 80+ ulimwenguni kwa uadilifu wa 100%, na tunakupa uzoefu kamili wa kujifunza na muundo mpya wa 3D wa premium na utendaji ulioboreshwa.';
+
+  @override
+  String get welcomeTitle => 'Karibu kwenye Talkie!';
 
   @override
   String get word => 'Neno';
@@ -1316,113 +1219,4 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Matamshi Yako';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Matamshi ya sauti hayatumiki kiasili katika lugha hii kwenye mipangilio ya kifaa hiki.';
-
-  @override
-  String get homeTab => 'Tafsiri';
-
-  @override
-  String get welcomeTitle => 'Karibu kwenye Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Karibu Talkie! Tunasaidia lugha zote 80+ ulimwenguni kwa uadilifu wa 100%, na tunakupa uzoefu kamili wa kujifunza na muundo mpya wa 3D wa premium na utendaji ulioboreshwa.';
-
-  @override
-  String get welcomeButton => 'Anza';
-
-  @override
-  String get labelDetails => 'Mipangilio Zaidi';
-
-  @override
-  String get translationResult => 'Matokeo ya Tafsiri';
-
-  @override
-  String get inputContent => 'Ingiza Maandishi';
-
-  @override
-  String get translateNow => 'Tafsiri Sasa';
-
-  @override
-  String get tooltipSettingsConfirm => 'Thibitisha Mipangilio';
-
-  @override
-  String get hintNoteExample =>
-      'Mfano: Maelezo ya muktadha, maneno yenye maana nyingi, nk.';
-
-  @override
-  String get hintTagExample => 'Mfano: Biashara, safari... ';
-
-  @override
-  String get addNew => 'Ongeza Mpya';
-
-  @override
-  String get newNotebookTitle => 'Jina la Daftari Jipya';
-
-  @override
-  String get enterNameHint => 'Ingiza jina';
-
-  @override
-  String get add => 'Ongeza';
-
-  @override
-  String get openSettings => 'Fungua Mipangilio';
-
-  @override
-  String get helpNotebook =>
-      'Chagua folda ya kuhifadhi matokeo yaliyotafsiriwa.';
-
-  @override
-  String get helpNote =>
-      'Andika maana za maneno, mifano, au hali mbalimbali kwa uhuru.';
-
-  @override
-  String get helpTag => 'Weka maneno muhimu ya kuainisha au kutafuta baadaye.';
-
-  @override
-  String get requestTranslation => 'Omba Tafsiri';
-
-  @override
-  String get statusRequestSuccess => 'Ombi lako la tafsiri limepokelewa.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Ombi la tafsiri halikufaulu: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Lugha ya kujifunzia haipatikani';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Nyenzo uliyochagua haiauni lugha ya kujifunzia uliyochagua ($targetLang), na haiwezi kuhifadhiwa. Je, ungependa kuomba tafsiri?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Weka Lugha';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Nenda Menyu > Weka Lugha. Chagua lugha yako na lugha unayojifunza.';
-
-  @override
-  String get quickStartStep2Title => '2. Hatua za Msingi';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Unda kadi zako za kujifunzia kwa mpangilio huu: Ingiza (maikrofoni/kibodi) -> Tafsiri -> Hifadhi.';
-
-  @override
-  String get quickStartStep3Title => '3. Tumia Njia Mbalimbali';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Fanya mazoezi kwa kupitia mazungumzo, na fanya mazoezi ya matamshi kwa kuangalia maandishi kwenye kichupo cha mazoezi ya matamshi.';
-
-  @override
-  String get noteGuidance =>
-      'Ambapo unaingiza maelezo ya ziada kwa tafsiri sahihi zaidi';
 }

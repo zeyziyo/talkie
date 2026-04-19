@@ -1,32 +1,10 @@
 {
   "@@locale": "cy",
-  "basicWords": "Storio geiriau sylfaenol",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Iaith Mewnbwn",
-  "translationLanguage": "Iaith Cyfieithu",
-  "simplifiedGuidance": "Trawsnewidiwch sgyrsiau bob dydd yn syth i iaith dramor! Bydd Talkie yn cofnodi eich bywyd iaith.",
-  "noDataForLanguage": "Nid oes unrhyw ddata dysgu ar gyfer yr iaith a ddewiswyd yn y DB lleol. Lawrlwythwch y data neu dewiswch iaith arall.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Canslo",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Cywirdeb",
-  "ttsMissing": "Nid yw injan lleferydd ar gyfer yr iaith hon wedi'i gosod ar eich dyfais.",
-  "ttsInstallGuide": "Ewch i Gosodiadau Android > Google TTS a gosod data'r iaith honno.",
   "adLoading": "Wrthi'n llwytho hysbyseb. Ceisiwch eto yn nes ymlaen.",
+  "add": "Ychwanegu",
+  "addNew": "Ychwanegu Newydd",
   "addNewSubject": "Ychwanegu teitl newydd",
-  "addParticipant": "Ychwanegu Cyfranogwr",
   "addTagHint": "Ychwanegu tag...",
   "alreadyHaveAccount": "Oes gennych chi gyfrif yn barod?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Storio geiriau sylfaenol",
+  "basicWords": "Storio geiriau sylfaenol",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Canslo",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Gwrthrychol",
   "casePossessive": "Meddiannol",
   "casePossessivePronoun": "Rhagenw Meddiannol",
   "caseReflexive": "Atblygol",
   "caseSubject": "Enwebiol",
-  "chatAiChat": "Sgwrsio",
-  "chatAllConversations": "Pob sgwrs",
-  "chatChoosePersona": "Dewis Persona",
-  "chatEndMessage": "A ydych yn siŵr eich bod am derfynu'r sgwrs?",
-  "chatEndTitle": "Terfynu a chadw sgwrs",
-  "chatFailed": "Methu sgwrsio: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Detholiad sgwrsio ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Hanes Sgwrs",
-  "chatNew": "Sgwrs Newydd",
-  "chatNewChat": "Sgwrs Newydd",
-  "chatNoConversations": "Dim sgyrsiau eto",
-  "chatSearchHint": "Chwilio yn ôl teitl sgwrs...",
-  "chatNoteSearchHint": "Chwilio mewn nodiadau...",
-  "chatSaveAndExit": "Cadw ac Allgofnodi",
-  "chatStartNewPrompt": "Dechreuwch sgwrs newydd i ymarfer!",
-  "chatTypeHint": "Teipiwch neges...",
-  "chatUntitled": "Sgwrs ddi-deitl",
   "checking": "Gwirio...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Ydych chi'n siŵr eich bod am ddileu'r sgwrs hon?\nNi ellir adfer sgyrsiau sydd wedi'u dileu.",
-  "confirmDeleteParticipant": "Ydych chi'n siŵr eich bod am ddileu'r cyfranogwr hwn?",
   "contextTagHint": "Ysgrifennwch y sefyllfa i'w gwneud hi'n haws i'w gwahaniaethu yn ddiweddarach",
   "contextTagLabel": "Cyd-destun / Seiliau (Dewisol) - E.e.: Cyfarchiad bore, Ffurfioldeb",
   "copiedToClipboard": "Wedi'i gopïo i'r clipfwrdd!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Ymarfer sgwrsio trwy berfformio sefyllfa. Dewiswch yr ateb cywir a'i ddweud.",
-  "dialogueQuestTitle": "Cwest Sgwrs",
-  "disambiguationPrompt": "Pa ystyr hoffech chi gyfieithu iddo?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Dewis ystyr",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Nid oes gennych gyfrif?",
-  "editParticipant": "Golygu Cyfranogwr",
   "email": "E-bost",
   "emailAlreadyInUse": "Mae'r e-bost hwn eisoes yn bodoli. Mewngofnodwch neu defnyddiwch adfer cyfrinair.",
+  "enterNameHint": "Rhowch enw",
   "enterNewSubjectName": "Rhowch deitl newydd",
   "enterSentenceHint": "Teipiwch frawddeg...",
   "enterTextHint": "Rhowch y testun i'w gyfieithu",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Testun wedi'i echdynnu",
   "female": "Benyw",
   "file": "Ffeil:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Modd Gêm",
   "gameOver": "Gêm Drosodd",
   "gender": "Rhyw",
-  "labelFilterMaterial": "Deunyddiau",
-  "labelFilterTag": "Tagiau",
   "generalTags": "Tagiau Cyffredinol",
   "getMaterials": "Cael Deunyddiau",
   "good": "Da",
   "googleContinue": "Parhau gyda Google",
-  "helpDialogueImportDesc": "Mewnforio set sgwrs gyfan fel ffeil JSON.",
-  "helpDialogueImportDetails": "• Strwythur JSON: defnyddiwch arae `dialogues` yn lle `entries`\n• Adferiad Awtomatig: mae teitlau sgwrs, personâu a threfn negeseuon yn cael eu hadfer.\n• Lleoliad: mae sgyrsiau wedi'u mewnforio yn ymddangos yn y tab 'Hanes' yn y modd Sgwrs AI.",
   "helpJsonDesc": "Dilynwch y fformat canlynol i fewnforio deunyddiau astudio i ffeil JSON i'w defnyddio yn Mode 3:",
-  "helpJsonTypeDialogue": "Deialog",
   "helpJsonTypeSentence": "Brawddeg",
   "helpJsonTypeWord": "Gair",
   "helpMode1Desc": "Dechreuwch ddysgu iaith yn y ffordd fwyaf greddfol gyda'r meicroffon 3D premiwm ac eiconau bysellfwrdd mawr.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Dewis llyfr nodiadau: Defnyddiwch y ddewislen (⋮) ar y dde uchaf i ddewis 'Dewis Llyfr Nodiadau Astudio' neu 'Llyfrgell Ddigidol'\n• Fflipio cerdyn: Gwiriwch y cyfieithiad gyda 'Dangos/Cuddio'\n• Gwrando: Chwarae ynganiad gyda'r eicon siaradwr\n• Astudiaeth wedi'i chwblhau: Wedi'i farcio fel wedi'i chwblhau gyda marc siec (V)\n• Dileu: Pwyswch a dal cerdyn (Clic Hir) i ddileu'r cofnod\n• Chwilio a hidlo: Cefnogaeth bar chwilio (chwilio craff amser real) a thagiau, hidlwyr llythrennau cychwynnol",
   "helpMode3Desc": "Ymarferwch eich ynganiad trwy wrando ar frawddeg ac yna'i hailadrodd (Cysgodi).",
   "helpMode3Details": "• Dewis Deunydd: dewiswch y casgliad deunydd i'w astudio\n• Gosod Cyfwng: addaswch yr amser aros rhwng brawddegau gyda botymau [-] [+] (3 eiliad i 60 eiliad)\n• Dechrau/Stopio: rheoli sesiwn gysgodi\n• Siarad: gwrando ar lais a'i ailadrodd\n• Adborth: sgôr cywirdeb (0-100) a dangos lliwiau\n• Amodau Chwilio: hidlo targedau ymarfer yn ôl tagiau, eitemau diweddar, a llythrennau cyntaf",
-  "helpModeChatDesc": "Ymarferwch sgiliau sgwrsio go iawn trwy sgwrsio â persona AI.",
-  "helpModeChatDetails": "• Sgwrs AI: Ymarfer sgyrsiau go iawn gyda personau yn y ddewislen 'Sgwrs' ar y bar tabiau gwaelod\n• Gosodiadau Persona: Nodi rhyw, enw a chod iaith y parti arall yn rhydd\n• Drama Chwarae GPS: Argymell pynciau sgwrsio sy'n addas ar gyfer y lleoliad trwy adnabod fy lleoliad presennol\n• Dwy Iaith: Mae atebion AI yn cael eu harddangos gyda chyfieithiadau i wneud y gorau o effeithiau dysgu\n• Rheoli Cofnodion: Hidlo hanes sgwrsio blaenorol a chadw negeseuon penodol o sgyrsiau fel deunyddiau dysgu",
+  "helpNote": "Cofnodwch ystyr geiriau, enghreifftiau, sefyllfaoedd, ac ati yn rhydd.",
+  "helpNotebook": "Dewiswch y ffolder i gadw'r canlyniadau wedi'u cyfieithu.",
   "helpTabJson": "Fformat JSON",
   "helpTabModes": "Esboniad o'r Moddau",
   "helpTabQuickStart": "Dechrau Arni’n Gyflym",
   "helpTabTour": "Cymryd Taith",
+  "helpTag": "Rhowch eiriau allweddol i'w dosbarthu neu i chwilio amdanynt yn nes ymlaen.",
   "helpTitle": "Help & Canllawiau",
   "helpTourDesc": "Mae **Cylch Tynnau Sylw** yn eich tywys trwy'r prif nodweddion.\n(Ex: Gallwch ddileu'r cerdyn y mae'r **Cylch Tynnau Sylw** yn pwyntio ato trwy ei wasgu am amser hir.)",
   "hide": "Cuddio",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "E.e.: Cyd-destun, amwysedd, ac ati",
+  "hintTagExample": "E.e.: Busnes, Teithio...",
+  "homeTab": "Cyfieithu",
   "importAdded": "Ychwanegwyd: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Wedi mewnforio {files} ffeil, {entries} o gofnodion.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Mewnforio Ffeil JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Ffeil JSON sengl",
+  "importSourceFolder": "Ffolder (strwythur llyfrgell benodol i'r iaith)",
+  "importSourceTitle": "Dewis Ffynhonnell Mewnforio",
+  "importSourceZip": "Ffeil ZIP (ffolder wedi'i gywasgu)",
   "importTotal": "Cyfanswm: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Cynnwys Mewnbwn",
+  "inputLanguage": "Iaith Mewnbwn",
   "inputModeTitle": "Mewnbwn",
   "intervalSeconds": "Cyfwng: {seconds} eiliad",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Rhowch e-bost dilys.",
   "kakaoContinue": "Parhau â Kakao",
+  "labelDetails": "Gosodiadau Manwl",
+  "labelFilterMaterial": "Deunyddiau",
+  "labelFilterTag": "Tagiau",
   "labelLangCode": "Côd Iaith (e.e. en-US, ko-KR)",
-  "labelName": "Enw",
   "labelNote": "Nodyn",
   "labelPOS": "Rhan o leferydd",
-  "labelRole": "Rôl",
   "labelSentence": "Brawddeg",
   "labelSentenceCollection": "Casgliad brawddegau",
   "labelSentenceType": "Math o frawddeg",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Yn llwytho Cyfranogwyr...",
   "location": "Lleoliad",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Mewngofnodi",
   "logout": "Allgofnodi",
   "logoutConfirmMessage": "Ydych chi'n siŵr eich bod am allgofnodi o'r ddyfais hon?",
   "logoutConfirmTitle": "Allgofnodi",
   "male": "Gwryw",
-  "manageParticipants": "Rheoli Cyfranogwyr",
   "manual": "Mewnbwn â Llaw",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Gwybodaeth Deunydd",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Fi",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Mewnforio deunyddiau o'r ddyfais",
   "menuHelp": "Cymorth",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Fy nghasgliad o frawddegau",
   "myWordbook": "Fy ngeirlyfr",
   "neutral": "Niwtral",
+  "newNotebookTitle": "Enw Llyfr Nodiadau Newydd",
   "newSubjectName": "Teitl Geirfa/Brawddeg Newydd",
   "next": "Nesaf",
-  "noDialogueHistory": "Dim hanes deialog.",
-  "noInternetWarningMic": "Dim cysylltiad rhyngrwyd. Efallai na fydd adnabod llais ar gael pan fyddwch all-lein.",
-  "noInternetWarningTranslate": "Dim cysylltiad rhyngrwyd. Ni fydd y nodwedd gyfieithu ar gael pan fyddwch all-lein. Defnyddiwch y modd adolygu.",
+  "noDataForLanguage": "Nid oes unrhyw ddata dysgu ar gyfer yr iaith a ddewiswyd yn y DB lleol. Lawrlwythwch y data neu dewiswch iaith arall.",
   "noMaterialsInCategory": "Nid oes deunyddiau yn y categori hwn.",
-  "noParticipantsFound": "Ni chanfuwyd unrhyw gyfranogwyr cofrestredig.",
   "noRecords": "Nid oes cofnodion astudio ar gael ar gyfer yr iaith a ddewiswyd",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Ni chanfuwyd llais",
   "notSelected": "- Heb ei Ddewis -",
+  "noteGuidance": "Lle rydych chi'n nodi manylion ychwanegol ar gyfer cyfieithiad mwy cywir",
   "onlineLibraryCheckInternet": "Gwiriwch eich cysylltiad rhyngrwyd neu ceisiwch eto yn nes ymlaen.",
   "onlineLibraryLoadFailed": "Wedi methu llwytho'r deunyddiau.",
   "onlineLibraryNoMaterials": "Dim deunyddiau ar gael.",
-  "participantDeleted": "Dilewyd y cyfranogwr.",
-  "participantRename": "Ailenwi Cyfranogwr",
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Modd Partner",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Agor Gosodiadau",
   "password": "Cyfrinair",
   "passwordTooShort": "Rhaid i'ch cyfrinair fod yn 6 nod o leiaf.",
   "perfect": "Perffaith!",
-  "personaFriend": "Ffrind Lleol",
-  "personaGuide": "Tywysydd Teithiau",
-  "personaTeacher": "Athro Saesneg",
+  "pickGallery": "Dewis o'r Oriel",
   "playAgain": "Chwarae Eto",
   "playbackFailed": "Methu chwarae: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Ansoddair",
   "posAdverb": "Adferf",
+  "posArticle": "Erthygl",
   "posConjunction": "Cysylltair",
   "posInterjection": "Ebychnod",
   "posNoun": "Enw",
+  "posParticle": "Grōnyn",
   "posPreposition": "Arddodiad/Ôl-ddodiad",
   "posPronoun": "Rhagenw",
   "posVerb": "Berf",
   "practiceModeTitle": "Ymarfer",
   "practiceWordsOnly": "Ymarfer geiriau yn unig",
+  "processing": "Yn prosesu...",
   "progress": "Cynnydd: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Yn newislen Gosodiadau > Iaith, dewiswch eich iaith frodorol a’r iaith rydych chi’n ei dysgu yn gyntaf.",
+  "quickStartStep1Title": "1. Gosod Iaith",
+  "quickStartStep2Desc": "Creuwch eich cardiau dysgu eich hun trwy fewnbynnu (meicroffon/bysellfwrdd) -> cyfieithu -> cadw.",
+  "quickStartStep2Title": "2. Llif Sylfaenol",
+  "quickStartStep3Desc": "Ymarferwch trwy sgwrsio, ac ymarferwch ynganiad trwy edrych ar destun a’i ynganu’n uniongyrchol yn y tab ymarfer ynganu.",
+  "quickStartStep3Title": "3. Defnyddio Moddau",
   "recentNItems": "Gweler y {count} eitem a grewyd yn ddiweddar",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Gofyn am Gyfieithiad",
   "reset": "Ailosod",
   "resetPracticeHistory": "Ailosod hanes ymarfer",
   "retry": "Ailgeisio?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Adolygu",
-  "roleAi": "AI",
-  "roleThirdParty": "Trydydd Parti",
-  "roleUser": "Defnyddiwr",
   "save": "Cadw",
+  "saveAsSentence": "Cadw fel Brawddeg",
+  "saveAsWord": "Cadw fel Gair",
   "saveData": "Cadw Data",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Cadw i'r Hanes Sganio",
   "saveTranslationsFromSearch": "Ceisiwch gadw cyfieithiadau o'r modd chwilio",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Dewiswch ddelwedd i'w sganio",
+  "scanLabel": "Sganio",
   "score": "Cywirdeb: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Dewis Rhannau o'r Lleferydd",
-  "selectParticipants": "Dewis Cyfranogwyr",
-  "selectSentenceType": "Dewis Math o Frawddeg",
   "selectStudyMaterial": "Dewis Deunydd Astudio",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Brawddeg",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Cofrestru",
-  "similarTextFound": "Canfuwyd testun tebyg",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Hepgor",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Ffynhonnell:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Iaith Ffynhonnell",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Trawsnewidiwch sgyrsiau bob dydd yn syth i iaith dramor! Bydd Talkie yn cofnodi eich bywyd iaith.",
   "sourceLanguageLabel": "Fy iaith (Ffynhonnell)",
-  "speakNow": "Siarad Nawr!",
-  "speaker": "Llefarydd",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Dewis Siaradwr",
-  "speakingPractice": "Ymarfer Siarad",
-  "startChat": "Dechrau Sgwrs",
-  "startPractice": "Dechrau Ymarfer",
   "startTutorial": "Dechrau Tiwtorial",
-  "startWarning": "Rhybudd",
   "startsWith": "Llythrennau cyntaf",
   "statusCheckEmail": "Gwiriwch eich e-bost i gwblhau'r dilysu.",
   "statusDownloading": "Yn lawrlwytho: {name}...",
-  "statusImportFailed": "Wedi methu mewnforio: {error}",
-  "statusImportSuccess": "Wedi mewnforio {name} yn llwyddiannus",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Wedi canslo'r mewngofnodi.",
-  "statusLoginFailed": "Wedi methu mewngofnodi: {error}",
-  "statusLoginSuccess": "Wedi mewngofnodi yn llwyddiannus.",
-  "statusLogoutSuccess": "Wedi allgofnodi.",
-  "statusSignUpFailed": "Wedi methu cofrestru: {error}",
-  "statusSigningUp": "Yn cofrestru...",
-  "stopPractice": "Stopio Ymarfer",
-  "studyComplete": "Astudiaeth wedi'i Gwblhau",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Cofnodion Astudio ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Wedi methu mewnforio: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "Wedi mewnforio {name} yn llwyddiannus",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Wedi methu mewngofnodi: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Wedi mewngofnodi yn llwyddiannus.",
+  "statusLogoutSuccess": "Wedi allgofnodi.",
+  "statusRequestFailed": "Methwyd â gofyn am gyfieithiad: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Cwblhawyd y cais am gyfieithiad.",
+  "stopPractice": "Stopio Ymarfer",
+  "studyLangNotFoundDesc": "Nid yw'r iaith astudio ({targetLang}) a ddewiswyd gennych yn cael ei chefnogi ar gyfer y deunydd hwn. A ydych am ofyn am gyfieithiad?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Iaith Astudio Heb ei Chefnogi",
   "styleFormal": "Ffurfiol",
   "styleInformal": "Anffurfiol",
   "stylePolite": "Cwrtais",
   "styleSlang": "Slang",
-  "subject": "Pwnc:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Cyfnewid Ieithoedd",
-  "switchToAi": "Newid i'r Modd AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Newid i'r Modd Partner",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Yn cysoni data...",
-  "tabConversation": "Sgwrs",
   "tabReview": "Adolygu ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Lleihau",
   "tooltipIncrease": "Cynyddu",
   "tooltipSearch": "Chwilio",
+  "tooltipSettingsConfirm": "Cadarnhau Gosodiadau",
   "tooltipSpeaking": "Siarad",
   "tooltipStudyReview": "Astudio+Adolygu",
   "totalRecords": "Cyfanswm o {count} o gofnodion (gweler popeth)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Cyfieithu Nawr",
   "translating": "Cyfieithu...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Iaith Cyfieithu",
   "translationLimitExceeded": "Terfyn cyfieithu wedi'i ragori",
   "translationLimitMessage": "Rydych wedi defnyddio'ch holl gyfieithiadau dyddiol am ddim (5 gwaith).\\n\\nA hoffech ail-lenwi 5 gwaith ar unwaith trwy wylio hysbyseb?",
   "translationLoaded": "Cyfieithiad wedi'i lwytho a'i gadw",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Ail-lenwyd nifer y cyfieithiadau 5 gwaith!",
+  "translationResult": "Canlyniad Cyfieithu",
   "translationResultHint": "Canlyniad Cyfieithu - gellir ei olygu",
   "tryAgain": "Ceisiwch Eto",
-  "tutorialAiChatDesc": "Ymarfer sgyrsiau go iawn gyda AI Persona.",
-  "tutorialAiChatTitle": "Sgwrsio AI",
+  "ttsInstallGuide": "Ewch i Gosodiadau Android > Google TTS a gosod data'r iaith honno.",
+  "ttsMissing": "Nid yw injan lleferydd ar gyfer yr iaith hon wedi'i gosod ar eich dyfais.",
+  "ttsUnsupportedNatively": "Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon.",
   "tutorialContextDesc": "Gallwch ei gadw ar wahân trwy ysgrifennu'r sefyllfa (e.e. bore, gyda'r nos) hyd yn oed os yw'n frawddeg debyg.",
   "tutorialContextTitle": "Tag Cyd-destun / Seiliau",
   "tutorialLangSettingsDesc": "Gosodwch yr iaith ffynhonnell a'r iaith darged i'w chyfieithu.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Cyfieithu'r testun a fewnbynnwyd.",
   "tutorialTransTitle": "Cyfieithu",
   "typeExclamation": "Ebychnod",
+  "typeIdiom": "Idiom",
   "typeImperative": "Gorchymyn",
+  "typeProverb": "Dihareb",
   "typeQuestion": "Cwestiwn",
   "typeStatement": "Datganiad",
   "usageLimitTitle": "Terfyn wedi'i gyrraedd",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Gweler Canllaw Ar-lein",
   "voluntaryTranslations": "Cyfieithiadau Gwirfoddol",
   "watchAdAndRefill": "Gwylio hysbyseb a'i ail-lenwi (+5 gwaith)",
+  "welcomeButton": "Dechrau",
+  "welcomeDesc": "Croeso i Talkie! Rydym yn cefnogi pob un o'r 80+ o ieithoedd ledled y byd gyda 100% o gywirdeb, ynghyd â dyluniad 3D premiwm newydd a pherfformiad wedi'i optimeiddio ar gyfer profiad dysgu perffaith.",
+  "welcomeTitle": "Croeso i Talkie!",
   "word": "Gair",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Amddiffynwch y sylfaen trwy ddweud y gair cyn i'r gelyn gyrraedd.",
   "wordDefenseTitle": "Amddiffyn Gair",
   "wordModeLabel": "Modd Gair",
-  "yourPronunciation": "Eich Ynganiad",
-  "ttsUnsupportedNatively": "Nid yw gosodiadau diofyn y ddyfais hon yn cefnogi allbwn lleferydd ar gyfer yr iaith hon.",
-  "homeTab": "Cyfieithu",
-  "welcomeTitle": "Croeso i Talkie!",
-  "welcomeDesc": "Croeso i Talkie! Rydym yn cefnogi pob un o'r 80+ o ieithoedd ledled y byd gyda 100% o gywirdeb, ynghyd â dyluniad 3D premiwm newydd a pherfformiad wedi'i optimeiddio ar gyfer profiad dysgu perffaith.",
-  "welcomeButton": "Dechrau",
-  "labelDetails": "Gosodiadau Manwl",
-  "translationResult": "Canlyniad Cyfieithu",
-  "inputContent": "Cynnwys Mewnbwn",
-  "translateNow": "Cyfieithu Nawr",
-  "tooltipSettingsConfirm": "Cadarnhau Gosodiadau",
-  "hintNoteExample": "E.e.: Cyd-destun, amwysedd, ac ati",
-  "hintTagExample": "E.e.: Busnes, Teithio...",
-  "addNew": "Ychwanegu Newydd",
-  "newNotebookTitle": "Enw Llyfr Nodiadau Newydd",
-  "enterNameHint": "Rhowch enw",
-  "add": "Ychwanegu",
-  "openSettings": "Agor Gosodiadau",
-  "helpNotebook": "Dewiswch y ffolder i gadw'r canlyniadau wedi'u cyfieithu.",
-  "helpNote": "Cofnodwch ystyr geiriau, enghreifftiau, sefyllfaoedd, ac ati yn rhydd.",
-  "helpTag": "Rhowch eiriau allweddol i'w dosbarthu neu i chwilio amdanynt yn nes ymlaen.",
-  "requestTranslation": "Gofyn am Gyfieithiad",
-  "statusRequestSuccess": "Cwblhawyd y cais am gyfieithiad.",
-  "statusRequestFailed": "Methwyd â gofyn am gyfieithiad: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Iaith Astudio Heb ei Chefnogi",
-  "studyLangNotFoundDesc": "Nid yw'r iaith astudio ({targetLang}) a ddewiswyd gennych yn cael ei chefnogi ar gyfer y deunydd hwn. A ydych am ofyn am gyfieithiad?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Gosod Iaith",
-  "quickStartStep1Desc": "Yn newislen Gosodiadau > Iaith, dewiswch eich iaith frodorol a’r iaith rydych chi’n ei dysgu yn gyntaf.",
-  "quickStartStep2Title": "2. Llif Sylfaenol",
-  "quickStartStep2Desc": "Creuwch eich cardiau dysgu eich hun trwy fewnbynnu (meicroffon/bysellfwrdd) -> cyfieithu -> cadw.",
-  "quickStartStep3Title": "3. Defnyddio Moddau",
-  "quickStartStep3Desc": "Ymarferwch trwy sgwrsio, ac ymarferwch ynganiad trwy edrych ar destun a’i ynganu’n uniongyrchol yn y tab ymarfer ynganu.",
-  "noteGuidance": "Lle rydych chi'n nodi manylion ychwanegol ar gyfer cyfieithiad mwy cywir"
+  "yourPronunciation": "Eich Ynganiad"
 }

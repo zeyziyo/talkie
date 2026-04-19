@@ -1,32 +1,10 @@
 {
   "@@locale": "hy",
-  "basicWords": "Հիմնական բառերի պահեստ",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Մուտքագրման լեզու",
-  "translationLanguage": "Թարգմանության լեզու",
-  "simplifiedGuidance": "Անմիջապես փոխակերպեք առօրյա խոսակցությունները օտար լեզուներով: Talkie-ն կգրանցի ձեր լեզվական կյանքը:",
-  "noDataForLanguage": "Ընտրված լեզվի ուսուցման նյութերը տեղային տվյալների բազայում չկան: Ներբեռնեք նյութերը կամ ընտրեք այլ լեզու:",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Չեղարկել",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Ճշգրտություն",
-  "ttsMissing": "Ձեր սարքի վրա այս լեզվի ձայնային շարժիչը տեղադրված չէ։",
-  "ttsInstallGuide": "Խնդրում ենք տեղադրել համապատասխան լեզվի տվյալները Android-ի կարգավորումներ > Google TTS-ում։",
   "adLoading": "Գովազդը բեռնվում է: Փորձեք մի փոքր ուշ:",
+  "add": "Ավելացնել",
+  "addNew": "Ավելացնել նորը",
   "addNewSubject": "Ավելացնել նոր վերնագիր",
-  "addParticipant": "Ավելացնել մասնակից",
   "addTagHint": "Ավելացնել թեգ...",
   "alreadyHaveAccount": "Արդեն ունե՞ք հաշիվ:",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Հիմնական բառերի պահեստ",
+  "basicWords": "Հիմնական բառերի պահեստ",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Չեղարկել",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Հայցական հոլով",
   "casePossessive": "Սեռական հոլով",
   "casePossessivePronoun": "Ստացական դերանուն",
   "caseReflexive": "Անդրադարձ դերանուն",
   "caseSubject": "Ուղղական հոլով",
-  "chatAiChat": "Զրույց",
-  "chatAllConversations": "Բոլոր զրույցները",
-  "chatChoosePersona": "Ընտրել անձ",
-  "chatEndMessage": "Համոզվա՞ծ եք, որ ցանկանում եք ավարտել զրույցը։",
-  "chatEndTitle": "Ավարտել և պահպանել զրույցը",
-  "chatFailed": "Զրույցը ձախողվեց. {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Քաղված զրույցից ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Զրույցի պատմություն",
-  "chatNew": "Նոր զրույց",
-  "chatNewChat": "Նոր զրույց",
-  "chatNoConversations": "Դեռևս զրույցներ չկան",
-  "chatSearchHint": "Որոնել զրույցի վերնագրով...",
-  "chatNoteSearchHint": "Փնտրել նշումներով...",
-  "chatSaveAndExit": "Պահպանել և դուրս գալ",
-  "chatStartNewPrompt": "Սկսեք նոր զրույց մարզվելու համար!",
-  "chatTypeHint": "Մուտքագրեք ձեր հաղորդագրությունը...",
-  "chatUntitled": "Անանուն զրույց",
   "checking": "Ստուգվում է...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Ցանկանու՞մ եք ջնջել այս զրույցը:\nՋնջված զրույցները հնարավոր չէ վերականգնել:",
-  "confirmDeleteParticipant": "Ջնջե՞լ այս մասնակցին:",
   "contextTagHint": "Գրեք իրավիճակը, որպեսզի այն հետագայում հեշտ լինի տարբերել",
   "contextTagLabel": "Կոնտեքստ/Իրավիճակ (ըստ ցանկության) - Օրինակ՝ առավոտյան ողջույն, պաշտոնական խոսք",
   "copiedToClipboard": "Պատճենվել է հոսքատախտակին!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Մարզեք խոսակցությունները դերային խաղերի միջոցով: Ընտրեք և խոսեք համապատասխան պատասխաններ:",
-  "dialogueQuestTitle": "Երկխոսության որոնում",
-  "disambiguationPrompt": "Ո՞ր նշանակությամբ կցանկանայիք թարգմանել։",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Ընտրել նշանակությունը",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Դեռ հաշիվ չունե՞ք:",
-  "editParticipant": "Խմբագրել մասնակից",
   "email": "Էլ. փոստ",
   "emailAlreadyInUse": "Այս էլ․ հասցեն արդեն գրանցված է։ Մուտք գործեք կամ օգտվեք գաղտնաբառի վերականգնման հնարավորությունից։",
+  "enterNameHint": "Մուտքագրեք անունը",
   "enterNewSubjectName": "Մուտքագրեք նոր վերնագիր",
   "enterSentenceHint": "Մուտքագրեք նախադասություն...",
   "enterTextHint": "Մուտքագրեք թարգմանելու տեքստը",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Ճանաչված տեքստ",
   "female": "Իգական",
   "file": "Ֆայլ.",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Խաղի ռեժիմ",
   "gameOver": "Խաղն ավարտված է",
   "gender": "Սեռ",
-  "labelFilterMaterial": "Նյութեր",
-  "labelFilterTag": "Թեգեր",
   "generalTags": "Ընդհանուր պիտակներ",
   "getMaterials": "Ստանալ նյութեր",
   "good": "Լավ է",
   "googleContinue": "Շարունակել Google-ով",
-  "helpDialogueImportDesc": "Ներմուծեք ամբողջական երկխոսության հավաքածուները JSON ֆայլերի միջոցով:",
-  "helpDialogueImportDetails": "• JSON կառուցվածք՝ օգտագործեք `dialogues` զանգվածը `entries`-ի փոխարեն\n• Ավտոմատ վերականգնում՝ երկխոսության վերնագրերը, անձերը, հաղորդագրությունների կարգը վերականգնվում են:\n• Գտնվելու վայրը՝ ներմուծված զրույցները հայտնվում են AI զրույցի ռեժիմի «Պատմություն» ներդիրում:",
   "helpJsonDesc": "Հետևեք հետևյալ ձևաչափին Mode 3-ում օգտագործելու համար ուսումնական նյութերը JSON ֆայլի մեջ ներմուծելու համար.",
-  "helpJsonTypeDialogue": "Երկխոսություն",
   "helpJsonTypeSentence": "Նախադասություն",
   "helpJsonTypeWord": "Բառ",
   "helpMode1Desc": "Սկսեք լեզուների ուսուցումը ամենաինտուիտիվ ձևով՝ պրեմիում կարգի 3D խոսափողի և մեծ ստեղնաշարի պատկերակների միջոցով:",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Նյութերի ընտրություն․ Վերևի աջ անկյունում գտնվող ընտրացանկից (⋮) օգտագործեք «Ընտրել ուսումնական նյութեր» կամ «Առցանց նյութերի գրադարան»:\n• Քարտի շրջում․ «Ցույց տալ/Թաքցնել»՝ թարգմանությունը ստուգելու համար:\n• Լսել․ Բարձրախոսի պատկերակը վերարտադրում է արտասանությունը:\n• Ուսուցումն ավարտված է․ Նշեք ավարտվածը (V) ուսուցումն ավարտելու համար:\n• Ջնջել․ Երկար սեղմեք քարտի վրա (Long Click)՝ գրառումը ջնջելու համար:\n• Որոնում և զտում․ Աջակցություն որոնման տողին (իրական ժամանակի խելացի որոնում), ինչպես նաև թեգերին և սկզբնական տառի զտիչներին",
   "helpMode3Desc": "Լսեք նախադասությունը և կրկնեք այն (Shadowing)` արտասանությունը մարզելու համար։",
   "helpMode3Details": "• Նյութի ընտրություն՝ ընտրեք ուսումնասիրելու նյութերի հավաքածուն\n• Միջակայքի կարգավորում՝ կարգավորեք նախադասությունների միջև սպասման ժամանակը [-] [+] կոճակներով (3 վրկ-ից 60 վրկ)\n• Սկսել/Դադարեցնել՝ վերահսկեք ստվերային նիստը\n• Խոսել՝ լսեք ձայնը և կրկնեք\n• Հետադարձ կապ՝ ճշգրտության միավոր (0-100) և գույնի ցուցադրում\n• Որոնման պայմաններ՝ զտեք մարզումների թիրախը ըստ թեգերի, վերջին տարրերի, սկսվող տառերի",
-  "helpModeChatDesc": "Զրուցեք AI պերսոնաժի հետ և մարզվեք իրական խոսակցություններում:",
-  "helpModeChatDetails": "• AI զրույց. մարզվեք գործնական խոսակցության մեջ անձի հետ ներքևի ներդիրի տողի «Զրույց» մենյուում\n• Անձի կարգավորումներ. ազատորեն նշեք մյուս կողմի սեռը, անունը և լեզվի կոդը\n• GPS իրավիճակային խաղ. ճանաչեք իմ ընթացիկ գտնվելու վայրը և առաջարկեք խոսակցության թեմաներ, որոնք հարմար են վայրին\n• 2 լեզու. AI-ի պատասխանը ցուցադրվում է թարգմանության հետ միասին՝ առավելագույնի հասցնելով ուսուցման էֆեկտը\n• Գրառումների կառավարում. անցյալ խոսակցությունների պատմության զտում և խոսակցության ընթացքում որոշակի հաղորդագրություններ պահել որպես ուսումնական նյութ",
+  "helpNote": "Ազատ զգացեք գրել բառի նշանակությունը, օրինակները կամ իրավիճակները:",
+  "helpNotebook": "Ընտրեք թարգմանված արդյունքները պահպանելու համար գրացուցակը:",
   "helpTabJson": "JSON ձևաչափ",
   "helpTabModes": "Ռեժիմների նկարագրություն",
   "helpTabQuickStart": "Արագ մեկնարկ",
   "helpTabTour": "Փորձարկել",
+  "helpTag": "Մուտքագրեք բանալի բառեր հետագայում դասակարգելու կամ որոնելու համար:",
   "helpTitle": "Օգնություն և ուղեցույց",
   "helpTourDesc": "**Ընդգծված շրջանակը** ուղղորդում է հիմնական գործառույթները:\n(Օրինակ՝ դուք կարող եք ջնջել **ընդգծված շրջանակով** նշված քարտը երկար սեղմելով):",
   "hide": "Թաքցնել",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Օրինակ՝ իրավիճակի բացատրություն, համանուններ և այլն",
+  "hintTagExample": "Օրինակ՝ բիզնես, ճանապարհորդություն...",
+  "homeTab": "Թարգմանել",
   "importAdded": "Ավելացված. {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Ներմուծվել է {files} ֆայլ, {entries} գրառում:",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Ներմուծել JSON ֆայլ",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Մեկ JSON ֆայլ",
+  "importSourceFolder": "Թղթապանակ (ըստ լեզվի գրադարանի կառուցվածքով)",
+  "importSourceTitle": "Ընտրեք ներմուծման աղբյուրը",
+  "importSourceZip": "ZIP ֆայլ (սեղմված թղթապանակ)",
   "importTotal": "Ընդհանուր. {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Մուտքագրվող տեքստ",
+  "inputLanguage": "Մուտքագրման լեզու",
   "inputModeTitle": "Մուտքագրում",
   "intervalSeconds": "Միջակայք. {seconds} վրկ",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Մուտքագրեք վավեր էլ. փոստ:",
   "kakaoContinue": "Շարունակել Kakao-ով",
+  "labelDetails": "Մանրամասներ",
+  "labelFilterMaterial": "Նյութեր",
+  "labelFilterTag": "Թեգեր",
   "labelLangCode": "Լեզվի կոդ (օրինակ՝ en-US, ko-KR)",
-  "labelName": "Անուն",
   "labelNote": "Ծանոթագրություն",
   "labelPOS": "Մաս խոսքի",
-  "labelRole": "Դեր",
   "labelSentence": "Նախադասություն",
   "labelSentenceCollection": "Նախադասությունների հավաքածու",
   "labelSentenceType": "Նախադասության տեսակը",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Մասնակիցների բեռնում...",
-  "location": "Գտնվելու վայր",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
+  "location": "Գտնվելու վայրը",
   "login": "Մուտք գործել",
   "logout": "Դուրս գալ",
   "logoutConfirmMessage": "Ցանկանու՞մ եք դուրս գալ ընթացիկ սարքից:",
   "logoutConfirmTitle": "Դուրս գալ",
   "male": "Արական",
-  "manageParticipants": "Կառավարել մասնակիցներին",
   "manual": "Ձեռքով մուտքագրում",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Նյութի մասին տեղեկություններ",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Ես",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Ներմուծել նյութեր սարքից",
   "menuHelp": "Օգնություն",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Իմ նախադասությունների հավաքածուն",
   "myWordbook": "Իմ բառարանը",
   "neutral": "Չեզոք",
+  "newNotebookTitle": "Նոր գրքույկի անվանումը",
   "newSubjectName": "Նոր բառարան/նախադասությունների գիրք",
   "next": "Առաջ",
-  "noDialogueHistory": "Երկխոսության պատմություն չկա:",
-  "noInternetWarningMic": "Ինտերնետ կապ չկա: Ձայնային ճանաչումը կարող է անհասանելի լինել անցանց ռեժիմում:",
-  "noInternetWarningTranslate": "Ինտերնետ կապ չկա: Թարգմանության գործառույթը հասանելի չէ անցանց ռեժիմում: Խնդրում ենք օգտագործել կրկնության ռեժիմը:",
+  "noDataForLanguage": "Ընտրված լեզվի ուսուցման նյութերը տեղային տվյալների բազայում չկան: Ներբեռնեք նյութերը կամ ընտրեք այլ լեզու:",
   "noMaterialsInCategory": "Այս կատեգորիայում նյութեր չկան:",
-  "noParticipantsFound": "Գրանցված մասնակիցներ չկան:",
   "noRecords": "Ընտրված լեզվի ուսուցման գրառումներ չկան",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Ձայն չի հայտնաբերվել",
   "notSelected": "- Ընտրված չէ -",
+  "noteGuidance": "Այնտեղ, որտեղ դուք մուտքագրում եք լրացուցիչ մանրամասներ ավելի ճշգրիտ թարգմանության համար",
   "onlineLibraryCheckInternet": "Ստուգեք ինտերնետ կապը կամ փորձեք ավելի ուշ:",
   "onlineLibraryLoadFailed": "Նյութերի բեռնումը ձախողվեց:",
   "onlineLibraryNoMaterials": "Նյութեր չկան:",
-  "participantDeleted": "Մասնակիցը ջնջվել է։",
-  "participantRename": "Վերանվանել մասնակցին",
-  "partner": "Գործընկեր",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Գործընկեր ռեժիմ",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Բացել կարգավորումները",
   "password": "Գաղտնաբառ",
-  "passwordTooShort": "Գաղտնաբառը պետք է լինի առնվազն 6 նիշ:",
+  "passwordTooShort": "Գաղտնաբառը շատ կարճ է",
   "perfect": "Կատարյալ է!",
-  "personaFriend": "Տեղացի ընկեր",
-  "personaGuide": "Ճանապարհորդական ուղեցույց",
-  "personaTeacher": "Անգլերենի ուսուցիչ",
+  "pickGallery": "Ընտրել պատկերասրահից",
   "playAgain": "Նորից խաղալ",
   "playbackFailed": "Նվագարկումը ձախողվեց. {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Ածական",
   "posAdverb": "Մակբայ",
+  "posArticle": "Առդիր",
   "posConjunction": "Շաղկապ",
   "posInterjection": "Ձայնարկություն",
   "posNoun": "Գոյական",
+  "posParticle": "Մասնիկ",
   "posPreposition": "Նախդիր/կապ",
   "posPronoun": "Դերանուն",
   "posVerb": "Բայ",
   "practiceModeTitle": "Մարզում",
   "practiceWordsOnly": "Մարզել միայն բառերը",
+  "processing": "Մշակվում է...",
   "progress": "Ընթացք. {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Նախ սահմանեք իմ և ուսումնասիրվող լեզուն Մենյու > Լեզվի կարգավորումներ բաժնում:",
+  "quickStartStep1Title": "1. Լեզվի կարգավորումներ",
+  "quickStartStep2Desc": "Ստեղծեք ձեր սեփական ուսումնական քարտերը՝ մուտքագրում (խոսափող/ստեղնաշար) -> թարգմանություն -> պահպանում հաջորդականությամբ:",
+  "quickStartStep2Title": "2. Հիմնական հոսք",
+  "quickStartStep3Desc": "Զրուցեք վարժվելու համար և վարժվեք ուղղակիորեն արտասանելով տեքստը Արտասանության վարժանք ներդիրում:",
+  "quickStartStep3Title": "3. Ռեժիմի օգտագործում",
   "recentNItems": "Դիտել վերջերս ստեղծված {count} տարրեր",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Թարգմանել",
   "reset": "Վերականգնել",
   "resetPracticeHistory": "Վերականգնել մարզումների պատմությունը",
   "retry": "Փորձե՞լ նորից:",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Վերանայում",
-  "roleAi": "Արհեստական բանականություն",
-  "roleThirdParty": "Երրորդ կողմ",
-  "roleUser": "Օգտատեր",
   "save": "Պահպանել",
+  "saveAsSentence": "Պահպանել որպես նախադասություն",
+  "saveAsWord": "Պահպանել որպես բառ",
   "saveData": "Տվյալների պահպանում",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Պահպանել սկանավորման պատմության մեջ",
   "saveTranslationsFromSearch": "Փորձեք պահպանել թարգմանությունները որոնման ռեժիմում",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Ընտրեք սկանավորելու պատկերը",
+  "scanLabel": "Սկանավորել",
   "score": "Ճշգրտություն. {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Ընտրել խոսքի մաս",
-  "selectParticipants": "Ընտրել մասնակիցներ",
-  "selectSentenceType": "Ընտրել նախադասության տեսակ",
   "selectStudyMaterial": "Ընտրել ուսումնական նյութեր",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Նախադասություն",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Գրանցվել",
-  "similarTextFound": "Հայտնաբերվել է նման տեքստ",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Բաց թողնել",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Աղբյուր.",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Սկզբնաղբյուր լեզու",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "sourceLanguageLabel": "Իմ լեզուն (Source)",
-  "speakNow": "Խոսեք հիմա!",
-  "speaker": "Բանախոս",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Ընտրել խոսողին",
-  "speakingPractice": "Խոսելու մարզում",
-  "startChat": "Սկսել զրույց",
-  "startPractice": "Սկսել մարզումը",
+  "simplifiedGuidance": "Անմիջապես փոխակերպեք առօրյա խոսակցությունները օտար լեզուներով: Talkie-ն կգրանցի ձեր լեզվական կյանքը:",
+  "sourceLanguageLabel": "Իմ լեզուն",
   "startTutorial": "Սկսել ձեռնարկը",
-  "startWarning": "Զգուշացում",
   "startsWith": "Սկսվում է տառով",
-  "statusCheckEmail": "Ստուգեք ձեր էլ. փոստը՝ նույնականացումն ավարտելու համար:",
+  "statusCheckEmail": "Ստուգեք Ձեր էլ-նամակը",
   "statusDownloading": "Բեռնում: {name}...",
-  "statusImportFailed": "Ներմուծումը ձախողվեց: {error}",
-  "statusImportSuccess": "{name} ներմուծումն ավարտված է",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Մուտքը չեղարկվեց:",
-  "statusLoginFailed": "Մուտքը ձախողվեց: {error}",
-  "statusLoginSuccess": "Մուտքն հաջողությամբ կատարվեց:",
-  "statusLogoutSuccess": "Դուրս եկաք համակարգից:",
-  "statusSignUpFailed": "Գրանցումը ձախողվեց: {error}",
-  "statusSigningUp": "Գրանցում...",
-  "stopPractice": "Դադարեցնել մարզումը",
-  "studyComplete": "Ուսուցումն ավարտված է",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Ուսուցման գրառումներ ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Ներմուծումը ձախողվեց: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} ներմուծումն ավարտված է",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Մուտքն անհաջող է. {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Մուտքն հաջող է",
+  "statusLogoutSuccess": "Ելքն հաջող է",
+  "statusRequestFailed": "Թարգմանության հարցումը ձախողվեց․ {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Թարգմանության հարցումն ավարտվեց։",
+  "stopPractice": "Դադարեցնել մարզումը",
+  "studyLangNotFoundDesc": "Ընտրված նյութը չի աջակցում ներկայիս ուսուցման լեզուն ({targetLang}), և այն հնարավոր չէ տեղայնացնել: Ցանկանու՞մ եք թարգմանել:",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Ուսուցման լեզուն հասանելի չէ",
   "styleFormal": "Պաշտոնական",
   "styleInformal": "Ոչ պաշտոնական",
   "stylePolite": "Քաղաքավարի",
   "styleSlang": "Ժարգոն",
-  "subject": "Թեմա.",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Փոխել լեզուները",
-  "switchToAi": "Անցնել AI ռեժիմին",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Անցնել գործընկեր ռեժիմին",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Տվյալների համաժամացում...",
-  "tabConversation": "Զրույց",
   "tabReview": "Վերանայում ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Նվազեցնել",
   "tooltipIncrease": "Ավելացնել",
   "tooltipSearch": "Որոնում",
+  "tooltipSettingsConfirm": "Հաստատել կարգավորումները",
   "tooltipSpeaking": "Խոսել",
   "tooltipStudyReview": "Ուսուցում+վերանայում",
   "totalRecords": "Ընդհանուր {count} գրառում (Դիտել ամբողջը)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Թարգմանել հիմա",
   "translating": "Թարգմանվում է...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Թարգմանության լեզու",
   "translationLimitExceeded": "Գերազանցվել է թարգմանության սահմանաչափը",
   "translationLimitMessage": "Դուք օգտագործել եք ձեր օրական անվճար թարգմանությունները (5 անգամ):\\n\\nՑանկանու՞մ եք անմիջապես լիցքավորել ևս 5 անգամ՝ դիտելով գովազդ։",
   "translationLoaded": "Բեռնված է պահպանված թարգմանություն",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Թարգմանությունների քանակը լիցքավորվել է 5 անգամ!",
+  "translationResult": "Թարգմանության արդյունք",
   "translationResultHint": "Թարգմանության արդյունք - կարող է խմբագրվել",
   "tryAgain": "Փորձեք նորից",
-  "tutorialAiChatDesc": "Մարզեք իրական զրույցներ AI անձի հետ:",
-  "tutorialAiChatTitle": "AI Զրույց",
+  "ttsInstallGuide": "Խնդրում ենք տեղադրել համապատասխան լեզվի տվյալները Android-ի կարգավորումներ > Google TTS-ում։",
+  "ttsMissing": "Ձեր սարքի վրա այս լեզվի ձայնային շարժիչը տեղադրված չէ։",
+  "ttsUnsupportedNatively": "Այս սարքի լռելյայն կարգավորումներն այս լեզվի ձայնային արտածումը չեն ապահովում:",
   "tutorialContextDesc": "Դուք կարող եք այն առանձին պահպանել՝ գրելով նույնիսկ նույն նախադասության իրավիճակը (օրինակ՝ առավոտ, երեկո)։",
   "tutorialContextTitle": "Իրավիճակ/կոնտեքստ թեգ",
   "tutorialLangSettingsDesc": "Սահմանեք սկզբնաղբյուր լեզուն և թարգմանելու թիրախային լեզուն։",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Թարգմանեք մուտքագրված տեքստը։",
   "tutorialTransTitle": "Թարգմանել",
   "typeExclamation": "Բացականչական նախադասություն",
+  "typeIdiom": "Իդիոմ",
   "typeImperative": "Հրամայական նախադասություն",
+  "typeProverb": "Առած / Ասացվածք",
   "typeQuestion": "Հարցական նախադասություն",
   "typeStatement": "Պնդողական նախադասություն",
   "usageLimitTitle": "Սահմանաչափին հասնելը",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Դիտել առցանց ուղեցույցը",
   "voluntaryTranslations": "Կամավոր թարգմանություններ",
   "watchAdAndRefill": "Դիտել գովազդ և լիցքավորել (+5 անգամ)",
+  "welcomeButton": "Սկսել",
+  "welcomeDesc": "Բարի գալուստ Talkie: Այն աջակցում է աշխարհի ավելի քան 80 լեզուների 100% ամբողջականությամբ և առաջարկում է կատարյալ ուսուցման փորձ նոր պրեմիում 3D դիզայնով և օպտիմիզացված կատարողականությամբ:",
+  "welcomeTitle": "Բարի գալուստ Talkie:",
   "word": "Բառ",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Պաշտպանեք ձեր բազան՝ ասելով բառեր, նախքան թշնամին կժամանի:",
   "wordDefenseTitle": "Բառերի պաշտպանություն",
   "wordModeLabel": "Բառի ռեժիմ",
-  "yourPronunciation": "Ձեր արտասանությունը",
-  "ttsUnsupportedNatively": "Այս սարքի լռելյայն կարգավորումներն այս լեզվի ձայնային արտածումը չեն ապահովում:",
-  "homeTab": "Թարգմանել",
-  "welcomeTitle": "Բարի գալուստ Talkie:",
-  "welcomeDesc": "Բարի գալուստ Talkie: Այն աջակցում է աշխարհի ավելի քան 80 լեզուների 100% ամբողջականությամբ և առաջարկում է կատարյալ ուսուցման փորձ նոր պրեմիում 3D դիզայնով և օպտիմիզացված կատարողականությամբ:",
-  "welcomeButton": "Սկսել",
-  "labelDetails": "Մանրամասներ",
-  "translationResult": "Թարգմանության արդյունք",
-  "inputContent": "Մուտքագրվող տեքստ",
-  "translateNow": "Թարգմանել հիմա",
-  "tooltipSettingsConfirm": "Հաստատել կարգավորումները",
-  "hintNoteExample": "Օրինակ՝ իրավիճակի բացատրություն, համանուններ և այլն",
-  "hintTagExample": "Օրինակ՝ բիզնես, ճանապարհորդություն...",
-  "addNew": "Ավելացնել նորը",
-  "newNotebookTitle": "Նոր գրքույկի անվանումը",
-  "enterNameHint": "Մուտքագրեք անունը",
-  "add": "Ավելացնել",
-  "openSettings": "Բացել կարգավորումները",
-  "helpNotebook": "Ընտրեք թարգմանված արդյունքները պահպանելու համար գրացուցակը:",
-  "helpNote": "Ազատ զգացեք գրել բառի նշանակությունը, օրինակները կամ իրավիճակները:",
-  "helpTag": "Մուտքագրեք բանալի բառեր հետագայում դասակարգելու կամ որոնելու համար:",
-  "requestTranslation": "Թարգմանել",
-  "statusRequestSuccess": "Թարգմանության հարցումն ավարտվեց։",
-  "statusRequestFailed": "Թարգմանության հարցումը ձախողվեց․ {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Ուսուցման լեզուն հասանելի չէ",
-  "studyLangNotFoundDesc": "Ընտրված նյութը չի աջակցում ներկայիս ուսուցման լեզուն ({targetLang}), և այն հնարավոր չէ տեղայնացնել: Ցանկանու՞մ եք թարգմանել:",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Լեզվի կարգավորումներ",
-  "quickStartStep1Desc": "Նախ սահմանեք իմ և ուսումնասիրվող լեզուն Մենյու > Լեզվի կարգավորումներ բաժնում:",
-  "quickStartStep2Title": "2. Հիմնական հոսք",
-  "quickStartStep2Desc": "Ստեղծեք ձեր սեփական ուսումնական քարտերը՝ մուտքագրում (խոսափող/ստեղնաշար) -> թարգմանություն -> պահպանում հաջորդականությամբ:",
-  "quickStartStep3Title": "3. Ռեժիմի օգտագործում",
-  "quickStartStep3Desc": "Զրուցեք վարժվելու համար և վարժվեք ուղղակիորեն արտասանելով տեքստը Արտասանության վարժանք ներդիրում:",
-  "noteGuidance": "Այնտեղ, որտեղ դուք մուտքագրում եք լրացուցիչ մանրամասներ ավելի ճշգրիտ թարգմանության համար"
+  "yourPronunciation": "Ձեր արտասանությունը"
 }

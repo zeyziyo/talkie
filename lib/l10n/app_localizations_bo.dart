@@ -9,52 +9,19 @@ class AppLocalizationsBo extends AppLocalizations {
   AppLocalizationsBo([String locale = 'bo']) : super(locale);
 
   @override
-  String get basicWords => 'རྨང་གཞིའི་ཐ་སྙད་ཉར་མཛོད།';
-
-  @override
-  String get inputLanguage => 'འཇུག་པའི་སྐད།';
-
-  @override
-  String get translationLanguage => 'བསྒྱུར་བའི་སྐད།';
-
-  @override
-  String get simplifiedGuidance =>
-      'སྐད་ཡིག་གཞན་པའི་ནང་དུ་ཉིན་རེའི་གཏམ་བཤད་ཐོག་མར་བསྒྱུར། སྐད་བརྡ་འཕྲུལ་ཆས་ཀྱིས་ཁྱེད་ཀྱི་སྐད་བརྡའི་འཚོ་བ་ཟིན་ཐོ་བཟོ།';
-
-  @override
-  String get noDataForLanguage =>
-      'ཁྱོད་ཀྱིས་སེལ་འཐུ་བྱས་པའི་སྐད་ཡིག་ནང་གི་སློབ་སྦྱོང་གི་རྒྱུ་ཆ་འདི་ས་གནས་ཀྱི་མཛོད་གཞི་ནང་མེད། རྒྱུ་ཆ་འདི་ཕབ་ལེན་བྱེད་པའམ་ཡང་ན་སྐད་ཡིག་གཞན་ཞིག་འདེམས་རོགས།';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'འ বাতিল';
-
-  @override
   String get accuracy => 'ཏག་ཏག་ཚད།';
-
-  @override
-  String get ttsMissing =>
-      'སྐད་ཡིག་འདིའི་སྒྲ་འབྱིན་འཕྲུལ་ཆས་འདི་ཁྱེད་ཀྱི་སྒྲིག་ཆས་སུ་བཙུགས་མེད།';
-
-  @override
-  String get ttsInstallGuide =>
-      'Android སྒྲིག་འཛུགས་> Google TTS ནང་དུ་སྐད་ཡིག་གི་གནས་སྡུད་འདི་བཙུགས་རོགས།';
 
   @override
   String get adLoading => 'ཁྱབ་བསྒྲགས་ནང་འཇུག་བྱེད་བཞིན་པ། གནས་སྐབས་སྒུག་རོགས།';
 
   @override
-  String get addNewSubject => 'མིང་གསརཔ་བསྣོན།';
+  String get add => 'ཁ་སྣོན།';
 
   @override
-  String get addParticipant => 'མཉམ་ཞུགས་པ་སྣོན་པ།';
+  String get addNew => 'གསར་པ་ཁ་སྣོན།';
+
+  @override
+  String get addNewSubject => 'མིང་གསརཔ་བསྣོན།';
 
   @override
   String get addTagHint => 'ཚད་རྟགས་ཁ་སྣོན།...';
@@ -87,6 +54,12 @@ class AppLocalizationsBo extends AppLocalizations {
   String get basicWordRepository => 'རྨང་གཞིའི་ཐ་སྙད་ཉར་མཛོད།';
 
   @override
+  String get basicWords => 'རྨང་གཞིའི་ཐ་སྙད་ཉར་མཛོད།';
+
+  @override
+  String get cancel => 'འ বাতিল';
+
+  @override
   String get caseObject => 'ཡུལ་སྒྲ།';
 
   @override
@@ -102,62 +75,6 @@ class AppLocalizationsBo extends AppLocalizations {
   String get caseSubject => 'བྱེད་སྒྲ།';
 
   @override
-  String get chatAiChat => 'ཁ་བརྡ།';
-
-  @override
-  String get chatAllConversations => 'གླེང་མོལ་ཡོངས་རྫོགས།';
-
-  @override
-  String get chatChoosePersona => 'མི་སྣ་འདེམས།';
-
-  @override
-  String get chatEndMessage => 'གླེང་མོ་མཇུག་སྒྲིལ་འདོད་དམ?';
-
-  @override
-  String get chatEndTitle => 'གླེང་མོ་མཇུག་སྒྲིལ་བ་དང་ཉར་ཚགས་བྱེད་པ།';
-
-  @override
-  String chatFailed(Object error) {
-    return 'གླེང་མོ་བྱེད་མ་ཐུབ: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'གླེང་མོ་བཏོན་པ ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'གླེང་མོའི་ལོ་རྒྱུས།';
-
-  @override
-  String get chatNew => 'གླེང་མོ་གསར་བ།';
-
-  @override
-  String get chatNewChat => 'གླེང་མོ་གསར་བ།';
-
-  @override
-  String get chatNoConversations => 'ད་དུང་གླེང་མོ་མེད།';
-
-  @override
-  String get chatSearchHint => 'གླེང་མོལ་གྱི་མགོ་བརྗོད་ནས་འཚོལ་ཞིབ་...';
-
-  @override
-  String get chatNoteSearchHint => 'འགྲེལ་བཤད་ནང་འཚོལ...';
-
-  @override
-  String get chatSaveAndExit => 'ཉར་ཚགས་བྱས་རྗེས་ཕྱིར་འཐོན་པ།';
-
-  @override
-  String get chatStartNewPrompt =>
-      'ཉམས་ལེན་བྱེད་པའི་ཆེད་དུ་གླེང་མོ་གསར་བ་ཞིག་འགོ་བཙུགས་དང་!';
-
-  @override
-  String get chatTypeHint => 'འཕྲིན་ཐུང་ནང་འཇུག་བྱེད་རོགས...';
-
-  @override
-  String get chatUntitled => 'མགོ་བརྗོད་མེད་པའི་གླེང་མོ།';
-
-  @override
   String get checking => 'ཞིབ་བཤེར་བྱེད་བཞིན་པ...';
 
   @override
@@ -168,13 +85,6 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get confirmDelete => 'སློབ་སྦྱོང་ཟིན་ཐོ་འདི་བསུབ་འདོད་དམ?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'ཁྱེད་ཀྱིས་གླེང་མོལ་འདི་དོར་འདོད་དམ།\nགླེང་མོལ་བསུབས་པ་ཕྱིར་སློག་བྱེད་མི་ཐུབ།';
-
-  @override
-  String get confirmDeleteParticipant => 'མཉམ་ཞུགས་པ་འདི་བསུབ་འདོད་དམ?';
 
   @override
   String get contextTagHint =>
@@ -214,23 +124,10 @@ class AppLocalizationsBo extends AppLocalizations {
   String get deleteRecord => 'ཟིན་ཐོ་བསུབ།';
 
   @override
-  String get dialogueQuestDesc =>
-      'གནས་སྟངས་འཁྲབ་སྟོན་བརྒྱུད་དེ་གླེང་མོའི་ཉམས་ལེན་བྱེད་རོགས། འོས་འཚམ་གྱི་ལན་འདེམས་པ་དང་བཤད་རོགས།';
-
-  @override
-  String get dialogueQuestTitle => 'གླེང་མོའི་འཚོལ་ཞིབ།';
-
-  @override
-  String get disambiguationPrompt => 'དོན་སྙིང་གང་ཞིག་ཏུ་བསྒྱུར་འདོད་དམ?';
-
-  @override
-  String get disambiguationTitle => 'དོན་སྙིང་འདེམས།';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'ཁྱེད་ལ་རྩིས་ཐོ་མེད་དམ?';
-
-  @override
-  String get editParticipant => 'མཉམ་ཞུགས་པ་བཟོ་བཅོས་བྱེད།';
 
   @override
   String get email => 'གློག་རྡུལ་ཡིག་ཟམ།';
@@ -238,6 +135,9 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'གློག་འཕྲིན་ཁ་བྱང་འདི་སྔོན་ནས་ཐོ་འགོད་ཟིན་པས། ཐོ་འཇུག་བྱེད་པའམ་ཡང་ན་གསང་གྲངས་འཚོལ་བར་བེད་སྤྱོད་བྱེད་རོགས།';
+
+  @override
+  String get enterNameHint => 'མིང་འབྲི་རོགས།';
 
   @override
   String get enterNewSubjectName => 'མིང་གསརཔ་བཙུགས།';
@@ -275,6 +175,9 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get errors => 'ནོར:';
+
+  @override
+  String get extractedText => 'འདོན་འདྲེན་བྱས་པའི་ཚིག་དོན།';
 
   @override
   String get female => 'མོ།';
@@ -334,12 +237,6 @@ class AppLocalizationsBo extends AppLocalizations {
   String get gender => 'ཕོ་མོ།';
 
   @override
-  String get labelFilterMaterial => 'དཔྱད་གཞིའི་ཡིག་ཆ།';
-
-  @override
-  String get labelFilterTag => 'རྟགས།';
-
-  @override
   String get generalTags => 'སྤྱིར་བཏང་གི་རྟགས།';
 
   @override
@@ -352,19 +249,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get googleContinue => 'Google བརྒྱུད་ནས་མུ་མཐུད་དུ་འགྲོ་།';
 
   @override
-  String get helpDialogueImportDesc =>
-      'JSON ཡིག་ཆ་བརྒྱུད་ནས་གླེང་མོའི་ཚོགས་ཚང་མ་ནང་འདྲེན་བྱེད།';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc =>
       'To import study materials in Mode 3, create a JSON file with the following structure:';
-
-  @override
-  String get helpJsonTypeDialogue => 'གླེང་མོ (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'ཚིག་ (Sentence)';
@@ -397,12 +283,12 @@ class AppLocalizationsBo extends AppLocalizations {
       '• Select Material: Choose learning pack\n• Interval: [-] [+] to adjust wait time (3s-60s)\n• Start/Stop: Control shadowing session\n• Speak: Listen to audio and repeat after it\n• Feedback: Accuracy score (0-100) with color code\n• Search Conditions: Filter practice targets by Tags, Recent N, or Start char';
 
   @override
-  String get helpModeChatDesc =>
-      'AI གདོང་རིས་དང་མཉམ་དུ་སྐད་ཆ་བཤད་ནས་དངོས་སྦྱོང་གི་ཁ་བརྡ་སྦྱོང་།';
+  String get helpNote =>
+      'མིང་ཚིག་གི་དོན་དང་ དཔེར་བརྗོད། གནས་སྟངས་ཚུ་རང་དབང་ཐོག་འབྲི།';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI བགྲོ་གླེང་། འོག་གི་ཨེབ་ཐེབ་ཀྱི་ \'བགྲོ་གླེང་\' འདེམས་ཐོ་ནས་མི་སྣ་དང་དངོས་སྦྱོང་གི་གཏམ་བཤད་བྱེད།\n• མི་སྣའི་སྒྲིག་སྦྱོར། ཕ་རོལ་པོའི་ཕོ་མོའི་རྟགས་དང་། མིང་། སྐད་བརྡའི་ཨང་རྟགས་རང་དབང་གིས་བཀོད་སྒྲིག་བྱེད།\n• GPS གནས་སྟངས་འཁྲབ་སྟོན། ད་ལྟའི་ངའི་གནས་ས་ངོས་འཛིན་བྱེད་དེ་གནས་སའི་འོས་འབབ་ཀྱི་གཏམ་བཤད་ཀྱི་བརྗོད་གཞི་མཐོང་སྟོན་བྱེད།\n• སྐད་བརྡ་གཉིས། AI ཡི་ལན་བསྒྱུར་ཡིག་དང་མཉམ་དུ་མངོན་པས་སྦྱོང་བརྡར་གྱི་ཕན་འབྲས་ཆེ་རུ་གཏོང་།\n• ཟིན་ཐོ་དོ་དམ། འདས་སོང་གི་བགྲོ་གླེང་གི་ནང་དོན་ཚགས་འདྲི་དང་བགྲོ་གླེང་གི་བར་དུ་ངེས་ཅན་གྱི་འཕྲིན་ཐུང་སྦྱོང་བརྡར་གྱི་ཡིག་ཆར་ཉར་ཚགས་བྱེད།';
+  String get helpNotebook =>
+      'བསྒྱུར་ཡིག་འབྲི་དེབ་ཉར་ཚགས་འབད་ནིའི་ फोल्डर སེལ་འཐུ་འབད།';
 
   @override
   String get helpTabJson => 'JSON རྣམ་གཞག';
@@ -417,6 +303,10 @@ class AppLocalizationsBo extends AppLocalizations {
   String get helpTabTour => 'ཉམས་ལེན་བྱེད།';
 
   @override
+  String get helpTag =>
+      'མ་འོངས་པར་དབྱེ་དཔྱད་འབད་ནི་དང་འཚོལ་ཞིབ་འབད་ནིའི་དོན་ལུ་ түлхүүр үг བཙུགས།';
+
+  @override
   String get helpTitle => 'རོགས་རམ་ & ལམ་སྟོན།';
 
   @override
@@ -425,6 +315,16 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get hide => 'སྦེད་པ།';
+
+  @override
+  String get hintNoteExample =>
+      'དཔེར་ན། གནས་སྟངས་ཀྱི་འགྲེལ་བཤད། མིང་འདྲ་དོན་མང་། སོགས་ལྟ་བུ།';
+
+  @override
+  String get hintTagExample => 'དཔེར་ན། ཚོང་ལས། འགྲུལ་བཞུད། སོགས་ལྟ་བུ།';
+
+  @override
+  String get homeTab => 'སྐད་བསྒྱུར།';
 
   @override
   String importAdded(int count) {
@@ -437,23 +337,6 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'མགོ་བརྗོད་གཅིག་མཚུངས་ཀྱི་དཔྱད་ཆས་ད་སྔོན་ནས་ཡོད། མགོ་བརྗོད་བསྒྱུར་རྗེས་ཡང་བསྐྱར་འབད་བརྩོན་བྱེད་རོགས།';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -469,6 +352,11 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'ཡིག་ཆ$filesདང་། ཐོ་འགོད$entriesནང་འདྲེན་བྱས།';
+  }
+
+  @override
   String get importJsonFile => 'JSON ཡིག་ཆ་ནང་འདྲེན་བྱེད།';
 
   @override
@@ -480,12 +368,30 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'ཇེ་སོན་ཡིག་ཆ་རྐྱང་པ།';
+
+  @override
+  String get importSourceFolder => 'སྣོད་འཛིན(སྐད་ཡིག་གི་དཔེ་མཛོད་གྲུབ་ཚུལ།)';
+
+  @override
+  String get importSourceTitle => 'ནང་འདྲེན་བྱེད་ཡུལ་འདེམས།';
+
+  @override
+  String get importSourceZip => 'ཛིབ་ཡིག་ཆ(སྡུས་བསྡམས་སྣོད་འཛིན།)';
+
+  @override
   String importTotal(int count) {
     return 'སྤྱི: $count ཁ།';
   }
 
   @override
   String get importing => 'Importing...';
+
+  @override
+  String get inputContent => 'ནང་འཇུག་གི་ནང་དོན།';
+
+  @override
+  String get inputLanguage => 'འཇུག་པའི་སྐད།';
 
   @override
   String get inputModeTitle => 'ནང་འཇུག';
@@ -502,19 +408,22 @@ class AppLocalizationsBo extends AppLocalizations {
   String get kakaoContinue => 'ཀ་ཀའོ་བརྒྱུད་མཐུད་མཐུད་པ།';
 
   @override
-  String get labelLangCode => 'སྐད་ཆའི་ཨང་རྟགས་ (དཔེར་ན། en-US, ko-KR)';
+  String get labelDetails => 'ཞིབ་ཕྲའི་སྒྲིག་འཛུགས།';
 
   @override
-  String get labelName => 'མིང་།';
+  String get labelFilterMaterial => 'དཔྱད་གཞིའི་ཡིག་ཆ།';
+
+  @override
+  String get labelFilterTag => 'རྟགས།';
+
+  @override
+  String get labelLangCode => 'སྐད་ཆའི་ཨང་རྟགས་ (དཔེར་ན། en-US, ko-KR)';
 
   @override
   String get labelNote => 'ཟིན་བྲིས།';
 
   @override
   String get labelPOS => 'རྣམ་དབྱེ།';
-
-  @override
-  String get labelRole => 'ལས་འགན།';
 
   @override
   String get labelSentence => 'ཚིག';
@@ -565,10 +474,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String get listening => 'ཉན་བཞིན་པ...';
 
   @override
-  String get loadingParticipants => 'མཉམ་ཞུགས་པ་ནང་འཇུག་བྱེད་བཞིན་པ...';
-
-  @override
-  String get location => 'གནས་ས།';
+  String get location => 'གནས་ཡུལ།';
 
   @override
   String get login => 'འཛུལ་ཞུགས།';
@@ -586,9 +492,6 @@ class AppLocalizationsBo extends AppLocalizations {
   String get male => 'ཕོ།';
 
   @override
-  String get manageParticipants => 'མཉམ་ཞུགས་པ་དོ་དམ།';
-
-  @override
   String get manual => 'ལག་འབྲི།';
 
   @override
@@ -596,9 +499,6 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get materialInfo => 'དཔྱད་ཆས་གནས་ཚུལ།';
-
-  @override
-  String get me => 'ང་།';
 
   @override
   String get menuDeviceImport => 'སྒྲིག་ཆས་ནས་དཔྱད་ཆས་ལེན་པ།';
@@ -666,27 +566,20 @@ class AppLocalizationsBo extends AppLocalizations {
   String get neutral => 'ཕྱོགས་གཏོགས་མེད།';
 
   @override
+  String get newNotebookTitle => 'དཔེ་དེབ་གསར་པའི་མིང་།';
+
+  @override
   String get newSubjectName => 'བརྗོད་བྱའི་མིང་གསརཔ།';
 
   @override
   String get next => 'རྗེས་མ།';
 
   @override
-  String get noDialogueHistory => 'གླེང་མོའི་ལོ་རྒྱུས་མེད།';
-
-  @override
-  String get noInternetWarningMic =>
-      'དྲ་རྒྱ་མི་འདུག དྲ་རྒྱ་མེད་པའི་སྐབས་སུ་སྐད་ངག་ངོས་འཛིན་བྱེད་མི་ཐུབ་པའང་སྲིད།';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'དྲ་རྒྱ་མི་འདུག དྲ་རྒྱ་མེད་པའི་སྐབས་སུ་བསྒྱུར་བའི་ནུས་པ་སྤྱོད་མི་ཐུབ། བསྐྱར་སྦྱོང་ཐབས་ལམ་སྤྱོད་རོགས།';
+  String get noDataForLanguage =>
+      'ཁྱོད་ཀྱིས་སེལ་འཐུ་བྱས་པའི་སྐད་ཡིག་ནང་གི་སློབ་སྦྱོང་གི་རྒྱུ་ཆ་འདི་ས་གནས་ཀྱི་མཛོད་གཞི་ནང་མེད། རྒྱུ་ཆ་འདི་ཕབ་ལེན་བྱེད་པའམ་ཡང་ན་སྐད་ཡིག་གཞན་ཞིག་འདེམས་རོགས།';
 
   @override
   String get noMaterialsInCategory => 'རིགས་དབྱེ་འདིའི་ནང་དུ་དཔྱད་ཆས་མེད།';
-
-  @override
-  String get noParticipantsFound => 'ཐོ་འགོད་བྱས་པའི་མཉམ་ཞུགས་པ་མེད།';
 
   @override
   String get noRecords => 'བདམས་པའི་སྐད་ཆའི་སློབ་སྦྱོང་ཟིན་ཐོ་མེད།';
@@ -707,6 +600,10 @@ class AppLocalizationsBo extends AppLocalizations {
   String get notSelected => '- གདམ་ག་བྱས་མེད། -';
 
   @override
+  String get noteGuidance =>
+      'ཡང་དག་པའི་ལོ་ཙཱའི་ཆེད་དུ་ཁྱེད་ཀྱིས་ཞིབ་ཕྲའི་གནས་ཚུལ་ཁ་སྣོན་འཇུག་ས།';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'དྲ་རྒྱའི་མཐུད་སྦྱོར་ཞིབ་བཤེར་བྱེད་པའམ་ཡང་ན་ཕྱིས་སུ་ཡང་བསྐྱར་འབད་བརྩོན་བྱེད་རོགས།';
 
@@ -718,16 +615,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'དཔྱད་ཆས་མེད།';
 
   @override
-  String get participantDeleted => 'མཉམ་ཞུགས་པ་བསུབས་ཟིན།';
-
-  @override
-  String get participantRename => 'མཉམ་ཞུགས་པའི་མིང་བསྒྱུར།';
-
-  @override
-  String get partner => 'རོགས་ཟླ།';
-
-  @override
-  String get partnerMode => 'རོགས་ཟླའི་ཐབས་ལམ།';
+  String get openSettings => 'སྒྲིག་འཛུགས་ཁ་ཕྱེ།';
 
   @override
   String get password => 'གསང་ཨང་།';
@@ -739,13 +627,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String get perfect => 'འགྲིག་འགྲིག';
 
   @override
-  String get personaFriend => 'ས་གནས་གྲོགས་པོ།';
-
-  @override
-  String get personaGuide => 'ཡུལ་སྐོར་ལམ་སྟོན།';
-
-  @override
-  String get personaTeacher => 'དབྱིན་ཇིའི་དགེ་རྒན།';
+  String get pickGallery => 'པར་མཛོད་ནས་འདེམས།';
 
   @override
   String get playAgain => 'ཡང་བསྐྱར་རྩེད།';
@@ -765,6 +647,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String get posAdverb => 'བྱ་ཚིག་འབྲེལ་ཡུ།';
 
   @override
+  String get posArticle => 'རྩོམ་ཡིག';
+
+  @override
   String get posConjunction => 'འབྲེལ་མཐུད་ཚིག';
 
   @override
@@ -772,6 +657,9 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get posNoun => 'མིང་ཚིག';
+
+  @override
+  String get posParticle => 'རྡུལ་ཕྲན།';
 
   @override
   String get posPreposition => 'གནས་སྟོན་ཚིག';
@@ -789,9 +677,33 @@ class AppLocalizationsBo extends AppLocalizations {
   String get practiceWordsOnly => 'ཐ་སྙད་ཁོ་ནར་ཉམས་ལེན་བྱེད།';
 
   @override
+  String get processing => 'ལས་སྣོན་བྱེད་པ།...';
+
+  @override
   String progress(int current, int total) {
     return 'འཕེལ་རིམ: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'དཀར་ཆག་ > སྐད་བརྡ་སྒྲིག་འཛུགས་ནང་ནས་རང་གི་སྐད་བརྡ་དང་སློབ་སྦྱོང་སྐད་བརྡ་ཐོག་མར་གཏན་འཁེལ་བྱེད།';
+
+  @override
+  String get quickStartStep1Title => '༡. སྐད་བརྡ་སྒྲིག་འཛུགས།';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ནང་འཇུག་( microphone/keyboard) -> བསྒྱུར་བཅོས་ -> གསོག་འཇོག་གོ་རིམ་ལྟར་རང་ཉིད་ཀྱི་སློབ་སྦྱོང་ཤོག་བྱང་བཟོས།';
+
+  @override
+  String get quickStartStep2Title => '༢. རྒྱུན་ལམ་གཞི་རྩ།';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ཁ་བརྡས་ལག་ལེན་བྱེད་, སྒྲ་གདངས་ལག་ལེན་  Tab ནང་ཡི་གེ་མཐོང་སྟེ་ཐད་ཀར་སྒྲ་གདངས་བཏོན་ནས་ལག་ལེན་བྱེད།';
+
+  @override
+  String get quickStartStep3Title => '༣. བྱེད་ལུགས་སྤྱོད།';
 
   @override
   String recentNItems(int count) {
@@ -816,6 +728,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String get refresh => 'བསྐྱར་སོས་བྱེད།';
 
   @override
+  String get requestTranslation => 'སྐད་བསྒྱུར་རེ་འདུན་འབུལ་བ།';
+
+  @override
   String get reset => 'ཐོག་མར་སླར་གསོ།';
 
   @override
@@ -836,16 +751,13 @@ class AppLocalizationsBo extends AppLocalizations {
   String get reviewModeTitle => 'བསྐྱར་སྦྱོང་།';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'ཕྱོགས་གསུམ་པ།';
-
-  @override
-  String get roleUser => 'བཀོལ་སྤྱོད་པ།';
-
-  @override
   String get save => 'བསྲུང་';
+
+  @override
+  String get saveAsSentence => 'ཚིག་གྲུབ་ཏུ་ཉར།';
+
+  @override
+  String get saveAsWord => 'ཚིག་ཏུ་ཉར།';
 
   @override
   String get saveData => 'གཞི་གྲངས་ཉར་ཚགས།';
@@ -856,6 +768,9 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'ཞིབ་བཤེར་ལོ་རྒྱུས་སུ་ཉར།';
+
+  @override
   String get saveTranslationsFromSearch =>
       'འཚོལ་ཞིབ་ཐབས་ལམ་ནས་བསྒྱུར་བ་ཉར་ཚགས་བྱེད་རོགས།';
 
@@ -864,6 +779,12 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get saving => 'ཉར་ཚགས་བྱེད་བཞིན་པ...';
+
+  @override
+  String get scanInstructions => 'ཞིབ་བཤེར་བྱེད་པའི་པར་རིས་ཤིག་འདེམས།';
+
+  @override
+  String get scanLabel => 'ཞིབ་བཤེར།';
 
   @override
   String score(String score) {
@@ -910,16 +831,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String get selectPOS => 'རིགས་གྲས་འདེམས།';
 
   @override
-  String get selectParticipants => 'མཉམ་ཞུགས་པ་འདེམས།';
-
-  @override
-  String get selectSentenceType => 'ཚིག་རིགས་འདེམས།';
-
-  @override
   String get selectStudyMaterial => 'སློབ་སྦྱོང་དཔྱད་ཆས་འདེམས།';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'ཚིག';
@@ -928,43 +840,14 @@ class AppLocalizationsBo extends AppLocalizations {
   String get signUp => 'ཐོ་འགོད་བྱེད།';
 
   @override
-  String get similarTextFound => 'འདྲ་བའི་ཡི་གེ་རྙེད་བྱུང་།';
-
-  @override
-  String get skip => 'མི་དགོས་པར་བཞག';
-
-  @override
-  String get source => 'འབྱུང་ཁུངས:';
-
-  @override
-  String get sourceLanguage => 'འབྱུང་ཁུངས་སྐད་ཆ།';
+  String get simplifiedGuidance =>
+      'སྐད་ཡིག་གཞན་པའི་ནང་དུ་ཉིན་རེའི་གཏམ་བཤད་ཐོག་མར་བསྒྱུར། སྐད་བརྡ་འཕྲུལ་ཆས་ཀྱིས་ཁྱེད་ཀྱི་སྐད་བརྡའི་འཚོ་བ་ཟིན་ཐོ་བཟོ།';
 
   @override
   String get sourceLanguageLabel => 'ངའི་སྐད་ཆ (Source)';
 
   @override
-  String get speakNow => 'ད་ལྟ་བཤད་རོགས!';
-
-  @override
-  String get speaker => 'གཏམ་བཤད་པ།';
-
-  @override
-  String get speakerSelect => 'གཏམ་བཤད་པ་འདེམས།';
-
-  @override
-  String get speakingPractice => 'སྐད་ཆ་ཤོད་པའི་ཉམས་ལེན།';
-
-  @override
-  String get startChat => 'གླེང་མོ་འགོ་བཙུགས།';
-
-  @override
-  String get startPractice => 'ཉམས་ལེན་འགོ་བཙུགས།';
-
-  @override
   String get startTutorial => 'སློབ་ཚན་འགོ་བཙུགས།';
-
-  @override
-  String get startWarning => 'དོགས་ཟོན།';
 
   @override
   String get startsWith => 'འགོ་བཙུགས་པའི་ཡི་གེ';
@@ -974,28 +857,22 @@ class AppLocalizationsBo extends AppLocalizations {
       'ཁྱེད་ཀྱི་གློག་འཕྲིན་ནང་ཞིབ་བཤེར་བྱས་ཏེ་དེའི་ར་སྤྲོད་གནང་རོགས།';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'ཕབ་ལེན་བྱེད་བཞིན་པ: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'ནང་འདྲེན་བྱེད་མ་ཐུབ: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name ནང་འདྲེན་ལེགས་འགྲུབ།';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'འཛུལ་ཞུགས་མེད་པར་བཟོས།';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'འཛུལ་ཞུགས་བྱེད་པར་འཐུས་ཤོར་བྱུང་: $error';
   }
 
@@ -1006,23 +883,23 @@ class AppLocalizationsBo extends AppLocalizations {
   String get statusLogoutSuccess => 'ཕྱིར་འཐོན་ཟིན།';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'ཐོ་འགོད་བྱེད་པར་འཐུས་ཤོར་བྱུང་: $error';
+  String statusRequestFailed(String error) {
+    return 'སྐད་བསྒྱུར་རེ་འདུན་འབུལ་མི་ཐུབ་པ།: $error';
   }
 
   @override
-  String get statusSigningUp => 'ཐོ་འགོད་བྱེད་བཞིན་པ...';
+  String get statusRequestSuccess => 'སྐད་བསྒྱུར་རེ་འདུན་ལེགས་གྲུབ་བྱུང་།';
 
   @override
   String get stopPractice => 'ཉམས་ལེན་མཚམས་འཇོག';
 
   @override
-  String get studyComplete => 'སློབ་སྦྱོང་ལེགས་འགྲུབ།';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'ཁྱེད་ཀྱིས་བདམས་པའི་ཡིག་ཆ་དེས་ད་ལྟའི་སློབ་སྦྱོང་སྐད་ཡིག་($targetLang)ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པས་ས་གནས་སུ་ཉར་ཚགས་བྱེད་མི་ཐུབ། སྐད་བསྒྱུར་རེ་འདུན་འབུལ་འདོད་དམ།';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'སློབ་སྦྱོང་ཟིན་ཐོ་($count)';
-  }
+  String get studyLangNotFoundTitle => 'སློབ་སྦྱོང་སྐད་ཡིག་འཚོལ་མ་ཐོབ།';
 
   @override
   String get styleFormal => 'གུས་ཞབས།';
@@ -1037,22 +914,10 @@ class AppLocalizationsBo extends AppLocalizations {
   String get styleSlang => 'སླང་/སྤྱིར་བཏང་།';
 
   @override
-  String get subject => 'མགོ་བརྗོད:';
-
-  @override
   String get swapLanguages => 'སྐད་ཆ་བརྗེ་སྒྱུར་བྱེད།';
 
   @override
-  String get switchToAi => 'AI ཐབས་ལམ་ལ་བསྒྱུར།';
-
-  @override
-  String get switchToPartner => 'རོགས་ཟླའི་ཐབས་ལམ་ལ་བསྒྱུར།';
-
-  @override
   String get syncingData => 'གཞི་གྲངས་མཐུན་སྒྲིག་བྱེད་བཞིན་པ...';
-
-  @override
-  String get tabConversation => 'གླེང་མོ།';
 
   @override
   String tabReview(int count) {
@@ -1116,6 +981,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String get tooltipSearch => 'འཚོལ།';
 
   @override
+  String get tooltipSettingsConfirm => 'སྒྲིག་འཛུགས་གཏན་འཁེལ།';
+
+  @override
   String get tooltipSpeaking => 'སྐད་ཆ་ཤོད་པ།';
 
   @override
@@ -1128,6 +996,9 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get translate => 'བསྒྱུར།';
+
+  @override
+  String get translateNow => 'ད་ལྟ་ཕབ་བསྒྱུར་བྱེད།';
 
   @override
   String get translating => 'བསྒྱུར་བཞིན་པ...';
@@ -1144,6 +1015,9 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'བསྒྱུར་བའི་སྐད།';
+
+  @override
   String get translationLimitExceeded => 'བསྒྱུར་བའི་ཚད་ལས་བརྒལ་བ།';
 
   @override
@@ -1157,6 +1031,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String get translationRefilled => 'བསྒྱུར་བའི་ཐེངས་གྲངས་ཐེངས་5ཁ་གསབ་བྱས་ཟིན!';
 
   @override
+  String get translationResult => 'ཕབ་བསྒྱུར་གྱི་གྲུབ་འབྲས།';
+
+  @override
   String get translationResultHint =>
       'བསྒྱུར་བའི་མཇུག་འབྲས - བཟོ་བཅོས་བྱེད་ཆོག';
 
@@ -1164,11 +1041,16 @@ class AppLocalizationsBo extends AppLocalizations {
   String get tryAgain => 'ཡང་བསྐྱར་འབད་བརྩོན་བྱེད།';
 
   @override
-  String get tutorialAiChatDesc =>
-      'AI མི་སྣ་དང་མཉམ་དུ་དངོས་སྦྱོང་གླེང་མོ་བྱེད་རོགས།';
+  String get ttsInstallGuide =>
+      'Android སྒྲིག་འཛུགས་> Google TTS ནང་དུ་སྐད་ཡིག་གི་གནས་སྡུད་འདི་བཙུགས་རོགས།';
 
   @override
-  String get tutorialAiChatTitle => 'AI ཁ་བརྡ།';
+  String get ttsMissing =>
+      'སྐད་ཡིག་འདིའི་སྒྲ་འབྱིན་འཕྲུལ་ཆས་འདི་ཁྱེད་ཀྱི་སྒྲིག་ཆས་སུ་བཙུགས་མེད།';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'འདི་ག་ཐབས་སྒྲིག་གི་སྔོན་འཛིན་སྒྲིག་འགོད་འདི་གིས་སྐད་ཡིག་འདི་གི་ངག་ཐོག་གཏང་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།';
 
   @override
   String get tutorialContextDesc =>
@@ -1285,7 +1167,13 @@ class AppLocalizationsBo extends AppLocalizations {
   String get typeExclamation => 'འབོད་སྒྲའི་ཚིག';
 
   @override
+  String get typeIdiom => 'གཏམ་དཔེ།';
+
+  @override
   String get typeImperative => 'བཀའ་རྒྱའི་ཚིག';
+
+  @override
+  String get typeProverb => 'གཏམ་ཚིག/ལེགས་བཤད།';
 
   @override
   String get typeQuestion => 'དྲི་ཚིག';
@@ -1300,6 +1188,11 @@ class AppLocalizationsBo extends AppLocalizations {
   String get useExistingText => 'ད་ཡོད་ཀྱི་ཡི་གེ་བཀོལ་སྤྱོད་བྱེད།';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'དྲ་ཐོག་ལམ་སྟོན་ལ་བལྟ་བ།';
 
   @override
@@ -1307,6 +1200,16 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'ཁྱབ་བསྒྲགས་བལྟས་ཏེ་ཁ་གསབ་བྱེད (+5 ཐེངས།)';
+
+  @override
+  String get welcomeButton => 'འགོ་འཛུགས།';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie ནང་ལ་ཕེབས་པ་དགའ་བསུ་ཞུ། འཛམ་གླིང་ནང་གི་སྐད་ཡིག་ 80 ལྷག་ཙམ་ལ་བརྒྱ་ཆ་བརྒྱ་ཐམ་པའི་ཆ་ཚང་དང་ལྡན་པའི་རྒྱབ་སྐྱོར་བྱེད་པ་དང་། སྤུས་ལེགས་གསུམ་ཚད་ཀྱི་བཟོ་བཀོད་གསར་པ་དང་ནུས་རྩལ་ལེགས་བཅོས་བྱས་པ་བརྒྱུད་ནས་སྦྱོང་བརྡར་གྱི་ཉམས་མྱོང་ཆ་ཚང་ཞིག་སྟེར་ངེས།';
+
+  @override
+  String get welcomeTitle => 'Talkie ལ་ཕེབས་པར་དགའ་བསུ་ཞུ།';
 
   @override
   String get word => 'ཐ་སྙད།';
@@ -1323,114 +1226,4 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ངའི་ཀློག་སྟངས།';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'འདི་ག་ཐབས་སྒྲིག་གི་སྔོན་འཛིན་སྒྲིག་འགོད་འདི་གིས་སྐད་ཡིག་འདི་གི་ངག་ཐོག་གཏང་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།';
-
-  @override
-  String get homeTab => 'སྐད་བསྒྱུར།';
-
-  @override
-  String get welcomeTitle => 'Talkie ལ་ཕེབས་པར་དགའ་བསུ་ཞུ།';
-
-  @override
-  String get welcomeDesc =>
-      'Talkie ནང་ལ་ཕེབས་པ་དགའ་བསུ་ཞུ། འཛམ་གླིང་ནང་གི་སྐད་ཡིག་ 80 ལྷག་ཙམ་ལ་བརྒྱ་ཆ་བརྒྱ་ཐམ་པའི་ཆ་ཚང་དང་ལྡན་པའི་རྒྱབ་སྐྱོར་བྱེད་པ་དང་། སྤུས་ལེགས་གསུམ་ཚད་ཀྱི་བཟོ་བཀོད་གསར་པ་དང་ནུས་རྩལ་ལེགས་བཅོས་བྱས་པ་བརྒྱུད་ནས་སྦྱོང་བརྡར་གྱི་ཉམས་མྱོང་ཆ་ཚང་ཞིག་སྟེར་ངེས།';
-
-  @override
-  String get welcomeButton => 'འགོ་འཛུགས།';
-
-  @override
-  String get labelDetails => 'ཞིབ་ཕྲའི་སྒྲིག་འཛུགས།';
-
-  @override
-  String get translationResult => 'ཕབ་བསྒྱུར་གྱི་གྲུབ་འབྲས།';
-
-  @override
-  String get inputContent => 'ནང་འཇུག་གི་ནང་དོན།';
-
-  @override
-  String get translateNow => 'ད་ལྟ་ཕབ་བསྒྱུར་བྱེད།';
-
-  @override
-  String get tooltipSettingsConfirm => 'སྒྲིག་འཛུགས་གཏན་འཁེལ།';
-
-  @override
-  String get hintNoteExample =>
-      'དཔེར་ན། གནས་སྟངས་ཀྱི་འགྲེལ་བཤད། མིང་འདྲ་དོན་མང་། སོགས་ལྟ་བུ།';
-
-  @override
-  String get hintTagExample => 'དཔེར་ན། ཚོང་ལས། འགྲུལ་བཞུད། སོགས་ལྟ་བུ།';
-
-  @override
-  String get addNew => 'གསར་པ་ཁ་སྣོན།';
-
-  @override
-  String get newNotebookTitle => 'དཔེ་དེབ་གསར་པའི་མིང་།';
-
-  @override
-  String get enterNameHint => 'མིང་འབྲི་རོགས།';
-
-  @override
-  String get add => 'ཁ་སྣོན།';
-
-  @override
-  String get openSettings => 'སྒྲིག་འཛུགས་ཁ་ཕྱེ།';
-
-  @override
-  String get helpNotebook =>
-      'བསྒྱུར་ཡིག་འབྲི་དེབ་ཉར་ཚགས་འབད་ནིའི་ फोल्डर སེལ་འཐུ་འབད།';
-
-  @override
-  String get helpNote =>
-      'མིང་ཚིག་གི་དོན་དང་ དཔེར་བརྗོད། གནས་སྟངས་ཚུ་རང་དབང་ཐོག་འབྲི།';
-
-  @override
-  String get helpTag =>
-      'མ་འོངས་པར་དབྱེ་དཔྱད་འབད་ནི་དང་འཚོལ་ཞིབ་འབད་ནིའི་དོན་ལུ་ түлхүүр үг བཙུགས།';
-
-  @override
-  String get requestTranslation => 'སྐད་བསྒྱུར་རེ་འདུན་འབུལ་བ།';
-
-  @override
-  String get statusRequestSuccess => 'སྐད་བསྒྱུར་རེ་འདུན་ལེགས་གྲུབ་བྱུང་།';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'སྐད་བསྒྱུར་རེ་འདུན་འབུལ་མི་ཐུབ་པ།: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'སློབ་སྦྱོང་སྐད་ཡིག་འཚོལ་མ་ཐོབ།';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'ཁྱེད་ཀྱིས་བདམས་པའི་ཡིག་ཆ་དེས་ད་ལྟའི་སློབ་སྦྱོང་སྐད་ཡིག་($targetLang)ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པས་ས་གནས་སུ་ཉར་ཚགས་བྱེད་མི་ཐུབ། སྐད་བསྒྱུར་རེ་འདུན་འབུལ་འདོད་དམ།';
-  }
-
-  @override
-  String get quickStartStep1Title => '༡. སྐད་བརྡ་སྒྲིག་འཛུགས།';
-
-  @override
-  String get quickStartStep1Desc =>
-      'དཀར་ཆག་ > སྐད་བརྡ་སྒྲིག་འཛུགས་ནང་ནས་རང་གི་སྐད་བརྡ་དང་སློབ་སྦྱོང་སྐད་བརྡ་ཐོག་མར་གཏན་འཁེལ་བྱེད།';
-
-  @override
-  String get quickStartStep2Title => '༢. རྒྱུན་ལམ་གཞི་རྩ།';
-
-  @override
-  String get quickStartStep2Desc =>
-      'ནང་འཇུག་( microphone/keyboard) -> བསྒྱུར་བཅོས་ -> གསོག་འཇོག་གོ་རིམ་ལྟར་རང་ཉིད་ཀྱི་སློབ་སྦྱོང་ཤོག་བྱང་བཟོས།';
-
-  @override
-  String get quickStartStep3Title => '༣. བྱེད་ལུགས་སྤྱོད།';
-
-  @override
-  String get quickStartStep3Desc =>
-      'ཁ་བརྡས་ལག་ལེན་བྱེད་, སྒྲ་གདངས་ལག་ལེན་  Tab ནང་ཡི་གེ་མཐོང་སྟེ་ཐད་ཀར་སྒྲ་གདངས་བཏོན་ནས་ལག་ལེན་བྱེད།';
-
-  @override
-  String get noteGuidance =>
-      'ཡང་དག་པའི་ལོ་ཙཱའི་ཆེད་དུ་ཁྱེད་ཀྱིས་ཞིབ་ཕྲའི་གནས་ཚུལ་ཁ་སྣོན་འཇུག་ས།';
 }

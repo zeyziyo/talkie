@@ -1,32 +1,10 @@
 {
   "@@locale": "sl",
-  "basicWords": "Osnovno skladišče besed",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Vhodni jezik",
-  "translationLanguage": "Jezik prevoda",
-  "simplifiedGuidance": "Takojšnja pretvorba vsakodnevnih pogovorov v tuj jezik! Talkie beleži vaše jezikovno življenje.",
-  "noDataForLanguage": "Za izbrani jezik ni učnega gradiva v lokalni bazi podatkov. Prenesite gradivo ali izberite drug jezik.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Prekliči",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Točnost",
-  "ttsMissing": "Za ta jezik ni nameščen mehanizem za pretvorbo besedila v govor.",
-  "ttsInstallGuide": "V nastavitvah sistema Android > Google TTS namestite podatke za ta jezik.",
   "adLoading": "Oglas se nalaga. Poskusite znova pozneje.",
+  "add": "Dodaj",
+  "addNew": "Dodaj novo",
   "addNewSubject": "Dodaj novo ime",
-  "addParticipant": "Dodaj udeleženca",
   "addTagHint": "Dodaj oznako...",
   "alreadyHaveAccount": "Že imate račun?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Osnovno skladišče besed",
+  "basicWords": "Osnovno skladišče besed",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Prekliči",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Tožilnik",
   "casePossessive": "Lastnik",
   "casePossessivePronoun": "Lastnilni zaimek",
   "caseReflexive": "Povratni zaimek",
   "caseSubject": "Imenovalnik",
-  "chatAiChat": "Klepet",
-  "chatAllConversations": "Vsi pogovori",
-  "chatChoosePersona": "Izberite osebnost",
-  "chatEndMessage": "Ali želite končati pogovor?",
-  "chatEndTitle": "Končaj in shrani pogovor",
-  "chatFailed": "Klepet ni uspel: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Izvleček pogovora ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Zgodovina pogovorov",
-  "chatNew": "Nov pogovor",
-  "chatNewChat": "Nov pogovor",
-  "chatNoConversations": "Še nimate pogovorov",
-  "chatSearchHint": "Iskanje po naslovu pogovora ...",
-  "chatNoteSearchHint": "Poiščite v opombah ...",
-  "chatSaveAndExit": "Shrani in izstopi",
-  "chatStartNewPrompt": "Začnite nov pogovor za vadbo!",
-  "chatTypeHint": "Vnesite sporočilo ...",
-  "chatUntitled": "Pogovor brez naslova",
   "checking": "Preverjam ...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Želite izbrisati ta pogovor?\nIzbrisanih pogovorov ni mogoče obnoviti.",
-  "confirmDeleteParticipant": "Želite izbrisati tega udeleženca?",
   "contextTagHint": "Zapišite situacijo, da jo boste lažje prepoznali pozneje",
   "contextTagLabel": "Kontekst/situacija (neobvezno) – Primer: jutranji pozdrav, vljudnost",
   "copiedToClipboard": "Kopirano v odložišče!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Vadite pogovor s situacijsko komedijo. Izberite ustrezen odgovor in ga izgovorite.",
-  "dialogueQuestTitle": "Dialogna naloga",
-  "disambiguationPrompt": "Kateri pomen želite prevesti?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Izbira pomena",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Nimate računa?",
-  "editParticipant": "Uredi udeleženca",
   "email": "E-pošta",
   "emailAlreadyInUse": "Ta e-poštni naslov je že v uporabi. Prijavite se ali uporabite možnost za obnovitev gesla.",
+  "enterNameHint": "Vnesite ime",
   "enterNewSubjectName": "Vnesite novo ime",
   "enterSentenceHint": "Vnesite stavek...",
   "enterTextHint": "Vnesite besedilo za prevajanje",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Prepoznano besedilo",
   "female": "Ženska",
   "file": "Datoteka:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Način igre",
   "gameOver": "Igre je konec",
   "gender": "Spol",
-  "labelFilterMaterial": "Gradivo",
-  "labelFilterTag": "Oznaka",
   "generalTags": "Splošne oznake",
   "getMaterials": "Pridobi gradivo",
   "good": "Dobro",
   "googleContinue": "Nadaljuj z Google",
-  "helpDialogueImportDesc": "Uvozi celoten nabor pogovorov kot datoteko JSON.",
-  "helpDialogueImportDetails": "• Struktura JSON: uporabite niz `dialogues` namesto `entries`\n• Samodejna obnovitev: obnovljeni so naslov pogovora, osebnost in vrstni red sporočil.\n• Lokacija: uvoženi pogovori se prikažejo na zavihku »Zgodovina« načina klepeta AI.",
   "helpJsonDesc": "Za uvoz učnega gradiva, ki se uporablja v načinu 3, kot datoteko JSON, upoštevajte naslednjo obliko:",
-  "helpJsonTypeDialogue": "Dialog",
   "helpJsonTypeSentence": "Stavek",
   "helpJsonTypeWord": "Beseda",
   "helpMode1Desc": "Začnite se učiti jezika na najbolj intuitiven način s premium 3D mikrofonom in ikono velike tipkovnice.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Izbira zbirke: V zgornjem desnem meniju (⋮) izberite 'Izberi učno zbirko' ali uporabite 'Spletno knjižnico gradiv'\n• Obračanje kartic: S funkcijo 'Pokaži/Skrij' preverite prevod\n• Poslušanje: Predvajajte izgovorjavo z ikono zvočnika\n• Dokončano učenje: Označite z kljukico (V), da označite kot dokončano\n• Izbriši: Dolgo pritisnite na kartico, da izbrišete zapis\n• Iskanje in filtri: Podpora za iskalno vrstico (pametno iskanje v realnem času) in filtre oznak ter začetnih črk",
   "helpMode3Desc": "Poslušajte stavek in ga ponovite (senčenje), da vadite izgovorjavo.",
   "helpMode3Details": "• Izbira gradiva: izbira zbirke gradiv za učenje\n• Nastavitev intervala: prilagajanje časa čakanja med stavki z gumboma [-] [+](3 sekunde ~ 60 sekund)\n• Začetek/ustavitev: nadzor nad sejo senčenja\n• Govorjenje: poslušanje zvoka in ponavljanje\n• Povratne informacije: prikaz ocene točnosti (0–100) in barve\n• Pogoji iskanja: filtriranje cilja vadbe po oznakah, nedavnih elementih, začetnih črkah",
-  "helpModeChatDesc": "Vadite pogovor v resničnem življenju s pogovorom z osebnostjo AI.",
-  "helpModeChatDetails": "• AI Klepet: Vadite pogovore s personami v meniju 'Klepet' na spodnji vrstici zavihkov\n• Nastavitev persone: Prosto določite spol, ime in jezikovno kodo sogovornika\n• GPS Situacijska igra: Prepoznavanje vaše trenutne lokacije in priporočanje tem pogovorov, ki ustrezajo lokaciji\n• Dva jezika: Odgovori AI so prikazani skupaj s prevodom, kar povečuje učinkovitost učenja\n• Upravljanje zgodovine: Filtriranje preteklih pogovorov in shranjevanje določenih sporočil med pogovorom kot učnega gradiva",
+  "helpNote": "Prosto si zapišite definicije besed, primere, situacije itd.",
+  "helpNotebook": "Izberite mapo, kamor želite shraniti prevedene rezultate.",
   "helpTabJson": "Format JSON",
   "helpTabModes": "Razlaga načinov",
   "helpTabQuickStart": "Hiteri začetek",
   "helpTabTour": "Vodeni ogled",
+  "helpTag": "Vnesite ključne besede za kasnejšo kategorizacijo ali iskanje.",
   "helpTitle": "Pomoč in vodniki",
   "helpTourDesc": "**Poudarjeni krogi** vas vodijo skozi ključne funkcije.\n(Primer: **Poudarjeni krog**, ki kaže na kartico, lahko izbrišete z dolgim pritiskom.)",
   "hide": "Skrij",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Primer: Kontekst, homonimi, itd.",
+  "hintTagExample": "Primer: Posel, potovanje...",
+  "homeTab": "Prevedi",
   "importAdded": "Dodano: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Uvoženih {files} datotek, {entries} elementov.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Uvozi datoteko JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Enotna datoteka JSON",
+  "importSourceFolder": "Mapa (struktura knjižnice po jezikih)",
+  "importSourceTitle": "Izberite vir uvoza",
+  "importSourceZip": "ZIP datoteka (stisnjena mapa)",
   "importTotal": "Skupaj: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Vnesena vsebina",
+  "inputLanguage": "Vhodni jezik",
   "inputModeTitle": "Vnos",
   "intervalSeconds": "Interval: {seconds} s",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Vnesite veljaven e-poštni naslov.",
   "kakaoContinue": "Nadaljuj s Kakao",
+  "labelDetails": "Podrobnosti",
+  "labelFilterMaterial": "Gradivo",
+  "labelFilterTag": "Oznaka",
   "labelLangCode": "Koda jezika (npr. en-US, ko-KR)",
-  "labelName": "Ime",
   "labelNote": "Opomba",
   "labelPOS": "Vrsta besede",
-  "labelRole": "Vloga",
   "labelSentence": "Stavek",
   "labelSentenceCollection": "Zbirka stavkov",
   "labelSentenceType": "Vrsta stavka",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Nalaganje udeležencev ...",
   "location": "Lokacija",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Prijava",
   "logout": "Odjava",
   "logoutConfirmMessage": "Želite odjaviti se iz te naprave?",
   "logoutConfirmTitle": "Odjava",
   "male": "Moški",
-  "manageParticipants": "Upravljanje udeležencev",
   "manual": "Ročni vnos",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Informacije o gradivu",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Jaz",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Uvozi gradivo iz naprave",
   "menuHelp": "Pomoč",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Moja zbirka stavkov",
   "myWordbook": "Moja besedna zbirka",
   "neutral": "Nevtralno",
+  "newNotebookTitle": "Ime nove zbirke",
   "newSubjectName": "Novo ime sklopa besed/stavkov",
   "next": "Naprej",
-  "noDialogueHistory": "Ni zgodovine pogovorov.",
-  "noInternetWarningMic": "Ni internetne povezave. Prepoznavanje glasu morda ne bo delovalo brez povezave.",
-  "noInternetWarningTranslate": "Ni internetne povezave. Prevajanje brez povezave ni mogoče. Uporabite način ponavljanja.",
+  "noDataForLanguage": "Za izbrani jezik ni učnega gradiva v lokalni bazi podatkov. Prenesite gradivo ali izberite drug jezik.",
   "noMaterialsInCategory": "V tej kategoriji ni gradiva.",
-  "noParticipantsFound": "Ni najdenih registriranih udeležencev.",
   "noRecords": "Ni zapisov učenja za izbrani jezik",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Glas ni zaznan",
   "notSelected": "- Ni izbrano -",
+  "noteGuidance": "Kjer vnesete dodatne podrobnosti za natančnejši prevod",
   "onlineLibraryCheckInternet": "Preverite internetno povezavo ali poskusite znova pozneje.",
   "onlineLibraryLoadFailed": "Nalaganje gradiva ni uspelo.",
   "onlineLibraryNoMaterials": "Ni gradiva.",
-  "participantDeleted": "Udeleženec je bil izbrisan.",
-  "participantRename": "Preimenuj udeleženca",
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Način za dva",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Odpri nastavitve",
   "password": "Geslo",
   "passwordTooShort": "Geslo mora imeti vsaj 6 znakov.",
   "perfect": "Popolno!",
-  "personaFriend": "Lokalni prijatelj",
-  "personaGuide": "Turistični vodnik",
-  "personaTeacher": "Učitelj angleščine",
+  "pickGallery": "Izberi iz galerije",
   "playAgain": "Igraj znova",
   "playbackFailed": "Predvajanje ni uspelo: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Pridevnik",
   "posAdverb": "Prislov",
+  "posArticle": "Člen",
   "posConjunction": "Veznik",
   "posInterjection": "Medmet",
   "posNoun": "Samostalnik",
+  "posParticle": "Delec",
   "posPreposition": "Predlog/veznik",
   "posPronoun": "Zaimek",
   "posVerb": "Glagol",
   "practiceModeTitle": "Vadba",
   "practiceWordsOnly": "Vadite samo besede",
+  "processing": "Obdelava...",
   "progress": "Napredek: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "V meniju > Nastavitve jezika najprej izberite svoj jezik in jezik učenja.",
+  "quickStartStep1Title": "1. Izbira jezika",
+  "quickStartStep2Desc": "Ustvarite lastne učne kartice v naslednjem vrstnem redu: vnos (mikrofon/tipkovnica) -> prevod -> shranjevanje.",
+  "quickStartStep2Title": "2. Osnovni postopek",
+  "quickStartStep3Desc": "Vadite s klepetom in vadite izgovorjavo neposredno z ogledom besedila na zavihku za vadbo izgovorjave.",
+  "quickStartStep3Title": "3. Uporaba načinov",
   "recentNItems": "Prikaži zadnjih {count} ustvarjenih elementov",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Zahtevaj prevod",
   "reset": "Ponastavi",
   "resetPracticeHistory": "Ponastavi zgodovino vadbe",
   "retry": "Poskusite znova?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Ponovitev",
-  "roleAi": "UI",
-  "roleThirdParty": "Tretja oseba",
-  "roleUser": "Uporabnik",
   "save": "Shrani",
+  "saveAsSentence": "Shrani kot stavek",
+  "saveAsWord": "Shrani kot besedo",
   "saveData": "Shrani podatke",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Shrani v zgodovino skeniranja",
   "saveTranslationsFromSearch": "Poskusite shraniti prevode iz načina iskanja",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Izberite sliko za skeniranje",
+  "scanLabel": "Skeniraj",
   "score": "Točnost: {score} %",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Izberite vrsto besede",
-  "selectParticipants": "Izberite udeležence",
-  "selectSentenceType": "Izberite vrsto stavka",
   "selectStudyMaterial": "Izberite učno gradivo",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Stavek",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Registracija",
-  "similarTextFound": "Najdeno podobno besedilo",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Preskoči",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Vir:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Izvorni jezik",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Takojšnja pretvorba vsakodnevnih pogovorov v tuj jezik! Talkie beleži vaše jezikovno življenje.",
   "sourceLanguageLabel": "Moj jezik (izvorni)",
-  "speakNow": "Govorite zdaj!",
-  "speaker": "Govornik",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Izbira govorca",
-  "speakingPractice": "Vaja govora",
-  "startChat": "Začni pogovor",
-  "startPractice": "Začni z vajo",
   "startTutorial": "Začni vadnico",
-  "startWarning": "Opozorilo",
   "startsWith": "Začne se s črko",
   "statusCheckEmail": "Za dokončanje overitve preverite svojo e-pošto.",
   "statusDownloading": "Prenašanje: {name} ...",
-  "statusImportFailed": "Uvoz ni uspel: {error}",
-  "statusImportSuccess": "Uvoz {name} je bil uspešen",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Prijava je bila preklicana.",
-  "statusLoginFailed": "Prijava ni uspela: {error}",
-  "statusLoginSuccess": "Prijava je bila uspešna.",
-  "statusLogoutSuccess": "Odjavljeni ste.",
-  "statusSignUpFailed": "Registracija ni uspela: {error}",
-  "statusSigningUp": "Registracija ...",
-  "stopPractice": "Ustavi vajo",
-  "studyComplete": "Učenje končano",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Zapisi učenja ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Uvoz ni uspel: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "Uvoz {name} je bil uspešen",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Prijava ni uspela: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Prijava je bila uspešna.",
+  "statusLogoutSuccess": "Odjavljeni ste.",
+  "statusRequestFailed": "Zahteva za prevod neuspešna: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Zahteva za prevod je bila uspešna.",
+  "stopPractice": "Ustavi vajo",
+  "studyLangNotFoundDesc": "Izbrano gradivo ne podpira trenutno nastavljenega učnega jezika ({targetLang}) in ga ni mogoče shraniti lokalno. Ali želite zahtevati prevod?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Učni jezik ni podprt",
   "styleFormal": "Formalno",
   "styleInformal": "Neformalno",
   "stylePolite": "Vljudno",
   "styleSlang": "Sleng",
-  "subject": "Zadeva:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Zamenjaj jezike",
-  "switchToAi": "Preklop v način AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Preklop v način za dva",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Sinhronizacija podatkov ...",
-  "tabConversation": "Pogovor",
   "tabReview": "Ponovitev ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Zmanjšaj",
   "tooltipIncrease": "Povečaj",
   "tooltipSearch": "Iskanje",
+  "tooltipSettingsConfirm": "Potrdi nastavitve",
   "tooltipSpeaking": "Govor",
   "tooltipStudyReview": "Učenje + ponovitev",
   "totalRecords": "Skupaj {count} zapisov (prikaži vse)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Prevedi zdaj",
   "translating": "Prevajam ...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Jezik prevoda",
   "translationLimitExceeded": "Prekoračena omejitev prevajanja",
   "translationLimitMessage": "Porabili ste vseh 5 brezplačnih dnevnih prevodov.\\n\\nAli želite takoj napolniti 5 s ogledom oglasa?",
   "translationLoaded": "Naložen shranjen prevod",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Število prevodov je bilo napolnjeno na 5!",
+  "translationResult": "Rezultat prevoda",
   "translationResultHint": "Rezultat prevoda - lahko ga spremenite",
   "tryAgain": "Poskusite znova",
-  "tutorialAiChatDesc": "Vadite pogovor v resničnem življenju z AI osebnostjo.",
-  "tutorialAiChatTitle": "AI klepet",
+  "ttsInstallGuide": "V nastavitvah sistema Android > Google TTS namestite podatke za ta jezik.",
+  "ttsMissing": "Za ta jezik ni nameščen mehanizem za pretvorbo besedila v govor.",
+  "ttsUnsupportedNatively": "Ta naprava ne podpira izvornega glasovnega izhoda za ta jezik.",
   "tutorialContextDesc": "Isti stavek lahko shranite ločeno, če zapišete situacijo (npr. jutro, večer).",
   "tutorialContextTitle": "Situacija/kontekstne oznake",
   "tutorialLangSettingsDesc": "Nastavite izvorni in ciljni jezik za prevajanje.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Prevede vneseno besedilo.",
   "tutorialTransTitle": "Prevedi",
   "typeExclamation": "Klicaj",
+  "typeIdiom": "Fraza",
   "typeImperative": "Ukaz",
+  "typeProverb": "Pregovor",
   "typeQuestion": "Vprašanje",
   "typeStatement": "Poved",
   "usageLimitTitle": "Dosežena omejitev",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Oglejte si spletni vodnik",
   "voluntaryTranslations": "Prostovoljni prevodi",
   "watchAdAndRefill": "Oglejte si oglas in napolnite (+5)",
+  "welcomeButton": "Začni",
+  "welcomeDesc": "Dobrodošli v Talkie! Podpiramo več kot 80 jezikov po vsem svetu s 100-odstotno integriteto ter vam ponujamo popolno učno izkušnjo z novim premium 3D dizajnom in optimizirano zmogljivostjo.",
+  "welcomeTitle": "Dobrodošli v Talkie!",
   "word": "Beseda",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Branite bazo tako, da izgovorite besede, preden prispejo sovražniki.",
   "wordDefenseTitle": "Besedna obramba",
   "wordModeLabel": "Besedni način",
-  "yourPronunciation": "Moja izgovorjava",
-  "ttsUnsupportedNatively": "Ta naprava ne podpira izvornega glasovnega izhoda za ta jezik.",
-  "homeTab": "Prevedi",
-  "welcomeTitle": "Dobrodošli v Talkie!",
-  "welcomeDesc": "Dobrodošli v Talkie! Podpiramo več kot 80 jezikov po vsem svetu s 100-odstotno integriteto ter vam ponujamo popolno učno izkušnjo z novim premium 3D dizajnom in optimizirano zmogljivostjo.",
-  "welcomeButton": "Začni",
-  "labelDetails": "Podrobnosti",
-  "translationResult": "Rezultat prevoda",
-  "inputContent": "Vnesena vsebina",
-  "translateNow": "Prevedi zdaj",
-  "tooltipSettingsConfirm": "Potrdi nastavitve",
-  "hintNoteExample": "Primer: Kontekst, homonimi, itd.",
-  "hintTagExample": "Primer: Posel, potovanje...",
-  "addNew": "Dodaj novo",
-  "newNotebookTitle": "Ime nove zbirke",
-  "enterNameHint": "Vnesite ime",
-  "add": "Dodaj",
-  "openSettings": "Odpri nastavitve",
-  "helpNotebook": "Izberite mapo, kamor želite shraniti prevedene rezultate.",
-  "helpNote": "Prosto si zapišite definicije besed, primere, situacije itd.",
-  "helpTag": "Vnesite ključne besede za kasnejšo kategorizacijo ali iskanje.",
-  "requestTranslation": "Zahtevaj prevod",
-  "statusRequestSuccess": "Zahteva za prevod je bila uspešna.",
-  "statusRequestFailed": "Zahteva za prevod neuspešna: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Učni jezik ni podprt",
-  "studyLangNotFoundDesc": "Izbrano gradivo ne podpira trenutno nastavljenega učnega jezika ({targetLang}) in ga ni mogoče shraniti lokalno. Ali želite zahtevati prevod?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Izbira jezika",
-  "quickStartStep1Desc": "V meniju > Nastavitve jezika najprej izberite svoj jezik in jezik učenja.",
-  "quickStartStep2Title": "2. Osnovni postopek",
-  "quickStartStep2Desc": "Ustvarite lastne učne kartice v naslednjem vrstnem redu: vnos (mikrofon/tipkovnica) -> prevod -> shranjevanje.",
-  "quickStartStep3Title": "3. Uporaba načinov",
-  "quickStartStep3Desc": "Vadite s klepetom in vadite izgovorjavo neposredno z ogledom besedila na zavihku za vadbo izgovorjave.",
-  "noteGuidance": "Kjer vnesete dodatne podrobnosti za natančnejši prevod"
+  "yourPronunciation": "Moja izgovorjava"
 }

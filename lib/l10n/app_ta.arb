@@ -1,32 +1,10 @@
 {
   "@@locale": "ta",
-  "basicWords": "அடிப்படை சொல் களஞ்சியம்",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "உள்ளீட்டு மொழி",
-  "translationLanguage": "மொழிபெயர்ப்பு மொழி",
-  "simplifiedGuidance": "அன்றாட உரையாடல்களை உடனடியாக வெளிநாட்டு மொழியில் மாற்றுக! Talkie உங்கள் மொழி வாழ்க்கையைப் பதிவு செய்கிறது.",
-  "noDataForLanguage": "தேர்ந்தெடுக்கப்பட்ட மொழிக்கு கற்றல் தரவு எதுவும் உள்ளூர் தரவுத்தளத்தில் இல்லை. தரவைப் பதிவிறக்கவும் அல்லது வேறொரு மொழியைத் தேர்ந்தெடுக்கவும்.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "ரத்துசெய்",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "துல்லியம்",
-  "ttsMissing": "இந்த மொழிக்குரிய குரல் இயந்திரம் உங்கள் சாதனத்தில் நிறுவப்படவில்லை.",
-  "ttsInstallGuide": "Android அமைப்புகள் > Google TTS இல் அந்த மொழித் தரவை நிறுவவும்.",
   "adLoading": "விளம்பரம் ஏற்றப்படுகிறது. தயவுசெய்து சிறிது நேரம் கழித்து மீண்டும் முயற்சிக்கவும்.",
+  "add": "சேர்",
+  "addNew": "புதியதைச் சேர்",
   "addNewSubject": "புதிய தலைப்பைச் சேர்க்கவும்",
-  "addParticipant": "பங்கேற்பாளரைச் சேர்",
   "addTagHint": "குறிச்சொற்களைச் சேர்க்கவும்...",
   "alreadyHaveAccount": "உங்களுக்கு ஏற்கனவே கணக்கு உள்ளதா?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "அடிப்படை சொல் களஞ்சியம்",
+  "basicWords": "அடிப்படை சொல் களஞ்சியம்",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "ரத்துசெய்",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "செயப்படுபொருள்",
   "casePossessive": "உடைமை",
   "casePossessivePronoun": "உடைமை பிரதிபெயர்",
   "caseReflexive": "தற்சுட்டு",
   "caseSubject": "எழுவாய்",
-  "chatAiChat": "உரையாடல்",
-  "chatAllConversations": "எல்லா உரையாடல்களும்",
-  "chatChoosePersona": "ஆளுமையைத் தேர்ந்தெடுக்கவும்",
-  "chatEndMessage": "அரட்டையை முடிக்கவா?",
-  "chatEndTitle": "அரட்டையை முடித்து சேமிக்கவும்",
-  "chatFailed": "அரட்டை தோல்வியடைந்தது: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "உரையாடலிலிருந்து ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "அரட்டை வரலாறு",
-  "chatNew": "புதிய அரட்டை",
-  "chatNewChat": "புதிய அரட்டை",
-  "chatNoConversations": "எந்த உரையாடலும் இல்லை",
-  "chatSearchHint": "உரையாடல் தலைப்பின் மூலம் தேடவும்...",
-  "chatNoteSearchHint": "கருத்து மூலம் தேடு...",
-  "chatSaveAndExit": "சேமித்துவிட்டு வெளியேறவும்",
-  "chatStartNewPrompt": "பயிற்சி செய்ய ஒரு புதிய உரையாடலைத் தொடங்கவும்!",
-  "chatTypeHint": "ஒரு செய்தியை உள்ளிடவும்...",
-  "chatUntitled": "தலைப்பில்லாத உரையாடல்",
   "checking": "சரிபார்க்கிறது...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "இந்த உரையாடலை நீக்கவா?\nநீக்கப்பட்ட உரையாடலை மீட்டெடுக்க முடியாது.",
-  "confirmDeleteParticipant": "இந்த பங்கேற்பாளரை நீக்கவா?",
   "contextTagHint": "பின்னர் வேறுபடுத்துவதை எளிதாக்க சூழ்நிலையை எழுதவும்",
   "contextTagLabel": "சூழல் / சூழ்நிலை (விரும்பினால்) - எ.கா.: காலை வணக்கம், மரியாதையான பேச்சு",
   "copiedToClipboard": "கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "உரையாடல் மூலம் உரையாடலைப் பயிற்சி செய்யுங்கள். பொருத்தமான பதிலைத் தேர்ந்தெடுத்து சொல்லுங்கள்.",
-  "dialogueQuestTitle": "உரையாடல் குவெஸ்ட்",
-  "disambiguationPrompt": "எந்த அர்த்தத்தில் மொழிபெயர்க்க விரும்புகிறீர்கள்?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "அர்த்தத்தைத் தேர்ந்தெடுக்கவும்",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "உங்களுக்கு கணக்கு இல்லையா?",
-  "editParticipant": "பங்கேற்பாளரைத் திருத்து",
   "email": "மின்னஞ்சல்",
   "emailAlreadyInUse": "இந்த மின்னஞ்சல் முகவரி ஏற்கனவே உள்ளது. உள்நுழையவும் அல்லது கடவுச்சொல்லை மீட்டமைக்கவும்.",
+  "enterNameHint": "பெயரை உள்ளிடவும்",
   "enterNewSubjectName": "புதிய தலைப்பை உள்ளிடவும்",
   "enterSentenceHint": "வாக்கியத்தை உள்ளிடவும்...",
   "enterTextHint": "மொழிபெயர்க்க உரையை உள்ளிடவும்",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "கண்டறியப்பட்ட உரை",
   "female": "பெண்",
   "file": "கோப்பு:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "விளையாட்டு முறை",
   "gameOver": "விளையாட்டு முடிந்தது",
   "gender": "பாலினம்",
-  "labelFilterMaterial": "உருப்பொருள்",
-  "labelFilterTag": "குறிச்சொற்கள்",
   "generalTags": "பொதுவான குறிச்சொற்கள்",
   "getMaterials": "பொருட்களைப் பெறுங்கள்",
   "good": "நன்று",
   "googleContinue": "Google மூலம் தொடரவும்",
-  "helpDialogueImportDesc": "JSON கோப்புகளிலிருந்து முழு உரையாடல் தொகுப்பையும் இறக்குமதி செய்யவும்.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "பயன்முறை 3 இல் இறக்குமதி செய்ய, JSON உருவாக்கவும்:",
-  "helpJsonTypeDialogue": "உரையாடல்",
   "helpJsonTypeSentence": "வாக்கியம்",
   "helpJsonTypeWord": "சொல்",
   "helpMode1Desc": "பிரீமியம் 3D மைக்ரோஃபோன் மற்றும் பெரிய விசைப்பலகை ஐகான்கள் மூலம் மிகவும் உள்ளுணர்வு வழியில் மொழி கற்றலைத் தொடங்கவும்.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• தரவு புத்தகம் தேர்வு: மேல் வலது மெனுவில் (⋮) 'படிப்புப் பொருட்களைத் தேர்வு செய்' அல்லது 'ஆன்லைன் லைப்ரரியை' உபயோகிக்கவும்.\n• அட்டையைத் திருப்பு: 'காட்டு/மறை' மூலம் மொழிபெயர்ப்பைச் சரிபார்க்கவும்.\n• கேட்க: ஒலிபெருக்கி ஐகான் மூலம் உச்சரிப்பை இயக்கு.\n• கற்றல் முடிந்தது: சரிபார்ப்பு குறி (V) மூலம் கற்றல் முடிந்ததாகக் குறிக்கவும்.\n• நீக்கு: அட்டையை நீண்ட நேரம் அழுத்தி (Long Click) பதிவை நீக்கவும்.\n• தேடல் மற்றும் வடிகட்டி: தேடல் பட்டை (நிகழ்நேர ஸ்மார்ட் தேடல்) மற்றும் குறிச்சொற்கள், தொடக்க எழுத்து வடிகட்டி ஆதரவு.",
   "helpMode3Desc": "ஒரு வாக்கியத்தைக் கேட்டு, அதைப் பின்பற்றிச் சொல்லி (Shadowing) உச்சரிப்பைப் பயிற்சி செய்யுங்கள்.",
   "helpMode3Details": "• தேர்ந்தெடு: தொகுப்பைத் தேர்ந்தெடு\n• இடைவேளை: [-] [+] காத்திருப்பு நேரம் (3வி-60வி)\n• தொடங்கு/நிறுத்து: அமர்வைக் கட்டுப்படுத்தவும்\n• பேசு: ஆடியோவைக் கேட்டு திரும்பச் சொல்லவும்\n• மதிப்பெண்: துல்லியம் (0-100)\n• மீண்டும் முயற்சி: குரல் கண்டறியப்படவில்லை என்றால் பொத்தான்",
-  "helpModeChatDesc": "AI உதவியாளருடன் உரையாடி நிஜ வாழ்க்கை உரையாடலைப் பயிற்சி செய்யுங்கள்.",
-  "helpModeChatDetails": "• AI அரட்டை: கீழ் தாவல் பட்டியில் உள்ள 'அரட்டை' மெனுவில் பெர்சோனாவுடன் பயிற்சி உரையாடல்\n• பெர்சோனா அமைப்பு: எதிர் பாலினம், பெயர், மொழி குறியீட்டை சுதந்திரமாக குறிப்பிடவும்\n• GPS நிலை விளையாட்டு: தற்போதைய எனது இருப்பிடத்தை அடையாளம் கண்டு, இடத்திற்கு ஏற்ற உரையாடல் தலைப்பை பரிந்துரைக்கவும்\n• 2 மொழிகள்: AI-யின் பதில்கள் மொழிபெயர்ப்புடன் காட்டப்படுவதால் கற்றல் விளைவை அதிகரிக்கிறது\n• பதிவு மேலாண்மை: கடந்த உரையாடல் வரலாற்றை வடிகட்டி மற்றும் உரையாடலில் குறிப்பிட்ட செய்திகளை கற்றல் பொருட்களாக சேமிக்கவும்",
+  "helpNote": "வார்த்தையின் அர்த்தம், எடுத்துக்காட்டுகள் அல்லது சூழ்நிலைகள் போன்றவற்றை சுதந்திரமாகப் பதிவு செய்யுங்கள்.",
+  "helpNotebook": "மொழிபெயர்க்கப்பட்ட முடிவுகளை சேமிக்க ஒரு கோப்புறையைத் தேர்ந்தெடுக்கவும்.",
   "helpTabJson": "JSON வடிவம்",
   "helpTabModes": "பயன்முறைகள்",
   "helpTabQuickStart": "விரைவு தொடக்கம்",
   "helpTabTour": "சுற்றுலா",
+  "helpTag": "பின்னர் வகைப்படுத்த அல்லது தேட முக்கிய வார்த்தைகளை உள்ளிடவும்.",
   "helpTitle": "உதவி மற்றும் வழிகாட்டி",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "மறை",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "உதாரணம்: சூழ்நிலை விளக்கம், ஒரு பொருள் குறித்த வேறு வார்த்தைகள் போன்றவை",
+  "hintTagExample": "உதாரணம்: வணிகம், பயணம்...",
+  "homeTab": "மொழிபெயர்ப்பு",
   "importAdded": "சேர்க்கப்பட்டது: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} கோப்புகள், {entries} உள்ளீடுகள் இறக்குமதி செய்யப்பட்டன.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON இறக்குமதி",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "ஒற்றை JSON கோப்பு",
+  "importSourceFolder": "கோப்புறை (மொழி சார்ந்த நூலக அமைப்பு)",
+  "importSourceTitle": "இறக்குமதி மூலத்தைத் தேர்ந்தெடுக்கவும்",
+  "importSourceZip": "ZIP கோப்பு (சுருக்கப்பட்ட கோப்புறை)",
   "importTotal": "மொத்தம்: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "உள்ளீடு உள்ளடக்கம்",
+  "inputLanguage": "உள்ளீட்டு மொழி",
   "inputModeTitle": "உள்ளீடு",
   "intervalSeconds": "இடைவேளை: {seconds}விநாடி",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "செல்லுபடியாகும் மின்னஞ்சலை உள்ளிடவும்.",
   "kakaoContinue": "Kakao மூலம் தொடரவும்",
+  "labelDetails": "விவர அமைப்புகள்",
+  "labelFilterMaterial": "உருப்பொருள்",
+  "labelFilterTag": "குறிச்சொற்கள்",
   "labelLangCode": "மொழி குறியீடு (எ.கா: en-US, ko-KR)",
-  "labelName": "பெயர்",
   "labelNote": "குறிப்பு",
   "labelPOS": "சொற்பகுதி",
-  "labelRole": "பங்கு",
   "labelSentence": "வாக்கியம்",
   "labelSentenceCollection": "வாக்கியத் தொகுப்பு",
   "labelSentenceType": "வாக்கியத்தின் வகை",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "பங்கேற்பாளர்கள் ஏற்றப்படுகிறது...",
   "location": "இடம்",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "உள்நுழை",
   "logout": "வெளியேறு",
   "logoutConfirmMessage": "தற்போதைய சாதனத்திலிருந்து வெளியேறவா?",
   "logoutConfirmTitle": "வெளியேறு",
   "male": "ஆண்",
-  "manageParticipants": "பங்கேற்பாளர்களை நிர்வகிக்கவும்",
   "manual": "கைமுறை உள்ளீடு",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "பொருள் தகவல்",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "நான்",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "சாதனத்திலிருந்து பொருட்களைப் பெறுங்கள்",
   "menuHelp": "உதவி",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "என் வாக்கியத் தொகுப்பு",
   "myWordbook": "என் சொல் புத்தகம்",
   "neutral": "நடுநிலை",
+  "newNotebookTitle": "புதிய குறிப்பேட்டின் பெயர்",
   "newSubjectName": "புதிய தலைப்பு",
   "next": "அடுத்து",
-  "noDialogueHistory": "உரையாடல் வரலாறு எதுவும் இல்லை.",
-  "noInternetWarningMic": "இணைய இணைப்பு இல்லை. ஆஃப்லைனில் இருக்கும்போது குரல் அங்கீகாரம் கிடைக்காமல் போகலாம்.",
-  "noInternetWarningTranslate": "இணைய இணைப்பு இல்லை. ஆஃப்லைனில் இருக்கும்போது மொழிபெயர்ப்பு செயல்பாட்டைப் பயன்படுத்த முடியாது. மறுபரிசீலனை பயன்முறையைப் பயன்படுத்தவும்.",
+  "noDataForLanguage": "தேர்ந்தெடுக்கப்பட்ட மொழிக்கு கற்றல் தரவு எதுவும் உள்ளூர் தரவுத்தளத்தில் இல்லை. தரவைப் பதிவிறக்கவும் அல்லது வேறொரு மொழியைத் தேர்ந்தெடுக்கவும்.",
   "noMaterialsInCategory": "இந்த வகைப்பாட்டில் எந்த பொருள்களும் இல்லை.",
-  "noParticipantsFound": "பதிவு செய்யப்பட்ட பங்கேற்பாளர்கள் இல்லை.",
   "noRecords": "தேர்ந்தெடுக்கப்பட்ட மொழிக்கு பதிவுகள் இல்லை",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "குரல் கண்டறியப்படவில்லை",
   "notSelected": "- எதுவும் தேர்ந்தெடுக்கப்படவில்லை -",
+  "noteGuidance": "மிகவும் துல்லியமான மொழிபெயர்ப்பிற்காக கூடுதல் விவரங்களை எங்கே உள்ளிடுவீர்கள்",
   "onlineLibraryCheckInternet": "உங்கள் இணைய இணைப்பைச் சரிபார்த்து பின்னர் மீண்டும் முயற்சிக்கவும்.",
   "onlineLibraryLoadFailed": "பொருளை ஏற்றுவதில் தோல்வி ஏற்பட்டது.",
   "onlineLibraryNoMaterials": "பொருட்கள் எதுவும் இல்லை.",
-  "participantDeleted": "பங்கேற்பாளர் நீக்கப்பட்டது.",
-  "participantRename": "பங்கேற்பாளரின் பெயரை மாற்றவும்",
-  "partner": "கூட்டாளி",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "கூட்டாளி முறை",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "அமைப்புகளைத் திற",
   "password": "கடவுச்சொல்",
   "passwordTooShort": "கடவுச்சொல் 6 எழுத்துகள் அல்லது அதற்கு மேற்பட்டதாக இருக்க வேண்டும்.",
   "perfect": "அருமை!",
-  "personaFriend": "உள்ளூர் நண்பர்",
-  "personaGuide": "பயண வழிகாட்டி",
-  "personaTeacher": "ஆங்கில ஆசிரியர்",
+  "pickGallery": "சாளரத்தில் இருந்து தெரிவு செய்",
   "playAgain": "மீண்டும் விளையாடு",
   "playbackFailed": "இயக்கம் தோல்வி: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "பெயரடை",
   "posAdverb": "வினையடை",
+  "posArticle": "சுட்டுப் பெயர்",
   "posConjunction": "இணைப்பிடைச்சொல்",
   "posInterjection": "வியப்புக்குறி",
   "posNoun": "பெயர்ச்சொல்",
+  "posParticle": "துணைச்சொல்",
   "posPreposition": "முன்மொழிவு / ஆய்வு",
   "posPronoun": "pronoun",
   "posVerb": "வினை",
   "practiceModeTitle": "பயிற்சி",
   "practiceWordsOnly": "சொற்களை மட்டும் பயிற்சி செய்யுங்கள்",
+  "processing": "செயல்படுத்துகிறது...",
   "progress": "முன்னேற்றம்: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "மெனு > மொழி அமைவு என்பதில் உங்கள் மொழி மற்றும் கற்றல் மொழியை முதலில் குறிப்பிடவும்.",
+  "quickStartStep1Title": "1. மொழி அமைவு",
+  "quickStartStep2Desc": "உள்ளீடு (மைக்/விசைப்பலகை) -> மொழிபெயர்ப்பு -> சேமிப்பு வரிசையில் உங்களுடைய சொந்த கற்றல் அட்டையை உருவாக்கவும்.",
+  "quickStartStep2Title": "2. அடிப்படை ஓட்டம்",
+  "quickStartStep3Desc": "பேச்சு மூலம் பயிற்சி செய்யுங்கள், உச்சரிப்பு பயிற்சி தாவலில் உரையைப் பார்த்து நேரடியாக உச்சரிப்பதன் மூலம் பயிற்சி செய்யுங்கள்.",
+  "quickStartStep3Title": "3. பயன்முறை பயன்பாடு",
   "recentNItems": "சமீபத்தில் உருவாக்கப்பட்ட {count} பொருட்களைக் காட்டு",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "மொழிபெயர்ப்பு கோரிக்கை",
   "reset": "மீட்டமை",
   "resetPracticeHistory": "பயிற்சி வரலாற்றை மீட்டமை",
   "retry": "மீண்டும் முயற்சி செய்யவா?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "மறுபரிசீலனை",
-  "roleAi": "AI",
-  "roleThirdParty": "மூன்றாம் தரப்பினர்",
-  "roleUser": "பயனர்",
   "save": "சேமி",
+  "saveAsSentence": "வாக்கியமாக சேமி",
+  "saveAsWord": "வார்த்தையாக சேமி",
   "saveData": "சேமி",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "ஸ்கேன் வரலாற்றில் சேமி",
   "saveTranslationsFromSearch": "தேடல் பயன்முறையிலிருந்து மொழிபெயர்ப்புகளைச் சேமிக்கவும்",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "ஸ்கேன் செய்ய ஒரு படத்தைத் தேர்ந்தெடுக்கவும்",
+  "scanLabel": "ஸ்கேன்",
   "score": "துல்லியம்: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "பேச்சின் பகுதியைத் தேர்ந்தெடுக்கவும்",
-  "selectParticipants": "பங்கேற்பாளர்களைத் தேர்ந்தெடுக்கவும்",
-  "selectSentenceType": "வாக்கிய வகையைத் தேர்ந்தெடுக்கவும்",
   "selectStudyMaterial": "பொருளைத் தேர்ந்தெடு",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "வாக்கியம்",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "பதிவு செய்",
-  "similarTextFound": "ஒரே மாதிரியான உரை காணப்பட்டது",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "தவிர்",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "மூலம்:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "மூல மொழி",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "அன்றாட உரையாடல்களை உடனடியாக வெளிநாட்டு மொழியில் மாற்றுக! Talkie உங்கள் மொழி வாழ்க்கையைப் பதிவு செய்கிறது.",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "இப்போது பேசுங்கள்!",
-  "speaker": "பேச்சாளர்",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "பேச்சாளரைத் தேர்ந்தெடுக்கவும்",
-  "speakingPractice": "பேச்சுப் பயிற்சி",
-  "startChat": "அரட்டையைத் தொடங்கவும்",
-  "startPractice": "பயிற்சியைத் தொடங்கு",
   "startTutorial": "சுற்றுலாவைத் தொடங்கு",
-  "startWarning": "எச்சரிக்கை",
   "startsWith": "தொடக்க எழுத்து",
   "statusCheckEmail": "சரியான மின்னஞ்சலைச் சரிபார்த்து, அங்கீகாரத்தை முடிக்கவும்.",
   "statusDownloading": "பதிவிறக்கம்: {name}...",
-  "statusImportFailed": "இறக்குமதி தோல்வியடைந்தது: {error}",
-  "statusImportSuccess": "{name} இறக்குமதி முடிந்தது",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "உள்நுழைவு ரத்து செய்யப்பட்டது.",
-  "statusLoginFailed": "உள்நுழைவு தோல்வியடைந்தது: {error}",
-  "statusLoginSuccess": "உள்நுழைதல் வெற்றிகரமாக இருந்தது.",
-  "statusLogoutSuccess": "வெளியேற்றப்பட்டது.",
-  "statusSignUpFailed": "பதிவு தோல்வியடைந்தது: {error}",
-  "statusSigningUp": "பதிவு செய்கிறது...",
-  "stopPractice": "நிறுத்து",
-  "studyComplete": "படிக்கப்பட்டது",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "பதிவுகள் ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "இறக்குமதி தோல்வியடைந்தது: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} இறக்குமதி முடிந்தது",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "உள்நுழைவு தோல்வியடைந்தது: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "உள்நுழைதல் வெற்றிகரமாக இருந்தது.",
+  "statusLogoutSuccess": "வெளியேற்றப்பட்டது.",
+  "statusRequestFailed": "மொழிபெயர்ப்பு கோரிக்கை தோல்வியடைந்தது: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "மொழிபெயர்ப்பு கோரிக்கை முடிந்தது.",
+  "stopPractice": "நிறுத்து",
+  "studyLangNotFoundDesc": "நீங்கள் தேர்ந்தெடுத்த உள்ளடக்கம் தற்போது அமைக்கப்பட்ட கற்றல் மொழி ({targetLang}) ஆதரிக்காததால் உள்நாட்டில் சேமிக்க முடியாது. மொழிபெயர்க்க வேண்டுமா?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "கற்றல் மொழி ஆதரிக்கப்படவில்லை",
   "styleFormal": "மரியாதை",
   "styleInformal": "சாதாரண",
   "stylePolite": "கண்ணியம்",
   "styleSlang": "அவதூறு / ஸ்லாங்",
-  "subject": "தலைப்பு:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "மொழிகளை மாற்றவும்",
-  "switchToAi": "AI பயன்முறைக்கு மாறு",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "கூட்டாளி பயன்முறைக்கு மாறு",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "தரவு ஒத்திசைக்கப்படுகிறது...",
-  "tabConversation": "உரையாடல்",
   "tabReview": "மதிப்பாய்வு ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "குறைக்க",
   "tooltipIncrease": "அதிகரிக்க",
   "tooltipSearch": "தேடு",
+  "tooltipSettingsConfirm": "அமைப்புகளை உறுதிப்படுத்தவும்",
   "tooltipSpeaking": "பேசுதல்",
   "tooltipStudyReview": "படிப்பு+மதிப்பாய்வு",
   "totalRecords": "மொத்தம் {count} பதிவுகள் (முழு காண்க)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "இப்போது மொழிபெயர்க்கவும்",
   "translating": "மொழிபெயர்க்கிறது...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "மொழிபெயர்ப்பு மொழி",
   "translationLimitExceeded": "மொழிபெயர்ப்பு வரம்பு மீறப்பட்டது",
   "translationLimitMessage": "தினசரி இலவச மொழிபெயர்ப்புகள் (5 முறை) அனைத்தும் பயன்படுத்தப்பட்டன.\\n\\nவிளம்பரத்தைப் பார்த்து உடனடியாக 5 கட்டணங்கள் வசூலிக்க வேண்டுமா?",
   "translationLoaded": "சேமிக்கப்பட்ட மொழிபெயர்ப்பு ஏற்றப்பட்டது",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "மொழிபெயர்ப்புகளின் எண்ணிக்கை 5 ஆக நிரப்பப்பட்டது!",
+  "translationResult": "மொழிபெயர்ப்பு முடிவு",
   "translationResultHint": "மொழிபெயர்ப்பு முடிவு - திருத்தக்கூடியது",
   "tryAgain": "மீண்டும் முயற்சி செய்",
-  "tutorialAiChatDesc": "AI ஒருவருடன் உண்மையான உரையாடலைப் பயிற்சி செய்யுங்கள்.",
-  "tutorialAiChatTitle": "AI உரையாடல்",
+  "ttsInstallGuide": "Android அமைப்புகள் > Google TTS இல் அந்த மொழித் தரவை நிறுவவும்.",
+  "ttsMissing": "இந்த மொழிக்குரிய குரல் இயந்திரம் உங்கள் சாதனத்தில் நிறுவப்படவில்லை.",
+  "ttsUnsupportedNatively": "இந்த சாதனத்தின் இயல்புநிலை அமைப்புகளில் இந்த மொழிக்கான குரல் வெளியீடு ஆதரிக்கப்படவில்லை.",
   "tutorialContextDesc": "ஒரே மாதிரியான வாக்கியங்களை வேறுபடுத்த சூழலை (எ.கா. காலை)ச் சேர்க்கவும்.",
   "tutorialContextTitle": "சூழல் குறிச்சொல்",
   "tutorialLangSettingsDesc": "மொழிபெயர்க்க மூல மற்றும் இலக்கு மொழியை அமைக்கவும்.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "உங்கள் உரையை மொழிபெயர்க்க இங்கே தட்டவும்.",
   "tutorialTransTitle": "மொழிபெயர்",
   "typeExclamation": "உணர்ச்சி வாக்கியம்",
+  "typeIdiom": "சொற்றொடர்",
   "typeImperative": "கட்டளை வாக்கியம்",
+  "typeProverb": "பழமொழி",
   "typeQuestion": "வினா வாக்கியம்",
   "typeStatement": "கூற்று வாக்கியம்",
   "usageLimitTitle": "அளவை எட்டியது",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "ஆன்லைன் வழிகாட்டியைப் பாருங்கள்",
   "voluntaryTranslations": "தன்னார்வ மொழிபெயர்ப்புகள்",
   "watchAdAndRefill": "விளம்பரத்தைப் பார்த்து ரீசார்ஜ் செய்யுங்கள் (+5 முறை)",
+  "welcomeButton": "தொடங்கு",
+  "welcomeDesc": "Talkie க்கு வரவேற்கிறோம்! உலகம் முழுவதும் 80 க்கும் மேற்பட்ட மொழிகளை 100% நேர்மையுடன் ஆதரிக்கிறோம், மேலும் புதிய பிரீமியம் 3D வடிவமைப்பு மற்றும் உகந்த செயல்திறனுடன் சிறந்த கற்றல் அனுபவத்தை வழங்குகிறோம்.",
+  "welcomeTitle": "Talkie-க்கு உங்களை வரவேற்கிறோம்!",
   "word": "சொல்",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "எதிரி வருவதற்கு முன் சொல்லைச் சொல்லி தளத்தைப் பாதுகாக்கவும்.",
   "wordDefenseTitle": "வார்த்தை பாதுகாப்பு",
   "wordModeLabel": "சொல் பயன்முறை",
-  "yourPronunciation": "உங்கள் உச்சரிப்பு",
-  "ttsUnsupportedNatively": "இந்த சாதனத்தின் இயல்புநிலை அமைப்புகளில் இந்த மொழிக்கான குரல் வெளியீடு ஆதரிக்கப்படவில்லை.",
-  "homeTab": "மொழிபெயர்ப்பு",
-  "welcomeTitle": "Talkie-க்கு உங்களை வரவேற்கிறோம்!",
-  "welcomeDesc": "Talkie க்கு வரவேற்கிறோம்! உலகம் முழுவதும் 80 க்கும் மேற்பட்ட மொழிகளை 100% நேர்மையுடன் ஆதரிக்கிறோம், மேலும் புதிய பிரீமியம் 3D வடிவமைப்பு மற்றும் உகந்த செயல்திறனுடன் சிறந்த கற்றல் அனுபவத்தை வழங்குகிறோம்.",
-  "welcomeButton": "தொடங்கு",
-  "labelDetails": "விவர அமைப்புகள்",
-  "translationResult": "மொழிபெயர்ப்பு முடிவு",
-  "inputContent": "உள்ளீடு உள்ளடக்கம்",
-  "translateNow": "இப்போது மொழிபெயர்க்கவும்",
-  "tooltipSettingsConfirm": "அமைப்புகளை உறுதிப்படுத்தவும்",
-  "hintNoteExample": "உதாரணம்: சூழ்நிலை விளக்கம், ஒரு பொருள் குறித்த வேறு வார்த்தைகள் போன்றவை",
-  "hintTagExample": "உதாரணம்: வணிகம், பயணம்...",
-  "addNew": "புதியதைச் சேர்",
-  "newNotebookTitle": "புதிய குறிப்பேட்டின் பெயர்",
-  "enterNameHint": "பெயரை உள்ளிடவும்",
-  "add": "சேர்",
-  "openSettings": "அமைப்புகளைத் திற",
-  "helpNotebook": "மொழிபெயர்க்கப்பட்ட முடிவுகளை சேமிக்க ஒரு கோப்புறையைத் தேர்ந்தெடுக்கவும்.",
-  "helpNote": "வார்த்தையின் அர்த்தம், எடுத்துக்காட்டுகள் அல்லது சூழ்நிலைகள் போன்றவற்றை சுதந்திரமாகப் பதிவு செய்யுங்கள்.",
-  "helpTag": "பின்னர் வகைப்படுத்த அல்லது தேட முக்கிய வார்த்தைகளை உள்ளிடவும்.",
-  "requestTranslation": "மொழிபெயர்ப்பு கோரிக்கை",
-  "statusRequestSuccess": "மொழிபெயர்ப்பு கோரிக்கை முடிந்தது.",
-  "statusRequestFailed": "மொழிபெயர்ப்பு கோரிக்கை தோல்வியடைந்தது: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "கற்றல் மொழி ஆதரிக்கப்படவில்லை",
-  "studyLangNotFoundDesc": "நீங்கள் தேர்ந்தெடுத்த உள்ளடக்கம் தற்போது அமைக்கப்பட்ட கற்றல் மொழி ({targetLang}) ஆதரிக்காததால் உள்நாட்டில் சேமிக்க முடியாது. மொழிபெயர்க்க வேண்டுமா?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. மொழி அமைவு",
-  "quickStartStep1Desc": "மெனு > மொழி அமைவு என்பதில் உங்கள் மொழி மற்றும் கற்றல் மொழியை முதலில் குறிப்பிடவும்.",
-  "quickStartStep2Title": "2. அடிப்படை ஓட்டம்",
-  "quickStartStep2Desc": "உள்ளீடு (மைக்/விசைப்பலகை) -> மொழிபெயர்ப்பு -> சேமிப்பு வரிசையில் உங்களுடைய சொந்த கற்றல் அட்டையை உருவாக்கவும்.",
-  "quickStartStep3Title": "3. பயன்முறை பயன்பாடு",
-  "quickStartStep3Desc": "பேச்சு மூலம் பயிற்சி செய்யுங்கள், உச்சரிப்பு பயிற்சி தாவலில் உரையைப் பார்த்து நேரடியாக உச்சரிப்பதன் மூலம் பயிற்சி செய்யுங்கள்.",
-  "noteGuidance": "மிகவும் துல்லியமான மொழிபெயர்ப்பிற்காக கூடுதல் விவரங்களை எங்கே உள்ளிடுவீர்கள்"
+  "yourPronunciation": "உங்கள் உச்சரிப்பு"
 }

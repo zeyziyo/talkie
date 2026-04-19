@@ -1,32 +1,10 @@
 {
   "@@locale": "zh_CN",
-  "basicWords": "基础词库",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "输入语言",
-  "translationLanguage": "翻译语言",
-  "simplifiedGuidance": "将日常对话瞬间转换为外语！Talkie会记录您的语言生活。",
-  "noDataForLanguage": "本地数据库中没有您所选语言的学习资料。请下载资料或选择其他语言。",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "取消",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "准确率",
-  "ttsMissing": "您的设备上未安装此语言的语音引擎。",
-  "ttsInstallGuide": "请在安卓设置 > Google 文字转语音中安装相应的语言数据。",
   "adLoading": "正在加载广告。请稍后重试。",
+  "add": "添加",
+  "addNew": "新增",
   "addNewSubject": "添加新标题",
-  "addParticipant": "添加参与者",
   "addTagHint": "添加标签...",
   "alreadyHaveAccount": "已有账号？",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "基础词汇库",
+  "basicWords": "基础词库",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "取消",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "宾格",
   "casePossessive": "所有格",
   "casePossessivePronoun": "所有格代词",
   "caseReflexive": "反身代词",
   "caseSubject": "主格",
-  "chatAiChat": "聊天",
-  "chatAllConversations": "所有对话",
-  "chatChoosePersona": "选择角色",
-  "chatEndMessage": "要结束对话吗？",
-  "chatEndTitle": "结束并保存对话",
-  "chatFailed": "聊天失败: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "对话摘录 ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "对话记录",
-  "chatNew": "新对话",
-  "chatNewChat": "新对话",
-  "chatNoConversations": "还没有对话",
-  "chatSearchHint": "通过对话标题搜索...",
-  "chatNoteSearchHint": "通过注释搜索...",
-  "chatSaveAndExit": "保存后退出",
-  "chatStartNewPrompt": "开始新的对话练习吧！",
-  "chatTypeHint": "输入消息...",
-  "chatUntitled": "无标题对话",
   "checking": "正在检查...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "确定要删除此对话吗？\n删除后将无法恢复。",
-  "confirmDeleteParticipant": "确定要删除此参与者吗？",
   "contextTagHint": "为了方便以后区分，请描述情景",
   "contextTagLabel": "上下文/情景 (可选) - 例如: 早上问候，敬语",
   "copiedToClipboard": "已复制到剪贴板！",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "通过情景对话进行练习。选择合适的答案并说出来。",
-  "dialogueQuestTitle": "对话任务",
-  "disambiguationPrompt": "您想翻译成哪个意思？",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "选择释义",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "没有账号？",
-  "editParticipant": "编辑参与者",
   "email": "电子邮件",
   "emailAlreadyInUse": "此邮箱已被注册，请直接登录或找回密码。",
+  "enterNameHint": "请输入名称",
   "enterNewSubjectName": "输入新标题",
   "enterSentenceHint": "输入句子...",
   "enterTextHint": "输入要翻译的文本",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "识别的文本",
   "female": "女性",
   "file": "文件:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "游戏模式",
   "gameOver": "游戏结束",
   "gender": "性别",
-  "labelFilterMaterial": "资料集",
-  "labelFilterTag": "标签",
   "generalTags": "通用标签",
   "getMaterials": "获取资料",
   "good": "不错",
   "googleContinue": "使用 Google 账号继续",
-  "helpDialogueImportDesc": "通过 JSON 文件导入整个对话集。",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "要在模式 3 中导入学习资料，请创建具有以下结构的 JSON 文件：",
-  "helpJsonTypeDialogue": "对话（Dialogue）",
   "helpJsonTypeSentence": "句子（Sentence）",
   "helpJsonTypeWord": "单词（Word）",
   "helpMode1Desc": "通过高级3D麦克风和大尺寸键盘图标，以最直观的方式开始语言学习。",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• 选择资料集：使用右上角菜单(⋮)中的“选择学习资料集”或“在线资料库”\n• 卡片翻转：使用“显示/隐藏”来确认翻译\n• 听力：点击扬声器图标播放发音\n• 完成学习：使用复选标记 (V) 完成学习处理\n• 删除：长按卡片删除记录\n• 搜索和筛选：支持搜索栏（实时智能搜索）以及标签、首字母筛选",
   "helpMode3Desc": "听句子并跟读（影子跟读），练习发音。",
   "helpMode3Details": "• 选择资料：选择学习包\n• 间隔：使用 [-] [+] 调整等待时间（3秒-60秒）\n• 开始/停止：控制跟读会话\n• 说话：聆听音频并跟读\n• 反馈：准确率评分（0-100）及颜色代码\n• 重试：如果未检测到声音，请使用重试按钮",
-  "helpModeChatDesc": "与AI角色对话，练习实际会话。",
-  "helpModeChatDetails": "• AI聊天：在底部选项卡栏的“聊天”菜单中，与角色进行实际对话练习\n• 角色设置：自由指定对方的性别、姓名、语言代码\n• GPS情景剧：识别我当前的位置并推荐适合该地点的对话主题\n• 2种语言：AI的回复与翻译一起显示，从而最大限度地提高学习效果\n• 记录管理：过滤过去的对话历史记录，并将对话中的特定消息保存为学习资料",
+  "helpNote": "自由记录单词的含义、例句、情景等。",
+  "helpNotebook": "选择用于保存翻译结果的文件夹。",
   "helpTabJson": "JSON 格式",
   "helpTabModes": "模式",
   "helpTabQuickStart": "快速开始",
   "helpTabTour": "新手引导",
+  "helpTag": "输入用于日后分类或搜索的关键词。",
   "helpTitle": "帮助与指南",
   "helpTourDesc": "开始教程后，**高亮圆圈**将引导您了解主要功能。\n(例如：当**高亮圆圈**指向学习卡片时，长按可将其删除。)",
   "hide": "隐藏",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "例：情景说明、同音异义词等",
+  "hintTagExample": "例：商务、旅行...",
+  "homeTab": "翻译",
   "importAdded": "添加: {count} 项",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "已导入 {files} 个文件，{entries} 个条目。",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "导入 JSON 文件",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "单个 JSON 文件",
+  "importSourceFolder": "文件夹（按语言库结构）",
+  "importSourceTitle": "选择导入源",
+  "importSourceZip": "ZIP 文件（压缩文件夹）",
   "importTotal": "总计: {count} 项",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "输入内容",
+  "inputLanguage": "输入语言",
   "inputModeTitle": "输入",
   "intervalSeconds": "间隔: {seconds}秒",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "请输入有效的电子邮件。",
   "kakaoContinue": "使用Kakao继续",
+  "labelDetails": "详细设置",
+  "labelFilterMaterial": "资料集",
+  "labelFilterTag": "标签",
   "labelLangCode": "语言代码 (例: en-US, ko-KR)",
-  "labelName": "名称",
   "labelNote": "注释",
   "labelPOS": "词性",
-  "labelRole": "角色",
   "labelSentence": "句子",
   "labelSentenceCollection": "句子集",
   "labelSentenceType": "句子类型",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "正在加载参与者...",
   "location": "位置",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "登录",
   "logout": "退出登录",
   "logoutConfirmMessage": "确定要从当前设备退出登录吗？",
   "logoutConfirmTitle": "退出登录",
   "male": "男性",
-  "manageParticipants": "管理参与者",
   "manual": "手动输入",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "资料信息",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "我",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "从设备导入资料",
   "menuHelp": "帮助",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "我的句子集",
   "myWordbook": "我的词汇本",
   "neutral": "中性",
+  "newNotebookTitle": "新笔记本名称",
   "newSubjectName": "新建词汇本/句子集标题",
   "next": "下一个",
-  "noDialogueHistory": "没有对话历史记录。",
-  "noInternetWarningMic": "没有网络连接。离线状态下语音识别可能无法使用。",
-  "noInternetWarningTranslate": "没有网络连接。离线状态下翻译功能无法使用。请使用复习模式。",
+  "noDataForLanguage": "本地数据库中没有您所选语言的学习资料。请下载资料或选择其他语言。",
   "noMaterialsInCategory": "此类别下没有资料。",
-  "noParticipantsFound": "没有已注册的参与者。",
   "noRecords": "所选语言没有学习记录",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "未检测到声音",
   "notSelected": "- 未选择 -",
+  "noteGuidance": "输入额外详细信息以获得更准确翻译的地方",
   "onlineLibraryCheckInternet": "请检查网络连接，或稍后重试。",
   "onlineLibraryLoadFailed": "加载资料失败。",
   "onlineLibraryNoMaterials": "没有资料。",
-  "participantDeleted": "参与者已删除。",
-  "participantRename": "重命名参与者",
-  "partner": "伙伴",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "伙伴模式",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "打开设置",
   "password": "密码",
   "passwordTooShort": "密码必须至少为 6 个字符。",
   "perfect": "完美！",
-  "personaFriend": "当地朋友",
-  "personaGuide": "旅行指南",
-  "personaTeacher": "英语老师",
+  "pickGallery": "从相册选择",
   "playAgain": "再玩一次",
   "playbackFailed": "播放失败: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "形容词",
   "posAdverb": "副词",
+  "posArticle": "冠词",
   "posConjunction": "连词",
   "posInterjection": "感叹词",
   "posNoun": "名词",
+  "posParticle": "助词",
   "posPreposition": "介词/助词",
   "posPronoun": "代词",
   "posVerb": "动词",
   "practiceModeTitle": "练习",
   "practiceWordsOnly": "仅练习单词",
+  "processing": "处理中...",
   "progress": "进度: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "请在“菜单 > 语言设置”中首先指定您的母语和学习语言。",
+  "quickStartStep1Title": "1. 设置语言",
+  "quickStartStep2Desc": "按照“输入（麦克风/键盘）-> 翻译 -> 保存”的顺序创建您自己的学习卡片。",
+  "quickStartStep2Title": "2. 基本流程",
+  "quickStartStep3Desc": "通过聊天进行练习，并在发音练习选项卡中查看文本并直接发音练习。",
+  "quickStartStep3Title": "3. 模式活用",
   "recentNItems": "查看最近创建的 {count} 个项目",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "请求翻译",
   "reset": "重置",
   "resetPracticeHistory": "重置练习记录",
   "retry": "重试？",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "复习",
-  "roleAi": "AI",
-  "roleThirdParty": "第三方",
-  "roleUser": "用户",
   "save": "保存",
+  "saveAsSentence": "保存为句子",
+  "saveAsWord": "保存为单词",
   "saveData": "保存数据",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "保存到扫描历史记录",
   "saveTranslationsFromSearch": "在搜索模式下保存翻译",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "选择要扫描的图像",
+  "scanLabel": "扫描",
   "score": "准确率: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "选择词性",
-  "selectParticipants": "选择参与者",
-  "selectSentenceType": "选择句子类型",
   "selectStudyMaterial": "选择学习资料",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "句子",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "注册",
-  "similarTextFound": "发现相似文本",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "跳过",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "来源:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "源语言",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "将日常对话瞬间转换为外语！Talkie会记录您的语言生活。",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "现在说话！",
-  "speaker": "说话者",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "选择发话人",
-  "speakingPractice": "口语练习",
-  "startChat": "开始对话",
-  "startPractice": "开始练习",
   "startTutorial": "开始教程",
-  "startWarning": "警告",
   "startsWith": "起始字符",
   "statusCheckEmail": "请验证您的电子邮件以完成身份验证。",
   "statusDownloading": "下载中: {name}...",
-  "statusImportFailed": "导入失败: {error}",
-  "statusImportSuccess": "{name} 导入完成",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "登录已取消。",
-  "statusLoginFailed": "登录失败: {error}",
-  "statusLoginSuccess": "登录成功。",
-  "statusLogoutSuccess": "已退出登录。",
-  "statusSignUpFailed": "注册失败: {error}",
-  "statusSigningUp": "注册中...",
-  "stopPractice": "停止练习",
-  "studyComplete": "已学习",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "学习记录 ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "导入失败: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} 导入完成",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "登录失败: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "登录成功。",
+  "statusLogoutSuccess": "已退出登录。",
+  "statusRequestFailed": "翻译请求失败: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "翻译请求已完成。",
+  "stopPractice": "停止练习",
+  "studyLangNotFoundDesc": "您选择的资料目前不支持您设置的学习语言（{targetLang}），因此无法保存到本地。是否请求翻译？",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "不支持学习语言",
   "styleFormal": "敬语",
   "styleInformal": "非敬语",
   "stylePolite": "礼貌",
   "styleSlang": "俚语/俗语",
-  "subject": "主题:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "切换语言",
-  "switchToAi": "切换到 AI 模式",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "切换到伙伴模式",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "数据同步中...",
-  "tabConversation": "对话",
   "tabReview": "复习 ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "减少",
   "tooltipIncrease": "增加",
   "tooltipSearch": "搜索",
+  "tooltipSettingsConfirm": "确认设置",
   "tooltipSpeaking": "口语",
   "tooltipStudyReview": "学习+复习",
   "totalRecords": "总共 {count} 条记录（查看全部）",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "立即翻译",
   "translating": "正在翻译...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "翻译语言",
   "translationLimitExceeded": "超出翻译限额",
   "translationLimitMessage": "您已用完每日免费翻译 (5 次)。\\n\\n观看广告立即补充 5 次吗？",
   "translationLoaded": "已加载保存的翻译",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "翻译次数已补充 5 次！",
+  "translationResult": "翻译结果",
   "translationResultHint": "翻译结果 - 可修改",
   "tryAgain": "再试一次",
-  "tutorialAiChatDesc": "与 AI 角色扮演进行真实对话练习。",
-  "tutorialAiChatTitle": "AI 聊天",
+  "ttsInstallGuide": "请在安卓设置 > Google 文字转语音中安装相应的语言数据。",
+  "ttsMissing": "您的设备上未安装此语言的语音引擎。",
+  "ttsUnsupportedNatively": "此设备的默认设置不支持此语言的语音输出。",
   "tutorialContextDesc": "添加上下文（例如：早上）以区分相似的句子。",
   "tutorialContextTitle": "上下文标签",
   "tutorialLangSettingsDesc": "设置翻译的源语言和目标语言。",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "点击此处翻译您的文本。",
   "tutorialTransTitle": "翻译",
   "typeExclamation": "感叹句",
+  "typeIdiom": "成语",
   "typeImperative": "祈使句",
+  "typeProverb": "谚语/格言",
   "typeQuestion": "疑问句",
   "typeStatement": "陈述句",
   "usageLimitTitle": "已达用量上限",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "查看在线指南",
   "voluntaryTranslations": "自愿翻译",
   "watchAdAndRefill": "观看广告并补充 (+5 次)",
+  "welcomeButton": "开始使用",
+  "welcomeDesc": "欢迎来到Talkie！我们以100%的完整性支持全球80多种语言，并通过全新的高级3D设计和优化的性能，为您提供完美的学习体验。",
+  "welcomeTitle": "欢迎使用 Talkie!",
   "word": "单词",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "在敌人到达之前说出单词，保卫基地。",
   "wordDefenseTitle": "单词防御",
   "wordModeLabel": "单词模式",
-  "yourPronunciation": "你的发音",
-  "ttsUnsupportedNatively": "此设备的默认设置不支持此语言的语音输出。",
-  "homeTab": "翻译",
-  "welcomeTitle": "欢迎使用 Talkie!",
-  "welcomeDesc": "欢迎来到Talkie！我们以100%的完整性支持全球80多种语言，并通过全新的高级3D设计和优化的性能，为您提供完美的学习体验。",
-  "welcomeButton": "开始使用",
-  "labelDetails": "详细设置",
-  "translationResult": "翻译结果",
-  "inputContent": "输入内容",
-  "translateNow": "立即翻译",
-  "tooltipSettingsConfirm": "确认设置",
-  "hintNoteExample": "例：情景说明、同音异义词等",
-  "hintTagExample": "例：商务、旅行...",
-  "addNew": "新增",
-  "newNotebookTitle": "新笔记本名称",
-  "enterNameHint": "请输入名称",
-  "add": "添加",
-  "openSettings": "打开设置",
-  "helpNotebook": "选择用于保存翻译结果的文件夹。",
-  "helpNote": "自由记录单词的含义、例句、情景等。",
-  "helpTag": "输入用于日后分类或搜索的关键词。",
-  "requestTranslation": "请求翻译",
-  "statusRequestSuccess": "翻译请求已完成。",
-  "statusRequestFailed": "翻译请求失败: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "不支持学习语言",
-  "studyLangNotFoundDesc": "您选择的资料目前不支持您设置的学习语言（{targetLang}），因此无法保存到本地。是否请求翻译？",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. 设置语言",
-  "quickStartStep1Desc": "请在“菜单 > 语言设置”中首先指定您的母语和学习语言。",
-  "quickStartStep2Title": "2. 基本流程",
-  "quickStartStep2Desc": "按照“输入（麦克风/键盘）-> 翻译 -> 保存”的顺序创建您自己的学习卡片。",
-  "quickStartStep3Title": "3. 模式活用",
-  "quickStartStep3Desc": "通过聊天进行练习，并在发音练习选项卡中查看文本并直接发音练习。",
-  "noteGuidance": "输入额外详细信息以获得更准确翻译的地方"
+  "yourPronunciation": "你的发音"
 }

@@ -9,52 +9,19 @@ class AppLocalizationsVi extends AppLocalizations {
   AppLocalizationsVi([String locale = 'vi']) : super(locale);
 
   @override
-  String get basicWords => 'Kho từ cơ bản';
-
-  @override
-  String get inputLanguage => 'Ngôn ngữ nhập';
-
-  @override
-  String get translationLanguage => 'Ngôn ngữ dịch';
-
-  @override
-  String get simplifiedGuidance =>
-      'Chuyển đổi tức thì các cuộc trò chuyện hàng ngày sang ngoại ngữ! Talkie sẽ ghi lại cuộc sống ngôn ngữ của bạn.';
-
-  @override
-  String get noDataForLanguage =>
-      'Không có tài liệu học tập cho ngôn ngữ bạn đã chọn trong cơ sở dữ liệu cục bộ. Vui lòng tải xuống tài liệu hoặc chọn một ngôn ngữ khác.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Hủy';
-
-  @override
   String get accuracy => 'Độ chính xác';
-
-  @override
-  String get ttsMissing =>
-      'Không tìm thấy công cụ chuyển văn bản thành giọng nói cho ngôn ngữ này trên thiết bị của bạn.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Vui lòng cài đặt dữ liệu ngôn ngữ tương ứng trong Cài đặt Android > Google TTS.';
 
   @override
   String get adLoading => 'Đang tải quảng cáo. Vui lòng thử lại sau.';
 
   @override
-  String get addNewSubject => 'Thêm tên mới';
+  String get add => 'Thêm';
 
   @override
-  String get addParticipant => 'Thêm người tham gia';
+  String get addNew => 'Thêm mới';
+
+  @override
+  String get addNewSubject => 'Thêm tên mới';
 
   @override
   String get addTagHint => 'Thêm thẻ...';
@@ -87,6 +54,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get basicWordRepository => 'Kho từ cơ bản';
 
   @override
+  String get basicWords => 'Kho từ cơ bản';
+
+  @override
+  String get cancel => 'Hủy';
+
+  @override
   String get caseObject => 'Tân cách';
 
   @override
@@ -102,62 +75,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get caseSubject => 'Chủ cách';
 
   @override
-  String get chatAiChat => 'Trò chuyện';
-
-  @override
-  String get chatAllConversations => 'Toàn bộ hội thoại';
-
-  @override
-  String get chatChoosePersona => 'Chọn nhân vật';
-
-  @override
-  String get chatEndMessage => 'Bạn có muốn kết thúc cuộc trò chuyện không?';
-
-  @override
-  String get chatEndTitle => 'Kết thúc và lưu cuộc trò chuyện';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Trò chuyện thất bại: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Trích đoạn từ cuộc trò chuyện ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Lịch sử trò chuyện';
-
-  @override
-  String get chatNew => 'Cuộc trò chuyện mới';
-
-  @override
-  String get chatNewChat => 'Trò chuyện mới';
-
-  @override
-  String get chatNoConversations => 'Chưa có cuộc trò chuyện nào';
-
-  @override
-  String get chatSearchHint => 'Tìm kiếm theo tên cuộc trò chuyện...';
-
-  @override
-  String get chatNoteSearchHint => 'Tìm kiếm bằng ghi chú...';
-
-  @override
-  String get chatSaveAndExit => 'Lưu và thoát';
-
-  @override
-  String get chatStartNewPrompt =>
-      'Hãy bắt đầu một cuộc trò chuyện mới để luyện tập!';
-
-  @override
-  String get chatTypeHint => 'Nhập tin nhắn...';
-
-  @override
-  String get chatUntitled => 'Cuộc trò chuyện không có tiêu đề';
-
-  @override
   String get checking => 'Đang kiểm tra...';
 
   @override
@@ -168,14 +85,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Bạn có chắc chắn muốn xóa bản ghi này không?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Bạn có chắc chắn muốn xóa hội thoại này?\nHội thoại đã xóa không thể khôi phục.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Bạn có muốn xóa người tham gia này không?';
 
   @override
   String get contextTagHint => 'Ghi lại tình huống để dễ phân biệt sau này';
@@ -214,23 +123,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get deleteRecord => 'Xóa bản ghi';
 
   @override
-  String get dialogueQuestDesc =>
-      'Luyện tập hội thoại thông qua nhập vai. Chọn và nói câu trả lời thích hợp.';
-
-  @override
-  String get dialogueQuestTitle => 'Nhiệm vụ hội thoại';
-
-  @override
-  String get disambiguationPrompt => 'Bạn muốn dịch theo nghĩa nào?';
-
-  @override
-  String get disambiguationTitle => 'Chọn nghĩa';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Bạn chưa có tài khoản?';
-
-  @override
-  String get editParticipant => 'Sửa người tham gia';
 
   @override
   String get email => 'Email';
@@ -238,6 +134,9 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Email này đã được sử dụng. Vui lòng đăng nhập hoặc sử dụng chức năng tìm mật khẩu.';
+
+  @override
+  String get enterNameHint => 'Nhập tên';
 
   @override
   String get enterNewSubjectName => 'Nhập tên mới';
@@ -276,6 +175,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get errors => 'Lỗi:';
+
+  @override
+  String get extractedText => 'Văn bản đã nhận dạng';
 
   @override
   String get female => 'Nữ';
@@ -335,12 +237,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get gender => 'Giới tính';
 
   @override
-  String get labelFilterMaterial => 'Tài liệu';
-
-  @override
-  String get labelFilterTag => 'Thẻ';
-
-  @override
   String get generalTags => 'Thẻ chung';
 
   @override
@@ -353,19 +249,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get googleContinue => 'Tiếp tục với Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Nhập toàn bộ bộ hội thoại bằng tệp JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc =>
       'Để nhập tài liệu học tập trong Chế độ 3, hãy tạo tệp JSON với cấu trúc sau:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Hội thoại';
 
   @override
   String get helpJsonTypeSentence => 'Câu';
@@ -398,12 +283,10 @@ class AppLocalizationsVi extends AppLocalizations {
       '• Chọn tài liệu: Chọn gói học tập\n• Khoảng cách: [-] [+] điều chỉnh thời gian chờ (3s-60s)\n• Bắt đầu/Dừng: Điều khiển phiên nhại lại\n• Nói: Nghe âm thanh và lặp lại theo\n• Phản hồi: Điểm chính xác (0-100) với mã màu\n• Thử lại: Sử dụng nút thử lại nếu không phát hiện được giọng nói';
 
   @override
-  String get helpModeChatDesc =>
-      'Luyện tập hội thoại thực tế bằng cách trò chuyện với AI Persona.';
+  String get helpNote => 'Tự do ghi lại ý nghĩa, ví dụ hoặc tình huống của từ.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Trò chuyện AI: Thực hành trò chuyện thực tế với một nhân vật trong menu \'Trò chuyện\' trên thanh tab ở dưới cùng\n• Cài đặt nhân vật: Tự do chỉ định giới tính, tên và mã ngôn ngữ của đối phương\n• Tình huống GPS: Nhận biết vị trí hiện tại của bạn và đề xuất các chủ đề trò chuyện phù hợp với địa điểm\n• Hai ngôn ngữ: Câu trả lời của AI được hiển thị cùng với bản dịch để tối đa hóa hiệu quả học tập\n• Quản lý lịch sử: Lọc lịch sử trò chuyện trước đây và lưu các tin nhắn cụ thể trong cuộc trò chuyện dưới dạng tài liệu học tập';
+  String get helpNotebook => 'Chọn thư mục để lưu trữ các kết quả đã dịch.';
 
   @override
   String get helpTabJson => 'Định dạng JSON';
@@ -418,6 +301,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get helpTabTour => 'Hướng dẫn';
 
   @override
+  String get helpTag => 'Nhập từ khóa để phân loại hoặc tìm kiếm sau này.';
+
+  @override
   String get helpTitle => 'Trợ giúp & Hướng dẫn';
 
   @override
@@ -426,6 +312,15 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get hide => 'Ẩn';
+
+  @override
+  String get hintNoteExample => 'Ví dụ: Giải thích ngữ cảnh, từ đồng âm,...';
+
+  @override
+  String get hintTagExample => 'Ví dụ: Kinh doanh, Du lịch...';
+
+  @override
+  String get homeTab => 'Dịch';
 
   @override
   String importAdded(int count) {
@@ -438,23 +333,6 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Đã có tài liệu có tiêu đề giống nhau. Vui lòng thay đổi tiêu đề và thử lại.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -470,6 +348,11 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Đã nhập $files tệp, $entries mục.';
+  }
+
+  @override
   String get importJsonFile => 'Nhập file JSON';
 
   @override
@@ -481,12 +364,30 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Tệp JSON đơn';
+
+  @override
+  String get importSourceFolder => 'Thư mục (cấu trúc thư viện theo ngôn ngữ)';
+
+  @override
+  String get importSourceTitle => 'Chọn nguồn nhập';
+
+  @override
+  String get importSourceZip => 'Tệp ZIP (thư mục đã nén)';
+
+  @override
   String importTotal(int count) {
     return 'Tổng: $count';
   }
 
   @override
   String get importing => 'Đang nhập...';
+
+  @override
+  String get inputContent => 'Nội dung nhập';
+
+  @override
+  String get inputLanguage => 'Ngôn ngữ nhập';
 
   @override
   String get inputModeTitle => 'Nhập';
@@ -503,19 +404,22 @@ class AppLocalizationsVi extends AppLocalizations {
   String get kakaoContinue => 'Tiếp tục với Kakao';
 
   @override
-  String get labelLangCode => 'Mã ngôn ngữ (ví dụ: en-US, ko-KR)';
+  String get labelDetails => 'Cài đặt chi tiết';
 
   @override
-  String get labelName => 'Tên';
+  String get labelFilterMaterial => 'Tài liệu';
+
+  @override
+  String get labelFilterTag => 'Thẻ';
+
+  @override
+  String get labelLangCode => 'Mã ngôn ngữ (ví dụ: en-US, ko-KR)';
 
   @override
   String get labelNote => 'Ghi chú';
 
   @override
   String get labelPOS => 'Loại từ';
-
-  @override
-  String get labelRole => 'Vai trò';
 
   @override
   String get labelSentence => 'Câu';
@@ -566,9 +470,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get listening => 'Đang nghe...';
 
   @override
-  String get loadingParticipants => 'Đang tải người tham gia...';
-
-  @override
   String get location => 'Vị trí';
 
   @override
@@ -588,9 +489,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get male => 'Nam';
 
   @override
-  String get manageParticipants => 'Quản lý người tham gia';
-
-  @override
   String get manual => 'Nhập thủ công';
 
   @override
@@ -598,9 +496,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get materialInfo => 'Thông tin tài liệu';
-
-  @override
-  String get me => 'Tôi';
 
   @override
   String get menuDeviceImport => 'Nhập tài liệu từ thiết bị';
@@ -668,28 +563,21 @@ class AppLocalizationsVi extends AppLocalizations {
   String get neutral => 'Trung tính';
 
   @override
+  String get newNotebookTitle => 'Tên sổ tay mới';
+
+  @override
   String get newSubjectName => 'Tên Sổ từ/Câu mới';
 
   @override
   String get next => 'Tiếp theo';
 
   @override
-  String get noDialogueHistory => 'Không có lịch sử hội thoại.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Không có kết nối Internet. Nhận dạng giọng nói có thể không khả dụng ở chế độ ngoại tuyến.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Không có kết nối Internet. Chức năng dịch không khả dụng ở chế độ ngoại tuyến. Vui lòng sử dụng chế độ ôn tập.';
+  String get noDataForLanguage =>
+      'Không có tài liệu học tập cho ngôn ngữ bạn đã chọn trong cơ sở dữ liệu cục bộ. Vui lòng tải xuống tài liệu hoặc chọn một ngôn ngữ khác.';
 
   @override
   String get noMaterialsInCategory =>
       'Không có tài liệu nào trong danh mục này.';
-
-  @override
-  String get noParticipantsFound => 'Không tìm thấy người tham gia nào.';
 
   @override
   String get noRecords => 'Không có bản ghi cho ngôn ngữ đã chọn';
@@ -710,6 +598,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get notSelected => '- Không chọn -';
 
   @override
+  String get noteGuidance => 'Nơi bạn nhập thêm chi tiết để dịch chính xác hơn';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Vui lòng kiểm tra kết nối Internet hoặc thử lại sau.';
 
@@ -720,16 +611,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Không có tài liệu.';
 
   @override
-  String get participantDeleted => 'Đã xóa người tham gia.';
-
-  @override
-  String get participantRename => 'Đổi tên người tham gia';
-
-  @override
-  String get partner => 'Đối tác';
-
-  @override
-  String get partnerMode => 'Chế độ đối tác';
+  String get openSettings => 'Mở cài đặt';
 
   @override
   String get password => 'Mật khẩu';
@@ -741,13 +623,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get perfect => 'Hoàn hảo!';
 
   @override
-  String get personaFriend => 'Bạn địa phương';
-
-  @override
-  String get personaGuide => 'Hướng dẫn viên du lịch';
-
-  @override
-  String get personaTeacher => 'Giáo viên tiếng Anh';
+  String get pickGallery => 'Chọn từ thư viện';
 
   @override
   String get playAgain => 'Chơi lại';
@@ -767,6 +643,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get posAdverb => 'Trạng từ';
 
   @override
+  String get posArticle => 'Mạo từ';
+
+  @override
   String get posConjunction => 'Liên từ';
 
   @override
@@ -774,6 +653,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get posNoun => 'Danh từ';
+
+  @override
+  String get posParticle => 'Tiểu từ';
 
   @override
   String get posPreposition => 'Giới từ';
@@ -791,9 +673,33 @@ class AppLocalizationsVi extends AppLocalizations {
   String get practiceWordsOnly => 'Chỉ luyện tập từ';
 
   @override
+  String get processing => 'Đang xử lý...';
+
+  @override
   String progress(int current, int total) {
     return 'Tiến độ: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Trong Menu > Cài đặt ngôn ngữ, hãy chỉ định ngôn ngữ của bạn và ngôn ngữ bạn muốn học trước.';
+
+  @override
+  String get quickStartStep1Title => '1. Cài đặt ngôn ngữ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Tạo thẻ học tập của riêng bạn theo thứ tự: Nhập (micrô/bàn phím) -> Dịch -> Lưu.';
+
+  @override
+  String get quickStartStep2Title => '2. Luồng cơ bản';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Luyện tập bằng cách trò chuyện và luyện phát âm trực tiếp bằng cách xem văn bản trong tab Luyện phát âm.';
+
+  @override
+  String get quickStartStep3Title => '3. Sử dụng các chế độ';
 
   @override
   String recentNItems(int count) {
@@ -818,6 +724,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get refresh => 'Làm mới';
 
   @override
+  String get requestTranslation => 'Yêu cầu dịch';
+
+  @override
   String get reset => 'Đặt lại';
 
   @override
@@ -838,16 +747,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get reviewModeTitle => 'Ôn tập';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Bên thứ ba';
-
-  @override
-  String get roleUser => 'Người dùng';
-
-  @override
   String get save => 'Lưu';
+
+  @override
+  String get saveAsSentence => 'Lưu dưới dạng câu';
+
+  @override
+  String get saveAsWord => 'Lưu dưới dạng từ';
 
   @override
   String get saveData => 'Lưu';
@@ -858,6 +764,9 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Lưu vào lịch sử quét';
+
+  @override
   String get saveTranslationsFromSearch => 'Lưu bản dịch từ chế độ tìm kiếm';
 
   @override
@@ -865,6 +774,12 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get saving => 'Đang lưu...';
+
+  @override
+  String get scanInstructions => 'Chọn ảnh để quét';
+
+  @override
+  String get scanLabel => 'Quét';
 
   @override
   String score(String score) {
@@ -911,16 +826,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get selectPOS => 'Chọn từ loại';
 
   @override
-  String get selectParticipants => 'Chọn người tham gia';
-
-  @override
-  String get selectSentenceType => 'Chọn loại câu';
-
-  @override
   String get selectStudyMaterial => 'Chọn tài liệu học';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Câu';
@@ -929,43 +835,14 @@ class AppLocalizationsVi extends AppLocalizations {
   String get signUp => 'Đăng ký';
 
   @override
-  String get similarTextFound => 'Tìm thấy văn bản tương tự';
-
-  @override
-  String get skip => 'Bỏ qua';
-
-  @override
-  String get source => 'Nguồn:';
-
-  @override
-  String get sourceLanguage => 'Ngôn ngữ nguồn';
+  String get simplifiedGuidance =>
+      'Chuyển đổi tức thì các cuộc trò chuyện hàng ngày sang ngoại ngữ! Talkie sẽ ghi lại cuộc sống ngôn ngữ của bạn.';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => 'Nói ngay!';
-
-  @override
-  String get speaker => 'Người nói';
-
-  @override
-  String get speakerSelect => 'Chọn người nói';
-
-  @override
-  String get speakingPractice => 'Luyện nói';
-
-  @override
-  String get startChat => 'Bắt đầu trò chuyện';
-
-  @override
-  String get startPractice => 'Bắt đầu luyện tập';
-
-  @override
   String get startTutorial => 'Bắt đầu hướng dẫn';
-
-  @override
-  String get startWarning => 'Cảnh báo';
 
   @override
   String get startsWith => 'Bắt đầu bằng';
@@ -975,28 +852,22 @@ class AppLocalizationsVi extends AppLocalizations {
       'Vui lòng kiểm tra email để hoàn tất xác minh.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Đang tải xuống: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Nhập thất bại: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return 'Đã nhập $name thành công';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Đăng nhập đã bị hủy.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Đăng nhập thất bại: $error';
   }
 
@@ -1007,23 +878,23 @@ class AppLocalizationsVi extends AppLocalizations {
   String get statusLogoutSuccess => 'Đã đăng xuất.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Đăng ký thất bại: $error';
+  String statusRequestFailed(String error) {
+    return 'Yêu cầu dịch thất bại: $error';
   }
 
   @override
-  String get statusSigningUp => 'Đang đăng ký...';
+  String get statusRequestSuccess => 'Yêu cầu dịch đã hoàn tất.';
 
   @override
   String get stopPractice => 'Dừng luyện tập';
 
   @override
-  String get studyComplete => 'Đã học';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Tài liệu bạn chọn hiện không hỗ trợ ngôn ngữ học tập đã đặt ($targetLang) nên không thể lưu cục bộ. Bạn có muốn yêu cầu dịch không?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Bản ghi học tập ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Ngôn ngữ học tập không được hỗ trợ';
 
   @override
   String get styleFormal => 'Kính ngữ';
@@ -1038,22 +909,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get styleSlang => 'Tiếng lóng';
 
   @override
-  String get subject => 'Chủ đề:';
-
-  @override
   String get swapLanguages => 'Đổi ngôn ngữ';
 
   @override
-  String get switchToAi => 'Chuyển sang chế độ AI';
-
-  @override
-  String get switchToPartner => 'Chuyển sang chế độ đối tác';
-
-  @override
   String get syncingData => 'Đang đồng bộ dữ liệu...';
-
-  @override
-  String get tabConversation => 'Hội thoại';
 
   @override
   String tabReview(int count) {
@@ -1117,6 +976,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tooltipSearch => 'Tìm kiếm';
 
   @override
+  String get tooltipSettingsConfirm => 'Xác nhận cài đặt';
+
+  @override
   String get tooltipSpeaking => 'Nói';
 
   @override
@@ -1129,6 +991,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get translate => 'Dịch';
+
+  @override
+  String get translateNow => 'Dịch ngay';
 
   @override
   String get translating => 'Đang dịch...';
@@ -1145,6 +1010,9 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Ngôn ngữ dịch';
+
+  @override
   String get translationLimitExceeded => 'Đã vượt quá giới hạn dịch';
 
   @override
@@ -1158,17 +1026,25 @@ class AppLocalizationsVi extends AppLocalizations {
   String get translationRefilled => 'Bạn đã được nạp 5 lượt dịch!';
 
   @override
+  String get translationResult => 'Kết quả dịch';
+
+  @override
   String get translationResultHint => 'Kết quả dịch - Có thể chỉnh sửa';
 
   @override
   String get tryAgain => 'Thử lại';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Luyện tập hội thoại thực tế với nhân vật AI.';
+  String get ttsInstallGuide =>
+      'Vui lòng cài đặt dữ liệu ngôn ngữ tương ứng trong Cài đặt Android > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'Trò chuyện AI';
+  String get ttsMissing =>
+      'Không tìm thấy công cụ chuyển văn bản thành giọng nói cho ngôn ngữ này trên thiết bị của bạn.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Thiết bị này không hỗ trợ xuất âm thanh cho ngôn ngữ này trong cài đặt gốc.';
 
   @override
   String get tutorialContextDesc =>
@@ -1278,7 +1154,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get typeExclamation => 'Câu cảm thán';
 
   @override
+  String get typeIdiom => 'Thành ngữ';
+
+  @override
   String get typeImperative => 'Câu mệnh lệnh';
+
+  @override
+  String get typeProverb => 'Tục ngữ/Châm ngôn';
 
   @override
   String get typeQuestion => 'Câu hỏi';
@@ -1293,6 +1175,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get useExistingText => 'Sử dụng bản có sẵn';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Xem hướng dẫn trực tuyến';
 
   @override
@@ -1300,6 +1187,16 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Xem quảng cáo để nạp (+5 lượt)';
+
+  @override
+  String get welcomeButton => 'Bắt đầu';
+
+  @override
+  String get welcomeDesc =>
+      'Chào mừng bạn đến với Talkie! Chúng tôi hỗ trợ hơn 80 ngôn ngữ trên toàn thế giới với độ chính xác 100%, cùng với thiết kế 3D cao cấp mới và hiệu suất tối ưu hóa để mang lại trải nghiệm học tập hoàn hảo.';
+
+  @override
+  String get welcomeTitle => 'Chào mừng bạn đến với Talkie!';
 
   @override
   String get word => 'Từ';
@@ -1315,109 +1212,4 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Phát âm của bạn';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Thiết bị này không hỗ trợ xuất âm thanh cho ngôn ngữ này trong cài đặt gốc.';
-
-  @override
-  String get homeTab => 'Dịch';
-
-  @override
-  String get welcomeTitle => 'Chào mừng bạn đến với Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Chào mừng bạn đến với Talkie! Chúng tôi hỗ trợ hơn 80 ngôn ngữ trên toàn thế giới với độ chính xác 100%, cùng với thiết kế 3D cao cấp mới và hiệu suất tối ưu hóa để mang lại trải nghiệm học tập hoàn hảo.';
-
-  @override
-  String get welcomeButton => 'Bắt đầu';
-
-  @override
-  String get labelDetails => 'Cài đặt chi tiết';
-
-  @override
-  String get translationResult => 'Kết quả dịch';
-
-  @override
-  String get inputContent => 'Nội dung nhập';
-
-  @override
-  String get translateNow => 'Dịch ngay';
-
-  @override
-  String get tooltipSettingsConfirm => 'Xác nhận cài đặt';
-
-  @override
-  String get hintNoteExample => 'Ví dụ: Giải thích ngữ cảnh, từ đồng âm,...';
-
-  @override
-  String get hintTagExample => 'Ví dụ: Kinh doanh, Du lịch...';
-
-  @override
-  String get addNew => 'Thêm mới';
-
-  @override
-  String get newNotebookTitle => 'Tên sổ tay mới';
-
-  @override
-  String get enterNameHint => 'Nhập tên';
-
-  @override
-  String get add => 'Thêm';
-
-  @override
-  String get openSettings => 'Mở cài đặt';
-
-  @override
-  String get helpNotebook => 'Chọn thư mục để lưu trữ các kết quả đã dịch.';
-
-  @override
-  String get helpNote => 'Tự do ghi lại ý nghĩa, ví dụ hoặc tình huống của từ.';
-
-  @override
-  String get helpTag => 'Nhập từ khóa để phân loại hoặc tìm kiếm sau này.';
-
-  @override
-  String get requestTranslation => 'Yêu cầu dịch';
-
-  @override
-  String get statusRequestSuccess => 'Yêu cầu dịch đã hoàn tất.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Yêu cầu dịch thất bại: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Ngôn ngữ học tập không được hỗ trợ';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Tài liệu bạn chọn hiện không hỗ trợ ngôn ngữ học tập đã đặt ($targetLang) nên không thể lưu cục bộ. Bạn có muốn yêu cầu dịch không?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Cài đặt ngôn ngữ';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Trong Menu > Cài đặt ngôn ngữ, hãy chỉ định ngôn ngữ của bạn và ngôn ngữ bạn muốn học trước.';
-
-  @override
-  String get quickStartStep2Title => '2. Luồng cơ bản';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Tạo thẻ học tập của riêng bạn theo thứ tự: Nhập (micrô/bàn phím) -> Dịch -> Lưu.';
-
-  @override
-  String get quickStartStep3Title => '3. Sử dụng các chế độ';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Luyện tập bằng cách trò chuyện và luyện phát âm trực tiếp bằng cách xem văn bản trong tab Luyện phát âm.';
-
-  @override
-  String get noteGuidance => 'Nơi bạn nhập thêm chi tiết để dịch chính xác hơn';
 }

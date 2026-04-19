@@ -9,53 +9,20 @@ class AppLocalizationsUz extends AppLocalizations {
   AppLocalizationsUz([String locale = 'uz']) : super(locale);
 
   @override
-  String get basicWords => 'Asosiy so\'zlar ombori';
-
-  @override
-  String get inputLanguage => 'Kirish tili';
-
-  @override
-  String get translationLanguage => 'Tarjima tili';
-
-  @override
-  String get simplifiedGuidance =>
-      'Kundalik suhbatlarni bir zumda chet tiliga aylantiring! Talkie sizning til hayotingizni yozib boradi.';
-
-  @override
-  String get noDataForLanguage =>
-      'Siz tanlagan til uchun o\'quv materiallari lokal DBda mavjud emas. Materiallarni yuklab oling yoki boshqa tilni tanlang.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Bekor qilish';
-
-  @override
   String get accuracy => 'Aniqlik';
-
-  @override
-  String get ttsMissing =>
-      'Ushbu til uchun ovozli dvigatel qurilmangizga o\'rnatilmagan.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Android Sozlamalari > Google TTS bo\'limida mos til ma\'lumotlarini o\'rnating.';
 
   @override
   String get adLoading =>
       'Reklama yuklanmoqda. Bir ozdan keyin qayta urinib ko\'ring.';
 
   @override
-  String get addNewSubject => 'Yangi nom qo\'shish';
+  String get add => 'Qo\'shish';
 
   @override
-  String get addParticipant => 'Ishtirokchi qo\'shish';
+  String get addNew => 'Yangi qo\'shish';
+
+  @override
+  String get addNewSubject => 'Yangi nom qo\'shish';
 
   @override
   String get addTagHint => 'Teg qo\'shish...';
@@ -88,6 +55,12 @@ class AppLocalizationsUz extends AppLocalizations {
   String get basicWordRepository => 'Asosiy so\'zlar ombori';
 
   @override
+  String get basicWords => 'Asosiy so\'zlar ombori';
+
+  @override
+  String get cancel => 'Bekor qilish';
+
+  @override
   String get caseObject => 'Tushum kelishik';
 
   @override
@@ -103,62 +76,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get caseSubject => 'Bosh kelishik';
 
   @override
-  String get chatAiChat => 'Suhbat';
-
-  @override
-  String get chatAllConversations => 'Barcha suhbatlar';
-
-  @override
-  String get chatChoosePersona => 'Personani tanlash';
-
-  @override
-  String get chatEndMessage => 'Suhbatni yakunlamoqchimisiz?';
-
-  @override
-  String get chatEndTitle => 'Suhbatni yakunlash va saqlash';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Chatda xatolik: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Suhbatdan iqtibos ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Suhbatlar tarixi';
-
-  @override
-  String get chatNew => 'Yangi suhbat';
-
-  @override
-  String get chatNewChat => 'Yangi suhbat';
-
-  @override
-  String get chatNoConversations => 'Hali suhbatlar yo\'q';
-
-  @override
-  String get chatSearchHint => 'Suhbat sarlavhasi bo‘yicha qidiring...';
-
-  @override
-  String get chatNoteSearchHint => 'Izohlar bo\'yicha qidiring...';
-
-  @override
-  String get chatSaveAndExit => 'Saqlash va chiqish';
-
-  @override
-  String get chatStartNewPrompt =>
-      'Mashq qilish uchun yangi suhbatni boshlang!';
-
-  @override
-  String get chatTypeHint => 'Xabar kiriting...';
-
-  @override
-  String get chatUntitled => 'Sarlavhasiz suhbat';
-
-  @override
   String get checking => 'Tekshirilmoqda...';
 
   @override
@@ -169,14 +86,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Ushbu o\'rganish yozuvini o\'chirmoqchimisiz?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Bu suhbatni oʻchirishni xohlaysizmi?\nOʻchirilgan suhbatni qayta tiklab boʻlmaydi.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Ushbu ishtirokchini o\'chirmoqchimisiz?';
 
   @override
   String get contextTagHint =>
@@ -216,23 +125,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get deleteRecord => 'Yozuvni o\'chirish';
 
   @override
-  String get dialogueQuestDesc =>
-      'Vaziyatli dramatik sahna orqali suhbatni mashq qiling. Tegishli javobni tanlang va ayting.';
-
-  @override
-  String get dialogueQuestTitle => 'Dialog qidiruvi';
-
-  @override
-  String get disambiguationPrompt => 'Qaysi ma\'noda tarjima qilmoqchisiz?';
-
-  @override
-  String get disambiguationTitle => 'Ma\'noni tanlash';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Hisobingiz yo\'qmi?';
-
-  @override
-  String get editParticipant => 'Ishtirokchini tahrirlash';
 
   @override
   String get email => 'Elektron pochta';
@@ -240,6 +136,9 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Bu elektron pochta allaqachon ro\'yxatdan o\'tgan. Tizimga kiring yoki parolni tiklashni ishlating.';
+
+  @override
+  String get enterNameHint => 'Ismni kiriting';
 
   @override
   String get enterNewSubjectName => 'Yangi nom kiriting';
@@ -280,6 +179,9 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get errors => 'Xatolar:';
+
+  @override
+  String get extractedText => 'Aniqlangan matn';
 
   @override
   String get female => 'Ayol';
@@ -339,12 +241,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get gender => 'Jins';
 
   @override
-  String get labelFilterMaterial => 'Materiallar';
-
-  @override
-  String get labelFilterTag => 'Teglar';
-
-  @override
   String get generalTags => 'Umumiy teglar';
 
   @override
@@ -357,19 +253,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get googleContinue => 'Google orqali davom etish';
 
   @override
-  String get helpDialogueImportDesc =>
-      'JSON faylidan butun dialoglar to\'plamini import qiling.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON tuzilishi: `entries` o\'rniga `dialogues` massivini ishlating\n• Avtomatik tiklash: dialog sarlavhasi, persona, xabar tartibi tiklanadi.\n• Joylashuv: Import qilingan dialoglar AI chat rejimining \'Tarix\' yorlig\'ida paydo bo\'ladi.';
-
-  @override
   String get helpJsonDesc =>
       '3-rejimda foydalaniladigan o\'quv materiallarini JSON fayli sifatida import qilish uchun quyidagi formatga rioya qiling:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dialog';
 
   @override
   String get helpJsonTypeSentence => 'Gap';
@@ -402,12 +287,12 @@ class AppLocalizationsUz extends AppLocalizations {
       '• Ma\'lumotlarni tanlash: o\'rganmoqchi bo\'lgan ma\'lumotlar to\'plamini tanlang\n• Intervalni sozlash: [-] [+] tugmalari bilan jumlalar orasidagi kutish vaqtini sozlang (3 soniyadan 60 soniyagacha)\n• Boshlash/to\'xtatish: soyalash seansini boshqaring\n• Gapirish: ovozni tinglang va takrorlang\n• Fikr-mulohaza: aniqlik balli (0-100) va rangli displey\n• Qidiruv shartlari: mashq qilish uchun teglarga, so\'nggi elementlarga, bosh harflarga qarab filtrlash';
 
   @override
-  String get helpModeChatDesc =>
-      'AI persona bilan suhbatlashib, amaliy suhbatni mashq qiling.';
+  String get helpNote =>
+      'So\'zlarning ma\'nosi, misollari yoki holatlari kabi istalgan narsalarni yozing.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI Chat: Pastki tab bardagi \'Chat\' menyusida personaj bilan amaliy suhbat mashq qiling\n• Personaj sozlamalari: Qarshi tomonning jinsi, ismi, til kodini erkin belgilang\n• GPS ssenariysi: Hozirgi joylashuvingizni aniqlab, joyga mos suhbat mavzularini tavsiya etadi\n• 2 til: AI javoblari tarjima bilan birga ko\'rsatiladi, bu esa o\'rganish samaradorligini maksimal darajaga yetkazadi\n• Yozuvlarni boshqarish: O\'tgan suhbatlar tarixini filtrlash va suhbat davomida ma\'lum xabarlarni o\'quv materiali sifatida saqlash';
+  String get helpNotebook =>
+      'Tarjima qilingan natijalarni saqlash uchun papkani tanlang.';
 
   @override
   String get helpTabJson => 'JSON formati';
@@ -422,6 +307,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get helpTabTour => 'Namuna';
 
   @override
+  String get helpTag =>
+      'Keyinroq saralash yoki qidirish uchun kalit so\'zlarni kiriting.';
+
+  @override
   String get helpTitle => 'Yordam & Qo\'llanma';
 
   @override
@@ -430,6 +319,15 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get hide => 'Yashirish';
+
+  @override
+  String get hintNoteExample => 'Masalan: vaziyat izohi, omonimlar va h.k.';
+
+  @override
+  String get hintTagExample => 'Masalan: biznes, sayohat...';
+
+  @override
+  String get homeTab => 'Tarjima';
 
   @override
   String importAdded(int count) {
@@ -442,23 +340,6 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Xuddi shunday nomdagi material allaqachon mavjud. Iltimos, nomni o\'zgartiring va qaytadan urinib ko\'ring.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -474,6 +355,11 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files ta fayl, $entries ta element import qilindi.';
+  }
+
+  @override
   String get importJsonFile => 'JSON faylini import qilish';
 
   @override
@@ -485,12 +371,30 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Yagona JSON fayli';
+
+  @override
+  String get importSourceFolder => 'Papka (tilga xos kutubxona tuzilishi)';
+
+  @override
+  String get importSourceTitle => 'Import manbasini tanlang';
+
+  @override
+  String get importSourceZip => 'ZIP fayli (siqilgan papka)';
+
+  @override
   String importTotal(int count) {
     return 'Jami: $count dona';
   }
 
   @override
   String get importing => 'Import qilinmoqda...';
+
+  @override
+  String get inputContent => 'Kiritilgan matn';
+
+  @override
+  String get inputLanguage => 'Kirish tili';
 
   @override
   String get inputModeTitle => 'Kiritish';
@@ -507,19 +411,22 @@ class AppLocalizationsUz extends AppLocalizations {
   String get kakaoContinue => 'Kakaoda davom etish';
 
   @override
-  String get labelLangCode => 'Til kodi (masalan: en-US, ko-KR)';
+  String get labelDetails => 'Batafsil sozlamalar';
 
   @override
-  String get labelName => 'Ism';
+  String get labelFilterMaterial => 'Materiallar';
+
+  @override
+  String get labelFilterTag => 'Teglar';
+
+  @override
+  String get labelLangCode => 'Til kodi (masalan: en-US, ko-KR)';
 
   @override
   String get labelNote => 'Izoh';
 
   @override
   String get labelPOS => 'So\'z turkumi';
-
-  @override
-  String get labelRole => 'Rol';
 
   @override
   String get labelSentence => 'Gap';
@@ -570,9 +477,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get listening => 'Tinglanmoqda...';
 
   @override
-  String get loadingParticipants => 'Ishtirokchilar yuklanmoqda...';
-
-  @override
   String get location => 'Joylashuv';
 
   @override
@@ -591,9 +495,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get male => 'Erkak';
 
   @override
-  String get manageParticipants => 'Ishtirokchilarni boshqarish';
-
-  @override
   String get manual => 'Qo\'lda kiritish';
 
   @override
@@ -601,9 +502,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get materialInfo => 'Ma\'lumotlar haqida ma\'lumot';
-
-  @override
-  String get me => 'Men';
 
   @override
   String get menuDeviceImport => 'Qurilmadan ma\'lumotlarni import qilish';
@@ -671,27 +569,20 @@ class AppLocalizationsUz extends AppLocalizations {
   String get neutral => 'neytral';
 
   @override
+  String get newNotebookTitle => 'Yangi daftar nomi';
+
+  @override
   String get newSubjectName => 'Yangi lug\'at/ibora nomi';
 
   @override
   String get next => 'Keyingi';
 
   @override
-  String get noDialogueHistory => 'Suhbatlar tarixi yo\'q.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Internetga ulanish yo\'q. Offlayn rejimda ovozni aniqlash ishlamasligi mumkin.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Internetga ulanish yo\'q. Offlayn rejimda tarjima funksiyasi ishlamaydi. Takrorlash rejimini ishlating.';
+  String get noDataForLanguage =>
+      'Siz tanlagan til uchun o\'quv materiallari lokal DBda mavjud emas. Materiallarni yuklab oling yoki boshqa tilni tanlang.';
 
   @override
   String get noMaterialsInCategory => 'Ushbu toifada materiallar yo\'q.';
-
-  @override
-  String get noParticipantsFound => 'Ro\'yxatga olingan ishtirokchilar yo\'q.';
 
   @override
   String get noRecords => 'Tanlangan tilda o\'rganish yozuvlari yo\'q';
@@ -712,6 +603,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get notSelected => '- Tanlanmagan -';
 
   @override
+  String get noteGuidance =>
+      'Aniqroq tarjima qilish uchun qo\'shimcha ma\'lumotlarni kiritadigan joy';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Internetga ulanishingizni tekshiring yoki keyinroq urinib ko\'ring.';
 
@@ -723,16 +618,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Materiallar yo\'q.';
 
   @override
-  String get participantDeleted => 'Ishtirokchi o\'chirildi.';
-
-  @override
-  String get participantRename => 'Ishtirokchining nomini o\'zgartirish';
-
-  @override
-  String get partner => 'Hamkor';
-
-  @override
-  String get partnerMode => 'Hamkor rejimi';
+  String get openSettings => 'Sozlamalarni ochish';
 
   @override
   String get password => 'Parol';
@@ -745,13 +631,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get perfect => 'A\'lo!';
 
   @override
-  String get personaFriend => 'Mahalliy do\'st';
-
-  @override
-  String get personaGuide => 'Sayohat yo\'lboshchisi';
-
-  @override
-  String get personaTeacher => 'Ingliz tili o\'qituvchisi';
+  String get pickGallery => 'Galereyadan tanlash';
 
   @override
   String get playAgain => 'Qayta o\'ynash';
@@ -771,6 +651,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get posAdverb => 'Ravish';
 
   @override
+  String get posArticle => 'Artikl';
+
+  @override
   String get posConjunction => 'Bog\'lovchi';
 
   @override
@@ -778,6 +661,9 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get posNoun => 'Otlash';
+
+  @override
+  String get posParticle => 'Yuklama/bog\'lovchi';
 
   @override
   String get posPreposition => 'Old ko\'makchi/bog\'lovchi';
@@ -795,9 +681,33 @@ class AppLocalizationsUz extends AppLocalizations {
   String get practiceWordsOnly => 'Faqat so\'zlarni mashq qilish';
 
   @override
+  String get processing => 'Qayta ishlanmoqda...';
+
+  @override
   String progress(int current, int total) {
     return 'Jarayon: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Menyu > Til sozlamalaridan o\'z tilingizni va o\'rganish tilini belgilang.';
+
+  @override
+  String get quickStartStep1Title => '1. Tilni sozlang';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Kiritish (mikrofon/klaviatura) -> Tarjima -> Saqlash tartibida o\'zingizning o\'quv kartochkalaringizni yarating.';
+
+  @override
+  String get quickStartStep2Title => '2. Asosiy jarayon';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.';
+
+  @override
+  String get quickStartStep3Title => '3. Rejimdan foydalanish';
 
   @override
   String recentNItems(int count) {
@@ -822,6 +732,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get refresh => 'Yangilash';
 
   @override
+  String get requestTranslation => 'Tarjima so\'rash';
+
+  @override
   String get reset => 'Tiklash';
 
   @override
@@ -842,16 +755,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get reviewModeTitle => 'Ko\'rib chiqish';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Uchinchi tomon';
-
-  @override
-  String get roleUser => 'Foydalanuvchi';
-
-  @override
   String get save => 'Saqlash';
+
+  @override
+  String get saveAsSentence => 'Gap sifatida saqlash';
+
+  @override
+  String get saveAsWord => 'So\'z sifatida saqlash';
 
   @override
   String get saveData => 'Ma\'lumotlarni saqlash';
@@ -862,6 +772,9 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Skanlash tarixiga saqlash';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Qidiruv rejimida tarjimalarni saqlashga harakat qiling';
 
@@ -870,6 +783,12 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get saving => 'Saqlanmoqda...';
+
+  @override
+  String get scanInstructions => 'Skanlash uchun rasmni tanlang';
+
+  @override
+  String get scanLabel => 'Skanlash';
 
   @override
   String score(String score) {
@@ -916,16 +835,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get selectPOS => 'So\'z turkumini tanlash';
 
   @override
-  String get selectParticipants => 'Ishtirokchilarni tanlang';
-
-  @override
-  String get selectSentenceType => 'Gap turini tanlash';
-
-  @override
   String get selectStudyMaterial => 'O\'quv materiallarini tanlash';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Gap';
@@ -934,43 +844,14 @@ class AppLocalizationsUz extends AppLocalizations {
   String get signUp => 'Ro\'yxatdan o\'tish';
 
   @override
-  String get similarTextFound => 'O\'xshash matn topildi';
-
-  @override
-  String get skip => 'O\'tkazib yuborish';
-
-  @override
-  String get source => 'Manba:';
-
-  @override
-  String get sourceLanguage => 'Asl til';
+  String get simplifiedGuidance =>
+      'Kundalik suhbatlarni bir zumda chet tiliga aylantiring! Talkie sizning til hayotingizni yozib boradi.';
 
   @override
   String get sourceLanguageLabel => 'Mening tilim (Source)';
 
   @override
-  String get speakNow => 'Hozir gapiring!';
-
-  @override
-  String get speaker => 'Notiq';
-
-  @override
-  String get speakerSelect => 'Gapiruvchini tanlang';
-
-  @override
-  String get speakingPractice => 'Gapirish mashqi';
-
-  @override
-  String get startChat => 'Suhbatni boshlash';
-
-  @override
-  String get startPractice => 'Mashqni boshlash';
-
-  @override
   String get startTutorial => 'O\'quv qo\'llanmani boshlash';
-
-  @override
-  String get startWarning => 'Diqqat';
 
   @override
   String get startsWith => 'Bosh harf';
@@ -980,28 +861,22 @@ class AppLocalizationsUz extends AppLocalizations {
       'Elektron pochtangizni tekshiring va tasdiqlashni yakunlang.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Yuklab olinmoqda: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Import qilishda xatolik: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name muvaffaqiyatli import qilindi';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Kirish bekor qilindi.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Kirishda xatolik: $error';
   }
 
@@ -1012,23 +887,23 @@ class AppLocalizationsUz extends AppLocalizations {
   String get statusLogoutSuccess => 'Siz tizimdan chiqdingiz.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Ro\'yxatdan o\'tishda xatolik: $error';
+  String statusRequestFailed(String error) {
+    return 'Tarjima so\'rovi bajarilmadi: $error';
   }
 
   @override
-  String get statusSigningUp => 'Ro\'yxatdan o\'tilmoqda...';
+  String get statusRequestSuccess => 'Tarjima so\'rovi bajarildi.';
 
   @override
   String get stopPractice => 'Mashqni to\'xtatish';
 
   @override
-  String get studyComplete => 'O\'rganish yakunlandi';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Siz tanlagan material hozirda o\'rnatilgan o\'rganish tili ($targetLang)ni qo\'llab-quvvatlamaydi, shuning uchun uni mahalliy xotiraga saqlab bo\'lmaydi. Tarjima so\'ramoqchimisiz?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'O\'rganish yozuvlari ($count)';
-  }
+  String get studyLangNotFoundTitle => 'O\'rganish tili topilmadi';
 
   @override
   String get styleFormal => 'Rasmiy';
@@ -1043,22 +918,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get styleSlang => 'Sleng/qo\'pol so\'zlar';
 
   @override
-  String get subject => 'Mavzu:';
-
-  @override
   String get swapLanguages => 'Tillarni almashtirish';
 
   @override
-  String get switchToAi => 'AI rejimiga o\'tish';
-
-  @override
-  String get switchToPartner => 'Hamkor rejimiga o\'tish';
-
-  @override
   String get syncingData => 'Ma\'lumotlar sinxronlanmoqda...';
-
-  @override
-  String get tabConversation => 'Suhbat';
 
   @override
   String tabReview(int count) {
@@ -1122,6 +985,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tooltipSearch => 'Qidiruv';
 
   @override
+  String get tooltipSettingsConfirm => 'Sozlamalarni tasdiqlash';
+
+  @override
   String get tooltipSpeaking => 'Gapirish';
 
   @override
@@ -1134,6 +1000,9 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get translate => 'Tarjima';
+
+  @override
+  String get translateNow => 'Hozir tarjima qilish';
 
   @override
   String get translating => 'Tarjima qilinmoqda...';
@@ -1150,6 +1019,9 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Tarjima tili';
+
+  @override
   String get translationLimitExceeded => 'Tarjima limiti oshib ketdi';
 
   @override
@@ -1163,17 +1035,25 @@ class AppLocalizationsUz extends AppLocalizations {
   String get translationRefilled => 'Tarjima soni 5 marta to\'ldirildi!';
 
   @override
+  String get translationResult => 'Tarjima natijasi';
+
+  @override
   String get translationResultHint => 'Tarjima natijasi - tahrirlash mumkin';
 
   @override
   String get tryAgain => 'Qaytadan urinib ko\'ring';
 
   @override
-  String get tutorialAiChatDesc =>
-      'AI persona bilan amaliy suhbatni mashq qiling.';
+  String get ttsInstallGuide =>
+      'Android Sozlamalari > Google TTS bo\'limida mos til ma\'lumotlarini o\'rnating.';
 
   @override
-  String get tutorialAiChatTitle => 'AI suhbati';
+  String get ttsMissing =>
+      'Ushbu til uchun ovozli dvigatel qurilmangizga o\'rnatilmagan.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Ushbu qurilmaning sozlamalari ushbu tilda ovoz chiqarishni qo\'llab-quvvatlamaydi.';
 
   @override
   String get tutorialContextDesc =>
@@ -1292,7 +1172,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get typeExclamation => 'Undov gap';
 
   @override
+  String get typeIdiom => 'Idiom';
+
+  @override
   String get typeImperative => 'Buyruq gap';
+
+  @override
+  String get typeProverb => 'Maqol/hikmat';
 
   @override
   String get typeQuestion => 'So\'roq gap';
@@ -1307,6 +1193,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get useExistingText => 'Mavjud matndan foydalanish';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Onlayn qo\'llanmani ko\'rish';
 
   @override
@@ -1314,6 +1205,16 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Reklamani ko\'rib to\'ldirish (+5 marta)';
+
+  @override
+  String get welcomeButton => 'Boshlash';
+
+  @override
+  String get welcomeDesc =>
+      'Talkiega xush kelibsiz! Dunyoning 80 dan ortiq barcha tillarini 100% sifat bilan qo\'llab-quvvatlaymiz va yangi premium 3D dizayn va optimallashtirilgan ishlash bilan mukammal o\'rganish tajribasini taqdim etamiz.';
+
+  @override
+  String get welcomeTitle => 'Talkie-ga xush kelibsiz!';
 
   @override
   String get word => 'So\'z';
@@ -1330,113 +1231,4 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Talaffuzingiz';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Ushbu qurilmaning sozlamalari ushbu tilda ovoz chiqarishni qo\'llab-quvvatlamaydi.';
-
-  @override
-  String get homeTab => 'Tarjima';
-
-  @override
-  String get welcomeTitle => 'Talkie-ga xush kelibsiz!';
-
-  @override
-  String get welcomeDesc =>
-      'Talkiega xush kelibsiz! Dunyoning 80 dan ortiq barcha tillarini 100% sifat bilan qo\'llab-quvvatlaymiz va yangi premium 3D dizayn va optimallashtirilgan ishlash bilan mukammal o\'rganish tajribasini taqdim etamiz.';
-
-  @override
-  String get welcomeButton => 'Boshlash';
-
-  @override
-  String get labelDetails => 'Batafsil sozlamalar';
-
-  @override
-  String get translationResult => 'Tarjima natijasi';
-
-  @override
-  String get inputContent => 'Kiritilgan matn';
-
-  @override
-  String get translateNow => 'Hozir tarjima qilish';
-
-  @override
-  String get tooltipSettingsConfirm => 'Sozlamalarni tasdiqlash';
-
-  @override
-  String get hintNoteExample => 'Masalan: vaziyat izohi, omonimlar va h.k.';
-
-  @override
-  String get hintTagExample => 'Masalan: biznes, sayohat...';
-
-  @override
-  String get addNew => 'Yangi qo\'shish';
-
-  @override
-  String get newNotebookTitle => 'Yangi daftar nomi';
-
-  @override
-  String get enterNameHint => 'Ismni kiriting';
-
-  @override
-  String get add => 'Qo\'shish';
-
-  @override
-  String get openSettings => 'Sozlamalarni ochish';
-
-  @override
-  String get helpNotebook =>
-      'Tarjima qilingan natijalarni saqlash uchun papkani tanlang.';
-
-  @override
-  String get helpNote =>
-      'So\'zlarning ma\'nosi, misollari yoki holatlari kabi istalgan narsalarni yozing.';
-
-  @override
-  String get helpTag =>
-      'Keyinroq saralash yoki qidirish uchun kalit so\'zlarni kiriting.';
-
-  @override
-  String get requestTranslation => 'Tarjima so\'rash';
-
-  @override
-  String get statusRequestSuccess => 'Tarjima so\'rovi bajarildi.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Tarjima so\'rovi bajarilmadi: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'O\'rganish tili topilmadi';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Siz tanlagan material hozirda o\'rnatilgan o\'rganish tili ($targetLang)ni qo\'llab-quvvatlamaydi, shuning uchun uni mahalliy xotiraga saqlab bo\'lmaydi. Tarjima so\'ramoqchimisiz?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Tilni sozlang';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Menyu > Til sozlamalaridan o\'z tilingizni va o\'rganish tilini belgilang.';
-
-  @override
-  String get quickStartStep2Title => '2. Asosiy jarayon';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Kiritish (mikrofon/klaviatura) -> Tarjima -> Saqlash tartibida o\'zingizning o\'quv kartochkalaringizni yarating.';
-
-  @override
-  String get quickStartStep3Title => '3. Rejimdan foydalanish';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Chatda mashq qiling va Talaffuz mashqlari yorlig\'ida matnni ko\'rib, to\'g\'ridan-to\'g\'ri talaffuz qilib mashq qiling.';
-
-  @override
-  String get noteGuidance =>
-      'Aniqroq tarjima qilish uchun qo\'shimcha ma\'lumotlarni kiritadigan joy';
 }

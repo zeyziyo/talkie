@@ -1,32 +1,10 @@
 {
   "@@locale": "bg",
-  "basicWords": "Основно хранилище на думи",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Входен език",
-  "translationLanguage": "Език за превод",
-  "simplifiedGuidance": "Незабавно преобразувайте ежедневните разговори на чужд език! Talkie записва вашия езиков живот.",
-  "noDataForLanguage": "Няма учебни материали за избрания език в локалната база данни. Моля, изтеглете материали или изберете друг език.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Отказ",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Точност",
-  "ttsMissing": "Гласовият двигател за този език не е инсталиран на вашето устройство.",
-  "ttsInstallGuide": "Моля, инсталирайте езиковите данни в Настройки на Android > Google TTS.",
   "adLoading": "Рекламата се зарежда. Моля, опитайте отново по-късно.",
+  "add": "Добави",
+  "addNew": "Добави нов",
   "addNewSubject": "Добавяне на ново заглавие",
-  "addParticipant": "Добавяне на участник",
   "addTagHint": "Добавяне на етикет...",
   "alreadyHaveAccount": "Вече имате акаунт?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Основно хранилище на думи",
+  "basicWords": "Основно хранилище на думи",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Отказ",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Винителен падеж",
   "casePossessive": "Притежателен падеж",
   "casePossessivePronoun": "Притежателно местоимение",
   "caseReflexive": "Възвратно местоимение",
   "caseSubject": "Именителен падеж",
-  "chatAiChat": "Чат",
-  "chatAllConversations": "Всички разговори",
-  "chatChoosePersona": "Избор на персонаж",
-  "chatEndMessage": "Искате ли да прекратите разговора?",
-  "chatEndTitle": "Край и запазване на разговора",
-  "chatFailed": "Неуспешен чат: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Откъс от разговор ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "История на разговорите",
-  "chatNew": "Нов разговор",
-  "chatNewChat": "Нов разговор",
-  "chatNoConversations": "Все още нямате разговори",
-  "chatSearchHint": "Търсене по заглавие на разговор...",
-  "chatNoteSearchHint": "Търсене в бележките...",
-  "chatSaveAndExit": "Запазване и излизане",
-  "chatStartNewPrompt": "Започнете нов разговор за практика!",
-  "chatTypeHint": "Въведете съобщение...",
-  "chatUntitled": "Разговор без заглавие",
   "checking": "Проверка...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Искате ли да изтриете този разговор?\nИзтритите разговори не могат да бъдат възстановени.",
-  "confirmDeleteParticipant": "Наистина ли искате да изтриете този участник?",
   "contextTagHint": "Запишете ситуацията, за да ви е по-лесно да я разграничите по-късно",
   "contextTagLabel": "Контекст/Ситуация (по избор) - напр. Добро утро, Официално",
   "copiedToClipboard": "Копирано в клипборда!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Практикувайте разговори чрез ролеви игри. Изберете подходящ отговор и го кажете.",
-  "dialogueQuestTitle": "Куест за диалог",
-  "disambiguationPrompt": "Какво значение искате да преведете?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Избор на значение",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Нямате акаунт?",
-  "editParticipant": "Редактиране на участник",
   "email": "Имейл",
   "emailAlreadyInUse": "Този имейл вече е регистриран. Моля, влезте или използвайте опцията за забравена парола.",
+  "enterNameHint": "Въведете име",
   "enterNewSubjectName": "Въведете ново заглавие",
   "enterSentenceHint": "Въведете изречение...",
   "enterTextHint": "Въведете текст за превод",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Разпознат текст",
   "female": "Жена",
   "file": "Файл:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Режим на игра",
   "gameOver": "Играта свърши",
   "gender": "Пол",
-  "labelFilterMaterial": "Материали",
-  "labelFilterTag": "Етикети",
   "generalTags": "Общи етикети",
   "getMaterials": "Получаване на материали",
   "good": "Добре",
   "googleContinue": "Продължи с Google",
-  "helpDialogueImportDesc": "Импортиране на цял набор от диалози като JSON файл.",
-  "helpDialogueImportDetails": "• JSON структура: Използвайте масив `dialogues` вместо `entries`\n• Автоматично възстановяване: Заглавието на диалога, персонажите и реда на съобщенията се възстановяват.\n• Местоположение: Импортираните диалози се появяват в раздела „История“ на режима AI Chat.",
   "helpJsonDesc": "Следвайте този формат, за да импортирате учебни материали във формат JSON за режим 3:",
-  "helpJsonTypeDialogue": "Диалог",
   "helpJsonTypeSentence": "Изречение",
   "helpJsonTypeWord": "Дума",
   "helpMode1Desc": "Започнете изучаването на езици по най-интуитивния начин с премиум 3D микрофон и големи икони на клавиатура.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Избор на колекция: Използвайте 'Избор на учебна колекция' или 'Онлайн библиотека' от менюто (⋮) горе вдясно\n• Обръщане на карта: Проверете превода с 'Показване/Скриване'\n• Слушане: Пуснете произношението с иконата на високоговорител\n• Завършено обучение: Маркирайте с отметка (V) за завършено обучение\n• Изтриване: Изтрийте записа, като задържите картата (дълго натискане)\n• Търсене и филтър: Поддръжка на лентата за търсене (интелигентно търсене в реално време) и филтри за тагове и начални букви",
   "helpMode3Desc": "Практикувайте произношение, като слушате и повтаряте изречения (Shadowing).",
   "helpMode3Details": "• Избор на материали: Изберете колекцията от материали за учене\n• Настройка на интервала: Регулирайте времето за изчакване между изреченията с бутоните [-] [+](3 сек. ~ 60 сек.)\n• Старт/Стоп: Контролирайте сесията за засенчване\n• Говорене: Слушайте гласа и говорете след него\n• Обратна връзка: Показва оценка за точност (0-100) и цвят\n• Условия за търсене: Филтриране на целта за практика по таг, последни елементи, начална буква",
-  "helpModeChatDesc": "Практикувайте разговорен език, като разговаряте с AI персонаж.",
-  "helpModeChatDetails": "• AI чат: Практикувайте разговори в реалния живот с персони в менюто „Чат“ в долната част на лентата с раздели\n• Настройка на персоната: Свободно определяне на пола, името и езиковия код на другия човек\n• GPS ситуация: Препоръчване на теми за разговор, подходящи за мястото, чрез разпознаване на текущото ми местоположение\n• 2 езика: Отговорът на AI се показва с превод, за да се увеличи максимално ефектът на обучение\n• Управление на записи: Филтриране на минали истории на разговори и запазване на конкретни съобщения от разговорите като учебни материали",
+  "helpNote": "Записвайте свободно значения, примери, ситуации и други за думата.",
+  "helpNotebook": "Изберете папка за запазване на преведените резултати.",
   "helpTabJson": "JSON формат",
   "helpTabModes": "Описание на режимите",
   "helpTabQuickStart": "Бърз старт",
   "helpTabTour": "Обиколка",
+  "helpTag": "Въведете ключови думи за по-късно класифициране или търсене.",
   "helpTitle": "Помощ и ръководство",
   "helpTourDesc": "**Кръгът с акцент** ще ви насочи към основните функции.\n(Напр.: Можете да го изтриете, като задържите картата, посочена от **Кръгът с акцент**.)",
   "hide": "Скриване",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Напр.: контекст, омоними и др.",
+  "hintTagExample": "Напр.: бизнес, пътуване...",
+  "homeTab": "Превод",
   "importAdded": "Добавени: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Импортирани са {files} файла, {entries} записа.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Импортиране на JSON файл",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Единичен JSON файл",
+  "importSourceFolder": "Папка (структура на библиотека по езици)",
+  "importSourceTitle": "Изберете източник за импортиране",
+  "importSourceZip": "ZIP файл (компресирана папка)",
   "importTotal": "Общо: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Въведен текст",
+  "inputLanguage": "Входен език",
   "inputModeTitle": "Въвеждане",
   "intervalSeconds": "Интервал: {seconds} сек.",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Моля, въведете валиден имейл адрес.",
   "kakaoContinue": "Продължи с Kakao",
+  "labelDetails": "Подробни настройки",
+  "labelFilterMaterial": "Материали",
+  "labelFilterTag": "Етикети",
   "labelLangCode": "Код на езика (напр. en-US, ko-KR)",
-  "labelName": "Име",
   "labelNote": "Бележка",
   "labelPOS": "Част на речта",
-  "labelRole": "Роля",
   "labelSentence": "Изречение",
   "labelSentenceCollection": "Колекция изречения",
   "labelSentenceType": "Тип изречение",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Зареждане на участници...",
   "location": "Местоположение",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Вход",
   "logout": "Изход",
   "logoutConfirmMessage": "Наистина ли искате да излезете от устройството?",
   "logoutConfirmTitle": "Изход",
   "male": "Мъж",
-  "manageParticipants": "Управление на участници",
   "manual": "Ръчно въвеждане",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Информация за материала",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Аз",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Импортиране на материали от устройството",
   "menuHelp": "Помощ",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Моята колекция от изречения",
   "myWordbook": "Моят речник",
   "neutral": "Неутрален",
+  "newNotebookTitle": "Име на нова колекция",
   "newSubjectName": "Заглавие на нов речник/фрази",
   "next": "Напред",
-  "noDialogueHistory": "Няма история на разговорите.",
-  "noInternetWarningMic": "Няма интернет връзка. Разпознаването на глас може да не работи офлайн.",
-  "noInternetWarningTranslate": "Няма интернет връзка. Функцията за превод не е налична офлайн. Моля, използвайте режим за преговор.",
+  "noDataForLanguage": "Няма учебни материали за избрания език в локалната база данни. Моля, изтеглете материали или изберете друг език.",
   "noMaterialsInCategory": "Няма материали в тази категория.",
-  "noParticipantsFound": "Няма регистрирани участници.",
   "noRecords": "Няма записи за обучение за избрания език",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Не е открит глас",
   "notSelected": "- Не е избрано -",
+  "noteGuidance": "Където въвеждате допълнителни подробности за по-точен превод",
   "onlineLibraryCheckInternet": "Проверете интернет връзката си или опитайте по-късно.",
   "onlineLibraryLoadFailed": "Неуспешно зареждане на материали.",
   "onlineLibraryNoMaterials": "Няма материали.",
-  "participantDeleted": "Участникът е изтрит.",
-  "participantRename": "Преименуване на участник",
-  "partner": "Партньор",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Режим „Партньор“",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Отваряне на настройките",
   "password": "Парола",
-  "passwordTooShort": "Паролата трябва да е поне 6 знака.",
+  "passwordTooShort": "Паролата е твърде кратка",
   "perfect": "Перфектно!",
-  "personaFriend": "Местен приятел",
-  "personaGuide": "Туристически гид",
-  "personaTeacher": "Учител по английски",
+  "pickGallery": "Избор от галерията",
   "playAgain": "Играйте отново",
   "playbackFailed": "Неуспешно пускане: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Прилагателно",
   "posAdverb": "Наречие",
+  "posArticle": "Член",
   "posConjunction": "Съюз",
   "posInterjection": "Междуметие",
   "posNoun": "Съществително",
+  "posParticle": "Частица",
   "posPreposition": "Предлог/Следлог",
   "posPronoun": "Местоимение",
   "posVerb": "Глагол",
   "practiceModeTitle": "Практика",
   "practiceWordsOnly": "Практикуване само на думи",
+  "processing": "Обработка...",
   "progress": "Напредък: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Първо задайте своя език и езика за обучение в Меню > Настройки на езика.",
+  "quickStartStep1Title": "1. Настройка на езика",
+  "quickStartStep2Desc": "Създайте свои собствени карти за обучение в реда Въвеждане (микрофон/клавиатура) -> Превод -> Запазване.",
+  "quickStartStep2Title": "2. Основен поток",
+  "quickStartStep3Desc": "Практикувайте с чат и практикувайте произношение, като гледате текст в раздела Практика на произношението.",
+  "quickStartStep3Title": "3. Използване на режими",
   "recentNItems": "Показване на последните {count} създадени",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Заявка за превод",
   "reset": "Нулиране",
   "resetPracticeHistory": "Нулиране на историята на практиката",
   "retry": "Да опитате отново?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Преглед",
-  "roleAi": "AI",
-  "roleThirdParty": "Трети човек",
-  "roleUser": "Потребител",
   "save": "Запазване",
+  "saveAsSentence": "Запазване като изречение",
+  "saveAsWord": "Запазване като дума",
   "saveData": "Запазване на данни",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Запазване в историята на сканирането",
   "saveTranslationsFromSearch": "Опитайте да запазите преводи от режим на търсене",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Изберете изображение за сканиране",
+  "scanLabel": "Сканиране",
   "score": "Точност: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Избор на част на речта",
-  "selectParticipants": "Избор на участници",
-  "selectSentenceType": "Избор на тип изречение",
   "selectStudyMaterial": "Избор на учебни материали",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Изречение",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Регистрация",
-  "similarTextFound": "Намерен подобен текст",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Пропускане",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Източник:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Изходен език",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "sourceLanguageLabel": "Моят език (Източник)",
-  "speakNow": "Говорете сега!",
-  "speaker": "Говорител",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Избор на говорещ",
-  "speakingPractice": "Практикуване на говорене",
-  "startChat": "Започни разговор",
-  "startPractice": "Започване на практика",
-  "startTutorial": "Започване на урок",
-  "startWarning": "Внимание",
+  "simplifiedGuidance": "Незабавно преобразувайте ежедневните разговори на чужд език! Talkie записва вашия езиков живот.",
+  "sourceLanguageLabel": "Моят език",
+  "startTutorial": "Стартиране на урок",
   "startsWith": "Започва с",
-  "statusCheckEmail": "Моля, проверете имейла си, за да завършите удостоверяването.",
+  "statusCheckEmail": "Проверете имейла си",
   "statusDownloading": "Изтегляне: {name}...",
-  "statusImportFailed": "Неуспешен импорт: {error}",
-  "statusImportSuccess": "{name} е успешно импортиран",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Влизането е отказано.",
-  "statusLoginFailed": "Неуспешно влизане: {error}",
-  "statusLoginSuccess": "Успешно влизане.",
-  "statusLogoutSuccess": "Успешно излизане.",
-  "statusSignUpFailed": "Неуспешна регистрация: {error}",
-  "statusSigningUp": "Регистриране...",
-  "stopPractice": "Спиране на практика",
-  "studyComplete": "Обучението завърши",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Записи за обучение ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Неуспешен импорт: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} е успешно импортиран",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Неуспешно влизане: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Влизането е успешно",
+  "statusLogoutSuccess": "Излизането е успешно",
+  "statusRequestFailed": "Неуспешна заявка за превод: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Заявката за превод е завършена.",
+  "stopPractice": "Спиране на практика",
+  "studyLangNotFoundDesc": "Избраният от вас материал не поддържа текущо зададения език за обучение ({targetLang}) и не може да бъде запазен локално. Искате ли да заявите превод?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Езикът за обучение не се поддържа",
   "styleFormal": "Официален",
   "styleInformal": "Неофициален",
   "stylePolite": "Любезен",
   "styleSlang": "Сленг",
-  "subject": "Заглавие:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Размяна на езици",
-  "switchToAi": "Превключване към AI режим",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Превключване към режим „Партньор“",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Синхронизиране на данни...",
-  "tabConversation": "Разговор",
   "tabReview": "Преглед ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Намаляване",
   "tooltipIncrease": "Увеличаване",
   "tooltipSearch": "Търсене",
+  "tooltipSettingsConfirm": "Потвърди настройките",
   "tooltipSpeaking": "Говорене",
   "tooltipStudyReview": "Обучение+Преглед",
   "totalRecords": "Общо {count} записа (Преглед на всички)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Преведи сега",
   "translating": "Превод...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Език за превод",
   "translationLimitExceeded": "Превишен лимит за превод",
   "translationLimitMessage": "Използвахте всичките си безплатни дневни преводи (5 пъти).\\n\\nИскате ли незабавно да презаредите 5 пъти, като гледате реклама?",
   "translationLoaded": "Зареден запазен превод",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Броят на преводите е презареден 5 пъти!",
+  "translationResult": "Резултат от превода",
   "translationResultHint": "Резултат от превода - може да се редактира",
   "tryAgain": "Опитайте отново",
-  "tutorialAiChatDesc": "Практикувайте разговори в реални ситуации с AI персонаж.",
-  "tutorialAiChatTitle": "AI Чат",
+  "ttsInstallGuide": "Моля, инсталирайте езиковите данни в Настройки на Android > Google TTS.",
+  "ttsMissing": "Гласовият двигател за този език не е инсталиран на вашето устройство.",
+  "ttsUnsupportedNatively": "Този език не се поддържа за гласов изход по подразбиране на това устройство.",
   "tutorialContextDesc": "Можете да го запазите отделно, като запишете ситуацията (напр. сутрин, вечер) дори за едно и също изречение.",
   "tutorialContextTitle": "Таг за ситуация/контекст",
   "tutorialLangSettingsDesc": "Настройте изходния и целевия език за превод.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Превежда въведения текст.",
   "tutorialTransTitle": "Превод",
   "typeExclamation": "Възклицателно изречение",
+  "typeIdiom": "Идиом",
   "typeImperative": "Заповедно изречение",
+  "typeProverb": "Поговорка",
   "typeQuestion": "Въпросително изречение",
   "typeStatement": "Декларативно изречение",
   "usageLimitTitle": "Достигнат лимит",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Преглед на онлайн ръководството",
   "voluntaryTranslations": "Доброволни преводи",
   "watchAdAndRefill": "Презареждане чрез гледане на реклама (+5 пъти)",
+  "welcomeButton": "Започнете",
+  "welcomeDesc": "Добре дошли в Talkie! Поддържаме над 80 езика от цял свят със 100% интеграция и ви даваме перфектно учебно изживяване с нов премиум 3D дизайн и оптимизирана производителност.",
+  "welcomeTitle": "Добре дошли в Talkie!",
   "word": "Дума",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Защитете базата, като кажете думата, преди врагът да пристигне.",
   "wordDefenseTitle": "Защита на думи",
   "wordModeLabel": "Режим „Думи“",
-  "yourPronunciation": "Вашето произношение",
-  "ttsUnsupportedNatively": "Този език не се поддържа за гласов изход по подразбиране на това устройство.",
-  "homeTab": "Превод",
-  "welcomeTitle": "Добре дошли в Talkie!",
-  "welcomeDesc": "Добре дошли в Talkie! Поддържаме над 80 езика от цял свят със 100% интеграция и ви даваме перфектно учебно изживяване с нов премиум 3D дизайн и оптимизирана производителност.",
-  "welcomeButton": "Започнете",
-  "labelDetails": "Подробни настройки",
-  "translationResult": "Резултат от превода",
-  "inputContent": "Въведен текст",
-  "translateNow": "Преведи сега",
-  "tooltipSettingsConfirm": "Потвърди настройките",
-  "hintNoteExample": "Напр.: контекст, омоними и др.",
-  "hintTagExample": "Напр.: бизнес, пътуване...",
-  "addNew": "Добави нов",
-  "newNotebookTitle": "Име на нова колекция",
-  "enterNameHint": "Въведете име",
-  "add": "Добави",
-  "openSettings": "Отваряне на настройките",
-  "helpNotebook": "Изберете папка за запазване на преведените резултати.",
-  "helpNote": "Записвайте свободно значения, примери, ситуации и други за думата.",
-  "helpTag": "Въведете ключови думи за по-късно класифициране или търсене.",
-  "requestTranslation": "Заявка за превод",
-  "statusRequestSuccess": "Заявката за превод е завършена.",
-  "statusRequestFailed": "Неуспешна заявка за превод: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Езикът за обучение не се поддържа",
-  "studyLangNotFoundDesc": "Избраният от вас материал не поддържа текущо зададения език за обучение ({targetLang}) и не може да бъде запазен локално. Искате ли да заявите превод?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Настройка на езика",
-  "quickStartStep1Desc": "Първо задайте своя език и езика за обучение в Меню > Настройки на езика.",
-  "quickStartStep2Title": "2. Основен поток",
-  "quickStartStep2Desc": "Създайте свои собствени карти за обучение в реда Въвеждане (микрофон/клавиатура) -> Превод -> Запазване.",
-  "quickStartStep3Title": "3. Използване на режими",
-  "quickStartStep3Desc": "Практикувайте с чат и практикувайте произношение, като гледате текст в раздела Практика на произношението.",
-  "noteGuidance": "Където въвеждате допълнителни подробности за по-точен превод"
+  "yourPronunciation": "Вашето произношение"
 }

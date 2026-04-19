@@ -1,32 +1,10 @@
 {
   "@@locale": "ne",
-  "basicWords": "आधारभूत शब्द भण्डार",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "इनपुट भाषा",
-  "translationLanguage": "अनुवाद भाषा",
-  "simplifiedGuidance": "विदेशी भाषामा दैनिक कुराकानीलाई तुरुन्तै रूपान्तरण गर्नुहोस्! Talkie ले तपाईंको भाषा जीवन रेकर्ड गर्दछ।",
-  "noDataForLanguage": "तपाईंले रोज्नुभएको भाषाको लागि स्थानीय DB मा सिक्ने सामग्री उपलब्ध छैन। कृपया सामग्री डाउनलोड गर्नुहोस् वा अर्को भाषा रोज्नुहोस्।",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "रद्द गर्नुहोस्",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "शुद्धता",
-  "ttsMissing": "यो भाषाको लागि आवाज इन्जिन उपकरणमा स्थापित छैन।",
-  "ttsInstallGuide": "कृपया Android सेटिङहरू > Google TTS मा सम्बन्धित भाषा डेटा स्थापना गर्नुहोस्।",
   "adLoading": "विज्ञापन लोड हुँदैछ। कृपया पछि फेरि प्रयास गर्नुहोस्।",
+  "add": "थप्नुहोस्",
+  "addNew": "नयाँ थप्नुहोस्",
   "addNewSubject": "नयाँ नाम थप्नुहोस्",
-  "addParticipant": "सहभागी थप्नुहोस्",
   "addTagHint": "ट्याग थप्नुहोस्...",
   "alreadyHaveAccount": "पहिले नै खाता छ?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "आधारभूत शब्द भण्डार",
+  "basicWords": "आधारभूत शब्द भण्डार",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "रद्द गर्नुहोस्",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "कर्म कारक",
   "casePossessive": "सम्बन्ध कारक",
   "casePossessivePronoun": "सम्बन्धवाचक सर्वनाम",
   "caseReflexive": "निजवाचक सर्वनाम",
   "caseSubject": "कर्ता कारक",
-  "chatAiChat": "च्याट",
-  "chatAllConversations": "सबै कुराकानीहरू",
-  "chatChoosePersona": "व्यक्तित्व छान्नुहोस्",
-  "chatEndMessage": "के तपाइँ कुराकानी अन्त्य गर्न चाहनुहुन्छ?",
-  "chatEndTitle": "कुराकानी अन्त्य र सुरक्षित",
-  "chatFailed": "च्याट असफल भयो: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "कुराकानीबाट उद्धरण ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "कुराकानी इतिहास",
-  "chatNew": "नयाँ कुराकानी",
-  "chatNewChat": "नयाँ कुराकानी",
-  "chatNoConversations": "कुनै कुराकानी छैन",
-  "chatSearchHint": "च्याट शीर्षकद्वारा खोज्नुहोस्...",
-  "chatNoteSearchHint": "टिप्पणी खोज्नुहोस्...",
-  "chatSaveAndExit": "सुरक्षित गरेर बाहिर निस्कनुहोस्",
-  "chatStartNewPrompt": "अभ्यासको लागि नयाँ कुराकानी सुरु गर्नुहोस्!",
-  "chatTypeHint": "सन्देश टाइप गर्नुहोस्...",
-  "chatUntitled": "शीर्षक नभएको कुराकानी",
   "checking": "जाँच गर्दै...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "के तपाइँ यो कुराकानी मेटाउन निश्चित हुनुहुन्छ?\nमेटाइएको कुराकानी पुन: प्राप्त गर्न सकिँदैन।",
-  "confirmDeleteParticipant": "के तपाईं यो सहभागीलाई हटाउन चाहनुहुन्छ?",
   "contextTagHint": "पछि छुट्याउन सजिलो होस् भनेर स्थिति लेख्नुहोस्",
   "contextTagLabel": "सन्दर्भ/स्थिति (वैकल्पिक) - उदाहरण: बिहानको अभिवादन, आदरार्थी",
   "copiedToClipboard": "क्लिपबोर्डमा प्रतिलिपि गरियो!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "नाटकको माध्यमबाट कुराकानी अभ्यास गर्नुहोस्। उपयुक्त जवाफ छान्नुहोस् र बोल्नुहोस्।",
-  "dialogueQuestTitle": "कुराकानी खोज",
-  "disambiguationPrompt": "कुन अर्थमा अनुवाद गर्न चाहनुहुन्छ?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "अर्थ छनोट गर्नुहोस्",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "खाता छैन?",
-  "editParticipant": "सहभागी सम्पादन गर्नुहोस्",
   "email": "इमेल",
   "emailAlreadyInUse": "यो इमेल पहिले नै दर्ता गरिएको छ। कृपया लगइन गर्नुहोस् वा पासवर्ड पुन: प्राप्ति प्रयोग गर्नुहोस्।",
+  "enterNameHint": "नाम प्रविष्ट गर्नुहोस्",
   "enterNewSubjectName": "नयाँ नाम प्रविष्ट गर्नुहोस्",
   "enterSentenceHint": "...वाक्य प्रविष्ट गर्नुहोस्",
   "enterTextHint": "अनुवाद गर्न पाठ प्रविष्ट गर्नुहोस्",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "पहिचान गरिएको पाठ",
   "female": "महिला",
   "file": "फाइल:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "खेल मोड",
   "gameOver": "खेल खत्तम",
   "gender": "लिङ्ग",
-  "labelFilterMaterial": "सामग्री",
-  "labelFilterTag": "ट्याग",
   "generalTags": "सामान्य ट्यागहरू",
   "getMaterials": "सामग्री प्राप्त गर्नुहोस्",
   "good": "राम्रो छ",
   "googleContinue": "गुगलबाट जारी राख्नुहोस्",
-  "helpDialogueImportDesc": "JSON फाइलबाट सम्पूर्ण कुराकानी सेट आयात गर्नुहोस्।",
-  "helpDialogueImportDetails": "• JSON संरचना: `entries` को सट्टा `dialogues` array प्रयोग गर्नुहोस्\n• स्वतः रिकभर: कुराकानीको शीर्षक, व्यक्तित्व, सन्देश क्रम रिकभर हुन्छ।\n• स्थान: आयात गरिएको कुराकानी AI च्याट मोडको 'रेकर्ड' ट्याबमा देखा पर्छ।",
   "helpJsonDesc": "मोड ३ मा प्रयोग गर्नको लागि JSON फाइलबाट सिकाइ सामग्री आयात गर्न, निम्न ढाँचा पालना गर्नुहोस्:",
-  "helpJsonTypeDialogue": "संवाद (Dialogue)",
   "helpJsonTypeSentence": "वाक्य (Sentence)",
   "helpJsonTypeWord": "शब्द (Word)",
   "helpMode1Desc": "प्रिमियम थ्रीडी माइक्रोफोन र ठूलो किबोर्ड आइकनको साथ सबैभन्दा सहज तरिकाले भाषा सिक्न सुरु गर्नुहोस्।",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• स्रोत सामग्री छान्नुहोस्: माथिल्लो दायाँ कुनामा रहेको मेनु (⋮) बाट 'सिकाइ स्रोत सामग्री छान्नुहोस्' वा 'अनलाइन स्रोत सामग्री' प्रयोग गर्नुहोस्।\n• कार्ड पल्टाउनुहोस्: अनुवाद जाँच गर्न 'देखाउनुहोस्/लुकाउनुहोस्'\n• सुन्नुहोस्: स्पिकर आइकनको साथ उच्चारण बजाउनुहोस्।\n• सिकाइ पूरा भयो: चेक मार्क (V) सँग सिकाइ पूरा भएको रूपमा चिन्ह लगाउनुहोस्।\n• मेटाउनुहोस्: रेकर्ड मेटाउन कार्डलाई लामो समयसम्म थिच्नुहोस् (लामो क्लिक गर्नुहोस्)।\n• खोज र फिल्टर: खोज पट्टी (रियल-टाइम स्मार्ट खोज) र ट्यागहरू, सुरूवात अक्षर फिल्टर समर्थन गर्दछ।",
   "helpMode3Desc": "वाक्य सुनेर पछ्याउँदै (छायांकन) उच्चारण अभ्यास गर्नुहोस्।",
   "helpMode3Details": "• सामग्री छनोट गर्नुहोस्: सिक्नको लागि सामग्री संग्रह छनोट गर्नुहोस्\n• अन्तराल सेटिङ: [-] [+] बटनबाट वाक्यको बीचमा पर्खने समय समायोजन गर्नुहोस् (३ सेकेन्ड~६० सेकेन्ड)\n• सुरु/बन्द: Shadowing सत्र नियन्त्रण गर्नुहोस्\n• बोल्नुहोस्: आवाज सुनेर दोहोर्याउनुहोस्\n• प्रतिक्रिया: शुद्धता स्कोर (०-१००) र रङ प्रदर्शन गर्नुहोस्\n• खोजी सर्तहरू: ट्याग, हालसालैका वस्तुहरू, सुरु हुने अक्षरबाट अभ्यास गर्ने लक्ष्य फिल्टर गर्नुहोस्",
-  "helpModeChatDesc": "एआई व्यक्तित्वसँग कुरा गरेर वास्तविक कुराकानी अभ्यास गर्नुहोस्।",
-  "helpModeChatDetails": "• AI च्याट: तल्लो ट्याब बारको 'च्याट' मेनुमा व्यक्तित्वसँग वास्तविक कुराकानी अभ्यास गर्नुहोस्\n• व्यक्तित्व सेटिङ: विपक्षीको लिंग, नाम र भाषा कोड निर्दिष्ट गर्नुहोस्\n• GPS अवस्था प्ले: तपाईंको वर्तमान स्थान पहिचान गर्नुहोस् र स्थानको लागि उपयुक्त कुराकानी विषयहरू सिफारिस गर्नुहोस्\n• २ भाषाहरू: AI को जवाफ अनुवादको साथ प्रदर्शित हुन्छ, सिकाइ प्रभाव अधिकतम पार्दै\n• रेकर्ड व्यवस्थापन: विगतको कुराकानी इतिहास फिल्टर गर्नुहोस् र कुराकानीको क्रममा विशिष्ट सन्देशहरू सिकाइ सामग्रीको रूपमा बचत गर्नुहोस्",
+  "helpNote": "शब्दको अर्थ, उदाहरण वा स्थिति जस्ता कुराहरू स्वतन्त्र रूपमा रेकर्ड गर्नुहोस्।",
+  "helpNotebook": "अनुवादित परिणामहरू बचत गर्न फोल्डर छान्नुहोस्।",
   "helpTabJson": "JSON ढाँचा",
   "helpTabModes": "मोड विवरण",
   "helpTabQuickStart": "द्रुत सुरुवात",
   "helpTabTour": "अनुभव लिनुहोस्",
+  "helpTag": "पछि वर्गीकरण वा खोजीका लागि कुञ्जी शब्दहरू प्रविष्ट गर्नुहोस्।",
   "helpTitle": "मद्दत र गाइड",
   "helpTourDesc": "**हाइलाइट गरिएको वृत्त**ले मुख्य सुविधाहरूको मार्गदर्शन गर्दछ।\n(उदाहरण: **हाइलाइट गरिएको वृत्त**ले देखाएको कार्डलाई लामो समयसम्म थिचेर मेटाउन सकिन्छ।)",
   "hide": "लुकाउनुहोस्",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "उदाहरण: सन्दर्भ, समानार्थी शब्द आदि",
+  "hintTagExample": "उदाहरण: व्यापार, यात्रा...",
+  "homeTab": "अनुवाद",
   "importAdded": "थपियो: {count} वटा",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} फाइलहरू, {entries} प्रविष्टिहरू आयात गरियो।",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON फाइल आयात गर्नुहोस्",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "एकल JSON फाइल",
+  "importSourceFolder": "फोल्डर (भाषा अनुसारको लाइब्रेरी संरचना)",
+  "importSourceTitle": "आयात स्रोत छान्नुहोस्",
+  "importSourceZip": "ZIP फाइल (कम्प्रेस गरिएको फोल्डर)",
   "importTotal": "कुल: {count} वटा",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "इनपुट सामग्री",
+  "inputLanguage": "इनपुट भाषा",
   "inputModeTitle": "इनपुट",
   "intervalSeconds": "अन्तराल: {seconds} सेकेन्ड",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "कृपया मान्य इमेल ठेगाना प्रविष्ट गर्नुहोस्।",
   "kakaoContinue": "काकाओको साथ जारी राख्नुहोस्",
+  "labelDetails": "विस्तृत सेटिङहरू",
+  "labelFilterMaterial": "सामग्री",
+  "labelFilterTag": "ट्याग",
   "labelLangCode": "भाषा कोड (उदाहरण: en-US, ko-KR)",
-  "labelName": "नाम",
   "labelNote": "टिप्पणी",
   "labelPOS": "शब्दवर्ग",
-  "labelRole": "भूमिका",
   "labelSentence": "वाक्य",
   "labelSentenceCollection": "वाक्य सङ्ग्रह",
   "labelSentenceType": "वाक्यको प्रकार",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "सहभागीहरू लोड गर्दै...",
   "location": "स्थान",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "लगइन",
   "logout": "लगआउट",
   "logoutConfirmMessage": "के तपाईं यो उपकरणबाट लगआउट गर्न चाहनुहुन्छ?",
   "logoutConfirmTitle": "लगआउट",
   "male": "पुरुष",
-  "manageParticipants": "सहभागीहरू प्रबन्ध गर्नुहोस्",
   "manual": "म्यानुअल इनपुट",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "सामग्री जानकारी",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "म",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "उपकरणबाट सामग्री आयात गर्नुहोस्",
   "menuHelp": "मद्दत",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "मेरो वाक्य संग्रह",
   "myWordbook": "मेरो शब्दकोश",
   "neutral": "तटस्थ",
+  "newNotebookTitle": "नयाँ नोटबुक शीर्षक",
   "newSubjectName": "नयाँ विषयको नाम",
   "next": "अर्को",
-  "noDialogueHistory": "कुनै संवाद इतिहास छैन।",
-  "noInternetWarningMic": "इन्टरनेट जडान छैन। अफलाइन हुँदा आवाज पहिचान सम्भव नहुन सक्छ।",
-  "noInternetWarningTranslate": "इन्टरनेट जडान छैन। अफलाइन हुँदा अनुवाद सुविधा प्रयोग गर्न सकिँदैन। कृपया समीक्षा मोड प्रयोग गर्नुहोस्।",
+  "noDataForLanguage": "तपाईंले रोज्नुभएको भाषाको लागि स्थानीय DB मा सिक्ने सामग्री उपलब्ध छैन। कृपया सामग्री डाउनलोड गर्नुहोस् वा अर्को भाषा रोज्नुहोस्।",
   "noMaterialsInCategory": "यो श्रेणीमा कुनै सामग्री छैन।",
-  "noParticipantsFound": "कुनै सहभागीहरू फेला परेनन्।",
   "noRecords": "चयन गरिएको भाषाको अध्ययन रेकर्ड छैन",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "आवाज पत्ता लागेन",
   "notSelected": "- चयन गरिएको छैन -",
+  "noteGuidance": "थप सटीक अनुवादको लागि जहाँ तपៃঁले थप विवरणहरू प्रविष्ट गर्नुहुन्छ",
   "onlineLibraryCheckInternet": "आफ्नो इन्टरनेट जडान जाँच गर्नुहोस् वा पछि फेरि प्रयास गर्नुहोस्।",
   "onlineLibraryLoadFailed": "सामग्री लोड गर्न असफल भयो।",
   "onlineLibraryNoMaterials": "कुनै सामग्री छैन।",
-  "participantDeleted": "सहभागी हटाइयो।",
-  "participantRename": "सहभागीको नाम परिवर्तन गर्नुहोस्",
-  "partner": "साझेदार",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "साझेदार मोड",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "सेटिङहरू खोल्नुहोस्",
   "password": "पासवर्ड",
   "passwordTooShort": "पासवर्ड कम्तीमा ६ अक्षरको हुनुपर्छ।",
   "perfect": "उत्कृष्ट!",
-  "personaFriend": "स्थानीय साथी",
-  "personaGuide": "यात्रा गाइड",
-  "personaTeacher": "अंग्रेजी शिक्षक",
+  "pickGallery": "ग्यालरीबाट छान्नुहोस्",
   "playAgain": "फेरि खेल्नुहोस्",
   "playbackFailed": "प्ले गर्न असफल भयो: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "विशेषण",
   "posAdverb": "क्रियाविशेषण",
+  "posArticle": "लेख",
   "posConjunction": "संयोजक",
   "posInterjection": "विस्मयादिबोधक",
   "posNoun": "संज्ञा",
+  "posParticle": "कण",
   "posPreposition": "अव्यय/विभक्ति",
   "posPronoun": "सर्वनाम",
   "posVerb": "क्रिया",
   "practiceModeTitle": "अभ्यास",
   "practiceWordsOnly": "शब्दहरू मात्र अभ्यास गर्नुहोस्",
+  "processing": "प्रशोधन हुँदै...",
   "progress": "प्रगति: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "मेनु > भाषा सेटिङमा गएर आफ्नो भाषा र सिक्ने भाषा पहिले तोक्नुहोस्।",
+  "quickStartStep1Title": "१. भाषा सेटिङ",
+  "quickStartStep2Desc": "इनपुट (माइक्रोफोन/किबोर्ड) -> अनुवाद -> बचत गर्ने क्रममा आफ्नै सिकाइ कार्ड बनाउनुहोस्।",
+  "quickStartStep2Title": "२. आधारभूत प्रक्रिया",
+  "quickStartStep3Desc": "च्याटमा अभ्यास गर्नुहोस्, र उच्चारण अभ्यास ट्याबमा पाठ हेरेर प्रत्यक्ष उच्चारण गरी अभ्यास गर्नुहोस्।",
+  "quickStartStep3Title": "३. मोड प्रयोग",
   "recentNItems": "हालसालै सिर्जना गरिएका {count} वटा हेर्नुहोस्",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "अनुवाद अनुरोध गर्नुहोस्",
   "reset": "रिसेट गर्नुहोस्",
   "resetPracticeHistory": "अभ्यास इतिहास रिसेट गर्नुहोस्",
   "retry": "फेरि प्रयास गर्ने?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "समीक्षा",
-  "roleAi": "एआई",
-  "roleThirdParty": "तेस्रो पक्ष",
-  "roleUser": "प्रयोगकर्ता",
   "save": "सुरक्षित गर्नुहोस्",
+  "saveAsSentence": "वाक्यको रूपमा बचत गर्नुहोस्",
+  "saveAsWord": "शब्दको रूपमा बचत गर्नुहोस्",
   "saveData": "डाटा सुरक्षित गर्नुहोस्",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "स्क्यान इतिहासमा बचत गर्नुहोस्",
   "saveTranslationsFromSearch": "खोज मोडबाट अनुवाद सुरक्षित गर्ने प्रयास गर्नुहोस्",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "स्क्यान गर्न छवि छान्नुहोस्",
+  "scanLabel": "स्क्यान",
   "score": "शुद्धता: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "पदको प्रकार छान्नुहोस्",
-  "selectParticipants": "सहभागीहरू छान्नुहोस्",
-  "selectSentenceType": "वाक्यको प्रकार छान्नुहोस्",
   "selectStudyMaterial": "अध्ययन सामग्री चयन गर्नुहोस्",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "वाक्य",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "साइन अप",
-  "similarTextFound": "समान पाठ भेटियो",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "छोड्नुहोस्",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "स्रोत:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "मूल भाषा",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "विदेशी भाषामा दैनिक कुराकानीलाई तुरुन्तै रूपान्तरण गर्नुहोस्! Talkie ले तपाईंको भाषा जीवन रेकर्ड गर्दछ।",
   "sourceLanguageLabel": "मेरो भाषा (Source)",
-  "speakNow": "अब बोल्नुहोस्!",
-  "speaker": "वक्ता",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "वक्ता छान्नुहोस्",
-  "speakingPractice": "बोल्ने अभ्यास",
-  "startChat": "च्याट सुरु गर्नुहोस्",
-  "startPractice": "अभ्यास सुरु गर्नुहोस्",
   "startTutorial": "ट्यूटोरियल सुरु गर्नुहोस्",
-  "startWarning": "चेतावनी",
   "startsWith": "सुरु हुने अक्षर",
   "statusCheckEmail": "कृपया इमेल जाँच गरी प्रमाणीकरण पूरा गर्नुहोस्।",
   "statusDownloading": "डाउनलोड हुँदै: {name}...",
-  "statusImportFailed": "आयात असफल भयो: {error}",
-  "statusImportSuccess": "{name} आयात सम्पन्न भयो",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "लगइन रद्द गरियो।",
-  "statusLoginFailed": "लगइन असफल भयो: {error}",
-  "statusLoginSuccess": "लगइन सफल भयो।",
-  "statusLogoutSuccess": "लगआउट भयो।",
-  "statusSignUpFailed": "साइन अप असफल भयो: {error}",
-  "statusSigningUp": "साइन अप गर्दै...",
-  "stopPractice": "अभ्यास रोक्नुहोस्",
-  "studyComplete": "अध्ययन पूरा भयो",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "अध्ययन रेकर्ड ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "आयात असफल भयो: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} आयात सम्पन्न भयो",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "लगइन असफल भयो: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "लगइन सफल भयो।",
+  "statusLogoutSuccess": "लगआउट भयो।",
+  "statusRequestFailed": "अनुवाद अनुरोध असफल भयो: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "अनुवाद अनुरोध सफल भयो।",
+  "stopPractice": "अभ्यास रोक्नुहोस्",
+  "studyLangNotFoundDesc": "तपाईंले चयन गर्नुभएको सामग्रीले हालको अध्ययन भाषा ({targetLang}) लाई समर्थन नगर्ने भएकाले यसलाई स्थानीय रूपमा बचत गर्न सकिँदैन। के तपाईं अनुवाद अनुरोध गर्न चाहनुहुन्छ?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "अध्ययन भाषा समर्थित छैन",
   "styleFormal": "औपचारिक",
   "styleInformal": "अनौपचारिक",
   "stylePolite": "शिष्ट",
   "styleSlang": "स्ल्याङ/अपशब्द",
-  "subject": "विषय:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "भाषाहरू बदल्नुहोस्",
-  "switchToAi": "AI मोडमा परिवर्तन गर्नुहोस्",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "साझेदार मोडमा परिवर्तन गर्नुहोस्",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "डेटा सिङ्क्रोनाइज गर्दै...",
-  "tabConversation": "वार्तालाप",
   "tabReview": "समीक्षा ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "घटाउनुहोस्",
   "tooltipIncrease": "बढाउनुहोस्",
   "tooltipSearch": "खोज्नुहोस्",
+  "tooltipSettingsConfirm": "सेटिङहरू पुष्टि गर्नुहोस्",
   "tooltipSpeaking": "बोल्दै",
   "tooltipStudyReview": "अध्ययन+समीक्षा",
   "totalRecords": "जम्मा {count} वटा रेकर्ड (सबै हेर्नुहोस्)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "अहिले अनुवाद गर्नुहोस्",
   "translating": "अनुवाद गरिँदै...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "अनुवाद भाषा",
   "translationLimitExceeded": "अनुवाद सीमा नाघ्यो",
   "translationLimitMessage": "दैनिक निःशुल्क अनुवाद (5 पटक) सबै प्रयोग गरिसक्नुभयो।\\n\\nविज्ञापन हेरेर तुरुन्तै ५ पटक भर्न चाहनुहुन्छ?",
   "translationLoaded": "सुरक्षित गरिएको अनुवाद लोड गरियो",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "अनुवादको सङ्ख्या ५ पटक भरिएको छ!",
+  "translationResult": "अनुवाद परिणाम",
   "translationResultHint": "अनुवाद परिणाम - सम्पादन गर्न सकिन्छ",
   "tryAgain": "फेरि प्रयास गर्नुहोस्",
-  "tutorialAiChatDesc": "AI व्यक्तित्वसँग वास्तविक कुराकानीको अभ्यास गर्नुहोस्।",
-  "tutorialAiChatTitle": "एआई च्याट",
+  "ttsInstallGuide": "कृपया Android सेटिङहरू > Google TTS मा सम्बन्धित भाषा डेटा स्थापना गर्नुहोस्।",
+  "ttsMissing": "यो भाषाको लागि आवाज इन्जिन उपकरणमा स्थापित छैन।",
+  "ttsUnsupportedNatively": "यो उपकरणको पूर्वनिर्धारित सेटिङहरूले यो भाषामा आवाज आउटपुटलाई समर्थन गर्दैन।",
   "tutorialContextDesc": "एउटै वाक्य भए पनि स्थिति (उदाहरण: बिहान, बेलुका) लेखेर छुट्टै सुरक्षित गर्न सकिन्छ।",
   "tutorialContextTitle": "स्थिति/सन्दर्भ ट्याग",
   "tutorialLangSettingsDesc": "अनुवाद गर्नको लागि मूल भाषा र लक्ष्य भाषा सेट गर्नुहोस्।",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "टाइप गरिएको पाठलाई अनुवाद गर्दछ।",
   "tutorialTransTitle": "अनुवाद गर्नुहोस्",
   "typeExclamation": "विस्मयादिबोधक",
+  "typeIdiom": "उखान",
   "typeImperative": "आज्ञा",
+  "typeProverb": "कहावत",
   "typeQuestion": "प्रश्न",
   "typeStatement": "विज्ञप्ति",
   "usageLimitTitle": "सीमा पुग्यो",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "अनलाइन गाइड हेर्नुहोस्",
   "voluntaryTranslations": "स्वैच्छिक अनुवादहरू",
   "watchAdAndRefill": "विज्ञापन हेरेर भर्नुहोस् (+5 पटक)",
+  "welcomeButton": "سुरु गर्नुहोस्",
+  "welcomeDesc": "Talkie मा स्वागत छ! हामी विश्वभरिका ८० भन्दा बढी भाषाहरूलाई १००% निष्ठाका साथ समर्थन गर्छौं, नयाँ प्रिमियम थ्रीडी डिजाइन र अनुकूलित कार्यसम्पादनको साथ पूर्ण सिकाइ अनुभव प्रदान गर्दै।",
+  "welcomeTitle": "Talkie मा स्वागत छ!",
   "word": "शब्द",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "शत्रु आइपुग्नु अघि शब्द बोलेर आधारको रक्षा गर्नुहोस्।",
   "wordDefenseTitle": "शब्द डिफेन्स",
   "wordModeLabel": "शब्द मोड",
-  "yourPronunciation": "मेरो उच्चारण",
-  "ttsUnsupportedNatively": "यो उपकरणको पूर्वनिर्धारित सेटिङहरूले यो भाषामा आवाज आउटपुटलाई समर्थन गर्दैन।",
-  "homeTab": "अनुवाद",
-  "welcomeTitle": "Talkie मा स्वागत छ!",
-  "welcomeDesc": "Talkie मा स्वागत छ! हामी विश्वभरिका ८० भन्दा बढी भाषाहरूलाई १००% निष्ठाका साथ समर्थन गर्छौं, नयाँ प्रिमियम थ्रीडी डिजाइन र अनुकूलित कार्यसम्पादनको साथ पूर्ण सिकाइ अनुभव प्रदान गर्दै।",
-  "welcomeButton": "سुरु गर्नुहोस्",
-  "labelDetails": "विस्तृत सेटिङहरू",
-  "translationResult": "अनुवाद परिणाम",
-  "inputContent": "इनपुट सामग्री",
-  "translateNow": "अहिले अनुवाद गर्नुहोस्",
-  "tooltipSettingsConfirm": "सेटिङहरू पुष्टि गर्नुहोस्",
-  "hintNoteExample": "उदाहरण: सन्दर्भ, समानार्थी शब्द आदि",
-  "hintTagExample": "उदाहरण: व्यापार, यात्रा...",
-  "addNew": "नयाँ थप्नुहोस्",
-  "newNotebookTitle": "नयाँ नोटबुक शीर्षक",
-  "enterNameHint": "नाम प्रविष्ट गर्नुहोस्",
-  "add": "थप्नुहोस्",
-  "openSettings": "सेटिङहरू खोल्नुहोस्",
-  "helpNotebook": "अनुवादित परिणामहरू बचत गर्न फोल्डर छान्नुहोस्।",
-  "helpNote": "शब्दको अर्थ, उदाहरण वा स्थिति जस्ता कुराहरू स्वतन्त्र रूपमा रेकर्ड गर्नुहोस्।",
-  "helpTag": "पछि वर्गीकरण वा खोजीका लागि कुञ्जी शब्दहरू प्रविष्ट गर्नुहोस्।",
-  "requestTranslation": "अनुवाद अनुरोध गर्नुहोस्",
-  "statusRequestSuccess": "अनुवाद अनुरोध सफल भयो।",
-  "statusRequestFailed": "अनुवाद अनुरोध असफल भयो: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "अध्ययन भाषा समर्थित छैन",
-  "studyLangNotFoundDesc": "तपाईंले चयन गर्नुभएको सामग्रीले हालको अध्ययन भाषा ({targetLang}) लाई समर्थन नगर्ने भएकाले यसलाई स्थानीय रूपमा बचत गर्न सकिँदैन। के तपाईं अनुवाद अनुरोध गर्न चाहनुहुन्छ?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "१. भाषा सेटिङ",
-  "quickStartStep1Desc": "मेनु > भाषा सेटिङमा गएर आफ्नो भाषा र सिक्ने भाषा पहिले तोक्नुहोस्।",
-  "quickStartStep2Title": "२. आधारभूत प्रक्रिया",
-  "quickStartStep2Desc": "इनपुट (माइक्रोफोन/किबोर्ड) -> अनुवाद -> बचत गर्ने क्रममा आफ्नै सिकाइ कार्ड बनाउनुहोस्।",
-  "quickStartStep3Title": "३. मोड प्रयोग",
-  "quickStartStep3Desc": "च्याटमा अभ्यास गर्नुहोस्, र उच्चारण अभ्यास ट्याबमा पाठ हेरेर प्रत्यक्ष उच्चारण गरी अभ्यास गर्नुहोस्।",
-  "noteGuidance": "थप सटीक अनुवादको लागि जहाँ तपៃঁले थप विवरणहरू प्रविष्ट गर्नुहुन्छ"
+  "yourPronunciation": "मेरो उच्चारण"
 }

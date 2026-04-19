@@ -9,52 +9,19 @@ class AppLocalizationsSk extends AppLocalizations {
   AppLocalizationsSk([String locale = 'sk']) : super(locale);
 
   @override
-  String get basicWords => 'Základné úložisko slov';
-
-  @override
-  String get inputLanguage => 'Vstupný jazyk';
-
-  @override
-  String get translationLanguage => 'Jazyk prekladu';
-
-  @override
-  String get simplifiedGuidance =>
-      'Okamžitá konverzia každodenných rozhovorov do cudzích jazykov! Talkie zaznamenáva váš jazykový život.';
-
-  @override
-  String get noDataForLanguage =>
-      'Pre zvolený jazyk nie sú v lokálnej DB žiadne učebné materiály. Stiahnite si materiály alebo vyberte iný jazyk.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Zrušiť';
-
-  @override
   String get accuracy => 'Presnosť';
-
-  @override
-  String get ttsMissing =>
-      'Hlasový engine pre tento jazyk nie je nainštalovaný vo vašom zariadení.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Nainštalujte jazykové dáta v Nastavenia Android > Google TTS.';
 
   @override
   String get adLoading => 'Načítava sa reklama. Skúste to znova neskôr.';
 
   @override
-  String get addNewSubject => 'Pridať nový názov';
+  String get add => 'Pridať';
 
   @override
-  String get addParticipant => 'Pridať účastníka';
+  String get addNew => 'Pridať nový';
+
+  @override
+  String get addNewSubject => 'Pridať nový názov';
 
   @override
   String get addTagHint => 'Pridať tag...';
@@ -87,6 +54,12 @@ class AppLocalizationsSk extends AppLocalizations {
   String get basicWordRepository => 'Základné úložisko slov';
 
   @override
+  String get basicWords => 'Základné úložisko slov';
+
+  @override
+  String get cancel => 'Zrušiť';
+
+  @override
   String get caseObject => 'Akuzatív';
 
   @override
@@ -102,61 +75,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get caseSubject => 'Nominatív';
 
   @override
-  String get chatAiChat => 'Chat';
-
-  @override
-  String get chatAllConversations => 'Všetky konverzácie';
-
-  @override
-  String get chatChoosePersona => 'Vyberte osobu';
-
-  @override
-  String get chatEndMessage => 'Chcete ukončiť konverzáciu?';
-
-  @override
-  String get chatEndTitle => 'Ukončiť a uložiť konverzáciu';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Rozhovor zlyhal: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Výňatok z konverzácie ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'História konverzácií';
-
-  @override
-  String get chatNew => 'Nová konverzácia';
-
-  @override
-  String get chatNewChat => 'Nová konverzácia';
-
-  @override
-  String get chatNoConversations => 'Zatiaľ žiadne konverzácie';
-
-  @override
-  String get chatSearchHint => 'Hľadať podľa názvu konverzácie...';
-
-  @override
-  String get chatNoteSearchHint => 'Hľadať v poznámkach...';
-
-  @override
-  String get chatSaveAndExit => 'Uložiť a ukončiť';
-
-  @override
-  String get chatStartNewPrompt => 'Začnite novú konverzáciu na precvičovanie!';
-
-  @override
-  String get chatTypeHint => 'Zadajte správu...';
-
-  @override
-  String get chatUntitled => 'Konverzácia bez názvu';
-
-  @override
   String get checking => 'Kontroluje sa...';
 
   @override
@@ -167,13 +85,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Naozaj chcete odstrániť tento záznam o učení?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Naozaj chcete zmazať túto konverzáciu?\nZmazané konverzácie sa nedajú obnoviť.';
-
-  @override
-  String get confirmDeleteParticipant => 'Chcete odstrániť tohto účastníka?';
 
   @override
   String get contextTagHint =>
@@ -213,23 +124,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get deleteRecord => 'Odstrániť záznam';
 
   @override
-  String get dialogueQuestDesc =>
-      'Precvičte si konverzáciu prostredníctvom situačných hier. Vyberte a vyslovte vhodné odpovede.';
-
-  @override
-  String get dialogueQuestTitle => 'Dialógová úloha';
-
-  @override
-  String get disambiguationPrompt => 'Aký význam chcete preložiť?';
-
-  @override
-  String get disambiguationTitle => 'Vyberte význam';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Nemáte účet?';
-
-  @override
-  String get editParticipant => 'Upraviť účastníka';
 
   @override
   String get email => 'E-mail';
@@ -237,6 +135,9 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Táto e-mailová adresa je už zaregistrovaná. Prihláste sa alebo použite možnosť obnovenia hesla.';
+
+  @override
+  String get enterNameHint => 'Zadajte názov';
 
   @override
   String get enterNewSubjectName => 'Zadajte nový názov';
@@ -277,6 +178,9 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get errors => 'Chyby:';
+
+  @override
+  String get extractedText => 'Rozpoznaný text';
 
   @override
   String get female => 'Žena';
@@ -336,12 +240,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get gender => 'Pohlavie';
 
   @override
-  String get labelFilterMaterial => 'Materiály';
-
-  @override
-  String get labelFilterTag => 'Štítky';
-
-  @override
   String get generalTags => 'Všeobecné značky';
 
   @override
@@ -354,19 +252,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get googleContinue => 'Pokračovať s Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Importujte kompletnú sadu dialógov ako súbor JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• Štruktúra JSON: použitie poľa `dialogues` namiesto `entries`\n• Automatické obnovenie: názov dialógu, osoba, poradie správ sa obnovia.\n• Umiestnenie: importované dialógy sa zobrazia na karte \'História\' režimu AI chatu.';
-
-  @override
   String get helpJsonDesc =>
       'Ak chcete importovať učebné materiály, ktoré sa majú použiť v režime 3, ako súbor JSON, postupujte podľa tohto formátu:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dialóg';
 
   @override
   String get helpJsonTypeSentence => 'Veta';
@@ -399,12 +286,12 @@ class AppLocalizationsSk extends AppLocalizations {
       '• Výber materiálu: výber zbierky materiálov na učenie\n• Nastavenie intervalu: úprava čakacej doby medzi vetami pomocou tlačidiel [-] [+] (3 s ~ 60 s)\n• Spustenie/Zastavenie: ovládanie relácie shadowing\n• Rozprávanie: počúvanie a opakovanie reči\n• Spätná väzba: zobrazenie skóre presnosti (0-100) a farby\n• Podmienky vyhľadávania: filtrovanie cieľa cvičenia pomocou značiek, posledných položiek, počiatočných písmen';
 
   @override
-  String get helpModeChatDesc =>
-      'Precvičujte si konverzáciu v reálnom svete rozhovorom s AI osobnosťou.';
+  String get helpNote =>
+      'Slobodne si zapisujte významy slov, príklady alebo situácie.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI Chat: Precvičte si konverzáciu s osobnosťou v ponuke \'Chat\' na paneli kariet v dolnej časti\n• Nastavenie osobnosti: Slobodne určite pohlavie, meno a jazykový kód partnera\n• GPS situačná hra: Odporúčanie tém konverzácie, ktoré sú vhodné pre dané miesto rozpoznaním vašej aktuálnej polohy\n• 2 jazyky: Odpoveď AI sa zobrazuje s prekladom, čím sa maximalizuje efekt učenia\n• Správa záznamov: Filtrovanie minulej histórie konverzácií a ukladanie konkrétnych správ počas konverzácie ako študijných materiálov';
+  String get helpNotebook =>
+      'Vyberte priečinok, kam chcete uložiť preložené výsledky.';
 
   @override
   String get helpTabJson => 'Formát JSON';
@@ -419,6 +306,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get helpTabTour => 'Prehliadka';
 
   @override
+  String get helpTag =>
+      'Zadajte kľúčové slová na neskoršie triedenie alebo vyhľadávanie.';
+
+  @override
   String get helpTitle => 'Pomocník a sprievodca';
 
   @override
@@ -427,6 +318,15 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get hide => 'Skryť';
+
+  @override
+  String get hintNoteExample => 'Napr.: Kontext, homonymá atď.';
+
+  @override
+  String get hintTagExample => 'Napr.: Obchod, cestovanie...';
+
+  @override
+  String get homeTab => 'Preklad';
 
   @override
   String importAdded(int count) {
@@ -439,23 +339,6 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Materiál s rovnakým názvom už existuje. Zmeňte názov a skúste znova.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -471,6 +354,11 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Importovaných $files súborov, $entries položiek.';
+  }
+
+  @override
   String get importJsonFile => 'Importovať súbor JSON';
 
   @override
@@ -482,12 +370,31 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Jeden JSON súbor';
+
+  @override
+  String get importSourceFolder =>
+      'Priečinok (štruktúra knižnice podľa jazyka)';
+
+  @override
+  String get importSourceTitle => 'Vyberte zdroj importu';
+
+  @override
+  String get importSourceZip => 'ZIP súbor (komprimovaný priečinok)';
+
+  @override
   String importTotal(int count) {
     return 'Celkom: $count';
   }
 
   @override
   String get importing => 'Importuje sa...';
+
+  @override
+  String get inputContent => 'Vstupný obsah';
+
+  @override
+  String get inputLanguage => 'Vstupný jazyk';
 
   @override
   String get inputModeTitle => 'Vstup';
@@ -504,19 +411,22 @@ class AppLocalizationsSk extends AppLocalizations {
   String get kakaoContinue => 'Pokračovať s Kakao';
 
   @override
-  String get labelLangCode => 'Kód jazyka (napr. en-US, ko-KR)';
+  String get labelDetails => 'Podrobné nastavenia';
 
   @override
-  String get labelName => 'Meno';
+  String get labelFilterMaterial => 'Materiály';
+
+  @override
+  String get labelFilterTag => 'Štítky';
+
+  @override
+  String get labelLangCode => 'Kód jazyka (napr. en-US, ko-KR)';
 
   @override
   String get labelNote => 'Poznámka';
 
   @override
   String get labelPOS => 'Časť reči';
-
-  @override
-  String get labelRole => 'Rola';
 
   @override
   String get labelSentence => 'Veta';
@@ -567,9 +477,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get listening => 'Počúva sa...';
 
   @override
-  String get loadingParticipants => 'Načítavajú sa účastníci...';
-
-  @override
   String get location => 'Poloha';
 
   @override
@@ -588,9 +495,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get male => 'Muž';
 
   @override
-  String get manageParticipants => 'Správa účastníkov';
-
-  @override
   String get manual => 'Manuálny vstup';
 
   @override
@@ -598,9 +502,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get materialInfo => 'Informácie o materiáli';
-
-  @override
-  String get me => 'Ja';
 
   @override
   String get menuDeviceImport => 'Importovať materiály zo zariadenia';
@@ -668,28 +569,21 @@ class AppLocalizationsSk extends AppLocalizations {
   String get neutral => 'Neutrálny';
 
   @override
+  String get newNotebookTitle => 'Názov nového zápisníka';
+
+  @override
   String get newSubjectName => 'Nový názov slovníka/zbierky viet';
 
   @override
   String get next => 'Ďalej';
 
   @override
-  String get noDialogueHistory => 'Žiadna história dialógov.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Žiadne internetové pripojenie. Rozpoznávanie reči nemusí byť v režime offline dostupné.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Žiadne internetové pripojenie. Preklad nie je v režime offline dostupný. Použite režim opakovania.';
+  String get noDataForLanguage =>
+      'Pre zvolený jazyk nie sú v lokálnej DB žiadne učebné materiály. Stiahnite si materiály alebo vyberte iný jazyk.';
 
   @override
   String get noMaterialsInCategory =>
       'V tejto kategórii nie sú žiadne materiály.';
-
-  @override
-  String get noParticipantsFound => 'Nenašli sa žiadni registrovaní účastníci.';
 
   @override
   String get noRecords => 'Žiadne záznamy o učení vo vybranom jazyku';
@@ -710,6 +604,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get notSelected => '- Nevybrané -';
 
   @override
+  String get noteGuidance =>
+      'Tu zadávate ďalšie podrobnosti pre presnejší preklad';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Skontrolujte pripojenie k internetu alebo to skúste neskôr.';
 
@@ -720,16 +618,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Žiadne materiály.';
 
   @override
-  String get participantDeleted => 'Účastník bol odstránený.';
-
-  @override
-  String get participantRename => 'Premenovať účastníka';
-
-  @override
-  String get partner => 'Partner';
-
-  @override
-  String get partnerMode => 'Režim partnera';
+  String get openSettings => 'Otvoriť nastavenia';
 
   @override
   String get password => 'Heslo';
@@ -741,13 +630,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get perfect => 'Perfektné!';
 
   @override
-  String get personaFriend => 'Miestny priateľ';
-
-  @override
-  String get personaGuide => 'Turistický sprievodca';
-
-  @override
-  String get personaTeacher => 'Učiteľ angličtiny';
+  String get pickGallery => 'Vyberte z galérie';
 
   @override
   String get playAgain => 'Hrať znova';
@@ -767,6 +650,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get posAdverb => 'Príslovka';
 
   @override
+  String get posArticle => 'Článok';
+
+  @override
   String get posConjunction => 'Spojka';
 
   @override
@@ -774,6 +660,9 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get posNoun => 'Podstatné meno';
+
+  @override
+  String get posParticle => 'Častica';
 
   @override
   String get posPreposition => 'Predložka';
@@ -791,9 +680,33 @@ class AppLocalizationsSk extends AppLocalizations {
   String get practiceWordsOnly => 'Precvičovať iba slová';
 
   @override
+  String get processing => 'Spracováva sa...';
+
+  @override
   String progress(int current, int total) {
     return 'Priebeh: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Najprv nastavte svoj jazyk a jazyk, ktorý sa učíte, v ponuke > Nastavenie jazyka.';
+
+  @override
+  String get quickStartStep1Title => '1. Nastavenie jazykov';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Vytvorte si vlastné vzdelávacie kartičky v poradí: Vstup (mikrofón/klávesnica) -> Preklad -> Uloženie.';
+
+  @override
+  String get quickStartStep2Title => '2. Základný postup';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.';
+
+  @override
+  String get quickStartStep3Title => '3. Využívanie režimov';
 
   @override
   String recentNItems(int count) {
@@ -818,6 +731,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get refresh => 'Obnoviť';
 
   @override
+  String get requestTranslation => 'Požiadať o preklad';
+
+  @override
   String get reset => 'Obnoviť';
 
   @override
@@ -838,16 +754,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get reviewModeTitle => 'Opakovanie';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Tretia strana';
-
-  @override
-  String get roleUser => 'Používateľ';
-
-  @override
   String get save => 'Uložiť';
+
+  @override
+  String get saveAsSentence => 'Uložiť ako vetu';
+
+  @override
+  String get saveAsWord => 'Uložiť ako slovo';
 
   @override
   String get saveData => 'Uložiť dáta';
@@ -858,6 +771,9 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Uložiť do histórie skenovania';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Pokúste sa uložiť preklady z režimu vyhľadávania';
 
@@ -866,6 +782,12 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get saving => 'Ukladá sa...';
+
+  @override
+  String get scanInstructions => 'Vyberte obrázok na skenovanie';
+
+  @override
+  String get scanLabel => 'Skenovať';
 
   @override
   String score(String score) {
@@ -912,16 +834,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get selectPOS => 'Vyberte slovný druh';
 
   @override
-  String get selectParticipants => 'Vyberte účastníkov';
-
-  @override
-  String get selectSentenceType => 'Vyberte typ vety';
-
-  @override
   String get selectStudyMaterial => 'Vyberte učebné materiály';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Veta';
@@ -930,43 +843,14 @@ class AppLocalizationsSk extends AppLocalizations {
   String get signUp => 'Zaregistrovať sa';
 
   @override
-  String get similarTextFound => 'Nájdený podobný text';
-
-  @override
-  String get skip => 'Preskočiť';
-
-  @override
-  String get source => 'Zdroj:';
-
-  @override
-  String get sourceLanguage => 'Zdrojový jazyk';
+  String get simplifiedGuidance =>
+      'Okamžitá konverzia každodenných rozhovorov do cudzích jazykov! Talkie zaznamenáva váš jazykový život.';
 
   @override
   String get sourceLanguageLabel => 'Môj jazyk (Source)';
 
   @override
-  String get speakNow => 'Hovorte teraz!';
-
-  @override
-  String get speaker => 'Hovorca';
-
-  @override
-  String get speakerSelect => 'Vyberte hovoriaceho';
-
-  @override
-  String get speakingPractice => 'Precvičovanie rozprávania';
-
-  @override
-  String get startChat => 'Začať konverzáciu';
-
-  @override
-  String get startPractice => 'Začať cvičiť';
-
-  @override
   String get startTutorial => 'Spustiť tutoriál';
-
-  @override
-  String get startWarning => 'Upozornenie';
 
   @override
   String get startsWith => 'Začína na';
@@ -975,28 +859,22 @@ class AppLocalizationsSk extends AppLocalizations {
   String get statusCheckEmail => 'Overte si e-mail pre dokončenie overenia.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Sťahuje sa: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Import zlyhal: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name bol úspešne importovaný';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Prihlásenie bolo zrušené.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Prihlásenie zlyhalo: $error';
   }
 
@@ -1007,23 +885,23 @@ class AppLocalizationsSk extends AppLocalizations {
   String get statusLogoutSuccess => 'Boli ste odhlásený.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Registrácia zlyhala: $error';
+  String statusRequestFailed(String error) {
+    return 'Žiadosť o preklad zlyhala: $error';
   }
 
   @override
-  String get statusSigningUp => 'Prebieha registrácia...';
+  String get statusRequestSuccess => 'Žiadosť o preklad bola úspešná.';
 
   @override
   String get stopPractice => 'Zastaviť cvičenie';
 
   @override
-  String get studyComplete => 'Učenie dokončené';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Vybraný materiál nepodporuje aktuálne nastavený jazyk štúdia ($targetLang), preto ho nie je možné uložiť lokálne. Chcete požiadať o preklad?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Záznamy o učení ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Nepodporovaný jazyk štúdia';
 
   @override
   String get styleFormal => 'Formálny';
@@ -1038,22 +916,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get styleSlang => 'Slang/Hovorový jazyk';
 
   @override
-  String get subject => 'Predmet:';
-
-  @override
   String get swapLanguages => 'Prepnúť jazyky';
 
   @override
-  String get switchToAi => 'Prepnúť do režimu AI';
-
-  @override
-  String get switchToPartner => 'Prepnúť do režimu partnera';
-
-  @override
   String get syncingData => 'Synchronizácia dát...';
-
-  @override
-  String get tabConversation => 'Konverzácia';
 
   @override
   String tabReview(int count) {
@@ -1117,6 +983,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tooltipSearch => 'Hľadať';
 
   @override
+  String get tooltipSettingsConfirm => 'Potvrdiť nastavenia';
+
+  @override
   String get tooltipSpeaking => 'Rozprávanie';
 
   @override
@@ -1129,6 +998,9 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get translate => 'Preložiť';
+
+  @override
+  String get translateNow => 'Preložiť teraz';
 
   @override
   String get translating => 'Prekladá sa...';
@@ -1145,6 +1017,9 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Jazyk prekladu';
+
+  @override
   String get translationLimitExceeded => 'Prekročený limit prekladu';
 
   @override
@@ -1158,17 +1033,25 @@ class AppLocalizationsSk extends AppLocalizations {
   String get translationRefilled => 'Počet prekladov bol dobitý 5-krát!';
 
   @override
+  String get translationResult => 'Výsledok prekladu';
+
+  @override
   String get translationResultHint => 'Výsledok prekladu - upraviteľný';
 
   @override
   String get tryAgain => 'Skúste znova';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Precvičte si konverzáciu v reálnom čase s AI osobou.';
+  String get ttsInstallGuide =>
+      'Nainštalujte jazykové dáta v Nastavenia Android > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'AI Chat - tutoriál';
+  String get ttsMissing =>
+      'Hlasový engine pre tento jazyk nie je nainštalovaný vo vašom zariadení.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'V tomto zariadení nie je natívne podporovaný výstup hlasu pre tento jazyk.';
 
   @override
   String get tutorialContextDesc =>
@@ -1282,7 +1165,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get typeExclamation => 'Výkrik';
 
   @override
+  String get typeIdiom => 'Frazeologizmus';
+
+  @override
   String get typeImperative => 'Rozkaz';
+
+  @override
+  String get typeProverb => 'Príslovie/porekadlo';
 
   @override
   String get typeQuestion => 'Otázka';
@@ -1297,6 +1186,11 @@ class AppLocalizationsSk extends AppLocalizations {
   String get useExistingText => 'Použiť existujúci text';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Zobraziť online príručku';
 
   @override
@@ -1304,6 +1198,16 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Dobitie sledovaním reklamy (+5-krát)';
+
+  @override
+  String get welcomeButton => 'Začať';
+
+  @override
+  String get welcomeDesc =>
+      'Vitajte v Talkie! Podporujeme viac ako 80 jazykov z celého sveta so 100% integritou a prinášame dokonalý zážitok z učenia s novým prémiovým 3D dizajnom a optimalizovaným výkonom.';
+
+  @override
+  String get welcomeTitle => 'Vitajte v Talkie!';
 
   @override
   String get word => 'Slovo';
@@ -1320,113 +1224,4 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Vaša výslovnosť';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'V tomto zariadení nie je natívne podporovaný výstup hlasu pre tento jazyk.';
-
-  @override
-  String get homeTab => 'Preklad';
-
-  @override
-  String get welcomeTitle => 'Vitajte v Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Vitajte v Talkie! Podporujeme viac ako 80 jazykov z celého sveta so 100% integritou a prinášame dokonalý zážitok z učenia s novým prémiovým 3D dizajnom a optimalizovaným výkonom.';
-
-  @override
-  String get welcomeButton => 'Začať';
-
-  @override
-  String get labelDetails => 'Podrobné nastavenia';
-
-  @override
-  String get translationResult => 'Výsledok prekladu';
-
-  @override
-  String get inputContent => 'Vstupný obsah';
-
-  @override
-  String get translateNow => 'Preložiť teraz';
-
-  @override
-  String get tooltipSettingsConfirm => 'Potvrdiť nastavenia';
-
-  @override
-  String get hintNoteExample => 'Napr.: Kontext, homonymá atď.';
-
-  @override
-  String get hintTagExample => 'Napr.: Obchod, cestovanie...';
-
-  @override
-  String get addNew => 'Pridať nový';
-
-  @override
-  String get newNotebookTitle => 'Názov nového zápisníka';
-
-  @override
-  String get enterNameHint => 'Zadajte názov';
-
-  @override
-  String get add => 'Pridať';
-
-  @override
-  String get openSettings => 'Otvoriť nastavenia';
-
-  @override
-  String get helpNotebook =>
-      'Vyberte priečinok, kam chcete uložiť preložené výsledky.';
-
-  @override
-  String get helpNote =>
-      'Slobodne si zapisujte významy slov, príklady alebo situácie.';
-
-  @override
-  String get helpTag =>
-      'Zadajte kľúčové slová na neskoršie triedenie alebo vyhľadávanie.';
-
-  @override
-  String get requestTranslation => 'Požiadať o preklad';
-
-  @override
-  String get statusRequestSuccess => 'Žiadosť o preklad bola úspešná.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Žiadosť o preklad zlyhala: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Nepodporovaný jazyk štúdia';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Vybraný materiál nepodporuje aktuálne nastavený jazyk štúdia ($targetLang), preto ho nie je možné uložiť lokálne. Chcete požiadať o preklad?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Nastavenie jazykov';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Najprv nastavte svoj jazyk a jazyk, ktorý sa učíte, v ponuke > Nastavenie jazyka.';
-
-  @override
-  String get quickStartStep2Title => '2. Základný postup';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Vytvorte si vlastné vzdelávacie kartičky v poradí: Vstup (mikrofón/klávesnica) -> Preklad -> Uloženie.';
-
-  @override
-  String get quickStartStep3Title => '3. Využívanie režimov';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Precvičujte si prostredníctvom chatu a cvičte výslovnosť priamym vyslovovaním textu na karte Cvičenie výslovnosti.';
-
-  @override
-  String get noteGuidance =>
-      'Tu zadávate ďalšie podrobnosti pre presnejší preklad';
 }

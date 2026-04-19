@@ -1,32 +1,10 @@
 {
   "@@locale": "sv",
-  "basicWords": "Grundläggande ordlista",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Inputspråk",
-  "translationLanguage": "Översättningsspråk",
-  "simplifiedGuidance": "Konvertera vardagliga konversationer till ett främmande språk på ett ögonblick! Talkie kommer att registrera ditt språkliv.",
-  "noDataForLanguage": "Ingen läromedel för det valda språket finns i den lokala databasen. Ladda ner material eller välj ett annat språk.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Avbryt",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Noggrannhet",
-  "ttsMissing": "Den här språkets röstmotor är inte installerad på enheten.",
-  "ttsInstallGuide": "Installera språkdata under Android-inställningar > Google TTS.",
   "adLoading": "Laddar annons. Försök igen om en stund.",
+  "add": "Lägg till",
+  "addNew": "Lägg till ny",
   "addNewSubject": "Lägg till nytt namn",
-  "addParticipant": "Lägg till deltagare",
   "addTagHint": "Lägg till tagg...",
   "alreadyHaveAccount": "Har du redan ett konto?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Grundläggande ordlista",
+  "basicWords": "Grundläggande ordlista",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Avbryt",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Objekt",
   "casePossessive": "Possessiv",
   "casePossessivePronoun": "Possessivt pronomen",
   "caseReflexive": "Reflexivt",
   "caseSubject": "Subjekt",
-  "chatAiChat": "Chatt",
-  "chatAllConversations": "Alla konversationer",
-  "chatChoosePersona": "Välj persona",
-  "chatEndMessage": "Vill du avsluta konversationen?",
-  "chatEndTitle": "Avsluta och spara konversation",
-  "chatFailed": "Chatt misslyckades: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Utdrag från konversation ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Chatthistorik",
-  "chatNew": "Ny chatt",
-  "chatNewChat": "Ny chatt",
-  "chatNoConversations": "Inga konversationer ännu",
-  "chatSearchHint": "Sök efter konversationstitel...",
-  "chatNoteSearchHint": "Sök i anteckningar...",
-  "chatSaveAndExit": "Spara och avsluta",
-  "chatStartNewPrompt": "Starta en ny konversation för att öva!",
-  "chatTypeHint": "Skriv ett meddelande...",
-  "chatUntitled": "Namnlös konversation",
   "checking": "Kontrollerar...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Vill du radera den här konversationen?\nRaderade konversationer kan inte återställas.",
-  "confirmDeleteParticipant": "Vill du ta bort den här deltagaren?",
   "contextTagHint": "Skriv en beskrivning för att lättare skilja dem åt senare",
   "contextTagLabel": "Kontext/Situation (valfritt) - T.ex. Morgonhälsning, Formellt språk",
   "copiedToClipboard": "Kopierat till urklipp!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Öva dialoger genom rollspel. Välj rätt svar och säg det.",
-  "dialogueQuestTitle": "Dialoguppdrag",
-  "disambiguationPrompt": "Vilken betydelse vill du översätta?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Välj betydelse",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Har du inget konto?",
-  "editParticipant": "Redigera deltagare",
   "email": "E-post",
   "emailAlreadyInUse": "E-postadressen är redan registrerad. Logga in eller använd Återställ lösenord.",
+  "enterNameHint": "Ange ett namn",
   "enterNewSubjectName": "Ange nytt namn",
   "enterSentenceHint": "Skriv en mening...",
   "enterTextHint": "Ange texten som ska översättas",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Hittad text",
   "female": "Kvinna",
   "file": "Fil:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Spelläge",
   "gameOver": "Spelet är slut",
   "gender": "Kön",
-  "labelFilterMaterial": "Material",
-  "labelFilterTag": "Taggar",
   "generalTags": "Allmänna taggar",
   "getMaterials": "Hämta material",
   "good": "Bra",
   "googleContinue": "Fortsätt med Google",
-  "helpDialogueImportDesc": "Importera en hel dialoguppsättning med en JSON-fil.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "För import i Läge 3, skapa JSON:",
-  "helpJsonTypeDialogue": "Dialog (Dialogue)",
   "helpJsonTypeSentence": "Mening (Sentence)",
   "helpJsonTypeWord": "Ord (Word)",
   "helpMode1Desc": "Börja språkinlärningen på det mest intuitiva sättet med en premium 3D-mikrofon och en stor tangentbordsikon.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Välj material: Använd menyn (⋮) uppe till höger för att välja 'Välj studiematerial' eller 'Online materialarkiv'\n• Vänd kort: Kontrollera översättningen med 'Visa/Dölj'\n• Lyssna: Spela upp uttal med högtalarikonen\n• Färdig med inlärning: Markera som färdig med en bock (V)\n• Radera: Ta bort poster genom att trycka länge (Long Click) på kortet\n• Sök och filtrera: Stöd för sökfält (smartsökning i realtid) och taggar, filter för begynnelsebokstav",
   "helpMode3Desc": "Öva ditt uttal genom att lyssna på och upprepa meningar (skuggning).",
   "helpMode3Details": "• Välj: Välj paket\n• Intervall: [-] [+] väntetid (3s-60s)\n• Start/Stopp: Kontrollera session\n• Tala: Lyssna och upprepa\n• Poäng: Noggrannhet (0-100)\n• Försök: Knapp om röst ej hittas",
-  "helpModeChatDesc": "Öva konversationsfärdigheter genom att chatta med en AI-persona.",
-  "helpModeChatDetails": "• AI-chatt: Öva på verkliga konversationer med en persona i menyn 'Chatt' i den nedre flikfältet\n• Personainställningar: Ange fritt motpartens kön, namn och språkkod\n• GPS-situationskomedi: Känner igen min nuvarande plats och rekommenderar samtalsämnen som passar platsen\n• Tvåspråkig: AI:s svar visas med översättning för att maximera inlärningseffekten\n• Logghantering: Filtrera tidigare konversationshistorik och spara specifika meddelanden i konversationen som läromedel",
+  "helpNote": "Skriv fritt ner ordets betydelse, exempelmeningar, situationer etc.",
+  "helpNotebook": "Välj mappen där du vill spara de översatta resultaten.",
   "helpTabJson": "JSON-format",
   "helpTabModes": "Lägen",
   "helpTabQuickStart": "Snabbstart",
   "helpTabTour": "Tur",
+  "helpTag": "Ange sökord för att senare kategorisera eller söka.",
   "helpTitle": "Hjälp & Guide",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "Dölj",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Ex: Kontext, homonymer etc.",
+  "hintTagExample": "Ex: Affärer, Resor...",
+  "homeTab": "Översätt",
   "importAdded": "Tillagd: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} filer, {entries} poster importerade.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Importera JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Enkel JSON-fil",
+  "importSourceFolder": "Mapp (språkspecifik biblioteksstruktur)",
+  "importSourceTitle": "Välj importkälla",
+  "importSourceZip": "ZIP-fil (komprimerad mapp)",
   "importTotal": "Totalt: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Innehåll att översätta",
+  "inputLanguage": "Inputspråk",
   "inputModeTitle": "Inmatning",
   "intervalSeconds": "Intervall: {seconds}s",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Ange en giltig e-postadress.",
   "kakaoContinue": "Fortsätt med Kakao",
+  "labelDetails": "Detaljerade inställningar",
+  "labelFilterMaterial": "Material",
+  "labelFilterTag": "Taggar",
   "labelLangCode": "Språkkod (t.ex. en-US, ko-KR)",
-  "labelName": "Namn",
   "labelNote": "Anteckning",
   "labelPOS": "Ordkategori",
-  "labelRole": "Roll",
   "labelSentence": "Mening",
   "labelSentenceCollection": "Meningssamling",
   "labelSentenceType": "Menings typ",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Läser in deltagare...",
   "location": "Plats",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Logga in",
   "logout": "Logga ut",
   "logoutConfirmMessage": "Vill du logga ut från den här enheten?",
   "logoutConfirmTitle": "Logga ut",
   "male": "Man",
-  "manageParticipants": "Hantera deltagare",
   "manual": "Manuell inmatning",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Materialinfo",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Jag",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Importera material från enheten",
   "menuHelp": "Hjälp",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Min frasbok",
   "myWordbook": "Min ordlista",
   "neutral": "Neutral",
+  "newNotebookTitle": "Namn på ny anteckningsbok",
   "newSubjectName": "Nytt ämnesnamn/meningssamling",
   "next": "Nästa",
-  "noDialogueHistory": "Ingen dialoghistorik.",
-  "noInternetWarningMic": "Ingen internetanslutning. Röstigenkänning kanske inte är tillgänglig i offline-läge.",
-  "noInternetWarningTranslate": "Ingen internetanslutning. Översättningsfunktionen är inte tillgänglig i offline-läge. Använd repetitionsläget istället.",
+  "noDataForLanguage": "Ingen läromedel för det valda språket finns i den lokala databasen. Ladda ner material eller välj ett annat språk.",
   "noMaterialsInCategory": "Det finns inga resurser i den här kategorin.",
-  "noParticipantsFound": "Inga deltagare hittades.",
   "noRecords": "Inga poster för valt språk",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Ingen röst upptäckt",
   "notSelected": "- Inget valt -",
+  "noteGuidance": "Där du anger ytterligare information för en mer exakt översättning",
   "onlineLibraryCheckInternet": "Kontrollera din internetanslutning eller försök igen senare.",
   "onlineLibraryLoadFailed": "Det gick inte att läsa in resurserna.",
   "onlineLibraryNoMaterials": "Inga resurser tillgängliga.",
-  "participantDeleted": "Deltagaren har tagits bort.",
-  "participantRename": "Byt namn på deltagare",
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Partnerläge",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Öppna inställningar",
   "password": "Lösenord",
   "passwordTooShort": "Lösenordet måste vara minst 6 tecken.",
   "perfect": "Perfekt!",
-  "personaFriend": "Lokal vän",
-  "personaGuide": "Reseguide",
-  "personaTeacher": "Engelsklärare",
+  "pickGallery": "Välj från galleri",
   "playAgain": "Spela igen",
   "playbackFailed": "Uppspelning misslyckades: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Adjektiv",
   "posAdverb": "Adverb",
+  "posArticle": "Artikel",
   "posConjunction": "Konjunktion",
   "posInterjection": "Interjektion",
   "posNoun": "Substantiv",
+  "posParticle": "Partikel",
   "posPreposition": "Preposition",
   "posPronoun": "Pronomen",
   "posVerb": "Verb",
   "practiceModeTitle": "Övning",
   "practiceWordsOnly": "Öva bara ord",
+  "processing": "Bearbetar...",
   "progress": "Framsteg: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Gå till Meny > Språkinställningar och välj först ditt språk och inlärningsspråk.",
+  "quickStartStep1Title": "1. Ställ in språk",
+  "quickStartStep2Desc": "Skapa dina egna studiekort i följande ordning: Inmatning (mikrofon/tangentbord) -> Översättning -> Spara.",
+  "quickStartStep2Title": "2. Grundläggande flöde",
+  "quickStartStep3Desc": "Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.",
+  "quickStartStep3Title": "3. Använd lägen",
   "recentNItems": "Visa de {count} senast skapade",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Begär översättning",
   "reset": "Återställ",
   "resetPracticeHistory": "Återställ övningshistorik",
   "retry": "Försök igen?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Repetition",
-  "roleAi": "AI",
-  "roleThirdParty": "Tredje part",
-  "roleUser": "Användare",
   "save": "Spara",
+  "saveAsSentence": "Spara som mening",
+  "saveAsWord": "Spara som ord",
   "saveData": "Spara",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Spara i skanningshistorik",
   "saveTranslationsFromSearch": "Vänligen spara översättningar från sökläge",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Välj en bild att skanna",
+  "scanLabel": "Skanna",
   "score": "Noggrannhet: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Välj ordklass",
-  "selectParticipants": "Välj deltagare",
-  "selectSentenceType": "Välj meningstyp",
   "selectStudyMaterial": "Välj Material",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Mening",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Registrera dig",
-  "similarTextFound": "Liknande text hittades",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Hoppa över",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Källa:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Källspråk",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Konvertera vardagliga konversationer till ett främmande språk på ett ögonblick! Talkie kommer att registrera ditt språkliv.",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "Tala nu!",
-  "speaker": "Talare",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Välj talare",
-  "speakingPractice": "Talövning",
-  "startChat": "Starta chatt",
-  "startPractice": "Starta Övning",
   "startTutorial": "Starta Tur",
-  "startWarning": "Varning",
   "startsWith": "Börjar med",
   "statusCheckEmail": "Vänligen verifiera din e-postadress för att slutföra autentiseringen.",
   "statusDownloading": "Laddar ner: {name}...",
-  "statusImportFailed": "Importen misslyckades: {error}",
-  "statusImportSuccess": "{name} importerades",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Inloggningen avbröts.",
-  "statusLoginFailed": "Inloggning misslyckades: {error}",
-  "statusLoginSuccess": "Inloggning lyckades.",
-  "statusLogoutSuccess": "Du har loggats ut.",
-  "statusSignUpFailed": "Registrering misslyckades: {error}",
-  "statusSigningUp": "Registrerar...",
-  "stopPractice": "Stoppa",
-  "studyComplete": "Studerad",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Poster ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Importen misslyckades: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} importerades",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Inloggning misslyckades: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Inloggning lyckades.",
+  "statusLogoutSuccess": "Du har loggats ut.",
+  "statusRequestFailed": "Översättningsförfrågan misslyckades: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Översättningsförfrågan har slutförts.",
+  "stopPractice": "Stoppa",
+  "studyLangNotFoundDesc": "Det valda materialet stöder inte det nuvarande inlärningsspråket ({targetLang}) och kan inte sparas lokalt. Vill du begära en översättning?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Språket stöds inte för inlärning",
   "styleFormal": "Formalitet",
   "styleInformal": "Informell",
   "stylePolite": "Hövlig",
   "styleSlang": "Slang",
-  "subject": "Ämne:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Byt språk",
-  "switchToAi": "Byt till AI-läge",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Byt till Partnerläge",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Synkroniserar data...",
-  "tabConversation": "Konversation",
   "tabReview": "Repetition ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Minska",
   "tooltipIncrease": "Öka",
   "tooltipSearch": "Sök",
+  "tooltipSettingsConfirm": "Bekräfta inställningar",
   "tooltipSpeaking": "Tal",
   "tooltipStudyReview": "Studie+Repetition",
   "totalRecords": "Totalt {count} poster (visa alla)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Översätt nu",
   "translating": "Översätter...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Översättningsspråk",
   "translationLimitExceeded": "Översättningsgränsen har överskridits",
   "translationLimitMessage": "Du har använt alla dina dagliga kostnadsfria översättningar (5).\n\nVill du se en annons för att omedelbart fylla på med 5 till?",
   "translationLoaded": "Sparad översättning laddad",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Du har fyllt på med 5 översättningar!",
+  "translationResult": "Översättningsresultat",
   "translationResultHint": "Översättningsresultat - kan redigeras",
   "tryAgain": "Försök igen",
-  "tutorialAiChatDesc": "Öva verkliga samtal med en AI-persona.",
-  "tutorialAiChatTitle": "AI-chatt",
+  "ttsInstallGuide": "Installera språkdata under Android-inställningar > Google TTS.",
+  "ttsMissing": "Den här språkets röstmotor är inte installerad på enheten.",
+  "ttsUnsupportedNatively": "Den här enheten har inte stöd för röstutmatning för det här språket i sina standardinställningar.",
   "tutorialContextDesc": "Lägg till kontext (t.ex. Morgon) för att skilja liknande meningar åt.",
   "tutorialContextTitle": "Kontexttagg",
   "tutorialLangSettingsDesc": "Ställ in originalspråket och målspråket för översättning.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Tryck här för att översätta text.",
   "tutorialTransTitle": "Översätt",
   "typeExclamation": "Utropsmening",
+  "typeIdiom": "Idiom",
   "typeImperative": "Imperativ",
+  "typeProverb": "Ordspråk",
   "typeQuestion": "Fråga",
   "typeStatement": "Påstående",
   "usageLimitTitle": "Användningsgräns nådd",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Visa onlineguide",
   "voluntaryTranslations": "Frivilliga översättningar",
   "watchAdAndRefill": "Titta på annons och fyll på (+5)",
+  "welcomeButton": "Kom igång",
+  "welcomeDesc": "Välkommen till Talkie! Vi stöder alla 80+ språk i världen med 100 % integritet och erbjuder en perfekt inlärningsupplevelse med ny premium 3D-design och optimerad prestanda.",
+  "welcomeTitle": "Välkommen till Talkie!",
   "word": "Ord",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Försvara basen genom att säga ordet innan fienden anländer.",
   "wordDefenseTitle": "Ordförsvar",
   "wordModeLabel": "Ord-läge",
-  "yourPronunciation": "Ditt uttal",
-  "ttsUnsupportedNatively": "Den här enheten har inte stöd för röstutmatning för det här språket i sina standardinställningar.",
-  "homeTab": "Översätt",
-  "welcomeTitle": "Välkommen till Talkie!",
-  "welcomeDesc": "Välkommen till Talkie! Vi stöder alla 80+ språk i världen med 100 % integritet och erbjuder en perfekt inlärningsupplevelse med ny premium 3D-design och optimerad prestanda.",
-  "welcomeButton": "Kom igång",
-  "labelDetails": "Detaljerade inställningar",
-  "translationResult": "Översättningsresultat",
-  "inputContent": "Innehåll att översätta",
-  "translateNow": "Översätt nu",
-  "tooltipSettingsConfirm": "Bekräfta inställningar",
-  "hintNoteExample": "Ex: Kontext, homonymer etc.",
-  "hintTagExample": "Ex: Affärer, Resor...",
-  "addNew": "Lägg till ny",
-  "newNotebookTitle": "Namn på ny anteckningsbok",
-  "enterNameHint": "Ange ett namn",
-  "add": "Lägg till",
-  "openSettings": "Öppna inställningar",
-  "helpNotebook": "Välj mappen där du vill spara de översatta resultaten.",
-  "helpNote": "Skriv fritt ner ordets betydelse, exempelmeningar, situationer etc.",
-  "helpTag": "Ange sökord för att senare kategorisera eller söka.",
-  "requestTranslation": "Begär översättning",
-  "statusRequestSuccess": "Översättningsförfrågan har slutförts.",
-  "statusRequestFailed": "Översättningsförfrågan misslyckades: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Språket stöds inte för inlärning",
-  "studyLangNotFoundDesc": "Det valda materialet stöder inte det nuvarande inlärningsspråket ({targetLang}) och kan inte sparas lokalt. Vill du begära en översättning?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Ställ in språk",
-  "quickStartStep1Desc": "Gå till Meny > Språkinställningar och välj först ditt språk och inlärningsspråk.",
-  "quickStartStep2Title": "2. Grundläggande flöde",
-  "quickStartStep2Desc": "Skapa dina egna studiekort i följande ordning: Inmatning (mikrofon/tangentbord) -> Översättning -> Spara.",
-  "quickStartStep3Title": "3. Använd lägen",
-  "quickStartStep3Desc": "Öva genom att chatta och öva på uttal genom att titta på texten i fliken Uttalsövning och uttala den själv.",
-  "noteGuidance": "Där du anger ytterligare information för en mer exakt översättning"
+  "yourPronunciation": "Ditt uttal"
 }

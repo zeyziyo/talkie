@@ -9,53 +9,20 @@ class AppLocalizationsFil extends AppLocalizations {
   AppLocalizationsFil([String locale = 'fil']) : super(locale);
 
   @override
-  String get basicWords => 'Basic na Repository ng mga Salita';
-
-  @override
-  String get inputLanguage => 'Wika ng Pagpasok';
-
-  @override
-  String get translationLanguage => 'Wika ng Pagsasalin';
-
-  @override
-  String get simplifiedGuidance =>
-      'Agad na baguhin ang pang-araw-araw na pag-uusap sa isang banyagang wika! Itinatala ng Talkie ang iyong buhay pang-wika.';
-
-  @override
-  String get noDataForLanguage =>
-      'Walang datos ng pag-aaral para sa napiling wika sa lokal na DB. I-download ang datos o pumili ng ibang wika.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Kanselahin';
-
-  @override
   String get accuracy => 'Katumpakan';
-
-  @override
-  String get ttsMissing =>
-      'Wala pang voice engine para sa wikang ito na naka-install sa device.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Pumunta sa Android Settings > Google TTS para i-install ang language data.';
 
   @override
   String get adLoading =>
       'Naglo-load ng ad. Subukang muli sa ibang pagkakataon.';
 
   @override
-  String get addNewSubject => 'Idagdag ang bagong pamagat';
+  String get add => 'Idagdag';
 
   @override
-  String get addParticipant => 'Magdagdag ng Kalahok';
+  String get addNew => 'Magdagdag ng Bago';
+
+  @override
+  String get addNewSubject => 'Idagdag ang bagong pamagat';
 
   @override
   String get addTagHint => 'Magdagdag ng tag...';
@@ -90,6 +57,12 @@ class AppLocalizationsFil extends AppLocalizations {
   String get basicWordRepository => 'Repository ng Mga Pangunahing Salita';
 
   @override
+  String get basicWords => 'Basic na Repository ng mga Salita';
+
+  @override
+  String get cancel => 'Kanselahin';
+
+  @override
   String get caseObject => 'Layon';
 
   @override
@@ -105,62 +78,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get caseSubject => 'Paksa';
 
   @override
-  String get chatAiChat => 'Chat';
-
-  @override
-  String get chatAllConversations => 'Lahat ng Usapan';
-
-  @override
-  String get chatChoosePersona => 'Pumili ng Persona';
-
-  @override
-  String get chatEndMessage => 'Gusto mo bang tapusin ang chat?';
-
-  @override
-  String get chatEndTitle => 'Tapusin at I-save ang Chat';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Nabigo ang chat: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Sipi mula sa pag-uusap ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Kasaysayan ng Chat';
-
-  @override
-  String get chatNew => 'Bagong Chat';
-
-  @override
-  String get chatNewChat => 'Bagong Chat';
-
-  @override
-  String get chatNoConversations => 'Wala pang pag-uusap';
-
-  @override
-  String get chatSearchHint => 'Maghanap sa pamamagitan ng pamagat ng chat...';
-
-  @override
-  String get chatNoteSearchHint => 'Maghanap sa mga tala...';
-
-  @override
-  String get chatSaveAndExit => 'I-save at Lumabas';
-
-  @override
-  String get chatStartNewPrompt =>
-      'Subukan ang isang bagong pag-uusap para sa pagsasanay!';
-
-  @override
-  String get chatTypeHint => 'Mag-type ng mensahe...';
-
-  @override
-  String get chatUntitled => 'Walang Pamagat na Chat';
-
-  @override
   String get checking => 'Sinusuri...';
 
   @override
@@ -171,14 +88,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Sigurado ka bang gusto mong tanggalin ito?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Sigurado ka bang gusto mong burahin ang usapang ito?\nHindi na ito mababawi pa.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Sigurado ka bang gusto mong tanggalin ang kalahok na ito?';
 
   @override
   String get contextTagHint =>
@@ -218,23 +127,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get deleteRecord => 'Tanggalin ang Tala';
 
   @override
-  String get dialogueQuestDesc =>
-      'Magsanay ng pag-uusap sa pamamagitan ng role-playing. Pumili at sabihin ang naaangkop na sagot.';
-
-  @override
-  String get dialogueQuestTitle => 'Quest sa Pag-uusap';
-
-  @override
-  String get disambiguationPrompt => 'Anong kahulugan ang gusto mong isalin?';
-
-  @override
-  String get disambiguationTitle => 'Pumili ng Kahulugan';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Wala ka pang account?';
-
-  @override
-  String get editParticipant => 'I-edit ang Kalahok';
 
   @override
   String get email => 'Email';
@@ -242,6 +138,9 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Ang email na ito ay ginagamit na. Mag-login o gamitin ang pagbawi ng password.';
+
+  @override
+  String get enterNameHint => 'Ipasok ang pangalan';
 
   @override
   String get enterNewSubjectName => 'Ilagay ang bagong pamagat';
@@ -282,6 +181,9 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get errors => 'Mga Error:';
+
+  @override
+  String get extractedText => 'Nakuhang teksto';
 
   @override
   String get female => 'Babae';
@@ -341,12 +243,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get gender => 'Kasarian';
 
   @override
-  String get labelFilterMaterial => 'Mga Materyales';
-
-  @override
-  String get labelFilterTag => 'Mga Tag';
-
-  @override
   String get generalTags => 'Pangkalahatang mga Tag';
 
   @override
@@ -359,18 +255,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get googleContinue => 'Magpatuloy sa Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Mag-import ng buong set ng dayalogo gamit ang JSON file.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc => 'Para sa pag-import sa Mode 3, lumikha ng JSON:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dayalogo (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'Pangungusap (Sentence)';
@@ -402,12 +287,12 @@ class AppLocalizationsFil extends AppLocalizations {
       '• Pumili: Pumili ng package\n• Agwat: [-] [+] oras ng paghihintay (3s-60s)\n• Simulan/Itigil: Kontrolin ang sesyon\n• Magsalita: Makinig at ulitin\n• Marka: Kawastuhan (0-100)\n• Subukan muli: Button kung hindi makita ang boses';
 
   @override
-  String get helpModeChatDesc =>
-      'Magsanay ng totoong pag-uusap sa pamamagitan ng pakikipag-usap sa isang AI persona.';
+  String get helpNote =>
+      'Malayang itala ang kahulugan ng salita, halimbawa, sitwasyon, atbp.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI Chat: Magsanay ng tunay na pag-uusap sa isang persona sa menu na \'Chat\' sa tab bar sa ibaba\n• Pagtatakda ng Persona: Malayang tukuyin ang kasarian, pangalan, at code ng wika ng kabilang partido\n• GPS Sitwasyon: Kilalanin ang aking kasalukuyang lokasyon at magrekomenda ng mga paksa ng pag-uusap na angkop para sa lugar\n• Dalawang Wika: Ang mga sagot ng AI ay ipinapakita kasama ang pagsasalin upang i-maximize ang epekto ng pag-aaral\n• Pamamahala ng Talaan: Pagsala ng nakaraang kasaysayan ng pag-uusap at pag-iimbak ng mga partikular na mensahe sa pag-uusap bilang mga materyales sa pag-aaral';
+  String get helpNotebook =>
+      'Pumili ng folder kung saan ilalagay ang mga isinalin.';
 
   @override
   String get helpTabJson => 'JSON Format';
@@ -422,6 +307,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get helpTabTour => 'Pasyal';
 
   @override
+  String get helpTag =>
+      'Maglagay ng mga keyword para sa pag-uuri o paghahanap sa hinaharap.';
+
+  @override
   String get helpTitle => 'Tulong at Gabay';
 
   @override
@@ -430,6 +319,15 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get hide => 'Itago';
+
+  @override
+  String get hintNoteExample => 'Hal: Konteksto, mga homonimo, atbp.';
+
+  @override
+  String get hintTagExample => 'Hal: Negosyo, Paglalakbay...';
+
+  @override
+  String get homeTab => 'Isalin';
 
   @override
   String importAdded(int count) {
@@ -442,23 +340,6 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Mayroon nang materyal na may parehong pamagat. Subukang baguhin ang pamagat.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -474,6 +355,11 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Na-import ang $files file, $entries item.';
+  }
+
+  @override
   String get importJsonFile => 'Mag-import ng JSON';
 
   @override
@@ -485,12 +371,31 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Isang JSON file';
+
+  @override
+  String get importSourceFolder =>
+      'Folder (istraktura ng library ayon sa wika)';
+
+  @override
+  String get importSourceTitle => 'Pumili ng pagmumulan ng import';
+
+  @override
+  String get importSourceZip => 'ZIP file (naka-compress na folder)';
+
+  @override
   String importTotal(int count) {
     return 'Kabuuan: $count';
   }
 
   @override
   String get importing => 'Nag-iimport...';
+
+  @override
+  String get inputContent => 'Ipinasok na Nilalaman';
+
+  @override
+  String get inputLanguage => 'Wika ng Pagpasok';
 
   @override
   String get inputModeTitle => 'Input';
@@ -507,19 +412,22 @@ class AppLocalizationsFil extends AppLocalizations {
   String get kakaoContinue => 'Magpatuloy sa Kakao';
 
   @override
-  String get labelLangCode => 'Language Code (Hal: en-US, ko-KR)';
+  String get labelDetails => 'Mga Detalye';
 
   @override
-  String get labelName => 'Pangalan';
+  String get labelFilterMaterial => 'Mga Materyales';
+
+  @override
+  String get labelFilterTag => 'Mga Tag';
+
+  @override
+  String get labelLangCode => 'Language Code (Hal: en-US, ko-KR)';
 
   @override
   String get labelNote => 'Tala';
 
   @override
   String get labelPOS => 'Bahagi ng Pananalita';
-
-  @override
-  String get labelRole => 'Papel';
 
   @override
   String get labelSentence => 'Pangungusap';
@@ -570,9 +478,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get listening => 'Nakikinig...';
 
   @override
-  String get loadingParticipants => 'Naglo-load ng mga Kalahok...';
-
-  @override
   String get location => 'Lokasyon';
 
   @override
@@ -592,9 +497,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get male => 'Lalaki';
 
   @override
-  String get manageParticipants => 'Pamahalaan ang mga Kalahok';
-
-  @override
   String get manual => 'Manwal na Input';
 
   @override
@@ -602,9 +504,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get materialInfo => 'Impormasyon ng materyal';
-
-  @override
-  String get me => 'Ako';
 
   @override
   String get menuDeviceImport => 'Mag-import ng mga Materyales mula sa Device';
@@ -672,27 +571,20 @@ class AppLocalizationsFil extends AppLocalizations {
   String get neutral => 'Neutral';
 
   @override
+  String get newNotebookTitle => 'Pamagat ng Bagong Notebook';
+
+  @override
   String get newSubjectName => 'Bagong Pamagat ng Aralin/Pangungusap';
 
   @override
   String get next => 'Susunod';
 
   @override
-  String get noDialogueHistory => 'Walang kasaysayan ng dayalogo.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Walang koneksyon sa internet. Maaaring hindi posible ang pagkilala ng boses sa offline mode.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Walang koneksyon sa internet. Hindi magagamit ang function ng pagsasalin sa offline mode. Mangyaring gamitin ang review mode.';
+  String get noDataForLanguage =>
+      'Walang datos ng pag-aaral para sa napiling wika sa lokal na DB. I-download ang datos o pumili ng ibang wika.';
 
   @override
   String get noMaterialsInCategory => 'Walang materyales sa kategoryang ito.';
-
-  @override
-  String get noParticipantsFound => 'Walang nakarehistrong kalahok.';
 
   @override
   String get noRecords => 'Walang tala para sa napiling wika';
@@ -713,6 +605,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get notSelected => '- Walang Napili -';
 
   @override
+  String get noteGuidance =>
+      'Kung saan mo ipinapasok ang karagdagang mga detalye para sa mas tumpak na pagsasalin';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Suriin ang iyong koneksyon sa internet o subukang muli sa ibang pagkakataon.';
 
@@ -723,34 +619,19 @@ class AppLocalizationsFil extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Walang materyales.';
 
   @override
-  String get participantDeleted => 'Natanggal ang kalahok.';
-
-  @override
-  String get participantRename => 'Palitan ang Pangalan ng Kalahok';
-
-  @override
-  String get partner => 'Partner';
-
-  @override
-  String get partnerMode => 'Partner Mode';
+  String get openSettings => 'Buksan ang Mga Setting';
 
   @override
   String get password => 'Password';
 
   @override
-  String get passwordTooShort => 'Dapat umabot ng 6 na character ang password.';
+  String get passwordTooShort => 'Masyadong maikli ang password';
 
   @override
   String get perfect => 'Perpekto!';
 
   @override
-  String get personaFriend => 'Kaibigang Lokal';
-
-  @override
-  String get personaGuide => 'Gabay sa Paglalakbay';
-
-  @override
-  String get personaTeacher => 'Guro sa Ingles';
+  String get pickGallery => 'Pumili mula sa Gallery';
 
   @override
   String get playAgain => 'Maglaro Muli';
@@ -770,6 +651,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get posAdverb => 'Pang-abay';
 
   @override
+  String get posArticle => 'Artikulo';
+
+  @override
   String get posConjunction => 'Pangatnig';
 
   @override
@@ -777,6 +661,9 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get posNoun => 'Pangngalan';
+
+  @override
+  String get posParticle => 'Pantig/Particle';
 
   @override
   String get posPreposition => 'Pang-ukol';
@@ -794,9 +681,33 @@ class AppLocalizationsFil extends AppLocalizations {
   String get practiceWordsOnly => 'Magsanay lamang ng mga salita';
 
   @override
+  String get processing => 'Pinoproseso...';
+
+  @override
   String progress(int current, int total) {
     return 'Progreso: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Pumunta sa Menu > Mga Setting ng Wika para itakda muna ang iyong wika at ang wikang pinag-aaralan.';
+
+  @override
+  String get quickStartStep1Title => '1. Itakda ang Wika';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Lumikha ng sarili mong flashcard sa pamamagitan ng pagkakasunod-sunod na: Input (microphone/keyboard) -> Pagsasalin -> Pagsave.';
+
+  @override
+  String get quickStartStep2Title => '2. Pangunahing Daloy';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.';
+
+  @override
+  String get quickStartStep3Title => '3. Gamitin ang mga Mode';
 
   @override
   String recentNItems(int count) {
@@ -821,6 +732,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get refresh => 'I-refresh';
 
   @override
+  String get requestTranslation => 'Hilingin ang Pagsasalin';
+
+  @override
   String get reset => 'I-reset';
 
   @override
@@ -841,16 +755,13 @@ class AppLocalizationsFil extends AppLocalizations {
   String get reviewModeTitle => 'Review';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Ikatlong Partido';
-
-  @override
-  String get roleUser => 'Gumagamit';
-
-  @override
   String get save => 'I-save';
+
+  @override
+  String get saveAsSentence => 'I-save bilang pangungusap';
+
+  @override
+  String get saveAsWord => 'I-save bilang salita';
 
   @override
   String get saveData => 'I-save';
@@ -861,6 +772,9 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'I-save sa kasaysayan ng pag-scan';
+
+  @override
   String get saveTranslationsFromSearch =>
       'I-save ang mga pagsasalin mula sa search mode';
 
@@ -869,6 +783,12 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get saving => 'Nagsa-save...';
+
+  @override
+  String get scanInstructions => 'Pumili ng imahe na i-scan';
+
+  @override
+  String get scanLabel => 'I-scan';
 
   @override
   String score(String score) {
@@ -916,16 +836,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get selectPOS => 'Pumili ng Bahagi ng Pananalita';
 
   @override
-  String get selectParticipants => 'Piliin ang mga Kalahok';
-
-  @override
-  String get selectSentenceType => 'Pumili ng Uri ng Pangungusap';
-
-  @override
   String get selectStudyMaterial => 'Pumili ng Materyales';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Pangungusap';
@@ -934,101 +845,65 @@ class AppLocalizationsFil extends AppLocalizations {
   String get signUp => 'Mag-sign Up';
 
   @override
-  String get similarTextFound => 'May natagpuang katulad na teksto';
+  String get simplifiedGuidance =>
+      'Agad na baguhin ang pang-araw-araw na pag-uusap sa isang banyagang wika! Itinatala ng Talkie ang iyong buhay pang-wika.';
 
   @override
-  String get skip => 'Laktawan';
+  String get sourceLanguageLabel => 'Aking Wika';
 
   @override
-  String get source => 'Pinagmulan:';
-
-  @override
-  String get sourceLanguage => 'Pinagmulang Wika';
-
-  @override
-  String get sourceLanguageLabel => 'Source Language';
-
-  @override
-  String get speakNow => 'Magsalita Ngayon!';
-
-  @override
-  String get speaker => 'Tagapagsalita';
-
-  @override
-  String get speakerSelect => 'Piliin ang Tagapagsalita';
-
-  @override
-  String get speakingPractice => 'Pagsasanay sa Pagsasalita';
-
-  @override
-  String get startChat => 'Simulan ang Chat';
-
-  @override
-  String get startPractice => 'Simulan ang Pagsasanay';
-
-  @override
-  String get startTutorial => 'Simulan ang Pasyal';
-
-  @override
-  String get startWarning => 'Babala';
+  String get startTutorial => 'Simulan ang Tutorial';
 
   @override
   String get startsWith => 'Nagsisimula sa';
 
   @override
-  String get statusCheckEmail =>
-      'Pakisuyong kumpirmahin ang email upang makumpleto ang iyong pagpapatunay.';
+  String get statusCheckEmail => 'Pakisuri ang iyong email';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Nagda-download: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Nabigo ang pag-import: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name ay matagumpay na na-import';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Kinansela ang pag-login.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Nabigo ang pag-login: $error';
   }
 
   @override
-  String get statusLoginSuccess => 'Matagumpay na naka-login.';
+  String get statusLoginSuccess => 'Matagumpay na naka-login';
 
   @override
-  String get statusLogoutSuccess => 'Naka-logout.';
+  String get statusLogoutSuccess => 'Matagumpay na naka-logout';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Nabigo ang pag-sign up: $error';
+  String statusRequestFailed(String error) {
+    return 'Nabigo ang Hiling sa Pagsasalin: $error';
   }
 
   @override
-  String get statusSigningUp => 'Nagsa-sign Up...';
+  String get statusRequestSuccess => 'Matagumpay na naihiling ang pagsasalin.';
 
   @override
   String get stopPractice => 'Itigil';
 
   @override
-  String get studyComplete => 'Napag-aralan na';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Hindi maaaring i-save ang napiling materyal sa lokal dahil hindi nito suportado ang kasalukuyang wika ng pag-aaral ($targetLang). Gusto mo bang humiling ng pagsasalin?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Mga Tala ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Hindi Suportado ang Wika ng Pag-aaral';
 
   @override
   String get styleFormal => 'Pormal';
@@ -1043,22 +918,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get styleSlang => 'Slang';
 
   @override
-  String get subject => 'Paksa:';
-
-  @override
   String get swapLanguages => 'Magpalit ng Wika';
 
   @override
-  String get switchToAi => 'Lumipat sa AI Mode';
-
-  @override
-  String get switchToPartner => 'Lumipat sa Partner Mode';
-
-  @override
   String get syncingData => 'Sini-sync ang data...';
-
-  @override
-  String get tabConversation => 'Usapan';
 
   @override
   String tabReview(int count) {
@@ -1121,6 +984,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tooltipSearch => 'Maghanap';
 
   @override
+  String get tooltipSettingsConfirm => 'Kumpirmahin ang mga Setting';
+
+  @override
   String get tooltipSpeaking => 'Pagsasalita';
 
   @override
@@ -1133,6 +999,9 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get translate => 'Isalin';
+
+  @override
+  String get translateNow => 'Isalin Ngayon';
 
   @override
   String get translating => 'Nagsasalin...';
@@ -1150,6 +1019,9 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Wika ng Pagsasalin';
+
+  @override
   String get translationLimitExceeded => 'Lumampas sa limitasyon ng pagsasalin';
 
   @override
@@ -1164,17 +1036,25 @@ class AppLocalizationsFil extends AppLocalizations {
       'Ang bilang ng pagsasalin ay na-refill ng 5 beses!';
 
   @override
+  String get translationResult => 'Resulta ng Pagsasalin';
+
+  @override
   String get translationResultHint => 'Resulta ng Pagsasalin - Maaaring i-edit';
 
   @override
   String get tryAgain => 'Subukan muli';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Magsanay ng mga totoong pag-uusap gamit ang isang AI persona.';
+  String get ttsInstallGuide =>
+      'Pumunta sa Android Settings > Google TTS para i-install ang language data.';
 
   @override
-  String get tutorialAiChatTitle => 'AI Chat';
+  String get ttsMissing =>
+      'Wala pang voice engine para sa wikang ito na naka-install sa device.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Hindi sinusuportahan ng mga default na setting ng device na ito ang voice output sa wikang ito.';
 
   @override
   String get tutorialContextDesc =>
@@ -1290,7 +1170,13 @@ class AppLocalizationsFil extends AppLocalizations {
   String get typeExclamation => 'Padamdam';
 
   @override
+  String get typeIdiom => 'Idyoma';
+
+  @override
   String get typeImperative => 'Pautos';
+
+  @override
+  String get typeProverb => 'Kasabihan/Salawikain';
 
   @override
   String get typeQuestion => 'Tanong';
@@ -1305,6 +1191,11 @@ class AppLocalizationsFil extends AppLocalizations {
   String get useExistingText => 'Gamitin ang Umiiral';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Tingnan ang Online Guide';
 
   @override
@@ -1312,6 +1203,16 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Manood ng Ad at Mag-refill (+5 beses)';
+
+  @override
+  String get welcomeButton => 'Magsimula';
+
+  @override
+  String get welcomeDesc =>
+      'Maligayang pagdating sa Talkie! Sinusuportahan namin ang mahigit 80 wika sa buong mundo nang may 100% integridad, naghahatid ng walang kapantay na karanasan sa pag-aaral sa pamamagitan ng aming bagong premium na 3D na disenyo at pinahusay na performance.';
+
+  @override
+  String get welcomeTitle => 'Maligayang pagdating sa Talkie!';
 
   @override
   String get word => 'Salita';
@@ -1328,113 +1229,4 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ang iyong Pagbigkas';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Hindi sinusuportahan ng mga default na setting ng device na ito ang voice output sa wikang ito.';
-
-  @override
-  String get homeTab => 'Isalin';
-
-  @override
-  String get welcomeTitle => 'Maligayang pagdating sa Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Maligayang pagdating sa Talkie! Sinusuportahan namin ang mahigit 80 wika sa buong mundo nang may 100% integridad, naghahatid ng walang kapantay na karanasan sa pag-aaral sa pamamagitan ng aming bagong premium na 3D na disenyo at pinahusay na performance.';
-
-  @override
-  String get welcomeButton => 'Magsimula';
-
-  @override
-  String get labelDetails => 'Mga Detalye';
-
-  @override
-  String get translationResult => 'Resulta ng Pagsasalin';
-
-  @override
-  String get inputContent => 'Ipinasok na Nilalaman';
-
-  @override
-  String get translateNow => 'Isalin Ngayon';
-
-  @override
-  String get tooltipSettingsConfirm => 'Kumpirmahin ang mga Setting';
-
-  @override
-  String get hintNoteExample => 'Hal: Konteksto, mga homonimo, atbp.';
-
-  @override
-  String get hintTagExample => 'Hal: Negosyo, Paglalakbay...';
-
-  @override
-  String get addNew => 'Magdagdag ng Bago';
-
-  @override
-  String get newNotebookTitle => 'Pamagat ng Bagong Notebook';
-
-  @override
-  String get enterNameHint => 'Ipasok ang pangalan';
-
-  @override
-  String get add => 'Idagdag';
-
-  @override
-  String get openSettings => 'Buksan ang Mga Setting';
-
-  @override
-  String get helpNotebook =>
-      'Pumili ng folder kung saan ilalagay ang mga isinalin.';
-
-  @override
-  String get helpNote =>
-      'Malayang itala ang kahulugan ng salita, halimbawa, sitwasyon, atbp.';
-
-  @override
-  String get helpTag =>
-      'Maglagay ng mga keyword para sa pag-uuri o paghahanap sa hinaharap.';
-
-  @override
-  String get requestTranslation => 'Hilingin ang Pagsasalin';
-
-  @override
-  String get statusRequestSuccess => 'Matagumpay na naihiling ang pagsasalin.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Nabigo ang Hiling sa Pagsasalin: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Hindi Suportado ang Wika ng Pag-aaral';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Hindi maaaring i-save ang napiling materyal sa lokal dahil hindi nito suportado ang kasalukuyang wika ng pag-aaral ($targetLang). Gusto mo bang humiling ng pagsasalin?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Itakda ang Wika';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Pumunta sa Menu > Mga Setting ng Wika para itakda muna ang iyong wika at ang wikang pinag-aaralan.';
-
-  @override
-  String get quickStartStep2Title => '2. Pangunahing Daloy';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Lumikha ng sarili mong flashcard sa pamamagitan ng pagkakasunod-sunod na: Input (microphone/keyboard) -> Pagsasalin -> Pagsave.';
-
-  @override
-  String get quickStartStep3Title => '3. Gamitin ang mga Mode';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Magsanay sa pamamagitan ng pakikipag-chat, at magsanay ng pagbigkas nang direkta habang tinitingnan ang teksto sa tab na Pagsasanay sa Pagbigkas.';
-
-  @override
-  String get noteGuidance =>
-      'Kung saan mo ipinapasok ang karagdagang mga detalye para sa mas tumpak na pagsasalin';
 }

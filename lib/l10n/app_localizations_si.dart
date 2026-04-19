@@ -9,53 +9,20 @@ class AppLocalizationsSi extends AppLocalizations {
   AppLocalizationsSi([String locale = 'si']) : super(locale);
 
   @override
-  String get basicWords => 'මූලික වචන ගබඩාව';
-
-  @override
-  String get inputLanguage => 'ආදාන භාෂාව';
-
-  @override
-  String get translationLanguage => 'පරිවර්තන භාෂාව';
-
-  @override
-  String get simplifiedGuidance =>
-      'දෛනික සංවාද ක්ෂණිකව විදේශ භාෂාවකට පරිවර්තනය කරන්න! Talkie ඔබගේ භාෂා ජීවිතය වාර්තා කරයි.';
-
-  @override
-  String get noDataForLanguage =>
-      'ඔබ තෝරාගත් භාෂාව සඳහා ඉගෙනුම් ද්‍රව්‍ය දේශීය දත්ත ගබඩාවේ නොමැත. කරුණාකර ද්‍රව්‍ය බාගත කරන්න හෝ වෙනත් භාෂාවක් තෝරන්න.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'අවලංගු කරන්න';
-
-  @override
   String get accuracy => 'නිරවද්‍යතාවය';
-
-  @override
-  String get ttsMissing =>
-      'මෙම භාෂාව සඳහා හඬ එන්ජිම ඔබගේ උපාංගයේ ස්ථාපනය කර නොමැත.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Android සැකසීම් > Google TTS වෙතින් අදාළ භාෂා දත්ත ස්ථාපනය කරන්න.';
 
   @override
   String get adLoading =>
       'දැන්වීම් පූරණය වෙමින් පවතී. කරුණාකර පසුව නැවත උත්සාහ කරන්න.';
 
   @override
-  String get addNewSubject => 'නව මාතෘකාවක් එක් කරන්න';
+  String get add => 'එකතු කරන්න';
 
   @override
-  String get addParticipant => 'සහභාගිවන්නෙකු එක් කරන්න';
+  String get addNew => 'අලුතින් එකතු කරන්න';
+
+  @override
+  String get addNewSubject => 'නව මාතෘකාවක් එක් කරන්න';
 
   @override
   String get addTagHint => 'ටැගය එක් කරන්න...';
@@ -88,6 +55,12 @@ class AppLocalizationsSi extends AppLocalizations {
   String get basicWordRepository => 'මූලික වචන ගබඩාව';
 
   @override
+  String get basicWords => 'මූලික වචන ගබඩාව';
+
+  @override
+  String get cancel => 'අවලංගු කරන්න';
+
+  @override
   String get caseObject => 'වස්තුව';
 
   @override
@@ -103,62 +76,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get caseSubject => 'නාමික';
 
   @override
-  String get chatAiChat => 'කතාබස්';
-
-  @override
-  String get chatAllConversations => 'සියලු සංවාද';
-
-  @override
-  String get chatChoosePersona => 'පෞරුෂය තෝරන්න';
-
-  @override
-  String get chatEndMessage => 'ඔබට කතාබස අවසන් කිරීමට අවශ්‍යද?';
-
-  @override
-  String get chatEndTitle => 'කතාබස අවසන් කර සුරකින්න';
-
-  @override
-  String chatFailed(Object error) {
-    return 'කතාබස් අසාර්ථක විය: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'සංවාදයෙන් උපුටා ගැනීම ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'කතාබස් ඉතිහාසය';
-
-  @override
-  String get chatNew => 'නව කතාබස';
-
-  @override
-  String get chatNewChat => 'නව කතාබස';
-
-  @override
-  String get chatNoConversations => 'තවම සංවාද නැත';
-
-  @override
-  String get chatSearchHint => 'කතාබස් මාතෘකාව අනුව සොයන්න...';
-
-  @override
-  String get chatNoteSearchHint => 'සටහන් මගින් සොයන්න...';
-
-  @override
-  String get chatSaveAndExit => 'සුරැකීමෙන් පසු පිටවන්න';
-
-  @override
-  String get chatStartNewPrompt =>
-      'පුහුණුවීම් සඳහා නව සංවාදයක් ආරම්භ කිරීමට උත්සාහ කරන්න!';
-
-  @override
-  String get chatTypeHint => 'පණිවිඩයක් ටයිප් කරන්න...';
-
-  @override
-  String get chatUntitled => 'මාතෘකාවක් නැති සංවාදය';
-
-  @override
   String get checking => 'පරීක්ෂා කරමින්...';
 
   @override
@@ -169,14 +86,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get confirmDelete => 'ඔබ මෙම ඉගෙනුම් වාර්තාව මකා දැමීමට විශ්වාසද?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'ඔබට මෙම සංවාදය මකා දැමීමට අවශ්‍යද?\nමකා දැමූ සංවාද නැවත ලබා ගත නොහැක.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'ඔබ මෙම සහභාගිවන්නා මකා දැමීමට කැමතිද?';
 
   @override
   String get contextTagHint =>
@@ -216,24 +125,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get deleteRecord => 'වාර්තාව මකන්න';
 
   @override
-  String get dialogueQuestDesc =>
-      'අවස්ථා රඟදැක්වීම් හරහා සංවාද පුහුණු වන්න. සුදුසු පිළිතුරක් තෝරා කතා කරන්න.';
-
-  @override
-  String get dialogueQuestTitle => 'සංවාද සෙවීම';
-
-  @override
-  String get disambiguationPrompt =>
-      'ඔබ කුමන අර්ථයෙන් පරිවර්තනය කිරීමට කැමතිද?';
-
-  @override
-  String get disambiguationTitle => 'අර්ථය තෝරන්න';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'ඔබට ගිණුමක් නොමැතිද?';
-
-  @override
-  String get editParticipant => 'සහභාගිවන්නා සංස්කරණය කරන්න';
 
   @override
   String get email => 'විද්‍යුත් තැපෑල';
@@ -241,6 +136,9 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'මෙම විද්‍යුත් තැපෑල දැනටමත් ලියාපදිංචි වී ඇත. පිවිසෙන්න හෝ මුරපදය සොයා ගැනීමට උත්සාහ කරන්න.';
+
+  @override
+  String get enterNameHint => 'නම ඇතුළත් කරන්න';
 
   @override
   String get enterNewSubjectName => 'නව මාතෘකාවක් ඇතුළත් කරන්න';
@@ -279,6 +177,9 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get errors => 'දෝෂ:';
+
+  @override
+  String get extractedText => 'හඳුනාගත් පෙළ';
 
   @override
   String get female => 'ගැහැණු';
@@ -338,12 +239,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get gender => 'ස්ත්‍රී පුරුෂ භාවය';
 
   @override
-  String get labelFilterMaterial => 'ද්‍රව්‍ය';
-
-  @override
-  String get labelFilterTag => 'ටැගය';
-
-  @override
   String get generalTags => 'පොදු ටැග්';
 
   @override
@@ -356,19 +251,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get googleContinue => 'Google සමඟ ඉදිරියට යන්න';
 
   @override
-  String get helpDialogueImportDesc =>
-      'සම්පූර්ණ දෙබස් කට්ටලයක් JSON ගොනුවක් ලෙස ආයාත කරන්න.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON ව්‍යුහය: `entries` වෙනුවට `dialogues` අරාව භාවිත කරන්න\n• ස්වයංක්‍රීය ප්‍රතිසාධනය: සංවාදයේ මාතෘකාව, පෞරුෂය සහ පණිවිඩ අනුපිළිවෙල ප්‍රතිසාධනය කෙරේ.\n• ස්ථානය: ආයාත කළ සංවාද AI කතාබස් මාදිලියේ \'වාර්තා\' ටැබය මත දිස්වේ.';
-
-  @override
   String get helpJsonDesc =>
       '3 වන මාදිලියේදී භාවිතා කිරීමට JSON ගොනුවක් ලෙස ඉගෙනුම් ද්‍රව්‍ය ආයාත කිරීමට පහත ආකෘතිය අනුගමනය කරන්න:';
-
-  @override
-  String get helpJsonTypeDialogue => 'සංවාදය (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'වාක්‍යය (Sentence)';
@@ -401,12 +285,11 @@ class AppLocalizationsSi extends AppLocalizations {
       '• ද්‍රව්‍ය තේරීම: ඉගෙනීමට ද්‍රව්‍ය එකතුවක් තෝරන්න\n• පරතරය සකසන්න: [-] [+] බොත්තම් සමඟ වාක්‍ය අතර රැඳී සිටීමේ කාලය සකසන්න (තත්පර 3-60)\n• ආරම්භ කරන්න/නැවැත්වන්න: ෂැඩෝවිං සැසිය පාලනය කරන්න\n• කථා කිරීම: ශබ්දයට සවන් දී එය නැවත කරන්න\n• ප්‍රතිපෝෂණය: නිරවද්‍යතා ලකුණු (0-100) සහ වර්ණ සංදර්ශකය\n• සෙවුම් කොන්දේසි: ටැග්, මෑත අයිතම, ආරම්භක අකුරුවලින් පුහුණු ඉලක්ක පෙරහන් කරන්න';
 
   @override
-  String get helpModeChatDesc =>
-      'AI පෞරුෂය සමඟ කතාබස් කරමින් සැබෑ සංවාදයන් පුහුණු වන්න.';
+  String get helpNote =>
+      'වචනයේ තේරුම, උදාහරණ, තත්වයන් වැනි දේ නිදහසේ සටහන් කරන්න.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI කතාබස්: පහළ ටැබ් තීරුවේ ඇති \'කතාබස්\' මෙනුවෙන් චරිතයක් සමඟ සැබෑ සංවාද පුහුණු වන්න\n• චරිත සැකසීම්: අනෙක් පුද්ගලයාගේ ස්ත්‍රී පුරුෂ භාවය, නම සහ භාෂා කේතය නිදහසේ සඳහන් කරන්න\n• GPS තත්ත්‍ව නිරූපණය: ඔබගේ වත්මන් ස්ථානය හඳුනාගෙන ස්ථානයට ගැලපෙන සංවාද මාතෘකා නිර්දේශ කරන්න\n• ද්විභාෂා: AI හි ප්‍රතිචාර පරිවර්තනය සමඟ ප්‍රදර්ශනය වන අතර එමඟින් ඉගෙනීමේ බලපෑම උපරිම වේ\n• වාර්තා කළමනාකරණය: පෙර සංවාද ඉතිහාසය පෙරහන් කර සංවාදයක නිශ්චිත පණිවිඩ ඉගෙනුම් ද්‍රව්‍ය ලෙස සුරකින්න';
+  String get helpNotebook => 'පරිවර්තන ප්‍රතිඵල සුරැකීමට ෆෝල්ඩරයක් තෝරන්න.';
 
   @override
   String get helpTabJson => 'JSON ආකෘතිය';
@@ -421,6 +304,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get helpTabTour => 'අත්දැකීම';
 
   @override
+  String get helpTag => 'පසුව වර්ග කිරීමට හෝ සෙවීමට මූල පද ඇතුළත් කරන්න.';
+
+  @override
   String get helpTitle => 'උපකාර සහ මාර්ගෝපදේශය';
 
   @override
@@ -429,6 +315,15 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get hide => 'සඟවන්න';
+
+  @override
+  String get hintNoteExample => 'උදා: සන්දර්භය, සමාන පද ආදිය';
+
+  @override
+  String get hintTagExample => 'උදා: ව්‍යාපාර, සංචාර...';
+
+  @override
+  String get homeTab => 'පරිවර්තනය';
 
   @override
   String importAdded(int count) {
@@ -441,23 +336,6 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'එකම මාතෘකාව සහිත ද්‍රව්‍යයක් දැනටමත් පවතී. කරුණාකර මාතෘකාව වෙනස් කර නැවත උත්සාහ කරන්න.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -473,6 +351,11 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'ගොනු $files සහ අයිතම $entries ආයාත කරන ලදී.';
+  }
+
+  @override
   String get importJsonFile => 'JSON ගොනුව ආයාත කරන්න';
 
   @override
@@ -484,12 +367,30 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'තනි JSON ගොනුව';
+
+  @override
+  String get importSourceFolder => 'ෆෝල්ඩරය (භාෂාව-විශේෂිත පුස්තකාල ව්‍යුහය)';
+
+  @override
+  String get importSourceTitle => 'ආයාත මූලාශ්‍රයක් තෝරන්න';
+
+  @override
+  String get importSourceZip => 'ZIP ගොනුව (සම්පීඩිත ෆෝල්ඩරය)';
+
+  @override
   String importTotal(int count) {
     return 'සම්පූර්ණ: $countක්';
   }
 
   @override
   String get importing => 'ආයාත කරමින්...';
+
+  @override
+  String get inputContent => 'ඇතුළත් කරන අන්තර්ගතය';
+
+  @override
+  String get inputLanguage => 'ආදාන භාෂාව';
 
   @override
   String get inputModeTitle => 'ආදානය';
@@ -506,19 +407,22 @@ class AppLocalizationsSi extends AppLocalizations {
   String get kakaoContinue => 'කකාඕ සමඟ ඉදිරියට යන්න';
 
   @override
-  String get labelLangCode => 'භාෂා කේතය (උදා: en-US, ko-KR)';
+  String get labelDetails => 'විස්තර සකසන්න';
 
   @override
-  String get labelName => 'නම';
+  String get labelFilterMaterial => 'ද්‍රව්‍ය';
+
+  @override
+  String get labelFilterTag => 'ටැගය';
+
+  @override
+  String get labelLangCode => 'භාෂා කේතය (උදා: en-US, ko-KR)';
 
   @override
   String get labelNote => 'සටහන';
 
   @override
   String get labelPOS => 'කථනයේ කොටස';
-
-  @override
-  String get labelRole => 'භූමිකාව';
 
   @override
   String get labelSentence => 'වාක්‍යය';
@@ -569,9 +473,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get listening => 'සවන්දෙමින්...';
 
   @override
-  String get loadingParticipants => 'සහභාගිවන්නන් පූරණය වෙමින් පවතී...';
-
-  @override
   String get location => 'ස්ථානය';
 
   @override
@@ -590,9 +491,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get male => 'පිරිමි';
 
   @override
-  String get manageParticipants => 'සහභාගිවන්නන් කළමනාකරණය කරන්න';
-
-  @override
   String get manual => 'අතින් ඇතුල් කිරීම';
 
   @override
@@ -600,9 +498,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get materialInfo => 'ද්‍රව්‍ය තොරතුරු';
-
-  @override
-  String get me => 'මම';
 
   @override
   String get menuDeviceImport => 'උපාංගයෙන් ද්‍රව්‍ය ආයාත කරන්න';
@@ -670,27 +565,20 @@ class AppLocalizationsSi extends AppLocalizations {
   String get neutral => 'මධ්‍යස්ථ';
 
   @override
+  String get newNotebookTitle => 'නව සටහන් පොතේ නම';
+
+  @override
   String get newSubjectName => 'නව වචන මාලාව/වාක්‍ය මාලාවේ මාතෘකාව';
 
   @override
   String get next => 'ඊළඟ';
 
   @override
-  String get noDialogueHistory => 'සංවාද ඉතිහාසයක් නොමැත.';
-
-  @override
-  String get noInternetWarningMic =>
-      'අන්තර්ජාල සම්බන්ධතාවයක් නොමැත. නොබැඳිව සිටින විට හඬ හඳුනාගැනීම ලබා ගත නොහැකි විය හැක.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'අන්තර්ජාල සම්බන්ධතාවයක් නොමැත. නොබැඳිව සිටින විට පරිවර්තන විශේෂාංගය භාවිතා කළ නොහැක. කරුණාකර සමාලෝචන මාදිලිය භාවිතා කරන්න.';
+  String get noDataForLanguage =>
+      'ඔබ තෝරාගත් භාෂාව සඳහා ඉගෙනුම් ද්‍රව්‍ය දේශීය දත්ත ගබඩාවේ නොමැත. කරුණාකර ද්‍රව්‍ය බාගත කරන්න හෝ වෙනත් භාෂාවක් තෝරන්න.';
 
   @override
   String get noMaterialsInCategory => 'මෙම ප්‍රවර්ගයේ ද්‍රව්‍ය නොමැත.';
-
-  @override
-  String get noParticipantsFound => 'සහභාගිවන්නන් හමු නොවීය.';
 
   @override
   String get noRecords => 'තෝරාගත් භාෂාව සඳහා ඉගෙනුම් වාර්තා නොමැත';
@@ -711,6 +599,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get notSelected => '- තේරීමක් නැත -';
 
   @override
+  String get noteGuidance =>
+      'වඩාත් නිවැරදි පරිවර්තනයක් සඳහා ඔබ අමතර තොරතුරු ඇතුළත් කරන ස්ථානය';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'ඔබේ අන්තර්ජාල සම්බන්ධතාවය පරීක්ෂා කරන්න හෝ පසුව නැවත උත්සාහ කරන්න.';
 
@@ -721,16 +613,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'ද්‍රව්‍ය නොමැත.';
 
   @override
-  String get participantDeleted => 'සහභාගිවන්නා මකා ඇත.';
-
-  @override
-  String get participantRename => 'සහභාගිවන්නාගේ නම වෙනස් කරන්න';
-
-  @override
-  String get partner => 'හවුල්කරු';
-
-  @override
-  String get partnerMode => 'හවුල්කාර මාදිලිය';
+  String get openSettings => 'සැකසුම් විවෘත කරන්න';
 
   @override
   String get password => 'මුරපදය';
@@ -742,13 +625,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get perfect => 'නියමයි!';
 
   @override
-  String get personaFriend => 'ප්‍රදේශීය මිතුරා';
-
-  @override
-  String get personaGuide => 'සංචාරක මඟපෙන්වන්නා';
-
-  @override
-  String get personaTeacher => 'ඉංග්‍රීසි ගුරුවරයා';
+  String get pickGallery => 'ගැලරියෙන් තෝරන්න';
 
   @override
   String get playAgain => 'නැවත සෙල්ලම් කරන්න';
@@ -768,6 +645,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get posAdverb => 'ක්‍රියා විශේෂණ පදය';
 
   @override
+  String get posArticle => 'නාම විශේෂණ පදය';
+
+  @override
   String get posConjunction => 'සමුච්චය';
 
   @override
@@ -775,6 +655,9 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get posNoun => 'නාම පදය';
+
+  @override
+  String get posParticle => 'අංශුව';
 
   @override
   String get posPreposition => 'පූර්ව නිපාතය/පශ්චාත් නිපාතය';
@@ -792,9 +675,33 @@ class AppLocalizationsSi extends AppLocalizations {
   String get practiceWordsOnly => 'වචන පමණක් පුහුණු වන්න';
 
   @override
+  String get processing => 'සකසමින්...';
+
+  @override
   String progress(int current, int total) {
     return 'ප්‍රගතිය: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'මෙනුව > භාෂා සැකසීම් වෙත ගොස් ඔබේ භාෂාව සහ ඉගෙනුම් භාෂාව පළමුව තෝරන්න.';
+
+  @override
+  String get quickStartStep1Title => '1. භාෂාව සකසන්න';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ආදානය (මයික්‍රෆෝනය/යතුරුපුවරුව) -> පරිවර්තනය -> සුරැකීම යන අනුපිළිවෙලට ඔබේම ඉගෙනුම් කාඩ්පතක් සාදන්න.';
+
+  @override
+  String get quickStartStep2Title => '2. මූලික පියවර';
+
+  @override
+  String get quickStartStep3Desc =>
+      'චැට් කිරීමෙන් පුහුණු වන්න, උච්චාරණ පුහුණු පටිත්තෙහි පෙළ දෙස බලා කෙලින්ම උච්චාරණය කරමින් පුහුණු වන්න.';
+
+  @override
+  String get quickStartStep3Title => '3. ක්‍රම භාවිතා කරන්න';
 
   @override
   String recentNItems(int count) {
@@ -819,6 +726,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get refresh => 'නැවුම් කරන්න';
 
   @override
+  String get requestTranslation => 'පරිවර්තනයක් ඉල්ලන්න';
+
+  @override
   String get reset => 'යළි පිහිටුවන්න';
 
   @override
@@ -839,16 +749,13 @@ class AppLocalizationsSi extends AppLocalizations {
   String get reviewModeTitle => 'සමාලෝචනය';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'තෙවන පාර්ශවය';
-
-  @override
-  String get roleUser => 'පරිශීලක';
-
-  @override
   String get save => 'සුරකින්න';
+
+  @override
+  String get saveAsSentence => 'වාක්‍යයක් ලෙස සුරකින්න';
+
+  @override
+  String get saveAsWord => 'වචනයක් ලෙස සුරකින්න';
 
   @override
   String get saveData => 'දත්ත සුරකින්න';
@@ -859,6 +766,9 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'ස්කෑන් ඉතිහාසයේ සුරකින්න';
+
+  @override
   String get saveTranslationsFromSearch =>
       'සෙවුම් මාදිලියේ පරිවර්තන සුරැකීමට උත්සාහ කරන්න';
 
@@ -867,6 +777,12 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get saving => 'සුරකිමින්...';
+
+  @override
+  String get scanInstructions => 'ස්කෑන් කිරීමට රූපයක් තෝරන්න';
+
+  @override
+  String get scanLabel => 'ස්කෑන්';
 
   @override
   String score(String score) {
@@ -913,16 +829,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get selectPOS => 'කථනයේ කොටස තෝරන්න';
 
   @override
-  String get selectParticipants => 'සහභාගිවන්නන් තෝරන්න';
-
-  @override
-  String get selectSentenceType => 'වාක්‍ය වර්ගය තෝරන්න';
-
-  @override
   String get selectStudyMaterial => 'ඉගෙනුම් ද්‍රව්‍ය තෝරන්න';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'වාක්‍යය';
@@ -931,43 +838,14 @@ class AppLocalizationsSi extends AppLocalizations {
   String get signUp => 'ලියාපදිංචි වන්න';
 
   @override
-  String get similarTextFound => 'සමාන පෙළ හමු විය';
-
-  @override
-  String get skip => 'මඟ හරින්න';
-
-  @override
-  String get source => 'මූලාශ්‍රය:';
-
-  @override
-  String get sourceLanguage => 'මූලාශ්‍ර භාෂාව';
+  String get simplifiedGuidance =>
+      'දෛනික සංවාද ක්ෂණිකව විදේශ භාෂාවකට පරිවර්තනය කරන්න! Talkie ඔබගේ භාෂා ජීවිතය වාර්තා කරයි.';
 
   @override
   String get sourceLanguageLabel => 'මගේ භාෂාව (මූලාශ්‍රය)';
 
   @override
-  String get speakNow => 'දැන් කතා කරන්න!';
-
-  @override
-  String get speaker => 'කථිකයා';
-
-  @override
-  String get speakerSelect => 'කථිකයා තෝරන්න';
-
-  @override
-  String get speakingPractice => 'කථා කිරීමේ පුහුණුව';
-
-  @override
-  String get startChat => 'කතාබස් ආරම්භ කරන්න';
-
-  @override
-  String get startPractice => 'පුහුණුව ආරම්භ කරන්න';
-
-  @override
   String get startTutorial => 'මාර්ගෝපදේශය ආරම්භ කරන්න';
-
-  @override
-  String get startWarning => 'අවවාදයයි';
 
   @override
   String get startsWith => 'ආරම්භක අකුරු';
@@ -977,28 +855,22 @@ class AppLocalizationsSi extends AppLocalizations {
       'විද්‍යුත් තැපෑල පරීක්ෂා කර සත්‍යාපනය සම්පූර්ණ කරන්න.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'බාගනිමින්: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'ආනයනය අසාර්ථක විය: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name ආනයනය කිරීම සම්පූර්ණයි';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'පිවිසීම අවලංගු කරන ලදී.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'පිවිසීම අසාර්ථක විය: $error';
   }
 
@@ -1009,23 +881,23 @@ class AppLocalizationsSi extends AppLocalizations {
   String get statusLogoutSuccess => 'ඉවත් විය.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'ලියාපදිංචිය අසාර්ථක විය: $error';
+  String statusRequestFailed(String error) {
+    return 'පරිවර්තන ඉල්ලීම අසාර්ථක විය: $error';
   }
 
   @override
-  String get statusSigningUp => 'ලියාපදිංචි වෙමින්...';
+  String get statusRequestSuccess => 'පරිවර්තන ඉල්ලීම සාර්ථක විය.';
 
   @override
   String get stopPractice => 'පුහුණුව නවත්වන්න';
 
   @override
-  String get studyComplete => 'ඉගෙනීම සම්පූර්ණයි';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'ඔබ තෝරාගත් අන්තර්ගතය දැනට ඔබගේ පාඩම් භාෂාව ($targetLang) සඳහා සහය නොදක්වන බැවින් එය ඔබගේ උපාංගයේ සුරැකිය නොහැක. ඔබ පරිවර්තනයක් ඉල්ලීමට කැමතිද?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'ඉගෙනුම් වාර්තා ($count)';
-  }
+  String get studyLangNotFoundTitle => 'පරිශීලන භාෂාව හඳුනාගත නොහැක';
 
   @override
   String get styleFormal => 'විධිමත්';
@@ -1040,22 +912,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get styleSlang => 'ව්‍යවහාරික';
 
   @override
-  String get subject => 'විෂය:';
-
-  @override
   String get swapLanguages => 'භාෂා මාරු කරන්න';
 
   @override
-  String get switchToAi => 'AI මාදිලියට මාරු වන්න';
-
-  @override
-  String get switchToPartner => 'හවුල්කාර මාදිලියට මාරු වන්න';
-
-  @override
   String get syncingData => 'දත්ත සමමුහුර්ත වෙමින් පවතී...';
-
-  @override
-  String get tabConversation => 'සංවාදය';
 
   @override
   String tabReview(int count) {
@@ -1119,6 +979,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tooltipSearch => 'සොයන්න';
 
   @override
+  String get tooltipSettingsConfirm => 'සැකසුම් තහවුරු කරන්න';
+
+  @override
   String get tooltipSpeaking => 'කථා කිරීම';
 
   @override
@@ -1131,6 +994,9 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get translate => 'පරිවර්තනය කරන්න';
+
+  @override
+  String get translateNow => 'දැන් පරිවර්තනය කරන්න';
 
   @override
   String get translating => 'පරිවර්තනය කරමින්...';
@@ -1147,6 +1013,9 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'පරිවර්තන භාෂාව';
+
+  @override
   String get translationLimitExceeded => 'පරිවර්තන සීමාව ඉක්මවා ඇත';
 
   @override
@@ -1160,16 +1029,25 @@ class AppLocalizationsSi extends AppLocalizations {
   String get translationRefilled => 'පරිවර්තන ගණන වාර 5ක් නැවත පුරවා ඇත!';
 
   @override
+  String get translationResult => 'පරිවර්තන ප්‍රතිඵලය';
+
+  @override
   String get translationResultHint => 'පරිවර්තන ප්‍රතිඵලය - සංස්කරණය කළ හැක';
 
   @override
   String get tryAgain => 'නැවත උත්සාහ කරන්න';
 
   @override
-  String get tutorialAiChatDesc => 'AI පෞරුෂයක් සමඟ සැබෑ සංවාදයක් පුහුණු වන්න.';
+  String get ttsInstallGuide =>
+      'Android සැකසීම් > Google TTS වෙතින් අදාළ භාෂා දත්ත ස්ථාපනය කරන්න.';
 
   @override
-  String get tutorialAiChatTitle => 'AI කතාබස්';
+  String get ttsMissing =>
+      'මෙම භාෂාව සඳහා හඬ එන්ජිම ඔබගේ උපාංගයේ ස්ථාපනය කර නොමැත.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'මෙම උපාංගයේ පෙරනිමි සැකසුම් මඟින් මෙම භාෂාව සඳහා හඬ ප්‍රතිදානය සහාය නොදක්වයි.';
 
   @override
   String get tutorialContextDesc =>
@@ -1283,7 +1161,13 @@ class AppLocalizationsSi extends AppLocalizations {
   String get typeExclamation => 'උද්ඝෝෂණය';
 
   @override
+  String get typeIdiom => 'වාක්‍ය ඛණ්ඩය';
+
+  @override
   String get typeImperative => 'අවශ්‍යයි';
+
+  @override
+  String get typeProverb => 'හිතෝපදේශය';
 
   @override
   String get typeQuestion => 'ප්‍රශ්නය';
@@ -1298,6 +1182,11 @@ class AppLocalizationsSi extends AppLocalizations {
   String get useExistingText => 'පවතින පෙළ භාවිතා කරන්න';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'මාර්ගගත මාර්ගෝපදේශය බලන්න';
 
   @override
@@ -1305,6 +1194,16 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'දැන්වීම් නරඹා නැවත පුරවන්න (+5 වාරයක්)';
+
+  @override
+  String get welcomeButton => 'ආරම්භ කරන්න';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie වෙත ඔබව සාදරයෙන් පිළිගනිමු! ලොව පුරා භාෂා 80කට වැඩි ගණනක් 100%ක් නිවැරදිව සහය දක්වන අතර, නව ප්‍රිමියම් 3D නිර්මාණ සහ ප්‍රශස්ත කාර්යසාධනය සමඟ පරිපූර්ණ ඉගෙනුම් අත්දැකීමක් ලබා දෙයි.';
+
+  @override
+  String get welcomeTitle => 'Talkie වෙත සාදරයෙන් පිළිගනිමු!';
 
   @override
   String get word => 'වචනය';
@@ -1321,111 +1220,4 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ඔබේ උච්චාරණය';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'මෙම උපාංගයේ පෙරනිමි සැකසුම් මඟින් මෙම භාෂාව සඳහා හඬ ප්‍රතිදානය සහාය නොදක්වයි.';
-
-  @override
-  String get homeTab => 'පරිවර්තනය';
-
-  @override
-  String get welcomeTitle => 'Talkie වෙත සාදරයෙන් පිළිගනිමු!';
-
-  @override
-  String get welcomeDesc =>
-      'Talkie වෙත ඔබව සාදරයෙන් පිළිගනිමු! ලොව පුරා භාෂා 80කට වැඩි ගණනක් 100%ක් නිවැරදිව සහය දක්වන අතර, නව ප්‍රිමියම් 3D නිර්මාණ සහ ප්‍රශස්ත කාර්යසාධනය සමඟ පරිපූර්ණ ඉගෙනුම් අත්දැකීමක් ලබා දෙයි.';
-
-  @override
-  String get welcomeButton => 'ආරම්භ කරන්න';
-
-  @override
-  String get labelDetails => 'විස්තර සකසන්න';
-
-  @override
-  String get translationResult => 'පරිවර්තන ප්‍රතිඵලය';
-
-  @override
-  String get inputContent => 'ඇතුළත් කරන අන්තර්ගතය';
-
-  @override
-  String get translateNow => 'දැන් පරිවර්තනය කරන්න';
-
-  @override
-  String get tooltipSettingsConfirm => 'සැකසුම් තහවුරු කරන්න';
-
-  @override
-  String get hintNoteExample => 'උදා: සන්දර්භය, සමාන පද ආදිය';
-
-  @override
-  String get hintTagExample => 'උදා: ව්‍යාපාර, සංචාර...';
-
-  @override
-  String get addNew => 'අලුතින් එකතු කරන්න';
-
-  @override
-  String get newNotebookTitle => 'නව සටහන් පොතේ නම';
-
-  @override
-  String get enterNameHint => 'නම ඇතුළත් කරන්න';
-
-  @override
-  String get add => 'එකතු කරන්න';
-
-  @override
-  String get openSettings => 'සැකසුම් විවෘත කරන්න';
-
-  @override
-  String get helpNotebook => 'පරිවර්තන ප්‍රතිඵල සුරැකීමට ෆෝල්ඩරයක් තෝරන්න.';
-
-  @override
-  String get helpNote =>
-      'වචනයේ තේරුම, උදාහරණ, තත්වයන් වැනි දේ නිදහසේ සටහන් කරන්න.';
-
-  @override
-  String get helpTag => 'පසුව වර්ග කිරීමට හෝ සෙවීමට මූල පද ඇතුළත් කරන්න.';
-
-  @override
-  String get requestTranslation => 'පරිවර්තනයක් ඉල්ලන්න';
-
-  @override
-  String get statusRequestSuccess => 'පරිවර්තන ඉල්ලීම සාර්ථක විය.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'පරිවර්තන ඉල්ලීම අසාර්ථක විය: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'පරිශීලන භාෂාව හඳුනාගත නොහැක';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'ඔබ තෝරාගත් අන්තර්ගතය දැනට ඔබගේ පාඩම් භාෂාව ($targetLang) සඳහා සහය නොදක්වන බැවින් එය ඔබගේ උපාංගයේ සුරැකිය නොහැක. ඔබ පරිවර්තනයක් ඉල්ලීමට කැමතිද?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. භාෂාව සකසන්න';
-
-  @override
-  String get quickStartStep1Desc =>
-      'මෙනුව > භාෂා සැකසීම් වෙත ගොස් ඔබේ භාෂාව සහ ඉගෙනුම් භාෂාව පළමුව තෝරන්න.';
-
-  @override
-  String get quickStartStep2Title => '2. මූලික පියවර';
-
-  @override
-  String get quickStartStep2Desc =>
-      'ආදානය (මයික්‍රෆෝනය/යතුරුපුවරුව) -> පරිවර්තනය -> සුරැකීම යන අනුපිළිවෙලට ඔබේම ඉගෙනුම් කාඩ්පතක් සාදන්න.';
-
-  @override
-  String get quickStartStep3Title => '3. ක්‍රම භාවිතා කරන්න';
-
-  @override
-  String get quickStartStep3Desc =>
-      'චැට් කිරීමෙන් පුහුණු වන්න, උච්චාරණ පුහුණු පටිත්තෙහි පෙළ දෙස බලා කෙලින්ම උච්චාරණය කරමින් පුහුණු වන්න.';
-
-  @override
-  String get noteGuidance =>
-      'වඩාත් නිවැරදි පරිවර්තනයක් සඳහා ඔබ අමතර තොරතුරු ඇතුළත් කරන ස්ථානය';
 }

@@ -9,51 +9,19 @@ class AppLocalizationsAm extends AppLocalizations {
   AppLocalizationsAm([String locale = 'am']) : super(locale);
 
   @override
-  String get basicWords => 'መሠረታዊ የቃላት ማከማቻ';
-
-  @override
-  String get inputLanguage => 'የግቤት ቋንቋ';
-
-  @override
-  String get translationLanguage => 'የትርጉም ቋንቋ';
-
-  @override
-  String get simplifiedGuidance =>
-      'የዕለት ተዕለት ንግግሮችን በቅጽበት ወደ የውጭ ቋንቋ ይለውጡ! ቶኪ የቋንቋ ሕይወትዎን ይመዘግባል።';
-
-  @override
-  String get noDataForLanguage =>
-      'የተመረጠው ቋንቋ ትምህርት መረጃ በአካባቢው DB ውስጥ የለም። እባክዎ መረጃውን ያውርዱ ወይም ሌላ ቋንቋ ይምረጡ።';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'ይቅር';
-
-  @override
   String get accuracy => 'ትክክለኛነት';
-
-  @override
-  String get ttsMissing => 'የዚህ ቋንቋ የድምፅ ሞተር በመሣሪያዎ ላይ አልተጫነም።';
-
-  @override
-  String get ttsInstallGuide =>
-      'እባክዎ በAndroid ቅንብሮች > Google TTS ውስጥ ተገቢውን የቋንቋ ውሂብ ይጫኑ።';
 
   @override
   String get adLoading => 'ማስታወቂያ እየተጫነ ነው። እባክዎ ቆይተው እንደገና ይሞክሩ።';
 
   @override
-  String get addNewSubject => 'አዲስ ርዕስ ያክሉ';
+  String get add => 'አክል';
 
   @override
-  String get addParticipant => 'ተሳታፊ ጨምር';
+  String get addNew => 'አዲስ ጨምር';
+
+  @override
+  String get addNewSubject => 'አዲስ ርዕስ ያክሉ';
 
   @override
   String get addTagHint => 'መለያ ያክሉ...';
@@ -86,6 +54,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get basicWordRepository => 'መሠረታዊ የቃላት ማከማቻ';
 
   @override
+  String get basicWords => 'መሠረታዊ የቃላት ማከማቻ';
+
+  @override
+  String get cancel => 'ይቅር';
+
+  @override
   String get caseObject => 'ነገር';
 
   @override
@@ -101,61 +75,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get caseSubject => 'ርዕሰ ጉዳይ';
 
   @override
-  String get chatAiChat => 'ቻት';
-
-  @override
-  String get chatAllConversations => 'ሁሉም ንግግሮች';
-
-  @override
-  String get chatChoosePersona => 'ባሕርይ ምረጥ';
-
-  @override
-  String get chatEndMessage => 'ውይይቱን ማቆም ይፈልጋሉ?';
-
-  @override
-  String get chatEndTitle => 'ውይይት ጨርስ እና አስቀምጥ';
-
-  @override
-  String chatFailed(Object error) {
-    return 'ውይይት አልተሳካም: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'ውይይት ተወስዷል ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'የውይይት ታሪክ';
-
-  @override
-  String get chatNew => 'አዲስ ውይይት';
-
-  @override
-  String get chatNewChat => 'አዲስ ውይይት';
-
-  @override
-  String get chatNoConversations => 'ገና ምንም ንግግሮች የሉም';
-
-  @override
-  String get chatSearchHint => 'በውይይት ርዕስ ፈልግ...';
-
-  @override
-  String get chatNoteSearchHint => 'በማብራሪያ ፈልግ...';
-
-  @override
-  String get chatSaveAndExit => 'አስቀምጥ እና ውጣ';
-
-  @override
-  String get chatStartNewPrompt => 'ለመለማመድ አዲስ ውይይት ይጀምሩ!';
-
-  @override
-  String get chatTypeHint => 'መልእክትህን አስገባ...';
-
-  @override
-  String get chatUntitled => 'ርዕስ የሌለው ውይይት';
-
-  @override
   String get checking => 'በማረጋገጥ ላይ...';
 
   @override
@@ -166,13 +85,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get confirmDelete => 'ይህን የጥናት መዝገብ መሰረዝ ይፈልጋሉ?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'ይህን ውይይት መሰረዝ ይፈልጋሉ?\nየተሰረዙ ንግግሮችን መልሶ ማግኘት አይቻልም።';
-
-  @override
-  String get confirmDeleteParticipant => 'ይህን ተሳታፊ መሰረዝ ይፈልጋሉ?';
 
   @override
   String get contextTagHint => 'በኋላ ላይ ለመለየት ቀላል እንዲሆን ሁኔታውን ይፃፉ';
@@ -210,23 +122,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get deleteRecord => 'መዝገብ ሰርዝ';
 
   @override
-  String get dialogueQuestDesc =>
-      'በድራማ በኩል የንግግር ልምምድ ያድርጉ። ተገቢውን መልስ ይምረጡ እና ይናገሩ።';
-
-  @override
-  String get dialogueQuestTitle => 'የውይይት ተልዕኮ';
-
-  @override
-  String get disambiguationPrompt => 'በምን ትርጉም መተርጎም ይፈልጋሉ?';
-
-  @override
-  String get disambiguationTitle => 'ትርጉም ይምረጡ';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'መለያ የለዎትም?';
-
-  @override
-  String get editParticipant => 'ተሳታፊን አርትዕ';
 
   @override
   String get email => 'ኢሜይል';
@@ -234,6 +133,9 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'ይህ ኢሜይል ቀድሞውኑ ተመዝግቧል። ይግቡ ወይም የይለፍ ቃልዎን ዳግም ለማስጀመር ይሞክሩ፡፡';
+
+  @override
+  String get enterNameHint => 'ስም ያስገቡ';
 
   @override
   String get enterNewSubjectName => 'አዲስ ርዕስ ያስገቡ';
@@ -270,6 +172,9 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get errors => 'ስህተቶች:';
+
+  @override
+  String get extractedText => 'የተገኘ ጽሑፍ';
 
   @override
   String get female => 'ሴት';
@@ -329,12 +234,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get gender => 'ፆታ';
 
   @override
-  String get labelFilterMaterial => 'ማጣሪያዎች';
-
-  @override
-  String get labelFilterTag => 'መለያዎች';
-
-  @override
   String get generalTags => 'አጠቃላይ መለያዎች';
 
   @override
@@ -347,18 +246,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get googleContinue => 'በGoogle ቀጥል';
 
   @override
-  String get helpDialogueImportDesc => 'ጠቅላላ የውይይት ስብስብን እንደ JSON ፋይል ያስመጡ።';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON መዋቅር: `entries` ከሚለው ይልቅ `dialogues` ድርድር ይጠቀሙ\n• ራስ-ሰር መልሶ ማግኛ: የውይይት ርዕስ፣ ሰው፣ መልእክት ቅደም ተከተል ይመለሳል\n• ሥፍራ: ያስመጣው ውይይት በ AI የውይይት ሞድ \'የመዝገብ\' ትር ላይ ይታያል';
-
-  @override
   String get helpJsonDesc =>
       'በሞድ 3 ላይ ለመጠቀም የጥናት ውሂብን እንደ JSON ፋይል ለማስመጣት የሚከተለውን ቅርጸት ይከተሉ:';
-
-  @override
-  String get helpJsonTypeDialogue => 'ውይይት (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'ዓረፍተ ነገር (Sentence)';
@@ -391,11 +280,10 @@ class AppLocalizationsAm extends AppLocalizations {
       '• የውሂብ ምርጫ: ለማጥናት የውሂብ ስብስብ ይምረጡ\n• ክፍተት ማቀናበር: የዓረፍተ ነገር የቆይታ ጊዜን በ [-] [+] ቁልፎች ያስተካክሉ (ከ3 ሰከንድ እስከ 60 ሰከንድ)\n• ጀምር/አቁም: የጥላ ክፍለ ጊዜን ይቆጣጠሩ\n• መናገር: ድምጽን ያዳምጡ እና ይድገሙ\n• ግብረመልስ: ትክክለኛነት ነጥብ (0-100) እና የቀለም ምልክት\n• የፍለጋ ሁኔታዎች: በመለያዎች፣ በቅርብ ጊዜ ዕቃዎች ወይም በሚጀምሩ ፊደላት ያጣሩ';
 
   @override
-  String get helpModeChatDesc => 'ከ AI ሰው ጋር እየተወያዩ ተግባራዊ የንግግር ልምምድ ያድርጉ።';
+  String get helpNote => 'የቃላት ፍቺዎችን፣ ምሳሌዎችን ወይም ሁኔታዎችን በነፃነት ይመዝግቡ።';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI ቻት፡ ከታች ባለው ትር ባር ውስጥ ካለው \'ቻት\' ምናሌ ጋር በስብዕናዎ ላይ ተመስርተው ተግባራዊ ውይይት ያድርጉ\n• የስብዕና ቅንብር፡ የተቃዋሚውን ጾታ፣ ስም እና የቋንቋ ኮድ በነጻነት ይግለጹ\n• የጂፒኤስ ሁኔታ ድራማ፡ አሁን ያለዎትን ቦታ በመገንዘብ ከቦታው ጋር የሚስማሙ የውይይት ርዕሶችን ይመክሩ\n• ባለ2 ቋንቋ፡ የአይአይ መልሶች ከትርጉም ጋር አብረው ይታያሉ፣ ይህም የመማርን ውጤት ከፍ ያደርገዋል\n• የሪከርድ አስተዳደር፡ ያለፉትን የውይይት ታሪኮች ያጣሩ እና የተወሰኑ መልዕክቶችን በውይይት ጊዜ ለመማሪያ ቁሳቁሶች ያስቀምጡ';
+  String get helpNotebook => 'የተተረጎሙ ውጤቶች የሚቀመጡበትን አቃፊ ይምረጡ።';
 
   @override
   String get helpTabJson => 'JSON ቅርጸት';
@@ -410,6 +298,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get helpTabTour => 'ተሞክሮ ያድርጉ';
 
   @override
+  String get helpTag => 'ለመመደብ ወይም ለመፈለግ ቁልፍ ቃላትን ያስገቡ።';
+
+  @override
   String get helpTitle => 'እገዛ & መመሪያ';
 
   @override
@@ -418,6 +309,15 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get hide => 'ደብቅ';
+
+  @override
+  String get hintNoteExample => 'ለምሳሌ: የሁኔታ መግለጫ፣ ተመሳሳይ ቃላት ወዘተ';
+
+  @override
+  String get hintTagExample => 'ለምሳሌ: ንግድ፣ ጉዞ...';
+
+  @override
+  String get homeTab => 'ትርጉም';
 
   @override
   String importAdded(int count) {
@@ -430,23 +330,6 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'ተመሳሳይ ርዕስ ያለው ቁሳቁስ አስቀድሞ አለ። ርዕሱን ከቀየሩ በኋላ እንደገና ይሞክሩ።';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -462,6 +345,11 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files ፋይሎች, $entries ግቤቶች ተገኝተዋል።';
+  }
+
+  @override
   String get importJsonFile => 'JSON ፋይል አስመጣ';
 
   @override
@@ -473,12 +361,30 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'ነጠላ JSON ፋይል';
+
+  @override
+  String get importSourceFolder => 'አቃፊ (በቋንቋ የተደራጀ ቤተ-መጽሐፍት)';
+
+  @override
+  String get importSourceTitle => 'የማስመጫ ምንጭ ምረጥ';
+
+  @override
+  String get importSourceZip => 'ዚፕ ፋይል (የተጨመቀ አቃፊ)';
+
+  @override
   String importTotal(int count) {
     return 'ጠቅላላ: $count ዕቃዎች';
   }
 
   @override
   String get importing => 'እያስመጣ ነው...';
+
+  @override
+  String get inputContent => 'የግቤት ይዘት';
+
+  @override
+  String get inputLanguage => 'የግቤት ቋንቋ';
 
   @override
   String get inputModeTitle => 'ግብዓት';
@@ -495,19 +401,22 @@ class AppLocalizationsAm extends AppLocalizations {
   String get kakaoContinue => 'በካካዎ ይቀጥሉ';
 
   @override
-  String get labelLangCode => 'የቋንቋ ኮድ (ለምሳሌ en-US, ko-KR)';
+  String get labelDetails => 'ዝርዝር ቅንጅቶች';
 
   @override
-  String get labelName => 'ስም';
+  String get labelFilterMaterial => 'ማጣሪያዎች';
+
+  @override
+  String get labelFilterTag => 'መለያዎች';
+
+  @override
+  String get labelLangCode => 'የቋንቋ ኮድ (ለምሳሌ en-US, ko-KR)';
 
   @override
   String get labelNote => 'ማስታወሻ';
 
   @override
   String get labelPOS => 'የቃላት ክፍል';
-
-  @override
-  String get labelRole => 'ሚና';
 
   @override
   String get labelSentence => 'ዓረፍተ ነገር';
@@ -558,9 +467,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get listening => 'በማዳመጥ ላይ...';
 
   @override
-  String get loadingParticipants => 'ተሳታፊዎችን በመጫን ላይ...';
-
-  @override
   String get location => 'ቦታ';
 
   @override
@@ -579,9 +485,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get male => 'ወንድ';
 
   @override
-  String get manageParticipants => 'ተሳታፊዎችን አስተዳድር';
-
-  @override
   String get manual => 'በእጅ ግቤት';
 
   @override
@@ -589,9 +492,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get materialInfo => 'የቁሳቁስ መረጃ';
-
-  @override
-  String get me => 'እኔ';
 
   @override
   String get menuDeviceImport => 'ቁሳቁስ ከመሳሪያ አስመጣ';
@@ -659,27 +559,20 @@ class AppLocalizationsAm extends AppLocalizations {
   String get neutral => 'ገለልተኛ';
 
   @override
+  String get newNotebookTitle => 'አዲስ ማስታወሻ ደብተር ርዕስ';
+
+  @override
   String get newSubjectName => 'አዲስ የቃላት ዝርዝር/ሐረግ ርዕስ';
 
   @override
   String get next => 'ቀጣይ';
 
   @override
-  String get noDialogueHistory => 'ምንም የውይይት ታሪክ የለም።';
-
-  @override
-  String get noInternetWarningMic =>
-      'ምንም የበይነመረብ ግንኙነት የለም። ከመስመር ውጭ እያሉ የድምፅ ማወቂያ ላይሰራ ይችላል።';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'ምንም የበይነመረብ ግንኙነት የለም። ከመስመር ውጭ እያሉ የትርጉም ባህሪው መጠቀም አይችሉም። እባክዎ የግምገማ ሁነታን ይጠቀሙ።';
+  String get noDataForLanguage =>
+      'የተመረጠው ቋንቋ ትምህርት መረጃ በአካባቢው DB ውስጥ የለም። እባክዎ መረጃውን ያውርዱ ወይም ሌላ ቋንቋ ይምረጡ።';
 
   @override
   String get noMaterialsInCategory => 'በዚህ ምድብ ውስጥ ምንም ቁሳቁሶች የሉም።';
-
-  @override
-  String get noParticipantsFound => 'ምንም የተመዘገቡ ተሳታፊዎች የሉም።';
 
   @override
   String get noRecords => 'ለተመረጠው ቋንቋ ምንም የጥናት መዝገቦች የሉም';
@@ -700,6 +593,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get notSelected => '- አልተመረጠም - ';
 
   @override
+  String get noteGuidance => 'ለትክክለኛ ትርጉም ተጨማሪ ዝርዝሮችን የሚያስገቡበት ቦታ';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'የበይነመረብ ግንኙነትዎን ያረጋግጡ ወይም በኋላ እንደገና ይሞክሩ።';
 
@@ -710,34 +606,19 @@ class AppLocalizationsAm extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'ምንም ቁሳቁሶች የሉም።';
 
   @override
-  String get participantDeleted => 'ተሳታፊ ተሰርዟል።';
-
-  @override
-  String get participantRename => 'ተሳታፊን እንደገና ይሰይሙ';
-
-  @override
-  String get partner => 'አጋር';
-
-  @override
-  String get partnerMode => 'የአጋር ሁነታ';
+  String get openSettings => 'ቅንብሮችን ክፈት';
 
   @override
   String get password => 'የይለፍ ቃል';
 
   @override
-  String get passwordTooShort => 'የይለፍ ቃል ቢያንስ 6 ቁምፊዎች መሆን አለበት።';
+  String get passwordTooShort => 'የይለፍ ቃል በጣም አጭር ነው';
 
   @override
   String get perfect => 'ፍጹም ነው!';
 
   @override
-  String get personaFriend => 'የአካባቢው ጓደኛ';
-
-  @override
-  String get personaGuide => 'የጉዞ መመሪያ';
-
-  @override
-  String get personaTeacher => 'የእንግሊዝኛ መምህር';
+  String get pickGallery => 'ከጋለሪ ምረጥ';
 
   @override
   String get playAgain => 'እንደገና ይጫወቱ';
@@ -757,6 +638,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get posAdverb => 'ተውሳከ ግሥ';
 
   @override
+  String get posArticle => 'መስተዋድድ';
+
+  @override
   String get posConjunction => 'ማያያዣ';
 
   @override
@@ -764,6 +648,9 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get posNoun => 'ስም';
+
+  @override
+  String get posParticle => 'ቅንጣት';
 
   @override
   String get posPreposition => 'መስተዋድድ';
@@ -781,9 +668,33 @@ class AppLocalizationsAm extends AppLocalizations {
   String get practiceWordsOnly => 'ቃላትን ብቻ ይለማመዱ';
 
   @override
+  String get processing => 'በሂደት ላይ...';
+
+  @override
   String progress(int current, int total) {
     return 'ሂደት: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'በምናሌ > ቋንቋ ቅንብሮች ውስጥ የእርስዎን ቋንቋ እና የሚማሩትን ቋንቋ መጀመሪያ ይምረጡ።';
+
+  @override
+  String get quickStartStep1Title => '1. ቋንቋዎችን ያስተካክሉ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'የግል የትምህርት ካርድዎን ለመፍጠር ግቤት (ማይክ/ቁልፍ ሰሌዳ) -> ትርጉም -> አስቀምጥ የሚለውን ቅደም ተከተል ይከተሉ።';
+
+  @override
+  String get quickStartStep2Title => '2. መሰረታዊ ሂደት';
+
+  @override
+  String get quickStartStep3Desc =>
+      'በውይይት ይለማመዱ፣ የጽሑፍ ንግግር ልምምድ ትር ላይ ጽሑፉን ይመልከቱ እና ጮክ ብለው በማንበብ ይለማመዱ።';
+
+  @override
+  String get quickStartStep3Title => '3. ሁነታዎችን መጠቀም';
 
   @override
   String recentNItems(int count) {
@@ -808,6 +719,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get refresh => 'አድስ';
 
   @override
+  String get requestTranslation => 'ትርጉም ለመጠየቅ';
+
+  @override
   String get reset => 'ዳግም አስጀምር';
 
   @override
@@ -828,16 +742,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get reviewModeTitle => 'ግምገማ';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'ሶስተኛ ወገን';
-
-  @override
-  String get roleUser => 'ተጠቃሚ';
-
-  @override
   String get save => 'አስቀምጥ';
+
+  @override
+  String get saveAsSentence => 'እንደ ዓረፍተ ነገር አስቀምጥ';
+
+  @override
+  String get saveAsWord => 'እንደ ቃል አስቀምጥ';
 
   @override
   String get saveData => 'ውሂብ አስቀምጥ';
@@ -848,6 +759,9 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'በቃኚ ታሪክ ውስጥ አስቀምጥ';
+
+  @override
   String get saveTranslationsFromSearch => 'በትርጉም ሁነታ ትርጉሞችን ለማስቀመጥ ይሞክሩ';
 
   @override
@@ -855,6 +769,12 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get saving => 'በማስቀመጥ ላይ...';
+
+  @override
+  String get scanInstructions => 'ለመቃኘት ምስል ይምረጡ';
+
+  @override
+  String get scanLabel => 'ይቃኙ';
 
   @override
   String score(String score) {
@@ -901,16 +821,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get selectPOS => 'የንግግር አካል ይምረጡ';
 
   @override
-  String get selectParticipants => 'ተሳታፊዎችን ይምረጡ';
-
-  @override
-  String get selectSentenceType => 'የዓረፍተ ነገር አይነት ይምረጡ';
-
-  @override
   String get selectStudyMaterial => 'የጥናት ቁሳቁስ ይምረጡ';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'ዓረፍተ ነገር';
@@ -919,100 +830,65 @@ class AppLocalizationsAm extends AppLocalizations {
   String get signUp => 'ይመዝገቡ';
 
   @override
-  String get similarTextFound => 'ተመሳሳይ ጽሑፍ ተገኝቷል';
+  String get simplifiedGuidance =>
+      'የዕለት ተዕለት ንግግሮችን በቅጽበት ወደ የውጭ ቋንቋ ይለውጡ! ቶኪ የቋንቋ ሕይወትዎን ይመዘግባል።';
 
   @override
-  String get skip => 'ዝለል';
+  String get sourceLanguageLabel => 'የኔ ቋንቋ';
 
   @override
-  String get source => 'ምንጭ:';
-
-  @override
-  String get sourceLanguage => 'የመነሻ ቋንቋ';
-
-  @override
-  String get sourceLanguageLabel => 'የእኔ ቋንቋ (ምንጭ)';
-
-  @override
-  String get speakNow => 'አሁን ይናገሩ!';
-
-  @override
-  String get speaker => 'ተናጋሪ';
-
-  @override
-  String get speakerSelect => 'ተናጋሪ ይምረጡ';
-
-  @override
-  String get speakingPractice => 'የንግግር ልምምድ';
-
-  @override
-  String get startChat => 'ውይይት ጀምር';
-
-  @override
-  String get startPractice => 'ልምምድ ይጀምሩ';
-
-  @override
-  String get startTutorial => 'ትምህርቱን ይጀምሩ';
-
-  @override
-  String get startWarning => 'ማስጠንቀቂያ';
+  String get startTutorial => 'መማሪያውን ጀምር';
 
   @override
   String get startsWith => 'መጀመሪያ ፊደል';
 
   @override
-  String get statusCheckEmail => 'ኢሜይልዎን በማረጋገጥ ማረጋገጫውን ያጠናቅቁ።';
+  String get statusCheckEmail => 'ኢሜልዎን ያረጋግጡ';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'በማውረድ ላይ: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'ማስመጣት አልተሳካም: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name ማስመጣት ተጠናቋል';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'መግባት ተሰርዟል።';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'መግባት አልተሳካም: $error';
   }
 
   @override
-  String get statusLoginSuccess => 'በተሳካ ሁኔታ ገብተዋል።';
+  String get statusLoginSuccess => 'በተሳካ ሁኔታ ገብተዋል';
 
   @override
-  String get statusLogoutSuccess => 'ወጥተዋል።';
+  String get statusLogoutSuccess => 'በተሳካ ሁኔታ ወጥተዋል';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'ምዝገባ አልተሳካም: $error';
+  String statusRequestFailed(String error) {
+    return 'የትርጉም ጥያቄ አልተሳካም፡ $error';
   }
 
   @override
-  String get statusSigningUp => 'በመመዝገብ ላይ...';
+  String get statusRequestSuccess => 'የትርጉም ጥያቄ ተሳክቷል።';
 
   @override
   String get stopPractice => 'ልምምድ ያቁሙ';
 
   @override
-  String get studyComplete => 'ትምህርት ተጠናቋል';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'የመረጡት መረጃ በአሁኑ ጊዜ የተዋቀረውን የጥናት ቋንቋን ($targetLang) ስለማይደግፍ በአካባቢው ማስቀመጥ አይቻልም። ትርጉም መጠየቅ ይፈልጋሉ?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'የጥናት መዝገቦች ($count)';
-  }
+  String get studyLangNotFoundTitle => 'የጥናት ቋንቋ አልተገኘም።';
 
   @override
   String get styleFormal => 'መደበኛ';
@@ -1027,22 +903,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get styleSlang => 'ስላንግ';
 
   @override
-  String get subject => 'ርዕሰ ጉዳይ:';
-
-  @override
   String get swapLanguages => 'ቋንቋዎችን ይቀያይሩ';
 
   @override
-  String get switchToAi => 'ወደ AI ሁነታ ይቀይሩ';
-
-  @override
-  String get switchToPartner => 'ወደ አጋር ሁነታ ይቀይሩ';
-
-  @override
   String get syncingData => 'ውሂብ በመመሳሰል ላይ...';
-
-  @override
-  String get tabConversation => 'ውይይት';
 
   @override
   String tabReview(int count) {
@@ -1105,6 +969,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tooltipSearch => 'ፈልግ';
 
   @override
+  String get tooltipSettingsConfirm => 'ቅንብሮችን አረጋግጥ';
+
+  @override
   String get tooltipSpeaking => 'መናገር';
 
   @override
@@ -1117,6 +984,9 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get translate => 'ተርጉም';
+
+  @override
+  String get translateNow => 'አሁን ተርጉም';
 
   @override
   String get translating => 'በመተርጎም ላይ...';
@@ -1133,6 +1003,9 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'የትርጉም ቋንቋ';
+
+  @override
   String get translationLimitExceeded => 'የትርጉም ገደብ አልፏል';
 
   @override
@@ -1146,16 +1019,23 @@ class AppLocalizationsAm extends AppLocalizations {
   String get translationRefilled => 'የትርጉም ብዛት 5 ጊዜ ተሞልቷል!';
 
   @override
+  String get translationResult => 'የትርጉም ውጤት';
+
+  @override
   String get translationResultHint => 'የትርጉም ውጤት - ሊስተካከል የሚችል';
 
   @override
   String get tryAgain => 'እንደገና ይሞክሩ';
 
   @override
-  String get tutorialAiChatDesc => 'ከ AI ሰው ጋር እውነተኛ ውይይቶችን ይለማመዱ።';
+  String get ttsInstallGuide =>
+      'እባክዎ በAndroid ቅንብሮች > Google TTS ውስጥ ተገቢውን የቋንቋ ውሂብ ይጫኑ።';
 
   @override
-  String get tutorialAiChatTitle => 'AI ቻት';
+  String get ttsMissing => 'የዚህ ቋንቋ የድምፅ ሞተር በመሣሪያዎ ላይ አልተጫነም።';
+
+  @override
+  String get ttsUnsupportedNatively => 'ይህ መሣሪያ ይህን ቋንቋ በተፈጥሮው በድምፅ አይደግፍም።';
 
   @override
   String get tutorialContextDesc =>
@@ -1265,7 +1145,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get typeExclamation => 'ቃለ አጋኖ';
 
   @override
+  String get typeIdiom => 'ፈሊጥ';
+
+  @override
   String get typeImperative => 'አስገዳጅ';
+
+  @override
+  String get typeProverb => 'ምሳሌ';
 
   @override
   String get typeQuestion => 'ጥያቄ';
@@ -1280,6 +1166,11 @@ class AppLocalizationsAm extends AppLocalizations {
   String get useExistingText => 'ነባር ጽሑፍ ተጠቀም';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'የመስመር ላይ መመሪያ ይመልከቱ';
 
   @override
@@ -1287,6 +1178,16 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'ማስታወቂያ በመመልከት (+5 ጊዜ) ይሙሉ።';
+
+  @override
+  String get welcomeButton => 'ይጀምሩ';
+
+  @override
+  String get welcomeDesc =>
+      'ወደ ቶኪ እንኳን ደህና መጡ! ከ 80 በላይ የሆኑ ሁሉንም ቋንቋዎች በ 100% ታማኝነት እንደግፋለን፣ እና በአዲሱ የፕሪሚየም 3D ዲዛይን እና በተሻሻለ አፈጻጸም ፍጹም የመማር ልምድን እናቀርባለን።';
+
+  @override
+  String get welcomeTitle => 'ወደ Talkie እንኳን በደህና መጡ!';
 
   @override
   String get word => 'ቃል';
@@ -1302,108 +1203,4 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'የእርስዎ አጠራር';
-
-  @override
-  String get ttsUnsupportedNatively => 'ይህ መሣሪያ ይህን ቋንቋ በተፈጥሮው በድምፅ አይደግፍም።';
-
-  @override
-  String get homeTab => 'ትርጉም';
-
-  @override
-  String get welcomeTitle => 'ወደ Talkie እንኳን በደህና መጡ!';
-
-  @override
-  String get welcomeDesc =>
-      'ወደ ቶኪ እንኳን ደህና መጡ! ከ 80 በላይ የሆኑ ሁሉንም ቋንቋዎች በ 100% ታማኝነት እንደግፋለን፣ እና በአዲሱ የፕሪሚየም 3D ዲዛይን እና በተሻሻለ አፈጻጸም ፍጹም የመማር ልምድን እናቀርባለን።';
-
-  @override
-  String get welcomeButton => 'ይጀምሩ';
-
-  @override
-  String get labelDetails => 'ዝርዝር ቅንጅቶች';
-
-  @override
-  String get translationResult => 'የትርጉም ውጤት';
-
-  @override
-  String get inputContent => 'የግቤት ይዘት';
-
-  @override
-  String get translateNow => 'አሁን ተርጉም';
-
-  @override
-  String get tooltipSettingsConfirm => 'ቅንብሮችን አረጋግጥ';
-
-  @override
-  String get hintNoteExample => 'ለምሳሌ: የሁኔታ መግለጫ፣ ተመሳሳይ ቃላት ወዘተ';
-
-  @override
-  String get hintTagExample => 'ለምሳሌ: ንግድ፣ ጉዞ...';
-
-  @override
-  String get addNew => 'አዲስ ጨምር';
-
-  @override
-  String get newNotebookTitle => 'አዲስ ማስታወሻ ደብተር ርዕስ';
-
-  @override
-  String get enterNameHint => 'ስም ያስገቡ';
-
-  @override
-  String get add => 'አክል';
-
-  @override
-  String get openSettings => 'ቅንብሮችን ክፈት';
-
-  @override
-  String get helpNotebook => 'የተተረጎሙ ውጤቶች የሚቀመጡበትን አቃፊ ይምረጡ።';
-
-  @override
-  String get helpNote => 'የቃላት ፍቺዎችን፣ ምሳሌዎችን ወይም ሁኔታዎችን በነፃነት ይመዝግቡ።';
-
-  @override
-  String get helpTag => 'ለመመደብ ወይም ለመፈለግ ቁልፍ ቃላትን ያስገቡ።';
-
-  @override
-  String get requestTranslation => 'ትርጉም ለመጠየቅ';
-
-  @override
-  String get statusRequestSuccess => 'የትርጉም ጥያቄ ተሳክቷል።';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'የትርጉም ጥያቄ አልተሳካም፡ $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'የጥናት ቋንቋ አልተገኘም።';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'የመረጡት መረጃ በአሁኑ ጊዜ የተዋቀረውን የጥናት ቋንቋን ($targetLang) ስለማይደግፍ በአካባቢው ማስቀመጥ አይቻልም። ትርጉም መጠየቅ ይፈልጋሉ?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. ቋንቋዎችን ያስተካክሉ';
-
-  @override
-  String get quickStartStep1Desc =>
-      'በምናሌ > ቋንቋ ቅንብሮች ውስጥ የእርስዎን ቋንቋ እና የሚማሩትን ቋንቋ መጀመሪያ ይምረጡ።';
-
-  @override
-  String get quickStartStep2Title => '2. መሰረታዊ ሂደት';
-
-  @override
-  String get quickStartStep2Desc =>
-      'የግል የትምህርት ካርድዎን ለመፍጠር ግቤት (ማይክ/ቁልፍ ሰሌዳ) -> ትርጉም -> አስቀምጥ የሚለውን ቅደም ተከተል ይከተሉ።';
-
-  @override
-  String get quickStartStep3Title => '3. ሁነታዎችን መጠቀም';
-
-  @override
-  String get quickStartStep3Desc =>
-      'በውይይት ይለማመዱ፣ የጽሑፍ ንግግር ልምምድ ትር ላይ ጽሑፉን ይመልከቱ እና ጮክ ብለው በማንበብ ይለማመዱ።';
-
-  @override
-  String get noteGuidance => 'ለትክክለኛ ትርጉም ተጨማሪ ዝርዝሮችን የሚያስገቡበት ቦታ';
 }

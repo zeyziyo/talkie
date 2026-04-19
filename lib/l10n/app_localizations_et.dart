@@ -9,53 +9,20 @@ class AppLocalizationsEt extends AppLocalizations {
   AppLocalizationsEt([String locale = 'et']) : super(locale);
 
   @override
-  String get basicWords => 'Põhiliste sõnade hoidla';
-
-  @override
-  String get inputLanguage => 'Sisestuskeel';
-
-  @override
-  String get translationLanguage => 'Tõlkekeel';
-
-  @override
-  String get simplifiedGuidance =>
-      'Muutke igapäevased vestlused hetkega võõrkeelde! Talkie salvestab teie keelekasutuse.';
-
-  @override
-  String get noDataForLanguage =>
-      'Valitud keele õppematerjale pole kohalikus andmebaasis saadaval. Laadige materjalid alla või valige mõni muu keel.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Tühista';
-
-  @override
   String get accuracy => 'Täpsus';
-
-  @override
-  String get ttsMissing =>
-      'Selle keele kõnesünteesimootor pole sinu seadmesse installitud.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Installi vastavad keeleandmed Androidi seadetes > Google\'i kõnesünteesis.';
 
   @override
   String get adLoading =>
       'Reklaami laadimine, proovige mõne aja pärast uuesti.';
 
   @override
-  String get addNewSubject => 'Lisa uus nimi';
+  String get add => 'Lisa';
 
   @override
-  String get addParticipant => 'Lisa osaleja';
+  String get addNew => 'Lisa uus';
+
+  @override
+  String get addNewSubject => 'Lisa uus nimi';
 
   @override
   String get addTagHint => 'Lisa silt...';
@@ -88,6 +55,12 @@ class AppLocalizationsEt extends AppLocalizations {
   String get basicWordRepository => 'Põhiliste sõnade hoidla';
 
   @override
+  String get basicWords => 'Põhiliste sõnade hoidla';
+
+  @override
+  String get cancel => 'Tühista';
+
+  @override
   String get caseObject => 'Sihitiskääne';
 
   @override
@@ -103,62 +76,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get caseSubject => 'Nimetav kääne';
 
   @override
-  String get chatAiChat => 'Vestlus';
-
-  @override
-  String get chatAllConversations => 'Kõik vestlused';
-
-  @override
-  String get chatChoosePersona => 'Vali personaž';
-
-  @override
-  String get chatEndMessage => 'Kas soovid vestluse lõpetada?';
-
-  @override
-  String get chatEndTitle => 'Lõpeta ja salvesta vestlus';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Vestlus ebaõnnestus: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Vestluse väljavõte ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Vestluste ajalugu';
-
-  @override
-  String get chatNew => 'Uus vestlus';
-
-  @override
-  String get chatNewChat => 'Uus vestlus';
-
-  @override
-  String get chatNoConversations => 'Vestlusi pole veel';
-
-  @override
-  String get chatSearchHint => 'Otsi vestluse pealkirjaga...';
-
-  @override
-  String get chatNoteSearchHint => 'Otsi märgete seast...';
-
-  @override
-  String get chatSaveAndExit => 'Salvesta ja välju';
-
-  @override
-  String get chatStartNewPrompt =>
-      'Proovige harjutamiseks uut vestlust alustada!';
-
-  @override
-  String get chatTypeHint => 'Sisesta sõnum...';
-
-  @override
-  String get chatUntitled => 'Pealkirjata vestlus';
-
-  @override
   String get checking => 'Kontrollin...';
 
   @override
@@ -170,14 +87,6 @@ class AppLocalizationsEt extends AppLocalizations {
   @override
   String get confirmDelete =>
       'Kas sa oled kindel, et soovid selle õppimiskirje kustutada?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Kas sa oled kindel, et soovid selle vestluse kustutada?\nKustutatud vestlust ei saa taastada.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Kas sa oled kindel, et soovid selle osaleja kustutada?';
 
   @override
   String get contextTagHint => 'Kirjuta olukord hiljem lihtsamaks eristamiseks';
@@ -216,23 +125,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get deleteRecord => 'Kustuta kirje';
 
   @override
-  String get dialogueQuestDesc =>
-      'Harjutage vestlust situatsioonide kaudu. Valige sobiv vastus ja öelge see.';
-
-  @override
-  String get dialogueQuestTitle => 'Dialoogiülesanne';
-
-  @override
-  String get disambiguationPrompt => 'Millise tähendusega sa soovid tõlkida?';
-
-  @override
-  String get disambiguationTitle => 'Vali tähendus';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Sul pole kontot?';
-
-  @override
-  String get editParticipant => 'Muuda osalejat';
 
   @override
   String get email => 'E-post';
@@ -240,6 +136,9 @@ class AppLocalizationsEt extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'See e-posti aadress on juba kasutusel. Palun logi sisse või taasta oma parool.';
+
+  @override
+  String get enterNameHint => 'Sisesta nimi';
 
   @override
   String get enterNewSubjectName => 'Sisesta uus nimi';
@@ -278,6 +177,9 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get errors => 'Veateated:';
+
+  @override
+  String get extractedText => 'Tuvastatud tekst';
 
   @override
   String get female => 'Naine';
@@ -337,12 +239,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get gender => 'Sugu';
 
   @override
-  String get labelFilterMaterial => 'Materjalid';
-
-  @override
-  String get labelFilterTag => 'Sildid';
-
-  @override
   String get generalTags => 'Üldised sildid';
 
   @override
@@ -355,19 +251,8 @@ class AppLocalizationsEt extends AppLocalizations {
   String get googleContinue => 'Jätka Google\'iga';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Impordi kogu dialoogikomplekt JSON-failina.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON-struktuur: kasuta massiivi `dialogues` massiivi `entries` asemel\n• Automaatne taastamine: dialoogi pealkiri, personaž ja sõnumite järjekord taastatakse.\n• Asukoht: imporditud dialoog kuvatakse AI vestlusrežiimi vahekaardil \"Ajalugu\".';
-
-  @override
   String get helpJsonDesc =>
       'Õppematerjali JSON-failina importimiseks režiimis 3 järgi seda vormingut:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dialoog';
 
   @override
   String get helpJsonTypeSentence => 'Laused';
@@ -400,12 +285,10 @@ class AppLocalizationsEt extends AppLocalizations {
       '• Materjali valik: vali õpitav materjalikogum\n• Intervalli seadistus: reguleeri lausete vahelist ooteaega nuppudega [-] [+], (3 sekundit kuni 60 sekundit)\n• Alusta/peata: varjutamise seansi juhtimine\n• Räägi: kuula häält ja korda seda\n• Tagasiside: täpsusskoor (0–100) ja värviindikaator\n• Otsingutingimused: filtreeri harjutatavaid üksusi siltide, hiljutiste üksuste või algustähe järgi';
 
   @override
-  String get helpModeChatDesc =>
-      'Harjuta vestlust tehisintellekti persooniga suheldes.';
+  String get helpNote => 'Kirjuta üles sõna tähendus, näited või olukorrad.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI vestlus: harjuta vestlust tegelikus elus personaga alumise vahekaardiriba menüüs \'Vestlus\'\n• Persona seaded: määra vabalt partneri sugu, nimi ja keelekood\n• GPS olukorramäng: soovitab kohale sobivaid vestlusteemasid, tunnetades minu praegust asukohta\n• Kaks keelt: AI vastused kuvatakse koos tõlkega, et maksimeerida õppimist\n• Kirjete haldamine: filtreeri varasemaid vestlusi ja salvesta teatud sõnumeid õppematerjalidena vestluse ajal';
+  String get helpNotebook => 'Vali kaust, kuhu tõlgitud tulemused salvestada.';
 
   @override
   String get helpTabJson => 'JSON-vorming';
@@ -420,6 +303,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get helpTabTour => 'Tutvustus';
 
   @override
+  String get helpTag => 'Sisesta märksõnad, et hiljem liigitada või otsida.';
+
+  @override
   String get helpTitle => 'Abi & juhend';
 
   @override
@@ -428,6 +314,15 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get hide => 'Peida';
+
+  @override
+  String get hintNoteExample => 'Nt: kontekst, homonüümid jne';
+
+  @override
+  String get hintTagExample => 'Nt: äri, reisimine...';
+
+  @override
+  String get homeTab => 'Tõlge';
 
   @override
   String importAdded(int count) {
@@ -440,23 +335,6 @@ class AppLocalizationsEt extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Sama pealkirjaga materjal on juba olemas. Muuda pealkirja ja proovi uuesti.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -472,6 +350,11 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Imporditud $files faili, $entries kirjet.';
+  }
+
+  @override
   String get importJsonFile => 'Impordi JSON-fail';
 
   @override
@@ -483,12 +366,30 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Üksik JSON-fail';
+
+  @override
+  String get importSourceFolder => 'Kaust (keelepõhine teegi struktuur)';
+
+  @override
+  String get importSourceTitle => 'Vali impordi allikas';
+
+  @override
+  String get importSourceZip => 'ZIP-fail (pakitud kaust)';
+
+  @override
   String importTotal(int count) {
     return 'Kokku: $count tk';
   }
 
   @override
   String get importing => 'Importimine...';
+
+  @override
+  String get inputContent => 'Sisestatud sisu';
+
+  @override
+  String get inputLanguage => 'Sisestuskeel';
 
   @override
   String get inputModeTitle => 'Sisestus';
@@ -505,19 +406,22 @@ class AppLocalizationsEt extends AppLocalizations {
   String get kakaoContinue => 'Jätka Kakao abil';
 
   @override
-  String get labelLangCode => 'Keelekood (nt en-US, ko-KR)';
+  String get labelDetails => 'Detailseaded';
 
   @override
-  String get labelName => 'Nimi';
+  String get labelFilterMaterial => 'Materjalid';
+
+  @override
+  String get labelFilterTag => 'Sildid';
+
+  @override
+  String get labelLangCode => 'Keelekood (nt en-US, ko-KR)';
 
   @override
   String get labelNote => 'Märkus';
 
   @override
   String get labelPOS => 'Kõneosa';
-
-  @override
-  String get labelRole => 'Roll';
 
   @override
   String get labelSentence => 'Lause';
@@ -568,9 +472,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get listening => 'Kuulan...';
 
   @override
-  String get loadingParticipants => 'Osalejate laadimine...';
-
-  @override
   String get location => 'Asukoht';
 
   @override
@@ -590,9 +491,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get male => 'Mees';
 
   @override
-  String get manageParticipants => 'Halda osalejaid';
-
-  @override
   String get manual => 'Käsitsi sisestus';
 
   @override
@@ -600,9 +498,6 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get materialInfo => 'Materjali info';
-
-  @override
-  String get me => 'Mina';
 
   @override
   String get menuDeviceImport => 'Impordi materjale seadmest';
@@ -670,27 +565,20 @@ class AppLocalizationsEt extends AppLocalizations {
   String get neutral => 'Neutraalne';
 
   @override
+  String get newNotebookTitle => 'Uue märkmiku nimi';
+
+  @override
   String get newSubjectName => 'Uue teemakogumi nimi';
 
   @override
   String get next => 'Järgmine';
 
   @override
-  String get noDialogueHistory => 'Vestluste ajalugu puudub.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Internetiühendus puudub. Võrguühenduseta režiimis ei pruugi hääletuvastus töötada.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Internetiühendus puudub. Võrguühenduseta režiimis ei saa tõlkefunktsiooni kasutada. Palun kasuta ülevaaterežiimi.';
+  String get noDataForLanguage =>
+      'Valitud keele õppematerjale pole kohalikus andmebaasis saadaval. Laadige materjalid alla või valige mõni muu keel.';
 
   @override
   String get noMaterialsInCategory => 'Selles kategoorias pole materjale.';
-
-  @override
-  String get noParticipantsFound => 'Registreeritud osalejaid pole.';
 
   @override
   String get noRecords => 'Valitud keele õppimisajalugu pole';
@@ -711,6 +599,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get notSelected => '- Pole valitud -';
 
   @override
+  String get noteGuidance =>
+      'Kuhu sisestate täpsemaks tõlkimiseks täiendavaid üksikasju';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Palun kontrolli oma internetiühendust või proovi hiljem uuesti.';
 
@@ -721,16 +613,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Materjale pole.';
 
   @override
-  String get participantDeleted => 'Osaleja on kustutatud.';
-
-  @override
-  String get participantRename => 'Muuda osaleja nime';
-
-  @override
-  String get partner => 'Partner';
-
-  @override
-  String get partnerMode => 'Partnerrežiim';
+  String get openSettings => 'Ava seaded';
 
   @override
   String get password => 'Salasõna';
@@ -743,13 +626,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get perfect => 'Suurepärane!';
 
   @override
-  String get personaFriend => 'Kohalik sõber';
-
-  @override
-  String get personaGuide => 'Reisijuht';
-
-  @override
-  String get personaTeacher => 'Inglise keele õpetaja';
+  String get pickGallery => 'Vali galeriist';
 
   @override
   String get playAgain => 'Mängi uuesti';
@@ -769,6 +646,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get posAdverb => 'Määrsõna';
 
   @override
+  String get posArticle => 'Artikkel';
+
+  @override
   String get posConjunction => 'Sidesõna';
 
   @override
@@ -776,6 +656,9 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get posNoun => 'Nimisõna';
+
+  @override
+  String get posParticle => 'Osake';
 
   @override
   String get posPreposition => 'Eessõna/kaassõna';
@@ -793,9 +676,33 @@ class AppLocalizationsEt extends AppLocalizations {
   String get practiceWordsOnly => 'Harjuta ainult sõnu';
 
   @override
+  String get processing => 'Töötlemine...';
+
+  @override
   String progress(int current, int total) {
     return 'Edenemine: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Määra esmalt oma keel ja õpitav keel menüüs > Keeleseaded.';
+
+  @override
+  String get quickStartStep1Title => '1. Seadista keel';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Koosta oma õppekaardid järjekorras: sisend (mikrofon/klaviatuur) -> tõlkimine -> salvestamine.';
+
+  @override
+  String get quickStartStep2Title => '2. Põhivool';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Harjuta vestluse kaudu ja harjuta hääldust, vaadates teksti ja hääldades seda otse vahekaardil Hääldusharjutus.';
+
+  @override
+  String get quickStartStep3Title => '3. Režiimide kasutamine';
 
   @override
   String recentNItems(int count) {
@@ -820,6 +727,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get refresh => 'Värskenda';
 
   @override
+  String get requestTranslation => 'Taotle tõlget';
+
+  @override
   String get reset => 'Lähtesta';
 
   @override
@@ -840,16 +750,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get reviewModeTitle => 'Kordamine';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Kolmas osapool';
-
-  @override
-  String get roleUser => 'Kasutaja';
-
-  @override
   String get save => 'Salvesta';
+
+  @override
+  String get saveAsSentence => 'Salvesta lausena';
+
+  @override
+  String get saveAsWord => 'Salvesta sõnana';
 
   @override
   String get saveData => 'Salvesta andmed';
@@ -860,6 +767,9 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Salvesta skaneerimise ajalukku';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Proovi tõlkeid otsingurežiimis salvestada';
 
@@ -868,6 +778,12 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get saving => 'Salvestamine...';
+
+  @override
+  String get scanInstructions => 'Vali skaneeritav pilt';
+
+  @override
+  String get scanLabel => 'Skaneeri';
 
   @override
   String score(String score) {
@@ -914,16 +830,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get selectPOS => 'Vali kõneosa';
 
   @override
-  String get selectParticipants => 'Vali osalejad';
-
-  @override
-  String get selectSentenceType => 'Vali lause tüüp';
-
-  @override
   String get selectStudyMaterial => 'Vali õppematerjal';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Lause';
@@ -932,43 +839,14 @@ class AppLocalizationsEt extends AppLocalizations {
   String get signUp => 'Registreeru';
 
   @override
-  String get similarTextFound => 'Leiti sarnane tekst';
-
-  @override
-  String get skip => 'Jäta vahele';
-
-  @override
-  String get source => 'Allikas:';
-
-  @override
-  String get sourceLanguage => 'Lähtekeel';
+  String get simplifiedGuidance =>
+      'Muutke igapäevased vestlused hetkega võõrkeelde! Talkie salvestab teie keelekasutuse.';
 
   @override
   String get sourceLanguageLabel => 'Minu keel (Lähtekeel)';
 
   @override
-  String get speakNow => 'Räägi nüüd!';
-
-  @override
-  String get speaker => 'Kõneleja';
-
-  @override
-  String get speakerSelect => 'Vali kõneleja';
-
-  @override
-  String get speakingPractice => 'Rääkimisharjutus';
-
-  @override
-  String get startChat => 'Alusta vestlust';
-
-  @override
-  String get startPractice => 'Alusta harjutamist';
-
-  @override
   String get startTutorial => 'Alusta õpetust';
-
-  @override
-  String get startWarning => 'Hoiatus';
 
   @override
   String get startsWith => 'Algustäht';
@@ -978,28 +856,22 @@ class AppLocalizationsEt extends AppLocalizations {
       'Palun kinnita oma e-posti aadress, et autentimine lõpule viia.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Allalaadimine: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Importimine ebaõnnestus: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name importimine lõpetatud';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Sisselogimine katkestati.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Sisselogimine ebaõnnestus: $error';
   }
 
@@ -1010,23 +882,23 @@ class AppLocalizationsEt extends AppLocalizations {
   String get statusLogoutSuccess => 'Väljalogimine õnnestus.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Registreerimine ebaõnnestus: $error';
+  String statusRequestFailed(String error) {
+    return 'Tõlketaotlus ebaõnnestus: $error';
   }
 
   @override
-  String get statusSigningUp => 'Registreerimine...';
+  String get statusRequestSuccess => 'Tõlketaotlus on esitatud.';
 
   @override
   String get stopPractice => 'Lõpeta harjutamine';
 
   @override
-  String get studyComplete => 'Õppimine lõpetatud';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Valitud materjal ei toeta praegust õppekeelt ($targetLang), seega ei saa seda kohalikult salvestada. Kas soovid tõlget taotleda?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Õppimisajalugu ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Õppekeel pole toetatud';
 
   @override
   String get styleFormal => 'Formaalne';
@@ -1041,22 +913,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get styleSlang => 'Släng';
 
   @override
-  String get subject => 'Teema:';
-
-  @override
   String get swapLanguages => 'Vaheta keeled';
 
   @override
-  String get switchToAi => 'Lülitu AI-režiimile';
-
-  @override
-  String get switchToPartner => 'Lülitu partnerrežiimile';
-
-  @override
   String get syncingData => 'Andmete sünkroniseerimine...';
-
-  @override
-  String get tabConversation => 'Vestlus';
 
   @override
   String tabReview(int count) {
@@ -1119,6 +979,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tooltipSearch => 'Otsing';
 
   @override
+  String get tooltipSettingsConfirm => 'Kinnita seaded';
+
+  @override
   String get tooltipSpeaking => 'Rääkimine';
 
   @override
@@ -1131,6 +994,9 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get translate => 'Tõlgi';
+
+  @override
+  String get translateNow => 'Tõlgi kohe';
 
   @override
   String get translating => 'Tõlgin...';
@@ -1148,6 +1014,9 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Tõlkekeel';
+
+  @override
   String get translationLimitExceeded => 'Tõlkelimiit on ületatud';
 
   @override
@@ -1161,16 +1030,25 @@ class AppLocalizationsEt extends AppLocalizations {
   String get translationRefilled => 'Tõlgete arv on suurendatud 5 võrra!';
 
   @override
+  String get translationResult => 'Tõlketulemus';
+
+  @override
   String get translationResultHint => 'Tõlke tulemus - muudetav';
 
   @override
   String get tryAgain => 'Proovi uuesti';
 
   @override
-  String get tutorialAiChatDesc => 'Harjuta AI personažiga reaalset vestlust.';
+  String get ttsInstallGuide =>
+      'Installi vastavad keeleandmed Androidi seadetes > Google\'i kõnesünteesis.';
 
   @override
-  String get tutorialAiChatTitle => 'AI vestlus';
+  String get ttsMissing =>
+      'Selle keele kõnesünteesimootor pole sinu seadmesse installitud.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Seadme vaikeseaded ei toeta selle keele kõnet.';
 
   @override
   String get tutorialContextDesc =>
@@ -1284,7 +1162,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get typeExclamation => 'Hüüdlause';
 
   @override
+  String get typeIdiom => 'Idioom';
+
+  @override
   String get typeImperative => 'Käskiv lause';
+
+  @override
+  String get typeProverb => 'Kõnekäänd/vanasõna';
 
   @override
   String get typeQuestion => 'Küsilause';
@@ -1299,6 +1183,11 @@ class AppLocalizationsEt extends AppLocalizations {
   String get useExistingText => 'Kasuta olemasolevat teksti';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Vaata veebijuhendit';
 
   @override
@@ -1306,6 +1195,16 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Vaata reklaami ja täida (+5 korda)';
+
+  @override
+  String get welcomeButton => 'Alusta';
+
+  @override
+  String get welcomeDesc =>
+      'Tere tulemast Talkiesse! Toetame 100% terviklikkusega kõiki 80+ keelt üle maailma ning pakume täiuslikku õppimiskogemust uue esmaklassilise 3D-disaini ja optimeeritud jõudlusega.';
+
+  @override
+  String get welcomeTitle => 'Tere tulemast Talkiesse!';
 
   @override
   String get word => 'Sõna';
@@ -1322,110 +1221,4 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Sinu hääldus';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Seadme vaikeseaded ei toeta selle keele kõnet.';
-
-  @override
-  String get homeTab => 'Tõlge';
-
-  @override
-  String get welcomeTitle => 'Tere tulemast Talkiesse!';
-
-  @override
-  String get welcomeDesc =>
-      'Tere tulemast Talkiesse! Toetame 100% terviklikkusega kõiki 80+ keelt üle maailma ning pakume täiuslikku õppimiskogemust uue esmaklassilise 3D-disaini ja optimeeritud jõudlusega.';
-
-  @override
-  String get welcomeButton => 'Alusta';
-
-  @override
-  String get labelDetails => 'Detailseaded';
-
-  @override
-  String get translationResult => 'Tõlketulemus';
-
-  @override
-  String get inputContent => 'Sisestatud sisu';
-
-  @override
-  String get translateNow => 'Tõlgi kohe';
-
-  @override
-  String get tooltipSettingsConfirm => 'Kinnita seaded';
-
-  @override
-  String get hintNoteExample => 'Nt: kontekst, homonüümid jne';
-
-  @override
-  String get hintTagExample => 'Nt: äri, reisimine...';
-
-  @override
-  String get addNew => 'Lisa uus';
-
-  @override
-  String get newNotebookTitle => 'Uue märkmiku nimi';
-
-  @override
-  String get enterNameHint => 'Sisesta nimi';
-
-  @override
-  String get add => 'Lisa';
-
-  @override
-  String get openSettings => 'Ava seaded';
-
-  @override
-  String get helpNotebook => 'Vali kaust, kuhu tõlgitud tulemused salvestada.';
-
-  @override
-  String get helpNote => 'Kirjuta üles sõna tähendus, näited või olukorrad.';
-
-  @override
-  String get helpTag => 'Sisesta märksõnad, et hiljem liigitada või otsida.';
-
-  @override
-  String get requestTranslation => 'Taotle tõlget';
-
-  @override
-  String get statusRequestSuccess => 'Tõlketaotlus on esitatud.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Tõlketaotlus ebaõnnestus: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Õppekeel pole toetatud';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Valitud materjal ei toeta praegust õppekeelt ($targetLang), seega ei saa seda kohalikult salvestada. Kas soovid tõlget taotleda?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Seadista keel';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Määra esmalt oma keel ja õpitav keel menüüs > Keeleseaded.';
-
-  @override
-  String get quickStartStep2Title => '2. Põhivool';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Koosta oma õppekaardid järjekorras: sisend (mikrofon/klaviatuur) -> tõlkimine -> salvestamine.';
-
-  @override
-  String get quickStartStep3Title => '3. Režiimide kasutamine';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Harjuta vestluse kaudu ja harjuta hääldust, vaadates teksti ja hääldades seda otse vahekaardil Hääldusharjutus.';
-
-  @override
-  String get noteGuidance =>
-      'Kuhu sisestate täpsemaks tõlkimiseks täiendavaid üksikasju';
 }

@@ -9,53 +9,20 @@ class AppLocalizationsKm extends AppLocalizations {
   AppLocalizationsKm([String locale = 'km']) : super(locale);
 
   @override
-  String get basicWords => 'ឃ្លាំងផ្ទុកពាក្យជាមូលដ្ឋាន';
-
-  @override
-  String get inputLanguage => 'ភាសាបញ្ចូល';
-
-  @override
-  String get translationLanguage => 'ភាសា​បកប្រែ';
-
-  @override
-  String get simplifiedGuidance =>
-      'បម្លែងការសន្ទនាប្រចាំថ្ងៃទៅជាភាសាបរទេសភ្លាមៗ! Talkie នឹងកត់ត្រាជីវិតភាសារបស់អ្នក។';
-
-  @override
-  String get noDataForLanguage =>
-      'មិន​មាន​ឯកសារ​សិក្សា​សម្រាប់​ភាសា​ដែល​អ្នក​បាន​ជ្រើសរើស​នៅ​ក្នុង​មូលដ្ឋាន​ទិន្នន័យ​ឡើយ។ សូម​ទាញ​យក​ឯកសារ ឬ​ជ្រើសរើស​ភាសា​ផ្សេង​ទៀត។';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'បោះបង់';
-
-  @override
   String get accuracy => 'ភាពត្រឹមត្រូវ';
-
-  @override
-  String get ttsMissing =>
-      'ម៉ាស៊ីនសំឡេងសម្រាប់ភាសានេះ មិនត្រូវបានដំឡើងនៅលើឧបករណ៍របស់អ្នកទេ។';
-
-  @override
-  String get ttsInstallGuide =>
-      'សូមដំឡើងទិន្នន័យភាសានេះនៅក្នុង កំណត់ត្រា Android > Google TTS ។';
 
   @override
   String get adLoading =>
       'កំពុងផ្ទុកការផ្សាយពាណិជ្ជកម្ម។ សូមព្យាយាមម្ដងទៀតនៅពេលក្រោយ។';
 
   @override
-  String get addNewSubject => 'បន្ថែមឈ្មោះថ្មី';
+  String get add => 'បន្ថែម';
 
   @override
-  String get addParticipant => 'បន្ថែមអ្នកចូលរួម';
+  String get addNew => 'បន្ថែម​ថ្មី';
+
+  @override
+  String get addNewSubject => 'បន្ថែមឈ្មោះថ្មី';
 
   @override
   String get addTagHint => 'បន្ថែមស្លាក...';
@@ -88,6 +55,12 @@ class AppLocalizationsKm extends AppLocalizations {
   String get basicWordRepository => 'ឃ្លាំងផ្ទុកពាក្យជាមូលដ្ឋាន';
 
   @override
+  String get basicWords => 'ឃ្លាំងផ្ទុកពាក្យជាមូលដ្ឋាន';
+
+  @override
+  String get cancel => 'បោះបង់';
+
+  @override
   String get caseObject => 'Objective';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get caseSubject => 'Subjective';
 
   @override
-  String get chatAiChat => 'ជជែក';
-
-  @override
-  String get chatAllConversations => 'ការសន្ទនាទាំងអស់';
-
-  @override
-  String get chatChoosePersona => 'ជ្រើសរើស Persona';
-
-  @override
-  String get chatEndMessage => 'តើអ្នកប្រាកដថាចង់បញ្ចប់ការសន្ទនា?';
-
-  @override
-  String get chatEndTitle => 'បញ្ចប់ និងរក្សាទុកការសន្ទនា';
-
-  @override
-  String chatFailed(Object error) {
-    return 'ការជជែកបានបរាជ័យ៖ $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'ដកស្រង់ចេញពីការសន្ទនា ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'ប្រវត្តិជជែក';
-
-  @override
-  String get chatNew => 'ជជែកថ្មី';
-
-  @override
-  String get chatNewChat => 'ជជែកថ្មី';
-
-  @override
-  String get chatNoConversations => 'មិនទាន់មានការសន្ទនា';
-
-  @override
-  String get chatSearchHint => 'ស្វែងរក​តាម​ចំណងជើង​ការ​ສົន្ទនា...';
-
-  @override
-  String get chatNoteSearchHint => 'ស្វែងរកតាមកំណត់ចំណាំ...';
-
-  @override
-  String get chatSaveAndExit => 'រក្សាទុក និងចាកចេញ';
-
-  @override
-  String get chatStartNewPrompt => 'ចាប់ផ្ដើមការសន្ទនាថ្មីដើម្បីអនុវត្ត!';
-
-  @override
-  String get chatTypeHint => 'បញ្ចូលសារ...';
-
-  @override
-  String get chatUntitled => 'ការសន្ទនាគ្មានចំណងជើង';
-
-  @override
   String get checking => 'កំពុងពិនិត្យ...';
 
   @override
@@ -168,14 +86,6 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get confirmDelete => 'តើអ្នកប្រាកដថាចង់លុបកំណត់ត្រាសិក្សានេះទេ?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'តើ​អ្នក​ប្រាកដ​ថា​អ្នក​ចង់​លុប​ការ​សន្ទនា​នេះ​?\nអ្នក​នឹង​មិន​អាច​យក​វា​មក​វិញ​បាន​ទេ។';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'តើអ្នកប្រាកដថាអ្នកចង់លុបអ្នកចូលរួមនេះ?';
 
   @override
   String get contextTagHint =>
@@ -215,23 +125,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get deleteRecord => 'លុបកំណត់ត្រា';
 
   @override
-  String get dialogueQuestDesc =>
-      'អនុវត្តការសន្ទនា តាមរយៈការធ្វើសេណារីយ៉ូ។ ជ្រើសរើស និងនិយាយចម្លើយសមស្រប។';
-
-  @override
-  String get dialogueQuestTitle => 'ដំណើរស្វែងរកការសន្ទនា';
-
-  @override
-  String get disambiguationPrompt => 'តើអ្នកចង់បកប្រែជាអត្ថន័យអ្វី?';
-
-  @override
-  String get disambiguationTitle => 'ជ្រើសរើសអត្ថន័យ';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'មិនមានគណនីមែនទេ?';
-
-  @override
-  String get editParticipant => 'កែសម្រួលអ្នកចូលរួម';
 
   @override
   String get email => 'អ៊ីមែល';
@@ -239,6 +136,9 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'អ៊ីមែលនេះត្រូវបានប្រើរួចហើយ។ សូមចូល ឬសាកល្បងការសង្គ្រោះពាក្យសម្ងាត់។';
+
+  @override
+  String get enterNameHint => 'បញ្ចូល​ឈ្មោះ';
 
   @override
   String get enterNewSubjectName => 'បញ្ចូលឈ្មោះថ្មី';
@@ -278,6 +178,9 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get errors => 'កំហុស៖';
+
+  @override
+  String get extractedText => 'អត្ថបទ​ដែល​បាន​ស្គាល់';
 
   @override
   String get female => 'ស្រី';
@@ -337,12 +240,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get gender => 'ភេទ';
 
   @override
-  String get labelFilterMaterial => 'សៀវភៅណែនាំ';
-
-  @override
-  String get labelFilterTag => 'ស្លាក';
-
-  @override
   String get generalTags => 'ស្លាកទូទៅ';
 
   @override
@@ -355,19 +252,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get googleContinue => 'បន្តជាមួយ Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'នាំចូលសំណុំការសន្ទនាទាំងមូលជាឯកសារ JSON ។';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• រចនាសម្ព័ន្ធ JSON៖ ប្រើអារេ `dialogues` ជំនួសឱ្យ `entries`\n• ការស្ដារឡើងវិញដោយស្វ័យប្រវត្តិ៖ ចំណងជើងនៃការសន្ទនា Persona និងលំដាប់សារត្រូវបានស្ដារឡើងវិញ។\n• ទីតាំង៖ ការសន្ទនាដែលបាននាំចូលនឹងបង្ហាញនៅក្នុងផ្ទាំង \'កំណត់ត្រា\' នៃរបៀប AI Chat ។';
-
-  @override
   String get helpJsonDesc =>
       'ដើម្បីនាំចូលសម្ភារៈសិក្សាទៅជាឯកសារ JSON សម្រាប់ប្រើក្នុងរបៀប 3 សូមអនុវត្តតាមទម្រង់ខាងក្រោម៖';
-
-  @override
-  String get helpJsonTypeDialogue => 'កិច្ចសន្ទនា';
 
   @override
   String get helpJsonTypeSentence => 'ប្រយោគ';
@@ -400,12 +286,11 @@ class AppLocalizationsKm extends AppLocalizations {
       '• ជ្រើសរើសសម្ភារៈ៖ ជ្រើសរើសបណ្ណាល័យដែលត្រូវរៀន\n• កំណត់ចន្លោះពេល៖ លៃតម្រូវពេលវេលារង់ចាំរវាងប្រយោគជាមួយប៊ូតុង [-] [+] (3 វិនាទី ដល់ 60 វិនាទី)\n• ចាប់ផ្ដើម/បញ្ឈប់៖ គ្រប់គ្រងវគ្គ Shadowing\n• និយាយ៖ ស្ដាប់សំឡេង និងនិយាយឡើងវិញ\n• មតិកែលម្អ៖ ពិន្ទុភាពត្រឹមត្រូវ (0-100) និងការបង្ហាញពណ៌\n• លក្ខខណ្ឌស្វែងរក៖ ត្រងគោលដៅអនុវត្តតាមស្លាក សារធាតុថ្មីៗ ពាក្យចាប់ផ្ដើម';
 
   @override
-  String get helpModeChatDesc =>
-      'ហ្វឹកហាត់​ការ​សន្ទនា​ជាក់ស្តែង​ដោយ​ការ​ជជែក​ជាមួយ AI persona​។';
+  String get helpNote => 'សរសេរ​អត្ថន័យ ឧទាហរណ៍ ឬ​ស្ថានភាព​នៃ​ពាក្យ​ដោយ​សេរី​។';
 
   @override
-  String get helpModeChatDetails =>
-      '• ជជែក AI៖ ហាត់សន្ទនាជាក់ស្តែងជាមួយមនុស្ស តាមរយៈម៉ឺនុយ \'ជជែក\' នៅក្នុងរបារផ្ទាំងខាងក្រោម\n• ការកំណត់បុគ្គល៖ កំណត់ភេទ ឈ្មោះ និងលេខកូដភាសារបស់ភាគីម្ខាងទៀតដោយសេរី\n• ស្ថានភាព GPS៖ ណែនាំប្រធានបទសន្ទនាដែលសាកសមនឹងទីកន្លែង ដោយការស្គាល់ទីតាំងបច្ចុប្បន្នរបស់ខ្ញុំ\n• ពីរភាសា៖ ចម្លើយរបស់ AI ត្រូវបានបង្ហាញជាមួយនឹងការបកប្រែ ដើម្បីបង្កើនប្រសិទ្ធភាពសិក្សា\n• ការគ្រប់គ្រងកំណត់ត្រា៖ ត្រងប្រវត្តិជជែកកន្លងមក និងរក្សាទុកសារជាក់លាក់ជាសម្ភារៈសិក្សាកំឡុងពេលជជែក';
+  String get helpNotebook =>
+      'ជ្រើសរើស​ថត​ដើម្បី​រក្សា​ទុក​លទ្ធផល​ដែល​បាន​បកប្រែ។';
 
   @override
   String get helpTabJson => 'ទម្រង់ JSON';
@@ -420,6 +305,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get helpTabTour => 'សាកល្បង';
 
   @override
+  String get helpTag =>
+      'បញ្ចូល​ពាក្យ​គន្លឹះ​សម្រាប់​ចាត់ថ្នាក់ ឬ​ស្វែងរក​នៅ​ពេល​ក្រោយ​។';
+
+  @override
   String get helpTitle => 'ជំនួយ & មគ្គុទ្ទេសក៍';
 
   @override
@@ -428,6 +317,16 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get hide => 'លាក់';
+
+  @override
+  String get hintNoteExample =>
+      'ឧទាហរណ៍៖ ព័ត៌មានលម្អិតអំពីបរិបទ, ពាក្យដូចគ្នា...';
+
+  @override
+  String get hintTagExample => 'ឧទាហរណ៍៖ អាជីវកម្ម, ដំណើរកំសាន្ត...';
+
+  @override
+  String get homeTab => 'បកប្រែ';
 
   @override
   String importAdded(int count) {
@@ -440,23 +339,6 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'ឯកសារដែលមានចំណងជើងដូចគ្នានេះមានរួចហើយ។ សូម​ប្ដូរ​ចំណង​ជើង​ហើយ​ព្យាយាម​ម្ដង​ទៀត​។';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -472,6 +354,11 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'បាន​នាំចូល $files ឯកសារ, $entries ធាតុ​។';
+  }
+
+  @override
   String get importJsonFile => 'នាំចូលឯកសារ JSON';
 
   @override
@@ -483,12 +370,30 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'ឯកសារ JSON តែ​មួយ';
+
+  @override
+  String get importSourceFolder => 'ថត (រចនាសម្ព័ន្ធ​បណ្ណាល័យ​តាម​ភាសា)';
+
+  @override
+  String get importSourceTitle => 'ជ្រើសរើស​ប្រភព​នាំចូល';
+
+  @override
+  String get importSourceZip => 'ឯកសារ ZIP (ថត​ដែល​បាន​បង្ហាប់)';
+
+  @override
   String importTotal(int count) {
     return 'សរុប៖ $countធាតុ';
   }
 
   @override
   String get importing => 'កំពុងនាំចូល...';
+
+  @override
+  String get inputContent => 'បញ្ចូល​ខ្លឹមសារ';
+
+  @override
+  String get inputLanguage => 'ភាសាបញ្ចូល';
 
   @override
   String get inputModeTitle => 'បញ្ចូល';
@@ -505,19 +410,22 @@ class AppLocalizationsKm extends AppLocalizations {
   String get kakaoContinue => 'បន្តជាមួយ Kakao';
 
   @override
-  String get labelLangCode => 'កូដភាសា (ឧ. en-US, ko-KR)';
+  String get labelDetails => 'ការកំណត់កម្រិតខ្ពស់';
 
   @override
-  String get labelName => 'ឈ្មោះ';
+  String get labelFilterMaterial => 'សៀវភៅណែនាំ';
+
+  @override
+  String get labelFilterTag => 'ស្លាក';
+
+  @override
+  String get labelLangCode => 'កូដភាសា (ឧ. en-US, ko-KR)';
 
   @override
   String get labelNote => 'កំណត់ចំណាំ';
 
   @override
   String get labelPOS => 'ផ្នែក​នៃ​ការ​និយាយ';
-
-  @override
-  String get labelRole => 'តួនាទី';
 
   @override
   String get labelSentence => 'ប្រយោគ';
@@ -568,9 +476,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get listening => 'កំពុងស្ដាប់...';
 
   @override
-  String get loadingParticipants => 'កំពុងផ្ទុកអ្នកចូលរួម...';
-
-  @override
   String get location => 'ទីតាំង';
 
   @override
@@ -590,9 +495,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get male => 'ប្រុស';
 
   @override
-  String get manageParticipants => 'គ្រប់គ្រងអ្នកចូលរួម';
-
-  @override
   String get manual => 'បញ្ចូលដោយដៃ';
 
   @override
@@ -600,9 +502,6 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get materialInfo => 'ព័ត៌មានសម្ភារៈ';
-
-  @override
-  String get me => 'ខ្ញុំ';
 
   @override
   String get menuDeviceImport => 'នាំចូលសម្ភារៈពីឧបករណ៍';
@@ -670,27 +569,20 @@ class AppLocalizationsKm extends AppLocalizations {
   String get neutral => 'អព្យាក្រឹត';
 
   @override
+  String get newNotebookTitle => 'ឈ្មោះ​សៀវភៅ​ថ្មី';
+
+  @override
   String get newSubjectName => 'ឈ្មោះប្រធានបទ/ប្រយោគថ្មី';
 
   @override
   String get next => 'បន្ទាប់';
 
   @override
-  String get noDialogueHistory => 'មិនមានប្រវត្តិការសន្ទនាទេ។';
-
-  @override
-  String get noInternetWarningMic =>
-      'មិនមានការតភ្ជាប់អ៊ីនធឺណិតទេ។ ការ​ស្គាល់​សំឡេង​អាច​នឹង​មិន​ដំណើរការ​នៅ​ក្រៅ​បណ្ដាញ​ទេ។';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'មិនមានការតភ្ជាប់អ៊ីនធឺណិតទេ។ មុខងារបកប្រែមិនអាចប្រើបាននៅពេលគ្មានអ៊ីនធឺណិត។ សូមប្រើមុខងាររំលឹកមេរៀន។';
+  String get noDataForLanguage =>
+      'មិន​មាន​ឯកសារ​សិក្សា​សម្រាប់​ភាសា​ដែល​អ្នក​បាន​ជ្រើសរើស​នៅ​ក្នុង​មូលដ្ឋាន​ទិន្នន័យ​ឡើយ។ សូម​ទាញ​យក​ឯកសារ ឬ​ជ្រើសរើស​ភាសា​ផ្សេង​ទៀត។';
 
   @override
   String get noMaterialsInCategory => 'មិនមានឯកសារនៅក្នុងប្រភេទនេះទេ។';
-
-  @override
-  String get noParticipantsFound => 'រក​មិន​ឃើញ​អ្នក​ចូល​រួម​ទេ។';
 
   @override
   String get noRecords => 'មិនមានកំណត់ត្រាសិក្សាសម្រាប់ភាសាដែលបានជ្រើសរើសទេ';
@@ -711,6 +603,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get notSelected => '- មិនបានជ្រើសរើស -';
 
   @override
+  String get noteGuidance =>
+      'កន្លែងដែលអ្នកបញ្ចូលព័ត៌មានលម្អិតបន្ថែមสำหรับการបកប្រែដែលកាន់តែត្រឹមត្រូវ';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'សូមពិនិត្យមើលការតភ្ជាប់អ៊ីនធឺណិតរបស់អ្នក ឬព្យាយាមម្តងទៀតនៅពេលក្រោយ។';
 
@@ -721,16 +617,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'មិនមានឯកសារទេ។';
 
   @override
-  String get participantDeleted => 'អ្នកចូលរួមត្រូវបានលុប';
-
-  @override
-  String get participantRename => 'ប្តូរឈ្មោះអ្នកចូលរួម';
-
-  @override
-  String get partner => 'ដៃគូ';
-
-  @override
-  String get partnerMode => 'របៀបដៃគូ';
+  String get openSettings => 'បើក​ការកំណត់';
 
   @override
   String get password => 'ពាក្យសម្ងាត់';
@@ -742,13 +629,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get perfect => 'ល្អឥតខ្ចោះ!';
 
   @override
-  String get personaFriend => 'មិត្តភក្ដិក្នុងស្រុក';
-
-  @override
-  String get personaGuide => 'មគ្គុទ្ទេសក៍ទេសចរណ៍';
-
-  @override
-  String get personaTeacher => 'គ្រូបង្រៀនភាសាអង់គ្លេស';
+  String get pickGallery => 'ជ្រើសរើស​ពី​វិចិត្រសាល';
 
   @override
   String get playAgain => 'លេងម្ដងទៀត';
@@ -768,6 +649,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get posAdverb => 'កិរិយាវិសេសន៍';
 
   @override
+  String get posArticle => 'មាត្រា';
+
+  @override
   String get posConjunction => 'សន្ធាន';
 
   @override
@@ -775,6 +659,9 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get posNoun => 'នាម';
+
+  @override
+  String get posParticle => 'ភាគល្អិត';
 
   @override
   String get posPreposition => 'បុព្វបទ/ធ្នាក់';
@@ -792,9 +679,33 @@ class AppLocalizationsKm extends AppLocalizations {
   String get practiceWordsOnly => 'អនុវត្តតែពាក្យ';
 
   @override
+  String get processing => 'កំពុង​ដំណើរការ...';
+
+  @override
   String progress(int current, int total) {
     return 'វឌ្ឍនភាព៖ $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'ដំបូង​កំណត់​ភាសា​របស់​អ្នក និង​ភាសា​ដែល​អ្នក​ចង់​រៀន​នៅ ម៉ឺនុយ > កំណត់​ភាសា។';
+
+  @override
+  String get quickStartStep1Title => '1. កំណត់ភាសា';
+
+  @override
+  String get quickStartStep2Desc =>
+      'បង្កើត​កាត​សិក្សា​ផ្ទាល់​ខ្លួន​ដោយ​ធ្វើ​តាម​លំដាប់​លំដោយ​នេះ៖ បញ្ចូល (មីក្រូហ្វូន/ក្ដារចុច) -> បកប្រែ -> រក្សាទុក។';
+
+  @override
+  String get quickStartStep2Title => '2. លំហូរ​មូលដ្ឋាន';
+
+  @override
+  String get quickStartStep3Desc =>
+      'អនុវត្ត​ដោយ​ការ​ជជែក និង​អនុវត្ត​ការ​បញ្ចេញ​សំឡេង​ដោយ​មើល​អត្ថបទ​នៅ​ក្នុង​ផ្ទាំង​អនុវត្ត​ការ​បញ្ចេញ​សំឡេង​ផ្ទាល់​ខ្លួន​អ្នក។';
+
+  @override
+  String get quickStartStep3Title => '3. ប្រើ​របៀប';
 
   @override
   String recentNItems(int count) {
@@ -819,6 +730,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get refresh => 'ធ្វើឱ្យស្រស់';
 
   @override
+  String get requestTranslation => 'ស្នើសុំការបកប្រែ';
+
+  @override
   String get reset => 'កំណត់ឡើងវិញ';
 
   @override
@@ -839,16 +753,13 @@ class AppLocalizationsKm extends AppLocalizations {
   String get reviewModeTitle => 'ពិនិត្យ';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'ភាគីទីបី';
-
-  @override
-  String get roleUser => 'អ្នកប្រើប្រាស់';
-
-  @override
   String get save => 'រក្សាទុក';
+
+  @override
+  String get saveAsSentence => 'រក្សាទុក​ជា​ប្រយោគ';
+
+  @override
+  String get saveAsWord => 'រក្សាទុក​ជា​ពាក្យ';
 
   @override
   String get saveData => 'រក្សាទុកទិន្នន័យ';
@@ -859,6 +770,9 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'រក្សាទុក​ទៅ​ក្នុង​ប្រវត្តិ​ស្កេន';
+
+  @override
   String get saveTranslationsFromSearch =>
       'ព្យាយាមរក្សាទុកការបកប្រែពីរបៀបស្វែងរក';
 
@@ -867,6 +781,12 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get saving => 'កំពុងរក្សាទុក...';
+
+  @override
+  String get scanInstructions => 'ជ្រើសរើស​រូបភាព​ដើម្បី​ស្កេន';
+
+  @override
+  String get scanLabel => 'ស្កេន';
 
   @override
   String score(String score) {
@@ -913,16 +833,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get selectPOS => 'ជ្រើសរើសផ្នែកនៃសុន្ទរកថា';
 
   @override
-  String get selectParticipants => 'ជ្រើសរើសអ្នកចូលរួម';
-
-  @override
-  String get selectSentenceType => 'ជ្រើសរើសប្រភេទប្រយោគ';
-
-  @override
   String get selectStudyMaterial => 'ជ្រើសរើសសម្ភារៈសិក្សា';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'ប្រយោគ';
@@ -931,43 +842,14 @@ class AppLocalizationsKm extends AppLocalizations {
   String get signUp => 'ចុះឈ្មោះ';
 
   @override
-  String get similarTextFound => 'បានរកឃើញអត្ថបទស្រដៀងគ្នា';
-
-  @override
-  String get skip => 'រំលង';
-
-  @override
-  String get source => 'ប្រភព៖';
-
-  @override
-  String get sourceLanguage => 'ភាសាដើម';
+  String get simplifiedGuidance =>
+      'បម្លែងការសន្ទនាប្រចាំថ្ងៃទៅជាភាសាបរទេសភ្លាមៗ! Talkie នឹងកត់ត្រាជីវិតភាសារបស់អ្នក។';
 
   @override
   String get sourceLanguageLabel => 'ភាសារបស់ខ្ញុំ (Source)';
 
   @override
-  String get speakNow => 'និយាយឥឡូវនេះ!';
-
-  @override
-  String get speaker => 'វាគ្មិន';
-
-  @override
-  String get speakerSelect => 'ជ្រើសរើសអ្នកនិយាយ';
-
-  @override
-  String get speakingPractice => 'អនុវត្តការនិយាយ';
-
-  @override
-  String get startChat => 'ចាប់ផ្តើមការសន្ទនា';
-
-  @override
-  String get startPractice => 'ចាប់ផ្ដើមអនុវត្ត';
-
-  @override
   String get startTutorial => 'ចាប់ផ្ដើមមេរៀនណែនាំ';
-
-  @override
-  String get startWarning => 'ការព្រមាន';
 
   @override
   String get startsWith => 'ពាក្យចាប់ផ្ដើម';
@@ -977,28 +859,22 @@ class AppLocalizationsKm extends AppLocalizations {
       'សូម​ពិនិត្យ​អ៊ីមែល​របស់​អ្នក​ដើម្បី​បញ្ចប់​ការ​ផ្ទៀងផ្ទាត់​។';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'កំពុងទាញយក: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'ការនាំចូល​បរាជ័យ: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return 'ការនាំចូល $name បានបញ្ចប់';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'ការចូលត្រូវបានលុបចោល។';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'ការចូល​បរាជ័យ: $error';
   }
 
@@ -1009,23 +885,23 @@ class AppLocalizationsKm extends AppLocalizations {
   String get statusLogoutSuccess => 'បានចាកចេញ។';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'ការចុះឈ្មោះបរាជ័យ: $error';
+  String statusRequestFailed(String error) {
+    return 'សំណើបកប្រែបរាជ័យ៖ $error';
   }
 
   @override
-  String get statusSigningUp => 'កំពុងចុះឈ្មោះ...';
+  String get statusRequestSuccess => 'សំណើបកប្រែបានជោគជ័យ។';
 
   @override
   String get stopPractice => 'បញ្ឈប់ការអនុវត្ត';
 
   @override
-  String get studyComplete => 'ការសិក្សាបានបញ្ចប់';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'ឯកសារដែលអ្នកបានជ្រើសរើសមិនគាំទ្រភាសាសិក្សាដែលបានកំណត់បច្ចុប្បន្ន ($targetLang) ដូច្នេះវាមិនអាចរក្សាទុកក្នុងមូលដ្ឋានបានទេ។ តើអ្នកចង់ស្នើសុំការបកប្រែទេ?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'កំណត់ត្រាសិក្សា ($count)';
-  }
+  String get studyLangNotFoundTitle => 'ភាសាសិក្សាមិនគាំទ្រ';
 
   @override
   String get styleFormal => 'ផ្លូវការ';
@@ -1040,22 +916,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get styleSlang => 'ពាក្យស្លោក';
 
   @override
-  String get subject => 'ប្រធានបទ៖';
-
-  @override
   String get swapLanguages => 'ប្តូរភាសា';
 
   @override
-  String get switchToAi => 'ប្តូរទៅរបៀប AI';
-
-  @override
-  String get switchToPartner => 'ប្តូរទៅរបៀបដៃគូ';
-
-  @override
   String get syncingData => 'កំពុងធ្វើសមកាលកម្មទិន្នន័យ...';
-
-  @override
-  String get tabConversation => 'ការសន្ទនា';
 
   @override
   String tabReview(int count) {
@@ -1118,6 +982,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tooltipSearch => 'ស្វែងរក';
 
   @override
+  String get tooltipSettingsConfirm => 'យល់ព្រម';
+
+  @override
   String get tooltipSpeaking => 'និយាយ';
 
   @override
@@ -1130,6 +997,9 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get translate => 'បកប្រែ';
+
+  @override
+  String get translateNow => 'បកប្រែ​ឥឡូវ';
 
   @override
   String get translating => 'កំពុងបកប្រែ...';
@@ -1146,6 +1016,9 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'ភាសា​បកប្រែ';
+
+  @override
   String get translationLimitExceeded => 'លើសពីកម្រិតកំណត់នៃការបកប្រែ';
 
   @override
@@ -1160,17 +1033,25 @@ class AppLocalizationsKm extends AppLocalizations {
       'ចំនួននៃការបកប្រែត្រូវបានបញ្ចូលទឹកប្រាក់ 5 ដង!';
 
   @override
+  String get translationResult => 'លទ្ធផល​ការបកប្រែ';
+
+  @override
   String get translationResultHint => 'លទ្ធផលបកប្រែ - អាចកែប្រែបាន';
 
   @override
   String get tryAgain => 'ព្យាយាមម្ដងទៀត';
 
   @override
-  String get tutorialAiChatDesc =>
-      'អនុវត្តការសន្ទនាក្នុងជីវិតជាក់ស្ដែងជាមួយ AI Persona ។';
+  String get ttsInstallGuide =>
+      'សូមដំឡើងទិន្នន័យភាសានេះនៅក្នុង កំណត់ត្រា Android > Google TTS ។';
 
   @override
-  String get tutorialAiChatTitle => 'ជជែក AI';
+  String get ttsMissing =>
+      'ម៉ាស៊ីនសំឡេងសម្រាប់ភាសានេះ មិនត្រូវបានដំឡើងនៅលើឧបករណ៍របស់អ្នកទេ។';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ឧបករណ៍​នេះ​មិន​គាំទ្រ​ការ​បញ្ចេញ​សំឡេង​សម្រាប់​ភាសា​នេះ​តាម​លំនាំដើម​ទេ។';
 
   @override
   String get tutorialContextDesc =>
@@ -1285,7 +1166,13 @@ class AppLocalizationsKm extends AppLocalizations {
   String get typeExclamation => 'ប្រយោគឧទាន';
 
   @override
+  String get typeIdiom => 'ឃ្លា​សុភាសិត';
+
+  @override
   String get typeImperative => 'ប្រយោគបង្គាប់';
+
+  @override
+  String get typeProverb => 'សុភាសិត/កន្សោម';
 
   @override
   String get typeQuestion => 'ប្រយោគសួរ';
@@ -1300,6 +1187,11 @@ class AppLocalizationsKm extends AppLocalizations {
   String get useExistingText => 'ប្រើអត្ថបទដែលមានស្រាប់';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'មើលមគ្គុទ្ទេសក៍តាមអ៊ីនធឺណិត';
 
   @override
@@ -1308,6 +1200,16 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get watchAdAndRefill =>
       'មើលការផ្សាយពាណិជ្ជកម្ម និងបញ្ចូលទឹកប្រាក់ (+5 ដង)';
+
+  @override
+  String get welcomeButton => 'ចាប់ផ្តើម';
+
+  @override
+  String get welcomeDesc =>
+      'សូមស្វាគមន៍មកកាន់ Talkie! យើងគាំទ្រគ្រប់ភាសាច្រើនជាង 80 ជុំវិញពិភពលោក ជាមួយនឹងភាពត្រឹមត្រូវ 100% រួមជាមួយការរចនា 3D កម្រិតខ្ពស់ថ្មី និងដំណើរការល្អប្រសើរដែលផ្តល់នូវបទពិសោធន៍សិក្សាដ៏ល្អឥតខ្ចោះ។';
+
+  @override
+  String get welcomeTitle => 'សូមស្វាគមន៍មកកាន់ Talkie!';
 
   @override
   String get word => 'ពាក្យ';
@@ -1324,113 +1226,4 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ការបញ្ចេញសំឡេងរបស់អ្នក';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'ឧបករណ៍​នេះ​មិន​គាំទ្រ​ការ​បញ្ចេញ​សំឡេង​សម្រាប់​ភាសា​នេះ​តាម​លំនាំដើម​ទេ។';
-
-  @override
-  String get homeTab => 'បកប្រែ';
-
-  @override
-  String get welcomeTitle => 'សូមស្វាគមន៍មកកាន់ Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'សូមស្វាគមន៍មកកាន់ Talkie! យើងគាំទ្រគ្រប់ភាសាច្រើនជាង 80 ជុំវិញពិភពលោក ជាមួយនឹងភាពត្រឹមត្រូវ 100% រួមជាមួយការរចនា 3D កម្រិតខ្ពស់ថ្មី និងដំណើរការល្អប្រសើរដែលផ្តល់នូវបទពិសោធន៍សិក្សាដ៏ល្អឥតខ្ចោះ។';
-
-  @override
-  String get welcomeButton => 'ចាប់ផ្តើម';
-
-  @override
-  String get labelDetails => 'ការកំណត់កម្រិតខ្ពស់';
-
-  @override
-  String get translationResult => 'លទ្ធផល​ការបកប្រែ';
-
-  @override
-  String get inputContent => 'បញ្ចូល​ខ្លឹមសារ';
-
-  @override
-  String get translateNow => 'បកប្រែ​ឥឡូវ';
-
-  @override
-  String get tooltipSettingsConfirm => 'យល់ព្រម';
-
-  @override
-  String get hintNoteExample =>
-      'ឧទាហរណ៍៖ ព័ត៌មានលម្អិតអំពីបរិបទ, ពាក្យដូចគ្នា...';
-
-  @override
-  String get hintTagExample => 'ឧទាហរណ៍៖ អាជីវកម្ម, ដំណើរកំសាន្ត...';
-
-  @override
-  String get addNew => 'បន្ថែម​ថ្មី';
-
-  @override
-  String get newNotebookTitle => 'ឈ្មោះ​សៀវភៅ​ថ្មី';
-
-  @override
-  String get enterNameHint => 'បញ្ចូល​ឈ្មោះ';
-
-  @override
-  String get add => 'បន្ថែម';
-
-  @override
-  String get openSettings => 'បើក​ការកំណត់';
-
-  @override
-  String get helpNotebook =>
-      'ជ្រើសរើស​ថត​ដើម្បី​រក្សា​ទុក​លទ្ធផល​ដែល​បាន​បកប្រែ។';
-
-  @override
-  String get helpNote => 'សរសេរ​អត្ថន័យ ឧទាហរណ៍ ឬ​ស្ថានភាព​នៃ​ពាក្យ​ដោយ​សេរី​។';
-
-  @override
-  String get helpTag =>
-      'បញ្ចូល​ពាក្យ​គន្លឹះ​សម្រាប់​ចាត់ថ្នាក់ ឬ​ស្វែងរក​នៅ​ពេល​ក្រោយ​។';
-
-  @override
-  String get requestTranslation => 'ស្នើសុំការបកប្រែ';
-
-  @override
-  String get statusRequestSuccess => 'សំណើបកប្រែបានជោគជ័យ។';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'សំណើបកប្រែបរាជ័យ៖ $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'ភាសាសិក្សាមិនគាំទ្រ';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'ឯកសារដែលអ្នកបានជ្រើសរើសមិនគាំទ្រភាសាសិក្សាដែលបានកំណត់បច្ចុប្បន្ន ($targetLang) ដូច្នេះវាមិនអាចរក្សាទុកក្នុងមូលដ្ឋានបានទេ។ តើអ្នកចង់ស្នើសុំការបកប្រែទេ?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. កំណត់ភាសា';
-
-  @override
-  String get quickStartStep1Desc =>
-      'ដំបូង​កំណត់​ភាសា​របស់​អ្នក និង​ភាសា​ដែល​អ្នក​ចង់​រៀន​នៅ ម៉ឺនុយ > កំណត់​ភាសា។';
-
-  @override
-  String get quickStartStep2Title => '2. លំហូរ​មូលដ្ឋាន';
-
-  @override
-  String get quickStartStep2Desc =>
-      'បង្កើត​កាត​សិក្សា​ផ្ទាល់​ខ្លួន​ដោយ​ធ្វើ​តាម​លំដាប់​លំដោយ​នេះ៖ បញ្ចូល (មីក្រូហ្វូន/ក្ដារចុច) -> បកប្រែ -> រក្សាទុក។';
-
-  @override
-  String get quickStartStep3Title => '3. ប្រើ​របៀប';
-
-  @override
-  String get quickStartStep3Desc =>
-      'អនុវត្ត​ដោយ​ការ​ជជែក និង​អនុវត្ត​ការ​បញ្ចេញ​សំឡេង​ដោយ​មើល​អត្ថបទ​នៅ​ក្នុង​ផ្ទាំង​អនុវត្ត​ការ​បញ្ចេញ​សំឡេង​ផ្ទាល់​ខ្លួន​អ្នក។';
-
-  @override
-  String get noteGuidance =>
-      'កន្លែងដែលអ្នកបញ្ចូលព័ត៌មានលម្អិតបន្ថែមสำหรับการបកប្រែដែលកាន់តែត្រឹមត្រូវ';
 }

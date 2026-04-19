@@ -9,53 +9,20 @@ class AppLocalizationsNl extends AppLocalizations {
   AppLocalizationsNl([String locale = 'nl']) : super(locale);
 
   @override
-  String get basicWords => 'Basis opslagplaats voor woorden';
-
-  @override
-  String get inputLanguage => 'Invoertaal';
-
-  @override
-  String get translationLanguage => 'Vertalingstaal';
-
-  @override
-  String get simplifiedGuidance =>
-      'Zet alledaagse gesprekken direct om in een vreemde taal! Talkie houdt uw taalleven bij.';
-
-  @override
-  String get noDataForLanguage =>
-      'Er zijn geen leermiddelen voor de gekozen taal in de lokale database. Download de gegevens of selecteer een andere taal.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Annuleren';
-
-  @override
   String get accuracy => 'Nauwkeurigheid';
-
-  @override
-  String get ttsMissing =>
-      'De spraakengine voor deze taal is niet op uw apparaat geïnstalleerd.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Ga naar Android Instellingen > Google TTS en installeer de bijbehorende taalgegevens.';
 
   @override
   String get adLoading =>
       'Advertentie wordt geladen. Probeer het over een moment nog eens.';
 
   @override
-  String get addNewSubject => 'Nieuwe titel toevoegen';
+  String get add => 'Toevoegen';
 
   @override
-  String get addParticipant => 'Deelnemer toevoegen';
+  String get addNew => 'Nieuwe toevoegen';
+
+  @override
+  String get addNewSubject => 'Nieuwe titel toevoegen';
 
   @override
   String get addTagHint => 'Tag toevoegen...';
@@ -89,6 +56,12 @@ class AppLocalizationsNl extends AppLocalizations {
   String get basicWordRepository => 'Basis Woordenlijst';
 
   @override
+  String get basicWords => 'Basis opslagplaats voor woorden';
+
+  @override
+  String get cancel => 'Annuleren';
+
+  @override
   String get caseObject => 'Accusatief';
 
   @override
@@ -104,61 +77,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get caseSubject => 'Nominatief';
 
   @override
-  String get chatAiChat => 'Chatten';
-
-  @override
-  String get chatAllConversations => 'Alle gesprekken';
-
-  @override
-  String get chatChoosePersona => 'Kies persona';
-
-  @override
-  String get chatEndMessage => 'Wil je dit gesprek beëindigen?';
-
-  @override
-  String get chatEndTitle => 'Gesprek beëindigen en opslaan';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Chat mislukt: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Fragment uit gesprek ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Chatgeschiedenis';
-
-  @override
-  String get chatNew => 'Nieuwe chat';
-
-  @override
-  String get chatNewChat => 'Nieuwe chat';
-
-  @override
-  String get chatNoConversations => 'Nog geen gesprekken';
-
-  @override
-  String get chatSearchHint => 'Zoeken op chatnaam...';
-
-  @override
-  String get chatNoteSearchHint => 'Zoeken in notities...';
-
-  @override
-  String get chatSaveAndExit => 'Opslaan en afsluiten';
-
-  @override
-  String get chatStartNewPrompt => 'Start een nieuw gesprek om te oefenen!';
-
-  @override
-  String get chatTypeHint => 'Typ een bericht...';
-
-  @override
-  String get chatUntitled => 'Naamloze chat';
-
-  @override
   String get checking => 'Controleren...';
 
   @override
@@ -169,14 +87,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Weet u zeker dat u dit record wilt verwijderen?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Weet je zeker dat je dit gesprek wilt verwijderen?\nVerwijderde gesprekken kunnen niet worden hersteld.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Weet je zeker dat je deze deelnemer wilt verwijderen?';
 
   @override
   String get contextTagHint =>
@@ -216,23 +126,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get deleteRecord => 'Record verwijderen';
 
   @override
-  String get dialogueQuestDesc =>
-      'Oefen gesprekken via rollenspellen. Selecteer en spreek de juiste antwoorden.';
-
-  @override
-  String get dialogueQuestTitle => 'Dialoog Quest';
-
-  @override
-  String get disambiguationPrompt => 'Welke betekenis wilt u vertalen?';
-
-  @override
-  String get disambiguationTitle => 'Betekenis selecteren';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Heb je geen account?';
-
-  @override
-  String get editParticipant => 'Deelnemer bewerken';
 
   @override
   String get email => 'E-mail';
@@ -240,6 +137,9 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Dit e-mailadres is al in gebruik. Log in of gebruik de functie \'Wachtwoord vergeten\'.';
+
+  @override
+  String get enterNameHint => 'Voer een naam in';
 
   @override
   String get enterNewSubjectName => 'Nieuwe titel invoeren';
@@ -280,6 +180,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get errors => 'Fouten:';
+
+  @override
+  String get extractedText => 'Gescande tekst';
 
   @override
   String get female => 'Vrouw';
@@ -339,12 +242,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get gender => 'Geslacht';
 
   @override
-  String get labelFilterMaterial => 'Materiaal';
-
-  @override
-  String get labelFilterTag => 'Tag';
-
-  @override
   String get generalTags => 'Algemene tags';
 
   @override
@@ -357,19 +254,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get googleContinue => 'Doorgaan met Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Importeer een volledige set dialogen via een JSON-bestand.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc =>
       'Om studiematerialen in Modus 3 te importeren, maak JSON bestand met deze structuur:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dialoog';
 
   @override
   String get helpJsonTypeSentence => 'Zin';
@@ -402,12 +288,12 @@ class AppLocalizationsNl extends AppLocalizations {
       '• Selecteer Materiaal: Kies studiepakket\n• Interval: [-] [+] pas wachttijd aan (3s-60s)\n• Start/Stop: Beheer sessie\n• Spreek: Luister audio en herhaal\n• Feedback: Score (0-100)\n• Probeer Opnieuw: Knop als stem niet gedetecteerd';
 
   @override
-  String get helpModeChatDesc =>
-      'Oefen echte gesprekken door te chatten met een AI-persona.';
+  String get helpNote =>
+      'Noteer vrijelijk de betekenis, voorbeelden of situaties van een woord.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI-chat: oefen praktische gesprekken met persona\'s in het \'Chat\'-menu op de onderste tabbladbalk\n• Persona-instellingen: specificeer vrijelijk het geslacht, de naam en de taalcode van de andere partij\n• GPS-situatiespel: herkent mijn huidige locatie en beveelt gespreksonderwerpen aan die passen bij de locatie\n• Tweetalig: de antwoorden van de AI worden weergegeven met vertalingen om het leereffect te maximaliseren\n• Recordbeheer: filter de geschiedenis van eerdere gesprekken en sla specifieke berichten tijdens het gesprek op als leermateriaal';
+  String get helpNotebook =>
+      'Selecteer de map waarin u de vertalingen wilt opslaan.';
 
   @override
   String get helpTabJson => 'JSON Formaat';
@@ -422,6 +308,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get helpTabTour => 'Rondleiding';
 
   @override
+  String get helpTag =>
+      'Voer trefwoorden in om later te categoriseren of te zoeken.';
+
+  @override
   String get helpTitle => 'Hulp & Gids';
 
   @override
@@ -430,6 +320,15 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get hide => 'Verbergen';
+
+  @override
+  String get hintNoteExample => 'Bijv.: context, homoniemen, enz.';
+
+  @override
+  String get hintTagExample => 'Bijv.: Zakelijk, reizen...';
+
+  @override
+  String get homeTab => 'Vertalen';
 
   @override
   String importAdded(int count) {
@@ -442,23 +341,6 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Er bestaat al materiaal met dezelfde titel. Wijzig de titel en probeer het opnieuw.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -474,6 +356,11 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files bestanden, $entries items geïmporteerd.';
+  }
+
+  @override
   String get importJsonFile => 'JSON Importeren';
 
   @override
@@ -485,12 +372,30 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Enkel JSON-bestand';
+
+  @override
+  String get importSourceFolder => 'Map (taalspecifieke bibliotheekstructuur)';
+
+  @override
+  String get importSourceTitle => 'Importeer bron selecteren';
+
+  @override
+  String get importSourceZip => 'ZIP-bestand (gecomprimeerde map)';
+
+  @override
   String importTotal(int count) {
     return 'Totaal: $count';
   }
 
   @override
   String get importing => 'Importeren...';
+
+  @override
+  String get inputContent => 'Invoer';
+
+  @override
+  String get inputLanguage => 'Invoertaal';
 
   @override
   String get inputModeTitle => 'Invoer';
@@ -507,19 +412,22 @@ class AppLocalizationsNl extends AppLocalizations {
   String get kakaoContinue => 'Doorgaan met Kakao';
 
   @override
-  String get labelLangCode => 'Taalcode (bijv. en-US, ko-KR)';
+  String get labelDetails => 'Gedetailleerde instellingen';
 
   @override
-  String get labelName => 'Naam';
+  String get labelFilterMaterial => 'Materiaal';
+
+  @override
+  String get labelFilterTag => 'Tag';
+
+  @override
+  String get labelLangCode => 'Taalcode (bijv. en-US, ko-KR)';
 
   @override
   String get labelNote => 'Notitie';
 
   @override
   String get labelPOS => 'Woordsoort';
-
-  @override
-  String get labelRole => 'Rol';
 
   @override
   String get labelSentence => 'Zin';
@@ -570,9 +478,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get listening => 'Luisteren...';
 
   @override
-  String get loadingParticipants => 'Deelnemers laden...';
-
-  @override
   String get location => 'Locatie';
 
   @override
@@ -592,9 +497,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get male => 'Man';
 
   @override
-  String get manageParticipants => 'Deelnemers beheren';
-
-  @override
   String get manual => 'Handmatige invoer';
 
   @override
@@ -602,9 +504,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get materialInfo => 'Materiaalinfo';
-
-  @override
-  String get me => 'Ik';
 
   @override
   String get menuDeviceImport => 'Materiaal importeren van apparaat';
@@ -672,28 +571,21 @@ class AppLocalizationsNl extends AppLocalizations {
   String get neutral => 'Neutraal';
 
   @override
+  String get newNotebookTitle => 'Nieuwe mapnaam';
+
+  @override
   String get newSubjectName => 'Nieuwe woordenlijst/zinscollectie titel';
 
   @override
   String get next => 'Volgende';
 
   @override
-  String get noDialogueHistory => 'Geen dialooggeschiedenis.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Geen internetverbinding. Spraakherkenning is mogelijk niet beschikbaar in de offline modus.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Geen internetverbinding. De vertaalfunctie is niet beschikbaar in de offline modus. Gebruik de herhalingsmodus.';
+  String get noDataForLanguage =>
+      'Er zijn geen leermiddelen voor de gekozen taal in de lokale database. Download de gegevens of selecteer een andere taal.';
 
   @override
   String get noMaterialsInCategory =>
       'Er zijn geen materialen in deze categorie.';
-
-  @override
-  String get noParticipantsFound => 'Geen deelnemers gevonden.';
 
   @override
   String get noRecords => 'Geen records voor geselecteerde taal';
@@ -714,6 +606,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get notSelected => '- Niet geselecteerd -';
 
   @override
+  String get noteGuidance =>
+      'Waar u aanvullende details invoert voor een nauwkeurigere vertaling';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Controleer je internetverbinding of probeer het later opnieuw.';
 
@@ -725,16 +621,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Geen materialen.';
 
   @override
-  String get participantDeleted => 'De deelnemer is verwijderd.';
-
-  @override
-  String get participantRename => 'Deelnemer hernoemen';
-
-  @override
-  String get partner => 'Partner';
-
-  @override
-  String get partnerMode => 'Partnermodus';
+  String get openSettings => 'Instellingen openen';
 
   @override
   String get password => 'Wachtwoord';
@@ -746,13 +633,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get perfect => 'Perfect!';
 
   @override
-  String get personaFriend => 'Lokale vriend';
-
-  @override
-  String get personaGuide => 'Reisgids';
-
-  @override
-  String get personaTeacher => 'Engels leraar';
+  String get pickGallery => 'Kies uit galerij';
 
   @override
   String get playAgain => 'Nog een keer spelen';
@@ -772,6 +653,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get posAdverb => 'Bijwoord';
 
   @override
+  String get posArticle => 'Lidwoord';
+
+  @override
   String get posConjunction => 'Voegwoord';
 
   @override
@@ -779,6 +663,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get posNoun => 'Zelfstandig naamwoord';
+
+  @override
+  String get posParticle => 'Partikel';
 
   @override
   String get posPreposition => 'Voorzetsel';
@@ -796,9 +683,33 @@ class AppLocalizationsNl extends AppLocalizations {
   String get practiceWordsOnly => 'Alleen woorden oefenen';
 
   @override
+  String get processing => 'Bezig met verwerken...';
+
+  @override
   String progress(int current, int total) {
     return 'Voortgang: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Stel eerst uw taal en de taal die u wilt leren in via Menu > Taalinstellingen.';
+
+  @override
+  String get quickStartStep1Title => '1. Stel de taal in';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Maak uw eigen leerkaarten in de volgorde: invoer (microfoon/toetsenbord) -> vertaling -> opslaan.';
+
+  @override
+  String get quickStartStep2Title => '2. Basisworkflow';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.';
+
+  @override
+  String get quickStartStep3Title => '3. Gebruik de modi';
 
   @override
   String recentNItems(int count) {
@@ -823,6 +734,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get refresh => 'Verversen';
 
   @override
+  String get requestTranslation => 'Vertaalverzoek indienen';
+
+  @override
   String get reset => 'Reset';
 
   @override
@@ -843,16 +757,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get reviewModeTitle => 'Herhaling';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Derde partij';
-
-  @override
-  String get roleUser => 'Gebruiker';
-
-  @override
   String get save => 'Opslaan';
+
+  @override
+  String get saveAsSentence => 'Opslaan als zin';
+
+  @override
+  String get saveAsWord => 'Opslaan als woord';
 
   @override
   String get saveData => 'Opslaan';
@@ -863,6 +774,9 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Opslaan in scangeschiedenis';
+
+  @override
   String get saveTranslationsFromSearch => 'Vertaal uit zoekmodus opslaan';
 
   @override
@@ -870,6 +784,12 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get saving => 'Opslaan...';
+
+  @override
+  String get scanInstructions => 'Selecteer een afbeelding om te scannen';
+
+  @override
+  String get scanLabel => 'Scannen';
 
   @override
   String score(String score) {
@@ -916,16 +836,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get selectPOS => 'Selecteer woordsoort';
 
   @override
-  String get selectParticipants => 'Deelnemers selecteren';
-
-  @override
-  String get selectSentenceType => 'Selecteer zin type';
-
-  @override
   String get selectStudyMaterial => 'Selecteer Materiaal';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Zin';
@@ -934,43 +845,14 @@ class AppLocalizationsNl extends AppLocalizations {
   String get signUp => 'Aanmelden';
 
   @override
-  String get similarTextFound => 'Vergelijkbare tekst gevonden';
-
-  @override
-  String get skip => 'Overslaan';
-
-  @override
-  String get source => 'Bron:';
-
-  @override
-  String get sourceLanguage => 'Brontaal';
+  String get simplifiedGuidance =>
+      'Zet alledaagse gesprekken direct om in een vreemde taal! Talkie houdt uw taalleven bij.';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => 'Spreek nu!';
-
-  @override
-  String get speaker => 'Spreker';
-
-  @override
-  String get speakerSelect => 'Spreker selecteren';
-
-  @override
-  String get speakingPractice => 'Spreekoefening';
-
-  @override
-  String get startChat => 'Start chat';
-
-  @override
-  String get startPractice => 'Start Oefening';
-
-  @override
   String get startTutorial => 'Start Rondleiding';
-
-  @override
-  String get startWarning => 'Waarschuwing';
 
   @override
   String get startsWith => 'Begint met';
@@ -980,28 +862,22 @@ class AppLocalizationsNl extends AppLocalizations {
       'Controleer uw e-mail om de verificatie te voltooien.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Downloaden: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Importeren mislukt: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name importeren voltooid';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Inloggen geannuleerd.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Inloggen mislukt: $error';
   }
 
@@ -1012,23 +888,23 @@ class AppLocalizationsNl extends AppLocalizations {
   String get statusLogoutSuccess => 'Uitgelogd.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Aanmelden mislukt: $error';
+  String statusRequestFailed(String error) {
+    return 'Vertaalverzoek mislukt: $error';
   }
 
   @override
-  String get statusSigningUp => 'Aanmelden...';
+  String get statusRequestSuccess => 'Vertaalverzoek voltooid.';
 
   @override
   String get stopPractice => 'Stop Oefening';
 
   @override
-  String get studyComplete => 'Bestudeerd';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Het geselecteerde materiaal ondersteunt de huidige ingestelde leertaal ($targetLang) niet en kan niet lokaal worden opgeslagen. Wilt u een vertaling aanvragen?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Records ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Leertaal niet ondersteund';
 
   @override
   String get styleFormal => 'Formeel';
@@ -1043,22 +919,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get styleSlang => 'Straattaal/Slang';
 
   @override
-  String get subject => 'Onderwerp:';
-
-  @override
   String get swapLanguages => 'Talen omdraaien';
 
   @override
-  String get switchToAi => 'Schakel over naar AI-modus';
-
-  @override
-  String get switchToPartner => 'Schakel over naar Partnermodus';
-
-  @override
   String get syncingData => 'Gegevens synchroniseren...';
-
-  @override
-  String get tabConversation => 'Gesprek';
 
   @override
   String tabReview(int count) {
@@ -1122,6 +986,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tooltipSearch => 'Zoeken';
 
   @override
+  String get tooltipSettingsConfirm => 'Instellingen bevestigen';
+
+  @override
   String get tooltipSpeaking => 'Spreken';
 
   @override
@@ -1134,6 +1001,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get translate => 'Vertalen';
+
+  @override
+  String get translateNow => 'Vertaal nu';
 
   @override
   String get translating => 'Vertalen...';
@@ -1150,6 +1020,9 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Vertalingstaal';
+
+  @override
   String get translationLimitExceeded => 'Vertaal limiet overschreden';
 
   @override
@@ -1164,17 +1037,25 @@ class AppLocalizationsNl extends AppLocalizations {
       'Het aantal vertalingen is 5 keer opgeladen!';
 
   @override
+  String get translationResult => 'Vertaling';
+
+  @override
   String get translationResultHint => 'Vertaling - kan worden bewerkt';
 
   @override
   String get tryAgain => 'Opnieuw Proberen';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Oefen realistische gesprekken met AI-persona\'s.';
+  String get ttsInstallGuide =>
+      'Ga naar Android Instellingen > Google TTS en installeer de bijbehorende taalgegevens.';
 
   @override
-  String get tutorialAiChatTitle => 'AI Chat';
+  String get ttsMissing =>
+      'De spraakengine voor deze taal is niet op uw apparaat geïnstalleerd.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Deze taal wordt niet standaard ondersteund voor spraakuitvoer op dit apparaat.';
 
   @override
   String get tutorialContextDesc =>
@@ -1284,7 +1165,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get typeExclamation => 'Uitroep';
 
   @override
+  String get typeIdiom => 'Idiom';
+
+  @override
   String get typeImperative => 'Imperatief';
+
+  @override
+  String get typeProverb => 'Spreekwoord';
 
   @override
   String get typeQuestion => 'Vraag';
@@ -1299,6 +1186,11 @@ class AppLocalizationsNl extends AppLocalizations {
   String get useExistingText => 'Gebruik Bestaande';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Online gids bekijken';
 
   @override
@@ -1306,6 +1198,16 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Bekijk advertentie en laad op (+5 keer)';
+
+  @override
+  String get welcomeButton => 'Aan de slag';
+
+  @override
+  String get welcomeDesc =>
+      'Welkom bij Talkie! We ondersteunen meer dan 80 talen over de hele wereld met 100% integriteit, en bieden een perfecte leerervaring met nieuwe premium 3D-ontwerpen en geoptimaliseerde prestaties.';
+
+  @override
+  String get welcomeTitle => 'Welkom bij Talkie!';
 
   @override
   String get word => 'Woord';
@@ -1322,113 +1224,4 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Jouw Uitspraak';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Deze taal wordt niet standaard ondersteund voor spraakuitvoer op dit apparaat.';
-
-  @override
-  String get homeTab => 'Vertalen';
-
-  @override
-  String get welcomeTitle => 'Welkom bij Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Welkom bij Talkie! We ondersteunen meer dan 80 talen over de hele wereld met 100% integriteit, en bieden een perfecte leerervaring met nieuwe premium 3D-ontwerpen en geoptimaliseerde prestaties.';
-
-  @override
-  String get welcomeButton => 'Aan de slag';
-
-  @override
-  String get labelDetails => 'Gedetailleerde instellingen';
-
-  @override
-  String get translationResult => 'Vertaling';
-
-  @override
-  String get inputContent => 'Invoer';
-
-  @override
-  String get translateNow => 'Vertaal nu';
-
-  @override
-  String get tooltipSettingsConfirm => 'Instellingen bevestigen';
-
-  @override
-  String get hintNoteExample => 'Bijv.: context, homoniemen, enz.';
-
-  @override
-  String get hintTagExample => 'Bijv.: Zakelijk, reizen...';
-
-  @override
-  String get addNew => 'Nieuwe toevoegen';
-
-  @override
-  String get newNotebookTitle => 'Nieuwe mapnaam';
-
-  @override
-  String get enterNameHint => 'Voer een naam in';
-
-  @override
-  String get add => 'Toevoegen';
-
-  @override
-  String get openSettings => 'Instellingen openen';
-
-  @override
-  String get helpNotebook =>
-      'Selecteer de map waarin u de vertalingen wilt opslaan.';
-
-  @override
-  String get helpNote =>
-      'Noteer vrijelijk de betekenis, voorbeelden of situaties van een woord.';
-
-  @override
-  String get helpTag =>
-      'Voer trefwoorden in om later te categoriseren of te zoeken.';
-
-  @override
-  String get requestTranslation => 'Vertaalverzoek indienen';
-
-  @override
-  String get statusRequestSuccess => 'Vertaalverzoek voltooid.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Vertaalverzoek mislukt: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Leertaal niet ondersteund';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Het geselecteerde materiaal ondersteunt de huidige ingestelde leertaal ($targetLang) niet en kan niet lokaal worden opgeslagen. Wilt u een vertaling aanvragen?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Stel de taal in';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Stel eerst uw taal en de taal die u wilt leren in via Menu > Taalinstellingen.';
-
-  @override
-  String get quickStartStep2Title => '2. Basisworkflow';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Maak uw eigen leerkaarten in de volgorde: invoer (microfoon/toetsenbord) -> vertaling -> opslaan.';
-
-  @override
-  String get quickStartStep3Title => '3. Gebruik de modi';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Oefen met chatten en oefen uw uitspraak door de tekst te bekijken en zelf uit te spreken in het tabblad Oefen uitspraak.';
-
-  @override
-  String get noteGuidance =>
-      'Waar u aanvullende details invoert voor een nauwkeurigere vertaling';
 }

@@ -9,53 +9,20 @@ class AppLocalizationsIs extends AppLocalizations {
   AppLocalizationsIs([String locale = 'is']) : super(locale);
 
   @override
-  String get basicWords => 'Grunn orðageymsla';
-
-  @override
-  String get inputLanguage => 'Inntaksmál';
-
-  @override
-  String get translationLanguage => 'Þýðingarmál';
-
-  @override
-  String get simplifiedGuidance =>
-      'Umbreyttu daglegum samtölum samstundis á erlent tungumál! Talkie heldur utan um tungumálanotkun þína.';
-
-  @override
-  String get noDataForLanguage =>
-      'Engin námsefni fyrir valið tungumál er að finna í staðbundnum gagnagrunni. Vinsamlegast halaðu niður efni eða veldu annað tungumál.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Hætta við';
-
-  @override
   String get accuracy => 'Nákvæmni';
-
-  @override
-  String get ttsMissing =>
-      'Raddræðuvél fyrir þetta tungumál er ekki uppsett á tækinu þínu.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Vinsamlegast settu upp viðeigandi tungumálapakka í Android stillingum > Google Texti í Tal.';
 
   @override
   String get adLoading =>
       'Auglýsing er að hlaðast. Vinsamlegast reyndu aftur síðar.';
 
   @override
-  String get addNewSubject => 'Bæta við nýju nafni';
+  String get add => 'Bæta við';
 
   @override
-  String get addParticipant => 'Bæta við þátttakanda';
+  String get addNew => 'Bæta við nýju';
+
+  @override
+  String get addNewSubject => 'Bæta við nýju nafni';
 
   @override
   String get addTagHint => 'Bættu við merki...';
@@ -88,6 +55,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get basicWordRepository => 'Grunn orðageymsla';
 
   @override
+  String get basicWords => 'Grunn orðageymsla';
+
+  @override
+  String get cancel => 'Hætta við';
+
+  @override
   String get caseObject => 'Þolfall';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsIs extends AppLocalizations {
   String get caseSubject => 'Nefnifall';
 
   @override
-  String get chatAiChat => 'Spjall';
-
-  @override
-  String get chatAllConversations => 'Öll samtöl';
-
-  @override
-  String get chatChoosePersona => 'Veldu persónu';
-
-  @override
-  String get chatEndMessage => 'Viltu ljúka samtalinu?';
-
-  @override
-  String get chatEndTitle => 'Ljúka og vista samtal';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Spjall mistókst: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Samtalsútdráttur ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Samtalasaga';
-
-  @override
-  String get chatNew => 'Nýtt samtal';
-
-  @override
-  String get chatNewChat => 'Nýtt samtal';
-
-  @override
-  String get chatNoConversations => 'Engin samtöl ennþá';
-
-  @override
-  String get chatSearchHint => 'Leita eftir spjalltitli...';
-
-  @override
-  String get chatNoteSearchHint => 'Leita í athugasemdum...';
-
-  @override
-  String get chatSaveAndExit => 'Vista og hætta';
-
-  @override
-  String get chatStartNewPrompt => 'Byrjaðu nýtt samtal til að æfa!';
-
-  @override
-  String get chatTypeHint => 'Sláðu inn skilaboð...';
-
-  @override
-  String get chatUntitled => 'Ónefnt samtal';
-
-  @override
   String get checking => 'Athuga...';
 
   @override
@@ -168,13 +86,6 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Viltu eyða þessari námsfærslu?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Viltu eyða þessu samtali?\nEydd samtöl er ekki hægt að endurheimta.';
-
-  @override
-  String get confirmDeleteParticipant => 'Viltu eyða þessum þátttakanda?';
 
   @override
   String get contextTagHint =>
@@ -214,23 +125,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get deleteRecord => 'Eyða færslu';
 
   @override
-  String get dialogueQuestDesc =>
-      'Æfðu samtöl í gegnum atburðarás. Veldu viðeigandi svar og segðu það.';
-
-  @override
-  String get dialogueQuestTitle => 'Samtalaleiðangur';
-
-  @override
-  String get disambiguationPrompt => 'Hvaða merkingu viltu þýða með?';
-
-  @override
-  String get disambiguationTitle => 'Veldu merkingu';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Ertu ekki með aðgang?';
-
-  @override
-  String get editParticipant => 'Breyta þátttakanda';
 
   @override
   String get email => 'Netfang';
@@ -238,6 +136,9 @@ class AppLocalizationsIs extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Þetta netfang er þegar í notkun. Vinsamlegast skráðu þig inn eða notaðu endurheimt lykilorðs.';
+
+  @override
+  String get enterNameHint => 'Sláðu inn nafn';
 
   @override
   String get enterNewSubjectName => 'Sláðu inn nýtt nafn';
@@ -279,6 +180,9 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get errors => 'Villur:';
+
+  @override
+  String get extractedText => 'Útdreginn texti';
 
   @override
   String get female => 'Kona';
@@ -338,12 +242,6 @@ class AppLocalizationsIs extends AppLocalizations {
   String get gender => 'Kyn';
 
   @override
-  String get labelFilterMaterial => 'Efnisyfirlit';
-
-  @override
-  String get labelFilterTag => 'Merki';
-
-  @override
   String get generalTags => 'Almenn merki';
 
   @override
@@ -356,19 +254,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get googleContinue => 'Halda áfram með Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Flytja inn heilt samtalasett sem JSON skrá.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON uppbygging: Notaðu `dialogues` fylkið í stað `entries`\n• Sjálfvirk endurheimt: Endurheimt samtalsaheiti, persóna og skilaboðaröð.\n• Staðsetning: Innflutt samtöl birtast á \'Saga\' flipanum í gervigreindarspjallstillingu.';
-
-  @override
   String get helpJsonDesc =>
       'Til að flytja inn námsefni til notkunar í stillingu 3 sem JSON skrá, vinsamlegast fylgdu þessu sniði:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Samræða';
 
   @override
   String get helpJsonTypeSentence => 'Setning';
@@ -401,12 +288,11 @@ class AppLocalizationsIs extends AppLocalizations {
       '• Efnisval: Veldu efnissett til að læra\n• Millibilsstilling: Stilltu biðtímann á milli setninga með [-] [+] hnöppunum (3 sekúndur til 60 sekúndur)\n• Byrja/stöðva: Stjórnaðu skuggastund\n• Tala: Hlustaðu á rödd og endurtaktu\n• Viðbrögð: Nákvæmnisstig (0-100) og litaskjár\n• Leitarskilyrði: Síaðu æfingamarkmið eftir merki, nýlegum hlutum eða upphafsstöfum';
 
   @override
-  String get helpModeChatDesc =>
-      'Æfðu raunverulegar samræður með því að spjalla við AI persónu.';
+  String get helpNote =>
+      'Skrifaðu frjálst um merkingu orðsins, dæmi eða aðstæður.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Gervigreind spjall: Æfðu raunveruleg samtöl við persónur í \'Spjall\' valmyndinni á flipastikunni neðst\n• Persónustillingar: Tilgreindu kyn, nafn og tungumálakóða hins aðilans að vild\n• GPS sviðsetning: Mælir með umræðuefnum sem henta staðsetningunni með því að þekkja núverandi staðsetningu þína\n• Tvö tungumál: Svör gervigreindarinnar eru sýnd ásamt þýðingum til að hámarka námsárangur\n• Skráastjórnun: Síaðu fyrri samtalsferil og vistaðu ákveðin skilaboð úr samtalinu sem námsefni';
+  String get helpNotebook => 'Veldu möppuna til að vista þýddar niðurstöður í.';
 
   @override
   String get helpTabJson => 'JSON snið';
@@ -421,6 +307,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get helpTabTour => 'Kynnisferð';
 
   @override
+  String get helpTag => 'Sláðu inn leitarorð til að flokka eða leita seinna.';
+
+  @override
   String get helpTitle => 'Hjálp & leiðbeiningar';
 
   @override
@@ -429,6 +318,15 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get hide => 'Fela';
+
+  @override
+  String get hintNoteExample => 'Dæmi: Samhengi, samheiti o.s.frv.';
+
+  @override
+  String get hintTagExample => 'Dæmi: Viðskipti, ferðalög...';
+
+  @override
+  String get homeTab => 'Þýðingar';
 
   @override
   String importAdded(int count) {
@@ -441,23 +339,6 @@ class AppLocalizationsIs extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Efni með sama titil er þegar til. Vinsamlegast breyttu titlinum og reyndu aftur.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -473,6 +354,11 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Flutti inn $files skrár, $entries færslur.';
+  }
+
+  @override
   String get importJsonFile => 'Flytja inn JSON skrá';
 
   @override
@@ -484,12 +370,30 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Einstök JSON skrá';
+
+  @override
+  String get importSourceFolder => 'Mappa (tungumálaskipulag)';
+
+  @override
+  String get importSourceTitle => 'Veldu innflutningsuppruna';
+
+  @override
+  String get importSourceZip => 'ZIP skrá (þjappað mappa)';
+
+  @override
   String importTotal(int count) {
     return 'Alls: $count';
   }
 
   @override
   String get importing => 'Flyt inn...';
+
+  @override
+  String get inputContent => 'Inntak';
+
+  @override
+  String get inputLanguage => 'Inntaksmál';
 
   @override
   String get inputModeTitle => 'Inntak';
@@ -506,19 +410,22 @@ class AppLocalizationsIs extends AppLocalizations {
   String get kakaoContinue => 'Halda áfram með Kakao';
 
   @override
-  String get labelLangCode => 'Tungumálakóði (t.d. en-US, ko-KR)';
+  String get labelDetails => 'Ítarlegar stillingar';
 
   @override
-  String get labelName => 'Nafn';
+  String get labelFilterMaterial => 'Efnisyfirlit';
+
+  @override
+  String get labelFilterTag => 'Merki';
+
+  @override
+  String get labelLangCode => 'Tungumálakóði (t.d. en-US, ko-KR)';
 
   @override
   String get labelNote => 'Athugasemd';
 
   @override
   String get labelPOS => 'Málhluti';
-
-  @override
-  String get labelRole => 'Hlutverk';
 
   @override
   String get labelSentence => 'Setning';
@@ -569,9 +476,6 @@ class AppLocalizationsIs extends AppLocalizations {
   String get listening => 'Hlusta...';
 
   @override
-  String get loadingParticipants => 'Hleð inn þátttakendum...';
-
-  @override
   String get location => 'Staðsetning';
 
   @override
@@ -590,9 +494,6 @@ class AppLocalizationsIs extends AppLocalizations {
   String get male => 'Karl';
 
   @override
-  String get manageParticipants => 'Stjórna þátttakendum';
-
-  @override
   String get manual => 'Handvirkt inntak';
 
   @override
@@ -600,9 +501,6 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get materialInfo => 'Efnisupplýsingar';
-
-  @override
-  String get me => 'Ég';
 
   @override
   String get menuDeviceImport => 'Flytja inn efni úr tækinu';
@@ -670,27 +568,20 @@ class AppLocalizationsIs extends AppLocalizations {
   String get neutral => 'Hlutlaust';
 
   @override
+  String get newNotebookTitle => 'Nafn á nýrri minnisbók';
+
+  @override
   String get newSubjectName => 'Nýtt nafn á orðaforða/setningasafn';
 
   @override
   String get next => 'Næsta';
 
   @override
-  String get noDialogueHistory => 'Engin samtalsaga.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Engin nettenging. Raddgreining er hugsanlega ekki möguleg án nettengingar.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Engin nettenging. Þýðingaraðgerðin er ekki tiltæk án nettengingar. Vinsamlegast notaðu endurskoðunarham.';
+  String get noDataForLanguage =>
+      'Engin námsefni fyrir valið tungumál er að finna í staðbundnum gagnagrunni. Vinsamlegast halaðu niður efni eða veldu annað tungumál.';
 
   @override
   String get noMaterialsInCategory => 'Ekkert efni er í þessum flokki.';
-
-  @override
-  String get noParticipantsFound => 'Engir þátttakendur fundust.';
 
   @override
   String get noRecords => 'Enginn námsferill fyrir valið tungumál';
@@ -711,6 +602,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get notSelected => '- Enginn valinn -';
 
   @override
+  String get noteGuidance =>
+      'Þar sem þú slærð inn frekari upplýsingar fyrir nákvæmari þýðingu';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Vinsamlegast athugaðu nettenginguna þína eða reyndu aftur seinna.';
 
@@ -721,35 +616,19 @@ class AppLocalizationsIs extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Ekkert efni er til staðar.';
 
   @override
-  String get participantDeleted => 'Þátttakanda hefur verið eytt.';
-
-  @override
-  String get participantRename => 'Endurnefna þátttakanda';
-
-  @override
-  String get partner => 'Maki';
-
-  @override
-  String get partnerMode => 'Makastilling';
+  String get openSettings => 'Opna stillingar';
 
   @override
   String get password => 'Lykilorð';
 
   @override
-  String get passwordTooShort =>
-      'Lykilorðið verður að vera að minnsta kosti 6 stafir.';
+  String get passwordTooShort => 'Lykilorðið er of stutt';
 
   @override
   String get perfect => 'Fullkomið!';
 
   @override
-  String get personaFriend => 'Vinur heimamanns';
-
-  @override
-  String get personaGuide => 'Ferðaleiðsögumaður';
-
-  @override
-  String get personaTeacher => 'Enskukennari';
+  String get pickGallery => 'Veldu úr myndasafni';
 
   @override
   String get playAgain => 'Spila aftur';
@@ -769,6 +648,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get posAdverb => 'Atviksorð';
 
   @override
+  String get posArticle => 'Greinir';
+
+  @override
   String get posConjunction => 'Tengiorð';
 
   @override
@@ -776,6 +658,9 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get posNoun => 'Nafnorð';
+
+  @override
+  String get posParticle => 'Aðskeyti/Partikill';
 
   @override
   String get posPreposition => 'Forsetning/hjálparorð';
@@ -793,9 +678,33 @@ class AppLocalizationsIs extends AppLocalizations {
   String get practiceWordsOnly => 'Æfðu aðeins orð';
 
   @override
+  String get processing => 'Í vinnslu...';
+
+  @override
   String progress(int current, int total) {
     return 'Framfarir: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Farðu í Valmynd > Tungumál til að velja þitt tungumál og tungumálið sem þú vilt læra.';
+
+  @override
+  String get quickStartStep1Title => '1. Veldu tungumál';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Búðu til þín eigin spjöld í þessari röð: Inntak (hljóðnemi/lyklaborð) -> Þýðing -> Vista.';
+
+  @override
+  String get quickStartStep2Title => '2. Grunnflæði';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Æfðu þig í spjalli og æfðu framburð með því að horfa á textann í Framburðarflipanum.';
+
+  @override
+  String get quickStartStep3Title => '3. Nýttu stillingar';
 
   @override
   String recentNItems(int count) {
@@ -820,6 +729,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get refresh => 'Endurnýja';
 
   @override
+  String get requestTranslation => 'Sækja um þýðingu';
+
+  @override
   String get reset => 'Endurstilla';
 
   @override
@@ -840,16 +752,13 @@ class AppLocalizationsIs extends AppLocalizations {
   String get reviewModeTitle => 'Endurskoðun';
 
   @override
-  String get roleAi => 'Gervigreind';
-
-  @override
-  String get roleThirdParty => 'Þriðji aðili';
-
-  @override
-  String get roleUser => 'Notandi';
-
-  @override
   String get save => 'Vista';
+
+  @override
+  String get saveAsSentence => 'Vista sem setningu';
+
+  @override
+  String get saveAsWord => 'Vista sem orð';
 
   @override
   String get saveData => 'Vista gögn';
@@ -860,6 +769,9 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Vista í skannasögu';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Reyndu að vista þýðingar úr leitastillingunni';
 
@@ -868,6 +780,12 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get saving => 'Vista...';
+
+  @override
+  String get scanInstructions => 'Veldu mynd til að skanna';
+
+  @override
+  String get scanLabel => 'Skanna';
 
   @override
   String score(String score) {
@@ -914,16 +832,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get selectPOS => 'Veldu orðflokk';
 
   @override
-  String get selectParticipants => 'Veldu þátttakendur';
-
-  @override
-  String get selectSentenceType => 'Veldu tegund setningar';
-
-  @override
   String get selectStudyMaterial => 'Veldu námsefni';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Setning';
@@ -932,101 +841,65 @@ class AppLocalizationsIs extends AppLocalizations {
   String get signUp => 'Nýskrá';
 
   @override
-  String get similarTextFound => 'Svipaður texti fannst';
+  String get simplifiedGuidance =>
+      'Umbreyttu daglegum samtölum samstundis á erlent tungumál! Talkie heldur utan um tungumálanotkun þína.';
 
   @override
-  String get skip => 'Sleppa';
+  String get sourceLanguageLabel => 'Mitt tungumál';
 
   @override
-  String get source => 'Heimild:';
-
-  @override
-  String get sourceLanguage => 'Frummál';
-
-  @override
-  String get sourceLanguageLabel => 'Mitt tungumál (Source)';
-
-  @override
-  String get speakNow => 'Talaðu núna!';
-
-  @override
-  String get speaker => 'Fyrirlesari';
-
-  @override
-  String get speakerSelect => 'Veldu raddgjafa';
-
-  @override
-  String get speakingPractice => 'Talandi æfing';
-
-  @override
-  String get startChat => 'Hefja samtal';
-
-  @override
-  String get startPractice => 'Hefja æfingu';
-
-  @override
-  String get startTutorial => 'Byrja kennslu';
-
-  @override
-  String get startWarning => 'Viðvörun';
+  String get startTutorial => 'Byrja kennsluefni';
 
   @override
   String get startsWith => 'Byrjar á';
 
   @override
-  String get statusCheckEmail =>
-      'Vinsamlegast athugaðu tölvupóstinn þinn til að staðfesta.';
+  String get statusCheckEmail => 'Vinsamlegast athugaðu tölvupóstinn þinn';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Sæki: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Innflutningur mistókst: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name innflutningur lokið';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Hætt við innskráningu.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Innskráning mistókst: $error';
   }
 
   @override
-  String get statusLoginSuccess => 'Innskráning tókst.';
+  String get statusLoginSuccess => 'Innskráning tókst';
 
   @override
-  String get statusLogoutSuccess => 'Útskráning tókst.';
+  String get statusLogoutSuccess => 'Útskráning tókst';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Nýskráning mistókst: $error';
+  String statusRequestFailed(String error) {
+    return 'Beiðni um þýðingu mistókst: $error';
   }
 
   @override
-  String get statusSigningUp => 'Nýskráning í gangi...';
+  String get statusRequestSuccess => 'Beiðni um þýðingu tókst.';
 
   @override
   String get stopPractice => 'Stöðva æfingu';
 
   @override
-  String get studyComplete => 'Námi lokið';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Valin gögn styðja ekki núverandi námstungumál ($targetLang) og því er ekki hægt að vista þau staðbundið. Viltu biðja um þýðingu?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Námsferill ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Námstungumál ekki stutt';
 
   @override
   String get styleFormal => 'Formlegt';
@@ -1041,22 +914,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get styleSlang => 'Slangur';
 
   @override
-  String get subject => 'Titill:';
-
-  @override
   String get swapLanguages => 'Skipta um tungumál';
 
   @override
-  String get switchToAi => 'Skipta yfir í gervigreindarstillingu';
-
-  @override
-  String get switchToPartner => 'Skipta yfir í makastillingu';
-
-  @override
   String get syncingData => 'Samstilla gögn...';
-
-  @override
-  String get tabConversation => 'Samtal';
 
   @override
   String tabReview(int count) {
@@ -1120,6 +981,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tooltipSearch => 'Leita';
 
   @override
+  String get tooltipSettingsConfirm => 'Staðfesta stillingar';
+
+  @override
   String get tooltipSpeaking => 'Tala';
 
   @override
@@ -1132,6 +996,9 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get translate => 'Þýða';
+
+  @override
+  String get translateNow => 'Þýða núna';
 
   @override
   String get translating => 'Þýða...';
@@ -1148,6 +1015,9 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Þýðingarmál';
+
+  @override
   String get translationLimitExceeded => 'Þýðingarmörk náð';
 
   @override
@@ -1161,17 +1031,25 @@ class AppLocalizationsIs extends AppLocalizations {
   String get translationRefilled => 'Þýðingartímar fylltir á 5 sinnum!';
 
   @override
+  String get translationResult => 'Þýðingarniðurstaða';
+
+  @override
   String get translationResultHint => 'Þýðingarniðurstaða - hægt að breyta';
 
   @override
   String get tryAgain => 'Reyndu aftur';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Æfðu raunveruleg samtöl við gervigreindarpersónu.';
+  String get ttsInstallGuide =>
+      'Vinsamlegast settu upp viðeigandi tungumálapakka í Android stillingum > Google Texti í Tal.';
 
   @override
-  String get tutorialAiChatTitle => 'AI spjall';
+  String get ttsMissing =>
+      'Raddræðuvél fyrir þetta tungumál er ekki uppsett á tækinu þínu.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu.';
 
   @override
   String get tutorialContextDesc =>
@@ -1285,7 +1163,13 @@ class AppLocalizationsIs extends AppLocalizations {
   String get typeExclamation => 'Upphrópun';
 
   @override
+  String get typeIdiom => 'Orðtak';
+
+  @override
   String get typeImperative => 'Skipun';
+
+  @override
+  String get typeProverb => 'Orðskviður';
 
   @override
   String get typeQuestion => 'Spurning';
@@ -1300,6 +1184,11 @@ class AppLocalizationsIs extends AppLocalizations {
   String get useExistingText => 'Nota fyrirliggjandi texta';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Skoða leiðbeiningar á netinu';
 
   @override
@@ -1308,6 +1197,16 @@ class AppLocalizationsIs extends AppLocalizations {
   @override
   String get watchAdAndRefill =>
       'Áfylling með því að horfa á auglýsingu (+5 sinnum)';
+
+  @override
+  String get welcomeButton => 'Byrja';
+
+  @override
+  String get welcomeDesc =>
+      'Velkomin/nn í Talkie! Við styðjum yfir 80 tungumál um allan heim með 100% heilindum, ásamt nýrri úrvals 3D hönnun og fínstilltri frammistöðu fyrir fullkomna námsupplifun.';
+
+  @override
+  String get welcomeTitle => 'Velkomin í Talkie!';
 
   @override
   String get word => 'Orð';
@@ -1324,111 +1223,4 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Framburðurinn þinn';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu.';
-
-  @override
-  String get homeTab => 'Þýðingar';
-
-  @override
-  String get welcomeTitle => 'Velkomin í Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Velkomin/nn í Talkie! Við styðjum yfir 80 tungumál um allan heim með 100% heilindum, ásamt nýrri úrvals 3D hönnun og fínstilltri frammistöðu fyrir fullkomna námsupplifun.';
-
-  @override
-  String get welcomeButton => 'Byrja';
-
-  @override
-  String get labelDetails => 'Ítarlegar stillingar';
-
-  @override
-  String get translationResult => 'Þýðingarniðurstaða';
-
-  @override
-  String get inputContent => 'Inntak';
-
-  @override
-  String get translateNow => 'Þýða núna';
-
-  @override
-  String get tooltipSettingsConfirm => 'Staðfesta stillingar';
-
-  @override
-  String get hintNoteExample => 'Dæmi: Samhengi, samheiti o.s.frv.';
-
-  @override
-  String get hintTagExample => 'Dæmi: Viðskipti, ferðalög...';
-
-  @override
-  String get addNew => 'Bæta við nýju';
-
-  @override
-  String get newNotebookTitle => 'Nafn á nýrri minnisbók';
-
-  @override
-  String get enterNameHint => 'Sláðu inn nafn';
-
-  @override
-  String get add => 'Bæta við';
-
-  @override
-  String get openSettings => 'Opna stillingar';
-
-  @override
-  String get helpNotebook => 'Veldu möppuna til að vista þýddar niðurstöður í.';
-
-  @override
-  String get helpNote =>
-      'Skrifaðu frjálst um merkingu orðsins, dæmi eða aðstæður.';
-
-  @override
-  String get helpTag => 'Sláðu inn leitarorð til að flokka eða leita seinna.';
-
-  @override
-  String get requestTranslation => 'Sækja um þýðingu';
-
-  @override
-  String get statusRequestSuccess => 'Beiðni um þýðingu tókst.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Beiðni um þýðingu mistókst: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Námstungumál ekki stutt';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Valin gögn styðja ekki núverandi námstungumál ($targetLang) og því er ekki hægt að vista þau staðbundið. Viltu biðja um þýðingu?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Veldu tungumál';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Farðu í Valmynd > Tungumál til að velja þitt tungumál og tungumálið sem þú vilt læra.';
-
-  @override
-  String get quickStartStep2Title => '2. Grunnflæði';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Búðu til þín eigin spjöld í þessari röð: Inntak (hljóðnemi/lyklaborð) -> Þýðing -> Vista.';
-
-  @override
-  String get quickStartStep3Title => '3. Nýttu stillingar';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Æfðu þig í spjalli og æfðu framburð með því að horfa á textann í Framburðarflipanum.';
-
-  @override
-  String get noteGuidance =>
-      'Þar sem þú slærð inn frekari upplýsingar fyrir nákvæmari þýðingu';
 }

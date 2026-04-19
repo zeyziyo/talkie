@@ -1,32 +1,10 @@
 {
   "@@locale": "ar",
-  "basicWords": "مستودع الكلمات الأساسي",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "لغة الإدخال",
-  "translationLanguage": "لغة الترجمة",
-  "simplifiedGuidance": "حوّل المحادثات اليومية إلى لغات أجنبية في لحظة! يسجل Talkie حياتك اللغوية.",
-  "noDataForLanguage": "لا توجد بيانات تعلّم للغة التي اخترتها في قاعدة البيانات المحلية. يرجى تنزيل البيانات أو اختيار لغة أخرى.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "إلغاء",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "الدقة",
-  "ttsMissing": "محرك تحويل النص إلى كلام لهذه اللغة غير مثبت على جهازك.",
-  "ttsInstallGuide": "يرجى تثبيت بيانات اللغة المقابلة في إعدادات Android> Google TTS.",
   "adLoading": "جارٍ تحميل الإعلان. يرجى المحاولة مرة أخرى لاحقًا.",
+  "add": "إضافة",
+  "addNew": "إضافة جديد",
   "addNewSubject": "إضافة اسم جديد",
-  "addParticipant": "إضافة مشارك",
   "addTagHint": "إضافة علامة...",
   "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "مستودع الكلمات الأساسية",
+  "basicWords": "مستودع الكلمات الأساسي",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "إلغاء",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "حالة النصب",
   "casePossessive": "حالة الإضافة",
   "casePossessivePronoun": "ضمير الملكية",
   "caseReflexive": "ضمير انعكاسي",
   "caseSubject": "حالة الرفع",
-  "chatAiChat": "محادثة",
-  "chatAllConversations": "جميع المحادثات",
-  "chatChoosePersona": "اختر شخصية",
-  "chatEndMessage": "هل أنت متأكد أنك تريد إنهاء المحادثة؟",
-  "chatEndTitle": "إنهاء وحفظ المحادثة",
-  "chatFailed": "فشل الدردشة: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "مقتطفات من المحادثة ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "سجل الدردشة",
-  "chatNew": "محادثة جديدة",
-  "chatNewChat": "دردشة جديدة",
-  "chatNoConversations": "لا توجد محادثات حتى الآن",
-  "chatSearchHint": "ابحث عن طريق عنوان المحادثة...",
-  "chatNoteSearchHint": "البحث في الملاحظات...",
-  "chatSaveAndExit": "حفظ وخروج",
-  "chatStartNewPrompt": "ابدأ محادثة جديدة للتدريب!",
-  "chatTypeHint": "اكتب رسالة...",
-  "chatUntitled": "محادثة بدون عنوان",
   "checking": "جاري التحقق...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "هل أنت متأكد أنك تريد حذف هذه المحادثة؟\nلا يمكنك استعادة المحادثات المحذوفة.",
-  "confirmDeleteParticipant": "هل أنت متأكد أنك تريد حذف هذا المشارك؟",
   "contextTagHint": "اكتب الموقف لتسهيل التمييز لاحقًا",
   "contextTagLabel": "السياق/الوضع (اختياري) - مثال: تحية صباحية، كلام رسمي",
   "copiedToClipboard": "تم النسخ إلى الحافظة!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "تدرب على المحادثات من خلال تمثيل الأدوار. اختر الإجابات المناسبة وقلها.",
-  "dialogueQuestTitle": "مهمة الحوار",
-  "disambiguationPrompt": "어떤 의미로 번역하시겠습니까?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "의미 선택",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "ليس لديك حساب؟",
-  "editParticipant": "تعديل مشارك",
   "email": "البريد الإلكتروني",
   "emailAlreadyInUse": "هذا البريد الإلكتروني مُسجَّل بالفعل. يرجى تسجيل الدخول أو استعادة كلمة المرور.",
+  "enterNameHint": "أدخل الاسم",
   "enterNewSubjectName": "أدخل اسمًا جديدًا",
   "enterSentenceHint": "أدخل جملة...",
   "enterTextHint": "أدخل النص المراد ترجمته",
@@ -157,15 +101,16 @@
   "@error": {
     "description": "Error dialog title"
   },
-  "errorHateSpeech": "혐오 표현이 포함되어 있어 번역할 수 없습니다.",
-  "errorOtherSafety": "AI 안전 정책에 의해 번역이 거부되었습니다.",
-  "errorProfanity": "비속어가 포함되어 있어 번역할 수 없습니다.",
+  "errorHateSpeech": "لا يمكن الترجمة بسبب خطاب الكراهية.",
+  "errorOtherSafety": "تم رفض الترجمة بواسطة سياسة أمان الذكاء الاصطناعي.",
+  "errorProfanity": "لا يمكن الترجمة بسبب استخدام لغة بذيئة.",
   "errorSelectCategory": "الرجاء تحديد كلمة أو جملة أولاً!",
-  "errorSexualContent": "선정적인 내용이 포함되어 있어 번역할 수 없습니다.",
+  "errorSexualContent": "لا يمكن الترجمة بسبب محتوى جنسي.",
   "errors": "أخطاء:",
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "النص الذي تم التعرف عليه",
   "female": "أنثى",
   "file": "الملف:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "وضع اللعبة",
   "gameOver": "انتهت اللعبة",
   "gender": "الجنس",
-  "labelFilterMaterial": "مادة العرض",
-  "labelFilterTag": "الوسم",
   "generalTags": "علامات عامة",
   "getMaterials": "الحصول على المواد",
   "good": "جيد",
   "googleContinue": "المتابعة بحساب Google",
-  "helpDialogueImportDesc": "استيراد مجموعة حوار كاملة كملف JSON.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "لاستيراد مواد الدراسة في الوضع 3، قم بإنشاء ملف JSON بالهيكل التالي:",
-  "helpJsonTypeDialogue": "حوار",
   "helpJsonTypeSentence": "جملة",
   "helpJsonTypeWord": "كلمة",
   "helpMode1Desc": "ابدأ رحلتك في تعلم اللغة بأكثر الطرق سهولة باستخدام ميكروفون ثلاثي الأبعاد ممتاز وأيقونة لوحة مفاتيح كبيرة.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• اختيار مجموعة المواد: استخدم القائمة الموجودة في أعلى اليمين (⋮) لاختيار 'اختيار مجموعة مواد التعلم' أو 'مكتبة المواد عبر الإنترنت'\n• قلب البطاقة: تحقق من الترجمة باستخدام 'إظهار/إخفاء'\n• الاستماع: تشغيل النطق باستخدام أيقونة مكبر الصوت\n• إكمال التعلم: ضع علامة (V) لإكمال التعلم\n• حذف: اضغط لفترة طويلة (Long Click) على البطاقة لحذف السجل\n• البحث والتصفية: دعم شريط البحث (بحث ذكي في الوقت الفعلي) والعلامات والمرشحات التي تبدأ بالحرف",
   "helpMode3Desc": "استمع إلى الجملة وتمرن على النطق عن طريق التظليل.",
   "helpMode3Details": "• اختيار المادة: اختر حزمة تعلم\n• الفاصل: [-] [+] وقت الانتظار (3-60 ثانية)\n• بدء/إيقاف: التحكم بالجلسة\n• تحدث: استمع للصوت وردد\n• الملاحظات: درجة الدقة (0-100)\n• إعادة المحاولة: زر إعادة المحاولة إذا لم يتم اكتشاف الصوت",
-  "helpModeChatDesc": "تدرب على المحادثات الواقعية عن طريق التحدث مع شخصية الذكاء الاصطناعي.",
-  "helpModeChatDetails": "• دردشة الذكاء الاصطناعي: تدرب على المحادثات العملية مع شخصية من قائمة 'دردشة' في شريط علامات التبويب السفلي\n• إعداد الشخصية: حدد جنس واسم ورمز لغة الطرف الآخر بحرية\n• مسرحية نظام تحديد المواقع العالمي (GPS): يوصي بمواضيع المحادثة المناسبة للمكان من خلال التعرف على موقعي الحالي\n• لغتان: يتم عرض إجابة الذكاء الاصطناعي مع الترجمة لتعظيم تأثير التعلم\n• إدارة السجلات: تصفية سجلات المحادثات السابقة وحفظ رسائل معينة في المحادثة كمواد تعليمية",
+  "helpNote": "سجل بحرية معاني الكلمات أو الأمثلة أو المواقف وما إلى ذلك.",
+  "helpNotebook": "اختر المجلد لحفظ الترجمة.",
   "helpTabJson": "تنسيق JSON",
   "helpTabModes": "أوضاع",
   "helpTabQuickStart": "بداية سريعة",
   "helpTabTour": "جولة",
+  "helpTag": "أدخل الكلمات الرئيسية لتصنيفها أو البحث عنها لاحقًا.",
   "helpTitle": "مساعدة ودليل",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "إخفاء",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "مثال: سياق الكلام، الكلمات المتشابهة",
+  "hintTagExample": "مثال: عمل، سفر...",
+  "homeTab": "ترجمة",
   "importAdded": "تمت الإضافة: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "تم استيراد {files} ملف، {entries} عنصر.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "استيراد JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "ملف JSON واحد",
+  "importSourceFolder": "مجلد (هيكل مكتبة خاص باللغة)",
+  "importSourceTitle": "اختر مصدر الاستيراد",
+  "importSourceZip": "ملف ZIP (مجلد مضغوط)",
   "importTotal": "الإجمالي: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,7 +246,9 @@
   "@importing": {
     "description": "Import in progress"
   },
-  "inputModeTitle": "입력",
+  "inputContent": "محتوى الإدخال",
+  "inputLanguage": "لغة الإدخال",
+  "inputModeTitle": "إدخال",
   "intervalSeconds": "الفاصل: {seconds} ثانية",
   "@intervalSeconds": {
     "placeholders": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "الرجاء إدخال بريد إلكتروني صالح.",
   "kakaoContinue": "المتابعة بحساب الكاكاو",
+  "labelDetails": "إعدادات تفصيلية",
+  "labelFilterMaterial": "مادة العرض",
+  "labelFilterTag": "الوسم",
   "labelLangCode": "رمز اللغة (مثال: en-US, ko-KR)",
-  "labelName": "اسم",
   "labelNote": "ملاحظة",
   "labelPOS": "نوع الكلمة",
-  "labelRole": "الدور",
   "labelSentence": "جملة",
   "labelSentenceCollection": "مجموعة الجمل",
   "labelSentenceType": "نوع الجملة",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "جارٍ تحميل المشاركين...",
   "location": "الموقع",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "تسجيل الدخول",
   "logout": "تسجيل الخروج",
   "logoutConfirmMessage": "هل أنت متأكد أنك تريد تسجيل الخروج من هذا الجهاز؟",
   "logoutConfirmTitle": "تسجيل الخروج",
   "male": "ذكر",
-  "manageParticipants": "إدارة المشاركين",
   "manual": "إدخال يدوي",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "معلومات المادة",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "أنا",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "استيراد المواد من الجهاز",
   "menuHelp": "مساعدة",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "مجموعتي من الجمل",
   "myWordbook": "مفرداتي",
   "neutral": "محايد",
+  "newNotebookTitle": "اسم دفتر الملاحظات الجديد",
   "newSubjectName": "اسم جديد للمجموعة/الجمل",
   "next": "التالي",
-  "noDialogueHistory": "لا يوجد سجل حوار.",
-  "noInternetWarningMic": "لا يوجد اتصال بالإنترنت. قد لا يكون التعرف على الصوت ممكنًا في وضع عدم الاتصال.",
-  "noInternetWarningTranslate": "لا يوجد اتصال بالإنترنت. لا يمكن استخدام وظيفة الترجمة في وضع عدم الاتصال. الرجاء استخدام وضع المراجعة.",
+  "noDataForLanguage": "لا توجد بيانات تعلّم للغة التي اخترتها في قاعدة البيانات المحلية. يرجى تنزيل البيانات أو اختيار لغة أخرى.",
   "noMaterialsInCategory": "لا توجد مواد في هذه الفئة.",
-  "noParticipantsFound": "لم يتم العثور على مشاركين مسجلين.",
   "noRecords": "لا توجد سجلات للغة المحددة",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "لم يتم اكتشاف صوت",
   "notSelected": "- لم يتم الاختيار -",
+  "noteGuidance": "حيث تقوم بإدخال تفاصيل إضافية لترجمة أكثر دقة",
   "onlineLibraryCheckInternet": "يرجى التحقق من اتصالك بالإنترنت أو المحاولة مرة أخرى لاحقًا.",
   "onlineLibraryLoadFailed": "فشل تحميل المواد.",
   "onlineLibraryNoMaterials": "لا توجد مواد.",
-  "participantDeleted": "تم حذف المشارك.",
-  "participantRename": "إعادة تسمية المشارك",
-  "partner": "شريك",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "وضع الشريك",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "فتح الإعدادات",
   "password": "كلمة المرور",
   "passwordTooShort": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل.",
   "perfect": "ممتاز!",
-  "personaFriend": "صديق محلي",
-  "personaGuide": "مرشد سياحي",
-  "personaTeacher": "مدرس لغة إنجليزية",
+  "pickGallery": "اختر من المعرض",
   "playAgain": "العب مرة أخرى",
   "playbackFailed": "فشل التشغيل: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "صفة",
   "posAdverb": "ظرف",
+  "posArticle": "أداة التعريف",
   "posConjunction": "حرف عطف",
   "posInterjection": "حرف تعجب",
   "posNoun": "اسم",
+  "posParticle": "حرف إضافة/حرف جر",
   "posPreposition": "حرف جر",
   "posPronoun": "ضمير",
   "posVerb": "فعل",
   "practiceModeTitle": "تدريب",
   "practiceWordsOnly": "تدرب على الكلمات فقط",
+  "processing": "جارٍ المعالجة...",
   "progress": "التقدم: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "حدد لغتك ولغة التعلم أولاً في القائمة > إعدادات اللغة.",
+  "quickStartStep1Title": "1. إعداد اللغة",
+  "quickStartStep2Desc": "أنشئ بطاقات التعلم الخاصة بك بترتيب الإدخال (ميكروفون/لوحة المفاتيح) -> الترجمة -> الحفظ.",
+  "quickStartStep2Title": "2. التدفق الأساسي",
+  "quickStartStep3Desc": "تدرب بالمحادثة، وشاهد النص في علامة تبويب ممارسة النطق وتدرب على النطق مباشرة.",
+  "quickStartStep3Title": "3. استخدام الوضع",
   "recentNItems": "عرض آخر {count} عناصر تم إنشاؤها",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "طلب الترجمة",
   "reset": "إعادة تعيين",
   "resetPracticeHistory": "إعادة تعيين سجل التدريب",
   "retry": "إعادة المحاولة؟",
@@ -499,11 +450,10 @@
       }
     }
   },
-  "reviewModeTitle": "복습",
-  "roleAi": "الذكاء الاصطناعي",
-  "roleThirdParty": "طرف ثالث",
-  "roleUser": "مستخدم",
+  "reviewModeTitle": "مراجعة",
   "save": "حفظ",
+  "saveAsSentence": "حفظ كجملة",
+  "saveAsWord": "حفظ ككلمة",
   "saveData": "حفظ البيانات",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "حفظ في سجل المسح",
   "saveTranslationsFromSearch": "احفظ الترجمات من وضع البحث",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "اختر صورة للمسح",
+  "scanLabel": "مسح",
   "score": "الدقة: {score}%",
   "@score": {
     "placeholders": {
@@ -546,12 +499,12 @@
   "searchSentenceHint": "البحث عن جملة...",
   "searchWordHint": "البحث عن كلمة...",
   "sectionSentence": "قسم الجملة",
-  "sectionSentences": "문장",
+  "sectionSentences": "جمل",
   "@sectionSentences": {
     "description": "Header for sentences section in material selection"
   },
   "sectionWord": "قسم الكلمات",
-  "sectionWords": "단어",
+  "sectionWords": "كلمات",
   "@sectionWords": {
     "description": "Header for words section in material selection"
   },
@@ -560,96 +513,87 @@
   "@selectMaterialPrompt": {
     "description": "Selection prompt"
   },
-  "selectMaterialSet": "학습 자료집 선택",
+  "selectMaterialSet": "اختر مجموعة المواد التعليمية",
   "@selectMaterialSet": {
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "حدد جزءًا من الكلام",
-  "selectParticipants": "تحديد المشاركين",
-  "selectSentenceType": "حدد نوع الجملة",
   "selectStudyMaterial": "اختر مادة الدراسة",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "جملة",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "اشتراك",
-  "similarTextFound": "تم العثور على نص مشابه",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "건너뛰기",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "المصدر:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "لغة المصدر",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "حوّل المحادثات اليومية إلى لغات أجنبية في لحظة! يسجل Talkie حياتك اللغوية.",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "تحدث الآن!",
-  "speaker": "المتحدث",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "تحديد المتحدث",
-  "speakingPractice": "ممارسة التحدث",
-  "startChat": "بدء المحادثة",
-  "startPractice": "بدء الممارسة",
   "startTutorial": "بدء الجولة",
-  "startWarning": "تحذير",
   "startsWith": "يبدأ بـ",
   "statusCheckEmail": "يرجى التحقق من بريدك الإلكتروني لإكمال عملية المصادقة.",
   "statusDownloading": "جارٍ التنزيل: {name}...",
-  "statusImportFailed": "فشل الاستيراد: {error}",
-  "statusImportSuccess": "اكتمل استيراد {name}",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "تم إلغاء تسجيل الدخول.",
-  "statusLoginFailed": "فشل تسجيل الدخول: {error}",
-  "statusLoginSuccess": "تم تسجيل الدخول بنجاح.",
-  "statusLogoutSuccess": "تم تسجيل الخروج.",
-  "statusSignUpFailed": "فشل الاشتراك: {error}",
-  "statusSigningUp": "جارٍ الاشتراك...",
-  "stopPractice": "إيقاف الممارسة",
-  "studyComplete": "مدروس",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "سجلات الدراسة ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "فشل الاستيراد: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "اكتمل استيراد {name}",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "فشل تسجيل الدخول: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "تم تسجيل الدخول بنجاح.",
+  "statusLogoutSuccess": "تم تسجيل الخروج.",
+  "statusRequestFailed": "فشل طلب الترجمة: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "تم طلب الترجمة بنجاح.",
+  "stopPractice": "إيقاف الممارسة",
+  "studyLangNotFoundDesc": "المادة التي اخترتها لا تدعم لغة الدراسة المحددة حاليًا ({targetLang}) ولا يمكن حفظها محليًا. هل ترغب في طلب ترجمة؟",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "لغة الدراسة غير مدعومة",
   "styleFormal": "رسمي",
   "styleInformal": "غير رسمي",
   "stylePolite": "مهذب",
   "styleSlang": "عامية/لغة الشارع",
-  "subject": "الموضوع:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "تبديل اللغات",
-  "switchToAi": "التبديل إلى وضع الذكاء الاصطناعي",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "التبديل إلى وضع الشريك",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "جارٍ مزامنة البيانات...",
-  "tabConversation": "محادثة",
   "tabReview": "مراجعة ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "تقليل",
   "tooltipIncrease": "زيادة",
   "tooltipSearch": "بحث",
+  "tooltipSettingsConfirm": "تأكيد الإعدادات",
   "tooltipSpeaking": "تحدث",
   "tooltipStudyReview": "دراسة+مراجعة",
   "totalRecords": "إجمالي {count} سجل (عرض الكل)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "ترجمة الآن",
   "translating": "جاري الترجمة...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "لغة الترجمة",
   "translationLimitExceeded": "تجاوزت حد الترجمة",
   "translationLimitMessage": "لقد استخدمت جميع تراجمك المجانية اليومية (5 مرات).\n\nهل تريد مشاهدة إعلان وتعبئة 5 تراجم على الفور؟",
   "translationLoaded": "تم تحميل الترجمة المحفوظة",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "تمت إعادة تعبئة عداد الترجمة إلى 5!",
+  "translationResult": "نتيجة الترجمة",
   "translationResultHint": "نتيجة الترجمة - قابلة للتعديل",
   "tryAgain": "حاول مرة أخرى",
-  "tutorialAiChatDesc": "تدرب على محادثات حقيقية مع شخصية الذكاء الاصطناعي.",
-  "tutorialAiChatTitle": "دردشة الذكاء الاصطناعي",
+  "ttsInstallGuide": "يرجى تثبيت بيانات اللغة المقابلة في إعدادات Android> Google TTS.",
+  "ttsMissing": "محرك تحويل النص إلى كلام لهذه اللغة غير مثبت على جهازك.",
+  "ttsUnsupportedNatively": "الإعدادات الأصلية لهذا الجهاز لا تدعم إخراج الصوت لهذه اللغة.",
   "tutorialContextDesc": "أضف سياقًا (مثلاً: الصباح) لتمييز الجمل المتشابهة.",
   "tutorialContextTitle": "وسم السياق",
   "tutorialLangSettingsDesc": "قم بتعيين اللغة الأصلية واللغة الهدف للترجمة.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "اضغط هنا لترجمة نصك.",
   "tutorialTransTitle": "ترجمة",
   "typeExclamation": "جملة تعجبية",
+  "typeIdiom": "تعبير اصطلاحي",
   "typeImperative": "جملة أمرية",
+  "typeProverb": "مثل/حكمة",
   "typeQuestion": "جملة استفهامية",
   "typeStatement": "جملة خبرية",
   "usageLimitTitle": "تم الوصول إلى الحد",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "عرض الدليل عبر الإنترنت",
   "voluntaryTranslations": "ترجمات تطوعية",
   "watchAdAndRefill": "شاهد إعلانًا واملأ (+5 مرات)",
+  "welcomeButton": "ابدأ الآن",
+  "welcomeDesc": "مرحباً بك في Talkie! نحن ندعم أكثر من 80 لغة عالمية بنزاهة 100٪، مع تصميم ثلاثي الأبعاد ممتاز جديد وأداء محسّن لتجربة تعليمية مثالية.",
+  "welcomeTitle": "مرحبًا بك في Talkie!",
   "word": "كلمة",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "دافع عن قاعدتك عن طريق قول الكلمات قبل أن يصل العدو.",
   "wordDefenseTitle": "الدفاع عن الكلمات",
   "wordModeLabel": "وضع الكلمات",
-  "yourPronunciation": "نطقك",
-  "ttsUnsupportedNatively": "الإعدادات الأصلية لهذا الجهاز لا تدعم إخراج الصوت لهذه اللغة.",
-  "homeTab": "ترجمة",
-  "welcomeTitle": "مرحبًا بك في Talkie!",
-  "welcomeDesc": "مرحباً بك في Talkie! نحن ندعم أكثر من 80 لغة عالمية بنزاهة 100٪، مع تصميم ثلاثي الأبعاد ممتاز جديد وأداء محسّن لتجربة تعليمية مثالية.",
-  "welcomeButton": "ابدأ الآن",
-  "labelDetails": "إعدادات تفصيلية",
-  "translationResult": "نتيجة الترجمة",
-  "inputContent": "محتوى الإدخال",
-  "translateNow": "ترجمة الآن",
-  "tooltipSettingsConfirm": "تأكيد الإعدادات",
-  "hintNoteExample": "مثال: سياق الكلام، الكلمات المتشابهة",
-  "hintTagExample": "مثال: عمل، سفر...",
-  "addNew": "إضافة جديد",
-  "newNotebookTitle": "اسم دفتر الملاحظات الجديد",
-  "enterNameHint": "أدخل الاسم",
-  "add": "إضافة",
-  "openSettings": "فتح الإعدادات",
-  "helpNotebook": "اختر المجلد لحفظ الترجمة.",
-  "helpNote": "سجل بحرية معاني الكلمات أو الأمثلة أو المواقف وما إلى ذلك.",
-  "helpTag": "أدخل الكلمات الرئيسية لتصنيفها أو البحث عنها لاحقًا.",
-  "requestTranslation": "طلب الترجمة",
-  "statusRequestSuccess": "تم طلب الترجمة بنجاح.",
-  "statusRequestFailed": "فشل طلب الترجمة: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "لغة الدراسة غير مدعومة",
-  "studyLangNotFoundDesc": "المادة التي اخترتها لا تدعم لغة الدراسة المحددة حاليًا ({targetLang}) ولا يمكن حفظها محليًا. هل ترغب في طلب ترجمة؟",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. إعداد اللغة",
-  "quickStartStep1Desc": "حدد لغتك ولغة التعلم أولاً في القائمة > إعدادات اللغة.",
-  "quickStartStep2Title": "2. التدفق الأساسي",
-  "quickStartStep2Desc": "أنشئ بطاقات التعلم الخاصة بك بترتيب الإدخال (ميكروفون/لوحة المفاتيح) -> الترجمة -> الحفظ.",
-  "quickStartStep3Title": "3. استخدام الوضع",
-  "quickStartStep3Desc": "تدرب بالمحادثة، وشاهد النص في علامة تبويب ممارسة النطق وتدرب على النطق مباشرة.",
-  "noteGuidance": "حيث تقوم بإدخال تفاصيل إضافية لترجمة أكثر دقة"
+  "yourPronunciation": "نطقك"
 }

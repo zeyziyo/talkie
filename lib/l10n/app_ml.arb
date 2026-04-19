@@ -1,32 +1,10 @@
 {
   "@@locale": "ml",
-  "basicWords": "അടിസ്ഥാന വാക്ക് ശേഖരം",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "ഇൻപുട്ട് ഭാഷ",
-  "translationLanguage": "വിവർത്തന ഭാഷ",
-  "simplifiedGuidance": "നിങ്ങളുടെ ദൈനംദിന സംഭാഷണങ്ങൾ തൽക്ഷണം ഒരു വിദേശ ഭാഷയിലേക്ക് മാറ്റുക! ടോക്കി നിങ്ങളുടെ ഭാഷാ ജീവിതം രേഖപ്പെടുത്തുന്നു.",
-  "noDataForLanguage": "നിങ്ങൾ തിരഞ്ഞെടുത്ത ഭാഷയിലുള്ള പഠന സാമഗ്രികൾ പ്രാദേശിക ഡാറ്റാബേസിൽ ലഭ്യമല്ല. ഡാറ്റ ഡൗൺലോഡ് ചെയ്യുക അല്ലെങ്കിൽ മറ്റൊരു ഭാഷ തിരഞ്ഞെടുക്കുക.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "റദ്ദാക്കുക",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "കൃത്യത",
-  "ttsMissing": "ഈ ഭാഷയുടെ വോയിസ് എഞ്ചിൻ നിങ്ങളുടെ ഉപകരണത്തിൽ ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല.",
-  "ttsInstallGuide": "Android ക്രമീകരണങ്ങൾ > Google TTS-ൽ ഈ ഭാഷാ ഡാറ്റ ഇൻസ്റ്റാൾ ചെയ്യുക.",
   "adLoading": "പരസ്യം ലോഡ് ചെയ്യുന്നു. ദയവായി കുറച്ച് കഴിഞ്ഞ് വീണ്ടും ശ്രമിക്കുക.",
+  "add": "ചേർക്കുക",
+  "addNew": "പുതിയവ ചേർക്കുക",
   "addNewSubject": "പുതിയ പേര് ചേർക്കുക",
-  "addParticipant": "പങ്കാളിയെ ചേർക്കുക",
   "addTagHint": "ടാഗ് ചേർക്കുക...",
   "alreadyHaveAccount": "അക്കൗണ്ടുണ്ടോ?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "അടിസ്ഥാന വാക്കുകളുടെ ശേഖരം",
+  "basicWords": "അടിസ്ഥാന വാക്ക് ശേഖരം",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "റദ്ദാക്കുക",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "കർമ്മണി",
   "casePossessive": "ഉടമസ്ഥത",
   "casePossessivePronoun": "ഉടമസ്ഥതയിലുള്ള സർവ്വനാമം",
   "caseReflexive": "റിഫ്ലെക്സീവ്",
   "caseSubject": "കർത്തരി",
-  "chatAiChat": "ചാറ്റ്",
-  "chatAllConversations": "എല്ലാ സംഭാഷണങ്ങളും",
-  "chatChoosePersona": "വ്യക്തിത്വം തിരഞ്ഞെടുക്കുക",
-  "chatEndMessage": "സംഭാഷണം അവസാനിപ്പിക്കണോ?",
-  "chatEndTitle": "സംഭാഷണം അവസാനിപ്പിച്ച് സംരക്ഷിക്കുക",
-  "chatFailed": "ചാറ്റ് പരാജയപ്പെട്ടു: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "സംഭാഷണത്തിൽ നിന്ന് എടുത്തത് ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "സംഭാഷണ ചരിത്രം",
-  "chatNew": "പുതിയ സംഭാഷണം",
-  "chatNewChat": "പുതിയ സംഭാഷണം",
-  "chatNoConversations": "സംഭാഷണങ്ങളൊന്നും ലഭ്യമല്ല",
-  "chatSearchHint": "സംഭാഷണ ശീർഷകം ഉപയോഗിച്ച് തിരയുക...",
-  "chatNoteSearchHint": "അഭിപ്രായത്തിലൂടെ തിരയുക...",
-  "chatSaveAndExit": "സംരക്ഷിച്ച് പുറത്തുകടക്കുക",
-  "chatStartNewPrompt": "പരിശീലനത്തിനായി ഒരു പുതിയ സംഭാഷണം ആരംഭിക്കുക!",
-  "chatTypeHint": "ഒരു സന്ദേശം ടൈപ്പ് ചെയ്യുക...",
-  "chatUntitled": "പേരില്ലാത്ത സംഭാഷണം",
   "checking": "പരിശോധിക്കുന്നു...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "നിങ്ങൾക്ക് ഈ സംഭാഷണം ഇല്ലാതാക്കണോ?\nഇല്ലാതാക്കിയ സംഭാഷണം വീണ്ടെടുക്കാൻ കഴിയില്ല.",
-  "confirmDeleteParticipant": "ഈ പങ്കാളിയെ നീക്കം ചെയ്യണോ?",
   "contextTagHint": "പിന്നീട് വേർതിരിച്ചറിയാൻ എളുപ്പത്തിന് സാഹചര്യം എഴുതുക",
   "contextTagLabel": "സന്ദർഭം/അവസ്ഥ (ഓപ്ഷണൽ) - ഉദാഹരണം: പ്രഭാത വന്ദനം, ആദരവ്",
   "copiedToClipboard": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "റോൾ പ്ലേയിലൂടെ സംഭാഷണം പരിശീലിക്കുക. ഉചിതമായ മറുപടി തിരഞ്ഞെടുത്ത് പറയുക.",
-  "dialogueQuestTitle": "സംഭാഷണ ക്വസ്റ്റ്",
-  "disambiguationPrompt": "ഏത് അർത്ഥത്തിലേക്കാണ് വിവർത്തനം ചെയ്യേണ്ടത്?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "അർത്ഥം തിരഞ്ഞെടുക്കുക",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "അക്കൗണ്ടില്ലേ?",
-  "editParticipant": "പങ്കാളിയെ എഡിറ്റ് ചെയ്യുക",
   "email": "ഇമെയിൽ",
   "emailAlreadyInUse": "ഈ ഇമെയിൽ ഇതിനകം രജിസ്റ്റർ ചെയ്തിട്ടുണ്ട്. ലോഗിൻ ചെയ്യുക അല്ലെങ്കിൽ പാസ്‌വേഡ് വീണ്ടെടുക്കാൻ ശ്രമിക്കുക.",
+  "enterNameHint": "പേര് നൽകുക",
   "enterNewSubjectName": "പുതിയ പേര് നൽകുക",
   "enterSentenceHint": "ഒരു വാക്യം നൽകുക...",
   "enterTextHint": "പരിഭാഷ ചെയ്യേണ്ട വാചകം നൽകുക",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "തിരിച്ചറിഞ്ഞ വാചകം",
   "female": "സ്ത്രീ",
   "file": "ഫയൽ:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "ഗെയിം മോഡ്",
   "gameOver": "ഗെയിം ഓവർ",
   "gender": "ലിംഗം",
-  "labelFilterMaterial": "മെറ്റീരിയൽ",
-  "labelFilterTag": "ടാഗ്",
   "generalTags": "പൊതുവായ ടാഗുകൾ",
   "getMaterials": "മെറ്റീരിയലുകൾ നേടുക",
   "good": "നല്ലത്",
   "googleContinue": "Google ഉപയോഗിച്ച് തുടരുക",
-  "helpDialogueImportDesc": "JSON ഫയൽ ഉപയോഗിച്ച് സംഭാഷണ ശകലങ്ങൾ ഇറക്കുമതി ചെയ്യുക.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "മോഡ് 3-ൽ ഇറക്കുമതി ചെയ്യാൻ, JSON സൃഷ്ടിക്കുക:",
-  "helpJsonTypeDialogue": "സംഭാഷണം (Dialogue)",
   "helpJsonTypeSentence": "വാക്യം (Sentence)",
   "helpJsonTypeWord": "വാക്ക് (Word)",
   "helpMode1Desc": "മികച്ച 3D മൈക്രോഫോണും വലിയ കീബോർഡ് ഐക്കണുകളും ഉപയോഗിച്ച് ഏറ്റവും എളുപ്പത്തിൽ ഭാഷാ പഠനം ആരംഭിക്കുക.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• മെറ്റീരിയൽ തിരഞ്ഞെടുക്കുക: മുകളിൽ വലതുവശത്തുള്ള മെനുവിൽ(⋮) നിന്ന് 'പഠന സഹായി തിരഞ്ഞെടുക്കുക' അല്ലെങ്കിൽ 'ഓൺലൈൻ ലൈബ്രറി' ഉപയോഗിക്കുക.\n• കാർഡ് മറയ്ക്കുക: 'കാണിക്കുക/മറയ്ക്കുക' ഉപയോഗിച്ച് വിവർത്തനം പരിശോധിക്കുക.\n• കേൾക്കുക: സ്പീക്കർ ഐക്കൺ ഉപയോഗിച്ച് ഉച്ചാരണം പ്ലേ ചെയ്യുക.\n• പഠനം പൂർത്തിയാക്കുക: ശരി അടയാളം (V) ഉപയോഗിച്ച് പഠനം പൂർത്തിയാക്കുക.\n• ഇല്ലാതാക്കുക: കാർഡ് ദീർഘനേരം അമർത്തി (Long Click) റെക്കോർഡ് ഇല്ലാതാക്കുക.\n• തിരയുക, ഫിൽട്ടർ ചെയ്യുക: സെർച്ച് ബാർ (തത്സമയ സ്മാർട്ട് തിരയൽ), ടാഗുകൾ, ആദ്യ അക്ഷര ഫിൽട്ടറുകൾ എന്നിവ പിന്തുണയ്ക്കുന്നു.",
   "helpMode3Desc": "ഒരു വാചകം കേട്ട് അത് അനുകരിച്ച് (ഷാഡോയിംഗ്) ഉച്ചാരണം പരിശീലിക്കുക.",
   "helpMode3Details": "• തിരഞ്ഞെടുക്കുക: പാക്കേജ് തിരഞ്ഞെടുക്കുക\n• ഇടവേള: [-] [+] കാത്തിരിപ്പ് സമയം (3സെ-60സെ)\n• ആരംഭിക്കുക/നിർത്തുക: സെഷൻ നിയന്ത്രിക്കുക\n• സംസാരിക്കുക: ഓഡിയോ കേട്ട് ആവർത്തിക്കുക\n• സ്കോർ: കൃത്യത (0-100)\n• വീണ്ടും ശ്രമിക്കുക: ശബ്ദം കണ്ടെത്തിയില്ലെങ്കിൽ ബട്ടൺ",
-  "helpModeChatDesc": "AI വ്യക്തിത്വവുമായി സംഭാഷണം നടത്തി തത്സമയ സംഭാഷണം പരിശീലിക്കുക.",
-  "helpModeChatDetails": "• AI ചാറ്റ്: താഴെയുള്ള ടാബ് ബാറിലെ 'ചാറ്റ്' മെനുവിൽ വ്യക്തിത്വങ്ങളുമായി സംഭാഷണം പരിശീലിക്കുക\n• വ്യക്തിത്വ ക്രമീകരണം: എതിരാളിയുടെ ലിംഗഭേദം, പേര്, ഭാഷാ കോഡ് എന്നിവ സ്വതന്ത്രമായി വ്യക്തമാക്കുക\n• GPS സാഹചര്യ നാടകം: നിങ്ങളുടെ നിലവിലെ സ്ഥാനം തിരിച്ചറിഞ്ഞ് ലൊക്കേഷന് അനുയോജ്യമായ സംഭാഷണ വിഷയങ്ങൾ ശുപാർശ ചെയ്യുന്നു\n• ദ്വിഭാഷാ: AI-യുടെ പ്രതികരണങ്ങൾ വിവർത്തനത്തോടൊപ്പം പ്രദർശിപ്പിക്കുന്നു, ഇത് പഠന ഫലം വർദ്ധിപ്പിക്കുന്നു\n• റെക്കോർഡ് മാനേജ്മെന്റ്: പഴയ സംഭാഷണ ചരിത്രം ഫിൽട്ടർ ചെയ്യുകയും സംഭാഷണത്തിനിടയിൽ പ്രത്യേക സന്ദേശങ്ങൾ പഠന സാമഗ്രികളായി സംരക്ഷിക്കുകയും ചെയ്യുക",
+  "helpNote": "വാക്കുകളുടെ അർത്ഥം, ഉദാഹരണങ്ങൾ, സാഹചര്യങ്ങൾ എന്നിവ സ്വതന്ത്രമായി രേഖപ്പെടുത്തുക.",
+  "helpNotebook": "പരിഭാഷപ്പെടുത്തിയ ഫലങ്ങൾ സംരക്ഷിക്കാൻ ഒരു ഫോൾഡർ തിരഞ്ഞെടുക്കുക.",
   "helpTabJson": "JSON ഫോർമാറ്റ്",
   "helpTabModes": "മോഡുകൾ",
   "helpTabQuickStart": "പെട്ടെന്നുള്ള ആരംഭം",
   "helpTabTour": "ടൂർ",
+  "helpTag": "പിന്നീട് തരംതിരിക്കാനോ തിരയാനോ ഉള്ള കീവേഡുകൾ നൽകുക.",
   "helpTitle": "സഹായവും വഴികാട്ടിയും",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "മറയ്ക്കുക",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "ഉദാഹരണം: സന്ദർഭം, പര്യായപദങ്ങൾ തുടങ്ങിയവ",
+  "hintTagExample": "ഉദാഹരണം: ബിസിനസ്, യാത്ര...",
+  "homeTab": "വിവർത്തനം",
   "importAdded": "ചേർത്തത്: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} ഫയലുകൾ, {entries} എൻട്രികൾ ഇറക്കുമതി ചെയ്തു.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON ഇറക്കുമതി",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "ഒരൊറ്റ JSON ഫയൽ",
+  "importSourceFolder": "ഫോൾഡർ (ഭാഷാടിസ്ഥാനത്തിലുള്ള ലൈബ്രറി ഘടന)",
+  "importSourceTitle": "ഇറക്കുമതി ഉറവിടം തിരഞ്ഞെടുക്കുക",
+  "importSourceZip": "ZIP ഫയൽ (കംപ്രസ് ചെയ്ത ഫോൾഡർ)",
   "importTotal": "ആകെ: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "ഇൻപുട്ട് ഉള്ളടക്കം",
+  "inputLanguage": "ഇൻപുട്ട് ഭാഷ",
   "inputModeTitle": "ഇൻപുട്ട്",
   "intervalSeconds": "ഇടവേള: {seconds}സെക്കൻഡ്",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "ക്രമമല്ലാത്ത ഇമെയിൽ",
   "kakaoContinue": "Kakao ഉപയോഗിച്ച് തുടരുക",
+  "labelDetails": "വിശദാംശങ്ങൾ",
+  "labelFilterMaterial": "മെറ്റീരിയൽ",
+  "labelFilterTag": "ടാഗ്",
   "labelLangCode": "ഭാഷാ കോഡ് (ഉദാഹരണം: en-US, ko-KR)",
-  "labelName": "പേര്",
   "labelNote": "കുറിപ്പ്",
   "labelPOS": "വാക്കിന്റെ ഭാഗം",
-  "labelRole": "റോൾ",
   "labelSentence": "വാക്യം",
   "labelSentenceCollection": "വാക്യ ശേഖരം",
   "labelSentenceType": "വാക്യത്തിന്റെ തരം",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "പങ്കാളികളെ ലോഡ് ചെയ്യുന്നു...",
   "location": "സ്ഥലം",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "ലോഗിൻ",
   "logout": "പുറത്ത് പോകുക",
   "logoutConfirmMessage": "നിലവിലെ ഉപകരണത്തിൽ നിന്ന് ലോഗ് ഔട്ട് ചെയ്യണോ?",
   "logoutConfirmTitle": "പുറത്ത് പോകുക",
   "male": "പുരുഷൻ",
-  "manageParticipants": "പങ്കാളികളെ നിയന്ത്രിക്കുക",
   "manual": "സ്വമേധയായുള്ള ഇൻപുട്ട്",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "മെറ്റീരിയൽ വിവരം",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "ഞാൻ",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "ഉപകരണത്തിൽ നിന്ന് മെറ്റീരിയലുകൾ ഇറക്കുമതി ചെയ്യുക",
   "menuHelp": "സഹായം",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "എൻ്റെ വാക്യ ശേഖരം",
   "myWordbook": "എൻ്റെ പദാവലി",
   "neutral": "തಟസ്ഥം",
+  "newNotebookTitle": "പുതിയ നോട്ട്ബുക്കിന്റെ പേര്",
   "newSubjectName": "പുതിയ പദാവലി/വാക്യ ശേഖരത്തിന്റെ പേര്",
   "next": "അടുത്തത്",
-  "noDialogueHistory": "സംഭാഷണ ചരിത്രമില്ല.",
-  "noInternetWarningMic": "ഇന്റർനെറ്റ് കണക്ഷൻ ഇല്ല. ഓഫ്‌ലൈനിൽ വോയിസ് റെക്കഗ്നിഷൻ ലഭ്യമല്ല.",
-  "noInternetWarningTranslate": "ഇന്റർനെറ്റ് കണക്ഷൻ ഇല്ല. ഓഫ്‌ലൈനിൽ പരിഭാഷ ലഭ്യമല്ല. റിവ്യൂ മോഡ് ഉപയോഗിക്കുക.",
+  "noDataForLanguage": "നിങ്ങൾ തിരഞ്ഞെടുത്ത ഭാഷയിലുള്ള പഠന സാമഗ്രികൾ പ്രാദേശിക ഡാറ്റാബേസിൽ ലഭ്യമല്ല. ഡാറ്റ ഡൗൺലോഡ് ചെയ്യുക അല്ലെങ്കിൽ മറ്റൊരു ഭാഷ തിരഞ്ഞെടുക്കുക.",
   "noMaterialsInCategory": "ഈ വിഭാഗത്തിൽ മെറ്റീരിയലുകളൊന്നും ലഭ്യമല്ല.",
-  "noParticipantsFound": "രജിസ്റ്റർ ചെയ്ത പങ്കാളികളില്ല.",
   "noRecords": "തിരഞ്ഞെടുത്ത ഭാഷയ്ക്ക് രേഖകളില്ല",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "ശബ്ദം കണ്ടെത്തിയില്ല",
   "notSelected": "-ഒന്നും തിരഞ്ഞെടുത്തിട്ടില്ല-",
+  "noteGuidance": "കൂടുതൽ കൃത്യമായ വിവർത്തനത്തിനായി നിങ്ങൾ കൂടുതൽ വിശദാംശങ്ങൾ നൽകുന്നിടത്ത്",
   "onlineLibraryCheckInternet": "ഇന്റർനെറ്റ് കണക്ഷൻ പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് ശ്രമിക്കുക.",
   "onlineLibraryLoadFailed": "മെറ്റീരിയലുകൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
   "onlineLibraryNoMaterials": "മെറ്റീരിയലുകൾ ലഭ്യമല്ല.",
-  "participantDeleted": "പങ്കാളിയെ നീക്കം ചെയ്തു.",
-  "participantRename": "പങ്കാളിയുടെ പേര് മാറ്റുക",
-  "partner": "പങ്കാളി",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "പങ്കാളി മോഡ്",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "ക്രമീകരണങ്ങൾ തുറക്കുക",
   "password": "രഹസ്യവാക്ക്",
   "passwordTooShort": "പാസ്‌വേഡ് 6 അക്ഷരമെങ്കിലും വേണം.",
   "perfect": "അതികഠിനം!",
-  "personaFriend": "പ്രാദേശിക സുഹൃത്ത്",
-  "personaGuide": "യാത്രാ സഹായി",
-  "personaTeacher": "ഇംഗ്ലീഷ് അധ്യാപകൻ",
+  "pickGallery": "ഗാലറിയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക",
   "playAgain": "വീണ്ടും കളിക്കുക",
   "playbackFailed": "പ്ലേബാക്ക് പരാജയപ്പെട്ടു: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "വിശേഷണം",
   "posAdverb": "ക്രിയാവിശേഷണം",
+  "posArticle": "ഉപസർഗ്ഗം",
   "posConjunction": "കൺജങ്ക്ഷൻ",
   "posInterjection": "വിക്ഷേപണി",
   "posNoun": "നാമം",
+  "posParticle": "പ്രത്യയം/വിഭക്തി",
   "posPreposition": "പ്രീപോസിഷൻ/ഇടവാക്യം",
   "posPronoun": "സർവ്വനാമം",
   "posVerb": "ക്രിയ",
   "practiceModeTitle": "പരിശീലനം",
   "practiceWordsOnly": "വാക്കുകൾ മാത്രം പരിശീലിക്കുക",
+  "processing": "പ്രോസസ്സ് ചെയ്യുന്നു...",
   "progress": "പുരോഗതി: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "മെനു > ഭാഷാ ക്രമീകരണങ്ങളിൽ നിന്ന് നിങ്ങളുടെ ഭാഷയും പഠന ഭാഷയും ആദ്യം തിരഞ്ഞെടുക്കുക.",
+  "quickStartStep1Title": "1. ഭാഷ തിരഞ്ഞെടുക്കുക",
+  "quickStartStep2Desc": "ഇൻപുട്ട് (മൈക്രോഫോൺ/കീബോർഡ്) -> വിവർത്തനം -> സംരക്ഷിക്കുക എന്ന ക്രമത്തിൽ നിങ്ങളുടെ പഠന കാർഡുകൾ ഉണ്ടാക്കുക.",
+  "quickStartStep2Title": "2. അടിസ്ഥാന രീതി",
+  "quickStartStep3Desc": "ചാറ്റ് ചെയ്ത് പരിശീലിക്കുക, ഉച്ചാരണ പരിശീലന ടാബിൽ ടെക്സ്റ്റ് നോക്കി ഉച്ചരിച്ച് പരിശീലിക്കുക.",
+  "quickStartStep3Title": "3. മോഡുകൾ പ്രയോജനപ്പെടുത്തുക",
   "recentNItems": "അടുത്തിടെ ഉണ്ടാക്കിയ {count} എണ്ണം കാണുക",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "വിവർത്തനം അഭ്യർത്ഥിക്കുക",
   "reset": "പുനഃസജ്ജമാക്കുക",
   "resetPracticeHistory": "പരിശീലന ചരിത്രം പുനഃസജ്ജമാക്കുക",
   "retry": "വീണ്ടും ശ്രമിക്കണോ?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "റിവ്യൂ",
-  "roleAi": "AI",
-  "roleThirdParty": "മൂന്നാമൻ",
-  "roleUser": "ഉപയോക്താവ്",
   "save": "സംരക്ഷിക്കുക",
+  "saveAsSentence": "വാക്യമായി സംരക്ഷിക്കുക",
+  "saveAsWord": "വാക്കായി സംരക്ഷിക്കുക",
   "saveData": "സേവ് ചെയ്യുക",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "സ്കാൻ ഹിസ്റ്ററിയിൽ സംരക്ഷിക്കുക",
   "saveTranslationsFromSearch": "തിരയൽ മോഡിൽ നിന്ന് വിവർത്തനങ്ങൾ സേവ് ചെയ്യുക",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "സ്കാൻ ചെയ്യാൻ ഒരു ചിത്രം തിരഞ്ഞെടുക്കുക",
+  "scanLabel": "സ്കാൻ",
   "score": "കൃത്യത: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "പാർട്ട് ഓഫ് സ്പീച്ച് തിരഞ്ഞെടുക്കുക",
-  "selectParticipants": "പങ്കാളികളെ തിരഞ്ഞെടുക്കുക",
-  "selectSentenceType": "വാക്യത്തിന്റെ തരം തിരഞ്ഞെടുക്കുക",
   "selectStudyMaterial": "മെറ്റീരിയൽ തിരഞ്ഞെടുക്കുക",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "വാക്യം",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "സൈൻ അപ്പ്",
-  "similarTextFound": "സമാനമായ ടെക്സ്റ്റ് കണ്ടെത്തി",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "ഒഴിവാക്കുക",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "ഉറവിടം:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "ഉറവിട ഭാഷ",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "നിങ്ങളുടെ ദൈനംദിന സംഭാഷണങ്ങൾ തൽക്ഷണം ഒരു വിദേശ ഭാഷയിലേക്ക് മാറ്റുക! ടോക്കി നിങ്ങളുടെ ഭാഷാ ജീവിതം രേഖപ്പെടുത്തുന്നു.",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "ഇപ്പോൾ സംസാരിക്കുക!",
-  "speaker": "സംസാരിക്കുന്നയാൾ",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "സംസാരിക്കുന്നയാളെ തിരഞ്ഞെടുക്കുക",
-  "speakingPractice": "സംസാര പരിശീലനം",
-  "startChat": "സംഭാഷണം ആരംഭിക്കുക",
-  "startPractice": "പരിശീലനം ആരംഭിക്കുക",
   "startTutorial": "ടൂർ ആരംഭിക്കുക",
-  "startWarning": "മുന്നറിയിപ്പ്",
   "startsWith": "ആദ്യ അക്ഷരം",
   "statusCheckEmail": "ഇമെയിൽ പരിശോധിച്ച് സ്ഥിരീകരണം പൂർത്തിയാക്കുക.",
   "statusDownloading": "ഡൗൺലോഡ് ചെയ്യുന്നു: {name}...",
-  "statusImportFailed": "ഇറക്കുമതി പരാജയപ്പെട്ടു: {error}",
-  "statusImportSuccess": "{name} ഇറക്കുമതി ചെയ്തു",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "ലോഗിൻ റദ്ദാക്കി.",
-  "statusLoginFailed": "ലോഗിൻ പരാജയപ്പെട്ടു: {error}",
-  "statusLoginSuccess": "ലോഗിൻ വിജയകരമായി.",
-  "statusLogoutSuccess": "ലോഗ് ഔട്ട് ചെയ്തു.",
-  "statusSignUpFailed": "സൈൻ അപ്പ് പരാജയപ്പെട്ടു: {error}",
-  "statusSigningUp": "സൈൻ അപ്പ് ചെയ്യുന്നു...",
-  "stopPractice": "നിർത്തുക",
-  "studyComplete": "പഠിച്ചു",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "രേഖകൾ ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "ഇറക്കുമതി പരാജയപ്പെട്ടു: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} ഇറക്കുമതി ചെയ്തു",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "ലോഗിൻ പരാജയപ്പെട്ടു: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "ലോഗിൻ വിജയകരമായി.",
+  "statusLogoutSuccess": "ലോഗ് ഔട്ട് ചെയ്തു.",
+  "statusRequestFailed": "വിവർത്തന അഭ്യർത്ഥന പരാജയപ്പെട്ടു: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "വിവർത്ത അഭ്യർത്ഥന പൂർത്തിയായിരിക്കുന്നു.",
+  "stopPractice": "നിർത്തുക",
+  "studyLangNotFoundDesc": "നിങ്ങൾ തിരഞ്ഞെടുത്ത മെറ്റീരിയൽ നിലവിൽ തിരഞ്ഞെടുത്തിട്ടുള്ള പഠന ഭാഷയായ ({targetLang}) പിന്തുണയ്ക്കുന്നില്ല അതിനാൽ ലോക്കലായി സേവ് ചെയ്യാൻ കഴിയില്ല. വിവർത്തനം അഭ്യർത്ഥിക്കാമോ?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "പഠന ഭാഷ ലഭ്യമല്ല",
   "styleFormal": "ആദരവോടെ",
   "styleInformal": "അനൗപചാരികം",
   "stylePolite": "വിനയം",
   "styleSlang": "സ്ലാംഗ്/অপভাষা",
-  "subject": "വിഷയം:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "ഭാഷ മാറ്റുക",
-  "switchToAi": "AI മോഡിലേക്ക് മാറുക",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "പങ്കാളി മോഡിലേക്ക് മാറുക",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "ഡാറ്റ സമന്വയിപ്പിക്കുന്നു...",
-  "tabConversation": "സംഭാഷണം",
   "tabReview": "അവലോകനം ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "കുറയ്ക്കുക",
   "tooltipIncrease": "വർദ്ധിപ്പിക്കുക",
   "tooltipSearch": "തിരയുക",
+  "tooltipSettingsConfirm": "ക്രമീകരണങ്ങൾ സ്ഥിരീകരിക്കുക",
   "tooltipSpeaking": "സംസാരിക്കുക",
   "tooltipStudyReview": "പഠനം+അവലോകനം",
   "totalRecords": "ആകെ {count} റെക്കോർഡുകൾ (എല്ലാം കാണുക)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "ഇപ്പോൾ വിവർത്തനം ചെയ്യുക",
   "translating": "വിവർത്തനം ചെയ്യുന്നു...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "വിവർത്തന ഭാഷ",
   "translationLimitExceeded": "പരിഭാഷാ പരിധി കഴിഞ്ഞു",
   "translationLimitMessage": "ദിവസേനയുള്ള സൗജന്യ പരിഭാഷ (5 എണ്ണം) പൂർത്തിയായിരിക്കുന്നു.\\n\\nപരസ്യം കണ്ട് 5 എണ്ണം തൽക്ഷണം റീഫിൽ ചെയ്യണോ?",
   "translationLoaded": "സേവ് ചെയ്ത വിവർത്തനം ലോഡ് ചെയ്തു",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "പരിഭാഷാ എണ്ണം 5 ആയി റീഫിൽ ചെയ്തു!",
+  "translationResult": "വിവർത്തന ഫലം",
   "translationResultHint": "പരിഭാഷാ ഫലം - എഡിറ്റ് ചെയ്യാവുന്നതാണ്",
   "tryAgain": "വീണ്ടും ശ്രമിക്കുക",
-  "tutorialAiChatDesc": "AI വ്യക്തിത്വങ്ങളുമായി സംഭാഷണം പരിശീലിക്കുക.",
-  "tutorialAiChatTitle": "AI ചാറ്റ്",
+  "ttsInstallGuide": "Android ക്രമീകരണങ്ങൾ > Google TTS-ൽ ഈ ഭാഷാ ഡാറ്റ ഇൻസ്റ്റാൾ ചെയ്യുക.",
+  "ttsMissing": "ഈ ഭാഷയുടെ വോയിസ് എഞ്ചിൻ നിങ്ങളുടെ ഉപകരണത്തിൽ ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല.",
+  "ttsUnsupportedNatively": "ഈ ഉപകരണത്തിന്റെ സ്ഥിര ക്രമീകരണങ്ങളിൽ ഈ ഭാഷയിലുള്ള സംഭാഷണ ഔട്ട്പുട്ട് പിന്തുണയ്ക്കുന്നില്ല.",
   "tutorialContextDesc": "സമാന വാക്യങ്ങൾ വേർതിരിക്കാൻ സന്ദർഭം (ഉദാ. രാവിലെ) ചേർക്കുക.",
   "tutorialContextTitle": "സന്ദർഭ ടാഗ്",
   "tutorialLangSettingsDesc": "പരിഭാഷ ചെയ്യേണ്ട ഭാഷയും ലക്ഷ്യമിടുന്ന ഭാഷയും തിരഞ്ഞെടുക്കുക.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "നിങ്ങളുടെ ടെക്സ്റ്റ് വിവർത്തനം ചെയ്യാൻ ഇവിടെ ടാപ്പ് ചെയ്യുക.",
   "tutorialTransTitle": "വിവർത്തനം",
   "typeExclamation": "ആശ്ചര്യചിഹ്നം",
+  "typeIdiom": "ശൈലി",
   "typeImperative": "കല്പന",
+  "typeProverb": " പഴഞ്ചൊല്ല്",
   "typeQuestion": "ചോദ്യം",
   "typeStatement": "പ്രസ്താവന",
   "usageLimitTitle": "പരിധി എത്തിയിരിക്കുന്നു",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "ഓൺലൈൻ ഗൈഡ് കാണുക",
   "voluntaryTranslations": "സ്വമേധയായുള്ള പരിഭാഷകൾ",
   "watchAdAndRefill": "പരസ്യം കണ്ട് റീഫിൽ ചെയ്യുക (+5 എണ്ണം)",
+  "welcomeButton": "ആരംഭിക്കുക",
+  "welcomeDesc": "Talkie-ലേക്ക് സ്വാഗതം! ലോകമെമ്പാടുമുള്ള 80-ൽ അധികം ഭാഷകളെ 100% കൃത്യതയോടെ പിന്തുണയ്ക്കുന്ന, പുതിയ പ്രീമിയം 3D ഡിസൈനും മികച്ച പ്രകടനവും അടങ്ങിയ പഠനാനുഭവം!",
+  "welcomeTitle": "Talkie-ലേക്ക് സ്വാഗതം!",
   "word": "വാക്ക്",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "ശത്രുക്കൾ എത്തുന്നതിന് മുൻപ് വാക്ക് പറഞ്ഞ് താവളം രക്ഷിക്കുക.",
   "wordDefenseTitle": "വേഡ് ഡിഫൻസ്",
   "wordModeLabel": "വാക്ക് മോഡ്",
-  "yourPronunciation": "നിങ്ങളുടെ ഉച്ചാരണം",
-  "ttsUnsupportedNatively": "ഈ ഉപകരണത്തിന്റെ സ്ഥിര ക്രമീകരണങ്ങളിൽ ഈ ഭാഷയിലുള്ള സംഭാഷണ ഔട്ട്പുട്ട് പിന്തുണയ്ക്കുന്നില്ല.",
-  "homeTab": "വിവർത്തനം",
-  "welcomeTitle": "Talkie-ലേക്ക് സ്വാഗതം!",
-  "welcomeDesc": "Talkie-ലേക്ക് സ്വാഗതം! ലോകമെമ്പാടുമുള്ള 80-ൽ അധികം ഭാഷകളെ 100% കൃത്യതയോടെ പിന്തുണയ്ക്കുന്ന, പുതിയ പ്രീമിയം 3D ഡിസൈനും മികച്ച പ്രകടനവും അടങ്ങിയ പഠനാനുഭവം!",
-  "welcomeButton": "ആരംഭിക്കുക",
-  "labelDetails": "വിശദാംശങ്ങൾ",
-  "translationResult": "വിവർത്തന ഫലം",
-  "inputContent": "ഇൻപുട്ട് ഉള്ളടക്കം",
-  "translateNow": "ഇപ്പോൾ വിവർത്തനം ചെയ്യുക",
-  "tooltipSettingsConfirm": "ക്രമീകരണങ്ങൾ സ്ഥിരീകരിക്കുക",
-  "hintNoteExample": "ഉദാഹരണം: സന്ദർഭം, പര്യായപദങ്ങൾ തുടങ്ങിയവ",
-  "hintTagExample": "ഉദാഹരണം: ബിസിനസ്, യാത്ര...",
-  "addNew": "പുതിയവ ചേർക്കുക",
-  "newNotebookTitle": "പുതിയ നോട്ട്ബുക്കിന്റെ പേര്",
-  "enterNameHint": "പേര് നൽകുക",
-  "add": "ചേർക്കുക",
-  "openSettings": "ക്രമീകരണങ്ങൾ തുറക്കുക",
-  "helpNotebook": "പരിഭാഷപ്പെടുത്തിയ ഫലങ്ങൾ സംരക്ഷിക്കാൻ ഒരു ഫോൾഡർ തിരഞ്ഞെടുക്കുക.",
-  "helpNote": "വാക്കുകളുടെ അർത്ഥം, ഉദാഹരണങ്ങൾ, സാഹചര്യങ്ങൾ എന്നിവ സ്വതന്ത്രമായി രേഖപ്പെടുത്തുക.",
-  "helpTag": "പിന്നീട് തരംതിരിക്കാനോ തിരയാനോ ഉള്ള കീവേഡുകൾ നൽകുക.",
-  "requestTranslation": "വിവർത്തനം അഭ്യർത്ഥിക്കുക",
-  "statusRequestSuccess": "വിവർത്ത അഭ്യർത്ഥന പൂർത്തിയായിരിക്കുന്നു.",
-  "statusRequestFailed": "വിവർത്തന അഭ്യർത്ഥന പരാജയപ്പെട്ടു: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "പഠന ഭാഷ ലഭ്യമല്ല",
-  "studyLangNotFoundDesc": "നിങ്ങൾ തിരഞ്ഞെടുത്ത മെറ്റീരിയൽ നിലവിൽ തിരഞ്ഞെടുത്തിട്ടുള്ള പഠന ഭാഷയായ ({targetLang}) പിന്തുണയ്ക്കുന്നില്ല അതിനാൽ ലോക്കലായി സേവ് ചെയ്യാൻ കഴിയില്ല. വിവർത്തനം അഭ്യർത്ഥിക്കാമോ?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. ഭാഷ തിരഞ്ഞെടുക്കുക",
-  "quickStartStep1Desc": "മെനു > ഭാഷാ ക്രമീകരണങ്ങളിൽ നിന്ന് നിങ്ങളുടെ ഭാഷയും പഠന ഭാഷയും ആദ്യം തിരഞ്ഞെടുക്കുക.",
-  "quickStartStep2Title": "2. അടിസ്ഥാന രീതി",
-  "quickStartStep2Desc": "ഇൻപുട്ട് (മൈക്രോഫോൺ/കീബോർഡ്) -> വിവർത്തനം -> സംരക്ഷിക്കുക എന്ന ക്രമത്തിൽ നിങ്ങളുടെ പഠന കാർഡുകൾ ഉണ്ടാക്കുക.",
-  "quickStartStep3Title": "3. മോഡുകൾ പ്രയോജനപ്പെടുത്തുക",
-  "quickStartStep3Desc": "ചാറ്റ് ചെയ്ത് പരിശീലിക്കുക, ഉച്ചാരണ പരിശീലന ടാബിൽ ടെക്സ്റ്റ് നോക്കി ഉച്ചരിച്ച് പരിശീലിക്കുക.",
-  "noteGuidance": "കൂടുതൽ കൃത്യമായ വിവർത്തനത്തിനായി നിങ്ങൾ കൂടുതൽ വിശദാംശങ്ങൾ നൽകുന്നിടത്ത്"
+  "yourPronunciation": "നിങ്ങളുടെ ഉച്ചാരണം"
 }

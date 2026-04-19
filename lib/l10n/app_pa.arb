@@ -26,7 +26,6 @@
   "ttsInstallGuide": "ਕਿਰਪਾ ਕਰਕੇ ਐਂਡਰਾਇਡ ਸੈਟਿੰਗਾਂ > Google TTS ਤੋਂ ਇਸ ਭਾਸ਼ਾ ਲਈ ਡਾਟਾ ਸਥਾਪਤ ਕਰੋ।",
   "adLoading": "ਇਸ਼ਤਿਹਾਰ ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
   "addNewSubject": "ਨਵਾਂ ਨਾਮ ਸ਼ਾਮਲ ਕਰੋ",
-  "addParticipant": "ਭਾਗੀਦਾਰ ਸ਼ਾਮਲ ਕਰੋ",
   "addTagHint": "ਟੈਗ ਸ਼ਾਮਲ ਕਰੋ...",
   "alreadyHaveAccount": "ਕੀ ਤੁਹਾਡਾ ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਖਾਤਾ ਹੈ?",
   "appTitle": "Talkie",
@@ -51,37 +50,6 @@
   "casePossessivePronoun": "ਸੰਬੰਧਕ ਪੜਨਾਂਵ",
   "caseReflexive": "ਨਿਜਵਾਚਕ ਪੜਨਾਂਵ",
   "caseSubject": "ਕਰਤਾ ਕਾਰਕ",
-  "chatAiChat": "ਗੱਲਬਾਤ",
-  "chatAllConversations": "ਸਾਰੀਆਂ ਗੱਲਬਾਤਾਂ",
-  "chatChoosePersona": "ਪਾਤਰ ਚੁਣੋ",
-  "chatEndMessage": "ਕੀ ਤੁਸੀਂ ਗੱਲਬਾਤ ਖਤਮ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
-  "chatEndTitle": "ਗੱਲਬਾਤ ਖਤਮ ਕਰੋ ਅਤੇ ਸੁਰੱਖਿਅਤ ਕਰੋ",
-  "chatFailed": "ਚੈਟ ਅਸਫਲ: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "ਗੱਲਬਾਤ ਤੋਂ ਅੰਸ਼ ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "ਗੱਲਬਾਤ ਇਤਿਹਾਸ",
-  "chatNew": "ਨਵੀਂ ਗੱਲਬਾਤ",
-  "chatNewChat": "ਨਵੀਂ ਗੱਲਬਾਤ",
-  "chatNoConversations": "ਅਜੇ ਤੱਕ ਕੋਈ ਗੱਲਬਾਤ ਨਹੀਂ ਹੈ",
-  "chatSearchHint": "ਗੱਲਬਾਤ ਦੇ ਸਿਰਲੇਖ ਦੁਆਰਾ ਖੋਜ ਕਰੋ...",
-  "chatNoteSearchHint": "ਟਿੱਪਣੀ ਦੁਆਰਾ ਖੋਜ ਕਰੋ...",
-  "chatSaveAndExit": "ਸੁਰੱਖਿਅਤ ਕਰੋ ਅਤੇ ਬਾਹਰ ਜਾਓ",
-  "chatStartNewPrompt": "ਅਭਿਆਸ ਕਰਨ ਲਈ ਇੱਕ ਨਵੀਂ ਗੱਲਬਾਤ ਸ਼ੁਰੂ ਕਰੋ!",
-  "chatTypeHint": "ਇੱਕ ਸੁਨੇਹਾ ਦਾਖਲ ਕਰੋ...",
-  "chatUntitled": "ਬਿਨਾਂ ਸਿਰਲੇਖ ਵਾਲੀ ਗੱਲਬਾਤ",
   "checking": "ਜਾਂਚ ਕਰ ਰਿਹਾ ਹੈ...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +63,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "ਕੀ ਤੁਸੀਂ ਇਸ ਗੱਲਬਾਤ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?\nਮਿਟਾਈ ਗਈ ਗੱਲਬਾਤ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।",
-  "confirmDeleteParticipant": "ਕੀ ਤੁਸੀਂ ਇਸ ਭਾਗੀਦਾਰ ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "contextTagHint": "ਸਥਿਤੀ ਲਿਖੋ ਤਾਂ ਜੋ ਇਸਨੂੰ ਬਾਅਦ ਵਿੱਚ ਵੱਖਰਾ ਕਰਨਾ ਆਸਾਨ ਹੋਵੇ",
   "contextTagLabel": "ਸੰਦਰਭ/ਸਥਿਤੀ (ਵਿਕਲਪਿਕ) - ਉਦਾਹਰਨ: ਸਵੇਰ ਦੀ ਨਮਸਕਾਰ, ਰਸਮੀ",
   "copiedToClipboard": "ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਹੋ ਗਿਆ!",
@@ -131,8 +97,6 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "ਸਥਿਤੀ ਨਾਟਕ ਦੁਆਰਾ ਗੱਲਬਾਤ ਦਾ ਅਭਿਆਸ ਕਰੋ। ਢੁਕਵੇਂ ਜਵਾਬਾਂ ਦੀ ਚੋਣ ਕਰੋ ਅਤੇ ਬੋਲੋ।",
-  "dialogueQuestTitle": "ਗੱਲਬਾਤ ਖੋਜ",
   "disambiguationPrompt": "ਤੁਸੀਂ ਕਿਸ ਅਰਥ ਵਿੱਚ ਅਨੁਵਾਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "@disambiguationPrompt": {
     "description": "Prompt for disambiguation dialog"
@@ -142,7 +106,6 @@
     "description": "Title for disambiguation dialog"
   },
   "dontHaveAccount": "ਕੀ ਤੁਹਾਡਾ ਕੋਈ ਖਾਤਾ ਨਹੀਂ ਹੈ?",
-  "editParticipant": "ਭਾਗੀਦਾਰ ਸੋਧੋ",
   "email": "ਈਮੇਲ",
   "emailAlreadyInUse": "ਇਹ ਈਮੇਲ ਪਹਿਲਾਂ ਹੀ ਰਜਿਸਟਰਡ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਲੌਗਇਨ ਕਰੋ ਜਾਂ ਪਾਸਵਰਡ ਰਿਕਵਰੀ ਵਰਤੋਂ।",
   "enterNewSubjectName": "ਨਵਾਂ ਨਾਮ ਦਰਜ ਕਰੋ",
@@ -197,10 +160,7 @@
   "getMaterials": "ਸਮੱਗਰੀ ਪ੍ਰਾਪਤ ਕਰੋ",
   "good": "ਚੰਗਾ",
   "googleContinue": "Google ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
-  "helpDialogueImportDesc": "JSON ਫਾਈਲ ਨਾਲ ਪੂਰਾ ਗੱਲਬਾਤ ਸੈੱਟ ਇੰਪੋਰਟ ਕਰੋ।",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "ਮੋਡ 3 ਵਿੱਚ ਇੰਪੋਰਟ ਕਰਨ ਲਈ, JSON ਬਣਾਓ:",
-  "helpJsonTypeDialogue": "ਗੱਲਬਾਤ (Dialogue)",
   "helpJsonTypeSentence": "ਵਾਕ (Sentence)",
   "helpJsonTypeWord": "ਸ਼ਬਦ (Word)",
   "helpMode1Desc": "ਇੱਕ ਪ੍ਰੀਮੀਅਮ 3D ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਅਤੇ ਵੱਡੇ ਕੀਬੋਰਡ ਆਈਕਨਾਂ ਨਾਲ ਸਭ ਤੋਂ ਅਨੁਭਵੀ ਤਰੀਕੇ ਨਾਲ ਭਾਸ਼ਾ ਸਿੱਖਣਾ ਸ਼ੁਰੂ ਕਰੋ।",
@@ -209,8 +169,6 @@
   "helpMode2Details": "• ਮਟੀਰੀਅਲ ਚੁਣੋ: ਉੱਪਰ ਸੱਜੇ ਮੀਨੂ (⋮) ਵਿੱਚੋਂ 'ਸਿੱਖਣ ਵਾਲਾ ਮਟੀਰੀਅਲ ਚੁਣੋ' ਜਾਂ 'ਔਨਲਾਈਨ ਮਟੀਰੀਅਲ ਲਾਇਬਰੇਰੀ' ਵਰਤੋ\n• ਕਾਰਡ ਪਲਟਾਓ: ਅਨੁਵਾਦ ਦੀ ਜਾਂਚ ਕਰਨ ਲਈ 'ਦਿਖਾਓ/ਛੁਪਾਓ'\n• ਸੁਣੋ: ਉਚਾਰਨ ਚਲਾਉਣ ਲਈ ਸਪੀਕਰ ਆਈਕਨ\n• ਸਿੱਖਣਾ ਪੂਰਾ ਕਰੋ: ਸਿੱਖਣਾ ਪੂਰਾ ਕਰਨ ਲਈ ਚੈੱਕ ਮਾਰਕ (V)\n• ਮਿਟਾਓ: ਰਿਕਾਰਡ ਮਿਟਾਉਣ ਲਈ ਕਾਰਡ 'ਤੇ ਲੰਮਾ ਦਬਾਅ ਦਿਓ (ਲੰਮਾ ਕਲਿੱਕ)\n• ਖੋਜ ਅਤੇ ਫਿਲਟਰ: ਖੋਜ ਪੱਟੀ (ਰੀਅਲ-ਟਾਈਮ ਸਮਾਰਟ ਖੋਜ) ਅਤੇ ਟੈਗ, ਸ਼ੁਰੂਆਤੀ ਅੱਖਰ ਫਿਲਟਰ ਸਹਾਇਤਾ",
   "helpMode3Desc": "ਵਾਕ ਸੁਣੋ ਅਤੇ ਦੁਹਰਾਓ (ਛਾਇਆ-ਅਨੁਵਾਦ) ਅਤੇ ਆਪਣੇ ਉਚਾਰਨ ਦਾ ਅਭਿਆਸ ਕਰੋ।",
   "helpMode3Details": "• ਚੁਣੋ: ਪੈਕੇਜ ਚੁਣੋ\n• ਅੰਤਰਾਲ: [-] [+] ਉਡੀਕ ਦਾ ਸਮਾਂ (3ਸਕਿੰਟ-60ਸਕਿੰਟ)\n• ਸ਼ੁਰੂ/ਬੰਦ: ਸੈਸ਼ਨ ਕੰਟਰੋਲ ਕਰੋ\n• ਬੋਲੋ: ਆਡੀਓ ਸੁਣੋ ਅਤੇ ਦੁਹਰਾਓ\n• ਸਕੋਰ: ਸ਼ੁੱਧਤਾ (0-100)\n• ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼: ਜੇ ਆਵਾਜ਼ ਨਹੀਂ ਮਿਲਦੀ ਤਾਂ ਬਟਨ",
-  "helpModeChatDesc": "ਇੱਕ AI ਪਰਸੋਨਾ ਨਾਲ ਗੱਲਬਾਤ ਕਰਕੇ ਅਸਲ-ਸੰਵਾਦ ਦਾ ਅਭਿਆਸ ਕਰੋ।",
-  "helpModeChatDetails": "• AI ਚੈਟ: ਹੇਠਲੇ ਟੈਬ ਬਾਰ ਦੇ 'ਚੈਟ' ਮੀਨੂ ਵਿੱਚ ਵਿਅਕਤੀਆਂ ਨਾਲ ਅਸਲ ਗੱਲਬਾਤ ਦਾ ਅਭਿਆਸ ਕਰੋ\n• ਵਿਅਕਤੀ ਸੈਟਿੰਗ: ਵਿਰੋਧੀ ਲਿੰਗ, ਨਾਮ ਅਤੇ ਭਾਸ਼ਾ ਕੋਡ ਨੂੰ ਸੁਤੰਤਰ ਰੂਪ ਵਿੱਚ ਨਿਰਧਾਰਤ ਕਰੋ\n• GPS ਸਥਿਤੀ ਨਾਟਕ: ਮੌਜੂਦਾ ਸਥਿਤੀ ਨੂੰ ਪਛਾਣ ਕੇ ਸਥਾਨ ਲਈ ਢੁਕਵੇਂ ਗੱਲਬਾਤ ਦੇ ਵਿਸ਼ਿਆਂ ਦੀ ਸਿਫਾਰਸ਼ ਕਰੋ\n• ਦੋ ਭਾਸ਼ਾਵਾਂ: AI ਦੇ ਜਵਾਬ ਅਨੁਵਾਦ ਦੇ ਨਾਲ ਪ੍ਰਦਰਸ਼ਿਤ ਹੁੰਦੇ ਹਨ ਤਾਂ ਜੋ ਸਿੱਖਣ ਦੇ ਪ੍ਰਭਾਵ ਨੂੰ ਵੱਧ ਤੋਂ ਵੱਧ ਕੀਤਾ ਜਾ ਸਕੇ\n• ਰਿਕਾਰਡ ਪ੍ਰਬੰਧਨ: ਪਿਛਲੀ ਗੱਲਬਾਤ ਦੇ ਇਤਿਹਾਸ ਨੂੰ ਫਿਲਟਰ ਕਰੋ ਅਤੇ ਗੱਲਬਾਤ ਦੌਰਾਨ ਕੁਝ ਸੰਦੇਸ਼ਾਂ ਨੂੰ ਸਿੱਖਣ ਸਮੱਗਰੀ ਵਜੋਂ ਸੁਰੱਖਿਅਤ ਕਰੋ",
   "helpTabJson": "JSON ਫਾਰਮੈਟ",
   "helpTabModes": "ਮੋਡ",
   "helpTabQuickStart": "ਤੁਰੰਤ ਸ਼ੁਰੂਆਤ",
@@ -302,7 +260,6 @@
   "labelName": "ਨਾਮ",
   "labelNote": "ਨੋਟ",
   "labelPOS": "ਭਾਸ਼ਾ ਦਾ ਭਾਗ",
-  "labelRole": "ਭੂਮਿਕਾ",
   "labelSentence": "ਵਾਕ",
   "labelSentenceCollection": "ਵਾਕ ਸੰਗ੍ਰਹਿ",
   "labelSentenceType": "ਵਾਕ ਦੀ ਕਿਸਮ",
@@ -325,17 +282,11 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "ਭਾਗੀਦਾਰ ਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ...",
-  "location": "ਸਥਾਨ",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "ਲੌਗਇਨ",
   "logout": "ਲਾਗ ਆਉਟ",
   "logoutConfirmMessage": "ਕੀ ਤੁਸੀਂ ਇਸ ਡਿਵਾਈਸ ਤੋਂ ਲਾਗ ਆਉਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "logoutConfirmTitle": "ਲਾਗ ਆਉਟ",
   "male": "ਮਰਦ",
-  "manageParticipants": "ਭਾਗੀਦਾਰ ਪ੍ਰਬੰਧਿਤ ਕਰੋ",
   "manual": "ਮੈਨੁਅਲ ਇਨਪੁਟ",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +298,6 @@
   "materialInfo": "ਸਮੱਗਰੀ ਜਾਣਕਾਰੀ",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "ਮੈਂ",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "ਡਿਵਾਈਸ ਤੋਂ ਸਮੱਗਰੀ ਇੰਪੋਰਟ ਕਰੋ",
   "menuHelp": "ਮਦਦ",
@@ -381,11 +328,9 @@
   "neutral": "ਨਿਰਪੱਖ",
   "newSubjectName": "ਨਵਾਂ ਵਿਸ਼ਾ ਨਾਮ",
   "next": "ਅੱਗੇ",
-  "noDialogueHistory": "ਕੋਈ ਗੱਲਬਾਤ ਇਤਿਹਾਸ ਨਹੀਂ ਹੈ।",
   "noInternetWarningMic": "ਕੋਈ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਨਹੀਂ ਹੈ। ਔਫਲਾਈਨ ਹੋਣ 'ਤੇ ਵੌਇਸ ਪਛਾਣ ਉਪਲਬਧ ਨਹੀਂ ਹੋ ਸਕਦੀ ਹੈ।",
   "noInternetWarningTranslate": "ਕੋਈ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਨਹੀਂ ਹੈ। ਔਫਲਾਈਨ ਹੋਣ 'ਤੇ ਅਨੁਵਾਦ ਫੰਕਸ਼ਨ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਸਮੀਖਿਆ ਮੋਡ ਦੀ ਵਰਤੋਂ ਕਰੋ।",
   "noMaterialsInCategory": "ਇਸ ਸ਼੍ਰੇਣੀ ਵਿੱਚ ਕੋਈ ਸਮੱਗਰੀ ਨਹੀਂ ਹੈ।",
-  "noParticipantsFound": "ਕੋਈ ਰਜਿਸਟਰਡ ਭਾਗੀਦਾਰ ਨਹੀਂ ਮਿਲਿਆ।",
   "noRecords": "ਚੁਣੀ ਗਈ ਭਾਸ਼ਾ ਲਈ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ",
   "@noRecords": {
     "description": "Empty state message"
@@ -404,22 +349,9 @@
   "onlineLibraryCheckInternet": "ਆਪਣਾ ਇੰਟਰਨੈੱਟ ਕਨੈਕਸ਼ਨ ਚੈੱਕ ਕਰੋ ਜਾਂ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
   "onlineLibraryLoadFailed": "ਸਮੱਗਰੀ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ।",
   "onlineLibraryNoMaterials": "ਕੋਈ ਸਮੱਗਰੀ ਨਹੀਂ ਹੈ।",
-  "participantDeleted": "ਭਾਗੀਦਾਰ ਹਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ।",
-  "participantRename": "ਭਾਗੀਦਾਰ ਦਾ ਨਾਮ ਬਦਲੋ",
-  "partner": "ਸਾਥੀ",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "ਸਾਥੀ ਮੋਡ",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
   "password": "ਪਾਸਵਰਡ",
   "passwordTooShort": "ਪਾਸਵਰਡ 6 ਅੱਖਰਾਂ ਤੋਂ ਵੱਧ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।",
   "perfect": "ਬਹੁਤ ਵਧੀਆ!",
-  "personaFriend": "ਸਥਾਨਕ ਦੋਸਤ",
-  "personaGuide": "ਯਾਤਰਾ ਗਾਈਡ",
-  "personaTeacher": "ਅੰਗਰੇਜ਼ੀ ਅਧਿਆਪਕ",
   "playAgain": "ਦੁਬਾਰਾ ਖੇਡੋ",
   "playbackFailed": "ਪਲੇਬੈਕ ਅਸਫਲ: {error}",
   "@playbackFailed": {
@@ -500,9 +432,6 @@
     }
   },
   "reviewModeTitle": "ਸਮੀਖਿਆ",
-  "roleAi": "AI",
-  "roleThirdParty": "ਤੀਜਾ ਧਿਰ",
-  "roleUser": "ਵਰਤੋਂਕਾਰ",
   "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
   "saveData": "ਸੇਵ ਕਰੋ",
   "@saveData": {
@@ -565,13 +494,11 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "ਭਾਸ਼ਾ ਦਾ ਹਿੱਸਾ ਚੁਣੋ",
-  "selectParticipants": "ਭਾਗੀਦਾਰ ਚੁਣੋ",
   "selectSentenceType": "ਵਾਕ ਦੀ ਕਿਸਮ ਚੁਣੋ",
   "selectStudyMaterial": "ਸਮੱਗਰੀ ਚੁਣੋ",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "ਵਾਕ",
   "@sentence": {
     "description": "Toggle option for Sentence"
@@ -601,7 +528,6 @@
   },
   "speakerSelect": "ਬੁਲਾਰੇ ਦੀ ਚੋਣ ਕਰੋ",
   "speakingPractice": "ਬੋਲਣ ਦਾ ਅਭਿਆਸ",
-  "startChat": "ਗੱਲਬਾਤ ਸ਼ੁਰੂ ਕਰੋ",
   "startPractice": "ਅਭਿਆਸ ਸ਼ੁਰੂ ਕਰੋ",
   "startTutorial": "ਟੂਰ ਸ਼ੁਰੂ ਕਰੋ",
   "startWarning": "ਚੇਤਾਵਨੀ",
@@ -649,7 +575,6 @@
     "description": "Tooltip for switching to Partner mode"
   },
   "syncingData": "ਡੇਟਾ ਸਿੰਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
-  "tabConversation": "ਗੱਲਬਾਤ",
   "tabReview": "ਸਮੀਖਿਆ ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -735,8 +660,6 @@
   "translationRefilled": "ਅਨੁਵਾਦਾਂ ਦੀ ਗਿਣਤੀ 5 ਵਾਰ ਰੀਚਾਰਜ ਹੋ ਗਈ ਹੈ!",
   "translationResultHint": "ਅਨੁਵਾਦ ਨਤੀਜਾ - ਸੋਧਿਆ ਜਾ ਸਕਦਾ ਹੈ",
   "tryAgain": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
-  "tutorialAiChatDesc": "AI ਪਾਤਰ ਨਾਲ ਅਸਲ ਗੱਲਬਾਤ ਦਾ ਅਭਿਆਸ ਕਰੋ।",
-  "tutorialAiChatTitle": "AI ਗੱਲਬਾਤ",
   "tutorialContextDesc": "ਸਮਾਨ ਵਾਕਾਂ ਨੂੰ ਵੱਖਰਾ ਕਰਨ ਲਈ ਪ੍ਰਸੰਗ (ਜਿਵੇਂ: ਸਵੇਰ) ਸ਼ਾਮਲ ਕਰੋ।",
   "tutorialContextTitle": "ਪ੍ਰਸੰਗ ਟੈਗ",
   "tutorialLangSettingsDesc": "ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਸਰੋਤ ਅਤੇ ਨਿਸ਼ਾਨਾ ਭਾਸ਼ਾ ਸੈੱਟ ਕਰੋ।",

@@ -9,52 +9,19 @@ class AppLocalizationsId extends AppLocalizations {
   AppLocalizationsId([String locale = 'id']) : super(locale);
 
   @override
-  String get basicWords => 'Repositori Kata Dasar';
-
-  @override
-  String get inputLanguage => 'Bahasa Input';
-
-  @override
-  String get translationLanguage => 'Bahasa Terjemahan';
-
-  @override
-  String get simplifiedGuidance =>
-      'Ubah percakapan sehari-hari menjadi bahasa asing dalam sekejap! Talkie akan merekam kehidupan bahasa Anda.';
-
-  @override
-  String get noDataForLanguage =>
-      'Tidak ada data pembelajaran untuk bahasa yang dipilih di DB lokal. Unduh data atau pilih bahasa lain.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Batal';
-
-  @override
   String get accuracy => 'Akurasi';
-
-  @override
-  String get ttsMissing =>
-      'Mesin suara untuk bahasa ini belum terpasang di perangkat Anda.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Silakan pasang data bahasa yang sesuai di Setelan Android > Google TTS.';
 
   @override
   String get adLoading => 'Memuat iklan. Silakan coba lagi nanti.';
 
   @override
-  String get addNewSubject => 'Tambahkan Judul Baru';
+  String get add => 'Tambah';
 
   @override
-  String get addParticipant => 'Tambah Peserta';
+  String get addNew => 'Tambah Baru';
+
+  @override
+  String get addNewSubject => 'Tambahkan Judul Baru';
 
   @override
   String get addTagHint => 'Tambahkan tag...';
@@ -87,6 +54,12 @@ class AppLocalizationsId extends AppLocalizations {
   String get basicWordRepository => 'Repositori Kata Dasar';
 
   @override
+  String get basicWords => 'Repositori Kata Dasar';
+
+  @override
+  String get cancel => 'Batal';
+
+  @override
   String get caseObject => 'Kasus Objek';
 
   @override
@@ -102,61 +75,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get caseSubject => 'Kasus Subjek';
 
   @override
-  String get chatAiChat => 'Obrolan';
-
-  @override
-  String get chatAllConversations => 'Semua percakapan';
-
-  @override
-  String get chatChoosePersona => 'Pilih Persona';
-
-  @override
-  String get chatEndMessage => 'Apakah Anda ingin mengakhiri percakapan?';
-
-  @override
-  String get chatEndTitle => 'Akhiri dan Simpan Percakapan';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Obrolan Gagal: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Kutipan Percakapan ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Riwayat Obrolan';
-
-  @override
-  String get chatNew => 'Obrolan Baru';
-
-  @override
-  String get chatNewChat => 'Obrolan Baru';
-
-  @override
-  String get chatNoConversations => 'Belum ada percakapan';
-
-  @override
-  String get chatSearchHint => 'Cari berdasarkan judul obrolan...';
-
-  @override
-  String get chatNoteSearchHint => 'Cari di catatan...';
-
-  @override
-  String get chatSaveAndExit => 'Simpan & Keluar';
-
-  @override
-  String get chatStartNewPrompt => 'Mulai percakapan baru untuk latihan!';
-
-  @override
-  String get chatTypeHint => 'Ketik pesan...';
-
-  @override
-  String get chatUntitled => 'Obrolan Tanpa Judul';
-
-  @override
   String get checking => 'Memeriksa...';
 
   @override
@@ -167,14 +85,6 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Anda yakin ingin menghapus catatan ini?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Anda yakin ingin menghapus percakapan ini?\nPercakapan yang dihapus tidak dapat dipulihkan.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Apakah Anda yakin ingin menghapus peserta ini?';
 
   @override
   String get contextTagHint => 'Tulis situasinya agar mudah dibedakan nanti';
@@ -213,23 +123,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get deleteRecord => 'Hapus Catatan';
 
   @override
-  String get dialogueQuestDesc =>
-      'Berlatih percakapan melalui bermain peran. Pilih jawaban yang tepat dan ucapkan.';
-
-  @override
-  String get dialogueQuestTitle => 'Misi Dialog';
-
-  @override
-  String get disambiguationPrompt => 'Makna mana yang ingin Anda terjemahkan?';
-
-  @override
-  String get disambiguationTitle => 'Pilih Makna';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Belum punya akun?';
-
-  @override
-  String get editParticipant => 'Edit Peserta';
 
   @override
   String get email => 'Email';
@@ -237,6 +134,9 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Email sudah terdaftar. Silakan masuk atau gunakan fitur lupa kata sandi.';
+
+  @override
+  String get enterNameHint => 'Masukkan nama';
 
   @override
   String get enterNewSubjectName => 'Masukkan Judul Baru';
@@ -277,6 +177,9 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get errors => 'Kesalahan:';
+
+  @override
+  String get extractedText => 'Teks yang Dikenali';
 
   @override
   String get female => 'Wanita';
@@ -336,12 +239,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get gender => 'Jenis Kelamin';
 
   @override
-  String get labelFilterMaterial => 'Bahan';
-
-  @override
-  String get labelFilterTag => 'Tag';
-
-  @override
   String get generalTags => 'Tag Umum';
 
   @override
@@ -354,19 +251,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get googleContinue => 'Lanjutkan dengan Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Impor seluruh set dialog dengan file JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc =>
       'Untuk mengimpor materi belajar di Mode 3, buat file JSON dengan struktur berikut:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dialog';
 
   @override
   String get helpJsonTypeSentence => 'Kalimat';
@@ -399,12 +285,11 @@ class AppLocalizationsId extends AppLocalizations {
       '• Pilih Materi: Pilih paket belajar\n• Interval: [-] [+] atur waktu tunggu (3d-60d)\n• Mulai/Berhenti: Kontrol sesi\n• Bicara: Dengar audio dan ulangi\n• Umpan Balik: Skor akurasi (0-100)\n• Coba Lagi: Gunakan tombol coba lagi jika suara tidak terdeteksi';
 
   @override
-  String get helpModeChatDesc =>
-      'Berlatih percakapan nyata dengan berinteraksi dengan persona AI.';
+  String get helpNote =>
+      'Bebas mencatat arti kata, contoh kalimat, situasi, dll.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Obrolan AI: Berlatih percakapan praktis dengan persona di menu \'Obrolan\' di bilah tab bawah\n• Pengaturan Persona: Tentukan jenis kelamin, nama, dan kode bahasa lawan secara bebas\n• Situasi GPS: Mengenali lokasi saya saat ini dan merekomendasikan topik percakapan yang sesuai dengan tempat tersebut\n• 2 Bahasa: Jawaban AI ditampilkan dengan terjemahan untuk memaksimalkan efek pembelajaran\n• Manajemen Catatan: Saring riwayat percakapan sebelumnya dan simpan pesan tertentu dalam percakapan sebagai materi pembelajaran';
+  String get helpNotebook => 'Pilih folder untuk menyimpan hasil terjemahan.';
 
   @override
   String get helpTabJson => 'Format JSON';
@@ -419,6 +304,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get helpTabTour => 'Tur';
 
   @override
+  String get helpTag =>
+      'Masukkan kata kunci untuk klasifikasi atau pencarian nanti.';
+
+  @override
   String get helpTitle => 'Bantuan & Panduan';
 
   @override
@@ -427,6 +316,15 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get hide => 'Sembunyikan';
+
+  @override
+  String get hintNoteExample => 'Contoh: Konteks, homonim, dll.';
+
+  @override
+  String get hintTagExample => 'Contoh: Bisnis, wisata...';
+
+  @override
+  String get homeTab => 'Terjemahan';
 
   @override
   String importAdded(int count) {
@@ -439,23 +337,6 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Materi dengan judul yang sama sudah ada. Ubah judul dan coba lagi.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -471,6 +352,11 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files file, $entries entri diimpor.';
+  }
+
+  @override
   String get importJsonFile => 'Impor JSON';
 
   @override
@@ -482,12 +368,30 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'File JSON Tunggal';
+
+  @override
+  String get importSourceFolder => 'Folder (Struktur Pustaka per Bahasa)';
+
+  @override
+  String get importSourceTitle => 'Pilih Sumber Impor';
+
+  @override
+  String get importSourceZip => 'File ZIP (Folder yang Dikompres)';
+
+  @override
   String importTotal(int count) {
     return 'Total: $count';
   }
 
   @override
   String get importing => 'Mengimpor...';
+
+  @override
+  String get inputContent => 'Konten Masukan';
+
+  @override
+  String get inputLanguage => 'Bahasa Input';
 
   @override
   String get inputModeTitle => 'Input';
@@ -504,19 +408,22 @@ class AppLocalizationsId extends AppLocalizations {
   String get kakaoContinue => 'Lanjutkan dengan Kakao';
 
   @override
-  String get labelLangCode => 'Kode Bahasa (mis: en-US, ko-KR)';
+  String get labelDetails => 'Pengaturan Detail';
 
   @override
-  String get labelName => 'Nama';
+  String get labelFilterMaterial => 'Bahan';
+
+  @override
+  String get labelFilterTag => 'Tag';
+
+  @override
+  String get labelLangCode => 'Kode Bahasa (mis: en-US, ko-KR)';
 
   @override
   String get labelNote => 'Catatan';
 
   @override
   String get labelPOS => 'Kelas Kata';
-
-  @override
-  String get labelRole => 'Peran';
 
   @override
   String get labelSentence => 'Kalimat';
@@ -567,9 +474,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get listening => 'Mendengarkan...';
 
   @override
-  String get loadingParticipants => 'Memuat Peserta...';
-
-  @override
   String get location => 'Lokasi';
 
   @override
@@ -589,9 +493,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get male => 'Pria';
 
   @override
-  String get manageParticipants => 'Kelola Peserta';
-
-  @override
   String get manual => 'Input Manual';
 
   @override
@@ -599,9 +500,6 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get materialInfo => 'Info materi';
-
-  @override
-  String get me => 'Saya';
 
   @override
   String get menuDeviceImport => 'Impor Materi dari Perangkat';
@@ -669,27 +567,20 @@ class AppLocalizationsId extends AppLocalizations {
   String get neutral => 'Netral';
 
   @override
+  String get newNotebookTitle => 'Nama Buku Catatan Baru';
+
+  @override
   String get newSubjectName => 'Judul Subjek/Kalimat Baru';
 
   @override
   String get next => 'Berikutnya';
 
   @override
-  String get noDialogueHistory => 'Tidak ada riwayat dialog.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Tidak ada koneksi internet. Pengenalan suara mungkin tidak berfungsi dalam mode offline.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Tidak ada koneksi internet. Fitur terjemahan tidak tersedia dalam mode offline. Silakan gunakan mode review.';
+  String get noDataForLanguage =>
+      'Tidak ada data pembelajaran untuk bahasa yang dipilih di DB lokal. Unduh data atau pilih bahasa lain.';
 
   @override
   String get noMaterialsInCategory => 'Tidak ada materi dalam kategori ini.';
-
-  @override
-  String get noParticipantsFound => 'Tidak ada peserta terdaftar.';
 
   @override
   String get noRecords => 'Tidak ada catatan untuk bahasa yang dipilih';
@@ -710,6 +601,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get notSelected => '- Tidak Dipilih -';
 
   @override
+  String get noteGuidance =>
+      'Tempat Anda memasukkan detail tambahan untuk terjemahan yang lebih akurat';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Periksa koneksi internet Anda atau coba lagi nanti.';
 
@@ -720,34 +615,19 @@ class AppLocalizationsId extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Tidak ada materi.';
 
   @override
-  String get participantDeleted => 'Peserta telah dihapus.';
+  String get openSettings => 'Buka Pengaturan';
 
   @override
-  String get participantRename => 'Ubah Nama Peserta';
+  String get password => 'Kata sandi';
 
   @override
-  String get partner => 'Mitra';
-
-  @override
-  String get partnerMode => 'Mode Partner';
-
-  @override
-  String get password => 'Kata Sandi';
-
-  @override
-  String get passwordTooShort => 'Kata sandi harus lebih dari 6 karakter.';
+  String get passwordTooShort => 'Kata sandi terlalu pendek';
 
   @override
   String get perfect => 'Sempurna!';
 
   @override
-  String get personaFriend => 'Teman Lokal';
-
-  @override
-  String get personaGuide => 'Pemandu Wisata';
-
-  @override
-  String get personaTeacher => 'Guru Bahasa Inggris';
+  String get pickGallery => 'Pilih dari Galeri';
 
   @override
   String get playAgain => 'Main Lagi';
@@ -767,6 +647,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get posAdverb => 'Kata Keterangan';
 
   @override
+  String get posArticle => 'Artikel';
+
+  @override
   String get posConjunction => 'Kata Hubung';
 
   @override
@@ -774,6 +657,9 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get posNoun => 'Kata Benda';
+
+  @override
+  String get posParticle => 'Partikel';
 
   @override
   String get posPreposition => 'Kata Depan';
@@ -791,9 +677,33 @@ class AppLocalizationsId extends AppLocalizations {
   String get practiceWordsOnly => 'Latih Kata Saja';
 
   @override
+  String get processing => 'Memproses...';
+
+  @override
   String progress(int current, int total) {
     return 'Progres: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Tentukan bahasa Anda dan bahasa yang ingin dipelajari di Menu > Pengaturan Bahasa terlebih dahulu.';
+
+  @override
+  String get quickStartStep1Title => '1. Atur Bahasa';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Buat kartu belajar Anda sendiri dengan urutan: Masukan (Mikrofon/Keyboard) -> Terjemahan -> Simpan.';
+
+  @override
+  String get quickStartStep2Title => '2. Alur Dasar';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Berlatih dengan obrolan, dan berlatih pengucapan secara langsung sambil melihat teks di tab Latihan Pengucapan.';
+
+  @override
+  String get quickStartStep3Title => '3. Manfaatkan Mode';
 
   @override
   String recentNItems(int count) {
@@ -818,6 +728,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get refresh => 'Segarkan';
 
   @override
+  String get requestTranslation => 'Minta Terjemahan';
+
+  @override
   String get reset => 'Reset';
 
   @override
@@ -838,16 +751,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get reviewModeTitle => 'Ulasan';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Pihak Ketiga';
-
-  @override
-  String get roleUser => 'Pengguna';
-
-  @override
   String get save => 'Simpan';
+
+  @override
+  String get saveAsSentence => 'Simpan sebagai Kalimat';
+
+  @override
+  String get saveAsWord => 'Simpan sebagai Kata';
 
   @override
   String get saveData => 'Simpan';
@@ -858,6 +768,9 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Simpan ke Riwayat Pemindaian';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Simpan terjemahan dari mode pencarian';
 
@@ -866,6 +779,12 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get saving => 'Menyimpan...';
+
+  @override
+  String get scanInstructions => 'Pilih gambar untuk dipindai';
+
+  @override
+  String get scanLabel => 'Pindai';
 
   @override
   String score(String score) {
@@ -912,16 +831,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get selectPOS => 'Pilih Kelas Kata';
 
   @override
-  String get selectParticipants => 'Pilih Peserta';
-
-  @override
-  String get selectSentenceType => 'Pilih Jenis Kalimat';
-
-  @override
   String get selectStudyMaterial => 'Pilih Materi Belajar';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Kalimat';
@@ -930,101 +840,65 @@ class AppLocalizationsId extends AppLocalizations {
   String get signUp => 'Daftar';
 
   @override
-  String get similarTextFound => 'Teks serupa ditemukan';
+  String get simplifiedGuidance =>
+      'Ubah percakapan sehari-hari menjadi bahasa asing dalam sekejap! Talkie akan merekam kehidupan bahasa Anda.';
 
   @override
-  String get skip => 'Lewati';
+  String get sourceLanguageLabel => 'Bahasa saya';
 
   @override
-  String get source => 'Sumber:';
-
-  @override
-  String get sourceLanguage => 'Bahasa Asal';
-
-  @override
-  String get sourceLanguageLabel => 'Source Language';
-
-  @override
-  String get speakNow => 'Bicaralah Sekarang!';
-
-  @override
-  String get speaker => 'Pembicara';
-
-  @override
-  String get speakerSelect => 'Pilih Pembicara';
-
-  @override
-  String get speakingPractice => 'Latihan Bicara';
-
-  @override
-  String get startChat => 'Mulai Obrolan';
-
-  @override
-  String get startPractice => 'Mulai Latihan';
-
-  @override
-  String get startTutorial => 'Mulai Tur';
-
-  @override
-  String get startWarning => 'Peringatan';
+  String get startTutorial => 'Mulai tutorial';
 
   @override
   String get startsWith => 'Mulai Dengan';
 
   @override
-  String get statusCheckEmail =>
-      'Silakan periksa email Anda untuk menyelesaikan verifikasi.';
+  String get statusCheckEmail => 'Silakan periksa email Anda';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Mengunduh: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Gagal mengimpor: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name berhasil diimpor';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Masuk dibatalkan.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Gagal masuk: $error';
   }
 
   @override
-  String get statusLoginSuccess => 'Berhasil masuk.';
+  String get statusLoginSuccess => 'Masuk berhasil';
 
   @override
-  String get statusLogoutSuccess => 'Berhasil keluar.';
+  String get statusLogoutSuccess => 'Berhasil keluar';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Gagal mendaftar: $error';
+  String statusRequestFailed(String error) {
+    return 'Permintaan terjemahan gagal: $error';
   }
 
   @override
-  String get statusSigningUp => 'Mendaftar...';
+  String get statusRequestSuccess => 'Permintaan terjemahan berhasil.';
 
   @override
   String get stopPractice => 'Hentikan Latihan';
 
   @override
-  String get studyComplete => 'Dipelajari';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Materi yang Anda pilih tidak mendukung bahasa belajar yang saat ini diatur ($targetLang), sehingga tidak dapat disimpan secara lokal. Apakah Anda ingin meminta terjemahan?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Catatan ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Bahasa Belajar Tidak Didukung';
 
   @override
   String get styleFormal => 'Formal';
@@ -1039,22 +913,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get styleSlang => 'Slang';
 
   @override
-  String get subject => 'Subjek:';
-
-  @override
   String get swapLanguages => 'Tukar Bahasa';
 
   @override
-  String get switchToAi => 'Beralih ke Mode AI';
-
-  @override
-  String get switchToPartner => 'Beralih ke Mode Partner';
-
-  @override
   String get syncingData => 'Menyinkronkan data...';
-
-  @override
-  String get tabConversation => 'Percakapan';
 
   @override
   String tabReview(int count) {
@@ -1118,6 +980,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get tooltipSearch => 'Cari';
 
   @override
+  String get tooltipSettingsConfirm => 'Konfirmasi Pengaturan';
+
+  @override
   String get tooltipSpeaking => 'Berbicara';
 
   @override
@@ -1130,6 +995,9 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get translate => 'Terjemahkan';
+
+  @override
+  String get translateNow => 'Terjemahkan Sekarang';
 
   @override
   String get translating => 'Menerjemahkan...';
@@ -1146,6 +1014,9 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Bahasa Terjemahan';
+
+  @override
   String get translationLimitExceeded => 'Batas terjemahan terlampaui';
 
   @override
@@ -1160,17 +1031,25 @@ class AppLocalizationsId extends AppLocalizations {
       'Jumlah terjemahan telah diisi ulang 5 kali!';
 
   @override
+  String get translationResult => 'Hasil Terjemahan';
+
+  @override
   String get translationResultHint => 'Hasil Terjemahan - Dapat diedit';
 
   @override
   String get tryAgain => 'Coba Lagi';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Latih percakapan praktis dengan persona AI.';
+  String get ttsInstallGuide =>
+      'Silakan pasang data bahasa yang sesuai di Setelan Android > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'Obrolan AI';
+  String get ttsMissing =>
+      'Mesin suara untuk bahasa ini belum terpasang di perangkat Anda.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Perangkat ini tidak mendukung output suara untuk bahasa ini secara bawaan.';
 
   @override
   String get tutorialContextDesc =>
@@ -1285,7 +1164,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get typeExclamation => 'Seruan';
 
   @override
+  String get typeIdiom => 'Idiom';
+
+  @override
   String get typeImperative => 'Perintah';
+
+  @override
+  String get typeProverb => 'Peribahasa';
 
   @override
   String get typeQuestion => 'Pertanyaan';
@@ -1300,6 +1185,11 @@ class AppLocalizationsId extends AppLocalizations {
   String get useExistingText => 'Gunakan Ada';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Lihat Panduan Online';
 
   @override
@@ -1307,6 +1197,16 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Tonton Iklan dan Isi Ulang (+5 kali)';
+
+  @override
+  String get welcomeButton => 'Mulai';
+
+  @override
+  String get welcomeDesc =>
+      'Selamat datang di Talkie! Mendukung lebih dari 80 bahasa di seluruh dunia dengan integritas 100%, menghadirkan pengalaman belajar yang sempurna dengan desain 3D premium baru dan kinerja yang dioptimalkan.';
+
+  @override
+  String get welcomeTitle => 'Selamat datang di Talkie!';
 
   @override
   String get word => 'Kata';
@@ -1323,112 +1223,4 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Lafal Anda';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Perangkat ini tidak mendukung output suara untuk bahasa ini secara bawaan.';
-
-  @override
-  String get homeTab => 'Terjemahan';
-
-  @override
-  String get welcomeTitle => 'Selamat datang di Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Selamat datang di Talkie! Mendukung lebih dari 80 bahasa di seluruh dunia dengan integritas 100%, menghadirkan pengalaman belajar yang sempurna dengan desain 3D premium baru dan kinerja yang dioptimalkan.';
-
-  @override
-  String get welcomeButton => 'Mulai';
-
-  @override
-  String get labelDetails => 'Pengaturan Detail';
-
-  @override
-  String get translationResult => 'Hasil Terjemahan';
-
-  @override
-  String get inputContent => 'Konten Masukan';
-
-  @override
-  String get translateNow => 'Terjemahkan Sekarang';
-
-  @override
-  String get tooltipSettingsConfirm => 'Konfirmasi Pengaturan';
-
-  @override
-  String get hintNoteExample => 'Contoh: Konteks, homonim, dll.';
-
-  @override
-  String get hintTagExample => 'Contoh: Bisnis, wisata...';
-
-  @override
-  String get addNew => 'Tambah Baru';
-
-  @override
-  String get newNotebookTitle => 'Nama Buku Catatan Baru';
-
-  @override
-  String get enterNameHint => 'Masukkan nama';
-
-  @override
-  String get add => 'Tambah';
-
-  @override
-  String get openSettings => 'Buka Pengaturan';
-
-  @override
-  String get helpNotebook => 'Pilih folder untuk menyimpan hasil terjemahan.';
-
-  @override
-  String get helpNote =>
-      'Bebas mencatat arti kata, contoh kalimat, situasi, dll.';
-
-  @override
-  String get helpTag =>
-      'Masukkan kata kunci untuk klasifikasi atau pencarian nanti.';
-
-  @override
-  String get requestTranslation => 'Minta Terjemahan';
-
-  @override
-  String get statusRequestSuccess => 'Permintaan terjemahan berhasil.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Permintaan terjemahan gagal: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Bahasa Belajar Tidak Didukung';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Materi yang Anda pilih tidak mendukung bahasa belajar yang saat ini diatur ($targetLang), sehingga tidak dapat disimpan secara lokal. Apakah Anda ingin meminta terjemahan?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Atur Bahasa';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Tentukan bahasa Anda dan bahasa yang ingin dipelajari di Menu > Pengaturan Bahasa terlebih dahulu.';
-
-  @override
-  String get quickStartStep2Title => '2. Alur Dasar';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Buat kartu belajar Anda sendiri dengan urutan: Masukan (Mikrofon/Keyboard) -> Terjemahan -> Simpan.';
-
-  @override
-  String get quickStartStep3Title => '3. Manfaatkan Mode';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Berlatih dengan obrolan, dan berlatih pengucapan secara langsung sambil melihat teks di tab Latihan Pengucapan.';
-
-  @override
-  String get noteGuidance =>
-      'Tempat Anda memasukkan detail tambahan untuk terjemahan yang lebih akurat';
 }

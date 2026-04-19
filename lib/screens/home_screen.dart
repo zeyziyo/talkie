@@ -3,10 +3,8 @@ import 'package:google_mobile_ads/google_mobile_ads.dart' hide AppState;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
-import '../services/util/log_service.dart';
-import 'package:sqflite/sqflite.dart';
-import '../l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
+import '../l10n/app_localizations.dart';
 import '../providers/app_state.dart';
 // import '../widgets/mode1_widget.dart'; // Removed: Integrated into Home
 import '../widgets/mode2_widget.dart';
@@ -20,6 +18,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../widgets/simplified_input_widget.dart';
 import '../widgets/scan_widget.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 class HomeScreen extends StatefulWidget {
   static const _channel = MethodChannel('com.zeyziyo.talkie/settings');
@@ -57,6 +56,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   BannerAd? _bannerAd;
   bool _isBannerAdReady = false;
 
+  // App version (loaded dynamically from pubspec.yaml)
+  String _appVersion = '';
+
   // Navigation Controllers
   late PageController _pageController;
   late TabController _tabController;
@@ -65,6 +67,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     _loadBannerAd();
+    _loadAppVersion();
     
     // Initialize Controllers with current mode
     final appState = Provider.of<AppState>(context, listen: false);
@@ -88,6 +91,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     appState.ttsErrorNotifier.addListener(_showTtsInstallGuide);
 
     // v15.8.4: Show Kakao Key Hash removed (User Request)
+  }
+
+  Future<void> _loadAppVersion() async {
+    final info = await PackageInfo.fromPlatform();
+    if (mounted) {
+      setState(() {
+        _appVersion = info.version;
+      });
+    }
   }
 
   void _showTtsInstallGuide() {
@@ -217,12 +229,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       radius: 12,
     ));
 
-    // Mode 0: Translation (Home)
+    // Mode 0: Translation (Premium Simplified Input)
     if (modeIndex == 0) {
-      // No specific tutorial targets for Mode 0 yet
-    } 
-    // Mode 1: Translation (Premium Simplified Input)
-    else if (modeIndex == 1) {
       targets.add(_buildTarget(
         _micButtonKey, 
         l10n.tutorialMicTitle, 
@@ -268,8 +276,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         radius: 12,
       ));
     } 
-    // Mode 2: Review (Material Collection)
-    else if (modeIndex == 2) {
+    // Mode 1: Review (Material Collection)
+    else if (modeIndex == 1) {
       targets.add(_buildTarget(
         _mode2DropdownKey, 
         l10n.menuSelectMaterialSet, 
@@ -301,8 +309,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         paddingFocus: 4,
       ));
     } 
-    // Mode 3: Practice (Sentence Cards)
-    else if (modeIndex == 3) {
+    // Mode 2: Practice (Sentence Cards)
+    else if (modeIndex == 2) {
       targets.add(_buildTarget(
         _mode3DropdownKey, 
         l10n.menuSelectMaterialSet, 
@@ -326,6 +334,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         radius: 8,
         paddingFocus: 4,
       ));
+    }
+    // Mode 3: Scan (No specific tutorial targets needed yet)
+    else if (modeIndex == 3) {
+      // Optional: Add target for the Scan button if a GlobalKey exists.
     }
 
     return targets;
@@ -416,7 +428,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight((appState.currentMode <= 2) ? 154.0.h : 104.0.h),
+        preferredSize: const Size.fromHeight(kToolbarHeight + 44),
         child: Consumer<AppState>(
           builder: (context, appState, child) {
             return AppBar(
@@ -441,132 +453,42 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
               leadingWidth: 56.w,
               bottom: PreferredSize(
-                preferredSize: Size.fromHeight((appState.currentMode <= 2) ? 104.0.h : 54.0.h), // v15.9: Optimized heights (0-2 for buttons)
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Container(
-                      color: Colors.white,
-                      child: TabBar(
-                        controller: _tabController,
-                        labelColor: Colors.white,
-                        unselectedLabelColor: Colors.indigo.shade300,
-                        indicatorSize: TabBarIndicatorSize.tab,
-                        indicator: BoxDecoration(
-                          borderRadius: BorderRadius.circular(0),
-                          color: Colors.indigo,
-                        ),
-                        onTap: (index) => appState.switchMode(index),
-                        tabs: [
-                          _buildModernTab(
-                            isSelected: appState.currentMode == 0,
-                            icon: Icons.translate,
-                            label: l10n.homeTab,
-                          ),
-                          _buildModernTab(
-                            isSelected: appState.currentMode == 1,
-                            icon: Icons.auto_stories,
-                            label: l10n.reviewModeTitle,
-                          ),
-                          _buildModernTab(
-                            isSelected: appState.currentMode == 2,
-                            icon: Icons.record_voice_over,
-                            label: l10n.practiceModeTitle,
-                          ),
-                          _buildModernTab(
-                            isSelected: appState.currentMode == 3,
-                            icon: Icons.document_scanner,
-                            label: l10n.scanLabel,
-                          ),
-                        ],
-                      ),
+                preferredSize: const Size.fromHeight(44),
+                child: Container(
+                  color: Colors.white,
+                  child: TabBar(
+                    controller: _tabController,
+                    labelColor: Colors.white,
+                    unselectedLabelColor: Colors.indigo.shade300,
+                    indicatorSize: TabBarIndicatorSize.tab,
+                    indicator: BoxDecoration(
+                      borderRadius: BorderRadius.circular(0),
+                      color: Colors.indigo,
                     ),
-                    if (appState.currentMode <= 2)
-                      Container(
-                        color: Colors.white,
-                        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-                        child: Column(
-                          children: [
-                            // Row 1: Word/Sentence Toggle + Help Icon (Mode 1, 2 only)
-                            if (appState.currentMode != 0)
-                              Row(
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      height: 40.h,
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey.shade100,
-                                        borderRadius: BorderRadius.circular(12.r),
-                                        border: Border.all(color: Colors.grey.shade300),
-                                      ),
-                                      child: Row(
-                                        key: _mode1ToggleKey,
-                                        children: [
-                                          _buildToggleButton(context, label: l10n.tabWord, isSelected: appState.recordTypeFilter == 'word', onTap: () { appState.setRecordTypeFilter('word'); appState.selectMaterial(null); }),
-                                          _buildToggleButton(context, label: l10n.tabSentence, isSelected: appState.recordTypeFilter == 'sentence', onTap: () { appState.setRecordTypeFilter('sentence'); appState.selectMaterial(null); }),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(width: 8.w),
-                                  IconButton(
-                                    onPressed: () => _showSimplifiedGuidance(context),
-                                    icon: Icon(Icons.info_outline, color: Colors.amber, size: 24.r),
-                                    tooltip: l10n.menuHelp,
-                                    padding: EdgeInsets.zero,
-                                    constraints: const BoxConstraints(),
-                                  ),
-                                ],
-                              ),
-                            
-                            if (appState.currentMode != 0) SizedBox(height: 8.h),
-
-                            // Row 2: Language Switcher
-                            Row(
-                              children: [
-                                Expanded(
-                                  child: InkWell(
-                                    key: _swapButtonKey,
-                                    onTap: () => appState.swapLanguages(),
-                                    borderRadius: BorderRadius.circular(8.r),
-                                    child: Container(
-                                      height: 48.h, // v115: Slightly larger for better touch target
-                                      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
-                                      decoration: BoxDecoration(
-                                        color: Colors.blue[50], 
-                                        borderRadius: BorderRadius.circular(8.r), 
-                                        border: Border.all(color: Colors.blue.shade200)
-                                      ),
-                                      child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Flexible(child: Text(appState.languageNames[appState.currentInputLang] ?? appState.currentInputLang.toUpperCase(), style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
-                                          SizedBox(width: 12.w),
-                                          Icon(Icons.swap_horiz, size: 20.r, color: Colors.blue.shade600),
-                                          SizedBox(width: 12.w),
-                                          Flexible(child: Text(appState.languageNames[appState.currentOutputLang] ?? appState.currentOutputLang.toUpperCase(), style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                // Mode 0 only: Help Icon stays in the same row
-                                if (appState.currentMode == 0) ...[
-                                  SizedBox(width: 12.w),
-                                  IconButton(
-                                    onPressed: () => _showSimplifiedGuidance(context),
-                                    icon: Icon(Icons.info_outline, color: Colors.amber, size: 24.r),
-                                    tooltip: l10n.menuHelp,
-                                    padding: EdgeInsets.zero,
-                                    constraints: const BoxConstraints(),
-                                  ),
-                                ],
-                              ],
-                            ),
-                          ],
-                        ),
+                    onTap: (index) => appState.switchMode(index),
+                    tabs: [
+                      _buildModernTab(
+                        isSelected: appState.currentMode == 0,
+                        icon: Icons.translate,
+                        label: l10n.homeTab,
                       ),
-                  ],
+                      _buildModernTab(
+                        isSelected: appState.currentMode == 1,
+                        icon: Icons.auto_stories,
+                        label: l10n.reviewModeTitle,
+                      ),
+                      _buildModernTab(
+                        isSelected: appState.currentMode == 2,
+                        icon: Icons.record_voice_over,
+                        label: l10n.practiceModeTitle,
+                      ),
+                      _buildModernTab(
+                        isSelected: appState.currentMode == 3,
+                        icon: Icons.document_scanner,
+                        label: l10n.scanLabel,
+                      ),
+                    ],
+                  ),
                 ),
               ),
 
@@ -833,6 +755,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   },
                 ),
                 ListTile(
+                  leading: const Icon(Icons.record_voice_over),
+                  title: Text(l10n.practiceModeTitle),
+                  selected: appState.currentMode == 2,
+                  selectedColor: const Color(0xFF667eea),
+                  onTap: () {
+                    appState.switchMode(2);
+                    Navigator.pop(context);
+                  },
+                ),
+                ListTile(
                   leading: const Icon(Icons.document_scanner),
                   title: Text(l10n.scanLabel),
                   selected: appState.currentMode == 3,
@@ -843,32 +775,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   },
                 ),
                 const Divider(),
-                ListTile(
-                  leading: const Icon(Icons.bug_report_outlined, color: Colors.blueGrey),
-                  title: const Text('진단 정보 복사', style: TextStyle(color: Colors.blueGrey, fontSize: 13)),
-                  onTap: () async {
-                    try {
-                      final logs = LogService.getAllLogs();
-                      final dbPath = await getDatabasesPath();
-                      
-                      String info = '--- Talkie Diagnostics ---\n';
-                      info += 'Device: ${Platform.isAndroid ? "Android" : Platform.isIOS ? "iOS" : "Other"}\n';
-                      info += 'DB Path: $dbPath\n';
-                      info += '--- Logs ---\n';
-                      info += logs;
-                      
-                      await Clipboard.setData(ClipboardData(text: info));
-                      
-                      if (context.mounted) {
-                        Navigator.pop(context);
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text('진단 정보가 클립보드에 복사되었습니다. 개발자에게 전달해주세요.')),
-                        );
-                      }
-                    } catch (e) {
-                      LogService.error('Diagnostics Copy Failed', e);
-                    }
-                  },
+                // 버전 정보 (Drawer 하단)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                  child: Text(
+                    _appVersion.isEmpty ? '' : '${l10n.versionLabel(_appVersion)}  |  ${l10n.developerContact}',
+                    style: TextStyle(
+                      color: Colors.grey.shade400,
+                      fontSize: 12,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ],
             );
@@ -892,6 +809,90 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       '인터넷 연결이 없습니다. 저장된 내용으로 복습만 가능합니다.',
                       style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
                     ),
+                  ),
+                ],
+              ),
+            ),
+          // 언어선택기 + 토글 (모드 0, 1, 2에서 표시)
+          if (appState.currentMode == 0 || appState.currentMode == 1 || appState.currentMode == 2)
+            Container(
+              color: Colors.white,
+              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  // 토글: 복습/연습 모드만
+                  if (appState.currentMode == 1 || appState.currentMode == 2)
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            height: 40.h,
+                            decoration: BoxDecoration(
+                              color: Colors.grey.shade100,
+                              borderRadius: BorderRadius.circular(12.r),
+                              border: Border.all(color: Colors.grey.shade300),
+                            ),
+                            child: Row(
+                              key: _mode1ToggleKey,
+                              children: [
+                                _buildToggleButton(context, label: l10n.tabWord, isSelected: appState.recordTypeFilter == 'word', onTap: () { appState.setRecordTypeFilter('word'); appState.selectMaterial(null); }),
+                                _buildToggleButton(context, label: l10n.tabSentence, isSelected: appState.recordTypeFilter == 'sentence', onTap: () { appState.setRecordTypeFilter('sentence'); appState.selectMaterial(null); }),
+                              ],
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 8.w),
+                        IconButton(
+                          onPressed: () => _showSimplifiedGuidance(context),
+                          icon: Icon(Icons.info_outline, color: Colors.amber, size: 24.r),
+                          tooltip: l10n.menuHelp,
+                          padding: EdgeInsets.zero,
+                          constraints: const BoxConstraints(),
+                        ),
+                      ],
+                    ),
+                  if (appState.currentMode == 1 || appState.currentMode == 2) SizedBox(height: 8.h),
+                  // 언어 선택기
+                  Row(
+                    children: [
+                      Expanded(
+                        child: InkWell(
+                          key: _swapButtonKey,
+                          onTap: () => appState.swapLanguages(),
+                          borderRadius: BorderRadius.circular(8.r),
+                          child: Container(
+                            height: 48.h,
+                            padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
+                            decoration: BoxDecoration(
+                              color: Colors.blue[50],
+                              borderRadius: BorderRadius.circular(8.r),
+                              border: Border.all(color: Colors.blue.shade200),
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Flexible(child: Text(appState.languageNames[appState.currentInputLang] ?? appState.currentInputLang.toUpperCase(), style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
+                                SizedBox(width: 12.w),
+                                Icon(Icons.swap_horiz, size: 20.r, color: Colors.blue.shade600),
+                                SizedBox(width: 12.w),
+                                Flexible(child: Text(appState.languageNames[appState.currentOutputLang] ?? appState.currentOutputLang.toUpperCase(), style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: Colors.blue.shade800), overflow: TextOverflow.ellipsis)),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      if (appState.currentMode == 0) ...[
+                        SizedBox(width: 12.w),
+                        IconButton(
+                          onPressed: () => _showSimplifiedGuidance(context),
+                          icon: Icon(Icons.info_outline, color: Colors.amber, size: 24.r),
+                          tooltip: l10n.menuHelp,
+                          padding: EdgeInsets.zero,
+                          constraints: const BoxConstraints(),
+                        ),
+                      ],
+                    ],
                   ),
                 ],
               ),

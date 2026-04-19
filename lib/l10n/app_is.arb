@@ -1,32 +1,10 @@
 {
   "@@locale": "is",
-  "basicWords": "Grunn orðageymsla",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Inntaksmál",
-  "translationLanguage": "Þýðingarmál",
-  "simplifiedGuidance": "Umbreyttu daglegum samtölum samstundis á erlent tungumál! Talkie heldur utan um tungumálanotkun þína.",
-  "noDataForLanguage": "Engin námsefni fyrir valið tungumál er að finna í staðbundnum gagnagrunni. Vinsamlegast halaðu niður efni eða veldu annað tungumál.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Hætta við",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Nákvæmni",
-  "ttsMissing": "Raddræðuvél fyrir þetta tungumál er ekki uppsett á tækinu þínu.",
-  "ttsInstallGuide": "Vinsamlegast settu upp viðeigandi tungumálapakka í Android stillingum > Google Texti í Tal.",
   "adLoading": "Auglýsing er að hlaðast. Vinsamlegast reyndu aftur síðar.",
+  "add": "Bæta við",
+  "addNew": "Bæta við nýju",
   "addNewSubject": "Bæta við nýju nafni",
-  "addParticipant": "Bæta við þátttakanda",
   "addTagHint": "Bættu við merki...",
   "alreadyHaveAccount": "Ertu nú þegar með aðgang?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Grunn orðageymsla",
+  "basicWords": "Grunn orðageymsla",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Hætta við",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Þolfall",
   "casePossessive": "Eignarfall",
   "casePossessivePronoun": "Eignarfornafn",
   "caseReflexive": "Afturbeygt fornafn",
   "caseSubject": "Nefnifall",
-  "chatAiChat": "Spjall",
-  "chatAllConversations": "Öll samtöl",
-  "chatChoosePersona": "Veldu persónu",
-  "chatEndMessage": "Viltu ljúka samtalinu?",
-  "chatEndTitle": "Ljúka og vista samtal",
-  "chatFailed": "Spjall mistókst: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Samtalsútdráttur ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Samtalasaga",
-  "chatNew": "Nýtt samtal",
-  "chatNewChat": "Nýtt samtal",
-  "chatNoConversations": "Engin samtöl ennþá",
-  "chatSearchHint": "Leita eftir spjalltitli...",
-  "chatNoteSearchHint": "Leita í athugasemdum...",
-  "chatSaveAndExit": "Vista og hætta",
-  "chatStartNewPrompt": "Byrjaðu nýtt samtal til að æfa!",
-  "chatTypeHint": "Sláðu inn skilaboð...",
-  "chatUntitled": "Ónefnt samtal",
   "checking": "Athuga...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Viltu eyða þessu samtali?\nEydd samtöl er ekki hægt að endurheimta.",
-  "confirmDeleteParticipant": "Viltu eyða þessum þátttakanda?",
   "contextTagHint": "Vinsamlegast skrifaðu aðstæður til að auðvelda aðgreiningu síðar",
   "contextTagLabel": "Samhengi/aðstæður (valfrjálst) - td Morgunkveðja, virðingartungumál",
   "copiedToClipboard": "Afritað á klemmuspjald!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Æfðu samtöl í gegnum atburðarás. Veldu viðeigandi svar og segðu það.",
-  "dialogueQuestTitle": "Samtalaleiðangur",
-  "disambiguationPrompt": "Hvaða merkingu viltu þýða með?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Veldu merkingu",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Ertu ekki með aðgang?",
-  "editParticipant": "Breyta þátttakanda",
   "email": "Netfang",
   "emailAlreadyInUse": "Þetta netfang er þegar í notkun. Vinsamlegast skráðu þig inn eða notaðu endurheimt lykilorðs.",
+  "enterNameHint": "Sláðu inn nafn",
   "enterNewSubjectName": "Sláðu inn nýtt nafn",
   "enterSentenceHint": "Sláðu inn setningu...",
   "enterTextHint": "Sláðu inn texta til að þýða",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Útdreginn texti",
   "female": "Kona",
   "file": "Skrá:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Leikjastilling",
   "gameOver": "Leik lokið",
   "gender": "Kyn",
-  "labelFilterMaterial": "Efnisyfirlit",
-  "labelFilterTag": "Merki",
   "generalTags": "Almenn merki",
   "getMaterials": "Fá efni",
   "good": "Gott",
   "googleContinue": "Halda áfram með Google",
-  "helpDialogueImportDesc": "Flytja inn heilt samtalasett sem JSON skrá.",
-  "helpDialogueImportDetails": "• JSON uppbygging: Notaðu `dialogues` fylkið í stað `entries`\n• Sjálfvirk endurheimt: Endurheimt samtalsaheiti, persóna og skilaboðaröð.\n• Staðsetning: Innflutt samtöl birtast á 'Saga' flipanum í gervigreindarspjallstillingu.",
   "helpJsonDesc": "Til að flytja inn námsefni til notkunar í stillingu 3 sem JSON skrá, vinsamlegast fylgdu þessu sniði:",
-  "helpJsonTypeDialogue": "Samræða",
   "helpJsonTypeSentence": "Setning",
   "helpJsonTypeWord": "Orð",
   "helpMode1Desc": "Byrjaðu tungumálanámið þitt á leiðandi hátt með úrvals 3D hljóðnema og stórum lyklaborðstáknum.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Veldu námsefni: Notaðu valmyndina efst til hægri (⋮) til að velja 'Veldu námsefni' eða 'Námsefnisvef'\n• Flettu spjaldi: 'Sýna/Fela' til að staðfesta þýðingu\n• Hlusta: Spilaðu framburð með hátalaratákninu\n• Lokið námi: Merktu námið sem lokið með hakmerki (V)\n• Eyða: Eyða færslum með því að ýta lengi á spjaldið\n• Leita og sía: Stuðningur við leitarrönd (snjallleit í rauntíma) og síur fyrir merki og upphafsstafi",
   "helpMode3Desc": "Hlustaðu á setninguna og æfðu framburð með því að endurtaka (Shadowing).",
   "helpMode3Details": "• Efnisval: Veldu efnissett til að læra\n• Millibilsstilling: Stilltu biðtímann á milli setninga með [-] [+] hnöppunum (3 sekúndur til 60 sekúndur)\n• Byrja/stöðva: Stjórnaðu skuggastund\n• Tala: Hlustaðu á rödd og endurtaktu\n• Viðbrögð: Nákvæmnisstig (0-100) og litaskjár\n• Leitarskilyrði: Síaðu æfingamarkmið eftir merki, nýlegum hlutum eða upphafsstöfum",
-  "helpModeChatDesc": "Æfðu raunverulegar samræður með því að spjalla við AI persónu.",
-  "helpModeChatDetails": "• Gervigreind spjall: Æfðu raunveruleg samtöl við persónur í 'Spjall' valmyndinni á flipastikunni neðst\n• Persónustillingar: Tilgreindu kyn, nafn og tungumálakóða hins aðilans að vild\n• GPS sviðsetning: Mælir með umræðuefnum sem henta staðsetningunni með því að þekkja núverandi staðsetningu þína\n• Tvö tungumál: Svör gervigreindarinnar eru sýnd ásamt þýðingum til að hámarka námsárangur\n• Skráastjórnun: Síaðu fyrri samtalsferil og vistaðu ákveðin skilaboð úr samtalinu sem námsefni",
+  "helpNote": "Skrifaðu frjálst um merkingu orðsins, dæmi eða aðstæður.",
+  "helpNotebook": "Veldu möppuna til að vista þýddar niðurstöður í.",
   "helpTabJson": "JSON snið",
   "helpTabModes": "Umfjöllun um stillingar",
   "helpTabQuickStart": "Fljót byrjun",
   "helpTabTour": "Kynnisferð",
+  "helpTag": "Sláðu inn leitarorð til að flokka eða leita seinna.",
   "helpTitle": "Hjálp & leiðbeiningar",
   "helpTourDesc": "**Auðkenndur hringur** leiðbeinir lykileiginleikum.\n(Dæmi: Hægt er að eyða kortinu sem **auðkenndi hringurinn** vísar á með því að halda því inni.)",
   "hide": "Fela",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Dæmi: Samhengi, samheiti o.s.frv.",
+  "hintTagExample": "Dæmi: Viðskipti, ferðalög...",
+  "homeTab": "Þýðingar",
   "importAdded": "Bætt við: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Flutti inn {files} skrár, {entries} færslur.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Flytja inn JSON skrá",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Einstök JSON skrá",
+  "importSourceFolder": "Mappa (tungumálaskipulag)",
+  "importSourceTitle": "Veldu innflutningsuppruna",
+  "importSourceZip": "ZIP skrá (þjappað mappa)",
   "importTotal": "Alls: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Inntak",
+  "inputLanguage": "Inntaksmál",
   "inputModeTitle": "Inntak",
   "intervalSeconds": "Millibil: {seconds} sekúndur",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Vinsamlegast sláðu inn gilt netfang.",
   "kakaoContinue": "Halda áfram með Kakao",
+  "labelDetails": "Ítarlegar stillingar",
+  "labelFilterMaterial": "Efnisyfirlit",
+  "labelFilterTag": "Merki",
   "labelLangCode": "Tungumálakóði (t.d. en-US, ko-KR)",
-  "labelName": "Nafn",
   "labelNote": "Athugasemd",
   "labelPOS": "Málhluti",
-  "labelRole": "Hlutverk",
   "labelSentence": "Setning",
   "labelSentenceCollection": "Setningasafn",
   "labelSentenceType": "Tegund setningar",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Hleð inn þátttakendum...",
   "location": "Staðsetning",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Innskrá",
   "logout": "Útskrá",
   "logoutConfirmMessage": "Viltu skrá þig út af þessu tæki?",
   "logoutConfirmTitle": "Útskrá",
   "male": "Karl",
-  "manageParticipants": "Stjórna þátttakendum",
   "manual": "Handvirkt inntak",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Efnisupplýsingar",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Ég",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Flytja inn efni úr tækinu",
   "menuHelp": "Hjálp",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Setningasafnið mitt",
   "myWordbook": "Orðaforði minn",
   "neutral": "Hlutlaust",
+  "newNotebookTitle": "Nafn á nýrri minnisbók",
   "newSubjectName": "Nýtt nafn á orðaforða/setningasafn",
   "next": "Næsta",
-  "noDialogueHistory": "Engin samtalsaga.",
-  "noInternetWarningMic": "Engin nettenging. Raddgreining er hugsanlega ekki möguleg án nettengingar.",
-  "noInternetWarningTranslate": "Engin nettenging. Þýðingaraðgerðin er ekki tiltæk án nettengingar. Vinsamlegast notaðu endurskoðunarham.",
+  "noDataForLanguage": "Engin námsefni fyrir valið tungumál er að finna í staðbundnum gagnagrunni. Vinsamlegast halaðu niður efni eða veldu annað tungumál.",
   "noMaterialsInCategory": "Ekkert efni er í þessum flokki.",
-  "noParticipantsFound": "Engir þátttakendur fundust.",
   "noRecords": "Enginn námsferill fyrir valið tungumál",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Engin rödd greindist",
   "notSelected": "- Enginn valinn -",
+  "noteGuidance": "Þar sem þú slærð inn frekari upplýsingar fyrir nákvæmari þýðingu",
   "onlineLibraryCheckInternet": "Vinsamlegast athugaðu nettenginguna þína eða reyndu aftur seinna.",
   "onlineLibraryLoadFailed": "Ekki tókst að hlaða inn efni.",
   "onlineLibraryNoMaterials": "Ekkert efni er til staðar.",
-  "participantDeleted": "Þátttakanda hefur verið eytt.",
-  "participantRename": "Endurnefna þátttakanda",
-  "partner": "Maki",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Makastilling",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Opna stillingar",
   "password": "Lykilorð",
-  "passwordTooShort": "Lykilorðið verður að vera að minnsta kosti 6 stafir.",
+  "passwordTooShort": "Lykilorðið er of stutt",
   "perfect": "Fullkomið!",
-  "personaFriend": "Vinur heimamanns",
-  "personaGuide": "Ferðaleiðsögumaður",
-  "personaTeacher": "Enskukennari",
+  "pickGallery": "Veldu úr myndasafni",
   "playAgain": "Spila aftur",
   "playbackFailed": "Spilun mistókst: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Lýsingarorð",
   "posAdverb": "Atviksorð",
+  "posArticle": "Greinir",
   "posConjunction": "Tengiorð",
   "posInterjection": "Upphrópun",
   "posNoun": "Nafnorð",
+  "posParticle": "Aðskeyti/Partikill",
   "posPreposition": "Forsetning/hjálparorð",
   "posPronoun": "Fornafn",
   "posVerb": "Sagnorð",
   "practiceModeTitle": "Æfing",
   "practiceWordsOnly": "Æfðu aðeins orð",
+  "processing": "Í vinnslu...",
   "progress": "Framfarir: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Farðu í Valmynd > Tungumál til að velja þitt tungumál og tungumálið sem þú vilt læra.",
+  "quickStartStep1Title": "1. Veldu tungumál",
+  "quickStartStep2Desc": "Búðu til þín eigin spjöld í þessari röð: Inntak (hljóðnemi/lyklaborð) -> Þýðing -> Vista.",
+  "quickStartStep2Title": "2. Grunnflæði",
+  "quickStartStep3Desc": "Æfðu þig í spjalli og æfðu framburð með því að horfa á textann í Framburðarflipanum.",
+  "quickStartStep3Title": "3. Nýttu stillingar",
   "recentNItems": "Skoða nýlega búnar til {count} stk",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Sækja um þýðingu",
   "reset": "Endurstilla",
   "resetPracticeHistory": "Endurstilla æfingaferil",
   "retry": "Reyna aftur?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Endurskoðun",
-  "roleAi": "Gervigreind",
-  "roleThirdParty": "Þriðji aðili",
-  "roleUser": "Notandi",
   "save": "Vista",
+  "saveAsSentence": "Vista sem setningu",
+  "saveAsWord": "Vista sem orð",
   "saveData": "Vista gögn",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Vista í skannasögu",
   "saveTranslationsFromSearch": "Reyndu að vista þýðingar úr leitastillingunni",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Veldu mynd til að skanna",
+  "scanLabel": "Skanna",
   "score": "Nákvæmni: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Veldu orðflokk",
-  "selectParticipants": "Veldu þátttakendur",
-  "selectSentenceType": "Veldu tegund setningar",
   "selectStudyMaterial": "Veldu námsefni",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Setning",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Nýskrá",
-  "similarTextFound": "Svipaður texti fannst",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Sleppa",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Heimild:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Frummál",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "sourceLanguageLabel": "Mitt tungumál (Source)",
-  "speakNow": "Talaðu núna!",
-  "speaker": "Fyrirlesari",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Veldu raddgjafa",
-  "speakingPractice": "Talandi æfing",
-  "startChat": "Hefja samtal",
-  "startPractice": "Hefja æfingu",
-  "startTutorial": "Byrja kennslu",
-  "startWarning": "Viðvörun",
+  "simplifiedGuidance": "Umbreyttu daglegum samtölum samstundis á erlent tungumál! Talkie heldur utan um tungumálanotkun þína.",
+  "sourceLanguageLabel": "Mitt tungumál",
+  "startTutorial": "Byrja kennsluefni",
   "startsWith": "Byrjar á",
-  "statusCheckEmail": "Vinsamlegast athugaðu tölvupóstinn þinn til að staðfesta.",
+  "statusCheckEmail": "Vinsamlegast athugaðu tölvupóstinn þinn",
   "statusDownloading": "Sæki: {name}...",
-  "statusImportFailed": "Innflutningur mistókst: {error}",
-  "statusImportSuccess": "{name} innflutningur lokið",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Hætt við innskráningu.",
-  "statusLoginFailed": "Innskráning mistókst: {error}",
-  "statusLoginSuccess": "Innskráning tókst.",
-  "statusLogoutSuccess": "Útskráning tókst.",
-  "statusSignUpFailed": "Nýskráning mistókst: {error}",
-  "statusSigningUp": "Nýskráning í gangi...",
-  "stopPractice": "Stöðva æfingu",
-  "studyComplete": "Námi lokið",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Námsferill ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Innflutningur mistókst: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} innflutningur lokið",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Innskráning mistókst: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Innskráning tókst",
+  "statusLogoutSuccess": "Útskráning tókst",
+  "statusRequestFailed": "Beiðni um þýðingu mistókst: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Beiðni um þýðingu tókst.",
+  "stopPractice": "Stöðva æfingu",
+  "studyLangNotFoundDesc": "Valin gögn styðja ekki núverandi námstungumál ({targetLang}) og því er ekki hægt að vista þau staðbundið. Viltu biðja um þýðingu?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Námstungumál ekki stutt",
   "styleFormal": "Formlegt",
   "styleInformal": "Óformlegt",
   "stylePolite": "Kurteislegt",
   "styleSlang": "Slangur",
-  "subject": "Titill:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Skipta um tungumál",
-  "switchToAi": "Skipta yfir í gervigreindarstillingu",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Skipta yfir í makastillingu",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Samstilla gögn...",
-  "tabConversation": "Samtal",
   "tabReview": "Endurskoðun ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Minnka",
   "tooltipIncrease": "Auka",
   "tooltipSearch": "Leita",
+  "tooltipSettingsConfirm": "Staðfesta stillingar",
   "tooltipSpeaking": "Tala",
   "tooltipStudyReview": "Nám+Endurskoðun",
   "totalRecords": "Alls {count} færslur (skoða allt)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Þýða núna",
   "translating": "Þýða...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Þýðingarmál",
   "translationLimitExceeded": "Þýðingarmörk náð",
   "translationLimitMessage": "Þú hefur notað allar þínar daglegu ókeypis þýðingar (5 sinnum).\\n\\nViltu fylla strax á 5 sinnum með því að horfa á auglýsingu?",
   "translationLoaded": "Hlaðið inn vistaðri þýðingu",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Þýðingartímar fylltir á 5 sinnum!",
+  "translationResult": "Þýðingarniðurstaða",
   "translationResultHint": "Þýðingarniðurstaða - hægt að breyta",
   "tryAgain": "Reyndu aftur",
-  "tutorialAiChatDesc": "Æfðu raunveruleg samtöl við gervigreindarpersónu.",
-  "tutorialAiChatTitle": "AI spjall",
+  "ttsInstallGuide": "Vinsamlegast settu upp viðeigandi tungumálapakka í Android stillingum > Google Texti í Tal.",
+  "ttsMissing": "Raddræðuvél fyrir þetta tungumál er ekki uppsett á tækinu þínu.",
+  "ttsUnsupportedNatively": "Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu.",
   "tutorialContextDesc": "Jafnvel þótt það sé sama setningin geturðu vistað hana sérstaklega með því að skrifa aðstæður (td morgun, kvöld).",
   "tutorialContextTitle": "Aðstæður/samhengismerki",
   "tutorialLangSettingsDesc": "Stilltu frumtungu og marktungu til að þýða.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Þýðir textann sem þú slóst inn.",
   "tutorialTransTitle": "Þýða",
   "typeExclamation": "Upphrópun",
+  "typeIdiom": "Orðtak",
   "typeImperative": "Skipun",
+  "typeProverb": "Orðskviður",
   "typeQuestion": "Spurning",
   "typeStatement": " fullyrðing",
   "usageLimitTitle": "Takmörkun náð",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Skoða leiðbeiningar á netinu",
   "voluntaryTranslations": "Sjálfviljugar þýðingar",
   "watchAdAndRefill": "Áfylling með því að horfa á auglýsingu (+5 sinnum)",
+  "welcomeButton": "Byrja",
+  "welcomeDesc": "Velkomin/nn í Talkie! Við styðjum yfir 80 tungumál um allan heim með 100% heilindum, ásamt nýrri úrvals 3D hönnun og fínstilltri frammistöðu fyrir fullkomna námsupplifun.",
+  "welcomeTitle": "Velkomin í Talkie!",
   "word": "Orð",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Verjaðu stöðina með því að segja orðið áður en óvinurinn kemur.",
   "wordDefenseTitle": "Orðavörn",
   "wordModeLabel": "Orðastilling",
-  "yourPronunciation": "Framburðurinn þinn",
-  "ttsUnsupportedNatively": "Þetta tæki styður ekki texta í tal á þessu tungumáli í gegnum sjálfgefna stillingu.",
-  "homeTab": "Þýðingar",
-  "welcomeTitle": "Velkomin í Talkie!",
-  "welcomeDesc": "Velkomin/nn í Talkie! Við styðjum yfir 80 tungumál um allan heim með 100% heilindum, ásamt nýrri úrvals 3D hönnun og fínstilltri frammistöðu fyrir fullkomna námsupplifun.",
-  "welcomeButton": "Byrja",
-  "labelDetails": "Ítarlegar stillingar",
-  "translationResult": "Þýðingarniðurstaða",
-  "inputContent": "Inntak",
-  "translateNow": "Þýða núna",
-  "tooltipSettingsConfirm": "Staðfesta stillingar",
-  "hintNoteExample": "Dæmi: Samhengi, samheiti o.s.frv.",
-  "hintTagExample": "Dæmi: Viðskipti, ferðalög...",
-  "addNew": "Bæta við nýju",
-  "newNotebookTitle": "Nafn á nýrri minnisbók",
-  "enterNameHint": "Sláðu inn nafn",
-  "add": "Bæta við",
-  "openSettings": "Opna stillingar",
-  "helpNotebook": "Veldu möppuna til að vista þýddar niðurstöður í.",
-  "helpNote": "Skrifaðu frjálst um merkingu orðsins, dæmi eða aðstæður.",
-  "helpTag": "Sláðu inn leitarorð til að flokka eða leita seinna.",
-  "requestTranslation": "Sækja um þýðingu",
-  "statusRequestSuccess": "Beiðni um þýðingu tókst.",
-  "statusRequestFailed": "Beiðni um þýðingu mistókst: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Námstungumál ekki stutt",
-  "studyLangNotFoundDesc": "Valin gögn styðja ekki núverandi námstungumál ({targetLang}) og því er ekki hægt að vista þau staðbundið. Viltu biðja um þýðingu?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Veldu tungumál",
-  "quickStartStep1Desc": "Farðu í Valmynd > Tungumál til að velja þitt tungumál og tungumálið sem þú vilt læra.",
-  "quickStartStep2Title": "2. Grunnflæði",
-  "quickStartStep2Desc": "Búðu til þín eigin spjöld í þessari röð: Inntak (hljóðnemi/lyklaborð) -> Þýðing -> Vista.",
-  "quickStartStep3Title": "3. Nýttu stillingar",
-  "quickStartStep3Desc": "Æfðu þig í spjalli og æfðu framburð með því að horfa á textann í Framburðarflipanum.",
-  "noteGuidance": "Þar sem þú slærð inn frekari upplýsingar fyrir nákvæmari þýðingu"
+  "yourPronunciation": "Framburðurinn þinn"
 }

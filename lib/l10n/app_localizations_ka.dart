@@ -9,53 +9,20 @@ class AppLocalizationsKa extends AppLocalizations {
   AppLocalizationsKa([String locale = 'ka']) : super(locale);
 
   @override
-  String get basicWords => 'სიტყვების ძირითადი საცავი';
-
-  @override
-  String get inputLanguage => 'შეყვანის ენა';
-
-  @override
-  String get translationLanguage => 'თარგმანის ენა';
-
-  @override
-  String get simplifiedGuidance =>
-      'მყისიერად გადააკეთეთ ყოველდღიური საუბრები უცხო ენებზე! Talkie აღწერს თქვენს ენობრივ ცხოვრებას.';
-
-  @override
-  String get noDataForLanguage =>
-      'არ არის სასწავლო მასალა არჩეული ენისთვის ლოკალურ მონაცემთა ბაზაში. გთხოვთ, ჩამოტვირთოთ მასალა ან აირჩიოთ სხვა ენა.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'გაუქმება';
-
-  @override
   String get accuracy => 'სიზუსტე';
-
-  @override
-  String get ttsMissing =>
-      'ამ ენისთვის მეტყველების ძრავა თქვენს მოწყობილობაზე დაინსტალირებული არ არის.';
-
-  @override
-  String get ttsInstallGuide =>
-      'გთხოვთ, დააინსტალიროთ ენის მონაცემები Android-ის პარამეტრებიდან > Google TTS.';
 
   @override
   String get adLoading =>
       'მიმდინარეობს რეკლამის ჩატვირთვა. გთხოვთ, სცადოთ მოგვიანებით.';
 
   @override
-  String get addNewSubject => 'ახალი სათაურის დამატება';
+  String get add => 'დამატება';
 
   @override
-  String get addParticipant => 'მონაწილის დამატება';
+  String get addNew => 'ახლის დამატება';
+
+  @override
+  String get addNewSubject => 'ახალი სათაურის დამატება';
 
   @override
   String get addTagHint => 'ტეგის დამატება...';
@@ -89,6 +56,12 @@ class AppLocalizationsKa extends AppLocalizations {
   String get basicWordRepository => 'სიტყვების ძირითადი საცავი';
 
   @override
+  String get basicWords => 'სიტყვების ძირითადი საცავი';
+
+  @override
+  String get cancel => 'გაუქმება';
+
+  @override
   String get caseObject => 'ბრალდებითი ბრუნვა';
 
   @override
@@ -104,61 +77,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get caseSubject => 'სახელობითი ბრუნვა';
 
   @override
-  String get chatAiChat => 'ჩეთი';
-
-  @override
-  String get chatAllConversations => 'ყველა საუბარი';
-
-  @override
-  String get chatChoosePersona => 'პერსონას არჩევა';
-
-  @override
-  String get chatEndMessage => 'გსურთ საუბრის დასრულება?';
-
-  @override
-  String get chatEndTitle => 'საუბრის დასრულება და შენახვა';
-
-  @override
-  String chatFailed(Object error) {
-    return 'ჩატი ვერ მოხერხდა: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'საუბრის ამონარიდი ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'საუბრის ისტორია';
-
-  @override
-  String get chatNew => 'ახალი საუბარი';
-
-  @override
-  String get chatNewChat => 'ახალი საუბარი';
-
-  @override
-  String get chatNoConversations => 'ჯერ საუბრები არ არის';
-
-  @override
-  String get chatSearchHint => 'ჩატების სათაურების ძიება...';
-
-  @override
-  String get chatNoteSearchHint => 'კომენტარებში ძიება...';
-
-  @override
-  String get chatSaveAndExit => 'შენახვა და გამოსვლა';
-
-  @override
-  String get chatStartNewPrompt => 'სცადეთ ახალი საუბრის დაწყება სავარჯიშოდ!';
-
-  @override
-  String get chatTypeHint => 'დაწერეთ შეტყობინება...';
-
-  @override
-  String get chatUntitled => 'უსათაურო საუბარი';
-
-  @override
   String get checking => 'მიმდინარეობს შემოწმება...';
 
   @override
@@ -169,13 +87,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get confirmDelete => 'გსურთ ამ სწავლის ჩანაწერის წაშლა?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'გსურთ ამ საუბრის წაშლა?\nწაშლილი საუბრის აღდგენა შეუძლებელია.';
-
-  @override
-  String get confirmDeleteParticipant => 'გსურთ ამ მონაწილის წაშლა?';
 
   @override
   String get contextTagHint =>
@@ -215,23 +126,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get deleteRecord => 'ჩანაწერის წაშლა';
 
   @override
-  String get dialogueQuestDesc =>
-      'ივარჯიშეთ დიალოგში სიტუაციური თამაშის საშუალებით. აირჩიეთ და თქვით შესაბამისი პასუხები.';
-
-  @override
-  String get dialogueQuestTitle => 'დიალოგის ქვესტი';
-
-  @override
-  String get disambiguationPrompt => 'რომელი მნიშვნელობით გსურთ თარგმნა?';
-
-  @override
-  String get disambiguationTitle => 'მნიშვნელობის არჩევა';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'ჯერ არ გაქვთ ანგარიში?';
-
-  @override
-  String get editParticipant => 'მონაწილის შეცვლა';
 
   @override
   String get email => 'ელ. ფოსტა';
@@ -239,6 +137,9 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'ეს ელფოსტა უკვე რეგისტრირებულია. გთხოვთ, შეხვიდეთ სისტემაში ან გამოიყენოთ პაროლის აღდგენა.';
+
+  @override
+  String get enterNameHint => 'შეიყვანეთ სახელი';
 
   @override
   String get enterNewSubjectName => 'ახალი სათაურის შეყვანა';
@@ -278,6 +179,9 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get errors => 'შეცდომები:';
+
+  @override
+  String get extractedText => 'ამოცნობილი ტექსტი';
 
   @override
   String get female => 'მდედრობითი';
@@ -337,12 +241,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get gender => 'სქესი';
 
   @override
-  String get labelFilterMaterial => 'მასალები';
-
-  @override
-  String get labelFilterTag => 'ტეგები';
-
-  @override
   String get generalTags => 'ზოგადი ტეგები';
 
   @override
@@ -355,19 +253,8 @@ class AppLocalizationsKa extends AppLocalizations {
   String get googleContinue => 'გაგრძელება Google-ით';
 
   @override
-  String get helpDialogueImportDesc =>
-      'მთელი დიალოგის ნაკრების იმპორტი JSON ფაილიდან.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON სტრუქტურა: გამოიყენეთ `dialogues` მასივი `entries`-ის ნაცვლად\n• ავტომატური აღდგენა: აღდგება დიალოგის სათაური, პერსონა და შეტყობინების თანმიმდევრობა.\n• მდებარეობა: იმპორტირებული დიალოგები გამოჩნდება AI Chat რეჟიმის ჩანართში „ისტორია“.';
-
-  @override
   String get helpJsonDesc =>
       'მიჰყევით ამ ფორმატს, თუ გსურთ სასწავლო მასალების იმპორტი JSON ფაილში გამოსაყენებლად Mode 3-ში:';
-
-  @override
-  String get helpJsonTypeDialogue => 'დიალოგი';
 
   @override
   String get helpJsonTypeSentence => 'წინადადება';
@@ -400,12 +287,11 @@ class AppLocalizationsKa extends AppLocalizations {
       '• მასალის არჩევა: აირჩიეთ მასალა სასწავლად.\n• ინტერვალის დაყენება: დაარეგულირეთ ლოდინის დრო წინადადებებს შორის [-] [+] ღილაკებით (3 წმ-დან 60 წმ-მდე)\n• დაწყება/შეჩერება: დაჩრდილვის სესიის კონტროლი\n• საუბარი: მოუსმინეთ და გაიმეორეთ ხმა\n• გამოხმაურება: სიზუსტის ქულა (0-100) და ფერის ჩვენება\n• საძიებო პირობები: გაფილტრეთ სავარჯიშო მიზნები ტეგებით, ბოლო ელემენტებით ან საწყისი ასოებით';
 
   @override
-  String get helpModeChatDesc =>
-      'ივარჯიშეთ რეალურ საუბარში AI პერსონასთან საუბრით.';
+  String get helpNote =>
+      'თავისუფლად ჩაიწერეთ სიტყვების მნიშვნელობები, მაგალითები ან კონტექსტი.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI ჩატი: ივარჯიშეთ რეალურ საუბარში პერსონაჟთან ქვედა ჩანართის ზოლის მენიუდან „ჩატში“.\n• პერსონაჟის დაყენება: თავისუფლად მიუთითეთ მოწინააღმდეგის სქესი, სახელი და ენის კოდი.\n• GPS სიტუაციური დრამა: გირჩევთ საუბრის თემებს, რომლებიც შეესაბამება ადგილს თქვენი ამჟამინდელი მდებარეობის ამოცნობით.\n• 2 ენა: AI-ის პასუხი ნაჩვენებია თარგმანთან ერთად, რაც მაქსიმალურად ზრდის სწავლის ეფექტს.\n• ჩანაწერების მართვა: წარსული საუბრების ისტორიის გაფილტვრა და კონკრეტული შეტყობინებების შენახვა საუბრის დროს, როგორც სასწავლო მასალა';
+  String get helpNotebook => 'აირჩიეთ საქაღალდე თარგმანების შესანახად.';
 
   @override
   String get helpTabJson => 'JSON ფორმატი';
@@ -420,6 +306,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get helpTabTour => 'დემო';
 
   @override
+  String get helpTag =>
+      'შეიყვანეთ საკვანძო სიტყვები შემდგომი კლასიფიკაციისთვის ან ძიებისთვის.';
+
+  @override
   String get helpTitle => 'დახმარება და გზამკვლევი';
 
   @override
@@ -428,6 +318,15 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get hide => 'დამალვა';
+
+  @override
+  String get hintNoteExample => 'მაგ.: კონტექსტი, ჰომონიმები და ა.შ.';
+
+  @override
+  String get hintTagExample => 'მაგ.: ბიზნესი, მოგზაურობა...';
+
+  @override
+  String get homeTab => 'თარგმანი';
 
   @override
   String importAdded(int count) {
@@ -440,23 +339,6 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'მსგავსი სათაურის მასალა უკვე არსებობს. შეცვალეთ სათაური და სცადეთ ხელახლა.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -472,6 +354,11 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files ფაილი, $entries ერთეული იმპორტირებულია.';
+  }
+
+  @override
   String get importJsonFile => 'JSON ფაილის იმპორტი';
 
   @override
@@ -483,12 +370,31 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'ერთი JSON ფაილი';
+
+  @override
+  String get importSourceFolder =>
+      'საქაღალდე (ენების მიხედვით დაყოფილი ბიბლიოთეკის სტრუქტურა)';
+
+  @override
+  String get importSourceTitle => 'აირჩიეთ იმპორტის წყარო';
+
+  @override
+  String get importSourceZip => 'ZIP ფაილი (დაარქივებული საქაღალდე)';
+
+  @override
   String importTotal(int count) {
     return 'სულ: $count';
   }
 
   @override
   String get importing => 'მიმდინარეობს იმპორტი...';
+
+  @override
+  String get inputContent => 'შეყვანის შინაარსი';
+
+  @override
+  String get inputLanguage => 'შეყვანის ენა';
 
   @override
   String get inputModeTitle => 'შეყვანა';
@@ -505,19 +411,22 @@ class AppLocalizationsKa extends AppLocalizations {
   String get kakaoContinue => 'გაგრძელება Kakao-თი';
 
   @override
-  String get labelLangCode => 'ენის კოდი (მაგ: en-US, ko-KR)';
+  String get labelDetails => 'დეტალური პარამეტრები';
 
   @override
-  String get labelName => 'სახელი';
+  String get labelFilterMaterial => 'მასალები';
+
+  @override
+  String get labelFilterTag => 'ტეგები';
+
+  @override
+  String get labelLangCode => 'ენის კოდი (მაგ: en-US, ko-KR)';
 
   @override
   String get labelNote => 'შენიშვნა';
 
   @override
   String get labelPOS => 'მეტყველების ნაწილი';
-
-  @override
-  String get labelRole => 'როლი';
 
   @override
   String get labelSentence => 'წინადადება';
@@ -568,9 +477,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get listening => 'მიმდინარეობს მოსმენა...';
 
   @override
-  String get loadingParticipants => 'მონაწილეების ჩატვირთვა...';
-
-  @override
   String get location => 'მდებარეობა';
 
   @override
@@ -589,9 +495,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get male => 'მამრობითი';
 
   @override
-  String get manageParticipants => 'მონაწილეების მართვა';
-
-  @override
   String get manual => 'მექანიკური შეყვანა';
 
   @override
@@ -599,9 +502,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get materialInfo => 'მასალის ინფორმაცია';
-
-  @override
-  String get me => 'მე';
 
   @override
   String get menuDeviceImport => 'მასალების შემოტანა მოწყობილობიდან';
@@ -669,6 +569,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get neutral => 'ნეიტრალური';
 
   @override
+  String get newNotebookTitle => 'ახალი ბლოკნოტის სათაური';
+
+  @override
   String get newSubjectName =>
       'ახალი თემატური ლექსიკონის/ფრაზების კრებულის სათაური';
 
@@ -676,21 +579,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String get next => 'შემდეგი';
 
   @override
-  String get noDialogueHistory => 'საუბრის ისტორია არ არის.';
-
-  @override
-  String get noInternetWarningMic =>
-      'ინტერნეტთან კავშირი არ არის. ხმოვანი ამოცნობა შესაძლოა ხაზგარეშე არ მუშაობდეს.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'ინტერნეტთან კავშირი არ არის. თარგმანის ფუნქცია ხაზგარეშე არ მუშაობს. გამოიყენეთ გამეორების რეჟიმი.';
+  String get noDataForLanguage =>
+      'არ არის სასწავლო მასალა არჩეული ენისთვის ლოკალურ მონაცემთა ბაზაში. გთხოვთ, ჩამოტვირთოთ მასალა ან აირჩიოთ სხვა ენა.';
 
   @override
   String get noMaterialsInCategory => 'ამ კატეგორიაში მასალები არ არის.';
-
-  @override
-  String get noParticipantsFound => 'მონაწილეები ვერ მოიძებნა.';
 
   @override
   String get noRecords => 'არ არის სწავლის ჩანაწერები არჩეული ენისთვის';
@@ -711,6 +604,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get notSelected => '- არ არის არჩეული -';
 
   @override
+  String get noteGuidance =>
+      'სადაც შეიყვანთ დამატებით დეტალებს უფრო ზუსტი თარგმანისთვის';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'შეამოწმეთ ინტერნეტ კავშირი ან სცადეთ მოგვიანებით.';
 
@@ -721,16 +618,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'მასალები არ არის.';
 
   @override
-  String get participantDeleted => 'მონაწილე წაიშალა.';
-
-  @override
-  String get participantRename => 'მონაწილის სახელის შეცვლა';
-
-  @override
-  String get partner => 'პარტნიორი';
-
-  @override
-  String get partnerMode => 'პარტნიორის რეჟიმი';
+  String get openSettings => 'პარამეტრების გახსნა';
 
   @override
   String get password => 'პაროლი';
@@ -743,13 +631,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get perfect => 'შესანიშნავია!';
 
   @override
-  String get personaFriend => 'ადგილობრივი მეგობარი';
-
-  @override
-  String get personaGuide => 'ტურის გიდი';
-
-  @override
-  String get personaTeacher => 'ინგლისურის მასწავლებელი';
+  String get pickGallery => 'აირჩიეთ გალერეიდან';
 
   @override
   String get playAgain => 'ხელახლა თამაში';
@@ -769,6 +651,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get posAdverb => 'ზმნიზედა';
 
   @override
+  String get posArticle => 'არტიკლი';
+
+  @override
   String get posConjunction => 'კავშირი';
 
   @override
@@ -776,6 +661,9 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get posNoun => 'არსებითი სახელი';
+
+  @override
+  String get posParticle => 'ნაწილაკი';
 
   @override
   String get posPreposition => 'წინდებული/ნაწილაკი';
@@ -793,9 +681,33 @@ class AppLocalizationsKa extends AppLocalizations {
   String get practiceWordsOnly => 'ივარჯიშეთ მხოლოდ სიტყვები';
 
   @override
+  String get processing => 'მიმდინარეობს დამუშავება...';
+
+  @override
   String progress(int current, int total) {
     return 'პროგრესი: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'მენიუ > ენის დაყენება-ში, ჯერ მიუთითეთ თქვენი და სასწავლო ენები.';
+
+  @override
+  String get quickStartStep1Title => '1. ენის დაყენება';
+
+  @override
+  String get quickStartStep2Desc =>
+      'შექმენით თქვენი სასწავლო ბარათები შეყვანის (მიკროფონი/კლავიატურა) -> თარგმანი -> შენახვა თანმიმდევრობით.';
+
+  @override
+  String get quickStartStep2Title => '2. ძირითადი ნაკადი';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ივარჯიშეთ ჩეთში და ივარჯიშეთ გამოთქმაზე გამოთქმის სავარჯიშო ჩანართში ტექსტის ყურებით და პირდაპირ გამოთქმით.';
+
+  @override
+  String get quickStartStep3Title => '3. რეჟიმების გამოყენება';
 
   @override
   String recentNItems(int count) {
@@ -820,6 +732,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get refresh => 'განახლება';
 
   @override
+  String get requestTranslation => 'თარგმნის მოთხოვნა';
+
+  @override
   String get reset => 'გადატვირთვა';
 
   @override
@@ -840,16 +755,13 @@ class AppLocalizationsKa extends AppLocalizations {
   String get reviewModeTitle => 'გამეორება';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'მესამე მხარე';
-
-  @override
-  String get roleUser => 'მომხმარებელი';
-
-  @override
   String get save => 'შენახვა';
+
+  @override
+  String get saveAsSentence => 'შენახვა წინადადებად';
+
+  @override
+  String get saveAsWord => 'შენახვა სიტყვად';
 
   @override
   String get saveData => 'მონაცემების შენახვა';
@@ -860,6 +772,9 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'ისტორიაში შენახვა';
+
+  @override
   String get saveTranslationsFromSearch =>
       'სცადეთ თარგმანების შენახვა ძიების რეჟიმში';
 
@@ -868,6 +783,12 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get saving => 'მიმდინარეობს შენახვა...';
+
+  @override
+  String get scanInstructions => 'აირჩიეთ დასასკანერებელი გამოსახულება';
+
+  @override
+  String get scanLabel => 'სკანირება';
 
   @override
   String score(String score) {
@@ -914,16 +835,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get selectPOS => 'მეტყველების ნაწილის არჩევა';
 
   @override
-  String get selectParticipants => 'მონაწილეების არჩევა';
-
-  @override
-  String get selectSentenceType => 'წინადადების ტიპის არჩევა';
-
-  @override
   String get selectStudyMaterial => 'სასწავლო მასალის არჩევა';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'წინადადება';
@@ -932,43 +844,14 @@ class AppLocalizationsKa extends AppLocalizations {
   String get signUp => 'რეგისტრაცია';
 
   @override
-  String get similarTextFound => 'მსგავსი ტექსტი ნაპოვნია';
-
-  @override
-  String get skip => 'გამოტოვება';
-
-  @override
-  String get source => 'წყარო:';
-
-  @override
-  String get sourceLanguage => 'წყარო ენა';
+  String get simplifiedGuidance =>
+      'მყისიერად გადააკეთეთ ყოველდღიური საუბრები უცხო ენებზე! Talkie აღწერს თქვენს ენობრივ ცხოვრებას.';
 
   @override
   String get sourceLanguageLabel => 'ჩემი ენა (წყარო)';
 
   @override
-  String get speakNow => 'ილაპარაკე ახლა!';
-
-  @override
-  String get speaker => 'მომხსენებელი';
-
-  @override
-  String get speakerSelect => 'მომხსენებლის არჩევა';
-
-  @override
-  String get speakingPractice => 'საუბრის პრაქტიკა';
-
-  @override
-  String get startChat => 'საუბრის დაწყება';
-
-  @override
-  String get startPractice => 'ვარჯიშის დაწყება';
-
-  @override
   String get startTutorial => 'სახელმძღვანელოს დაწყება';
-
-  @override
-  String get startWarning => 'გაფრთხილება';
 
   @override
   String get startsWith => 'იწყება ასოთი';
@@ -978,28 +861,22 @@ class AppLocalizationsKa extends AppLocalizations {
       'გთხოვთ, გადაამოწმოთ ელფოსტა ავტორიზაციის დასასრულებლად.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'ჩამოტვირთვა: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'იმპორტი ვერ მოხერხდა: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name-ის იმპორტი წარმატებით დასრულდა';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'ავტორიზაცია გაუქმდა.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'ავტორიზაცია ვერ მოხერხდა: $error';
   }
 
@@ -1010,23 +887,23 @@ class AppLocalizationsKa extends AppLocalizations {
   String get statusLogoutSuccess => 'თქვენ გამოხვედით.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'რეგისტრაცია ვერ მოხერხდა: $error';
+  String statusRequestFailed(String error) {
+    return 'თარგმნის მოთხოვნა ვერ მოხერხდა: $error';
   }
 
   @override
-  String get statusSigningUp => 'რეგისტრაცია...';
+  String get statusRequestSuccess => 'თარგმნის მოთხოვნა დასრულდა.';
 
   @override
   String get stopPractice => 'ვარჯიშის შეწყვეტა';
 
   @override
-  String get studyComplete => 'სწავლა დასრულებულია';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'თქვენს მიერ არჩეული მასალა ამჟამად არ უჭერს მხარს სასწავლო ენას ($targetLang) და მისი ლოკალურად შენახვა შეუძლებელია. გსურთ თარგმნის მოთხოვნა?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'სწავლის ჩანაწერები ($count)';
-  }
+  String get studyLangNotFoundTitle => 'სასწავლო ენის მხარდაჭერა არ არის';
 
   @override
   String get styleFormal => 'ოფიციალური';
@@ -1041,22 +918,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get styleSlang => 'სლენგი';
 
   @override
-  String get subject => 'სათაური:';
-
-  @override
   String get swapLanguages => 'ენების შეცვლა';
 
   @override
-  String get switchToAi => 'AI რეჟიმზე გადართვა';
-
-  @override
-  String get switchToPartner => 'პარტნიორის რეჟიმზე გადართვა';
-
-  @override
   String get syncingData => 'მონაცემთა სინქრონიზაცია...';
-
-  @override
-  String get tabConversation => 'საუბარი';
 
   @override
   String tabReview(int count) {
@@ -1119,6 +984,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tooltipSearch => 'ძებნა';
 
   @override
+  String get tooltipSettingsConfirm => 'პარამეტრების დადასტურება';
+
+  @override
   String get tooltipSpeaking => 'საუბარი';
 
   @override
@@ -1131,6 +999,9 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get translate => 'თარგმნა';
+
+  @override
+  String get translateNow => 'ახლავე თარგმნეთ';
 
   @override
   String get translating => 'მიმდინარეობს თარგმნა...';
@@ -1147,6 +1018,9 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'თარგმანის ენა';
+
+  @override
   String get translationLimitExceeded => 'თარგმანის ლიმიტი გადაჭარბებულია';
 
   @override
@@ -1160,17 +1034,25 @@ class AppLocalizationsKa extends AppLocalizations {
   String get translationRefilled => 'თქვენი თარგმანის რაოდენობა შეივსო 5-ჯერ!';
 
   @override
+  String get translationResult => 'თარგმანის შედეგი';
+
+  @override
   String get translationResultHint => 'თარგმანის შედეგი - შესაძლებელია შეცვლა';
 
   @override
   String get tryAgain => 'სცადეთ ხელახლა';
 
   @override
-  String get tutorialAiChatDesc =>
-      'ივარჯიშეთ რეალურ საუბრებში AI პერსონაჟებთან ერთად.';
+  String get ttsInstallGuide =>
+      'გთხოვთ, დააინსტალიროთ ენის მონაცემები Android-ის პარამეტრებიდან > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'AI ჩეთი';
+  String get ttsMissing =>
+      'ამ ენისთვის მეტყველების ძრავა თქვენს მოწყობილობაზე დაინსტალირებული არ არის.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ამ მოწყობილობის პარამეტრებში ამ ენის ხმოვანი გამოტანა არ არის მხარდაჭერილი.';
 
   @override
   String get tutorialContextDesc =>
@@ -1288,7 +1170,13 @@ class AppLocalizationsKa extends AppLocalizations {
   String get typeExclamation => 'ძახილი';
 
   @override
+  String get typeIdiom => 'იდიომა';
+
+  @override
   String get typeImperative => 'ბრძანება';
+
+  @override
+  String get typeProverb => 'ანდაზა/გამონათქვამი';
 
   @override
   String get typeQuestion => 'კითხვა';
@@ -1303,6 +1191,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String get useExistingText => 'არსებული ტექსტის გამოყენება';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'ონლაინ სახელმძღვანელოს ნახვა';
 
   @override
@@ -1310,6 +1203,16 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'რეკლამის ყურება და შევსება (+5-ჯერ)';
+
+  @override
+  String get welcomeButton => 'დაწყება';
+
+  @override
+  String get welcomeDesc =>
+      'მოგესალმებით Talkie-ში! ჩვენ მხარს ვუჭერთ 80-ზე მეტ ენას მთელი მსოფლიოდან 100% ერთგულებით, ახალი პრემიუმ 3D დიზაინითა და ოპტიმიზებული მუშაობით სრულყოფილი სწავლის გამოცდილებისთვის.';
+
+  @override
+  String get welcomeTitle => 'კეთილი იყოს თქვენი მობრძანება Talkie-ში!';
 
   @override
   String get word => 'სიტყვა';
@@ -1326,112 +1229,4 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'თქვენი გამოთქმა';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'ამ მოწყობილობის პარამეტრებში ამ ენის ხმოვანი გამოტანა არ არის მხარდაჭერილი.';
-
-  @override
-  String get homeTab => 'თარგმანი';
-
-  @override
-  String get welcomeTitle => 'კეთილი იყოს თქვენი მობრძანება Talkie-ში!';
-
-  @override
-  String get welcomeDesc =>
-      'მოგესალმებით Talkie-ში! ჩვენ მხარს ვუჭერთ 80-ზე მეტ ენას მთელი მსოფლიოდან 100% ერთგულებით, ახალი პრემიუმ 3D დიზაინითა და ოპტიმიზებული მუშაობით სრულყოფილი სწავლის გამოცდილებისთვის.';
-
-  @override
-  String get welcomeButton => 'დაწყება';
-
-  @override
-  String get labelDetails => 'დეტალური პარამეტრები';
-
-  @override
-  String get translationResult => 'თარგმანის შედეგი';
-
-  @override
-  String get inputContent => 'შეყვანის შინაარსი';
-
-  @override
-  String get translateNow => 'ახლავე თარგმნეთ';
-
-  @override
-  String get tooltipSettingsConfirm => 'პარამეტრების დადასტურება';
-
-  @override
-  String get hintNoteExample => 'მაგ.: კონტექსტი, ჰომონიმები და ა.შ.';
-
-  @override
-  String get hintTagExample => 'მაგ.: ბიზნესი, მოგზაურობა...';
-
-  @override
-  String get addNew => 'ახლის დამატება';
-
-  @override
-  String get newNotebookTitle => 'ახალი ბლოკნოტის სათაური';
-
-  @override
-  String get enterNameHint => 'შეიყვანეთ სახელი';
-
-  @override
-  String get add => 'დამატება';
-
-  @override
-  String get openSettings => 'პარამეტრების გახსნა';
-
-  @override
-  String get helpNotebook => 'აირჩიეთ საქაღალდე თარგმანების შესანახად.';
-
-  @override
-  String get helpNote =>
-      'თავისუფლად ჩაიწერეთ სიტყვების მნიშვნელობები, მაგალითები ან კონტექსტი.';
-
-  @override
-  String get helpTag =>
-      'შეიყვანეთ საკვანძო სიტყვები შემდგომი კლასიფიკაციისთვის ან ძიებისთვის.';
-
-  @override
-  String get requestTranslation => 'თარგმნის მოთხოვნა';
-
-  @override
-  String get statusRequestSuccess => 'თარგმნის მოთხოვნა დასრულდა.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'თარგმნის მოთხოვნა ვერ მოხერხდა: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'სასწავლო ენის მხარდაჭერა არ არის';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'თქვენს მიერ არჩეული მასალა ამჟამად არ უჭერს მხარს სასწავლო ენას ($targetLang) და მისი ლოკალურად შენახვა შეუძლებელია. გსურთ თარგმნის მოთხოვნა?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. ენის დაყენება';
-
-  @override
-  String get quickStartStep1Desc =>
-      'მენიუ > ენის დაყენება-ში, ჯერ მიუთითეთ თქვენი და სასწავლო ენები.';
-
-  @override
-  String get quickStartStep2Title => '2. ძირითადი ნაკადი';
-
-  @override
-  String get quickStartStep2Desc =>
-      'შექმენით თქვენი სასწავლო ბარათები შეყვანის (მიკროფონი/კლავიატურა) -> თარგმანი -> შენახვა თანმიმდევრობით.';
-
-  @override
-  String get quickStartStep3Title => '3. რეჟიმების გამოყენება';
-
-  @override
-  String get quickStartStep3Desc =>
-      'ივარჯიშეთ ჩეთში და ივარჯიშეთ გამოთქმაზე გამოთქმის სავარჯიშო ჩანართში ტექსტის ყურებით და პირდაპირ გამოთქმით.';
-
-  @override
-  String get noteGuidance =>
-      'სადაც შეიყვანთ დამატებით დეტალებს უფრო ზუსტი თარგმანისთვის';
 }

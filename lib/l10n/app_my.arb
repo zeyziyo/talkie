@@ -1,32 +1,10 @@
 {
   "@@locale": "my",
-  "basicWords": "အခြေခံ စကားလုံး သိမ်းဆည်းရာ",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "ထည့်သွင်းဘာသာစကား",
-  "translationLanguage": "ဘာသာပြန်ဘာသာစကား",
-  "simplifiedGuidance": "နေ့စဉ်စကားပြောဆိုမှုများကို နိုင်ငံခြားဘာသာစကားသို့ ချက်ချင်းပြောင်းပါ။ Talkie သည် သင်၏ဘာသာစကားအသုံးပြုမှုကို မှတ်တမ်းတင်ပေးပါသည်။",
-  "noDataForLanguage": "သင်​ရွေး​ချယ်​ထား​သော​ဘာ​သာ​စကား​အတွက်​ သင်​ယူ​စ​ရာ​များ​သည်​ Local DB တွင်​မ​ရှိ​ပါ။ ဒေ​တာ​များ​ကို​ ဒေါင်း​လုဒ်​ပြု​လုပ်​ပါ​ သို့​မ​ဟုတ်​ အ​ခြား​ဘာ​သာ​စ​ကား​ကို​ရွေး​ချယ်​ပါ။",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "ပယ်ဖျက်",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "တိကျမှု",
-  "ttsMissing": "ဤဘာသာစကားအတွက် အသံအင်ဂျင်ကို သင့်စက်တွင် ထည့်သွင်းထားခြင်းမရှိပါ။",
-  "ttsInstallGuide": "Android ဆက်တင်များ > Google TTS တွင် သက်ဆိုင်ရာဘာသာစကားဒေတာကို ထည့်သွင်းပါ။",
   "adLoading": "ကြော်ငြာကို တင်နေပါသည်။ ခဏနေမှ ထပ်ကြိုးစားပေးပါ။",
+  "add": "ထည့်ပါ",
+  "addNew": "အသစ် ထပ်ထည့်ပါ",
   "addNewSubject": "ထည့်ရန်",
-  "addParticipant": "ပါဝင်သူထည့်ရန်",
   "addTagHint": "အမှတ်အသားထည့်ရန်...",
   "alreadyHaveAccount": "အကောင့် ရှိပြီးသားလား။",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "အခြေခံ စကားလုံး သိမ်းဆည်းရာ",
+  "basicWords": "အခြေခံ စကားလုံး သိမ်းဆည်းရာ",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "ပယ်ဖျက်",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "ကံ",
   "casePossessive": "ပိုင်ဆိုင်မှု",
   "casePossessivePronoun": "ပိုင်ဆိုင်နာမ်စား",
   "caseReflexive": "နာမ်စား",
   "caseSubject": "ကတ္တား",
-  "chatAiChat": "စကားပြောရန်",
-  "chatAllConversations": "စကားပြောအားလုံး",
-  "chatChoosePersona": "ကိုယ်ပွား ရွေးချယ်ခြင်း",
-  "chatEndMessage": "စကားပြောကို အဆုံးသတ်လိုပါသလား?",
-  "chatEndTitle": "စကားပြောကို အဆုံးသတ်ပြီး သိမ်းဆည်းပါ",
-  "chatFailed": "စကားပြော ပျက်ကွက်ခြင်း: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "စကားပြောမှ ကောက်နုတ်ချက် ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "စကားပြော မှတ်တမ်း",
-  "chatNew": "စကားပြော အသစ်",
-  "chatNewChat": "စကားပြော အသစ်",
-  "chatNoConversations": "စကားပြောဆိုမှု မရှိသေးပါ",
-  "chatSearchHint": "စကားဝိုင်းခေါင်းစဉ်ဖြင့် ရှာဖွေ...",
-  "chatNoteSearchHint": "မှတ်ချက်များဖြင့် ရှာဖွေ...",
-  "chatSaveAndExit": "သိမ်းဆည်းပြီး ထွက်ပါ",
-  "chatStartNewPrompt": "လေ့ကျင့်ရန် စကားပြောဆိုမှု အသစ်ကို စတင်ကြည့်ပါ။",
-  "chatTypeHint": "မက်ဆေ့ချ်ကို ရိုက်ထည့်ပါ...",
-  "chatUntitled": "ခေါင်းစဉ်မဲ့ စကားပြော",
   "checking": "စစ်ဆေးနေသည်...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "ဤစကားပြောကို ဖျက်ရန်သေချာပါသလား။\nဖျက်လိုက်သော စကားပြောများကို ပြန်ယူ၍မရပါ။",
-  "confirmDeleteParticipant": "ဤပါဝင်သူကို ဖျက်မလား။",
   "contextTagHint": "နောက်ပိုင်းတွင် ခွဲခြားရန် လွယ်ကူစေရန် အခြေအနေကို ရေးပါ။",
   "contextTagLabel": "စာသား၏ အဓိပ္ပာယ်/အခြေအနေ (ရွေးချယ်နိုင်) - ဥပမာ- မနက်ခင်းနှုတ်ဆက်ခြင်း၊ ရိုရိုသေသေ",
   "copiedToClipboard": "ကလစ်ဘုတ်ထဲသို့ ကူးယူပြီးပါပြီ!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "အခြေအနေတုမှတစ်ဆင့် စကားပြော လေ့ကျင့်ပါ။ သင့်လျော်သော အဖြေကို ရွေးပြီး ပြောကြည့်ပါ။",
-  "dialogueQuestTitle": "စကားပြော မစ်ရှင်",
-  "disambiguationPrompt": "ဘယ်လို အဓိပ္ပာယ်ဖြင့် ဘာသာပြန်လိုပါသလဲ?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "အဓိပ္ပာယ်ကို ရွေးပါ",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "အကောင့် မရှိသေးဘူးလား။",
-  "editParticipant": "ပါဝင်သူ ပြင်ဆင်ရန်",
   "email": "အီးမေးလ်",
   "emailAlreadyInUse": "အီးမေးလ်လိပ်စာသည် မှတ်ပုံတင်ပြီးဖြစ်သည်။ ဝင်ရောက်ပါ သို့မဟုတ် စကားဝှက်ကို ပြန်လည်ရယူပါ။",
+  "enterNameHint": "အမည်ကို ရိုက်ထည့်ပါ",
   "enterNewSubjectName": "ခေါင်းစဥ်အသစ်ထည့်ပါ",
   "enterSentenceHint": "စာကြောင်း ထည့်သွင်းပါ...",
   "enterTextHint": "ဘာသာပြန်ရန် စာသားကို ရိုက်ထည့်ပါ",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "ထုတ်ယူထားသော စာသား",
   "female": "မ",
   "file": "ဖိုင်:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "ဂိမ်း ပုံစံ",
   "gameOver": "ဂိမ်းပြီးဆုံးပါပြီ",
   "gender": "ကျား/မ",
-  "labelFilterMaterial": "စာရွက်စာတမ်း",
-  "labelFilterTag": "တဂ်",
   "generalTags": "အထွေထွေ တဂ်များ",
   "getMaterials": "အချက်အလက် ရယူပါ",
   "good": "ကောင်းတယ်",
   "googleContinue": "Google ဖြင့်ဆက်လုပ်ရန်",
-  "helpDialogueImportDesc": "JSON ဖိုင်ဖြင့် စကားပြောဆိုမှု အစုံကို တင်သွင်းပါ။",
-  "helpDialogueImportDetails": "• JSON တည်ဆောက်ပုံ: `entries` အစား `dialogues` အစီအစဉ်ကို သုံးပါ\n• အလိုအလျောက် ပြန်လည်ရယူခြင်း- စကားပြော ခေါင်းစဉ်၊ ပုံစံ၊ မက်ဆေ့ချ် အစီအစဉ်ကို ပြန်လည်ရယူပါမည်။\n• တည်နေရာ- တင်သွင်းထားသော စကားပြောဆိုမှုသည် AI စကားပြောပုံစံ၏ 'မှတ်တမ်း' တက်ဘ်တွင် ပေါ်လာပါမည်။",
   "helpJsonDesc": "Mode 3 တွင် အသုံးပြုမည့် သင်ယူရန် အချက်အလက်ကို JSON ဖိုင်ဖြင့် ထည့်သွင်းလိုပါက အောက်ပါ ဖော်မတ်အတိုင်း လိုက်နာပါ-",
-  "helpJsonTypeDialogue": "စကားဝိုင်း",
   "helpJsonTypeSentence": "စာကြောင်း",
   "helpJsonTypeWord": "စကားလုံး",
   "helpMode1Desc": "ပရီမီယံ 3D မိုက်ခရိုဖုန်းနှင့် ကီးဘုတ်အိုင်ကွန်ကြီးများဖြင့် ဘာသာစကားလေ့လာမှုကို အလွယ်ကူဆုံး စတင်လိုက်ပါ။",
@@ -208,19 +148,23 @@
   "helpMode2Desc": "သိမ်းဆည်းထားသော စာကြောင်းကို ပြန်လည်သုံးသပ်ပြီး အလိုအလျောက် ဖျောက်ခြင်း လုပ်ဆောင်ချက်ဖြင့် အလွတ်ကျက်နိုင်ခြင်း ရှိမရှိ စစ်ဆေးပါ။",
   "helpMode2Details": "• သင်ရိုးရွေးချယ်ခြင်း: ညာဘက်အပေါ်ထောင့်ရှိ မီနူး (⋮) မှ 'သင်ယူရန် သင်ရိုးရွေးချယ်ရန်' သို့မဟုတ် 'အွန်လိုင်းစာကြည့်တိုက်' ကို အသုံးပြုပါ။\n• ကတ်ကိုလှန်ကြည့်ခြင်း: 'ပြရန်/ဝှက်ရန်' ဖြင့်ဘာသာပြန်ကိုစစ်ဆေးပါ\n• နားထောင်ခြင်း: စပီကာအိုင်ကွန်ဖြင့်အသံထွက်ဖွင့်ပါ\n• သင်ယူမှုပြီးမြောက်ခြင်း: အမှန်ခြစ် (V) ဖြင့် သင်ယူမှုကို အပြီးသတ်ပါ\n• ဖျက်ခြင်း: မှတ်တမ်းကိုဖျက်ရန် ကတ်ကို ကြာကြာနှိပ်ပါ (Long Click)\n• ရှာဖွေခြင်းနှင့် စစ်ထုတ်ခြင်း: ရှာဖွေရေးဘား (အချိန်နှင့်တပြေးညီ စမတ်ရှာဖွေမှု) နှင့် တဂ်များ၊ စာလုံးအစ စစ်ထုတ်မှုတို့ကို ပံ့ပိုးပေးသည်",
   "helpMode3Desc": "ဝါကျကိုနားထောင်ပြီး လိုက်ဆိုခြင်း (Shadowing) ဖြင့် အသံထွက်ကို လေ့ကျင့်ပါ။",
-  "helpMode3Details": "• အချက်အလက် ရွေးချယ်ခြင်း- သင်ယူလိုသော အချက်အလက်များ စုစည်းထားသော စာအုပ်ကို ရွေးပါ\n• ကြားကာလ ဆက်တင်- [-] [+] ခလုတ်ဖြင့် စာကြောင်းကြား စောင့်ဆိုင်းချိန်ကို ချိန်ညှိပါ (၃ စက္ကန့်မှ ၆၀ စက္ကန့်ထိ)\n• စတင်/ရပ်ခြင်း- 쉐도잉 စစ်ဆင်ရေးကို ထိန်းချုပ်ပါ\n• ပြောခြင်း- အသံကို နားထောင်ပြီး လိုက်ပြောပါ\n• တုံ့ပြန်ချက်- တိကျမှု ရမှတ် (၀-၁၀၀) နှင့် အရောင်ကို ပြပါ\n• ရှာဖွေရန် အခြေအနေ- တဂ်၊ နောက်ဆုံးအကြောင်းအရာ၊ စာလုံးအစဖြင့် လေ့ကျင့်ရန်အတွက် စစ်ထုတ်ခြင်း",
-  "helpModeChatDesc": "AI ပုံရိပ်နဲ့ စကားပြောပြီး လက်တွေ့စကားပြောကို လေ့ကျင့်ပါ။",
-  "helpModeChatDetails": "• AI ချတ်- အောက်ခြေရှိ တက်ဘ်ဘား၏ 'ချတ်' မီနူးမှတစ်ဆင့် ကိုယ်ရည်ကိုယ်သွေးနှင့် လက်တွေ့စကားပြောလေ့ကျင့်ပါ။\n• ကိုယ်ရည်ကိုယ်သွေးဆက်တင်- ပြိုင်ဘက်၏ ကျား၊ မ၊ အမည်နှင့် ဘာသာစကားကုဒ်ကို လွတ်လပ်စွာ သတ်မှတ်ပါ။\n• GPS အခြေအနေပြဇာတ်- လက်ရှိ ကျွန်ုပ်၏တည်နေရာကို အသိအမှတ်ပြုပြီး နေရာနှင့်သင့်လျော်သော စကားပြောဆိုမှုအကြောင်းအရာကို အကြံပြုပါ။\n• ဘာသာစကား ၂ မျိုး- AI ၏အဖြေကို ဘာသာပြန်နှင့်အတူ ပြသထားသောကြောင့် သင်ယူမှုအကျိုးသက်ရောက်မှုကို အမြင့်ဆုံးမြှင့်တင်ပါ။\n• မှတ်တမ်းစီမံခန့်ခွဲမှု- ယခင်စကားပြောမှတ်တမ်းကို စစ်ထုတ်ပြီး စကားပြောဆိုနေစဉ်အတွင်း သီးခြားမက်ဆေ့ချ်များကို သင်ယူမှုဆိုင်ရာပစ္စည်းများအဖြစ် သိမ်းဆည်းပါ။",
+  "helpMode3Details": "• သင်ရိုးရွေးချယ်ခြင်း: ညာဘက်အပေါ်ထောင့်ရှိ မီနူး(⋮)မှ 'လေ့လာရန် သင်ရိုးရွေးချယ်ရန်' ကို အသုံးပြုပါ။\n• အချိန်ကာလ သတ်မှတ်ခြင်း: [-] [+] ခလုတ်များဖြင့် ဝါကျများကြား စောင့်ဆိုင်းချိန်ကို ချိန်ညှိပါ (၃စက္ကန့်မှ ၆၀ စက္ကန့်အထိ)\n• စတင်/ရပ်ရန်: အလယ်ဗဟိုရှိ စတင်/ရပ်ရန် ခလုတ်ဖြင့် session ကို ထိန်းချုပ်ပါ။\n• ပြောပါ: မူရင်းအသံကို နားထောင်ပြီး ကျယ်လောင်စွာ လိုက်ဆိုပါ။\n• တုံ့ပြန်ချက်: တိကျမှုရမှတ် (၀-၁၀၀) နှင့် အရောင်အမှတ်အသားကို ပြသပါ။\n• စစ်ထုတ်ခြင်း ဆက်တင်များ: ဆက်တင်များ (စက်သွားပုံ) အိုင်ကွန်တွင် အကဲဖြတ်ခြင်းအကွာအဝေးကို သတ်မှတ်ပါ။",
+  "helpNote": "စကားလုံးရဲ့ အဓိပ္ပါယ်၊ ဥပမာစာကြောင်း၊ အခြေအနေ စတာတွေကို လွတ်လပ်စွာ မှတ်သားပါ။",
+  "helpNotebook": "ဘာသာပြန်ရလဒ်တွေကို သိမ်းဆည်းမယ့် ဖိုဒါကို ရွေးပါ။",
   "helpTabJson": "JSON ဖော်မတ်",
   "helpTabModes": "ပုံစံများအကြောင်း",
   "helpTabQuickStart": "အမြန်စတင်ရန်",
   "helpTabTour": "စမ်းသုံးကြည့်ပါ",
+  "helpTag": "နောက်ပိုင်း အမျိုးအစားခွဲ ဒါမှမဟုတ် ရှာဖွေဖို့အတွက် သော့ချက်စာလုံးကို ရိုက်ထည့်ပါ။",
   "helpTitle": "အကူအညီ & လမ်းညွှန်",
   "helpTourDesc": "**အဓိက လုပ်ဆောင်ချက်ကို မီးမောင်းထိုးပြသော စက်ဝိုင်း**က လမ်းညွှန်ပေးပါသည်။\n(ဥပမာ- **မီးမောင်းထိုးပြသော စက်ဝိုင်း** ညွှန်ပြနေသော ကတ်ကို ဖိထားပြီး ဖျက်နိုင်ပါသည်။)",
   "hide": "ဖျောက်ရန်",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "ဥပမာ- အခြေအနေ ရှင်းလင်းချက်၊ အသံတူ စကားလုံးများ စသည်",
+  "hintTagExample": "ဥပမာ- စီးပွားရေး၊ ခရီးသွား...",
+  "homeTab": "ဘာသာပြန်",
   "importAdded": "ထပ်ထည့်: {count}ခု",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} ခု ဖိုင်၊ {entries} ခု အကြောင်းအရာများ ထည့်သွင်းပြီးပါပြီ။",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON ဖိုင်ကို တင်သွင်းပါ",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "JSON ဖိုင် တစ်ခုတည်း",
+  "importSourceFolder": "ဖိုဒါ (ဘာသာစကားအလိုက် စာကြည့်တိုက် တည်ဆောက်ပုံ)",
+  "importSourceTitle": "တင်သွင်းမည့် အရင်းအမြစ်ကို ရွေးပါ",
+  "importSourceZip": "ZIP ဖိုင် (ဖိုဒါကို ချုံ့ထားသည်)",
   "importTotal": "စုစုပေါင်း: {count}ခု",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "ထည့်သွင်း အကြောင်းအရာ",
+  "inputLanguage": "ထည့်သွင်းဘာသာစကား",
   "inputModeTitle": "ထည့်သွင်းခြင်း",
   "intervalSeconds": "ကြားကာလ: {seconds}စက္ကန့်",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "မှန်ကန်သော အီးမေးလ် လိပ်စာ ထည့်ပါ။",
   "kakaoContinue": "ကာကာအိုနဲ့ ဆက်လုပ်ရန်",
+  "labelDetails": "အသေးစိတ် ဆက်တင်များ",
+  "labelFilterMaterial": "စာရွက်စာတမ်း",
+  "labelFilterTag": "တဂ်",
   "labelLangCode": "ဘာသာစကားကုဒ် (ဥပမာ en-US, ko-KR)",
-  "labelName": "အမည်",
   "labelNote": "မှတ်စု",
   "labelPOS": "စကားအမျိုးအစား",
-  "labelRole": "အခန်းကဏ္ဍ",
   "labelSentence": "စာကြောင်း",
   "labelSentenceCollection": "ဝါကျများစုစည်းမှု",
   "labelSentenceType": "ဝါကျ အမျိုးအစား",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "ပါဝင်သူများ တင်နေသည်...",
   "location": "တည်နေရာ",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "လော့ဂ်အင်",
   "logout": "ထွက်ရန်",
   "logoutConfirmMessage": "လက်ရှိစက်မှ ထွက်လိုပါသလား။",
   "logoutConfirmTitle": "ထွက်ရန်",
   "male": "ကျား",
-  "manageParticipants": "ပါဝင်သူများ စီမံရန်",
   "manual": "ကိုယ်တိုင် ထည့်သွင်းခြင်း",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "အချက်အလက် အကြောင်း",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "ငါ",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "စက်မှ အချက်အလက် တင်သွင်းပါ",
   "menuHelp": "အကူအညီ",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "ကျွန်ုပ်၏ စာကြောင်းစုစည်းမှု",
   "myWordbook": "ကျွန်ုပ်၏ ဝေါဟာရစာအုပ်",
   "neutral": "ကြားနေ",
+  "newNotebookTitle": "မှတ်စုစာအုပ် အသစ် ခေါင်းစဉ်",
   "newSubjectName": "ခေါင်းစဥ်အသစ်",
   "next": "နောက်တစ်ခု",
-  "noDialogueHistory": "စကားပြောမှတ်တမ်း မရှိပါ။",
-  "noInternetWarningMic": "အင်တာနက် ချိတ်ဆက်မှု မရှိပါ။ အော့ဖ်လိုင်းတွင် အသံမှတ်တမ်း တင်၍ မရပါ။",
-  "noInternetWarningTranslate": "အင်တာနက် ချိတ်ဆက်မှု မရှိပါ။ အော့ဖ်လိုင်းတွင် ဘာသာပြန်၍ မရပါ။ ပြန်လည်သုံးသပ်ခြင်း မုဒ်ကို သုံးပါ။",
+  "noDataForLanguage": "သင်​ရွေး​ချယ်​ထား​သော​ဘာ​သာ​စကား​အတွက်​ သင်​ယူ​စ​ရာ​များ​သည်​ Local DB တွင်​မ​ရှိ​ပါ။ ဒေ​တာ​များ​ကို​ ဒေါင်း​လုဒ်​ပြု​လုပ်​ပါ​ သို့​မ​ဟုတ်​ အ​ခြား​ဘာ​သာ​စ​ကား​ကို​ရွေး​ချယ်​ပါ။",
   "noMaterialsInCategory": "ဤအမျိုးအစားတွင် ဒေတာ မရှိပါ။",
-  "noParticipantsFound": "စာရင်းသွင်းထားသော ပါဝင်သူ မရှိပါ။",
   "noRecords": "ရွေးချယ်ထားသော ဘာသာစကား၏ သင်ယူခြင်း မှတ်တမ်း မရှိပါ။",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "အသံကို မတွေ့ပါ။",
   "notSelected": "- မရွေးချယ်ထားပါ - ",
+  "noteGuidance": "ပိုမိုတိကျသောဘာသာပြန်ဆိုမှုအတွက် နောက်ထပ်အသေးစိတ်အချက်အလက်များကို သင်ထည့်သွင်းသည့်နေရာ",
   "onlineLibraryCheckInternet": "အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ သို့မဟုတ် နောက်မှ ထပ်ကြိုးစားပါ။",
   "onlineLibraryLoadFailed": "ဒေတာ တင်ရာတွင် အမှားအယွင်း ရှိပါသည်။",
   "onlineLibraryNoMaterials": "ဒေတာ မရှိပါ။",
-  "participantDeleted": "ပါဝင်သူကို ဖျက်လိုက်ပါပြီ။",
-  "participantRename": "ပါဝင်သူ အမည် ပြောင်း",
-  "partner": "ပါတနာ",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "ပါတနာ ပုံစံ",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "ဆက်တင်များ ဖွင့်ပါ",
   "password": "လျှို့ဝှက်နံပါတ်",
   "passwordTooShort": "လျှို့ဝှက်နံပါတ်သည် အနည်းဆုံး ၆ လုံး ရှိရပါမည်။",
   "perfect": "ပြီးပြည့်စုံတယ်!",
-  "personaFriend": "ဒေသခံ သူငယ်ချင်း",
-  "personaGuide": "ခရီးသွား လမ်းညွှန်",
-  "personaTeacher": "အင်္ဂလိပ်ဆရာ",
+  "pickGallery": "ပြခန်းမှ ရွေးပါ",
   "playAgain": "နောက်တစ်ကြိမ် ထပ်ကစားပါ",
   "playbackFailed": "ပြန်ဖွင့်ရန် ပျက်ကွက်ခြင်း: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "နာမဝိသေသန",
   "posAdverb": "ကြိယာဝိသေသန",
+  "posArticle": "နာမ်စား",
   "posConjunction": "ဆက်စပ်ပုဒ်",
   "posInterjection": "အာမေဍိတ်",
   "posNoun": "နာမ်",
+  "posParticle": "ဆက်စပ်ပစ္စည်း",
   "posPreposition": "ဝိဘတ်/အစ",
   "posPronoun": "နာမ်စား",
   "posVerb": "ကြိယာ",
   "practiceModeTitle": "လေ့ကျင့်ရန်",
   "practiceWordsOnly": "စကားလုံးများကိုသာ လေ့ကျင့်ပါ",
+  "processing": "ဆောင်ရွက်နေသည်...",
   "progress": "တိုးတက်မှု: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "မီနူး > ဘာသာစကားများ သတ်မှတ်ခြင်း တွင် သင်၏ဘာသာစကားနှင့် သင်ယူလိုသည့် ဘာသာစကားကို ဦးစွာ သတ်မှတ်ပါ။",
+  "quickStartStep1Title": "၁။ ဘာသာစကားများ သတ်မှတ်ပါ",
+  "quickStartStep2Desc": "ထည့်သွင်း (မိုက်/ကီးဘုတ်) -> ဘာသာပြန် -> သိမ်းဆည်း အစီအစဉ်အတိုင်း သင့်ကိုယ်ပိုင် သင်ယူမှုကတ်များကို ဖန်တီးပါ။",
+  "quickStartStep2Title": "၂။ အခြေခံ လုပ်ဆောင်ပုံ",
+  "quickStartStep3Desc": "စကားပြောခြင်းဖြင့် လေ့ကျင့်ပါ၊ အသံထွက် လေ့ကျင့်ရန် တက်ဘ်တွင် စာသားကိုကြည့်ပြီး ကိုယ်တိုင် အသံထွက်ကာ လေ့ကျင့်ပါ။",
+  "quickStartStep3Title": "၃။ မုဒ်များကို အသုံးချပါ",
   "recentNItems": "နောက်ဆုံးပေါ် {count} ခု ကြည့်ရန်",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "ဘာသာပြန်ရန် တောင်းဆိုပါ",
   "reset": "ပြန်လည်သတ်မှတ်",
   "resetPracticeHistory": "လေ့ကျင့်ခြင်း မှတ်တမ်းကို မူလအတိုင်း ပြန်ထားပါ",
   "retry": "ထပ်ကြိုးစားမလား?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "ပြန်လည်သုံးသပ်ခြင်း",
-  "roleAi": "AI",
-  "roleThirdParty": "ပြင်ပအဖွဲ့အစည်း",
-  "roleUser": "အသုံးပြုသူ",
   "save": "သိမ်းမည်",
+  "saveAsSentence": "ဝါကျအဖြစ် သိမ်းမည်",
+  "saveAsWord": "စကားလုံးအဖြစ် သိမ်းမည်",
   "saveData": "ဒေတာ သိမ်းဆည်းခြင်း",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "စကင်မှတ်တမ်းတွင် သိမ်းမည်",
   "saveTranslationsFromSearch": "ရှာဖွေခြင်း ပုံစံမှ ဘာသာပြန်ခြင်းကို သိမ်းဆည်းကြည့်ပါ",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "စကင်ဖတ်ရန် ပုံကို ရွေးပါ",
+  "scanLabel": "စကင်ဖတ်",
   "score": "တိကျမှု: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "နာမ်စား ရွေးပါ",
-  "selectParticipants": "ပါဝင်သူများ ရွေးချယ်ရန်",
-  "selectSentenceType": "စာကြောင်း အမျိုးအစား ရွေးပါ",
   "selectStudyMaterial": "သင်ယူရန် အချက်အလက် ရွေးပါ",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "စာကြောင်း",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "အကောင့်ဖွင့်ရန်",
-  "similarTextFound": "ဆင်တူသော စာသားကို တွေ့ရှိပါပြီ",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "ကျော်ပါ",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "မူရင်း:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "မူရင်း ဘာသာစကား",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "နေ့စဉ်စကားပြောဆိုမှုများကို နိုင်ငံခြားဘာသာစကားသို့ ချက်ချင်းပြောင်းပါ။ Talkie သည် သင်၏ဘာသာစကားအသုံးပြုမှုကို မှတ်တမ်းတင်ပေးပါသည်။",
   "sourceLanguageLabel": "ကျွန်ုပ်၏ ဘာသာစကား (Source)",
-  "speakNow": "ယခု ပြောပါ!",
-  "speaker": "ပြောသူ",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "ပြောသူ ရွေးချယ်ရန်",
-  "speakingPractice": "ပြောခြင်း လေ့ကျင့်ခန်း",
-  "startChat": "စကားပြော စရန်",
-  "startPractice": "လေ့ကျင့်ခန်း စတင်",
   "startTutorial": "သင်ခန်းစာ စတင်",
-  "startWarning": "သတိပေးချက်",
   "startsWith": "အစ စာလုံး",
   "statusCheckEmail": "အတည်ပြုရန် အီးမေးလ်ကို စစ်ဆေးပါ။",
   "statusDownloading": "ဒေါင်းလုဒ် လုပ်နေသည်: {name}...",
-  "statusImportFailed": "ထည့်သွင်းမှု မအောင်မြင်ပါ: {error}",
-  "statusImportSuccess": "{name} ထည့်သွင်းမှု အောင်မြင်ပါသည်",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "လော့ဂ်အင် ဝင်ရောက်မှုကို ပယ်ဖျက်လိုက်ပါသည်",
-  "statusLoginFailed": "လော့ဂ်အင် ဝင်ရောက်မှု မအောင်မြင်ပါ: {error}",
-  "statusLoginSuccess": "လော့ဂ်အင် ဝင်ရောက်မှု အောင်မြင်ပါသည်",
-  "statusLogoutSuccess": "ထွက်သွားပါပြီ။",
-  "statusSignUpFailed": "အကောင့်ဖွင့်ခြင်း မအောင်မြင်ပါ: {error}",
-  "statusSigningUp": "အကောင့်ဖွင့်နေသည်...",
-  "stopPractice": "လေ့ကျင့်ခန်း ရပ်ပါ",
-  "studyComplete": "သင်ယူခြင်း ပြီးစီးပါပြီ",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "သင်ယူခြင်း မှတ်တမ်း ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "ထည့်သွင်းမှု မအောင်မြင်ပါ: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} ထည့်သွင်းမှု အောင်မြင်ပါသည်",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "လော့ဂ်အင် ဝင်ရောက်မှု မအောင်မြင်ပါ: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "လော့ဂ်အင် ဝင်ရောက်မှု အောင်မြင်ပါသည်",
+  "statusLogoutSuccess": "ထွက်သွားပါပြီ။",
+  "statusRequestFailed": "ဘာသာပြန်ရန် တောင်းဆိုမှု မအောင်မြင်ပါ- {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "ဘာသာပြန်ရန် တောင်းဆိုမှု အောင်မြင်ပါသည်။",
+  "stopPractice": "လေ့ကျင့်ခန်း ရပ်ပါ",
+  "studyLangNotFoundDesc": "သင်ရွေးချယ်ထားသော အကြောင်းအရာသည် လက်ရှိ သင်၏ လေ့လာလိုသော ဘာသာစကား ({targetLang}) ကို မထောက်ပံ့သောကြောင့် ဒေသအလိုက် သိမ်းဆည်း၍ မရပါ။ ဘာသာပြန်ရန် တောင်းဆိုလိုပါသလား?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "လေ့လာလိုသော ဘာသာစကားကို မထောက်ပံ့ပါ",
   "styleFormal": "ရိုသေသော",
   "styleInformal": "ရင်းနှီးသော",
   "stylePolite": "ယဉ်ကျေးသော",
   "styleSlang": "စကားအတိုအသုံးအနှုန်း",
-  "subject": "ခေါင်းစဉ်:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "ဘာသာစကား ပြောင်းပါ",
-  "switchToAi": "AI ပုံစံသို့ ပြောင်းပါ",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "ပါတနာ ပုံစံသို့ ပြောင်းပါ",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "ဒေတာ စင့်ခ်လုပ်နေသည်...",
-  "tabConversation": "စကားပြော",
   "tabReview": "ပြန်လည်သုံးသပ်ခြင်း ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "လျှော့ချခြင်း",
   "tooltipIncrease": "တိုးမြှင့်ခြင်း",
   "tooltipSearch": "ရှာဖွေခြင်း",
+  "tooltipSettingsConfirm": "ဆက်တင်များကို အတည်ပြုပါ",
   "tooltipSpeaking": "ပြောခြင်း",
   "tooltipStudyReview": "သင်ယူခြင်း+ပြန်လည်သုံးသပ်ခြင်း",
   "totalRecords": "မှတ်တမ်း စုစုပေါင်း {count}ခု (အားလုံး ကြည့်ရန်)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "ယခု ဘာသာပြန်ပါ",
   "translating": "ဘာသာပြန်နေသည်...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "ဘာသာပြန်ဘာသာစကား",
   "translationLimitExceeded": "ဘာသာပြန်ရန် ကန့်သတ်ချက် ကျော်သွားခြင်း",
   "translationLimitMessage": "နေ့စဉ် အခမဲ့ ဘာသာပြန်ခြင်း (၅ ကြိမ်) အားလုံးကို သုံးပြီးပါပြီ။\\n\\nကြော်ငြာကို ကြည့်၍ ၅ ကြိမ် ချက်ချင်း ဖြည့်သွင်းလိုပါသလား?",
   "translationLoaded": "သိမ်းဆည်းထားသော ဘာသာပြန်ခြင်းကို တင်ထားပါပြီ",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "ဘာသာပြန် အရေအတွက်ကို ၅ ကြိမ် ဖြည့်ပြီးပါပြီ!",
+  "translationResult": "ဘာသာပြန် ရလဒ်",
   "translationResultHint": "ဘာသာပြန်ရလဒ် - ပြင်ဆင်နိုင်သည်",
   "tryAgain": "နောက်တစ်ကြိမ် ထပ်ကြိုးစား",
-  "tutorialAiChatDesc": "AI ကိုယ်ပွားဖြင့် လက်တွေ့ စကားပြောဆိုမှုကို လေ့ကျင့်ကြည့်ပါ။",
-  "tutorialAiChatTitle": "AI စကားပြော",
+  "ttsInstallGuide": "Android ဆက်တင်များ > Google TTS တွင် သက်ဆိုင်ရာဘာသာစကားဒေတာကို ထည့်သွင်းပါ။",
+  "ttsMissing": "ဤဘာသာစကားအတွက် အသံအင်ဂျင်ကို သင့်စက်တွင် ထည့်သွင်းထားခြင်းမရှိပါ။",
+  "ttsUnsupportedNatively": "ဤစက်တွင် ဤဘာသာစကားအတွက် အသံထွက်စနစ်ကို မပံ့ပိုးပါ။",
   "tutorialContextDesc": "အတူတူ စာကြောင်းဖြစ်သော်လည်း အခြေအနေ (ဥပမာ- မနက်၊ ည)ကို ရေးထားလျှင် သီးခြား သိမ်းဆည်းနိုင်သည်။",
   "tutorialContextTitle": "အခြေအနေ/စာသား၏ အဓိပ္ပာယ် တဂ်",
   "tutorialLangSettingsDesc": "ဘာသာပြန်မည့် မူရင်း ဘာသာစကားနှင့် ဦးတည် ဘာသာစကားကို ဆက်တင်ပြုလုပ်ပါ။",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "ထည့်သွင်းထားသော စာသားကို ဘာသာပြန်သည်။",
   "tutorialTransTitle": "ဘာသာပြန်ခြင်း",
   "typeExclamation": "အာမေဋိတ်",
+  "typeIdiom": "စကားပုံ",
   "typeImperative": "အမိန့်ပေး",
+  "typeProverb": "စကားပုံ/ဆောင်ရိုး",
   "typeQuestion": "အမေး",
   "typeStatement": "အပြော",
   "usageLimitTitle": "ကန့်သတ်ချက် ပြည့်သွားခြင်း",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "အွန်လိုင်း လမ်းညွှန်ကို ကြည့်ပါ",
   "voluntaryTranslations": "စေတနာ့ဝန်ထမ်း ဘာသာပြန်များ",
   "watchAdAndRefill": "ကြော်ငြာ ကြည့်၍ ဖြည့်သွင်းပါ (+၅ ကြိမ်)",
+  "welcomeButton": "စတင်ပါ",
+  "welcomeDesc": "Talkie မှ ကြိုဆိုပါတယ်! ဘာသာစကား ၈၀ ကျော်ကို 100% တိကျမှန်ကန်စွာ ထောက်ပံ့ပေးပြီး ပရီမီယံ 3D ဒီဇိုင်းအသစ်နှင့် အကောင်းဆုံးစွမ်းဆောင်ရည်တို့ဖြင့် သင်ယူမှုအတွေ့အကြုံကို အပြည့်အဝ ခံစားလိုက်ပါ။",
+  "welcomeTitle": "Talkie မှ ကြိုဆိုပါတယ်!",
   "word": "စကားလုံး",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "ရန်သူ မရောက်ခင် စကားလုံးကို ပြော၍ အခြေခံကို ကာကွယ်ပါ။",
   "wordDefenseTitle": "စကားလုံး ခုခံခြင်း",
   "wordModeLabel": "စကားလုံး ပုံစံ",
-  "yourPronunciation": "ကျွန်ုပ်၏ အသံထွက်",
-  "ttsUnsupportedNatively": "ဤစက်တွင် ဤဘာသာစကားအတွက် အသံထွက်စနစ်ကို မပံ့ပိုးပါ။",
-  "homeTab": "ဘာသာပြန်",
-  "welcomeTitle": "Talkie မှ ကြိုဆိုပါတယ်!",
-  "welcomeDesc": "Talkie မှ ကြိုဆိုပါတယ်! ဘာသာစကား ၈၀ ကျော်ကို 100% တိကျမှန်ကန်စွာ ထောက်ပံ့ပေးပြီး ပရီမီယံ 3D ဒီဇိုင်းအသစ်နှင့် အကောင်းဆုံးစွမ်းဆောင်ရည်တို့ဖြင့် သင်ယူမှုအတွေ့အကြုံကို အပြည့်အဝ ခံစားလိုက်ပါ။",
-  "welcomeButton": "စတင်ပါ",
-  "labelDetails": "အသေးစိတ် ဆက်တင်များ",
-  "translationResult": "ဘာသာပြန် ရလဒ်",
-  "inputContent": "ထည့်သွင်း အကြောင်းအရာ",
-  "translateNow": "ယခု ဘာသာပြန်ပါ",
-  "tooltipSettingsConfirm": "ဆက်တင်များကို အတည်ပြုပါ",
-  "hintNoteExample": "ဥပမာ- အခြေအနေ ရှင်းလင်းချက်၊ အသံတူ စကားလုံးများ စသည်",
-  "hintTagExample": "ဥပမာ- စီးပွားရေး၊ ခရီးသွား...",
-  "addNew": "အသစ် ထပ်ထည့်ပါ",
-  "newNotebookTitle": "မှတ်စုစာအုပ် အသစ် ခေါင်းစဉ်",
-  "enterNameHint": "အမည်ကို ရိုက်ထည့်ပါ",
-  "add": "ထည့်ပါ",
-  "openSettings": "ဆက်တင်များ ဖွင့်ပါ",
-  "helpNotebook": "ဘာသာပြန်ရလဒ်တွေကို သိမ်းဆည်းမယ့် ဖိုဒါကို ရွေးပါ။",
-  "helpNote": "စကားလုံးရဲ့ အဓိပ္ပါယ်၊ ဥပမာစာကြောင်း၊ အခြေအနေ စတာတွေကို လွတ်လပ်စွာ မှတ်သားပါ။",
-  "helpTag": "နောက်ပိုင်း အမျိုးအစားခွဲ ဒါမှမဟုတ် ရှာဖွေဖို့အတွက် သော့ချက်စာလုံးကို ရိုက်ထည့်ပါ။",
-  "requestTranslation": "ဘာသာပြန်ရန် တောင်းဆိုပါ",
-  "statusRequestSuccess": "ဘာသာပြန်ရန် တောင်းဆိုမှု အောင်မြင်ပါသည်။",
-  "statusRequestFailed": "ဘာသာပြန်ရန် တောင်းဆိုမှု မအောင်မြင်ပါ- {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "လေ့လာလိုသော ဘာသာစကားကို မထောက်ပံ့ပါ",
-  "studyLangNotFoundDesc": "သင်ရွေးချယ်ထားသော အကြောင်းအရာသည် လက်ရှိ သင်၏ လေ့လာလိုသော ဘာသာစကား ({targetLang}) ကို မထောက်ပံ့သောကြောင့် ဒေသအလိုက် သိမ်းဆည်း၍ မရပါ။ ဘာသာပြန်ရန် တောင်းဆိုလိုပါသလား?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "၁။ ဘာသာစကားများ သတ်မှတ်ပါ",
-  "quickStartStep1Desc": "မီနူး > ဘာသာစကားများ သတ်မှတ်ခြင်း တွင် သင်၏ဘာသာစကားနှင့် သင်ယူလိုသည့် ဘာသာစကားကို ဦးစွာ သတ်မှတ်ပါ။",
-  "quickStartStep2Title": "၂။ အခြေခံ လုပ်ဆောင်ပုံ",
-  "quickStartStep2Desc": "ထည့်သွင်း (မိုက်/ကီးဘုတ်) -> ဘာသာပြန် -> သိမ်းဆည်း အစီအစဉ်အတိုင်း သင့်ကိုယ်ပိုင် သင်ယူမှုကတ်များကို ဖန်တီးပါ။",
-  "quickStartStep3Title": "၃။ မုဒ်များကို အသုံးချပါ",
-  "quickStartStep3Desc": "စကားပြောခြင်းဖြင့် လေ့ကျင့်ပါ၊ အသံထွက် လေ့ကျင့်ရန် တက်ဘ်တွင် စာသားကိုကြည့်ပြီး ကိုယ်တိုင် အသံထွက်ကာ လေ့ကျင့်ပါ။",
-  "noteGuidance": "ပိုမိုတိကျသောဘာသာပြန်ဆိုမှုအတွက် နောက်ထပ်အသေးစိတ်အချက်အလက်များကို သင်ထည့်သွင်းသည့်နေရာ"
+  "yourPronunciation": "ကျွန်ုပ်၏ အသံထွက်"
 }

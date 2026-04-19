@@ -1,32 +1,10 @@
 {
   "@@locale": "fa",
-  "basicWords": "مخزن کلمات پایه",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "زبان ورودی",
-  "translationLanguage": "زبان ترجمه",
-  "simplifiedGuidance": "تبدیل فوری مکالمات روزمره به زبان خارجی! Talkie زندگی زبانی شما را ثبت می کند.",
-  "noDataForLanguage": "هیچ داده آموزشی برای زبان انتخابی شما در پایگاه داده محلی وجود ندارد. لطفاً داده ها را بارگیری کنید یا زبان دیگری را انتخاب کنید.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "لغو",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "دقت",
-  "ttsMissing": "موتور صوتی این زبان روی دستگاه شما نصب نشده است.",
-  "ttsInstallGuide": "لطفاً داده های زبان مربوطه را در تنظیمات Android > Google TTS نصب کنید.",
   "adLoading": "در حال بارگیری تبلیغ. لطفا بعدا دوباره امتحان کنید.",
+  "add": "اضافه",
+  "addNew": "اضافه کردن جدید",
   "addNewSubject": "اضافه کردن عنوان جدید",
-  "addParticipant": "افزودن شرکت‌کننده",
   "addTagHint": "اضافه کردن برچسب...",
   "alreadyHaveAccount": "از قبل حساب کاربری دارید؟",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "مخزن کلمات پایه",
+  "basicWords": "مخزن کلمات پایه",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "لغو",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "مفعولی",
   "casePossessive": "ملکی",
   "casePossessivePronoun": "ضمیر ملکی",
   "caseReflexive": "انعکاسی",
   "caseSubject": "فاعلی",
-  "chatAiChat": "چت",
-  "chatAllConversations": "همه گفتگوها",
-  "chatChoosePersona": "انتخاب شخصیت",
-  "chatEndMessage": "آیا می‌خواهید گفتگو را خاتمه دهید؟",
-  "chatEndTitle": "پایان و ذخیره گفتگو",
-  "chatFailed": "چت با شکست مواجه شد: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "گزیده‌ای از گفتگو ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "تاریخچه گفتگو",
-  "chatNew": "گفتگوی جدید",
-  "chatNewChat": "گفتگوی جدید",
-  "chatNoConversations": "هنوز هیچ گفتگویی وجود ندارد",
-  "chatSearchHint": "جستجو با عنوان گفتگو...",
-  "chatNoteSearchHint": "جستجو در یادداشت‌ها...",
-  "chatSaveAndExit": "ذخیره و خروج",
-  "chatStartNewPrompt": "برای تمرین یک گفتگوی جدید را شروع کنید!",
-  "chatTypeHint": "پیام خود را وارد کنید...",
-  "chatUntitled": "گفتگوی بدون عنوان",
   "checking": "در حال بررسی...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "آیا می خواهید این مکالمه را حذف کنید؟\nمکالمات حذف شده قابل بازیابی نیستند.",
-  "confirmDeleteParticipant": "آیا می‌خواهید این شرکت‌کننده را حذف کنید؟",
   "contextTagHint": "برای تشخیص آسان‌تر در آینده، موقعیت را یادداشت کنید",
   "contextTagLabel": "زمینه/موقعیت (اختیاری) - مثال: سلام صبح بخیر، فرم محترمانه",
   "copiedToClipboard": "به حافظه کلیپ‌بورد کپی شد!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "از طریق ایفای نقش، مکالمه را تمرین کنید. پاسخ مناسب را انتخاب کرده و آن را بگویید.",
-  "dialogueQuestTitle": "جستجوی گفتگو",
-  "disambiguationPrompt": "کدام معنی را برای ترجمه می خواهید انتخاب کنید؟",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "انتخاب معنی",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "حساب کاربری ندارید؟",
-  "editParticipant": "ویرایش شرکت‌کننده",
   "email": "ایمیل",
   "emailAlreadyInUse": "این ایمیل قبلاً ثبت شده است. لطفاً وارد شوید یا از بازیابی رمز عبور استفاده کنید.",
+  "enterNameHint": "نام را وارد کنید",
   "enterNewSubjectName": "عنوان جدید را وارد کنید",
   "enterSentenceHint": "یک جمله وارد کنید...",
   "enterTextHint": "متنی را برای ترجمه وارد کنید",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "متن استخراج شده",
   "female": "زن",
   "file": "فایل:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "حالت بازی",
   "gameOver": "پایان بازی",
   "gender": "جنسیت",
-  "labelFilterMaterial": "جزوه",
-  "labelFilterTag": "برچسب",
   "generalTags": "برچسب های عمومی",
   "getMaterials": "دریافت مطالب",
   "good": "خوب",
   "googleContinue": "ادامه با Google",
-  "helpDialogueImportDesc": "وارد کردن مجموعه‌های گفتگو کامل به عنوان فایل JSON.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "برای وارد کردن مطالب در حالت 3، JSON بسازید:",
-  "helpJsonTypeDialogue": "گفتگو (Dialogue)",
   "helpJsonTypeSentence": "جمله (Sentence)",
   "helpJsonTypeWord": "کلمه (Word)",
   "helpMode1Desc": "یادگیری زبان را به شهودی ترین شکل ممکن از طریق میکروفون سه بعدی ممتاز و نماد صفحه کلید بزرگ شروع کنید.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• انتخاب مجموعه: از منوی بالا سمت راست (⋮) گزینه 'انتخاب مجموعه آموزشی' یا 'آرشیو آنلاین' را استفاده کنید.\n• برگرداندن کارت: با 'نمایش/پنهان کردن' ترجمه را بررسی کنید.\n• شنیدن: با آیکون بلندگو تلفظ را پخش کنید.\n• اتمام یادگیری: با علامت تیک (V) یادگیری را تمام شده علامت بزنید.\n• حذف: با لمس طولانی (Long Click) کارت، سابقه را پاک کنید.\n• جستجو و فیلتر: از نوار جستجو (جستجوی هوشمند لحظه‌ای) و فیلترهای برچسب و حرف آغازین استفاده کنید.",
   "helpMode3Desc": "با گوش دادن به جملات و تکرار آن‌ها (سایه زنی)، تلفظ خود را تمرین کنید.",
   "helpMode3Details": "• انتخاب: بسته را انتخاب کنید\n• فاصله: [-] [+] زمان انتظار (3ثانیه-60ثانیه)\n• شروع/توقف: کنترل جلسه\n• صحبت کردن: گوش دهید و تکرار کنید\n• امتیاز: دقت (0-100)\n• تلاش مجدد: دکمه تلاش مجدد در صورت عدم تشخیص صدا",
-  "helpModeChatDesc": "با یک شخصیت هوش مصنوعی مکالمه کنید و مکالمه واقعی را تمرین کنید.",
-  "helpModeChatDetails": "• چت هوش مصنوعی: تمرین مکالمه واقعی با شخصیت در منوی «چت» در نوار تب پایین.\n• تنظیمات شخصیت: جنسیت، نام و کد زبان طرف مقابل را آزادانه تعیین کنید.\n• نمایش موقعیت GPS: با تشخیص موقعیت فعلی من، موضوعات مکالمه مناسب برای مکان را توصیه می کند.\n• 2 زبان: پاسخ هوش مصنوعی همراه با ترجمه نمایش داده می شود تا اثر یادگیری به حداکثر برسد.\n• مدیریت سابقه: فیلتر کردن تاریخچه مکالمات گذشته و ذخیره پیام های خاص در طول مکالمه به عنوان مواد یادگیری",
+  "helpNote": "معانی، مثال ها، موقعیت ها و غیره کلمات را آزادانه یادداشت کنید.",
+  "helpNotebook": "پوشه ای را برای ذخیره نتایج ترجمه انتخاب کنید.",
   "helpTabJson": "فرمت JSON",
   "helpTabModes": "حالت‌ها",
   "helpTabQuickStart": "شروع سریع",
   "helpTabTour": "تور",
+  "helpTag": "برای طبقه بندی یا جستجو در آینده، کلمات کلیدی را وارد کنید.",
   "helpTitle": "راهنما و راهبری",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "مخفی کردن",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "مثال: توضیحات بیشتر، کلمات هم‌معنی و غیره",
+  "hintTagExample": "مثال: کسب و کار، سفر و...",
+  "homeTab": "ترجمه",
   "importAdded": "افزوده شده: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} فایل و {entries} مورد وارد شده است.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "وارد کردن JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "فایل JSON تکی",
+  "importSourceFolder": "پوشه (ساختار کتابخانه بر اساس زبان)",
+  "importSourceTitle": "انتخاب منبع وارد کردن",
+  "importSourceZip": "فایل ZIP (پوشه فشرده)",
   "importTotal": "کل: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "متن ورودی",
+  "inputLanguage": "زبان ورودی",
   "inputModeTitle": "ورودی",
   "intervalSeconds": "فاصله: {seconds}ثانیه",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "لطفا یک ایمیل معتبر وارد کنید.",
   "kakaoContinue": "ادامه با کاکائو",
+  "labelDetails": "جزئیات",
+  "labelFilterMaterial": "جزوه",
+  "labelFilterTag": "برچسب",
   "labelLangCode": "کد زبان (مثال: en-US, ko-KR)",
-  "labelName": "نام",
   "labelNote": "یادداشت",
   "labelPOS": "نوع کلمه",
-  "labelRole": "نقش",
   "labelSentence": "جمله",
   "labelSentenceCollection": "مجموعه جملات",
   "labelSentenceType": "نوع جمله",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "در حال بارگیری شرکت‌کنندگان...",
-  "location": "مکان",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
+  "location": "موقعیت",
   "login": "ورود",
   "logout": "خروج",
   "logoutConfirmMessage": "آیا می‌خواهید از این دستگاه خارج شوید؟",
   "logoutConfirmTitle": "خروج",
   "male": "مرد",
-  "manageParticipants": "مدیریت شرکت‌کنندگان",
   "manual": "ورودی دستی",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "اطلاعات مطالب",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "من",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "وارد کردن مطالب از دستگاه",
   "menuHelp": "راهنما",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "مجموعه جملات من",
   "myWordbook": "دفتر لغات من",
   "neutral": "خنثی",
+  "newNotebookTitle": "نام دفترچه یادداشت جدید",
   "newSubjectName": "عنوان جدید دفترچه لغات/عبارات",
   "next": "بعدی",
-  "noDialogueHistory": "هیچ سابقه گفتگویی وجود ندارد.",
-  "noInternetWarningMic": "اتصال اینترنت وجود ندارد. تشخیص صدا در حالت آفلاین ممکن نیست.",
-  "noInternetWarningTranslate": "اتصال اینترنت وجود ندارد. قابلیت ترجمه در حالت آفلاین در دسترس نیست. لطفا از حالت مرور استفاده کنید.",
+  "noDataForLanguage": "هیچ داده آموزشی برای زبان انتخابی شما در پایگاه داده محلی وجود ندارد. لطفاً داده ها را بارگیری کنید یا زبان دیگری را انتخاب کنید.",
   "noMaterialsInCategory": "هیچ مطلبی در این دسته وجود ندارد.",
-  "noParticipantsFound": "هیچ شرکت‌کننده‌ای ثبت نشده است.",
   "noRecords": "هیچ رکوردی برای زبان انتخاب شده وجود ندارد",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "صدایی تشخیص داده نشد",
   "notSelected": "- انتخاب نشده -",
+  "noteGuidance": "جایی که جزئیات اضافی را برای ترجمه دقیق‌تر وارد می‌کنید",
   "onlineLibraryCheckInternet": "اتصال اینترنت خود را بررسی کنید یا بعدا دوباره امتحان کنید.",
   "onlineLibraryLoadFailed": "بارگیری مطالب با شکست مواجه شد.",
   "onlineLibraryNoMaterials": "هیچ مطلبی وجود ندارد.",
-  "participantDeleted": "شرکت‌کننده حذف شد.",
-  "participantRename": "تغییر نام شرکت‌کننده",
-  "partner": "شریک",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "حالت شریک",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "باز کردن تنظیمات",
   "password": "رمز عبور",
-  "passwordTooShort": "رمز عبور باید حداقل ۶ کاراکتر باشد.",
+  "passwordTooShort": "رمز عبور خیلی کوتاه است",
   "perfect": "عالی!",
-  "personaFriend": "دوست محلی",
-  "personaGuide": "راهنمای تور",
-  "personaTeacher": "معلم انگلیسی",
+  "pickGallery": "انتخاب از گالری",
   "playAgain": "دوباره بازی کنید",
   "playbackFailed": "پخش ناموفق بود: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "صفت",
   "posAdverb": "قید",
+  "posArticle": "حرف تعریف",
   "posConjunction": "حرف ربط",
   "posInterjection": "حرف ندا",
   "posNoun": "اسم",
+  "posParticle": "حرف اضافه",
   "posPreposition": "حرف اضافه",
   "posPronoun": "ضمیر",
   "posVerb": "فعل",
   "practiceModeTitle": "تمرین",
   "practiceWordsOnly": "فقط تمرین کلمات",
+  "processing": "در حال پردازش...",
   "progress": "پیشرفت: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "ابتدا زبان خود و زبان یادگیری را در منو > تنظیمات زبان مشخص کنید.",
+  "quickStartStep1Title": "۱. تنظیم زبان",
+  "quickStartStep2Desc": "کارت‌های یادگیری خود را به ترتیب ورودی (میکروفون/صفحه‌کلید) -> ترجمه -> ذخیره ایجاد کنید.",
+  "quickStartStep2Title": "۲. جریان اصلی",
+  "quickStartStep3Desc": "با چت تمرین کنید و در تب تمرین تلفظ، متن را ببینید و مستقیماً تلفظ کنید و تمرین کنید.",
+  "quickStartStep3Title": "۳. استفاده از حالت‌ها",
   "recentNItems": "نمایش {count} مورد اخیرا ایجاد شده",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "درخواست ترجمه",
   "reset": "بازنشانی",
   "resetPracticeHistory": "بازنشانی تاریخچه تمرین",
   "retry": "دوباره امتحان کنید؟",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "مرور",
-  "roleAi": "هوش مصنوعی",
-  "roleThirdParty": "شخص ثالث",
-  "roleUser": "کاربر",
   "save": "ذخیره",
+  "saveAsSentence": "ذخیره به عنوان جمله",
+  "saveAsWord": "ذخیره به عنوان کلمه",
   "saveData": "ذخیره",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "ذخیره در تاریخچه اسکن",
   "saveTranslationsFromSearch": "ذخیره ترجمه‌ها از حالت جستجو",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "تصویری را که می خواهید اسکن کنید انتخاب کنید",
+  "scanLabel": "اسکن",
   "score": "دقت: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "انتخاب نوع کلمه",
-  "selectParticipants": "انتخاب شرکت‌کنندگان",
-  "selectSentenceType": "انتخاب نوع جمله",
   "selectStudyMaterial": "انتخاب مطلب",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "جمله",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "ثبت نام",
-  "similarTextFound": "متن مشابه پیدا شد",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "رد کردن",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "منبع:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "زبان مبدا",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "sourceLanguageLabel": "Source Language",
-  "speakNow": "حالا صحبت کنید!",
-  "speaker": "گوینده",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "انتخاب گوینده",
-  "speakingPractice": "تیمرن صحبت کردن",
-  "startChat": "شروع گفتگو",
-  "startPractice": "شروع تمرین",
-  "startTutorial": "شروع تور",
-  "startWarning": "هشدار",
+  "simplifiedGuidance": "تبدیل فوری مکالمات روزمره به زبان خارجی! Talkie زندگی زبانی شما را ثبت می کند.",
+  "sourceLanguageLabel": "زبان من",
+  "startTutorial": "شروع آموزش",
   "startsWith": "شروع با",
-  "statusCheckEmail": "لطفاً ایمیل خود را برای تکمیل تأیید بررسی کنید.",
+  "statusCheckEmail": "لطفا ایمیل خود را بررسی کنید",
   "statusDownloading": "در حال بارگیری: {name}...",
-  "statusImportFailed": "وارد کردن با شکست مواجه شد: {error}",
-  "statusImportSuccess": "{name} با موفقیت وارد شد",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "ورود لغو شد.",
-  "statusLoginFailed": "ورود با شکست مواجه شد: {error}",
-  "statusLoginSuccess": "ورود با موفقیت انجام شد.",
-  "statusLogoutSuccess": "با موفقیت خارج شدید.",
-  "statusSignUpFailed": "ثبت نام با شکست مواجه شد: {error}",
-  "statusSigningUp": "در حال ثبت نام...",
-  "stopPractice": "توقف",
-  "studyComplete": "مطالعه شده",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "سوابق ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "وارد کردن با شکست مواجه شد: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} با موفقیت وارد شد",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "ورود ناموفق بود: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "ورود موفقیت آمیز بود",
+  "statusLogoutSuccess": "خروج موفقیت آمیز بود",
+  "statusRequestFailed": "درخواست ترجمه ناموفق بود: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "درخواست ترجمه با موفقیت انجام شد.",
+  "stopPractice": "توقف",
+  "studyLangNotFoundDesc": "مواد انتخابی شما از زبان یادگیری ({targetLang}) فعلی پشتیبانی نمی‌کند و نمی‌تواند به صورت محلی ذخیره شود. آیا می‌خواهید ترجمه درخواست کنید؟",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "زبان یادگیری پشتیبانی نمی‌شود",
   "styleFormal": "رسمی",
   "styleInformal": "غیر رسمی",
   "stylePolite": "مودبانه",
   "styleSlang": "محاوره‌ای/اصطلاحی",
-  "subject": "موضوع:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "جابجایی زبان‌ها",
-  "switchToAi": "تغییر به حالت هوش مصنوعی",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "تغییر به حالت شریک",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "در حال همگام‌سازی داده‌ها...",
-  "tabConversation": "گفتگو",
   "tabReview": "مرور ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "کاهش",
   "tooltipIncrease": "افزایش",
   "tooltipSearch": "جستجو",
+  "tooltipSettingsConfirm": "تایید تنظیمات",
   "tooltipSpeaking": "صحبت کردن",
   "tooltipStudyReview": "مطالعه+مرور",
   "totalRecords": "در مجموع {count} سابقه (نمایش همه)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "ترجمه کن",
   "translating": "در حال ترجمه...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "زبان ترجمه",
   "translationLimitExceeded": "محدودیت ترجمه فراتر رفت",
   "translationLimitMessage": "شما از تمام ترجمه‌های رایگان روزانه (۵ بار) استفاده کرده‌اید.\\n\\nآیا می‌خواهید با تماشای یک تبلیغ، ۵ بار دیگر فورا شارژ کنید؟",
   "translationLoaded": "ترجمه ذخیره شده بارگذاری شد",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "تعداد ترجمه‌ها به ۵ بار شارژ شد!",
+  "translationResult": "نتیجه ترجمه",
   "translationResultHint": "نتیجه ترجمه - قابل ویرایش",
   "tryAgain": "تلاش مجدد",
-  "tutorialAiChatDesc": "تمرین مکالمه واقعی با شخصیت‌های هوش مصنوعی.",
-  "tutorialAiChatTitle": "چت با هوش مصنوعی",
+  "ttsInstallGuide": "لطفاً داده های زبان مربوطه را در تنظیمات Android > Google TTS نصب کنید.",
+  "ttsMissing": "موتور صوتی این زبان روی دستگاه شما نصب نشده است.",
+  "ttsUnsupportedNatively": "خروجی صوتی برای این زبان در تنظیمات پیش فرض این دستگاه پشتیبانی نمی شود.",
   "tutorialContextDesc": "برای تمایز جملات مشابه، زمینه (مانند: صبح) را اضافه کنید.",
   "tutorialContextTitle": "برچسب متن",
   "tutorialLangSettingsDesc": "تنظیم زبان مبدا و مقصد برای ترجمه.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "برای ترجمه اینجا را لمس کنید.",
   "tutorialTransTitle": "ترجمه",
   "typeExclamation": "جمله تعجبی",
+  "typeIdiom": "اصطلاح",
   "typeImperative": "جمله امری",
+  "typeProverb": "ضرب المثل",
   "typeQuestion": "جمله پرسشی",
   "typeStatement": "جمله خبری",
   "usageLimitTitle": "به حد مجاز رسیدید",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "مشاهده راهنمای آنلاین",
   "voluntaryTranslations": "ترجمه‌های داوطلبانه",
   "watchAdAndRefill": "تماشای تبلیغ و شارژ (+۵ بار)",
+  "welcomeButton": "شروع کنید",
+  "welcomeDesc": "به Talkie خوش آمدید! ما با تمامیت 100٪ از بیش از 80 زبان در سراسر جهان پشتیبانی می کنیم و با طراحی سه بعدی ممتاز جدید و عملکرد بهینه شده، یک تجربه یادگیری عالی را به شما ارائه می دهیم.",
+  "welcomeTitle": "به Talkie خوش آمدید!",
   "word": "کلمه",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "با گفتن کلمه، قبل از رسیدن دشمنان از پایگاه دفاع کنید.",
   "wordDefenseTitle": "دفاع از کلمه",
   "wordModeLabel": "حالت کلمه",
-  "yourPronunciation": "تلفظ شما",
-  "ttsUnsupportedNatively": "خروجی صوتی برای این زبان در تنظیمات پیش فرض این دستگاه پشتیبانی نمی شود.",
-  "homeTab": "ترجمه",
-  "welcomeTitle": "به Talkie خوش آمدید!",
-  "welcomeDesc": "به Talkie خوش آمدید! ما با تمامیت 100٪ از بیش از 80 زبان در سراسر جهان پشتیبانی می کنیم و با طراحی سه بعدی ممتاز جدید و عملکرد بهینه شده، یک تجربه یادگیری عالی را به شما ارائه می دهیم.",
-  "welcomeButton": "شروع کنید",
-  "labelDetails": "جزئیات",
-  "translationResult": "نتیجه ترجمه",
-  "inputContent": "متن ورودی",
-  "translateNow": "ترجمه کن",
-  "tooltipSettingsConfirm": "تایید تنظیمات",
-  "hintNoteExample": "مثال: توضیحات بیشتر، کلمات هم‌معنی و غیره",
-  "hintTagExample": "مثال: کسب و کار، سفر و...",
-  "addNew": "اضافه کردن جدید",
-  "newNotebookTitle": "نام دفترچه یادداشت جدید",
-  "enterNameHint": "نام را وارد کنید",
-  "add": "اضافه",
-  "openSettings": "باز کردن تنظیمات",
-  "helpNotebook": "پوشه ای را برای ذخیره نتایج ترجمه انتخاب کنید.",
-  "helpNote": "معانی، مثال ها، موقعیت ها و غیره کلمات را آزادانه یادداشت کنید.",
-  "helpTag": "برای طبقه بندی یا جستجو در آینده، کلمات کلیدی را وارد کنید.",
-  "requestTranslation": "درخواست ترجمه",
-  "statusRequestSuccess": "درخواست ترجمه با موفقیت انجام شد.",
-  "statusRequestFailed": "درخواست ترجمه ناموفق بود: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "زبان یادگیری پشتیبانی نمی‌شود",
-  "studyLangNotFoundDesc": "مواد انتخابی شما از زبان یادگیری ({targetLang}) فعلی پشتیبانی نمی‌کند و نمی‌تواند به صورت محلی ذخیره شود. آیا می‌خواهید ترجمه درخواست کنید؟",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "۱. تنظیم زبان",
-  "quickStartStep1Desc": "ابتدا زبان خود و زبان یادگیری را در منو > تنظیمات زبان مشخص کنید.",
-  "quickStartStep2Title": "۲. جریان اصلی",
-  "quickStartStep2Desc": "کارت‌های یادگیری خود را به ترتیب ورودی (میکروفون/صفحه‌کلید) -> ترجمه -> ذخیره ایجاد کنید.",
-  "quickStartStep3Title": "۳. استفاده از حالت‌ها",
-  "quickStartStep3Desc": "با چت تمرین کنید و در تب تمرین تلفظ، متن را ببینید و مستقیماً تلفظ کنید و تمرین کنید.",
-  "noteGuidance": "جایی که جزئیات اضافی را برای ترجمه دقیق‌تر وارد می‌کنید"
+  "yourPronunciation": "تلفظ شما"
 }

@@ -1,32 +1,10 @@
 {
   "@@locale": "nl",
-  "basicWords": "Basis opslagplaats voor woorden",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Invoertaal",
-  "translationLanguage": "Vertalingstaal",
-  "simplifiedGuidance": "Zet alledaagse gesprekken direct om in een vreemde taal! Talkie houdt uw taalleven bij.",
-  "noDataForLanguage": "Er zijn geen leermiddelen voor de gekozen taal in de lokale database. Download de gegevens of selecteer een andere taal.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Annuleren",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Nauwkeurigheid",
-  "ttsMissing": "De spraakengine voor deze taal is niet op uw apparaat geïnstalleerd.",
-  "ttsInstallGuide": "Ga naar Android Instellingen > Google TTS en installeer de bijbehorende taalgegevens.",
   "adLoading": "Advertentie wordt geladen. Probeer het over een moment nog eens.",
+  "add": "Toevoegen",
+  "addNew": "Nieuwe toevoegen",
   "addNewSubject": "Nieuwe titel toevoegen",
-  "addParticipant": "Deelnemer toevoegen",
   "addTagHint": "Tag toevoegen...",
   "alreadyHaveAccount": "Heb je al een account?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Basis Woordenlijst",
+  "basicWords": "Basis opslagplaats voor woorden",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Annuleren",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Accusatief",
   "casePossessive": "Genitief",
   "casePossessivePronoun": "Possessief voornaamwoord",
   "caseReflexive": "Reflexief",
   "caseSubject": "Nominatief",
-  "chatAiChat": "Chatten",
-  "chatAllConversations": "Alle gesprekken",
-  "chatChoosePersona": "Kies persona",
-  "chatEndMessage": "Wil je dit gesprek beëindigen?",
-  "chatEndTitle": "Gesprek beëindigen en opslaan",
-  "chatFailed": "Chat mislukt: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Fragment uit gesprek ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Chatgeschiedenis",
-  "chatNew": "Nieuwe chat",
-  "chatNewChat": "Nieuwe chat",
-  "chatNoConversations": "Nog geen gesprekken",
-  "chatSearchHint": "Zoeken op chatnaam...",
-  "chatNoteSearchHint": "Zoeken in notities...",
-  "chatSaveAndExit": "Opslaan en afsluiten",
-  "chatStartNewPrompt": "Start een nieuw gesprek om te oefenen!",
-  "chatTypeHint": "Typ een bericht...",
-  "chatUntitled": "Naamloze chat",
   "checking": "Controleren...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Weet je zeker dat je dit gesprek wilt verwijderen?\nVerwijderde gesprekken kunnen niet worden hersteld.",
-  "confirmDeleteParticipant": "Weet je zeker dat je deze deelnemer wilt verwijderen?",
   "contextTagHint": "Noteer de situatie om het later gemakkelijk te kunnen onderscheiden",
   "contextTagLabel": "Context/Situatie (optioneel) - bijv. Ochtendgroet, Beleefd",
   "copiedToClipboard": "Gekopieerd naar het klembord!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Oefen gesprekken via rollenspellen. Selecteer en spreek de juiste antwoorden.",
-  "dialogueQuestTitle": "Dialoog Quest",
-  "disambiguationPrompt": "Welke betekenis wilt u vertalen?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Betekenis selecteren",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Heb je geen account?",
-  "editParticipant": "Deelnemer bewerken",
   "email": "E-mail",
   "emailAlreadyInUse": "Dit e-mailadres is al in gebruik. Log in of gebruik de functie 'Wachtwoord vergeten'.",
+  "enterNameHint": "Voer een naam in",
   "enterNewSubjectName": "Nieuwe titel invoeren",
   "enterSentenceHint": "Voer een zin in...",
   "enterTextHint": "Voer de tekst in om te vertalen",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Gescande tekst",
   "female": "Vrouw",
   "file": "Bestand:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Spelmodus",
   "gameOver": "Game Over",
   "gender": "Geslacht",
-  "labelFilterMaterial": "Materiaal",
-  "labelFilterTag": "Tag",
   "generalTags": "Algemene tags",
   "getMaterials": "Materialen ophalen",
   "good": "Goed",
   "googleContinue": "Doorgaan met Google",
-  "helpDialogueImportDesc": "Importeer een volledige set dialogen via een JSON-bestand.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "Om studiematerialen in Modus 3 te importeren, maak JSON bestand met deze structuur:",
-  "helpJsonTypeDialogue": "Dialoog",
   "helpJsonTypeSentence": "Zin",
   "helpJsonTypeWord": "Woord",
   "helpMode1Desc": "Begin taalleerervaring op de meest intuïtieve manier met een premium 3D-microfoon en een groot toetsenbordpictogram.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Materiaal selecteren: Gebruik 'Leermateriaal selecteren' of 'Online materiaal' in het menu (⋮) rechtsboven\n• Kaart omdraaien: Controleer de vertaling met 'Tonen/Verbergen'\n• Luisteren: Afspelen van uitspraak via het luidsprekericoon\n• Leren voltooid: Afgewerkt leren markeren met een vinkje (V)\n• Verwijderen: Houd een kaart lang ingedrukt om de geschiedenis te verwijderen\n• Zoeken en filteren: Ondersteuning voor zoekbalk (realtime slim zoeken) en tags, filters voor beginletters",
   "helpMode3Desc": "Oefen je uitspraak door de zinnen te beluisteren en na te spreken (Shadowing).",
   "helpMode3Details": "• Selecteer Materiaal: Kies studiepakket\n• Interval: [-] [+] pas wachttijd aan (3s-60s)\n• Start/Stop: Beheer sessie\n• Spreek: Luister audio en herhaal\n• Feedback: Score (0-100)\n• Probeer Opnieuw: Knop als stem niet gedetecteerd",
-  "helpModeChatDesc": "Oefen echte gesprekken door te chatten met een AI-persona.",
-  "helpModeChatDetails": "• AI-chat: oefen praktische gesprekken met persona's in het 'Chat'-menu op de onderste tabbladbalk\n• Persona-instellingen: specificeer vrijelijk het geslacht, de naam en de taalcode van de andere partij\n• GPS-situatiespel: herkent mijn huidige locatie en beveelt gespreksonderwerpen aan die passen bij de locatie\n• Tweetalig: de antwoorden van de AI worden weergegeven met vertalingen om het leereffect te maximaliseren\n• Recordbeheer: filter de geschiedenis van eerdere gesprekken en sla specifieke berichten tijdens het gesprek op als leermateriaal",
+  "helpNote": "Noteer vrijelijk de betekenis, voorbeelden of situaties van een woord.",
+  "helpNotebook": "Selecteer de map waarin u de vertalingen wilt opslaan.",
   "helpTabJson": "JSON Formaat",
   "helpTabModes": "Modi",
   "helpTabQuickStart": "Snel aan de slag",
   "helpTabTour": "Rondleiding",
+  "helpTag": "Voer trefwoorden in om later te categoriseren of te zoeken.",
   "helpTitle": "Hulp & Gids",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "Verbergen",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Bijv.: context, homoniemen, enz.",
+  "hintTagExample": "Bijv.: Zakelijk, reizen...",
+  "homeTab": "Vertalen",
   "importAdded": "Toegevoegd: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} bestanden, {entries} items geïmporteerd.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON Importeren",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Enkel JSON-bestand",
+  "importSourceFolder": "Map (taalspecifieke bibliotheekstructuur)",
+  "importSourceTitle": "Importeer bron selecteren",
+  "importSourceZip": "ZIP-bestand (gecomprimeerde map)",
   "importTotal": "Totaal: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Invoer",
+  "inputLanguage": "Invoertaal",
   "inputModeTitle": "Invoer",
   "intervalSeconds": "Interval: {seconds} seconden",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Voer een geldig e-mailadres in.",
   "kakaoContinue": "Doorgaan met Kakao",
+  "labelDetails": "Gedetailleerde instellingen",
+  "labelFilterMaterial": "Materiaal",
+  "labelFilterTag": "Tag",
   "labelLangCode": "Taalcode (bijv. en-US, ko-KR)",
-  "labelName": "Naam",
   "labelNote": "Notitie",
   "labelPOS": "Woordsoort",
-  "labelRole": "Rol",
   "labelSentence": "Zin",
   "labelSentenceCollection": "Zinnencollectie",
   "labelSentenceType": "Type zin",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Deelnemers laden...",
   "location": "Locatie",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Inloggen",
   "logout": "Uitloggen",
   "logoutConfirmMessage": "Weet je zeker dat je wilt uitloggen van dit apparaat?",
   "logoutConfirmTitle": "Uitloggen",
   "male": "Man",
-  "manageParticipants": "Deelnemers beheren",
   "manual": "Handmatige invoer",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Materiaalinfo",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Ik",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Materiaal importeren van apparaat",
   "menuHelp": "Help",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Mijn zinnenverzameling",
   "myWordbook": "Mijn woordenboek",
   "neutral": "Neutraal",
+  "newNotebookTitle": "Nieuwe mapnaam",
   "newSubjectName": "Nieuwe woordenlijst/zinscollectie titel",
   "next": "Volgende",
-  "noDialogueHistory": "Geen dialooggeschiedenis.",
-  "noInternetWarningMic": "Geen internetverbinding. Spraakherkenning is mogelijk niet beschikbaar in de offline modus.",
-  "noInternetWarningTranslate": "Geen internetverbinding. De vertaalfunctie is niet beschikbaar in de offline modus. Gebruik de herhalingsmodus.",
+  "noDataForLanguage": "Er zijn geen leermiddelen voor de gekozen taal in de lokale database. Download de gegevens of selecteer een andere taal.",
   "noMaterialsInCategory": "Er zijn geen materialen in deze categorie.",
-  "noParticipantsFound": "Geen deelnemers gevonden.",
   "noRecords": "Geen records voor geselecteerde taal",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Geen stem gedetecteerd",
   "notSelected": "- Niet geselecteerd -",
+  "noteGuidance": "Waar u aanvullende details invoert voor een nauwkeurigere vertaling",
   "onlineLibraryCheckInternet": "Controleer je internetverbinding of probeer het later opnieuw.",
   "onlineLibraryLoadFailed": "Het laden van de materialen is mislukt.",
   "onlineLibraryNoMaterials": "Geen materialen.",
-  "participantDeleted": "De deelnemer is verwijderd.",
-  "participantRename": "Deelnemer hernoemen",
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Partnermodus",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Instellingen openen",
   "password": "Wachtwoord",
   "passwordTooShort": "Wachtwoord moet minimaal 6 tekens lang zijn.",
   "perfect": "Perfect!",
-  "personaFriend": "Lokale vriend",
-  "personaGuide": "Reisgids",
-  "personaTeacher": "Engels leraar",
+  "pickGallery": "Kies uit galerij",
   "playAgain": "Nog een keer spelen",
   "playbackFailed": "Afspelen mislukt: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Bijvoeglijk naamwoord",
   "posAdverb": "Bijwoord",
+  "posArticle": "Lidwoord",
   "posConjunction": "Voegwoord",
   "posInterjection": "Tussenwerpsel",
   "posNoun": "Zelfstandig naamwoord",
+  "posParticle": "Partikel",
   "posPreposition": "Voorzetsel",
   "posPronoun": "Voornaamwoord",
   "posVerb": "Werkwoord",
   "practiceModeTitle": "Oefenen",
   "practiceWordsOnly": "Alleen woorden oefenen",
+  "processing": "Bezig met verwerken...",
   "progress": "Voortgang: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Stel eerst uw taal en de taal die u wilt leren in via Menu > Taalinstellingen.",
+  "quickStartStep1Title": "1. Stel de taal in",
+  "quickStartStep2Desc": "Maak uw eigen leerkaarten in de volgorde: invoer (microfoon/toetsenbord) -> vertaling -> opslaan.",
+  "quickStartStep2Title": "2. Basisworkflow",
+  "quickStartStep3Desc": "Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.",
+  "quickStartStep3Title": "3. Gebruik de modi",
   "recentNItems": "Toon de laatste {count} items",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Vertaalverzoek indienen",
   "reset": "Reset",
   "resetPracticeHistory": "Oefengeschiedenis resetten",
   "retry": "Opnieuw proberen?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Herhaling",
-  "roleAi": "AI",
-  "roleThirdParty": "Derde partij",
-  "roleUser": "Gebruiker",
   "save": "Opslaan",
+  "saveAsSentence": "Opslaan als zin",
+  "saveAsWord": "Opslaan als woord",
   "saveData": "Opslaan",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Opslaan in scangeschiedenis",
   "saveTranslationsFromSearch": "Vertaal uit zoekmodus opslaan",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Selecteer een afbeelding om te scannen",
+  "scanLabel": "Scannen",
   "score": "Nauwkeurigheid: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Selecteer woordsoort",
-  "selectParticipants": "Deelnemers selecteren",
-  "selectSentenceType": "Selecteer zin type",
   "selectStudyMaterial": "Selecteer Materiaal",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Zin",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Aanmelden",
-  "similarTextFound": "Vergelijkbare tekst gevonden",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Overslaan",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Bron:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Brontaal",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Zet alledaagse gesprekken direct om in een vreemde taal! Talkie houdt uw taalleven bij.",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "Spreek nu!",
-  "speaker": "Spreker",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Spreker selecteren",
-  "speakingPractice": "Spreekoefening",
-  "startChat": "Start chat",
-  "startPractice": "Start Oefening",
   "startTutorial": "Start Rondleiding",
-  "startWarning": "Waarschuwing",
   "startsWith": "Begint met",
   "statusCheckEmail": "Controleer uw e-mail om de verificatie te voltooien.",
   "statusDownloading": "Downloaden: {name}...",
-  "statusImportFailed": "Importeren mislukt: {error}",
-  "statusImportSuccess": "{name} importeren voltooid",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Inloggen geannuleerd.",
-  "statusLoginFailed": "Inloggen mislukt: {error}",
-  "statusLoginSuccess": "Succesvol ingelogd.",
-  "statusLogoutSuccess": "Uitgelogd.",
-  "statusSignUpFailed": "Aanmelden mislukt: {error}",
-  "statusSigningUp": "Aanmelden...",
-  "stopPractice": "Stop Oefening",
-  "studyComplete": "Bestudeerd",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Records ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Importeren mislukt: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} importeren voltooid",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Inloggen mislukt: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Succesvol ingelogd.",
+  "statusLogoutSuccess": "Uitgelogd.",
+  "statusRequestFailed": "Vertaalverzoek mislukt: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Vertaalverzoek voltooid.",
+  "stopPractice": "Stop Oefening",
+  "studyLangNotFoundDesc": "Het geselecteerde materiaal ondersteunt de huidige ingestelde leertaal ({targetLang}) niet en kan niet lokaal worden opgeslagen. Wilt u een vertaling aanvragen?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Leertaal niet ondersteund",
   "styleFormal": "Formeel",
   "styleInformal": "Informeel",
   "stylePolite": "Beleefd",
   "styleSlang": "Straattaal/Slang",
-  "subject": "Onderwerp:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Talen omdraaien",
-  "switchToAi": "Schakel over naar AI-modus",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Schakel over naar Partnermodus",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Gegevens synchroniseren...",
-  "tabConversation": "Gesprek",
   "tabReview": "Herhalen ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Verminderen",
   "tooltipIncrease": "Verhogen",
   "tooltipSearch": "Zoeken",
+  "tooltipSettingsConfirm": "Instellingen bevestigen",
   "tooltipSpeaking": "Spreken",
   "tooltipStudyReview": "Studie+Herhaling",
   "totalRecords": "Totaal {count} records (Bekijk alles)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Vertaal nu",
   "translating": "Vertalen...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Vertalingstaal",
   "translationLimitExceeded": "Vertaal limiet overschreden",
   "translationLimitMessage": "Je hebt alle dagelijkse gratis vertalingen (5 keer) gebruikt.\\n\\nWil je een advertentie bekijken en 5 keer direct opladen?",
   "translationLoaded": "Opgeslagen vertaling geladen",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Het aantal vertalingen is 5 keer opgeladen!",
+  "translationResult": "Vertaling",
   "translationResultHint": "Vertaling - kan worden bewerkt",
   "tryAgain": "Opnieuw Proberen",
-  "tutorialAiChatDesc": "Oefen realistische gesprekken met AI-persona's.",
-  "tutorialAiChatTitle": "AI Chat",
+  "ttsInstallGuide": "Ga naar Android Instellingen > Google TTS en installeer de bijbehorende taalgegevens.",
+  "ttsMissing": "De spraakengine voor deze taal is niet op uw apparaat geïnstalleerd.",
+  "ttsUnsupportedNatively": "Deze taal wordt niet standaard ondersteund voor spraakuitvoer op dit apparaat.",
   "tutorialContextDesc": "Voeg context toe (bijv. Ochtend) om vergelijkbare zinnen te onderscheiden.",
   "tutorialContextTitle": "Contextlabel",
   "tutorialLangSettingsDesc": "Stel de brontaal en de doeltaal in voor vertaling.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Tik hier om je tekst te vertalen.",
   "tutorialTransTitle": "Vertalen",
   "typeExclamation": "Uitroep",
+  "typeIdiom": "Idiom",
   "typeImperative": "Imperatief",
+  "typeProverb": "Spreekwoord",
   "typeQuestion": "Vraag",
   "typeStatement": "Stelling",
   "usageLimitTitle": "Limiet bereikt",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Online gids bekijken",
   "voluntaryTranslations": "Vrijwillige vertalingen",
   "watchAdAndRefill": "Bekijk advertentie en laad op (+5 keer)",
+  "welcomeButton": "Aan de slag",
+  "welcomeDesc": "Welkom bij Talkie! We ondersteunen meer dan 80 talen over de hele wereld met 100% integriteit, en bieden een perfecte leerervaring met nieuwe premium 3D-ontwerpen en geoptimaliseerde prestaties.",
+  "welcomeTitle": "Welkom bij Talkie!",
   "word": "Woord",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Verdedig je basis door de woorden te zeggen voordat de vijand arriveert.",
   "wordDefenseTitle": "Woordverdediging",
   "wordModeLabel": "Woordmodus",
-  "yourPronunciation": "Jouw Uitspraak",
-  "ttsUnsupportedNatively": "Deze taal wordt niet standaard ondersteund voor spraakuitvoer op dit apparaat.",
-  "homeTab": "Vertalen",
-  "welcomeTitle": "Welkom bij Talkie!",
-  "welcomeDesc": "Welkom bij Talkie! We ondersteunen meer dan 80 talen over de hele wereld met 100% integriteit, en bieden een perfecte leerervaring met nieuwe premium 3D-ontwerpen en geoptimaliseerde prestaties.",
-  "welcomeButton": "Aan de slag",
-  "labelDetails": "Gedetailleerde instellingen",
-  "translationResult": "Vertaling",
-  "inputContent": "Invoer",
-  "translateNow": "Vertaal nu",
-  "tooltipSettingsConfirm": "Instellingen bevestigen",
-  "hintNoteExample": "Bijv.: context, homoniemen, enz.",
-  "hintTagExample": "Bijv.: Zakelijk, reizen...",
-  "addNew": "Nieuwe toevoegen",
-  "newNotebookTitle": "Nieuwe mapnaam",
-  "enterNameHint": "Voer een naam in",
-  "add": "Toevoegen",
-  "openSettings": "Instellingen openen",
-  "helpNotebook": "Selecteer de map waarin u de vertalingen wilt opslaan.",
-  "helpNote": "Noteer vrijelijk de betekenis, voorbeelden of situaties van een woord.",
-  "helpTag": "Voer trefwoorden in om later te categoriseren of te zoeken.",
-  "requestTranslation": "Vertaalverzoek indienen",
-  "statusRequestSuccess": "Vertaalverzoek voltooid.",
-  "statusRequestFailed": "Vertaalverzoek mislukt: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Leertaal niet ondersteund",
-  "studyLangNotFoundDesc": "Het geselecteerde materiaal ondersteunt de huidige ingestelde leertaal ({targetLang}) niet en kan niet lokaal worden opgeslagen. Wilt u een vertaling aanvragen?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Stel de taal in",
-  "quickStartStep1Desc": "Stel eerst uw taal en de taal die u wilt leren in via Menu > Taalinstellingen.",
-  "quickStartStep2Title": "2. Basisworkflow",
-  "quickStartStep2Desc": "Maak uw eigen leerkaarten in de volgorde: invoer (microfoon/toetsenbord) -> vertaling -> opslaan.",
-  "quickStartStep3Title": "3. Gebruik de modi",
-  "quickStartStep3Desc": "Oefen met chatten en oefen uw uitspraak door de tekst te bekijken en zelf uit te spreken in het tabblad Oefen uitspraak.",
-  "noteGuidance": "Waar u aanvullende details invoert voor een nauwkeurigere vertaling"
+  "yourPronunciation": "Jouw Uitspraak"
 }

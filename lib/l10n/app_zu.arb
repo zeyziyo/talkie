@@ -1,32 +1,10 @@
 {
   "@@locale": "zu",
-  "basicWords": "Inqolobane Yamagama Ayisisekelo",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Ulimi wokufaka",
-  "translationLanguage": "Ulimi lokuhumusha",
-  "simplifiedGuidance": "Guqula izingxoxo zansuku zonke zibe izilimi zangaphandle ngokushesha! I-Talkie izorekhoda impilo yakho yezilimi.",
-  "noDataForLanguage": "Azikho izinto zokufunda zolimi olukhethiwe ku-DB yendawo. Sicela ulande izinto zokufunda noma ukhethe olunye ulimi.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Khansela",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Ukunemba",
-  "ttsMissing": "Injini yezwi yalolu limi ayifakiwe kudivayisi yakho.",
-  "ttsInstallGuide": "Sicela ufake idatha yolimi olufanele kuzilungiselelo ze-Android > Google TTS.",
   "adLoading": "Iskhangiso siyalayisha. Zama futhi ngemva kwesikhashana.",
+  "add": "Engeza",
+  "addNew": "Engeza Okusha",
   "addNewSubject": "Engeza Isihloko Esisha",
-  "addParticipant": "Engeza umhlanganyeli",
   "addTagHint": "Engeza ithegi...",
   "alreadyHaveAccount": "Usuvele unayo i-akhawunti?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Inqolobane Yamagama Ayisisekelo",
+  "basicWords": "Inqolobane Yamagama Ayisisekelo",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Khansela",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Into",
   "casePossessive": "Okobanini",
   "casePossessivePronoun": "Isabizwana Esibanini",
   "caseReflexive": "Isabizwana Sokuzicabangela",
   "caseSubject": "Ubomuntu",
-  "chatAiChat": "Ingxoxo",
-  "chatAllConversations": "Zonke izingxoxo",
-  "chatChoosePersona": "Khetha Ubungcweti",
-  "chatEndMessage": "Uyafuna ukuqeda ingxoxo?",
-  "chatEndTitle": "Qeda bese Ulondoloza Ingxoxo",
-  "chatFailed": "Ingxoxo Ihlulekile: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Ingxoxo Eyacashuniwe ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Umlando Wengxoxo",
-  "chatNew": "Ingxoxo Entsha",
-  "chatNewChat": "Ingxoxo Entsha",
-  "chatNoConversations": "Azikho izingxoxo okwamanje",
-  "chatSearchHint": "Sesha ngesihloko sengxoxo...",
-  "chatNoteSearchHint": "Sesha ngamazwana...",
-  "chatSaveAndExit": "Londoloza bese Uphuma",
-  "chatStartNewPrompt": "Qala ingxoxo entsha ukuze uzilolonge!",
-  "chatTypeHint": "Thayipha umyalezo...",
-  "chatUntitled": "Ingxoxo Engenasiihloko",
   "checking": "Kuyahlolwa...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Uqinisekile ukuthi ufuna ukususa le ngxoxo?\nAyikwazi ukubuyiselwa emuva uma isisusiwe.",
-  "confirmDeleteParticipant": "Uyafuna ukususa lo mhlanganyeli?",
   "contextTagHint": "Bhala isimo ukuze kube lula ukuhlukanisa ngokuhamba kwesikhathi",
   "contextTagLabel": "Umongo/Isimo (Ongakukhetha) - Isib: Ukubingelela Kwasekuseni, Okusesimweni",
   "copiedToClipboard": "Ikopishwe kubhodi yokunameka!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Prakthiza ingxoxo ngezimo. Khetha impendulo efanele bese uyayikhuluma.",
-  "dialogueQuestTitle": "Ukufuna Ingxoxo",
-  "disambiguationPrompt": "Ungathanda ukuhumusha ngayiphi incazelo?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Khetha Incazelo",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Awunayo i-akhawunti?",
-  "editParticipant": "Hlela umhlanganyeli",
   "email": "I-imeyili",
   "emailAlreadyInUse": "I-imeyili isivele isetshenziswa. Ngena ngemvume noma usebenzise ukuthola iphasiwedi.",
+  "enterNameHint": "Faka Igama",
   "enterNewSubjectName": "Faka isihloko esisha",
   "enterSentenceHint": "Faka umusho...",
   "enterTextHint": "Faka umbhalo ozohunyushwa",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Umbhalo otholakele",
   "female": "Owesifazane",
   "file": "Ifayela:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Imodi Yomdlalo",
   "gameOver": "Umsebenzi Uphelile",
   "gender": "Ubulili",
-  "labelFilterMaterial": "Izinsiza",
-  "labelFilterTag": "Ithegi",
   "generalTags": "Amathegi ajwayelekile",
   "getMaterials": "Thola Izinto Zokwakha",
   "good": "Kulungile",
   "googleContinue": "Qhubeka nge-Google",
-  "helpDialogueImportDesc": "Ngenisa isethi yonke yezingxoxo njengefayela le-JSON.",
-  "helpDialogueImportDetails": "• Isakhiwo se-JSON: Sebenzisa uhlu 'lwezingxoxo' esikhundleni 'sokungenela'\n• Ukubuyisela okuzenzakalelayo: Isihloko sengxoxo, ubungcweti, nokuhleleka kwemilayezo kuyabuyiselwa.\n• Indawo: Izingxoxo ezingenisiwe zivela kuthebhu 'Yomlando' yemodi yengxoxo ye-AI.",
   "helpJsonDesc": "Ukuze ungenise izinto zokwakha zokufunda njengefayela le-JSON ongazisebenzisa kumodi 3, landela ifomethi elandelayo:",
-  "helpJsonTypeDialogue": "Ingxoxo (Dialogue)",
   "helpJsonTypeSentence": "Umusho (Sentence)",
   "helpJsonTypeWord": "Igama (Word)",
   "helpMode1Desc": "Qala ukufunda izilimi ngendlela enembile kakhulu ngezithonjana zekhibhodi ezinkulu ze-3D nemakrofoni ye-premium.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Ukukhetha Incwadi Yokufunda: Sebenzisa imenyu engenhla kwesokudla (⋮) ukuze 'Ukhethe Incwadi Yokufunda' noma 'Ilabhulali Yezinto Eziku-inthanethi'\n• Ukuphenya Ikhadi: Qinisekisa ukuhumusha ngokuthi 'Bonisa/Fihla'\n• Ukulalela: Dlala ukuphinyiselwa ngesithonjana sesipika\n• Ukuqeda Ukufunda: Maka njengokuqediwe ngokuthi uphawu lokuhlola (V)\n• Ukususa: Cindezela isikhathi eside ikhadi ukuze ususe umlando\n• Ukusesha Nokuhlunga: Sekela ibha yokusesha (ukusesha okuhlakaniphile kwesikhathi sangempela) namathegi, isihlungi sezinhlamvu zokuqala",
   "helpMode3Desc": "Lalela umusho bese uwuphinda (Ukushadelwa) ukuze uthuthukise indlela obiza ngayo amagama.",
   "helpMode3Details": "• Khetha Izinto Zokwakha: Khetha iqoqo lezinto zokufunda\n• Setha Isikhawu: Lungisa isikhathi sokulinda phakathi kwemisho ngezinkinobho [-] [+] (3 imizuzwana - 60 imizuzwana)\n• Qala/Misa: Lawula iseshini ye-shadowing\n• Khuluma: Lalela izwi bese ukhuluma ngemuva\n• Impendulo: Amamaki okunemba (0-100) nokuboniswa kombala\n• Izimo Zokusesha: Hlunga izinto ezingapheli ngamathegi, izinto zamuva, izinhlamvu zokuqala",
-  "helpModeChatDesc": "Zijwayeze ingxoxo yangempela ngokuxoxa no-AI.",
-  "helpModeChatDetails": "• Ingxoxo ye-AI: Zijwayeze ingxoxo yangempela nomuntu ku-'Chat' kumathebhu angezansi\n• Izilungiselelo Zomuntu: Cacisa ngokukhululekile ubulili, igama, kanye nekhodi yolimi lomunye umuntu\n• Idrama yesimo se-GPS: Thola indawo yakho yamanje futhi uncoma izihloko zengxoxo ezifanele indawo\n• Izilimi ezi-2: Izimpendulo ze-AI ziboniswa ngokuhumusha ukukhulisa umphumela wokufunda\n• Ukuphathwa Kwerekhodi: Hlunga umlando wezingxoxo ezedlule bese ugcina imilayezo ethile ezingxoxweni njengezinto zokufunda",
+  "helpNote": "Bhala ngokukhululekile incazelo yegama, imisho eyisibonelo, izimo, njll.",
+  "helpNotebook": "Khetha ifolda lapho imiphumela ehunyushiwe izogcinwa khona.",
   "helpTabJson": "Ifomethi ye-JSON",
   "helpTabModes": "Incazelo Yezindlela",
   "helpTabQuickStart": "Ukuqalisa Ngokushesha",
   "helpTabTour": "Zithokozise",
+  "helpTag": "Faka amagama angukhiye okuhlunga noma okusesha ngokuhamba kwesikhathi.",
   "helpTitle": "Usizo & Umhlahlandlela",
   "helpTourDesc": "**Umbuthano ogqamile** uqondisa izici ezibalulekile.\n(Isb: Cindezela isikhathi eside ikhadi **Umbuthano ogqamile** okhomba kulo ukuze ulisuse.)",
   "hide": "Fihla",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Isibonelo: Incazelo yesimo, amagama afanayo njll.",
+  "hintTagExample": "Isibonelo: Ibhizinisi, ukuhamba...",
+  "homeTab": "Ukuhumusha",
   "importAdded": "Kwengeziwe: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} amafayela, kufakwe {entries} okusha.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Ngenisa Ifayela Le-JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Ifayela le-JSON elilodwa",
+  "importSourceFolder": "Ifolda (isakhiwo somtapo wolwazi ngolimi ngalunye)",
+  "importSourceTitle": "Khetha umthombo wokungenisa",
+  "importSourceZip": "Ifayela le-ZIP (ifolda egciniwe)",
   "importTotal": "Isamba: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Okuqukethwe Kokufakiwe",
+  "inputLanguage": "Ulimi wokufaka",
   "inputModeTitle": "Okokufaka",
   "intervalSeconds": "Isikhawu: {seconds} imizuzwana",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Sicela ufake i-imeyili evumelekile.",
   "kakaoContinue": "Qhubeka nge-Kakao",
+  "labelDetails": "Izilungiselelo Ezinemininingwane",
+  "labelFilterMaterial": "Izinsiza",
+  "labelFilterTag": "Ithegi",
   "labelLangCode": "Ikhodi yolimi (isb. en-US, ko-KR)",
-  "labelName": "Igama",
   "labelNote": "Inothi",
   "labelPOS": "Ingxenye yenkulumo",
-  "labelRole": "Indima",
   "labelSentence": "Umusho",
   "labelSentenceCollection": "Iqoqo lemisho",
   "labelSentenceType": "Uhlobo lomusho",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Ilayisha abahlanganyeli...",
   "location": "Indawo",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Ngena",
   "logout": "Phuma",
   "logoutConfirmMessage": "Uyafuna yini ukuphuma kule divayisi?",
   "logoutConfirmTitle": "Phuma",
   "male": "Owesilisa",
-  "manageParticipants": "Phatha abahlanganyeli",
   "manual": "Okokufaka Kwesandla",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Ulwazi Lwezinto Zokwakha",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Mina",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Ngenisa Izinto Zokwakha Kusuka Kudivayisi",
   "menuHelp": "Usizo",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Iqoqo lemisho yami",
   "myWordbook": "Isilulumagama sami",
   "neutral": "Ukungathathi hlangothi",
+  "newNotebookTitle": "Igama Elisha Lencwajana",
   "newSubjectName": "Isihloko Esisha Seqoqo Lamagama/Imisho",
   "next": "Okulandelayo",
-  "noDialogueHistory": "Ayikho umlando wengxoxo.",
-  "noInternetWarningMic": "Ayikho i-inthanethi. Ukukhuluma kungase kungatholakali ungaxhunyiwe ku-inthanethi.",
-  "noInternetWarningTranslate": "Ayikho i-inthanethi. Umsebenzi wokuhumusha awutholakali ungaxhunyiwe ku-inthanethi. Sicela usebenzise imodi yokubukeza.",
+  "noDataForLanguage": "Azikho izinto zokufunda zolimi olukhethiwe ku-DB yendawo. Sicela ulande izinto zokufunda noma ukhethe olunye ulimi.",
   "noMaterialsInCategory": "Azikho izinto ezikulolu hlobo.",
-  "noParticipantsFound": "Abekho abahlanganyeli abatholakele.",
   "noRecords": "Awekho amarekhodi okufunda olimi olukhethiwe",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Izwi alitholakalanga",
   "notSelected": "- Akukhethiwe - ",
+  "noteGuidance": "Lapho ufaka khona imininingwane eyengeziwe ukuze uthole ukuhumusha okunembile",
   "onlineLibraryCheckInternet": "Sicela uhlole uxhumano lwe-inthanethi noma uzame futhi ngemva kwesikhashana.",
   "onlineLibraryLoadFailed": "Ihlulekile ukulayisha izinto.",
   "onlineLibraryNoMaterials": "Azikho izinto ezitholakalayo.",
-  "participantDeleted": "Umhlanganyeli ususiwe.",
-  "participantRename": "Qamba Kabusha Igama Lomhlanganyeli",
-  "partner": "Umlingani",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Imodi Yomlingani",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Vula Izilungiselelo",
   "password": "Iphasiwedi",
   "passwordTooShort": "Iphasiwedi kufanele ibe nezinhlamvu ezingu-6 okungenani.",
   "perfect": "Kuhle!",
-  "personaFriend": "Umthengisi Wendawo",
-  "personaGuide": "Umqondisi Wokuvakasha",
-  "personaTeacher": "Uthisha WesiNgisi",
+  "pickGallery": "Khetha kusuka kugalari",
   "playAgain": "Dlala Futhi",
   "playbackFailed": "Ukudlala Kwehlulekile: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Isiphawulo",
   "posAdverb": "Isandiso",
+  "posArticle": "Isihlanganisi",
   "posConjunction": "Isihlanganisi",
   "posInterjection": "Isimemezelo",
   "posNoun": "Ibizo",
+  "posParticle": "Inxusa",
   "posPreposition": "Isandiso/Inhlanganiso",
   "posPronoun": "Isabizwana",
   "posVerb": "Isenzo",
   "practiceModeTitle": "Ukuzilolonga",
   "practiceWordsOnly": "Prakthiza Amagama Kuphela",
+  "processing": "Kuyalungiselelwa...",
   "progress": "Inqubekelaphambili: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Emenyu > Izilungiselelo Zolimi, qala ngokucacisa ulimi lwakho nolimi lokufunda.",
+  "quickStartStep1Title": "1. Ukusetha Ulimi",
+  "quickStartStep2Desc": "Dala ikhadi lakho lokufunda ngendlela oyithandayo ngokulandelana kokokufaka (imakhrofoni/ikhibhodi) -> ukuhumusha -> ukulondoloza.",
+  "quickStartStep2Title": "2. Ukuhamba Okuyisisekelo",
+  "quickStartStep3Desc": "Prakthiza ngengxoxo, bese usebenzisa ithebhu yokuzijwayeza ukuphimisa amagama ukuze uzilolonge ngokuphimisa amagama ngokwakho ngenkathi ubuka umbhalo.",
+  "quickStartStep3Title": "3. Ukusebenzisa Izindlela Ezihlukahlukene",
   "recentNItems": "Buka izinto ezingu-{count} ezisanda kwenziwa",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Cela ukuhumusha",
   "reset": "Setha kabusha",
   "resetPracticeHistory": "Setha Kabusha Umlando Wokuzijwayeza",
   "retry": "Zama Futhi?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Buyekeza",
-  "roleAi": "I-AI",
-  "roleThirdParty": "Umuntu wesithathu",
-  "roleUser": "Umsebenzisi",
   "save": "Londoloza",
+  "saveAsSentence": "Londoloza njengomshwana",
+  "saveAsWord": "Londoloza njengegama",
   "saveData": "Londoloza Idatha",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Londoloza kumlando wokuthwebula",
   "saveTranslationsFromSearch": "Zama ukulondoloza izinguqulo ezivela kumodi yokusesha",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Khetha isithombe ozosithwebula",
+  "scanLabel": "Thwebula",
   "score": "Ukunemba: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Khetha Ingxenye Yenkulumo",
-  "selectParticipants": "Khetha abahlanganyeli",
-  "selectSentenceType": "Khetha Uhlobo Lomusho",
   "selectStudyMaterial": "Khetha Izinto Zokwakha Zokufunda",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Umusho",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Bhalisa",
-  "similarTextFound": "Umbhalo Ofanayo Utholakele",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Yeqa",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Umthombo:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Ulimi Lokuqala",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Guqula izingxoxo zansuku zonke zibe izilimi zangaphandle ngokushesha! I-Talkie izorekhoda impilo yakho yezilimi.",
   "sourceLanguageLabel": "Ulimi Lwami (Umthombo)",
-  "speakNow": "Khuluma Manje!",
-  "speaker": "Isikhulumi",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Khetha isikhulumi",
-  "speakingPractice": "Prakthiza Ukukhuluma",
-  "startChat": "Qala ingxoxo",
-  "startPractice": "Qala Ukuzijwayeza",
   "startTutorial": "Qala Isifundo",
-  "startWarning": "Qaphela",
   "startsWith": "Iqala Ngenhlamvu",
   "statusCheckEmail": "Sicela uqinisekise i-imeyili ukuze uqedele ukuqinisekiswa.",
   "statusDownloading": "Iyalanda: {name}...",
-  "statusImportFailed": "Ihlulekile ukulayisha: {error}",
-  "statusImportSuccess": "{name} ilayishwe ngempumelelo",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Ukungena kukhanseliwe.",
-  "statusLoginFailed": "Ukungena kuhlulekile: {error}",
-  "statusLoginSuccess": "Ungene ngempumelelo.",
-  "statusLogoutSuccess": "Uphume ngempumelelo.",
-  "statusSignUpFailed": "Ukubhalisa kuhlulekile: {error}",
-  "statusSigningUp": "Iyabhalisa...",
-  "stopPractice": "Misa Ukuzijwayeza",
-  "studyComplete": "Ukufunda Kuqediwe",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Amarekhodi Okufunda ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Ihlulekile ukulayisha: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} ilayishwe ngempumelelo",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Ukungena kuhlulekile: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Ungene ngempumelelo.",
+  "statusLogoutSuccess": "Uphume ngempumelelo.",
+  "statusRequestFailed": "Ukuhumusha kwehlulekile: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Isicelo sokuhumusha siphumelele.",
+  "stopPractice": "Misa Ukuzijwayeza",
+  "studyLangNotFoundDesc": "Izinto ozikhethile azilusekeli ulimi lokufunda olusethiwe njengamanje ({targetLang}) futhi azikwazi ukulondolozwa endaweni yangakini. Ungathanda ukucela ukuhumushwa?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Ulimi lokufunda alutholakali",
   "styleFormal": "Okusesimweni",
   "styleInformal": "Okungesesimweni",
   "stylePolite": "Okunenhlonipho",
   "styleSlang": "Isilengiso",
-  "subject": "Isihloko:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Shintsha Izilimi",
-  "switchToAi": "Shintshela kumodi ye-AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Shintshela kumodi Yomlingani",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Ithumela idatha...",
-  "tabConversation": "Ingxoxo",
   "tabReview": "Buyekeza ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Yehlisa",
   "tooltipIncrease": "Nyusa",
   "tooltipSearch": "Sesha",
+  "tooltipSettingsConfirm": "Qinisekisa Izilungiselelo",
   "tooltipSpeaking": "Ukukhuluma",
   "tooltipStudyReview": "Funda+Buyekeza",
   "totalRecords": "Amarekhodi angu-{count} Esisonke (Buka Konke)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Humusha Manje",
   "translating": "Kuyahunyushwa...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Ulimi lokuhumusha",
   "translationLimitExceeded": "Umkhawulo Wokuhumusha Udluliwe",
   "translationLimitMessage": "Usethe wonke umkhawulo wakho wokuhumusha wamahhala wansuku zonke (izikhathi ezingu-5).\\n\\Ungathanda ukugcwalisa izikhathi ezingu-5 ngokushesha ngokubuka isikhangiso?",
   "translationLoaded": "Ukuhumusha okulondoloziwe kulayishiwe",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Inani lakho lokuhumusha ligcwaliswe izikhathi ezingu-5!",
+  "translationResult": "Umphumela Wokuhumusha",
   "translationResultHint": "Umphumela wokuhumusha - uyahleleka",
   "tryAgain": "Zama Futhi",
-  "tutorialAiChatDesc": "Prakthiza izingxoxo zempilo yangempela nezinhlamvu ze-AI.",
-  "tutorialAiChatTitle": "Ingxoxo ye-AI",
+  "ttsInstallGuide": "Sicela ufake idatha yolimi olufanele kuzilungiselelo ze-Android > Google TTS.",
+  "ttsMissing": "Injini yezwi yalolu limi ayifakiwe kudivayisi yakho.",
+  "ttsUnsupportedNatively": "Izilungiselelo zakho zangaphambilini zaleli divayisi azikusekeli ukukhishwa kwezwi lolu limi.",
   "tutorialContextDesc": "Ungalondoloza imisho efanayo ngokuhlukile ngokubhala isimo (isb: ekuseni, kusihlwa).",
   "tutorialContextTitle": "Ithegi Yesimo/Umongo",
   "tutorialLangSettingsDesc": "Setha ulimi lokuqala nolimi oluhlosiwe ongathanda ukuhumusha kulo.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Humusha umbhalo owufakile.",
   "tutorialTransTitle": "Humusha",
   "typeExclamation": "Isibabazo",
+  "typeIdiom": "Isisho",
   "typeImperative": "Isiyalezo",
+  "typeProverb": "Isaga",
   "typeQuestion": "Umbuzo",
   "typeStatement": "Isitatimende",
   "usageLimitTitle": "Umkhawulo Ufinyelelwe",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Buka Umhlahlandlela Oku-inthanethi",
   "voluntaryTranslations": "Ukuhumusha kokuzithandela",
   "watchAdAndRefill": "Buka Isikhangiso bese Ugcwalisa (+Izikhathi ezingu-5)",
+  "welcomeButton": "Qala",
+  "welcomeDesc": "Siyakwamukela ku-Talkie! Sekela zonke izilimi ezingu-80+ emhlabeni wonke ngo-100% wobuqotho, kanye nomklamo omusha we-3D we-premium nokusebenza okuthuthukisiwe ukuze uthole ulwazi oluphelele lokufunda.",
+  "welcomeTitle": "Siyakwamukela ku-Talkie!",
   "word": "Igama",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Vikela isizinda ngokukhuluma igama ngaphambi kokufika kwesitha.",
   "wordDefenseTitle": "Ukuzivikela Ngegama",
   "wordModeLabel": "Imodi Yamagama",
-  "yourPronunciation": "Ukuphinyiselwa Kwakho",
-  "ttsUnsupportedNatively": "Izilungiselelo zakho zangaphambilini zaleli divayisi azikusekeli ukukhishwa kwezwi lolu limi.",
-  "homeTab": "Ukuhumusha",
-  "welcomeTitle": "Siyakwamukela ku-Talkie!",
-  "welcomeDesc": "Siyakwamukela ku-Talkie! Sekela zonke izilimi ezingu-80+ emhlabeni wonke ngo-100% wobuqotho, kanye nomklamo omusha we-3D we-premium nokusebenza okuthuthukisiwe ukuze uthole ulwazi oluphelele lokufunda.",
-  "welcomeButton": "Qala",
-  "labelDetails": "Izilungiselelo Ezinemininingwane",
-  "translationResult": "Umphumela Wokuhumusha",
-  "inputContent": "Okuqukethwe Kokufakiwe",
-  "translateNow": "Humusha Manje",
-  "tooltipSettingsConfirm": "Qinisekisa Izilungiselelo",
-  "hintNoteExample": "Isibonelo: Incazelo yesimo, amagama afanayo njll.",
-  "hintTagExample": "Isibonelo: Ibhizinisi, ukuhamba...",
-  "addNew": "Engeza Okusha",
-  "newNotebookTitle": "Igama Elisha Lencwajana",
-  "enterNameHint": "Faka Igama",
-  "add": "Engeza",
-  "openSettings": "Vula Izilungiselelo",
-  "helpNotebook": "Khetha ifolda lapho imiphumela ehunyushiwe izogcinwa khona.",
-  "helpNote": "Bhala ngokukhululekile incazelo yegama, imisho eyisibonelo, izimo, njll.",
-  "helpTag": "Faka amagama angukhiye okuhlunga noma okusesha ngokuhamba kwesikhathi.",
-  "requestTranslation": "Cela ukuhumusha",
-  "statusRequestSuccess": "Isicelo sokuhumusha siphumelele.",
-  "statusRequestFailed": "Ukuhumusha kwehlulekile: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Ulimi lokufunda alutholakali",
-  "studyLangNotFoundDesc": "Izinto ozikhethile azilusekeli ulimi lokufunda olusethiwe njengamanje ({targetLang}) futhi azikwazi ukulondolozwa endaweni yangakini. Ungathanda ukucela ukuhumushwa?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Ukusetha Ulimi",
-  "quickStartStep1Desc": "Emenyu > Izilungiselelo Zolimi, qala ngokucacisa ulimi lwakho nolimi lokufunda.",
-  "quickStartStep2Title": "2. Ukuhamba Okuyisisekelo",
-  "quickStartStep2Desc": "Dala ikhadi lakho lokufunda ngendlela oyithandayo ngokulandelana kokokufaka (imakhrofoni/ikhibhodi) -> ukuhumusha -> ukulondoloza.",
-  "quickStartStep3Title": "3. Ukusebenzisa Izindlela Ezihlukahlukene",
-  "quickStartStep3Desc": "Prakthiza ngengxoxo, bese usebenzisa ithebhu yokuzijwayeza ukuphimisa amagama ukuze uzilolonge ngokuphimisa amagama ngokwakho ngenkathi ubuka umbhalo.",
-  "noteGuidance": "Lapho ufaka khona imininingwane eyengeziwe ukuze uthole ukuhumusha okunembile"
+  "yourPronunciation": "Ukuphinyiselwa Kwakho"
 }

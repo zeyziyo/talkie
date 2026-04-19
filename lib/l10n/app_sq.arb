@@ -1,32 +1,10 @@
 {
   "@@locale": "sq",
-  "basicWords": "Depo bazë e fjalëve",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Gjuha e hyrjes",
-  "translationLanguage": "Gjuha e përkthimit",
-  "simplifiedGuidance": "Konvertoni bisedat e përditshme në një gjuhë të huaj menjëherë! Talkie regjistron jetën tuaj gjuhësore.",
-  "noDataForLanguage": "Nuk ka të dhëna trajnimi për gjuhën e zgjedhur në DB-në lokale. Shkarkoni materialet ose zgjidhni një gjuhë tjetër.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Anulo",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Saktësia",
-  "ttsMissing": "Motori i zërit për këtë gjuhë nuk është instaluar në pajisjen tuaj.",
-  "ttsInstallGuide": "Ju lutemi instaloni të dhënat e gjuhës përkatëse te Cilësimet e Android > Google TTS.",
   "adLoading": "Po ngarkohet reklama. Ju lutemi provoni përsëri pas pak.",
+  "add": "Shto",
+  "addNew": "Shto të re",
   "addNewSubject": "Shto emër të ri",
-  "addParticipant": "Shto pjesëmarrës",
   "addTagHint": "Shto etiketë...",
   "alreadyHaveAccount": "Keni tashmë një llogari?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Depo bazë e fjalëve",
+  "basicWords": "Depo bazë e fjalëve",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Anulo",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Kallëzore",
   "casePossessive": "Gjinore",
   "casePossessivePronoun": "Përemër pronor",
   "caseReflexive": "Përemër vetor",
   "caseSubject": "Rasnore",
-  "chatAiChat": "Bisedë",
-  "chatAllConversations": "Të gjitha bisedat",
-  "chatChoosePersona": "Zgjidhni personazhin",
-  "chatEndMessage": "A jeni i sigurt që dëshironi ta përfundoni bisedën?",
-  "chatEndTitle": "Përfundo dhe ruaj bisedën",
-  "chatFailed": "Biseda dështoi: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Ekstrakt nga biseda ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Historia e bisedës",
-  "chatNew": "Bisedë e re",
-  "chatNewChat": "Bisedë e re",
-  "chatNoConversations": "Ende nuk ka biseda",
-  "chatSearchHint": "Kërko sipas titullit të bisedës...",
-  "chatNoteSearchHint": "Kërko sipas shënimit...",
-  "chatSaveAndExit": "Ruaj dhe dil",
-  "chatStartNewPrompt": "Fillo një bisedë të re për të praktikuar!",
-  "chatTypeHint": "Shkruaj një mesazh...",
-  "chatUntitled": "Bisedë pa titull",
   "checking": "Duke kontrolluar...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "A jeni i sigurt që dëshironi ta fshini këtë bisedë?\nBisedat e fshira nuk mund të rikthehen.",
-  "confirmDeleteParticipant": "A jeni i sigurt që dëshironi të fshini këtë pjesëmarrës?",
   "contextTagHint": "Shkruani situatën në mënyrë që të jetë e lehtë për t'u dalluar më vonë",
   "contextTagLabel": "Konteksti/Situata (opsionale) - P.sh.: Përshëndetje e mëngjesit, forma zyrtare",
   "copiedToClipboard": "U kopjua në kujtesën e shkurtër!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Ushtroni bisedën përmes sitcom. Zgjidhni dhe thoni përgjigjen e duhur.",
-  "dialogueQuestTitle": "Kërkimi i dialogut",
-  "disambiguationPrompt": "Si do të donit ta përktheni atë?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Zgjidh kuptimin",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Nuk keni llogari?",
-  "editParticipant": "Redakto pjesëmarrës",
   "email": "Email",
   "emailAlreadyInUse": "Ky email është tashmë i regjistruar. Ju lutemi identifkohuni ose përdorni opsionin e rivendosjes së fjalëkalimit.",
+  "enterNameHint": "Shkruaj emrin",
   "enterNewSubjectName": "Vendos emrin e ri",
   "enterSentenceHint": "Shkruaj një fjali...",
   "enterTextHint": "Vendosni tekstin për të përkthyer",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Teksti i njohur",
   "female": "Femër",
   "file": "Skedari:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Modaliteti i lojës",
   "gameOver": "Loja ka mbaruar",
   "gender": "Gjinia",
-  "labelFilterMaterial": "Materiale",
-  "labelFilterTag": "Etiketë",
   "generalTags": "Etiketa të përgjithshme",
   "getMaterials": "Merrni Materiale",
   "good": "Mirë",
   "googleContinue": "Vazhdo me Google",
-  "helpDialogueImportDesc": "Importoni një grup të tërë dialogësh si një skedar JSON.",
-  "helpDialogueImportDetails": "• Struktura JSON: Përdorni një varg `dialogues` në vend të `entries`\n• Rikuperimi automatik: Titulli i dialogut, personazhi dhe rendi i mesazheve restaurohen.\n• Vendndodhja: Dialogët e importuar shfaqen në skedën 'Histori' të modalitetit të bisedës AI.",
   "helpJsonDesc": "Për të importuar materialet e studimit për t'u përdorur në Modalitetin 3 si një skedar JSON, ndiqni formatin e mëposhtëm:",
-  "helpJsonTypeDialogue": "Dialog",
   "helpJsonTypeSentence": "Fjali",
   "helpJsonTypeWord": "Fjalë",
   "helpMode1Desc": "Filloni të mësoni gjuhë në mënyrën më intuitive me mikrofonin premium 3D dhe ikonën e madhe të tastierës.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Zgjidhni një grup burimesh: Përdorni 'Zgjidhni grup burimesh mësimore' ose 'Burimet online' nga menyja (⋮) në këndin e sipërm djathtas.\n• Kthejeni kartën: Verifikoni përkthimin me 'Shfaq/Fshih'.\n• Dëgjoni: Luaj sërish shqiptimin me ikonën e altoparlantit.\n• Mësimi i plotë: Trajtojeni si të plotë me shenjën e kontrollit (V).\n• Fshije: Fshijeni regjistrin duke shtypur gjatë kartën (Klikim i gjatë).\n• Kërko dhe filtro: Mbështetje për shiritin e kërkimit (kërkim inteligjent në kohë reale) dhe filtrat e etiketave dhe shkronjave fillestare.",
   "helpMode3Desc": "Dëgjoni fjalinë dhe përsëriteni (Shadowing) për të praktikuar shqiptimin.",
   "helpMode3Details": "• Zgjidhni materialin: Zgjidhni librin e burimeve për të studiuar\n• Vendosni intervalin: Rregulloni kohën e pritjes midis fjalive me butonat [-] [+](3 sekonda deri në 60 sekonda)\n• Fillimi/Ndalo: Kontrolloni seancën e hijezimit\n• Të folurit: Dëgjoni zërin dhe përsëriteni\n• Reagimet: Shfaqni rezultatin e saktësisë (0-100) dhe ngjyrat\n• Kushtet e kërkimit: Filtro objektivat e praktikës sipas etiketës, artikujve të fundit ose shkronjave fillestare",
-  "helpModeChatDesc": "Praktikoni biseda reale duke biseduar me një personazh AI.",
-  "helpModeChatDetails": "• Bisedë AI: Praktikoni biseda të vërteta me një personazh në menunë 'Bisedë' në shiritin e poshtëm të skedave.\n• Cilësimet e personazhit: Specifikoni lirisht gjininë, emrin dhe kodin e gjuhës së tjetrit.\n• Situata GPS: Njoh vendndodhjen time aktuale dhe rekomando tema bisede të përshtatshme për vendin.\n• Dy gjuhë: Përgjigjet e AI shfaqen me përkthime për të maksimizuar efektin e të mësuarit.\n• Menaxhimi i rekordeve: Filtroni historinë e kaluar të bisedave dhe ruani mesazhe specifike nga biseda si materiale studimore.",
+  "helpNote": "Regjistroni lirisht kuptimin, shembujt ose situatat e fjalëve.",
+  "helpNotebook": "Zgjidhni dosjen ku dëshironi të ruani rezultatet e përkthimit.",
   "helpTabJson": "Formati JSON",
   "helpTabModes": "Përshkrimi i Modit",
   "helpTabQuickStart": "Fillimi i Shpejtë",
   "helpTabTour": "Bëni një shëtitje",
+  "helpTag": "Fut çelësfjalët për t'i klasifikuar ose kërkuar më vonë.",
   "helpTitle": "Ndihmë & Udhëzime",
   "helpTourDesc": "**Rrethi i theksuar** do t'ju udhëzojë për funksionet kryesore.\n(Për shembull: Ju mund të fshini një kartë duke shtypur gjatë kartën e treguar nga **rrethi i theksuar**.)",
   "hide": "Fshih",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "P.sh.: shpjegim konteksti, homonime, etj.",
+  "hintTagExample": "P.sh.: biznes, udhëtime...",
+  "homeTab": "Përkthim",
   "importAdded": "U shtua: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "U importuan {files} skedarë, {entries} hyrje.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Importo skedarin JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Skedar i vetëm JSON",
+  "importSourceFolder": "Dosje (strukturë e bibliotekës sipas gjuhës)",
+  "importSourceTitle": "Zgjidhni burimin e importimit",
+  "importSourceZip": "Skedar ZIP (dosje e kompresuar)",
   "importTotal": "Totali: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Përmbajtja e futur",
+  "inputLanguage": "Gjuha e hyrjes",
   "inputModeTitle": "Hyrje",
   "intervalSeconds": "Intervali: {seconds} sekonda",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Ju lutemi futni një email të vlefshëm.",
   "kakaoContinue": "Vazhdo me Kakao",
+  "labelDetails": "Detaje të hollësishme",
+  "labelFilterMaterial": "Materiale",
+  "labelFilterTag": "Etiketë",
   "labelLangCode": "Kodi i gjuhës (psh. en-US, ko-KR)",
-  "labelName": "Emri",
   "labelNote": "Shënim",
   "labelPOS": "Pjesë e ligjëratës",
-  "labelRole": "Roli",
   "labelSentence": "Fjali",
   "labelSentenceCollection": "Koleksion Fjalish",
   "labelSentenceType": "Lloji i fjalisë",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Duke ngarkuar pjesëmarrësit...",
   "location": "Vendndodhja",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Hyr",
   "logout": "Dil",
   "logoutConfirmMessage": "A jeni i sigurt që dëshironi të dilni nga ky pajisje?",
   "logoutConfirmTitle": "Dil",
   "male": "Mashkull",
-  "manageParticipants": "Menaxho pjesëmarrësit",
   "manual": "Hyrje manuale",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Informacione materiale",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Unë",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Importo material nga pajisja",
   "menuHelp": "Ndihmë",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Koleksioni im i fjalive",
   "myWordbook": "Libri im i fjalëve",
   "neutral": "Asnjëanës",
+  "newNotebookTitle": "Emri i koleksionit të ri",
   "newSubjectName": "Emri i ri i grupit/fjalorit",
   "next": "Tjetër",
-  "noDialogueHistory": "Nuk ka histori dialogu.",
-  "noInternetWarningMic": "Nuk ka lidhje interneti. Njohja e zërit mund të mos jetë e mundur jashtë linje.",
-  "noInternetWarningTranslate": "Nuk ka lidhje interneti. Funksioni i përkthimit nuk mund të përdoret jashtë linje. Ju lutemi përdorni modalitetin e rishikimit.",
+  "noDataForLanguage": "Nuk ka të dhëna trajnimi për gjuhën e zgjedhur në DB-në lokale. Shkarkoni materialet ose zgjidhni një gjuhë tjetër.",
   "noMaterialsInCategory": "Nuk ka materiale në këtë kategori.",
-  "noParticipantsFound": "Nuk u gjetën pjesëmarrës të regjistruar.",
   "noRecords": "Nuk ka regjistrime studimi për gjuhën e zgjedhur",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Nuk u zbulua asnjë zë",
   "notSelected": "- Nuk është zgjedhur -",
+  "noteGuidance": "Aty ku jepni detaje shtesë për përkthim më të saktë",
   "onlineLibraryCheckInternet": "Ju lutemi kontrolloni lidhjen tuaj të internetit ose provoni përsëri më vonë.",
   "onlineLibraryLoadFailed": "Ngarkimi i materialeve dështoi.",
   "onlineLibraryNoMaterials": "Nuk ka materiale.",
-  "participantDeleted": "Pjesëmarrësi është fshirë.",
-  "participantRename": "Riemëro pjesëmarrësin",
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Modaliteti i partnerit",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Hap cilësimet",
   "password": "Fjalëkalimi",
   "passwordTooShort": "Fjalëkalimi duhet të jetë të paktën 6 karaktere.",
   "perfect": "E përkryer!",
-  "personaFriend": "Shok vendas",
-  "personaGuide": "Guida turistike",
-  "personaTeacher": "Mësues i anglishtes",
+  "pickGallery": "Zgjidh nga galeria",
   "playAgain": "Luaj përsëri",
   "playbackFailed": "Luajtja dështoi: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Mbiemër",
   "posAdverb": "Ndajfolje",
+  "posArticle": "Artikull",
   "posConjunction": "Lidhëz",
   "posInterjection": "Pasthirrmë",
   "posNoun": "Emër",
+  "posParticle": "Grimcë",
   "posPreposition": "Parafjalë",
   "posPronoun": "Përemër",
   "posVerb": "Folje",
   "practiceModeTitle": "Praktiko",
   "practiceWordsOnly": "Ushtroni vetëm fjalët",
+  "processing": "Duke u përpunuar...",
   "progress": "Progresi: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Në Menunë > Cilësimet e Gjuhës, specifikoni fillimisht gjuhën tuaj dhe gjuhën e mësimit.",
+  "quickStartStep1Title": "1. Përcakto Gjuhët",
+  "quickStartStep2Desc": "Krijoni kartat tuaja të personalizuara të studimit sipas renditjes: Hyrje (Mikrofon/Tastierë) -> Përkthim -> Ruaj.",
+  "quickStartStep2Title": "2. Rrjedha Bazë",
+  "quickStartStep3Desc": "Praktikohuni me bisedë, praktikoni shqiptimin duke parë tekstin në tabin e praktikës së shqiptimit.",
+  "quickStartStep3Title": "3. Shfrytëzo Modalitetet",
   "recentNItems": "Shiko {count} artikujt e krijuar së fundmi",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Kërko përkthim",
   "reset": "Rivendos",
   "resetPracticeHistory": "Rivendosni historikun e praktikës",
   "retry": "Provo përsëri?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Rishikim",
-  "roleAi": "AI",
-  "roleThirdParty": "Palë e tretë",
-  "roleUser": "Përdorues",
   "save": "Ruaj",
+  "saveAsSentence": "Ruaj si fjali",
+  "saveAsWord": "Ruaj si fjalë",
   "saveData": "Ruaj të dhënat",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Ruaj në historikun e skanimit",
   "saveTranslationsFromSearch": "Provoje të ruash përkthimet nga modaliteti i kërkimit",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Zgjidhni imazhin për ta skanuar",
+  "scanLabel": "Skano",
   "score": "Saktësia: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Zgjidh pjesën e ligjëratës",
-  "selectParticipants": "Zgjidhni pjesëmarrësit",
-  "selectSentenceType": "Zgjidh llojin e fjalisë",
   "selectStudyMaterial": "Zgjidh materialin e studimit",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Fjali",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Regjistrohu",
-  "similarTextFound": "U gjet tekst i ngjashëm",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Anashkalo",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Burimi:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Gjuha burimore",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Konvertoni bisedat e përditshme në një gjuhë të huaj menjëherë! Talkie regjistron jetën tuaj gjuhësore.",
   "sourceLanguageLabel": "Gjuha ime (Burimi)",
-  "speakNow": "Foli tani!",
-  "speaker": "Folësi",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Zgjidhni folësin",
-  "speakingPractice": "Ushtrim i të folurit",
-  "startChat": "Fillo bisedën",
-  "startPractice": "Fillo praktikën",
   "startTutorial": "Fillo udhëzuesin",
-  "startWarning": "Paralajmërim",
   "startsWith": "Shkronja fillestare",
   "statusCheckEmail": "Ju lutemi, verifikoni email-in për të përfunduar vërtetimin.",
   "statusDownloading": "Duke shkarkuar: {name}...",
-  "statusImportFailed": "Importimi dështoi: {error}",
-  "statusImportSuccess": "{name} importuar me sukses",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Hyrja u anulua.",
-  "statusLoginFailed": "Hyrja dështoi: {error}",
-  "statusLoginSuccess": "Hyrja u krye me sukses.",
-  "statusLogoutSuccess": "Keni dalë me sukses.",
-  "statusSignUpFailed": "Regjistrimi dështoi: {error}",
-  "statusSigningUp": "Duke u regjistruar...",
-  "stopPractice": "Ndalo praktikën",
-  "studyComplete": "Studimi u përfundua",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Regjistrime studimi ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Importimi dështoi: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} importuar me sukses",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Hyrja dështoi: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Hyrja u krye me sukses.",
+  "statusLogoutSuccess": "Keni dalë me sukses.",
+  "statusRequestFailed": "Kërkesa për përkthim dështoi: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Kërkesa për përkthim u krye me sukses.",
+  "stopPractice": "Ndalo praktikën",
+  "studyLangNotFoundDesc": "Materiali që keni zgjedhur nuk mbështet gjuhën e studimit të vendosur aktualisht ({targetLang}), prandaj nuk mund të ruhet lokalisht. Dëshironi të kërkoni përkthim?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Gjuha e studimit nuk mbështetet",
   "styleFormal": "Formale",
   "styleInformal": "Joformale",
   "stylePolite": "E sjellshme",
   "styleSlang": "Slang",
-  "subject": "Subjekti:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Shkëmbeni gjuhët",
-  "switchToAi": "Kalo në Modalitetin AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Kalo në Modalitetin e Partnerit",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Duke sinkronizuar të dhënat...",
-  "tabConversation": "Bisedë",
   "tabReview": "Rishikim ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Zvogëlo",
   "tooltipIncrease": "Rrit",
   "tooltipSearch": "Kërko",
+  "tooltipSettingsConfirm": "Konfirmo cilësimet",
   "tooltipSpeaking": "Të folurit",
   "tooltipStudyReview": "Studim+Rishikim",
   "totalRecords": "Gjithsej {count} regjistrime (shiko të gjitha)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Përkthe tani",
   "translating": "Duke përkthyer...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Gjuha e përkthimit",
   "translationLimitExceeded": "Kufiri i përkthimit tejkalohet",
   "translationLimitMessage": "Ju keni përdorur të gjitha përkthimet falas ditore (5 herë).\\n\\nA dëshironi të shikoni një reklamë dhe të rimbushni 5 herë menjëherë?",
   "translationLoaded": "Përkthimi i ruajtur u ngarkua",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Numri i përkthimeve u rimbush 5 herë!",
+  "translationResult": "Rezultati i përkthimit",
   "translationResultHint": "Rezultati i përkthimit - mund të modifikohet",
   "tryAgain": "Provoje përsëri",
-  "tutorialAiChatDesc": "Ushtroni bisedat e jetës reale me personazhet AI.",
-  "tutorialAiChatTitle": "Bisedë me AI",
+  "ttsInstallGuide": "Ju lutemi instaloni të dhënat e gjuhës përkatëse te Cilësimet e Android > Google TTS.",
+  "ttsMissing": "Motori i zërit për këtë gjuhë nuk është instaluar në pajisjen tuaj.",
+  "ttsUnsupportedNatively": "Ky postim audio nuk mbështetet nga cilësimet e këtij telefoni.",
   "tutorialContextDesc": "Edhe nëse është e njëjta fjali, mund ta ruani veçmas duke shkruar situatën (p.sh. mëngjes, mbrëmje).",
   "tutorialContextTitle": "Etiketa e situatës/kontekstit",
   "tutorialLangSettingsDesc": "Vendosni gjuhën burimore dhe gjuhën e synuar për të përkthyer.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Përktheni tekstin e vendosur.",
   "tutorialTransTitle": "Përktheje",
   "typeExclamation": "Thirrje",
+  "typeIdiom": "Frazëologji",
   "typeImperative": "Urdhërore",
+  "typeProverb": "Fjalë e urtë",
   "typeQuestion": "Pyetje",
   "typeStatement": "Deklaratë",
   "usageLimitTitle": "Arritja e kufirit",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Shikoni Udhëzuesin Online",
   "voluntaryTranslations": "Përkthime vullnetare",
   "watchAdAndRefill": "Shikoni reklamën dhe rimbushni (+5 herë)",
+  "welcomeButton": "Fillo",
+  "welcomeDesc": "Mirë se vini në Talkie! Ne mbështesim 100% të gjitha gjuhët, mbi 80 gjithsej, me integritet të plotë dhe ju ofrojmë një përvojë të përsosur mësimi me dizajnin tonë të ri premium 3D dhe performancën e optimizuar.",
+  "welcomeTitle": "Mirë se vini në Talkie!",
   "word": "Fjalë",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Mbroni bazën duke thënë fjalët përpara se të mbërrijnë armiqtë.",
   "wordDefenseTitle": "Mbrojtja e fjalëve",
   "wordModeLabel": "Modaliteti i fjalës",
-  "yourPronunciation": "Shqiptimi juaj",
-  "ttsUnsupportedNatively": "Ky postim audio nuk mbështetet nga cilësimet e këtij telefoni.",
-  "homeTab": "Përkthim",
-  "welcomeTitle": "Mirë se vini në Talkie!",
-  "welcomeDesc": "Mirë se vini në Talkie! Ne mbështesim 100% të gjitha gjuhët, mbi 80 gjithsej, me integritet të plotë dhe ju ofrojmë një përvojë të përsosur mësimi me dizajnin tonë të ri premium 3D dhe performancën e optimizuar.",
-  "welcomeButton": "Fillo",
-  "labelDetails": "Detaje të hollësishme",
-  "translationResult": "Rezultati i përkthimit",
-  "inputContent": "Përmbajtja e futur",
-  "translateNow": "Përkthe tani",
-  "tooltipSettingsConfirm": "Konfirmo cilësimet",
-  "hintNoteExample": "P.sh.: shpjegim konteksti, homonime, etj.",
-  "hintTagExample": "P.sh.: biznes, udhëtime...",
-  "addNew": "Shto të re",
-  "newNotebookTitle": "Emri i koleksionit të ri",
-  "enterNameHint": "Shkruaj emrin",
-  "add": "Shto",
-  "openSettings": "Hap cilësimet",
-  "helpNotebook": "Zgjidhni dosjen ku dëshironi të ruani rezultatet e përkthimit.",
-  "helpNote": "Regjistroni lirisht kuptimin, shembujt ose situatat e fjalëve.",
-  "helpTag": "Fut çelësfjalët për t'i klasifikuar ose kërkuar më vonë.",
-  "requestTranslation": "Kërko përkthim",
-  "statusRequestSuccess": "Kërkesa për përkthim u krye me sukses.",
-  "statusRequestFailed": "Kërkesa për përkthim dështoi: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Gjuha e studimit nuk mbështetet",
-  "studyLangNotFoundDesc": "Materiali që keni zgjedhur nuk mbështet gjuhën e studimit të vendosur aktualisht ({targetLang}), prandaj nuk mund të ruhet lokalisht. Dëshironi të kërkoni përkthim?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Përcakto Gjuhët",
-  "quickStartStep1Desc": "Në Menunë > Cilësimet e Gjuhës, specifikoni fillimisht gjuhën tuaj dhe gjuhën e mësimit.",
-  "quickStartStep2Title": "2. Rrjedha Bazë",
-  "quickStartStep2Desc": "Krijoni kartat tuaja të personalizuara të studimit sipas renditjes: Hyrje (Mikrofon/Tastierë) -> Përkthim -> Ruaj.",
-  "quickStartStep3Title": "3. Shfrytëzo Modalitetet",
-  "quickStartStep3Desc": "Praktikohuni me bisedë, praktikoni shqiptimin duke parë tekstin në tabin e praktikës së shqiptimit.",
-  "noteGuidance": "Aty ku jepni detaje shtesë për përkthim më të saktë"
+  "yourPronunciation": "Shqiptimi juaj"
 }

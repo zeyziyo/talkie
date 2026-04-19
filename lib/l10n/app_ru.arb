@@ -1,32 +1,10 @@
 {
   "@@locale": "ru",
-  "basicWords": "Базовое хранилище слов",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Язык ввода",
-  "translationLanguage": "Язык перевода",
-  "simplifiedGuidance": "Мгновенно переводите повседневные разговоры на иностранные языки! Talkie сохранит вашу языковую историю.",
-  "noDataForLanguage": "Для выбранного языка нет учебных материалов в локальной базе данных. Пожалуйста, загрузите материалы или выберите другой язык.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Отмена",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Точность",
-  "ttsMissing": "В вашем устройстве не установлен движок озвучивания для этого языка.",
-  "ttsInstallGuide": "Пожалуйста, установите языковой пакет в настройках Android > Google TTS.",
   "adLoading": "Загрузка рекламы. Пожалуйста, повторите попытку позже.",
+  "add": "Добавить",
+  "addNew": "Добавить новое",
   "addNewSubject": "Добавить новое название",
-  "addParticipant": "Добавить участника",
   "addTagHint": "Добавить тег...",
   "alreadyHaveAccount": "У вас уже есть аккаунт?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Базовый репозиторий слов",
+  "basicWords": "Базовое хранилище слов",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Отмена",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Винительный падеж",
   "casePossessive": "Притяжательный падеж",
   "casePossessivePronoun": "Притяжательное местоимение",
   "caseReflexive": "Возвратное местоимение",
   "caseSubject": "Именительный падеж",
-  "chatAiChat": "Чат",
-  "chatAllConversations": "Все беседы",
-  "chatChoosePersona": "Выбрать персонажа",
-  "chatEndMessage": "Вы хотите завершить диалог?",
-  "chatEndTitle": "Завершить и сохранить диалог",
-  "chatFailed": "Ошибка чата: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Извлечение из диалога ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "История",
-  "chatNew": "Новый чат",
-  "chatNewChat": "Новый чат",
-  "chatNoConversations": "Чатов пока нет",
-  "chatSearchHint": "Поиск по названию чата...",
-  "chatNoteSearchHint": "Поиск по заметкам...",
-  "chatSaveAndExit": "Сохранить и выйти",
-  "chatStartNewPrompt": "Начните новый диалог для практики!",
-  "chatTypeHint": "Напишите сообщение...",
-  "chatUntitled": "Чат без названия",
   "checking": "Проверка...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Удалить эту беседу?\nВосстановление удаленных бесед невозможно.",
-  "confirmDeleteParticipant": "Удалить этого участника?",
   "contextTagHint": "Укажите ситуацию, чтобы было легче различать в будущем",
   "contextTagLabel": "Контекст/ситуация (необязательно) - пример: приветствие, вежливая речь",
   "copiedToClipboard": "Скопировано в буфер обмена!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Практикуйте диалоги через ролевые игры. Выберите правильный ответ и произнесите его.",
-  "dialogueQuestTitle": "Квест диалогов",
-  "disambiguationPrompt": "В каком значении вы хотите перевести?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Выберите значение",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "У вас нет аккаунта?",
-  "editParticipant": "Редактировать участника",
   "email": "Электронная почта",
   "emailAlreadyInUse": "Этот адрес электронной почты уже зарегистрирован. Пожалуйста, войдите в систему или воспользуйтесь функцией восстановления пароля.",
+  "enterNameHint": "Введите имя",
   "enterNewSubjectName": "Введите новое название",
   "enterSentenceHint": "Введите предложение...",
   "enterTextHint": "Введите текст для перевода",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Распознанный текст",
   "female": "Женский",
   "file": "Файл:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Режим игры",
   "gameOver": "Игра окончена",
   "gender": "Пол",
-  "labelFilterMaterial": "Материалы",
-  "labelFilterTag": "Теги",
   "generalTags": "Общие теги",
   "getMaterials": "Получить материалы",
   "good": "Хорошо",
   "googleContinue": "Продолжить с Google",
-  "helpDialogueImportDesc": "Импортируйте целые наборы диалогов из JSON-файлов.",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "Для импорта материалов в режиме 3 создайте JSON файл следующей структуры:",
-  "helpJsonTypeDialogue": "Диалог",
   "helpJsonTypeSentence": "Предложение",
   "helpJsonTypeWord": "Слово",
   "helpMode1Desc": "Начните изучать языки самым интуитивно понятным способом с помощью премиального 3D-микрофона и больших значков клавиатуры.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Выбор учебника: используйте 'Выбрать учебник' или 'Онлайн-библиотеку' в меню (⋮) в правом верхнем углу\n• Переворот карточки: используйте 'Показать/скрыть', чтобы проверить перевод\n• Прослушивание: воспроизведение произношения с помощью значка динамика\n• Завершение обучения: отметьте (V), чтобы отметить обучение как завершенное\n• Удаление: нажмите и удерживайте карточку (Long Click), чтобы удалить запись\n• Поиск и фильтр: поддержка панели поиска (интеллектуальный поиск в реальном времени), тегов и фильтров начальных букв",
   "helpMode3Desc": "Практикуйте произношение, слушая и повторяя предложения (Shadowing).",
   "helpMode3Details": "• Выбор: Выберите учебный пакет\n• Интервал: [-] [+] пауза (3с-60с)\n• Старт/Стоп: Управление сессией\n• Говорить: Слушайте аудио и повторяйте\n• Оценка: Точность (0-100) с цветом\n• Повтор: Кнопка повтора, если голос не распознан",
-  "helpModeChatDesc": "Практикуйте разговорную речь с AI-персонажем.",
-  "helpModeChatDetails": "• AI Чат: попрактикуйтесь в реальных разговорах с персонажами в меню «Чат» на нижней панели вкладок.\n• Настройка персонажа: свободно указывайте пол, имя и языковой код собеседника.\n• GPS-ситуация: распознает ваше текущее местоположение и рекомендует темы для разговора, соответствующие этому месту.\n• 2 языка: ответы ИИ отображаются вместе с переводами, чтобы максимизировать эффект обучения.\n• Управление записями: фильтрация прошлых разговоров и сохранение определенных сообщений из разговора в качестве учебных материалов.",
+  "helpNote": "Свободно записывайте значения слов, примеры или ситуации.",
+  "helpNotebook": "Выберите папку для сохранения переведенных результатов.",
   "helpTabJson": "Формат JSON",
   "helpTabModes": "Режимы",
   "helpTabQuickStart": "Быстрый старт",
   "helpTabTour": "Тур",
+  "helpTag": "Введите ключевые слова для классификации или поиска позже.",
   "helpTitle": "Помощь и руководство",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "Скрыть",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Например: контекст, омонимы и т.д.",
+  "hintTagExample": "Например: Бизнес, Путешествия...",
+  "homeTab": "Перевод",
   "importAdded": "Добавлено: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Импортировано {files} файлов, {entries} элементов.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Импорт JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Одиночный JSON-файл",
+  "importSourceFolder": "Папка (структура библиотеки по языкам)",
+  "importSourceTitle": "Выберите источник импорта",
+  "importSourceZip": "ZIP-файл (сжатая папка)",
   "importTotal": "Всего: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Содержание ввода",
+  "inputLanguage": "Язык ввода",
   "inputModeTitle": "Ввод",
   "intervalSeconds": "Интервал: {seconds}с",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Введите действительный адрес электронной почты.",
   "kakaoContinue": "Продолжить с Kakao",
+  "labelDetails": "Детальные настройки",
+  "labelFilterMaterial": "Материалы",
+  "labelFilterTag": "Теги",
   "labelLangCode": "Код языка (например: en-US, ko-KR)",
-  "labelName": "Имя",
   "labelNote": "Заметка",
   "labelPOS": "Часть речи",
-  "labelRole": "Роль",
   "labelSentence": "Предложение",
   "labelSentenceCollection": "Сборник предложений",
   "labelSentenceType": "Тип предложения",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Загрузка участников...",
   "location": "Местоположение",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Войти",
   "logout": "Выйти",
   "logoutConfirmMessage": "Вы уверены, что хотите выйти из системы на этом устройстве?",
   "logoutConfirmTitle": "Выйти",
   "male": "Мужской",
-  "manageParticipants": "Управление участниками",
   "manual": "Вручную",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Информация о материале",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Я",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Импортировать материалы с устройства",
   "menuHelp": "Помощь",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Моя коллекция предложений",
   "myWordbook": "Мой словарь",
   "neutral": "Нейтральный",
+  "newNotebookTitle": "Название новой тетради",
   "newSubjectName": "Новое название темы/набора",
   "next": "Далее",
-  "noDialogueHistory": "Нет истории диалогов.",
-  "noInternetWarningMic": "Нет подключения к интернету. Распознавание голоса может быть недоступно в автономном режиме.",
-  "noInternetWarningTranslate": "Нет подключения к интернету. Функция перевода недоступна в автономном режиме. Используйте режим повторения.",
+  "noDataForLanguage": "Для выбранного языка нет учебных материалов в локальной базе данных. Пожалуйста, загрузите материалы или выберите другой язык.",
   "noMaterialsInCategory": "В этой категории нет материалов.",
-  "noParticipantsFound": "Участники не зарегистрированы.",
   "noRecords": "Нет записей для выбранного языка",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Голос не обнаружен",
   "notSelected": "- Не выбрано -",
+  "noteGuidance": "Введите детали для более точного перевода",
   "onlineLibraryCheckInternet": "Проверьте подключение к интернету или попробуйте позже.",
   "onlineLibraryLoadFailed": "Не удалось загрузить материалы.",
   "onlineLibraryNoMaterials": "Нет материалов.",
-  "participantDeleted": "Участник удален.",
-  "participantRename": "Переименовать участника",
-  "partner": "Партнер",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Режим партнера",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Открыть настройки",
   "password": "Пароль",
   "passwordTooShort": "Пароль должен содержать не менее 6 символов.",
   "perfect": "Идеально!",
-  "personaFriend": "Местный друг",
-  "personaGuide": "Гид для путешествий",
-  "personaTeacher": "Учитель английского",
+  "pickGallery": "Выбрать из галереи",
   "playAgain": "Играть снова",
   "playbackFailed": "Ошибка воспроизведения: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Прилагательное",
   "posAdverb": "Наречие",
+  "posArticle": "Артикль",
   "posConjunction": "Союз",
   "posInterjection": "Междометие",
   "posNoun": "Существительное",
+  "posParticle": "Частица",
   "posPreposition": "Предлог",
   "posPronoun": "Местоимение",
   "posVerb": "Глагол",
   "practiceModeTitle": "Практика",
   "practiceWordsOnly": "Практиковать только слова",
+  "processing": "Обработка...",
   "progress": "Прогресс: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Сначала укажите свой родной и изучаемый языки в Меню > Настройки языка.",
+  "quickStartStep1Title": "1. Настройка языка",
+  "quickStartStep2Desc": "Создавайте свои собственные учебные карточки в следующем порядке: Ввод (микрофон/клавиатура) -> Перевод -> Сохранение.",
+  "quickStartStep2Title": "2. Основной процесс",
+  "quickStartStep3Desc": "Практикуйтесь в чате, а также тренируйте произношение, просматривая текст и произнося его самостоятельно на вкладке \"Практика произношения\".",
+  "quickStartStep3Title": "3. Использование режимов",
   "recentNItems": "Показать последние {count} созданных",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Запросить перевод",
   "reset": "Сбросить",
   "resetPracticeHistory": "Сбросить историю практики",
   "retry": "Повторить?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Повторение",
-  "roleAi": "ИИ",
-  "roleThirdParty": "Третья сторона",
-  "roleUser": "Пользователь",
   "save": "Сохранить",
+  "saveAsSentence": "Сохранить как предложение",
+  "saveAsWord": "Сохранить как слово",
   "saveData": "Сохранить",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Сохранить в историю сканирования",
   "saveTranslationsFromSearch": "Сохраните переводы из режима поиска",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Выберите изображение для сканирования",
+  "scanLabel": "Сканировать",
   "score": "Точность: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Выберите часть речи",
-  "selectParticipants": "Выбрать участников",
-  "selectSentenceType": "Выберите тип предложения",
   "selectStudyMaterial": "Выберите материал",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Предложение",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Зарегистрироваться",
-  "similarTextFound": "Найден похожий текст",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Пропустить",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Источник:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Исходный язык",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Мгновенно переводите повседневные разговоры на иностранные языки! Talkie сохранит вашу языковую историю.",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "Говорите сейчас!",
-  "speaker": "Говорящий",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Выбор говорящего",
-  "speakingPractice": "Разговорная практика",
-  "startChat": "Начать чат",
-  "startPractice": "Начать практику",
   "startTutorial": "Начать тур",
-  "startWarning": "Внимание",
   "startsWith": "Начинается с",
   "statusCheckEmail": "Пожалуйста, проверьте свою электронную почту для завершения аутентификации.",
   "statusDownloading": "Загрузка: {name}...",
-  "statusImportFailed": "Ошибка импорта: {error}",
-  "statusImportSuccess": "{name} успешно импортирован",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Вход отменен.",
-  "statusLoginFailed": "Ошибка входа: {error}",
-  "statusLoginSuccess": "Вы успешно вошли в систему.",
-  "statusLogoutSuccess": "Вы вышли из системы.",
-  "statusSignUpFailed": "Ошибка регистрации: {error}",
-  "statusSigningUp": "Регистрация...",
-  "stopPractice": "Остановить",
-  "studyComplete": "Изучено",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Записи ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Ошибка импорта: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} успешно импортирован",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Ошибка входа: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Вы успешно вошли в систему.",
+  "statusLogoutSuccess": "Вы вышли из системы.",
+  "statusRequestFailed": "Ошибка запроса на перевод: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Запрос на перевод выполнен.",
+  "stopPractice": "Остановить",
+  "studyLangNotFoundDesc": "Выбранный вами материал не поддерживает установленный в данный момент учебный язык ({targetLang}), поэтому его нельзя сохранить локально. Хотите запросить перевод?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Учебный язык не поддерживается",
   "styleFormal": "Вежливый",
   "styleInformal": "Неформальный",
   "stylePolite": "Уважительный",
   "styleSlang": "Сленг",
-  "subject": "Тема:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Поменять языки",
-  "switchToAi": "Переключиться в режим ИИ",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Переключиться в режим партнера",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Синхронизация данных...",
-  "tabConversation": "Разговор",
   "tabReview": "Обзор ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Уменьшить",
   "tooltipIncrease": "Увеличить",
   "tooltipSearch": "Поиск",
+  "tooltipSettingsConfirm": "Подтвердить настройки",
   "tooltipSpeaking": "Говорение",
   "tooltipStudyReview": "Обучение+Повторение",
   "totalRecords": "Всего {count} записей (смотреть все)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Перевести сейчас",
   "translating": "Перевод...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Язык перевода",
   "translationLimitExceeded": "Превышен лимит переводов",
   "translationLimitMessage": "Вы использовали все бесплатные ежедневные переводы (5 раз).\\n\\nПосмотреть рекламу и немедленно пополнить счет на 5 раз?",
   "translationLoaded": "Загружен сохраненный перевод",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Количество переводов пополнено на 5 раз!",
+  "translationResult": "Результат перевода",
   "translationResultHint": "Результат перевода - можно редактировать",
   "tryAgain": "Попробуйте снова",
-  "tutorialAiChatDesc": "Практикуйте реальные разговоры с персонажем ИИ.",
-  "tutorialAiChatTitle": "Чат с ИИ",
+  "ttsInstallGuide": "Пожалуйста, установите языковой пакет в настройках Android > Google TTS.",
+  "ttsMissing": "В вашем устройстве не установлен движок озвучивания для этого языка.",
+  "ttsUnsupportedNatively": "Этот язык не поддерживается для озвучивания на вашем устройстве.",
   "tutorialContextDesc": "Добавьте контекст (например, Утро), чтобы различать похожие предложения.",
   "tutorialContextTitle": "Тег контекста",
   "tutorialLangSettingsDesc": "Установите исходный и целевой языки для перевода.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Нажмите здесь, чтобы перевести текст.",
   "tutorialTransTitle": "Перевод",
   "typeExclamation": "Восклицание",
+  "typeIdiom": "Идиома",
   "typeImperative": "Повеление",
+  "typeProverb": "Пословица/поговорка",
   "typeQuestion": "Вопрос",
   "typeStatement": "Утверждение",
   "usageLimitTitle": "Превышен лимит использования",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Смотреть онлайн-гид",
   "voluntaryTranslations": "Добровольные переводы",
   "watchAdAndRefill": "Посмотреть рекламу и пополнить (+5 раз)",
+  "welcomeButton": "Начать",
+  "welcomeDesc": "Добро пожаловать в Talkie! Мы поддерживаем более 80 языков со всего мира со 100% точностью, предлагая вам идеальный опыт обучения с новым премиальным 3D-дизайном и оптимизированной производительностью.",
+  "welcomeTitle": "Добро пожаловать в Talkie!",
   "word": "Слово",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Защитите базу, произнося слова до того, как враги доберутся до нее.",
   "wordDefenseTitle": "Защита слов",
   "wordModeLabel": "Режим слов",
-  "yourPronunciation": "Ваше произношение",
-  "ttsUnsupportedNatively": "Этот язык не поддерживается для озвучивания на вашем устройстве.",
-  "homeTab": "Перевод",
-  "welcomeTitle": "Добро пожаловать в Talkie!",
-  "welcomeDesc": "Добро пожаловать в Talkie! Мы поддерживаем более 80 языков со всего мира со 100% точностью, предлагая вам идеальный опыт обучения с новым премиальным 3D-дизайном и оптимизированной производительностью.",
-  "welcomeButton": "Начать",
-  "labelDetails": "Детальные настройки",
-  "translationResult": "Результат перевода",
-  "inputContent": "Содержание ввода",
-  "translateNow": "Перевести сейчас",
-  "tooltipSettingsConfirm": "Подтвердить настройки",
-  "hintNoteExample": "Например: контекст, омонимы и т.д.",
-  "hintTagExample": "Например: Бизнес, Путешествия...",
-  "addNew": "Добавить новое",
-  "newNotebookTitle": "Название новой тетради",
-  "enterNameHint": "Введите имя",
-  "add": "Добавить",
-  "openSettings": "Открыть настройки",
-  "helpNotebook": "Выберите папку для сохранения переведенных результатов.",
-  "helpNote": "Свободно записывайте значения слов, примеры или ситуации.",
-  "helpTag": "Введите ключевые слова для классификации или поиска позже.",
-  "requestTranslation": "Запросить перевод",
-  "statusRequestSuccess": "Запрос на перевод выполнен.",
-  "statusRequestFailed": "Ошибка запроса на перевод: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Учебный язык не поддерживается",
-  "studyLangNotFoundDesc": "Выбранный вами материал не поддерживает установленный в данный момент учебный язык ({targetLang}), поэтому его нельзя сохранить локально. Хотите запросить перевод?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Настройка языка",
-  "quickStartStep1Desc": "Сначала укажите свой родной и изучаемый языки в Меню > Настройки языка.",
-  "quickStartStep2Title": "2. Основной процесс",
-  "quickStartStep2Desc": "Создавайте свои собственные учебные карточки в следующем порядке: Ввод (микрофон/клавиатура) -> Перевод -> Сохранение.",
-  "quickStartStep3Title": "3. Использование режимов",
-  "quickStartStep3Desc": "Практикуйтесь в чате, а также тренируйте произношение, просматривая текст и произнося его самостоятельно на вкладке \"Практика произношения\".",
-  "noteGuidance": "Введите детали для более точного перевода"
+  "yourPronunciation": "Ваше произношение"
 }

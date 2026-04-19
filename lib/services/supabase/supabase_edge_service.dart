@@ -23,46 +23,6 @@ class SupabaseEdgeService {
     }
   }
 
-  static Future<Map<String, dynamic>> processChat({
-    required String text,
-    required String context,
-    required String targetLang,
-    String? sourceLang, // Phase 180: Use user's UI language for translation target
-    List<Map<String, dynamic>>? history,
-  }) async {
-    try {
-      final response = await SupabaseHelper.client.functions.invoke(
-        'process-chat',
-        body: {
-          'text': text,
-          'context': context,
-          'targetLang': targetLang,
-          'sourceLang': sourceLang, // UI language
-          'history': history,
-        },
-      ).timeout(const Duration(seconds: 20));
-      return Map<String, dynamic>.from(response.data);
-    } catch (e) {
-      throw Exception('Chat Failed (Timeout or Network Error): $e');
-    }
-  }
-
-  static Future<List<String>> suggestTitles({
-    required List<Map<String, dynamic>> history,
-  }) async {
-    try {
-      final response = await SupabaseHelper.client.functions.invoke(
-        'suggest-titles',
-        body: {'history': history},
-      ).timeout(const Duration(seconds: 15));
-      final data = response.data as Map<String, dynamic>;
-      final titles = data['titles'] as List<dynamic>?;
-      return titles?.cast<String>() ?? [];
-    } catch (e) {
-      return [];
-    }
-  }
-
   static Future<Map<String, dynamic>> getRecommendations({
     required List<Map<String, dynamic>> history,
     required String sourceLang,

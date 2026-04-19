@@ -90,7 +90,6 @@
     *   `id` (TEXT PK): UUID (세션 고유 ID).
     *   `user_id` (TEXT): 사용자 식별 ID.
     *   `title` (TEXT NN): 시나리오 제목 (예: "카페에서 주문하기").
-    *   `persona` (TEXT): AI 페르소나 이름/설명.
     *   `location` (TEXT): 대화 장소 정보.
     *   `note` (TEXT): 대화 관련 메모.
     *   `created_at` (TEXT NN): 대화 시작 시간 (이력 정렬용).

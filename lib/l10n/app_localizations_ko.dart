@@ -9,68 +9,19 @@ class AppLocalizationsKo extends AppLocalizations {
   AppLocalizationsKo([String locale = 'ko']) : super(locale);
 
   @override
-  String get basicWords => '기본 단어 저장소';
-
-  @override
-  String get scanLabel => '스캔';
-
-  @override
-  String get scanInstructions => '스캔할 이미지를 선택하세요';
-
-  @override
-  String get pickGallery => '갤러리에서 선택';
-
-  @override
-  String get extractedText => '인식된 텍스트';
-
-  @override
-  String get saveAsWord => '단어로 저장';
-
-  @override
-  String get saveAsSentence => '문장으로 저장';
-
-  @override
-  String get inputLanguage => '입력 언어';
-
-  @override
-  String get translationLanguage => '번역 언어';
-
-  @override
-  String get simplifiedGuidance =>
-      '\'언어 설정\' 메뉴에서 \'내 언어\'와 \'학습 언어\'를 지정한 다음 사용해주세요.';
-
-  @override
-  String get noDataForLanguage =>
-      '선택하신 언어의 학습 자료가 로컬 DB에 없습니다. 자료를 다운로드하거나 다른 언어를 선택해 주세요.';
-
-  @override
-  String versionLabel(String version) {
-    return '버전: $version';
-  }
-
-  @override
-  String get developerContact => '문의: talkie.help@gmail.com';
-
-  @override
-  String get cancel => '취소';
-
-  @override
   String get accuracy => '정확도';
-
-  @override
-  String get ttsMissing => '이 언어의 음성 엔진이 기기에 설치되어 있지 않습니다.';
-
-  @override
-  String get ttsInstallGuide => '안드로이드 설정 > Google TTS에서 해당 언어 데이터를 설치해 주세요.';
 
   @override
   String get adLoading => '광고를 불러오는 중입니다. 잠시 후 다시 시도해주세요.';
 
   @override
-  String get addNewSubject => '새 제목 추가';
+  String get add => '추가';
 
   @override
-  String get addParticipant => '참가자 추가';
+  String get addNew => '새 추가';
+
+  @override
+  String get addNewSubject => '새 제목 추가';
 
   @override
   String get addTagHint => '태그 추가...';
@@ -103,6 +54,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get basicWordRepository => '기본 단어 저장소';
 
   @override
+  String get basicWords => '기본 단어 저장소';
+
+  @override
+  String get cancel => '취소';
+
+  @override
   String get caseObject => '목적격';
 
   @override
@@ -118,61 +75,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get caseSubject => '주격';
 
   @override
-  String get chatAiChat => '채팅';
-
-  @override
-  String get chatAllConversations => '전체 대화';
-
-  @override
-  String get chatChoosePersona => '페르소나 선택';
-
-  @override
-  String get chatEndMessage => '대화를 종료하시겠습니까?';
-
-  @override
-  String get chatEndTitle => '대화 종료 및 저장';
-
-  @override
-  String chatFailed(Object error) {
-    return '채팅 실패: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return '대화 발췌 ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => '대화 기록';
-
-  @override
-  String get chatNew => '새 대화';
-
-  @override
-  String get chatNewChat => '새 대화';
-
-  @override
-  String get chatNoConversations => '아직 대화가 없습니다';
-
-  @override
-  String get chatSearchHint => '대화 제목으로 검색...';
-
-  @override
-  String get chatNoteSearchHint => '주석으로 검색...';
-
-  @override
-  String get chatSaveAndExit => '저장 후 종료';
-
-  @override
-  String get chatStartNewPrompt => '연습을 위해 새 대화를 시작해보세요!';
-
-  @override
-  String get chatTypeHint => '메시지를 입력하세요...';
-
-  @override
-  String get chatUntitled => '제목 없는 대화';
-
-  @override
   String get checking => '확인 중...';
 
   @override
@@ -183,13 +85,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get confirmDelete => '이 학습 기록을 삭제하시겠습니까?';
-
-  @override
-  String get confirmDeleteConversation =>
-      '이 대화를 삭제하시겠습니까?\n삭제된 대화는 복구할 수 없습니다.';
-
-  @override
-  String get confirmDeleteParticipant => '이 참가자를 삭제하시겠습니까?';
 
   @override
   String get contextTagHint => '나중에 구분하기 쉽도록 상황을 적어주세요';
@@ -227,28 +122,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get deleteRecord => '레코드 삭제';
 
   @override
-  String get dialogueQuestDesc => '상황극을 통해 대화 연습을 하세요. 적절한 답변을 선택하고 말해보세요.';
-
-  @override
-  String get dialogueQuestTitle => '대화 퀘스트';
-
-  @override
-  String get disambiguationPrompt => '어떤 의미로 번역하시겠습니까?';
-
-  @override
-  String get disambiguationTitle => '의미 선택';
+  String get developerContact => '문의: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => '계정이 없으신가요?';
-
-  @override
-  String get editParticipant => '참가자 수정';
 
   @override
   String get email => '이메일';
 
   @override
   String get emailAlreadyInUse => '이미 등록된 이메일입니다. 로그인하거나 비밀번호 찾기를 이용해주세요.';
+
+  @override
+  String get enterNameHint => '이름을 입력하세요';
 
   @override
   String get enterNewSubjectName => '새 제목 입력';
@@ -285,6 +171,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get errors => '오류:';
+
+  @override
+  String get extractedText => '인식된 텍스트';
 
   @override
   String get female => '여성';
@@ -344,12 +233,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get gender => '성별';
 
   @override
-  String get labelFilterMaterial => '자료집';
-
-  @override
-  String get labelFilterTag => '태그';
-
-  @override
   String get generalTags => '일반 태그';
 
   @override
@@ -362,17 +245,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get googleContinue => 'Google로 계속하기';
 
   @override
-  String get helpDialogueImportDesc => 'JSON 파일로 전체 대화 세트를 가져옵니다.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON 구조: `entries` 배열 내에 `speaker`를 지정하여 대화 흐름을 구성합니다.\n• 참가자 설정: `participants` 정보를 정확히 입력하면 AI 채팅 모드에서 페르소나와 언어가 자동으로 설정됩니다.\n• 위치: 가져온 대화는 AI 채팅 모드의 \'기록\' 탭에 나타납니다.';
-
-  @override
   String get helpJsonDesc => '학습 자료를 JSON 파일로 대량으로 가져오는 방법입니다.';
-
-  @override
-  String get helpJsonTypeDialogue => '대화 (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => '문장 (Sentence)';
@@ -404,11 +277,10 @@ class AppLocalizationsKo extends AppLocalizations {
       '• 자료집 선택: 우측 상단 메뉴(⋮)에서 \'학습 자료집 선택\' 이용\n• 간격 설정: [-] [+] 버튼으로 문장 간 대기 시간 조정 (3초~60초)\n• 시작/정지: 중앙의 시작/종료 버튼으로 세션 제어\n• 말하기: 원어민 음성을 듣고 큰 소리로 따라하기\n• 피드백: 정확도 점수(0-100) 및 색상 표시\n• 필터 설정: 설정(톱니바퀴) 아이콘에서 태그별 연습 범위 지정';
 
   @override
-  String get helpModeChatDesc => 'AI 페르소나와 대화하며 실전 회화를 연습하세요.';
+  String get helpNote => '단어의 뜻이나 예문, 상황 등을 자유롭게 기록하세요.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI 채팅: 하단 탭 바의 \'채팅\' 메뉴에서 페르소나와 실전 대화 연습\n• 페르소나 설정: 상대방의 성별, 이름, 언어 코드를 자유롭게 지정\n• GPS 상황극: 현재 내 위치를 인식하여 장소에 어울리는 대화 주제 추천\n• 2개 국어: AI의 답변이 번역과 함께 표시되어 학습 효과 극대화\n• 기록 관리: 과거 대화 내역 필터링 및 대화 중 특정 메시지 학습 자료로 저장';
+  String get helpNotebook => '번역된 결과를 저장할 폴더를 선택합니다.';
 
   @override
   String get helpTabJson => 'JSON 형식';
@@ -423,6 +295,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get helpTabTour => '체험하기';
 
   @override
+  String get helpTag => '나중에 분류하거나 검색하기 위한 키워드를 입력하세요.';
+
+  @override
   String get helpTitle => '도움말 & 가이드';
 
   @override
@@ -431,6 +306,15 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get hide => '숨기기';
+
+  @override
+  String get hintNoteExample => '예: 상황 설명, 동음이의어 등';
+
+  @override
+  String get hintTagExample => '예: 비즈니스, 여행...';
+
+  @override
+  String get homeTab => '번역';
 
   @override
   String importAdded(int count) {
@@ -443,23 +327,6 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       '동일한 제목의 자료가 이미 존재합니다. 제목을 변경한 후 다시 시도해주세요.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -475,6 +342,11 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files개 파일, $entries개 항목을 가져왔습니다.';
+  }
+
+  @override
   String get importJsonFile => 'JSON 파일 불러오기';
 
   @override
@@ -486,12 +358,30 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => '단일 JSON 파일';
+
+  @override
+  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
+
+  @override
+  String get importSourceTitle => '가져오기 원본 선택';
+
+  @override
+  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
+
+  @override
   String importTotal(int count) {
     return '전체: $count개';
   }
 
   @override
   String get importing => '자료 가져오는 중...';
+
+  @override
+  String get inputContent => '입력 내용';
+
+  @override
+  String get inputLanguage => '입력 언어';
 
   @override
   String get inputModeTitle => '입력';
@@ -508,19 +398,22 @@ class AppLocalizationsKo extends AppLocalizations {
   String get kakaoContinue => '카카오로 계속하기';
 
   @override
-  String get labelLangCode => '언어 코드 (예: en-US, ko-KR)';
+  String get labelDetails => '상세 설정';
 
   @override
-  String get labelName => '이름';
+  String get labelFilterMaterial => '자료집';
+
+  @override
+  String get labelFilterTag => '태그';
+
+  @override
+  String get labelLangCode => '언어 코드 (예: en-US, ko-KR)';
 
   @override
   String get labelNote => '주석 입력';
 
   @override
   String get labelPOS => '품사';
-
-  @override
-  String get labelRole => '역할';
 
   @override
   String get labelSentence => '문장';
@@ -571,9 +464,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get listening => '듣는 중...';
 
   @override
-  String get loadingParticipants => '참가자 불러오는 중...';
-
-  @override
   String get location => '위치';
 
   @override
@@ -592,9 +482,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get male => '남성';
 
   @override
-  String get manageParticipants => '참가자 관리';
-
-  @override
   String get manual => '수동 입력';
 
   @override
@@ -602,9 +489,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get materialInfo => '자료 정보';
-
-  @override
-  String get me => '나';
 
   @override
   String get menuDeviceImport => '기기에서 자료 가져오기';
@@ -672,27 +556,20 @@ class AppLocalizationsKo extends AppLocalizations {
   String get neutral => '중성';
 
   @override
+  String get newNotebookTitle => '새 자료집 이름';
+
+  @override
   String get newSubjectName => '새 단어장/문장집 제목';
 
   @override
   String get next => '다음';
 
   @override
-  String get noDialogueHistory => '대화 내역이 없습니다.';
-
-  @override
-  String get noInternetWarningMic =>
-      '인터넷 연결이 없습니다. 오프라인 상태에서는 음성 인식이 불가능할 수 있습니다.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      '인터넷 연결이 없습니다. 오프라인 상태에서는 번역 기능을 사용할 수 없습니다. 복습 모드를 이용해 주세요.';
+  String get noDataForLanguage =>
+      '선택하신 언어의 학습 자료가 로컬 DB에 없습니다. 자료를 다운로드하거나 다른 언어를 선택해 주세요.';
 
   @override
   String get noMaterialsInCategory => '이 카테고리에는 자료가 없습니다.';
-
-  @override
-  String get noParticipantsFound => '등록된 참가자가 없습니다.';
 
   @override
   String get noRecords => '선택한 언어의 학습 기록이 없습니다';
@@ -713,6 +590,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get notSelected => '- 선택 안함 -';
 
   @override
+  String get noteGuidance => '정확한 번역을 위하여 추가적인 내용을 입력하는 곳';
+
+  @override
   String get onlineLibraryCheckInternet => '인터넷 연결을 확인하거나 나중에 다시 시도해주세요.';
 
   @override
@@ -722,34 +602,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get onlineLibraryNoMaterials => '자료가 없습니다.';
 
   @override
-  String get participantDeleted => '참가자가 삭제되었습니다.';
-
-  @override
-  String get participantRename => '참가자 이름 변경';
-
-  @override
-  String get partner => '파트너';
-
-  @override
-  String get partnerMode => '파트너 모드';
+  String get openSettings => '설정 열기';
 
   @override
   String get password => '비밀번호';
 
   @override
-  String get passwordTooShort => '비밀번호는 6자 이상이어야 합니다.';
+  String get passwordTooShort => '비밀번호가 너무 짧습니다';
 
   @override
   String get perfect => '완벽해요!';
 
   @override
-  String get personaFriend => '현지인 친구';
-
-  @override
-  String get personaGuide => '여행 가이드';
-
-  @override
-  String get personaTeacher => '영어 선생님';
+  String get pickGallery => '갤러리에서 선택';
 
   @override
   String get playAgain => '다시 하기';
@@ -769,6 +634,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get posAdverb => '부사';
 
   @override
+  String get posArticle => '관사';
+
+  @override
   String get posConjunction => '접속사';
 
   @override
@@ -776,6 +644,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get posNoun => '명사';
+
+  @override
+  String get posParticle => '접사/조사';
 
   @override
   String get posPreposition => '전치사/조사';
@@ -793,9 +664,32 @@ class AppLocalizationsKo extends AppLocalizations {
   String get practiceWordsOnly => '단어만 연습';
 
   @override
+  String get processing => '처리 중...';
+
+  @override
   String progress(int current, int total) {
     return '진행률: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc => '메뉴 > 언어 설정에서 내 언어와 학습 언어를 먼저 지정하세요.';
+
+  @override
+  String get quickStartStep1Title => '1. 언어 설정';
+
+  @override
+  String get quickStartStep2Desc =>
+      '입력(마이크/키보드) -> 번역 -> 저장 순서로 나만의 학습 카드를 만드세요.';
+
+  @override
+  String get quickStartStep2Title => '2. 기본 흐름';
+
+  @override
+  String get quickStartStep3Desc =>
+      '번역된 단어와 문장을 내 학습 목록에서 복습하고, 발음 연습 탭에서 직접 말하며 연습하세요.';
+
+  @override
+  String get quickStartStep3Title => '3. 모드 활용';
 
   @override
   String recentNItems(int count) {
@@ -820,6 +714,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get refresh => '새로고침';
 
   @override
+  String get requestTranslation => '번역 요청하기';
+
+  @override
   String get reset => '초기화';
 
   @override
@@ -840,16 +737,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get reviewModeTitle => '복습';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => '제삼자';
-
-  @override
-  String get roleUser => '사용자';
-
-  @override
   String get save => '저장';
+
+  @override
+  String get saveAsSentence => '문장으로 저장';
+
+  @override
+  String get saveAsWord => '단어로 저장';
 
   @override
   String get saveData => '데이터 저장';
@@ -860,6 +754,9 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => '스캔 이력에 저장';
+
+  @override
   String get saveTranslationsFromSearch => '검색 모드에서 번역을 저장해보세요';
 
   @override
@@ -867,6 +764,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get saving => '저장 중...';
+
+  @override
+  String get scanInstructions => '스캔할 이미지를 선택하세요';
+
+  @override
+  String get scanLabel => '스캔';
 
   @override
   String score(String score) {
@@ -913,16 +816,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get selectPOS => '품사 선택';
 
   @override
-  String get selectParticipants => '참가자 선택';
-
-  @override
-  String get selectSentenceType => '문장 종류 선택';
-
-  @override
   String get selectStudyMaterial => '학습 자료 선택';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => '문장';
@@ -931,130 +825,83 @@ class AppLocalizationsKo extends AppLocalizations {
   String get signUp => '회원가입';
 
   @override
-  String get similarTextFound => '유사한 텍스트 발견';
+  String get simplifiedGuidance =>
+      '\'언어 설정\' 메뉴에서 \'내 언어\'와 \'학습 언어\'를 지정한 다음 사용해주세요.';
 
   @override
-  String get skip => '건너뛰기';
-
-  @override
-  String get source => '출처:';
-
-  @override
-  String get sourceLanguage => '원본 언어';
-
-  @override
-  String get sourceLanguageLabel => '내 언어 (Source)';
-
-  @override
-  String get speakNow => '지금 말하세요!';
-
-  @override
-  String get speaker => '화자';
-
-  @override
-  String get speakerSelect => '발화자 선택';
-
-  @override
-  String get speakingPractice => '말하기 연습';
-
-  @override
-  String get startChat => '대화 시작';
-
-  @override
-  String get startPractice => '연습 시작';
+  String get sourceLanguageLabel => '내 언어';
 
   @override
   String get startTutorial => '튜토리얼 시작';
 
   @override
-  String get startWarning => '주의';
+  String get startsWith => '시작하는 단어';
 
   @override
-  String get startsWith => '시작 글자';
+  String get statusCheckEmail => '이메일을 확인해주세요';
 
   @override
-  String get statusCheckEmail => '이메일을 확인하여 인증을 완료해주세요.';
-
-  @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return '다운로드 중: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return '가져오기 실패: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
-    return '$name 가져오기 완료';
+  String statusImportSuccess(String name) {
+    return '가져오기 성공: $name';
   }
 
   @override
-  String get statusLoggingIn => '로그인 중...';
-
-  @override
-  String get statusLoginCancelled => '로그인이 취소되었습니다.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return '로그인 실패: $error';
   }
 
   @override
-  String get statusLoginSuccess => '로그인에 성공했습니다.';
+  String get statusLoginSuccess => '로그인 성공';
 
   @override
-  String get statusLogoutSuccess => '로그아웃되었습니다.';
+  String get statusLogoutSuccess => '로그아웃 성공';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return '회원가입 실패: $error';
+  String statusRequestFailed(String error) {
+    return '번역 요청 실패: $error';
   }
 
   @override
-  String get statusSigningUp => '회원가입 중...';
+  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
 
   @override
   String get stopPractice => '연습 중지';
 
   @override
-  String get studyComplete => '학습 완료';
-
-  @override
-  String studyRecords(int count) {
-    return '학습 기록 ($count)';
+  String studyLangNotFoundDesc(String targetLang) {
+    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
   }
 
   @override
-  String get styleFormal => '존댓말';
+  String get studyLangNotFoundTitle => '학습 언어 미지원';
 
   @override
-  String get styleInformal => '반말';
+  String get styleFormal => '격식체';
 
   @override
-  String get stylePolite => '정중함';
+  String get styleInformal => '반말/비격식체';
 
   @override
-  String get styleSlang => '슬랭/속어';
+  String get stylePolite => '정중체';
 
   @override
-  String get subject => '제목:';
+  String get styleSlang => '슬랭/은어';
 
   @override
   String get swapLanguages => '언어 전환';
 
   @override
-  String get switchToAi => 'AI 모드로 전환';
-
-  @override
-  String get switchToPartner => '파트너 모드로 전환';
-
-  @override
   String get syncingData => '데이터 동기화 중...';
-
-  @override
-  String get tabConversation => '대화';
 
   @override
   String tabReview(int count) {
@@ -1117,6 +964,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tooltipSearch => '검색';
 
   @override
+  String get tooltipSettingsConfirm => '설정 확인';
+
+  @override
   String get tooltipSpeaking => '말하기';
 
   @override
@@ -1129,6 +979,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get translate => '번역';
+
+  @override
+  String get translateNow => '지금 번역하기';
 
   @override
   String get translating => '번역 중...';
@@ -1145,6 +998,9 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => '번역 언어';
+
+  @override
   String get translationLimitExceeded => '번역 한도 초과';
 
   @override
@@ -1158,16 +1014,22 @@ class AppLocalizationsKo extends AppLocalizations {
   String get translationRefilled => '번역 횟수가 5회 충전되었습니다!';
 
   @override
+  String get translationResult => '번역 결과';
+
+  @override
   String get translationResultHint => '번역 결과 - 수정 가능함';
 
   @override
   String get tryAgain => '다시 시도';
 
   @override
-  String get tutorialAiChatDesc => 'AI 페르소나와 실전 대화를 연습해 보세요.';
+  String get ttsInstallGuide => '안드로이드 설정 > Google TTS에서 해당 언어 데이터를 설치해 주세요.';
 
   @override
-  String get tutorialAiChatTitle => 'AI 채팅';
+  String get ttsMissing => '이 언어의 음성 엔진이 기기에 설치되어 있지 않습니다.';
+
+  @override
+  String get ttsUnsupportedNatively => '이 기기의 기본 설정에서는 이 언어의 음성 출력을 지원하지 않습니다.';
 
   @override
   String get tutorialContextDesc =>
@@ -1273,7 +1135,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get typeExclamation => '감탄문';
 
   @override
+  String get typeIdiom => '관용구';
+
+  @override
   String get typeImperative => '명령문';
+
+  @override
+  String get typeProverb => '속담/격언';
 
   @override
   String get typeQuestion => '의문문';
@@ -1288,6 +1156,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get useExistingText => '기존 텍스트 사용';
 
   @override
+  String versionLabel(String version) {
+    return '버전: $version';
+  }
+
+  @override
   String get viewOnlineGuide => '온라인 가이드 보기';
 
   @override
@@ -1295,6 +1168,16 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => '광고 보고 충전 (+5회)';
+
+  @override
+  String get welcomeButton => '시작하기';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie에 오신 것을 환영합니다! 전 세계 80개 이상의 모든 언어를 100% 무결성으로 지원하며, 새로운 프리미엄 3D 디자인과 최적화된 성능으로 완벽한 학습 경험을 선사합니다.';
+
+  @override
+  String get welcomeTitle => 'Talkie에 오신 것을 환영합니다!';
 
   @override
   String get word => '단어';
@@ -1310,107 +1193,4 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get yourPronunciation => '내 발음';
-
-  @override
-  String get ttsUnsupportedNatively => '이 기기의 기본 설정에서는 이 언어의 음성 출력을 지원하지 않습니다.';
-
-  @override
-  String get homeTab => '번역';
-
-  @override
-  String get welcomeTitle => 'Talkie에 오신 것을 환영합니다!';
-
-  @override
-  String get welcomeDesc =>
-      'Talkie에 오신 것을 환영합니다! 전 세계 80개 이상의 모든 언어를 100% 무결성으로 지원하며, 새로운 프리미엄 3D 디자인과 최적화된 성능으로 완벽한 학습 경험을 선사합니다.';
-
-  @override
-  String get welcomeButton => '시작하기';
-
-  @override
-  String get labelDetails => '상세 설정';
-
-  @override
-  String get translationResult => '번역 결과';
-
-  @override
-  String get inputContent => '입력 내용';
-
-  @override
-  String get translateNow => '지금 번역하기';
-
-  @override
-  String get tooltipSettingsConfirm => '설정 확인';
-
-  @override
-  String get hintNoteExample => '예: 상황 설명, 동음이의어 등';
-
-  @override
-  String get hintTagExample => '예: 비즈니스, 여행...';
-
-  @override
-  String get addNew => '새 추가';
-
-  @override
-  String get newNotebookTitle => '새 자료집 이름';
-
-  @override
-  String get enterNameHint => '이름을 입력하세요';
-
-  @override
-  String get add => '추가';
-
-  @override
-  String get openSettings => '설정 열기';
-
-  @override
-  String get helpNotebook => '번역된 결과를 저장할 폴더를 선택합니다.';
-
-  @override
-  String get helpNote => '단어의 뜻이나 예문, 상황 등을 자유롭게 기록하세요.';
-
-  @override
-  String get helpTag => '나중에 분류하거나 검색하기 위한 키워드를 입력하세요.';
-
-  @override
-  String get requestTranslation => '번역 요청하기';
-
-  @override
-  String get statusRequestSuccess => '번역 요청이 완료되었습니다.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return '번역 요청 실패: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => '학습 언어 미지원';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return '선택하신 자료는 현재 설정된 학습 언어($targetLang)를 지원하지 않아 로컬에 저장할 수 없습니다. 번역을 요청하시겠습니까?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. 언어 설정';
-
-  @override
-  String get quickStartStep1Desc => '메뉴 > 언어 설정에서 내 언어와 학습 언어를 먼저 지정하세요.';
-
-  @override
-  String get quickStartStep2Title => '2. 기본 흐름';
-
-  @override
-  String get quickStartStep2Desc =>
-      '입력(마이크/키보드) -> 번역 -> 저장 순서로 나만의 학습 카드를 만드세요.';
-
-  @override
-  String get quickStartStep3Title => '3. 모드 활용';
-
-  @override
-  String get quickStartStep3Desc =>
-      '채팅으로 연습하고, 발음 연습 탭에서 텍스트를 보고 직접 발음하며 연습하세요.';
-
-  @override
-  String get noteGuidance => '정확한 번역을 위하여 추가적인 내용을 입력하는 곳';
 }

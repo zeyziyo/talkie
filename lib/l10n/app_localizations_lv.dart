@@ -9,53 +9,20 @@ class AppLocalizationsLv extends AppLocalizations {
   AppLocalizationsLv([String locale = 'lv']) : super(locale);
 
   @override
-  String get basicWords => 'Pamata vārdu repozitorijs';
-
-  @override
-  String get inputLanguage => 'Ievades valoda';
-
-  @override
-  String get translationLanguage => 'Tulkošanas valoda';
-
-  @override
-  String get simplifiedGuidance =>
-      'Mirklī pārvērtiet ikdienas sarunas svešvalodā! Talkie ierakstīs jūsu valodas dzīvi.';
-
-  @override
-  String get noDataForLanguage =>
-      'Izvēlētajai valodai mācību dati lokālajā datubāzē nav pieejami. Lūdzu, lejupielādējiet datus vai izvēlieties citu valodu.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Atcelt';
-
-  @override
   String get accuracy => 'Precizitāte';
-
-  @override
-  String get ttsMissing =>
-      'Šajā valodā nav instalēta runas dzinēja jūsu ierīcē.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Lūdzu, instalējiet valodas datus Android iestatījumos > Google TTS.';
 
   @override
   String get adLoading =>
       'Reklāma tiek ielādēta. Lūdzu, mēģiniet vēlreiz vēlāk.';
 
   @override
-  String get addNewSubject => 'Pievienot jaunu nosaukumu';
+  String get add => 'Pievienot';
 
   @override
-  String get addParticipant => 'Pievienot dalībnieku';
+  String get addNew => 'Pievienot jaunu';
+
+  @override
+  String get addNewSubject => 'Pievienot jaunu nosaukumu';
 
   @override
   String get addTagHint => 'Pievienot tagu...';
@@ -88,6 +55,12 @@ class AppLocalizationsLv extends AppLocalizations {
   String get basicWordRepository => 'Pamata vārdu repozitorijs';
 
   @override
+  String get basicWords => 'Pamata vārdu repozitorijs';
+
+  @override
+  String get cancel => 'Atcelt';
+
+  @override
   String get caseObject => 'Akuzatīvs';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get caseSubject => 'Nominatīvs';
 
   @override
-  String get chatAiChat => 'Tērzēšana';
-
-  @override
-  String get chatAllConversations => 'Visas sarunas';
-
-  @override
-  String get chatChoosePersona => 'Izvēlieties personu';
-
-  @override
-  String get chatEndMessage => 'Vai vēlaties beigt sarunu?';
-
-  @override
-  String get chatEndTitle => 'Beigt un saglabāt sarunu';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Tērzēšana neizdevās: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Sarunas izvilkums ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Sarunu vēsture';
-
-  @override
-  String get chatNew => 'Jauna saruna';
-
-  @override
-  String get chatNewChat => 'Jauna saruna';
-
-  @override
-  String get chatNoConversations => 'Vēl nav sarunu';
-
-  @override
-  String get chatSearchHint => 'Meklēt pēc tēmas nosaukuma...';
-
-  @override
-  String get chatNoteSearchHint => 'Meklēt piezīmēs...';
-
-  @override
-  String get chatSaveAndExit => 'Saglabāt un iziet';
-
-  @override
-  String get chatStartNewPrompt => 'Sāciet jaunu sarunu, lai praktizētu!';
-
-  @override
-  String get chatTypeHint => 'Ierakstiet ziņojumu...';
-
-  @override
-  String get chatUntitled => 'Saruna bez nosaukuma';
-
-  @override
   String get checking => 'Pārbauda...';
 
   @override
@@ -168,13 +86,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Vai tiešām vēlaties dzēst šo mācību ierakstu?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Vai vēlaties izdzēst šo sarunu?\nIzdzēstās sarunas nevar atgūt.';
-
-  @override
-  String get confirmDeleteParticipant => 'Vai vēlaties dzēst šo dalībnieku?';
 
   @override
   String get contextTagHint =>
@@ -214,23 +125,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get deleteRecord => 'Dzēst ierakstu';
 
   @override
-  String get dialogueQuestDesc =>
-      'Praktizējiet sarunas, izmantojot situācijas. Atlasiet un izrunājiet piemērotas atbildes.';
-
-  @override
-  String get dialogueQuestTitle => 'Dialoga meklējums';
-
-  @override
-  String get disambiguationPrompt => 'Kuru nozīmi vēlaties tulkot?';
-
-  @override
-  String get disambiguationTitle => 'Izvēlieties nozīmi';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Vai jums nav konta?';
-
-  @override
-  String get editParticipant => 'Rediģēt dalībnieku';
 
   @override
   String get email => 'E-pasts';
@@ -238,6 +136,9 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Šis e-pasts jau ir reģistrēts. Lūdzu, piesakieties vai izmantojiet paroles atgūšanas funkciju.';
+
+  @override
+  String get enterNameHint => 'Ievadiet vārdu';
 
   @override
   String get enterNewSubjectName => 'Ievadiet jaunu nosaukumu';
@@ -276,6 +177,9 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get errors => 'Kļūdas:';
+
+  @override
+  String get extractedText => 'Atpazītais teksts';
 
   @override
   String get female => 'Sieviete';
@@ -335,12 +239,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get gender => 'Dzimums';
 
   @override
-  String get labelFilterMaterial => 'Materiāli';
-
-  @override
-  String get labelFilterTag => 'Atzīme';
-
-  @override
   String get generalTags => 'Vispārīgās atzīmes';
 
   @override
@@ -353,19 +251,8 @@ class AppLocalizationsLv extends AppLocalizations {
   String get googleContinue => 'Turpināt ar Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Importējiet veselu dialogu kopumu kā JSON failu.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON struktūra: izmantojiet `dialogues` masīvu `entries` vietā\n• Automātiska atkopšana: tiek atjaunots dialoga nosaukums, persona un ziņojumu secība.\n• Atrašanās vieta: importētie dialogi parādās AI tērzēšanas režīma cilnē \'Vēsture\'.';
-
-  @override
   String get helpJsonDesc =>
       'Lai importētu mācību materiālus, kas jāizmanto 3. režīmā, kā JSON failu, ievērojiet šo formātu:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dialogs';
 
   @override
   String get helpJsonTypeSentence => 'Teikums';
@@ -398,12 +285,11 @@ class AppLocalizationsLv extends AppLocalizations {
       '• Materiālu izvēle: atlasiet materiālu kopumu, ko mācīties\n• Intervāla iestatīšana: pielāgojiet gaidīšanas laiku starp teikumiem ar pogām [-] [+](3 s ~ 60 s)\n• Sākums/Pārtraukums: ēnošanas sesijas kontrole\n• Runāšana: klausieties un atkārtojiet balsi\n• Atsauksmes: precizitātes rādītājs (0–100) un krāsu displejs\n• Meklēšanas nosacījumi: filtrēšanas mērķi pēc atzīmēm, jaunākajiem vienumiem, sākuma burtiem';
 
   @override
-  String get helpModeChatDesc =>
-      'Praktizējiet sarunas reālajā dzīvē, sarunājoties ar AI personu.';
+  String get helpNote =>
+      'Brīvi pierakstiet vārda nozīmi, piemērus vai kontekstu.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI tērzēšana: praktizējiet sarunas reālajā dzīvē ar personām izvēlnē \'Tērzēšana\' apakšējā cilnes joslā\n• Personas iestatījumi: brīvi norādiet otras personas dzimumu, vārdu un valodas kodu\n• GPS situācijas spēle: atpazīst manu pašreizējo atrašanās vietu un iesaka tērzēšanas tēmas, kas piemērotas vietai\n• Divvalodu: AI atbildes tiek parādītas kopā ar tulkojumiem, lai maksimāli palielinātu mācību efektu\n• Ierakstu pārvaldība: filtrējiet pagātnes sarunu vēsturi un saglabājiet noteiktus ziņojumus sarunās kā mācību materiālus';
+  String get helpNotebook => 'Izvēlieties mapi, kurā saglabāt tulkojumus.';
 
   @override
   String get helpTabJson => 'JSON formāts';
@@ -418,6 +304,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get helpTabTour => 'Apskatīt';
 
   @override
+  String get helpTag =>
+      'Ievadiet atslēgvārdus, lai tos vēlāk varētu kārtot vai meklēt.';
+
+  @override
   String get helpTitle => 'Palīdzība un ceļveži';
 
   @override
@@ -426,6 +316,16 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get hide => 'Slēpt';
+
+  @override
+  String get hintNoteExample =>
+      'Piemēram: konteksta skaidrojums, homonīmi utt.';
+
+  @override
+  String get hintTagExample => 'Piemēram: bizness, ceļojumi...';
+
+  @override
+  String get homeTab => 'Tulkot';
 
   @override
   String importAdded(int count) {
@@ -438,23 +338,6 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Materiāls ar šādu nosaukumu jau pastāv. Lūdzu, mainiet nosaukumu un mēģiniet vēlreiz.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -470,6 +353,11 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Importēti $files faili, $entries vienumi.';
+  }
+
+  @override
   String get importJsonFile => 'Importēt JSON failu';
 
   @override
@@ -481,12 +369,30 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Viens JSON fails';
+
+  @override
+  String get importSourceFolder => 'Mape (bibliotēkas struktūra pēc valodas)';
+
+  @override
+  String get importSourceTitle => 'Atlasiet importēšanas avotu';
+
+  @override
+  String get importSourceZip => 'ZIP fails (saspiesta mape)';
+
+  @override
   String importTotal(int count) {
     return 'Kopā: $count';
   }
 
   @override
   String get importing => 'Importē...';
+
+  @override
+  String get inputContent => 'Ievades saturs';
+
+  @override
+  String get inputLanguage => 'Ievades valoda';
 
   @override
   String get inputModeTitle => 'Ievade';
@@ -503,19 +409,22 @@ class AppLocalizationsLv extends AppLocalizations {
   String get kakaoContinue => 'Turpināt ar Kakao';
 
   @override
-  String get labelLangCode => 'Valodas kods (piem., en-US, ko-KR)';
+  String get labelDetails => 'Detalizēti iestatījumi';
 
   @override
-  String get labelName => 'Vārds';
+  String get labelFilterMaterial => 'Materiāli';
+
+  @override
+  String get labelFilterTag => 'Atzīme';
+
+  @override
+  String get labelLangCode => 'Valodas kods (piem., en-US, ko-KR)';
 
   @override
   String get labelNote => 'Piezīme';
 
   @override
   String get labelPOS => 'Runas daļa';
-
-  @override
-  String get labelRole => 'Loma';
 
   @override
   String get labelSentence => 'Teikums';
@@ -566,9 +475,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get listening => 'Klausās...';
 
   @override
-  String get loadingParticipants => 'Ielādē dalībniekus...';
-
-  @override
   String get location => 'Atrašanās vieta';
 
   @override
@@ -588,9 +494,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get male => 'Vīrietis';
 
   @override
-  String get manageParticipants => 'Pārvaldīt dalībniekus';
-
-  @override
   String get manual => 'Manuāla ievade';
 
   @override
@@ -598,9 +501,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get materialInfo => 'Informācija par materiālu';
-
-  @override
-  String get me => 'Es';
 
   @override
   String get menuDeviceImport => 'Importēt materiālus no ierīces';
@@ -668,27 +568,20 @@ class AppLocalizationsLv extends AppLocalizations {
   String get neutral => 'Neitrāls';
 
   @override
+  String get newNotebookTitle => 'Jaunas piezīmju grāmatiņas nosaukums';
+
+  @override
   String get newSubjectName => 'Jauns vārdu krājuma/teikumu krājuma nosaukums';
 
   @override
   String get next => 'Tālāk';
 
   @override
-  String get noDialogueHistory => 'Nav sarunu vēstures.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Nav interneta savienojuma. Bezsaistē balss atpazīšana var nebūt pieejama.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Nav interneta savienojuma. Bezsaistē tulkošanas funkcija nav pieejama. Lūdzu, izmantojiet atkārtošanas režīmu.';
+  String get noDataForLanguage =>
+      'Izvēlētajai valodai mācību dati lokālajā datubāzē nav pieejami. Lūdzu, lejupielādējiet datus vai izvēlieties citu valodu.';
 
   @override
   String get noMaterialsInCategory => 'Šajā kategorijā nav materiālu.';
-
-  @override
-  String get noParticipantsFound => 'Nav reģistrētu dalībnieku.';
 
   @override
   String get noRecords => 'Nav mācību ierakstu atlasītajā valodā';
@@ -709,6 +602,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get notSelected => '- Nav atlasīts -';
 
   @override
+  String get noteGuidance =>
+      'Kur ievadāt papildu informāciju precīzākam tulkojumam';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Pārbaudiet interneta savienojumu vai mēģiniet vēlreiz vēlāk.';
 
@@ -719,16 +616,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Nav materiālu.';
 
   @override
-  String get participantDeleted => 'Dalībnieks ir dzēsts.';
-
-  @override
-  String get participantRename => 'Pārdēvēt dalībnieku';
-
-  @override
-  String get partner => 'Partneris';
-
-  @override
-  String get partnerMode => 'Partnera režīms';
+  String get openSettings => 'Atvērt iestatījumus';
 
   @override
   String get password => 'Parole';
@@ -740,13 +628,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get perfect => 'Lieliski!';
 
   @override
-  String get personaFriend => 'Vietējais draugs';
-
-  @override
-  String get personaGuide => 'Ceļvedis';
-
-  @override
-  String get personaTeacher => 'Angļu valodas skolotājs';
+  String get pickGallery => 'Izvēlēties no galerijas';
 
   @override
   String get playAgain => 'Spēlēt vēlreiz';
@@ -766,6 +648,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get posAdverb => 'Apstākļa vārds';
 
   @override
+  String get posArticle => 'Noteiktais artikuls';
+
+  @override
   String get posConjunction => 'Saiklis';
 
   @override
@@ -773,6 +658,9 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get posNoun => 'Lietvārds';
+
+  @override
+  String get posParticle => 'Daļiņa';
 
   @override
   String get posPreposition => 'Prievārds/Partikula';
@@ -790,9 +678,33 @@ class AppLocalizationsLv extends AppLocalizations {
   String get practiceWordsOnly => 'Praktizēt tikai vārdus';
 
   @override
+  String get processing => 'Apstrāde...';
+
+  @override
   String progress(int current, int total) {
     return 'Norise: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Vispirms izvēlieties savu un mācību valodu izvēlnē > valodas iestatījumi.';
+
+  @override
+  String get quickStartStep1Title => '1. valodas iestatīšana';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Izveidojiet savas mācību kartītes šādā secībā: ievade (mikrofons/tastatūra) -> tulkošana -> saglabāšana.';
+
+  @override
+  String get quickStartStep2Title => '2. pamata plūsma';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Trenējieties tērzējot un praktizējiet izrunu, skatoties tekstu cilnē izrunas praktizēšana.';
+
+  @override
+  String get quickStartStep3Title => '3. režīma izmantošana';
 
   @override
   String recentNItems(int count) {
@@ -817,6 +729,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get refresh => 'Atjaunot';
 
   @override
+  String get requestTranslation => 'Pieprasīt tulkojumu';
+
+  @override
   String get reset => 'Atiestatīt';
 
   @override
@@ -837,16 +752,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get reviewModeTitle => 'Pārskats';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Trešā puse';
-
-  @override
-  String get roleUser => 'Lietotājs';
-
-  @override
   String get save => 'Saglabāt';
+
+  @override
+  String get saveAsSentence => 'Saglabāt kā teikumu';
+
+  @override
+  String get saveAsWord => 'Saglabāt kā vārdu';
 
   @override
   String get saveData => 'Saglabāt datus';
@@ -857,6 +769,9 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Saglabāt skenēšanas vēsturē';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Mēģiniet saglabāt tulkojumus no meklēšanas režīma';
 
@@ -865,6 +780,12 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get saving => 'Saglabā...';
+
+  @override
+  String get scanInstructions => 'Atlasiet skenējamo attēlu';
+
+  @override
+  String get scanLabel => 'Skenēt';
 
   @override
   String score(String score) {
@@ -911,16 +832,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get selectPOS => 'Izvēlieties runas daļu';
 
   @override
-  String get selectParticipants => 'Atlasiet dalībniekus';
-
-  @override
-  String get selectSentenceType => 'Izvēlieties teikuma veidu';
-
-  @override
   String get selectStudyMaterial => 'Atlasiet mācību materiālu';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Teikums';
@@ -929,43 +841,14 @@ class AppLocalizationsLv extends AppLocalizations {
   String get signUp => 'Reģistrēties';
 
   @override
-  String get similarTextFound => 'Atrasts līdzīgs teksts';
-
-  @override
-  String get skip => 'Izlaist';
-
-  @override
-  String get source => 'Avots:';
-
-  @override
-  String get sourceLanguage => 'Pirmvaloda';
+  String get simplifiedGuidance =>
+      'Mirklī pārvērtiet ikdienas sarunas svešvalodā! Talkie ierakstīs jūsu valodas dzīvi.';
 
   @override
   String get sourceLanguageLabel => 'Mana valoda (Avots)';
 
   @override
-  String get speakNow => 'Runājiet tagad!';
-
-  @override
-  String get speaker => 'Runātājs';
-
-  @override
-  String get speakerSelect => 'Atlasiet runātāju';
-
-  @override
-  String get speakingPractice => 'Runāšanas praktizēšana';
-
-  @override
-  String get startChat => 'Sākt sarunu';
-
-  @override
-  String get startPractice => 'Sākt praktizēties';
-
-  @override
   String get startTutorial => 'Sākt apmācību';
-
-  @override
-  String get startWarning => 'Brīdinājums';
 
   @override
   String get startsWith => 'Sākas ar';
@@ -975,28 +858,22 @@ class AppLocalizationsLv extends AppLocalizations {
       'Lūdzu, pārbaudiet savu e-pastu, lai pabeigtu verifikāciju.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Lejupielāde: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Importēšana neizdevās: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name importēšana pabeigta';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Pieteikšanās ir atcelta.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Pieteikšanās neizdevās: $error';
   }
 
@@ -1007,23 +884,23 @@ class AppLocalizationsLv extends AppLocalizations {
   String get statusLogoutSuccess => 'Izrakstīšanās veiksmīga.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Reģistrācija neizdevās: $error';
+  String statusRequestFailed(String error) {
+    return 'Tulkošanas pieprasījums neizdevās: $error';
   }
 
   @override
-  String get statusSigningUp => 'Reģistrēšanās...';
+  String get statusRequestSuccess => 'Tulkošanas pieprasījums ir pabeigts.';
 
   @override
   String get stopPractice => 'Pārtraukt praktizēties';
 
   @override
-  String get studyComplete => 'Mācīšanās pabeigta';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Atlasītie materiāli neatbalsta pašreizējo mācību valodu ($targetLang), tāpēc tos nevar saglabāt lokāli. Vai vēlaties pieprasīt tulkojumu?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Mācību ieraksti ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Mācību valoda nav atrasta';
 
   @override
   String get styleFormal => 'Formāls';
@@ -1038,22 +915,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get styleSlang => 'Žargons';
 
   @override
-  String get subject => 'Tēma:';
-
-  @override
   String get swapLanguages => 'Apmainīt valodas';
 
   @override
-  String get switchToAi => 'Pārslēgties uz AI režīmu';
-
-  @override
-  String get switchToPartner => 'Pārslēgties uz partnera režīmu';
-
-  @override
   String get syncingData => 'Sinhronizē datu...';
-
-  @override
-  String get tabConversation => 'Saruna';
 
   @override
   String tabReview(int count) {
@@ -1117,6 +982,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tooltipSearch => 'Meklēt';
 
   @override
+  String get tooltipSettingsConfirm => 'Apstiprināt iestatījumus';
+
+  @override
   String get tooltipSpeaking => 'Runāšana';
 
   @override
@@ -1129,6 +997,9 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get translate => 'Tulkot';
+
+  @override
+  String get translateNow => 'Tulkot tagad';
 
   @override
   String get translating => 'Tulko...';
@@ -1145,6 +1016,9 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Tulkošanas valoda';
+
+  @override
   String get translationLimitExceeded => 'Pārsniegts tulkošanas ierobežojums';
 
   @override
@@ -1159,17 +1033,25 @@ class AppLocalizationsLv extends AppLocalizations {
       'Jūsu tulkošanas reižu skaits ir papildināts ar 5 reizēm!';
 
   @override
+  String get translationResult => 'Tulkošanas rezultāts';
+
+  @override
   String get translationResultHint => 'Tulkošanas rezultāts - var rediģēt';
 
   @override
   String get tryAgain => 'Mēģiniet vēlreiz';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Praktizējiet sarunas reālajā dzīvē ar AI personu.';
+  String get ttsInstallGuide =>
+      'Lūdzu, instalējiet valodas datus Android iestatījumos > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'AI tērzēšana';
+  String get ttsMissing =>
+      'Šajā valodā nav instalēta runas dzinēja jūsu ierīcē.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Šī ierīce sākotnēji neatbalsta runas izvadi šajā valodā.';
 
   @override
   String get tutorialContextDesc =>
@@ -1285,7 +1167,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get typeExclamation => 'Izsauksmes teikums';
 
   @override
+  String get typeIdiom => 'Idioma';
+
+  @override
   String get typeImperative => 'Pavēles teikums';
+
+  @override
+  String get typeProverb => 'Sakāmvārds';
 
   @override
   String get typeQuestion => 'Jautājuma teikums';
@@ -1300,6 +1188,11 @@ class AppLocalizationsLv extends AppLocalizations {
   String get useExistingText => 'Izmantot esošu tekstu';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Skatīt tiešsaistes ceļvedi';
 
   @override
@@ -1307,6 +1200,16 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Skatīties reklāmu un papildināt (+5 reizes)';
+
+  @override
+  String get welcomeButton => 'Sākt';
+
+  @override
+  String get welcomeDesc =>
+      'Laipni lūdzam Talkie! Mēs atbalstām vairāk nekā 80 valodas visā pasaulē ar 100% integritāti, piedāvājot perfektu mācību pieredzi ar jaunu, premium 3D dizainu un optimizētu veiktspēju.';
+
+  @override
+  String get welcomeTitle => 'Laipni lūdzam Talkie!';
 
   @override
   String get word => 'Vārds';
@@ -1323,113 +1226,4 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Jūsu izruna';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Šī ierīce sākotnēji neatbalsta runas izvadi šajā valodā.';
-
-  @override
-  String get homeTab => 'Tulkot';
-
-  @override
-  String get welcomeTitle => 'Laipni lūdzam Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Laipni lūdzam Talkie! Mēs atbalstām vairāk nekā 80 valodas visā pasaulē ar 100% integritāti, piedāvājot perfektu mācību pieredzi ar jaunu, premium 3D dizainu un optimizētu veiktspēju.';
-
-  @override
-  String get welcomeButton => 'Sākt';
-
-  @override
-  String get labelDetails => 'Detalizēti iestatījumi';
-
-  @override
-  String get translationResult => 'Tulkošanas rezultāts';
-
-  @override
-  String get inputContent => 'Ievades saturs';
-
-  @override
-  String get translateNow => 'Tulkot tagad';
-
-  @override
-  String get tooltipSettingsConfirm => 'Apstiprināt iestatījumus';
-
-  @override
-  String get hintNoteExample =>
-      'Piemēram: konteksta skaidrojums, homonīmi utt.';
-
-  @override
-  String get hintTagExample => 'Piemēram: bizness, ceļojumi...';
-
-  @override
-  String get addNew => 'Pievienot jaunu';
-
-  @override
-  String get newNotebookTitle => 'Jaunas piezīmju grāmatiņas nosaukums';
-
-  @override
-  String get enterNameHint => 'Ievadiet vārdu';
-
-  @override
-  String get add => 'Pievienot';
-
-  @override
-  String get openSettings => 'Atvērt iestatījumus';
-
-  @override
-  String get helpNotebook => 'Izvēlieties mapi, kurā saglabāt tulkojumus.';
-
-  @override
-  String get helpNote =>
-      'Brīvi pierakstiet vārda nozīmi, piemērus vai kontekstu.';
-
-  @override
-  String get helpTag =>
-      'Ievadiet atslēgvārdus, lai tos vēlāk varētu kārtot vai meklēt.';
-
-  @override
-  String get requestTranslation => 'Pieprasīt tulkojumu';
-
-  @override
-  String get statusRequestSuccess => 'Tulkošanas pieprasījums ir pabeigts.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Tulkošanas pieprasījums neizdevās: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Mācību valoda nav atrasta';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Atlasītie materiāli neatbalsta pašreizējo mācību valodu ($targetLang), tāpēc tos nevar saglabāt lokāli. Vai vēlaties pieprasīt tulkojumu?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. valodas iestatīšana';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Vispirms izvēlieties savu un mācību valodu izvēlnē > valodas iestatījumi.';
-
-  @override
-  String get quickStartStep2Title => '2. pamata plūsma';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Izveidojiet savas mācību kartītes šādā secībā: ievade (mikrofons/tastatūra) -> tulkošana -> saglabāšana.';
-
-  @override
-  String get quickStartStep3Title => '3. režīma izmantošana';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Trenējieties tērzējot un praktizējiet izrunu, skatoties tekstu cilnē izrunas praktizēšana.';
-
-  @override
-  String get noteGuidance =>
-      'Kur ievadāt papildu informāciju precīzākam tulkojumam';
 }

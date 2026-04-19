@@ -9,52 +9,19 @@ class AppLocalizationsUk extends AppLocalizations {
   AppLocalizationsUk([String locale = 'uk']) : super(locale);
 
   @override
-  String get basicWords => 'Базове сховище слів';
-
-  @override
-  String get inputLanguage => 'Мова введення';
-
-  @override
-  String get translationLanguage => 'Мова перекладу';
-
-  @override
-  String get simplifiedGuidance =>
-      'Миттєво перетворюйте щоденні розмови на іноземні мови! Talkie записує ваше мовне життя.';
-
-  @override
-  String get noDataForLanguage =>
-      'Наразі немає навчальних матеріалів для обраної мови у локальній базі даних. Завантажте матеріали або оберіть іншу мову.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Скасувати';
-
-  @override
   String get accuracy => 'Точність';
-
-  @override
-  String get ttsMissing =>
-      'На вашому пристрої не встановлено мовний рушій для цього голосу.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Будь ласка, встановіть мовні дані в налаштуваннях Android > Google TTS.';
 
   @override
   String get adLoading => 'Завантаження реклами. Спробуйте ще раз пізніше.';
 
   @override
-  String get addNewSubject => 'Додати нову назву';
+  String get add => 'Додати';
 
   @override
-  String get addParticipant => 'Додати учасника';
+  String get addNew => 'Додати новий';
+
+  @override
+  String get addNewSubject => 'Додати нову назву';
 
   @override
   String get addTagHint => 'Додати тег...';
@@ -87,6 +54,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get basicWordRepository => 'Базовий репозиторій слів';
 
   @override
+  String get basicWords => 'Базове сховище слів';
+
+  @override
+  String get cancel => 'Скасувати';
+
+  @override
   String get caseObject => 'Знахідний відмінок';
 
   @override
@@ -102,62 +75,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get caseSubject => 'Називний відмінок';
 
   @override
-  String get chatAiChat => 'Чат';
-
-  @override
-  String get chatAllConversations => 'Всі розмови';
-
-  @override
-  String get chatChoosePersona => 'Виберіть персонажа';
-
-  @override
-  String get chatEndMessage => 'Ви дійсно хочете завершити чат?';
-
-  @override
-  String get chatEndTitle => 'Завершення та збереження чату';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Помилка чату: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Витяг з розмови ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Історія чату';
-
-  @override
-  String get chatNew => 'Новий чат';
-
-  @override
-  String get chatNewChat => 'Новий чат';
-
-  @override
-  String get chatNoConversations => 'Поки немає розмов';
-
-  @override
-  String get chatSearchHint => 'Пошук за назвою чату…';
-
-  @override
-  String get chatNoteSearchHint => 'Пошук в примітках...';
-
-  @override
-  String get chatSaveAndExit => 'Зберегти та вийти';
-
-  @override
-  String get chatStartNewPrompt =>
-      'Спробуйте почати нову розмову для практики!';
-
-  @override
-  String get chatTypeHint => 'Введіть повідомлення...';
-
-  @override
-  String get chatUntitled => 'Чат без назви';
-
-  @override
   String get checking => 'Перевірка...';
 
   @override
@@ -168,13 +85,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Ви впевнені, що хочете видалити цей запис?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Ви впевнені, що хочете видалити цю розмову?\nВи не зможете відновити її.';
-
-  @override
-  String get confirmDeleteParticipant => 'Видалити цього учасника?';
 
   @override
   String get contextTagHint =>
@@ -214,23 +124,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get deleteRecord => 'Видалити запис';
 
   @override
-  String get dialogueQuestDesc =>
-      'Практикуйте розмови за допомогою рольової гри. Вибирайте відповідні відповіді та промовляйте їх.';
-
-  @override
-  String get dialogueQuestTitle => 'Діалоговий квест';
-
-  @override
-  String get disambiguationPrompt => 'Яке значення ви маєте на увазі?';
-
-  @override
-  String get disambiguationTitle => 'Виберіть значення';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Не маєте облікового запису?';
-
-  @override
-  String get editParticipant => 'Редагувати учасника';
 
   @override
   String get email => 'Електронна пошта';
@@ -238,6 +135,9 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Ця електронна адреса вже використовується. Будь ласка, увійдіть або відновіть пароль.';
+
+  @override
+  String get enterNameHint => 'Введіть назву';
 
   @override
   String get enterNewSubjectName => 'Введіть нову назву';
@@ -277,6 +177,9 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get errors => 'Помилки:';
+
+  @override
+  String get extractedText => 'Розпізнаний текст';
 
   @override
   String get female => 'Жінка';
@@ -336,12 +239,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get gender => 'Стать';
 
   @override
-  String get labelFilterMaterial => 'Матеріали';
-
-  @override
-  String get labelFilterTag => 'Теги';
-
-  @override
   String get generalTags => 'Загальні теги';
 
   @override
@@ -354,19 +251,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get googleContinue => 'Продовжити з Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Імпортуйте повний набір діалогів з JSON-файлу.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc =>
       'Для імпорту матеріалів у режимі 3 створіть файл JSON:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Діалог (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'Речення (Sentence)';
@@ -399,12 +285,12 @@ class AppLocalizationsUk extends AppLocalizations {
       '• Вибір: Виберіть пакет\n• Інтервал: [-] [+] пауза (3с-60с)\n• Старт/Стоп: Керування сесією\n• Говорити: Слухайте та повторюйте\n• Оцінка: Точність (0-100)\n• Повтор: Кнопка повтору, якщо голос не виявлено';
 
   @override
-  String get helpModeChatDesc =>
-      'Практикуйте розмовну мову в реальних умовах, спілкуючись із AI-персоною.';
+  String get helpNote =>
+      'Вільно записуйте значення слів, приклади, ситуації тощо.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Чат зі штучним інтелектом: попрактикуйте реальні розмови з персонажами в меню «Чат» на нижній панелі вкладок.\n• Налаштування персонажа: вільно вказуйте стать, ім’я та мовний код іншої сторони.\n• GPS-рольова гра: розпізнає моє поточне місцезнаходження та рекомендує теми для розмов, які відповідають цьому місцю.\n• 2 мови: відповіді ШІ відображаються разом із перекладом для максимального ефекту навчання.\n• Керування записами: фільтруйте попередні історії розмов і зберігайте певні повідомлення під час розмови як навчальні матеріали.';
+  String get helpNotebook =>
+      'Виберіть папку для збереження перекладених результатів.';
 
   @override
   String get helpTabJson => 'Формат JSON';
@@ -419,6 +305,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get helpTabTour => 'Тур';
 
   @override
+  String get helpTag =>
+      'Введіть ключові слова для подальшої класифікації або пошуку.';
+
+  @override
   String get helpTitle => 'Допомога та Гайд';
 
   @override
@@ -427,6 +317,15 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get hide => 'Сховати';
+
+  @override
+  String get hintNoteExample => 'Наприклад: контекст, омоніми тощо';
+
+  @override
+  String get hintTagExample => 'Наприклад: бізнес, подорожі...';
+
+  @override
+  String get homeTab => 'Переклад';
 
   @override
   String importAdded(int count) {
@@ -439,23 +338,6 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Матеріал з такою назвою вже існує. Змініть назву та спробуйте ще раз.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -471,6 +353,11 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Імпортовано $files файлів, $entries елементів.';
+  }
+
+  @override
   String get importJsonFile => 'Імпорт JSON';
 
   @override
@@ -482,12 +369,30 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Один JSON файл';
+
+  @override
+  String get importSourceFolder => 'Папка (структура бібліотеки за мовами)';
+
+  @override
+  String get importSourceTitle => 'Виберіть джерело імпорту';
+
+  @override
+  String get importSourceZip => 'ZIP файл (архівована папка)';
+
+  @override
   String importTotal(int count) {
     return 'Всього: $count';
   }
 
   @override
   String get importing => 'Імпортування...';
+
+  @override
+  String get inputContent => 'Вміст введення';
+
+  @override
+  String get inputLanguage => 'Мова введення';
 
   @override
   String get inputModeTitle => 'Ввід';
@@ -504,19 +409,22 @@ class AppLocalizationsUk extends AppLocalizations {
   String get kakaoContinue => 'Продовжити з Kakao';
 
   @override
-  String get labelLangCode => 'Код мови (напр., en-US, ko-KR)';
+  String get labelDetails => 'Детальні налаштування';
 
   @override
-  String get labelName => 'Ім\'я';
+  String get labelFilterMaterial => 'Матеріали';
+
+  @override
+  String get labelFilterTag => 'Теги';
+
+  @override
+  String get labelLangCode => 'Код мови (напр., en-US, ko-KR)';
 
   @override
   String get labelNote => 'Примітка';
 
   @override
   String get labelPOS => 'Частина мови';
-
-  @override
-  String get labelRole => 'Роль';
 
   @override
   String get labelSentence => 'Речення';
@@ -567,9 +475,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get listening => 'Слухаю...';
 
   @override
-  String get loadingParticipants => 'Завантаження учасників...';
-
-  @override
   String get location => 'Місцезнаходження';
 
   @override
@@ -588,9 +493,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get male => 'Чоловік';
 
   @override
-  String get manageParticipants => 'Керування учасниками';
-
-  @override
   String get manual => 'Вручну';
 
   @override
@@ -598,9 +500,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get materialInfo => 'Інформація про матеріал';
-
-  @override
-  String get me => 'Я';
 
   @override
   String get menuDeviceImport => 'Імпортувати матеріали з пристрою';
@@ -668,27 +567,20 @@ class AppLocalizationsUk extends AppLocalizations {
   String get neutral => 'Нейтральний';
 
   @override
+  String get newNotebookTitle => 'Назва нової збірки';
+
+  @override
   String get newSubjectName => 'Нова назва словника/збірки фраз';
 
   @override
   String get next => 'Далі';
 
   @override
-  String get noDialogueHistory => 'Немає історії діалогів.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Немає підключення до Інтернету. Розпізнавання голосу може бути недоступним в автономному режимі.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Немає підключення до Інтернету. Функція перекладу недоступна в автономному режимі. Використовуйте режим повторення.';
+  String get noDataForLanguage =>
+      'Наразі немає навчальних матеріалів для обраної мови у локальній базі даних. Завантажте матеріали або оберіть іншу мову.';
 
   @override
   String get noMaterialsInCategory => 'У цій категорії немає матеріалів.';
-
-  @override
-  String get noParticipantsFound => 'Немає зареєстрованих учасників.';
 
   @override
   String get noRecords => 'Немає записів для вибраної мови';
@@ -709,6 +601,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get notSelected => '- Не вибрано -';
 
   @override
+  String get noteGuidance =>
+      'Де ви вводите додаткові відомості для більш точного перекладу';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Перевірте підключення до Інтернету або спробуйте пізніше.';
 
@@ -719,16 +615,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Немає матеріалів.';
 
   @override
-  String get participantDeleted => 'Учасника видалено.';
-
-  @override
-  String get participantRename => 'Перейменувати учасника';
-
-  @override
-  String get partner => 'Партнер';
-
-  @override
-  String get partnerMode => 'Режим партнера';
+  String get openSettings => 'Відкрити налаштування';
 
   @override
   String get password => 'Пароль';
@@ -740,13 +627,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get perfect => 'Чудово!';
 
   @override
-  String get personaFriend => 'Місцевий друг';
-
-  @override
-  String get personaGuide => 'Гід';
-
-  @override
-  String get personaTeacher => 'Вчитель англійської мови';
+  String get pickGallery => 'Вибрати з галереї';
 
   @override
   String get playAgain => 'Грати знову';
@@ -766,6 +647,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get posAdverb => 'Прислівник';
 
   @override
+  String get posArticle => 'Артикль';
+
+  @override
   String get posConjunction => 'Сполучник';
 
   @override
@@ -773,6 +657,9 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get posNoun => 'Іменник';
+
+  @override
+  String get posParticle => 'Частка';
 
   @override
   String get posPreposition => 'Прийменник';
@@ -790,9 +677,33 @@ class AppLocalizationsUk extends AppLocalizations {
   String get practiceWordsOnly => 'Тільки практика слів';
 
   @override
+  String get processing => 'Обробка...';
+
+  @override
   String progress(int current, int total) {
     return 'Прогрес: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Спочатку вкажіть свою мову та мову навчання в меню > Налаштування мови.';
+
+  @override
+  String get quickStartStep1Title => '1. Налаштування мови';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Створюйте власні навчальні картки в послідовності: Введення (мікрофон/клавіатура) -> Переклад -> Збереження.';
+
+  @override
+  String get quickStartStep2Title => '2. Основний процес';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Практикуйтеся в чаті та тренуйте вимову, переглядаючи текст на вкладці «Практика вимови».';
+
+  @override
+  String get quickStartStep3Title => '3. Використання режимів';
 
   @override
   String recentNItems(int count) {
@@ -817,6 +728,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get refresh => 'Оновити';
 
   @override
+  String get requestTranslation => 'Замовити переклад';
+
+  @override
   String get reset => 'Скинути';
 
   @override
@@ -837,16 +751,13 @@ class AppLocalizationsUk extends AppLocalizations {
   String get reviewModeTitle => 'Повторення';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Третя сторона';
-
-  @override
-  String get roleUser => 'Користувач';
-
-  @override
   String get save => 'Зберегти';
+
+  @override
+  String get saveAsSentence => 'Зберегти як речення';
+
+  @override
+  String get saveAsWord => 'Зберегти як слово';
 
   @override
   String get saveData => 'Зберегти';
@@ -857,6 +768,9 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Зберегти в історію сканувань';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Збережіть переклади з режиму пошуку';
 
@@ -865,6 +779,12 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get saving => 'Збереження...';
+
+  @override
+  String get scanInstructions => 'Виберіть зображення для сканування';
+
+  @override
+  String get scanLabel => 'Сканувати';
 
   @override
   String score(String score) {
@@ -911,16 +831,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get selectPOS => 'Виберіть частину мови';
 
   @override
-  String get selectParticipants => 'Виберіть учасників';
-
-  @override
-  String get selectSentenceType => 'Виберіть тип речення';
-
-  @override
   String get selectStudyMaterial => 'Виберіть матеріал';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Речення';
@@ -929,43 +840,14 @@ class AppLocalizationsUk extends AppLocalizations {
   String get signUp => 'Зареєструватися';
 
   @override
-  String get similarTextFound => 'Знайдено схожий текст';
-
-  @override
-  String get skip => 'Пропустити';
-
-  @override
-  String get source => 'Джерело:';
-
-  @override
-  String get sourceLanguage => 'Вихідна мова';
+  String get simplifiedGuidance =>
+      'Миттєво перетворюйте щоденні розмови на іноземні мови! Talkie записує ваше мовне життя.';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => 'Говоріть зараз!';
-
-  @override
-  String get speaker => 'Мовець';
-
-  @override
-  String get speakerSelect => 'Виберіть мовця';
-
-  @override
-  String get speakingPractice => 'Розмовна практика';
-
-  @override
-  String get startChat => 'Почати чат';
-
-  @override
-  String get startPractice => 'Почати практику';
-
-  @override
   String get startTutorial => 'Почати тур';
-
-  @override
-  String get startWarning => 'Увага';
 
   @override
   String get startsWith => 'Починається з';
@@ -975,28 +857,22 @@ class AppLocalizationsUk extends AppLocalizations {
       'Будь ласка, перевірте електронну пошту, щоб завершити аутентифікацію.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Завантаження: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Помилка імпорту: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name імпортовано';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Вхід скасовано.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Помилка входу: $error';
   }
 
@@ -1007,23 +883,23 @@ class AppLocalizationsUk extends AppLocalizations {
   String get statusLogoutSuccess => 'Ви вийшли з системи.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Помилка реєстрації: $error';
+  String statusRequestFailed(String error) {
+    return 'Помилка запиту на переклад: $error';
   }
 
   @override
-  String get statusSigningUp => 'Реєстрація...';
+  String get statusRequestSuccess => 'Запит на переклад успішно надіслано.';
 
   @override
   String get stopPractice => 'Зупинити';
 
   @override
-  String get studyComplete => 'Вивчено';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Вибраний вами матеріал не підтримує поточну мову навчання ($targetLang) і не може бути збережений локально. Бажаєте замовити переклад?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Записи ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Мова навчання не підтримується';
 
   @override
   String get styleFormal => 'Офіційний';
@@ -1038,22 +914,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get styleSlang => 'Сленг';
 
   @override
-  String get subject => 'Тема:';
-
-  @override
   String get swapLanguages => 'Змінити мови';
 
   @override
-  String get switchToAi => 'Перейти в режим AI';
-
-  @override
-  String get switchToPartner => 'Перейти в режим партнера';
-
-  @override
   String get syncingData => 'Синхронізація даних...';
-
-  @override
-  String get tabConversation => 'Розмова';
 
   @override
   String tabReview(int count) {
@@ -1117,6 +981,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tooltipSearch => 'Пошук';
 
   @override
+  String get tooltipSettingsConfirm => 'Підтвердити налаштування';
+
+  @override
   String get tooltipSpeaking => 'Говоріння';
 
   @override
@@ -1129,6 +996,9 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get translate => 'Перекласти';
+
+  @override
+  String get translateNow => 'Перекласти зараз';
 
   @override
   String get translating => 'Переклад...';
@@ -1145,6 +1015,9 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Мова перекладу';
+
+  @override
   String get translationLimitExceeded => 'Перевищено ліміт перекладів';
 
   @override
@@ -1158,17 +1031,25 @@ class AppLocalizationsUk extends AppLocalizations {
   String get translationRefilled => 'Кількість перекладів поповнено на 5!';
 
   @override
+  String get translationResult => 'Результат перекладу';
+
+  @override
   String get translationResultHint => 'Результат перекладу - можна редагувати';
 
   @override
   String get tryAgain => 'Спробуйте ще';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Практикуйте реальні розмови з AI персонажем.';
+  String get ttsInstallGuide =>
+      'Будь ласка, встановіть мовні дані в налаштуваннях Android > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'AI Чат';
+  String get ttsMissing =>
+      'На вашому пристрої не встановлено мовний рушій для цього голосу.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Налаштування цього пристрою не підтримують вивід мовлення для цієї мови.';
 
   @override
   String get tutorialContextDesc =>
@@ -1276,7 +1157,13 @@ class AppLocalizationsUk extends AppLocalizations {
   String get typeExclamation => 'Окличне речення';
 
   @override
+  String get typeIdiom => 'Ідіома';
+
+  @override
   String get typeImperative => 'Спонукальне речення';
+
+  @override
+  String get typeProverb => 'Приказка/Прислів\'я';
 
   @override
   String get typeQuestion => 'Питальне речення';
@@ -1291,6 +1178,11 @@ class AppLocalizationsUk extends AppLocalizations {
   String get useExistingText => 'Використати існуючий';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Переглянути онлайн посібник';
 
   @override
@@ -1298,6 +1190,16 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Переглянути рекламу та поповнити (+5 разів)';
+
+  @override
+  String get welcomeButton => 'Почати';
+
+  @override
+  String get welcomeDesc =>
+      'Вітаємо в Talkie! Ми підтримуємо понад 80 мов з усього світу зі 100% точністю та пропонуємо ідеальний досвід навчання з новим преміальним 3D дизайном та оптимізованою продуктивністю.';
+
+  @override
+  String get welcomeTitle => 'Ласкаво просимо до Talkie!';
 
   @override
   String get word => 'Слово';
@@ -1314,113 +1216,4 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ваша вимова';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Налаштування цього пристрою не підтримують вивід мовлення для цієї мови.';
-
-  @override
-  String get homeTab => 'Переклад';
-
-  @override
-  String get welcomeTitle => 'Ласкаво просимо до Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Вітаємо в Talkie! Ми підтримуємо понад 80 мов з усього світу зі 100% точністю та пропонуємо ідеальний досвід навчання з новим преміальним 3D дизайном та оптимізованою продуктивністю.';
-
-  @override
-  String get welcomeButton => 'Почати';
-
-  @override
-  String get labelDetails => 'Детальні налаштування';
-
-  @override
-  String get translationResult => 'Результат перекладу';
-
-  @override
-  String get inputContent => 'Вміст введення';
-
-  @override
-  String get translateNow => 'Перекласти зараз';
-
-  @override
-  String get tooltipSettingsConfirm => 'Підтвердити налаштування';
-
-  @override
-  String get hintNoteExample => 'Наприклад: контекст, омоніми тощо';
-
-  @override
-  String get hintTagExample => 'Наприклад: бізнес, подорожі...';
-
-  @override
-  String get addNew => 'Додати новий';
-
-  @override
-  String get newNotebookTitle => 'Назва нової збірки';
-
-  @override
-  String get enterNameHint => 'Введіть назву';
-
-  @override
-  String get add => 'Додати';
-
-  @override
-  String get openSettings => 'Відкрити налаштування';
-
-  @override
-  String get helpNotebook =>
-      'Виберіть папку для збереження перекладених результатів.';
-
-  @override
-  String get helpNote =>
-      'Вільно записуйте значення слів, приклади, ситуації тощо.';
-
-  @override
-  String get helpTag =>
-      'Введіть ключові слова для подальшої класифікації або пошуку.';
-
-  @override
-  String get requestTranslation => 'Замовити переклад';
-
-  @override
-  String get statusRequestSuccess => 'Запит на переклад успішно надіслано.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Помилка запиту на переклад: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Мова навчання не підтримується';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Вибраний вами матеріал не підтримує поточну мову навчання ($targetLang) і не може бути збережений локально. Бажаєте замовити переклад?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Налаштування мови';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Спочатку вкажіть свою мову та мову навчання в меню > Налаштування мови.';
-
-  @override
-  String get quickStartStep2Title => '2. Основний процес';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Створюйте власні навчальні картки в послідовності: Введення (мікрофон/клавіатура) -> Переклад -> Збереження.';
-
-  @override
-  String get quickStartStep3Title => '3. Використання режимів';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Практикуйтеся в чаті та тренуйте вимову, переглядаючи текст на вкладці «Практика вимови».';
-
-  @override
-  String get noteGuidance =>
-      'Де ви вводите додаткові відомості для більш точного перекладу';
 }

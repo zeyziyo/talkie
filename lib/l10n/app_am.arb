@@ -1,32 +1,10 @@
 {
   "@@locale": "am",
-  "basicWords": "መሠረታዊ የቃላት ማከማቻ",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "የግቤት ቋንቋ",
-  "translationLanguage": "የትርጉም ቋንቋ",
-  "simplifiedGuidance": "የዕለት ተዕለት ንግግሮችን በቅጽበት ወደ የውጭ ቋንቋ ይለውጡ! ቶኪ የቋንቋ ሕይወትዎን ይመዘግባል።",
-  "noDataForLanguage": "የተመረጠው ቋንቋ ትምህርት መረጃ በአካባቢው DB ውስጥ የለም። እባክዎ መረጃውን ያውርዱ ወይም ሌላ ቋንቋ ይምረጡ።",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "ይቅር",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "ትክክለኛነት",
-  "ttsMissing": "የዚህ ቋንቋ የድምፅ ሞተር በመሣሪያዎ ላይ አልተጫነም።",
-  "ttsInstallGuide": "እባክዎ በAndroid ቅንብሮች > Google TTS ውስጥ ተገቢውን የቋንቋ ውሂብ ይጫኑ።",
   "adLoading": "ማስታወቂያ እየተጫነ ነው። እባክዎ ቆይተው እንደገና ይሞክሩ።",
+  "add": "አክል",
+  "addNew": "አዲስ ጨምር",
   "addNewSubject": "አዲስ ርዕስ ያክሉ",
-  "addParticipant": "ተሳታፊ ጨምር",
   "addTagHint": "መለያ ያክሉ...",
   "alreadyHaveAccount": "ቀድሞውኑ መለያ አለዎት?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "መሠረታዊ የቃላት ማከማቻ",
+  "basicWords": "መሠረታዊ የቃላት ማከማቻ",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "ይቅር",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "ነገር",
   "casePossessive": "ባለቤት",
   "casePossessivePronoun": "ባለቤት ተውላጠ ስም",
   "caseReflexive": "ተገላቢጦሽ",
   "caseSubject": "ርዕሰ ጉዳይ",
-  "chatAiChat": "ቻት",
-  "chatAllConversations": "ሁሉም ንግግሮች",
-  "chatChoosePersona": "ባሕርይ ምረጥ",
-  "chatEndMessage": "ውይይቱን ማቆም ይፈልጋሉ?",
-  "chatEndTitle": "ውይይት ጨርስ እና አስቀምጥ",
-  "chatFailed": "ውይይት አልተሳካም: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "ውይይት ተወስዷል ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "የውይይት ታሪክ",
-  "chatNew": "አዲስ ውይይት",
-  "chatNewChat": "አዲስ ውይይት",
-  "chatNoConversations": "ገና ምንም ንግግሮች የሉም",
-  "chatSearchHint": "በውይይት ርዕስ ፈልግ...",
-  "chatNoteSearchHint": "በማብራሪያ ፈልግ...",
-  "chatSaveAndExit": "አስቀምጥ እና ውጣ",
-  "chatStartNewPrompt": "ለመለማመድ አዲስ ውይይት ይጀምሩ!",
-  "chatTypeHint": "መልእክትህን አስገባ...",
-  "chatUntitled": "ርዕስ የሌለው ውይይት",
   "checking": "በማረጋገጥ ላይ...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "ይህን ውይይት መሰረዝ ይፈልጋሉ?\nየተሰረዙ ንግግሮችን መልሶ ማግኘት አይቻልም።",
-  "confirmDeleteParticipant": "ይህን ተሳታፊ መሰረዝ ይፈልጋሉ?",
   "contextTagHint": "በኋላ ላይ ለመለየት ቀላል እንዲሆን ሁኔታውን ይፃፉ",
   "contextTagLabel": "አውድ/ሁኔታ (አማራጭ) - ለምሳሌ: የጠዋት ሰላምታ, መደበኛ",
   "copiedToClipboard": "ወደ ቅንጥብ ሰሌዳ ተገልብጧል!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "በድራማ በኩል የንግግር ልምምድ ያድርጉ። ተገቢውን መልስ ይምረጡ እና ይናገሩ።",
-  "dialogueQuestTitle": "የውይይት ተልዕኮ",
-  "disambiguationPrompt": "በምን ትርጉም መተርጎም ይፈልጋሉ?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "ትርጉም ይምረጡ",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "መለያ የለዎትም?",
-  "editParticipant": "ተሳታፊን አርትዕ",
   "email": "ኢሜይል",
   "emailAlreadyInUse": "ይህ ኢሜይል ቀድሞውኑ ተመዝግቧል። ይግቡ ወይም የይለፍ ቃልዎን ዳግም ለማስጀመር ይሞክሩ፡፡",
+  "enterNameHint": "ስም ያስገቡ",
   "enterNewSubjectName": "አዲስ ርዕስ ያስገቡ",
   "enterSentenceHint": "ዓረፍተ ነገር ያስገቡ...",
   "enterTextHint": "ለመተርጎም ጽሑፍ ያስገቡ",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "የተገኘ ጽሑፍ",
   "female": "ሴት",
   "file": "ፋይል:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "የጨዋታ ሁነታ",
   "gameOver": "ጨዋታው አልቋል",
   "gender": "ፆታ",
-  "labelFilterMaterial": "ማጣሪያዎች",
-  "labelFilterTag": "መለያዎች",
   "generalTags": "አጠቃላይ መለያዎች",
   "getMaterials": "ቁሳቁሶች ያግኙ",
   "good": "ጥሩ",
   "googleContinue": "በGoogle ቀጥል",
-  "helpDialogueImportDesc": "ጠቅላላ የውይይት ስብስብን እንደ JSON ፋይል ያስመጡ።",
-  "helpDialogueImportDetails": "• JSON መዋቅር: `entries` ከሚለው ይልቅ `dialogues` ድርድር ይጠቀሙ\n• ራስ-ሰር መልሶ ማግኛ: የውይይት ርዕስ፣ ሰው፣ መልእክት ቅደም ተከተል ይመለሳል\n• ሥፍራ: ያስመጣው ውይይት በ AI የውይይት ሞድ 'የመዝገብ' ትር ላይ ይታያል",
   "helpJsonDesc": "በሞድ 3 ላይ ለመጠቀም የጥናት ውሂብን እንደ JSON ፋይል ለማስመጣት የሚከተለውን ቅርጸት ይከተሉ:",
-  "helpJsonTypeDialogue": "ውይይት (Dialogue)",
   "helpJsonTypeSentence": "ዓረፍተ ነገር (Sentence)",
   "helpJsonTypeWord": "ቃል (Word)",
   "helpMode1Desc": "በፕሪሚየም 3D ማይክሮፎን እና ትልቅ የቁልፍ ሰሌዳ አዶዎች አማካኝነት ቋንቋን መማር በጣም በሚያስተውል መንገድ ይጀምሩ።",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• የጥናት ቁሳቁስ ምረጥ፦ በላይኛው ቀኝ ጥግ ያለውን ምናሌ(⋮) ተጠቀም 'የጥናት ቁሳቁስ ምረጥ' ወይም 'የመስመር ላይ የቁሳቁስ ማከማቻ' ተጠቀም\n• ካርድ ገልብጥ፦ 'አሳይ/ደብቅ' የሚለውን በመጠቀም ትርጉሙን አረጋግጥ\n• አዳምጥ፦ የድምጽ ምልክቱን በመጠቀም አጠራሩን አጫውት\n• ትምህርት ተጠናቋል፦ የቼክ ምልክትን(V) በመጠቀም ትምህርቱን እንዳጠናቀቅ ምልክት አድርግ\n• ሰርዝ፦ ካርዱን በረጅሙ ተጫን (ረጅም ጠቅታ) መዝገቡን ለመሰረዝ\n• ፈልግ እና አጣራ፦ የፍለጋ አሞሌውን (በቅጽበት የሚሰራ ስማርት ፍለጋ)፣ ታጎችን፣ እና የመነሻ ፊደል ማጣሪያን ተጠቀም",
   "helpMode3Desc": "ዓረፍተ ነገሮችን እያዳመጡ በመድገም (Shadowing) አጠራርዎን ይለማመዱ።",
   "helpMode3Details": "• የውሂብ ምርጫ: ለማጥናት የውሂብ ስብስብ ይምረጡ\n• ክፍተት ማቀናበር: የዓረፍተ ነገር የቆይታ ጊዜን በ [-] [+] ቁልፎች ያስተካክሉ (ከ3 ሰከንድ እስከ 60 ሰከንድ)\n• ጀምር/አቁም: የጥላ ክፍለ ጊዜን ይቆጣጠሩ\n• መናገር: ድምጽን ያዳምጡ እና ይድገሙ\n• ግብረመልስ: ትክክለኛነት ነጥብ (0-100) እና የቀለም ምልክት\n• የፍለጋ ሁኔታዎች: በመለያዎች፣ በቅርብ ጊዜ ዕቃዎች ወይም በሚጀምሩ ፊደላት ያጣሩ",
-  "helpModeChatDesc": "ከ AI ሰው ጋር እየተወያዩ ተግባራዊ የንግግር ልምምድ ያድርጉ።",
-  "helpModeChatDetails": "• AI ቻት፡ ከታች ባለው ትር ባር ውስጥ ካለው 'ቻት' ምናሌ ጋር በስብዕናዎ ላይ ተመስርተው ተግባራዊ ውይይት ያድርጉ\n• የስብዕና ቅንብር፡ የተቃዋሚውን ጾታ፣ ስም እና የቋንቋ ኮድ በነጻነት ይግለጹ\n• የጂፒኤስ ሁኔታ ድራማ፡ አሁን ያለዎትን ቦታ በመገንዘብ ከቦታው ጋር የሚስማሙ የውይይት ርዕሶችን ይመክሩ\n• ባለ2 ቋንቋ፡ የአይአይ መልሶች ከትርጉም ጋር አብረው ይታያሉ፣ ይህም የመማርን ውጤት ከፍ ያደርገዋል\n• የሪከርድ አስተዳደር፡ ያለፉትን የውይይት ታሪኮች ያጣሩ እና የተወሰኑ መልዕክቶችን በውይይት ጊዜ ለመማሪያ ቁሳቁሶች ያስቀምጡ",
+  "helpNote": "የቃላት ፍቺዎችን፣ ምሳሌዎችን ወይም ሁኔታዎችን በነፃነት ይመዝግቡ።",
+  "helpNotebook": "የተተረጎሙ ውጤቶች የሚቀመጡበትን አቃፊ ይምረጡ።",
   "helpTabJson": "JSON ቅርጸት",
   "helpTabModes": "ስለ ሞዶች",
   "helpTabQuickStart": "ፈጣን ጅምር",
   "helpTabTour": "ተሞክሮ ያድርጉ",
+  "helpTag": "ለመመደብ ወይም ለመፈለግ ቁልፍ ቃላትን ያስገቡ።",
   "helpTitle": "እገዛ & መመሪያ",
   "helpTourDesc": "**የደመቀው ክበብ** ዋና ዋና ባህሪያትን ይመራል።\n(ለምሳሌ: **የደመቀው ክበብ** የሚያመለክተውን ካርድ በረጅሙ በመጫን መሰረዝ ይችላሉ።)",
   "hide": "ደብቅ",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "ለምሳሌ: የሁኔታ መግለጫ፣ ተመሳሳይ ቃላት ወዘተ",
+  "hintTagExample": "ለምሳሌ: ንግድ፣ ጉዞ...",
+  "homeTab": "ትርጉም",
   "importAdded": "ተጨምሯል: {count} ዕቃዎች",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} ፋይሎች, {entries} ግቤቶች ተገኝተዋል።",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON ፋይል አስመጣ",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "ነጠላ JSON ፋይል",
+  "importSourceFolder": "አቃፊ (በቋንቋ የተደራጀ ቤተ-መጽሐፍት)",
+  "importSourceTitle": "የማስመጫ ምንጭ ምረጥ",
+  "importSourceZip": "ዚፕ ፋይል (የተጨመቀ አቃፊ)",
   "importTotal": "ጠቅላላ: {count} ዕቃዎች",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "የግቤት ይዘት",
+  "inputLanguage": "የግቤት ቋንቋ",
   "inputModeTitle": "ግብዓት",
   "intervalSeconds": "ክፍተት: {seconds} ሰከንዶች",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "ትክክለኛ ኢሜይል ያስገቡ።",
   "kakaoContinue": "በካካዎ ይቀጥሉ",
+  "labelDetails": "ዝርዝር ቅንጅቶች",
+  "labelFilterMaterial": "ማጣሪያዎች",
+  "labelFilterTag": "መለያዎች",
   "labelLangCode": "የቋንቋ ኮድ (ለምሳሌ en-US, ko-KR)",
-  "labelName": "ስም",
   "labelNote": "ማስታወሻ",
   "labelPOS": "የቃላት ክፍል",
-  "labelRole": "ሚና",
   "labelSentence": "ዓረፍተ ነገር",
   "labelSentenceCollection": "የዓረፍተ ነገር ስብስብ",
   "labelSentenceType": "ዓይነት ዓረፍተ ነገር",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "ተሳታፊዎችን በመጫን ላይ...",
   "location": "ቦታ",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "ግባ",
   "logout": "ውጣ",
   "logoutConfirmMessage": "ከዚህ መሣሪያ መውጣት ይፈልጋሉ?",
   "logoutConfirmTitle": "ውጣ",
   "male": "ወንድ",
-  "manageParticipants": "ተሳታፊዎችን አስተዳድር",
   "manual": "በእጅ ግቤት",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "የቁሳቁስ መረጃ",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "እኔ",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "ቁሳቁስ ከመሳሪያ አስመጣ",
   "menuHelp": "እገዛ",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "የዓረፍተ ነገር ስብስብ",
   "myWordbook": "የቃላት መምረጫ",
   "neutral": "ገለልተኛ",
+  "newNotebookTitle": "አዲስ ማስታወሻ ደብተር ርዕስ",
   "newSubjectName": "አዲስ የቃላት ዝርዝር/ሐረግ ርዕስ",
   "next": "ቀጣይ",
-  "noDialogueHistory": "ምንም የውይይት ታሪክ የለም።",
-  "noInternetWarningMic": "ምንም የበይነመረብ ግንኙነት የለም። ከመስመር ውጭ እያሉ የድምፅ ማወቂያ ላይሰራ ይችላል።",
-  "noInternetWarningTranslate": "ምንም የበይነመረብ ግንኙነት የለም። ከመስመር ውጭ እያሉ የትርጉም ባህሪው መጠቀም አይችሉም። እባክዎ የግምገማ ሁነታን ይጠቀሙ።",
+  "noDataForLanguage": "የተመረጠው ቋንቋ ትምህርት መረጃ በአካባቢው DB ውስጥ የለም። እባክዎ መረጃውን ያውርዱ ወይም ሌላ ቋንቋ ይምረጡ።",
   "noMaterialsInCategory": "በዚህ ምድብ ውስጥ ምንም ቁሳቁሶች የሉም።",
-  "noParticipantsFound": "ምንም የተመዘገቡ ተሳታፊዎች የሉም።",
   "noRecords": "ለተመረጠው ቋንቋ ምንም የጥናት መዝገቦች የሉም",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "ምንም ድምጽ አልተገኘም",
   "notSelected": "- አልተመረጠም - ",
+  "noteGuidance": "ለትክክለኛ ትርጉም ተጨማሪ ዝርዝሮችን የሚያስገቡበት ቦታ",
   "onlineLibraryCheckInternet": "የበይነመረብ ግንኙነትዎን ያረጋግጡ ወይም በኋላ እንደገና ይሞክሩ።",
   "onlineLibraryLoadFailed": "ቁሳቁሶችን ለመጫን አልተሳካም።",
   "onlineLibraryNoMaterials": "ምንም ቁሳቁሶች የሉም።",
-  "participantDeleted": "ተሳታፊ ተሰርዟል።",
-  "participantRename": "ተሳታፊን እንደገና ይሰይሙ",
-  "partner": "አጋር",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "የአጋር ሁነታ",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "ቅንብሮችን ክፈት",
   "password": "የይለፍ ቃል",
-  "passwordTooShort": "የይለፍ ቃል ቢያንስ 6 ቁምፊዎች መሆን አለበት።",
+  "passwordTooShort": "የይለፍ ቃል በጣም አጭር ነው",
   "perfect": "ፍጹም ነው!",
-  "personaFriend": "የአካባቢው ጓደኛ",
-  "personaGuide": "የጉዞ መመሪያ",
-  "personaTeacher": "የእንግሊዝኛ መምህር",
+  "pickGallery": "ከጋለሪ ምረጥ",
   "playAgain": "እንደገና ይጫወቱ",
   "playbackFailed": "መልሶ ማጫወት አልተሳካም: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "ቅጽል",
   "posAdverb": "ተውሳከ ግሥ",
+  "posArticle": "መስተዋድድ",
   "posConjunction": "ማያያዣ",
   "posInterjection": "ቃለ አጋኖ",
   "posNoun": "ስም",
+  "posParticle": "ቅንጣት",
   "posPreposition": "መስተዋድድ",
   "posPronoun": "ተውላጠ ስም",
   "posVerb": "ግስ",
   "practiceModeTitle": "ልምምድ",
   "practiceWordsOnly": "ቃላትን ብቻ ይለማመዱ",
+  "processing": "በሂደት ላይ...",
   "progress": "ሂደት: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "በምናሌ > ቋንቋ ቅንብሮች ውስጥ የእርስዎን ቋንቋ እና የሚማሩትን ቋንቋ መጀመሪያ ይምረጡ።",
+  "quickStartStep1Title": "1. ቋንቋዎችን ያስተካክሉ",
+  "quickStartStep2Desc": "የግል የትምህርት ካርድዎን ለመፍጠር ግቤት (ማይክ/ቁልፍ ሰሌዳ) -> ትርጉም -> አስቀምጥ የሚለውን ቅደም ተከተል ይከተሉ።",
+  "quickStartStep2Title": "2. መሰረታዊ ሂደት",
+  "quickStartStep3Desc": "በውይይት ይለማመዱ፣ የጽሑፍ ንግግር ልምምድ ትር ላይ ጽሑፉን ይመልከቱ እና ጮክ ብለው በማንበብ ይለማመዱ።",
+  "quickStartStep3Title": "3. ሁነታዎችን መጠቀም",
   "recentNItems": "በቅርቡ የተፈጠሩ {count} ን ይመልከቱ",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "ትርጉም ለመጠየቅ",
   "reset": "ዳግም አስጀምር",
   "resetPracticeHistory": "የልምምድ ታሪክ ዳግም ያስጀምሩ",
   "retry": "እንደገና መሞከር?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "ግምገማ",
-  "roleAi": "AI",
-  "roleThirdParty": "ሶስተኛ ወገን",
-  "roleUser": "ተጠቃሚ",
   "save": "አስቀምጥ",
+  "saveAsSentence": "እንደ ዓረፍተ ነገር አስቀምጥ",
+  "saveAsWord": "እንደ ቃል አስቀምጥ",
   "saveData": "ውሂብ አስቀምጥ",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "በቃኚ ታሪክ ውስጥ አስቀምጥ",
   "saveTranslationsFromSearch": "በትርጉም ሁነታ ትርጉሞችን ለማስቀመጥ ይሞክሩ",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "ለመቃኘት ምስል ይምረጡ",
+  "scanLabel": "ይቃኙ",
   "score": "ትክክለኛነት: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "የንግግር አካል ይምረጡ",
-  "selectParticipants": "ተሳታፊዎችን ይምረጡ",
-  "selectSentenceType": "የዓረፍተ ነገር አይነት ይምረጡ",
   "selectStudyMaterial": "የጥናት ቁሳቁስ ይምረጡ",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "ዓረፍተ ነገር",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "ይመዝገቡ",
-  "similarTextFound": "ተመሳሳይ ጽሑፍ ተገኝቷል",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "ዝለል",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "ምንጭ:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "የመነሻ ቋንቋ",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
-  "sourceLanguageLabel": "የእኔ ቋንቋ (ምንጭ)",
-  "speakNow": "አሁን ይናገሩ!",
-  "speaker": "ተናጋሪ",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "ተናጋሪ ይምረጡ",
-  "speakingPractice": "የንግግር ልምምድ",
-  "startChat": "ውይይት ጀምር",
-  "startPractice": "ልምምድ ይጀምሩ",
-  "startTutorial": "ትምህርቱን ይጀምሩ",
-  "startWarning": "ማስጠንቀቂያ",
+  "simplifiedGuidance": "የዕለት ተዕለት ንግግሮችን በቅጽበት ወደ የውጭ ቋንቋ ይለውጡ! ቶኪ የቋንቋ ሕይወትዎን ይመዘግባል።",
+  "sourceLanguageLabel": "የኔ ቋንቋ",
+  "startTutorial": "መማሪያውን ጀምር",
   "startsWith": "መጀመሪያ ፊደል",
-  "statusCheckEmail": "ኢሜይልዎን በማረጋገጥ ማረጋገጫውን ያጠናቅቁ።",
+  "statusCheckEmail": "ኢሜልዎን ያረጋግጡ",
   "statusDownloading": "በማውረድ ላይ: {name}...",
-  "statusImportFailed": "ማስመጣት አልተሳካም: {error}",
-  "statusImportSuccess": "{name} ማስመጣት ተጠናቋል",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "መግባት ተሰርዟል።",
-  "statusLoginFailed": "መግባት አልተሳካም: {error}",
-  "statusLoginSuccess": "በተሳካ ሁኔታ ገብተዋል።",
-  "statusLogoutSuccess": "ወጥተዋል።",
-  "statusSignUpFailed": "ምዝገባ አልተሳካም: {error}",
-  "statusSigningUp": "በመመዝገብ ላይ...",
-  "stopPractice": "ልምምድ ያቁሙ",
-  "studyComplete": "ትምህርት ተጠናቋል",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "የጥናት መዝገቦች ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "progress": {
+        "type": "String",
+        "example": "50"
       }
     }
   },
+  "statusImportFailed": "ማስመጣት አልተሳካም: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} ማስመጣት ተጠናቋል",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "መግባት አልተሳካም: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "በተሳካ ሁኔታ ገብተዋል",
+  "statusLogoutSuccess": "በተሳካ ሁኔታ ወጥተዋል",
+  "statusRequestFailed": "የትርጉም ጥያቄ አልተሳካም፡ {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "የትርጉም ጥያቄ ተሳክቷል።",
+  "stopPractice": "ልምምድ ያቁሙ",
+  "studyLangNotFoundDesc": "የመረጡት መረጃ በአሁኑ ጊዜ የተዋቀረውን የጥናት ቋንቋን ({targetLang}) ስለማይደግፍ በአካባቢው ማስቀመጥ አይቻልም። ትርጉም መጠየቅ ይፈልጋሉ?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "የጥናት ቋንቋ አልተገኘም።",
   "styleFormal": "መደበኛ",
   "styleInformal": "የማይደበቅ",
   "stylePolite": "ጨዋነት",
   "styleSlang": "ስላንግ",
-  "subject": "ርዕሰ ጉዳይ:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "ቋንቋዎችን ይቀያይሩ",
-  "switchToAi": "ወደ AI ሁነታ ይቀይሩ",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "ወደ አጋር ሁነታ ይቀይሩ",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "ውሂብ በመመሳሰል ላይ...",
-  "tabConversation": "ውይይት",
   "tabReview": "ክለሳ ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "ቀንስ",
   "tooltipIncrease": "ጨምር",
   "tooltipSearch": "ፈልግ",
+  "tooltipSettingsConfirm": "ቅንብሮችን አረጋግጥ",
   "tooltipSpeaking": "መናገር",
   "tooltipStudyReview": "ማጥናት + ክለሳ",
   "totalRecords": "ጠቅላላ {count} መዝገቦች (ሁሉንም ይመልከቱ)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "አሁን ተርጉም",
   "translating": "በመተርጎም ላይ...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "የትርጉም ቋንቋ",
   "translationLimitExceeded": "የትርጉም ገደብ አልፏል",
   "translationLimitMessage": "ያሉትን በየቀኑ ነፃ ትርጉሞች (5 ጊዜ) በሙሉ ተጠቅመዋል።\\n\\nማስታወቂያ በመመልከት 5 ጊዜዎችን ወዲያውኑ መሙላት ይፈልጋሉ?",
   "translationLoaded": "የተቀመጠ ትርጉም ተጭኗል",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "የትርጉም ብዛት 5 ጊዜ ተሞልቷል!",
+  "translationResult": "የትርጉም ውጤት",
   "translationResultHint": "የትርጉም ውጤት - ሊስተካከል የሚችል",
   "tryAgain": "እንደገና ይሞክሩ",
-  "tutorialAiChatDesc": "ከ AI ሰው ጋር እውነተኛ ውይይቶችን ይለማመዱ።",
-  "tutorialAiChatTitle": "AI ቻት",
+  "ttsInstallGuide": "እባክዎ በAndroid ቅንብሮች > Google TTS ውስጥ ተገቢውን የቋንቋ ውሂብ ይጫኑ።",
+  "ttsMissing": "የዚህ ቋንቋ የድምፅ ሞተር በመሣሪያዎ ላይ አልተጫነም።",
+  "ttsUnsupportedNatively": "ይህ መሣሪያ ይህን ቋንቋ በተፈጥሮው በድምፅ አይደግፍም።",
   "tutorialContextDesc": "ምንም እንኳን ተመሳሳይ ዓረፍተ ነገር ቢሆንም እንደ ሁኔታው (ለምሳሌ ጠዋት፣ ምሽት) በመፃፍ በተናጠል ማስቀመጥ ይችላሉ።",
   "tutorialContextTitle": "ሁኔታ/አውድ መለያ",
   "tutorialLangSettingsDesc": "ለመተርጎም የመጀመሪያ ቋንቋ እና ዒላማ ቋንቋ ያዘጋጁ።",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "ያስገቡትን ጽሑፍ ይተርጉሙ።",
   "tutorialTransTitle": "ተርጉም",
   "typeExclamation": "ቃለ አጋኖ",
+  "typeIdiom": "ፈሊጥ",
   "typeImperative": "አስገዳጅ",
+  "typeProverb": "ምሳሌ",
   "typeQuestion": "ጥያቄ",
   "typeStatement": "መግለጫ",
   "usageLimitTitle": "ገደብ ደርሷል",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "የመስመር ላይ መመሪያ ይመልከቱ",
   "voluntaryTranslations": "በፍቃደኝነት የተተረጎሙ",
   "watchAdAndRefill": "ማስታወቂያ በመመልከት (+5 ጊዜ) ይሙሉ።",
+  "welcomeButton": "ይጀምሩ",
+  "welcomeDesc": "ወደ ቶኪ እንኳን ደህና መጡ! ከ 80 በላይ የሆኑ ሁሉንም ቋንቋዎች በ 100% ታማኝነት እንደግፋለን፣ እና በአዲሱ የፕሪሚየም 3D ዲዛይን እና በተሻሻለ አፈጻጸም ፍጹም የመማር ልምድን እናቀርባለን።",
+  "welcomeTitle": "ወደ Talkie እንኳን በደህና መጡ!",
   "word": "ቃል",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "ጠላት ከመድረሱ በፊት ቃሉን በመናገር ጣቢያዎን ይከላከሉ።",
   "wordDefenseTitle": "የቃል መከላከያ",
   "wordModeLabel": "የቃል ሁነታ",
-  "yourPronunciation": "የእርስዎ አጠራር",
-  "ttsUnsupportedNatively": "ይህ መሣሪያ ይህን ቋንቋ በተፈጥሮው በድምፅ አይደግፍም።",
-  "homeTab": "ትርጉም",
-  "welcomeTitle": "ወደ Talkie እንኳን በደህና መጡ!",
-  "welcomeDesc": "ወደ ቶኪ እንኳን ደህና መጡ! ከ 80 በላይ የሆኑ ሁሉንም ቋንቋዎች በ 100% ታማኝነት እንደግፋለን፣ እና በአዲሱ የፕሪሚየም 3D ዲዛይን እና በተሻሻለ አፈጻጸም ፍጹም የመማር ልምድን እናቀርባለን።",
-  "welcomeButton": "ይጀምሩ",
-  "labelDetails": "ዝርዝር ቅንጅቶች",
-  "translationResult": "የትርጉም ውጤት",
-  "inputContent": "የግቤት ይዘት",
-  "translateNow": "አሁን ተርጉም",
-  "tooltipSettingsConfirm": "ቅንብሮችን አረጋግጥ",
-  "hintNoteExample": "ለምሳሌ: የሁኔታ መግለጫ፣ ተመሳሳይ ቃላት ወዘተ",
-  "hintTagExample": "ለምሳሌ: ንግድ፣ ጉዞ...",
-  "addNew": "አዲስ ጨምር",
-  "newNotebookTitle": "አዲስ ማስታወሻ ደብተር ርዕስ",
-  "enterNameHint": "ስም ያስገቡ",
-  "add": "አክል",
-  "openSettings": "ቅንብሮችን ክፈት",
-  "helpNotebook": "የተተረጎሙ ውጤቶች የሚቀመጡበትን አቃፊ ይምረጡ።",
-  "helpNote": "የቃላት ፍቺዎችን፣ ምሳሌዎችን ወይም ሁኔታዎችን በነፃነት ይመዝግቡ።",
-  "helpTag": "ለመመደብ ወይም ለመፈለግ ቁልፍ ቃላትን ያስገቡ።",
-  "requestTranslation": "ትርጉም ለመጠየቅ",
-  "statusRequestSuccess": "የትርጉም ጥያቄ ተሳክቷል።",
-  "statusRequestFailed": "የትርጉም ጥያቄ አልተሳካም፡ {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "የጥናት ቋንቋ አልተገኘም።",
-  "studyLangNotFoundDesc": "የመረጡት መረጃ በአሁኑ ጊዜ የተዋቀረውን የጥናት ቋንቋን ({targetLang}) ስለማይደግፍ በአካባቢው ማስቀመጥ አይቻልም። ትርጉም መጠየቅ ይፈልጋሉ?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. ቋንቋዎችን ያስተካክሉ",
-  "quickStartStep1Desc": "በምናሌ > ቋንቋ ቅንብሮች ውስጥ የእርስዎን ቋንቋ እና የሚማሩትን ቋንቋ መጀመሪያ ይምረጡ።",
-  "quickStartStep2Title": "2. መሰረታዊ ሂደት",
-  "quickStartStep2Desc": "የግል የትምህርት ካርድዎን ለመፍጠር ግቤት (ማይክ/ቁልፍ ሰሌዳ) -> ትርጉም -> አስቀምጥ የሚለውን ቅደም ተከተል ይከተሉ።",
-  "quickStartStep3Title": "3. ሁነታዎችን መጠቀም",
-  "quickStartStep3Desc": "በውይይት ይለማመዱ፣ የጽሑፍ ንግግር ልምምድ ትር ላይ ጽሑፉን ይመልከቱ እና ጮክ ብለው በማንበብ ይለማመዱ።",
-  "noteGuidance": "ለትክክለኛ ትርጉም ተጨማሪ ዝርዝሮችን የሚያስገቡበት ቦታ"
+  "yourPronunciation": "የእርስዎ አጠራር"
 }

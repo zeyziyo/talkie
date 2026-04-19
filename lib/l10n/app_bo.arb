@@ -1,32 +1,10 @@
 {
   "@@locale": "bo",
-  "basicWords": "རྨང་གཞིའི་ཐ་སྙད་ཉར་མཛོད།",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "འཇུག་པའི་སྐད།",
-  "translationLanguage": "བསྒྱུར་བའི་སྐད།",
-  "simplifiedGuidance": "སྐད་ཡིག་གཞན་པའི་ནང་དུ་ཉིན་རེའི་གཏམ་བཤད་ཐོག་མར་བསྒྱུར། སྐད་བརྡ་འཕྲུལ་ཆས་ཀྱིས་ཁྱེད་ཀྱི་སྐད་བརྡའི་འཚོ་བ་ཟིན་ཐོ་བཟོ།",
-  "noDataForLanguage": "ཁྱོད་ཀྱིས་སེལ་འཐུ་བྱས་པའི་སྐད་ཡིག་ནང་གི་སློབ་སྦྱོང་གི་རྒྱུ་ཆ་འདི་ས་གནས་ཀྱི་མཛོད་གཞི་ནང་མེད། རྒྱུ་ཆ་འདི་ཕབ་ལེན་བྱེད་པའམ་ཡང་ན་སྐད་ཡིག་གཞན་ཞིག་འདེམས་རོགས།",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "འ বাতিল",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "ཏག་ཏག་ཚད།",
-  "ttsMissing": "སྐད་ཡིག་འདིའི་སྒྲ་འབྱིན་འཕྲུལ་ཆས་འདི་ཁྱེད་ཀྱི་སྒྲིག་ཆས་སུ་བཙུགས་མེད།",
-  "ttsInstallGuide": "Android སྒྲིག་འཛུགས་> Google TTS ནང་དུ་སྐད་ཡིག་གི་གནས་སྡུད་འདི་བཙུགས་རོགས།",
   "adLoading": "ཁྱབ་བསྒྲགས་ནང་འཇུག་བྱེད་བཞིན་པ། གནས་སྐབས་སྒུག་རོགས།",
+  "add": "ཁ་སྣོན།",
+  "addNew": "གསར་པ་ཁ་སྣོན།",
   "addNewSubject": "མིང་གསརཔ་བསྣོན།",
-  "addParticipant": "མཉམ་ཞུགས་པ་སྣོན་པ།",
   "addTagHint": "ཚད་རྟགས་ཁ་སྣོན།...",
   "alreadyHaveAccount": "ཁྱེད་ལ་རྩིས་ཐོ་ཡོད་དམ?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "རྨང་གཞིའི་ཐ་སྙད་ཉར་མཛོད།",
+  "basicWords": "རྨང་གཞིའི་ཐ་སྙད་ཉར་མཛོད།",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "འ বাতিল",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "ཡུལ་སྒྲ།",
   "casePossessive": "བདག་སྒྲ།",
   "casePossessivePronoun": "བདག་གི་མིང་ཚབ།",
   "caseReflexive": "རང་སྟོན་མིང་ཚབ།",
   "caseSubject": "བྱེད་སྒྲ།",
-  "chatAiChat": "ཁ་བརྡ།",
-  "chatAllConversations": "གླེང་མོལ་ཡོངས་རྫོགས།",
-  "chatChoosePersona": "མི་སྣ་འདེམས།",
-  "chatEndMessage": "གླེང་མོ་མཇུག་སྒྲིལ་འདོད་དམ?",
-  "chatEndTitle": "གླེང་མོ་མཇུག་སྒྲིལ་བ་དང་ཉར་ཚགས་བྱེད་པ།",
-  "chatFailed": "གླེང་མོ་བྱེད་མ་ཐུབ: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "གླེང་མོ་བཏོན་པ ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "གླེང་མོའི་ལོ་རྒྱུས།",
-  "chatNew": "གླེང་མོ་གསར་བ།",
-  "chatNewChat": "གླེང་མོ་གསར་བ།",
-  "chatNoConversations": "ད་དུང་གླེང་མོ་མེད།",
-  "chatSearchHint": "གླེང་མོལ་གྱི་མགོ་བརྗོད་ནས་འཚོལ་ཞིབ་...",
-  "chatNoteSearchHint": "འགྲེལ་བཤད་ནང་འཚོལ...",
-  "chatSaveAndExit": "ཉར་ཚགས་བྱས་རྗེས་ཕྱིར་འཐོན་པ།",
-  "chatStartNewPrompt": "ཉམས་ལེན་བྱེད་པའི་ཆེད་དུ་གླེང་མོ་གསར་བ་ཞིག་འགོ་བཙུགས་དང་!",
-  "chatTypeHint": "འཕྲིན་ཐུང་ནང་འཇུག་བྱེད་རོགས...",
-  "chatUntitled": "མགོ་བརྗོད་མེད་པའི་གླེང་མོ།",
   "checking": "ཞིབ་བཤེར་བྱེད་བཞིན་པ...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "ཁྱེད་ཀྱིས་གླེང་མོལ་འདི་དོར་འདོད་དམ།\nགླེང་མོལ་བསུབས་པ་ཕྱིར་སློག་བྱེད་མི་ཐུབ།",
-  "confirmDeleteParticipant": "མཉམ་ཞུགས་པ་འདི་བསུབ་འདོད་དམ?",
   "contextTagHint": "ཕྱིས་སུ་དབྱེ་འབྱེད་སླ་བའི་ཆེད་དུ་གནས་སྟངས་འབྲི་རོགས།",
   "contextTagLabel": "ཡིག་འབྲུ་/གནས་སྟངས་ (འདེམས་ཆོག) - དཔེར་ན། ཞོགས་པའི་འཚམས་འདྲི། གུས་ཞབས་ཀྱི་སྐད་ཆ།",
   "copiedToClipboard": "འབྲི་པང་ནང་དུ་འདྲ་བཤུས་བྱས་ཟིན!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "གནས་སྟངས་འཁྲབ་སྟོན་བརྒྱུད་དེ་གླེང་མོའི་ཉམས་ལེན་བྱེད་རོགས། འོས་འཚམ་གྱི་ལན་འདེམས་པ་དང་བཤད་རོགས།",
-  "dialogueQuestTitle": "གླེང་མོའི་འཚོལ་ཞིབ།",
-  "disambiguationPrompt": "དོན་སྙིང་གང་ཞིག་ཏུ་བསྒྱུར་འདོད་དམ?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "དོན་སྙིང་འདེམས།",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "ཁྱེད་ལ་རྩིས་ཐོ་མེད་དམ?",
-  "editParticipant": "མཉམ་ཞུགས་པ་བཟོ་བཅོས་བྱེད།",
   "email": "གློག་རྡུལ་ཡིག་ཟམ།",
   "emailAlreadyInUse": "གློག་འཕྲིན་ཁ་བྱང་འདི་སྔོན་ནས་ཐོ་འགོད་ཟིན་པས། ཐོ་འཇུག་བྱེད་པའམ་ཡང་ན་གསང་གྲངས་འཚོལ་བར་བེད་སྤྱོད་བྱེད་རོགས།",
+  "enterNameHint": "མིང་འབྲི་རོགས།",
   "enterNewSubjectName": "མིང་གསརཔ་བཙུགས།",
   "enterSentenceHint": "ཚིག་གཞི་བཙུགས་...",
   "enterTextHint": "བསྒྱུར་དགོས་པའི་ཡི་གེ་ནང་འཇུག་བྱེད་རོགས།",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "འདོན་འདྲེན་བྱས་པའི་ཚིག་དོན།",
   "female": "མོ།",
   "file": "ཡིག་ཆ:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "རྩེད་མོའི་ཐབས་ལམ།",
   "gameOver": "རྩེད་འགྲན་མཇུག་བསྡུས།",
   "gender": "ཕོ་མོ།",
-  "labelFilterMaterial": "དཔྱད་གཞིའི་ཡིག་ཆ།",
-  "labelFilterTag": "རྟགས།",
   "generalTags": "སྤྱིར་བཏང་གི་རྟགས།",
   "getMaterials": "དཔྱད་ཆས་ལེན་པ།",
   "good": "ཡག་པོ།",
   "googleContinue": "Google བརྒྱུད་ནས་མུ་མཐུད་དུ་འགྲོ་།",
-  "helpDialogueImportDesc": "JSON ཡིག་ཆ་བརྒྱུད་ནས་གླེང་མོའི་ཚོགས་ཚང་མ་ནང་འདྲེན་བྱེད།",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "To import study materials in Mode 3, create a JSON file with the following structure:",
-  "helpJsonTypeDialogue": "གླེང་མོ (Dialogue)",
   "helpJsonTypeSentence": "ཚིག་ (Sentence)",
   "helpJsonTypeWord": "ཐ་སྙད་ (Word)",
   "helpMode1Desc": "སྤུས་དག་གསུམ་ཚད་ཀྱི་ཕྲ་མཇུག་དང་མཐེབ་གཞོང་ཆེ་བའི་རི་མོ་བརྒྱུད་ནས་སྐད་ཡིག་སྦྱོང་འགོ་ལམ་སང་ཚུགས།",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• ཡིག་ཆ་དེབ་འདེམས: གཡས་གོང་གི་འདེམས་ཐོ་(⋮)ནང་ནས་‘སློབ་སྦྱོང་ཡིག་ཆ་དེབ་འདེམས་’ ཡང་ན་ ‘དྲ་ཐོག་ཡིག་ཆའི་ཁང་མིག་’བེད་སྤྱོད།\n• ཤོག་བྱང་ཕྱིར་བསྒྱུར: ‘མངོན་/སྦས་’ ཀྱི་ཐོག་ནས་བསྒྱུར་ཡིག་གཏན་འཁེལ།\n• ཉན་པ: སྒྲ་སྐྱེད་རིས་རྟགས་ཀྱི་ཐོག་ནས་སྒྲ་སྐྱེད་སྒྲ་འབྱིན།\n• སློབ་སྦྱོང་མཇུག་སྒྲིལ: ཞིབ་བཤེར་རྟགས་(V)ཀྱི་ཐོག་ནས་སློབ་སྦྱོང་མཇུག་སྒྲིལ་ཐག་གཅོད།\n• སུབ་པ: ཤོག་བྱང་ལ་རིང་པོར་མནན་ནས་(Long Click) ཟིན་ཐོ་སུབ།\n• འཚོལ་ཞིབ་དང་ཚགས་འདེམས: འཚོལ་ཞིབ་ཚང་(དངོས་དུས་ཀྱི་བློ་གྲོས་འཚོལ་ཞིབ་)དང་རྟགས་དང་འགོ་འཛུགས་ཡི་གེའི་ཚགས་འདེམས་རྒྱབ་སྐྱོར།",
   "helpMode3Desc": "སྐད་ཆ་ཉན་ནས་ཕྱིར་ཟློས་(Shadowing)བྱས་ཏེ་སྒྲ་གདངས་སྦྱོང་།",
   "helpMode3Details": "• Select Material: Choose learning pack\n• Interval: [-] [+] to adjust wait time (3s-60s)\n• Start/Stop: Control shadowing session\n• Speak: Listen to audio and repeat after it\n• Feedback: Accuracy score (0-100) with color code\n• Search Conditions: Filter practice targets by Tags, Recent N, or Start char",
-  "helpModeChatDesc": "AI གདོང་རིས་དང་མཉམ་དུ་སྐད་ཆ་བཤད་ནས་དངོས་སྦྱོང་གི་ཁ་བརྡ་སྦྱོང་།",
-  "helpModeChatDetails": "• AI བགྲོ་གླེང་། འོག་གི་ཨེབ་ཐེབ་ཀྱི་ 'བགྲོ་གླེང་' འདེམས་ཐོ་ནས་མི་སྣ་དང་དངོས་སྦྱོང་གི་གཏམ་བཤད་བྱེད།\n• མི་སྣའི་སྒྲིག་སྦྱོར། ཕ་རོལ་པོའི་ཕོ་མོའི་རྟགས་དང་། མིང་། སྐད་བརྡའི་ཨང་རྟགས་རང་དབང་གིས་བཀོད་སྒྲིག་བྱེད།\n• GPS གནས་སྟངས་འཁྲབ་སྟོན། ད་ལྟའི་ངའི་གནས་ས་ངོས་འཛིན་བྱེད་དེ་གནས་སའི་འོས་འབབ་ཀྱི་གཏམ་བཤད་ཀྱི་བརྗོད་གཞི་མཐོང་སྟོན་བྱེད།\n• སྐད་བརྡ་གཉིས། AI ཡི་ལན་བསྒྱུར་ཡིག་དང་མཉམ་དུ་མངོན་པས་སྦྱོང་བརྡར་གྱི་ཕན་འབྲས་ཆེ་རུ་གཏོང་།\n• ཟིན་ཐོ་དོ་དམ། འདས་སོང་གི་བགྲོ་གླེང་གི་ནང་དོན་ཚགས་འདྲི་དང་བགྲོ་གླེང་གི་བར་དུ་ངེས་ཅན་གྱི་འཕྲིན་ཐུང་སྦྱོང་བརྡར་གྱི་ཡིག་ཆར་ཉར་ཚགས་བྱེད།",
+  "helpNote": "མིང་ཚིག་གི་དོན་དང་ དཔེར་བརྗོད། གནས་སྟངས་ཚུ་རང་དབང་ཐོག་འབྲི།",
+  "helpNotebook": "བསྒྱུར་ཡིག་འབྲི་དེབ་ཉར་ཚགས་འབད་ནིའི་ फोल्डर སེལ་འཐུ་འབད།",
   "helpTabJson": "JSON རྣམ་གཞག",
   "helpTabModes": "ཐབས་ལམ་གྱི་འགྲེལ་བཤད།",
   "helpTabQuickStart": "འགོ་འཛུགས་མགྱོགས་པོ།",
   "helpTabTour": "ཉམས་ལེན་བྱེད།",
+  "helpTag": "མ་འོངས་པར་དབྱེ་དཔྱད་འབད་ནི་དང་འཚོལ་ཞིབ་འབད་ནིའི་དོན་ལུ་ түлхүүр үг བཙུགས།",
   "helpTitle": "རོགས་རམ་ & ལམ་སྟོན།",
   "helpTourDesc": "**མཐོང་འདེམས་རྟགས་དང་པོ** ཡིས་གཙོ་གནད་ནུས་པར་ལམ་སྟོན་བྱེད།\n(དཔེར་ན། **མཐོང་འདེམས་རྟགས་དང་པོ** ཡིས་སྟོན་པའི་ཤོག་བྱང་ལ་མཛུབ་མོས་མནན་ནས་བསུབ་ཆོག)",
   "hide": "སྦེད་པ།",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "དཔེར་ན། གནས་སྟངས་ཀྱི་འགྲེལ་བཤད། མིང་འདྲ་དོན་མང་། སོགས་ལྟ་བུ།",
+  "hintTagExample": "དཔེར་ན། ཚོང་ལས། འགྲུལ་བཞུད། སོགས་ལྟ་བུ།",
+  "homeTab": "སྐད་བསྒྱུར།",
   "importAdded": "སྣོན་པ: {count} ཁ།",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "ཡིག་ཆ{files}དང་། ཐོ་འགོད{entries}ནང་འདྲེན་བྱས།",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON ཡིག་ཆ་ནང་འདྲེན་བྱེད།",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "ཇེ་སོན་ཡིག་ཆ་རྐྱང་པ།",
+  "importSourceFolder": "སྣོད་འཛིན(སྐད་ཡིག་གི་དཔེ་མཛོད་གྲུབ་ཚུལ།)",
+  "importSourceTitle": "ནང་འདྲེན་བྱེད་ཡུལ་འདེམས།",
+  "importSourceZip": "ཛིབ་ཡིག་ཆ(སྡུས་བསྡམས་སྣོད་འཛིན།)",
   "importTotal": "སྤྱི: {count} ཁ།",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "ནང་འཇུག་གི་ནང་དོན།",
+  "inputLanguage": "འཇུག་པའི་སྐད།",
   "inputModeTitle": "ནང་འཇུག",
   "intervalSeconds": "བར་ཐག: {seconds} སྐར་ཆ།",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "ནུས་པ་ལྡན་པའི་གློག་རྡུལ་ཡིག་ཟམ་ཞིག་འཇུག་རོགས།",
   "kakaoContinue": "ཀ་ཀའོ་བརྒྱུད་མཐུད་མཐུད་པ།",
+  "labelDetails": "ཞིབ་ཕྲའི་སྒྲིག་འཛུགས།",
+  "labelFilterMaterial": "དཔྱད་གཞིའི་ཡིག་ཆ།",
+  "labelFilterTag": "རྟགས།",
   "labelLangCode": "སྐད་ཆའི་ཨང་རྟགས་ (དཔེར་ན། en-US, ko-KR)",
-  "labelName": "མིང་།",
   "labelNote": "ཟིན་བྲིས།",
   "labelPOS": "རྣམ་དབྱེ།",
-  "labelRole": "ལས་འགན།",
   "labelSentence": "ཚིག",
   "labelSentenceCollection": "ཚིག་གཞི་ཕྱོགས་སྒྲིག",
   "labelSentenceType": "ཚིག་གཞི་དབྱེ་བ།",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "མཉམ་ཞུགས་པ་ནང་འཇུག་བྱེད་བཞིན་པ...",
-  "location": "གནས་ས།",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
+  "location": "གནས་ཡུལ།",
   "login": "འཛུལ་ཞུགས།",
   "logout": "ཕྱིར་འཐོན་",
   "logoutConfirmMessage": "ད་ལྟའི་སྒྲིག་ཆས་ནས་ཕྱིར་འཐོན་འདོད་དམ?",
   "logoutConfirmTitle": "ཕྱིར་འཐོན་",
   "male": "ཕོ།",
-  "manageParticipants": "མཉམ་ཞུགས་པ་དོ་དམ།",
   "manual": "ལག་འབྲི།",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "དཔྱད་ཆས་གནས་ཚུལ།",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "ང་།",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "སྒྲིག་ཆས་ནས་དཔྱད་ཆས་ལེན་པ།",
   "menuHelp": "རོགས་རམ།",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "ངའི་ཚིག་གྲུབ་ཕྱོགས་བསྡུས།",
   "myWordbook": "ངའི་ཐ་སྙད་ཕྱོགས་བསྡུས།",
   "neutral": "ཕྱོགས་གཏོགས་མེད།",
+  "newNotebookTitle": "དཔེ་དེབ་གསར་པའི་མིང་།",
   "newSubjectName": "བརྗོད་བྱའི་མིང་གསརཔ།",
   "next": "རྗེས་མ།",
-  "noDialogueHistory": "གླེང་མོའི་ལོ་རྒྱུས་མེད།",
-  "noInternetWarningMic": "དྲ་རྒྱ་མི་འདུག དྲ་རྒྱ་མེད་པའི་སྐབས་སུ་སྐད་ངག་ངོས་འཛིན་བྱེད་མི་ཐུབ་པའང་སྲིད།",
-  "noInternetWarningTranslate": "དྲ་རྒྱ་མི་འདུག དྲ་རྒྱ་མེད་པའི་སྐབས་སུ་བསྒྱུར་བའི་ནུས་པ་སྤྱོད་མི་ཐུབ། བསྐྱར་སྦྱོང་ཐབས་ལམ་སྤྱོད་རོགས།",
+  "noDataForLanguage": "ཁྱོད་ཀྱིས་སེལ་འཐུ་བྱས་པའི་སྐད་ཡིག་ནང་གི་སློབ་སྦྱོང་གི་རྒྱུ་ཆ་འདི་ས་གནས་ཀྱི་མཛོད་གཞི་ནང་མེད། རྒྱུ་ཆ་འདི་ཕབ་ལེན་བྱེད་པའམ་ཡང་ན་སྐད་ཡིག་གཞན་ཞིག་འདེམས་རོགས།",
   "noMaterialsInCategory": "རིགས་དབྱེ་འདིའི་ནང་དུ་དཔྱད་ཆས་མེད།",
-  "noParticipantsFound": "ཐོ་འགོད་བྱས་པའི་མཉམ་ཞུགས་པ་མེད།",
   "noRecords": "བདམས་པའི་སྐད་ཆའི་སློབ་སྦྱོང་ཟིན་ཐོ་མེད།",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "སྐད་སྒྲ་ཚོར་མ་བྱུང་།",
   "notSelected": "- གདམ་ག་བྱས་མེད། -",
+  "noteGuidance": "ཡང་དག་པའི་ལོ་ཙཱའི་ཆེད་དུ་ཁྱེད་ཀྱིས་ཞིབ་ཕྲའི་གནས་ཚུལ་ཁ་སྣོན་འཇུག་ས།",
   "onlineLibraryCheckInternet": "དྲ་རྒྱའི་མཐུད་སྦྱོར་ཞིབ་བཤེར་བྱེད་པའམ་ཡང་ན་ཕྱིས་སུ་ཡང་བསྐྱར་འབད་བརྩོན་བྱེད་རོགས།",
   "onlineLibraryLoadFailed": "དཔྱད་ཆས་ནང་འཇུག་བྱེད་པར་འཐུས་ཤོར་བྱུང་།",
   "onlineLibraryNoMaterials": "དཔྱད་ཆས་མེད།",
-  "participantDeleted": "མཉམ་ཞུགས་པ་བསུབས་ཟིན།",
-  "participantRename": "མཉམ་ཞུགས་པའི་མིང་བསྒྱུར།",
-  "partner": "རོགས་ཟླ།",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "རོགས་ཟླའི་ཐབས་ལམ།",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "སྒྲིག་འཛུགས་ཁ་ཕྱེ།",
   "password": "གསང་ཨང་།",
   "passwordTooShort": "གསང་ཨང་ཡིག་གྲངས་6ཡན་དགོས།",
   "perfect": "འགྲིག་འགྲིག",
-  "personaFriend": "ས་གནས་གྲོགས་པོ།",
-  "personaGuide": "ཡུལ་སྐོར་ལམ་སྟོན།",
-  "personaTeacher": "དབྱིན་ཇིའི་དགེ་རྒན།",
+  "pickGallery": "པར་མཛོད་ནས་འདེམས།",
   "playAgain": "ཡང་བསྐྱར་རྩེད།",
   "playbackFailed": "སྒྲ་འབྱིན་བྱེད་མ་ཐུབ: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "གཟུགས་ཚིག",
   "posAdverb": "བྱ་ཚིག་འབྲེལ་ཡུ།",
+  "posArticle": "རྩོམ་ཡིག",
   "posConjunction": "འབྲེལ་མཐུད་ཚིག",
   "posInterjection": "ངུ་རྟགས་ཚིག",
   "posNoun": "མིང་ཚིག",
+  "posParticle": "རྡུལ་ཕྲན།",
   "posPreposition": "གནས་སྟོན་ཚིག",
   "posPronoun": "མིང་ཚབ་ཚིག",
   "posVerb": "བྱ་ཚིག",
   "practiceModeTitle": "སྦྱོང་བརྡར།",
   "practiceWordsOnly": "ཐ་སྙད་ཁོ་ནར་ཉམས་ལེན་བྱེད།",
+  "processing": "ལས་སྣོན་བྱེད་པ།...",
   "progress": "འཕེལ་རིམ: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "དཀར་ཆག་ > སྐད་བརྡ་སྒྲིག་འཛུགས་ནང་ནས་རང་གི་སྐད་བརྡ་དང་སློབ་སྦྱོང་སྐད་བརྡ་ཐོག་མར་གཏན་འཁེལ་བྱེད།",
+  "quickStartStep1Title": "༡. སྐད་བརྡ་སྒྲིག་འཛུགས།",
+  "quickStartStep2Desc": "ནང་འཇུག་( microphone/keyboard) -> བསྒྱུར་བཅོས་ -> གསོག་འཇོག་གོ་རིམ་ལྟར་རང་ཉིད་ཀྱི་སློབ་སྦྱོང་ཤོག་བྱང་བཟོས།",
+  "quickStartStep2Title": "༢. རྒྱུན་ལམ་གཞི་རྩ།",
+  "quickStartStep3Desc": "ཁ་བརྡས་ལག་ལེན་བྱེད་, སྒྲ་གདངས་ལག་ལེན་  Tab ནང་ཡི་གེ་མཐོང་སྟེ་ཐད་ཀར་སྒྲ་གདངས་བཏོན་ནས་ལག་ལེན་བྱེད།",
+  "quickStartStep3Title": "༣. བྱེད་ལུགས་སྤྱོད།",
   "recentNItems": "ཉེ་ལམ་དུ་བཟོས་པའི་ {count} ལ་བལྟ་བ།",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "སྐད་བསྒྱུར་རེ་འདུན་འབུལ་བ།",
   "reset": "ཐོག་མར་སླར་གསོ།",
   "resetPracticeHistory": "ཉམས་ལེན་ལོ་རྒྱུས་སླར་སོས་བྱེད།",
   "retry": "ཡང་བསྐྱར་འབད་བརྩོན་བྱེད་དམ?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "བསྐྱར་སྦྱོང་།",
-  "roleAi": "AI",
-  "roleThirdParty": "ཕྱོགས་གསུམ་པ།",
-  "roleUser": "བཀོལ་སྤྱོད་པ།",
   "save": "བསྲུང་",
+  "saveAsSentence": "ཚིག་གྲུབ་ཏུ་ཉར།",
+  "saveAsWord": "ཚིག་ཏུ་ཉར།",
   "saveData": "གཞི་གྲངས་ཉར་ཚགས།",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "ཞིབ་བཤེར་ལོ་རྒྱུས་སུ་ཉར།",
   "saveTranslationsFromSearch": "འཚོལ་ཞིབ་ཐབས་ལམ་ནས་བསྒྱུར་བ་ཉར་ཚགས་བྱེད་རོགས།",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "ཞིབ་བཤེར་བྱེད་པའི་པར་རིས་ཤིག་འདེམས།",
+  "scanLabel": "ཞིབ་བཤེར།",
   "score": "ཏག་ཏག་ཚད: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "རིགས་གྲས་འདེམས།",
-  "selectParticipants": "མཉམ་ཞུགས་པ་འདེམས།",
-  "selectSentenceType": "ཚིག་རིགས་འདེམས།",
   "selectStudyMaterial": "སློབ་སྦྱོང་དཔྱད་ཆས་འདེམས།",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "ཚིག",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "ཐོ་འགོད་བྱེད།",
-  "similarTextFound": "འདྲ་བའི་ཡི་གེ་རྙེད་བྱུང་།",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "མི་དགོས་པར་བཞག",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "འབྱུང་ཁུངས:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "འབྱུང་ཁུངས་སྐད་ཆ།",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "སྐད་ཡིག་གཞན་པའི་ནང་དུ་ཉིན་རེའི་གཏམ་བཤད་ཐོག་མར་བསྒྱུར། སྐད་བརྡ་འཕྲུལ་ཆས་ཀྱིས་ཁྱེད་ཀྱི་སྐད་བརྡའི་འཚོ་བ་ཟིན་ཐོ་བཟོ།",
   "sourceLanguageLabel": "ངའི་སྐད་ཆ (Source)",
-  "speakNow": "ད་ལྟ་བཤད་རོགས!",
-  "speaker": "གཏམ་བཤད་པ།",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "གཏམ་བཤད་པ་འདེམས།",
-  "speakingPractice": "སྐད་ཆ་ཤོད་པའི་ཉམས་ལེན།",
-  "startChat": "གླེང་མོ་འགོ་བཙུགས།",
-  "startPractice": "ཉམས་ལེན་འགོ་བཙུགས།",
   "startTutorial": "སློབ་ཚན་འགོ་བཙུགས།",
-  "startWarning": "དོགས་ཟོན།",
   "startsWith": "འགོ་བཙུགས་པའི་ཡི་གེ",
   "statusCheckEmail": "ཁྱེད་ཀྱི་གློག་འཕྲིན་ནང་ཞིབ་བཤེར་བྱས་ཏེ་དེའི་ར་སྤྲོད་གནང་རོགས།",
   "statusDownloading": "ཕབ་ལེན་བྱེད་བཞིན་པ: {name}...",
-  "statusImportFailed": "ནང་འདྲེན་བྱེད་མ་ཐུབ: {error}",
-  "statusImportSuccess": "{name} ནང་འདྲེན་ལེགས་འགྲུབ།",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "འཛུལ་ཞུགས་མེད་པར་བཟོས།",
-  "statusLoginFailed": "འཛུལ་ཞུགས་བྱེད་པར་འཐུས་ཤོར་བྱུང་: {error}",
-  "statusLoginSuccess": "འཛུལ་ཞུགས་བྱེད་པར་ལེགས་འགྲུབ་བྱུང་།",
-  "statusLogoutSuccess": "ཕྱིར་འཐོན་ཟིན།",
-  "statusSignUpFailed": "ཐོ་འགོད་བྱེད་པར་འཐུས་ཤོར་བྱུང་: {error}",
-  "statusSigningUp": "ཐོ་འགོད་བྱེད་བཞིན་པ...",
-  "stopPractice": "ཉམས་ལེན་མཚམས་འཇོག",
-  "studyComplete": "སློབ་སྦྱོང་ལེགས་འགྲུབ།",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "སློབ་སྦྱོང་ཟིན་ཐོ་({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "progress": {
+        "type": "String",
+        "example": "50"
       }
     }
   },
+  "statusImportFailed": "ནང་འདྲེན་བྱེད་མ་ཐུབ: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} ནང་འདྲེན་ལེགས་འགྲུབ།",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "འཛུལ་ཞུགས་བྱེད་པར་འཐུས་ཤོར་བྱུང་: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "འཛུལ་ཞུགས་བྱེད་པར་ལེགས་འགྲུབ་བྱུང་།",
+  "statusLogoutSuccess": "ཕྱིར་འཐོན་ཟིན།",
+  "statusRequestFailed": "སྐད་བསྒྱུར་རེ་འདུན་འབུལ་མི་ཐུབ་པ།: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "སྐད་བསྒྱུར་རེ་འདུན་ལེགས་གྲུབ་བྱུང་།",
+  "stopPractice": "ཉམས་ལེན་མཚམས་འཇོག",
+  "studyLangNotFoundDesc": "ཁྱེད་ཀྱིས་བདམས་པའི་ཡིག་ཆ་དེས་ད་ལྟའི་སློབ་སྦྱོང་སྐད་ཡིག་({targetLang})ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པས་ས་གནས་སུ་ཉར་ཚགས་བྱེད་མི་ཐུབ། སྐད་བསྒྱུར་རེ་འདུན་འབུལ་འདོད་དམ།",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "སློབ་སྦྱོང་སྐད་ཡིག་འཚོལ་མ་ཐོབ།",
   "styleFormal": "གུས་ཞབས།",
   "styleInformal": "སྤྱིར་བཏང་།",
   "stylePolite": "གོང་བཀུར།",
   "styleSlang": "སླང་/སྤྱིར་བཏང་།",
-  "subject": "མགོ་བརྗོད:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "སྐད་ཆ་བརྗེ་སྒྱུར་བྱེད།",
-  "switchToAi": "AI ཐབས་ལམ་ལ་བསྒྱུར།",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "རོགས་ཟླའི་ཐབས་ལམ་ལ་བསྒྱུར།",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "གཞི་གྲངས་མཐུན་སྒྲིག་བྱེད་བཞིན་པ...",
-  "tabConversation": "གླེང་མོ།",
   "tabReview": "བསྐྱར་སྦྱོང་ ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "ཇེ་ཉུང་།",
   "tooltipIncrease": "ཇེ་མང་།",
   "tooltipSearch": "འཚོལ།",
+  "tooltipSettingsConfirm": "སྒྲིག་འཛུགས་གཏན་འཁེལ།",
   "tooltipSpeaking": "སྐད་ཆ་ཤོད་པ།",
   "tooltipStudyReview": "སློབ་སྦྱོང་+བསྐྱར་སྦྱོང་།",
   "totalRecords": "ཟིན་ཐོ་བསྡོམས་{count} ཡོད (ཡོངས་ལ་བལྟ་བ།)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "ད་ལྟ་ཕབ་བསྒྱུར་བྱེད།",
   "translating": "བསྒྱུར་བཞིན་པ...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "བསྒྱུར་བའི་སྐད།",
   "translationLimitExceeded": "བསྒྱུར་བའི་ཚད་ལས་བརྒལ་བ།",
   "translationLimitMessage": "ཉིན་རེའི་རིན་མེད་བསྒྱུར་བ་(ཐེངས་5)ཚང་མ་བཀོལ་ཚར་བ།\\n\\nཁྱབ་བསྒྲགས་བལྟས་ཏེ་ཐེངས་5མྱུར་དུ་ཁ་གསབ་བྱེད་དམ?",
   "translationLoaded": "ཉར་ཚགས་བྱས་པའི་བསྒྱུར་བ་ནང་འཇུག་བྱས།",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "བསྒྱུར་བའི་ཐེངས་གྲངས་ཐེངས་5ཁ་གསབ་བྱས་ཟིན!",
+  "translationResult": "ཕབ་བསྒྱུར་གྱི་གྲུབ་འབྲས།",
   "translationResultHint": "བསྒྱུར་བའི་མཇུག་འབྲས - བཟོ་བཅོས་བྱེད་ཆོག",
   "tryAgain": "ཡང་བསྐྱར་འབད་བརྩོན་བྱེད།",
-  "tutorialAiChatDesc": "AI མི་སྣ་དང་མཉམ་དུ་དངོས་སྦྱོང་གླེང་མོ་བྱེད་རོགས།",
-  "tutorialAiChatTitle": "AI ཁ་བརྡ།",
+  "ttsInstallGuide": "Android སྒྲིག་འཛུགས་> Google TTS ནང་དུ་སྐད་ཡིག་གི་གནས་སྡུད་འདི་བཙུགས་རོགས།",
+  "ttsMissing": "སྐད་ཡིག་འདིའི་སྒྲ་འབྱིན་འཕྲུལ་ཆས་འདི་ཁྱེད་ཀྱི་སྒྲིག་ཆས་སུ་བཙུགས་མེད།",
+  "ttsUnsupportedNatively": "འདི་ག་ཐབས་སྒྲིག་གི་སྔོན་འཛིན་སྒྲིག་འགོད་འདི་གིས་སྐད་ཡིག་འདི་གི་ངག་ཐོག་གཏང་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།",
   "tutorialContextDesc": "ཚིག་གཅིག་པ་ཡིན་ནའང་གནས་སྟངས་(དཔེར་ན། ཞོགས་པ། དགོང་དྲོ)བྲིས་ཚེ་སོ་སོར་ཉར་ཚགས་བྱེད་ཆོག",
   "tutorialContextTitle": "གནས་སྟངས་/ཡིག་འབྲུའི་རྟགས།",
   "tutorialLangSettingsDesc": "བསྒྱུར་དགོས་པའི་ཐོག་མའི་སྐད་ཆ་དང་དམིགས་འབེན་སྐད་ཆ་སྒྲིག་འགོད་བྱེད།",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "ནང་འཇུག་བྱས་པའི་ཡི་གེ་བསྒྱུར་བ།",
   "tutorialTransTitle": "བསྒྱུར་བ།",
   "typeExclamation": "འབོད་སྒྲའི་ཚིག",
+  "typeIdiom": "གཏམ་དཔེ།",
   "typeImperative": "བཀའ་རྒྱའི་ཚིག",
+  "typeProverb": "གཏམ་ཚིག/ལེགས་བཤད།",
   "typeQuestion": "དྲི་ཚིག",
   "typeStatement": "བརྗོད་ཚིག",
   "usageLimitTitle": "ཚད་ལ་སླེབས་པ།",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "དྲ་ཐོག་ལམ་སྟོན་ལ་བལྟ་བ།",
   "voluntaryTranslations": "རང་མོས་བསྒྱུར་བ།",
   "watchAdAndRefill": "ཁྱབ་བསྒྲགས་བལྟས་ཏེ་ཁ་གསབ་བྱེད (+5 ཐེངས།)",
+  "welcomeButton": "འགོ་འཛུགས།",
+  "welcomeDesc": "Talkie ནང་ལ་ཕེབས་པ་དགའ་བསུ་ཞུ། འཛམ་གླིང་ནང་གི་སྐད་ཡིག་ 80 ལྷག་ཙམ་ལ་བརྒྱ་ཆ་བརྒྱ་ཐམ་པའི་ཆ་ཚང་དང་ལྡན་པའི་རྒྱབ་སྐྱོར་བྱེད་པ་དང་། སྤུས་ལེགས་གསུམ་ཚད་ཀྱི་བཟོ་བཀོད་གསར་པ་དང་ནུས་རྩལ་ལེགས་བཅོས་བྱས་པ་བརྒྱུད་ནས་སྦྱོང་བརྡར་གྱི་ཉམས་མྱོང་ཆ་ཚང་ཞིག་སྟེར་ངེས།",
+  "welcomeTitle": "Talkie ལ་ཕེབས་པར་དགའ་བསུ་ཞུ།",
   "word": "ཐ་སྙད།",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "དགྲ་འབྱོར་བའི་སྔོན་ལ་ཐ་སྙད་ཤོད་དེ་རྟེན་གཞི་སྲུང་སྐྱོབ་བྱེད།",
   "wordDefenseTitle": "ཐ་སྙད་སྲུང་བ།",
   "wordModeLabel": "ཐ་སྙད་ཐབས་ལམ།",
-  "yourPronunciation": "ངའི་ཀློག་སྟངས།",
-  "ttsUnsupportedNatively": "འདི་ག་ཐབས་སྒྲིག་གི་སྔོན་འཛིན་སྒྲིག་འགོད་འདི་གིས་སྐད་ཡིག་འདི་གི་ངག་ཐོག་གཏང་ནི་ལུ་རྒྱབ་སྐྱོར་མི་འབད།",
-  "homeTab": "སྐད་བསྒྱུར།",
-  "welcomeTitle": "Talkie ལ་ཕེབས་པར་དགའ་བསུ་ཞུ།",
-  "welcomeDesc": "Talkie ནང་ལ་ཕེབས་པ་དགའ་བསུ་ཞུ། འཛམ་གླིང་ནང་གི་སྐད་ཡིག་ 80 ལྷག་ཙམ་ལ་བརྒྱ་ཆ་བརྒྱ་ཐམ་པའི་ཆ་ཚང་དང་ལྡན་པའི་རྒྱབ་སྐྱོར་བྱེད་པ་དང་། སྤུས་ལེགས་གསུམ་ཚད་ཀྱི་བཟོ་བཀོད་གསར་པ་དང་ནུས་རྩལ་ལེགས་བཅོས་བྱས་པ་བརྒྱུད་ནས་སྦྱོང་བརྡར་གྱི་ཉམས་མྱོང་ཆ་ཚང་ཞིག་སྟེར་ངེས།",
-  "welcomeButton": "འགོ་འཛུགས།",
-  "labelDetails": "ཞིབ་ཕྲའི་སྒྲིག་འཛུགས།",
-  "translationResult": "ཕབ་བསྒྱུར་གྱི་གྲུབ་འབྲས།",
-  "inputContent": "ནང་འཇུག་གི་ནང་དོན།",
-  "translateNow": "ད་ལྟ་ཕབ་བསྒྱུར་བྱེད།",
-  "tooltipSettingsConfirm": "སྒྲིག་འཛུགས་གཏན་འཁེལ།",
-  "hintNoteExample": "དཔེར་ན། གནས་སྟངས་ཀྱི་འགྲེལ་བཤད། མིང་འདྲ་དོན་མང་། སོགས་ལྟ་བུ།",
-  "hintTagExample": "དཔེར་ན། ཚོང་ལས། འགྲུལ་བཞུད། སོགས་ལྟ་བུ།",
-  "addNew": "གསར་པ་ཁ་སྣོན།",
-  "newNotebookTitle": "དཔེ་དེབ་གསར་པའི་མིང་།",
-  "enterNameHint": "མིང་འབྲི་རོགས།",
-  "add": "ཁ་སྣོན།",
-  "openSettings": "སྒྲིག་འཛུགས་ཁ་ཕྱེ།",
-  "helpNotebook": "བསྒྱུར་ཡིག་འབྲི་དེབ་ཉར་ཚགས་འབད་ནིའི་ फोल्डर སེལ་འཐུ་འབད།",
-  "helpNote": "མིང་ཚིག་གི་དོན་དང་ དཔེར་བརྗོད། གནས་སྟངས་ཚུ་རང་དབང་ཐོག་འབྲི།",
-  "helpTag": "མ་འོངས་པར་དབྱེ་དཔྱད་འབད་ནི་དང་འཚོལ་ཞིབ་འབད་ནིའི་དོན་ལུ་ түлхүүр үг བཙུགས།",
-  "requestTranslation": "སྐད་བསྒྱུར་རེ་འདུན་འབུལ་བ།",
-  "statusRequestSuccess": "སྐད་བསྒྱུར་རེ་འདུན་ལེགས་གྲུབ་བྱུང་།",
-  "statusRequestFailed": "སྐད་བསྒྱུར་རེ་འདུན་འབུལ་མི་ཐུབ་པ།: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "སློབ་སྦྱོང་སྐད་ཡིག་འཚོལ་མ་ཐོབ།",
-  "studyLangNotFoundDesc": "ཁྱེད་ཀྱིས་བདམས་པའི་ཡིག་ཆ་དེས་ད་ལྟའི་སློབ་སྦྱོང་སྐད་ཡིག་({targetLang})ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པས་ས་གནས་སུ་ཉར་ཚགས་བྱེད་མི་ཐུབ། སྐད་བསྒྱུར་རེ་འདུན་འབུལ་འདོད་དམ།",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "༡. སྐད་བརྡ་སྒྲིག་འཛུགས།",
-  "quickStartStep1Desc": "དཀར་ཆག་ > སྐད་བརྡ་སྒྲིག་འཛུགས་ནང་ནས་རང་གི་སྐད་བརྡ་དང་སློབ་སྦྱོང་སྐད་བརྡ་ཐོག་མར་གཏན་འཁེལ་བྱེད།",
-  "quickStartStep2Title": "༢. རྒྱུན་ལམ་གཞི་རྩ།",
-  "quickStartStep2Desc": "ནང་འཇུག་( microphone/keyboard) -> བསྒྱུར་བཅོས་ -> གསོག་འཇོག་གོ་རིམ་ལྟར་རང་ཉིད་ཀྱི་སློབ་སྦྱོང་ཤོག་བྱང་བཟོས།",
-  "quickStartStep3Title": "༣. བྱེད་ལུགས་སྤྱོད།",
-  "quickStartStep3Desc": "ཁ་བརྡས་ལག་ལེན་བྱེད་, སྒྲ་གདངས་ལག་ལེན་  Tab ནང་ཡི་གེ་མཐོང་སྟེ་ཐད་ཀར་སྒྲ་གདངས་བཏོན་ནས་ལག་ལེན་བྱེད།",
-  "noteGuidance": "ཡང་དག་པའི་ལོ་ཙཱའི་ཆེད་དུ་ཁྱེད་ཀྱིས་ཞིབ་ཕྲའི་གནས་ཚུལ་ཁ་སྣོན་འཇུག་ས།"
+  "yourPronunciation": "ངའི་ཀློག་སྟངས།"
 }

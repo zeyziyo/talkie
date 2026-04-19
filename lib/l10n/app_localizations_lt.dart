@@ -9,53 +9,20 @@ class AppLocalizationsLt extends AppLocalizations {
   AppLocalizationsLt([String locale = 'lt']) : super(locale);
 
   @override
-  String get basicWords => 'Pagrindinė žodžių saugykla';
-
-  @override
-  String get inputLanguage => 'Įvesties kalba';
-
-  @override
-  String get translationLanguage => 'Vertimo kalba';
-
-  @override
-  String get simplifiedGuidance =>
-      'Akimirksniu paverskite kasdienius pokalbius į užsienio kalbas! „Talkie“ įrašys jūsų kalbos gyvenimą.';
-
-  @override
-  String get noDataForLanguage =>
-      'Šiai kalbai mokymosi medžiagos vietinėje DB nėra. Atsisiųskite medžiagą arba pasirinkite kitą kalbą.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Atšaukti';
-
-  @override
   String get accuracy => 'Tikslumas';
-
-  @override
-  String get ttsMissing =>
-      'Šiam kalbos paketui įrenginyje neįdiegta jokio teksto į kalbą variklio.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Įdiekite kalbos duomenis skiltyje „Android“ nustatymai > „Google TTS“.';
 
   @override
   String get adLoading =>
       'Įkeliamas skelbimas. Bandykite dar kartą po kurio laiko.';
 
   @override
-  String get addNewSubject => 'Pridėti naują pavadinimą';
+  String get add => 'Pridėti';
 
   @override
-  String get addParticipant => 'Pridėti dalyvį';
+  String get addNew => 'Pridėti naują';
+
+  @override
+  String get addNewSubject => 'Pridėti naują pavadinimą';
 
   @override
   String get addTagHint => 'Pridėti žymę...';
@@ -88,6 +55,12 @@ class AppLocalizationsLt extends AppLocalizations {
   String get basicWordRepository => 'Pagrindinė žodžių saugykla';
 
   @override
+  String get basicWords => 'Pagrindinė žodžių saugykla';
+
+  @override
+  String get cancel => 'Atšaukti';
+
+  @override
   String get caseObject => 'Galima';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get caseSubject => 'Vardininkas';
 
   @override
-  String get chatAiChat => 'Pokalbis';
-
-  @override
-  String get chatAllConversations => 'Visi pokalbiai';
-
-  @override
-  String get chatChoosePersona => 'Pasirinkite personažą';
-
-  @override
-  String get chatEndMessage => 'Ar norite baigti pokalbį?';
-
-  @override
-  String get chatEndTitle => 'Baigti ir išsaugoti pokalbį';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Nepavyko kalbėtis: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Pokalbio ištrauka ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Pokalbių istorija';
-
-  @override
-  String get chatNew => 'Naujas pokalbis';
-
-  @override
-  String get chatNewChat => 'Naujas pokalbis';
-
-  @override
-  String get chatNoConversations => 'Dar nėra pokalbių';
-
-  @override
-  String get chatSearchHint => 'Ieškoti pagal pokalbio pavadinimą...';
-
-  @override
-  String get chatNoteSearchHint => 'Ieškokite pagal pastabas...';
-
-  @override
-  String get chatSaveAndExit => 'Išsaugoti ir išeiti';
-
-  @override
-  String get chatStartNewPrompt => 'Pradėkite naują pokalbį praktikai!';
-
-  @override
-  String get chatTypeHint => 'Įveskite pranešimą...';
-
-  @override
-  String get chatUntitled => 'Pokalbis be pavadinimo';
-
-  @override
   String get checking => 'Tikrinama...';
 
   @override
@@ -168,13 +86,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Ar tikrai norite ištrinti šį mokymosi įrašą?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Ar tikrai norite ištrinti šį pokalbį?\nIštrintų pokalbių atkurti negalima.';
-
-  @override
-  String get confirmDeleteParticipant => 'Ar tikrai norite ištrinti šį dalyvį?';
 
   @override
   String get contextTagHint =>
@@ -214,23 +125,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get deleteRecord => 'Ištrinti įrašą';
 
   @override
-  String get dialogueQuestDesc =>
-      'Praktikuokite pokalbius per situacijų komediją. Pasirinkite tinkamą atsakymą ir pasakykite.';
-
-  @override
-  String get dialogueQuestTitle => 'Dialogo užduotis';
-
-  @override
-  String get disambiguationPrompt => 'Kaip norite išversti?';
-
-  @override
-  String get disambiguationTitle => 'Pasirinkite reikšmę';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Neturite paskyros?';
-
-  @override
-  String get editParticipant => 'Redaguoti dalyvį';
 
   @override
   String get email => 'El. paštas';
@@ -238,6 +136,9 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Šis el. paštas jau naudojamas. Prisijunkite arba atkurkite slaptažodį.';
+
+  @override
+  String get enterNameHint => 'Įveskite pavadinimą';
 
   @override
   String get enterNewSubjectName => 'Įveskite naują pavadinimą';
@@ -278,6 +179,9 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get errors => 'Klaidos:';
+
+  @override
+  String get extractedText => 'Aptiktas tekstas';
 
   @override
   String get female => 'Moteris';
@@ -338,12 +242,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get gender => 'Lytis';
 
   @override
-  String get labelFilterMaterial => 'Medžiaga';
-
-  @override
-  String get labelFilterTag => 'Žyma';
-
-  @override
   String get generalTags => 'Bendrosios žymos';
 
   @override
@@ -356,19 +254,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get googleContinue => 'Prisijungti per Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Importuokite visą pokalbių rinkinį kaip JSON failą.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON struktūra: naudokite `dialogues` masyvą vietoj `entries`\n• Automatinis atkūrimas: atkuriamas pokalbio pavadinimas, personažas, pranešimų tvarka.\n• Vieta: importuoti pokalbiai rodomi AI pokalbių režimo skirtuke „Istorija“.';
-
-  @override
   String get helpJsonDesc =>
       'Jei norite importuoti mokymosi medžiagą, kuri bus naudojama 3 režime, kaip JSON failą, vadovaukitės šiuo formatu:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dialogas';
 
   @override
   String get helpJsonTypeSentence => 'Sakinys';
@@ -401,11 +288,12 @@ class AppLocalizationsLt extends AppLocalizations {
       '• Medžiagos pasirinkimas: pasirinkite medžiagų rinkinį, kurį norite studijuoti\n• Intervalo nustatymas: reguliuokite laukimo laiką tarp sakinių naudodami mygtukus [-] [+]. (3–60 sekundžių)\n• Pradėti / sustabdyti: šešėliavimo sesijos valdymas\n• Kalbėjimas: klausykitės ir kartokite balsą\n• Atsiliepimas: tikslumo balas (0–100) ir spalvų ekranas\n• Paieškos sąlygos: filtruokite praktikos taikinius pagal žymą, naujausius elementus, pradžios raidę';
 
   @override
-  String get helpModeChatDesc => 'Praktikuokite pokalbius su AI personažu.';
+  String get helpNote =>
+      'Laisvai įrašykite žodžių reikšmes, sakinius ar situacijas.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI pokalbiai: praktikuokite pokalbius realiame gyvenime su asmenybėmis meniu „Pokalbis“ apatinėje skirtukų juostoje\n• Asmenybės nustatymas: laisvai nurodykite pašnekovo lytį, vardą ir kalbos kodą\n• GPS inscenizacija: atpažinkite savo dabartinę vietą ir rekomenduokite pokalbio temas, atitinkančias vietą\n• 2 kalbos: AI atsakymai rodomi kartu su vertimu, kad maksimaliai padidintumėte mokymosi efektą\n• Įrašų valdymas: filtruokite ankstesnę pokalbių istoriją ir išsaugokite konkrečias žinutes iš pokalbio kaip mokymosi medžiagą';
+  String get helpNotebook =>
+      'Pasirinkite aplanką, kuriame norite išsaugoti išverstus rezultatus.';
 
   @override
   String get helpTabJson => 'JSON formatas';
@@ -420,6 +308,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get helpTabTour => 'Apžiūrėti';
 
   @override
+  String get helpTag =>
+      'Įveskite raktinius žodžius, kad vėliau galėtumėte rūšiuoti ar ieškoti.';
+
+  @override
   String get helpTitle => 'Pagalba ir gidai';
 
   @override
@@ -428,6 +320,15 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get hide => 'Slėpti';
+
+  @override
+  String get hintNoteExample => 'Pvz.: kontekstas, homonimai ir kt.';
+
+  @override
+  String get hintTagExample => 'Pvz.: verslas, kelionės...';
+
+  @override
+  String get homeTab => 'Vertimas';
 
   @override
   String importAdded(int count) {
@@ -440,23 +341,6 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Toks pavadinimas jau yra. Pakeiskite pavadinimą ir bandykite dar kartą.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -472,6 +356,11 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Importuota $files failų, $entries įrašų.';
+  }
+
+  @override
   String get importJsonFile => 'Importuoti JSON failą';
 
   @override
@@ -483,12 +372,30 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Vienas JSON failas';
+
+  @override
+  String get importSourceFolder => 'Aplankas (kalbos bibliotekos struktūra)';
+
+  @override
+  String get importSourceTitle => 'Pasirinkite importavimo šaltinį';
+
+  @override
+  String get importSourceZip => 'ZIP failas (suglaudintas aplankas)';
+
+  @override
   String importTotal(int count) {
     return 'Iš viso: $count';
   }
 
   @override
   String get importing => 'Importuojama...';
+
+  @override
+  String get inputContent => 'Įvesties turinys';
+
+  @override
+  String get inputLanguage => 'Įvesties kalba';
 
   @override
   String get inputModeTitle => 'Įvestis';
@@ -505,19 +412,22 @@ class AppLocalizationsLt extends AppLocalizations {
   String get kakaoContinue => 'Tęsti su Kakao';
 
   @override
-  String get labelLangCode => 'Kalbos kodas (pvz., en-US, ko-KR)';
+  String get labelDetails => 'Išsamūs nustatymai';
 
   @override
-  String get labelName => 'Vardas';
+  String get labelFilterMaterial => 'Medžiaga';
+
+  @override
+  String get labelFilterTag => 'Žyma';
+
+  @override
+  String get labelLangCode => 'Kalbos kodas (pvz., en-US, ko-KR)';
 
   @override
   String get labelNote => 'Pastaba';
 
   @override
   String get labelPOS => 'Kalbos dalis';
-
-  @override
-  String get labelRole => 'Rolė';
 
   @override
   String get labelSentence => 'Sakinys';
@@ -568,9 +478,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get listening => 'Klausoma...';
 
   @override
-  String get loadingParticipants => 'Įkeliami dalyviai...';
-
-  @override
   String get location => 'Vieta';
 
   @override
@@ -590,9 +497,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get male => 'Vyras';
 
   @override
-  String get manageParticipants => 'Tvarkyti dalyvius';
-
-  @override
   String get manual => 'Rankinis įvedimas';
 
   @override
@@ -600,9 +504,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get materialInfo => 'Informacija apie medžiagą';
-
-  @override
-  String get me => 'Aš';
 
   @override
   String get menuDeviceImport => 'Importuoti medžiagą iš įrenginio';
@@ -670,27 +571,20 @@ class AppLocalizationsLt extends AppLocalizations {
   String get neutral => 'Neutralus';
 
   @override
+  String get newNotebookTitle => 'Naujo sąsiuvinio pavadinimas';
+
+  @override
   String get newSubjectName => 'Naujas žodyno/frazyno pavadinimas';
 
   @override
   String get next => 'Kitas';
 
   @override
-  String get noDialogueHistory => 'Pokalbių istorijos nėra.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Nėra interneto ryšio. Balso atpažinimas neprisijungus gali neveikti.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Nėra interneto ryšio. Vertimo funkcija nepasiekiama neprisijungus. Naudokite peržiūros režimą.';
+  String get noDataForLanguage =>
+      'Šiai kalbai mokymosi medžiagos vietinėje DB nėra. Atsisiųskite medžiagą arba pasirinkite kitą kalbą.';
 
   @override
   String get noMaterialsInCategory => 'Šioje kategorijoje nėra medžiagos.';
-
-  @override
-  String get noParticipantsFound => 'Dalyvių nerasta.';
 
   @override
   String get noRecords => 'Šiai kalbai pasirinktų mokymosi įrašų nėra';
@@ -711,6 +605,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get notSelected => '- Nepasirinkta -';
 
   @override
+  String get noteGuidance =>
+      'Kur įvedate papildomą informaciją tikslesniam vertimui';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Patikrinkite interneto ryšį arba bandykite vėliau.';
 
@@ -721,16 +619,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Medžiagos nerasta.';
 
   @override
-  String get participantDeleted => 'Dalyvis ištrintas.';
-
-  @override
-  String get participantRename => 'Pervardyti dalyvį';
-
-  @override
-  String get partner => 'Partneris';
-
-  @override
-  String get partnerMode => 'Partnerio režimas';
+  String get openSettings => 'Atverti nustatymus';
 
   @override
   String get password => 'Slaptažodis';
@@ -742,13 +631,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get perfect => 'Puiku!';
 
   @override
-  String get personaFriend => 'Vietinis draugas';
-
-  @override
-  String get personaGuide => 'Kelionių vadovas';
-
-  @override
-  String get personaTeacher => 'Anglų kalbos mokytojas';
+  String get pickGallery => 'Pasirinkti iš galerijos';
 
   @override
   String get playAgain => 'Žaisti iš naujo';
@@ -768,6 +651,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get posAdverb => 'Prieveiksmis';
 
   @override
+  String get posArticle => 'Artikelis';
+
+  @override
   String get posConjunction => 'Jungtukas';
 
   @override
@@ -775,6 +661,9 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get posNoun => 'Daiktavardis';
+
+  @override
+  String get posParticle => 'Dalelytė';
 
   @override
   String get posPreposition => 'Prielinksnis/dalelytė';
@@ -792,9 +681,33 @@ class AppLocalizationsLt extends AppLocalizations {
   String get practiceWordsOnly => 'Praktikuoti tik žodžius';
 
   @override
+  String get processing => 'Apdorojama...';
+
+  @override
   String progress(int current, int total) {
     return 'Eiga: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Pirmiausia nustatykite savo ir mokymosi kalbas meniu > Kalbos nustatymai.';
+
+  @override
+  String get quickStartStep1Title => '1. Kalbos nustatymai';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Sukurkite savo mokymosi korteles tokia tvarka: įvestis (mikrofonas / klaviatūra) -> vertimas -> išsaugojimas.';
+
+  @override
+  String get quickStartStep2Title => '2. Pagrindinis procesas';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Praktikuokitės per pokalbį, o skirtuke „Tarimo praktika“ skaitykite tekstą ir praktikuokite tartį patys.';
+
+  @override
+  String get quickStartStep3Title => '3. Režimų naudojimas';
 
   @override
   String recentNItems(int count) {
@@ -819,6 +732,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get refresh => 'Atnaujinti';
 
   @override
+  String get requestTranslation => 'Prašyti vertimo';
+
+  @override
   String get reset => 'Atkurti';
 
   @override
@@ -839,16 +755,13 @@ class AppLocalizationsLt extends AppLocalizations {
   String get reviewModeTitle => 'Apžvalga';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Trečioji šalis';
-
-  @override
-  String get roleUser => 'Vartotojas';
-
-  @override
   String get save => 'Išsaugoti';
+
+  @override
+  String get saveAsSentence => 'Išsaugoti kaip sakinį';
+
+  @override
+  String get saveAsWord => 'Išsaugoti kaip žodį';
 
   @override
   String get saveData => 'Išsaugoti duomenis';
@@ -859,6 +772,9 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Išsaugoti skenavimo istorijoje';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Pabandykite išsaugoti vertimus iš paieškos režimo';
 
@@ -867,6 +783,12 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get saving => 'Išsaugoma...';
+
+  @override
+  String get scanInstructions => 'Pasirinkite vaizdą, kurį norite nuskaityti';
+
+  @override
+  String get scanLabel => 'Skenuoti';
 
   @override
   String score(String score) {
@@ -913,16 +835,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get selectPOS => 'Pasirinkite kalbos dalį';
 
   @override
-  String get selectParticipants => 'Pasirinkti dalyvius';
-
-  @override
-  String get selectSentenceType => 'Pasirinkite sakinio tipą';
-
-  @override
   String get selectStudyMaterial => 'Pasirinkite mokymosi medžiagą';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Sakinys';
@@ -931,43 +844,14 @@ class AppLocalizationsLt extends AppLocalizations {
   String get signUp => 'Registruotis';
 
   @override
-  String get similarTextFound => 'Rastas panašus tekstas';
-
-  @override
-  String get skip => 'Praleisti';
-
-  @override
-  String get source => 'Šaltinis:';
-
-  @override
-  String get sourceLanguage => 'Pradinė kalba';
+  String get simplifiedGuidance =>
+      'Akimirksniu paverskite kasdienius pokalbius į užsienio kalbas! „Talkie“ įrašys jūsų kalbos gyvenimą.';
 
   @override
   String get sourceLanguageLabel => 'Mano kalba (Šaltinis)';
 
   @override
-  String get speakNow => 'Kalbėkite dabar!';
-
-  @override
-  String get speaker => 'Kalbėtojas';
-
-  @override
-  String get speakerSelect => 'Pasirinkite kalbėtoją';
-
-  @override
-  String get speakingPractice => 'Kalbėjimo praktika';
-
-  @override
-  String get startChat => 'Pradėti pokalbį';
-
-  @override
-  String get startPractice => 'Pradėti praktiką';
-
-  @override
   String get startTutorial => 'Pradėti mokymą';
-
-  @override
-  String get startWarning => 'Įspėjimas';
 
   @override
   String get startsWith => 'Pradedama raide';
@@ -977,28 +861,22 @@ class AppLocalizationsLt extends AppLocalizations {
       'Patikrinkite el. paštą ir užbaikite autentifikavimą.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Atsisiunčiama: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Importuoti nepavyko: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name importuota sėkmingai';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Prisijungimas atšauktas.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Prisijungti nepavyko: $error';
   }
 
@@ -1009,23 +887,23 @@ class AppLocalizationsLt extends AppLocalizations {
   String get statusLogoutSuccess => 'Atsijungta.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Registruoti nepavyko: $error';
+  String statusRequestFailed(String error) {
+    return 'Vertimo užklausa nepavyko: $error';
   }
 
   @override
-  String get statusSigningUp => 'Registruojama...';
+  String get statusRequestSuccess => 'Vertimo užklausa sėkminga.';
 
   @override
   String get stopPractice => 'Sustabdyti praktiką';
 
   @override
-  String get studyComplete => 'Mokymasis baigtas';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Pasirinkta medžiaga nepalaiko šiuo metu nustatytos mokymosi kalbos ($targetLang), todėl negalima jos išsaugoti lokaliai. Ar norite prašyti vertimo?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Mokymosi įrašai ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Mokymosi kalba nepalaikoma';
 
   @override
   String get styleFormal => 'Oficialus';
@@ -1040,22 +918,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get styleSlang => 'Šnekamoji kalba/Žargonas';
 
   @override
-  String get subject => 'Tema:';
-
-  @override
   String get swapLanguages => 'Sukeisti kalbas';
 
   @override
-  String get switchToAi => 'Perjungti į AI režimą';
-
-  @override
-  String get switchToPartner => 'Perjungti į partnerio režimą';
-
-  @override
   String get syncingData => 'Sinchronizuojami duomenys...';
-
-  @override
-  String get tabConversation => 'Pokalbis';
 
   @override
   String tabReview(int count) {
@@ -1119,6 +985,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tooltipSearch => 'Paieška';
 
   @override
+  String get tooltipSettingsConfirm => 'Patvirtinti nustatymus';
+
+  @override
   String get tooltipSpeaking => 'Kalbėjimas';
 
   @override
@@ -1131,6 +1000,9 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get translate => 'Versti';
+
+  @override
+  String get translateNow => 'Versti dabar';
 
   @override
   String get translating => 'Verčiama...';
@@ -1147,6 +1019,9 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Vertimo kalba';
+
+  @override
   String get translationLimitExceeded => 'Viršytas vertimo limitas';
 
   @override
@@ -1160,17 +1035,25 @@ class AppLocalizationsLt extends AppLocalizations {
   String get translationRefilled => 'Vertimų skaičius papildytas 5 kartus!';
 
   @override
+  String get translationResult => 'Vertimo rezultatas';
+
+  @override
   String get translationResultHint => 'Vertimo rezultatas - galima redaguoti';
 
   @override
   String get tryAgain => 'Pabandykite dar kartą';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Praktikuokite realius pokalbius su AI personažu.';
+  String get ttsInstallGuide =>
+      'Įdiekite kalbos duomenis skiltyje „Android“ nustatymai > „Google TTS“.';
 
   @override
-  String get tutorialAiChatTitle => 'AI pokalbis';
+  String get ttsMissing =>
+      'Šiam kalbos paketui įrenginyje neįdiegta jokio teksto į kalbą variklio.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Šio įrenginio numatytieji nustatymai nepalaiko teksto į kalbą šia kalba.';
 
   @override
   String get tutorialContextDesc =>
@@ -1287,7 +1170,13 @@ class AppLocalizationsLt extends AppLocalizations {
   String get typeExclamation => 'Šauktukas';
 
   @override
+  String get typeIdiom => 'Idiomas';
+
+  @override
   String get typeImperative => 'Įsakymas';
+
+  @override
+  String get typeProverb => 'Patarlė/posakis';
 
   @override
   String get typeQuestion => 'Klausimas';
@@ -1302,6 +1191,11 @@ class AppLocalizationsLt extends AppLocalizations {
   String get useExistingText => 'Naudoti esamą tekstą';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Peržiūrėti internetinį gidą';
 
   @override
@@ -1309,6 +1203,16 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Žiūrėti skelbimą ir papildyti (+5 kartus)';
+
+  @override
+  String get welcomeButton => 'Pradėti';
+
+  @override
+  String get welcomeDesc =>
+      'Sveiki atvykę į Talkie! Palaikome daugiau nei 80 kalbų visame pasaulyje su 100 % vientisumu, o naujas aukščiausios kokybės 3D dizainas ir optimizuotas našumas užtikrina nepriekaištingą mokymosi patirtį.';
+
+  @override
+  String get welcomeTitle => 'Sveiki atvykę į Talkie!';
 
   @override
   String get word => 'Žodis';
@@ -1325,113 +1229,4 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Jūsų tarimas';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Šio įrenginio numatytieji nustatymai nepalaiko teksto į kalbą šia kalba.';
-
-  @override
-  String get homeTab => 'Vertimas';
-
-  @override
-  String get welcomeTitle => 'Sveiki atvykę į Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Sveiki atvykę į Talkie! Palaikome daugiau nei 80 kalbų visame pasaulyje su 100 % vientisumu, o naujas aukščiausios kokybės 3D dizainas ir optimizuotas našumas užtikrina nepriekaištingą mokymosi patirtį.';
-
-  @override
-  String get welcomeButton => 'Pradėti';
-
-  @override
-  String get labelDetails => 'Išsamūs nustatymai';
-
-  @override
-  String get translationResult => 'Vertimo rezultatas';
-
-  @override
-  String get inputContent => 'Įvesties turinys';
-
-  @override
-  String get translateNow => 'Versti dabar';
-
-  @override
-  String get tooltipSettingsConfirm => 'Patvirtinti nustatymus';
-
-  @override
-  String get hintNoteExample => 'Pvz.: kontekstas, homonimai ir kt.';
-
-  @override
-  String get hintTagExample => 'Pvz.: verslas, kelionės...';
-
-  @override
-  String get addNew => 'Pridėti naują';
-
-  @override
-  String get newNotebookTitle => 'Naujo sąsiuvinio pavadinimas';
-
-  @override
-  String get enterNameHint => 'Įveskite pavadinimą';
-
-  @override
-  String get add => 'Pridėti';
-
-  @override
-  String get openSettings => 'Atverti nustatymus';
-
-  @override
-  String get helpNotebook =>
-      'Pasirinkite aplanką, kuriame norite išsaugoti išverstus rezultatus.';
-
-  @override
-  String get helpNote =>
-      'Laisvai įrašykite žodžių reikšmes, sakinius ar situacijas.';
-
-  @override
-  String get helpTag =>
-      'Įveskite raktinius žodžius, kad vėliau galėtumėte rūšiuoti ar ieškoti.';
-
-  @override
-  String get requestTranslation => 'Prašyti vertimo';
-
-  @override
-  String get statusRequestSuccess => 'Vertimo užklausa sėkminga.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Vertimo užklausa nepavyko: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Mokymosi kalba nepalaikoma';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Pasirinkta medžiaga nepalaiko šiuo metu nustatytos mokymosi kalbos ($targetLang), todėl negalima jos išsaugoti lokaliai. Ar norite prašyti vertimo?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Kalbos nustatymai';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Pirmiausia nustatykite savo ir mokymosi kalbas meniu > Kalbos nustatymai.';
-
-  @override
-  String get quickStartStep2Title => '2. Pagrindinis procesas';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Sukurkite savo mokymosi korteles tokia tvarka: įvestis (mikrofonas / klaviatūra) -> vertimas -> išsaugojimas.';
-
-  @override
-  String get quickStartStep3Title => '3. Režimų naudojimas';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Praktikuokitės per pokalbį, o skirtuke „Tarimo praktika“ skaitykite tekstą ir praktikuokite tartį patys.';
-
-  @override
-  String get noteGuidance =>
-      'Kur įvedate papildomą informaciją tikslesniam vertimui';
 }

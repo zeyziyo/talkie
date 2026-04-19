@@ -1,32 +1,10 @@
 {
   "@@locale": "kk",
-  "basicWords": "Негізгі сөз сақтау орны",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Кіру тілі",
-  "translationLanguage": "Аударма тілі",
-  "simplifiedGuidance": "Күнделікті әңгімелерді шетел тілдеріне лезде аударыңыз! Talkie сіздің тіл өміріңізді жазып отырады.",
-  "noDataForLanguage": "Тіліңізге арналған оқу деректері жергілікті деректер базасында жоқ. Деректерді жүктеп алыңыз немесе басқа тілді таңдаңыз.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Болдырмау",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Дәлдік",
-  "ttsMissing": "Бұл тіл үшін дыбыстық қозғалтқыш құрылғыда орнатылмаған.",
-  "ttsInstallGuide": "Android параметрлері > Google TTS бөлімінде тіл деректерін орнатыңыз.",
   "adLoading": "Жарнама жүктелуде. Бірнеше секундтан кейін қайталап көріңіз.",
+  "add": "Қосу",
+  "addNew": "Жаңасын қосу",
   "addNewSubject": "Жаңа атауды қосу",
-  "addParticipant": "Қатысушы қосу",
   "addTagHint": "Тег қосу...",
   "alreadyHaveAccount": "Аккаунтыңыз бар ма?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Негізгі сөз сақтау орны",
+  "basicWords": "Негізгі сөз сақтау орны",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Болдырмау",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Барыс септік",
   "casePossessive": "Ілік септік",
   "casePossessivePronoun": "Тәуелдік есімдік",
   "caseReflexive": "Өздік есімдік",
   "caseSubject": "Атау септік",
-  "chatAiChat": "Чат",
-  "chatAllConversations": "Барлық сұхбаттар",
-  "chatChoosePersona": "Persona таңдау",
-  "chatEndMessage": "Сөйлесуді аяқтағыңыз келе ме?",
-  "chatEndTitle": "Сөйлесуді аяқтау және сақтау",
-  "chatFailed": "Чат сәтсіз аяқталды: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Сөйлесуден үзінді ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Сөйлесу тарихы",
-  "chatNew": "Жаңа сөйлесу",
-  "chatNewChat": "Жаңа сөйлесу",
-  "chatNoConversations": "Әлі сөйлесулер жоқ",
-  "chatSearchHint": "Диалог тақырыбы бойынша іздеу...",
-  "chatNoteSearchHint": "Түсініктеме арқылы іздеу...",
-  "chatSaveAndExit": "Сақтап шығу",
-  "chatStartNewPrompt": "Жаттығу үшін жаңа сөйлесуді бастап көріңіз!",
-  "chatTypeHint": "Хабарламаны енгізіңіз...",
-  "chatUntitled": "Атаусыз сөйлесу",
   "checking": "Тексеру...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Бұл сұхбатты жойғыңыз келе ме?\nЖойылған сұхбатты қалпына келтіру мүмкін емес.",
-  "confirmDeleteParticipant": "Осы қатысушыны өшіргіңіз келе ме?",
   "contextTagHint": "Кейін ажырату оңай болу үшін жағдайды жазыңыз",
   "contextTagLabel": "Мәтін мәні/Жағдай (міндетті емес) - Мысалы: таңғы сәлемдесу, сыпайы сөз",
   "copiedToClipboard": "Буферге көшірілді!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Жағдайды көрсету арқылы диалогты жаттықтырыңыз. Тиісті жауапты таңдап, айтыңыз.",
-  "dialogueQuestTitle": "Диалог квесті",
-  "disambiguationPrompt": "Қандай мағынада аударғыңыз келеді?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Мағынаны таңдау",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Аккаунтыңыз жоқ па?",
-  "editParticipant": "Қатысушыны өзгерту",
   "email": "Электрондық пошта",
   "emailAlreadyInUse": "Бұл электрондық пошта тіркелген. Кіріңіз немесе құпия сөзді қалпына келтіріңіз.",
+  "enterNameHint": "Атын енгізіңіз",
   "enterNewSubjectName": "Жаңа атауды енгізіңіз",
   "enterSentenceHint": "Сөйлемді енгізіңіз...",
   "enterTextHint": "Аударылатын мәтінді енгізіңіз",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Тан алынған мәтін",
   "female": "Әйел",
   "file": "Файл:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Ойын режимі",
   "gameOver": "Ойын аяқталды",
   "gender": "Жынысы",
-  "labelFilterMaterial": "Материалдар",
-  "labelFilterTag": "Тегтер",
   "generalTags": "Жалпы тегтер",
   "getMaterials": "Материалдарды алу",
   "good": "Жақсы",
   "googleContinue": "Google арқылы жалғастыру",
-  "helpDialogueImportDesc": "Бүкіл диалогтар жинағын JSON файлы ретінде импорттау.",
-  "helpDialogueImportDetails": "• JSON құрылымы: `entries` орнына `dialogues` массивін пайдаланыңыз\n• Автоматты қалпына келтіру: диалог атауы, Persona, хабар реті қалпына келтіріледі.\n• Орналасуы: импортталған диалогтар AI Chat режимінің 'Тарих' қойындысында пайда болады.",
   "helpJsonDesc": "Mode 3-те пайдалану үшін оқу материалын JSON файлы ретінде импорттау үшін келесі форматты орындаңыз:",
-  "helpJsonTypeDialogue": "Диалог (Dialogue)",
   "helpJsonTypeSentence": "Сөйлем (Sentence)",
   "helpJsonTypeWord": "Сөз (Word)",
   "helpMode1Desc": "Үлкен клавиатура белгішесі және премиум 3D микрофоны арқылы тіл үйренуді ең түсінікті жолмен бастаңыз.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Деректер жинағын таңдау: Оң жақ жоғарғы мәзірден (⋮) «Оқу деректер жинағын таңдау» немесе «Онлайн деректер қорын» пайдаланыңыз.\n• Картаны аудару: «Көрсету/жасыру» арқылы аударманы тексеріңіз.\n• Тыңдау: Динамик белгішесі арқылы дыбыстауды ойнатыңыз.\n• Оқуды аяқтау: Белгішемен (V) оқуды аяқтауды өңдеңіз.\n• Жою: Жазбаны жою үшін картаны ұзақ басыңыз (Ұзақ шерту).\n• Іздеу және сүзгі: Іздеу жолағын (нақты уақыттағы смарт іздеу) және тегтерді, бастапқы әріп сүзгісін қолдау.",
   "helpMode3Desc": "Сөйлемді тыңдап, қайталап (Shadowing) айту арқылы дауысталуды жаттықтырыңыз.",
   "helpMode3Details": "• Материалды таңдау: оқуға арналған материалды таңдау\n• Аралықты орнату: сөйлемдер арасындағы күту уақытын реттеу үшін [-] [+] батырмаларын пайдаланыңыз (3 секундтан 60 секундқа дейін)\n• Бастау/Тоқтату: Shadowing сеансын басқару\n• Сөйлеу: дауысты тыңдап, қайталап айтыңыз\n• Кері байланыс: дәлдік көрсеткіші (0-100) және түс дисплейі\n• Іздеу шарттары: тегтер, соңғы элементтер, басталатын әріптер арқылы жаттығу мақсатын сүзгілеу",
-  "helpModeChatDesc": "AI персонасымен сөйлесіп, іс жүзіндегі сөйлеуді жаттықтырыңыз.",
-  "helpModeChatDetails": "• AI чат: төменгі қойындылар тақтасындағы 'Чат' мәзірінен тұлғалармен нақты сөйлесуді жаттықтырыңыз\n• Тұлғаны орнату: қарсыластың жынысын, атын, тіл кодын еркін көрсетіңіз\n• GPS жағдаяттық драма: ағымдағы орныңызды таниды және орналасқан жерге сәйкес келетін әңгіме тақырыбын ұсынады\n• 2 тіл: AI жауаптары аудармамен бірге көрсетіледі, бұл оқу әсерін арттырады\n• Жазбаларды басқару: өткен сөйлесулер тарихын сүзу және сөйлесу кезіндегі нақты хабарламаларды оқу материалы ретінде сақтау",
+  "helpNote": "Сөздің мағынасын, мысалды немесе жағдайды еркін жазыңыз.",
+  "helpNotebook": "Аударылған нәтижелерді сақтау үшін қалтаны таңдаңыз.",
   "helpTabJson": "JSON форматы",
   "helpTabModes": "Режимдерді түсіндіру",
   "helpTabQuickStart": "Жылдам бастау",
   "helpTabTour": "Тәжірибе жасау",
+  "helpTag": "Кейінірек сұрыптау немесе іздеу үшін кілт сөздерді енгізіңіз.",
   "helpTitle": "Анықтама & Нұсқаулық",
   "helpTourDesc": "**Ерекшеленген шеңбер** негізгі функцияларды көрсетеді.\n(Мысалы: **Ерекшеленген шеңбер** көрсеткен картаны жою үшін ұзақ басып тұруға болады.)",
   "hide": "Жасыру",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Мысалы: жағдайды түсіндіру, омонимдер және т.б.",
+  "hintTagExample": "Мысалы: Бизнес, саяхат...",
+  "homeTab": "Аударма",
   "importAdded": "Қосылды: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} файл, {entries} жазба импортталды.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON файлын импорттау",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Жалғыз JSON файлы",
+  "importSourceFolder": "Қапшық (тілге байланысты кітапхана құрылымы)",
+  "importSourceTitle": "Импорттау көзін таңдау",
+  "importSourceZip": "ZIP файлы (қысылған қалта)",
   "importTotal": "Барлығы: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Енгізу мазмұны",
+  "inputLanguage": "Кіру тілі",
   "inputModeTitle": "Енгізу",
   "intervalSeconds": "Аралық: {seconds} секунд",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Жарамды электрондық поштаны енгізіңіз.",
   "kakaoContinue": "Kakao арқылы жалғастыру",
+  "labelDetails": "Толық орнатулар",
+  "labelFilterMaterial": "Материалдар",
+  "labelFilterTag": "Тегтер",
   "labelLangCode": "Тіл коды (мысалы: en-US, ko-KR)",
-  "labelName": "Аты",
   "labelNote": "Ескертпе",
   "labelPOS": "Сөз табы",
-  "labelRole": "Рөл",
   "labelSentence": "Сөйлем",
   "labelSentenceCollection": "Сөйлемдер жинағы",
   "labelSentenceType": "Сөйлем түрі",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Қатысушылар жүктелуде...",
-  "location": "Орналасу",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
+  "location": "Орналасқан жері",
   "login": "Кіру",
   "logout": "Шығу",
   "logoutConfirmMessage": "Ағымдағы құрылғыдан шыққыңыз келе ме?",
   "logoutConfirmTitle": "Шығу",
   "male": "Еркек",
-  "manageParticipants": "Қатысушыларды басқару",
   "manual": "Қолмен енгізу",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Материал туралы ақпарат",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Мен",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Құрылғыдан материалды импорттау",
   "menuHelp": "Анықтама",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "меӊіӊ сөйлемдер жинағым",
   "myWordbook": "меӊіӊ сөздігім",
   "neutral": "Бейтарап",
+  "newNotebookTitle": "Жаңа дәптер атауы",
   "newSubjectName": "Жаңа тақырыптың атауы",
   "next": "Келесі",
-  "noDialogueHistory": "Сөйлесу тарихы жоқ.",
-  "noInternetWarningMic": "Интернет байланысы жоқ. Оффлайн күйде дыбысты тану мүмкін болмауы мүмкін.",
-  "noInternetWarningTranslate": "Интернет байланысы жоқ. Оффлайн күйде аудару мүмкін емес. Қайталау режимін пайдаланыңыз.",
+  "noDataForLanguage": "Тіліңізге арналған оқу деректері жергілікті деректер базасында жоқ. Деректерді жүктеп алыңыз немесе басқа тілді таңдаңыз.",
   "noMaterialsInCategory": "Бұл санатта материалдар жоқ.",
-  "noParticipantsFound": "Тіркелген қатысушы жоқ.",
   "noRecords": "Таңдалған тілде оқу жазбалары жоқ",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Дауыс анықталмады",
   "notSelected": "- Тандалмаған -",
+  "noteGuidance": "Дәлірек аударма үшін қосымша мәліметтерді енгізетިން жер",
   "onlineLibraryCheckInternet": "Интернет байланысын тексеріңіз немесе кейінірек қайталап көріңіз.",
   "onlineLibraryLoadFailed": "Материалдарды жүктеу сәтсіз аяқталды.",
   "onlineLibraryNoMaterials": "Материалдар жоқ.",
-  "participantDeleted": "Қатысушы өшірілді.",
-  "participantRename": "Қатысушының атын өзгерту",
-  "partner": "Серіктес",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Серіктес режимі",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Параметрлерді ашу",
   "password": "Құпия сөз",
   "passwordTooShort": "Құпия сөз 6 символдан кем болмауы керек.",
   "perfect": "Керемет!",
-  "personaFriend": "Жергілікті дос",
-  "personaGuide": "Саяхат нұсқаушысы",
-  "personaTeacher": "Ағылшын тілі мұғалімі",
+  "pickGallery": "Галереядан таңдау",
   "playAgain": "Қайтадан ойнау",
   "playbackFailed": "Ойнату сәтсіз аяқталды: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Сын есім",
   "posAdverb": "Үстеу",
+  "posArticle": "Артикль",
   "posConjunction": "Жалғаулық",
   "posInterjection": "Одағай",
   "posNoun": "Зат есім",
+  "posParticle": "Бөлшек",
   "posPreposition": "Предлог/Жалғау",
   "posPronoun": "Есімдік",
   "posVerb": "Етістік",
   "practiceModeTitle": "Жаттығу",
   "practiceWordsOnly": "Тек сөздерді жаттықтыру",
+  "processing": "Өңделуде...",
   "progress": "Прогресс: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Мәзір > Тілді орнату бөлімінен өз тіліңізді және оқу тілін алдымен көрсетіңіз.",
+  "quickStartStep1Title": "1. Тілді орнату",
+  "quickStartStep2Desc": "Кіріс (микрофон/пернетақта) -> Аударма -> Сақтау ретімен өзіңіздің оқу картаңызды жасаңыз.",
+  "quickStartStep2Title": "2. Негізгі ағын",
+  "quickStartStep3Desc": "Чат арқылы жаттығып, айтылым жаттығулары қосымша бетінде мәтінді көріп, тікелей айтып жаттығыңыз.",
+  "quickStartStep3Title": "3. Режимді пайдалану",
   "recentNItems": "Жақында жасалған {count} элементті көру",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Аударма сұрау",
   "reset": "Қалпына келтіру",
   "resetPracticeHistory": "Жаттығу тарихын қалпына келтіру",
   "retry": "Қайтадан көру?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Қайталау",
-  "roleAi": "Жасанды интеллект",
-  "roleThirdParty": "Үшінші тарап",
-  "roleUser": "Пайдаланушы",
   "save": "Сақтау",
+  "saveAsSentence": "Сөйлем ретінде сақтау",
+  "saveAsWord": "Сөз ретінде сақтау",
   "saveData": "Деректерді сақтау",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Сканерлеу тарихына сақтау",
   "saveTranslationsFromSearch": "Іздеу режимінде аудармаларды сақтап көріңіз",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Сканерлеу үшін суретті таңдаңыз",
+  "scanLabel": "Сканерлеу",
   "score": "Дәлдік: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Сөз таптарын таңдау",
-  "selectParticipants": "Қатысушыларды таңдау",
-  "selectSentenceType": "Сөйлем түрін таңдау",
   "selectStudyMaterial": "Оқу материалын таңдау",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Сөйлем",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Тіркелу",
-  "similarTextFound": "Ұқсас мәтін табылды",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Өткізіп жіберу",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Дереккөз:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Бастапқы тіл",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Күнделікті әңгімелерді шетел тілдеріне лезде аударыңыз! Talkie сіздің тіл өміріңізді жазып отырады.",
   "sourceLanguageLabel": "Менің тілім (Source)",
-  "speakNow": "Қазір сөйлеңіз!",
-  "speaker": "Дыбыстаушы",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Сөйлеушіні таңдау",
-  "speakingPractice": "Сөйлеу жаттығуы",
-  "startChat": "Сөйлесуді бастау",
-  "startPractice": "Жаттығуды бастау",
   "startTutorial": "Оқулықты бастау",
-  "startWarning": "Ескерту",
   "startsWith": "Басталатын әріптер",
   "statusCheckEmail": "Электрондық поштаңызды тексеріп, растауды аяқтаңыз.",
   "statusDownloading": "Жүктелуде: {name}...",
-  "statusImportFailed": "Импорттау сәтсіз аяқталды: {error}",
-  "statusImportSuccess": "{name} импорттау аяқталды",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Кіру тоқтатылды.",
-  "statusLoginFailed": "Кіру сәтсіз аяқталды: {error}",
-  "statusLoginSuccess": "Кіру сәтті аяқталды.",
-  "statusLogoutSuccess": "Шығу аяқталды.",
-  "statusSignUpFailed": "Тіркелу сәтсіз аяқталды: {error}",
-  "statusSigningUp": "Тіркелуде...",
-  "stopPractice": "Жаттығуды тоқтату",
-  "studyComplete": "Оқу аяқталды",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Оқу жазбалары ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Импорттау сәтсіз аяқталды: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} импорттау аяқталды",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Кіру сәтсіз аяқталды: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Кіру сәтті аяқталды.",
+  "statusLogoutSuccess": "Шығу аяқталды.",
+  "statusRequestFailed": "Аударма сұрауы орындалмады: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Аударма сұрауыңыз орындалды.",
+  "stopPractice": "Жаттығуды тоқтату",
+  "studyLangNotFoundDesc": "Сіз таңдаған материал қазіргі оқу тіліңізді ({targetLang}) қолдамайтындықтан, жергілікті жерде сақталмайды. Аударманы сұрағыңыз келе ме?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Оқу тілі қолдау көрсетпейді",
   "styleFormal": "Ресми",
   "styleInformal": "Бейресми",
   "stylePolite": "Сыпайы",
   "styleSlang": "Сленг/Жаргон",
-  "subject": "Тақырып:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Тілдерді ауыстыру",
-  "switchToAi": "AI режиміне ауысу",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Серіктес режиміне ауысу",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Деректер синхрондалуда...",
-  "tabConversation": "Сөйлесу",
   "tabReview": "Қайталау ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Төмендету",
   "tooltipIncrease": "Арттыру",
   "tooltipSearch": "Іздеу",
+  "tooltipSettingsConfirm": "Параметрлерді растау",
   "tooltipSpeaking": "Сөйлеу",
   "tooltipStudyReview": "Оқу+Қайталау",
   "totalRecords": "Барлығы {count} жазба (толық көру)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Қазір аудару",
   "translating": "Аудару...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Аударма тілі",
   "translationLimitExceeded": "Аударма шегінен асып кетті",
   "translationLimitMessage": "Күнделікті тегін аударманы (5 рет) толығымен пайдаландыңыз.\\n\\nЖарнаманы көріп, 5 рет тез арада толтырғыңыз келе ме?",
   "translationLoaded": "Сақталған аударма жүктелді",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Аударма саны 5 ретке толтырылды!",
+  "translationResult": "Аударма нәтижесі",
   "translationResultHint": "Аударма нәтижесі - өзгертуге болады",
   "tryAgain": "Қайтадан көріңіз",
-  "tutorialAiChatDesc": "AI Persona-мен нақты өмірлік сөйлесуді жаттықтырып көріңіз.",
-  "tutorialAiChatTitle": "AI чат",
+  "ttsInstallGuide": "Android параметрлері > Google TTS бөлімінде тіл деректерін орнатыңыз.",
+  "ttsMissing": "Бұл тіл үшін дыбыстық қозғалтқыш құрылғыда орнатылмаған.",
+  "ttsUnsupportedNatively": "Бұл тілді осы құрылғының параметрлеріндегі дауыстық шығыс қолдамайды.",
   "tutorialContextDesc": "Егер бір сөйлемнің өзінде жағдайды жазсаңыз (мысалы, таңертең, кешке), оны бөлек сақтауға болады.",
   "tutorialContextTitle": "Жағдай/Мәтін мәні тегі",
   "tutorialLangSettingsDesc": "Аударылатын бастапқы тіл мен мақсатты тілді орнатады.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Енгізілген мәтінді аударады.",
   "tutorialTransTitle": "Аудару",
   "typeExclamation": "Лепті сөйлем",
+  "typeIdiom": "Идиома",
   "typeImperative": "Бұйрықты сөйлем",
+  "typeProverb": "Мақал",
   "typeQuestion": "Сұраулы сөйлем",
   "typeStatement": "Хабарлы сөйлем",
   "usageLimitTitle": "Шекке жетті",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Онлайн нұсқауды көру",
   "voluntaryTranslations": "Ерікті аудармалар",
   "watchAdAndRefill": "Жарнаманы көріп толтыру (+5 рет)",
+  "welcomeButton": "Бастау",
+  "welcomeDesc": "Talkie-ге қош келдіңіз! Біз дүние жүзіндегі 80-нен астам тілді 100% қолдаймыз және жаңа премиум 3D дизайны мен оңтайландырылған өнімділігімен тамаша оқу тәжірибесін ұсынамыз.",
+  "welcomeTitle": "Talkie-ге қош келдіңіз!",
   "word": "Сөз",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Жау келмес бұрын сөзді айтып, базаны қорғаңыз.",
   "wordDefenseTitle": "Сөзді қорғау",
   "wordModeLabel": "Сөз режимі",
-  "yourPronunciation": "Сіздің айтылуыңыз",
-  "ttsUnsupportedNatively": "Бұл тілді осы құрылғының параметрлеріндегі дауыстық шығыс қолдамайды.",
-  "homeTab": "Аударма",
-  "welcomeTitle": "Talkie-ге қош келдіңіз!",
-  "welcomeDesc": "Talkie-ге қош келдіңіз! Біз дүние жүзіндегі 80-нен астам тілді 100% қолдаймыз және жаңа премиум 3D дизайны мен оңтайландырылған өнімділігімен тамаша оқу тәжірибесін ұсынамыз.",
-  "welcomeButton": "Бастау",
-  "labelDetails": "Толық орнатулар",
-  "translationResult": "Аударма нәтижесі",
-  "inputContent": "Енгізу мазмұны",
-  "translateNow": "Қазір аудару",
-  "tooltipSettingsConfirm": "Параметрлерді растау",
-  "hintNoteExample": "Мысалы: жағдайды түсіндіру, омонимдер және т.б.",
-  "hintTagExample": "Мысалы: Бизнес, саяхат...",
-  "addNew": "Жаңасын қосу",
-  "newNotebookTitle": "Жаңа дәптер атауы",
-  "enterNameHint": "Атын енгізіңіз",
-  "add": "Қосу",
-  "openSettings": "Параметрлерді ашу",
-  "helpNotebook": "Аударылған нәтижелерді сақтау үшін қалтаны таңдаңыз.",
-  "helpNote": "Сөздің мағынасын, мысалды немесе жағдайды еркін жазыңыз.",
-  "helpTag": "Кейінірек сұрыптау немесе іздеу үшін кілт сөздерді енгізіңіз.",
-  "requestTranslation": "Аударма сұрау",
-  "statusRequestSuccess": "Аударма сұрауыңыз орындалды.",
-  "statusRequestFailed": "Аударма сұрауы орындалмады: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Оқу тілі қолдау көрсетпейді",
-  "studyLangNotFoundDesc": "Сіз таңдаған материал қазіргі оқу тіліңізді ({targetLang}) қолдамайтындықтан, жергілікті жерде сақталмайды. Аударманы сұрағыңыз келе ме?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Тілді орнату",
-  "quickStartStep1Desc": "Мәзір > Тілді орнату бөлімінен өз тіліңізді және оқу тілін алдымен көрсетіңіз.",
-  "quickStartStep2Title": "2. Негізгі ағын",
-  "quickStartStep2Desc": "Кіріс (микрофон/пернетақта) -> Аударма -> Сақтау ретімен өзіңіздің оқу картаңызды жасаңыз.",
-  "quickStartStep3Title": "3. Режимді пайдалану",
-  "quickStartStep3Desc": "Чат арқылы жаттығып, айтылым жаттығулары қосымша бетінде мәтінді көріп, тікелей айтып жаттығыңыз.",
-  "noteGuidance": "Дәлірек аударма үшін қосымша мәліметтерді енгізетިން жер"
+  "yourPronunciation": "Сіздің айтылуыңыз"
 }

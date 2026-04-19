@@ -1,32 +1,10 @@
 {
   "@@locale": "et",
-  "basicWords": "Põhiliste sõnade hoidla",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Sisestuskeel",
-  "translationLanguage": "Tõlkekeel",
-  "simplifiedGuidance": "Muutke igapäevased vestlused hetkega võõrkeelde! Talkie salvestab teie keelekasutuse.",
-  "noDataForLanguage": "Valitud keele õppematerjale pole kohalikus andmebaasis saadaval. Laadige materjalid alla või valige mõni muu keel.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Tühista",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Täpsus",
-  "ttsMissing": "Selle keele kõnesünteesimootor pole sinu seadmesse installitud.",
-  "ttsInstallGuide": "Installi vastavad keeleandmed Androidi seadetes > Google'i kõnesünteesis.",
   "adLoading": "Reklaami laadimine, proovige mõne aja pärast uuesti.",
+  "add": "Lisa",
+  "addNew": "Lisa uus",
   "addNewSubject": "Lisa uus nimi",
-  "addParticipant": "Lisa osaleja",
   "addTagHint": "Lisa silt...",
   "alreadyHaveAccount": "Sul on juba konto?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Põhiliste sõnade hoidla",
+  "basicWords": "Põhiliste sõnade hoidla",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Tühista",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Sihitiskääne",
   "casePossessive": "Omastav kääne",
   "casePossessivePronoun": "Omastav asesõna",
   "caseReflexive": "Enesekohane asesõna",
   "caseSubject": "Nimetav kääne",
-  "chatAiChat": "Vestlus",
-  "chatAllConversations": "Kõik vestlused",
-  "chatChoosePersona": "Vali personaž",
-  "chatEndMessage": "Kas soovid vestluse lõpetada?",
-  "chatEndTitle": "Lõpeta ja salvesta vestlus",
-  "chatFailed": "Vestlus ebaõnnestus: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Vestluse väljavõte ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Vestluste ajalugu",
-  "chatNew": "Uus vestlus",
-  "chatNewChat": "Uus vestlus",
-  "chatNoConversations": "Vestlusi pole veel",
-  "chatSearchHint": "Otsi vestluse pealkirjaga...",
-  "chatNoteSearchHint": "Otsi märgete seast...",
-  "chatSaveAndExit": "Salvesta ja välju",
-  "chatStartNewPrompt": "Proovige harjutamiseks uut vestlust alustada!",
-  "chatTypeHint": "Sisesta sõnum...",
-  "chatUntitled": "Pealkirjata vestlus",
   "checking": "Kontrollin...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Kas sa oled kindel, et soovid selle vestluse kustutada?\nKustutatud vestlust ei saa taastada.",
-  "confirmDeleteParticipant": "Kas sa oled kindel, et soovid selle osaleja kustutada?",
   "contextTagHint": "Kirjuta olukord hiljem lihtsamaks eristamiseks",
   "contextTagLabel": "Kontekst/olukord (valikuline) - näide: hommikune tervitus, viisakas keel",
   "copiedToClipboard": "Kopeeritud lõikelauale!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Harjutage vestlust situatsioonide kaudu. Valige sobiv vastus ja öelge see.",
-  "dialogueQuestTitle": "Dialoogiülesanne",
-  "disambiguationPrompt": "Millise tähendusega sa soovid tõlkida?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Vali tähendus",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Sul pole kontot?",
-  "editParticipant": "Muuda osalejat",
   "email": "E-post",
   "emailAlreadyInUse": "See e-posti aadress on juba kasutusel. Palun logi sisse või taasta oma parool.",
+  "enterNameHint": "Sisesta nimi",
   "enterNewSubjectName": "Sisesta uus nimi",
   "enterSentenceHint": "Sisesta lause...",
   "enterTextHint": "Sisesta tõlgitav tekst",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Tuvastatud tekst",
   "female": "Naine",
   "file": "Fail:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Mängurežiim",
   "gameOver": "Mäng läbi",
   "gender": "Sugu",
-  "labelFilterMaterial": "Materjalid",
-  "labelFilterTag": "Sildid",
   "generalTags": "Üldised sildid",
   "getMaterials": "Hangi materjale",
   "good": "Hea",
   "googleContinue": "Jätka Google'iga",
-  "helpDialogueImportDesc": "Impordi kogu dialoogikomplekt JSON-failina.",
-  "helpDialogueImportDetails": "• JSON-struktuur: kasuta massiivi `dialogues` massiivi `entries` asemel\n• Automaatne taastamine: dialoogi pealkiri, personaž ja sõnumite järjekord taastatakse.\n• Asukoht: imporditud dialoog kuvatakse AI vestlusrežiimi vahekaardil \"Ajalugu\".",
   "helpJsonDesc": "Õppematerjali JSON-failina importimiseks režiimis 3 järgi seda vormingut:",
-  "helpJsonTypeDialogue": "Dialoog",
   "helpJsonTypeSentence": "Laused",
   "helpJsonTypeWord": "Sõna",
   "helpMode1Desc": "Alustage keeleõpet kõige intuitiivsemal viisil – esmaklassilise 3D-mikrofoni ja suurte klaviatuuriikoonidega.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Õppematerjali valik: kasutage paremas ülanurgas menüüd (⋮) või 'Vali õppematerjal' või 'Online materjalide ruum'\n• Kaardi pööramine: kontrollige tõlget 'Näita/Peida' abil\n• Kuulamine: häälduse taasesitus kõlariikooniga\n• Õppimine lõpetatud: õppimine on lõpetatud märkeruuduga (V)\n• Kustutamine: kirje kustutamiseks vajutage pikalt (pikk klõps) kaardil\n• Otsing ja filter: otsinguriba (reaalajas nutikas otsing) ja siltide, algustähe filtreid",
   "helpMode3Desc": "Harjuta hääldust, kuulates lauseid ja neid korrates (varjutades).",
   "helpMode3Details": "• Materjali valik: vali õpitav materjalikogum\n• Intervalli seadistus: reguleeri lausete vahelist ooteaega nuppudega [-] [+], (3 sekundit kuni 60 sekundit)\n• Alusta/peata: varjutamise seansi juhtimine\n• Räägi: kuula häält ja korda seda\n• Tagasiside: täpsusskoor (0–100) ja värviindikaator\n• Otsingutingimused: filtreeri harjutatavaid üksusi siltide, hiljutiste üksuste või algustähe järgi",
-  "helpModeChatDesc": "Harjuta vestlust tehisintellekti persooniga suheldes.",
-  "helpModeChatDetails": "• AI vestlus: harjuta vestlust tegelikus elus personaga alumise vahekaardiriba menüüs 'Vestlus'\n• Persona seaded: määra vabalt partneri sugu, nimi ja keelekood\n• GPS olukorramäng: soovitab kohale sobivaid vestlusteemasid, tunnetades minu praegust asukohta\n• Kaks keelt: AI vastused kuvatakse koos tõlkega, et maksimeerida õppimist\n• Kirjete haldamine: filtreeri varasemaid vestlusi ja salvesta teatud sõnumeid õppematerjalidena vestluse ajal",
+  "helpNote": "Kirjuta üles sõna tähendus, näited või olukorrad.",
+  "helpNotebook": "Vali kaust, kuhu tõlgitud tulemused salvestada.",
   "helpTabJson": "JSON-vorming",
   "helpTabModes": "Režiimide selgitus",
   "helpTabQuickStart": "Kiire algus",
   "helpTabTour": "Tutvustus",
+  "helpTag": "Sisesta märksõnad, et hiljem liigitada või otsida.",
   "helpTitle": "Abi & juhend",
   "helpTourDesc": "**Esiletõstetud ring** juhendab peamisi funktsioone.\n(Näide: **Esiletõstetud ringi** osutatud kaardi kustutamiseks hoia seda all.)",
   "hide": "Peida",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Nt: kontekst, homonüümid jne",
+  "hintTagExample": "Nt: äri, reisimine...",
+  "homeTab": "Tõlge",
   "importAdded": "Lisatud: {count} tk",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Imporditud {files} faili, {entries} kirjet.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Impordi JSON-fail",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Üksik JSON-fail",
+  "importSourceFolder": "Kaust (keelepõhine teegi struktuur)",
+  "importSourceTitle": "Vali impordi allikas",
+  "importSourceZip": "ZIP-fail (pakitud kaust)",
   "importTotal": "Kokku: {count} tk",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Sisestatud sisu",
+  "inputLanguage": "Sisestuskeel",
   "inputModeTitle": "Sisestus",
   "intervalSeconds": "Intervall: {seconds} s",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Palun sisesta kehtiv e-posti aadress.",
   "kakaoContinue": "Jätka Kakao abil",
+  "labelDetails": "Detailseaded",
+  "labelFilterMaterial": "Materjalid",
+  "labelFilterTag": "Sildid",
   "labelLangCode": "Keelekood (nt en-US, ko-KR)",
-  "labelName": "Nimi",
   "labelNote": "Märkus",
   "labelPOS": "Kõneosa",
-  "labelRole": "Roll",
   "labelSentence": "Lause",
   "labelSentenceCollection": "Lausete kogu",
   "labelSentenceType": "Lausetüüp",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Osalejate laadimine...",
   "location": "Asukoht",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Logi sisse",
   "logout": "Logi välja",
   "logoutConfirmMessage": "Kas sa oled kindel, et soovid sellest seadmest välja logida?",
   "logoutConfirmTitle": "Logi välja",
   "male": "Mees",
-  "manageParticipants": "Halda osalejaid",
   "manual": "Käsitsi sisestus",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Materjali info",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Mina",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Impordi materjale seadmest",
   "menuHelp": "Abi",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Minu lausete kogu",
   "myWordbook": "Minu sõnastik",
   "neutral": "Neutraalne",
+  "newNotebookTitle": "Uue märkmiku nimi",
   "newSubjectName": "Uue teemakogumi nimi",
   "next": "Järgmine",
-  "noDialogueHistory": "Vestluste ajalugu puudub.",
-  "noInternetWarningMic": "Internetiühendus puudub. Võrguühenduseta režiimis ei pruugi hääletuvastus töötada.",
-  "noInternetWarningTranslate": "Internetiühendus puudub. Võrguühenduseta režiimis ei saa tõlkefunktsiooni kasutada. Palun kasuta ülevaaterežiimi.",
+  "noDataForLanguage": "Valitud keele õppematerjale pole kohalikus andmebaasis saadaval. Laadige materjalid alla või valige mõni muu keel.",
   "noMaterialsInCategory": "Selles kategoorias pole materjale.",
-  "noParticipantsFound": "Registreeritud osalejaid pole.",
   "noRecords": "Valitud keele õppimisajalugu pole",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Häält ei tuvastatud",
   "notSelected": "- Pole valitud -",
+  "noteGuidance": "Kuhu sisestate täpsemaks tõlkimiseks täiendavaid üksikasju",
   "onlineLibraryCheckInternet": "Palun kontrolli oma internetiühendust või proovi hiljem uuesti.",
   "onlineLibraryLoadFailed": "Materjalide laadimine ebaõnnestus.",
   "onlineLibraryNoMaterials": "Materjale pole.",
-  "participantDeleted": "Osaleja on kustutatud.",
-  "participantRename": "Muuda osaleja nime",
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Partnerrežiim",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Ava seaded",
   "password": "Salasõna",
   "passwordTooShort": "Salasõna peab olema vähemalt 6 tähemärki pikk.",
   "perfect": "Suurepärane!",
-  "personaFriend": "Kohalik sõber",
-  "personaGuide": "Reisijuht",
-  "personaTeacher": "Inglise keele õpetaja",
+  "pickGallery": "Vali galeriist",
   "playAgain": "Mängi uuesti",
   "playbackFailed": "Taasesitus ebaõnnestus: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Omadussõna",
   "posAdverb": "Määrsõna",
+  "posArticle": "Artikkel",
   "posConjunction": "Sidesõna",
   "posInterjection": "Hüüdsõna",
   "posNoun": "Nimisõna",
+  "posParticle": "Osake",
   "posPreposition": "Eessõna/kaassõna",
   "posPronoun": "Asesõna",
   "posVerb": "Tegusõna",
   "practiceModeTitle": "Harjuta",
   "practiceWordsOnly": "Harjuta ainult sõnu",
+  "processing": "Töötlemine...",
   "progress": "Edenemine: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Määra esmalt oma keel ja õpitav keel menüüs > Keeleseaded.",
+  "quickStartStep1Title": "1. Seadista keel",
+  "quickStartStep2Desc": "Koosta oma õppekaardid järjekorras: sisend (mikrofon/klaviatuur) -> tõlkimine -> salvestamine.",
+  "quickStartStep2Title": "2. Põhivool",
+  "quickStartStep3Desc": "Harjuta vestluse kaudu ja harjuta hääldust, vaadates teksti ja hääldades seda otse vahekaardil Hääldusharjutus.",
+  "quickStartStep3Title": "3. Režiimide kasutamine",
   "recentNItems": "Vaata {count} hiljuti loodud üksust",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Taotle tõlget",
   "reset": "Lähtesta",
   "resetPracticeHistory": "Lähtesta harjutamisajalugu",
   "retry": "Proovi uuesti?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Kordamine",
-  "roleAi": "AI",
-  "roleThirdParty": "Kolmas osapool",
-  "roleUser": "Kasutaja",
   "save": "Salvesta",
+  "saveAsSentence": "Salvesta lausena",
+  "saveAsWord": "Salvesta sõnana",
   "saveData": "Salvesta andmed",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Salvesta skaneerimise ajalukku",
   "saveTranslationsFromSearch": "Proovi tõlkeid otsingurežiimis salvestada",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Vali skaneeritav pilt",
+  "scanLabel": "Skaneeri",
   "score": "Täpsus: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Vali kõneosa",
-  "selectParticipants": "Vali osalejad",
-  "selectSentenceType": "Vali lause tüüp",
   "selectStudyMaterial": "Vali õppematerjal",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Lause",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Registreeru",
-  "similarTextFound": "Leiti sarnane tekst",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Jäta vahele",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Allikas:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Lähtekeel",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Muutke igapäevased vestlused hetkega võõrkeelde! Talkie salvestab teie keelekasutuse.",
   "sourceLanguageLabel": "Minu keel (Lähtekeel)",
-  "speakNow": "Räägi nüüd!",
-  "speaker": "Kõneleja",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Vali kõneleja",
-  "speakingPractice": "Rääkimisharjutus",
-  "startChat": "Alusta vestlust",
-  "startPractice": "Alusta harjutamist",
   "startTutorial": "Alusta õpetust",
-  "startWarning": "Hoiatus",
   "startsWith": "Algustäht",
   "statusCheckEmail": "Palun kinnita oma e-posti aadress, et autentimine lõpule viia.",
   "statusDownloading": "Allalaadimine: {name}...",
-  "statusImportFailed": "Importimine ebaõnnestus: {error}",
-  "statusImportSuccess": "{name} importimine lõpetatud",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Sisselogimine katkestati.",
-  "statusLoginFailed": "Sisselogimine ebaõnnestus: {error}",
-  "statusLoginSuccess": "Sisselogimine õnnestus.",
-  "statusLogoutSuccess": "Väljalogimine õnnestus.",
-  "statusSignUpFailed": "Registreerimine ebaõnnestus: {error}",
-  "statusSigningUp": "Registreerimine...",
-  "stopPractice": "Lõpeta harjutamine",
-  "studyComplete": "Õppimine lõpetatud",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Õppimisajalugu ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Importimine ebaõnnestus: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} importimine lõpetatud",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Sisselogimine ebaõnnestus: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Sisselogimine õnnestus.",
+  "statusLogoutSuccess": "Väljalogimine õnnestus.",
+  "statusRequestFailed": "Tõlketaotlus ebaõnnestus: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Tõlketaotlus on esitatud.",
+  "stopPractice": "Lõpeta harjutamine",
+  "studyLangNotFoundDesc": "Valitud materjal ei toeta praegust õppekeelt ({targetLang}), seega ei saa seda kohalikult salvestada. Kas soovid tõlget taotleda?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Õppekeel pole toetatud",
   "styleFormal": "Formaalne",
   "styleInformal": "Mitteformaalne",
   "stylePolite": "Viisakas",
   "styleSlang": "Släng",
-  "subject": "Teema:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Vaheta keeled",
-  "switchToAi": "Lülitu AI-režiimile",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Lülitu partnerrežiimile",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Andmete sünkroniseerimine...",
-  "tabConversation": "Vestlus",
   "tabReview": "Kordamine ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Vähenda",
   "tooltipIncrease": "Suurenda",
   "tooltipSearch": "Otsing",
+  "tooltipSettingsConfirm": "Kinnita seaded",
   "tooltipSpeaking": "Rääkimine",
   "tooltipStudyReview": "Õppimine+kordamine",
   "totalRecords": "Kokku {count} kirjet (vaata kõiki)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Tõlgi kohe",
   "translating": "Tõlgin...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Tõlkekeel",
   "translationLimitExceeded": "Tõlkelimiit on ületatud",
   "translationLimitMessage": "Oled kasutanud kõik oma igapäevased tasuta tõlked (5 korda).\\n\\nKas soovid vaadata reklaami ja saada kohe 5 korda juurde?",
   "translationLoaded": "Salvestatud tõlge on laaditud",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Tõlgete arv on suurendatud 5 võrra!",
+  "translationResult": "Tõlketulemus",
   "translationResultHint": "Tõlke tulemus - muudetav",
   "tryAgain": "Proovi uuesti",
-  "tutorialAiChatDesc": "Harjuta AI personažiga reaalset vestlust.",
-  "tutorialAiChatTitle": "AI vestlus",
+  "ttsInstallGuide": "Installi vastavad keeleandmed Androidi seadetes > Google'i kõnesünteesis.",
+  "ttsMissing": "Selle keele kõnesünteesimootor pole sinu seadmesse installitud.",
+  "ttsUnsupportedNatively": "Seadme vaikeseaded ei toeta selle keele kõnet.",
   "tutorialContextDesc": "Isegi kui lause on sama, saad selle eraldi salvestada, märkides olukorra (nt hommik, õhtu).",
   "tutorialContextTitle": "Olukorra/konteksti silt",
   "tutorialLangSettingsDesc": "Seadista tõlgitav lähtekeel ja sihtkeel.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Tõlgi sisestatud tekst.",
   "tutorialTransTitle": "Tõlgi",
   "typeExclamation": "Hüüdlause",
+  "typeIdiom": "Idioom",
   "typeImperative": "Käskiv lause",
+  "typeProverb": "Kõnekäänd/vanasõna",
   "typeQuestion": "Küsilause",
   "typeStatement": "Väitlause",
   "usageLimitTitle": "Limiti saavutamine",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Vaata veebijuhendit",
   "voluntaryTranslations": "Vabatahtlikud tõlked",
   "watchAdAndRefill": "Vaata reklaami ja täida (+5 korda)",
+  "welcomeButton": "Alusta",
+  "welcomeDesc": "Tere tulemast Talkiesse! Toetame 100% terviklikkusega kõiki 80+ keelt üle maailma ning pakume täiuslikku õppimiskogemust uue esmaklassilise 3D-disaini ja optimeeritud jõudlusega.",
+  "welcomeTitle": "Tere tulemast Talkiesse!",
   "word": "Sõna",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Kaitske oma baasi, öeldes sõnu enne, kui vaenlased kohale jõuavad.",
   "wordDefenseTitle": "Sõnade kaitse",
   "wordModeLabel": "Sõnarežiim",
-  "yourPronunciation": "Sinu hääldus",
-  "ttsUnsupportedNatively": "Seadme vaikeseaded ei toeta selle keele kõnet.",
-  "homeTab": "Tõlge",
-  "welcomeTitle": "Tere tulemast Talkiesse!",
-  "welcomeDesc": "Tere tulemast Talkiesse! Toetame 100% terviklikkusega kõiki 80+ keelt üle maailma ning pakume täiuslikku õppimiskogemust uue esmaklassilise 3D-disaini ja optimeeritud jõudlusega.",
-  "welcomeButton": "Alusta",
-  "labelDetails": "Detailseaded",
-  "translationResult": "Tõlketulemus",
-  "inputContent": "Sisestatud sisu",
-  "translateNow": "Tõlgi kohe",
-  "tooltipSettingsConfirm": "Kinnita seaded",
-  "hintNoteExample": "Nt: kontekst, homonüümid jne",
-  "hintTagExample": "Nt: äri, reisimine...",
-  "addNew": "Lisa uus",
-  "newNotebookTitle": "Uue märkmiku nimi",
-  "enterNameHint": "Sisesta nimi",
-  "add": "Lisa",
-  "openSettings": "Ava seaded",
-  "helpNotebook": "Vali kaust, kuhu tõlgitud tulemused salvestada.",
-  "helpNote": "Kirjuta üles sõna tähendus, näited või olukorrad.",
-  "helpTag": "Sisesta märksõnad, et hiljem liigitada või otsida.",
-  "requestTranslation": "Taotle tõlget",
-  "statusRequestSuccess": "Tõlketaotlus on esitatud.",
-  "statusRequestFailed": "Tõlketaotlus ebaõnnestus: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Õppekeel pole toetatud",
-  "studyLangNotFoundDesc": "Valitud materjal ei toeta praegust õppekeelt ({targetLang}), seega ei saa seda kohalikult salvestada. Kas soovid tõlget taotleda?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Seadista keel",
-  "quickStartStep1Desc": "Määra esmalt oma keel ja õpitav keel menüüs > Keeleseaded.",
-  "quickStartStep2Title": "2. Põhivool",
-  "quickStartStep2Desc": "Koosta oma õppekaardid järjekorras: sisend (mikrofon/klaviatuur) -> tõlkimine -> salvestamine.",
-  "quickStartStep3Title": "3. Režiimide kasutamine",
-  "quickStartStep3Desc": "Harjuta vestluse kaudu ja harjuta hääldust, vaadates teksti ja hääldades seda otse vahekaardil Hääldusharjutus.",
-  "noteGuidance": "Kuhu sisestate täpsemaks tõlkimiseks täiendavaid üksikasju"
+  "yourPronunciation": "Sinu hääldus"
 }

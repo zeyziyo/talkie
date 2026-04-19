@@ -1,32 +1,10 @@
 {
   "@@locale": "si",
-  "basicWords": "මූලික වචන ගබඩාව",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "ආදාන භාෂාව",
-  "translationLanguage": "පරිවර්තන භාෂාව",
-  "simplifiedGuidance": "දෛනික සංවාද ක්ෂණිකව විදේශ භාෂාවකට පරිවර්තනය කරන්න! Talkie ඔබගේ භාෂා ජීවිතය වාර්තා කරයි.",
-  "noDataForLanguage": "ඔබ තෝරාගත් භාෂාව සඳහා ඉගෙනුම් ද්‍රව්‍ය දේශීය දත්ත ගබඩාවේ නොමැත. කරුණාකර ද්‍රව්‍ය බාගත කරන්න හෝ වෙනත් භාෂාවක් තෝරන්න.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "අවලංගු කරන්න",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "නිරවද්‍යතාවය",
-  "ttsMissing": "මෙම භාෂාව සඳහා හඬ එන්ජිම ඔබගේ උපාංගයේ ස්ථාපනය කර නොමැත.",
-  "ttsInstallGuide": "Android සැකසීම් > Google TTS වෙතින් අදාළ භාෂා දත්ත ස්ථාපනය කරන්න.",
   "adLoading": "දැන්වීම් පූරණය වෙමින් පවතී. කරුණාකර පසුව නැවත උත්සාහ කරන්න.",
+  "add": "එකතු කරන්න",
+  "addNew": "අලුතින් එකතු කරන්න",
   "addNewSubject": "නව මාතෘකාවක් එක් කරන්න",
-  "addParticipant": "සහභාගිවන්නෙකු එක් කරන්න",
   "addTagHint": "ටැගය එක් කරන්න...",
   "alreadyHaveAccount": "ඔබට දැනටමත් ගිණුමක් තිබේද?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "මූලික වචන ගබඩාව",
+  "basicWords": "මූලික වචන ගබඩාව",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "අවලංගු කරන්න",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "වස්තුව",
   "casePossessive": "අයිති",
   "casePossessivePronoun": "අයිති සර්වනාමය",
   "caseReflexive": "ප්‍රත්‍යාවර්තී",
   "caseSubject": "නාමික",
-  "chatAiChat": "කතාබස්",
-  "chatAllConversations": "සියලු සංවාද",
-  "chatChoosePersona": "පෞරුෂය තෝරන්න",
-  "chatEndMessage": "ඔබට කතාබස අවසන් කිරීමට අවශ්‍යද?",
-  "chatEndTitle": "කතාබස අවසන් කර සුරකින්න",
-  "chatFailed": "කතාබස් අසාර්ථක විය: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "සංවාදයෙන් උපුටා ගැනීම ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "කතාබස් ඉතිහාසය",
-  "chatNew": "නව කතාබස",
-  "chatNewChat": "නව කතාබස",
-  "chatNoConversations": "තවම සංවාද නැත",
-  "chatSearchHint": "කතාබස් මාතෘකාව අනුව සොයන්න...",
-  "chatNoteSearchHint": "සටහන් මගින් සොයන්න...",
-  "chatSaveAndExit": "සුරැකීමෙන් පසු පිටවන්න",
-  "chatStartNewPrompt": "පුහුණුවීම් සඳහා නව සංවාදයක් ආරම්භ කිරීමට උත්සාහ කරන්න!",
-  "chatTypeHint": "පණිවිඩයක් ටයිප් කරන්න...",
-  "chatUntitled": "මාතෘකාවක් නැති සංවාදය",
   "checking": "පරීක්ෂා කරමින්...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "ඔබට මෙම සංවාදය මකා දැමීමට අවශ්‍යද?\nමකා දැමූ සංවාද නැවත ලබා ගත නොහැක.",
-  "confirmDeleteParticipant": "ඔබ මෙම සහභාගිවන්නා මකා දැමීමට කැමතිද?",
   "contextTagHint": "පසුව වෙන්කර හඳුනා ගැනීම පහසු කිරීම සඳහා තත්වය ලියන්න",
   "contextTagLabel": "සන්දර්භය/සන්දර්භය (විකල්ප) - උදා: සුබ උදෑසනක්, ආචාරශීලී",
   "copiedToClipboard": "පිටපත් කර පසුරු පුවරුවට එක් කරන ලදී!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "අවස්ථා රඟදැක්වීම් හරහා සංවාද පුහුණු වන්න. සුදුසු පිළිතුරක් තෝරා කතා කරන්න.",
-  "dialogueQuestTitle": "සංවාද සෙවීම",
-  "disambiguationPrompt": "ඔබ කුමන අර්ථයෙන් පරිවර්තනය කිරීමට කැමතිද?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "අර්ථය තෝරන්න",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "ඔබට ගිණුමක් නොමැතිද?",
-  "editParticipant": "සහභාගිවන්නා සංස්කරණය කරන්න",
   "email": "විද්‍යුත් තැපෑල",
   "emailAlreadyInUse": "මෙම විද්‍යුත් තැපෑල දැනටමත් ලියාපදිංචි වී ඇත. පිවිසෙන්න හෝ මුරපදය සොයා ගැනීමට උත්සාහ කරන්න.",
+  "enterNameHint": "නම ඇතුළත් කරන්න",
   "enterNewSubjectName": "නව මාතෘකාවක් ඇතුළත් කරන්න",
   "enterSentenceHint": "වාක්‍යයක් ඇතුළත් කරන්න...",
   "enterTextHint": "පරිවර්තනය කිරීමට පෙළ ඇතුළත් කරන්න",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "හඳුනාගත් පෙළ",
   "female": "ගැහැණු",
   "file": "ගොනුව:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "ක්‍රීඩා මාදිලිය",
   "gameOver": "ක්‍රීඩාව අවසන්",
   "gender": "ස්ත්‍රී පුරුෂ භාවය",
-  "labelFilterMaterial": "ද්‍රව්‍ය",
-  "labelFilterTag": "ටැගය",
   "generalTags": "පොදු ටැග්",
   "getMaterials": "ද්‍රව්‍ය ලබා ගන්න",
   "good": "හොඳයි",
   "googleContinue": "Google සමඟ ඉදිරියට යන්න",
-  "helpDialogueImportDesc": "සම්පූර්ණ දෙබස් කට්ටලයක් JSON ගොනුවක් ලෙස ආයාත කරන්න.",
-  "helpDialogueImportDetails": "• JSON ව්‍යුහය: `entries` වෙනුවට `dialogues` අරාව භාවිත කරන්න\n• ස්වයංක්‍රීය ප්‍රතිසාධනය: සංවාදයේ මාතෘකාව, පෞරුෂය සහ පණිවිඩ අනුපිළිවෙල ප්‍රතිසාධනය කෙරේ.\n• ස්ථානය: ආයාත කළ සංවාද AI කතාබස් මාදිලියේ 'වාර්තා' ටැබය මත දිස්වේ.",
   "helpJsonDesc": "3 වන මාදිලියේදී භාවිතා කිරීමට JSON ගොනුවක් ලෙස ඉගෙනුම් ද්‍රව්‍ය ආයාත කිරීමට පහත ආකෘතිය අනුගමනය කරන්න:",
-  "helpJsonTypeDialogue": "සංවාදය (Dialogue)",
   "helpJsonTypeSentence": "වාක්‍යය (Sentence)",
   "helpJsonTypeWord": "වචනය (Word)",
   "helpMode1Desc": "ප්‍රිමියම් 3D මයික්‍රෆෝනය සහ විශාල යතුරුපුවරු නිරූපකය සමඟින් වඩාත් සරල ආකාරයෙන් භාෂා ඉගෙනීම ආරම්භ කරන්න.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• පොත් තේරීම: දකුණු ඉහළ මෙනුවෙන් (⋮) 'අධ්‍යයන පොත් තේරීම' හෝ 'මාර්ගගත පුස්තකාලය' භාවිතා කරන්න.\n• කාඩ්පත පෙරළීම: පරිවර්තනය පරීක්ෂා කිරීමට 'පෙන්වන්න/සඟවන්න' භාවිතා කරන්න.\n• සවන්දීම: උච්චාරණය නැවත ධාවනය කිරීමට ස්පීකර් නිරූපකය භාවිතා කරන්න.\n• ඉගෙනීම සම්පූර්ණ කිරීම: ඉගෙනීම සම්පූර්ණ කිරීමට සලකුණු සලකුණ (V) භාවිතා කරන්න.\n• මකා දැමීම: වාර්තාව මකා දැමීමට කාඩ්පත දිගු වේලාවක් ඔබා අල්ලා ගන්න (දිගු ක්ලික් කරන්න).\n• සෙවීම සහ පෙරහන් කිරීම: සෙවුම් තීරුව (තත්‍ය කාලීන ස්මාර්ට් සෙවීම) සහ ටැග්, ආරම්භක අකුරු පෙරහන් සඳහා සහාය වන්න.",
   "helpMode3Desc": "වාක්‍ය ශ්‍රවණය කරමින් (Shadowing) උච්චාරණය පුහුණු වන්න.",
   "helpMode3Details": "• ද්‍රව්‍ය තේරීම: ඉගෙනීමට ද්‍රව්‍ය එකතුවක් තෝරන්න\n• පරතරය සකසන්න: [-] [+] බොත්තම් සමඟ වාක්‍ය අතර රැඳී සිටීමේ කාලය සකසන්න (තත්පර 3-60)\n• ආරම්භ කරන්න/නැවැත්වන්න: ෂැඩෝවිං සැසිය පාලනය කරන්න\n• කථා කිරීම: ශබ්දයට සවන් දී එය නැවත කරන්න\n• ප්‍රතිපෝෂණය: නිරවද්‍යතා ලකුණු (0-100) සහ වර්ණ සංදර්ශකය\n• සෙවුම් කොන්දේසි: ටැග්, මෑත අයිතම, ආරම්භක අකුරුවලින් පුහුණු ඉලක්ක පෙරහන් කරන්න",
-  "helpModeChatDesc": "AI පෞරුෂය සමඟ කතාබස් කරමින් සැබෑ සංවාදයන් පුහුණු වන්න.",
-  "helpModeChatDetails": "• AI කතාබස්: පහළ ටැබ් තීරුවේ ඇති 'කතාබස්' මෙනුවෙන් චරිතයක් සමඟ සැබෑ සංවාද පුහුණු වන්න\n• චරිත සැකසීම්: අනෙක් පුද්ගලයාගේ ස්ත්‍රී පුරුෂ භාවය, නම සහ භාෂා කේතය නිදහසේ සඳහන් කරන්න\n• GPS තත්ත්‍ව නිරූපණය: ඔබගේ වත්මන් ස්ථානය හඳුනාගෙන ස්ථානයට ගැලපෙන සංවාද මාතෘකා නිර්දේශ කරන්න\n• ද්විභාෂා: AI හි ප්‍රතිචාර පරිවර්තනය සමඟ ප්‍රදර්ශනය වන අතර එමඟින් ඉගෙනීමේ බලපෑම උපරිම වේ\n• වාර්තා කළමනාකරණය: පෙර සංවාද ඉතිහාසය පෙරහන් කර සංවාදයක නිශ්චිත පණිවිඩ ඉගෙනුම් ද්‍රව්‍ය ලෙස සුරකින්න",
+  "helpNote": "වචනයේ තේරුම, උදාහරණ, තත්වයන් වැනි දේ නිදහසේ සටහන් කරන්න.",
+  "helpNotebook": "පරිවර්තන ප්‍රතිඵල සුරැකීමට ෆෝල්ඩරයක් තෝරන්න.",
   "helpTabJson": "JSON ආකෘතිය",
   "helpTabModes": "මාදිලි පැහැදිලි කිරීම",
   "helpTabQuickStart": "ඉක්මන් ආරම්භය",
   "helpTabTour": "අත්දැකීම",
+  "helpTag": "පසුව වර්ග කිරීමට හෝ සෙවීමට මූල පද ඇතුළත් කරන්න.",
   "helpTitle": "උපකාර සහ මාර්ගෝපදේශය",
   "helpTourDesc": "**ප්‍රධාන ලක්ෂණ ඉස්මතු කරන රවුම** මඟින් මඟ පෙන්වනු ලැබේ.\n(උදා: **ඉස්මතු කරන රවුම** විසින් පෙන්වන කාඩ්පත මකා දැමීමට දිගු වේලාවක් ඔබන්න.)",
   "hide": "සඟවන්න",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "උදා: සන්දර්භය, සමාන පද ආදිය",
+  "hintTagExample": "උදා: ව්‍යාපාර, සංචාර...",
+  "homeTab": "පරිවර්තනය",
   "importAdded": "එකතු කරන ලදී: {count}ක්",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "ගොනු {files} සහ අයිතම {entries} ආයාත කරන ලදී.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON ගොනුව ආයාත කරන්න",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "තනි JSON ගොනුව",
+  "importSourceFolder": "ෆෝල්ඩරය (භාෂාව-විශේෂිත පුස්තකාල ව්‍යුහය)",
+  "importSourceTitle": "ආයාත මූලාශ්‍රයක් තෝරන්න",
+  "importSourceZip": "ZIP ගොනුව (සම්පීඩිත ෆෝල්ඩරය)",
   "importTotal": "සම්පූර්ණ: {count}ක්",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "ඇතුළත් කරන අන්තර්ගතය",
+  "inputLanguage": "ආදාන භාෂාව",
   "inputModeTitle": "ආදානය",
   "intervalSeconds": "පරතරය: තත්පර {seconds}",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "කරුණාකර වලංගු විද්‍යුත් තැපෑලක් ඇතුළත් කරන්න.",
   "kakaoContinue": "කකාඕ සමඟ ඉදිරියට යන්න",
+  "labelDetails": "විස්තර සකසන්න",
+  "labelFilterMaterial": "ද්‍රව්‍ය",
+  "labelFilterTag": "ටැගය",
   "labelLangCode": "භාෂා කේතය (උදා: en-US, ko-KR)",
-  "labelName": "නම",
   "labelNote": "සටහන",
   "labelPOS": "කථනයේ කොටස",
-  "labelRole": "භූමිකාව",
   "labelSentence": "වාක්‍යය",
   "labelSentenceCollection": "වාක්‍ය එකතුව",
   "labelSentenceType": "වාක්‍ය වර්ගය",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "සහභාගිවන්නන් පූරණය වෙමින් පවතී...",
   "location": "ස්ථානය",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "පිවිසෙන්න",
   "logout": "ඉවත් වන්න",
   "logoutConfirmMessage": "ඔබ මෙම උපාංගයෙන් ඉවත් වීමට කැමතිද?",
   "logoutConfirmTitle": "ඉවත් වන්න",
   "male": "පිරිමි",
-  "manageParticipants": "සහභාගිවන්නන් කළමනාකරණය කරන්න",
   "manual": "අතින් ඇතුල් කිරීම",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "ද්‍රව්‍ය තොරතුරු",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "මම",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "උපාංගයෙන් ද්‍රව්‍ය ආයාත කරන්න",
   "menuHelp": "උපකාර",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "මගේ වාක්‍ය එකතුව",
   "myWordbook": "මගේ වචන මාලාව",
   "neutral": "මධ්‍යස්ථ",
+  "newNotebookTitle": "නව සටහන් පොතේ නම",
   "newSubjectName": "නව වචන මාලාව/වාක්‍ය මාලාවේ මාතෘකාව",
   "next": "ඊළඟ",
-  "noDialogueHistory": "සංවාද ඉතිහාසයක් නොමැත.",
-  "noInternetWarningMic": "අන්තර්ජාල සම්බන්ධතාවයක් නොමැත. නොබැඳිව සිටින විට හඬ හඳුනාගැනීම ලබා ගත නොහැකි විය හැක.",
-  "noInternetWarningTranslate": "අන්තර්ජාල සම්බන්ධතාවයක් නොමැත. නොබැඳිව සිටින විට පරිවර්තන විශේෂාංගය භාවිතා කළ නොහැක. කරුණාකර සමාලෝචන මාදිලිය භාවිතා කරන්න.",
+  "noDataForLanguage": "ඔබ තෝරාගත් භාෂාව සඳහා ඉගෙනුම් ද්‍රව්‍ය දේශීය දත්ත ගබඩාවේ නොමැත. කරුණාකර ද්‍රව්‍ය බාගත කරන්න හෝ වෙනත් භාෂාවක් තෝරන්න.",
   "noMaterialsInCategory": "මෙම ප්‍රවර්ගයේ ද්‍රව්‍ය නොමැත.",
-  "noParticipantsFound": "සහභාගිවන්නන් හමු නොවීය.",
   "noRecords": "තෝරාගත් භාෂාව සඳහා ඉගෙනුම් වාර්තා නොමැත",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "හඬක් හඳුනාගත්තේ නැත",
   "notSelected": "- තේරීමක් නැත -",
+  "noteGuidance": "වඩාත් නිවැරදි පරිවර්තනයක් සඳහා ඔබ අමතර තොරතුරු ඇතුළත් කරන ස්ථානය",
   "onlineLibraryCheckInternet": "ඔබේ අන්තර්ජාල සම්බන්ධතාවය පරීක්ෂා කරන්න හෝ පසුව නැවත උත්සාහ කරන්න.",
   "onlineLibraryLoadFailed": "ද්‍රව්‍ය පූරණය කිරීමට අසමත් විය.",
   "onlineLibraryNoMaterials": "ද්‍රව්‍ය නොමැත.",
-  "participantDeleted": "සහභාගිවන්නා මකා ඇත.",
-  "participantRename": "සහභාගිවන්නාගේ නම වෙනස් කරන්න",
-  "partner": "හවුල්කරු",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "හවුල්කාර මාදිලිය",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "සැකසුම් විවෘත කරන්න",
   "password": "මුරපදය",
   "passwordTooShort": "මුරපදය අවම වශයෙන් අක්ෂර 6ක් විය යුතුය.",
   "perfect": "නියමයි!",
-  "personaFriend": "ප්‍රදේශීය මිතුරා",
-  "personaGuide": "සංචාරක මඟපෙන්වන්නා",
-  "personaTeacher": "ඉංග්‍රීසි ගුරුවරයා",
+  "pickGallery": "ගැලරියෙන් තෝරන්න",
   "playAgain": "නැවත සෙල්ලම් කරන්න",
   "playbackFailed": "නැවත ධාවනය අසාර්ථක විය: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "විශේෂණ පදය",
   "posAdverb": "ක්‍රියා විශේෂණ පදය",
+  "posArticle": "නාම විශේෂණ පදය",
   "posConjunction": "සමුච්චය",
   "posInterjection": "අන්තර්ක්‍රියා",
   "posNoun": "නාම පදය",
+  "posParticle": "අංශුව",
   "posPreposition": "පූර්ව නිපාතය/පශ්චාත් නිපාතය",
   "posPronoun": "සර්වනාමය",
   "posVerb": "ක්‍රියා පදය",
   "practiceModeTitle": "පුහුණුව",
   "practiceWordsOnly": "වචන පමණක් පුහුණු වන්න",
+  "processing": "සකසමින්...",
   "progress": "ප්‍රගතිය: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "මෙනුව > භාෂා සැකසීම් වෙත ගොස් ඔබේ භාෂාව සහ ඉගෙනුම් භාෂාව පළමුව තෝරන්න.",
+  "quickStartStep1Title": "1. භාෂාව සකසන්න",
+  "quickStartStep2Desc": "ආදානය (මයික්‍රෆෝනය/යතුරුපුවරුව) -> පරිවර්තනය -> සුරැකීම යන අනුපිළිවෙලට ඔබේම ඉගෙනුම් කාඩ්පතක් සාදන්න.",
+  "quickStartStep2Title": "2. මූලික පියවර",
+  "quickStartStep3Desc": "චැට් කිරීමෙන් පුහුණු වන්න, උච්චාරණ පුහුණු පටිත්තෙහි පෙළ දෙස බලා කෙලින්ම උච්චාරණය කරමින් පුහුණු වන්න.",
+  "quickStartStep3Title": "3. ක්‍රම භාවිතා කරන්න",
   "recentNItems": "මෑතකදී ජනනය කරන ලද අයිතම {count}ක් බලන්න",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "පරිවර්තනයක් ඉල්ලන්න",
   "reset": "යළි පිහිටුවන්න",
   "resetPracticeHistory": "පුහුණු ඉතිහාසය යළි පිහිටුවන්න",
   "retry": "නැවත උත්සාහ කරන්නද?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "සමාලෝචනය",
-  "roleAi": "AI",
-  "roleThirdParty": "තෙවන පාර්ශවය",
-  "roleUser": "පරිශීලක",
   "save": "සුරකින්න",
+  "saveAsSentence": "වාක්‍යයක් ලෙස සුරකින්න",
+  "saveAsWord": "වචනයක් ලෙස සුරකින්න",
   "saveData": "දත්ත සුරකින්න",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "ස්කෑන් ඉතිහාසයේ සුරකින්න",
   "saveTranslationsFromSearch": "සෙවුම් මාදිලියේ පරිවර්තන සුරැකීමට උත්සාහ කරන්න",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "ස්කෑන් කිරීමට රූපයක් තෝරන්න",
+  "scanLabel": "ස්කෑන්",
   "score": "නිරවද්‍යතාවය: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "කථනයේ කොටස තෝරන්න",
-  "selectParticipants": "සහභාගිවන්නන් තෝරන්න",
-  "selectSentenceType": "වාක්‍ය වර්ගය තෝරන්න",
   "selectStudyMaterial": "ඉගෙනුම් ද්‍රව්‍ය තෝරන්න",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "වාක්‍යය",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "ලියාපදිංචි වන්න",
-  "similarTextFound": "සමාන පෙළ හමු විය",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "මඟ හරින්න",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "මූලාශ්‍රය:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "මූලාශ්‍ර භාෂාව",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "දෛනික සංවාද ක්ෂණිකව විදේශ භාෂාවකට පරිවර්තනය කරන්න! Talkie ඔබගේ භාෂා ජීවිතය වාර්තා කරයි.",
   "sourceLanguageLabel": "මගේ භාෂාව (මූලාශ්‍රය)",
-  "speakNow": "දැන් කතා කරන්න!",
-  "speaker": "කථිකයා",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "කථිකයා තෝරන්න",
-  "speakingPractice": "කථා කිරීමේ පුහුණුව",
-  "startChat": "කතාබස් ආරම්භ කරන්න",
-  "startPractice": "පුහුණුව ආරම්භ කරන්න",
   "startTutorial": "මාර්ගෝපදේශය ආරම්භ කරන්න",
-  "startWarning": "අවවාදයයි",
   "startsWith": "ආරම්භක අකුරු",
   "statusCheckEmail": "විද්‍යුත් තැපෑල පරීක්ෂා කර සත්‍යාපනය සම්පූර්ණ කරන්න.",
   "statusDownloading": "බාගනිමින්: {name}...",
-  "statusImportFailed": "ආනයනය අසාර්ථක විය: {error}",
-  "statusImportSuccess": "{name} ආනයනය කිරීම සම්පූර්ණයි",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "පිවිසීම අවලංගු කරන ලදී.",
-  "statusLoginFailed": "පිවිසීම අසාර්ථක විය: {error}",
-  "statusLoginSuccess": "පිවිසීම සාර්ථක විය.",
-  "statusLogoutSuccess": "ඉවත් විය.",
-  "statusSignUpFailed": "ලියාපදිංචිය අසාර්ථක විය: {error}",
-  "statusSigningUp": "ලියාපදිංචි වෙමින්...",
-  "stopPractice": "පුහුණුව නවත්වන්න",
-  "studyComplete": "ඉගෙනීම සම්පූර්ණයි",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "ඉගෙනුම් වාර්තා ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "ආනයනය අසාර්ථක විය: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} ආනයනය කිරීම සම්පූර්ණයි",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "පිවිසීම අසාර්ථක විය: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "පිවිසීම සාර්ථක විය.",
+  "statusLogoutSuccess": "ඉවත් විය.",
+  "statusRequestFailed": "පරිවර්තන ඉල්ලීම අසාර්ථක විය: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "පරිවර්තන ඉල්ලීම සාර්ථක විය.",
+  "stopPractice": "පුහුණුව නවත්වන්න",
+  "studyLangNotFoundDesc": "ඔබ තෝරාගත් අන්තර්ගතය දැනට ඔබගේ පාඩම් භාෂාව ({targetLang}) සඳහා සහය නොදක්වන බැවින් එය ඔබගේ උපාංගයේ සුරැකිය නොහැක. ඔබ පරිවර්තනයක් ඉල්ලීමට කැමතිද?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "පරිශීලන භාෂාව හඳුනාගත නොහැක",
   "styleFormal": "විධිමත්",
   "styleInformal": "අවිධිමත්",
   "stylePolite": "ආචාරශීලී",
   "styleSlang": "ව්‍යවහාරික",
-  "subject": "විෂය:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "භාෂා මාරු කරන්න",
-  "switchToAi": "AI මාදිලියට මාරු වන්න",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "හවුල්කාර මාදිලියට මාරු වන්න",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "දත්ත සමමුහුර්ත වෙමින් පවතී...",
-  "tabConversation": "සංවාදය",
   "tabReview": "සමාලෝචනය ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "අඩු කරන්න",
   "tooltipIncrease": "වැඩි කරන්න",
   "tooltipSearch": "සොයන්න",
+  "tooltipSettingsConfirm": "සැකසුම් තහවුරු කරන්න",
   "tooltipSpeaking": "කථා කිරීම",
   "tooltipStudyReview": "ඉගෙනීම+සමාලෝචනය",
   "totalRecords": "වාර්තා {count}ක් (සියල්ල බලන්න)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "දැන් පරිවර්තනය කරන්න",
   "translating": "පරිවර්තනය කරමින්...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "පරිවර්තන භාෂාව",
   "translationLimitExceeded": "පරිවර්තන සීමාව ඉක්මවා ඇත",
   "translationLimitMessage": "ඔබ ඔබේ දෛනික නොමිලේ පරිවර්තන (5 වතාවක්) සියල්ලම භාවිතා කර ඇත.\\n\\nදැන්වීමක් නැරඹීමෙන් වාර 5ක් ක්ෂණිකව නැවත පුරවන්නද?",
   "translationLoaded": "සුරකින ලද පරිවර්තනය පූරණය කරන ලදී",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "පරිවර්තන ගණන වාර 5ක් නැවත පුරවා ඇත!",
+  "translationResult": "පරිවර්තන ප්‍රතිඵලය",
   "translationResultHint": "පරිවර්තන ප්‍රතිඵලය - සංස්කරණය කළ හැක",
   "tryAgain": "නැවත උත්සාහ කරන්න",
-  "tutorialAiChatDesc": "AI පෞරුෂයක් සමඟ සැබෑ සංවාදයක් පුහුණු වන්න.",
-  "tutorialAiChatTitle": "AI කතාබස්",
+  "ttsInstallGuide": "Android සැකසීම් > Google TTS වෙතින් අදාළ භාෂා දත්ත ස්ථාපනය කරන්න.",
+  "ttsMissing": "මෙම භාෂාව සඳහා හඬ එන්ජිම ඔබගේ උපාංගයේ ස්ථාපනය කර නොමැත.",
+  "ttsUnsupportedNatively": "මෙම උපාංගයේ පෙරනිමි සැකසුම් මඟින් මෙම භාෂාව සඳහා හඬ ප්‍රතිදානය සහාය නොදක්වයි.",
   "tutorialContextDesc": "එකම වාක්‍යයක් වුවද, තත්වය (උදා: උදෑසන, සවස) සටහන් කර ඇත්නම් එය වෙන වෙනම සුරැකිය හැක.",
   "tutorialContextTitle": "සන්දර්භය/සන්දර්භ ටැගය",
   "tutorialLangSettingsDesc": "පරිවර්තනය කිරීමට මූලාශ්‍ර සහ ඉලක්ක භාෂා සකසන්න.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "ඇතුළත් කළ පෙළ පරිවර්තනය කරන්න.",
   "tutorialTransTitle": "පරිවර්තනය කරන්න",
   "typeExclamation": "උද්ඝෝෂණය",
+  "typeIdiom": "වාක්‍ය ඛණ්ඩය",
   "typeImperative": "අවශ්‍යයි",
+  "typeProverb": "හිතෝපදේශය",
   "typeQuestion": "ප්‍රශ්නය",
   "typeStatement": "ප්‍රකාශය",
   "usageLimitTitle": "සීමාවට ළඟා විය",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "මාර්ගගත මාර්ගෝපදේශය බලන්න",
   "voluntaryTranslations": "ස්වේච්ඡා පරිවර්තන",
   "watchAdAndRefill": "දැන්වීම් නරඹා නැවත පුරවන්න (+5 වාරයක්)",
+  "welcomeButton": "ආරම්භ කරන්න",
+  "welcomeDesc": "Talkie වෙත ඔබව සාදරයෙන් පිළිගනිමු! ලොව පුරා භාෂා 80කට වැඩි ගණනක් 100%ක් නිවැරදිව සහය දක්වන අතර, නව ප්‍රිමියම් 3D නිර්මාණ සහ ප්‍රශස්ත කාර්යසාධනය සමඟ පරිපූර්ණ ඉගෙනුම් අත්දැකීමක් ලබා දෙයි.",
+  "welcomeTitle": "Talkie වෙත සාදරයෙන් පිළිගනිමු!",
   "word": "වචනය",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "සතුරා පැමිණීමට පෙර වචනය කියා පදනම ආරක්ෂා කරන්න.",
   "wordDefenseTitle": "වචන ආරක්ෂාව",
   "wordModeLabel": "වචන මාදිලිය",
-  "yourPronunciation": "ඔබේ උච්චාරණය",
-  "ttsUnsupportedNatively": "මෙම උපාංගයේ පෙරනිමි සැකසුම් මඟින් මෙම භාෂාව සඳහා හඬ ප්‍රතිදානය සහාය නොදක්වයි.",
-  "homeTab": "පරිවර්තනය",
-  "welcomeTitle": "Talkie වෙත සාදරයෙන් පිළිගනිමු!",
-  "welcomeDesc": "Talkie වෙත ඔබව සාදරයෙන් පිළිගනිමු! ලොව පුරා භාෂා 80කට වැඩි ගණනක් 100%ක් නිවැරදිව සහය දක්වන අතර, නව ප්‍රිමියම් 3D නිර්මාණ සහ ප්‍රශස්ත කාර්යසාධනය සමඟ පරිපූර්ණ ඉගෙනුම් අත්දැකීමක් ලබා දෙයි.",
-  "welcomeButton": "ආරම්භ කරන්න",
-  "labelDetails": "විස්තර සකසන්න",
-  "translationResult": "පරිවර්තන ප්‍රතිඵලය",
-  "inputContent": "ඇතුළත් කරන අන්තර්ගතය",
-  "translateNow": "දැන් පරිවර්තනය කරන්න",
-  "tooltipSettingsConfirm": "සැකසුම් තහවුරු කරන්න",
-  "hintNoteExample": "උදා: සන්දර්භය, සමාන පද ආදිය",
-  "hintTagExample": "උදා: ව්‍යාපාර, සංචාර...",
-  "addNew": "අලුතින් එකතු කරන්න",
-  "newNotebookTitle": "නව සටහන් පොතේ නම",
-  "enterNameHint": "නම ඇතුළත් කරන්න",
-  "add": "එකතු කරන්න",
-  "openSettings": "සැකසුම් විවෘත කරන්න",
-  "helpNotebook": "පරිවර්තන ප්‍රතිඵල සුරැකීමට ෆෝල්ඩරයක් තෝරන්න.",
-  "helpNote": "වචනයේ තේරුම, උදාහරණ, තත්වයන් වැනි දේ නිදහසේ සටහන් කරන්න.",
-  "helpTag": "පසුව වර්ග කිරීමට හෝ සෙවීමට මූල පද ඇතුළත් කරන්න.",
-  "requestTranslation": "පරිවර්තනයක් ඉල්ලන්න",
-  "statusRequestSuccess": "පරිවර්තන ඉල්ලීම සාර්ථක විය.",
-  "statusRequestFailed": "පරිවර්තන ඉල්ලීම අසාර්ථක විය: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "පරිශීලන භාෂාව හඳුනාගත නොහැක",
-  "studyLangNotFoundDesc": "ඔබ තෝරාගත් අන්තර්ගතය දැනට ඔබගේ පාඩම් භාෂාව ({targetLang}) සඳහා සහය නොදක්වන බැවින් එය ඔබගේ උපාංගයේ සුරැකිය නොහැක. ඔබ පරිවර්තනයක් ඉල්ලීමට කැමතිද?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. භාෂාව සකසන්න",
-  "quickStartStep1Desc": "මෙනුව > භාෂා සැකසීම් වෙත ගොස් ඔබේ භාෂාව සහ ඉගෙනුම් භාෂාව පළමුව තෝරන්න.",
-  "quickStartStep2Title": "2. මූලික පියවර",
-  "quickStartStep2Desc": "ආදානය (මයික්‍රෆෝනය/යතුරුපුවරුව) -> පරිවර්තනය -> සුරැකීම යන අනුපිළිවෙලට ඔබේම ඉගෙනුම් කාඩ්පතක් සාදන්න.",
-  "quickStartStep3Title": "3. ක්‍රම භාවිතා කරන්න",
-  "quickStartStep3Desc": "චැට් කිරීමෙන් පුහුණු වන්න, උච්චාරණ පුහුණු පටිත්තෙහි පෙළ දෙස බලා කෙලින්ම උච්චාරණය කරමින් පුහුණු වන්න.",
-  "noteGuidance": "වඩාත් නිවැරදි පරිවර්තනයක් සඳහා ඔබ අමතර තොරතුරු ඇතුළත් කරන ස්ථානය"
+  "yourPronunciation": "ඔබේ උච්චාරණය"
 }

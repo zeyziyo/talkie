@@ -115,15 +115,8 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
             },
             children: [
               _buildModeCard(
-                icon: Icons.chat_bubble,
-                title: l10n.chatAiChat,
-                desc: l10n.helpModeChatDesc,
-                details: l10n.helpModeChatDetails,
-                color: Colors.orange[50]!,
-              ),
-              _buildModeCard(
-                icon: Icons.translate, // Changed from Icons.input to match HomeScreen
-                title: l10n.homeTab, // Changed label to match "번역"
+                icon: Icons.translate,
+                title: l10n.homeTab,
                 desc: l10n.helpMode1Desc,
                 details: l10n.helpMode1Details,
                 color: Colors.blue[50]!,
@@ -141,6 +134,13 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
                 desc: l10n.helpMode3Desc,
                 details: l10n.helpMode3Details,
                 color: Colors.purple[50]!,
+              ),
+              _buildModeCard(
+                icon: Icons.document_scanner,
+                title: l10n.scanLabel,
+                desc: l10n.scanInstructions,
+                details: l10n.scanInstructions,
+                color: Colors.orange[50]!,
               ),
             ],
           ),
@@ -235,7 +235,7 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
   }
 
   // JSON Example selection state
-  String _selectedJsonType = 'dialogue';
+  String _selectedJsonType = 'sentence';
 
   Future<String> _loadJsonExample(String type) async {
     final path = 'assets/help/${type}_example.json';
@@ -250,9 +250,6 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
     String typeDesc = '';
     
     switch (_selectedJsonType) {
-      case 'dialogue':
-        typeDesc = l10n.helpDialogueImportDetails;
-        break;
       case 'sentence':
         typeDesc = l10n.helpMode2Details; 
         break;
@@ -273,7 +270,6 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
         // Type Selector
         SegmentedButton<String>(
           segments: [
-            ButtonSegment(value: 'dialogue', label: Text(l10n.helpJsonTypeDialogue)),
             ButtonSegment(value: 'sentence', label: Text(l10n.helpJsonTypeSentence)),
             ButtonSegment(value: 'word', label: Text(l10n.helpJsonTypeWord)),
           ],
@@ -286,15 +282,6 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
         ),
         
         const SizedBox(height: 16),
-          
-        if (_selectedJsonType == 'dialogue')
-          Padding(
-            padding: const EdgeInsets.only(bottom: 12),
-            child: Text(
-              l10n.helpDialogueImportDesc,
-              style: TextStyle(fontSize: 14, color: Colors.blue[700]),
-            ),
-          ),
           
         FutureBuilder<String>(
           future: _loadJsonExample(_selectedJsonType),

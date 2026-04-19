@@ -9,52 +9,19 @@ class AppLocalizationsLo extends AppLocalizations {
   AppLocalizationsLo([String locale = 'lo']) : super(locale);
 
   @override
-  String get basicWords => 'ບ່ອນເກັບມ້ຽນຄຳສັບພື້ນຖານ';
-
-  @override
-  String get inputLanguage => 'ພາສາປ້ອນຂໍ້ມູນ';
-
-  @override
-  String get translationLanguage => 'ພາສາແປ';
-
-  @override
-  String get simplifiedGuidance =>
-      'ປ່ຽນການສົນທະນາປະຈຳວັນເປັນພາສາຕ່າງປະເທດທັນທີ! Talkie ຈະບັນທຶກຊີວິດພາສາຂອງທ່ານ.';
-
-  @override
-  String get noDataForLanguage =>
-      'ບໍ່ມີຂໍ້ມູນການຮຽນຮູ້ສຳລັບພາສາທີ່ທ່ານເລືອກໃນຖານຂໍ້ມູນທ້ອງຖິ່ນ. ກະລຸນາດາວໂຫຼດຂໍ້ມູນ ຫຼືເລືອກພາສາອື່ນ.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'ຍົກເລີກ';
-
-  @override
   String get accuracy => 'ຄວາມຖືກຕ້ອງ';
-
-  @override
-  String get ttsMissing =>
-      'ບໍ່​ມີ​ເຄື່ອງ​ມື​ສຽງ​ສຳ​ລັບ​ພາ​ສາ​ນີ້​ຕິດ​ຕັ້ງ​ຢູ່​ໃນ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ.';
-
-  @override
-  String get ttsInstallGuide =>
-      'ກະລຸນາຕິດຕັ້ງຂໍ້ມູນພາສານັ້ນໃນການຕັ້ງຄ່າ Android > Google TTS.';
 
   @override
   String get adLoading => 'ກຳລັງໂຫຼດໂຄສະນາ. ກະລຸນາລອງໃໝ່ອີກຄັ້ງໃນພາຍຫຼັງ.';
 
   @override
-  String get addNewSubject => 'ເພີ່ມຫົວຂໍ້ໃໝ່';
+  String get add => 'ເພີ່ມ';
 
   @override
-  String get addParticipant => 'ເພີ່ມຜູ້ເຂົ້າຮ່ວມ';
+  String get addNew => 'ເພີ່ມໃໝ່';
+
+  @override
+  String get addNewSubject => 'ເພີ່ມຫົວຂໍ້ໃໝ່';
 
   @override
   String get addTagHint => 'ເພີ່ມແທັກ...';
@@ -87,6 +54,12 @@ class AppLocalizationsLo extends AppLocalizations {
   String get basicWordRepository => 'ບ່ອນເກັບມ້ຽນຄຳສັບພື້ນຖານ';
 
   @override
+  String get basicWords => 'ບ່ອນເກັບມ້ຽນຄຳສັບພື້ນຖານ';
+
+  @override
+  String get cancel => 'ຍົກເລີກ';
+
+  @override
   String get caseObject => 'ກໍລະນີຈຸດປະສົງ';
 
   @override
@@ -102,61 +75,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get caseSubject => 'Nomitive';
 
   @override
-  String get chatAiChat => 'ສົນທະນາ';
-
-  @override
-  String get chatAllConversations => 'ສົນທະນາທັງໝົດ';
-
-  @override
-  String get chatChoosePersona => 'ເລືອກ Persona';
-
-  @override
-  String get chatEndMessage => 'ທ່ານຕ້ອງການທີ່ຈະສິ້ນສຸດການສົນທະນາ?';
-
-  @override
-  String get chatEndTitle => 'ສິ້ນສຸດ ແລະບັນທຶກການສົນທະນາ';
-
-  @override
-  String chatFailed(Object error) {
-    return 'ສົນທະນາບໍ່ສຳເລັດ: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'ຄັດຈາກການສົນທະນາ ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'ປະຫວັດການສົນທະນາ';
-
-  @override
-  String get chatNew => 'ສົນທະນາໃໝ່';
-
-  @override
-  String get chatNewChat => 'ສົນທະນາໃໝ່';
-
-  @override
-  String get chatNoConversations => 'ຍັງບໍ່ມີການສົນທະນາ';
-
-  @override
-  String get chatSearchHint => 'ຄົ້ນຫາຈາກຊື່ຫ້ອງສົນທະນາ...';
-
-  @override
-  String get chatNoteSearchHint => 'ຄົ້ນຫາໃນບັນທຶກ...';
-
-  @override
-  String get chatSaveAndExit => 'ບັນທຶກແລ້ວອອກ';
-
-  @override
-  String get chatStartNewPrompt => 'ເລີ່ມຕົ້ນການສົນທະນາໃໝ່ສຳລັບການຝຶກຊ້ອມ!';
-
-  @override
-  String get chatTypeHint => 'ປ້ອນຂໍ້ຄວາມ...';
-
-  @override
-  String get chatUntitled => 'ບໍ່ມີຊື່ການສົນທະນາ';
-
-  @override
   String get checking => 'ກຳລັງກວດສອບ...';
 
   @override
@@ -167,14 +85,6 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get confirmDelete => 'ເຈົ້າແນ່ໃຈບໍ່ວ່າຈະລຶບບັນທຶກການຮຽນຮູ້ນີ້?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'ທ່ານແນ່ໃຈບໍ່ວ່າຈະລຶບການສົນທະນານີ້?\nການສົນທະນາທີ່ຖືກລຶບຈະບໍ່ສາມາດກູ້ຄືນໄດ້.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'ທ່ານແນ່ໃຈບໍວ່າຕ້ອງການລຶບຜູ້ເຂົ້າຮ່ວມນີ້?';
 
   @override
   String get contextTagHint =>
@@ -214,23 +124,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get deleteRecord => 'ລຶບບັນທຶກ';
 
   @override
-  String get dialogueQuestDesc =>
-      'ຝຶກການສົນທະນາຜ່ານສະຖານະການ. ເລືອກຄໍາຕອບທີ່ເໝາະສົມ ແລະເວົ້າ.';
-
-  @override
-  String get dialogueQuestTitle => 'ພາລະກິດສົນທະນາ';
-
-  @override
-  String get disambiguationPrompt => 'ທ່ານຕ້ອງການແປດ້ວຍຄວາມໝາຍໃດ?';
-
-  @override
-  String get disambiguationTitle => 'ເລືອກຄວາມໝາຍ';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'ບໍ່ມີບັນຊີບໍ?';
-
-  @override
-  String get editParticipant => 'ແກ້ໄຂຜູ້ເຂົ້າຮ່ວມ';
 
   @override
   String get email => 'ອີເມວ';
@@ -238,6 +135,9 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'ອີເມວນີ້ຖືກນຳໃຊ້ແລ້ວ. ກະລຸນາເຂົ້າສູ່ລະບົບ ຫຼື ລືມລະຫັດຜ່ານ.';
+
+  @override
+  String get enterNameHint => 'ປ້ອນຊື່';
 
   @override
   String get enterNewSubjectName => 'ປ້ອນຊື່ຫົວຂໍ້ໃໝ່';
@@ -274,6 +174,9 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get errors => 'ຂໍ້ຜິດພາດ:';
+
+  @override
+  String get extractedText => 'ຂໍ້ຄວາມທີ່ກວດພົບ';
 
   @override
   String get female => 'ຍິງ';
@@ -333,12 +236,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get gender => 'ເພດ';
 
   @override
-  String get labelFilterMaterial => 'ເອກະສານອ້າງອີງ';
-
-  @override
-  String get labelFilterTag => 'ແທັກ';
-
-  @override
   String get generalTags => 'ປ້າຍກຳກັບທົ່ວໄປ';
 
   @override
@@ -351,19 +248,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get googleContinue => 'ສືບຕໍ່ດ້ວຍ Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'ນຳເຂົ້າຊຸດການສົນທະນາທັງໝົດເປັນໄຟລ໌ JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• ໂຄງສ້າງ JSON: ໃຊ້ແຖວ \'dialogues\' ແທນ \'entries\'\n• ການກູ້ຄືນອັດຕະໂນມັດ: ຊື່ຫົວຂໍ້ການສົນທະນາ, Persona, ລໍາດັບຂໍ້ຄວາມຈະຖືກກູ້ຄືນ.\n• ສະຖານທີ່: ການສົນທະນາທີ່ນໍາເຂົ້າມາຈະປາກົດຢູ່ໃນແຖບ \'ປະຫວັດ\' ຂອງໂໝດສົນທະນາ AI.';
-
-  @override
   String get helpJsonDesc =>
       'ເພື່ອເອົາເຂົ້າເອກະສານການຮຽນຮູ້ໃນຮູບແບບ JSON ທີ່ຈະໃຊ້ໃນໂໝດ 3, ໃຫ້ເຮັດຕາມຮູບແບບຕໍ່ໄປນີ້:';
-
-  @override
-  String get helpJsonTypeDialogue => 'ສົນທະນາ (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'ປະໂຫຍກ (Sentence)';
@@ -395,11 +281,10 @@ class AppLocalizationsLo extends AppLocalizations {
       '• ເລືອກເອກະສານ: ເລືອກຊຸດເອກະສານທີ່ຈະຮຽນຮູ້\n• ຕັ້ງຄ່າໄລຍະຫ່າງ: ປັບເວລາລໍຖ້າລະຫວ່າງປະໂຫຍກດ້ວຍປຸ່ມ [-] [+](3 ວິນາທີ ~ 60 ວິນາທີ)\n• ເລີ່ມ/ຢຸດ: ຄວບຄຸມເຊດຊັນ Shadowing\n• ເວົ້າ: ຟັງສຽງແລ້ວເວົ້າຕາມ\n• ຄຳຕິຊົມ: ສະແດງຄະແນນຄວາມຖືກຕ້ອງ (0-100) ແລະສີ\n• ເງື່ອນໄຂການຄົ້ນຫາ: ກັ່ນຕອງເປົ້າໝາຍການຝຶກດ້ວຍແທັກ, ລາຍການຫຼ້າສຸດ, ຕົວອັກສອນເລີ່ມຕົ້ນ';
 
   @override
-  String get helpModeChatDesc => 'ສົນທະນາກັບ AI ເພື່ອຝຶກການສົນທະນາຕົວຈິງ.';
+  String get helpNote => 'ບັນທຶກຄວາມໝາຍ, ຕົວຢ່າງ, ສະຖານະການ, ແລະອື່ນໆ ຕາມໃຈ.';
 
   @override
-  String get helpModeChatDetails =>
-      '• ສົນທະນາ AI: ຝຶກສົນທະນາຕົວຈິງກັບບຸກຄະລິກກະພາບໃນເມນູ \'ສົນທະນາ\' ໃນແຖບລຸ່ມ\n• ການຕັ້ງຄ່າບຸກຄະລິກກະພາບ: ລະບຸເພດ, ຊື່, ລະຫັດພາສາຂອງອີກຝ່າຍຢ່າງອິດສະຫຼະ\n• ສະຖານະການ GPS: ແນະນຳຫົວຂໍ້ການສົນທະນາທີ່ເໝາະສົມກັບສະຖານທີ່ໂດຍການຮັບຮູ້ສະຖານທີ່ປະຈຸບັນຂອງຂ້ອຍ\n• 2 ພາສາ: ຄຳຕອບຂອງ AI ຖືກສະແດງພ້ອມກັບການແປພາສາເພື່ອເພີ່ມປະສິດທິພາບການຮຽນຮູ້ສູງສຸດ\n• ການຈັດການບັນທຶກ: ກັ່ນຕອງປະຫວັດການສົນທະນາທີ່ຜ່ານມາ ແລະບັນທຶກຂໍ້ຄວາມສະເພາະໃດໜຶ່ງໃນລະຫວ່າງການສົນທະນາເປັນເອກະສານການຮຽນຮູ້';
+  String get helpNotebook => 'ເລືອກໂຟນເດີ້ເພື່ອບັນທຶກຜົນການແປ.';
 
   @override
   String get helpTabJson => 'ຮູບແບບ JSON';
@@ -414,6 +299,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get helpTabTour => 'ທົດລອງໃຊ້';
 
   @override
+  String get helpTag => 'ປ້ອນຄຳສັບຫຼັກສຳລັບການຈັດໝວດໝູ່ ຫຼື ຄົ້ນຫາໃນພາຍຫຼັງ.';
+
+  @override
   String get helpTitle => 'ຄູ່ມືແນະນຳ';
 
   @override
@@ -422,6 +310,16 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get hide => 'ເຊື່ອງ';
+
+  @override
+  String get hintNoteExample =>
+      'ຕົວຢ່າງ: ຄຳອະທິບາຍສະຖານະການ, ຄຳສັບຄ້າຍຄືກັນ, ແລະອື່ນໆ';
+
+  @override
+  String get hintTagExample => 'ຕົວຢ່າງ: ທຸລະກິດ, ການທ່ອງທ່ຽວ...';
+
+  @override
+  String get homeTab => 'ແປ';
 
   @override
   String importAdded(int count) {
@@ -434,23 +332,6 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'ມີຂໍ້ມູນທີ່ມີຫົວຂໍ້ດຽວກັນແລ້ວ. ກະລຸນາປ່ຽນຫົວຂໍ້ແລ້ວລອງໃໝ່.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -466,6 +347,11 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'ນຳເຂົ້າ $files ໄຟລ໌, $entries ລາຍການແລ້ວ.';
+  }
+
+  @override
   String get importJsonFile => 'ນຳເຂົ້າໄຟລ໌ JSON';
 
   @override
@@ -477,12 +363,30 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'ໄຟລ໌ JSON ດ່ຽວ';
+
+  @override
+  String get importSourceFolder => 'ໂຟນເດີ້ (ໂຄງສ້າງຫ້ອງສະໝຸດຕາມພາສາ)';
+
+  @override
+  String get importSourceTitle => 'ເລືອກແຫຼ່ງທີ່ຈະນຳເຂົ້າ';
+
+  @override
+  String get importSourceZip => 'ໄຟລ໌ ZIP (ໂຟນເດີ້ທີ່ຖືກບີບອັດ)';
+
+  @override
   String importTotal(int count) {
     return 'ທັງໝົດ: $count ລາຍການ';
   }
 
   @override
   String get importing => 'ກຳລັງນຳເຂົ້າ...';
+
+  @override
+  String get inputContent => 'ເນື້ອໃນທີ່ປ້ອນ';
+
+  @override
+  String get inputLanguage => 'ພາສາປ້ອນຂໍ້ມູນ';
 
   @override
   String get inputModeTitle => 'ປ້ອນຂໍ້ມູນ';
@@ -499,19 +403,22 @@ class AppLocalizationsLo extends AppLocalizations {
   String get kakaoContinue => 'ສືບຕໍ່ດ້ວຍ Kakao';
 
   @override
-  String get labelLangCode => 'ລະຫັດພາສາ (ຕົວຢ່າງ: en-US, ko-KR)';
+  String get labelDetails => 'ລາຍລະອຽດເພີ່ມເຕີມ';
 
   @override
-  String get labelName => 'ຊື່';
+  String get labelFilterMaterial => 'ເອກະສານອ້າງອີງ';
+
+  @override
+  String get labelFilterTag => 'ແທັກ';
+
+  @override
+  String get labelLangCode => 'ລະຫັດພາສາ (ຕົວຢ່າງ: en-US, ko-KR)';
 
   @override
   String get labelNote => 'ບັນທຶກ';
 
   @override
   String get labelPOS => 'ພາກສ່ວນຂອງຄຳເວົ້າ';
-
-  @override
-  String get labelRole => 'ບົດບາດ';
 
   @override
   String get labelSentence => 'ປະໂຫຍກ';
@@ -562,9 +469,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get listening => 'ກຳລັງຟັງ...';
 
   @override
-  String get loadingParticipants => 'ກຳລັງໂຫຼດຜູ້ເຂົ້າຮ່ວມ...';
-
-  @override
   String get location => 'ສະຖານທີ່';
 
   @override
@@ -584,9 +488,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get male => 'ຊາຍ';
 
   @override
-  String get manageParticipants => 'ຈັດການຜູ້ເຂົ້າຮ່ວມ';
-
-  @override
   String get manual => 'ປ້ອນຂໍ້ມູນດ້ວຍຕົນເອງ';
 
   @override
@@ -594,9 +495,6 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get materialInfo => 'ຂໍ້ມູນເອກະສານ';
-
-  @override
-  String get me => 'ຂ້ອຍ';
 
   @override
   String get menuDeviceImport => 'ນຳເຂົ້າຂໍ້ມູນຈາກອຸປະກອນ';
@@ -664,27 +562,20 @@ class AppLocalizationsLo extends AppLocalizations {
   String get neutral => 'ເປັນກາງ';
 
   @override
+  String get newNotebookTitle => 'ຊື່ປື້ມບັນທຶກໃໝ່';
+
+  @override
   String get newSubjectName => 'ຊື່ຫົວຂໍ້ໃໝ່';
 
   @override
   String get next => 'ຕໍ່ໄປ';
 
   @override
-  String get noDialogueHistory => 'ບໍ່ມີປະຫວັດການສົນທະນາ.';
-
-  @override
-  String get noInternetWarningMic =>
-      'ບໍ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ. ການຮັບຮູ້ສຽງອາດຈະບໍ່ສາມາດໃຊ້ໄດ້ໃນຂະນະອອຟລາຍ.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'ບໍ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ. ຟັງຊັນການແປອາດຈະບໍ່ສາມາດໃຊ້ໄດ້ໃນຂະນະອອຟລາຍ. ກະລຸນາໃຊ້ໂໝດທວນຄືນ.';
+  String get noDataForLanguage =>
+      'ບໍ່ມີຂໍ້ມູນການຮຽນຮູ້ສຳລັບພາສາທີ່ທ່ານເລືອກໃນຖານຂໍ້ມູນທ້ອງຖິ່ນ. ກະລຸນາດາວໂຫຼດຂໍ້ມູນ ຫຼືເລືອກພາສາອື່ນ.';
 
   @override
   String get noMaterialsInCategory => 'ບໍ່ມີຂໍ້ມູນໃນໝວດນີ້.';
-
-  @override
-  String get noParticipantsFound => 'ບໍ່ພົບຜູ້ເຂົ້າຮ່ວມທີ່ລົງທະບຽນ.';
 
   @override
   String get noRecords => 'ບໍ່ມີບັນທຶກການຮຽນຮູ້ສຳລັບພາສາທີ່ເລືອກ';
@@ -705,6 +596,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get notSelected => '- ບໍ່ໄດ້ເລືອກ -';
 
   @override
+  String get noteGuidance =>
+      'ບ່ອນ​ທີ່​ທ່ານ​ປ້ອນ​ລາຍ​ລະ​ອຽດ​ເພີ່ມ​ເຕີມ​ສໍາ​ລັບ​ການ​ແປ​ພາ​ສາ​ໃຫ້​ຖືກ​ຕ້ອງ​ຫຼາຍ​ຂຶ້ນ';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງທ່ານ ຫຼືລອງໃໝ່ໃນພາຍຫຼັງ.';
 
@@ -715,16 +610,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'ບໍ່ມີຂໍ້ມູນ.';
 
   @override
-  String get participantDeleted => 'ຜູ້ເຂົ້າຮ່ວມຖືກລຶບແລ້ວ.';
-
-  @override
-  String get participantRename => 'ປ່ຽນຊື່ຜູ້ເຂົ້າຮ່ວມ';
-
-  @override
-  String get partner => 'ຄູ່ຮ່ວມງານ';
-
-  @override
-  String get partnerMode => 'ໂໝດຄູ່ຮ່ວມງານ';
+  String get openSettings => 'ເປີດການຕັ້ງຄ່າ';
 
   @override
   String get password => 'ລະຫັດຜ່ານ';
@@ -736,13 +622,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get perfect => 'ສົມບູນແບບ!';
 
   @override
-  String get personaFriend => 'ເພື່ອນທ້ອງຖິ່ນ';
-
-  @override
-  String get personaGuide => 'ມັກຄະເທດນຳທ່ຽວ';
-
-  @override
-  String get personaTeacher => 'ຄູສອນພາສາອັງກິດ';
+  String get pickGallery => 'ເລືອກຈາກຄັງຮູບ';
 
   @override
   String get playAgain => 'ຫລິ້ນອີກຄັ້ງ';
@@ -762,6 +642,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get posAdverb => 'ຄໍາວິເສດ';
 
   @override
+  String get posArticle => 'ຄຳນຳໜ້າ';
+
+  @override
   String get posConjunction => 'ຄໍາສັນຍານ';
 
   @override
@@ -769,6 +652,9 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get posNoun => 'ຄໍານາມ';
+
+  @override
+  String get posParticle => 'ອະນຸພາກ/ຄຳຊ້ອນ';
 
   @override
   String get posPreposition => 'ຄໍາບຸພະບົດ/ຄໍາຊ່ວຍ';
@@ -786,9 +672,33 @@ class AppLocalizationsLo extends AppLocalizations {
   String get practiceWordsOnly => 'ຝຶກຄຳສັບເທົ່ານັ້ນ';
 
   @override
+  String get processing => 'ກຳລັງປະມວນຜົນ...';
+
+  @override
   String progress(int current, int total) {
     return 'ຄວາມຄືບໜ້າ: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'ກຳນົດພາສາຂອງຂ້ອຍ ແລະ ພາສາການຮຽນຮູ້ຂອງຂ້ອຍກ່ອນໃນ ເມນູ > ການຕັ້ງຄ່າພາສາ.';
+
+  @override
+  String get quickStartStep1Title => '1. ຕັ້ງຄ່າພາສາ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ສ້າງບັດຮຽນຂອງເຈົ້າເອງຕາມລຳດັບ: ປ້ອນຂໍ້ມູນ (ໄມໂຄຣໂຟນ/ແປ້ນພິມ) -> ແປ -> ບັນທຶກ.';
+
+  @override
+  String get quickStartStep2Title => '2. ຂັ້ນຕອນພື້ນຖານ';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ຝຶກສົນທະນາ ແລະ ຝຶກອອກສຽງໂດຍການເບິ່ງຂໍ້ຄວາມໃນແຖບຝຶກອອກສຽງ.';
+
+  @override
+  String get quickStartStep3Title => '3. ໃຊ້ໂໝດ';
 
   @override
   String recentNItems(int count) {
@@ -813,6 +723,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get refresh => 'ໂຫຼດໃໝ່';
 
   @override
+  String get requestTranslation => 'ຂໍການແປ';
+
+  @override
   String get reset => 'ຣີເຊັດ';
 
   @override
@@ -833,16 +746,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get reviewModeTitle => 'ທົບທວນ';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'ບຸກຄົນທີສາມ';
-
-  @override
-  String get roleUser => 'ຜູ້ໃຊ້';
-
-  @override
   String get save => 'ບັນທຶກ';
+
+  @override
+  String get saveAsSentence => 'ບັນທຶກເປັນປະໂຫຍກ';
+
+  @override
+  String get saveAsWord => 'ບັນທຶກເປັນຄຳສັບ';
 
   @override
   String get saveData => 'ບັນທຶກຂໍ້ມູນ';
@@ -853,6 +763,9 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'ບັນທຶກໄວ້ໃນປະຫວັດການສະແກນ';
+
+  @override
   String get saveTranslationsFromSearch => 'ລອງບັນທຶກການແປຈາກໂໝດຄົ້ນຫາ';
 
   @override
@@ -860,6 +773,12 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get saving => 'ກຳລັງບັນທຶກ...';
+
+  @override
+  String get scanInstructions => 'ເລືອກຮູບພາບທີ່ຈະສະແກນ';
+
+  @override
+  String get scanLabel => 'ສະແກນ';
 
   @override
   String score(String score) {
@@ -906,16 +825,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get selectPOS => 'ເລືອກຄຳທີ່ໃຊ້';
 
   @override
-  String get selectParticipants => 'ເລືອກຜູ້ເຂົ້າຮ່ວມ';
-
-  @override
-  String get selectSentenceType => 'ເລືອກປະເພດປະໂຫຍກ';
-
-  @override
   String get selectStudyMaterial => 'ເລືອກເອກະສານການຮຽນ';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'ປະໂຫຍກ';
@@ -924,43 +834,14 @@ class AppLocalizationsLo extends AppLocalizations {
   String get signUp => 'ລົງທະບຽນ';
 
   @override
-  String get similarTextFound => 'ພົບຂໍ້ຄວາມທີ່ຄ້າຍຄືກັນ';
-
-  @override
-  String get skip => 'ຂ້າມ';
-
-  @override
-  String get source => 'ແຫຼ່ງທີ່ມາ:';
-
-  @override
-  String get sourceLanguage => 'ພາສາຕົ້ນສະບັບ';
+  String get simplifiedGuidance =>
+      'ປ່ຽນການສົນທະນາປະຈຳວັນເປັນພາສາຕ່າງປະເທດທັນທີ! Talkie ຈະບັນທຶກຊີວິດພາສາຂອງທ່ານ.';
 
   @override
   String get sourceLanguageLabel => 'ພາສາຂອງຂ້ອຍ (ຕົ້ນສະບັບ)';
 
   @override
-  String get speakNow => 'ເວົ້າດຽວນີ້!';
-
-  @override
-  String get speaker => 'ຜູ້ເວົ້າ';
-
-  @override
-  String get speakerSelect => 'ເລືອກຜູ້ເວົ້າ';
-
-  @override
-  String get speakingPractice => 'ຝຶກເວົ້າ';
-
-  @override
-  String get startChat => 'ເລີ່ມການສົນທະນາ';
-
-  @override
-  String get startPractice => 'ເລີ່ມຝຶກ';
-
-  @override
   String get startTutorial => 'ເລີ່ມການສອນ';
-
-  @override
-  String get startWarning => 'ຄຳເຕືອນ';
 
   @override
   String get startsWith => 'ຕົວອັກສອນເລີ່ມຕົ້ນ';
@@ -969,28 +850,22 @@ class AppLocalizationsLo extends AppLocalizations {
   String get statusCheckEmail => 'ກະລຸນາກວດສອບອີເມວເພື່ອສໍາເລັດການຢືນຢັນ.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'ກຳລັງດາວໂຫຼດ: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'ນຳເຂົ້າລົ້ມເຫລວ: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name ນຳເຂົ້າສຳເລັດແລ້ວ';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'ການເຂົ້າສູ່ລະບົບຖືກຍົກເລີກແລ້ວ.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'ເຂົ້າສູ່ລະບົບລົ້ມເຫລວ: $error';
   }
 
@@ -1001,23 +876,23 @@ class AppLocalizationsLo extends AppLocalizations {
   String get statusLogoutSuccess => 'ອອກຈາກລະບົບແລ້ວ.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'ລົງທະບຽນລົ້ມເຫລວ: $error';
+  String statusRequestFailed(String error) {
+    return 'ຄຳຮ້ອງຂໍການແປຜິດພາດ: $error';
   }
 
   @override
-  String get statusSigningUp => 'ກຳລັງລົງທະບຽນ...';
+  String get statusRequestSuccess => 'ຄຳຮ້ອງຂໍການແປສຳເລັດແລ້ວ.';
 
   @override
   String get stopPractice => 'ຢຸດຝຶກ';
 
   @override
-  String get studyComplete => 'ສຳເລັດການຮຽນ';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'ເອກະສານທີ່ທ່ານເລືອກບໍ່ຮອງຮັບພາສາການຮຽນທີ່ຕັ້ງໄວ້ໃນປັດຈຸບັນ ($targetLang) ແລະບໍ່ສາມາດບັນທຶກໄວ້ໃນເຄື່ອງໄດ້. ທ່ານຕ້ອງການຂໍການແປບໍ່?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'ບັນທຶກການຮຽນ ($count)';
-  }
+  String get studyLangNotFoundTitle => 'ບໍ່ຮອງຮັບພາສາການຮຽນ';
 
   @override
   String get styleFormal => 'ແບບເປັນທາງການ';
@@ -1032,22 +907,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get styleSlang => 'ຄຳສັບສະແລງ/ຄຳສັບທົ່ວໄປ';
 
   @override
-  String get subject => 'ຫົວຂໍ້:';
-
-  @override
   String get swapLanguages => 'ປ່ຽນພາສາ';
 
   @override
-  String get switchToAi => 'ປ່ຽນເປັນໂໝດ AI';
-
-  @override
-  String get switchToPartner => 'ປ່ຽນເປັນໂໝດຄູ່ຮ່ວມງານ';
-
-  @override
   String get syncingData => 'ກຳລັງຊິງຂໍ້ມູນ...';
-
-  @override
-  String get tabConversation => 'ສົນທະນາ';
 
   @override
   String tabReview(int count) {
@@ -1110,6 +973,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tooltipSearch => 'ຄົ້ນຫາ';
 
   @override
+  String get tooltipSettingsConfirm => 'ຢືນຢັນການຕັ້ງຄ່າ';
+
+  @override
   String get tooltipSpeaking => 'ເວົ້າ';
 
   @override
@@ -1122,6 +988,9 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get translate => 'ແປ';
+
+  @override
+  String get translateNow => 'ແປດຽວນີ້';
 
   @override
   String get translating => 'ກຳລັງແປ...';
@@ -1138,6 +1007,9 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'ພາສາແປ';
+
+  @override
   String get translationLimitExceeded => 'ເກີນຂີດຈຳກັດການແປ';
 
   @override
@@ -1152,16 +1024,25 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຈຳນວນການແປຂອງທ່ານໄດ້ຖືກສາກເປັນ 5 ຄັ້ງແລ້ວ!';
 
   @override
+  String get translationResult => 'ຜົນການແປ';
+
+  @override
   String get translationResultHint => 'ຜົນການແປ - ສາມາດແກ້ໄຂໄດ້';
 
   @override
   String get tryAgain => 'ລອງໃໝ່';
 
   @override
-  String get tutorialAiChatDesc => 'ປະຕິບັດການສົນທະນາທີ່ແທ້ຈິງກັບ AI Personas.';
+  String get ttsInstallGuide =>
+      'ກະລຸນາຕິດຕັ້ງຂໍ້ມູນພາສານັ້ນໃນການຕັ້ງຄ່າ Android > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'ສົນທະນາ AI';
+  String get ttsMissing =>
+      'ບໍ່​ມີ​ເຄື່ອງ​ມື​ສຽງ​ສຳ​ລັບ​ພາ​ສາ​ນີ້​ຕິດ​ຕັ້ງ​ຢູ່​ໃນ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'ການຕັ້ງຄ່າເລີ່ມຕົ້ນຂອງອຸປະກອນນີ້ບໍ່ຮອງຮັບສຽງອອກສຳລັບພາສານີ້.';
 
   @override
   String get tutorialContextDesc =>
@@ -1277,7 +1158,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get typeExclamation => 'ຄຳອຸທານ';
 
   @override
+  String get typeIdiom => 'ສຳນວນ';
+
+  @override
   String get typeImperative => 'ຄໍາສັ່ງ';
+
+  @override
+  String get typeProverb => 'ສຸພາສິດ/ຄຳຄົມ';
 
   @override
   String get typeQuestion => 'ຄໍາຖາມ';
@@ -1292,6 +1179,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String get useExistingText => 'ໃຊ້ຂໍ້ຄວາມທີ່ມີຢູ່';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'ເບິ່ງຄູ່ມືອອນໄລນ໌';
 
   @override
@@ -1299,6 +1191,16 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'ສາກໄຟໂດຍການເບິ່ງໂຄສະນາ (+5 ຄັ້ງ)';
+
+  @override
+  String get welcomeButton => 'ເລີ່ມຕົ້ນ';
+
+  @override
+  String get welcomeDesc =>
+      'ຍິນດີຕ້ອນຮັບສູ່ Talkie! ຮອງຮັບຫຼາຍກວ່າ 80 ພາສາທົ່ວໂລກດ້ວຍຄວາມສົມບູນແບບ 100%, ພ້ອມດ້ວຍການອອກແບບ 3D Premium ໃໝ່ ແລະປະສິດທິພາບທີ່ປັບປຸງໃຫ້ດີຂຶ້ນເພື່ອປະສົບການການຮຽນຮູ້ທີ່ສົມບູນແບບ.';
+
+  @override
+  String get welcomeTitle => 'ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ Talkie!';
 
   @override
   String get word => 'ຄຳສັບ';
@@ -1315,111 +1217,4 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'ການອອກສຽງຂອງເຈົ້າ';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'ການຕັ້ງຄ່າເລີ່ມຕົ້ນຂອງອຸປະກອນນີ້ບໍ່ຮອງຮັບສຽງອອກສຳລັບພາສານີ້.';
-
-  @override
-  String get homeTab => 'ແປ';
-
-  @override
-  String get welcomeTitle => 'ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'ຍິນດີຕ້ອນຮັບສູ່ Talkie! ຮອງຮັບຫຼາຍກວ່າ 80 ພາສາທົ່ວໂລກດ້ວຍຄວາມສົມບູນແບບ 100%, ພ້ອມດ້ວຍການອອກແບບ 3D Premium ໃໝ່ ແລະປະສິດທິພາບທີ່ປັບປຸງໃຫ້ດີຂຶ້ນເພື່ອປະສົບການການຮຽນຮູ້ທີ່ສົມບູນແບບ.';
-
-  @override
-  String get welcomeButton => 'ເລີ່ມຕົ້ນ';
-
-  @override
-  String get labelDetails => 'ລາຍລະອຽດເພີ່ມເຕີມ';
-
-  @override
-  String get translationResult => 'ຜົນການແປ';
-
-  @override
-  String get inputContent => 'ເນື້ອໃນທີ່ປ້ອນ';
-
-  @override
-  String get translateNow => 'ແປດຽວນີ້';
-
-  @override
-  String get tooltipSettingsConfirm => 'ຢືນຢັນການຕັ້ງຄ່າ';
-
-  @override
-  String get hintNoteExample =>
-      'ຕົວຢ່າງ: ຄຳອະທິບາຍສະຖານະການ, ຄຳສັບຄ້າຍຄືກັນ, ແລະອື່ນໆ';
-
-  @override
-  String get hintTagExample => 'ຕົວຢ່າງ: ທຸລະກິດ, ການທ່ອງທ່ຽວ...';
-
-  @override
-  String get addNew => 'ເພີ່ມໃໝ່';
-
-  @override
-  String get newNotebookTitle => 'ຊື່ປື້ມບັນທຶກໃໝ່';
-
-  @override
-  String get enterNameHint => 'ປ້ອນຊື່';
-
-  @override
-  String get add => 'ເພີ່ມ';
-
-  @override
-  String get openSettings => 'ເປີດການຕັ້ງຄ່າ';
-
-  @override
-  String get helpNotebook => 'ເລືອກໂຟນເດີ້ເພື່ອບັນທຶກຜົນການແປ.';
-
-  @override
-  String get helpNote => 'ບັນທຶກຄວາມໝາຍ, ຕົວຢ່າງ, ສະຖານະການ, ແລະອື່ນໆ ຕາມໃຈ.';
-
-  @override
-  String get helpTag => 'ປ້ອນຄຳສັບຫຼັກສຳລັບການຈັດໝວດໝູ່ ຫຼື ຄົ້ນຫາໃນພາຍຫຼັງ.';
-
-  @override
-  String get requestTranslation => 'ຂໍການແປ';
-
-  @override
-  String get statusRequestSuccess => 'ຄຳຮ້ອງຂໍການແປສຳເລັດແລ້ວ.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'ຄຳຮ້ອງຂໍການແປຜິດພາດ: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'ບໍ່ຮອງຮັບພາສາການຮຽນ';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'ເອກະສານທີ່ທ່ານເລືອກບໍ່ຮອງຮັບພາສາການຮຽນທີ່ຕັ້ງໄວ້ໃນປັດຈຸບັນ ($targetLang) ແລະບໍ່ສາມາດບັນທຶກໄວ້ໃນເຄື່ອງໄດ້. ທ່ານຕ້ອງການຂໍການແປບໍ່?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. ຕັ້ງຄ່າພາສາ';
-
-  @override
-  String get quickStartStep1Desc =>
-      'ກຳນົດພາສາຂອງຂ້ອຍ ແລະ ພາສາການຮຽນຮູ້ຂອງຂ້ອຍກ່ອນໃນ ເມນູ > ການຕັ້ງຄ່າພາສາ.';
-
-  @override
-  String get quickStartStep2Title => '2. ຂັ້ນຕອນພື້ນຖານ';
-
-  @override
-  String get quickStartStep2Desc =>
-      'ສ້າງບັດຮຽນຂອງເຈົ້າເອງຕາມລຳດັບ: ປ້ອນຂໍ້ມູນ (ໄມໂຄຣໂຟນ/ແປ້ນພິມ) -> ແປ -> ບັນທຶກ.';
-
-  @override
-  String get quickStartStep3Title => '3. ໃຊ້ໂໝດ';
-
-  @override
-  String get quickStartStep3Desc =>
-      'ຝຶກສົນທະນາ ແລະ ຝຶກອອກສຽງໂດຍການເບິ່ງຂໍ້ຄວາມໃນແຖບຝຶກອອກສຽງ.';
-
-  @override
-  String get noteGuidance =>
-      'ບ່ອນ​ທີ່​ທ່ານ​ປ້ອນ​ລາຍ​ລະ​ອຽດ​ເພີ່ມ​ເຕີມ​ສໍາ​ລັບ​ການ​ແປ​ພາ​ສາ​ໃຫ້​ຖືກ​ຕ້ອງ​ຫຼາຍ​ຂຶ້ນ';
 }

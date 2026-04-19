@@ -1,32 +1,10 @@
 {
   "@@locale": "uz",
-  "basicWords": "Asosiy so'zlar ombori",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Kirish tili",
-  "translationLanguage": "Tarjima tili",
-  "simplifiedGuidance": "Kundalik suhbatlarni bir zumda chet tiliga aylantiring! Talkie sizning til hayotingizni yozib boradi.",
-  "noDataForLanguage": "Siz tanlagan til uchun o'quv materiallari lokal DBda mavjud emas. Materiallarni yuklab oling yoki boshqa tilni tanlang.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Bekor qilish",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Aniqlik",
-  "ttsMissing": "Ushbu til uchun ovozli dvigatel qurilmangizga o'rnatilmagan.",
-  "ttsInstallGuide": "Android Sozlamalari > Google TTS bo'limida mos til ma'lumotlarini o'rnating.",
   "adLoading": "Reklama yuklanmoqda. Bir ozdan keyin qayta urinib ko'ring.",
+  "add": "Qo'shish",
+  "addNew": "Yangi qo'shish",
   "addNewSubject": "Yangi nom qo'shish",
-  "addParticipant": "Ishtirokchi qo'shish",
   "addTagHint": "Teg qo'shish...",
   "alreadyHaveAccount": "Allaqachon hisobingiz bormi?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Asosiy so'zlar ombori",
+  "basicWords": "Asosiy so'zlar ombori",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Bekor qilish",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Tushum kelishik",
   "casePossessive": "Qaratqich kelishik",
   "casePossessivePronoun": "Qaratqich olmoshi",
   "caseReflexive": "O'zlik olmoshi",
   "caseSubject": "Bosh kelishik",
-  "chatAiChat": "Suhbat",
-  "chatAllConversations": "Barcha suhbatlar",
-  "chatChoosePersona": "Personani tanlash",
-  "chatEndMessage": "Suhbatni yakunlamoqchimisiz?",
-  "chatEndTitle": "Suhbatni yakunlash va saqlash",
-  "chatFailed": "Chatda xatolik: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Suhbatdan iqtibos ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "Suhbatlar tarixi",
-  "chatNew": "Yangi suhbat",
-  "chatNewChat": "Yangi suhbat",
-  "chatNoConversations": "Hali suhbatlar yo'q",
-  "chatSearchHint": "Suhbat sarlavhasi bo‘yicha qidiring...",
-  "chatNoteSearchHint": "Izohlar bo'yicha qidiring...",
-  "chatSaveAndExit": "Saqlash va chiqish",
-  "chatStartNewPrompt": "Mashq qilish uchun yangi suhbatni boshlang!",
-  "chatTypeHint": "Xabar kiriting...",
-  "chatUntitled": "Sarlavhasiz suhbat",
   "checking": "Tekshirilmoqda...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Bu suhbatni oʻchirishni xohlaysizmi?\nOʻchirilgan suhbatni qayta tiklab boʻlmaydi.",
-  "confirmDeleteParticipant": "Ushbu ishtirokchini o'chirmoqchimisiz?",
   "contextTagHint": "Keyinchalik ajratish oson bo'lishi uchun vaziyatni yozing",
   "contextTagLabel": "Kontekst/vaziyat (ixtiyoriy) - Masalan: ertalab salomlashish, hurmat",
   "copiedToClipboard": "Buferga nusxalandi!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Vaziyatli dramatik sahna orqali suhbatni mashq qiling. Tegishli javobni tanlang va ayting.",
-  "dialogueQuestTitle": "Dialog qidiruvi",
-  "disambiguationPrompt": "Qaysi ma'noda tarjima qilmoqchisiz?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Ma'noni tanlash",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Hisobingiz yo'qmi?",
-  "editParticipant": "Ishtirokchini tahrirlash",
   "email": "Elektron pochta",
   "emailAlreadyInUse": "Bu elektron pochta allaqachon ro'yxatdan o'tgan. Tizimga kiring yoki parolni tiklashni ishlating.",
+  "enterNameHint": "Ismni kiriting",
   "enterNewSubjectName": "Yangi nom kiriting",
   "enterSentenceHint": "Gap yozing...",
   "enterTextHint": "Tarjima qilish uchun matnni kiriting",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Aniqlangan matn",
   "female": "Ayol",
   "file": "Fayl:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "O'yin rejimi",
   "gameOver": "O'yin tugadi",
   "gender": "Jins",
-  "labelFilterMaterial": "Materiallar",
-  "labelFilterTag": "Teglar",
   "generalTags": "Umumiy teglar",
   "getMaterials": "Ma'lumotlarni olish",
   "good": "Yaxshi",
   "googleContinue": "Google orqali davom etish",
-  "helpDialogueImportDesc": "JSON faylidan butun dialoglar to'plamini import qiling.",
-  "helpDialogueImportDetails": "• JSON tuzilishi: `entries` o'rniga `dialogues` massivini ishlating\n• Avtomatik tiklash: dialog sarlavhasi, persona, xabar tartibi tiklanadi.\n• Joylashuv: Import qilingan dialoglar AI chat rejimining 'Tarix' yorlig'ida paydo bo'ladi.",
   "helpJsonDesc": "3-rejimda foydalaniladigan o'quv materiallarini JSON fayli sifatida import qilish uchun quyidagi formatga rioya qiling:",
-  "helpJsonTypeDialogue": "Dialog",
   "helpJsonTypeSentence": "Gap",
   "helpJsonTypeWord": "So'z",
   "helpMode1Desc": "Premium 3D mikrofon va katta klaviatura yordamida til o'rganishni eng intuitiv usulda boshlang.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Ma'lumotlar to'plamini tanlash: o'ng yuqori menyudan (⋮) 'O'quv materiallarini tanlash' yoki 'Onlayn ma'lumotlar xonasi'dan foydalaning\n• Kartani aylantirish: 'Ko'rsatish/Yashirish' orqali tarjimani tekshiring\n• Tinglash: karnay belgisi orqali talaffuzni tinglang\n• O'qishni yakunlash: belgi (V) bilan o'qish yakunlangani qayd etiladi\n• O'chirish: kartani uzoq bosib (Long Click) yozuvni o'chiring\n• Qidiruv va filtr: qidiruv paneli (real vaqtda aqlli qidiruv) va teglar, bosh harf filtri qo'llab-quvvatlanadi",
   "helpMode3Desc": "Gaplarni tinglang va takrorlang (Shadowing) talaffuzingizni mashq qiling.",
   "helpMode3Details": "• Ma'lumotlarni tanlash: o'rganmoqchi bo'lgan ma'lumotlar to'plamini tanlang\n• Intervalni sozlash: [-] [+] tugmalari bilan jumlalar orasidagi kutish vaqtini sozlang (3 soniyadan 60 soniyagacha)\n• Boshlash/to'xtatish: soyalash seansini boshqaring\n• Gapirish: ovozni tinglang va takrorlang\n• Fikr-mulohaza: aniqlik balli (0-100) va rangli displey\n• Qidiruv shartlari: mashq qilish uchun teglarga, so'nggi elementlarga, bosh harflarga qarab filtrlash",
-  "helpModeChatDesc": "AI persona bilan suhbatlashib, amaliy suhbatni mashq qiling.",
-  "helpModeChatDetails": "• AI Chat: Pastki tab bardagi 'Chat' menyusida personaj bilan amaliy suhbat mashq qiling\n• Personaj sozlamalari: Qarshi tomonning jinsi, ismi, til kodini erkin belgilang\n• GPS ssenariysi: Hozirgi joylashuvingizni aniqlab, joyga mos suhbat mavzularini tavsiya etadi\n• 2 til: AI javoblari tarjima bilan birga ko'rsatiladi, bu esa o'rganish samaradorligini maksimal darajaga yetkazadi\n• Yozuvlarni boshqarish: O'tgan suhbatlar tarixini filtrlash va suhbat davomida ma'lum xabarlarni o'quv materiali sifatida saqlash",
+  "helpNote": "So'zlarning ma'nosi, misollari yoki holatlari kabi istalgan narsalarni yozing.",
+  "helpNotebook": "Tarjima qilingan natijalarni saqlash uchun papkani tanlang.",
   "helpTabJson": "JSON formati",
   "helpTabModes": "Rejimlar haqida ma'lumot",
   "helpTabQuickStart": "Tezkor Boshlash",
   "helpTabTour": "Namuna",
+  "helpTag": "Keyinroq saralash yoki qidirish uchun kalit so'zlarni kiriting.",
   "helpTitle": "Yordam & Qo'llanma",
   "helpTourDesc": "**Ta'kidlangan doira** asosiy funktsiyalarni ko'rsatadi.\n(Masalan: **Ta'kidlangan doira** ko'rsatgan kartani uzoq bosib o'chirish mumkin.)",
   "hide": "Yashirish",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Masalan: vaziyat izohi, omonimlar va h.k.",
+  "hintTagExample": "Masalan: biznes, sayohat...",
+  "homeTab": "Tarjima",
   "importAdded": "Qo'shildi: {count} dona",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} ta fayl, {entries} ta element import qilindi.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON faylini import qilish",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Yagona JSON fayli",
+  "importSourceFolder": "Papka (tilga xos kutubxona tuzilishi)",
+  "importSourceTitle": "Import manbasini tanlang",
+  "importSourceZip": "ZIP fayli (siqilgan papka)",
   "importTotal": "Jami: {count} dona",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Kiritilgan matn",
+  "inputLanguage": "Kirish tili",
   "inputModeTitle": "Kiritish",
   "intervalSeconds": "Interval: {seconds} soniya",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Yaroqli elektron pochta manzilini kiriting.",
   "kakaoContinue": "Kakaoda davom etish",
+  "labelDetails": "Batafsil sozlamalar",
+  "labelFilterMaterial": "Materiallar",
+  "labelFilterTag": "Teglar",
   "labelLangCode": "Til kodi (masalan: en-US, ko-KR)",
-  "labelName": "Ism",
   "labelNote": "Izoh",
   "labelPOS": "So'z turkumi",
-  "labelRole": "Rol",
   "labelSentence": "Gap",
   "labelSentenceCollection": "Gaplar to'plami",
   "labelSentenceType": "Gap turi",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Ishtirokchilar yuklanmoqda...",
   "location": "Joylashuv",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Kirish",
   "logout": "Chiqish",
   "logoutConfirmMessage": "Hozirgi qurilmangizdan chiqmoqchimisiz?",
   "logoutConfirmTitle": "Chiqish",
   "male": "Erkak",
-  "manageParticipants": "Ishtirokchilarni boshqarish",
   "manual": "Qo'lda kiritish",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Ma'lumotlar haqida ma'lumot",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Men",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Qurilmadan ma'lumotlarni import qilish",
   "menuHelp": "Yordam",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Mening gaplar to'plamim",
   "myWordbook": "Mening so'zlashgichim",
   "neutral": "neytral",
+  "newNotebookTitle": "Yangi daftar nomi",
   "newSubjectName": "Yangi lug'at/ibora nomi",
   "next": "Keyingi",
-  "noDialogueHistory": "Suhbatlar tarixi yo'q.",
-  "noInternetWarningMic": "Internetga ulanish yo'q. Offlayn rejimda ovozni aniqlash ishlamasligi mumkin.",
-  "noInternetWarningTranslate": "Internetga ulanish yo'q. Offlayn rejimda tarjima funksiyasi ishlamaydi. Takrorlash rejimini ishlating.",
+  "noDataForLanguage": "Siz tanlagan til uchun o'quv materiallari lokal DBda mavjud emas. Materiallarni yuklab oling yoki boshqa tilni tanlang.",
   "noMaterialsInCategory": "Ushbu toifada materiallar yo'q.",
-  "noParticipantsFound": "Ro'yxatga olingan ishtirokchilar yo'q.",
   "noRecords": "Tanlangan tilda o'rganish yozuvlari yo'q",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Ovoz aniqlanmadi",
   "notSelected": "- Tanlanmagan -",
+  "noteGuidance": "Aniqroq tarjima qilish uchun qo'shimcha ma'lumotlarni kiritadigan joy",
   "onlineLibraryCheckInternet": "Internetga ulanishingizni tekshiring yoki keyinroq urinib ko'ring.",
   "onlineLibraryLoadFailed": "Materiallarni yuklashda xatolik yuz berdi.",
   "onlineLibraryNoMaterials": "Materiallar yo'q.",
-  "participantDeleted": "Ishtirokchi o'chirildi.",
-  "participantRename": "Ishtirokchining nomini o'zgartirish",
-  "partner": "Hamkor",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Hamkor rejimi",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Sozlamalarni ochish",
   "password": "Parol",
   "passwordTooShort": "Parol kamida 6 ta belgidan iborat bo'lishi kerak.",
   "perfect": "A'lo!",
-  "personaFriend": "Mahalliy do'st",
-  "personaGuide": "Sayohat yo'lboshchisi",
-  "personaTeacher": "Ingliz tili o'qituvchisi",
+  "pickGallery": "Galereyadan tanlash",
   "playAgain": "Qayta o'ynash",
   "playbackFailed": "Ijroda xatolik: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Sifat",
   "posAdverb": "Ravish",
+  "posArticle": "Artikl",
   "posConjunction": "Bog'lovchi",
   "posInterjection": "Undov",
   "posNoun": "Otlash",
+  "posParticle": "Yuklama/bog'lovchi",
   "posPreposition": "Old ko'makchi/bog'lovchi",
   "posPronoun": "Olmos",
   "posVerb": "Fe'l",
   "practiceModeTitle": "Mashq",
   "practiceWordsOnly": "Faqat so'zlarni mashq qilish",
+  "processing": "Qayta ishlanmoqda...",
   "progress": "Jarayon: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Menyu > Til sozlamalaridan o'z tilingizni va o'rganish tilini belgilang.",
+  "quickStartStep1Title": "1. Tilni sozlang",
+  "quickStartStep2Desc": "Kiritish (mikrofon/klaviatura) -> Tarjima -> Saqlash tartibida o'zingizning o'quv kartochkalaringizni yarating.",
+  "quickStartStep2Title": "2. Asosiy jarayon",
+  "quickStartStep3Desc": "Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.",
+  "quickStartStep3Title": "3. Rejimdan foydalanish",
   "recentNItems": "Oxirgi yaratilgan {count} tasini ko'rsatish",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Tarjima so'rash",
   "reset": "Tiklash",
   "resetPracticeHistory": "Mashqlar tarixini tiklash",
   "retry": "Qayta urinib ko'rish?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Ko'rib chiqish",
-  "roleAi": "AI",
-  "roleThirdParty": "Uchinchi tomon",
-  "roleUser": "Foydalanuvchi",
   "save": "Saqlash",
+  "saveAsSentence": "Gap sifatida saqlash",
+  "saveAsWord": "So'z sifatida saqlash",
   "saveData": "Ma'lumotlarni saqlash",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Skanlash tarixiga saqlash",
   "saveTranslationsFromSearch": "Qidiruv rejimida tarjimalarni saqlashga harakat qiling",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Skanlash uchun rasmni tanlang",
+  "scanLabel": "Skanlash",
   "score": "Aniq: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "So'z turkumini tanlash",
-  "selectParticipants": "Ishtirokchilarni tanlang",
-  "selectSentenceType": "Gap turini tanlash",
   "selectStudyMaterial": "O'quv materiallarini tanlash",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Gap",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Ro'yxatdan o'tish",
-  "similarTextFound": "O'xshash matn topildi",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "O'tkazib yuborish",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Manba:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Asl til",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Kundalik suhbatlarni bir zumda chet tiliga aylantiring! Talkie sizning til hayotingizni yozib boradi.",
   "sourceLanguageLabel": "Mening tilim (Source)",
-  "speakNow": "Hozir gapiring!",
-  "speaker": "Notiq",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Gapiruvchini tanlang",
-  "speakingPractice": "Gapirish mashqi",
-  "startChat": "Suhbatni boshlash",
-  "startPractice": "Mashqni boshlash",
   "startTutorial": "O'quv qo'llanmani boshlash",
-  "startWarning": "Diqqat",
   "startsWith": "Bosh harf",
   "statusCheckEmail": "Elektron pochtangizni tekshiring va tasdiqlashni yakunlang.",
   "statusDownloading": "Yuklab olinmoqda: {name}...",
-  "statusImportFailed": "Import qilishda xatolik: {error}",
-  "statusImportSuccess": "{name} muvaffaqiyatli import qilindi",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Kirish bekor qilindi.",
-  "statusLoginFailed": "Kirishda xatolik: {error}",
-  "statusLoginSuccess": "Tizimga muvaffaqiyatli kirdingiz.",
-  "statusLogoutSuccess": "Siz tizimdan chiqdingiz.",
-  "statusSignUpFailed": "Ro'yxatdan o'tishda xatolik: {error}",
-  "statusSigningUp": "Ro'yxatdan o'tilmoqda...",
-  "stopPractice": "Mashqni to'xtatish",
-  "studyComplete": "O'rganish yakunlandi",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "O'rganish yozuvlari ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Import qilishda xatolik: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} muvaffaqiyatli import qilindi",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Kirishda xatolik: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Tizimga muvaffaqiyatli kirdingiz.",
+  "statusLogoutSuccess": "Siz tizimdan chiqdingiz.",
+  "statusRequestFailed": "Tarjima so'rovi bajarilmadi: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Tarjima so'rovi bajarildi.",
+  "stopPractice": "Mashqni to'xtatish",
+  "studyLangNotFoundDesc": "Siz tanlagan material hozirda o'rnatilgan o'rganish tili ({targetLang})ni qo'llab-quvvatlamaydi, shuning uchun uni mahalliy xotiraga saqlab bo'lmaydi. Tarjima so'ramoqchimisiz?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "O'rganish tili topilmadi",
   "styleFormal": "Rasmiy",
   "styleInformal": "Norasmiy",
   "stylePolite": "Xushmuomalalik",
   "styleSlang": "Sleng/qo'pol so'zlar",
-  "subject": "Mavzu:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Tillarni almashtirish",
-  "switchToAi": "AI rejimiga o'tish",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Hamkor rejimiga o'tish",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Ma'lumotlar sinxronlanmoqda...",
-  "tabConversation": "Suhbat",
   "tabReview": "Ko'rib chiqish ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Kamaytirish",
   "tooltipIncrease": "Ko'paytirish",
   "tooltipSearch": "Qidiruv",
+  "tooltipSettingsConfirm": "Sozlamalarni tasdiqlash",
   "tooltipSpeaking": "Gapirish",
   "tooltipStudyReview": "O'rganish+Ko'rib chiqish",
   "totalRecords": "Jami {count} ta yozuv (to'liq ko'rish)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Hozir tarjima qilish",
   "translating": "Tarjima qilinmoqda...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Tarjima tili",
   "translationLimitExceeded": "Tarjima limiti oshib ketdi",
   "translationLimitMessage": "Kunlik bepul tarjima (5 marta) dan hammasi ishlatildi.\\n\\nReklamani ko'rib 5 marta zudlik bilan to'ldirmoqchimisiz?",
   "translationLoaded": "Saqlangan tarjima yuklandi",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Tarjima soni 5 marta to'ldirildi!",
+  "translationResult": "Tarjima natijasi",
   "translationResultHint": "Tarjima natijasi - tahrirlash mumkin",
   "tryAgain": "Qaytadan urinib ko'ring",
-  "tutorialAiChatDesc": "AI persona bilan amaliy suhbatni mashq qiling.",
-  "tutorialAiChatTitle": "AI suhbati",
+  "ttsInstallGuide": "Android Sozlamalari > Google TTS bo'limida mos til ma'lumotlarini o'rnating.",
+  "ttsMissing": "Ushbu til uchun ovozli dvigatel qurilmangizga o'rnatilmagan.",
+  "ttsUnsupportedNatively": "Ushbu qurilmaning sozlamalari ushbu tilda ovoz chiqarishni qo'llab-quvvatlamaydi.",
   "tutorialContextDesc": "Xuddi shu jumla bo'lsa ham, vaziyatni (masalan, ertalab, kechqurun) yozsangiz, uni alohida saqlashingiz mumkin.",
   "tutorialContextTitle": "Vaziyat/kontekst teg",
   "tutorialLangSettingsDesc": "Tarjima qilinadigan asl tilni va maqsadli tilni o'rnating.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Kiritilgan matnni tarjima qiladi.",
   "tutorialTransTitle": "Tarjima qilish",
   "typeExclamation": "Undov gap",
+  "typeIdiom": "Idiom",
   "typeImperative": "Buyruq gap",
+  "typeProverb": "Maqol/hikmat",
   "typeQuestion": "So'roq gap",
   "typeStatement": "Darax gap",
   "usageLimitTitle": "Limitga yetish",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Onlayn qo'llanmani ko'rish",
   "voluntaryTranslations": "Ko'ngilli tarjimalar",
   "watchAdAndRefill": "Reklamani ko'rib to'ldirish (+5 marta)",
+  "welcomeButton": "Boshlash",
+  "welcomeDesc": "Talkiega xush kelibsiz! Dunyoning 80 dan ortiq barcha tillarini 100% sifat bilan qo'llab-quvvatlaymiz va yangi premium 3D dizayn va optimallashtirilgan ishlash bilan mukammal o'rganish tajribasini taqdim etamiz.",
+  "welcomeTitle": "Talkie-ga xush kelibsiz!",
   "word": "So'z",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Dushman kelishidan oldin so'zni aytib bazani himoya qiling.",
   "wordDefenseTitle": "So'z himoyasi",
   "wordModeLabel": "So'z rejimi",
-  "yourPronunciation": "Talaffuzingiz",
-  "ttsUnsupportedNatively": "Ushbu qurilmaning sozlamalari ushbu tilda ovoz chiqarishni qo'llab-quvvatlamaydi.",
-  "homeTab": "Tarjima",
-  "welcomeTitle": "Talkie-ga xush kelibsiz!",
-  "welcomeDesc": "Talkiega xush kelibsiz! Dunyoning 80 dan ortiq barcha tillarini 100% sifat bilan qo'llab-quvvatlaymiz va yangi premium 3D dizayn va optimallashtirilgan ishlash bilan mukammal o'rganish tajribasini taqdim etamiz.",
-  "welcomeButton": "Boshlash",
-  "labelDetails": "Batafsil sozlamalar",
-  "translationResult": "Tarjima natijasi",
-  "inputContent": "Kiritilgan matn",
-  "translateNow": "Hozir tarjima qilish",
-  "tooltipSettingsConfirm": "Sozlamalarni tasdiqlash",
-  "hintNoteExample": "Masalan: vaziyat izohi, omonimlar va h.k.",
-  "hintTagExample": "Masalan: biznes, sayohat...",
-  "addNew": "Yangi qo'shish",
-  "newNotebookTitle": "Yangi daftar nomi",
-  "enterNameHint": "Ismni kiriting",
-  "add": "Qo'shish",
-  "openSettings": "Sozlamalarni ochish",
-  "helpNotebook": "Tarjima qilingan natijalarni saqlash uchun papkani tanlang.",
-  "helpNote": "So'zlarning ma'nosi, misollari yoki holatlari kabi istalgan narsalarni yozing.",
-  "helpTag": "Keyinroq saralash yoki qidirish uchun kalit so'zlarni kiriting.",
-  "requestTranslation": "Tarjima so'rash",
-  "statusRequestSuccess": "Tarjima so'rovi bajarildi.",
-  "statusRequestFailed": "Tarjima so'rovi bajarilmadi: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "O'rganish tili topilmadi",
-  "studyLangNotFoundDesc": "Siz tanlagan material hozirda o'rnatilgan o'rganish tili ({targetLang})ni qo'llab-quvvatlamaydi, shuning uchun uni mahalliy xotiraga saqlab bo'lmaydi. Tarjima so'ramoqchimisiz?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Tilni sozlang",
-  "quickStartStep1Desc": "Menyu > Til sozlamalaridan o'z tilingizni va o'rganish tilini belgilang.",
-  "quickStartStep2Title": "2. Asosiy jarayon",
-  "quickStartStep2Desc": "Kiritish (mikrofon/klaviatura) -> Tarjima -> Saqlash tartibida o'zingizning o'quv kartochkalaringizni yarating.",
-  "quickStartStep3Title": "3. Rejimdan foydalanish",
-  "quickStartStep3Desc": "Chatda mashq qiling va Talaffuz mashqlari yorlig'ida matnni ko'rib, to'g'ridan-to'g'ri talaffuz qilib mashq qiling.",
-  "noteGuidance": "Aniqroq tarjima qilish uchun qo'shimcha ma'lumotlarni kiritadigan joy"
+  "yourPronunciation": "Talaffuzingiz"
 }

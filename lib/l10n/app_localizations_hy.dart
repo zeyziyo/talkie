@@ -9,52 +9,19 @@ class AppLocalizationsHy extends AppLocalizations {
   AppLocalizationsHy([String locale = 'hy']) : super(locale);
 
   @override
-  String get basicWords => 'Հիմնական բառերի պահեստ';
-
-  @override
-  String get inputLanguage => 'Մուտքագրման լեզու';
-
-  @override
-  String get translationLanguage => 'Թարգմանության լեզու';
-
-  @override
-  String get simplifiedGuidance =>
-      'Անմիջապես փոխակերպեք առօրյա խոսակցությունները օտար լեզուներով: Talkie-ն կգրանցի ձեր լեզվական կյանքը:';
-
-  @override
-  String get noDataForLanguage =>
-      'Ընտրված լեզվի ուսուցման նյութերը տեղային տվյալների բազայում չկան: Ներբեռնեք նյութերը կամ ընտրեք այլ լեզու:';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Չեղարկել';
-
-  @override
   String get accuracy => 'Ճշգրտություն';
-
-  @override
-  String get ttsMissing =>
-      'Ձեր սարքի վրա այս լեզվի ձայնային շարժիչը տեղադրված չէ։';
-
-  @override
-  String get ttsInstallGuide =>
-      'Խնդրում ենք տեղադրել համապատասխան լեզվի տվյալները Android-ի կարգավորումներ > Google TTS-ում։';
 
   @override
   String get adLoading => 'Գովազդը բեռնվում է: Փորձեք մի փոքր ուշ:';
 
   @override
-  String get addNewSubject => 'Ավելացնել նոր վերնագիր';
+  String get add => 'Ավելացնել';
 
   @override
-  String get addParticipant => 'Ավելացնել մասնակից';
+  String get addNew => 'Ավելացնել նորը';
+
+  @override
+  String get addNewSubject => 'Ավելացնել նոր վերնագիր';
 
   @override
   String get addTagHint => 'Ավելացնել թեգ...';
@@ -88,6 +55,12 @@ class AppLocalizationsHy extends AppLocalizations {
   String get basicWordRepository => 'Հիմնական բառերի պահեստ';
 
   @override
+  String get basicWords => 'Հիմնական բառերի պահեստ';
+
+  @override
+  String get cancel => 'Չեղարկել';
+
+  @override
   String get caseObject => 'Հայցական հոլով';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get caseSubject => 'Ուղղական հոլով';
 
   @override
-  String get chatAiChat => 'Զրույց';
-
-  @override
-  String get chatAllConversations => 'Բոլոր զրույցները';
-
-  @override
-  String get chatChoosePersona => 'Ընտրել անձ';
-
-  @override
-  String get chatEndMessage => 'Համոզվա՞ծ եք, որ ցանկանում եք ավարտել զրույցը։';
-
-  @override
-  String get chatEndTitle => 'Ավարտել և պահպանել զրույցը';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Զրույցը ձախողվեց. $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Քաղված զրույցից ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Զրույցի պատմություն';
-
-  @override
-  String get chatNew => 'Նոր զրույց';
-
-  @override
-  String get chatNewChat => 'Նոր զրույց';
-
-  @override
-  String get chatNoConversations => 'Դեռևս զրույցներ չկան';
-
-  @override
-  String get chatSearchHint => 'Որոնել զրույցի վերնագրով...';
-
-  @override
-  String get chatNoteSearchHint => 'Փնտրել նշումներով...';
-
-  @override
-  String get chatSaveAndExit => 'Պահպանել և դուրս գալ';
-
-  @override
-  String get chatStartNewPrompt => 'Սկսեք նոր զրույց մարզվելու համար!';
-
-  @override
-  String get chatTypeHint => 'Մուտքագրեք ձեր հաղորդագրությունը...';
-
-  @override
-  String get chatUntitled => 'Անանուն զրույց';
-
-  @override
   String get checking => 'Ստուգվում է...';
 
   @override
@@ -169,13 +87,6 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get confirmDelete =>
       'Համոզվա՞ծ եք, որ ցանկանում եք ջնջել այս ուսուցման գրառումը։';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Ցանկանու՞մ եք ջնջել այս զրույցը:\nՋնջված զրույցները հնարավոր չէ վերականգնել:';
-
-  @override
-  String get confirmDeleteParticipant => 'Ջնջե՞լ այս մասնակցին:';
 
   @override
   String get contextTagHint =>
@@ -215,23 +126,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get deleteRecord => 'Ջնջել գրառումը';
 
   @override
-  String get dialogueQuestDesc =>
-      'Մարզեք խոսակցությունները դերային խաղերի միջոցով: Ընտրեք և խոսեք համապատասխան պատասխաններ:';
-
-  @override
-  String get dialogueQuestTitle => 'Երկխոսության որոնում';
-
-  @override
-  String get disambiguationPrompt => 'Ո՞ր նշանակությամբ կցանկանայիք թարգմանել։';
-
-  @override
-  String get disambiguationTitle => 'Ընտրել նշանակությունը';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Դեռ հաշիվ չունե՞ք:';
-
-  @override
-  String get editParticipant => 'Խմբագրել մասնակից';
 
   @override
   String get email => 'Էլ. փոստ';
@@ -239,6 +137,9 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Այս էլ․ հասցեն արդեն գրանցված է։ Մուտք գործեք կամ օգտվեք գաղտնաբառի վերականգնման հնարավորությունից։';
+
+  @override
+  String get enterNameHint => 'Մուտքագրեք անունը';
 
   @override
   String get enterNewSubjectName => 'Մուտքագրեք նոր վերնագիր';
@@ -279,6 +180,9 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get errors => 'Սխալներ.';
+
+  @override
+  String get extractedText => 'Ճանաչված տեքստ';
 
   @override
   String get female => 'Իգական';
@@ -338,12 +242,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get gender => 'Սեռ';
 
   @override
-  String get labelFilterMaterial => 'Նյութեր';
-
-  @override
-  String get labelFilterTag => 'Թեգեր';
-
-  @override
   String get generalTags => 'Ընդհանուր պիտակներ';
 
   @override
@@ -356,19 +254,8 @@ class AppLocalizationsHy extends AppLocalizations {
   String get googleContinue => 'Շարունակել Google-ով';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Ներմուծեք ամբողջական երկխոսության հավաքածուները JSON ֆայլերի միջոցով:';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON կառուցվածք՝ օգտագործեք `dialogues` զանգվածը `entries`-ի փոխարեն\n• Ավտոմատ վերականգնում՝ երկխոսության վերնագրերը, անձերը, հաղորդագրությունների կարգը վերականգնվում են:\n• Գտնվելու վայրը՝ ներմուծված զրույցները հայտնվում են AI զրույցի ռեժիմի «Պատմություն» ներդիրում:';
-
-  @override
   String get helpJsonDesc =>
       'Հետևեք հետևյալ ձևաչափին Mode 3-ում օգտագործելու համար ուսումնական նյութերը JSON ֆայլի մեջ ներմուծելու համար.';
-
-  @override
-  String get helpJsonTypeDialogue => 'Երկխոսություն';
 
   @override
   String get helpJsonTypeSentence => 'Նախադասություն';
@@ -401,12 +288,12 @@ class AppLocalizationsHy extends AppLocalizations {
       '• Նյութի ընտրություն՝ ընտրեք ուսումնասիրելու նյութերի հավաքածուն\n• Միջակայքի կարգավորում՝ կարգավորեք նախադասությունների միջև սպասման ժամանակը [-] [+] կոճակներով (3 վրկ-ից 60 վրկ)\n• Սկսել/Դադարեցնել՝ վերահսկեք ստվերային նիստը\n• Խոսել՝ լսեք ձայնը և կրկնեք\n• Հետադարձ կապ՝ ճշգրտության միավոր (0-100) և գույնի ցուցադրում\n• Որոնման պայմաններ՝ զտեք մարզումների թիրախը ըստ թեգերի, վերջին տարրերի, սկսվող տառերի';
 
   @override
-  String get helpModeChatDesc =>
-      'Զրուցեք AI պերսոնաժի հետ և մարզվեք իրական խոսակցություններում:';
+  String get helpNote =>
+      'Ազատ զգացեք գրել բառի նշանակությունը, օրինակները կամ իրավիճակները:';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI զրույց. մարզվեք գործնական խոսակցության մեջ անձի հետ ներքևի ներդիրի տողի «Զրույց» մենյուում\n• Անձի կարգավորումներ. ազատորեն նշեք մյուս կողմի սեռը, անունը և լեզվի կոդը\n• GPS իրավիճակային խաղ. ճանաչեք իմ ընթացիկ գտնվելու վայրը և առաջարկեք խոսակցության թեմաներ, որոնք հարմար են վայրին\n• 2 լեզու. AI-ի պատասխանը ցուցադրվում է թարգմանության հետ միասին՝ առավելագույնի հասցնելով ուսուցման էֆեկտը\n• Գրառումների կառավարում. անցյալ խոսակցությունների պատմության զտում և խոսակցության ընթացքում որոշակի հաղորդագրություններ պահել որպես ուսումնական նյութ';
+  String get helpNotebook =>
+      'Ընտրեք թարգմանված արդյունքները պահպանելու համար գրացուցակը:';
 
   @override
   String get helpTabJson => 'JSON ձևաչափ';
@@ -421,6 +308,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get helpTabTour => 'Փորձարկել';
 
   @override
+  String get helpTag =>
+      'Մուտքագրեք բանալի բառեր հետագայում դասակարգելու կամ որոնելու համար:';
+
+  @override
   String get helpTitle => 'Օգնություն և ուղեցույց';
 
   @override
@@ -429,6 +320,16 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get hide => 'Թաքցնել';
+
+  @override
+  String get hintNoteExample =>
+      'Օրինակ՝ իրավիճակի բացատրություն, համանուններ և այլն';
+
+  @override
+  String get hintTagExample => 'Օրինակ՝ բիզնես, ճանապարհորդություն...';
+
+  @override
+  String get homeTab => 'Թարգմանել';
 
   @override
   String importAdded(int count) {
@@ -441,23 +342,6 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Նույն անվանումով նյութ արդեն գոյություն ունի: Խնդրում ենք փոխել անվանումը և փորձել նորից:';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -473,6 +357,11 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'Ներմուծվել է $files ֆայլ, $entries գրառում:';
+  }
+
+  @override
   String get importJsonFile => 'Ներմուծել JSON ֆայլ';
 
   @override
@@ -484,12 +373,31 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Մեկ JSON ֆայլ';
+
+  @override
+  String get importSourceFolder =>
+      'Թղթապանակ (ըստ լեզվի գրադարանի կառուցվածքով)';
+
+  @override
+  String get importSourceTitle => 'Ընտրեք ներմուծման աղբյուրը';
+
+  @override
+  String get importSourceZip => 'ZIP ֆայլ (սեղմված թղթապանակ)';
+
+  @override
   String importTotal(int count) {
     return 'Ընդհանուր. $count';
   }
 
   @override
   String get importing => 'Ներմուծվում է...';
+
+  @override
+  String get inputContent => 'Մուտքագրվող տեքստ';
+
+  @override
+  String get inputLanguage => 'Մուտքագրման լեզու';
 
   @override
   String get inputModeTitle => 'Մուտքագրում';
@@ -506,19 +414,22 @@ class AppLocalizationsHy extends AppLocalizations {
   String get kakaoContinue => 'Շարունակել Kakao-ով';
 
   @override
-  String get labelLangCode => 'Լեզվի կոդ (օրինակ՝ en-US, ko-KR)';
+  String get labelDetails => 'Մանրամասներ';
 
   @override
-  String get labelName => 'Անուն';
+  String get labelFilterMaterial => 'Նյութեր';
+
+  @override
+  String get labelFilterTag => 'Թեգեր';
+
+  @override
+  String get labelLangCode => 'Լեզվի կոդ (օրինակ՝ en-US, ko-KR)';
 
   @override
   String get labelNote => 'Ծանոթագրություն';
 
   @override
   String get labelPOS => 'Մաս խոսքի';
-
-  @override
-  String get labelRole => 'Դեր';
 
   @override
   String get labelSentence => 'Նախադասություն';
@@ -569,10 +480,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get listening => 'Լսվում է...';
 
   @override
-  String get loadingParticipants => 'Մասնակիցների բեռնում...';
-
-  @override
-  String get location => 'Գտնվելու վայր';
+  String get location => 'Գտնվելու վայրը';
 
   @override
   String get login => 'Մուտք գործել';
@@ -590,9 +498,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get male => 'Արական';
 
   @override
-  String get manageParticipants => 'Կառավարել մասնակիցներին';
-
-  @override
   String get manual => 'Ձեռքով մուտքագրում';
 
   @override
@@ -600,9 +505,6 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get materialInfo => 'Նյութի մասին տեղեկություններ';
-
-  @override
-  String get me => 'Ես';
 
   @override
   String get menuDeviceImport => 'Ներմուծել նյութեր սարքից';
@@ -670,27 +572,20 @@ class AppLocalizationsHy extends AppLocalizations {
   String get neutral => 'Չեզոք';
 
   @override
+  String get newNotebookTitle => 'Նոր գրքույկի անվանումը';
+
+  @override
   String get newSubjectName => 'Նոր բառարան/նախադասությունների գիրք';
 
   @override
   String get next => 'Առաջ';
 
   @override
-  String get noDialogueHistory => 'Երկխոսության պատմություն չկա:';
-
-  @override
-  String get noInternetWarningMic =>
-      'Ինտերնետ կապ չկա: Ձայնային ճանաչումը կարող է անհասանելի լինել անցանց ռեժիմում:';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Ինտերնետ կապ չկա: Թարգմանության գործառույթը հասանելի չէ անցանց ռեժիմում: Խնդրում ենք օգտագործել կրկնության ռեժիմը:';
+  String get noDataForLanguage =>
+      'Ընտրված լեզվի ուսուցման նյութերը տեղային տվյալների բազայում չկան: Ներբեռնեք նյութերը կամ ընտրեք այլ լեզու:';
 
   @override
   String get noMaterialsInCategory => 'Այս կատեգորիայում նյութեր չկան:';
-
-  @override
-  String get noParticipantsFound => 'Գրանցված մասնակիցներ չկան:';
 
   @override
   String get noRecords => 'Ընտրված լեզվի ուսուցման գրառումներ չկան';
@@ -711,6 +606,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get notSelected => '- Ընտրված չէ -';
 
   @override
+  String get noteGuidance =>
+      'Այնտեղ, որտեղ դուք մուտքագրում եք լրացուցիչ մանրամասներ ավելի ճշգրիտ թարգմանության համար';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Ստուգեք ինտերնետ կապը կամ փորձեք ավելի ուշ:';
 
@@ -721,34 +620,19 @@ class AppLocalizationsHy extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Նյութեր չկան:';
 
   @override
-  String get participantDeleted => 'Մասնակիցը ջնջվել է։';
-
-  @override
-  String get participantRename => 'Վերանվանել մասնակցին';
-
-  @override
-  String get partner => 'Գործընկեր';
-
-  @override
-  String get partnerMode => 'Գործընկեր ռեժիմ';
+  String get openSettings => 'Բացել կարգավորումները';
 
   @override
   String get password => 'Գաղտնաբառ';
 
   @override
-  String get passwordTooShort => 'Գաղտնաբառը պետք է լինի առնվազն 6 նիշ:';
+  String get passwordTooShort => 'Գաղտնաբառը շատ կարճ է';
 
   @override
   String get perfect => 'Կատարյալ է!';
 
   @override
-  String get personaFriend => 'Տեղացի ընկեր';
-
-  @override
-  String get personaGuide => 'Ճանապարհորդական ուղեցույց';
-
-  @override
-  String get personaTeacher => 'Անգլերենի ուսուցիչ';
+  String get pickGallery => 'Ընտրել պատկերասրահից';
 
   @override
   String get playAgain => 'Նորից խաղալ';
@@ -768,6 +652,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get posAdverb => 'Մակբայ';
 
   @override
+  String get posArticle => 'Առդիր';
+
+  @override
   String get posConjunction => 'Շաղկապ';
 
   @override
@@ -775,6 +662,9 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get posNoun => 'Գոյական';
+
+  @override
+  String get posParticle => 'Մասնիկ';
 
   @override
   String get posPreposition => 'Նախդիր/կապ';
@@ -792,9 +682,33 @@ class AppLocalizationsHy extends AppLocalizations {
   String get practiceWordsOnly => 'Մարզել միայն բառերը';
 
   @override
+  String get processing => 'Մշակվում է...';
+
+  @override
   String progress(int current, int total) {
     return 'Ընթացք. $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Նախ սահմանեք իմ և ուսումնասիրվող լեզուն Մենյու > Լեզվի կարգավորումներ բաժնում:';
+
+  @override
+  String get quickStartStep1Title => '1. Լեզվի կարգավորումներ';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Ստեղծեք ձեր սեփական ուսումնական քարտերը՝ մուտքագրում (խոսափող/ստեղնաշար) -> թարգմանություն -> պահպանում հաջորդականությամբ:';
+
+  @override
+  String get quickStartStep2Title => '2. Հիմնական հոսք';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Զրուցեք վարժվելու համար և վարժվեք ուղղակիորեն արտասանելով տեքստը Արտասանության վարժանք ներդիրում:';
+
+  @override
+  String get quickStartStep3Title => '3. Ռեժիմի օգտագործում';
 
   @override
   String recentNItems(int count) {
@@ -819,6 +733,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get refresh => 'Թարմացնել';
 
   @override
+  String get requestTranslation => 'Թարգմանել';
+
+  @override
   String get reset => 'Վերականգնել';
 
   @override
@@ -839,16 +756,13 @@ class AppLocalizationsHy extends AppLocalizations {
   String get reviewModeTitle => 'Վերանայում';
 
   @override
-  String get roleAi => 'Արհեստական բանականություն';
-
-  @override
-  String get roleThirdParty => 'Երրորդ կողմ';
-
-  @override
-  String get roleUser => 'Օգտատեր';
-
-  @override
   String get save => 'Պահպանել';
+
+  @override
+  String get saveAsSentence => 'Պահպանել որպես նախադասություն';
+
+  @override
+  String get saveAsWord => 'Պահպանել որպես բառ';
 
   @override
   String get saveData => 'Տվյալների պահպանում';
@@ -859,6 +773,9 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Պահպանել սկանավորման պատմության մեջ';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Փորձեք պահպանել թարգմանությունները որոնման ռեժիմում';
 
@@ -867,6 +784,12 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get saving => 'Պահպանվում է...';
+
+  @override
+  String get scanInstructions => 'Ընտրեք սկանավորելու պատկերը';
+
+  @override
+  String get scanLabel => 'Սկանավորել';
 
   @override
   String score(String score) {
@@ -913,16 +836,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get selectPOS => 'Ընտրել խոսքի մաս';
 
   @override
-  String get selectParticipants => 'Ընտրել մասնակիցներ';
-
-  @override
-  String get selectSentenceType => 'Ընտրել նախադասության տեսակ';
-
-  @override
   String get selectStudyMaterial => 'Ընտրել ուսումնական նյութեր';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Նախադասություն';
@@ -931,101 +845,65 @@ class AppLocalizationsHy extends AppLocalizations {
   String get signUp => 'Գրանցվել';
 
   @override
-  String get similarTextFound => 'Հայտնաբերվել է նման տեքստ';
+  String get simplifiedGuidance =>
+      'Անմիջապես փոխակերպեք առօրյա խոսակցությունները օտար լեզուներով: Talkie-ն կգրանցի ձեր լեզվական կյանքը:';
 
   @override
-  String get skip => 'Բաց թողնել';
-
-  @override
-  String get source => 'Աղբյուր.';
-
-  @override
-  String get sourceLanguage => 'Սկզբնաղբյուր լեզու';
-
-  @override
-  String get sourceLanguageLabel => 'Իմ լեզուն (Source)';
-
-  @override
-  String get speakNow => 'Խոսեք հիմա!';
-
-  @override
-  String get speaker => 'Բանախոս';
-
-  @override
-  String get speakerSelect => 'Ընտրել խոսողին';
-
-  @override
-  String get speakingPractice => 'Խոսելու մարզում';
-
-  @override
-  String get startChat => 'Սկսել զրույց';
-
-  @override
-  String get startPractice => 'Սկսել մարզումը';
+  String get sourceLanguageLabel => 'Իմ լեզուն';
 
   @override
   String get startTutorial => 'Սկսել ձեռնարկը';
 
   @override
-  String get startWarning => 'Զգուշացում';
-
-  @override
   String get startsWith => 'Սկսվում է տառով';
 
   @override
-  String get statusCheckEmail =>
-      'Ստուգեք ձեր էլ. փոստը՝ նույնականացումն ավարտելու համար:';
+  String get statusCheckEmail => 'Ստուգեք Ձեր էլ-նամակը';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Բեռնում: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Ներմուծումը ձախողվեց: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name ներմուծումն ավարտված է';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Մուտքը չեղարկվեց:';
-
-  @override
-  String statusLoginFailed(Object error) {
-    return 'Մուտքը ձախողվեց: $error';
+  String statusLoginFailed(String error) {
+    return 'Մուտքն անհաջող է. $error';
   }
 
   @override
-  String get statusLoginSuccess => 'Մուտքն հաջողությամբ կատարվեց:';
+  String get statusLoginSuccess => 'Մուտքն հաջող է';
 
   @override
-  String get statusLogoutSuccess => 'Դուրս եկաք համակարգից:';
+  String get statusLogoutSuccess => 'Ելքն հաջող է';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Գրանցումը ձախողվեց: $error';
+  String statusRequestFailed(String error) {
+    return 'Թարգմանության հարցումը ձախողվեց․ $error';
   }
 
   @override
-  String get statusSigningUp => 'Գրանցում...';
+  String get statusRequestSuccess => 'Թարգմանության հարցումն ավարտվեց։';
 
   @override
   String get stopPractice => 'Դադարեցնել մարզումը';
 
   @override
-  String get studyComplete => 'Ուսուցումն ավարտված է';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Ընտրված նյութը չի աջակցում ներկայիս ուսուցման լեզուն ($targetLang), և այն հնարավոր չէ տեղայնացնել: Ցանկանու՞մ եք թարգմանել:';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Ուսուցման գրառումներ ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Ուսուցման լեզուն հասանելի չէ';
 
   @override
   String get styleFormal => 'Պաշտոնական';
@@ -1040,22 +918,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get styleSlang => 'Ժարգոն';
 
   @override
-  String get subject => 'Թեմա.';
-
-  @override
   String get swapLanguages => 'Փոխել լեզուները';
 
   @override
-  String get switchToAi => 'Անցնել AI ռեժիմին';
-
-  @override
-  String get switchToPartner => 'Անցնել գործընկեր ռեժիմին';
-
-  @override
   String get syncingData => 'Տվյալների համաժամացում...';
-
-  @override
-  String get tabConversation => 'Զրույց';
 
   @override
   String tabReview(int count) {
@@ -1119,6 +985,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tooltipSearch => 'Որոնում';
 
   @override
+  String get tooltipSettingsConfirm => 'Հաստատել կարգավորումները';
+
+  @override
   String get tooltipSpeaking => 'Խոսել';
 
   @override
@@ -1131,6 +1000,9 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get translate => 'Թարգմանել';
+
+  @override
+  String get translateNow => 'Թարգմանել հիմա';
 
   @override
   String get translating => 'Թարգմանվում է...';
@@ -1148,6 +1020,9 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Թարգմանության լեզու';
+
+  @override
   String get translationLimitExceeded =>
       'Գերազանցվել է թարգմանության սահմանաչափը';
 
@@ -1163,6 +1038,9 @@ class AppLocalizationsHy extends AppLocalizations {
       'Թարգմանությունների քանակը լիցքավորվել է 5 անգամ!';
 
   @override
+  String get translationResult => 'Թարգմանության արդյունք';
+
+  @override
   String get translationResultHint =>
       'Թարգմանության արդյունք - կարող է խմբագրվել';
 
@@ -1170,10 +1048,16 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tryAgain => 'Փորձեք նորից';
 
   @override
-  String get tutorialAiChatDesc => 'Մարզեք իրական զրույցներ AI անձի հետ:';
+  String get ttsInstallGuide =>
+      'Խնդրում ենք տեղադրել համապատասխան լեզվի տվյալները Android-ի կարգավորումներ > Google TTS-ում։';
 
   @override
-  String get tutorialAiChatTitle => 'AI Զրույց';
+  String get ttsMissing =>
+      'Ձեր սարքի վրա այս լեզվի ձայնային շարժիչը տեղադրված չէ։';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Այս սարքի լռելյայն կարգավորումներն այս լեզվի ձայնային արտածումը չեն ապահովում:';
 
   @override
   String get tutorialContextDesc =>
@@ -1290,7 +1174,13 @@ class AppLocalizationsHy extends AppLocalizations {
   String get typeExclamation => 'Բացականչական նախադասություն';
 
   @override
+  String get typeIdiom => 'Իդիոմ';
+
+  @override
   String get typeImperative => 'Հրամայական նախադասություն';
+
+  @override
+  String get typeProverb => 'Առած / Ասացվածք';
 
   @override
   String get typeQuestion => 'Հարցական նախադասություն';
@@ -1305,6 +1195,11 @@ class AppLocalizationsHy extends AppLocalizations {
   String get useExistingText => 'Օգտագործել առկա տեքստը';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Դիտել առցանց ուղեցույցը';
 
   @override
@@ -1312,6 +1207,16 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Դիտել գովազդ և լիցքավորել (+5 անգամ)';
+
+  @override
+  String get welcomeButton => 'Սկսել';
+
+  @override
+  String get welcomeDesc =>
+      'Բարի գալուստ Talkie: Այն աջակցում է աշխարհի ավելի քան 80 լեզուների 100% ամբողջականությամբ և առաջարկում է կատարյալ ուսուցման փորձ նոր պրեմիում 3D դիզայնով և օպտիմիզացված կատարողականությամբ:';
+
+  @override
+  String get welcomeTitle => 'Բարի գալուստ Talkie:';
 
   @override
   String get word => 'Բառ';
@@ -1328,114 +1233,4 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ձեր արտասանությունը';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Այս սարքի լռելյայն կարգավորումներն այս լեզվի ձայնային արտածումը չեն ապահովում:';
-
-  @override
-  String get homeTab => 'Թարգմանել';
-
-  @override
-  String get welcomeTitle => 'Բարի գալուստ Talkie:';
-
-  @override
-  String get welcomeDesc =>
-      'Բարի գալուստ Talkie: Այն աջակցում է աշխարհի ավելի քան 80 լեզուների 100% ամբողջականությամբ և առաջարկում է կատարյալ ուսուցման փորձ նոր պրեմիում 3D դիզայնով և օպտիմիզացված կատարողականությամբ:';
-
-  @override
-  String get welcomeButton => 'Սկսել';
-
-  @override
-  String get labelDetails => 'Մանրամասներ';
-
-  @override
-  String get translationResult => 'Թարգմանության արդյունք';
-
-  @override
-  String get inputContent => 'Մուտքագրվող տեքստ';
-
-  @override
-  String get translateNow => 'Թարգմանել հիմա';
-
-  @override
-  String get tooltipSettingsConfirm => 'Հաստատել կարգավորումները';
-
-  @override
-  String get hintNoteExample =>
-      'Օրինակ՝ իրավիճակի բացատրություն, համանուններ և այլն';
-
-  @override
-  String get hintTagExample => 'Օրինակ՝ բիզնես, ճանապարհորդություն...';
-
-  @override
-  String get addNew => 'Ավելացնել նորը';
-
-  @override
-  String get newNotebookTitle => 'Նոր գրքույկի անվանումը';
-
-  @override
-  String get enterNameHint => 'Մուտքագրեք անունը';
-
-  @override
-  String get add => 'Ավելացնել';
-
-  @override
-  String get openSettings => 'Բացել կարգավորումները';
-
-  @override
-  String get helpNotebook =>
-      'Ընտրեք թարգմանված արդյունքները պահպանելու համար գրացուցակը:';
-
-  @override
-  String get helpNote =>
-      'Ազատ զգացեք գրել բառի նշանակությունը, օրինակները կամ իրավիճակները:';
-
-  @override
-  String get helpTag =>
-      'Մուտքագրեք բանալի բառեր հետագայում դասակարգելու կամ որոնելու համար:';
-
-  @override
-  String get requestTranslation => 'Թարգմանել';
-
-  @override
-  String get statusRequestSuccess => 'Թարգմանության հարցումն ավարտվեց։';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Թարգմանության հարցումը ձախողվեց․ $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Ուսուցման լեզուն հասանելի չէ';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Ընտրված նյութը չի աջակցում ներկայիս ուսուցման լեզուն ($targetLang), և այն հնարավոր չէ տեղայնացնել: Ցանկանու՞մ եք թարգմանել:';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Լեզվի կարգավորումներ';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Նախ սահմանեք իմ և ուսումնասիրվող լեզուն Մենյու > Լեզվի կարգավորումներ բաժնում:';
-
-  @override
-  String get quickStartStep2Title => '2. Հիմնական հոսք';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Ստեղծեք ձեր սեփական ուսումնական քարտերը՝ մուտքագրում (խոսափող/ստեղնաշար) -> թարգմանություն -> պահպանում հաջորդականությամբ:';
-
-  @override
-  String get quickStartStep3Title => '3. Ռեժիմի օգտագործում';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Զրուցեք վարժվելու համար և վարժվեք ուղղակիորեն արտասանելով տեքստը Արտասանության վարժանք ներդիրում:';
-
-  @override
-  String get noteGuidance =>
-      'Այնտեղ, որտեղ դուք մուտքագրում եք լրացուցիչ մանրամասներ ավելի ճշգրիտ թարգմանության համար';
 }

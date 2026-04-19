@@ -67,7 +67,5 @@
 	<string>This app needs microphone access for speech recognition</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>This app needs speech recognition to convert your voice to text</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app uses your location to provide context-aware AI responses in chat mode</string>
 </dict>
 </plist>

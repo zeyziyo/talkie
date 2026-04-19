@@ -1,32 +1,10 @@
 {
   "@@locale": "ja",
-  "basicWords": "基本単語リポジトリ",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "入力言語",
-  "translationLanguage": "翻訳言語",
-  "simplifiedGuidance": "日常会話を外国語に瞬間変換！Talkieがあなたの言語生活を記録します。",
-  "noDataForLanguage": "選択された言語の学習データがローカルDBにありません。データをダウンロードするか、別の言語を選択してください。",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "キャンセル",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "正確度",
-  "ttsMissing": "この言語の音声エンジンがデバイスにインストールされていません。",
-  "ttsInstallGuide": "Androidの設定 > Googleテキスト読み上げから、該当する言語データをインストールしてください。",
   "adLoading": "広告を読み込み中です。しばらくしてからもう一度試してください。",
+  "add": "追加",
+  "addNew": "新規追加",
   "addNewSubject": "新しいタイトルを追加",
-  "addParticipant": "参加者を追加",
   "addTagHint": "タグを追加...",
   "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "基本単語リポジトリ",
+  "basicWords": "基本単語リポジトリ",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "キャンセル",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "目的格",
   "casePossessive": "所有格",
   "casePossessivePronoun": "所有代名詞",
   "caseReflexive": "再帰代名詞",
   "caseSubject": "主格",
-  "chatAiChat": "チャット",
-  "chatAllConversations": "すべての会話",
-  "chatChoosePersona": "ペルソナを選択",
-  "chatEndMessage": "会話を終了しますか？",
-  "chatEndTitle": "会話を終了して保存",
-  "chatFailed": "チャット失敗: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "会話から抜粋 ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "会話履歴",
-  "chatNew": "新しい会話",
-  "chatNewChat": "新しいチャット",
-  "chatNoConversations": "会話がありません",
-  "chatSearchHint": "チャット名で検索...",
-  "chatNoteSearchHint": "コメントで検索...",
-  "chatSaveAndExit": "保存して終了",
-  "chatStartNewPrompt": "練習を始めるために新しいチャットを開始しましょう！",
-  "chatTypeHint": "メッセージを入力...",
-  "chatUntitled": "無題の会話",
   "checking": "確認中...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "この会話を削除しますか？\n削除した会話は復元できません。",
-  "confirmDeleteParticipant": "この参加者を削除してもよろしいですか？",
   "contextTagHint": "後で区別しやすいように状況を記入してください",
   "contextTagLabel": "文脈/状況 (オプション) - 例：朝の挨拶、丁寧語",
   "copiedToClipboard": "クリップボードにコピーしました！",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "ロールプレイを通じて会話練習をしてください。適切な答えを選択して話してください。",
-  "dialogueQuestTitle": "対話クエスト",
-  "disambiguationPrompt": "どの意味で翻訳しますか？",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "意味を選択",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "アカウントをお持ちでないですか？",
-  "editParticipant": "参加者を編集",
   "email": "メールアドレス",
   "emailAlreadyInUse": "すでに登録済みのメールアドレスです。ログインまたはパスワード再設定をご利用ください。",
+  "enterNameHint": "名前を入力してください",
   "enterNewSubjectName": "新しいタイトルを入力",
   "enterSentenceHint": "文章を入力してください...",
   "enterTextHint": "翻訳するテキストを入力してください",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "認識されたテキスト",
   "female": "女性",
   "file": "ファイル:",
   "@file": {
@@ -191,36 +136,35 @@
   "gameModeTitle": "ゲームモード",
   "gameOver": "ゲームオーバー",
   "gender": "性別",
-  "labelFilterMaterial": "資料集",
-  "labelFilterTag": "タグ",
   "generalTags": "一般タグ",
   "getMaterials": "資料を入手",
   "good": "良いですね",
   "googleContinue": "Googleで続行",
-  "helpDialogueImportDesc": "JSONファイルで全体の対話セットをインポートします。",
-  "helpDialogueImportDetails": "• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode's 'History' tab.",
   "helpJsonDesc": "モード3等で学習教材をインポートするには、以下の構造のJSONファイルを使用してください:",
-  "helpJsonTypeDialogue": "対話 (Dialogue)",
   "helpJsonTypeSentence": "文 (Sentence)",
   "helpJsonTypeWord": "単語 (Word)",
   "helpMode1Desc": "プレミアム3Dマイクと大きなキーボードアイコンで、最も直感的な方法で言語学習を始めましょう。",
-  "helpMode1Details": "• 言語設定：ホーム画面上部の言語ボタンで、自分の言語と学習中の言語を確認し、学習言語を変更できます。\n• シンプル入力：中央の大きなマ이크またはテキスト入力ボックスからすぐに入力を開始できます。\n• 設定確認：入力が終わったら、右側の青いチェックボタンを押してください。詳細設定ウィンドウが表示されます。\n• 詳細設定：表示されたダイアログで、保存先の資料集、注釈（メモ）、タグを指定できます。\n• 今すぐ翻訳：設定完了後、緑色の翻訳ボタンを押すと、AIが即座に翻訳を実行します。\n• 자동 검색：入力中に類似した既存の翻訳をリアルタイムで検出し表示します。\n• 聴取と保存：翻訳結果の下部にあるスピーカーアイコンで発音を確認し、「データを保存」で学習リストに追加しましょう。",
+  "helpMode1Details": "• 言語設定：ホーム画面上部の言語ボタンで、自分の言語と学習中の言語を確認し、学習言語を変更できます。\n• シンプル入力：中央の大きなマイクとテキストウィンドウから即座に入力してください。\n• 設定確認：入力が終わったら、右側の青いチェックボタンを押してください。詳細設定ウィンドウが表示されます。\n• 詳細設定：表示されたダイアログで、保存する資料集、注釈（メモ）、タグを指定できます。\n• 今すぐ翻訳：設定後、緑色の翻訳ボタンを押すと、人工知能が即座に翻訳を実行します。\n• 自動検索：入力中、類似した既存の翻訳をリアルタイムで検知して表示します。\n• 聴取と保存：翻訳結果の下にあるスピーカーアイコンで発音を聞き、「データ保存」で学習リストに追加してください。",
   "helpMode2Desc": "保存された文章を復習します。翻訳を隠して確認し、復習回数を記録しましょう。",
   "helpMode2Details": "• 教材選択：右上メニュー（⋮）から「学習教材の選択」または「オンライン教材室」を利用\n• カードをめくる：「表示/非表示」で翻訳を確認\n• 聞く：スピーカーアイコンで発音を再生\n• 学習完了：チェックマーク（V）で学習完了を処理\n• 削除：カードを長押しして記録を削除\n• 検索とフィルター：検索バー（リアルタイムスマート検索）とタグ、開始文字フィルターをサポート",
   "helpMode3Desc": "文章を聞いて、シャドーイングで発音を練習してください。",
   "helpMode3Details": "• 教材選択: 学習する教材パックを選択\n• 間隔調整: [-] [+] ボタンで文章間の待機時間を設定 (3秒〜60秒)\n• 開始/停止: 再生ボタンでシャドーイングセッションを制御\n• 話す: ネイティブの音声を聞いて真似て話す\n• フィードバック: 発音の正確さをスコア (0-100) と色で表示 (緑/橙/赤)\n• 再試行: 認識失敗時に再試行ボタンを使用",
-  "helpModeChatDesc": "AIペルソナと会話して、実践的な会話を練習してください。",
-  "helpModeChatDetails": "• AIチャット：下部タブバーの「チャット」メニューでペルソナと実践会話練習\n• ペルソナ設定：相手の性別、名前、言語コードを自由に指定\n• GPSシチュエーション：現在地を認識して場所にふさわしい会話テーマを推薦\n• 2ヶ国語：AIの回答が翻訳と共に表示され学習効果を最大化\n• 記録管理：過去の会話履歴フィルタリングおよび会話中の特定メッセージを学習資料として保存",
+  "helpNote": "単語の意味や例文、状況などを自由にご記入ください。",
+  "helpNotebook": "翻訳された結果を保存するフォルダを選択してください。",
   "helpTabJson": "JSON形式",
   "helpTabModes": "機能紹介",
   "helpTabQuickStart": "クイックスタート",
   "helpTabTour": "ツアー",
+  "helpTag": "後で分類したり検索したりするためのキーワードを入力してください。",
   "helpTitle": "ヘルプ＆ガイド",
   "helpTourDesc": "チュートリアルを開始すると、**ハイライトサークル（円）**が主な機能を案内します。\n(例：学習カードを**ハイライトサークル**が指しているときに長押しすると削除できます。)",
   "hide": "隠す",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "例：状況説明、同音異義語など",
+  "hintTagExample": "例：ビジネス、旅行...",
+  "homeTab": "翻訳",
   "importAdded": "追加: {count}件",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files}個のファイル、{entries}個の項目をインポートしました。",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSONファイル読込",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "単一のJSONファイル",
+  "importSourceFolder": "フォルダ (言語別ライブラリ構造)",
+  "importSourceTitle": "インポート元を選択",
+  "importSourceZip": "ZIPファイル (圧縮されたフォルダ)",
   "importTotal": "合計: {count}件",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "入力内容",
+  "inputLanguage": "入力言語",
   "inputModeTitle": "入力",
   "intervalSeconds": "間隔: {seconds}秒",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "有効なメールアドレスを入力してください。",
   "kakaoContinue": "カカオで続ける",
+  "labelDetails": "詳細設定",
+  "labelFilterMaterial": "資料集",
+  "labelFilterTag": "タグ",
   "labelLangCode": "言語コード (例: en-US, ja-JP)",
-  "labelName": "名前",
   "labelNote": "注釈",
   "labelPOS": "品詞",
-  "labelRole": "役割",
   "labelSentence": "文",
   "labelSentenceCollection": "文章集",
   "labelSentenceType": "文章の種類",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "参加者を読み込み中...",
   "location": "場所",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "ログイン",
   "logout": "ログアウト",
   "logoutConfirmMessage": "現在のデバイスからログアウトしますか？",
   "logoutConfirmTitle": "ログアウト",
   "male": "男性",
-  "manageParticipants": "参加者管理",
   "manual": "手動入力",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "教材情報",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "私",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "デバイスからインポート",
   "menuHelp": "ヘルプ",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "マイ例文集",
   "myWordbook": "マイ単語帳",
   "neutral": "中性",
+  "newNotebookTitle": "新しいノートブック名",
   "newSubjectName": "新しい単語帳/文章集のタイトル",
   "next": "次へ",
-  "noDialogueHistory": "会話履歴がありません。",
-  "noInternetWarningMic": "インターネット接続がありません。オフライン状態では音声認識ができない場合があります。",
-  "noInternetWarningTranslate": "インターネット接続がありません。オフライン状態では翻訳機能を利用できません。復習モードをご利用ください。",
+  "noDataForLanguage": "選択された言語の学習データがローカルDBにありません。データをダウンロードするか、別の言語を選択してください。",
   "noMaterialsInCategory": "このカテゴリには資料がありません。",
-  "noParticipantsFound": "登録された参加者はいません。",
   "noRecords": "選択した言語の学習記録がありません",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "音声が検出されませんでした",
   "notSelected": "ー選択されていませんー",
+  "noteGuidance": "より正確な翻訳のために詳細を入力する場所",
   "onlineLibraryCheckInternet": "インターネット接続を確認するか、後でもう一度試してください。",
   "onlineLibraryLoadFailed": "資料を読み込むのに失敗しました。",
   "onlineLibraryNoMaterials": "資料がありません。",
-  "participantDeleted": "参加者が削除されました。",
-  "participantRename": "参加者の名前を変更",
-  "partner": "パートナー",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "パートナーモード",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "設定を開く",
   "password": "パスワード",
   "passwordTooShort": "パスワードは6文字以上である必要があります。",
   "perfect": "完璧です！",
-  "personaFriend": "地元の友人",
-  "personaGuide": "旅行ガイド",
-  "personaTeacher": "英語の先生",
+  "pickGallery": "ギャラリーから選択",
   "playAgain": "もう一度プレイ",
   "playbackFailed": "再生失敗: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "形容詞",
   "posAdverb": "副詞",
+  "posArticle": "冠詞",
   "posConjunction": "接続詞",
   "posInterjection": "感動詞",
   "posNoun": "名詞",
+  "posParticle": "助詞",
   "posPreposition": "前置詞/助詞",
   "posPronoun": "代名詞",
   "posVerb": "動詞",
   "practiceModeTitle": "練習",
   "practiceWordsOnly": "単語のみ練習",
+  "processing": "処理中...",
   "progress": "進捗: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "メニュー > 言語設定で、自分の言語と学習言語をまず指定してください。",
+  "quickStartStep1Title": "1. 言語設定",
+  "quickStartStep2Desc": "入力（マイク/キーボード） -> 翻訳 -> 保存 の順で、自分だけの学習カードを作りましょう。",
+  "quickStartStep2Title": "2. 基本的な流れ",
+  "quickStartStep3Desc": "チャットで練習したり、発音練習タブでテキストを見て直接発音しながら練習しましょう。",
+  "quickStartStep3Title": "3. モード活用",
   "recentNItems": "最近作成された{count}個を表示",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "翻訳をリクエスト",
   "reset": "リセット",
   "resetPracticeHistory": "練習履歴を初期化",
   "retry": "再試行？",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "復習",
-  "roleAi": "AI",
-  "roleThirdParty": "第三者",
-  "roleUser": "ユーザー",
   "save": "保存",
+  "saveAsSentence": "文章として保存",
+  "saveAsWord": "単語として保存",
   "saveData": "保存",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "スキャン履歴に保存",
   "saveTranslationsFromSearch": "検索モードから翻訳を保存してください",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "スキャンする画像を選択してください",
+  "scanLabel": "スキャン",
   "score": "正確さ: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "品詞を選択",
-  "selectParticipants": "参加者を選択",
-  "selectSentenceType": "文の種類を選択",
   "selectStudyMaterial": "学習教材を選択",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "文",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "会員登録",
-  "similarTextFound": "類似したテキストが見つかりました",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "スキップ",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "出典:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "原文言語",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "日常会話を外国語に瞬間変換！Talkieがあなたの言語生活を記録します。",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "今すぐ話してください！",
-  "speaker": "発話者",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "発話者を選択",
-  "speakingPractice": "スピーキング練習",
-  "startChat": "会話を開始",
-  "startPractice": "練習開始",
   "startTutorial": "チュートリアル開始",
-  "startWarning": "注意",
   "startsWith": "先頭文字",
   "statusCheckEmail": "メールを確認して認証を完了してください。",
   "statusDownloading": "ダウンロード中: {name}...",
-  "statusImportFailed": "インポート失敗: {error}",
-  "statusImportSuccess": "{name}のインポートが完了しました",
-  "statusLoggingIn": "ログイン中...",
-  "statusLoginCancelled": "ログインがキャンセルされました。",
-  "statusLoginFailed": "ログイン失敗: {error}",
-  "statusLoginSuccess": "ログインに成功しました。",
-  "statusLogoutSuccess": "ログアウトしました。",
-  "statusSignUpFailed": "会員登録失敗: {error}",
-  "statusSigningUp": "会員登録中...",
-  "stopPractice": "練習停止",
-  "studyComplete": "学習完了",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "学習記録 ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "インポート失敗: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name}のインポートが完了しました",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "ログイン失敗: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "ログインに成功しました。",
+  "statusLogoutSuccess": "ログアウトしました。",
+  "statusRequestFailed": "翻訳リクエスト失敗: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "翻訳リクエストが完了しました。",
+  "stopPractice": "練習停止",
+  "studyLangNotFoundDesc": "選択した教材は、現在設定されている学習言語（{targetLang}）をサポートしていないため、ローカルに保存できません。翻訳をリクエストしますか？",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "学習言語はサポートされていません",
   "styleFormal": "敬語",
   "styleInformal": "ため口",
   "stylePolite": "丁寧",
   "styleSlang": "スラング",
-  "subject": "主題:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "言語を切り替え",
-  "switchToAi": "AIモードに切り替え",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "パートナーモードに切り替え",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "データを同期中...",
-  "tabConversation": "会話",
   "tabReview": "復習 ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "減少",
   "tooltipIncrease": "増加",
   "tooltipSearch": "検索",
+  "tooltipSettingsConfirm": "設定確認",
   "tooltipSpeaking": "スピーキング",
   "tooltipStudyReview": "学習+復習",
   "totalRecords": "合計{count}件の記録（すべて表示）",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "翻訳する",
   "translating": "翻訳中...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "翻訳言語",
   "translationLimitExceeded": "翻訳制限を超過",
   "translationLimitMessage": "1日の無料翻訳（5回）をすべて使い切りました。\n\n広告を見て5回をすぐにチャージしますか？",
   "translationLoaded": "保存済みの翻訳を読み込みました",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "翻訳回数が5回チャージされました！",
+  "translationResult": "翻訳結果",
   "translationResultHint": "翻訳結果 - 修正可能",
   "tryAgain": "もう一度",
-  "tutorialAiChatDesc": "AIペルソナと実践的な会話を練習しましょう。",
-  "tutorialAiChatTitle": "AIチャット",
+  "ttsInstallGuide": "Androidの設定 > Googleテキスト読み上げから、該当する言語データをインストールしてください。",
+  "ttsMissing": "この言語の音声エンジンがデバイスにインストールされていません。",
+  "ttsUnsupportedNatively": "このデバイスの標準設定では、この言語の音声出力をサポートしていません。",
   "tutorialContextDesc": "同じ文章でも状況（例：朝、夜）を追加して区別できます。",
   "tutorialContextTitle": "文脈タグ",
   "tutorialLangSettingsDesc": "翻訳元の言語と翻訳先の言語を設定します。",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "入力したテキストを翻訳します。",
   "tutorialTransTitle": "翻訳",
   "typeExclamation": "感嘆文",
+  "typeIdiom": "慣用句",
   "typeImperative": "命令文",
+  "typeProverb": "ことわざ",
   "typeQuestion": "疑問文",
   "typeStatement": "平叙文",
   "usageLimitTitle": "上限に達しました",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "オンラインガイドを見る",
   "voluntaryTranslations": "自主的な翻訳",
   "watchAdAndRefill": "広告を見てチャージ (+5回)",
+  "welcomeButton": "始める",
+  "welcomeDesc": "Talkieへようこそ！世界80以上の言語を100%の完全性でサポートし、新しいプレミアム3Dデザインと最適化されたパフォーマンスで完璧な学習体験を提供します。",
+  "welcomeTitle": "Talkieへようこそ！",
   "word": "単語",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "敵が到着する前に単語を言って基地を守ってください。",
   "wordDefenseTitle": "単語ディフェンス",
   "wordModeLabel": "単語モード",
-  "yourPronunciation": "あなたの発音",
-  "ttsUnsupportedNatively": "このデバイスの標準設定では、この言語の音声出力をサポートしていません。",
-  "homeTab": "翻訳",
-  "welcomeTitle": "Talkieへようこそ！",
-  "welcomeDesc": "Talkieへようこそ！世界80以上の言語を100%の完全性でサポートし、新しいプレミアム3Dデザインと最適化されたパフォーマンスで完璧な学習体験を提供します。",
-  "welcomeButton": "始める",
-  "labelDetails": "詳細設定",
-  "translationResult": "翻訳結果",
-  "inputContent": "入力内容",
-  "translateNow": "翻訳する",
-  "tooltipSettingsConfirm": "設定確認",
-  "hintNoteExample": "例：状況説明、同音異義語など",
-  "hintTagExample": "例：ビジネス、旅行...",
-  "addNew": "新規追加",
-  "newNotebookTitle": "新しいノートブック名",
-  "enterNameHint": "名前を入力してください",
-  "add": "追加",
-  "openSettings": "設定を開く",
-  "helpNotebook": "翻訳された結果を保存するフォルダを選択してください。",
-  "helpNote": "単語の意味や例文、状況などを自由にご記入ください。",
-  "helpTag": "後で分類したり検索したりするためのキーワードを入力してください。",
-  "requestTranslation": "翻訳をリクエスト",
-  "statusRequestSuccess": "翻訳リクエストが完了しました。",
-  "statusRequestFailed": "翻訳リクエスト失敗: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "学習言語はサポートされていません",
-  "studyLangNotFoundDesc": "選択した教材は、現在設定されている学習言語（{targetLang}）をサポートしていないため、ローカルに保存できません。翻訳をリクエストしますか？",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. 言語設定",
-  "quickStartStep1Desc": "メニュー > 言語設定で、自分の言語と学習言語をまず指定してください。",
-  "quickStartStep2Title": "2. 基本的な流れ",
-  "quickStartStep2Desc": "入力（マイク/キーボード） -> 翻訳 -> 保存 の順で、自分だけの学習カードを作りましょう。",
-  "quickStartStep3Title": "3. モード活用",
-  "quickStartStep3Desc": "チャットで練習したり、発音練習タブでテキストを見て直接発音しながら練習しましょう。",
-  "noteGuidance": "より正確な翻訳のために詳細を入力する場所"
+  "yourPronunciation": "あなたの発音"
 }

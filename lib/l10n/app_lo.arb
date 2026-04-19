@@ -1,32 +1,10 @@
 {
   "@@locale": "lo",
-  "basicWords": "ບ່ອນເກັບມ້ຽນຄຳສັບພື້ນຖານ",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "ພາສາປ້ອນຂໍ້ມູນ",
-  "translationLanguage": "ພາສາແປ",
-  "simplifiedGuidance": "ປ່ຽນການສົນທະນາປະຈຳວັນເປັນພາສາຕ່າງປະເທດທັນທີ! Talkie ຈະບັນທຶກຊີວິດພາສາຂອງທ່ານ.",
-  "noDataForLanguage": "ບໍ່ມີຂໍ້ມູນການຮຽນຮູ້ສຳລັບພາສາທີ່ທ່ານເລືອກໃນຖານຂໍ້ມູນທ້ອງຖິ່ນ. ກະລຸນາດາວໂຫຼດຂໍ້ມູນ ຫຼືເລືອກພາສາອື່ນ.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "ຍົກເລີກ",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "ຄວາມຖືກຕ້ອງ",
-  "ttsMissing": "ບໍ່​ມີ​ເຄື່ອງ​ມື​ສຽງ​ສຳ​ລັບ​ພາ​ສາ​ນີ້​ຕິດ​ຕັ້ງ​ຢູ່​ໃນ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ.",
-  "ttsInstallGuide": "ກະລຸນາຕິດຕັ້ງຂໍ້ມູນພາສານັ້ນໃນການຕັ້ງຄ່າ Android > Google TTS.",
   "adLoading": "ກຳລັງໂຫຼດໂຄສະນາ. ກະລຸນາລອງໃໝ່ອີກຄັ້ງໃນພາຍຫຼັງ.",
+  "add": "ເພີ່ມ",
+  "addNew": "ເພີ່ມໃໝ່",
   "addNewSubject": "ເພີ່ມຫົວຂໍ້ໃໝ່",
-  "addParticipant": "ເພີ່ມຜູ້ເຂົ້າຮ່ວມ",
   "addTagHint": "ເພີ່ມແທັກ...",
   "alreadyHaveAccount": "ມີບັນຊີແລ້ວບໍ?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "ບ່ອນເກັບມ້ຽນຄຳສັບພື້ນຖານ",
+  "basicWords": "ບ່ອນເກັບມ້ຽນຄຳສັບພື້ນຖານ",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "ຍົກເລີກ",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "ກໍລະນີຈຸດປະສົງ",
   "casePossessive": "ຊັບສິນ",
   "casePossessivePronoun": "ຄຳນາມຊັບສິນ",
   "caseReflexive": "ສະທ້ອນ",
   "caseSubject": "Nomitive",
-  "chatAiChat": "ສົນທະນາ",
-  "chatAllConversations": "ສົນທະນາທັງໝົດ",
-  "chatChoosePersona": "ເລືອກ Persona",
-  "chatEndMessage": "ທ່ານຕ້ອງການທີ່ຈະສິ້ນສຸດການສົນທະນາ?",
-  "chatEndTitle": "ສິ້ນສຸດ ແລະບັນທຶກການສົນທະນາ",
-  "chatFailed": "ສົນທະນາບໍ່ສຳເລັດ: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "ຄັດຈາກການສົນທະນາ ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "ປະຫວັດການສົນທະນາ",
-  "chatNew": "ສົນທະນາໃໝ່",
-  "chatNewChat": "ສົນທະນາໃໝ່",
-  "chatNoConversations": "ຍັງບໍ່ມີການສົນທະນາ",
-  "chatSearchHint": "ຄົ້ນຫາຈາກຊື່ຫ້ອງສົນທະນາ...",
-  "chatNoteSearchHint": "ຄົ້ນຫາໃນບັນທຶກ...",
-  "chatSaveAndExit": "ບັນທຶກແລ້ວອອກ",
-  "chatStartNewPrompt": "ເລີ່ມຕົ້ນການສົນທະນາໃໝ່ສຳລັບການຝຶກຊ້ອມ!",
-  "chatTypeHint": "ປ້ອນຂໍ້ຄວາມ...",
-  "chatUntitled": "ບໍ່ມີຊື່ການສົນທະນາ",
   "checking": "ກຳລັງກວດສອບ...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "ທ່ານແນ່ໃຈບໍ່ວ່າຈະລຶບການສົນທະນານີ້?\nການສົນທະນາທີ່ຖືກລຶບຈະບໍ່ສາມາດກູ້ຄືນໄດ້.",
-  "confirmDeleteParticipant": "ທ່ານແນ່ໃຈບໍວ່າຕ້ອງການລຶບຜູ້ເຂົ້າຮ່ວມນີ້?",
   "contextTagHint": "ກະລຸນາຂຽນສະຖານະການເພື່ອໃຫ້ງ່າຍຕໍ່ການຈໍາແນກໃນພາຍຫຼັງ",
   "contextTagLabel": "ບໍລິບົດ/ສະຖານະການ (ທາງເລືອກ) - ຕົວຢ່າງ: ສະບາຍດີຕອນເຊົ້າ, ຄໍາສຸພາບ",
   "copiedToClipboard": "ສຳເນົາໃສ່ clipboard ແລ້ວ!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "ຝຶກການສົນທະນາຜ່ານສະຖານະການ. ເລືອກຄໍາຕອບທີ່ເໝາະສົມ ແລະເວົ້າ.",
-  "dialogueQuestTitle": "ພາລະກິດສົນທະນາ",
-  "disambiguationPrompt": "ທ່ານຕ້ອງການແປດ້ວຍຄວາມໝາຍໃດ?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "ເລືອກຄວາມໝາຍ",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "ບໍ່ມີບັນຊີບໍ?",
-  "editParticipant": "ແກ້ໄຂຜູ້ເຂົ້າຮ່ວມ",
   "email": "ອີເມວ",
   "emailAlreadyInUse": "ອີເມວນີ້ຖືກນຳໃຊ້ແລ້ວ. ກະລຸນາເຂົ້າສູ່ລະບົບ ຫຼື ລືມລະຫັດຜ່ານ.",
+  "enterNameHint": "ປ້ອນຊື່",
   "enterNewSubjectName": "ປ້ອນຊື່ຫົວຂໍ້ໃໝ່",
   "enterSentenceHint": "ກະລຸນາປ້ອນປະໂຫຍກ...",
   "enterTextHint": "ປ້ອນຂໍ້ຄວາມທີ່ຈະແປ",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "ຂໍ້ຄວາມທີ່ກວດພົບ",
   "female": "ຍິງ",
   "file": "ໄຟລ໌:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "ໂໝດເກມ",
   "gameOver": "ຈົບເກມ",
   "gender": "ເພດ",
-  "labelFilterMaterial": "ເອກະສານອ້າງອີງ",
-  "labelFilterTag": "ແທັກ",
   "generalTags": "ປ້າຍກຳກັບທົ່ວໄປ",
   "getMaterials": "ເອົາເອກະສານ",
   "good": "ດີ!",
   "googleContinue": "ສືບຕໍ່ດ້ວຍ Google",
-  "helpDialogueImportDesc": "ນຳເຂົ້າຊຸດການສົນທະນາທັງໝົດເປັນໄຟລ໌ JSON.",
-  "helpDialogueImportDetails": "• ໂຄງສ້າງ JSON: ໃຊ້ແຖວ 'dialogues' ແທນ 'entries'\n• ການກູ້ຄືນອັດຕະໂນມັດ: ຊື່ຫົວຂໍ້ການສົນທະນາ, Persona, ລໍາດັບຂໍ້ຄວາມຈະຖືກກູ້ຄືນ.\n• ສະຖານທີ່: ການສົນທະນາທີ່ນໍາເຂົ້າມາຈະປາກົດຢູ່ໃນແຖບ 'ປະຫວັດ' ຂອງໂໝດສົນທະນາ AI.",
   "helpJsonDesc": "ເພື່ອເອົາເຂົ້າເອກະສານການຮຽນຮູ້ໃນຮູບແບບ JSON ທີ່ຈະໃຊ້ໃນໂໝດ 3, ໃຫ້ເຮັດຕາມຮູບແບບຕໍ່ໄປນີ້:",
-  "helpJsonTypeDialogue": "ສົນທະນາ (Dialogue)",
   "helpJsonTypeSentence": "ປະໂຫຍກ (Sentence)",
   "helpJsonTypeWord": "ຄຳສັບ (Word)",
   "helpMode1Desc": "ເລີ່ມຕົ້ນການຮຽນຮູ້ພາສາດ້ວຍວິທີທີ່ຕັ້ງໃຈທີ່ສຸດຜ່ານໄມໂຄຣໂຟນ 3D Premium ແລະໄອຄອນແປ້ນພິມຂະໜາດໃຫຍ່.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• ເລືອກ​ຊຸດ​ຝຶກ​ອ່ານ: ເລືອກ 'ເລືອກ​ຊຸດ​ຝຶກ​ອ່ານ' ຫຼື 'ຫ້ອງ​ສະ​ໝຸດ​ອອນ​ໄລ​ນ​໌' ຈາກ​ເມ​ນູ (⋮) ຢູ່​ເທິງ​ຂວາ\n• ປີ້ນ​ບັດ: ກວດ​ສອບ​ການ​ແປ​ໂດຍ​ການ​ນໍາ​ໃຊ້ 'ສະ​ແດງ/ເຊື່ອງ'\n• ຟັງ: ຫຼິ້ນ​ການ​ອອກ​ສຽງ​ດ້ວຍ​ໄອ​ຄອນ​ລໍາ​ໂພງ\n• ສໍາ​ເລັດ​ການ​ຮຽນ​ຮູ້: ປຸງ​ແຕ່ງ​ເປັນ​ສໍາ​ເລັດ​ການ​ຮຽນ​ຮູ້​ທີ່​ມີ​ເຄື່ອງ​ຫມາຍ​ກວດ​ສອບ (V)\n• ລຶບ: ກົດ​ຄ້າງ​ໄວ້​ບັດ (ກົດ​ຍາວ) ເພື່ອ​ລຶບ​ບັນ​ທຶກ\n• ຄົ້ນ​ຫາ​ແລະ​ກັ່ນ​ຕອງ: ສະ​ຫນັບ​ສະ​ຫນູນ​ແຖບ​ຄົ້ນ​ຫາ (ການ​ຄົ້ນ​ຫາ​ທີ່​ສະ​ຫຼາດ​ໃນ​ເວ​ລາ​ທີ່​ແທ້​ຈິງ​) ແລະ​ແທັກ​, ການ​ກັ່ນ​ຕອງ​ຕົວ​ອັກ​ສອນ​ເລີ່ມ​ຕົ້ນ",
   "helpMode3Desc": "ຟັງແລະເວົ້າຕາມປະໂຫຍກເພື່ອຝຶກການອອກສຽງ.",
   "helpMode3Details": "• ເລືອກເອກະສານ: ເລືອກຊຸດເອກະສານທີ່ຈະຮຽນຮູ້\n• ຕັ້ງຄ່າໄລຍະຫ່າງ: ປັບເວລາລໍຖ້າລະຫວ່າງປະໂຫຍກດ້ວຍປຸ່ມ [-] [+](3 ວິນາທີ ~ 60 ວິນາທີ)\n• ເລີ່ມ/ຢຸດ: ຄວບຄຸມເຊດຊັນ Shadowing\n• ເວົ້າ: ຟັງສຽງແລ້ວເວົ້າຕາມ\n• ຄຳຕິຊົມ: ສະແດງຄະແນນຄວາມຖືກຕ້ອງ (0-100) ແລະສີ\n• ເງື່ອນໄຂການຄົ້ນຫາ: ກັ່ນຕອງເປົ້າໝາຍການຝຶກດ້ວຍແທັກ, ລາຍການຫຼ້າສຸດ, ຕົວອັກສອນເລີ່ມຕົ້ນ",
-  "helpModeChatDesc": "ສົນທະນາກັບ AI ເພື່ອຝຶກການສົນທະນາຕົວຈິງ.",
-  "helpModeChatDetails": "• ສົນທະນາ AI: ຝຶກສົນທະນາຕົວຈິງກັບບຸກຄະລິກກະພາບໃນເມນູ 'ສົນທະນາ' ໃນແຖບລຸ່ມ\n• ການຕັ້ງຄ່າບຸກຄະລິກກະພາບ: ລະບຸເພດ, ຊື່, ລະຫັດພາສາຂອງອີກຝ່າຍຢ່າງອິດສະຫຼະ\n• ສະຖານະການ GPS: ແນະນຳຫົວຂໍ້ການສົນທະນາທີ່ເໝາະສົມກັບສະຖານທີ່ໂດຍການຮັບຮູ້ສະຖານທີ່ປະຈຸບັນຂອງຂ້ອຍ\n• 2 ພາສາ: ຄຳຕອບຂອງ AI ຖືກສະແດງພ້ອມກັບການແປພາສາເພື່ອເພີ່ມປະສິດທິພາບການຮຽນຮູ້ສູງສຸດ\n• ການຈັດການບັນທຶກ: ກັ່ນຕອງປະຫວັດການສົນທະນາທີ່ຜ່ານມາ ແລະບັນທຶກຂໍ້ຄວາມສະເພາະໃດໜຶ່ງໃນລະຫວ່າງການສົນທະນາເປັນເອກະສານການຮຽນຮູ້",
+  "helpNote": "ບັນທຶກຄວາມໝາຍ, ຕົວຢ່າງ, ສະຖານະການ, ແລະອື່ນໆ ຕາມໃຈ.",
+  "helpNotebook": "ເລືອກໂຟນເດີ້ເພື່ອບັນທຶກຜົນການແປ.",
   "helpTabJson": "ຮູບແບບ JSON",
   "helpTabModes": "ຄຳອະທິບາຍໂໝດ",
   "helpTabQuickStart": "ເລີ່ມຕົ້ນດ່ວນ",
   "helpTabTour": "ທົດລອງໃຊ້",
+  "helpTag": "ປ້ອນຄຳສັບຫຼັກສຳລັບການຈັດໝວດໝູ່ ຫຼື ຄົ້ນຫາໃນພາຍຫຼັງ.",
   "helpTitle": "ຄູ່ມືແນະນຳ",
   "helpTourDesc": "**ວົງກົມເນັ້ນ** ຈະນຳພາເຈົ້າຜ່ານຄຸນສົມບັດຫຼັກ.\n(ຕົວຢ່າງ: ກົດຄ້າງໄວ້ທີ່ບັດທີ່ **ວົງກົມເນັ້ນ** ຊີ້ບອກເພື່ອລຶບ).",
   "hide": "ເຊື່ອງ",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "ຕົວຢ່າງ: ຄຳອະທິບາຍສະຖານະການ, ຄຳສັບຄ້າຍຄືກັນ, ແລະອື່ນໆ",
+  "hintTagExample": "ຕົວຢ່າງ: ທຸລະກິດ, ການທ່ອງທ່ຽວ...",
+  "homeTab": "ແປ",
   "importAdded": "ເພີ່ມ: {count} ລາຍການ",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "ນຳເຂົ້າ {files} ໄຟລ໌, {entries} ລາຍການແລ້ວ.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "ນຳເຂົ້າໄຟລ໌ JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "ໄຟລ໌ JSON ດ່ຽວ",
+  "importSourceFolder": "ໂຟນເດີ້ (ໂຄງສ້າງຫ້ອງສະໝຸດຕາມພາສາ)",
+  "importSourceTitle": "ເລືອກແຫຼ່ງທີ່ຈະນຳເຂົ້າ",
+  "importSourceZip": "ໄຟລ໌ ZIP (ໂຟນເດີ້ທີ່ຖືກບີບອັດ)",
   "importTotal": "ທັງໝົດ: {count} ລາຍການ",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "ເນື້ອໃນທີ່ປ້ອນ",
+  "inputLanguage": "ພາສາປ້ອນຂໍ້ມູນ",
   "inputModeTitle": "ປ້ອນຂໍ້ມູນ",
   "intervalSeconds": "ໄລຍະຫ່າງ: {seconds} ວິນາທີ",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "ກະລຸນາປ້ອນອີເມວທີ່ຖືກຕ້ອງ.",
   "kakaoContinue": "ສືບຕໍ່ດ້ວຍ Kakao",
+  "labelDetails": "ລາຍລະອຽດເພີ່ມເຕີມ",
+  "labelFilterMaterial": "ເອກະສານອ້າງອີງ",
+  "labelFilterTag": "ແທັກ",
   "labelLangCode": "ລະຫັດພາສາ (ຕົວຢ່າງ: en-US, ko-KR)",
-  "labelName": "ຊື່",
   "labelNote": "ບັນທຶກ",
   "labelPOS": "ພາກສ່ວນຂອງຄຳເວົ້າ",
-  "labelRole": "ບົດບາດ",
   "labelSentence": "ປະໂຫຍກ",
   "labelSentenceCollection": "ບ່ອນເກັບກຳປະໂຫຍກ",
   "labelSentenceType": "ປະເພດປະໂຫຍກ",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "ກຳລັງໂຫຼດຜູ້ເຂົ້າຮ່ວມ...",
   "location": "ສະຖານທີ່",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "ເຂົ້າສູ່ລະບົບ",
   "logout": "ອອກຈາກລະບົບ",
   "logoutConfirmMessage": "ທ່ານແນ່ໃຈບໍວ່າຕ້ອງການອອກຈາກລະບົບໃນອຸປະກອນນີ້?",
   "logoutConfirmTitle": "ອອກຈາກລະບົບ",
   "male": "ຊາຍ",
-  "manageParticipants": "ຈັດການຜູ້ເຂົ້າຮ່ວມ",
   "manual": "ປ້ອນຂໍ້ມູນດ້ວຍຕົນເອງ",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "ຂໍ້ມູນເອກະສານ",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "ຂ້ອຍ",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "ນຳເຂົ້າຂໍ້ມູນຈາກອຸປະກອນ",
   "menuHelp": "ຊ່ວຍເຫຼືອ",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "ບ່ອນເກັບປະໂຫຍກຂອງຂ້ອຍ",
   "myWordbook": "ປື້ມຄຳສັບຂອງຂ້ອຍ",
   "neutral": "ເປັນກາງ",
+  "newNotebookTitle": "ຊື່ປື້ມບັນທຶກໃໝ່",
   "newSubjectName": "ຊື່ຫົວຂໍ້ໃໝ່",
   "next": "ຕໍ່ໄປ",
-  "noDialogueHistory": "ບໍ່ມີປະຫວັດການສົນທະນາ.",
-  "noInternetWarningMic": "ບໍ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ. ການຮັບຮູ້ສຽງອາດຈະບໍ່ສາມາດໃຊ້ໄດ້ໃນຂະນະອອຟລາຍ.",
-  "noInternetWarningTranslate": "ບໍ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ. ຟັງຊັນການແປອາດຈະບໍ່ສາມາດໃຊ້ໄດ້ໃນຂະນະອອຟລາຍ. ກະລຸນາໃຊ້ໂໝດທວນຄືນ.",
+  "noDataForLanguage": "ບໍ່ມີຂໍ້ມູນການຮຽນຮູ້ສຳລັບພາສາທີ່ທ່ານເລືອກໃນຖານຂໍ້ມູນທ້ອງຖິ່ນ. ກະລຸນາດາວໂຫຼດຂໍ້ມູນ ຫຼືເລືອກພາສາອື່ນ.",
   "noMaterialsInCategory": "ບໍ່ມີຂໍ້ມູນໃນໝວດນີ້.",
-  "noParticipantsFound": "ບໍ່ພົບຜູ້ເຂົ້າຮ່ວມທີ່ລົງທະບຽນ.",
   "noRecords": "ບໍ່ມີບັນທຶກການຮຽນຮູ້ສຳລັບພາສາທີ່ເລືອກ",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "ບໍ່ກວດພົບສຽງ",
   "notSelected": "- ບໍ່ໄດ້ເລືອກ -",
+  "noteGuidance": "ບ່ອນ​ທີ່​ທ່ານ​ປ້ອນ​ລາຍ​ລະ​ອຽດ​ເພີ່ມ​ເຕີມ​ສໍາ​ລັບ​ການ​ແປ​ພາ​ສາ​ໃຫ້​ຖືກ​ຕ້ອງ​ຫຼາຍ​ຂຶ້ນ",
   "onlineLibraryCheckInternet": "ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງທ່ານ ຫຼືລອງໃໝ່ໃນພາຍຫຼັງ.",
   "onlineLibraryLoadFailed": "ບໍ່ສາມາດໂຫຼດຂໍ້ມູນໄດ້.",
   "onlineLibraryNoMaterials": "ບໍ່ມີຂໍ້ມູນ.",
-  "participantDeleted": "ຜູ້ເຂົ້າຮ່ວມຖືກລຶບແລ້ວ.",
-  "participantRename": "ປ່ຽນຊື່ຜູ້ເຂົ້າຮ່ວມ",
-  "partner": "ຄູ່ຮ່ວມງານ",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "ໂໝດຄູ່ຮ່ວມງານ",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "ເປີດການຕັ້ງຄ່າ",
   "password": "ລະຫັດຜ່ານ",
   "passwordTooShort": "ລະຫັດຜ່ານຕ້ອງມີຢ່າງໜ້ອຍ 6 ຕົວອັກສອນ.",
   "perfect": "ສົມບູນແບບ!",
-  "personaFriend": "ເພື່ອນທ້ອງຖິ່ນ",
-  "personaGuide": "ມັກຄະເທດນຳທ່ຽວ",
-  "personaTeacher": "ຄູສອນພາສາອັງກິດ",
+  "pickGallery": "ເລືອກຈາກຄັງຮູບ",
   "playAgain": "ຫລິ້ນອີກຄັ້ງ",
   "playbackFailed": "ຫຼິ້ນບໍ່ສຳເລັດ: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "ຄໍາຄຸນນາມ",
   "posAdverb": "ຄໍາວິເສດ",
+  "posArticle": "ຄຳນຳໜ້າ",
   "posConjunction": "ຄໍາສັນຍານ",
   "posInterjection": "ຄຳອຸທານ",
   "posNoun": "ຄໍານາມ",
+  "posParticle": "ອະນຸພາກ/ຄຳຊ້ອນ",
   "posPreposition": "ຄໍາບຸພະບົດ/ຄໍາຊ່ວຍ",
   "posPronoun": "ຄໍາແທນນາມ",
   "posVerb": "ຄໍາກິລິຍາ",
   "practiceModeTitle": "ການປະຕິບັດ",
   "practiceWordsOnly": "ຝຶກຄຳສັບເທົ່ານັ້ນ",
+  "processing": "ກຳລັງປະມວນຜົນ...",
   "progress": "ຄວາມຄືບໜ້າ: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "ກຳນົດພາສາຂອງຂ້ອຍ ແລະ ພາສາການຮຽນຮູ້ຂອງຂ້ອຍກ່ອນໃນ ເມນູ > ການຕັ້ງຄ່າພາສາ.",
+  "quickStartStep1Title": "1. ຕັ້ງຄ່າພາສາ",
+  "quickStartStep2Desc": "ສ້າງບັດຮຽນຂອງເຈົ້າເອງຕາມລຳດັບ: ປ້ອນຂໍ້ມູນ (ໄມໂຄຣໂຟນ/ແປ້ນພິມ) -> ແປ -> ບັນທຶກ.",
+  "quickStartStep2Title": "2. ຂັ້ນຕອນພື້ນຖານ",
+  "quickStartStep3Desc": "ຝຶກສົນທະນາ ແລະ ຝຶກອອກສຽງໂດຍການເບິ່ງຂໍ້ຄວາມໃນແຖບຝຶກອອກສຽງ.",
+  "quickStartStep3Title": "3. ໃຊ້ໂໝດ",
   "recentNItems": "ເບິ່ງ {count} ລາຍການທີ່ສ້າງຂື້ນຫຼ້າສຸດ",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "ຂໍການແປ",
   "reset": "ຣີເຊັດ",
   "resetPracticeHistory": "ຣີເຊັດປະຫວັດການຝຶກ",
   "retry": "ລອງໃໝ່?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "ທົບທວນ",
-  "roleAi": "AI",
-  "roleThirdParty": "ບຸກຄົນທີສາມ",
-  "roleUser": "ຜູ້ໃຊ້",
   "save": "ບັນທຶກ",
+  "saveAsSentence": "ບັນທຶກເປັນປະໂຫຍກ",
+  "saveAsWord": "ບັນທຶກເປັນຄຳສັບ",
   "saveData": "ບັນທຶກຂໍ້ມູນ",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "ບັນທຶກໄວ້ໃນປະຫວັດການສະແກນ",
   "saveTranslationsFromSearch": "ລອງບັນທຶກການແປຈາກໂໝດຄົ້ນຫາ",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "ເລືອກຮູບພາບທີ່ຈະສະແກນ",
+  "scanLabel": "ສະແກນ",
   "score": "ຄວາມຖືກຕ້ອງ: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "ເລືອກຄຳທີ່ໃຊ້",
-  "selectParticipants": "ເລືອກຜູ້ເຂົ້າຮ່ວມ",
-  "selectSentenceType": "ເລືອກປະເພດປະໂຫຍກ",
   "selectStudyMaterial": "ເລືອກເອກະສານການຮຽນ",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "ປະໂຫຍກ",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "ລົງທະບຽນ",
-  "similarTextFound": "ພົບຂໍ້ຄວາມທີ່ຄ້າຍຄືກັນ",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "ຂ້າມ",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "ແຫຼ່ງທີ່ມາ:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "ພາສາຕົ້ນສະບັບ",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "ປ່ຽນການສົນທະນາປະຈຳວັນເປັນພາສາຕ່າງປະເທດທັນທີ! Talkie ຈະບັນທຶກຊີວິດພາສາຂອງທ່ານ.",
   "sourceLanguageLabel": "ພາສາຂອງຂ້ອຍ (ຕົ້ນສະບັບ)",
-  "speakNow": "ເວົ້າດຽວນີ້!",
-  "speaker": "ຜູ້ເວົ້າ",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "ເລືອກຜູ້ເວົ້າ",
-  "speakingPractice": "ຝຶກເວົ້າ",
-  "startChat": "ເລີ່ມການສົນທະນາ",
-  "startPractice": "ເລີ່ມຝຶກ",
   "startTutorial": "ເລີ່ມການສອນ",
-  "startWarning": "ຄຳເຕືອນ",
   "startsWith": "ຕົວອັກສອນເລີ່ມຕົ້ນ",
   "statusCheckEmail": "ກະລຸນາກວດສອບອີເມວເພື່ອສໍາເລັດການຢືນຢັນ.",
   "statusDownloading": "ກຳລັງດາວໂຫຼດ: {name}...",
-  "statusImportFailed": "ນຳເຂົ້າລົ້ມເຫລວ: {error}",
-  "statusImportSuccess": "{name} ນຳເຂົ້າສຳເລັດແລ້ວ",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "ການເຂົ້າສູ່ລະບົບຖືກຍົກເລີກແລ້ວ.",
-  "statusLoginFailed": "ເຂົ້າສູ່ລະບົບລົ້ມເຫລວ: {error}",
-  "statusLoginSuccess": "ເຂົ້າສູ່ລະບົບສຳເລັດແລ້ວ.",
-  "statusLogoutSuccess": "ອອກຈາກລະບົບແລ້ວ.",
-  "statusSignUpFailed": "ລົງທະບຽນລົ້ມເຫລວ: {error}",
-  "statusSigningUp": "ກຳລັງລົງທະບຽນ...",
-  "stopPractice": "ຢຸດຝຶກ",
-  "studyComplete": "ສຳເລັດການຮຽນ",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "ບັນທຶກການຮຽນ ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "ນຳເຂົ້າລົ້ມເຫລວ: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} ນຳເຂົ້າສຳເລັດແລ້ວ",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "ເຂົ້າສູ່ລະບົບລົ້ມເຫລວ: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "ເຂົ້າສູ່ລະບົບສຳເລັດແລ້ວ.",
+  "statusLogoutSuccess": "ອອກຈາກລະບົບແລ້ວ.",
+  "statusRequestFailed": "ຄຳຮ້ອງຂໍການແປຜິດພາດ: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "ຄຳຮ້ອງຂໍການແປສຳເລັດແລ້ວ.",
+  "stopPractice": "ຢຸດຝຶກ",
+  "studyLangNotFoundDesc": "ເອກະສານທີ່ທ່ານເລືອກບໍ່ຮອງຮັບພາສາການຮຽນທີ່ຕັ້ງໄວ້ໃນປັດຈຸບັນ ({targetLang}) ແລະບໍ່ສາມາດບັນທຶກໄວ້ໃນເຄື່ອງໄດ້. ທ່ານຕ້ອງການຂໍການແປບໍ່?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "ບໍ່ຮອງຮັບພາສາການຮຽນ",
   "styleFormal": "ແບບເປັນທາງການ",
   "styleInformal": "ແບບບໍ່ເປັນທາງການ",
   "stylePolite": "ແບບສຸພາບ",
   "styleSlang": "ຄຳສັບສະແລງ/ຄຳສັບທົ່ວໄປ",
-  "subject": "ຫົວຂໍ້:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "ປ່ຽນພາສາ",
-  "switchToAi": "ປ່ຽນເປັນໂໝດ AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "ປ່ຽນເປັນໂໝດຄູ່ຮ່ວມງານ",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "ກຳລັງຊິງຂໍ້ມູນ...",
-  "tabConversation": "ສົນທະນາ",
   "tabReview": "ທົບທວນ ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "ຫຼຸດລົງ",
   "tooltipIncrease": "ເພີ່ມຂຶ້ນ",
   "tooltipSearch": "ຄົ້ນຫາ",
+  "tooltipSettingsConfirm": "ຢືນຢັນການຕັ້ງຄ່າ",
   "tooltipSpeaking": "ເວົ້າ",
   "tooltipStudyReview": "ຮຽນຮູ້+ທົບທວນ",
   "totalRecords": "ທັງໝົດ {count} ບັນທຶກ (ເບິ່ງທັງໝົດ)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "ແປດຽວນີ້",
   "translating": "ກຳລັງແປ...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "ພາສາແປ",
   "translationLimitExceeded": "ເກີນຂີດຈຳກັດການແປ",
   "translationLimitMessage": "ທ່ານໄດ້ໃຊ້ການແປຟຣີປະຈຳວັນທັງໝົດແລ້ວ (5 ຄັ້ງ).\\n\\nທ່ານຕ້ອງການສາກໄຟ 5 ຄັ້ງທັນທີໂດຍການເບິ່ງໂຄສະນາບໍ?",
   "translationLoaded": "ໂຫຼດການແປທີ່ບັນທຶກໄວ້",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "ຈຳນວນການແປຂອງທ່ານໄດ້ຖືກສາກເປັນ 5 ຄັ້ງແລ້ວ!",
+  "translationResult": "ຜົນການແປ",
   "translationResultHint": "ຜົນການແປ - ສາມາດແກ້ໄຂໄດ້",
   "tryAgain": "ລອງໃໝ່",
-  "tutorialAiChatDesc": "ປະຕິບັດການສົນທະນາທີ່ແທ້ຈິງກັບ AI Personas.",
-  "tutorialAiChatTitle": "ສົນທະນາ AI",
+  "ttsInstallGuide": "ກະລຸນາຕິດຕັ້ງຂໍ້ມູນພາສານັ້ນໃນການຕັ້ງຄ່າ Android > Google TTS.",
+  "ttsMissing": "ບໍ່​ມີ​ເຄື່ອງ​ມື​ສຽງ​ສຳ​ລັບ​ພາ​ສາ​ນີ້​ຕິດ​ຕັ້ງ​ຢູ່​ໃນ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ.",
+  "ttsUnsupportedNatively": "ການຕັ້ງຄ່າເລີ່ມຕົ້ນຂອງອຸປະກອນນີ້ບໍ່ຮອງຮັບສຽງອອກສຳລັບພາສານີ້.",
   "tutorialContextDesc": "ເຖິງແມ່ນວ່າຈະເປັນປະໂຫຍກດຽວກັນ, ຖ້າທ່ານຂຽນສະຖານະການ (ຕົວຢ່າງ: ເຊົ້າ, ແລງ) ທ່ານສາມາດບັນທຶກແຍກຕ່າງຫາກໄດ້.",
   "tutorialContextTitle": "ແທັກສະພາບການ/ບໍລິບົດ",
   "tutorialLangSettingsDesc": "ຕັ້ງຄ່າພາສາຕົ້ນສະບັບ ແລະພາສາເປົ້າໝາຍທີ່ຈະແປ.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "ແປຂໍ້ຄວາມທີ່ປ້ອນເຂົ້າ.",
   "tutorialTransTitle": "ແປ",
   "typeExclamation": "ຄຳອຸທານ",
+  "typeIdiom": "ສຳນວນ",
   "typeImperative": "ຄໍາສັ່ງ",
+  "typeProverb": "ສຸພາສິດ/ຄຳຄົມ",
   "typeQuestion": "ຄໍາຖາມ",
   "typeStatement": "ປະໂຫຍກ",
   "usageLimitTitle": "ຈຳກັດການນຳໃຊ້",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "ເບິ່ງຄູ່ມືອອນໄລນ໌",
   "voluntaryTranslations": "ການແປແບບສະໝັກໃຈ",
   "watchAdAndRefill": "ສາກໄຟໂດຍການເບິ່ງໂຄສະນາ (+5 ຄັ້ງ)",
+  "welcomeButton": "ເລີ່ມຕົ້ນ",
+  "welcomeDesc": "ຍິນດີຕ້ອນຮັບສູ່ Talkie! ຮອງຮັບຫຼາຍກວ່າ 80 ພາສາທົ່ວໂລກດ້ວຍຄວາມສົມບູນແບບ 100%, ພ້ອມດ້ວຍການອອກແບບ 3D Premium ໃໝ່ ແລະປະສິດທິພາບທີ່ປັບປຸງໃຫ້ດີຂຶ້ນເພື່ອປະສົບການການຮຽນຮູ້ທີ່ສົມບູນແບບ.",
+  "welcomeTitle": "ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ Talkie!",
   "word": "ຄຳສັບ",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "ປ້ອງກັນຖານໂດຍການເວົ້າຄໍາສັບກ່ອນທີ່ສັດຕູຈະມາຮອດ.",
   "wordDefenseTitle": "ປ້ອງກັນຄຳສັບ",
   "wordModeLabel": "ໂໝດຄຳສັບ",
-  "yourPronunciation": "ການອອກສຽງຂອງເຈົ້າ",
-  "ttsUnsupportedNatively": "ການຕັ້ງຄ່າເລີ່ມຕົ້ນຂອງອຸປະກອນນີ້ບໍ່ຮອງຮັບສຽງອອກສຳລັບພາສານີ້.",
-  "homeTab": "ແປ",
-  "welcomeTitle": "ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ Talkie!",
-  "welcomeDesc": "ຍິນດີຕ້ອນຮັບສູ່ Talkie! ຮອງຮັບຫຼາຍກວ່າ 80 ພາສາທົ່ວໂລກດ້ວຍຄວາມສົມບູນແບບ 100%, ພ້ອມດ້ວຍການອອກແບບ 3D Premium ໃໝ່ ແລະປະສິດທິພາບທີ່ປັບປຸງໃຫ້ດີຂຶ້ນເພື່ອປະສົບການການຮຽນຮູ້ທີ່ສົມບູນແບບ.",
-  "welcomeButton": "ເລີ່ມຕົ້ນ",
-  "labelDetails": "ລາຍລະອຽດເພີ່ມເຕີມ",
-  "translationResult": "ຜົນການແປ",
-  "inputContent": "ເນື້ອໃນທີ່ປ້ອນ",
-  "translateNow": "ແປດຽວນີ້",
-  "tooltipSettingsConfirm": "ຢືນຢັນການຕັ້ງຄ່າ",
-  "hintNoteExample": "ຕົວຢ່າງ: ຄຳອະທິບາຍສະຖານະການ, ຄຳສັບຄ້າຍຄືກັນ, ແລະອື່ນໆ",
-  "hintTagExample": "ຕົວຢ່າງ: ທຸລະກິດ, ການທ່ອງທ່ຽວ...",
-  "addNew": "ເພີ່ມໃໝ່",
-  "newNotebookTitle": "ຊື່ປື້ມບັນທຶກໃໝ່",
-  "enterNameHint": "ປ້ອນຊື່",
-  "add": "ເພີ່ມ",
-  "openSettings": "ເປີດການຕັ້ງຄ່າ",
-  "helpNotebook": "ເລືອກໂຟນເດີ້ເພື່ອບັນທຶກຜົນການແປ.",
-  "helpNote": "ບັນທຶກຄວາມໝາຍ, ຕົວຢ່າງ, ສະຖານະການ, ແລະອື່ນໆ ຕາມໃຈ.",
-  "helpTag": "ປ້ອນຄຳສັບຫຼັກສຳລັບການຈັດໝວດໝູ່ ຫຼື ຄົ້ນຫາໃນພາຍຫຼັງ.",
-  "requestTranslation": "ຂໍການແປ",
-  "statusRequestSuccess": "ຄຳຮ້ອງຂໍການແປສຳເລັດແລ້ວ.",
-  "statusRequestFailed": "ຄຳຮ້ອງຂໍການແປຜິດພາດ: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "ບໍ່ຮອງຮັບພາສາການຮຽນ",
-  "studyLangNotFoundDesc": "ເອກະສານທີ່ທ່ານເລືອກບໍ່ຮອງຮັບພາສາການຮຽນທີ່ຕັ້ງໄວ້ໃນປັດຈຸບັນ ({targetLang}) ແລະບໍ່ສາມາດບັນທຶກໄວ້ໃນເຄື່ອງໄດ້. ທ່ານຕ້ອງການຂໍການແປບໍ່?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. ຕັ້ງຄ່າພາສາ",
-  "quickStartStep1Desc": "ກຳນົດພາສາຂອງຂ້ອຍ ແລະ ພາສາການຮຽນຮູ້ຂອງຂ້ອຍກ່ອນໃນ ເມນູ > ການຕັ້ງຄ່າພາສາ.",
-  "quickStartStep2Title": "2. ຂັ້ນຕອນພື້ນຖານ",
-  "quickStartStep2Desc": "ສ້າງບັດຮຽນຂອງເຈົ້າເອງຕາມລຳດັບ: ປ້ອນຂໍ້ມູນ (ໄມໂຄຣໂຟນ/ແປ້ນພິມ) -> ແປ -> ບັນທຶກ.",
-  "quickStartStep3Title": "3. ໃຊ້ໂໝດ",
-  "quickStartStep3Desc": "ຝຶກສົນທະນາ ແລະ ຝຶກອອກສຽງໂດຍການເບິ່ງຂໍ້ຄວາມໃນແຖບຝຶກອອກສຽງ.",
-  "noteGuidance": "ບ່ອນ​ທີ່​ທ່ານ​ປ້ອນ​ລາຍ​ລະ​ອຽດ​ເພີ່ມ​ເຕີມ​ສໍາ​ລັບ​ການ​ແປ​ພາ​ສາ​ໃຫ້​ຖືກ​ຕ້ອງ​ຫຼາຍ​ຂຶ້ນ"
+  "yourPronunciation": "ການອອກສຽງຂອງເຈົ້າ"
 }

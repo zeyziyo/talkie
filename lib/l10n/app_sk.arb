@@ -1,32 +1,10 @@
 {
   "@@locale": "sk",
-  "basicWords": "Základné úložisko slov",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "Vstupný jazyk",
-  "translationLanguage": "Jazyk prekladu",
-  "simplifiedGuidance": "Okamžitá konverzia každodenných rozhovorov do cudzích jazykov! Talkie zaznamenáva váš jazykový život.",
-  "noDataForLanguage": "Pre zvolený jazyk nie sú v lokálnej DB žiadne učebné materiály. Stiahnite si materiály alebo vyberte iný jazyk.",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "Zrušiť",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "Presnosť",
-  "ttsMissing": "Hlasový engine pre tento jazyk nie je nainštalovaný vo vašom zariadení.",
-  "ttsInstallGuide": "Nainštalujte jazykové dáta v Nastavenia Android > Google TTS.",
   "adLoading": "Načítava sa reklama. Skúste to znova neskôr.",
+  "add": "Pridať",
+  "addNew": "Pridať nový",
   "addNewSubject": "Pridať nový názov",
-  "addParticipant": "Pridať účastníka",
   "addTagHint": "Pridať tag...",
   "alreadyHaveAccount": "Už máte účet?",
   "appTitle": "Talkie",
@@ -46,42 +24,19 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "Základné úložisko slov",
+  "basicWords": "Základné úložisko slov",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "Zrušiť",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "Akuzatív",
   "casePossessive": "Genitív",
   "casePossessivePronoun": "Privlastňovacie zámeno",
   "caseReflexive": "Zvratné zámeno",
   "caseSubject": "Nominatív",
-  "chatAiChat": "Chat",
-  "chatAllConversations": "Všetky konverzácie",
-  "chatChoosePersona": "Vyberte osobu",
-  "chatEndMessage": "Chcete ukončiť konverzáciu?",
-  "chatEndTitle": "Ukončiť a uložiť konverzáciu",
-  "chatFailed": "Rozhovor zlyhal: {error}",
-  "@chatFailed": {
-    "placeholders": {
-      "error": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatFromConversation": "Výňatok z konverzácie ({speaker})",
-  "@chatFromConversation": {
-    "placeholders": {
-      "speaker": {
-        "type": "Object"
-      }
-    }
-  },
-  "chatHistoryTitle": "História konverzácií",
-  "chatNew": "Nová konverzácia",
-  "chatNewChat": "Nová konverzácia",
-  "chatNoConversations": "Zatiaľ žiadne konverzácie",
-  "chatSearchHint": "Hľadať podľa názvu konverzácie...",
-  "chatNoteSearchHint": "Hľadať v poznámkach...",
-  "chatSaveAndExit": "Uložiť a ukončiť",
-  "chatStartNewPrompt": "Začnite novú konverzáciu na precvičovanie!",
-  "chatTypeHint": "Zadajte správu...",
-  "chatUntitled": "Konverzácia bez názvu",
   "checking": "Kontroluje sa...",
   "@checking": {
     "description": "Checking for duplicates"
@@ -95,8 +50,6 @@
   "@confirmDelete": {
     "description": "Delete confirmation message"
   },
-  "confirmDeleteConversation": "Naozaj chcete zmazať túto konverzáciu?\nZmazané konverzácie sa nedajú obnoviť.",
-  "confirmDeleteParticipant": "Chcete odstrániť tohto účastníka?",
   "contextTagHint": "Napíšte situáciu, aby ste ju neskôr ľahko rozlíšili",
   "contextTagLabel": "Kontext/Situácia (voliteľné) - Napr.: Ranný pozdrav, Formálne oslovenie",
   "copiedToClipboard": "Skopírované do schránky!",
@@ -131,20 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "dialogueQuestDesc": "Precvičte si konverzáciu prostredníctvom situačných hier. Vyberte a vyslovte vhodné odpovede.",
-  "dialogueQuestTitle": "Dialógová úloha",
-  "disambiguationPrompt": "Aký význam chcete preložiť?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "Vyberte význam",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "Nemáte účet?",
-  "editParticipant": "Upraviť účastníka",
   "email": "E-mail",
   "emailAlreadyInUse": "Táto e-mailová adresa je už zaregistrovaná. Prihláste sa alebo použite možnosť obnovenia hesla.",
+  "enterNameHint": "Zadajte názov",
   "enterNewSubjectName": "Zadajte nový názov",
   "enterSentenceHint": "Zadajte vetu...",
   "enterTextHint": "Zadajte text na preklad",
@@ -166,6 +110,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "Rozpoznaný text",
   "female": "Žena",
   "file": "Súbor:",
   "@file": {
@@ -191,16 +136,11 @@
   "gameModeTitle": "Herný režim",
   "gameOver": "Koniec hry",
   "gender": "Pohlavie",
-  "labelFilterMaterial": "Materiály",
-  "labelFilterTag": "Štítky",
   "generalTags": "Všeobecné značky",
   "getMaterials": "Získať materiály",
   "good": "Dobré",
   "googleContinue": "Pokračovať s Google",
-  "helpDialogueImportDesc": "Importujte kompletnú sadu dialógov ako súbor JSON.",
-  "helpDialogueImportDetails": "• Štruktúra JSON: použitie poľa `dialogues` namiesto `entries`\n• Automatické obnovenie: názov dialógu, osoba, poradie správ sa obnovia.\n• Umiestnenie: importované dialógy sa zobrazia na karte 'História' režimu AI chatu.",
   "helpJsonDesc": "Ak chcete importovať učebné materiály, ktoré sa majú použiť v režime 3, ako súbor JSON, postupujte podľa tohto formátu:",
-  "helpJsonTypeDialogue": "Dialóg",
   "helpJsonTypeSentence": "Veta",
   "helpJsonTypeWord": "Slovo",
   "helpMode1Desc": "Začnite sa učiť jazyky najintuitívnejším spôsobom s prémiovým 3D mikrofónom a ikonami veľkej klávesnice.",
@@ -209,18 +149,22 @@
   "helpMode2Details": "• Výber materiálov: Použite 'Výber študijných materiálov' alebo 'Online knižnicu materiálov' v ponuke (⋮) vpravo hore\n• Otočenie kartičky: Potvrďte preklad pomocou 'Zobraziť/Skryť'\n• Počúvanie: Prehrávanie výslovnosti pomocou ikony reproduktora\n• Dokončené štúdium: Označte ako dokončené pomocou začiarknutia (V)\n• Odstránenie: Odstráňte záznam dlhým stlačením karty\n• Vyhľadávanie a filtre: Podpora vyhľadávacieho panela (inteligentné vyhľadávanie v reálnom čase) a filtrov značiek a začiatočných písmen",
   "helpMode3Desc": "Počúvajte a opakujte vety (shadowing) a precvičujte si výslovnosť.",
   "helpMode3Details": "• Výber materiálu: výber zbierky materiálov na učenie\n• Nastavenie intervalu: úprava čakacej doby medzi vetami pomocou tlačidiel [-] [+] (3 s ~ 60 s)\n• Spustenie/Zastavenie: ovládanie relácie shadowing\n• Rozprávanie: počúvanie a opakovanie reči\n• Spätná väzba: zobrazenie skóre presnosti (0-100) a farby\n• Podmienky vyhľadávania: filtrovanie cieľa cvičenia pomocou značiek, posledných položiek, počiatočných písmen",
-  "helpModeChatDesc": "Precvičujte si konverzáciu v reálnom svete rozhovorom s AI osobnosťou.",
-  "helpModeChatDetails": "• AI Chat: Precvičte si konverzáciu s osobnosťou v ponuke 'Chat' na paneli kariet v dolnej časti\n• Nastavenie osobnosti: Slobodne určite pohlavie, meno a jazykový kód partnera\n• GPS situačná hra: Odporúčanie tém konverzácie, ktoré sú vhodné pre dané miesto rozpoznaním vašej aktuálnej polohy\n• 2 jazyky: Odpoveď AI sa zobrazuje s prekladom, čím sa maximalizuje efekt učenia\n• Správa záznamov: Filtrovanie minulej histórie konverzácií a ukladanie konkrétnych správ počas konverzácie ako študijných materiálov",
+  "helpNote": "Slobodne si zapisujte významy slov, príklady alebo situácie.",
+  "helpNotebook": "Vyberte priečinok, kam chcete uložiť preložené výsledky.",
   "helpTabJson": "Formát JSON",
   "helpTabModes": "Popis režimov",
   "helpTabQuickStart": "Rýchly štart",
   "helpTabTour": "Prehliadka",
+  "helpTag": "Zadajte kľúčové slová na neskoršie triedenie alebo vyhľadávanie.",
   "helpTitle": "Pomocník a sprievodca",
   "helpTourDesc": "**Zvýraznený kruh** vás prevedie kľúčovými funkciami.\n(Napríklad: kartu označenú **zvýrazneným kruhom** môžete odstrániť dlhým stlačením.)",
   "hide": "Skryť",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "Napr.: Kontext, homonymá atď.",
+  "hintTagExample": "Napr.: Obchod, cestovanie...",
+  "homeTab": "Preklad",
   "importAdded": "Pridané: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -257,6 +201,17 @@
       }
     }
   },
+  "importFolderSuccess": "Importovaných {files} súborov, {entries} položiek.",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "Importovať súbor JSON",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -274,6 +229,10 @@
       }
     }
   },
+  "importSourceFile": "Jeden JSON súbor",
+  "importSourceFolder": "Priečinok (štruktúra knižnice podľa jazyka)",
+  "importSourceTitle": "Vyberte zdroj importu",
+  "importSourceZip": "ZIP súbor (komprimovaný priečinok)",
   "importTotal": "Celkom: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -287,6 +246,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "Vstupný obsah",
+  "inputLanguage": "Vstupný jazyk",
   "inputModeTitle": "Vstup",
   "intervalSeconds": "Interval: {seconds} s",
   "@intervalSeconds": {
@@ -298,11 +259,12 @@
   },
   "invalidEmail": "Zadajte platný e-mail.",
   "kakaoContinue": "Pokračovať s Kakao",
+  "labelDetails": "Podrobné nastavenia",
+  "labelFilterMaterial": "Materiály",
+  "labelFilterTag": "Štítky",
   "labelLangCode": "Kód jazyka (napr. en-US, ko-KR)",
-  "labelName": "Meno",
   "labelNote": "Poznámka",
   "labelPOS": "Časť reči",
-  "labelRole": "Rola",
   "labelSentence": "Veta",
   "labelSentenceCollection": "Zbierka viet",
   "labelSentenceType": "Typ vety",
@@ -325,17 +287,12 @@
   "@listening": {
     "description": "STT listening status"
   },
-  "loadingParticipants": "Načítavajú sa účastníci...",
   "location": "Poloha",
-  "@location": {
-    "description": "Label for location field in chat save dialog"
-  },
   "login": "Prihlásiť sa",
   "logout": "Odhlásiť sa",
   "logoutConfirmMessage": "Chcete sa odhlásiť z tohto zariadenia?",
   "logoutConfirmTitle": "Odhlásiť sa",
   "male": "Muž",
-  "manageParticipants": "Správa účastníkov",
   "manual": "Manuálny vstup",
   "@manual": {
     "description": "Label for manual input in Partner Mode"
@@ -347,10 +304,6 @@
   "materialInfo": "Informácie o materiáli",
   "@materialInfo": {
     "description": "Title for material metadata section"
-  },
-  "me": "Ja",
-  "@me": {
-    "description": "Label for self speaker"
   },
   "menuDeviceImport": "Importovať materiály zo zariadenia",
   "menuHelp": "Pomocník",
@@ -379,13 +332,11 @@
   "mySentenceCollection": "Moja zbierka viet",
   "myWordbook": "Moja slovná zásoba",
   "neutral": "Neutrálny",
+  "newNotebookTitle": "Názov nového zápisníka",
   "newSubjectName": "Nový názov slovníka/zbierky viet",
   "next": "Ďalej",
-  "noDialogueHistory": "Žiadna história dialógov.",
-  "noInternetWarningMic": "Žiadne internetové pripojenie. Rozpoznávanie reči nemusí byť v režime offline dostupné.",
-  "noInternetWarningTranslate": "Žiadne internetové pripojenie. Preklad nie je v režime offline dostupný. Použite režim opakovania.",
+  "noDataForLanguage": "Pre zvolený jazyk nie sú v lokálnej DB žiadne učebné materiály. Stiahnite si materiály alebo vyberte iný jazyk.",
   "noMaterialsInCategory": "V tejto kategórii nie sú žiadne materiály.",
-  "noParticipantsFound": "Nenašli sa žiadni registrovaní účastníci.",
   "noRecords": "Žiadne záznamy o učení vo vybranom jazyku",
   "@noRecords": {
     "description": "Empty state message"
@@ -401,25 +352,15 @@
   },
   "noVoiceDetected": "Nezistil sa žiadny hlas",
   "notSelected": "- Nevybrané -",
+  "noteGuidance": "Tu zadávate ďalšie podrobnosti pre presnejší preklad",
   "onlineLibraryCheckInternet": "Skontrolujte pripojenie k internetu alebo to skúste neskôr.",
   "onlineLibraryLoadFailed": "Nepodarilo sa načítať materiály.",
   "onlineLibraryNoMaterials": "Žiadne materiály.",
-  "participantDeleted": "Účastník bol odstránený.",
-  "participantRename": "Premenovať účastníka",
-  "partner": "Partner",
-  "@partner": {
-    "description": "Label for partner speaker"
-  },
-  "partnerMode": "Režim partnera",
-  "@partnerMode": {
-    "description": "Label for Partner Mode logic"
-  },
+  "openSettings": "Otvoriť nastavenia",
   "password": "Heslo",
   "passwordTooShort": "Heslo musí mať aspoň 6 znakov.",
   "perfect": "Perfektné!",
-  "personaFriend": "Miestny priateľ",
-  "personaGuide": "Turistický sprievodca",
-  "personaTeacher": "Učiteľ angličtiny",
+  "pickGallery": "Vyberte z galérie",
   "playAgain": "Hrať znova",
   "playbackFailed": "Prehrávanie zlyhalo: {error}",
   "@playbackFailed": {
@@ -436,14 +377,17 @@
   },
   "posAdjective": "Prídavné meno",
   "posAdverb": "Príslovka",
+  "posArticle": "Článok",
   "posConjunction": "Spojka",
   "posInterjection": "Citoslovce",
   "posNoun": "Podstatné meno",
+  "posParticle": "Častica",
   "posPreposition": "Predložka",
   "posPronoun": "Zámeno",
   "posVerb": "Sloveso",
   "practiceModeTitle": "Cvičenie",
   "practiceWordsOnly": "Precvičovať iba slová",
+  "processing": "Spracováva sa...",
   "progress": "Priebeh: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -456,6 +400,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "Najprv nastavte svoj jazyk a jazyk, ktorý sa učíte, v ponuke > Nastavenie jazyka.",
+  "quickStartStep1Title": "1. Nastavenie jazykov",
+  "quickStartStep2Desc": "Vytvorte si vlastné vzdelávacie kartičky v poradí: Vstup (mikrofón/klávesnica) -> Preklad -> Uloženie.",
+  "quickStartStep2Title": "2. Základný postup",
+  "quickStartStep3Desc": "Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.",
+  "quickStartStep3Title": "3. Využívanie režimov",
   "recentNItems": "Zobraziť posledných {count} vytvorených",
   "@recentNItems": {
     "placeholders": {
@@ -486,6 +436,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "Požiadať o preklad",
   "reset": "Obnoviť",
   "resetPracticeHistory": "Obnoviť históriu cvičenia",
   "retry": "Skúsiť znova?",
@@ -500,10 +451,9 @@
     }
   },
   "reviewModeTitle": "Opakovanie",
-  "roleAi": "AI",
-  "roleThirdParty": "Tretia strana",
-  "roleUser": "Používateľ",
   "save": "Uložiť",
+  "saveAsSentence": "Uložiť ako vetu",
+  "saveAsWord": "Uložiť ako slovo",
   "saveData": "Uložiť dáta",
   "@saveData": {
     "description": "Save translation button"
@@ -517,6 +467,7 @@
       }
     }
   },
+  "saveToHistory": "Uložiť do histórie skenovania",
   "saveTranslationsFromSearch": "Pokúste sa uložiť preklady z režimu vyhľadávania",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -529,6 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "Vyberte obrázok na skenovanie",
+  "scanLabel": "Skenovať",
   "score": "Presnosť: {score}%",
   "@score": {
     "placeholders": {
@@ -565,91 +518,82 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "Vyberte slovný druh",
-  "selectParticipants": "Vyberte účastníkov",
-  "selectSentenceType": "Vyberte typ vety",
   "selectStudyMaterial": "Vyberte učebné materiály",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
   },
-  "sendingMessage": "메시지 전송 중...",
   "sentence": "Veta",
   "@sentence": {
     "description": "Toggle option for Sentence"
   },
   "signUp": "Zaregistrovať sa",
-  "similarTextFound": "Nájdený podobný text",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "Preskočiť",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "Zdroj:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "Zdrojový jazyk",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "Okamžitá konverzia každodenných rozhovorov do cudzích jazykov! Talkie zaznamenáva váš jazykový život.",
   "sourceLanguageLabel": "Môj jazyk (Source)",
-  "speakNow": "Hovorte teraz!",
-  "speaker": "Hovorca",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "Vyberte hovoriaceho",
-  "speakingPractice": "Precvičovanie rozprávania",
-  "startChat": "Začať konverzáciu",
-  "startPractice": "Začať cvičiť",
   "startTutorial": "Spustiť tutoriál",
-  "startWarning": "Upozornenie",
   "startsWith": "Začína na",
   "statusCheckEmail": "Overte si e-mail pre dokončenie overenia.",
   "statusDownloading": "Sťahuje sa: {name}...",
-  "statusImportFailed": "Import zlyhal: {error}",
-  "statusImportSuccess": "{name} bol úspešne importovaný",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "Prihlásenie bolo zrušené.",
-  "statusLoginFailed": "Prihlásenie zlyhalo: {error}",
-  "statusLoginSuccess": "Prihlásenie bolo úspešné.",
-  "statusLogoutSuccess": "Boli ste odhlásený.",
-  "statusSignUpFailed": "Registrácia zlyhala: {error}",
-  "statusSigningUp": "Prebieha registrácia...",
-  "stopPractice": "Zastaviť cvičenie",
-  "studyComplete": "Učenie dokončené",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "Záznamy o učení ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "Import zlyhal: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} bol úspešne importovaný",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "Prihlásenie zlyhalo: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "Prihlásenie bolo úspešné.",
+  "statusLogoutSuccess": "Boli ste odhlásený.",
+  "statusRequestFailed": "Žiadosť o preklad zlyhala: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "Žiadosť o preklad bola úspešná.",
+  "stopPractice": "Zastaviť cvičenie",
+  "studyLangNotFoundDesc": "Vybraný materiál nepodporuje aktuálne nastavený jazyk štúdia ({targetLang}), preto ho nie je možné uložiť lokálne. Chcete požiadať o preklad?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "Nepodporovaný jazyk štúdia",
   "styleFormal": "Formálny",
   "styleInformal": "Neformálny",
   "stylePolite": "Zdvorilý",
   "styleSlang": "Slang/Hovorový jazyk",
-  "subject": "Predmet:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "Prepnúť jazyky",
-  "switchToAi": "Prepnúť do režimu AI",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "Prepnúť do režimu partnera",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "Synchronizácia dát...",
-  "tabConversation": "Konverzácia",
   "tabReview": "Opakovanie ({count})",
   "@tabReview": {
     "description": "Review tab label with count",
@@ -690,6 +634,7 @@
   "tooltipDecrease": "Znížiť",
   "tooltipIncrease": "Zvýšiť",
   "tooltipSearch": "Hľadať",
+  "tooltipSettingsConfirm": "Potvrdiť nastavenia",
   "tooltipSpeaking": "Rozprávanie",
   "tooltipStudyReview": "Učenie + Opakovanie",
   "totalRecords": "Celkom {count} záznamov (zobraziť všetky)",
@@ -705,6 +650,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "Preložiť teraz",
   "translating": "Prekladá sa...",
   "@translating": {
     "description": "Translation in progress"
@@ -726,6 +672,7 @@
       }
     }
   },
+  "translationLanguage": "Jazyk prekladu",
   "translationLimitExceeded": "Prekročený limit prekladu",
   "translationLimitMessage": "Využili ste všetky bezplatné denné preklady (5-krát).\\n\\nChcete si okamžite dobiť 5 prekladov sledovaním reklamy?",
   "translationLoaded": "Uložený preklad načítaný",
@@ -733,10 +680,12 @@
     "description": "Existing translation loaded"
   },
   "translationRefilled": "Počet prekladov bol dobitý 5-krát!",
+  "translationResult": "Výsledok prekladu",
   "translationResultHint": "Výsledok prekladu - upraviteľný",
   "tryAgain": "Skúste znova",
-  "tutorialAiChatDesc": "Precvičte si konverzáciu v reálnom čase s AI osobou.",
-  "tutorialAiChatTitle": "AI Chat - tutoriál",
+  "ttsInstallGuide": "Nainštalujte jazykové dáta v Nastavenia Android > Google TTS.",
+  "ttsMissing": "Hlasový engine pre tento jazyk nie je nainštalovaný vo vašom zariadení.",
+  "ttsUnsupportedNatively": "V tomto zariadení nie je natívne podporovaný výstup hlasu pre tento jazyk.",
   "tutorialContextDesc": "Ak si zapíšete situáciu (napr. ráno, večer) aj pre tú istú vetu, môžete si ju uložiť samostatne.",
   "tutorialContextTitle": "Situácia/kontextové značky",
   "tutorialLangSettingsDesc": "Nastavuje zdrojový a cieľový jazyk na preklad.",
@@ -770,7 +719,9 @@
   "tutorialTransDesc": "Preloží zadaný text.",
   "tutorialTransTitle": "Preložiť",
   "typeExclamation": "Výkrik",
+  "typeIdiom": "Frazeologizmus",
   "typeImperative": "Rozkaz",
+  "typeProverb": "Príslovie/porekadlo",
   "typeQuestion": "Otázka",
   "typeStatement": "Oznámenie",
   "usageLimitTitle": "Dosiahnutý limit",
@@ -778,9 +729,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "Zobraziť online príručku",
   "voluntaryTranslations": "Dobrovoľné preklady",
   "watchAdAndRefill": "Dobitie sledovaním reklamy (+5-krát)",
+  "welcomeButton": "Začať",
+  "welcomeDesc": "Vitajte v Talkie! Podporujeme viac ako 80 jazykov z celého sveta so 100% integritou a prinášame dokonalý zážitok z učenia s novým prémiovým 3D dizajnom a optimalizovaným výkonom.",
+  "welcomeTitle": "Vitajte v Talkie!",
   "word": "Slovo",
   "@word": {
     "description": "Toggle option for Word"
@@ -788,51 +750,5 @@
   "wordDefenseDesc": "Bráňte základňu vyslovením slov predtým, ako dorazí nepriateľ.",
   "wordDefenseTitle": "Slovná obrana",
   "wordModeLabel": "Režim slov",
-  "yourPronunciation": "Vaša výslovnosť",
-  "ttsUnsupportedNatively": "V tomto zariadení nie je natívne podporovaný výstup hlasu pre tento jazyk.",
-  "homeTab": "Preklad",
-  "welcomeTitle": "Vitajte v Talkie!",
-  "welcomeDesc": "Vitajte v Talkie! Podporujeme viac ako 80 jazykov z celého sveta so 100% integritou a prinášame dokonalý zážitok z učenia s novým prémiovým 3D dizajnom a optimalizovaným výkonom.",
-  "welcomeButton": "Začať",
-  "labelDetails": "Podrobné nastavenia",
-  "translationResult": "Výsledok prekladu",
-  "inputContent": "Vstupný obsah",
-  "translateNow": "Preložiť teraz",
-  "tooltipSettingsConfirm": "Potvrdiť nastavenia",
-  "hintNoteExample": "Napr.: Kontext, homonymá atď.",
-  "hintTagExample": "Napr.: Obchod, cestovanie...",
-  "addNew": "Pridať nový",
-  "newNotebookTitle": "Názov nového zápisníka",
-  "enterNameHint": "Zadajte názov",
-  "add": "Pridať",
-  "openSettings": "Otvoriť nastavenia",
-  "helpNotebook": "Vyberte priečinok, kam chcete uložiť preložené výsledky.",
-  "helpNote": "Slobodne si zapisujte významy slov, príklady alebo situácie.",
-  "helpTag": "Zadajte kľúčové slová na neskoršie triedenie alebo vyhľadávanie.",
-  "requestTranslation": "Požiadať o preklad",
-  "statusRequestSuccess": "Žiadosť o preklad bola úspešná.",
-  "statusRequestFailed": "Žiadosť o preklad zlyhala: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "Nepodporovaný jazyk štúdia",
-  "studyLangNotFoundDesc": "Vybraný materiál nepodporuje aktuálne nastavený jazyk štúdia ({targetLang}), preto ho nie je možné uložiť lokálne. Chcete požiadať o preklad?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. Nastavenie jazykov",
-  "quickStartStep1Desc": "Najprv nastavte svoj jazyk a jazyk, ktorý sa učíte, v ponuke > Nastavenie jazyka.",
-  "quickStartStep2Title": "2. Základný postup",
-  "quickStartStep2Desc": "Vytvorte si vlastné vzdelávacie kartičky v poradí: Vstup (mikrofón/klávesnica) -> Preklad -> Uloženie.",
-  "quickStartStep3Title": "3. Využívanie režimov",
-  "quickStartStep3Desc": "Precvičujte si prostredníctvom chatu a cvičte výslovnosť priamym vyslovovaním textu na karte Cvičenie výslovnosti.",
-  "noteGuidance": "Tu zadávate ďalšie podrobnosti pre presnejší preklad"
+  "yourPronunciation": "Vaša výslovnosť"
 }

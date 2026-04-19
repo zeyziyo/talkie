@@ -9,53 +9,20 @@ class AppLocalizationsCa extends AppLocalizations {
   AppLocalizationsCa([String locale = 'ca']) : super(locale);
 
   @override
-  String get basicWords => 'Repositori bàsic de paraules';
-
-  @override
-  String get inputLanguage => 'Idioma d\'entrada';
-
-  @override
-  String get translationLanguage => 'Idioma de traducció';
-
-  @override
-  String get simplifiedGuidance =>
-      'Transforma converses quotidianes a un idioma estranger a l\'instant! Talkie registra la teva vida lingüística.';
-
-  @override
-  String get noDataForLanguage =>
-      'No hi ha dades d\'aprenentatge per a l\'idioma seleccionat a la base de dades local. Descarregueu les dades o seleccioneu un altre idioma.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Cancel·la';
-
-  @override
   String get accuracy => 'Precisió';
-
-  @override
-  String get ttsMissing =>
-      'No s\'ha instal·lat el motor de veu per a aquest idioma al dispositiu.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Instal·leu les dades d\'idioma a Configuració d\'Android > TTS de Google.';
 
   @override
   String get adLoading =>
       'S\'està carregant l\'anunci. Torna-ho a provar més tard.';
 
   @override
-  String get addNewSubject => 'Afegeix un títol nou';
+  String get add => 'Afegeix';
 
   @override
-  String get addParticipant => 'Afegir participant';
+  String get addNew => 'Afegeix-ne un de nou';
+
+  @override
+  String get addNewSubject => 'Afegeix un títol nou';
 
   @override
   String get addTagHint => 'Afegeix una etiqueta...';
@@ -88,6 +55,12 @@ class AppLocalizationsCa extends AppLocalizations {
   String get basicWordRepository => 'Repositori bàsic de paraules';
 
   @override
+  String get basicWords => 'Repositori bàsic de paraules';
+
+  @override
+  String get cancel => 'Cancel·la';
+
+  @override
   String get caseObject => 'Objecte';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsCa extends AppLocalizations {
   String get caseSubject => 'Nominatiu';
 
   @override
-  String get chatAiChat => 'Xat';
-
-  @override
-  String get chatAllConversations => 'Totes les converses';
-
-  @override
-  String get chatChoosePersona => 'Selecciona una persona';
-
-  @override
-  String get chatEndMessage => 'Vols finalitzar la conversa?';
-
-  @override
-  String get chatEndTitle => 'Finalitza i desa la conversa';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Error al xerrar: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Extret de la conversa ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Historial de xat';
-
-  @override
-  String get chatNew => 'Xat nou';
-
-  @override
-  String get chatNewChat => 'Xat nou';
-
-  @override
-  String get chatNoConversations => 'Encara no hi ha cap conversa';
-
-  @override
-  String get chatSearchHint => 'Cerca pel títol de la conversa...';
-
-  @override
-  String get chatNoteSearchHint => 'Cerca a les notes...';
-
-  @override
-  String get chatSaveAndExit => 'Desa i surt';
-
-  @override
-  String get chatStartNewPrompt => 'Comença una conversa nova per practicar!';
-
-  @override
-  String get chatTypeHint => 'Escriu un missatge...';
-
-  @override
-  String get chatUntitled => 'Xat sense títol';
-
-  @override
   String get checking => 'S\'està comprovant...';
 
   @override
@@ -168,13 +86,6 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Vols suprimir aquest enregistrament d\'estudi?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Vols suprimir aquesta conversa?\nNo podràs recuperar-la.';
-
-  @override
-  String get confirmDeleteParticipant => 'Voleu suprimir aquest participant?';
 
   @override
   String get contextTagHint =>
@@ -215,23 +126,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get deleteRecord => 'Suprimeix l\'enregistrament';
 
   @override
-  String get dialogueQuestDesc =>
-      'Practica la conversa mitjançant una obra de situació. Selecciona la resposta adequada i digues-la.';
-
-  @override
-  String get dialogueQuestTitle => 'Cerca de diàlegs';
-
-  @override
-  String get disambiguationPrompt => 'Amb quin significat vols traduir?';
-
-  @override
-  String get disambiguationTitle => 'Selecciona el significat';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'No teniu cap compte?';
-
-  @override
-  String get editParticipant => 'Editar participant';
 
   @override
   String get email => 'Correu electrònic';
@@ -239,6 +137,9 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Aquest correu electrònic ja està registrat. Si us plau, inicia la sessió o recupera la contrasenya.';
+
+  @override
+  String get enterNameHint => 'Introdueix el nom';
 
   @override
   String get enterNewSubjectName => 'Introdueix un títol nou';
@@ -279,6 +180,9 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get errors => 'Errors:';
+
+  @override
+  String get extractedText => 'Text extret';
 
   @override
   String get female => 'Dona';
@@ -338,12 +242,6 @@ class AppLocalizationsCa extends AppLocalizations {
   String get gender => 'Gènere';
 
   @override
-  String get labelFilterMaterial => 'Material';
-
-  @override
-  String get labelFilterTag => 'Etiqueta';
-
-  @override
   String get generalTags => 'Etiquetes generals';
 
   @override
@@ -356,19 +254,8 @@ class AppLocalizationsCa extends AppLocalizations {
   String get googleContinue => 'Continua amb Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Importa conjunts de diàlegs complets amb fitxers JSON.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• Estructura JSON: Utilitza l\'array `dialogues` en comptes d\'`entries`\n• Recuperació automàtica: Es restauren el títol del diàleg, la persona i l\'ordre dels missatges.\n• Ubicació: Els diàlegs importats apareixen a la pestanya \'Historial\' del mode de xat amb IA.';
-
-  @override
   String get helpJsonDesc =>
       'Segueix aquest format per importar material d\'aprenentatge en fitxers JSON que s\'utilitzaran al Mode 3:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Diàleg';
 
   @override
   String get helpJsonTypeSentence => 'Frase';
@@ -401,12 +288,12 @@ class AppLocalizationsCa extends AppLocalizations {
       '• Selecció de materials: Selecciona la col·lecció de materials que vols estudiar\n• Configuració de l\'interval: Ajusta el temps d\'espera entre frases amb els botons [-] [+](3 segons ~ 60 segons)\n• Comença/Atura: Controla la sessió de shadowing\n• Parla: Escolta la veu i repeteix\n• Comentaris: Puntuació de precisió (0-100) i visualització del color\n• Criteris de cerca: Filtra l\'objectiu de la pràctica per etiqueta, element recent o lletra inicial';
 
   @override
-  String get helpModeChatDesc =>
-      'Practiqueu la conversa real xerrant amb una IA personalitzada.';
+  String get helpNote =>
+      'Anota lliurement el significat de les paraules, exemples o situacions.';
 
   @override
-  String get helpModeChatDetails =>
-      '• Xat amb IA: Practica converses reals amb una persona al menú \'Xat\' a la barra de pestanyes inferior.\n• Configuració de la persona: Especifica lliurement el gènere, el nom i el codi d\'idioma de l\'interlocutor.\n• Situació de joc de rol GPS: Reconeix la teva ubicació actual i recomana temes de conversa adequats per al lloc.\n• 2 idiomes: La resposta de la IA es mostra amb la traducció per maximitzar l\'efecte d\'aprenentatge.\n• Gestió de l\'historial: Filtra l\'historial de converses passades i desa missatges específics de la conversa com a material d\'aprenentatge';
+  String get helpNotebook =>
+      'Selecciona la carpeta on guardar els resultats traduïts.';
 
   @override
   String get helpTabJson => 'Format JSON';
@@ -421,6 +308,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get helpTabTour => 'Fer un recorregut';
 
   @override
+  String get helpTag =>
+      'Introdueix paraules clau per classificar o cercar més tard.';
+
+  @override
   String get helpTitle => 'Ajuda i guia';
 
   @override
@@ -429,6 +320,15 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get hide => 'Amaga';
+
+  @override
+  String get hintNoteExample => 'Ex: Context, homònims, etc.';
+
+  @override
+  String get hintTagExample => 'Ex: Negocis, viatges...';
+
+  @override
+  String get homeTab => 'Traducció';
 
   @override
   String importAdded(int count) {
@@ -441,23 +341,6 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Ja existeix un material amb el mateix títol. Canvieu el títol i torneu-ho a provar.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -473,6 +356,11 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return 'S\'han importat $files fitxers, $entries entrades.';
+  }
+
+  @override
   String get importJsonFile => 'Importa el fitxer JSON';
 
   @override
@@ -484,12 +372,31 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Fitxer JSON únic';
+
+  @override
+  String get importSourceFolder =>
+      'Carpeta (estructura de biblioteca per idioma)';
+
+  @override
+  String get importSourceTitle => 'Selecciona la font d\'importació';
+
+  @override
+  String get importSourceZip => 'Fitxer ZIP (carpeta comprimida)';
+
+  @override
   String importTotal(int count) {
     return 'Total: $count';
   }
 
   @override
   String get importing => 'S\'està important...';
+
+  @override
+  String get inputContent => 'Contingut d\'entrada';
+
+  @override
+  String get inputLanguage => 'Idioma d\'entrada';
 
   @override
   String get inputModeTitle => 'Entrada';
@@ -506,19 +413,22 @@ class AppLocalizationsCa extends AppLocalizations {
   String get kakaoContinue => 'Continua amb Kakao';
 
   @override
-  String get labelLangCode => 'Codi d\'idioma (p. ex., en-US, ko-KR)';
+  String get labelDetails => 'Configuració detallada';
 
   @override
-  String get labelName => 'Nom';
+  String get labelFilterMaterial => 'Material';
+
+  @override
+  String get labelFilterTag => 'Etiqueta';
+
+  @override
+  String get labelLangCode => 'Codi d\'idioma (p. ex., en-US, ko-KR)';
 
   @override
   String get labelNote => 'Nota';
 
   @override
   String get labelPOS => 'Categoria gramatical';
-
-  @override
-  String get labelRole => 'Rol';
 
   @override
   String get labelSentence => 'Frase';
@@ -569,9 +479,6 @@ class AppLocalizationsCa extends AppLocalizations {
   String get listening => 'S\'està escoltant...';
 
   @override
-  String get loadingParticipants => 'S\'estan carregant els participants...';
-
-  @override
   String get location => 'Ubicació';
 
   @override
@@ -591,9 +498,6 @@ class AppLocalizationsCa extends AppLocalizations {
   String get male => 'Home';
 
   @override
-  String get manageParticipants => 'Gestiona els participants';
-
-  @override
   String get manual => 'Entrada manual';
 
   @override
@@ -601,9 +505,6 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get materialInfo => 'Informació del material';
-
-  @override
-  String get me => 'Jo';
 
   @override
   String get menuDeviceImport => 'Importa material des del dispositiu';
@@ -672,29 +573,21 @@ class AppLocalizationsCa extends AppLocalizations {
   String get neutral => 'Neutre';
 
   @override
+  String get newNotebookTitle => 'Nom del nou quadern';
+
+  @override
   String get newSubjectName => 'Nou títol de la llista de vocabulari/frases';
 
   @override
   String get next => 'Següent';
 
   @override
-  String get noDialogueHistory => 'No hi ha cap historial de diàlegs.';
-
-  @override
-  String get noInternetWarningMic =>
-      'No hi ha connexió a Internet. El reconeixement de veu pot no funcionar fora de línia.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'No hi ha connexió a Internet. La traducció no funcionarà fora de línia. Utilitzeu el mode de repàs.';
+  String get noDataForLanguage =>
+      'No hi ha dades d\'aprenentatge per a l\'idioma seleccionat a la base de dades local. Descarregueu les dades o seleccioneu un altre idioma.';
 
   @override
   String get noMaterialsInCategory =>
       'No hi ha materials en aquesta categoria.';
-
-  @override
-  String get noParticipantsFound =>
-      'No s\'ha trobat cap participant registrat.';
 
   @override
   String get noRecords =>
@@ -716,6 +609,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get notSelected => '- Sense seleccionar -';
 
   @override
+  String get noteGuidance =>
+      'On introduïu detalls addicionals per a una traducció més precisa';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Comproveu la vostra connexió a Internet o torneu-ho a provar més tard.';
 
@@ -727,35 +624,19 @@ class AppLocalizationsCa extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'No hi ha materials.';
 
   @override
-  String get participantDeleted => 'S\'ha suprimit el participant.';
-
-  @override
-  String get participantRename => 'Canvia el nom del participant';
-
-  @override
-  String get partner => 'Soci';
-
-  @override
-  String get partnerMode => 'Mode soci';
+  String get openSettings => 'Obre la configuració';
 
   @override
   String get password => 'Contrasenya';
 
   @override
-  String get passwordTooShort =>
-      'La contrasenya ha de tenir almenys 6 caràcters.';
+  String get passwordTooShort => 'La contrasenya és massa curta';
 
   @override
   String get perfect => 'Perfecte!';
 
   @override
-  String get personaFriend => 'Amic local';
-
-  @override
-  String get personaGuide => 'Guia turístic';
-
-  @override
-  String get personaTeacher => 'Professor d\'anglès';
+  String get pickGallery => 'Selecciona de la galeria';
 
   @override
   String get playAgain => 'Torna a jugar';
@@ -775,6 +656,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get posAdverb => 'Adverbi';
 
   @override
+  String get posArticle => 'Article';
+
+  @override
   String get posConjunction => 'Conjunció';
 
   @override
@@ -782,6 +666,9 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get posNoun => 'Substantiu';
+
+  @override
+  String get posParticle => 'Partícula';
 
   @override
   String get posPreposition => 'Preposició';
@@ -799,9 +686,33 @@ class AppLocalizationsCa extends AppLocalizations {
   String get practiceWordsOnly => 'Practica només les paraules';
 
   @override
+  String get processing => 'Processant...';
+
+  @override
   String progress(int current, int total) {
     return 'Progrés: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Primer, especifica el teu idioma i l\'idioma que vols aprendre a Menú > Configuració d\'idioma.';
+
+  @override
+  String get quickStartStep1Title => '1. Configura l\'idioma';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Crea les teves pròpies targetes d\'aprenentatge seguint l\'ordre: entrada (micròfon/teclat) -> traducció -> desar.';
+
+  @override
+  String get quickStartStep2Title => '2. Flux bàsic';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Practica xerrant i practica la pronunciació directament a la pestanya d\'exercicis de pronunciació.';
+
+  @override
+  String get quickStartStep3Title => '3. Utilitza els modes';
 
   @override
   String recentNItems(int count) {
@@ -826,6 +737,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get refresh => 'Actualitza';
 
   @override
+  String get requestTranslation => 'Sol·licitar traducció';
+
+  @override
   String get reset => 'Restableix';
 
   @override
@@ -846,16 +760,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get reviewModeTitle => 'Repàs';
 
   @override
-  String get roleAi => 'IA';
-
-  @override
-  String get roleThirdParty => 'Tercer';
-
-  @override
-  String get roleUser => 'Usuari';
-
-  @override
   String get save => 'Desa';
+
+  @override
+  String get saveAsSentence => 'Desa com a frase';
+
+  @override
+  String get saveAsWord => 'Desa com a paraula';
 
   @override
   String get saveData => 'Desa les dades';
@@ -866,6 +777,9 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Desa a l\'historial d\'escanejos';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Prova de desar traduccions des del mode de cerca';
 
@@ -874,6 +788,12 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get saving => 'S\'està desant...';
+
+  @override
+  String get scanInstructions => 'Selecciona una imatge per escanejar';
+
+  @override
+  String get scanLabel => 'Escanejar';
 
   @override
   String score(String score) {
@@ -921,16 +841,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get selectPOS => 'Selecciona una categoria';
 
   @override
-  String get selectParticipants => 'Selecciona participants';
-
-  @override
-  String get selectSentenceType => 'Selecciona un tipus de frase';
-
-  @override
   String get selectStudyMaterial => 'Selecciona el material d\'estudi';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Frase';
@@ -939,101 +850,66 @@ class AppLocalizationsCa extends AppLocalizations {
   String get signUp => 'Registra\'t';
 
   @override
-  String get similarTextFound => 'S\'ha trobat un text similar';
+  String get simplifiedGuidance =>
+      'Transforma converses quotidianes a un idioma estranger a l\'instant! Talkie registra la teva vida lingüística.';
 
   @override
-  String get skip => 'Omet';
-
-  @override
-  String get source => 'Font:';
-
-  @override
-  String get sourceLanguage => 'Idioma original';
-
-  @override
-  String get sourceLanguageLabel => 'El meu idioma (Source)';
-
-  @override
-  String get speakNow => 'Parla ara!';
-
-  @override
-  String get speaker => 'Parlant';
-
-  @override
-  String get speakerSelect => 'Selecciona el parlant';
-
-  @override
-  String get speakingPractice => 'Pràctica de parla';
-
-  @override
-  String get startChat => 'Inicia la conversa';
-
-  @override
-  String get startPractice => 'Comença la pràctica';
+  String get sourceLanguageLabel => 'El meu idioma';
 
   @override
   String get startTutorial => 'Inicia el tutorial';
 
   @override
-  String get startWarning => 'Atenció';
-
-  @override
   String get startsWith => 'Comença amb';
 
   @override
-  String get statusCheckEmail =>
-      'Si us plau, verifica el teu correu electrònic per completar l\'autenticació.';
+  String get statusCheckEmail => 'Si us plau, revisa el teu correu electrònic';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'S\'està baixant: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Error d\'importació: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name s\'ha importat correctament';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'S\'ha cancel·lat l\'inici de sessió.';
-
-  @override
-  String statusLoginFailed(Object error) {
-    return 'Error en iniciar la sessió: $error';
+  String statusLoginFailed(String error) {
+    return 'Error d\'inici de sessió: $error';
   }
 
   @override
-  String get statusLoginSuccess => 'S\'ha iniciat la sessió correctament.';
+  String get statusLoginSuccess => 'Sessió iniciada correctament';
 
   @override
-  String get statusLogoutSuccess => 'S\'ha tancat la sessió.';
+  String get statusLogoutSuccess => 'Sessió tancada correctament';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Error de registre: $error';
+  String statusRequestFailed(String error) {
+    return 'Error en la sol·licitud de traducció: $error';
   }
 
   @override
-  String get statusSigningUp => 'S\'està registrant...';
+  String get statusRequestSuccess =>
+      'La sol·licitud de traducció s\'ha completat.';
 
   @override
   String get stopPractice => 'Atura la pràctica';
 
   @override
-  String get studyComplete => 'S\'ha completat l\'estudi';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'El material seleccionat no és compatible amb l\'idioma d\'estudi actual ($targetLang) i no es pot desar localment. Voleu sol·licitar una traducció?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Enregistraments d\'estudi ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Idioma d\'estudi no compatible';
 
   @override
   String get styleFormal => 'Formal';
@@ -1048,22 +924,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get styleSlang => 'Argot';
 
   @override
-  String get subject => 'Assumpte:';
-
-  @override
   String get swapLanguages => 'Canvia d\'idioma';
 
   @override
-  String get switchToAi => 'Canvia al mode IA';
-
-  @override
-  String get switchToPartner => 'Canvia al mode soci';
-
-  @override
   String get syncingData => 'Sincronitzant dades...';
-
-  @override
-  String get tabConversation => 'Conversa';
 
   @override
   String tabReview(int count) {
@@ -1127,6 +991,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tooltipSearch => 'Cerca';
 
   @override
+  String get tooltipSettingsConfirm => 'Confirma la configuració';
+
+  @override
   String get tooltipSpeaking => 'Parla';
 
   @override
@@ -1139,6 +1006,9 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get translate => 'Tradueix';
+
+  @override
+  String get translateNow => 'Tradueix ara';
 
   @override
   String get translating => 'S\'està traduint...';
@@ -1155,6 +1025,9 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Idioma de traducció';
+
+  @override
   String get translationLimitExceeded => 'S\'ha superat el límit de traducció';
 
   @override
@@ -1168,17 +1041,25 @@ class AppLocalizationsCa extends AppLocalizations {
   String get translationRefilled => 'S\'han recarregat 5 traduccions!';
 
   @override
+  String get translationResult => 'Resultat de la traducció';
+
+  @override
   String get translationResultHint => 'Resultat de la traducció - editable';
 
   @override
   String get tryAgain => 'Torna-ho a provar';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Practica la conversa real amb una persona d\'IA.';
+  String get ttsInstallGuide =>
+      'Instal·leu les dades d\'idioma a Configuració d\'Android > TTS de Google.';
 
   @override
-  String get tutorialAiChatTitle => 'Xat amb IA';
+  String get ttsMissing =>
+      'No s\'ha instal·lat el motor de veu per a aquest idioma al dispositiu.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'La configuració predeterminada d\'aquest dispositiu no admet la sortida de veu per a aquest idioma.';
 
   @override
   String get tutorialContextDesc =>
@@ -1297,7 +1178,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get typeExclamation => 'Exclamació';
 
   @override
+  String get typeIdiom => 'Expressió idiomàtica';
+
+  @override
   String get typeImperative => 'Imperatiu';
+
+  @override
+  String get typeProverb => 'Proverbi';
 
   @override
   String get typeQuestion => 'Pregunta';
@@ -1312,6 +1199,11 @@ class AppLocalizationsCa extends AppLocalizations {
   String get useExistingText => 'Utilitza el text existent';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Consulta la guia en línia';
 
   @override
@@ -1319,6 +1211,16 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Mira l\'anunci i recarrega (+5 vegades)';
+
+  @override
+  String get welcomeButton => 'Comença';
+
+  @override
+  String get welcomeDesc =>
+      'Benvingut/da a Talkie! Admetem més de 80 idiomes d\'arreu del món amb una integritat del 100 %. Gaudeix d\'una experiència d\'aprenentatge perfecta amb nous dissenys 3D premium i rendiment optimitzat.';
+
+  @override
+  String get welcomeTitle => 'Benvingut a Talkie!';
 
   @override
   String get word => 'Paraula';
@@ -1335,114 +1237,4 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'La teva pronunciació';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'La configuració predeterminada d\'aquest dispositiu no admet la sortida de veu per a aquest idioma.';
-
-  @override
-  String get homeTab => 'Traducció';
-
-  @override
-  String get welcomeTitle => 'Benvingut a Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Benvingut/da a Talkie! Admetem més de 80 idiomes d\'arreu del món amb una integritat del 100 %. Gaudeix d\'una experiència d\'aprenentatge perfecta amb nous dissenys 3D premium i rendiment optimitzat.';
-
-  @override
-  String get welcomeButton => 'Comença';
-
-  @override
-  String get labelDetails => 'Configuració detallada';
-
-  @override
-  String get translationResult => 'Resultat de la traducció';
-
-  @override
-  String get inputContent => 'Contingut d\'entrada';
-
-  @override
-  String get translateNow => 'Tradueix ara';
-
-  @override
-  String get tooltipSettingsConfirm => 'Confirma la configuració';
-
-  @override
-  String get hintNoteExample => 'Ex: Context, homònims, etc.';
-
-  @override
-  String get hintTagExample => 'Ex: Negocis, viatges...';
-
-  @override
-  String get addNew => 'Afegeix-ne un de nou';
-
-  @override
-  String get newNotebookTitle => 'Nom del nou quadern';
-
-  @override
-  String get enterNameHint => 'Introdueix el nom';
-
-  @override
-  String get add => 'Afegeix';
-
-  @override
-  String get openSettings => 'Obre la configuració';
-
-  @override
-  String get helpNotebook =>
-      'Selecciona la carpeta on guardar els resultats traduïts.';
-
-  @override
-  String get helpNote =>
-      'Anota lliurement el significat de les paraules, exemples o situacions.';
-
-  @override
-  String get helpTag =>
-      'Introdueix paraules clau per classificar o cercar més tard.';
-
-  @override
-  String get requestTranslation => 'Sol·licitar traducció';
-
-  @override
-  String get statusRequestSuccess =>
-      'La sol·licitud de traducció s\'ha completat.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Error en la sol·licitud de traducció: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Idioma d\'estudi no compatible';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'El material seleccionat no és compatible amb l\'idioma d\'estudi actual ($targetLang) i no es pot desar localment. Voleu sol·licitar una traducció?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Configura l\'idioma';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Primer, especifica el teu idioma i l\'idioma que vols aprendre a Menú > Configuració d\'idioma.';
-
-  @override
-  String get quickStartStep2Title => '2. Flux bàsic';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Crea les teves pròpies targetes d\'aprenentatge seguint l\'ordre: entrada (micròfon/teclat) -> traducció -> desar.';
-
-  @override
-  String get quickStartStep3Title => '3. Utilitza els modes';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Practica xerrant i practica la pronunciació directament a la pestanya d\'exercicis de pronunciació.';
-
-  @override
-  String get noteGuidance =>
-      'On introduïu detalls addicionals per a una traducció més precisa';
 }

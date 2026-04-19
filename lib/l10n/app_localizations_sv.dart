@@ -9,52 +9,19 @@ class AppLocalizationsSv extends AppLocalizations {
   AppLocalizationsSv([String locale = 'sv']) : super(locale);
 
   @override
-  String get basicWords => 'Grundläggande ordlista';
-
-  @override
-  String get inputLanguage => 'Inputspråk';
-
-  @override
-  String get translationLanguage => 'Översättningsspråk';
-
-  @override
-  String get simplifiedGuidance =>
-      'Konvertera vardagliga konversationer till ett främmande språk på ett ögonblick! Talkie kommer att registrera ditt språkliv.';
-
-  @override
-  String get noDataForLanguage =>
-      'Ingen läromedel för det valda språket finns i den lokala databasen. Ladda ner material eller välj ett annat språk.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Avbryt';
-
-  @override
   String get accuracy => 'Noggrannhet';
-
-  @override
-  String get ttsMissing =>
-      'Den här språkets röstmotor är inte installerad på enheten.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Installera språkdata under Android-inställningar > Google TTS.';
 
   @override
   String get adLoading => 'Laddar annons. Försök igen om en stund.';
 
   @override
-  String get addNewSubject => 'Lägg till nytt namn';
+  String get add => 'Lägg till';
 
   @override
-  String get addParticipant => 'Lägg till deltagare';
+  String get addNew => 'Lägg till ny';
+
+  @override
+  String get addNewSubject => 'Lägg till nytt namn';
 
   @override
   String get addTagHint => 'Lägg till tagg...';
@@ -88,6 +55,12 @@ class AppLocalizationsSv extends AppLocalizations {
   String get basicWordRepository => 'Grundläggande ordlista';
 
   @override
+  String get basicWords => 'Grundläggande ordlista';
+
+  @override
+  String get cancel => 'Avbryt';
+
+  @override
   String get caseObject => 'Objekt';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String get caseSubject => 'Subjekt';
 
   @override
-  String get chatAiChat => 'Chatt';
-
-  @override
-  String get chatAllConversations => 'Alla konversationer';
-
-  @override
-  String get chatChoosePersona => 'Välj persona';
-
-  @override
-  String get chatEndMessage => 'Vill du avsluta konversationen?';
-
-  @override
-  String get chatEndTitle => 'Avsluta och spara konversation';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Chatt misslyckades: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Utdrag från konversation ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Chatthistorik';
-
-  @override
-  String get chatNew => 'Ny chatt';
-
-  @override
-  String get chatNewChat => 'Ny chatt';
-
-  @override
-  String get chatNoConversations => 'Inga konversationer ännu';
-
-  @override
-  String get chatSearchHint => 'Sök efter konversationstitel...';
-
-  @override
-  String get chatNoteSearchHint => 'Sök i anteckningar...';
-
-  @override
-  String get chatSaveAndExit => 'Spara och avsluta';
-
-  @override
-  String get chatStartNewPrompt => 'Starta en ny konversation för att öva!';
-
-  @override
-  String get chatTypeHint => 'Skriv ett meddelande...';
-
-  @override
-  String get chatUntitled => 'Namnlös konversation';
-
-  @override
   String get checking => 'Kontrollerar...';
 
   @override
@@ -168,13 +86,6 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Är du säker på att du vill ta bort denna post?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Vill du radera den här konversationen?\nRaderade konversationer kan inte återställas.';
-
-  @override
-  String get confirmDeleteParticipant => 'Vill du ta bort den här deltagaren?';
 
   @override
   String get contextTagHint =>
@@ -214,23 +125,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get deleteRecord => 'Ta bort post';
 
   @override
-  String get dialogueQuestDesc =>
-      'Öva dialoger genom rollspel. Välj rätt svar och säg det.';
-
-  @override
-  String get dialogueQuestTitle => 'Dialoguppdrag';
-
-  @override
-  String get disambiguationPrompt => 'Vilken betydelse vill du översätta?';
-
-  @override
-  String get disambiguationTitle => 'Välj betydelse';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Har du inget konto?';
-
-  @override
-  String get editParticipant => 'Redigera deltagare';
 
   @override
   String get email => 'E-post';
@@ -238,6 +136,9 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'E-postadressen är redan registrerad. Logga in eller använd Återställ lösenord.';
+
+  @override
+  String get enterNameHint => 'Ange ett namn';
 
   @override
   String get enterNewSubjectName => 'Ange nytt namn';
@@ -277,6 +178,9 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get errors => 'Fel:';
+
+  @override
+  String get extractedText => 'Hittad text';
 
   @override
   String get female => 'Kvinna';
@@ -336,12 +240,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String get gender => 'Kön';
 
   @override
-  String get labelFilterMaterial => 'Material';
-
-  @override
-  String get labelFilterTag => 'Taggar';
-
-  @override
   String get generalTags => 'Allmänna taggar';
 
   @override
@@ -354,18 +252,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get googleContinue => 'Fortsätt med Google';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Importera en hel dialoguppsättning med en JSON-fil.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc => 'För import i Läge 3, skapa JSON:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Dialog (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'Mening (Sentence)';
@@ -398,12 +285,12 @@ class AppLocalizationsSv extends AppLocalizations {
       '• Välj: Välj paket\n• Intervall: [-] [+] väntetid (3s-60s)\n• Start/Stopp: Kontrollera session\n• Tala: Lyssna och upprepa\n• Poäng: Noggrannhet (0-100)\n• Försök: Knapp om röst ej hittas';
 
   @override
-  String get helpModeChatDesc =>
-      'Öva konversationsfärdigheter genom att chatta med en AI-persona.';
+  String get helpNote =>
+      'Skriv fritt ner ordets betydelse, exempelmeningar, situationer etc.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI-chatt: Öva på verkliga konversationer med en persona i menyn \'Chatt\' i den nedre flikfältet\n• Personainställningar: Ange fritt motpartens kön, namn och språkkod\n• GPS-situationskomedi: Känner igen min nuvarande plats och rekommenderar samtalsämnen som passar platsen\n• Tvåspråkig: AI:s svar visas med översättning för att maximera inlärningseffekten\n• Logghantering: Filtrera tidigare konversationshistorik och spara specifika meddelanden i konversationen som läromedel';
+  String get helpNotebook =>
+      'Välj mappen där du vill spara de översatta resultaten.';
 
   @override
   String get helpTabJson => 'JSON-format';
@@ -418,6 +305,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get helpTabTour => 'Tur';
 
   @override
+  String get helpTag => 'Ange sökord för att senare kategorisera eller söka.';
+
+  @override
   String get helpTitle => 'Hjälp & Guide';
 
   @override
@@ -426,6 +316,15 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get hide => 'Dölj';
+
+  @override
+  String get hintNoteExample => 'Ex: Kontext, homonymer etc.';
+
+  @override
+  String get hintTagExample => 'Ex: Affärer, Resor...';
+
+  @override
+  String get homeTab => 'Översätt';
 
   @override
   String importAdded(int count) {
@@ -438,23 +337,6 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'En resurs med samma namn finns redan. Försök igen efter att ha ändrat namnet.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -470,6 +352,11 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files filer, $entries poster importerade.';
+  }
+
+  @override
   String get importJsonFile => 'Importera JSON';
 
   @override
@@ -481,12 +368,30 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'Enkel JSON-fil';
+
+  @override
+  String get importSourceFolder => 'Mapp (språkspecifik biblioteksstruktur)';
+
+  @override
+  String get importSourceTitle => 'Välj importkälla';
+
+  @override
+  String get importSourceZip => 'ZIP-fil (komprimerad mapp)';
+
+  @override
   String importTotal(int count) {
     return 'Totalt: $count';
   }
 
   @override
   String get importing => 'Importerar...';
+
+  @override
+  String get inputContent => 'Innehåll att översätta';
+
+  @override
+  String get inputLanguage => 'Inputspråk';
 
   @override
   String get inputModeTitle => 'Inmatning';
@@ -503,19 +408,22 @@ class AppLocalizationsSv extends AppLocalizations {
   String get kakaoContinue => 'Fortsätt med Kakao';
 
   @override
-  String get labelLangCode => 'Språkkod (t.ex. en-US, ko-KR)';
+  String get labelDetails => 'Detaljerade inställningar';
 
   @override
-  String get labelName => 'Namn';
+  String get labelFilterMaterial => 'Material';
+
+  @override
+  String get labelFilterTag => 'Taggar';
+
+  @override
+  String get labelLangCode => 'Språkkod (t.ex. en-US, ko-KR)';
 
   @override
   String get labelNote => 'Anteckning';
 
   @override
   String get labelPOS => 'Ordkategori';
-
-  @override
-  String get labelRole => 'Roll';
 
   @override
   String get labelSentence => 'Mening';
@@ -566,9 +474,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String get listening => 'Lyssnar...';
 
   @override
-  String get loadingParticipants => 'Läser in deltagare...';
-
-  @override
   String get location => 'Plats';
 
   @override
@@ -587,9 +492,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String get male => 'Man';
 
   @override
-  String get manageParticipants => 'Hantera deltagare';
-
-  @override
   String get manual => 'Manuell inmatning';
 
   @override
@@ -597,9 +499,6 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get materialInfo => 'Materialinfo';
-
-  @override
-  String get me => 'Jag';
 
   @override
   String get menuDeviceImport => 'Importera material från enheten';
@@ -667,28 +566,21 @@ class AppLocalizationsSv extends AppLocalizations {
   String get neutral => 'Neutral';
 
   @override
+  String get newNotebookTitle => 'Namn på ny anteckningsbok';
+
+  @override
   String get newSubjectName => 'Nytt ämnesnamn/meningssamling';
 
   @override
   String get next => 'Nästa';
 
   @override
-  String get noDialogueHistory => 'Ingen dialoghistorik.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Ingen internetanslutning. Röstigenkänning kanske inte är tillgänglig i offline-läge.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Ingen internetanslutning. Översättningsfunktionen är inte tillgänglig i offline-läge. Använd repetitionsläget istället.';
+  String get noDataForLanguage =>
+      'Ingen läromedel för det valda språket finns i den lokala databasen. Ladda ner material eller välj ett annat språk.';
 
   @override
   String get noMaterialsInCategory =>
       'Det finns inga resurser i den här kategorin.';
-
-  @override
-  String get noParticipantsFound => 'Inga deltagare hittades.';
 
   @override
   String get noRecords => 'Inga poster för valt språk';
@@ -709,6 +601,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get notSelected => '- Inget valt -';
 
   @override
+  String get noteGuidance =>
+      'Där du anger ytterligare information för en mer exakt översättning';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Kontrollera din internetanslutning eller försök igen senare.';
 
@@ -719,16 +615,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Inga resurser tillgängliga.';
 
   @override
-  String get participantDeleted => 'Deltagaren har tagits bort.';
-
-  @override
-  String get participantRename => 'Byt namn på deltagare';
-
-  @override
-  String get partner => 'Partner';
-
-  @override
-  String get partnerMode => 'Partnerläge';
+  String get openSettings => 'Öppna inställningar';
 
   @override
   String get password => 'Lösenord';
@@ -740,13 +627,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get perfect => 'Perfekt!';
 
   @override
-  String get personaFriend => 'Lokal vän';
-
-  @override
-  String get personaGuide => 'Reseguide';
-
-  @override
-  String get personaTeacher => 'Engelsklärare';
+  String get pickGallery => 'Välj från galleri';
 
   @override
   String get playAgain => 'Spela igen';
@@ -766,6 +647,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get posAdverb => 'Adverb';
 
   @override
+  String get posArticle => 'Artikel';
+
+  @override
   String get posConjunction => 'Konjunktion';
 
   @override
@@ -773,6 +657,9 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get posNoun => 'Substantiv';
+
+  @override
+  String get posParticle => 'Partikel';
 
   @override
   String get posPreposition => 'Preposition';
@@ -790,9 +677,33 @@ class AppLocalizationsSv extends AppLocalizations {
   String get practiceWordsOnly => 'Öva bara ord';
 
   @override
+  String get processing => 'Bearbetar...';
+
+  @override
   String progress(int current, int total) {
     return 'Framsteg: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Gå till Meny > Språkinställningar och välj först ditt språk och inlärningsspråk.';
+
+  @override
+  String get quickStartStep1Title => '1. Ställ in språk';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Skapa dina egna studiekort i följande ordning: Inmatning (mikrofon/tangentbord) -> Översättning -> Spara.';
+
+  @override
+  String get quickStartStep2Title => '2. Grundläggande flöde';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Review translated words and sentences in your study list, and practice speaking directly in the pronunciation practice tab.';
+
+  @override
+  String get quickStartStep3Title => '3. Använd lägen';
 
   @override
   String recentNItems(int count) {
@@ -817,6 +728,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get refresh => 'Uppdatera';
 
   @override
+  String get requestTranslation => 'Begär översättning';
+
+  @override
   String get reset => 'Återställ';
 
   @override
@@ -837,16 +751,13 @@ class AppLocalizationsSv extends AppLocalizations {
   String get reviewModeTitle => 'Repetition';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Tredje part';
-
-  @override
-  String get roleUser => 'Användare';
-
-  @override
   String get save => 'Spara';
+
+  @override
+  String get saveAsSentence => 'Spara som mening';
+
+  @override
+  String get saveAsWord => 'Spara som ord';
 
   @override
   String get saveData => 'Spara';
@@ -857,6 +768,9 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Spara i skanningshistorik';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Vänligen spara översättningar från sökläge';
 
@@ -865,6 +779,12 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get saving => 'Sparar...';
+
+  @override
+  String get scanInstructions => 'Välj en bild att skanna';
+
+  @override
+  String get scanLabel => 'Skanna';
 
   @override
   String score(String score) {
@@ -911,16 +831,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get selectPOS => 'Välj ordklass';
 
   @override
-  String get selectParticipants => 'Välj deltagare';
-
-  @override
-  String get selectSentenceType => 'Välj meningstyp';
-
-  @override
   String get selectStudyMaterial => 'Välj Material';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Mening';
@@ -929,43 +840,14 @@ class AppLocalizationsSv extends AppLocalizations {
   String get signUp => 'Registrera dig';
 
   @override
-  String get similarTextFound => 'Liknande text hittades';
-
-  @override
-  String get skip => 'Hoppa över';
-
-  @override
-  String get source => 'Källa:';
-
-  @override
-  String get sourceLanguage => 'Källspråk';
+  String get simplifiedGuidance =>
+      'Konvertera vardagliga konversationer till ett främmande språk på ett ögonblick! Talkie kommer att registrera ditt språkliv.';
 
   @override
   String get sourceLanguageLabel => 'Source Language';
 
   @override
-  String get speakNow => 'Tala nu!';
-
-  @override
-  String get speaker => 'Talare';
-
-  @override
-  String get speakerSelect => 'Välj talare';
-
-  @override
-  String get speakingPractice => 'Talövning';
-
-  @override
-  String get startChat => 'Starta chatt';
-
-  @override
-  String get startPractice => 'Starta Övning';
-
-  @override
   String get startTutorial => 'Starta Tur';
-
-  @override
-  String get startWarning => 'Varning';
 
   @override
   String get startsWith => 'Börjar med';
@@ -975,28 +857,22 @@ class AppLocalizationsSv extends AppLocalizations {
       'Vänligen verifiera din e-postadress för att slutföra autentiseringen.';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Laddar ner: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Importen misslyckades: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name importerades';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Inloggningen avbröts.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'Inloggning misslyckades: $error';
   }
 
@@ -1007,23 +883,23 @@ class AppLocalizationsSv extends AppLocalizations {
   String get statusLogoutSuccess => 'Du har loggats ut.';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Registrering misslyckades: $error';
+  String statusRequestFailed(String error) {
+    return 'Översättningsförfrågan misslyckades: $error';
   }
 
   @override
-  String get statusSigningUp => 'Registrerar...';
+  String get statusRequestSuccess => 'Översättningsförfrågan har slutförts.';
 
   @override
   String get stopPractice => 'Stoppa';
 
   @override
-  String get studyComplete => 'Studerad';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Det valda materialet stöder inte det nuvarande inlärningsspråket ($targetLang) och kan inte sparas lokalt. Vill du begära en översättning?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Poster ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Språket stöds inte för inlärning';
 
   @override
   String get styleFormal => 'Formalitet';
@@ -1038,22 +914,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get styleSlang => 'Slang';
 
   @override
-  String get subject => 'Ämne:';
-
-  @override
   String get swapLanguages => 'Byt språk';
 
   @override
-  String get switchToAi => 'Byt till AI-läge';
-
-  @override
-  String get switchToPartner => 'Byt till Partnerläge';
-
-  @override
   String get syncingData => 'Synkroniserar data...';
-
-  @override
-  String get tabConversation => 'Konversation';
 
   @override
   String tabReview(int count) {
@@ -1116,6 +980,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tooltipSearch => 'Sök';
 
   @override
+  String get tooltipSettingsConfirm => 'Bekräfta inställningar';
+
+  @override
   String get tooltipSpeaking => 'Tal';
 
   @override
@@ -1128,6 +995,9 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get translate => 'Översätt';
+
+  @override
+  String get translateNow => 'Översätt nu';
 
   @override
   String get translating => 'Översätter...';
@@ -1144,6 +1014,9 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Översättningsspråk';
+
+  @override
   String get translationLimitExceeded =>
       'Översättningsgränsen har överskridits';
 
@@ -1158,16 +1031,25 @@ class AppLocalizationsSv extends AppLocalizations {
   String get translationRefilled => 'Du har fyllt på med 5 översättningar!';
 
   @override
+  String get translationResult => 'Översättningsresultat';
+
+  @override
   String get translationResultHint => 'Översättningsresultat - kan redigeras';
 
   @override
   String get tryAgain => 'Försök igen';
 
   @override
-  String get tutorialAiChatDesc => 'Öva verkliga samtal med en AI-persona.';
+  String get ttsInstallGuide =>
+      'Installera språkdata under Android-inställningar > Google TTS.';
 
   @override
-  String get tutorialAiChatTitle => 'AI-chatt';
+  String get ttsMissing =>
+      'Den här språkets röstmotor är inte installerad på enheten.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Den här enheten har inte stöd för röstutmatning för det här språket i sina standardinställningar.';
 
   @override
   String get tutorialContextDesc =>
@@ -1275,7 +1157,13 @@ class AppLocalizationsSv extends AppLocalizations {
   String get typeExclamation => 'Utropsmening';
 
   @override
+  String get typeIdiom => 'Idiom';
+
+  @override
   String get typeImperative => 'Imperativ';
+
+  @override
+  String get typeProverb => 'Ordspråk';
 
   @override
   String get typeQuestion => 'Fråga';
@@ -1290,6 +1178,11 @@ class AppLocalizationsSv extends AppLocalizations {
   String get useExistingText => 'Använd Befintlig';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Visa onlineguide';
 
   @override
@@ -1297,6 +1190,16 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Titta på annons och fyll på (+5)';
+
+  @override
+  String get welcomeButton => 'Kom igång';
+
+  @override
+  String get welcomeDesc =>
+      'Välkommen till Talkie! Vi stöder alla 80+ språk i världen med 100 % integritet och erbjuder en perfekt inlärningsupplevelse med ny premium 3D-design och optimerad prestanda.';
+
+  @override
+  String get welcomeTitle => 'Välkommen till Talkie!';
 
   @override
   String get word => 'Ord';
@@ -1313,112 +1216,4 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Ditt uttal';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Den här enheten har inte stöd för röstutmatning för det här språket i sina standardinställningar.';
-
-  @override
-  String get homeTab => 'Översätt';
-
-  @override
-  String get welcomeTitle => 'Välkommen till Talkie!';
-
-  @override
-  String get welcomeDesc =>
-      'Välkommen till Talkie! Vi stöder alla 80+ språk i världen med 100 % integritet och erbjuder en perfekt inlärningsupplevelse med ny premium 3D-design och optimerad prestanda.';
-
-  @override
-  String get welcomeButton => 'Kom igång';
-
-  @override
-  String get labelDetails => 'Detaljerade inställningar';
-
-  @override
-  String get translationResult => 'Översättningsresultat';
-
-  @override
-  String get inputContent => 'Innehåll att översätta';
-
-  @override
-  String get translateNow => 'Översätt nu';
-
-  @override
-  String get tooltipSettingsConfirm => 'Bekräfta inställningar';
-
-  @override
-  String get hintNoteExample => 'Ex: Kontext, homonymer etc.';
-
-  @override
-  String get hintTagExample => 'Ex: Affärer, Resor...';
-
-  @override
-  String get addNew => 'Lägg till ny';
-
-  @override
-  String get newNotebookTitle => 'Namn på ny anteckningsbok';
-
-  @override
-  String get enterNameHint => 'Ange ett namn';
-
-  @override
-  String get add => 'Lägg till';
-
-  @override
-  String get openSettings => 'Öppna inställningar';
-
-  @override
-  String get helpNotebook =>
-      'Välj mappen där du vill spara de översatta resultaten.';
-
-  @override
-  String get helpNote =>
-      'Skriv fritt ner ordets betydelse, exempelmeningar, situationer etc.';
-
-  @override
-  String get helpTag => 'Ange sökord för att senare kategorisera eller söka.';
-
-  @override
-  String get requestTranslation => 'Begär översättning';
-
-  @override
-  String get statusRequestSuccess => 'Översättningsförfrågan har slutförts.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Översättningsförfrågan misslyckades: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Språket stöds inte för inlärning';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Det valda materialet stöder inte det nuvarande inlärningsspråket ($targetLang) och kan inte sparas lokalt. Vill du begära en översättning?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Ställ in språk';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Gå till Meny > Språkinställningar och välj först ditt språk och inlärningsspråk.';
-
-  @override
-  String get quickStartStep2Title => '2. Grundläggande flöde';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Skapa dina egna studiekort i följande ordning: Inmatning (mikrofon/tangentbord) -> Översättning -> Spara.';
-
-  @override
-  String get quickStartStep3Title => '3. Använd lägen';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Öva genom att chatta och öva på uttal genom att titta på texten i fliken Uttalsövning och uttala den själv.';
-
-  @override
-  String get noteGuidance =>
-      'Där du anger ytterligare information för en mer exakt översättning';
 }

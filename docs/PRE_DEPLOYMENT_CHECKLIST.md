@@ -32,7 +32,6 @@
 - [x] **STT/TTS 안정성**: `SpeechService` 코드 분석 완료. **[코드 검증 완료]**
     - `audio_session` 패키지를 통해 STT/TTS 모드 전환 시 오디오 세션 자동 구성.
     - `startSTT`, `stopSTT`, `speak`, `_setBestVoice` 등 핵심 메서드 구조 확인.
-- [ ] **메모리 최적화**: AI 채팅(모드 4) 장시간 사용 시 렉/누수 여부는 **실기기 테스트 필요**.
 
 ## 5. 🛠️ 스토어 등록 준비 (Store Readiness)
 - [x] **권한 설명 문구**: `Info.plist`, `AndroidManifest.xml` 내 권한 요청 사유 확인. **[조치 완료]**

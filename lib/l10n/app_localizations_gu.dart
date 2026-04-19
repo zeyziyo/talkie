@@ -9,53 +9,20 @@ class AppLocalizationsGu extends AppLocalizations {
   AppLocalizationsGu([String locale = 'gu']) : super(locale);
 
   @override
-  String get basicWords => 'મૂળભૂત શબ્દો ભંડાર';
-
-  @override
-  String get inputLanguage => 'ઇનપુટ ભાષા';
-
-  @override
-  String get translationLanguage => 'અનુવાદ ભાષા';
-
-  @override
-  String get simplifiedGuidance =>
-      'રોજબરોજના સંવાદોને વિદેશી ભાષામાં તુરંત રૂપાંતરિત કરો! Talkie તમારી ભાષાકીય જીવનશૈલીને રેકોર્ડ કરે છે.';
-
-  @override
-  String get noDataForLanguage =>
-      'તમારી પસંદ કરેલી ભાષા માટે કોઈ તાલીમ સામગ્રી સ્થાનિક DBમાં નથી. મહેરબાની કરીને સામગ્રી ડાઉનલોડ કરો અથવા બીજી ભાષા પસંદ કરો.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'રદ કરો';
-
-  @override
   String get accuracy => 'ચોકસાઈ';
-
-  @override
-  String get ttsMissing =>
-      'આ ભાષા માટેનું વૉઇસ એન્જિન તમારા ઉપકરણ પર ઇન્સ્ટોલ કરેલું નથી.';
-
-  @override
-  String get ttsInstallGuide =>
-      'કૃપા કરીને Android સેટિંગ્સ > Google TTS માંથી આ ભાષા ડેટા ઇન્સ્ટોલ કરો.';
 
   @override
   String get adLoading =>
       'જાહેરાત લોડ થઈ રહી છે. કૃપા કરીને થોડીવાર પછી ફરી પ્રયાસ કરો.';
 
   @override
-  String get addNewSubject => 'નવું નામ ઉમેરો';
+  String get add => 'ઉમેરો';
 
   @override
-  String get addParticipant => 'સહભાગી ઉમેરો';
+  String get addNew => 'નવું ઉમેરો';
+
+  @override
+  String get addNewSubject => 'નવું નામ ઉમેરો';
 
   @override
   String get addTagHint => 'ટૅગ ઉમેરો...';
@@ -88,6 +55,12 @@ class AppLocalizationsGu extends AppLocalizations {
   String get basicWordRepository => 'મૂળભૂત શબ્દ ભંડાર';
 
   @override
+  String get basicWords => 'મૂળભૂત શબ્દો ભંડાર';
+
+  @override
+  String get cancel => 'રદ કરો';
+
+  @override
   String get caseObject => 'કર્મ વિભક્તિ';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get caseSubject => 'કર્તા વિભક્તિ';
 
   @override
-  String get chatAiChat => 'ચેટ';
-
-  @override
-  String get chatAllConversations => 'બધી વાતચીત';
-
-  @override
-  String get chatChoosePersona => 'વ્યક્તિ પસંદ કરો';
-
-  @override
-  String get chatEndMessage => 'શું તમે ચેટ સમાપ્ત કરવા માંગો છો?';
-
-  @override
-  String get chatEndTitle => 'ચેટ સમાપ્ત કરો અને સાચવો';
-
-  @override
-  String chatFailed(Object error) {
-    return 'ચેટ નિષ્ફળ: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'વાતચીતમાંથી અવતરણ ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'ચેટ ઇતિહાસ';
-
-  @override
-  String get chatNew => 'નવી ચેટ';
-
-  @override
-  String get chatNewChat => 'નવી ચેટ';
-
-  @override
-  String get chatNoConversations => 'હજી સુધી કોઈ વાતચીત નથી';
-
-  @override
-  String get chatSearchHint => 'ચેટ શીર્ષક દ્વારા શોધો...';
-
-  @override
-  String get chatNoteSearchHint => 'નોંધ દ્વારા શોધો...';
-
-  @override
-  String get chatSaveAndExit => 'સાચવો અને બહાર નીકળો';
-
-  @override
-  String get chatStartNewPrompt => 'પ્રેક્ટિસ માટે નવી ચેટ શરૂ કરો!';
-
-  @override
-  String get chatTypeHint => 'સંદેશ લખો...';
-
-  @override
-  String get chatUntitled => 'શીર્ષક વિનાની ચેટ';
-
-  @override
   String get checking => 'ચકાસી રહ્યું છે...';
 
   @override
@@ -168,14 +86,6 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get confirmDelete => 'શું તમે ખરેખર આ રેકોર્ડ કાઢી નાખવા માંગો છો?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'શું તમે આ વાતચીત કાઢી નાખવા માંગો છો?\nકાઢી નાખેલી વાતચીત પુનઃપ્રાપ્ત કરી શકાતી નથી.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'શું તમે આ સહભાગીને કાઢી નાખવા માંગો છો?';
 
   @override
   String get contextTagHint => 'પછીથી સરળતાથી ઓળખવા માટે પરિસ્થિતિ લખો';
@@ -214,23 +124,10 @@ class AppLocalizationsGu extends AppLocalizations {
   String get deleteRecord => 'રેકોર્ડ કાઢી નાખો';
 
   @override
-  String get dialogueQuestDesc =>
-      'પરિસ્થિતિઓ દ્વારા વાતચીતનો અભ્યાસ કરો. યોગ્ય જવાબો પસંદ કરો અને બોલો.';
-
-  @override
-  String get dialogueQuestTitle => 'સંવાદ ક્વેસ્ટ';
-
-  @override
-  String get disambiguationPrompt => 'તમે કયા અર્થમાં અનુવાદ કરવા માંગો છો?';
-
-  @override
-  String get disambiguationTitle => 'અર્થ પસંદ કરો';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'શું તમારી પાસે ખાતું નથી?';
-
-  @override
-  String get editParticipant => 'સહભાગી સંપાદિત કરો';
 
   @override
   String get email => 'ઇમેઇલ';
@@ -238,6 +135,9 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'આ ઈમેલ પહેલેથી જ ઉપયોગમાં છે. કૃપા કરીને લૉગિન કરો અથવા પાસવર્ડ પુનઃપ્રાપ્ત કરો.';
+
+  @override
+  String get enterNameHint => 'નામ દાખલ કરો';
 
   @override
   String get enterNewSubjectName => 'નવું નામ દાખલ કરો';
@@ -277,6 +177,9 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get errors => 'ભૂલો:';
+
+  @override
+  String get extractedText => 'ઓળખાયેલ ટેક્સ્ટ';
 
   @override
   String get female => 'સ્ત્રી';
@@ -336,12 +239,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get gender => 'જાતિ';
 
   @override
-  String get labelFilterMaterial => 'સામગ્રી';
-
-  @override
-  String get labelFilterTag => 'ટૅગ';
-
-  @override
   String get generalTags => 'સામાન્ય ટૅગ';
 
   @override
@@ -354,18 +251,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get googleContinue => 'Google થી ચાલુ રાખો';
 
   @override
-  String get helpDialogueImportDesc =>
-      'JSON ફાઇલ સાથે સમગ્ર સંવાદ સમૂહ આયાત કરો.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON Structure: Uses `dialogues` array instead of `entries`.\n• Auto-Restoration: Conversation title, persona, and message order are recovered.\n• Location: Imported chats appear in the AI Chat mode\'s \'History\' tab.';
-
-  @override
   String get helpJsonDesc => 'મોડ 3 માં આયાત કરવા માટે, JSON બનાવો:';
-
-  @override
-  String get helpJsonTypeDialogue => 'સંવાદ (Dialogue)';
 
   @override
   String get helpJsonTypeSentence => 'વાક્ય (Sentence)';
@@ -398,12 +284,12 @@ class AppLocalizationsGu extends AppLocalizations {
       '• પસંદ કરો: પેકેજ પસંદ કરો\n• અંતરાલ: [-] [+] પ્રતીક્ષા સમય (3સે-60સે)\n• શરૂ/બંધ: સત્ર નિયંત્રિત કરો\n• બોલો: ઓડિયો સાંભળો અને પુનરાવર્તન કરો\n• સ્કોર: ચોકસાઈ (0-100)\n• ફરી પ્રયાસ: જો અવાજ ન મળે તો બટન';
 
   @override
-  String get helpModeChatDesc =>
-      'AI વ્યક્તિત્વ સાથે વાતચીત કરીને વાસ્તવિક વાતચીતની પ્રેક્ટિસ કરો.';
+  String get helpNote =>
+      'શબ્દોનો અર્થ, ઉદાહરણો અથવા પરિસ્થિતિઓ જેવી માહિતી મુક્તપણે રેકોર્ડ કરો.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI ચેટ: નીચેના ટૅબ બાર પરના \'ચેટ\' મેનૂમાંથી વ્યક્તિત્વ સાથે વાસ્તવિક વાતચીતનો અભ્યાસ કરો\n• વ્યક્તિત્વ સેટિંગ: સામેની વ્યક્તિનું લિંગ, નામ અને ભાષા કોડ મુક્તપણે સ્પષ્ટ કરો\n• GPS સિચ્યુએશનલ પ્લે: તમારા વર્તમાન સ્થાનને ઓળખીને સ્થળને અનુરૂપ વાતચીત વિષયોની ભલામણ કરે છે\n• 2 ભાષાઓ: AI ના જવાબો અનુવાદ સાથે પ્રદર્શિત થાય છે, જે શીખવાની અસરને મહત્તમ કરે છે\n• રેકોર્ડ મેનેજમેન્ટ: ભૂતકાળની વાતચીતોને ફિલ્ટર કરો અને વાતચીત દરમિયાન ચોક્કસ સંદેશાઓને શીખવાની સામગ્રી તરીકે સાચવો';
+  String get helpNotebook =>
+      'તમે અનુવાદિત પરિણામો સાચવવા માંગો છો તે ફોલ્ડર પસંદ કરો.';
 
   @override
   String get helpTabJson => 'JSON ફોર્મેટ';
@@ -418,6 +304,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get helpTabTour => 'ટૂર';
 
   @override
+  String get helpTag => 'વર્ગીકરણ અથવા શોધ માટે કીવર્ડ્સ દાખલ કરો.';
+
+  @override
   String get helpTitle => 'મદદ અને માર્ગદર્શિકા';
 
   @override
@@ -426,6 +315,15 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get hide => 'છુપાવો';
+
+  @override
+  String get hintNoteExample => 'ઉદાહરણ: સંદર્ભ, સમાનાર્થી વગેરે';
+
+  @override
+  String get hintTagExample => 'ઉદાહરણ: વ્યવસાય, મુસાફરી...';
+
+  @override
+  String get homeTab => 'ભાષાંતર';
 
   @override
   String importAdded(int count) {
@@ -438,23 +336,6 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'સમાન શીર્ષકવાળી સામગ્રી પહેલેથી જ અસ્તિત્વમાં છે. શીર્ષક બદલો અને ફરીથી પ્રયાસ કરો.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -470,6 +351,11 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files ફાઇલો, $entries એન્ટ્રીઓ આયાત કરી.';
+  }
+
+  @override
   String get importJsonFile => 'JSON આયાત કરો';
 
   @override
@@ -481,12 +367,30 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'એક JSON ફાઇલ';
+
+  @override
+  String get importSourceFolder => 'ફોલ્ડર (ભાષા દ્વારા પુસ્તકાલય માળખું)';
+
+  @override
+  String get importSourceTitle => 'આયાત સ્ત્રોત પસંદ કરો';
+
+  @override
+  String get importSourceZip => 'ZIP ફાઇલ (સંકુચિત ફોલ્ડર)';
+
+  @override
   String importTotal(int count) {
     return 'કુલ: $count';
   }
 
   @override
   String get importing => 'આયાત કરી રહ્યું છે...';
+
+  @override
+  String get inputContent => 'ઇનપુટ સામગ્રી';
+
+  @override
+  String get inputLanguage => 'ઇનપુટ ભાષા';
 
   @override
   String get inputModeTitle => 'ઇનપુટ';
@@ -503,19 +407,22 @@ class AppLocalizationsGu extends AppLocalizations {
   String get kakaoContinue => 'કાકાઓ સાથે ચાલુ રાખો';
 
   @override
-  String get labelLangCode => 'ભાષા કોડ (દા.ત. en-US, ko-KR)';
+  String get labelDetails => 'વિગતવાર સેટિંગ્સ';
 
   @override
-  String get labelName => 'નામ';
+  String get labelFilterMaterial => 'સામગ્રી';
+
+  @override
+  String get labelFilterTag => 'ટૅગ';
+
+  @override
+  String get labelLangCode => 'ભાષા કોડ (દા.ત. en-US, ko-KR)';
 
   @override
   String get labelNote => 'નોંધ';
 
   @override
   String get labelPOS => 'શબ્દનો પ્રકાર';
-
-  @override
-  String get labelRole => 'ભૂમિકા';
 
   @override
   String get labelSentence => 'વાક્ય';
@@ -566,9 +473,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get listening => 'સાંભળી રહ્યું છે...';
 
   @override
-  String get loadingParticipants => 'સહભાગીઓ લોડ થઈ રહ્યા છે...';
-
-  @override
   String get location => 'સ્થાન';
 
   @override
@@ -588,9 +492,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get male => 'પુરુષ';
 
   @override
-  String get manageParticipants => 'સહભાગીઓનું સંચાલન કરો';
-
-  @override
   String get manual => 'મેન્યુઅલ ઇનપુટ';
 
   @override
@@ -598,9 +499,6 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get materialInfo => 'સામગ્રી માહિતી';
-
-  @override
-  String get me => 'હું';
 
   @override
   String get menuDeviceImport => 'ઉપકરણમાંથી સામગ્રી આયાત કરો';
@@ -668,27 +566,20 @@ class AppLocalizationsGu extends AppLocalizations {
   String get neutral => 'તટસ્થ';
 
   @override
+  String get newNotebookTitle => 'નવી નોટબુકનું નામ';
+
+  @override
   String get newSubjectName => 'નવું વિષય નામ';
 
   @override
   String get next => 'આગળ';
 
   @override
-  String get noDialogueHistory => 'કોઈ સંવાદ ઇતિહાસ નથી.';
-
-  @override
-  String get noInternetWarningMic =>
-      'કોઈ ઇન્ટરનેટ કનેક્શન નથી. ઑફલાઇન મોડમાં વૉઇસ રેકગ્નિશન શક્ય ન હોઈ શકે.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'કોઈ ઇન્ટરનેટ કનેક્શન નથી. ઑફલાઇન મોડમાં અનુવાદ કાર્ય ઉપલબ્ધ નથી. કૃપા કરીને સમીક્ષા મોડનો ઉપયોગ કરો.';
+  String get noDataForLanguage =>
+      'તમારી પસંદ કરેલી ભાષા માટે કોઈ તાલીમ સામગ્રી સ્થાનિક DBમાં નથી. મહેરબાની કરીને સામગ્રી ડાઉનલોડ કરો અથવા બીજી ભાષા પસંદ કરો.';
 
   @override
   String get noMaterialsInCategory => 'આ કેટેગરીમાં કોઈ સામગ્રી નથી.';
-
-  @override
-  String get noParticipantsFound => 'કોઈ સહભાગીઓ મળ્યા નથી.';
 
   @override
   String get noRecords => 'પસંદ કરેલી ભાષા માટે કોઈ રેકોર્ડ નથી';
@@ -709,6 +600,10 @@ class AppLocalizationsGu extends AppLocalizations {
   String get notSelected => '- કોઈ પસંદગી નથી -';
 
   @override
+  String get noteGuidance =>
+      'વધુ સચોટ અનુવાદ માટે જ્યાં તમે વધારાની વિગતો દાખલ કરો છો';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'તમારું ઇન્ટરનેટ કનેક્શન તપાસો અથવા પછીથી ફરી પ્રયાસ કરો.';
 
@@ -719,34 +614,19 @@ class AppLocalizationsGu extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'કોઈ સામગ્રી નથી.';
 
   @override
-  String get participantDeleted => 'સહભાગી કાઢી નાખવામાં આવ્યો છે.';
-
-  @override
-  String get participantRename => 'સહભાગીનું નામ બદલો';
-
-  @override
-  String get partner => 'પાર્ટનર';
-
-  @override
-  String get partnerMode => 'પાર્ટનર મોડ';
+  String get openSettings => 'સેટિંગ્સ ખોલો';
 
   @override
   String get password => 'પાસવર્ડ';
 
   @override
-  String get passwordTooShort => 'પાસવર્ડ ઓછામાં ઓછો 6 અક્ષરોનો હોવો જોઈએ.';
+  String get passwordTooShort => 'પાસવર્ડ ખૂબ ટૂંકો છે';
 
   @override
   String get perfect => 'ઉત્તમ!';
 
   @override
-  String get personaFriend => 'સ્થાનિક મિત્ર';
-
-  @override
-  String get personaGuide => 'ટ્રાવેલ ગાઇડ';
-
-  @override
-  String get personaTeacher => 'અંગ્રેજી શિક્ષક';
+  String get pickGallery => 'ગેલેરીમાંથી પસંદ કરો';
 
   @override
   String get playAgain => 'ફરીથી રમો';
@@ -766,6 +646,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get posAdverb => 'ક્રિયા વિશેષણ';
 
   @override
+  String get posArticle => 'આર્ટિકલ';
+
+  @override
   String get posConjunction => 'સંયોજક';
 
   @override
@@ -773,6 +656,9 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get posNoun => 'સંજ્ઞા';
+
+  @override
+  String get posParticle => 'પાર્ટિકલ';
 
   @override
   String get posPreposition => 'પૂર્વસર્ગ/સૂચક';
@@ -790,9 +676,33 @@ class AppLocalizationsGu extends AppLocalizations {
   String get practiceWordsOnly => 'માત્ર શબ્દોની પ્રેક્ટિસ કરો';
 
   @override
+  String get processing => 'પ્રક્રિયા કરી રહ્યા છીએ...';
+
+  @override
   String progress(int current, int total) {
     return 'પ્રગતિ: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'મેનુ > ભાષા સેટિંગ્સમાં તમારી ભાષા અને શીખવાની ભાષા પહેલાં પસંદ કરો.';
+
+  @override
+  String get quickStartStep1Title => '1. ભાષા સેટ કરો';
+
+  @override
+  String get quickStartStep2Desc =>
+      'ઇનપુટ (માઇક/કીબોર્ડ) -> અનુવાદ -> સાચવો ના ક્રમમાં તમારા પોતાના લર્નિંગ કાર્ડ બનાવો.';
+
+  @override
+  String get quickStartStep2Title => '2. મૂળભૂત પ્રક્રિયા';
+
+  @override
+  String get quickStartStep3Desc =>
+      'ચેટ દ્વારા પ્રેક્ટિસ કરો, અને ઉચ્ચાર પ્રેક્ટિસ ટેબમાં ટેક્સ્ટ જુઓ અને જાતે ઉચ્ચાર કરીને પ્રેક્ટિસ કરો.';
+
+  @override
+  String get quickStartStep3Title => '3. મોડનો ઉપયોગ કરો';
 
   @override
   String recentNItems(int count) {
@@ -817,6 +727,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get refresh => 'રીફ્રેશ';
 
   @override
+  String get requestTranslation => 'અનુવાદ માટે વિનંતી કરો';
+
+  @override
   String get reset => 'ફરીથી સેટ કરો';
 
   @override
@@ -837,16 +750,13 @@ class AppLocalizationsGu extends AppLocalizations {
   String get reviewModeTitle => 'સમીક્ષા';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'ત્રીજો પક્ષ';
-
-  @override
-  String get roleUser => 'વપરાશકર્તા';
-
-  @override
   String get save => 'સાચવો';
+
+  @override
+  String get saveAsSentence => 'વાક્ય તરીકે સાચવો';
+
+  @override
+  String get saveAsWord => 'શબ્દ તરીકે સાચવો';
 
   @override
   String get saveData => 'સાચવો';
@@ -857,6 +767,9 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'સ્કેન ઇતિહાસમાં સાચવો';
+
+  @override
   String get saveTranslationsFromSearch => 'શોધ મોડમાંથી અનુવાદો સાચવો';
 
   @override
@@ -864,6 +777,12 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get saving => 'સાચવી રહ્યું છે...';
+
+  @override
+  String get scanInstructions => 'સ્કેન કરવા માટે એક છબી પસંદ કરો';
+
+  @override
+  String get scanLabel => 'સ્કેન કરો';
 
   @override
   String score(String score) {
@@ -910,16 +829,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get selectPOS => 'ભાષા ભાગ પસંદ કરો';
 
   @override
-  String get selectParticipants => 'સહભાગીઓ પસંદ કરો';
-
-  @override
-  String get selectSentenceType => 'વાક્ય પ્રકાર પસંદ કરો';
-
-  @override
   String get selectStudyMaterial => 'સામગ્રી પસંદ કરો';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'વાક્ય';
@@ -928,100 +838,65 @@ class AppLocalizationsGu extends AppLocalizations {
   String get signUp => 'સાઇન અપ';
 
   @override
-  String get similarTextFound => 'સમાન લખાણ મળ્યું';
+  String get simplifiedGuidance =>
+      'રોજબરોજના સંવાદોને વિદેશી ભાષામાં તુરંત રૂપાંતરિત કરો! Talkie તમારી ભાષાકીય જીવનશૈલીને રેકોર્ડ કરે છે.';
 
   @override
-  String get skip => 'છોડો';
+  String get sourceLanguageLabel => 'મારી ભાષા';
 
   @override
-  String get source => 'સ્રોત:';
-
-  @override
-  String get sourceLanguage => 'સ્રોત ભાષા';
-
-  @override
-  String get sourceLanguageLabel => 'Source Language';
-
-  @override
-  String get speakNow => 'હવે બોલો!';
-
-  @override
-  String get speaker => 'વક્તા';
-
-  @override
-  String get speakerSelect => 'વક્તા પસંદ કરો';
-
-  @override
-  String get speakingPractice => 'બોલવાની પ્રેક્ટિસ';
-
-  @override
-  String get startChat => 'ચેટ શરૂ કરો';
-
-  @override
-  String get startPractice => 'પ્રેક્ટિસ શરૂ કરો';
-
-  @override
-  String get startTutorial => 'ટૂર શરૂ કરો';
-
-  @override
-  String get startWarning => 'ચેતવણી';
+  String get startTutorial => 'ટ્યુટોરીયલ શરૂ કરો';
 
   @override
   String get startsWith => 'શરૂ થતા અક્ષરો';
 
   @override
-  String get statusCheckEmail => 'ઈમેઇલ ચકાસીને પ્રમાણીકરણ પૂર્ણ કરો.';
+  String get statusCheckEmail => 'ઇમેઇલ ચકાસો';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'ડાઉનલોડ થઈ રહ્યું છે: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'આયાત નિષ્ફળ: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name આયાત સફળ';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'લૉગિન રદ થયું.';
-
-  @override
-  String statusLoginFailed(Object error) {
+  String statusLoginFailed(String error) {
     return 'લૉગિન નિષ્ફળ: $error';
   }
 
   @override
-  String get statusLoginSuccess => 'લૉગિન સફળ થયું.';
+  String get statusLoginSuccess => 'લૉગિન સફળ';
 
   @override
-  String get statusLogoutSuccess => 'લૉગ આઉટ થયા.';
+  String get statusLogoutSuccess => 'લૉગઆઉટ સફળ';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'સાઇન અપ નિષ્ફળ: $error';
+  String statusRequestFailed(String error) {
+    return 'અનુવાદ વિનંતી નિષ્ફળ: $error';
   }
 
   @override
-  String get statusSigningUp => 'સાઇન અપ થઈ રહ્યું છે...';
+  String get statusRequestSuccess => 'અનુવાદ વિનંતી સફળ થઈ.';
 
   @override
   String get stopPractice => 'થોભો';
 
   @override
-  String get studyComplete => 'અભ્યાસ પૂર્ણ';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'તમે પસંદ કરેલી સામગ્રી હાલમાં સેટ કરેલી અભ્યાસ ભાષા ($targetLang) ને સપોર્ટ કરતી નથી, તેથી તેને સ્થાનિક રીતે સાચવી શકાતી નથી. શું તમે અનુવાદ માટે વિનંતી કરવા માંગો છો?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'રેકોર્ડ્સ ($count)';
-  }
+  String get studyLangNotFoundTitle => 'અભ્યાસ ભાષા સપોર્ટેડ નથી';
 
   @override
   String get styleFormal => 'ઔપચારિક';
@@ -1036,22 +911,10 @@ class AppLocalizationsGu extends AppLocalizations {
   String get styleSlang => 'સ્લેંગ/અશિષ્ટ';
 
   @override
-  String get subject => 'વિષય:';
-
-  @override
   String get swapLanguages => 'ભાષાઓ બદલો';
 
   @override
-  String get switchToAi => 'AI મોડ પર સ્વિચ કરો';
-
-  @override
-  String get switchToPartner => 'પાર્ટનર મોડ પર સ્વિચ કરો';
-
-  @override
   String get syncingData => 'ડેટા સિંક્રૉનાઇઝ થઈ રહ્યો છે...';
-
-  @override
-  String get tabConversation => 'વાતચીત';
 
   @override
   String tabReview(int count) {
@@ -1114,6 +977,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get tooltipSearch => 'શોધો';
 
   @override
+  String get tooltipSettingsConfirm => 'સેટિંગ્સની પુષ્ટિ કરો';
+
+  @override
   String get tooltipSpeaking => 'બોલવું';
 
   @override
@@ -1126,6 +992,9 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get translate => 'અનુવાદ';
+
+  @override
+  String get translateNow => 'હમણાં અનુવાદ કરો';
 
   @override
   String get translating => 'અનુવાદ કરી રહ્યું છે...';
@@ -1142,6 +1011,9 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'અનુવાદ ભાષા';
+
+  @override
   String get translationLimitExceeded => 'અનુવાદ મર્યાદા ઓળંગાઈ ગઈ';
 
   @override
@@ -1156,17 +1028,25 @@ class AppLocalizationsGu extends AppLocalizations {
       'તમારું અનુવાદ ભરણ 5 વખત રિફિલ કરવામાં આવ્યું છે!';
 
   @override
+  String get translationResult => 'અનુવાદ પરિણામ';
+
+  @override
   String get translationResultHint => 'અનુવાદ પરિણામ - સંપાદન કરી શકાય છે';
 
   @override
   String get tryAgain => 'ફરી પ્રયાસ કરો';
 
   @override
-  String get tutorialAiChatDesc =>
-      'AI વ્યક્તિઓ સાથે વાસ્તવિક વાતચીતનો અભ્યાસ કરો.';
+  String get ttsInstallGuide =>
+      'કૃપા કરીને Android સેટિંગ્સ > Google TTS માંથી આ ભાષા ડેટા ઇન્સ્ટોલ કરો.';
 
   @override
-  String get tutorialAiChatTitle => 'AI ચેટ';
+  String get ttsMissing =>
+      'આ ભાષા માટેનું વૉઇસ એન્જિન તમારા ઉપકરણ પર ઇન્સ્ટોલ કરેલું નથી.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'આ ઉપકરણની મૂળભૂત સેટિંગ્સ આ ભાષામાં વૉઇસ આઉટપુટને સમર્થન આપતી નથી.';
 
   @override
   String get tutorialContextDesc =>
@@ -1278,7 +1158,13 @@ class AppLocalizationsGu extends AppLocalizations {
   String get typeExclamation => 'ઉદ્ગાર';
 
   @override
+  String get typeIdiom => 'રૂઢિપ્રયોગ';
+
+  @override
   String get typeImperative => 'આજ્ઞાર્થ';
+
+  @override
+  String get typeProverb => 'કહેવત';
 
   @override
   String get typeQuestion => 'પ્રશ્ન';
@@ -1293,6 +1179,11 @@ class AppLocalizationsGu extends AppLocalizations {
   String get useExistingText => 'વર્તમાન વાપરો';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'ઓનલાઇન માર્ગદર્શિકા જુઓ';
 
   @override
@@ -1300,6 +1191,16 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'જાહેરાત જોઈને રિફિલ કરો (+5 વખત)';
+
+  @override
+  String get welcomeButton => 'શરૂ કરો';
+
+  @override
+  String get welcomeDesc =>
+      'Talkie માં આપનું સ્વાગત છે! અમે 100% અખંડિતતા સાથે વિશ્વભરની 80 થી વધુ ભાષાઓને સમર્થન આપીએ છીએ, અને નવા પ્રીમિયમ 3D ડિઝાઇન અને ઑપ્ટિમાઇઝ કરેલ પ્રદર્શન સાથે સંપૂર્ણ શીખવાનો અનુભવ પ્રદાન કરીએ છીએ.';
+
+  @override
+  String get welcomeTitle => 'Talkie માં આપનું સ્વાગત છે!';
 
   @override
   String get word => 'શબ્દ';
@@ -1316,112 +1217,4 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'તમારું ઉચ્ચારણ';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'આ ઉપકરણની મૂળભૂત સેટિંગ્સ આ ભાષામાં વૉઇસ આઉટપુટને સમર્થન આપતી નથી.';
-
-  @override
-  String get homeTab => 'ભાષાંતર';
-
-  @override
-  String get welcomeTitle => 'Talkie માં આપનું સ્વાગત છે!';
-
-  @override
-  String get welcomeDesc =>
-      'Talkie માં આપનું સ્વાગત છે! અમે 100% અખંડિતતા સાથે વિશ્વભરની 80 થી વધુ ભાષાઓને સમર્થન આપીએ છીએ, અને નવા પ્રીમિયમ 3D ડિઝાઇન અને ઑપ્ટિમાઇઝ કરેલ પ્રદર્શન સાથે સંપૂર્ણ શીખવાનો અનુભવ પ્રદાન કરીએ છીએ.';
-
-  @override
-  String get welcomeButton => 'શરૂ કરો';
-
-  @override
-  String get labelDetails => 'વિગતવાર સેટિંગ્સ';
-
-  @override
-  String get translationResult => 'અનુવાદ પરિણામ';
-
-  @override
-  String get inputContent => 'ઇનપુટ સામગ્રી';
-
-  @override
-  String get translateNow => 'હમણાં અનુવાદ કરો';
-
-  @override
-  String get tooltipSettingsConfirm => 'સેટિંગ્સની પુષ્ટિ કરો';
-
-  @override
-  String get hintNoteExample => 'ઉદાહરણ: સંદર્ભ, સમાનાર્થી વગેરે';
-
-  @override
-  String get hintTagExample => 'ઉદાહરણ: વ્યવસાય, મુસાફરી...';
-
-  @override
-  String get addNew => 'નવું ઉમેરો';
-
-  @override
-  String get newNotebookTitle => 'નવી નોટબુકનું નામ';
-
-  @override
-  String get enterNameHint => 'નામ દાખલ કરો';
-
-  @override
-  String get add => 'ઉમેરો';
-
-  @override
-  String get openSettings => 'સેટિંગ્સ ખોલો';
-
-  @override
-  String get helpNotebook =>
-      'તમે અનુવાદિત પરિણામો સાચવવા માંગો છો તે ફોલ્ડર પસંદ કરો.';
-
-  @override
-  String get helpNote =>
-      'શબ્દોનો અર્થ, ઉદાહરણો અથવા પરિસ્થિતિઓ જેવી માહિતી મુક્તપણે રેકોર્ડ કરો.';
-
-  @override
-  String get helpTag => 'વર્ગીકરણ અથવા શોધ માટે કીવર્ડ્સ દાખલ કરો.';
-
-  @override
-  String get requestTranslation => 'અનુવાદ માટે વિનંતી કરો';
-
-  @override
-  String get statusRequestSuccess => 'અનુવાદ વિનંતી સફળ થઈ.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'અનુવાદ વિનંતી નિષ્ફળ: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'અભ્યાસ ભાષા સપોર્ટેડ નથી';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'તમે પસંદ કરેલી સામગ્રી હાલમાં સેટ કરેલી અભ્યાસ ભાષા ($targetLang) ને સપોર્ટ કરતી નથી, તેથી તેને સ્થાનિક રીતે સાચવી શકાતી નથી. શું તમે અનુવાદ માટે વિનંતી કરવા માંગો છો?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. ભાષા સેટ કરો';
-
-  @override
-  String get quickStartStep1Desc =>
-      'મેનુ > ભાષા સેટિંગ્સમાં તમારી ભાષા અને શીખવાની ભાષા પહેલાં પસંદ કરો.';
-
-  @override
-  String get quickStartStep2Title => '2. મૂળભૂત પ્રક્રિયા';
-
-  @override
-  String get quickStartStep2Desc =>
-      'ઇનપુટ (માઇક/કીબોર્ડ) -> અનુવાદ -> સાચવો ના ક્રમમાં તમારા પોતાના લર્નિંગ કાર્ડ બનાવો.';
-
-  @override
-  String get quickStartStep3Title => '3. મોડનો ઉપયોગ કરો';
-
-  @override
-  String get quickStartStep3Desc =>
-      'ચેટ દ્વારા પ્રેક્ટિસ કરો, અને ઉચ્ચાર પ્રેક્ટિસ ટેબમાં ટેક્સ્ટ જુઓ અને જાતે ઉચ્ચાર કરીને પ્રેક્ટિસ કરો.';
-
-  @override
-  String get noteGuidance =>
-      'વધુ સચોટ અનુવાદ માટે જ્યાં તમે વધારાની વિગતો દાખલ કરો છો';
 }

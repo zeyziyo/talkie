@@ -9,53 +9,20 @@ class AppLocalizationsEu extends AppLocalizations {
   AppLocalizationsEu([String locale = 'eu']) : super(locale);
 
   @override
-  String get basicWords => 'Oinarrizko hitz biltegia';
-
-  @override
-  String get inputLanguage => 'Sarrerako hizkuntza';
-
-  @override
-  String get translationLanguage => 'Itzulpen-hizkuntza';
-
-  @override
-  String get simplifiedGuidance =>
-      'Eguneroko elkarrizketak atzerriko hizkuntzetara berehala bihurtu! Talkiek zure hizkuntza-bizitza erregistratzen du.';
-
-  @override
-  String get noDataForLanguage =>
-      'Hautatutako hizkuntzarako ikasketa materialik ez dago tokiko DBan. Materiala deskargatu edo beste hizkuntza bat hautatu.';
-
-  @override
-  String versionLabel(String version) {
-    return 'Version: $version';
-  }
-
-  @override
-  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
-
-  @override
-  String get cancel => 'Ezeztatu';
-
-  @override
   String get accuracy => 'Zehaztasuna';
-
-  @override
-  String get ttsMissing =>
-      'Hizkuntza honetarako ahots-motorra ez dago zure gailuan instalatuta.';
-
-  @override
-  String get ttsInstallGuide =>
-      'Instalatu hizkuntza-datuak Android ezarpenak > Google TTS atalean.';
 
   @override
   String get adLoading =>
       'Iragarkia kargatzen ari da. Mesedez, saiatu berriro geroago.';
 
   @override
-  String get addNewSubject => 'Gehitu izenburu berria';
+  String get add => 'Gehitu';
 
   @override
-  String get addParticipant => 'Parte-hartzailea gehitu';
+  String get addNew => 'Gehitu berria';
+
+  @override
+  String get addNewSubject => 'Gehitu izenburu berria';
 
   @override
   String get addTagHint => 'Gehitu etiketa...';
@@ -88,6 +55,12 @@ class AppLocalizationsEu extends AppLocalizations {
   String get basicWordRepository => 'Oinarrizko hitz biltegia';
 
   @override
+  String get basicWords => 'Oinarrizko hitz biltegia';
+
+  @override
+  String get cancel => 'Ezeztatu';
+
+  @override
   String get caseObject => 'Objektua';
 
   @override
@@ -103,61 +76,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get caseSubject => 'Subjektua';
 
   @override
-  String get chatAiChat => 'Txat';
-
-  @override
-  String get chatAllConversations => 'Elkarrizketa guztiak';
-
-  @override
-  String get chatChoosePersona => 'Pertsonaia hautatu';
-
-  @override
-  String get chatEndMessage => 'Elkarrizketa amaitu nahi duzu?';
-
-  @override
-  String get chatEndTitle => 'Elkarrizketa amaitu eta gorde';
-
-  @override
-  String chatFailed(Object error) {
-    return 'Txatak huts egin du: $error';
-  }
-
-  @override
-  String chatFromConversation(Object speaker) {
-    return 'Elkarrizketatik ateratakoa ($speaker)';
-  }
-
-  @override
-  String get chatHistoryTitle => 'Elkarrizketaren historia';
-
-  @override
-  String get chatNew => 'Elkarrizketa berria';
-
-  @override
-  String get chatNewChat => 'Elkarrizketa berria';
-
-  @override
-  String get chatNoConversations => 'Oraindik ez dago elkarrizketarik';
-
-  @override
-  String get chatSearchHint => 'Bilatu elkarrizketen izenburuak...';
-
-  @override
-  String get chatNoteSearchHint => 'Bilatu oharren artean...';
-
-  @override
-  String get chatSaveAndExit => 'Gorde eta irten';
-
-  @override
-  String get chatStartNewPrompt => 'Hasi elkarrizketa berri bat praktikatzeko!';
-
-  @override
-  String get chatTypeHint => 'Idatzi mezu bat...';
-
-  @override
-  String get chatUntitled => 'Izenik gabeko elkarrizketa';
-
-  @override
   String get checking => 'Egiaztatzen...';
 
   @override
@@ -168,14 +86,6 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get confirmDelete => 'Ikasketa-erregistro hau ezabatu nahi duzu?';
-
-  @override
-  String get confirmDeleteConversation =>
-      'Elkarrizketa hau ezabatu nahi duzu?\nEzabatu ondoren ezin da berreskuratu.';
-
-  @override
-  String get confirmDeleteParticipant =>
-      'Parte-hartzaile hau ezabatu nahi duzu?';
 
   @override
   String get contextTagHint => 'Idatzi egoera geroago bereiztea errazteko';
@@ -214,23 +124,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get deleteRecord => 'Erregistroa ezabatu';
 
   @override
-  String get dialogueQuestDesc =>
-      'Praktikatu elkarrizketa egoera baten bidez. Hautatu erantzun egoki bat eta hitz egin.';
-
-  @override
-  String get dialogueQuestTitle => 'Elkarrizketa bilaketa';
-
-  @override
-  String get disambiguationPrompt => 'Zein esanahirekin itzuli nahi duzu?';
-
-  @override
-  String get disambiguationTitle => 'Esanahia hautatu';
+  String get developerContact => 'Developer Contact: talkie.help@gmail.com';
 
   @override
   String get dontHaveAccount => 'Ez duzu konturik?';
-
-  @override
-  String get editParticipant => 'Parte-hartzailea editatu';
 
   @override
   String get email => 'Posta elektronikoa';
@@ -238,6 +135,9 @@ class AppLocalizationsEu extends AppLocalizations {
   @override
   String get emailAlreadyInUse =>
       'Helbide elektroniko hau erregistratuta dago. Hasi saioa edo berreskuratu pasahitza.';
+
+  @override
+  String get enterNameHint => 'Idatzi izena';
 
   @override
   String get enterNewSubjectName => 'Idatzi izenburu berria';
@@ -274,6 +174,9 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get errors => 'Erroreak:';
+
+  @override
+  String get extractedText => 'Detektatutako testua';
 
   @override
   String get female => 'Emakumezkoa';
@@ -333,12 +236,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get gender => 'Generoa';
 
   @override
-  String get labelFilterMaterial => 'Materiala';
-
-  @override
-  String get labelFilterTag => 'Etiketak';
-
-  @override
   String get generalTags => 'Etiketa orokorrak';
 
   @override
@@ -351,19 +248,8 @@ class AppLocalizationsEu extends AppLocalizations {
   String get googleContinue => 'Jarraitu Google-rekin';
 
   @override
-  String get helpDialogueImportDesc =>
-      'Inportatu elkarrizketa-sorta oso bat JSON fitxategi gisa.';
-
-  @override
-  String get helpDialogueImportDetails =>
-      '• JSON egitura: erabili `dialogues` array `entries` ordez\n• Berreskuratze automatikoa: elkarrizketaren izenburua, pertsonaia eta mezu-ordena berreskuratzen dira.\n• Kokapena: inportatutako elkarrizketak AI txat moduaren \'Historia\' fitxan agertzen dira.';
-
-  @override
   String get helpJsonDesc =>
       '3. Moduan erabiliko den ikaskuntza-materiala JSON fitxategi gisa inportatzeko, jarraitu formatu hau:';
-
-  @override
-  String get helpJsonTypeDialogue => 'Elkarrizketa';
 
   @override
   String get helpJsonTypeSentence => 'Esaldi';
@@ -396,12 +282,11 @@ class AppLocalizationsEu extends AppLocalizations {
       '• Materiala hautatu: ikasteko datu-multzoa hautatu\n• Tartea ezarri: doitu esaldien arteko itxaron-denbora [-] [+] botoiekin (3s-60s)\n• Hasi/Gelditu: itzal saioa kontrolatu\n• Hitz egin: entzun ahotsa eta errepikatu\n• Iradokizunak: zehaztasun puntuazioa (0-100) eta kolore-adierazpena\n• Bilaketa-baldintzak: etiketak, azken elementuak, hasierako letrarekin iragazi';
 
   @override
-  String get helpModeChatDesc =>
-      'Praktikatu elkarrizketak AI pertsonaiarekin hizketan.';
+  String get helpNote =>
+      'Idatzi hitzaren esanahia, adibideak edo egoerak aske.';
 
   @override
-  String get helpModeChatDetails =>
-      '• AI txata: praktikatu elkarrizketa errealak pertsonaiekin beheko tabernako \'Txata\' menuan\n• Pertsonaia-ezarpenak: zehaztu libreki beste pertsonaren generoa, izena eta hizkuntza-kodea\n• GPS egoera-komedia: gomendatu zure kokapenarekin bat datozen elkarrizketa-gaiak\n• 2 hizkuntza: AIren erantzuna itzulpenarekin batera bistaratzen da ikaskuntza-efektua maximizatzeko\n• Erregistro-kudeaketa: iraganeko elkarrizketen historia iragazi eta elkarrizketako mezu zehatzak ikaskuntza-material gisa gorde';
+  String get helpNotebook => 'Hautatu itzulpenak gordetzeko karpeta.';
 
   @override
   String get helpTabJson => 'JSON formatua';
@@ -416,6 +301,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get helpTabTour => 'Esperimentatu';
 
   @override
+  String get helpTag => 'Sartu gero sailkatu edo bilatzeko gako-hitzak.';
+
+  @override
   String get helpTitle => 'Laguntza eta Gidak';
 
   @override
@@ -424,6 +312,16 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get hide => 'Ezkutatu';
+
+  @override
+  String get hintNoteExample =>
+      'Adibidez: testuinguru azalpena, homonimoak, etab.';
+
+  @override
+  String get hintTagExample => 'Adibidez: negozioa, bidaiak...';
+
+  @override
+  String get homeTab => 'Itzuli';
 
   @override
   String importAdded(int count) {
@@ -436,23 +334,6 @@ class AppLocalizationsEu extends AppLocalizations {
   @override
   String get importDuplicateTitleError =>
       'Izenburu bereko material bat existitzen da jada. Aldatu izenburua eta saiatu berriro.';
-
-  @override
-  String get importSourceTitle => '가져오기 원본 선택';
-
-  @override
-  String get importSourceFile => '단일 JSON 파일';
-
-  @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
-
-  @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
-
-  @override
-  String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
-  }
 
   @override
   String importErrorMessage(String error) {
@@ -468,6 +349,11 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
+  String importFolderSuccess(num files, num entries) {
+    return '$files fitxategi, $entries elementu inportatu dira.';
+  }
+
+  @override
   String get importJsonFile => 'JSON fitxategia inportatu';
 
   @override
@@ -479,12 +365,31 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
+  String get importSourceFile => 'JSON fitxategi bakarra';
+
+  @override
+  String get importSourceFolder =>
+      'Karpeta (Hizkuntza bakoitzeko liburutegi egitura)';
+
+  @override
+  String get importSourceTitle => 'Aukeratu inportazio iturria';
+
+  @override
+  String get importSourceZip => 'ZIP fitxategia (Konprimitutako karpeta)';
+
+  @override
   String importTotal(int count) {
     return 'Guztira: $count';
   }
 
   @override
   String get importing => 'Inportatzen...';
+
+  @override
+  String get inputContent => 'Sarrerako edukia';
+
+  @override
+  String get inputLanguage => 'Sarrerako hizkuntza';
 
   @override
   String get inputModeTitle => 'Sarrera';
@@ -501,19 +406,22 @@ class AppLocalizationsEu extends AppLocalizations {
   String get kakaoContinue => 'Kakaorekin jarraitu';
 
   @override
-  String get labelLangCode => 'Hizkuntza-kodea (adibidez: en-US, ko-KR)';
+  String get labelDetails => 'Ezarpen zehatzak';
 
   @override
-  String get labelName => 'Izena';
+  String get labelFilterMaterial => 'Materiala';
+
+  @override
+  String get labelFilterTag => 'Etiketak';
+
+  @override
+  String get labelLangCode => 'Hizkuntza-kodea (adibidez: en-US, ko-KR)';
 
   @override
   String get labelNote => 'Oharra';
 
   @override
   String get labelPOS => 'Adiera-kategoria';
-
-  @override
-  String get labelRole => 'Rola';
 
   @override
   String get labelSentence => 'Esaldi';
@@ -564,9 +472,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get listening => 'Entzuten...';
 
   @override
-  String get loadingParticipants => 'Parte-hartzaileak kargatzen...';
-
-  @override
   String get location => 'Kokapena';
 
   @override
@@ -585,9 +490,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get male => 'Gizonezkoa';
 
   @override
-  String get manageParticipants => 'Parte-hartzaileak kudeatu';
-
-  @override
   String get manual => 'Eskuzko sarrera';
 
   @override
@@ -595,9 +497,6 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get materialInfo => 'Materialaren informazioa';
-
-  @override
-  String get me => 'Ni';
 
   @override
   String get menuDeviceImport => 'Materiala gailutik inportatu';
@@ -665,28 +564,20 @@ class AppLocalizationsEu extends AppLocalizations {
   String get neutral => 'neutroa';
 
   @override
+  String get newNotebookTitle => 'Koaderno berriaren izena';
+
+  @override
   String get newSubjectName => 'Izenburu berria';
 
   @override
   String get next => 'Hurrengoa';
 
   @override
-  String get noDialogueHistory => 'Ez dago elkarrizketa historiarik.';
-
-  @override
-  String get noInternetWarningMic =>
-      'Ez dago interneteko konexiorik. Baliteke ahots-ezagutza ez egotea erabilgarri lineaz kanpo.';
-
-  @override
-  String get noInternetWarningTranslate =>
-      'Ez dago interneteko konexiorik. Ezin duzu itzulpen funtzioa erabili lineaz kanpo. Mesedez, erabili berrikuspen modua.';
+  String get noDataForLanguage =>
+      'Hautatutako hizkuntzarako ikasketa materialik ez dago tokiko DBan. Materiala deskargatu edo beste hizkuntza bat hautatu.';
 
   @override
   String get noMaterialsInCategory => 'Ez dago materialik kategoria honetan.';
-
-  @override
-  String get noParticipantsFound =>
-      'Ez dago erregistratutako parte-hartzailerik.';
 
   @override
   String get noRecords =>
@@ -708,6 +599,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get notSelected => '- Ez dago hautatuta -';
 
   @override
+  String get noteGuidance =>
+      'Itzulpen zehatzagoa lortzeko xehetasun gehigarriak sartzen dituzun lekua';
+
+  @override
   String get onlineLibraryCheckInternet =>
       'Egiaztatu interneteko konexioa edo saiatu berriro geroago.';
 
@@ -719,35 +614,19 @@ class AppLocalizationsEu extends AppLocalizations {
   String get onlineLibraryNoMaterials => 'Ez dago materialik.';
 
   @override
-  String get participantDeleted => 'Parte-hartzailea ezabatu da.';
-
-  @override
-  String get participantRename => 'Parte-hartzailearen izena aldatu';
-
-  @override
-  String get partner => 'Bazkidea';
-
-  @override
-  String get partnerMode => 'Bazkide modua';
+  String get openSettings => 'Ezarpenak ireki';
 
   @override
   String get password => 'Pasahitza';
 
   @override
-  String get passwordTooShort =>
-      'Pasahitzak 6 karaktere izan behar ditu gutxienez.';
+  String get passwordTooShort => 'Pasahitza laburregia da';
 
   @override
   String get perfect => 'Ezin hobea!';
 
   @override
-  String get personaFriend => 'Bertako laguna';
-
-  @override
-  String get personaGuide => 'Bidaia gida';
-
-  @override
-  String get personaTeacher => 'Ingeleseko irakaslea';
+  String get pickGallery => 'Aukeratu galeriatik';
 
   @override
   String get playAgain => 'Berriro jokatu';
@@ -767,6 +646,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get posAdverb => 'Adberbioa';
 
   @override
+  String get posArticle => 'Artikulua';
+
+  @override
   String get posConjunction => 'Lokailua';
 
   @override
@@ -774,6 +656,9 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get posNoun => 'Izena';
+
+  @override
+  String get posParticle => 'Partikula';
 
   @override
   String get posPreposition => 'Preposizioa/Postposizioa';
@@ -791,9 +676,33 @@ class AppLocalizationsEu extends AppLocalizations {
   String get practiceWordsOnly => 'Hitzak bakarrik praktikatu';
 
   @override
+  String get processing => 'Prozesatzen...';
+
+  @override
   String progress(int current, int total) {
     return 'Aurrerapena: $current / $total';
   }
+
+  @override
+  String get quickStartStep1Desc =>
+      'Ezarri zure hizkuntza eta ikasteko hizkuntza Menua > Hizkuntza ezarpenak atalean.';
+
+  @override
+  String get quickStartStep1Title => '1. Hizkuntza ezarri';
+
+  @override
+  String get quickStartStep2Desc =>
+      'Sortu zure ikasketa-txartelak ordena honetan: Sarrera (mikrofonoa/tekla) -> Itzulpena -> Gorde.';
+
+  @override
+  String get quickStartStep2Title => '2. Oinarrizko prozesua';
+
+  @override
+  String get quickStartStep3Desc =>
+      'Praktikatu txateatzen, eta praktikatu ahoskera Ahoskera praktikatzeko fitxan testua ikusiz eta zuzenean ahoskatuz.';
+
+  @override
+  String get quickStartStep3Title => '3. Erabili moduak';
 
   @override
   String recentNItems(int count) {
@@ -818,6 +727,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get refresh => 'Freskatu';
 
   @override
+  String get requestTranslation => 'Itzulpena eskatu';
+
+  @override
   String get reset => 'Berrezarri';
 
   @override
@@ -838,16 +750,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get reviewModeTitle => 'Berrikusi';
 
   @override
-  String get roleAi => 'AI';
-
-  @override
-  String get roleThirdParty => 'Hirugarrena';
-
-  @override
-  String get roleUser => 'Erabiltzailea';
-
-  @override
   String get save => 'Gorde';
+
+  @override
+  String get saveAsSentence => 'Esaldi gisa gorde';
+
+  @override
+  String get saveAsWord => 'Hitz gisa gorde';
 
   @override
   String get saveData => 'Datuak gorde';
@@ -858,6 +767,9 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
+  String get saveToHistory => 'Gorde eskaneatze-historian';
+
+  @override
   String get saveTranslationsFromSearch =>
       'Saiatu itzulpenak bilaketa moduan gordetzen';
 
@@ -866,6 +778,12 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get saving => 'Gordetzen...';
+
+  @override
+  String get scanInstructions => 'Aukeratu eskaneatzeko irudi bat';
+
+  @override
+  String get scanLabel => 'Eskaneatu';
 
   @override
   String score(String score) {
@@ -912,16 +830,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get selectPOS => 'Hautatu adiera-kategoria';
 
   @override
-  String get selectParticipants => 'Parte-hartzaileak aukeratu';
-
-  @override
-  String get selectSentenceType => 'Hautatu esaldi mota';
-
-  @override
   String get selectStudyMaterial => 'Ikasketa-materiala hautatu';
-
-  @override
-  String get sendingMessage => '메시지 전송 중...';
 
   @override
   String get sentence => 'Esaldi';
@@ -930,101 +839,65 @@ class AppLocalizationsEu extends AppLocalizations {
   String get signUp => 'Erregistratu';
 
   @override
-  String get similarTextFound => 'Antzeko testua aurkitu da';
+  String get simplifiedGuidance =>
+      'Eguneroko elkarrizketak atzerriko hizkuntzetara berehala bihurtu! Talkiek zure hizkuntza-bizitza erregistratzen du.';
 
   @override
-  String get skip => 'Saltatu';
+  String get sourceLanguageLabel => 'Nire hizkuntza';
 
   @override
-  String get source => 'Iturria:';
-
-  @override
-  String get sourceLanguage => 'Jatorrizko hizkuntza';
-
-  @override
-  String get sourceLanguageLabel => 'Nire hizkuntza (Iturria)';
-
-  @override
-  String get speakNow => 'Hitz egin orain!';
-
-  @override
-  String get speaker => 'Hizlaria';
-
-  @override
-  String get speakerSelect => 'Hizlaria aukeratu';
-
-  @override
-  String get speakingPractice => 'Hitz egiteko praktika';
-
-  @override
-  String get startChat => 'Hasi elkarrizketa';
-
-  @override
-  String get startPractice => 'Praktika hasi';
-
-  @override
-  String get startTutorial => 'Tutoriala hasi';
-
-  @override
-  String get startWarning => 'Abisua';
+  String get startTutorial => 'Hasi tutoriala';
 
   @override
   String get startsWith => 'Hasierako letra';
 
   @override
-  String get statusCheckEmail =>
-      'Mesedez, egiaztatu e-posta autentifikazioa osatzeko.';
+  String get statusCheckEmail => 'Egiaztatu zure posta elektronikoa';
 
   @override
-  String statusDownloading(Object name) {
+  String statusDownloading(String name) {
     return 'Deskargatzen: $name...';
   }
 
   @override
-  String statusImportFailed(Object error) {
+  String statusImportFailed(String error) {
     return 'Inportazioak huts egin du: $error';
   }
 
   @override
-  String statusImportSuccess(Object name) {
+  String statusImportSuccess(String name) {
     return '$name inportatu da';
   }
 
   @override
-  String get statusLoggingIn => 'Logging in with Google...';
-
-  @override
-  String get statusLoginCancelled => 'Saio-hasiera bertan behera utzi da.';
-
-  @override
-  String statusLoginFailed(Object error) {
-    return 'Saio-hasierak huts egin du: $error';
+  String statusLoginFailed(String error) {
+    return 'Saioa hasi ezin izan da: $error';
   }
 
   @override
-  String get statusLoginSuccess => 'Saioa hasi da.';
+  String get statusLoginSuccess => 'Saioa ondo hasi da';
 
   @override
-  String get statusLogoutSuccess => 'Saioa itxi da.';
+  String get statusLogoutSuccess => 'Saioa itxi da';
 
   @override
-  String statusSignUpFailed(Object error) {
-    return 'Errore bat gertatu da erregistratzean: $error';
+  String statusRequestFailed(String error) {
+    return 'Itzulpen eskaera huts egin du: $error';
   }
 
   @override
-  String get statusSigningUp => 'Erregistratzen...';
+  String get statusRequestSuccess => 'Itzulpen eskaera burutu da.';
 
   @override
   String get stopPractice => 'Praktika gelditu';
 
   @override
-  String get studyComplete => 'Ikaskuntza amaitu da';
+  String studyLangNotFoundDesc(String targetLang) {
+    return 'Hautatu duzun materialak ez du onartzen unean ezarrita daukazun ikasteko hizkuntza ($targetLang), eta ezin da lokalean gorde. Itzulpena eskatu nahi duzu?';
+  }
 
   @override
-  String studyRecords(int count) {
-    return 'Ikasketa-erregistroak ($count)';
-  }
+  String get studyLangNotFoundTitle => 'Ikasteko hizkuntza ez da aurkitu';
 
   @override
   String get styleFormal => 'Formala';
@@ -1039,22 +912,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get styleSlang => 'Slanga';
 
   @override
-  String get subject => 'Gaia:';
-
-  @override
   String get swapLanguages => 'Hizkuntzak trukatu';
 
   @override
-  String get switchToAi => 'AI modura aldatu';
-
-  @override
-  String get switchToPartner => 'Bazkide modura aldatu';
-
-  @override
   String get syncingData => 'Datuak sinkronizatzen...';
-
-  @override
-  String get tabConversation => 'Elkarrizketa';
 
   @override
   String tabReview(int count) {
@@ -1118,6 +979,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tooltipSearch => 'Bilatu';
 
   @override
+  String get tooltipSettingsConfirm => 'Ezarpenak baieztatu';
+
+  @override
   String get tooltipSpeaking => 'Hitz egin';
 
   @override
@@ -1130,6 +994,9 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get translate => 'Itzuli';
+
+  @override
+  String get translateNow => 'Itzuli orain';
 
   @override
   String get translating => 'Itzultzen...';
@@ -1146,6 +1013,9 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
+  String get translationLanguage => 'Itzulpen-hizkuntza';
+
+  @override
   String get translationLimitExceeded => 'Itzulpen-muga gainditu da';
 
   @override
@@ -1159,17 +1029,25 @@ class AppLocalizationsEu extends AppLocalizations {
   String get translationRefilled => 'Itzulpenen kopurua 5era bete da!';
 
   @override
+  String get translationResult => 'Itzulpen emaitza';
+
+  @override
   String get translationResultHint => 'Itzulpenaren emaitza - edita daiteke';
 
   @override
   String get tryAgain => 'Saiatu berriro';
 
   @override
-  String get tutorialAiChatDesc =>
-      'Praktikatu elkarrizketa errealak AI pertsonaia batekin.';
+  String get ttsInstallGuide =>
+      'Instalatu hizkuntza-datuak Android ezarpenak > Google TTS atalean.';
 
   @override
-  String get tutorialAiChatTitle => 'AI txata';
+  String get ttsMissing =>
+      'Hizkuntza honetarako ahots-motorra ez dago zure gailuan instalatuta.';
+
+  @override
+  String get ttsUnsupportedNatively =>
+      'Gailu honen ezarpen lehenetsiek ez dute hizkuntza honetako ahots-irteerarik onartzen.';
 
   @override
   String get tutorialContextDesc =>
@@ -1286,7 +1164,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get typeExclamation => 'Harridura';
 
   @override
+  String get typeIdiom => 'Esamoldea';
+
+  @override
   String get typeImperative => 'Agindua';
+
+  @override
+  String get typeProverb => 'Esaera zaharra';
 
   @override
   String get typeQuestion => 'Galdera';
@@ -1301,6 +1185,11 @@ class AppLocalizationsEu extends AppLocalizations {
   String get useExistingText => 'Erabili lehendik dagoen testua';
 
   @override
+  String versionLabel(String version) {
+    return 'Version: $version';
+  }
+
+  @override
   String get viewOnlineGuide => 'Ikusi online gida';
 
   @override
@@ -1308,6 +1197,16 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get watchAdAndRefill => 'Iragarkia ikusi eta bete (+5)';
+
+  @override
+  String get welcomeButton => 'Hasi';
+
+  @override
+  String get welcomeDesc =>
+      'Ongi etorri Talkiera! Munduko 80 hizkuntza baino gehiago onartzen ditugu %100eko osotasunarekin, eta ikaskuntza esperientzia ezin hobea eskaintzen dugu premium 3D diseinu berri eta errendimendu optimizatuarekin.';
+
+  @override
+  String get welcomeTitle => 'Ongi etorri Talkiera!';
 
   @override
   String get word => 'Hitza';
@@ -1324,112 +1223,4 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get yourPronunciation => 'Zure ahoskera';
-
-  @override
-  String get ttsUnsupportedNatively =>
-      'Gailu honen ezarpen lehenetsiek ez dute hizkuntza honetako ahots-irteerarik onartzen.';
-
-  @override
-  String get homeTab => 'Itzuli';
-
-  @override
-  String get welcomeTitle => 'Ongi etorri Talkiera!';
-
-  @override
-  String get welcomeDesc =>
-      'Ongi etorri Talkiera! Munduko 80 hizkuntza baino gehiago onartzen ditugu %100eko osotasunarekin, eta ikaskuntza esperientzia ezin hobea eskaintzen dugu premium 3D diseinu berri eta errendimendu optimizatuarekin.';
-
-  @override
-  String get welcomeButton => 'Hasi';
-
-  @override
-  String get labelDetails => 'Ezarpen zehatzak';
-
-  @override
-  String get translationResult => 'Itzulpen emaitza';
-
-  @override
-  String get inputContent => 'Sarrerako edukia';
-
-  @override
-  String get translateNow => 'Itzuli orain';
-
-  @override
-  String get tooltipSettingsConfirm => 'Ezarpenak baieztatu';
-
-  @override
-  String get hintNoteExample =>
-      'Adibidez: testuinguru azalpena, homonimoak, etab.';
-
-  @override
-  String get hintTagExample => 'Adibidez: negozioa, bidaiak...';
-
-  @override
-  String get addNew => 'Gehitu berria';
-
-  @override
-  String get newNotebookTitle => 'Koaderno berriaren izena';
-
-  @override
-  String get enterNameHint => 'Idatzi izena';
-
-  @override
-  String get add => 'Gehitu';
-
-  @override
-  String get openSettings => 'Ezarpenak ireki';
-
-  @override
-  String get helpNotebook => 'Hautatu itzulpenak gordetzeko karpeta.';
-
-  @override
-  String get helpNote =>
-      'Idatzi hitzaren esanahia, adibideak edo egoerak aske.';
-
-  @override
-  String get helpTag => 'Sartu gero sailkatu edo bilatzeko gako-hitzak.';
-
-  @override
-  String get requestTranslation => 'Itzulpena eskatu';
-
-  @override
-  String get statusRequestSuccess => 'Itzulpen eskaera burutu da.';
-
-  @override
-  String statusRequestFailed(String error) {
-    return 'Itzulpen eskaera huts egin du: $error';
-  }
-
-  @override
-  String get studyLangNotFoundTitle => 'Ikasteko hizkuntza ez da aurkitu';
-
-  @override
-  String studyLangNotFoundDesc(String targetLang) {
-    return 'Hautatu duzun materialak ez du onartzen unean ezarrita daukazun ikasteko hizkuntza ($targetLang), eta ezin da lokalean gorde. Itzulpena eskatu nahi duzu?';
-  }
-
-  @override
-  String get quickStartStep1Title => '1. Hizkuntza ezarri';
-
-  @override
-  String get quickStartStep1Desc =>
-      'Ezarri zure hizkuntza eta ikasteko hizkuntza Menua > Hizkuntza ezarpenak atalean.';
-
-  @override
-  String get quickStartStep2Title => '2. Oinarrizko prozesua';
-
-  @override
-  String get quickStartStep2Desc =>
-      'Sortu zure ikasketa-txartelak ordena honetan: Sarrera (mikrofonoa/tekla) -> Itzulpena -> Gorde.';
-
-  @override
-  String get quickStartStep3Title => '3. Erabili moduak';
-
-  @override
-  String get quickStartStep3Desc =>
-      'Praktikatu txateatzen, eta praktikatu ahoskera Ahoskera praktikatzeko fitxan testua ikusiz eta zuzenean ahoskatuz.';
-
-  @override
-  String get noteGuidance =>
-      'Itzulpen zehatzagoa lortzeko xehetasun gehigarriak sartzen dituzun lekua';
 }
