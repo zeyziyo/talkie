@@ -74,6 +74,19 @@ android {
     }
 }
 
+dependencies {
+    implementation("androidx.media:media:1.7.0")
+    
+    constraints {
+        implementation("androidx.work:work-runtime:2.8.1") {
+            because("Consistent AndroidX versions to resolve AAR metadata conflicts")
+        }
+        implementation("androidx.lifecycle:lifecycle-runtime:2.6.1") {
+            because("Consistent AndroidX versions to resolve AAR metadata conflicts")
+        }
+    }
+}
+
 flutter {
     source = "../.."
 }

@@ -15,6 +15,10 @@ subprojects {
             force("androidx.browser:browser:1.8.0")
             force("androidx.core:core:1.15.0")
             force("androidx.core:core-ktx:1.15.0")
+            force("androidx.media:media:1.7.0")
+            force("androidx.work:work-runtime:2.8.1")
+            force("androidx.lifecycle:lifecycle-runtime:2.6.1")
+            force("androidx.lifecycle:lifecycle-common:2.6.1")
 
             // Phase 114: Force Kotlin 2.1.0 to resolve metadata/pom missing issues
             eachDependency {
