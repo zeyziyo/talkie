@@ -53,45 +53,6 @@ jobs:
         done
         echo ">>> Plugin path verification/fix completed."
 
-    - name: Pre-download sqlite3 native assets (jniLibs Injection)
-      run: |
-        VERSION="3.1.2"
-        BASE_URL="https://github.com/simolus3/sqlite3.dart/releases/download/sqlite3-$VERSION"
-        JNI_BASE="android/app/src/main/jniLibs"
-        
-        echo ">>> Injecting sqlite3 $VERSION native assets to $JNI_BASE"
-        
-        # Mapping: [Source Arch] -> [Target JNI Dir]
-        declare -A ARCH_MAP=(
-          ["arm"]="armeabi-v7a"
-          ["arm64"]="arm64-v8a"
-          ["ia32"]="x86"
-          ["x64"]="x86_64"
-        )
-        
-        for src_arch in "${!ARCH_MAP[@]}"; do
-          target_dir="${ARCH_MAP[$src_arch]}"
-          src_file="libsqlite3.${src_arch}.android.so"
-          target_file="$JNI_BASE/${target_dir}/libsqlite3.so"
-          
-          mkdir -p "$JNI_BASE/$target_dir"
-          echo ">>> Downloading $src_file for $target_dir from: $BASE_URL/$src_file"
-          
-          if ! curl --fail --location --show-error --connect-timeout 60 --retry 15 --retry-delay 5 --retry-connrefused \
-            -o "$target_file" "$BASE_URL/$src_file"; then
-            echo "Error: Failed to download $src_file (Source: $src_arch, Target: $target_dir). Status: FAILED"
-            exit 1
-          fi
-          
-          # Explicit per-file verification
-          if [ ! -s "$target_file" ]; then
-            echo "Error: Downloaded file $target_file is empty or missing! Build aborted."
-            exit 1
-          fi
-          echo ">>> Successfully verified $target_file ($(du -h "$target_file" | cut -f1))"
-        done
-        
-        echo ">>> All 4 sqlite3 JNI assets successfully injected and verified."
 
     - name: Generate Localizations
       run: flutter gen-l10n
