@@ -23,7 +23,12 @@ pluginManagement {
             throw GradleException("Flutter SDK not found. Set FLUTTER_ROOT environment variable or flutter.sdk in local.properties")
         }
 
-    includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
+    val gradlePluginPath = "$flutterSdkPath/packages/flutter_tools/gradle"
+    val gradlePluginDir = file(gradlePluginPath)
+    
+    if (gradlePluginDir.exists()) {
+        includeBuild(gradlePluginPath)
+    }
 
     repositories {
         gradlePluginPortal()
@@ -40,7 +45,7 @@ dependencyResolutionManagement {
 }
 
 plugins {
-    id("dev.flutter.flutter-plugin-loader") version "1.0.0"
+    id("dev.flutter.flutter-plugin-loader") version "1.0.0" apply false
     id("com.android.application") version "8.5.2" apply false
     id("org.jetbrains.kotlin.android") version "2.1.0" apply false
 }
