@@ -4,10 +4,6 @@ name: Build Android APK
 on:
   push:
     branches: [ main ]
-    paths-ignore:
-      - 'docs/**'
-      - '**.md'
-      - 'LICENSE'
   pull_request:
     branches: [ main ]
   workflow_dispatch:
@@ -83,8 +79,6 @@ jobs:
         echo "KAKAO_JAVASCRIPT_KEY=${{ secrets.KAKAO_JAVASCRIPT_KEY }}" >> .env
 
     - name: Build APK (Release)
-      env:
-        FLUTTER_ROOT: ${{ env.FLUTTER_ROOT }}
       run: flutter build apk --release --verbose
       
     - name: Upload APK
