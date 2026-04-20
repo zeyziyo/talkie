@@ -37,6 +37,13 @@ jobs:
       run: |
         flutter clean
         flutter pub get
+        
+    - name: Force Clear Gradle Cache
+      run: |
+        cd android
+        ./gradlew clean
+        rm -rf ~/.gradle/caches
+        cd ..
 
     - name: Fix Potential Plugin Path Issues (Robust)
       run: |
