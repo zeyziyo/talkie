@@ -37,6 +37,7 @@ jobs:
     - name: Force Clear Gradle Cache
       run: |
         cd android
+        chmod +x gradlew
         ./gradlew clean
         rm -rf ~/.gradle/caches
         cd ..
