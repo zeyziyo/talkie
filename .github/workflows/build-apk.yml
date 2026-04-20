@@ -34,6 +34,9 @@ jobs:
         flutter clean
         flutter pub get
         
+    - name: Accept Android Licenses
+      run: yes | flutter doctor --android-licenses || true
+
     - name: Force Clear Gradle Cache
       run: |
         cd android
@@ -80,7 +83,7 @@ jobs:
         echo "KAKAO_JAVASCRIPT_KEY=${{ secrets.KAKAO_JAVASCRIPT_KEY }}" >> .env
 
     - name: Build APK (Release)
-      run: flutter build apk --release --verbose
+      run: flutter build apk --release --verbose --stacktrace
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
@@ -90,7 +93,7 @@ jobs:
         retention-days: 7
 
     - name: Build App Bundle (AAB)
-      run: flutter build appbundle --release --verbose
+      run: flutter build appbundle --release --verbose --stacktrace
       
     - name: Upload AAB
       uses: actions/upload-artifact@v4
