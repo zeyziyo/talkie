@@ -83,7 +83,7 @@ jobs:
         echo "KAKAO_JAVASCRIPT_KEY=${{ secrets.KAKAO_JAVASCRIPT_KEY }}" >> .env
 
     - name: Build APK (Release)
-      run: flutter build apk --release --verbose --stacktrace
+      run: flutter build apk --release --verbose
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
@@ -93,7 +93,7 @@ jobs:
         retention-days: 7
 
     - name: Build App Bundle (AAB)
-      run: flutter build appbundle --release --verbose --stacktrace
+      run: flutter build appbundle --release --verbose
       
     - name: Upload AAB
       uses: actions/upload-artifact@v4

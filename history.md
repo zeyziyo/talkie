@@ -23,7 +23,7 @@
 
 ### [2026-04-25] 빌드 시스템 복구 및 인도네시아어(id) 학습 자료 배포 (v2.1.0+114)
 
-- **Build System Restoration**: Gradle 버전을 8.7로 상향하고, AGP 8.5.2와 충돌하던 `androidx.navigationevent` 등 최신 AndroidX 라이브러리의 버전을 강제 고정하여 GitHub Actions 및 로컬 빌드 환경을 정상화했습니다.
+- **Build System Restoration**: Gradle 버전을 8.7로 상향하고, AGP 8.5.2와 충돌하던 `androidx.navigationevent` 등 최신 AndroidX 라이브러리의 버전을 강제 고정하여 GitHub Actions 및 로컬 빌드 환경을 정상화했습니다. 또한 `.github/workflows/build-apk.yml` 내 잘못된 플래그(`--stacktrace`)를 제거하여 CI 빌드 중단을 해결했습니다.
 - **Indonesian (id) Materials Deployment**: `docs/materials/English`의 단어/문장 자료(18개 파일)를 인도네시아어로 완벽 번역(제목, 본문, 태그 포함)하여 `docs/materials/Indonesian` 폴더에 신규 배포했습니다.
 - **Index Generation Script Improvement**: `scripts/generate_materials_index.ps1`을 수정하여 특정 언어(Korean)에 국한되지 않고 모든 언어 폴더를 스캔하도록 고도화했으며, UTF-8 인코딩 처리를 강화하여 인덱스 파일(`materials_v3.json`)의 무결성을 확보했습니다.
 - **Verification**: `flutter build apk --release`를 통해 빌드 성공을 확인했으며, 생성된 인덱스 파일에 총 19개의 학습 자료가 정상 포함되었음을 검증했습니다.
