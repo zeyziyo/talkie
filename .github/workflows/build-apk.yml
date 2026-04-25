@@ -85,8 +85,23 @@ jobs:
     - name: Build APK (Release)
       env:
         FLUTTER_ROOT: ${{ env.FLUTTER_ROOT }}
-      run: flutter build apk --release --verbose
+      run: |
+        if ! flutter build apk --release --verbose > build_verbose_log.txt 2>&1; then
+          echo "=========================================================="
+          echo "::error::BUILD FAILED! Printing last 150 lines of log:"
+          echo "=========================================================="
+          tail -n 150 build_verbose_log.txt
+          exit 1
+        fi
       
+    - name: Upload Build Log
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: build-error-log
+        path: build_verbose_log.txt
+        retention-days: 3
+
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
@@ -97,7 +112,14 @@ jobs:
     - name: Build App Bundle (AAB)
       env:
         FLUTTER_ROOT: ${{ env.FLUTTER_ROOT }}
-      run: flutter build appbundle --release --verbose
+      run: |
+        if ! flutter build appbundle --release --verbose > build_aab_log.txt 2>&1; then
+          echo "=========================================================="
+          echo "::error::BUILD FAILED! Printing last 150 lines of log:"
+          echo "=========================================================="
+          tail -n 150 build_aab_log.txt
+          exit 1
+        fi
       
     - name: Upload AAB
       uses: actions/upload-artifact@v4
