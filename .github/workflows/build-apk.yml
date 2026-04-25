@@ -83,6 +83,8 @@ jobs:
         echo "KAKAO_JAVASCRIPT_KEY=${{ secrets.KAKAO_JAVASCRIPT_KEY }}" >> .env
 
     - name: Build APK (Release)
+      env:
+        FLUTTER_ROOT: ${{ env.FLUTTER_ROOT }}
       run: flutter build apk --release --verbose
       
     - name: Upload APK
@@ -93,6 +95,8 @@ jobs:
         retention-days: 7
 
     - name: Build App Bundle (AAB)
+      env:
+        FLUTTER_ROOT: ${{ env.FLUTTER_ROOT }}
       run: flutter build appbundle --release --verbose
       
     - name: Upload AAB
