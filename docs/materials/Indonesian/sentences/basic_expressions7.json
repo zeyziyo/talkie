@@ -1,0 +1,38 @@
+{
+    "default_type": "sentence",
+    "subject": "Taksi 1",
+    "entries": [
+        {
+            "text": "Taksi!",
+            "note": "",
+            "tags": [
+                "transportasi",
+                "taksi"
+            ]
+        },
+        {
+            "text": "Mau ke mana?",
+            "note": "",
+            "tags": [
+                "taksi",
+                "pertanyaan"
+            ]
+        },
+        {
+            "text": "Saya mau ke hotel, ya.",
+            "note": "",
+            "tags": [
+                "taksi",
+                "tujuan"
+            ]
+        },
+        {
+            "text": "Ambil saja kembaliannya.",
+            "note": "",
+            "tags": [
+                "taksi",
+                "pembayaran"
+            ]
+        }
+    ]
+}

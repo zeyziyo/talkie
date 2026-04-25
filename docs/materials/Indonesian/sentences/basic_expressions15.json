@@ -1,0 +1,30 @@
+{
+    "default_type": "sentence",
+    "subject": "Pantai 1",
+    "entries": [
+        {
+            "text": "Bisa berenang di sini?",
+            "note": "",
+            "tags": [
+                "pantai",
+                "pertanyaan"
+            ]
+        },
+        {
+            "text": "Tolong handuknya.",
+            "note": "",
+            "tags": [
+                "pantai",
+                "permintaan"
+            ]
+        },
+        {
+            "text": "Lautnya indah sekali!",
+            "note": "",
+            "tags": [
+                "pantai",
+                "pendapat"
+            ]
+        }
+    ]
+}

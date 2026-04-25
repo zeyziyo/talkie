@@ -1,0 +1,54 @@
+{
+    "default_type": "sentence",
+    "subject": "Percakapan 1",
+    "entries": [
+        {
+            "text": "Hai. Apa kabar?",
+            "note": "",
+            "tags": [
+                "percakapan",
+                "salam"
+            ]
+        },
+        {
+            "text": "Kabar saya baik, terima kasih.",
+            "note": "",
+            "tags": [
+                "percakapan",
+                "jawaban"
+            ]
+        },
+        {
+            "text": "Apakah Anda bisa berbahasa Inggris?",
+            "note": "",
+            "tags": [
+                "percakapan",
+                "bahasa"
+            ]
+        },
+        {
+            "text": "Anda berasal dari mana?",
+            "note": "",
+            "tags": [
+                "percakapan",
+                "perkenalan"
+            ]
+        },
+        {
+            "text": "Nama saya adalah ...",
+            "note": "",
+            "tags": [
+                "percakapan",
+                "perkenalan"
+            ]
+        },
+        {
+            "text": "Saya sedang berlibur.",
+            "note": "",
+            "tags": [
+                "percakapan",
+                "perjalanan"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "default_type": "word",
+    "subject": "Angka 1",
+    "entries": [
+        {
+            "text": "nol",
+            "note": "",
+            "tags": ["dasar", "angka"]
+        },
+        {
+            "text": "satu",
+            "note": "",
+            "tags": ["dasar", "angka"]
+        },
+        {
+            "text": "dua",
+            "note": "",
+            "tags": ["dasar", "angka"]
+        },
+        {
+            "text": "sepuluh",
+            "note": "",
+            "tags": ["dasar", "angka"]
+        },
+        {
+            "text": "ratus",
+            "note": "",
+            "tags": ["angka"]
+        },
+        {
+            "text": "ribu",
+            "note": "",
+            "tags": ["angka"]
+        }
+    ]
+}

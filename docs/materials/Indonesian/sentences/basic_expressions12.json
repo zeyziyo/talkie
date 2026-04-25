@@ -1,0 +1,30 @@
+{
+    "default_type": "sentence",
+    "subject": "Perpisahan 1",
+    "entries": [
+        {
+            "text": "Selamat tinggal!",
+            "note": "",
+            "tags": [
+                "salam",
+                "perpisahan"
+            ]
+        },
+        {
+            "text": "Sampai jumpa besok.",
+            "note": "",
+            "tags": [
+                "salam",
+                "perpisahan"
+            ]
+        },
+        {
+            "text": "Hati-hati.",
+            "note": "",
+            "tags": [
+                "salam",
+                "perpisahan"
+            ]
+        }
+    ]
+}

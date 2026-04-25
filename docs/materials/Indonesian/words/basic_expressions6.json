@@ -1,0 +1,41 @@
+{
+    "default_type": "word",
+    "subject": "Waktu dan Tanggal 1",
+    "entries": [
+        {
+            "text": "hari ini",
+            "note": "",
+            "tags": ["waktu", "dasar"]
+        },
+        {
+            "text": "kemarin",
+            "note": "",
+            "tags": ["waktu", "dasar"]
+        },
+        {
+            "text": "besok",
+            "note": "",
+            "tags": ["waktu", "dasar"]
+        },
+        {
+            "text": "Senin",
+            "note": "",
+            "tags": ["dasar", "hari"]
+        },
+        {
+            "text": "Selasa",
+            "note": "",
+            "tags": ["dasar", "hari"]
+        },
+        {
+            "text": "Januari",
+            "note": "",
+            "tags": ["dasar", "bulan"]
+        },
+        {
+            "text": "Februari",
+            "note": "",
+            "tags": ["dasar", "bulan"]
+        }
+    ]
+}

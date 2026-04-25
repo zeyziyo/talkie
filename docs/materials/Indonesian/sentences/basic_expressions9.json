@@ -1,0 +1,38 @@
+{
+    "default_type": "sentence",
+    "subject": "Emosi 1",
+    "entries": [
+        {
+            "text": "Saya senang.",
+            "note": "",
+            "tags": [
+                "emosi",
+                "positif"
+            ]
+        },
+        {
+            "text": "Saya sedih.",
+            "note": "",
+            "tags": [
+                "negatif",
+                "emosi"
+            ]
+        },
+        {
+            "text": "Saya lelah.",
+            "note": "",
+            "tags": [
+                "fisik",
+                "emosi"
+            ]
+        },
+        {
+            "text": "Saya lapar.",
+            "note": "",
+            "tags": [
+                "fisik",
+                "emosi"
+            ]
+        }
+    ]
+}

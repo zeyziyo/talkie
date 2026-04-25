@@ -1,0 +1,38 @@
+{
+    "default_type": "sentence",
+    "subject": "Bar dan Kafe 1",
+    "entries": [
+        {
+            "text": "Mau minum sesuatu?",
+            "note": "",
+            "tags": [
+                "bar",
+                "minuman"
+            ]
+        },
+        {
+            "text": "Tolong satu bir.",
+            "note": "",
+            "tags": [
+                "bar",
+                "pesanan"
+            ]
+        },
+        {
+            "text": "Tos!",
+            "note": "",
+            "tags": [
+                "bar",
+                "tos"
+            ]
+        },
+        {
+            "text": "Tolong bonnya.",
+            "note": "",
+            "tags": [
+                "bar",
+                "pembayaran"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "default_type": "word",
+    "subject": "Kata Benda 1",
+    "entries": [
+        {
+            "text": "Orang",
+            "note": "",
+            "tags": ["kata benda"]
+        },
+        {
+            "text": "Air",
+            "note": "",
+            "tags": ["kata benda"]
+        },
+        {
+            "text": "Nasi / Makanan",
+            "note": "",
+            "tags": ["kata benda"]
+        },
+        {
+            "text": "Roti",
+            "note": "",
+            "tags": ["kata benda"]
+        },
+        {
+            "text": "Apel",
+            "note": "",
+            "tags": ["kata benda"]
+        },
+        {
+            "text": "Susu",
+            "note": "",
+            "tags": ["kata benda"]
+        },
+        {
+            "text": "Daging",
+            "note": "",
+            "tags": ["kata benda"]
+        },
+        {
+            "text": "Pakaian",
+            "note": "",
+            "tags": ["kata benda"]
+        },
+        {
+            "text": "Rumah",
+            "note": "",
+            "tags": ["kata benda"]
+        },
+        {
+            "text": "Buku",
+            "note": "",
+            "tags": ["kata benda"]
+        }
+    ]
+}

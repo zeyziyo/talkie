@@ -1,0 +1,30 @@
+{
+    "default_type": "sentence",
+    "subject": "Transportasi 1",
+    "entries": [
+        {
+            "text": "Jam berapa keretanya berangkat?",
+            "note": "",
+            "tags": [
+                "kereta",
+                "transportasi"
+            ]
+        },
+        {
+            "text": "Tolong satu tiket ke..., ya.",
+            "note": "",
+            "tags": [
+                "tiket",
+                "transportasi"
+            ]
+        },
+        {
+            "text": "Di mana halte busnya?",
+            "note": "",
+            "tags": [
+                "bus",
+                "transportasi"
+            ]
+        }
+    ]
+}

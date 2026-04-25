@@ -1,47 +1,57 @@
 # scripts/generate_materials_index.ps1
 # Scan docs/materials/Korean and generate docs/materials_v3.json
 
-$baseDir = "docs/materials/Korean"
+$materialsRoot = "docs/materials"
 $outputFile = "docs/materials_v3.json"
 $categories = @("dialogues", "words", "sentences")
 
-$materials = @()
+$materialsMap = @{} # Use a map to ensure unique IDs across languages
 
-foreach ($category in $categories) {
-    $path = Join-Path $baseDir $category
-    if (Test-Path $path) {
-        $files = Get-ChildItem -Path $path -Filter "*.json"
-        foreach ($file in $files) {
-            try {
-                $content = Get-Content -Path $file.FullName -Raw | ConvertFrom-Json
-                
+# Scan all language directories
+$langDirs = Get-ChildItem -Path $materialsRoot -Directory
+foreach ($langDir in $langDirs) {
+    foreach ($category in $categories) {
+        $path = Join-Path $langDir.FullName $category
+        if (Test-Path $path) {
+            $files = Get-ChildItem -Path $path -Filter "*.json"
+            foreach ($file in $files) {
                 $id = $file.BaseName
-                $name = if ($content.subject) { $content.subject } else { $id }
-                $description = if ($content.description) { $content.description } else { "$category material: $id" }
-                
-                # Normalize category names for display
-                $displayCategory = switch ($category) {
-                    "dialogues" { "Dialogue" }
-                    "words" { "Words" }
-                    "sentences" { "Sentences" }
-                    default { $category }
-                }
+                if ($materialsMap.ContainsKey($id)) { continue }
 
-                $materials += @{
-                    id          = $id
-                    name        = $name
-                    description = $description
-                    category    = $displayCategory
-                    path        = "$category/$($file.Name)"
+                try {
+                    # Explicitly use UTF8 encoding for reading
+                    $content = Get-Content -Path $file.FullName -Raw -Encoding utf8 | ConvertFrom-Json
+                    
+                    $name = if ($content.subject) { $content.subject } else { $id }
+                    $description = if ($content.description) { $content.description } else { "$category material: $id" }
+                    
+                    # Normalize category names for display
+                    $displayCategory = switch ($category) {
+                        "dialogues" { "Dialogue" }
+                        "words" { "Words" }
+                        "sentences" { "Sentences" }
+                        default { $category }
+                    }
+
+                    $materialsMap[$id] = @{
+                        id          = $id
+                        name        = $name
+                        description = $description
+                        category    = $displayCategory
+                        path        = "$category/$($file.Name)"
+                    }
+                    Write-Host "Found: [$displayCategory] $name (from $($langDir.Name))"
                 }
-                Write-Host "Found: [$displayCategory] $name"
-            }
-            catch {
-                Write-Warning "Failed to parse $($file.FullName): $_"
+                catch {
+                    # Skip if parsing fails, will try other languages
+                    # Write-Warning "Skipping $($file.FullName) due to parse error: $_"
+                }
             }
         }
     }
 }
+
+$materials = $materialsMap.Values | Sort-Object { $_.category, $_.id }
 
 $index = @{
     version    = "3.0"

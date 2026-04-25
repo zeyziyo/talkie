@@ -1,0 +1,71 @@
+{
+    "default_type": "word",
+    "subject": "Warna 1",
+    "entries": [
+        {
+            "text": "merah",
+            "note": "",
+            "tags": ["warna", "dasar"]
+        },
+        {
+            "text": "biru",
+            "note": "",
+            "tags": ["warna", "dasar"]
+        },
+        {
+            "text": "kuning",
+            "note": "",
+            "tags": ["warna", "dasar"]
+        },
+        {
+            "text": "hijau",
+            "note": "",
+            "tags": ["warna", "dasar"]
+        },
+        {
+            "text": "oranye",
+            "note": "",
+            "tags": ["warna", "dasar"]
+        },
+        {
+            "text": "ungu",
+            "note": "",
+            "tags": ["warna", "dasar"]
+        },
+        {
+            "text": "putih",
+            "note": "",
+            "tags": ["warna", "dasar"]
+        },
+        {
+            "text": "hitam",
+            "note": "",
+            "tags": ["warna", "dasar"]
+        },
+        {
+            "text": "abu-abu",
+            "note": "",
+            "tags": ["warna", "dasar"]
+        },
+        {
+            "text": "cokelat",
+            "note": "",
+            "tags": ["warna"]
+        },
+        {
+            "text": "merah muda",
+            "note": "",
+            "tags": ["warna"]
+        },
+        {
+            "text": "emas",
+            "note": "",
+            "tags": ["warna"]
+        },
+        {
+            "text": "perak",
+            "note": "",
+            "tags": ["warna"]
+        }
+    ]
+}

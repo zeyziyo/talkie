@@ -1,0 +1,38 @@
+{
+    "default_type": "sentence",
+    "subject": "Frasa Pembelajaran 1",
+    "entries": [
+        {
+            "text": "Apa arti dari ini?",
+            "note": "",
+            "tags": [
+                "pembelajaran",
+                "pertanyaan"
+            ]
+        },
+        {
+            "text": "Bagaimana cara mengatakannya dalam bahasa Inggris?",
+            "note": "",
+            "tags": [
+                "bahasa",
+                "pembelajaran"
+            ]
+        },
+        {
+            "text": "Bisa tolong ulangi?",
+            "note": "",
+            "tags": [
+                "pembelajaran",
+                "permintaan"
+            ]
+        },
+        {
+            "text": "Tolong bicara lebih lambat.",
+            "note": "",
+            "tags": [
+                "pembelajaran",
+                "permintaan"
+            ]
+        }
+    ]
+}

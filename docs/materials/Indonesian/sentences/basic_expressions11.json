@@ -1,0 +1,30 @@
+{
+    "default_type": "sentence",
+    "subject": "Restoran 1",
+    "entries": [
+        {
+            "text": "Mau pesan apa?",
+            "note": "",
+            "tags": [
+                "restoran",
+                "pesanan"
+            ]
+        },
+        {
+            "text": "Tolong menunya.",
+            "note": "",
+            "tags": [
+                "restoran",
+                "permintaan"
+            ]
+        },
+        {
+            "text": "Ini enak sekali!",
+            "note": "",
+            "tags": [
+                "restoran",
+                "pendapat"
+            ]
+        }
+    ]
+}

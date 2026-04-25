@@ -1,0 +1,38 @@
+{
+    "default_type": "sentence",
+    "subject": "Darurat 1",
+    "entries": [
+        {
+            "text": "Tolong!",
+            "note": "",
+            "tags": [
+                "darurat",
+                "penting"
+            ]
+        },
+        {
+            "text": "Panggil dokter!",
+            "note": "",
+            "tags": [
+                "medis",
+                "darurat"
+            ]
+        },
+        {
+            "text": "Saya baru saja dirampok.",
+            "note": "",
+            "tags": [
+                "darurat",
+                "kejahatan"
+            ]
+        },
+        {
+            "text": "Ini keadaan darurat.",
+            "note": "",
+            "tags": [
+                "darurat",
+                "penting"
+            ]
+        }
+    ]
+}

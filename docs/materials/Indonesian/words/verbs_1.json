@@ -1,0 +1,56 @@
+{
+    "default_type": "word",
+    "subject": "Kata Kerja 1",
+    "entries": [
+        {
+            "text": "Pergi",
+            "note": "",
+            "tags": ["kata kerja"]
+        },
+        {
+            "text": "Datang",
+            "note": "",
+            "tags": ["kata kerja"]
+        },
+        {
+            "text": "Makan",
+            "note": "",
+            "tags": ["kata kerja"]
+        },
+        {
+            "text": "Minum",
+            "note": "",
+            "tags": ["kata kerja"]
+        },
+        {
+            "text": "Tidur",
+            "note": "",
+            "tags": ["kata kerja"]
+        },
+        {
+            "text": "Melihat / Menonton",
+            "note": "",
+            "tags": ["kata kerja"]
+        },
+        {
+            "text": "Beli",
+            "note": "",
+            "tags": ["kata kerja"]
+        },
+        {
+            "text": "Jual",
+            "note": "",
+            "tags": ["kata kerja"]
+        },
+        {
+            "text": "Baca",
+            "note": "",
+            "tags": ["kata kerja"]
+        },
+        {
+            "text": "Tulis",
+            "note": "",
+            "tags": ["kata kerja"]
+        }
+    ]
+}

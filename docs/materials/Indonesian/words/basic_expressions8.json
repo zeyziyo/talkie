@@ -1,0 +1,36 @@
+{
+    "default_type": "word",
+    "subject": "Keluarga 1",
+    "entries": [
+        {
+            "text": "ayah",
+            "note": "",
+            "tags": ["dasar", "keluarga"]
+        },
+        {
+            "text": "ibu",
+            "note": "",
+            "tags": ["dasar", "keluarga"]
+        },
+        {
+            "text": "anak laki-laki",
+            "note": "",
+            "tags": ["keluarga"]
+        },
+        {
+            "text": "anak perempuan",
+            "note": "",
+            "tags": ["keluarga"]
+        },
+        {
+            "text": "saudara laki-laki",
+            "note": "",
+            "tags": ["keluarga"]
+        },
+        {
+            "text": "saudara perempuan",
+            "note": "",
+            "tags": ["keluarga"]
+        }
+    ]
+}

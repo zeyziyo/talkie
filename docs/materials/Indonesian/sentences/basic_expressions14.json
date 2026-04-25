@@ -1,0 +1,30 @@
+{
+    "default_type": "sentence",
+    "subject": "Hotel 1",
+    "entries": [
+        {
+            "text": "Apakah ada kamar yang tersedia?",
+            "note": "",
+            "tags": [
+                "hotel",
+                "check-in"
+            ]
+        },
+        {
+            "text": "Saya ingin memesan kamar.",
+            "note": "",
+            "tags": [
+                "hotel",
+                "pemesanan"
+            ]
+        },
+        {
+            "text": "Apakah ada Wi-Fi?",
+            "note": "",
+            "tags": [
+                "hotel",
+                "layanan"
+            ]
+        }
+    ]
+}

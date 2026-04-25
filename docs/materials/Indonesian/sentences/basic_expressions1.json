@@ -1,0 +1,86 @@
+{
+    "default_type": "sentence",
+    "subject": "Ungkapan Dasar 1",
+    "entries": [
+        {
+            "text": "Halo!",
+            "note": "Salam umum",
+            "tags": [
+                "salam",
+                "dasar"
+            ]
+        },
+        {
+            "text": "Selamat pagi.",
+            "note": "Salam pagi",
+            "tags": [
+                "salam",
+                "pagi"
+            ]
+        },
+        {
+            "text": "Selamat tinggal.",
+            "note": "Ucapan perpisahan",
+            "tags": [
+                "salam",
+                "perpisahan"
+            ]
+        },
+        {
+            "text": "Ya.",
+            "note": "Afirmasi",
+            "tags": [
+                "jawaban",
+                "dasar"
+            ]
+        },
+        {
+            "text": "Tidak.",
+            "note": "Negasi",
+            "tags": [
+                "jawaban",
+                "dasar"
+            ]
+        },
+        {
+            "text": "Terima kasih.",
+            "note": "Rasa syukur",
+            "tags": [
+                "terima kasih",
+                "penting"
+            ]
+        },
+        {
+            "text": "Sama-sama.",
+            "note": "Jawaban untuk ucapan terima kasih",
+            "tags": [
+                "kesopanan",
+                "jawaban"
+            ]
+        },
+        {
+            "text": "Maaf.",
+            "note": "Permintaan maaf",
+            "tags": [
+                "permintaan maaf",
+                "penting"
+            ]
+        },
+        {
+            "text": "Berapa harganya ini?",
+            "note": "Menanyakan harga",
+            "tags": [
+                "belanja",
+                "pertanyaan"
+            ]
+        },
+        {
+            "text": "Permisi.",
+            "note": "Sopan santun / Perhatian",
+            "tags": [
+                "kesopanan",
+                "dasar"
+            ]
+        }
+    ]
+}
