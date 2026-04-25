@@ -18,7 +18,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.zeyziyo.talkie"
-    compileSdk = 35
+    compileSdk = 34
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -36,7 +36,7 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
-        targetSdk = 35
+        targetSdk = 34
         versionCode = flutter.versionCode
         versionName = flutter.versionName
 
@@ -56,6 +56,7 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.getByName("release")
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
 
@@ -76,15 +77,6 @@ android {
 
 dependencies {
     implementation("androidx.media:media:1.7.0")
-    
-    constraints {
-        implementation("androidx.work:work-runtime:2.10.0") {
-            because("Consistent AndroidX versions to resolve AAR metadata conflicts")
-        }
-        implementation("androidx.lifecycle:lifecycle-runtime:2.8.7") {
-            because("Consistent AndroidX versions to resolve AAR metadata conflicts")
-        }
-    }
 }
 
 flutter {

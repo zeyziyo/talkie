@@ -9,11 +9,9 @@ import io.flutter.plugin.common.MethodChannel
 
 class MainActivity : FlutterActivity() {
     private val CHANNEL = "com.zeyziyo.talkie/settings"
-    private val TTS_SETTINGS_ACTION = "com.android.settings.TTS_SETTINGS"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // 음성 볼륨 컨트롤을 미디어 스트림으로 고정
         volumeControlStream = AudioManager.STREAM_MUSIC
     }
 
@@ -23,7 +21,8 @@ class MainActivity : FlutterActivity() {
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL).setMethodCallHandler { call, result ->
             if (call.method == "openTtsSettings") {
                 try {
-                    val intent = Intent(TTS_SETTINGS_ACTION)
+                    // Using string directly to avoid any reference issues during compilation
+                    val intent = Intent("com.android.settings.TTS_SETTINGS")
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
                     result.success(true)
@@ -36,4 +35,3 @@ class MainActivity : FlutterActivity() {
         }
     }
 }
-
