@@ -75,13 +75,13 @@ android {
 }
 
 dependencies {
-    implementation("androidx.media:media:1.6.0")
+    implementation("androidx.media:media:1.7.0")
     
     constraints {
-        implementation("androidx.work:work-runtime:2.8.1") {
+        implementation("androidx.work:work-runtime:2.10.0") {
             because("Consistent AndroidX versions to resolve AAR metadata conflicts")
         }
-        implementation("androidx.lifecycle:lifecycle-runtime:2.6.1") {
+        implementation("androidx.lifecycle:lifecycle-runtime:2.8.7") {
             because("Consistent AndroidX versions to resolve AAR metadata conflicts")
         }
     }
