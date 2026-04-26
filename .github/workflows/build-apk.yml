@@ -37,13 +37,8 @@ jobs:
     - name: Accept Android Licenses
       run: yes | flutter doctor --android-licenses || true
 
-    - name: Force Clear Gradle Cache
-      run: |
-        cd android
-        chmod +x gradlew
-        ./gradlew clean
-        rm -rf ~/.gradle/caches
-        cd ..
+    - name: Setup Gradle Permissions
+      run: chmod +x android/gradlew
 
     - name: Fix Potential Plugin Path Issues (Robust)
       run: |
