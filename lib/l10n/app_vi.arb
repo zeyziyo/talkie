@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Chọn ảnh để quét",
+  "scanNotSupported": "Ngôn ngữ này không hỗ trợ chức năng quét. OCR hiện chỉ hỗ trợ các ký tự Latinh, tiếng Trung, Devanagari (ví dụ: tiếng Hindi), tiếng Nhật và tiếng Hàn.",
   "scanLabel": "Quét",
   "score": "Độ chính xác: {score}%",
   "@score": {

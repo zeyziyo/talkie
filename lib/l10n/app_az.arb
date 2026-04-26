@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Skan etmək üçün bir şəkil seçin",
+  "scanNotSupported": "Bu dil skan funksiyasını dəstəkləmir. OCR hazırda yalnız Latın, Çin, Devanagari (Hindi və s.), Yapon, Koreya əlifbalarını dəstəkləyir.",
   "scanLabel": "Skan et",
   "score": "Dəqiqlik: {score}%",
   "@score": {
@@ -535,9 +536,9 @@
   "statusDownloading": "Yüklənir: {name}...",
   "@statusDownloading": {
     "placeholders": {
-      "progress": {
+      "name": {
         "type": "String",
-        "example": "50"
+        "example": "100%"
       }
     }
   },
@@ -553,7 +554,7 @@
   "statusImportSuccess": "{name} idxalı tamamlandı",
   "@statusImportSuccess": {
     "placeholders": {
-      "count": {
+      "name": {
         "type": "String",
         "example": "100"
       }

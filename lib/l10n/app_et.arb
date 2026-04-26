@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Vali skaneeritav pilt",
+  "scanNotSupported": "See keel ei toeta skannimist. OCR toetab praegu ainult ladina, hiina, devanaagari (nt hindi), jaapani ja korea märke.",
   "scanLabel": "Skaneeri",
   "score": "Täpsus: {score}%",
   "@score": {

@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "ለመቃኘት ምስል ይምረጡ",
+  "scanNotSupported": "ይህ ቋንቋ የቃኚ መገልገያ ባህሪን አይደግፍም። OCR በአሁኑ ጊዜ የላቲን፣ ቻይንኛ፣ ዴቫናጋሪ (ሂንዲ ወዘተ)፣ ጃፓንኛ እና ኮሪያኛ ፊደላትን ብቻ ነው የሚደግፈው።",
   "scanLabel": "ይቃኙ",
   "score": "ትክክለኛነት: {score}%",
   "@score": {
@@ -535,9 +536,9 @@
   "statusDownloading": "በማውረድ ላይ: {name}...",
   "@statusDownloading": {
     "placeholders": {
-      "progress": {
+      "name": {
         "type": "String",
-        "example": "50"
+        "example": "100%"
       }
     }
   },
@@ -553,7 +554,7 @@
   "statusImportSuccess": "{name} ማስመጣት ተጠናቋል",
   "@statusImportSuccess": {
     "placeholders": {
-      "count": {
+      "name": {
         "type": "String",
         "example": "100"
       }

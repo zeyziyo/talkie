@@ -779,6 +779,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get scanInstructions => 'اختر صورة للمسح';
 
   @override
+  String get scanNotSupported =>
+      'هذه اللغة لا تدعم وظيفة المسح. يدعم التعرف الضوئي على الحروف حاليًا اللاتينية والصينية والديفاناغارية (مثل الهندية) واليابانية والأحرف الكورية فقط.';
+
+  @override
   String get scanLabel => 'مسح';
 
   @override

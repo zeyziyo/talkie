@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "เลือกภาพที่จะสแกน",
+  "scanNotSupported": "ภาษาปัจจุบันไม่รองรับฟังก์ชันสแกน ขณะนี้ OCR รองรับเฉพาะอักษรละติน จีน เทวนาครี (เช่น ภาษาฮินดี) ญี่ปุ่น และเกาหลี",
   "scanLabel": "สแกน",
   "score": "ความแม่นยำ: {score}%",
   "@score": {

@@ -793,6 +793,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get scanInstructions => 'စကင်ဖတ်ရန် ပုံကို ရွေးပါ';
 
   @override
+  String get scanNotSupported =>
+      'ဤဘာသာစကားသည် စကင်ဖတ်ခြင်းကို မပံ့ပိုးပါ။ OCR သည် လက်ရှိတွင် လက်တင်၊ တရုတ်၊ ဒေဝနာဂရီ (ဟိန္ဒီစသည်)၊ ဂျပန်၊ နှင့် ကိုရီးယား အက္ခရာများကိုသာ ပံ့ပိုးထားသည်။';
+
+  @override
   String get scanLabel => 'စကင်ဖတ်';
 
   @override

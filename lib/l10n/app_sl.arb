@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Izberite sliko za skeniranje",
+  "scanNotSupported": "Ta jezik ne podpira funkcije skeniranja. OCR trenutno podpira samo latinične, kitajske, devanagarijske (npr. hindijske), japonske in korejske znake.",
   "scanLabel": "Skeniraj",
   "score": "Točnost: {score} %",
   "@score": {

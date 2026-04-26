@@ -784,6 +784,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get scanInstructions => 'اسکین کرنے کے لیے تصویر منتخب کریں۔';
 
   @override
+  String get scanNotSupported =>
+      'یہ زبان اسکین کی خصوصیت کو سپورٹ نہیں کرتی ہے۔ OCR فی الحال صرف لاطینی، چینی، دیوناگری (ہندی وغیرہ)، جاپانی اور کورین حروف کو سپورٹ کرتا ہے۔';
+
+  @override
   String get scanLabel => 'اسکین';
 
   @override

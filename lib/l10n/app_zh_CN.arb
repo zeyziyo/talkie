@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "选择要扫描的图像",
+  "scanNotSupported": "此语言不支持扫描功能。OCR 目前仅支持拉丁文、中文、梵文（印地语等）、日文和韩文字符。",
   "scanLabel": "扫描",
   "score": "准确率: {score}%",
   "@score": {

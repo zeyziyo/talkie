@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Kies 'n prent om te skandeer",
+  "scanNotSupported": "Hierdie taal word nie deur skandering ondersteun nie. OCR ondersteun tans slegs Latynse, Chinese, Devanagari (bv. Hindi), Japannese en Koreaanse karakters.",
   "scanLabel": "Skandeer",
   "score": "Akkuraatheid: {score}%",
   "@score": {

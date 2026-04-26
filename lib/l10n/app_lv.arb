@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Atlasiet skenējamo attēlu",
+  "scanNotSupported": "Šī valoda neatbalsta skenēšanas funkcionalitāti. OCR pašlaik atbalsta tikai latīņu, ķīniešu, devanagari (hindi u.c.), japāņu un korejiešu rakstzīmes.",
   "scanLabel": "Skenēt",
   "score": "Precizitāte: {score}%",
   "@score": {

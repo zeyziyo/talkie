@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Selecione uma imagem para digitalizar",
+  "scanNotSupported": "Este idioma não oferece suporte ao recurso de digitalização. Atualmente, o OCR só oferece suporte a caracteres latinos, chineses, devanágari (como hindi), japoneses e coreanos.",
   "scanLabel": "Digitalizar",
   "score": "Precisão: {score}%",
   "@score": {

@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "請選擇要掃描的圖片",
+  "scanNotSupported": "此語言不支援掃描功能。目前 OCR 僅支援拉丁字母、中文、天城文（印地語等）、日文和韓文字元。",
   "scanLabel": "掃描",
   "score": "準確率: {score}%",
   "@score": {

@@ -783,6 +783,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get scanInstructions => 'Aukeratu eskaneatzeko irudi bat';
 
   @override
+  String get scanNotSupported =>
+      'Hizkuntza honek ez du eskaneatzea onartzen. Une honetan, OCR-k latindar, txinatar, devanagari (hindia eta abar), japoniera eta koreera karaktereak soilik onartzen ditu.';
+
+  @override
   String get scanLabel => 'Eskaneatu';
 
   @override

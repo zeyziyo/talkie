@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Dewiswch ddelwedd i'w sganio",
+  "scanNotSupported": "Nid yw’r iaith hon yn cefnogi sganio. Ar hyn o bryd, dim ond llythrennau Lladin, Tsieineaidd, Devanagari (Hindi, ac ati), Japaneaidd a Choreaidd y mae OCR yn eu cefnogi.",
   "scanLabel": "Sganio",
   "score": "Cywirdeb: {score}%",
   "@score": {

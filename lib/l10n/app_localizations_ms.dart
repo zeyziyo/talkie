@@ -784,6 +784,10 @@ class AppLocalizationsMs extends AppLocalizations {
   String get scanInstructions => 'Pilih imej untuk diimbas';
 
   @override
+  String get scanNotSupported =>
+      'Bahasa ini tidak menyokong ciri imbasan. OCR kini hanya menyokong aksara Latin, Cina, Devanagari (cth., Hindi), Jepun dan Korea.';
+
+  @override
   String get scanLabel => 'Imbas';
 
   @override

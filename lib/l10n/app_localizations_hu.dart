@@ -785,6 +785,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get scanInstructions => 'Válassza ki a szkennelni kívánt képet';
 
   @override
+  String get scanNotSupported =>
+      'Ez a nyelv nem támogatja a szkennelést. Az OCR jelenleg csak a latin, kínai, dévanágari (pl. hindi), japán és koreai karaktereket támogatja.';
+
+  @override
   String get scanLabel => 'Szkennelés';
 
   @override

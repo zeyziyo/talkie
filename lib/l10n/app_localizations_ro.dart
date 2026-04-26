@@ -790,6 +790,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get scanInstructions => 'Selectați o imagine de scanat';
 
   @override
+  String get scanNotSupported =>
+      'Scanarea nu este acceptată pentru această limbă. OCR suportă în prezent doar caractere latine, chineze, devanagari (cum ar fi hindi), japoneze și coreene.';
+
+  @override
   String get scanLabel => 'Scanează';
 
   @override

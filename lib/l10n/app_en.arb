@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Select an image to scan",
+  "scanNotSupported": "Scan is not available for your language. OCR currently supports Latin, Chinese, Japanese, and Korean scripts.",
   "scanLabel": "Scan",
   "score": "Accuracy: {score}%",
   "@score": {

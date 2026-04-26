@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Taranacak bir resim seçin",
+  "scanNotSupported": "Bu dil, tarama özelliğini desteklemiyor. OCR şu anda yalnızca Latin, Çince, Devanagari (Hintçe vb.), Japonca ve Korece karakterleri destekliyor.",
   "scanLabel": "Tara",
   "score": "Doğruluk: {score}%",
   "@score": {

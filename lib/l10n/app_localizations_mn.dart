@@ -783,6 +783,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get scanInstructions => 'Скан хийх зургаа сонгоно уу';
 
   @override
+  String get scanNotSupported =>
+      'Энэ хэл скан хийх боломжгүй. OCR нь зөвхөн латин, хятад, деванагари (хинди гэх мэт), япон, солонгос үсгийг дэмждэг.';
+
+  @override
   String get scanLabel => 'Скан';
 
   @override

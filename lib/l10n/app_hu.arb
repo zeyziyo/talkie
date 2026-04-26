@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Válassza ki a szkennelni kívánt képet",
+  "scanNotSupported": "Ez a nyelv nem támogatja a szkennelést. Az OCR jelenleg csak a latin, kínai, dévanágari (pl. hindi), japán és koreai karaktereket támogatja.",
   "scanLabel": "Szkennelés",
   "score": "Pontosság: {score}%",
   "@score": {

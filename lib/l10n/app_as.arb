@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "স্কেন কৰিবলৈ এটা ছবি বাছক",
+  "scanNotSupported": "এই ভাষাটোত স্কেন কাৰ্য্যকৰী নহয়। OCR-এ বৰ্তমান লেটিন, চীনা, দেৱনাগৰী (হিন্দী আদি), জাপানী, আৰু কোৰিয়ান আখৰসমূহহে সমৰ্থন কৰে।",
   "scanLabel": "স্কেন কৰক",
   "score": "সঠিকতা: {score}%",
   "@score": {
@@ -535,9 +536,9 @@
   "statusDownloading": "ডাউনলোড হৈ আছে: {name}...",
   "@statusDownloading": {
     "placeholders": {
-      "progress": {
+      "name": {
         "type": "String",
-        "example": "50"
+        "example": "100%"
       }
     }
   },
@@ -553,7 +554,7 @@
   "statusImportSuccess": "{name} ইম্পৰ্ট সফল হ’ল",
   "@statusImportSuccess": {
     "placeholders": {
-      "count": {
+      "name": {
         "type": "String",
         "example": "100"
       }

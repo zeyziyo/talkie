@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Skanlash uchun rasmni tanlang",
+  "scanNotSupported": "Bu til skanerlash funksiyasini qo‘llab-quvvatlamaydi. OCR hozirda faqat lotin, xitoy, devanagari (hind va boshqalar), yapon, koreys tillarini qo‘llab-quvvatlaydi.",
   "scanLabel": "Skanlash",
   "score": "Aniq: {score}%",
   "@score": {

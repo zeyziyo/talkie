@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Pumili ng imahe na i-scan",
+  "scanNotSupported": "Hindi sinusuportahan ng wikang ito ang pag-scan. Sinusuportahan lang ng OCR ang mga Latin, Chinese, Devanagari (tulad ng Hindi), Japanese, at Korean na character sa ngayon.",
   "scanLabel": "I-scan",
   "score": "Score: {score}%",
   "@score": {

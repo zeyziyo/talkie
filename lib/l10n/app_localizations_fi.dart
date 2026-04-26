@@ -785,6 +785,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get scanInstructions => 'Valitse skannattava kuva';
 
   @override
+  String get scanNotSupported =>
+      'Tämä kieli ei tue skannausta. OCR tukee tällä hetkellä vain latinalaisia, kiinalaisia, devanagari (esim. hindi), japanilaisia ja korealaisia merkkejä.';
+
+  @override
   String get scanLabel => 'Skannaa';
 
   @override

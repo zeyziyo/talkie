@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Pasirinkite vaizdą, kurį norite nuskaityti",
+  "scanNotSupported": "Ši kalba nepalaiko nuskaitymo funkcijos. OCR šiuo metu palaiko tik lotynų, kinų, devanagari (hindi ir kt.), japonų ir korėjiečių rašmenis.",
   "scanLabel": "Skenuoti",
   "score": "Tikslumas: {score}%",
   "@score": {

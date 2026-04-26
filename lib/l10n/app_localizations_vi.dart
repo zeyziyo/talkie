@@ -779,6 +779,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get scanInstructions => 'Chọn ảnh để quét';
 
   @override
+  String get scanNotSupported =>
+      'Ngôn ngữ này không hỗ trợ chức năng quét. OCR hiện chỉ hỗ trợ các ký tự Latinh, tiếng Trung, Devanagari (ví dụ: tiếng Hindi), tiếng Nhật và tiếng Hàn.';
+
+  @override
   String get scanLabel => 'Quét';
 
   @override

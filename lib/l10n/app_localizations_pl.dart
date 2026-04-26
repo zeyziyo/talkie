@@ -785,6 +785,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String get scanInstructions => 'Wybierz obraz do zeskanowania';
 
   @override
+  String get scanNotSupported =>
+      'Skanowanie nie jest obsługiwane w tym języku. OCR aktualnie obsługuje tylko znaki łacińskie, chińskie, dewanagari (np. hindi), japońskie i koreańskie.';
+
+  @override
   String get scanLabel => 'Skanuj';
 
   @override

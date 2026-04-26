@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Pilih imej untuk diimbas",
+  "scanNotSupported": "Bahasa ini tidak menyokong ciri imbasan. OCR kini hanya menyokong aksara Latin, Cina, Devanagari (cth., Hindi), Jepun dan Korea.",
   "scanLabel": "Imbas",
   "score": "Ketepatan: {score}%",
   "@score": {

@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Selecciona una imagen para escanear",
+  "scanNotSupported": "Este idioma no es compatible con la función de escaneo. El OCR actualmente solo es compatible con caracteres latinos, chinos, devanagari (como hindi), japoneses y coreanos.",
   "scanLabel": "Escanear",
   "score": "Precisión: {score}%",
   "@score": {
@@ -535,9 +536,9 @@
   "statusDownloading": "Descargando: {name}...",
   "@statusDownloading": {
     "placeholders": {
-      "progress": {
+      "name": {
         "type": "String",
-        "example": "50"
+        "example": "100%"
       }
     }
   },
@@ -553,7 +554,7 @@
   "statusImportSuccess": "{name} importado correctamente",
   "@statusImportSuccess": {
     "placeholders": {
-      "count": {
+      "name": {
         "type": "String",
         "example": "100"
       }

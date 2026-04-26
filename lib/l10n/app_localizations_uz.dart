@@ -788,6 +788,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get scanInstructions => 'Skanlash uchun rasmni tanlang';
 
   @override
+  String get scanNotSupported =>
+      'Bu til skanerlash funksiyasini qo‘llab-quvvatlamaydi. OCR hozirda faqat lotin, xitoy, devanagari (hind va boshqalar), yapon, koreys tillarini qo‘llab-quvvatlaydi.';
+
+  @override
   String get scanLabel => 'Skanlash';
 
   @override

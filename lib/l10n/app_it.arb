@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Seleziona un'immagine da scansionare",
+  "scanNotSupported": "La scansione non è supportata in questa lingua. L'OCR supporta attualmente solo caratteri latini, cinesi, devanagari (come l'hindi), giapponesi e coreani.",
   "scanLabel": "Scansiona",
   "score": "Precisione: {score}%",
   "@score": {

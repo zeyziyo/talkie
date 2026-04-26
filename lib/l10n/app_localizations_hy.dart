@@ -789,6 +789,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get scanInstructions => 'Ընտրեք սկանավորելու պատկերը';
 
   @override
+  String get scanNotSupported =>
+      'Այս լեզուն չի ապահովում սկանավորումը: OCR-ը ներկայումս ապահովում է միայն լատիներեն, չինարեն, դեւանագարի (հինդի եւ այլն), ճապոներեն և կորեերեն տառերը:';
+
+  @override
   String get scanLabel => 'Սկանավորել';
 
   @override

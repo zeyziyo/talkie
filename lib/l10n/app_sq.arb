@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Zgjidhni imazhin për ta skanuar",
+  "scanNotSupported": "Skanimi nuk mbështetet në këtë gjuhë. OCR aktualisht mbështet vetëm shkronjat latine, kineze, devanagari (p.sh. hindi), japoneze dhe koreane.",
   "scanLabel": "Skano",
   "score": "Saktësia: {score}%",
   "@score": {

@@ -786,6 +786,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get scanInstructions => 'Επιλέξτε μια εικόνα για σάρωση';
 
   @override
+  String get scanNotSupported =>
+      'Αυτή η γλώσσα δεν υποστηρίζει τη λειτουργία σάρωσης. Η OCR υποστηρίζει επί του παρόντος μόνο λατινικούς, κινεζικούς, χαρακτήρες Devanagari (όπως τα Χίντι), ιαπωνικούς και κορεατικούς χαρακτήρες.';
+
+  @override
   String get scanLabel => 'Σάρωση';
 
   @override

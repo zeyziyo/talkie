@@ -778,6 +778,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get scanInstructions => 'ເລືອກຮູບພາບທີ່ຈະສະແກນ';
 
   @override
+  String get scanNotSupported =>
+      'ພາສາ​ນີ້​ບໍ່​ຮອງ​ຮັບ​ຄຸນ​ສົມ​ບັດ​ການ​ສະ​ແກນ. OCR ຮອງ​ຮັບ​ພຽງ​ແຕ່​ຕົວ​ອັກ​ສອນ​ລາ​ຕິນ, ຈີນ, Devanagari (ເຊັ່ນ: ພາ​ສາ​ຮິນ​ດູ), ຍີ່​ປຸ່ນ​ແລະ​ເກົາ​ຫຼີ​ໃນ​ປັດ​ຈຸ​ບັນ​ເທົ່າ​ນັ້ນ.';
+
+  @override
   String get scanLabel => 'ສະແກນ';
 
   @override

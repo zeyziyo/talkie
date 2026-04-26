@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Wybierz obraz do zeskanowania",
+  "scanNotSupported": "Skanowanie nie jest obsługiwane w tym języku. OCR aktualnie obsługuje tylko znaki łacińskie, chińskie, dewanagari (np. hindi), japońskie i koreańskie.",
   "scanLabel": "Skanuj",
   "score": "Dokładność: {score}%",
   "@score": {

@@ -791,6 +791,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get scanInstructions => 'Dewiswch ddelwedd i\'w sganio';
 
   @override
+  String get scanNotSupported =>
+      'Nid yw’r iaith hon yn cefnogi sganio. Ar hyn o bryd, dim ond llythrennau Lladin, Tsieineaidd, Devanagari (Hindi, ac ati), Japaneaidd a Choreaidd y mae OCR yn eu cefnogi.';
+
+  @override
   String get scanLabel => 'Sganio';
 
   @override

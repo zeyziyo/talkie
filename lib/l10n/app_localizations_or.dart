@@ -787,6 +787,10 @@ class AppLocalizationsOr extends AppLocalizations {
   String get scanInstructions => 'ସ୍କାନ୍ କରିବା ପାଇଁ ଏକ ଛବି ବାଛନ୍ତୁ';
 
   @override
+  String get scanNotSupported =>
+      'ଏହି ଭାଷା ସ୍କାନିଂକୁ ସମର୍ଥନ କରେ ନାହିଁ। OCR କେବଳ ଲାଟିନ୍, ଚାଇନିଜ୍, ଦେବନାଗରୀ (ହିନ୍ଦୀ ଇତ୍ୟାଦି), ଜାପାନୀ, ଏବଂ କୋରିଆନ୍ ଅକ୍ଷରକୁ ସମର୍ଥନ କରେ।';
+
+  @override
   String get scanLabel => 'ସ୍କାନ୍';
 
   @override

@@ -792,6 +792,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get scanInstructions => 'ஸ்கேன் செய்ய ஒரு படத்தைத் தேர்ந்தெடுக்கவும்';
 
   @override
+  String get scanNotSupported =>
+      'இந்த மொழிக்கு ஸ்கேன் வசதி கிடையாது. தற்போது OCR லத்தீன், சீனம், தேவநாகரி (ஹிந்தி போன்றவை), ஜப்பானியம், கொரிய மொழிகளை மட்டுமே ஆதரிக்கிறது.';
+
+  @override
   String get scanLabel => 'ஸ்கேன்';
 
   @override

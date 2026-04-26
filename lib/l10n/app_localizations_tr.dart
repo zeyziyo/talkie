@@ -784,6 +784,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get scanInstructions => 'Taranacak bir resim seçin';
 
   @override
+  String get scanNotSupported =>
+      'Bu dil, tarama özelliğini desteklemiyor. OCR şu anda yalnızca Latin, Çince, Devanagari (Hintçe vb.), Japonca ve Korece karakterleri destekliyor.';
+
+  @override
   String get scanLabel => 'Tara';
 
   @override

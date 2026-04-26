@@ -787,6 +787,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get scanInstructions => 'Selecione uma imagem para digitalizar';
 
   @override
+  String get scanNotSupported =>
+      'Este idioma não oferece suporte ao recurso de digitalização. Atualmente, o OCR só oferece suporte a caracteres latinos, chineses, devanágari (como hindi), japoneses e coreanos.';
+
+  @override
   String get scanLabel => 'Digitalizar';
 
   @override

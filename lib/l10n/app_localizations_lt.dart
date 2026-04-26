@@ -788,6 +788,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get scanInstructions => 'Pasirinkite vaizdą, kurį norite nuskaityti';
 
   @override
+  String get scanNotSupported =>
+      'Ši kalba nepalaiko nuskaitymo funkcijos. OCR šiuo metu palaiko tik lotynų, kinų, devanagari (hindi ir kt.), japonų ir korėjiečių rašmenis.';
+
+  @override
   String get scanLabel => 'Skenuoti';
 
   @override

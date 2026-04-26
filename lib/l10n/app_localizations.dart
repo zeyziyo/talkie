@@ -1692,6 +1692,12 @@ abstract class AppLocalizations {
   /// **'스캔할 이미지를 선택하세요'**
   String get scanInstructions;
 
+  /// No description provided for @scanNotSupported.
+  ///
+  /// In ko, this message translates to:
+  /// **'이 언어는 스캔 기능을 지원하지 않습니다. OCR은 현재 라틴, 중국어, 데바나가리(힌디어 등), 일본어, 한국어 문자만 지원합니다.'**
+  String get scanNotSupported;
+
   /// No description provided for @scanLabel.
   ///
   /// In ko, this message translates to:

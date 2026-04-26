@@ -784,6 +784,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get scanInstructions => 'Виберіть зображення для сканування';
 
   @override
+  String get scanNotSupported =>
+      'Ця мова не підтримує сканування. OCR зараз підтримує лише латинські, китайські, деванагарі (хінді тощо), японські та корейські символи.';
+
+  @override
   String get scanLabel => 'Сканувати';
 
   @override

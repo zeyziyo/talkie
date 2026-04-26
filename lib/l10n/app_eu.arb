@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Aukeratu eskaneatzeko irudi bat",
+  "scanNotSupported": "Hizkuntza honek ez du eskaneatzea onartzen. Une honetan, OCR-k latindar, txinatar, devanagari (hindia eta abar), japoniera eta koreera karaktereak soilik onartzen ditu.",
   "scanLabel": "Eskaneatu",
   "score": "Zehaztasuna: {score}%",
   "@score": {
@@ -535,9 +536,9 @@
   "statusDownloading": "Deskargatzen: {name}...",
   "@statusDownloading": {
     "placeholders": {
-      "progress": {
+      "name": {
         "type": "String",
-        "example": "50"
+        "example": "100%"
       }
     }
   },
@@ -553,7 +554,7 @@
   "statusImportSuccess": "{name} inportatu da",
   "@statusImportSuccess": {
     "placeholders": {
-      "count": {
+      "name": {
         "type": "String",
         "example": "100"
       }

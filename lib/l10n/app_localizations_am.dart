@@ -774,6 +774,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get scanInstructions => 'ለመቃኘት ምስል ይምረጡ';
 
   @override
+  String get scanNotSupported =>
+      'ይህ ቋንቋ የቃኚ መገልገያ ባህሪን አይደግፍም። OCR በአሁኑ ጊዜ የላቲን፣ ቻይንኛ፣ ዴቫናጋሪ (ሂንዲ ወዘተ)፣ ጃፓንኛ እና ኮሪያኛ ፊደላትን ብቻ ነው የሚደግፈው።';
+
+  @override
   String get scanLabel => 'ይቃኙ';
 
   @override

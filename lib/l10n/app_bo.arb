@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "ཞིབ་བཤེར་བྱེད་པའི་པར་རིས་ཤིག་འདེམས།",
+  "scanNotSupported": "སྐད་ཡིག་འདིས་ཞིབ་ལྟའི་བྱེད་ནུས་ལ་རྒྱབ་སྐྱོར་མི་བྱེད། OCR ད་ལྟ་ལ་ཊིན་དང་རྒྱ་ཡིག དེ་བ་ན་ག་རི (ཧིན་དྷི་སོགས) ཉི་ཧོང་། ཀོ་རི་ཡའི་ཡི་གེ་ཁོ་ནར་རྒྱབ་སྐྱོར་བྱེད།",
   "scanLabel": "ཞིབ་བཤེར།",
   "score": "ཏག་ཏག་ཚད: {score}%",
   "@score": {
@@ -535,9 +536,9 @@
   "statusDownloading": "ཕབ་ལེན་བྱེད་བཞིན་པ: {name}...",
   "@statusDownloading": {
     "placeholders": {
-      "progress": {
+      "name": {
         "type": "String",
-        "example": "50"
+        "example": "100%"
       }
     }
   },
@@ -553,7 +554,7 @@
   "statusImportSuccess": "{name} ནང་འདྲེན་ལེགས་འགྲུབ།",
   "@statusImportSuccess": {
     "placeholders": {
-      "count": {
+      "name": {
         "type": "String",
         "example": "100"
       }

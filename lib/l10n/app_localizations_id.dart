@@ -784,6 +784,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get scanInstructions => 'Pilih gambar untuk dipindai';
 
   @override
+  String get scanNotSupported =>
+      'Bahasa ini tidak mendukung fitur pemindaian. OCR saat ini hanya mendukung karakter Latin, Tionghoa, Devanagari (Hindi, dll.), Jepang, dan Korea.';
+
+  @override
   String get scanLabel => 'Pindai';
 
   @override

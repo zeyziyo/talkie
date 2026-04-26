@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Выберыце выяву для сканіравання",
+  "scanNotSupported": "Гэтая мова не падтрымлівае функцыю сканавання. У цяперашні час OCR падтрымлівае толькі лацінскія, кітайскія, дэванагары (хіндзі і г.д.), японскія і карэйскія сімвалы.",
   "scanLabel": "Сканіраваць",
   "score": "Дакладнасць: {score}%",
   "@score": {
@@ -535,9 +536,9 @@
   "statusDownloading": "Загрузка: {name}...",
   "@statusDownloading": {
     "placeholders": {
-      "progress": {
+      "name": {
         "type": "String",
-        "example": "50"
+        "example": "100%"
       }
     }
   },
@@ -553,7 +554,7 @@
   "statusImportSuccess": "{name} імпартавана",
   "@statusImportSuccess": {
     "placeholders": {
-      "count": {
+      "name": {
         "type": "String",
         "example": "100"
       }

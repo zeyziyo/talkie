@@ -788,6 +788,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get scanInstructions => 'Pumili ng imahe na i-scan';
 
   @override
+  String get scanNotSupported =>
+      'Hindi sinusuportahan ng wikang ito ang tampok na pag-scan. Kasalukuyang sinusuportahan ng OCR ang mga character na Latin, Chinese, Devanagari (tulad ng Hindi), Japanese, at Korean lamang.';
+
+  @override
   String get scanLabel => 'I-scan';
 
   @override

@@ -762,6 +762,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get scanInstructions => '选择要扫描的图像';
 
   @override
+  String get scanNotSupported => '此语言不支持扫描功能。OCR目前仅支持拉丁文、中文、梵文（印地语等）、日文和韩文字符。';
+
+  @override
   String get scanLabel => '扫描';
 
   @override
@@ -1942,6 +1945,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get scanInstructions => '选择要扫描的图像';
 
   @override
+  String get scanNotSupported => '此语言不支持扫描功能。OCR 目前仅支持拉丁文、中文、梵文（印地语等）、日文和韩文字符。';
+
+  @override
   String get scanLabel => '扫描';
 
   @override
@@ -3120,6 +3126,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get scanInstructions => '請選擇要掃描的圖片';
+
+  @override
+  String get scanNotSupported =>
+      '此語言不支援掃描功能。目前 OCR 僅支援拉丁字母、中文、天城文（印地語等）、日文和韓文字元。';
 
   @override
   String get scanLabel => '掃描';

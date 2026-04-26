@@ -784,6 +784,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get scanInstructions => 'Vyberte obrázek ke skenování';
 
   @override
+  String get scanNotSupported =>
+      'Skenování v tomto jazyce není podporováno. OCR aktuálně podporuje pouze latinku, čínštinu, dévanágarí (hindština atd.), japonštinu a korejštinu.';
+
+  @override
   String get scanLabel => 'Skenovat';
 
   @override

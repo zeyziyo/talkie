@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Odaberite sliku za skeniranje",
+  "scanNotSupported": "Skeniranje nije podržano za ovaj jezik. OCR trenutno podržava samo latinična, kineska, devanagari (npr. hindi), japanska i korejska slova.",
   "scanLabel": "Skeniraj",
   "score": "Točnost: {score}%",
   "@score": {

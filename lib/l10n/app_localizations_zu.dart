@@ -792,6 +792,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get scanInstructions => 'Khetha isithombe ozosithwebula';
 
   @override
+  String get scanNotSupported =>
+      'Lolu limi alisekeli isici sokuskena. I-OCR njengamanje isekela kuphela izinhlamvu zesiLatini, zesiShayina, zesiDevanagari (isiHindi, njll.), zesiJapane, nezaseKorea.';
+
+  @override
   String get scanLabel => 'Thwebula';
 
   @override

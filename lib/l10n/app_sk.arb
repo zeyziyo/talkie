@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Vyberte obrázok na skenovanie",
+  "scanNotSupported": "Tento jazyk nepodporuje funkciu skenovania. OCR v súčasnosti podporuje iba latinské, čínske, dévanágarske (hindčina atď.), japonské a kórejské znaky.",
   "scanLabel": "Skenovať",
   "score": "Presnosť: {score}%",
   "@score": {

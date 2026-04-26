@@ -787,6 +787,10 @@ class AppLocalizationsKk extends AppLocalizations {
   String get scanInstructions => 'Сканерлеу үшін суретті таңдаңыз';
 
   @override
+  String get scanNotSupported =>
+      'Бұл тіл сканерлеуді қолдамайды. OCR тек латын, қытай, деванагари (хинди және т.б.), жапон, корей тілдерін қолдайды.';
+
+  @override
   String get scanLabel => 'Сканерлеу';
 
   @override

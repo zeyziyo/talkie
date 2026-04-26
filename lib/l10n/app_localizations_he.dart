@@ -774,6 +774,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get scanInstructions => 'בחר תמונה לסריקה';
 
   @override
+  String get scanNotSupported =>
+      'שפה זו אינה תומכת בסריקה. OCR תומך כעת רק בתווים לטיניים, סיניים, דבנגרי (הינדי וכו\'), יפניים וקוריאניים.';
+
+  @override
   String get scanLabel => 'סרוק';
 
   @override

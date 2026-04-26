@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Selecteer een afbeelding om te scannen",
+  "scanNotSupported": "Deze taal wordt niet ondersteund voor scannen. OCR ondersteunt momenteel alleen Latijnse, Chinese, Devanagari (Hindi, enz.), Japanse en Koreaanse karakters.",
   "scanLabel": "Scannen",
   "score": "Nauwkeurigheid: {score}%",
   "@score": {

@@ -786,6 +786,10 @@ class AppLocalizationsAz extends AppLocalizations {
   String get scanInstructions => 'Skan etmək üçün bir şəkil seçin';
 
   @override
+  String get scanNotSupported =>
+      'Bu dil skan funksiyasını dəstəkləmir. OCR hazırda yalnız Latın, Çin, Devanagari (Hindi və s.), Yapon, Koreya əlifbalarını dəstəkləyir.';
+
+  @override
   String get scanLabel => 'Skan et';
 
   @override

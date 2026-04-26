@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Khetha isithombe ozosithwebula",
+  "scanNotSupported": "Lolu limi alisekeli isici sokuskena. I-OCR njengamanje isekela kuphela izinhlamvu zesiLatini, zesiShayina, zesiDevanagari (isiHindi, njll.), zesiJapane, nezaseKorea.",
   "scanLabel": "Thwebula",
   "score": "Ukunemba: {score}%",
   "@score": {

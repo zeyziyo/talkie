@@ -783,6 +783,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get scanInstructions => 'Vali skaneeritav pilt';
 
   @override
+  String get scanNotSupported =>
+      'See keel ei toeta skannimist. OCR toetab praegu ainult ladina, hiina, devanaagari (nt hindi), jaapani ja korea märke.';
+
+  @override
   String get scanLabel => 'Skaneeri';
 
   @override

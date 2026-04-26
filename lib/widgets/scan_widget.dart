@@ -4,6 +4,7 @@ import '../providers/app_state.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../l10n/app_localizations.dart';
 import '../constants/language_constants.dart';
+import '../constants/scan_support_constants.dart';
 
 class ScanWidget extends StatefulWidget {
   const ScanWidget({super.key});
@@ -75,6 +76,36 @@ class _ScanWidgetState extends State<ScanWidget> {
                   ),
           ),
           SizedBox(height: 20.h),
+
+          // OCR 미지원 언어 경고 배너 (버튼 유지)
+          if (!ScanSupportConstants.isSupported(appState.sourceLang)) ...[
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 12.h),
+              decoration: BoxDecoration(
+                color: Colors.amber.shade50,
+                borderRadius: BorderRadius.circular(12.r),
+                border: Border.all(color: Colors.amber.shade300),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Icons.warning_amber_rounded, color: Colors.amber.shade700, size: 20.r),
+                  SizedBox(width: 10.w),
+                  Expanded(
+                    child: Text(
+                      l10n.scanNotSupported,
+                      style: TextStyle(
+                        color: Colors.amber.shade800,
+                        fontSize: 12.sp,
+                        height: 1.5,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 12.h),
+          ],
 
           // 2. Action Buttons
           ElevatedButton(

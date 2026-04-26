@@ -8,7 +8,13 @@ mixin AppStateScan on ChangeNotifier {
 extension AppStateScanExtension on AppState {
   Future<void> pickImageAndRecognizeText() async {
     final ImagePicker picker = ImagePicker();
-    final XFile? image = await picker.pickImage(source: ImageSource.gallery);
+    // 최대 1280px로 제한하여 OOM 방지
+    final XFile? image = await picker.pickImage(
+      source: ImageSource.gallery,
+      maxWidth: 1280,
+      maxHeight: 1280,
+      imageQuality: 85,
+    );
 
     if (image == null) return;
 
@@ -20,36 +26,38 @@ extension AppStateScanExtension on AppState {
     try {
       final inputImage = InputImage.fromFilePath(image.path);
       
-      // Scripts to try
-      final scripts = [
-        TextRecognitionScript.latin,
-        TextRecognitionScript.korean,
-        TextRecognitionScript.japanese,
-      ];
+      // 스크립트별로 순차 처리하여 메모리 동시 점유 방지
+      // Latin, Chinese, Devanagari, Japanese, Korean 5개 스크립트 지원
+      final scripts = ScanSupportConstants.allScripts;
 
       List<Map<String, dynamic>> allBlocks = [];
 
       for (var script in scripts) {
-        final recognizer = TextRecognizer(script: script);
-        final RecognizedText recognizedText = await recognizer.processImage(inputImage);
-        
-        for (var block in recognizedText.blocks) {
-          String lang = 'auto';
-          if (block.recognizedLanguages.isNotEmpty) {
-            lang = block.recognizedLanguages.first;
-          } else {
-            if (script == TextRecognitionScript.korean) { lang = 'ko'; }
-            else if (script == TextRecognitionScript.japanese) { lang = 'ja'; }
-            else if (script == TextRecognitionScript.latin) { lang = 'en'; }
-          }
+        TextRecognizer? recognizer;
+        try {
+          recognizer = TextRecognizer(script: script);
+          final RecognizedText recognizedText = await recognizer.processImage(inputImage);
+          
+          for (var block in recognizedText.blocks) {
+            String lang = 'auto';
+            if (block.recognizedLanguages.isNotEmpty) {
+              lang = block.recognizedLanguages.first;
+            } else {
+              if (script == TextRecognitionScript.korean) { lang = 'ko'; }
+              else if (script == TextRecognitionScript.japanese) { lang = 'ja'; }
+              else if (script == TextRecognitionScript.latin) { lang = 'en'; }
+            }
 
-          allBlocks.add({
-            'lang': lang,
-            'text': block.text,
-            'rect': block.boundingBox,
-          });
+            allBlocks.add({
+              'lang': lang,
+              'text': block.text,
+              'rect': block.boundingBox,
+            });
+          }
+        } finally {
+          // 반드시 해제하여 다음 스크립트 처리 전 메모리 확보
+          await recognizer?.close();
         }
-        await recognizer.close();
       }
 
       // Deduplicate blocks based on Rect overlap (> 70%)

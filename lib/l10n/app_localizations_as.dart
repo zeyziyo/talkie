@@ -784,6 +784,10 @@ class AppLocalizationsAs extends AppLocalizations {
   String get scanInstructions => 'স্কেন কৰিবলৈ এটা ছবি বাছক';
 
   @override
+  String get scanNotSupported =>
+      'এই ভাষাটোত স্কেন কাৰ্য্যকৰী নহয়। OCR-এ বৰ্তমান লেটিন, চীনা, দেৱনাগৰী (হিন্দী আদি), জাপানী, আৰু কোৰিয়ান আখৰসমূহহে সমৰ্থন কৰে।';
+
+  @override
   String get scanLabel => 'স্কেন কৰক';
 
   @override

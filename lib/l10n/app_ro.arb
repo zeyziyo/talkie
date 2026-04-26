@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Selectați o imagine de scanat",
+  "scanNotSupported": "Scanarea nu este acceptată pentru această limbă. OCR suportă în prezent doar caractere latine, chineze, devanagari (cum ar fi hindi), japoneze și coreene.",
   "scanLabel": "Scanează",
   "score": "Acuratețe: {score}%",
   "@score": {

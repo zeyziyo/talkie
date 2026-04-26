@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Velg et bilde å skanne",
+  "scanNotSupported": "Skanning støttes ikke for dette språket. OCR støtter for øyeblikket kun latinske, kinesiske, devanagari (f.eks. hindi), japanske og koreanske tegn.",
   "scanLabel": "Skann",
   "score": "Nøyaktighet: {score}%",
   "@score": {

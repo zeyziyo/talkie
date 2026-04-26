@@ -777,6 +777,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get scanInstructions => 'เลือกภาพที่จะสแกน';
 
   @override
+  String get scanNotSupported =>
+      'ภาษาปัจจุบันไม่รองรับฟังก์ชันสแกน ขณะนี้ OCR รองรับเฉพาะอักษรละติน จีน เทวนาครี (เช่น ภาษาฮินดี) ญี่ปุ่น และเกาหลี';
+
+  @override
   String get scanLabel => 'สแกน';
 
   @override

@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Скан хийх зургаа сонгоно уу",
+  "scanNotSupported": "Энэ хэл скан хийх боломжгүй. OCR нь зөвхөн латин, хятад, деванагари (хинди гэх мэт), япон, солонгос үсгийг дэмждэг.",
   "scanLabel": "Скан",
   "score": "Нарийвчлал: {score}%",
   "@score": {

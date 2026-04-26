@@ -782,6 +782,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get scanInstructions => 'ස්කෑන් කිරීමට රූපයක් තෝරන්න';
 
   @override
+  String get scanNotSupported =>
+      'මෙම භාෂාව ස්කෑන් කිරීමේ හැකියාව සහය නොදක්වයි. OCR දැනට සහාය දක්වන්නේ ලතින්, චීන, දේවනාගරි (හින්දි වැනි), ජපන් සහ කොරියානු අක්ෂර සඳහා පමණි.';
+
+  @override
   String get scanLabel => 'ස්කෑන්';
 
   @override

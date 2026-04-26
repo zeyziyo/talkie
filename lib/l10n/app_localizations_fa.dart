@@ -780,6 +780,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get scanInstructions => 'تصویری را که می خواهید اسکن کنید انتخاب کنید';
 
   @override
+  String get scanNotSupported =>
+      'این زبان از قابلیت اسکن پشتیبانی نمی‌کند. OCR در حال حاضر فقط از حروف لاتین، چینی، देवनागरी (هندی و غیره)، ژاپنی و کره‌ای پشتیبانی می‌کند.';
+
+  @override
   String get scanLabel => 'اسکن';
 
   @override

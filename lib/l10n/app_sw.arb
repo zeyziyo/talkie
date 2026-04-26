@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Chagua picha ya kuchanganua",
+  "scanNotSupported": "Lugha hii haitumii kipengele cha kuchanganua. OCR kwa sasa inaauni hati za Kilatini, Kichina, Kidevanagari (Kihindi, n.k.), Kijapani na Kikorea pekee.",
   "scanLabel": "Changanua",
   "score": "Usahihi: {score}%",
   "@score": {

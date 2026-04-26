@@ -793,6 +793,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get scanInstructions => 'Selecciona una imatge per escanejar';
 
   @override
+  String get scanNotSupported =>
+      'Aquest idioma no és compatible amb l\'escaneig. L\'OCR només admet actualment caràcters llatins, xinesos, devanagari (com l\'hindi), japonesos i coreans.';
+
+  @override
   String get scanLabel => 'Escanejar';
 
   @override

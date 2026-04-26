@@ -788,6 +788,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get scanInstructions => 'აირჩიეთ დასასკანერებელი გამოსახულება';
 
   @override
+  String get scanNotSupported =>
+      'ამ ენაზე სკანირება არ არის მხარდაჭერილი. OCR ამჟამად მხარს უჭერს მხოლოდ ლათინურ, ჩინურ, დევანაგარის (ჰინდი და სხვა), იაპონურ და კორეულ სიმბოლოებს.';
+
+  @override
   String get scanLabel => 'სკანირება';
 
   @override

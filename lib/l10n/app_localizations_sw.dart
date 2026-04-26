@@ -783,6 +783,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get scanInstructions => 'Chagua picha ya kuchanganua';
 
   @override
+  String get scanNotSupported =>
+      'Lugha hii haitumii kipengele cha kuchanganua. OCR kwa sasa inaauni hati za Kilatini, Kichina, Kidevanagari (Kihindi, n.k.), Kijapani na Kikorea pekee.';
+
+  @override
   String get scanLabel => 'Changanua';
 
   @override

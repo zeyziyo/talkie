@@ -786,6 +786,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get scanInstructions => 'ជ្រើសរើស​រូបភាព​ដើម្បី​ស្កេន';
 
   @override
+  String get scanNotSupported =>
+      'ភាសានេះមិនគាំទ្រមុខងារស្កេនទេ។ បច្ចុប្បន្ន OCR គាំទ្រតែអក្សរឡាតាំង ចិន ដេវ៉ាណាហ្គារី (ហិណ្ឌូ។ល។) ជប៉ុន និងកូរ៉េប៉ុណ្ណោះ។';
+
+  @override
   String get scanLabel => 'ស្កេន';
 
   @override

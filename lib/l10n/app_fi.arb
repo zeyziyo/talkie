@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Valitse skannattava kuva",
+  "scanNotSupported": "Tämä kieli ei tue skannausta. OCR tukee tällä hetkellä vain latinalaisia, kiinalaisia, devanagari (esim. hindi), japanilaisia ja korealaisia merkkejä.",
   "scanLabel": "Skannaa",
   "score": "Tarkkuus: {score}%",
   "@score": {

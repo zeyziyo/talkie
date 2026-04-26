@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Veldu mynd til að skanna",
+  "scanNotSupported": "Þetta tungumál styður ekki skönnun. OCR styður eins og er aðeins latneska, kínverska, devanagari (hindí o.s.frv.), japanska og kóreska stafi.",
   "scanLabel": "Skanna",
   "score": "Nákvæmni: {score}%",
   "@score": {

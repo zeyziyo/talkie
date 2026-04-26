@@ -785,6 +785,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get scanInstructions => 'Atlasiet skenējamo attēlu';
 
   @override
+  String get scanNotSupported =>
+      'Šī valoda neatbalsta skenēšanas funkcionalitāti. OCR pašlaik atbalsta tikai latīņu, ķīniešu, devanagari (hindi u.c.), japāņu un korejiešu rakstzīmes.';
+
+  @override
   String get scanLabel => 'Skenēt';
 
   @override

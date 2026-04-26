@@ -481,6 +481,7 @@
     "description": "Save in progress"
   },
   "scanInstructions": "Pilih gambar untuk dipindai",
+  "scanNotSupported": "Bahasa ini tidak mendukung fitur pemindaian. OCR saat ini hanya mendukung karakter Latin, Tionghoa, Devanagari (Hindi, dll.), Jepang, dan Korea.",
   "scanLabel": "Pindai",
   "score": "Akurasi: {score}%",
   "@score": {
