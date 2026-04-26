@@ -35,6 +35,7 @@ extension AppStateScanExtension on AppState {
       for (var script in scripts) {
         TextRecognizer? recognizer;
         try {
+          debugPrint('[OCR] Processing script: ${script.name}');
           recognizer = TextRecognizer(script: script);
           final RecognizedText recognizedText = await recognizer.processImage(inputImage);
           
@@ -45,6 +46,7 @@ extension AppStateScanExtension on AppState {
             } else {
               if (script == TextRecognitionScript.korean) { lang = 'ko'; }
               else if (script == TextRecognitionScript.japanese) { lang = 'ja'; }
+              else if (script == TextRecognitionScript.chinese) { lang = 'zh'; }
               else if (script == TextRecognitionScript.latin) { lang = 'en'; }
             }
 
@@ -54,8 +56,10 @@ extension AppStateScanExtension on AppState {
               'rect': block.boundingBox,
             });
           }
+        } catch (e) {
+          debugPrint('[OCR] Error processing script ${script.name}: $e');
+          // 특정 스크립트 실패 시 계속 진행
         } finally {
-          // 반드시 해제하여 다음 스크립트 처리 전 메모리 확보
           await recognizer?.close();
         }
       }
