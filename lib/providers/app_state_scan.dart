@@ -64,9 +64,27 @@ extension AppStateScanExtension on AppState {
         }
       }
 
-      // Deduplicate blocks based on Rect overlap (> 70%)
-      List<Map<String, dynamic>> dedupedSegments = [];
+      // 학습 언어(Target)와 내 언어(Source) 식별
+      final learningLang = _targetLang.split('-')[0]; // e.g. 'en'
+
+      // 1. 학습 언어(targetLang)와 일치하는 블록만 필터링
+      List<Map<String, dynamic>> filteredBlocks = [];
       for (var block in allBlocks) {
+        final blockLang = block['lang'].toString().split('-')[0];
+        
+        // 학습 언어와 일치하는 경우만 추가
+        if (blockLang == learningLang) {
+          filteredBlocks.add(block);
+        } else if (block['lang'] == 'auto') {
+          // 언어 감지가 안 된 경우, 현재 스크립트가 지원하는 언어와 일치하는지 확인 (추가 로직 필요 시)
+          // 여기서는 안전하게 학습 언어와 명확히 일치하는 것만 우선 처리
+          // 단, 라틴 스크립트인데 학습 언어가 영어인 경우 등은 위 루프에서 이미 처리됨
+        }
+      }
+
+      // 2. 중복 제거 (Rect overlap > 70%)
+      List<Map<String, dynamic>> dedupedSegments = [];
+      for (var block in filteredBlocks) {
         bool isDuplicate = false;
         final rect = block['rect'] as ui.Rect;
         
@@ -87,7 +105,7 @@ extension AppStateScanExtension on AppState {
         }
       }
 
-      // Group by language
+      // 3. 그룹화 및 최종 세그먼트 생성
       Map<String, List<String>> langGroups = {};
       for (var seg in dedupedSegments) {
         final lang = seg['lang'] as String;
@@ -104,7 +122,11 @@ extension AppStateScanExtension on AppState {
       }
 
       setScanReviewItems(finalSegments);
-      await _translateAllSegments();
+      
+      // 4. 내 언어(sourceLang)로 번역
+      if (finalSegments.isNotEmpty) {
+        await _translateAllSegmentsToNative();
+      }
 
     } catch (e) {
       debugPrint('[Scan] OCR/Process Error: $e');
@@ -114,22 +136,18 @@ extension AppStateScanExtension on AppState {
     }
   }
 
-  Future<void> _translateAllSegments() async {
+  Future<void> _translateAllSegmentsToNative() async {
     for (int i = 0; i < _scanReviewItems.length; i++) {
         final item = _scanReviewItems[i];
-        if (item['original'].toString().trim().isEmpty) continue;
-
-        // Skip translation if it's already in the native language
-        if (item['lang'] == _sourceLang) {
-          _scanReviewItems[i]['translated'] = item['original'];
-          continue;
-        }
+        final originalText = item['original'].toString().trim();
+        if (originalText.isEmpty) continue;
 
         try {
+          // 학습 언어 -> 내 언어 번역
           final result = await TranslationService.translate(
-            text: item['original'],
-            sourceLang: item['lang'],
-            targetLang: _sourceLang, // Native language
+            text: originalText,
+            sourceLang: item['lang'], // detected lang (should be targetLang)
+            targetLang: _sourceLang, // My Language
           );
 
           if (result['isValid'] == true) {
