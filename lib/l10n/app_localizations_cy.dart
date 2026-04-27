@@ -785,6 +785,9 @@ class AppLocalizationsCy extends AppLocalizations {
   String get saved => 'Cadw wedi\'i Gwblhau';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Cadw...';
 
   @override

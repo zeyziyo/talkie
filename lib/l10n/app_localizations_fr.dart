@@ -785,6 +785,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get saved => 'Enregistré';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Enregistrement...';
 
   @override

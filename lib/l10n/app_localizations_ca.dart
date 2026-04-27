@@ -787,6 +787,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get saved => 'S\'ha desat';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'S\'està desant...';
 
   @override

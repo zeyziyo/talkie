@@ -776,6 +776,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get saved => 'සුරැකීම සම්පූර්ණයි';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'සුරකිමින්...';
 
   @override

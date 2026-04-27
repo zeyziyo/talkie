@@ -782,6 +782,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get saved => 'Saqlandi';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Saqlanmoqda...';
 
   @override

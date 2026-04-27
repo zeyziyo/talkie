@@ -778,6 +778,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get saved => 'Tersimpan';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Menyimpan...';
 
   @override

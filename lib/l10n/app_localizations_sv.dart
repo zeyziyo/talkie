@@ -778,6 +778,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get saved => 'Sparad';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Sparar...';
 
   @override

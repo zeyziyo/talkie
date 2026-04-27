@@ -779,6 +779,9 @@ class AppLocalizationsNo extends AppLocalizations {
   String get saved => 'Lagret';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Lagrer...';
 
   @override

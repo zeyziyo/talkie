@@ -780,6 +780,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get saved => 'បានរក្សាទុក';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'កំពុងរក្សាទុក...';
 
   @override

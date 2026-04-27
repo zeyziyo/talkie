@@ -774,6 +774,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get saved => 'ذخیره شد';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'در حال ذخیره...';
 
   @override

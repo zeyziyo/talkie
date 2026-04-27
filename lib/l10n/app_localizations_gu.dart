@@ -776,6 +776,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get saved => 'સાચવ્યું';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'સાચવી રહ્યું છે...';
 
   @override

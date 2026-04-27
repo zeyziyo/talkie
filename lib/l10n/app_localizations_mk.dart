@@ -781,6 +781,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get saved => 'Зачувувањето е завршено';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Се зачувува...';
 
   @override

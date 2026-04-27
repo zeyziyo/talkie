@@ -482,6 +482,7 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "원본 텍스트",
   "saving": "저장 중...",
   "@saving": {
     "description": "Save in progress"

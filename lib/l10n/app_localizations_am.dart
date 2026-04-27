@@ -768,6 +768,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get saved => 'ተቀምጧል';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'በማስቀመጥ ላይ...';
 
   @override

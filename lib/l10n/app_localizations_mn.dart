@@ -777,6 +777,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get saved => 'Хадгалж дууслаа';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Хадгалж байна...';
 
   @override

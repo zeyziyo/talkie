@@ -778,6 +778,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get saved => 'محفوظ ہو گیا';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'محفوظ ہو رہا ہے...';
 
   @override

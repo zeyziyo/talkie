@@ -777,6 +777,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get saved => 'Salvestamine lõpetatud';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Salvestamine...';
 
   @override

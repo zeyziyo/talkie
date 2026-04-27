@@ -781,6 +781,9 @@ class AppLocalizationsOr extends AppLocalizations {
   String get saved => 'ସେଭ୍ ହୋଇଗଲା';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'ସେଭ୍ କରୁଛି...';
 
   @override

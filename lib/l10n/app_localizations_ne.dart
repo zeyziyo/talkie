@@ -778,6 +778,9 @@ class AppLocalizationsNe extends AppLocalizations {
   String get saved => 'सुरक्षित गरियो';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'सुरक्षित गर्दै...';
 
   @override

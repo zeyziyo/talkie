@@ -773,6 +773,9 @@ class AppLocalizationsMr extends AppLocalizations {
   String get saved => 'जतन केले';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'जतन करत आहे...';
 
   @override

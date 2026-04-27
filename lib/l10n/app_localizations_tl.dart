@@ -785,6 +785,9 @@ class AppLocalizationsTl extends AppLocalizations {
   String get saved => 'Na-save';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Nagse-save...';
 
   @override

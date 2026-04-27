@@ -773,6 +773,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get saved => 'Đã lưu';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Đang lưu...';
 
   @override

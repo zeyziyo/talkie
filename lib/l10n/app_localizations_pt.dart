@@ -781,6 +781,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get saved => 'Salvo';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Salvando...';
 
   @override

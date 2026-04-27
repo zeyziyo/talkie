@@ -779,6 +779,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get saved => 'Vistað';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Vista...';
 
   @override

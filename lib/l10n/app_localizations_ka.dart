@@ -782,6 +782,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get saved => 'შენახულია';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'მიმდინარეობს შენახვა...';
 
   @override

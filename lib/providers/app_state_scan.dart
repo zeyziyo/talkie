@@ -173,7 +173,7 @@ extension AppStateScanExtension on AppState {
           if (result['isValid'] == true) {
             _scanReviewItems[i]['translated'] = result['text'];
           } else {
-             _scanReviewItems[i]['translated'] = 'Translation rejected: AI safety';
+             _scanReviewItems[i]['translated'] = 'Rejected: AI safety policy';
           }
         } catch (e) {
           _scanReviewItems[i]['translated'] = 'Error: $e';

@@ -780,6 +780,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get saved => 'Запазено';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Запазване...';
 
   @override

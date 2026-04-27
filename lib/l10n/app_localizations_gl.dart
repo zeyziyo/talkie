@@ -783,6 +783,9 @@ class AppLocalizationsGl extends AppLocalizations {
   String get saved => 'Gardado';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Gardando...';
 
   @override

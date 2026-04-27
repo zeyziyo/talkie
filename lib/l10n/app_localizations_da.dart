@@ -779,6 +779,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get saved => 'Gemt';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Gemmer...';
 
   @override

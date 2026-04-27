@@ -786,6 +786,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get saved => 'சேமிக்கப்பட்டது';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'சேமிக்கிறது...';
 
   @override

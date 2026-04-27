@@ -773,6 +773,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get saved => 'تم الحفظ';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'جاري الحفظ...';
 
   @override

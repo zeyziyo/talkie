@@ -780,6 +780,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get saved => 'Αποθηκεύτηκε';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Αποθήκευση...';
 
   @override

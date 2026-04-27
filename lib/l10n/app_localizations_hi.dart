@@ -780,6 +780,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get saved => 'सहेजा गया';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'सहेज रहा है...';
 
   @override

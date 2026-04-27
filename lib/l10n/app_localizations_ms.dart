@@ -778,6 +778,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get saved => 'Disimpan';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Menyimpan...';
 
   @override

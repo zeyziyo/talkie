@@ -763,6 +763,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get saved => '저장 완료';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => '저장 중...';
 
   @override

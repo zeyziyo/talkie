@@ -476,6 +476,7 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Original Text",
   "saving": "Saving...",
   "@saving": {
     "description": "Save in progress"

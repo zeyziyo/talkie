@@ -760,6 +760,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get saved => '保存完了';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => '保存中...';
 
   @override

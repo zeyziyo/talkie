@@ -777,6 +777,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get saved => 'Gordeta';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Gordetzen...';
 
   @override

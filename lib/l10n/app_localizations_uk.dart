@@ -778,6 +778,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get saved => 'Збережено';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Збереження...';
 
   @override

@@ -778,6 +778,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get saved => 'Shranjevanje končano';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Shranjujem ...';
 
   @override

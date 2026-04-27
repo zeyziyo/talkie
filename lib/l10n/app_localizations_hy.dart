@@ -783,6 +783,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get saved => 'Պահպանումն ավարտված է';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Պահպանվում է...';
 
   @override

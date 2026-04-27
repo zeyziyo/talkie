@@ -781,6 +781,9 @@ class AppLocalizationsBe extends AppLocalizations {
   String get saved => 'Захавана';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Захаванне...';
 
   @override

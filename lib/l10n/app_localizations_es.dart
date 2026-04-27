@@ -782,6 +782,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get saved => 'Guardado';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Guardando...';
 
   @override

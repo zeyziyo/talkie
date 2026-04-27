@@ -784,6 +784,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get saved => 'Salvat';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Salvare...';
 
   @override

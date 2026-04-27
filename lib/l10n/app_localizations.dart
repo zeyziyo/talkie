@@ -1680,6 +1680,12 @@ abstract class AppLocalizations {
   /// **'저장 완료'**
   String get saved;
 
+  /// No description provided for @originalText.
+  ///
+  /// In ko, this message translates to:
+  /// **'원본 텍스트'**
+  String get originalText;
+
   /// Save in progress
   ///
   /// In ko, this message translates to:

@@ -775,6 +775,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get saved => 'সংরক্ষিত';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'সংরক্ষণ করা হচ্ছে...';
 
   @override

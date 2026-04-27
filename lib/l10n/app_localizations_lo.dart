@@ -772,6 +772,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get saved => 'ບັນທຶກສຳເລັດ';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'ກຳລັງບັນທຶກ...';
 
   @override

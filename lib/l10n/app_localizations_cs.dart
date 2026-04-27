@@ -778,6 +778,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get saved => 'Uloženo';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Ukládání...';
 
   @override

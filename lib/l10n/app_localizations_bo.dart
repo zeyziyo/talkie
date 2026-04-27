@@ -778,6 +778,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String get saved => 'ཉར་ཚགས་ལེགས་འགྲུབ།';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'ཉར་ཚགས་བྱེད་བཞིན་པ...';
 
   @override

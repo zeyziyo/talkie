@@ -781,6 +781,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get saved => 'സേവ് ചെയ്തു';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'സേവ് ചെയ്യുന്നു...';
 
   @override

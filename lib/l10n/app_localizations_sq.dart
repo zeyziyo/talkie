@@ -786,6 +786,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get saved => 'U ruajt me sukses';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Duke ruajtur...';
 
   @override

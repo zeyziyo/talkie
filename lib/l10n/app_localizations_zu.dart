@@ -786,6 +786,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get saved => 'Kulondoloziwe';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Kuyalondolozwa...';
 
   @override

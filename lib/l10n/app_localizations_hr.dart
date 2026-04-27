@@ -777,6 +777,9 @@ class AppLocalizationsHr extends AppLocalizations {
   String get saved => 'Spremanje završeno';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'Spremanje...';
 
   @override

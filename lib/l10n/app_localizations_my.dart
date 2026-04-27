@@ -787,6 +787,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get saved => 'သိမ်းဆည်းပြီးပါပြီ';
 
   @override
+  String get originalText => '원본 텍스트';
+
+  @override
   String get saving => 'သိမ်းဆည်းနေသည်...';
 
   @override

@@ -198,7 +198,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                     
                     // Original
                     Text(
-                      'Original',
+                      l10n.originalText,
                       style: TextStyle(fontSize: 10.sp, color: Colors.grey.shade500, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 4.h),
@@ -214,7 +214,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                     
                     // Translated (In Native Language)
                     Text(
-                      'My Language (${LanguageConstants.getLanguageMap(appState.sourceLang)[appState.sourceLang]})',
+                      '${l10n.translationResult} (${LanguageConstants.getLanguageMap(appState.sourceLang)[appState.sourceLang]})',
                       style: TextStyle(fontSize: 10.sp, color: Colors.indigo.shade300, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 4.h),
