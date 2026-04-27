@@ -168,17 +168,24 @@ extension AppStateScanExtension on AppState {
         if (originalText.isEmpty) continue;
 
         try {
+          // 텍스트 전처리: 불필요한 줄바꿈 제거
+          final cleanText = originalText.replaceAll('\n', ' ');
+
           // 학습 언어 -> 내 언어 번역
           final result = await TranslationService.translate(
-            text: originalText,
-            sourceLang: item['lang'], // detected lang (should be targetLang)
-            targetLang: _sourceLang, // My Language
+            text: cleanText,
+            sourceLang: item['lang'],
+            targetLang: _sourceLang,
           );
 
-          if (result['isValid'] == true) {
-            _scanReviewItems[i]['translated'] = result['text'];
+          // Phase 17480: AI가 주의를 줬더라도(isValid:false) 번역 결과가 있다면 사용자에게 보여줌
+          final translatedText = result['text']?.toString() ?? '';
+          if (result['isValid'] == true || translatedText.isNotEmpty) {
+            _scanReviewItems[i]['translated'] = translatedText;
           } else {
-             _scanReviewItems[i]['translated'] = 'Rejected: AI safety policy';
+            // 결과가 아예 없는 경우에만 에러 사유 표시
+            final reason = result['reason'] ?? 'Safety Policy';
+            _scanReviewItems[i]['translated'] = 'AI Blocked: $reason';
           }
         } catch (e) {
           _scanReviewItems[i]['translated'] = 'Error: $e';
