@@ -28,6 +28,8 @@ extension AppStateScanExtension on AppState {
       
       // 스크립트별로 순차 처리하여 메모리 동시 점유 방지
       // Latin, Chinese, Devanagari, Japanese, Korean 5개 스크립트 지원
+      // 학습 언어(Target)의 스크립트 확인
+      final targetScript = ScanSupportConstants.getScriptForLanguage(_targetLang);
       final scripts = ScanSupportConstants.allScripts;
 
       List<Map<String, dynamic>> allBlocks = [];
@@ -44,10 +46,16 @@ extension AppStateScanExtension on AppState {
             if (block.recognizedLanguages.isNotEmpty) {
               lang = block.recognizedLanguages.first;
             } else {
-              if (script == TextRecognitionScript.korean) { lang = 'ko'; }
-              else if (script == TextRecognitionScript.japanese) { lang = 'ja'; }
-              else if (script == TextRecognitionScript.chinese) { lang = 'zh'; }
-              else if (script == TextRecognitionScript.latin) { lang = 'en'; }
+              // ML Kit이 언어를 명시하지 않은 경우, 현재 스크립트가 학습 언어의 스크립트와 같다면 학습 언어로 간주
+              if (script == targetScript) {
+                lang = _targetLang;
+              } else {
+                // 그 외 기본 매핑
+                if (script == TextRecognitionScript.korean) { lang = 'ko'; }
+                else if (script == TextRecognitionScript.japanese) { lang = 'ja'; }
+                else if (script == TextRecognitionScript.chinese) { lang = 'zh'; }
+                else if (script == TextRecognitionScript.latin) { lang = 'en'; }
+              }
             }
 
             allBlocks.add({

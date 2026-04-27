@@ -22,7 +22,17 @@ class ScanSupportConstants {
 
   /// 주어진 언어 코드가 OCR 지원 언어인지 확인
   static bool isSupported(String langCode) =>
-      supportedOcrLanguages.contains(langCode);
+      supportedOcrLanguages.contains(langCode.split('-')[0]);
+
+  /// 언어 코드에 해당하는 스크립트 반환
+  static TextRecognitionScript getScriptForLanguage(String langCode) {
+    final base = langCode.split('-')[0];
+    if (base == 'ko') return TextRecognitionScript.korean;
+    if (base == 'ja') return TextRecognitionScript.japanese;
+    if (base == 'zh') return TextRecognitionScript.chinese;
+    // 기본적으로 나머지는 Latin 스크립트로 간주 (en, es, fr 등)
+    return TextRecognitionScript.latin;
+  }
 
   /// 지원되는 모든 OCR 스크립트 목록 반환
   static List<TextRecognitionScript> get allScripts => [
