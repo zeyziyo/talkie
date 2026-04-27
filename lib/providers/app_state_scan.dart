@@ -62,6 +62,7 @@ extension AppStateScanExtension on AppState {
               'lang': lang,
               'text': block.text,
               'rect': block.boundingBox,
+              'script': script, // 스크립트 정보 추가
             });
           }
         } catch (e) {
@@ -72,21 +73,25 @@ extension AppStateScanExtension on AppState {
         }
       }
 
-      // 학습 언어(Target)와 내 언어(Source) 식별
       final learningLang = _targetLang.split('-')[0]; // e.g. 'en'
 
-      // 1. 학습 언어(targetLang)와 일치하는 블록만 필터링
+      // 1. 학습 언어(targetLang)와 일치하거나, 해당 스크립트 그룹인 블록 필터링
       List<Map<String, dynamic>> filteredBlocks = [];
       for (var block in allBlocks) {
         final blockLang = block['lang'].toString().split('-')[0];
+        final blockScript = block['script'] as TextRecognitionScript;
         
-        // 학습 언어와 일치하는 경우만 추가
-        if (blockLang == learningLang) {
+        // 1) 언어 코드가 정확히 일치하거나
+        // 2) 혹은 해당 블록의 스크립트가 학습 언어의 스크립트와 일치하는 경우 (언어 오판 방지)
+        if (blockLang == learningLang || blockScript == targetScript) {
+          // 단, 내 언어(Native)와 동일한 스크립트를 쓰는 경우(예: 영-프 학습) 혼선이 있을 수 있으나,
+          // 학습 언어의 스크립트 결과를 우선적으로 수용하는 것이 사용자 경험상 유리함
           filteredBlocks.add(block);
-        } else if (block['lang'] == 'auto') {
-          // 언어 감지가 안 된 경우, 현재 스크립트가 지원하는 언어와 일치하는지 확인 (추가 로직 필요 시)
-          // 여기서는 안전하게 학습 언어와 명확히 일치하는 것만 우선 처리
-          // 단, 라틴 스크립트인데 학습 언어가 영어인 경우 등은 위 루프에서 이미 처리됨
+          
+          // 강제로 학습 언어로 태깅 (번역 시 정확도 향상)
+          if (blockLang != learningLang) {
+            block['lang'] = _targetLang;
+          }
         }
       }
 
