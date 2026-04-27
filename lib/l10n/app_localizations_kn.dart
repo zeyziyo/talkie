@@ -785,6 +785,10 @@ class AppLocalizationsKn extends AppLocalizations {
   String get scanInstructions => 'ಸ್ಕ್ಯಾನ್ ಮಾಡಲು ಚಿತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ';
 
   @override
+  String get scanNoMatch =>
+      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+
+  @override
   String get scanNotSupported =>
       'ಈ ಭಾಷೆ ಸ್ಕ್ಯಾನ್ ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. OCR ಪ್ರಸ್ತುತ ಲ್ಯಾಟಿನ್, ಚೈನೀಸ್, ದೇವನಾಗರಿ (ಹಿಂದಿ, ಇತ್ಯಾದಿ), ಜಪಾನೀಸ್, ಮತ್ತು ಕೊರಿಯನ್ ಅಕ್ಷರಗಳನ್ನು ಮಾತ್ರ ಬೆಂಬಲಿಸುತ್ತದೆ.';
 

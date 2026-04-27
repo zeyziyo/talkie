@@ -265,6 +265,41 @@ class _ScanWidgetState extends State<ScanWidget> {
                 ),
               ),
             ),
+          ] else ...[
+            // Empty / Mismatch State
+            Expanded(
+              child: Center(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40.w),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        appState.scannedText == 'NO_MATCH' 
+                            ? Icons.language_rounded
+                            : Icons.image_search_rounded,
+                        size: 64.r,
+                        color: Colors.indigo.shade50,
+                      ),
+                      SizedBox(height: 20.h),
+                      Text(
+                        appState.scannedText == 'NO_MATCH'
+                            ? l10n.scanNoMatch
+                            : (appState.scannedText == 'NO_TEXT' 
+                                ? l10n.noStudyMaterial 
+                                : l10n.scanInstructions),
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.indigo.shade300,
+                          fontSize: 14.sp,
+                          height: 1.6,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ],
           
           SizedBox(height: 40.h), 

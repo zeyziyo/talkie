@@ -480,7 +480,8 @@
   "@saving": {
     "description": "Save in progress"
   },
-  "scanInstructions": "Select an image to scan",
+  "scanInstructions": "Take a photo containing text or pick one from your gallery.",
+  "scanNoMatch": "No text matching your learning language was found in the photo. Please check your language settings.",
   "scanNotSupported": "Scan is not available for your language. OCR currently supports Latin, Chinese, Japanese, and Korean scripts.",
   "scanLabel": "Scan",
   "score": "Accuracy: {score}%",

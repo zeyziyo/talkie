@@ -779,6 +779,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get scanInstructions => 'اختر صورة للمسح';
 
   @override
+  String get scanNoMatch =>
+      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+
+  @override
   String get scanNotSupported =>
       'هذه اللغة لا تدعم وظيفة المسح. يدعم التعرف الضوئي على الحروف حاليًا اللاتينية والصينية والديفاناغارية (مثل الهندية) واليابانية والأحرف الكورية فقط.';
 

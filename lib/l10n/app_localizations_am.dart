@@ -774,6 +774,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get scanInstructions => 'ለመቃኘት ምስል ይምረጡ';
 
   @override
+  String get scanNoMatch =>
+      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+
+  @override
   String get scanNotSupported =>
       'ይህ ቋንቋ የቃኚ መገልገያ ባህሪን አይደግፍም። OCR በአሁኑ ጊዜ የላቲን፣ ቻይንኛ፣ ዴቫናጋሪ (ሂንዲ ወዘተ)፣ ጃፓንኛ እና ኮሪያኛ ፊደላትን ብቻ ነው የሚደግፈው።';
 

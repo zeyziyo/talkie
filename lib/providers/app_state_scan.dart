@@ -131,6 +131,17 @@ extension AppStateScanExtension on AppState {
 
       setScanReviewItems(finalSegments);
       
+      // 언어 불일치 안내 처리
+      if (finalSegments.isEmpty && allBlocks.isNotEmpty) {
+        // 텍스트는 인식되었으나 학습 언어와 일치하는 것이 없음
+        setScannedText('NO_MATCH'); 
+      } else if (allBlocks.isEmpty) {
+        // 아예 인지된 텍스트가 없음
+        setScannedText('NO_TEXT');
+      } else {
+        setScannedText(''); // 정상 처리
+      }
+
       // 4. 내 언어(sourceLang)로 번역
       if (finalSegments.isNotEmpty) {
         await _translateAllSegmentsToNative();
@@ -138,6 +149,7 @@ extension AppStateScanExtension on AppState {
 
     } catch (e) {
       debugPrint('[Scan] OCR/Process Error: $e');
+      setScannedText('ERROR: $e');
     } finally {
       isTranslating = false;
       notify();

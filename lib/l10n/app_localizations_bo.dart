@@ -784,6 +784,10 @@ class AppLocalizationsBo extends AppLocalizations {
   String get scanInstructions => 'ཞིབ་བཤེར་བྱེད་པའི་པར་རིས་ཤིག་འདེམས།';
 
   @override
+  String get scanNoMatch =>
+      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+
+  @override
   String get scanNotSupported =>
       'སྐད་ཡིག་འདིས་ཞིབ་ལྟའི་བྱེད་ནུས་ལ་རྒྱབ་སྐྱོར་མི་བྱེད། OCR ད་ལྟ་ལ་ཊིན་དང་རྒྱ་ཡིག དེ་བ་ན་ག་རི (ཧིན་དྷི་སོགས) ཉི་ཧོང་། ཀོ་རི་ཡའི་ཡི་གེ་ཁོ་ནར་རྒྱབ་སྐྱོར་བྱེད།';
 

@@ -787,6 +787,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get scanInstructions => 'Seleziona un\'immagine da scansionare';
 
   @override
+  String get scanNoMatch =>
+      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+
+  @override
   String get scanNotSupported =>
       'La scansione non è supportata in questa lingua. L\'OCR supporta attualmente solo caratteri latini, cinesi, devanagari (come l\'hindi), giapponesi e coreani.';
 

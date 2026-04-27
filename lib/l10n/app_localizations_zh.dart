@@ -762,6 +762,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get scanInstructions => '选择要扫描的图像';
 
   @override
+  String get scanNoMatch =>
+      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+
+  @override
   String get scanNotSupported => '此语言不支持扫描功能。OCR目前仅支持拉丁文、中文、梵文（印地语等）、日文和韩文字符。';
 
   @override

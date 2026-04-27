@@ -784,6 +784,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String get scanInstructions => 'Kies \'n prent om te skandeer';
 
   @override
+  String get scanNoMatch =>
+      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+
+  @override
   String get scanNotSupported =>
       'Hierdie taal word nie deur skandering ondersteun nie. OCR ondersteun tans slegs Latynse, Chinese, Devanagari (bv. Hindi), Japannese en Koreaanse karakters.';
 

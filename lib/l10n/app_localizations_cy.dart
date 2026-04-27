@@ -791,6 +791,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get scanInstructions => 'Dewiswch ddelwedd i\'w sganio';
 
   @override
+  String get scanNoMatch =>
+      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+
+  @override
   String get scanNotSupported =>
       'Nid yw’r iaith hon yn cefnogi sganio. Ar hyn o bryd, dim ond llythrennau Lladin, Tsieineaidd, Devanagari (Hindi, ac ati), Japaneaidd a Choreaidd y mae OCR yn eu cefnogi.';
 
