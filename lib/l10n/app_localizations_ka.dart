@@ -1252,5 +1252,8 @@ class AppLocalizationsKa extends AppLocalizations {
   String get wordModeLabel => 'სიტყვების რეჟიმი';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'თქვენი გამოთქმა';
 }

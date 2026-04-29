@@ -1235,5 +1235,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get wordModeLabel => 'Chế độ từ';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Phát âm của bạn';
 }

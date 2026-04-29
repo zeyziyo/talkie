@@ -1251,5 +1251,8 @@ class AppLocalizationsMl extends AppLocalizations {
   String get wordModeLabel => 'വാക്ക് മോഡ്';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'നിങ്ങളുടെ ഉച്ചാരണം';
 }

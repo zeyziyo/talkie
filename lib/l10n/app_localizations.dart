@@ -2514,6 +2514,12 @@ abstract class AppLocalizations {
   /// **'단어 모드'**
   String get wordModeLabel;
 
+  /// No description provided for @combinedResult.
+  ///
+  /// In ko, this message translates to:
+  /// **'통합 결과'**
+  String get combinedResult;
+
   /// No description provided for @yourPronunciation.
   ///
   /// In ko, this message translates to:

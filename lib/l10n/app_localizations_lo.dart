@@ -1240,5 +1240,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get wordModeLabel => 'ໂໝດຄຳສັບ';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'ການອອກສຽງຂອງເຈົ້າ';
 }

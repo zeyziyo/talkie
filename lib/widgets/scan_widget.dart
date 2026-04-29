@@ -313,6 +313,66 @@ class _ScanWidgetState extends State<ScanWidget> {
               );
             }),
 
+            // Combined Result View
+            if (appState.scanReviewItems.isNotEmpty) ...[
+              SizedBox(height: 32.h),
+              Container(
+                padding: EdgeInsets.all(20.w),
+                decoration: BoxDecoration(
+                  color: Colors.indigo.shade900,
+                  borderRadius: BorderRadius.circular(24.r),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.1),
+                      blurRadius: 20,
+                      offset: const Offset(0, 10),
+                    )
+                  ],
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.auto_awesome, color: Colors.amber.shade300, size: 20.r),
+                        SizedBox(width: 8.w),
+                        Text(
+                          l10n.combinedResult,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 16.h),
+                    Text(
+                      l10n.originalText,
+                      style: TextStyle(color: Colors.white60, fontSize: 10.sp, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(height: 4.h),
+                    Text(
+                      appState.combinedOriginal,
+                      style: TextStyle(color: Colors.white, fontSize: 14.sp),
+                    ),
+                    SizedBox(height: 16.h),
+                    Divider(color: Colors.white12),
+                    SizedBox(height: 16.h),
+                    Text(
+                      l10n.translationResult,
+                      style: TextStyle(color: Colors.amber.shade200, fontSize: 10.sp, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(height: 4.h),
+                    Text(
+                      appState.combinedTranslated,
+                      style: TextStyle(color: Colors.white, fontSize: 15.sp, fontWeight: FontWeight.w500),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+
             // Final Save Button
             SizedBox(height: 24.h),
             ElevatedButton(

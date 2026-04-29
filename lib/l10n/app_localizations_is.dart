@@ -1246,5 +1246,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get wordModeLabel => 'Orðastilling';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Framburðurinn þinn';
 }

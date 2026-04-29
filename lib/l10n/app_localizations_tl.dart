@@ -1259,5 +1259,8 @@ class AppLocalizationsTl extends AppLocalizations {
   String get wordModeLabel => 'Word Mode';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Ang Pagbigkas Mo';
 }

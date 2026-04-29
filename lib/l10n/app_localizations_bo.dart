@@ -1249,5 +1249,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get wordModeLabel => 'ཐ་སྙད་ཐབས་ལམ།';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'ངའི་ཀློག་སྟངས།';
 }

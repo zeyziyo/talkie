@@ -1255,5 +1255,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get wordModeLabel => 'Режим на зборови';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Твој изговор';
 }

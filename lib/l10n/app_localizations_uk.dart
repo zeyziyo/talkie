@@ -1239,5 +1239,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get wordModeLabel => 'Режим слів';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Ваша вимова';
 }

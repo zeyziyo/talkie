@@ -1245,5 +1245,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get wordModeLabel => 'Tryb słów';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Twoja Wymowa';
 }

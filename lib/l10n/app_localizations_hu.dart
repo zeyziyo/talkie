@@ -1245,5 +1245,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get wordModeLabel => 'Szó mód';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Kiejtésed';
 }

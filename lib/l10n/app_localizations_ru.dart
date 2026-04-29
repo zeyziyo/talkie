@@ -1245,5 +1245,8 @@ class AppLocalizationsRu extends AppLocalizations {
   String get wordModeLabel => 'Режим слов';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Ваше произношение';
 }

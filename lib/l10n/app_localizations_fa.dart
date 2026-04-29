@@ -1235,5 +1235,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get wordModeLabel => 'حالت کلمه';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'تلفظ شما';
 }

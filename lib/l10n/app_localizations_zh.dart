@@ -1203,6 +1203,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get wordModeLabel => '单词模式';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => '你的发音';
 }
 

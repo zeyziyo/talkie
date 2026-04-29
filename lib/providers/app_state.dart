@@ -350,6 +350,7 @@ class AppState extends ChangeNotifier {
   String _scannedText = '';
   final String _scanDetectedLang = 'auto';
   List<Map<String, dynamic>> _scanReviewItems = []; // Phase 27: Multi-language segments
+  final Map<int, bool> _isTranslatingSingleMap = {}; // Phase 17480: Per-segment loading
 
   // Mode 3 (Scan) Getters
   File? get scannedImage => _scannedImage;

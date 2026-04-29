@@ -1245,5 +1245,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get wordModeLabel => 'Način rada s riječima';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Moj izgovor';
 }

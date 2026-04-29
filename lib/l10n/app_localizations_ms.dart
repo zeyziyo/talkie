@@ -1244,5 +1244,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get wordModeLabel => 'Mod Perkataan';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Sebutan Anda';
 }

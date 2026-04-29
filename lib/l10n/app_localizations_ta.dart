@@ -1259,5 +1259,8 @@ class AppLocalizationsTa extends AppLocalizations {
   String get wordModeLabel => 'சொல் பயன்முறை';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'உங்கள் உச்சரிப்பு';
 }

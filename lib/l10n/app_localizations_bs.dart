@@ -1245,5 +1245,8 @@ class AppLocalizationsBs extends AppLocalizations {
   String get wordModeLabel => 'Način rada riječi';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Vaš izgovor';
 }

@@ -1240,5 +1240,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get wordModeLabel => 'শব্দ মোড';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'আপনার উচ্চারণ';
 }

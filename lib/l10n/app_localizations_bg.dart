@@ -1252,5 +1252,8 @@ class AppLocalizationsBg extends AppLocalizations {
   String get wordModeLabel => 'Режим „Думи“';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Вашето произношение';
 }

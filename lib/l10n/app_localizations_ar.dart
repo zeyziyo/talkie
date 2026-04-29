@@ -1234,5 +1234,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get wordModeLabel => 'وضع الكلمات';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'نطقك';
 }

@@ -1246,5 +1246,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get wordModeLabel => 'Kelime Modu';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Telaffuzunuz';
 }

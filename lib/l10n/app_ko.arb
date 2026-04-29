@@ -796,5 +796,6 @@
     "description": "Toggle option for Word"
   },
   "translate": "번역하기",
+  "combinedResult": "통합 결과",
   "yourPronunciation": "내 발음"
 }

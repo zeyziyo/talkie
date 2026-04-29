@@ -1262,5 +1262,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get wordModeLabel => 'စကားလုံး ပုံစံ';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'ကျွန်ုပ်၏ အသံထွက်';
 }

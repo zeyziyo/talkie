@@ -1246,5 +1246,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get wordModeLabel => 'Λειτουργία λέξεων';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Η προφορά σας';
 }

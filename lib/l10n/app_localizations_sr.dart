@@ -1247,5 +1247,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get wordModeLabel => 'Режим речи';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Ваш изговор';
 }

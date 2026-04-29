@@ -1244,5 +1244,8 @@ class AppLocalizationsEt extends AppLocalizations {
   String get wordModeLabel => 'Sõnarežiim';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Sinu hääldus';
 }

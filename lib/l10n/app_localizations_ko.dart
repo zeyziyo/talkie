@@ -1216,5 +1216,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get wordModeLabel => '단어 모드';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => '내 발음';
 }

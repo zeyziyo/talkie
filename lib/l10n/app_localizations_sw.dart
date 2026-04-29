@@ -1242,5 +1242,8 @@ class AppLocalizationsSw extends AppLocalizations {
   String get wordModeLabel => 'Hali ya Neno';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Matamshi Yako';
 }

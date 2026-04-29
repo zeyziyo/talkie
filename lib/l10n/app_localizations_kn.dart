@@ -1245,5 +1245,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get wordModeLabel => 'ಪದ ಮೋಡ್';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'ನಿಮ್ಮ ಉಚ್ಚಾರಣೆ';
 }

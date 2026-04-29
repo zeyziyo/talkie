@@ -1259,5 +1259,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get wordModeLabel => 'Modaliteti i fjalës';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Shqiptimi juaj';
 }

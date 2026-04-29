@@ -1243,5 +1243,8 @@ class AppLocalizationsPa extends AppLocalizations {
   String get wordModeLabel => 'ਸ਼ਬਦ ਮੋਡ';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'ਤੁਹਾਡਾ ਉਚਾਰਨ';
 }

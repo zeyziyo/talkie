@@ -1249,5 +1249,8 @@ class AppLocalizationsLv extends AppLocalizations {
   String get wordModeLabel => 'Vārdu režīms';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Jūsu izruna';
 }

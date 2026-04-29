@@ -1248,5 +1248,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get wordModeLabel => 'शब्द मोड';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'मेरो उच्चारण';
 }

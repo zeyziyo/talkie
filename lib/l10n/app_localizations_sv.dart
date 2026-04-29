@@ -1239,5 +1239,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get wordModeLabel => 'Ord-läge';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Ditt uttal';
 }

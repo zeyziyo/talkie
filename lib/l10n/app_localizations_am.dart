@@ -1226,5 +1226,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get wordModeLabel => 'የቃል ሁነታ';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'የእርስዎ አጠራር';
 }

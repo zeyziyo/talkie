@@ -1239,5 +1239,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get wordModeLabel => 'Ordmodus';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Din uttale';
 }

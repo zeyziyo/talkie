@@ -1249,5 +1249,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get wordModeLabel => 'Рэжым слоў';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Ваша вымаўленне';
 }

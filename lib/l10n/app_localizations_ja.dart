@@ -1210,5 +1210,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get wordModeLabel => '単語モード';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'あなたの発音';
 }

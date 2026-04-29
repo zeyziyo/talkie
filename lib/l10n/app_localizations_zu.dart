@@ -1259,5 +1259,8 @@ class AppLocalizationsZu extends AppLocalizations {
   String get wordModeLabel => 'Imodi Yamagama';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Ukuphinyiselwa Kwakho';
 }

@@ -1246,5 +1246,8 @@ class AppLocalizationsTe extends AppLocalizations {
   String get wordModeLabel => 'పద మోడ్';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'మీ ఉచ్చారణ';
 }

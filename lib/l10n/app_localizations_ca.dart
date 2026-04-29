@@ -1260,5 +1260,8 @@ class AppLocalizationsCa extends AppLocalizations {
   String get wordModeLabel => 'Mode de paraules';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'La teva pronunciació';
 }

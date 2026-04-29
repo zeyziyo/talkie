@@ -1238,5 +1238,8 @@ class AppLocalizationsCs extends AppLocalizations {
   String get wordModeLabel => 'Režim slov';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Vaše výslovnost';
 }

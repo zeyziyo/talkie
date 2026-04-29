@@ -1240,5 +1240,8 @@ class AppLocalizationsGu extends AppLocalizations {
   String get wordModeLabel => 'શબ્દ મોડ';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'તમારું ઉચ્ચારણ';
 }

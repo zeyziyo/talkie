@@ -1258,5 +1258,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get wordModeLabel => 'Mode mot';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Votre Prononciation';
 }

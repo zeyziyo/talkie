@@ -1252,5 +1252,8 @@ class AppLocalizationsOr extends AppLocalizations {
   String get wordModeLabel => 'ଶବ୍ଦ ମୋଡ୍';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'ତୁମର ଉଚ୍ଚାରଣ';
 }

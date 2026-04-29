@@ -1246,5 +1246,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get wordModeLabel => 'Mode Kata';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'Lafal Anda';
 }

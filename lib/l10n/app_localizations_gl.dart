@@ -1255,5 +1255,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get wordModeLabel => 'Modo palabra';
 
   @override
+  String get combinedResult => '통합 결과';
+
+  @override
   String get yourPronunciation => 'A túa pronuncia';
 }
