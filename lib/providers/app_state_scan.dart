@@ -183,9 +183,14 @@ extension AppStateScanExtension on AppState {
           if (result['isValid'] == true || translatedText.isNotEmpty) {
             _scanReviewItems[i]['translated'] = translatedText;
           } else {
-            // 결과가 아예 없는 경우에만 에러 사유 표시
-            final reason = result['reason'] ?? 'Safety Policy';
-            _scanReviewItems[i]['translated'] = 'AI Blocked: $reason';
+            // 결과가 아예 없는 경우 에러 사유를 정제하여 표시
+            String reason = result['reason'] ?? 'Safety Policy';
+            if (reason.contains('Resource exhausted') || reason.contains('429')) {
+              reason = '서버 사용량이 많아 잠시 후 다시 시도해 주세요.';
+            } else if (reason.contains('Safety')) {
+              reason = 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+            }
+            _scanReviewItems[i]['translated'] = '[$reason]';
           }
         } catch (e) {
           _scanReviewItems[i]['translated'] = 'Error: $e';
