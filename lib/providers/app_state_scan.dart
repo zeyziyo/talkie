@@ -100,13 +100,15 @@ extension AppStateScanExtension on AppState {
         }
       }
 
-      List<Map<String, dynamic>> finalSegments = dedupedSegments.map((seg) {
-        return {
-          'lang': seg['lang'],
-          'original': seg['text'],
+      List<Map<String, dynamic>> finalSegments = [];
+      if (dedupedSegments.isNotEmpty) {
+        final combinedOriginal = dedupedSegments.map((seg) => seg['text']).join('\n');
+        finalSegments.add({
+          'lang': _targetLang,
+          'original': combinedOriginal,
           'translated': '',
-        };
-      }).toList();
+        });
+      }
       if (finalSegments.isEmpty && allBlocks.isNotEmpty) {
         setScannedText('NO_MATCH'); 
       } else if (allBlocks.isEmpty) {
@@ -158,18 +160,56 @@ extension AppStateScanExtension on AppState {
         // 2. 번역 성공 시에만 횟수 차감
         await _usageService.incrementUsage();
       } else {
-        _scanReviewItems[index]['translated'] = result['reason'] ?? 'ERROR';
+        final reason = result['reason']?.toString() ?? 'ERROR';
+        if (reason.contains('429') || reason.contains('Resource exhausted') || reason.contains('Max retries')) {
+          _splitSegmentIntoChunks(index);
+          return;
+        }
+        _scanReviewItems[index]['translated'] = reason;
       }
     } catch (e) {
       if (e is LimitReachedException) {
         _scanReviewItems[index]['translated'] = 'LIMIT';
       } else {
+        final errorStr = e.toString();
+        if (errorStr.contains('429') || errorStr.contains('Resource exhausted')) {
+          _splitSegmentIntoChunks(index);
+          return;
+        }
         _scanReviewItems[index]['translated'] = 'Error: $e';
       }
     } finally {
       _isTranslatingSingleMap[index] = false;
       notify();
     }
+  }
+
+  void _splitSegmentIntoChunks(int index) {
+    final item = _scanReviewItems[index];
+    final originalText = item['original'].toString();
+    
+    final lines = originalText.split('\n');
+    if (lines.length <= 1) {
+      // Cannot split further
+      _scanReviewItems[index]['translated'] = 'Error: 429 Resource Exhausted. Please try again later.';
+      return;
+    }
+
+    List<Map<String, dynamic>> newChunks = [];
+    for (int i = 0; i < lines.length; i += 5) {
+      final chunkLines = lines.skip(i).take(5).join('\n');
+      if (chunkLines.trim().isNotEmpty) {
+        newChunks.add({
+          'lang': item['lang'],
+          'original': chunkLines,
+          'translated': '',
+        });
+      }
+    }
+
+    _scanReviewItems.replaceRange(index, index + 1, newChunks);
+    _isTranslatingSingleMap.clear();
+    notify();
   }
 
   String get combinedOriginal => _scanReviewItems.map((e) => e['original']).join('\n\n');
