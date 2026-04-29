@@ -102,8 +102,10 @@
     "description": "Error dialog title"
   },
   "errorHateSpeech": "Translation cannot be processed due to hate speech.",
-  "errorOtherSafety": "Translation was blocked by AI safety policy.",
-  "errorProfanity": "Translation cannot be processed due to profanity.",
+  "errorOtherSafety": "Translation blocked by AI safety policy.",
+  "errorQuotaExceeded": "Server is busy. Please try again in a moment.",
+  "errorSafetyPolicy": "Translation restricted due to AI safety policy.",
+  "errorProfanity": "Cannot translate due to profanity.",
   "errorSelectCategory": "Please select word or sentence first!",
   "errorSexualContent": "Translation cannot be processed due to sexual content.",
   "errors": "Errors:",

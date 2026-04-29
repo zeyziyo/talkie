@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../services/translation_service.dart';
 import '../providers/app_state.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../l10n/app_localizations.dart';
@@ -218,9 +219,27 @@ class _ScanWidgetState extends State<ScanWidget> {
                       style: TextStyle(fontSize: 10.sp, color: Colors.indigo.shade300, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 4.h),
-                    Text(
-                      item['translated'] ?? '',
-                      style: TextStyle(fontSize: 15.sp, color: Colors.black87, fontWeight: FontWeight.w500),
+                    Builder(
+                      builder: (context) {
+                        final translatedText = item['translated'] ?? '';
+                        // 만약 에러 코드 형태라면 다국어 메시지로 변환
+                        String displayMsg = translatedText;
+                        if (translatedText.startsWith('Error:') || 
+                            translatedText.contains('Policy') || 
+                            translatedText == 'OTHER' ||
+                            translatedText.contains('exhausted')) {
+                          displayMsg = TranslationService.getErrorMessage(translatedText, l10n);
+                        }
+                        
+                        return Text(
+                          displayMsg,
+                          style: TextStyle(
+                            fontSize: 15.sp, 
+                            color: displayMsg == translatedText ? Colors.black87 : Colors.red.shade700, 
+                            fontWeight: displayMsg == translatedText ? FontWeight.w500 : FontWeight.normal
+                          ),
+                        );
+                      }
                     ),
                   ],
                 ),

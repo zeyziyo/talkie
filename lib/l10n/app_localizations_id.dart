@@ -165,6 +165,12 @@ class AppLocalizationsId extends AppLocalizations {
       'Penerjemahan ditolak oleh kebijakan keamanan AI.';
 
   @override
+  String get errorQuotaExceeded => '서버 사용량이 많아 번역이 지연되고 있습니다. 잠시 후 다시 시도해 주세요.';
+
+  @override
+  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+
+  @override
   String get errorProfanity =>
       'Tidak dapat menerjemahkan karena mengandung kata-kata kotor.';
 

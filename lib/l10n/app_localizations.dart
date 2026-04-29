@@ -549,13 +549,25 @@ abstract class AppLocalizations {
   /// No description provided for @errorOtherSafety.
   ///
   /// In ko, this message translates to:
-  /// **'AI 안전 정책에 의해 번역이 거부되었습니다.'**
+  /// **'AI 안전 정책으로 인해 번역이 차단되었습니다.'**
   String get errorOtherSafety;
+
+  /// No description provided for @errorQuotaExceeded.
+  ///
+  /// In ko, this message translates to:
+  /// **'서버 사용량이 많아 번역이 지연되고 있습니다. 잠시 후 다시 시도해 주세요.'**
+  String get errorQuotaExceeded;
+
+  /// No description provided for @errorSafetyPolicy.
+  ///
+  /// In ko, this message translates to:
+  /// **'AI 안전 정책으로 인해 번역이 제한되었습니다.'**
+  String get errorSafetyPolicy;
 
   /// No description provided for @errorProfanity.
   ///
   /// In ko, this message translates to:
-  /// **'비속어가 포함되어 있어 번역할 수 없습니다.'**
+  /// **'비속어가 포함되어 번역할 수 없습니다.'**
   String get errorProfanity;
 
   /// No description provided for @errorSelectCategory.

@@ -15,7 +15,10 @@ class TranslationService {
       default:
         // 기술적 에러 처리 (사용량 초과 등)
         if (reason.contains('Resource exhausted') || reason.contains('429') || reason.contains('Max retries')) {
-          return '서버 사용량이 많아 번역이 지연되고 있습니다. 잠시 후 다시 시도해 주세요.';
+          return l10n.errorQuotaExceeded;
+        }
+        if (reason.contains('Safety Policy') || reason.contains('Safety')) {
+          return l10n.errorSafetyPolicy;
         }
         // If it looks like a descriptive message, return as is
         if (reason.startsWith('Error:') || reason.length > 20 || reason.contains(' ')) {

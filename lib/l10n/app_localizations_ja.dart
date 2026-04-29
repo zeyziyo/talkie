@@ -161,6 +161,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get errorOtherSafety => 'AI安全ポリシーにより翻訳が拒否されました。';
 
   @override
+  String get errorQuotaExceeded => '서버 사용량이 많아 번역이 지연되고 있습니다. 잠시 후 다시 시도해 주세요.';
+
+  @override
+  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+
+  @override
   String get errorProfanity => '不適切な表現が含まれているため、翻訳できません。';
 
   @override

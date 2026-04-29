@@ -163,11 +163,18 @@ class AppLocalizationsEn extends AppLocalizations {
       'Translation cannot be processed due to hate speech.';
 
   @override
-  String get errorOtherSafety => 'Translation was blocked by AI safety policy.';
+  String get errorOtherSafety => 'Translation blocked by AI safety policy.';
 
   @override
-  String get errorProfanity =>
-      'Translation cannot be processed due to profanity.';
+  String get errorQuotaExceeded =>
+      'Server is busy. Please try again in a moment.';
+
+  @override
+  String get errorSafetyPolicy =>
+      'Translation restricted due to AI safety policy.';
+
+  @override
+  String get errorProfanity => 'Cannot translate due to profanity.';
 
   @override
   String get errorSelectCategory => 'Please select word or sentence first!';
