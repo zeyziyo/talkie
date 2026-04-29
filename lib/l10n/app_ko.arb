@@ -795,5 +795,6 @@
   "@word": {
     "description": "Toggle option for Word"
   },
+  "translate": "번역하기",
   "yourPronunciation": "내 발음"
 }

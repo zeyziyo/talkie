@@ -249,6 +249,36 @@ class _ScanWidgetState extends State<ScanWidget> {
                     Builder(
                       builder: (context) {
                         final translatedText = item['translated'] ?? '';
+                        final isTranslating = appState.isSegmentTranslating(index);
+
+                        if (isTranslating) {
+                          return Padding(
+                            padding: EdgeInsets.symmetric(vertical: 8.h),
+                            child: SizedBox(
+                              width: 20.w,
+                              height: 20.w,
+                              child: CircularProgressIndicator(strokeWidth: 2, color: Colors.indigo.shade300),
+                            ),
+                          );
+                        }
+
+                        if (translatedText.isEmpty) {
+                          return Align(
+                            alignment: Alignment.centerLeft,
+                            child: TextButton.icon(
+                              onPressed: () => appState.translateSingleSegment(index),
+                              icon: Icon(Icons.translate, size: 16.sp),
+                              label: Text(l10n.translate),
+                              style: TextButton.styleFrom(
+                                foregroundColor: Colors.indigo,
+                                padding: EdgeInsets.symmetric(horizontal: 12.w),
+                                backgroundColor: Colors.indigo.shade50,
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
+                              ),
+                            ),
+                          );
+                        }
+
                         // 만약 에러 코드 형태라면 다국어 메시지로 변환
                         String displayMsg = translatedText;
                         if (translatedText.startsWith('Error:') || 
@@ -258,13 +288,23 @@ class _ScanWidgetState extends State<ScanWidget> {
                           displayMsg = TranslationService.getErrorMessage(translatedText, l10n);
                         }
                         
-                        return Text(
-                          displayMsg,
-                          style: TextStyle(
-                            fontSize: 15.sp, 
-                            color: displayMsg == translatedText ? Colors.black87 : Colors.red.shade700, 
-                            fontWeight: displayMsg == translatedText ? FontWeight.w500 : FontWeight.normal
-                          ),
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              displayMsg,
+                              style: TextStyle(
+                                fontSize: 15.sp, 
+                                color: displayMsg == translatedText ? Colors.black87 : Colors.red.shade700, 
+                                fontWeight: displayMsg == translatedText ? FontWeight.w500 : FontWeight.normal
+                              ),
+                            ),
+                            if (displayMsg != translatedText) // 에러 발생 시 재시도 버튼 제공
+                              TextButton(
+                                onPressed: () => appState.translateSingleSegment(index),
+                                child: Text(l10n.retry, style: TextStyle(fontSize: 12.sp)),
+                              ),
+                          ],
                         );
                       }
                     ),

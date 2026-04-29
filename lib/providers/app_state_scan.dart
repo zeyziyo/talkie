@@ -147,16 +147,56 @@ extension AppStateScanExtension on AppState {
         setScannedText(''); // 정상 처리
       }
 
-      // 4. 내 언어(sourceLang)로 번역
-      if (finalSegments.isNotEmpty) {
-        await _translateAllSegmentsToNative();
-      }
+      // Phase 17480: 자동 번역 제거 (사용자가 수동으로 버튼을 눌러 번역하도록 개선)
+      // if (finalSegments.isNotEmpty) {
+      //   await _translateAllSegmentsToNative();
+      // }
 
     } catch (e) {
       debugPrint('[Scan] OCR/Process Error: $e');
       setScannedText('ERROR: $e');
     } finally {
       isTranslating = false;
+      notify();
+    }
+  }
+
+  // 개별 세그먼트 번역 상태 관리
+  final Map<int, bool> _isTranslatingSingle = {};
+  bool isSegmentTranslating(int index) => _isTranslatingSingle[index] ?? false;
+
+  /// 특정 인덱스의 세그먼트만 번역 실행
+  Future<void> translateSingleSegment(int index) async {
+    if (index < 0 || index >= _scanReviewItems.length) return;
+    if (_isTranslatingSingle[index] == true) return;
+
+    final item = _scanReviewItems[index];
+    final originalText = item['original'].toString().trim();
+    if (originalText.isEmpty) return;
+
+    _isTranslatingSingle[index] = true;
+    notify();
+
+    try {
+      // 텍스트 전처리
+      final cleanText = originalText.replaceAll('\n', ' ');
+
+      final result = await TranslationService.translate(
+        text: cleanText,
+        sourceLang: item['lang'],
+        targetLang: _sourceLang,
+      );
+
+      final translatedText = result['text']?.toString() ?? '';
+      if (result['isValid'] == true || translatedText.isNotEmpty) {
+        _scanReviewItems[index]['translated'] = translatedText;
+      } else {
+        _scanReviewItems[index]['translated'] = result['reason'] ?? 'ERROR';
+      }
+    } catch (e) {
+      _scanReviewItems[index]['translated'] = 'Error: $e';
+    } finally {
+      _isTranslatingSingle[index] = false;
       notify();
     }
   }

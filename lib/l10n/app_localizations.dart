@@ -2109,7 +2109,7 @@ abstract class AppLocalizations {
   /// Translate button
   ///
   /// In ko, this message translates to:
-  /// **'번역'**
+  /// **'번역하기'**
   String get translate;
 
   /// No description provided for @translateNow.

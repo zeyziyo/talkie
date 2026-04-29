@@ -1002,7 +1002,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get translate => '번역';
+  String get translate => '번역하기';
 
   @override
   String get translateNow => '지금 번역하기';
