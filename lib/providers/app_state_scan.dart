@@ -100,21 +100,13 @@ extension AppStateScanExtension on AppState {
         }
       }
 
-      Map<String, List<String>> langGroups = {};
-      for (var seg in dedupedSegments) {
-        final lang = seg['lang'] as String;
-        langGroups.putIfAbsent(lang, () => []).add(seg['text']);
-      }
-
-      List<Map<String, dynamic>> finalSegments = [];
-      for (var entry in langGroups.entries) {
-        finalSegments.add({
-          'lang': entry.key,
-          'original': entry.value.join('\n'),
+      List<Map<String, dynamic>> finalSegments = dedupedSegments.map((seg) {
+        return {
+          'lang': seg['lang'],
+          'original': seg['text'],
           'translated': '',
-        });
-      }
-
+        };
+      }).toList();
       if (finalSegments.isEmpty && allBlocks.isNotEmpty) {
         setScannedText('NO_MATCH'); 
       } else if (allBlocks.isEmpty) {
