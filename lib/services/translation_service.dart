@@ -61,53 +61,74 @@ class TranslationService {
       print('[Translation] Cache SKIP/Error/Timeout: $e');
     }
 
-    // 2. Call Supabase Edge Function
-    try {
-      print('[Translation] Calling Supabase Edge Function...');
-      
-      final result = await SupabaseService.translateAndValidate(
-        text: normalized,
-        sourceLang: sourceLang,
-        targetLang: targetLang,
-        note: note,
-      );
-
-      final translatedText = (result['translatedText'] ?? result['text'] ?? '') as String;
-      final isValid = result['isValid'] as bool? ?? false;
-      final reason = result['reason'] as String? ?? (isValid ? null : 'OTHER');
-      final disambiguationOptions = result['disambiguationOptions'] as List<dynamic>?;
-
-      // Phase 17480: Accept translation even if AI flagged it out of ambiguity caution
-      if (!isValid && translatedText.isEmpty) {
-        print('[Translation] Blocked by AI: $reason');
-        return {'text': '', 'isValid': false, 'reason': reason};
-      }
-
-      print('[Translation] Success: $translatedText (Note: $note)');
-
-      // 3. Cache the result locally (Non-blocking timeout)
+    // 2. Call Supabase Edge Function with Retries
+    int retryCount = 0;
+    const int maxRetries = 2;
+    
+    while (retryCount <= maxRetries) {
       try {
-        await DatabaseService.cacheTranslation(cacheKey, translatedText)
-            .timeout(const Duration(milliseconds: 500));
-      } catch (e) {
-        print('[Translation] Could not cache locally: $e');
-      }
-      
-      return {
-        'text': translatedText,
-        'isValid': true,
-        'note': note ?? result['note'],
-        'disambiguationOptions': disambiguationOptions?.cast<String>(),
-        'pos': result['pos'] as String?,
-        'formType': result['formType'] as String?,
-        'root': result['root'] as String?,
-        'style': result['style'] as String?,
-        'englishText': result['englishText'] as String?, // Phase 106: Preserve pivot
-      };
+        print('[Translation] Calling Supabase Edge Function (Attempt ${retryCount + 1})...');
+        
+        final result = await SupabaseService.translateAndValidate(
+          text: normalized,
+          sourceLang: sourceLang,
+          targetLang: targetLang,
+          note: note,
+        );
 
-    } catch (e) {
-      print('[Translation] Error: $e');
-      return {'text': '', 'isValid': false, 'reason': 'Error: $e'};
+        final translatedText = (result['translatedText'] ?? result['text'] ?? '') as String;
+        final isValid = result['isValid'] as bool? ?? false;
+        final reason = result['reason'] as String? ?? (isValid ? null : 'OTHER');
+        final disambiguationOptions = result['disambiguationOptions'] as List<dynamic>?;
+
+        // Phase 17480: Accept translation even if AI flagged it out of ambiguity caution
+        if (!isValid && translatedText.isEmpty) {
+          print('[Translation] Blocked by AI: $reason');
+          return {'text': '', 'isValid': false, 'reason': reason};
+        }
+
+        print('[Translation] Success: $translatedText (Note: $note)');
+
+        // 3. Cache the result locally (Non-blocking timeout)
+        try {
+          await DatabaseService.cacheTranslation(cacheKey, translatedText)
+              .timeout(const Duration(milliseconds: 500));
+        } catch (e) {
+          print('[Translation] Could not cache locally: $e');
+        }
+        
+        return {
+          'text': translatedText,
+          'isValid': true,
+          'note': note ?? result['note'],
+          'disambiguationOptions': disambiguationOptions?.cast<String>(),
+          'pos': result['pos'] as String?,
+          'formType': result['formType'] as String?,
+          'root': result['root'] as String?,
+          'style': result['style'] as String?,
+          'englishText': result['englishText'] as String?,
+        };
+
+      } catch (e) {
+        final errorStr = e.toString();
+        bool isRetryable = errorStr.contains('Resource exhausted') || 
+                           errorStr.contains('429') || 
+                           errorStr.contains('Timeout') ||
+                           errorStr.contains('400'); // Supabase often wraps 429 as 400
+
+        if (isRetryable && retryCount < maxRetries) {
+          retryCount++;
+          final delayMs = retryCount * 1500; // 1.5s, 3s delay
+          print('[Translation] Retryable error ($errorStr). Waiting ${delayMs}ms before retry $retryCount...');
+          await Future.delayed(Duration(milliseconds: delayMs));
+          continue;
+        }
+
+        print('[Translation] Fatal Error or Max Retries reached: $e');
+        return {'text': '', 'isValid': false, 'reason': 'Error: $e'};
+      }
     }
+
+    return {'text': '', 'isValid': false, 'reason': 'Error: Max retries reached'};
   }
 }
