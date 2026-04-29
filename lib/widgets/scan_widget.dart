@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../services/translation_service.dart';
 import '../providers/app_state.dart';
@@ -198,9 +199,35 @@ class _ScanWidgetState extends State<ScanWidget> {
                     SizedBox(height: 12.h),
                     
                     // Original
-                    Text(
-                      l10n.originalText,
-                      style: TextStyle(fontSize: 10.sp, color: Colors.grey.shade500, fontWeight: FontWeight.bold),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          l10n.originalText,
+                          style: TextStyle(fontSize: 10.sp, color: Colors.grey.shade500, fontWeight: FontWeight.bold),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Clipboard.setData(ClipboardData(text: item['original']));
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text(l10n.originalCopied), duration: const Duration(seconds: 1)),
+                            );
+                          },
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4.w),
+                            child: Row(
+                              children: [
+                                Icon(Icons.copy, size: 12.r, color: Colors.indigo.shade300),
+                                SizedBox(width: 4.w),
+                                Text(
+                                  l10n.copyOriginal,
+                                  style: TextStyle(fontSize: 10.sp, color: Colors.indigo.shade300, fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(height: 4.h),
                     Text(

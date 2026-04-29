@@ -167,11 +167,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      'Server is busy. Please try again in a moment.';
+      'AI service daily quota exceeded. Please try again later or tomorrow.';
 
   @override
   String get errorSafetyPolicy =>
       'Translation restricted due to AI safety policy.';
+
+  @override
+  String get copyOriginal => 'Copy Original';
+
+  @override
+  String get originalCopied => 'Original text copied to clipboard.';
 
   @override
   String get errorProfanity => 'Cannot translate due to profanity.';
