@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "包含仇恨言论，无法翻译。",
   "errorOtherSafety": "由于 AI 安全策略，翻译被拒绝。",
+  "errorQuotaExceeded": "人工智能服务的每日配额已用完，请稍后或明天再试。",
+  "errorSafetyPolicy": "由于 AI 安全策略，翻译受到限制。",
+  "copyOriginal": "复制原文",
+  "originalCopied": "原文已复制。",
   "errorProfanity": "包含不雅内容，无法翻译。",
   "errorSelectCategory": "请先选择单词或句子！",
   "errorSexualContent": "包含性暗示内容，无法翻译。",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "原文",
   "saving": "正在保存...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "选择要扫描的图像",
+  "scanNoMatch": "照片中未找到与所选学习语言匹配的文本。请检查语言设置。",
   "scanNotSupported": "此语言不支持扫描功能。OCR 目前仅支持拉丁文、中文、梵文（印地语等）、日文和韩文字符。",
   "scanLabel": "扫描",
   "score": "准确率: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "翻译语言",
   "translationLimitExceeded": "超出翻译限额",
-  "translationLimitMessage": "您已用完每日免费翻译 (5 次)。\\n\\n观看广告立即补充 5 次吗？",
+  "translationLimitMessage": "您已用完每日免费翻译 (10 次)。\\n\\n观看广告立即补充 10 次吗？",
   "translationLoaded": "已加载保存的翻译",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "翻译次数已补充 5 次！",
+  "translationRefilled": "翻译次数已补充 10 次！",
   "translationResult": "翻译结果",
   "translationResultHint": "翻译结果 - 可修改",
   "tryAgain": "再试一次",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "查看在线指南",
   "voluntaryTranslations": "自愿翻译",
-  "watchAdAndRefill": "观看广告并补充 (+5 次)",
+  "watchAdAndRefill": "观看广告并补充 (+10 次)",
   "welcomeButton": "开始使用",
   "welcomeDesc": "欢迎来到Talkie！我们以100%的完整性支持全球80多种语言，并通过全新的高级3D设计和优化的性能，为您提供完美的学习体验。",
   "welcomeTitle": "欢迎使用 Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "在敌人到达之前说出单词，保卫基地。",
   "wordDefenseTitle": "单词防御",
   "wordModeLabel": "单词模式",
-  "yourPronunciation": "你的发音"
+  "combinedResult": "合并结果",
+  "errorLimitReached": "翻译次数不足。观看广告以充值 10 次吗？",
+  "yourPronunciation": "你的发音",
+  "helpLimitDetails": "💡 [翻译次数说明]\n每天午夜提供 20 次免费翻译。即使全部用完，观看广告也会立即充值 10 次额外的翻译。",
+  "scanDetails": "• 从相机或相册加载图像，提取文本并进行翻译。\n• 可以点击单张照片中包含的多个句子，分别进行翻译。\n• 如果翻译次数不足，可以立即观看广告，额外充值 10 次。"
 }

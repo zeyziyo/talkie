@@ -681,12 +681,12 @@
   },
   "translationLanguage": "Translation Language",
   "translationLimitExceeded": "Translation Limit Exceeded",
-  "translationLimitMessage": "You have used all your free daily translations (5). Watch an ad to refill 5 immediately?",
+  "translationLimitMessage": "You have used all your free daily translations (10). Watch an ad to refill 10 immediately?",
   "translationLoaded": "Loaded saved translation",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Translations refilled by 5!",
+  "translationRefilled": "Translations refilled by 10!",
   "translationResult": "Translation Result",
   "translationResultHint": "Translation result - editable",
   "tryAgain": "Try Again",
@@ -746,7 +746,7 @@
   },
   "viewOnlineGuide": "View Online User Guide",
   "voluntaryTranslations": "Voluntary Translations",
-  "watchAdAndRefill": "Watch Ad & Refill (+5)",
+  "watchAdAndRefill": "Watch Ad & Refill (+10)",
   "welcomeButton": "Get Started",
   "welcomeDesc": "Welcome to Talkie! We support over 80 languages worldwide with 100% integrity and provide a perfect learning experience with new premium 3D designs and optimized performance.",
   "welcomeTitle": "Welcome to Talkie!",
@@ -757,7 +757,9 @@
   "wordDefenseDesc": "Defend your base by speaking words correctly before enemies reach you.",
   "wordDefenseTitle": "Word Defense",
   "wordModeLabel": "Word Mode",
-  "translate": "Translate",
   "combinedResult": "Combined Result",
-  "yourPronunciation": "Your Pronunciation"
+  "errorLimitReached": "Translation limit reached. Watch an ad to refill 10 more?",
+  "yourPronunciation": "Your Pronunciation",
+  "helpLimitDetails": "💡 [Translation Limit]\n20 free translations are provided every day at midnight. Even if you use them all, you can instantly recharge 10 additional translations by watching an ad.",
+  "scanDetails": "• Extract and translate text from images via camera or gallery.\n• Tap individual sentences within a single photo to translate them separately.\n• If you run out of translation limits, you can instantly watch an ad to recharge 10 more translations."
 }

@@ -691,7 +691,7 @@
       }
     }
   },
-  "translate": "번역",
+  "translate": "번역하기",
   "translateNow": "지금 번역하기",
   "@translate": {
     "description": "Translate button"
@@ -716,12 +716,12 @@
   },
   "translationLanguage": "번역 언어",
   "translationLimitExceeded": "번역 한도 초과",
-  "translationLimitMessage": "일일 무료 번역(5회)을 모두 사용했습니다.\\n\\n광고를 보고 5회를 즉시 충전하시겠습니까?",
+  "translationLimitMessage": "일일 무료 번역(10회)을 모두 사용했습니다.\\n\\n광고를 보고 10회를 즉시 충전하시겠습니까?",
   "translationLoaded": "저장된 번역 불러옴",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "번역 횟수가 5회 충전되었습니다!",
+  "translationRefilled": "번역 횟수가 10회 충전되었습니다!",
   "translationResult": "번역 결과",
   "translationResultHint": "번역 결과 - 수정 가능함",
   "@translation": {
@@ -784,7 +784,7 @@
   },
   "viewOnlineGuide": "온라인 가이드 보기",
   "voluntaryTranslations": "자발적 번역",
-  "watchAdAndRefill": "광고 보고 충전 (+5회)",
+  "watchAdAndRefill": "광고 보고 충전 (+10회)",
   "welcomeButton": "시작하기",
   "welcomeDesc": "Talkie에 오신 것을 환영합니다! 전 세계 80개 이상의 모든 언어를 100% 무결성으로 지원하며, 새로운 프리미엄 3D 디자인과 최적화된 성능으로 완벽한 학습 경험을 선사합니다.",
   "welcomeTitle": "Talkie에 오신 것을 환영합니다!",
@@ -795,7 +795,9 @@
   "@word": {
     "description": "Toggle option for Word"
   },
-  "translate": "번역하기",
   "combinedResult": "통합 결과",
-  "yourPronunciation": "내 발음"
+  "errorLimitReached": "번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?",
+  "yourPronunciation": "내 발음",
+  "helpLimitDetails": "💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.",
+  "scanDetails": "• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다."
 }

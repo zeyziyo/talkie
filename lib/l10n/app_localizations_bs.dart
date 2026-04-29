@@ -166,16 +166,17 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Dnevna kvota za uslugu umjetne inteligencije je iscrpljena. Pokušajte ponovo kasnije ili sutra.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Prijevod je ograničen zbog AI politike sigurnosti.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Kopiraj izvornik';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Izvorni tekst je kopiran.';
 
   @override
   String get errorProfanity => 'Ne može se prevesti jer sadrži psovke.';
@@ -789,7 +790,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get saved => 'Spremljeno';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Izvorni tekst';
 
   @override
   String get saving => 'Spremanje...';
@@ -799,7 +800,7 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Nije pronađen tekst koji odgovara postavljenom jeziku učenja na fotografiji. Provjerite postavke jezika.';
 
   @override
   String get scanNotSupported =>
@@ -1043,13 +1044,13 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Iskoristili ste sve besplatne dnevne prijevode (5 puta).\\n\\nŽelite li odmah napuniti 5 puta gledanjem oglasa?';
+      'Iskoristili ste sve besplatne dnevne prijevode (10 puta).\\n\\nŽelite li odmah napuniti 10 puta gledanjem oglasa?';
 
   @override
   String get translationLoaded => 'Učitavanje spremljenog prijevoda';
 
   @override
-  String get translationRefilled => 'Broj prijevoda je napunjen 5 puta!';
+  String get translationRefilled => 'Broj prijevoda je napunjen 10 puta!';
 
   @override
   String get translationResult => 'Rezultat prijevoda';
@@ -1219,7 +1220,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get voluntaryTranslations => 'Dobrovoljni prijevodi';
 
   @override
-  String get watchAdAndRefill => 'Napunite gledanjem oglasa (+5 puta)';
+  String get watchAdAndRefill => 'Napunite gledanjem oglasa (+10 puta)';
 
   @override
   String get welcomeButton => 'Započni';
@@ -1245,8 +1246,20 @@ class AppLocalizationsBs extends AppLocalizations {
   String get wordModeLabel => 'Način rada riječi';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Kombinirani rezultat';
+
+  @override
+  String get errorLimitReached =>
+      'Nemate dovoljno prijevoda. Želite li pogledati oglas i dobiti 10 dodatnih prijevoda?';
 
   @override
   String get yourPronunciation => 'Vaš izgovor';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Vodič za ograničenje prijevoda]\nSvakog dana u ponoć dobivate 20 besplatnih prijevoda. Ako ih sve potrošite, možete odmah dobiti 10 dodatnih prijevoda gledanjem oglasa.';
+
+  @override
+  String get scanDetails =>
+      '• Učitajte slike iz kamere ili galerije da biste izdvojili i preveli tekst.\n• Možete dodirnuti nekoliko rečenica na jednoj fotografiji da biste ih pojedinačno preveli.\n• Ako nemate dovoljno prijevoda, možete odmah pogledati oglas da biste dobili još 10 prijevoda.';
 }

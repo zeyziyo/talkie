@@ -166,16 +166,17 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Bạn đã dùng hết hạn ngạch hằng ngày của dịch vụ AI. Vui lòng thử lại sau hoặc vào ngày mai.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Bản dịch bị giới hạn do chính sách an toàn AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Sao chép bản gốc';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Đã sao chép văn bản gốc.';
 
   @override
   String get errorProfanity => 'Không thể dịch vì chứa từ ngữ tục tĩu.';
@@ -786,7 +787,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get saved => 'Đã lưu';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Văn bản gốc';
 
   @override
   String get saving => 'Đang lưu...';
@@ -796,7 +797,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Không tìm thấy văn bản nào trong ảnh khớp với ngôn ngữ học đã đặt. Vui lòng kiểm tra cài đặt ngôn ngữ của bạn.';
 
   @override
   String get scanNotSupported =>
@@ -1041,13 +1042,13 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Bạn đã sử dụng hết lượt dịch miễn phí hàng ngày (5 lần).\\n\\nBạn có muốn xem quảng cáo để nạp ngay 5 lượt không?';
+      'Bạn đã sử dụng hết lượt dịch miễn phí hàng ngày (10 lần).\\n\\nBạn có muốn xem quảng cáo để nạp ngay 10 lượt không?';
 
   @override
   String get translationLoaded => 'Đã tải bản dịch đã lưu';
 
   @override
-  String get translationRefilled => 'Bạn đã được nạp 5 lượt dịch!';
+  String get translationRefilled => 'Bạn đã được nạp 10 lượt dịch!';
 
   @override
   String get translationResult => 'Kết quả dịch';
@@ -1210,7 +1211,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get voluntaryTranslations => 'Bản dịch đóng góp';
 
   @override
-  String get watchAdAndRefill => 'Xem quảng cáo để nạp (+5 lượt)';
+  String get watchAdAndRefill => 'Xem quảng cáo để nạp (+10 lượt)';
 
   @override
   String get welcomeButton => 'Bắt đầu';
@@ -1235,8 +1236,20 @@ class AppLocalizationsVi extends AppLocalizations {
   String get wordModeLabel => 'Chế độ từ';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Kết quả tổng hợp';
+
+  @override
+  String get errorLimitReached =>
+      'Bạn đã hết lượt dịch. Bạn có muốn xem quảng cáo để nạp thêm 10 lượt không?';
 
   @override
   String get yourPronunciation => 'Phát âm của bạn';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Hướng dẫn về giới hạn dịch]\nBạn được cung cấp 20 lượt dịch miễn phí mỗi ngày vào lúc nửa đêm. Nếu bạn dùng hết, bạn có thể xem quảng cáo để nạp ngay 10 lượt dịch.';
+
+  @override
+  String get scanDetails =>
+      '• Tải ảnh lên từ máy ảnh hoặc thư viện để trích xuất và dịch văn bản.\n• Bạn có thể nhấn vào nhiều câu trong một ảnh để dịch riêng.\n• Nếu bạn hết lượt dịch, bạn có thể xem quảng cáo để nạp thêm 10 lượt.';
 }

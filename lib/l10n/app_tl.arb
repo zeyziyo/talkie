@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Hindi maisasalin dahil naglalaman ito ng mapoot na pananalita.",
   "errorOtherSafety": "Tinanggihan ang pagsasalin ng AI safety policy.",
+  "errorQuotaExceeded": "Naubos na ang iyong pang-araw-araw na quota para sa serbisyo ng AI. Subukan muli mamaya o bukas.",
+  "errorSafetyPolicy": "Pinaghihigpitan ang pagsasalin dahil sa patakaran sa kaligtasan ng AI.",
+  "copyOriginal": "Kopyahin ang Orihinal",
+  "originalCopied": "Nakopya na ang orihinal na teksto.",
   "errorProfanity": "Hindi maisasalin dahil naglalaman ito ng kalapastanganan.",
   "errorSelectCategory": "Pumili muna ng salita o pangungusap!",
   "errorSexualContent": "Hindi maisasalin dahil naglalaman ito ng malaswang content.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Orihinal na Teksto",
   "saving": "Nagse-save...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Pumili ng imahe na i-scan",
+  "scanNoMatch": "Walang nakitang tekstong tumutugma sa napiling wika ng pag-aaral sa larawan. Suriin ang iyong mga setting ng wika.",
   "scanNotSupported": "Hindi sinusuportahan ng wikang ito ang pag-scan. Sinusuportahan lang ng OCR ang mga Latin, Chinese, Devanagari (tulad ng Hindi), Japanese, at Korean na character sa ngayon.",
   "scanLabel": "I-scan",
   "score": "Score: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Wika ng Pagsasalin",
   "translationLimitExceeded": "Lumampas sa limitasyon ng pagsasalin",
-  "translationLimitMessage": "Naubos mo na ang lahat ng libreng pagsasalin sa araw na ito (5 beses).\\n\\nManood ng ad para agad na mapunan ang 5 beses?",
+  "translationLimitMessage": "Naubos mo na ang lahat ng libreng pagsasalin sa araw na ito (10 beses).\\n\\nManood ng ad para agad na mapunan ang 10 beses?",
   "translationLoaded": "Na-load ang Naka-save na Pagsasalin",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Napunan na ang bilang ng pagsasalin nang 5 beses!",
+  "translationRefilled": "Napunan na ang bilang ng pagsasalin nang 10 beses!",
   "translationResult": "Resulta ng Pagsasalin",
   "translationResultHint": "Resulta ng Pagsasalin - Maaaring i-edit",
   "tryAgain": "Subukan Muli",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Tingnan ang Online na Gabay",
   "voluntaryTranslations": "Boluntaryong Pagsasalin",
-  "watchAdAndRefill": "Manood ng Ad at Punan (+5 beses)",
+  "watchAdAndRefill": "Manood ng Ad at Punan (+10 beses)",
   "welcomeButton": "Magsimula",
   "welcomeDesc": "Maligayang pagdating sa Talkie! Sinusuportahan ang mahigit 80 wika sa buong mundo nang may 100% integridad, na may bagong premium na 3D na disenyo at na-optimize na performance para sa isang perpektong karanasan sa pag-aaral.",
   "welcomeTitle": "Maligayang pagdating sa Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Sabihin ang salita para ipagtanggol ang base bago dumating ang kaaway.",
   "wordDefenseTitle": "Word Defense",
   "wordModeLabel": "Word Mode",
-  "yourPronunciation": "Ang Pagbigkas Mo"
+  "combinedResult": "Pinagsamang Resulta",
+  "errorLimitReached": "Wala ka nang natitirang pagsasalin. Gusto mo bang manood ng ad para makakuha ng 10 dagdag na pagsasalin?",
+  "yourPronunciation": "Ang Pagbigkas Mo",
+  "helpLimitDetails": "💡 [Impormasyon sa Limitasyon ng Pagsasalin]\nMay 20 libreng pagsasalin na ibinibigay araw-araw sa hatinggabi. Kung naubos mo na ang lahat, maaari kang manood ng ad para agad na makakuha ng 10 dagdag na pagsasalin.",
+  "scanDetails": "• Mag-upload ng mga larawan mula sa camera o gallery upang kunin at isalin ang teksto.\n• Maaari mong i-tap ang iba't ibang pangungusap sa isang larawan upang isalin ang mga ito nang isa-isa.\n• Kung wala ka nang natitirang pagsasalin, maaari kang manood ng ad para agad na makakuha ng 10 dagdag."
 }

@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "包含仇恨言論，無法翻譯。",
   "errorOtherSafety": "因人工智慧安全政策而拒絕翻譯。",
+  "errorQuotaExceeded": "人工智慧服務的每日配額已用盡。請稍後或明天再試。",
+  "errorSafetyPolicy": "由於 AI 安全政策，翻譯已受到限制。",
+  "copyOriginal": "複製原文",
+  "originalCopied": "原文已複製。",
   "errorProfanity": "包含不雅字詞，無法翻譯。",
   "errorSelectCategory": "請先選擇單字或句子！",
   "errorSexualContent": "包含煽情內容，無法翻譯。",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "原文",
   "saving": "正在儲存...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "請選擇要掃描的圖片",
+  "scanNoMatch": "照片中找不到與設定的學習語言相符的文字。請檢查語言設定。",
   "scanNotSupported": "此語言不支援掃描功能。目前 OCR 僅支援拉丁字母、中文、天城文（印地語等）、日文和韓文字元。",
   "scanLabel": "掃描",
   "score": "準確率: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "翻譯語言",
   "translationLimitExceeded": "已超過翻譯限制",
-  "translationLimitMessage": "您已用完每日免費翻譯 (5 次)。\n\n要觀看廣告立即補充 5 次嗎？",
+  "translationLimitMessage": "您已用完每日免費翻譯 (10 次)。\n\n要觀看廣告立即補充 10 次嗎？",
   "translationLoaded": "已載入儲存的翻譯",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "翻譯次數已補充 5 次！",
+  "translationRefilled": "翻譯次數已補充 10 次！",
   "translationResult": "翻譯結果",
   "translationResultHint": "翻譯結果 - 可修改",
   "tryAgain": "再試一次",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "查看線上指南",
   "voluntaryTranslations": "自願翻譯",
-  "watchAdAndRefill": "觀看廣告並補充 (+5 次)",
+  "watchAdAndRefill": "觀看廣告並補充 (+10 次)",
   "welcomeButton": "开始使用",
   "welcomeDesc": "歡迎使用 Talkie！我們以 100% 的完整性支援全球超過 80 種語言，並透過全新的頂級 3D 設計和最佳化效能，提供完美的學習體驗。",
   "welcomeTitle": "欢迎使用 Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "在敵人抵達前說出單字來防禦基地。",
   "wordDefenseTitle": "單字防禦",
   "wordModeLabel": "單字模式",
-  "yourPronunciation": "你的發音"
+  "combinedResult": "合併結果",
+  "errorLimitReached": "翻譯次數不足。要觀看廣告並補充 10 次翻譯嗎？",
+  "yourPronunciation": "你的發音",
+  "helpLimitDetails": "💡 [翻譯次數說明]\n每天午夜提供 20 次免費翻譯。即使全部用完，觀看廣告後可立即補充 10 次額外翻譯。",
+  "scanDetails": "• 從相機或圖庫導入圖片，提取文字並翻譯。\n• 可以點擊單張照片中包含的多個句子，分別進行翻譯。\n• 如果翻譯次數不足，可以立即觀看廣告額外補充 10 次。"
 }

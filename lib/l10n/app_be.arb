@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Мова перакладу",
   "translationLimitExceeded": "Перавышаны ліміт перакладаў",
-  "translationLimitMessage": "Вы выкарысталі ўсе бясплатныя штодзённыя пераклады (5).\n\nХочаце паглядзець рэкламу і неадкладна папоўніць яшчэ 5?",
+  "translationLimitMessage": "Вы выкарысталі ўсе бясплатныя штодзённыя пераклады (10).\n\nХочаце паглядзець рэкламу і неадкладна папоўніць яшчэ 10?",
   "translationLoaded": "Загружаны захаваны пераклад",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Вы папоўнілі колькасць перакладаў на 5!",
+  "translationRefilled": "Вы папоўнілі колькасць перакладаў на 10!",
   "translationResult": "Вынік перакладу",
   "translationResultHint": "Вынік перакладу - можна рэдагаваць",
   "tryAgain": "Паспрабуйце яшчэ раз",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Паглядзець онлайн-даведнік",
   "voluntaryTranslations": "Добраахвотныя пераклады",
-  "watchAdAndRefill": "Паглядзець рэкламу і папоўніць (+5)",
+  "watchAdAndRefill": "Паглядзець рэкламу і папоўніць (+10)",
   "welcomeButton": "Пачаць",
   "welcomeDesc": "Сардэчна запрашаем у Talkie! Мы падтрымліваем усе 80+ моў па ўсім свеце са 100% цэласнасцю і даем вам ідэальны вопыт навучання з новым прэміум 3D-дызайнам і аптымізаванай прадукцыйнасцю.",
   "welcomeTitle": "Сардэчна запрашаем у Talkie!",

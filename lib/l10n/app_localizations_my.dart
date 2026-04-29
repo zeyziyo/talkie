@@ -168,16 +168,17 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'AI ဝန်ဆောင်မှုအတွက် တစ်နေ့တာ ခွဲတမ်း ပြည့်သွားပါပြီ။ ခဏအကြာတွင် သို့မဟုတ် မနက်ဖြန်မှ ပြန်ကြိုးစားပါ။';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'AI လုံခြုံရေး မူဝါဒကြောင့် ဘာသာပြန်ခြင်းကို ကန့်သတ်ထားသည်။';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'မူရင်းကို ကူးယူပါ';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'မူရင်းစာသားကို ကူးယူပြီးပါပြီ။';
 
   @override
   String get errorProfanity =>
@@ -800,7 +801,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get saved => 'သိမ်းဆည်းပြီးပါပြီ';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'မူရင်းစာသား';
 
   @override
   String get saving => 'သိမ်းဆည်းနေသည်...';
@@ -810,7 +811,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'ဓာတ်ပုံထဲမှာ သင်ရွေးချယ်ထားတဲ့ ဘာသာစကားနဲ့ ကိုက်ညီတဲ့ စာသားကို ရှာမတွေ့ပါ။ ဘာသာစကား ဆက်တင်များကို စစ်ဆေးကြည့်ပါ။';
 
   @override
   String get scanNotSupported =>
@@ -1057,7 +1058,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'နေ့စဉ် အခမဲ့ ဘာသာပြန်ခြင်း (၅ ကြိမ်) အားလုံးကို သုံးပြီးပါပြီ။\\n\\nကြော်ငြာကို ကြည့်၍ ၅ ကြိမ် ချက်ချင်း ဖြည့်သွင်းလိုပါသလား?';
+      'နေ့စဉ် အခမဲ့ ဘာသာပြန်ခြင်း (၁၀ ကြိမ်) အားလုံးကို သုံးပြီးပါပြီ။\\n\\nကြော်ငြာကို ကြည့်၍ ၁၀ ကြိမ် ချက်ချင်း ဖြည့်သွင်းလိုပါသလား?';
 
   @override
   String get translationLoaded =>
@@ -1065,7 +1066,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get translationRefilled =>
-      'ဘာသာပြန် အရေအတွက်ကို ၅ ကြိမ် ဖြည့်ပြီးပါပြီ!';
+      'ဘာသာပြန် အရေအတွက်ကို ၁၀ ကြိမ် ဖြည့်ပြီးပါပြီ!';
 
   @override
   String get translationResult => 'ဘာသာပြန် ရလဒ်';
@@ -1236,7 +1237,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get voluntaryTranslations => 'စေတနာ့ဝန်ထမ်း ဘာသာပြန်များ';
 
   @override
-  String get watchAdAndRefill => 'ကြော်ငြာ ကြည့်၍ ဖြည့်သွင်းပါ (+၅ ကြိမ်)';
+  String get watchAdAndRefill => 'ကြော်ငြာ ကြည့်၍ ဖြည့်သွင်းပါ (+၁၀ ကြိမ်)';
 
   @override
   String get welcomeButton => 'စတင်ပါ';
@@ -1262,8 +1263,20 @@ class AppLocalizationsMy extends AppLocalizations {
   String get wordModeLabel => 'စကားလုံး ပုံစံ';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'ပေါင်းစပ်ရလဒ်';
+
+  @override
+  String get errorLimitReached =>
+      'ဘာသာပြန်ခွင့် အရေအတွက် မလုံလောက်ပါ။ ကြော်ငြာကြည့်ပြီး ၁၀ ကြိမ် ပြန်ဖြည့်မလား။';
 
   @override
   String get yourPronunciation => 'ကျွန်ုပ်၏ အသံထွက်';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [ဘာသာပြန်ခွင့် လမ်းညွှန်]\nနေ့လယ်သန်းခေါင်တိုင်းမှာ အခမဲ့ ဘာသာပြန်ခွင့် ၂၀ ရရှိပါတယ်။ အားလုံးကုန်သွားရင်တောင် ကြော်ငြာကြည့်ရုံနဲ့ ၁၀ ကြိမ် ချက်ချင်း ပြန်ဖြည့်ပေးပါတယ်။';
+
+  @override
+  String get scanDetails =>
+      '• ကင်မရာ (သို့) ပြခန်းမှ ပုံများကို တင်သွင်းပြီး စာသားကို ထုတ်ယူကာ ဘာသာပြန်ပါ။\n• ဓာတ်ပုံတစ်ပုံထဲတွင် ပါဝင်သော စာကြောင်းများစွာကို တစ်ခုချင်းစီ တို့၍ ဘာသာပြန်နိုင်သည်။\n• ဘာသာပြန်ခွင့် အရေအတွက် မလုံလောက်ပါက ကြော်ငြာကြည့်ရုံဖြင့် ၁၀ ကြိမ် ထပ်ဖြည့်နိုင်သည်။';
 }

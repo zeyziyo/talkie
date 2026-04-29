@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Котормо тили",
   "translationLimitExceeded": "Которуу чегинен ашып кетти",
-  "translationLimitMessage": "Күнүмдүк акысыз которууну (5 жолу) толугу менен колдондуңуз.\\n\\nЖарнаманы көрүп 5 жолу дароо толуктайсызбы?",
+  "translationLimitMessage": "Күнүмдүк акысыз которууну (10 жолу) толугу менен колдондуңуз.\\n\\nЖарнаманы көрүп 10 жолу дароо толуктайсызбы?",
   "translationLoaded": "Сакталган котормо жүктөлдү",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Которуу саны 5 жолу толукталды!",
+  "translationRefilled": "Которуу саны 10 жолу толукталды!",
   "translationResult": "Которулган натыйжа",
   "translationResultHint": "Которуунун жыйынтыгы - өзгөртүүгө болот",
   "tryAgain": "Дагы аракет кылыңыз",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Онлайн колдонмону көрүү",
   "voluntaryTranslations": "Ыктыярдуу котормолор",
-  "watchAdAndRefill": "Жарнама көрүп толтуруу (+5 жолу)",
+  "watchAdAndRefill": "Жарнама көрүп толтуруу (+10 жолу)",
   "welcomeButton": "Баштоо",
   "welcomeDesc": "Talkieге кош келиңиз! Биз дүйнө жүзү боюнча 80ден ашык тилди 100% колдойбуз жана жаңы премиум 3D дизайны жана оптималдаштырылган иштеши менен толук окуу тажрыйбасын сунуштайбыз.",
   "welcomeTitle": "Talkie-ге кош келиңиз!",

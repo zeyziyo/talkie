@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Tarjima tili",
   "translationLimitExceeded": "Tarjima limiti oshib ketdi",
-  "translationLimitMessage": "Kunlik bepul tarjima (5 marta) dan hammasi ishlatildi.\\n\\nReklamani ko'rib 5 marta zudlik bilan to'ldirmoqchimisiz?",
+  "translationLimitMessage": "Kunlik bepul tarjima (10 marta) dan hammasi ishlatildi.\\n\\nReklamani ko'rib 10 marta zudlik bilan to'ldirmoqchimisiz?",
   "translationLoaded": "Saqlangan tarjima yuklandi",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Tarjima soni 5 marta to'ldirildi!",
+  "translationRefilled": "Tarjima soni 10 marta to'ldirildi!",
   "translationResult": "Tarjima natijasi",
   "translationResultHint": "Tarjima natijasi - tahrirlash mumkin",
   "tryAgain": "Qaytadan urinib ko'ring",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Onlayn qo'llanmani ko'rish",
   "voluntaryTranslations": "Ko'ngilli tarjimalar",
-  "watchAdAndRefill": "Reklamani ko'rib to'ldirish (+5 marta)",
+  "watchAdAndRefill": "Reklamani ko'rib to'ldirish (+10 marta)",
   "welcomeButton": "Boshlash",
   "welcomeDesc": "Talkiega xush kelibsiz! Dunyoning 80 dan ortiq barcha tillarini 100% sifat bilan qo'llab-quvvatlaymiz va yangi premium 3D dizayn va optimallashtirilgan ishlash bilan mukammal o'rganish tajribasini taqdim etamiz.",
   "welcomeTitle": "Talkie-ga xush kelibsiz!",

@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Käännöskieli",
   "translationLimitExceeded": "Käännösraja ylitetty",
-  "translationLimitMessage": "Olet käyttänyt kaikki päivittäiset ilmaiset käännökset (5 kertaa).\\n\\nHaluatko katsoa mainoksen ja ladata 5 lisää heti?",
+  "translationLimitMessage": "Olet käyttänyt kaikki päivittäiset ilmaiset käännökset (10 kertaa).\\n\\nHaluatko katsoa mainoksen ja ladata 10 lisää heti?",
   "translationLoaded": "Tallennettu käännös ladattu",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Käännöskertojen määrä on ladattu, 5 kertaa!",
+  "translationRefilled": "Käännöskertojen määrä on ladattu, 10 kertaa!",
   "translationResult": "Käännöstulos",
   "translationResultHint": "Käännöksen tulos - muokattavissa",
   "tryAgain": "Yritä uudelleen",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Näytä online-opas",
   "voluntaryTranslations": "Vapaaehtoiset käännökset",
-  "watchAdAndRefill": "Katso mainos ja lataa (+5 kertaa)",
+  "watchAdAndRefill": "Katso mainos ja lataa (+10 kertaa)",
   "welcomeButton": "Aloita",
   "welcomeDesc": "Tervetuloa Talkieen! Tukee yli 80:tä kieltä ympäri maailmaa 100-prosenttisella tarkkuudella, ja tarjoaa täydellisen oppimiskokemuksen uudella premium-3D-muotoilulla ja optimoidulla suorituskyvyllä.",
   "welcomeTitle": "Tervetuloa Talkieen!",

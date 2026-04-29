@@ -1050,13 +1050,13 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Išnaudojote visus nemokamus dienos vertimus (5 kartus).\\n\\nAr norite peržiūrėti skelbimą ir iš karto papildyti 5 kartus?';
+      'Išnaudojote visus nemokamus dienos vertimus (10 kartus).\\n\\nAr norite peržiūrėti skelbimą ir iš karto papildyti 10 kartus?';
 
   @override
   String get translationLoaded => 'Įkeltas išsaugotas vertimas';
 
   @override
-  String get translationRefilled => 'Vertimų skaičius papildytas 5 kartus!';
+  String get translationRefilled => 'Vertimų skaičius papildytas 10 kartus!';
 
   @override
   String get translationResult => 'Vertimo rezultatas';
@@ -1226,7 +1226,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get voluntaryTranslations => 'Savanoriški vertimai';
 
   @override
-  String get watchAdAndRefill => 'Žiūrėti skelbimą ir papildyti (+5 kartus)';
+  String get watchAdAndRefill => 'Žiūrėti skelbimą ir papildyti (+10 kartus)';
 
   @override
   String get welcomeButton => 'Pradėti';
@@ -1255,5 +1255,16 @@ class AppLocalizationsLt extends AppLocalizations {
   String get combinedResult => '통합 결과';
 
   @override
+  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+
+  @override
   String get yourPronunciation => 'Jūsų tarimas';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+
+  @override
+  String get scanDetails =>
+      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
 }

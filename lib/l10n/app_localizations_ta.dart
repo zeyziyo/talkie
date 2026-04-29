@@ -1057,14 +1057,14 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'தினசரி இலவச மொழிபெயர்ப்புகள் (5 முறை) அனைத்தும் பயன்படுத்தப்பட்டன.\\n\\nவிளம்பரத்தைப் பார்த்து உடனடியாக 5 கட்டணங்கள் வசூலிக்க வேண்டுமா?';
+      'தினசரி இலவச மொழிபெயர்ப்புகள் (10 முறை) அனைத்தும் பயன்படுத்தப்பட்டன.\\n\\nவிளம்பரத்தைப் பார்த்து உடனடியாக 10 கட்டணங்கள் வசூலிக்க வேண்டுமா?';
 
   @override
   String get translationLoaded => 'சேமிக்கப்பட்ட மொழிபெயர்ப்பு ஏற்றப்பட்டது';
 
   @override
   String get translationRefilled =>
-      'மொழிபெயர்ப்புகளின் எண்ணிக்கை 5 ஆக நிரப்பப்பட்டது!';
+      'மொழிபெயர்ப்புகளின் எண்ணிக்கை 10 ஆக நிரப்பப்பட்டது!';
 
   @override
   String get translationResult => 'மொழிபெயர்ப்பு முடிவு';
@@ -1233,7 +1233,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get watchAdAndRefill =>
-      'விளம்பரத்தைப் பார்த்து ரீசார்ஜ் செய்யுங்கள் (+5 முறை)';
+      'விளம்பரத்தைப் பார்த்து ரீசார்ஜ் செய்யுங்கள் (+10 முறை)';
 
   @override
   String get welcomeButton => 'தொடங்கு';
@@ -1262,5 +1262,16 @@ class AppLocalizationsTa extends AppLocalizations {
   String get combinedResult => '통합 결과';
 
   @override
+  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+
+  @override
   String get yourPronunciation => 'உங்கள் உச்சரிப்பு';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+
+  @override
+  String get scanDetails =>
+      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
 }

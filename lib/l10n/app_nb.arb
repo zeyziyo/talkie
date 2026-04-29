@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Kan ikke oversettes fordi det inneholder hatytringer.",
   "errorOtherSafety": "Oversettelse ble avvist av AI-sikkerhetspolicyen.",
+  "errorQuotaExceeded": "Dagens kvote for AI-tjenester er brukt opp. Prøv igjen senere eller i morgen.",
+  "errorSafetyPolicy": "Oversettelsen er begrenset på grunn av AI-sikkerhetspolicyen.",
+  "copyOriginal": "Kopier original",
+  "originalCopied": "Originalteksten er kopiert.",
   "errorProfanity": "Kan ikke oversettes fordi det inneholder banning.",
   "errorSelectCategory": "Velg et ord eller en setning først!",
   "errorSexualContent": "Kan ikke oversettes fordi det inneholder seksuelt innhold.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Originaltekst",
   "saving": "Lagrer...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Velg et bilde å skanne",
+  "scanNoMatch": "Fant ingen tekst i bildet som samsvarer med det valgte språket. Sjekk språkinnstillingene.",
   "scanNotSupported": "Skanning støttes ikke for dette språket. OCR støtter for øyeblikket kun latinske, kinesiske, devanagari (f.eks. hindi), japanske og koreanske tegn.",
   "scanLabel": "Skann",
   "score": "Nøyaktighet: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Oversettelsesspråk",
   "translationLimitExceeded": "Oversettelsesgrense overskredet",
-  "translationLimitMessage": "Du har brukt alle dine daglige gratis oversettelser (5 ganger).\\n\\nVil du se en annonse og fylle på 5 ganger umiddelbart?",
+  "translationLimitMessage": "Du har brukt alle dine daglige gratis oversettelser (10 ganger).\\n\\nVil du se en annonse og fylle på 10 ganger umiddelbart?",
   "translationLoaded": "Lagret oversettelse lastet inn",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Antall oversettelser er fylt på 5 ganger!",
+  "translationRefilled": "Antall oversettelser er fylt på 10 ganger!",
   "translationResult": "Oversettelsesresultat",
   "translationResultHint": "Oversettelsesresultat - kan redigeres",
   "tryAgain": "Prøv igjen",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Se nettguide",
   "voluntaryTranslations": "Frivillige oversettelser",
-  "watchAdAndRefill": "Fyll på ved å se annonse (+5 ganger)",
+  "watchAdAndRefill": "Fyll på ved å se annonse (+10 ganger)",
   "welcomeButton": "Kom i gang",
   "welcomeDesc": "Velkommen til Talkie! Vi støtter over 80 språk fra hele verden med 100 % integritet, og tilbyr en komplett læringsopplevelse med et nytt, førsteklasses 3D-design og optimalisert ytelse.",
   "welcomeTitle": "Velkommen til Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Forsvar basen ved å si ordet før fiendene ankommer.",
   "wordDefenseTitle": "Ord-forsvar",
   "wordModeLabel": "Ordmodus",
-  "yourPronunciation": "Din uttale"
+  "combinedResult": "Kombinert resultat",
+  "errorLimitReached": "Du har ikke flere oversettelser igjen. Vil du se en annonse for å fylle på med 10 oversettelser?",
+  "yourPronunciation": "Din uttale",
+  "helpLimitDetails": "💡 [Om oversettelsesgrenser]\nDu får 20 gratis oversettelser hver dag ved midnatt. Hvis du bruker opp alle, kan du se en annonse for å fylle på med 10 ekstra oversettelser umiddelbart.",
+  "scanDetails": "• Importer bilder fra kameraet eller galleriet for å trekke ut og oversette tekst.\n• Trykk på flere setninger i et bilde for å oversette dem individuelt.\n• Hvis du har for få oversettelser, kan du se en annonse for å fylle på med 10 ekstra."
 }

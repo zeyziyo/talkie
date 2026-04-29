@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Wika ng Pagsasalin",
   "translationLimitExceeded": "Lumampas sa limitasyon ng pagsasalin",
-  "translationLimitMessage": "Naubos mo na ang iyong pang-araw-araw na libreng pagsasalin (5 beses).\\n\\nGusto mo bang manood ng ad upang agad na mag-refill ng 5 beses?",
+  "translationLimitMessage": "Naubos mo na ang iyong pang-araw-araw na libreng pagsasalin (10 beses).\\n\\nGusto mo bang manood ng ad upang agad na mag-refill ng 10 beses?",
   "translationLoaded": "Na-load ang naka-save na pagsasalin",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Ang bilang ng pagsasalin ay na-refill ng 5 beses!",
+  "translationRefilled": "Ang bilang ng pagsasalin ay na-refill ng 10 beses!",
   "translationResult": "Resulta ng Pagsasalin",
   "translationResultHint": "Resulta ng Pagsasalin - Maaaring i-edit",
   "tryAgain": "Subukan muli",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Tingnan ang Online Guide",
   "voluntaryTranslations": "Mga Boluntaryong Pagsasalin",
-  "watchAdAndRefill": "Manood ng Ad at Mag-refill (+5 beses)",
+  "watchAdAndRefill": "Manood ng Ad at Mag-refill (+10 beses)",
   "welcomeButton": "Magsimula",
   "welcomeDesc": "Maligayang pagdating sa Talkie! Sinusuportahan namin ang mahigit 80 wika sa buong mundo nang may 100% integridad, naghahatid ng walang kapantay na karanasan sa pag-aaral sa pamamagitan ng aming bagong premium na 3D na disenyo at pinahusay na performance.",
   "welcomeTitle": "Maligayang pagdating sa Talkie!",

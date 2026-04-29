@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Iaith Cyfieithu",
   "translationLimitExceeded": "Terfyn cyfieithu wedi'i ragori",
-  "translationLimitMessage": "Rydych wedi defnyddio'ch holl gyfieithiadau dyddiol am ddim (5 gwaith).\\n\\nA hoffech ail-lenwi 5 gwaith ar unwaith trwy wylio hysbyseb?",
+  "translationLimitMessage": "Rydych wedi defnyddio'ch holl gyfieithiadau dyddiol am ddim (10 gwaith).\\n\\nA hoffech ail-lenwi 10 gwaith ar unwaith trwy wylio hysbyseb?",
   "translationLoaded": "Cyfieithiad wedi'i lwytho a'i gadw",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Ail-lenwyd nifer y cyfieithiadau 5 gwaith!",
+  "translationRefilled": "Ail-lenwyd nifer y cyfieithiadau 10 gwaith!",
   "translationResult": "Canlyniad Cyfieithu",
   "translationResultHint": "Canlyniad Cyfieithu - gellir ei olygu",
   "tryAgain": "Ceisiwch Eto",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Gweler Canllaw Ar-lein",
   "voluntaryTranslations": "Cyfieithiadau Gwirfoddol",
-  "watchAdAndRefill": "Gwylio hysbyseb a'i ail-lenwi (+5 gwaith)",
+  "watchAdAndRefill": "Gwylio hysbyseb a'i ail-lenwi (+10 gwaith)",
   "welcomeButton": "Dechrau",
   "welcomeDesc": "Croeso i Talkie! Rydym yn cefnogi pob un o'r 80+ o ieithoedd ledled y byd gyda 100% o gywirdeb, ynghyd â dyluniad 3D premiwm newydd a pherfformiad wedi'i optimeiddio ar gyfer profiad dysgu perffaith.",
   "welcomeTitle": "Croeso i Talkie!",

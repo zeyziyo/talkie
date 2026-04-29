@@ -28,6 +28,7 @@ import '../constants/app_constants.dart';
 import '../constants/scan_support_constants.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import '../services/folder_import_service.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 part 'app_state_auth.dart';
 part 'app_state_mode1.dart';

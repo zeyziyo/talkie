@@ -2157,7 +2157,7 @@ abstract class AppLocalizations {
   /// No description provided for @translationLimitMessage.
   ///
   /// In ko, this message translates to:
-  /// **'일일 무료 번역(5회)을 모두 사용했습니다.\\n\\n광고를 보고 5회를 즉시 충전하시겠습니까?'**
+  /// **'일일 무료 번역(10회)을 모두 사용했습니다.\\n\\n광고를 보고 10회를 즉시 충전하시겠습니까?'**
   String get translationLimitMessage;
 
   /// Existing translation loaded
@@ -2169,7 +2169,7 @@ abstract class AppLocalizations {
   /// No description provided for @translationRefilled.
   ///
   /// In ko, this message translates to:
-  /// **'번역 횟수가 5회 충전되었습니다!'**
+  /// **'번역 횟수가 10회 충전되었습니다!'**
   String get translationRefilled;
 
   /// No description provided for @translationResult.
@@ -2469,7 +2469,7 @@ abstract class AppLocalizations {
   /// No description provided for @watchAdAndRefill.
   ///
   /// In ko, this message translates to:
-  /// **'광고 보고 충전 (+5회)'**
+  /// **'광고 보고 충전 (+10회)'**
   String get watchAdAndRefill;
 
   /// No description provided for @welcomeButton.
@@ -2520,11 +2520,29 @@ abstract class AppLocalizations {
   /// **'통합 결과'**
   String get combinedResult;
 
+  /// No description provided for @errorLimitReached.
+  ///
+  /// In ko, this message translates to:
+  /// **'번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?'**
+  String get errorLimitReached;
+
   /// No description provided for @yourPronunciation.
   ///
   /// In ko, this message translates to:
   /// **'내 발음'**
   String get yourPronunciation;
+
+  /// No description provided for @helpLimitDetails.
+  ///
+  /// In ko, this message translates to:
+  /// **'💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.'**
+  String get helpLimitDetails;
+
+  /// No description provided for @scanDetails.
+  ///
+  /// In ko, this message translates to:
+  /// **'• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.'**
+  String get scanDetails;
 }
 
 class _AppLocalizationsDelegate

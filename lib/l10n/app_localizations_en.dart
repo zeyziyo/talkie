@@ -1043,13 +1043,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'You have used all your free daily translations (5). Watch an ad to refill 5 immediately?';
+      'You have used all your free daily translations (10). Watch an ad to refill 10 immediately?';
 
   @override
   String get translationLoaded => 'Loaded saved translation';
 
   @override
-  String get translationRefilled => 'Translations refilled by 5!';
+  String get translationRefilled => 'Translations refilled by 10!';
 
   @override
   String get translationResult => 'Translation Result';
@@ -1216,7 +1216,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get voluntaryTranslations => 'Voluntary Translations';
 
   @override
-  String get watchAdAndRefill => 'Watch Ad & Refill (+5)';
+  String get watchAdAndRefill => 'Watch Ad & Refill (+10)';
 
   @override
   String get welcomeButton => 'Get Started';
@@ -1245,5 +1245,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get combinedResult => 'Combined Result';
 
   @override
+  String get errorLimitReached =>
+      'Translation limit reached. Watch an ad to refill 10 more?';
+
+  @override
   String get yourPronunciation => 'Your Pronunciation';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Translation Limit]\n20 free translations are provided every day at midnight. Even if you use them all, you can instantly recharge 10 additional translations by watching an ad.';
+
+  @override
+  String get scanDetails =>
+      '• Extract and translate text from images via camera or gallery.\n• Tap individual sentences within a single photo to translate them separately.\n• If you run out of translation limits, you can instantly watch an ad to recharge 10 more translations.';
 }

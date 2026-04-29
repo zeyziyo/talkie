@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Haiwezi kutafsiri kwa sababu ina matamshi ya chuki.",
   "errorOtherSafety": "Tafsiri imekataliwa na sera ya usalama ya AI.",
+  "errorQuotaExceeded": "Umefikia kikomo cha matumizi ya kila siku ya huduma ya akili bandia. Tafadhali jaribu tena baadaye au kesho.",
+  "errorSafetyPolicy": "Tafsiri imezuiwa na sera ya usalama ya AI.",
+  "copyOriginal": "Nakili asili",
+  "originalCopied": "Nakala asili imenakiliwa.",
   "errorProfanity": "Haiwezi kutafsiri kwa sababu ina lugha chafu.",
   "errorSelectCategory": "Kwanza chagua neno au sentensi!",
   "errorSexualContent": "Haiwezi kutafsiri kwa sababu ina maudhui ya ngono.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Nakala asili",
   "saving": "Inahifadhi...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Chagua picha ya kuchanganua",
+  "scanNoMatch": "Hakuna maandishi yanayolingana na lugha ya kujifunza iliyowekwa yaliyopatikana kwenye picha. Tafadhali angalia mipangilio ya lugha yako.",
   "scanNotSupported": "Lugha hii haitumii kipengele cha kuchanganua. OCR kwa sasa inaauni hati za Kilatini, Kichina, Kidevanagari (Kihindi, n.k.), Kijapani na Kikorea pekee.",
   "scanLabel": "Changanua",
   "score": "Usahihi: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Lugha ya kutafsiri",
   "translationLimitExceeded": "Umefikia kikomo cha tafsiri",
-  "translationLimitMessage": "Umetumia tafsiri zote za bure za kila siku (mara 5).\\n\\nJe, ungependa kutazama tangazo na kujaza mara 5 mara moja?",
+  "translationLimitMessage": "Umetumia tafsiri zote za bure za kila siku (mara 10).\\n\\nJe, ungependa kutazama tangazo na kujaza mara 10 mara moja?",
   "translationLoaded": "Tafsiri iliyohifadhiwa imepakiwa",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Hesabu ya tafsiri imejazwa tena mara 5!",
+  "translationRefilled": "Hesabu ya tafsiri imejazwa tena mara 10!",
   "translationResult": "Matokeo ya Tafsiri",
   "translationResultHint": "Matokeo ya Tafsiri - Inaweza Kurekebishwa",
   "tryAgain": "Jaribu tena",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Angalia Mwongozo wa Mtandaoni",
   "voluntaryTranslations": "Tafsiri za Hiari",
-  "watchAdAndRefill": "Tazama Tangazo na Ujazwe Tena (+5)",
+  "watchAdAndRefill": "Tazama Tangazo na Ujazwe Tena (+10)",
   "welcomeButton": "Anza",
   "welcomeDesc": "Karibu Talkie! Tunasaidia lugha zote 80+ ulimwenguni kwa uadilifu wa 100%, na tunakupa uzoefu kamili wa kujifunza na muundo mpya wa 3D wa premium na utendaji ulioboreshwa.",
   "welcomeTitle": "Karibu kwenye Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Tetea msingi wako kwa kusema neno kabla adui hajafika.",
   "wordDefenseTitle": "Ulinzi wa Neno",
   "wordModeLabel": "Hali ya Neno",
-  "yourPronunciation": "Matamshi Yako"
+  "combinedResult": "Matokeo yaliyounganishwa",
+  "errorLimitReached": "Huna hesabu ya kutosha ya tafsiri. Je, ungependa kutazama tangazo ili uongeze mara 10?",
+  "yourPronunciation": "Matamshi Yako",
+  "helpLimitDetails": "💡 [Mwongozo wa kikomo cha tafsiri]\nTafsiri 20 za bure hutolewa kila siku saa sita usiku. Hata ukizitumia zote, unaweza kutazama tangazo mara moja ili kuchaji tafsiri 10 za ziada.",
+  "scanDetails": "• Leta picha kutoka kwenye kamera au ghala ili uchukue na utafsiri maandishi.\n• Unaweza kugonga sentensi nyingi zilizojumuishwa kwenye picha moja ili kuzitafsiri kibinafsi.\n• Ikiwa huna idadi ya kutosha ya tafsiri, unaweza kutazama tangazo mara moja ili kuongeza 10 zaidi."
 }

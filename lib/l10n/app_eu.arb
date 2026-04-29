@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Itzulpen-hizkuntza",
   "translationLimitExceeded": "Itzulpen-muga gainditu da",
-  "translationLimitMessage": "Doako eguneroko itzulpen guztiak (5) erabili dituzu.\\n\\nIragarki bat ikusi nahi duzu 5 gehiago berehala betetzeko?",
+  "translationLimitMessage": "Doako eguneroko itzulpen guztiak (10) erabili dituzu.\\n\\nIragarki bat ikusi nahi duzu 10 gehiago berehala betetzeko?",
   "translationLoaded": "Gordetako itzulpena kargatu da",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Itzulpenen kopurua 5era bete da!",
+  "translationRefilled": "Itzulpenen kopurua 10era bete da!",
   "translationResult": "Itzulpen emaitza",
   "translationResultHint": "Itzulpenaren emaitza - edita daiteke",
   "tryAgain": "Saiatu berriro",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Ikusi online gida",
   "voluntaryTranslations": "Borondatezko itzulpenak",
-  "watchAdAndRefill": "Iragarkia ikusi eta bete (+5)",
+  "watchAdAndRefill": "Iragarkia ikusi eta bete (+10)",
   "welcomeButton": "Hasi",
   "welcomeDesc": "Ongi etorri Talkiera! Munduko 80 hizkuntza baino gehiago onartzen ditugu %100eko osotasunarekin, eta ikaskuntza esperientzia ezin hobea eskaintzen dugu premium 3D diseinu berri eta errendimendu optimizatuarekin.",
   "welcomeTitle": "Ongi etorri Talkiera!",

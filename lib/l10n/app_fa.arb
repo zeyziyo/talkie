@@ -675,12 +675,12 @@
   },
   "translationLanguage": "زبان ترجمه",
   "translationLimitExceeded": "محدودیت ترجمه فراتر رفت",
-  "translationLimitMessage": "شما از تمام ترجمه‌های رایگان روزانه (۵ بار) استفاده کرده‌اید.\\n\\nآیا می‌خواهید با تماشای یک تبلیغ، ۵ بار دیگر فورا شارژ کنید؟",
+  "translationLimitMessage": "شما از تمام ترجمه‌های رایگان روزانه (۱۰ بار) استفاده کرده‌اید.\\n\\nآیا می‌خواهید با تماشای یک تبلیغ، ۱۰ بار دیگر فورا شارژ کنید؟",
   "translationLoaded": "ترجمه ذخیره شده بارگذاری شد",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "تعداد ترجمه‌ها به ۵ بار شارژ شد!",
+  "translationRefilled": "تعداد ترجمه‌ها به ۱۰ بار شارژ شد!",
   "translationResult": "نتیجه ترجمه",
   "translationResultHint": "نتیجه ترجمه - قابل ویرایش",
   "tryAgain": "تلاش مجدد",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "مشاهده راهنمای آنلاین",
   "voluntaryTranslations": "ترجمه‌های داوطلبانه",
-  "watchAdAndRefill": "تماشای تبلیغ و شارژ (+۵ بار)",
+  "watchAdAndRefill": "تماشای تبلیغ و شارژ (+۱۰ بار)",
   "welcomeButton": "شروع کنید",
   "welcomeDesc": "به Talkie خوش آمدید! ما با تمامیت 100٪ از بیش از 80 زبان در سراسر جهان پشتیبانی می کنیم و با طراحی سه بعدی ممتاز جدید و عملکرد بهینه شده، یک تجربه یادگیری عالی را به شما ارائه می دهیم.",
   "welcomeTitle": "به Talkie خوش آمدید!",

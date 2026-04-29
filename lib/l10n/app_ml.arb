@@ -675,12 +675,12 @@
   },
   "translationLanguage": "വിവർത്തന ഭാഷ",
   "translationLimitExceeded": "പരിഭാഷാ പരിധി കഴിഞ്ഞു",
-  "translationLimitMessage": "ദിവസേനയുള്ള സൗജന്യ പരിഭാഷ (5 എണ്ണം) പൂർത്തിയായിരിക്കുന്നു.\\n\\nപരസ്യം കണ്ട് 5 എണ്ണം തൽക്ഷണം റീഫിൽ ചെയ്യണോ?",
+  "translationLimitMessage": "ദിവസേനയുള്ള സൗജന്യ പരിഭാഷ (10 എണ്ണം) പൂർത്തിയായിരിക്കുന്നു.\\n\\nപരസ്യം കണ്ട് 10 എണ്ണം തൽക്ഷണം റീഫിൽ ചെയ്യണോ?",
   "translationLoaded": "സേവ് ചെയ്ത വിവർത്തനം ലോഡ് ചെയ്തു",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "പരിഭാഷാ എണ്ണം 5 ആയി റീഫിൽ ചെയ്തു!",
+  "translationRefilled": "പരിഭാഷാ എണ്ണം 10 ആയി റീഫിൽ ചെയ്തു!",
   "translationResult": "വിവർത്തന ഫലം",
   "translationResultHint": "പരിഭാഷാ ഫലം - എഡിറ്റ് ചെയ്യാവുന്നതാണ്",
   "tryAgain": "വീണ്ടും ശ്രമിക്കുക",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "ഓൺലൈൻ ഗൈഡ് കാണുക",
   "voluntaryTranslations": "സ്വമേധയായുള്ള പരിഭാഷകൾ",
-  "watchAdAndRefill": "പരസ്യം കണ്ട് റീഫിൽ ചെയ്യുക (+5 എണ്ണം)",
+  "watchAdAndRefill": "പരസ്യം കണ്ട് റീഫിൽ ചെയ്യുക (+10 എണ്ണം)",
   "welcomeButton": "ആരംഭിക്കുക",
   "welcomeDesc": "Talkie-ലേക്ക് സ്വാഗതം! ലോകമെമ്പാടുമുള്ള 80-ൽ അധികം ഭാഷകളെ 100% കൃത്യതയോടെ പിന്തുണയ്ക്കുന്ന, പുതിയ പ്രീമിയം 3D ഡിസൈനും മികച്ച പ്രകടനവും അടങ്ങിയ പഠനാനുഭവം!",
   "welcomeTitle": "Talkie-ലേക്ക് സ്വാഗതം!",

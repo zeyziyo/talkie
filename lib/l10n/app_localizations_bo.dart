@@ -166,16 +166,17 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'རང་འགུལ་གྱི་ཞབས་ཞུའི་ཉིན་རེའི་བགོ་བཤའ་ཟད་འགྲོ་ཡི་འདུག སྐར་མ་ཁ་ཤས་ཀྱི་རྗེས་སམ་ཡང་ན་སང་ཉིན་བསྐྱར་དུ་ཚོད་ལྟ་བྱེད་རོགས།';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'AI བདེ་འཇགས་སྲིད་ཇུས་ཀྱིས་རྐྱེན་པས་སྐད་བསྒྱུར་ལ་ཚད་བཀག་བཟོས་ཡོད།';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'མ་ཕྱི་འདྲ་བཤུས་བྱེད།';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'མ་ཕྱིའི་ཚིག་དུམ་འདྲ་བཤུས་བྱས་ཚར་སོང་།';
 
   @override
   String get errorProfanity => 'མི་གཙང་བའི་ཚིག་འདུས་ཡོད་པས་བསྒྱུར་མི་ཐུབ།';
@@ -791,7 +792,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String get saved => 'ཉར་ཚགས་ལེགས་འགྲུབ།';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'མ་ཕྱིའི་ཚིག་དུམ།';
 
   @override
   String get saving => 'ཉར་ཚགས་བྱེད་བཞིན་པ...';
@@ -801,7 +802,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'པར་ནང་ནས་སྒྲིག་སྟངས་བཀོད་ཟིན་པའི་སློབ་སྦྱོང་སྐད་དང་མཐུན་པའི་ཚིག་དུམ་འཚོལ་རྙེད་མ་བྱུང་། སྐད་ཀྱི་སྒྲིག་སྟངས་ལ་ཞིབ་བཤེར་བྱེད་རོགས།';
 
   @override
   String get scanNotSupported =>
@@ -1046,13 +1047,14 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'ཉིན་རེའི་རིན་མེད་བསྒྱུར་བ་(ཐེངས་5)ཚང་མ་བཀོལ་ཚར་བ།\\n\\nཁྱབ་བསྒྲགས་བལྟས་ཏེ་ཐེངས་5མྱུར་དུ་ཁ་གསབ་བྱེད་དམ?';
+      'ཉིན་རེའི་རིན་མེད་བསྒྱུར་བ་(ཐེངས་10)ཚང་མ་བཀོལ་ཚར་བ།\\n\\nཁྱབ་བསྒྲགས་བལྟས་ཏེ་ཐེངས་10མྱུར་དུ་ཁ་གསབ་བྱེད་དམ?';
 
   @override
   String get translationLoaded => 'ཉར་ཚགས་བྱས་པའི་བསྒྱུར་བ་ནང་འཇུག་བྱས།';
 
   @override
-  String get translationRefilled => 'བསྒྱུར་བའི་ཐེངས་གྲངས་ཐེངས་5ཁ་གསབ་བྱས་ཟིན!';
+  String get translationRefilled =>
+      'བསྒྱུར་བའི་ཐེངས་གྲངས་ཐེངས་10ཁ་གསབ་བྱས་ཟིན!';
 
   @override
   String get translationResult => 'ཕབ་བསྒྱུར་གྱི་གྲུབ་འབྲས།';
@@ -1223,7 +1225,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String get voluntaryTranslations => 'རང་མོས་བསྒྱུར་བ།';
 
   @override
-  String get watchAdAndRefill => 'ཁྱབ་བསྒྲགས་བལྟས་ཏེ་ཁ་གསབ་བྱེད (+5 ཐེངས།)';
+  String get watchAdAndRefill => 'ཁྱབ་བསྒྲགས་བལྟས་ཏེ་ཁ་གསབ་བྱེད (+10 ཐེངས།)';
 
   @override
   String get welcomeButton => 'འགོ་འཛུགས།';
@@ -1249,8 +1251,20 @@ class AppLocalizationsBo extends AppLocalizations {
   String get wordModeLabel => 'ཐ་སྙད་ཐབས་ལམ།';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'མཉམ་འབྲེལ་གྱི་གྲུབ་འབྲས།';
+
+  @override
+  String get errorLimitReached =>
+      'སྐད་བསྒྱུར་གྱི་ཐེངས་གྲངས་མི་འདང་། ཁྱོད་ཀྱིས་ཁྱབ་བསྒྲགས་ལ་བལྟས་ཏེ་ཐེངས་ 10 ཁ་སྣོན་བྱེད་འདོད་དམ།';
 
   @override
   String get yourPronunciation => 'ངའི་ཀློག་སྟངས།';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [སྐད་བསྒྱུར་ཚད་བཀག་གི་ལམ་སྟོན།]\nཉིན་ལྟར་མཚན་མོ་ཆུ་ཚོད་ 12 པའི་ཐོག་རིན་མེད་སྐད་བསྒྱུར་ཐེངས་ 20 སྤྲོད་ཡོང་། ཚང་མ་ཟད་འགྲོ་ནའང་ཁྱབ་བསྒྲགས་ལ་བལྟས་ཚེ་སྐད་བསྒྱུར་ཐེངས་ 10 ཁ་སྣོན་བྱེད་ཐུབ།';
+
+  @override
+  String get scanDetails =>
+      '• པར་ཆས་སམ་ཡང་ན་པར་མཛོད་ནས་པར་བླངས་ཏེ་ཚིག་དུམ་ཕྱིར་འདོན་དང་སྐད་བསྒྱུར་བྱེད།\n• པར་གཅིག་གི་ནང་དུ་འདུས་པའི་ཚིག་རྐང་མང་པོ་ཡོད་ཚེ་རེ་རེ་བཞིན་རེག་སྟེ་སོ་སོར་སྐད་བསྒྱུར་བྱེད་ཆོག\n• སྐད་བསྒྱུར་ཐེངས་གྲངས་མི་འདང་ཚེ་འཕྲལ་དུ་ཁྱབ་བསྒྲགས་ལ་བལྟས་ཏེ་ཐེངས་ 10 ཁ་སྣོན་བྱེད་ཆོག';
 }

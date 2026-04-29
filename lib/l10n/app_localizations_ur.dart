@@ -168,16 +168,17 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'مصنوعی ذہانت کی خدمت کا یومیہ کوٹہ ختم ہو گیا ہے۔ براہ کرم کچھ دیر بعد یا کل دوبارہ کوشش کریں۔';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'AI حفاظتی پالیسی کی وجہ سے ترجمہ محدود کر دیا گیا ہے۔';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'اصل نقل کریں';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'اصل متن کاپی ہو گیا ہے۔';
 
   @override
   String get errorProfanity =>
@@ -791,7 +792,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get saved => 'محفوظ ہو گیا';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'اصل متن';
 
   @override
   String get saving => 'محفوظ ہو رہا ہے...';
@@ -801,7 +802,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'تصویر میں سیٹ کی گئی سیکھنے والی زبان سے ملتا ہوا کوئی متن نہیں ملا۔ اپنی زبان کی ترتیبات چیک کریں۔';
 
   @override
   String get scanNotSupported =>
@@ -1045,13 +1046,13 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'آپ نے روزانہ مفت تراجم (5 بار) استعمال کر لیے ہیں۔\\n\\nکیا آپ اشتہار دیکھ کر فوری طور پر 5 بار ری چارج کرنا چاہیں گے؟';
+      'آپ نے روزانہ مفت تراجم (10 بار) استعمال کر لیے ہیں۔\\n\\nکیا آپ اشتہار دیکھ کر فوری طور پر 10 بار ری چارج کرنا چاہیں گے؟';
 
   @override
   String get translationLoaded => 'محفوظ شدہ ترجمہ لوڈ ہو گیا';
 
   @override
-  String get translationRefilled => 'تراجم کی تعداد 5 بار ری چارج ہو گئی ہے!';
+  String get translationRefilled => 'تراجم کی تعداد 10 بار ری چارج ہو گئی ہے!';
 
   @override
   String get translationResult => 'ترجمہ کا نتیجہ';
@@ -1214,7 +1215,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get voluntaryTranslations => 'رضاکارانہ تراجم';
 
   @override
-  String get watchAdAndRefill => 'اشتہار دیکھیں اور ری چارج کریں (+5 بار)';
+  String get watchAdAndRefill => 'اشتہار دیکھیں اور ری چارج کریں (+10 بار)';
 
   @override
   String get welcomeButton => 'شروع کریں';
@@ -1240,8 +1241,20 @@ class AppLocalizationsUr extends AppLocalizations {
   String get wordModeLabel => 'لفظ موڈ';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'مربوط نتیجہ';
+
+  @override
+  String get errorLimitReached =>
+      'آپ کے پاس ترجموں کی تعداد کم ہے۔ کیا آپ اشتہار دیکھ کر 10 ترجمے ریچارج کرنا چاہیں گے؟';
 
   @override
   String get yourPronunciation => 'آپ کا تلفظ';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [ترجمہ کی حد کی گائیڈ]\nہر روز آدھی رات کو 20 مفت ترجمے فراہم کیے جاتے ہیں۔ اگر آپ سب استعمال کر لیتے ہیں، تو آپ اشتہار دیکھ کر فوری طور پر 10 اضافی ترجمے ریچارج کر سکتے ہیں۔';
+
+  @override
+  String get scanDetails =>
+      '• کیمرے یا گیلری سے تصویریں درآمد کریں، متن نکالیں اور اس کا ترجمہ کریں۔\n• آپ ایک تصویر میں موجود متعدد جملوں پر ٹیپ کر کے انفرادی طور پر ان کا ترجمہ کر سکتے ہیں۔\n• اگر آپ کے پاس ترجموں کی تعداد کم ہے، تو آپ اشتہار دیکھ کر فوری طور پر مزید 10 ریچارج کر سکتے ہیں۔';
 }

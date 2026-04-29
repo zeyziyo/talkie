@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Ekki hægt að þýða vegna þess að það inniheldur hatursorðræðu.",
   "errorOtherSafety": "Þýðingu hafnað samkvæmt öryggisstefnu gervigreindar.",
+  "errorQuotaExceeded": "Dagleg úthlutun fyrir gervigreindarþjónustuna er uppurin. Vinsamlegast reyndu aftur seinna eða á morgun.",
+  "errorSafetyPolicy": "Þýðingar eru takmarkaðar vegna öryggisstefnu gervigreindar.",
+  "copyOriginal": "Afrita frumtexta",
+  "originalCopied": "Frumtexti afritaður",
   "errorProfanity": "Ekki hægt að þýða vegna þess að það inniheldur blótsyrði.",
   "errorSelectCategory": "Vinsamlegast veldu fyrst orð eða setningu!",
   "errorSexualContent": "Ekki hægt að þýða vegna þess að það inniheldur kynferðislegt efni.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Frumtexti",
   "saving": "Vista...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Veldu mynd til að skanna",
+  "scanNoMatch": "Fann engan texta á myndinni sem passar við valið tungumál. Vinsamlegast athugaðu tungumálastillingarnar.",
   "scanNotSupported": "Þetta tungumál styður ekki skönnun. OCR styður eins og er aðeins latneska, kínverska, devanagari (hindí o.s.frv.), japanska og kóreska stafi.",
   "scanLabel": "Skanna",
   "score": "Nákvæmni: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Þýðingarmál",
   "translationLimitExceeded": "Þýðingarmörk náð",
-  "translationLimitMessage": "Þú hefur notað allar þínar daglegu ókeypis þýðingar (5 sinnum).\\n\\nViltu fylla strax á 5 sinnum með því að horfa á auglýsingu?",
+  "translationLimitMessage": "Þú hefur notað allar þínar daglegu ókeypis þýðingar (10 sinnum).\\n\\nViltu fylla strax á 10 sinnum með því að horfa á auglýsingu?",
   "translationLoaded": "Hlaðið inn vistaðri þýðingu",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Þýðingartímar fylltir á 5 sinnum!",
+  "translationRefilled": "Þýðingartímar fylltir á 10 sinnum!",
   "translationResult": "Þýðingarniðurstaða",
   "translationResultHint": "Þýðingarniðurstaða - hægt að breyta",
   "tryAgain": "Reyndu aftur",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Skoða leiðbeiningar á netinu",
   "voluntaryTranslations": "Sjálfviljugar þýðingar",
-  "watchAdAndRefill": "Áfylling með því að horfa á auglýsingu (+5 sinnum)",
+  "watchAdAndRefill": "Áfylling með því að horfa á auglýsingu (+10 sinnum)",
   "welcomeButton": "Byrja",
   "welcomeDesc": "Velkomin/nn í Talkie! Við styðjum yfir 80 tungumál um allan heim með 100% heilindum, ásamt nýrri úrvals 3D hönnun og fínstilltri frammistöðu fyrir fullkomna námsupplifun.",
   "welcomeTitle": "Velkomin í Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Verjaðu stöðina með því að segja orðið áður en óvinurinn kemur.",
   "wordDefenseTitle": "Orðavörn",
   "wordModeLabel": "Orðastilling",
-  "yourPronunciation": "Framburðurinn þinn"
+  "combinedResult": "Samþætt niðurstaða",
+  "errorLimitReached": "Þú hefur ekki nægar þýðingar eftir. Viltu horfa á auglýsingu til að fá 10 til viðbótar?",
+  "yourPronunciation": "Framburðurinn þinn",
+  "helpLimitDetails": "💡 [Leiðbeiningar um þýðingatakmarkanir]\n20 ókeypis þýðingar eru gefnar á hverjum degi á miðnætti. Ef þú klárar þær allar geturðu horft á auglýsingu til að fá 10 til viðbótar strax.",
+  "scanDetails": "• Hladdu upp myndum úr myndavélinni eða myndasafninu til að draga út og þýða texta.\n• Pikkaðu á margar setningar á einni mynd til að þýða þær hver fyrir sig.\n• Ef þú hefur ekki nægar þýðingar geturðu horft á auglýsingu til að fá 10 til viðbótar strax."
 }

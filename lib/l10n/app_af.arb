@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Kan nie vertaal nie omdat dit haatspraak bevat.",
   "errorOtherSafety": "Vertaling is geweier weens AI-veiligheidsbeleide.",
+  "errorQuotaExceeded": "Die daaglikse kwota vir die KI-diens is oorskry. Probeer weer later of môre.",
+  "errorSafetyPolicy": "Vertaling is beperk weens die KI-veiligheidsbeleid.",
+  "copyOriginal": "Kopieer oorspronklike",
+  "originalCopied": "Oorspronklike teks is gekopieer.",
   "errorProfanity": "Dit bevat vloektaal, daarom kan dit nie vertaal word nie.",
   "errorSelectCategory": "Kies eers 'n woord of sin!",
   "errorSexualContent": "Kan nie vertaal nie omdat dit seksueel eksplisiete inhoud bevat.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Oorspronklike teks",
   "saving": "Stoor...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Kies 'n prent om te skandeer",
+  "scanNoMatch": "Kon geen teks vind wat ooreenstem met die ingestelde leertaal in die foto nie. Kontroleer jou taalinstellings.",
   "scanNotSupported": "Hierdie taal word nie deur skandering ondersteun nie. OCR ondersteun tans slegs Latynse, Chinese, Devanagari (bv. Hindi), Japannese en Koreaanse karakters.",
   "scanLabel": "Skandeer",
   "score": "Akkuraatheid: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Vertalingstaal",
   "translationLimitExceeded": "Vertalingslimiet oorskry",
-  "translationLimitMessage": "Jy het al jou daaglikse gratis vertalings (5 keer) gebruik.\\n\\nWil jy 'n advertensie kyk om 5 keer onmiddellik aan te vul?",
+  "translationLimitMessage": "Jy het al jou daaglikse gratis vertalings (10 keer) gebruik.\\n\\nWil jy 'n advertensie kyk om 10 keer onmiddellik aan te vul?",
   "translationLoaded": "Gestorde vertaling gelaai",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Vertalings is 5 keer aangevul!",
+  "translationRefilled": "Vertalings is 10 keer aangevul!",
   "translationResult": "Vertalingsresultaat",
   "translationResultHint": "Vertalingsresultaat - kan gewysig word",
   "tryAgain": "Probeer weer",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Bekyk aanlyn gids",
   "voluntaryTranslations": "Vrywillige vertalings",
-  "watchAdAndRefill": "Kyk advertensie en vul aan (+5 keer)",
+  "watchAdAndRefill": "Kyk advertensie en vul aan (+10 keer)",
   "welcomeButton": "Begin",
   "welcomeDesc": "Welkom by Talkie! Ondersteun alle 80+ tale wêreldwyd met 100% integriteit, kompleet met nuwe premium 3D-ontwerpe en geoptimaliseerde werkverrigting vir 'n perfekte leerervaring.",
   "welcomeTitle": "Welkom by Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Verdedig die basis deur woorde te sê voordat die vyande arriveer.",
   "wordDefenseTitle": "Woordverdediging",
   "wordModeLabel": "Woordmodus",
-  "yourPronunciation": "Jou Uitspraak"
+  "combinedResult": "Gekombineerde resultaat",
+  "errorLimitReached": "Jy het min vertalings oor. Wil jy 'n advertensie kyk om 10 vertalings te herlaai?",
+  "yourPronunciation": "Jou Uitspraak",
+  "helpLimitDetails": "💡 [Vertaalperke]\nDaar word elke dag om middernag 20 gratis vertalings verskaf. Selfs as jy almal gebruik, kan jy onmiddellik 10 bykomende vertalings herlaai deur na 'n advertensie te kyk.",
+  "scanDetails": "• Voer beelde vanaf jou kamera of galery in om teks te onttrek en te vertaal.\n• Jy kan individuele sinne in 'n enkele foto tik om dit afsonderlik te vertaal.\n• As jy min vertalings het, kan jy dadelik 'n advertensie kyk om 10 bykomende vertalings te herlaai."
 }

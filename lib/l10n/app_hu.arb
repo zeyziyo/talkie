@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Gyűlöletbeszéd miatt nem lehet lefordítani.",
   "errorOtherSafety": "Az AI biztonsági irányelvei miatt a fordítás elutasítva.",
+  "errorQuotaExceeded": "A napi mesterséges intelligencia szolgáltatás kvóta kimerült. Kérjük, próbálja újra később vagy holnap.",
+  "errorSafetyPolicy": "A fordítás az AI biztonsági szabályzat miatt korlátozott.",
+  "copyOriginal": "Eredeti másolása",
+  "originalCopied": "Az eredeti szöveg másolva.",
   "errorProfanity": "A trágárság miatt nem lehet lefordítani.",
   "errorSelectCategory": "Először válassz szót vagy mondatot!",
   "errorSexualContent": "Szexuális tartalom miatt nem lehet lefordítani.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Eredeti szöveg",
   "saving": "Mentés...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Válassza ki a szkennelni kívánt képet",
+  "scanNoMatch": "A fotón nem található a beállított tanulási nyelvvel egyező szöveg. Kérjük, ellenőrizze a nyelvi beállításokat.",
   "scanNotSupported": "Ez a nyelv nem támogatja a szkennelést. Az OCR jelenleg csak a latin, kínai, dévanágari (pl. hindi), japán és koreai karaktereket támogatja.",
   "scanLabel": "Szkennelés",
   "score": "Pontosság: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Fordítási nyelv",
   "translationLimitExceeded": "Fordítási limit túllépve",
-  "translationLimitMessage": "Elhasználtad az összes napi ingyenes fordítási lehetőséget (5 alkalom).\\n\\nSzeretnél megnézni egy hirdetést, hogy azonnal feltöltsd 5 alkalommal?",
+  "translationLimitMessage": "Elhasználtad az összes napi ingyenes fordítási lehetőséget (10 alkalom).\\n\\nSzeretnél megnézni egy hirdetést, hogy azonnal feltöltsd 10 alkalommal?",
   "translationLoaded": "Mentett fordítás betöltve",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "A fordítási számláló feltöltve 5 alkalommal!",
+  "translationRefilled": "A fordítási számláló feltöltve 10 alkalommal!",
   "translationResult": "Fordítás eredménye",
   "translationResultHint": "Fordítás eredménye - szerkeszthető",
   "tryAgain": "Próbáld újra",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Online útmutató megtekintése",
   "voluntaryTranslations": "Önkéntes fordítások",
-  "watchAdAndRefill": "Hirdetés megtekintése és feltöltés (+5 alkalom)",
+  "watchAdAndRefill": "Hirdetés megtekintése és feltöltés (+10 alkalom)",
   "welcomeButton": "Kezdés",
   "welcomeDesc": "Üdvözöljük a Talkie-ban! Több mint 80 nyelvet támogatunk világszerte, 100%-os megbízhatósággal, új prémium 3D dizájnnal és optimalizált teljesítménnyel a tökéletes tanulási élményért.",
   "welcomeTitle": "Üdvözöljük a Talkie-ban!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Védd meg a bázisodat úgy, hogy kimondod a szavakat, mielőtt az ellenség odaérne.",
   "wordDefenseTitle": "Szó védelem",
   "wordModeLabel": "Szó mód",
-  "yourPronunciation": "Kiejtésed"
+  "combinedResult": "Összevont eredmény",
+  "errorLimitReached": "Nincs elég fordítása. Szeretne hirdetést nézni, hogy 10 fordítást szerezzen?",
+  "yourPronunciation": "Kiejtésed",
+  "helpLimitDetails": "💡 [Fordítási korlát információk]\nNaponta éjfélkor 20 ingyenes fordítás áll rendelkezésre. Ha mindet elhasználja, egy hirdetés megtekintésével azonnal 10 további fordítást tölthet fel.",
+  "scanDetails": "• Töltsön fel képeket a kamerából vagy a galériából, hogy szöveget nyerjen ki és lefordítson.\n• Egy fényképben lévő több mondatot is megérintve külön-külön lefordíthatja azokat.\n• Ha nincs elég fordítása, nézzen meg egy hirdetést, hogy azonnal 10-et töltsön fel."
 }

@@ -165,16 +165,17 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'تم استنفاد الحصة اليومية لخدمة الذكاء الاصطناعي. يرجى المحاولة مرة أخرى لاحقًا أو غدًا.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'تم تقييد الترجمة بسبب سياسة أمان الذكاء الاصطناعي.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'نسخ الأصل';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'تم نسخ النص الأصلي.';
 
   @override
   String get errorProfanity => 'لا يمكن الترجمة بسبب استخدام لغة بذيئة.';
@@ -786,7 +787,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get saved => 'تم الحفظ';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'النص الأصلي';
 
   @override
   String get saving => 'جاري الحفظ...';
@@ -796,7 +797,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'لم يتم العثور على نص في الصورة يطابق لغة التدريب المحددة. يرجى التحقق من إعدادات اللغة.';
 
   @override
   String get scanNotSupported =>
@@ -1041,13 +1042,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'لقد استخدمت جميع تراجمك المجانية اليومية (5 مرات).\n\nهل تريد مشاهدة إعلان وتعبئة 5 تراجم على الفور؟';
+      'لقد استخدمت جميع تراجمك المجانية اليومية (10 مرات).\n\nهل تريد مشاهدة إعلان وتعبئة 10 تراجم على الفور؟';
 
   @override
   String get translationLoaded => 'تم تحميل الترجمة المحفوظة';
 
   @override
-  String get translationRefilled => 'تمت إعادة تعبئة عداد الترجمة إلى 5!';
+  String get translationRefilled => 'تمت إعادة تعبئة عداد الترجمة إلى 10!';
 
   @override
   String get translationResult => 'نتيجة الترجمة';
@@ -1208,7 +1209,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get voluntaryTranslations => 'ترجمات تطوعية';
 
   @override
-  String get watchAdAndRefill => 'شاهد إعلانًا واملأ (+5 مرات)';
+  String get watchAdAndRefill => 'شاهد إعلانًا واملأ (+10 مرات)';
 
   @override
   String get welcomeButton => 'ابدأ الآن';
@@ -1234,8 +1235,20 @@ class AppLocalizationsAr extends AppLocalizations {
   String get wordModeLabel => 'وضع الكلمات';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'النتيجة الموحدة';
+
+  @override
+  String get errorLimitReached =>
+      'نفدت عدد مرات الترجمة. هل ترغب في مشاهدة إعلان لشحن 10 مرات؟';
 
   @override
   String get yourPronunciation => 'نطقك';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [دليل حد الترجمة]\nيتم توفير 20 ترجمة مجانية كل يوم في منتصف الليل. حتى إذا استنفدت جميعها، يمكنك مشاهدة إعلان لشحن 10 ترجمات إضافية على الفور.';
+
+  @override
+  String get scanDetails =>
+      '• قم بتحميل الصور من الكاميرا أو المعرض لاستخراج النص وترجمته.\n• يمكنك النقر على جمل متعددة في صورة واحدة لترجمتها بشكل فردي.\n• إذا كان عدد مرات الترجمة غير كافٍ، يمكنك مشاهدة إعلان على الفور لإضافة 10 مرات أخرى.';
 }

@@ -675,12 +675,12 @@
   },
   "translationLanguage": "පරිවර්තන භාෂාව",
   "translationLimitExceeded": "පරිවර්තන සීමාව ඉක්මවා ඇත",
-  "translationLimitMessage": "ඔබ ඔබේ දෛනික නොමිලේ පරිවර්තන (5 වතාවක්) සියල්ලම භාවිතා කර ඇත.\\n\\nදැන්වීමක් නැරඹීමෙන් වාර 5ක් ක්ෂණිකව නැවත පුරවන්නද?",
+  "translationLimitMessage": "ඔබ ඔබේ දෛනික නොමිලේ පරිවර්තන (10 වතාවක්) සියල්ලම භාවිතා කර ඇත.\\n\\nදැන්වීමක් නැරඹීමෙන් වාර 10ක් ක්ෂණිකව නැවත පුරවන්නද?",
   "translationLoaded": "සුරකින ලද පරිවර්තනය පූරණය කරන ලදී",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "පරිවර්තන ගණන වාර 5ක් නැවත පුරවා ඇත!",
+  "translationRefilled": "පරිවර්තන ගණන වාර 10ක් නැවත පුරවා ඇත!",
   "translationResult": "පරිවර්තන ප්‍රතිඵලය",
   "translationResultHint": "පරිවර්තන ප්‍රතිඵලය - සංස්කරණය කළ හැක",
   "tryAgain": "නැවත උත්සාහ කරන්න",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "මාර්ගගත මාර්ගෝපදේශය බලන්න",
   "voluntaryTranslations": "ස්වේච්ඡා පරිවර්තන",
-  "watchAdAndRefill": "දැන්වීම් නරඹා නැවත පුරවන්න (+5 වාරයක්)",
+  "watchAdAndRefill": "දැන්වීම් නරඹා නැවත පුරවන්න (+10 වාරයක්)",
   "welcomeButton": "ආරම්භ කරන්න",
   "welcomeDesc": "Talkie වෙත ඔබව සාදරයෙන් පිළිගනිමු! ලොව පුරා භාෂා 80කට වැඩි ගණනක් 100%ක් නිවැරදිව සහය දක්වන අතර, නව ප්‍රිමියම් 3D නිර්මාණ සහ ප්‍රශස්ත කාර්යසාධනය සමඟ පරිපූර්ණ ඉගෙනුම් අත්දැකීමක් ලබා දෙයි.",
   "welcomeTitle": "Talkie වෙත සාදරයෙන් පිළිගනිමු!",

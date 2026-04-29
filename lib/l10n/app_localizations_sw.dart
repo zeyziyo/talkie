@@ -167,16 +167,16 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Umefikia kikomo cha matumizi ya kila siku ya huduma ya akili bandia. Tafadhali jaribu tena baadaye au kesho.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy => 'Tafsiri imezuiwa na sera ya usalama ya AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Nakili asili';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Nakala asili imenakiliwa.';
 
   @override
   String get errorProfanity => 'Haiwezi kutafsiri kwa sababu ina lugha chafu.';
@@ -790,7 +790,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get saved => 'Imehifadhiwa';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Nakala asili';
 
   @override
   String get saving => 'Inahifadhi...';
@@ -800,7 +800,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Hakuna maandishi yanayolingana na lugha ya kujifunza iliyowekwa yaliyopatikana kwenye picha. Tafadhali angalia mipangilio ya lugha yako.';
 
   @override
   String get scanNotSupported =>
@@ -1045,13 +1045,13 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Umetumia tafsiri zote za bure za kila siku (mara 5).\\n\\nJe, ungependa kutazama tangazo na kujaza mara 5 mara moja?';
+      'Umetumia tafsiri zote za bure za kila siku (mara 10).\\n\\nJe, ungependa kutazama tangazo na kujaza mara 10 mara moja?';
 
   @override
   String get translationLoaded => 'Tafsiri iliyohifadhiwa imepakiwa';
 
   @override
-  String get translationRefilled => 'Hesabu ya tafsiri imejazwa tena mara 5!';
+  String get translationRefilled => 'Hesabu ya tafsiri imejazwa tena mara 10!';
 
   @override
   String get translationResult => 'Matokeo ya Tafsiri';
@@ -1216,7 +1216,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get voluntaryTranslations => 'Tafsiri za Hiari';
 
   @override
-  String get watchAdAndRefill => 'Tazama Tangazo na Ujazwe Tena (+5)';
+  String get watchAdAndRefill => 'Tazama Tangazo na Ujazwe Tena (+10)';
 
   @override
   String get welcomeButton => 'Anza';
@@ -1242,8 +1242,20 @@ class AppLocalizationsSw extends AppLocalizations {
   String get wordModeLabel => 'Hali ya Neno';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Matokeo yaliyounganishwa';
+
+  @override
+  String get errorLimitReached =>
+      'Huna hesabu ya kutosha ya tafsiri. Je, ungependa kutazama tangazo ili uongeze mara 10?';
 
   @override
   String get yourPronunciation => 'Matamshi Yako';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Mwongozo wa kikomo cha tafsiri]\nTafsiri 20 za bure hutolewa kila siku saa sita usiku. Hata ukizitumia zote, unaweza kutazama tangazo mara moja ili kuchaji tafsiri 10 za ziada.';
+
+  @override
+  String get scanDetails =>
+      '• Leta picha kutoka kwenye kamera au ghala ili uchukue na utafsiri maandishi.\n• Unaweza kugonga sentensi nyingi zilizojumuishwa kwenye picha moja ili kuzitafsiri kibinafsi.\n• Ikiwa huna idadi ya kutosha ya tafsiri, unaweza kutazama tangazo mara moja ili kuongeza 10 zaidi.';
 }

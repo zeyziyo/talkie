@@ -167,16 +167,17 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'È stata superata la quota giornaliera del servizio di intelligenza artificiale. Riprova più tardi o domani.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'La traduzione è stata limitata a causa delle norme di sicurezza dell\'IA.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Copia originale';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Testo originale copiato.';
 
   @override
   String get errorProfanity => 'Non posso tradurre perché contiene volgarità.';
@@ -794,7 +795,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get saved => 'Salvato';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Testo originale';
 
   @override
   String get saving => 'Salvataggio...';
@@ -804,7 +805,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Non è stato trovato testo corrispondente alla lingua di apprendimento impostata nella foto. Verifica le impostazioni della lingua.';
 
   @override
   String get scanNotSupported =>
@@ -1051,13 +1052,13 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Hai utilizzato tutte le traduzioni gratuite giornaliere (5).\\n\\nVuoi guardare un annuncio per ricaricare immediatamente 5 traduzioni?';
+      'Hai utilizzato tutte le traduzioni gratuite giornaliere (10).\\n\\nVuoi guardare un annuncio per ricaricare immediatamente 10 traduzioni?';
 
   @override
   String get translationLoaded => 'Traduzione salvata caricata';
 
   @override
-  String get translationRefilled => 'Hai ricaricato 5 traduzioni!';
+  String get translationRefilled => 'Hai ricaricato 10 traduzioni!';
 
   @override
   String get translationResult => 'Risultato della traduzione';
@@ -1229,7 +1230,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get voluntaryTranslations => 'Traduzioni volontarie';
 
   @override
-  String get watchAdAndRefill => 'Guarda l\'annuncio e ricarica (+5)';
+  String get watchAdAndRefill => 'Guarda l\'annuncio e ricarica (+10)';
 
   @override
   String get welcomeButton => 'Inizia';
@@ -1255,8 +1256,20 @@ class AppLocalizationsIt extends AppLocalizations {
   String get wordModeLabel => 'Modalità parola';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Risultato combinato';
+
+  @override
+  String get errorLimitReached =>
+      'Non hai abbastanza traduzioni. Vuoi guardare un annuncio per ricaricare 10 traduzioni?';
 
   @override
   String get yourPronunciation => 'La tua Pronuncia';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Guida al limite di traduzione]\nOgni giorno a mezzanotte vengono fornite 20 traduzioni gratuite. Se le esaurisci tutte, puoi guardare un annuncio per ricaricare immediatamente 10 traduzioni aggiuntive.';
+
+  @override
+  String get scanDetails =>
+      '• Importa immagini dalla fotocamera o dalla galleria per estrarre e tradurre il testo.\n• Puoi toccare più frasi contenute in una singola foto per tradurle individualmente.\n• Se non hai abbastanza traduzioni, puoi guardare immediatamente un annuncio per ricaricarne altre 10.';
 }

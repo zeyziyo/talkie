@@ -167,16 +167,17 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Ir pārsniegts mākslīgā intelekta pakalpojumu dienas kvotas limits. Lūdzu, mēģiniet vēlreiz vēlāk vai rīt.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Tulkošana ir ierobežota AI drošības politikas dēļ.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Kopēt oriģinālu';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Oriģinālais teksts ir nokopēts.';
 
   @override
   String get errorProfanity => 'Nevar tulkot, jo satur necenzētus vārdus.';
@@ -792,7 +793,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get saved => 'Saglabāts';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Oriģinālais teksts';
 
   @override
   String get saving => 'Saglabā...';
@@ -802,7 +803,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Attēlā nevarēja atrast tekstu, kas atbilstu iestatītajai mācību valodai. Lūdzu, pārbaudiet valodas iestatījumus.';
 
   @override
   String get scanNotSupported =>
@@ -1047,14 +1048,14 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Esat izmantojis visus savus ikdienas bezmaksas tulkojumus (5 reizes).\\n\\nVai vēlaties skatīties reklāmu un nekavējoties papildināt 5 reizes?';
+      'Esat izmantojis visus savus ikdienas bezmaksas tulkojumus (10 reizes).\\n\\nVai vēlaties skatīties reklāmu un nekavējoties papildināt 10 reizes?';
 
   @override
   String get translationLoaded => 'Ielādēts saglabātais tulkojums';
 
   @override
   String get translationRefilled =>
-      'Jūsu tulkošanas reižu skaits ir papildināts ar 5 reizēm!';
+      'Jūsu tulkošanas reižu skaits ir papildināts ar 10 reizēm!';
 
   @override
   String get translationResult => 'Tulkošanas rezultāts';
@@ -1223,7 +1224,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get voluntaryTranslations => 'Brīvprātīgie tulkojumi';
 
   @override
-  String get watchAdAndRefill => 'Skatīties reklāmu un papildināt (+5 reizes)';
+  String get watchAdAndRefill => 'Skatīties reklāmu un papildināt (+10 reizes)';
 
   @override
   String get welcomeButton => 'Sākt';
@@ -1249,8 +1250,20 @@ class AppLocalizationsLv extends AppLocalizations {
   String get wordModeLabel => 'Vārdu režīms';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Apvienotais rezultāts';
+
+  @override
+  String get errorLimitReached =>
+      'Jums ir beigušies tulkojumi. Vai vēlaties noskatīties reklāmu, lai saņemtu 10 papildu tulkojumus?';
 
   @override
   String get yourPronunciation => 'Jūsu izruna';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Tulkošanas limita informācija]\nKatru dienu pusnaktī tiek nodrošināti 20 bezmaksas tulkojumi. Ja tie visi ir izmantoti, varat noskatīties reklāmu, lai nekavējoties saņemtu 10 papildu tulkojumus.';
+
+  @override
+  String get scanDetails =>
+      '• Importējiet attēlus no kameras vai galerijas, lai iegūtu un tulkotu tekstu.\n• Varat pieskarties vairākiem teikumiem vienā fotoattēlā, lai tos tulkotu atsevišķi.\n• Ja jums ir beigušies tulkojumi, varat nekavējoties noskatīties reklāmu, lai saņemtu papildu 10 tulkojumus.';
 }

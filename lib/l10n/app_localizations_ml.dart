@@ -1049,13 +1049,13 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'ദിവസേനയുള്ള സൗജന്യ പരിഭാഷ (5 എണ്ണം) പൂർത്തിയായിരിക്കുന്നു.\\n\\nപരസ്യം കണ്ട് 5 എണ്ണം തൽക്ഷണം റീഫിൽ ചെയ്യണോ?';
+      'ദിവസേനയുള്ള സൗജന്യ പരിഭാഷ (10 എണ്ണം) പൂർത്തിയായിരിക്കുന്നു.\\n\\nപരസ്യം കണ്ട് 10 എണ്ണം തൽക്ഷണം റീഫിൽ ചെയ്യണോ?';
 
   @override
   String get translationLoaded => 'സേവ് ചെയ്ത വിവർത്തനം ലോഡ് ചെയ്തു';
 
   @override
-  String get translationRefilled => 'പരിഭാഷാ എണ്ണം 5 ആയി റീഫിൽ ചെയ്തു!';
+  String get translationRefilled => 'പരിഭാഷാ എണ്ണം 10 ആയി റീഫിൽ ചെയ്തു!';
 
   @override
   String get translationResult => 'വിവർത്തന ഫലം';
@@ -1225,7 +1225,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get voluntaryTranslations => 'സ്വമേധയായുള്ള പരിഭാഷകൾ';
 
   @override
-  String get watchAdAndRefill => 'പരസ്യം കണ്ട് റീഫിൽ ചെയ്യുക (+5 എണ്ണം)';
+  String get watchAdAndRefill => 'പരസ്യം കണ്ട് റീഫിൽ ചെയ്യുക (+10 എണ്ണം)';
 
   @override
   String get welcomeButton => 'ആരംഭിക്കുക';
@@ -1254,5 +1254,16 @@ class AppLocalizationsMl extends AppLocalizations {
   String get combinedResult => '통합 결과';
 
   @override
+  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+
+  @override
   String get yourPronunciation => 'നിങ്ങളുടെ ഉച്ചാരണം';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+
+  @override
+  String get scanDetails =>
+      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
 }

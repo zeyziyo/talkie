@@ -167,16 +167,17 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Yapay zeka hizmetinin günlük kotası aşıldı. Lütfen daha sonra veya yarın tekrar deneyin.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'AI güvenlik politikası nedeniyle çeviri kısıtlandı.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Orijinali Kopyala';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Orijinal metin kopyalandı.';
 
   @override
   String get errorProfanity => 'Küfür içerdiği için çevrilemiyor.';
@@ -791,7 +792,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get saved => 'Kaydedildi';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Orijinal Metin';
 
   @override
   String get saving => 'Kaydediliyor...';
@@ -801,7 +802,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Fotoğrafta ayarlanan öğrenme diliyle eşleşen metin bulunamadı. Lütfen dil ayarlarınızı kontrol edin.';
 
   @override
   String get scanNotSupported =>
@@ -1046,13 +1047,13 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Günlük ücretsiz çeviri sınırına (5 kez) ulaştınız.\\n\\nReklam izleyerek hemen 5 çeviri hakkı kazanmak ister misiniz?';
+      'Günlük ücretsiz çeviri sınırına (10 kez) ulaştınız.\\n\\nReklam izleyerek hemen 10 çeviri hakkı kazanmak ister misiniz?';
 
   @override
   String get translationLoaded => 'Kayıtlı çeviri yüklendi';
 
   @override
-  String get translationRefilled => 'Çeviri sayısı 5\'e tamamlandı!';
+  String get translationRefilled => 'Çeviri sayısı 10\'e tamamlandı!';
 
   @override
   String get translationResult => 'Çeviri Sonucu';
@@ -1220,7 +1221,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get voluntaryTranslations => 'Gönüllü Çeviriler';
 
   @override
-  String get watchAdAndRefill => 'Reklam İzle ve Yenile (+5 Çeviri)';
+  String get watchAdAndRefill => 'Reklam İzle ve Yenile (+10 Çeviri)';
 
   @override
   String get welcomeButton => 'Başla';
@@ -1246,8 +1247,20 @@ class AppLocalizationsTr extends AppLocalizations {
   String get wordModeLabel => 'Kelime Modu';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Birleştirilmiş Sonuç';
+
+  @override
+  String get errorLimitReached =>
+      'Çeviri sayısı yetersiz. Reklam izleyerek 10 çeviri hakkı kazanmak ister misiniz?';
 
   @override
   String get yourPronunciation => 'Telaffuzunuz';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Çeviri Limiti Bilgisi]\nHergün gece yarısı 20 ücretsiz çeviri hakkı sağlanır. Tükendiğinde reklam izleyerek anında 10 ek çeviri hakkı kazanabilirsiniz.';
+
+  @override
+  String get scanDetails =>
+      '• Kameradan veya galeriden bir görüntü yükleyerek metni çıkarın ve çevirin.\n• Bir fotoğraftaki birden fazla cümleyi ayrı ayrı çevirmek için dokunabilirsiniz.\n• Çeviri sayınız yetersizse, reklam izleyerek hemen 10 tane daha kazanabilirsiniz.';
 }

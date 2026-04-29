@@ -165,16 +165,16 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'โควต้าบริการ AI รายวันของคุณหมดแล้ว โปรดลองอีกครั้งในภายหลังหรือพรุ่งนี้';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy => 'การแปลถูกจำกัดโดยนโยบายความปลอดภัย AI';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'คัดลอกต้นฉบับ';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'คัดลอกข้อความต้นฉบับแล้ว';
 
   @override
   String get errorProfanity => 'ไม่สามารถแปลได้เนื่องจากมีคำหยาบคาย';
@@ -784,7 +784,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get saved => 'บันทึกแล้ว';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'ข้อความต้นฉบับ';
 
   @override
   String get saving => 'ไกำลังบันทึก...';
@@ -794,7 +794,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'ไม่พบข้อความที่ตรงกับภาษาการเรียนรู้ที่ตั้งค่าไว้ในรูปภาพ โปรดตรวจสอบการตั้งค่าภาษาของคุณ';
 
   @override
   String get scanNotSupported =>
@@ -1038,13 +1038,13 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'คุณใช้การแปลฟรีรายวัน (5 ครั้ง) หมดแล้ว\n\nต้องการดูโฆษณาเพื่อเติม 5 ครั้งทันทีหรือไม่';
+      'คุณใช้การแปลฟรีรายวัน (10 ครั้ง) หมดแล้ว\n\nต้องการดูโฆษณาเพื่อเติม 10 ครั้งทันทีหรือไม่';
 
   @override
   String get translationLoaded => 'โหลดคำแปลที่บันทึกไว้';
 
   @override
-  String get translationRefilled => 'เติมจำนวนการแปล 5 ครั้งแล้ว!';
+  String get translationRefilled => 'เติมจำนวนการแปล 10 ครั้งแล้ว!';
 
   @override
   String get translationResult => 'ผลการแปล';
@@ -1207,7 +1207,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get voluntaryTranslations => 'การแปลโดยผู้ใช้';
 
   @override
-  String get watchAdAndRefill => 'ดูโฆษณาเพื่อเติม (+5 ครั้ง)';
+  String get watchAdAndRefill => 'ดูโฆษณาเพื่อเติม (+10 ครั้ง)';
 
   @override
   String get welcomeButton => 'เริ่มต้น';
@@ -1233,8 +1233,20 @@ class AppLocalizationsTh extends AppLocalizations {
   String get wordModeLabel => 'โหมดคำศัพท์';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'ผลลัพธ์รวม';
+
+  @override
+  String get errorLimitReached =>
+      'จำนวนการแปลไม่เพียงพอ คุณต้องการดูโฆษณาเพื่อเติม 10 ครั้งหรือไม่';
 
   @override
   String get yourPronunciation => 'การออกเสียงของคุณ';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [คำแนะนำเกี่ยวกับขีดจำกัดการแปล]\nมีการแปลฟรี 20 ครั้งทุกวันเมื่อเที่ยงคืน หากคุณใช้หมด คุณสามารถรับการแปลเพิ่มอีก 10 ครั้งได้ทันทีโดยการดูโฆษณา';
+
+  @override
+  String get scanDetails =>
+      '• โหลดรูปภาพจากกล้องหรือแกลเลอรีเพื่อดึงข้อความและแปล\n• คุณสามารถแตะหลายประโยคในรูปภาพเดียวเพื่อแปลทีละประโยคได้\n• หากจำนวนการแปลไม่เพียงพอ คุณสามารถดูโฆษณาเพื่อเติมเงินเพิ่มอีก 10 ครั้งได้ทันที';
 }

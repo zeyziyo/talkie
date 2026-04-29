@@ -168,16 +168,17 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Дневният лимит за услугата с изкуствен интелект е изчерпан. Моля, опитайте отново по-късно или утре.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Преводът е ограничен от правилата за безопасност на AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Копиране на оригинала';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Оригиналният текст е копиран.';
 
   @override
   String get errorProfanity => 'Не може да се преведе, защото съдържа ругатни.';
@@ -793,7 +794,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get saved => 'Запазено';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Оригинален текст';
 
   @override
   String get saving => 'Запазване...';
@@ -803,7 +804,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Не е намерен текст в снимката, който да съответства на зададения език за обучение. Моля, проверете настройките на езика.';
 
   @override
   String get scanNotSupported =>
@@ -1047,13 +1048,13 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Използвахте всичките си безплатни дневни преводи (5 пъти).\\n\\nИскате ли незабавно да презаредите 5 пъти, като гледате реклама?';
+      'Използвахте всичките си безплатни дневни преводи (10 пъти).\\n\\nИскате ли незабавно да презаредите 10 пъти, като гледате реклама?';
 
   @override
   String get translationLoaded => 'Зареден запазен превод';
 
   @override
-  String get translationRefilled => 'Броят на преводите е презареден 5 пъти!';
+  String get translationRefilled => 'Броят на преводите е презареден 10 пъти!';
 
   @override
   String get translationResult => 'Резултат от превода';
@@ -1226,7 +1227,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get watchAdAndRefill =>
-      'Презареждане чрез гледане на реклама (+5 пъти)';
+      'Презареждане чрез гледане на реклама (+10 пъти)';
 
   @override
   String get welcomeButton => 'Започнете';
@@ -1252,8 +1253,20 @@ class AppLocalizationsBg extends AppLocalizations {
   String get wordModeLabel => 'Режим „Думи“';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Обединен резултат';
+
+  @override
+  String get errorLimitReached =>
+      'Нямате достатъчно преводи. Искате ли да гледате реклама, за да получите 10 превода?';
 
   @override
   String get yourPronunciation => 'Вашето произношение';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Информация за лимита на преводите]\nВсеки ден в полунощ се предоставят 20 безплатни превода. Ако ги изчерпите всички, можете да получите допълнителни 10 превода, като гледате реклама.';
+
+  @override
+  String get scanDetails =>
+      '• Качете изображение от камерата или галерията, за да извлечете текст и да го преведете.\n• Можете да докоснете няколко изречения, включени в една снимка, за да ги преведете поотделно.\n• Ако нямате достатъчно преводи, можете незабавно да гледате реклама, за да получите допълнителни 10.';
 }

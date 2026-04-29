@@ -1046,13 +1046,13 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'आपने सभी दैनिक मुफ्त अनुवादों (5 बार) का उपयोग कर लिया है।\\n\\nक्या आप विज्ञापन देखकर तुरंत 5 बार रीफिल करना चाहेंगे?';
+      'आपने सभी दैनिक मुफ्त अनुवादों (10 बार) का उपयोग कर लिया है।\\n\\nक्या आप विज्ञापन देखकर तुरंत 10 बार रीफिल करना चाहेंगे?';
 
   @override
   String get translationLoaded => 'सहेजा गया अनुवाद लोड किया गया';
 
   @override
-  String get translationRefilled => 'अनुवाद की संख्या 5 बार रीफिल की गई है!';
+  String get translationRefilled => 'अनुवाद की संख्या 10 बार रीफिल की गई है!';
 
   @override
   String get translationResult => 'अनुवाद परिणाम';
@@ -1222,7 +1222,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get voluntaryTranslations => 'स्वैच्छिक अनुवाद';
 
   @override
-  String get watchAdAndRefill => 'विज्ञापन देखकर रीफिल करें (+5 बार)';
+  String get watchAdAndRefill => 'विज्ञापन देखकर रीफिल करें (+10 बार)';
 
   @override
   String get welcomeButton => 'शुरू करें';
@@ -1251,5 +1251,16 @@ class AppLocalizationsHi extends AppLocalizations {
   String get combinedResult => '통합 결과';
 
   @override
+  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+
+  @override
   String get yourPronunciation => 'आपका उच्चारण';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+
+  @override
+  String get scanDetails =>
+      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
 }

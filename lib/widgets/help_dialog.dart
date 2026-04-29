@@ -118,7 +118,7 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
                 icon: Icons.translate,
                 title: l10n.homeTab,
                 desc: l10n.helpMode1Desc,
-                details: l10n.helpMode1Details,
+                details: '${l10n.helpMode1Details}\n\n${l10n.helpLimitDetails}',
                 color: Colors.blue[50]!,
               ),
               _buildModeCard(
@@ -139,7 +139,7 @@ class _HelpDialogState extends State<HelpDialog> with SingleTickerProviderStateM
                 icon: Icons.document_scanner,
                 title: l10n.scanLabel,
                 desc: l10n.scanInstructions,
-                details: l10n.scanInstructions,
+                details: '${l10n.scanDetails}\n\n${l10n.helpLimitDetails}',
                 color: Colors.orange[50]!,
               ),
             ],

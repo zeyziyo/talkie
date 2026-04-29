@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Језик превода",
   "translationLimitExceeded": "Прекорачено ограничење превода",
-  "translationLimitMessage": "Искористили сте све бесплатне дневне преводе (5 пута).\\n\\nДа ли желите одмах да допуните 5 пута гледањем огласа?",
+  "translationLimitMessage": "Искористили сте све бесплатне дневне преводе (10 пута).\\n\\nДа ли желите одмах да допуните 10 пута гледањем огласа?",
   "translationLoaded": "Учитан сачувани превод",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Број превода је допуњен 5 пута!",
+  "translationRefilled": "Број превода је допуњен 10 пута!",
   "translationResult": "Резултат превода",
   "translationResultHint": "Резултат превода - може се изменити",
   "tryAgain": "Покушајте поново",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Погледајте онлајн водич",
   "voluntaryTranslations": "Добровољни преводи",
-  "watchAdAndRefill": "Допуните гледањем огласа (+5 пута)",
+  "watchAdAndRefill": "Допуните гледањем огласа (+10 пута)",
   "welcomeButton": "Započni",
   "welcomeDesc": "Добродошли у Talkie! Подржавамо преко 80 језика широм света са 100% интегритетом, а нови премиум 3Д дизајн и оптимизоване перформансе пружају савршено искуство учења.",
   "welcomeTitle": "Dobro došli u Talkie!",

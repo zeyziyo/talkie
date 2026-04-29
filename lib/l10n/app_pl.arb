@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Język tłumaczenia",
   "translationLimitExceeded": "Przekroczono limit tłumaczeń",
-  "translationLimitMessage": "Wykorzystano dzienny limit darmowych tłumaczeń (5).\\n\\nCzy chcesz obejrzeć reklamę, aby natychmiast odnowić limit o 5?",
+  "translationLimitMessage": "Wykorzystano dzienny limit darmowych tłumaczeń (10).\\n\\nCzy chcesz obejrzeć reklamę, aby natychmiast odnowić limit o 10?",
   "translationLoaded": "Załadowano zapisane tłumaczenie",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Odnowiono limit tłumaczeń o 5!",
+  "translationRefilled": "Odnowiono limit tłumaczeń o 10!",
   "translationResult": "Wynik tłumaczenia",
   "translationResultHint": "Wynik tłumaczenia - możliwość edycji",
   "tryAgain": "Spróbuj Ponownie",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Wyświetl przewodnik online",
   "voluntaryTranslations": "Tłumaczenia użytkowników",
-  "watchAdAndRefill": "Obejrzyj reklamę i odnów limit (+5)",
+  "watchAdAndRefill": "Obejrzyj reklamę i odnów limit (+10)",
   "welcomeButton": "Zacznij",
   "welcomeDesc": "Witamy w Talkie! Obsługujemy ponad 80 języków z całego świata ze 100% integralnością. Nasz nowy, doskonały design 3D i zoptymalizowana wydajność zapewnią Ci idealne warunki do nauki.",
   "welcomeTitle": "Witaj w Talkie!",

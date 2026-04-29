@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Ulimi lokuhumusha",
   "translationLimitExceeded": "Umkhawulo Wokuhumusha Udluliwe",
-  "translationLimitMessage": "Usethe wonke umkhawulo wakho wokuhumusha wamahhala wansuku zonke (izikhathi ezingu-5).\\n\\Ungathanda ukugcwalisa izikhathi ezingu-5 ngokushesha ngokubuka isikhangiso?",
+  "translationLimitMessage": "Usethe wonke umkhawulo wakho wokuhumusha wamahhala wansuku zonke (izikhathi ezingu-10).\\n\\Ungathanda ukugcwalisa izikhathi ezingu-10 ngokushesha ngokubuka isikhangiso?",
   "translationLoaded": "Ukuhumusha okulondoloziwe kulayishiwe",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Inani lakho lokuhumusha ligcwaliswe izikhathi ezingu-5!",
+  "translationRefilled": "Inani lakho lokuhumusha ligcwaliswe izikhathi ezingu-10!",
   "translationResult": "Umphumela Wokuhumusha",
   "translationResultHint": "Umphumela wokuhumusha - uyahleleka",
   "tryAgain": "Zama Futhi",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Buka Umhlahlandlela Oku-inthanethi",
   "voluntaryTranslations": "Ukuhumusha kokuzithandela",
-  "watchAdAndRefill": "Buka Isikhangiso bese Ugcwalisa (+Izikhathi ezingu-5)",
+  "watchAdAndRefill": "Buka Isikhangiso bese Ugcwalisa (+Izikhathi ezingu-10)",
   "welcomeButton": "Qala",
   "welcomeDesc": "Siyakwamukela ku-Talkie! Sekela zonke izilimi ezingu-80+ emhlabeni wonke ngo-100% wobuqotho, kanye nomklamo omusha we-3D we-premium nokusebenza okuthuthukisiwe ukuze uthole ulwazi oluphelele lokufunda.",
   "welcomeTitle": "Siyakwamukela ku-Talkie!",

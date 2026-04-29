@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Tidak dapat menerjemahkan karena mengandung ujaran kebencian.",
   "errorOtherSafety": "Penerjemahan ditolak oleh kebijakan keamanan AI.",
+  "errorQuotaExceeded": "Kuota harian layanan AI telah habis. Silakan coba lagi nanti atau besok.",
+  "errorSafetyPolicy": "Terjemahan dibatasi karena kebijakan keamanan AI.",
+  "copyOriginal": "Salin Asli",
+  "originalCopied": "Teks asli telah disalin.",
   "errorProfanity": "Tidak dapat menerjemahkan karena mengandung kata-kata kotor.",
   "errorSelectCategory": "Pilih kata atau kalimat terlebih dahulu!",
   "errorSexualContent": "Tidak dapat menerjemahkan karena mengandung konten seksual.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Teks Asli",
   "saving": "Menyimpan...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Pilih gambar untuk dipindai",
+  "scanNoMatch": "Tidak dapat menemukan teks yang cocok dengan bahasa pembelajaran yang ditetapkan dalam foto. Periksa pengaturan bahasa Anda.",
   "scanNotSupported": "Bahasa ini tidak mendukung fitur pemindaian. OCR saat ini hanya mendukung karakter Latin, Tionghoa, Devanagari (Hindi, dll.), Jepang, dan Korea.",
   "scanLabel": "Pindai",
   "score": "Akurasi: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Bahasa Terjemahan",
   "translationLimitExceeded": "Batas terjemahan terlampaui",
-  "translationLimitMessage": "Anda telah menggunakan semua terjemahan gratis harian (5 kali).\\n\\nApakah Anda ingin menonton iklan untuk mengisi ulang 5 kali secara instan?",
+  "translationLimitMessage": "Anda telah menggunakan semua terjemahan gratis harian (10 kali).\\n\\nApakah Anda ingin menonton iklan untuk mengisi ulang 10 kali secara instan?",
   "translationLoaded": "Terjemahan tersimpan dimuat",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Jumlah terjemahan telah diisi ulang 5 kali!",
+  "translationRefilled": "Jumlah terjemahan telah diisi ulang 10 kali!",
   "translationResult": "Hasil Terjemahan",
   "translationResultHint": "Hasil Terjemahan - Dapat diedit",
   "tryAgain": "Coba Lagi",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Lihat Panduan Online",
   "voluntaryTranslations": "Terjemahan Sukarela",
-  "watchAdAndRefill": "Tonton Iklan dan Isi Ulang (+5 kali)",
+  "watchAdAndRefill": "Tonton Iklan dan Isi Ulang (+10 kali)",
   "welcomeButton": "Mulai",
   "welcomeDesc": "Selamat datang di Talkie! Mendukung lebih dari 80 bahasa di seluruh dunia dengan integritas 100%, menghadirkan pengalaman belajar yang sempurna dengan desain 3D premium baru dan kinerja yang dioptimalkan.",
   "welcomeTitle": "Selamat datang di Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Pertahankan markas Anda dengan mengucapkan kata-kata sebelum musuh tiba.",
   "wordDefenseTitle": "Pertahanan Kata",
   "wordModeLabel": "Mode Kata",
-  "yourPronunciation": "Lafal Anda"
+  "combinedResult": "Hasil Gabungan",
+  "errorLimitReached": "Jumlah terjemahan tidak mencukupi. Apakah Anda ingin menonton iklan untuk mengisi ulang 10 terjemahan?",
+  "yourPronunciation": "Lafal Anda",
+  "helpLimitDetails": "💡 [Panduan Batas Terjemahan]\n20 terjemahan gratis disediakan setiap hari pada tengah malam. Bahkan jika Anda menggunakan semuanya, Anda dapat segera mengisi ulang 10 terjemahan tambahan dengan menonton iklan.",
+  "scanDetails": "• Muat gambar dari kamera atau galeri untuk mengekstrak dan menerjemahkan teks.\n• Anda dapat mengetuk beberapa kalimat dalam satu foto untuk menerjemahkannya secara individual.\n• Jika Anda tidak memiliki cukup terjemahan, Anda dapat segera menonton iklan untuk mengisi ulang 10 terjemahan tambahan."
 }

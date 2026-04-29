@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Përkthimi nuk mund të bëhet sepse përmban gjuhë urrejtjeje.",
   "errorOtherSafety": "Përkthimi u refuzua nga politika e sigurisë së AI.",
+  "errorQuotaExceeded": "Kuota ditore për shërbimin e inteligjencës artificiale është harxhuar. Ju lutemi provoni përsëri pas pak ose nesër.",
+  "errorSafetyPolicy": "Përkthimi është i kufizuar për shkak të politikës së sigurisë së AI.",
+  "copyOriginal": "Kopjo origjinalin",
+  "originalCopied": "Teksti origjinal u kopjua.",
   "errorProfanity": "Përkthimi nuk mund të bëhet sepse përmban fjalë të pista.",
   "errorSelectCategory": "Ju lutemi zgjidhni së pari një fjalë ose fjali!",
   "errorSexualContent": "Përkthimi nuk mund të bëhet sepse përmban përmbajtje seksuale.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Teksti origjinal",
   "saving": "Duke ruajtur...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Zgjidhni imazhin për ta skanuar",
+  "scanNoMatch": "Nuk u gjet tekst në foto që përputhet me gjuhën e mësuar të caktuar. Ju lutemi, kontrolloni cilësimet e gjuhës.",
   "scanNotSupported": "Skanimi nuk mbështetet në këtë gjuhë. OCR aktualisht mbështet vetëm shkronjat latine, kineze, devanagari (p.sh. hindi), japoneze dhe koreane.",
   "scanLabel": "Skano",
   "score": "Saktësia: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Gjuha e përkthimit",
   "translationLimitExceeded": "Kufiri i përkthimit tejkalohet",
-  "translationLimitMessage": "Ju keni përdorur të gjitha përkthimet falas ditore (5 herë).\\n\\nA dëshironi të shikoni një reklamë dhe të rimbushni 5 herë menjëherë?",
+  "translationLimitMessage": "Ju keni përdorur të gjitha përkthimet falas ditore (10 herë).\\n\\nA dëshironi të shikoni një reklamë dhe të rimbushni 10 herë menjëherë?",
   "translationLoaded": "Përkthimi i ruajtur u ngarkua",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Numri i përkthimeve u rimbush 5 herë!",
+  "translationRefilled": "Numri i përkthimeve u rimbush 10 herë!",
   "translationResult": "Rezultati i përkthimit",
   "translationResultHint": "Rezultati i përkthimit - mund të modifikohet",
   "tryAgain": "Provoje përsëri",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Shikoni Udhëzuesin Online",
   "voluntaryTranslations": "Përkthime vullnetare",
-  "watchAdAndRefill": "Shikoni reklamën dhe rimbushni (+5 herë)",
+  "watchAdAndRefill": "Shikoni reklamën dhe rimbushni (+10 herë)",
   "welcomeButton": "Fillo",
   "welcomeDesc": "Mirë se vini në Talkie! Ne mbështesim 100% të gjitha gjuhët, mbi 80 gjithsej, me integritet të plotë dhe ju ofrojmë një përvojë të përsosur mësimi me dizajnin tonë të ri premium 3D dhe performancën e optimizuar.",
   "welcomeTitle": "Mirë se vini në Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Mbroni bazën duke thënë fjalët përpara se të mbërrijnë armiqtë.",
   "wordDefenseTitle": "Mbrojtja e fjalëve",
   "wordModeLabel": "Modaliteti i fjalës",
-  "yourPronunciation": "Shqiptimi juaj"
+  "combinedResult": "Rezultati i kombinuar",
+  "errorLimitReached": "Ju kanë mbaruar përkthimet. Dëshironi të shihni një reklamë për të marrë 10 përkthime shtesë?",
+  "yourPronunciation": "Shqiptimi juaj",
+  "helpLimitDetails": "💡 [Udhëzime për limitin e përkthimeve]\nÇdo ditë në mesnatë ofrohen 20 përkthime falas. Edhe nëse i harxhoni të gjitha, mund të shihni një reklamë për të marrë menjëherë 10 përkthime shtesë.",
+  "scanDetails": "• Importoni imazhe nga kamera ose galeria juaj për të nxjerrë dhe përkthyer tekst.\n• Mund të trokitni lehtë mbi fjalitë e shumta në një foto për t'i përkthyer ato individualisht.\n• Nëse ju kanë mbaruar përkthimet, mund të shihni menjëherë një reklamë për të marrë 10 përkthime shtesë."
 }

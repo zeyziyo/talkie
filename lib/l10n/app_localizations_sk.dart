@@ -167,16 +167,17 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Denný limit využitia AI služieb bol vyčerpaný. Skúste to znova neskôr alebo zajtra.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Preklad bol obmedzený z dôvodu bezpečnostných zásad AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Kopírovať originál';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Originálny text bol skopírovaný.';
 
   @override
   String get errorProfanity =>
@@ -794,7 +795,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get saved => 'Uložené';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Originálny text';
 
   @override
   String get saving => 'Ukladá sa...';
@@ -804,7 +805,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Na fotografii sa nenašiel text, ktorý by zodpovedal nastavenému jazyku. Skontrolujte nastavenia jazyka.';
 
   @override
   String get scanNotSupported =>
@@ -1048,13 +1049,13 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Využili ste všetky bezplatné denné preklady (5-krát).\\n\\nChcete si okamžite dobiť 5 prekladov sledovaním reklamy?';
+      'Využili ste všetky bezplatné denné preklady (10-krát).\\n\\nChcete si okamžite dobiť 10 prekladov sledovaním reklamy?';
 
   @override
   String get translationLoaded => 'Uložený preklad načítaný';
 
   @override
-  String get translationRefilled => 'Počet prekladov bol dobitý 5-krát!';
+  String get translationRefilled => 'Počet prekladov bol dobitý 10-krát!';
 
   @override
   String get translationResult => 'Výsledok prekladu';
@@ -1221,7 +1222,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get voluntaryTranslations => 'Dobrovoľné preklady';
 
   @override
-  String get watchAdAndRefill => 'Dobitie sledovaním reklamy (+5-krát)';
+  String get watchAdAndRefill => 'Dobitie sledovaním reklamy (+10-krát)';
 
   @override
   String get welcomeButton => 'Začať';
@@ -1247,8 +1248,20 @@ class AppLocalizationsSk extends AppLocalizations {
   String get wordModeLabel => 'Režim slov';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Kombinovaný výsledok';
+
+  @override
+  String get errorLimitReached =>
+      'Počet prekladov je nedostatočný. Chcete si pozrieť reklamu a získať 10 prekladov navyše?';
 
   @override
   String get yourPronunciation => 'Vaša výslovnosť';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Informácie o limite prekladov]\nKaždý deň je k dispozícii 20 bezplatných prekladov o polnoci. Ak ich vyčerpáte, môžete si pozrieť reklamu a okamžite získať ďalších 10 prekladov.';
+
+  @override
+  String get scanDetails =>
+      '• Importujte obrázky z fotoaparátu alebo galérie, extrahujte text a preložte ho.\n• Môžete ťuknutím preložiť jednotlivé vety zahrnuté v jednej fotografii.\n• Ak je počet prekladov nedostatočný, môžete si okamžite pozrieť reklamu a získať 10 prekladov navyše.';
 }

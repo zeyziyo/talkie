@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Nifrət nitqi ehtiva etdiyi üçün tərcümə edilə bilməz.",
   "errorOtherSafety": "Süni intellekt təhlükəsizlik siyasəti səbəbi ilə tərcümə rədd edildi.",
+  "errorQuotaExceeded": "Süni intellekt xidmətinin gündəlik limiti bitdi. Zəhmət olmasa, bir az sonra və ya sabah yenidən cəhd edin.",
+  "errorSafetyPolicy": "Süni intellekt təhlükəsizlik siyasətinə görə tərcümə məhdudlaşdırılıb.",
+  "copyOriginal": "Orijinalı kopyala",
+  "originalCopied": "Orijinal mətn kopyalandı.",
   "errorProfanity": "Təhqiramiz ifadələr ehtiva etdiyi üçün tərcümə edilə bilməz.",
   "errorSelectCategory": "Əvvəlcə söz və ya cümlə seçin!",
   "errorSexualContent": "Cinsi məzmun ehtiva etdiyi üçün tərcümə edilə bilməz.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Orijinal mətn",
   "saving": "Saxlanılır...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Skan etmək üçün bir şəkil seçin",
+  "scanNoMatch": "Şəkildə təyin edilmiş təlim dili ilə uyğun gələn mətn tapılmadı. Dil parametrlərinizi yoxlayın.",
   "scanNotSupported": "Bu dil skan funksiyasını dəstəkləmir. OCR hazırda yalnız Latın, Çin, Devanagari (Hindi və s.), Yapon, Koreya əlifbalarını dəstəkləyir.",
   "scanLabel": "Skan et",
   "score": "Dəqiqlik: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Tərcümə dili",
   "translationLimitExceeded": "Tərcümə limiti aşıldı",
-  "translationLimitMessage": "Gündəlik pulsuz tərcümələrinizdən (5 dəfə) istifadə etdiniz.\\n\\nReklama baxaraq dərhal 5 dəfə doldurmaq istəyirsiniz?",
+  "translationLimitMessage": "Gündəlik pulsuz tərcümələrinizdən (10 dəfə) istifadə etdiniz.\\n\\nReklama baxaraq dərhal 10 dəfə doldurmaq istəyirsiniz?",
   "translationLoaded": "Saxlanılan tərcümə yükləndi",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Tərcümə sayı 5 dəfə dolduruldu!",
+  "translationRefilled": "Tərcümə sayı 10 dəfə dolduruldu!",
   "translationResult": "Tərcümə nəticəsi",
   "translationResultHint": "Tərcümə nəticəsi - redaktə edilə bilər",
   "tryAgain": "Yenidən Cəhd Edin",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Onlayn Bələdçiyə Bax",
   "voluntaryTranslations": "Könüllü tərcümələr",
-  "watchAdAndRefill": "Reklama baxaraq doldurun (+5 dəfə)",
+  "watchAdAndRefill": "Reklama baxaraq doldurun (+10 dəfə)",
   "welcomeButton": "Başla",
   "welcomeDesc": "Talkie-yə xoş gəlmisiniz! Dünyada 80-dən çox dili 100% sədaqətlə dəstəkləyirik və yeni premium 3D dizaynı və optimallaşdırılmış performansı ilə mükəmməl öyrənmə təcrübəsi təqdim edirik.",
   "welcomeTitle": "Talkie-yə xoş gəlmisiniz!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Düşmənlər gəlmədən sözləri deyərək bazanı müdafiə edin.",
   "wordDefenseTitle": "Söz Müdafiəsi",
   "wordModeLabel": "Söz Rejimi",
-  "yourPronunciation": "Mənim Tələffüzüm"
+  "combinedResult": "Birləşdirilmiş nəticə",
+  "errorLimitReached": "Tərcümə sayınız bitdi. Reklama baxaraq 10 tərcümə əldə etmək istəyirsiniz?",
+  "yourPronunciation": "Mənim Tələffüzüm",
+  "helpLimitDetails": "💡 [Tərcümə limiti]\nHər gün saat 00:00-da 20 pulsuz tərcümə verilir. Hamısı bitsə belə, reklama baxmaqla dərhal 10 əlavə tərcümə əldə edə bilərsiniz.",
+  "scanDetails": "• Kamera və ya qalereyadan şəkil yükləyərək mətni çıxarın və tərcümə edin.\n• Bir şəkildə olan bir neçə cümləyə toxunaraq ayrı-ayrılıqda tərcümə edə bilərsiniz.\n• Tərcümə sayınız azdırsa, dərhal reklama baxaraq 10 əlavə tərcümə əldə edə bilərsiniz."
 }

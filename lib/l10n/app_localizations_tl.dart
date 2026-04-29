@@ -169,16 +169,17 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Naubos na ang iyong pang-araw-araw na quota para sa serbisyo ng AI. Subukan muli mamaya o bukas.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Pinaghihigpitan ang pagsasalin dahil sa patakaran sa kaligtasan ng AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Kopyahin ang Orihinal';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Nakopya na ang orihinal na teksto.';
 
   @override
   String get errorProfanity =>
@@ -798,7 +799,7 @@ class AppLocalizationsTl extends AppLocalizations {
   String get saved => 'Na-save';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Orihinal na Teksto';
 
   @override
   String get saving => 'Nagse-save...';
@@ -808,7 +809,7 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Walang nakitang tekstong tumutugma sa napiling wika ng pag-aaral sa larawan. Suriin ang iyong mga setting ng wika.';
 
   @override
   String get scanNotSupported =>
@@ -1054,14 +1055,14 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Naubos mo na ang lahat ng libreng pagsasalin sa araw na ito (5 beses).\\n\\nManood ng ad para agad na mapunan ang 5 beses?';
+      'Naubos mo na ang lahat ng libreng pagsasalin sa araw na ito (10 beses).\\n\\nManood ng ad para agad na mapunan ang 10 beses?';
 
   @override
   String get translationLoaded => 'Na-load ang Naka-save na Pagsasalin';
 
   @override
   String get translationRefilled =>
-      'Napunan na ang bilang ng pagsasalin nang 5 beses!';
+      'Napunan na ang bilang ng pagsasalin nang 10 beses!';
 
   @override
   String get translationResult => 'Resulta ng Pagsasalin';
@@ -1233,7 +1234,7 @@ class AppLocalizationsTl extends AppLocalizations {
   String get voluntaryTranslations => 'Boluntaryong Pagsasalin';
 
   @override
-  String get watchAdAndRefill => 'Manood ng Ad at Punan (+5 beses)';
+  String get watchAdAndRefill => 'Manood ng Ad at Punan (+10 beses)';
 
   @override
   String get welcomeButton => 'Magsimula';
@@ -1259,8 +1260,20 @@ class AppLocalizationsTl extends AppLocalizations {
   String get wordModeLabel => 'Word Mode';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Pinagsamang Resulta';
+
+  @override
+  String get errorLimitReached =>
+      'Wala ka nang natitirang pagsasalin. Gusto mo bang manood ng ad para makakuha ng 10 dagdag na pagsasalin?';
 
   @override
   String get yourPronunciation => 'Ang Pagbigkas Mo';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Impormasyon sa Limitasyon ng Pagsasalin]\nMay 20 libreng pagsasalin na ibinibigay araw-araw sa hatinggabi. Kung naubos mo na ang lahat, maaari kang manood ng ad para agad na makakuha ng 10 dagdag na pagsasalin.';
+
+  @override
+  String get scanDetails =>
+      '• Mag-upload ng mga larawan mula sa camera o gallery upang kunin at isalin ang teksto.\n• Maaari mong i-tap ang iba\'t ibang pangungusap sa isang larawan upang isalin ang mga ito nang isa-isa.\n• Kung wala ka nang natitirang pagsasalin, maaari kang manood ng ad para agad na makakuha ng 10 dagdag.';
 }

@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Obsahuje nenávistné prejavy a nie je možné ho preložiť.",
   "errorOtherSafety": "Preklad bol odmietnutý z dôvodu zásad bezpečnosti AI.",
+  "errorQuotaExceeded": "Denný limit využitia AI služieb bol vyčerpaný. Skúste to znova neskôr alebo zajtra.",
+  "errorSafetyPolicy": "Preklad bol obmedzený z dôvodu bezpečnostných zásad AI.",
+  "copyOriginal": "Kopírovať originál",
+  "originalCopied": "Originálny text bol skopírovaný.",
   "errorProfanity": "Obsahuje vulgárne výrazy a nie je možné ho preložiť.",
   "errorSelectCategory": "Najprv vyberte slovo alebo vetu!",
   "errorSexualContent": "Obsahuje sexuálny obsah a nie je možné ho preložiť.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Originálny text",
   "saving": "Ukladá sa...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Vyberte obrázok na skenovanie",
+  "scanNoMatch": "Na fotografii sa nenašiel text, ktorý by zodpovedal nastavenému jazyku. Skontrolujte nastavenia jazyka.",
   "scanNotSupported": "Tento jazyk nepodporuje funkciu skenovania. OCR v súčasnosti podporuje iba latinské, čínske, dévanágarske (hindčina atď.), japonské a kórejské znaky.",
   "scanLabel": "Skenovať",
   "score": "Presnosť: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Jazyk prekladu",
   "translationLimitExceeded": "Prekročený limit prekladu",
-  "translationLimitMessage": "Využili ste všetky bezplatné denné preklady (5-krát).\\n\\nChcete si okamžite dobiť 5 prekladov sledovaním reklamy?",
+  "translationLimitMessage": "Využili ste všetky bezplatné denné preklady (10-krát).\\n\\nChcete si okamžite dobiť 10 prekladov sledovaním reklamy?",
   "translationLoaded": "Uložený preklad načítaný",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Počet prekladov bol dobitý 5-krát!",
+  "translationRefilled": "Počet prekladov bol dobitý 10-krát!",
   "translationResult": "Výsledok prekladu",
   "translationResultHint": "Výsledok prekladu - upraviteľný",
   "tryAgain": "Skúste znova",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Zobraziť online príručku",
   "voluntaryTranslations": "Dobrovoľné preklady",
-  "watchAdAndRefill": "Dobitie sledovaním reklamy (+5-krát)",
+  "watchAdAndRefill": "Dobitie sledovaním reklamy (+10-krát)",
   "welcomeButton": "Začať",
   "welcomeDesc": "Vitajte v Talkie! Podporujeme viac ako 80 jazykov z celého sveta so 100% integritou a prinášame dokonalý zážitok z učenia s novým prémiovým 3D dizajnom a optimalizovaným výkonom.",
   "welcomeTitle": "Vitajte v Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Bráňte základňu vyslovením slov predtým, ako dorazí nepriateľ.",
   "wordDefenseTitle": "Slovná obrana",
   "wordModeLabel": "Režim slov",
-  "yourPronunciation": "Vaša výslovnosť"
+  "combinedResult": "Kombinovaný výsledok",
+  "errorLimitReached": "Počet prekladov je nedostatočný. Chcete si pozrieť reklamu a získať 10 prekladov navyše?",
+  "yourPronunciation": "Vaša výslovnosť",
+  "helpLimitDetails": "💡 [Informácie o limite prekladov]\nKaždý deň je k dispozícii 20 bezplatných prekladov o polnoci. Ak ich vyčerpáte, môžete si pozrieť reklamu a okamžite získať ďalších 10 prekladov.",
+  "scanDetails": "• Importujte obrázky z fotoaparátu alebo galérie, extrahujte text a preložte ho.\n• Môžete ťuknutím preložiť jednotlivé vety zahrnuté v jednej fotografii.\n• Ak je počet prekladov nedostatočný, môžete si okamžite pozrieť reklamu a získať 10 prekladov navyše."
 }

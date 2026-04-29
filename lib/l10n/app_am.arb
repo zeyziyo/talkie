@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "የጥላቻ ንግግርን ስላካተተ መተርጎም አይቻልም።",
   "errorOtherSafety": "በ AI ደህንነት መመሪያ ምክንያት ትርጉም ውድቅ ተደርጓል።",
+  "errorQuotaExceeded": "የ AI አገልግሎት ዕለታዊ ድልድል አልቋል። እባክዎ ቆይተው ወይም ነገ እንደገና ይሞክሩ።",
+  "errorSafetyPolicy": "ትርጉም በ AI ደህንነት ፖሊሲ ምክንያት ተገድቧል።",
+  "copyOriginal": "ዋናውን ቅዳ",
+  "originalCopied": "ዋናው ጽሑፍ ተቀድቷል።",
   "errorProfanity": "ብልግናን ስላካተተ መተርጎም አይቻልም።",
   "errorSelectCategory": "መጀመሪያ ቃል ወይም ዓረፍተ ነገር ይምረጡ!",
   "errorSexualContent": "የወሲብ ይዘትን ስላካተተ መተርጎም አይቻልም።",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "ዋና ጽሑፍ",
   "saving": "በማስቀመጥ ላይ...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "ለመቃኘት ምስል ይምረጡ",
+  "scanNoMatch": "በፎቶው ውስጥ ከተቀመጠው የትምህርት ቋንቋ ጋር የሚዛመድ ጽሑፍ ማግኘት አልተቻለም። የቋንቋ ቅንብሮችዎን ያረጋግጡ።",
   "scanNotSupported": "ይህ ቋንቋ የቃኚ መገልገያ ባህሪን አይደግፍም። OCR በአሁኑ ጊዜ የላቲን፣ ቻይንኛ፣ ዴቫናጋሪ (ሂንዲ ወዘተ)፣ ጃፓንኛ እና ኮሪያኛ ፊደላትን ብቻ ነው የሚደግፈው።",
   "scanLabel": "ይቃኙ",
   "score": "ትክክለኛነት: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "የትርጉም ቋንቋ",
   "translationLimitExceeded": "የትርጉም ገደብ አልፏል",
-  "translationLimitMessage": "ያሉትን በየቀኑ ነፃ ትርጉሞች (5 ጊዜ) በሙሉ ተጠቅመዋል።\\n\\nማስታወቂያ በመመልከት 5 ጊዜዎችን ወዲያውኑ መሙላት ይፈልጋሉ?",
+  "translationLimitMessage": "ያሉትን በየቀኑ ነፃ ትርጉሞች (10 ጊዜ) በሙሉ ተጠቅመዋል።\\n\\nማስታወቂያ በመመልከት 10 ጊዜዎችን ወዲያውኑ መሙላት ይፈልጋሉ?",
   "translationLoaded": "የተቀመጠ ትርጉም ተጭኗል",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "የትርጉም ብዛት 5 ጊዜ ተሞልቷል!",
+  "translationRefilled": "የትርጉም ብዛት 10 ጊዜ ተሞልቷል!",
   "translationResult": "የትርጉም ውጤት",
   "translationResultHint": "የትርጉም ውጤት - ሊስተካከል የሚችል",
   "tryAgain": "እንደገና ይሞክሩ",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "የመስመር ላይ መመሪያ ይመልከቱ",
   "voluntaryTranslations": "በፍቃደኝነት የተተረጎሙ",
-  "watchAdAndRefill": "ማስታወቂያ በመመልከት (+5 ጊዜ) ይሙሉ።",
+  "watchAdAndRefill": "ማስታወቂያ በመመልከት (+10 ጊዜ) ይሙሉ።",
   "welcomeButton": "ይጀምሩ",
   "welcomeDesc": "ወደ ቶኪ እንኳን ደህና መጡ! ከ 80 በላይ የሆኑ ሁሉንም ቋንቋዎች በ 100% ታማኝነት እንደግፋለን፣ እና በአዲሱ የፕሪሚየም 3D ዲዛይን እና በተሻሻለ አፈጻጸም ፍጹም የመማር ልምድን እናቀርባለን።",
   "welcomeTitle": "ወደ Talkie እንኳን በደህና መጡ!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "ጠላት ከመድረሱ በፊት ቃሉን በመናገር ጣቢያዎን ይከላከሉ።",
   "wordDefenseTitle": "የቃል መከላከያ",
   "wordModeLabel": "የቃል ሁነታ",
-  "yourPronunciation": "የእርስዎ አጠራር"
+  "combinedResult": "የተዋሃደ ውጤት",
+  "errorLimitReached": "የትርጉም ሙከራዎችዎ አልቀዋል። ማስታወቂያ በመመልከት 10 ሙከራዎችን መሙላት ይፈልጋሉ?",
+  "yourPronunciation": "የእርስዎ አጠራር",
+  "helpLimitDetails": "💡 [የትርጉም ገደብ መመሪያ]\nበየእለቱ እኩለ ሌሊት ላይ 20 ነፃ ትርጉሞች ይሰጣሉ። ሁሉንም ከጨረሱ ማስታወቂያ በመመልከት ወዲያውኑ 10 ተጨማሪ ትርጉሞችን መሙላት ይችላሉ።",
+  "scanDetails": "• ምስሎችን ከካሜራ ወይም ከማዕከለ-ስዕላት ያስመጡ እና ጽሑፍን ያውጡ እና ይተርጉሙ።\n• በአንድ ፎቶ ውስጥ የተካተቱ በርካታ ዓረፍተ ነገሮችን በመንካት በተናጠል መተርጎም ይችላሉ።\n• የትርጉም ሙከራዎችዎ ካለቁ ማስታወቂያዎችን በመመልከት ወዲያውኑ 10 ሙከራዎችን ማከል ይችላሉ።"
 }

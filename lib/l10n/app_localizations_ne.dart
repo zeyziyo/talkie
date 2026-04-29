@@ -166,16 +166,17 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'कृत्रिम बुद्धिमत्ता सेवाको लागि दैनिक कोटा समाप्त भयो। कृपया केही समय पछि वा भोलि पुन: प्रयास गर्नुहोस्।';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'AI सुरक्षा नीतिका कारण अनुवाद सीमित गरिएको छ।';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'मूल प्रतिलिपि गर्नुहोस्';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'मूल पाठ प्रतिलिपि गरियो।';
 
   @override
   String get errorProfanity =>
@@ -791,7 +792,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get saved => 'सुरक्षित गरियो';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'मूल पाठ';
 
   @override
   String get saving => 'सुरक्षित गर्दै...';
@@ -801,7 +802,7 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'तस्बिरमा सेट गरिएको सिकाइ भाषासँग मिल्दो पाठ फेला परेन। कृपया भाषा सेटिङ जाँच गर्नुहोस्।';
 
   @override
   String get scanNotSupported =>
@@ -1045,13 +1046,13 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'दैनिक निःशुल्क अनुवाद (5 पटक) सबै प्रयोग गरिसक्नुभयो।\\n\\nविज्ञापन हेरेर तुरुन्तै ५ पटक भर्न चाहनुहुन्छ?';
+      'दैनिक निःशुल्क अनुवाद (10 पटक) सबै प्रयोग गरिसक्नुभयो।\\n\\nविज्ञापन हेरेर तुरुन्तै १० पटक भर्न चाहनुहुन्छ?';
 
   @override
   String get translationLoaded => 'सुरक्षित गरिएको अनुवाद लोड गरियो';
 
   @override
-  String get translationRefilled => 'अनुवादको सङ्ख्या ५ पटक भरिएको छ!';
+  String get translationRefilled => 'अनुवादको सङ्ख्या १० पटक भरिएको छ!';
 
   @override
   String get translationResult => 'अनुवाद परिणाम';
@@ -1222,7 +1223,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get voluntaryTranslations => 'स्वैच्छिक अनुवादहरू';
 
   @override
-  String get watchAdAndRefill => 'विज्ञापन हेरेर भर्नुहोस् (+5 पटक)';
+  String get watchAdAndRefill => 'विज्ञापन हेरेर भर्नुहोस् (+10 पटक)';
 
   @override
   String get welcomeButton => 'سुरु गर्नुहोस्';
@@ -1248,8 +1249,20 @@ class AppLocalizationsNe extends AppLocalizations {
   String get wordModeLabel => 'शब्द मोड';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'एकीकृत परिणाम';
+
+  @override
+  String get errorLimitReached =>
+      'अनुवाद संख्या अपर्याप्त छ। के तपाईं विज्ञापन हेरेर १० पटक रिचार्ज गर्न चाहनुहुन्छ?';
 
   @override
   String get yourPronunciation => 'मेरो उच्चारण';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [अनुवाद सीमा गाइड]\nप्रत्येक दिन मध्यरातमा २० नि: शुल्क अनुवादहरू उपलब्ध छन्। यदि तपाईंले सबै प्रयोग गर्नुभयो भने, तपाईंले विज्ञापन हेरेर तुरुन्तै १० थप अनुवादहरू रिचार्ज गर्न सक्नुहुन्छ।';
+
+  @override
+  String get scanDetails =>
+      '• क्यामेरा वा ग्यालरीबाट छविहरू आयात गरेर पाठ निकाल्नुहोस् र अनुवाद गर्नुहोस्।\n• तपाईंले एउटा तस्बिरमा भएका धेरै वाक्यहरूलाई व्यक्तिगत रूपमा अनुवाद गर्न ट्याप गर्न सक्नुहुन्छ।\n• यदि अनुवादहरूको संख्या अपर्याप्त छ भने, तपाईं तुरुन्तै विज्ञापन हेरेर थप १० थप्न सक्नुहुन्छ।';
 }

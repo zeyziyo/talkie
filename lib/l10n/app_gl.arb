@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Non se pode traducir porque contén incitación ao odio.",
   "errorOtherSafety": "A tradución foi denegada pola política de seguridade da IA.",
+  "errorQuotaExceeded": "Esgotouse a cota diaria do servizo de intelixencia artificial. Inténtao de novo máis tarde ou mañá.",
+  "errorSafetyPolicy": "A tradución está limitada debido á política de seguranza da IA.",
+  "copyOriginal": "Copiar orixinal",
+  "originalCopied": "O texto orixinal foi copiado.",
   "errorProfanity": "Non se pode traducir porque contén blasfemias.",
   "errorSelectCategory": "Primeiro selecciona unha palabra ou unha frase!",
   "errorSexualContent": "Non se pode traducir porque contén contido sexual.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Texto orixinal",
   "saving": "Gardando...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Selecciona unha imaxe para dixitalizar",
+  "scanNoMatch": "Non se atopou ningún texto na foto que coincida co idioma de aprendizaxe configurado. Comproba a configuración do idioma.",
   "scanNotSupported": "Esta lingua non admite a función de dixitalización. Actualmente, o OCR só é compatible con caracteres latinos, chineses, devanágari (como hindi), xaponeses e coreanos.",
   "scanLabel": "Dixitalizar",
   "score": "Precisión: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Idioma de tradución",
   "translationLimitExceeded": "Superouse o límite de tradución",
-  "translationLimitMessage": "Usaches todas as traducións gratuítas diarias (5 veces).\\n\\nQueres ver un anuncio e recargar 5 veces ao instante?",
+  "translationLimitMessage": "Usaches todas as traducións gratuítas diarias (10 veces).\\n\\nQueres ver un anuncio e recargar 10 veces ao instante?",
   "translationLoaded": "Tradución gardada cargada",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "O número de traducións recargouse 5 veces!",
+  "translationRefilled": "O número de traducións recargouse 10 veces!",
   "translationResult": "Resultado da tradución",
   "translationResultHint": "Resultado da tradución - editable",
   "tryAgain": "Téntao de novo",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Ver guía en liña",
   "voluntaryTranslations": "Traducións voluntarias",
-  "watchAdAndRefill": "Ver anuncio e recargar (+5 veces)",
+  "watchAdAndRefill": "Ver anuncio e recargar (+10 veces)",
   "welcomeButton": "Comezar",
   "welcomeDesc": "Benvido a Talkie! Admite máis de 80 idiomas de todo o mundo cunha integridade do 100 %, cun novo deseño 3D premium e un rendemento optimizado para unha experiencia de aprendizaxe perfecta.",
   "welcomeTitle": "Benvido a Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Defende a base dicindo a palabra antes de que chegue o inimigo.",
   "wordDefenseTitle": "Defensa de palabras",
   "wordModeLabel": "Modo palabra",
-  "yourPronunciation": "A túa pronuncia"
+  "combinedResult": "Resultado combinado",
+  "errorLimitReached": "Non tes suficientes traducións. Queres ver un anuncio para recargar 10 veces?",
+  "yourPronunciation": "A túa pronuncia",
+  "helpLimitDetails": "💡 [Guía de límites de tradución]\nOfrécense 20 traducións gratuítas todos os días á medianoite. Aínda que os esgotes todos, podes ver un anuncio para recargar inmediatamente 10 traducións adicionais.",
+  "scanDetails": "• Importa imaxes da cámara ou galería para extraer e traducir texto.\n• Podes tocar varias frases nunha soa foto para tradutilas individualmente.\n• Se non tes suficientes traducións, podes ver un anuncio inmediatamente para recargar 10 adicionais."
 }

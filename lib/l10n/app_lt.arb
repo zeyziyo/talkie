@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Vertimo kalba",
   "translationLimitExceeded": "Viršytas vertimo limitas",
-  "translationLimitMessage": "Išnaudojote visus nemokamus dienos vertimus (5 kartus).\\n\\nAr norite peržiūrėti skelbimą ir iš karto papildyti 5 kartus?",
+  "translationLimitMessage": "Išnaudojote visus nemokamus dienos vertimus (10 kartus).\\n\\nAr norite peržiūrėti skelbimą ir iš karto papildyti 10 kartus?",
   "translationLoaded": "Įkeltas išsaugotas vertimas",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Vertimų skaičius papildytas 5 kartus!",
+  "translationRefilled": "Vertimų skaičius papildytas 10 kartus!",
   "translationResult": "Vertimo rezultatas",
   "translationResultHint": "Vertimo rezultatas - galima redaguoti",
   "tryAgain": "Pabandykite dar kartą",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Peržiūrėti internetinį gidą",
   "voluntaryTranslations": "Savanoriški vertimai",
-  "watchAdAndRefill": "Žiūrėti skelbimą ir papildyti (+5 kartus)",
+  "watchAdAndRefill": "Žiūrėti skelbimą ir papildyti (+10 kartus)",
   "welcomeButton": "Pradėti",
   "welcomeDesc": "Sveiki atvykę į Talkie! Palaikome daugiau nei 80 kalbų visame pasaulyje su 100 % vientisumu, o naujas aukščiausios kokybės 3D dizainas ir optimizuotas našumas užtikrina nepriekaištingą mokymosi patirtį.",
   "welcomeTitle": "Sveiki atvykę į Talkie!",

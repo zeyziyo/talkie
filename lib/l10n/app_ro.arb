@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Nu se poate traduce deoarece conține discurs instigator la ură.",
   "errorOtherSafety": "Traducerea a fost refuzată de politica de siguranță AI.",
+  "errorQuotaExceeded": "Cota zilnică pentru serviciul de inteligență artificială a fost epuizată. Vă rugăm să încercați din nou mai târziu sau mâine.",
+  "errorSafetyPolicy": "Traducerea a fost restricționată din cauza politicii de siguranță AI.",
+  "copyOriginal": "Copiază originalul",
+  "originalCopied": "Textul original a fost copiat.",
   "errorProfanity": "Nu se poate traduce deoarece conține cuvinte obscene.",
   "errorSelectCategory": "Selectează mai întâi un cuvânt sau o propoziție!",
   "errorSexualContent": "Nu se poate traduce deoarece conține conținut sexual explicit.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Text original",
   "saving": "Salvare...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Selectați o imagine de scanat",
+  "scanNoMatch": "Nu s-a găsit text care să corespundă limbii de învățare setate în fotografie. Verificați setările de limbă.",
   "scanNotSupported": "Scanarea nu este acceptată pentru această limbă. OCR suportă în prezent doar caractere latine, chineze, devanagari (cum ar fi hindi), japoneze și coreene.",
   "scanLabel": "Scanează",
   "score": "Acuratețe: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Limbă de traducere",
   "translationLimitExceeded": "Limită de traducere depășită",
-  "translationLimitMessage": "Ai folosit toate traducerile gratuite zilnice (5).\\n\\nVrei să vizionezi un anunț pentru a reîncărca imediat 5?",
+  "translationLimitMessage": "Ai folosit toate traducerile gratuite zilnice (10).\\n\\nVrei să vizionezi un anunț pentru a reîncărca imediat 10?",
   "translationLoaded": "Traducere salvată încărcată",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Numărul de traduceri a fost reîncărcat cu 5!",
+  "translationRefilled": "Numărul de traduceri a fost reîncărcat cu 10!",
   "translationResult": "Rezultatul traducerii",
   "translationResultHint": "Rezultatul traducerii - poate fi modificat",
   "tryAgain": "Încearcă din nou",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Vezi ghidul online",
   "voluntaryTranslations": "Traduceri voluntare",
-  "watchAdAndRefill": "Vezi un anunț și reîncarcă (+5)",
+  "watchAdAndRefill": "Vezi un anunț și reîncarcă (+10)",
   "welcomeButton": "Începe",
   "welcomeDesc": "Bine ați venit la Talkie! Acceptăm peste 80 de limbi din întreaga lume cu integritate 100% și oferim o experiență de învățare perfectă cu un nou design 3D premium și performanțe optimizate.",
   "welcomeTitle": "Bun venit la Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Spune cuvintele pentru a apăra baza înainte ca inamicii să ajungă.",
   "wordDefenseTitle": "Apărarea cuvintelor",
   "wordModeLabel": "Mod cuvânt",
-  "yourPronunciation": "Pronunția ta"
+  "combinedResult": "Rezultat combinat",
+  "errorLimitReached": "Nu mai aveți încercări de traducere. Doriți să vizionați un anunț pentru a reîncărca 10 încercări?",
+  "yourPronunciation": "Pronunția ta",
+  "helpLimitDetails": "💡 [Ghid privind limita de traduceri]\nÎn fiecare zi la miezul nopții sunt oferite 20 de traduceri gratuite. Dacă le epuizați pe toate, puteți viziona un anunț pentru a reîncărca imediat 10 traduceri suplimentare.",
+  "scanDetails": "• Importați imagini din cameră sau galerie pentru a extrage și traduce text.\n• Puteți atinge mai multe propoziții dintr-o singură fotografie pentru a le traduce individual.\n• Dacă nu mai aveți încercări de traducere, puteți viziona imediat un anunț pentru a reîncărca 10 încercări suplimentare."
 }

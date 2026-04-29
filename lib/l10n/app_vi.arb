@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Không thể dịch vì chứa nội dung kích động thù hận.",
   "errorOtherSafety": "Bản dịch bị từ chối theo chính sách an toàn AI.",
+  "errorQuotaExceeded": "Bạn đã dùng hết hạn ngạch hằng ngày của dịch vụ AI. Vui lòng thử lại sau hoặc vào ngày mai.",
+  "errorSafetyPolicy": "Bản dịch bị giới hạn do chính sách an toàn AI.",
+  "copyOriginal": "Sao chép bản gốc",
+  "originalCopied": "Đã sao chép văn bản gốc.",
   "errorProfanity": "Không thể dịch vì chứa từ ngữ tục tĩu.",
   "errorSelectCategory": "Vui lòng chọn từ hoặc câu trước!",
   "errorSexualContent": "Không thể dịch vì chứa nội dung khiêu dâm.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Văn bản gốc",
   "saving": "Đang lưu...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Chọn ảnh để quét",
+  "scanNoMatch": "Không tìm thấy văn bản nào trong ảnh khớp với ngôn ngữ học đã đặt. Vui lòng kiểm tra cài đặt ngôn ngữ của bạn.",
   "scanNotSupported": "Ngôn ngữ này không hỗ trợ chức năng quét. OCR hiện chỉ hỗ trợ các ký tự Latinh, tiếng Trung, Devanagari (ví dụ: tiếng Hindi), tiếng Nhật và tiếng Hàn.",
   "scanLabel": "Quét",
   "score": "Độ chính xác: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Ngôn ngữ dịch",
   "translationLimitExceeded": "Đã vượt quá giới hạn dịch",
-  "translationLimitMessage": "Bạn đã sử dụng hết lượt dịch miễn phí hàng ngày (5 lần).\\n\\nBạn có muốn xem quảng cáo để nạp ngay 5 lượt không?",
+  "translationLimitMessage": "Bạn đã sử dụng hết lượt dịch miễn phí hàng ngày (10 lần).\\n\\nBạn có muốn xem quảng cáo để nạp ngay 10 lượt không?",
   "translationLoaded": "Đã tải bản dịch đã lưu",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Bạn đã được nạp 5 lượt dịch!",
+  "translationRefilled": "Bạn đã được nạp 10 lượt dịch!",
   "translationResult": "Kết quả dịch",
   "translationResultHint": "Kết quả dịch - Có thể chỉnh sửa",
   "tryAgain": "Thử lại",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Xem hướng dẫn trực tuyến",
   "voluntaryTranslations": "Bản dịch đóng góp",
-  "watchAdAndRefill": "Xem quảng cáo để nạp (+5 lượt)",
+  "watchAdAndRefill": "Xem quảng cáo để nạp (+10 lượt)",
   "welcomeButton": "Bắt đầu",
   "welcomeDesc": "Chào mừng bạn đến với Talkie! Chúng tôi hỗ trợ hơn 80 ngôn ngữ trên toàn thế giới với độ chính xác 100%, cùng với thiết kế 3D cao cấp mới và hiệu suất tối ưu hóa để mang lại trải nghiệm học tập hoàn hảo.",
   "welcomeTitle": "Chào mừng bạn đến với Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Nói từ trước khi kẻ thù đến để bảo vệ căn cứ.",
   "wordDefenseTitle": "Phòng thủ từ vựng",
   "wordModeLabel": "Chế độ từ",
-  "yourPronunciation": "Phát âm của bạn"
+  "combinedResult": "Kết quả tổng hợp",
+  "errorLimitReached": "Bạn đã hết lượt dịch. Bạn có muốn xem quảng cáo để nạp thêm 10 lượt không?",
+  "yourPronunciation": "Phát âm của bạn",
+  "helpLimitDetails": "💡 [Hướng dẫn về giới hạn dịch]\nBạn được cung cấp 20 lượt dịch miễn phí mỗi ngày vào lúc nửa đêm. Nếu bạn dùng hết, bạn có thể xem quảng cáo để nạp ngay 10 lượt dịch.",
+  "scanDetails": "• Tải ảnh lên từ máy ảnh hoặc thư viện để trích xuất và dịch văn bản.\n• Bạn có thể nhấn vào nhiều câu trong một ảnh để dịch riêng.\n• Nếu bạn hết lượt dịch, bạn có thể xem quảng cáo để nạp thêm 10 lượt."
 }

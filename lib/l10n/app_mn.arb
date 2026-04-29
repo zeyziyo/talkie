@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Орчуулгын хэл",
   "translationLimitExceeded": "Орчуулгын хязгаар хэтэрсэн",
-  "translationLimitMessage": "Өдөрт үнэгүй орчуулга (5 удаа) дууссан байна.\\n\\nЗар үзэж 5 удааг нэн даруй цэнэглэх үү?",
+  "translationLimitMessage": "Өдөрт үнэгүй орчуулга (10 удаа) дууссан байна.\\n\\nЗар үзэж 10 удааг нэн даруй цэнэглэх үү?",
   "translationLoaded": "Хадгалсан орчуулгыг орууллаа",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Орчуулгын тоо 5-аар цэнэглэгдлээ!",
+  "translationRefilled": "Орчуулгын тоо 10-аар цэнэглэгдлээ!",
   "translationResult": "Орчуулгын үр дүн",
   "translationResultHint": "Орчуулгын үр дүн - засварлах боломжтой",
   "tryAgain": "Дахин оролдох",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Онлайн гарын авлага үзэх",
   "voluntaryTranslations": "Сайн дурын орчуулга",
-  "watchAdAndRefill": "Зар үзэж цэнэглэх (+5 удаа)",
+  "watchAdAndRefill": "Зар үзэж цэнэглэх (+10 удаа)",
   "welcomeButton": "Эхлэх",
   "welcomeDesc": "Talkie-д тавтай морил! Бид дэлхийн 80 гаруй хэлийг 100% бүрэн дэмждэг бөгөөд шинэ дээд зэрэглэлийн 3D дизайн болон оновчтой гүйцэтгэлээр танд төгс суралцах туршлагыг санал болгож байна.",
   "welcomeTitle": "Talkie-д тавтай морил!",

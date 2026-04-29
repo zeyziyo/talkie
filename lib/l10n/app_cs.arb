@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Jazyk překladu",
   "translationLimitExceeded": "Překročen limit překladů",
-  "translationLimitMessage": "Vyčerpali jste svůj denní limit bezplatných překladů (5).\\n\\nChcete se podívat na reklamu a okamžitě si dobít 5 překladů?",
+  "translationLimitMessage": "Vyčerpali jste svůj denní limit bezplatných překladů (10).\\n\\nChcete se podívat na reklamu a okamžitě si dobít 10 překladů?",
   "translationLoaded": "Načten uložený překlad",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Počet překladů dobit o 5!",
+  "translationRefilled": "Počet překladů dobit o 10!",
   "translationResult": "Výsledek překladu",
   "translationResultHint": "Výsledek překladu - lze upravit",
   "tryAgain": "Zkusit znovu",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Zobrazit online průvodce",
   "voluntaryTranslations": "Dobrovolné překlady",
-  "watchAdAndRefill": "Dobít pomocí reklamy (+5)",
+  "watchAdAndRefill": "Dobít pomocí reklamy (+10)",
   "welcomeButton": "Začít",
   "welcomeDesc": "Vítejte v Talkie! Podporujeme více než 80 jazyků z celého světa se 100% integritou. Nový prémiový 3D design a optimalizovaný výkon vám přinášejí dokonalý zážitek z učení.",
   "welcomeTitle": "Vítejte v Talkie!",

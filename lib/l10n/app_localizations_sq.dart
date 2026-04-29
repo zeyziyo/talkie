@@ -169,16 +169,17 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Kuota ditore për shërbimin e inteligjencës artificiale është harxhuar. Ju lutemi provoni përsëri pas pak ose nesër.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Përkthimi është i kufizuar për shkak të politikës së sigurisë së AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Kopjo origjinalin';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Teksti origjinal u kopjua.';
 
   @override
   String get errorProfanity =>
@@ -799,7 +800,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get saved => 'U ruajt me sukses';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Teksti origjinal';
 
   @override
   String get saving => 'Duke ruajtur...';
@@ -809,7 +810,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Nuk u gjet tekst në foto që përputhet me gjuhën e mësuar të caktuar. Ju lutemi, kontrolloni cilësimet e gjuhës.';
 
   @override
   String get scanNotSupported =>
@@ -1054,13 +1055,13 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Ju keni përdorur të gjitha përkthimet falas ditore (5 herë).\\n\\nA dëshironi të shikoni një reklamë dhe të rimbushni 5 herë menjëherë?';
+      'Ju keni përdorur të gjitha përkthimet falas ditore (10 herë).\\n\\nA dëshironi të shikoni një reklamë dhe të rimbushni 10 herë menjëherë?';
 
   @override
   String get translationLoaded => 'Përkthimi i ruajtur u ngarkua';
 
   @override
-  String get translationRefilled => 'Numri i përkthimeve u rimbush 5 herë!';
+  String get translationRefilled => 'Numri i përkthimeve u rimbush 10 herë!';
 
   @override
   String get translationResult => 'Rezultati i përkthimit';
@@ -1233,7 +1234,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get voluntaryTranslations => 'Përkthime vullnetare';
 
   @override
-  String get watchAdAndRefill => 'Shikoni reklamën dhe rimbushni (+5 herë)';
+  String get watchAdAndRefill => 'Shikoni reklamën dhe rimbushni (+10 herë)';
 
   @override
   String get welcomeButton => 'Fillo';
@@ -1259,8 +1260,20 @@ class AppLocalizationsSq extends AppLocalizations {
   String get wordModeLabel => 'Modaliteti i fjalës';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Rezultati i kombinuar';
+
+  @override
+  String get errorLimitReached =>
+      'Ju kanë mbaruar përkthimet. Dëshironi të shihni një reklamë për të marrë 10 përkthime shtesë?';
 
   @override
   String get yourPronunciation => 'Shqiptimi juaj';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Udhëzime për limitin e përkthimeve]\nÇdo ditë në mesnatë ofrohen 20 përkthime falas. Edhe nëse i harxhoni të gjitha, mund të shihni një reklamë për të marrë menjëherë 10 përkthime shtesë.';
+
+  @override
+  String get scanDetails =>
+      '• Importoni imazhe nga kamera ose galeria juaj për të nxjerrë dhe përkthyer tekst.\n• Mund të trokitni lehtë mbi fjalitë e shumta në një foto për t\'i përkthyer ato individualisht.\n• Nëse ju kanë mbaruar përkthimet, mund të shihni menjëherë një reklamë për të marrë 10 përkthime shtesë.';
 }

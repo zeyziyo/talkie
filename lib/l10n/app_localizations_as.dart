@@ -166,16 +166,17 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'কৃত্ৰিম বুদ্ধিমত্তা সেৱাৰ দৈনিক আবণ্টন শেষ হৈ গৈছে। কিছু সময়ৰ পিছত বা কাইলৈ পুনৰ চেষ্টা কৰক।';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'AI সুৰক্ষা নীতিৰ বাবে অনুবাদ সীমিত কৰা হৈছে।';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'মূল কপি কৰক';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'মূল পাঠ কপি কৰা হৈছে।';
 
   @override
   String get errorProfanity => 'ইয়াত অশ্লীল শব্দ থকা বাবে অনুবাদ কৰিব নোৱাৰি।';
@@ -791,7 +792,7 @@ class AppLocalizationsAs extends AppLocalizations {
   String get saved => 'সংৰক্ষণ কৰা হ’ল';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'মূল পাঠ';
 
   @override
   String get saving => 'সংৰক্ষণ কৰি থকা হৈছে...';
@@ -801,7 +802,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'আপোনাৰ ফটোত নিৰ্ধাৰিত ভাষাৰ সৈতে মিল থকা কোনো পাঠ পোৱা নগ’ল। আপোনাৰ ভাষাৰ সেটিংস পৰীক্ষা কৰক।';
 
   @override
   String get scanNotSupported =>
@@ -1045,14 +1046,14 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'আপুনি আপোনাৰ দৈনিক বিনামূলীয়া অনুবাদ (5 বাৰ) ব্যৱহাৰ কৰিছে।\\n\\nআপুনি এটা বিজ্ঞাপন চাই তাৎক্ষণিকভাবে 5 বাৰলৈ ৰিফিল কৰিব বিচাৰেনে?';
+      'আপুনি আপোনাৰ দৈনিক বিনামূলীয়া অনুবাদ (10 বাৰ) ব্যৱহাৰ কৰিছে।\\n\\nআপুনি এটা বিজ্ঞাপন চাই তাৎক্ষণিকভাবে 10 বাৰলৈ ৰিফিল কৰিব বিচাৰেনে?';
 
   @override
   String get translationLoaded => 'সংৰক্ষিত অনুবাদ লোড কৰা হ’ল';
 
   @override
   String get translationRefilled =>
-      'আপোনাৰ অনুবাদৰ সংখ্যা 5 বাৰলৈ ৰিফিল কৰা হৈছে!';
+      'আপোনাৰ অনুবাদৰ সংখ্যা 10 বাৰলৈ ৰিফিল কৰা হৈছে!';
 
   @override
   String get translationResult => 'অনুবাদৰ ফলাফল';
@@ -1219,7 +1220,7 @@ class AppLocalizationsAs extends AppLocalizations {
   String get voluntaryTranslations => 'স্বেচ্ছামূলক অনুবাদ';
 
   @override
-  String get watchAdAndRefill => 'বিজ্ঞাপন চাওক আৰু ৰিফিল কৰক (+5 বাৰ)';
+  String get watchAdAndRefill => 'বিজ্ঞাপন চাওক আৰু ৰিফিল কৰক (+10 বাৰ)';
 
   @override
   String get welcomeButton => 'আৰম্ভ কৰক';
@@ -1244,8 +1245,20 @@ class AppLocalizationsAs extends AppLocalizations {
   String get wordModeLabel => 'শব্দ মোড';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'সংহত ফলাফল';
+
+  @override
+  String get errorLimitReached =>
+      'আপোনাৰ অনুবাদৰ সংখ্যা শেষ হৈ গৈছে। আপুনি এটা বিজ্ঞাপন চাই ১০টা অনুবাদৰ বাবে চাৰ্জ কৰিব বিচাৰেনে?';
 
   @override
   String get yourPronunciation => 'আপোনাৰ উচ্চাৰণ';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [অনুবাদৰ সীমাৰ নিৰ্দেশনা]\nপ্ৰতিদিনে মাজনিশা ২০টা বিনামূলীয়া অনুবাদ উপলব্ধ। যদি আপুনি সেই সকলো ব্যৱহাৰ কৰে, আপুনি এটা বিজ্ঞাপন চালে তৎক্ষণাত অতিৰিক্ত ১০টা অনুবাদৰ বাবে চাৰ্জ কৰিব পাৰে।';
+
+  @override
+  String get scanDetails =>
+      '• কেমেৰা বা গেলেৰীৰ পৰা ছবি আমদানি কৰি পাঠ নিষ্কাশন কৰক আৰু অনুবাদ কৰক।\n• এখন ছবিত থকা বহুতো বাক্যত টেপ কৰি পৃথকভাৱে অনুবাদ কৰিব পাৰি।\n• যদি আপোনাৰ অনুবাদৰ সংখ্যা শেষ হৈ যায়, আপুনি অতিৰিক্ত ১০টাৰ বাবে তৎক্ষণাত এটা বিজ্ঞাপন চাব পাৰে।';
 }

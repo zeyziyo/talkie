@@ -168,16 +168,17 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'AI სერვისის დღიური კვოტა ამოწურულია. სცადეთ მოგვიანებით ან ხვალ.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'თარგმანი შეზღუდულია AI-ს უსაფრთხოების პოლიტიკის გამო.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'ორიგინალის კოპირება';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'ორიგინალი ტექსტი დაკოპირებულია.';
 
   @override
   String get errorProfanity =>
@@ -795,7 +796,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get saved => 'შენახულია';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'ორიგინალი ტექსტი';
 
   @override
   String get saving => 'მიმდინარეობს შენახვა...';
@@ -805,7 +806,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'ფოტოზე ვერ მოიძებნა ტექსტი, რომელიც შეესაბამება დაყენებულ ენას. გთხოვთ, შეამოწმოთ ენის პარამეტრები.';
 
   @override
   String get scanNotSupported =>
@@ -1049,13 +1050,13 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'თქვენ ამოწურეთ თქვენი უფასო ყოველდღიური თარგმანები (5-ჯერ).\\n\\nგსურთ ნახოთ რეკლამა 5-ჯერ მყისიერად შესავსებად?';
+      'თქვენ ამოწურეთ თქვენი უფასო ყოველდღიური თარგმანები (10-ჯერ).\\n\\nგსურთ ნახოთ რეკლამა 10-ჯერ მყისიერად შესავსებად?';
 
   @override
   String get translationLoaded => 'შენახული თარგმანი ჩატვირთულია';
 
   @override
-  String get translationRefilled => 'თქვენი თარგმანის რაოდენობა შეივსო 5-ჯერ!';
+  String get translationRefilled => 'თქვენი თარგმანის რაოდენობა შეივსო 10-ჯერ!';
 
   @override
   String get translationResult => 'თარგმანის შედეგი';
@@ -1226,7 +1227,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get voluntaryTranslations => 'ნებაყოფლობითი თარგმანები';
 
   @override
-  String get watchAdAndRefill => 'რეკლამის ყურება და შევსება (+5-ჯერ)';
+  String get watchAdAndRefill => 'რეკლამის ყურება და შევსება (+10-ჯერ)';
 
   @override
   String get welcomeButton => 'დაწყება';
@@ -1252,8 +1253,20 @@ class AppLocalizationsKa extends AppLocalizations {
   String get wordModeLabel => 'სიტყვების რეჟიმი';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'გაერთიანებული შედეგი';
+
+  @override
+  String get errorLimitReached =>
+      'თარგმანის რაოდენობა ამოიწურა. გსურთ რეკლამის ნახვა და 10 თარგმანის მიღება?';
 
   @override
   String get yourPronunciation => 'თქვენი გამოთქმა';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [თარგმანის ლიმიტის შესახებ]\nყოველდღე, შუაღამისას ხელმისაწვდომია 20 უფასო თარგმანი. მათი ამოწურვის შემთხვევაში, რეკლამის ყურებით შეგიძლიათ მიიღოთ დამატებით 10 თარგმანი.';
+
+  @override
+  String get scanDetails =>
+      '• კამერით ან გალერეიდან ატვირთეთ სურათი ტექსტის ამოსაღებად და სათარგმნად.\n• შეგიძლიათ თითოეული წინადადება ცალკე თარგმნოთ სურათზე.\n• თარგმანის რაოდენობის ამოწურვის შემთხვევაში, შეგიძლიათ დაუყოვნებლივ უყუროთ რეკლამას და მიიღოთ 10 დამატებითი თარგმანი.';
 }

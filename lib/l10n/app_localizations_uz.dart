@@ -1050,13 +1050,13 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Kunlik bepul tarjima (5 marta) dan hammasi ishlatildi.\\n\\nReklamani ko\'rib 5 marta zudlik bilan to\'ldirmoqchimisiz?';
+      'Kunlik bepul tarjima (10 marta) dan hammasi ishlatildi.\\n\\nReklamani ko\'rib 10 marta zudlik bilan to\'ldirmoqchimisiz?';
 
   @override
   String get translationLoaded => 'Saqlangan tarjima yuklandi';
 
   @override
-  String get translationRefilled => 'Tarjima soni 5 marta to\'ldirildi!';
+  String get translationRefilled => 'Tarjima soni 10 marta to\'ldirildi!';
 
   @override
   String get translationResult => 'Tarjima natijasi';
@@ -1228,7 +1228,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get voluntaryTranslations => 'Ko\'ngilli tarjimalar';
 
   @override
-  String get watchAdAndRefill => 'Reklamani ko\'rib to\'ldirish (+5 marta)';
+  String get watchAdAndRefill => 'Reklamani ko\'rib to\'ldirish (+10 marta)';
 
   @override
   String get welcomeButton => 'Boshlash';
@@ -1257,5 +1257,16 @@ class AppLocalizationsUz extends AppLocalizations {
   String get combinedResult => '통합 결과';
 
   @override
+  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+
+  @override
   String get yourPronunciation => 'Talaffuzingiz';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+
+  @override
+  String get scanDetails =>
+      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
 }

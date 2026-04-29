@@ -1,30 +1,9 @@
 {
   "@@locale": "pa",
-  "basicWords": "ਮੂਲ ਸ਼ਬਦ ਰਿਪੋਜ਼ਟਰੀ",
-  "@basicWords": {
-    "description": "Default name for basic vocabulary material"
-  },
-  "inputLanguage": "ਇਨਪੁਟ ਭਾਸ਼ਾ",
-  "translationLanguage": "ਅਨੁਵਾਦ ਭਾਸ਼ਾ",
-  "simplifiedGuidance": "ਰੋਜ਼ਾਨਾ ਗੱਲਬਾਤ ਨੂੰ ਵਿਦੇਸ਼ੀ ਭਾਸ਼ਾ ਵਿੱਚ ਤੁਰੰਤ ਬਦਲੋ! ਟਾਕੀ ਤੁਹਾਡੀ ਭਾਸ਼ਾਈ ਜ਼ਿੰਦਗੀ ਨੂੰ ਰਿਕਾਰਡ ਕਰੇਗਾ।",
-  "noDataForLanguage": "ਤੁਹਾਡੀ ਚੁਣੀ ਹੋਈ ਭਾਸ਼ਾ ਲਈ ਕੋਈ ਵੀ ਸਿੱਖਣ ਵਾਲੀ ਸਮੱਗਰੀ ਲੋਕਲ ਡਾਟਾਬੇਸ ਵਿੱਚ ਨਹੀਂ ਹੈ। ਸਮੱਗਰੀ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰੋ ਜਾਂ ਕੋਈ ਹੋਰ ਭਾਸ਼ਾ ਚੁਣੋ।",
-  "versionLabel": "Version: {version}",
-  "@versionLabel": {
-    "placeholders": {
-      "version": {
-        "type": "String"
-      }
-    }
-  },
-  "developerContact": "Developer Contact: talkie.help@gmail.com",
-  "cancel": "ਰੱਦ ਕਰੋ",
-  "@cancel": {
-    "description": "Cancel button"
-  },
   "accuracy": "ਸ਼ੁੱਧਤਾ",
-  "ttsMissing": "ਇਸ ਭਾਸ਼ਾ ਦਾ ਵੌਇਸ ਇੰਜਣ ਤੁਹਾਡੇ ਜੰਤਰ 'ਤੇ ਸਥਾਪਤ ਨਹੀਂ ਹੈ।",
-  "ttsInstallGuide": "ਕਿਰਪਾ ਕਰਕੇ ਐਂਡਰਾਇਡ ਸੈਟਿੰਗਾਂ > Google TTS ਤੋਂ ਇਸ ਭਾਸ਼ਾ ਲਈ ਡਾਟਾ ਸਥਾਪਤ ਕਰੋ।",
   "adLoading": "ਇਸ਼ਤਿਹਾਰ ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "add": "ਸ਼ਾਮਲ ਕਰੋ",
+  "addNew": "ਨਵਾਂ ਸ਼ਾਮਲ ਕਰੋ",
   "addNewSubject": "ਨਵਾਂ ਨਾਮ ਸ਼ਾਮਲ ਕਰੋ",
   "addTagHint": "ਟੈਗ ਸ਼ਾਮਲ ਕਰੋ...",
   "alreadyHaveAccount": "ਕੀ ਤੁਹਾਡਾ ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਖਾਤਾ ਹੈ?",
@@ -45,6 +24,14 @@
     "description": "Default name for basic sentences material"
   },
   "basicWordRepository": "ਮੁਢਲੇ ਸ਼ਬਦ ਭੰਡਾਰ",
+  "basicWords": "ਮੂਲ ਸ਼ਬਦ ਰਿਪੋਜ਼ਟਰੀ",
+  "@basicWords": {
+    "description": "Default name for basic vocabulary material"
+  },
+  "cancel": "ਰੱਦ ਕਰੋ",
+  "@cancel": {
+    "description": "Cancel button"
+  },
   "caseObject": "ਕਰਮ ਕਾਰਕ",
   "casePossessive": "ਸੰਬੰਧਕ ਕਾਰਕ",
   "casePossessivePronoun": "ਸੰਬੰਧਕ ਪੜਨਾਂਵ",
@@ -97,17 +84,11 @@
   "@deleteRecord": {
     "description": "Delete record dialog title"
   },
-  "disambiguationPrompt": "ਤੁਸੀਂ ਕਿਸ ਅਰਥ ਵਿੱਚ ਅਨੁਵਾਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
-  "@disambiguationPrompt": {
-    "description": "Prompt for disambiguation dialog"
-  },
-  "disambiguationTitle": "ਅਰਥ ਚੁਣੋ",
-  "@disambiguationTitle": {
-    "description": "Title for disambiguation dialog"
-  },
+  "developerContact": "Developer Contact: talkie.help@gmail.com",
   "dontHaveAccount": "ਕੀ ਤੁਹਾਡਾ ਕੋਈ ਖਾਤਾ ਨਹੀਂ ਹੈ?",
   "email": "ਈਮੇਲ",
   "emailAlreadyInUse": "ਇਹ ਈਮੇਲ ਪਹਿਲਾਂ ਹੀ ਰਜਿਸਟਰਡ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਲੌਗਇਨ ਕਰੋ ਜਾਂ ਪਾਸਵਰਡ ਰਿਕਵਰੀ ਵਰਤੋਂ।",
+  "enterNameHint": "ਨਾਮ ਦਰਜ ਕਰੋ",
   "enterNewSubjectName": "ਨਵਾਂ ਨਾਮ ਦਰਜ ਕਰੋ",
   "enterSentenceHint": "ਇੱਕ ਵਾਕ ਦਰਜ ਕਰੋ...",
   "enterTextHint": "ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਟੈਕਸਟ ਦਾਖਲ ਕਰੋ",
@@ -122,6 +103,10 @@
   },
   "errorHateSpeech": "ਇਸ ਵਿੱਚ ਨਫ਼ਰਤ ਭਰੇ ਸ਼ਬਦ ਹਨ, ਇਸਲਈ ਅਨੁਵਾਦ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।",
   "errorOtherSafety": "AI ਸੁਰੱਖਿਆ ਨੀਤੀ ਦੁਆਰਾ ਅਨੁਵਾਦ ਤੋਂ ਇਨਕਾਰ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ।",
+  "errorQuotaExceeded": "AI ਸੇਵਾ ਲਈ ਤੁਹਾਡਾ ਰੋਜ਼ਾਨਾ ਕੋਟਾ ਖਤਮ ਹੋ ਗਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਜਾਂ ਕੱਲ੍ਹ ਨੂੰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "errorSafetyPolicy": "AI ਸੁਰੱਖਿਆ ਨੀਤੀ ਦੇ ਕਾਰਨ ਅਨੁਵਾਦ ਸੀਮਤ ਹੈ।",
+  "copyOriginal": "ਮੂਲ ਕਾਪੀ ਕਰੋ",
+  "originalCopied": "ਮੂਲ ਟੈਕਸਟ ਕਾਪੀ ਹੋ ਗਿਆ ਹੈ।",
   "errorProfanity": "ਇਸ ਵਿੱਚ ਅਸ਼ਲੀਲ ਸ਼ਬਦ ਹਨ, ਇਸਲਈ ਅਨੁਵਾਦ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।",
   "errorSelectCategory": "ਪਹਿਲਾਂ ਕੋਈ ਸ਼ਬਦ ਜਾਂ ਵਾਕ ਚੁਣੋ!",
   "errorSexualContent": "ਇਸ ਵਿੱਚ ਕਾਮੁਕ ਸਮੱਗਰੀ ਹੈ, ਇਸਲਈ ਅਨੁਵਾਦ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।",
@@ -129,6 +114,7 @@
   "@errors": {
     "description": "Error section label"
   },
+  "extractedText": "ਪਛਾਣਿਆ ਗਿਆ ਟੈਕਸਟ",
   "female": "ਔਰਤ",
   "file": "ਫਾਈਲ:",
   "@file": {
@@ -154,8 +140,6 @@
   "gameModeTitle": "ਗੇਮ ਮੋਡ",
   "gameOver": "ਗੇਮ ਓਵਰ",
   "gender": "ਲਿੰਗ",
-  "labelFilterMaterial": "ਸਮੱਗਰੀ",
-  "labelFilterTag": "ਟੈਗ",
   "generalTags": "ਆਮ ਟੈਗ",
   "getMaterials": "ਸਮੱਗਰੀ ਪ੍ਰਾਪਤ ਕਰੋ",
   "good": "ਚੰਗਾ",
@@ -169,16 +153,22 @@
   "helpMode2Details": "• ਮਟੀਰੀਅਲ ਚੁਣੋ: ਉੱਪਰ ਸੱਜੇ ਮੀਨੂ (⋮) ਵਿੱਚੋਂ 'ਸਿੱਖਣ ਵਾਲਾ ਮਟੀਰੀਅਲ ਚੁਣੋ' ਜਾਂ 'ਔਨਲਾਈਨ ਮਟੀਰੀਅਲ ਲਾਇਬਰੇਰੀ' ਵਰਤੋ\n• ਕਾਰਡ ਪਲਟਾਓ: ਅਨੁਵਾਦ ਦੀ ਜਾਂਚ ਕਰਨ ਲਈ 'ਦਿਖਾਓ/ਛੁਪਾਓ'\n• ਸੁਣੋ: ਉਚਾਰਨ ਚਲਾਉਣ ਲਈ ਸਪੀਕਰ ਆਈਕਨ\n• ਸਿੱਖਣਾ ਪੂਰਾ ਕਰੋ: ਸਿੱਖਣਾ ਪੂਰਾ ਕਰਨ ਲਈ ਚੈੱਕ ਮਾਰਕ (V)\n• ਮਿਟਾਓ: ਰਿਕਾਰਡ ਮਿਟਾਉਣ ਲਈ ਕਾਰਡ 'ਤੇ ਲੰਮਾ ਦਬਾਅ ਦਿਓ (ਲੰਮਾ ਕਲਿੱਕ)\n• ਖੋਜ ਅਤੇ ਫਿਲਟਰ: ਖੋਜ ਪੱਟੀ (ਰੀਅਲ-ਟਾਈਮ ਸਮਾਰਟ ਖੋਜ) ਅਤੇ ਟੈਗ, ਸ਼ੁਰੂਆਤੀ ਅੱਖਰ ਫਿਲਟਰ ਸਹਾਇਤਾ",
   "helpMode3Desc": "ਵਾਕ ਸੁਣੋ ਅਤੇ ਦੁਹਰਾਓ (ਛਾਇਆ-ਅਨੁਵਾਦ) ਅਤੇ ਆਪਣੇ ਉਚਾਰਨ ਦਾ ਅਭਿਆਸ ਕਰੋ।",
   "helpMode3Details": "• ਚੁਣੋ: ਪੈਕੇਜ ਚੁਣੋ\n• ਅੰਤਰਾਲ: [-] [+] ਉਡੀਕ ਦਾ ਸਮਾਂ (3ਸਕਿੰਟ-60ਸਕਿੰਟ)\n• ਸ਼ੁਰੂ/ਬੰਦ: ਸੈਸ਼ਨ ਕੰਟਰੋਲ ਕਰੋ\n• ਬੋਲੋ: ਆਡੀਓ ਸੁਣੋ ਅਤੇ ਦੁਹਰਾਓ\n• ਸਕੋਰ: ਸ਼ੁੱਧਤਾ (0-100)\n• ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼: ਜੇ ਆਵਾਜ਼ ਨਹੀਂ ਮਿਲਦੀ ਤਾਂ ਬਟਨ",
+  "helpNote": "ਸ਼ਬਦ ਦਾ ਅਰਥ, ਉਦਾਹਰਣਾਂ ਜਾਂ ਸਥਿਤੀਆਂ ਆਦਿ ਨੂੰ ਬੇਝਿਜਕ ਨੋਟ ਕਰੋ।",
+  "helpNotebook": "ਅਨੁਵਾਦ ਕੀਤੇ ਨਤੀਜਿਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਫੋਲਡਰ ਚੁਣੋ।",
   "helpTabJson": "JSON ਫਾਰਮੈਟ",
   "helpTabModes": "ਮੋਡ",
   "helpTabQuickStart": "ਤੁਰੰਤ ਸ਼ੁਰੂਆਤ",
   "helpTabTour": "ਟੂਰ",
+  "helpTag": "ਵਰਗੀਕਰਨ ਜਾਂ ਖੋਜ ਲਈ ਕੀਵਰਡ ਦਰਜ ਕਰੋ।",
   "helpTitle": "ਮਦਦ ਅਤੇ ਗਾਈਡ",
   "helpTourDesc": "The **Highlight Circle** will guide you through the main features.\\n(e.g., You can delete a record by long-pressing when the **Highlight Circle** points to it.)",
   "hide": "ਲੁਕਾਓ",
   "@hide": {
     "description": "Hide translation button"
   },
+  "hintNoteExample": "ਉਦਾਹਰਨ: ਸਥਿਤੀ ਦਾ ਵਰਣਨ, ਸਮਾਨਾਰਥੀ ਸ਼ਬਦ, ਆਦਿ",
+  "hintTagExample": "ਉਦਾਹਰਨ: ਕਾਰੋਬਾਰ, ਯਾਤਰਾ...",
+  "homeTab": "ਤਰਜਮਾ",
   "importAdded": "ਸ਼ਾਮਲ ਕੀਤਾ: {count}",
   "@importAdded": {
     "description": "Successfully imported count",
@@ -215,6 +205,17 @@
       }
     }
   },
+  "importFolderSuccess": "{files} ਫਾਈਲਾਂ, {entries} ਐਂਟਰੀਆਂ ਇੰਪੋਰਟ ਕੀਤੀਆਂ ਗਈਆਂ।",
+  "@importFolderSuccess": {
+    "placeholders": {
+      "files": {
+        "type": "num"
+      },
+      "entries": {
+        "type": "num"
+      }
+    }
+  },
   "importJsonFile": "JSON ਇੰਪੋਰਟ",
   "@importJsonFile": {
     "description": "Import JSON button"
@@ -232,6 +233,10 @@
       }
     }
   },
+  "importSourceFile": "ਇੱਕ JSON ਫਾਈਲ",
+  "importSourceFolder": "ਫੋਲਡਰ (ਭਾਸ਼ਾ ਅਨੁਸਾਰ ਲਾਇਬ੍ਰੇਰੀ ਢਾਂਚਾ)",
+  "importSourceTitle": "ਇੰਪੋਰਟ ਸਰੋਤ ਚੁਣੋ",
+  "importSourceZip": "ZIP ਫਾਈਲ (ਕੰਪਰੈੱਸਡ ਫੋਲਡਰ)",
   "importTotal": "ਕੁੱਲ: {count}",
   "@importTotal": {
     "description": "Total import count",
@@ -245,6 +250,8 @@
   "@importing": {
     "description": "Import in progress"
   },
+  "inputContent": "ਇਨਪੁਟ ਸਮੱਗਰੀ",
+  "inputLanguage": "ਇਨਪੁਟ ਭਾਸ਼ਾ",
   "inputModeTitle": "ਇਨਪੁਟ",
   "intervalSeconds": "ਅੰਤਰਾਲ: {seconds}ਸਕਿੰਟ",
   "@intervalSeconds": {
@@ -256,8 +263,10 @@
   },
   "invalidEmail": "ਇੱਕ ਵੈਧ ਈਮੇਲ ਦਾਖਲ ਕਰੋ।",
   "kakaoContinue": "ਕਾਕਾਓ ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
+  "labelDetails": "ਵੇਰਵੇ ਸੈਟਿੰਗ",
+  "labelFilterMaterial": "ਸਮੱਗਰੀ",
+  "labelFilterTag": "ਟੈਗ",
   "labelLangCode": "ਭਾਸ਼ਾ ਕੋਡ (ਉਦਾਹਰਨ: en-US, ko-KR)",
-  "labelName": "ਨਾਮ",
   "labelNote": "ਨੋਟ",
   "labelPOS": "ਭਾਸ਼ਾ ਦਾ ਭਾਗ",
   "labelSentence": "ਵਾਕ",
@@ -282,6 +291,7 @@
   "@listening": {
     "description": "STT listening status"
   },
+  "location": "ਸਥਾਨ",
   "login": "ਲੌਗਇਨ",
   "logout": "ਲਾਗ ਆਉਟ",
   "logoutConfirmMessage": "ਕੀ ਤੁਸੀਂ ਇਸ ਡਿਵਾਈਸ ਤੋਂ ਲਾਗ ਆਉਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
@@ -326,10 +336,10 @@
   "mySentenceCollection": "ਮੇਰਾ ਵਾਕ ਸੰਗ੍ਰਹਿ",
   "myWordbook": "ਮੇਰੀ ਸ਼ਬਦਾਵਲੀ",
   "neutral": "ਨਿਰਪੱਖ",
+  "newNotebookTitle": "ਨਵੀਂ ਨੋਟਬੁੱਕ ਦਾ ਸਿਰਲੇਖ",
   "newSubjectName": "ਨਵਾਂ ਵਿਸ਼ਾ ਨਾਮ",
   "next": "ਅੱਗੇ",
-  "noInternetWarningMic": "ਕੋਈ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਨਹੀਂ ਹੈ। ਔਫਲਾਈਨ ਹੋਣ 'ਤੇ ਵੌਇਸ ਪਛਾਣ ਉਪਲਬਧ ਨਹੀਂ ਹੋ ਸਕਦੀ ਹੈ।",
-  "noInternetWarningTranslate": "ਕੋਈ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਨਹੀਂ ਹੈ। ਔਫਲਾਈਨ ਹੋਣ 'ਤੇ ਅਨੁਵਾਦ ਫੰਕਸ਼ਨ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਸਮੀਖਿਆ ਮੋਡ ਦੀ ਵਰਤੋਂ ਕਰੋ।",
+  "noDataForLanguage": "ਤੁਹਾਡੀ ਚੁਣੀ ਹੋਈ ਭਾਸ਼ਾ ਲਈ ਕੋਈ ਵੀ ਸਿੱਖਣ ਵਾਲੀ ਸਮੱਗਰੀ ਲੋਕਲ ਡਾਟਾਬੇਸ ਵਿੱਚ ਨਹੀਂ ਹੈ। ਸਮੱਗਰੀ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰੋ ਜਾਂ ਕੋਈ ਹੋਰ ਭਾਸ਼ਾ ਚੁਣੋ।",
   "noMaterialsInCategory": "ਇਸ ਸ਼੍ਰੇਣੀ ਵਿੱਚ ਕੋਈ ਸਮੱਗਰੀ ਨਹੀਂ ਹੈ।",
   "noRecords": "ਚੁਣੀ ਗਈ ਭਾਸ਼ਾ ਲਈ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ",
   "@noRecords": {
@@ -346,12 +356,15 @@
   },
   "noVoiceDetected": "ਕੋਈ ਆਵਾਜ਼ ਨਹੀਂ ਮਿਲੀ",
   "notSelected": "- ਕੋਈ ਨਹੀਂ ਚੁਣਿਆ ਗਿਆ -",
+  "noteGuidance": "ਵਧੇਰੇ ਸਹੀ ਅਨੁਵਾਦ ਲਈ ਜਿੱਥੇ ਤੁਸੀਂ ਵਾਧੂ ਵੇරਵੇ ਦਰਜ ਕਰਦੇ ਹੋ",
   "onlineLibraryCheckInternet": "ਆਪਣਾ ਇੰਟਰਨੈੱਟ ਕਨੈਕਸ਼ਨ ਚੈੱਕ ਕਰੋ ਜਾਂ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
   "onlineLibraryLoadFailed": "ਸਮੱਗਰੀ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ।",
   "onlineLibraryNoMaterials": "ਕੋਈ ਸਮੱਗਰੀ ਨਹੀਂ ਹੈ।",
+  "openSettings": "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
   "password": "ਪਾਸਵਰਡ",
   "passwordTooShort": "ਪਾਸਵਰਡ 6 ਅੱਖਰਾਂ ਤੋਂ ਵੱਧ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।",
   "perfect": "ਬਹੁਤ ਵਧੀਆ!",
+  "pickGallery": "ਗੈਲਰੀ ਤੋਂ ਚੁਣੋ",
   "playAgain": "ਦੁਬਾਰਾ ਖੇਡੋ",
   "playbackFailed": "ਪਲੇਬੈਕ ਅਸਫਲ: {error}",
   "@playbackFailed": {
@@ -368,14 +381,17 @@
   },
   "posAdjective": "ਵਿਸ਼ੇਸ਼ਣ",
   "posAdverb": "ਕਿਰਿਆ ਵਿਸ਼ੇਸ਼ਣ",
+  "posArticle": "ਲੇਖ",
   "posConjunction": "ਸੰਯੋਜਕ",
   "posInterjection": "ਵਿਸਮਿਕ",
   "posNoun": "ਨਾਂਵ",
+  "posParticle": "ਕਣ",
   "posPreposition": "ਪੂਰਵ-ਸਥਿਤੀ/ਪੋਸਟਪੋਜ਼ੀਸ਼ਨ",
   "posPronoun": "ਪੜਨਾਂਵ",
   "posVerb": "ਕਿਰਿਆ",
   "practiceModeTitle": "ਅਭਿਆਸ",
   "practiceWordsOnly": "ਸਿਰਫ਼ ਸ਼ਬਦਾਂ ਦਾ ਅਭਿਆਸ ਕਰੋ",
+  "processing": "ਪ੍ਰਕਿਰਿਆ ਚੱਲ ਰਹੀ ਹੈ...",
   "progress": "ਤਰੱਕੀ: {current} / {total}",
   "@progress": {
     "description": "Progress indicator",
@@ -388,6 +404,12 @@
       }
     }
   },
+  "quickStartStep1Desc": "ਮੇਨੂ > ਭਾਸ਼ਾ ਸੈਟਿੰਗ ਵਿੱਚੋਂ ਪਹਿਲਾਂ ਆਪਣੀ ਅਤੇ ਸਿੱਖਣ ਵਾਲੀ ਭਾਸ਼ਾ ਨਿਸ਼ਚਿਤ ਕਰੋ।",
+  "quickStartStep1Title": "1. ਭਾਸ਼ਾ ਸੈਟਿੰਗ",
+  "quickStartStep2Desc": "ਇਨਪੁਟ (ਮਾਈਕ੍ਰੋਫ਼ੋਨ/ਕੀਬੋਰਡ) -> ਅਨੁਵਾਦ -> ਸੇਵ ਕ੍ਰਮ ਵਿੱਚ ਆਪਣੇ ਸਿੱਖਣ ਵਾਲੇ ਕਾਰਡ ਬਣਾਓ।",
+  "quickStartStep2Title": "2. ਮੁਢਲੀ ਪ੍ਰਕਿਰਿਆ",
+  "quickStartStep3Desc": "ਚੈਟ ਨਾਲ ਅਭਿਆਸ ਕਰੋ, ਅਤੇ ਉਚਾਰਨ ਅਭਿਆਸ ਟੈਬ ਵਿੱਚ ਟੈਕਸਟ ਦੇਖ ਕੇ ਸਿੱਧਾ ਉਚਾਰਨ ਕਰਨ ਦਾ ਅਭਿਆਸ ਕਰੋ।",
+  "quickStartStep3Title": "3. ਮੋਡ ਦੀ ਵਰਤੋਂ ਕਰੋ",
   "recentNItems": "ਹਾਲ ਹੀ ਵਿੱਚ ਬਣਾਏ ਗਏ {count} ਆਈਟਮਾਂ ਦੇਖੋ",
   "@recentNItems": {
     "placeholders": {
@@ -418,6 +440,7 @@
   "@refresh": {
     "description": "Refresh button"
   },
+  "requestTranslation": "ਅਨੁਵਾਦ ਲਈ ਬੇਨਤੀ ਕਰੋ",
   "reset": "ਰੀਸੈੱਟ ਕਰੋ",
   "resetPracticeHistory": "ਅਭਿਆਸ ਇਤਿਹਾਸ ਰੀਸੈੱਟ ਕਰੋ",
   "retry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ?",
@@ -433,6 +456,8 @@
   },
   "reviewModeTitle": "ਸਮੀਖਿਆ",
   "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
+  "saveAsSentence": "ਵਾਕ ਵਜੋਂ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+  "saveAsWord": "ਸ਼ਬਦ ਵਜੋਂ ਸੁਰੱਖਿਅਤ ਕਰੋ",
   "saveData": "ਸੇਵ ਕਰੋ",
   "@saveData": {
     "description": "Save translation button"
@@ -446,6 +471,7 @@
       }
     }
   },
+  "saveToHistory": "ਸਕੈਨ ਇਤਿਹਾਸ ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਕਰੋ",
   "saveTranslationsFromSearch": "ਖੋਜ ਮੋਡ ਤੋਂ ਅਨੁਵਾਦ ਸੇਵ ਕਰੋ",
   "@saveTranslationsFromSearch": {
     "description": "Instruction to save data"
@@ -454,10 +480,15 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "ਮੂਲ ਟੈਕਸਟ",
   "saving": "ਸੇਵ ਕਰ ਰਿਹਾ ਹੈ...",
   "@saving": {
     "description": "Save in progress"
   },
+  "scanInstructions": "ਟੈਕਸਟ ਵਾਲੀ ਇੱਕ ਤਸਵੀਰ ਲਓ ਜਾਂ ਗੈਲਰੀ ਤੋਂ ਚੁਣੋ।",
+  "scanNoMatch": "ਤਸਵੀਰ ਵਿੱਚ ਸੈੱਟ ਕੀਤੀ ਸਿੱਖਣ ਭਾਸ਼ਾ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਕੋਈ ਟੈਕਸਟ ਨਹੀਂ ਮਿਲਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਭਾਸ਼ਾ ਸੈਟਿੰਗਾਂ ਦੀ ਜਾਂਚ ਕਰੋ।",
+  "scanNotSupported": "ਇਹ ਭਾਸ਼ਾ ਇਸ ਸਮੇਂ ਸਕੈਨ (OCR) ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਟੈਕਸਟ ਦਰਜ ਕਰੋ ਜਾਂ ਵੌਇਸ ਦੀ ਵਰਤੋਂ ਕਰੋ।",
+  "scanLabel": "ਸਕੈਨ ਕਰੋ",
   "score": "ਸ਼ੁੱਧਤਾ: {score}%",
   "@score": {
     "placeholders": {
@@ -494,7 +525,6 @@
     "description": "Title for the material selection dialog"
   },
   "selectPOS": "ਭਾਸ਼ਾ ਦਾ ਹਿੱਸਾ ਚੁਣੋ",
-  "selectSentenceType": "ਵਾਕ ਦੀ ਕਿਸਮ ਚੁਣੋ",
   "selectStudyMaterial": "ਸਮੱਗਰੀ ਚੁਣੋ",
   "@selectStudyMaterial": {
     "description": "Study material selector label"
@@ -504,76 +534,72 @@
     "description": "Toggle option for Sentence"
   },
   "signUp": "ਸਾਈਨ ਅੱਪ ਕਰੋ",
-  "similarTextFound": "ਇਕੋ ਜਿਹਾ ਟੈਕਸਟ ਮਿਲਿਆ",
-  "@similarTextFound": {
-    "description": "Duplicate detection title"
-  },
-  "skip": "ਛੱਡੋ",
-  "@skip": {
-    "description": "Skip button"
-  },
-  "source": "ਸਰੋਤ:",
-  "@source": {
-    "description": "Source label"
-  },
-  "sourceLanguage": "ਸਰੋਤ ਭਾਸ਼ਾ",
-  "@sourceLanguage": {
-    "description": "Source language label"
-  },
+  "simplifiedGuidance": "ਰੋਜ਼ਾਨਾ ਗੱਲਬਾਤ ਨੂੰ ਵਿਦੇਸ਼ੀ ਭਾਸ਼ਾ ਵਿੱਚ ਤੁਰੰਤ ਬਦਲੋ! ਟਾਕੀ ਤੁਹਾਡੀ ਭਾਸ਼ਾਈ ਜ਼ਿੰਦਗੀ ਨੂੰ ਰਿਕਾਰਡ ਕਰੇਗਾ।",
   "sourceLanguageLabel": "Source Language",
-  "speakNow": "ਹੁਣ ਬੋਲੋ!",
-  "speaker": "ਬੁਲਾਰਾ",
-  "@speaker": {
-    "description": "Label for speaker selection"
-  },
-  "speakerSelect": "ਬੁਲਾਰੇ ਦੀ ਚੋਣ ਕਰੋ",
-  "speakingPractice": "ਬੋਲਣ ਦਾ ਅਭਿਆਸ",
-  "startPractice": "ਅਭਿਆਸ ਸ਼ੁਰੂ ਕਰੋ",
   "startTutorial": "ਟੂਰ ਸ਼ੁਰੂ ਕਰੋ",
-  "startWarning": "ਚੇਤਾਵਨੀ",
   "startsWith": "ਸ਼ੁਰੂਆਤੀ ਅੱਖਰ",
   "statusCheckEmail": "ਪ੍ਰਮਾਣਿਕਤਾ ਪੂਰੀ ਕਰਨ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਈਮੇਲ ਵੇਖੋ।",
   "statusDownloading": "ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ: {name}...",
-  "statusImportFailed": "ਇੰਪੋਰਟ ਕਰਨਾ ਅਸਫਲ: {error}",
-  "statusImportSuccess": "{name} ਇੰਪੋਰਟ ਕਰਨਾ ਪੂਰਾ ਹੋਇਆ",
-  "statusLoggingIn": "Logging in with Google...",
-  "statusLoginCancelled": "ਲੌਗਇਨ ਰੱਦ ਕਰ ਦਿੱਤਾ ਗਿਆ।",
-  "statusLoginFailed": "ਲੌਗਇਨ ਅਸਫਲ: {error}",
-  "statusLoginSuccess": "ਲੌਗਇਨ ਸਫਲ ਹੋ ਗਿਆ।",
-  "statusLogoutSuccess": "ਲਾਗ ਆਉਟ ਹੋ ਗਿਆ ਹੈ।",
-  "statusSignUpFailed": "ਸਾਈਨ ਅੱਪ ਕਰਨਾ ਅਸਫਲ: {error}",
-  "statusSigningUp": "ਸਾਈਨ ਅੱਪ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
-  "stopPractice": "ਰੋਕੋ",
-  "studyComplete": "ਅਧਿਐਨ ਕੀਤਾ",
-  "@studyComplete": {
-    "description": "Study complete button text"
-  },
-  "studyRecords": "ਰਿਕਾਰਡ ({count})",
-  "@studyRecords": {
-    "description": "Study records title with count",
+  "@statusDownloading": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "name": {
+        "type": "String",
+        "example": "100%"
       }
     }
   },
+  "statusImportFailed": "ਇੰਪੋਰਟ ਕਰਨਾ ਅਸਫਲ: {error}",
+  "@statusImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Network Error"
+      }
+    }
+  },
+  "statusImportSuccess": "{name} ਇੰਪੋਰਟ ਕਰਨਾ ਪੂਰਾ ਹੋਇਆ",
+  "@statusImportSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "100"
+      }
+    }
+  },
+  "statusLoginFailed": "ਲੌਗਇਨ ਅਸਫਲ: {error}",
+  "@statusLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusLoginSuccess": "ਲੌਗਇਨ ਸਫਲ ਹੋ ਗਿਆ।",
+  "statusLogoutSuccess": "ਲਾਗ ਆਉਟ ਹੋ ਗਿਆ ਹੈ।",
+  "statusRequestFailed": "ਅਨੁਵਾਦ ਦੀ ਬੇਨਤੀ ਅਸਫ਼ਲ: {error}",
+  "@statusRequestFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "statusRequestSuccess": "ਅਨੁਵਾਦ ਦੀ ਬੇਨਤੀ ਸਫ਼ਲ ਹੋ ਗਈ ਹੈ।",
+  "stopPractice": "ਰੋਕੋ",
+  "studyLangNotFoundDesc": "ਚੁਣੀ ਗਈ ਸਮੱਗਰੀ ਵਰਤਮਾਨ ਸਿੱਖਣ ਦੀ ਭਾਸ਼ਾ ({targetLang}) ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ ਹੈ, ਇਸਲਈ ਇਸਨੂੰ ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਕੀ ਤੁਸੀਂ ਅਨੁਵਾਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
+  "@studyLangNotFoundDesc": {
+    "placeholders": {
+      "targetLang": {
+        "type": "String"
+      }
+    }
+  },
+  "studyLangNotFoundTitle": "ਸਿੱਖਣ ਦੀ ਭਾਸ਼ਾ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ",
   "styleFormal": "ਰਸਮੀ",
   "styleInformal": "ਗੈਰ-ਰਸਮੀ",
   "stylePolite": "ਸ਼ਿਸ਼ਟਾਚਾਰੀ",
   "styleSlang": "ਅਪਭਾਸ਼ਾ/ਅਸ਼ਲੀਲ",
-  "subject": "ਵਿਸ਼ਾ:",
-  "@subject": {
-    "description": "Subject label"
-  },
   "swapLanguages": "ਭਾਸ਼ਾਵਾਂ ਬਦਲੋ",
-  "switchToAi": "AI ਮੋਡ 'ਤੇ ਜਾਓ",
-  "@switchToAi": {
-    "description": "Tooltip for switching to AI mode"
-  },
-  "switchToPartner": "ਸਾਥੀ ਮੋਡ 'ਤੇ ਜਾਓ",
-  "@switchToPartner": {
-    "description": "Tooltip for switching to Partner mode"
-  },
   "syncingData": "ਡੇਟਾ ਸਿੰਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
   "tabReview": "ਸਮੀਖਿਆ ({count})",
   "@tabReview": {
@@ -615,6 +641,7 @@
   "tooltipDecrease": "ਘਟਾਓ",
   "tooltipIncrease": "ਵਧਾਓ",
   "tooltipSearch": "ਖੋਜੋ",
+  "tooltipSettingsConfirm": "ਸੈਟਿੰਗਾਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
   "tooltipSpeaking": "ਬੋਲਣਾ",
   "tooltipStudyReview": "ਅਧਿਐਨ+ਸਮੀਖਿਆ",
   "totalRecords": "ਕੁੱਲ {count} ਰਿਕਾਰਡ (ਸਾਰਾ ਦੇਖੋ)",
@@ -630,6 +657,7 @@
   "@translate": {
     "description": "Translate button"
   },
+  "translateNow": "ਹੁਣੇ ਅਨੁਵਾਦ ਕਰੋ",
   "translating": "ਅਨੁਵਾਦ ਕਰ ਰਿਹਾ ਹੈ...",
   "@translating": {
     "description": "Translation in progress"
@@ -651,15 +679,20 @@
       }
     }
   },
+  "translationLanguage": "ਅਨੁਵਾਦ ਭਾਸ਼ਾ",
   "translationLimitExceeded": "ਅਨੁਵਾਦ ਦੀ ਸੀਮਾ ਵੱਧ ਗਈ",
-  "translationLimitMessage": "ਤੁਸੀਂ ਆਪਣਾ ਰੋਜ਼ਾਨਾ ਮੁਫ਼ਤ ਅਨੁਵਾਦ (5 ਵਾਰ) ਪੂਰਾ ਕਰ ਲਿਆ ਹੈ।\\n\\nਕੀ ਤੁਸੀਂ ਇਸ਼ਤਿਹਾਰ ਦੇਖ ਕੇ ਤੁਰੰਤ 5 ਵਾਰ ਰੀਚਾਰਜ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
+  "translationLimitMessage": "ਤੁਸੀਂ ਆਪਣਾ ਰੋਜ਼ਾਨਾ ਮੁਫ਼ਤ ਅਨੁਵਾਦ (10 ਵਾਰ) ਪੂਰਾ ਕਰ ਲਿਆ ਹੈ।\\n\\nਕੀ ਤੁਸੀਂ ਇਸ਼ਤਿਹਾਰ ਦੇਖ ਕੇ ਤੁਰੰਤ 10 ਵਾਰ ਰੀਚਾਰਜ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "translationLoaded": "ਸੇਵ ਕੀਤਾ ਅਨੁਵਾਦ ਲੋਡ ਕੀਤਾ ਗਿਆ",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "ਅਨੁਵਾਦਾਂ ਦੀ ਗਿਣਤੀ 5 ਵਾਰ ਰੀਚਾਰਜ ਹੋ ਗਈ ਹੈ!",
+  "translationRefilled": "ਅਨੁਵਾਦਾਂ ਦੀ ਗਿਣਤੀ 10 ਵਾਰ ਰੀਚਾਰਜ ਹੋ ਗਈ ਹੈ!",
+  "translationResult": "ਅਨੁਵਾਦ ਨਤੀਜਾ",
   "translationResultHint": "ਅਨੁਵਾਦ ਨਤੀਜਾ - ਸੋਧਿਆ ਜਾ ਸਕਦਾ ਹੈ",
   "tryAgain": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "ttsInstallGuide": "ਕਿਰਪਾ ਕਰਕੇ ਐਂਡਰਾਇਡ ਸੈਟਿੰਗਾਂ > Google TTS ਤੋਂ ਇਸ ਭਾਸ਼ਾ ਲਈ ਡਾਟਾ ਸਥਾਪਤ ਕਰੋ।",
+  "ttsMissing": "ਇਸ ਭਾਸ਼ਾ ਦਾ ਵੌਇਸ ਇੰਜਣ ਤੁਹਾਡੇ ਜੰਤਰ 'ਤੇ ਸਥਾਪਤ ਨਹੀਂ ਹੈ।",
+  "ttsUnsupportedNatively": "ਇਹ ਭਾਸ਼ਾ ਇਸ ਡਿਵਾਈਸ ਦੀਆਂ ਸੈਟਿੰਗਾਂ 'ਤੇ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।",
   "tutorialContextDesc": "ਸਮਾਨ ਵਾਕਾਂ ਨੂੰ ਵੱਖਰਾ ਕਰਨ ਲਈ ਪ੍ਰਸੰਗ (ਜਿਵੇਂ: ਸਵੇਰ) ਸ਼ਾਮਲ ਕਰੋ।",
   "tutorialContextTitle": "ਪ੍ਰਸੰਗ ਟੈਗ",
   "tutorialLangSettingsDesc": "ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਸਰੋਤ ਅਤੇ ਨਿਸ਼ਾਨਾ ਭਾਸ਼ਾ ਸੈੱਟ ਕਰੋ।",
@@ -693,7 +726,9 @@
   "tutorialTransDesc": "ਆਪਣਾ ਟੈਕਸਟ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਇੱਥੇ ਦਬਾਓ।",
   "tutorialTransTitle": "ਅਨੁਵਾਦ",
   "typeExclamation": "ਵਿਸਮਿਕ ਵਾਕ",
+  "typeIdiom": "ਮੁਹਾਵਰਾ",
   "typeImperative": "ਹੁਕਮੀਆ ਵਾਕ",
+  "typeProverb": "ਕਹਾਵਤ",
   "typeQuestion": "ਪ੍ਰਸ਼ਨ",
   "typeStatement": "ਬਿਆਨ",
   "usageLimitTitle": "ਵਰਤੋਂ ਦੀ ਹੱਦ ਪੂਰੀ ਹੋ ਗਈ",
@@ -701,9 +736,20 @@
   "@useExistingText": {
     "description": "Use existing text button"
   },
+  "versionLabel": "Version: {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "viewOnlineGuide": "ਔਨਲਾਈਨ ਗਾਈਡ ਦੇਖੋ",
   "voluntaryTranslations": "ਵਲੰਟਰੀ ਅਨੁਵਾਦ",
-  "watchAdAndRefill": "ਇਸ਼ਤਿਹਾਰ ਦੇਖੋ ਅਤੇ ਰੀਚਾਰਜ ਕਰੋ (+5 ਵਾਰ)",
+  "watchAdAndRefill": "ਇਸ਼ਤਿਹਾਰ ਦੇਖੋ ਅਤੇ ਰੀਚਾਰਜ ਕਰੋ (+10 ਵਾਰ)",
+  "welcomeButton": "ਸ਼ੁਰੂ ਕਰੋ",
+  "welcomeDesc": "ਟਾਕੀ ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ! ਅਸੀਂ 100% ਇਕਸਾਰਤਾ ਨਾਲ ਦੁਨੀਆ ਭਰ ਵਿੱਚ 80 ਤੋਂ ਵੱਧ ਭਾਸ਼ਾਵਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦੇ ਹਾਂ, ਅਤੇ ਸਾਡੇ ਨਵੇਂ ਪ੍ਰੀਮੀਅਮ 3D ਡਿਜ਼ਾਈਨ ਅਤੇ ਅਨੁਕੂਲਿਤ ਕਾਰਗੁਜ਼ਾਰੀ ਨਾਲ ਤੁਹਾਡੇ ਕੋਲ ਇੱਕ ਸੰਪੂਰਨ ਸਿੱਖਣ ਦਾ ਅਨੁਭਵ ਹੋਵੇਗਾ।",
+  "welcomeTitle": "Talkie ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ!",
   "word": "ਸ਼ਬਦ",
   "@word": {
     "description": "Toggle option for Word"
@@ -711,51 +757,9 @@
   "wordDefenseDesc": "ਦੁਸ਼ਮਣ ਦੇ ਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ਬਦ ਬੋਲ ਕੇ ਅਧਾਰ ਦਾ ਬਚਾਅ ਕਰੋ।",
   "wordDefenseTitle": "ਸ਼ਬਦ ਡਿਫੈਂਸ",
   "wordModeLabel": "ਸ਼ਬਦ ਮੋਡ",
+  "combinedResult": "ਮਿਲਾ ਕੇ ਨਤੀਜਾ",
+  "errorLimitReached": "ਤੁਹਾਡੀਆਂ ਅਨੁਵਾਦਾਂ ਖਤਮ ਹੋ ਗਈਆਂ ਹਨ। ਕੀ ਤੁਸੀਂ ਇੱਕ ਵਿਗਿਆਪਨ ਦੇਖ ਕੇ 10 ਹੋਰ ਪ੍ਰਾਪਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "yourPronunciation": "ਤੁਹਾਡਾ ਉਚਾਰਨ",
-  "ttsUnsupportedNatively": "ਇਹ ਭਾਸ਼ਾ ਇਸ ਡਿਵਾਈਸ ਦੀਆਂ ਸੈਟਿੰਗਾਂ 'ਤੇ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।",
-  "homeTab": "ਤਰਜਮਾ",
-  "welcomeTitle": "Talkie ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ!",
-  "welcomeDesc": "ਟਾਕੀ ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ! ਅਸੀਂ 100% ਇਕਸਾਰਤਾ ਨਾਲ ਦੁਨੀਆ ਭਰ ਵਿੱਚ 80 ਤੋਂ ਵੱਧ ਭਾਸ਼ਾਵਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦੇ ਹਾਂ, ਅਤੇ ਸਾਡੇ ਨਵੇਂ ਪ੍ਰੀਮੀਅਮ 3D ਡਿਜ਼ਾਈਨ ਅਤੇ ਅਨੁਕੂਲਿਤ ਕਾਰਗੁਜ਼ਾਰੀ ਨਾਲ ਤੁਹਾਡੇ ਕੋਲ ਇੱਕ ਸੰਪੂਰਨ ਸਿੱਖਣ ਦਾ ਅਨੁਭਵ ਹੋਵੇਗਾ।",
-  "welcomeButton": "ਸ਼ੁਰੂ ਕਰੋ",
-  "labelDetails": "ਵੇਰਵੇ ਸੈਟਿੰਗ",
-  "translationResult": "ਅਨੁਵਾਦ ਨਤੀਜਾ",
-  "inputContent": "ਇਨਪੁਟ ਸਮੱਗਰੀ",
-  "translateNow": "ਹੁਣੇ ਅਨੁਵਾਦ ਕਰੋ",
-  "tooltipSettingsConfirm": "ਸੈਟਿੰਗਾਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
-  "hintNoteExample": "ਉਦਾਹਰਨ: ਸਥਿਤੀ ਦਾ ਵਰਣਨ, ਸਮਾਨਾਰਥੀ ਸ਼ਬਦ, ਆਦਿ",
-  "hintTagExample": "ਉਦਾਹਰਨ: ਕਾਰੋਬਾਰ, ਯਾਤਰਾ...",
-  "addNew": "ਨਵਾਂ ਸ਼ਾਮਲ ਕਰੋ",
-  "newNotebookTitle": "ਨਵੀਂ ਨੋਟਬੁੱਕ ਦਾ ਸਿਰਲੇਖ",
-  "enterNameHint": "ਨਾਮ ਦਰਜ ਕਰੋ",
-  "add": "ਸ਼ਾਮਲ ਕਰੋ",
-  "openSettings": "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
-  "helpNotebook": "ਅਨੁਵਾਦ ਕੀਤੇ ਨਤੀਜਿਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਫੋਲਡਰ ਚੁਣੋ।",
-  "helpNote": "ਸ਼ਬਦ ਦਾ ਅਰਥ, ਉਦਾਹਰਣਾਂ ਜਾਂ ਸਥਿਤੀਆਂ ਆਦਿ ਨੂੰ ਬੇਝਿਜਕ ਨੋਟ ਕਰੋ।",
-  "helpTag": "ਵਰਗੀਕਰਨ ਜਾਂ ਖੋਜ ਲਈ ਕੀਵਰਡ ਦਰਜ ਕਰੋ।",
-  "requestTranslation": "ਅਨੁਵਾਦ ਲਈ ਬੇਨਤੀ ਕਰੋ",
-  "statusRequestSuccess": "ਅਨੁਵਾਦ ਦੀ ਬੇਨਤੀ ਸਫ਼ਲ ਹੋ ਗਈ ਹੈ।",
-  "statusRequestFailed": "ਅਨੁਵਾਦ ਦੀ ਬੇਨਤੀ ਅਸਫ਼ਲ: {error}",
-  "@statusRequestFailed": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "studyLangNotFoundTitle": "ਸਿੱਖਣ ਦੀ ਭਾਸ਼ਾ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ",
-  "studyLangNotFoundDesc": "ਚੁਣੀ ਗਈ ਸਮੱਗਰੀ ਵਰਤਮਾਨ ਸਿੱਖਣ ਦੀ ਭਾਸ਼ਾ ({targetLang}) ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ ਹੈ, ਇਸਲਈ ਇਸਨੂੰ ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਕੀ ਤੁਸੀਂ ਅਨੁਵਾਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
-  "@studyLangNotFoundDesc": {
-    "placeholders": {
-      "targetLang": {
-        "type": "String"
-      }
-    }
-  },
-  "quickStartStep1Title": "1. ਭਾਸ਼ਾ ਸੈਟਿੰਗ",
-  "quickStartStep1Desc": "ਮੇਨੂ > ਭਾਸ਼ਾ ਸੈਟਿੰਗ ਵਿੱਚੋਂ ਪਹਿਲਾਂ ਆਪਣੀ ਅਤੇ ਸਿੱਖਣ ਵਾਲੀ ਭਾਸ਼ਾ ਨਿਸ਼ਚਿਤ ਕਰੋ।",
-  "quickStartStep2Title": "2. ਮੁਢਲੀ ਪ੍ਰਕਿਰਿਆ",
-  "quickStartStep2Desc": "ਇਨਪੁਟ (ਮਾਈਕ੍ਰੋਫ਼ੋਨ/ਕੀਬੋਰਡ) -> ਅਨੁਵਾਦ -> ਸੇਵ ਕ੍ਰਮ ਵਿੱਚ ਆਪਣੇ ਸਿੱਖਣ ਵਾਲੇ ਕਾਰਡ ਬਣਾਓ।",
-  "quickStartStep3Title": "3. ਮੋਡ ਦੀ ਵਰਤੋਂ ਕਰੋ",
-  "quickStartStep3Desc": "ਚੈਟ ਨਾਲ ਅਭਿਆਸ ਕਰੋ, ਅਤੇ ਉਚਾਰਨ ਅਭਿਆਸ ਟੈਬ ਵਿੱਚ ਟੈਕਸਟ ਦੇਖ ਕੇ ਸਿੱਧਾ ਉਚਾਰਨ ਕਰਨ ਦਾ ਅਭਿਆਸ ਕਰੋ।",
-  "noteGuidance": "ਵਧੇਰੇ ਸਹੀ ਅਨੁਵਾਦ ਲਈ ਜਿੱਥੇ ਤੁਸੀਂ ਵਾਧੂ ਵੇරਵੇ ਦਰਜ ਕਰਦੇ ਹੋ"
+  "helpLimitDetails": "💡 [ਅਨੁਵਾਦ ਸੀਮਾ ਜਾਣਕਾਰੀ]\nਹਰ ਰੋਜ਼ ਅੱਧੀ ਰਾਤ ਨੂੰ 20 ਮੁਫ਼ਤ ਅਨੁਵਾਦ ਪ੍ਰਦਾਨ ਕੀਤੇ ਜਾਂਦੇ ਹਨ। ਜੇਕਰ ਤੁਸੀਂ ਉਹ ਸਾਰੇ ਵਰਤ ਲੈਂਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਇੱਕ ਵਿਗਿਆਪਨ ਦੇਖ ਕੇ ਤੁਰੰਤ 10 ਹੋਰ ਅਨੁਵਾਦ ਹਾਸਲ ਕਰ ਸਕਦੇ ਹੋ।",
+  "scanDetails": "• ਟੈਕਸਟ ਐਕਸਟਰੈਕਟ ਕਰਨ ਅਤੇ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਆਪਣੇ ਕੈਮਰੇ ਜਾਂ ਗੈਲਰੀ ਤੋਂ ਇੱਕ ਚਿੱਤਰ ਲੋਡ ਕਰੋ।\n• ਤੁਸੀਂ ਇੱਕ ਤਸਵੀਰ ਵਿੱਚ ਕਈ ਵਾਕਾਂ ਨੂੰ ਵੱਖਰੇ ਤੌਰ 'ਤੇ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਟੈਪ ਕਰ ਸਕਦੇ ਹੋ।\n• ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਕਾਫ਼ੀ ਅਨੁਵਾਦ ਨਹੀਂ ਹਨ, ਤਾਂ ਤੁਸੀਂ ਤੁਰੰਤ 10 ਹੋਰ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਇੱਕ ਵਿਗਿਆਪਨ ਦੇਖ ਸਕਦੇ ਹੋ।"
 }

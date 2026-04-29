@@ -168,16 +168,17 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Die daaglikse kwota vir die KI-diens is oorskry. Probeer weer later of môre.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Vertaling is beperk weens die KI-veiligheidsbeleid.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Kopieer oorspronklike';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Oorspronklike teks is gekopieer.';
 
   @override
   String get errorProfanity =>
@@ -791,7 +792,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get saved => 'Gestoor';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Oorspronklike teks';
 
   @override
   String get saving => 'Stoor...';
@@ -801,7 +802,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Kon geen teks vind wat ooreenstem met die ingestelde leertaal in die foto nie. Kontroleer jou taalinstellings.';
 
   @override
   String get scanNotSupported =>
@@ -1044,13 +1045,13 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Jy het al jou daaglikse gratis vertalings (5 keer) gebruik.\\n\\nWil jy \'n advertensie kyk om 5 keer onmiddellik aan te vul?';
+      'Jy het al jou daaglikse gratis vertalings (10 keer) gebruik.\\n\\nWil jy \'n advertensie kyk om 10 keer onmiddellik aan te vul?';
 
   @override
   String get translationLoaded => 'Gestorde vertaling gelaai';
 
   @override
-  String get translationRefilled => 'Vertalings is 5 keer aangevul!';
+  String get translationRefilled => 'Vertalings is 10 keer aangevul!';
 
   @override
   String get translationResult => 'Vertalingsresultaat';
@@ -1210,7 +1211,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get voluntaryTranslations => 'Vrywillige vertalings';
 
   @override
-  String get watchAdAndRefill => 'Kyk advertensie en vul aan (+5 keer)';
+  String get watchAdAndRefill => 'Kyk advertensie en vul aan (+10 keer)';
 
   @override
   String get welcomeButton => 'Begin';
@@ -1236,8 +1237,20 @@ class AppLocalizationsAf extends AppLocalizations {
   String get wordModeLabel => 'Woordmodus';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Gekombineerde resultaat';
+
+  @override
+  String get errorLimitReached =>
+      'Jy het min vertalings oor. Wil jy \'n advertensie kyk om 10 vertalings te herlaai?';
 
   @override
   String get yourPronunciation => 'Jou Uitspraak';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Vertaalperke]\nDaar word elke dag om middernag 20 gratis vertalings verskaf. Selfs as jy almal gebruik, kan jy onmiddellik 10 bykomende vertalings herlaai deur na \'n advertensie te kyk.';
+
+  @override
+  String get scanDetails =>
+      '• Voer beelde vanaf jou kamera of galery in om teks te onttrek en te vertaal.\n• Jy kan individuele sinne in \'n enkele foto tik om dit afsonderlik te vertaal.\n• As jy min vertalings het, kan jy dadelik \'n advertensie kyk om 10 bykomende vertalings te herlaai.';
 }

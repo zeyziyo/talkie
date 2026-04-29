@@ -675,12 +675,12 @@
   },
   "translationLanguage": "翻译语言",
   "translationLimitExceeded": "超出翻译限额",
-  "translationLimitMessage": "已用完每日免费翻译 (5次)。\\n\\n观看广告以立即补充 5 次吗？",
+  "translationLimitMessage": "已用完每日免费翻译 (10次)。\\n\\n观看广告以立即补充 10 次吗？",
   "translationLoaded": "已加载保存的翻译",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "翻译次数已补充 5 次！",
+  "translationRefilled": "翻译次数已补充 10 次！",
   "translationResult": "翻译结果",
   "translationResultHint": "翻译结果 - 可修改",
   "tryAgain": "再试一次",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "查看在线指南",
   "voluntaryTranslations": "自愿翻译",
-  "watchAdAndRefill": "观看广告并补充 (+5次)",
+  "watchAdAndRefill": "观看广告并补充 (+10次)",
   "welcomeButton": "开始使用",
   "welcomeDesc": "欢迎来到Talkie！我们以100%的完整性支持全球80多种语言，并通过全新的优质3D设计和优化的性能，为您带来完美的学习体验。",
   "welcomeTitle": "欢迎使用 Talkie!",

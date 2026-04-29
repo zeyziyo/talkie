@@ -1047,14 +1047,14 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'អ្នកបានប្រើការបកប្រែឥតគិតថ្លៃប្រចាំថ្ងៃ (5 ដង) របស់អ្នកទាំងអស់ហើយ។\\n\\nតើអ្នកចង់មើលការផ្សាយពាណិជ្ជកម្ម និងបញ្ចូលទឹកប្រាក់ 5 ដងភ្លាមៗទេ?';
+      'អ្នកបានប្រើការបកប្រែឥតគិតថ្លៃប្រចាំថ្ងៃ (10 ដង) របស់អ្នកទាំងអស់ហើយ។\\n\\nតើអ្នកចង់មើលការផ្សាយពាណិជ្ជកម្ម និងបញ្ចូលទឹកប្រាក់ 10 ដងភ្លាមៗទេ?';
 
   @override
   String get translationLoaded => 'បានផ្ទុកការបកប្រែដែលបានរក្សាទុក';
 
   @override
   String get translationRefilled =>
-      'ចំនួននៃការបកប្រែត្រូវបានបញ្ចូលទឹកប្រាក់ 5 ដង!';
+      'ចំនួននៃការបកប្រែត្រូវបានបញ្ចូលទឹកប្រាក់ 10 ដង!';
 
   @override
   String get translationResult => 'លទ្ធផល​ការបកប្រែ';
@@ -1223,7 +1223,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get watchAdAndRefill =>
-      'មើលការផ្សាយពាណិជ្ជកម្ម និងបញ្ចូលទឹកប្រាក់ (+5 ដង)';
+      'មើលការផ្សាយពាណិជ្ជកម្ម និងបញ្ចូលទឹកប្រាក់ (+10 ដង)';
 
   @override
   String get welcomeButton => 'ចាប់ផ្តើម';
@@ -1252,5 +1252,16 @@ class AppLocalizationsKm extends AppLocalizations {
   String get combinedResult => '통합 결과';
 
   @override
+  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+
+  @override
   String get yourPronunciation => 'ការបញ្ចេញសំឡេងរបស់អ្នក';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+
+  @override
+  String get scanDetails =>
+      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
 }

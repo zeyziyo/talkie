@@ -168,16 +168,17 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Cota zilnică pentru serviciul de inteligență artificială a fost epuizată. Vă rugăm să încercați din nou mai târziu sau mâine.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Traducerea a fost restricționată din cauza politicii de siguranță AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Copiază originalul';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Textul original a fost copiat.';
 
   @override
   String get errorProfanity =>
@@ -797,7 +798,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get saved => 'Salvat';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Text original';
 
   @override
   String get saving => 'Salvare...';
@@ -807,7 +808,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Nu s-a găsit text care să corespundă limbii de învățare setate în fotografie. Verificați setările de limbă.';
 
   @override
   String get scanNotSupported =>
@@ -1053,14 +1054,14 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Ai folosit toate traducerile gratuite zilnice (5).\\n\\nVrei să vizionezi un anunț pentru a reîncărca imediat 5?';
+      'Ai folosit toate traducerile gratuite zilnice (10).\\n\\nVrei să vizionezi un anunț pentru a reîncărca imediat 10?';
 
   @override
   String get translationLoaded => 'Traducere salvată încărcată';
 
   @override
   String get translationRefilled =>
-      'Numărul de traduceri a fost reîncărcat cu 5!';
+      'Numărul de traduceri a fost reîncărcat cu 10!';
 
   @override
   String get translationResult => 'Rezultatul traducerii';
@@ -1225,7 +1226,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get voluntaryTranslations => 'Traduceri voluntare';
 
   @override
-  String get watchAdAndRefill => 'Vezi un anunț și reîncarcă (+5)';
+  String get watchAdAndRefill => 'Vezi un anunț și reîncarcă (+10)';
 
   @override
   String get welcomeButton => 'Începe';
@@ -1251,8 +1252,20 @@ class AppLocalizationsRo extends AppLocalizations {
   String get wordModeLabel => 'Mod cuvânt';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Rezultat combinat';
+
+  @override
+  String get errorLimitReached =>
+      'Nu mai aveți încercări de traducere. Doriți să vizionați un anunț pentru a reîncărca 10 încercări?';
 
   @override
   String get yourPronunciation => 'Pronunția ta';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Ghid privind limita de traduceri]\nÎn fiecare zi la miezul nopții sunt oferite 20 de traduceri gratuite. Dacă le epuizați pe toate, puteți viziona un anunț pentru a reîncărca imediat 10 traduceri suplimentare.';
+
+  @override
+  String get scanDetails =>
+      '• Importați imagini din cameră sau galerie pentru a extrage și traduce text.\n• Puteți atinge mai multe propoziții dintr-o singură fotografie pentru a le traduce individual.\n• Dacă nu mai aveți încercări de traducere, puteți viziona imediat un anunț pentru a reîncărca 10 încercări suplimentare.';
 }

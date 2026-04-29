@@ -165,16 +165,17 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'कृत्रिम बुद्धिमत्ता सेवेचा दैनिक कोटा संपला आहे. कृपया काही वेळाने किंवा उद्या पुन्हा प्रयत्न करा.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'AI सुरक्षा धोरणामुळे भाषांतर प्रतिबंधित केले आहे.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'मूळ कॉपी करा';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'मूळ मजकूर कॉपी केला.';
 
   @override
   String get errorProfanity => 'अपशब्दांमुळे भाषांतर करता येत नाही.';
@@ -786,7 +787,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get saved => 'जतन केले';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'मूळ मजकूर';
 
   @override
   String get saving => 'जतन करत आहे...';
@@ -796,7 +797,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'छायाचित्रामध्ये सेट केलेल्या शिक्षण भाषेनुसार कोणताही मजकूर आढळला नाही. कृपया भाषेची सेटिंग्ज तपासा.';
 
   @override
   String get scanNotSupported =>
@@ -1039,13 +1040,13 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'तुम्ही तुमची दैनंदिन मोफत भाषांतर मर्यादा (5 वेळा) वापरली आहे.\\n\\nतुम्ही जाहिरात पाहून 5 वेळा त्वरित रिचार्ज करू इच्छिता?';
+      'तुम्ही तुमची दैनंदिन मोफत भाषांतर मर्यादा (10 वेळा) वापरली आहे.\\n\\nतुम्ही जाहिरात पाहून 10 वेळा त्वरित रिचार्ज करू इच्छिता?';
 
   @override
   String get translationLoaded => 'जतन केलेले भाषांतर लोड केले';
 
   @override
-  String get translationRefilled => 'भाषांतर ५ वेळा रिचार्ज झाले!';
+  String get translationRefilled => 'भाषांतर १० वेळा रिचार्ज झाले!';
 
   @override
   String get translationResult => 'भाषांतर निकाल';
@@ -1211,7 +1212,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get voluntaryTranslations => 'स्वैच्छिक भाषांतर';
 
   @override
-  String get watchAdAndRefill => 'जाहिरात पाहून रिचार्ज करा (+5 वेळा)';
+  String get watchAdAndRefill => 'जाहिरात पाहून रिचार्ज करा (+10 वेळा)';
 
   @override
   String get welcomeButton => 'सुरू करा';
@@ -1237,8 +1238,20 @@ class AppLocalizationsMr extends AppLocalizations {
   String get wordModeLabel => 'शब्द मोड';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'एकत्रित निकाल';
+
+  @override
+  String get errorLimitReached =>
+      'तुमच्याकडे भाषांतर पुरेसे नाही. तुम्ही जाहिरात पाहून 10 भाषांतरे मिळवू इच्छिता?';
 
   @override
   String get yourPronunciation => 'तुमचे उच्चार';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [भाषांतर मर्यादा सूचना]\nदररोज मध्यरात्री 20 मोफत भाषांतरे दिली जातात. जरी ती सर्व वापरली गेली, तरी तुम्ही जाहिरात पाहून त्वरित 10 अतिरिक्त भाषांतरे मिळवू शकता.';
+
+  @override
+  String get scanDetails =>
+      '• कॅमेर्‍यामधून किंवा गॅलरीमधून प्रतिमा आयात करा आणि मजकूर काढून भाषांतर करा.\n• एका फोटोमधील अनेक वाक्ये स्वतंत्रपणे भाषांतरित करण्यासाठी टॅप केली जाऊ शकतात.\n• भाषांतरांची संख्या अपुरी असल्यास, तुम्ही त्वरित जाहिरात पाहून आणखी 10 भाषांतरे मिळवू शकता.';
 }

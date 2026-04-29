@@ -169,16 +169,16 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'AI ਸੇਵਾ ਲਈ ਤੁਹਾਡਾ ਰੋਜ਼ਾਨਾ ਕੋਟਾ ਖਤਮ ਹੋ ਗਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਜਾਂ ਕੱਲ੍ਹ ਨੂੰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy => 'AI ਸੁਰੱਖਿਆ ਨੀਤੀ ਦੇ ਕਾਰਨ ਅਨੁਵਾਦ ਸੀਮਤ ਹੈ।';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'ਮੂਲ ਕਾਪੀ ਕਰੋ';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'ਮੂਲ ਟੈਕਸਟ ਕਾਪੀ ਹੋ ਗਿਆ ਹੈ।';
 
   @override
   String get errorProfanity =>
@@ -195,7 +195,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get errors => 'ਗਲਤੀਆਂ:';
 
   @override
-  String get extractedText => '인식된 텍스트';
+  String get extractedText => 'ਪਛਾਣਿਆ ਗਿਆ ਟੈਕਸਟ';
 
   @override
   String get female => 'ਔਰਤ';
@@ -368,7 +368,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String importFolderSuccess(num files, num entries) {
-    return '$files개 파일, $entries개 항목을 가져왔습니다.';
+    return '$files ਫਾਈਲਾਂ, $entries ਐਂਟਰੀਆਂ ਇੰਪੋਰਟ ਕੀਤੀਆਂ ਗਈਆਂ।';
   }
 
   @override
@@ -383,16 +383,16 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
-  String get importSourceFile => '단일 JSON 파일';
+  String get importSourceFile => 'ਇੱਕ JSON ਫਾਈਲ';
 
   @override
-  String get importSourceFolder => '폴더 (언어별 라이브러리 구조)';
+  String get importSourceFolder => 'ਫੋਲਡਰ (ਭਾਸ਼ਾ ਅਨੁਸਾਰ ਲਾਇਬ੍ਰੇਰੀ ਢਾਂਚਾ)';
 
   @override
-  String get importSourceTitle => '가져오기 원본 선택';
+  String get importSourceTitle => 'ਇੰਪੋਰਟ ਸਰੋਤ ਚੁਣੋ';
 
   @override
-  String get importSourceZip => 'ZIP 파일 (압축된 폴더)';
+  String get importSourceZip => 'ZIP ਫਾਈਲ (ਕੰਪਰੈੱਸਡ ਫੋਲਡਰ)';
 
   @override
   String importTotal(int count) {
@@ -489,7 +489,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get listening => 'ਸੁਣ ਰਿਹਾ ਹੈ...';
 
   @override
-  String get location => '위치';
+  String get location => 'ਸਥਾਨ';
 
   @override
   String get login => 'ਲੌਗਇਨ';
@@ -642,7 +642,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get perfect => 'ਬਹੁਤ ਵਧੀਆ!';
 
   @override
-  String get pickGallery => '갤러리에서 선택';
+  String get pickGallery => 'ਗੈਲਰੀ ਤੋਂ ਚੁਣੋ';
 
   @override
   String get playAgain => 'ਦੁਬਾਰਾ ਖੇਡੋ';
@@ -662,7 +662,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get posAdverb => 'ਕਿਰਿਆ ਵਿਸ਼ੇਸ਼ਣ';
 
   @override
-  String get posArticle => '관사';
+  String get posArticle => 'ਲੇਖ';
 
   @override
   String get posConjunction => 'ਸੰਯੋਜਕ';
@@ -674,7 +674,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get posNoun => 'ਨਾਂਵ';
 
   @override
-  String get posParticle => '접사/조사';
+  String get posParticle => 'ਕਣ';
 
   @override
   String get posPreposition => 'ਪੂਰਵ-ਸਥਿਤੀ/ਪੋਸਟਪੋਜ਼ੀਸ਼ਨ';
@@ -692,7 +692,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get practiceWordsOnly => 'ਸਿਰਫ਼ ਸ਼ਬਦਾਂ ਦਾ ਅਭਿਆਸ ਕਰੋ';
 
   @override
-  String get processing => '처리 중...';
+  String get processing => 'ਪ੍ਰਕਿਰਿਆ ਚੱਲ ਰਹੀ ਹੈ...';
 
   @override
   String progress(int current, int total) {
@@ -769,10 +769,10 @@ class AppLocalizationsPa extends AppLocalizations {
   String get save => 'ਸੁਰੱਖਿਅਤ ਕਰੋ';
 
   @override
-  String get saveAsSentence => '문장으로 저장';
+  String get saveAsSentence => 'ਵਾਕ ਵਜੋਂ ਸੁਰੱਖਿਅਤ ਕਰੋ';
 
   @override
-  String get saveAsWord => '단어로 저장';
+  String get saveAsWord => 'ਸ਼ਬਦ ਵਜੋਂ ਸੁਰੱਖਿਅਤ ਕਰੋ';
 
   @override
   String get saveData => 'ਸੇਵ ਕਰੋ';
@@ -783,7 +783,7 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
-  String get saveToHistory => '스캔 이력에 저장';
+  String get saveToHistory => 'ਸਕੈਨ ਇਤਿਹਾਸ ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਕਰੋ';
 
   @override
   String get saveTranslationsFromSearch => 'ਖੋਜ ਮੋਡ ਤੋਂ ਅਨੁਵਾਦ ਸੇਵ ਕਰੋ';
@@ -792,24 +792,24 @@ class AppLocalizationsPa extends AppLocalizations {
   String get saved => 'ਸੇਵ ਕੀਤਾ';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'ਮੂਲ ਟੈਕਸਟ';
 
   @override
   String get saving => 'ਸੇਵ ਕਰ ਰਿਹਾ ਹੈ...';
 
   @override
-  String get scanInstructions => '텍스트가 포함된 사진을 촬영하거나 갤러리에서 선택하세요.';
+  String get scanInstructions => 'ਟੈਕਸਟ ਵਾਲੀ ਇੱਕ ਤਸਵੀਰ ਲਓ ਜਾਂ ਗੈਲਰੀ ਤੋਂ ਚੁਣੋ।';
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'ਤਸਵੀਰ ਵਿੱਚ ਸੈੱਟ ਕੀਤੀ ਸਿੱਖਣ ਭਾਸ਼ਾ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਕੋਈ ਟੈਕਸਟ ਨਹੀਂ ਮਿਲਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਭਾਸ਼ਾ ਸੈਟਿੰਗਾਂ ਦੀ ਜਾਂਚ ਕਰੋ।';
 
   @override
   String get scanNotSupported =>
-      '이 언어는 현재 스캔(OCR) 기능을 지원하지 않습니다. 텍스트를 직접 입력하거나 음성을 사용해 주세요.';
+      'ਇਹ ਭਾਸ਼ਾ ਇਸ ਸਮੇਂ ਸਕੈਨ (OCR) ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਟੈਕਸਟ ਦਰਜ ਕਰੋ ਜਾਂ ਵੌਇਸ ਦੀ ਵਰਤੋਂ ਕਰੋ।';
 
   @override
-  String get scanLabel => '스캔';
+  String get scanLabel => 'ਸਕੈਨ ਕਰੋ';
 
   @override
   String score(String score) {
@@ -1046,13 +1046,13 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'ਤੁਸੀਂ ਆਪਣਾ ਰੋਜ਼ਾਨਾ ਮੁਫ਼ਤ ਅਨੁਵਾਦ (5 ਵਾਰ) ਪੂਰਾ ਕਰ ਲਿਆ ਹੈ।\\n\\nਕੀ ਤੁਸੀਂ ਇਸ਼ਤਿਹਾਰ ਦੇਖ ਕੇ ਤੁਰੰਤ 5 ਵਾਰ ਰੀਚਾਰਜ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?';
+      'ਤੁਸੀਂ ਆਪਣਾ ਰੋਜ਼ਾਨਾ ਮੁਫ਼ਤ ਅਨੁਵਾਦ (10 ਵਾਰ) ਪੂਰਾ ਕਰ ਲਿਆ ਹੈ।\\n\\nਕੀ ਤੁਸੀਂ ਇਸ਼ਤਿਹਾਰ ਦੇਖ ਕੇ ਤੁਰੰਤ 10 ਵਾਰ ਰੀਚਾਰਜ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?';
 
   @override
   String get translationLoaded => 'ਸੇਵ ਕੀਤਾ ਅਨੁਵਾਦ ਲੋਡ ਕੀਤਾ ਗਿਆ';
 
   @override
-  String get translationRefilled => 'ਅਨੁਵਾਦਾਂ ਦੀ ਗਿਣਤੀ 5 ਵਾਰ ਰੀਚਾਰਜ ਹੋ ਗਈ ਹੈ!';
+  String get translationRefilled => 'ਅਨੁਵਾਦਾਂ ਦੀ ਗਿਣਤੀ 10 ਵਾਰ ਰੀਚਾਰਜ ਹੋ ਗਈ ਹੈ!';
 
   @override
   String get translationResult => 'ਅਨੁਵਾਦ ਨਤੀਜਾ';
@@ -1185,13 +1185,13 @@ class AppLocalizationsPa extends AppLocalizations {
   String get typeExclamation => 'ਵਿਸਮਿਕ ਵਾਕ';
 
   @override
-  String get typeIdiom => '관용구';
+  String get typeIdiom => 'ਮੁਹਾਵਰਾ';
 
   @override
   String get typeImperative => 'ਹੁਕਮੀਆ ਵਾਕ';
 
   @override
-  String get typeProverb => '속담/격언';
+  String get typeProverb => 'ਕਹਾਵਤ';
 
   @override
   String get typeQuestion => 'ਪ੍ਰਸ਼ਨ';
@@ -1217,7 +1217,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get voluntaryTranslations => 'ਵਲੰਟਰੀ ਅਨੁਵਾਦ';
 
   @override
-  String get watchAdAndRefill => 'ਇਸ਼ਤਿਹਾਰ ਦੇਖੋ ਅਤੇ ਰੀਚਾਰਜ ਕਰੋ (+5 ਵਾਰ)';
+  String get watchAdAndRefill => 'ਇਸ਼ਤਿਹਾਰ ਦੇਖੋ ਅਤੇ ਰੀਚਾਰਜ ਕਰੋ (+10 ਵਾਰ)';
 
   @override
   String get welcomeButton => 'ਸ਼ੁਰੂ ਕਰੋ';
@@ -1243,8 +1243,20 @@ class AppLocalizationsPa extends AppLocalizations {
   String get wordModeLabel => 'ਸ਼ਬਦ ਮੋਡ';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'ਮਿਲਾ ਕੇ ਨਤੀਜਾ';
+
+  @override
+  String get errorLimitReached =>
+      'ਤੁਹਾਡੀਆਂ ਅਨੁਵਾਦਾਂ ਖਤਮ ਹੋ ਗਈਆਂ ਹਨ। ਕੀ ਤੁਸੀਂ ਇੱਕ ਵਿਗਿਆਪਨ ਦੇਖ ਕੇ 10 ਹੋਰ ਪ੍ਰਾਪਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?';
 
   @override
   String get yourPronunciation => 'ਤੁਹਾਡਾ ਉਚਾਰਨ';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [ਅਨੁਵਾਦ ਸੀਮਾ ਜਾਣਕਾਰੀ]\nਹਰ ਰੋਜ਼ ਅੱਧੀ ਰਾਤ ਨੂੰ 20 ਮੁਫ਼ਤ ਅਨੁਵਾਦ ਪ੍ਰਦਾਨ ਕੀਤੇ ਜਾਂਦੇ ਹਨ। ਜੇਕਰ ਤੁਸੀਂ ਉਹ ਸਾਰੇ ਵਰਤ ਲੈਂਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਇੱਕ ਵਿਗਿਆਪਨ ਦੇਖ ਕੇ ਤੁਰੰਤ 10 ਹੋਰ ਅਨੁਵਾਦ ਹਾਸਲ ਕਰ ਸਕਦੇ ਹੋ।';
+
+  @override
+  String get scanDetails =>
+      '• ਟੈਕਸਟ ਐਕਸਟਰੈਕਟ ਕਰਨ ਅਤੇ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਆਪਣੇ ਕੈਮਰੇ ਜਾਂ ਗੈਲਰੀ ਤੋਂ ਇੱਕ ਚਿੱਤਰ ਲੋਡ ਕਰੋ।\n• ਤੁਸੀਂ ਇੱਕ ਤਸਵੀਰ ਵਿੱਚ ਕਈ ਵਾਕਾਂ ਨੂੰ ਵੱਖਰੇ ਤੌਰ \'ਤੇ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਟੈਪ ਕਰ ਸਕਦੇ ਹੋ।\n• ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਕਾਫ਼ੀ ਅਨੁਵਾਦ ਨਹੀਂ ਹਨ, ਤਾਂ ਤੁਸੀਂ ਤੁਰੰਤ 10 ਹੋਰ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਇੱਕ ਵਿਗਿਆਪਨ ਦੇਖ ਸਕਦੇ ਹੋ।';
 }

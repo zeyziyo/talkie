@@ -168,16 +168,17 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Dagleg úthlutun fyrir gervigreindarþjónustuna er uppurin. Vinsamlegast reyndu aftur seinna eða á morgun.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Þýðingar eru takmarkaðar vegna öryggisstefnu gervigreindar.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Afrita frumtexta';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Frumtexti afritaður';
 
   @override
   String get errorProfanity =>
@@ -792,7 +793,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get saved => 'Vistað';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Frumtexti';
 
   @override
   String get saving => 'Vista...';
@@ -802,7 +803,7 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Fann engan texta á myndinni sem passar við valið tungumál. Vinsamlegast athugaðu tungumálastillingarnar.';
 
   @override
   String get scanNotSupported =>
@@ -1046,13 +1047,13 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Þú hefur notað allar þínar daglegu ókeypis þýðingar (5 sinnum).\\n\\nViltu fylla strax á 5 sinnum með því að horfa á auglýsingu?';
+      'Þú hefur notað allar þínar daglegu ókeypis þýðingar (10 sinnum).\\n\\nViltu fylla strax á 10 sinnum með því að horfa á auglýsingu?';
 
   @override
   String get translationLoaded => 'Hlaðið inn vistaðri þýðingu';
 
   @override
-  String get translationRefilled => 'Þýðingartímar fylltir á 5 sinnum!';
+  String get translationRefilled => 'Þýðingartímar fylltir á 10 sinnum!';
 
   @override
   String get translationResult => 'Þýðingarniðurstaða';
@@ -1220,7 +1221,7 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get watchAdAndRefill =>
-      'Áfylling með því að horfa á auglýsingu (+5 sinnum)';
+      'Áfylling með því að horfa á auglýsingu (+10 sinnum)';
 
   @override
   String get welcomeButton => 'Byrja';
@@ -1246,8 +1247,20 @@ class AppLocalizationsIs extends AppLocalizations {
   String get wordModeLabel => 'Orðastilling';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Samþætt niðurstaða';
+
+  @override
+  String get errorLimitReached =>
+      'Þú hefur ekki nægar þýðingar eftir. Viltu horfa á auglýsingu til að fá 10 til viðbótar?';
 
   @override
   String get yourPronunciation => 'Framburðurinn þinn';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Leiðbeiningar um þýðingatakmarkanir]\n20 ókeypis þýðingar eru gefnar á hverjum degi á miðnætti. Ef þú klárar þær allar geturðu horft á auglýsingu til að fá 10 til viðbótar strax.';
+
+  @override
+  String get scanDetails =>
+      '• Hladdu upp myndum úr myndavélinni eða myndasafninu til að draga út og þýða texta.\n• Pikkaðu á margar setningar á einni mynd til að þýða þær hver fyrir sig.\n• Ef þú hefur ekki nægar þýðingar geturðu horft á auglýsingu til að fá 10 til viðbótar strax.';
 }

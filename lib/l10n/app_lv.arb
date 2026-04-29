@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Nevar tulkot, jo satur naida runu.",
   "errorOtherSafety": "Tulkošana tika atteikta AI drošības politikas dēļ.",
+  "errorQuotaExceeded": "Ir pārsniegts mākslīgā intelekta pakalpojumu dienas kvotas limits. Lūdzu, mēģiniet vēlreiz vēlāk vai rīt.",
+  "errorSafetyPolicy": "Tulkošana ir ierobežota AI drošības politikas dēļ.",
+  "copyOriginal": "Kopēt oriģinālu",
+  "originalCopied": "Oriģinālais teksts ir nokopēts.",
   "errorProfanity": "Nevar tulkot, jo satur necenzētus vārdus.",
   "errorSelectCategory": "Vispirms atlasiet vārdu vai teikumu!",
   "errorSexualContent": "Nevar tulkot, jo satur seksuāla rakstura saturu.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Oriģinālais teksts",
   "saving": "Saglabā...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Atlasiet skenējamo attēlu",
+  "scanNoMatch": "Attēlā nevarēja atrast tekstu, kas atbilstu iestatītajai mācību valodai. Lūdzu, pārbaudiet valodas iestatījumus.",
   "scanNotSupported": "Šī valoda neatbalsta skenēšanas funkcionalitāti. OCR pašlaik atbalsta tikai latīņu, ķīniešu, devanagari (hindi u.c.), japāņu un korejiešu rakstzīmes.",
   "scanLabel": "Skenēt",
   "score": "Precizitāte: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Tulkošanas valoda",
   "translationLimitExceeded": "Pārsniegts tulkošanas ierobežojums",
-  "translationLimitMessage": "Esat izmantojis visus savus ikdienas bezmaksas tulkojumus (5 reizes).\\n\\nVai vēlaties skatīties reklāmu un nekavējoties papildināt 5 reizes?",
+  "translationLimitMessage": "Esat izmantojis visus savus ikdienas bezmaksas tulkojumus (10 reizes).\\n\\nVai vēlaties skatīties reklāmu un nekavējoties papildināt 10 reizes?",
   "translationLoaded": "Ielādēts saglabātais tulkojums",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Jūsu tulkošanas reižu skaits ir papildināts ar 5 reizēm!",
+  "translationRefilled": "Jūsu tulkošanas reižu skaits ir papildināts ar 10 reizēm!",
   "translationResult": "Tulkošanas rezultāts",
   "translationResultHint": "Tulkošanas rezultāts - var rediģēt",
   "tryAgain": "Mēģiniet vēlreiz",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Skatīt tiešsaistes ceļvedi",
   "voluntaryTranslations": "Brīvprātīgie tulkojumi",
-  "watchAdAndRefill": "Skatīties reklāmu un papildināt (+5 reizes)",
+  "watchAdAndRefill": "Skatīties reklāmu un papildināt (+10 reizes)",
   "welcomeButton": "Sākt",
   "welcomeDesc": "Laipni lūdzam Talkie! Mēs atbalstām vairāk nekā 80 valodas visā pasaulē ar 100% integritāti, piedāvājot perfektu mācību pieredzi ar jaunu, premium 3D dizainu un optimizētu veiktspēju.",
   "welcomeTitle": "Laipni lūdzam Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Aizstāviet bāzi, izrunājot vārdus, pirms ienaidnieks sasniedz.",
   "wordDefenseTitle": "Vārdu aizsardzība",
   "wordModeLabel": "Vārdu režīms",
-  "yourPronunciation": "Jūsu izruna"
+  "combinedResult": "Apvienotais rezultāts",
+  "errorLimitReached": "Jums ir beigušies tulkojumi. Vai vēlaties noskatīties reklāmu, lai saņemtu 10 papildu tulkojumus?",
+  "yourPronunciation": "Jūsu izruna",
+  "helpLimitDetails": "💡 [Tulkošanas limita informācija]\nKatru dienu pusnaktī tiek nodrošināti 20 bezmaksas tulkojumi. Ja tie visi ir izmantoti, varat noskatīties reklāmu, lai nekavējoties saņemtu 10 papildu tulkojumus.",
+  "scanDetails": "• Importējiet attēlus no kameras vai galerijas, lai iegūtu un tulkotu tekstu.\n• Varat pieskarties vairākiem teikumiem vienā fotoattēlā, lai tos tulkotu atsevišķi.\n• Ja jums ir beigušies tulkojumi, varat nekavējoties noskatīties reklāmu, lai saņemtu papildu 10 tulkojumus."
 }

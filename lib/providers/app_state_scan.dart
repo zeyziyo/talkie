@@ -37,7 +37,7 @@ extension AppStateScanExtension on AppState {
           for (var block in recognizedText.blocks) {
             String lang = 'auto';
             if (block.recognizedLanguages.isNotEmpty) {
-              lang = block.recognizedLanguages.first.languageCode;
+              lang = block.recognizedLanguages.first; // languageCode does not exist on String
             } else {
               if (script == TextRecognitionScript.korean) { lang = 'ko'; }
               else if (script == TextRecognitionScript.japanese) { lang = 'ja'; }
@@ -149,6 +149,9 @@ extension AppStateScanExtension on AppState {
     notify();
 
     try {
+      // 1. 번역 한도 체크 (5회 제한)
+      await _usageService.checkLimitOrThrow();
+
       final cleanText = originalText.replaceAll('\n', ' ');
       final result = await TranslationService.translate(
         text: cleanText,
@@ -159,11 +162,18 @@ extension AppStateScanExtension on AppState {
       final translatedText = result['text']?.toString() ?? '';
       if (result['isValid'] == true || translatedText.isNotEmpty) {
         _scanReviewItems[index]['translated'] = translatedText;
+        
+        // 2. 번역 성공 시에만 횟수 차감
+        await _usageService.incrementUsage();
       } else {
         _scanReviewItems[index]['translated'] = result['reason'] ?? 'ERROR';
       }
     } catch (e) {
-      _scanReviewItems[index]['translated'] = 'Error: $e';
+      if (e is LimitReachedException) {
+        _scanReviewItems[index]['translated'] = 'LIMIT';
+      } else {
+        _scanReviewItems[index]['translated'] = 'Error: $e';
+      }
     } finally {
       _isTranslatingSingleMap[index] = false;
       notify();
@@ -185,16 +195,63 @@ extension AppStateScanExtension on AppState {
     notify();
 
     try {
-      final repo = UnifiedRepository();
-      await repo.saveScanHistory(
-        originalText: combinedOriginal,
-        translatedText: combinedTranslated,
-        sourceLang: _targetLang,
+      await UnifiedRepository.saveUnifiedRecord(
+        text: combinedOriginal,
+        translation: combinedTranslated,
+        lang: _targetLang,
         targetLang: _sourceLang,
+        type: 'sentence',
       );
     } catch (e) {
       _isSaved = false;
     } finally {
+      notify();
+    }
+  }
+
+  /// 광고를 시청하고 번역 횟수 10회 충전 (AdMob 연동)
+  Future<void> watchAdAndRefillInScan(BuildContext context) async {
+    _statusMessage = 'Loading Ad...';
+    notify();
+
+    try {
+      // 1. 보상형 광고 로드
+      await RewardedAd.load(
+        adUnitId: UsageService.adUnitId,
+        request: const AdRequest(),
+        rewardedAdLoadCallback: RewardedAdLoadCallback(
+          onAdLoaded: (ad) {
+            ad.fullScreenContentCallback = FullScreenContentCallback(
+              onAdDismissedFullScreenContent: (ad) => ad.dispose(),
+              onAdFailedToShowFullScreenContent: (ad, error) => ad.dispose(),
+            );
+
+            // 2. 광고 표시
+            ad.show(onUserEarnedReward: (ad, reward) async {
+              // 3. 보상 지급 (10회 충전)
+              await _usageService.addRefill(10);
+              
+              _statusMessage = 'Refilled! +10 translations';
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Recharged! +10 translation credits'),
+                    backgroundColor: Colors.green,
+                  ),
+                );
+              }
+              notify();
+            });
+          },
+          onAdFailedToLoad: (error) {
+            debugPrint('RewardedAd failed to load: $error');
+            _statusMessage = 'Ad failed to load';
+            notify();
+          },
+        ),
+      );
+    } catch (e) {
+      _statusMessage = 'Ad error: $e';
       notify();
     }
   }

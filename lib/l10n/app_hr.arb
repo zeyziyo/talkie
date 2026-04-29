@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Jezik prijevoda",
   "translationLimitExceeded": "Prekoračeno je ograničenje prijevoda",
-  "translationLimitMessage": "Iskoristili ste sve svoje besplatne dnevne prijevode (5 puta).\\n\\Želite li odmah napuniti 5 puta gledanjem oglasa?",
+  "translationLimitMessage": "Iskoristili ste sve svoje besplatne dnevne prijevode (10 puta).\\n\\Želite li odmah napuniti 10 puta gledanjem oglasa?",
   "translationLoaded": "Učitavanje spremljenog prijevoda",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Broj prijevoda je napunjen 5 puta!",
+  "translationRefilled": "Broj prijevoda je napunjen 10 puta!",
   "translationResult": "Rezultat prijevoda",
   "translationResultHint": "Rezultat prijevoda - može se uređivati",
   "tryAgain": "Pokušajte ponovo",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Pogledajte online vodič",
   "voluntaryTranslations": "Dobrovoljni prijevodi",
-  "watchAdAndRefill": "Napunite gledanjem oglasa (+5 puta)",
+  "watchAdAndRefill": "Napunite gledanjem oglasa (+10 puta)",
   "welcomeButton": "Započni",
   "welcomeDesc": "Dobrodošli u Talkie! Podržavamo preko 80 jezika diljem svijeta sa 100% integritetom, uz novi premium 3D dizajn i optimizirane performanse za savršeno iskustvo učenja.",
   "welcomeTitle": "Dobrodošli u Talkie!",

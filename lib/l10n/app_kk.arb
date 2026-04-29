@@ -675,12 +675,12 @@
   },
   "translationLanguage": "Аударма тілі",
   "translationLimitExceeded": "Аударма шегінен асып кетті",
-  "translationLimitMessage": "Күнделікті тегін аударманы (5 рет) толығымен пайдаландыңыз.\\n\\nЖарнаманы көріп, 5 рет тез арада толтырғыңыз келе ме?",
+  "translationLimitMessage": "Күнделікті тегін аударманы (10 рет) толығымен пайдаландыңыз.\\n\\nЖарнаманы көріп, 10 рет тез арада толтырғыңыз келе ме?",
   "translationLoaded": "Сақталған аударма жүктелді",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Аударма саны 5 ретке толтырылды!",
+  "translationRefilled": "Аударма саны 10 ретке толтырылды!",
   "translationResult": "Аударма нәтижесі",
   "translationResultHint": "Аударма нәтижесі - өзгертуге болады",
   "tryAgain": "Қайтадан көріңіз",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "Онлайн нұсқауды көру",
   "voluntaryTranslations": "Ерікті аудармалар",
-  "watchAdAndRefill": "Жарнаманы көріп толтыру (+5 рет)",
+  "watchAdAndRefill": "Жарнаманы көріп толтыру (+10 рет)",
   "welcomeButton": "Бастау",
   "welcomeDesc": "Talkie-ге қош келдіңіз! Біз дүние жүзіндегі 80-нен астам тілді 100% қолдаймыз және жаңа премиум 3D дизайны мен оңтайландырылған өнімділігімен тамаша оқу тәжірибесін ұсынамыз.",
   "welcomeTitle": "Talkie-ге қош келдіңіз!",

@@ -168,16 +168,16 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'AI ସେବା ପାଇଁ ଦୈନିକ କୋଟା ସରିଯାଇଛି। ଦୟାକରି କିଛି ସମୟ ପରେ କିମ୍ବା କାଲି ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ।';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy => 'AI ସୁରକ୍ଷା ନୀତି ହେତୁ ଅନୁବାଦ ସୀମିତ କରାଯାଇଛି।';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'ମୂଳ କପି କରନ୍ତୁ';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'ମୂଳ ଟେକ୍ସଟ୍ କପି ହୋଇଗଲା।';
 
   @override
   String get errorProfanity =>
@@ -794,7 +794,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get saved => 'ସେଭ୍ ହୋଇଗଲା';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'ମୂଳ ଟେକ୍ସଟ୍';
 
   @override
   String get saving => 'ସେଭ୍ କରୁଛି...';
@@ -804,7 +804,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'ଫଟୋରେ ସେଟ୍ ହୋଇଥିବା ଶିକ୍ଷଣ ଭାଷା ସହିତ ମେଳ ହେଉଥିବା କୌଣସି ଟେକ୍ସଟ୍ ମିଳିଲା ନାହିଁ। ଭାଷା ସେଟିଂ ଯାଞ୍ଚ କରନ୍ତୁ।';
 
   @override
   String get scanNotSupported =>
@@ -1048,13 +1048,13 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'ଆପଣ ସମସ୍ତ ଦୈନିକ ମାଗଣା ଅନୁବାଦ (5 ଥର) ବ୍ୟବହାର କରିଛନ୍ତି।\\n\\nଆପଣ ଏକ ବିଜ୍ଞାପନ ଦେଖି ତୁରନ୍ତ 5 ଥର ରିଚାର୍ଜ କରିବାକୁ ଚାହାଁନ୍ତି କି?';
+      'ଆପଣ ସମସ୍ତ ଦୈନିକ ମାଗଣା ଅନୁବାଦ (10 ଥର) ବ୍ୟବହାର କରିଛନ୍ତି।\\n\\nଆପଣ ଏକ ବିଜ୍ଞାପନ ଦେଖି ତୁରନ୍ତ 10 ଥର ରିଚାର୍ଜ କରିବାକୁ ଚାହାଁନ୍ତି କି?';
 
   @override
   String get translationLoaded => 'ସେଭ୍ ହୋଇଥିବା ଅନୁବାଦ ଲୋଡ୍ ହୋଇଛି';
 
   @override
-  String get translationRefilled => 'ଅନୁବାଦ ସଂଖ୍ୟା 5 ଥର ରିଚାର୍ଜ ହୋଇଛି!';
+  String get translationRefilled => 'ଅନୁବାଦ ସଂଖ୍ୟା 10 ଥର ରିଚାର୍ଜ ହୋଇଛି!';
 
   @override
   String get translationResult => 'ଅନୁବାଦ ଫଳାଫଳ';
@@ -1226,7 +1226,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get voluntaryTranslations => 'ସ୍ଵେଚ୍ଛାକୃତ ଅନୁବାଦ';
 
   @override
-  String get watchAdAndRefill => 'ବିଜ୍ଞାପନ ଦେଖି ରିଚାର୍ଜ କରନ୍ତୁ (+5 ଥର)';
+  String get watchAdAndRefill => 'ବିଜ୍ଞାପନ ଦେଖି ରିଚାର୍ଜ କରନ୍ତୁ (+10 ଥର)';
 
   @override
   String get welcomeButton => 'ଆରମ୍ଭ କରନ୍ତୁ';
@@ -1252,8 +1252,20 @@ class AppLocalizationsOr extends AppLocalizations {
   String get wordModeLabel => 'ଶବ୍ଦ ମୋଡ୍';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'ଏକତ୍ରିତ ଫଳାଫଳ';
+
+  @override
+  String get errorLimitReached =>
+      'ଆପଣଙ୍କର ଅନୁବାଦ ସଂଖ୍ୟା ସରିଯାଇଛି। ଆପଣ ଏକ ବିଜ୍ଞାପନ ଦେଖି 10ଟି ପୁରଣ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?';
 
   @override
   String get yourPronunciation => 'ତୁମର ଉଚ୍ଚାରଣ';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [ଅନୁବାଦ ସୀମା ଗାଇଡ୍‌]\nପ୍ରତିଦିନ ମଧ୍ୟରାତ୍ରିରେ 20ଟି ମାଗଣା ଅନୁବାଦ ପ୍ରଦାନ କରାଯାଏ। ଯଦି ଆପଣ ସେଗୁଡ଼ିକୁ ସମାପ୍ତ କରନ୍ତି, ତେବେ ଆପଣ ଏକ ବିଜ୍ଞାପନ ଦେଖି ତୁରନ୍ତ ଅତିରିକ୍ତ 10ଟି ଅନୁବାଦ ପାଇପାରିବେ।';
+
+  @override
+  String get scanDetails =>
+      '• କ୍ୟାମେରା କିମ୍ବା ଗ୍ୟାଲେରୀରୁ ଏକ ଇମେଜ୍ ଆଣନ୍ତୁ ଏବଂ ଟେକ୍ସଟ୍ ବାହାର କରି ଅନୁବାଦ କରନ୍ତୁ।\n• ଗୋଟିଏ ଫଟୋରେ ଅନ୍ତର୍ଭୁକ୍ତ ଅନେକ ବାକ୍ୟକୁ ଅଲଗା ଅଲଗା ଅନୁବାଦ କରିବା ପାଇଁ ଟ୍ୟାପ୍ କରାଯାଇପାରିବ।\n• ଯଦି ଅନୁବାଦ ସଂଖ୍ୟା କମ୍ ହୋଇଯାଏ, ତେବେ ଆପଣ ତୁରନ୍ତ ଏକ ବିଜ୍ଞାପନ ଦେଖି ଅତିରିକ୍ତ 10ଟି ପୁରଣ କରିପାରିବେ।';
 }

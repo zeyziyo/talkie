@@ -168,16 +168,17 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Dagens kvot för AI-tjänsten har överskridits. Försök igen senare eller imorgon.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Översättningen har begränsats på grund av AI:s säkerhetspolicy.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Kopiera original';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Originaltexten har kopierats.';
 
   @override
   String get errorProfanity => 'Innehåller svordomar och kan inte översättas.';
@@ -791,7 +792,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get saved => 'Sparad';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Originaltext';
 
   @override
   String get saving => 'Sparar...';
@@ -801,7 +802,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Ingen text hittades i bilden som matchar det inställda inlärningsspråket. Kontrollera språkinställningarna.';
 
   @override
   String get scanNotSupported =>
@@ -1046,13 +1047,13 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Du har använt alla dina dagliga kostnadsfria översättningar (5).\n\nVill du se en annons för att omedelbart fylla på med 5 till?';
+      'Du har använt alla dina dagliga kostnadsfria översättningar (10).\n\nVill du se en annons för att omedelbart fylla på med 10 till?';
 
   @override
   String get translationLoaded => 'Sparad översättning laddad';
 
   @override
-  String get translationRefilled => 'Du har fyllt på med 5 översättningar!';
+  String get translationRefilled => 'Du har fyllt på med 10 översättningar!';
 
   @override
   String get translationResult => 'Översättningsresultat';
@@ -1213,7 +1214,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get voluntaryTranslations => 'Frivilliga översättningar';
 
   @override
-  String get watchAdAndRefill => 'Titta på annons och fyll på (+5)';
+  String get watchAdAndRefill => 'Titta på annons och fyll på (+10)';
 
   @override
   String get welcomeButton => 'Kom igång';
@@ -1239,8 +1240,20 @@ class AppLocalizationsSv extends AppLocalizations {
   String get wordModeLabel => 'Ord-läge';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Kombinerat resultat';
+
+  @override
+  String get errorLimitReached =>
+      'Du har slut på översättningar. Vill du titta på en annons för att fylla på med 10 översättningar?';
 
   @override
   String get yourPronunciation => 'Ditt uttal';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Information om översättningsgräns]\n20 gratis översättningar tillhandahålls varje dag vid midnatt. Om du använder alla kan du titta på en annons för att omedelbart fylla på med 10 ytterligare översättningar.';
+
+  @override
+  String get scanDetails =>
+      '• Importera bilder från kameran eller galleriet för att extrahera och översätta text.\n• Du kan trycka på flera meningar i en bild för att översätta dem individuellt.\n• Om du har slut på översättningar kan du omedelbart titta på en annons för att fylla på med 10 till.';
 }

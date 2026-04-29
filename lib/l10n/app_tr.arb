@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Nefret söylemi içerdiği için çevrilemiyor.",
   "errorOtherSafety": "AI güvenlik politikaları nedeniyle çeviri reddedildi.",
+  "errorQuotaExceeded": "Yapay zeka hizmetinin günlük kotası aşıldı. Lütfen daha sonra veya yarın tekrar deneyin.",
+  "errorSafetyPolicy": "AI güvenlik politikası nedeniyle çeviri kısıtlandı.",
+  "copyOriginal": "Orijinali Kopyala",
+  "originalCopied": "Orijinal metin kopyalandı.",
   "errorProfanity": "Küfür içerdiği için çevrilemiyor.",
   "errorSelectCategory": "Önce bir kelime veya cümle seçin!",
   "errorSexualContent": "Müstehcen içerik içerdiği için çevrilemiyor.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Orijinal Metin",
   "saving": "Kaydediliyor...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Taranacak bir resim seçin",
+  "scanNoMatch": "Fotoğrafta ayarlanan öğrenme diliyle eşleşen metin bulunamadı. Lütfen dil ayarlarınızı kontrol edin.",
   "scanNotSupported": "Bu dil, tarama özelliğini desteklemiyor. OCR şu anda yalnızca Latin, Çince, Devanagari (Hintçe vb.), Japonca ve Korece karakterleri destekliyor.",
   "scanLabel": "Tara",
   "score": "Doğruluk: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Çeviri Dili",
   "translationLimitExceeded": "Çeviri limiti aşıldı",
-  "translationLimitMessage": "Günlük ücretsiz çeviri sınırına (5 kez) ulaştınız.\\n\\nReklam izleyerek hemen 5 çeviri hakkı kazanmak ister misiniz?",
+  "translationLimitMessage": "Günlük ücretsiz çeviri sınırına (10 kez) ulaştınız.\\n\\nReklam izleyerek hemen 10 çeviri hakkı kazanmak ister misiniz?",
   "translationLoaded": "Kayıtlı çeviri yüklendi",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Çeviri sayısı 5'e tamamlandı!",
+  "translationRefilled": "Çeviri sayısı 10'e tamamlandı!",
   "translationResult": "Çeviri Sonucu",
   "translationResultHint": "Çeviri Sonucu - Düzenlenebilir",
   "tryAgain": "Tekrar Dene",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Çevrimiçi Kılavuzu Görüntüle",
   "voluntaryTranslations": "Gönüllü Çeviriler",
-  "watchAdAndRefill": "Reklam İzle ve Yenile (+5 Çeviri)",
+  "watchAdAndRefill": "Reklam İzle ve Yenile (+10 Çeviri)",
   "welcomeButton": "Başla",
   "welcomeDesc": "\"Talkie'ye hoş geldiniz! Dünya çapında 80'den fazla dili %100 bütünlükle destekler, yeni premium 3D tasarım ve optimize edilmiş performans ile mükemmel bir öğrenme deneyimi sunar.\"",
   "welcomeTitle": "Talkie'ye Hoş Geldiniz!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Düşmanlar ulaşmadan kelimeyi söyleyerek üssü savunun.",
   "wordDefenseTitle": "Kelime Savunması",
   "wordModeLabel": "Kelime Modu",
-  "yourPronunciation": "Telaffuzunuz"
+  "combinedResult": "Birleştirilmiş Sonuç",
+  "errorLimitReached": "Çeviri sayısı yetersiz. Reklam izleyerek 10 çeviri hakkı kazanmak ister misiniz?",
+  "yourPronunciation": "Telaffuzunuz",
+  "helpLimitDetails": "💡 [Çeviri Limiti Bilgisi]\nHergün gece yarısı 20 ücretsiz çeviri hakkı sağlanır. Tükendiğinde reklam izleyerek anında 10 ek çeviri hakkı kazanabilirsiniz.",
+  "scanDetails": "• Kameradan veya galeriden bir görüntü yükleyerek metni çıkarın ve çevirin.\n• Bir fotoğraftaki birden fazla cümleyi ayrı ayrı çevirmek için dokunabilirsiniz.\n• Çeviri sayınız yetersizse, reklam izleyerek hemen 10 tane daha kazanabilirsiniz."
 }

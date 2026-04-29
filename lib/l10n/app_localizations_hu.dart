@@ -167,16 +167,17 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'A napi mesterséges intelligencia szolgáltatás kvóta kimerült. Kérjük, próbálja újra később vagy holnap.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'A fordítás az AI biztonsági szabályzat miatt korlátozott.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Eredeti másolása';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Az eredeti szöveg másolva.';
 
   @override
   String get errorProfanity => 'A trágárság miatt nem lehet lefordítani.';
@@ -792,7 +793,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get saved => 'Mentve';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Eredeti szöveg';
 
   @override
   String get saving => 'Mentés...';
@@ -802,7 +803,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'A fotón nem található a beállított tanulási nyelvvel egyező szöveg. Kérjük, ellenőrizze a nyelvi beállításokat.';
 
   @override
   String get scanNotSupported =>
@@ -1046,14 +1047,14 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Elhasználtad az összes napi ingyenes fordítási lehetőséget (5 alkalom).\\n\\nSzeretnél megnézni egy hirdetést, hogy azonnal feltöltsd 5 alkalommal?';
+      'Elhasználtad az összes napi ingyenes fordítási lehetőséget (10 alkalom).\\n\\nSzeretnél megnézni egy hirdetést, hogy azonnal feltöltsd 10 alkalommal?';
 
   @override
   String get translationLoaded => 'Mentett fordítás betöltve';
 
   @override
   String get translationRefilled =>
-      'A fordítási számláló feltöltve 5 alkalommal!';
+      'A fordítási számláló feltöltve 10 alkalommal!';
 
   @override
   String get translationResult => 'Fordítás eredménye';
@@ -1219,7 +1220,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get watchAdAndRefill =>
-      'Hirdetés megtekintése és feltöltés (+5 alkalom)';
+      'Hirdetés megtekintése és feltöltés (+10 alkalom)';
 
   @override
   String get welcomeButton => 'Kezdés';
@@ -1245,8 +1246,20 @@ class AppLocalizationsHu extends AppLocalizations {
   String get wordModeLabel => 'Szó mód';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Összevont eredmény';
+
+  @override
+  String get errorLimitReached =>
+      'Nincs elég fordítása. Szeretne hirdetést nézni, hogy 10 fordítást szerezzen?';
 
   @override
   String get yourPronunciation => 'Kiejtésed';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Fordítási korlát információk]\nNaponta éjfélkor 20 ingyenes fordítás áll rendelkezésre. Ha mindet elhasználja, egy hirdetés megtekintésével azonnal 10 további fordítást tölthet fel.';
+
+  @override
+  String get scanDetails =>
+      '• Töltsön fel képeket a kamerából vagy a galériából, hogy szöveget nyerjen ki és lefordítson.\n• Egy fényképben lévő több mondatot is megérintve külön-külön lefordíthatja azokat.\n• Ha nincs elég fordítása, nézzen meg egy hirdetést, hogy azonnal 10-et töltsön fel.';
 }

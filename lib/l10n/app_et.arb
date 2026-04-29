@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Tõlkimine pole vihakõne tõttu võimalik.",
   "errorOtherSafety": "Tõlkimine on AI ohutuspoliitika tõttu keelatud.",
+  "errorQuotaExceeded": "Tehisintellekti teenuse igapäevane kvoot on ammendatud. Proovige hiljem või homme uuesti.",
+  "errorSafetyPolicy": "Tõlge on piiratud tehisintellekti ohutuspoliitika tõttu.",
+  "copyOriginal": "Kopeeri originaal",
+  "originalCopied": "Algne tekst kopeeritud.",
   "errorProfanity": "Tõlkimine pole ropu keele tõttu võimalik.",
   "errorSelectCategory": "Valige kõigepealt sõna või lause!",
   "errorSexualContent": "Tõlkimine pole seksuaalse sisu tõttu võimalik.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Algtekst",
   "saving": "Salvestamine...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Vali skaneeritav pilt",
+  "scanNoMatch": "Pildilt ei leitud teksti, mis ühtiks määratud õppekeel(t)ega. Palun kontrollige keele seadeid.",
   "scanNotSupported": "See keel ei toeta skannimist. OCR toetab praegu ainult ladina, hiina, devanaagari (nt hindi), jaapani ja korea märke.",
   "scanLabel": "Skaneeri",
   "score": "Täpsus: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Tõlkekeel",
   "translationLimitExceeded": "Tõlkelimiit on ületatud",
-  "translationLimitMessage": "Oled kasutanud kõik oma igapäevased tasuta tõlked (5 korda).\\n\\nKas soovid vaadata reklaami ja saada kohe 5 korda juurde?",
+  "translationLimitMessage": "Oled kasutanud kõik oma igapäevased tasuta tõlked (10 korda).\\n\\nKas soovid vaadata reklaami ja saada kohe 10 korda juurde?",
   "translationLoaded": "Salvestatud tõlge on laaditud",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Tõlgete arv on suurendatud 5 võrra!",
+  "translationRefilled": "Tõlgete arv on suurendatud 10 võrra!",
   "translationResult": "Tõlketulemus",
   "translationResultHint": "Tõlke tulemus - muudetav",
   "tryAgain": "Proovi uuesti",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Vaata veebijuhendit",
   "voluntaryTranslations": "Vabatahtlikud tõlked",
-  "watchAdAndRefill": "Vaata reklaami ja täida (+5 korda)",
+  "watchAdAndRefill": "Vaata reklaami ja täida (+10 korda)",
   "welcomeButton": "Alusta",
   "welcomeDesc": "Tere tulemast Talkiesse! Toetame 100% terviklikkusega kõiki 80+ keelt üle maailma ning pakume täiuslikku õppimiskogemust uue esmaklassilise 3D-disaini ja optimeeritud jõudlusega.",
   "welcomeTitle": "Tere tulemast Talkiesse!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Kaitske oma baasi, öeldes sõnu enne, kui vaenlased kohale jõuavad.",
   "wordDefenseTitle": "Sõnade kaitse",
   "wordModeLabel": "Sõnarežiim",
-  "yourPronunciation": "Sinu hääldus"
+  "combinedResult": "Kombineeritud tulemus",
+  "errorLimitReached": "Tõlke kordad on otsas. Kas soovite vaadata reklaami, et saada 10 korda juurde?",
+  "yourPronunciation": "Sinu hääldus",
+  "helpLimitDetails": "💡 [Tõlke limiidi info]\nIga päev kell südaöö antakse 20 tasuta tõlget. Kui kõik on ära kasutatud, saab reklaami vaadates kohe 10 täiendavat tõlget.",
+  "scanDetails": "• Laadige pilt kaamerast või galeriist, et tekst välja võtta ja tõlkida.\n• Saate puudutada ja tõlkida eraldi mitmeid lauseid, mis on ühel pildil.\n• Kui tõlke kordadest on puudus, saate reklaami vaadates kohe 10 korda juurde."
 }

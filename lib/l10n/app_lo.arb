@@ -675,12 +675,12 @@
   },
   "translationLanguage": "ພາສາແປ",
   "translationLimitExceeded": "ເກີນຂີດຈຳກັດການແປ",
-  "translationLimitMessage": "ທ່ານໄດ້ໃຊ້ການແປຟຣີປະຈຳວັນທັງໝົດແລ້ວ (5 ຄັ້ງ).\\n\\nທ່ານຕ້ອງການສາກໄຟ 5 ຄັ້ງທັນທີໂດຍການເບິ່ງໂຄສະນາບໍ?",
+  "translationLimitMessage": "ທ່ານໄດ້ໃຊ້ການແປຟຣີປະຈຳວັນທັງໝົດແລ້ວ (10 ຄັ້ງ).\\n\\nທ່ານຕ້ອງການສາກໄຟ 10 ຄັ້ງທັນທີໂດຍການເບິ່ງໂຄສະນາບໍ?",
   "translationLoaded": "ໂຫຼດການແປທີ່ບັນທຶກໄວ້",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "ຈຳນວນການແປຂອງທ່ານໄດ້ຖືກສາກເປັນ 5 ຄັ້ງແລ້ວ!",
+  "translationRefilled": "ຈຳນວນການແປຂອງທ່ານໄດ້ຖືກສາກເປັນ 10 ຄັ້ງແລ້ວ!",
   "translationResult": "ຜົນການແປ",
   "translationResultHint": "ຜົນການແປ - ສາມາດແກ້ໄຂໄດ້",
   "tryAgain": "ລອງໃໝ່",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "ເບິ່ງຄູ່ມືອອນໄລນ໌",
   "voluntaryTranslations": "ການແປແບບສະໝັກໃຈ",
-  "watchAdAndRefill": "ສາກໄຟໂດຍການເບິ່ງໂຄສະນາ (+5 ຄັ້ງ)",
+  "watchAdAndRefill": "ສາກໄຟໂດຍການເບິ່ງໂຄສະນາ (+10 ຄັ້ງ)",
   "welcomeButton": "ເລີ່ມຕົ້ນ",
   "welcomeDesc": "ຍິນດີຕ້ອນຮັບສູ່ Talkie! ຮອງຮັບຫຼາຍກວ່າ 80 ພາສາທົ່ວໂລກດ້ວຍຄວາມສົມບູນແບບ 100%, ພ້ອມດ້ວຍການອອກແບບ 3D Premium ໃໝ່ ແລະປະສິດທິພາບທີ່ປັບປຸງໃຫ້ດີຂຶ້ນເພື່ອປະສົບການການຮຽນຮູ້ທີ່ສົມບູນແບບ.",
   "welcomeTitle": "ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ Talkie!",

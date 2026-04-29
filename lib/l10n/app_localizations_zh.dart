@@ -1019,13 +1019,14 @@ class AppLocalizationsZh extends AppLocalizations {
   String get translationLimitExceeded => '超出翻译限额';
 
   @override
-  String get translationLimitMessage => '已用完每日免费翻译 (5次)。\\n\\n观看广告以立即补充 5 次吗？';
+  String get translationLimitMessage =>
+      '已用完每日免费翻译 (10次)。\\n\\n观看广告以立即补充 10 次吗？';
 
   @override
   String get translationLoaded => '已加载保存的翻译';
 
   @override
-  String get translationRefilled => '翻译次数已补充 5 次！';
+  String get translationRefilled => '翻译次数已补充 10 次！';
 
   @override
   String get translationResult => '翻译结果';
@@ -1178,7 +1179,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get voluntaryTranslations => '自愿翻译';
 
   @override
-  String get watchAdAndRefill => '观看广告并补充 (+5次)';
+  String get watchAdAndRefill => '观看广告并补充 (+10次)';
 
   @override
   String get welcomeButton => '开始使用';
@@ -1206,7 +1207,18 @@ class AppLocalizationsZh extends AppLocalizations {
   String get combinedResult => '통합 결과';
 
   @override
+  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+
+  @override
   String get yourPronunciation => '你的发音';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+
+  @override
+  String get scanDetails =>
+      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -1364,6 +1376,18 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get errorOtherSafety => '由于 AI 安全策略，翻译被拒绝。';
+
+  @override
+  String get errorQuotaExceeded => '人工智能服务的每日配额已用完，请稍后或明天再试。';
+
+  @override
+  String get errorSafetyPolicy => '由于 AI 安全策略，翻译受到限制。';
+
+  @override
+  String get copyOriginal => '复制原文';
+
+  @override
+  String get originalCopied => '原文已复制。';
 
   @override
   String get errorProfanity => '包含不雅内容，无法翻译。';
@@ -1962,10 +1986,16 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get saved => '已保存';
 
   @override
+  String get originalText => '原文';
+
+  @override
   String get saving => '正在保存...';
 
   @override
   String get scanInstructions => '选择要扫描的图像';
+
+  @override
+  String get scanNoMatch => '照片中未找到与所选学习语言匹配的文本。请检查语言设置。';
 
   @override
   String get scanNotSupported => '此语言不支持扫描功能。OCR 目前仅支持拉丁文、中文、梵文（印地语等）、日文和韩文字符。';
@@ -2205,13 +2235,14 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get translationLimitExceeded => '超出翻译限额';
 
   @override
-  String get translationLimitMessage => '您已用完每日免费翻译 (5 次)。\\n\\n观看广告立即补充 5 次吗？';
+  String get translationLimitMessage =>
+      '您已用完每日免费翻译 (10 次)。\\n\\n观看广告立即补充 10 次吗？';
 
   @override
   String get translationLoaded => '已加载保存的翻译';
 
   @override
-  String get translationRefilled => '翻译次数已补充 5 次！';
+  String get translationRefilled => '翻译次数已补充 10 次！';
 
   @override
   String get translationResult => '翻译结果';
@@ -2364,7 +2395,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get voluntaryTranslations => '自愿翻译';
 
   @override
-  String get watchAdAndRefill => '观看广告并补充 (+5 次)';
+  String get watchAdAndRefill => '观看广告并补充 (+10 次)';
 
   @override
   String get welcomeButton => '开始使用';
@@ -2389,7 +2420,21 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get wordModeLabel => '单词模式';
 
   @override
+  String get combinedResult => '合并结果';
+
+  @override
+  String get errorLimitReached => '翻译次数不足。观看广告以充值 10 次吗？';
+
+  @override
   String get yourPronunciation => '你的发音';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [翻译次数说明]\n每天午夜提供 20 次免费翻译。即使全部用完，观看广告也会立即充值 10 次额外的翻译。';
+
+  @override
+  String get scanDetails =>
+      '• 从相机或相册加载图像，提取文本并进行翻译。\n• 可以点击单张照片中包含的多个句子，分别进行翻译。\n• 如果翻译次数不足，可以立即观看广告，额外充值 10 次。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -2547,6 +2592,18 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get errorOtherSafety => '因人工智慧安全政策而拒絕翻譯。';
+
+  @override
+  String get errorQuotaExceeded => '人工智慧服務的每日配額已用盡。請稍後或明天再試。';
+
+  @override
+  String get errorSafetyPolicy => '由於 AI 安全政策，翻譯已受到限制。';
+
+  @override
+  String get copyOriginal => '複製原文';
+
+  @override
+  String get originalCopied => '原文已複製。';
 
   @override
   String get errorProfanity => '包含不雅字詞，無法翻譯。';
@@ -3145,10 +3202,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get saved => '已儲存';
 
   @override
+  String get originalText => '原文';
+
+  @override
   String get saving => '正在儲存...';
 
   @override
   String get scanInstructions => '請選擇要掃描的圖片';
+
+  @override
+  String get scanNoMatch => '照片中找不到與設定的學習語言相符的文字。請檢查語言設定。';
 
   @override
   String get scanNotSupported =>
@@ -3389,13 +3452,14 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get translationLimitExceeded => '已超過翻譯限制';
 
   @override
-  String get translationLimitMessage => '您已用完每日免費翻譯 (5 次)。\n\n要觀看廣告立即補充 5 次嗎？';
+  String get translationLimitMessage =>
+      '您已用完每日免費翻譯 (10 次)。\n\n要觀看廣告立即補充 10 次嗎？';
 
   @override
   String get translationLoaded => '已載入儲存的翻譯';
 
   @override
-  String get translationRefilled => '翻譯次數已補充 5 次！';
+  String get translationRefilled => '翻譯次數已補充 10 次！';
 
   @override
   String get translationResult => '翻譯結果';
@@ -3548,7 +3612,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get voluntaryTranslations => '自願翻譯';
 
   @override
-  String get watchAdAndRefill => '觀看廣告並補充 (+5 次)';
+  String get watchAdAndRefill => '觀看廣告並補充 (+10 次)';
 
   @override
   String get welcomeButton => '开始使用';
@@ -3573,5 +3637,19 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get wordModeLabel => '單字模式';
 
   @override
+  String get combinedResult => '合併結果';
+
+  @override
+  String get errorLimitReached => '翻譯次數不足。要觀看廣告並補充 10 次翻譯嗎？';
+
+  @override
   String get yourPronunciation => '你的發音';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [翻譯次數說明]\n每天午夜提供 20 次免費翻譯。即使全部用完，觀看廣告後可立即補充 10 次額外翻譯。';
+
+  @override
+  String get scanDetails =>
+      '• 從相機或圖庫導入圖片，提取文字並翻譯。\n• 可以點擊單張照片中包含的多個句子，分別進行翻譯。\n• 如果翻譯次數不足，可以立即觀看廣告額外補充 10 次。';
 }

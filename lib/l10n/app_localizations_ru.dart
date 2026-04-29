@@ -167,16 +167,17 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Дневная квота сервиса искусственного интеллекта исчерпана. Повторите попытку позже или завтра.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Перевод ограничен политикой безопасности ИИ.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Копировать оригинал';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Исходный текст скопирован.';
 
   @override
   String get errorProfanity =>
@@ -792,7 +793,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get saved => 'Сохранено';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Исходный текст';
 
   @override
   String get saving => 'Сохранение...';
@@ -802,7 +803,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Не удалось найти текст, соответствующий языку обучения, установленному на фотографии. Проверьте языковые настройки.';
 
   @override
   String get scanNotSupported =>
@@ -1047,13 +1048,13 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Вы использовали все бесплатные ежедневные переводы (5 раз).\\n\\nПосмотреть рекламу и немедленно пополнить счет на 5 раз?';
+      'Вы использовали все бесплатные ежедневные переводы (10 раз).\\n\\nПосмотреть рекламу и немедленно пополнить счет на 10 раз?';
 
   @override
   String get translationLoaded => 'Загружен сохраненный перевод';
 
   @override
-  String get translationRefilled => 'Количество переводов пополнено на 5 раз!';
+  String get translationRefilled => 'Количество переводов пополнено на 10 раз!';
 
   @override
   String get translationResult => 'Результат перевода';
@@ -1219,7 +1220,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get voluntaryTranslations => 'Добровольные переводы';
 
   @override
-  String get watchAdAndRefill => 'Посмотреть рекламу и пополнить (+5 раз)';
+  String get watchAdAndRefill => 'Посмотреть рекламу и пополнить (+10 раз)';
 
   @override
   String get welcomeButton => 'Начать';
@@ -1245,8 +1246,20 @@ class AppLocalizationsRu extends AppLocalizations {
   String get wordModeLabel => 'Режим слов';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Объединенный результат';
+
+  @override
+  String get errorLimitReached =>
+      'У вас недостаточно попыток перевода. Посмотреть рекламу и получить 10 попыток?';
 
   @override
   String get yourPronunciation => 'Ваше произношение';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Информация о лимите переводов]\nКаждый день в полночь предоставляется 20 бесплатных переводов. Если вы израсходуете их все, вы можете сразу же пополнить 10 дополнительных переводов, посмотрев рекламу.';
+
+  @override
+  String get scanDetails =>
+      '• Загрузите изображения из камеры или галереи, чтобы извлечь и перевести текст.\n• Вы можете коснуться нескольких предложений на одной фотографии, чтобы перевести их по отдельности.\n• Если у вас недостаточно попыток перевода, вы можете сразу же посмотреть рекламу, чтобы получить 10 дополнительных попыток.';
 }

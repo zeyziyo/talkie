@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Ne može se prevesti jer sadrži govor mržnje.",
   "errorOtherSafety": "Prijevod je odbijen zbog AI sigurnosnih pravila.",
+  "errorQuotaExceeded": "Dnevna kvota za uslugu umjetne inteligencije je iscrpljena. Pokušajte ponovo kasnije ili sutra.",
+  "errorSafetyPolicy": "Prijevod je ograničen zbog AI politike sigurnosti.",
+  "copyOriginal": "Kopiraj izvornik",
+  "originalCopied": "Izvorni tekst je kopiran.",
   "errorProfanity": "Ne može se prevesti jer sadrži psovke.",
   "errorSelectCategory": "Prvo odaberite riječ ili rečenicu!",
   "errorSexualContent": "Ne može se prevesti jer sadrži opscen sadržaj.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Izvorni tekst",
   "saving": "Spremanje...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Odaberite sliku za skeniranje",
+  "scanNoMatch": "Nije pronađen tekst koji odgovara postavljenom jeziku učenja na fotografiji. Provjerite postavke jezika.",
   "scanNotSupported": "Skeniranje nije podržano za ovaj jezik. OCR trenutno podržava samo latinična, kineska, devanagari (npr. hindski), japanska i korejska slova.",
   "scanLabel": "Skeniraj",
   "score": "Tačnost: {score}%",
@@ -675,12 +681,12 @@
   },
   "translationLanguage": "Jezik prijevoda",
   "translationLimitExceeded": "Prekoračeno ograničenje prijevoda",
-  "translationLimitMessage": "Iskoristili ste sve besplatne dnevne prijevode (5 puta).\\n\\nŽelite li odmah napuniti 5 puta gledanjem oglasa?",
+  "translationLimitMessage": "Iskoristili ste sve besplatne dnevne prijevode (10 puta).\\n\\nŽelite li odmah napuniti 10 puta gledanjem oglasa?",
   "translationLoaded": "Učitavanje spremljenog prijevoda",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "Broj prijevoda je napunjen 5 puta!",
+  "translationRefilled": "Broj prijevoda je napunjen 10 puta!",
   "translationResult": "Rezultat prijevoda",
   "translationResultHint": "Rezultat prijevoda - može se urediti",
   "tryAgain": "Pokušajte ponovo",
@@ -740,7 +746,7 @@
   },
   "viewOnlineGuide": "Pogledajte online vodič",
   "voluntaryTranslations": "Dobrovoljni prijevodi",
-  "watchAdAndRefill": "Napunite gledanjem oglasa (+5 puta)",
+  "watchAdAndRefill": "Napunite gledanjem oglasa (+10 puta)",
   "welcomeButton": "Započni",
   "welcomeDesc": "Dobro došli u Talkie! Podržavamo preko 80 jezika širom svijeta sa 100% integritetom, uz novi vrhunski 3D dizajn i optimizovane performanse za savršeno iskustvo učenja.",
   "welcomeTitle": "Dobrodošli u Talkie!",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Odbranite bazu izgovarajući riječi prije nego što neprijatelji stignu.",
   "wordDefenseTitle": "Odbrana riječi",
   "wordModeLabel": "Način rada riječi",
-  "yourPronunciation": "Vaš izgovor"
+  "combinedResult": "Kombinirani rezultat",
+  "errorLimitReached": "Nemate dovoljno prijevoda. Želite li pogledati oglas i dobiti 10 dodatnih prijevoda?",
+  "yourPronunciation": "Vaš izgovor",
+  "helpLimitDetails": "💡 [Vodič za ograničenje prijevoda]\nSvakog dana u ponoć dobivate 20 besplatnih prijevoda. Ako ih sve potrošite, možete odmah dobiti 10 dodatnih prijevoda gledanjem oglasa.",
+  "scanDetails": "• Učitajte slike iz kamere ili galerije da biste izdvojili i preveli tekst.\n• Možete dodirnuti nekoliko rečenica na jednoj fotografiji da biste ih pojedinačno preveli.\n• Ako nemate dovoljno prijevoda, možete odmah pogledati oglas da biste dobili još 10 prijevoda."
 }

@@ -1034,13 +1034,13 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'ניצלת את כל מכסת התרגומים החינמיים היומית שלך (5 פעמים).\\n\\nהאם ברצונך לצפות במודעה כדי למלא מיד 5 תרגומים?';
+      'ניצלת את כל מכסת התרגומים החינמיים היומית שלך (10 פעמים).\\n\\nהאם ברצונך לצפות במודעה כדי למלא מיד 10 תרגומים?';
 
   @override
   String get translationLoaded => 'תרגום שמור נטען';
 
   @override
-  String get translationRefilled => 'מכסת התרגומים שלך מולאה ב-5!';
+  String get translationRefilled => 'מכסת התרגומים שלך מולאה ב-10!';
 
   @override
   String get translationResult => 'תוצאת תרגום';
@@ -1197,7 +1197,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get voluntaryTranslations => 'תרגומים בהתנדבות';
 
   @override
-  String get watchAdAndRefill => 'צפה במודעה ומלא מחדש (+5 פעמים)';
+  String get watchAdAndRefill => 'צפה במודעה ומלא מחדש (+10 פעמים)';
 
   @override
   String get welcomeButton => 'מתחילים';
@@ -1226,5 +1226,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get combinedResult => '통합 결과';
 
   @override
+  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+
+  @override
   String get yourPronunciation => 'ההגייה שלך';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+
+  @override
+  String get scanDetails =>
+      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
 }

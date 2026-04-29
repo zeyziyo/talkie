@@ -163,16 +163,16 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'የ AI አገልግሎት ዕለታዊ ድልድል አልቋል። እባክዎ ቆይተው ወይም ነገ እንደገና ይሞክሩ።';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy => 'ትርጉም በ AI ደህንነት ፖሊሲ ምክንያት ተገድቧል።';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'ዋናውን ቅዳ';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'ዋናው ጽሑፍ ተቀድቷል።';
 
   @override
   String get errorProfanity => 'ብልግናን ስላካተተ መተርጎም አይቻልም።';
@@ -781,7 +781,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get saved => 'ተቀምጧል';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'ዋና ጽሑፍ';
 
   @override
   String get saving => 'በማስቀመጥ ላይ...';
@@ -791,7 +791,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'በፎቶው ውስጥ ከተቀመጠው የትምህርት ቋንቋ ጋር የሚዛመድ ጽሑፍ ማግኘት አልተቻለም። የቋንቋ ቅንብሮችዎን ያረጋግጡ።';
 
   @override
   String get scanNotSupported =>
@@ -1034,13 +1034,13 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'ያሉትን በየቀኑ ነፃ ትርጉሞች (5 ጊዜ) በሙሉ ተጠቅመዋል።\\n\\nማስታወቂያ በመመልከት 5 ጊዜዎችን ወዲያውኑ መሙላት ይፈልጋሉ?';
+      'ያሉትን በየቀኑ ነፃ ትርጉሞች (10 ጊዜ) በሙሉ ተጠቅመዋል።\\n\\nማስታወቂያ በመመልከት 10 ጊዜዎችን ወዲያውኑ መሙላት ይፈልጋሉ?';
 
   @override
   String get translationLoaded => 'የተቀመጠ ትርጉም ተጭኗል';
 
   @override
-  String get translationRefilled => 'የትርጉም ብዛት 5 ጊዜ ተሞልቷል!';
+  String get translationRefilled => 'የትርጉም ብዛት 10 ጊዜ ተሞልቷል!';
 
   @override
   String get translationResult => 'የትርጉም ውጤት';
@@ -1201,7 +1201,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get voluntaryTranslations => 'በፍቃደኝነት የተተረጎሙ';
 
   @override
-  String get watchAdAndRefill => 'ማስታወቂያ በመመልከት (+5 ጊዜ) ይሙሉ።';
+  String get watchAdAndRefill => 'ማስታወቂያ በመመልከት (+10 ጊዜ) ይሙሉ።';
 
   @override
   String get welcomeButton => 'ይጀምሩ';
@@ -1226,8 +1226,20 @@ class AppLocalizationsAm extends AppLocalizations {
   String get wordModeLabel => 'የቃል ሁነታ';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'የተዋሃደ ውጤት';
+
+  @override
+  String get errorLimitReached =>
+      'የትርጉም ሙከራዎችዎ አልቀዋል። ማስታወቂያ በመመልከት 10 ሙከራዎችን መሙላት ይፈልጋሉ?';
 
   @override
   String get yourPronunciation => 'የእርስዎ አጠራር';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [የትርጉም ገደብ መመሪያ]\nበየእለቱ እኩለ ሌሊት ላይ 20 ነፃ ትርጉሞች ይሰጣሉ። ሁሉንም ከጨረሱ ማስታወቂያ በመመልከት ወዲያውኑ 10 ተጨማሪ ትርጉሞችን መሙላት ይችላሉ።';
+
+  @override
+  String get scanDetails =>
+      '• ምስሎችን ከካሜራ ወይም ከማዕከለ-ስዕላት ያስመጡ እና ጽሑፍን ያውጡ እና ይተርጉሙ።\n• በአንድ ፎቶ ውስጥ የተካተቱ በርካታ ዓረፍተ ነገሮችን በመንካት በተናጠል መተርጎም ይችላሉ።\n• የትርጉም ሙከራዎችዎ ካለቁ ማስታወቂያዎችን በመመልከት ወዲያውኑ 10 ሙከራዎችን ማከል ይችላሉ።';
 }

@@ -168,16 +168,17 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Süni intellekt xidmətinin gündəlik limiti bitdi. Zəhmət olmasa, bir az sonra və ya sabah yenidən cəhd edin.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Süni intellekt təhlükəsizlik siyasətinə görə tərcümə məhdudlaşdırılıb.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Orijinalı kopyala';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Orijinal mətn kopyalandı.';
 
   @override
   String get errorProfanity =>
@@ -793,7 +794,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get saved => 'Saxlama Tamamlandı';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Orijinal mətn';
 
   @override
   String get saving => 'Saxlanılır...';
@@ -803,7 +804,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Şəkildə təyin edilmiş təlim dili ilə uyğun gələn mətn tapılmadı. Dil parametrlərinizi yoxlayın.';
 
   @override
   String get scanNotSupported =>
@@ -1047,13 +1048,13 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Gündəlik pulsuz tərcümələrinizdən (5 dəfə) istifadə etdiniz.\\n\\nReklama baxaraq dərhal 5 dəfə doldurmaq istəyirsiniz?';
+      'Gündəlik pulsuz tərcümələrinizdən (10 dəfə) istifadə etdiniz.\\n\\nReklama baxaraq dərhal 10 dəfə doldurmaq istəyirsiniz?';
 
   @override
   String get translationLoaded => 'Saxlanılan tərcümə yükləndi';
 
   @override
-  String get translationRefilled => 'Tərcümə sayı 5 dəfə dolduruldu!';
+  String get translationRefilled => 'Tərcümə sayı 10 dəfə dolduruldu!';
 
   @override
   String get translationResult => 'Tərcümə nəticəsi';
@@ -1224,7 +1225,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get voluntaryTranslations => 'Könüllü tərcümələr';
 
   @override
-  String get watchAdAndRefill => 'Reklama baxaraq doldurun (+5 dəfə)';
+  String get watchAdAndRefill => 'Reklama baxaraq doldurun (+10 dəfə)';
 
   @override
   String get welcomeButton => 'Başla';
@@ -1250,8 +1251,20 @@ class AppLocalizationsAz extends AppLocalizations {
   String get wordModeLabel => 'Söz Rejimi';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Birləşdirilmiş nəticə';
+
+  @override
+  String get errorLimitReached =>
+      'Tərcümə sayınız bitdi. Reklama baxaraq 10 tərcümə əldə etmək istəyirsiniz?';
 
   @override
   String get yourPronunciation => 'Mənim Tələffüzüm';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Tərcümə limiti]\nHər gün saat 00:00-da 20 pulsuz tərcümə verilir. Hamısı bitsə belə, reklama baxmaqla dərhal 10 əlavə tərcümə əldə edə bilərsiniz.';
+
+  @override
+  String get scanDetails =>
+      '• Kamera və ya qalereyadan şəkil yükləyərək mətni çıxarın və tərcümə edin.\n• Bir şəkildə olan bir neçə cümləyə toxunaraq ayrı-ayrılıqda tərcümə edə bilərsiniz.\n• Tərcümə sayınız azdırsa, dərhal reklama baxaraq 10 əlavə tərcümə əldə edə bilərsiniz.';
 }

@@ -1045,14 +1045,14 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Du har brugt alle de gratis daglige oversættelser (5 gange).\\n\\nVil du se en annonce og straks genopfylde 5 gange?';
+      'Du har brugt alle de gratis daglige oversættelser (10 gange).\\n\\nVil du se en annonce og straks genopfylde 10 gange?';
 
   @override
   String get translationLoaded => 'Gemt oversættelse indlæst';
 
   @override
   String get translationRefilled =>
-      'Antallet af oversættelser er blevet genopfyldt 5 gange!';
+      'Antallet af oversættelser er blevet genopfyldt 10 gange!';
 
   @override
   String get translationResult => 'Oversættelsesresultat';
@@ -1215,7 +1215,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get voluntaryTranslations => 'Frivillige oversættelser';
 
   @override
-  String get watchAdAndRefill => 'Se annonce og genopfyld (+5 gange)';
+  String get watchAdAndRefill => 'Se annonce og genopfyld (+10 gange)';
 
   @override
   String get welcomeButton => 'Kom i gang';
@@ -1244,5 +1244,16 @@ class AppLocalizationsDa extends AppLocalizations {
   String get combinedResult => '통합 결과';
 
   @override
+  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+
+  @override
   String get yourPronunciation => 'Din udtale';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+
+  @override
+  String get scanDetails =>
+      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
 }

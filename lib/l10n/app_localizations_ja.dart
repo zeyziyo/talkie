@@ -162,16 +162,16 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'AIサービスの1日の割り当て量を超過しました。しばらく後、または明日もう一度お試しください。';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy => 'AIの安全ポリシーにより、翻訳が制限されました。';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => '原文をコピー';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => '原文をコピーしました。';
 
   @override
   String get errorProfanity => '不適切な表現が含まれているため、翻訳できません。';
@@ -773,7 +773,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get saved => '保存完了';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => '原文';
 
   @override
   String get saving => '保存中...';
@@ -782,8 +782,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get scanInstructions => 'スキャンする画像を選択してください';
 
   @override
-  String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+  String get scanNoMatch => '写真から、設定された学習言語と一致するテキストが見つかりませんでした。言語設定を確認してください。';
 
   @override
   String get scanNotSupported =>
@@ -1025,13 +1024,13 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      '1日の無料翻訳（5回）をすべて使い切りました。\n\n広告を見て5回をすぐにチャージしますか？';
+      '1日の無料翻訳（10回）をすべて使い切りました。\n\n広告を見て10回をすぐにチャージしますか？';
 
   @override
   String get translationLoaded => '保存済みの翻訳を読み込みました';
 
   @override
-  String get translationRefilled => '翻訳回数が5回チャージされました！';
+  String get translationRefilled => '翻訳回数が10回チャージされました！';
 
   @override
   String get translationResult => '翻訳結果';
@@ -1185,7 +1184,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get voluntaryTranslations => '自主的な翻訳';
 
   @override
-  String get watchAdAndRefill => '広告を見てチャージ (+5回)';
+  String get watchAdAndRefill => '広告を見てチャージ (+10回)';
 
   @override
   String get welcomeButton => '始める';
@@ -1210,8 +1209,19 @@ class AppLocalizationsJa extends AppLocalizations {
   String get wordModeLabel => '単語モード';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => '統合結果';
+
+  @override
+  String get errorLimitReached => '翻訳回数が不足しています。広告を見て10回チャージしますか？';
 
   @override
   String get yourPronunciation => 'あなたの発音';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [翻訳制限のご案内]\n毎日午前0時に20回の無料翻訳が提供されます。すべて使い切っても、広告を視聴するとすぐに10回の追加翻訳がチャージされます。';
+
+  @override
+  String get scanDetails =>
+      '• カメラやギャラリーからイメージを読み込み、テキストを抽出して翻訳します。\n• 1枚の写真に含まれる複数の文章をタップして、個別に翻訳できます。\n• 翻訳回数が不足する場合は、すぐに広告を視聴して10回を追加チャージできます。';
 }

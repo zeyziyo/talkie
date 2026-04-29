@@ -675,12 +675,12 @@
   },
   "translationLanguage": "שפת תרגום",
   "translationLimitExceeded": "חריגה ממגבלת תרגום",
-  "translationLimitMessage": "ניצלת את כל מכסת התרגומים החינמיים היומית שלך (5 פעמים).\\n\\nהאם ברצונך לצפות במודעה כדי למלא מיד 5 תרגומים?",
+  "translationLimitMessage": "ניצלת את כל מכסת התרגומים החינמיים היומית שלך (10 פעמים).\\n\\nהאם ברצונך לצפות במודעה כדי למלא מיד 10 תרגומים?",
   "translationLoaded": "תרגום שמור נטען",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "מכסת התרגומים שלך מולאה ב-5!",
+  "translationRefilled": "מכסת התרגומים שלך מולאה ב-10!",
   "translationResult": "תוצאת תרגום",
   "translationResultHint": "תוצאת תרגום - ניתן לעריכה",
   "tryAgain": "נסה שוב",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "הצג מדריך מקוון",
   "voluntaryTranslations": "תרגומים בהתנדבות",
-  "watchAdAndRefill": "צפה במודעה ומלא מחדש (+5 פעמים)",
+  "watchAdAndRefill": "צפה במודעה ומלא מחדש (+10 פעמים)",
   "welcomeButton": "מתחילים",
   "welcomeDesc": "ברוכים הבאים ל-Talkie! אנו תומכים ביותר מ-80 שפות ברחבי העולם ב-100% תקינות, ומספקים חווית למידה מושלמת עם עיצוב תלת מימדי פרימיום חדש וביצועים מיטביים.",
   "welcomeTitle": "ברוכים הבאים ל-Talkie!",

@@ -166,16 +166,17 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Kuota harian layanan AI telah habis. Silakan coba lagi nanti atau besok.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Terjemahan dibatasi karena kebijakan keamanan AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Salin Asli';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Teks asli telah disalin.';
 
   @override
   String get errorProfanity =>
@@ -791,7 +792,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get saved => 'Tersimpan';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Teks Asli';
 
   @override
   String get saving => 'Menyimpan...';
@@ -801,7 +802,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Tidak dapat menemukan teks yang cocok dengan bahasa pembelajaran yang ditetapkan dalam foto. Periksa pengaturan bahasa Anda.';
 
   @override
   String get scanNotSupported =>
@@ -1045,14 +1046,14 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get translationLimitMessage =>
-      'Anda telah menggunakan semua terjemahan gratis harian (5 kali).\\n\\nApakah Anda ingin menonton iklan untuk mengisi ulang 5 kali secara instan?';
+      'Anda telah menggunakan semua terjemahan gratis harian (10 kali).\\n\\nApakah Anda ingin menonton iklan untuk mengisi ulang 10 kali secara instan?';
 
   @override
   String get translationLoaded => 'Terjemahan tersimpan dimuat';
 
   @override
   String get translationRefilled =>
-      'Jumlah terjemahan telah diisi ulang 5 kali!';
+      'Jumlah terjemahan telah diisi ulang 10 kali!';
 
   @override
   String get translationResult => 'Hasil Terjemahan';
@@ -1220,7 +1221,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get voluntaryTranslations => 'Terjemahan Sukarela';
 
   @override
-  String get watchAdAndRefill => 'Tonton Iklan dan Isi Ulang (+5 kali)';
+  String get watchAdAndRefill => 'Tonton Iklan dan Isi Ulang (+10 kali)';
 
   @override
   String get welcomeButton => 'Mulai';
@@ -1246,8 +1247,20 @@ class AppLocalizationsId extends AppLocalizations {
   String get wordModeLabel => 'Mode Kata';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Hasil Gabungan';
+
+  @override
+  String get errorLimitReached =>
+      'Jumlah terjemahan tidak mencukupi. Apakah Anda ingin menonton iklan untuk mengisi ulang 10 terjemahan?';
 
   @override
   String get yourPronunciation => 'Lafal Anda';
+
+  @override
+  String get helpLimitDetails =>
+      '💡 [Panduan Batas Terjemahan]\n20 terjemahan gratis disediakan setiap hari pada tengah malam. Bahkan jika Anda menggunakan semuanya, Anda dapat segera mengisi ulang 10 terjemahan tambahan dengan menonton iklan.';
+
+  @override
+  String get scanDetails =>
+      '• Muat gambar dari kamera atau galeri untuk mengekstrak dan menerjemahkan teks.\n• Anda dapat mengetuk beberapa kalimat dalam satu foto untuk menerjemahkannya secara individual.\n• Jika Anda tidak memiliki cukup terjemahan, Anda dapat segera menonton iklan untuk mengisi ulang 10 terjemahan tambahan.';
 }

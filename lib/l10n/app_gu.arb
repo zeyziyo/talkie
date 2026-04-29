@@ -675,12 +675,12 @@
   },
   "translationLanguage": "અનુવાદ ભાષા",
   "translationLimitExceeded": "અનુવાદ મર્યાદા ઓળંગાઈ ગઈ",
-  "translationLimitMessage": "તમે તમારા દૈનિક મફત અનુવાદો (5 વખત) નો ઉપયોગ કર્યો છે.\\n\\nશું તમે જાહેરાત જોઈને તરત જ 5 વખત રિફિલ કરવા માંગો છો?",
+  "translationLimitMessage": "તમે તમારા દૈનિક મફત અનુવાદો (10 વખત) નો ઉપયોગ કર્યો છે.\\n\\nશું તમે જાહેરાત જોઈને તરત જ 10 વખત રિફિલ કરવા માંગો છો?",
   "translationLoaded": "સાચવેલ અનુવાદ લોડ થયો",
   "@translationLoaded": {
     "description": "Existing translation loaded"
   },
-  "translationRefilled": "તમારું અનુવાદ ભરણ 5 વખત રિફિલ કરવામાં આવ્યું છે!",
+  "translationRefilled": "તમારું અનુવાદ ભરણ 10 વખત રિફિલ કરવામાં આવ્યું છે!",
   "translationResult": "અનુવાદ પરિણામ",
   "translationResultHint": "અનુવાદ પરિણામ - સંપાદન કરી શકાય છે",
   "tryAgain": "ફરી પ્રયાસ કરો",
@@ -740,7 +740,7 @@
   },
   "viewOnlineGuide": "ઓનલાઇન માર્ગદર્શિકા જુઓ",
   "voluntaryTranslations": "સ્વૈચ્છિક અનુવાદો",
-  "watchAdAndRefill": "જાહેરાત જોઈને રિફિલ કરો (+5 વખત)",
+  "watchAdAndRefill": "જાહેરાત જોઈને રિફિલ કરો (+10 વખત)",
   "welcomeButton": "શરૂ કરો",
   "welcomeDesc": "Talkie માં આપનું સ્વાગત છે! અમે 100% અખંડિતતા સાથે વિશ્વભરની 80 થી વધુ ભાષાઓને સમર્થન આપીએ છીએ, અને નવા પ્રીમિયમ 3D ડિઝાઇન અને ઑપ્ટિમાઇઝ કરેલ પ્રદર્શન સાથે સંપૂર્ણ શીખવાનો અનુભવ પ્રદાન કરીએ છીએ.",
   "welcomeTitle": "Talkie માં આપનું સ્વાગત છે!",
