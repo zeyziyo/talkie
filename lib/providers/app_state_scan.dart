@@ -30,11 +30,7 @@ extension AppStateScanExtension on AppState {
       final inputImage = InputImage.fromFilePath(image.path);
       final targetScript =
           ScanSupportConstants.getScriptForLanguage(_targetLang);
-      final scripts = <TextRecognitionScript>[
-        targetScript,
-        ...ScanSupportConstants.allScripts
-            .where((script) => script != targetScript),
-      ];
+      final scripts = <TextRecognitionScript>[targetScript];
 
       final List<Map<String, dynamic>> allBlocks = [];
       for (final script in scripts) {
