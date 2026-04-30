@@ -168,16 +168,17 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'कृत्रिम बुद्धिमत्ता सेवा के लिए दैनिक कोटा समाप्त हो गया है। कृपया कुछ समय बाद या कल पुनः प्रयास करें।';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'एआई सुरक्षा नीति के कारण अनुवाद प्रतिबंधित है।';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'मूल कॉपी करें';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'मूल पाठ कॉपी किया गया।';
 
   @override
   String get errorProfanity =>
@@ -793,7 +794,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get saved => 'सहेजा गया';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'मूल पाठ';
 
   @override
   String get saving => 'सहेज रहा है...';
@@ -803,7 +804,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'फोटो में निर्धारित शिक्षण भाषा से मेल खाने वाला कोई पाठ नहीं मिला। कृपया भाषा सेटिंग जांचें।';
 
   @override
   String get scanNotSupported =>
@@ -1248,19 +1249,20 @@ class AppLocalizationsHi extends AppLocalizations {
   String get wordModeLabel => 'शब्द मोड';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'एकीकृत परिणाम';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get errorLimitReached =>
+      'आपके पास पर्याप्त अनुवाद नहीं हैं। क्या आप विज्ञापन देखकर 10 क्रेडिट रिचार्ज करना चाहेंगे?';
 
   @override
   String get yourPronunciation => 'आपका उच्चारण';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [अनुवाद सीमा गाइड]\nहर दिन मध्यरात्रि में 20 मुफ्त अनुवाद प्रदान किए जाते हैं। यदि आप उन सभी का उपयोग करते हैं, तो आप विज्ञापन देखकर तुरंत 10 अतिरिक्त अनुवाद क्रेडिट रिचार्ज कर सकते हैं।';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• कैमरे या गैलरी से एक छवि लोड करें, पाठ निकालें और उसका अनुवाद करें।\n• आप एक तस्वीर में निहित कई वाक्यों को टैप करके व्यक्तिगत रूप से उनका अनुवाद कर सकते हैं।\n• यदि आपके पास पर्याप्त अनुवाद नहीं हैं, तो आप तुरंत विज्ञापन देखकर 10 अतिरिक्त क्रेडिट रिचार्ज कर सकते हैं।';
 }

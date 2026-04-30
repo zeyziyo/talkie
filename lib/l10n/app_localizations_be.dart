@@ -169,16 +169,17 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Дзённая квота сэрвісу штучнага інтэлекту вычарпаная. Паспрабуйце яшчэ раз пазней ці заўтра.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Пераклад абмежаваны палітыкай бяспекі штучнага інтэлекту.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Капіяваць арыгінал';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Арыгінальны тэкст скапіяваны.';
 
   @override
   String get errorProfanity => 'Немагчыма перакласці, бо змяшчае лаянку.';
@@ -794,7 +795,7 @@ class AppLocalizationsBe extends AppLocalizations {
   String get saved => 'Захавана';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Арыгінальны тэкст';
 
   @override
   String get saving => 'Захаванне...';
@@ -804,7 +805,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Не атрымалася знайсці тэкст, які адпавядае мове навучання, усталяванай на фота. Праверце налады мовы.';
 
   @override
   String get scanNotSupported =>
@@ -1249,19 +1250,20 @@ class AppLocalizationsBe extends AppLocalizations {
   String get wordModeLabel => 'Рэжым слоў';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Аб\'яднаны вынік';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get errorLimitReached =>
+      'У вас не хапае перакладаў. Паглядзець рэкламу, каб папоўніць 10 перакладаў?';
 
   @override
   String get yourPronunciation => 'Ваша вымаўленне';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [Інфармацыя пра ліміт перакладаў]\nКожны дзень апоўначы прадастаўляецца 20 бясплатных перакладаў. Нават калі вы выкарыстоўваеце ўсе, прагляд рэкламы неадкладна папоўніць 10 дадатковых перакладаў.';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• Імпартуйце выявы з камеры або галерэі, каб здабываць і перакладаць тэкст.\n• Вы можаце націскаць некалькі прапаноў на адной фатаграфіі, каб перакласці іх паасобку.\n• Калі ў вас не хапае перакладаў, вы можаце неадкладна паглядзець рэкламу, каб дадаць яшчэ 10.';
 }

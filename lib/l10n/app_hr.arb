@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Ne može se prevesti jer sadrži govor mržnje.",
   "errorOtherSafety": "Prijevod je odbijen zbog AI pravila o sigurnosti.",
+  "errorQuotaExceeded": "Dnevni limit za uslugu umjetne inteligencije je potrošen. Pokušajte ponovno kasnije ili sutra.",
+  "errorSafetyPolicy": "Prijevod je ograničen pravilima o sigurnosti umjetne inteligencije.",
+  "copyOriginal": "Kopiraj izvornik",
+  "originalCopied": "Izvorni tekst je kopiran.",
   "errorProfanity": "Ne može se prevesti jer sadrži psovke.",
   "errorSelectCategory": "Prvo odaberite riječ ili rečenicu!",
   "errorSexualContent": "Ne može se prevesti jer sadrži sugestivan sadržaj.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Izvorni tekst",
   "saving": "Spremanje...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Odaberite sliku za skeniranje",
+  "scanNoMatch": "Nije pronađen tekst koji odgovara postavljenom jeziku učenja na slici. Provjerite postavke jezika.",
   "scanNotSupported": "Skeniranje nije podržano za ovaj jezik. OCR trenutno podržava samo latinična, kineska, devanagari (npr. hindi), japanska i korejska slova.",
   "scanLabel": "Skeniraj",
   "score": "Točnost: {score}%",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Obranite bazu govoreći riječi prije nego što neprijatelji stignu.",
   "wordDefenseTitle": "Obrana riječi",
   "wordModeLabel": "Način rada s riječima",
-  "yourPronunciation": "Moj izgovor"
+  "combinedResult": "Kombinirani rezultat",
+  "errorLimitReached": "Nemate dovoljno prijevoda. Želite li pogledati oglas i napuniti 10 prijevoda?",
+  "yourPronunciation": "Moj izgovor",
+  "helpLimitDetails": "💡 [Upute za ograničenje prijevoda]\nSvaki dan u ponoć dobivate 20 besplatnih prijevoda. Ako ih sve potrošite, možete odmah dobiti dodatnih 10 prijevoda gledanjem oglasa.",
+  "scanDetails": "• Učitajte slike iz kamere ili galerije za izdvajanje i prevođenje teksta.\n• Možete dodirnuti više rečenica na jednoj slici za pojedinačni prijevod.\n• Ako nemate dovoljno prijevoda, odmah pogledajte oglas i napunite dodatnih 10."
 }

@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Käännöstä ei voi tehdä, koska se sisältää vihapuhetta.",
   "errorOtherSafety": "AI-turvallisuuskäytäntöjen vuoksi käännös on estetty.",
+  "errorQuotaExceeded": "Päivittäinen tekoälypalveluiden kiintiö on täynnä. Yritä hetken kuluttua tai huomenna uudelleen.",
+  "errorSafetyPolicy": "Käännös on rajoitettu tekoälyn turvallisuuskäytännön vuoksi.",
+  "copyOriginal": "Kopioi alkuperäinen",
+  "originalCopied": "Alkuperäinen teksti kopioitu.",
   "errorProfanity": "Käännöstä ei voi tehdä, koska se sisältää sopimatonta kielenkäyttöä.",
   "errorSelectCategory": "Valitse ensin sana tai lause!",
   "errorSexualContent": "Käännöstä ei voi tehdä, koska se sisältää seksuaalista sisältöä.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Alkuperäinen teksti",
   "saving": "Tallennetaan...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Valitse skannattava kuva",
+  "scanNoMatch": "Kuvasta ei löytynyt tekstiä, joka vastaa asetettua oppimiskieltä. Tarkista kieliasetukset.",
   "scanNotSupported": "Tämä kieli ei tue skannausta. OCR tukee tällä hetkellä vain latinalaisia, kiinalaisia, devanagari (esim. hindi), japanilaisia ja korealaisia merkkejä.",
   "scanLabel": "Skannaa",
   "score": "Tarkkuus: {score}%",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Puolusta tukikohtaa sanomalla sanat ennen kuin viholliset saapuvat.",
   "wordDefenseTitle": "Sana puolustus",
   "wordModeLabel": "Sanatila",
-  "yourPronunciation": "Sinun ääntämys"
+  "combinedResult": "Yhdistetty tulos",
+  "errorLimitReached": "Käännöskerrat ovat vähissä. Haluatko katsoa mainoksen ja saada 10 lisäkertaa?",
+  "yourPronunciation": "Sinun ääntämys",
+  "helpLimitDetails": "💡 [Käännösrajoitusten tiedot]\nJoka päivä keskiyöllä tarjotaan 20 ilmaista käännöstä. Jos käytät ne kaikki, voit katsoa mainoksen ja saada heti 10 lisäkäännöstä.",
+  "scanDetails": "• Tuo kuvia kamerasta tai galleriasta poimiaksesi ja kääntääksesi tekstiä.\n• Voit napauttaa yksittäisiä lauseita yhdessä valokuvassa kääntääksesi ne erikseen.\n• Jos käännöskerrat ovat vähissä, voit katsoa mainoksen ja saada heti 10 lisäkertaa."
 }

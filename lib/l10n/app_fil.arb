@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Hindi maaaring isalin dahil naglalaman ng mga pahayag ng pagkapoot.",
   "errorOtherSafety": "Ang pagsasalin ay tinanggihan dahil sa patakaran sa kaligtasan ng AI.",
+  "errorQuotaExceeded": "Naubos na ang pang-araw-araw na quota para sa serbisyo ng AI. Subukang muli mamaya o bukas.",
+  "errorSafetyPolicy": "Pinaghihigpitan ang pagsasalin dahil sa patakaran sa kaligtasan ng AI.",
+  "copyOriginal": "Kopyahin ang Orihinal",
+  "originalCopied": "Nakopya na ang orihinal na teksto.",
   "errorProfanity": "Hindi maaaring isalin dahil naglalaman ng mga malaswang salita.",
   "errorSelectCategory": "Pumili muna ng salita o pangungusap!",
   "errorSexualContent": "Hindi maaaring isalin dahil naglalaman ng sekswal na nilalaman.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Orihinal na Teksto",
   "saving": "Nagsa-save...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Pumili ng imahe na i-scan",
+  "scanNoMatch": "Walang mahanap na tekstong tumutugma sa wikang ginamit sa pagsasanay na nakatakda sa litrato. Pakisuri ang mga setting ng wika.",
   "scanNotSupported": "Hindi sinusuportahan ng wikang ito ang tampok na pag-scan. Kasalukuyang sinusuportahan ng OCR ang mga character na Latin, Chinese, Devanagari (tulad ng Hindi), Japanese, at Korean lamang.",
   "scanLabel": "I-scan",
   "score": "Kawastuhan: {score}%",
@@ -751,5 +757,9 @@
   "wordDefenseDesc": "Ipagtanggol ang base sa pamamagitan ng pagsasabi ng salita bago makarating ang kaaway.",
   "wordDefenseTitle": "Word Defense",
   "wordModeLabel": "Word Mode",
-  "yourPronunciation": "Ang iyong Pagbigkas"
+  "combinedResult": "Pinagsamang Resulta",
+  "errorLimitReached": "Kulang ka na sa bilang ng pagsasalin. Gusto mo bang manood ng ad para makakuha ng 10 karagdagang pagsasalin?",
+  "yourPronunciation": "Ang iyong Pagbigkas",
+  "helpLimitDetails": "💡 [Gabay sa Limitasyon ng Pagsasalin]\n20 libreng pagsasalin ang ibinibigay araw-araw sa hatinggabi. Kung maubos mo ang lahat, maaari kang manood ng ad para makakuha agad ng 10 karagdagang pagsasalin.",
+  "scanDetails": "• Mag-import ng mga larawan mula sa camera o gallery upang kunin at isalin ang teksto.\n• Maaari mong i-tap ang ilang pangungusap sa isang larawan upang isalin ang mga ito nang paisa-isa.\n• Kung kulang ka sa bilang ng pagsasalin, maaari kang manood agad ng ad para makakuha ng 10 karagdagang pagsasalin."
 }
