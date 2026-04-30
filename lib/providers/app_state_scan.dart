@@ -5,44 +5,62 @@ mixin AppStateScan on ChangeNotifier {
 }
 
 extension AppStateScanExtension on AppState {
-  Future<void> pickImageAndRecognizeText() async {
+  Future<void> pickImageAndRecognizeText(
+      {ImageSource source = ImageSource.gallery}) async {
     final ImagePicker picker = ImagePicker();
-    final XFile? image = await picker.pickImage(source: ImageSource.gallery);
+    final XFile? image = await picker.pickImage(source: source);
 
     if (image == null) return;
 
     _isTranslating = true;
     _isSaved = false;
+    _scannedImage = File(image.path);
+    _scannedText = '';
+    _scanReviewItems = [];
+    _isTranslatingSingleMap.clear();
     notify();
 
     try {
+      if (!ScanSupportConstants.isSupported(_targetLang)) {
+        setScannedText('NO_MATCH');
+        setScanReviewItems([]);
+        return;
+      }
+
       final inputImage = InputImage.fromFilePath(image.path);
-      
-      final List<TextRecognitionScript> scripts = [
-        TextRecognitionScript.latin,
-        TextRecognitionScript.korean,
-        TextRecognitionScript.chinese,
-        TextRecognitionScript.japanese,
+      final targetScript =
+          ScanSupportConstants.getScriptForLanguage(_targetLang);
+      final scripts = <TextRecognitionScript>[
+        targetScript,
+        ...ScanSupportConstants.allScripts
+            .where((script) => script != targetScript),
       ];
 
-      List<Map<String, dynamic>> allBlocks = [];
-      final targetScript = ScanSupportConstants.getScriptForLanguage(_targetLang);
-
-      for (var script in scripts) {
+      final List<Map<String, dynamic>> allBlocks = [];
+      for (final script in scripts) {
         TextRecognizer? recognizer;
         try {
           recognizer = TextRecognizer(script: script);
-          final RecognizedText recognizedText = await recognizer.processImage(inputImage);
+          final RecognizedText recognizedText =
+              await recognizer.processImage(inputImage);
 
           for (var block in recognizedText.blocks) {
             String lang = 'auto';
             if (block.recognizedLanguages.isNotEmpty) {
-              lang = block.recognizedLanguages.first; // languageCode does not exist on String
+              lang = block.recognizedLanguages
+                  .first; // languageCode does not exist on String
             } else {
-              if (script == TextRecognitionScript.korean) { lang = 'ko'; }
-              else if (script == TextRecognitionScript.japanese) { lang = 'ja'; }
-              else if (script == TextRecognitionScript.chinese) { lang = 'zh'; }
-              else if (script == TextRecognitionScript.latin) { lang = 'en'; }
+              if (script == TextRecognitionScript.korean) {
+                lang = 'ko';
+              } else if (script == TextRecognitionScript.japanese) {
+                lang = 'ja';
+              } else if (script == TextRecognitionScript.chinese) {
+                lang = 'zh';
+              } else if (script == TextRecognitionScript.devanagiri) {
+                lang = _targetLang;
+              } else if (script == TextRecognitionScript.latin) {
+                lang = 'en';
+              }
             }
 
             allBlocks.add({
@@ -61,11 +79,11 @@ extension AppStateScanExtension on AppState {
 
       final learningLang = _targetLang.split('-')[0];
 
-      List<Map<String, dynamic>> filteredBlocks = [];
-      for (var block in allBlocks) {
+      final List<Map<String, dynamic>> filteredBlocks = [];
+      for (final block in allBlocks) {
         final blockLang = block['lang'].toString().split('-')[0];
         final blockScript = block['script'] as TextRecognitionScript;
-        
+
         if (blockLang == learningLang || blockScript == targetScript) {
           filteredBlocks.add(block);
           if (blockLang != learningLang) {
@@ -73,12 +91,18 @@ extension AppStateScanExtension on AppState {
           }
         }
       }
+      filteredBlocks.sort((a, b) {
+        final rectA = a['rect'] as Rect;
+        final rectB = b['rect'] as Rect;
+        final vertical = rectA.top.compareTo(rectB.top);
+        return vertical != 0 ? vertical : rectA.left.compareTo(rectB.left);
+      });
 
-      List<Map<String, dynamic>> dedupedSegments = [];
-      for (var block in filteredBlocks) {
+      final List<Map<String, dynamic>> dedupedSegments = [];
+      for (final block in filteredBlocks) {
         bool isDuplicate = false;
         final rect1 = block['rect'] as Rect;
-        for (var existing in dedupedSegments) {
+        for (final existing in dedupedSegments) {
           final rect2 = existing['rect'] as Rect;
           final intersection = rect1.intersect(rect2);
           if (intersection.width > 0 && intersection.height > 0) {
@@ -100,17 +124,27 @@ extension AppStateScanExtension on AppState {
         }
       }
 
-      List<Map<String, dynamic>> finalSegments = [];
+      final List<Map<String, dynamic>> finalSegments = [];
       if (dedupedSegments.isNotEmpty) {
-        final combinedOriginal = dedupedSegments.map((seg) => seg['text']).join('\n');
-        finalSegments.add({
-          'lang': _targetLang,
-          'original': combinedOriginal,
-          'translated': '',
-        });
+        for (final segment in dedupedSegments) {
+          final lines = segment['text']
+              .toString()
+              .split('\n')
+              .map((line) => line.trim())
+              .where((line) => line.isNotEmpty);
+
+          for (final line in lines) {
+            if (finalSegments.any((item) => item['original'] == line)) continue;
+            finalSegments.add({
+              'lang': _targetLang,
+              'original': line,
+              'translated': '',
+            });
+          }
+        }
       }
       if (finalSegments.isEmpty && allBlocks.isNotEmpty) {
-        setScannedText('NO_MATCH'); 
+        setScannedText('NO_MATCH');
       } else if (allBlocks.isEmpty) {
         setScannedText('NO_TEXT');
       } else {
@@ -119,7 +153,6 @@ extension AppStateScanExtension on AppState {
 
       setScanReviewItems(finalSegments);
       _isTranslatingSingleMap.clear();
-
     } catch (e) {
       debugPrint('[Scan] OCR/Process Error: $e');
       setScannedText('ERROR: $e');
@@ -129,7 +162,26 @@ extension AppStateScanExtension on AppState {
     }
   }
 
-  bool isSegmentTranslating(int index) => _isTranslatingSingleMap[index] ?? false;
+  bool isSegmentTranslating(int index) =>
+      _isTranslatingSingleMap[index] ?? false;
+
+  bool get canSaveScannedItem {
+    return _scanReviewItems.isNotEmpty &&
+        _scanReviewItems.every((item) {
+          final translated = item['translated']?.toString().trim() ?? '';
+          return _isUsableScanTranslation(translated);
+        });
+  }
+
+  bool _isUsableScanTranslation(String translated) {
+    if (translated.isEmpty || translated == '[...]') return false;
+    if (translated == 'LIMIT' || translated == 'OTHER') return false;
+    if (translated.startsWith('Error:')) return false;
+    if (translated.contains('Policy') || translated.contains('exhausted')) {
+      return false;
+    }
+    return true;
+  }
 
   Future<void> translateSingleSegment(int index) async {
     if (index < 0 || index >= _scanReviewItems.length) return;
@@ -140,6 +192,7 @@ extension AppStateScanExtension on AppState {
     if (originalText.isEmpty) return;
 
     _isTranslatingSingleMap[index] = true;
+    _isSaved = false;
     notify();
 
     try {
@@ -156,12 +209,14 @@ extension AppStateScanExtension on AppState {
       final translatedText = result['text']?.toString() ?? '';
       if (result['isValid'] == true || translatedText.isNotEmpty) {
         _scanReviewItems[index]['translated'] = translatedText;
-        
+
         // 2. 번역 성공 시에만 횟수 차감
         await _usageService.incrementUsage();
       } else {
         final reason = result['reason']?.toString() ?? 'ERROR';
-        if (reason.contains('429') || reason.contains('Resource exhausted') || reason.contains('Max retries')) {
+        if (reason.contains('429') ||
+            reason.contains('Resource exhausted') ||
+            reason.contains('Max retries')) {
           _splitSegmentIntoChunks(index);
           return;
         }
@@ -172,7 +227,8 @@ extension AppStateScanExtension on AppState {
         _scanReviewItems[index]['translated'] = 'LIMIT';
       } else {
         final errorStr = e.toString();
-        if (errorStr.contains('429') || errorStr.contains('Resource exhausted')) {
+        if (errorStr.contains('429') ||
+            errorStr.contains('Resource exhausted')) {
           _splitSegmentIntoChunks(index);
           return;
         }
@@ -187,11 +243,12 @@ extension AppStateScanExtension on AppState {
   void _splitSegmentIntoChunks(int index) {
     final item = _scanReviewItems[index];
     final originalText = item['original'].toString();
-    
+
     final lines = originalText.split('\n');
     if (lines.length <= 1) {
       // Cannot split further
-      _scanReviewItems[index]['translated'] = 'Error: 429 Resource Exhausted. Please try again later.';
+      _scanReviewItems[index]['translated'] =
+          'Error: 429 Resource Exhausted. Please try again later.';
       return;
     }
 
@@ -212,7 +269,8 @@ extension AppStateScanExtension on AppState {
     notify();
   }
 
-  String get combinedOriginal => _scanReviewItems.map((e) => e['original']).join('\n\n');
+  String get combinedOriginal =>
+      _scanReviewItems.map((e) => e['original']).join('\n\n');
 
   String get combinedTranslated {
     return _scanReviewItems.map((e) {
@@ -223,6 +281,7 @@ extension AppStateScanExtension on AppState {
 
   Future<void> saveScannedItem() async {
     if (_scanReviewItems.isEmpty) return;
+    if (!canSaveScannedItem) return;
     _isSaved = true;
     notify();
 
@@ -262,7 +321,7 @@ extension AppStateScanExtension on AppState {
             ad.show(onUserEarnedReward: (ad, reward) async {
               // 3. 보상 지급 (10회 충전)
               await _usageService.addRefill(10);
-              
+
               _statusMessage = 'Refilled! +10 translations';
               if (context.mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(

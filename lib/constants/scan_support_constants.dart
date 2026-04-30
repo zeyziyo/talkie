@@ -12,6 +12,8 @@ class ScanSupportConstants {
     'no', 'nb', 'pl', 'cs', 'ro', 'hu', 'id', 'ms', 'fil', 'tp',
     'vi', 'tr', 'af', 'sq', 'az', 'bs', 'ca', 'cy', 'et', 'eu',
     'gl', 'hr', 'is', 'lt', 'lv', 'sk', 'sl', 'sw', 'uz', 'zu',
+    // Devanagari script
+    'hi', 'mr', 'ne',
     // Chinese script
     'zh', 'zh-CN', 'zh-TW',
     // Japanese
@@ -30,6 +32,9 @@ class ScanSupportConstants {
     if (base == 'ko') return TextRecognitionScript.korean;
     if (base == 'ja') return TextRecognitionScript.japanese;
     if (base == 'zh') return TextRecognitionScript.chinese;
+    if (base == 'hi' || base == 'mr' || base == 'ne') {
+      return TextRecognitionScript.devanagiri;
+    }
     // 기본적으로 나머지는 Latin 스크립트로 간주 (en, es, fr 등)
     return TextRecognitionScript.latin;
   }
@@ -38,6 +43,7 @@ class ScanSupportConstants {
   static List<TextRecognitionScript> get allScripts => [
         TextRecognitionScript.latin,
         TextRecognitionScript.chinese,
+        TextRecognitionScript.devanagiri,
         TextRecognitionScript.japanese,
         TextRecognitionScript.korean,
       ];

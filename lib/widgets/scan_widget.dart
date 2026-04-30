@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import '../services/translation_service.dart';
 import '../providers/app_state.dart';
@@ -28,10 +29,13 @@ class _ScanWidgetState extends State<ScanWidget> {
   Widget build(BuildContext context) {
     final appState = Provider.of<AppState>(context);
     final l10n = AppLocalizations.of(context)!;
+    final isScanSupported =
+        ScanSupportConstants.isSupported(appState.targetLang);
 
     // Sync controller with appState text
-    if (appState.scannedText != _textController.text && appState.scannedText != 'Recognizing...') {
-       _textController.text = appState.scannedText;
+    if (appState.scannedText != _textController.text &&
+        appState.scannedText != 'Recognizing...') {
+      _textController.text = appState.scannedText;
     }
 
     return SingleChildScrollView(
@@ -56,19 +60,21 @@ class _ScanWidgetState extends State<ScanWidget> {
             child: appState.scannedImage != null
                 ? ClipRRect(
                     borderRadius: BorderRadius.circular(20.r),
-                    child: Image.file(appState.scannedImage!, fit: BoxFit.contain),
+                    child:
+                        Image.file(appState.scannedImage!, fit: BoxFit.contain),
                   )
                 : Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.add_a_photo_outlined, size: 40.r, color: Colors.indigo.shade200),
+                        Icon(Icons.add_a_photo_outlined,
+                            size: 40.r, color: Colors.indigo.shade200),
                         SizedBox(height: 12.h),
                         Text(
                           l10n.scanInstructions,
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            color: Colors.grey.shade600, 
+                            color: Colors.grey.shade600,
                             fontSize: 13.sp,
                             height: 1.5,
                           ),
@@ -80,7 +86,7 @@ class _ScanWidgetState extends State<ScanWidget> {
           SizedBox(height: 20.h),
 
           // OCR 미지원 언어 경고 배너 (버튼 유지)
-          if (!ScanSupportConstants.isSupported(appState.sourceLang)) ...[
+          if (!isScanSupported) ...[
             Container(
               padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 12.h),
               decoration: BoxDecoration(
@@ -91,7 +97,8 @@ class _ScanWidgetState extends State<ScanWidget> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(Icons.warning_amber_rounded, color: Colors.amber.shade700, size: 20.r),
+                  Icon(Icons.warning_amber_rounded,
+                      color: Colors.amber.shade700, size: 20.r),
                   SizedBox(width: 10.w),
                   Expanded(
                     child: Text(
@@ -110,56 +117,103 @@ class _ScanWidgetState extends State<ScanWidget> {
           ],
 
           // 2. Action Buttons
-          ElevatedButton(
-            onPressed: appState.isTranslating ? null : () => appState.pickImageAndRecognizeText(),
-            style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.zero,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.r)),
-              elevation: 4,
-              shadowColor: Colors.indigo.withValues(alpha: 0.3),
-            ),
-            child: Ink(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Colors.indigo.shade700, Colors.indigo.shade500],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-                borderRadius: BorderRadius.circular(16.r),
-              ),
-              child: Container(
-                padding: EdgeInsets.symmetric(vertical: 14.h),
-                alignment: Alignment.center,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    appState.isTranslating 
-                        ? SizedBox(width: 18.w, height: 18.w, child: const CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
-                        : const Icon(Icons.auto_awesome, color: Colors.white),
-                    SizedBox(width: 8.w),
-                    Text(
-                      appState.isTranslating ? l10n.processing : l10n.pickGallery,
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15.sp),
+          Row(
+            children: [
+              Expanded(
+                child: ElevatedButton(
+                  onPressed: appState.isTranslating || !isScanSupported
+                      ? null
+                      : () => appState.pickImageAndRecognizeText(),
+                  style: ElevatedButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16.r)),
+                    elevation: 4,
+                    shadowColor: Colors.indigo.withValues(alpha: 0.3),
+                  ),
+                  child: Ink(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          Colors.indigo.shade700,
+                          Colors.indigo.shade500
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      borderRadius: BorderRadius.circular(16.r),
                     ),
-                  ],
+                    child: Container(
+                      padding: EdgeInsets.symmetric(vertical: 14.h),
+                      alignment: Alignment.center,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          appState.isTranslating
+                              ? SizedBox(
+                                  width: 18.w,
+                                  height: 18.w,
+                                  child: const CircularProgressIndicator(
+                                      strokeWidth: 2, color: Colors.white))
+                              : const Icon(Icons.photo_library_outlined,
+                                  color: Colors.white),
+                          SizedBox(width: 8.w),
+                          Text(
+                            appState.isTranslating
+                                ? l10n.processing
+                                : l10n.pickGallery,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15.sp),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
               ),
-            ),
+              SizedBox(width: 10.w),
+              Tooltip(
+                message: 'Camera',
+                child: SizedBox(
+                  width: 52.w,
+                  height: 52.w,
+                  child: IconButton.filled(
+                    onPressed: appState.isTranslating || !isScanSupported
+                        ? null
+                        : () => appState.pickImageAndRecognizeText(
+                            source: ImageSource.camera),
+                    icon: const Icon(Icons.photo_camera_outlined),
+                    style: IconButton.styleFrom(
+                      backgroundColor: Colors.indigo.shade600,
+                      foregroundColor: Colors.white,
+                      disabledBackgroundColor: Colors.grey.shade300,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
-          
+
           if (appState.scanReviewItems.isNotEmpty) ...[
             SizedBox(height: 24.h),
             Text(
               l10n.extractedText,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.sp, color: Colors.indigo.shade900),
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.sp,
+                  color: Colors.indigo.shade900),
             ),
             SizedBox(height: 12.h),
-            
+
             // Segment Cards
             ...List.generate(appState.scanReviewItems.length, (index) {
               final item = appState.scanReviewItems[index];
               final String langCode = item['lang'] ?? 'auto';
-              final String langName = LanguageConstants.getLanguageMap(appState.sourceLang)[langCode] ?? langCode;
+              final String langName = LanguageConstants.getLanguageMap(
+                      appState.sourceLang)[langCode] ??
+                  langCode;
 
               return Container(
                 margin: EdgeInsets.only(bottom: 16.h),
@@ -183,45 +237,60 @@ class _ScanWidgetState extends State<ScanWidget> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 8.w, vertical: 4.h),
                           decoration: BoxDecoration(
                             color: Colors.indigo.shade50,
                             borderRadius: BorderRadius.circular(8.r),
                           ),
                           child: Text(
                             langName,
-                            style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold, color: Colors.indigo),
+                            style: TextStyle(
+                                fontSize: 12.sp,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.indigo),
                           ),
                         ),
-                        Icon(Icons.translate, size: 16.r, color: Colors.indigo.shade200),
+                        Icon(Icons.translate,
+                            size: 16.r, color: Colors.indigo.shade200),
                       ],
                     ),
                     SizedBox(height: 12.h),
-                    
+
                     // Original
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           l10n.originalText,
-                          style: TextStyle(fontSize: 10.sp, color: Colors.grey.shade500, fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              fontSize: 10.sp,
+                              color: Colors.grey.shade500,
+                              fontWeight: FontWeight.bold),
                         ),
                         InkWell(
                           onTap: () {
-                            Clipboard.setData(ClipboardData(text: item['original']));
+                            Clipboard.setData(
+                                ClipboardData(text: item['original']));
                             ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(content: Text(l10n.originalCopied), duration: const Duration(seconds: 1)),
+                              SnackBar(
+                                  content: Text(l10n.originalCopied),
+                                  duration: const Duration(seconds: 1)),
                             );
                           },
                           child: Padding(
                             padding: EdgeInsets.symmetric(horizontal: 4.w),
                             child: Row(
                               children: [
-                                Icon(Icons.copy, size: 12.r, color: Colors.indigo.shade300),
+                                Icon(Icons.copy,
+                                    size: 12.r, color: Colors.indigo.shade300),
                                 SizedBox(width: 4.w),
                                 Text(
                                   l10n.copyOriginal,
-                                  style: TextStyle(fontSize: 10.sp, color: Colors.indigo.shade300, fontWeight: FontWeight.bold),
+                                  style: TextStyle(
+                                      fontSize: 10.sp,
+                                      color: Colors.indigo.shade300,
+                                      fontWeight: FontWeight.bold),
                                 ),
                               ],
                             ),
@@ -235,79 +304,90 @@ class _ScanWidgetState extends State<ScanWidget> {
                       style: TextStyle(fontSize: 15.sp, color: Colors.black87),
                     ),
                     SizedBox(height: 12.h),
-                    
+
                     // Division
                     Divider(color: Colors.grey.shade100, height: 1),
                     SizedBox(height: 12.h),
-                    
+
                     // Translated (In Native Language)
                     Text(
                       '${l10n.translationResult} (${LanguageConstants.getLanguageMap(appState.sourceLang)[appState.sourceLang]})',
-                      style: TextStyle(fontSize: 10.sp, color: Colors.indigo.shade300, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 10.sp,
+                          color: Colors.indigo.shade300,
+                          fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 4.h),
-                    Builder(
-                      builder: (context) {
-                        final translatedText = item['translated'] ?? '';
-                        final isTranslating = appState.isSegmentTranslating(index);
+                    Builder(builder: (context) {
+                      final translatedText = item['translated'] ?? '';
+                      final isTranslating =
+                          appState.isSegmentTranslating(index);
 
-                        if (isTranslating) {
-                          return Padding(
-                            padding: EdgeInsets.symmetric(vertical: 8.h),
-                            child: SizedBox(
-                              width: 20.w,
-                              height: 20.w,
-                              child: CircularProgressIndicator(strokeWidth: 2, color: Colors.indigo.shade300),
-                            ),
-                          );
-                        }
-
-                        if (translatedText.isEmpty) {
-                          return Align(
-                            alignment: Alignment.centerLeft,
-                            child: TextButton.icon(
-                              onPressed: () => appState.translateSingleSegment(index),
-                              icon: Icon(Icons.translate, size: 16.sp),
-                              label: Text(l10n.translate),
-                              style: TextButton.styleFrom(
-                                foregroundColor: Colors.indigo,
-                                padding: EdgeInsets.symmetric(horizontal: 12.w),
-                                backgroundColor: Colors.indigo.shade50,
-                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
-                              ),
-                            ),
-                          );
-                        }
-
-                        // 만약 에러 코드 형태라면 다국어 메시지로 변환
-                        String displayMsg = translatedText;
-                        if (translatedText.startsWith('Error:') || 
-                            translatedText.contains('Policy') || 
-                            translatedText == 'OTHER' ||
-                            translatedText.contains('exhausted')) {
-                          displayMsg = TranslationService.getErrorMessage(translatedText, l10n);
-                        }
-                        
-                        return Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              displayMsg,
-                              style: TextStyle(
-                                fontSize: 15.sp, 
-                                color: displayMsg == translatedText ? Colors.black87 : Colors.red.shade700, 
-                                fontWeight: displayMsg == translatedText ? FontWeight.w500 : FontWeight.normal
-                              ),
-                            ),
-                            if (displayMsg != translatedText) // 에러 발생 시 재시도 버튼 제공
-                              TextButton(
-                                onPressed: () => appState.translateSingleSegment(index),
-                                child: Text(l10n.retry, style: TextStyle(fontSize: 12.sp)),
-                              ),
-                          ],
+                      if (isTranslating) {
+                        return Padding(
+                          padding: EdgeInsets.symmetric(vertical: 8.h),
+                          child: SizedBox(
+                            width: 20.w,
+                            height: 20.w,
+                            child: CircularProgressIndicator(
+                                strokeWidth: 2, color: Colors.indigo.shade300),
+                          ),
                         );
                       }
-                    ),
+
+                      if (translatedText.isEmpty) {
+                        return Align(
+                          alignment: Alignment.centerLeft,
+                          child: TextButton.icon(
+                            onPressed: () =>
+                                appState.translateSingleSegment(index),
+                            icon: Icon(Icons.translate, size: 16.sp),
+                            label: Text(l10n.translate),
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.indigo,
+                              padding: EdgeInsets.symmetric(horizontal: 12.w),
+                              backgroundColor: Colors.indigo.shade50,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.r)),
+                            ),
+                          ),
+                        );
+                      }
+
+                      // 만약 에러 코드 형태라면 다국어 메시지로 변환
+                      String displayMsg = translatedText;
+                      if (translatedText.startsWith('Error:') ||
+                          translatedText.contains('Policy') ||
+                          translatedText == 'OTHER' ||
+                          translatedText.contains('exhausted')) {
+                        displayMsg = TranslationService.getErrorMessage(
+                            translatedText, l10n);
+                      }
+
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            displayMsg,
+                            style: TextStyle(
+                                fontSize: 15.sp,
+                                color: displayMsg == translatedText
+                                    ? Colors.black87
+                                    : Colors.red.shade700,
+                                fontWeight: displayMsg == translatedText
+                                    ? FontWeight.w500
+                                    : FontWeight.normal),
+                          ),
+                          if (displayMsg != translatedText) // 에러 발생 시 재시도 버튼 제공
+                            TextButton(
+                              onPressed: () =>
+                                  appState.translateSingleSegment(index),
+                              child: Text(l10n.retry,
+                                  style: TextStyle(fontSize: 12.sp)),
+                            ),
+                        ],
+                      );
+                    }),
                   ],
                 ),
               );
@@ -334,7 +414,8 @@ class _ScanWidgetState extends State<ScanWidget> {
                   children: [
                     Row(
                       children: [
-                        Icon(Icons.auto_awesome, color: Colors.amber.shade300, size: 20.r),
+                        Icon(Icons.auto_awesome,
+                            color: Colors.amber.shade300, size: 20.r),
                         SizedBox(width: 8.w),
                         Text(
                           l10n.combinedResult,
@@ -349,7 +430,10 @@ class _ScanWidgetState extends State<ScanWidget> {
                     SizedBox(height: 16.h),
                     Text(
                       l10n.originalText,
-                      style: TextStyle(color: Colors.white60, fontSize: 10.sp, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          color: Colors.white60,
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 4.h),
                     Text(
@@ -361,12 +445,18 @@ class _ScanWidgetState extends State<ScanWidget> {
                     SizedBox(height: 16.h),
                     Text(
                       l10n.translationResult,
-                      style: TextStyle(color: Colors.amber.shade200, fontSize: 10.sp, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          color: Colors.amber.shade200,
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 4.h),
                     Text(
                       appState.combinedTranslated,
-                      style: TextStyle(color: Colors.white, fontSize: 15.sp, fontWeight: FontWeight.w500),
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w500),
                     ),
                   ],
                 ),
@@ -376,17 +466,20 @@ class _ScanWidgetState extends State<ScanWidget> {
             // Final Save Button
             SizedBox(height: 24.h),
             ElevatedButton(
-              onPressed: appState.isSaved ? null : () => appState.saveScannedItem(),
+              onPressed: appState.isSaved || !appState.canSaveScannedItem
+                  ? null
+                  : () => appState.saveScannedItem(),
               style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.zero,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.r)),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16.r)),
                 elevation: appState.isSaved ? 0 : 6,
                 shadowColor: Colors.black.withValues(alpha: 0.2),
               ),
               child: Ink(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: appState.isSaved 
+                    colors: appState.isSaved
                         ? [Colors.green.shade400, Colors.green.shade600]
                         : [Colors.blueGrey.shade800, Colors.blueGrey.shade900],
                     begin: Alignment.topLeft,
@@ -400,11 +493,18 @@ class _ScanWidgetState extends State<ScanWidget> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(appState.isSaved ? Icons.check_circle : Icons.save_alt, color: Colors.white),
+                      Icon(
+                          appState.isSaved
+                              ? Icons.check_circle
+                              : Icons.save_alt,
+                          color: Colors.white),
                       SizedBox(width: 8.w),
                       Text(
                         appState.isSaved ? l10n.saved : l10n.saveToHistory,
-                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16.sp),
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.sp),
                       ),
                     ],
                   ),
@@ -413,42 +513,43 @@ class _ScanWidgetState extends State<ScanWidget> {
             ),
           ] else ...[
             // Empty / Mismatch State
-            Expanded(
-              child: Center(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 40.w),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(
-                        appState.scannedText == 'NO_MATCH' 
-                            ? Icons.language_rounded
-                            : Icons.image_search_rounded,
-                        size: 64.r,
-                        color: Colors.indigo.shade50,
+            SizedBox(height: 48.h),
+            Center(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 40.w),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(
+                      appState.scannedText == 'NO_MATCH'
+                          ? Icons.language_rounded
+                          : Icons.image_search_rounded,
+                      size: 64.r,
+                      color: Colors.indigo.shade50,
+                    ),
+                    SizedBox(height: 20.h),
+                    Text(
+                      appState.scannedText == 'NO_MATCH'
+                          ? l10n.scanNoMatch
+                          : (appState.scannedText == 'NO_TEXT'
+                              ? l10n.noStudyMaterial
+                              : (appState.scannedText.startsWith('ERROR:')
+                                  ? appState.scannedText
+                                  : l10n.scanInstructions)),
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.indigo.shade300,
+                        fontSize: 14.sp,
+                        height: 1.6,
                       ),
-                      SizedBox(height: 20.h),
-                      Text(
-                        appState.scannedText == 'NO_MATCH'
-                            ? l10n.scanNoMatch
-                            : (appState.scannedText == 'NO_TEXT' 
-                                ? l10n.noStudyMaterial 
-                                : l10n.scanInstructions),
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.indigo.shade300,
-                          fontSize: 14.sp,
-                          height: 1.6,
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
           ],
-          
-          SizedBox(height: 40.h), 
+
+          SizedBox(height: 40.h),
         ],
       ),
     );
