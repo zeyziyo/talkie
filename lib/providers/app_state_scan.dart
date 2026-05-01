@@ -12,9 +12,13 @@ extension AppStateScanExtension on AppState {
 
     if (image == null) return;
 
+    await recognizeTextFromImage(File(image.path));
+  }
+
+  Future<void> recognizeTextFromImage(File imageFile) async {
     _isTranslating = true;
     _isSaved = false;
-    _scannedImage = File(image.path);
+    _scannedImage = imageFile;
     _scannedText = '';
     _scanReviewItems = [];
     _isTranslatingSingleMap.clear();
@@ -27,7 +31,7 @@ extension AppStateScanExtension on AppState {
         return;
       }
 
-      final inputImage = InputImage.fromFilePath(image.path);
+      final inputImage = InputImage.fromFilePath(imageFile.path);
       final targetScript =
           ScanSupportConstants.getScriptForLanguage(_targetLang);
       final scripts = <TextRecognitionScript>[targetScript];
