@@ -586,8 +586,10 @@ class _ScanCropPage extends StatefulWidget {
 
 class _ScanCropPageState extends State<_ScanCropPage> {
   late final Future<_CropImageData> _imageDataFuture;
-  Rect _cropRect = const Rect.fromLTWH(0.08, 0.2, 0.84, 0.6);
+  Rect _cropRect = const Rect.fromLTWH(0, 0, 1, 1);
   Offset? _dragStart;
+  Rect? _dragStartRect;
+  _CropDragHandle _activeHandle = _CropDragHandle.none;
 
   @override
   void initState() {
@@ -606,18 +608,189 @@ class _ScanCropPageState extends State<_ScanCropPage> {
     );
   }
 
-  void _updateCrop(Offset start, Offset current) {
+  void _startCropDrag({
+    required Offset localPosition,
+    required Rect imageRect,
+    required Rect cropRect,
+  }) {
+    final normalizedPosition = _normalizePosition(localPosition, imageRect);
+    _dragStart = normalizedPosition;
+    _dragStartRect = _cropRect;
+    _activeHandle = _hitTestHandle(
+      localPosition: localPosition,
+      imageRect: imageRect,
+      cropRect: cropRect,
+    );
+
+    if (_activeHandle == _CropDragHandle.create) {
+      setState(() {
+        _cropRect = Rect.fromLTRB(
+          normalizedPosition.dx,
+          normalizedPosition.dy,
+          normalizedPosition.dx,
+          normalizedPosition.dy,
+        );
+      });
+    }
+  }
+
+  void _updateCropDrag(Offset localPosition, Rect imageRect) {
+    final start = _dragStart;
+    final startRect = _dragStartRect;
+    if (start == null || startRect == null) return;
+
+    final current = _normalizePosition(localPosition, imageRect);
+    final nextRect = switch (_activeHandle) {
+      _CropDragHandle.move => _moveCropRect(startRect, current - start),
+      _CropDragHandle.topLeft => _resizeCropRect(
+          startRect,
+          left: current.dx,
+          top: current.dy,
+        ),
+      _CropDragHandle.top => _resizeCropRect(startRect, top: current.dy),
+      _CropDragHandle.topRight => _resizeCropRect(
+          startRect,
+          top: current.dy,
+          right: current.dx,
+        ),
+      _CropDragHandle.right => _resizeCropRect(startRect, right: current.dx),
+      _CropDragHandle.bottomRight => _resizeCropRect(
+          startRect,
+          right: current.dx,
+          bottom: current.dy,
+        ),
+      _CropDragHandle.bottom => _resizeCropRect(startRect, bottom: current.dy),
+      _CropDragHandle.bottomLeft => _resizeCropRect(
+          startRect,
+          left: current.dx,
+          bottom: current.dy,
+        ),
+      _CropDragHandle.left => _resizeCropRect(startRect, left: current.dx),
+      _CropDragHandle.create => _createCropRect(start, current),
+      _CropDragHandle.none => _cropRect,
+    };
+
+    setState(() {
+      _cropRect = nextRect;
+    });
+  }
+
+  void _endCropDrag() {
+    _dragStart = null;
+    _dragStartRect = null;
+    _activeHandle = _CropDragHandle.none;
+  }
+
+  Offset _normalizePosition(Offset localPosition, Rect imageRect) {
+    return Offset(
+      (localPosition.dx / imageRect.width).clamp(0.0, 1.0).toDouble(),
+      (localPosition.dy / imageRect.height).clamp(0.0, 1.0).toDouble(),
+    );
+  }
+
+  Rect _createCropRect(Offset start, Offset current) {
     final left = math.min(start.dx, current.dx).clamp(0.0, 1.0).toDouble();
     final top = math.min(start.dy, current.dy).clamp(0.0, 1.0).toDouble();
     final right = math.max(start.dx, current.dx).clamp(0.0, 1.0).toDouble();
     final bottom = math.max(start.dy, current.dy).clamp(0.0, 1.0).toDouble();
+    return _ensureMinimumCrop(Rect.fromLTRB(left, top, right, bottom));
+  }
 
-    const minSize = 0.04;
-    if (right - left < minSize || bottom - top < minSize) return;
+  Rect _moveCropRect(Rect rect, Offset delta) {
+    final width = rect.width;
+    final height = rect.height;
+    final left = (rect.left + delta.dx).clamp(0.0, 1.0 - width).toDouble();
+    final top = (rect.top + delta.dy).clamp(0.0, 1.0 - height).toDouble();
+    return Rect.fromLTWH(left, top, width, height);
+  }
 
-    setState(() {
-      _cropRect = Rect.fromLTRB(left, top, right, bottom);
-    });
+  Rect _resizeCropRect(
+    Rect rect, {
+    double? left,
+    double? top,
+    double? right,
+    double? bottom,
+  }) {
+    const minSize = 0.05;
+    var nextLeft = (left ?? rect.left).clamp(0.0, 1.0).toDouble();
+    var nextTop = (top ?? rect.top).clamp(0.0, 1.0).toDouble();
+    var nextRight = (right ?? rect.right).clamp(0.0, 1.0).toDouble();
+    var nextBottom = (bottom ?? rect.bottom).clamp(0.0, 1.0).toDouble();
+
+    if (left != null && nextRight - nextLeft < minSize) {
+      nextLeft = nextRight - minSize;
+    }
+    if (right != null && nextRight - nextLeft < minSize) {
+      nextRight = nextLeft + minSize;
+    }
+    if (top != null && nextBottom - nextTop < minSize) {
+      nextTop = nextBottom - minSize;
+    }
+    if (bottom != null && nextBottom - nextTop < minSize) {
+      nextBottom = nextTop + minSize;
+    }
+
+    return _ensureMinimumCrop(
+      Rect.fromLTRB(
+        nextLeft.clamp(0.0, 1.0).toDouble(),
+        nextTop.clamp(0.0, 1.0).toDouble(),
+        nextRight.clamp(0.0, 1.0).toDouble(),
+        nextBottom.clamp(0.0, 1.0).toDouble(),
+      ),
+    );
+  }
+
+  Rect _ensureMinimumCrop(Rect rect) {
+    const minSize = 0.05;
+    var left = math.min(rect.left, rect.right).clamp(0.0, 1.0).toDouble();
+    var top = math.min(rect.top, rect.bottom).clamp(0.0, 1.0).toDouble();
+    var right = math.max(rect.left, rect.right).clamp(0.0, 1.0).toDouble();
+    var bottom = math.max(rect.top, rect.bottom).clamp(0.0, 1.0).toDouble();
+
+    if (right - left < minSize) {
+      final center = ((left + right) / 2).clamp(0.0, 1.0).toDouble();
+      left = (center - minSize / 2).clamp(0.0, 1.0 - minSize).toDouble();
+      right = left + minSize;
+    }
+    if (bottom - top < minSize) {
+      final center = ((top + bottom) / 2).clamp(0.0, 1.0).toDouble();
+      top = (center - minSize / 2).clamp(0.0, 1.0 - minSize).toDouble();
+      bottom = top + minSize;
+    }
+
+    return Rect.fromLTRB(left, top, right, bottom);
+  }
+
+  _CropDragHandle _hitTestHandle({
+    required Offset localPosition,
+    required Rect imageRect,
+    required Rect cropRect,
+  }) {
+    const touchTarget = 44.0;
+    final nearLeft = (localPosition.dx - cropRect.left).abs() <= touchTarget;
+    final nearRight = (localPosition.dx - cropRect.right).abs() <= touchTarget;
+    final nearTop = (localPosition.dy - cropRect.top).abs() <= touchTarget;
+    final nearBottom =
+        (localPosition.dy - cropRect.bottom).abs() <= touchTarget;
+    final insideHorizontal = localPosition.dx >= cropRect.left - touchTarget &&
+        localPosition.dx <= cropRect.right + touchTarget;
+    final insideVertical = localPosition.dy >= cropRect.top - touchTarget &&
+        localPosition.dy <= cropRect.bottom + touchTarget;
+
+    if (nearLeft && nearTop) return _CropDragHandle.topLeft;
+    if (nearRight && nearTop) return _CropDragHandle.topRight;
+    if (nearRight && nearBottom) return _CropDragHandle.bottomRight;
+    if (nearLeft && nearBottom) return _CropDragHandle.bottomLeft;
+    if (nearTop && insideHorizontal) return _CropDragHandle.top;
+    if (nearRight && insideVertical) return _CropDragHandle.right;
+    if (nearBottom && insideHorizontal) return _CropDragHandle.bottom;
+    if (nearLeft && insideVertical) return _CropDragHandle.left;
+
+    final normalizedPosition = _normalizePosition(localPosition, imageRect);
+    if (_cropRect.contains(normalizedPosition)) {
+      return _CropDragHandle.move;
+    }
+    return _CropDragHandle.create;
   }
 
   Future<void> _confirmCrop(_CropImageData data) async {
@@ -687,7 +860,7 @@ class _ScanCropPageState extends State<_ScanCropPage> {
             icon: const Icon(Icons.restart_alt),
             onPressed: () {
               setState(() {
-                _cropRect = const Rect.fromLTWH(0.08, 0.2, 0.84, 0.6);
+                _cropRect = const Rect.fromLTWH(0, 0, 1, 1);
               });
             },
           ),
@@ -731,6 +904,12 @@ class _ScanCropPageState extends State<_ScanCropPage> {
                 imageRect.left + _cropRect.right * imageRect.width,
                 imageRect.top + _cropRect.bottom * imageRect.height,
               );
+              final localCropRect = Rect.fromLTRB(
+                cropRect.left - imageRect.left,
+                cropRect.top - imageRect.top,
+                cropRect.right - imageRect.left,
+                cropRect.bottom - imageRect.top,
+              );
 
               return Stack(
                 children: [
@@ -751,30 +930,20 @@ class _ScanCropPageState extends State<_ScanCropPage> {
                     rect: imageRect,
                     child: GestureDetector(
                       behavior: HitTestBehavior.opaque,
-                      onPanStart: (details) {
-                        _dragStart = Offset(
-                          (details.localPosition.dx / imageRect.width)
-                              .clamp(0.0, 1.0)
-                              .toDouble(),
-                          (details.localPosition.dy / imageRect.height)
-                              .clamp(0.0, 1.0)
-                              .toDouble(),
-                        );
-                      },
-                      onPanUpdate: (details) {
-                        final start = _dragStart;
-                        if (start == null) return;
-                        final current = Offset(
-                          (details.localPosition.dx / imageRect.width)
-                              .clamp(0.0, 1.0)
-                              .toDouble(),
-                          (details.localPosition.dy / imageRect.height)
-                              .clamp(0.0, 1.0)
-                              .toDouble(),
-                        );
-                        _updateCrop(start, current);
-                      },
-                      onPanEnd: (_) => _dragStart = null,
+                      onPanStart: (details) => _startCropDrag(
+                        localPosition: details.localPosition,
+                        imageRect: imageRect,
+                        cropRect: localCropRect,
+                      ),
+                      onPanUpdate: (details) => _updateCropDrag(
+                        details.localPosition,
+                        imageRect,
+                      ),
+                      onPanEnd: (_) => _endCropDrag(),
+                      onPanCancel: _endCropDrag,
+                      child: CustomPaint(
+                        painter: _CropHandlePainter(localCropRect),
+                      ),
                     ),
                   ),
                 ],
@@ -810,6 +979,20 @@ class _ScanCropPageState extends State<_ScanCropPage> {
       height,
     );
   }
+}
+
+enum _CropDragHandle {
+  none,
+  move,
+  topLeft,
+  top,
+  topRight,
+  right,
+  bottomRight,
+  bottom,
+  bottomLeft,
+  left,
+  create,
 }
 
 class _CropImageData {
@@ -871,6 +1054,42 @@ class _CropOverlayPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _CropOverlayPainter oldDelegate) {
+    return oldDelegate.cropRect != cropRect;
+  }
+}
+
+class _CropHandlePainter extends CustomPainter {
+  const _CropHandlePainter(this.cropRect);
+
+  final Rect cropRect;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final handlePaint = Paint()
+      ..color = Colors.white
+      ..style = PaintingStyle.fill;
+    final handleBorderPaint = Paint()
+      ..color = Colors.black.withValues(alpha: 0.45)
+      ..strokeWidth = 1.5
+      ..style = PaintingStyle.stroke;
+
+    for (final point in [
+      cropRect.topLeft,
+      cropRect.topCenter,
+      cropRect.topRight,
+      cropRect.centerRight,
+      cropRect.bottomRight,
+      cropRect.bottomCenter,
+      cropRect.bottomLeft,
+      cropRect.centerLeft,
+    ]) {
+      canvas.drawCircle(point, 7, handlePaint);
+      canvas.drawCircle(point, 7, handleBorderPaint);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _CropHandlePainter oldDelegate) {
     return oldDelegate.cropRect != cropRect;
   }
 }
