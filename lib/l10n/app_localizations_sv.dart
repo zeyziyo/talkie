@@ -1240,6 +1240,37 @@ class AppLocalizationsSv extends AppLocalizations {
   String get wordModeLabel => 'Ord-läge';
 
   @override
+  String get scanTranslateMethodTitle => 'Välj översättningsmetod';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Hur vill du översätta den igenkända texten?';
+
+  @override
+  String get scanBulkTranslate => 'Översätt allt samtidigt';
+
+  @override
+  String get scanBulkTranslateDesc => 'Översätt hela texten i en enda begäran';
+
+  @override
+  String get scanSegmentTranslate => 'Översätt separat';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Välj segmenten du vill översätta individuellt';
+
+  @override
+  String get scanTranslatingAll => 'Översätter allt...';
+
+  @override
+  String get scanBulkTranslateButton => 'Översätt allt';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Otillräckligt antal översättningar. Krävs: $needed, Återstående: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Kombinerat resultat';
 
   @override

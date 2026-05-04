@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Puolusta tukikohtaa sanomalla sanat ennen kuin viholliset saapuvat.",
   "wordDefenseTitle": "Sana puolustus",
   "wordModeLabel": "Sanatila",
+  "scanTranslateMethodTitle": "Valitse käännöstapa",
+  "scanTranslateMethodSubtitle": "Miten haluat kääntää tunnistetun tekstin?",
+  "scanBulkTranslate": "Käännä kaikki kerralla",
+  "scanBulkTranslateDesc": "Käännä koko teksti yhdellä pyynnöllä",
+  "scanSegmentTranslate": "Käännä osissa",
+  "scanSegmentTranslateDesc": "Valitse käännettävät osat erikseen",
+  "scanTranslatingAll": "Käännetään kaikki...",
+  "scanBulkTranslateButton": "Käännä kaikki",
+  "scanInsufficientLimit": "Käännöksiä ei ole tarpeeksi. Tarvitaan: {needed}, jäljellä: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Yhdistetty tulos",
   "errorLimitReached": "Käännöskerrat ovat vähissä. Haluatko katsoa mainoksen ja saada 10 lisäkertaa?",
   "yourPronunciation": "Sinun ääntämys",

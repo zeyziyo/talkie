@@ -1250,6 +1250,36 @@ class AppLocalizationsBe extends AppLocalizations {
   String get wordModeLabel => 'Рэжым слоў';
 
   @override
+  String get scanTranslateMethodTitle => 'Выберыце спосаб перакладу';
+
+  @override
+  String get scanTranslateMethodSubtitle => 'Як перакладаць распазнаны тэкст?';
+
+  @override
+  String get scanBulkTranslate => 'Пакетны пераклад усяго';
+
+  @override
+  String get scanBulkTranslateDesc => 'Перакладайце ўвесь тэкст адным запытам';
+
+  @override
+  String get scanSegmentTranslate => 'Паасобны пераклад';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Выбірайце сегменты для перакладу паасобку';
+
+  @override
+  String get scanTranslatingAll => 'Перакладаецца ўсё...';
+
+  @override
+  String get scanBulkTranslateButton => 'Перакласці ўсё';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Недастаткова спроб перакладу. Трэба: $needed, засталося: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Аб\'яднаны вынік';
 
   @override

@@ -1242,6 +1242,37 @@ class AppLocalizationsSw extends AppLocalizations {
   String get wordModeLabel => 'Hali ya Neno';
 
   @override
+  String get scanTranslateMethodTitle => 'Chagua Njia ya Tafsiri';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Ungependa kutafsiri vipi maandishi yaliyotambuliwa?';
+
+  @override
+  String get scanBulkTranslate => 'Tafsiri Yote kwa Mkupuo';
+
+  @override
+  String get scanBulkTranslateDesc => 'Tafsiri maandishi yote kwa ombi moja.';
+
+  @override
+  String get scanSegmentTranslate => 'Tafsiri Sehemu Moja Moja';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Chagua sehemu za kutafsiri moja moja.';
+
+  @override
+  String get scanTranslatingAll => 'Inatafsiri Yote...';
+
+  @override
+  String get scanBulkTranslateButton => 'Tafsiri Yote';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Huna idadi ya kutosha ya tafsiri. Inahitajika: $needed, Zilizosalia: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Matokeo yaliyounganishwa';
 
   @override

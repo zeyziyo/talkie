@@ -1245,6 +1245,35 @@ class AppLocalizationsEt extends AppLocalizations {
   String get wordModeLabel => 'Sõnarežiim';
 
   @override
+  String get scanTranslateMethodTitle => 'Vali tõlkemeetod';
+
+  @override
+  String get scanTranslateMethodSubtitle => 'Kuidas tuvastatud teksti tõlkida?';
+
+  @override
+  String get scanBulkTranslate => 'Hulgatõlge';
+
+  @override
+  String get scanBulkTranslateDesc => 'Tõlgi kogu tekst ühe korraga';
+
+  @override
+  String get scanSegmentTranslate => 'Individuaalne tõlge';
+
+  @override
+  String get scanSegmentTranslateDesc => 'Vali tõlgitavad segmendid eraldi';
+
+  @override
+  String get scanTranslatingAll => 'Tõlgitakse kõike...';
+
+  @override
+  String get scanBulkTranslateButton => 'Tõlgi kõik';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Tõlgete arv on ebapiisav. Vaja: $needed, allesjäänud: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Kombineeritud tulemus';
 
   @override

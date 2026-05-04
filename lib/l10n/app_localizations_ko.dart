@@ -1216,6 +1216,35 @@ class AppLocalizationsKo extends AppLocalizations {
   String get wordModeLabel => '단어 모드';
 
   @override
+  String get scanTranslateMethodTitle => '번역 방법 선택';
+
+  @override
+  String get scanTranslateMethodSubtitle => '인식된 텍스트를 어떻게 번역할까요?';
+
+  @override
+  String get scanBulkTranslate => '전체 일괄 번역';
+
+  @override
+  String get scanBulkTranslateDesc => '전체 텍스트를 한 번의 요청으로 번역합니다';
+
+  @override
+  String get scanSegmentTranslate => '개별 번역';
+
+  @override
+  String get scanSegmentTranslateDesc => '번역할 세그먼트를 개별적으로 선택합니다';
+
+  @override
+  String get scanTranslatingAll => '전체 번역 중...';
+
+  @override
+  String get scanBulkTranslateButton => '전체 번역';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return '번역 횟수가 부족합니다. 필요: $needed회, 잔여: $remaining회';
+  }
+
+  @override
   String get combinedResult => '통합 결과';
 
   @override

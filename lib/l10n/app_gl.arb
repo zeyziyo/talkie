@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Defende a base dicindo a palabra antes de que chegue o inimigo.",
   "wordDefenseTitle": "Defensa de palabras",
   "wordModeLabel": "Modo palabra",
+  "scanTranslateMethodTitle": "Seleccionar método de tradución",
+  "scanTranslateMethodSubtitle": "Como queres traducir o texto recoñecido?",
+  "scanBulkTranslate": "Tradución completa por lotes",
+  "scanBulkTranslateDesc": "Traduce todo o texto nunha soa solicitude",
+  "scanSegmentTranslate": "Tradución individual",
+  "scanSegmentTranslateDesc": "Selecciona individualmente os segmentos para traducir",
+  "scanTranslatingAll": "Traducindo todo...",
+  "scanBulkTranslateButton": "Traducir todo",
+  "scanInsufficientLimit": "Non tes suficientes traducións. Necesario: {needed}, Restante: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Resultado combinado",
   "errorLimitReached": "Non tes suficientes traducións. Queres ver un anuncio para recargar 10 veces?",
   "yourPronunciation": "A túa pronuncia",

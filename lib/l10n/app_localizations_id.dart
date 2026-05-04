@@ -1247,6 +1247,38 @@ class AppLocalizationsId extends AppLocalizations {
   String get wordModeLabel => 'Mode Kata';
 
   @override
+  String get scanTranslateMethodTitle => 'Pilih Metode Terjemahan';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Bagaimana Anda ingin menerjemahkan teks yang dikenali?';
+
+  @override
+  String get scanBulkTranslate => 'Terjemahan Massal Penuh';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Terjemahkan seluruh teks dalam satu permintaan';
+
+  @override
+  String get scanSegmentTranslate => 'Terjemahan Individual';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Pilih segmen yang akan diterjemahkan secara individual';
+
+  @override
+  String get scanTranslatingAll => 'Menerjemahkan semua...';
+
+  @override
+  String get scanBulkTranslateButton => 'Terjemahkan Semua';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Jumlah terjemahan tidak mencukupi. Dibutuhkan: $needed, Sisa: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Hasil Gabungan';
 
   @override

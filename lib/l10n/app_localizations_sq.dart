@@ -1260,6 +1260,38 @@ class AppLocalizationsSq extends AppLocalizations {
   String get wordModeLabel => 'Modaliteti i fjalës';
 
   @override
+  String get scanTranslateMethodTitle => 'Zgjidhni metodën e përkthimit';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Si dëshironi të përktheni tekstin e njohur?';
+
+  @override
+  String get scanBulkTranslate => 'Përkthim i plotë në grup';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Përktheni të gjithë tekstin me një kërkesë të vetme';
+
+  @override
+  String get scanSegmentTranslate => 'Përkthim individual';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Zgjidhni individualisht segmentet për t\'u përkthyer';
+
+  @override
+  String get scanTranslatingAll => 'Duke përkthyer të gjithë...';
+
+  @override
+  String get scanBulkTranslateButton => 'Përktheni të gjithë';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Nuk keni mjaftueshëm përkthime. Duhen: $needed, të mbetura: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Rezultati i kombinuar';
 
   @override

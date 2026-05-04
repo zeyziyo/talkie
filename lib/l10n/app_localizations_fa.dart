@@ -1236,6 +1236,37 @@ class AppLocalizationsFa extends AppLocalizations {
   String get wordModeLabel => 'حالت کلمه';
 
   @override
+  String get scanTranslateMethodTitle => 'روش ترجمه را انتخاب کنید';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'چگونه متن شناسایی شده را ترجمه کنیم؟';
+
+  @override
+  String get scanBulkTranslate => 'ترجمه دسته‌ای کامل';
+
+  @override
+  String get scanBulkTranslateDesc => 'کل متن را با یک درخواست ترجمه کنید';
+
+  @override
+  String get scanSegmentTranslate => 'ترجمه مجزا';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'بخش‌هایی را که می‌خواهید ترجمه کنید، به‌طور جداگانه انتخاب کنید';
+
+  @override
+  String get scanTranslatingAll => 'در حال ترجمه همه...';
+
+  @override
+  String get scanBulkTranslateButton => 'ترجمه کامل';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'تعداد ترجمه‌ها کافی نیست. مورد نیاز: $needed بار، باقی مانده: $remaining بار';
+  }
+
+  @override
   String get combinedResult => 'نتیجه ادغام شده';
 
   @override

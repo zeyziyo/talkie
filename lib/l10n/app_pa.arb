@@ -757,6 +757,25 @@
   "wordDefenseDesc": "ਦੁਸ਼ਮਣ ਦੇ ਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ਬਦ ਬੋਲ ਕੇ ਅਧਾਰ ਦਾ ਬਚਾਅ ਕਰੋ।",
   "wordDefenseTitle": "ਸ਼ਬਦ ਡਿਫੈਂਸ",
   "wordModeLabel": "ਸ਼ਬਦ ਮੋਡ",
+  "scanTranslateMethodTitle": "ਅਨੁਵਾਦ ਕਰਨ ਦਾ ਤਰੀਕਾ ਚੁਣੋ",
+  "scanTranslateMethodSubtitle": "ਪਛਾਣੇ ਗਏ ਟੈਕਸਟ ਦਾ ਅਨੁਵਾਦ ਕਿਵੇਂ ਕਰੀਏ?",
+  "scanBulkTranslate": "ਇਕੱਠਾ ਅਨੁਵਾਦ",
+  "scanBulkTranslateDesc": "ਸਾਰੇ ਟੈਕਸਟ ਨੂੰ ਇੱਕੋ ਬੇਨਤੀ ਵਿੱਚ ਅਨੁਵਾਦ ਕਰੋ",
+  "scanSegmentTranslate": "ਵੱਖਰਾ ਅਨੁਵਾਦ",
+  "scanSegmentTranslateDesc": "ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਵੱਖਰੇ ਹਿੱਸੇ ਚੁਣੋ",
+  "scanTranslatingAll": "ਸਾਰਾ ਅਨੁਵਾਦ ਹੋ ਰਿਹਾ ਹੈ...",
+  "scanBulkTranslateButton": "ਇਕੱਠਾ ਅਨੁਵਾਦ ਕਰੋ",
+  "scanInsufficientLimit": "ਤੁਹਾਡੇ ਕੋਲ ਲੋੜੀਂਦੀ ਗਿਣਤੀ ਨਹੀਂ ਹੈ। ਲੋੜੀਂਦੀ: {needed}, ਬਾਕੀ: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "ਮਿਲਾ ਕੇ ਨਤੀਜਾ",
   "errorLimitReached": "ਤੁਹਾਡੀਆਂ ਅਨੁਵਾਦਾਂ ਖਤਮ ਹੋ ਗਈਆਂ ਹਨ। ਕੀ ਤੁਸੀਂ ਇੱਕ ਵਿਗਿਆਪਨ ਦੇਖ ਕੇ 10 ਹੋਰ ਪ੍ਰਾਪਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "yourPronunciation": "ਤੁਹਾਡਾ ਉਚਾਰਨ",

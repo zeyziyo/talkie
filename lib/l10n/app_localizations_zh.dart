@@ -161,17 +161,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get errorOtherSafety => '由于 AI 安全策略，翻译被拒绝。';
 
   @override
-  String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+  String get errorQuotaExceeded => '人工智能服务今日配额已用尽，请稍后或明日再试。';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy => '由于 AI 安全策略，翻译受到限制。';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => '复制原文';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => '原文已复制';
 
   @override
   String get errorProfanity => '包含不雅内容，无法翻译。';
@@ -769,7 +768,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get saved => '已保存';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => '原文';
 
   @override
   String get saving => '正在保存...';
@@ -778,8 +777,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get scanInstructions => '选择要扫描的图像';
 
   @override
-  String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+  String get scanNoMatch => '照片中未找到与设定学习语言相符的文本。请检查语言设置。';
 
   @override
   String get scanNotSupported => '此语言不支持扫描功能。OCR目前仅支持拉丁文、中文、梵文（印地语等）、日文和韩文字符。';
@@ -1204,21 +1202,50 @@ class AppLocalizationsZh extends AppLocalizations {
   String get wordModeLabel => '单词模式';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get scanTranslateMethodTitle => '选择翻译方式';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get scanTranslateMethodSubtitle => '如何翻译识别的文本？';
+
+  @override
+  String get scanBulkTranslate => '整体批量翻译';
+
+  @override
+  String get scanBulkTranslateDesc => '一次请求翻译所有文本';
+
+  @override
+  String get scanSegmentTranslate => '逐个翻译';
+
+  @override
+  String get scanSegmentTranslateDesc => '单独选择要翻译的片段';
+
+  @override
+  String get scanTranslatingAll => '正在整体翻译...';
+
+  @override
+  String get scanBulkTranslateButton => '整体翻译';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return '翻译次数不足。需要：$needed 次，剩余：$remaining 次';
+  }
+
+  @override
+  String get combinedResult => '合并结果';
+
+  @override
+  String get errorLimitReached => '翻译次数不足。观看广告以充值 10 次吗？';
 
   @override
   String get yourPronunciation => '你的发音';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [翻译次数说明]\n每天午夜提供 20 次免费翻译。即使全部用完，观看广告即可立即充值 10 次额外翻译。';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• 从相机或图库加载图像，提取并翻译文本。\n• 点击一张照片中包含的多个句子，即可单独翻译。\n• 如果翻译次数不足，可以立即观看广告额外充值 10 次。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -2418,6 +2445,35 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get wordModeLabel => '单词模式';
+
+  @override
+  String get scanTranslateMethodTitle => '选择翻译方式';
+
+  @override
+  String get scanTranslateMethodSubtitle => '您想如何翻译识别到的文本？';
+
+  @override
+  String get scanBulkTranslate => '批量翻译';
+
+  @override
+  String get scanBulkTranslateDesc => '一次请求翻译所有文本';
+
+  @override
+  String get scanSegmentTranslate => '分段翻译';
+
+  @override
+  String get scanSegmentTranslateDesc => '单独选择要翻译的片段';
+
+  @override
+  String get scanTranslatingAll => '正在全文翻译...';
+
+  @override
+  String get scanBulkTranslateButton => '全文翻译';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return '翻译次数不足。需要：$needed次，剩余：$remaining次';
+  }
 
   @override
   String get combinedResult => '合并结果';
@@ -3635,6 +3691,35 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get wordModeLabel => '單字模式';
+
+  @override
+  String get scanTranslateMethodTitle => '選擇翻譯方式';
+
+  @override
+  String get scanTranslateMethodSubtitle => '您要如何翻譯識別到的文字？';
+
+  @override
+  String get scanBulkTranslate => '整批翻譯';
+
+  @override
+  String get scanBulkTranslateDesc => '一次請求翻譯所有文字';
+
+  @override
+  String get scanSegmentTranslate => '個別翻譯';
+
+  @override
+  String get scanSegmentTranslateDesc => '分別選擇要翻譯的區段';
+
+  @override
+  String get scanTranslatingAll => '正在翻譯全部...';
+
+  @override
+  String get scanBulkTranslateButton => '全部翻譯';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return '翻譯次數不足。 需要：$needed次，剩餘：$remaining次';
+  }
 
   @override
   String get combinedResult => '合併結果';

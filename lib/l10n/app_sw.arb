@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Tetea msingi wako kwa kusema neno kabla adui hajafika.",
   "wordDefenseTitle": "Ulinzi wa Neno",
   "wordModeLabel": "Hali ya Neno",
+  "scanTranslateMethodTitle": "Chagua Njia ya Tafsiri",
+  "scanTranslateMethodSubtitle": "Ungependa kutafsiri vipi maandishi yaliyotambuliwa?",
+  "scanBulkTranslate": "Tafsiri Yote kwa Mkupuo",
+  "scanBulkTranslateDesc": "Tafsiri maandishi yote kwa ombi moja.",
+  "scanSegmentTranslate": "Tafsiri Sehemu Moja Moja",
+  "scanSegmentTranslateDesc": "Chagua sehemu za kutafsiri moja moja.",
+  "scanTranslatingAll": "Inatafsiri Yote...",
+  "scanBulkTranslateButton": "Tafsiri Yote",
+  "scanInsufficientLimit": "Huna idadi ya kutosha ya tafsiri. Inahitajika: {needed}, Zilizosalia: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Matokeo yaliyounganishwa",
   "errorLimitReached": "Huna hesabu ya kutosha ya tafsiri. Je, ungependa kutazama tangazo ili uongeze mara 10?",
   "yourPronunciation": "Matamshi Yako",

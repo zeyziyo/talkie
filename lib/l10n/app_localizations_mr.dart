@@ -1238,6 +1238,37 @@ class AppLocalizationsMr extends AppLocalizations {
   String get wordModeLabel => 'शब्द मोड';
 
   @override
+  String get scanTranslateMethodTitle => 'भाषांतर पद्धत निवडा';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'ओळखलेला मजकूर कसा भाषांतरित करायचा?';
+
+  @override
+  String get scanBulkTranslate => 'एकत्रित भाषांतर';
+
+  @override
+  String get scanBulkTranslateDesc => 'संपूर्ण मजकूर एकाच वेळी भाषांतरित करा';
+
+  @override
+  String get scanSegmentTranslate => 'विभागीय भाषांतर';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'भाषांतर करण्यासाठी विभाग स्वतंत्रपणे निवडा';
+
+  @override
+  String get scanTranslatingAll => 'संपूर्ण भाषांतर सुरू आहे...';
+
+  @override
+  String get scanBulkTranslateButton => 'एकत्रित भाषांतर करा';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'भाषांतरांसाठी पुरेसे क्रेडिट्स नाहीत. आवश्यक: $needed, शिल्लक: $remaining';
+  }
+
+  @override
   String get combinedResult => 'एकत्रित निकाल';
 
   @override

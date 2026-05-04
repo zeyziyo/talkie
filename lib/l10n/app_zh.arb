@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "包含仇恨言论，无法翻译。",
   "errorOtherSafety": "由于 AI 安全策略，翻译被拒绝。",
+  "errorQuotaExceeded": "人工智能服务今日配额已用尽，请稍后或明日再试。",
+  "errorSafetyPolicy": "由于 AI 安全策略，翻译受到限制。",
+  "copyOriginal": "复制原文",
+  "originalCopied": "原文已复制",
   "errorProfanity": "包含不雅内容，无法翻译。",
   "errorSelectCategory": "请先选择单词或句子！",
   "errorSexualContent": "包含色情内容，无法翻译。",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "原文",
   "saving": "正在保存...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "选择要扫描的图像",
+  "scanNoMatch": "照片中未找到与设定学习语言相符的文本。请检查语言设置。",
   "scanNotSupported": "此语言不支持扫描功能。OCR目前仅支持拉丁文、中文、梵文（印地语等）、日文和韩文字符。",
   "scanLabel": "扫描",
   "score": "准确率: {score}%",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "在敌人到达之前说出单词来防御基地。",
   "wordDefenseTitle": "单词防御",
   "wordModeLabel": "单词模式",
-  "yourPronunciation": "你的发音"
+  "scanTranslateMethodTitle": "选择翻译方式",
+  "scanTranslateMethodSubtitle": "如何翻译识别的文本？",
+  "scanBulkTranslate": "整体批量翻译",
+  "scanBulkTranslateDesc": "一次请求翻译所有文本",
+  "scanSegmentTranslate": "逐个翻译",
+  "scanSegmentTranslateDesc": "单独选择要翻译的片段",
+  "scanTranslatingAll": "正在整体翻译...",
+  "scanBulkTranslateButton": "整体翻译",
+  "scanInsufficientLimit": "翻译次数不足。需要：{needed} 次，剩余：{remaining} 次",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "合并结果",
+  "errorLimitReached": "翻译次数不足。观看广告以充值 10 次吗？",
+  "yourPronunciation": "你的发音",
+  "helpLimitDetails": "💡 [翻译次数说明]\n每天午夜提供 20 次免费翻译。即使全部用完，观看广告即可立即充值 10 次额外翻译。",
+  "scanDetails": "• 从相机或图库加载图像，提取并翻译文本。\n• 点击一张照片中包含的多个句子，即可单独翻译。\n• 如果翻译次数不足，可以立即观看广告额外充值 10 次。"
 }

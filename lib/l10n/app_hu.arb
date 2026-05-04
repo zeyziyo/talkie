@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Védd meg a bázisodat úgy, hogy kimondod a szavakat, mielőtt az ellenség odaérne.",
   "wordDefenseTitle": "Szó védelem",
   "wordModeLabel": "Szó mód",
+  "scanTranslateMethodTitle": "Fordítási mód kiválasztása",
+  "scanTranslateMethodSubtitle": "Hogyan fordítsuk le a felismert szöveget?",
+  "scanBulkTranslate": "Teljes kötegelt fordítás",
+  "scanBulkTranslateDesc": "A teljes szöveg lefordítása egyetlen kéréssel",
+  "scanSegmentTranslate": "Egyedi fordítás",
+  "scanSegmentTranslateDesc": "A lefordítandó szegmensek egyedi kiválasztása",
+  "scanTranslatingAll": "Teljes fordítás folyamatban...",
+  "scanBulkTranslateButton": "Teljes fordítás",
+  "scanInsufficientLimit": "Nincs elég fordítási keret. Szükséges: {needed}, maradt: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Összevont eredmény",
   "errorLimitReached": "Nincs elég fordítása. Szeretne hirdetést nézni, hogy 10 fordítást szerezzen?",
   "yourPronunciation": "Kiejtésed",

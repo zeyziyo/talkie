@@ -167,16 +167,17 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'നിങ്ങളുടെ AI സേവനത്തിനായുള്ള പ്രതിദിന ക്വാട്ട കഴിഞ്ഞു. പിന്നീട് അല്ലെങ്കിൽ നാളെ വീണ്ടും ശ്രമിക്കുക.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'AI സുരക്ഷാ നയം കാരണം വിവർത്തനം നിയന്ത്രിച്ചിരിക്കുന്നു.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'ഒറിജിനൽ പകർപ്പ് എടുക്കുക';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'ഒറിജിനൽ ടെക്സ്റ്റ് പകർത്തി.';
 
   @override
   String get errorProfanity =>
@@ -794,7 +795,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get saved => 'സേവ് ചെയ്തു';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'ഒറിജിനൽ ടെക്സ്റ്റ്';
 
   @override
   String get saving => 'സേവ് ചെയ്യുന്നു...';
@@ -804,7 +805,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'തിരഞ്ഞെടുത്ത ഭാഷയിലുള്ള ടെക്സ്റ്റ് ചിത്രത്തിൽ കണ്ടെത്താനായില്ല. ഭാഷാ ക്രമീകരണങ്ങൾ പരിശോധിക്കുക.';
 
   @override
   String get scanNotSupported =>
@@ -1251,19 +1252,52 @@ class AppLocalizationsMl extends AppLocalizations {
   String get wordModeLabel => 'വാക്ക് മോഡ്';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get scanTranslateMethodTitle => 'വിവർത്തന രീതി തിരഞ്ഞെടുക്കുക';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get scanTranslateMethodSubtitle =>
+      'കണ്ടെത്തിയ ടെക്സ്റ്റ് എങ്ങനെ വിവർത്തനം ചെയ്യണം?';
+
+  @override
+  String get scanBulkTranslate => 'மொத்த விவர்ത്തனம்';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'முழு உரையை ஒரே கோரிக்கையில் மொழிபெயர்க்கவும்';
+
+  @override
+  String get scanSegmentTranslate => 'ഓരോന്നായി വിവർത്തനം ചെയ്യുക';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'ഓരോ ഭാഗവും തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക';
+
+  @override
+  String get scanTranslatingAll => 'എല്ലാം വിവർത്തനം ചെയ്യുന്നു...';
+
+  @override
+  String get scanBulkTranslateButton => 'மொத்த மொழிபெயர்ப்பு';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'നിങ്ങൾക്ക് போதுமான மொழிபெயர்ப்பு இல்லை. தேவை: $needed, மீதம்: $remaining';
+  }
+
+  @override
+  String get combinedResult => 'സംയോജിത ഫലം';
+
+  @override
+  String get errorLimitReached =>
+      'மொழிபெயர்ப்புகள் இல்லை. 10க்கு விளம்பரம் பார்க்கவா?';
 
   @override
   String get yourPronunciation => 'നിങ്ങളുടെ ഉച്ചാരണം';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [വിവർത്തന പരിധി]\nഓരോ ദിവസവും 20 இலவச மொழிபெயர்ப்புகள் கிடைக்கும். எல்லாவற்றையும் பயன்படுத்திய பிறகு, ஒவ்வொரு முறையும் விளம்பரம் பார்க்கும் போதும் 10 கூடுதலான மொழிபெயர்ப்புகள் கிடைக்கும்.';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• கேமரா அல்லது கேலரியில் உள்ள படங்களில் உள்ள வார்த்தைகளை எடுத்து மொழிபெயர்க்கவும்.\n• ஒரு படத்தில் உள்ள வரிகளை, தனித்தனியாகத் தொட்டு மொழிபெயர்க்கலாம்.\n• மொழிபெயர்ப்பு குறைவாக இருந்தால், விளம்பரம் பார்த்து உடனே 10ஐ சேர்க்கலாம்.';
 }

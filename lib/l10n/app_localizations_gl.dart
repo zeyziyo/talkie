@@ -1256,6 +1256,38 @@ class AppLocalizationsGl extends AppLocalizations {
   String get wordModeLabel => 'Modo palabra';
 
   @override
+  String get scanTranslateMethodTitle => 'Seleccionar método de tradución';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Como queres traducir o texto recoñecido?';
+
+  @override
+  String get scanBulkTranslate => 'Tradución completa por lotes';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Traduce todo o texto nunha soa solicitude';
+
+  @override
+  String get scanSegmentTranslate => 'Tradución individual';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Selecciona individualmente os segmentos para traducir';
+
+  @override
+  String get scanTranslatingAll => 'Traducindo todo...';
+
+  @override
+  String get scanBulkTranslateButton => 'Traducir todo';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Non tes suficientes traducións. Necesario: $needed, Restante: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Resultado combinado';
 
   @override

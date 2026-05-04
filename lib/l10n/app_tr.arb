@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Düşmanlar ulaşmadan kelimeyi söyleyerek üssü savunun.",
   "wordDefenseTitle": "Kelime Savunması",
   "wordModeLabel": "Kelime Modu",
+  "scanTranslateMethodTitle": "Çeviri Yöntemi Seç",
+  "scanTranslateMethodSubtitle": "Algılanan metin nasıl çevrilecek?",
+  "scanBulkTranslate": "Toplu Çeviri",
+  "scanBulkTranslateDesc": "Tüm metni tek bir istekte çevir",
+  "scanSegmentTranslate": "Bölümlere Ayrılmış Çeviri",
+  "scanSegmentTranslateDesc": "Çevrilecek bölümleri ayrı ayrı seç",
+  "scanTranslatingAll": "Tümü çevriliyor...",
+  "scanBulkTranslateButton": "Tümünü Çevir",
+  "scanInsufficientLimit": "Yetersiz çeviri sayısı. Gerekli: {needed}, Kalan: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Birleştirilmiş Sonuç",
   "errorLimitReached": "Çeviri sayısı yetersiz. Reklam izleyerek 10 çeviri hakkı kazanmak ister misiniz?",
   "yourPronunciation": "Telaffuzunuz",

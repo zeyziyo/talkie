@@ -1233,6 +1233,37 @@ class AppLocalizationsTh extends AppLocalizations {
   String get wordModeLabel => 'โหมดคำศัพท์';
 
   @override
+  String get scanTranslateMethodTitle => 'เลือกวิธีการแปล';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'คุณต้องการแปลข้อความที่ตรวจพบอย่างไร';
+
+  @override
+  String get scanBulkTranslate => 'แปลแบบกลุ่มทั้งหมด';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'แปลข้อความทั้งหมดด้วยการร้องขอเพียงครั้งเดียว';
+
+  @override
+  String get scanSegmentTranslate => 'แปลทีละส่วน';
+
+  @override
+  String get scanSegmentTranslateDesc => 'เลือกส่วนที่คุณต้องการแปลทีละส่วน';
+
+  @override
+  String get scanTranslatingAll => 'กำลังแปลทั้งหมด...';
+
+  @override
+  String get scanBulkTranslateButton => 'แปลทั้งหมด';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'จำนวนการแปลไม่เพียงพอ ต้องใช้: $needed ครั้ง, เหลือ: $remaining ครั้ง';
+  }
+
+  @override
   String get combinedResult => 'ผลลัพธ์รวม';
 
   @override

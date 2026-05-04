@@ -757,6 +757,25 @@
   "wordDefenseDesc": "শত্ৰু অহাৰ আগতে শব্দ কৈ ঘাটি ৰক্ষা কৰক।",
   "wordDefenseTitle": "শব্দ ৰক্ষা",
   "wordModeLabel": "শব্দ মোড",
+  "scanTranslateMethodTitle": "অনুবাদ পদ্ধতি নিৰ্ব্বাচন কৰক",
+  "scanTranslateMethodSubtitle": "আপুনি কেনেকৈ চিনাক্ত কৰা পাঠ অনুবাদ কৰিব?",
+  "scanBulkTranslate": "সমূহীয়া অনুবাদ",
+  "scanBulkTranslateDesc": "এক অনুৰোধত সকলো পাঠ অনুবাদ কৰক",
+  "scanSegmentTranslate": "পৃথক অনুবাদ",
+  "scanSegmentTranslateDesc": "অনুবাদ কৰিবলগীয়া অংশবোৰ পৃথকভাৱে নিৰ্ব্বাচন কৰক",
+  "scanTranslatingAll": "সকলো অনুবাদ কৰি থকা হৈছে...",
+  "scanBulkTranslateButton": "সমূহীয়া অনুবাদ",
+  "scanInsufficientLimit": "অনুুবাদৰ সংখ্যা পৰ্যাপ্ত নহয়। প্ৰয়োজনীয়: {needed} বাৰ, বাকী: {remaining} বাৰ",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "সংহত ফলাফল",
   "errorLimitReached": "আপোনাৰ অনুবাদৰ সংখ্যা শেষ হৈ গৈছে। আপুনি এটা বিজ্ঞাপন চাই ১০টা অনুবাদৰ বাবে চাৰ্জ কৰিব বিচাৰেনে?",
   "yourPronunciation": "আপোনাৰ উচ্চাৰণ",

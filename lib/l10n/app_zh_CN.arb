@@ -757,6 +757,25 @@
   "wordDefenseDesc": "在敌人到达之前说出单词，保卫基地。",
   "wordDefenseTitle": "单词防御",
   "wordModeLabel": "单词模式",
+  "scanTranslateMethodTitle": "选择翻译方式",
+  "scanTranslateMethodSubtitle": "您想如何翻译识别到的文本？",
+  "scanBulkTranslate": "批量翻译",
+  "scanBulkTranslateDesc": "一次请求翻译所有文本",
+  "scanSegmentTranslate": "分段翻译",
+  "scanSegmentTranslateDesc": "单独选择要翻译的片段",
+  "scanTranslatingAll": "正在全文翻译...",
+  "scanBulkTranslateButton": "全文翻译",
+  "scanInsufficientLimit": "翻译次数不足。需要：{needed}次，剩余：{remaining}次",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "合并结果",
   "errorLimitReached": "翻译次数不足。观看广告以充值 10 次吗？",
   "yourPronunciation": "你的发音",

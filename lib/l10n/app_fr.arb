@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "La traduction est impossible car elle contient des propos haineux.",
   "errorOtherSafety": "La traduction a été refusée en raison de la politique de sécurité de l'IA.",
+  "errorQuotaExceeded": "Le quota quotidien du service d'IA est épuisé. Veuillez réessayer plus tard ou demain.",
+  "errorSafetyPolicy": "La traduction a été limitée en raison de la politique de sécurité de l'IA.",
+  "copyOriginal": "Copier l'original",
+  "originalCopied": "Texte original copié.",
   "errorProfanity": "La traduction est impossible car elle contient des vulgarités.",
   "errorSelectCategory": "Veuillez d'abord choisir mot ou phrase !",
   "errorSexualContent": "La traduction est impossible car elle contient du contenu à caractère sexuel.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Texte original",
   "saving": "Enregistrement...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Sélectionnez une image à scanner",
+  "scanNoMatch": "Aucun texte correspondant à la langue d'apprentissage définie n'a été trouvé dans l'image. Veuillez vérifier les paramètres de langue.",
   "scanNotSupported": "La numérisation n'est pas prise en charge pour cette langue. L'OCR prend actuellement en charge uniquement les caractères latins, chinois, dévanagari (hindi, etc.), japonais et coréens.",
   "scanLabel": "Scanner",
   "score": "Précision: {score}%",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "Défendez votre base en prononçant les mots avant que les ennemis n’arrivent.",
   "wordDefenseTitle": "Défense de mots",
   "wordModeLabel": "Mode mot",
-  "yourPronunciation": "Votre Prononciation"
+  "scanTranslateMethodTitle": "Choisir la méthode de traduction",
+  "scanTranslateMethodSubtitle": "Comment traduire le texte reconnu ?",
+  "scanBulkTranslate": "Traduction groupée complète",
+  "scanBulkTranslateDesc": "Traduit tout le texte en une seule requête",
+  "scanSegmentTranslate": "Traduction individuelle",
+  "scanSegmentTranslateDesc": "Sélectionnez individuellement les segments à traduire",
+  "scanTranslatingAll": "Traduction complète en cours...",
+  "scanBulkTranslateButton": "Tout traduire",
+  "scanInsufficientLimit": "Nombre de traductions insuffisant. Nécessaire : {needed}, Restant : {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Résultat combiné",
+  "errorLimitReached": "Nombre de traductions insuffisant. Voulez-vous regarder une publicité pour recharger 10 traductions ?",
+  "yourPronunciation": "Votre Prononciation",
+  "helpLimitDetails": "💡 [Guide des limites de traduction]\n20 traductions gratuites sont offertes chaque jour à minuit. Si vous les épuisez toutes, vous pouvez recharger immédiatement 10 traductions supplémentaires en regardant une publicité.",
+  "scanDetails": "• Importez des images de votre appareil photo ou de votre galerie pour extraire et traduire du texte.\n• Vous pouvez appuyer sur plusieurs phrases contenues dans une seule photo pour les traduire individuellement.\n• Si vous manquez de traductions, vous pouvez immédiatement regarder une publicité pour recharger 10 traductions supplémentaires."
 }

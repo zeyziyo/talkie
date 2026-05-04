@@ -236,6 +236,7 @@ class AppState extends ChangeNotifier {
   String _targetLang = 'en';
   bool _isListening = false;
   bool _isTranslating = false;
+  bool _isTranslatingAll = false; // Scan bulk translation state
   bool _isLoggingIn = false; // Phase 15.6: Dedicated login loading state
   bool _isSpeaking = false;
   bool _isSaved = false;

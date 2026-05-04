@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Ni ellir cyfieithu oherwydd ei fod yn cynnwys casineb.",
   "errorOtherSafety": "Gwrthodwyd cyfieithu oherwydd polisi diogelwch AI.",
+  "errorQuotaExceeded": "Mae'r cwota dyddiol ar gyfer y gwasanaeth AI wedi'i ddisbyddu. Rhowch gynnig arall arni yn nes ymlaen neu yfory.",
+  "errorSafetyPolicy": "Cyfyngwyd y cyfieithiad oherwydd polisi diogelwch AI.",
+  "copyOriginal": "Copïo'r gwreiddiol",
+  "originalCopied": "Copïwyd y testun gwreiddiol.",
   "errorProfanity": "Ni ellir cyfieithu oherwydd ei fod yn cynnwys rhegfeydd.",
   "errorSelectCategory": "Dewiswch air neu frawddeg yn gyntaf!",
   "errorSexualContent": "Ni ellir cyfieithu oherwydd ei fod yn cynnwys cynnwys erotig.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Testun gwreiddiol",
   "saving": "Cadw...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Dewiswch ddelwedd i'w sganio",
+  "scanNoMatch": "Ni chanfuwyd testun yn y llun sy'n cyfateb i'r iaith ddysgu a osodwyd. Gwiriwch eich gosodiadau iaith.",
   "scanNotSupported": "Nid yw’r iaith hon yn cefnogi sganio. Ar hyn o bryd, dim ond llythrennau Lladin, Tsieineaidd, Devanagari (Hindi, ac ati), Japaneaidd a Choreaidd y mae OCR yn eu cefnogi.",
   "scanLabel": "Sganio",
   "score": "Cywirdeb: {score}%",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "Amddiffynwch y sylfaen trwy ddweud y gair cyn i'r gelyn gyrraedd.",
   "wordDefenseTitle": "Amddiffyn Gair",
   "wordModeLabel": "Modd Gair",
-  "yourPronunciation": "Eich Ynganiad"
+  "scanTranslateMethodTitle": "Dewis dull cyfieithu",
+  "scanTranslateMethodSubtitle": "Sut ydych chi am gyfieithu'r testun a adnabuwyd?",
+  "scanBulkTranslate": "Cyfieithu swmp cyfan",
+  "scanBulkTranslateDesc": "Cyfieithwch y testun cyfan mewn un cais",
+  "scanSegmentTranslate": "Cyfieithu unigol",
+  "scanSegmentTranslateDesc": "Dewiswch segmentau i'w cyfieithu yn unigol",
+  "scanTranslatingAll": "Yn cyfieithu'r cyfan...",
+  "scanBulkTranslateButton": "Cyfieithu'r cyfan",
+  "scanInsufficientLimit": "Nid oes gennych ddigon o gyfieithiadau ar ôl. Angen: {needed}, Ar ôl: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Canlyniad cyfunol",
+  "errorLimitReached": "Nid oes gennych ddigon o gyfieithiadau ar ôl. Ydych chi am wylio hysbyseb i ail-lenwi 10?",
+  "yourPronunciation": "Eich Ynganiad",
+  "helpLimitDetails": "💡 [Canllaw terfyn cyfieithu]\nDarperir 20 o gyfieithiadau am ddim bob dydd am hanner nos. Os byddwch yn eu disbyddu i gyd, gallwch wylio hysbyseb i ail-lenwi 10 o gyfieithiadau ychwanegol ar unwaith.",
+  "scanDetails": "• Mewnforio delweddau o'r camera neu'r oriel i dynnu testun a'i gyfieithu.\n• Gallwch dapio a chyfieithu sawl brawddeg mewn un llun yn unigol.\n• Os nad oes gennych ddigon o gyfieithiadau, gallwch wylio hysbyseb ar unwaith i ail-lenwi 10 yn ychwanegol."
 }

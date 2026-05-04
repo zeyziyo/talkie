@@ -1237,6 +1237,37 @@ class AppLocalizationsAf extends AppLocalizations {
   String get wordModeLabel => 'Woordmodus';
 
   @override
+  String get scanTranslateMethodTitle => 'Kies vertaalmetode';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Hoe moet die herken teks vertaal word?';
+
+  @override
+  String get scanBulkTranslate => 'Grootmaatvertaling';
+
+  @override
+  String get scanBulkTranslateDesc => 'Vertaal die hele teks in een versoek';
+
+  @override
+  String get scanSegmentTranslate => 'Individuele vertaling';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Kies individueel segmente om te vertaal';
+
+  @override
+  String get scanTranslatingAll => 'Besig om alles te vertaal...';
+
+  @override
+  String get scanBulkTranslateButton => 'Vertaal alles';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Onvoldoende vertaalpogings. Benodig: $needed, Oorblywend: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Gekombineerde resultaat';
 
   @override

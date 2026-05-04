@@ -43,7 +43,119 @@ class _ScanWidgetState extends State<ScanWidget> {
     if (croppedImage == null) return;
 
     await appState.recognizeTextFromImage(croppedImage);
+
+    // OCR 완료 후 번역 방법 선택 다이얼로그 표시
+    if (mounted && appState.scanReviewItems.isNotEmpty) {
+      await _showTranslateMethodDialog(appState);
+    }
   }
+
+  Future<void> _showTranslateMethodDialog(AppState appState) async {
+    final l10n = AppLocalizations.of(context)!;
+
+    // 일괄 번역 선택 시 잔여 횟수 사전 확인
+    Future<void> onBulkSelected() async {
+      if (!mounted) return;
+      Navigator.of(context).pop();
+      final deficit = await appState.checkBulkLimit();
+      if (deficit != null && mounted) {
+        // 잔여 횟수 부족 경고
+        final needed = deficit['needed']!;
+        final remaining = deficit['remaining']!;
+        await showDialog<void>(
+          context: context,
+          builder: (ctx) => AlertDialog(
+            title: Text(l10n.usageLimitTitle),
+            content: Text(
+              l10n.scanInsufficientLimit(needed, remaining),
+
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.of(ctx).pop(),
+                child: Text(l10n.cancel),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.of(ctx).pop();
+                  // 잔여 횟수만큼만 번역 가능한 세그먼트 수를 안내
+                  // 개별 번역 모드로 폴백
+                },
+                child: Text(l10n.confirm),
+              ),
+            ],
+          ),
+        );
+        return;
+      }
+      appState.translateAllSegments();
+    }
+
+    await showDialog<void>(
+      context: context,
+      barrierDismissible: true,
+      builder: (ctx) {
+        return Dialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24),
+          ),
+          child: Padding(
+            padding: EdgeInsets.all(24.w),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  l10n.scanTranslateMethodTitle,
+                  style: TextStyle(
+                    fontSize: 18.sp,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.indigo.shade900,
+                  ),
+                ),
+                SizedBox(height: 6.h),
+                Text(
+                  l10n.scanTranslateMethodSubtitle,
+                  style: TextStyle(
+                    fontSize: 13.sp,
+                    color: Colors.grey.shade600,
+                  ),
+                ),
+                SizedBox(height: 20.h),
+                // 일괄 번역
+                _TranslateMethodCard(
+                  icon: Icons.bolt_rounded,
+                  iconColor: Colors.amber.shade700,
+                  title: l10n.scanBulkTranslate,
+                  subtitle: l10n.scanBulkTranslateDesc,
+                  onTap: () {
+                    Navigator.of(ctx).pop();
+                    onBulkSelected();
+                  },
+                ),
+                SizedBox(height: 12.h),
+                // 개별 번역
+                _TranslateMethodCard(
+                  icon: Icons.tune_rounded,
+                  iconColor: Colors.indigo.shade600,
+                  title: l10n.scanSegmentTranslate,
+                  subtitle: l10n.scanSegmentTranslateDesc,
+                  onTap: () => Navigator.of(ctx).pop(),
+                ),
+                SizedBox(height: 8.h),
+                TextButton(
+                  onPressed: () => Navigator.of(ctx).pop(),
+                  child: Text(l10n.cancel,
+                      style: TextStyle(color: Colors.grey.shade500)),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -216,13 +328,54 @@ class _ScanWidgetState extends State<ScanWidget> {
           ),
 
           if (appState.scanReviewItems.isNotEmpty) ...[
+            // 세그먼트 목록 + 상단 일괄 번역 버튼
             SizedBox(height: 24.h),
-            Text(
-              l10n.extractedText,
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18.sp,
-                  color: Colors.indigo.shade900),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    l10n.extractedText,
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18.sp,
+                        color: Colors.indigo.shade900),
+                  ),
+                ),
+                // 일괄 번역 버튼
+                if (!appState.isTranslatingAll)
+                  TextButton.icon(
+                    onPressed: appState.isTranslating
+                        ? null
+                        : () => _showTranslateMethodDialog(appState),
+                    icon: Icon(Icons.bolt_rounded,
+                        size: 16.sp, color: Colors.amber.shade700),
+                    label: Text(
+                      l10n.scanBulkTranslateButton,
+                      style: TextStyle(
+                          fontSize: 13.sp,
+                          color: Colors.indigo.shade700,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.amber.shade50,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.r)),
+                      padding: EdgeInsets.symmetric(
+                          horizontal: 12.w, vertical: 6.h),
+                    ),
+                  )
+                else
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8.w),
+                    child: SizedBox(
+                      width: 18.w,
+                      height: 18.w,
+                      child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: Colors.amber.shade600),
+                    ),
+                  ),
+              ],
             ),
             SizedBox(height: 12.h),
 
@@ -570,6 +723,78 @@ class _ScanWidgetState extends State<ScanWidget> {
 
           SizedBox(height: 40.h),
         ],
+      ),
+    );
+  }
+}
+
+/// \ubc88\uc5ed \ubc29\ubc95 \uc120\ud0dd \ub2e4\uc774\uc5bc\ub85c\uadf8\uc5d0\uc11c \uc0ac\uc6a9\ub418\ub294 \uce74\ub4dc \ud56d\ubaa9 \uc704\uc82f
+class _TranslateMethodCard extends StatelessWidget {
+  const _TranslateMethodCard({
+    required this.icon,
+    required this.iconColor,
+    required this.title,
+    required this.subtitle,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final Color iconColor;
+  final String title;
+  final String subtitle;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(16),
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 14.h),
+        decoration: BoxDecoration(
+          color: Colors.grey.shade50,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: Colors.indigo.shade100),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 44.w,
+              height: 44.w,
+              decoration: BoxDecoration(
+                color: iconColor.withValues(alpha: 0.12),
+                shape: BoxShape.circle,
+              ),
+              child: Icon(icon, color: iconColor, size: 22.sp),
+            ),
+            SizedBox(width: 14.w),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: TextStyle(
+                      fontSize: 14.sp,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.indigo.shade900,
+                    ),
+                  ),
+                  SizedBox(height: 2.h),
+                  Text(
+                    subtitle,
+                    style: TextStyle(
+                      fontSize: 12.sp,
+                      color: Colors.grey.shade600,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded,
+                color: Colors.grey.shade400, size: 20.sp),
+          ],
+        ),
       ),
     );
   }

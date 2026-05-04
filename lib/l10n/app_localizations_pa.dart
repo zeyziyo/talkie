@@ -1243,6 +1243,37 @@ class AppLocalizationsPa extends AppLocalizations {
   String get wordModeLabel => 'ਸ਼ਬਦ ਮੋਡ';
 
   @override
+  String get scanTranslateMethodTitle => 'ਅਨੁਵਾਦ ਕਰਨ ਦਾ ਤਰੀਕਾ ਚੁਣੋ';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'ਪਛਾਣੇ ਗਏ ਟੈਕਸਟ ਦਾ ਅਨੁਵਾਦ ਕਿਵੇਂ ਕਰੀਏ?';
+
+  @override
+  String get scanBulkTranslate => 'ਇਕੱਠਾ ਅਨੁਵਾਦ';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'ਸਾਰੇ ਟੈਕਸਟ ਨੂੰ ਇੱਕੋ ਬੇਨਤੀ ਵਿੱਚ ਅਨੁਵਾਦ ਕਰੋ';
+
+  @override
+  String get scanSegmentTranslate => 'ਵੱਖਰਾ ਅਨੁਵਾਦ';
+
+  @override
+  String get scanSegmentTranslateDesc => 'ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਵੱਖਰੇ ਹਿੱਸੇ ਚੁਣੋ';
+
+  @override
+  String get scanTranslatingAll => 'ਸਾਰਾ ਅਨੁਵਾਦ ਹੋ ਰਿਹਾ ਹੈ...';
+
+  @override
+  String get scanBulkTranslateButton => 'ਇਕੱਠਾ ਅਨੁਵਾਦ ਕਰੋ';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'ਤੁਹਾਡੇ ਕੋਲ ਲੋੜੀਂਦੀ ਗਿਣਤੀ ਨਹੀਂ ਹੈ। ਲੋੜੀਂਦੀ: $needed, ਬਾਕੀ: $remaining';
+  }
+
+  @override
   String get combinedResult => 'ਮਿਲਾ ਕੇ ਨਤੀਜਾ';
 
   @override

@@ -165,6 +165,9 @@ extension AppStateScanExtension on AppState {
   bool isSegmentTranslating(int index) =>
       _isTranslatingSingleMap[index] ?? false;
 
+  bool get isTranslatingAll => _isTranslatingAll;
+
+
   bool get canSaveScannedItem {
     return _scanReviewItems.isNotEmpty &&
         _scanReviewItems.every((item) {
@@ -181,6 +184,75 @@ extension AppStateScanExtension on AppState {
       return false;
     }
     return true;
+  }
+
+  /// 모든 세그먼트를 한 번에 번역 (일괄 번역)
+  /// - 사전에 잔여 횟수가 세그먼트 수 이상인지 확인
+  /// - 전체 원문을 "\n\n" 구분자로 합쳐 API 1회 호출
+  /// - 번역 성공 시 세그먼트 수만큼 incrementUsage() 호출
+  Future<Map<String, int>?> checkBulkLimit() async {
+    final needed = _scanReviewItems.length;
+    final remaining = await _usageService.getRemainingCount();
+    if (remaining < needed) {
+      return {'needed': needed, 'remaining': remaining};
+    }
+    return null;
+  }
+
+  Future<void> translateAllSegments() async {
+    if (_scanReviewItems.isEmpty) return;
+    if (_isTranslatingAll) return;
+
+    final needed = _scanReviewItems.length;
+    _isTranslatingAll = true;
+    _isSaved = false;
+    // 모든 세그먼트를 '번역 중' 상태로 표시
+    for (int i = 0; i < needed; i++) {
+      _isTranslatingSingleMap[i] = true;
+    }
+    notify();
+
+    try {
+      // 전체 원문 합산
+      final combinedText = _scanReviewItems
+          .map((e) => e['original'].toString().trim())
+          .join('\n\n');
+      final sourceLangCode = _scanReviewItems.first['lang'] as String;
+
+      final result = await TranslationService.translate(
+        text: combinedText,
+        sourceLang: sourceLangCode,
+        targetLang: _sourceLang,
+      );
+
+      final translatedText = result['text']?.toString() ?? '';
+      if (result['isValid'] == true || translatedText.isNotEmpty) {
+        // "\n\n"로 분할하여 각 세그먼트에 배분
+        final parts = translatedText.split('\n\n');
+        for (int i = 0; i < needed; i++) {
+          _scanReviewItems[i]['translated'] =
+              i < parts.length ? parts[i].trim() : translatedText.trim();
+        }
+        // 세그먼트 수만큼 usage 차감
+        for (int i = 0; i < needed; i++) {
+          await _usageService.incrementUsage();
+        }
+      } else {
+        final reason = result['reason']?.toString() ?? 'ERROR';
+        for (int i = 0; i < needed; i++) {
+          _scanReviewItems[i]['translated'] = reason;
+        }
+      }
+    } catch (e) {
+      final errorStr = e.toString();
+      for (int i = 0; i < needed; i++) {
+        _scanReviewItems[i]['translated'] = 'Error: $errorStr';
+      }
+    } finally {
+      _isTranslatingAll = false;
+      _isTranslatingSingleMap.clear();
+      notify();
+    }
   }
 
   Future<void> translateSingleSegment(int index) async {

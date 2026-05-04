@@ -1235,6 +1235,37 @@ class AppLocalizationsAr extends AppLocalizations {
   String get wordModeLabel => 'وضع الكلمات';
 
   @override
+  String get scanTranslateMethodTitle => 'اختر طريقة الترجمة';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'كيف تريد ترجمة النص الذي تم التعرف عليه؟';
+
+  @override
+  String get scanBulkTranslate => 'ترجمة مجمعة كاملة';
+
+  @override
+  String get scanBulkTranslateDesc => 'ترجمة النص بأكمله بطلب واحد';
+
+  @override
+  String get scanSegmentTranslate => 'ترجمة فردية';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'اختر الأجزاء التي تريد ترجمتها بشكل فردي';
+
+  @override
+  String get scanTranslatingAll => 'جارٍ ترجمة الكل...';
+
+  @override
+  String get scanBulkTranslateButton => 'ترجمة الكل';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'عدد مرات الترجمة غير كافٍ. المطلوب: $needed مرة، المتبقي: $remaining مرة';
+  }
+
+  @override
   String get combinedResult => 'النتيجة الموحدة';
 
   @override

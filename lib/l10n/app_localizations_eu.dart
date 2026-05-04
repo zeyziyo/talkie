@@ -165,16 +165,17 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Adimen artifizialeko zerbitzuaren eguneroko kuota agortu da. Saiatu berriro geroago edo bihar.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'AI segurtasun-politikak itzulpena mugatu du.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Jatorrizkoa kopiatu';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Jatorrizko testua kopiatu da.';
 
   @override
   String get errorProfanity => 'Ezin da itzuli profanotasuna duelako.';
@@ -790,7 +791,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get saved => 'Gordeta';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Jatorrizko testua';
 
   @override
   String get saving => 'Gordetzen...';
@@ -800,7 +801,7 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Ezin izan da argazkian ezarritako ikaskuntza-hizkuntzarekin bat datorren testurik aurkitu. Egiaztatu hizkuntza-ezarpenak.';
 
   @override
   String get scanNotSupported =>
@@ -1246,19 +1247,52 @@ class AppLocalizationsEu extends AppLocalizations {
   String get wordModeLabel => 'Hitzen modua';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get scanTranslateMethodTitle => 'Itzultzeko metodoa aukeratu';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get scanTranslateMethodSubtitle =>
+      'Nola itzuli behar da hautemandako testua?';
+
+  @override
+  String get scanBulkTranslate => 'Osoko itzulpen masiboa';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Testu osoa eskaera bakar batekin itzultzen du';
+
+  @override
+  String get scanSegmentTranslate => 'Banako itzulpena';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Itzultzeko segmentuak banan-banan hautatzen ditu';
+
+  @override
+  String get scanTranslatingAll => 'Guztia itzultzen...';
+
+  @override
+  String get scanBulkTranslateButton => 'Guztia itzuli';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Itzulpen kopuru nahikorik ez. Beharrezkoak: $needed, geratzen direnak: $remaining';
+  }
+
+  @override
+  String get combinedResult => 'Emaitza konbinatua';
+
+  @override
+  String get errorLimitReached =>
+      'Itzulpen kopuru nahikorik ez. Iragarki bat ikusi eta 10 itzulpen gehiago kargatu nahi dituzu?';
 
   @override
   String get yourPronunciation => 'Zure ahoskera';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [Itzulpen-mugaren gida]\nEgunero 20 doako itzulpen ematen dira gauerdian. Guztiak agortzen badituzu ere, iragarki bat ikusita 10 itzulpen gehiago kargatuko dira berehala.';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• Kargatu irudiak kameratik edo galeriatik testua atera eta itzultzeko.\n• Argazki batean dauden hainbat esaldi banan-banan itzul ditzakezu, gainean sakatuta.\n• Itzulpen kopururik ez baduzu, iragarki bat ikusita 10 itzulpen gehiago karga ditzakezu.';
 }

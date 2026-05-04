@@ -757,6 +757,25 @@
   "wordDefenseDesc": "با گفتن کلمه، قبل از رسیدن دشمنان از پایگاه دفاع کنید.",
   "wordDefenseTitle": "دفاع از کلمه",
   "wordModeLabel": "حالت کلمه",
+  "scanTranslateMethodTitle": "روش ترجمه را انتخاب کنید",
+  "scanTranslateMethodSubtitle": "چگونه متن شناسایی شده را ترجمه کنیم؟",
+  "scanBulkTranslate": "ترجمه دسته‌ای کامل",
+  "scanBulkTranslateDesc": "کل متن را با یک درخواست ترجمه کنید",
+  "scanSegmentTranslate": "ترجمه مجزا",
+  "scanSegmentTranslateDesc": "بخش‌هایی را که می‌خواهید ترجمه کنید، به‌طور جداگانه انتخاب کنید",
+  "scanTranslatingAll": "در حال ترجمه همه...",
+  "scanBulkTranslateButton": "ترجمه کامل",
+  "scanInsufficientLimit": "تعداد ترجمه‌ها کافی نیست. مورد نیاز: {needed} بار، باقی مانده: {remaining} بار",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "نتیجه ادغام شده",
   "errorLimitReached": "تعداد ترجمه کافی نیست. آیا می خواهید با دیدن تبلیغات 10 بار شارژ کنید؟",
   "yourPronunciation": "تلفظ شما",

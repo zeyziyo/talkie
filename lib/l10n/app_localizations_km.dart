@@ -168,16 +168,17 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'បរិមាណនៃការប្រើប្រាស់ប្រចាំថ្ងៃនៃសេវាកម្ម AI ត្រូវបានលើសហើយ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ ឬថ្ងៃស្អែក។';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'ការបកប្រែត្រូវបានកំណត់ដោយសារគោលការណ៍សុវត្ថិភាព AI ។';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'ចម្លង​ប្រភព';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'អត្ថបទដើមត្រូវបានចម្លង។';
 
   @override
   String get errorProfanity => 'មិនអាចបកប្រែបានទេ ព្រោះវាមានពាក្យប្រមាថ។';
@@ -793,7 +794,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get saved => 'បានរក្សាទុក';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'អត្ថបទ​ដើម';
 
   @override
   String get saving => 'កំពុងរក្សាទុក...';
@@ -803,7 +804,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'រក​មិន​ឃើញ​អត្ថបទ​ដែល​ត្រូវ​នឹង​ភាសា​សិក្សា​ដែល​បាន​កំណត់​ក្នុង​រូបថត​ទេ។ សូមពិនិត្យមើលការកំណត់ភាសារបស់អ្នក។';
 
   @override
   String get scanNotSupported =>
@@ -1249,19 +1250,50 @@ class AppLocalizationsKm extends AppLocalizations {
   String get wordModeLabel => 'របៀបពាក្យ';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get scanTranslateMethodTitle => 'ជ្រើសរើសវិធីសាស្ត្របកប្រែ';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get scanTranslateMethodSubtitle =>
+      'តើអ្នកចង់បកប្រែអត្ថបទដែលបានស្គាល់ដោយរបៀបណា?';
+
+  @override
+  String get scanBulkTranslate => 'បកប្រែច្រើនក្នុងពេលតែមួយ';
+
+  @override
+  String get scanBulkTranslateDesc => 'បកប្រែអត្ថបទទាំងមូលដោយស្នើសុំតែម្ដង';
+
+  @override
+  String get scanSegmentTranslate => 'បកប្រែ​ដោយ​ឡែក';
+
+  @override
+  String get scanSegmentTranslateDesc => 'ជ្រើសរើសផ្នែកដែលត្រូវបកប្រែដោយឡែក';
+
+  @override
+  String get scanTranslatingAll => 'កំពុងបកប្រែទាំងអស់...';
+
+  @override
+  String get scanBulkTranslateButton => 'បកប្រែទាំងអស់';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'ចំនួននៃការបកប្រែមិនគ្រប់គ្រាន់ទេ។ ត្រូវការ: $neededដង, សល់: $remainingដង';
+  }
+
+  @override
+  String get combinedResult => 'លទ្ធផលរួមបញ្ចូលគ្នា';
+
+  @override
+  String get errorLimitReached =>
+      'ចំនួននៃការបកប្រែមិនគ្រប់គ្រាន់ទេ។ តើអ្នកចង់មើលការផ្សាយពាណិជ្ជកម្មដើម្បីបញ្ចូលទឹកប្រាក់ចំនួន 10 ដងទេ?';
 
   @override
   String get yourPronunciation => 'ការបញ្ចេញសំឡេងរបស់អ្នក';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [ការណែនាំអំពីដែនកំណត់នៃការបកប្រែ]\nការបកប្រែឥតគិតថ្លៃចំនួន 20 ដងត្រូវបានផ្តល់ជូនជារៀងរាល់ថ្ងៃនៅពាក់កណ្តាលអធ្រាត្រ។ ទោះបីជាអ្នកប្រើប្រាស់វាទាំងអស់ក៏ដោយ អ្នកអាចបញ្ចូលទឹកប្រាក់បន្ថែមចំនួន 10 ដងភ្លាមៗដោយការមើលការផ្សាយពាណិជ្ជកម្ម។';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• ផ្ទុករូបភាពពីកាមេរ៉ា ឬវិចិត្រសាលរបស់អ្នក ដើម្បីស្រង់ចេញ និងបកប្រែអត្ថបទ។\n• អ្នកអាចបកប្រែប្រយោគជាច្រើនដែលមាននៅក្នុងរូបថតមួយដោយឡែកពីគ្នាដោយប៉ះពួកវា។\n• ប្រសិនបើអ្នកមិនមានចំនួននៃការបកប្រែគ្រប់គ្រាន់ទេ អ្នកអាចបញ្ចូលទឹកប្រាក់បន្ថែមចំនួន 10 ដងភ្លាមៗដោយការមើលការផ្សាយពាណិជ្ជកម្ម។';
 }

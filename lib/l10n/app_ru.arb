@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Защитите базу, произнося слова до того, как враги доберутся до нее.",
   "wordDefenseTitle": "Защита слов",
   "wordModeLabel": "Режим слов",
+  "scanTranslateMethodTitle": "Выбор способа перевода",
+  "scanTranslateMethodSubtitle": "Как переводить распознанный текст?",
+  "scanBulkTranslate": "Пакетный перевод всего текста",
+  "scanBulkTranslateDesc": "Перевести весь текст одним запросом",
+  "scanSegmentTranslate": "Перевод по частям",
+  "scanSegmentTranslateDesc": "Выбирайте сегменты для перевода по отдельности",
+  "scanTranslatingAll": "Перевод всего текста...",
+  "scanBulkTranslateButton": "Перевести все",
+  "scanInsufficientLimit": "Недостаточно попыток перевода. Необходимо: {needed}, осталось: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Объединенный результат",
   "errorLimitReached": "У вас недостаточно попыток перевода. Посмотреть рекламу и получить 10 попыток?",
   "yourPronunciation": "Ваше произношение",

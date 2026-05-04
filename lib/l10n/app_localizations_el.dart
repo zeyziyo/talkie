@@ -167,16 +167,17 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Εξαντλήθηκε η ημερήσια ποσόστωση για την υπηρεσία AI. Προσπαθήστε ξανά αργότερα ή αύριο.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Η μετάφραση περιορίστηκε λόγω της πολιτικής ασφαλείας AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Αντιγραφή πρωτοτύπου';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Το πρωτότυπο κείμενο αντιγράφηκε.';
 
   @override
   String get errorProfanity => 'Η μετάφραση δεν είναι δυνατή λόγω βωμολοχιών.';
@@ -793,7 +794,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get saved => 'Αποθηκεύτηκε';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Πρωτότυπο κείμενο';
 
   @override
   String get saving => 'Αποθήκευση...';
@@ -803,7 +804,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Δεν βρέθηκε κείμενο στην εικόνα που να ταιριάζει με την επιλεγμένη γλώσσα. Ελέγξτε τις ρυθμίσεις γλώσσας.';
 
   @override
   String get scanNotSupported =>
@@ -1246,19 +1247,52 @@ class AppLocalizationsEl extends AppLocalizations {
   String get wordModeLabel => 'Λειτουργία λέξεων';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get scanTranslateMethodTitle => 'Επιλογή μεθόδου μετάφρασης';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get scanTranslateMethodSubtitle =>
+      'Πώς θέλετε να μεταφραστούν τα αναγνωρισμένα κείμενα;';
+
+  @override
+  String get scanBulkTranslate => 'Μαζική μετάφραση';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Μεταφράστε ολόκληρο το κείμενο με ένα αίτημα';
+
+  @override
+  String get scanSegmentTranslate => 'Μεμονωμένη μετάφραση';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Επιλέξτε τμήματα για μετάφραση ξεχωριστά';
+
+  @override
+  String get scanTranslatingAll => 'Μεταφράζονται όλα...';
+
+  @override
+  String get scanBulkTranslateButton => 'Μετάφραση όλων';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Δεν υπάρχουν αρκετές μεταφράσεις. Απαιτούνται: $needed, Υπάρχουν: $remaining';
+  }
+
+  @override
+  String get combinedResult => 'Συνδυασμένο αποτέλεσμα';
+
+  @override
+  String get errorLimitReached =>
+      'Δεν υπάρχουν αρκετές μεταφράσεις. Θέλετε να παρακολουθήσετε μια διαφήμιση για να λάβετε 10 επιπλέον;';
 
   @override
   String get yourPronunciation => 'Η προφορά σας';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [Οδηγίες για το όριο μετάφρασης]\nΠαρέχονται 20 δωρεάν μεταφράσεις κάθε μέρα τα μεσάνυχτα. Εάν τις εξαντλήσετε όλες, μπορείτε να παρακολουθήσετε μια διαφήμιση για να λάβετε αμέσως 10 επιπλέον μεταφράσεις.';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• Φορτώστε εικόνες από την κάμερα ή τη συλλογή σας για να εξαγάγετε και να μεταφράσετε κείμενο.\n• Μπορείτε να πατήσετε πολλές προτάσεις σε μία φωτογραφία για να τις μεταφράσετε ξεχωριστά.\n• Εάν δεν έχετε αρκετές μεταφράσεις, μπορείτε να παρακολουθήσετε αμέσως μια διαφήμιση για να λάβετε 10 επιπλέον.';
 }

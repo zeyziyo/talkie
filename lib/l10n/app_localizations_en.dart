@@ -1242,6 +1242,38 @@ class AppLocalizationsEn extends AppLocalizations {
   String get wordModeLabel => 'Word Mode';
 
   @override
+  String get scanTranslateMethodTitle => 'Choose Translation Method';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'How would you like to translate the extracted text?';
+
+  @override
+  String get scanBulkTranslate => 'Translate All at Once';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Translates the entire text in a single request';
+
+  @override
+  String get scanSegmentTranslate => 'Translate Individually';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Choose which segments to translate separately';
+
+  @override
+  String get scanTranslatingAll => 'Translating all...';
+
+  @override
+  String get scanBulkTranslateButton => 'Translate All';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Not enough translation credits. $needed needed, $remaining remaining.';
+  }
+
+  @override
   String get combinedResult => 'Combined Result';
 
   @override

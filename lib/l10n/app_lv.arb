@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Aizstāviet bāzi, izrunājot vārdus, pirms ienaidnieks sasniedz.",
   "wordDefenseTitle": "Vārdu aizsardzība",
   "wordModeLabel": "Vārdu režīms",
+  "scanTranslateMethodTitle": "Izvēlieties tulkošanas metodi",
+  "scanTranslateMethodSubtitle": "Kā vēlaties tulkot atpazīto tekstu?",
+  "scanBulkTranslate": "Pilna apjoma tulkošana",
+  "scanBulkTranslateDesc": "Tulkojiet visu tekstu ar vienu pieprasījumu",
+  "scanSegmentTranslate": "Individuāla tulkošana",
+  "scanSegmentTranslateDesc": "Atlasiet tulkojamus segmentus atsevišķi",
+  "scanTranslatingAll": "Tulko visu...",
+  "scanBulkTranslateButton": "Tulkot visu",
+  "scanInsufficientLimit": "Nepietiek tulkošanas reižu. Nepieciešams: {needed}, atlikušo: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Apvienotais rezultāts",
   "errorLimitReached": "Jums ir beigušies tulkojumi. Vai vēlaties noskatīties reklāmu, lai saņemtu 10 papildu tulkojumus?",
   "yourPronunciation": "Jūsu izruna",

@@ -1246,6 +1246,37 @@ class AppLocalizationsRu extends AppLocalizations {
   String get wordModeLabel => 'Режим слов';
 
   @override
+  String get scanTranslateMethodTitle => 'Выбор способа перевода';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Как переводить распознанный текст?';
+
+  @override
+  String get scanBulkTranslate => 'Пакетный перевод всего текста';
+
+  @override
+  String get scanBulkTranslateDesc => 'Перевести весь текст одним запросом';
+
+  @override
+  String get scanSegmentTranslate => 'Перевод по частям';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Выбирайте сегменты для перевода по отдельности';
+
+  @override
+  String get scanTranslatingAll => 'Перевод всего текста...';
+
+  @override
+  String get scanBulkTranslateButton => 'Перевести все';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Недостаточно попыток перевода. Необходимо: $needed, осталось: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Объединенный результат';
 
   @override

@@ -1247,6 +1247,35 @@ class AppLocalizationsTr extends AppLocalizations {
   String get wordModeLabel => 'Kelime Modu';
 
   @override
+  String get scanTranslateMethodTitle => 'Çeviri Yöntemi Seç';
+
+  @override
+  String get scanTranslateMethodSubtitle => 'Algılanan metin nasıl çevrilecek?';
+
+  @override
+  String get scanBulkTranslate => 'Toplu Çeviri';
+
+  @override
+  String get scanBulkTranslateDesc => 'Tüm metni tek bir istekte çevir';
+
+  @override
+  String get scanSegmentTranslate => 'Bölümlere Ayrılmış Çeviri';
+
+  @override
+  String get scanSegmentTranslateDesc => 'Çevrilecek bölümleri ayrı ayrı seç';
+
+  @override
+  String get scanTranslatingAll => 'Tümü çevriliyor...';
+
+  @override
+  String get scanBulkTranslateButton => 'Tümünü Çevir';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Yetersiz çeviri sayısı. Gerekli: $needed, Kalan: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Birleştirilmiş Sonuç';
 
   @override

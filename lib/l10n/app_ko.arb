@@ -795,6 +795,21 @@
   "@word": {
     "description": "Toggle option for Word"
   },
+  "scanTranslateMethodTitle": "번역 방법 선택",
+  "scanTranslateMethodSubtitle": "인식된 텍스트를 어떻게 번역할까요?",
+  "scanBulkTranslate": "전체 일괄 번역",
+  "scanBulkTranslateDesc": "전체 텍스트를 한 번의 요청으로 번역합니다",
+  "scanSegmentTranslate": "개별 번역",
+  "scanSegmentTranslateDesc": "번역할 세그먼트를 개별적으로 선택합니다",
+  "scanTranslatingAll": "전체 번역 중...",
+  "scanBulkTranslateButton": "전체 번역",
+  "scanInsufficientLimit": "번역 횟수가 부족합니다. 필요: {needed}회, 잔여: {remaining}회",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": { "type": "int" },
+      "remaining": { "type": "int" }
+    }
+  },
   "combinedResult": "통합 결과",
   "errorLimitReached": "번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?",
   "yourPronunciation": "내 발음",

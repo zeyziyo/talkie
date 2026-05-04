@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Försvara basen genom att säga ordet innan fienden anländer.",
   "wordDefenseTitle": "Ordförsvar",
   "wordModeLabel": "Ord-läge",
+  "scanTranslateMethodTitle": "Välj översättningsmetod",
+  "scanTranslateMethodSubtitle": "Hur vill du översätta den igenkända texten?",
+  "scanBulkTranslate": "Översätt allt samtidigt",
+  "scanBulkTranslateDesc": "Översätt hela texten i en enda begäran",
+  "scanSegmentTranslate": "Översätt separat",
+  "scanSegmentTranslateDesc": "Välj segmenten du vill översätta individuellt",
+  "scanTranslatingAll": "Översätter allt...",
+  "scanBulkTranslateButton": "Översätt allt",
+  "scanInsufficientLimit": "Otillräckligt antal översättningar. Krävs: {needed}, Återstående: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Kombinerat resultat",
   "errorLimitReached": "Du har slut på översättningar. Vill du titta på en annons för att fylla på med 10 översättningar?",
   "yourPronunciation": "Ditt uttal",

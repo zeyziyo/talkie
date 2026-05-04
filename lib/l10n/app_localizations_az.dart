@@ -1251,6 +1251,37 @@ class AppLocalizationsAz extends AppLocalizations {
   String get wordModeLabel => 'Söz Rejimi';
 
   @override
+  String get scanTranslateMethodTitle => 'Tərcümə üsulunu seçin';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Tanınan mətni necə tərcümə etməli?';
+
+  @override
+  String get scanBulkTranslate => 'Toplu tərcümə';
+
+  @override
+  String get scanBulkTranslateDesc => 'Bütün mətni bir dəfəyə tərcümə edin';
+
+  @override
+  String get scanSegmentTranslate => 'Ayrı-ayrı tərcümə';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Tərcümə etmək üçün seqmentləri ayrı-ayrılıqda seçin';
+
+  @override
+  String get scanTranslatingAll => 'Hamısı tərcümə olunur...';
+
+  @override
+  String get scanBulkTranslateButton => 'Hamısını tərcümə et';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Tərcümə sayı yetərli deyil. Lazım olan: $needed, Qalan: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Birləşdirilmiş nəticə';
 
   @override

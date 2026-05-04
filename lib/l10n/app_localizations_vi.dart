@@ -1236,6 +1236,37 @@ class AppLocalizationsVi extends AppLocalizations {
   String get wordModeLabel => 'Chế độ từ';
 
   @override
+  String get scanTranslateMethodTitle => 'Chọn phương pháp dịch';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Bạn muốn dịch văn bản đã nhận dạng như thế nào?';
+
+  @override
+  String get scanBulkTranslate => 'Dịch hàng loạt toàn bộ';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Dịch toàn bộ văn bản bằng một yêu cầu duy nhất';
+
+  @override
+  String get scanSegmentTranslate => 'Dịch riêng lẻ';
+
+  @override
+  String get scanSegmentTranslateDesc => 'Chọn các đoạn cần dịch riêng lẻ';
+
+  @override
+  String get scanTranslatingAll => 'Đang dịch toàn bộ...';
+
+  @override
+  String get scanBulkTranslateButton => 'Dịch toàn bộ';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Không đủ lượt dịch. Cần: $needed lượt, còn lại: $remaining lượt';
+  }
+
+  @override
   String get combinedResult => 'Kết quả tổng hợp';
 
   @override

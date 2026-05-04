@@ -757,6 +757,25 @@
   "wordDefenseDesc": "ଶତ୍ରୁ ପହଞ୍ଚିବା ପୂର୍ବରୁ ଏକ ଶବ୍ଦ କହି ବେସ୍ ରକ୍ଷା କରନ୍ତୁ।",
   "wordDefenseTitle": "ଶବ୍ଦ ପ୍ରତିରକ୍ଷା",
   "wordModeLabel": "ଶବ୍ଦ ମୋଡ୍",
+  "scanTranslateMethodTitle": "ଅନୁବାଦ ପଦ୍ଧତି ଚୟନ କରନ୍ତୁ",
+  "scanTranslateMethodSubtitle": "ଚିହ୍ନଟ ହୋଇଥିବା ଟେକ୍ସଟକୁ କିପରି ଅନୁବାଦ କରିବେ?",
+  "scanBulkTranslate": "ସମ୍ପୂର୍ଣ୍ଣ ବ୍ୟାଚ୍ ଅନୁବାଦ",
+  "scanBulkTranslateDesc": "ଥରକେ ଗୋଟିଏ ଅନୁରୋଧ ସହିତ ସମସ୍ତ ଟେକ୍ସଟକୁ ଅନୁବାଦ କରନ୍ତୁ",
+  "scanSegmentTranslate": "ବ୍ୟକ୍ତିଗତ ଅନୁବାଦ",
+  "scanSegmentTranslateDesc": "ଅନୁବାଦ କରିବାକୁ ବ୍ୟକ୍ତିଗତ ଭାବରେ ସେଗମେଣ୍ଟଗୁଡ଼ିକୁ ଚୟନ କରନ୍ତୁ",
+  "scanTranslatingAll": "ସମସ୍ତ ଅନୁବାଦ କରାଯାଉଛି...",
+  "scanBulkTranslateButton": "ସମ୍ପୂର୍ଣ୍ଣ ଅନୁବାଦ",
+  "scanInsufficientLimit": "ଅନୁବାଦ ସଂଖ୍ୟା ପର୍ଯ୍ୟାପ୍ତ ନୁହେଁ | ଆବଶ୍ୟକ: {needed} ଥର, ଅବଶିଷ୍ଟ: {remaining} ଥର",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "ଏକତ୍ରିତ ଫଳାଫଳ",
   "errorLimitReached": "ଆପଣଙ୍କର ଅନୁବାଦ ସଂଖ୍ୟା ସରିଯାଇଛି। ଆପଣ ଏକ ବିଜ୍ଞାପନ ଦେଖି 10ଟି ପୁରଣ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?",
   "yourPronunciation": "ତୁମର ଉଚ୍ଚାରଣ",

@@ -1249,6 +1249,37 @@ class AppLocalizationsNe extends AppLocalizations {
   String get wordModeLabel => 'शब्द मोड';
 
   @override
+  String get scanTranslateMethodTitle => 'अनुवाद विधि छान्नुहोस्';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'कसरी पहिचान गरिएको पाठ अनुवाद गर्ने?';
+
+  @override
+  String get scanBulkTranslate => 'एकैचोटी अनुवाद';
+
+  @override
+  String get scanBulkTranslateDesc => 'एक अनुरोधमा सबै पाठ अनुवाद गर्नुहोस्';
+
+  @override
+  String get scanSegmentTranslate => 'अलग-अलग अनुवाद';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'अनुवाद गर्न खण्डहरू अलग-अलग छान्नुहोस्';
+
+  @override
+  String get scanTranslatingAll => 'सबै अनुवाद हुँदै...';
+
+  @override
+  String get scanBulkTranslateButton => 'सबै अनुवाद गर्नुहोस्';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'अनुवाद गर्न पर्याप्त छैन। आवश्यक: $needed, बाँकी: $remaining';
+  }
+
+  @override
   String get combinedResult => 'एकीकृत परिणाम';
 
   @override

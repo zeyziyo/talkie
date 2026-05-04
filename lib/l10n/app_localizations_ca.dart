@@ -1261,6 +1261,38 @@ class AppLocalizationsCa extends AppLocalizations {
   String get wordModeLabel => 'Mode de paraules';
 
   @override
+  String get scanTranslateMethodTitle => 'Selecciona el mètode de traducció';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Com vols traduir el text reconegut?';
+
+  @override
+  String get scanBulkTranslate => 'Traducció per lots completa';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Tradueix tot el text amb una sola sol·licitud';
+
+  @override
+  String get scanSegmentTranslate => 'Traducció individual';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Selecciona individualment els segments que vols traduir';
+
+  @override
+  String get scanTranslatingAll => 'S\'està traduint tot...';
+
+  @override
+  String get scanBulkTranslateButton => 'Tradueix tot';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'No tens suficients traduccions. Necessari: $needed, restant: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Resultat combinat';
 
   @override

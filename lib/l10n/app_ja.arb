@@ -757,6 +757,25 @@
   "wordDefenseDesc": "敵が到着する前に単語を言って基地を守ってください。",
   "wordDefenseTitle": "単語ディフェンス",
   "wordModeLabel": "単語モード",
+  "scanTranslateMethodTitle": "翻訳方法の選択",
+  "scanTranslateMethodSubtitle": "認識されたテキストをどのように翻訳しますか？",
+  "scanBulkTranslate": "一括翻訳",
+  "scanBulkTranslateDesc": "テキスト全体を一度のリクエストで翻訳します",
+  "scanSegmentTranslate": "個別翻訳",
+  "scanSegmentTranslateDesc": "翻訳するセグメントを個別に選択します",
+  "scanTranslatingAll": "全体を翻訳中...",
+  "scanBulkTranslateButton": "一括翻訳",
+  "scanInsufficientLimit": "翻訳回数が不足しています。必要な回数: {needed}回、残り: {remaining}回",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "統合結果",
   "errorLimitReached": "翻訳回数が不足しています。広告を見て10回チャージしますか？",
   "yourPronunciation": "あなたの発音",

@@ -757,6 +757,21 @@
   "wordDefenseDesc": "Defend your base by speaking words correctly before enemies reach you.",
   "wordDefenseTitle": "Word Defense",
   "wordModeLabel": "Word Mode",
+  "scanTranslateMethodTitle": "Choose Translation Method",
+  "scanTranslateMethodSubtitle": "How would you like to translate the extracted text?",
+  "scanBulkTranslate": "Translate All at Once",
+  "scanBulkTranslateDesc": "Translates the entire text in a single request",
+  "scanSegmentTranslate": "Translate Individually",
+  "scanSegmentTranslateDesc": "Choose which segments to translate separately",
+  "scanTranslatingAll": "Translating all...",
+  "scanBulkTranslateButton": "Translate All",
+  "scanInsufficientLimit": "Not enough translation credits. {needed} needed, {remaining} remaining.",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": { "type": "int" },
+      "remaining": { "type": "int" }
+    }
+  },
   "combinedResult": "Combined Result",
   "errorLimitReached": "Translation limit reached. Watch an ad to refill 10 more?",
   "yourPronunciation": "Your Pronunciation",

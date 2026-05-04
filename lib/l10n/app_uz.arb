@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Nafrat so'zlari borligi sababli tarjima qilib bo'lmaydi.",
   "errorOtherSafety": "AI xavfsizlik siyosati tufayli tarjima rad etildi.",
+  "errorQuotaExceeded": "Sun'iy intellekt xizmatining kunlik ajratmasi tugadi. Bir ozdan so'ng yoki ertaga qayta urinib ko'ring.",
+  "errorSafetyPolicy": "AI xavfsizlik siyosati tufayli tarjima cheklangan.",
+  "copyOriginal": "Aslini nusxalash",
+  "originalCopied": "Asl matn nusxalandi.",
   "errorProfanity": "So'kinish so'zlari borligi sababli tarjima qilib bo'lmaydi.",
   "errorSelectCategory": "Avval so'zni yoki gapni tanlang!",
   "errorSexualContent": "Shahvoniy mazmun borligi sababli tarjima qilib bo'lmaydi.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Asl matn",
   "saving": "Saqlanmoqda...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Skanlash uchun rasmni tanlang",
+  "scanNoMatch": "Rasmdan o'rnatilgan o'quv tili bilan mos keladigan matn topilmadi. Til sozlamalarini tekshiring.",
   "scanNotSupported": "Bu til skanerlash funksiyasini qo‘llab-quvvatlamaydi. OCR hozirda faqat lotin, xitoy, devanagari (hind va boshqalar), yapon, koreys tillarini qo‘llab-quvvatlaydi.",
   "scanLabel": "Skanlash",
   "score": "Aniq: {score}%",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "Dushman kelishidan oldin so'zni aytib bazani himoya qiling.",
   "wordDefenseTitle": "So'z himoyasi",
   "wordModeLabel": "So'z rejimi",
-  "yourPronunciation": "Talaffuzingiz"
+  "scanTranslateMethodTitle": "Tarjima usulini tanlang",
+  "scanTranslateMethodSubtitle": "Aniqlangan matnni qanday tarjima qilasiz?",
+  "scanBulkTranslate": "To'liq ommaviy tarjima",
+  "scanBulkTranslateDesc": "Butun matnni bir so'rov bilan tarjima qiling",
+  "scanSegmentTranslate": "Individual tarjima",
+  "scanSegmentTranslateDesc": "Tarjima qilinadigan segmentni alohida tanlang",
+  "scanTranslatingAll": "Hammasi tarjima qilinmoqda...",
+  "scanBulkTranslateButton": "To'liq tarjima",
+  "scanInsufficientLimit": "Tarjima soni yetarli emas. Kerak: {needed} marta, qolgan: {remaining} marta",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Birlashtirilgan natija",
+  "errorLimitReached": "Tarjima soni yetarli emas. Reklama ko'rib, 10 martani to'ldirishni xohlaysizmi?",
+  "yourPronunciation": "Talaffuzingiz",
+  "helpLimitDetails": "💡 [Tarjima chegarasi bo'yicha qo'llanma]\nHar kuni yarim tunda 20 ta bepul tarjima taqdim etiladi. Hammasi tugasa ham, reklamani tomosha qilsangiz, darhol 10 ta qo'shimcha tarjima to'ldiriladi.",
+  "scanDetails": "• Kamera yoki galereyadan rasmlarni yuklab, matnni ajratib oling va tarjima qiling.\n• Bitta rasmda joylashgan bir nechta jumlalarni bosib, alohida tarjima qilishingiz mumkin.\n• Tarjima soni yetarli bo'lmasa, darhol reklamani tomosha qilib, qo'shimcha 10 martani to'ldirishingiz mumkin."
 }

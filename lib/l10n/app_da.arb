@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Kan ikke oversætte, da det indeholder hadefulde udtalelser.",
   "errorOtherSafety": "Oversættelse blev afvist af AI's sikkerhedspolitik.",
+  "errorQuotaExceeded": "Den daglige kvote for AI-tjenesten er opbrugt. Prøv igen senere eller i morgen.",
+  "errorSafetyPolicy": "Oversættelsen er begrænset på grund af AI-sikkerhedspolitikken.",
+  "copyOriginal": "Kopiér original",
+  "originalCopied": "Originalteksten er kopieret.",
   "errorProfanity": "Kan ikke oversætte, da det indeholder bandeord.",
   "errorSelectCategory": "Vælg et ord eller en sætning først!",
   "errorSexualContent": "Kan ikke oversætte, da det indeholder seksuelt indhold.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Originaltekst",
   "saving": "Gemmer...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Vælg et billede, der skal scannes",
+  "scanNoMatch": "Kunne ikke finde tekst i billedet, der matcher det indstillede læringssprog. Kontrollér dine sprogindstillinger.",
   "scanNotSupported": "Scanning understøttes ikke for dette sprog. OCR understøtter i øjeblikket kun latinske, kinesiske, devanagari (f.eks. hindi), japanske og koreanske tegn.",
   "scanLabel": "Scan",
   "score": "Nøjagtighed: {score}%",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "Forsvar basen ved at sige ord, før fjenden ankommer.",
   "wordDefenseTitle": "Ord-forsvar",
   "wordModeLabel": "Ordtilstand",
-  "yourPronunciation": "Din udtale"
+  "scanTranslateMethodTitle": "Vælg oversættelsesmetode",
+  "scanTranslateMethodSubtitle": "Hvordan vil du oversætte den genkendte tekst?",
+  "scanBulkTranslate": "Oversæt alle på én gang",
+  "scanBulkTranslateDesc": "Oversæt al tekst i én anmodning",
+  "scanSegmentTranslate": "Individuel oversættelse",
+  "scanSegmentTranslateDesc": "Vælg segmenter, der skal oversættes individuelt",
+  "scanTranslatingAll": "Oversætter alle...",
+  "scanBulkTranslateButton": "Oversæt alle",
+  "scanInsufficientLimit": "Du har ikke nok oversættelser. Krævet: {needed}, Tilbage: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Kombineret resultat",
+  "errorLimitReached": "Du har ikke nok oversættelser. Vil du se en reklame og få 10 ekstra?",
+  "yourPronunciation": "Din udtale",
+  "helpLimitDetails": "💡 [Vejledning til oversættelsesgrænse]\nDer tilbydes 20 gratis oversættelser hver dag ved midnat. Hvis du bruger dem alle, kan du se en reklame for at få 10 ekstra oversættelser med det samme.",
+  "scanDetails": "• Importer billeder fra kamera eller galleri for at udtrække og oversætte tekst.\n• Du kan trykke på flere sætninger i et enkelt billede for at oversætte dem individuelt.\n• Hvis du ikke har nok oversættelser, kan du se en reklame med det samme for at få 10 ekstra."
 }

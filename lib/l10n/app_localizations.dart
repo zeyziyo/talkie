@@ -2514,6 +2514,60 @@ abstract class AppLocalizations {
   /// **'단어 모드'**
   String get wordModeLabel;
 
+  /// No description provided for @scanTranslateMethodTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'번역 방법 선택'**
+  String get scanTranslateMethodTitle;
+
+  /// No description provided for @scanTranslateMethodSubtitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'인식된 텍스트를 어떻게 번역할까요?'**
+  String get scanTranslateMethodSubtitle;
+
+  /// No description provided for @scanBulkTranslate.
+  ///
+  /// In ko, this message translates to:
+  /// **'전체 일괄 번역'**
+  String get scanBulkTranslate;
+
+  /// No description provided for @scanBulkTranslateDesc.
+  ///
+  /// In ko, this message translates to:
+  /// **'전체 텍스트를 한 번의 요청으로 번역합니다'**
+  String get scanBulkTranslateDesc;
+
+  /// No description provided for @scanSegmentTranslate.
+  ///
+  /// In ko, this message translates to:
+  /// **'개별 번역'**
+  String get scanSegmentTranslate;
+
+  /// No description provided for @scanSegmentTranslateDesc.
+  ///
+  /// In ko, this message translates to:
+  /// **'번역할 세그먼트를 개별적으로 선택합니다'**
+  String get scanSegmentTranslateDesc;
+
+  /// No description provided for @scanTranslatingAll.
+  ///
+  /// In ko, this message translates to:
+  /// **'전체 번역 중...'**
+  String get scanTranslatingAll;
+
+  /// No description provided for @scanBulkTranslateButton.
+  ///
+  /// In ko, this message translates to:
+  /// **'전체 번역'**
+  String get scanBulkTranslateButton;
+
+  /// No description provided for @scanInsufficientLimit.
+  ///
+  /// In ko, this message translates to:
+  /// **'번역 횟수가 부족합니다. 필요: {needed}회, 잔여: {remaining}회'**
+  String scanInsufficientLimit(int needed, int remaining);
+
   /// No description provided for @combinedResult.
   ///
   /// In ko, this message translates to:

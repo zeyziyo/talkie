@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Жау келмес бұрын сөзді айтып, базаны қорғаңыз.",
   "wordDefenseTitle": "Сөзді қорғау",
   "wordModeLabel": "Сөз режимі",
+  "scanTranslateMethodTitle": "Аударма әдісін таңдау",
+  "scanTranslateMethodSubtitle": "Анықталған мәтінді қалай аударасыз?",
+  "scanBulkTranslate": "Жаппай аудару",
+  "scanBulkTranslateDesc": "Барлық мәтінді бір сұраумен аударыңыз",
+  "scanSegmentTranslate": "Жеке аудару",
+  "scanSegmentTranslateDesc": "Аударылатын сегменттерді жеке таңдаңыз",
+  "scanTranslatingAll": "Барлығы аударылуда...",
+  "scanBulkTranslateButton": "Барлығын аудару",
+  "scanInsufficientLimit": "Аударма саны жеткіліксіз. Керек: {needed}, қалды: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Біріктірілген нәтиже",
   "errorLimitReached": "Аударма саны жеткіліксіз. Жарнаманы көріп, 10 рет толтырғыңыз келеді ме?",
   "yourPronunciation": "Сіздің айтылуыңыз",

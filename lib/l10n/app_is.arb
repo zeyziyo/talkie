@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Verjaðu stöðina með því að segja orðið áður en óvinurinn kemur.",
   "wordDefenseTitle": "Orðavörn",
   "wordModeLabel": "Orðastilling",
+  "scanTranslateMethodTitle": "Veldu þýðingaraðferð",
+  "scanTranslateMethodSubtitle": "Hvernig viltu þýða textann sem þekkist?",
+  "scanBulkTranslate": "Þýða allt í einu",
+  "scanBulkTranslateDesc": "Þýðir allan textann í einni beiðni",
+  "scanSegmentTranslate": "Þýða hluta fyrir sig",
+  "scanSegmentTranslateDesc": "Veldu hluta til að þýða hver fyrir sig",
+  "scanTranslatingAll": "Þýði allt...",
+  "scanBulkTranslateButton": "Þýða allt",
+  "scanInsufficientLimit": "Ekki nægilega mörg þýðsluskref. Þarf: {needed}, eftir: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Samþætt niðurstaða",
   "errorLimitReached": "Þú hefur ekki nægar þýðingar eftir. Viltu horfa á auglýsingu til að fá 10 til viðbótar?",
   "yourPronunciation": "Framburðurinn þinn",

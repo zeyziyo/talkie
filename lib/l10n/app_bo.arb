@@ -757,6 +757,25 @@
   "wordDefenseDesc": "དགྲ་འབྱོར་བའི་སྔོན་ལ་ཐ་སྙད་ཤོད་དེ་རྟེན་གཞི་སྲུང་སྐྱོབ་བྱེད།",
   "wordDefenseTitle": "ཐ་སྙད་སྲུང་བ།",
   "wordModeLabel": "ཐ་སྙད་ཐབས་ལམ།",
+  "scanTranslateMethodTitle": "འགྱུར་ཐབས་འདེམས་པ།",
+  "scanTranslateMethodSubtitle": "ངོས་འཛིན་བྱས་པའི་ཡི་གེ་དེ་ཇི་ལྟར་བསྒྱུར་དགོས་སམ།",
+  "scanBulkTranslate": "སྡོམ་འབོར་གྱི་སྒྱུར་བཅོས།",
+  "scanBulkTranslateDesc": "ཡིག་ཚང་ཧྲིལ་བོ་ཐེངས་གཅིག་གིས་རེ་འདུན་ཞིག་ལ་བསྒྱུར་བཅོས་བྱེད།",
+  "scanSegmentTranslate": "སྒེར་སྒྱུར།",
+  "scanSegmentTranslateDesc": "སྒྱུར་དགོས་པའི་སྡེ་ཚན་སོ་སོར་འདེམས་པ།",
+  "scanTranslatingAll": "ཡོངས་སུ་བསྒྱུར་བཞིན་པ།",
+  "scanBulkTranslateButton": "ཡོངས་སུ་བསྒྱུར།",
+  "scanInsufficientLimit": "སྒྱུར་གྲངས་མི་འདང་། དགོས་མཁོ།: {needed} ཐེངས།, ལྷག་མ།: {remaining} ཐེངས།",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "མཉམ་འབྲེལ་གྱི་གྲུབ་འབྲས།",
   "errorLimitReached": "སྐད་བསྒྱུར་གྱི་ཐེངས་གྲངས་མི་འདང་། ཁྱོད་ཀྱིས་ཁྱབ་བསྒྲགས་ལ་བལྟས་ཏེ་ཐེངས་ 10 ཁ་སྣོན་བྱེད་འདོད་དམ།",
   "yourPronunciation": "ངའི་ཀློག་སྟངས།",

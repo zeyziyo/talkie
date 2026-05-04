@@ -1252,6 +1252,38 @@ class AppLocalizationsRo extends AppLocalizations {
   String get wordModeLabel => 'Mod cuvânt';
 
   @override
+  String get scanTranslateMethodTitle => 'Selectați metoda de traducere';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Cum ar trebui să traduc textul recunoscut?';
+
+  @override
+  String get scanBulkTranslate => 'Traducere în bloc completă';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Traduceți întregul text dintr-o singură solicitare';
+
+  @override
+  String get scanSegmentTranslate => 'Traducere individuală';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Selectați individual segmentele de tradus';
+
+  @override
+  String get scanTranslatingAll => 'Se traduce tot...';
+
+  @override
+  String get scanBulkTranslateButton => 'Traduceți tot';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Numărul de traduceri este insuficient. Necesar: $needed, Rămas: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Rezultat combinat';
 
   @override

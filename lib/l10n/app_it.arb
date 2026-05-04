@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Difendi la base pronunciando le parole prima che i nemici arrivino.",
   "wordDefenseTitle": "Difesa delle parole",
   "wordModeLabel": "Modalità parola",
+  "scanTranslateMethodTitle": "Seleziona metodo di traduzione",
+  "scanTranslateMethodSubtitle": "Come vuoi tradurre il testo riconosciuto?",
+  "scanBulkTranslate": "Traduci interamente in blocco",
+  "scanBulkTranslateDesc": "Traduci l'intero testo in un'unica richiesta",
+  "scanSegmentTranslate": "Traduci singolarmente",
+  "scanSegmentTranslateDesc": "Seleziona individualmente i segmenti da tradurre",
+  "scanTranslatingAll": "Traduzione completa in corso...",
+  "scanBulkTranslateButton": "Traduci tutto",
+  "scanInsufficientLimit": "Credito insufficiente per la traduzione. Necessari: {needed}, disponibili: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Risultato combinato",
   "errorLimitReached": "Non hai abbastanza traduzioni. Vuoi guardare un annuncio per ricaricare 10 traduzioni?",
   "yourPronunciation": "La tua Pronuncia",

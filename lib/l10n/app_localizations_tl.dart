@@ -1260,6 +1260,38 @@ class AppLocalizationsTl extends AppLocalizations {
   String get wordModeLabel => 'Word Mode';
 
   @override
+  String get scanTranslateMethodTitle => 'Piliin ang Paraan ng Pagsasalin';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Paano isasalin ang nakilalang teksto?';
+
+  @override
+  String get scanBulkTranslate => 'Buong Pagsasalin nang Maramihan';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Isalin ang buong teksto sa isang kahilingan.';
+
+  @override
+  String get scanSegmentTranslate => 'Indibidwal na Pagsasalin';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Pumili ng mga segment na isasalin nang isa-isa.';
+
+  @override
+  String get scanTranslatingAll => 'Isinasalin ang lahat...';
+
+  @override
+  String get scanBulkTranslateButton => 'Isalin ang Lahat';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Hindi sapat ang iyong limitasyon sa pagsasalin. Kinakailangan: $needed, Natitira: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Pinagsamang Resulta';
 
   @override

@@ -757,6 +757,25 @@
   "wordDefenseDesc": "शत्रु आइपुग्नु अघि शब्द बोलेर आधारको रक्षा गर्नुहोस्।",
   "wordDefenseTitle": "शब्द डिफेन्स",
   "wordModeLabel": "शब्द मोड",
+  "scanTranslateMethodTitle": "अनुवाद विधि छान्नुहोस्",
+  "scanTranslateMethodSubtitle": "कसरी पहिचान गरिएको पाठ अनुवाद गर्ने?",
+  "scanBulkTranslate": "एकैचोटी अनुवाद",
+  "scanBulkTranslateDesc": "एक अनुरोधमा सबै पाठ अनुवाद गर्नुहोस्",
+  "scanSegmentTranslate": "अलग-अलग अनुवाद",
+  "scanSegmentTranslateDesc": "अनुवाद गर्न खण्डहरू अलग-अलग छान्नुहोस्",
+  "scanTranslatingAll": "सबै अनुवाद हुँदै...",
+  "scanBulkTranslateButton": "सबै अनुवाद गर्नुहोस्",
+  "scanInsufficientLimit": "अनुवाद गर्न पर्याप्त छैन। आवश्यक: {needed}, बाँकी: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "एकीकृत परिणाम",
   "errorLimitReached": "अनुवाद संख्या अपर्याप्त छ। के तपाईं विज्ञापन हेरेर १० पटक रिचार्ज गर्न चाहनुहुन्छ?",
   "yourPronunciation": "मेरो उच्चारण",

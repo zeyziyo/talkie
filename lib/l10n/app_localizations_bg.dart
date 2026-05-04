@@ -1253,6 +1253,36 @@ class AppLocalizationsBg extends AppLocalizations {
   String get wordModeLabel => 'Режим „Думи“';
 
   @override
+  String get scanTranslateMethodTitle => 'Избор на метод за превод';
+
+  @override
+  String get scanTranslateMethodSubtitle => 'Как да преведа разпознатия текст?';
+
+  @override
+  String get scanBulkTranslate => 'Превод на целия текст наведнъж';
+
+  @override
+  String get scanBulkTranslateDesc => 'Превежда целия текст с една заявка';
+
+  @override
+  String get scanSegmentTranslate => 'Индивидуален превод';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Изберете сегменти за превод поотделно';
+
+  @override
+  String get scanTranslatingAll => 'Превод на целия текст...';
+
+  @override
+  String get scanBulkTranslateButton => 'Превод на целия текст';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Недостатъчен брой преводи. Необходими: $needed, Останали: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Обединен резултат';
 
   @override

@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Digues la paraula abans que l'enemic arribi per defensar la base.",
   "wordDefenseTitle": "Defensa de paraules",
   "wordModeLabel": "Mode de paraules",
+  "scanTranslateMethodTitle": "Selecciona el mètode de traducció",
+  "scanTranslateMethodSubtitle": "Com vols traduir el text reconegut?",
+  "scanBulkTranslate": "Traducció per lots completa",
+  "scanBulkTranslateDesc": "Tradueix tot el text amb una sola sol·licitud",
+  "scanSegmentTranslate": "Traducció individual",
+  "scanSegmentTranslateDesc": "Selecciona individualment els segments que vols traduir",
+  "scanTranslatingAll": "S'està traduint tot...",
+  "scanBulkTranslateButton": "Tradueix tot",
+  "scanInsufficientLimit": "No tens suficients traduccions. Necessari: {needed}, restant: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Resultat combinat",
   "errorLimitReached": "No tens prou traduccions. Vols veure un anunci per recarregar-ne 10?",
   "yourPronunciation": "La teva pronunciació",

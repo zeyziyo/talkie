@@ -757,6 +757,25 @@
   "wordDefenseDesc": "הגן על הבסיס שלך על ידי אמירת מילים לפני שהאויבים מגיעים.",
   "wordDefenseTitle": "הגנת מילים",
   "wordModeLabel": "מצב מילים",
+  "scanTranslateMethodTitle": "בחירת שיטת תרגום",
+  "scanTranslateMethodSubtitle": "כיצד תרצה לתרגם את הטקסט שזוהה?",
+  "scanBulkTranslate": "תרגום אצווה מלא",
+  "scanBulkTranslateDesc": "תרגם את כל הטקסט בפעולה אחת",
+  "scanSegmentTranslate": "תרגום מקטעים בודדים",
+  "scanSegmentTranslateDesc": "בחר מקטעים בודדים לתרגום",
+  "scanTranslatingAll": "מתרגם הכל...",
+  "scanBulkTranslateButton": "תרגום מלא",
+  "scanInsufficientLimit": "אין לך מספיק תרגומים. נדרש: {needed}, נותרו: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "תוצאה משולבת",
   "errorLimitReached": "אזלו לך מכסות התרגום. לצפות בפרסומת כדי לקבל 10 תרגומים נוספים?",
   "yourPronunciation": "ההגייה שלך",

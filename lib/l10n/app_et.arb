@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Kaitske oma baasi, öeldes sõnu enne, kui vaenlased kohale jõuavad.",
   "wordDefenseTitle": "Sõnade kaitse",
   "wordModeLabel": "Sõnarežiim",
+  "scanTranslateMethodTitle": "Vali tõlkemeetod",
+  "scanTranslateMethodSubtitle": "Kuidas tuvastatud teksti tõlkida?",
+  "scanBulkTranslate": "Hulgatõlge",
+  "scanBulkTranslateDesc": "Tõlgi kogu tekst ühe korraga",
+  "scanSegmentTranslate": "Individuaalne tõlge",
+  "scanSegmentTranslateDesc": "Vali tõlgitavad segmendid eraldi",
+  "scanTranslatingAll": "Tõlgitakse kõike...",
+  "scanBulkTranslateButton": "Tõlgi kõik",
+  "scanInsufficientLimit": "Tõlgete arv on ebapiisav. Vaja: {needed}, allesjäänud: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Kombineeritud tulemus",
   "errorLimitReached": "Tõlke kordad on otsas. Kas soovite vaadata reklaami, et saada 10 korda juurde?",
   "yourPronunciation": "Sinu hääldus",

@@ -1252,6 +1252,38 @@ class AppLocalizationsOr extends AppLocalizations {
   String get wordModeLabel => 'ଶବ୍ଦ ମୋଡ୍';
 
   @override
+  String get scanTranslateMethodTitle => 'ଅନୁବାଦ ପଦ୍ଧତି ଚୟନ କରନ୍ତୁ';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'ଚିହ୍ନଟ ହୋଇଥିବା ଟେକ୍ସଟକୁ କିପରି ଅନୁବାଦ କରିବେ?';
+
+  @override
+  String get scanBulkTranslate => 'ସମ୍ପୂର୍ଣ୍ଣ ବ୍ୟାଚ୍ ଅନୁବାଦ';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'ଥରକେ ଗୋଟିଏ ଅନୁରୋଧ ସହିତ ସମସ୍ତ ଟେକ୍ସଟକୁ ଅନୁବାଦ କରନ୍ତୁ';
+
+  @override
+  String get scanSegmentTranslate => 'ବ୍ୟକ୍ତିଗତ ଅନୁବାଦ';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'ଅନୁବାଦ କରିବାକୁ ବ୍ୟକ୍ତିଗତ ଭାବରେ ସେଗମେଣ୍ଟଗୁଡ଼ିକୁ ଚୟନ କରନ୍ତୁ';
+
+  @override
+  String get scanTranslatingAll => 'ସମସ୍ତ ଅନୁବାଦ କରାଯାଉଛି...';
+
+  @override
+  String get scanBulkTranslateButton => 'ସମ୍ପୂର୍ଣ୍ଣ ଅନୁବାଦ';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'ଅନୁବାଦ ସଂଖ୍ୟା ପର୍ଯ୍ୟାପ୍ତ ନୁହେଁ | ଆବଶ୍ୟକ: $needed ଥର, ଅବଶିଷ୍ଟ: $remaining ଥର';
+  }
+
+  @override
   String get combinedResult => 'ଏକତ୍ରିତ ଫଳାଫଳ';
 
   @override

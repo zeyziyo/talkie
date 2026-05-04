@@ -757,6 +757,25 @@
   "wordDefenseDesc": "دشمن کے پہنچنے سے پہلے الفاظ کہہ کر اپنے اڈے کا دفاع کریں۔",
   "wordDefenseTitle": "لفظ دفاع",
   "wordModeLabel": "لفظ موڈ",
+  "scanTranslateMethodTitle": "ترجمہ کرنے کا طریقہ منتخب کریں",
+  "scanTranslateMethodSubtitle": "پہچانی گئی عبارت کا ترجمہ کیسے کریں؟",
+  "scanBulkTranslate": "مکمل بیچ ترجمہ",
+  "scanBulkTranslateDesc": "تمام متن کو ایک ہی درخواست میں ترجمہ کریں",
+  "scanSegmentTranslate": "انفرادی ترجمہ",
+  "scanSegmentTranslateDesc": "ترجمہ کے لیے انفرادی طور پر حصے منتخب کریں",
+  "scanTranslatingAll": "تمام کا ترجمہ ہو رہا ہے...",
+  "scanBulkTranslateButton": "مکمل ترجمہ",
+  "scanInsufficientLimit": "ترجموں کی تعداد ناکافی ہے۔ درکار: {needed} بار، باقی: {remaining} بار",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "مربوط نتیجہ",
   "errorLimitReached": "آپ کے پاس ترجموں کی تعداد کم ہے۔ کیا آپ اشتہار دیکھ کر 10 ترجمے ریچارج کرنا چاہیں گے؟",
   "yourPronunciation": "آپ کا تلفظ",

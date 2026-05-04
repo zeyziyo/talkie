@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Forsvar basen ved å si ordet før fiendene ankommer.",
   "wordDefenseTitle": "Ord-forsvar",
   "wordModeLabel": "Ordmodus",
+  "scanTranslateMethodTitle": "Velg oversettelsesmetode",
+  "scanTranslateMethodSubtitle": "Hvordan vil du oversette den gjenkjente teksten?",
+  "scanBulkTranslate": "Oversett alt samlet",
+  "scanBulkTranslateDesc": "Oversett all tekst i én forespørsel",
+  "scanSegmentTranslate": "Individuell oversettelse",
+  "scanSegmentTranslateDesc": "Velg segmenter for å oversette individuelt",
+  "scanTranslatingAll": "Oversetter alt...",
+  "scanBulkTranslateButton": "Oversett alt",
+  "scanInsufficientLimit": "Du har ikke nok oversettelser igjen. Trenger: {needed}, Tilgjengelig: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Kombinert resultat",
   "errorLimitReached": "Du har ikke flere oversettelser igjen. Vil du se en annonse for å fylle på med 10 oversettelser?",
   "yourPronunciation": "Din uttale",

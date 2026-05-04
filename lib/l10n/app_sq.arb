@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Mbroni bazën duke thënë fjalët përpara se të mbërrijnë armiqtë.",
   "wordDefenseTitle": "Mbrojtja e fjalëve",
   "wordModeLabel": "Modaliteti i fjalës",
+  "scanTranslateMethodTitle": "Zgjidhni metodën e përkthimit",
+  "scanTranslateMethodSubtitle": "Si dëshironi të përktheni tekstin e njohur?",
+  "scanBulkTranslate": "Përkthim i plotë në grup",
+  "scanBulkTranslateDesc": "Përktheni të gjithë tekstin me një kërkesë të vetme",
+  "scanSegmentTranslate": "Përkthim individual",
+  "scanSegmentTranslateDesc": "Zgjidhni individualisht segmentet për t'u përkthyer",
+  "scanTranslatingAll": "Duke përkthyer të gjithë...",
+  "scanBulkTranslateButton": "Përktheni të gjithë",
+  "scanInsufficientLimit": "Nuk keni mjaftueshëm përkthime. Duhen: {needed}, të mbetura: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Rezultati i kombinuar",
   "errorLimitReached": "Ju kanë mbaruar përkthimet. Dëshironi të shihni një reklamë për të marrë 10 përkthime shtesë?",
   "yourPronunciation": "Shqiptimi juaj",

@@ -8,11 +8,11 @@
 
 **"Talkie" 앱의 주된 목적은 단순한 번역을 넘어, 새로 학습한 문장을 언제 어디서든 자유롭게 복습하는 데 있습니다.** 
 
-화면을 옆으로 밀어(Swipe) 모드를 전환하는 직관적인 UX를 제공하며, 사용자께서 미리 준비한 학습 자료(JSON 파일)를 활용하면 더욱 강력한 학습 도구가 됩니다. 여러분이 익히고 싶은 문장들을 수집하여 AI 모델 등을 통해 미리 번역한 뒤, 이를 파일로 만들어 앱에서 불러오기만 하세요. 이미 검증된 번역 문장들을 무제한으로 반복 청취하고 말하며 연습할 수 있습니다. 여러분의 언어 학습에 큰 도움이 되길 바랍니다.
+화면을 옆으로 밀어(Swipe) 모드를 전환하는 직관적인 UX를 제공하며, 이제 AI 스캔 기능을 통해 책이나 이미지 속 문장을 즉시 내 학습 리스트로 가져올 수 있습니다. 이미 검증된 번역 문장들을 무제한으로 반복 청취하고 말하며 연습할 수 있습니다. 여러분의 언어 학습에 큰 도움이 되길 바랍니다.
 
 **The main purpose of "Talkie" goes beyond simple translation; it allows you to freely review newly learned sentences anytime, anywhere.**
 
-It provides an intuitive UX for switching modes by swiping the screen. In particular, it becomes an even more powerful tool when used with your own study materials (JSON files). Simply collect the sentences you want to learn, translate them using AI models, and save them as a file to import into the app. You can then practice these verified translations with unlimited repetition. We hope this app becomes a valuable asset in your language learning journey.
+It provides an intuitive UX for switching modes by swiping the screen. With the new AI Scan feature, you can instantly import sentences from books or images into your study list. You can then practice these verified translations with unlimited repetition. We hope this app becomes a valuable asset in your language learning journey.
 
 ### Platforms
 -   **Android & iOS**: Full support (STT/TTS/Ads/Sync)
@@ -32,103 +32,56 @@ dart run sqflite_common_ffi_web:setup --dir web
 
 ### MODE 1: 심플 입력 (Simplified Input)
 - 🎤 **스마트 입력**: 중앙의 대형 마이크 또는 텍스트 입력창을 통해 즉시 시작
-- ⚙️ **상세 설정**: 입력 후 나타나는 '설정 확인(파란색 체크)' 버튼을 통해 자료집, 태그, 주석(메모)을 다이얼로그에서 지정
-- 🚀 **즉시 번역**: 설정을 마친 후 '지금 번역하기(초록색 버튼)'를 눌러 AI 번역 수행
+- 🚀 **즉시 번역**: 입력 후 인공지능이 문맥에 맞는 최적의 번역 수행
 - 🔊 **TTS**: 번역된 텍스트 듣기 (원어민 발음)
-- 💾 **저장**: 나만의 학습 기록으로 즉시 추가
+- 💾 **저장**: 나만의 학습 기록으로 즉시 추가 (자료집, 태그, 메모 설정 가능)
+- 🔍 **유사 문장 감지**: 입력 중 이전에 학습한 비슷한 문장을 자동으로 감지
+- 💡 **추천 학습**: 매일 새로운 추천 문장을 통해 학습 범위 확장
 
 * **Smart Input**: Start instantly via the central Mic icon or direct text input
-* **Detailed Settings**: Configure material sets, tags, and context notes via the 'Confirm Settings' dialog
-* **Instant Translation**: Tap 'Translate Now' to perform AI translation after configuration
+* **Instant Translation**: AI performs context-aware translation after input
 * **TTS**: Listen to translated text with native pronunciation
-* **Save**: Instantly add to your personalized study list
+* **Save**: Instantly add to your personalized study list with tags and notes
+* **Duplicate Detection**: Auto-detect similar sentences you've studied before
+* **Recommended Learning**: Expand your vocabulary with daily AI-suggested sentences
 
 ### MODE 2: 복습 (Review)
 - 📱 **하단 네비게이션**: 탭 바를 통한 직관적인 모드 이동
-- 📚 **학습 자료 관리**: 상단 앱바의 **구름(Cloud) 아이콘**으로 온라인 자료실 접근
 - 📖 **복습 모드**: 저장된 문장 복습 및 카드 뒤집기
-- 🔊 **TTS 재생**: 원문 및 번역문 듣기
+- 🔄 **자동 재생**: 자료집 전체를 자동으로 재생하며 학습 (Thinking Interval 지원)
+- ⏱️ **대기 시간**: 1초~10초 사이의 생각할 시간(Interval) 설정 가능
 - ✅ **학습 체크**: 복습 횟수 기록 및 학습 완료 표시
-- 🔍 **검색 조건**: **설정(Tune) 아이콘**으로 자료집 제목(Title Tag), 상세 태그(3개), 최근 항목, 시작 글자 필터링 (4개 드롭다운 지원)
+- 🔍 **검색 및 필터**: 태그, 최근 항목, 시작 글자 필터링 지원
 
-* **Study Material Management**: Manage study materials via **Cloud Icon** on AppBar (Online Library)
 * **Review Mode**: Review saved sentences & flip cards
-* **TTS Playback**: Listen to original and translated text
+* **Auto Play**: Automatically play through your material collection
+* **Thinking Interval**: Adjust wait time between cards (1s-10s)
 * **Study Check**: Track review counts & mark as completed
-* **Search Conditions**: Filter by Material Title (Title Tag), General Tags (up to 3), Recent N, and Starts With via **Tune Icon** (4 Dropdowns supported)
+* **Search & Filter**: Filter by Tags, Recent N, and Starts With
 
 ### MODE 3: 발음 연습 (Speaking Practice)
 - 🎙️ **쉐도잉 연습**: 원어민 음성 듣고 따라 말하기
-- ⏱️ **간격 조절**: 3초~60초 사이 대기 시간 설정
-- 📊 **발음 평가**: 정확도 점수 (0-100) 및 피드백
-- 🔄 **자동 반복**: 완벽하게 학습한 문장 제외하고 반복
-- 🔍 **검색 조건**: 학습 대상을 태그 및 조건으로 필터링 (설정 아이콘)
+- 📊 **발음 평가**: 실시간 음성 분석을 통한 정확도 점수 (0-100) 및 피드백
+- 🔄 **반복 및 다음**: 완벽하게 익힐 때까지 무제한 반복 또는 다음 문장으로 이동
+- 🔍 **대상 필터**: 태그 및 조건으로 연습할 문장만 선별 가능
 
 * **Shadowing Practice**: Listen to native audio and shadow (repeat)
-* **Interval Control**: Set interval between 3s-60s
-* **Pronunciation Evaluation**: Accuracy score (0-100) & feedback
-* **Auto-Repeat**: Repeat sentences excluding those fully mastered
-* **Search Conditions**: Filter targets by Material Titles/Tags/Conditions via **Tune Icon** (4 Dropdowns supported)
+* **Pronunciation Evaluation**: Accuracy score (0-100) & feedback via real-time voice analysis
+* **Repeat & Next**: Unlimited practice until mastery or skip to the next sentence
+* **Target Filter**: Filter practice items by tags and specific conditions
 
-### MODE 4: 채팅 (Chat) - Multi-Persona
-- 🎭 **멀티 페르소나 (Multi-Persona)**: 말풍선 탭으로 상대방의 **성별, 이름, 언어**를 즉시 변경 (New!)
-- 🔄 **자동 재번역**: 대화 상대의 언어를 바꾸면 기존 메시지도 자동으로 재번역되어 문맥 유지
-- 💬 **실시간 대화**: AI 페르소나(교사, 친구 등)와 실전 회화 연습
-- 🤝 **파트너 모드**: **실제 친구/파트너**와 대화하며 기록 ("Stranger" 추가 기능)
-- 📍 **GPS 위치 기반**: 현재 위치 정보를 AI에게 제공하여 생생한 현장 회화 가능 ("여기 근처 맛집 추천해줘")
-- 🌐 **2개 국어 표시**: 나의 말과 답변이 2개 국어로 표시되어 이해도 향상
-- 🔊 **TTS 발음 듣기**: 성별에 맞는 정확한 TTS 발음 (Heuristic 적용)
-- 🤖 **자동 번역 및 저장**: 즉시 번역 및 "지역명 (시간)" 기반 자동 제목 저장
-- 📑 **대화 이력 관리**: 과거 대화 내용을 불러오고 제목을 수정하여 관리
-- 🔍 **대화 필터링 (New!)**: 주제(Note)별 드롭다운 필터 및 검색 기능으로 수많은 대화 손쉽게 관리
+### MODE 4: 스캔 (Scan) - OCR Translation
+- 📷 **AI 스캔 (AI Scan)**: 카메라로 촬영하거나 갤러리에서 사진을 불러와 텍스트를 즉시 추출
+- 🔍 **터치 번역**: 이미지 내 인식된 문장 중 번역하고 싶은 부분을 터치하여 즉시 번역 수행
+- 🔊 **TTS 발음 듣기**: 스캔된 문장과 번역된 결과에 대해 원어민 발음 제공
+- 💾 **이력 저장**: 스캔하고 번역한 내용을 날짜별 이력으로 관리하고 학습 리스트에 추가
+- 🌐 **다국어 OCR**: 라틴계 언어, 한국어, 일본어, 중국어 등 주요 언어의 문자 인식 지원
 
-* **Multi-Persona**: Change Gender/Lang/Name on the fly via bubble menu (New!)
-* **Auto-Retranslation**: Context stays intact when changing partner's language
-* **Real-time Conversation**: Practice speaking with AI personas or Real Partners
-* **Partner Mode**: Record conversation with a real person
-* **GPS Context**: AI uses your current location for context-aware responses
-* **Dual Language Display**: View both mother tongue and target language
-* **TTS Pronunciation**: Gender-aware TTS playback
-* **Smart Save**: Auto-save chats with "Location (Date)" titles
-* **History Management**: Revisit past chats & edit titles
-
-- **온라인 자료 관리 자동화 (Phase 75.9 Automation)**: 사용자가 `docs/materials`에 파일만 업로드하면 GitHub Actions가 인덱스(`materials_v3.json`)를 자동으로 갱신하는 체계를 구축했습니다. (2026-02-07)
-- **온라인 직접 임포트 고도화 (Phase 75.9)**: 서버 인덱스를 통해 최신 학습 자료를 앱 내에서 직접 실시간 임포트하는 체계를 구축했습니다. 과거의 복잡한 오프라인 병합 과정 없이도 다국어 파일이 지능적으로 통합되며, 화자 메타데이터 보완 로직으로 '콩글리쉬' 발음 문제를 근본적으로 해결했습니다. (2026-02-07)
-- **가져오기(Import) 알림 개선**: JSON 파일 가져오기 실패 시 상세 에러 내용을 다이얼로그로 표시하여 문제 진단을 용이하게 함.
-
-## 최근 업데이트 (Recent Updates - 2026-03-16)
-
-- **Talkie 최신 업데이트 (v2.0.0 준비)**: 프로젝트 전반의 기술적 부채를 청산하고 프리미엄 디자인 언어를 적용한 대규모 업데이트를 단행했습니다. (2026-03-16)
-- **글로벌 현지화 무결성 (L10n 100% Integrity)**: 전 세계 80개 이상의 모든 지원 언어에 대해 마스터 파일(`app_ko.arb`)과 1:1 동기화 및 전수 감사를 완료했습니다. 이제 전 세계 어디서나 완벽한 지역화 경험을 제공합니다.
-- **프리미엄 3D 디자인 시스템**: 구식 벡터 드로잉 아이콘을 폐기하고, 모든 해상도(1x, 2x, 3x)에서 선명한 글래스모피즘 기반의 3D 마이크 아이콘을 도입했습니다.
-- **데이터 엔진 성능 최적화**: 미사용 필드(POS 등)를 정리하고 DB 구조를 간소화하여, 수만 개의 학습 데이터를 처리할 때도 지연 없는(Jank-free) 반응 속도를 확보했습니다.
-- **온라인 자료실 가용성 확대**: 주요 4개 국어(KO, EN, JA, ES)의 학습 자료를 현지인 수준으로 정교화하여 우선 배치했습니다.
-
-
-
-### JSON 파일 구조 (JSON Structure)
-
-기존의 개별 문장(`entries`)뿐만 아니라, 완성된 대화 세트(`dialogues`)를 한 번에 불러올 수 있습니다.
-You can import both individual sentences (`entries`) and complete conversation sets (`dialogues`).
-
-```json
-{
-  "subject": "첫 만남 (First Meeting)",
-  "dialogues": [
-    {
-      "speaker": "조단",
-      "text": "안녕하세요! 제 이름은 조단입니다.",
-      "sequence_order": 1,
-      "style": "높임말",
-      "tags": ["인사", "소개"]
-    }
-  ],
-  "participants": [
-    { "id": "p1", "name": "조단", "role": "사용자", "gender": "남성", "lang_code": "en-US" },
-    { "id": "p2", "name": "민지", "role": "AI", "gender": "여성", "lang_code": "ko-KR" }
-  ]
-}
-```
+* **AI Scan**: Extract text instantly by taking a photo or picking one from the gallery
+* **Touch to Translate**: Simply tap the recognized sentences in the image to translate them
+* **TTS Pronunciation**: Native audio playback for both scanned and translated text
+* **History Management**: Manage scanned items by date and add them to your study list
+* **Multilingual OCR**: Supports text recognition for Latin-based languages, Korean, Japanese, and Chinese
 
 ## 지원 언어 (Supported Languages)
 
@@ -215,14 +168,14 @@ lib/
 │   ├── translation_service.dart # Translation Service
 │   └── supabase_service.dart    # Backend Integration (Supabase)
 ├── screens/
-│   ├── home_screen.dart         # Main Screen & Tutorial
-│   ├── chat_screen.dart         # AI Chat Room
-│   └── chat_history_screen.dart # AI Chat History (Mode 4 Entry)
+│   ├── home_screen.dart         # Main Screen (Mode 1, 2, 3, 4 Switcher)
+│   └── auth_screen.dart         # User Authentication (Login/SignUp)
 ├── widgets/
 │   ├── simplified_input_widget.dart # MODE 1: Simplified Input UI
 │   ├── mode2_widget.dart        # MODE 2: Study Material & Review UI
 │   ├── mode3_widget.dart        # MODE 3: Speaking Practice UI
-│   └── help_dialog.dart         # Help Dialog
+│   ├── scan_widget.dart         # MODE 4: AI Scan (OCR) Translation UI
+│   └── help_dialog.dart         # Help & Tutorial Dialog
 └── l10n/                        # Internationalization (80 languages)
     ├── app_ko.arb               # Korean
     ├── app_en.arb               # English

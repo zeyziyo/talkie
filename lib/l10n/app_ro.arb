@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Spune cuvintele pentru a apăra baza înainte ca inamicii să ajungă.",
   "wordDefenseTitle": "Apărarea cuvintelor",
   "wordModeLabel": "Mod cuvânt",
+  "scanTranslateMethodTitle": "Selectați metoda de traducere",
+  "scanTranslateMethodSubtitle": "Cum ar trebui să traduc textul recunoscut?",
+  "scanBulkTranslate": "Traducere în bloc completă",
+  "scanBulkTranslateDesc": "Traduceți întregul text dintr-o singură solicitare",
+  "scanSegmentTranslate": "Traducere individuală",
+  "scanSegmentTranslateDesc": "Selectați individual segmentele de tradus",
+  "scanTranslatingAll": "Se traduce tot...",
+  "scanBulkTranslateButton": "Traduceți tot",
+  "scanInsufficientLimit": "Numărul de traduceri este insuficient. Necesar: {needed}, Rămas: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Rezultat combinat",
   "errorLimitReached": "Nu mai aveți încercări de traducere. Doriți să vizionați un anunț pentru a reîncărca 10 încercări?",
   "yourPronunciation": "Pronunția ta",

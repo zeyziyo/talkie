@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Абараніце базу, вымаўляючы словы да таго, як ворагі дойдуць да яе.",
   "wordDefenseTitle": "Абарона слоў",
   "wordModeLabel": "Рэжым слоў",
+  "scanTranslateMethodTitle": "Выберыце спосаб перакладу",
+  "scanTranslateMethodSubtitle": "Як перакладаць распазнаны тэкст?",
+  "scanBulkTranslate": "Пакетны пераклад усяго",
+  "scanBulkTranslateDesc": "Перакладайце ўвесь тэкст адным запытам",
+  "scanSegmentTranslate": "Паасобны пераклад",
+  "scanSegmentTranslateDesc": "Выбірайце сегменты для перакладу паасобку",
+  "scanTranslatingAll": "Перакладаецца ўсё...",
+  "scanBulkTranslateButton": "Перакласці ўсё",
+  "scanInsufficientLimit": "Недастаткова спроб перакладу. Трэба: {needed}, засталося: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Аб'яднаны вынік",
   "errorLimitReached": "У вас не хапае перакладаў. Паглядзець рэкламу, каб папоўніць 10 перакладаў?",
   "yourPronunciation": "Ваша вымаўленне",

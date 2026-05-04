@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Obranite bazu govoreći riječi prije nego što neprijatelji stignu.",
   "wordDefenseTitle": "Obrana riječi",
   "wordModeLabel": "Način rada s riječima",
+  "scanTranslateMethodTitle": "Odaberite način prevođenja",
+  "scanTranslateMethodSubtitle": "Kako želite prevesti prepoznati tekst?",
+  "scanBulkTranslate": "Grupno prevođenje",
+  "scanBulkTranslateDesc": "Prevedite cijeli tekst jednim zahtjevom",
+  "scanSegmentTranslate": "Pojedinačno prevođenje",
+  "scanSegmentTranslateDesc": "Odaberite segmente za prevođenje pojedinačno",
+  "scanTranslatingAll": "Prevođenje svega u tijeku...",
+  "scanBulkTranslateButton": "Prevedi sve",
+  "scanInsufficientLimit": "Nedovoljno prijevoda. Potrebno: {needed}, preostalo: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Kombinirani rezultat",
   "errorLimitReached": "Nemate dovoljno prijevoda. Želite li pogledati oglas i napuniti 10 prijevoda?",
   "yourPronunciation": "Moj izgovor",

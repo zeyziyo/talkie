@@ -1250,6 +1250,37 @@ class AppLocalizationsKk extends AppLocalizations {
   String get wordModeLabel => 'Сөз режимі';
 
   @override
+  String get scanTranslateMethodTitle => 'Аударма әдісін таңдау';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Анықталған мәтінді қалай аударасыз?';
+
+  @override
+  String get scanBulkTranslate => 'Жаппай аудару';
+
+  @override
+  String get scanBulkTranslateDesc => 'Барлық мәтінді бір сұраумен аударыңыз';
+
+  @override
+  String get scanSegmentTranslate => 'Жеке аудару';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Аударылатын сегменттерді жеке таңдаңыз';
+
+  @override
+  String get scanTranslatingAll => 'Барлығы аударылуда...';
+
+  @override
+  String get scanBulkTranslateButton => 'Барлығын аудару';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Аударма саны жеткіліксіз. Керек: $needed, қалды: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Біріктірілген нәтиже';
 
   @override

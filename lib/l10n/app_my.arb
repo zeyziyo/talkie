@@ -757,6 +757,25 @@
   "wordDefenseDesc": "ရန်သူ မရောက်ခင် စကားလုံးကို ပြော၍ အခြေခံကို ကာကွယ်ပါ။",
   "wordDefenseTitle": "စကားလုံး ခုခံခြင်း",
   "wordModeLabel": "စကားလုံး ပုံစံ",
+  "scanTranslateMethodTitle": "ဘာသာပြန်နည်းကို ရွေးပါ",
+  "scanTranslateMethodSubtitle": "သိရှိထားသော စာသားကို ဘယ်လို ဘာသာပြန်မလဲ။",
+  "scanBulkTranslate": "အစုလိုက် ဘာသာပြန်ပါ",
+  "scanBulkTranslateDesc": "စာသားတစ်ခုလုံးကို တစ်ကြိမ်တည်း တောင်းဆိုပြီး ဘာသာပြန်ပါ။",
+  "scanSegmentTranslate": "အပိုင်းအလိုက် ဘာသာပြန်ပါ",
+  "scanSegmentTranslateDesc": "ဘာသာပြန်ရန် အပိုင်းများကို တစ်ခုချင်း ရွေးချယ်ပါ။",
+  "scanTranslatingAll": "အားလုံး ဘာသာပြန်နေသည်...",
+  "scanBulkTranslateButton": "အားလုံး ဘာသာပြန်ပါ",
+  "scanInsufficientLimit": "ဘာသာပြန်ခွင့် အရေအတွက် မလုံလောက်ပါ။ လိုအပ်သည်- {needed} ကြိမ်၊ ကျန်ရှိသည်- {remaining} ကြိမ်",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "ပေါင်းစပ်ရလဒ်",
   "errorLimitReached": "ဘာသာပြန်ခွင့် အရေအတွက် မလုံလောက်ပါ။ ကြော်ငြာကြည့်ပြီး ၁၀ ကြိမ် ပြန်ဖြည့်မလား။",
   "yourPronunciation": "ကျွန်ုပ်၏ အသံထွက်",

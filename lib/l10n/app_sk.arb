@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Bráňte základňu vyslovením slov predtým, ako dorazí nepriateľ.",
   "wordDefenseTitle": "Slovná obrana",
   "wordModeLabel": "Režim slov",
+  "scanTranslateMethodTitle": "Vyberte spôsob prekladu",
+  "scanTranslateMethodSubtitle": "Ako chcete preložiť rozpoznaný text?",
+  "scanBulkTranslate": "Preklad celého naraz",
+  "scanBulkTranslateDesc": "Preloží celý text naraz jedinou požiadavkou",
+  "scanSegmentTranslate": "Individuálny preklad",
+  "scanSegmentTranslateDesc": "Vyberte segmenty, ktoré chcete preložiť, jednotlivo",
+  "scanTranslatingAll": "Prekladám všetko...",
+  "scanBulkTranslateButton": "Preložiť všetko",
+  "scanInsufficientLimit": "Nedostatočný počet prekladov. Potrebných: {needed}, Zostáva: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Kombinovaný výsledok",
   "errorLimitReached": "Počet prekladov je nedostatočný. Chcete si pozrieť reklamu a získať 10 prekladov navyše?",
   "yourPronunciation": "Vaša výslovnosť",

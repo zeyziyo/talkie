@@ -165,16 +165,17 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'ໂຄຕ້າປະຈໍາວັນສໍາລັບການບໍລິການ AI ໄດ້ໝົດແລ້ວ. ກະລຸນາລອງໃໝ່ໃນພາຍຫຼັງ ຫຼື ມື້ອື່ນ.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'ການແປຖືກຈໍາກັດເນື່ອງຈາກນະໂຍບາຍຄວາມປອດໄພຂອງ AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'ສຳເນົາຕົ້ນສະບັບ';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'ສຳເນົາຂໍ້ຄວາມຕົ້ນສະບັບແລ້ວ.';
 
   @override
   String get errorProfanity => 'ບໍ່ສາມາດແປໄດ້ເພາະວ່າມີຄໍາຫຍາບຄາຍ.';
@@ -785,7 +786,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get saved => 'ບັນທຶກສຳເລັດ';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'ຂໍ້ຄວາມຕົ້ນສະບັບ';
 
   @override
   String get saving => 'ກຳລັງບັນທຶກ...';
@@ -795,7 +796,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'ບໍ່ພົບຂໍ້ຄວາມທີ່ກົງກັບພາສາການຮຽນຮູ້ທີ່ກໍານົດໄວ້ໃນຮູບ. ກະລຸນາກວດເບິ່ງການຕັ້ງຄ່າພາສາຂອງທ່ານ.';
 
   @override
   String get scanNotSupported =>
@@ -1240,19 +1241,50 @@ class AppLocalizationsLo extends AppLocalizations {
   String get wordModeLabel => 'ໂໝດຄຳສັບ';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get scanTranslateMethodTitle => 'ເລືອກວິທີການແປ';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get scanTranslateMethodSubtitle =>
+      'ທ່ານຕ້ອງການແປຂໍ້ຄວາມທີ່ກວດພົບແນວໃດ?';
+
+  @override
+  String get scanBulkTranslate => 'ແປເປັນຈໍານວນຫຼາຍ';
+
+  @override
+  String get scanBulkTranslateDesc => 'ແປຂໍ້ຄວາມທັງໝົດດ້ວຍຄໍາຮ້ອງຂໍຄັ້ງດຽວ';
+
+  @override
+  String get scanSegmentTranslate => 'ແປແຕ່ລະອັນ';
+
+  @override
+  String get scanSegmentTranslateDesc => 'ເລືອກສ່ວນທີ່ຈະແປແຕ່ລະອັນ';
+
+  @override
+  String get scanTranslatingAll => 'ກໍາລັງແປທັງໝົດ...';
+
+  @override
+  String get scanBulkTranslateButton => 'ແປທັງໝົດ';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'ຈຳນວນການແປບໍ່ພຽງພໍ. ຕ້ອງການ: $needed ຄັ້ງ, ເຫຼືອ: $remaining ຄັ້ງ';
+  }
+
+  @override
+  String get combinedResult => 'ຜົນການລວມ';
+
+  @override
+  String get errorLimitReached =>
+      'ຈຳນວນການແປບໍ່ພຽງພໍ. ທ່ານຕ້ອງການເບິ່ງໂຄສະນາເພື່ອເຕີມເງິນ 10 ຄັ້ງບໍ?';
 
   @override
   String get yourPronunciation => 'ການອອກສຽງຂອງເຈົ້າ';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [ຄູ່ມືຈໍາກັດການແປ]\nທ່ານຈະໄດ້ຮັບການແປຟຣີ 20 ຄັ້ງທຸກໆເວລາທ່ຽງຄືນ. ຖ້າທ່ານໃຊ້ພວກມັນທັງໝົດ, ທ່ານສາມາດເບິ່ງໂຄສະນາເພື່ອເພີ່ມການແປອີກ 10 ຄັ້ງໄດ້ທັນທີ.';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• ເອົາຮູບພາບຈາກກ້ອງຖ່າຍຮູບ ຫຼື ແກເລີຣີເພື່ອສະກັດ ແລະ ແປຂໍ້ຄວາມ.\n• ທ່ານສາມາດແຕະທີ່ຫຼາຍປະໂຫຍກໃນຮູບດຽວເພື່ອແປແຕ່ລະອັນໄດ້.\n• ຖ້າທ່ານມີຈຳນວນການແປບໍ່ພຽງພໍ, ທ່ານສາມາດເບິ່ງໂຄສະນາເພື່ອເພີ່ມອີກ 10 ຄັ້ງໄດ້ທັນທີ.';
 }

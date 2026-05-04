@@ -757,6 +757,25 @@
   "wordDefenseDesc": "ጠላት ከመድረሱ በፊት ቃሉን በመናገር ጣቢያዎን ይከላከሉ።",
   "wordDefenseTitle": "የቃል መከላከያ",
   "wordModeLabel": "የቃል ሁነታ",
+  "scanTranslateMethodTitle": "የትርጉም ዘዴ ምረጥ",
+  "scanTranslateMethodSubtitle": "የታወቀውን ጽሑፍ እንዴት መተርጎም ይፈልጋሉ?",
+  "scanBulkTranslate": "ሁሉንም በአንድ ጊዜ መተርጎም",
+  "scanBulkTranslateDesc": "ሁሉንም ጽሑፍ በአንድ ጥያቄ መተርጎም",
+  "scanSegmentTranslate": "በክፍል መተርጎም",
+  "scanSegmentTranslateDesc": "ለመተርጎም ክፍሎችን ለየብቻ ምረጥ",
+  "scanTranslatingAll": "ሁሉንም በመተርጎም ላይ...",
+  "scanBulkTranslateButton": "ሁሉንም ተርጉም",
+  "scanInsufficientLimit": "የሚቀሩ ትርጉሞች በቂ አይደሉም። የሚያስፈልግ: {needed}፣ የቀረ: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "የተዋሃደ ውጤት",
   "errorLimitReached": "የትርጉም ሙከራዎችዎ አልቀዋል። ማስታወቂያ በመመልከት 10 ሙከራዎችን መሙላት ይፈልጋሉ?",
   "yourPronunciation": "የእርስዎ አጠራር",

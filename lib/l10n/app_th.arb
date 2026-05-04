@@ -757,6 +757,25 @@
   "wordDefenseDesc": "ป้องกันฐานของคุณโดยพูดคำศัพท์ก่อนที่ศัตรูจะมาถึง",
   "wordDefenseTitle": "ป้องกันคำศัพท์",
   "wordModeLabel": "โหมดคำศัพท์",
+  "scanTranslateMethodTitle": "เลือกวิธีการแปล",
+  "scanTranslateMethodSubtitle": "คุณต้องการแปลข้อความที่ตรวจพบอย่างไร",
+  "scanBulkTranslate": "แปลแบบกลุ่มทั้งหมด",
+  "scanBulkTranslateDesc": "แปลข้อความทั้งหมดด้วยการร้องขอเพียงครั้งเดียว",
+  "scanSegmentTranslate": "แปลทีละส่วน",
+  "scanSegmentTranslateDesc": "เลือกส่วนที่คุณต้องการแปลทีละส่วน",
+  "scanTranslatingAll": "กำลังแปลทั้งหมด...",
+  "scanBulkTranslateButton": "แปลทั้งหมด",
+  "scanInsufficientLimit": "จำนวนการแปลไม่เพียงพอ ต้องใช้: {needed} ครั้ง, เหลือ: {remaining} ครั้ง",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "ผลลัพธ์รวม",
   "errorLimitReached": "จำนวนการแปลไม่เพียงพอ คุณต้องการดูโฆษณาเพื่อเติม 10 ครั้งหรือไม่",
   "yourPronunciation": "การออกเสียงของคุณ",

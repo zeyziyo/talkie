@@ -1245,6 +1245,37 @@ class AppLocalizationsAs extends AppLocalizations {
   String get wordModeLabel => 'শব্দ মোড';
 
   @override
+  String get scanTranslateMethodTitle => 'অনুবাদ পদ্ধতি নিৰ্ব্বাচন কৰক';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'আপুনি কেনেকৈ চিনাক্ত কৰা পাঠ অনুবাদ কৰিব?';
+
+  @override
+  String get scanBulkTranslate => 'সমূহীয়া অনুবাদ';
+
+  @override
+  String get scanBulkTranslateDesc => 'এক অনুৰোধত সকলো পাঠ অনুবাদ কৰক';
+
+  @override
+  String get scanSegmentTranslate => 'পৃথক অনুবাদ';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'অনুবাদ কৰিবলগীয়া অংশবোৰ পৃথকভাৱে নিৰ্ব্বাচন কৰক';
+
+  @override
+  String get scanTranslatingAll => 'সকলো অনুবাদ কৰি থকা হৈছে...';
+
+  @override
+  String get scanBulkTranslateButton => 'সমূহীয়া অনুবাদ';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'অনুুবাদৰ সংখ্যা পৰ্যাপ্ত নহয়। প্ৰয়োজনীয়: $needed বাৰ, বাকী: $remaining বাৰ';
+  }
+
+  @override
   String get combinedResult => 'সংহত ফলাফল';
 
   @override

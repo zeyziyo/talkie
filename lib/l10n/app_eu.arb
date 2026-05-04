@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Ezin da itzuli gorroto-diskurtsoa duelako.",
   "errorOtherSafety": "AI segurtasun politikak itzulpena ukatu du.",
+  "errorQuotaExceeded": "Adimen artifizialeko zerbitzuaren eguneroko kuota agortu da. Saiatu berriro geroago edo bihar.",
+  "errorSafetyPolicy": "AI segurtasun-politikak itzulpena mugatu du.",
+  "copyOriginal": "Jatorrizkoa kopiatu",
+  "originalCopied": "Jatorrizko testua kopiatu da.",
   "errorProfanity": "Ezin da itzuli profanotasuna duelako.",
   "errorSelectCategory": "Hautatu lehenik hitz bat edo esaldi bat!",
   "errorSexualContent": "Ezin da itzuli eduki sexuala duelako.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Jatorrizko testua",
   "saving": "Gordetzen...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Aukeratu eskaneatzeko irudi bat",
+  "scanNoMatch": "Ezin izan da argazkian ezarritako ikaskuntza-hizkuntzarekin bat datorren testurik aurkitu. Egiaztatu hizkuntza-ezarpenak.",
   "scanNotSupported": "Hizkuntza honek ez du eskaneatzea onartzen. Une honetan, OCR-k latindar, txinatar, devanagari (hindia eta abar), japoniera eta koreera karaktereak soilik onartzen ditu.",
   "scanLabel": "Eskaneatu",
   "score": "Zehaztasuna: {score}%",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "Hitz egin hitzak etsaiak iritsi baino lehen oinarria defendatzeko.",
   "wordDefenseTitle": "Hitzen defentsa",
   "wordModeLabel": "Hitzen modua",
-  "yourPronunciation": "Zure ahoskera"
+  "scanTranslateMethodTitle": "Itzultzeko metodoa aukeratu",
+  "scanTranslateMethodSubtitle": "Nola itzuli behar da hautemandako testua?",
+  "scanBulkTranslate": "Osoko itzulpen masiboa",
+  "scanBulkTranslateDesc": "Testu osoa eskaera bakar batekin itzultzen du",
+  "scanSegmentTranslate": "Banako itzulpena",
+  "scanSegmentTranslateDesc": "Itzultzeko segmentuak banan-banan hautatzen ditu",
+  "scanTranslatingAll": "Guztia itzultzen...",
+  "scanBulkTranslateButton": "Guztia itzuli",
+  "scanInsufficientLimit": "Itzulpen kopuru nahikorik ez. Beharrezkoak: {needed}, geratzen direnak: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Emaitza konbinatua",
+  "errorLimitReached": "Itzulpen kopuru nahikorik ez. Iragarki bat ikusi eta 10 itzulpen gehiago kargatu nahi dituzu?",
+  "yourPronunciation": "Zure ahoskera",
+  "helpLimitDetails": "💡 [Itzulpen-mugaren gida]\nEgunero 20 doako itzulpen ematen dira gauerdian. Guztiak agortzen badituzu ere, iragarki bat ikusita 10 itzulpen gehiago kargatuko dira berehala.",
+  "scanDetails": "• Kargatu irudiak kameratik edo galeriatik testua atera eta itzultzeko.\n• Argazki batean dauden hainbat esaldi banan-banan itzul ditzakezu, gainean sakatuta.\n• Itzulpen kopururik ez baduzu, iragarki bat ikusita 10 itzulpen gehiago karga ditzakezu."
 }

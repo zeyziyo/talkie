@@ -757,6 +757,25 @@
   "wordDefenseDesc": "शत्रू पोहोचण्यापूर्वी शब्द बोलून आपल्या तळाचे संरक्षण करा.",
   "wordDefenseTitle": "शब्द संरक्षण",
   "wordModeLabel": "शब्द मोड",
+  "scanTranslateMethodTitle": "भाषांतर पद्धत निवडा",
+  "scanTranslateMethodSubtitle": "ओळखलेला मजकूर कसा भाषांतरित करायचा?",
+  "scanBulkTranslate": "एकत्रित भाषांतर",
+  "scanBulkTranslateDesc": "संपूर्ण मजकूर एकाच वेळी भाषांतरित करा",
+  "scanSegmentTranslate": "विभागीय भाषांतर",
+  "scanSegmentTranslateDesc": "भाषांतर करण्यासाठी विभाग स्वतंत्रपणे निवडा",
+  "scanTranslatingAll": "संपूर्ण भाषांतर सुरू आहे...",
+  "scanBulkTranslateButton": "एकत्रित भाषांतर करा",
+  "scanInsufficientLimit": "भाषांतरांसाठी पुरेसे क्रेडिट्स नाहीत. आवश्यक: {needed}, शिल्लक: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "एकत्रित निकाल",
   "errorLimitReached": "तुमच्याकडे भाषांतर पुरेसे नाही. तुम्ही जाहिरात पाहून 10 भाषांतरे मिळवू इच्छिता?",
   "yourPronunciation": "तुमचे उच्चार",

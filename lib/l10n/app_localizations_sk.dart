@@ -1248,6 +1248,38 @@ class AppLocalizationsSk extends AppLocalizations {
   String get wordModeLabel => 'Režim slov';
 
   @override
+  String get scanTranslateMethodTitle => 'Vyberte spôsob prekladu';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Ako chcete preložiť rozpoznaný text?';
+
+  @override
+  String get scanBulkTranslate => 'Preklad celého naraz';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Preloží celý text naraz jedinou požiadavkou';
+
+  @override
+  String get scanSegmentTranslate => 'Individuálny preklad';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Vyberte segmenty, ktoré chcete preložiť, jednotlivo';
+
+  @override
+  String get scanTranslatingAll => 'Prekladám všetko...';
+
+  @override
+  String get scanBulkTranslateButton => 'Preložiť všetko';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Nedostatočný počet prekladov. Potrebných: $needed, Zostáva: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Kombinovaný výsledok';
 
   @override

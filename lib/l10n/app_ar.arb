@@ -757,6 +757,25 @@
   "wordDefenseDesc": "دافع عن قاعدتك عن طريق قول الكلمات قبل أن يصل العدو.",
   "wordDefenseTitle": "الدفاع عن الكلمات",
   "wordModeLabel": "وضع الكلمات",
+  "scanTranslateMethodTitle": "اختر طريقة الترجمة",
+  "scanTranslateMethodSubtitle": "كيف تريد ترجمة النص الذي تم التعرف عليه؟",
+  "scanBulkTranslate": "ترجمة مجمعة كاملة",
+  "scanBulkTranslateDesc": "ترجمة النص بأكمله بطلب واحد",
+  "scanSegmentTranslate": "ترجمة فردية",
+  "scanSegmentTranslateDesc": "اختر الأجزاء التي تريد ترجمتها بشكل فردي",
+  "scanTranslatingAll": "جارٍ ترجمة الكل...",
+  "scanBulkTranslateButton": "ترجمة الكل",
+  "scanInsufficientLimit": "عدد مرات الترجمة غير كافٍ. المطلوب: {needed} مرة، المتبقي: {remaining} مرة",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "النتيجة الموحدة",
   "errorLimitReached": "نفدت عدد مرات الترجمة. هل ترغب في مشاهدة إعلان لشحن 10 مرات؟",
   "yourPronunciation": "نطقك",

@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Tidak dapat diterjemahkan kerana mengandungi ujaran kebencian.",
   "errorOtherSafety": "Terjemahan ditolak oleh dasar keselamatan AI.",
+  "errorQuotaExceeded": "Kuota harian untuk perkhidmatan AI telah habis. Sila cuba sebentar lagi atau esok.",
+  "errorSafetyPolicy": "Terjemahan dihadkan disebabkan oleh dasar keselamatan AI.",
+  "copyOriginal": "Salin Asal",
+  "originalCopied": "Teks asal telah disalin.",
   "errorProfanity": "Tidak dapat diterjemahkan kerana mengandungi kata-kata kesat.",
   "errorSelectCategory": "Sila pilih perkataan atau ayat dahulu!",
   "errorSexualContent": "Tidak dapat diterjemahkan kerana mengandungi kandungan berunsur seksual.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Teks Asal",
   "saving": "Menyimpan...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Pilih imej untuk diimbas",
+  "scanNoMatch": "Tiada teks ditemui yang sepadan dengan bahasa pembelajaran yang ditetapkan dalam foto. Sila semak tetapan bahasa anda.",
   "scanNotSupported": "Bahasa ini tidak menyokong ciri imbasan. OCR kini hanya menyokong aksara Latin, Cina, Devanagari (cth., Hindi), Jepun dan Korea.",
   "scanLabel": "Imbas",
   "score": "Ketepatan: {score}%",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "Pertahankan pangkalan anda dengan menyebut perkataan sebelum musuh tiba.",
   "wordDefenseTitle": "Pertahanan Perkataan",
   "wordModeLabel": "Mod Perkataan",
-  "yourPronunciation": "Sebutan Anda"
+  "scanTranslateMethodTitle": "Pilih Kaedah Terjemahan",
+  "scanTranslateMethodSubtitle": "Bagaimana anda ingin menterjemahkan teks yang dikenali?",
+  "scanBulkTranslate": "Terjemahan Pukal Penuh",
+  "scanBulkTranslateDesc": "Terjemah keseluruhan teks dalam satu permintaan",
+  "scanSegmentTranslate": "Terjemahan Individu",
+  "scanSegmentTranslateDesc": "Pilih segmen untuk diterjemahkan secara individu",
+  "scanTranslatingAll": "Menterjemah semua...",
+  "scanBulkTranslateButton": "Terjemah Semua",
+  "scanInsufficientLimit": "Jumlah terjemahan tidak mencukupi. Diperlukan: {needed}, Baki: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Keputusan Gabungan",
+  "errorLimitReached": "Jumlah terjemahan tidak mencukupi. Tonton iklan untuk menambah 10 lagi?",
+  "yourPronunciation": "Sebutan Anda",
+  "helpLimitDetails": "💡 [Panduan Had Terjemahan]\n20 terjemahan percuma diberikan setiap hari pada tengah malam. Jika anda kehabisan, anda boleh menonton iklan untuk menambah 10 terjemahan tambahan dengan segera.",
+  "scanDetails": "• Import imej dari kamera atau galeri anda untuk mengekstrak dan menterjemahkan teks.\n• Anda boleh mengetik berbilang ayat yang terkandung dalam satu foto untuk menterjemahkannya secara individu.\n• Jika anda tidak mempunyai jumlah terjemahan yang mencukupi, anda boleh menonton iklan dengan serta-merta untuk menambah 10 lagi."
 }

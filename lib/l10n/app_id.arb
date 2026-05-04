@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Pertahankan markas Anda dengan mengucapkan kata-kata sebelum musuh tiba.",
   "wordDefenseTitle": "Pertahanan Kata",
   "wordModeLabel": "Mode Kata",
+  "scanTranslateMethodTitle": "Pilih Metode Terjemahan",
+  "scanTranslateMethodSubtitle": "Bagaimana Anda ingin menerjemahkan teks yang dikenali?",
+  "scanBulkTranslate": "Terjemahan Massal Penuh",
+  "scanBulkTranslateDesc": "Terjemahkan seluruh teks dalam satu permintaan",
+  "scanSegmentTranslate": "Terjemahan Individual",
+  "scanSegmentTranslateDesc": "Pilih segmen yang akan diterjemahkan secara individual",
+  "scanTranslatingAll": "Menerjemahkan semua...",
+  "scanBulkTranslateButton": "Terjemahkan Semua",
+  "scanInsufficientLimit": "Jumlah terjemahan tidak mencukupi. Dibutuhkan: {needed}, Sisa: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Hasil Gabungan",
   "errorLimitReached": "Jumlah terjemahan tidak mencukupi. Apakah Anda ingin menonton iklan untuk mengisi ulang 10 terjemahan?",
   "yourPronunciation": "Lafal Anda",

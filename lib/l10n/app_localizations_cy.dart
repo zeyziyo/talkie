@@ -170,16 +170,17 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Mae\'r cwota dyddiol ar gyfer y gwasanaeth AI wedi\'i ddisbyddu. Rhowch gynnig arall arni yn nes ymlaen neu yfory.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Cyfyngwyd y cyfieithiad oherwydd polisi diogelwch AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Copïo\'r gwreiddiol';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Copïwyd y testun gwreiddiol.';
 
   @override
   String get errorProfanity =>
@@ -798,7 +799,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get saved => 'Cadw wedi\'i Gwblhau';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Testun gwreiddiol';
 
   @override
   String get saving => 'Cadw...';
@@ -808,7 +809,7 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Ni chanfuwyd testun yn y llun sy\'n cyfateb i\'r iaith ddysgu a osodwyd. Gwiriwch eich gosodiadau iaith.';
 
   @override
   String get scanNotSupported =>
@@ -1255,19 +1256,51 @@ class AppLocalizationsCy extends AppLocalizations {
   String get wordModeLabel => 'Modd Gair';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get scanTranslateMethodTitle => 'Dewis dull cyfieithu';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get scanTranslateMethodSubtitle =>
+      'Sut ydych chi am gyfieithu\'r testun a adnabuwyd?';
+
+  @override
+  String get scanBulkTranslate => 'Cyfieithu swmp cyfan';
+
+  @override
+  String get scanBulkTranslateDesc => 'Cyfieithwch y testun cyfan mewn un cais';
+
+  @override
+  String get scanSegmentTranslate => 'Cyfieithu unigol';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Dewiswch segmentau i\'w cyfieithu yn unigol';
+
+  @override
+  String get scanTranslatingAll => 'Yn cyfieithu\'r cyfan...';
+
+  @override
+  String get scanBulkTranslateButton => 'Cyfieithu\'r cyfan';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Nid oes gennych ddigon o gyfieithiadau ar ôl. Angen: $needed, Ar ôl: $remaining';
+  }
+
+  @override
+  String get combinedResult => 'Canlyniad cyfunol';
+
+  @override
+  String get errorLimitReached =>
+      'Nid oes gennych ddigon o gyfieithiadau ar ôl. Ydych chi am wylio hysbyseb i ail-lenwi 10?';
 
   @override
   String get yourPronunciation => 'Eich Ynganiad';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [Canllaw terfyn cyfieithu]\nDarperir 20 o gyfieithiadau am ddim bob dydd am hanner nos. Os byddwch yn eu disbyddu i gyd, gallwch wylio hysbyseb i ail-lenwi 10 o gyfieithiadau ychwanegol ar unwaith.';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• Mewnforio delweddau o\'r camera neu\'r oriel i dynnu testun a\'i gyfieithu.\n• Gallwch dapio a chyfieithu sawl brawddeg mewn un llun yn unigol.\n• Os nad oes gennych ddigon o gyfieithiadau, gallwch wylio hysbyseb ar unwaith i ail-lenwi 10 yn ychwanegol.';
 }

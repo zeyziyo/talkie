@@ -1241,6 +1241,38 @@ class AppLocalizationsUr extends AppLocalizations {
   String get wordModeLabel => 'لفظ موڈ';
 
   @override
+  String get scanTranslateMethodTitle => 'ترجمہ کرنے کا طریقہ منتخب کریں';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'پہچانی گئی عبارت کا ترجمہ کیسے کریں؟';
+
+  @override
+  String get scanBulkTranslate => 'مکمل بیچ ترجمہ';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'تمام متن کو ایک ہی درخواست میں ترجمہ کریں';
+
+  @override
+  String get scanSegmentTranslate => 'انفرادی ترجمہ';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'ترجمہ کے لیے انفرادی طور پر حصے منتخب کریں';
+
+  @override
+  String get scanTranslatingAll => 'تمام کا ترجمہ ہو رہا ہے...';
+
+  @override
+  String get scanBulkTranslateButton => 'مکمل ترجمہ';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'ترجموں کی تعداد ناکافی ہے۔ درکار: $needed بار، باقی: $remaining بار';
+  }
+
+  @override
   String get combinedResult => 'مربوط نتیجہ';
 
   @override

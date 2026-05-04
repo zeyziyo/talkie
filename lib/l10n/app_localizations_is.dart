@@ -1247,6 +1247,37 @@ class AppLocalizationsIs extends AppLocalizations {
   String get wordModeLabel => 'Orðastilling';
 
   @override
+  String get scanTranslateMethodTitle => 'Veldu þýðingaraðferð';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Hvernig viltu þýða textann sem þekkist?';
+
+  @override
+  String get scanBulkTranslate => 'Þýða allt í einu';
+
+  @override
+  String get scanBulkTranslateDesc => 'Þýðir allan textann í einni beiðni';
+
+  @override
+  String get scanSegmentTranslate => 'Þýða hluta fyrir sig';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Veldu hluta til að þýða hver fyrir sig';
+
+  @override
+  String get scanTranslatingAll => 'Þýði allt...';
+
+  @override
+  String get scanBulkTranslateButton => 'Þýða allt';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Ekki nægilega mörg þýðsluskref. Þarf: $needed, eftir: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Samþætt niðurstaða';
 
   @override

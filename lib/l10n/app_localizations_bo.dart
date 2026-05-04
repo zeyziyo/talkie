@@ -1251,6 +1251,38 @@ class AppLocalizationsBo extends AppLocalizations {
   String get wordModeLabel => 'ཐ་སྙད་ཐབས་ལམ།';
 
   @override
+  String get scanTranslateMethodTitle => 'འགྱུར་ཐབས་འདེམས་པ།';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'ངོས་འཛིན་བྱས་པའི་ཡི་གེ་དེ་ཇི་ལྟར་བསྒྱུར་དགོས་སམ།';
+
+  @override
+  String get scanBulkTranslate => 'སྡོམ་འབོར་གྱི་སྒྱུར་བཅོས།';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'ཡིག་ཚང་ཧྲིལ་བོ་ཐེངས་གཅིག་གིས་རེ་འདུན་ཞིག་ལ་བསྒྱུར་བཅོས་བྱེད།';
+
+  @override
+  String get scanSegmentTranslate => 'སྒེར་སྒྱུར།';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'སྒྱུར་དགོས་པའི་སྡེ་ཚན་སོ་སོར་འདེམས་པ།';
+
+  @override
+  String get scanTranslatingAll => 'ཡོངས་སུ་བསྒྱུར་བཞིན་པ།';
+
+  @override
+  String get scanBulkTranslateButton => 'ཡོངས་སུ་བསྒྱུར།';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'སྒྱུར་གྲངས་མི་འདང་། དགོས་མཁོ།: $needed ཐེངས།, ལྷག་མ།: $remaining ཐེངས།';
+  }
+
+  @override
   String get combinedResult => 'མཉམ་འབྲེལ་གྱི་གྲུབ་འབྲས།';
 
   @override

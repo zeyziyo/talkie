@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Ipagtanggol ang base sa pamamagitan ng pagsasabi ng salita bago makarating ang kaaway.",
   "wordDefenseTitle": "Word Defense",
   "wordModeLabel": "Word Mode",
+  "scanTranslateMethodTitle": "Pumili ng Paraan ng Pagsasalin",
+  "scanTranslateMethodSubtitle": "Paano mo gustong isalin ang nakuhang teksto?",
+  "scanBulkTranslate": "Buong Pagsasalin",
+  "scanBulkTranslateDesc": "Isalin ang buong teksto sa isang kahilingan.",
+  "scanSegmentTranslate": "Indibidwal na Pagsasalin",
+  "scanSegmentTranslateDesc": "Pumili ng mga segment na isasalin nang isa-isa.",
+  "scanTranslatingAll": "Isinasalin ang lahat...",
+  "scanBulkTranslateButton": "Isalin ang Buo",
+  "scanInsufficientLimit": "Hindi sapat ang bilang ng pagsasalin. Kailangan: {needed}, Natitira: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Pinagsamang Resulta",
   "errorLimitReached": "Kulang ka na sa bilang ng pagsasalin. Gusto mo bang manood ng ad para makakuha ng 10 karagdagang pagsasalin?",
   "yourPronunciation": "Ang iyong Pagbigkas",

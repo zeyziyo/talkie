@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Защитете базата, като кажете думата, преди врагът да пристигне.",
   "wordDefenseTitle": "Защита на думи",
   "wordModeLabel": "Режим „Думи“",
+  "scanTranslateMethodTitle": "Избор на метод за превод",
+  "scanTranslateMethodSubtitle": "Как да преведа разпознатия текст?",
+  "scanBulkTranslate": "Превод на целия текст наведнъж",
+  "scanBulkTranslateDesc": "Превежда целия текст с една заявка",
+  "scanSegmentTranslate": "Индивидуален превод",
+  "scanSegmentTranslateDesc": "Изберете сегменти за превод поотделно",
+  "scanTranslatingAll": "Превод на целия текст...",
+  "scanBulkTranslateButton": "Превод на целия текст",
+  "scanInsufficientLimit": "Недостатъчен брой преводи. Необходими: {needed}, Останали: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Обединен резултат",
   "errorLimitReached": "Нямате достатъчно преводи. Искате ли да гледате реклама, за да получите 10 превода?",
   "yourPronunciation": "Вашето произношение",

@@ -1250,6 +1250,37 @@ class AppLocalizationsNb extends AppLocalizations {
   String get wordModeLabel => 'Ordmodus';
 
   @override
+  String get scanTranslateMethodTitle => 'Velg oversettelsesmetode';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Hvordan vil du oversette den gjenkjente teksten?';
+
+  @override
+  String get scanBulkTranslate => 'Oversett alt samlet';
+
+  @override
+  String get scanBulkTranslateDesc => 'Oversett all tekst i én forespørsel';
+
+  @override
+  String get scanSegmentTranslate => 'Individuell oversettelse';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Velg segmenter for å oversette individuelt';
+
+  @override
+  String get scanTranslatingAll => 'Oversetter alt...';
+
+  @override
+  String get scanBulkTranslateButton => 'Oversett alt';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Du har ikke nok oversettelser igjen. Trenger: $needed, Tilgjengelig: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Kombinert resultat';
 
   @override

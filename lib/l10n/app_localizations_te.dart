@@ -168,16 +168,17 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'AI సేవల కోసం మీ రోజువారీ కోటా అయిపోయింది. దయచేసి కొంత సమయం తర్వాత లేదా రేపు మళ్లీ ప్రయత్నించండి.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'AI భద్రతా విధానం కారణంగా అనువాదం పరిమితం చేయబడింది.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'అసలు ప్రతిని కాపీ చేయండి';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'అసలు టెక్స్ట్ కాపీ చేయబడింది.';
 
   @override
   String get errorProfanity => 'అభ్యంతరకర పదాలు ఉన్నందున అనువదించలేము.';
@@ -791,7 +792,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get saved => 'సేవ్ చేయబడింది';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'అసలు టెక్స్ట్';
 
   @override
   String get saving => 'సేవ్ అవుతోంది...';
@@ -801,7 +802,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'చిత్రంలో సెట్ చేయబడిన అభ్యాస భాషకు సరిపోయే టెక్స్ట్ కనుగొనబడలేదు. భాషా సెట్టింగ్‌లను తనిఖీ చేయండి.';
 
   @override
   String get scanNotSupported =>
@@ -1247,19 +1248,52 @@ class AppLocalizationsTe extends AppLocalizations {
   String get wordModeLabel => 'పద మోడ్';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get scanTranslateMethodTitle => 'అనువాద పద్ధతిని ఎంచుకోండి';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get scanTranslateMethodSubtitle =>
+      'గుర్తించబడిన టెక్స్ట్‌ను ఎలా అనువదించాలి?';
+
+  @override
+  String get scanBulkTranslate => 'మొత్తం బల్క్ అనువాదం';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'ఒకే అభ్యర్థనతో మొత్తం వచనాన్ని అనువదించండి';
+
+  @override
+  String get scanSegmentTranslate => 'వ్యక్తిగత అనువాదం';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'అనువదించడానికి విభాగాలను విడిగా ఎంచుకోండి';
+
+  @override
+  String get scanTranslatingAll => 'మొత్తం అనువదిస్తోంది...';
+
+  @override
+  String get scanBulkTranslateButton => 'మొత్తం అనువదించు';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'మీ అనువాదాల సంఖ్య తక్కువగా ఉంది. అవసరం: $needed, మిగిలింది: $remaining';
+  }
+
+  @override
+  String get combinedResult => 'సమ్మిళిత ఫలితం';
+
+  @override
+  String get errorLimitReached =>
+      'మీ అనువాదాల సంఖ్య తక్కువగా ఉంది. ప్రకటన చూసి 10 రీఛార్జ్ చేయాలా?';
 
   @override
   String get yourPronunciation => 'మీ ఉచ్చారణ';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [అనువాద పరిమితి గైడ్]\nప్రతిరోజూ అర్ధరాత్రి 20 ఉచిత అనువాదాలు అందించబడతాయి. మీరు వాటన్నింటినీ ఉపయోగించినప్పటికీ, ప్రకటన చూడటం ద్వారా మీరు వెంటనే 10 అదనపు అనువాదాలను రీఛార్జ్ చేసుకోవచ్చు.';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• కెమెరా లేదా గ్యాలరీ నుండి చిత్రాన్ని అప్‌లోడ్ చేయండి మరియు వచనాన్ని సంగ్రహించి అనువదించండి.\n• ఒక చిత్రంలో ఉన్న అనేక వాక్యాలను వ్యక్తిగతంగా అనువదించడానికి మీరు వాటిని నొక్కవచ్చు.\n• మీ అనువాదాల సంఖ్య తక్కువగా ఉంటే, మీరు వెంటనే ప్రకటన చూడటం ద్వారా అదనంగా 10ని రీఛార్జ్ చేసుకోవచ్చు.';
 }

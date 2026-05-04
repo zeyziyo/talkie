@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Nelze přeložit, protože obsahuje nenávistné projevy.",
   "errorOtherSafety": "Překlad byl zamítnut zásadami AI bezpečnosti.",
+  "errorQuotaExceeded": "Denní limit pro službu AI byl vyčerpán. Zkuste to znovu později nebo zítra.",
+  "errorSafetyPolicy": "Překlad byl omezen z důvodu zásad bezpečnosti AI.",
+  "copyOriginal": "Kopírovat originál",
+  "originalCopied": "Původní text byl zkopírován.",
   "errorProfanity": "Nelze přeložit, protože obsahuje vulgární výrazy.",
   "errorSelectCategory": "Nejprve vyberte slovo nebo větu!",
   "errorSexualContent": "Nelze přeložit, protože obsahuje sexuální obsah.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Původní text",
   "saving": "Ukládání...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Vyberte obrázek ke skenování",
+  "scanNoMatch": "Na fotografii nebyl nalezen žádný text odpovídající nastavenému jazyku pro učení. Zkontrolujte nastavení jazyka.",
   "scanNotSupported": "Skenování v tomto jazyce není podporováno. OCR aktuálně podporuje pouze latinku, čínštinu, dévanágarí (hindština atd.), japonštinu a korejštinu.",
   "scanLabel": "Skenovat",
   "score": "Přesnost: {score}%",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "Braňte základnu vyslovováním slov, než dorazí nepřátelé.",
   "wordDefenseTitle": "Slovní obrana",
   "wordModeLabel": "Režim slov",
-  "yourPronunciation": "Vaše výslovnost"
+  "scanTranslateMethodTitle": "Zvolte metodu překladu",
+  "scanTranslateMethodSubtitle": "Jak chcete přeložit rozpoznaný text?",
+  "scanBulkTranslate": "Hromadný překlad celku",
+  "scanBulkTranslateDesc": "Přeložte veškerý text jedním požadavkem",
+  "scanSegmentTranslate": "Individuální překlad",
+  "scanSegmentTranslateDesc": "Vyberte segmenty, které chcete přeložit, jednotlivě",
+  "scanTranslatingAll": "Překládá se vše...",
+  "scanBulkTranslateButton": "Přeložit vše",
+  "scanInsufficientLimit": "Nemáte dostatek překladů. Potřeba: {needed}, zbývá: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Kombinovaný výsledek",
+  "errorLimitReached": "Nemáte dostatek překladů. Chcete zhlédnout reklamu a získat 10 překladů?",
+  "yourPronunciation": "Vaše výslovnost",
+  "helpLimitDetails": "💡 [Nápověda k limitu překladů]\nKaždý den o půlnoci je k dispozici 20 bezplatných překladů. Pokud je vyčerpáte, můžete sledováním reklamy okamžitě získat 10 dalších překladů.",
+  "scanDetails": "• Načtěte obrázky z fotoaparátu nebo galerie, extrahujte text a přeložte jej.\n• Jednotlivé věty obsažené v jedné fotografii můžete překládat jednotlivě klepnutím na ně.\n• Pokud nemáte dostatek překladů, můžete si okamžitě sledováním reklamy přidat 10 dalších."
 }

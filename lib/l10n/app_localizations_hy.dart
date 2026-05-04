@@ -169,16 +169,17 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Արհեստական բանականության ծառայության օրական հատկացումը սպառվել է: Փորձեք կրկին ավելի ուշ կամ վաղը:';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Թարգմանությունը սահմանափակվել է AI անվտանգության քաղաքականության պատճառով:';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Պատճենել բնօրինակը';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Բնօրինակ տեքստը պատճենվել է:';
 
   @override
   String get errorProfanity =>
@@ -796,7 +797,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get saved => 'Պահպանումն ավարտված է';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Բնօրինակ տեքստ';
 
   @override
   String get saving => 'Պահպանվում է...';
@@ -806,7 +807,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Նկարում չհաջողվեց գտնել տեքստ, որը համապատասխանում է սահմանված ուսուցման լեզվին: Ստուգեք լեզվի կարգավորումները:';
 
   @override
   String get scanNotSupported =>
@@ -1256,19 +1257,51 @@ class AppLocalizationsHy extends AppLocalizations {
   String get wordModeLabel => 'Բառի ռեժիմ';
 
   @override
-  String get combinedResult => '통합 결과';
+  String get scanTranslateMethodTitle => 'Ընտրեք թարգմանության մեթոդը';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get scanTranslateMethodSubtitle =>
+      'Ինչպե՞ս թարգմանել ճանաչված տեքստը:';
+
+  @override
+  String get scanBulkTranslate => 'Մեծածավալ ամբողջական թարգմանություն';
+
+  @override
+  String get scanBulkTranslateDesc => 'Թարգմանեք ամբողջ տեքստը մեկ հարցումով';
+
+  @override
+  String get scanSegmentTranslate => 'Անհատական թարգմանություն';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Առանձին ընտրեք թարգմանվելիք հատվածները';
+
+  @override
+  String get scanTranslatingAll => 'Թարգմանվում է ամբողջը...';
+
+  @override
+  String get scanBulkTranslateButton => 'Թարգմանել ամբողջը';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Թարգմանությունների քանակը բավարար չէ: Անհրաժեշտ է՝ $needed, մնացել է՝ $remaining';
+  }
+
+  @override
+  String get combinedResult => 'Միավորված արդյունք';
+
+  @override
+  String get errorLimitReached =>
+      'Ձեզ մոտ թարգմանությունների քանակը սպառվել է: Ցանկանո՞ւմ եք դիտել գովազդ և լիցքավորել 10 թարգմանություն:';
 
   @override
   String get yourPronunciation => 'Ձեր արտասանությունը';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [Թարգմանության սահմանաչափի ուղեցույց]\nԱմեն օր կեսգիշերին տրամադրվում է 20 անվճար թարգմանություն: Եթե դրանք բոլորը սպառվեն, գովազդ դիտելը անմիջապես կլիցքավորի լրացուցիչ 10 թարգմանություն:';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• Ներմուծեք պատկերներ տեսախցիկից կամ պատկերասրահից՝ տեքստը արդյունահանելու և թարգմանելու համար։\n• Դուք կարող եք առանձին-առանձին թարգմանել մեկ լուսանկարում պարունակվող մի քանի նախադասություններ՝ հպելով դրանց։\n• Եթե թարգմանությունների քանակը բավարար չէ, կարող եք անմիջապես լիցքավորել լրացուցիչ 10 թարգմանություն՝ դիտելով գովազդ։';
 }

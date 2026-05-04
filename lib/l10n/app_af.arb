@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Verdedig die basis deur woorde te sê voordat die vyande arriveer.",
   "wordDefenseTitle": "Woordverdediging",
   "wordModeLabel": "Woordmodus",
+  "scanTranslateMethodTitle": "Kies vertaalmetode",
+  "scanTranslateMethodSubtitle": "Hoe moet die herken teks vertaal word?",
+  "scanBulkTranslate": "Grootmaatvertaling",
+  "scanBulkTranslateDesc": "Vertaal die hele teks in een versoek",
+  "scanSegmentTranslate": "Individuele vertaling",
+  "scanSegmentTranslateDesc": "Kies individueel segmente om te vertaal",
+  "scanTranslatingAll": "Besig om alles te vertaal...",
+  "scanBulkTranslateButton": "Vertaal alles",
+  "scanInsufficientLimit": "Onvoldoende vertaalpogings. Benodig: {needed}, Oorblywend: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Gekombineerde resultaat",
   "errorLimitReached": "Jy het min vertalings oor. Wil jy 'n advertensie kyk om 10 vertalings te herlaai?",
   "yourPronunciation": "Jou Uitspraak",

@@ -1246,6 +1246,37 @@ class AppLocalizationsHr extends AppLocalizations {
   String get wordModeLabel => 'Način rada s riječima';
 
   @override
+  String get scanTranslateMethodTitle => 'Odaberite način prevođenja';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Kako želite prevesti prepoznati tekst?';
+
+  @override
+  String get scanBulkTranslate => 'Grupno prevođenje';
+
+  @override
+  String get scanBulkTranslateDesc => 'Prevedite cijeli tekst jednim zahtjevom';
+
+  @override
+  String get scanSegmentTranslate => 'Pojedinačno prevođenje';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Odaberite segmente za prevođenje pojedinačno';
+
+  @override
+  String get scanTranslatingAll => 'Prevođenje svega u tijeku...';
+
+  @override
+  String get scanBulkTranslateButton => 'Prevedi sve';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Nedovoljno prijevoda. Potrebno: $needed, preostalo: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Kombinirani rezultat';
 
   @override

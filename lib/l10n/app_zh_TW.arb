@@ -757,6 +757,25 @@
   "wordDefenseDesc": "在敵人抵達前說出單字來防禦基地。",
   "wordDefenseTitle": "單字防禦",
   "wordModeLabel": "單字模式",
+  "scanTranslateMethodTitle": "選擇翻譯方式",
+  "scanTranslateMethodSubtitle": "您要如何翻譯識別到的文字？",
+  "scanBulkTranslate": "整批翻譯",
+  "scanBulkTranslateDesc": "一次請求翻譯所有文字",
+  "scanSegmentTranslate": "個別翻譯",
+  "scanSegmentTranslateDesc": "分別選擇要翻譯的區段",
+  "scanTranslatingAll": "正在翻譯全部...",
+  "scanBulkTranslateButton": "全部翻譯",
+  "scanInsufficientLimit": "翻譯次數不足。 需要：{needed}次，剩餘：{remaining}次",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "合併結果",
   "errorLimitReached": "翻譯次數不足。要觀看廣告並補充 10 次翻譯嗎？",
   "yourPronunciation": "你的發音",

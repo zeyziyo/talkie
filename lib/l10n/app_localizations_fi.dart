@@ -1243,6 +1243,36 @@ class AppLocalizationsFi extends AppLocalizations {
   String get wordModeLabel => 'Sanatila';
 
   @override
+  String get scanTranslateMethodTitle => 'Valitse käännöstapa';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Miten haluat kääntää tunnistetun tekstin?';
+
+  @override
+  String get scanBulkTranslate => 'Käännä kaikki kerralla';
+
+  @override
+  String get scanBulkTranslateDesc => 'Käännä koko teksti yhdellä pyynnöllä';
+
+  @override
+  String get scanSegmentTranslate => 'Käännä osissa';
+
+  @override
+  String get scanSegmentTranslateDesc => 'Valitse käännettävät osat erikseen';
+
+  @override
+  String get scanTranslatingAll => 'Käännetään kaikki...';
+
+  @override
+  String get scanBulkTranslateButton => 'Käännä kaikki';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Käännöksiä ei ole tarpeeksi. Tarvitaan: $needed, jäljellä: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Yhdistetty tulos';
 
   @override

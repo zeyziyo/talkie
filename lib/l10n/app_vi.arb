@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Nói từ trước khi kẻ thù đến để bảo vệ căn cứ.",
   "wordDefenseTitle": "Phòng thủ từ vựng",
   "wordModeLabel": "Chế độ từ",
+  "scanTranslateMethodTitle": "Chọn phương pháp dịch",
+  "scanTranslateMethodSubtitle": "Bạn muốn dịch văn bản đã nhận dạng như thế nào?",
+  "scanBulkTranslate": "Dịch hàng loạt toàn bộ",
+  "scanBulkTranslateDesc": "Dịch toàn bộ văn bản bằng một yêu cầu duy nhất",
+  "scanSegmentTranslate": "Dịch riêng lẻ",
+  "scanSegmentTranslateDesc": "Chọn các đoạn cần dịch riêng lẻ",
+  "scanTranslatingAll": "Đang dịch toàn bộ...",
+  "scanBulkTranslateButton": "Dịch toàn bộ",
+  "scanInsufficientLimit": "Không đủ lượt dịch. Cần: {needed} lượt, còn lại: {remaining} lượt",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Kết quả tổng hợp",
   "errorLimitReached": "Bạn đã hết lượt dịch. Bạn có muốn xem quảng cáo để nạp thêm 10 lượt không?",
   "yourPronunciation": "Phát âm của bạn",

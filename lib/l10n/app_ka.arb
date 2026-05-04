@@ -757,6 +757,25 @@
   "wordDefenseDesc": "დაიცავით ბაზა სიტყვების თქმით, სანამ მტრები მოვლენ.",
   "wordDefenseTitle": "სიტყვების დაცვა",
   "wordModeLabel": "სიტყვების რეჟიმი",
+  "scanTranslateMethodTitle": "თარგმნის მეთოდის არჩევა",
+  "scanTranslateMethodSubtitle": "როგორ ვთარგმნოთ აღმოჩენილი ტექსტი?",
+  "scanBulkTranslate": "მთლიანი პაკეტური თარგმნა",
+  "scanBulkTranslateDesc": "მთლიანი ტექსტის თარგმნა ერთი მოთხოვნით",
+  "scanSegmentTranslate": "ცალკეული თარგმნა",
+  "scanSegmentTranslateDesc": "აირჩიეთ სეგმენტები სათარგმნად ცალ-ცალკე",
+  "scanTranslatingAll": "მთლიანი თარგმნა მიმდინარეობს...",
+  "scanBulkTranslateButton": "მთლიანი თარგმნა",
+  "scanInsufficientLimit": "თარგმნის რაოდენობა არასაკმარისია. საჭიროა: {needed}, დარჩენილია: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "გაერთიანებული შედეგი",
   "errorLimitReached": "თარგმანის რაოდენობა ამოიწურა. გსურთ რეკლამის ნახვა და 10 თარგმანის მიღება?",
   "yourPronunciation": "თქვენი გამოთქმა",

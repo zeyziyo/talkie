@@ -1263,6 +1263,38 @@ class AppLocalizationsMy extends AppLocalizations {
   String get wordModeLabel => 'စကားလုံး ပုံစံ';
 
   @override
+  String get scanTranslateMethodTitle => 'ဘာသာပြန်နည်းကို ရွေးပါ';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'သိရှိထားသော စာသားကို ဘယ်လို ဘာသာပြန်မလဲ။';
+
+  @override
+  String get scanBulkTranslate => 'အစုလိုက် ဘာသာပြန်ပါ';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'စာသားတစ်ခုလုံးကို တစ်ကြိမ်တည်း တောင်းဆိုပြီး ဘာသာပြန်ပါ။';
+
+  @override
+  String get scanSegmentTranslate => 'အပိုင်းအလိုက် ဘာသာပြန်ပါ';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'ဘာသာပြန်ရန် အပိုင်းများကို တစ်ခုချင်း ရွေးချယ်ပါ။';
+
+  @override
+  String get scanTranslatingAll => 'အားလုံး ဘာသာပြန်နေသည်...';
+
+  @override
+  String get scanBulkTranslateButton => 'အားလုံး ဘာသာပြန်ပါ';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'ဘာသာပြန်ခွင့် အရေအတွက် မလုံလောက်ပါ။ လိုအပ်သည်- $needed ကြိမ်၊ ကျန်ရှိသည်- $remaining ကြိမ်';
+  }
+
+  @override
   String get combinedResult => 'ပေါင်းစပ်ရလဒ်';
 
   @override

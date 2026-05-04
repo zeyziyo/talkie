@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Negalima išversti, nes yra neapykantą kurstančių kalbų.",
   "errorOtherSafety": "Vertimas atsisakytas dėl AI saugos politikos.",
+  "errorQuotaExceeded": "Pasiekta dienos dirbtinio intelekto paslaugų kvota. Bandykite dar kartą vėliau arba rytoj.",
+  "errorSafetyPolicy": "Vertimas apribotas dėl AI saugos politikos.",
+  "copyOriginal": "Kopijuoti originalą",
+  "originalCopied": "Originalus tekstas nukopijuotas.",
   "errorProfanity": "Negalima išversti, nes yra necenzūrinių žodžių.",
   "errorSelectCategory": "Pirmiausia pasirinkite žodį ar sakinį!",
   "errorSexualContent": "Negalima išversti, nes yra seksualinio turinio.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Originalus tekstas",
   "saving": "Išsaugoma...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Pasirinkite vaizdą, kurį norite nuskaityti",
+  "scanNoMatch": "Nuotraukoje nerasta teksto, atitinkančio nustatytą mokymosi kalbą. Patikrinkite kalbos nustatymus.",
   "scanNotSupported": "Ši kalba nepalaiko nuskaitymo funkcijos. OCR šiuo metu palaiko tik lotynų, kinų, devanagari (hindi ir kt.), japonų ir korėjiečių rašmenis.",
   "scanLabel": "Skenuoti",
   "score": "Tikslumas: {score}%",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "Apginkite savo bazę sakydami žodžius prieš atvykstant priešui.",
   "wordDefenseTitle": "Žodžių gynyba",
   "wordModeLabel": "Žodžių režimas",
-  "yourPronunciation": "Jūsų tarimas"
+  "scanTranslateMethodTitle": "Pasirinkite vertimo būdą",
+  "scanTranslateMethodSubtitle": "Kaip norite versti atpažintą tekstą?",
+  "scanBulkTranslate": "Visas vertimas paketu",
+  "scanBulkTranslateDesc": "Visą tekstą išverskite vienu užklausa",
+  "scanSegmentTranslate": "Atskirų segmentų vertimas",
+  "scanSegmentTranslateDesc": "Pasirinkite segmentus, kuriuos norite versti atskirai",
+  "scanTranslatingAll": "Verčiamas visas tekstas...",
+  "scanBulkTranslateButton": "Versti visą",
+  "scanInsufficientLimit": "Nepakanka vertimų. Reikia: {needed}, liko: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Apjungtas rezultatas",
+  "errorLimitReached": "Nepakanka vertimų. Ar norite peržiūrėti skelbimą ir gauti 10 papildomų vertimų?",
+  "yourPronunciation": "Jūsų tarimas",
+  "helpLimitDetails": "💡 [Vertimų limito informacija]\nKasdien vidurnaktį suteikiama 20 nemokamų vertimų. Jei visus išnaudosite, galite nedelsdami gauti 10 papildomų vertimų peržiūrėję skelbimą.",
+  "scanDetails": "• Įkelkite vaizdus iš fotoaparato arba galerijos, kad išgautumėte ir išverstumėte tekstą.\n• Galite paliesti ir atskirai išversti kelis sakinius, esančius vienoje nuotraukoje.\n• Jei trūksta vertimų, galite nedelsdami peržiūrėti skelbimą ir gauti 10 papildomų vertimų."
 }

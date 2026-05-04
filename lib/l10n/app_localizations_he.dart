@@ -1223,6 +1223,35 @@ class AppLocalizationsHe extends AppLocalizations {
   String get wordModeLabel => 'מצב מילים';
 
   @override
+  String get scanTranslateMethodTitle => 'בחירת שיטת תרגום';
+
+  @override
+  String get scanTranslateMethodSubtitle => 'כיצד תרצה לתרגם את הטקסט שזוהה?';
+
+  @override
+  String get scanBulkTranslate => 'תרגום אצווה מלא';
+
+  @override
+  String get scanBulkTranslateDesc => 'תרגם את כל הטקסט בפעולה אחת';
+
+  @override
+  String get scanSegmentTranslate => 'תרגום מקטעים בודדים';
+
+  @override
+  String get scanSegmentTranslateDesc => 'בחר מקטעים בודדים לתרגום';
+
+  @override
+  String get scanTranslatingAll => 'מתרגם הכל...';
+
+  @override
+  String get scanBulkTranslateButton => 'תרגום מלא';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'אין לך מספיק תרגומים. נדרש: $needed, נותרו: $remaining';
+  }
+
+  @override
   String get combinedResult => 'תוצאה משולבת';
 
   @override

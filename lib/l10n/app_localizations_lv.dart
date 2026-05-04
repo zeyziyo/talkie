@@ -1250,6 +1250,38 @@ class AppLocalizationsLv extends AppLocalizations {
   String get wordModeLabel => 'Vārdu režīms';
 
   @override
+  String get scanTranslateMethodTitle => 'Izvēlieties tulkošanas metodi';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Kā vēlaties tulkot atpazīto tekstu?';
+
+  @override
+  String get scanBulkTranslate => 'Pilna apjoma tulkošana';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'Tulkojiet visu tekstu ar vienu pieprasījumu';
+
+  @override
+  String get scanSegmentTranslate => 'Individuāla tulkošana';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Atlasiet tulkojamus segmentus atsevišķi';
+
+  @override
+  String get scanTranslatingAll => 'Tulko visu...';
+
+  @override
+  String get scanBulkTranslateButton => 'Tulkot visu';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Nepietiek tulkošanas reižu. Nepieciešams: $needed, atlikušo: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Apvienotais rezultāts';
 
   @override

@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Ne morem prevesti, ker vsebuje sovražni govor.",
   "errorOtherSafety": "Prevajanje je bilo zavrnjeno s strani varnostnega pravilnika AI.",
+  "errorQuotaExceeded": "Dnevna kvota za storitev umetne inteligence je bila presežena. Poskusite znova pozneje ali jutri.",
+  "errorSafetyPolicy": "Prevajanje je omejeno zaradi varnostnih pravilnikov AI.",
+  "copyOriginal": "Kopiraj izvirnik",
+  "originalCopied": "Izvirno besedilo je bilo kopirano.",
   "errorProfanity": "Ne morem prevesti, ker vsebuje kletvice.",
   "errorSelectCategory": "Najprej izberite besedo ali stavek!",
   "errorSexualContent": "Ne morem prevesti, ker vsebuje seksualno vsebino.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Izvirno besedilo",
   "saving": "Shranjujem ...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Izberite sliko za skeniranje",
+  "scanNoMatch": "Na fotografiji ni bilo mogoče najti besedila, ki bi ustrezalo nastavljenemu učnemu jeziku. Preverite nastavitve jezika.",
   "scanNotSupported": "Ta jezik ne podpira funkcije skeniranja. OCR trenutno podpira samo latinične, kitajske, devanagarijske (npr. hindijske), japonske in korejske znake.",
   "scanLabel": "Skeniraj",
   "score": "Točnost: {score} %",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "Branite bazo tako, da izgovorite besede, preden prispejo sovražniki.",
   "wordDefenseTitle": "Besedna obramba",
   "wordModeLabel": "Besedni način",
-  "yourPronunciation": "Moja izgovorjava"
+  "scanTranslateMethodTitle": "Izberite način prevajanja",
+  "scanTranslateMethodSubtitle": "Kako želite prevesti prepoznano besedilo?",
+  "scanBulkTranslate": "Množično prevajanje celote",
+  "scanBulkTranslateDesc": "Prevedite celotno besedilo z eno zahtevo.",
+  "scanSegmentTranslate": "Posamezno prevajanje",
+  "scanSegmentTranslateDesc": "Izberite segmente za prevajanje posamezno.",
+  "scanTranslatingAll": "Prevajanje celote...",
+  "scanBulkTranslateButton": "Prevedi vse",
+  "scanInsufficientLimit": "Nimate dovolj prevodov. Potrebno: {needed}, preostalo: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Združeni rezultat",
+  "errorLimitReached": "Nimate dovolj prevodov. Si želite ogledati oglas in dobiti 10 dodatnih prevodov?",
+  "yourPronunciation": "Moja izgovorjava",
+  "helpLimitDetails": "💡 [Navodila za omejitev prevodov]\nVsak dan opolnoči je na voljo 20 brezplačnih prevodov. Če jih porabite, si lahko z ogledom oglasa takoj zagotovite 10 dodatnih prevodov.",
+  "scanDetails": "• Naložite slike iz fotoaparata ali galerije, da izluščite in prevedete besedilo.\n• Več stavkov na eni fotografiji lahko prevedete posamezno s tapkanjem.\n• Če nimate dovolj prevodov, si jih lahko takoj zagotovite 10 dodatnih z ogledom oglasa."
 }

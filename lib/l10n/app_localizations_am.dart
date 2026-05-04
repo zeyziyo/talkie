@@ -1226,6 +1226,35 @@ class AppLocalizationsAm extends AppLocalizations {
   String get wordModeLabel => 'የቃል ሁነታ';
 
   @override
+  String get scanTranslateMethodTitle => 'የትርጉም ዘዴ ምረጥ';
+
+  @override
+  String get scanTranslateMethodSubtitle => 'የታወቀውን ጽሑፍ እንዴት መተርጎም ይፈልጋሉ?';
+
+  @override
+  String get scanBulkTranslate => 'ሁሉንም በአንድ ጊዜ መተርጎም';
+
+  @override
+  String get scanBulkTranslateDesc => 'ሁሉንም ጽሑፍ በአንድ ጥያቄ መተርጎም';
+
+  @override
+  String get scanSegmentTranslate => 'በክፍል መተርጎም';
+
+  @override
+  String get scanSegmentTranslateDesc => 'ለመተርጎም ክፍሎችን ለየብቻ ምረጥ';
+
+  @override
+  String get scanTranslatingAll => 'ሁሉንም በመተርጎም ላይ...';
+
+  @override
+  String get scanBulkTranslateButton => 'ሁሉንም ተርጉም';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'የሚቀሩ ትርጉሞች በቂ አይደሉም። የሚያስፈልግ: $needed፣ የቀረ: $remaining';
+  }
+
+  @override
   String get combinedResult => 'የተዋሃደ ውጤት';
 
   @override

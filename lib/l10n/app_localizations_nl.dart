@@ -1248,6 +1248,37 @@ class AppLocalizationsNl extends AppLocalizations {
   String get wordModeLabel => 'Woordmodus';
 
   @override
+  String get scanTranslateMethodTitle => 'Vertaalmethode selecteren';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Hoe wil je de herkende tekst vertalen?';
+
+  @override
+  String get scanBulkTranslate => 'Volledige batchvertaling';
+
+  @override
+  String get scanBulkTranslateDesc => 'Vertaal de volledige tekst in één keer';
+
+  @override
+  String get scanSegmentTranslate => 'Individuele vertaling';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'Selecteer afzonderlijk de segmenten die je wilt vertalen';
+
+  @override
+  String get scanTranslatingAll => 'Alles aan het vertalen...';
+
+  @override
+  String get scanBulkTranslateButton => 'Volledig vertalen';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Onvoldoende vertalingen beschikbaar. Vereist: $needed, resterend: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Gecombineerd resultaat';
 
   @override

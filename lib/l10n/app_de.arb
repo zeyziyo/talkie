@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Kann aufgrund von Hassreden nicht übersetzt werden.",
   "errorOtherSafety": "Die Übersetzung wurde aufgrund der KI-Sicherheitsrichtlinien abgelehnt.",
+  "errorQuotaExceeded": "Das tägliche Kontingent für den KI-Dienst ist erschöpft. Bitte versuche es später oder morgen erneut.",
+  "errorSafetyPolicy": "Die Übersetzung wurde aufgrund der KI-Sicherheitsrichtlinien eingeschränkt.",
+  "copyOriginal": "Original kopieren",
+  "originalCopied": "Originaltext kopiert.",
   "errorProfanity": "Kann aufgrund von Obszönitäten nicht übersetzt werden.",
   "errorSelectCategory": "Bitte zuerst Wort oder Satz wählen!",
   "errorSexualContent": "Kann aufgrund von anstößigen Inhalten nicht übersetzt werden.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Originaltext",
   "saving": "Speichern...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Wähle ein Bild zum Scannen",
+  "scanNoMatch": "Es konnte kein Text gefunden werden, der mit der in den Einstellungen festgelegten Lernsprache übereinstimmt. Überprüfe deine Spracheinstellungen.",
   "scanNotSupported": "Diese Sprache unterstützt die Scanfunktion nicht. OCR unterstützt derzeit nur lateinische, chinesische, Devanagari- (Hindi usw.), japanische und koreanische Schriftzeichen.",
   "scanLabel": "Scannen",
   "score": "Genauigkeit: {score}%",
@@ -751,5 +757,28 @@
   "wordDefenseDesc": "Verteidigen Sie Ihre Basis, indem Sie Wörter sagen, bevor die Feinde ankommen.",
   "wordDefenseTitle": "Wortverteidigung",
   "wordModeLabel": "Wort-Modus",
-  "yourPronunciation": "Deine Aussprache"
+  "scanTranslateMethodTitle": "Übersetzungsmethode wählen",
+  "scanTranslateMethodSubtitle": "Wie sollen erkannte Texte übersetzt werden?",
+  "scanBulkTranslate": "Gesamtübersetzung",
+  "scanBulkTranslateDesc": "Übersetze den gesamten Text mit einer einzigen Anfrage",
+  "scanSegmentTranslate": "Einzelübersetzung",
+  "scanSegmentTranslateDesc": "Wähle Segmente einzeln zum Übersetzen aus",
+  "scanTranslatingAll": "Gesamtübersetzung läuft...",
+  "scanBulkTranslateButton": "Gesamtübersetzung",
+  "scanInsufficientLimit": "Nicht genügend Übersetzungen verfügbar. Benötigt: {needed}, Verbleibend: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Kombiniertes Ergebnis",
+  "errorLimitReached": "Nicht genügend Übersetzungen verfügbar. Möchtest du dir eine Werbung ansehen, um 10 weitere zu erhalten?",
+  "yourPronunciation": "Deine Aussprache",
+  "helpLimitDetails": "💡 [Informationen zum Übersetzungslimit]\nTäglich werden 20 kostenlose Übersetzungen um Mitternacht bereitgestellt. Wenn alle aufgebraucht sind, kannst du dir eine Werbung ansehen, um sofort 10 zusätzliche Übersetzungen zu erhalten.",
+  "scanDetails": "• Lade Bilder aus der Kamera oder Galerie hoch, um Text zu extrahieren und zu übersetzen.\n• Du kannst einzelne Sätze in einem Bild antippen, um sie einzeln zu übersetzen.\n• Wenn du nicht genügend Übersetzungen hast, kannst du dir sofort eine Werbung ansehen, um 10 weitere zu erhalten."
 }

@@ -1246,6 +1246,38 @@ class AppLocalizationsHu extends AppLocalizations {
   String get wordModeLabel => 'Szó mód';
 
   @override
+  String get scanTranslateMethodTitle => 'Fordítási mód kiválasztása';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'Hogyan fordítsuk le a felismert szöveget?';
+
+  @override
+  String get scanBulkTranslate => 'Teljes kötegelt fordítás';
+
+  @override
+  String get scanBulkTranslateDesc =>
+      'A teljes szöveg lefordítása egyetlen kéréssel';
+
+  @override
+  String get scanSegmentTranslate => 'Egyedi fordítás';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'A lefordítandó szegmensek egyedi kiválasztása';
+
+  @override
+  String get scanTranslatingAll => 'Teljes fordítás folyamatban...';
+
+  @override
+  String get scanBulkTranslateButton => 'Teljes fordítás';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'Nincs elég fordítási keret. Szükséges: $needed, maradt: $remaining';
+  }
+
+  @override
   String get combinedResult => 'Összevont eredmény';
 
   @override

@@ -1,55 +1,41 @@
 # Title
-Talkie: AI Tutor de Idiomas
+Talkie: Tutor de Idiomas AI (Conversación y Traducción)
 
 # Short Description (80 chars)
-Domina idiomas con IA. Práctica oral, traducción y repaso automático.
+Practica conversación real con AI. Traducción instantánea, entrenamiento de habla y revisión automática.
 
 # Full Description
-Desbloquea tu potencial lingüístico con Talkie, el compañero inteligente diseñado para practicar la expresión oral.
+Desbloquea tu potencial lingüístico con Talkie, el compañero inteligente de aprendizaje de idiomas diseñado para la práctica del habla.
 
-**Características Principales:**
+**Funciones Clave:**
 
-🎙️ **Práctica Oral en Tiempo Real:**
-Talkie escucha tu pronunciación y te ofrece un espacio seguro para practicar. Usa el "Modo Hablar" con intervalos personalizables (3s a 60s) para practicar shadowing y repetición a tu propio ritmo.
+🎙️ **Práctica de Habla en Tiempo Real (Speaking Mode):**
+La IA escucha tu pronunciación y evalúa tu precisión. Escucha voces nativas, síguelas y obtén comentarios en tiempo real con puntuaciones de 0 a 100. Practica infinitamente a tu propio ritmo.
 
-🔍 **Búsqueda Inteligente y Traducción:**
-Traduce texto instantáneamente entre idiomas (coreano, inglés, japonés, chino y más). Talkie detecta automáticamente oraciones similares que ya has estudiado para evitar duplicados.
+🔍 **Búsqueda y Traducción Inteligente:**
+Traduce instantáneamente texto en más de 80 idiomas. La IA recomienda nuevas oraciones de estudio diariamente, y puedes guardar instantáneamente las traducciones en tu cuaderno de estudio personalizado.
 
-📖 **Repaso Sistemático:**
-No aprendas solo una vez. Guarda tus traducciones y materiales de estudio. Repásalos sistemáticamente para asegurar la retención a largo plazo.
+📷 **Traducción por Escaneo AI (OCR):**
+¡No más escribir! Simplemente toma una foto o elige una de tu galería. Talkie reconoce instantáneamente el texto dentro de las imágenes y lo traduce a tu idioma de destino. Simplemente toca una oración para escuchar la pronunciación y agregarla a tu lista de estudio.
 
-📄 **Materiales de Estudio Personalizados:**
-Importa tus propias listas de estudio mediante archivos JSON. Adapta tu experiencia de aprendizaje a tus libros de texto o áreas de interés.
+📖 **Revisión Sistemática:**
+No aprendas solo una vez. Guarda tus traducciones y materiales de estudio. Revísalos sistemáticamente para asegurar la retención a largo plazo. 
 
-**🌍 Soporte Multilingüe (43 Idiomas):**
-Talkie soporta traducción y aprendizaje en 43 idiomas:
+**🌍 Soporte para más de 80 idiomas en todo el mundo:**
+Talkie ahora ofrece un 100% de integridad para más de 80 idiomas en todo el mundo, con auditorías completas de localización:
 - **Asia Oriental:** Coreano, Japonés, Chino (Simplificado y Tradicional)
-- **Europa:** Inglés, Español, Francés, Alemán, Italiano, Portugués, Ruso, etc.
-- **Asia del Sur:** Hindi, Bengalí, Tamil, etc.
-- **Sudeste Asiático:** Indonesio, Vietnamita, Tailandés, etc.
-- **Oriente Medio y África:** Árabe, Turco, Swahili, etc.
+- **Europa:** Inglés, Español, Francés, Alemán, Italiano, Portugués, Ruso, Polaco, Ucraniano, Holandés, Griego, Checo, Rumano, Sueco, Danés, Finlandés, Noruego, Húngaro
+- **Asia del Sur:** Hindi, Bengalí, Tamil, Telugu, Maratí, Urdu, Gujarati, Kannada, Malayalam, Punjabi
+- **Sudeste Asiático:** Indonesio, Vietnamita, Tailandés, Filipino, Malayo
+- **Medio Oriente y África:** Árabe, Turco, Persa, Hebreo, Swahili, Afrikaans
 
 **Planes Flexibles:**
-- **Gratis (Free):** Comienza con 5 traducciones diarias. Mira un anuncio para **recargar 5 más al instante** y sigue aprendiendo gratis.
-- **Pro:** Actualiza para eliminar anuncios y obtén 1.500 traducciones mensuales (promedio 50/día) para estudiar sin interrupciones.
-
-## Ejemplo de Material de Estudio (JSON)
-Crea tu propia lista (`my_study.json`) e impórtala:
-```json
-{
-  "source_language": "en",
-  "target_language": "es",
-  "subject": "Frases de viaje",
-  "entries": [
-    {"source_text": "Where is the station?", "target_text": "¿Dónde está la estación?"},
-    {"source_text": "How much is this?", "target_text": "¿Cuánto cuesta esto?"}
-  ]
-}
-```
+- **Gratis:** Comienza con 20 traducciones diarias. Mira un anuncio para recargar **10 traducciones más** al instante.
+- **Pro:** Actualiza para eliminar anuncios y obtén 1,500 traducciones mensuales (promedio de 50/día) sin interrupciones.
 
 **¿Por qué Talkie?**
-- **Privacidad Primero:** Tus datos de voz se procesan de forma segura y no se almacenan permanentemente.
-- **Offline First:** Tus registros de estudio viven en tu dispositivo.
-- **Interfaz Limpia:** Una interfaz sin distracciones enfocada en tu aprendizaje.
+- **Privacidad Primero:** Tus datos de voz se procesan de forma segura y no se almacenan de forma permanente.
+- **Local Primero:** Tus registros de estudio viven en tu dispositivo.
+- **Diseño Premium:** Interfaz 3D de glassmorphism índigo-púrpura centrada en tu aprendizaje.
 
-¡Empieza a hablar con confianza hoy mismo!
+¡Comienza a hablar con confianza hoy mismo!

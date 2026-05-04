@@ -757,6 +757,25 @@
   "wordDefenseDesc": "Düşmənlər gəlmədən sözləri deyərək bazanı müdafiə edin.",
   "wordDefenseTitle": "Söz Müdafiəsi",
   "wordModeLabel": "Söz Rejimi",
+  "scanTranslateMethodTitle": "Tərcümə üsulunu seçin",
+  "scanTranslateMethodSubtitle": "Tanınan mətni necə tərcümə etməli?",
+  "scanBulkTranslate": "Toplu tərcümə",
+  "scanBulkTranslateDesc": "Bütün mətni bir dəfəyə tərcümə edin",
+  "scanSegmentTranslate": "Ayrı-ayrı tərcümə",
+  "scanSegmentTranslateDesc": "Tərcümə etmək üçün seqmentləri ayrı-ayrılıqda seçin",
+  "scanTranslatingAll": "Hamısı tərcümə olunur...",
+  "scanBulkTranslateButton": "Hamısını tərcümə et",
+  "scanInsufficientLimit": "Tərcümə sayı yetərli deyil. Lazım olan: {needed}, Qalan: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
   "combinedResult": "Birləşdirilmiş nəticə",
   "errorLimitReached": "Tərcümə sayınız bitdi. Reklama baxaraq 10 tərcümə əldə etmək istəyirsiniz?",
   "yourPronunciation": "Mənim Tələffüzüm",

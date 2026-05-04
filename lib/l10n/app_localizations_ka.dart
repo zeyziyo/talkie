@@ -1253,6 +1253,37 @@ class AppLocalizationsKa extends AppLocalizations {
   String get wordModeLabel => 'სიტყვების რეჟიმი';
 
   @override
+  String get scanTranslateMethodTitle => 'თარგმნის მეთოდის არჩევა';
+
+  @override
+  String get scanTranslateMethodSubtitle =>
+      'როგორ ვთარგმნოთ აღმოჩენილი ტექსტი?';
+
+  @override
+  String get scanBulkTranslate => 'მთლიანი პაკეტური თარგმნა';
+
+  @override
+  String get scanBulkTranslateDesc => 'მთლიანი ტექსტის თარგმნა ერთი მოთხოვნით';
+
+  @override
+  String get scanSegmentTranslate => 'ცალკეული თარგმნა';
+
+  @override
+  String get scanSegmentTranslateDesc =>
+      'აირჩიეთ სეგმენტები სათარგმნად ცალ-ცალკე';
+
+  @override
+  String get scanTranslatingAll => 'მთლიანი თარგმნა მიმდინარეობს...';
+
+  @override
+  String get scanBulkTranslateButton => 'მთლიანი თარგმნა';
+
+  @override
+  String scanInsufficientLimit(int needed, int remaining) {
+    return 'თარგმნის რაოდენობა არასაკმარისია. საჭიროა: $needed, დარჩენილია: $remaining';
+  }
+
+  @override
   String get combinedResult => 'გაერთიანებული შედეგი';
 
   @override
