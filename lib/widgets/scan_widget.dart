@@ -56,8 +56,8 @@ class _ScanWidgetState extends State<ScanWidget> {
     // 일괄 번역 선택 시 잔여 횟수 사전 확인
     Future<void> onBulkSelected() async {
       if (!mounted) return;
-      Navigator.of(context).pop();
       final deficit = await appState.checkBulkLimit();
+
       if (deficit != null && mounted) {
         // 잔여 횟수 부족 경고
         final needed = deficit['needed']!;
