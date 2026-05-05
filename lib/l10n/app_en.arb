@@ -759,6 +759,7 @@
   "wordModeLabel": "Word Mode",
   "scanViewSegments": "Show Individual List",
   "scanViewBulk": "Show Combined Text",
+  "scanAdRefillNotice": "To refill credits, please watch a video ad using the button below. Note that clicking banner ads at the bottom does not grant rewards.",
   "scanTranslateMethodTitle": "Choose Translation Method",
   "scanTranslateMethodSubtitle": "How would you like to translate the extracted text?",
   "scanBulkTranslate": "Translate All at Once",

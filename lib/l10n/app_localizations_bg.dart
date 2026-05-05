@@ -1259,6 +1259,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get scanViewBulk => 'Преглед на обобщени резултати';
 
   @override
+  String get scanAdRefillNotice =>
+      'Натиснете бутона по-долу, за да гледате реклама и да презаредите броя на преводите. Кликването върху банерни реклами в долната част на екрана не дава награда за презареждане.';
+
+  @override
   String get scanTranslateMethodTitle => 'Избор на метод за превод';
 
   @override

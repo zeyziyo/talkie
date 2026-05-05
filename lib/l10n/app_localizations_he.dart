@@ -1229,6 +1229,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get scanViewBulk => 'הצגת תוצאות משולבות';
 
   @override
+  String get scanAdRefillNotice =>
+      'למילוי מכסת התרגומים, לחצו על הכפתור למטה כדי לצפות בפרסומת. לחיצה על באנר הפרסומת בתחתית המסך אינה מזכה בפרס מילוי.';
+
+  @override
   String get scanTranslateMethodTitle => 'בחירת שיטת תרגום';
 
   @override

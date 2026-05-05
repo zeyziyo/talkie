@@ -1252,6 +1252,10 @@ class AppLocalizationsHr extends AppLocalizations {
   String get scanViewBulk => 'Prikaz skupnih rezultata';
 
   @override
+  String get scanAdRefillNotice =>
+      'Za ponovno punjenje broja prijevoda, pritisnite gumb ispod i pogledajte oglas. Klikanje na oglas s natpisom na dnu zaslona ne daje nagradu za ponovno punjenje.';
+
+  @override
   String get scanTranslateMethodTitle => 'Odaberite način prevođenja';
 
   @override

@@ -1254,6 +1254,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get scanViewBulk => 'Gecombineerde resultatenweergave';
 
   @override
+  String get scanAdRefillNotice =>
+      'Om je vertaalbeurten aan te vullen, tik je op de onderstaande knop om een advertentie te bekijken. Het klikken op de banneradvertentie onderaan het scherm geeft geen herlaadbeloning.';
+
+  @override
   String get scanTranslateMethodTitle => 'Vertaalmethode selecteren';
 
   @override

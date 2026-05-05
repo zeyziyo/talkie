@@ -759,6 +759,7 @@
   "wordModeLabel": "Word Mode",
   "scanViewSegments": "Tingnan nang Isa-isa",
   "scanViewBulk": "Tingnan ang Pinagsama-sama",
+  "scanAdRefillNotice": "Para mapunan ang iyong mga pagsasalin, pakisuyong manood ng ad sa pamamagitan ng pagpindot sa buton sa ibaba. Ang pag-click sa mga banner ad sa ibaba ng screen ay hindi magbibigay ng mga reward sa pagpuno.",
   "scanTranslateMethodTitle": "Piliin ang Paraan ng Pagsasalin",
   "scanTranslateMethodSubtitle": "Paano isasalin ang nakilalang teksto?",
   "scanBulkTranslate": "Buong Pagsasalin nang Maramihan",

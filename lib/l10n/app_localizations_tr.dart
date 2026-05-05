@@ -1253,6 +1253,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get scanViewBulk => 'Toplu Sonuç Görünümü';
 
   @override
+  String get scanAdRefillNotice =>
+      'Çeviri hakkı kazanmak için aşağıdaki butona tıklayarak bir reklam izleyin. Ekranın altındaki banner reklamlarına tıklamak çeviri hakkı kazandırmaz.';
+
+  @override
   String get scanTranslateMethodTitle => 'Çeviri Yöntemi Seç';
 
   @override

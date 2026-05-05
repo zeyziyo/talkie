@@ -1253,6 +1253,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get scanViewBulk => 'Emaitza bateratuak';
 
   @override
+  String get scanAdRefillNotice =>
+      'Itzuliak gehitzeko, ikusi iragarkia beheko botoian klik eginez. Pantailaren behealdeko banner iragarkiak ez dizu itzulirik emango.';
+
+  @override
   String get scanTranslateMethodTitle => 'Itzultzeko metodoa aukeratu';
 
   @override

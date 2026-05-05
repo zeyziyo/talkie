@@ -1248,6 +1248,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get scanViewBulk => 'Show Combined Text';
 
   @override
+  String get scanAdRefillNotice =>
+      'To refill credits, please watch a video ad using the button below. Note that clicking banner ads at the bottom does not grant rewards.';
+
+  @override
   String get scanTranslateMethodTitle => 'Choose Translation Method';
 
   @override

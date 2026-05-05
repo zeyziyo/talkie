@@ -1232,6 +1232,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get scanViewBulk => 'ውህድ ውጤት ዕይታ';
 
   @override
+  String get scanAdRefillNotice =>
+      'የትርጉም ሙላትን ለመሙላት ከታች ያለውን ቁልፍ በመጫን ማስታወቂያ ይመልከቱ። ከስክሪኑ ግርጌ ላይ የሚታየውን የማስታወቂያ ሰንደቅ ላይ ጠቅ ማድረግ የሞሉ ሽልማቶችን አይሰጥም።';
+
+  @override
   String get scanTranslateMethodTitle => 'የትርጉም ዘዴ ምረጥ';
 
   @override

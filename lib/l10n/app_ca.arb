@@ -759,6 +759,7 @@
   "wordModeLabel": "Mode de paraules",
   "scanViewSegments": "Vista de llista individual",
   "scanViewBulk": "Vista de resultats consolidats",
+  "scanAdRefillNotice": "Per recarregar les traduccions, prem el botó de sota per veure un anunci. Clicar als banners de publicitat de la part inferior de la pantalla no et donarà recompenses.",
   "scanTranslateMethodTitle": "Selecciona el mètode de traducció",
   "scanTranslateMethodSubtitle": "Com vols traduir el text reconegut?",
   "scanBulkTranslate": "Traducció per lots completa",

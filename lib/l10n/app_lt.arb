@@ -759,6 +759,7 @@
   "wordModeLabel": "Žodžių režimas",
   "scanViewSegments": "Atskiros eilutės rodinys",
   "scanViewBulk": "Integruoto rezultato rodinys",
+  "scanAdRefillNotice": "Norėdami papildyti vertimų skaičių, spustelėkite žemiau esantį mygtuką ir žiūrėkite skelbimą. Banner skelbimų spustelėjimas ekrano apačioje nesuteiks papildymo.",
   "scanTranslateMethodTitle": "Pasirinkite vertimo būdą",
   "scanTranslateMethodSubtitle": "Kaip norite versti atpažintą tekstą?",
   "scanBulkTranslate": "Visas vertimas paketu",

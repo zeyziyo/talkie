@@ -1254,6 +1254,10 @@ class AppLocalizationsTe extends AppLocalizations {
   String get scanViewBulk => 'సంగ్రహ ఫలితాల వీక్షణ';
 
   @override
+  String get scanAdRefillNotice =>
+      '\"అనువాదాల సంఖ్యను నింపుకోవడానికి, దయచేసి ప్రకటన చూడటానికి దిగువ బటన్‌ను నొక్కండి. స్క్రీన్ దిగువన ఉన్న బ్యానర్ ప్రకటనలపై క్లిక్ చేయడం వలన రీఫిల్ రివార్డ్‌లు అందవు.\"';
+
+  @override
   String get scanTranslateMethodTitle => 'అనువాద పద్ధతిని ఎంచుకోండి';
 
   @override

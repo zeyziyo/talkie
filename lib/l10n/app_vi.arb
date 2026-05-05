@@ -759,6 +759,7 @@
   "wordModeLabel": "Chế độ từ",
   "scanViewSegments": "Xem danh sách riêng lẻ",
   "scanViewBulk": "Xem kết quả tổng hợp",
+  "scanAdRefillNotice": "Nhấn nút bên dưới để xem quảng cáo và nạp thêm lượt dịch. Việc nhấp vào quảng cáo biểu ngữ ở cuối màn hình sẽ không được thưởng thêm lượt dịch.",
   "scanTranslateMethodTitle": "Chọn phương pháp dịch",
   "scanTranslateMethodSubtitle": "Bạn muốn dịch văn bản đã nhận dạng như thế nào?",
   "scanBulkTranslate": "Dịch hàng loạt toàn bộ",

@@ -1257,6 +1257,10 @@ class AppLocalizationsAz extends AppLocalizations {
   String get scanViewBulk => 'Birləşdirilmiş nəticələrə baxış';
 
   @override
+  String get scanAdRefillNotice =>
+      'Tərcümə sayını doldurmaq üçün aşağıdakı düyməyə basaraq reklama baxın. Ekranın altındakı banner reklamına klikləmək doldurma mükafatı vermir.';
+
+  @override
   String get scanTranslateMethodTitle => 'Tərcümə üsulunu seçin';
 
   @override

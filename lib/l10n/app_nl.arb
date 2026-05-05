@@ -759,6 +759,7 @@
   "wordModeLabel": "Woordmodus",
   "scanViewSegments": "Individuele lijstweergave",
   "scanViewBulk": "Gecombineerde resultatenweergave",
+  "scanAdRefillNotice": "Om je vertaalbeurten aan te vullen, tik je op de onderstaande knop om een advertentie te bekijken. Het klikken op de banneradvertentie onderaan het scherm geeft geen herlaadbeloning.",
   "scanTranslateMethodTitle": "Vertaalmethode selecteren",
   "scanTranslateMethodSubtitle": "Hoe wil je de herkende tekst vertalen?",
   "scanBulkTranslate": "Volledige batchvertaling",

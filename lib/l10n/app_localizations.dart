@@ -2526,6 +2526,12 @@ abstract class AppLocalizations {
   /// **'통합 결과 보기'**
   String get scanViewBulk;
 
+  /// No description provided for @scanAdRefillNotice.
+  ///
+  /// In ko, this message translates to:
+  /// **'번역 횟수를 충전하려면 아래 버튼을 눌러 광고를 시청해 주세요. 화면 하단의 배너 광고 클릭은 충전 보상을 제공하지 않습니다.'**
+  String get scanAdRefillNotice;
+
   /// No description provided for @scanTranslateMethodTitle.
   ///
   /// In ko, this message translates to:

@@ -1251,6 +1251,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get scanViewBulk => 'Vaata koondtulemusi';
 
   @override
+  String get scanAdRefillNotice =>
+      'Reklaamide vaatamiseks vajutage allolevale nupule, et tõlkimiskordi juurde saada. Ekraani allosas oleva bännerreklaami klõpsamine ei anna laadimiseeliseid.';
+
+  @override
   String get scanTranslateMethodTitle => 'Vali tõlkemeetod';
 
   @override

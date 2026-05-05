@@ -1239,6 +1239,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get scanViewBulk => 'ดูผลลัพธ์รวม';
 
   @override
+  String get scanAdRefillNotice =>
+      'หากต้องการเติมจำนวนการแปล โปรดกดปุ่มด้านล่างเพื่อดูโฆษณา การคลิกโฆษณาแบนเนอร์ที่ด้านล่างของหน้าจอจะไม่ให้รางวัลการเติม';
+
+  @override
   String get scanTranslateMethodTitle => 'เลือกวิธีการแปล';
 
   @override

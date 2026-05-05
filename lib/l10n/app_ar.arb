@@ -759,6 +759,7 @@
   "wordModeLabel": "وضع الكلمات",
   "scanViewSegments": "عرض القائمة الفردية",
   "scanViewBulk": "عرض النتائج المجمعة",
+  "scanAdRefillNotice": "لملء عدد مرات الترجمة، يرجى النقر على الزر أدناه لمشاهدة الإعلان. لا يوفر النقر على الإعلانات المصورة في أسفل الشاشة مكافآت إعادة التعبئة.",
   "scanTranslateMethodTitle": "اختر طريقة الترجمة",
   "scanTranslateMethodSubtitle": "كيف تريد ترجمة النص الذي تم التعرف عليه؟",
   "scanBulkTranslate": "ترجمة مجمعة كاملة",

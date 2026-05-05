@@ -759,6 +759,7 @@
   "wordModeLabel": "Sõnarežiim",
   "scanViewSegments": "Vaata eraldi loendina",
   "scanViewBulk": "Vaata koondtulemusi",
+  "scanAdRefillNotice": "Reklaamide vaatamiseks vajutage allolevale nupule, et tõlkimiskordi juurde saada. Ekraani allosas oleva bännerreklaami klõpsamine ei anna laadimiseeliseid.",
   "scanTranslateMethodTitle": "Vali tõlkemeetod",
   "scanTranslateMethodSubtitle": "Kuidas tuvastatud teksti tõlkida?",
   "scanBulkTranslate": "Hulgatõlge",

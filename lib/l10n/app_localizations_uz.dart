@@ -1261,6 +1261,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get scanViewBulk => 'Birlashtirilgan natijalar ko\'rinishi';
 
   @override
+  String get scanAdRefillNotice =>
+      'Tarjima sonini toʻldirish uchun quyidagi tugmani bosib, reklamani tomosha qiling. Ekran pastidagi banner reklamani bosish toʻlov mukofotini bermaydi.';
+
+  @override
   String get scanTranslateMethodTitle => 'Tarjima usulini tanlang';
 
   @override

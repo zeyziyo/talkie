@@ -759,6 +759,7 @@
   "wordModeLabel": "Söz Rejimi",
   "scanViewSegments": "Fərdi siyahıya baxış",
   "scanViewBulk": "Birləşdirilmiş nəticələrə baxış",
+  "scanAdRefillNotice": "Tərcümə sayını doldurmaq üçün aşağıdakı düyməyə basaraq reklama baxın. Ekranın altındakı banner reklamına klikləmək doldurma mükafatı vermir.",
   "scanTranslateMethodTitle": "Tərcümə üsulunu seçin",
   "scanTranslateMethodSubtitle": "Tanınan mətni necə tərcümə etməli?",
   "scanBulkTranslate": "Toplu tərcümə",

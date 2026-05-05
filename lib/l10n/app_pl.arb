@@ -759,6 +759,7 @@
   "wordModeLabel": "Tryb słów",
   "scanViewSegments": "Widok pojedynczych list",
   "scanViewBulk": "Widok zbiorczych wyników",
+  "scanAdRefillNotice": "Aby odnowić liczbę tłumaczeń, kliknij poniższy przycisk i obejrzyj reklamę. Kliknięcie banera reklamowego na dole ekranu nie zapewnia nagrody za odnowienie.",
   "scanTranslateMethodTitle": "Wybierz metodę tłumaczenia",
   "scanTranslateMethodSubtitle": "Jak przetłumaczyć rozpoznany tekst?",
   "scanBulkTranslate": "Tłumaczenie zbiorcze",

@@ -1254,6 +1254,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get scanViewBulk => 'Združeni rezultati';
 
   @override
+  String get scanAdRefillNotice =>
+      'Za polnjenje števila prevodov pritisnite spodnji gumb in si oglejte oglas. Kliki na pasice oglasov na dnu zaslona ne zagotavljajo nagrad za polnjenje.';
+
+  @override
   String get scanTranslateMethodTitle => 'Izberite način prevajanja';
 
   @override

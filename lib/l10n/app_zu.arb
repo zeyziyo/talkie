@@ -759,6 +759,7 @@
   "wordModeLabel": "Imodi Yamagama",
   "scanViewSegments": "Buka uhlu ngalunye",
   "scanViewBulk": "Buka imiphumela ehlanganisiwe",
+  "scanAdRefillNotice": "Ukuze ugcwalise inani lezinguquko, sicela ucindezele inkinobho engezansi ukuze ubuke isikhangiso. Ukuchofoza izikhangiso zebhena ezingezansi kwesikrini akukuniki imivuzo yokugcwalisa.",
   "scanTranslateMethodTitle": "Khetha indlela yokuhumusha",
   "scanTranslateMethodSubtitle": "Uzohumusha kanjani umbhalo oboniwe?",
   "scanBulkTranslate": "Humusha konke ngesikhathi esisodwa",

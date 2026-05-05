@@ -797,6 +797,7 @@
   },
   "scanViewSegments": "개별 목록 보기",
   "scanViewBulk": "통합 결과 보기",
+  "scanAdRefillNotice": "번역 횟수를 충전하려면 아래 버튼을 눌러 광고를 시청해 주세요. 화면 하단의 배너 광고 클릭은 충전 보상을 제공하지 않습니다.",
   "scanTranslateMethodTitle": "번역 방법 선택",
   "scanTranslateMethodSubtitle": "인식된 텍스트를 어떻게 번역할까요?",
   "scanBulkTranslate": "전체 일괄 번역",

@@ -759,6 +759,7 @@
   "wordModeLabel": "ໂໝດຄຳສັບ",
   "scanViewSegments": "ເບິ່ງລາຍການແຍກ",
   "scanViewBulk": "ເບິ່ງຜົນໄດ້ຮັບລວມ",
+  "scanAdRefillNotice": "ກົດປຸ່ມຂ້າງລຸ່ມນີ້ເພື່ອເບິ່ງໂຄສະນາເພື່ອເຕີມເງິນຈໍານວນການແປຂອງທ່ານ. ການຄລິກໂຄສະນາແບນເນີຢູ່ດ້ານລຸ່ມຂອງໜ້າຈໍຈະບໍ່ໃຫ້ລາງວັນ.",
   "scanTranslateMethodTitle": "ເລືອກວິທີການແປ",
   "scanTranslateMethodSubtitle": "ທ່ານຕ້ອງການແປຂໍ້ຄວາມທີ່ກວດພົບແນວໃດ?",
   "scanBulkTranslate": "ແປເປັນຈໍານວນຫຼາຍ",

@@ -759,6 +759,7 @@
   "wordModeLabel": "ਸ਼ਬਦ ਮੋਡ",
   "scanViewSegments": "ਵੱਖਰੀ ਸੂਚੀ ਵਿਊ",
   "scanViewBulk": "ਇਕੱਠੇ ਨਤੀਜੇ ਵੇਖੋ",
+  "scanAdRefillNotice": "ਅਨੁਵਾਦਾਂ ਨੂੰ ਮੁੜ ਭਰਨ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਦਿੱਤੇ ਬਟਨ ਨੂੰ ਦਬਾ ਕੇ ਇੱਕ ਵਿਗਿਆਪਨ ਦੇਖੋ। ਸਕ੍ਰੀਨ ਦੇ ਹੇਠਾਂ ਬੈਨਰ ਵਿਗਿਆਪਨ 'ਤੇ ਕਲਿੱਕ ਕਰਨ ਨਾਲ ਕੋਈ ਇਨਾਮ ਨਹੀਂ ਮਿਲੇਗਾ।",
   "scanTranslateMethodTitle": "ਅਨੁਵਾਦ ਕਰਨ ਦਾ ਤਰੀਕਾ ਚੁਣੋ",
   "scanTranslateMethodSubtitle": "ਪਛਾਣੇ ਗਏ ਟੈਕਸਟ ਦਾ ਅਨੁਵਾਦ ਕਿਵੇਂ ਕਰੀਏ?",
   "scanBulkTranslate": "ਇਕੱਠਾ ਅਨੁਵਾਦ",

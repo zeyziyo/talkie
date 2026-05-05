@@ -759,6 +759,7 @@
   "wordModeLabel": "Hitzen modua",
   "scanViewSegments": "Banakako zerrenda",
   "scanViewBulk": "Emaitza bateratuak",
+  "scanAdRefillNotice": "Itzuliak gehitzeko, ikusi iragarkia beheko botoian klik eginez. Pantailaren behealdeko banner iragarkiak ez dizu itzulirik emango.",
   "scanTranslateMethodTitle": "Itzultzeko metodoa aukeratu",
   "scanTranslateMethodSubtitle": "Nola itzuli behar da hautemandako testua?",
   "scanBulkTranslate": "Osoko itzulpen masiboa",

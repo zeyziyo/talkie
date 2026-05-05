@@ -1259,6 +1259,10 @@ class AppLocalizationsKy extends AppLocalizations {
   String get scanViewBulk => 'Бириктирилген жыйынтык көрүнүшү';
 
   @override
+  String get scanAdRefillNotice =>
+      'Которууларды толуктоо үчүн төмөнкү баскычты басып, жарнаманы көрүңүз. Экрандын ылдый жагындагы баннердик жарнаманы чыкылдатуу толтуруу сыйлыктарын бербейт.';
+
+  @override
   String get scanTranslateMethodTitle => 'Которуу ыкмасын тандаңыз';
 
   @override

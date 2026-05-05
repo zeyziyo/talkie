@@ -759,6 +759,7 @@
   "wordModeLabel": "Ord-läge",
   "scanViewSegments": "Individuell listvy",
   "scanViewBulk": "Samlat resultat",
+  "scanAdRefillNotice": "För att fylla på dina översättningar, tryck på knappen nedan för att titta på en annons. Klick på bannerannonser längst ner på skärmen ger ingen påfyllningsbelöning.",
   "scanTranslateMethodTitle": "Välj översättningsmetod",
   "scanTranslateMethodSubtitle": "Hur vill du översätta den igenkända texten?",
   "scanBulkTranslate": "Översätt allt samtidigt",

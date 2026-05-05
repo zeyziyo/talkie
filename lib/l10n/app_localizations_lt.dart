@@ -1258,6 +1258,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get scanViewBulk => 'Integruoto rezultato rodinys';
 
   @override
+  String get scanAdRefillNotice =>
+      'Norėdami papildyti vertimų skaičių, spustelėkite žemiau esantį mygtuką ir žiūrėkite skelbimą. Banner skelbimų spustelėjimas ekrano apačioje nesuteiks papildymo.';
+
+  @override
   String get scanTranslateMethodTitle => 'Pasirinkite vertimo būdą';
 
   @override

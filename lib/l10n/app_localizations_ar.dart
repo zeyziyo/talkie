@@ -1241,6 +1241,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get scanViewBulk => 'عرض النتائج المجمعة';
 
   @override
+  String get scanAdRefillNotice =>
+      'لملء عدد مرات الترجمة، يرجى النقر على الزر أدناه لمشاهدة الإعلان. لا يوفر النقر على الإعلانات المصورة في أسفل الشاشة مكافآت إعادة التعبئة.';
+
+  @override
   String get scanTranslateMethodTitle => 'اختر طريقة الترجمة';
 
   @override

@@ -1246,6 +1246,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get scanViewBulk => 'Vis samlet resultat';
 
   @override
+  String get scanAdRefillNotice =>
+      'Trykk på knappen nedenfor og se en annonse for å fylle opp antall oversettelser. Klikk på bannerannonser nederst på skjermen gir ingen påfyllingsbelønning.';
+
+  @override
   String get scanTranslateMethodTitle => 'Velg oversettelsesmetode';
 
   @override

@@ -1266,6 +1266,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get scanViewBulk => 'Buka imiphumela ehlanganisiwe';
 
   @override
+  String get scanAdRefillNotice =>
+      'Ukuze ugcwalise inani lezinguquko, sicela ucindezele inkinobho engezansi ukuze ubuke isikhangiso. Ukuchofoza izikhangiso zebhena ezingezansi kwesikrini akukuniki imivuzo yokugcwalisa.';
+
+  @override
   String get scanTranslateMethodTitle => 'Khetha indlela yokuhumusha';
 
   @override

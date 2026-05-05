@@ -1208,6 +1208,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get scanViewBulk => '合并结果视图';
 
   @override
+  String get scanAdRefillNotice => '观看广告以补充翻译次数，请点击下方按钮。点击屏幕底部的横幅广告不会提供补充奖励。';
+
+  @override
   String get scanTranslateMethodTitle => '选择翻译方式';
 
   @override
@@ -2457,6 +2460,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get scanViewBulk => '合并结果视图';
+
+  @override
+  String get scanAdRefillNotice => '观看下方按钮的广告以补充翻译次数。点击屏幕底部的横幅广告不会提供补充奖励。';
 
   @override
   String get scanTranslateMethodTitle => '选择翻译方式';
@@ -3709,6 +3715,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get scanViewBulk => '整合結果檢視';
+
+  @override
+  String get scanAdRefillNotice => '觀看廣告以補充翻譯次數，請點擊下方按鈕。點擊螢幕下方的橫幅廣告不會提供補充獎勵。';
 
   @override
   String get scanTranslateMethodTitle => '選擇翻譯方式';

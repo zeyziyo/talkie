@@ -1258,6 +1258,10 @@ class AppLocalizationsMl extends AppLocalizations {
   String get scanViewBulk => 'സംയോജിത ഫല കാഴ്‌ച';
 
   @override
+  String get scanAdRefillNotice =>
+      'വിവർത്തന ശ്രമങ്ങൾ നിറയ്ക്കാൻ, താഴെയുള്ള ബട്ടൺ ടാപ്പ് ചെയ്ത് ഒരു പരസ്യം കാണുക. സ്ക്രീനിന്റെ താഴെയുള്ള ബാനർ പരസ്യം ക്ലിക്ക് ചെയ്യുന്നത് റീഫിൽ റിവാർഡ് നൽകില്ല.';
+
+  @override
   String get scanTranslateMethodTitle => 'വിവർത്തന രീതി തിരഞ്ഞെടുക്കുക';
 
   @override

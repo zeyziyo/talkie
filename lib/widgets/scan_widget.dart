@@ -101,7 +101,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                       SizedBox(width: 8.w),
                       Expanded(
                         child: Text(
-                          '하단 배너 광고 클릭이 아닌, 아래 버튼을 통해 광고를 시청해야 횟수가 충전됩니다.',
+                          l10n.scanAdRefillNotice,
                           style: TextStyle(
                               fontSize: 12.sp, color: Colors.blue.shade900),
                         ),

@@ -759,6 +759,7 @@
   "wordModeLabel": "Način rada riječi",
   "scanViewSegments": "Pregledaj pojedinačno",
   "scanViewBulk": "Pregledaj objedinjeno",
+  "scanAdRefillNotice": "Pritisnite dugme ispod da biste pogledali oglas i napunili broj prijevoda. Klikanje na oglas na dnu ekrana ne nudi nagrade za punjenje.",
   "scanTranslateMethodTitle": "Odaberite metod prevođenja",
   "scanTranslateMethodSubtitle": "Kako želite prevesti prepoznati tekst?",
   "scanBulkTranslate": "Grupno prevođenje",

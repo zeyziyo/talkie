@@ -1262,6 +1262,10 @@ class AppLocalizationsMk extends AppLocalizations {
   String get scanViewBulk => 'Приказ на збирни резултати';
 
   @override
+  String get scanAdRefillNotice =>
+      'За да го надополните бројот на преводи, притиснете го копчето подолу и погледнете реклама. Кликнувањето на банер-рекламата на дното на екранот не обезбедува надополнување.';
+
+  @override
   String get scanTranslateMethodTitle => 'Изберете метод за превод';
 
   @override

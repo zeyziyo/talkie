@@ -759,6 +759,7 @@
   "wordModeLabel": "Mode Kata",
   "scanViewSegments": "Lihat Daftar Terpisah",
   "scanViewBulk": "Lihat Hasil Gabungan",
+  "scanAdRefillNotice": "Untuk mengisi ulang jatah terjemahan, tekan tombol di bawah untuk menonton iklan. Mengeklik iklan banner di bagian bawah layar tidak akan memberikan hadiah pengisian ulang.",
   "scanTranslateMethodTitle": "Pilih Metode Terjemahan",
   "scanTranslateMethodSubtitle": "Bagaimana Anda ingin menerjemahkan teks yang dikenali?",
   "scanBulkTranslate": "Terjemahan Massal Penuh",

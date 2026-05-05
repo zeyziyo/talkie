@@ -1251,6 +1251,10 @@ class AppLocalizationsMs extends AppLocalizations {
   String get scanViewBulk => 'Lihat Hasil Gabungan';
 
   @override
+  String get scanAdRefillNotice =>
+      'Untuk menambah bilangan terjemahan, sila tonton iklan dengan menekan butang di bawah. Mengklik iklan banner di bahagian bawah skrin tidak akan memberikan ganjaran pengisian semula.';
+
+  @override
   String get scanTranslateMethodTitle => 'Pilih Kaedah Terjemahan';
 
   @override

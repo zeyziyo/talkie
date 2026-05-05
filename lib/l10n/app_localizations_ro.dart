@@ -1258,6 +1258,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get scanViewBulk => 'Vizualizare rezultate integrate';
 
   @override
+  String get scanAdRefillNotice =>
+      'Pentru a reîncărca creditele de traducere, apasă butonul de mai jos și vizionează un anunț. Clicurile pe banner-ele publicitare din partea de jos a ecranului nu oferă recompense de reîncărcare.';
+
+  @override
   String get scanTranslateMethodTitle => 'Selectați metoda de traducere';
 
   @override

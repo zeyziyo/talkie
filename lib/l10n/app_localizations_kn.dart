@@ -1252,6 +1252,10 @@ class AppLocalizationsKn extends AppLocalizations {
   String get scanViewBulk => 'ಸಂಯೋಜಿತ ಫಲಿತಾಂಶ ವೀಕ್ಷಣೆ';
 
   @override
+  String get scanAdRefillNotice =>
+      'ನಿಮ್ಮ ಅನುವಾದಗಳನ್ನು ಮರುಪೂರಣ ಮಾಡಲು, ದಯವಿಟ್ಟು ಕೆಳಗಿನ ಗುಂಡಿಯನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ ಮತ್ತು ಜಾಹೀರಾತನ್ನು ವೀಕ್ಷಿಸಿ. ಪರದೆಯ ಕೆಳಭಾಗದಲ್ಲಿರುವ ಬ್ಯಾನರ್ ಜಾಹೀರಾತುಗಳ ಕ್ಲಿಕ್‌ಗಳು ಯಾವುದೇ ಮರುಪೂರಣ ಪ್ರತಿಫಲಗಳನ್ನು ಒದಗಿಸುವುದಿಲ್ಲ.';
+
+  @override
   String get scanTranslateMethodTitle => 'ಅನುವಾದ ವಿಧಾನವನ್ನು ಆಯ್ಕೆಮಾಡಿ';
 
   @override

@@ -1247,6 +1247,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get scanViewBulk => 'ເບິ່ງຜົນໄດ້ຮັບລວມ';
 
   @override
+  String get scanAdRefillNotice =>
+      'ກົດປຸ່ມຂ້າງລຸ່ມນີ້ເພື່ອເບິ່ງໂຄສະນາເພື່ອເຕີມເງິນຈໍານວນການແປຂອງທ່ານ. ການຄລິກໂຄສະນາແບນເນີຢູ່ດ້ານລຸ່ມຂອງໜ້າຈໍຈະບໍ່ໃຫ້ລາງວັນ.';
+
+  @override
   String get scanTranslateMethodTitle => 'ເລືອກວິທີການແປ';
 
   @override

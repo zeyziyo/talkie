@@ -1252,6 +1252,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String get scanViewBulk => 'Widok zbiorczych wyników';
 
   @override
+  String get scanAdRefillNotice =>
+      'Aby odnowić liczbę tłumaczeń, kliknij poniższy przycisk i obejrzyj reklamę. Kliknięcie banera reklamowego na dole ekranu nie zapewnia nagrody za odnowienie.';
+
+  @override
   String get scanTranslateMethodTitle => 'Wybierz metodę tłumaczenia';
 
   @override

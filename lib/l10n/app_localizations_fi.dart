@@ -1249,6 +1249,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get scanViewBulk => 'Integroitu näkymä';
 
   @override
+  String get scanAdRefillNotice =>
+      'Katso mainos alla olevasta painikkeesta ladataksesi käännöksiä. Alareunan bannerimainoksen klikkaaminen ei anna latauspalkintoja.';
+
+  @override
   String get scanTranslateMethodTitle => 'Valitse käännöstapa';
 
   @override

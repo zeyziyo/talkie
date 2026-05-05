@@ -1269,6 +1269,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get scanViewBulk => 'ပေါင်းစည်းရလဒ်များကို ကြည့်ရန်';
 
   @override
+  String get scanAdRefillNotice =>
+      'ဘာသာပြန်ခွင့်အရေအတွက် ပြန်ဖြည့်ရန် အောက်ပါခလုတ်ကိုနှိပ်ပြီး ကြော်ငြာကြည့်ရှုပါ။ ဖန်သားပြင်အောက်ခြေရှိ ဘန်နာကြော်ငြာကို နှိပ်ခြင်းသည် ဆုကြေးမပေးပါ။';
+
+  @override
   String get scanTranslateMethodTitle => 'ဘာသာပြန်နည်းကို ရွေးပါ';
 
   @override

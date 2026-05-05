@@ -759,6 +759,7 @@
   "wordModeLabel": "Woordmodus",
   "scanViewSegments": "Individuele lysaansig",
   "scanViewBulk": "Gekonsolideerde resultate aansig",
+  "scanAdRefillNotice": "Kyk 'n advertensie deur op die knoppie hieronder te klik om jou vertalings aan te vul. Die klik van die onderste banieradvertensie bied nie 'n aanvullingsbeloning nie.",
   "scanTranslateMethodTitle": "Kies vertaalmetode",
   "scanTranslateMethodSubtitle": "Hoe moet die herken teks vertaal word?",
   "scanBulkTranslate": "Grootmaatvertaling",

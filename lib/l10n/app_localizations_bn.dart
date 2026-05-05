@@ -1247,6 +1247,10 @@ class AppLocalizationsBn extends AppLocalizations {
   String get scanViewBulk => 'সমন্বিত ফলাফল দেখুন';
 
   @override
+  String get scanAdRefillNotice =>
+      'অনুবাদের সংখ্যা রিফিল করতে, নীচের বোতামটি টিপুন এবং বিজ্ঞাপন দেখুন। স্ক্রিনের নীচে ব্যানার বিজ্ঞাপনে ক্লিক করলে রিফিল পুরস্কার প্রদান করা হবে না।';
+
+  @override
   String get scanTranslateMethodTitle => 'অনুবাদ করার পদ্ধতি নির্বাচন করুন';
 
   @override

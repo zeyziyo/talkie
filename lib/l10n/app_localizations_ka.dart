@@ -1259,6 +1259,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get scanViewBulk => 'შედეგების ინტეგრირებული ნახვა';
 
   @override
+  String get scanAdRefillNotice =>
+      'თარგმანების რაოდენობის შესავსებად, გთხოვთ, დააჭიროთ ქვემოთ მოცემულ ღილაკს და უყუროთ რეკლამას. ეკრანის ქვედა ნაწილში არსებულ ბანერზე დაჭერით არ მიიღებთ შევსების ჯილდოს.';
+
+  @override
   String get scanTranslateMethodTitle => 'თარგმნის მეთოდის არჩევა';
 
   @override

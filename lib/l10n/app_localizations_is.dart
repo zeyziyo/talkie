@@ -1253,6 +1253,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get scanViewBulk => 'Skoða samþættar niðurstöður';
 
   @override
+  String get scanAdRefillNotice =>
+      'Til að fylla á þýðingarnar þínar skaltu horfa á auglýsingu með því að ýta á hnappinn hér að neðan. Smellir á auglýsingaborða neðst á skjánum gefa ekki endurnýjunarbætur.';
+
+  @override
   String get scanTranslateMethodTitle => 'Veldu þýðingaraðferð';
 
   @override

@@ -759,6 +759,7 @@
   "wordModeLabel": "โหมดคำศัพท์",
   "scanViewSegments": "ดูรายการแยก",
   "scanViewBulk": "ดูผลลัพธ์รวม",
+  "scanAdRefillNotice": "หากต้องการเติมจำนวนการแปล โปรดกดปุ่มด้านล่างเพื่อดูโฆษณา การคลิกโฆษณาแบนเนอร์ที่ด้านล่างของหน้าจอจะไม่ให้รางวัลการเติม",
   "scanTranslateMethodTitle": "เลือกวิธีการแปล",
   "scanTranslateMethodSubtitle": "คุณต้องการแปลข้อความที่ตรวจพบอย่างไร",
   "scanBulkTranslate": "แปลแบบกลุ่มทั้งหมด",

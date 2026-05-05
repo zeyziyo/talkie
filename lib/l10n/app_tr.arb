@@ -759,6 +759,7 @@
   "wordModeLabel": "Kelime Modu",
   "scanViewSegments": "Ayrı Liste Görünümü",
   "scanViewBulk": "Toplu Sonuç Görünümü",
+  "scanAdRefillNotice": "Çeviri hakkı kazanmak için aşağıdaki butona tıklayarak bir reklam izleyin. Ekranın altındaki banner reklamlarına tıklamak çeviri hakkı kazandırmaz.",
   "scanTranslateMethodTitle": "Çeviri Yöntemi Seç",
   "scanTranslateMethodSubtitle": "Algılanan metin nasıl çevrilecek?",
   "scanBulkTranslate": "Toplu Çeviri",

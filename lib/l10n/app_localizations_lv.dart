@@ -1256,6 +1256,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get scanViewBulk => 'Apvienotu rezultātu skats';
 
   @override
+  String get scanAdRefillNotice =>
+      'Lai papildinātu tulkošanas reižu skaitu, nospiediet zemāk esošo pogu, lai skatītos reklāmu. Klikšķi uz reklāmkarogiem ekrāna apakšā nepiešķir atlīdzību par papildināšanu.';
+
+  @override
   String get scanTranslateMethodTitle => 'Izvēlieties tulkošanas metodi';
 
   @override

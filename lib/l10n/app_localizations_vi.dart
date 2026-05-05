@@ -1242,6 +1242,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get scanViewBulk => 'Xem kết quả tổng hợp';
 
   @override
+  String get scanAdRefillNotice =>
+      'Nhấn nút bên dưới để xem quảng cáo và nạp thêm lượt dịch. Việc nhấp vào quảng cáo biểu ngữ ở cuối màn hình sẽ không được thưởng thêm lượt dịch.';
+
+  @override
   String get scanTranslateMethodTitle => 'Chọn phương pháp dịch';
 
   @override

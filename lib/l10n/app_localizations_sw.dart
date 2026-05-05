@@ -1248,6 +1248,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get scanViewBulk => 'Onyesha Matokeo Yaliyounganishwa';
 
   @override
+  String get scanAdRefillNotice =>
+      'Ili kuongeza idadi ya tafsiri, bonyeza kitufe hapa chini ili utazame tangazo. Kubofya tangazo la bango chini ya skrini hakutoi zawadi ya kujaza.';
+
+  @override
   String get scanTranslateMethodTitle => 'Chagua Njia ya Tafsiri';
 
   @override

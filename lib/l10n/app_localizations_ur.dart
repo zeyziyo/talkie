@@ -1247,6 +1247,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get scanViewBulk => 'مربوط نتائج دیکھیں';
 
   @override
+  String get scanAdRefillNotice =>
+      'ترجمے کے لیے اپنے مواقع کو بحال کرنے کے لیے، نیچے دیے گئے بٹن پر ٹیپ کر کے ایک اشتہار دیکھیں۔ اسکرین کے نیچے موجود بینر اشتہار پر کلک کرنے سے کوئی موقع نہیں ملے گا۔';
+
+  @override
   String get scanTranslateMethodTitle => 'ترجمہ کرنے کا طریقہ منتخب کریں';
 
   @override

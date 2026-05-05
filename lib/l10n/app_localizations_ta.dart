@@ -1266,6 +1266,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get scanViewBulk => 'ஒருங்கிணைந்த முடிவுகளைப் பார்';
 
   @override
+  String get scanAdRefillNotice =>
+      'மொழிபெயர்ப்பு எண்ணிக்கையை நிரப்ப, கீழே உள்ள பொத்தானை அழுத்தி விளம்பரத்தைப் பார்க்கவும். திரையின் அடிப்பகுதியில் உள்ள பேனர் விளம்பரத்தைக் கிளிக் செய்தால், நிரப்புதல் வெகுமதி வழங்கப்படாது.';
+
+  @override
   String get scanTranslateMethodTitle =>
       'மொழிபெயர்ப்பு முறையைத் தேர்ந்தெடுக்கவும்';
 

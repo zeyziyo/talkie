@@ -1263,6 +1263,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get scanViewBulk => 'Zusammengefasste Ergebnisansicht';
 
   @override
+  String get scanAdRefillNotice =>
+      'Um deine Übersetzungen aufzufüllen, schaue dir eine Werbung an, indem du auf die Schaltfläche unten klickst. Das Klicken auf die Bannerwerbung am unteren Bildschirmrand gewährt keine Aufladebelohnung.';
+
+  @override
   String get scanTranslateMethodTitle => 'Übersetzungsmethode wählen';
 
   @override

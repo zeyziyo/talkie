@@ -1243,6 +1243,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String get scanViewBulk => 'Gekonsolideerde resultate aansig';
 
   @override
+  String get scanAdRefillNotice =>
+      'Kyk \'n advertensie deur op die knoppie hieronder te klik om jou vertalings aan te vul. Die klik van die onderste banieradvertensie bied nie \'n aanvullingsbeloning nie.';
+
+  @override
   String get scanTranslateMethodTitle => 'Kies vertaalmetode';
 
   @override

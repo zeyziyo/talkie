@@ -759,6 +759,7 @@
   "wordModeLabel": "Režim slov",
   "scanViewSegments": "Zobraziť samostatne",
   "scanViewBulk": "Zobraziť súhrn",
+  "scanAdRefillNotice": "Pre obnovenie počtu prekladov si pozrite reklamu kliknutím na tlačidlo nižšie. Kliknutie na bannerovú reklamu v dolnej časti obrazovky neponúka odmenu za dobitie.",
   "scanTranslateMethodTitle": "Vyberte spôsob prekladu",
   "scanTranslateMethodSubtitle": "Ako chcete preložiť rozpoznaný text?",
   "scanBulkTranslate": "Preklad celého naraz",

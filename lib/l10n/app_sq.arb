@@ -759,6 +759,7 @@
   "wordModeLabel": "Modaliteti i fjalës",
   "scanViewSegments": "Shiko listën individuale",
   "scanViewBulk": "Shiko rezultatin e kombinuar",
+  "scanAdRefillNotice": "Për të rimbushur numrin e përkthimeve, ju lutemi shtypni butonin e mëposhtëm për të parë një reklamë. Klikimi i reklamës së bannerit në fund të ekranit nuk ofron shpërblim për rimbushjen.",
   "scanTranslateMethodTitle": "Zgjidhni metodën e përkthimit",
   "scanTranslateMethodSubtitle": "Si dëshironi të përktheni tekstin e njohur?",
   "scanBulkTranslate": "Përkthim i plotë në grup",

@@ -759,6 +759,7 @@
   "wordModeLabel": "Wort-Modus",
   "scanViewSegments": "Einzelne Listenansicht",
   "scanViewBulk": "Zusammengefasste Ergebnisansicht",
+  "scanAdRefillNotice": "Um deine Übersetzungen aufzufüllen, schaue dir eine Werbung an, indem du auf die Schaltfläche unten klickst. Das Klicken auf die Bannerwerbung am unteren Bildschirmrand gewährt keine Aufladebelohnung.",
   "scanTranslateMethodTitle": "Übersetzungsmethode wählen",
   "scanTranslateMethodSubtitle": "Wie sollen erkannte Texte übersetzt werden?",
   "scanBulkTranslate": "Gesamtübersetzung",

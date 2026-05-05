@@ -1215,6 +1215,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get scanViewBulk => '統合結果表示';
 
   @override
+  String get scanAdRefillNotice =>
+      '翻訳回数をチャージするには、下のボタンを押して広告を視聴してください。画面下のバナー広告のクリックはチャージ報酬の対象外となります。';
+
+  @override
   String get scanTranslateMethodTitle => '翻訳方法の選択';
 
   @override

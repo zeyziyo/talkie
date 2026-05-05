@@ -1267,6 +1267,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get scanViewBulk => 'Vista de resultats consolidats';
 
   @override
+  String get scanAdRefillNotice =>
+      'Per recarregar les traduccions, prem el botó de sota per veure un anunci. Clicar als banners de publicitat de la part inferior de la pantalla no et donarà recompenses.';
+
+  @override
   String get scanTranslateMethodTitle => 'Selecciona el mètode de traducció';
 
   @override

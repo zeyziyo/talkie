@@ -759,6 +759,7 @@
   "wordModeLabel": "Ordmodus",
   "scanViewSegments": "Vis individuell liste",
   "scanViewBulk": "Vis samlet resultat",
+  "scanAdRefillNotice": "Trykk på knappen nedenfor og se en reklame for å fylle på antall oversettelser. Klikk på bannerannonser nederst på skjermen gir ingen påfyllingsbelønning.",
   "scanTranslateMethodTitle": "Velg oversettelsesmetode",
   "scanTranslateMethodSubtitle": "Hvordan vil du oversette den gjenkjente teksten?",
   "scanBulkTranslate": "Oversett alt samlet",

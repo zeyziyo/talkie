@@ -1250,6 +1250,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get scanViewBulk => 'ඒකාබද්ධ ප්‍රතිඵල දසුන';
 
   @override
+  String get scanAdRefillNotice =>
+      'පරිවර්තන ගණන නැවත පිරවීමට කරුණාකර පහත බොත්තම ක්ලික් කර දැන්වීම නරඹන්න. තිරයේ පතුලේ ඇති බැනර් දැන්වීම ක්ලික් කිරීමෙන් ප්‍රතිලාභ නොලැබේ.';
+
+  @override
   String get scanTranslateMethodTitle => 'පරිවර්තන ක්‍රමය තෝරන්න';
 
   @override

@@ -759,6 +759,7 @@
   "wordModeLabel": "Mod cuvânt",
   "scanViewSegments": "Vizualizare listă individuală",
   "scanViewBulk": "Vizualizare rezultate integrate",
+  "scanAdRefillNotice": "Pentru a reîncărca creditele de traducere, apasă butonul de mai jos și vizionează un anunț. Clicurile pe banner-ele publicitare din partea de jos a ecranului nu oferă recompense de reîncărcare.",
   "scanTranslateMethodTitle": "Selectați metoda de traducere",
   "scanTranslateMethodSubtitle": "Cum ar trebui să traduc textul recunoscut?",
   "scanBulkTranslate": "Traducere în bloc completă",

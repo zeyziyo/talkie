@@ -1259,6 +1259,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get scanViewBulk => 'Ver resultados combinados';
 
   @override
+  String get scanAdRefillNotice =>
+      'Para recargar traducciones, por favor mira un anuncio pulsando el botón de abajo. Hacer clic en el banner publicitario de la parte inferior de la pantalla no proporciona una recompensa de recarga.';
+
+  @override
   String get scanTranslateMethodTitle => 'Seleccionar método de traducción';
 
   @override

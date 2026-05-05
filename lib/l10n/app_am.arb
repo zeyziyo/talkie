@@ -759,6 +759,7 @@
   "wordModeLabel": "የቃል ሁነታ",
   "scanViewSegments": "ነጠላ ዝርዝር ዕይታ",
   "scanViewBulk": "ውህድ ውጤት ዕይታ",
+  "scanAdRefillNotice": "የትርጉም ሙላትን ለመሙላት ከታች ያለውን ቁልፍ በመጫን ማስታወቂያ ይመልከቱ። ከስክሪኑ ግርጌ ላይ የሚታየውን የማስታወቂያ ሰንደቅ ላይ ጠቅ ማድረግ የሞሉ ሽልማቶችን አይሰጥም።",
   "scanTranslateMethodTitle": "የትርጉም ዘዴ ምረጥ",
   "scanTranslateMethodSubtitle": "የታወቀውን ጽሑፍ እንዴት መተርጎም ይፈልጋሉ?",
   "scanBulkTranslate": "ሁሉንም በአንድ ጊዜ መተርጎም",

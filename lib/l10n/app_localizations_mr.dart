@@ -1244,6 +1244,10 @@ class AppLocalizationsMr extends AppLocalizations {
   String get scanViewBulk => 'एकात्मिक परिणाम पहा';
 
   @override
+  String get scanAdRefillNotice =>
+      'भाषांतरण वेळा रीफिल करण्यासाठी, खालील बटण दाबून जाहिरात पहा. कृपया लक्षात ठेवा की स्क्रीनच्या तळाशी असलेल्या बॅनर जाहिरातीवर क्लिक केल्यास रीफिल बक्षीस मिळणार नाही.';
+
+  @override
   String get scanTranslateMethodTitle => 'भाषांतर पद्धत निवडा';
 
   @override

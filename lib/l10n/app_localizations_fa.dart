@@ -1242,6 +1242,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get scanViewBulk => 'نمای نتایج یکپارچه';
 
   @override
+  String get scanAdRefillNotice =>
+      'برای شارژ مجدد تعداد ترجمه‌ها، روی دکمه زیر ضربه بزنید و یک تبلیغ تماشا کنید. توجه داشته باشید که کلیک کردن روی تبلیغات بنری در پایین صفحه پاداشی برای شارژ ارائه نمی‌دهد.';
+
+  @override
   String get scanTranslateMethodTitle => 'روش ترجمه را انتخاب کنید';
 
   @override

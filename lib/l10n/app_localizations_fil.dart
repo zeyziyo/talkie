@@ -1259,6 +1259,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get scanViewBulk => 'Pinagsamang Resulta';
 
   @override
+  String get scanAdRefillNotice =>
+      'Panoorin ang isang ad sa pamamagitan ng pagpindot sa button sa ibaba para magdagdag ng mga pagkakataong magsalin. Hindi magbibigay ng mga reward sa pagdagdag ang pag-click sa mga banner ad sa ibaba ng screen.';
+
+  @override
   String get scanTranslateMethodTitle => 'Pumili ng Paraan ng Pagsasalin';
 
   @override

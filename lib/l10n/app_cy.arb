@@ -759,6 +759,7 @@
   "wordModeLabel": "Modd Gair",
   "scanViewSegments": "Gweld Rhestr Unigol",
   "scanViewBulk": "Gweld Canlyniadau Cyfunedig",
+  "scanAdRefillNotice": "I ail gael mwy o gyfleoedd cyfieithu, gwyliwch hysbyseb drwy wasgu'r botwm isod. Nid yw clicio ar faneri hysbysebu ar waelod y sgrin yn rhoi credydau i chi.",
   "scanTranslateMethodTitle": "Dewis dull cyfieithu",
   "scanTranslateMethodSubtitle": "Sut ydych chi am gyfieithu'r testun a adnabuwyd?",
   "scanBulkTranslate": "Cyfieithu swmp cyfan",

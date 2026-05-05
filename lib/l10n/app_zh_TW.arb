@@ -759,6 +759,7 @@
   "wordModeLabel": "單字模式",
   "scanViewSegments": "個別清單檢視",
   "scanViewBulk": "整合結果檢視",
+  "scanAdRefillNotice": "觀看廣告以補充翻譯次數，請點擊下方按鈕。點擊螢幕下方的橫幅廣告不會提供補充獎勵。",
   "scanTranslateMethodTitle": "選擇翻譯方式",
   "scanTranslateMethodSubtitle": "您要如何翻譯識別到的文字？",
   "scanBulkTranslate": "整批翻譯",

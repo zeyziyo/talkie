@@ -759,6 +759,7 @@
   "wordModeLabel": "Modo de palavra",
   "scanViewSegments": "Ver lista individual",
   "scanViewBulk": "Ver resultados combinados",
+  "scanAdRefillNotice": "Para recarregar suas traduções, toque no botão abaixo e assista a um anúncio. Clicar no banner de anúncio na parte inferior da tela não fornece recompensas de recarga.",
   "scanTranslateMethodTitle": "Selecionar método de tradução",
   "scanTranslateMethodSubtitle": "Como você gostaria de traduzir o texto reconhecido?",
   "scanBulkTranslate": "Tradução em lote completa",

@@ -1249,6 +1249,10 @@ class AppLocalizationsPa extends AppLocalizations {
   String get scanViewBulk => 'ਇਕੱਠੇ ਨਤੀਜੇ ਵੇਖੋ';
 
   @override
+  String get scanAdRefillNotice =>
+      'ਅਨੁਵਾਦਾਂ ਨੂੰ ਮੁੜ ਭਰਨ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਦਿੱਤੇ ਬਟਨ ਨੂੰ ਦਬਾ ਕੇ ਇੱਕ ਵਿਗਿਆਪਨ ਦੇਖੋ। ਸਕ੍ਰੀਨ ਦੇ ਹੇਠਾਂ ਬੈਨਰ ਵਿਗਿਆਪਨ \'ਤੇ ਕਲਿੱਕ ਕਰਨ ਨਾਲ ਕੋਈ ਇਨਾਮ ਨਹੀਂ ਮਿਲੇਗਾ।';
+
+  @override
   String get scanTranslateMethodTitle => 'ਅਨੁਵਾਦ ਕਰਨ ਦਾ ਤਰੀਕਾ ਚੁਣੋ';
 
   @override

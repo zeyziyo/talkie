@@ -759,6 +759,7 @@
   "wordModeLabel": "מצב מילים",
   "scanViewSegments": "הצגת רשימה נפרדת",
   "scanViewBulk": "הצגת תוצאות משולבות",
+  "scanAdRefillNotice": "למילוי מכסת התרגומים, לחצו על הכפתור למטה כדי לצפות בפרסומת. לחיצה על באנר הפרסומת בתחתית המסך אינה מזכה בפרס מילוי.",
   "scanTranslateMethodTitle": "בחירת שיטת תרגום",
   "scanTranslateMethodSubtitle": "כיצד תרצה לתרגם את הטקסט שזוהה?",
   "scanBulkTranslate": "תרגום אצווה מלא",

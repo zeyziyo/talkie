@@ -759,6 +759,7 @@
   "wordModeLabel": "So'z rejimi",
   "scanViewSegments": "Yakka tartibdagi ro'yxat ko'rinishi",
   "scanViewBulk": "Birlashtirilgan natijalar ko'rinishi",
+  "scanAdRefillNotice": "Tarjima sonini toʻldirish uchun quyidagi tugmani bosib, reklamani tomosha qiling. Ekran pastidagi banner reklamani bosish toʻlov mukofotini bermaydi.",
   "scanTranslateMethodTitle": "Tarjima usulini tanlang",
   "scanTranslateMethodSubtitle": "Aniqlangan matnni qanday tarjima qilasiz?",
   "scanBulkTranslate": "To'liq ommaviy tarjima",

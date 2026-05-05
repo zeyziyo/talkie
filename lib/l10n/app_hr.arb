@@ -759,6 +759,7 @@
   "wordModeLabel": "Način rada s riječima",
   "scanViewSegments": "Pojedinačni prikaz popisa",
   "scanViewBulk": "Prikaz skupnih rezultata",
+  "scanAdRefillNotice": "Za ponovno punjenje broja prijevoda, pritisnite gumb ispod i pogledajte oglas. Klikanje na oglas s natpisom na dnu zaslona ne daje nagradu za ponovno punjenje.",
   "scanTranslateMethodTitle": "Odaberite način prevođenja",
   "scanTranslateMethodSubtitle": "Kako želite prevesti prepoznati tekst?",
   "scanBulkTranslate": "Grupno prevođenje",

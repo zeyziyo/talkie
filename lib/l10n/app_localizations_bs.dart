@@ -1252,6 +1252,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get scanViewBulk => 'Pregledaj objedinjeno';
 
   @override
+  String get scanAdRefillNotice =>
+      'Pritisnite dugme ispod da biste pogledali oglas i napunili broj prijevoda. Klikanje na oglas na dnu ekrana ne nudi nagrade za punjenje.';
+
+  @override
   String get scanTranslateMethodTitle => 'Odaberite metod prevođenja';
 
   @override

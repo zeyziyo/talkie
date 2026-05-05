@@ -1253,6 +1253,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get scanViewBulk => 'Εμφάνιση ενοποιημένων αποτελεσμάτων';
 
   @override
+  String get scanAdRefillNotice =>
+      'Πατήστε το κουμπί παρακάτω για να παρακολουθήσετε μια διαφήμιση και να αναπληρώσετε τις μεταφράσεις σας. Τα κλικ στις διαφημίσεις banner στο κάτω μέρος της οθόνης δεν θα σας δώσουν επιπλέον μεταφράσεις.';
+
+  @override
   String get scanTranslateMethodTitle => 'Επιλογή μεθόδου μετάφρασης';
 
   @override

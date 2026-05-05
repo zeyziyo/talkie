@@ -1263,6 +1263,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get scanViewBulk => 'Միավորված արդյունքներ';
 
   @override
+  String get scanAdRefillNotice =>
+      'Լրացնելու համար դիտեք գովազդը՝ սեղմելով ներքևի կոճակը: Էկրանի ներքևի մասում գտնվող բաններային գովազդի վրա սեղմելը պարգև չի տալիս:';
+
+  @override
   String get scanTranslateMethodTitle => 'Ընտրեք թարգմանության մեթոդը';
 
   @override

@@ -759,6 +759,7 @@
   "wordModeLabel": "単語モード",
   "scanViewSegments": "個別リスト表示",
   "scanViewBulk": "統合結果表示",
+  "scanAdRefillNotice": "翻訳回数をチャージするには、下のボタンを押して広告を視聴してください。画面下のバナー広告のクリックはチャージ報酬の対象外となります。",
   "scanTranslateMethodTitle": "翻訳方法の選択",
   "scanTranslateMethodSubtitle": "認識されたテキストをどのように翻訳しますか？",
   "scanBulkTranslate": "一括翻訳",

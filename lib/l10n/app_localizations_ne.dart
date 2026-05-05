@@ -1255,6 +1255,10 @@ class AppLocalizationsNe extends AppLocalizations {
   String get scanViewBulk => 'एकीकृत परिणाम हेर्नुहोस्';
 
   @override
+  String get scanAdRefillNotice =>
+      'अनुवादको लागि थप प्रयासहरू पाउन तलको बटन ट्याप गरेर एउटा विज्ञापन हेर्नुहोस्। कृपया याद गर्नुहोस्, स्क्रिनको तल्लो भागमा रहेको ब्यानर विज्ञापनमा क्लिक गर्दा थप प्रयासहरू प्राप्त हुँदैन।';
+
+  @override
   String get scanTranslateMethodTitle => 'अनुवाद विधि छान्नुहोस्';
 
   @override

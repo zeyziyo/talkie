@@ -1254,6 +1254,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get scanViewBulk => 'Zobraziť súhrn';
 
   @override
+  String get scanAdRefillNotice =>
+      'Pre obnovenie počtu prekladov si pozrite reklamu kliknutím na tlačidlo nižšie. Kliknutie na bannerovú reklamu v dolnej časti obrazovky neponúka odmenu za dobitie.';
+
+  @override
   String get scanTranslateMethodTitle => 'Vyberte spôsob prekladu';
 
   @override

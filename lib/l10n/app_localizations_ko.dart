@@ -1222,6 +1222,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get scanViewBulk => '통합 결과 보기';
 
   @override
+  String get scanAdRefillNotice =>
+      '번역 횟수를 충전하려면 아래 버튼을 눌러 광고를 시청해 주세요. 화면 하단의 배너 광고 클릭은 충전 보상을 제공하지 않습니다.';
+
+  @override
   String get scanTranslateMethodTitle => '번역 방법 선택';
 
   @override

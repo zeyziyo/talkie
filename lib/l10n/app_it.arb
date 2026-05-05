@@ -759,6 +759,7 @@
   "wordModeLabel": "Modalità parola",
   "scanViewSegments": "Visualizza elenco singolo",
   "scanViewBulk": "Visualizza risultati combinati",
+  "scanAdRefillNotice": "Per ricaricare le traduzioni, guarda un annuncio toccando il pulsante qui sotto. Cliccare sui banner pubblicitari in fondo allo schermo non ti farà guadagnare ricariche.",
   "scanTranslateMethodTitle": "Seleziona metodo di traduzione",
   "scanTranslateMethodSubtitle": "Come vuoi tradurre il testo riconosciuto?",
   "scanBulkTranslate": "Traduci interamente in blocco",

@@ -1266,6 +1266,10 @@ class AppLocalizationsTl extends AppLocalizations {
   String get scanViewBulk => 'Tingnan ang Pinagsama-sama';
 
   @override
+  String get scanAdRefillNotice =>
+      'Para mapunan ang iyong mga pagsasalin, pakisuyong manood ng ad sa pamamagitan ng pagpindot sa buton sa ibaba. Ang pag-click sa mga banner ad sa ibaba ng screen ay hindi magbibigay ng mga reward sa pagpuno.';
+
+  @override
   String get scanTranslateMethodTitle => 'Piliin ang Paraan ng Pagsasalin';
 
   @override

@@ -1254,6 +1254,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get scanViewBulk => 'Нэгдсэн үр дүнг харах';
 
   @override
+  String get scanAdRefillNotice =>
+      'Орчуулгын тоогоо нэмэхийн тулд доорх товчийг дарж сурталчилгаа үзээрэй. Дэлгэцийн доод хэсэгт байрлах сурталчилгааны баннерыг дарвал нөхөн төлбөр авах боломжгүй.';
+
+  @override
   String get scanTranslateMethodTitle => 'Орчуулах аргаа сонгох';
 
   @override

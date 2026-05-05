@@ -1251,6 +1251,10 @@ class AppLocalizationsAs extends AppLocalizations {
   String get scanViewBulk => 'একত্ৰিত ফলাফল দৃশ্য';
 
   @override
+  String get scanAdRefillNotice =>
+      'অনুবাদৰ সংখ্যা পূৰণ কৰিবলৈ, অনুগ্ৰহ কৰি তলৰ বুটামটোত ক্লিক কৰি এটা বিজ্ঞাপন চাওক। পৰ্দাৰ তলত থকা বেনাৰ বিজ্ঞাপনত ক্লিক কৰিলে কোনো পুৰস্কাৰ প্ৰদান কৰা নহ\'ব।';
+
+  @override
   String get scanTranslateMethodTitle => 'অনুবাদ পদ্ধতি নিৰ্ব্বাচন কৰক';
 
   @override

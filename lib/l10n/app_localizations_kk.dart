@@ -1256,6 +1256,10 @@ class AppLocalizationsKk extends AppLocalizations {
   String get scanViewBulk => 'Біріктірілген нәтиже көрінісі';
 
   @override
+  String get scanAdRefillNotice =>
+      'Аударма санын толтыру үшін төмендегі түймені басып, жарнаманы көріңіз. Экранның төменгі жағындағы баннер жарнамасын басу толтыру сыйын бермейді.';
+
+  @override
   String get scanTranslateMethodTitle => 'Аударма әдісін таңдау';
 
   @override

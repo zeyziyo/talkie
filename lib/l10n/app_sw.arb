@@ -759,6 +759,7 @@
   "wordModeLabel": "Hali ya Neno",
   "scanViewSegments": "Onyesha Orodha Binafsi",
   "scanViewBulk": "Onyesha Matokeo Yaliyounganishwa",
+  "scanAdRefillNotice": "Ili kuongeza idadi ya tafsiri, bonyeza kitufe hapa chini ili utazame tangazo. Kubofya tangazo la bango chini ya skrini hakutoi zawadi ya kujaza.",
   "scanTranslateMethodTitle": "Chagua Njia ya Tafsiri",
   "scanTranslateMethodSubtitle": "Ungependa kutafsiri vipi maandishi yaliyotambuliwa?",
   "scanBulkTranslate": "Tafsiri Yote kwa Mkupuo",

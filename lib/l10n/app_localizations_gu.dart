@@ -1247,6 +1247,10 @@ class AppLocalizationsGu extends AppLocalizations {
   String get scanViewBulk => 'સંકલિત પરિણામ જુઓ';
 
   @override
+  String get scanAdRefillNotice =>
+      'તમારા ભાષાંતરની સંખ્યા રિચાર્જ કરવા માટે, કૃપા કરીને નીચેનું બટન દબાવીને જાહેરાત જુઓ. સ્ક્રીનના તળિયે આવેલી બેનર જાહેરાતો પર ક્લિક કરવાથી રિચાર્જ પુરસ્કારો મળશે નહીં.';
+
+  @override
   String get scanTranslateMethodTitle => 'અનુવાદ પદ્ધતિ પસંદ કરો';
 
   @override

@@ -759,6 +759,7 @@
   "wordModeLabel": "Ordtilstand",
   "scanViewSegments": "Vis individuel liste",
   "scanViewBulk": "Vis samlet resultat",
+  "scanAdRefillNotice": "Tryk på knappen nedenfor for at se en reklame og genopfylde dine oversættelser. Klik på bannerannoncerne nederst på skærmen giver ikke genopfyldningsbelønninger.",
   "scanTranslateMethodTitle": "Vælg oversættelsesmetode",
   "scanTranslateMethodSubtitle": "Hvordan vil du oversætte den genkendte tekst?",
   "scanBulkTranslate": "Oversæt alle på én gang",

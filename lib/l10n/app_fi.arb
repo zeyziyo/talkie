@@ -759,6 +759,7 @@
   "wordModeLabel": "Sanatila",
   "scanViewSegments": "Yksittäinen luettelo",
   "scanViewBulk": "Integroitu näkymä",
+  "scanAdRefillNotice": "Katso mainos alla olevasta painikkeesta ladataksesi käännöksiä. Alareunan bannerimainoksen klikkaaminen ei anna latauspalkintoja.",
   "scanTranslateMethodTitle": "Valitse käännöstapa",
   "scanTranslateMethodSubtitle": "Miten haluat kääntää tunnistetun tekstin?",
   "scanBulkTranslate": "Käännä kaikki kerralla",

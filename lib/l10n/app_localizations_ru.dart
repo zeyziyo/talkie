@@ -1252,6 +1252,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get scanViewBulk => 'Сводный просмотр результатов';
 
   @override
+  String get scanAdRefillNotice =>
+      'Чтобы пополнить количество переводов, нажмите кнопку ниже и посмотрите рекламу. Клик по баннерной рекламе внизу экрана не дает бонусов за пополнение.';
+
+  @override
   String get scanTranslateMethodTitle => 'Выбор способа перевода';
 
   @override

@@ -1253,6 +1253,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get scanViewBulk => 'Lihat Hasil Gabungan';
 
   @override
+  String get scanAdRefillNotice =>
+      'Untuk mengisi ulang jatah terjemahan, tekan tombol di bawah untuk menonton iklan. Mengeklik iklan banner di bagian bawah layar tidak akan memberikan hadiah pengisian ulang.';
+
+  @override
   String get scanTranslateMethodTitle => 'Pilih Metode Terjemahan';
 
   @override

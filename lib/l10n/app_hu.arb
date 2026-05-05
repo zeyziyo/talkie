@@ -759,6 +759,7 @@
   "wordModeLabel": "Szó mód",
   "scanViewSegments": "Egyes listanézet",
   "scanViewBulk": "Összevont eredmény nézet",
+  "scanAdRefillNotice": "Fordítsd le újra! Nézz meg egy reklámot a lenti gombra kattintva. A képernyő alján látható bannerhirdetésre kattintva nem kapsz feltöltési jutalmat.",
   "scanTranslateMethodTitle": "Fordítási mód kiválasztása",
   "scanTranslateMethodSubtitle": "Hogyan fordítsuk le a felismert szöveget?",
   "scanBulkTranslate": "Teljes kötegelt fordítás",

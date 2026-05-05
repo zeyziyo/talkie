@@ -1258,6 +1258,10 @@ class AppLocalizationsOr extends AppLocalizations {
   String get scanViewBulk => 'ଏକୀକୃତ ଫଳାଫଳ ଦେଖନ୍ତୁ';
 
   @override
+  String get scanAdRefillNotice =>
+      'ଅନୁବାଦ ସଂଖ୍ୟା ରିଫିଲ୍ କରିବାକୁ, ଦୟାକରି ତଳେ ଥିବା ବଟନ୍ କ୍ଲିକ୍ କରି ଏକ ବିଜ୍ଞାପନ ଦେଖନ୍ତୁ | ସ୍କ୍ରିନ୍ ତଳେ ଥିବା ବ୍ୟାନର୍ ବିଜ୍ଞାପନରେ କ୍ଲିକ୍ କଲେ ରିଫିଲ୍ ପୁରସ୍କାର ମିଳିବ ନାହିଁ।';
+
+  @override
   String get scanTranslateMethodTitle => 'ଅନୁବାଦ ପଦ୍ଧତି ଚୟନ କରନ୍ତୁ';
 
   @override

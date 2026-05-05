@@ -1266,6 +1266,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get scanViewBulk => 'Shiko rezultatin e kombinuar';
 
   @override
+  String get scanAdRefillNotice =>
+      'Për të rimbushur numrin e përkthimeve, ju lutemi shtypni butonin e mëposhtëm për të parë një reklamë. Klikimi i reklamës së bannerit në fund të ekranit nuk ofron shpërblim për rimbushjen.';
+
+  @override
   String get scanTranslateMethodTitle => 'Zgjidhni metodën e përkthimit';
 
   @override

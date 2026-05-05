@@ -1252,6 +1252,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get scanViewBulk => 'Összevont eredmény nézet';
 
   @override
+  String get scanAdRefillNotice =>
+      'Fordítsd le újra! Nézz meg egy reklámot a lenti gombra kattintva. A képernyő alján látható bannerhirdetésre kattintva nem kapsz feltöltési jutalmat.';
+
+  @override
   String get scanTranslateMethodTitle => 'Fordítási mód kiválasztása';
 
   @override

@@ -1262,6 +1262,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get scanViewBulk => 'Gweld Canlyniadau Cyfunedig';
 
   @override
+  String get scanAdRefillNotice =>
+      'I ail gael mwy o gyfleoedd cyfieithu, gwyliwch hysbyseb drwy wasgu\'r botwm isod. Nid yw clicio ar faneri hysbysebu ar waelod y sgrin yn rhoi credydau i chi.';
+
+  @override
   String get scanTranslateMethodTitle => 'Dewis dull cyfieithu';
 
   @override

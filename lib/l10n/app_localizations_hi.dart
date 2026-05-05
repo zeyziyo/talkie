@@ -1255,6 +1255,10 @@ class AppLocalizationsHi extends AppLocalizations {
   String get scanViewBulk => 'एकीकृत परिणाम देखें';
 
   @override
+  String get scanAdRefillNotice =>
+      'अनुवाद की संख्या को फिर से भरने के लिए, कृपया विज्ञापन देखने के लिए नीचे दिए गए बटन पर क्लिक करें। स्क्रीन के नीचे बैनर विज्ञापन पर क्लिक करने पर कोई पुनर्भरण इनाम नहीं मिलेगा।';
+
+  @override
   String get scanTranslateMethodTitle => 'अनुवाद विधि चुनें';
 
   @override

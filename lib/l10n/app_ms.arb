@@ -759,6 +759,7 @@
   "wordModeLabel": "Mod Perkataan",
   "scanViewSegments": "Lihat Senarai Berasingan",
   "scanViewBulk": "Lihat Hasil Gabungan",
+  "scanAdRefillNotice": "Untuk menambah bilangan terjemahan, sila tonton iklan dengan menekan butang di bawah. Mengklik iklan banner di bahagian bawah skrin tidak akan memberikan ganjaran pengisian semula.",
   "scanTranslateMethodTitle": "Pilih Kaedah Terjemahan",
   "scanTranslateMethodSubtitle": "Bagaimana anda ingin menterjemahkan teks yang dikenali?",
   "scanBulkTranslate": "Terjemahan Pukal Penuh",

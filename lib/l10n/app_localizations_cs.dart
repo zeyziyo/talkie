@@ -1245,6 +1245,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get scanViewBulk => 'Zobrazit souhrnně';
 
   @override
+  String get scanAdRefillNotice =>
+      'Pro dobití překladů se podívejte na reklamu kliknutím na tlačítko níže. Kliknutí na reklamní banner ve spodní části obrazovky nezajišťuje dobití.';
+
+  @override
   String get scanTranslateMethodTitle => 'Zvolte metodu překladu';
 
   @override

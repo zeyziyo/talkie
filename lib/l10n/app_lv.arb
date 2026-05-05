@@ -759,6 +759,7 @@
   "wordModeLabel": "Vārdu režīms",
   "scanViewSegments": "Atsevišķu sarakstu skats",
   "scanViewBulk": "Apvienotu rezultātu skats",
+  "scanAdRefillNotice": "Lai papildinātu tulkošanas reižu skaitu, nospiediet zemāk esošo pogu, lai skatītos reklāmu. Klikšķi uz reklāmkarogiem ekrāna apakšā nepiešķir atlīdzību par papildināšanu.",
   "scanTranslateMethodTitle": "Izvēlieties tulkošanas metodi",
   "scanTranslateMethodSubtitle": "Kā vēlaties tulkot atpazīto tekstu?",
   "scanBulkTranslate": "Pilna apjoma tulkošana",

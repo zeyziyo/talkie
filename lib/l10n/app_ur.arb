@@ -759,6 +759,7 @@
   "wordModeLabel": "لفظ موڈ",
   "scanViewSegments": "انفرادی فہرست دیکھیں",
   "scanViewBulk": "مربوط نتائج دیکھیں",
+  "scanAdRefillNotice": "ترجمے کے لیے اپنے مواقع کو بحال کرنے کے لیے، نیچے دیے گئے بٹن پر ٹیپ کر کے ایک اشتہار دیکھیں۔ اسکرین کے نیچے موجود بینر اشتہار پر کلک کرنے سے کوئی موقع نہیں ملے گا۔",
   "scanTranslateMethodTitle": "ترجمہ کرنے کا طریقہ منتخب کریں",
   "scanTranslateMethodSubtitle": "پہچانی گئی عبارت کا ترجمہ کیسے کریں؟",
   "scanBulkTranslate": "مکمل بیچ ترجمہ",
