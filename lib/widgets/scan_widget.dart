@@ -72,29 +72,70 @@ class _ScanWidgetState extends State<ScanWidget> {
         await showDialog<void>(
           context: context,
           builder: (ctx) => AlertDialog(
-            title: Text(l10n.usageLimitTitle),
-            content: Text(
-              l10n.scanInsufficientLimit(needed, remaining),
-
+            title: Row(
+              children: [
+                Icon(Icons.warning_amber_rounded, color: Colors.amber.shade800),
+                SizedBox(width: 8.w),
+                Text(l10n.usageLimitTitle),
+              ],
+            ),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  l10n.scanInsufficientLimit(needed, remaining),
+                  style: TextStyle(fontSize: 14.sp),
+                ),
+                SizedBox(height: 16.h),
+                Container(
+                  padding: EdgeInsets.all(12.w),
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade50,
+                    borderRadius: BorderRadius.circular(12.r),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.info_outline,
+                          size: 16.sp, color: Colors.blue.shade700),
+                      SizedBox(width: 8.w),
+                      Expanded(
+                        child: Text(
+                          '하단 배너 광고 클릭이 아닌, 아래 버튼을 통해 광고를 시청해야 횟수가 충전됩니다.',
+                          style: TextStyle(
+                              fontSize: 12.sp, color: Colors.blue.shade900),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
             actions: [
               TextButton(
                 onPressed: () => Navigator.of(ctx).pop(),
                 child: Text(l10n.cancel),
               ),
-              TextButton(
+              ElevatedButton.icon(
                 onPressed: () {
                   Navigator.of(ctx).pop();
-                  // 잔여 횟수만큼만 번역 가능한 세그먼트 수를 안내
-                  // 개별 번역 모드로 폴백
+                  appState.watchAdAndRefillInScan(context);
                 },
-                child: Text(l10n.confirm),
+                icon: Icon(Icons.play_circle_outline, size: 18.sp),
+                label: Text(l10n.watchAdAndRefill),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.indigo,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.r)),
+                ),
               ),
             ],
           ),
         );
         return;
       }
+
       setState(() {
         _showBulkResult = true;
       });
