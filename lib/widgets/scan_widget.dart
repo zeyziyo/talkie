@@ -405,10 +405,17 @@ class _ScanWidgetState extends State<ScanWidget> {
                         ? null
                         : () {
                             if (_showBulkResult) {
+                              // 일괄 결과 → 개별 목록으로 전환
                               setState(() {
                                 _showBulkResult = false;
                               });
+                            } else if (appState.hasBulkResult) {
+                              // 이미 일괄 번역 완료 → 바로 결과 뷰로 전환
+                              setState(() {
+                                _showBulkResult = true;
+                              });
                             } else {
+                              // 미번역 → 방법 선택 다이얼로그
                               _showTranslateMethodDialog(appState);
                             }
                           },

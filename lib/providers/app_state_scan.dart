@@ -206,17 +206,13 @@ extension AppStateScanExtension on AppState {
     final needed = _scanReviewItems.length;
     _isTranslatingAll = true;
     _isSaved = false;
-    // 모든 세그먼트를 '번역 중' 상태로 표시
-    for (int i = 0; i < needed; i++) {
-      _isTranslatingSingleMap[i] = true;
-    }
     notify();
 
     try {
-      // 전체 원문 합산
+      // 전체 원문 합산 (개행으로 구분)
       final combinedText = _scanReviewItems
           .map((e) => e['original'].toString().trim())
-          .join('\n\n');
+          .join('\n');
       final sourceLangCode = _scanReviewItems.first['lang'] as String;
 
       final result = await TranslationService.translate(
@@ -227,27 +223,23 @@ extension AppStateScanExtension on AppState {
 
       final translatedText = result['text']?.toString() ?? '';
       if (result['isValid'] == true || translatedText.isNotEmpty) {
-        // "\n\n"로 분할하여 각 세그먼트에 배분
-        final parts = translatedText.split('\n\n');
-        for (int i = 0; i < needed; i++) {
-          _scanReviewItems[i]['translated'] =
-              i < parts.length ? parts[i].trim() : translatedText.trim();
-        }
+        // 일괄 번역 전용 필드에 저장 (세그먼트에는 미저장)
+        _bulkOriginal = combinedText;
+        _bulkTranslated = translatedText;
         // 세그먼트 수만큼 usage 차감
         for (int i = 0; i < needed; i++) {
           await _usageService.incrementUsage();
         }
       } else {
         final reason = result['reason']?.toString() ?? 'ERROR';
-        for (int i = 0; i < needed; i++) {
-          _scanReviewItems[i]['translated'] = reason;
-        }
+        _bulkOriginal = combinedText;
+        _bulkTranslated = reason;
       }
     } catch (e) {
-      final errorStr = e.toString();
-      for (int i = 0; i < needed; i++) {
-        _scanReviewItems[i]['translated'] = 'Error: $errorStr';
-      }
+      _bulkOriginal = _scanReviewItems
+          .map((e) => e['original'].toString().trim())
+          .join('\n');
+      _bulkTranslated = 'Error: $e';
     } finally {
       _isTranslatingAll = false;
       _isTranslatingSingleMap.clear();
@@ -341,15 +333,19 @@ extension AppStateScanExtension on AppState {
     notify();
   }
 
-  String get combinedOriginal =>
-      _scanReviewItems.map((e) => e['original']).join('\n\n');
+  /// 일괄 번역 결과가 존재하는지 여부
+  bool get hasBulkResult => _bulkTranslated.isNotEmpty;
 
-  String get combinedTranslated {
-    return _scanReviewItems.map((e) {
-      final t = e['translated']?.toString() ?? '';
-      return t.isEmpty ? '[...]' : t;
-    }).join('\n\n');
-  }
+  String get combinedOriginal => _bulkOriginal.isNotEmpty
+      ? _bulkOriginal
+      : _scanReviewItems.map((e) => e['original']).join('\n');
+
+  String get combinedTranslated => _bulkTranslated.isNotEmpty
+      ? _bulkTranslated
+      : _scanReviewItems.map((e) {
+          final t = e['translated']?.toString() ?? '';
+          return t.isEmpty ? '[...]' : t;
+        }).join('\n');
 
   Future<void> saveScannedItem() async {
     if (_scanReviewItems.isEmpty) return;

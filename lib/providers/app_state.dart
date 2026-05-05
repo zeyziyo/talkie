@@ -353,6 +353,8 @@ class AppState extends ChangeNotifier {
   final String _scanDetectedLang = 'auto';
   List<Map<String, dynamic>> _scanReviewItems = []; // Phase 27: Multi-language segments
   final Map<int, bool> _isTranslatingSingleMap = {}; // Phase 17480: Per-segment loading
+  String _bulkOriginal = '';   // 일괄 번역 원문 (일괄 모드 전용)
+  String _bulkTranslated = ''; // 일괄 번역 결과 (일괄 모드 전용)
 
   // Mode 3 (Scan) Getters
   File? get scannedImage => _scannedImage;
@@ -379,6 +381,8 @@ class AppState extends ChangeNotifier {
     _scannedImage = null;
     _scannedText = '';
     _scanReviewItems = [];
+    _bulkOriginal = '';
+    _bulkTranslated = '';
     _isSaved = false;
     notify();
   }
