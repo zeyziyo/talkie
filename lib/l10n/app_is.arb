@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Verjaðu stöðina með því að segja orðið áður en óvinurinn kemur.",
   "wordDefenseTitle": "Orðavörn",
   "wordModeLabel": "Orðastilling",
+  "scanViewSegments": "Skoða lista fyrir sig",
+  "scanViewBulk": "Skoða samþættar niðurstöður",
   "scanTranslateMethodTitle": "Veldu þýðingaraðferð",
   "scanTranslateMethodSubtitle": "Hvernig viltu þýða textann sem þekkist?",
   "scanBulkTranslate": "Þýða allt í einu",

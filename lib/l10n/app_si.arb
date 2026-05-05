@@ -757,6 +757,8 @@
   "wordDefenseDesc": "සතුරා පැමිණීමට පෙර වචනය කියා පදනම ආරක්ෂා කරන්න.",
   "wordDefenseTitle": "වචන ආරක්ෂාව",
   "wordModeLabel": "වචන මාදිලිය",
+  "scanViewSegments": "තනි ලැයිස්තු දසුන",
+  "scanViewBulk": "ඒකාබද්ධ ප්‍රතිඵල දසුන",
   "scanTranslateMethodTitle": "පරිවර්තන ක්‍රමය තෝරන්න",
   "scanTranslateMethodSubtitle": "හඳුනාගත් පෙළ පරිවර්තනය කරන්නේ කෙසේද?",
   "scanBulkTranslate": "සමස්ත තොග පරිවර්තනය",

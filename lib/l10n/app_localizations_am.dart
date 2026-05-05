@@ -1226,6 +1226,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get wordModeLabel => 'የቃል ሁነታ';
 
   @override
+  String get scanViewSegments => 'ነጠላ ዝርዝር ዕይታ';
+
+  @override
+  String get scanViewBulk => 'ውህድ ውጤት ዕይታ';
+
+  @override
   String get scanTranslateMethodTitle => 'የትርጉም ዘዴ ምረጥ';
 
   @override

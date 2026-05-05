@@ -757,6 +757,8 @@
   "wordDefenseDesc": "ป้องกันฐานของคุณโดยพูดคำศัพท์ก่อนที่ศัตรูจะมาถึง",
   "wordDefenseTitle": "ป้องกันคำศัพท์",
   "wordModeLabel": "โหมดคำศัพท์",
+  "scanViewSegments": "ดูรายการแยก",
+  "scanViewBulk": "ดูผลลัพธ์รวม",
   "scanTranslateMethodTitle": "เลือกวิธีการแปล",
   "scanTranslateMethodSubtitle": "คุณต้องการแปลข้อความที่ตรวจพบอย่างไร",
   "scanBulkTranslate": "แปลแบบกลุ่มทั้งหมด",

@@ -1260,6 +1260,12 @@ class AppLocalizationsTa extends AppLocalizations {
   String get wordModeLabel => 'சொல் பயன்முறை';
 
   @override
+  String get scanViewSegments => 'தனிப்பட்ட பட்டியலைப் பார்';
+
+  @override
+  String get scanViewBulk => 'ஒருங்கிணைந்த முடிவுகளைப் பார்';
+
+  @override
   String get scanTranslateMethodTitle =>
       'மொழிபெயர்ப்பு முறையைத் தேர்ந்தெடுக்கவும்';
 

@@ -1252,6 +1252,12 @@ class AppLocalizationsRo extends AppLocalizations {
   String get wordModeLabel => 'Mod cuvânt';
 
   @override
+  String get scanViewSegments => 'Vizualizare listă individuală';
+
+  @override
+  String get scanViewBulk => 'Vizualizare rezultate integrate';
+
+  @override
   String get scanTranslateMethodTitle => 'Selectați metoda de traducere';
 
   @override

@@ -757,6 +757,8 @@
   "wordDefenseDesc": "শত্ৰু অহাৰ আগতে শব্দ কৈ ঘাটি ৰক্ষা কৰক।",
   "wordDefenseTitle": "শব্দ ৰক্ষা",
   "wordModeLabel": "শব্দ মোড",
+  "scanViewSegments": "পৃথক তালিকা দৃশ্য",
+  "scanViewBulk": "একত্ৰিত ফলাফল দৃশ্য",
   "scanTranslateMethodTitle": "অনুবাদ পদ্ধতি নিৰ্ব্বাচন কৰক",
   "scanTranslateMethodSubtitle": "আপুনি কেনেকৈ চিনাক্ত কৰা পাঠ অনুবাদ কৰিব?",
   "scanBulkTranslate": "সমূহীয়া অনুবাদ",

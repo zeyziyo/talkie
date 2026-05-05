@@ -1248,6 +1248,12 @@ class AppLocalizationsMn extends AppLocalizations {
   String get wordModeLabel => 'Үгийн горим';
 
   @override
+  String get scanViewSegments => 'Жагсаалтын хувь хүн харах';
+
+  @override
+  String get scanViewBulk => 'Нэгдсэн үр дүнг харах';
+
+  @override
   String get scanTranslateMethodTitle => 'Орчуулах аргаа сонгох';
 
   @override

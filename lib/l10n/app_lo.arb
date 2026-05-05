@@ -757,6 +757,8 @@
   "wordDefenseDesc": "ປ້ອງກັນຖານໂດຍການເວົ້າຄໍາສັບກ່ອນທີ່ສັດຕູຈະມາຮອດ.",
   "wordDefenseTitle": "ປ້ອງກັນຄຳສັບ",
   "wordModeLabel": "ໂໝດຄຳສັບ",
+  "scanViewSegments": "ເບິ່ງລາຍການແຍກ",
+  "scanViewBulk": "ເບິ່ງຜົນໄດ້ຮັບລວມ",
   "scanTranslateMethodTitle": "ເລືອກວິທີການແປ",
   "scanTranslateMethodSubtitle": "ທ່ານຕ້ອງການແປຂໍ້ຄວາມທີ່ກວດພົບແນວໃດ?",
   "scanBulkTranslate": "ແປເປັນຈໍານວນຫຼາຍ",

@@ -757,6 +757,8 @@
   "wordDefenseDesc": "ਦੁਸ਼ਮਣ ਦੇ ਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ਬਦ ਬੋਲ ਕੇ ਅਧਾਰ ਦਾ ਬਚਾਅ ਕਰੋ।",
   "wordDefenseTitle": "ਸ਼ਬਦ ਡਿਫੈਂਸ",
   "wordModeLabel": "ਸ਼ਬਦ ਮੋਡ",
+  "scanViewSegments": "ਵੱਖਰੀ ਸੂਚੀ ਵਿਊ",
+  "scanViewBulk": "ਇਕੱਠੇ ਨਤੀਜੇ ਵੇਖੋ",
   "scanTranslateMethodTitle": "ਅਨੁਵਾਦ ਕਰਨ ਦਾ ਤਰੀਕਾ ਚੁਣੋ",
   "scanTranslateMethodSubtitle": "ਪਛਾਣੇ ਗਏ ਟੈਕਸਟ ਦਾ ਅਨੁਵਾਦ ਕਿਵੇਂ ਕਰੀਏ?",
   "scanBulkTranslate": "ਇਕੱਠਾ ਅਨੁਵਾਦ",

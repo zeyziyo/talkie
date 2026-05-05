@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Nói từ trước khi kẻ thù đến để bảo vệ căn cứ.",
   "wordDefenseTitle": "Phòng thủ từ vựng",
   "wordModeLabel": "Chế độ từ",
+  "scanViewSegments": "Xem danh sách riêng lẻ",
+  "scanViewBulk": "Xem kết quả tổng hợp",
   "scanTranslateMethodTitle": "Chọn phương pháp dịch",
   "scanTranslateMethodSubtitle": "Bạn muốn dịch văn bản đã nhận dạng như thế nào?",
   "scanBulkTranslate": "Dịch hàng loạt toàn bộ",

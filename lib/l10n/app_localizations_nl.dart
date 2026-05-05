@@ -1248,6 +1248,12 @@ class AppLocalizationsNl extends AppLocalizations {
   String get wordModeLabel => 'Woordmodus';
 
   @override
+  String get scanViewSegments => 'Individuele lijstweergave';
+
+  @override
+  String get scanViewBulk => 'Gecombineerde resultatenweergave';
+
+  @override
   String get scanTranslateMethodTitle => 'Vertaalmethode selecteren';
 
   @override

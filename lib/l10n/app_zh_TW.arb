@@ -757,6 +757,8 @@
   "wordDefenseDesc": "在敵人抵達前說出單字來防禦基地。",
   "wordDefenseTitle": "單字防禦",
   "wordModeLabel": "單字模式",
+  "scanViewSegments": "個別清單檢視",
+  "scanViewBulk": "整合結果檢視",
   "scanTranslateMethodTitle": "選擇翻譯方式",
   "scanTranslateMethodSubtitle": "您要如何翻譯識別到的文字？",
   "scanBulkTranslate": "整批翻譯",

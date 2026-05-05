@@ -757,6 +757,8 @@
   "wordDefenseDesc": "הגן על הבסיס שלך על ידי אמירת מילים לפני שהאויבים מגיעים.",
   "wordDefenseTitle": "הגנת מילים",
   "wordModeLabel": "מצב מילים",
+  "scanViewSegments": "הצגת רשימה נפרדת",
+  "scanViewBulk": "הצגת תוצאות משולבות",
   "scanTranslateMethodTitle": "בחירת שיטת תרגום",
   "scanTranslateMethodSubtitle": "כיצד תרצה לתרגם את הטקסט שזוהה?",
   "scanBulkTranslate": "תרגום אצווה מלא",

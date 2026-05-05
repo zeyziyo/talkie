@@ -1243,6 +1243,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get wordModeLabel => 'Sanatila';
 
   @override
+  String get scanViewSegments => 'Yksittäinen luettelo';
+
+  @override
+  String get scanViewBulk => 'Integroitu näkymä';
+
+  @override
   String get scanTranslateMethodTitle => 'Valitse käännöstapa';
 
   @override

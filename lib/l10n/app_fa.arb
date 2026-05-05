@@ -757,6 +757,8 @@
   "wordDefenseDesc": "با گفتن کلمه، قبل از رسیدن دشمنان از پایگاه دفاع کنید.",
   "wordDefenseTitle": "دفاع از کلمه",
   "wordModeLabel": "حالت کلمه",
+  "scanViewSegments": "نمای فهرست مجزا",
+  "scanViewBulk": "نمای نتایج یکپارچه",
   "scanTranslateMethodTitle": "روش ترجمه را انتخاب کنید",
   "scanTranslateMethodSubtitle": "چگونه متن شناسایی شده را ترجمه کنیم؟",
   "scanBulkTranslate": "ترجمه دسته‌ای کامل",

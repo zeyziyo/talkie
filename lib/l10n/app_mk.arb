@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Одбранете ја базата зборувајќи ги зборовите пред непријателите да пристигнат.",
   "wordDefenseTitle": "Одбрана на зборови",
   "wordModeLabel": "Режим на зборови",
+  "scanViewSegments": "Приказ на индивидуални списоци",
+  "scanViewBulk": "Приказ на збирни резултати",
   "scanTranslateMethodTitle": "Изберете метод за превод",
   "scanTranslateMethodSubtitle": "Како сакате да го преведете препознаениот текст?",
   "scanBulkTranslate": "Превод на цел текст",

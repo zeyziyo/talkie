@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Dushman kelishidan oldin so'zni aytib bazani himoya qiling.",
   "wordDefenseTitle": "So'z himoyasi",
   "wordModeLabel": "So'z rejimi",
+  "scanViewSegments": "Yakka tartibdagi ro'yxat ko'rinishi",
+  "scanViewBulk": "Birlashtirilgan natijalar ko'rinishi",
   "scanTranslateMethodTitle": "Tarjima usulini tanlang",
   "scanTranslateMethodSubtitle": "Aniqlangan matnni qanday tarjima qilasiz?",
   "scanBulkTranslate": "To'liq ommaviy tarjima",

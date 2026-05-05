@@ -1245,6 +1245,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get wordModeLabel => 'Mod Perkataan';
 
   @override
+  String get scanViewSegments => 'Lihat Senarai Berasingan';
+
+  @override
+  String get scanViewBulk => 'Lihat Hasil Gabungan';
+
+  @override
   String get scanTranslateMethodTitle => 'Pilih Kaedah Terjemahan';
 
   @override

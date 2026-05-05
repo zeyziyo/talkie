@@ -1209,6 +1209,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get wordModeLabel => '単語モード';
 
   @override
+  String get scanViewSegments => '個別リスト表示';
+
+  @override
+  String get scanViewBulk => '統合結果表示';
+
+  @override
   String get scanTranslateMethodTitle => '翻訳方法の選択';
 
   @override

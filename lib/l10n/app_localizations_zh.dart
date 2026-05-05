@@ -1202,6 +1202,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get wordModeLabel => '单词模式';
 
   @override
+  String get scanViewSegments => '单独列表视图';
+
+  @override
+  String get scanViewBulk => '合并结果视图';
+
+  @override
   String get scanTranslateMethodTitle => '选择翻译方式';
 
   @override
@@ -2445,6 +2451,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get wordModeLabel => '单词模式';
+
+  @override
+  String get scanViewSegments => '单独列表视图';
+
+  @override
+  String get scanViewBulk => '合并结果视图';
 
   @override
   String get scanTranslateMethodTitle => '选择翻译方式';
@@ -3691,6 +3703,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get wordModeLabel => '單字模式';
+
+  @override
+  String get scanViewSegments => '個別清單檢視';
+
+  @override
+  String get scanViewBulk => '整合結果檢視';
 
   @override
   String get scanTranslateMethodTitle => '選擇翻譯方式';

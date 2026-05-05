@@ -1216,6 +1216,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get wordModeLabel => '단어 모드';
 
   @override
+  String get scanViewSegments => '개별 목록 보기';
+
+  @override
+  String get scanViewBulk => '통합 결과 보기';
+
+  @override
   String get scanTranslateMethodTitle => '번역 방법 선택';
 
   @override

@@ -1248,6 +1248,12 @@ class AppLocalizationsTe extends AppLocalizations {
   String get wordModeLabel => 'పద మోడ్';
 
   @override
+  String get scanViewSegments => 'వ్యక్తిగత జాబితా వీక్షణ';
+
+  @override
+  String get scanViewBulk => 'సంగ్రహ ఫలితాల వీక్షణ';
+
+  @override
   String get scanTranslateMethodTitle => 'అనువాద పద్ధతిని ఎంచుకోండి';
 
   @override

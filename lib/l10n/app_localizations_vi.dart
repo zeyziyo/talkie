@@ -1236,6 +1236,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get wordModeLabel => 'Chế độ từ';
 
   @override
+  String get scanViewSegments => 'Xem danh sách riêng lẻ';
+
+  @override
+  String get scanViewBulk => 'Xem kết quả tổng hợp';
+
+  @override
   String get scanTranslateMethodTitle => 'Chọn phương pháp dịch';
 
   @override

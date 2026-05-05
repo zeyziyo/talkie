@@ -1246,6 +1246,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get wordModeLabel => 'Tryb słów';
 
   @override
+  String get scanViewSegments => 'Widok pojedynczych list';
+
+  @override
+  String get scanViewBulk => 'Widok zbiorczych wyników';
+
+  @override
   String get scanTranslateMethodTitle => 'Wybierz metodę tłumaczenia';
 
   @override

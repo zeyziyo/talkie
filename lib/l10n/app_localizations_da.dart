@@ -1242,6 +1242,12 @@ class AppLocalizationsDa extends AppLocalizations {
   String get wordModeLabel => 'Ordtilstand';
 
   @override
+  String get scanViewSegments => 'Vis individuel liste';
+
+  @override
+  String get scanViewBulk => 'Vis samlet resultat';
+
+  @override
   String get scanTranslateMethodTitle => 'Vælg oversættelsesmetode';
 
   @override

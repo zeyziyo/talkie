@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Kaitske oma baasi, öeldes sõnu enne, kui vaenlased kohale jõuavad.",
   "wordDefenseTitle": "Sõnade kaitse",
   "wordModeLabel": "Sõnarežiim",
+  "scanViewSegments": "Vaata eraldi loendina",
+  "scanViewBulk": "Vaata koondtulemusi",
   "scanTranslateMethodTitle": "Vali tõlkemeetod",
   "scanTranslateMethodSubtitle": "Kuidas tuvastatud teksti tõlkida?",
   "scanBulkTranslate": "Hulgatõlge",

@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Verdedig je basis door de woorden te zeggen voordat de vijand arriveert.",
   "wordDefenseTitle": "Woordverdediging",
   "wordModeLabel": "Woordmodus",
+  "scanViewSegments": "Individuele lijstweergave",
+  "scanViewBulk": "Gecombineerde resultatenweergave",
   "scanTranslateMethodTitle": "Vertaalmethode selecteren",
   "scanTranslateMethodSubtitle": "Hoe wil je de herkende tekst vertalen?",
   "scanBulkTranslate": "Volledige batchvertaling",

@@ -1248,6 +1248,12 @@ class AppLocalizationsSk extends AppLocalizations {
   String get wordModeLabel => 'Režim slov';
 
   @override
+  String get scanViewSegments => 'Zobraziť samostatne';
+
+  @override
+  String get scanViewBulk => 'Zobraziť súhrn';
+
+  @override
   String get scanTranslateMethodTitle => 'Vyberte spôsob prekladu';
 
   @override

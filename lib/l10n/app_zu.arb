@@ -103,6 +103,10 @@
   },
   "errorHateSpeech": "Ayikwazi ukuhumusha ngoba iqukethe inkulumo enzondo.",
   "errorOtherSafety": "Ukuhumusha kunqatshelwe yinqubomgomo yokuphepha ye-AI.",
+  "errorQuotaExceeded": "Isilinganiso sakho sansuku zonke sezinsizakalo ze-AI sesiphelile. Sicela uzame futhi kamuva noma kusasa.",
+  "errorSafetyPolicy": "Ukuhumusha kunqatshelwe ngenxa yenqubomgomo yokuphepha ye-AI.",
+  "copyOriginal": "Kopisha okwangempela",
+  "originalCopied": "Umbhalo wokuqala ukopishiwe.",
   "errorProfanity": "Ayikwazi ukuhumusha ngoba iqukethe amazwi angcolile.",
   "errorSelectCategory": "Khetha igama noma umusho kuqala!",
   "errorSexualContent": "Ayikwazi ukuhumusha ngoba iqukethe okuqukethwe okungcolile.",
@@ -476,11 +480,13 @@
   "@saved": {
     "description": "Data saved status"
   },
+  "originalText": "Umbhalo wokuqala",
   "saving": "Kuyalondolozwa...",
   "@saving": {
     "description": "Save in progress"
   },
   "scanInstructions": "Khetha isithombe ozosithwebula",
+  "scanNoMatch": "Akukho mbhalo otholakale esithombeni ofana nolimi olukhethiwe lokufunda. Sicela uhlole izilungiselelo zakho zolimi.",
   "scanNotSupported": "Lolu limi alisekeli isici sokuskena. I-OCR njengamanje isekela kuphela izinhlamvu zesiLatini, zesiShayina, zesiDevanagari (isiHindi, njll.), zesiJapane, nezaseKorea.",
   "scanLabel": "Thwebula",
   "score": "Ukunemba: {score}%",
@@ -751,5 +757,30 @@
   "wordDefenseDesc": "Vikela isizinda ngokukhuluma igama ngaphambi kokufika kwesitha.",
   "wordDefenseTitle": "Ukuzivikela Ngegama",
   "wordModeLabel": "Imodi Yamagama",
-  "yourPronunciation": "Ukuphinyiselwa Kwakho"
+  "scanViewSegments": "Buka uhlu ngalunye",
+  "scanViewBulk": "Buka imiphumela ehlanganisiwe",
+  "scanTranslateMethodTitle": "Khetha indlela yokuhumusha",
+  "scanTranslateMethodSubtitle": "Uzohumusha kanjani umbhalo oboniwe?",
+  "scanBulkTranslate": "Humusha konke ngesikhathi esisodwa",
+  "scanBulkTranslateDesc": "Humusha wonke umbhalo ngesicelo esisodwa",
+  "scanSegmentTranslate": "Humusha ngasinye ngasinye",
+  "scanSegmentTranslateDesc": "Khetha izigaba ongathanda ukuzihumusha ngazinye",
+  "scanTranslatingAll": "Ihumusha konke...",
+  "scanBulkTranslateButton": "Humusha konke",
+  "scanInsufficientLimit": "Awunayo inani elanele lokuhumusha. Kudingeka: {needed}, Okusele: {remaining}",
+  "@scanInsufficientLimit": {
+    "placeholders": {
+      "needed": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "combinedResult": "Umphumela ohlanganisiwe",
+  "errorLimitReached": "Awunayo inani elanele lokuhumusha. Ungathanda ukubuka isikhangiso ukuze uthole eziyi-10 ezengeziwe?",
+  "yourPronunciation": "Ukuphinyiselwa Kwakho",
+  "helpLimitDetails": "💡 [Imininingwane Yomkhawulo Wokuhumusha]\nUkuhumusha kwamahhala okungama-20 kunikezwa nsuku zonke phakathi kwamabili. Noma ngabe usuqedile wonke, ungabuka isikhangiso ukuze uthole ukuhumusha okungeziwe okuyi-10 ngokushesha.",
+  "scanDetails": "• Layisha izithombe ezivela kukhamera noma kugalari ukuze ukhiphe futhi uhumushe umbhalo.\n• Ungathepha imisho eminingi esesithombeni esisodwa ukuze uyihumushe ngokuhlukana.\n• Uma ungenazo izikhathi zokuhumusha ezanele, ungabuka isikhangiso ngokushesha ukuze uthole eziyi-10 ezengeziwe."
 }

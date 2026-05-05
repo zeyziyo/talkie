@@ -1257,6 +1257,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get wordModeLabel => 'Wort-Modus';
 
   @override
+  String get scanViewSegments => 'Einzelne Listenansicht';
+
+  @override
+  String get scanViewBulk => 'Zusammengefasste Ergebnisansicht';
+
+  @override
   String get scanTranslateMethodTitle => 'Übersetzungsmethode wählen';
 
   @override

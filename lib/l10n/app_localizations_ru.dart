@@ -1246,6 +1246,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get wordModeLabel => 'Режим слов';
 
   @override
+  String get scanViewSegments => 'Просмотр отдельных списков';
+
+  @override
+  String get scanViewBulk => 'Сводный просмотр результатов';
+
+  @override
   String get scanTranslateMethodTitle => 'Выбор способа перевода';
 
   @override

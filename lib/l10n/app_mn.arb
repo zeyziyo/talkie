@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Дайсан ирэхээс өмнө үгийг хэлж баазыг хамгаалаарай.",
   "wordDefenseTitle": "Үг хамгаалах",
   "wordModeLabel": "Үгийн горим",
+  "scanViewSegments": "Жагсаалтын хувь хүн харах",
+  "scanViewBulk": "Нэгдсэн үр дүнг харах",
   "scanTranslateMethodTitle": "Орчуулах аргаа сонгох",
   "scanTranslateMethodSubtitle": "Та яаж таньсан текстийг орчуулах вэ?",
   "scanBulkTranslate": "Бөөнөөр орчуулах",

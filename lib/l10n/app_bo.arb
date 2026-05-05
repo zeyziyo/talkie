@@ -757,6 +757,8 @@
   "wordDefenseDesc": "དགྲ་འབྱོར་བའི་སྔོན་ལ་ཐ་སྙད་ཤོད་དེ་རྟེན་གཞི་སྲུང་སྐྱོབ་བྱེད།",
   "wordDefenseTitle": "ཐ་སྙད་སྲུང་བ།",
   "wordModeLabel": "ཐ་སྙད་ཐབས་ལམ།",
+  "scanViewSegments": "ངོས་སྡེ་ཚན་སྒེར་རེ་བལྟ་བ།",
+  "scanViewBulk": "མཐུན་སྒྲིལ་གྱི་འབྲས་བུ་བལྟ་བ།",
   "scanTranslateMethodTitle": "འགྱུར་ཐབས་འདེམས་པ།",
   "scanTranslateMethodSubtitle": "ངོས་འཛིན་བྱས་པའི་ཡི་གེ་དེ་ཇི་ལྟར་བསྒྱུར་དགོས་སམ།",
   "scanBulkTranslate": "སྡོམ་འབོར་གྱི་སྒྱུར་བཅོས།",

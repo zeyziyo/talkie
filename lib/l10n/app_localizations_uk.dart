@@ -1239,6 +1239,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get wordModeLabel => 'Режим слів';
 
   @override
+  String get scanViewSegments => 'Перегляд окремим списком';
+
+  @override
+  String get scanViewBulk => 'Перегляд зведених результатів';
+
+  @override
   String get scanTranslateMethodTitle => 'Виберіть спосіб перекладу';
 
   @override

@@ -1255,6 +1255,12 @@ class AppLocalizationsUz extends AppLocalizations {
   String get wordModeLabel => 'So\'z rejimi';
 
   @override
+  String get scanViewSegments => 'Yakka tartibdagi ro\'yxat ko\'rinishi';
+
+  @override
+  String get scanViewBulk => 'Birlashtirilgan natijalar ko\'rinishi';
+
+  @override
   String get scanTranslateMethodTitle => 'Tarjima usulini tanlang';
 
   @override

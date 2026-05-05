@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Digues la paraula abans que l'enemic arribi per defensar la base.",
   "wordDefenseTitle": "Defensa de paraules",
   "wordModeLabel": "Mode de paraules",
+  "scanViewSegments": "Vista de llista individual",
+  "scanViewBulk": "Vista de resultats consolidats",
   "scanTranslateMethodTitle": "Selecciona el mètode de traducció",
   "scanTranslateMethodSubtitle": "Com vols traduir el text reconegut?",
   "scanBulkTranslate": "Traducció per lots completa",

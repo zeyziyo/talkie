@@ -23,6 +23,8 @@ class ScanWidget extends StatefulWidget {
 
 class _ScanWidgetState extends State<ScanWidget> {
   final TextEditingController _textController = TextEditingController();
+  bool _showBulkResult = false; // 일괄 번역 결과 노출 여부
+
 
   @override
   void dispose() {
@@ -41,8 +43,13 @@ class _ScanWidgetState extends State<ScanWidget> {
       ),
     );
     if (croppedImage == null) return;
+    
+    setState(() {
+      _showBulkResult = false; // 새 스캔 시작 시 초기화
+    });
 
     await appState.recognizeTextFromImage(croppedImage);
+
 
     // OCR 완료 후 번역 방법 선택 다이얼로그 표시
     if (mounted && appState.scanReviewItems.isNotEmpty) {
@@ -88,6 +95,9 @@ class _ScanWidgetState extends State<ScanWidget> {
         );
         return;
       }
+      setState(() {
+        _showBulkResult = true;
+      });
       appState.translateAllSegments();
     }
 
@@ -140,8 +150,14 @@ class _ScanWidgetState extends State<ScanWidget> {
                   iconColor: Colors.indigo.shade600,
                   title: l10n.scanSegmentTranslate,
                   subtitle: l10n.scanSegmentTranslateDesc,
-                  onTap: () => Navigator.of(ctx).pop(),
+                  onTap: () {
+                    Navigator.of(ctx).pop();
+                    setState(() {
+                      _showBulkResult = false;
+                    });
+                  },
                 ),
+
                 SizedBox(height: 8.h),
                 TextButton(
                   onPressed: () => Navigator.of(ctx).pop(),
@@ -341,23 +357,41 @@ class _ScanWidgetState extends State<ScanWidget> {
                         color: Colors.indigo.shade900),
                   ),
                 ),
-                // 일괄 번역 버튼
+                // 뷰 모드 전환 버튼
                 if (!appState.isTranslatingAll)
                   TextButton.icon(
                     onPressed: appState.isTranslating
                         ? null
-                        : () => _showTranslateMethodDialog(appState),
-                    icon: Icon(Icons.bolt_rounded,
-                        size: 16.sp, color: Colors.amber.shade700),
+                        : () {
+                            if (_showBulkResult) {
+                              setState(() {
+                                _showBulkResult = false;
+                              });
+                            } else {
+                              _showTranslateMethodDialog(appState);
+                            }
+                          },
+                    icon: Icon(
+                        _showBulkResult
+                            ? Icons.list_alt_rounded
+                            : Icons.bolt_rounded,
+                        size: 16.sp,
+                        color: _showBulkResult
+                            ? Colors.indigo.shade700
+                            : Colors.amber.shade700),
                     label: Text(
-                      l10n.scanBulkTranslateButton,
+                      _showBulkResult
+                          ? l10n.scanViewSegments
+                          : l10n.scanBulkTranslateButton,
                       style: TextStyle(
                           fontSize: 13.sp,
                           color: Colors.indigo.shade700,
                           fontWeight: FontWeight.bold),
                     ),
                     style: TextButton.styleFrom(
-                      backgroundColor: Colors.amber.shade50,
+                      backgroundColor: _showBulkResult
+                          ? Colors.indigo.shade50
+                          : Colors.amber.shade50,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.r)),
                       padding: EdgeInsets.symmetric(
@@ -379,8 +413,11 @@ class _ScanWidgetState extends State<ScanWidget> {
             ),
             SizedBox(height: 12.h),
 
-            // Segment Cards
-            ...List.generate(appState.scanReviewItems.length, (index) {
+            // 3. 번역 결과 뷰 (모드에 따라 분기)
+            if (!_showBulkResult) ...[
+              // [개별 번역 모드] Segment Cards
+              ...List.generate(appState.scanReviewItems.length, (index) {
+
               final item = appState.scanReviewItems[index];
               final String langCode = item['lang'] ?? 'auto';
               final String langName = LanguageConstants.getLanguageMap(
@@ -564,9 +601,8 @@ class _ScanWidgetState extends State<ScanWidget> {
                 ),
               );
             }),
-
-            // Combined Result View
-            if (appState.scanReviewItems.isNotEmpty) ...[
+            ] else ...[
+              // [일괄 번역 모드] Combined Result View
               SizedBox(height: 32.h),
               Container(
                 padding: EdgeInsets.all(20.w),

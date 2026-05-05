@@ -1250,6 +1250,12 @@ class AppLocalizationsBe extends AppLocalizations {
   String get wordModeLabel => 'Рэжым слоў';
 
   @override
+  String get scanViewSegments => 'Паказаць асобныя спісы';
+
+  @override
+  String get scanViewBulk => 'Паказаць зводны вынік';
+
+  @override
   String get scanTranslateMethodTitle => 'Выберыце спосаб перакладу';
 
   @override

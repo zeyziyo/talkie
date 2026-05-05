@@ -757,6 +757,8 @@
   "wordDefenseDesc": "ಶತ್ರುಗಳು ಬರುವ ಮೊದಲು ಪದಗಳನ್ನು ಮಾತನಾಡುವ ಮೂಲಕ ನಿಮ್ಮ ನೆಲೆಯನ್ನು ರಕ್ಷಿಸಿ.",
   "wordDefenseTitle": "ಪದ ರಕ್ಷಣೆ",
   "wordModeLabel": "ಪದ ಮೋಡ್",
+  "scanViewSegments": "ಪ್ರತ್ಯೇಕ ಪಟ್ಟಿ ವೀಕ್ಷಣೆ",
+  "scanViewBulk": "ಸಂಯೋಜಿತ ಫಲಿತಾಂಶ ವೀಕ್ಷಣೆ",
   "scanTranslateMethodTitle": "ಅನುವಾದ ವಿಧಾನವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
   "scanTranslateMethodSubtitle": "ಗುರುತಿಸಲಾದ ಪಠ್ಯವನ್ನು ಹೇಗೆ ಅನುವಾದಿಸುವುದು?",
   "scanBulkTranslate": "ಸಮಗ್ರ ಗುಂಪು ಅನುವಾದ",

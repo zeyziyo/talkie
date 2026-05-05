@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Forsvar basen ved å si ordet før fiendene ankommer.",
   "wordDefenseTitle": "Ord-forsvar",
   "wordModeLabel": "Ordmodus",
+  "scanViewSegments": "Vis individuell liste",
+  "scanViewBulk": "Vis samlet resultat",
   "scanTranslateMethodTitle": "Velg oversettelsesmetode",
   "scanTranslateMethodSubtitle": "Hvordan vil du oversette den gjenkjente teksten?",
   "scanBulkTranslate": "Oversett alt samlet",

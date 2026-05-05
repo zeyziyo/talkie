@@ -1242,6 +1242,12 @@ class AppLocalizationsSw extends AppLocalizations {
   String get wordModeLabel => 'Hali ya Neno';
 
   @override
+  String get scanViewSegments => 'Onyesha Orodha Binafsi';
+
+  @override
+  String get scanViewBulk => 'Onyesha Matokeo Yaliyounganishwa';
+
+  @override
   String get scanTranslateMethodTitle => 'Chagua Njia ya Tafsiri';
 
   @override

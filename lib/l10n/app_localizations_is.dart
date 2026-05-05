@@ -1247,6 +1247,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get wordModeLabel => 'Orðastilling';
 
   @override
+  String get scanViewSegments => 'Skoða lista fyrir sig';
+
+  @override
+  String get scanViewBulk => 'Skoða samþættar niðurstöður';
+
+  @override
   String get scanTranslateMethodTitle => 'Veldu þýðingaraðferð';
 
   @override

@@ -1252,6 +1252,12 @@ class AppLocalizationsLt extends AppLocalizations {
   String get wordModeLabel => 'Žodžių režimas';
 
   @override
+  String get scanViewSegments => 'Atskiros eilutės rodinys';
+
+  @override
+  String get scanViewBulk => 'Integruoto rezultato rodinys';
+
+  @override
   String get scanTranslateMethodTitle => 'Pasirinkite vertimo būdą';
 
   @override

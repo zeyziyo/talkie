@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Захистіть базу, вимовляючи слова, перш ніж вороги досягнуть її.",
   "wordDefenseTitle": "Захист слів",
   "wordModeLabel": "Режим слів",
+  "scanViewSegments": "Перегляд окремим списком",
+  "scanViewBulk": "Перегляд зведених результатів",
   "scanTranslateMethodTitle": "Виберіть спосіб перекладу",
   "scanTranslateMethodSubtitle": "Як перекласти розпізнаний текст?",
   "scanBulkTranslate": "Переклад усього тексту",

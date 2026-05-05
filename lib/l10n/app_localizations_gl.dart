@@ -1256,6 +1256,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get wordModeLabel => 'Modo palabra';
 
   @override
+  String get scanViewSegments => 'Ver lista individual';
+
+  @override
+  String get scanViewBulk => 'Ver resultado consolidado';
+
+  @override
   String get scanTranslateMethodTitle => 'Seleccionar método de tradución';
 
   @override

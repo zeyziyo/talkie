@@ -1241,6 +1241,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get wordModeLabel => 'শব্দ মোড';
 
   @override
+  String get scanViewSegments => 'পৃথক তালিকা দেখুন';
+
+  @override
+  String get scanViewBulk => 'সমন্বিত ফলাফল দেখুন';
+
+  @override
   String get scanTranslateMethodTitle => 'অনুবাদ করার পদ্ধতি নির্বাচন করুন';
 
   @override

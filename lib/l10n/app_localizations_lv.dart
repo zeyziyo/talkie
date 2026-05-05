@@ -1250,6 +1250,12 @@ class AppLocalizationsLv extends AppLocalizations {
   String get wordModeLabel => 'Vārdu režīms';
 
   @override
+  String get scanViewSegments => 'Atsevišķu sarakstu skats';
+
+  @override
+  String get scanViewBulk => 'Apvienotu rezultātu skats';
+
+  @override
   String get scanTranslateMethodTitle => 'Izvēlieties tulkošanas metodi';
 
   @override

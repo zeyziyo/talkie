@@ -1241,6 +1241,12 @@ class AppLocalizationsUr extends AppLocalizations {
   String get wordModeLabel => 'لفظ موڈ';
 
   @override
+  String get scanViewSegments => 'انفرادی فہرست دیکھیں';
+
+  @override
+  String get scanViewBulk => 'مربوط نتائج دیکھیں';
+
+  @override
   String get scanTranslateMethodTitle => 'ترجمہ کرنے کا طریقہ منتخب کریں';
 
   @override

@@ -1233,6 +1233,12 @@ class AppLocalizationsTh extends AppLocalizations {
   String get wordModeLabel => 'โหมดคำศัพท์';
 
   @override
+  String get scanViewSegments => 'ดูรายการแยก';
+
+  @override
+  String get scanViewBulk => 'ดูผลลัพธ์รวม';
+
+  @override
   String get scanTranslateMethodTitle => 'เลือกวิธีการแปล';
 
   @override

@@ -1256,6 +1256,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get wordModeLabel => 'Режим на зборови';
 
   @override
+  String get scanViewSegments => 'Приказ на индивидуални списоци';
+
+  @override
+  String get scanViewBulk => 'Приказ на збирни резултати';
+
+  @override
   String get scanTranslateMethodTitle => 'Изберете метод за превод';
 
   @override

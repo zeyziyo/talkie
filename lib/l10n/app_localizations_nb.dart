@@ -1250,6 +1250,12 @@ class AppLocalizationsNb extends AppLocalizations {
   String get wordModeLabel => 'Ordmodus';
 
   @override
+  String get scanViewSegments => 'Vis individuell liste';
+
+  @override
+  String get scanViewBulk => 'Vis samlet resultat';
+
+  @override
   String get scanTranslateMethodTitle => 'Velg oversettelsesmetode';
 
   @override

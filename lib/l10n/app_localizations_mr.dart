@@ -1238,6 +1238,12 @@ class AppLocalizationsMr extends AppLocalizations {
   String get wordModeLabel => 'शब्द मोड';
 
   @override
+  String get scanViewSegments => 'वैयक्तिक यादी पहा';
+
+  @override
+  String get scanViewBulk => 'एकात्मिक परिणाम पहा';
+
+  @override
   String get scanTranslateMethodTitle => 'भाषांतर पद्धत निवडा';
 
   @override

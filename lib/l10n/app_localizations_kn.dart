@@ -1246,6 +1246,12 @@ class AppLocalizationsKn extends AppLocalizations {
   String get wordModeLabel => 'ಪದ ಮೋಡ್';
 
   @override
+  String get scanViewSegments => 'ಪ್ರತ್ಯೇಕ ಪಟ್ಟಿ ವೀಕ್ಷಣೆ';
+
+  @override
+  String get scanViewBulk => 'ಸಂಯೋಜಿತ ಫಲಿತಾಂಶ ವೀಕ್ಷಣೆ';
+
+  @override
   String get scanTranslateMethodTitle => 'ಅನುವಾದ ವಿಧಾನವನ್ನು ಆಯ್ಕೆಮಾಡಿ';
 
   @override

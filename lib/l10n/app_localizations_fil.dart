@@ -1253,6 +1253,12 @@ class AppLocalizationsFil extends AppLocalizations {
   String get wordModeLabel => 'Word Mode';
 
   @override
+  String get scanViewSegments => 'Tingnan nang isa-isa';
+
+  @override
+  String get scanViewBulk => 'Pinagsamang Resulta';
+
+  @override
   String get scanTranslateMethodTitle => 'Pumili ng Paraan ng Pagsasalin';
 
   @override

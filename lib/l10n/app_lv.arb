@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Aizstāviet bāzi, izrunājot vārdus, pirms ienaidnieks sasniedz.",
   "wordDefenseTitle": "Vārdu aizsardzība",
   "wordModeLabel": "Vārdu režīms",
+  "scanViewSegments": "Atsevišķu sarakstu skats",
+  "scanViewBulk": "Apvienotu rezultātu skats",
   "scanTranslateMethodTitle": "Izvēlieties tulkošanas metodi",
   "scanTranslateMethodSubtitle": "Kā vēlaties tulkot atpazīto tekstu?",
   "scanBulkTranslate": "Pilna apjoma tulkošana",

@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Mbroni bazën duke thënë fjalët përpara se të mbërrijnë armiqtë.",
   "wordDefenseTitle": "Mbrojtja e fjalëve",
   "wordModeLabel": "Modaliteti i fjalës",
+  "scanViewSegments": "Shiko listën individuale",
+  "scanViewBulk": "Shiko rezultatin e kombinuar",
   "scanTranslateMethodTitle": "Zgjidhni metodën e përkthimit",
   "scanTranslateMethodSubtitle": "Si dëshironi të përktheni tekstin e njohur?",
   "scanBulkTranslate": "Përkthim i plotë në grup",

@@ -1253,6 +1253,12 @@ class AppLocalizationsKa extends AppLocalizations {
   String get wordModeLabel => 'სიტყვების რეჟიმი';
 
   @override
+  String get scanViewSegments => 'ცალკეული სიის ნახვა';
+
+  @override
+  String get scanViewBulk => 'შედეგების ინტეგრირებული ნახვა';
+
+  @override
   String get scanTranslateMethodTitle => 'თარგმნის მეთოდის არჩევა';
 
   @override

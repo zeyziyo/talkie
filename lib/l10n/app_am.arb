@@ -757,6 +757,8 @@
   "wordDefenseDesc": "ጠላት ከመድረሱ በፊት ቃሉን በመናገር ጣቢያዎን ይከላከሉ።",
   "wordDefenseTitle": "የቃል መከላከያ",
   "wordModeLabel": "የቃል ሁነታ",
+  "scanViewSegments": "ነጠላ ዝርዝር ዕይታ",
+  "scanViewBulk": "ውህድ ውጤት ዕይታ",
   "scanTranslateMethodTitle": "የትርጉም ዘዴ ምረጥ",
   "scanTranslateMethodSubtitle": "የታወቀውን ጽሑፍ እንዴት መተርጎም ይፈልጋሉ?",
   "scanBulkTranslate": "ሁሉንም በአንድ ጊዜ መተርጎም",

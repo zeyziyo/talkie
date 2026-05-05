@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Amddiffynwch y sylfaen trwy ddweud y gair cyn i'r gelyn gyrraedd.",
   "wordDefenseTitle": "Amddiffyn Gair",
   "wordModeLabel": "Modd Gair",
+  "scanViewSegments": "Gweld Rhestr Unigol",
+  "scanViewBulk": "Gweld Canlyniadau Cyfunedig",
   "scanTranslateMethodTitle": "Dewis dull cyfieithu",
   "scanTranslateMethodSubtitle": "Sut ydych chi am gyfieithu'r testun a adnabuwyd?",
   "scanBulkTranslate": "Cyfieithu swmp cyfan",

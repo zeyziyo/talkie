@@ -1252,6 +1252,12 @@ class AppLocalizationsMl extends AppLocalizations {
   String get wordModeLabel => 'വാക്ക് മോഡ്';
 
   @override
+  String get scanViewSegments => 'വ്യക്തിഗത ലിസ്റ്റ് കാഴ്‌ച';
+
+  @override
+  String get scanViewBulk => 'സംയോജിത ഫല കാഴ്‌ച';
+
+  @override
   String get scanTranslateMethodTitle => 'വിവർത്തന രീതി തിരഞ്ഞെടുക്കുക';
 
   @override

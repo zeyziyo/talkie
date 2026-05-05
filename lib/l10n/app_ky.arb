@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Душман келгенге чейин сөздү айтып базаны коргоңуз.",
   "wordDefenseTitle": "Сөз коргоо",
   "wordModeLabel": "Сөз режими",
+  "scanViewSegments": "Айрым тизме көрүнүшү",
+  "scanViewBulk": "Бириктирилген жыйынтык көрүнүшү",
   "scanTranslateMethodTitle": "Которуу ыкмасын тандаңыз",
   "scanTranslateMethodSubtitle": "Таанылган текстти кантип которосуз?",
   "scanBulkTranslate": "Толугу менен которуу",

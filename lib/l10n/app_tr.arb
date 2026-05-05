@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Düşmanlar ulaşmadan kelimeyi söyleyerek üssü savunun.",
   "wordDefenseTitle": "Kelime Savunması",
   "wordModeLabel": "Kelime Modu",
+  "scanViewSegments": "Ayrı Liste Görünümü",
+  "scanViewBulk": "Toplu Sonuç Görünümü",
   "scanTranslateMethodTitle": "Çeviri Yöntemi Seç",
   "scanTranslateMethodSubtitle": "Algılanan metin nasıl çevrilecek?",
   "scanBulkTranslate": "Toplu Çeviri",

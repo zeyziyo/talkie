@@ -1246,6 +1246,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get wordModeLabel => 'Szó mód';
 
   @override
+  String get scanViewSegments => 'Egyes listanézet';
+
+  @override
+  String get scanViewBulk => 'Összevont eredmény nézet';
+
+  @override
   String get scanTranslateMethodTitle => 'Fordítási mód kiválasztása';
 
   @override

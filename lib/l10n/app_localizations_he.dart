@@ -1223,6 +1223,12 @@ class AppLocalizationsHe extends AppLocalizations {
   String get wordModeLabel => 'מצב מילים';
 
   @override
+  String get scanViewSegments => 'הצגת רשימה נפרדת';
+
+  @override
+  String get scanViewBulk => 'הצגת תוצאות משולבות';
+
+  @override
   String get scanTranslateMethodTitle => 'בחירת שיטת תרגום';
 
   @override

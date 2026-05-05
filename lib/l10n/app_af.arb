@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Verdedig die basis deur woorde te sê voordat die vyande arriveer.",
   "wordDefenseTitle": "Woordverdediging",
   "wordModeLabel": "Woordmodus",
+  "scanViewSegments": "Individuele lysaansig",
+  "scanViewBulk": "Gekonsolideerde resultate aansig",
   "scanTranslateMethodTitle": "Kies vertaalmetode",
   "scanTranslateMethodSubtitle": "Hoe moet die herken teks vertaal word?",
   "scanBulkTranslate": "Grootmaatvertaling",

@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Bráňte základňu vyslovením slov predtým, ako dorazí nepriateľ.",
   "wordDefenseTitle": "Slovná obrana",
   "wordModeLabel": "Režim slov",
+  "scanViewSegments": "Zobraziť samostatne",
+  "scanViewBulk": "Zobraziť súhrn",
   "scanTranslateMethodTitle": "Vyberte spôsob prekladu",
   "scanTranslateMethodSubtitle": "Ako chcete preložiť rozpoznaný text?",
   "scanBulkTranslate": "Preklad celého naraz",

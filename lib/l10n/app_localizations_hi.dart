@@ -1249,6 +1249,12 @@ class AppLocalizationsHi extends AppLocalizations {
   String get wordModeLabel => 'शब्द मोड';
 
   @override
+  String get scanViewSegments => 'अलग-अलग सूची देखें';
+
+  @override
+  String get scanViewBulk => 'एकीकृत परिणाम देखें';
+
+  @override
   String get scanTranslateMethodTitle => 'अनुवाद विधि चुनें';
 
   @override

@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Branite bazo tako, da izgovorite besede, preden prispejo sovražniki.",
   "wordDefenseTitle": "Besedna obramba",
   "wordModeLabel": "Besedni način",
+  "scanViewSegments": "Posamezen seznam",
+  "scanViewBulk": "Združeni rezultati",
   "scanTranslateMethodTitle": "Izberite način prevajanja",
   "scanTranslateMethodSubtitle": "Kako želite prevesti prepoznano besedilo?",
   "scanBulkTranslate": "Množično prevajanje celote",

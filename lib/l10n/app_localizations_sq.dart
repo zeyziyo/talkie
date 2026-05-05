@@ -1260,6 +1260,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get wordModeLabel => 'Modaliteti i fjalës';
 
   @override
+  String get scanViewSegments => 'Shiko listën individuale';
+
+  @override
+  String get scanViewBulk => 'Shiko rezultatin e kombinuar';
+
+  @override
   String get scanTranslateMethodTitle => 'Zgjidhni metodën e përkthimit';
 
   @override

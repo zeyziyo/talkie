@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Υπερασπιστείτε τη βάση σας λέγοντας τις λέξεις πριν φτάσουν οι εχθροί.",
   "wordDefenseTitle": "Άμυνα λέξεων",
   "wordModeLabel": "Λειτουργία λέξεων",
+  "scanViewSegments": "Εμφάνιση μεμονωμένων καταχωρίσεων",
+  "scanViewBulk": "Εμφάνιση ενοποιημένων αποτελεσμάτων",
   "scanTranslateMethodTitle": "Επιλογή μεθόδου μετάφρασης",
   "scanTranslateMethodSubtitle": "Πώς θέλετε να μεταφραστούν τα αναγνωρισμένα κείμενα;",
   "scanBulkTranslate": "Μαζική μετάφραση",

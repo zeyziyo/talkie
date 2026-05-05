@@ -1240,6 +1240,12 @@ class AppLocalizationsSv extends AppLocalizations {
   String get wordModeLabel => 'Ord-läge';
 
   @override
+  String get scanViewSegments => 'Individuell listvy';
+
+  @override
+  String get scanViewBulk => 'Samlat resultat';
+
+  @override
   String get scanTranslateMethodTitle => 'Välj översättningsmetod';
 
   @override

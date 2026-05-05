@@ -1247,6 +1247,12 @@ class AppLocalizationsEu extends AppLocalizations {
   String get wordModeLabel => 'Hitzen modua';
 
   @override
+  String get scanViewSegments => 'Banakako zerrenda';
+
+  @override
+  String get scanViewBulk => 'Emaitza bateratuak';
+
+  @override
   String get scanTranslateMethodTitle => 'Itzultzeko metodoa aukeratu';
 
   @override

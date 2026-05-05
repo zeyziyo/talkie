@@ -1251,6 +1251,12 @@ class AppLocalizationsAz extends AppLocalizations {
   String get wordModeLabel => 'Söz Rejimi';
 
   @override
+  String get scanViewSegments => 'Fərdi siyahıya baxış';
+
+  @override
+  String get scanViewBulk => 'Birləşdirilmiş nəticələrə baxış';
+
+  @override
   String get scanTranslateMethodTitle => 'Tərcümə üsulunu seçin';
 
   @override

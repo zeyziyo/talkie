@@ -757,6 +757,8 @@
   "wordDefenseDesc": "敵が到着する前に単語を言って基地を守ってください。",
   "wordDefenseTitle": "単語ディフェンス",
   "wordModeLabel": "単語モード",
+  "scanViewSegments": "個別リスト表示",
+  "scanViewBulk": "統合結果表示",
   "scanTranslateMethodTitle": "翻訳方法の選択",
   "scanTranslateMethodSubtitle": "認識されたテキストをどのように翻訳しますか？",
   "scanBulkTranslate": "一括翻訳",

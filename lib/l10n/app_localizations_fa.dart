@@ -1236,6 +1236,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get wordModeLabel => 'حالت کلمه';
 
   @override
+  String get scanViewSegments => 'نمای فهرست مجزا';
+
+  @override
+  String get scanViewBulk => 'نمای نتایج یکپارچه';
+
+  @override
   String get scanTranslateMethodTitle => 'روش ترجمه را انتخاب کنید';
 
   @override

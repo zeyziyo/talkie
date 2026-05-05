@@ -795,6 +795,8 @@
   "@word": {
     "description": "Toggle option for Word"
   },
+  "scanViewSegments": "개별 목록 보기",
+  "scanViewBulk": "통합 결과 보기",
   "scanTranslateMethodTitle": "번역 방법 선택",
   "scanTranslateMethodSubtitle": "인식된 텍스트를 어떻게 번역할까요?",
   "scanBulkTranslate": "전체 일괄 번역",

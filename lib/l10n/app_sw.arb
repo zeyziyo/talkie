@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Tetea msingi wako kwa kusema neno kabla adui hajafika.",
   "wordDefenseTitle": "Ulinzi wa Neno",
   "wordModeLabel": "Hali ya Neno",
+  "scanViewSegments": "Onyesha Orodha Binafsi",
+  "scanViewBulk": "Onyesha Matokeo Yaliyounganishwa",
   "scanTranslateMethodTitle": "Chagua Njia ya Tafsiri",
   "scanTranslateMethodSubtitle": "Ungependa kutafsiri vipi maandishi yaliyotambuliwa?",
   "scanBulkTranslate": "Tafsiri Yote kwa Mkupuo",

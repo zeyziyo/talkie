@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Apginkite savo bazę sakydami žodžius prieš atvykstant priešui.",
   "wordDefenseTitle": "Žodžių gynyba",
   "wordModeLabel": "Žodžių režimas",
+  "scanViewSegments": "Atskiros eilutės rodinys",
+  "scanViewBulk": "Integruoto rezultato rodinys",
   "scanTranslateMethodTitle": "Pasirinkite vertimo būdą",
   "scanTranslateMethodSubtitle": "Kaip norite versti atpažintą tekstą?",
   "scanBulkTranslate": "Visas vertimas paketu",

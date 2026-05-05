@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Одбраните базу изговарањем речи пре него што непријатељ стигне.",
   "wordDefenseTitle": "Одбрана речи",
   "wordModeLabel": "Режим речи",
+  "scanViewSegments": "Приказ појединачних ставки",
+  "scanViewBulk": "Приказ обједињених резултата",
   "scanTranslateMethodTitle": "Изаберите начин превођења",
   "scanTranslateMethodSubtitle": "Како да преведем препознати текст?",
   "scanBulkTranslate": "Превод целог текста",

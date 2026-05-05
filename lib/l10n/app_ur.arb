@@ -757,6 +757,8 @@
   "wordDefenseDesc": "دشمن کے پہنچنے سے پہلے الفاظ کہہ کر اپنے اڈے کا دفاع کریں۔",
   "wordDefenseTitle": "لفظ دفاع",
   "wordModeLabel": "لفظ موڈ",
+  "scanViewSegments": "انفرادی فہرست دیکھیں",
+  "scanViewBulk": "مربوط نتائج دیکھیں",
   "scanTranslateMethodTitle": "ترجمہ کرنے کا طریقہ منتخب کریں",
   "scanTranslateMethodSubtitle": "پہچانی گئی عبارت کا ترجمہ کیسے کریں؟",
   "scanBulkTranslate": "مکمل بیچ ترجمہ",

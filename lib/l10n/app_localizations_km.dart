@@ -1250,6 +1250,12 @@ class AppLocalizationsKm extends AppLocalizations {
   String get wordModeLabel => 'របៀបពាក្យ';
 
   @override
+  String get scanViewSegments => 'មើល​បញ្ជី​ដាច់​ដោយ​ឡែក';
+
+  @override
+  String get scanViewBulk => 'មើល​លទ្ធផល​រួម​បញ្ចូល​គ្នា';
+
+  @override
   String get scanTranslateMethodTitle => 'ជ្រើសរើសវិធីសាស្ត្របកប្រែ';
 
   @override

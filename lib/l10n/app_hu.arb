@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Védd meg a bázisodat úgy, hogy kimondod a szavakat, mielőtt az ellenség odaérne.",
   "wordDefenseTitle": "Szó védelem",
   "wordModeLabel": "Szó mód",
+  "scanViewSegments": "Egyes listanézet",
+  "scanViewBulk": "Összevont eredmény nézet",
   "scanTranslateMethodTitle": "Fordítási mód kiválasztása",
   "scanTranslateMethodSubtitle": "Hogyan fordítsuk le a felismert szöveget?",
   "scanBulkTranslate": "Teljes kötegelt fordítás",

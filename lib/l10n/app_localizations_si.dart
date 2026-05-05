@@ -1244,6 +1244,12 @@ class AppLocalizationsSi extends AppLocalizations {
   String get wordModeLabel => 'වචන මාදිලිය';
 
   @override
+  String get scanViewSegments => 'තනි ලැයිස්තු දසුන';
+
+  @override
+  String get scanViewBulk => 'ඒකාබද්ධ ප්‍රතිඵල දසුන';
+
+  @override
   String get scanTranslateMethodTitle => 'පරිවර්තන ක්‍රමය තෝරන්න';
 
   @override

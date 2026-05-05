@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Pertahankan markas Anda dengan mengucapkan kata-kata sebelum musuh tiba.",
   "wordDefenseTitle": "Pertahanan Kata",
   "wordModeLabel": "Mode Kata",
+  "scanViewSegments": "Lihat Daftar Terpisah",
+  "scanViewBulk": "Lihat Hasil Gabungan",
   "scanTranslateMethodTitle": "Pilih Metode Terjemahan",
   "scanTranslateMethodSubtitle": "Bagaimana Anda ingin menerjemahkan teks yang dikenali?",
   "scanBulkTranslate": "Terjemahan Massal Penuh",

@@ -757,6 +757,8 @@
   "wordDefenseDesc": "शत्रू पोहोचण्यापूर्वी शब्द बोलून आपल्या तळाचे संरक्षण करा.",
   "wordDefenseTitle": "शब्द संरक्षण",
   "wordModeLabel": "शब्द मोड",
+  "scanViewSegments": "वैयक्तिक यादी पहा",
+  "scanViewBulk": "एकात्मिक परिणाम पहा",
   "scanTranslateMethodTitle": "भाषांतर पद्धत निवडा",
   "scanTranslateMethodSubtitle": "ओळखलेला मजकूर कसा भाषांतरित करायचा?",
   "scanBulkTranslate": "एकत्रित भाषांतर",

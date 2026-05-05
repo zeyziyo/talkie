@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Broń bazy, wymawiając słowa zanim dotrą wrogowie.",
   "wordDefenseTitle": "Obrona słów",
   "wordModeLabel": "Tryb słów",
+  "scanViewSegments": "Widok pojedynczych list",
+  "scanViewBulk": "Widok zbiorczych wyników",
   "scanTranslateMethodTitle": "Wybierz metodę tłumaczenia",
   "scanTranslateMethodSubtitle": "Jak przetłumaczyć rozpoznany tekst?",
   "scanBulkTranslate": "Tłumaczenie zbiorcze",

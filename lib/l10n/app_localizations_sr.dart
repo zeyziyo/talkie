@@ -1248,6 +1248,12 @@ class AppLocalizationsSr extends AppLocalizations {
   String get wordModeLabel => 'Режим речи';
 
   @override
+  String get scanViewSegments => 'Приказ појединачних ставки';
+
+  @override
+  String get scanViewBulk => 'Приказ обједињених резултата';
+
+  @override
   String get scanTranslateMethodTitle => 'Изаберите начин превођења';
 
   @override

@@ -757,6 +757,8 @@
   "wordDefenseDesc": "دافع عن قاعدتك عن طريق قول الكلمات قبل أن يصل العدو.",
   "wordDefenseTitle": "الدفاع عن الكلمات",
   "wordModeLabel": "وضع الكلمات",
+  "scanViewSegments": "عرض القائمة الفردية",
+  "scanViewBulk": "عرض النتائج المجمعة",
   "scanTranslateMethodTitle": "اختر طريقة الترجمة",
   "scanTranslateMethodSubtitle": "كيف تريد ترجمة النص الذي تم التعرف عليه؟",
   "scanBulkTranslate": "ترجمة مجمعة كاملة",

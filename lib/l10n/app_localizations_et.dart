@@ -1245,6 +1245,12 @@ class AppLocalizationsEt extends AppLocalizations {
   String get wordModeLabel => 'Sõnarežiim';
 
   @override
+  String get scanViewSegments => 'Vaata eraldi loendina';
+
+  @override
+  String get scanViewBulk => 'Vaata koondtulemusi';
+
+  @override
   String get scanTranslateMethodTitle => 'Vali tõlkemeetod';
 
   @override

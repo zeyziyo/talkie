@@ -1252,6 +1252,12 @@ class AppLocalizationsOr extends AppLocalizations {
   String get wordModeLabel => 'ଶବ୍ଦ ମୋଡ୍';
 
   @override
+  String get scanViewSegments => 'ବ୍ୟକ୍ତିଗତ ତାଲିକା ଦେଖନ୍ତୁ';
+
+  @override
+  String get scanViewBulk => 'ଏକୀକୃତ ଫଳାଫଳ ଦେଖନ୍ତୁ';
+
+  @override
   String get scanTranslateMethodTitle => 'ଅନୁବାଦ ପଦ୍ଧତି ଚୟନ କରନ୍ତୁ';
 
   @override

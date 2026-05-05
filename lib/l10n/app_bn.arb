@@ -757,6 +757,8 @@
   "wordDefenseDesc": "শত্রুরা পৌঁছানোর আগে শব্দ বলে আপনার বেস রক্ষা করুন।",
   "wordDefenseTitle": "শব্দ প্রতিরক্ষা",
   "wordModeLabel": "শব্দ মোড",
+  "scanViewSegments": "পৃথক তালিকা দেখুন",
+  "scanViewBulk": "সমন্বিত ফলাফল দেখুন",
   "scanTranslateMethodTitle": "অনুবাদ করার পদ্ধতি নির্বাচন করুন",
   "scanTranslateMethodSubtitle": "শনাক্ত করা টেক্সট কীভাবে অনুবাদ করবেন?",
   "scanBulkTranslate": "একসাথে সব অনুবাদ",

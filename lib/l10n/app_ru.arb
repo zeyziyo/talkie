@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Защитите базу, произнося слова до того, как враги доберутся до нее.",
   "wordDefenseTitle": "Защита слов",
   "wordModeLabel": "Режим слов",
+  "scanViewSegments": "Просмотр отдельных списков",
+  "scanViewBulk": "Сводный просмотр результатов",
   "scanTranslateMethodTitle": "Выбор способа перевода",
   "scanTranslateMethodSubtitle": "Как переводить распознанный текст?",
   "scanBulkTranslate": "Пакетный перевод всего текста",

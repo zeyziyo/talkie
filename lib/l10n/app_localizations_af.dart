@@ -1237,6 +1237,12 @@ class AppLocalizationsAf extends AppLocalizations {
   String get wordModeLabel => 'Woordmodus';
 
   @override
+  String get scanViewSegments => 'Individuele lysaansig';
+
+  @override
+  String get scanViewBulk => 'Gekonsolideerde resultate aansig';
+
+  @override
   String get scanTranslateMethodTitle => 'Kies vertaalmetode';
 
   @override

@@ -1239,6 +1239,12 @@ class AppLocalizationsCs extends AppLocalizations {
   String get wordModeLabel => 'Režim slov';
 
   @override
+  String get scanViewSegments => 'Zobrazit jednotlivě';
+
+  @override
+  String get scanViewBulk => 'Zobrazit souhrnně';
+
+  @override
   String get scanTranslateMethodTitle => 'Zvolte metodu překladu';
 
   @override

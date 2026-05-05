@@ -1240,6 +1240,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get wordModeLabel => 'Ordmodus';
 
   @override
+  String get scanViewSegments => 'Vis individuelle oppføringer';
+
+  @override
+  String get scanViewBulk => 'Vis samlet resultat';
+
+  @override
   String get scanTranslateMethodTitle => 'Velg oversettelsesmetode';
 
   @override

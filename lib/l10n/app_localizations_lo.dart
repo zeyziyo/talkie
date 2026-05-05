@@ -1241,6 +1241,12 @@ class AppLocalizationsLo extends AppLocalizations {
   String get wordModeLabel => 'ໂໝດຄຳສັບ';
 
   @override
+  String get scanViewSegments => 'ເບິ່ງລາຍການແຍກ';
+
+  @override
+  String get scanViewBulk => 'ເບິ່ງຜົນໄດ້ຮັບລວມ';
+
+  @override
   String get scanTranslateMethodTitle => 'ເລືອກວິທີການແປ';
 
   @override

@@ -1253,6 +1253,12 @@ class AppLocalizationsKy extends AppLocalizations {
   String get wordModeLabel => 'Сөз режими';
 
   @override
+  String get scanViewSegments => 'Айрым тизме көрүнүшү';
+
+  @override
+  String get scanViewBulk => 'Бириктирилген жыйынтык көрүнүшү';
+
+  @override
   String get scanTranslateMethodTitle => 'Которуу ыкмасын тандаңыз';
 
   @override

@@ -1241,6 +1241,12 @@ class AppLocalizationsGu extends AppLocalizations {
   String get wordModeLabel => 'શબ્દ મોડ';
 
   @override
+  String get scanViewSegments => 'વ્યક્તિગત યાદી જુઓ';
+
+  @override
+  String get scanViewBulk => 'સંકલિત પરિણામ જુઓ';
+
+  @override
   String get scanTranslateMethodTitle => 'અનુવાદ પદ્ધતિ પસંદ કરો';
 
   @override

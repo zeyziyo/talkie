@@ -1256,6 +1256,12 @@ class AppLocalizationsCy extends AppLocalizations {
   String get wordModeLabel => 'Modd Gair';
 
   @override
+  String get scanViewSegments => 'Gweld Rhestr Unigol';
+
+  @override
+  String get scanViewBulk => 'Gweld Canlyniadau Cyfunedig';
+
+  @override
   String get scanTranslateMethodTitle => 'Dewis dull cyfieithu';
 
   @override

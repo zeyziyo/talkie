@@ -1253,6 +1253,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get wordModeLabel => 'Modo palabra';
 
   @override
+  String get scanViewSegments => 'Ver lista individual';
+
+  @override
+  String get scanViewBulk => 'Ver resultados combinados';
+
+  @override
   String get scanTranslateMethodTitle => 'Seleccionar método de traducción';
 
   @override

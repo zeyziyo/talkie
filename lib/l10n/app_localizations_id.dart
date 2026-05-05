@@ -1247,6 +1247,12 @@ class AppLocalizationsId extends AppLocalizations {
   String get wordModeLabel => 'Mode Kata';
 
   @override
+  String get scanViewSegments => 'Lihat Daftar Terpisah';
+
+  @override
+  String get scanViewBulk => 'Lihat Hasil Gabungan';
+
+  @override
   String get scanTranslateMethodTitle => 'Pilih Metode Terjemahan';
 
   @override

@@ -1247,6 +1247,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get wordModeLabel => 'Λειτουργία λέξεων';
 
   @override
+  String get scanViewSegments => 'Εμφάνιση μεμονωμένων καταχωρίσεων';
+
+  @override
+  String get scanViewBulk => 'Εμφάνιση ενοποιημένων αποτελεσμάτων';
+
+  @override
   String get scanTranslateMethodTitle => 'Επιλογή μεθόδου μετάφρασης';
 
   @override

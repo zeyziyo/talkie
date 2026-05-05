@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Verteidigen Sie Ihre Basis, indem Sie Wörter sagen, bevor die Feinde ankommen.",
   "wordDefenseTitle": "Wortverteidigung",
   "wordModeLabel": "Wort-Modus",
+  "scanViewSegments": "Einzelne Listenansicht",
+  "scanViewBulk": "Zusammengefasste Ergebnisansicht",
   "scanTranslateMethodTitle": "Übersetzungsmethode wählen",
   "scanTranslateMethodSubtitle": "Wie sollen erkannte Texte übersetzt werden?",
   "scanBulkTranslate": "Gesamtübersetzung",

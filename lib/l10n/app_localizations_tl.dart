@@ -1260,6 +1260,12 @@ class AppLocalizationsTl extends AppLocalizations {
   String get wordModeLabel => 'Word Mode';
 
   @override
+  String get scanViewSegments => 'Tingnan nang Isa-isa';
+
+  @override
+  String get scanViewBulk => 'Tingnan ang Pinagsama-sama';
+
+  @override
   String get scanTranslateMethodTitle => 'Piliin ang Paraan ng Pagsasalin';
 
   @override

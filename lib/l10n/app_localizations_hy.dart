@@ -1257,6 +1257,12 @@ class AppLocalizationsHy extends AppLocalizations {
   String get wordModeLabel => 'Բառի ռեժիմ';
 
   @override
+  String get scanViewSegments => 'Առանձին ցուցակ';
+
+  @override
+  String get scanViewBulk => 'Միավորված արդյունքներ';
+
+  @override
   String get scanTranslateMethodTitle => 'Ընտրեք թարգմանության մեթոդը';
 
   @override

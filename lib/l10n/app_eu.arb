@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Hitz egin hitzak etsaiak iritsi baino lehen oinarria defendatzeko.",
   "wordDefenseTitle": "Hitzen defentsa",
   "wordModeLabel": "Hitzen modua",
+  "scanViewSegments": "Banakako zerrenda",
+  "scanViewBulk": "Emaitza bateratuak",
   "scanTranslateMethodTitle": "Itzultzeko metodoa aukeratu",
   "scanTranslateMethodSubtitle": "Nola itzuli behar da hautemandako testua?",
   "scanBulkTranslate": "Osoko itzulpen masiboa",

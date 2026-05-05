@@ -1247,6 +1247,12 @@ class AppLocalizationsTr extends AppLocalizations {
   String get wordModeLabel => 'Kelime Modu';
 
   @override
+  String get scanViewSegments => 'Ayrı Liste Görünümü';
+
+  @override
+  String get scanViewBulk => 'Toplu Sonuç Görünümü';
+
+  @override
   String get scanTranslateMethodTitle => 'Çeviri Yöntemi Seç';
 
   @override

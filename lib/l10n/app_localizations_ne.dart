@@ -1249,6 +1249,12 @@ class AppLocalizationsNe extends AppLocalizations {
   String get wordModeLabel => 'शब्द मोड';
 
   @override
+  String get scanViewSegments => 'व्यक्तिगत सूची हेर्नुहोस्';
+
+  @override
+  String get scanViewBulk => 'एकीकृत परिणाम हेर्नुहोस्';
+
+  @override
   String get scanTranslateMethodTitle => 'अनुवाद विधि छान्नुहोस्';
 
   @override

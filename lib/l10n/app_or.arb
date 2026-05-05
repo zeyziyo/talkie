@@ -757,6 +757,8 @@
   "wordDefenseDesc": "ଶତ୍ରୁ ପହଞ୍ଚିବା ପୂର୍ବରୁ ଏକ ଶବ୍ଦ କହି ବେସ୍ ରକ୍ଷା କରନ୍ତୁ।",
   "wordDefenseTitle": "ଶବ୍ଦ ପ୍ରତିରକ୍ଷା",
   "wordModeLabel": "ଶବ୍ଦ ମୋଡ୍",
+  "scanViewSegments": "ବ୍ୟକ୍ତିଗତ ତାଲିକା ଦେଖନ୍ତୁ",
+  "scanViewBulk": "ଏକୀକୃତ ଫଳାଫଳ ଦେଖନ୍ତୁ",
   "scanTranslateMethodTitle": "ଅନୁବାଦ ପଦ୍ଧତି ଚୟନ କରନ୍ତୁ",
   "scanTranslateMethodSubtitle": "ଚିହ୍ନଟ ହୋଇଥିବା ଟେକ୍ସଟକୁ କିପରି ଅନୁବାଦ କରିବେ?",
   "scanBulkTranslate": "ସମ୍ପୂର୍ଣ୍ଣ ବ୍ୟାଚ୍ ଅନୁବାଦ",

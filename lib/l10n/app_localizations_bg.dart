@@ -1253,6 +1253,12 @@ class AppLocalizationsBg extends AppLocalizations {
   String get wordModeLabel => 'Режим „Думи“';
 
   @override
+  String get scanViewSegments => 'Преглед на отделни списъци';
+
+  @override
+  String get scanViewBulk => 'Преглед на обобщени резултати';
+
+  @override
   String get scanTranslateMethodTitle => 'Избор на метод за превод';
 
   @override

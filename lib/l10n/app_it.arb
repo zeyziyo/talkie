@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Difendi la base pronunciando le parole prima che i nemici arrivino.",
   "wordDefenseTitle": "Difesa delle parole",
   "wordModeLabel": "Modalità parola",
+  "scanViewSegments": "Visualizza elenco singolo",
+  "scanViewBulk": "Visualizza risultati combinati",
   "scanTranslateMethodTitle": "Seleziona metodo di traduzione",
   "scanTranslateMethodSubtitle": "Come vuoi tradurre il testo riconosciuto?",
   "scanBulkTranslate": "Traduci interamente in blocco",

@@ -1263,6 +1263,12 @@ class AppLocalizationsMy extends AppLocalizations {
   String get wordModeLabel => 'စကားလုံး ပုံစံ';
 
   @override
+  String get scanViewSegments => 'တစ်ဦးချင်းစာရင်းကြည့်ရန်';
+
+  @override
+  String get scanViewBulk => 'ပေါင်းစည်းရလဒ်များကို ကြည့်ရန်';
+
+  @override
   String get scanTranslateMethodTitle => 'ဘာသာပြန်နည်းကို ရွေးပါ';
 
   @override

@@ -1250,6 +1250,12 @@ class AppLocalizationsKk extends AppLocalizations {
   String get wordModeLabel => 'Сөз режимі';
 
   @override
+  String get scanViewSegments => 'Жеке тізім көрінісі';
+
+  @override
+  String get scanViewBulk => 'Біріктірілген нәтиже көрінісі';
+
+  @override
   String get scanTranslateMethodTitle => 'Аударма әдісін таңдау';
 
   @override

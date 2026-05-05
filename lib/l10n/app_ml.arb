@@ -757,6 +757,8 @@
   "wordDefenseDesc": "ശത്രുക്കൾ എത്തുന്നതിന് മുൻപ് വാക്ക് പറഞ്ഞ് താവളം രക്ഷിക്കുക.",
   "wordDefenseTitle": "വേഡ് ഡിഫൻസ്",
   "wordModeLabel": "വാക്ക് മോഡ്",
+  "scanViewSegments": "വ്യക്തിഗത ലിസ്റ്റ് കാഴ്‌ച",
+  "scanViewBulk": "സംയോജിത ഫല കാഴ്‌ച",
   "scanTranslateMethodTitle": "വിവർത്തന രീതി തിരഞ്ഞെടുക്കുക",
   "scanTranslateMethodSubtitle": "കണ്ടെത്തിയ ടെക്സ്റ്റ് എങ്ങനെ വിവർത്തനം ചെയ്യണം?",
   "scanBulkTranslate": "மொத்த விவர்ത്തனம்",

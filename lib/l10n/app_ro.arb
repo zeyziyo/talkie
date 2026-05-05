@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Spune cuvintele pentru a apăra baza înainte ca inamicii să ajungă.",
   "wordDefenseTitle": "Apărarea cuvintelor",
   "wordModeLabel": "Mod cuvânt",
+  "scanViewSegments": "Vizualizare listă individuală",
+  "scanViewBulk": "Vizualizare rezultate integrate",
   "scanTranslateMethodTitle": "Selectați metoda de traducere",
   "scanTranslateMethodSubtitle": "Cum ar trebui să traduc textul recunoscut?",
   "scanBulkTranslate": "Traducere în bloc completă",

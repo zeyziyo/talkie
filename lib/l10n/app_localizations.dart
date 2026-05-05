@@ -2514,6 +2514,18 @@ abstract class AppLocalizations {
   /// **'단어 모드'**
   String get wordModeLabel;
 
+  /// No description provided for @scanViewSegments.
+  ///
+  /// In ko, this message translates to:
+  /// **'개별 목록 보기'**
+  String get scanViewSegments;
+
+  /// No description provided for @scanViewBulk.
+  ///
+  /// In ko, this message translates to:
+  /// **'통합 결과 보기'**
+  String get scanViewBulk;
+
   /// No description provided for @scanTranslateMethodTitle.
   ///
   /// In ko, this message translates to:

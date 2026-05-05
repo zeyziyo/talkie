@@ -170,16 +170,17 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get errorQuotaExceeded =>
-      '인공지능 서비스의 일일 할당량이 소진되었습니다. 잠시 후 또는 내일 다시 시도해 주세요.';
+      'Isilinganiso sakho sansuku zonke sezinsizakalo ze-AI sesiphelile. Sicela uzame futhi kamuva noma kusasa.';
 
   @override
-  String get errorSafetyPolicy => 'AI 안전 정책으로 인해 번역이 제한되었습니다.';
+  String get errorSafetyPolicy =>
+      'Ukuhumusha kunqatshelwe ngenxa yenqubomgomo yokuphepha ye-AI.';
 
   @override
-  String get copyOriginal => '원본 복사';
+  String get copyOriginal => 'Kopisha okwangempela';
 
   @override
-  String get originalCopied => '원본 텍스트가 복사되었습니다.';
+  String get originalCopied => 'Umbhalo wokuqala ukopishiwe.';
 
   @override
   String get errorProfanity =>
@@ -799,7 +800,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get saved => 'Kulondoloziwe';
 
   @override
-  String get originalText => '원본 텍스트';
+  String get originalText => 'Umbhalo wokuqala';
 
   @override
   String get saving => 'Kuyalondolozwa...';
@@ -809,7 +810,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get scanNoMatch =>
-      '사진에서 설정된 학습 언어와 일치하는 텍스트를 찾을 수 없습니다. 언어 설정을 확인해 보세요.';
+      'Akukho mbhalo otholakale esithombeni ofana nolimi olukhethiwe lokufunda. Sicela uhlole izilungiselelo zakho zolimi.';
 
   @override
   String get scanNotSupported =>
@@ -1259,48 +1260,58 @@ class AppLocalizationsZu extends AppLocalizations {
   String get wordModeLabel => 'Imodi Yamagama';
 
   @override
-  String get scanTranslateMethodTitle => '번역 방법 선택';
+  String get scanViewSegments => 'Buka uhlu ngalunye';
 
   @override
-  String get scanTranslateMethodSubtitle => '인식된 텍스트를 어떻게 번역할까요?';
+  String get scanViewBulk => 'Buka imiphumela ehlanganisiwe';
 
   @override
-  String get scanBulkTranslate => '전체 일괄 번역';
+  String get scanTranslateMethodTitle => 'Khetha indlela yokuhumusha';
 
   @override
-  String get scanBulkTranslateDesc => '전체 텍스트를 한 번의 요청으로 번역합니다';
+  String get scanTranslateMethodSubtitle =>
+      'Uzohumusha kanjani umbhalo oboniwe?';
 
   @override
-  String get scanSegmentTranslate => '개별 번역';
+  String get scanBulkTranslate => 'Humusha konke ngesikhathi esisodwa';
 
   @override
-  String get scanSegmentTranslateDesc => '번역할 세그먼트를 개별적으로 선택합니다';
+  String get scanBulkTranslateDesc =>
+      'Humusha wonke umbhalo ngesicelo esisodwa';
 
   @override
-  String get scanTranslatingAll => '전체 번역 중...';
+  String get scanSegmentTranslate => 'Humusha ngasinye ngasinye';
 
   @override
-  String get scanBulkTranslateButton => '전체 번역';
+  String get scanSegmentTranslateDesc =>
+      'Khetha izigaba ongathanda ukuzihumusha ngazinye';
+
+  @override
+  String get scanTranslatingAll => 'Ihumusha konke...';
+
+  @override
+  String get scanBulkTranslateButton => 'Humusha konke';
 
   @override
   String scanInsufficientLimit(int needed, int remaining) {
-    return '번역 횟수가 부족합니다. 필요: $needed회, 잔여: $remaining회';
+    return 'Awunayo inani elanele lokuhumusha. Kudingeka: $needed, Okusele: $remaining';
   }
 
   @override
-  String get combinedResult => '통합 결과';
+  String get combinedResult => 'Umphumela ohlanganisiwe';
 
   @override
-  String get errorLimitReached => '번역 횟수가 부족합니다. 광고를 보고 10회를 충전하시겠습니까?';
+  String get errorLimitReached =>
+      'Awunayo inani elanele lokuhumusha. Ungathanda ukubuka isikhangiso ukuze uthole eziyi-10 ezengeziwe?';
 
   @override
   String get yourPronunciation => 'Ukuphinyiselwa Kwakho';
 
   @override
   String get helpLimitDetails =>
-      '💡 [번역 한도 안내]\n매일 자정 20회의 무료 번역이 제공됩니다. 모두 소진하더라도 광고를 시청하면 즉시 10회의 추가 번역이 충전됩니다.';
+      '💡 [Imininingwane Yomkhawulo Wokuhumusha]\nUkuhumusha kwamahhala okungama-20 kunikezwa nsuku zonke phakathi kwamabili. Noma ngabe usuqedile wonke, ungabuka isikhangiso ukuze uthole ukuhumusha okungeziwe okuyi-10 ngokushesha.';
 
   @override
   String get scanDetails =>
-      '• 카메라나 갤러리에서 이미지를 불러와 텍스트를 추출하고 번역합니다.\n• 한 장의 사진에 포함된 여러 문장들을 탭하여 개별적으로 번역할 수 있습니다.\n• 번역 횟수가 부족할 경우 즉시 광고를 시청하여 10회를 추가로 충전할 수 있습니다.';
+      '• Layisha izithombe ezivela kukhamera noma kugalari ukuze ukhiphe futhi uhumushe umbhalo.\n• Ungathepha imisho eminingi esesithombeni esisodwa ukuze uyihumushe ngokuhlukana.\n• Uma ungenazo izikhathi zokuhumusha ezanele, ungabuka isikhangiso ngokushesha ukuze uthole eziyi-10 ezengeziwe.';
 }

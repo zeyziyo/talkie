@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Düşmənlər gəlmədən sözləri deyərək bazanı müdafiə edin.",
   "wordDefenseTitle": "Söz Müdafiəsi",
   "wordModeLabel": "Söz Rejimi",
+  "scanViewSegments": "Fərdi siyahıya baxış",
+  "scanViewBulk": "Birləşdirilmiş nəticələrə baxış",
   "scanTranslateMethodTitle": "Tərcümə üsulunu seçin",
   "scanTranslateMethodSubtitle": "Tanınan mətni necə tərcümə etməli?",
   "scanBulkTranslate": "Toplu tərcümə",

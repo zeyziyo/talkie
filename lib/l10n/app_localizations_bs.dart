@@ -1246,6 +1246,12 @@ class AppLocalizationsBs extends AppLocalizations {
   String get wordModeLabel => 'Način rada riječi';
 
   @override
+  String get scanViewSegments => 'Pregledaj pojedinačno';
+
+  @override
+  String get scanViewBulk => 'Pregledaj objedinjeno';
+
+  @override
   String get scanTranslateMethodTitle => 'Odaberite metod prevođenja';
 
   @override

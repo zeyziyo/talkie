@@ -1243,6 +1243,12 @@ class AppLocalizationsPa extends AppLocalizations {
   String get wordModeLabel => 'ਸ਼ਬਦ ਮੋਡ';
 
   @override
+  String get scanViewSegments => 'ਵੱਖਰੀ ਸੂਚੀ ਵਿਊ';
+
+  @override
+  String get scanViewBulk => 'ਇਕੱਠੇ ਨਤੀਜੇ ਵੇਖੋ';
+
+  @override
   String get scanTranslateMethodTitle => 'ਅਨੁਵਾਦ ਕਰਨ ਦਾ ਤਰੀਕਾ ਚੁਣੋ';
 
   @override

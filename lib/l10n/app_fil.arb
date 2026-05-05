@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Ipagtanggol ang base sa pamamagitan ng pagsasabi ng salita bago makarating ang kaaway.",
   "wordDefenseTitle": "Word Defense",
   "wordModeLabel": "Word Mode",
+  "scanViewSegments": "Tingnan nang isa-isa",
+  "scanViewBulk": "Pinagsamang Resulta",
   "scanTranslateMethodTitle": "Pumili ng Paraan ng Pagsasalin",
   "scanTranslateMethodSubtitle": "Paano mo gustong isalin ang nakuhang teksto?",
   "scanBulkTranslate": "Buong Pagsasalin",

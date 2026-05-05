@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Puolusta tukikohtaa sanomalla sanat ennen kuin viholliset saapuvat.",
   "wordDefenseTitle": "Sana puolustus",
   "wordModeLabel": "Sanatila",
+  "scanViewSegments": "Yksittäinen luettelo",
+  "scanViewBulk": "Integroitu näkymä",
   "scanTranslateMethodTitle": "Valitse käännöstapa",
   "scanTranslateMethodSubtitle": "Miten haluat kääntää tunnistetun tekstin?",
   "scanBulkTranslate": "Käännä kaikki kerralla",

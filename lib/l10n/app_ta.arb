@@ -757,6 +757,8 @@
   "wordDefenseDesc": "எதிரி வருவதற்கு முன் சொல்லைச் சொல்லி தளத்தைப் பாதுகாக்கவும்.",
   "wordDefenseTitle": "வார்த்தை பாதுகாப்பு",
   "wordModeLabel": "சொல் பயன்முறை",
+  "scanViewSegments": "தனிப்பட்ட பட்டியலைப் பார்",
+  "scanViewBulk": "ஒருங்கிணைந்த முடிவுகளைப் பார்",
   "scanTranslateMethodTitle": "மொழிபெயர்ப்பு முறையைத் தேர்ந்தெடுக்கவும்",
   "scanTranslateMethodSubtitle": "அடையாளம் காணப்பட்ட உரையை எப்படி மொழிபெயர்க்க வேண்டும்?",
   "scanBulkTranslate": "மொத்தமாக மொழிபெயர்க்கவும்",

@@ -757,6 +757,8 @@
   "wordDefenseDesc": "Պաշտպանեք ձեր բազան՝ ասելով բառեր, նախքան թշնամին կժամանի:",
   "wordDefenseTitle": "Բառերի պաշտպանություն",
   "wordModeLabel": "Բառի ռեժիմ",
+  "scanViewSegments": "Առանձին ցուցակ",
+  "scanViewBulk": "Միավորված արդյունքներ",
   "scanTranslateMethodTitle": "Ընտրեք թարգմանության մեթոդը",
   "scanTranslateMethodSubtitle": "Ինչպե՞ս թարգմանել ճանաչված տեքստը:",
   "scanBulkTranslate": "Մեծածավալ ամբողջական թարգմանություն",

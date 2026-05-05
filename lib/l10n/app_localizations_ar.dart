@@ -1235,6 +1235,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get wordModeLabel => 'وضع الكلمات';
 
   @override
+  String get scanViewSegments => 'عرض القائمة الفردية';
+
+  @override
+  String get scanViewBulk => 'عرض النتائج المجمعة';
+
+  @override
   String get scanTranslateMethodTitle => 'اختر طريقة الترجمة';
 
   @override

@@ -1251,6 +1251,12 @@ class AppLocalizationsBo extends AppLocalizations {
   String get wordModeLabel => 'ཐ་སྙད་ཐབས་ལམ།';
 
   @override
+  String get scanViewSegments => 'ངོས་སྡེ་ཚན་སྒེར་རེ་བལྟ་བ།';
+
+  @override
+  String get scanViewBulk => 'མཐུན་སྒྲིལ་གྱི་འབྲས་བུ་བལྟ་བ།';
+
+  @override
   String get scanTranslateMethodTitle => 'འགྱུར་ཐབས་འདེམས་པ།';
 
   @override

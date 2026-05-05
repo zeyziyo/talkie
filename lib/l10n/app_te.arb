@@ -757,6 +757,8 @@
   "wordDefenseDesc": "శత్రువులు రాకముందే పదాన్ని చెప్పడం ద్వారా స్థావరాన్ని రక్షించండి.",
   "wordDefenseTitle": "పద రక్షణ",
   "wordModeLabel": "పద మోడ్",
+  "scanViewSegments": "వ్యక్తిగత జాబితా వీక్షణ",
+  "scanViewBulk": "సంగ్రహ ఫలితాల వీక్షణ",
   "scanTranslateMethodTitle": "అనువాద పద్ధతిని ఎంచుకోండి",
   "scanTranslateMethodSubtitle": "గుర్తించబడిన టెక్స్ట్‌ను ఎలా అనువదించాలి?",
   "scanBulkTranslate": "మొత్తం బల్క్ అనువాదం",

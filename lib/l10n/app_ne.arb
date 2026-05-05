@@ -757,6 +757,8 @@
   "wordDefenseDesc": "शत्रु आइपुग्नु अघि शब्द बोलेर आधारको रक्षा गर्नुहोस्।",
   "wordDefenseTitle": "शब्द डिफेन्स",
   "wordModeLabel": "शब्द मोड",
+  "scanViewSegments": "व्यक्तिगत सूची हेर्नुहोस्",
+  "scanViewBulk": "एकीकृत परिणाम हेर्नुहोस्",
   "scanTranslateMethodTitle": "अनुवाद विधि छान्नुहोस्",
   "scanTranslateMethodSubtitle": "कसरी पहिचान गरिएको पाठ अनुवाद गर्ने?",
   "scanBulkTranslate": "एकैचोटी अनुवाद",

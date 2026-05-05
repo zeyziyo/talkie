@@ -757,6 +757,8 @@
   "wordDefenseDesc": "દુશ્મનો આવે તે પહેલાં શબ્દો બોલીને તમારા આધારનો બચાવ કરો.",
   "wordDefenseTitle": "શબ્દ સંરક્ષણ",
   "wordModeLabel": "શબ્દ મોડ",
+  "scanViewSegments": "વ્યક્તિગત યાદી જુઓ",
+  "scanViewBulk": "સંકલિત પરિણામ જુઓ",
   "scanTranslateMethodTitle": "અનુવાદ પદ્ધતિ પસંદ કરો",
   "scanTranslateMethodSubtitle": "તમે ઓળખાયેલા ટેક્સ્ટનો અનુવાદ કેવી રીતે કરશો?",
   "scanBulkTranslate": "સંપૂર્ણ અનુવાદ",
