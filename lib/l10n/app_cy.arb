@@ -782,6 +782,6 @@
   "combinedResult": "Canlyniad cyfunol",
   "errorLimitReached": "Nid oes gennych ddigon o gyfieithiadau ar ôl. Ydych chi am wylio hysbyseb i ail-lenwi 10?",
   "yourPronunciation": "Eich Ynganiad",
-  "helpLimitDetails": "💡 [Canllaw terfyn cyfieithu]\nDarperir 20 o gyfieithiadau am ddim bob dydd am hanner nos. Os byddwch yn eu disbyddu i gyd, gallwch wylio hysbyseb i ail-lenwi 10 o gyfieithiadau ychwanegol ar unwaith.",
+  "helpLimitDetails": "💡 [Canllaw terfyn cyfieithu]\nDarperir 10 o gyfieithiadau am ddim bob dydd am hanner nos. Os byddwch yn eu disbyddu i gyd, gallwch wylio hysbyseb i ail-lenwi 10 o gyfieithiadau ychwanegol ar unwaith.",
   "scanDetails": "• Mewnforio delweddau o'r camera neu'r oriel i dynnu testun a'i gyfieithu.\n• Gallwch dapio a chyfieithu sawl brawddeg mewn un llun yn unigol.\n• Os nad oes gennych ddigon o gyfieithiadau, gallwch wylio hysbyseb ar unwaith i ail-lenwi 10 yn ychwanegol."
 }

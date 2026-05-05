@@ -782,6 +782,6 @@
   "combinedResult": "Birləşdirilmiş nəticə",
   "errorLimitReached": "Tərcümə sayınız bitdi. Reklama baxaraq 10 tərcümə əldə etmək istəyirsiniz?",
   "yourPronunciation": "Mənim Tələffüzüm",
-  "helpLimitDetails": "💡 [Tərcümə limiti]\nHər gün saat 00:00-da 20 pulsuz tərcümə verilir. Hamısı bitsə belə, reklama baxmaqla dərhal 10 əlavə tərcümə əldə edə bilərsiniz.",
+  "helpLimitDetails": "💡 [Tərcümə limiti]\nHər gün saat 00:00-da 10 pulsuz tərcümə verilir. Hamısı bitsə belə, reklama baxmaqla dərhal 10 əlavə tərcümə əldə edə bilərsiniz.",
   "scanDetails": "• Kamera və ya qalereyadan şəkil yükləyərək mətni çıxarın və tərcümə edin.\n• Bir şəkildə olan bir neçə cümləyə toxunaraq ayrı-ayrılıqda tərcümə edə bilərsiniz.\n• Tərcümə sayınız azdırsa, dərhal reklama baxaraq 10 əlavə tərcümə əldə edə bilərsiniz."
 }

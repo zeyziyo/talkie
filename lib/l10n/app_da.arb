@@ -782,6 +782,6 @@
   "combinedResult": "Kombineret resultat",
   "errorLimitReached": "Du har ikke nok oversættelser. Vil du se en reklame og få 10 ekstra?",
   "yourPronunciation": "Din udtale",
-  "helpLimitDetails": "💡 [Vejledning til oversættelsesgrænse]\nDer tilbydes 20 gratis oversættelser hver dag ved midnat. Hvis du bruger dem alle, kan du se en reklame for at få 10 ekstra oversættelser med det samme.",
+  "helpLimitDetails": "💡 [Vejledning til oversættelsesgrænse]\nDer tilbydes 10 gratis oversættelser hver dag ved midnat. Hvis du bruger dem alle, kan du se en reklame for at få 10 ekstra oversættelser med det samme.",
   "scanDetails": "• Importer billeder fra kamera eller galleri for at udtrække og oversætte tekst.\n• Du kan trykke på flere sætninger i et enkelt billede for at oversætte dem individuelt.\n• Hvis du ikke har nok oversættelser, kan du se en reklame med det samme for at få 10 ekstra."
 }

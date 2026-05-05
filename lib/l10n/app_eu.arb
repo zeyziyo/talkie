@@ -782,6 +782,6 @@
   "combinedResult": "Emaitza konbinatua",
   "errorLimitReached": "Itzulpen kopuru nahikorik ez. Iragarki bat ikusi eta 10 itzulpen gehiago kargatu nahi dituzu?",
   "yourPronunciation": "Zure ahoskera",
-  "helpLimitDetails": "💡 [Itzulpen-mugaren gida]\nEgunero 20 doako itzulpen ematen dira gauerdian. Guztiak agortzen badituzu ere, iragarki bat ikusita 10 itzulpen gehiago kargatuko dira berehala.",
+  "helpLimitDetails": "💡 [Itzulpen-mugaren gida]\nEgunero 10 doako itzulpen ematen dira gauerdian. Guztiak agortzen badituzu ere, iragarki bat ikusita 10 itzulpen gehiago kargatuko dira berehala.",
   "scanDetails": "• Kargatu irudiak kameratik edo galeriatik testua atera eta itzultzeko.\n• Argazki batean dauden hainbat esaldi banan-banan itzul ditzakezu, gainean sakatuta.\n• Itzulpen kopururik ez baduzu, iragarki bat ikusita 10 itzulpen gehiago karga ditzakezu."
 }

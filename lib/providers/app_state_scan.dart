@@ -368,8 +368,8 @@ extension AppStateScanExtension on AppState {
     }
   }
 
-  /// 광고를 시청하고 번역 횟수 10회 충전 (AdMob 연동)
-  Future<void> watchAdAndRefillInScan(BuildContext context) async {
+  /// 광고를 시청하고 번역 횟수 10회 충전 (Global)
+  Future<void> watchAdAndRefill(BuildContext context) async {
     _statusMessage = 'Loading Ad...';
     notify();
 

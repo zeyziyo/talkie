@@ -782,6 +782,6 @@
   "combinedResult": "Yhdistetty tulos",
   "errorLimitReached": "Käännöskerrat ovat vähissä. Haluatko katsoa mainoksen ja saada 10 lisäkertaa?",
   "yourPronunciation": "Sinun ääntämys",
-  "helpLimitDetails": "💡 [Käännösrajoitusten tiedot]\nJoka päivä keskiyöllä tarjotaan 20 ilmaista käännöstä. Jos käytät ne kaikki, voit katsoa mainoksen ja saada heti 10 lisäkäännöstä.",
+  "helpLimitDetails": "💡 [Käännösrajoitusten tiedot]\nJoka päivä keskiyöllä tarjotaan 10 ilmaista käännöstä. Jos käytät ne kaikki, voit katsoa mainoksen ja saada heti 10 lisäkäännöstä.",
   "scanDetails": "• Tuo kuvia kamerasta tai galleriasta poimiaksesi ja kääntääksesi tekstiä.\n• Voit napauttaa yksittäisiä lauseita yhdessä valokuvassa kääntääksesi ne erikseen.\n• Jos käännöskerrat ovat vähissä, voit katsoa mainoksen ja saada heti 10 lisäkertaa."
 }

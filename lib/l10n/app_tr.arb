@@ -782,6 +782,6 @@
   "combinedResult": "Birleştirilmiş Sonuç",
   "errorLimitReached": "Çeviri sayısı yetersiz. Reklam izleyerek 10 çeviri hakkı kazanmak ister misiniz?",
   "yourPronunciation": "Telaffuzunuz",
-  "helpLimitDetails": "💡 [Çeviri Limiti Bilgisi]\nHergün gece yarısı 20 ücretsiz çeviri hakkı sağlanır. Tükendiğinde reklam izleyerek anında 10 ek çeviri hakkı kazanabilirsiniz.",
+  "helpLimitDetails": "💡 [Çeviri Limiti Bilgisi]\nHergün gece yarısı 10 ücretsiz çeviri hakkı sağlanır. Tükendiğinde reklam izleyerek anında 10 ek çeviri hakkı kazanabilirsiniz.",
   "scanDetails": "• Kameradan veya galeriden bir görüntü yükleyerek metni çıkarın ve çevirin.\n• Bir fotoğraftaki birden fazla cümleyi ayrı ayrı çevirmek için dokunabilirsiniz.\n• Çeviri sayınız yetersizse, reklam izleyerek hemen 10 tane daha kazanabilirsiniz."
 }

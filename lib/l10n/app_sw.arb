@@ -782,6 +782,6 @@
   "combinedResult": "Matokeo yaliyounganishwa",
   "errorLimitReached": "Huna hesabu ya kutosha ya tafsiri. Je, ungependa kutazama tangazo ili uongeze mara 10?",
   "yourPronunciation": "Matamshi Yako",
-  "helpLimitDetails": "💡 [Mwongozo wa kikomo cha tafsiri]\nTafsiri 20 za bure hutolewa kila siku saa sita usiku. Hata ukizitumia zote, unaweza kutazama tangazo mara moja ili kuchaji tafsiri 10 za ziada.",
+  "helpLimitDetails": "💡 [Mwongozo wa kikomo cha tafsiri]\nTafsiri 10 za bure hutolewa kila siku saa sita usiku. Hata ukizitumia zote, unaweza kutazama tangazo mara moja ili kuchaji tafsiri 10 za ziada.",
   "scanDetails": "• Leta picha kutoka kwenye kamera au ghala ili uchukue na utafsiri maandishi.\n• Unaweza kugonga sentensi nyingi zilizojumuishwa kwenye picha moja ili kuzitafsiri kibinafsi.\n• Ikiwa huna idadi ya kutosha ya tafsiri, unaweza kutazama tangazo mara moja ili kuongeza 10 zaidi."
 }

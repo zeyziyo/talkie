@@ -782,6 +782,6 @@
   "combinedResult": "Összevont eredmény",
   "errorLimitReached": "Nincs elég fordítása. Szeretne hirdetést nézni, hogy 10 fordítást szerezzen?",
   "yourPronunciation": "Kiejtésed",
-  "helpLimitDetails": "💡 [Fordítási korlát információk]\nNaponta éjfélkor 20 ingyenes fordítás áll rendelkezésre. Ha mindet elhasználja, egy hirdetés megtekintésével azonnal 10 további fordítást tölthet fel.",
+  "helpLimitDetails": "💡 [Fordítási korlát információk]\nNaponta éjfélkor 10 ingyenes fordítás áll rendelkezésre. Ha mindet elhasználja, egy hirdetés megtekintésével azonnal 10 további fordítást tölthet fel.",
   "scanDetails": "• Töltsön fel képeket a kamerából vagy a galériából, hogy szöveget nyerjen ki és lefordítson.\n• Egy fényképben lévő több mondatot is megérintve külön-külön lefordíthatja azokat.\n• Ha nincs elég fordítása, nézzen meg egy hirdetést, hogy azonnal 10-et töltsön fel."
 }

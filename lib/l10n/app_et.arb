@@ -782,6 +782,6 @@
   "combinedResult": "Kombineeritud tulemus",
   "errorLimitReached": "Tõlke kordad on otsas. Kas soovite vaadata reklaami, et saada 10 korda juurde?",
   "yourPronunciation": "Sinu hääldus",
-  "helpLimitDetails": "💡 [Tõlke limiidi info]\nIga päev kell südaöö antakse 20 tasuta tõlget. Kui kõik on ära kasutatud, saab reklaami vaadates kohe 10 täiendavat tõlget.",
+  "helpLimitDetails": "💡 [Tõlke limiidi info]\nIga päev kell südaöö antakse 10 tasuta tõlget. Kui kõik on ära kasutatud, saab reklaami vaadates kohe 10 täiendavat tõlget.",
   "scanDetails": "• Laadige pilt kaamerast või galeriist, et tekst välja võtta ja tõlkida.\n• Saate puudutada ja tõlkida eraldi mitmeid lauseid, mis on ühel pildil.\n• Kui tõlke kordadest on puudus, saate reklaami vaadates kohe 10 korda juurde."
 }

@@ -27,7 +27,7 @@ class UsageService {
   static const String adUnitId = 'ca-app-pub-3940256099942544/5224354917';
   
   // Constants
-  static const int _dailyFreeLimit = 20;
+  static const int _dailyFreeLimit = 10;
   static const int _monthlyProLimit = 1500;
   
   SharedPreferences? _prefs;

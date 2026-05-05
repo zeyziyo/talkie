@@ -9,6 +9,7 @@ import '../constants/app_constants.dart';
 import '../services/speech_service.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+import '../services/usage_service.dart';
 
 class SimplifiedInputWidget extends StatefulWidget {
   final GlobalKey? micKey;
@@ -178,9 +179,17 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
                   Expanded(
                     flex: 1,
                     child: ElevatedButton(
-                      onPressed: () {
-                        state.translate();
-                        _showSettingsDialog(context, state);
+                      onPressed: () async {
+                        try {
+                          await state.translate();
+                          if (context.mounted) {
+                            _showSettingsDialog(context, state);
+                          }
+                        } catch (e) {
+                          if (e is LimitReachedException && context.mounted) {
+                            _showLimitReachedDialog(context, globalState);
+                          }
+                        }
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFF3F51B5),
@@ -233,6 +242,74 @@ class _SimplifiedInputWidgetState extends State<SimplifiedInputWidget> {
     );
   }
 
+
+  void _showLimitReachedDialog(BuildContext context, AppState globalState) {
+    final l10n = AppLocalizations.of(context)!;
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Row(
+          children: [
+            Icon(Icons.warning_amber_rounded, color: Colors.amber.shade800),
+            SizedBox(width: 8.w),
+            Text(l10n.usageLimitTitle),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              l10n.errorLimitReached, // 일반 번역용 문구 사용
+              style: TextStyle(fontSize: 14.sp),
+            ),
+            SizedBox(height: 16.h),
+            Container(
+              padding: EdgeInsets.all(12.w),
+              decoration: BoxDecoration(
+                color: Colors.blue.shade50,
+                borderRadius: BorderRadius.circular(12.r),
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.info_outline,
+                      size: 16.sp, color: Colors.blue.shade700),
+                  SizedBox(width: 8.w),
+                  Expanded(
+                    child: Text(
+                      l10n.scanAdRefillNotice,
+                      style: TextStyle(
+                          fontSize: 12.sp, color: Colors.blue.shade900),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: Text(l10n.cancel),
+          ),
+          ElevatedButton.icon(
+            onPressed: () {
+              Navigator.pop(ctx);
+              globalState.watchAdAndRefill(context);
+            },
+            icon: Icon(Icons.play_circle_outline, size: 18.sp),
+            label: Text(l10n.watchAdAndRefill),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.indigo,
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.r)),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 
   void _showSettingsDialog(BuildContext context, SimplifiedAppState state) {
     showDialog(

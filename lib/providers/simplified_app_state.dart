@@ -3,10 +3,12 @@ import '../services/database_service.dart';
 import '../services/translation_service.dart';
 import '../services/speech_service.dart';
 import '../services/util/log_service.dart';
+import '../services/usage_service.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class SimplifiedAppState extends ChangeNotifier {
   final SpeechService _speechService = SpeechService();
+  final UsageService _usageService = UsageService();
 
   // State Variables
   String _sourceText = '';
@@ -201,13 +203,24 @@ class SimplifiedAppState extends ChangeNotifier {
     notifyListeners();
 
     try {
+      // 0. 한도 체크
+      await _usageService.checkLimitOrThrow();
+
       final result = await TranslationService.translate(
         text: _sourceText,
         sourceLang: _sourceLang,
         targetLang: _targetLang,
       );
       _translatedText = result['text'] ?? '';
+
+      // 1. 번역 성공 시 횟수 차감
+      if (_translatedText.isNotEmpty) {
+        await _usageService.incrementUsage();
+      }
     } catch (e) {
+      if (e is LimitReachedException) {
+        rethrow; // UI에서 다이얼로그를 띄울 수 있도록 rethrow
+      }
       _translatedText = 'Error: $e';
     } finally {
       _isTranslating = false;

@@ -782,6 +782,6 @@
   "combinedResult": "Apvienotais rezultāts",
   "errorLimitReached": "Jums ir beigušies tulkojumi. Vai vēlaties noskatīties reklāmu, lai saņemtu 10 papildu tulkojumus?",
   "yourPronunciation": "Jūsu izruna",
-  "helpLimitDetails": "💡 [Tulkošanas limita informācija]\nKatru dienu pusnaktī tiek nodrošināti 20 bezmaksas tulkojumi. Ja tie visi ir izmantoti, varat noskatīties reklāmu, lai nekavējoties saņemtu 10 papildu tulkojumus.",
+  "helpLimitDetails": "💡 [Tulkošanas limita informācija]\nKatru dienu pusnaktī tiek nodrošināti 10 bezmaksas tulkojumi. Ja tie visi ir izmantoti, varat noskatīties reklāmu, lai nekavējoties saņemtu 10 papildu tulkojumus.",
   "scanDetails": "• Importējiet attēlus no kameras vai galerijas, lai iegūtu un tulkotu tekstu.\n• Varat pieskarties vairākiem teikumiem vienā fotoattēlā, lai tos tulkotu atsevišķi.\n• Ja jums ir beigušies tulkojumi, varat nekavējoties noskatīties reklāmu, lai saņemtu papildu 10 tulkojumus."
 }

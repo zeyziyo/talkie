@@ -782,6 +782,6 @@
   "combinedResult": "Kombinirani rezultat",
   "errorLimitReached": "Nemate dovoljno prijevoda. Želite li pogledati oglas i napuniti 10 prijevoda?",
   "yourPronunciation": "Moj izgovor",
-  "helpLimitDetails": "💡 [Upute za ograničenje prijevoda]\nSvaki dan u ponoć dobivate 20 besplatnih prijevoda. Ako ih sve potrošite, možete odmah dobiti dodatnih 10 prijevoda gledanjem oglasa.",
+  "helpLimitDetails": "💡 [Upute za ograničenje prijevoda]\nSvaki dan u ponoć dobivate 10 besplatnih prijevoda. Ako ih sve potrošite, možete odmah dobiti dodatnih 10 prijevoda gledanjem oglasa.",
   "scanDetails": "• Učitajte slike iz kamere ili galerije za izdvajanje i prevođenje teksta.\n• Možete dodirnuti više rečenica na jednoj slici za pojedinačni prijevod.\n• Ako nemate dovoljno prijevoda, odmah pogledajte oglas i napunite dodatnih 10."
 }

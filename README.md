@@ -216,7 +216,7 @@ Private project
 The app operates a sustainable pricing policy to provide maximum value for free while maintaining service quality.
 
 ### 1. 무료 플랜 (Basic Plan)
-*   **일일 번역 제한**: 하루 20회 무료 제공 (Daily Limit: 20 translations free)
+*   **일일 번역 제한**: 하루 10회 무료 제공 (Daily Limit: 10 translations free)
 *   **말하기 연습 (Mode 3)**: **무제한 무료** (Unlimited free - uses On-Device Engine)
 *   **학습 자료 가져오기**: **무제한 무료** (Unlimited free - Local DB storage)
 *   **리필 (Refill)**: 보상형 광고 시청 시 번역 횟수 리필 제공 (Watch ad to refill quota)

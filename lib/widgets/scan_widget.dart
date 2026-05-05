@@ -119,7 +119,7 @@ class _ScanWidgetState extends State<ScanWidget> {
               ElevatedButton.icon(
                 onPressed: () {
                   Navigator.of(ctx).pop();
-                  appState.watchAdAndRefillInScan(context);
+                  appState.watchAdAndRefill(context);
                 },
                 icon: Icon(Icons.play_circle_outline, size: 18.sp),
                 label: Text(l10n.watchAdAndRefill),
