@@ -169,6 +169,7 @@ extension AppStateScanExtension on AppState {
 
 
   bool get canSaveScannedItem {
+    if (hasBulkResult) return true;
     return _scanReviewItems.isNotEmpty &&
         _scanReviewItems.every((item) {
           final translated = item['translated']?.toString().trim() ?? '';

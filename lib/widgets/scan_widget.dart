@@ -227,9 +227,11 @@ class _ScanWidgetState extends State<ScanWidget> {
       _textController.text = appState.scannedText;
     }
 
-    return SingleChildScrollView(
-      padding: EdgeInsets.all(16.w),
-      child: Column(
+    return Stack(
+      children: [
+        SingleChildScrollView(
+          padding: EdgeInsets.all(16.w),
+          child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           // 1. Image Preview Box
@@ -808,6 +810,32 @@ class _ScanWidgetState extends State<ScanWidget> {
           SizedBox(height: 40.h),
         ],
       ),
+    ), // End of SingleChildScrollView
+        // Loading Overlay
+        if (appState.isTranslating && appState.scanReviewItems.isEmpty)
+          Positioned.fill(
+            child: Container(
+              color: Colors.white.withValues(alpha: 0.7),
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const CircularProgressIndicator(color: Colors.indigo),
+                    SizedBox(height: 16.h),
+                    Text(
+                      l10n.processing,
+                      style: TextStyle(
+                        fontSize: 16.sp,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.indigo.shade900,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+      ],
     );
   }
 }
